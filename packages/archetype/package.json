@@ -1,0 +1,21 @@
+{
+  "name": "@mineral-ui/archetype",
+  "version": "0.0.1",
+  "description": "Archetype component",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:demo": "npm run build -- --config=webpack.config.demo.js",
+    "clean": "rimraf ./dist/*",
+    "pack-ls": "npm pack && tar -tzvf mineral-ui-archetype*.tgz && rm mineral-ui-archetype*.tgz",
+    "start": "webpack-dev-server --config=webpack.config.demo.js",
+    "test": "jest --config=../../.jestrc"
+  },
+  "devDependencies": {
+    "jest": "19.0.2",
+    "webpack": "2.3.3",
+    "webpack-dev-server": "2.4.2"
+  }
+}

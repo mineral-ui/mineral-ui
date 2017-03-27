@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "jsx-a11y",
+    "prettier",
+    "react"
+  ],
+  "rules": {
+    "no-console": "off",
+    "prettier/prettier": ["error", {
+      "bracketSpacing": true,
+      "jsxBracketSameLine": true,
+      "singleQuote": true,
+      "trailingComma": "none"
+    }]
+  }
+}

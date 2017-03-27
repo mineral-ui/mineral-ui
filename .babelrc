@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "transform-object-rest-spread"
+  ],
+  "presets": [
+    ["env", {
+      "targets": { "browsers": ["last 1 version"] },
+      "useBuiltIns": false,
+      "modules": false
+    }],
+    "react"
+  ],
+
+  /*
+   * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
+   * When used with lerna, this also requires custom transformIgnorePatterns in jest to
+   * allow symlinked modules within this package to be transformed. See .jestrc.
+   */
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
