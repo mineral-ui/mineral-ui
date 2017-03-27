@@ -1,0 +1,35 @@
+{
+  "name": "@mineral-ui/archetype",
+  "version": "0.0.0",
+  "description": "Archetype component",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:dist",
+    "build:analyze": "ANALYZE=true npm run build:umd",
+    "build:dist": "npm run build:umd && npm run build:es",
+    "build:es": "babel src --out-dir dist/es --ignore *.spec.js --source-maps",
+    "build:prod": "NODE_ENV=production npm run build",
+    "build:umd": "webpack",
+    "clean": "rimraf dist/*",
+    "commit": "git-cz",
+    "eslint": "eslint --ignore-path ../../../.eslintignore .",
+    "lerna": "lerna",
+    "lint": "npm run eslint",
+    "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
+    "start": "TARGET=demo webpack-dev-server --progress",
+    "test": "npm run lint && jest --config=../../../.jestrc",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "peerDependencies": {
+    "react": "^15",
+    "react-dom": "^15"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

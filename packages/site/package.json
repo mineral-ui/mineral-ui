@@ -1,0 +1,28 @@
+{
+  "name": "@mineral-ui/site",
+  "version": "0.0.0",
+  "description": "Site",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:umd",
+    "build:analyze": "ANALYZE=true npm run build:umd",
+    "build:prod": "NODE_ENV=production npm run build",
+    "build:umd": "TARGET=site webpack",
+    "clean": "rimraf dist/*",
+    "commit": "git-cz",
+    "eslint": "eslint --ignore-path ../../.eslintignore .",
+    "lerna": "lerna",
+    "lint": "npm run eslint",
+    "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
+    "start": "TARGET=site webpack-dev-server --progress",
+    "test": "jest --config=../../.jestrc",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
