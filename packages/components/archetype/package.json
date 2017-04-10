@@ -1,0 +1,38 @@
+{
+  "name": "@mineral-ui/archetype",
+  "version": "0.0.0-development",
+  "description": "Archetype component",
+  "license": "UNLICENSED",
+  "main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && npm run build:dist && npm run build:demo",
+    "build:analyze": "ANALYZE=true npm run build:umd",
+    "build:demo": "npm run build:demo:umd && npm run build:demo:es",
+    "build:demo:es": "babel demo --out-dir dist/demo/es",
+    "build:demo:umd": "TARGET=demo npm run build:umd",
+    "build:dist": "npm run build:umd && npm run build:es",
+    "build:es": "babel src --out-dir dist/es --ignore *.spec.js",
+    "build:prod": "NODE_ENV=production npm run build",
+    "build:umd": "webpack",
+    "clean": "rimraf dist/*",
+    "eslint": "eslint --ignore-path ../../../.eslintignore .",
+    "lint": "npm run eslint",
+    "pack-ls": "npm pack && tar -tzvf mineral-ui-archetype*.tgz && rm mineral-ui-archetype*.tgz",
+    "start": "TARGET=demo webpack-dev-server",
+    "test": "npm run lint && jest --config=../../../.jestrc"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "eslint": "3.18.0",
+    "jest": "19.0.2",
+    "rimraf": "2.6.1",
+    "webpack": "2.3.3",
+    "webpack-dev-server": "2.4.2"
+  },
+  "peerDependencies": {
+    "react": "^15",
+    "react-dom": "^15"
+  }
+}
