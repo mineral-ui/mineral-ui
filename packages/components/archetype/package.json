@@ -1,11 +1,11 @@
 {
   "name": "@mineral-ui/archetype",
-  "version": "0.0.0-development",
+  "version": "0.0.0-alpha",
   "description": "Archetype component",
   "license": "UNLICENSED",
+  "private": true,
   "main": "dist/umd/index.js",
   "module": "dist/es/index.js",
-  "private": true,
   "scripts": {
     "build": "npm run clean && npm run build:dist && npm run build:demo",
     "build:analyze": "ANALYZE=true npm run build:umd",

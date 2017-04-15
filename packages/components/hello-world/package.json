@@ -1,6 +1,6 @@
 {
   "name": "@mineral-ui/hello-world",
-  "version": "0.0.0-development",
+  "version": "0.0.0-alpha",
   "description": "HelloWorld component",
   "license": "UNLICENSED",
   "main": "dist/umd/index.js",
@@ -23,8 +23,8 @@
     "test": "npm run lint && jest --config=../../../.jestrc"
   },
   "devDependencies": {
-    "@mineral-ui/hello": "0.0.0-development",
-    "@mineral-ui/world": "0.0.0-development",
+    "@mineral-ui/hello": "0.0.0-alpha",
+    "@mineral-ui/world": "0.0.0-alpha",
     "babel-cli": "6.24.0",
     "eslint": "3.18.0",
     "jest": "19.0.2",
@@ -33,9 +33,12 @@
     "webpack-dev-server": "2.4.2"
   },
   "peerDependencies": {
-    "@mineral-ui/hello": "0.0.0-development",
-    "@mineral-ui/world": "0.0.0-development",
+    "@mineral-ui/hello": "0.0.0-alpha",
+    "@mineral-ui/world": "0.0.0-alpha",
     "react": "^15",
     "react-dom": "^15"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
