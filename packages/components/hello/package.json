@@ -6,20 +6,17 @@
   "main": "dist/umd/index.js",
   "module": "dist/es/index.js",
   "scripts": {
-    "build": "npm run clean && npm run build:dist && npm run build:demo",
+    "build": "npm run clean && npm run build:dist",
     "build:analyze": "ANALYZE=true npm run build:umd",
-    "build:demo": "npm run build:demo:umd && npm run build:demo:es",
-    "build:demo:es": "babel demo --out-dir dist/demo/es",
-    "build:demo:umd": "TARGET=demo npm run build:umd",
     "build:dist": "npm run build:umd && npm run build:es",
-    "build:es": "babel src --out-dir dist/es --ignore *.spec.js",
+    "build:es": "babel src --out-dir dist/es --ignore *.spec.js --source-maps",
     "build:prod": "NODE_ENV=production npm run build",
     "build:umd": "webpack",
     "clean": "rimraf dist/*",
     "eslint": "eslint --ignore-path ../../../.eslintignore .",
     "lint": "npm run eslint",
     "pack-ls": "npm pack && tar -tzvf mineral-ui-hello*.tgz && rm mineral-ui-hello*.tgz",
-    "start": "TARGET=demo webpack-dev-server",
+    "start": "TARGET=demo webpack-dev-server --progress",
     "test": "npm run lint && jest --config=../../../.jestrc"
   },
   "devDependencies": {

@@ -9,27 +9,26 @@ const ANALYZE = process.env.ANALYZE;
 const isProduction = NODE_ENV === 'production';
 
 function getEntry() {
-  if (TARGET === 'demo') {
-    return './demo/index.js';
-  } else {
-    return './src/index.js';
-  }
+  const path = TARGET === 'demo' ? './demo' : './src';
+  return {
+    index: `${path}/index.js`
+  };
 }
 
 function getOutput({ packageName, packagePath }) {
   if (TARGET === 'demo') {
     return {
-      filename: 'index.js',
+      filename: '[name].js',
       path: path.resolve(packagePath, 'dist/demo')
     };
   } else if (TARGET === 'site') {
     return {
-      filename: 'index.js',
+      filename: '[name].js',
       path: path.resolve(packagePath, 'dist')
     };
   } else {
     return {
-      filename: 'index.js',
+      filename: '[name].js',
       library: packageName,
       libraryTarget: 'umd',
       path: path.resolve(packagePath, 'dist/umd')
@@ -122,7 +121,7 @@ function getPlugins() {
   }
 
   if (isProduction) {
-    plugins.concat([
+    plugins = plugins.concat([
       new webpack.LoaderOptionsPlugin({
         minimize: true,
         debug: false
@@ -134,9 +133,11 @@ function getPlugins() {
           keep_fnames: true
         },
         compress: {
-          screw_ie8: true
+          screw_ie8: true,
+          warnings: false
         },
-        comments: false
+        comments: false,
+        sourceMap: true
       })
     ]);
   }
