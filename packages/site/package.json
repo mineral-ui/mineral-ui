@@ -11,6 +11,7 @@
     "build:prod": "NODE_ENV=production npm run build",
     "build:umd": "TARGET=site webpack",
     "clean": "rimraf dist/*",
+    "commit": "npm run commit --prefix=../../",
     "eslint": "eslint --ignore-path ../../.eslintignore .",
     "lint": "npm run eslint",
     "pack-ls": "npm pack && tar -tzvf mineral-ui-site*.tgz && rm mineral-ui-site*.tgz",
