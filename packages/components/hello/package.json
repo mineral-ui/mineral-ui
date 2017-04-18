@@ -13,7 +13,7 @@
     "build:prod": "NODE_ENV=production npm run build",
     "build:umd": "webpack",
     "clean": "rimraf dist/*",
-    "commit": "npm run commit --prefix=../../../",
+    "commit": "git-cz",
     "eslint": "eslint --ignore-path ../../../.eslintignore .",
     "lint": "npm run eslint",
     "pack-ls": "npm pack && tar -tzvf mineral-ui-hello*.tgz && rm mineral-ui-hello*.tgz",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
+    "commitizen": "2.9.6",
     "eslint": "3.18.0",
     "jest": "19.0.2",
     "rimraf": "2.6.1",
@@ -35,5 +36,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
