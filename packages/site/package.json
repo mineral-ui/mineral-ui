@@ -15,7 +15,8 @@
     "lint": "npm run eslint",
     "pack-ls": "npm pack && tar -tzvf mineral-ui-site*.tgz && rm mineral-ui-site*.tgz",
     "start": "TARGET=site webpack-dev-server",
-    "test": "jest --config=../../.jestrc"
+    "test": "jest --config=../../.jestrc",
+    "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",

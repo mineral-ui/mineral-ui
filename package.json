@@ -12,7 +12,8 @@
     "format": "eslint --fix .",
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
-    "test": "npm run lint && jest --config=.jestrc"
+    "test": "npm run lint && jest --config=.jestrc",
+    "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",

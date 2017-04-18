@@ -17,7 +17,8 @@
     "lint": "npm run eslint",
     "pack-ls": "npm pack && tar -tzvf mineral-ui-hello-world*.tgz && rm mineral-ui-hello-world*.tgz",
     "start": "TARGET=demo webpack-dev-server --progress",
-    "test": "npm run lint && jest --config=../../../.jestrc"
+    "test": "npm run lint && jest --config=../../../.jestrc",
+    "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
     "@mineral-ui/hello": "0.0.0-alpha.2",
