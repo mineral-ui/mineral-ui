@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
-    "build": "npm run clean && npm run bootstrap && lerna run build",
+    "build": "lerna run build",
     "build:prod": "lerna run build:prod",
-    "clean": "lerna clean --yes",
+    "clean": "lerna clean --yes && lerna run clean",
     "eslint": "eslint .",
     "format": "eslint --fix .",
     "lint": "npm run eslint",
