@@ -14,8 +14,8 @@
     "commit": "git-cz",
     "eslint": "eslint --ignore-path ../../.eslintignore .",
     "lint": "npm run eslint",
-    "pack-ls": "npm pack && tar -tzvf mineral-ui-site*.tgz && rm mineral-ui-site*.tgz",
-    "start": "TARGET=site webpack-dev-server",
+    "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
+    "start": "TARGET=site webpack-dev-server --progress",
     "test": "jest --config=../../.jestrc",
     "test:coverage": "npm run test -- --coverage"
   },
