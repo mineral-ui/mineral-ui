@@ -1,6 +1,6 @@
 {
   "name": "@mineral-ui/hello-world",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.4",
   "description": "HelloWorld component",
   "license": "UNLICENSED",
   "main": "dist/umd/index.js",
@@ -22,8 +22,8 @@
     "test:coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
-    "@mineral-ui/hello": "0.0.0-alpha.2",
-    "@mineral-ui/world": "0.0.0-alpha.2",
+    "@mineral-ui/hello": "^0.0.0-alpha.3",
+    "@mineral-ui/world": "^0.0.0-alpha.3",
     "babel-cli": "6.24.0",
     "commitizen": "2.9.6",
     "eslint": "3.18.0",
@@ -33,8 +33,8 @@
     "webpack-dev-server": "2.4.2"
   },
   "peerDependencies": {
-    "@mineral-ui/hello": "0.0.0-alpha.2",
-    "@mineral-ui/world": "0.0.0-alpha.2",
+    "@mineral-ui/hello": "^0.0.0-alpha.3",
+    "@mineral-ui/world": "^0.0.0-alpha.3",
     "react": "^15",
     "react-dom": "^15"
   },
