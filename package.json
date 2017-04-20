@@ -12,6 +12,7 @@
     "commitmsg": "validate-commit-msg",
     "eslint": "eslint .",
     "format": "eslint --fix .",
+    "lerna": "lerna",
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
     "test": "npm run lint && jest --config=.jestrc",

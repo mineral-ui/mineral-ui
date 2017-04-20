@@ -16,6 +16,7 @@
     "clean": "rimraf dist/*",
     "commit": "git-cz",
     "eslint": "eslint --ignore-path ../../../.eslintignore .",
+    "lerna": "lerna",
     "lint": "npm run eslint",
     "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
     "start": "TARGET=demo webpack-dev-server --progress",
@@ -27,6 +28,7 @@
     "commitizen": "2.9.6",
     "eslint": "3.18.0",
     "jest": "19.0.2",
+    "lerna": "2.0.0-beta.38",
     "rimraf": "2.6.1",
     "webpack": "2.3.3",
     "webpack-dev-server": "2.4.2"
