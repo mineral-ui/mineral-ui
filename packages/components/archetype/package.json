@@ -13,6 +13,7 @@
     "build:es": "babel src --out-dir dist/es --ignore *.spec.js --source-maps",
     "build:prod": "NODE_ENV=production npm run build",
     "build:umd": "webpack",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "rimraf dist/*",
     "commit": "git-cz",
     "eslint": "eslint --ignore-path ../../../.eslintignore .",
