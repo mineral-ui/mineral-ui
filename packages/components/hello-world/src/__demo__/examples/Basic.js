@@ -1,5 +1,5 @@
 import React from 'react';
-import HelloWorld from '../../src/HelloWorld';
+import HelloWorld from '../../HelloWorld';
 
 export default function Basic() {
   return <HelloWorld />;

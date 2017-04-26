@@ -20,6 +20,9 @@
     "test": "jest --config=../../.jestrc",
     "test:coverage": "npm run test -- --coverage"
   },
+  "devDependencies": {
+    "@mineral-ui/hello": "^0.1.0"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
