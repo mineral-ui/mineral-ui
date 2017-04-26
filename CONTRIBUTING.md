@@ -1,1 +1,125 @@
-# Contributing
+# Contributing Guide
+
+> **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
+
+Thank you for your help making this project and community as good as it can be. We strive to maintain a welcoming, inclusive space for all. All contributors, including commenters on issues, are expected to abide by our [Code of Conduct](https://github.com/mineral-ui/mineral-ui/blob/master/CODE_OF_CONDUCT.md).
+
+Here are a few things to help your contribution be fun and trouble-free.
+
+
+## Submitting a Pull Request
+
+We welcome pull requests from anyone, but before working on a large change, it is best to open an issue first to discuss it with the maintainers.
+
+Please try to keep your PR as small and focused as possible, and don’t include more than one feature or bug fix per PR. Big PRs are hard to review and are less likely to be accepted.
+
+If your PR adds new features or changes existing code, please attempt to write tests covering the new behavior.
+
+For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](https://github.com/mineral-ui/mineral-ui/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
+
+
+## Getting Started
+
+Fork the repo, then create a new branch from an up-to-date master on your fork.
+
+If you do not have a local repository, clone your fork to your machine and create a new branch:
+
+```sh
+git clone https://github.com/<yourusername>/mineral-ui.git
+git checkout -b your-branch-name
+```
+
+If you do have an existing local repository, please update it before you start, to minimize the chance of merge conflicts.
+
+```sh
+git remote add upstream https://github.com/<yourusername>/mineral-ui.git
+git checkout master
+git pull upstream master
+git checkout -b my-branch-name
+npm update
+```
+
+
+### Set Up
+
+1. Install the packages and their dependencies
+
+	```sh
+	npm install
+	```
+
+1. Make sure you’re using the correct `node` version (we recommend using [nvm](https://github.com/creationix/nvm) to install and manage `node` on your machine)
+
+	```sh
+	nvm use
+	```
+
+	If your console tells you that you don’t have that version installed, run
+
+	```sh
+	nvm install
+	```
+
+1. To enable [hot module reloading](https://webpack.js.org/concepts/hot-module-replacement/) across interdependent components, run
+
+	```sh
+	npm run build:watch
+	```
+
+1. In a separate tab/pane, navigate to the component you wish to edit and start its demo
+
+	```sh
+	cd packages/components/hello
+	npm start
+	```
+
+
+### Developing
+
+<!--
+This project uses [??????????]() for styling.
+-->
+
+- We use [Prettier](https://github.com/prettier/prettier), so you can write your code in whichever style you’re most comfortable and convert it to our standard before you commit:
+
+	In the project root:
+
+	```sh
+	npm run format
+	```
+
+- We also use [Commitizen](https://github.com/commitizen/cz-cli) for ensuring a standard format for this project’s commit messages. You can still commit as normal with a valid message, but we recommend using:
+
+	```sh
+	npm run commit
+	```
+
+
+### Testing
+
+Unit tests use [Jest](https://github.com/facebook/jest). When appropriate, [snaphots](http://facebook.github.io/jest/docs/snapshot-testing.html) are nice.
+
+1. After making your changes, first run a build in the project root
+
+	```sh
+	npm run build
+	```
+
+1. Then lint your code and run the unit tests
+
+	```sh
+	npm test
+	```
+
+	You can run a scoped suite of unit tests by running that same command in any package’s directory.
+
+
+### Troubleshooting
+
+- If you’re getting errors, a good first step is to clean the repo and bootstrap the packages manually ([why?](https://lernajs.io/#command-bootstrap)).
+
+	In the project root:
+
+	```sh
+	npm run clean && npm run bootstrap
+	```
