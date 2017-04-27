@@ -9,7 +9,7 @@ const ANALYZE = process.env.ANALYZE;
 const isProduction = NODE_ENV === 'production';
 
 function getEntry() {
-  const path = TARGET === 'demo' ? './demo' : './src';
+  const path = TARGET === 'demo' ? './src/__demo__' : './src';
   return {
     index: `${path}/index.js`
   };
@@ -84,7 +84,7 @@ function getDevServer({ packagePath }) {
     };
   } else if (TARGET === 'demo') {
     return {
-      contentBase: path.join(packagePath, 'dist/demo'),
+      contentBase: path.join(packagePath, 'dist/es/__demo__'),
       compress: true,
       host: '0.0.0.0'
     };
@@ -107,7 +107,7 @@ function getPlugins() {
   if (TARGET === 'demo') {
     plugins.push(
       new HtmlWebpackPlugin({
-        template: './demo/index.html'
+        template: './src/__demo__/index.html'
       })
     );
   }

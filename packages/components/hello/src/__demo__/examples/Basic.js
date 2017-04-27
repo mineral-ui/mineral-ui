@@ -1,5 +1,5 @@
 import React from 'react';
-import Hello from '../../src/Hello';
+import Hello from '../../Hello';
 
 export default function Basic() {
   return <Hello />;
