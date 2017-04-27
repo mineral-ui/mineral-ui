@@ -1,7 +1,7 @@
 # Roadmap
 
-## Want to do
+## Want To Do
 
-## Might do
+## Might Do
 
-## Won't do
+## Won’t Do
