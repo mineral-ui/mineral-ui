@@ -32,9 +32,11 @@ For a PR to be considered, each item in the checklist must be checked.
 <!-- Put an `x` in all the boxes that apply and are complete. If an item does not apply, put an `x` in it anyway and add “[n/a]” to the end of the line. If you’re unsure about any of these, don’t hesitate to ask. We’re here to help! -->
 * [ ] Renders and functions properly in [all supported browsers](https://github.com/mineral-ui/mineral-ui#browser-support)
 * [ ] Automated tests written and passing
-* [ ] [Accessibility](http://webaim.org/intro) and [inclusivity](https://www.w3.org/WAI/users) considered
+* [ ] [Accessibility](http://webaim.org/intro) and [inclusivity](https://24ways.org/2016/what-the-heck-is-inclusive-design/) considered
 * [ ] Rendering performance (initial load time & 60fps) and [perceived performance](http://blog.teamtreehouse.com/perceived-performance) considered
 * [ ] Documentation created or updated
+
+<!-- If any of the above need further details, you should include those here. -->
 
 ### How does this PR make you feel?
 <!--
