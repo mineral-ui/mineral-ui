@@ -26,7 +26,7 @@ For a PR to be considered, each item in the checklist must be checked.
 - Bug fix (non-breaking change which fixes an issue)
 - New feature (non-breaking change which adds functionality)
 - Breaking change (fix or feature that would cause existing functionality to change)
-- Non-source (for changes that don’t affect the source code, e.g. documentation)
+- Other (provide details below)
 
 ### Checklist
 <!-- Put an `x` in all the boxes that apply and are complete. If an item does not apply, put an `x` in it anyway and add “[n/a]” to the end of the line. If you’re unsure about any of these, don’t hesitate to ask. We’re here to help! -->

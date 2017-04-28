@@ -92,21 +92,19 @@ function getResolve() {
 }
 
 function getDevServer({ packagePath }) {
-  if (TARGET === 'site') {
+  if (['demo', 'site'].includes(TARGET)) {
+    const contentBase = TARGET === 'demo'
+      ? path.join(packagePath, 'dist/es/__demo__')
+      : path.join(packagePath, 'dist');
+
     return {
-      contentBase: path.join(packagePath, 'dist'),
+      contentBase,
       compress: true,
       host: '0.0.0.0'
     };
-  } else if (TARGET === 'demo') {
-    return {
-      contentBase: path.join(packagePath, 'dist/es/__demo__'),
-      compress: true,
-      host: '0.0.0.0'
-    };
-  } else {
-    return;
   }
+
+  return;
 }
 
 function getDevtool() {
@@ -125,20 +123,12 @@ function getPlugins() {
     })
   ];
 
-  if (TARGET === 'demo') {
-    plugins.push(
-      new HtmlWebpackPlugin({
-        template: './src/__demo__/index.html'
-      })
-    );
-  }
+  if (['demo', 'site'].includes(TARGET)) {
+    const template = TARGET === 'demo'
+      ? './src/__demo__/index.html'
+      : './src/index.html';
 
-  if (TARGET === 'site') {
-    plugins.push(
-      new HtmlWebpackPlugin({
-        template: './src/index.html'
-      })
-    );
+    plugins.push(new HtmlWebpackPlugin({ template }));
   }
 
   if (isProduction) {

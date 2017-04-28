@@ -1,8 +1,6 @@
   {
     "coverageDirectory": "reports/coverage",
+    "coveragePathIgnorePatterns": ["/__demo__/", "/node_modules/"],
     "notify": true,
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "transformIgnorePatterns": [
-      "node_modules(?!\/@mineral-ui)"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }

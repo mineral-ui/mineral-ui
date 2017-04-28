@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "transform-object-rest-spread"
-  ],
   "presets": [
     ["env", {
       "targets": { "browsers": ["last 1 version"] },
@@ -11,14 +8,47 @@
     "react"
   ],
 
-  /*
-   * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
-   * When used with lerna, this also requires custom transformIgnorePatterns in jest to
-   * allow symlinked modules within this package to be transformed. See .jestrc.
-   */
   "env": {
+    "production": {
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    },
+
+    "development": {
+      "plugins": [
+        "transform-object-rest-spread",
+        /**
+         * Re-write mineral package imports.
+         *
+         * Dev server build and test build use LOCAL module paths.
+         * Prod build uses PACKAGE module paths.
+         */
+        ["module-resolver", {
+          "cwd": "babelrc",
+          "alias": {
+            "^@mineral-ui/(.+)/dist/es/__demo__/(.+)": "./packages/\\1/src/__demo__/\\2",
+            "^@mineral-ui/(.+)": "./packages/\\1/src"
+          }
+        }]
+      ]
+    },
+
+    /**
+     * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
+     */
     "test": {
-      "plugins": ["transform-es2015-modules-commonjs"]
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-object-rest-spread",
+        ["module-resolver", {
+          "cwd": "babelrc",
+          "alias": {
+            "^@mineral-ui/(.+)/dist/es/__demo__/(.+)": "./packages/\\1/src/__demo__/\\2",
+            "^@mineral-ui/(.+)": "./packages/\\1/src"
+          }
+        }]
+      ]
     }
   }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 const webpackMerge = require('webpack-merge');
-const makeWebpackConfig = require('../../../utils/makeWebpackConfig');
+const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 const TARGET = process.env.TARGET;
 
 const baseConfig = makeWebpackConfig({
