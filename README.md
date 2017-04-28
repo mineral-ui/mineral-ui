@@ -83,11 +83,9 @@ Mineral UI supports the latest versions of Chrome, Firefox, Safari, Edge, and In
 
 Future plans and high priority features and enhancements can be found in the [Roadmap](https://github.com/mineral-ui/mineral-ui/blob/master/ROADMAP.md) file.
 
-<!--
 ## License
 
-This project is licensed under the MIT License — see the [License](https://github.com/mineral-ui/mineral-ui/blob/master/LICENSE.md) file for details.
--->
+This project is licensed under the Apache 2.0 License — see the [License](https://github.com/mineral-ui/mineral-ui/blob/master/LICENSE.md) file for details.
 
 <!--
 ## Acknowledgements
