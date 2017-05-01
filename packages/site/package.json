@@ -6,19 +6,17 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run clean && npm run build:umd",
-    "build:analyze": "ANALYZE=true npm run build:umd",
-    "build:prod": "NODE_ENV=production npm run build",
+    "build": "npm run clean && NODE_ENV=production npm run build:umd",
+    "build:analyze": "ANALYZE=true npm run build",
     "build:umd": "TARGET=site webpack",
     "clean": "rimraf dist/*",
     "commit": "git-cz",
     "eslint": "eslint --ignore-path ../../.eslintignore .",
-    "lerna": "lerna",
+    "jest": "jest --config=../../.jestrc",
     "lint": "npm run eslint",
     "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
     "start": "TARGET=site webpack-dev-server --progress",
-    "test": "jest --config=../../.jestrc",
-    "test:coverage": "npm run test -- --coverage"
+    "test": "npm run lint && npm run jest -- --coverage"
   },
   "devDependencies": {
     "@mineral-ui/hello": "^0.1.0"

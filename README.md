@@ -53,7 +53,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 ## Contributing
 
-We welcome all contributors who abide by our [Code of Conduct](https://github.com/mineral-ui/mineral-ui/blob/master/CODE_OF_CONDUCT.md). Please see the [Contributors Guide](https://github.com/mineral-ui/mineral-ui/blob/master/CONTRIBUTING.md) for more details on submitting a PR, setting up a local dev environment, running tests, etc...
+We welcome all contributors who abide by our [Code of Conduct](./CODE_OF_CONDUCT.md). Please see the [Contributors Guide](./CONTRIBUTING.md) and [Developer Docs](./docs/README.md) for more details on submitting a PR, setting up a local dev environment, running tests, etc...
 
 
 ### How You Can Help
@@ -81,11 +81,11 @@ Mineral UI supports the latest versions of Chrome, Firefox, Safari, Edge, and In
 
 ## Roadmap
 
-Future plans and high priority features and enhancements can be found in the [Roadmap](https://github.com/mineral-ui/mineral-ui/blob/master/ROADMAP.md) file.
+Future plans and high priority features and enhancements can be found in the [Roadmap](./ROADMAP.md) file.
 
 ## License
 
-This project is licensed under the Apache 2.0 License — see the [License](https://github.com/mineral-ui/mineral-ui/blob/master/LICENSE.md) file for details.
+This project is licensed under the Apache 2.0 License — see the [License](./LICENSE.md) file for details.
 
 <!--
 ## Acknowledgements

@@ -2,7 +2,7 @@
 
 > **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
 
-Thank you for your help making this project and community as good as it can be. We strive to maintain a welcoming, inclusive space for all. All contributors, including commenters on issues, are expected to abide by our [Code of Conduct](https://github.com/mineral-ui/mineral-ui/blob/master/CODE_OF_CONDUCT.md).
+Thank you for your help making this project and community as good as it can be. We strive to maintain a welcoming, inclusive space for all. All contributors, including commenters on issues, are expected to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 Here are a few things to help your contribution be fun and trouble-free.
 
@@ -15,7 +15,7 @@ Please try to keep your PR as small and focused as possible, and don’t include
 
 If your PR adds new features or changes existing code, please attempt to write tests covering the new behavior.
 
-For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](https://github.com/mineral-ui/mineral-ui/blob/master/.github/PULL_REQUEST_TEMPLATE.md).
+For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md).
 
 
 ## Getting Started
@@ -60,13 +60,7 @@ npm update
 	nvm install
 	```
 
-1. To enable [hot module reloading](https://webpack.js.org/concepts/hot-module-replacement/) across interdependent components, run
-
-	```sh
-	npm run build:watch
-	```
-
-1. In a separate tab/pane, navigate to the component you wish to edit and start its demo
+1. Navigate to the component you wish to edit and start its demo
 
 	```sh
 	cd packages/components/hello
@@ -112,6 +106,11 @@ Unit tests use [Jest](https://github.com/facebook/jest). When appropriate, [snap
 	```
 
 	You can run a scoped suite of unit tests by running that same command in any package’s directory.
+
+
+### Developer Docs
+
+More detailed information can be found in the [Developer Docs](./docs/README.md).
 
 
 ### Troubleshooting
