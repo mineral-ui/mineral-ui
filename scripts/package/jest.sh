@@ -1,3 +1,4 @@
 #!/bin/bash -e
 
-jest --config=.jestrc -- $@
+cwd=`pwd`
+npm run jest --prefix ../../ -- $@ "$cwd/"
