@@ -7,16 +7,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npm run clean && NODE_ENV=production npm run build:umd",
-    "build:analyze": "ANALYZE=true npm run build",
+    "build:analyze": "$npm_package_config_script_path/build-analyze.sh",
     "build:umd": "TARGET=site webpack",
-    "clean": "rimraf dist/*",
-    "commit": "git-cz",
-    "eslint": "eslint --ignore-path ../../.eslintignore .",
-    "jest": "jest --config=../../.jestrc",
-    "lint": "npm run eslint",
-    "pack-ls": "tar -tvf $(npm pack) && rm mineral-ui-*.tgz",
+    "clean": "$npm_package_config_script_path/clean.sh",
+    "commit": "$npm_package_config_script_path/commit.sh",
+    "eslint": "$npm_package_config_script_path/eslint.sh",
+    "jest": "$npm_package_config_script_path/jest.sh",
+    "lint": "$npm_package_config_script_path/lint.sh",
+    "pack-ls": "$npm_package_config_script_path/pack-ls.sh",
     "start": "TARGET=site webpack-dev-server --progress",
-    "test": "npm run lint && npm run jest -- --coverage"
+    "test": "$npm_package_config_script_path/test.sh"
   },
   "devDependencies": {
     "@mineral-ui/hello": "^0.1.0"
@@ -24,6 +24,7 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
+    },
+    "script_path": "../../scripts/package" 
   }
 }
