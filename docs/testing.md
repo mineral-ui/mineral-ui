@@ -1,11 +1,9 @@
 # Testing
 
-All testing methods described here work in both the root directory and individual package directories.
-
 ## Test all the things
 
 ```sh
-npm run test
+npm test
 ```
 
 ## Lint your files
@@ -22,23 +20,32 @@ Unit tests are defined with the [Jest test framework](https://facebook.github.io
 npm run jest
 ```
 
+## Run tests for an individual package
+
+```sh
+cd packages/site
+npm test
+npm run lint
+npm run jest
+```
+
 ### Jest command line options
 
-All [Jest command line options](https://facebook.github.io/jest/docs/cli.html) are allowed.
+All [Jest command line options](https://facebook.github.io/jest/docs/cli.html) are allowed in both the root directory and individual package directories.
 
-### Run a single spec
+#### Run a single spec
 
 ```sh
 npm run jest -- HelloWorld
 ```
 
-### Run all specs affected by changed files
+#### Run all specs affected by changed files
 
 ```sh
 npm run jest -- -o
 ```
 
-### Watch for file changes and automatically re-run affected specs
+#### Watch for file changes and automatically re-run affected specs
 
 ```sh
 npm run jest -- --watch
