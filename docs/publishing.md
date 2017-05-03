@@ -2,7 +2,7 @@
 
 ## Semantic
 
-When publishing a public release, you should be able to simply run the following command.  It will do many things, like make a production build, run tests, detect which packages have changed, determine appropriate version bumps, generate change-logs, add git tags, push to github, create a release on github, and publish to npm.
+When publishing a public release, you should be able to simply run the following command.  It will do many things, like make a production build, run tests, detect which packages have changed, determine appropriate version bumps, generate change-logs, add git tags, push to Github, create a release on Github, publish packages to npm, and deploy site artifacts to Github pages.
 
 * `npm run release:semantic`
 
