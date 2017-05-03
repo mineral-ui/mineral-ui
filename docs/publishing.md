@@ -2,15 +2,19 @@
 
 ## Semantic
 
-When publishing a public release, you should be able to simply run the following command.  It will do many things, like make a production build, run tests, detect which packages have changed, determine appropriate version bumps, generate change-logs, add git tags, push to github, create a release on github, and publish to npm.
+When publishing a public release, you should be able to simply run the following command.  It will do many things, like make a production build, run tests, detect which packages have changed, determine appropriate version bumps, generate change-logs, add git tags, push to GitHub, create a release on GitHub, publish packages to npm, and deploy site artifacts to GitHub pages.
 
-* `npm run release:semantic`
+```sh
+npm run release:semantic
+```
 
 ## Manual
 
 If you need a bit more control over the process, use the following command as your starting point.
 
-* `npm run release`
+```sh
+npm run release
+```
 
 _Note that [additional options](https://github.com/lerna/lerna#publish) to the underlying `lerna publish` command may be specified as follows, e.g. `npm run release -- --skip-git --skip-npm`_
 
