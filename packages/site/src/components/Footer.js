@@ -14,8 +14,21 @@
  * limitations under the License.
  */
 import React from 'react';
-import HelloWorld from '../../HelloWorld';
+import './footer.scss';
 
-export default function Basic() {
-  return <HelloWorld />;
+export default function Footer() {
+  return (
+    <div className="mnr-Footer">
+      <div>Copyright © 2017 CA</div>
+      <div>
+        We welcome feedback and contributions on
+        {' '}
+        <a
+          href="https://github.com/mineral-ui/mineral-ui"
+          className="mnr-Footer-link">
+          GitHub
+        </a>
+      </div>
+    </div>
+  );
 }

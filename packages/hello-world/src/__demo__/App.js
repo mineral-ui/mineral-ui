@@ -14,12 +14,23 @@
  * limitations under the License.
  */
 import React from 'react';
-import Basic from './examples/Basic';
+import ComponentDoc from '../../../site/src/components/ComponentDoc';
+import ComponentDocExample
+  from '../../../site/src/components/ComponentDocExample';
+import Default from './examples/Default';
 
 export default function App() {
+  const props = {
+    description: "A simple component that renders the string, 'Hello World'. It is primarily used for testing project configuration and package distribution.",
+    slug: 'hello-world',
+    title: 'HelloWorld'
+  };
+
   return (
-    <div>
-      <Basic />
-    </div>
+    <ComponentDoc {...props}>
+      <ComponentDocExample>
+        <Default />
+      </ComponentDocExample>
+    </ComponentDoc>
   );
 }

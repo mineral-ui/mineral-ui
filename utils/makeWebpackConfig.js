@@ -33,10 +33,7 @@ function getEntry() {
 
 function getOutput({ packageName, packagePath }) {
   if (TARGET === 'demo') {
-    return {
-      filename: '[name].js',
-      path: path.resolve(packagePath, 'dist/demo')
-    };
+    return;
   } else if (TARGET === 'site') {
     return {
       filename: '[name].js',
@@ -57,6 +54,12 @@ function getExternals() {
     return;
   } else {
     return {
+      'prop-types': {
+        root: 'PropTypes',
+        commonjs: 'prop-types',
+        commonjs2: 'prop-types',
+        amd: 'prop-types'
+      },
       react: {
         root: 'React',
         commonjs: 'react',
@@ -77,6 +80,10 @@ function getModule() {
   return {
     rules: [
       {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
@@ -94,8 +101,8 @@ function getResolve() {
 function getDevServer({ packagePath }) {
   if (['demo', 'site'].includes(TARGET)) {
     const contentBase = TARGET === 'demo'
-      ? path.join(packagePath, 'dist/es/__demo__')
-      : path.join(packagePath, 'dist');
+      ? path.join(packagePath, 'src/__demo__')
+      : path.join(packagePath, 'src');
 
     return {
       contentBase,

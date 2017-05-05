@@ -1,5 +1,8 @@
   {
     "coverageDirectory": "reports/coverage",
-    "coveragePathIgnorePatterns": ["/__demo__/", "/node_modules/"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "coveragePathIgnorePatterns": ["/__demo__/", "/node_modules/", "/packages/site/"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "moduleNameMapper": {
+      "\\.scss$": "<rootDir>/utils/styleMock.js"
+    }
   }

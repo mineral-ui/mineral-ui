@@ -14,8 +14,19 @@
  * limitations under the License.
  */
 import React from 'react';
-import Hello from '../../Hello';
+import PropTypes from 'prop-types';
+import './component-doc-example.scss';
 
-export default function Basic() {
-  return <Hello />;
+ComponentDocExample.propTypes = {
+  children: PropTypes.node
+};
+
+export default function ComponentDocExample({ children }) {
+  return (
+    <div className="mnr-ComponentDocExample">
+      <div className="mnr-ComponentDocExample-resizable">
+        {children}
+      </div>
+    </div>
+  );
 }

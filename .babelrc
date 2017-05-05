@@ -27,24 +27,22 @@
         ["module-resolver", {
           "cwd": "babelrc",
           "alias": {
-            "^@mineral-ui/(.+)/dist/es/__demo__/(.+)": "./packages/\\1/src/__demo__/\\2",
             "^@mineral-ui/(.+)": "./packages/\\1/src"
           }
         }]
       ]
     },
 
-    /**
-     * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
-     */
     "test": {
       "plugins": [
+        /**
+         * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
+         */
         "transform-es2015-modules-commonjs",
         "transform-object-rest-spread",
         ["module-resolver", {
           "cwd": "babelrc",
           "alias": {
-            "^@mineral-ui/(.+)/dist/es/__demo__/(.+)": "./packages/\\1/src/__demo__/\\2",
             "^@mineral-ui/(.+)": "./packages/\\1/src"
           }
         }]
