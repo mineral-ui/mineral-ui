@@ -17,8 +17,10 @@
     "start": "TARGET=site $npm_package_config_script_path/start.sh",
     "test": "$npm_package_config_script_path/test.sh"
   },
-  "devDependencies": {
-    "@mineral-ui/hello": "^0.1.0"
+  "peerDependencies": {
+    "prop-types": "^15.5.7",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "config": {
     "commitizen": {

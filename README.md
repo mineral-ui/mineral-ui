@@ -4,7 +4,7 @@
 
 > **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
 
-# Mineral UI
+# [Mineral UI](https://mineral-ui.github.io/)
 
 A design system and [React](https://facebook.github.io/react/) component library for the web brought to you by [CA Technologies](http://ca.com).
 

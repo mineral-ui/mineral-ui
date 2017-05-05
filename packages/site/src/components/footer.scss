@@ -1,0 +1,19 @@
+@import 'base';
+
+.mnr-Footer {
+  color: color(grayDark);
+  font-size: font-size(_1);
+  margin: measurement(_4);
+
+  @media (min-width:32em) {
+    display: flex;
+
+    > :last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.mnr-Footer-link {
+  @include link;
+}

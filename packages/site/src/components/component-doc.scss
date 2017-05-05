@@ -1,0 +1,30 @@
+@import 'base';
+
+.mnr-ComponentDoc {
+  border-bottom: 2px solid color(gray);
+  margin: 0 measurement(_4) measurement(_4);
+  padding-bottom: measurement(_4);
+}
+
+.mnr-ComponentDoc-header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: measurement(_3) 0;
+
+  > p {
+    font-size: font-size(_3);
+    flex: 1 0 100%;
+    line-height: 1.5;
+  }
+}
+
+.mnr-ComponentDoc-title {
+  @include h1;
+  margin-right: auto;
+  padding-right: 12rem;
+}
+
+.mnr-ComponentDoc-headerLink {
+  @include link;
+}

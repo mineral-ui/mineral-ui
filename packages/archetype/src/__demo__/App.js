@@ -14,12 +14,23 @@
  * limitations under the License.
  */
 import React from 'react';
-import Basic from './examples/Basic';
+import ComponentDoc from '../../../site/src/components/ComponentDoc';
+import ComponentDocExample
+  from '../../../site/src/components/ComponentDocExample';
+import Default from './examples/Default';
 
 export default function App() {
+  const props = {
+    description: 'Used as the starter for all new components.',
+    slug: 'archetype',
+    title: 'Archetype'
+  };
+
   return (
-    <div>
-      <Basic />
-    </div>
+    <ComponentDoc {...props}>
+      <ComponentDocExample>
+        <Default />
+      </ComponentDocExample>
+    </ComponentDoc>
   );
 }

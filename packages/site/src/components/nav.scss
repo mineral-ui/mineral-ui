@@ -1,0 +1,33 @@
+@import 'base';
+
+.mnr-Nav {
+  background-color: color(grayLight);
+  padding: measurement(_3);
+}
+
+.mnr-Nav-title {
+  @include h2;
+  border-bottom: 1px solid color(gray);
+  margin-bottom: measurement(_3);
+  padding-bottom: measurement(_3);
+}
+
+.mnr-Nav-heading {
+  @include h3;
+}
+
+.mnr-Nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mnr-Nav-listItem {
+  + .mnr-Nav-listItem {
+    margin-top: measurement(_2);
+  }
+}
+
+.mnr-Nav-link {
+  @include link;
+  text-decoration: none;
+}

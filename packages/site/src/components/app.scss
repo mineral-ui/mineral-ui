@@ -1,0 +1,24 @@
+@import 'base';
+
+.mnr-App {
+  @media (min-width: 45em) {
+    align-items: stretch;
+    display: flex;
+    min-height: 100vh;
+  }
+}
+
+.mnr-App-nav {
+  border: 0 solid color(gray);
+  border-bottom-width: 1px;
+
+  @media (min-width: 45em) {
+    border-bottom-width: 0;
+    border-right-width: 1px;
+    width: 16*measurement(_3);
+  }
+}
+
+.mnr-App-main {
+  width: 100%;
+}

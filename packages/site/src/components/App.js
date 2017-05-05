@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import ComponentDocExample
-  from '../../../site/src/components/ComponentDocExample';
-import Default from './examples/Default';
+import HelloApp from '../../../hello/src/__demo__/App';
+import WorldApp from '../../../world/src/__demo__/App';
+import HelloWorldApp from '../../../hello-world/src/__demo__/App';
+import Footer from './Footer';
+import Nav from './Nav';
+import './app.scss';
 
 export default function App() {
-  const props = {
-    description: "A simple component that renders the string, 'Hello'. It is primarily used for testing project configuration and package distribution.",
-    slug: 'hello',
-    title: 'Hello'
-  };
-
   return (
-    <ComponentDoc {...props}>
-      <ComponentDocExample>
-        <Default />
-      </ComponentDocExample>
-    </ComponentDoc>
+    <div className="mnr-App">
+      <Nav className="mnr-App-nav" />
+      <main className="mnr-App-main">
+        <HelloApp />
+        <WorldApp />
+        <HelloWorldApp />
+        <Footer />
+      </main>
+    </div>
   );
 }

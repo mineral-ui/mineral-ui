@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 import React from 'react';
-import World from '../../World';
+import Archetype from '../../Archetype';
 
-export default function Basic() {
-  return <World />;
+export default function Default() {
+  return <Archetype />;
 }

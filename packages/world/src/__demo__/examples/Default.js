@@ -14,23 +14,8 @@
  * limitations under the License.
  */
 import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import ComponentDocExample
-  from '../../../site/src/components/ComponentDocExample';
-import Default from './examples/Default';
+import World from '../../World';
 
-export default function App() {
-  const props = {
-    description: "A simple component that renders the string, 'Hello'. It is primarily used for testing project configuration and package distribution.",
-    slug: 'hello',
-    title: 'Hello'
-  };
-
-  return (
-    <ComponentDoc {...props}>
-      <ComponentDocExample>
-        <Default />
-      </ComponentDocExample>
-    </ComponentDoc>
-  );
+export default function Default() {
+  return <World />;
 }
