@@ -111,14 +111,3 @@ Unit tests use [Jest](https://github.com/facebook/jest). When appropriate, [snap
 ### Developer Docs
 
 More detailed information can be found in the [Developer Docs](./docs/README.md).
-
-
-### Troubleshooting
-
-- If you’re getting errors, a good first step is to clean the repo and bootstrap the packages manually ([why?](https://lernajs.io/#command-bootstrap)).
-
-	In the project root:
-
-	```sh
-	npm run clean && npm run bootstrap
-	```
