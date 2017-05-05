@@ -6,10 +6,8 @@
   "main": "dist/umd/index.js",
   "module": "dist/es/index.js",
   "scripts": {
-    "build": "$npm_package_config_script_path/build-prod.sh",
+    "build": "$npm_package_config_script_path/build.sh",
     "build:analyze": "$npm_package_config_script_path/build-analyze.sh",
-    "build:es": "$npm_package_config_script_path/build-es.sh",
-    "build:umd": "$npm_package_config_script_path/build-umd.sh",
     "clean": "$npm_package_config_script_path/clean.sh",
     "commit": "$npm_package_config_script_path/commit.sh",
     "eslint": "$npm_package_config_script_path/eslint.sh",
@@ -30,6 +28,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     },
-    "script_path": "../../scripts/package" 
+    "script_path": "../../scripts/package"
   }
 }

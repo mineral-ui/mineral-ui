@@ -1,3 +1,5 @@
 #!/bin/bash -e
 
-TARGET=demo webpack-dev-server --progress
+TARGET="${TARGET:-demo}"
+
+TARGET=$TARGET webpack-dev-server --progress
