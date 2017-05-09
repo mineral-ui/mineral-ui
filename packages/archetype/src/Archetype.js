@@ -13,10 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Archetype extends Component {
-  render() {
-    return <div>Archetype</div>;
-  }
+export default function Archetype() {
+  return <div>Archetype</div>;
 }

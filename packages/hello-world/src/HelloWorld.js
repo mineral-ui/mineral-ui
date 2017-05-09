@@ -13,16 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React, { PureComponent } from 'react';
+import React from 'react';
 import Hello from '@mineral-ui/hello';
 import World from '@mineral-ui/world';
 
-export default class HelloWorld extends PureComponent {
-  render() {
-    return (
-      <div>
-        <Hello /> <World />
-      </div>
-    );
-  }
+export default function HelloWorld() {
+  return (
+    <div>
+      <Hello /> <World />
+    </div>
+  );
 }

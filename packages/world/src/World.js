@@ -13,10 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React, { PureComponent } from 'react';
+import React from 'react';
 
-export default class World extends PureComponent {
-  render() {
-    return <span>World</span>;
-  }
+export default function World() {
+  return <span>World</span>;
 }
