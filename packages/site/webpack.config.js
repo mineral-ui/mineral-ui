@@ -13,8 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+const webpackMerge = require('webpack-merge');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 
-module.exports = makeWebpackConfig({
+const baseConfig = makeWebpackConfig({
   packagePath: __dirname
 });
+
+let config = baseConfig;
+config = webpackMerge(baseConfig, {
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        context: './public',
+        from: '**/*'
+      }
+    ])
+  ]
+});
+
+module.exports = config;
