@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.org/mineral-ui/mineral-ui)
+
+[![build status](https://travis-ci.org/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.org/mineral-ui/mineral-ui)
+[![managed with Waffle](https://img.shields.io/badge/managed_with-waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat)](http://commitizen.github.io/cz-cli/)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![formatted with Prettier](https://img.shields.io/badge/formatted_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
 
