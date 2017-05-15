@@ -1,23 +1,36 @@
 {
   "presets": [
+    /**
+     * Plugins run before presets.
+     * Presets run last to first.
+     * Plugins run first to last.
+     * 
+     * https://babeljs.io/docs/plugins/#plugin-preset-ordering
+     */
     ["env", {
       "targets": { "browsers": ["last 1 version"] },
       "useBuiltIns": false,
       "modules": false
     }],
-    "react"
+    "react",
+    {
+      "plugins": [
+        "transform-object-rest-spread"
+      ]
+    }
   ],
 
   "env": {
     "production": {
       "plugins": [
-        "transform-object-rest-spread"
+        /** optimize react component code */
+        "babel-plugin-transform-react-constant-elements",
+        "babel-plugin-transform-react-inline-elements"
       ]
     },
 
     "development": {
       "plugins": [
-        "transform-object-rest-spread",
         /**
          * Re-write mineral package imports.
          *
@@ -39,7 +52,6 @@
          * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
          */
         "transform-es2015-modules-commonjs",
-        "transform-object-rest-spread",
         ["module-resolver", {
           "cwd": "babelrc",
           "alias": {
