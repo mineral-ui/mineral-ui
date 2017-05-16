@@ -9,7 +9,7 @@ Here are a few things to help your contribution be fun and trouble-free.
 
 ## Submitting a Pull Request
 
-We welcome pull requests from anyone, but before working on a large change, it is best to open an issue first to discuss it with the maintainers.
+We welcome pull requests from anyone, but before working on a large change, it is best to open an issue first to discuss it with the maintainers. You can also get a good overview of our current and planned work from our [Waffle board](https://waffle.io/mineral-ui/mineral-ui), from which we manage this project.
 
 Please try to keep your PR as small and focused as possible, and don’t include more than one feature or bug fix per PR. Big PRs are hard to review and are less likely to be accepted.
 
