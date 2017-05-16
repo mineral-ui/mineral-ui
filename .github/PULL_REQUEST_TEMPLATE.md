@@ -3,8 +3,8 @@ NOTE: We’re just getting started. While we appreciate any feedback, we’re no
 
 Thank you for your contribution! Here’s a template to help you format your PR.
 
-Your title should look like: [ComponentName] — Clear, brief title using imperative tense
-For example: [Button] — Add support for type=submit
+Your title should look like: [ComponentName] Clear, brief title using imperative tense
+For example: [Button] Add support for type=submit
 
 For a PR to be considered, each item in the checklist must be checked.
 -->

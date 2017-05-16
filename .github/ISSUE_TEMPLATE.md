@@ -1,7 +1,7 @@
 <!--
 If your issue relates to one or more components, your title should
-look like: [ComponentName] — Clear, brief title
-For example: [Button] — Does not support id attribute
+look like: [ComponentName] Clear, brief title
+For example: [Button] Does not support id attribute
 -->
 
 ### Expected behavior
