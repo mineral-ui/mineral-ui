@@ -13,15 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
+
 import React from 'react';
-import PropTypes from 'prop-types';
 import './component-doc-example.scss';
 
-ComponentDocExample.propTypes = {
-  children: PropTypes.node
-};
+type Props = {|
+  children?: React.Element<*>
+|};
 
-export default function ComponentDocExample({ children }) {
+export default function ComponentDocExample({ children }: Props) {
   return (
     <div className="mnr-ComponentDocExample">
       <div className="mnr-ComponentDocExample-resizable">

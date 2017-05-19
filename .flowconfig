@@ -1,0 +1,13 @@
+[ignore]
+.*/docs/.*
+.*/node_modules/.*
+.*/reports/.*
+.*/scripts/.*
+./utils
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/utils/emptyObject'

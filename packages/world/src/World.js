@@ -13,8 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
 import React from 'react';
 
-export default function World() {
-  return <span>World</span>;
+type Props = {|
+  text?: string
+|};
+
+export default function World({ text = 'World' }: Props) {
+  return <span>{text}</span>;
 }
