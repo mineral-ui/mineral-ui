@@ -13,15 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
+
 import React from 'react';
-import PropTypes from 'prop-types';
 import './nav.scss';
 
-Nav.propTypes = {
-  className: PropTypes.string
-};
+type Props = {|
+  className: string
+|};
 
-export default function Nav({ className }) {
+export default function Nav({ className }: Props) {
   return (
     <nav className={`mnr-Nav ${className}`}>
       <h1 className="mnr-Nav-title">Mineral UI</h1>

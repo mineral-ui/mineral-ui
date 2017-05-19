@@ -7,19 +7,24 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:flowtype/recommended"
   ],
   "parser": "babel-eslint",
   "plugins": [
+    "flowtype",
     "jsx-a11y",
     "prettier",
-    "react"
+    "react" 
   ],
   "rules": {
-    "no-console": "off",
+    "no-console": ["error", {
+      "allow": ["warn", "error"]
+    }],
     "prettier/prettier": ["error", {
       "bracketSpacing": true,
       "jsxBracketSameLine": true,
+      "parser": "flow",
       "singleQuote": true,
       "trailingComma": "none"
     }]

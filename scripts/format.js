@@ -36,7 +36,9 @@ files.forEach(file => {
     }
 
     if (!data.includes(license)) {
-      prependFile(file, license, err => {
+      const pre = data.includes('@flow') ? license : license + '/* @flow */\n';
+
+      prependFile(file, pre, err => {
         if (err) {
           throw err;
         }

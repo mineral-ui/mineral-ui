@@ -13,18 +13,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
+
 import React from 'react';
-import PropTypes from 'prop-types';
 import './component-doc.scss';
 
-ComponentDoc.propTypes = {
-  children: PropTypes.node,
-  description: PropTypes.node,
-  slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
-};
+type Props = {|
+  children?: React.Element<*>,
+  description?: React.Element<*>,
+  slug: string,
+  title: string
+|};
 
-export default function ComponentDoc({ children, description, slug, title }) {
+export default function ComponentDoc({
+  children,
+  description,
+  slug,
+  title
+}: Props) {
   return (
     <div className="mnr-ComponentDoc" id={slug}>
       <header className="mnr-ComponentDoc-header">
