@@ -2,25 +2,29 @@
 
 Mineral UI `World` component. Find out more about [Mineral UI](https://github.com/mineral-ui/mineral-ui).
 
+
 ## Installation
 
-```sh
-npm install --save @mineral-ui/world
-```
+1. Install project [peer dependencies](../../docs/peer-dependencies.md), if not already installed
+
+2. Install the package
+
+  ```sh
+  npm install --save @mineral-ui/world
+  ```
+
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 import World from '@mineral-ui/world';
 
-export default class MyComponent extends Component {
-  render() {
-    return (
-      <div>
-        <World />
-      </div>
-    );
-  }
+export default function MyComponent() {
+  return (
+    <div>
+      <World />
+    </div>
+  );
 }
 ```

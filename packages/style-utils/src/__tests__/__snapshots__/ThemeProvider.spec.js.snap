@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeProvider renders correctly with default theme 1`] = `
+.css-1dnlrg3,
+[data-css-1dnlrg3] {
+  background-color: lavender;
+  color: mediumblue;
+  display: inline-block;
+  outline: 1px solid gray;
+  padding: 1rem;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "color_backgroundGray": "gray",
+        "color_backgroundGrayDark": "darkgray",
+        "color_backgroundGrayLight": "lightgray",
+        "color_danger": "tomato",
+        "color_primary": "mediumblue",
+        "color_success": "mediumspringgreen",
+        "color_warning": "coral",
+        "font_family": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "font_size_a": "0.8rem",
+        "font_size_b": "1rem",
+        "font_size_c": "1.4rem",
+        "font_size_d": "2.2rem",
+        "measurement_a": "0.25rem",
+        "measurement_b": "0.5rem",
+        "measurement_c": "1rem",
+        "measurement_d": "2rem",
+      }
+    }
+  >
+    <Sample>
+      <glamorous(span)>
+        <span
+          className="css-1dnlrg3"
+        >
+          Sample
+        </span>
+      </glamorous(span)>
+    </Sample>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`ThemeProvider renders correctly with specified theme 1`] = `
+.css-10l68o8,
+[data-css-10l68o8] {
+  background-color: lavender;
+  color: mediumvioletred;
+  display: inline-block;
+  outline: 1px solid gray;
+  padding: 1rem;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "color_primary": "mediumvioletred",
+    }
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "color_primary": "mediumvioletred",
+      }
+    }
+  >
+    <Sample>
+      <glamorous(span)>
+        <span
+          className="css-10l68o8"
+        >
+          Sample
+        </span>
+      </glamorous(span)>
+    </Sample>
+  </ThemeProvider>
+</ThemeProvider>
+`;

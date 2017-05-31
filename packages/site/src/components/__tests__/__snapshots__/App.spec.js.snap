@@ -1,19 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App renders correctly 1`] = `
-<div
-  className="mnr-App"
->
-  <Nav
-    className="mnr-App-nav"
-  />
-  <main
-    className="mnr-App-main"
+<glamorous(div)>
+  <ThemeProvider
+    theme={
+      Object {
+        "color_background": "#f6f6f6",
+      }
+    }
   >
+    <glamorous(Nav) />
+  </ThemeProvider>
+  <glamorous(main)>
+    <App />
     <App />
     <App />
     <App />
     <Footer />
-  </main>
-</div>
+  </glamorous(main)>
+</glamorous(div)>
 `;

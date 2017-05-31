@@ -2,25 +2,29 @@
 
 Mineral UI `Archetype` component. Find out more about [Mineral UI](https://github.com/mineral-ui/mineral-ui).
 
+
 ## Installation
 
-```sh
-npm install --save <peer-dependencies> @mineral-ui/archetype
-```
+1. Install project [peer dependencies](../../docs/peer-dependencies.md), if not already installed
+
+2. Install the package
+
+  ```sh
+  npm install --save @mineral-ui/archetype
+  ```
+
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 import Archetype from '@mineral-ui/archetype';
 
-export default class MyComponent extends Component {
-  render() {
-    return (
-      <div>
-        <Archetype />
-      </div>
-    );
-  }
+export default function MyComponent() {
+  return (
+    <div>
+      <Archetype />
+    </div>
+  );
 }
 ```

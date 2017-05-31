@@ -24,34 +24,49 @@ A design system and [React](https://facebook.github.io/react/) component library
 
 Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com/search?q=@mineral-ui). E.g., to install the Hello and World packages:
 
-```sh
-npm install --save @mineral-ui/hello @mineral-ui/world
-```
+1. Install project [peer dependencies](./docs/peer-dependencies.md)
 
-Then, in your app, import and use just like any other React component:
+  ```sh
+  npm install --save @mineral-ui/style-utils glamorous glamor
+  ```
 
-_ES2015_
+2. Install the Mineral UI packages that you wish to use
 
-```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Hello from '@mineral-ui/hello';
-import World from '@mineral-ui/world';
+  ```sh
+  npm install --save @mineral-ui/hello @mineral-ui/world
+  ```
 
-const App = () => (
-  <div>
-    <Hello /> <World />
-  </div>
-);
+3. Then, in your app, import and use just like any other React component
 
-ReactDOM.render(<App />, document.getElementById('app'));
-```
+  _ES2015_
 
-<!--
+  ```js
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import { ThemeProvider } from '@mineral-ui/style-utils';
+  import Hello from '@mineral-ui/hello';
+  import World from '@mineral-ui/world';
+
+  const App = () => (
+    <div>
+      <Hello /> <World />
+    </div>
+  );
+
+  ReactDOM.render(
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>,
+    document.getElementById('app')
+  );
+  ```
+
+  > Note: Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+
 ### Styling
 
-> _It’s not likely to be as simple as just CSS or Sass, and so needs to be at least briefly documented._
--->
+This project uses [Glamorous](https://github.com/paypal/glamorous/) for its styling. Please see our [documentation](./docs/styling.md) for details.
+
 
 ## Contributing
 
@@ -88,9 +103,3 @@ Future plans and high priority features and enhancements can be found in the [Ro
 ## License
 
 This project is licensed under the Apache 2.0 License — see the [License](./LICENSE.md) file for details.
-
-<!--
-## Acknowledgements
-
-[inspirations]
--->

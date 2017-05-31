@@ -20,7 +20,13 @@
     "start": "$npm_package_config_script_path/start.sh",
     "test": "$npm_package_config_script_path/test.sh"
   },
+  "devDependencies": {
+    "@mineral-ui/style-utils": "^0.0.0"
+  },
   "peerDependencies": {
+    "@mineral-ui/style-utils": "^0.0.0",
+    "glamor": "^2.0.0",
+    "glamorous": "^3.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   },

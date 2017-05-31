@@ -13,24 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import HelloWorld from '../HelloWorld';
 
-function renderHelloWorld() {
+function shallowHelloWorld() {
   return shallow(<HelloWorld />);
+}
+
+function mountHelloWorld() {
+  return mount(<HelloWorld />);
 }
 
 describe('HelloWorld', () => {
   it('renders', () => {
-    const helloWorld = renderHelloWorld();
+    const helloWorld = shallowHelloWorld();
 
     expect(helloWorld.exists()).toEqual(true);
   });
 
   it('renders correctly', () => {
-    const helloWorld = renderHelloWorld();
+    const helloWorld = mountHelloWorld();
 
-    expect(helloWorld).toMatchSnapshot();
+    expect(helloWorld).toMatchSnapshotWithGlamor();
   });
 });

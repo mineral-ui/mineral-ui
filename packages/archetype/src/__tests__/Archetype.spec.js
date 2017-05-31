@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
 import Archetype from '../Archetype';

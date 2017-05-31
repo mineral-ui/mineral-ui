@@ -13,9 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 
-module.exports = makeWebpackConfig({
+const webpackMerge = require('webpack-merge');
+const makeWebpackConfig = require('../../utils/makeWebpackConfig');
+const TARGET = process.env.TARGET;
+
+const baseConfig = makeWebpackConfig({
   packageName: 'World',
   packagePath: __dirname
 });
+
+let config = baseConfig;
+if (TARGET !== 'demo') {
+  config = webpackMerge(baseConfig, {
+    externals: {
+      '@mineral-ui/style-utils': {
+        root: 'StyleUtils',
+        commonjs: '@mineral-ui/style-utils',
+        commonjs2: '@mineral-ui/style-utils',
+        amd: '@mineral-ui/style-utils'
+      }
+    }
+  });
+}
+
+module.exports = config;

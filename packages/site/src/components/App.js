@@ -13,24 +13,64 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
 import React from 'react';
+import { createStyledComponent, ThemeProvider } from '@mineral-ui/style-utils';
 import HelloApp from '../../../hello/src/__demo__/App';
 import WorldApp from '../../../world/src/__demo__/App';
 import HelloWorldApp from '../../../hello-world/src/__demo__/App';
+import StyleUtilsApp from '../../../style-utils/src/__demo__/App';
 import Footer from './Footer';
-import Nav from './Nav';
-import './app.scss';
+import _Nav from './Nav';
+import siteTheme from './siteTheme';
+import styleReset from './styleReset';
 
-export default function App() {
+type Props = {|
+  className?: string
+|};
+
+const styles = {
+  app: (props, theme) => ({
+    ...styleReset(theme),
+    '@media(min-width: 45em)': {
+      alignItems: 'stretch',
+      display: 'flex',
+      minHeight: '100vh'
+    }
+  }),
+  nav: (props, theme) => ({
+    border: `0 solid ${theme.color_gray}`,
+    borderBottomWidth: '1px',
+
+    '@media(min-width: 45em)': {
+      borderBottomWidth: '0',
+      borderRightWidth: '1px',
+      width: `${16 * parseFloat(theme.measurement_c)}rem`
+    }
+  }),
+  main: {
+    width: '100%'
+  }
+};
+
+const Root = createStyledComponent('div', styles.app);
+const Nav = createStyledComponent(_Nav, styles.nav);
+const Main = createStyledComponent('main', styles.main);
+
+export default function App({ className }: Props) {
   return (
-    <div className="mnr-App">
-      <Nav className="mnr-App-nav" />
-      <main className="mnr-App-main">
+    <Root className={className}>
+      <ThemeProvider theme={{ color_background: siteTheme.color_grayLight }}>
+        <Nav />
+      </ThemeProvider>
+      <Main>
         <HelloApp />
         <WorldApp />
         <HelloWorldApp />
+        <StyleUtilsApp />
         <Footer />
-      </main>
-    </div>
+      </Main>
+    </Root>
   );
 }

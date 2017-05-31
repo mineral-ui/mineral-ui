@@ -13,24 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
 import React from 'react';
 import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import ComponentDocExample
-  from '../../../site/src/components/ComponentDocExample';
 import Default from './examples/Default';
 
-export default function App() {
-  const props = {
-    description: 'Used as the starter for all new components.',
-    slug: 'archetype',
-    title: 'Archetype'
-  };
+const examples = [
+  {
+    title: 'Default',
+    component: Default,
+    source: `<Archetype />`
+  }
+];
 
-  return (
-    <ComponentDoc {...props}>
-      <ComponentDocExample>
-        <Default />
-      </ComponentDocExample>
-    </ComponentDoc>
-  );
+const props = {
+  description: 'Used as the starter for all new components.',
+  examples,
+  slug: 'archetype',
+  title: 'Archetype'
+};
+
+export default function App() {
+  return <ComponentDoc {...props} />;
 }

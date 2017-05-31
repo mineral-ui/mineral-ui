@@ -13,21 +13,83 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* @flow */
 
+/* @flow */
 import React from 'react';
-import './component-doc-example.scss';
+import {
+  mineralTheme,
+  createStyledComponent,
+  ThemeProvider
+} from '@mineral-ui/style-utils';
+import styleReset from './styleReset';
 
 type Props = {|
-  children?: React.Element<*>
+  children?: MnrlReactNode,
+  className?: string,
+  description?: MnrlReactNode,
+  source?: string,
+  title?: string
 |};
 
-export default function ComponentDocExample({ children }: Props) {
+const styles = {
+  componentDocExample: (props, theme) => ({
+    ...styleReset(theme),
+    '& + &': {
+      borderTop: `1px solid ${theme.color_gray}`,
+      marginTop: theme.measurement_d,
+      paddingTop: theme.measurement_d
+    }
+  }),
+  resizable: (props, theme) => ({
+    border: `1px solid ${theme.color_gray}`,
+    padding: theme.measurement_c
+  }),
+  title: (props, theme) => ({
+    margin: `0 0 ${theme.measurement_b}`,
+    fontSize: theme.font_size_b
+  }),
+  graf: (props, theme) => ({
+    lineHeight: '1.5',
+    margin: `0 0 ${theme.measurement_b}`
+  }),
+  code: (props, theme) => ({
+    backgroundColor: theme.color_grayLight,
+    color: theme.color_grayDark,
+    display: 'block',
+    fontFamily: '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
+    fontSize: 'smaller',
+    padding: theme.measurement_c
+  })
+};
+
+const Root = createStyledComponent('div', styles.componentDocExample);
+const Resizable = createStyledComponent('div', styles.resizable);
+const Title = createStyledComponent('h2', styles.title);
+const Graf = createStyledComponent('p', styles.graf);
+const Code = createStyledComponent('code', styles.code);
+
+export default function ComponentDocExample({
+  children,
+  className,
+  description,
+  source,
+  title
+}: Props) {
   return (
-    <div className="mnr-ComponentDocExample">
-      <div className="mnr-ComponentDocExample-resizable">
-        {children}
-      </div>
-    </div>
+    <Root className={className}>
+      <Title>{title}</Title>
+      {typeof description === 'string'
+        ? <Graf>{description}</Graf>
+        : description}
+      <Resizable>
+        <ThemeProvider theme={mineralTheme}>
+          {children}
+        </ThemeProvider>
+      </Resizable>
+      {source &&
+        <pre>
+          <Code>{source}</Code>
+        </pre>}
+    </Root>
   );
 }

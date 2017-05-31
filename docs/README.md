@@ -1,4 +1,6 @@
 # Developer Docs
 
-* [Testing](./testing.md)
+* [Peer Dependencies](./peer-dependencies.md)
 * [Publishing](./publishing.md)
+* [Styling](./styling.md)
+* [Testing](./testing.md)

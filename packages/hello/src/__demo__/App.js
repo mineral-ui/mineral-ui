@@ -13,24 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/* @flow */
 import React from 'react';
 import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import ComponentDocExample
-  from '../../../site/src/components/ComponentDocExample';
 import Default from './examples/Default';
 
-export default function App() {
-  const props = {
-    description: "A simple component that renders the string, 'Hello'. It is primarily used for testing project configuration and package distribution.",
-    slug: 'hello',
-    title: 'Hello'
-  };
+const examples = [
+  {
+    title: 'Default',
+    component: Default,
+    source: `<Hello />`
+  }
+];
 
-  return (
-    <ComponentDoc {...props}>
-      <ComponentDocExample>
-        <Default />
-      </ComponentDocExample>
-    </ComponentDoc>
-  );
+const props = {
+  description: 'A simple component that renders the string, "Hello". It is primarily used for testing project configuration and package distribution.',
+  examples,
+  slug: 'hello',
+  title: 'Hello'
+};
+
+export default function App() {
+  return <ComponentDoc {...props} />;
 }

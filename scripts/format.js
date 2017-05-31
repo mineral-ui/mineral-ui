@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 /**
  * Script to inject license header into source files.
- *
- * Usage: node ./inject-license
  */
 const fs = require('fs');
 const glob = require('glob');
@@ -26,7 +25,12 @@ let license = require('../utils/license').licenseHeader;
 license = `${license}\n`;
 
 const files = glob.sync('**/*.js', {
-  ignore: ['**/node_modules/**', '**/dist/**', '**/reports/**']
+  ignore: [
+    '**/node_modules/**',
+    '**/dist/**',
+    '**/flow-typed/**',
+    '**/reports/**'
+  ]
 });
 
 files.forEach(file => {
@@ -36,7 +40,9 @@ files.forEach(file => {
     }
 
     if (!data.includes(license)) {
-      const pre = data.includes('@flow') ? license : license + '/* @flow */\n';
+      const pre = data.includes('@flow')
+        ? `${license}\n`
+        : `${license}\n/* @flow */`;
 
       prependFile(file, pre, err => {
         if (err) {

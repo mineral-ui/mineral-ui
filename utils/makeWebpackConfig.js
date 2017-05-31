@@ -54,11 +54,17 @@ function getExternals() {
     return;
   } else {
     return {
-      'prop-types': {
-        root: 'PropTypes',
-        commonjs: 'prop-types',
-        commonjs2: 'prop-types',
-        amd: 'prop-types'
+      glamor: {
+        root: 'Glamor',
+        commonjs: 'glamor',
+        commonjs2: 'glamor',
+        amd: 'glamor'
+      },
+      glamorous: {
+        root: 'Glamorous',
+        commonjs: 'glamorous',
+        commonjs2: 'glamorous',
+        amd: 'glamorous'
       },
       react: {
         root: 'React',
@@ -79,10 +85,6 @@ function getExternals() {
 function getModule() {
   return {
     rules: [
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

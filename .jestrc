@@ -1,8 +1,6 @@
   {
     "coverageDirectory": "reports/coverage",
     "coveragePathIgnorePatterns": ["/__demo__/", "/node_modules/", "/packages/site/"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
-    "moduleNameMapper": {
-      "\\.scss$": "<rootDir>/utils/emptyObject.js"
-    }
+    "setupTestFrameworkScriptFile": "<rootDir>/utils/test/setupTestFrameworkScript.js",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
