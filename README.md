@@ -35,8 +35,8 @@ _ES2015_
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from '@mineral-ui/Hello';
-import World from '@mineral-ui/World';
+import Hello from '@mineral-ui/hello';
+import World from '@mineral-ui/world';
 
 const App = () => (
   <div>
