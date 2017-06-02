@@ -19,26 +19,27 @@ import React from 'react';
 import './nav.scss';
 
 type Props = {|
-  className: string
+  className: string,
+  demos: Array<Object>
 |};
 
-export default function Nav({ className }: Props) {
+export default function Nav({ className, demos }: Props) {
+  const demoLinks = demos.map((demo, idx) => {
+    return (
+      <li key={idx}>
+        <a href={`#${demo.slug}`} className="mnr-Nav-link">
+          {demo.title}
+        </a>
+      </li>
+    );
+  });
+
   return (
     <nav className={`mnr-Nav ${className}`}>
       <h1 className="mnr-Nav-title">Mineral UI</h1>
       <h2 className="mnr-Nav-heading">Components</h2>
       <ol className="mnr-Nav-list">
-        <li className="mnr-Nav-listItem">
-          <a href="#hello" className="mnr-Nav-link">Hello</a>
-        </li>
-        <li className="mnr-Nav-listItem">
-          <a href="#world" className="mnr-Nav-link">World</a>
-        </li>
-        <li className="mnr-Nav-listItem">
-          <a href="#hello-world" className="mnr-Nav-link">
-            HelloWorld
-          </a>
-        </li>
+        {demoLinks}
       </ol>
     </nav>
   );

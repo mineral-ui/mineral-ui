@@ -16,5 +16,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import demoList from '../../{{DEMO_LIST_PATH}}/src/__demo__/index';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App demos={demoList} />, document.getElementById('app'));
