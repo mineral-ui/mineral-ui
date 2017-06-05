@@ -13,8 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import Default from './examples/Default';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+export default [
+  {
+    description: 'Used as the starter for all new components.',
+    slug: 'archetype',
+    title: 'Archetype',
+    examples: [
+      {
+        component: Default
+      }
+    ]
+  }
+];

@@ -13,22 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
 import React from 'react';
-import HelloApp from '../../../hello/src/__demo__/App';
-import WorldApp from '../../../world/src/__demo__/App';
-import HelloWorldApp from '../../../hello-world/src/__demo__/App';
+
+import DemoList from './DemoList';
 import Footer from './Footer';
 import Nav from './Nav';
 import './app.scss';
 
-export default function App() {
+type Props = {|
+  demos: Array<Object>
+|};
+
+export default function App({ demos }: Props) {
+
+  if (demos.length === 1) {
+    return <DemoList demos={demos} />;
+  }
+
   return (
     <div className="mnr-App">
-      <Nav className="mnr-App-nav" />
+      <Nav className="mnr-App-nav" demos={demos} />
       <main className="mnr-App-main">
-        <HelloApp />
-        <WorldApp />
-        <HelloWorldApp />
+        <DemoList demos={demos} />
         <Footer />
       </main>
     </div>

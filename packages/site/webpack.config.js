@@ -30,7 +30,20 @@ config = webpackMerge(baseConfig, {
         from: '**/*'
       }
     ])
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /site\/src\/index.js$/,
+        loader: 'string-replace-loader',
+        query: {
+          search: '{{DEMO_LIST_PATH}}',
+          replace: process.env.DEMO_LIST_PATH || 'site',
+          flags: 'i'
+        }
+      }
+    ]
+  }
 });
 
 module.exports = config;
