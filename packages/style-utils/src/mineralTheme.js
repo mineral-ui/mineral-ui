@@ -15,25 +15,24 @@
  */
 
 /* @flow */
-import { default as vars } from './styleVariables';
+import { default as shared, color } from './styleVariables';
 
 export default {
-  color_danger: vars.color.red,
-  color_primary: vars.color.blue,
-  color_success: vars.color.green,
-  color_warning: vars.color.orange,
-  color_backgroundGray: vars.color.gray,
-  color_backgroundGrayDark: vars.color.grayDark,
-  color_backgroundGrayLight: vars.color.grayLight,
+  ...shared,
 
-  font_family: vars.font.family,
-  font_size_a: vars.font.size.a,
-  font_size_b: vars.font.size.b,
-  font_size_c: vars.font.size.c,
-  font_size_d: vars.font.size.d,
+  color_border_active: color.blue_50,
+  color_border_hover: color.blue_60,
+  color_border_focus: color.blue_80,
+  color_border_focus_primary: color.blue_100,
 
-  measurement_a: vars.measurement.a,
-  measurement_b: vars.measurement.b,
-  measurement_c: vars.measurement.c,
-  measurement_d: vars.measurement.d
+  color_buttonBackground_active: color.blue_10,
+
+  color_heading: color.blue_80,
+
+  color_link: color.blue_90,
+  color_link_hover: color.blue_70,
+  color_link_focus: color.blue_100,
+
+  color_primary: color.blue_60,
+  color_text_onPrimary: 'white'
 };

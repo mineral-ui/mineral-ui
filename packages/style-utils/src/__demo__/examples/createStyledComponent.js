@@ -21,7 +21,7 @@ import Sample from '../../Sample';
 
 const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
   outline: '3px dashed mediumvioletred',
-  fontSize: theme.font_size_d
+  fontSize: theme.fontSize_h1
 }));
 
 function CreateStyledComponent() {
@@ -39,7 +39,7 @@ export default {
     'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
   source: `const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
   outline: '3px dashed mediumvioletred',
-  fontSize: theme.font_size_d
+  fontSize: theme.fontSize_h1
 }));
 
 <MyStyledSample />`

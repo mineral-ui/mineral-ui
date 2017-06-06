@@ -17,11 +17,12 @@
 /* @flow */
 import React from 'react';
 import { mount } from 'enzyme';
-import { createThemedComponent } from '../index';
+import { createThemedComponent, mineralTheme } from '../index';
 import Sample from '../Sample';
 
 function mountThemedSample() {
   const ThemedComponent = createThemedComponent(Sample, {
+    ...mineralTheme,
     color_primary: 'mediumvioletred'
   });
   return mount(<ThemedComponent />);
