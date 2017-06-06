@@ -15,25 +15,20 @@
  */
 
 /* @flow */
-import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import Default from './examples/Default';
+import styleUtils from './styleUtils';
+import globalTheme from './globalTheme';
+import componentTheme from './componentTheme';
+import nestedGlobal from './nestedGlobal';
+import shallowMerged from './shallowMerged';
+import createThemedComponent from './createThemedComponent';
+import createStyledComponent from './createStyledComponent';
 
-const examples = [
-  {
-    title: 'Default',
-    component: Default,
-    source: `<Hello />`
-  }
+export default [
+  styleUtils,
+  globalTheme,
+  componentTheme,
+  nestedGlobal,
+  shallowMerged,
+  createThemedComponent,
+  createStyledComponent
 ];
-
-const props = {
-  description: 'A simple component that renders the string, "Hello". It is primarily used for testing project configuration and package distribution.',
-  examples,
-  slug: 'hello',
-  title: 'Hello'
-};
-
-export default function App() {
-  return <ComponentDoc {...props} />;
-}

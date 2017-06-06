@@ -16,14 +16,24 @@
 
 /* @flow */
 import React from 'react';
-import { render } from 'react-dom';
-import { ThemeProvider } from '@mineral-ui/style-utils';
-import App from './components/App';
-import siteTheme from './components/siteTheme';
+import { ThemeProvider } from '../../index';
+import Sample from '../../Sample';
 
-render(
-  <ThemeProvider theme={siteTheme}>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('app')
-);
+function GlobalTheme() {
+  return (
+    <div>
+      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <Sample />
+      </ThemeProvider>
+    </div>
+  );
+}
+
+export default {
+  title: 'Global theme var override',
+  component: GlobalTheme,
+  description: 'This will affect all components inside this ThemeProvider that use this variable.',
+  source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+<Sample />
+</ThemeProvider>`
+};

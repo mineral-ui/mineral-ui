@@ -22,19 +22,19 @@ const compactLicenseHeader = require('./license').compactLicenseHeader;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const TARGET = process.env.TARGET;
 const ANALYZE = process.env.ANALYZE;
+const isSite = TARGET === 'site';
 const isProduction = NODE_ENV === 'production';
 
 function getEntry() {
-  const path = TARGET === 'demo' ? './src/__demo__' : './src';
+  const path = isSite ? './src/web' : './src';
+
   return {
     index: `${path}/index.js`
   };
 }
 
 function getOutput({ packageName, packagePath }) {
-  if (TARGET === 'demo') {
-    return;
-  } else if (TARGET === 'site') {
+  if (isSite) {
     return {
       filename: '[name].js',
       path: path.resolve(packagePath, 'dist')
@@ -50,9 +50,7 @@ function getOutput({ packageName, packagePath }) {
 }
 
 function getExternals() {
-  if (['demo', 'site'].includes(TARGET)) {
-    return;
-  } else {
+  if (!isSite) {
     return {
       glamor: {
         root: 'Glamor',
@@ -101,13 +99,9 @@ function getResolve() {
 }
 
 function getDevServer({ packagePath }) {
-  if (['demo', 'site'].includes(TARGET)) {
-    const contentBase = TARGET === 'demo'
-      ? path.join(packagePath, 'src/__demo__')
-      : path.join(packagePath, 'src');
-
+  if (isSite) {
     return {
-      contentBase,
+      contentBase: path.join(packagePath, 'src/web'),
       compress: true,
       host: '0.0.0.0'
     };
@@ -132,11 +126,8 @@ function getPlugins() {
     })
   ];
 
-  if (['demo', 'site'].includes(TARGET)) {
-    const template = TARGET === 'demo'
-      ? './src/__demo__/index.html'
-      : './src/index.html';
-
+  if (isSite) {
+    const template = './src/web/index.html';
     plugins.push(new HtmlWebpackPlugin({ template }));
   }
 

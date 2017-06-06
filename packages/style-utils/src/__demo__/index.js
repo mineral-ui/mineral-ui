@@ -15,14 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
-import { render } from 'react-dom';
-import { ThemeProvider } from '../index';
-import App from './App';
+import examples from './examples';
 
-render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('app')
-);
+export default [
+  {
+    description: 'Sample implentations of various methods of styling and style overrides.',
+    examples,
+    slug: 'style-utils',
+    title: 'style-utils'
+  }
+];

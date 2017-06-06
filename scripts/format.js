@@ -42,7 +42,7 @@ files.forEach(file => {
     if (!data.includes(license)) {
       const pre = data.includes('@flow')
         ? `${license}\n`
-        : `${license}\n/* @flow */`;
+        : `${license}\n/* @flow */\n`;
 
       prependFile(file, pre, err => {
         if (err) {

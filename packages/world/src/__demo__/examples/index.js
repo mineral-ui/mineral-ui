@@ -15,9 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
-import World from '../../World';
+import world from './world';
 
-export default function Default() {
-  return <World />;
-}
+export default [world];

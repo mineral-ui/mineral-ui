@@ -30,13 +30,13 @@ type Example = {
 
 type Examples = Array<Example>;
 
-type Props = {|
+type Props = {
   className?: string,
   description?: MnrlReactNode,
   examples?: Examples,
   slug: string,
   title: string
-|};
+};
 
 const styles = {
   componentDoc: (props, theme) => ({

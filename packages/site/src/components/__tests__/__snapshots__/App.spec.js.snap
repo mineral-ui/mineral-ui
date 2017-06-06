@@ -9,13 +9,254 @@ exports[`App renders correctly 1`] = `
       }
     }
   >
-    <glamorous(Nav) />
+    <glamorous(Nav)
+      demos={
+        Array [
+          Object {
+            "description": "Used as the starter for all new components.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<Archetype />",
+                "title": "Default",
+              },
+            ],
+            "slug": "archetype",
+            "title": "Archetype",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"Hello\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<Hello />",
+                "title": "Default",
+              },
+            ],
+            "slug": "hello",
+            "title": "Hello",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"Hello World\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<HelloWorld />",
+                "title": "Default",
+              },
+            ],
+            "slug": "hello-world",
+            "title": "HelloWorld",
+          },
+          Object {
+            "description": "Sample implentations of various methods of styling and style overrides.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "Just a simple sample component to demonstrate the styling below.",
+                "title": "Default",
+              },
+              Object {
+                "component": [Function],
+                "description": "This will affect all components inside this ThemeProvider that use this variable.",
+                "source": "<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <Sample />
+        </ThemeProvider>",
+                "title": "Global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "This will affect all components inside this ThemeProvider that use this variable, which should only be Sample components due to the namespace.",
+                "source": "<ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+        <Sample />
+        </ThemeProvider>",
+                "title": "Component theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.",
+                "source": "<ThemeProvider theme={{ color_primary: 'cyan' }}>
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+          <Sample />
+        </ThemeProvider>
+        </ThemeProvider>",
+                "title": "Nested global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "When a nested ThemeProvider provides a different variable, the merge works as expected.",
+                "source": "<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <ThemeProvider theme={{ color_warning: 'tomato' }}>
+          <Sample />
+        </ThemeProvider>
+        </ThemeProvider>",
+                "title": "Shallow merged global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "If you need to overwrite a theme variable, either global or component-specific, for a specific component.",
+                "source": "const MyThemedSample = createThemedComponent(Sample, {
+        color_primary: 'mediumvioletred'
+        });
+        
+        <MyThemedSample />",
+                "title": "Local theme var override via createThemedComponent",
+              },
+              Object {
+                "component": [Function],
+                "description": "If you need to use completely custom styles (which can still reference the props & theme) on a component.",
+                "source": "const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+          outline: '3px dashed mediumvioletred',
+          fontSize: theme.font_size_d
+        }));
+        
+        <MyStyledSample />",
+                "title": "Style override via createStyledComponent",
+              },
+            ],
+            "slug": "style-utils",
+            "title": "style-utils",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"World\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<World />",
+                "title": "Default",
+              },
+            ],
+            "slug": "world",
+            "title": "World",
+          },
+        ]
+      }
+    />
   </ThemeProvider>
   <glamorous(main)>
-    <App />
-    <App />
-    <App />
-    <App />
+    <App
+      demos={
+        Array [
+          Object {
+            "description": "Used as the starter for all new components.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<Archetype />",
+                "title": "Default",
+              },
+            ],
+            "slug": "archetype",
+            "title": "Archetype",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"Hello\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<Hello />",
+                "title": "Default",
+              },
+            ],
+            "slug": "hello",
+            "title": "Hello",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"Hello World\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<HelloWorld />",
+                "title": "Default",
+              },
+            ],
+            "slug": "hello-world",
+            "title": "HelloWorld",
+          },
+          Object {
+            "description": "Sample implentations of various methods of styling and style overrides.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "Just a simple sample component to demonstrate the styling below.",
+                "title": "Default",
+              },
+              Object {
+                "component": [Function],
+                "description": "This will affect all components inside this ThemeProvider that use this variable.",
+                "source": "<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <Sample />
+        </ThemeProvider>",
+                "title": "Global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "This will affect all components inside this ThemeProvider that use this variable, which should only be Sample components due to the namespace.",
+                "source": "<ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+        <Sample />
+        </ThemeProvider>",
+                "title": "Component theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.",
+                "source": "<ThemeProvider theme={{ color_primary: 'cyan' }}>
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+          <Sample />
+        </ThemeProvider>
+        </ThemeProvider>",
+                "title": "Nested global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "When a nested ThemeProvider provides a different variable, the merge works as expected.",
+                "source": "<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <ThemeProvider theme={{ color_warning: 'tomato' }}>
+          <Sample />
+        </ThemeProvider>
+        </ThemeProvider>",
+                "title": "Shallow merged global theme var override",
+              },
+              Object {
+                "component": [Function],
+                "description": "If you need to overwrite a theme variable, either global or component-specific, for a specific component.",
+                "source": "const MyThemedSample = createThemedComponent(Sample, {
+        color_primary: 'mediumvioletred'
+        });
+        
+        <MyThemedSample />",
+                "title": "Local theme var override via createThemedComponent",
+              },
+              Object {
+                "component": [Function],
+                "description": "If you need to use completely custom styles (which can still reference the props & theme) on a component.",
+                "source": "const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+          outline: '3px dashed mediumvioletred',
+          fontSize: theme.font_size_d
+        }));
+        
+        <MyStyledSample />",
+                "title": "Style override via createStyledComponent",
+              },
+            ],
+            "slug": "style-utils",
+            "title": "style-utils",
+          },
+          Object {
+            "description": "A simple component that renders the string, \\"World\\". It is primarily used for testing project configuration and package distribution.",
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<World />",
+                "title": "Default",
+              },
+            ],
+            "slug": "world",
+            "title": "World",
+          },
+        ]
+      }
+    />
     <Footer />
   </glamorous(main)>
 </glamorous(div)>

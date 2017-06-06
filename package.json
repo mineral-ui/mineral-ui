@@ -24,7 +24,7 @@
     "release": "lerna publish --message='chore(publish): Publish'",
     "release:semantic": "npm run release -- --conventional-commits && npm run deploy:site",
     "start": "lerna exec --scope @mineral-ui/site -- npm start",
-    "test": "npm run lint && npm run jest -- --coverage"
+    "test": "npm run lint && npm run flow && npm run jest -- --coverage"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
@@ -75,6 +75,7 @@
     "react-addons-test-utils": "15.4.2",
     "react-dom": "15.4.2",
     "rimraf": "2.6.1",
+    "string-replace-loader": "1.2.0",
     "validate-commit-msg": "2.12.1",
     "webpack": "2.3.3",
     "webpack-bundle-analyzer": "2.4.0",

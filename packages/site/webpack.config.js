@@ -21,6 +21,9 @@ const baseConfig = makeWebpackConfig({
   packagePath: __dirname
 });
 
+const demoListPath = process.env.DEMO_LIST_PATH || 'site';
+const demoListReplace = `../../../${demoListPath}/src/__demo__`;
+
 let config = baseConfig;
 config = webpackMerge(baseConfig, {
   plugins: [
@@ -30,7 +33,20 @@ config = webpackMerge(baseConfig, {
         from: '**/*'
       }
     ])
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /site\/src\/web\/index.js$/,
+        loader: 'string-replace-loader',
+        query: {
+          search: '{{DEMO_LIST_PATH}}',
+          replace: demoListReplace,
+          flags: 'i'
+        }
+      }
+    ]
+  }
 });
 
 module.exports = config;

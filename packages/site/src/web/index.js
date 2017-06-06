@@ -16,24 +16,16 @@
 
 /* @flow */
 import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import Default from './examples/Default';
+import { render } from 'react-dom';
+import { ThemeProvider } from '@mineral-ui/style-utils';
+import App from '../components/App';
+import siteTheme from '../components/siteTheme';
+// $FlowFixMe
+import demos from '{{DEMO_LIST_PATH}}';
 
-const examples = [
-  {
-    title: 'Default',
-    component: Default,
-    source: `<World />`
-  }
-];
-
-const props = {
-  description: 'A simple component that renders the string, "World". It is primarily used for testing project configuration and package distribution.',
-  examples,
-  slug: 'world',
-  title: 'World'
-};
-
-export default function App() {
-  return <ComponentDoc {...props} />;
-}
+render(
+  <ThemeProvider theme={siteTheme}>
+    <App demos={demos} />
+  </ThemeProvider>,
+  document.getElementById('app')
+);

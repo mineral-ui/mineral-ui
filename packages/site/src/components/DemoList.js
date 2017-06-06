@@ -13,27 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /* @flow */
 import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import Default from './examples/Default';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+import ComponentDoc from './ComponentDoc';
 
-const examples = [
-  {
-    title: 'Default',
-    component: Default,
-    source: `<HelloWorld />`
-  }
-];
+type Props = {|
+  demos: Array<Object>
+|};
 
-const props = {
-  description: 'A simple component that renders the string, "Hello World". It is primarily used for testing project configuration and package distribution.',
-  examples,
-  slug: 'hello-world',
-  title: 'HelloWorld'
-};
+const Root = createStyledComponent('div', {});
 
-export default function App() {
-  return <ComponentDoc {...props} />;
+export default function App({ demos }: Props) {
+  const componentDocs = demos.map((props, idx) => {
+    return <ComponentDoc key={idx} {...props} />;
+  });
+
+  return (
+    <Root>
+      {componentDocs}
+    </Root>
+  );
 }

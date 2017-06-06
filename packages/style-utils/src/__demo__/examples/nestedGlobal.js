@@ -19,14 +19,25 @@ import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
-export default function ShallowMerged() {
+function NestedGlobal() {
   return (
     <div>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <ThemeProvider theme={{ color_warning: 'tomato' }}>
+      <ThemeProvider theme={{ color_primary: 'cyan' }}>
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
           <Sample />
         </ThemeProvider>
       </ThemeProvider>
     </div>
   );
 }
+
+export default {
+  title: 'Nested global theme var override',
+  component: NestedGlobal,
+  description: 'When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.',
+  source: `<ThemeProvider theme={{ color_primary: 'cyan' }}>
+<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+  <Sample />
+</ThemeProvider>
+</ThemeProvider>`
+};

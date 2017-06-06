@@ -15,16 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
-import { ThemeProvider } from '../../index';
-import Sample from '../../Sample';
+import Default from './Default';
 
-export default function GlobalTheme() {
-  return (
-    <div>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <Sample />
-      </ThemeProvider>
-    </div>
-  );
-}
+export default [Default];

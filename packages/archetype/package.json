@@ -16,7 +16,7 @@
     "jest": "$npm_package_config_script_path/jest.sh",
     "lint": "$npm_package_config_script_path/lint.sh",
     "pack-ls": "$npm_package_config_script_path/pack-ls.sh",
-    "start": "$npm_package_config_script_path/start.sh",
+    "start": "DEMO_LIST_PATH=\"archetype\" $npm_package_config_script_path/start.sh",
     "test": "$npm_package_config_script_path/test.sh"
   },
   "devDependencies": {

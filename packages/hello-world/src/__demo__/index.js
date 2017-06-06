@@ -15,14 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
-import { render } from 'react-dom';
-import { ThemeProvider } from '@mineral-ui/style-utils';
-import App from './App';
+import examples from './examples';
 
-render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('app')
-);
+export default [
+  {
+    description: 'A simple component that renders the string, "Hello World". It is primarily used for testing project configuration and package distribution.',
+    examples,
+    slug: 'hello-world',
+    title: 'HelloWorld'
+  }
+];
