@@ -8,11 +8,12 @@ UMD_DIR="dist/umd"
 # es modules
 if [ "$TARGET" != 'site' ]; then
   NODE_ENV=$NODE_ENV babel "$SRC_DIR" --out-dir "$ES_DIR" --ignore *.spec.js,__demo__ --source-maps --minified
-
 fi
 
 # umd
 TARGET=$TARGET NODE_ENV=$NODE_ENV webpack
 
 # copy source code with embedded flow definitions
-flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' "$SRC_DIR" "$UMD_DIR"
+if [ "$TARGET" != 'site' ]; then
+  flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' "$SRC_DIR" "$UMD_DIR"
+fi

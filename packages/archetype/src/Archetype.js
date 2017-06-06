@@ -13,8 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
 
-export default function Archetype() {
-  return <div>Archetype</div>;
+/* @flow */
+import React from 'react';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+
+type Props = {|
+  className?: string
+|};
+
+const Root = createStyledComponent('div', {});
+
+export default function Archetype({ className }: Props) {
+  return <Root className={className}>Archetype</Root>;
 }

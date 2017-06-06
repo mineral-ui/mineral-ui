@@ -13,8 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
 
-export default function Hello() {
-  return <span>Hello</span>;
+/* @flow */
+import React from 'react';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+
+type Props = {|
+  className?: string,
+  text?: string
+|};
+
+const Root = createStyledComponent('span', {});
+
+export default function Hello({ className, text = 'Hello' }: Props) {
+  return <Root className={className}>{text}</Root>;
 }

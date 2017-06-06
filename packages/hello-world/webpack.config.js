@@ -32,6 +32,12 @@ if (TARGET !== 'demo') {
         commonjs2: '@mineral-ui/hello',
         amd: '@mineral-ui/hello'
       },
+      '@mineral-ui/style-utils': {
+        root: 'StyleUtils',
+        commonjs: '@mineral-ui/style-utils',
+        commonjs2: '@mineral-ui/style-utils',
+        amd: '@mineral-ui/style-utils'
+      },
       '@mineral-ui/world': {
         root: 'World',
         commonjs: '@mineral-ui/world',

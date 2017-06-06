@@ -13,22 +13,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
-import './footer.scss';
 
-export default function Footer() {
+/* @flow */
+import React from 'react';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+import Link from './Link';
+import styleReset from './styleReset';
+
+type Props = {|
+  className?: string
+|};
+
+const Root = createStyledComponent('div', (props, theme) => ({
+  ...styleReset(theme),
+  color: theme.color_border,
+  fontSize: theme.font_size_a,
+  margin: theme.measurement_d,
+
+  '@media(min-width: 32em)': {
+    display: 'flex',
+
+    '& > :last-child': {
+      marginLeft: 'auto'
+    }
+  }
+}));
+
+export default function Footer({ className }: Props) {
   return (
-    <div className="mnr-Footer">
+    <Root className={className}>
       <div>Copyright © 2017 CA</div>
       <div>
         We welcome feedback and contributions on
         {' '}
-        <a
-          href="https://github.com/mineral-ui/mineral-ui"
-          className="mnr-Footer-link">
+        <Link href="https://github.com/mineral-ui/mineral-ui">
           GitHub
-        </a>
+        </Link>
       </div>
-    </div>
+    </Root>
   );
 }

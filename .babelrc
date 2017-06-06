@@ -4,7 +4,7 @@
      * Plugins run before presets.
      * Presets run last to first.
      * Plugins run first to last.
-     * 
+     *
      * https://babeljs.io/docs/plugins/#plugin-preset-ordering
      */
     ["env", {
@@ -16,6 +16,7 @@
     {
       "plugins": [
         "transform-object-rest-spread",
+        "transform-class-properties",
         "flow-react-proptypes"
       ]
     }

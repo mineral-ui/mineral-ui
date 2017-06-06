@@ -8,6 +8,8 @@
 [include]
 
 [libs]
+*./packages/.*
 
 [options]
-module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/utils/emptyObject'
+suppress_type=$FlowFixMe
+suppress_type=$FlowTODO

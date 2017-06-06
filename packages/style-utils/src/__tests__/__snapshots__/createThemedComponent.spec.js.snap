@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createThemedComponent renders correctly 1`] = `
+.css-10l68o8,
+[data-css-10l68o8] {
+  background-color: lavender;
+  color: mediumvioletred;
+  display: inline-block;
+  outline: 1px solid gray;
+  padding: 1rem;
+}
+
+<Themed(Sample)>
+  <ThemeProvider
+    theme={
+      Object {
+        "color_primary": "mediumvioletred",
+      }
+    }
+  >
+    <ThemeProvider
+      theme={
+        Object {
+          "color_primary": "mediumvioletred",
+        }
+      }
+    >
+      <Sample>
+        <glamorous(span)>
+          <span
+            className="css-10l68o8"
+          >
+            Sample
+          </span>
+        </glamorous(span)>
+      </Sample>
+    </ThemeProvider>
+  </ThemeProvider>
+</Themed(Sample)>
+`;

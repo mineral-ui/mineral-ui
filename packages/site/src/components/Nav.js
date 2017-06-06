@@ -13,33 +13,76 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* @flow */
 
+/* @flow */
 import React from 'react';
-import './nav.scss';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+import _Link from './Link';
+import styleReset from './styleReset';
 
 type Props = {|
-  className: string
+  className?: string
 |};
+
+const styles = {
+  nav: (props, theme) => ({
+    ...styleReset(theme),
+    padding: theme.measurement_c
+  }),
+  title: (props, theme) => ({
+    borderBottom: `1px solid ${theme.color_gray}`,
+    fontSize: theme.font_size_c,
+    margin: `0 0 ${theme.measurement_c}`,
+    paddingBottom: theme.measurement_c
+  }),
+  heading: (props, theme) => ({
+    margin: '0',
+    fontSize: theme.font_size_b
+  }),
+  list: {
+    listStyle: 'none',
+    paddingLeft: '0'
+  },
+  listItem: (props, theme) => ({
+    '& + li': {
+      marginTop: theme.measurement_b
+    }
+  }),
+  link: {
+    textDecoration: 'none'
+  }
+};
+
+const Root = createStyledComponent('nav', styles.nav);
+const Title = createStyledComponent('h1', styles.title);
+const Heading = createStyledComponent('h2', styles.heading);
+const List = createStyledComponent('ol', styles.list);
+const ListItem = createStyledComponent('li', styles.listItem);
+const Link = createStyledComponent(_Link, styles.link);
 
 export default function Nav({ className }: Props) {
   return (
-    <nav className={`mnr-Nav ${className}`}>
-      <h1 className="mnr-Nav-title">Mineral UI</h1>
-      <h2 className="mnr-Nav-heading">Components</h2>
-      <ol className="mnr-Nav-list">
-        <li className="mnr-Nav-listItem">
-          <a href="#hello" className="mnr-Nav-link">Hello</a>
-        </li>
-        <li className="mnr-Nav-listItem">
-          <a href="#world" className="mnr-Nav-link">World</a>
-        </li>
-        <li className="mnr-Nav-listItem">
-          <a href="#hello-world" className="mnr-Nav-link">
+    <Root className={className}>
+      <Title>Mineral UI</Title>
+      <Heading>Components</Heading>
+      <List>
+        <ListItem>
+          <Link href="#hello">Hello</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="#world">World</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="#hello-world">
             HelloWorld
-          </a>
-        </li>
-      </ol>
-    </nav>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="#style-utils">
+            StyleUtils
+          </Link>
+        </ListItem>
+      </List>
+    </Root>
   );
 }

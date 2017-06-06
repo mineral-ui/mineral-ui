@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hello renders correctly 1`] = `
-<span>
-  Hello
-</span>
+<Hello>
+  <glamorous(span)>
+    <span
+      className="css-nil"
+    >
+      Hello
+    </span>
+  </glamorous(span)>
+</Hello>
 `;

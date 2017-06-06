@@ -13,8 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+/* @flow */
+import React from 'react';
+import { render } from 'react-dom';
+import { ThemeProvider } from '@mineral-ui/style-utils';
+import App from './components/App';
+import siteTheme from './components/siteTheme';
+
+render(
+  <ThemeProvider theme={siteTheme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('app')
+);

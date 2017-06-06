@@ -13,14 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* @flow */
+
 import React from 'react';
 import Hello from '@mineral-ui/hello';
 import World from '@mineral-ui/world';
 
-export default function HelloWorld() {
+type Props = {|
+  className?: string
+|};
+
+export default function HelloWorld({ className }: Props) {
   return (
-    <div>
-      <Hello /> <World />
+    <div className={className}>
+      <Hello />
+      <World />
     </div>
   );
 }
