@@ -16,14 +16,14 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, styleVariables } from './index';
+import { createStyledComponent } from './index';
 
 const Root = createStyledComponent('span', (props, theme) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',
   color: theme.Sample_color || theme.color_primary,
   display: 'inline-block',
-  outline: `1px solid ${styleVariables.color.gray}`,
-  padding: styleVariables.measurement.c
+  outline: `1px solid ${theme.color_border}`,
+  padding: theme.spacing_single
 }));
 
 type Props = {|

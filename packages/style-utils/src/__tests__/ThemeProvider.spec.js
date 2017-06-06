@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { ThemeProvider } from '../index';
+import { ThemeProvider, mineralTheme } from '../index';
 import { mount } from 'enzyme';
 import Sample from '../Sample';
 
@@ -37,6 +37,7 @@ describe('ThemeProvider', () => {
 
   it('renders correctly with specified theme', () => {
     const themedSample = mountThemedSample({
+      ...mineralTheme,
       color_primary: 'mediumvioletred'
     });
 

@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider renders correctly with default theme 1`] = `
-.css-1dnlrg3,
-[data-css-1dnlrg3] {
+.css-akdy17,
+[data-css-akdy17] {
   background-color: lavender;
-  color: mediumblue;
+  color: #167df4;
   display: inline-block;
-  outline: 1px solid gray;
+  outline: 1px solid #909499;
   padding: 1rem;
 }
 
@@ -14,29 +14,79 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
   <ThemeProvider
     theme={
       Object {
-        "color_backgroundGray": "gray",
-        "color_backgroundGrayDark": "darkgray",
-        "color_backgroundGrayLight": "lightgray",
-        "color_danger": "tomato",
-        "color_primary": "mediumblue",
-        "color_success": "mediumspringgreen",
-        "color_warning": "coral",
-        "font_family": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "font_size_a": "0.8rem",
-        "font_size_b": "1rem",
-        "font_size_c": "1.4rem",
-        "font_size_d": "2.2rem",
-        "measurement_a": "0.25rem",
-        "measurement_b": "0.5rem",
-        "measurement_c": "1rem",
-        "measurement_d": "2rem",
+        "borderRadius_1": "0.28125rem",
+        "borderRadius_2": "0.375rem",
+        "borderRadius_3": "0.5625rem",
+        "borderRadius_4": "0.75rem",
+        "borderRadius_5": "1.125rem",
+        "color_background_danger": "#d5362b",
+        "color_background_disabled": "#e6e9ee",
+        "color_background_success": "#12ba50",
+        "color_background_warning": "#cf8a00",
+        "color_border": "#909499",
+        "color_border_active": "#368ef5",
+        "color_border_danger": "#b72318",
+        "color_border_focus": "#0d68d0",
+        "color_border_focus_danger": "#991209",
+        "color_border_focus_primary": "#0d53a3",
+        "color_border_focus_success": "#016626",
+        "color_border_focus_warning": "#7f5500",
+        "color_border_hover": "#167df4",
+        "color_border_warning": "#ba7c00",
+        "color_buttonBackground_active": "#e1edfc",
+        "color_heading": "#0d68d0",
+        "color_helpText_danger": "#b72318",
+        "color_helpText_warning": "#976400",
+        "color_icon": "#909499",
+        "color_inputBackground_danger": "#fae8e6",
+        "color_inputBackground_warning": "#fff0d7",
+        "color_link": "#0d5db9",
+        "color_linkBackground_focus": "#e6e9ee",
+        "color_link_focus": "#0d53a3",
+        "color_link_hover": "#0d72e6",
+        "color_placeholder": "#909499",
+        "color_primary": "#167df4",
+        "color_text": "#171a1e",
+        "color_text_caption": "#555a61",
+        "color_text_disabled": "#b5b8bd",
+        "color_text_onPrimary": "white",
+        "fontFamily": "Open Sans",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_h1": "2.125rem",
+        "fontSize_h2": "1.75rem",
+        "fontSize_h3": "1.375rem",
+        "fontSize_h4": "1.125rem",
+        "fontSize_h5": "0.875rem",
+        "fontSize_h6": "0.875rem",
+        "fontSize_mouse": "0.6875rem",
+        "fontSize_prose": "1rem",
+        "fontSize_ui": "0.875rem",
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+        "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+        "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+        "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+        "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+        "size_big": "2.5rem",
+        "size_regular": "2rem",
+        "size_small": "1.5rem",
+        "spacing_double": "2rem",
+        "spacing_half": "0.5rem",
+        "spacing_quarter": "0.25rem",
+        "spacing_single": "1rem",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
       }
     }
   >
     <Sample>
       <glamorous(span)>
         <span
-          className="css-1dnlrg3"
+          className="css-akdy17"
         >
           Sample
         </span>
@@ -47,33 +97,163 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
 `;
 
 exports[`ThemeProvider renders correctly with specified theme 1`] = `
-.css-10l68o8,
-[data-css-10l68o8] {
+.css-5v10j3,
+[data-css-5v10j3] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
-  outline: 1px solid gray;
+  outline: 1px solid #909499;
   padding: 1rem;
 }
 
 <ThemeProvider
   theme={
     Object {
+      "borderRadius_1": "0.28125rem",
+      "borderRadius_2": "0.375rem",
+      "borderRadius_3": "0.5625rem",
+      "borderRadius_4": "0.75rem",
+      "borderRadius_5": "1.125rem",
+      "color_background_danger": "#d5362b",
+      "color_background_disabled": "#e6e9ee",
+      "color_background_success": "#12ba50",
+      "color_background_warning": "#cf8a00",
+      "color_border": "#909499",
+      "color_border_active": "#368ef5",
+      "color_border_danger": "#b72318",
+      "color_border_focus": "#0d68d0",
+      "color_border_focus_danger": "#991209",
+      "color_border_focus_primary": "#0d53a3",
+      "color_border_focus_success": "#016626",
+      "color_border_focus_warning": "#7f5500",
+      "color_border_hover": "#167df4",
+      "color_border_warning": "#ba7c00",
+      "color_buttonBackground_active": "#e1edfc",
+      "color_heading": "#0d68d0",
+      "color_helpText_danger": "#b72318",
+      "color_helpText_warning": "#976400",
+      "color_icon": "#909499",
+      "color_inputBackground_danger": "#fae8e6",
+      "color_inputBackground_warning": "#fff0d7",
+      "color_link": "#0d5db9",
+      "color_linkBackground_focus": "#e6e9ee",
+      "color_link_focus": "#0d53a3",
+      "color_link_hover": "#0d72e6",
+      "color_placeholder": "#909499",
       "color_primary": "mediumvioletred",
+      "color_text": "#171a1e",
+      "color_text_caption": "#555a61",
+      "color_text_disabled": "#b5b8bd",
+      "color_text_onPrimary": "white",
+      "fontFamily": "Open Sans",
+      "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+      "fontSize_h1": "2.125rem",
+      "fontSize_h2": "1.75rem",
+      "fontSize_h3": "1.375rem",
+      "fontSize_h4": "1.125rem",
+      "fontSize_h5": "0.875rem",
+      "fontSize_h6": "0.875rem",
+      "fontSize_mouse": "0.6875rem",
+      "fontSize_prose": "1rem",
+      "fontSize_ui": "0.875rem",
+      "lineHeight": 1.25,
+      "lineHeight_prose": 1.5,
+      "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+      "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+      "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+      "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+      "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+      "size_big": "2.5rem",
+      "size_regular": "2rem",
+      "size_small": "1.5rem",
+      "spacing_double": "2rem",
+      "spacing_half": "0.5rem",
+      "spacing_quarter": "0.25rem",
+      "spacing_single": "1rem",
+      "zIndex_100": 100,
+      "zIndex_1600": 1600,
+      "zIndex_200": 200,
+      "zIndex_400": 400,
+      "zIndex_800": 800,
     }
   }
 >
   <ThemeProvider
     theme={
       Object {
+        "borderRadius_1": "0.28125rem",
+        "borderRadius_2": "0.375rem",
+        "borderRadius_3": "0.5625rem",
+        "borderRadius_4": "0.75rem",
+        "borderRadius_5": "1.125rem",
+        "color_background_danger": "#d5362b",
+        "color_background_disabled": "#e6e9ee",
+        "color_background_success": "#12ba50",
+        "color_background_warning": "#cf8a00",
+        "color_border": "#909499",
+        "color_border_active": "#368ef5",
+        "color_border_danger": "#b72318",
+        "color_border_focus": "#0d68d0",
+        "color_border_focus_danger": "#991209",
+        "color_border_focus_primary": "#0d53a3",
+        "color_border_focus_success": "#016626",
+        "color_border_focus_warning": "#7f5500",
+        "color_border_hover": "#167df4",
+        "color_border_warning": "#ba7c00",
+        "color_buttonBackground_active": "#e1edfc",
+        "color_heading": "#0d68d0",
+        "color_helpText_danger": "#b72318",
+        "color_helpText_warning": "#976400",
+        "color_icon": "#909499",
+        "color_inputBackground_danger": "#fae8e6",
+        "color_inputBackground_warning": "#fff0d7",
+        "color_link": "#0d5db9",
+        "color_linkBackground_focus": "#e6e9ee",
+        "color_link_focus": "#0d53a3",
+        "color_link_hover": "#0d72e6",
+        "color_placeholder": "#909499",
         "color_primary": "mediumvioletred",
+        "color_text": "#171a1e",
+        "color_text_caption": "#555a61",
+        "color_text_disabled": "#b5b8bd",
+        "color_text_onPrimary": "white",
+        "fontFamily": "Open Sans",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_h1": "2.125rem",
+        "fontSize_h2": "1.75rem",
+        "fontSize_h3": "1.375rem",
+        "fontSize_h4": "1.125rem",
+        "fontSize_h5": "0.875rem",
+        "fontSize_h6": "0.875rem",
+        "fontSize_mouse": "0.6875rem",
+        "fontSize_prose": "1rem",
+        "fontSize_ui": "0.875rem",
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+        "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+        "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+        "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+        "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+        "size_big": "2.5rem",
+        "size_regular": "2rem",
+        "size_small": "1.5rem",
+        "spacing_double": "2rem",
+        "spacing_half": "0.5rem",
+        "spacing_quarter": "0.25rem",
+        "spacing_single": "1rem",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
       }
     }
   >
     <Sample>
       <glamorous(span)>
         <span
-          className="css-10l68o8"
+          className="css-5v10j3"
         >
           Sample
         </span>
