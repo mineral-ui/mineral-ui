@@ -15,14 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
-import { render } from 'react-dom';
-import { ThemeProvider } from '@mineral-ui/style-utils';
-import App from './App';
+import examples from './examples';
 
-render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('app')
-);
+export default [
+  {
+    description: 'Used as the starter for all new components.',
+    examples,
+    slug: 'archetype',
+    title: 'Archetype'
+  }
+];

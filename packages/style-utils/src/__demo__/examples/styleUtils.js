@@ -15,13 +15,15 @@
  */
 
 /* @flow */
-import examples from './examples';
+import React from 'react';
+import Sample from '../../Sample';
 
-export default [
-  {
-    description: 'A simple component that renders the string, "Hello". It is primarily used for testing project configuration and package distribution.',
-    examples,
-    slug: 'hello',
-    title: 'Hello'
-  }
-];
+function Default() {
+  return <Sample />;
+}
+
+export default {
+  title: 'Default',
+  component: Default,
+  description: 'Just a simple sample component to demonstrate the styling below.'
+};

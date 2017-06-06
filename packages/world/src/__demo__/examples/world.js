@@ -15,13 +15,10 @@
  */
 
 /* @flow */
-import examples from './examples';
+import World from '../../World';
 
-export default [
-  {
-    description: 'A simple component that renders the string, "Hello". It is primarily used for testing project configuration and package distribution.',
-    examples,
-    slug: 'hello',
-    title: 'Hello'
-  }
-];
+export default {
+  title: 'Default',
+  component: World,
+  source: `<World />` // TODO: get this from source.
+};

@@ -17,17 +17,15 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, ThemeProvider } from '@mineral-ui/style-utils';
-import HelloApp from '../../../hello/src/__demo__/App';
-import WorldApp from '../../../world/src/__demo__/App';
-import HelloWorldApp from '../../../hello-world/src/__demo__/App';
-import StyleUtilsApp from '../../../style-utils/src/__demo__/App';
+import DemoList from './DemoList';
 import Footer from './Footer';
 import _Nav from './Nav';
 import siteTheme from './siteTheme';
 import styleReset from './styleReset';
 
 type Props = {|
-  className?: string
+  className?: string,
+  demos: Array<Object>
 |};
 
 const styles = {
@@ -58,17 +56,18 @@ const Root = createStyledComponent('div', styles.app);
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
-export default function App({ className }: Props) {
+export default function App({ className, demos }: Props) {
+  if (demos.length === 1) {
+    return <DemoList demos={demos} />;
+  }
+
   return (
     <Root className={className}>
       <ThemeProvider theme={{ color_background: siteTheme.color_grayLight }}>
-        <Nav />
+        <Nav demos={demos} />
       </ThemeProvider>
       <Main>
-        <HelloApp />
-        <WorldApp />
-        <HelloWorldApp />
-        <StyleUtilsApp />
+        <DemoList demos={demos} />
         <Footer />
       </Main>
     </Root>

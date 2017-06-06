@@ -7,11 +7,18 @@
      *
      * https://babeljs.io/docs/plugins/#plugin-preset-ordering
      */
-    ["env", {
-      "targets": { "browsers": ["last 1 version"] },
-      "useBuiltIns": false,
-      "modules": false
-    }],
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 1 version"
+          ]
+        },
+        "useBuiltIns": false,
+        "modules": false
+      }
+    ],
     "react",
     {
       "plugins": [
@@ -21,7 +28,6 @@
       ]
     }
   ],
-
   "env": {
     "production": {
       "plugins": [
@@ -30,7 +36,6 @@
         "babel-plugin-transform-react-inline-elements"
       ]
     },
-
     "development": {
       "plugins": [
         /**
@@ -39,30 +44,35 @@
          * Dev server build and test build use LOCAL module paths.
          * Prod build uses PACKAGE module paths.
          */
-        ["module-resolver", {
-          "cwd": "babelrc",
-          "alias": {
-            "^@mineral-ui/(.+)": "./packages/\\1/src"
+        [
+          "module-resolver",
+          {
+            "cwd": "babelrc",
+            "alias": {
+              "^@mineral-ui/([^\/]+)(\/.*)?": "./packages/\\1/src\\2"
+            }
           }
-        }]
+        ]
       ]
     },
-
     "test": {
       "plugins": [
         /**
          * Jest runs in Node, thus requires ES modules to be transpiled to CommonJS modules.
          */
         "transform-es2015-modules-commonjs",
-        ["module-resolver", {
-          "cwd": "babelrc",
-          "alias": {
-            "^@mineral-ui/(.+)": "./packages/\\1/src"
+        [
+          "module-resolver",
+          {
+            "cwd": "babelrc",
+            "alias": {
+              "^@mineral-ui/([^\/]+)(\/.*)?": "./packages/\\1/src\\2"
+            }
           }
-        }]
+        ]
       ],
       "retainLines": true,
-      "sourceMap" : "inline"
+      "sourceMap": "inline"
     }
   }
 }

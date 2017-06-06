@@ -15,9 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
-import Hello from '../../Hello';
+import hello from './hello';
 
-export default function Default() {
-  return <Hello />;
-}
+export default [hello];

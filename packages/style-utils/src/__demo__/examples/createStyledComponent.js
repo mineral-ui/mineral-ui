@@ -16,17 +16,30 @@
 
 /* @flow */
 import React from 'react';
-import { ThemeProvider } from '../../index';
+import { createStyledComponent } from '../../index';
 import Sample from '../../Sample';
 
-export default function NestedGlobal() {
+const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+  outline: '3px dashed mediumvioletred',
+  fontSize: theme.font_size_d
+}));
+
+function CreateStyledComponent() {
   return (
     <div>
-      <ThemeProvider theme={{ color_primary: 'cyan' }}>
-        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-          <Sample />
-        </ThemeProvider>
-      </ThemeProvider>
+      <MyStyledSample />
     </div>
   );
 }
+
+export default {
+  title: 'Style override via createStyledComponent',
+  component: CreateStyledComponent,
+  description: 'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
+  source: `const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+  outline: '3px dashed mediumvioletred',
+  fontSize: theme.font_size_d
+}));
+
+<MyStyledSample />`
+};

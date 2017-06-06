@@ -18,9 +18,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from '../App';
+import demos from '../../__demo__';
 
 function renderApp() {
-  return shallow(<App />);
+  return shallow(<App demos={demos} />);
 }
 
 describe('App', () => {

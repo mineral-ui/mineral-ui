@@ -15,9 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
-import Sample from '../../Sample';
+import Hello from '../../Hello';
 
-export default function Default() {
-  return <Sample />;
-}
+export default {
+  title: 'Default',
+  component: Hello,
+  source: `<Hello />`
+};

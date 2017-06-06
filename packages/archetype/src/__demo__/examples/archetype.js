@@ -15,19 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '../../index';
-import Sample from '../../Sample';
+import Archetype from '../../Archetype';
 
-const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
-  outline: '3px dashed mediumvioletred',
-  fontSize: theme.font_size_d
-}));
-
-export default function CreateStyledComponent() {
-  return (
-    <div>
-      <MyStyledSample />
-    </div>
-  );
-}
+export default {
+  title: 'Default',
+  component: Archetype,
+  source: `<Archetype />`
+};

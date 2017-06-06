@@ -21,7 +21,8 @@ import _Link from './Link';
 import styleReset from './styleReset';
 
 type Props = {|
-  className?: string
+  className?: string,
+  demos: Array<Object>
 |};
 
 const styles = {
@@ -60,28 +61,21 @@ const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 const Link = createStyledComponent(_Link, styles.link);
 
-export default function Nav({ className }: Props) {
+export default function Nav({ className, demos }: Props) {
+  const demoLinks = demos.map(demo => {
+    return (
+      <ListItem key={demo.slug}>
+        <Link href={`#${demo.slug}`}>{demo.title}</Link>
+      </ListItem>
+    );
+  });
+
   return (
     <Root className={className}>
       <Title>Mineral UI</Title>
       <Heading>Components</Heading>
       <List>
-        <ListItem>
-          <Link href="#hello">Hello</Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#world">World</Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#hello-world">
-            HelloWorld
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#style-utils">
-            StyleUtils
-          </Link>
-        </ListItem>
+        {demoLinks}
       </List>
     </Root>
   );

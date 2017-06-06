@@ -15,25 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
-import ComponentDoc from '../../../site/src/components/ComponentDoc';
-import Default from './examples/Default';
+import archetype from './archetype';
 
-const examples = [
-  {
-    title: 'Default',
-    component: Default,
-    source: `<Archetype />`
-  }
-];
-
-const props = {
-  description: 'Used as the starter for all new components.',
-  examples,
-  slug: 'archetype',
-  title: 'Archetype'
-};
-
-export default function App() {
-  return <ComponentDoc {...props} />;
-}
+export default [archetype];

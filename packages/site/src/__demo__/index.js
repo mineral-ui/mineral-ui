@@ -15,9 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
-import Archetype from '../../Archetype';
+import archetype from '../../../archetype/src/__demo__';
+import hello from '../../../hello/src/__demo__';
+import helloWorld from '../../../hello-world/src/__demo__';
+import styleUtil from '../../../style-utils/src/__demo__';
+import world from '../../../world/src/__demo__';
 
-export default function Default() {
-  return <Archetype />;
-}
+export default [].concat(archetype, hello, helloWorld, styleUtil, world);
