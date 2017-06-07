@@ -15,14 +15,14 @@
  */
 
 /* @flow */
-import examples from './examples';
-
-export default [
-  {
-    description:
-      'Sample implentations of various methods of styling and style overrides.',
-    examples,
-    slug: 'style-utils',
-    title: 'style-utils'
-  }
-];
+module.exports = {
+  coverageDirectory: 'reports/coverage',
+  coveragePathIgnorePatterns: [
+    '/__demo__/',
+    '/node_modules/',
+    '/packages/site/'
+  ],
+  setupTestFrameworkScriptFile:
+    '<rootDir>/utils/test/setupTestFrameworkScript.js',
+  snapshotSerializers: ['enzyme-to-json/serializer']
+};

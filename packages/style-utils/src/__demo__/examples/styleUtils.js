@@ -25,5 +25,6 @@ function Default() {
 export default {
   title: 'Default',
   component: Default,
-  description: 'Just a simple sample component to demonstrate the styling below.'
+  description:
+    'Just a simple sample component to demonstrate the styling below.'
 };

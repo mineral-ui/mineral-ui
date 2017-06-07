@@ -34,7 +34,8 @@ function ShallowMerged() {
 export default {
   title: 'Shallow merged global theme var override',
   component: ShallowMerged,
-  description: 'When a nested ThemeProvider provides a different variable, the merge works as expected.',
+  description:
+    'When a nested ThemeProvider provides a different variable, the merge works as expected.',
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
 <ThemeProvider theme={{ color_warning: 'tomato' }}>
   <Sample />

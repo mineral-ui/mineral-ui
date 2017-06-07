@@ -56,7 +56,8 @@ const styles = {
     backgroundColor: theme.color_grayLight,
     color: theme.color_grayDark,
     display: 'block',
-    fontFamily: '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
+    fontFamily:
+      '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
     fontSize: 'smaller',
     padding: theme.measurement_c
   })
