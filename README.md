@@ -8,6 +8,8 @@
 
 # [Mineral UI](https://mineral-ui.github.io/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mineral-ui/mineral-ui.svg)](https://greenkeeper.io/)
+
 A design system and [React](https://facebook.github.io/react/) component library for the web brought to you by [CA Technologies](http://ca.com).
 
 
