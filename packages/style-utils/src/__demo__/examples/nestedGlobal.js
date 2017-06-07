@@ -34,7 +34,8 @@ function NestedGlobal() {
 export default {
   title: 'Nested global theme var override',
   component: NestedGlobal,
-  description: 'When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.',
+  description:
+    'When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.',
   source: `<ThemeProvider theme={{ color_primary: 'cyan' }}>
 <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
   <Sample />

@@ -23,7 +23,8 @@ export default {
   color_interactive: '#53bbd4',
   color_text: '#333',
 
-  font_family: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  font_family:
+    '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   font_size_a: '0.8rem',
   font_size_b: '1rem',
   font_size_c: '1.4rem',

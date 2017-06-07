@@ -35,7 +35,8 @@ function CreateStyledComponent() {
 export default {
   title: 'Style override via createStyledComponent',
   component: CreateStyledComponent,
-  description: 'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
+  description:
+    'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
   source: `const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
   outline: '3px dashed mediumvioletred',
   fontSize: theme.font_size_d

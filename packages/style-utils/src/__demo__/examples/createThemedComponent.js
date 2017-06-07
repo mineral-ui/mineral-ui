@@ -34,7 +34,8 @@ function CreateThemedComponent() {
 export default {
   title: 'Local theme var override via createThemedComponent',
   component: CreateThemedComponent,
-  description: 'If you need to overwrite a theme variable, either global or component-specific, for a specific component.',
+  description:
+    'If you need to overwrite a theme variable, either global or component-specific, for a specific component.',
   source: `const MyThemedSample = createThemedComponent(Sample, {
 color_primary: 'mediumvioletred'
 });

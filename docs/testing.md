@@ -71,8 +71,6 @@ The following configuration must be added to `.vscode/launch.json` to enable [de
       "args": [
         "--no-cache",
         "--runInBand",
-        "-c",
-        "${workspaceRoot}/.jestrc",
         "${file}"
       ],
       "cwd": "${workspaceRoot}",

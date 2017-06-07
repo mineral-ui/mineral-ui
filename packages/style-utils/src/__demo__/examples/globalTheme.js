@@ -32,7 +32,8 @@ function GlobalTheme() {
 export default {
   title: 'Global theme var override',
   component: GlobalTheme,
-  description: 'This will affect all components inside this ThemeProvider that use this variable.',
+  description:
+    'This will affect all components inside this ThemeProvider that use this variable.',
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
 <Sample />
 </ThemeProvider>`

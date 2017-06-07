@@ -19,7 +19,8 @@ import examples from './examples';
 
 export default [
   {
-    description: 'A simple component that renders the string, "Hello World". It is primarily used for testing project configuration and package distribution.',
+    description:
+      'A simple component that renders the string, "Hello World". It is primarily used for testing project configuration and package distribution.',
     examples,
     slug: 'hello-world',
     title: 'HelloWorld'
