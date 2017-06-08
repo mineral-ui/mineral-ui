@@ -24,8 +24,7 @@ const baseConfig = makeWebpackConfig({
 const demoListPath = process.env.DEMO_LIST_PATH || 'site';
 const demoListReplace = `../../../${demoListPath}/src/__demo__`;
 
-let config = baseConfig;
-config = webpackMerge(baseConfig, {
+const config = webpackMerge(baseConfig, {
   plugins: [
     new CopyWebpackPlugin([
       {
