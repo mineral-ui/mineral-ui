@@ -16,25 +16,21 @@
 
 const webpackMerge = require('webpack-merge');
 const makeWebpackConfig = require('../../utils/makeWebpackConfig');
-const TARGET = process.env.TARGET;
 
 const baseConfig = makeWebpackConfig({
   packageName: 'Archetype',
   packagePath: __dirname
 });
 
-let config = baseConfig;
-if (TARGET !== 'demo') {
-  config = webpackMerge(baseConfig, {
-    externals: {
-      '@mineral-ui/style-utils': {
-        root: 'StyleUtils',
-        commonjs: '@mineral-ui/style-utils',
-        commonjs2: '@mineral-ui/style-utils',
-        amd: '@mineral-ui/style-utils'
-      }
+const config = webpackMerge(baseConfig, {
+  externals: {
+    '@mineral-ui/style-utils': {
+      root: 'StyleUtils',
+      commonjs: '@mineral-ui/style-utils',
+      commonjs2: '@mineral-ui/style-utils',
+      amd: '@mineral-ui/style-utils'
     }
-  });
-}
+  }
+});
 
 module.exports = config;
