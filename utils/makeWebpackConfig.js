@@ -104,6 +104,7 @@ function getDevServer({ packagePath }) {
     return {
       contentBase: path.join(packagePath, 'src/web'),
       compress: true,
+      disableHostCheck: true,
       host: '0.0.0.0',
       historyApiFallback: true
     };

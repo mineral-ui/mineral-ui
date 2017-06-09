@@ -18,6 +18,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Archetype from '../Archetype';
+import examples from '../__demo__/examples';
+import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
 function renderArchetype() {
   return shallow(<Archetype />);
@@ -30,9 +32,5 @@ describe('Archetype', () => {
     expect(archetype.exists()).toEqual(true);
   });
 
-  it('renders correctly', () => {
-    const archetype = renderArchetype();
-
-    expect(archetype).toMatchSnapshot();
-  });
+  testDemoExamples(examples);
 });

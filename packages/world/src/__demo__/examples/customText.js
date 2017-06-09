@@ -15,12 +15,18 @@
  */
 
 /* @flow */
+import React from 'react';
 import World from '../../World';
+
+function Example() {
+  return (
+    <div>
+      <World text="Felix" />
+    </div>
+  );
+}
 
 export default {
   title: 'Custom Text',
-  component: World,
-  propValues: {
-    text: 'Felix'
-  }
+  component: Example
 };

@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 import { matcher, serializer } from 'jest-glamor-react';
+import { simulations } from 'glamor';
 
 expect.addSnapshotSerializer(serializer);
 expect.extend(matcher);
+
+// Enable Glamor simulate helper
+simulations(true);

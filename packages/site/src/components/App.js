@@ -17,7 +17,10 @@
 /* @flow */
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { createStyledComponent, ThemeProvider } from '@mineral-ui/style-utils';
+import {
+  createStyledComponent,
+  ThemeProvider
+} from '@mineral-ui/component-utils';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
@@ -66,7 +69,7 @@ export default function App({ className, demos }: Props) {
 
   return (
     <Root className={className}>
-      <ThemeProvider theme={{ color_background: siteTheme.color_grayLight }}>
+      <ThemeProvider theme={{ backgroundColor: siteTheme.color_grayLight }}>
         <Nav demos={demos} />
       </ThemeProvider>
       <Main>

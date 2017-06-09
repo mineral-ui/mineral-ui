@@ -16,8 +16,7 @@
 
 /* @flow */
 export default {
-  color_background: '#fff',
-  color_border: '#808285',
+  backgroundColor: '#fff',
   color_gray: '#d8d8d8',
   color_grayLight: '#f6f6f6',
   color_interactive: '#53bbd4',

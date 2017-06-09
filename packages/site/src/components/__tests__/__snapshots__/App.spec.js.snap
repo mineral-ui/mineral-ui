@@ -5,48 +5,98 @@ exports[`App renders correctly 1`] = `
   <ThemeProvider
     theme={
       Object {
-        "color_background": "#f6f6f6",
+        "backgroundColor": "#f6f6f6",
       }
     }
   >
     <glamorous(Nav)
       demos={
         Object {
-          "hello": Object {
-            "behavior": "behavior dummy text for the hello component",
-            "design": "Lofty design theory about hello",
+          "button": Object {
+            "behavior": "behavior dummy text for the Button component",
+            "design": "Lofty design theory about Button",
             "doc": Object {
               "default": Object {},
             },
             "examples": Array [
               Object {
                 "component": [Function],
-                "source": "<Hello />",
-                "title": "Default",
+                "source": "<Button>Do Something</Button>",
+                "title": "Button",
               },
-            ],
-            "title": "Hello",
-          },
-          "hello-world": Object {
-            "behavior": "behavior dummy text for the HelloWorld component",
-            "design": "Lofty design theory about the helloworld",
-            "doc": Object {
-              "default": Object {},
-            },
-            "examples": Array [
               Object {
                 "component": [Function],
-                "source": "<HelloWorld />",
-                "title": "Default",
+                "source": "<Button primary>Do Something</Button>",
+                "title": "Primary",
+              },
+              Object {
+                "component": [Function],
+                "source": "<Button minimal>Do Something</Button>",
+                "title": "Minimal",
+              },
+              Object {
+                "component": [Function],
+                "source": "<div>
+          <Button variant=\\"danger\\">Regular</Button>
+          <Button variant=\\"danger\\" primary>Primary</Button>
+          <Button variant=\\"danger\\" minimal>Minimal</Button>
+        </div>",
+                "title": "Danger",
+              },
+              Object {
+                "component": [Function],
+                "source": "<div>
+          <Button variant=\\"success\\">Regular</Button>
+          <Button variant=\\"success\\" primary>Primary</Button>
+          <Button variant=\\"success\\" minimal>Minimal</Button>
+        </div>",
+                "title": "Success",
+              },
+              Object {
+                "component": [Function],
+                "source": "<div>
+          <Button variant=\\"warning\\">Regular</Button>
+          <Button variant=\\"warning\\" primary>Primary</Button>
+          <Button variant=\\"warning\\" minimal>Minimal</Button>
+        </div>",
+                "title": "Warning",
+              },
+              Object {
+                "component": [Function],
+                "source": "<div>
+          <Button size=\\"small\\">Small</Button>
+          <Button>Medium</Button>
+          <Button size=\\"large\\">Large</Button>
+        </div>",
+                "title": "Sizes",
+              },
+              Object {
+                "component": [Function],
+                "source": "<div>
+          <Button disabled>Regular</Button>
+          <Button disabled primary>Primary</Button>
+          <Button disabled minimal>Minimal</Button>
+        </div>",
+                "title": "Disabled",
+              },
+              Object {
+                "component": [Function],
+                "source": "<Button fullWidth>Do Something</Button>",
+                "title": "Full Width",
+              },
+              Object {
+                "component": [Function],
+                "source": "",
+                "title": "States",
               },
             ],
-            "title": "HelloWorld",
+            "title": "Button",
           },
-          "style-utils": Object {
+          "component-utils": Object {
             "behavior": "some cool behavior info",
-            "design": "Lofty design theory about the style-utils",
+            "design": "Lofty design theory about the component-utils",
             "doc": Object {
-              "description": "Sample implentations of various methods of styling and style overrides.",
+              "description": "Sample implementations of various methods of styling and style overrides.",
             },
             "examples": Array [
               Object {
@@ -112,7 +162,37 @@ exports[`App renders correctly 1`] = `
                 "title": "Style override via createStyledComponent",
               },
             ],
-            "title": "StyleUtils",
+            "title": "ComponentUtils",
+          },
+          "hello": Object {
+            "behavior": "behavior dummy text for the hello component",
+            "design": "Lofty design theory about hello",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<Hello />",
+                "title": "Default",
+              },
+            ],
+            "title": "Hello",
+          },
+          "hello-world": Object {
+            "behavior": "behavior dummy text for the HelloWorld component",
+            "design": "Lofty design theory about the helloworld",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "source": "<HelloWorld />",
+                "title": "Default",
+              },
+            ],
+            "title": "HelloWorld",
           },
           "world": Object {
             "behavior": "behavior dummy text for the world component",
@@ -127,9 +207,6 @@ exports[`App renders correctly 1`] = `
               },
               Object {
                 "component": [Function],
-                "propValues": Object {
-                  "text": "Felix",
-                },
                 "title": "Custom Text",
               },
             ],

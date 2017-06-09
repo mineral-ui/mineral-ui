@@ -16,15 +16,13 @@
 
 /* @flow */
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import HelloWorld from '../HelloWorld';
+import examples from '../__demo__/examples';
+import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
 function shallowHelloWorld() {
   return shallow(<HelloWorld />);
-}
-
-function mountHelloWorld() {
-  return mount(<HelloWorld />);
 }
 
 describe('HelloWorld', () => {
@@ -34,9 +32,5 @@ describe('HelloWorld', () => {
     expect(helloWorld.exists()).toEqual(true);
   });
 
-  it('renders correctly', () => {
-    const helloWorld = mountHelloWorld();
-
-    expect(helloWorld).toMatchSnapshotWithGlamor();
-  });
+  testDemoExamples(examples);
 });

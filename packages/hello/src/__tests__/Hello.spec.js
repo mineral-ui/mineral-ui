@@ -16,15 +16,13 @@
 
 /* @flow */
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Hello from '../Hello';
+import examples from '../__demo__/examples';
+import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
 function shallowHello() {
   return shallow(<Hello />);
-}
-
-function mountHello() {
-  return mount(<Hello />);
 }
 
 describe('Hello', () => {
@@ -34,9 +32,5 @@ describe('Hello', () => {
     expect(hello.exists()).toEqual(true);
   });
 
-  it('renders correctly', () => {
-    const hello = mountHello();
-
-    expect(hello).toMatchSnapshotWithGlamor();
-  });
+  testDemoExamples(examples);
 });

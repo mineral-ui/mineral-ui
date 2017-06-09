@@ -17,7 +17,7 @@
 /* @flow */
 export default (theme: Object) => {
   return {
-    backgroundColor: theme.color_background,
+    backgroundColor: theme.backgroundColor,
     boxSizing: 'border-box',
     color: theme.color_text,
     fontFamily: theme.font_family,

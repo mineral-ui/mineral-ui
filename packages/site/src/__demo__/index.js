@@ -15,16 +15,18 @@
  */
 
 /* @flow */
+import button from '../../../button/src/__demo__';
 import hello from '../../../hello/src/__demo__';
 import world from '../../../world/src/__demo__';
 import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import componentUtils from '../../../component-utils/src/__demo__';
 
 const slugsToDemos: Object = {
+  button,
   hello,
   world,
   'hello-world': helloWorld,
-  'style-utils': styleUtils
+  'component-utils': componentUtils
 };
 
 export default slugsToDemos;

@@ -28,7 +28,7 @@ Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com
 1. Install project [peer dependencies](./docs/peer-dependencies.md)
 
   ```sh
-  npm install --save @mineral-ui/style-utils glamorous glamor
+  npm install --save @mineral-ui/component-utils glamorous glamor
   ```
 
 2. Install the Mineral UI packages that you wish to use
@@ -44,7 +44,7 @@ Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com
   ```js
   import React from 'react';
   import ReactDOM from 'react-dom';
-  import { ThemeProvider } from '@mineral-ui/style-utils';
+  import { ThemeProvider } from '@mineral-ui/component-utils';
   import Hello from '@mineral-ui/hello';
   import World from '@mineral-ui/world';
 

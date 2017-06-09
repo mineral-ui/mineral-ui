@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
 type Props = {|
   className?: string

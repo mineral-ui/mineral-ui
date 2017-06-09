@@ -16,8 +16,8 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import PropList from './PropList';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+// import PropList from './PropList';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
 
 const styles = {
@@ -153,10 +153,10 @@ export default class ComponentDocExample extends Component {
         <Resizable>
           <Component {...componentProps} />
         </Resizable>
-        <PropList
+        {/* <PropList
           exampleProps={this.state.exampleProps}
           onPropChange={this.onPropChange}
-        />
+        /> */}
       </Root>
     );
   }

@@ -15,10 +15,19 @@
  */
 
 /* @flow */
+import React from 'react';
 import Hello from '../../Hello';
+
+function Example() {
+  return (
+    <div>
+      <Hello />
+    </div>
+  );
+}
 
 export default {
   title: 'Default',
-  component: Hello,
+  component: Example,
   source: `<Hello />`
 };

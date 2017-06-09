@@ -50,7 +50,7 @@ export default function Button({ children, kind }) {
 In Mineral UI, the above would be done like so:
 
 ```jsx
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent('button', (props, theme) => ({
   backgroundColor: props.kind === 'primary' ? 'royalblue' : 'white',
@@ -88,9 +88,9 @@ const MyComponent = createStyledComponent('div', (props, theme) => ({
 }));
 ```
 
-The `theme` parameter in the anonymous function that returns the style object comes from [React context](https://facebook.github.io/react/docs/context.html). The [`ThemeProvider`](#themeprovider-theme)(s) in your app put the theme on context, which can then be referenced by any component within that ThemeProvider. Your app [must have a ThemeProvider at its root](../README.md#getting-started) and can optionally nest additional ThemeProviders to apply a custom theme to a section of your app. Nested ThemeProviders shallowly merge their theme with the parent theme.
+ The [`ThemeProvider`](#themeprovider-theme)(s) in your app provides the theme to other Mineral UI and/or Glamorous components within that ThemeProvider. Your app [must have a ThemeProvider at its root](../README.md#getting-started) and can optionally nest additional ThemeProviders to apply a custom theme to a section of your app. Nested ThemeProviders shallowly merge their theme with the parent theme.
 
-The theme itself (see the default [MineralTheme](../packages/style-utils/src/mineralTheme.js) for an example) is a simple shallow object of variables that are shared across components.
+The theme itself (see the default [MineralTheme](../packages/component-utils/src/mineralTheme.js) for an example) is a simple shallow object of variables that are shared across components.
 
 Each component can also have a "theme", which is not a file, but rather a set of variables available to override default values. E.g., if Mineral UI's Button component looked like this:
 
@@ -182,9 +182,9 @@ This is how you apply arbitrary styles to a component.
 
 `element`: a React component _or_ a string representation of an HTML element
 
-`styles`: a function that accepts props and theme (from context) and returns an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a plain object of style rules
+`styles`: an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a function that accepts props, theme, and context and returns an object of style rules
 
-`options`: An object of optional configuration. Most common uses are setting a display name on your component, `{displayName: 'MyComponentName'}`, and declaring which props to forward on to the element, `{forwardProps: [href, customProp]}`. Please reference the options documented for the [`glamorous()` API](https://github.com/paypal/glamorous/#glamorous-api) for more details.
+`options`: An object of optional configuration. A mix of Mineral UI and [Glamorous options](https://github.com/paypal/glamorous/#glamorous-api). Most common uses are setting a display name on your component, `{displayName: 'MyComponentName'}`, declaring which props to forward on to the element, `{forwardProps: [href, customProp]}`, and including a style reset `{ includeStyleReset: true }`.
 
 ##### Example Usage
 ```jsx
@@ -206,7 +206,7 @@ If you only need to style the themed properties of a component, you can use this
 
 `element`: a React component _or_ a string representation of an HTML element
 
-`theme`: a shallow object of theme variables and their values
+`theme`: a shallow object of theme variables _or_ a function that accepts props, theme, and context and returns an object of theme variables
 
 ##### Example Usage
 ```jsx

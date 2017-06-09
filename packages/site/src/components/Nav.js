@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { RouterLink } from './Link';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
 import styleReset from './styleReset';
 

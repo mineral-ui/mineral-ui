@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 import ComponentDocExample from './ComponentDocExample';
 import Link from './Link';
 import styleReset from './styleReset';

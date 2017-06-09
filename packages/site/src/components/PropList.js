@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
 const styles = {
   codeValue: (props, theme) => ({
@@ -45,7 +45,7 @@ const styles = {
   propRequired: (props, theme) => ({
     color: theme.color_gray,
     display: 'inline-block',
-    backgroundColor: theme.color_background_danger,
+    backgroundColor: theme.backgroundColor_danger,
     borderRadius: '3px',
     fontFamily: theme.fontFamily_monospace,
     padding: theme.measurement_a

@@ -15,6 +15,6 @@
  */
 
 /* @flow */
-import Default from './Default';
+import helloWorld from './helloWorld';
 
-export default [Default];
+export default [helloWorld];
