@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@mineral-ui/style-utils';
 import App from '../components/App';
 import siteTheme from '../components/siteTheme';
@@ -24,8 +25,10 @@ import siteTheme from '../components/siteTheme';
 import demos from '{{DEMO_LIST_PATH}}';
 
 render(
-  <ThemeProvider theme={siteTheme}>
-    <App demos={demos} />
-  </ThemeProvider>,
+  <BrowserRouter>
+    <ThemeProvider theme={siteTheme}>
+      <App demos={demos} />
+    </ThemeProvider>
+  </BrowserRouter>,
   document.getElementById('app')
 );

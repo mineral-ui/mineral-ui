@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { createStyledComponent, ThemeProvider } from '@mineral-ui/style-utils';
 import DemoList from './DemoList';
 import Footer from './Footer';
@@ -67,7 +68,20 @@ export default function App({ className, demos }: Props) {
         <Nav demos={demos} />
       </ThemeProvider>
       <Main>
-        <DemoList demos={demos} />
+        <Switch>
+          <Route
+            path="/components/:componentId"
+            render={route => {
+              const componentId = route.match.params.componentId;
+              const filteredDemos = demos.filter(
+                demo => demo.slug === componentId
+              );
+
+              return <DemoList demos={filteredDemos} />;
+            }}
+          />
+          <Redirect from="/" to="/components/hello" />
+        </Switch>
         <Footer />
       </Main>
     </Root>
