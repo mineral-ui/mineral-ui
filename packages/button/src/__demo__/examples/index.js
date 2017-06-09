@@ -15,10 +15,9 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import button from './button';
+import disabled from './disabled';
+import size from './size';
+import variant from './variant';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+export default [button, disabled, size, variant];

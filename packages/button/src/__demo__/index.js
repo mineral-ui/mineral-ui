@@ -15,10 +15,13 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import examples from './examples';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+export default [
+  {
+    description: "It's a button and buttons are good!",
+    examples,
+    slug: 'button',
+    title: 'Button'
+  }
+];

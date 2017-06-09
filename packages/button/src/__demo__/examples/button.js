@@ -15,10 +15,19 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import React from 'react';
+import Button from '../../Button';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+function Basic() {
+  return (
+    <Button onPress={() => {}}>
+      Submit
+    </Button>
+  );
+}
+
+export default {
+  title: 'Basic',
+  component: Basic,
+  source: `<Button>Submit</Button>`
+};

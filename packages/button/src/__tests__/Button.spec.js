@@ -15,10 +15,28 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import React from 'react';
+import { mount, shallow } from 'enzyme';
+import Button from '../Button';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+function shallowButton() {
+  return shallow(<Button onPress={() => {}} />);
+}
+
+function mountButton() {
+  return mount(<Button onPress={() => {}} />);
+}
+
+describe('Button', () => {
+  it('renders', () => {
+    const button = shallowButton();
+
+    expect(button.exists()).toEqual(true);
+  });
+
+  it('renders correctly', () => {
+    const button = mountButton();
+
+    expect(button).toMatchSnapshotWithGlamor();
+  });
+});

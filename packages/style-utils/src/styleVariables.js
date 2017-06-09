@@ -178,34 +178,6 @@ export default {
   borderRadius_4: '0.75rem',
   borderRadius_5: '1.125rem',
 
-  color_background_danger: color.red_60,
-  color_background_disabled: color.gray_30,
-  color_background_success: color.green_70,
-  color_background_warning: color.ochre_60,
-
-  color_border: color.gray_60,
-  color_border_danger: color.red_80,
-  color_border_warning: color.ochre_70,
-  color_border_focus_danger: color.red_100,
-  color_border_focus_success: color.green_100,
-  color_border_focus_warning: color.ochre_100,
-
-  color_helpText_danger: color.red_80,
-  color_helpText_warning: color.ochre_90,
-
-  color_icon: color.gray_60,
-
-  color_inputBackground_danger: color.red_10,
-  color_inputBackground_warning: color.ochre_10,
-
-  color_linkBackground_focus: color.gray_30,
-
-  color_placeholder: color.gray_60,
-
-  color_text: color.gray_100,
-  color_text_caption: color.gray_80,
-  color_text_disabled: color.gray_50,
-
   fontFamily: 'Open Sans',
   fontFamily_system:
     '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
@@ -238,10 +210,12 @@ export default {
   size_regular: '2rem',
   size_big: '2.5rem',
 
-  spacing_quarter: '0.25rem',
-  spacing_half: '0.5rem',
-  spacing_single: '1rem',
-  spacing_double: '2rem',
+  spacing_quarter: '0.125rem',
+  spacing_half: '0.25rem',
+  spacing_single: '0.5rem',
+  spacing_oneAndAHalf: '0.75rem',
+  spacing_double: '1rem',
+  spacing_quad: '2rem',
 
   zIndex_100: 100,
   zIndex_200: 200,

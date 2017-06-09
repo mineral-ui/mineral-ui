@@ -15,10 +15,22 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import React from 'react';
+import { mount } from 'enzyme';
+import { createThemedComponent } from '../index';
+import Sample from '../Sample';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+function mountThemedSample() {
+  const ThemedComponent = createThemedComponent(Sample, {
+    color_primary: 'mediumvioletred'
+  });
+  return mount(<ThemedComponent />);
+}
+
+describe('createThemedComponent', () => {
+  it('renders correctly', () => {
+    const themedSample = mountThemedSample();
+
+    expect(themedSample).toMatchSnapshotWithGlamor();
+  });
+});

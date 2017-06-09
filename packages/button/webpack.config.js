@@ -14,11 +14,23 @@
  * limitations under the License.
  */
 
-/* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+const webpackMerge = require('webpack-merge');
+const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+const baseConfig = makeWebpackConfig({
+  packageName: 'Button',
+  packagePath: __dirname
+});
+
+const config = webpackMerge(baseConfig, {
+  externals: {
+    '@mineral-ui/style-utils': {
+      root: 'StyleUtils',
+      commonjs: '@mineral-ui/style-utils',
+      commonjs2: '@mineral-ui/style-utils',
+      amd: '@mineral-ui/style-utils'
+    }
+  }
+});
+
+module.exports = config;

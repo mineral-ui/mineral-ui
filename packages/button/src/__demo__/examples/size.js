@@ -15,10 +15,22 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import styleUtils from '../../../style-utils/src/__demo__';
+import React from 'react';
+import Button from '../../Button';
 
-export default [].concat(button, hello, world, helloWorld, styleUtils);
+function Size() {
+  return (
+    <div>
+      <Button onPress={() => {}}>Default</Button>{' '}
+      <Button onPress={() => {}} size="small">Small</Button>{' '}
+      <Button onPress={() => {}} size="regular">Regular</Button>{' '}
+      <Button onPress={() => {}} size="big">Big</Button>{' '}
+    </div>
+  );
+}
+
+export default {
+  title: 'Size',
+  component: Size,
+  source: `<Button>Submit</Button>`
+};
