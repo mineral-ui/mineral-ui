@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 import { darken } from 'polished';
+import { Link } from 'react-router-dom';
 import { createStyledComponent } from '@mineral-ui/style-utils';
 import styleReset from './styleReset';
 
-export default createStyledComponent('a', (props, theme) => ({
+const styles = (props, theme) => ({
   ...styleReset(theme),
+  textDecoration: 'none',
   ':link,:visited': {
     color: theme.color_interactive
   },
@@ -28,4 +30,10 @@ export default createStyledComponent('a', (props, theme) => ({
   ':active': {
     color: darken(0.15, theme.color_interactive)
   }
-}));
+});
+
+export const RouterLink = createStyledComponent(Link, styles, {
+  forwardProps: ['to']
+});
+
+export default createStyledComponent('a', styles);
