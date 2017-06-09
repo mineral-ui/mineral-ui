@@ -15,7 +15,7 @@ Please try to keep your PR as small and focused as possible, and don’t include
 
 If your PR adds new features or changes existing code, please attempt to write tests covering the new behavior.
 
-For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md).
+For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md), and all authors must sign the [Contributor License Agreement ("CLA")](https://cla-assistant.io/mineral-ui/mineral-ui).
 
 
 ## Getting Started
@@ -69,10 +69,6 @@ npm update
 
 
 ### Developing
-
-<!--
-This project uses [??????????]() for styling.
--->
 
 - We use [Prettier](https://github.com/prettier/prettier), so you can write your code in whichever style you’re most comfortable and convert it to our standard before you commit:
 
