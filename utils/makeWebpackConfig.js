@@ -37,7 +37,8 @@ function getOutput({ packageName, packagePath }) {
   if (isSite) {
     return {
       filename: '[name].js',
-      path: path.resolve(packagePath, 'dist')
+      path: path.resolve(packagePath, 'dist'),
+      publicPath: '/'
     };
   } else {
     return {
@@ -103,7 +104,8 @@ function getDevServer({ packagePath }) {
     return {
       contentBase: path.join(packagePath, 'src/web'),
       compress: true,
-      host: '0.0.0.0'
+      host: '0.0.0.0',
+      historyApiFallback: true
     };
   }
 

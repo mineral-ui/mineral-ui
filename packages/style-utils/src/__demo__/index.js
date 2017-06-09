@@ -23,6 +23,6 @@ export default [
       'Sample implentations of various methods of styling and style overrides.',
     examples,
     slug: 'style-utils',
-    title: 'style-utils'
+    title: 'StyleUtils'
   }
 ];

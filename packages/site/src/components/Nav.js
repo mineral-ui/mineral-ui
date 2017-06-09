@@ -16,8 +16,9 @@
 
 /* @flow */
 import React from 'react';
+import { RouterLink } from './Link';
 import { createStyledComponent } from '@mineral-ui/style-utils';
-import _Link from './Link';
+
 import styleReset from './styleReset';
 
 type Props = {|
@@ -48,10 +49,7 @@ const styles = {
     '& + li': {
       marginTop: theme.measurement_b
     }
-  }),
-  link: {
-    textDecoration: 'none'
-  }
+  })
 };
 
 const Root = createStyledComponent('nav', styles.nav);
@@ -59,13 +57,12 @@ const Title = createStyledComponent('h1', styles.title);
 const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
-const Link = createStyledComponent(_Link, styles.link);
 
 export default function Nav({ className, demos }: Props) {
   const demoLinks = demos.map(demo => {
     return (
       <ListItem key={demo.slug}>
-        <Link href={`#${demo.slug}`}>{demo.title}</Link>
+        <RouterLink to={`/components/${demo.slug}`}>{demo.title}</RouterLink>
       </ListItem>
     );
   });
