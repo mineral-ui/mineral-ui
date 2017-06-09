@@ -220,6 +220,11 @@ export default {
   fontSize_prose: '1rem',
   fontSize_ui: '0.875rem',
 
+  fontWeight_regular: 400,
+  fontWeight_semiBold: 600,
+  fontWeight_bold: 700,
+  fontWeight_extraBold: 800,
+
   lineHeight: 1.25,
   lineHeight_prose: 1.5,
 
