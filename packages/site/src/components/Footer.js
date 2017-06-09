@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/style-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 import Link from './Link';
 import styleReset from './styleReset';
 
@@ -26,7 +26,7 @@ type Props = {|
 
 const Root = createStyledComponent('div', (props, theme) => ({
   ...styleReset(theme),
-  color: theme.color_border,
+  color: theme.borderColor,
   fontSize: theme.font_size_a,
   margin: theme.measurement_d,
 

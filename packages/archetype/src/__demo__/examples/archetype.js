@@ -15,10 +15,19 @@
  */
 
 /* @flow */
+import React from 'react';
 import Archetype from '../../Archetype';
+
+function Example() {
+  return (
+    <div>
+      <Archetype />
+    </div>
+  );
+}
 
 export default {
   title: 'Default',
-  component: Archetype,
+  component: Example,
   source: `<Archetype />`
 };

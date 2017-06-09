@@ -18,12 +18,16 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { simulations } from 'glamor';
 import 'babel-polyfill';
-import { ThemeProvider } from '@mineral-ui/style-utils';
+import { ThemeProvider } from '@mineral-ui/component-utils';
 import App from '../components/App';
 import siteTheme from '../components/siteTheme';
 // $FlowFixMe
 import demos from '{{DEMO_LIST_PATH}}';
+
+// Enable Glamor simulate helper
+simulations(true);
 
 render(
   <BrowserRouter>
