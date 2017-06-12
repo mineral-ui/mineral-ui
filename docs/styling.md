@@ -5,13 +5,113 @@ This project uses [Glamorous](https://github.com/paypal/glamorous/) for its styl
 
 ##### Contents
 
+1. [Quick Start](#quick-start)
+1. [Using Themes](#using-themes)
 1. [Common Scenarios](#common-scenarios)
-2. [API](#api)
+1. [API](#api)
 
 
-## Common Scenarios
+## Quick Start
 
-As you come across styling needs, you should consider your options in this order. This helps your app maintain design consistency and ensures future upgrades go smoothly.
+Using CSS, you might have done something like this:
+
+```css
+.Button {
+  background-color: white;
+  border: 0;
+  color: royalblue;
+  padding: 0.5rem 1rem;
+}
+
+.Button:hover, .Button:focus {
+  outline: 1px dotted skyblue;
+}
+
+.Button--primary {
+  background-color: royalblue;
+  color: white;
+}
+
+.Button > .Icon {
+  color: inherit;
+}
+```
+
+Which you then apply to your component via the `className` prop:
+
+```jsx
+export default function Button({ children, kind }) {
+  return (
+    <button className={`Button ${kind === 'primary' ? 'Button--primary' : ''}`}>{children}</button>
+  );
+}
+```
+
+In Mineral UI, the above would be done like so:
+
+```jsx
+import { createStyledComponent } from '@mineral-ui/style-utils';
+
+export default createStyledComponent('button', (props, theme) => ({
+  backgroundColor: props.kind === 'primary' ? 'royalblue' : 'white',
+  border: 0,
+  color: props.kind === 'primary' ? 'white' : 'royalblue',
+  padding: '0.5rem 1rem',
+
+  '&:hover,&:focus': {
+    outline: '1px dotted skyblue'
+  }
+}));
+```
+
+##### To Convert CSS Rules to JS Object:
+
+1. Remove identifying class (`.Button`, above) in all selectors, as it is no longer needed
+    - For pseudo selectors and pseudo elements, replace it with an `&` (`.Button:hover` -> `&:hover`)
+1. Wrap pseudo selectors and pseudo elements in quotes to make them a string
+1. Remove spaces after commas between multiple selectors (`'&:hover, &:focus'` -> `'&:hover,&:focus'`)
+1. Selectors become keys in the JS object, so place a `:` after them
+1. Change CSS property names to `camelCase` – they are now object keys as well – and change non-integer values into strings
+1. Modifier classes are no longer necessary; just directly reference the props to write your styles
+1. Try to avoid descendant selectors
+
+[More details and examples](https://github.com/threepointone/glamor/blob/master/docs/howto.md).
+
+
+## Using Themes
+
+Theming is a core concept in Mineral UI. To illustrate, consider the signature of [`createStyledComponent()`](#createstyledcomponentelement-styles-options), e.g.:
+
+```js
+const MyComponent = createStyledComponent('div', (props, theme) => ({
+  backgroundColor: theme.color_primary
+}));
+```
+
+The `theme` parameter in the anonymous function that returns the style object comes from [React context](https://facebook.github.io/react/docs/context.html). The [`ThemeProvider`](#themeprovider-theme)(s) in your app put the theme on context, which can then be referenced by any component within that ThemeProvider. Your app [must have a ThemeProvider at its root](../README.md#getting-started) and can optionally nest additional ThemeProviders to apply a custom theme to a section of your app. Nested ThemeProviders shallowly merge their theme with the parent theme.
+
+The theme itself (see the default [MineralTheme](../packages/style-utils/src/mineralTheme.js) for an example) is a simple shallow object of variables that are shared across components.
+
+Each component can also have a "theme", which is not a file, but rather a set of variables available to override default values. E.g., if Mineral UI's Button component looked like this:
+
+```js
+const Button = createStyledComponent('button', (props, theme) => ({
+  color: theme.Button_color || theme.color_primary
+}));
+```
+
+The themes distributed as part of Mineral UI include a value for `color_primary` but do not include a value for `Button_color`. In our component code, we leave the component-level variable, `Button_color`, as a hook for you to define if you'd like. Component-level theme variables start with the capitalized component name to differentiate from the global variables. When you'd like to override the Mineral UI theme at a component level in your app, you can use [`createThemedComponent`](#createthemedcomponentelement-theme):
+
+```js
+const MyButton = createThemedComponent(Button, {
+  Button_color: 'tomato'
+});
+```
+
+
+## Styling Your App, Common Scenarios
+
+When using Mineral UI components in your app, as you come across styling needs, you should consider your options in this order. This helps your app maintain design consistency and ensures future upgrades go smoothly.
 
 
 ### Styling a Specific Component
@@ -22,7 +122,7 @@ If you need to override a component-specific theme variable for a specific compo
 
 ```jsx
 const MyButton = createThemedComponent(Button, {
-  Button_color_text: '#c33'
+  Button_color_text: 'tomato'
 });
 ```
 
@@ -32,13 +132,19 @@ If you need to override a global theme variable for a specific component.
 
 ```jsx
 const MyButton = createThemedComponent(Button, {
-  color_primary: '#c33'
+  color_primary: 'tomato'
 });
 ```
 
 #### 3. Style Override
 
+<<<<<<< HEAD
 If you need to override or include arbitrary styles for a specific component. Use of this pattern is not encouraged, as your styles are more likely to break with future updates.
+||||||| parent of 6d54b17... docs(styling,theme): Update styling docs
+If you need to override or write arbitrary styles for a specific component. Use of this wrapper is not encouraged, as it is more likely to break with future updates.
+=======
+If you need to override or write arbitrary styles for a specific component. _Use of this wrapper is not encouraged, as it is more likely to break with future updates._
+>>>>>>> 6d54b17... docs(styling,theme): Update styling docs
 
 ```jsx
 const MyButton = createStyledComponent(Button, (props, theme) => ({
@@ -55,7 +161,7 @@ const MyButton = createStyledComponent(Button, (props, theme) => ({
 If you need to override a global theme variable for all child components.
 
 ```jsx
-<ThemeProvider theme={{ color_primary: '#c333' }}>
+<ThemeProvider theme={{ color_primary: 'tomato' }}>
   {/* Any components placed here will have their primary theme color overridden */}
 </ThemeProvider>
 ```
@@ -66,7 +172,7 @@ If you need to override a component-specific theme variable for all child compon
 
 ```jsx
 const MyButton = createThemedComponent(Button, {
-  Button_color_text: '#c33'
+  Button_color_text: 'tomato'
 });
 ```
 
@@ -82,9 +188,9 @@ This is how you apply arbitrary styles to a component.
 
 `element`: a React component _or_ a string representation of an HTML element
 
-`styles`: a function that accepts props and theme (from state) and returns an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a plain object of style rules
+`styles`: a function that accepts props and theme (from context) and returns an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a plain object of style rules
 
-`options`: please reference the options documented for the [`glamorous()` API](https://github.com/paypal/glamorous/#glamorous-api)
+`options`: An object of optional configuration. Most common uses are setting a display name on your component, `{displayName: 'MyComponentName'}`, and declaring which props to forward on to the element, `{forwardProps: [href, customProp]}`. Please reference the options documented for the [`glamorous()` API](https://github.com/paypal/glamorous/#glamorous-api) for more details.
 
 ##### Example Usage
 ```jsx
