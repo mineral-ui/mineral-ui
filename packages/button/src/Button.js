@@ -17,12 +17,13 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, styleReset } from '@mineral-ui/style-utils';
+import kebabCase from 'lodash.kebabcase';
 
 type Props = {|
-  ariaExpanded?: boolean,
-  ariaHasPopup?: boolean,
+  ariaset?: {},
   children?: MnrlReactNode,
   className?: string,
+  dataset?: {},
   disabled?: boolean,
   fullWidth?: boolean,
   onPress: Function,
@@ -42,9 +43,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
       return {
         regular: theme.Button_color_background || theme.color_gray_10,
         minimal: 'transparent',
-        primary:
-          theme.Button_color_background_primary ||
-            theme.color_background_primary,
+        primary: theme.color_background_primary,
         danger: theme.color_background_danger,
         success: theme.color_background_success,
         warning: theme.color_background_warning
@@ -69,8 +68,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
       return {
         regular: theme.Button_color_text || theme.color_gray_80,
         minimal: theme.Button_color_link || theme.color_link,
-        primary:
-          theme.Button_color_text_onPrimary || theme.color_text_onPrimary,
+        primary: theme.color_text_onPrimary,
         danger: theme.color_text_onPrimary,
         success: theme.color_text_onPrimary,
         warning: theme.color_text_onPrimary
@@ -88,6 +86,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
   paddingRight: props.size === 'big'
     ? theme.Button_padding_big || theme.spacing_double
     : theme.Button_padding || theme.spacing_single,
+  textAlign: 'center',
   width: props.fullWidth && '100%',
 
   '&:hover': {
@@ -96,9 +95,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
         return {
           regular: theme.Button_color_background_hover || theme.color_gray_20,
           minimal: theme.Button_color_background_hover || theme.color_gray_20,
-          primary:
-            theme.Button_color_background_hover_primary ||
-              theme.color_background_hover_primary,
+          primary: theme.color_background_hover_primary,
           danger: theme.color_background_hover_danger,
           success: theme.color_background_hover_success,
           warning: theme.color_background_hover_warning
@@ -112,9 +109,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
       return {
         regular: theme.Button_color_border_focus || theme.color_border_focus,
         minimal: theme.Button_color_border_focus || theme.color_border_focus,
-        primary:
-          theme.Button_color_border_focus_primary ||
-            theme.color_border_focus_primary,
+        primary: theme.color_border_focus_primary,
         danger: theme.color_border_focus_danger,
         success: theme.color_border_focus_success,
         warning: theme.color_border_focus_warning
@@ -127,9 +122,7 @@ const Root = createStyledComponent('button', (props, theme) => ({
       return {
         regular: theme.Button_color_background_active || theme.color_theme_10,
         minimal: theme.Button_color_background_active || theme.color_theme_10,
-        primary:
-          theme.Button_color_background_active_primary ||
-            theme.color_background_active_primary,
+        primary: theme.color_background_active_primary,
         danger: theme.color_background_active_danger,
         success: theme.color_background_active_success,
         warning: theme.color_background_active_warning
@@ -141,30 +134,67 @@ const Root = createStyledComponent('button', (props, theme) => ({
   }
 }));
 
+// TODO: extract to new component-utils package
+
+// function passthroughProps(props) {
+//   return Object.keys(props).reduce((acc, prop) => {
+//     if (prop === 'id') {
+//       acc[prop] = props[prop];
+//     }
+//
+//     if (/^data-/.test(prop)) {
+//       acc[prop] = props[prop];
+//     }
+//
+//     return acc;
+//   }, {});
+// }
+
+function customProperties(data, prefix) {
+  const props = {};
+
+  for (var key in data) {
+    if (data.hasOwnProperty(key)) {
+      props[`${prefix}-${kebabCase(key)}`] = data[key];
+    }
+  }
+
+  return props;
+}
+
+function datasetProps(dataset) {
+  return customProperties(dataset, 'data');
+}
+
+function ariaProps(ariaset) {
+  return customProperties(ariaset, 'aria');
+}
+
 export default function Button({
-  ariaExpanded,
-  ariaHasPopup,
+  ariaset = { label: 'buttons are good' },
   children,
   className,
+  dataset,
   disabled,
   fullWidth,
   onPress,
   size = 'regular',
-  tabIndex = 0,
+  tabIndex,
   type = 'button',
   variant = 'regular'
 }: Props) {
   const rootProps = {
-    'aria-expanded': ariaExpanded,
-    'aria-haspopup': ariaHasPopup,
     className,
+    dataset,
     disabled,
     fullWidth,
     onClick: onPress,
     size,
     tabIndex,
     type,
-    variant
+    variant,
+    ...datasetProps(dataset),
+    ...ariaProps(ariaset)
   };
 
   return <Root {...rootProps}>{children}</Root>;

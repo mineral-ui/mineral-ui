@@ -15,9 +15,9 @@
  */
 
 /* @flow */
-import button from './button';
+import basic from './basic';
 import disabled from './disabled';
 import size from './size';
 import variant from './variant';
 
-export default [button, disabled, size, variant];
+export default [basic, disabled, size, variant];

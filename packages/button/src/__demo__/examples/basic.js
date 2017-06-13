@@ -20,7 +20,10 @@ import Button from '../../Button';
 
 function Basic() {
   return (
-    <Button onPress={() => {}}>
+    <Button
+      onPress={() => {}}
+      dataset={{ yo: 'dawg', fooBar: 'bas' }}
+      fullWidth>
       Submit
     </Button>
   );
