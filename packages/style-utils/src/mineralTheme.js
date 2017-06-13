@@ -79,6 +79,9 @@ export default {
   color_text_disabled: color.gray_50,
   color_text_primary: primaries.color_theme_60,
   color_text_onPrimary: 'white',
+  color_text_onDanger: 'white',
+  color_text_onSuccess: 'white',
+  color_text_onWarning: 'white',
 
   color_heading: primaries.color_theme_80,
 

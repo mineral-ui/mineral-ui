@@ -33,106 +33,126 @@ type Props = {|
   variant?: 'danger' | 'minimal' | 'primary' | 'regular' | 'success' | 'warning'
 |};
 
-const Root = createStyledComponent('button', (props, theme) => ({
-  ...styleReset(theme),
+const Root = createStyledComponent('button', (props, ctxTheme) => {
+  const theme = {
+    Button_borderRadius: ctxTheme.borderRadius_1,
+    Button_borderWidth: '1px',
+    Button_color_background: ctxTheme.color_gray_10,
+    Button_color_background_hover: ctxTheme.color_gray_20,
+    Button_color_background_active: ctxTheme.color_ctxTheme_10,
+    Button_color_border: ctxTheme.color_border,
+    Button_color_border_focus: ctxTheme.color_border_focus,
+    Button_color_border_active: ctxTheme.color_border_active,
+    Button_color_link: ctxTheme.color_link,
+    Button_color_text: ctxTheme.color_gray_80,
+    Button_fontSize: ctxTheme.fontSize_ui,
+    Button_fontSize_small: '0.75rem',
+    Button_fontWeight: ctxTheme.fontWeight_bold,
+    Button_padding: ctxTheme.spacing_single,
+    Button_padding_big: ctxTheme.spacing_double,
+    Button_shadow: ctxTheme.shadow_1,
+    [`Button_size_${props.size}`]: ctxTheme[`size_${props.size}`],
+    ...ctxTheme
+  };
 
-  backgroundColor: (() => {
-    if (props.disabled && props.variant !== 'minimal') {
-      return theme.color_gray_30;
-    } else {
-      return {
-        regular: theme.Button_color_background || theme.color_gray_10,
-        minimal: 'transparent',
-        primary: theme.color_background_primary,
-        danger: theme.color_background_danger,
-        success: theme.color_background_success,
-        warning: theme.color_background_warning
-      }[props.variant];
-    }
-  })(),
-  borderColor: props.variant === 'regular' && !props.disabled
-    ? theme.Button_color_border || theme.color_border
-    : 'transparent',
-  borderRadius: theme.Button_borderRadius || theme.borderRadius_1,
-  borderStyle: 'solid',
-  borderWidth: theme.Button_borderWidth || '1px',
-  boxShadow:
-    props.variant !== 'minimal' &&
-      props.variant !== 'regular' &&
-      !props.disabled &&
-      (theme.Button_shadow || theme.shadow_1),
-  color: (() => {
-    if (props.disabled) {
-      return theme.color_gray_50;
-    } else {
-      return {
-        regular: theme.Button_color_text || theme.color_gray_80,
-        minimal: theme.Button_color_link || theme.color_link,
-        primary: theme.color_text_onPrimary,
-        danger: theme.color_text_onPrimary,
-        success: theme.color_text_onPrimary,
-        warning: theme.color_text_onPrimary
-      }[props.variant];
-    }
-  })(),
-  fontSize: props.size === 'small'
-    ? theme.Button_fontSize_small || '0.75rem'
-    : theme.Button_fontSize || theme.fontSize_ui,
-  fontWeight: theme.Button_fontWeight || theme.fontWeight_bold,
-  height: theme[`Button_size_${props.size}`] || theme[`size_${props.size}`],
-  paddingLeft: props.size === 'big'
-    ? theme.Button_padding_big || theme.spacing_double
-    : theme.Button_padding || theme.spacing_single,
-  paddingRight: props.size === 'big'
-    ? theme.Button_padding_big || theme.spacing_double
-    : theme.Button_padding || theme.spacing_single,
-  textAlign: 'center',
-  width: props.fullWidth && '100%',
+  return {
+    ...styleReset(theme),
 
-  '&:hover': {
     backgroundColor: (() => {
-      if (!props.disabled) {
+      if (props.disabled && props.variant !== 'minimal') {
+        return theme.color_gray_30;
+      } else {
         return {
-          regular: theme.Button_color_background_hover || theme.color_gray_20,
-          minimal: theme.Button_color_background_hover || theme.color_gray_20,
-          primary: theme.color_background_hover_primary,
-          danger: theme.color_background_hover_danger,
-          success: theme.color_background_hover_success,
-          warning: theme.color_background_hover_warning
+          regular: theme.Button_color_background,
+          minimal: 'transparent',
+          primary: theme.color_background_primary,
+          danger: theme.color_background_danger,
+          success: theme.color_background_success,
+          warning: theme.color_background_warning
         }[props.variant];
       }
-    })()
-  },
-
-  '&:focus': {
-    borderColor: (() => {
-      return {
-        regular: theme.Button_color_border_focus || theme.color_border_focus,
-        minimal: theme.Button_color_border_focus || theme.color_border_focus,
-        primary: theme.color_border_focus_primary,
-        danger: theme.color_border_focus_danger,
-        success: theme.color_border_focus_success,
-        warning: theme.color_border_focus_warning
-      }[props.variant];
-    })()
-  },
-
-  '&:active': {
-    backgroundColor: (() => {
-      return {
-        regular: theme.Button_color_background_active || theme.color_theme_10,
-        minimal: theme.Button_color_background_active || theme.color_theme_10,
-        primary: theme.color_background_active_primary,
-        danger: theme.color_background_active_danger,
-        success: theme.color_background_active_success,
-        warning: theme.color_background_active_warning
-      }[props.variant];
     })(),
-    borderColor: props.variant === 'regular'
-      ? theme.Button_color_border_active || theme.color_border_active
-      : 'transparent'
-  }
-}));
+    borderColor: props.variant === 'regular' && !props.disabled
+      ? theme.Button_color_border
+      : 'transparent',
+    borderRadius: theme.Button_borderRadius,
+    borderStyle: 'solid',
+    borderWidth: theme.Button_borderWidth,
+    boxShadow:
+      props.variant !== 'minimal' &&
+        props.variant !== 'regular' &&
+        !props.disabled &&
+        theme.Button_shadow,
+    color: (() => {
+      if (props.disabled) {
+        return theme.color_gray_50;
+      } else {
+        return {
+          regular: theme.Button_color_text,
+          minimal: theme.Button_color_link,
+          primary: theme.color_text_onPrimary,
+          danger: theme.color_text_onDanger,
+          success: theme.color_text_onSuccess,
+          warning: theme.color_text_onWarning
+        }[props.variant];
+      }
+    })(),
+    fontSize: props.size === 'small'
+      ? theme.Button_fontSize_small
+      : theme.Button_fontSize,
+    fontWeight: theme.Button_fontWeight,
+    height: theme[`Button_size_${props.size}`],
+    paddingLeft: props.size === 'big'
+      ? theme.Button_padding_big
+      : theme.Button_padding,
+    paddingRight: props.size === 'big'
+      ? theme.Button_padding_big
+      : theme.Button_padding,
+    textAlign: 'center',
+    width: props.fullWidth && '100%',
+    '&:hover': {
+      backgroundColor: (() => {
+        if (!props.disabled) {
+          return {
+            regular: theme.Button_color_background_hover,
+            minimal: theme.Button_color_background_hover,
+            primary: theme.color_background_hover_primary,
+            danger: theme.color_background_hover_danger,
+            success: theme.color_background_hover_success,
+            warning: theme.color_background_hover_warning
+          }[props.variant];
+        }
+      })()
+    },
+    '&:focus': {
+      borderColor: (() => {
+        return {
+          regular: theme.Button_color_border_focus,
+          minimal: theme.Button_color_border_focus,
+          primary: theme.color_border_focus_primary,
+          danger: theme.color_border_focus_danger,
+          success: theme.color_border_focus_success,
+          warning: theme.color_border_focus_warning
+        }[props.variant];
+      })()
+    },
+    '&:active': {
+      backgroundColor: (() => {
+        return {
+          regular: theme.Button_color_background_active,
+          minimal: theme.Button_color_background_active,
+          primary: theme.color_background_active_primary,
+          danger: theme.color_background_active_danger,
+          success: theme.color_background_active_success,
+          warning: theme.color_background_active_warning
+        }[props.variant];
+      })(),
+      borderColor: props.variant === 'regular'
+        ? theme.Button_color_border_active
+        : 'transparent'
+    }
+  };
+});
 
 // TODO: extract to new component-utils package
 
