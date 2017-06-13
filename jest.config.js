@@ -22,6 +22,9 @@ module.exports = {
     '/node_modules/',
     '/packages/site/'
   ],
+  moduleNameMapper: {
+    '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js'
+  },
   setupTestFrameworkScriptFile:
     '<rootDir>/utils/test/setupTestFrameworkScript.js',
   snapshotSerializers: ['enzyme-to-json/serializer']

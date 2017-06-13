@@ -15,7 +15,4 @@
  */
 
 /* @flow */
-import customText from './customText';
-import world from './world';
-
-export default [world, customText];
+export default {};

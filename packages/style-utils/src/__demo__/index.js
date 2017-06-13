@@ -19,8 +19,10 @@ import examples from './examples';
 
 export default [
   {
-    description:
-      'Sample implentations of various methods of styling and style overrides.',
+    doc: {
+      description:
+        'Sample implentations of various methods of styling and style overrides.'
+    },
     examples,
     slug: 'style-utils',
     title: 'StyleUtils'

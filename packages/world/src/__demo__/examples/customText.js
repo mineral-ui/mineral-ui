@@ -15,7 +15,12 @@
  */
 
 /* @flow */
-import customText from './customText';
-import world from './world';
+import World from '../../World';
 
-export default [world, customText];
+export default {
+  title: 'Custom Text',
+  component: World,
+  propValues: {
+    text: 'Felix'
+  }
+};

@@ -23,6 +23,10 @@ type Props = {|
   className?: string
 |};
 
+/**
+ * A simple component that renders the string, "Hello World".
+ * It is primarily used for testing project configuration and package distribution.
+ */
 export default function HelloWorld({ className }: Props) {
   return (
     <div className={className}>

@@ -25,6 +25,10 @@ type Props = {|
 
 const Root = createStyledComponent('span', {});
 
+/**
+ * A simple component that renders the string, "Hello".
+ * It is primarily used for testing project configuration and package distribution.
+ */
 export default function Hello({ className, text = 'Hello' }: Props) {
   return <Root className={className}>{text}</Root>;
 }
