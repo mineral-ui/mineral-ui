@@ -19,6 +19,5 @@ import World from '../../World';
 
 export default {
   title: 'Default',
-  component: World,
-  source: `<World />`
+  component: World
 };

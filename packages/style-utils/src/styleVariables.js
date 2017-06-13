@@ -209,6 +209,7 @@ export default {
   fontFamily: 'Open Sans',
   fontFamily_system:
     '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  fontFamily_monospace: 'monospace',
 
   fontSize_h1: '2.125rem',
   fontSize_h2: '1.75rem',

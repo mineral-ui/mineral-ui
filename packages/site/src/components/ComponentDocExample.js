@@ -15,21 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
-import {
-  mineralTheme,
-  createStyledComponent,
-  ThemeProvider
-} from '@mineral-ui/style-utils';
+import React, { Component } from 'react';
+import PropList from './PropList';
+import { createStyledComponent } from '@mineral-ui/style-utils';
 import styleReset from './styleReset';
-
-type Props = {|
-  children?: MnrlReactNode,
-  className?: string,
-  description?: MnrlReactNode,
-  source?: string,
-  title?: string
-|};
 
 const styles = {
   componentDocExample: (props, theme) => ({
@@ -67,30 +56,124 @@ const Root = createStyledComponent('div', styles.componentDocExample);
 const Resizable = createStyledComponent('div', styles.resizable);
 const Title = createStyledComponent('h2', styles.title);
 const Graf = createStyledComponent('p', styles.graf);
-const Code = createStyledComponent('code', styles.code);
 
-export default function ComponentDocExample({
-  children,
-  className,
-  description,
-  source,
-  title
-}: Props) {
+function getDefaultValue(propDescription: Object): any {
+  const { defaultValue } = propDescription;
   return (
-    <Root className={className}>
-      <Title>{title}</Title>
-      {typeof description === 'string'
-        ? <Graf>{description}</Graf>
-        : description}
-      <Resizable>
-        <ThemeProvider theme={mineralTheme}>
-          {children}
-        </ThemeProvider>
-      </Resizable>
-      {source &&
-        <pre>
-          <Code>{source}</Code>
-        </pre>}
-    </Root>
+    (defaultValue && defaultValue.value && eval(defaultValue.value)) ||
+    undefined
   );
+}
+
+function getFlowType(propDescription: Object): string {
+  const { flowType } = propDescription;
+  const type = (flowType && flowType.name) || 'unknown';
+  if (type === 'union') {
+    return `one of: ${flowType.raw}`;
+  }
+
+  return type;
+}
+
+function getExampleProps(
+  propDoc: Object = {},
+  propValues: Object = {}
+): Array<Object> {
+  return Object.keys(propDoc).sort().map(name => {
+    const propDescription = propDoc[name];
+    const { description, required } = propDescription;
+    const defaultValue = getDefaultValue(propDescription);
+    const exampleValue = propValues.hasOwnProperty(name)
+      ? propValues[name]
+      : defaultValue;
+    const type = getFlowType(propDescription);
+
+    return {
+      defaultValue,
+      description,
+      exampleValue,
+      name,
+      required,
+      type
+    };
+  });
+}
+
+function getComponentProps(exampleProps: Array<Object>): Object {
+  return exampleProps.reduce((acc, propDescription) => {
+    const propName = propDescription.name;
+    acc[propName] = propDescription.exampleValue;
+    return acc;
+  }, {});
+}
+
+type Props = {
+  children?: MnrlReactNode,
+  className?: string,
+  component: MnrlReactComponent,
+  description?: MnrlReactNode,
+  propDoc?: Object,
+  propValues?: Object,
+  source?: string,
+  title?: string
+};
+
+export default class ComponentDocExample extends Component {
+  props: Props;
+  state: {
+    exampleProps: Array<Object>
+  };
+
+  constructor(props: Props, context: Object) {
+    super(props, context);
+
+    this.state = {
+      exampleProps: getExampleProps(props.propDoc, props.propValues)
+    };
+    // $FlowFixMe
+    this.onPropChange = this.onPropChange.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps: Props) {
+    this.setState({
+      exampleProps: getExampleProps(nextProps.propDoc, nextProps.propValues)
+    });
+  }
+
+  render() {
+    const { className, component: Component, description, title } = this.props;
+    const componentProps = getComponentProps(this.state.exampleProps);
+
+    return (
+      <Root className={className}>
+        <Title>{title}</Title>
+        {typeof description === 'string'
+          ? <Graf>{description}</Graf>
+          : description}
+        <Resizable>
+          <Component {...componentProps} />
+        </Resizable>
+        <PropList
+          exampleProps={this.state.exampleProps}
+          onPropChange={this.onPropChange}
+        />
+      </Root>
+    );
+  }
+
+  onPropChange(propDescription: Object, newValue: any) {
+    const propName = propDescription.name;
+    const exampleProps = this.state.exampleProps.map(propDescription => {
+      if (propDescription.name === propName) {
+        return {
+          ...propDescription,
+          exampleValue: newValue
+        };
+      }
+
+      return propDescription;
+    });
+
+    this.setState({ exampleProps });
+  }
 }

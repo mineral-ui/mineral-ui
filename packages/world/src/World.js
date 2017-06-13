@@ -19,12 +19,18 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/style-utils';
 
 type Props = {|
+  /** a classname for adding styles */
   className?: string,
+  /** the text you want to tell the world */
   text?: string
 |};
 
 const Root = createStyledComponent('span', {});
 
+/**
+ * A simple component that renders the string, "World".
+ * It is primarily used for testing project configuration and package distribution.
+ */
 export default function World({ className, text = 'World' }: Props) {
   return <Root className={className}>{text}</Root>;
 }

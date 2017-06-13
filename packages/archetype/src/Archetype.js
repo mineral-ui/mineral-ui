@@ -24,6 +24,9 @@ type Props = {|
 
 const Root = createStyledComponent('div', {});
 
+/**
+ * Used as the starter for all new components.
+ */
 export default function Archetype({ className }: Props) {
   return <Root className={className}>Archetype</Root>;
 }

@@ -13,7 +13,9 @@ exports[`App renders correctly 1`] = `
       demos={
         Array [
           Object {
-            "description": "A simple component that renders the string, \\"Hello\\". It is primarily used for testing project configuration and package distribution.",
+            "doc": Object {
+              "default": Object {},
+            },
             "examples": Array [
               Object {
                 "component": [Function],
@@ -25,19 +27,29 @@ exports[`App renders correctly 1`] = `
             "title": "Hello",
           },
           Object {
-            "description": "A simple component that renders the string, \\"World\\". It is primarily used for testing project configuration and package distribution.",
+            "doc": Object {
+              "default": Object {},
+            },
             "examples": Array [
               Object {
                 "component": [Function],
-                "source": "<World />",
                 "title": "Default",
+              },
+              Object {
+                "component": [Function],
+                "propValues": Object {
+                  "text": "Felix",
+                },
+                "title": "Custom Text",
               },
             ],
             "slug": "world",
             "title": "World",
           },
           Object {
-            "description": "A simple component that renders the string, \\"Hello World\\". It is primarily used for testing project configuration and package distribution.",
+            "doc": Object {
+              "default": Object {},
+            },
             "examples": Array [
               Object {
                 "component": [Function],
@@ -49,7 +61,9 @@ exports[`App renders correctly 1`] = `
             "title": "HelloWorld",
           },
           Object {
-            "description": "Sample implentations of various methods of styling and style overrides.",
+            "doc": Object {
+              "description": "Sample implentations of various methods of styling and style overrides.",
+            },
             "examples": Array [
               Object {
                 "component": [Function],

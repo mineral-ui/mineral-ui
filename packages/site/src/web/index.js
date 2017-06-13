@@ -26,8 +26,10 @@ import demos from '{{DEMO_LIST_PATH}}';
 
 render(
   <BrowserRouter>
-    <ThemeProvider theme={siteTheme}>
-      <App demos={demos} />
+    <ThemeProvider>
+      <ThemeProvider theme={siteTheme}>
+        <App demos={demos} />
+      </ThemeProvider>
     </ThemeProvider>
   </BrowserRouter>,
   document.getElementById('app')

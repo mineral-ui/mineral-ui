@@ -17,10 +17,11 @@
 /* @flow */
 import examples from './examples';
 
+const doc = require('!!react-docgen-loader!../Hello.js');
+
 export default [
   {
-    description:
-      'A simple component that renders the string, "Hello". It is primarily used for testing project configuration and package distribution.',
+    doc,
     examples,
     slug: 'hello',
     title: 'Hello'
