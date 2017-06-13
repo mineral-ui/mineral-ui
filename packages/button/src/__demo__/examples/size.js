@@ -21,10 +21,10 @@ import Button from '../../Button';
 function Size() {
   return (
     <div>
-      <Button onPress={() => {}}>Default</Button>{' '}
-      <Button onPress={() => {}} size="small">Small</Button>{' '}
-      <Button onPress={() => {}} size="regular">Regular</Button>{' '}
-      <Button onPress={() => {}} size="big">Big</Button>{' '}
+      <Button onClick={() => {}}>Default</Button>{' '}
+      <Button onClick={() => {}} size="small">Small</Button>{' '}
+      <Button onClick={() => {}} size="regular">Regular</Button>{' '}
+      <Button onClick={() => {}} size="big">Big</Button>{' '}
     </div>
   );
 }

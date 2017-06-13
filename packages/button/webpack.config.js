@@ -24,6 +24,12 @@ const baseConfig = makeWebpackConfig({
 
 const config = webpackMerge(baseConfig, {
   externals: {
+    '@mineral-ui/component-utils': {
+      root: 'ComponentUtils',
+      commonjs: '@mineral-ui/component-utils',
+      commonjs2: '@mineral-ui/component-utils',
+      amd: '@mineral-ui/component-utils'
+    },
     '@mineral-ui/style-utils': {
       root: 'StyleUtils',
       commonjs: '@mineral-ui/style-utils',

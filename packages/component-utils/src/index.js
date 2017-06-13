@@ -15,24 +15,5 @@
  */
 
 /* @flow */
-import React from 'react';
-import Button from '../../Button';
-
-function Basic() {
-  return (
-    <Button
-      onClick={() => {}}
-      dataset={{ yo: 'dawg', fooBar: 'bas' }}
-      fullWidth
-      id="MyButton"
-      tabIndex={0}>
-      Submit
-    </Button>
-  );
-}
-
-export default {
-  title: 'Basic',
-  component: Basic,
-  source: `<Button>Submit</Button>`
-};
+export { default as globalProps } from './globalProps';
+export { default as styleReset } from './styleReset';

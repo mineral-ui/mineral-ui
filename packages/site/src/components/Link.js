@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { darken } from 'polished';
+import darken from 'polished/lib/color/darken';
 import { Link } from 'react-router-dom';
 import { createStyledComponent } from '@mineral-ui/style-utils';
 import styleReset from './styleReset';

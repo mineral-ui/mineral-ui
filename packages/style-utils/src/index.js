@@ -21,4 +21,3 @@ export { default as ThemeProvider } from './ThemeProvider';
 
 export { default as mineralTheme } from './mineralTheme';
 export { default as styleVariables } from './styleVariables';
-export { default as styleReset } from './styleReset';

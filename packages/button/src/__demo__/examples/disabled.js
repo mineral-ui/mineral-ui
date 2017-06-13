@@ -21,12 +21,12 @@ import Button from '../../Button';
 function Disabled() {
   return (
     <div>
-      <Button variant="danger" disabled onPress={() => {}}>Danger</Button>{' '}
-      <Button variant="minimal" disabled onPress={() => {}}>Minimal</Button>{' '}
-      <Button variant="primary" disabled onPress={() => {}}>Primary</Button>{' '}
-      <Button variant="regular" disabled onPress={() => {}}>Regular</Button>{' '}
-      <Button variant="success" disabled onPress={() => {}}>Success</Button>{' '}
-      <Button variant="warning" disabled onPress={() => {}}>Warning</Button>{' '}
+      <Button variant="danger" disabled onClick={() => {}}>Danger</Button>{' '}
+      <Button variant="minimal" disabled onClick={() => {}}>Minimal</Button>{' '}
+      <Button variant="primary" disabled onClick={() => {}}>Primary</Button>{' '}
+      <Button variant="regular" disabled onClick={() => {}}>Regular</Button>{' '}
+      <Button variant="success" disabled onClick={() => {}}>Success</Button>{' '}
+      <Button variant="warning" disabled onClick={() => {}}>Warning</Button>{' '}
     </div>
   );
 }

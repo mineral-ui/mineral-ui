@@ -16,8 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, styleReset } from '@mineral-ui/style-utils';
-import kebabCase from 'lodash.kebabcase';
+import ellipsis from 'polished/lib/mixins/ellipsis';
+import { createStyledComponent } from '@mineral-ui/style-utils';
+import { globalProps, styleReset } from '@mineral-ui/component-utils';
 
 type Props = {|
   ariaset?: {},
@@ -26,7 +27,8 @@ type Props = {|
   dataset?: {},
   disabled?: boolean,
   fullWidth?: boolean,
-  onPress: Function,
+  id?: string,
+  onClick: Function,
   size?: 'small' | 'regular' | 'big',
   tabIndex?: number,
   type?: 'button' | 'submit',
@@ -110,6 +112,7 @@ const Root = createStyledComponent('button', (props, ctxTheme) => {
       : theme.Button_padding,
     textAlign: 'center',
     width: props.fullWidth && '100%',
+    ...ellipsis('100%'),
     '&:hover': {
       backgroundColor: (() => {
         if (!props.disabled) {
@@ -154,67 +157,28 @@ const Root = createStyledComponent('button', (props, ctxTheme) => {
   };
 });
 
-// TODO: extract to new component-utils package
-
-// function passthroughProps(props) {
-//   return Object.keys(props).reduce((acc, prop) => {
-//     if (prop === 'id') {
-//       acc[prop] = props[prop];
-//     }
-//
-//     if (/^data-/.test(prop)) {
-//       acc[prop] = props[prop];
-//     }
-//
-//     return acc;
-//   }, {});
-// }
-
-function customProperties(data, prefix) {
-  const props = {};
-
-  for (var key in data) {
-    if (data.hasOwnProperty(key)) {
-      props[`${prefix}-${kebabCase(key)}`] = data[key];
-    }
-  }
-
-  return props;
-}
-
-function datasetProps(dataset) {
-  return customProperties(dataset, 'data');
-}
-
-function ariaProps(ariaset) {
-  return customProperties(ariaset, 'aria');
-}
-
 export default function Button({
   ariaset = { label: 'buttons are good' },
   children,
-  className,
-  dataset,
   disabled,
   fullWidth,
-  onPress,
+  onClick,
   size = 'regular',
-  tabIndex,
   type = 'button',
-  variant = 'regular'
+  variant = 'regular',
+  ...restProps
 }: Props) {
   const rootProps = {
-    className,
-    dataset,
     disabled,
     fullWidth,
-    onClick: onPress,
+    onClick,
     size,
-    tabIndex,
     type,
     variant,
-    ...datasetProps(dataset),
-    ...ariaProps(ariaset)
+    ...globalProps({
+      ariaset,
+      ...restProps
+    })
   };
 
   return <Root {...rootProps}>{children}</Root>;

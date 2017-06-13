@@ -15,24 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
-import Button from '../../Button';
+import examples from './examples';
 
-function Basic() {
-  return (
-    <Button
-      onClick={() => {}}
-      dataset={{ yo: 'dawg', fooBar: 'bas' }}
-      fullWidth
-      id="MyButton"
-      tabIndex={0}>
-      Submit
-    </Button>
-  );
-}
-
-export default {
-  title: 'Basic',
-  component: Basic,
-  source: `<Button>Submit</Button>`
-};
+export default [
+  {
+    description: 'TODO',
+    examples,
+    slug: 'component-utils',
+    title: 'ComponentUtils'
+  }
+];

@@ -21,13 +21,13 @@ import Button from '../../Button';
 function Variant() {
   return (
     <div>
-      <Button onPress={() => {}}>Default</Button>{' '}
-      <Button variant="danger" onPress={() => {}}>Danger</Button>{' '}
-      <Button variant="minimal" onPress={() => {}}>Minimal</Button>{' '}
-      <Button variant="primary" onPress={() => {}}>Primary</Button>{' '}
-      <Button variant="regular" onPress={() => {}}>Regular</Button>{' '}
-      <Button variant="success" onPress={() => {}}>Success</Button>{' '}
-      <Button variant="warning" onPress={() => {}}>Warning</Button>{' '}
+      <Button onClick={() => {}}>Default</Button>{' '}
+      <Button variant="danger" onClick={() => {}}>Danger</Button>{' '}
+      <Button variant="minimal" onClick={() => {}}>Minimal</Button>{' '}
+      <Button variant="primary" onClick={() => {}}>Primary</Button>{' '}
+      <Button variant="regular" onClick={() => {}}>Regular</Button>{' '}
+      <Button variant="success" onClick={() => {}}>Success</Button>{' '}
+      <Button variant="warning" onClick={() => {}}>Warning</Button>{' '}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@mineral-ui/button",
+  "name": "@mineral-ui/component-utils",
   "version": "0.0.0",
-  "description": "Button component",
+  "description": "Component utils",
   "license": "Apache-2.0",
   "main": "dist/umd/index.js",
   "module": "dist/es/index.js",
@@ -11,27 +11,17 @@
     "clean": "$npm_package_config_script_path/clean.sh",
     "commit": "$npm_package_config_script_path/commit.sh",
     "eslint": "$npm_package_config_script_path/eslint.sh",
-    "flow": "$npm_package_config_script_path/flow.sh",
     "jest": "$npm_package_config_script_path/jest.sh",
     "lint": "$npm_package_config_script_path/lint.sh",
     "pack-ls": "$npm_package_config_script_path/pack-ls.sh",
-    "start": "DEMO_LIST_PATH=\"button\" $npm_package_config_script_path/start.sh",
+    "start": "DEMO_LIST_PATH=\"component-utils\" $npm_package_config_script_path/start.sh",
     "test": "$npm_package_config_script_path/test.sh"
   },
-  "devDependencies": {
-    "@mineral-ui/component-utils": "^0.0.0",
-    "@mineral-ui/style-utils": "^0.0.0"
-  },
   "peerDependencies": {
-    "@mineral-ui/component-utils": "^0.0.0",
-    "@mineral-ui/style-utils": "^0.0.0",
     "glamor": "^2.0.0",
     "glamorous": "^3.0.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "config": {
     "commitizen": {

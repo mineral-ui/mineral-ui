@@ -20,11 +20,11 @@ import { mount, shallow } from 'enzyme';
 import Button from '../Button';
 
 function shallowButton() {
-  return shallow(<Button onPress={() => {}} />);
+  return shallow(<Button onClick={() => {}} />);
 }
 
 function mountButton() {
-  return mount(<Button onPress={() => {}} />);
+  return mount(<Button onClick={() => {}} />);
 }
 
 describe('Button', () => {

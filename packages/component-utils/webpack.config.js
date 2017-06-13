@@ -13,26 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 
-/* @flow */
-import React from 'react';
-import Button from '../../Button';
-
-function Basic() {
-  return (
-    <Button
-      onClick={() => {}}
-      dataset={{ yo: 'dawg', fooBar: 'bas' }}
-      fullWidth
-      id="MyButton"
-      tabIndex={0}>
-      Submit
-    </Button>
-  );
-}
-
-export default {
-  title: 'Basic',
-  component: Basic,
-  source: `<Button>Submit</Button>`
-};
+module.exports = makeWebpackConfig({
+  packageName: 'ComponentUtils',
+  packagePath: __dirname
+});
