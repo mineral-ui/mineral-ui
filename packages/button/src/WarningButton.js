@@ -15,13 +15,10 @@
  */
 
 /* @flow */
-import {
-  createThemedComponent,
-  mineralTheme as theme
-} from '@mineral-ui/style-utils';
+import { createThemedComponent } from '@mineral-ui/style-utils';
 import Button from './Button';
 
-const WarningButton = createThemedComponent(Button, {
+const WarningButton = createThemedComponent(Button, (props, theme) => ({
   Button_color_background_active: theme.color_inputBackground_warning,
 
   Button_color_background_minimal_active: theme.color_inputBackground_warning,
@@ -47,7 +44,7 @@ const WarningButton = createThemedComponent(Button, {
   Button_color_text_minimal: theme.color_text_warning,
 
   Button_color_text_primary: theme.color_text_onWarning
-});
+}));
 
 WarningButton.displayName = 'WarningButton';
 

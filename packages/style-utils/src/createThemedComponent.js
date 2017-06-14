@@ -16,6 +16,7 @@
 
 /* @flow */
 import React, { Component } from 'react';
+import { withTheme } from 'glamorous';
 import { ThemeProvider } from './index';
 
 function getComponentDisplayName(Component: MnrlReactComponent): string {
@@ -26,19 +27,25 @@ function getComponentDisplayName(Component: MnrlReactComponent): string {
 
 export default function createThemedComponent(
   ComponentToTheme: MnrlReactComponent,
-  theme: Object
+  theme: Object | ((props: Object, theme?: Object, context?: Object) => Object)
 ) {
-  return class ThemedComponent extends Component {
+  class ThemedComponent extends Component {
     static displayName = `Themed(${getComponentDisplayName(ComponentToTheme)})`;
 
     static propTypes = ComponentToTheme.propTypes;
 
     render() {
+      const outTheme = typeof theme === 'function'
+        ? theme(this.props, this.props.theme, this.context)
+        : theme;
+
       return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={outTheme}>
           <ComponentToTheme {...this.props} />
         </ThemeProvider>
       );
     }
-  };
+  }
+
+  return withTheme(ThemedComponent);
 }

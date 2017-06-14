@@ -19,7 +19,9 @@ import glamorous from 'glamorous';
 
 export default function createStyledComponent(
   element: MnrlReactNode,
-  styles: Object | ((props: Object, theme?: Object) => Object),
+  styles:
+    | Object
+    | ((props: Object, theme?: Object, context?: Object) => Object),
   options?: Object
 ) {
   return glamorous(element, options)(styles);
