@@ -17,7 +17,7 @@
 /* @flow */
 import kebabCase from 'lodash.kebabcase';
 
-const whitelistedProps = ['className', 'id', 'tabIndex'];
+const whitelistedProps = ['className', 'id', 'role', 'tabIndex'];
 
 function customProperties(data: { [string]: any }, prefix: string) {
   const props = {};
