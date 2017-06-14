@@ -17,17 +17,21 @@
 /* @flow */
 import React from 'react';
 import Button from '../../Button';
+import MinimalButton from '../../MinimalButton';
+import PrimaryButton from '../../PrimaryButton';
+import DangerButton from '../../DangerButton';
+import SuccessButton from '../../SuccessButton';
+import WarningButton from '../../WarningButton';
 
 function Variant() {
   return (
     <div>
-      <Button onClick={() => {}}>Default</Button>{' '}
-      <Button variant="danger" onClick={() => {}}>Danger</Button>{' '}
-      <Button variant="minimal" onClick={() => {}}>Minimal</Button>{' '}
-      <Button variant="primary" onClick={() => {}}>Primary</Button>{' '}
-      <Button variant="regular" onClick={() => {}}>Regular</Button>{' '}
-      <Button variant="success" onClick={() => {}}>Success</Button>{' '}
-      <Button variant="warning" onClick={() => {}}>Warning</Button>{' '}
+      <Button onClick={() => {}}>Regular</Button>{' '}
+      <MinimalButton onClick={() => {}}>Minimal</MinimalButton>{' '}
+      <PrimaryButton onClick={() => {}}>Primary</PrimaryButton>{' '}
+      <DangerButton onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton onClick={() => {}}>Success</SuccessButton>{' '}
+      <WarningButton onClick={() => {}}>Warning</WarningButton>{' '}
     </div>
   );
 }
@@ -35,5 +39,5 @@ function Variant() {
 export default {
   title: 'Variant',
   component: Variant,
-  source: `<Button onClick={() => {}} variant="danger">Danger</Button>`
+  source: `<Button onClick={() => {}}>Submit</Button>`
 };

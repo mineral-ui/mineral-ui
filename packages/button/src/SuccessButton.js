@@ -15,13 +15,22 @@
  */
 
 /* @flow */
-import { createThemedComponent } from '@mineral-ui/style-utils';
+import {
+  createThemedComponent,
+  mineralTheme as theme
+} from '@mineral-ui/style-utils';
 import ButtonBase from './ButtonBase';
 
-const Button = createThemedComponent(ButtonBase, {
-  Button_shadow: 'none'
+const SuccessButton = createThemedComponent(ButtonBase, {
+  Button_color_background: theme.color_background_success,
+  Button_color_background_hover: theme.color_background_hover_success,
+  Button_color_background_active: theme.color_background_active_success,
+  Button_color_border: 'transparent',
+  Button_color_border_focus: theme.color_border_focus_success,
+  Button_color_border_active: 'transparent',
+  Button_color_text: theme.color_text_onSuccess
 });
 
-Button.displayName = 'Button';
+SuccessButton.displayName = 'SuccessButton';
 
-export default Button;
+export default SuccessButton;

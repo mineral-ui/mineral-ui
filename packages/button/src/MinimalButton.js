@@ -15,4 +15,20 @@
  */
 
 /* @flow */
-export { default as globalProps } from './globalProps';
+import {
+  createThemedComponent,
+  mineralTheme as theme
+} from '@mineral-ui/style-utils';
+import ButtonBase from './ButtonBase';
+
+const MinimalButton = createThemedComponent(ButtonBase, {
+  Button_color_background: 'transparent',
+  Button_color_border: 'transparent',
+  Button_color_border_active: 'transparent',
+  Button_color_text: theme.color_link,
+  Button_shadow: 'none'
+});
+
+MinimalButton.displayName = 'MinimalButton';
+
+export default MinimalButton;
