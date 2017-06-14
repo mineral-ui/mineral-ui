@@ -21,14 +21,14 @@ import { createStyledComponent } from '@mineral-ui/style-utils';
 import { globalProps, styleReset } from '@mineral-ui/component-utils';
 
 type Props = {|
-  ariaset?: {},
+  ariaset?: { [string]: any },
   children?: MnrlReactNode,
   className?: string,
-  dataset?: {},
+  dataset?: { [string]: any },
   disabled?: boolean,
   fullWidth?: boolean,
   id?: string,
-  onClick: Function,
+  onClick: () => void,
   size?: 'small' | 'regular' | 'big',
   tabIndex?: number,
   type?: 'button' | 'submit',
@@ -158,7 +158,6 @@ const Root = createStyledComponent('button', (props, ctxTheme) => {
 });
 
 export default function Button({
-  ariaset = { label: 'buttons are good' },
   children,
   disabled,
   fullWidth,
@@ -176,7 +175,6 @@ export default function Button({
     type,
     variant,
     ...globalProps({
-      ariaset,
       ...restProps
     })
   };

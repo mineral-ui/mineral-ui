@@ -32,5 +32,5 @@ function Size() {
 export default {
   title: 'Size',
   component: Size,
-  source: `<Button>Submit</Button>`
+  source: `<Button onClick={() => {}} size="small">Small</Button>`
 };

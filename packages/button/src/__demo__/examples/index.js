@@ -16,8 +16,9 @@
 
 /* @flow */
 import basic from './basic';
+import fullWidth from './fullWidth';
 import disabled from './disabled';
 import size from './size';
 import variant from './variant';
 
-export default [basic, disabled, size, variant];
+export default [basic, fullWidth, disabled, size, variant];

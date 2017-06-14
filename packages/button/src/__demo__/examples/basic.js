@@ -20,12 +20,7 @@ import Button from '../../Button';
 
 function Basic() {
   return (
-    <Button
-      onClick={() => {}}
-      dataset={{ yo: 'dawg', fooBar: 'bas' }}
-      fullWidth
-      id="MyButton"
-      tabIndex={0}>
+    <Button onClick={() => {}}>
       Submit
     </Button>
   );

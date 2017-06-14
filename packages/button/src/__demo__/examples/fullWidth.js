@@ -18,22 +18,16 @@
 import React from 'react';
 import Button from '../../Button';
 
-function Variant() {
+function FullWidth() {
   return (
-    <div>
-      <Button onClick={() => {}}>Default</Button>{' '}
-      <Button variant="danger" onClick={() => {}}>Danger</Button>{' '}
-      <Button variant="minimal" onClick={() => {}}>Minimal</Button>{' '}
-      <Button variant="primary" onClick={() => {}}>Primary</Button>{' '}
-      <Button variant="regular" onClick={() => {}}>Regular</Button>{' '}
-      <Button variant="success" onClick={() => {}}>Success</Button>{' '}
-      <Button variant="warning" onClick={() => {}}>Warning</Button>{' '}
-    </div>
+    <Button onClick={() => {}} fullWidth>
+      Submit
+    </Button>
   );
 }
 
 export default {
-  title: 'Variant',
-  component: Variant,
-  source: `<Button onClick={() => {}} variant="danger">Danger</Button>`
+  title: 'Full Width',
+  component: FullWidth,
+  source: `<Button onClick={() => {}} fullWidth>Submit</Button>`
 };

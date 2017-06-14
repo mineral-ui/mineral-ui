@@ -34,5 +34,5 @@ function Disabled() {
 export default {
   title: 'Disabled',
   component: Disabled,
-  source: `<Button>Submit</Button>`
+  source: `<Button onClick={() => {}} disabled>Submit</Button>`
 };
