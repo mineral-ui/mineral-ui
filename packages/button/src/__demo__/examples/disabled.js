@@ -17,16 +17,35 @@
 /* @flow */
 import React from 'react';
 import Button from '../../Button';
+import DangerButton from '../../DangerButton';
+import SuccessButton from '../../SuccessButton';
+import WarningButton from '../../WarningButton';
 
 function Disabled() {
   return (
     <div>
-      <Button variant="danger" disabled onClick={() => {}}>Danger</Button>{' '}
-      <Button variant="minimal" disabled onClick={() => {}}>Minimal</Button>{' '}
-      <Button variant="primary" disabled onClick={() => {}}>Primary</Button>{' '}
-      <Button variant="regular" disabled onClick={() => {}}>Regular</Button>{' '}
-      <Button variant="success" disabled onClick={() => {}}>Success</Button>{' '}
-      <Button variant="warning" disabled onClick={() => {}}>Warning</Button>{' '}
+      <Button disabled onClick={() => {}}>Default</Button>{' '}
+      <DangerButton disabled onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton disabled onClick={() => {}}>Success</SuccessButton>{' '}
+      <WarningButton disabled onClick={() => {}}>Warning</WarningButton>{' '}
+      <br /><br />
+      <Button minimal disabled onClick={() => {}}>Default</Button>{' '}
+      <DangerButton minimal disabled onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton minimal disabled onClick={() => {}}>
+        Success
+      </SuccessButton>{' '}
+      <WarningButton minimal disabled onClick={() => {}}>
+        Warning
+      </WarningButton>{' '}
+      <br /><br />
+      <Button primary disabled onClick={() => {}}>Default</Button>{' '}
+      <DangerButton primary disabled onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton primary disabled onClick={() => {}}>
+        Success
+      </SuccessButton>{' '}
+      <WarningButton primary disabled onClick={() => {}}>
+        Warning
+      </WarningButton>{' '}
     </div>
   );
 }

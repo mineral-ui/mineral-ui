@@ -19,16 +19,34 @@ import {
   createThemedComponent,
   mineralTheme as theme
 } from '@mineral-ui/style-utils';
-import ButtonBase from './ButtonBase';
+import Button from './Button';
 
-const DangerButton = createThemedComponent(ButtonBase, {
-  Button_color_background: theme.color_background_danger,
-  Button_color_background_hover: theme.color_background_hover_danger,
-  Button_color_background_active: theme.color_background_active_danger,
-  Button_color_border: 'transparent',
-  Button_color_border_focus: theme.color_border_focus_danger,
-  Button_color_border_active: 'transparent',
-  Button_color_text: theme.color_text_onDanger
+const DangerButton = createThemedComponent(Button, {
+  Button_color_background_active: theme.color_inputBackground_danger,
+
+  Button_color_background_minimal_active: theme.color_inputBackground_danger,
+
+  Button_color_background_primary: theme.color_background_danger,
+  Button_color_background_primary_active: theme.color_background_danger_active,
+  Button_color_background_primary_focus: theme.color_background_danger_focus,
+  Button_color_background_primary_hover: theme.color_background_danger_hover,
+
+  // -----
+
+  Button_color_border_active: theme.color_border_danger,
+  Button_color_border_focus: theme.color_border_danger_focus,
+
+  Button_color_border_minimal_focus: theme.color_border_danger_focus,
+
+  Button_color_border_primary_focus: theme.color_border_danger_focus,
+
+  // -----
+
+  Button_color_text: theme.color_background_danger,
+
+  Button_color_text_minimal: theme.color_text_danger,
+
+  Button_color_text_primary: theme.color_text_onDanger
 });
 
 DangerButton.displayName = 'DangerButton';

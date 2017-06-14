@@ -161,17 +161,6 @@ export const color = {
 };
 
 export default {
-  /* Naming convention:
-   *
-   * type_target_state_variant
-   *
-   * E.g., to define a variable for the border-color on focused "success" buttons:
-   *
-   * color_buttonBorder_focus_success
-   *
-   * Only 'type' is required. Irrelevant parts are simply skipped.
-   */
-
   borderRadius_1: '0.28125rem',
   borderRadius_2: '0.375rem',
   borderRadius_3: '0.5625rem',

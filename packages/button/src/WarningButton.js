@@ -19,16 +19,34 @@ import {
   createThemedComponent,
   mineralTheme as theme
 } from '@mineral-ui/style-utils';
-import ButtonBase from './ButtonBase';
+import Button from './Button';
 
-const WarningButton = createThemedComponent(ButtonBase, {
-  Button_color_background: theme.color_background_warning,
-  Button_color_background_hover: theme.color_background_hover_warning,
-  Button_color_background_active: theme.color_background_active_warning,
-  Button_color_border: 'transparent',
-  Button_color_border_focus: theme.color_border_focus_warning,
-  Button_color_border_active: 'transparent',
-  Button_color_text: theme.color_text_onWarning
+const WarningButton = createThemedComponent(Button, {
+  Button_color_background_active: theme.color_inputBackground_warning,
+
+  Button_color_background_minimal_active: theme.color_inputBackground_warning,
+
+  Button_color_background_primary: theme.color_background_warning,
+  Button_color_background_primary_active: theme.color_background_warning_active,
+  Button_color_background_primary_focus: theme.color_background_warning_focus,
+  Button_color_background_primary_hover: theme.color_background_warning_hover,
+
+  // -----
+
+  Button_color_border_active: theme.color_border_warning,
+  Button_color_border_focus: theme.color_border_warning_focus,
+
+  Button_color_border_minimal_focus: theme.color_border_warning_focus,
+
+  Button_color_border_primary_focus: theme.color_border_warning_focus,
+
+  // -----
+
+  Button_color_text: theme.color_background_warning,
+
+  Button_color_text_minimal: theme.color_text_warning,
+
+  Button_color_text_primary: theme.color_text_onWarning
 });
 
 WarningButton.displayName = 'WarningButton';

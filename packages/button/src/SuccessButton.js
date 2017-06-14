@@ -19,16 +19,34 @@ import {
   createThemedComponent,
   mineralTheme as theme
 } from '@mineral-ui/style-utils';
-import ButtonBase from './ButtonBase';
+import Button from './Button';
 
-const SuccessButton = createThemedComponent(ButtonBase, {
-  Button_color_background: theme.color_background_success,
-  Button_color_background_hover: theme.color_background_hover_success,
-  Button_color_background_active: theme.color_background_active_success,
-  Button_color_border: 'transparent',
-  Button_color_border_focus: theme.color_border_focus_success,
-  Button_color_border_active: 'transparent',
-  Button_color_text: theme.color_text_onSuccess
+const SuccessButton = createThemedComponent(Button, {
+  Button_color_background_active: theme.color_inputBackground_success,
+
+  Button_color_background_minimal_active: theme.color_inputBackground_success,
+
+  Button_color_background_primary: theme.color_background_success,
+  Button_color_background_primary_active: theme.color_background_success_active,
+  Button_color_background_primary_focus: theme.color_background_success_focus,
+  Button_color_background_primary_hover: theme.color_background_success_hover,
+
+  // -----
+
+  Button_color_border_active: theme.color_border_success,
+  Button_color_border_focus: theme.color_border_success_focus,
+
+  Button_color_border_minimal_focus: theme.color_border_success_focus,
+
+  Button_color_border_primary_focus: theme.color_border_success_focus,
+
+  // -----
+
+  Button_color_text: theme.color_background_success,
+
+  Button_color_text_minimal: theme.color_text_success,
+
+  Button_color_text_primary: theme.color_text_onSuccess
 });
 
 SuccessButton.displayName = 'SuccessButton';

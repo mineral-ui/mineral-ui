@@ -17,8 +17,6 @@
 /* @flow */
 import React from 'react';
 import Button from '../../Button';
-import MinimalButton from '../../MinimalButton';
-import PrimaryButton from '../../PrimaryButton';
 import DangerButton from '../../DangerButton';
 import SuccessButton from '../../SuccessButton';
 import WarningButton from '../../WarningButton';
@@ -26,12 +24,20 @@ import WarningButton from '../../WarningButton';
 function Variant() {
   return (
     <div>
-      <Button onClick={() => {}}>Regular</Button>{' '}
-      <MinimalButton onClick={() => {}}>Minimal</MinimalButton>{' '}
-      <PrimaryButton onClick={() => {}}>Primary</PrimaryButton>{' '}
+      <Button onClick={() => {}}>Default</Button>{' '}
       <DangerButton onClick={() => {}}>Danger</DangerButton>{' '}
       <SuccessButton onClick={() => {}}>Success</SuccessButton>{' '}
       <WarningButton onClick={() => {}}>Warning</WarningButton>{' '}
+      <br /><br />
+      <Button minimal onClick={() => {}}>Default</Button>{' '}
+      <DangerButton minimal onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton minimal onClick={() => {}}>Success</SuccessButton>{' '}
+      <WarningButton minimal onClick={() => {}}>Warning</WarningButton>{' '}
+      <br /><br />
+      <Button primary onClick={() => {}}>Default</Button>{' '}
+      <DangerButton primary onClick={() => {}}>Danger</DangerButton>{' '}
+      <SuccessButton primary onClick={() => {}}>Success</SuccessButton>{' '}
+      <WarningButton primary onClick={() => {}}>Warning</WarningButton>{' '}
     </div>
   );
 }
