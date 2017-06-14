@@ -17,10 +17,7 @@
 /* @flow */
 import React from 'react';
 import ellipsis from 'polished/lib/mixins/ellipsis';
-import {
-  componentStyleReset,
-  createStyledComponent
-} from '@mineral-ui/style-utils';
+import { createResetComponent } from '@mineral-ui/style-utils';
 import { globalProps } from '@mineral-ui/component-utils';
 
 type Props = {|
@@ -39,7 +36,7 @@ type Props = {|
   type?: 'button' | 'submit'
 |};
 
-const Root = createStyledComponent('button', (props, ctxTheme) => {
+const Root = createResetComponent('button', (props, ctxTheme) => {
   const theme = {
     Button_borderRadius: ctxTheme.borderRadius_1,
 
@@ -115,8 +112,6 @@ const Root = createStyledComponent('button', (props, ctxTheme) => {
   };
 
   return {
-    ...componentStyleReset(theme),
-
     backgroundColor: (() => {
       if (props.disabled && !props.minimal) {
         return theme.color_gray_30;
