@@ -15,4 +15,4 @@ Mineral UI `style-utils`. Find out more about [Mineral UI](https://github.com/mi
 
 ## Usage
 
-Please see our [styling documentation](./docs/styling.md) for usage.
+Please see our [styling documentation](../../docs/styling.md) for usage.

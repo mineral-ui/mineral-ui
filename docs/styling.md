@@ -138,13 +138,7 @@ const MyButton = createThemedComponent(Button, {
 
 #### 3. Style Override
 
-<<<<<<< HEAD
-If you need to override or include arbitrary styles for a specific component. Use of this pattern is not encouraged, as your styles are more likely to break with future updates.
-||||||| parent of 6d54b17... docs(styling,theme): Update styling docs
-If you need to override or write arbitrary styles for a specific component. Use of this wrapper is not encouraged, as it is more likely to break with future updates.
-=======
 If you need to override or write arbitrary styles for a specific component. _Use of this wrapper is not encouraged, as it is more likely to break with future updates._
->>>>>>> 6d54b17... docs(styling,theme): Update styling docs
 
 ```jsx
 const MyButton = createStyledComponent(Button, (props, theme) => ({
