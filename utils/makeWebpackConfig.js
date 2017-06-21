@@ -125,7 +125,8 @@ function getPlugins() {
       banner: compactLicenseHeader,
       raw: true,
       entryOnly: true
-    })
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin()
   ];
 
   if (isSite) {
