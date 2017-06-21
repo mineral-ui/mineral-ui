@@ -6,7 +6,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap && npm run link-parent-bin",
     "build": "lerna run build",
-    "clean": "lerna clean --yes && lerna run clean",
+    "clean": "find packages -name dist -or -name node_modules -type d | xargs rm -rf",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
     "deploy:site": "gh-pages -d packages/site/dist -m 'chore(site): Deploy' -r https://github.com/mineral-ui/mineral-ui.github.io.git -b master",
