@@ -11,7 +11,7 @@ if [ "$TARGET" != 'site' ]; then
 fi
 
 # umd
-TARGET=$TARGET NODE_ENV=$NODE_ENV webpack
+TARGET=$TARGET NODE_ENV=$NODE_ENV webpack --display-optimization-bailout
 
 # copy source code with embedded flow definitions
 if [ "$TARGET" != 'site' ]; then
