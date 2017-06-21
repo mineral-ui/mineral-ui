@@ -15,7 +15,12 @@
  */
 
 /* @flow */
-import glamorous from 'glamorous';
+import glamorous from "glamorous";
+
+// $FlowFixMe
+glamorous.config.useDisplayNameInClassName = NODE_ENV === "development"
+  ? true
+  : false;
 
 export default function createStyledComponent(
   element: MnrlReactNode,

@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
-const compactLicenseHeader = require('./license').compactLicenseHeader;
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const compactLicenseHeader = require("./license").compactLicenseHeader;
+const NODE_ENV = process.env.NODE_ENV || "development";
 const TARGET = process.env.TARGET;
 const ANALYZE = process.env.ANALYZE;
-const isSite = TARGET === 'site';
-const isProduction = NODE_ENV === 'production';
+const isSite = TARGET === "site";
+const isProduction = NODE_ENV === "production";
 
 function getEntry() {
-  const path = isSite ? './src/web' : './src';
+  const path = isSite ? "./src/web" : "./src";
 
   return {
     index: `${path}/index.js`
@@ -36,16 +36,16 @@ function getEntry() {
 function getOutput({ packageName, packagePath }) {
   if (isSite) {
     return {
-      filename: '[name].js',
-      path: path.resolve(packagePath, 'dist'),
-      publicPath: '/'
+      filename: "[name].js",
+      path: path.resolve(packagePath, "dist"),
+      publicPath: "/"
     };
   } else {
     return {
-      filename: '[name].js',
+      filename: "[name].js",
       library: packageName,
-      libraryTarget: 'umd',
-      path: path.resolve(packagePath, 'dist/umd')
+      libraryTarget: "umd",
+      path: path.resolve(packagePath, "dist/umd")
     };
   }
 }
@@ -54,28 +54,28 @@ function getExternals() {
   if (!isSite) {
     return {
       glamor: {
-        root: 'Glamor',
-        commonjs: 'glamor',
-        commonjs2: 'glamor',
-        amd: 'glamor'
+        root: "Glamor",
+        commonjs: "glamor",
+        commonjs2: "glamor",
+        amd: "glamor"
       },
       glamorous: {
-        root: 'Glamorous',
-        commonjs: 'glamorous',
-        commonjs2: 'glamorous',
-        amd: 'glamorous'
+        root: "Glamorous",
+        commonjs: "glamorous",
+        commonjs2: "glamorous",
+        amd: "glamorous"
       },
       react: {
-        root: 'React',
-        commonjs: 'react',
-        commonjs2: 'react',
-        amd: 'react'
+        root: "React",
+        commonjs: "react",
+        commonjs2: "react",
+        amd: "react"
       },
-      'react-dom': {
-        root: 'ReactDOM',
-        commonjs: 'react-dom',
-        commonjs2: 'react-dom',
-        amd: 'react-dom'
+      "react-dom": {
+        root: "ReactDOM",
+        commonjs: "react-dom",
+        commonjs2: "react-dom",
+        amd: "react-dom"
       }
     };
   }
@@ -87,7 +87,7 @@ function getModule() {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: "babel-loader"
       }
     ]
   };
@@ -95,16 +95,16 @@ function getModule() {
 
 function getResolve() {
   return {
-    mainFields: ['browser', 'module', 'main']
+    mainFields: ["browser", "module", "main"]
   };
 }
 
 function getDevServer({ packagePath }) {
   if (isSite) {
     return {
-      contentBase: path.join(packagePath, 'src/web'),
+      contentBase: path.join(packagePath, "src/web"),
       compress: true,
-      host: '0.0.0.0',
+      host: "0.0.0.0",
       historyApiFallback: true
     };
   }
@@ -113,13 +113,14 @@ function getDevServer({ packagePath }) {
 }
 
 function getDevtool() {
-  return isProduction ? 'source-map' : 'cheap-module-eval-source-map';
+  return isProduction ? "source-map" : "cheap-module-eval-source-map";
 }
 
 function getPlugins() {
   let plugins = [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
+      "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
+      NODE_ENV: JSON.stringify(NODE_ENV)
     }),
     new webpack.BannerPlugin({
       banner: compactLicenseHeader,
@@ -129,7 +130,7 @@ function getPlugins() {
   ];
 
   if (isSite) {
-    const template = './src/web/index.html';
+    const template = "./src/web/index.html";
     plugins.push(new HtmlWebpackPlugin({ template }));
   }
 
@@ -157,7 +158,7 @@ function getPlugins() {
   if (ANALYZE) {
     plugins.push(
       new BundleAnalyzerPlugin({
-        analyzerHost: '0.0.0.0'
+        analyzerHost: "0.0.0.0"
       })
     );
   }
