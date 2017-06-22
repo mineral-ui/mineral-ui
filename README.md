@@ -64,6 +64,17 @@ Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com
 
   > Note: Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
 
+### Open Sans Font
+
+Mineral UI was designed around [Open Sans](https://fonts.google.com/specimen/Open+Sans). To get the components to look right, you will need to include this font in your project yourself or our styles will fall back to system fonts. To quickly include this font in your app, copy this code into the `<head>` of your HTML document.
+
+  ```html
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  ```
+  
+For more options loading this font from Google, check out the Seleted Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
+
+
 ### Styling
 
 This project uses [Glamorous](https://github.com/paypal/glamorous/) for its styling. Please see our [documentation](./docs/styling.md) for details.
