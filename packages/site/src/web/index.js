@@ -18,6 +18,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import 'babel-polyfill';
 import { ThemeProvider } from '@mineral-ui/style-utils';
 import App from '../components/App';
 import siteTheme from '../components/siteTheme';
