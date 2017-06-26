@@ -20,11 +20,8 @@ import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../World.js');
 
-export default [
-  {
-    doc,
-    examples,
-    slug: 'world',
-    title: 'World'
-  }
-];
+export default {
+  doc,
+  examples,
+  title: 'World'
+};

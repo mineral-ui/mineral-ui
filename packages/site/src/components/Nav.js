@@ -23,7 +23,7 @@ import styleReset from './styleReset';
 
 type Props = {|
   className?: string,
-  demos: Array<Object>
+  demos: Object
 |};
 
 const styles = {
@@ -59,10 +59,11 @@ const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 
 export default function Nav({ className, demos }: Props) {
-  const demoLinks = demos.map(demo => {
+  const demoLinks = Object.keys(demos).map(slug => {
+    const demo = demos[slug];
     return (
-      <ListItem key={demo.slug}>
-        <RouterLink to={`/components/${demo.slug}`}>{demo.title}</RouterLink>
+      <ListItem key={slug}>
+        <RouterLink to={`/components/${slug}`}>{demo.title}</RouterLink>
       </ListItem>
     );
   });

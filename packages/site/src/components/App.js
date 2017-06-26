@@ -18,7 +18,7 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { createStyledComponent, ThemeProvider } from '@mineral-ui/style-utils';
-import DemoList from './DemoList';
+import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
 import siteTheme from './siteTheme';
@@ -26,7 +26,7 @@ import styleReset from './styleReset';
 
 type Props = {|
   className?: string,
-  demos: Array<Object>
+  demos: Object
 |};
 
 const styles = {
@@ -58,8 +58,10 @@ const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
 export default function App({ className, demos }: Props) {
-  if (demos.length === 1) {
-    return <DemoList demos={demos} />;
+  const slugs = Object.keys(demos);
+  if (slugs.length === 1) {
+    const slug = slugs[0];
+    return <ComponentDoc slug={slug} {...demos[slug]} />;
   }
 
   return (
@@ -73,11 +75,8 @@ export default function App({ className, demos }: Props) {
             path="/components/:componentId"
             render={route => {
               const componentId = route.match.params.componentId;
-              const filteredDemos = demos.filter(
-                demo => demo.slug === componentId
-              );
-
-              return <DemoList demos={filteredDemos} />;
+              const selectedDemo = demos[componentId];
+              return <ComponentDoc slug={componentId} {...selectedDemo} />;
             }}
           />
           <Redirect from="/" to="/components/hello" />

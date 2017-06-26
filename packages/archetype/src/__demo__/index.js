@@ -19,11 +19,8 @@ import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../Archetype.js');
 
-export default [
-  {
-    doc,
-    examples,
-    slug: 'archetype',
-    title: 'Archetype'
-  }
-];
+export default {
+  doc,
+  examples,
+  title: 'Archetype'
+};
