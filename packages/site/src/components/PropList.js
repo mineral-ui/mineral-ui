@@ -21,6 +21,7 @@ import { createStyledComponent } from '@mineral-ui/style-utils';
 const styles = {
   codeValue: (props, theme) => ({
     color: theme.color_text,
+    fontSize: '1.2rem',
     fontFamily: theme.fontFamily_monospace
   }),
   heading: (props, theme) => ({
@@ -38,7 +39,8 @@ const styles = {
     margin: 0
   },
   propName: (props, theme) => ({
-    fontFamily: theme.fontFamily_monospace
+    fontFamily: theme.fontFamily_monospace,
+    fontSize: '1.2rem'
   }),
   propRequired: (props, theme) => ({
     color: theme.color_gray,

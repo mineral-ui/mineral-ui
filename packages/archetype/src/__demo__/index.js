@@ -20,7 +20,10 @@ import examples from './examples';
 const doc = require('!!react-docgen-loader!../Archetype.js');
 
 export default {
+  behavior: 'behavior dummy text for the archetype component',
+  design: 'design theory about the archetype component',
   doc,
   examples,
+  howToUse: 'how to install the archetype component',
   title: 'Archetype'
 };

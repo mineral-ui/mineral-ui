@@ -20,7 +20,10 @@ import examples from './examples';
 const doc = require('!!react-docgen-loader!../Hello.js');
 
 export default {
+  behavior: 'behavior dummy text for the hello component',
+  design: 'Lofty design theory about hello',
   doc,
   examples,
+  howToUse: 'how to install the hello component',
   title: 'Hello'
 };

@@ -20,7 +20,10 @@ import examples from './examples';
 const doc = require('!!react-docgen-loader!../HelloWorld.js');
 
 export default {
+  behavior: 'behavior dummy text for the HelloWorld component',
+  design: 'Lofty design theory about the helloworld',
   doc,
   examples,
+  howToUse: 'how to install the HelloWorld component',
   title: 'HelloWorld'
 };
