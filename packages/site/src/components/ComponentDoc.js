@@ -30,13 +30,13 @@ type Example = {
 };
 
 type Props = {
+  behavior: MnrlReactNode,
   className?: string,
+  design: MnrlReactNode,
   doc: Object,
   examples?: Array<Example>,
-  slug: string,
-  behavior: MnrlReactNode,
-  design: MnrlReactNode,
   howToUse: string,
+  slug: string,
   title: string
 };
 
