@@ -19,11 +19,8 @@ import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../HelloWorld.js');
 
-export default [
-  {
-    doc,
-    examples,
-    slug: 'hello-world',
-    title: 'HelloWorld'
-  }
-];
+export default {
+  doc,
+  examples,
+  title: 'HelloWorld'
+};
