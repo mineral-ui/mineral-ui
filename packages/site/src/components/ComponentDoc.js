@@ -34,6 +34,9 @@ type Props = {
   doc: Object,
   examples?: Array<Example>,
   slug: string,
+  behavior: MnrlReactNode,
+  design: MnrlReactNode,
+  howToUse: string,
   title: string
 };
 
@@ -62,17 +65,35 @@ const styles = {
     lineHeight: '1.5',
     margin: '0'
   }),
-  heading: (props, theme) => ({
-    margin: `0 0 ${theme.measurement_c}`,
+  h2: (props, theme) => ({
+    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
     fontSize: theme.font_size_c
-  })
+  }),
+  h3: (props, theme) => ({
+    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`
+  }),
+  h4: () => ({}),
+  subnav: (props, theme) => ({
+    borderBottom: `1px solid ${theme.color_gray}`,
+    marginBottom: '2rem'
+  }),
+  navElement: {
+    display: 'inline-block',
+    marginRight: '1.5rem',
+    paddingBottom: '0.5rem',
+    borderBottom: '3px solid transparent',
+    cursor: 'pointer'
+  }
 };
 
 const Root = createStyledComponent('section', styles.componentDoc);
 const Header = createStyledComponent('header', styles.header);
 const Title = createStyledComponent('h1', styles.title);
 const Graf = createStyledComponent('p', styles.graf);
-const Heading = createStyledComponent('h2', styles.heading);
+const H2 = createStyledComponent('h2', styles.h2);
+const H3 = createStyledComponent('h3', styles.h3);
+const SubNav = createStyledComponent('nav', styles.subnav);
+const NavElement = createStyledComponent(Link, styles.navElement);
 
 function GithubIcon() {
   return (
@@ -92,9 +113,12 @@ function GithubIcon() {
 }
 
 export default function ComponentDoc({
+  behavior,
   className,
+  design,
   doc,
   examples,
+  howToUse,
   slug,
   title
 }: Props) {
@@ -114,7 +138,29 @@ export default function ComponentDoc({
         </Link>
         {description}
       </Header>
-      {examples && renderExamples(examples, slug, propDoc)}
+      <SubNav>
+        <NavElement href="#development">Development</NavElement>
+        <NavElement href="#design">Design</NavElement>
+        <NavElement href="#how-to-use">How to Use</NavElement>
+        <NavElement
+          href={`https://github.com/mineral-ui/mineral-ui/blob/master/packages/${slug}/CHANGELOG.md`}>
+          Changelog
+        </NavElement>
+      </SubNav>
+      <div>
+        <H2 id="development">Development</H2>
+        <div>
+          <H3>Behavior</H3>
+          <p>{behavior}</p>
+          <H3>Props</H3>
+          <p>{"we'll move the prop table here"}</p>
+          {examples && renderExamples(examples, slug, propDoc)}
+        </div>
+        <H2 id="design">Design</H2>
+        <p>{design}</p>
+        <H2 id="how-to-use">How to Use</H2>
+        <p>{howToUse}</p>
+      </div>
     </Root>
   );
 }
@@ -126,7 +172,7 @@ function renderExamples(
 ) {
   return (
     <div>
-      <Heading>{examples.length === 1 ? 'Example' : 'Examples'}</Heading>
+      <H3>{examples.length === 1 ? 'Example' : 'Examples'}</H3>
       {examples.map((example, idx) => {
         return (
           <ComponentDocExample

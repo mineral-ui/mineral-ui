@@ -18,10 +18,13 @@
 import examples from './examples';
 
 export default {
+  behavior: 'some cool behavior info',
+  design: 'Lofty design theory about the style-utils',
   doc: {
     description:
       'Sample implentations of various methods of styling and style overrides.'
   },
   examples,
+  howToUse: 'how to install the style-utils package',
   title: 'StyleUtils'
 };

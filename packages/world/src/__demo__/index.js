@@ -21,7 +21,10 @@ import examples from './examples';
 const doc = require('!!react-docgen-loader!../World.js');
 
 export default {
+  behavior: 'behavior dummy text for the world component',
+  design: 'Lofty design theory about the world',
   doc,
   examples,
+  howToUse: 'how to install the world',
   title: 'World'
 };

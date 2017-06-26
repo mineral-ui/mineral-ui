@@ -13,6 +13,8 @@ exports[`App renders correctly 1`] = `
       demos={
         Object {
           "hello": Object {
+            "behavior": "behavior dummy text for the hello component",
+            "design": "Lofty design theory about hello",
             "doc": Object {
               "default": Object {},
             },
@@ -23,9 +25,12 @@ exports[`App renders correctly 1`] = `
                 "title": "Default",
               },
             ],
+            "howToUse": "how to install the hello component",
             "title": "Hello",
           },
           "hello-world": Object {
+            "behavior": "behavior dummy text for the HelloWorld component",
+            "design": "Lofty design theory about the helloworld",
             "doc": Object {
               "default": Object {},
             },
@@ -36,9 +41,12 @@ exports[`App renders correctly 1`] = `
                 "title": "Default",
               },
             ],
+            "howToUse": "how to install the HelloWorld component",
             "title": "HelloWorld",
           },
           "style-utils": Object {
+            "behavior": "some cool behavior info",
+            "design": "Lofty design theory about the style-utils",
             "doc": Object {
               "description": "Sample implentations of various methods of styling and style overrides.",
             },
@@ -106,9 +114,12 @@ exports[`App renders correctly 1`] = `
                 "title": "Style override via createStyledComponent",
               },
             ],
+            "howToUse": "how to install the style-utils package",
             "title": "StyleUtils",
           },
           "world": Object {
+            "behavior": "behavior dummy text for the world component",
+            "design": "Lofty design theory about the world",
             "doc": Object {
               "default": Object {},
             },
@@ -125,6 +136,7 @@ exports[`App renders correctly 1`] = `
                 "title": "Custom Text",
               },
             ],
+            "howToUse": "how to install the world",
             "title": "World",
           },
         }
