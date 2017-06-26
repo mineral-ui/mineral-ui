@@ -20,4 +20,11 @@ import world from '../../../world/src/__demo__';
 import helloWorld from '../../../hello-world/src/__demo__';
 import styleUtils from '../../../style-utils/src/__demo__';
 
-export default [].concat(hello, world, helloWorld, styleUtils);
+const slugsToDemos: Object = {
+  hello,
+  world,
+  'hello-world': helloWorld,
+  'style-utils': styleUtils
+};
+
+export default slugsToDemos;

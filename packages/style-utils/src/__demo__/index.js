@@ -17,14 +17,12 @@
 /* @flow */
 import examples from './examples';
 
-export default [
-  {
-    doc: {
-      description:
-        'Sample implentations of various methods of styling and style overrides.'
-    },
-    examples,
-    slug: 'style-utils',
-    title: 'StyleUtils'
-  }
-];
+export default {
+  doc: {
+    description:
+      'Sample implentations of various methods of styling and style overrides.'
+  },
+  examples,
+  slug: 'style-utils',
+  title: 'StyleUtils'
+};

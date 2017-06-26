@@ -11,8 +11,8 @@ exports[`App renders correctly 1`] = `
   >
     <glamorous(Nav)
       demos={
-        Array [
-          Object {
+        Object {
+          "hello": Object {
             "doc": Object {
               "default": Object {},
             },
@@ -26,27 +26,7 @@ exports[`App renders correctly 1`] = `
             "slug": "hello",
             "title": "Hello",
           },
-          Object {
-            "doc": Object {
-              "default": Object {},
-            },
-            "examples": Array [
-              Object {
-                "component": [Function],
-                "title": "Default",
-              },
-              Object {
-                "component": [Function],
-                "propValues": Object {
-                  "text": "Felix",
-                },
-                "title": "Custom Text",
-              },
-            ],
-            "slug": "world",
-            "title": "World",
-          },
-          Object {
+          "hello-world": Object {
             "doc": Object {
               "default": Object {},
             },
@@ -60,7 +40,7 @@ exports[`App renders correctly 1`] = `
             "slug": "hello-world",
             "title": "HelloWorld",
           },
-          Object {
+          "style-utils": Object {
             "doc": Object {
               "description": "Sample implentations of various methods of styling and style overrides.",
             },
@@ -131,7 +111,27 @@ exports[`App renders correctly 1`] = `
             "slug": "style-utils",
             "title": "StyleUtils",
           },
-        ]
+          "world": Object {
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "title": "Default",
+              },
+              Object {
+                "component": [Function],
+                "propValues": Object {
+                  "text": "Felix",
+                },
+                "title": "Custom Text",
+              },
+            ],
+            "slug": "world",
+            "title": "World",
+          },
+        }
       }
     />
   </ThemeProvider>
