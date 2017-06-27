@@ -20,6 +20,7 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 import ComponentDocExample from './ComponentDocExample';
 import Link from './Link';
 import styleReset from './styleReset';
+import PropTable from './PropTable';
 
 type Example = {
   component: MnrlReactComponent,
@@ -71,7 +72,6 @@ const styles = {
   h3: (props, theme) => ({
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`
   }),
-  h4: () => ({}),
   subnav: (props, theme) => ({
     borderBottom: `1px solid ${theme.color_gray}`,
     marginBottom: '2rem'
@@ -153,8 +153,7 @@ export default function ComponentDoc({
         <div>
           <H3>Behavior</H3>
           <p>{behavior}</p>
-          <H3>Props</H3>
-          <p>{"we'll move the prop table here"}</p>
+          {propDoc && renderPropDoc(propDoc)}
           {examples && renderExamples(examples, slug, propDoc)}
         </div>
         <H2 id="design">Design</H2>
@@ -183,4 +182,8 @@ function renderExamples(
       })}
     </div>
   );
+}
+
+function renderPropDoc(propDoc: Object) {
+  return [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />];
 }

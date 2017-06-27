@@ -18,6 +18,7 @@
 export default {
   backgroundColor: '#fff',
   color_gray: '#d8d8d8',
+  color_grayMedium: '#929496',
   color_grayLight: '#f6f6f6',
   color_interactive: '#53bbd4',
   color_text: '#333',

@@ -32,7 +32,10 @@ const styles = {
     padding: `${theme.measurement_b} 0`
   }),
   propColumnHeader: (props, theme) => ({
-    borderBottom: `2px solid ${theme.color_gray}`,
+    borderBottom: `3px solid ${theme.color_grayMedium}`,
+    color: theme.color_grayMedium,
+    fontWeight: 'bold',
+    paddingBottom: theme.measurement_b,
     textAlign: 'left'
   }),
   propP: {
@@ -50,7 +53,7 @@ const styles = {
     fontFamily: theme.fontFamily_monospace,
     padding: theme.measurement_a
   }),
-  propRow: (props, theme) => ({
+  tr: (props, theme) => ({
     borderBottom: `1px solid ${theme.color_gray}`
   }),
   propTable: {
@@ -78,15 +81,14 @@ const styles = {
 };
 
 const CodeValue = createStyledComponent('span', styles.codeValue);
-const PropTable = createStyledComponent('table', styles.propTable);
+const Table = createStyledComponent('table', styles.propTable);
 const PropColumnHeader = createStyledComponent('th', styles.propColumnHeader);
 const PropCell = createStyledComponent('td', styles.propCell);
 const PropName = createStyledComponent('span', styles.propName);
 const PropP = createStyledComponent('p', styles.propP);
 const PropRequired = createStyledComponent('span', styles.propRequired);
-const PropRow = createStyledComponent('tr', styles.propRow);
+const TR = createStyledComponent('tr', styles.tr);
 const PropType = createStyledComponent('span', styles.propType);
-const PropValue = createStyledComponent('textarea', styles.propValue);
 const Root = createStyledComponent('div', styles.root);
 
 function DefaultValue({
@@ -99,48 +101,59 @@ function DefaultValue({
   return required
     ? <PropRequired>required</PropRequired>
     : <CodeValue>
-        {undefined === defaultValue
-          ? 'undefined'
-          : JSON.stringify(defaultValue)}
+        {undefined === defaultValue ? 'undefined' : defaultValue}
       </CodeValue>;
 }
 
-type OnPropChange = (propDescription: Object, newValue: any) => void;
+function getDefaultValue(propDescription: Object): any {
+  const { defaultValue: { value } = {} } = propDescription;
+  return value;
+}
 
-type DocProps = {
+function getFlowType(propDescription: Object): string {
+  const { flowType } = propDescription;
+  const type = (flowType && flowType.name) || 'unknown';
+  if (type === 'union') {
+    return `one of: ${flowType.raw}`;
+  }
+
+  return type;
+}
+
+function getPropTableRows(propDoc) {
+  return Object.keys(propDoc).sort().map(name => {
+    const propDescription = propDoc[name];
+
+    return (
+      <PropTableRow
+        key={name}
+        defaultValue={getDefaultValue(propDescription)}
+        description={propDescription.description}
+        name={name}
+        required={propDescription.required}
+        type={getFlowType(propDescription)}
+      />
+    );
+  });
+}
+
+type PropTableRowProps = {
   defaultValue?: any,
   description?: string,
-  exampleValue?: any,
   name: string,
-  onPropChange: OnPropChange,
   type: string,
   required?: boolean
 };
 
-function onPropValueChange(
-  e: Object,
-  propDescription: Object,
-  callback: OnPropChange
-) {
-  try {
-    const newValue = JSON.parse(e.target.value);
-    callback(propDescription, newValue);
-  } catch (e) {
-    console.warn('invalid JSON string');
-  }
-}
-
-function PropDoc({
+function PropTableRow({
   defaultValue,
   description,
-  exampleValue,
   name,
-  onPropChange,
   required,
   type
-}: DocProps) {
+}: PropTableRowProps) {
   return (
-    <PropRow>
+    <TR>
       <PropCell><PropName>{name}</PropName></PropCell>
       <PropCell>
         <DefaultValue defaultValue={defaultValue} required={required} />
@@ -148,64 +161,33 @@ function PropDoc({
       <PropCell>
         <PropP><PropType>{type}</PropType>&nbsp;{description}</PropP>
       </PropCell>
-      <PropCell style={{ height: '100%' }}>
-        <PropValue
-          defaultValue={JSON.stringify(exampleValue)}
-          onChange={onPropChange}
-        />
-      </PropCell>
-    </PropRow>
+    </TR>
   );
 }
 
 type Props = {
-  exampleProps: Array<Object>,
-  onPropChange: OnPropChange
+  propDoc: Object
 };
 
-export default function PropList({
-  exampleProps = [],
-  onPropChange = () => {}
-}: Props) {
-  if (exampleProps.length < 1) {
-    return null;
-  }
-
-  const propDocs = exampleProps.map(propDescription => {
-    const onExamplePropChange = e => {
-      return onPropValueChange(e, propDescription, onPropChange);
-    };
-
-    return (
-      <PropDoc
-        key={propDescription.name}
-        onPropChange={onExamplePropChange}
-        {...propDescription}
-      />
-    );
-  });
-
+export default function PropTable({ propDoc = {} }: Props) {
   return (
     <Root>
-      <PropTable>
+      <Table>
         <thead>
           <tr>
-            <PropColumnHeader key="prop" style={{ width: '200px' }}>
-              Prop
+            <PropColumnHeader key="prop" style={{ width: '10rem' }}>
+              Name
             </PropColumnHeader>
-            <PropColumnHeader key="default" style={{ width: '250px' }}>
+            <PropColumnHeader key="default" style={{ width: '10rem' }}>
               Default
             </PropColumnHeader>
             <PropColumnHeader key="description">Description</PropColumnHeader>
-            <PropColumnHeader key="value" style={{ width: '250px' }}>
-              JSON Value
-            </PropColumnHeader>
           </tr>
         </thead>
         <tbody>
-          {propDocs}
+          {getPropTableRows(propDoc)}
         </tbody>
-      </PropTable>
+      </Table>
     </Root>
   );
 }
