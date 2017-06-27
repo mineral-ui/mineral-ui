@@ -20,6 +20,7 @@ import Hello from '@mineral-ui/hello';
 import World from '@mineral-ui/world';
 
 type Props = {|
+  /** a classname for adding styles */
   className?: string
 |};
 

@@ -16,7 +16,6 @@
 
 /* @flow */
 import React, { Component } from 'react';
-// import PropList from './PropList';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
 
@@ -25,16 +24,15 @@ const styles = {
     ...styleReset(theme),
     '& + &': {
       borderTop: `1px solid ${theme.color_gray}`,
-      marginTop: theme.measurement_d,
-      paddingTop: theme.measurement_d
+      marginTop: theme.measurement_d
     }
   }),
   resizable: (props, theme) => ({
     border: `1px solid ${theme.color_gray}`,
     padding: theme.measurement_c
   }),
-  title: (props, theme) => ({
-    margin: `0 0 ${theme.measurement_b}`,
+  h4: (props, theme) => ({
+    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
     fontSize: theme.font_size_b
   }),
   graf: (props, theme) => ({
@@ -54,7 +52,7 @@ const styles = {
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const Resizable = createStyledComponent('div', styles.resizable);
-const Title = createStyledComponent('h2', styles.title);
+const H4 = createStyledComponent('h4', styles.h4);
 const Graf = createStyledComponent('p', styles.graf);
 
 function getDefaultValue(propDescription: Object): any {
@@ -120,60 +118,23 @@ type Props = {
 
 export default class ComponentDocExample extends Component {
   props: Props;
-  state: {
-    exampleProps: Array<Object>
-  };
-
-  constructor(props: Props, context: Object) {
-    super(props, context);
-
-    this.state = {
-      exampleProps: getExampleProps(props.propDoc, props.propValues)
-    };
-    // $FlowFixMe
-    this.onPropChange = this.onPropChange.bind(this);
-  }
-
-  componentWillReceiveProps(nextProps: Props) {
-    this.setState({
-      exampleProps: getExampleProps(nextProps.propDoc, nextProps.propValues)
-    });
-  }
 
   render() {
     const { className, component: Component, description, title } = this.props;
-    const componentProps = getComponentProps(this.state.exampleProps);
+    const componentProps = getComponentProps(
+      getExampleProps(this.props.propDoc, this.props.propValues)
+    );
 
     return (
       <Root className={className}>
-        <Title>{title}</Title>
+        <H4>{title}</H4>
         {typeof description === 'string'
           ? <Graf>{description}</Graf>
           : description}
         <Resizable>
           <Component {...componentProps} />
         </Resizable>
-        {/* <PropList
-          exampleProps={this.state.exampleProps}
-          onPropChange={this.onPropChange}
-        /> */}
       </Root>
     );
-  }
-
-  onPropChange(propDescription: Object, newValue: any) {
-    const propName = propDescription.name;
-    const exampleProps = this.state.exampleProps.map(propDescription => {
-      if (propDescription.name === propName) {
-        return {
-          ...propDescription,
-          exampleValue: newValue
-        };
-      }
-
-      return propDescription;
-    });
-
-    this.setState({ exampleProps });
   }
 }

@@ -19,7 +19,9 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
 type Props = {|
+  /** a classname for adding styles */
   className?: string,
+  /** how to say hello this time */
   text?: string
 |};
 
