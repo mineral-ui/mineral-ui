@@ -25,6 +25,5 @@ export default {
   design: 'Lofty design theory about the world',
   doc,
   examples,
-  howToUse: 'how to install the world',
   title: 'World'
 };

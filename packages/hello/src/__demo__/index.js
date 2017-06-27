@@ -24,6 +24,5 @@ export default {
   design: 'Lofty design theory about hello',
   doc,
   examples,
-  howToUse: 'how to install the hello component',
   title: 'Hello'
 };
