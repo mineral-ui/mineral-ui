@@ -25,6 +25,5 @@ export default {
       'Sample implentations of various methods of styling and style overrides.'
   },
   examples,
-  howToUse: 'how to install the style-utils package',
   title: 'StyleUtils'
 };

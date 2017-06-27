@@ -24,6 +24,5 @@ export default {
   design: 'design theory about the archetype component',
   doc,
   examples,
-  howToUse: 'how to install the archetype component',
   title: 'Archetype'
 };

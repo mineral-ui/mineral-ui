@@ -24,6 +24,5 @@ export default {
   design: 'Lofty design theory about the helloworld',
   doc,
   examples,
-  howToUse: 'how to install the HelloWorld component',
   title: 'HelloWorld'
 };

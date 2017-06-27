@@ -35,7 +35,6 @@ type Props = {
   design: MnrlReactNode,
   doc: Object,
   examples?: Array<Example>,
-  howToUse: string,
   slug: string,
   title: string
 };
@@ -118,7 +117,6 @@ export default function ComponentDoc({
   design,
   doc,
   examples,
-  howToUse,
   slug,
   title
 }: Props) {
@@ -141,7 +139,10 @@ export default function ComponentDoc({
       <SubNav>
         <NavElement href="#development">Development</NavElement>
         <NavElement href="#design">Design</NavElement>
-        <NavElement href="#how-to-use">How to Use</NavElement>
+        <NavElement
+          href={`https://github.com/mineral-ui/mineral-ui/blob/master/packages/${slug}/README.md#installation`}>
+          How to Use
+        </NavElement>
         <NavElement
           href={`https://github.com/mineral-ui/mineral-ui/blob/master/packages/${slug}/CHANGELOG.md`}>
           Changelog
@@ -158,8 +159,6 @@ export default function ComponentDoc({
         </div>
         <H2 id="design">Design</H2>
         <p>{design}</p>
-        <H2 id="how-to-use">How to Use</H2>
-        <p>{howToUse}</p>
       </div>
     </Root>
   );
