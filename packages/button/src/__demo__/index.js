@@ -24,5 +24,6 @@ export default {
   design: 'Lofty design theory about Button',
   doc,
   examples,
+  slug: 'button',
   title: 'Button'
 };

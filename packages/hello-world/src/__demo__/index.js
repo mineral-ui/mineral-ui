@@ -24,5 +24,6 @@ export default {
   design: 'Lofty design theory about the helloworld',
   doc,
   examples,
+  slug: 'hello-world',
   title: 'HelloWorld'
 };
