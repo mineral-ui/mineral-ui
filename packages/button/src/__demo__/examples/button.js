@@ -29,5 +29,6 @@ function Example() {
 export default {
   title: 'Button',
   component: Example,
+  description: 'Regular button.',
   source: `<Button>Do Something</Button>`
 };

@@ -29,5 +29,6 @@ function Example() {
 export default {
   title: 'Minimal',
   component: Example,
+  description: 'Use for less-important actions.',
   source: `<Button minimal>Do Something</Button>`
 };
