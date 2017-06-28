@@ -20,53 +20,51 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 const styles = {
   codeValue: (props, theme) => ({
-    color: theme.color_text,
-    fontSize: '1.2rem',
-    fontFamily: theme.fontFamily_monospace
+    fontFamily: theme.fontFamily_monospace,
+    fontSize: '1.2em'
   }),
   heading: (props, theme) => ({
-    margin: `0 0 ${theme.measurement_c}`,
-    fontSize: theme.font_size_c
+    margin: `0 0 ${theme.measurement_c}`
   }),
   propCell: (props, theme) => ({
-    padding: `${theme.measurement_b} 0`
+    padding: `${theme.measurement_c} 0`,
+    verticalAlign: 'top'
   }),
   propColumnHeader: (props, theme) => ({
-    borderBottom: `3px solid ${theme.color_grayMedium}`,
-    color: theme.color_grayMedium,
-    fontWeight: 'bold',
+    borderBottom: `3px solid ${theme.color_gray_60}`,
+    color: theme.color_gray_60,
+    fontWeight: theme.fontWeight_bold,
     paddingBottom: theme.measurement_b,
-    textAlign: 'left'
+    textAlign: 'left',
+    width: props.width && `${props.width}rem`
   }),
   propP: {
     margin: 0
   },
   propName: (props, theme) => ({
-    fontFamily: theme.fontFamily_monospace,
-    fontSize: '1.2rem'
+    fontWeight: theme.fontWeight_semiBold
   }),
   propRequired: (props, theme) => ({
-    color: theme.color_gray,
-    display: 'inline-block',
     backgroundColor: theme.backgroundColor_danger,
     borderRadius: '3px',
+    color: theme.color_gray,
+    display: 'inline-block',
     fontFamily: theme.fontFamily_monospace,
     padding: theme.measurement_a
   }),
   tr: (props, theme) => ({
     borderBottom: `1px solid ${theme.color_gray}`
   }),
-  propTable: {
+  propTable: (props, theme) => ({
     borderCollapse: 'collapse',
-    borserSpacing: 0,
+    borderSpacing: 0,
+    fontSize: '0.9rem',
     width: '100%'
-  },
+  }),
   propType: (props, theme) => ({
-    display: 'inline-block',
-    backgroundColor: theme.color_gray,
-    borderRadius: '3px',
+    color: theme.color_theme_90,
     fontFamily: theme.fontFamily_monospace,
-    padding: theme.measurement_a
+    fontSize: '1.2em'
   }),
   propValue: (props, theme) => ({
     border: `1px solid ${theme.color_gray}`,
@@ -81,14 +79,14 @@ const styles = {
 };
 
 const CodeValue = createStyledComponent('span', styles.codeValue);
-const Table = createStyledComponent('table', styles.propTable);
-const PropColumnHeader = createStyledComponent('th', styles.propColumnHeader);
 const PropCell = createStyledComponent('td', styles.propCell);
+const PropColumnHeader = createStyledComponent('th', styles.propColumnHeader);
 const PropName = createStyledComponent('span', styles.propName);
 const PropP = createStyledComponent('p', styles.propP);
 const PropRequired = createStyledComponent('span', styles.propRequired);
-const TR = createStyledComponent('tr', styles.tr);
 const PropType = createStyledComponent('span', styles.propType);
+const Table = createStyledComponent('table', styles.propTable);
+const TR = createStyledComponent('tr', styles.tr);
 const Root = createStyledComponent('div', styles.root);
 
 function DefaultValue({
@@ -100,9 +98,7 @@ function DefaultValue({
 }) {
   return required
     ? <PropRequired>required</PropRequired>
-    : <CodeValue>
-        {undefined === defaultValue ? 'undefined' : defaultValue}
-      </CodeValue>;
+    : <CodeValue>{defaultValue}</CodeValue>;
 }
 
 function getDefaultValue(propDescription: Object): any {
@@ -113,8 +109,10 @@ function getDefaultValue(propDescription: Object): any {
 function getFlowType(propDescription: Object): string {
   const { flowType } = propDescription;
   const type = (flowType && flowType.name) || 'unknown';
-  if (type === 'union') {
-    return `one of: ${flowType.raw}`;
+  if (type === 'signature') {
+    return flowType.raw;
+  } else if (type === 'union') {
+    return flowType.raw.split(' | ').join(', ');
   }
 
   return type;
@@ -155,11 +153,12 @@ function PropTableRow({
   return (
     <TR>
       <PropCell><PropName>{name}</PropName></PropCell>
+      <PropCell><PropType>{type}</PropType></PropCell>
       <PropCell>
         <DefaultValue defaultValue={defaultValue} required={required} />
       </PropCell>
       <PropCell>
-        <PropP><PropType>{type}</PropType>&nbsp;{description}</PropP>
+        <PropP>{description}</PropP>
       </PropCell>
     </TR>
   );
@@ -175,10 +174,11 @@ export default function PropTable({ propDoc = {} }: Props) {
       <Table>
         <thead>
           <tr>
-            <PropColumnHeader key="prop" style={{ width: '10rem' }}>
+            <PropColumnHeader key="prop" width={10}>
               Name
             </PropColumnHeader>
-            <PropColumnHeader key="default" style={{ width: '10rem' }}>
+            <PropColumnHeader key="type" width={15}>Type</PropColumnHeader>
+            <PropColumnHeader key="default" width={10}>
               Default
             </PropColumnHeader>
             <PropColumnHeader key="description">Description</PropColumnHeader>

@@ -33,11 +33,11 @@ const styles = {
   }),
   h4: (props, theme) => ({
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
-    fontSize: theme.font_size_b
+    fontSize: theme.fontSize_h4
   }),
   graf: (props, theme) => ({
     lineHeight: '1.5',
-    margin: `0 0 ${theme.measurement_b}`
+    margin: `0 0 ${theme.measurement_c}`
   }),
   code: (props, theme) => ({
     backgroundColor: theme.color_grayLight,
