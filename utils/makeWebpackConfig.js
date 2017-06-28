@@ -106,7 +106,9 @@ function getDevServer({ packagePath }) {
       compress: true,
       disableHostCheck: true,
       host: '0.0.0.0',
-      historyApiFallback: true
+      historyApiFallback: {
+        index: '/404.html'
+      }
     };
   }
 
