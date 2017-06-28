@@ -21,7 +21,7 @@
     "pack-ls": "lerna run pack-ls",
     "postbuild": "npm run flow:restart",
     "prebuild": "npm run clean && npm run bootstrap",
-    "predeploy": "npm run prerelease",
+    "predeploy:site": "npm run prerelease",
     "prerelease": "npm run build && npm run test",
     "release": "lerna publish --message='chore(publish): Publish'",
     "release:semantic": "npm run release -- --conventional-commits && npm run deploy:site",
