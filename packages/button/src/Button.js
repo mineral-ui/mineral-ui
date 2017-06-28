@@ -19,14 +19,23 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
 type Props = {
+  /** Rendered content of the component */
   children?: MnrlReactNode,
+  /** Disables the button */
   disabled?: boolean,
+  /** Stretch Button to fill its container */
   fullWidth?: boolean,
+  /** Display a minimal button */
   minimal?: boolean,
-  onClick?: () => void,
+  /** Called with the click event */
+  onClick?: (event: Object) => void,
+  /** Display a primary button */
   primary?: boolean,
+  /** Available sizes */
   size?: 'small' | 'medium' | 'large',
+  /** Available types */
   type?: 'button' | 'submit',
+  /** Available variants */
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 

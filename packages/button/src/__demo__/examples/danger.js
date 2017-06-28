@@ -38,6 +38,7 @@ function Example() {
 export default {
   title: 'Danger',
   component: Example,
+  description: 'Use for destructive or potentially-dangerous actions.',
   source: `<div>
   <Button variant="danger">Regular</Button>
   <Button variant="danger" primary>Primary</Button>

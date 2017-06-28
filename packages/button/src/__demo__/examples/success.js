@@ -38,6 +38,7 @@ function Example() {
 export default {
   title: 'Success',
   component: Example,
+  description: 'Use for positive actions, like when creating something.',
   source: `<div>
   <Button variant="success">Regular</Button>
   <Button variant="success" primary>Primary</Button>

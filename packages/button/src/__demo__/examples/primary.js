@@ -29,5 +29,6 @@ function Example() {
 export default {
   title: 'Primary',
   component: Example,
+  description: 'Use once per page, for the primary action.',
   source: `<Button primary>Do Something</Button>`
 };
