@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.3.1...@mineral-ui/site@0.3.2) (2017-06-28)
+
+
+### Bug Fixes
+
+* **site:** Add support for site routing on gh-pages ([7d127ac](https://github.com/mineral-ui/mineral-ui/commit/7d127ac))
+* **site:** single component demo routing ([1a8a83d](https://github.com/mineral-ui/mineral-ui/commit/1a8a83d))
+
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.3.0...@mineral-ui/site@0.3.1) (2017-06-28)
 

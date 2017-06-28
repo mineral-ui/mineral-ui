@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/button@0.1.1...@mineral-ui/button@0.1.2) (2017-06-28)
+
+
+### Bug Fixes
+
+* **site:** single component demo routing ([1a8a83d](https://github.com/mineral-ui/mineral-ui/commit/1a8a83d))
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/button@0.1.0...@mineral-ui/button@0.1.1) (2017-06-28)
 
