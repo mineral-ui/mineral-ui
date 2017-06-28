@@ -15,28 +15,27 @@
  */
 
 /* @flow */
-import button from './button';
-import fullWidth from './fullWidth';
-import danger from './danger';
-import disabled from './disabled';
-import minimal from './minimal';
-import primary from './primary';
-import sizes from './sizes';
-import states from './states';
-import success from './success';
-import truncation from './truncation';
-import warning from './warning';
+import React from 'react';
+import { createStyledComponent } from '@mineral-ui/component-utils';
+import Button from '../../Button';
 
-export default [
-  button,
-  primary,
-  minimal,
-  danger,
-  success,
-  warning,
-  sizes,
-  disabled,
-  fullWidth,
-  truncation,
-  states
-];
+const Root = createStyledComponent('div', {
+  '& > button': {
+    width: '6rem'
+  }
+});
+
+function Example() {
+  return (
+    <Root>
+      <Button>Do Something</Button>
+    </Root>
+  );
+}
+
+export default {
+  title: 'Truncation',
+  component: Example,
+  description: 'Long button text is truncated when necessary',
+  source: `<Button>Do Something</Button>`
+};
