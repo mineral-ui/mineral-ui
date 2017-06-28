@@ -51,26 +51,33 @@ const styles = {
     alignItems: 'center',
     display: 'flex',
     flexWrap: 'wrap',
+    marginBottom: theme.measurement_b,
     padding: `${theme.measurement_c} 0`
   }),
   title: (props, theme) => ({
-    fontSize: theme.font_size_d,
-    margin: `0 0 ${theme.measurement_b}`,
+    fontSize: theme.fontSize_h1,
+    fontWeight: theme.fontWeight_extraBold,
+    margin: `0 0 ${theme.measurement_c}`,
     marginRight: 'auto',
     paddingRight: '12rem'
   }),
   graf: (props, theme) => ({
-    fontSize: theme.font_size_c,
+    fontSize: theme.fontSize_h3,
     flex: '1 0 100%',
     lineHeight: '1.5',
     margin: '0'
   }),
   h2: (props, theme) => ({
-    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
-    fontSize: theme.font_size_c
+    margin: `${2 *
+      parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_c} 0`,
+    fontSize: theme.fontSize_h2,
+    fontWeight: theme.fontWeight_semiBold
   }),
   h3: (props, theme) => ({
-    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`
+    fontSize: theme.fontSize_h3,
+    fontWeight: theme.fontWeight_semiBold,
+    margin: `${2 *
+      parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_b} 0`
   }),
   subnav: (props, theme) => ({
     borderBottom: `1px solid ${theme.color_gray}`,
@@ -137,27 +144,19 @@ export default function ComponentDoc({
         {description}
       </Header>
       <SubNav>
-        <NavElement href="#development">Development</NavElement>
-        <NavElement href="#design">Design</NavElement>
-        <NavElement
-          href={`https://github.com/mineral-ui/mineral-ui/blob/master/packages/${slug}/README.md#installation`}>
-          How to Use
-        </NavElement>
-        <NavElement
-          href={`https://github.com/mineral-ui/mineral-ui/blob/master/packages/${slug}/CHANGELOG.md`}>
-          Changelog
-        </NavElement>
+        <NavElement href="#code">Code & Examples</NavElement>
+        <NavElement href="#usage">Usage Guidelines</NavElement>
       </SubNav>
       <div>
-        <H2 id="development">Development</H2>
+        <H2 id="code">Code & Examples</H2>
         <div>
-          <H3>Behavior</H3>
-          <p>{behavior}</p>
           {propDoc && renderPropDoc(propDoc)}
           {examples && renderExamples(examples, slug, propDoc)}
         </div>
-        <H2 id="design">Design</H2>
+        <H2 id="usage">Usage Guidelines</H2>
         <p>{design}</p>
+        <H3>Behavior</H3>
+        <p>{behavior}</p>
       </div>
     </Root>
   );
