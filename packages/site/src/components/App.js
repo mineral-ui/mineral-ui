@@ -61,10 +61,8 @@ const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
 export default function App({ className, demos }: Props) {
-  const slugs = Object.keys(demos);
-  if (slugs.length === 1) {
-    const slug = slugs[0];
-    return <ComponentDoc slug={slug} {...demos[slug]} />;
+  if (demos.slug) {
+    return <ComponentDoc {...demos} />;
   }
 
   return (
@@ -79,7 +77,7 @@ export default function App({ className, demos }: Props) {
             render={route => {
               const componentId = route.match.params.componentId;
               const selectedDemo = demos[componentId];
-              return <ComponentDoc slug={componentId} {...selectedDemo} />;
+              return <ComponentDoc {...selectedDemo} />;
             }}
           />
           <Redirect from="/" to="/components/hello" />

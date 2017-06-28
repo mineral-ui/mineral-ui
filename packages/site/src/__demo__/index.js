@@ -21,12 +21,13 @@ import world from '../../../world/src/__demo__';
 import helloWorld from '../../../hello-world/src/__demo__';
 import componentUtils from '../../../component-utils/src/__demo__';
 
-const slugsToDemos: Object = {
+export default [
   button,
   hello,
   world,
-  'hello-world': helloWorld,
-  'component-utils': componentUtils
-};
-
-export default slugsToDemos;
+  helloWorld,
+  componentUtils
+].reduce((acc, demo) => {
+  acc[demo.slug] = demo;
+  return acc;
+}, {});

@@ -25,5 +25,6 @@ export default {
   design: 'Lofty design theory about the world',
   doc,
   examples,
+  slug: 'world',
   title: 'World'
 };
