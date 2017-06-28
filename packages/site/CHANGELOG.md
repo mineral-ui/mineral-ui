@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.2.1...@mineral-ui/site@0.3.0) (2017-06-28)
+
+
+### Bug Fixes
+
+* **font:** add all the weights to the font download ([3dfb2b8](https://github.com/mineral-ui/mineral-ui/commit/3dfb2b8))
+* **site:** Add babel-polyfill to fix site rendering in IE11 ([b39a050](https://github.com/mineral-ui/mineral-ui/commit/b39a050))
+
+
+### Features
+
+* Implement CSS-in-JS styling solution using Glamorous (#39) ([ccc5c52](https://github.com/mineral-ui/mineral-ui/commit/ccc5c52)), closes [#35](https://github.com/mineral-ui/mineral-ui/issues/35)
+* **components:** Add button component and more ([fe280ef](https://github.com/mineral-ui/mineral-ui/commit/fe280ef))
+* **font:** install Open Sans ([362536b](https://github.com/mineral-ui/mineral-ui/commit/362536b)), closes [#55](https://github.com/mineral-ui/mineral-ui/issues/55)
+* **routing:** Added react-router to site. ([0d89d38](https://github.com/mineral-ui/mineral-ui/commit/0d89d38))
+* **site:** Add sub-nav to component doc page ([c1e8d48](https://github.com/mineral-ui/mineral-ui/commit/c1e8d48))
+* **site:** Added prop table to describe available props for example component. ([2cacb6e](https://github.com/mineral-ui/mineral-ui/commit/2cacb6e))
+* **site:** link to readme for how to install/use ([4c6d75e](https://github.com/mineral-ui/mineral-ui/commit/4c6d75e))
+* **site:** move proptypes tables to top level of component page ([454d06a](https://github.com/mineral-ui/mineral-ui/commit/454d06a))
+* **site:** Site deploy now includes public assets ([1929cfd](https://github.com/mineral-ui/mineral-ui/commit/1929cfd))
+* **theme:** Add proper structure to styleVariables and mineralTheme ([3e05858](https://github.com/mineral-ui/mineral-ui/commit/3e05858)), closes [#45](https://github.com/mineral-ui/mineral-ui/issues/45)
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.2.0...@mineral-ui/site@0.2.1) (2017-05-10)
 
