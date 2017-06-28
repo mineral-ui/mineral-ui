@@ -55,7 +55,7 @@ const styles = {
   tr: (props, theme) => ({
     borderBottom: `1px solid ${theme.color_gray}`
   }),
-  propTable: (props, theme) => ({
+  propTable: () => ({
     borderCollapse: 'collapse',
     borderSpacing: 0,
     fontSize: '0.9rem',

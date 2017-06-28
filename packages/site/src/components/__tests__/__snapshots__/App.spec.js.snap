@@ -21,21 +21,25 @@ exports[`App renders correctly 1`] = `
             "examples": Array [
               Object {
                 "component": [Function],
+                "description": "Regular button.",
                 "source": "<Button>Do Something</Button>",
                 "title": "Button",
               },
               Object {
                 "component": [Function],
+                "description": "Use once per page, for the primary action.",
                 "source": "<Button primary>Do Something</Button>",
                 "title": "Primary",
               },
               Object {
                 "component": [Function],
+                "description": "Use for less-important actions.",
                 "source": "<Button minimal>Do Something</Button>",
                 "title": "Minimal",
               },
               Object {
                 "component": [Function],
+                "description": "Use for destructive or potentially-dangerous actions.",
                 "source": "<div>
           <Button variant=\\"danger\\">Regular</Button>
           <Button variant=\\"danger\\" primary>Primary</Button>
@@ -45,6 +49,7 @@ exports[`App renders correctly 1`] = `
               },
               Object {
                 "component": [Function],
+                "description": "Use for positive actions, like when creating something.",
                 "source": "<div>
           <Button variant=\\"success\\">Regular</Button>
           <Button variant=\\"success\\" primary>Primary</Button>
@@ -54,6 +59,7 @@ exports[`App renders correctly 1`] = `
               },
               Object {
                 "component": [Function],
+                "description": "Use for potentially-destructive actions.",
                 "source": "<div>
           <Button variant=\\"warning\\">Regular</Button>
           <Button variant=\\"warning\\" primary>Primary</Button>
