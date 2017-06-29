@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import { ellipsis } from 'polished';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
 type Props = {
@@ -103,13 +104,7 @@ const buttonStyles = (props, baseTheme) => {
   }
 
   return {
-    // truncation styles
-    display: 'inline-block',
-    maxWidth: '100%',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-    wordWrap: 'normal',
+    ...ellipsis('100%'),
 
     backgroundColor: (() => {
       if (props.disabled && !props.minimal) {
