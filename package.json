@@ -9,7 +9,8 @@
     "clean": "find packages -name dist -or -name node_modules -type d | xargs rm -rf",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
-    "deploy:site": "npm run build && npm run test && gh-pages -d packages/site/dist -m 'chore(site): Deploy' -r https://github.com/mineral-ui/mineral-ui.github.io.git -b master",
+    "deploy:site": "npm run build && npm run test && npm run deploy:site:dist",
+    "deploy:site:dist": "gh-pages -d packages/site/dist -m 'chore(site): Deploy' -r https://github.com/mineral-ui/mineral-ui.github.io.git -b master",
     "eslint": "eslint .",
     "flow": "flow",
     "flow:restart": "npm run flow -- stop; npm run flow",
@@ -20,7 +21,7 @@
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
     "release:manual": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
-    "release:semantic": "npm run release:manual -- --conventional-commits && npm run deploy:site",
+    "release:semantic": "npm run release:manual -- --conventional-commits && npm run deploy:site:dist",
     "start": "lerna exec --scope @mineral-ui/site -- npm start",
     "test": "npm run lint && npm run flow && npm run jest -- --coverage"
   },
