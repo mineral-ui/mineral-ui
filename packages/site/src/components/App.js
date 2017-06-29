@@ -80,7 +80,7 @@ export default function App({ className, demos }: Props) {
               return <ComponentDoc {...selectedDemo} />;
             }}
           />
-          <Redirect from="/" to="/components/hello" />
+          <Redirect from="/" to="/components/button" />
         </Switch>
         <Footer />
       </Main>
