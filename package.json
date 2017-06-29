@@ -19,8 +19,8 @@
     "link-parent-bin": "link-parent-bin -c packages",
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
-    "release": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
-    "release:semantic": "npm run release -- --conventional-commits && npm run deploy:site",
+    "release:manual": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
+    "release:semantic": "npm run release:manual -- --conventional-commits && npm run deploy:site",
     "start": "lerna exec --scope @mineral-ui/site -- npm start",
     "test": "npm run lint && npm run flow && npm run jest -- --coverage"
   },
