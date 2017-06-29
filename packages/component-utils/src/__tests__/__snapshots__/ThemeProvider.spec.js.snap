@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider Component theme var override 1`] = `
-.css-cwxhg0,
-[data-css-cwxhg0] {
+.css-2y20ac,
+[data-css-2y20ac] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -47,11 +47,11 @@ exports[`ThemeProvider Component theme var override 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -96,15 +96,16 @@ exports[`ThemeProvider Component theme var override 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -116,15 +117,15 @@ exports[`ThemeProvider Component theme var override 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -152,7 +153,7 @@ exports[`ThemeProvider Component theme var override 1`] = `
             <Sample>
               <glamorous(span)>
                 <span
-                  className="css-cwxhg0"
+                  className="css-2y20ac"
                 >
                   Sample
                 </span>
@@ -167,12 +168,12 @@ exports[`ThemeProvider Component theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Default 1`] = `
-.css-1cbno46,
-[data-css-1cbno46] {
+.css-101tzpo,
+[data-css-101tzpo] {
   background-color: lavender;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -212,11 +213,11 @@ exports[`ThemeProvider Default 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -261,15 +262,16 @@ exports[`ThemeProvider Default 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -281,15 +283,15 @@ exports[`ThemeProvider Default 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -302,7 +304,7 @@ exports[`ThemeProvider Default 1`] = `
       <Sample>
         <glamorous(span)>
           <span
-            className="css-1cbno46"
+            className="css-101tzpo"
           >
             Sample
           </span>
@@ -314,13 +316,13 @@ exports[`ThemeProvider Default 1`] = `
 `;
 
 exports[`ThemeProvider Global theme var override 1`] = `
-.css-cwxhg0,
-[data-css-cwxhg0] {
+.css-2y20ac,
+[data-css-2y20ac] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -360,11 +362,11 @@ exports[`ThemeProvider Global theme var override 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -409,15 +411,16 @@ exports[`ThemeProvider Global theme var override 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -429,15 +432,15 @@ exports[`ThemeProvider Global theme var override 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -465,7 +468,7 @@ exports[`ThemeProvider Global theme var override 1`] = `
             <Sample>
               <glamorous(span)>
                 <span
-                  className="css-cwxhg0"
+                  className="css-2y20ac"
                 >
                   Sample
                 </span>
@@ -480,13 +483,13 @@ exports[`ThemeProvider Global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = `
-.css-cwxhg0,
-[data-css-cwxhg0] {
+.css-2y20ac,
+[data-css-2y20ac] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -526,11 +529,11 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -575,15 +578,16 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -595,15 +599,15 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -651,11 +655,11 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
                 "borderColor_warning_active": "#7f5500",
                 "borderColor_warning_focus": "#7f5500",
                 "borderColor_warning_hover": "#cf8a00",
-                "borderRadius_1": "0.28125rem",
-                "borderRadius_2": "0.375rem",
-                "borderRadius_3": "0.5625rem",
-                "borderRadius_4": "0.75rem",
-                "borderRadius_5": "1.125rem",
+                "borderRadius_1": "0.5625em",
+                "borderRadius_2": "0.75em",
+                "borderRadius_3": "1.125em",
+                "borderRadius_4": "1.5em",
+                "borderRadius_5": "2.25em",
                 "color_caption": "#555a61",
                 "color_gray_10": "#f5f7fa",
                 "color_gray_100": "#171a1e",
@@ -700,15 +704,16 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
                 "fontFamily": "Open Sans",
                 "fontFamily_monospace": "monospace",
                 "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-                "fontSize_h1": "2.125rem",
-                "fontSize_h2": "1.75rem",
-                "fontSize_h3": "1.375rem",
-                "fontSize_h4": "1.125rem",
-                "fontSize_h5": "0.875rem",
-                "fontSize_h6": "0.875rem",
-                "fontSize_mouse": "0.6875rem",
-                "fontSize_prose": "1rem",
-                "fontSize_ui": "0.875rem",
+                "fontSize_base": "8px",
+                "fontSize_h1": "4.25em",
+                "fontSize_h2": "3.5em",
+                "fontSize_h3": "2.75em",
+                "fontSize_h4": "2.25em",
+                "fontSize_h5": "1.75em",
+                "fontSize_h6": "1.75em",
+                "fontSize_mouse": "1.375em",
+                "fontSize_prose": "2em",
+                "fontSize_ui": "1.75em",
                 "fontWeight_bold": 700,
                 "fontWeight_extraBold": 800,
                 "fontWeight_regular": 400,
@@ -720,15 +725,15 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
                 "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
                 "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
                 "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-                "size_large": "2.5rem",
-                "size_medium": "2rem",
-                "size_small": "1.5rem",
-                "spacing_double": "1rem",
-                "spacing_half": "0.25rem",
-                "spacing_oneAndAHalf": "0.75rem",
-                "spacing_quad": "2rem",
-                "spacing_quarter": "0.125rem",
-                "spacing_single": "0.5rem",
+                "size_large": "5em",
+                "size_medium": "4em",
+                "size_small": "3em",
+                "spacing_double": "2em",
+                "spacing_half": "0.5em",
+                "spacing_oneAndAHalf": "1.5em",
+                "spacing_quad": "4em",
+                "spacing_quarter": "0.25em",
+                "spacing_single": "1em",
                 "zIndex_100": 100,
                 "zIndex_1600": 1600,
                 "zIndex_200": 200,
@@ -754,7 +759,7 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
                 <Sample>
                   <glamorous(span)>
                     <span
-                      className="css-cwxhg0"
+                      className="css-2y20ac"
                     >
                       Sample
                     </span>
@@ -771,13 +776,13 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
 `;
 
 exports[`ThemeProvider Nested global theme var override 1`] = `
-.css-cwxhg0,
-[data-css-cwxhg0] {
+.css-2y20ac,
+[data-css-2y20ac] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -817,11 +822,11 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -866,15 +871,16 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -886,15 +892,15 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -936,7 +942,7 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
                 <Sample>
                   <glamorous(span)>
                     <span
-                      className="css-cwxhg0"
+                      className="css-2y20ac"
                     >
                       Sample
                     </span>
@@ -953,13 +959,13 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Shallow merged global theme var override 1`] = `
-.css-cwxhg0,
-[data-css-cwxhg0] {
+.css-2y20ac,
+[data-css-2y20ac] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -999,11 +1005,11 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -1048,15 +1054,16 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -1068,15 +1075,15 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -1118,7 +1125,7 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
                 <Sample>
                   <glamorous(span)>
                     <span
-                      className="css-cwxhg0"
+                      className="css-2y20ac"
                     >
                       Sample
                     </span>
@@ -1135,19 +1142,19 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Style override via createStyledComponent 1`] = `
-.css-1qstkm2,
-[data-css-1qstkm2] {
+.css-zh4jpr,
+[data-css-zh4jpr] {
   outline: 3px dashed mediumvioletred;
-  font-size: 2.125rem;
+  font-size: 4.25em;
 }
 
-.css-xey9dk,
-[data-css-xey9dk] {
+.css-1gfyggc,
+[data-css-1gfyggc] {
   background-color: lavender;
   display: inline-block;
   outline: 3px dashed mediumvioletred;
-  padding: 0.5rem;
-  font-size: 2.125rem;
+  padding: 1em;
+  font-size: 4.25em;
 }
 
 <ThemeProvider>
@@ -1187,11 +1194,11 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -1236,15 +1243,16 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -1256,15 +1264,15 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -1277,13 +1285,13 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
       <div>
         <glamorous(Sample)>
           <Sample
-            className="css-1qstkm2"
+            className="css-zh4jpr"
           >
             <glamorous(span)
-              className="css-1qstkm2"
+              className="css-zh4jpr"
             >
               <span
-                className="css-xey9dk"
+                className="css-1gfyggc"
               >
                 Sample
               </span>
@@ -1297,12 +1305,12 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
 `;
 
 exports[`ThemeProvider renders correctly with default theme 1`] = `
-.css-1cbno46,
-[data-css-1cbno46] {
+.css-101tzpo,
+[data-css-101tzpo] {
   background-color: lavender;
   display: inline-block;
   outline: 1px solid #b5b8bd;
-  padding: 0.5rem;
+  padding: 1em;
 }
 
 <ThemeProvider>
@@ -1342,11 +1350,11 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
         "borderColor_warning_active": "#7f5500",
         "borderColor_warning_focus": "#7f5500",
         "borderColor_warning_hover": "#cf8a00",
-        "borderRadius_1": "0.28125rem",
-        "borderRadius_2": "0.375rem",
-        "borderRadius_3": "0.5625rem",
-        "borderRadius_4": "0.75rem",
-        "borderRadius_5": "1.125rem",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
         "color_caption": "#555a61",
         "color_gray_10": "#f5f7fa",
         "color_gray_100": "#171a1e",
@@ -1391,15 +1399,16 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
         "fontFamily": "Open Sans",
         "fontFamily_monospace": "monospace",
         "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_h1": "2.125rem",
-        "fontSize_h2": "1.75rem",
-        "fontSize_h3": "1.375rem",
-        "fontSize_h4": "1.125rem",
-        "fontSize_h5": "0.875rem",
-        "fontSize_h6": "0.875rem",
-        "fontSize_mouse": "0.6875rem",
-        "fontSize_prose": "1rem",
-        "fontSize_ui": "0.875rem",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
         "fontWeight_bold": 700,
         "fontWeight_extraBold": 800,
         "fontWeight_regular": 400,
@@ -1411,15 +1420,15 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
         "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
         "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
         "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-        "size_large": "2.5rem",
-        "size_medium": "2rem",
-        "size_small": "1.5rem",
-        "spacing_double": "1rem",
-        "spacing_half": "0.25rem",
-        "spacing_oneAndAHalf": "0.75rem",
-        "spacing_quad": "2rem",
-        "spacing_quarter": "0.125rem",
-        "spacing_single": "0.5rem",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
         "zIndex_100": 100,
         "zIndex_1600": 1600,
         "zIndex_200": 200,
@@ -1431,7 +1440,7 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
     <Sample>
       <glamorous(span)>
         <span
-          className="css-1cbno46"
+          className="css-101tzpo"
         >
           Sample
         </span>

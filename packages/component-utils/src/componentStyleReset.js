@@ -16,9 +16,9 @@
 
 /* @flow */
 export default (theme: { [string]: string } = {}) => ({
-  all: 'initial',
   boxSizing: 'border-box',
   fontFamily: `${theme.fontFamily}, ${theme.fontFamily_system}`,
+  fontSize: theme.fontSize_base,
   lineHeight: theme.lineHeight,
   outline: 0,
   '& *,& *::before,& *::after': {
