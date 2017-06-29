@@ -40,45 +40,47 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
+const buttonTheme = (props, baseTheme) => ({
+  Button_backgroundColor: baseTheme.color_gray_10,
+  Button_backgroundColor_active: baseTheme.color_theme_10,
+  Button_backgroundColor_focus: baseTheme.color_gray_10,
+  Button_backgroundColor_hover: baseTheme.color_gray_20,
+  Button_backgroundColor_minimal_active: baseTheme.color_theme_10,
+  Button_backgroundColor_minimal_hover: baseTheme.color_gray_20,
+  Button_backgroundColor_primary: baseTheme.color_theme_50,
+  Button_backgroundColor_primary_active: baseTheme.color_theme_30,
+  Button_backgroundColor_primary_focus: baseTheme.color_theme_50,
+  Button_backgroundColor_primary_hover: baseTheme.color_theme_40,
+  Button_backgroundImage_primary_active: 'none',
+  Button_backgroundImage_primary_hover: `radial-gradient(circle, ${baseTheme.color_theme_40} 0%, ${baseTheme.color_theme_50} 100%)`,
+  Button_borderColor: baseTheme.borderColor,
+  Button_borderColor_active: baseTheme.borderColor_active,
+  Button_borderColor_focus: baseTheme.borderColor_focus,
+  Button_borderColor_hover: baseTheme.borderColor,
+  Button_borderColor_primary: 'transparent',
+  Button_borderColor_primary_active: 'transparent',
+  Button_borderColor_primary_hover: 'transparent',
+  Button_borderColor_primary_focus: baseTheme.color_theme_100,
+  Button_borderRadius: baseTheme.borderRadius_1,
+  Button_borderWidth: '1px',
+  Button_boxShadow: baseTheme.shadow_1,
+  Button_boxShadow_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
+  Button_boxShadow_minimal_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
+  Button_boxShadow_primary_focus: `0 0 0 1px ${baseTheme.color_theme_100}, rgba(0,0,0,0.25) 0 2px 2px`,
+  Button_color_text: baseTheme.color_gray_80,
+  Button_color_text_minimal: baseTheme.color_link,
+  Button_color_text_primary: baseTheme.color_text_onprimary,
+  Button_fontSize: baseTheme.fontSize_ui,
+  Button_fontSize_small: '1.5em',
+  Button_fontWeight: baseTheme.fontWeight_bold,
+  Button_padding: baseTheme.spacing_single,
+  Button_padding_large: baseTheme.spacing_double,
+  [`Button_size_${props.size}`]: baseTheme[`size_${props.size}`],
+  ...baseTheme
+});
+
 const buttonStyles = (props, baseTheme) => {
-  let theme = {
-    Button_backgroundColor: baseTheme.color_gray_10,
-    Button_backgroundColor_active: baseTheme.color_theme_10,
-    Button_backgroundColor_focus: baseTheme.color_gray_10,
-    Button_backgroundColor_hover: baseTheme.color_gray_20,
-    Button_backgroundColor_minimal_active: baseTheme.color_theme_10,
-    Button_backgroundColor_minimal_hover: baseTheme.color_gray_20,
-    Button_backgroundColor_primary: baseTheme.color_theme_50,
-    Button_backgroundColor_primary_active: baseTheme.color_theme_30,
-    Button_backgroundColor_primary_focus: baseTheme.color_theme_50,
-    Button_backgroundColor_primary_hover: baseTheme.color_theme_40,
-    Button_backgroundImage_primary_active: 'none',
-    Button_backgroundImage_primary_hover: `radial-gradient(circle, ${baseTheme.color_theme_40} 0%, ${baseTheme.color_theme_50} 100%)`,
-    Button_borderColor: baseTheme.borderColor,
-    Button_borderColor_active: baseTheme.borderColor_active,
-    Button_borderColor_focus: baseTheme.borderColor_focus,
-    Button_borderColor_hover: baseTheme.borderColor,
-    Button_borderColor_primary: 'transparent',
-    Button_borderColor_primary_active: 'transparent',
-    Button_borderColor_primary_hover: 'transparent',
-    Button_borderColor_primary_focus: baseTheme.color_theme_100,
-    Button_borderRadius: baseTheme.borderRadius_1,
-    Button_borderWidth: '1px',
-    Button_boxShadow: baseTheme.shadow_1,
-    Button_boxShadow_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
-    Button_boxShadow_minimal_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
-    Button_boxShadow_primary_focus: `0 0 0 1px ${baseTheme.color_theme_100}, rgba(0,0,0,0.25) 0 2px 2px`,
-    Button_color_text: baseTheme.color_gray_80,
-    Button_color_text_minimal: baseTheme.color_link,
-    Button_color_text_primary: baseTheme.color_text_onprimary,
-    Button_fontSize: baseTheme.fontSize_ui,
-    Button_fontSize_small: '0.75rem',
-    Button_fontWeight: baseTheme.fontWeight_bold,
-    Button_padding: baseTheme.spacing_single,
-    Button_padding_large: baseTheme.spacing_double,
-    [`Button_size_${props.size}`]: baseTheme[`size_${props.size}`],
-    ...baseTheme
-  };
+  let theme = buttonTheme(props, baseTheme);
 
   if (props.variant !== 'regular') {
     // prettier-ignore
@@ -104,8 +106,7 @@ const buttonStyles = (props, baseTheme) => {
   }
 
   return {
-    ...ellipsis('100%'),
-
+    alignItems: 'center',
     backgroundColor: (() => {
       if (props.disabled && !props.minimal) {
         return theme.color_gray_30;
@@ -148,19 +149,16 @@ const buttonStyles = (props, baseTheme) => {
       }
     })(),
     cursor: props.disabled ? 'default' : 'pointer',
-    fontSize: props.size === 'small'
-      ? theme.Button_fontSize_small
-      : theme.Button_fontSize,
+    display: 'inline-flex',
     fontWeight: theme.Button_fontWeight,
     height: theme[`Button_size_${props.size}`],
-    lineHeight: 1,
+    justifyContent: 'center',
     paddingLeft: props.size === 'large'
       ? theme.Button_padding_large
       : theme.Button_padding,
     paddingRight: props.size === 'large'
       ? theme.Button_padding_large
       : theme.Button_padding,
-    textAlign: 'center',
     width: props.fullWidth && '100%',
     '&:focus, &[data-simulate-focus]': {
       backgroundColor: (() => {
@@ -249,10 +247,22 @@ const buttonStyles = (props, baseTheme) => {
     '&::-moz-focus-inner': { border: 0 }
   };
 };
+const contentStyles = (props, baseTheme) => {
+  const theme = buttonTheme(props, baseTheme);
+
+  return {
+    ...ellipsis('100%'),
+
+    fontSize: props.size === 'small'
+      ? theme.Button_fontSize_small
+      : theme.Button_fontSize
+  };
+};
 
 const Root = createStyledComponent('button', buttonStyles, {
   includeStyleReset: true
 });
+const Content = createStyledComponent('span', contentStyles);
 
 /**
  * The Button component represents a clickable button.
@@ -271,5 +281,9 @@ export default function Button({
     ...restProps
   };
 
-  return <Root {...rootProps}>{children}</Root>;
+  return (
+    <Root {...rootProps}>
+      <Content size={size}>{children}</Content>
+    </Root>
+  );
 }

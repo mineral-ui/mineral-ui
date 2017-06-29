@@ -161,26 +161,29 @@ export const color = {
 };
 
 export default {
-  borderRadius_1: '0.28125rem',
-  borderRadius_2: '0.375rem',
-  borderRadius_3: '0.5625rem',
-  borderRadius_4: '0.75rem',
-  borderRadius_5: '1.125rem',
+  borderRadius_1: '0.5625em',
+  borderRadius_2: '0.75em',
+  borderRadius_3: '1.125em',
+  borderRadius_4: '1.5em',
+  borderRadius_5: '2.25em',
 
   fontFamily: 'Open Sans',
   fontFamily_system:
     '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   fontFamily_monospace: 'monospace',
 
-  fontSize_h1: '2.125rem',
-  fontSize_h2: '1.75rem',
-  fontSize_h3: '1.375rem',
-  fontSize_h4: '1.125rem',
-  fontSize_h5: '0.875rem',
-  fontSize_h6: '0.875rem',
-  fontSize_mouse: '0.6875rem',
-  fontSize_prose: '1rem',
-  fontSize_ui: '0.875rem',
+  // Components are built on an 8px grid
+  fontSize_base: '8px',
+
+  fontSize_h1: '4.25em',
+  fontSize_h2: '3.5em',
+  fontSize_h3: '2.75em',
+  fontSize_h4: '2.25em',
+  fontSize_h5: '1.75em',
+  fontSize_h6: '1.75em',
+  fontSize_mouse: '1.375em',
+  fontSize_prose: '2em',
+  fontSize_ui: '1.75em',
 
   fontWeight_regular: 400,
   fontWeight_semiBold: 600,
@@ -196,16 +199,16 @@ export default {
   shadow_4: 'rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px',
   shadow_5: 'rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px',
 
-  size_small: '1.5rem',
-  size_medium: '2rem',
-  size_large: '2.5rem',
+  size_small: '3em',
+  size_medium: '4em',
+  size_large: '5em',
 
-  spacing_quarter: '0.125rem',
-  spacing_half: '0.25rem',
-  spacing_single: '0.5rem',
-  spacing_oneAndAHalf: '0.75rem',
-  spacing_double: '1rem',
-  spacing_quad: '2rem',
+  spacing_quarter: '0.25em',
+  spacing_half: '0.5em',
+  spacing_single: '1em',
+  spacing_oneAndAHalf: '1.5em',
+  spacing_double: '2em',
+  spacing_quad: '4em',
 
   zIndex_100: 100,
   zIndex_200: 200,
