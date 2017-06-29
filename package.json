@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap && npm run link-parent-bin",
-    "build": "lerna run build",
+    "build": "npm run clean && npm run bootstrap && lerna run build && npm run flow:restart",
     "clean": "find packages -name dist -or -name node_modules -type d | xargs rm -rf",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
@@ -19,8 +19,6 @@
     "link-parent-bin": "link-parent-bin -c packages",
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
-    "postbuild": "npm run flow:restart",
-    "prebuild": "npm run clean && npm run bootstrap",
     "predeploy:site": "npm run prerelease",
     "prerelease": "npm run build && npm run test",
     "release": "lerna publish --message='chore(publish): Publish'",
