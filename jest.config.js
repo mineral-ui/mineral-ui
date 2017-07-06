@@ -20,6 +20,7 @@ module.exports = {
   coveragePathIgnorePatterns: [
     '/__demo__/',
     '/node_modules/',
+    '/packages/icon/src/lib',
     '/packages/site/'
   ],
   moduleNameMapper: {

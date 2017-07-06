@@ -20,13 +20,25 @@ import { mount } from 'enzyme';
 // $FlowFixMe
 import { ThemeProvider } from '@mineral-ui/component-utils';
 
+type Example = {
+  title: string,
+  component: MnrlReactNode,
+  propValues?: Object
+};
+type Examples = Array<Example>;
+type Options = {
+  exclude?: Array<string> // Example title
+};
+
 export default function testDemoExamples(
-  examples: Array<{
-    title: string,
-    component: MnrlReactNode,
-    propValues?: Object
-  }>
+  examples: Examples,
+  options: Options = {}
 ) {
+  if (options.exclude) {
+    const exclusions = options.exclude || [];
+    examples = examples.filter(example => !exclusions.includes(example.title));
+  }
+
   return examples.map(example => {
     it(example.title, () => {
       const props = example.propValues ? example.propValues : {};

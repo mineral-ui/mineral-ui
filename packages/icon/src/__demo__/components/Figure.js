@@ -15,21 +15,19 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+export default createStyledComponent(
+  'figure',
+  (props, theme) => ({
+    margin: 0,
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing_half,
+    width: '35em',
+    '&:focus': {
+      outline: '1px dotted currentColor'
+    }
+  }),
+  { displayName: 'Figure', includeStyleReset: true }
+);
