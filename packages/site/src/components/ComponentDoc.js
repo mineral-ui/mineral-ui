@@ -55,14 +55,14 @@ const styles = {
     padding: `${theme.measurement_c} 0`
   }),
   title: (props, theme) => ({
-    fontSize: theme.fontSize_h1,
+    fontSize: `${parseFloat(theme.fontSize_h1) / 2}em`,
     fontWeight: theme.fontWeight_extraBold,
     margin: `0 0 ${theme.measurement_c}`,
     marginRight: 'auto',
     paddingRight: '12rem'
   }),
   graf: (props, theme) => ({
-    fontSize: theme.fontSize_h3,
+    fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
     flex: '1 0 100%',
     lineHeight: '1.5',
     margin: '0'
@@ -70,11 +70,11 @@ const styles = {
   h2: (props, theme) => ({
     margin: `${2 *
       parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_c} 0`,
-    fontSize: theme.fontSize_h2,
+    fontSize: `${parseFloat(theme.fontSize_h2) / 2}em`,
     fontWeight: theme.fontWeight_semiBold
   }),
   h3: (props, theme) => ({
-    fontSize: theme.fontSize_h3,
+    fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
     fontWeight: theme.fontWeight_semiBold,
     margin: `${2 *
       parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_b} 0`
