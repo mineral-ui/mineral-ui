@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/hello-world@0.3.1...@mineral-ui/hello-world@0.3.2) (2017-07-06)
+
+
+### Bug Fixes
+
+* **Components:** Apply 8px comp. root fontSize with em sizing inside ([22a7cc6](https://github.com/mineral-ui/mineral-ui/commit/22a7cc6))
+
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/hello-world@0.3.0...@mineral-ui/hello-world@0.3.1) (2017-06-28)
 
