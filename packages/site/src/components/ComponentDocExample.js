@@ -33,7 +33,7 @@ const styles = {
   }),
   h4: (props, theme) => ({
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
-    fontSize: theme.fontSize_h4
+    fontSize: `${parseFloat(theme.fontSize_h4) / 2}em`
   }),
   graf: (props, theme) => ({
     lineHeight: '1.5',
