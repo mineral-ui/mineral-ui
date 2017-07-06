@@ -7,7 +7,7 @@ UMD_DIR="dist/umd"
 
 # es modules
 if [ "$TARGET" != 'site' ]; then
-  NODE_ENV=$NODE_ENV babel "$SRC_DIR" --out-dir "$ES_DIR" --ignore *.spec.js,__demo__ --source-maps --minified
+  NODE_ENV=$NODE_ENV babel "$SRC_DIR" --out-dir "$ES_DIR" --ignore *.spec.js,*.template.js,__demo__ --source-maps --minified
 fi
 
 # umd

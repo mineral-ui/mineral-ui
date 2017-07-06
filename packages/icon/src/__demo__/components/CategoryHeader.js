@@ -15,21 +15,21 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+export default createStyledComponent(
+  'h5',
+  (props, theme) => ({
+    borderTop: `1px solid ${theme.color_gray}`,
+    paddingTop: theme.spacing_oneAndAHalf,
+    fontSize: theme.font_size_b,
+    textTransform: 'capitalize',
+    margin: `${theme.spacing_oneAndAHalf} 0 ${theme.spacing_single}`,
+    '&:first-of-type': {
+      borderTop: 'none',
+      paddingTop: 0,
+      marginTop: theme.spacing_single
+    }
+  }),
+  { displayName: 'CategoryHeader', includeStyleReset: true }
+);

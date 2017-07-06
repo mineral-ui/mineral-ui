@@ -15,21 +15,25 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
+import React from 'react';
+import { shallow } from 'enzyme';
+import { IconHelp } from '../index';
+import examples from '../__demo__/examples';
+import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+function shallowIcon(props = {}) {
+  const iconProps = {
+    ...props
+  };
+  return shallow(<IconHelp {...iconProps} />);
+}
+
+describe('Icon', () => {
+  it('renders', () => {
+    const icon = shallowIcon();
+
+    expect(icon.exists()).toEqual(true);
+  });
+
+  testDemoExamples(examples, { exclude: ['Icons by Category'] });
+});

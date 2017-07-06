@@ -15,21 +15,29 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+import React from 'react';
+import Icon from '../Icon';
+
+type Props = {
+  size?: string | 'small' | 'medium' | 'large',
+  color?: string,
+  rtl?: boolean,
+  title?: string
+};
+
+/* eslint-disable prettier/prettier */
+export default function {{componentName}}(props: Props) {
+  const iconProps = {
+    rtl: {{rtl}},
+    ...props
+  };
+
+  return (
+    <Icon {...iconProps}>
+      <g>
+        {{{svgChildren}}}
+      </g>
+    </Icon>
+  );
+}

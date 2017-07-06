@@ -15,21 +15,21 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
+import React from 'react';
+import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+function Example() {
+  return (
+    <div>
+      <IconSentimentSatisfied title="smiley-face" />
+    </div>
+  );
+}
+
+export default {
+  title: 'Title',
+  component: Example,
+  description:
+    'Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).',
+  source: `<IconSentimentSatisfied title="smiley-face" />`
+};

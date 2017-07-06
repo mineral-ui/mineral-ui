@@ -15,21 +15,12 @@
  */
 
 /* @flow */
-import button from '../../../button/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import world from '../../../world/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
+import icon from './icon';
+import color from './color';
+import custom from './custom';
+import rtl from './rtl';
+import sizes from './sizes';
+import title from './title';
+import categories from './categories';
 
-export default [
-  button,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-].reduce((acc, demo) => {
-  acc[demo.slug] = demo;
-  return acc;
-}, {});
+export default [icon, color, sizes, title, rtl, custom, categories];
