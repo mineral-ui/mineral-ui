@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](/compare/@mineral-ui/button@0.1.4...@mineral-ui/button@1.0.0) (2017-07-07)
+
+
+### Bug Fixes
+
+* **button:** allow button to be imported the default way db34b52
+
+
+### BREAKING CHANGES
+
+* **button:** importing
+
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/button@0.1.3...@mineral-ui/button@0.1.4) (2017-07-06)
 
