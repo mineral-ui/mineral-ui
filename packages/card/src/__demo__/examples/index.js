@@ -15,24 +15,18 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import world from '../../../world/src/__demo__';
+import card from './card';
+import complexTitle from './complexTitle';
+import crazyOrder from './crazyOrder';
+import withActions from './withActions';
+import withSubtitle from './withSubtitle';
+import withImage from './withImage';
 
-const demos = flatten([
-  button,
+export default [
   card,
-  icon,
-  hello,
-  world,
-  helloWorld,
-  componentUtils
-]);
-
-export default createKeyMap(demos, 'slug');
+  complexTitle,
+  withSubtitle,
+  withActions,
+  withImage,
+  crazyOrder
+];
