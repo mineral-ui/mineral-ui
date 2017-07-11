@@ -1,12 +1,12 @@
 {
-  "name": "@mineral-ui/site",
-  "version": "0.5.0",
-  "description": "Site",
+  "name": "@mineral-ui/card",
+  "version": "0.0.0",
+  "description": "Card component",
   "license": "Apache-2.0",
-  "private": true,
-  "main": "dist/index.js",
+  "main": "dist/umd/index.js",
+  "module": "dist/es/index.js",
   "scripts": {
-    "build": "TARGET=site $npm_package_config_script_path/build.sh",
+    "build": "$npm_package_config_script_path/build.sh",
     "build:analyze": "$npm_package_config_script_path/build-analyze.sh",
     "clean": "$npm_package_config_script_path/clean.sh",
     "commit": "$npm_package_config_script_path/commit.sh",
@@ -15,31 +15,22 @@
     "jest": "$npm_package_config_script_path/jest.sh",
     "lint": "$npm_package_config_script_path/lint.sh",
     "pack-ls": "$npm_package_config_script_path/pack-ls.sh",
-    "start": "TARGET=site webpack-dev-server --progress",
+    "start": "DEMO_LIST_PATH=\"card\" $npm_package_config_script_path/start.sh",
     "test": "$npm_package_config_script_path/test.sh"
   },
   "devDependencies": {
     "@mineral-ui/button": "^1.1.0",
-    "@mineral-ui/card": "^0.0.0",
-    "@mineral-ui/component-utils": "^0.2.0",
-    "@mineral-ui/hello": "^0.4.0",
-    "@mineral-ui/hello-world": "^0.4.0",
-    "@mineral-ui/icon": "^0.1.0",
-    "@mineral-ui/world": "^0.4.0"
+    "@mineral-ui/component-utils": "^0.2.0"
   },
   "peerDependencies": {
-    "@mineral-ui/button": "^1.1.0",
-    "@mineral-ui/card": "^0.0.0",
     "@mineral-ui/component-utils": "^0.2.0",
-    "@mineral-ui/hello": "^0.4.0",
-    "@mineral-ui/hello-world": "^0.4.0",
-    "@mineral-ui/icon": "^0.1.0",
-    "@mineral-ui/world": "^0.4.0",
     "glamor": "^2.0.0",
     "glamorous": "^3.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "react-live": "1.7.0"
+    "react-dom": "^15.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "config": {
     "commitizen": {
