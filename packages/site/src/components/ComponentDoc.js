@@ -149,10 +149,8 @@ export default function ComponentDoc({
       </SubNav>
       <div>
         <H2 id="code">Code & Examples</H2>
-        <div>
-          {propDoc && renderPropDoc(propDoc)}
-          {examples && renderExamples(examples, slug, propDoc)}
-        </div>
+        {renderPropDoc(propDoc)}
+        {renderExamples(examples, slug, propDoc)}
         <H2 id="usage">Usage Guidelines</H2>
         <p>{design}</p>
         <H3>Behavior</H3>
@@ -168,9 +166,9 @@ function renderExamples(
   propDoc: Object
 ) {
   return (
-    <div>
-      <H3>{examples.length === 1 ? 'Example' : 'Examples'}</H3>
-      {examples.map((example, idx) => {
+    examples && [
+      <H3 key={0}>{examples.length === 1 ? 'Example' : 'Examples'}</H3>,
+      examples.map((example, idx) => {
         return (
           <ComponentDocExample
             key={`${slug}:${idx}`}
@@ -178,11 +176,13 @@ function renderExamples(
             {...example}
           />
         );
-      })}
-    </div>
+      })
+    ]
   );
 }
 
 function renderPropDoc(propDoc: Object) {
-  return [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />];
+  return (
+    propDoc && [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />]
+  );
 }
