@@ -24,5 +24,6 @@ export default {
   design: 'design theory about the archetype component',
   doc,
   examples,
+  slug: 'archetype',
   title: 'Archetype'
 };
