@@ -7,12 +7,12 @@ Our roadmap lays out our current and future work and how they connect to our goa
 
 -----
 
-### Increment 1: Build infrastructure and have HelloWorld component consumed by at least two products
+### Goal 1: Build infrastructure and have HelloWorld component consumed by at least two products
 
-- [Initial project infrastructure][1a] ![in progress][in-progress]
-- [Build partnerships][1b] ![in progress][in-progress]
+- [Initial project infrastructure][1a] ![done][done]
+- [Build partnerships][1b] ![done][done]
 - [HelloWorld component][1c] ![done][done]
-- [Public website MVP][1d] ![in progress][in-progress]
+- [Public website MVP][1d] ![done][done]
 - [Customers consume HelloWorld component][1e] ![done][done]
 
 [1a]: https://github.com/mineral-ui/mineral-ui/milestone/3
@@ -22,19 +22,22 @@ Our roadmap lays out our current and future work and how they connect to our goa
 [1e]: https://github.com/mineral-ui/mineral-ui/milestone/9
 
 
-### Increment 2: Develop and distribute core components
+### Goal 2: Develop and distribute core components
 
-- [Identify component strategy][2a] ![in progress][in-progress]
-- Research consuming products' component needs
-- Identify core components
-- Build core components
-- Expand site capabilities to better document components
-- Customers consume core component(s)
+- [Identify component strategy][2a] ![done][done]
+- [Research first consumer's component needs][2b] ![in progress][in-progress]
+- [Build core components][2c] ![in progress][in-progress]
+- [Public website v1][2d] ![in progress][in-progress]
+- [Validate core components with partnering consumers][2e] ![in progress][in-progress]
 
 [2a]: https://github.com/mineral-ui/mineral-ui/milestone/10
+[2b]: https://github.com/mineral-ui/mineral-ui/milestone/11
+[2c]: https://github.com/mineral-ui/mineral-ui/milestone/12
+[2d]: https://github.com/mineral-ui/mineral-ui/milestone/13
+[2e]: https://github.com/mineral-ui/mineral-ui/milestone/14
 
 
-### Increment 3: Develop and distribute additional components
+### Goal 3: Develop and distribute additional components
 
 - Work with partners to determine additional component needs
 - Build additional components
