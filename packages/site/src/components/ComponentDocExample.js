@@ -18,6 +18,13 @@
 import React, { Component } from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
+import {
+  LiveProvider,
+  LiveEditor,
+  LiveError,
+  LivePreview
+} from 'react-live';
+import Button from '@mineral-ui/button';
 
 const styles = {
   componentDocExample: (props, theme) => ({
@@ -26,10 +33,6 @@ const styles = {
       borderTop: `1px solid ${theme.color_gray}`,
       marginTop: theme.measurement_d
     }
-  }),
-  resizable: (props, theme) => ({
-    border: `1px solid ${theme.color_gray}`,
-    padding: theme.measurement_c
   }),
   h4: (props, theme) => ({
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
@@ -51,7 +54,6 @@ const styles = {
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
-const Resizable = createStyledComponent('div', styles.resizable);
 const H4 = createStyledComponent('h4', styles.h4);
 const Graf = createStyledComponent('p', styles.graf);
 
@@ -125,15 +127,20 @@ export default class ComponentDocExample extends Component {
       getExampleProps(this.props.propDoc, this.props.propValues)
     );
 
+    console.log(this.props.component, componentProps);
+
     return (
       <Root className={className}>
         <H4>{title}</H4>
         {typeof description === 'string'
           ? <Graf>{description}</Graf>
           : description}
-        <Resizable>
-          <Component {...componentProps} />
-        </Resizable>
+        <Component {...componentProps} />
+        <LiveProvider code="<Button>Hello World!</Button>" scope={{Button}}>
+          <LivePreview />
+          <LiveEditor />
+          <LiveError />
+        </LiveProvider>
       </Root>
     );
   }
