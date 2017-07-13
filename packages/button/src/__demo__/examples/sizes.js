@@ -25,22 +25,12 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Button size="small">Small</Button>
-      <Button>Medium</Button>
-      <Button size="large">Large</Button>
-    </Root>
-  );
-}
-
 export default {
   title: 'Sizes',
-  component: Example,
-  source: `<div>
+  scope: {Button, Root},
+  source: `<Root>
   <Button size="small">Small</Button>
   <Button>Medium</Button>
   <Button size="large">Large</Button>
-</div>`
+</Root>`
 };

@@ -24,7 +24,6 @@ import {
   LiveError,
   LivePreview
 } from 'react-live';
-import Button from '@mineral-ui/button';
 
 const styles = {
   componentDocExample: (props, theme) => ({
@@ -127,16 +126,13 @@ export default class ComponentDocExample extends Component {
       getExampleProps(this.props.propDoc, this.props.propValues)
     );
 
-    console.log(this.props.component, componentProps);
-
     return (
       <Root className={className}>
         <H4>{title}</H4>
         {typeof description === 'string'
           ? <Graf>{description}</Graf>
           : description}
-        <Component {...componentProps} />
-        <LiveProvider code="<Button>Hello World!</Button>" scope={{Button}}>
+        <LiveProvider code={this.props.source} scope={this.props.scope}>
           <LivePreview />
           <LiveEditor />
           <LiveError />

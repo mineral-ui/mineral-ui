@@ -18,17 +18,9 @@
 import React from 'react';
 import Button from '../../Button';
 
-function Example() {
-  return (
-    <div>
-      <Button minimal>Do Something</Button>
-    </div>
-  );
-}
-
 export default {
   title: 'Minimal',
-  component: Example,
   description: 'Use for less-important actions.',
+  scope: {Button},
   source: `<Button minimal>Do Something</Button>`
 };

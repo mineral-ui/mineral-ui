@@ -25,23 +25,13 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Button variant="warning">Regular</Button>
-      <Button variant="warning" primary>Primary</Button>
-      <Button variant="warning" minimal>Minimal</Button>
-    </Root>
-  );
-}
-
 export default {
   title: 'Warning',
-  component: Example,
   description: 'Use for potentially-destructive actions.',
-  source: `<div>
+  scope: {Button, Root},
+  source: `<Root>
   <Button variant="warning">Regular</Button>
   <Button variant="warning" primary>Primary</Button>
   <Button variant="warning" minimal>Minimal</Button>
-</div>`
+</Root>`
 };

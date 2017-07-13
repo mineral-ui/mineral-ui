@@ -25,22 +25,12 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Button disabled>Regular</Button>
-      <Button disabled primary>Primary</Button>
-      <Button disabled minimal>Minimal</Button>
-    </Root>
-  );
-}
-
 export default {
   title: 'Disabled',
-  component: Example,
-  source: `<div>
+  scope: {Button, Root},
+  source: `<Root>
   <Button disabled>Regular</Button>
   <Button disabled primary>Primary</Button>
   <Button disabled minimal>Minimal</Button>
-</div>`
+</Root>`
 };

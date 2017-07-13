@@ -18,17 +18,9 @@
 import React from 'react';
 import Button from '../../Button';
 
-function Example() {
-  return (
-    <div>
-      <Button primary>Do Something</Button>
-    </div>
-  );
-}
-
 export default {
   title: 'Primary',
-  component: Example,
   description: 'Use once per page, for the primary action.',
+  scope: {Button},
   source: `<Button primary>Do Something</Button>`
 };
