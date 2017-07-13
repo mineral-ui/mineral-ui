@@ -15,14 +15,10 @@
  */
 
 /* @flow */
-export default (theme: { [string]: string } = {}) => ({
-  boxSizing: 'border-box',
-  color: theme.color_text,
-  fontFamily: `${theme.fontFamily}, ${theme.fontFamily_system}`,
-  fontSize: theme.fontSize_base,
-  lineHeight: theme.lineHeight,
-  outline: 0,
-  '& *,& *::before,& *::after': {
-    boxSizing: 'inherit'
-  }
-});
+/**
+  * Helper to normalize a theme variable (defined in ems) against the applied
+  * fontSize (also defined in ems), so that the resulting value renders correctly
+  */
+export default function getNormalizedValue(value: string, base: string) {
+  return `${parseFloat(value) / parseFloat(base)}em`;
+}

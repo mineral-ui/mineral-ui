@@ -17,6 +17,7 @@
 /* @flow */
 export { default as createStyledComponent } from './createStyledComponent';
 export { default as createThemedComponent } from './createThemedComponent';
+export { default as getNormalizedValue } from './getNormalizedValue';
 export { default as ThemeProvider } from './ThemeProvider';
 
 export { default as mineralTheme } from './mineralTheme';
