@@ -93,8 +93,6 @@ export default {
   color_helpText_success: color.green_80,
   color_helpText_warning: color.ochre_90,
 
-  color_icon: color.gray_60,
-
   color_link: primaries.color_theme_90,
   color_link_active: primaries.color_theme_100,
   color_link_hover: primaries.color_theme_70,
