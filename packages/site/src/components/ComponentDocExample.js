@@ -41,29 +41,31 @@ const styles = {
     lineHeight: '1.5',
     margin: `0 0 ${theme.measurement_c}`
   }),
-  code: (props, theme) => ({
-    backgroundColor: theme.color_grayLight,
-    color: theme.color_grayDark,
-    display: 'block',
-    fontFamily:
-      '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
-    fontSize: 'smaller',
-    padding: theme.measurement_c
-  }),
   livePreview: (props, theme) => ({
+    backgroundColor: props.backgroundColor || theme.backgorundColor,
     border: `1px solid ${theme.color_gray}`,
     padding: theme.measurement_c
+  }),
+  liveEditor: (props, theme) => ({
+    maxHeight: `${parseFloat(theme.measurement_d) * 10}em`,
+    minHeight: `${parseFloat(theme.measurement_d) * 10}em`,
+    maxWidth: '100%', // TODO: halp!
+    minWidth: '100%',
+    overflowY: 'scroll'
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const H4 = createStyledComponent('h4', styles.h4);
 const P = createStyledComponent('p', styles.p);
-const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview);
+const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {rootEl: 'div'});
+const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 
 type Props = {
+  backgroundColor?: string,
   className?: string,
   description?: MnrlReactNode,
+  hideSource?: boolean,
   scope: Object,
   source: string,
   title?: string
@@ -73,7 +75,7 @@ export default class ComponentDocExample extends Component {
   props: Props;
 
   render() {
-    const { className, description, scope, source, title } = this.props;
+    const { backgroundColor, className, description, hideSource, scope, source, title } = this.props;
 
     return (
       <Root className={className}>
@@ -82,9 +84,8 @@ export default class ComponentDocExample extends Component {
           ? <P>{description}</P>
           : description}
         <LiveProvider code={source} scope={scope}>
-          <MyLivePreview /> {/* TODO: add border and padding */}
-          <LiveEditor />
-          <LiveError />
+          <MyLivePreview backgroundColor={backgroundColor}/>
+          { !hideSource && [<MyLiveEditor />,<LiveError />]}
         </LiveProvider>
       </Root>
     );
