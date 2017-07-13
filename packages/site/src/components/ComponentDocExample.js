@@ -49,12 +49,17 @@ const styles = {
       '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
     fontSize: 'smaller',
     padding: theme.measurement_c
+  }),
+  livePreview: (props, theme) => ({
+    border: `1px solid ${theme.color_gray}`,
+    padding: theme.measurement_c
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const H4 = createStyledComponent('h4', styles.h4);
 const P = createStyledComponent('p', styles.p);
+const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview);
 
 type Props = {
   className?: string,
@@ -77,7 +82,7 @@ export default class ComponentDocExample extends Component {
           ? <P>{description}</P>
           : description}
         <LiveProvider code={source} scope={scope}>
-          <LivePreview />
+          <MyLivePreview /> {/* TODO: add border and padding */}
           <LiveEditor />
           <LiveError />
         </LiveProvider>
