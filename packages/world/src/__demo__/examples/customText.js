@@ -18,15 +18,8 @@
 import React from 'react';
 import World from '../../World';
 
-function Example() {
-  return (
-    <div>
-      <World text="Felix" />
-    </div>
-  );
-}
-
 export default {
   title: 'Custom Text',
-  component: Example
+  scope: {World},
+  source: `<World text="Felix" />`
 };

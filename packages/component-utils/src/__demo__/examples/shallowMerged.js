@@ -19,26 +19,14 @@ import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
-function Example() {
-  return (
-    <div>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <ThemeProvider theme={{ color_warning: 'tomato' }}>
-          <Sample />
-        </ThemeProvider>
-      </ThemeProvider>
-    </div>
-  );
-}
-
 export default {
   title: 'Shallow merged global theme var override',
-  component: Example,
   description:
     'When a nested ThemeProvider provides a different variable, the merge works as expected.',
+  scope: {ThemeProvider, Sample},
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-<ThemeProvider theme={{ color_warning: 'tomato' }}>
-  <Sample />
-</ThemeProvider>
+  <ThemeProvider theme={{ color_warning: 'tomato' }}>
+    <Sample />
+  </ThemeProvider>
 </ThemeProvider>`
 };

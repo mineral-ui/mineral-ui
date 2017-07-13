@@ -37,7 +37,7 @@ const styles = {
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
     fontSize: `${parseFloat(theme.fontSize_h4) / 2}em`
   }),
-  graf: (props, theme) => ({
+  p: (props, theme) => ({
     lineHeight: '1.5',
     margin: `0 0 ${theme.measurement_c}`
   }),
@@ -54,66 +54,13 @@ const styles = {
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const H4 = createStyledComponent('h4', styles.h4);
-const Graf = createStyledComponent('p', styles.graf);
-
-function getDefaultValue(propDescription: Object): any {
-  const { defaultValue } = propDescription;
-  return (
-    (defaultValue && defaultValue.value && eval(defaultValue.value)) ||
-    undefined
-  );
-}
-
-function getFlowType(propDescription: Object): string {
-  const { flowType } = propDescription;
-  const type = (flowType && flowType.name) || 'unknown';
-  if (type === 'union') {
-    return `one of: ${flowType.raw}`;
-  }
-
-  return type;
-}
-
-function getExampleProps(
-  propDoc: Object = {},
-  propValues: Object = {}
-): Array<Object> {
-  return Object.keys(propDoc).sort().map(name => {
-    const propDescription = propDoc[name];
-    const { description, required } = propDescription;
-    const defaultValue = getDefaultValue(propDescription);
-    const exampleValue = propValues.hasOwnProperty(name)
-      ? propValues[name]
-      : defaultValue;
-    const type = getFlowType(propDescription);
-
-    return {
-      defaultValue,
-      description,
-      exampleValue,
-      name,
-      required,
-      type
-    };
-  });
-}
-
-function getComponentProps(exampleProps: Array<Object>): Object {
-  return exampleProps.reduce((acc, propDescription) => {
-    const propName = propDescription.name;
-    acc[propName] = propDescription.exampleValue;
-    return acc;
-  }, {});
-}
+const P = createStyledComponent('p', styles.p);
 
 type Props = {
-  children?: MnrlReactNode,
   className?: string,
-  component: MnrlReactComponent,
   description?: MnrlReactNode,
-  propDoc?: Object,
-  propValues?: Object,
-  source?: string,
+  scope: Object,
+  source: string,
   title?: string
 };
 
@@ -121,18 +68,15 @@ export default class ComponentDocExample extends Component {
   props: Props;
 
   render() {
-    const { className, component: Component, description, title } = this.props;
-    const componentProps = getComponentProps(
-      getExampleProps(this.props.propDoc, this.props.propValues)
-    );
+    const { className, description, scope, source, title } = this.props;
 
     return (
       <Root className={className}>
         <H4>{title}</H4>
         {typeof description === 'string'
-          ? <Graf>{description}</Graf>
+          ? <P>{description}</P>
           : description}
-        <LiveProvider code={this.props.source} scope={this.props.scope}>
+        <LiveProvider code={source} scope={scope}>
           <LivePreview />
           <LiveEditor />
           <LiveError />

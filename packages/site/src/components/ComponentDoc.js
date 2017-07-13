@@ -23,10 +23,10 @@ import styleReset from './styleReset';
 import PropTable from './PropTable';
 
 type Example = {
-  component: MnrlReactComponent,
   description?: string,
   propValues?: Object,
-  source?: string,
+  scope: Object,
+  source: string,
   title: string
 };
 
@@ -61,7 +61,7 @@ const styles = {
     marginRight: 'auto',
     paddingRight: '12rem'
   }),
-  graf: (props, theme) => ({
+  p: (props, theme) => ({
     fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
     flex: '1 0 100%',
     lineHeight: '1.5',
@@ -95,7 +95,7 @@ const styles = {
 const Root = createStyledComponent('section', styles.componentDoc);
 const Header = createStyledComponent('header', styles.header);
 const Title = createStyledComponent('h1', styles.title);
-const Graf = createStyledComponent('p', styles.graf);
+const P = createStyledComponent('p', styles.p);
 const H2 = createStyledComponent('h2', styles.h2);
 const H3 = createStyledComponent('h3', styles.h3);
 const SubNav = createStyledComponent('nav', styles.subnav);
@@ -129,7 +129,7 @@ export default function ComponentDoc({
 }: Props) {
   const { description: descriptionDoc, props: propDoc } = doc;
   const description = typeof descriptionDoc === 'string'
-    ? <Graf>{descriptionDoc}</Graf>
+    ? <P>{descriptionDoc}</P>
     : descriptionDoc;
 
   return (

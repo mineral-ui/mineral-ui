@@ -19,22 +19,12 @@ import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
-function Example() {
-  return (
-    <div>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <Sample />
-      </ThemeProvider>
-    </div>
-  );
-}
-
 export default {
   title: 'Global theme var override',
-  component: Example,
   description:
     'This will affect all components inside this ThemeProvider that use this variable.',
+  scope: {ThemeProvider, Sample},
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-<Sample />
+  <Sample />
 </ThemeProvider>`
 };

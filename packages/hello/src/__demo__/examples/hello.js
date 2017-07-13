@@ -18,16 +18,8 @@
 import React from 'react';
 import Hello from '../../Hello';
 
-function Example() {
-  return (
-    <div>
-      <Hello />
-    </div>
-  );
-}
-
 export default {
   title: 'Default',
-  component: Example,
+  scope: {Hello},
   source: `<Hello />`
 };

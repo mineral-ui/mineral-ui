@@ -24,7 +24,8 @@ function Example() {
 
 export default {
   title: 'Default',
-  component: Example,
   description:
-    'Just a simple sample component to demonstrate the styling below.'
+  'Just a simple sample component to demonstrate the styling below.',
+  scope: {Sample},
+  source: `<Sample />`
 };
