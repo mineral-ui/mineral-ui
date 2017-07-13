@@ -48,6 +48,9 @@ export default {
   ...primaries,
   ...grays,
 
+  color_black: color.black,
+  color_white: color.white,
+
   backgroundColor_disabled: color.gray_30,
   backgroundColor_danger: color.red_60,
   backgroundColor_danger_active: color.red_40,

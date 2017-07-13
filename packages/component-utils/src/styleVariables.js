@@ -16,6 +16,9 @@
 
 /* @flow */
 export const color = {
+  black: '#000',
+  white: '#fff',
+
   gray_10: '#f5f7fa',
   gray_20: '#f0f2f5',
   gray_30: '#e6e9ee',
@@ -210,6 +213,7 @@ export default {
   spacing_single: '1em',
   spacing_oneAndAHalf: '1.5em',
   spacing_double: '2em',
+  spacing_triple: '3em',
   spacing_quad: '4em',
 
   zIndex_100: 100,
