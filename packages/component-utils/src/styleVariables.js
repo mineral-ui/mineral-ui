@@ -167,6 +167,8 @@ export default {
   borderRadius_4: '1.5em',
   borderRadius_5: '2.25em',
 
+  direction: 'ltr',
+
   fontFamily: 'Open Sans',
   fontFamily_system:
     '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
