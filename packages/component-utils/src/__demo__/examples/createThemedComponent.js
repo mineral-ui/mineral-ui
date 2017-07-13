@@ -24,7 +24,11 @@ export default {
   description:
     'If you need to overwrite a theme variable, either global or component-specific, for a specific component.',
   scope: {createThemedComponent, Sample},
-  source: `createThemedComponent(Sample, {
-  color_primary: 'mediumvioletred'
-});`
+  source: `() => {
+  const MyThemedSample = createThemedComponent(Sample, {
+    color_primary: 'mediumvioletred'
+  });
+
+  return <MyThemedSample />;
+}`
 };
