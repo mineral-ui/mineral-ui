@@ -22,7 +22,7 @@ import {
 import cardTheme from './cardTheme';
 
 /**
- * Card content component
+ * Card block component
  */
 export default createStyledComponent(
   'div',
