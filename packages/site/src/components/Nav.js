@@ -46,6 +46,8 @@ const styles = {
     paddingLeft: '0'
   },
   listItem: (props, theme) => ({
+    paddingLeft: props.isSubcomponent && theme.spacing_single,
+
     '& + li': {
       marginTop: theme.measurement_b
     }
@@ -62,7 +64,7 @@ export default function Nav({ className, demos }: Props) {
   const demoLinks = Object.keys(demos).map(slug => {
     const demo = demos[slug];
     return (
-      <ListItem key={slug}>
+      <ListItem key={slug} isSubcomponent={demo.subcomponent}>
         <RouterLink to={`/components/${slug}`}>{demo.title}</RouterLink>
       </ListItem>
     );
