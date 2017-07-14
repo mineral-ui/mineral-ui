@@ -15,15 +15,9 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import hello from '../../../hello/src/__demo__';
-import helloWorld from '../../../hello-world/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import world from '../../../world/src/__demo__';
-
-const demos = flatten([button, icon, hello, world, helloWorld, componentUtils]);
-
-export default createKeyMap(demos, 'slug');
+export default function createKeyMap(arr: Array<Object>, key: string) {
+  return arr.reduce((acc, item) => {
+    acc[item[key]] = item;
+    return acc;
+  }, {});
+}

@@ -21,6 +21,7 @@ import {
   createStyledComponent,
   ThemeProvider
 } from '@mineral-ui/component-utils';
+import createKeyMap from '../utils/createKeyMap';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
@@ -29,7 +30,7 @@ import styleReset from './styleReset';
 
 type Props = {|
   className?: string,
-  demos: Object
+  demos: Object | Array<Object>
 |};
 
 const styles = {
@@ -60,15 +61,19 @@ const Root = createStyledComponent('div', styles.app);
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
+const getDefaultDemo = (demos: Object): string => Object.keys(demos)[0];
+
 export default function App({ className, demos }: Props) {
-  if (demos.slug) {
+  if (!Array.isArray(demos) && demos.slug) {
     return <ComponentDoc {...demos} />;
   }
+
+  const siteDemos = Array.isArray(demos) ? createKeyMap(demos, 'slug') : demos;
 
   return (
     <Root className={className}>
       <ThemeProvider theme={{ backgroundColor: siteTheme.color_grayLight }}>
-        <Nav demos={demos} />
+        <Nav demos={siteDemos} />
       </ThemeProvider>
       <Main>
         <Switch>
@@ -76,11 +81,11 @@ export default function App({ className, demos }: Props) {
             path="/components/:componentId"
             render={route => {
               const componentId = route.match.params.componentId;
-              const selectedDemo = demos[componentId];
+              const selectedDemo = siteDemos[componentId];
               return <ComponentDoc {...selectedDemo} />;
             }}
           />
-          <Redirect from="/" to="/components/button" />
+          <Redirect from="/" to={`/components/${getDefaultDemo(siteDemos)}`} />
         </Switch>
         <Footer />
       </Main>
