@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.1.2...@mineral-ui/component-utils@0.2.0) (2017-07-14)
+
+
+### Features
+
+* **component-utils:** Add generateId and resetId utils ([8a1f9bc](https://github.com/mineral-ui/mineral-ui/commit/8a1f9bc))
+* **component-utils:** Adjust mineralTheme and styleUtils ([5bf9001](https://github.com/mineral-ui/mineral-ui/commit/5bf9001))
+
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.1.1...@mineral-ui/component-utils@0.1.2) (2017-07-06)
 

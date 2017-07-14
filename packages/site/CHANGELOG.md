@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.4.2...@mineral-ui/site@0.5.0) (2017-07-14)
+
+
+### Features
+
+* **icon:** Add new Icon component ([e6f7d75](https://github.com/mineral-ui/mineral-ui/commit/e6f7d75))
+
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](/compare/@mineral-ui/site@0.4.1...@mineral-ui/site@0.4.2) (2017-07-07)
 
