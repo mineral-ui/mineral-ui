@@ -15,11 +15,13 @@
  */
 
 /* @flow */
-export { default as createStyledComponent } from './createStyledComponent';
-export { default as createThemedComponent } from './createThemedComponent';
-export { default as ThemeProvider } from './ThemeProvider';
+let currentId = 0;
 
-export { default as mineralTheme } from './mineralTheme';
-export { default as styleVariables } from './styleVariables';
+export function generateId() {
+  currentId += 1;
+  return currentId.toString();
+}
 
-export { generateId, resetId } from './generateId';
+export function resetId() {
+  currentId = 0;
+}

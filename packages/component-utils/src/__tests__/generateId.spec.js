@@ -15,11 +15,24 @@
  */
 
 /* @flow */
-export { default as createStyledComponent } from './createStyledComponent';
-export { default as createThemedComponent } from './createThemedComponent';
-export { default as ThemeProvider } from './ThemeProvider';
+import { generateId, resetId } from '../index';
 
-export { default as mineralTheme } from './mineralTheme';
-export { default as styleVariables } from './styleVariables';
+describe('generateId', () => {
+  let id;
 
-export { generateId, resetId } from './generateId';
+  it('generates an id', () => {
+    id = generateId();
+    expect(id).toBe('1');
+  });
+
+  it('increments generated id', () => {
+    id = generateId();
+    expect(id).toBe('2');
+  });
+
+  it('resets generated id', () => {
+    resetId();
+    id = generateId();
+    expect(id).toBe('1');
+  });
+});
