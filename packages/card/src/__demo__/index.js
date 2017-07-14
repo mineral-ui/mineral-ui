@@ -15,15 +15,61 @@
  */
 
 /* @flow */
-import examples from './examples';
+import cardExamples from './examples/cardIndex';
+import cardActionsExamples from './examples/cardActionsIndex';
+import cardBlockExamples from './examples/cardBlockIndex';
+import cardImageExamples from './examples/cardImageIndex';
+import cardTitleExamples from './examples/cardTitleIndex';
 
-const doc = require('!!react-docgen-loader!../Card.js');
+const cardDoc = require('!!react-docgen-loader!../Card.js');
+const cardActionsDoc = require('!!react-docgen-loader!../CardActions.js');
+const cardBlockDoc = require('!!react-docgen-loader!../CardBlock.js');
+const cardImageDoc = require('!!react-docgen-loader!../CardImage.js');
+const cardTitleDoc = require('!!react-docgen-loader!../CardTitle.js');
 
-export default {
-  behavior: 'behavior dummy text for the card component',
-  design: 'design theory about the card component',
-  doc,
-  examples,
-  slug: 'card',
-  title: 'Card'
-};
+export default [
+  {
+    behavior: 'behavior dummy text for the card component',
+    design: 'design theory about the card component',
+    doc: cardDoc,
+    examples: cardExamples,
+    slug: 'card',
+    title: 'Card'
+  },
+  {
+    behavior: 'behavior dummy text for the card actions component',
+    design: 'design theory about the card actions component',
+    doc: cardActionsDoc,
+    examples: cardActionsExamples,
+    slug: 'card-actions',
+    subcomponent: true,
+    title: 'CardActions'
+  },
+  {
+    behavior: 'behavior dummy text for the card block component',
+    design: 'design theory about the card block component',
+    doc: cardBlockDoc,
+    examples: cardBlockExamples,
+    slug: 'card-block',
+    subcomponent: true,
+    title: 'CardBlock'
+  },
+  {
+    behavior: 'behavior dummy text for the card image component',
+    design: 'design theory about the card image component',
+    doc: cardImageDoc,
+    examples: cardImageExamples,
+    slug: 'card-image',
+    subcomponent: true,
+    title: 'CardImage'
+  },
+  {
+    behavior: 'behavior dummy text for the card title component',
+    design: 'design theory about the card title component',
+    doc: cardTitleDoc,
+    examples: cardTitleExamples,
+    slug: 'card-title',
+    subcomponent: true,
+    title: 'CardTitle'
+  }
+];

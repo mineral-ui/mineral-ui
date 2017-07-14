@@ -15,18 +15,6 @@
  */
 
 /* @flow */
-import card from './card';
-import complexTitle from './complexTitle';
-import crazyOrder from './crazyOrder';
 import withActions from './withActions';
-import withSubtitle from './withSubtitle';
-import withImage from './withImage';
 
-export default [
-  card,
-  complexTitle,
-  withSubtitle,
-  withActions,
-  withImage,
-  crazyOrder
-];
+export default [withActions];
