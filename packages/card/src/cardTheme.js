@@ -40,6 +40,8 @@ export default function cardTheme(baseTheme: Object) {
     CardTitle_fontSize_minor: baseTheme.fontSize_h4,
     CardTitle_fontWeight: baseTheme.fontWeight_semiBold,
     CardTitle_fontWeight_minor: baseTheme.fontWeight_bold,
-    CardTitle_marginTop: baseTheme.spacing_single
+    CardTitle_marginTop: baseTheme.spacing_single,
+
+    ...baseTheme
   };
 }
