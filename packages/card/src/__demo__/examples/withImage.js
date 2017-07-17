@@ -47,6 +47,8 @@ function Example() {
 export default {
   title: 'With an image',
   component: Example,
+  description:
+    "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
   source: `<Card>
   <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
   <CardTitle minor>Card title</CardTitle>

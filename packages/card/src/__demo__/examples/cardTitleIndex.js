@@ -18,4 +18,4 @@
 import complexTitle from './complexTitle';
 import withSubtitle from './withSubtitle';
 
-export default [complexTitle, withSubtitle];
+export default [withSubtitle, complexTitle];

@@ -16,8 +16,7 @@
 
 /* @flow */
 import card from './card';
+import arbitraryChildren from './arbitraryChildren';
 import crazyOrder from './crazyOrder';
-import withActions from './withActions';
-import withImage from './withImage';
 
-export default [card, withActions, withImage, crazyOrder];
+export default [card, arbitraryChildren, crazyOrder];

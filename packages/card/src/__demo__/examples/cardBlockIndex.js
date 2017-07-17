@@ -15,6 +15,7 @@
  */
 
 /* @flow */
-import card from './card';
+import cardBlock from './cardBlock';
+import cardBlockArbitraryChildren from './cardBlockArbitraryChildren';
 
-export default [card];
+export default [cardBlock, cardBlockArbitraryChildren];

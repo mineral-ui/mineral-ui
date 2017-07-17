@@ -16,9 +16,12 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '@mineral-ui/component-utils';
 import Card from '../../Card';
-import CardBlock from '../../CardBlock';
+import _CardBlock from '../../CardBlock';
 import CardTitle from '../../CardTitle';
 
 const Root = createStyledComponent('div', {
@@ -26,32 +29,28 @@ const Root = createStyledComponent('div', {
     width: '33.333%'
   }
 });
+const CardBlock = createStyledComponent(_CardBlock, (props, theme) => ({
+  position: 'relative',
 
-const Status = createStyledComponent('span', {
-  color: 'red',
-  fontSize: '0.5em',
-
-  '&:before': {
-    backgroundColor: 'red',
-    borderRadius: '1em',
+  // prettier-ignore
+  '&::before': {
+    borderColor: theme.color_theme_10,
+    borderStyle: 'solid',
+    borderWidth: `${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)} ${getNormalizedValue(theme.spacing_triple, theme.fontSize_prose)}`,
+    bottom: `-${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)}`,
     content: '""',
-    display: 'inline-block',
-    height: '1em',
-    marginRight: '0.5em',
-    position: 'relative',
-    top: '0.1em',
-    width: '1em'
+    left: 0,
+    position: 'absolute',
+    right: 0,
+    top: `-${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)}`,
   }
-});
+}));
 
 function Example() {
   return (
     <Root>
       <Card>
-        <CardTitle subtitle={<em>Subtitle</em>}>
-          Card title<br />
-          <Status>Status label</Status>
-        </CardTitle>
+        <CardTitle>Card title</CardTitle>
         <CardBlock>
           Light years star stuff harvesting star light citizens of distant
           epochs encyclopaedia galactica vastness is bearable only through love,
@@ -63,15 +62,18 @@ function Example() {
 }
 
 export default {
-  title: 'Complex title and subtitle',
+  title: 'Consistent spacing',
   component: Example,
   description:
-    'Both the title and subtitle can contain a simple string or any HTML/React elements.',
-  source: `<Card>
-  <CardTitle subtitle={<em>Subtitle</em>}>
-    Card title<br />
-    <Status>Status label</Status>
-  </CardTitle>
-  <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-</Card>`
+    'CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).',
+  source: `<Root>
+  <Card>
+    <CardTitle>Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+  </Card>
+</Root>`
 };

@@ -94,6 +94,7 @@ function Example() {
 export default {
   title: 'Order of sections',
   component: Example,
+  description: 'The sections of Card are designed to work in any order.',
   source: `<Card>
   <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
   <CardTitle minor>Card title</CardTitle>

@@ -51,6 +51,8 @@ function Example() {
 export default {
   title: 'With actions',
   component: Example,
+  description:
+    "Use this component if you need to display one or more actions associated with your Card. You should only use 'minimal' Buttons.",
   source: `<Card>
   <CardTitle>Card title</CardTitle>
   <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>

@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
+import Button from '@mineral-ui/button';
 import Card from '../../Card';
 import CardBlock from '../../CardBlock';
 import CardTitle from '../../CardTitle';
@@ -26,16 +27,20 @@ const Root = createStyledComponent('div', {
     width: '33.333%'
   }
 });
+const CustomContent = createStyledComponent('div', (props, theme) => ({
+  backgroundColor: theme.color_gray_10,
+  padding: `${theme.spacing_double} 0`
+}));
 
 function Example() {
   return (
     <Root>
       <Card>
-        <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+        <CardTitle>Card title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          <CustomContent>
+            <Button fullWidth onClick={() => {}}>Button</Button>
+          </CustomContent>
         </CardBlock>
       </Card>
     </Root>
@@ -43,11 +48,26 @@ function Example() {
 }
 
 export default {
-  title: 'With a subtitle',
+  title: 'Arbitrary children',
   component: Example,
-  description: 'In addition to a title, a Card can display a subtitle.',
-  source: `<Card>
-  <CardTitle subtitle="Card subtitle">Card title</CardTitle>
-  <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-</Card>`
+  description:
+    'A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.',
+  source: `const CustomContent = createStyledComponent('div', (props, theme) => ({
+  backgroundColor: theme.color_gray_10
+}));
+
+function Example() {
+  return (
+    <Root>
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          <CustomContent>
+            <Button fullWidth onClick={() => {}}>Button</Button>
+          </CustomContent>
+        </CardBlock>
+      </Card>
+    </Root>
+  );
+}`
 };

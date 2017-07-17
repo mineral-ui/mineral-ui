@@ -45,6 +45,8 @@ function Example() {
 export default {
   title: 'Basic card',
   component: Example,
+  description:
+    'Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.',
   source: `<Card>
   <CardTitle>Card title</CardTitle>
   <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>

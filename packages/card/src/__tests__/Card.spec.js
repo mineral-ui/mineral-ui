@@ -18,16 +18,28 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Card from '../Card';
-import examples from '../__demo__/examples';
+import cardExamples from '../__demo__/examples/cardIndex';
+import cardActionsExamples from '../__demo__/examples/cardActionsIndex';
+import cardBlockExamples from '../__demo__/examples/cardBlockIndex';
+import cardImageExamples from '../__demo__/examples/cardImageIndex';
+import cardTitleExamples from '../__demo__/examples/cardTitleIndex';
 import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
-function renderCard() {
-  return shallow(<Card />);
+const examples = [].concat(
+  cardExamples,
+  cardActionsExamples,
+  cardBlockExamples,
+  cardImageExamples,
+  cardTitleExamples
+);
+
+function renderCard(children) {
+  return shallow(<Card>{children}</Card>);
 }
 
 describe('Card', () => {
   it('renders', () => {
-    const card = renderCard();
+    const card = renderCard('Children');
 
     expect(card.exists()).toEqual(true);
   });
