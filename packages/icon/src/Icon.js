@@ -16,7 +16,6 @@
 
 /* @flow */
 import React, { PureComponent } from 'react';
-// $FlowFixMe
 import { createStyledComponent, generateId } from '@mineral-ui/component-utils';
 
 type Props = {

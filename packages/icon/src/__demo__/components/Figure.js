@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-// $FlowFixMe
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent(

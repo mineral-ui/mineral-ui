@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-// $FlowFixMe
 import { ThemeProvider } from '@mineral-ui/component-utils';
 import IconHelp from '../../lib/IconHelp';
 
