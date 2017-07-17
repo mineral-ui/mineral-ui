@@ -17,15 +17,24 @@
 /* @flow */
 import React from 'react';
 import { ellipsis } from 'polished';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '@mineral-ui/component-utils';
 
 type Props = {
   /** Rendered content of the component */
   children?: MnrlReactNode,
+  /** Displays a circular button */
+  circular?: boolean,
   /** Disables the button */
   disabled?: boolean,
   /** Stretch Button to fill its container */
   fullWidth?: boolean,
+  /** Icon that goes after the children*/
+  iconEnd?: React$Element<*>,
+  /** Icon that goes before the children */
+  iconStart?: React$Element<*>,
   /** Display a minimal button */
   minimal?: boolean,
   /** Called with the click event */
@@ -76,11 +85,21 @@ const buttonTheme = (props, baseTheme) => ({
   Button_padding: baseTheme.spacing_single,
   Button_padding_large: baseTheme.spacing_double,
   [`Button_size_${props.size}`]: baseTheme[`size_${props.size}`],
+
+  Button_icon_margin: baseTheme.spacing_single,
+  Button_icon_margin_small: baseTheme.spacing_half,
   ...baseTheme
 });
 
 const buttonStyles = (props, baseTheme) => {
   let theme = buttonTheme(props, baseTheme);
+
+  const paddingLeftRight = props.size === 'large'
+    ? theme.Button_padding_large
+    : theme.Button_padding;
+
+  // These values were chosen to add up to the height of each size Button
+  const paddingTopBottom = props.size === 'small' ? '0.375em' : '0.875em';
 
   if (props.variant !== 'regular') {
     // prettier-ignore
@@ -106,7 +125,6 @@ const buttonStyles = (props, baseTheme) => {
   }
 
   return {
-    alignItems: 'center',
     backgroundColor: (() => {
       if (props.disabled && !props.minimal) {
         return theme.color_gray_30;
@@ -129,7 +147,9 @@ const buttonStyles = (props, baseTheme) => {
         return theme.Button_borderColor;
       }
     })(),
-    borderRadius: theme.Button_borderRadius,
+    borderRadius: props.circular
+      ? `${parseFloat(theme[`Button_size_${props.size}`]) / 2}em`
+      : theme.Button_borderRadius,
     borderStyle: 'solid',
     borderWidth: theme.Button_borderWidth,
     boxShadow:
@@ -149,17 +169,19 @@ const buttonStyles = (props, baseTheme) => {
       }
     })(),
     cursor: props.disabled ? 'default' : 'pointer',
-    display: 'inline-flex',
     fontWeight: theme.Button_fontWeight,
     height: theme[`Button_size_${props.size}`],
-    justifyContent: 'center',
-    paddingLeft: props.size === 'large'
-      ? theme.Button_padding_large
-      : theme.Button_padding,
-    paddingRight: props.size === 'large'
-      ? theme.Button_padding_large
-      : theme.Button_padding,
-    width: props.fullWidth && '100%',
+    padding: props.circular
+      ? `${paddingTopBottom} 0`
+      : `${paddingTopBottom} ${paddingLeftRight}`,
+    verticalAlign: 'middle',
+    width: (() => {
+      if (props.circular) {
+        return theme[`Button_size_${props.size}`];
+      } else if (props.fullWidth) {
+        return '100%';
+      }
+    })(),
     '&:focus, &[data-simulate-focus]': {
       backgroundColor: (() => {
         if (props.primary) {
@@ -250,12 +272,51 @@ const buttonStyles = (props, baseTheme) => {
 const contentStyles = (props, baseTheme) => {
   const theme = buttonTheme(props, baseTheme);
 
+  const fontSize = props.size === 'small'
+    ? theme.Button_fontSize_small
+    : theme.Button_fontSize;
+
   return {
     ...ellipsis('100%'),
 
-    fontSize: props.size === 'small'
-      ? theme.Button_fontSize_small
-      : theme.Button_fontSize
+    display: 'block',
+    fontSize,
+    // Values here are based on the appropriate Icon size for each Button size
+    lineHeight: props.size === 'large'
+      ? getNormalizedValue('3em', fontSize)
+      : getNormalizedValue('2em', fontSize)
+  };
+};
+
+const innerStyles = (props, baseTheme) => {
+  const theme = buttonTheme(props, baseTheme);
+
+  const iconMargin = props.size === 'small'
+    ? theme.Button_icon_margin_small
+    : theme.Button_icon_margin;
+
+  return {
+    display: 'inline-flex',
+    flexDirection: theme.direction === 'rtl' && 'row-reverse',
+    justifyContent: 'center',
+    width: '100%',
+
+    '& > [role="icon"]': {
+      display: 'block',
+
+      '&:not(:only-child)': {
+        flex: '0 0 auto',
+
+        '&:first-child': {
+          marginLeft: theme.direction === 'rtl' && iconMargin,
+          marginRight: theme.direction === 'ltr' && iconMargin
+        },
+        '&:last-child': {
+          marginLeft: theme.direction === 'ltr' && iconMargin,
+          marginRight: theme.direction === 'rtl' && iconMargin
+        }
+      }
+    }
   };
 };
 
@@ -264,11 +325,15 @@ const Root = createStyledComponent('button', buttonStyles, {
 });
 const Content = createStyledComponent('span', contentStyles);
 
+const Inner = createStyledComponent('span', innerStyles);
+
 /**
  * The Button component represents a clickable button.
  */
 export default function Button({
   children,
+  iconStart,
+  iconEnd,
   size = 'medium',
   type = 'button',
   variant = 'regular',
@@ -281,9 +346,18 @@ export default function Button({
     ...restProps
   };
 
+  const iconSize = size === 'large' ? 'medium' : 'small';
+  const startIcon =
+    iconStart && React.cloneElement(iconStart, { size: iconSize });
+  const endIcon = iconEnd && React.cloneElement(iconEnd, { size: iconSize });
+
   return (
     <Root {...rootProps}>
-      <Content size={size}>{children}</Content>
+      <Inner size={size}>
+        {startIcon}
+        {children && <Content size={size}>{children}</Content>}
+        {endIcon}
+      </Inner>
     </Root>
   );
 }

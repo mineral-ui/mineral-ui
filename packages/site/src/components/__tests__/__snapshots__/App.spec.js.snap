@@ -95,6 +95,82 @@ exports[`App renders correctly 1`] = `
                 "title": "Sizes",
               },
               Object {
+                "description": "Buttons can contain Icons at their start, end, or both. Small and medium Buttons use small Icons; Large Buttons use medium Icons.",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconQueue": [Function],
+                },
+                "source": "() => {
+          const icon = <IconQueue color=\\"currentColor\\" />;
+        
+          return <DemoLayout>
+            <Button iconStart={icon}>Start icon</Button>
+            <Button iconEnd={icon}>End icon</Button>
+            <Button iconStart={icon} iconEnd={icon}>Both icons</Button>
+            <br /><br />
+            <Button iconStart={icon} primary>Primary</Button>
+            <Button iconStart={icon} minimal>Minimal</Button>
+            <Button iconStart={icon} size=\\"small\\">Small</Button>
+            <Button iconStart={icon} size=\\"large\\">Large</Button>
+          </DemoLayout>
+        }",
+                "title": "Buttons with Icons",
+              },
+              Object {
+                "description": "Buttons that contain only Icons can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconQueue": [Function],
+                },
+                "source": "() => {
+          const icon = <IconQueue color=\\"currentColor\\" />;
+        
+          return <DemoLayout>
+            {/* Icon as prop; no text. aria-label applied to Button. */}
+            <Button iconStart={icon} aria-label=\\"Add new\\" />
+            {/* Icon as child; no text. aria-label applied to Button. Note that the size of the icon must be provided in this case. */}
+            <Button aria-label=\\"Add new\\">
+              <IconQueue size=\\"small\\" color=\\"currentColor\\" />
+            </Button>
+            {/* primary */}
+            <Button iconStart={icon} primary aria-label=\\"Add new\\" />
+            {/* minimal */}
+            <Button iconStart={icon} minimal aria-label=\\"Add new\\" />
+            {/* small */}
+            <Button iconStart={icon} size=\\"small\\" aria-label=\\"Add new\\" />
+            {/* large */}
+            <Button iconStart={icon} size=\\"large\\" aria-label=\\"Add new\\" />
+          </DemoLayout>
+        }",
+                "title": "Icon-only Buttons",
+              },
+              Object {
+                "description": "Buttons can be made circular. Such Buttons should not have any text.",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconQueue": [Function],
+                },
+                "source": "() => {
+          const icon = <IconQueue color=\\"currentColor\\" />;
+        
+          return <DemoLayout>
+            <Button iconStart={icon} circular aria-label=\\"Add new\\" />
+            {/* primary */}
+            <Button iconStart={icon} circular primary aria-label=\\"Add new\\" />
+            {/* minimal */}
+            <Button iconStart={icon} circular minimal aria-label=\\"Add new\\" />
+            {/* small */}
+            <Button iconStart={icon} circular size=\\"small\\" aria-label=\\"Add new\\" />
+            {/* large */}
+            <Button iconStart={icon} circular size=\\"large\\" aria-label=\\"Add new\\" />
+          </DemoLayout>
+        }",
+                "title": "Circular Buttons",
+              },
+              Object {
                 "scope": Object {
                   "Button": [Function],
                   "DemoLayout": [Function],
@@ -123,6 +199,18 @@ exports[`App renders correctly 1`] = `
           <Button>Do Something</Button>
         </FixedWidthLayout>",
                 "title": "Truncation",
+              },
+              Object {
+                "description": "",
+                "scope": Object {
+                  "Button": [Function],
+                  "IconBackspace": [Function],
+                  "ThemeProvider": [Function],
+                },
+                "source": "<ThemeProvider theme={{direction: 'rtl'}}>
+          <Button iconStart={<IconBackspace color=\\"currentColor\\" />}>Do Something</Button>
+        </ThemeProvider>",
+                "title": "RTL Support",
               },
               Object {
                 "hideSource": true,
