@@ -19,11 +19,13 @@ import React from 'react';
 import { mount } from 'enzyme';
 // $FlowFixMe
 import { ThemeProvider } from '@mineral-ui/component-utils';
+// $FlowFixMe
+import { LiveProvider, LivePreview } from 'react-live';
 
 type Example = {
   title: string,
-  component: MnrlReactNode,
-  propValues?: Object
+  scope: Object,
+  source: string
 };
 type Examples = Array<Example>;
 type Options = {
@@ -41,10 +43,11 @@ export default function testDemoExamples(
 
   return examples.map(example => {
     it(example.title, () => {
-      const props = example.propValues ? example.propValues : {};
       const component = mount(
         <ThemeProvider>
-          <example.component {...props} />
+          <LiveProvider code={example.source} scope={example.scope}>
+            <LivePreview />
+          </LiveProvider>
         </ThemeProvider>
       );
       expect(component).toMatchSnapshotWithGlamor();

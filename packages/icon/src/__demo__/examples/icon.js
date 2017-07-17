@@ -15,19 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
 import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
-
-function Example() {
-  return (
-    <div>
-      <IconSentimentSatisfied />
-    </div>
-  );
-}
 
 export default {
   title: 'Icon',
-  component: Example,
+  scope: { IconSentimentSatisfied },
   source: `<IconSentimentSatisfied />`
 };

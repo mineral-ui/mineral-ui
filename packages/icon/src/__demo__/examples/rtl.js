@@ -15,25 +15,15 @@
  */
 
 /* @flow */
-import React from 'react';
+// $FlowFixMe
 import { ThemeProvider } from '@mineral-ui/component-utils';
 import IconHelp from '../../lib/IconHelp';
 
-function Example() {
-  return (
-    <div>
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <IconHelp />
-      </ThemeProvider>
-    </div>
-  );
-}
-
 export default {
   title: 'RTL',
-  component: Example,
   description:
     'Some icons will be automatically mirrored for (right-to-left) RTL languages',
+  scope: { IconHelp, ThemeProvider },
   source: `<ThemeProvider theme={{ direction: 'rtl' }}>
   <IconHelp />
 </ThemeProvider>`

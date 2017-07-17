@@ -15,27 +15,17 @@
  */
 
 /* @flow */
-import React from 'react';
 import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
-
-function Example() {
-  return (
-    <div>
-      <IconSentimentSatisfied size="small" />
-      <IconSentimentSatisfied />
-      <IconSentimentSatisfied size="large" />
-      <IconSentimentSatisfied size="7em" />
-    </div>
-  );
-}
 
 export default {
   title: 'Sizes',
-  component: Example,
   description:
     'Icons are available in three preset sizes, or you can supply your own custom size.',
-  source: `<IconSentimentSatisfied size="small" />
-<IconSentimentSatisfied />
-<IconSentimentSatisfied size="large" />
-<IconSentimentSatisfied size="7em" />`
+  scope: { IconSentimentSatisfied },
+  source: `<div>
+  <IconSentimentSatisfied size="small" />
+  <IconSentimentSatisfied />
+  <IconSentimentSatisfied size="large" />
+  <IconSentimentSatisfied size="7em" />
+</div>`
 };
