@@ -1,4 +1,4 @@
-# Archetype
+# Card
 
 Mineral UI `Card` component. Find out more about [Mineral UI](https://github.com/mineral-ui/mineral-ui).
 
