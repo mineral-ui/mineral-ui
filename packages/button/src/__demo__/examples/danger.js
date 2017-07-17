@@ -18,7 +18,7 @@
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
-export const Root = createStyledComponent('div', {
+const Root = createStyledComponent('div', {
   '& > button': {
     marginRight: '0.5rem'
   }
