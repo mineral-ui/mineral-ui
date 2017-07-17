@@ -29,18 +29,18 @@ const Root = createStyledComponent('div', {
 
 const Status = createStyledComponent('span', {
   color: 'red',
-  fontSize: '0.5em',
+  fontSize: '0.6em',
 
   '&:before': {
     backgroundColor: 'red',
-    borderRadius: '1em',
+    borderRadius: '0.8em',
     content: '""',
     display: 'inline-block',
-    height: '1em',
+    height: '0.8em',
     marginRight: '0.5em',
     position: 'relative',
     top: '0.1em',
-    width: '1em'
+    width: '0.8em'
   }
 });
 

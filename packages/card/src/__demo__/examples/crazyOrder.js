@@ -28,6 +28,10 @@ const Root = createStyledComponent('div', {
   alignItems: 'flex-start',
   display: 'flex',
 
+  '& > *': {
+    flex: '1 1 25%'
+  },
+
   '& > *:not(:first-child)': {
     marginLeft: '2em'
   }
