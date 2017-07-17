@@ -17,5 +17,6 @@
 /* @flow */
 import complexTitle from './complexTitle';
 import withSubtitle from './withSubtitle';
+import minor from './minor';
 
-export default [withSubtitle, complexTitle];
+export default [withSubtitle, complexTitle, minor];
