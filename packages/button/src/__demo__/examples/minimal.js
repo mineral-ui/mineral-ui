@@ -15,12 +15,11 @@
  */
 
 /* @flow */
-import React from 'react';
 import Button from '../../Button';
 
 export default {
   title: 'Minimal',
   description: 'Use for less-important actions.',
-  scope: {Button},
+  scope: { Button },
   source: `<Button minimal>Do Something</Button>`
 };

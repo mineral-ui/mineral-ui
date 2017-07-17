@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { simulate } from 'glamor';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
@@ -30,7 +29,7 @@ const Root = createStyledComponent('div', {
 export default {
   title: 'States',
   hideSource: true,
-  scope: {Button, Root, simulate},
+  scope: { Button, Root, simulate },
   source: `<Root>
   <Button>Regular</Button>
   <Button primary>Primary</Button>

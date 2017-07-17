@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
@@ -23,7 +22,7 @@ export default {
   title: 'Shallow merged global theme var override',
   description:
     'When a nested ThemeProvider provides a different variable, the merge works as expected.',
-  scope: {ThemeProvider, Sample},
+  scope: { ThemeProvider, Sample },
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
   <ThemeProvider theme={{ color_warning: 'tomato' }}>
     <Sample />

@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
@@ -23,7 +22,7 @@ export default {
   title: 'Global theme var override',
   description:
     'This will affect all components inside this ThemeProvider that use this variable.',
-  scope: {ThemeProvider, Sample},
+  scope: { ThemeProvider, Sample },
   source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
   <Sample />
 </ThemeProvider>`

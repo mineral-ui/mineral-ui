@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { ThemeProvider } from '../../index';
 import Sample from '../../Sample';
 
@@ -23,7 +22,7 @@ export default {
   title: 'Nested global theme var override',
   description:
     'When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.',
-  scope: {ThemeProvider, Sample},
+  scope: { ThemeProvider, Sample },
   source: `<ThemeProvider theme={{ color_primary: 'cyan' }}>
   <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
     <Sample />

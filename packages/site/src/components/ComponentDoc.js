@@ -161,7 +161,7 @@ export default function ComponentDoc({
 }
 
 function renderExamples(
-  examples: Array<Example>,
+  examples?: Array<Example>,
   slug: string,
   propDoc: Object
 ) {

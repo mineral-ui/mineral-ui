@@ -18,12 +18,8 @@
 import React, { Component } from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
-import {
-  LiveProvider,
-  LiveEditor,
-  LiveError,
-  LivePreview
-} from 'react-live';
+// $FlowFixMe
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
   componentDocExample: (props, theme) => ({
@@ -48,17 +44,16 @@ const styles = {
   }),
   liveEditor: (props, theme) => ({
     maxHeight: `${parseFloat(theme.measurement_d) * 10}em`,
-    minHeight: `${parseFloat(theme.measurement_d) * 10}em`,
-    maxWidth: '100%', // TODO: halp!
-    minWidth: '100%',
-    overflowY: 'scroll'
+    overflow: 'auto'
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const H4 = createStyledComponent('h4', styles.h4);
 const P = createStyledComponent('p', styles.p);
-const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {rootEl: 'div'});
+const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
+  rootEl: 'div'
+});
 const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 
 type Props = {
@@ -75,17 +70,23 @@ export default class ComponentDocExample extends Component {
   props: Props;
 
   render() {
-    const { backgroundColor, className, description, hideSource, scope, source, title } = this.props;
+    const {
+      backgroundColor,
+      className,
+      description,
+      hideSource,
+      scope,
+      source,
+      title
+    } = this.props;
 
     return (
       <Root className={className}>
         <H4>{title}</H4>
-        {typeof description === 'string'
-          ? <P>{description}</P>
-          : description}
+        {typeof description === 'string' ? <P>{description}</P> : description}
         <LiveProvider code={source} scope={scope}>
-          <MyLivePreview backgroundColor={backgroundColor}/>
-          { !hideSource && [<MyLiveEditor />,<LiveError />]}
+          <MyLivePreview backgroundColor={backgroundColor} />
+          {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
         </LiveProvider>
       </Root>
     );

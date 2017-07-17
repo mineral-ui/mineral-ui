@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
@@ -27,7 +26,7 @@ const Root = createStyledComponent('div', {
 
 export default {
   title: 'Sizes',
-  scope: {Button, Root},
+  scope: { Button, Root },
   source: `<Root>
   <Button size="small">Small</Button>
   <Button>Medium</Button>

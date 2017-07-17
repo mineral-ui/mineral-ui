@@ -15,12 +15,11 @@
  */
 
 /* @flow */
-import React from 'react';
 import Button from '../../Button';
 
 export default {
   title: 'Primary',
   description: 'Use once per page, for the primary action.',
-  scope: {Button},
+  scope: { Button },
   source: `<Button primary>Do Something</Button>`
 };

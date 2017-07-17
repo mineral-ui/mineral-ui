@@ -15,11 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
 import Button from '../../Button';
 
 export default {
   title: 'Full Width',
-  scope: {Button},
+  scope: { Button },
   source: `<Button fullWidth>Do Something</Button>`
 };

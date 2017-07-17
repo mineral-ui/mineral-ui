@@ -15,11 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
 import World from '../../World';
 
 export default {
   title: 'Custom Text',
-  scope: {World},
+  scope: { World },
   source: `<World text="Felix" />`
 };

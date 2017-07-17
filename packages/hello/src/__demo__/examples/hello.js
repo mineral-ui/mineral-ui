@@ -15,11 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
 import Hello from '../../Hello';
 
 export default {
   title: 'Default',
-  scope: {Hello},
+  scope: { Hello },
   source: `<Hello />`
 };

@@ -15,17 +15,12 @@
  */
 
 /* @flow */
-import React from 'react';
 import Sample from '../../Sample';
-
-function Example() {
-  return <Sample />;
-}
 
 export default {
   title: 'Default',
   description:
-  'Just a simple sample component to demonstrate the styling below.',
-  scope: {Sample},
+    'Just a simple sample component to demonstrate the styling below.',
+  scope: { Sample },
   source: `<Sample />`
 };

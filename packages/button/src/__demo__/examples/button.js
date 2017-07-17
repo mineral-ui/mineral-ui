@@ -15,12 +15,11 @@
  */
 
 /* @flow */
-import React from 'react';
 import Button from '../../Button';
 
 export default {
   title: 'Button',
   description: 'Regular button.',
-  scope: {Button},
+  scope: { Button },
   source: `<Button>Do Something</Button>`
 };

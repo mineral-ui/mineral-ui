@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
@@ -28,7 +27,7 @@ const Root = createStyledComponent('div', {
 export default {
   title: 'Success',
   description: 'Use for positive actions, like when creating something.',
-  scope: {Button, Root},
+  scope: { Button, Root },
   source: `<Root>
   <Button variant="success">Regular</Button>
   <Button variant="success" primary>Primary</Button>
