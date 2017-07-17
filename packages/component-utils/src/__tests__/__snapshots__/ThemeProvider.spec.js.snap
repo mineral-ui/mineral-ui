@@ -134,35 +134,165 @@ exports[`ThemeProvider Component theme var override 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <ThemeProvider
-          theme={
-            Object {
-              "Sample_color": "mediumvioletred",
-            }
+    <LiveProvider
+      code="<ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+      <Sample />
+    </ThemeProvider>"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "ThemeProvider": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "ThemeProvider": [Function],
           }
-        >
-          <ThemeProvider
-            theme={
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
               Object {
-                "Sample_color": "mediumvioletred",
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
               }
             }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
-            <Sample>
-              <glamorous(span)>
-                <span
-                  className="css-2y20ac"
-                >
-                  Sample
-                </span>
-              </glamorous(span)>
-            </Sample>
-          </ThemeProvider>
-        </ThemeProvider>
+            <ThemeProvider
+              theme={
+                Object {
+                  "Sample_color": "mediumvioletred",
+                }
+              }
+            >
+              <ThemeProvider
+                theme={
+                  Object {
+                    "Sample_color": "mediumvioletred",
+                  }
+                }
+              >
+                <Sample>
+                  <glamorous(span)>
+                    <span
+                      className="css-2y20ac"
+                    >
+                      Sample
+                    </span>
+                  </glamorous(span)>
+                </Sample>
+              </ThemeProvider>
+            </ThemeProvider>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -300,17 +430,145 @@ exports[`ThemeProvider Default 1`] = `
       }
     }
   >
-    <Example>
-      <Sample>
-        <glamorous(span)>
-          <span
-            className="css-101tzpo"
+    <LiveProvider
+      code="<Sample />"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+          }
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
+              }
+            }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
-            Sample
-          </span>
-        </glamorous(span)>
-      </Sample>
-    </Example>
+            <Sample>
+              <glamorous(span)>
+                <span
+                  className="css-101tzpo"
+                >
+                  Sample
+                </span>
+              </glamorous(span)>
+            </Sample>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -449,35 +707,165 @@ exports[`ThemeProvider Global theme var override 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <ThemeProvider
-          theme={
-            Object {
-              "color_primary": "mediumvioletred",
-            }
+    <LiveProvider
+      code="<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+      <Sample />
+    </ThemeProvider>"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "ThemeProvider": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "ThemeProvider": [Function],
           }
-        >
-          <ThemeProvider
-            theme={
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
               Object {
-                "color_primary": "mediumvioletred",
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
               }
             }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
-            <Sample>
-              <glamorous(span)>
-                <span
-                  className="css-2y20ac"
-                >
-                  Sample
-                </span>
-              </glamorous(span)>
-            </Sample>
-          </ThemeProvider>
-        </ThemeProvider>
+            <ThemeProvider
+              theme={
+                Object {
+                  "color_primary": "mediumvioletred",
+                }
+              }
+            >
+              <ThemeProvider
+                theme={
+                  Object {
+                    "color_primary": "mediumvioletred",
+                  }
+                }
+              >
+                <Sample>
+                  <glamorous(span)>
+                    <span
+                      className="css-2y20ac"
+                    >
+                      Sample
+                    </span>
+                  </glamorous(span)>
+                </Sample>
+              </ThemeProvider>
+            </ThemeProvider>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -616,161 +1004,297 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
       }
     }
   >
-    <Example>
-      <div>
-        <ThemedComponent>
-          <Themed(Sample)
-            theme={
+    <LiveProvider
+      code="() => {
+      const MyThemedSample = createThemedComponent(Sample, {
+        color_primary: 'mediumvioletred'
+      });
+    
+      return <MyThemedSample />;
+    }"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "createThemedComponent": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "createThemedComponent": [Function],
+          }
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
               Object {
-                "backgroundColor_danger": "#d5362b",
-                "backgroundColor_danger_active": "#e5746a",
-                "backgroundColor_danger_focus": "#d5362b",
-                "backgroundColor_danger_hover": "#e04e43",
-                "backgroundColor_disabled": "#e6e9ee",
-                "backgroundColor_input_danger": "#fae8e6",
-                "backgroundColor_input_success": "#e2f5e8",
-                "backgroundColor_input_warning": "#fff0d7",
-                "backgroundColor_link_focus": "#e6e9ee",
-                "backgroundColor_success": "#12ba50",
-                "backgroundColor_success_active": "#4fdc80",
-                "backgroundColor_success_focus": "#12ba50",
-                "backgroundColor_success_hover": "#23c75d",
-                "backgroundColor_warning": "#cf8a00",
-                "backgroundColor_warning_active": "#eea20b",
-                "backgroundColor_warning_focus": "#cf8a00",
-                "backgroundColor_warning_hover": "#eea20b",
-                "borderColor": "#b5b8bd",
-                "borderColor_active": "#368ef5",
-                "borderColor_danger": "#b72318",
-                "borderColor_danger_active": "#991209",
-                "borderColor_danger_focus": "#991209",
-                "borderColor_danger_hover": "#d5362b",
-                "borderColor_focus": "#0d68d0",
-                "borderColor_hover": "#167df4",
-                "borderColor_success": "#09a33f",
-                "borderColor_success_active": "#016626",
-                "borderColor_success_focus": "#016626",
-                "borderColor_success_hover": "#23c75d",
-                "borderColor_warning": "#ba7c00",
-                "borderColor_warning_active": "#7f5500",
-                "borderColor_warning_focus": "#7f5500",
-                "borderColor_warning_hover": "#cf8a00",
-                "borderRadius_1": "0.5625em",
-                "borderRadius_2": "0.75em",
-                "borderRadius_3": "1.125em",
-                "borderRadius_4": "1.5em",
-                "borderRadius_5": "2.25em",
-                "color_caption": "#555a61",
-                "color_gray_10": "#f5f7fa",
-                "color_gray_100": "#171a1e",
-                "color_gray_20": "#f0f2f5",
-                "color_gray_30": "#e6e9ee",
-                "color_gray_40": "#d8dade",
-                "color_gray_50": "#b5b8bd",
-                "color_gray_60": "#909499",
-                "color_gray_70": "#676c73",
-                "color_gray_80": "#555a61",
-                "color_gray_90": "#33383f",
-                "color_heading": "#0d68d0",
-                "color_helpText_danger": "#b72318",
-                "color_helpText_success": "#09a33f",
-                "color_helpText_warning": "#976400",
-                "color_link": "#0d5db9",
-                "color_link_active": "#0d53a3",
-                "color_link_focus": "#0d53a3",
-                "color_link_hover": "#0d72e6",
-                "color_placeholder": "#909499",
-                "color_text": "#171a1e",
-                "color_text_danger": "#a81a10",
-                "color_text_disabled": "#b5b8bd",
-                "color_text_ondanger": "white",
-                "color_text_onprimary": "white",
-                "color_text_onsuccess": "white",
-                "color_text_onwarning": "white",
-                "color_text_primary": "#0d5db9",
-                "color_text_success": "#058534",
-                "color_text_warning": "#976400",
-                "color_theme_10": "#e1edfc",
-                "color_theme_100": "#0d53a3",
-                "color_theme_20": "#b8d5f9",
-                "color_theme_30": "#8ebdf7",
-                "color_theme_40": "#62a6f5",
-                "color_theme_50": "#368ef5",
-                "color_theme_60": "#167df4",
-                "color_theme_70": "#0d72e6",
-                "color_theme_80": "#0d68d0",
-                "color_theme_90": "#0d5db9",
-                "direction": "ltr",
-                "fontFamily": "Open Sans",
-                "fontFamily_monospace": "monospace",
-                "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-                "fontSize_base": "8px",
-                "fontSize_h1": "4.25em",
-                "fontSize_h2": "3.5em",
-                "fontSize_h3": "2.75em",
-                "fontSize_h4": "2.25em",
-                "fontSize_h5": "1.75em",
-                "fontSize_h6": "1.75em",
-                "fontSize_mouse": "1.375em",
-                "fontSize_prose": "2em",
-                "fontSize_ui": "1.75em",
-                "fontWeight_bold": 700,
-                "fontWeight_extraBold": 800,
-                "fontWeight_regular": 400,
-                "fontWeight_semiBold": 600,
-                "lineHeight": 1.25,
-                "lineHeight_prose": 1.5,
-                "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
-                "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
-                "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
-                "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
-                "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
-                "size_large": "5em",
-                "size_medium": "4em",
-                "size_small": "3em",
-                "spacing_double": "2em",
-                "spacing_half": "0.5em",
-                "spacing_oneAndAHalf": "1.5em",
-                "spacing_quad": "4em",
-                "spacing_quarter": "0.25em",
-                "spacing_single": "1em",
-                "zIndex_100": 100,
-                "zIndex_1600": 1600,
-                "zIndex_200": 200,
-                "zIndex_400": 400,
-                "zIndex_800": 800,
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
               }
             }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
-            <ThemeProvider
-              theme={
-                Object {
-                  "color_primary": "mediumvioletred",
-                }
-              }
-            >
-              <ThemeProvider
-                theme={
-                  Object {
-                    "color_primary": "mediumvioletred",
+            <wrappedPFC>
+              <ThemedComponent>
+                <Themed(Sample)
+                  theme={
+                    Object {
+                      "backgroundColor_danger": "#d5362b",
+                      "backgroundColor_danger_active": "#e5746a",
+                      "backgroundColor_danger_focus": "#d5362b",
+                      "backgroundColor_danger_hover": "#e04e43",
+                      "backgroundColor_disabled": "#e6e9ee",
+                      "backgroundColor_input_danger": "#fae8e6",
+                      "backgroundColor_input_success": "#e2f5e8",
+                      "backgroundColor_input_warning": "#fff0d7",
+                      "backgroundColor_link_focus": "#e6e9ee",
+                      "backgroundColor_success": "#12ba50",
+                      "backgroundColor_success_active": "#4fdc80",
+                      "backgroundColor_success_focus": "#12ba50",
+                      "backgroundColor_success_hover": "#23c75d",
+                      "backgroundColor_warning": "#cf8a00",
+                      "backgroundColor_warning_active": "#eea20b",
+                      "backgroundColor_warning_focus": "#cf8a00",
+                      "backgroundColor_warning_hover": "#eea20b",
+                      "borderColor": "#b5b8bd",
+                      "borderColor_active": "#368ef5",
+                      "borderColor_danger": "#b72318",
+                      "borderColor_danger_active": "#991209",
+                      "borderColor_danger_focus": "#991209",
+                      "borderColor_danger_hover": "#d5362b",
+                      "borderColor_focus": "#0d68d0",
+                      "borderColor_hover": "#167df4",
+                      "borderColor_success": "#09a33f",
+                      "borderColor_success_active": "#016626",
+                      "borderColor_success_focus": "#016626",
+                      "borderColor_success_hover": "#23c75d",
+                      "borderColor_warning": "#ba7c00",
+                      "borderColor_warning_active": "#7f5500",
+                      "borderColor_warning_focus": "#7f5500",
+                      "borderColor_warning_hover": "#cf8a00",
+                      "borderRadius_1": "0.5625em",
+                      "borderRadius_2": "0.75em",
+                      "borderRadius_3": "1.125em",
+                      "borderRadius_4": "1.5em",
+                      "borderRadius_5": "2.25em",
+                      "color_caption": "#555a61",
+                      "color_gray_10": "#f5f7fa",
+                      "color_gray_100": "#171a1e",
+                      "color_gray_20": "#f0f2f5",
+                      "color_gray_30": "#e6e9ee",
+                      "color_gray_40": "#d8dade",
+                      "color_gray_50": "#b5b8bd",
+                      "color_gray_60": "#909499",
+                      "color_gray_70": "#676c73",
+                      "color_gray_80": "#555a61",
+                      "color_gray_90": "#33383f",
+                      "color_heading": "#0d68d0",
+                      "color_helpText_danger": "#b72318",
+                      "color_helpText_success": "#09a33f",
+                      "color_helpText_warning": "#976400",
+                      "color_link": "#0d5db9",
+                      "color_link_active": "#0d53a3",
+                      "color_link_focus": "#0d53a3",
+                      "color_link_hover": "#0d72e6",
+                      "color_placeholder": "#909499",
+                      "color_text": "#171a1e",
+                      "color_text_danger": "#a81a10",
+                      "color_text_disabled": "#b5b8bd",
+                      "color_text_ondanger": "white",
+                      "color_text_onprimary": "white",
+                      "color_text_onsuccess": "white",
+                      "color_text_onwarning": "white",
+                      "color_text_primary": "#0d5db9",
+                      "color_text_success": "#058534",
+                      "color_text_warning": "#976400",
+                      "color_theme_10": "#e1edfc",
+                      "color_theme_100": "#0d53a3",
+                      "color_theme_20": "#b8d5f9",
+                      "color_theme_30": "#8ebdf7",
+                      "color_theme_40": "#62a6f5",
+                      "color_theme_50": "#368ef5",
+                      "color_theme_60": "#167df4",
+                      "color_theme_70": "#0d72e6",
+                      "color_theme_80": "#0d68d0",
+                      "color_theme_90": "#0d5db9",
+                      "direction": "ltr",
+                      "fontFamily": "Open Sans",
+                      "fontFamily_monospace": "monospace",
+                      "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+                      "fontSize_base": "8px",
+                      "fontSize_h1": "4.25em",
+                      "fontSize_h2": "3.5em",
+                      "fontSize_h3": "2.75em",
+                      "fontSize_h4": "2.25em",
+                      "fontSize_h5": "1.75em",
+                      "fontSize_h6": "1.75em",
+                      "fontSize_mouse": "1.375em",
+                      "fontSize_prose": "2em",
+                      "fontSize_ui": "1.75em",
+                      "fontWeight_bold": 700,
+                      "fontWeight_extraBold": 800,
+                      "fontWeight_regular": 400,
+                      "fontWeight_semiBold": 600,
+                      "lineHeight": 1.25,
+                      "lineHeight_prose": 1.5,
+                      "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+                      "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+                      "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+                      "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+                      "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+                      "size_large": "5em",
+                      "size_medium": "4em",
+                      "size_small": "3em",
+                      "spacing_double": "2em",
+                      "spacing_half": "0.5em",
+                      "spacing_oneAndAHalf": "1.5em",
+                      "spacing_quad": "4em",
+                      "spacing_quarter": "0.25em",
+                      "spacing_single": "1em",
+                      "zIndex_100": 100,
+                      "zIndex_1600": 1600,
+                      "zIndex_200": 200,
+                      "zIndex_400": 400,
+                      "zIndex_800": 800,
+                    }
                   }
-                }
-              >
-                <Sample>
-                  <glamorous(span)>
-                    <span
-                      className="css-2y20ac"
+                >
+                  <ThemeProvider
+                    theme={
+                      Object {
+                        "color_primary": "mediumvioletred",
+                      }
+                    }
+                  >
+                    <ThemeProvider
+                      theme={
+                        Object {
+                          "color_primary": "mediumvioletred",
+                        }
+                      }
                     >
-                      Sample
-                    </span>
-                  </glamorous(span)>
-                </Sample>
-              </ThemeProvider>
-            </ThemeProvider>
-          </Themed(Sample)>
-        </ThemedComponent>
+                      <Sample>
+                        <glamorous(span)>
+                          <span
+                            className="css-2y20ac"
+                          >
+                            Sample
+                          </span>
+                        </glamorous(span)>
+                      </Sample>
+                    </ThemeProvider>
+                  </ThemeProvider>
+                </Themed(Sample)>
+              </ThemedComponent>
+            </wrappedPFC>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -909,51 +1433,183 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <ThemeProvider
-          theme={
-            Object {
-              "color_primary": "cyan",
-            }
+    <LiveProvider
+      code="<ThemeProvider theme={{ color_primary: 'cyan' }}>
+      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <Sample />
+      </ThemeProvider>
+    </ThemeProvider>"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "ThemeProvider": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "ThemeProvider": [Function],
           }
-        >
-          <ThemeProvider
-            theme={
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
               Object {
-                "color_primary": "cyan",
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
               }
             }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
             <ThemeProvider
               theme={
                 Object {
-                  "color_primary": "mediumvioletred",
+                  "color_primary": "cyan",
                 }
               }
             >
               <ThemeProvider
                 theme={
                   Object {
-                    "color_primary": "mediumvioletred",
+                    "color_primary": "cyan",
                   }
                 }
               >
-                <Sample>
-                  <glamorous(span)>
-                    <span
-                      className="css-2y20ac"
-                    >
-                      Sample
-                    </span>
-                  </glamorous(span)>
-                </Sample>
+                <ThemeProvider
+                  theme={
+                    Object {
+                      "color_primary": "mediumvioletred",
+                    }
+                  }
+                >
+                  <ThemeProvider
+                    theme={
+                      Object {
+                        "color_primary": "mediumvioletred",
+                      }
+                    }
+                  >
+                    <Sample>
+                      <glamorous(span)>
+                        <span
+                          className="css-2y20ac"
+                        >
+                          Sample
+                        </span>
+                      </glamorous(span)>
+                    </Sample>
+                  </ThemeProvider>
+                </ThemeProvider>
               </ThemeProvider>
             </ThemeProvider>
-          </ThemeProvider>
-        </ThemeProvider>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -1092,51 +1748,183 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <ThemeProvider
-          theme={
-            Object {
-              "color_primary": "mediumvioletred",
-            }
+    <LiveProvider
+      code="<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+      <ThemeProvider theme={{ color_warning: 'tomato' }}>
+        <Sample />
+      </ThemeProvider>
+    </ThemeProvider>"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "ThemeProvider": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "ThemeProvider": [Function],
           }
-        >
-          <ThemeProvider
-            theme={
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
               Object {
-                "color_primary": "mediumvioletred",
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
               }
             }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
             <ThemeProvider
               theme={
                 Object {
-                  "color_warning": "tomato",
+                  "color_primary": "mediumvioletred",
                 }
               }
             >
               <ThemeProvider
                 theme={
                   Object {
-                    "color_warning": "tomato",
+                    "color_primary": "mediumvioletred",
                   }
                 }
               >
-                <Sample>
-                  <glamorous(span)>
-                    <span
-                      className="css-2y20ac"
-                    >
-                      Sample
-                    </span>
-                  </glamorous(span)>
-                </Sample>
+                <ThemeProvider
+                  theme={
+                    Object {
+                      "color_warning": "tomato",
+                    }
+                  }
+                >
+                  <ThemeProvider
+                    theme={
+                      Object {
+                        "color_warning": "tomato",
+                      }
+                    }
+                  >
+                    <Sample>
+                      <glamorous(span)>
+                        <span
+                          className="css-2y20ac"
+                        >
+                          Sample
+                        </span>
+                      </glamorous(span)>
+                    </Sample>
+                  </ThemeProvider>
+                </ThemeProvider>
               </ThemeProvider>
             </ThemeProvider>
-          </ThemeProvider>
-        </ThemeProvider>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -1281,25 +2069,162 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <glamorous(Sample)>
-          <Sample
-            className="css-zh4jpr"
+    <LiveProvider
+      code="() => {
+      const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+        outline: '3px dashed mediumvioletred',
+        fontSize: theme.fontSize_h1
+      }));
+    
+      return <MyStyledSample />;
+    }"
+      mountStylesheet={true}
+      noInline={false}
+      scope={
+        Object {
+          "Sample": [Function],
+          "createStyledComponent": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Sample": [Function],
+            "createStyledComponent": [Function],
+          }
+        }
+      >
+        <Component>
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "
+              .prism-code {
+                display: block;
+                white-space: pre;
+              
+                background-color: #1D1F21;
+                color: #C5C8C6;
+              
+                padding: 0.5rem;
+                margin: 0;
+              
+                box-sizing: border-box;
+                vertical-align: baseline;
+                outline: none;
+                text-shadow: none;
+                -webkit-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+                word-wrap: normal;
+                word-break: normal;
+                text-align: left;
+                word-spacing: normal;
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+              }
+              
+              .token.comment,
+              .token.prolog,
+              .token.doctype,
+              .token.cdata {
+                color: hsl(30, 20%, 50%);
+              }
+              
+              .token.punctuation {
+                opacity: .7;
+              }
+              
+              .namespace {
+                opacity: .7;
+              }
+              
+              .token.property,
+              .token.tag,
+              .token.boolean,
+              .token.number,
+              .token.constant,
+              .token.symbol {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.selector,
+              .token.attr-name,
+              .token.string,
+              .token.char,
+              .token.builtin,
+              .token.inserted {
+                color: hsl(75, 70%, 60%);
+              }
+              
+              .token.operator,
+              .token.entity,
+              .token.url,
+              .language-css .token.string,
+              .style .token.string,
+              .token.variable {
+                color: hsl(40, 90%, 60%);
+              }
+              
+              .token.atrule,
+              .token.attr-value,
+              .token.keyword {
+                color: hsl(350, 40%, 70%);
+              }
+              
+              .token.regex,
+              .token.important {
+                color: #e90;
+              }
+              
+              .token.important,
+              .token.bold {
+                font-weight: bold;
+              }
+              .token.italic {
+                font-style: italic;
+              }
+              
+              .token.entity {
+                cursor: help;
+              }
+              
+              .token.deleted {
+                color: red;
+              }
+              ",
+              }
+            }
+          />
+        </Component>
+        <LivePreview>
+          <div
+            className="react-live-preview"
           >
-            <glamorous(span)
-              className="css-zh4jpr"
-            >
-              <span
-                className="css-1gfyggc"
-              >
-                Sample
-              </span>
-            </glamorous(span)>
-          </Sample>
-        </glamorous(Sample)>
+            <wrappedPFC>
+              <glamorous(Sample)>
+                <Sample
+                  className="css-zh4jpr"
+                >
+                  <glamorous(span)
+                    className="css-zh4jpr"
+                  >
+                    <span
+                      className="css-1gfyggc"
+                    >
+                      Sample
+                    </span>
+                  </glamorous(span)>
+                </Sample>
+              </glamorous(Sample)>
+            </wrappedPFC>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
