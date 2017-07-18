@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
+// $FlowFixMe
 import Button from '@mineral-ui/button';
 import Card from '../../../Card';
 import CardTitle from '../../../CardTitle';
