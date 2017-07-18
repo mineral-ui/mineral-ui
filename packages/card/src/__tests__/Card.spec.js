@@ -19,7 +19,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Card from '../Card';
 import cardExamples from '../__demo__/examples/cardIndex';
-import cardActionsExamples from '../__demo__/examples/cardActionsIndex';
 import cardBlockExamples from '../__demo__/examples/cardBlockIndex';
 import cardImageExamples from '../__demo__/examples/cardImageIndex';
 import cardTitleExamples from '../__demo__/examples/cardTitleIndex';
@@ -27,7 +26,6 @@ import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
 const examples = [].concat(
   cardExamples,
-  cardActionsExamples,
   cardBlockExamples,
   cardImageExamples,
   cardTitleExamples

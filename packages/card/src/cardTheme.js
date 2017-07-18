@@ -22,9 +22,6 @@ export default function cardTheme(baseTheme: Object) {
     Card_boxShadow: baseTheme.shadow_1,
     Card_paddingBottom: baseTheme.spacing_double,
 
-    CardActions_padding: baseTheme.spacing_double,
-    CardActions_marginTop: baseTheme.spacing_triple,
-
     CardBlock_fontSize: baseTheme.fontSize_prose,
     CardBlock_lineHeight: baseTheme.lineHeight_prose,
 

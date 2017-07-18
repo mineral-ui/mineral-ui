@@ -16,13 +16,11 @@
 
 /* @flow */
 import cardExamples from './examples/cardIndex';
-import cardActionsExamples from './examples/cardActionsIndex';
 import cardBlockExamples from './examples/cardBlockIndex';
 import cardImageExamples from './examples/cardImageIndex';
 import cardTitleExamples from './examples/cardTitleIndex';
 
 const cardDoc = require('!!react-docgen-loader!../Card.js');
-const cardActionsDoc = require('!!react-docgen-loader!../CardActions.js');
 const cardBlockDoc = require('!!react-docgen-loader!../CardBlock.js');
 const cardImageDoc = require('!!react-docgen-loader!../CardImage.js');
 const cardTitleDoc = require('!!react-docgen-loader!../CardTitle.js');
@@ -35,15 +33,6 @@ export default [
     examples: cardExamples,
     slug: 'card',
     title: 'Card'
-  },
-  {
-    behavior: 'behavior dummy text for the card actions component',
-    design: 'design theory about the card actions component',
-    doc: cardActionsDoc,
-    examples: cardActionsExamples,
-    slug: 'card-actions',
-    subcomponent: true,
-    title: 'CardActions'
   },
   {
     behavior: 'behavior dummy text for the card block component',
