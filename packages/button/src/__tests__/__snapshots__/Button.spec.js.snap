@@ -238,7 +238,7 @@ exports[`Button Button 1`] = `
   >
     <LiveProvider
       code="<Button>Do Something</Button>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -254,110 +254,6 @@ exports[`Button Button 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -843,7 +739,7 @@ exports[`Button Danger 1`] = `
       <Button variant=\\"danger\\" primary>Primary</Button>
       <Button variant=\\"danger\\" minimal>Minimal</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -861,110 +757,6 @@ exports[`Button Danger 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -1497,7 +1289,7 @@ exports[`Button Disabled 1`] = `
       <Button disabled primary>Primary</Button>
       <Button disabled minimal>Minimal</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -1515,110 +1307,6 @@ exports[`Button Disabled 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -1958,7 +1646,7 @@ exports[`Button Full Width 1`] = `
   >
     <LiveProvider
       code="<Button fullWidth>Do Something</Button>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -1974,110 +1662,6 @@ exports[`Button Full Width 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -2352,7 +1936,7 @@ exports[`Button Minimal 1`] = `
   >
     <LiveProvider
       code="<Button minimal>Do Something</Button>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -2368,110 +1952,6 @@ exports[`Button Minimal 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -2752,7 +2232,7 @@ exports[`Button Primary 1`] = `
   >
     <LiveProvider
       code="<Button primary>Do Something</Button>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -2768,110 +2248,6 @@ exports[`Button Primary 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -3367,7 +2743,7 @@ exports[`Button Sizes 1`] = `
       <Button>Medium</Button>
       <Button size=\\"large\\">Large</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -3385,110 +2761,6 @@ exports[`Button Sizes 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -5671,7 +4943,7 @@ exports[`Button States 1`] = `
       <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
       <br /><br />
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -5691,110 +4963,6 @@ exports[`Button States 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -8717,7 +7885,7 @@ exports[`Button Success 1`] = `
       <Button variant=\\"success\\" primary>Primary</Button>
       <Button variant=\\"success\\" minimal>Minimal</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -8735,110 +7903,6 @@ exports[`Button Success 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -9178,7 +8242,7 @@ exports[`Button Truncation 1`] = `
       code="<Root>
       <Button>Do Something</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -9196,110 +8260,6 @@ exports[`Button Truncation 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"
@@ -9791,7 +8751,7 @@ exports[`Button Warning 1`] = `
       <Button variant=\\"warning\\" primary>Primary</Button>
       <Button variant=\\"warning\\" minimal>Minimal</Button>
     </Root>"
-      mountStylesheet={true}
+      mountStylesheet={false}
       noInline={false}
       scope={
         Object {
@@ -9809,110 +8769,6 @@ exports[`Button Warning 1`] = `
           }
         }
       >
-        <Component>
-          <style
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "
-              .prism-code {
-                display: block;
-                white-space: pre;
-              
-                background-color: #1D1F21;
-                color: #C5C8C6;
-              
-                padding: 0.5rem;
-                margin: 0;
-              
-                box-sizing: border-box;
-                vertical-align: baseline;
-                outline: none;
-                text-shadow: none;
-                -webkit-hyphens: none;
-                -ms-hyphens: none;
-                hyphens: none;
-                word-wrap: normal;
-                word-break: normal;
-                text-align: left;
-                word-spacing: normal;
-                -moz-tab-size: 2;
-                -o-tab-size: 2;
-                tab-size: 2;
-              }
-              
-              .token.comment,
-              .token.prolog,
-              .token.doctype,
-              .token.cdata {
-                color: hsl(30, 20%, 50%);
-              }
-              
-              .token.punctuation {
-                opacity: .7;
-              }
-              
-              .namespace {
-                opacity: .7;
-              }
-              
-              .token.property,
-              .token.tag,
-              .token.boolean,
-              .token.number,
-              .token.constant,
-              .token.symbol {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.selector,
-              .token.attr-name,
-              .token.string,
-              .token.char,
-              .token.builtin,
-              .token.inserted {
-                color: hsl(75, 70%, 60%);
-              }
-              
-              .token.operator,
-              .token.entity,
-              .token.url,
-              .language-css .token.string,
-              .style .token.string,
-              .token.variable {
-                color: hsl(40, 90%, 60%);
-              }
-              
-              .token.atrule,
-              .token.attr-value,
-              .token.keyword {
-                color: hsl(350, 40%, 70%);
-              }
-              
-              .token.regex,
-              .token.important {
-                color: #e90;
-              }
-              
-              .token.important,
-              .token.bold {
-                font-weight: bold;
-              }
-              .token.italic {
-                font-style: italic;
-              }
-              
-              .token.entity {
-                cursor: help;
-              }
-              
-              .token.deleted {
-                color: red;
-              }
-              ",
-              }
-            }
-          />
-        </Component>
         <LivePreview>
           <div
             className="react-live-preview"

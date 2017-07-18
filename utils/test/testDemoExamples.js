@@ -44,7 +44,10 @@ export default function testDemoExamples(
     it(example.title, () => {
       const component = mount(
         <ThemeProvider>
-          <LiveProvider code={example.source} scope={example.scope}>
+          <LiveProvider
+            code={example.source}
+            scope={example.scope}
+            mountStylesheet={false}>
             <LivePreview />
           </LiveProvider>
         </ThemeProvider>
