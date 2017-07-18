@@ -15,13 +15,13 @@
  */
 
 /* @flow */
+import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import cardTheme from './cardTheme';
 
-/**
- * Card image component
- */
-export default createStyledComponent(
+type Props = Object;
+
+const Root = createStyledComponent(
   'img',
   (props, baseTheme) => {
     const theme = cardTheme(baseTheme);
@@ -48,3 +48,10 @@ export default createStyledComponent(
     rootEl: 'img'
   }
 );
+
+/**
+ * Card image component
+ */
+export default function CardImage(props: Props) {
+  return <Root {...props} />;
+}
