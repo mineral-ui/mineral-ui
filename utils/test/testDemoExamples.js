@@ -19,7 +19,6 @@ import React from 'react';
 import { mount } from 'enzyme';
 // $FlowFixMe
 import { ThemeProvider } from '@mineral-ui/component-utils';
-// $FlowFixMe
 import { LiveProvider, LivePreview } from 'react-live';
 
 type Example = {

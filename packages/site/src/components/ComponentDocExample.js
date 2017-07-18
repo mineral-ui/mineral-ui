@@ -18,7 +18,6 @@
 import React, { Component } from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
-// $FlowFixMe
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
