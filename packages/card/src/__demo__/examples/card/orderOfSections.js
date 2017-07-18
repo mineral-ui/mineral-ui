@@ -15,14 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import { createStyledComponent, mineralTheme } from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 import CardImage from '../../../CardImage';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   alignItems: 'flex-start',
   display: 'flex',
 
@@ -35,47 +34,12 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-        <CardTitle minor>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardImage src="http://fillmurray.com/1001/563" alt="Bill Murray" />
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-        <CardImage src="http://fillmurray.com/1002/563" alt="Bill Murray" />
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'Order of sections',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description: 'The sections of Card are designed to work in any order.',
-  source: `<Root>
+  scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
+  source: `<DemoLayout>
     <Card>
       <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
       <CardTitle minor>Card title</CardTitle>
@@ -105,5 +69,5 @@ export default {
       </CardBlock>
       <CardImage src="http://fillmurray.com/1002/563" alt="Bill Murray" />
     </Card>
-  </Root>`
+  </DemoLayout>`
 };

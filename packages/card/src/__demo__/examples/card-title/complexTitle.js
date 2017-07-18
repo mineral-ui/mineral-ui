@@ -15,63 +15,58 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > *': {
     width: '33.333%'
   }
 });
 
-const Status = createStyledComponent('span', {
-  color: 'red',
-  fontSize: '0.6em',
-
-  '&:before': {
-    backgroundColor: 'red',
-    borderRadius: '0.8em',
-    content: '""',
-    display: 'inline-block',
-    height: '0.8em',
-    marginRight: '0.5em',
-    position: 'relative',
-    top: '0.1em',
-    width: '0.8em'
-  }
-});
-
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle subtitle={<em>Subtitle</em>}>
-          Card title<br />
-          <Status>Status label</Status>
-        </CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'Complex title and subtitle',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description:
     'Both the title and subtitle can contain a simple string or any HTML/React elements.',
-  source: `<Card>
-  <CardTitle subtitle={<em>Subtitle</em>}>
-    Card title<br />
-    <Status>Status label</Status>
-  </CardTitle>
-  <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-</Card>`
+  scope: { Card, CardTitle, CardBlock, createStyledComponent, DemoLayout },
+  source: `() => {
+    const Status = createStyledComponent('span', {
+      color: 'red',
+      fontSize: '0.6em',
+
+      '&:before': {
+        backgroundColor: 'red',
+        borderRadius: '0.8em',
+        content: '""',
+        display: 'inline-block',
+        height: '0.8em',
+        marginRight: '0.5em',
+        position: 'relative',
+        top: '0.1em',
+        width: '0.8em'
+      }
+    });
+
+    return (
+      <DemoLayout>
+        <Card>
+          <CardTitle subtitle={<em>Subtitle</em>}>
+            Card title<br />
+            <Status>Status label</Status>
+          </CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>
+    );
+  }`
 };

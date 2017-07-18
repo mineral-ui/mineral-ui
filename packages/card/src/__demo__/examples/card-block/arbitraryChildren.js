@@ -15,60 +15,40 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
 // $FlowFixMe
 import Button from '@mineral-ui/button';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > *': {
     width: '33.333%'
   }
 });
 const CustomContent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_gray_10,
+  backgroundColor: theme.color_gray_20,
   padding: `${theme.spacing_double} 0`
 }));
 
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          <CustomContent>
-            <Button fullWidth>Button</Button>
-          </CustomContent>
-        </CardBlock>
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'Arbitrary children',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description:
     'A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.',
-  source: `const CustomContent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_gray_10
-}));
-
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          <CustomContent>
-            <Button fullWidth>Button</Button>
-          </CustomContent>
-        </CardBlock>
-      </Card>
-    </Root>
-  );
-}`
+  scope: { Button, Card, CardBlock, CardTitle, CustomContent, DemoLayout },
+  source: `<DemoLayout>
+    <Card>
+      <CardTitle>Card title</CardTitle>
+      <CardBlock>
+        <CustomContent>
+          <Button fullWidth>Button</Button>
+        </CustomContent>
+      </CardBlock>
+    </Card>
+  </DemoLayout>`
 };

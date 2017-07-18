@@ -15,39 +15,33 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > *': {
     width: '33.333%'
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle subtitle="Card subtitle">Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'With a subtitle',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',
-  source: `<Card>
-  <CardTitle subtitle="Card subtitle">Card title</CardTitle>
-  <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-</Card>`
+  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  source: `<DemoLayout>
+    <Card>
+      <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+      <CardBlock>
+        Light years star stuff harvesting star light citizens of distant
+        epochs encyclopaedia galactica vastness is bearable only through love,
+        shores of the cosmic ocean!
+      </CardBlock>
+    </Card>
+  </DemoLayout>`
 };

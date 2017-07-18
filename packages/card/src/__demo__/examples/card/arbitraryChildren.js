@@ -15,20 +15,22 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
 // $FlowFixMe
 import Button from '@mineral-ui/button';
 import Card from '../../../Card';
 import CardTitle from '../../../CardTitle';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > *': {
     width: '33.333%'
   }
 });
 const CustomContent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_gray_10,
+  backgroundColor: theme.color_gray_20,
   margin: `${theme.spacing_double} 0`,
   padding: theme.spacing_triple,
 
@@ -38,45 +40,18 @@ const CustomContent = createStyledComponent('div', (props, theme) => ({
   }
 }));
 
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CustomContent>
-          <Button fullWidth>Button</Button>
-        </CustomContent>
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'Arbitrary children',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description:
     'A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.',
-  source: `const CustomContent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_gray_10,
-  margin: \`\${theme.spacing_double} 0\`,
-  padding: theme.spacing_triple,
-
-  '&:last-child': {
-    borderRadius: \`0 0 \${theme.borderRadius_1} \${theme.borderRadius_1}\`,
-    marginBottom: \`-\${theme.spacing_double}\`
-  }
-}));
-
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CustomContent>
-          <Button fullWidth>Button</Button>
-        </CustomContent>
-      </Card>
-    </Root>
-  );
-}`
+  scope: { Button, Card, CardTitle, CustomContent, DemoLayout },
+  source: `<DemoLayout>
+    <Card>
+      <CardTitle>Card title</CardTitle>
+      <CustomContent>
+        <Button fullWidth>Button</Button>
+      </CustomContent>
+    </Card>
+  </DemoLayout>`
 };

@@ -15,16 +15,16 @@
  */
 
 /* @flow */
-import React from 'react';
 import {
   createStyledComponent,
-  getNormalizedValue
+  getNormalizedValue,
+  mineralTheme
 } from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import _CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > *': {
     width: '33.333%'
   }
@@ -46,34 +46,20 @@ const CardBlock = createStyledComponent(_CardBlock, (props, theme) => ({
   }
 }));
 
-function Example() {
-  return (
-    <Root>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </Root>
-  );
-}
-
 export default {
   title: 'Consistent spacing',
-  component: Example,
+  backgroundColor: mineralTheme.color_gray_10,
   description:
     'CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).',
-  source: `<Root>
-  <Card>
-    <CardTitle>Card title</CardTitle>
-    <CardBlock>
-      Light years star stuff harvesting star light citizens of distant
-      epochs encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </CardBlock>
-  </Card>
-</Root>`
+  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  source: `<DemoLayout>
+    <Card>
+      <CardTitle>Card title</CardTitle>
+      <CardBlock>
+        Light years star stuff harvesting star light citizens of distant
+        epochs encyclopaedia galactica vastness is bearable only through love,
+        shores of the cosmic ocean!
+      </CardBlock>
+    </Card>
+  </DemoLayout>`
 };
