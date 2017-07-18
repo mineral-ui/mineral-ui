@@ -15,22 +15,16 @@
  */
 
 /* @flow */
-import React from 'react';
-import { shallow } from 'enzyme';
-import Card from '../Card';
-import examples from '../__demo__/examples';
-import testDemoExamples from '../../../../utils/test/testDemoExamples';
+import cardExamples from './card';
+import cardBlockExamples from './card-block';
+import cardImageExamples from './card-image';
+import cardTitleExamples from './card-title';
 
-function renderCard(children) {
-  return shallow(<Card>{children}</Card>);
-}
+const examples = [].concat(
+  cardExamples,
+  cardBlockExamples,
+  cardImageExamples,
+  cardTitleExamples
+);
 
-describe('Card', () => {
-  it('renders', () => {
-    const card = renderCard('Children');
-
-    expect(card.exists()).toEqual(true);
-  });
-
-  testDemoExamples(examples);
-});
+export default examples;

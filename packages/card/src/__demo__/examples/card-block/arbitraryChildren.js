@@ -39,7 +39,7 @@ function Example() {
         <CardTitle>Card title</CardTitle>
         <CardBlock>
           <CustomContent>
-            <Button fullWidth onClick={() => {}}>Button</Button>
+            <Button fullWidth>Button</Button>
           </CustomContent>
         </CardBlock>
       </Card>
@@ -63,7 +63,7 @@ function Example() {
         <CardTitle>Card title</CardTitle>
         <CardBlock>
           <CustomContent>
-            <Button fullWidth onClick={() => {}}>Button</Button>
+            <Button fullWidth>Button</Button>
           </CustomContent>
         </CardBlock>
       </Card>
