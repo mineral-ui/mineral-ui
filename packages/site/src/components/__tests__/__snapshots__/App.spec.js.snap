@@ -298,46 +298,57 @@ exports[`App renders correctly 1`] = `
             },
             "examples": Array [
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.",
-                "source": "<Card>
-          <CardTitle>Card title</CardTitle>
-          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-        </Card>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "Basic card",
               },
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.",
-                "source": "const CustomContent = createStyledComponent('div', (props, theme) => ({
-          backgroundColor: theme.color_gray_10,
-          margin: \`\${theme.spacing_double} 0\`,
-          padding: theme.spacing_triple,
-        
-          '&:last-child': {
-            borderRadius: \`0 0 \${theme.borderRadius_1} \${theme.borderRadius_1}\`,
-            marginBottom: \`-\${theme.spacing_double}\`
-          }
-        }));
-        
-        function Example() {
-          return (
-            <Root>
-              <Card>
-                <CardTitle>Card title</CardTitle>
-                <CustomContent>
-                  <Button fullWidth>Button</Button>
-                </CustomContent>
-              </Card>
-            </Root>
-          );
-        }",
+                "scope": Object {
+                  "Button": [Function],
+                  "Card": [Function],
+                  "CardTitle": [Function],
+                  "CustomContent": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CustomContent>
+                <Button fullWidth>Button</Button>
+              </CustomContent>
+            </Card>
+          </DemoLayout>",
                 "title": "Arbitrary children",
               },
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "The sections of Card are designed to work in any order.",
-                "source": "<Root>
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
             <Card>
               <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
               <CardTitle minor>Card title</CardTitle>
@@ -367,7 +378,7 @@ exports[`App renders correctly 1`] = `
               </CardBlock>
               <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
             </Card>
-          </Root>",
+          </DemoLayout>",
                 "title": "Order of sections",
               },
             ],
@@ -382,41 +393,47 @@ exports[`App renders correctly 1`] = `
             },
             "examples": Array [
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).",
-                "source": "<Root>
-          <Card>
-            <CardTitle>Card title</CardTitle>
-            <CardBlock>
-              Light years star stuff harvesting star light citizens of distant
-              epochs encyclopaedia galactica vastness is bearable only through love,
-              shores of the cosmic ocean!
-            </CardBlock>
-          </Card>
-        </Root>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "Consistent spacing",
               },
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.",
-                "source": "const CustomContent = createStyledComponent('div', (props, theme) => ({
-          backgroundColor: theme.color_gray_10
-        }));
-        
-        function Example() {
-          return (
-            <Root>
-              <Card>
-                <CardTitle>Card title</CardTitle>
-                <CardBlock>
-                  <CustomContent>
-                    <Button fullWidth>Button</Button>
-                  </CustomContent>
-                </CardBlock>
-              </Card>
-            </Root>
-          );
-        }",
+                "scope": Object {
+                  "Button": [Function],
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "CustomContent": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CardBlock>
+                <CustomContent>
+                  <Button fullWidth>Button</Button>
+                </CustomContent>
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "Arbitrary children",
               },
             ],
@@ -432,13 +449,26 @@ exports[`App renders correctly 1`] = `
             },
             "examples": Array [
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
-                "source": "<Card>
-          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-          <CardTitle minor>Card title</CardTitle>
-          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-        </Card>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+              <CardTitle minor>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "With an image",
               },
             ],
@@ -454,38 +484,93 @@ exports[`App renders correctly 1`] = `
             },
             "examples": Array [
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "In addition to a title, a Card can display a subtitle.",
-                "source": "<Card>
-          <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
-          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-        </Card>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "With a subtitle",
               },
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "Both the title and subtitle can contain a simple string or any HTML/React elements.",
-                "source": "<Card>
-          <CardTitle subtitle={<em>Subtitle</em>}>
-            Card title<br />
-            <Status>Status label</Status>
-          </CardTitle>
-          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
-        </Card>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                  "createStyledComponent": [Function],
+                },
+                "source": "() => {
+            const Status = createStyledComponent('span', {
+              color: 'red',
+              fontSize: '0.6em',
+        
+              '&:before': {
+                backgroundColor: 'red',
+                borderRadius: '0.8em',
+                content: '\\"\\"',
+                display: 'inline-block',
+                height: '0.8em',
+                marginRight: '0.5em',
+                position: 'relative',
+                top: '0.1em',
+                width: '0.8em'
+              }
+            });
+        
+            return (
+              <DemoLayout>
+                <Card>
+                  <CardTitle subtitle={<em>Subtitle</em>}>
+                    Card title<br />
+                    <Status>Status label</Status>
+                  </CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>
+            );
+          }",
                 "title": "Complex title and subtitle",
               },
               Object {
-                "component": [Function],
+                "backgroundColor": "#f5f7fa",
                 "description": "The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.",
-                "source": "<Card>
-          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-          <CardTitle minor>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+            <Card>
+              <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+              <CardTitle minor>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+          </DemoLayout>",
                 "title": "Minor title",
               },
             ],

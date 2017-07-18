@@ -48,17 +48,17 @@ exports[`Card Arbitrary children 1`] = `
   margin: 0;
 }
 
-.css-ca2prh,
-[data-css-ca2prh] {
-  background-color: #f5f7fa;
+.css-ytdnjn,
+[data-css-ytdnjn] {
+  background-color: #f0f2f5;
   margin: 2em 0;
   padding: 3em;
 }
 
-.css-ca2prh:last-child,
-[data-css-ca2prh]:last-child,
-.css-ca2prh[data-simulate-lastchild],
-[data-css-ca2prh][data-simulate-lastchild] {
+.css-ytdnjn:last-child,
+[data-css-ytdnjn]:last-child,
+.css-ytdnjn[data-simulate-lastchild],
+[data-css-ytdnjn][data-simulate-lastchild] {
   border-radius: 0 0 0.5625em 0.5625em;
   margin-bottom: -2em;
 }
@@ -302,68 +302,107 @@ exports[`Card Arbitrary children 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CustomContent>
+            <Button fullWidth>Button</Button>
+          </CustomContent>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Button": [Function],
+          "Card": [Function],
+          "CardTitle": [Function],
+          "CustomContent": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "Card": [Function],
+            "CardTitle": [Function],
+            "CustomContent": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardTitle>
-                  <CardTitle>
+                <Card>
+                  <Card>
                     <div
-                      className="css-2xuam4"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
-                        >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
-                    </div>
-                  </CardTitle>
-                </CardTitle>
-                <glamorous(div)>
-                  <div
-                    className="css-ca2prh"
-                  >
-                    <Button
-                      fullWidth={true}
-                    >
-                      <glamorous(button)
-                        fullWidth={true}
-                        size="medium"
-                        type="button"
-                        variant="regular"
-                      >
-                        <button
-                          className="css-eigxao"
-                          type="button"
-                        >
-                          <glamorous(span)
-                            size="medium"
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
                           >
-                            <span
-                              className="css-y37dx1"
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <glamorous(div)>
+                        <div
+                          className="css-ytdnjn"
+                        >
+                          <Button
+                            fullWidth={true}
+                          >
+                            <glamorous(button)
+                              fullWidth={true}
+                              size="medium"
+                              type="button"
+                              variant="regular"
                             >
-                              Button
-                            </span>
-                          </glamorous(span)>
-                        </button>
-                      </glamorous(button)>
-                    </Button>
-                  </div>
-                </glamorous(div)>
+                              <button
+                                className="css-eigxao"
+                                type="button"
+                              >
+                                <glamorous(span)
+                                  size="medium"
+                                >
+                                  <span
+                                    className="css-y37dx1"
+                                  >
+                                    Button
+                                  </span>
+                                </glamorous(span)>
+                              </button>
+                            </glamorous(button)>
+                          </Button>
+                        </div>
+                      </glamorous(div)>
+                    </div>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -538,9 +577,9 @@ exports[`Card Arbitrary children 2`] = `
   font-size: 1.75em;
 }
 
-.css-120tayx,
-[data-css-120tayx] {
-  background-color: #f5f7fa;
+.css-1fdelvi,
+[data-css-1fdelvi] {
+  background-color: #f0f2f5;
   padding: 2em 0;
 }
 
@@ -671,76 +710,119 @@ exports[`Card Arbitrary children 2`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CardBlock>
+            <CustomContent>
+              <Button fullWidth>Button</Button>
+            </CustomContent>
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Button": [Function],
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "CustomContent": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "CustomContent": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardTitle>
-                  <CardTitle>
+                <Card>
+                  <Card>
                     <div
-                      className="css-2xuam4"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
-                        >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
-                    </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      <glamorous(div)>
-                        <div
-                          className="css-120tayx"
-                        >
-                          <Button
-                            fullWidth={true}
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
                           >
-                            <glamorous(button)
-                              fullWidth={true}
-                              size="medium"
-                              type="button"
-                              variant="regular"
-                            >
-                              <button
-                                className="css-eigxao"
-                                type="button"
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
                               >
-                                <glamorous(span)
-                                  size="medium"
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            <glamorous(div)>
+                              <div
+                                className="css-1fdelvi"
+                              >
+                                <Button
+                                  fullWidth={true}
                                 >
-                                  <span
-                                    className="css-y37dx1"
+                                  <glamorous(button)
+                                    fullWidth={true}
+                                    size="medium"
+                                    type="button"
+                                    variant="regular"
                                   >
-                                    Button
-                                  </span>
-                                </glamorous(span)>
-                              </button>
-                            </glamorous(button)>
-                          </Button>
-                        </div>
-                      </glamorous(div)>
+                                    <button
+                                      className="css-eigxao"
+                                      type="button"
+                                    >
+                                      <glamorous(span)
+                                        size="medium"
+                                      >
+                                        <span
+                                          className="css-y37dx1"
+                                        >
+                                          Button
+                                        </span>
+                                      </glamorous(span)>
+                                    </button>
+                                  </glamorous(button)>
+                                </Button>
+                              </div>
+                            </glamorous(div)>
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardBlock>
-                </CardBlock>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -930,46 +1012,85 @@ exports[`Card Basic card 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardTitle>
-                  <CardTitle>
+                <Card>
+                  <Card>
                     <div
-                      className="css-2xuam4"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
-                        >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -1188,69 +1309,136 @@ exports[`Card Complex title and subtitle 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
+    <LiveProvider
+      code="() => {
+        const Status = createStyledComponent('span', {
+          color: 'red',
+          fontSize: '0.6em',
+    
+          '&:before': {
+            backgroundColor: 'red',
+            borderRadius: '0.8em',
+            content: '\\"\\"',
+            display: 'inline-block',
+            height: '0.8em',
+            marginRight: '0.5em',
+            position: 'relative',
+            top: '0.1em',
+            width: '0.8em'
+          }
+        });
+    
+        return (
+          <DemoLayout>
             <Card>
-              <div
-                className="css-1fz0xsi"
-              >
-                <CardTitle
-                  subtitle={
-                    <em>
-                      Subtitle
-                    </em>
-                  }
-                >
-                  <CardTitle>
-                    <div
-                      className="css-2xuam4"
-                    >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
-                        >
-                          Card title
-                          <br />
-                          <glamorous(span)>
-                            <span
-                              className="css-c186mc"
-                            >
-                              Status label
-                            </span>
-                          </glamorous(span)>
-                        </h3>
-                      </glamorous(h3)>
-                      <glamorous(h4)>
-                        <h4
-                          className="css-nchnr4"
-                        >
-                          <em>
-                            Subtitle
-                          </em>
-                        </h4>
-                      </glamorous(h4)>
-                    </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
-              </div>
+              <CardTitle subtitle={<em>Subtitle</em>}>
+                Card title<br />
+                <Status>Status label</Status>
+              </CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
             </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+          </DemoLayout>
+        );
+      }"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+          "createStyledComponent": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+            "createStyledComponent": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <wrappedPFC>
+              <glamorous(div)>
+                <div
+                  className="css-k5kxyg"
+                >
+                  <Card>
+                    <Card>
+                      <div
+                        className="css-1fz0xsi"
+                      >
+                        <CardTitle
+                          subtitle={
+                            <em>
+                              Subtitle
+                            </em>
+                          }
+                        >
+                          <CardTitle>
+                            <div
+                              className="css-2xuam4"
+                            >
+                              <glamorous(h3)>
+                                <h3
+                                  className="css-157so9w"
+                                >
+                                  Card title
+                                  <br />
+                                  <glamorous(span)>
+                                    <span
+                                      className="css-c186mc"
+                                    >
+                                      Status label
+                                    </span>
+                                  </glamorous(span)>
+                                </h3>
+                              </glamorous(h3)>
+                              <glamorous(h4)>
+                                <h4
+                                  className="css-nchnr4"
+                                >
+                                  <em>
+                                    Subtitle
+                                  </em>
+                                </h4>
+                              </glamorous(h4)>
+                            </div>
+                          </CardTitle>
+                        </CardTitle>
+                        <CardBlock>
+                          <CardBlock>
+                            <div
+                              className="css-1cgin0t"
+                            >
+                              Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                            </div>
+                          </CardBlock>
+                        </CardBlock>
+                      </div>
+                    </Card>
+                  </Card>
+                </div>
+              </glamorous(div)>
+            </wrappedPFC>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -1476,52 +1664,91 @@ exports[`Card Consistent spacing 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardTitle>
-                  <CardTitle>
+                <Card>
+                  <Card>
                     <div
-                      className="css-2xuam4"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <glamorous(CardBlock)>
+                        <CardBlock
+                          className="css-pwuja8"
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <CardBlock
+                            className="css-pwuja8"
+                          >
+                            <div
+                              className="css-10lwljt"
+                            >
+                              Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                            </div>
+                          </CardBlock>
+                        </CardBlock>
+                      </glamorous(CardBlock)>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <glamorous(CardBlock)>
-                  <CardBlock
-                    className="css-pwuja8"
-                  >
-                    <CardBlock
-                      className="css-pwuja8"
-                    >
-                      <div
-                        className="css-10lwljt"
-                      >
-                        Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                      </div>
-                    </CardBlock>
-                  </CardBlock>
-                </glamorous(CardBlock)>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -1734,67 +1961,109 @@ exports[`Card Minor title 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+          <CardTitle minor>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardImage": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardImage": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardImage
-                  alt="Bill Murray"
-                  src="http://fillmurray.com/1000/563"
-                >
-                  <CardImage
-                    alt="Bill Murray"
-                    src="http://fillmurray.com/1000/563"
-                  >
-                    <img
-                      alt="Bill Murray"
-                      className="css-9a8lzn"
-                      src="http://fillmurray.com/1000/563"
-                    />
-                  </CardImage>
-                </CardImage>
-                <CardTitle
-                  minor={true}
-                >
-                  <CardTitle
-                    minor={true}
-                  >
+                <Card>
+                  <Card>
                     <div
-                      className="css-wq8niw"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)
+                      <CardImage
+                        alt="Bill Murray"
+                        src="http://fillmurray.com/1000/563"
+                      >
+                        <CardImage
+                          alt="Bill Murray"
+                          src="http://fillmurray.com/1000/563"
+                        >
+                          <img
+                            alt="Bill Murray"
+                            className="css-9a8lzn"
+                            src="http://fillmurray.com/1000/563"
+                          />
+                        </CardImage>
+                      </CardImage>
+                      <CardTitle
                         minor={true}
                       >
-                        <h3
-                          className="css-1sjhusa"
+                        <CardTitle
+                          minor={true}
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <div
+                            className="css-wq8niw"
+                          >
+                            <glamorous(h3)
+                              minor={true}
+                            >
+                              <h3
+                                className="css-1sjhusa"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -2043,161 +2312,223 @@ exports[`Card Order of sections 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-8edn5r"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+          <CardTitle minor>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+    
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+    
+        <Card>
+          <CardTitle>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+          <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardImage": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardImage": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-8edn5r"
               >
-                <CardImage
-                  alt="Bill Murray"
-                  src="http://fillmurray.com/1000/563"
-                >
-                  <CardImage
-                    alt="Bill Murray"
-                    src="http://fillmurray.com/1000/563"
-                  >
-                    <img
-                      alt="Bill Murray"
-                      className="css-9a8lzn"
-                      src="http://fillmurray.com/1000/563"
-                    />
-                  </CardImage>
-                </CardImage>
-                <CardTitle
-                  minor={true}
-                >
-                  <CardTitle
-                    minor={true}
-                  >
+                <Card>
+                  <Card>
                     <div
-                      className="css-wq8niw"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)
+                      <CardImage
+                        alt="Bill Murray"
+                        src="http://fillmurray.com/1000/563"
+                      >
+                        <CardImage
+                          alt="Bill Murray"
+                          src="http://fillmurray.com/1000/563"
+                        >
+                          <img
+                            alt="Bill Murray"
+                            className="css-9a8lzn"
+                            src="http://fillmurray.com/1000/563"
+                          />
+                        </CardImage>
+                      </CardImage>
+                      <CardTitle
                         minor={true}
                       >
-                        <h3
-                          className="css-1sjhusa"
+                        <CardTitle
+                          minor={true}
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <div
+                            className="css-wq8niw"
+                          >
+                            <glamorous(h3)
+                              minor={true}
+                            >
+                              <h3
+                                className="css-1sjhusa"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
+                  </Card>
+                </Card>
+                <Card>
+                  <Card>
                     <div
-                      className="css-1cgin0t"
+                      className="css-1fz0xsi"
                     >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
-              </div>
-            </Card>
-          </Card>
-          <Card>
-            <Card>
-              <div
-                className="css-1fz0xsi"
-              >
-                <CardTitle>
-                  <CardTitle>
-                    <div
-                      className="css-2xuam4"
-                    >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardImage
+                        alt="Bill Murray"
+                        src="http://fillmurray.com/1001/563"
+                      >
+                        <CardImage
+                          alt="Bill Murray"
+                          src="http://fillmurray.com/1001/563"
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <img
+                            alt="Bill Murray"
+                            className="css-9a8lzn"
+                            src="http://fillmurray.com/1001/563"
+                          />
+                        </CardImage>
+                      </CardImage>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardImage
-                  alt="Bill Murray"
-                  src="http://fillmurray.com/1001/563"
-                >
-                  <CardImage
-                    alt="Bill Murray"
-                    src="http://fillmurray.com/1001/563"
-                  >
-                    <img
-                      alt="Bill Murray"
-                      className="css-9a8lzn"
-                      src="http://fillmurray.com/1001/563"
-                    />
-                  </CardImage>
-                </CardImage>
-                <CardBlock>
-                  <CardBlock>
+                  </Card>
+                </Card>
+                <Card>
+                  <Card>
                     <div
-                      className="css-1cgin0t"
+                      className="css-1fz0xsi"
                     >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
-              </div>
-            </Card>
-          </Card>
-          <Card>
-            <Card>
-              <div
-                className="css-1fz0xsi"
-              >
-                <CardTitle>
-                  <CardTitle>
-                    <div
-                      className="css-2xuam4"
-                    >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
+                      <CardTitle>
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
+                      <CardImage
+                        alt="Bill Murray"
+                        src="http://fillmurray.com/1002/563"
+                      >
+                        <CardImage
+                          alt="Bill Murray"
+                          src="http://fillmurray.com/1002/563"
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <img
+                            alt="Bill Murray"
+                            className="css-9a8lzn"
+                            src="http://fillmurray.com/1002/563"
+                          />
+                        </CardImage>
+                      </CardImage>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
-                <CardImage
-                  alt="Bill Murray"
-                  src="http://fillmurray.com/1002/563"
-                >
-                  <CardImage
-                    alt="Bill Murray"
-                    src="http://fillmurray.com/1002/563"
-                  >
-                    <img
-                      alt="Bill Murray"
-                      className="css-9a8lzn"
-                      src="http://fillmurray.com/1002/563"
-                    />
-                  </CardImage>
-                </CardImage>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -2395,55 +2726,94 @@ exports[`Card With a subtitle 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardTitle
-                  subtitle="Card subtitle"
-                >
-                  <CardTitle>
+                <Card>
+                  <Card>
                     <div
-                      className="css-2xuam4"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)>
-                        <h3
-                          className="css-157so9w"
-                        >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
-                      <glamorous(h4)>
-                        <h4
-                          className="css-nchnr4"
-                        >
-                          Card subtitle
-                        </h4>
-                      </glamorous(h4)>
+                      <CardTitle
+                        subtitle="Card subtitle"
+                      >
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(h3)>
+                              <h3
+                                className="css-157so9w"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                            <glamorous(h4)>
+                              <h4
+                                className="css-nchnr4"
+                              >
+                                Card subtitle
+                              </h4>
+                            </glamorous(h4)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -2656,67 +3026,109 @@ exports[`Card With an image 1`] = `
       }
     }
   >
-    <Example>
-      <glamorous(div)>
-        <div
-          className="css-k5kxyg"
-        >
-          <Card>
-            <Card>
+    <LiveProvider
+      code="<DemoLayout>
+        <Card>
+          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+          <CardTitle minor>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardImage": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardImage": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
               <div
-                className="css-1fz0xsi"
+                className="css-k5kxyg"
               >
-                <CardImage
-                  alt="Bill Murray"
-                  src="http://fillmurray.com/1000/563"
-                >
-                  <CardImage
-                    alt="Bill Murray"
-                    src="http://fillmurray.com/1000/563"
-                  >
-                    <img
-                      alt="Bill Murray"
-                      className="css-9a8lzn"
-                      src="http://fillmurray.com/1000/563"
-                    />
-                  </CardImage>
-                </CardImage>
-                <CardTitle
-                  minor={true}
-                >
-                  <CardTitle
-                    minor={true}
-                  >
+                <Card>
+                  <Card>
                     <div
-                      className="css-wq8niw"
+                      className="css-1fz0xsi"
                     >
-                      <glamorous(h3)
+                      <CardImage
+                        alt="Bill Murray"
+                        src="http://fillmurray.com/1000/563"
+                      >
+                        <CardImage
+                          alt="Bill Murray"
+                          src="http://fillmurray.com/1000/563"
+                        >
+                          <img
+                            alt="Bill Murray"
+                            className="css-9a8lzn"
+                            src="http://fillmurray.com/1000/563"
+                          />
+                        </CardImage>
+                      </CardImage>
+                      <CardTitle
                         minor={true}
                       >
-                        <h3
-                          className="css-1sjhusa"
+                        <CardTitle
+                          minor={true}
                         >
-                          Card title
-                        </h3>
-                      </glamorous(h3)>
+                          <div
+                            className="css-wq8niw"
+                          >
+                            <glamorous(h3)
+                              minor={true}
+                            >
+                              <h3
+                                className="css-1sjhusa"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
                     </div>
-                  </CardTitle>
-                </CardTitle>
-                <CardBlock>
-                  <CardBlock>
-                    <div
-                      className="css-1cgin0t"
-                    >
-                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-                    </div>
-                  </CardBlock>
-                </CardBlock>
+                  </Card>
+                </Card>
               </div>
-            </Card>
-          </Card>
-        </div>
-      </glamorous(div)>
-    </Example>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
