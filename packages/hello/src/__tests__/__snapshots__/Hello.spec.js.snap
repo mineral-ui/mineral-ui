@@ -125,19 +125,41 @@ exports[`Hello Default 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <Hello>
-          <glamorous(span)>
-            <span
-              className="css-nil"
-            >
-              Hello
-            </span>
-          </glamorous(span)>
-        </Hello>
+    <LiveProvider
+      code="<Hello />"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Hello": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Hello": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <Hello>
+              <glamorous(span)>
+                <span
+                  className="css-nil"
+                >
+                  Hello
+                </span>
+              </glamorous(span)>
+            </Hello>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;

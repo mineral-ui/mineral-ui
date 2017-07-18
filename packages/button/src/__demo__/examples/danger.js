@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
@@ -25,23 +24,13 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Button variant="danger">Regular</Button>
-      <Button variant="danger" primary>Primary</Button>
-      <Button variant="danger" minimal>Minimal</Button>
-    </Root>
-  );
-}
-
 export default {
   title: 'Danger',
-  component: Example,
   description: 'Use for destructive or potentially-dangerous actions.',
-  source: `<div>
+  scope: { Button, Root },
+  source: `<Root>
   <Button variant="danger">Regular</Button>
   <Button variant="danger" primary>Primary</Button>
   <Button variant="danger" minimal>Minimal</Button>
-</div>`
+</Root>`
 };

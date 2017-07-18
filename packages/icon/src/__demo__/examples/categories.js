@@ -15,16 +15,11 @@
  */
 
 /* @flow */
-import React from 'react';
-
 import CategoryIndex from '../components/CategoryIndex';
-
-function Example() {
-  return <CategoryIndex />;
-}
 
 export default {
   title: 'Icons by Category',
-  component: Example,
+  hideSource: true,
+  scope: { CategoryIndex },
   source: `<CategoryIndex />`
 };

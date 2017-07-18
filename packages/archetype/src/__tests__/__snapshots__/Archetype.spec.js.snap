@@ -125,19 +125,41 @@ exports[`Archetype Default 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <Archetype>
-          <glamorous(div)>
-            <div
-              className="css-nil"
-            >
-              Archetype
-            </div>
-          </glamorous(div)>
-        </Archetype>
+    <LiveProvider
+      code="<Archetype />"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Archetype": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Archetype": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <Archetype>
+              <glamorous(div)>
+                <div
+                  className="css-nil"
+                >
+                  Archetype
+                </div>
+              </glamorous(div)>
+            </Archetype>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;

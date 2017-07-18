@@ -15,20 +15,11 @@
  */
 
 /* @flow */
-import React from 'react';
 import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
-
-function Example() {
-  return (
-    <div>
-      <IconSentimentSatisfied color="coral" />
-    </div>
-  );
-}
 
 export default {
   title: 'Color',
-  component: Example,
   description: 'You can apply a color to any icon.',
-  source: `<IconSentimentSatisfied color="currentColor" />`
+  scope: { IconSentimentSatisfied },
+  source: `<IconSentimentSatisfied color="coral" />`
 };

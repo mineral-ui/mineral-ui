@@ -15,32 +15,20 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '../../index';
 import Sample from '../../Sample';
 
-const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
-  outline: '3px dashed mediumvioletred',
-  fontSize: theme.fontSize_h1
-}));
-
-function Example() {
-  return (
-    <div>
-      <MyStyledSample />
-    </div>
-  );
-}
-
 export default {
   title: 'Style override via createStyledComponent',
-  component: Example,
   description:
     'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
-  source: `const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
-  outline: '3px dashed mediumvioletred',
-  fontSize: theme.fontSize_h1
-}));
+  scope: { createStyledComponent, Sample },
+  source: `() => {
+  const MyStyledSample = createStyledComponent(Sample, (props, theme) => ({
+    outline: '3px dashed mediumvioletred',
+    fontSize: theme.fontSize_h1
+  }));
 
-<MyStyledSample />`
+  return <MyStyledSample />;
+}`
 };

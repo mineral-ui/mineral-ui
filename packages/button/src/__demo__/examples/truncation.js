@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
@@ -25,17 +24,11 @@ const Root = createStyledComponent('div', {
   }
 });
 
-function Example() {
-  return (
-    <Root>
-      <Button>Do Something</Button>
-    </Root>
-  );
-}
-
 export default {
   title: 'Truncation',
-  component: Example,
   description: 'Long button text is truncated when necessary',
-  source: `<Button>Do Something</Button>`
+  scope: { Button, Root },
+  source: `<Root>
+  <Button>Do Something</Button>
+</Root>`
 };

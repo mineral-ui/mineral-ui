@@ -15,21 +15,12 @@
  */
 
 /* @flow */
-import React from 'react';
 import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
-
-function Example() {
-  return (
-    <div>
-      <IconSentimentSatisfied title="smiley-face" />
-    </div>
-  );
-}
 
 export default {
   title: 'Title',
-  component: Example,
   description:
     'Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).',
+  scope: { IconSentimentSatisfied },
   source: `<IconSentimentSatisfied title="smiley-face" />`
 };

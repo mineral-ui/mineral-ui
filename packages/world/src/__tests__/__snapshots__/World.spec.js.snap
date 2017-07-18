@@ -125,21 +125,43 @@ exports[`World Custom Text 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <World
-          text="Felix"
-        >
-          <glamorous(span)>
-            <span
-              className="css-nil"
+    <LiveProvider
+      code="<World text=\\"Felix\\" />"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "World": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "World": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <World
+              text="Felix"
             >
-              Felix
-            </span>
-          </glamorous(span)>
-        </World>
+              <glamorous(span)>
+                <span
+                  className="css-nil"
+                >
+                  Felix
+                </span>
+              </glamorous(span)>
+            </World>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;
@@ -269,19 +291,41 @@ exports[`World Default 1`] = `
       }
     }
   >
-    <Example>
-      <div>
-        <World>
-          <glamorous(span)>
-            <span
-              className="css-nil"
-            >
-              World
-            </span>
-          </glamorous(span)>
-        </World>
+    <LiveProvider
+      code="<World />"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "World": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "World": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <World>
+              <glamorous(span)>
+                <span
+                  className="css-nil"
+                >
+                  World
+                </span>
+              </glamorous(span)>
+            </World>
+          </div>
+        </LivePreview>
       </div>
-    </Example>
+    </LiveProvider>
   </ThemeProvider>
 </ThemeProvider>
 `;

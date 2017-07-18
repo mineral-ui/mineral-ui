@@ -15,30 +15,19 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createThemedComponent } from '../../index';
 import Sample from '../../Sample';
 
-const MyThemedSample = createThemedComponent(Sample, {
-  color_primary: 'mediumvioletred'
-});
-
-function Example() {
-  return (
-    <div>
-      <MyThemedSample />
-    </div>
-  );
-}
-
 export default {
   title: 'Local theme var override via createThemedComponent',
-  component: Example,
   description:
     'If you need to overwrite a theme variable, either global or component-specific, for a specific component.',
-  source: `const MyThemedSample = createThemedComponent(Sample, {
-color_primary: 'mediumvioletred'
-});
+  scope: { createThemedComponent, Sample },
+  source: `() => {
+  const MyThemedSample = createThemedComponent(Sample, {
+    color_primary: 'mediumvioletred'
+  });
 
-<MyThemedSample />`
+  return <MyThemedSample />;
+}`
 };

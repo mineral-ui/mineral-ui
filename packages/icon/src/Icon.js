@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-
 import React, { PureComponent } from 'react';
 import { createStyledComponent, generateId } from '@mineral-ui/component-utils';
 

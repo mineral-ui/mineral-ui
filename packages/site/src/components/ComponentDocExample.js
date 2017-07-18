@@ -18,6 +18,7 @@
 import React, { Component } from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import styleReset from './styleReset';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
   componentDocExample: (props, theme) => ({
@@ -27,92 +28,40 @@ const styles = {
       marginTop: theme.measurement_d
     }
   }),
-  resizable: (props, theme) => ({
-    border: `1px solid ${theme.color_gray}`,
-    padding: theme.measurement_c
-  }),
   h4: (props, theme) => ({
     margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
     fontSize: `${parseFloat(theme.fontSize_h4) / 2}em`
   }),
-  graf: (props, theme) => ({
+  p: (props, theme) => ({
     lineHeight: '1.5',
     margin: `0 0 ${theme.measurement_c}`
   }),
-  code: (props, theme) => ({
-    backgroundColor: theme.color_grayLight,
-    color: theme.color_grayDark,
-    display: 'block',
-    fontFamily:
-      '"SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace',
-    fontSize: 'smaller',
+  livePreview: (props, theme) => ({
+    backgroundColor: props.backgroundColor || theme.backgorundColor,
+    border: `1px solid ${theme.color_gray}`,
     padding: theme.measurement_c
+  }),
+  liveEditor: (props, theme) => ({
+    maxHeight: `${parseFloat(theme.measurement_d) * 10}em`,
+    overflow: 'auto'
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
-const Resizable = createStyledComponent('div', styles.resizable);
 const H4 = createStyledComponent('h4', styles.h4);
-const Graf = createStyledComponent('p', styles.graf);
-
-function getDefaultValue(propDescription: Object): any {
-  const { defaultValue } = propDescription;
-  return (
-    (defaultValue && defaultValue.value && eval(defaultValue.value)) ||
-    undefined
-  );
-}
-
-function getFlowType(propDescription: Object): string {
-  const { flowType } = propDescription;
-  const type = (flowType && flowType.name) || 'unknown';
-  if (type === 'union') {
-    return `one of: ${flowType.raw}`;
-  }
-
-  return type;
-}
-
-function getExampleProps(
-  propDoc: Object = {},
-  propValues: Object = {}
-): Array<Object> {
-  return Object.keys(propDoc).sort().map(name => {
-    const propDescription = propDoc[name];
-    const { description, required } = propDescription;
-    const defaultValue = getDefaultValue(propDescription);
-    const exampleValue = propValues.hasOwnProperty(name)
-      ? propValues[name]
-      : defaultValue;
-    const type = getFlowType(propDescription);
-
-    return {
-      defaultValue,
-      description,
-      exampleValue,
-      name,
-      required,
-      type
-    };
-  });
-}
-
-function getComponentProps(exampleProps: Array<Object>): Object {
-  return exampleProps.reduce((acc, propDescription) => {
-    const propName = propDescription.name;
-    acc[propName] = propDescription.exampleValue;
-    return acc;
-  }, {});
-}
+const P = createStyledComponent('p', styles.p);
+const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
+  rootEl: 'div'
+});
+const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 
 type Props = {
-  children?: MnrlReactNode,
+  backgroundColor?: string,
   className?: string,
-  component: MnrlReactComponent,
   description?: MnrlReactNode,
-  propDoc?: Object,
-  propValues?: Object,
-  source?: string,
+  hideSource?: boolean,
+  scope: Object,
+  source: string,
   title?: string
 };
 
@@ -120,20 +69,24 @@ export default class ComponentDocExample extends Component {
   props: Props;
 
   render() {
-    const { className, component: Component, description, title } = this.props;
-    const componentProps = getComponentProps(
-      getExampleProps(this.props.propDoc, this.props.propValues)
-    );
+    const {
+      backgroundColor,
+      className,
+      description,
+      hideSource,
+      scope,
+      source,
+      title
+    } = this.props;
 
     return (
       <Root className={className}>
         <H4>{title}</H4>
-        {typeof description === 'string'
-          ? <Graf>{description}</Graf>
-          : description}
-        <Resizable>
-          <Component {...componentProps} />
-        </Resizable>
+        {typeof description === 'string' ? <P>{description}</P> : description}
+        <LiveProvider code={source} scope={scope}>
+          <MyLivePreview backgroundColor={backgroundColor} />
+          {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
+        </LiveProvider>
       </Root>
     );
   }

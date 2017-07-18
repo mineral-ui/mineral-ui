@@ -23,10 +23,10 @@ import styleReset from './styleReset';
 import PropTable from './PropTable';
 
 type Example = {
-  component: MnrlReactComponent,
   description?: string,
   propValues?: Object,
-  source?: string,
+  scope: Object,
+  source: string,
   title: string
 };
 
@@ -61,7 +61,7 @@ const styles = {
     marginRight: 'auto',
     paddingRight: '12rem'
   }),
-  graf: (props, theme) => ({
+  p: (props, theme) => ({
     fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
     flex: '1 0 100%',
     lineHeight: '1.5',
@@ -95,7 +95,7 @@ const styles = {
 const Root = createStyledComponent('section', styles.componentDoc);
 const Header = createStyledComponent('header', styles.header);
 const Title = createStyledComponent('h1', styles.title);
-const Graf = createStyledComponent('p', styles.graf);
+const P = createStyledComponent('p', styles.p);
 const H2 = createStyledComponent('h2', styles.h2);
 const H3 = createStyledComponent('h3', styles.h3);
 const SubNav = createStyledComponent('nav', styles.subnav);
@@ -129,7 +129,7 @@ export default function ComponentDoc({
 }: Props) {
   const { description: descriptionDoc, props: propDoc } = doc;
   const description = typeof descriptionDoc === 'string'
-    ? <Graf>{descriptionDoc}</Graf>
+    ? <P>{descriptionDoc}</P>
     : descriptionDoc;
 
   return (
@@ -149,10 +149,8 @@ export default function ComponentDoc({
       </SubNav>
       <div>
         <H2 id="code">Code & Examples</H2>
-        <div>
-          {propDoc && renderPropDoc(propDoc)}
-          {examples && renderExamples(examples, slug, propDoc)}
-        </div>
+        {renderPropDoc(propDoc)}
+        {renderExamples(examples, slug, propDoc)}
         <H2 id="usage">Usage Guidelines</H2>
         <p>{design}</p>
         <H3>Behavior</H3>
@@ -163,14 +161,14 @@ export default function ComponentDoc({
 }
 
 function renderExamples(
-  examples: Array<Example>,
+  examples?: Array<Example>,
   slug: string,
   propDoc: Object
 ) {
   return (
-    <div>
-      <H3>{examples.length === 1 ? 'Example' : 'Examples'}</H3>
-      {examples.map((example, idx) => {
+    examples && [
+      <H3 key={0}>{examples.length === 1 ? 'Example' : 'Examples'}</H3>,
+      examples.map((example, idx) => {
         return (
           <ComponentDocExample
             key={`${slug}:${idx}`}
@@ -178,11 +176,13 @@ function renderExamples(
             {...example}
           />
         );
-      })}
-    </div>
+      })
+    ]
   );
 }
 
 function renderPropDoc(propDoc: Object) {
-  return [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />];
+  return (
+    propDoc && [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />]
+  );
 }
