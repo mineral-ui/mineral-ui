@@ -290,6 +290,209 @@ exports[`App renders correctly 1`] = `
             "slug": "button",
             "title": "Button",
           },
+          "card": Object {
+            "behavior": "behavior dummy text for the card component",
+            "design": "design theory about the card component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.",
+                "source": "<Card>
+          <CardTitle>Card title</CardTitle>
+          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
+        </Card>",
+                "title": "Basic card",
+              },
+              Object {
+                "component": [Function],
+                "description": "A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.",
+                "source": "const CustomContent = createStyledComponent('div', (props, theme) => ({
+          backgroundColor: theme.color_gray_10,
+          margin: \`\${theme.spacing_double} 0\`,
+          padding: theme.spacing_triple,
+        
+          '&:last-child': {
+            borderRadius: \`0 0 \${theme.borderRadius_1} \${theme.borderRadius_1}\`,
+            marginBottom: \`-\${theme.spacing_double}\`
+          }
+        }));
+        
+        function Example() {
+          return (
+            <Root>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CustomContent>
+                  <Button fullWidth>Button</Button>
+                </CustomContent>
+              </Card>
+            </Root>
+          );
+        }",
+                "title": "Arbitrary children",
+              },
+              Object {
+                "component": [Function],
+                "description": "The sections of Card are designed to work in any order.",
+                "source": "<Root>
+            <Card>
+              <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+              <CardTitle minor>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+        
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+            </Card>
+        
+            <Card>
+              <CardTitle>Card title</CardTitle>
+              <CardBlock>
+                Light years star stuff harvesting star light citizens of distant
+                epochs encyclopaedia galactica vastness is bearable only through love,
+                shores of the cosmic ocean!
+              </CardBlock>
+              <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+            </Card>
+          </Root>",
+                "title": "Order of sections",
+              },
+            ],
+            "slug": "card",
+            "title": "Card",
+          },
+          "card-block": Object {
+            "behavior": "behavior dummy text for the card block component",
+            "design": "design theory about the card block component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).",
+                "source": "<Root>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </Root>",
+                "title": "Consistent spacing",
+              },
+              Object {
+                "component": [Function],
+                "description": "A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.",
+                "source": "const CustomContent = createStyledComponent('div', (props, theme) => ({
+          backgroundColor: theme.color_gray_10
+        }));
+        
+        function Example() {
+          return (
+            <Root>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  <CustomContent>
+                    <Button fullWidth>Button</Button>
+                  </CustomContent>
+                </CardBlock>
+              </Card>
+            </Root>
+          );
+        }",
+                "title": "Arbitrary children",
+              },
+            ],
+            "slug": "card-block",
+            "subcomponent": true,
+            "title": "CardBlock",
+          },
+          "card-image": Object {
+            "behavior": "behavior dummy text for the card image component",
+            "design": "design theory about the card image component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+                "source": "<Card>
+          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+          <CardTitle minor>Card title</CardTitle>
+          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
+        </Card>",
+                "title": "With an image",
+              },
+            ],
+            "slug": "card-image",
+            "subcomponent": true,
+            "title": "CardImage",
+          },
+          "card-title": Object {
+            "behavior": "behavior dummy text for the card title component",
+            "design": "design theory about the card title component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "component": [Function],
+                "description": "In addition to a title, a Card can display a subtitle.",
+                "source": "<Card>
+          <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
+        </Card>",
+                "title": "With a subtitle",
+              },
+              Object {
+                "component": [Function],
+                "description": "Both the title and subtitle can contain a simple string or any HTML/React elements.",
+                "source": "<Card>
+          <CardTitle subtitle={<em>Subtitle</em>}>
+            Card title<br />
+            <Status>Status label</Status>
+          </CardTitle>
+          <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
+        </Card>",
+                "title": "Complex title and subtitle",
+              },
+              Object {
+                "component": [Function],
+                "description": "The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.",
+                "source": "<Card>
+          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+          <CardTitle minor>Card title</CardTitle>
+          <CardBlock>
+            Light years star stuff harvesting star light citizens of distant
+            epochs encyclopaedia galactica vastness is bearable only through love,
+            shores of the cosmic ocean!
+          </CardBlock>
+        </Card>",
+                "title": "Minor title",
+              },
+            ],
+            "slug": "card-title",
+            "subcomponent": true,
+            "title": "CardTitle",
+          },
           "component-utils": Object {
             "behavior": "some cool behavior info",
             "design": "Lofty design theory about the component-utils",
