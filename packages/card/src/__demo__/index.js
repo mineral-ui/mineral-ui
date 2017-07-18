@@ -15,10 +15,10 @@
  */
 
 /* @flow */
-import cardExamples from './examples/cardIndex';
-import cardBlockExamples from './examples/cardBlockIndex';
-import cardImageExamples from './examples/cardImageIndex';
-import cardTitleExamples from './examples/cardTitleIndex';
+import cardExamples from './examples/card';
+import cardBlockExamples from './examples/card-block';
+import cardImageExamples from './examples/card-image';
+import cardTitleExamples from './examples/card-title';
 
 const cardDoc = require('!!react-docgen-loader!../Card.js');
 const cardBlockDoc = require('!!react-docgen-loader!../CardBlock.js');

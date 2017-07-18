@@ -17,10 +17,9 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
-import Card from '../../Card';
-import CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
-import CardImage from '../../CardImage';
+import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
+import CardTitle from '../../../CardTitle';
 
 const Root = createStyledComponent('div', {
   '& > *': {
@@ -32,8 +31,7 @@ function Example() {
   return (
     <Root>
       <Card>
-        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-        <CardTitle minor>Card title</CardTitle>
+        <CardTitle>Card title</CardTitle>
         <CardBlock>
           Light years star stuff harvesting star light citizens of distant
           epochs encyclopaedia galactica vastness is bearable only through love,
@@ -45,13 +43,12 @@ function Example() {
 }
 
 export default {
-  title: 'With an image',
+  title: 'Basic card',
   component: Example,
   description:
-    "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+    'Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.',
   source: `<Card>
-  <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-  <CardTitle minor>Card title</CardTitle>
+  <CardTitle>Card title</CardTitle>
   <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
 </Card>`
 };

@@ -17,9 +17,9 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
-import Card from '../../Card';
-import CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
+import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
+import CardTitle from '../../../CardTitle';
 
 const Root = createStyledComponent('div', {
   '& > *': {
@@ -27,11 +27,31 @@ const Root = createStyledComponent('div', {
   }
 });
 
+const Status = createStyledComponent('span', {
+  color: 'red',
+  fontSize: '0.6em',
+
+  '&:before': {
+    backgroundColor: 'red',
+    borderRadius: '0.8em',
+    content: '""',
+    display: 'inline-block',
+    height: '0.8em',
+    marginRight: '0.5em',
+    position: 'relative',
+    top: '0.1em',
+    width: '0.8em'
+  }
+});
+
 function Example() {
   return (
     <Root>
       <Card>
-        <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+        <CardTitle subtitle={<em>Subtitle</em>}>
+          Card title<br />
+          <Status>Status label</Status>
+        </CardTitle>
         <CardBlock>
           Light years star stuff harvesting star light citizens of distant
           epochs encyclopaedia galactica vastness is bearable only through love,
@@ -43,11 +63,15 @@ function Example() {
 }
 
 export default {
-  title: 'With a subtitle',
+  title: 'Complex title and subtitle',
   component: Example,
-  description: 'In addition to a title, a Card can display a subtitle.',
+  description:
+    'Both the title and subtitle can contain a simple string or any HTML/React elements.',
   source: `<Card>
-  <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+  <CardTitle subtitle={<em>Subtitle</em>}>
+    Card title<br />
+    <Status>Status label</Status>
+  </CardTitle>
   <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
 </Card>`
 };

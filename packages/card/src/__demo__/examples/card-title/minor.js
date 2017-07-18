@@ -17,9 +17,10 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
-import Card from '../../Card';
-import CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
+import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
+import CardImage from '../../../CardImage';
+import CardTitle from '../../../CardTitle';
 
 const Root = createStyledComponent('div', {
   '& > *': {
@@ -31,7 +32,8 @@ function Example() {
   return (
     <Root>
       <Card>
-        <CardTitle>Card title</CardTitle>
+        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
+        <CardTitle minor>Card title</CardTitle>
         <CardBlock>
           Light years star stuff harvesting star light citizens of distant
           epochs encyclopaedia galactica vastness is bearable only through love,
@@ -43,12 +45,17 @@ function Example() {
 }
 
 export default {
-  title: 'Basic card',
+  title: 'Minor title',
   component: Example,
   description:
-    'Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.',
+    'The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.',
   source: `<Card>
-  <CardTitle>Card title</CardTitle>
-  <CardBlock>Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!</CardBlock>
+  <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
+  <CardTitle minor>Card title</CardTitle>
+  <CardBlock>
+    Light years star stuff harvesting star light citizens of distant
+    epochs encyclopaedia galactica vastness is bearable only through love,
+    shores of the cosmic ocean!
+  </CardBlock>
 </Card>`
 };

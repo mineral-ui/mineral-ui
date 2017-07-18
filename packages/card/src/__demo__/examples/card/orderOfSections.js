@@ -17,10 +17,10 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
-import Card from '../../Card';
-import CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
-import CardImage from '../../CardImage';
+import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
+import CardTitle from '../../../CardTitle';
+import CardImage from '../../../CardImage';
 
 const Root = createStyledComponent('div', {
   alignItems: 'flex-start',

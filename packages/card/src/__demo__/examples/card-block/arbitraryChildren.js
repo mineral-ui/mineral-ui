@@ -18,9 +18,9 @@
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '@mineral-ui/button';
-import Card from '../../Card';
-import CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
+import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
+import CardTitle from '../../../CardTitle';
 
 const Root = createStyledComponent('div', {
   '& > *': {

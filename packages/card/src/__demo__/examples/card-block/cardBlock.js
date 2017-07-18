@@ -20,9 +20,9 @@ import {
   createStyledComponent,
   getNormalizedValue
 } from '@mineral-ui/component-utils';
-import Card from '../../Card';
-import _CardBlock from '../../CardBlock';
-import CardTitle from '../../CardTitle';
+import Card from '../../../Card';
+import _CardBlock from '../../../CardBlock';
+import CardTitle from '../../../CardTitle';
 
 const Root = createStyledComponent('div', {
   '& > *': {
