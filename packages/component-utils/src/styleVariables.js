@@ -15,12 +15,10 @@
  */
 
 /* @flow */
-export const blackAndWhite = {
-  color_black: '#000',
-  color_white: '#fff'
-};
-
 export const color = {
+  black: '#000',
+  white: '#fff',
+
   gray_10: '#f5f7fa',
   gray_20: '#f0f2f5',
   gray_30: '#e6e9ee',

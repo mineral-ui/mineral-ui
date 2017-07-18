@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { default as shared, blackAndWhite, color } from './styleVariables';
+import { default as shared, color } from './styleVariables';
 
 const themeColor = 'blue';
 
@@ -45,9 +45,11 @@ export default {
    */
 
   ...shared,
-  ...blackAndWhite,
   ...primaries,
   ...grays,
+
+  color_black: color.black,
+  color_white: color.white,
 
   backgroundColor_disabled: color.gray_30,
   backgroundColor_danger: color.red_60,
