@@ -18,7 +18,7 @@ Mineral UI `Card` component. Find out more about [Mineral UI](https://github.com
 
 ```jsx
 import React from 'react';
-import { Card, CardTitle, CardBlock } from '@mineral-ui/card';
+import Card, { CardTitle, CardBlock } from '@mineral-ui/card';
 
 export default function MyComponent() {
   return (
