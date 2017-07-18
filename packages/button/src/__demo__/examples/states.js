@@ -19,7 +19,7 @@ import { simulate } from 'glamor';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > button': {
     marginRight: '0.5rem',
     width: '8rem'
@@ -29,8 +29,8 @@ const Root = createStyledComponent('div', {
 export default {
   title: 'States',
   hideSource: true,
-  scope: { Button, Root, simulate },
-  source: `<Root>
+  scope: { Button, DemoLayout, simulate },
+  source: `<DemoLayout>
   <Button>Regular</Button>
   <Button primary>Primary</Button>
   <Button minimal>Minimal</Button>
@@ -182,5 +182,5 @@ export default {
   <Button disabled variant="danger" primary>Disabled</Button>
   <Button disabled variant="danger" minimal>Disabled</Button>
   <br /><br />
-</Root>`
+</DemoLayout>`
 };

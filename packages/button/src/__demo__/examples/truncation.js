@@ -18,7 +18,7 @@
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
-const Root = createStyledComponent('div', {
+const FixedWidthLayout = createStyledComponent('div', {
   '& > button': {
     width: '6rem'
   }
@@ -27,8 +27,8 @@ const Root = createStyledComponent('div', {
 export default {
   title: 'Truncation',
   description: 'Long button text is truncated when necessary',
-  scope: { Button, Root },
-  source: `<Root>
+  scope: { Button, FixedWidthLayout },
+  source: `<FixedWidthLayout>
   <Button>Do Something</Button>
-</Root>`
+</FixedWidthLayout>`
 };

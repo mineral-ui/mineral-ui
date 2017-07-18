@@ -18,7 +18,7 @@
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
 
-const Root = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', {
   '& > button': {
     marginRight: '0.5rem'
   }
@@ -27,10 +27,10 @@ const Root = createStyledComponent('div', {
 export default {
   title: 'Danger',
   description: 'Use for destructive or potentially-dangerous actions.',
-  scope: { Button, Root },
-  source: `<Root>
+  scope: { Button, DemoLayout },
+  source: `<DemoLayout>
   <Button variant="danger">Regular</Button>
   <Button variant="danger" primary>Primary</Button>
   <Button variant="danger" minimal>Minimal</Button>
-</Root>`
+</DemoLayout>`
 };

@@ -47,63 +47,63 @@ exports[`App renders correctly 1`] = `
                 "description": "Use for destructive or potentially-dangerous actions.",
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button variant=\\"danger\\">Regular</Button>
           <Button variant=\\"danger\\" primary>Primary</Button>
           <Button variant=\\"danger\\" minimal>Minimal</Button>
-        </Root>",
+        </DemoLayout>",
                 "title": "Danger",
               },
               Object {
                 "description": "Use for positive actions, like when creating something.",
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button variant=\\"success\\">Regular</Button>
           <Button variant=\\"success\\" primary>Primary</Button>
           <Button variant=\\"success\\" minimal>Minimal</Button>
-        </Root>",
+        </DemoLayout>",
                 "title": "Success",
               },
               Object {
                 "description": "Use for potentially-destructive actions.",
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button variant=\\"warning\\">Regular</Button>
           <Button variant=\\"warning\\" primary>Primary</Button>
           <Button variant=\\"warning\\" minimal>Minimal</Button>
-        </Root>",
+        </DemoLayout>",
                 "title": "Warning",
               },
               Object {
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button size=\\"small\\">Small</Button>
           <Button>Medium</Button>
           <Button size=\\"large\\">Large</Button>
-        </Root>",
+        </DemoLayout>",
                 "title": "Sizes",
               },
               Object {
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button disabled>Regular</Button>
           <Button disabled primary>Primary</Button>
           <Button disabled minimal>Minimal</Button>
-        </Root>",
+        </DemoLayout>",
                 "title": "Disabled",
               },
               Object {
@@ -117,21 +117,21 @@ exports[`App renders correctly 1`] = `
                 "description": "Long button text is truncated when necessary",
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "FixedWidthLayout": [Function],
                 },
-                "source": "<Root>
+                "source": "<FixedWidthLayout>
           <Button>Do Something</Button>
-        </Root>",
+        </FixedWidthLayout>",
                 "title": "Truncation",
               },
               Object {
                 "hideSource": true,
                 "scope": Object {
                   "Button": [Function],
-                  "Root": [Function],
+                  "DemoLayout": [Function],
                   "simulate": [Function],
                 },
-                "source": "<Root>
+                "source": "<DemoLayout>
           <Button>Regular</Button>
           <Button primary>Primary</Button>
           <Button minimal>Minimal</Button>
@@ -283,7 +283,7 @@ exports[`App renders correctly 1`] = `
           <Button disabled variant=\\"danger\\" primary>Disabled</Button>
           <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
           <br /><br />
-        </Root>",
+        </DemoLayout>",
                 "title": "States",
               },
             ],
