@@ -83,7 +83,7 @@ export default class ComponentDocExample extends Component {
       <Root className={className}>
         <H4>{title}</H4>
         {typeof description === 'string' ? <P>{description}</P> : description}
-        <LiveProvider code={source} scope={scope}>
+        <LiveProvider code={source} scope={scope} mountStylesheet={false}>
           <MyLivePreview backgroundColor={backgroundColor} />
           {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
         </LiveProvider>

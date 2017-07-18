@@ -25,6 +25,8 @@ import App from '../components/App';
 import siteTheme from '../components/siteTheme';
 // $FlowFixMe
 import demos from '{{DEMO_LIST_PATH}}';
+require('./index.css');
+require('react-live/react-live.css');
 
 // Enable Glamor simulate helper
 simulations(true);
