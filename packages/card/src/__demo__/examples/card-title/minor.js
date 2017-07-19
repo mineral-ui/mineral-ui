@@ -32,6 +32,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   title: 'Minor title',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.',

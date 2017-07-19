@@ -15,7 +15,10 @@
  */
 
 /* @flow */
-import { createStyledComponent, mineralTheme } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
@@ -36,6 +39,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   title: 'Order of sections',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'The sections of Card are designed to work in any order.',
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },

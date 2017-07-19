@@ -31,6 +31,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   title: 'Complex title and subtitle',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'Both the title and subtitle can contain a simple string or any HTML/React elements.',

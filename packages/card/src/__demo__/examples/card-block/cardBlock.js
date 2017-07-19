@@ -48,6 +48,7 @@ const CardBlock = createStyledComponent(_CardBlock, (props, theme) => ({
 
 export default {
   title: 'Consistent spacing',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).',

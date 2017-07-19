@@ -19,7 +19,6 @@ import {
   createStyledComponent,
   mineralTheme
 } from '@mineral-ui/component-utils';
-// $FlowFixMe
 import Button from '@mineral-ui/button';
 import Card from '../../../Card';
 import CardTitle from '../../../CardTitle';
@@ -42,6 +41,7 @@ const CustomContent = createStyledComponent('div', (props, theme) => ({
 
 export default {
   title: 'Arbitrary children',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.',

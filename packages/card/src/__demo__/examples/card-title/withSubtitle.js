@@ -31,6 +31,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   title: 'With a subtitle',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
