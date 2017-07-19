@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.2.0...@mineral-ui/component-utils@0.3.0) (2017-07-19)
+
+
+### Features
+
+* **component-utils:** Add new keys, util, and adjust reset ([c7b6837](https://github.com/mineral-ui/mineral-ui/commit/c7b6837))
+* **site:** Add live code examples for demos ([411b23e](https://github.com/mineral-ui/mineral-ui/commit/411b23e))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.1.2...@mineral-ui/component-utils@0.2.0) (2017-07-14)
 

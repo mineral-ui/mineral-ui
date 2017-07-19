@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.5.0...@mineral-ui/site@0.6.0) (2017-07-19)
+
+
+### Features
+
+* **card:** Create new Card component and add to Site ([b4adec2](https://github.com/mineral-ui/mineral-ui/commit/b4adec2))
+* **site:** Add capability of rendering multiple demos per package ([f40ec82](https://github.com/mineral-ui/mineral-ui/commit/f40ec82))
+* **site:** Add live code examples for demos ([411b23e](https://github.com/mineral-ui/mineral-ui/commit/411b23e))
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.4.2...@mineral-ui/site@0.5.0) (2017-07-14)
 
