@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.0...@mineral-ui/site@0.6.1) (2017-07-19)
+
+
+### Bug Fixes
+
+* **site:** Adjust editor styles to avoid page scrollbars ([beea09c](https://github.com/mineral-ui/mineral-ui/commit/beea09c)), closes [#184](https://github.com/mineral-ui/mineral-ui/issues/184)
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.5.0...@mineral-ui/site@0.6.0) (2017-07-19)
 
