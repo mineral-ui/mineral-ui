@@ -24,7 +24,9 @@ import CardRow from './CardRow';
 import cardTheme from './cardTheme';
 
 type Props = {|
-  /** Rendered content of the component */
+  /** Information displayed above the title */
+  meta?: string,
+  /** Title of the card */
   children: MnrlReactNode,
   /** Displays the title in a less important style */
   minor?: boolean,
@@ -40,17 +42,14 @@ const styles = {
       paddingTop: !props.minor && theme.CardTitle_marginTop
     };
   },
-  title: (props, baseTheme) => {
+  meta: (props, baseTheme) => {
     const theme = cardTheme(baseTheme);
 
     return {
-      fontSize: props.minor
-        ? theme.CardTitle_fontSize_minor
-        : theme.CardTitle_fontSize,
-      fontWeight: props.minor
-        ? theme.CardTitle_fontWeight_minor
-        : theme.CardTitle_fontWeight,
-      margin: 0
+      margin: `0 0 ${getNormalizedValue(
+        theme.CardSubtitle_marginTop,
+        theme.CardSubtitle_fontSize
+      )}`
     };
   },
   subtitle: (props, baseTheme) => {
@@ -65,22 +64,39 @@ const styles = {
         theme.CardSubtitle_fontSize
       )} 0 0`
     };
+  },
+  title: (props, baseTheme) => {
+    const theme = cardTheme(baseTheme);
+
+    return {
+      fontSize: props.minor
+        ? theme.CardTitle_fontSize_minor
+        : theme.CardTitle_fontSize,
+      fontWeight: props.minor
+        ? theme.CardTitle_fontWeight_minor
+        : theme.CardTitle_fontWeight,
+      margin: 0
+    };
   }
 };
 
 const Root = createStyledComponent(CardRow, styles.root, {
   displayName: 'CardTitle'
 });
-const Title = createStyledComponent('h3', styles.title);
 const Subtitle = createStyledComponent('h4', styles.subtitle);
+// CategoryTitle styles Subtitle, so it must break alphabetical order
+const Meta = createStyledComponent(Subtitle, styles.meta);
+const Title = createStyledComponent('h3', styles.title);
 
 /**
  * Card title component
  */
-export default function CardTitle({ children, minor, subtitle }: Props) {
+export default function CardTitle({ children, meta, minor, subtitle }: Props) {
+  const isMinor = minor || Boolean(meta);
   return (
     <Root minor={minor}>
-      <Title minor={minor}>{children}</Title>
+      {meta && <Meta>{meta}</Meta>}
+      <Title minor={isMinor}>{children}</Title>
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
     </Root>
   );

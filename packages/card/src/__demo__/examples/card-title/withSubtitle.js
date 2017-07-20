@@ -15,19 +15,11 @@
  */
 
 /* @flow */
-import {
-  createStyledComponent,
-  mineralTheme
-} from '@mineral-ui/component-utils';
+import { mineralTheme } from '@mineral-ui/component-utils';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
-
-const DemoLayout = createStyledComponent('div', {
-  '& > *': {
-    width: '33.333%'
-  }
-});
+import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'With a subtitle',
@@ -36,13 +28,13 @@ export default {
   description: 'In addition to a title, a Card can display a subtitle.',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `<DemoLayout>
-    <Card>
-      <CardTitle subtitle="Card subtitle">Card title</CardTitle>
-      <CardBlock>
-        Light years star stuff harvesting star light citizens of distant
-        epochs encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </CardBlock>
-    </Card>
-  </DemoLayout>`
+  <Card>
+    <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+  </Card>
+</DemoLayout>`
 };

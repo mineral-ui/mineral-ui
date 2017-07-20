@@ -27,13 +27,15 @@ import CardImage from '../../../CardImage';
 const DemoLayout = createStyledComponent('div', {
   alignItems: 'flex-start',
   display: 'flex',
+  flexWrap: 'wrap',
+  fontSize: mineralTheme.fontSize_base,
+  margin: '-2em',
 
   '& > *': {
-    flex: '1 1 33%'
-  },
-
-  '& > *:not(:first-child)': {
-    marginLeft: '2em'
+    flex: '1 1 25%',
+    margin: '2em',
+    minWidth: '25em',
+    maxWidth: '40em'
   }
 });
 
@@ -44,34 +46,34 @@ export default {
   description: 'The sections of Card are designed to work in any order.',
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
   source: `<DemoLayout>
-    <Card>
-      <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-      <CardTitle minor>Card title</CardTitle>
-      <CardBlock>
-        Light years star stuff harvesting star light citizens of distant
-        epochs encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </CardBlock>
-    </Card>
+  <Card>
+    <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
+    <CardTitle minor>Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+  </Card>
 
-    <Card>
-      <CardTitle>Card title</CardTitle>
-      <CardImage src="http://fillmurray.com/1001/563" alt="Bill Murray" />
-      <CardBlock>
-        Light years star stuff harvesting star light citizens of distant
-        epochs encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </CardBlock>
-    </Card>
+  <Card>
+    <CardTitle>Card title</CardTitle>
+    <CardImage src="http://fillmurray.com/1001/563" alt="Bill Murray" />
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+  </Card>
 
-    <Card>
-      <CardTitle>Card title</CardTitle>
-      <CardBlock>
-        Light years star stuff harvesting star light citizens of distant
-        epochs encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </CardBlock>
-      <CardImage src="http://fillmurray.com/1002/563" alt="Bill Murray" />
-    </Card>
-  </DemoLayout>`
+  <Card>
+    <CardTitle>Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+    <CardImage src="http://fillmurray.com/1002/563" alt="Bill Murray" />
+  </Card>
+</DemoLayout>`
 };
