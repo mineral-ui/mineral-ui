@@ -18,7 +18,16 @@ For a PR to be considered, each item in the checklist must be checked.
 ### Screenshots or videos, if appropriate
 <!-- To record and share a video: http://recordit.co/ -->
 
-### How has this been tested?
+### How to test
+<!--
+Please describe the steps for reviewers to take to cover all facets of this feature
+
+1. `npm run clean && npm install`
+2. navigate to Site > Button > Buttons with kittens section
+3. Click the Cat Button twice (three times in Internet Explorer)
+4. ¡Hear the cat meow en Español!
+
+-->
 <!-- Please describe in detail how you tested your changes beyond automated tests. -->
 
 ### Types of changes
