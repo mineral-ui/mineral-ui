@@ -1,11 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card Arbitrary children 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -199,6 +194,20 @@ exports[`Card Arbitrary children 1`] = `
   line-height: 1.1428571428571428em;
 }
 
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -328,13 +337,13 @@ exports[`Card Arbitrary children 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CustomContent>
-            <Button fullWidth>Button</Button>
-          </CustomContent>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CustomContent>
+          <Button fullWidth>Button</Button>
+        </CustomContent>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -365,7 +374,7 @@ exports[`Card Arbitrary children 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -377,7 +386,9 @@ exports[`Card Arbitrary children 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -440,11 +451,6 @@ exports[`Card Arbitrary children 1`] = `
 `;
 
 exports[`Card Arbitrary children 2`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -639,6 +645,20 @@ exports[`Card Arbitrary children 2`] = `
   padding: 2em 0;
 }
 
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -768,15 +788,15 @@ exports[`Card Arbitrary children 2`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CardBlock>
-            <CustomContent>
-              <Button fullWidth>Button</Button>
-            </CustomContent>
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          <CustomContent>
+            <Button fullWidth>Button</Button>
+          </CustomContent>
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -809,7 +829,7 @@ exports[`Card Arbitrary children 2`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -821,7 +841,9 @@ exports[`Card Arbitrary children 2`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -892,11 +914,6 @@ exports[`Card Arbitrary children 2`] = `
 `;
 
 exports[`Card Basic card 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -947,6 +964,20 @@ exports[`Card Basic card 1`] = `
   margin-top: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
 }
 
 <ThemeProvider>
@@ -1078,15 +1109,15 @@ exports[`Card Basic card 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1115,7 +1146,7 @@ exports[`Card Basic card 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -1127,7 +1158,9 @@ exports[`Card Basic card 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -1160,11 +1193,6 @@ exports[`Card Basic card 1`] = `
 `;
 
 exports[`Card Complex title and subtitle 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -1244,6 +1272,20 @@ exports[`Card Complex title and subtitle 1`] = `
   position: relative;
   top: 0.1em;
   width: 0.8em;
+}
+
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
 }
 
 <ThemeProvider>
@@ -1375,39 +1417,39 @@ exports[`Card Complex title and subtitle 1`] = `
   >
     <LiveProvider
       code="() => {
-        const Status = createStyledComponent('span', {
-          color: 'red',
-          fontSize: '0.6em',
+      const Status = createStyledComponent('span', {
+        color: 'red',
+        fontSize: '0.6em',
     
-          '&:before': {
-            backgroundColor: 'red',
-            borderRadius: '0.8em',
-            content: '\\"\\"',
-            display: 'inline-block',
-            height: '0.8em',
-            marginRight: '0.5em',
-            position: 'relative',
-            top: '0.1em',
-            width: '0.8em'
-          }
-        });
+        '&:before': {
+          backgroundColor: 'red',
+          borderRadius: '0.8em',
+          content: '\\"\\"',
+          display: 'inline-block',
+          height: '0.8em',
+          marginRight: '0.5em',
+          position: 'relative',
+          top: '0.1em',
+          width: '0.8em'
+        }
+      });
     
-        return (
-          <DemoLayout>
-            <Card>
-              <CardTitle subtitle={<em>Subtitle</em>}>
-                Card title<br />
-                <Status>Status label</Status>
-              </CardTitle>
-              <CardBlock>
-                Light years star stuff harvesting star light citizens of distant
-                epochs encyclopaedia galactica vastness is bearable only through love,
-                shores of the cosmic ocean!
-              </CardBlock>
-            </Card>
-          </DemoLayout>
-        );
-      }"
+      return (
+        <DemoLayout>
+          <Card>
+            <CardTitle subtitle={<em>Subtitle</em>}>
+              Card title<br />
+              <Status>Status label</Status>
+            </CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1439,7 +1481,7 @@ exports[`Card Complex title and subtitle 1`] = `
             <wrappedPFC>
               <glamorous(div)>
                 <div
-                  className="css-k5kxyg"
+                  className="css-1707iw7"
                 >
                   <Card>
                     <Card>
@@ -1457,7 +1499,9 @@ exports[`Card Complex title and subtitle 1`] = `
                             <div
                               className="css-2xuam4"
                             >
-                              <glamorous(h3)>
+                              <glamorous(h3)
+                                minor={false}
+                              >
                                 <h3
                                   className="css-157so9w"
                                 >
@@ -1508,11 +1552,6 @@ exports[`Card Complex title and subtitle 1`] = `
 `;
 
 exports[`Card Consistent spacing 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -1601,6 +1640,20 @@ exports[`Card Consistent spacing 1`] = `
   top: -1em;
 }
 
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -1730,15 +1783,15 @@ exports[`Card Consistent spacing 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1767,7 +1820,7 @@ exports[`Card Consistent spacing 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -1779,7 +1832,9 @@ exports[`Card Consistent spacing 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -1818,11 +1873,6 @@ exports[`Card Consistent spacing 1`] = `
 `;
 
 exports[`Card Minor title 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -1898,6 +1948,20 @@ exports[`Card Minor title 1`] = `
   margin: 0;
 }
 
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -2027,16 +2091,16 @@ exports[`Card Minor title 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-          <CardTitle minor>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+        <CardTitle minor>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2067,7 +2131,7 @@ exports[`Card Minor title 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -2185,29 +2249,33 @@ exports[`Card Order of sections 1`] = `
   padding-right: 1.5em;
 }
 
-.css-8edn5r,
-[data-css-8edn5r] {
+.css-2rv9cp,
+[data-css-2rv9cp] {
   -webkit-align-items: flex-start;
-  -ms-flex-align: start;
+  -webkit-box-lines: multiple;
   -webkit-box-align: start;
-  align-items: flex-start;
+  -ms-flex-align: start;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  margin: -2em;
+  font-size: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.css-8edn5r > *,
-[data-css-8edn5r] > * {
-  -webkit-flex: 1 1 33%;
-  -ms-flex: 1 1 33%;
-  flex: 1 1 33%;
-}
-
-.css-8edn5r > *:not(:first-child),
-[data-css-8edn5r] > *:not(:first-child) {
-  margin-left: 2em;
+.css-2rv9cp > *,
+[data-css-2rv9cp] > * {
+  -webkit-flex: 1 1 25%;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+  margin: 2em;
+  min-width: 25em;
+  max-width: 40em;
 }
 
 .css-9a8lzn,
@@ -2378,36 +2446,36 @@ exports[`Card Order of sections 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-          <CardTitle minor>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
+      <Card>
+        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+        <CardTitle minor>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
     
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
     
-        <Card>
-          <CardTitle>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-          <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+        <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2438,7 +2506,7 @@ exports[`Card Order of sections 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-8edn5r"
+                className="css-2rv9cp"
               >
                 <Card>
                   <Card>
@@ -2503,7 +2571,9 @@ exports[`Card Order of sections 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -2550,7 +2620,9 @@ exports[`Card Order of sections 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -2598,11 +2670,6 @@ exports[`Card Order of sections 1`] = `
 `;
 
 exports[`Card With a subtitle 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -2661,6 +2728,20 @@ exports[`Card With a subtitle 1`] = `
   font-size: 1.75em;
   font-weight: 600;
   margin: 0.5714285714285714em 0 0;
+}
+
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
 }
 
 <ThemeProvider>
@@ -2792,15 +2873,15 @@ exports[`Card With a subtitle 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2829,7 +2910,7 @@ exports[`Card With a subtitle 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -2843,7 +2924,9 @@ exports[`Card With a subtitle 1`] = `
                           <div
                             className="css-2xuam4"
                           >
-                            <glamorous(h3)>
+                            <glamorous(h3)
+                              minor={false}
+                            >
                               <h3
                                 className="css-157so9w"
                               >
@@ -2883,11 +2966,6 @@ exports[`Card With a subtitle 1`] = `
 `;
 
 exports[`Card With an image 1`] = `
-.css-k5kxyg > *,
-[data-css-k5kxyg] > * {
-  width: 33.333%;
-}
-
 .css-1fz0xsi,
 [data-css-1fz0xsi] {
   -moz-box-sizing: border-box;
@@ -2963,6 +3041,20 @@ exports[`Card With an image 1`] = `
   margin: 0;
 }
 
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -3092,16 +3184,16 @@ exports[`Card With an image 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-        <Card>
-          <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-          <CardTitle minor>Card title</CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>"
+      <Card>
+        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+        <CardTitle minor>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3132,7 +3224,7 @@ exports[`Card With an image 1`] = `
           >
             <glamorous(div)>
               <div
-                className="css-k5kxyg"
+                className="css-1707iw7"
               >
                 <Card>
                   <Card>
@@ -3163,6 +3255,302 @@ exports[`Card With an image 1`] = `
                           <div
                             className="css-wq8niw"
                           >
+                            <glamorous(h3)
+                              minor={true}
+                            >
+                              <h3
+                                className="css-1sjhusa"
+                              >
+                                Card title
+                              </h3>
+                            </glamorous(h3)>
+                          </div>
+                        </CardTitle>
+                      </CardTitle>
+                      <CardBlock>
+                        <CardBlock>
+                          <div
+                            className="css-1cgin0t"
+                          >
+                            Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
+                          </div>
+                        </CardBlock>
+                      </CardBlock>
+                    </div>
+                  </Card>
+                </Card>
+              </div>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Card With meta information 1`] = `
+.css-1fz0xsi,
+[data-css-1fz0xsi] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 8px;
+  line-height: 1.25;
+  outline: 0;
+  color: #171a1e;
+  border-radius: 0.5625em;
+  box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+  padding-bottom: 2em;
+  padding-top: 0.01em;
+  background-color: #fff;
+}
+
+.css-1fz0xsi *,
+[data-css-1fz0xsi] *,
+.css-1fz0xsi *::before,
+[data-css-1fz0xsi] *::before,
+.css-1fz0xsi *::after,
+[data-css-1fz0xsi] *::after {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.css-2xuam4,
+[data-css-2xuam4] {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+}
+
+.css-1cgin0t,
+[data-css-1cgin0t] {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.css-1sjhusa,
+[data-css-1sjhusa] {
+  font-size: 2.25em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.css-jep7qo,
+[data-css-jep7qo] {
+  color: #555a61;
+  font-size: 1.75em;
+  font-weight: 600;
+  margin: 0 0 0.5714285714285714em;
+}
+
+@media (min-width: 40em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .css-1707iw7 > *,
+  [data-css-1707iw7] > * {
+    width: 33.333%;
+  }
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#d5362b",
+        "backgroundColor_danger_active": "#e5746a",
+        "backgroundColor_danger_focus": "#d5362b",
+        "backgroundColor_danger_hover": "#e04e43",
+        "backgroundColor_disabled": "#e6e9ee",
+        "backgroundColor_input_danger": "#fae8e6",
+        "backgroundColor_input_success": "#e2f5e8",
+        "backgroundColor_input_warning": "#fff0d7",
+        "backgroundColor_link_focus": "#e6e9ee",
+        "backgroundColor_success": "#12ba50",
+        "backgroundColor_success_active": "#4fdc80",
+        "backgroundColor_success_focus": "#12ba50",
+        "backgroundColor_success_hover": "#23c75d",
+        "backgroundColor_warning": "#cf8a00",
+        "backgroundColor_warning_active": "#eea20b",
+        "backgroundColor_warning_focus": "#cf8a00",
+        "backgroundColor_warning_hover": "#eea20b",
+        "borderColor": "#b5b8bd",
+        "borderColor_active": "#368ef5",
+        "borderColor_danger": "#b72318",
+        "borderColor_danger_active": "#991209",
+        "borderColor_danger_focus": "#991209",
+        "borderColor_danger_hover": "#d5362b",
+        "borderColor_focus": "#0d68d0",
+        "borderColor_hover": "#167df4",
+        "borderColor_success": "#09a33f",
+        "borderColor_success_active": "#016626",
+        "borderColor_success_focus": "#016626",
+        "borderColor_success_hover": "#23c75d",
+        "borderColor_warning": "#ba7c00",
+        "borderColor_warning_active": "#7f5500",
+        "borderColor_warning_focus": "#7f5500",
+        "borderColor_warning_hover": "#cf8a00",
+        "borderRadius_1": "0.5625em",
+        "borderRadius_2": "0.75em",
+        "borderRadius_3": "1.125em",
+        "borderRadius_4": "1.5em",
+        "borderRadius_5": "2.25em",
+        "color_black": "#000",
+        "color_caption": "#555a61",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#171a1e",
+        "color_gray_20": "#f0f2f5",
+        "color_gray_30": "#e6e9ee",
+        "color_gray_40": "#d8dade",
+        "color_gray_50": "#b5b8bd",
+        "color_gray_60": "#909499",
+        "color_gray_70": "#676c73",
+        "color_gray_80": "#555a61",
+        "color_gray_90": "#33383f",
+        "color_heading": "#0d68d0",
+        "color_helpText_danger": "#b72318",
+        "color_helpText_success": "#09a33f",
+        "color_helpText_warning": "#976400",
+        "color_link": "#0d5db9",
+        "color_link_active": "#0d53a3",
+        "color_link_focus": "#0d53a3",
+        "color_link_hover": "#0d72e6",
+        "color_placeholder": "#909499",
+        "color_text": "#171a1e",
+        "color_text_danger": "#a81a10",
+        "color_text_disabled": "#b5b8bd",
+        "color_text_ondanger": "white",
+        "color_text_onprimary": "white",
+        "color_text_onsuccess": "white",
+        "color_text_onwarning": "white",
+        "color_text_primary": "#0d5db9",
+        "color_text_success": "#058534",
+        "color_text_warning": "#976400",
+        "color_theme_10": "#e1edfc",
+        "color_theme_100": "#0d53a3",
+        "color_theme_20": "#b8d5f9",
+        "color_theme_30": "#8ebdf7",
+        "color_theme_40": "#62a6f5",
+        "color_theme_50": "#368ef5",
+        "color_theme_60": "#167df4",
+        "color_theme_70": "#0d72e6",
+        "color_theme_80": "#0d68d0",
+        "color_theme_90": "#0d5db9",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": "8px",
+        "fontSize_h1": "4.25em",
+        "fontSize_h2": "3.5em",
+        "fontSize_h3": "2.75em",
+        "fontSize_h4": "2.25em",
+        "fontSize_h5": "1.75em",
+        "fontSize_h6": "1.75em",
+        "fontSize_mouse": "1.375em",
+        "fontSize_prose": "2em",
+        "fontSize_ui": "1.75em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+        "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+        "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+        "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+        "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+        "size_large": "5em",
+        "size_medium": "4em",
+        "size_small": "3em",
+        "spacing_double": "2em",
+        "spacing_half": "0.5em",
+        "spacing_oneAndAHalf": "1.5em",
+        "spacing_quad": "4em",
+        "spacing_quarter": "0.25em",
+        "spacing_single": "1em",
+        "spacing_triple": "3em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="<DemoLayout>
+      <Card>
+        <CardTitle meta=\\"July 24, 2017\\">Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Card": [Function],
+          "CardBlock": [Function],
+          "CardTitle": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Card": [Function],
+            "CardBlock": [Function],
+            "CardTitle": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
+              <div
+                className="css-1707iw7"
+              >
+                <Card>
+                  <Card>
+                    <div
+                      className="css-1fz0xsi"
+                    >
+                      <CardTitle
+                        meta="July 24, 2017"
+                      >
+                        <CardTitle>
+                          <div
+                            className="css-2xuam4"
+                          >
+                            <glamorous(glamorous(h4))>
+                              <h4
+                                className="css-jep7qo"
+                              >
+                                July 24, 2017
+                              </h4>
+                            </glamorous(glamorous(h4))>
                             <glamorous(h3)
                               minor={true}
                             >

@@ -15,9 +15,15 @@
  */
 
 /* @flow */
-import complexTitle from './complexTitle';
-import withMetaInfo from './withMetaInfo';
-import withSubtitle from './withSubtitle';
-import minor from './minor';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 
-export default [withSubtitle, complexTitle, minor, withMetaInfo];
+export default createStyledComponent('div', {
+  '& > *': {
+    '@media(min-width: 40em)': {
+      width: '50%'
+    },
+    '@media(min-width: 64em)': {
+      width: '33.333%'
+    }
+  }
+});

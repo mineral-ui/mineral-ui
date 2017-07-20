@@ -23,12 +23,8 @@ import {
 import Card from '../../../Card';
 import _CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
+import DemoLayout from '../../components/DemoLayout';
 
-const DemoLayout = createStyledComponent('div', {
-  '& > *': {
-    width: '33.333%'
-  }
-});
 const CardBlock = createStyledComponent(_CardBlock, (props, theme) => ({
   position: 'relative',
 
@@ -54,13 +50,13 @@ export default {
     'CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `<DemoLayout>
-    <Card>
-      <CardTitle>Card title</CardTitle>
-      <CardBlock>
-        Light years star stuff harvesting star light citizens of distant
-        epochs encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </CardBlock>
-    </Card>
-  </DemoLayout>`
+  <Card>
+    <CardTitle>Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
+  </Card>
+</DemoLayout>`
 };

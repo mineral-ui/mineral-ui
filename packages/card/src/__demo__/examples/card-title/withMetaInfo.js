@@ -15,39 +15,27 @@
  */
 
 /* @flow */
-import {
-  createStyledComponent,
-  mineralTheme
-} from '@mineral-ui/component-utils';
-import Button from '@mineral-ui/button';
+import { mineralTheme } from '@mineral-ui/component-utils';
 import Card from '../../../Card';
+import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
-const CustomContent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_gray_20,
-  margin: `${theme.spacing_double} 0`,
-  padding: theme.spacing_triple,
-
-  '&:last-child': {
-    borderRadius: `0 0 ${theme.borderRadius_1} ${theme.borderRadius_1}`,
-    marginBottom: `-${theme.spacing_double}`
-  }
-}));
-
 export default {
-  title: 'Arbitrary children',
+  title: 'With meta information',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
-    'A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.',
-  scope: { Button, Card, CardTitle, CustomContent, DemoLayout },
+    'If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.',
+  scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `<DemoLayout>
   <Card>
-    <CardTitle>Card title</CardTitle>
-    <CustomContent>
-      <Button fullWidth>Button</Button>
-    </CustomContent>
+    <CardTitle meta="July 24, 2017">Card title</CardTitle>
+    <CardBlock>
+      Light years star stuff harvesting star light citizens of distant
+      epochs encyclopaedia galactica vastness is bearable only through love,
+      shores of the cosmic ocean!
+    </CardBlock>
   </Card>
 </DemoLayout>`
 };

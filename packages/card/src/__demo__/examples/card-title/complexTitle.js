@@ -22,12 +22,7 @@ import {
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
-
-const DemoLayout = createStyledComponent('div', {
-  '& > *': {
-    width: '33.333%'
-  }
-});
+import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'Complex title and subtitle',
@@ -37,37 +32,37 @@ export default {
     'Both the title and subtitle can contain a simple string or any HTML/React elements.',
   scope: { Card, CardTitle, CardBlock, createStyledComponent, DemoLayout },
   source: `() => {
-    const Status = createStyledComponent('span', {
-      color: 'red',
-      fontSize: '0.6em',
+  const Status = createStyledComponent('span', {
+    color: 'red',
+    fontSize: '0.6em',
 
-      '&:before': {
-        backgroundColor: 'red',
-        borderRadius: '0.8em',
-        content: '""',
-        display: 'inline-block',
-        height: '0.8em',
-        marginRight: '0.5em',
-        position: 'relative',
-        top: '0.1em',
-        width: '0.8em'
-      }
-    });
+    '&:before': {
+      backgroundColor: 'red',
+      borderRadius: '0.8em',
+      content: '""',
+      display: 'inline-block',
+      height: '0.8em',
+      marginRight: '0.5em',
+      position: 'relative',
+      top: '0.1em',
+      width: '0.8em'
+    }
+  });
 
-    return (
-      <DemoLayout>
-        <Card>
-          <CardTitle subtitle={<em>Subtitle</em>}>
-            Card title<br />
-            <Status>Status label</Status>
-          </CardTitle>
-          <CardBlock>
-            Light years star stuff harvesting star light citizens of distant
-            epochs encyclopaedia galactica vastness is bearable only through love,
-            shores of the cosmic ocean!
-          </CardBlock>
-        </Card>
-      </DemoLayout>
-    );
-  }`
+  return (
+    <DemoLayout>
+      <Card>
+        <CardTitle subtitle={<em>Subtitle</em>}>
+          Card title<br />
+          <Status>Status label</Status>
+        </CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>
+  );
+}`
 };

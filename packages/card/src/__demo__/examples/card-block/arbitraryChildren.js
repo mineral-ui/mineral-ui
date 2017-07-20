@@ -23,12 +23,8 @@ import Button from '@mineral-ui/button';
 import Card from '../../../Card';
 import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
+import DemoLayout from '../../components/DemoLayout';
 
-const DemoLayout = createStyledComponent('div', {
-  '& > *': {
-    width: '33.333%'
-  }
-});
 const CustomContent = createStyledComponent('div', (props, theme) => ({
   backgroundColor: theme.color_gray_20,
   padding: `${theme.spacing_double} 0`
@@ -42,13 +38,13 @@ export default {
     'A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.',
   scope: { Button, Card, CardBlock, CardTitle, CustomContent, DemoLayout },
   source: `<DemoLayout>
-    <Card>
-      <CardTitle>Card title</CardTitle>
-      <CardBlock>
-        <CustomContent>
-          <Button fullWidth>Button</Button>
-        </CustomContent>
-      </CardBlock>
-    </Card>
-  </DemoLayout>`
+  <Card>
+    <CardTitle>Card title</CardTitle>
+    <CardBlock>
+      <CustomContent>
+        <Button fullWidth>Button</Button>
+      </CustomContent>
+    </CardBlock>
+  </Card>
+</DemoLayout>`
 };
