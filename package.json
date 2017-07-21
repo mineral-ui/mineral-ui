@@ -15,7 +15,7 @@
     "flow": "flow",
     "flow:restart": "npm run flow -- stop; npm run flow",
     "format": "node ./scripts/format.js && eslint --fix .",
-    "jest": "jest",
+    "jest": "jest --no-cache",
     "lerna": "lerna",
     "link-parent-bin": "link-parent-bin -c packages",
     "lint": "npm run eslint",
