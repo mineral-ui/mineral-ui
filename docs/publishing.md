@@ -13,7 +13,7 @@ npm run release:semantic
 If you need a bit more control over the process, use the following command as your starting point.
 
 ```sh
-npm run release
+npm run release:manual
 ```
 
 _Note that [additional options](https://github.com/lerna/lerna#publish) to the underlying `lerna publish` command may be specified as follows, e.g. `npm run release -- --skip-git --skip-npm`_
@@ -30,8 +30,8 @@ _Note that [additional options](https://github.com/lerna/lerna#publish) to the u
 
 * __How do I publish a prerelease version?__
 
-    * `npm run release -- --skip-git` then select appropriate option when prompted
-    * or `npm run release -- --skip-git --canary`
+    * `npm run release:manual -- --skip-git` then select appropriate option when prompted
+    * or `npm run release:manual -- --skip-git --canary`
 
 
 * __Is it okay to publish from a branch?__
@@ -40,7 +40,7 @@ _Note that [additional options](https://github.com/lerna/lerna#publish) to the u
         * Be sure to use the `--skip-git` flag.  You can then push updates to your branch manually, if desired.
         * Be sure to only publish a prerelease version.  Public releases should be published from master.
         * Be sure to use the `--npm-tag` flag and specify something other than “latest”.
-        * e.g.  `npm run release -- --skip-git --npm-tag next`
+        * e.g.  `npm run release:manual -- --skip-git --npm-tag next`
 
 
 * __What if none of these options work for my needs?__
