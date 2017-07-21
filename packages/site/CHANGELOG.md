@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.1...@mineral-ui/site@0.7.0) (2017-07-21)
+
+
+### Features
+
+* **button:** enable buttons with icon ([f29e4c4](https://github.com/mineral-ui/mineral-ui/commit/f29e4c4))
+* **site:** Make live code examples more readable (#180) ([b0c5ade](https://github.com/mineral-ui/mineral-ui/commit/b0c5ade))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.0...@mineral-ui/site@0.6.1) (2017-07-19)
 
