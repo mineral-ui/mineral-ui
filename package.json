@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap && npm run link-parent-bin",
-    "build": "npm run clean && npm run bootstrap && lerna run build && npm run flow:restart",
+    "build": "npm run clean && npm run bootstrap && lerna run build",
     "clean": "find packages -name dist -or -name node_modules -type d | xargs rm -rf",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
@@ -24,7 +24,7 @@
     "release:manual": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
     "release:semantic": "npm run release:manual -- --conventional-commits && npm run deploy:site:dist",
     "start": "lerna exec --scope @mineral-ui/site -- npm start",
-    "test": "npm run lint && npm run flow && npm run jest -- --coverage"
+    "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
