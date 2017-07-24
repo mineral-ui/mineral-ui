@@ -17,6 +17,7 @@
 /* @flow */
 import card from './card';
 import arbitraryChildren from './arbitraryChildren';
+import clickable from './clickable';
 import orderOfSections from './orderOfSections';
 
-export default [card, arbitraryChildren, orderOfSections];
+export default [card, arbitraryChildren, clickable, orderOfSections];
