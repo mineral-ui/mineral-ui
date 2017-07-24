@@ -22,6 +22,10 @@ declare module 'react-live' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
+declare module 'react-live/react-live.css' {
+  declare module.exports: any;
+}
+
 declare module 'react-live/dist/react-live.es' {
   declare module.exports: any;
 }
