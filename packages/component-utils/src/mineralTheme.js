@@ -60,14 +60,14 @@ export default {
   backgroundColor_success_active: color.green_50,
   backgroundColor_success_focus: color.green_70,
   backgroundColor_success_hover: color.green_60,
-  backgroundColor_warning: color.ochre_60,
-  backgroundColor_warning_active: color.ochre_50,
-  backgroundColor_warning_focus: color.ochre_60,
-  backgroundColor_warning_hover: color.ochre_50,
+  backgroundColor_warning: color.yellow_60,
+  backgroundColor_warning_active: color.yellow_50,
+  backgroundColor_warning_focus: color.yellow_60,
+  backgroundColor_warning_hover: color.yellow_50,
 
   backgroundColor_input_danger: color.red_10,
   backgroundColor_input_success: color.green_10,
-  backgroundColor_input_warning: color.ochre_10,
+  backgroundColor_input_warning: color.yellow_10,
 
   backgroundColor_link_focus: color.gray_30,
 
@@ -83,10 +83,10 @@ export default {
   borderColor_success_active: color.green_100,
   borderColor_success_focus: color.green_100,
   borderColor_success_hover: color.green_60,
-  borderColor_warning: color.ochre_70,
-  borderColor_warning_active: color.ochre_100,
-  borderColor_warning_focus: color.ochre_100,
-  borderColor_warning_hover: color.ochre_60,
+  borderColor_warning: color.yellow_70,
+  borderColor_warning_active: color.yellow_100,
+  borderColor_warning_focus: color.yellow_100,
+  borderColor_warning_hover: color.yellow_60,
 
   color_caption: color.gray_80,
 
@@ -94,7 +94,7 @@ export default {
 
   color_helpText_danger: color.red_80,
   color_helpText_success: color.green_80,
-  color_helpText_warning: color.ochre_90,
+  color_helpText_warning: color.yellow_90,
 
   color_link: primaries.color_theme_90,
   color_link_active: primaries.color_theme_100,
@@ -111,6 +111,6 @@ export default {
   color_text_onprimary: 'white',
   color_text_success: color.green_90,
   color_text_onsuccess: 'white',
-  color_text_warning: color.ochre_90,
+  color_text_warning: color.yellow_90,
   color_text_onwarning: 'white'
 };
