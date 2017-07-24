@@ -21,15 +21,43 @@ import Card from '../Card';
 import examples from '../__demo__/examples';
 import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
-function renderCard(children) {
-  return shallow(<Card>{children}</Card>);
+function renderCard(props, children) {
+  return shallow(<Card {...props}>{children}</Card>);
 }
 
 describe('Card', () => {
+  let card;
   it('renders', () => {
-    const card = renderCard('Children');
+    card = renderCard({}, 'Children');
 
     expect(card.exists()).toEqual(true);
+  });
+
+  describe('onClick', () => {
+    beforeEach(() => {
+      card = renderCard({ onClick: jest.fn() }, 'Click me');
+    });
+
+    it('calls onClick when clicked', () => {
+      card.simulate('click');
+      expect(card.props().onClick).toHaveBeenCalled();
+    });
+
+    it('calls onClick when pressing enter', () => {
+      card.simulate('keypress', {
+        key: 'Enter',
+        preventDefault: () => {}
+      });
+      expect(card.props().onClick).toHaveBeenCalled();
+    });
+
+    it('calls onClick when pressing space', () => {
+      card.simulate('keypress', {
+        key: ' ',
+        preventDefault: () => {}
+      });
+      expect(card.props().onClick).toHaveBeenCalled();
+    });
   });
 
   testDemoExamples(examples);

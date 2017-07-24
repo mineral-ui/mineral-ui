@@ -428,6 +428,27 @@ exports[`App renders correctly 1`] = `
               },
               Object {
                 "backgroundColor": "#f5f7fa",
+                "description": "If an onClick function is provided, the entire card becomes clickable and keyboard actionable.",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "<DemoLayout>
+          <Card onClick={event => console.log(event)}>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>",
+                "title": "Clickable",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
                 "description": "The sections of Card are designed to work in any order.",
                 "scope": Object {
                   "Card": [Function],

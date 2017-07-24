@@ -19,7 +19,12 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import cardTheme from './cardTheme';
 
-type Props = Object;
+type Props = {
+  /** Content of the card. Can be anything, but see CardBlock, CardImage, and CardTitle. */
+  children: MnrlReactNode,
+  /** Called with the click event */
+  onClick?: (event: Object) => void
+};
 
 const Root = createStyledComponent(
   'div',
@@ -30,8 +35,13 @@ const Root = createStyledComponent(
       backgroundColor: theme.Card_backgroundColor,
       borderRadius: theme.Card_borderRadius,
       boxShadow: theme.Card_boxShadow,
+      cursor: props.onClick && 'pointer',
       paddingBottom: theme.Card_paddingBottom,
-      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
+      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
+
+      '&:focus, &[data-simulate-focus]': {
+        boxShadow: theme.Card_boxShadow_focus
+      }
     };
   },
   {
@@ -40,9 +50,22 @@ const Root = createStyledComponent(
   }
 );
 
+const onKeyPress = (props: Props, event: Object) => {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    props.onClick && props.onClick(event);
+  }
+};
+
 /**
  * Card component
  */
 export default function Card(props: Props) {
-  return <Root {...props} />;
+  const rootProps = {
+    onKeyPress: props.onClick ? onKeyPress.bind(null, props) : undefined,
+    role: props.onClick ? 'button' : undefined,
+    tabIndex: props.onClick ? 0 : undefined,
+    ...props
+  };
+  return <Root {...rootProps} />;
 }

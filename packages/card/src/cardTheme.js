@@ -20,6 +20,7 @@ export default function cardTheme(baseTheme: Object) {
     Card_backgroundColor: baseTheme.color_white,
     Card_borderRadius: baseTheme.borderRadius_1,
     Card_boxShadow: baseTheme.shadow_1,
+    Card_boxShadow_focus: `0 0 0 2px ${baseTheme.color_theme_100}, ${baseTheme.shadow_1}`,
     Card_paddingBottom: baseTheme.spacing_double,
 
     CardBlock_fontSize: baseTheme.fontSize_prose,
