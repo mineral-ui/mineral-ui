@@ -52,7 +52,7 @@
           {
             "cwd": "babelrc",
             "alias": {
-              "^@mineral-ui/([^\/]+)(\/.*)?": "./packages/\\1/src\\2"
+              "^@mineral-ui\/([^\/]+)(\/dist\/es)?(\/.*)?": "./packages/\\1/src\\3"
             }
           }
         ]
@@ -69,7 +69,7 @@
           {
             "cwd": "babelrc",
             "alias": {
-              "^@mineral-ui/([^\/]+)(\/.*)?": "./packages/\\1/src\\2"
+              "^@mineral-ui\/([^\/]+)(\/dist\/es)?(\/.*)?": "./packages/\\1/src\\3"
             }
           }
         ]
