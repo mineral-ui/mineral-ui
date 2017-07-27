@@ -17,7 +17,7 @@
 /* @flow */
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
-import { IconQueue } from '@mineral-ui/icon';
+import { IconCloud } from '@mineral-ui/icon';
 
 const DemoLayout = createStyledComponent('div', {
   '& > button': {
@@ -29,20 +29,22 @@ export default {
   title: 'Circular Buttons',
   description:
     'Buttons can be made circular. Such Buttons should not have any text.',
-  scope: { Button, IconQueue, DemoLayout },
+  scope: { Button, IconCloud, DemoLayout },
   source: `() => {
-  const icon = <IconQueue color="currentColor" />;
+  const icon = <IconCloud />;
 
   return <DemoLayout>
-    <Button iconStart={icon} circular aria-label="Add new" />
+    <Button iconStart={icon} circular aria-label="Cloud" />
     {/* primary */}
-    <Button iconStart={icon} circular primary aria-label="Add new" />
+    <Button iconStart={icon} circular primary aria-label="Cloud" />
     {/* minimal */}
-    <Button iconStart={icon} circular minimal aria-label="Add new" />
+    <Button iconStart={icon} circular minimal aria-label="Cloud" />
     {/* small */}
-    <Button iconStart={icon} circular size="small" aria-label="Add new" />
+    <Button iconStart={icon} circular size="small" aria-label="Cloud" />
     {/* large */}
-    <Button iconStart={icon} circular size="large" aria-label="Add new" />
+    <Button iconStart={icon} circular size="large" aria-label="Cloud" />
+    {/* jumbo */}
+    <Button iconStart={icon} circular size="jumbo" aria-label="Cloud" />
   </DemoLayout>
 }`
 };
