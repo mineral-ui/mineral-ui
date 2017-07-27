@@ -17,7 +17,7 @@
 /* @flow */
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
-import { IconQueue } from '@mineral-ui/icon';
+import { IconCloud } from '@mineral-ui/icon';
 
 const DemoLayout = createStyledComponent('div', {
   '& > button': {
@@ -28,10 +28,10 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   title: 'Buttons with Icons',
   description:
-    'Buttons can contain Icons at their start, end, or both. Small and medium Buttons use small Icons; Large Buttons use medium Icons.',
-  scope: { Button, IconQueue, DemoLayout },
+    'Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.',
+  scope: { Button, IconCloud, DemoLayout },
   source: `() => {
-  const icon = <IconQueue color="currentColor" />;
+  const icon = <IconCloud />;
 
   return <DemoLayout>
     <Button iconStart={icon}>Start icon</Button>
@@ -40,8 +40,15 @@ export default {
     <br /><br />
     <Button iconStart={icon} primary>Primary</Button>
     <Button iconStart={icon} minimal>Minimal</Button>
+    <Button iconStart={icon} variant="danger">Danger</Button>
+    <Button iconStart={icon} variant="success">Success</Button>
+    <Button iconStart={icon} variant="warning">Warning</Button>
+    <Button iconStart={icon} disabled>Disabled</Button>
+    <br /><br />
     <Button iconStart={icon} size="small">Small</Button>
+    <Button iconStart={icon}>Medium</Button>
     <Button iconStart={icon} size="large">Large</Button>
+    <Button iconStart={icon} size="jumbo">Jumbo</Button>
   </DemoLayout>
 }`
 };

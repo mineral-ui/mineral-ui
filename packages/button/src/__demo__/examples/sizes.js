@@ -31,5 +31,6 @@ export default {
   <Button size="small">Small</Button>
   <Button>Medium</Button>
   <Button size="large">Large</Button>
+  <Button size="jumbo">Jumbo</Button>
 </DemoLayout>`
 };

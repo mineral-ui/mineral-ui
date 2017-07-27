@@ -17,7 +17,7 @@
 /* @flow */
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Button from '../../Button';
-import { IconQueue } from '@mineral-ui/icon';
+import { IconCloud } from '@mineral-ui/icon';
 
 const DemoLayout = createStyledComponent('div', {
   '& > button': {
@@ -29,25 +29,23 @@ export default {
   title: 'Icon-only Buttons',
   description:
     'Buttons that contain only Icons can use either `iconStart` or `iconEnd` props and must have an `aria-label` provided.',
-  scope: { Button, IconQueue, DemoLayout },
+  scope: { Button, IconCloud, DemoLayout },
   source: `() => {
-  const icon = <IconQueue color="currentColor" />;
+  const icon = <IconCloud />;
 
   return <DemoLayout>
     {/* Icon as prop; no text. aria-label applied to Button. */}
-    <Button iconStart={icon} aria-label="Add new" />
-    {/* Icon as child; no text. aria-label applied to Button. Note that the size of the icon must be provided in this case. */}
-    <Button aria-label="Add new">
-      <IconQueue size="small" color="currentColor" />
-    </Button>
+    <Button iconStart={icon} aria-label="Cloud" />
     {/* primary */}
-    <Button iconStart={icon} primary aria-label="Add new" />
+    <Button iconStart={icon} primary aria-label="Cloud" />
     {/* minimal */}
-    <Button iconStart={icon} minimal aria-label="Add new" />
+    <Button iconStart={icon} minimal aria-label="Cloud" />
     {/* small */}
-    <Button iconStart={icon} size="small" aria-label="Add new" />
+    <Button iconStart={icon} size="small" aria-label="Cloud" />
     {/* large */}
-    <Button iconStart={icon} size="large" aria-label="Add new" />
+    <Button iconStart={icon} size="large" aria-label="Cloud" />
+    {/* jumbo */}
+    <Button iconStart={icon} size="jumbo" aria-label="Cloud" />
   </DemoLayout>
 }`
 };

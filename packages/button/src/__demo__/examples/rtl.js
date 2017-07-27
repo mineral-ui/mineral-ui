@@ -16,14 +16,13 @@
 
 /* @flow */
 import Button from '../../Button';
-import { ThemeProvider } from '@mineral-ui/component-utils';
 import { IconBackspace } from '@mineral-ui/icon';
 
 export default {
   title: 'RTL Support',
   description: '',
-  scope: { Button, IconBackspace, ThemeProvider },
-  source: `<ThemeProvider theme={{direction: 'rtl'}}>
-  <Button iconStart={<IconBackspace color="currentColor" />}>Do Something</Button>
-</ThemeProvider>`
+  scope: { Button, IconBackspace },
+  source: `<div dir="rtl">
+  <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+</div>`
 };
