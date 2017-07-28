@@ -16,7 +16,11 @@
 
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent, generateId } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  pxToEm,
+  generateId
+} from '@mineral-ui/component-utils';
 
 type Props = {
   /** Available sizes, including custom - e.g. '5em' or '20px' */
@@ -34,9 +38,9 @@ type Props = {
 const iconStyles = (props, baseTheme) => {
   const theme = {
     Icon_fill: baseTheme.color_gray_60,
-    Icon_size_small: '2em',
-    Icon_size_medium: '3em',
-    Icon_size_large: '4em',
+    Icon_size_small: pxToEm(12),
+    Icon_size_medium: pxToEm(16),
+    Icon_size_large: pxToEm(20),
     ...baseTheme
   };
 
