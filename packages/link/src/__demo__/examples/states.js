@@ -13,27 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import darken from 'polished/lib/color/darken';
-import { Link } from 'react-router-dom';
-import { createStyledComponent } from '@mineral-ui/component-utils';
-import styleReset from './styleReset';
 
-const styles = (props, theme) => ({
-  ...styleReset(theme),
-  textDecoration: 'none',
-  ':link,:visited': {
-    color: theme.color_interactive
-  },
-  ':hover,:focus': {
-    color: darken(0.1, theme.color_interactive)
-  },
-  ':active': {
-    color: darken(0.15, theme.color_interactive)
+/* @flow */
+import { simulate } from 'glamor';
+import { createStyledComponent } from '@mineral-ui/component-utils';
+import Link from '../../Link';
+
+const DemoLayout = createStyledComponent('div', {
+  '& > a': {
+    marginRight: '0.5rem'
   }
 });
 
-export const RouterLink = createStyledComponent(Link, styles, {
-  forwardProps: ['to']
-});
-
-export default createStyledComponent('a', styles);
+export default {
+  title: 'States',
+  hideSource: true,
+  scope: { Link, DemoLayout, simulate },
+  source: `<DemoLayout>
+  <Link href="http://example.com">Default</Link>
+  <Link {...simulate('hover')} href="http://example.com">Hover</Link>
+  <Link {...simulate('focus')} href="http://example.com">Focus</Link>
+  <Link {...simulate('active')} href="http://example.com">Active</Link>
+</DemoLayout>`
+};

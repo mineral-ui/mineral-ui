@@ -15,14 +15,15 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+import examples from './examples';
 
-const demos = flatten([button, card, icon, link, componentUtils]);
+const doc = require('!!react-docgen-loader!../Link.js');
 
-export default createKeyMap(demos, 'slug');
+export default {
+  behavior: 'behavior dummy text for the link component',
+  design: 'design theory about the link component',
+  doc,
+  examples,
+  slug: 'link',
+  title: 'Link'
+};

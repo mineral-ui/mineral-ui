@@ -14,15 +14,23 @@
  * limitations under the License.
  */
 
-/* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+const webpackMerge = require('webpack-merge');
+const makeWebpackConfig = require('../../utils/makeWebpackConfig');
 
-const demos = flatten([button, card, icon, link, componentUtils]);
+const baseConfig = makeWebpackConfig({
+  packageName: 'Link',
+  packagePath: __dirname
+});
 
-export default createKeyMap(demos, 'slug');
+const config = webpackMerge(baseConfig, {
+  externals: {
+    '@mineral-ui/component-utils': {
+      root: 'ComponentUtils',
+      commonjs: '@mineral-ui/component-utils',
+      commonjs2: '@mineral-ui/component-utils',
+      amd: '@mineral-ui/component-utils'
+    }
+  }
+});
+
+module.exports = config;

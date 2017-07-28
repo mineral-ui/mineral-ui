@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Icon from '@mineral-ui/icon';
 import ComponentDocExample from './ComponentDocExample';
-import Link from './Link';
+import Link from '@mineral-ui/link';
 import styleReset from './styleReset';
 import PropTable from './PropTable';
 

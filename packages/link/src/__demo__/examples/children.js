@@ -15,14 +15,13 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+import Link from '../../Link';
 
-const demos = flatten([button, card, icon, link, componentUtils]);
-
-export default createKeyMap(demos, 'slug');
+export default {
+  title: 'Children',
+  description: 'A Link will render any children.',
+  scope: { Link },
+  source: `<Link href="http://example.com">
+  <img alt="a headshot of Bill Murray" src="https://www.fillmurray.com/100/100" />
+</Link>`
+};
