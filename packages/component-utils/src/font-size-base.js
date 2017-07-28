@@ -15,13 +15,7 @@
  */
 
 /* @flow */
-export { default as createStyledComponent } from './createStyledComponent';
-export { default as createThemedComponent } from './createThemedComponent';
-export { default as getNormalizedValue } from './getNormalizedValue';
-export { default as pxToEm } from './pxToEm';
-export { default as ThemeProvider } from './ThemeProvider';
+// Components are built on an 8px grid
+const fontSize_base = 8;
 
-export { default as mineralTheme } from './mineralTheme';
-export { default as styleVariables } from './styleVariables';
-
-export { generateId, resetId } from './generateId';
+export default fontSize_base;
