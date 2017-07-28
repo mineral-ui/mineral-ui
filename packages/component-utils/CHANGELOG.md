@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.3.0...@mineral-ui/component-utils@1.0.0) (2017-07-28)
+
+
+### Features
+
+* **all:** Update styleVariables hexes; Change ochre to yellow; Update snapshots ([78436d5](https://github.com/mineral-ui/mineral-ui/commit/78436d5))
+* **component-utils:** Add jumbo size; update color applications ([6560443](https://github.com/mineral-ui/mineral-ui/commit/6560443))
+* **component-utils:** Add pxToEm helper ([63e3154](https://github.com/mineral-ui/mineral-ui/commit/63e3154))
+
+
+### BREAKING CHANGES
+
+* **component-utils:** Color applications changed (danger, success, warning, etc...)
+* **all:** Update colors; Remove color_ochre_* theme variables
+
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.2.0...@mineral-ui/component-utils@0.3.0) (2017-07-19)
 

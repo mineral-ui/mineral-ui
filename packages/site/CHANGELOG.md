@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.1...@mineral-ui/site@0.8.0) (2017-07-28)
+
+
+### Bug Fixes
+
+* **site:** mount live editor styles only once (#181) ([6832323](https://github.com/mineral-ui/mineral-ui/commit/6832323))
+
+
+### Features
+
+* **button:** enable buttons with icon ([f29e4c4](https://github.com/mineral-ui/mineral-ui/commit/f29e4c4))
+* **card:** Add onClick prop and focus styles ([46c8ff1](https://github.com/mineral-ui/mineral-ui/commit/46c8ff1))
+* **card-title:** Add support for meta information ([0d86fbb](https://github.com/mineral-ui/mineral-ui/commit/0d86fbb))
+* **site:** Make live code examples more readable (#180) ([b0c5ade](https://github.com/mineral-ui/mineral-ui/commit/b0c5ade))
+
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.1...@mineral-ui/site@0.7.0) (2017-07-21)
 

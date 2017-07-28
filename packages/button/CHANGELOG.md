@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/button@1.2.0...@mineral-ui/button@2.0.0) (2017-07-28)
+
+
+### Features
+
+* **all:** Update styleVariables hexes; Change ochre to yellow; Update snapshots ([78436d5](https://github.com/mineral-ui/mineral-ui/commit/78436d5))
+* **button:** enable buttons with icon ([f29e4c4](https://github.com/mineral-ui/mineral-ui/commit/f29e4c4))
+* **button:** Update styles; add jumbo size ([1d17551](https://github.com/mineral-ui/mineral-ui/commit/1d17551))
+* **site:** Make live code examples more readable (#180) ([b0c5ade](https://github.com/mineral-ui/mineral-ui/commit/b0c5ade))
+
+
+### BREAKING CHANGES
+
+* **button:** Removed some Button theme variables
+* **all:** Update colors; Remove color_ochre_* theme variables
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/button@1.2.0...@mineral-ui/button@1.3.0) (2017-07-21)
 
