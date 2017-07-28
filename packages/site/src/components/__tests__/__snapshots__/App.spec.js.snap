@@ -91,18 +91,19 @@ exports[`App renders correctly 1`] = `
           <Button size=\\"small\\">Small</Button>
           <Button>Medium</Button>
           <Button size=\\"large\\">Large</Button>
+          <Button size=\\"jumbo\\">Jumbo</Button>
         </DemoLayout>",
                 "title": "Sizes",
               },
               Object {
-                "description": "Buttons can contain Icons at their start, end, or both. Small and medium Buttons use small Icons; Large Buttons use medium Icons.",
+                "description": "Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.",
                 "scope": Object {
                   "Button": [Function],
                   "DemoLayout": [Function],
-                  "IconQueue": [Function],
+                  "IconCloud": [Function],
                 },
                 "source": "() => {
-          const icon = <IconQueue color=\\"currentColor\\" />;
+          const icon = <IconCloud />;
         
           return <DemoLayout>
             <Button iconStart={icon}>Start icon</Button>
@@ -111,8 +112,15 @@ exports[`App renders correctly 1`] = `
             <br /><br />
             <Button iconStart={icon} primary>Primary</Button>
             <Button iconStart={icon} minimal>Minimal</Button>
+            <Button iconStart={icon} variant=\\"danger\\">Danger</Button>
+            <Button iconStart={icon} variant=\\"success\\">Success</Button>
+            <Button iconStart={icon} variant=\\"warning\\">Warning</Button>
+            <Button iconStart={icon} disabled>Disabled</Button>
+            <br /><br />
             <Button iconStart={icon} size=\\"small\\">Small</Button>
+            <Button iconStart={icon}>Medium</Button>
             <Button iconStart={icon} size=\\"large\\">Large</Button>
+            <Button iconStart={icon} size=\\"jumbo\\">Jumbo</Button>
           </DemoLayout>
         }",
                 "title": "Buttons with Icons",
@@ -122,26 +130,24 @@ exports[`App renders correctly 1`] = `
                 "scope": Object {
                   "Button": [Function],
                   "DemoLayout": [Function],
-                  "IconQueue": [Function],
+                  "IconCloud": [Function],
                 },
                 "source": "() => {
-          const icon = <IconQueue color=\\"currentColor\\" />;
+          const icon = <IconCloud />;
         
           return <DemoLayout>
             {/* Icon as prop; no text. aria-label applied to Button. */}
-            <Button iconStart={icon} aria-label=\\"Add new\\" />
-            {/* Icon as child; no text. aria-label applied to Button. Note that the size of the icon must be provided in this case. */}
-            <Button aria-label=\\"Add new\\">
-              <IconQueue size=\\"small\\" color=\\"currentColor\\" />
-            </Button>
+            <Button iconStart={icon} aria-label=\\"Cloud\\" />
             {/* primary */}
-            <Button iconStart={icon} primary aria-label=\\"Add new\\" />
+            <Button iconStart={icon} primary aria-label=\\"Cloud\\" />
             {/* minimal */}
-            <Button iconStart={icon} minimal aria-label=\\"Add new\\" />
+            <Button iconStart={icon} minimal aria-label=\\"Cloud\\" />
             {/* small */}
-            <Button iconStart={icon} size=\\"small\\" aria-label=\\"Add new\\" />
+            <Button iconStart={icon} size=\\"small\\" aria-label=\\"Cloud\\" />
             {/* large */}
-            <Button iconStart={icon} size=\\"large\\" aria-label=\\"Add new\\" />
+            <Button iconStart={icon} size=\\"large\\" aria-label=\\"Cloud\\" />
+            {/* jumbo */}
+            <Button iconStart={icon} size=\\"jumbo\\" aria-label=\\"Cloud\\" />
           </DemoLayout>
         }",
                 "title": "Icon-only Buttons",
@@ -151,21 +157,23 @@ exports[`App renders correctly 1`] = `
                 "scope": Object {
                   "Button": [Function],
                   "DemoLayout": [Function],
-                  "IconQueue": [Function],
+                  "IconCloud": [Function],
                 },
                 "source": "() => {
-          const icon = <IconQueue color=\\"currentColor\\" />;
+          const icon = <IconCloud />;
         
           return <DemoLayout>
-            <Button iconStart={icon} circular aria-label=\\"Add new\\" />
+            <Button iconStart={icon} circular aria-label=\\"Cloud\\" />
             {/* primary */}
-            <Button iconStart={icon} circular primary aria-label=\\"Add new\\" />
+            <Button iconStart={icon} circular primary aria-label=\\"Cloud\\" />
             {/* minimal */}
-            <Button iconStart={icon} circular minimal aria-label=\\"Add new\\" />
+            <Button iconStart={icon} circular minimal aria-label=\\"Cloud\\" />
             {/* small */}
-            <Button iconStart={icon} circular size=\\"small\\" aria-label=\\"Add new\\" />
+            <Button iconStart={icon} circular size=\\"small\\" aria-label=\\"Cloud\\" />
             {/* large */}
-            <Button iconStart={icon} circular size=\\"large\\" aria-label=\\"Add new\\" />
+            <Button iconStart={icon} circular size=\\"large\\" aria-label=\\"Cloud\\" />
+            {/* jumbo */}
+            <Button iconStart={icon} circular size=\\"jumbo\\" aria-label=\\"Cloud\\" />
           </DemoLayout>
         }",
                 "title": "Circular Buttons",
@@ -205,11 +213,10 @@ exports[`App renders correctly 1`] = `
                 "scope": Object {
                   "Button": [Function],
                   "IconBackspace": [Function],
-                  "ThemeProvider": [Function],
                 },
-                "source": "<ThemeProvider theme={{direction: 'rtl'}}>
-          <Button iconStart={<IconBackspace color=\\"currentColor\\" />}>Do Something</Button>
-        </ThemeProvider>",
+                "source": "<div dir=\\"rtl\\">
+          <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+        </div>",
                 "title": "RTL Support",
               },
               Object {
