@@ -15,13 +15,11 @@
  */
 
 /* @flow */
-export { default as createStyledComponent } from './createStyledComponent';
-export { default as createThemedComponent } from './createThemedComponent';
-export { default as getNormalizedValue } from './getNormalizedValue';
-export { default as pxToEm } from './pxToEm';
-export { default as ThemeProvider } from './ThemeProvider';
+/**
+  * Helper to convert a px value to ems, relative to the base font size
+  */
+import fontSize_base from './font-size-base';
 
-export { default as mineralTheme } from './mineralTheme';
-export { default as styleVariables } from './styleVariables';
-
-export { generateId, resetId } from './generateId';
+export default function pxToEm(value: number) {
+  return `${value / fontSize_base}em`;
+}

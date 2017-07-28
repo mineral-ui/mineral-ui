@@ -15,6 +15,9 @@
  */
 
 /* @flow */
+import fontSize_base from './font-size-base';
+import pxToEm from './pxToEm';
+
 export const color = {
   black: '#000',
   white: '#fff',
@@ -175,11 +178,11 @@ export const color = {
 };
 
 export default {
-  borderRadius_1: '0.5625em',
-  borderRadius_2: '0.75em',
-  borderRadius_3: '1.125em',
-  borderRadius_4: '1.5em',
-  borderRadius_5: '2.25em',
+  borderRadius_1: pxToEm(4.5),
+  borderRadius_2: pxToEm(6),
+  borderRadius_3: pxToEm(9),
+  borderRadius_4: pxToEm(12),
+  borderRadius_5: pxToEm(16),
 
   direction: 'ltr',
 
@@ -188,18 +191,16 @@ export default {
     '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   fontFamily_monospace: 'monospace',
 
-  // Components are built on an 8px grid
-  fontSize_base: '8px',
-
-  fontSize_h1: '4.25em',
-  fontSize_h2: '3.5em',
-  fontSize_h3: '2.75em',
-  fontSize_h4: '2.25em',
-  fontSize_h5: '1.75em',
-  fontSize_h6: '1.75em',
-  fontSize_mouse: '1.375em',
-  fontSize_prose: '2em',
-  fontSize_ui: '1.75em',
+  fontSize_base,
+  fontSize_h1: pxToEm(34),
+  fontSize_h2: pxToEm(28),
+  fontSize_h3: pxToEm(22),
+  fontSize_h4: pxToEm(18),
+  fontSize_h5: pxToEm(14),
+  fontSize_h6: pxToEm(14),
+  fontSize_mouse: pxToEm(11),
+  fontSize_prose: pxToEm(16),
+  fontSize_ui: pxToEm(14),
 
   fontWeight_regular: 400,
   fontWeight_semiBold: 600,
@@ -215,17 +216,17 @@ export default {
   shadow_4: 'rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px',
   shadow_5: 'rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px',
 
-  size_small: '3em',
-  size_medium: '4em',
-  size_large: '5em',
+  size_small: pxToEm(24),
+  size_medium: pxToEm(32),
+  size_large: pxToEm(40),
 
-  spacing_quarter: '0.25em',
-  spacing_half: '0.5em',
-  spacing_single: '1em',
-  spacing_oneAndAHalf: '1.5em',
-  spacing_double: '2em',
-  spacing_triple: '3em',
-  spacing_quad: '4em',
+  spacing_quarter: pxToEm(2),
+  spacing_half: pxToEm(4),
+  spacing_single: pxToEm(8),
+  spacing_oneAndAHalf: pxToEm(12),
+  spacing_double: pxToEm(16),
+  spacing_triple: pxToEm(24),
+  spacing_quad: pxToEm(32),
 
   zIndex_100: 100,
   zIndex_200: 200,
