@@ -219,6 +219,7 @@ export default {
   size_small: pxToEm(24),
   size_medium: pxToEm(32),
   size_large: pxToEm(40),
+  size_jumbo: pxToEm(52),
 
   spacing_quarter: pxToEm(2),
   spacing_half: pxToEm(4),
