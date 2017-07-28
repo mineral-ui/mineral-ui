@@ -15,14 +15,25 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+import React from 'react';
+import { shallow } from 'enzyme';
+import Link from '../Link';
+import examples from '../__demo__/examples';
+import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
-const demos = flatten([button, card, icon, link, componentUtils]);
+function renderLink(props) {
+  return shallow(<Link {...props} />);
+}
 
-export default createKeyMap(demos, 'slug');
+describe('Link', () => {
+  it('renders', () => {
+    const link = renderLink({
+      href: 'http://example.com',
+      children: 'Children'
+    });
+
+    expect(link.exists()).toEqual(true);
+  });
+
+  testDemoExamples(examples, { exclude: ['ReactRouter'] });
+});

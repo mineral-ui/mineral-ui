@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
-import Link from './Link';
+import Link from '@mineral-ui/link';
 import styleReset from './styleReset';
 
 type Props = {|
@@ -46,7 +46,7 @@ export default function Footer({ className }: Props) {
       <div>
         We welcome feedback and contributions on
         {' '}
-        <Link href="https://github.com/mineral-ui/mineral-ui">
+        <Link to="https://github.com/mineral-ui/mineral-ui">
           GitHub
         </Link>
       </div>

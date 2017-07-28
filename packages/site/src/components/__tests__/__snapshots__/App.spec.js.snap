@@ -912,6 +912,83 @@ exports[`App renders correctly 1`] = `
             "slug": "icon",
             "title": "Icon",
           },
+          "link": Object {
+            "behavior": "behavior dummy text for the link component",
+            "design": "design theory about the link component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "description": "Links used in prose create hypertext.",
+                "scope": Object {
+                  "Link": [Function],
+                },
+                "source": "<p>
+          <Link href=\\"http://example.com\\">Light years</Link> star stuff
+          <Link href=\\"http://example.com\\">harvesting</Link> star light citizens of distant
+          <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </p>",
+                "title": "Basic link",
+              },
+              Object {
+                "description": "A Link will render any children.",
+                "scope": Object {
+                  "Link": [Function],
+                },
+                "source": "<Link href=\\"http://example.com\\">
+          <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
+        </Link>",
+                "title": "Children",
+              },
+              Object {
+                "description": "This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.",
+                "scope": Object {
+                  "BrowserRouter": [Function],
+                  "Link": [Function],
+                  "ReactRouterLink": [Function],
+                  "Redirect": [Function],
+                  "Route": [Function],
+                  "Switch": [Function],
+                },
+                "source": "<BrowserRouter>
+          <Switch>
+            <Route
+              path=\\"/components/:componentId/:path?\\"
+              render={route => {
+                const path = route.match.params.path;
+        
+                if ('page-2' === path) {
+                  return <Link to=\\"/components/link/page-1\\" element={ReactRouterLink}>Page 1</Link>;
+                }
+                return <Link to=\\"/components/link/page-2\\" element={ReactRouterLink}>Page 2</Link>;
+              }}
+            />
+            <Redirect from=\\"/\\" to=\\"/components/link\\" />
+          </Switch>
+        </BrowserRouter>",
+                "title": "ReactRouter",
+              },
+              Object {
+                "hideSource": true,
+                "scope": Object {
+                  "DemoLayout": [Function],
+                  "Link": [Function],
+                  "simulate": [Function],
+                },
+                "source": "<DemoLayout>
+          <Link href=\\"http://example.com\\">Default</Link>
+          <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+          <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+          <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+        </DemoLayout>",
+                "title": "States",
+              },
+            ],
+            "slug": "link",
+            "title": "Link",
+          },
         }
       }
     />

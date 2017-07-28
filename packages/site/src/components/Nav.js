@@ -16,8 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { RouterLink } from './Link';
+import Link from '@mineral-ui/link';
 import { createStyledComponent } from '@mineral-ui/component-utils';
+import { Link as RouterLink } from 'react-router-dom';
 
 import styleReset from './styleReset';
 
@@ -65,7 +66,9 @@ export default function Nav({ className, demos }: Props) {
     const demo = demos[slug];
     return (
       <ListItem key={slug} isSubcomponent={demo.subcomponent}>
-        <RouterLink to={`/components/${slug}`}>{demo.title}</RouterLink>
+        <Link to={`/components/${slug}`} element={RouterLink}>
+          {demo.title}
+        </Link>
       </ListItem>
     );
   });

@@ -15,14 +15,9 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+import link from './link';
+import children from './children';
+import reactRouter from './reactRouter';
+import states from './states';
 
-const demos = flatten([button, card, icon, link, componentUtils]);
-
-export default createKeyMap(demos, 'slug');
+export default [link, children, reactRouter, states];

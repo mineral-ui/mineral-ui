@@ -15,14 +15,16 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from '../../../button/src/__demo__';
-import card from '../../../card/src/__demo__';
-import componentUtils from '../../../component-utils/src/__demo__';
-import icon from '../../../icon/src/__demo__';
-import link from '../../../link/src/__demo__';
+import Link from '../../Link';
 
-const demos = flatten([button, card, icon, link, componentUtils]);
-
-export default createKeyMap(demos, 'slug');
+export default {
+  title: 'Basic link',
+  description: 'Links used in prose create hypertext.',
+  scope: { Link },
+  source: `<p>
+  <Link href="http://example.com">Light years</Link> star stuff
+  <Link href="http://example.com">harvesting</Link> star light citizens of distant
+  <Link href="http://example.com">epochs</Link> encyclopaedia galactica vastness is bearable only through love,
+  shores of the cosmic ocean!
+</p>`
+};
