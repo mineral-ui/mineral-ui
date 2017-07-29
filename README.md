@@ -23,18 +23,18 @@ A design system and [React](https://facebook.github.io/react/) component library
 
 ## Getting Started
 
-Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com/search?q=@mineral-ui). E.g., to install the Hello and World packages:
+Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com/org/mineral-ui). E.g., to install the Button package:
 
 1. Install project [peer dependencies](./docs/peer-dependencies.md)
 
   ```sh
-  npm install --save @mineral-ui/component-utils glamorous glamor
+  npm install --save react react-dom glamorous glamor
   ```
 
 2. Install the Mineral UI packages that you wish to use
 
   ```sh
-  npm install --save @mineral-ui/hello @mineral-ui/world
+  npm install --save @mineral-ui/button @mineral-ui/component-utils
   ```
 
 3. Then, in your app, import and use just like any other React component
@@ -45,12 +45,11 @@ Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com
   import React from 'react';
   import ReactDOM from 'react-dom';
   import { ThemeProvider } from '@mineral-ui/component-utils';
-  import Hello from '@mineral-ui/hello';
-  import World from '@mineral-ui/world';
+  import Button from '@mineral-ui/button';
 
   const App = () => (
     <div>
-      <Hello /> <World />
+      <Button>Do Something</Button>
     </div>
   );
 
@@ -71,7 +70,7 @@ Mineral UI was designed around [Open Sans](https://fonts.google.com/specimen/Ope
   ```html
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   ```
-  
+
 For more options loading this font from Google, check out the Seleted Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
 
 
