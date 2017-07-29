@@ -23,7 +23,7 @@ npm run jest
 ## Run tests for an individual package
 
 ```sh
-cd packages/site
+cd packages/button
 npm test
 npm run lint
 npm run jest
@@ -41,7 +41,7 @@ All [Jest command line options](https://facebook.github.io/jest/docs/cli.html) a
 #### Run a single spec
 
 ```sh
-npm run jest -- HelloWorld
+npm run jest -- Button
 ```
 
 #### Run all specs affected by changed files

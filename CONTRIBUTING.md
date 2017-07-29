@@ -63,7 +63,7 @@ npm update
 1. Navigate to the component you wish to edit and start its demo
 
 	```sh
-	cd packages/components/hello
+	cd packages/components/button
 	npm start
 	```
 
