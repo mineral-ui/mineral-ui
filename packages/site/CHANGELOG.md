@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.9.0...@mineral-ui/site@0.10.0) (2017-08-04)
+
+
+### Features
+
+* **link,site:** Create Link component and add to site ([8b166d0](https://github.com/mineral-ui/mineral-ui/commit/8b166d0))
+
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.6.1...@mineral-ui/site@0.8.0) (2017-07-28)
 
