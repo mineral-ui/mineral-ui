@@ -22,6 +22,7 @@ import {
   getNormalizedValue
 } from '@mineral-ui/component-utils';
 import Link from '@mineral-ui/link';
+import pages from '../pages/pages';
 
 type Props = {|
   className?: string,
@@ -30,7 +31,8 @@ type Props = {|
 
 const styles = {
   nav: (props, theme) => ({
-    padding: theme.spacing_double
+    padding: theme.spacing_double,
+    backgroundColor: theme.slate_10
   }),
   title: (props, theme) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
@@ -55,14 +57,20 @@ const styles = {
     '& + li': {
       marginTop: theme.spacing_single
     }
+  }),
+  subsection: (props, theme) => ({
+    marginTop: theme.spacing_single,
+    listStyle: 'none',
+    paddingLeft: theme.spacing_single
   })
 };
 
 const Root = createStyledComponent('nav', styles.nav);
-const Title = createStyledComponent('h1', styles.title);
 const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
+const SubSection = createStyledComponent('ul', styles.subsection);
+const Title = createStyledComponent('h1', styles.title);
 
 export default function Nav({ className, demos }: Props) {
   const demoLinks = Object.keys(demos).map(slug => {
@@ -79,6 +87,30 @@ export default function Nav({ className, demos }: Props) {
   return (
     <Root className={className}>
       <Title>Mineral UI</Title>
+      <List>
+        {pages.map((page, i) => {
+          return (
+            <ListItem key={`page-${i}`}>
+              <Link to={page.path} element={RouterLink}>{page.title}</Link>
+              {Array.isArray(page.sections) &&
+                <SubSection>
+                  {page.sections.map((section, j) => {
+                    const path = section.id
+                      ? `${page.path}#${section.id}`
+                      : section.path;
+                    return (
+                      <ListItem key={`section-${j}`}>
+                        <Link to={path} element={RouterLink}>
+                          {section.title}
+                        </Link>
+                      </ListItem>
+                    );
+                  })}
+                </SubSection>}
+            </ListItem>
+          );
+        })}
+      </List>
       <Heading>Components</Heading>
       <List>
         {demoLinks}

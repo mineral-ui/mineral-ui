@@ -21,7 +21,18 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 import createKeyMap from '../utils/createKeyMap';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
+import TopLevelNav from './TopLevelNav';
 import _Nav from './Nav';
+
+import {
+  Color,
+  Community,
+  GettingStarted,
+  TableOfContents,
+  Theming,
+  Typography,
+  WhatsNext
+} from '../pages';
 
 type Props = {|
   className?: string,
@@ -70,22 +81,35 @@ export default function App({ className, demos }: Props) {
   const siteDemos = Array.isArray(demos) ? createKeyMap(demos, 'slug') : demos;
 
   return (
-    <Root className={className}>
-      <Nav demos={siteDemos} />
-      <Main>
-        <Switch>
-          <Route
-            path="/components/:componentId"
-            render={route => {
-              const componentId = route.match.params.componentId;
-              const selectedDemo = siteDemos[componentId];
-              return <ComponentDoc {...selectedDemo} />;
-            }}
-          />
-          <Redirect from="/" to={`/components/${getDefaultDemo(siteDemos)}`} />
-        </Switch>
-        <Footer />
-      </Main>
-    </Root>
+    <div>
+      <Route exact path="/" component={TopLevelNav} />
+      <Root className={className}>
+        <Nav demos={siteDemos} />
+        <Main>
+          <Switch>
+            <Route path="/getting-started" component={GettingStarted} />
+            <Route path="/guidelines/color" component={Color} />
+            <Route path="/guidelines/theming" component={Theming} />
+            <Route path="/guidelines/typography" component={Typography} />
+            <Route path="/community" component={Community} />
+            <Route path="/guidelines" component={TableOfContents} />
+            <Route path="/whats-next" component={WhatsNext} />
+            <Route
+              path="/components/:componentId"
+              render={route => {
+                const componentId = route.match.params.componentId;
+                const selectedDemo = siteDemos[componentId];
+                return <ComponentDoc {...selectedDemo} />;
+              }}
+            />
+            <Redirect
+              from="/"
+              to={`/components/${getDefaultDemo(siteDemos)}`}
+            />
+          </Switch>
+          <Footer />
+        </Main>
+      </Root>
+    </div>
   );
 }
