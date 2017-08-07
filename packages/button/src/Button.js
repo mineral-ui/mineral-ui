@@ -147,6 +147,11 @@ const buttonStyles = (props, baseTheme) => {
     cursor: props.disabled ? 'default' : 'pointer',
     fontWeight: theme.Button_fontWeight,
     height: theme[`Button_size_${props.size}`],
+    // Because the small & medium-sized Buttons are shorter than
+    // theme.fontSize_base * theme.lineHeight, the text content does not
+    // vertically align correctly without setting the lineHeight equal to the
+    // smallest fontSize (or smaller).
+    lineHeight: theme.ButtonContent_fontSize_small,
     // Because we use boxSizing: 'border-box', we need to substract the borderWidth
     // from the padding to have the fixed height of Root and Content be correct.
     padding: `${parseFloat(theme[`Button_padding_${props.size}`]) -
