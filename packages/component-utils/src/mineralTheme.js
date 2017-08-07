@@ -90,12 +90,6 @@ export default {
 
   color_caption: color.gray_80,
 
-  color_heading: primaries.color_theme_80,
-
-  color_helpText_danger: color.red_80,
-  color_helpText_success: color.green_80,
-  color_helpText_warning: color.yellow_90,
-
   color_link: primaries.color_theme_80,
   color_link_active: primaries.color_theme_90,
   color_link_hover: primaries.color_theme_70,
@@ -107,7 +101,6 @@ export default {
   color_text_disabled: color.gray_50,
   color_text_danger: color.red_80,
   color_text_ondanger: color.white,
-  color_text_primary: primaries.color_theme_90,
   color_text_onprimary: color.white,
   color_text_success: color.green_90,
   color_text_onsuccess: color.white,
