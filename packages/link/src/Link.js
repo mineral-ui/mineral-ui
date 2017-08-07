@@ -33,7 +33,7 @@ const linkStyles = (props, baseTheme) => {
     Link_color_hover: baseTheme.color_link_hover,
     Link_color_focus: baseTheme.color_link_focus,
     Link_color_active: baseTheme.color_link_active,
-    Link_fontSize: `${2 * baseTheme.fontSize_base}px`,
+    Link_fontSize: `${baseTheme.fontSize_base}px`,
     Link_fontWeight: baseTheme.fontWeight_regular,
 
     ...baseTheme
