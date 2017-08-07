@@ -23,20 +23,12 @@ export default {
   description:
     'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
   scope: { createStyledComponent, Sample },
-<<<<<<< HEAD
   source: `
     () => {
       const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
         outline: '3px dashed mediumvioletred',
         fontSize: theme.fontSize_h1
       }));
-=======
-  source: `() => {
-  const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
-    outline: '3px dashed mediumvioletred',
-    fontSize: theme.fontSize_h1
-  }));
->>>>>>> WIP: Update code
 
       return <MyStyledSample />;
     }
