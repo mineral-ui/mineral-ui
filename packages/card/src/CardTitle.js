@@ -91,10 +91,20 @@ const Title = createStyledComponent('h3', styles.title);
 /**
  * Card title component
  */
-export default function CardTitle({ children, meta, minor, subtitle }: Props) {
+export default function CardTitle({
+  children,
+  meta,
+  minor,
+  subtitle,
+  ...restProps
+}: Props) {
+  const rootProps = {
+    minor,
+    ...restProps
+  };
   const isMinor = minor || Boolean(meta);
   return (
-    <Root minor={minor}>
+    <Root {...rootProps}>
       {meta && <Meta>{meta}</Meta>}
       <Title minor={isMinor}>{children}</Title>
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
