@@ -20,21 +20,20 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 const styles = {
   codeValue: (props, theme) => ({
-    fontFamily: theme.fontFamily_monospace,
-    fontSize: '1.2em'
+    fontFamily: theme.fontFamily_monospace
   }),
   heading: (props, theme) => ({
-    margin: `0 0 ${theme.measurement_c}`
+    margin: `0 0 ${theme.spacing_double}`
   }),
   propCell: (props, theme) => ({
-    padding: `${theme.measurement_c} 0`,
+    padding: `${theme.spacing_double} 0`,
     verticalAlign: 'top'
   }),
   propColumnHeader: (props, theme) => ({
     borderBottom: `3px solid ${theme.color_gray_60}`,
     color: theme.color_gray_60,
     fontWeight: theme.fontWeight_bold,
-    paddingBottom: theme.measurement_b,
+    paddingBottom: theme.spacing_single,
     textAlign: 'left',
     width: props.width && `${props.width}rem`
   }),
@@ -46,35 +45,33 @@ const styles = {
   }),
   propRequired: (props, theme) => ({
     backgroundColor: theme.backgroundColor_danger,
-    borderRadius: '3px',
-    color: theme.color_gray,
+    borderRadius: theme.borderRadius_1,
+    color: theme.color_white,
     display: 'inline-block',
     fontFamily: theme.fontFamily_monospace,
-    padding: theme.measurement_a
+    padding: `${theme.spacing_half} ${theme.spacing_single}`
   }),
   tr: (props, theme) => ({
-    borderBottom: `1px solid ${theme.color_gray}`
+    borderBottom: `1px solid ${theme.borderColor}`
   }),
-  propTable: () => ({
+  propTable: (props, theme) => ({
     borderCollapse: 'collapse',
     borderSpacing: 0,
-    fontSize: '0.9rem',
+    fontSize: theme.fontSize_ui,
     width: '100%'
   }),
   propType: (props, theme) => ({
     color: theme.color_theme_90,
-    fontFamily: theme.fontFamily_monospace,
-    fontSize: '1.2em'
+    fontFamily: theme.fontFamily_monospace
   }),
   propValue: (props, theme) => ({
-    border: `1px solid ${theme.color_gray}`,
+    border: `1px solid ${theme.borderColor}`,
     height: '100%',
     resize: 'vertical',
     width: '100%'
   }),
   root: (props, theme) => ({
-    fontFamily: theme.fontFamily_system,
-    margin: `${theme.measurement_d} 0 0 0`
+    margin: `${theme.spacing_quad} 0 0 0`
   })
 };
 

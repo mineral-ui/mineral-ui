@@ -17,16 +17,11 @@
 /* @flow */
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import {
-  createStyledComponent,
-  ThemeProvider
-} from '@mineral-ui/component-utils';
+import { createStyledComponent } from '@mineral-ui/component-utils';
 import createKeyMap from '../utils/createKeyMap';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
-import siteTheme from './siteTheme';
-import styleReset from './styleReset';
 
 type Props = {|
   className?: string,
@@ -35,7 +30,8 @@ type Props = {|
 
 const styles = {
   app: (props, theme) => ({
-    ...styleReset(theme),
+    fontFamily: theme.fontFamily_system,
+
     '@media(min-width: 45em)': {
       alignItems: 'stretch',
       display: 'flex',
@@ -43,13 +39,14 @@ const styles = {
     }
   }),
   nav: (props, theme) => ({
-    border: `0 solid ${theme.color_gray}`,
+    backgroundColor: theme.color_gray_10,
+    border: `0 solid ${theme.borderColor}`,
     borderBottomWidth: '1px',
 
     '@media(min-width: 45em)': {
       borderBottomWidth: '0',
       borderRightWidth: '1px',
-      width: `${16 * parseFloat(theme.measurement_c)}rem`
+      width: `${16 * parseFloat(theme.spacing_double)}em`
     }
   }),
   main: {
@@ -57,7 +54,9 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent('div', styles.app);
+const Root = createStyledComponent('div', styles.app, {
+  includeStyleReset: true
+});
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
@@ -72,9 +71,7 @@ export default function App({ className, demos }: Props) {
 
   return (
     <Root className={className}>
-      <ThemeProvider theme={{ backgroundColor: siteTheme.color_grayLight }}>
-        <Nav demos={siteDemos} />
-      </ThemeProvider>
+      <Nav demos={siteDemos} />
       <Main>
         <Switch>
           <Route
