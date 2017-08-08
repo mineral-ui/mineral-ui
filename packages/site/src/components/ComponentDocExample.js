@@ -16,33 +16,38 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
-import styleReset from './styleReset';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '@mineral-ui/component-utils';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
   componentDocExample: (props, theme) => ({
-    ...styleReset(theme),
     '& + &': {
-      borderTop: `1px solid ${theme.color_gray}`,
-      marginTop: theme.measurement_d
+      borderTop: `1px solid ${theme.borderColor}`,
+      marginTop: theme.spacing_quad
     }
   }),
   h4: (props, theme) => ({
-    margin: `${theme.measurement_d} 0 ${theme.measurement_c} 0`,
-    fontSize: `${parseFloat(theme.fontSize_h4) / 2}em`
+    margin: `${getNormalizedValue(
+      theme.spacing_quad,
+      theme.fontSize_h4
+    )} 0 ${getNormalizedValue(theme.spacing_double, theme.fontSize_h4)} 0`,
+    fontSize: theme.fontSize_h4
   }),
   p: (props, theme) => ({
-    lineHeight: '1.5',
-    margin: `0 0 ${theme.measurement_c}`
+    lineHeight: theme.lineHeight_prose,
+    margin: `0 0 ${theme.spacing_double}`
   }),
   livePreview: (props, theme) => ({
-    backgroundColor: props.backgroundColor || theme.backgorundColor,
-    border: `1px solid ${theme.color_gray}`,
-    padding: theme.measurement_c
+    backgroundColor: props.backgroundColor,
+    border: `1px solid ${theme.borderColor}`,
+    padding: theme.spacing_double
   }),
   liveEditor: (props, theme) => ({
-    maxHeight: `${parseFloat(theme.measurement_d) * 10}em`,
+    fontSize: theme.fontSize_ui,
+    maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
     overflow: 'auto'
   })
 };

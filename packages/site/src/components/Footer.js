@@ -16,19 +16,24 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
-import Link from '@mineral-ui/link';
-import styleReset from './styleReset';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '@mineral-ui/component-utils';
+import _Link from '@mineral-ui/link';
 
 type Props = {|
   className?: string
 |};
 
+const Link = createStyledComponent(_Link, {
+  fontSize: '1em'
+});
+
 const Root = createStyledComponent('div', (props, theme) => ({
-  ...styleReset(theme),
-  color: theme.borderColor,
-  fontSize: theme.font_size_a,
-  margin: theme.measurement_d,
+  color: theme.color_caption,
+  fontSize: theme.fontSize_mouse,
+  margin: getNormalizedValue(theme.spacing_quad, theme.fontSize_mouse),
 
   '@media(min-width: 32em)': {
     display: 'flex',
@@ -46,7 +51,7 @@ export default function Footer({ className }: Props) {
       <div>
         We welcome feedback and contributions on
         {' '}
-        <Link to="https://github.com/mineral-ui/mineral-ui">
+        <Link href="https://github.com/mineral-ui/mineral-ui">
           GitHub
         </Link>
       </div>

@@ -16,11 +16,12 @@
 
 /* @flow */
 import React from 'react';
-import Link from '@mineral-ui/link';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import _Link from '@mineral-ui/link';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '@mineral-ui/component-utils';
 import { Link as RouterLink } from 'react-router-dom';
-
-import styleReset from './styleReset';
 
 type Props = {|
   className?: string,
@@ -29,19 +30,24 @@ type Props = {|
 
 const styles = {
   nav: (props, theme) => ({
-    ...styleReset(theme),
-    padding: theme.measurement_c
+    padding: theme.spacing_double
   }),
   title: (props, theme) => ({
-    borderBottom: `1px solid ${theme.color_gray}`,
-    fontSize: theme.font_size_c,
-    margin: `0 0 ${theme.measurement_c}`,
-    paddingBottom: theme.measurement_c
+    borderBottom: `1px solid ${theme.borderColor}`,
+    fontSize: theme.fontSize_h3,
+    margin: `0 0 ${getNormalizedValue(
+      theme.spacing_double,
+      theme.fontSize_h3
+    )}`,
+    paddingBottom: getNormalizedValue(theme.spacing_double, theme.fontSize_h3)
   }),
   heading: (props, theme) => ({
     margin: '0',
-    fontSize: theme.font_size_b
+    fontSize: theme.fontSize_h4
   }),
+  link: {
+    textDecoration: 'none'
+  },
   list: {
     listStyle: 'none',
     paddingLeft: '0'
@@ -50,7 +56,7 @@ const styles = {
     paddingLeft: props.isSubcomponent && theme.spacing_single,
 
     '& + li': {
-      marginTop: theme.measurement_b
+      marginTop: theme.spacing_single
     }
   })
 };
@@ -58,6 +64,7 @@ const styles = {
 const Root = createStyledComponent('nav', styles.nav);
 const Title = createStyledComponent('h1', styles.title);
 const Heading = createStyledComponent('h2', styles.heading);
+const Link = createStyledComponent(_Link, styles.link);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 

@@ -22,7 +22,6 @@ import { simulations } from 'glamor';
 import 'babel-polyfill';
 import { ThemeProvider } from '@mineral-ui/component-utils';
 import App from '../components/App';
-import siteTheme from '../components/siteTheme';
 // $FlowFixMe
 import demos from '{{DEMO_LIST_PATH}}';
 require('./index.css');
@@ -41,9 +40,7 @@ if (redirect && redirect !== window.location.href) {
 render(
   <BrowserRouter>
     <ThemeProvider>
-      <ThemeProvider theme={siteTheme}>
-        <App demos={demos} />
-      </ThemeProvider>
+      <App demos={demos} />
     </ThemeProvider>
   </BrowserRouter>,
   document.getElementById('app')

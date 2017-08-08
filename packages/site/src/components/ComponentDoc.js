@@ -16,11 +16,14 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '@mineral-ui/component-utils';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '@mineral-ui/component-utils';
 import Icon from '@mineral-ui/icon';
 import ComponentDocExample from './ComponentDocExample';
 import Link from '@mineral-ui/link';
-import styleReset from './styleReset';
 import PropTable from './PropTable';
 
 type Example = {
@@ -43,54 +46,60 @@ type Props = {
 
 const styles = {
   componentDoc: (props, theme) => ({
-    ...styleReset(theme),
-    borderBottom: `2px solid ${theme.color_gray}`,
-    margin: `0 ${theme.measurement_d} ${theme.measurement_d}`,
-    paddingBottom: theme.measurement_d
+    borderBottom: `2px solid ${theme.borderColor}`,
+    margin: `0 ${theme.spacing_quad} ${theme.spacing_quad}`,
+    paddingBottom: theme.spacing_quad
   }),
   header: (props, theme) => ({
     alignItems: 'center',
     display: 'flex',
     flexWrap: 'wrap',
-    marginBottom: theme.measurement_b,
-    padding: `${theme.measurement_c} 0`
+    marginBottom: theme.spacing_single,
+    padding: `${theme.spacing_double} 0`
   }),
   title: (props, theme) => ({
-    fontSize: `${parseFloat(theme.fontSize_h1) / 2}em`,
+    fontSize: theme.fontSize_h1,
     fontWeight: theme.fontWeight_extraBold,
-    margin: `0 0 ${theme.measurement_c}`,
+    margin: `0 0 ${getNormalizedValue(
+      theme.spacing_double,
+      theme.fontSize_h1
+    )}`,
     marginRight: 'auto',
-    paddingRight: '12rem'
+    paddingRight: pxToEm(16 * 12)
   }),
   p: (props, theme) => ({
-    fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
+    fontSize: theme.fontSize_h3,
     flex: '1 0 100%',
-    lineHeight: '1.5',
+    lineHeight: theme.lineHeight_prose,
     margin: '0'
   }),
   h2: (props, theme) => ({
     margin: `${2 *
-      parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_c} 0`,
-    fontSize: `${parseFloat(theme.fontSize_h2) / 2}em`,
+      parseFloat(
+        getNormalizedValue(theme.spacing_quad, theme.fontSize_h2)
+      )}em 0 ${getNormalizedValue(theme.spacing_double, theme.fontSize_h2)} 0`,
+    fontSize: theme.fontSize_h2,
     fontWeight: theme.fontWeight_semiBold
   }),
   h3: (props, theme) => ({
-    fontSize: `${parseFloat(theme.fontSize_h3) / 2}em`,
+    fontSize: theme.fontSize_h3,
     fontWeight: theme.fontWeight_semiBold,
     margin: `${2 *
-      parseFloat(theme.measurement_d)}rem 0 ${theme.measurement_b} 0`
+      parseFloat(
+        getNormalizedValue(theme.spacing_quad, theme.fontSize_h3)
+      )}em 0 ${getNormalizedValue(theme.spacing_single, theme.fontSize_h3)} 0`
   }),
   subnav: (props, theme) => ({
-    borderBottom: `1px solid ${theme.color_gray}`,
-    marginBottom: '2rem'
+    borderBottom: `1px solid ${theme.borderColor}`,
+    marginBottom: theme.spacing_quad
   }),
-  navElement: {
+  navElement: (props, theme) => ({
     display: 'inline-block',
-    marginRight: '1.5rem',
-    paddingBottom: '0.5rem',
+    marginRight: theme.spacing_triple,
+    paddingBottom: theme.spacing_single,
     borderBottom: '3px solid transparent',
     cursor: 'pointer'
-  }
+  })
 };
 
 const Root = createStyledComponent('section', styles.componentDoc);
