@@ -23,26 +23,22 @@ a generic Icon component to which you can provide your own SVG.
 
 ```jsx
 import React from 'react';
-import IconHelp from '@mineral-ui/icon/dist/es/lib/IconHelp';
-import { IconFingerprint } from '@mineral-ui/icon'; // see note on treeshaking below
+import IconHelp from '@mineral-ui/icon/lib/IconHelp';
 
 export default function MyComponent() {
   return (
     <div>
       <IconHelp />
-      <IconFingerprint />
     </div>
   );
 }
 ```
 
-> Note that in the example above, there are two ways to import icons, directly from `icons/dist/es/lib`, and by destructuring the index. At the current time, we cannot recommend the destructured import because something about the way we are re-exporting in the index is preventing webpack from being able to treeshake properly and you will end up with all of the icons in your bundle. It's possible that you may be able to get this to work better using rollup, but if you are using webpack, we recommend importing the icons you need directly from `icon/dist/es/lib`.
-
 ### Custom Icon
 
 ```jsx
 import React from 'react';
-import Icon from '@mineral-ui/icon/dist/es/Icon';
+import Icon from '@mineral-ui/icon/lib/Icon';
 
 export default function MyComponent() {
   return (
@@ -56,3 +52,5 @@ export default function MyComponent() {
   );
 }
 ```
+
+> Note that in the examples above, the Icon classes are imported from `@mineral-ui/icon/lib`, rather than from the package index. We recommend this approach to ensure that you don't inadvertently import all of the icons and so that your bundle size is kept small.

@@ -12,3 +12,9 @@ dist/
 lib/
 node_modules/
 reports/
+
+# Exclude generated files from icon package
+packages/icon/src/Icon*.js
+packages/icon/src/index.js
+packages/icon/src/__demo__/components/categories
+!packages/icon/src/Icon.js # not generated

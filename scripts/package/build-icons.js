@@ -20,7 +20,7 @@ const SVG_DIR = path.join(
 );
 const SVG_GLOB = '**/production/*_24px.svg';
 const ICON_SRC_DIR = path.join(__dirname, '../../packages/icon/src');
-const ICON_COMPONENTS_DIR = './src/lib';
+const ICON_COMPONENTS_DIR = './src';
 const ICON_COMPONENT_TEMPLATE_PATH = path.join(
   ICON_SRC_DIR,
   'templates/Icon.template.js'

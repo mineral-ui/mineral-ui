@@ -15,5 +15,5 @@ TARGET=$TARGET NODE_ENV=$NODE_ENV webpack
 
 # flow definitions
 if [ "$TARGET" != 'site' ]; then
-  flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' -i '**/lib/**' "$SRC_DIR" "$UMD_DIR"
+  flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' -i '**/lib/**' -i '**/templates/**' "$SRC_DIR" "$UMD_DIR"
 fi

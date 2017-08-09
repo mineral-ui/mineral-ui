@@ -16,7 +16,7 @@
 
 /* @flow */
 import { ThemeProvider } from '@mineral-ui/component-utils';
-import IconHelp from '../../lib/IconHelp';
+import IconHelp from '../../IconHelp';
 
 export default {
   title: 'RTL',

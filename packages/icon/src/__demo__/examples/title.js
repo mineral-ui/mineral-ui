@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import IconSentimentSatisfied from '../../lib/IconSentimentSatisfied';
+import IconSentimentSatisfied from '../../IconSentimentSatisfied';
 
 export default {
   title: 'Title',
