@@ -17,7 +17,7 @@
 /* @flow */
 
 import React from 'react';
-import Icon from '../Icon';
+import Icon from './Icon';
 
 type Props = {
   size?: string | 'small' | 'medium' | 'large',

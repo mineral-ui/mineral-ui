@@ -23,7 +23,7 @@ import FigContainer from '../../components/FigContainer';
 import CategoryHeader from '../../components/CategoryHeader';
 
 {{#components}}
-import {{componentName}} from '../../../lib/{{componentName}}';
+import {{componentName}} from '../../../{{componentName}}';
 {{/components}}
 
 export default function {{componentName}}() {

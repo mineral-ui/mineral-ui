@@ -44,64 +44,64 @@ npm update
 
 1. Install the packages and their dependencies
 
-	```sh
-	npm install
-	```
+    ```sh
+    npm install
+    ```
 
 1. Make sure you’re using the correct `node` version (we recommend using [nvm](https://github.com/creationix/nvm) to install and manage `node` on your machine)
 
-	```sh
-	nvm use
-	```
+    ```sh
+    nvm use
+    ```
 
-	If your console tells you that you don’t have that version installed, run
+    If your console tells you that you don’t have that version installed, run
 
-	```sh
-	nvm install
-	```
+    ```sh
+    nvm install
+    ```
+
+1. Build the project
+
+    ```sh
+    npm run build
+    ```
 
 1. Navigate to the component you wish to edit and start its demo
 
-	```sh
-	cd packages/components/button
-	npm start
-	```
+    ```sh
+    cd packages/components/button
+    npm start
+    ```
 
 
 ### Developing
 
 - We use [Prettier](https://github.com/prettier/prettier), so you can write your code in whichever style you’re most comfortable and convert it to our standard before you commit:
 
-	In the project root:
+    In the project root:
 
-	```sh
-	npm run format
-	```
+    ```sh
+    npm run format
+    ```
 
 - We also use [Commitizen](https://github.com/commitizen/cz-cli) for ensuring a standard format for this project’s commit messages. You can still commit as normal with a valid message, but we recommend using:
 
-	```sh
-	npm run commit
-	```
+    ```sh
+    npm run commit
+    ```
 
 
 ### Testing
 
 Unit tests use [Jest](https://github.com/facebook/jest). When appropriate, [snaphots](http://facebook.github.io/jest/docs/snapshot-testing.html) are nice.
 
-1. After making your changes, first run a build in the project root
+1. After making your changes, lint your code and run the unit tests
 
-	```sh
-	npm run build
-	```
+    ```sh
+    npm test
+    ```
 
-1. Then lint your code and run the unit tests
-
-	```sh
-	npm test
-	```
-
-	You can run a scoped suite of unit tests by running that same command in any package’s directory.
+    You can run a scoped suite of unit tests by running that same command in any package’s directory.
 
 
 ### Developer Docs
