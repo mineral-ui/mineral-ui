@@ -47,7 +47,6 @@ type Props = {
 const styles = {
   componentDoc: ({ theme }) => ({
     borderBottom: `2px solid ${theme.borderColor}`,
-    fontFamily: theme.fontFamily_system,
     margin: `0 ${theme.spacing_quad} ${theme.spacing_quad}`,
     paddingBottom: theme.spacing_quad
   }),

@@ -30,13 +30,6 @@ require('react-live/react-live.css');
 // Enable Glamor simulate helper
 simulations(true);
 
-// Github 404 page hack to support SPA hosting
-const { redirect } = window.sessionStorage;
-delete window.sessionStorage.redirect;
-if (redirect && redirect !== window.location.href) {
-  window.history.replaceState(null, '', redirect);
-}
-
 render(
   <BrowserRouter>
     <ThemeProvider>
