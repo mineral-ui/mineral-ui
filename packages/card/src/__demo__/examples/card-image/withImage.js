@@ -24,7 +24,6 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'With an image',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",

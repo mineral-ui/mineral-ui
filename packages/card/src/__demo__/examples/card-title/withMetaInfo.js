@@ -23,7 +23,6 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'With meta information',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.',

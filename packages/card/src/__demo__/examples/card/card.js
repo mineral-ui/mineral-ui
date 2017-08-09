@@ -23,7 +23,6 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'Basic card',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.',
