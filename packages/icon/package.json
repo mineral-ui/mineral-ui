@@ -3,8 +3,8 @@
   "version": "1.0.1",
   "description": "Icon component",
   "license": "Apache-2.0",
-  "main": "dist/umd/index.js",
-  "module": "dist/es/index.js",
+  "main": "dist/index.umd.js",
+  "module": "lib/index.js",
   "scripts": {
     "build": "npm run build:icons && $npm_package_config_script_path/build.sh",
     "build:analyze": "$npm_package_config_script_path/build-analyze.sh",

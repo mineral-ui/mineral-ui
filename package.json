@@ -6,7 +6,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap && npm run link-parent-bin",
     "build": "npm run clean && npm run bootstrap && lerna run build",
-    "clean": "find packages -name dist -or -name node_modules -type d | xargs rm -rf",
+    "clean": "find packages -name dist -or -name lib -or -name node_modules -type d | xargs rm -rf",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
     "deploy:site": "npm run build && npm run test && npm run deploy:site:dist",

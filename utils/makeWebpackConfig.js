@@ -42,10 +42,10 @@ function getOutput({ packageName, packagePath }) {
     };
   } else {
     return {
-      filename: '[name].js',
+      filename: '[name].umd.js',
       library: packageName,
       libraryTarget: 'umd',
-      path: path.resolve(packagePath, 'dist/umd')
+      path: path.resolve(packagePath, 'dist')
     };
   }
 }

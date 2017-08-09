@@ -2,8 +2,8 @@
 
 NODE_ENV="${NODE_ENV:-production}"
 SRC_DIR="src"
-ES_DIR="dist/es"
-UMD_DIR="dist/umd"
+ES_DIR="lib"
+UMD_DIR="dist"
 
 # es modules
 if [ "$TARGET" != 'site' ]; then
@@ -13,7 +13,7 @@ fi
 # umd
 TARGET=$TARGET NODE_ENV=$NODE_ENV webpack
 
-# copy source code with embedded flow definitions
+# flow definitions
 if [ "$TARGET" != 'site' ]; then
-  flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' "$SRC_DIR" "$UMD_DIR"
+  flow-copy-source -v -i '**/__tests__/**' -i '**/__demo__/**' -i '**/dist/**' -i '**/lib/**' "$SRC_DIR" "$UMD_DIR"
 fi

@@ -29,6 +29,7 @@ const files = glob.sync('**/*.js', {
     '**/node_modules/**',
     '**/dist/**',
     '**/flow-typed/**',
+    '**/lib/**',
     '**/reports/**',
     '**/scripts/**'
   ]
