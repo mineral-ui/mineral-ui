@@ -41,7 +41,6 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   title: 'Order of sections',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'The sections of Card are designed to work in any order.',
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },

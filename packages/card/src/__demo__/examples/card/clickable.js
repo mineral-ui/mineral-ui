@@ -23,7 +23,6 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   title: 'Clickable',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'If an onClick function is provided, the entire card becomes clickable and keyboard actionable.',
