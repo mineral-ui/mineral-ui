@@ -16,12 +16,12 @@
 
 /* @flow */
 import React from 'react';
-import _Link from '@mineral-ui/link';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   createStyledComponent,
   getNormalizedValue
 } from '@mineral-ui/component-utils';
-import { Link as RouterLink } from 'react-router-dom';
+import Link from '@mineral-ui/link';
 
 type Props = {|
   className?: string,
@@ -45,9 +45,6 @@ const styles = {
     margin: '0',
     fontSize: theme.fontSize_h4
   }),
-  link: {
-    textDecoration: 'none'
-  },
   list: {
     listStyle: 'none',
     paddingLeft: '0'
@@ -64,7 +61,6 @@ const styles = {
 const Root = createStyledComponent('nav', styles.nav);
 const Title = createStyledComponent('h1', styles.title);
 const Heading = createStyledComponent('h2', styles.heading);
-const Link = createStyledComponent(_Link, styles.link);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 
