@@ -90,11 +90,6 @@ export default {
 
   color_caption: color.gray_80,
 
-  color_link: primaries.color_theme_80,
-  color_link_active: primaries.color_theme_90,
-  color_link_hover: primaries.color_theme_70,
-  color_link_focus: primaries.color_theme_80,
-
   color_placeholder: color.gray_60,
 
   color_text: color.gray_100,
@@ -104,6 +99,10 @@ export default {
   color_text_danger_hover: color.red_70,
   color_text_danger_focus: color.red_80,
   color_text_ondanger: color.white,
+  color_text_primary: primaries.color_theme_80,
+  color_text_primary_active: primaries.color_theme_90,
+  color_text_primary_hover: primaries.color_theme_70,
+  color_text_primary_focus: primaries.color_theme_80,
   color_text_onprimary: color.white,
   color_text_success: color.green_90,
   color_text_success_active: color.green_100,

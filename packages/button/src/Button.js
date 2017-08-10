@@ -67,7 +67,7 @@ const buttonTheme = (props, baseTheme) => ({
   Button_borderWidth: 1, // px, also used to calculate padding (in ems)
   Button_boxShadow_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
   Button_color_text: baseTheme.color_gray_100,
-  Button_color_text_minimal: baseTheme.color_link,
+  Button_color_text_minimal: baseTheme.color_text_primary,
   Button_color_text_primary: baseTheme.color_text_onprimary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
   Button_padding_small: pxToEm(4),
