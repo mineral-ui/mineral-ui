@@ -32,10 +32,10 @@ type Props = {
 const linkStyles = (props, baseTheme) => {
   let theme = {
     Link_borderColor_focus: baseTheme.borderColor_focus,
-    Link_color: baseTheme.color_link,
-    Link_color_hover: baseTheme.color_link_hover,
-    Link_color_focus: baseTheme.color_link_focus,
-    Link_color_active: baseTheme.color_link_active,
+    Link_color: baseTheme.color_text_primary,
+    Link_color_hover: baseTheme.color_text_primary_hover,
+    Link_color_focus: baseTheme.color_text_primary_focus,
+    Link_color_active: baseTheme.color_text_primary_active,
 
     ...baseTheme
   };
