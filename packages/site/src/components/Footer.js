@@ -20,15 +20,11 @@ import {
   createStyledComponent,
   getNormalizedValue
 } from '@mineral-ui/component-utils';
-import _Link from '@mineral-ui/link';
+import Link from '@mineral-ui/link';
 
 type Props = {|
   className?: string
 |};
-
-const Link = createStyledComponent(_Link, {
-  fontSize: '1em'
-});
 
 const Root = createStyledComponent('div', (props, theme) => ({
   color: theme.color_caption,

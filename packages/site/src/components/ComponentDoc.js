@@ -47,6 +47,7 @@ type Props = {
 const styles = {
   componentDoc: (props, theme) => ({
     borderBottom: `2px solid ${theme.borderColor}`,
+    fontFamily: theme.fontFamily_system,
     margin: `0 ${theme.spacing_quad} ${theme.spacing_quad}`,
     paddingBottom: theme.spacing_quad
   }),
@@ -102,7 +103,9 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('section', styles.componentDoc);
+const Root = createStyledComponent('section', styles.componentDoc, {
+  includeStyleReset: true
+});
 const Header = createStyledComponent('header', styles.header);
 const Title = createStyledComponent('h1', styles.title);
 const P = createStyledComponent('p', styles.p);
