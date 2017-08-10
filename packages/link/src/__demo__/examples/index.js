@@ -19,5 +19,6 @@ import link from './link';
 import children from './children';
 import reactRouter from './reactRouter';
 import states from './states';
+import variants from './variants';
 
-export default [link, children, reactRouter, states];
+export default [link, children, variants, reactRouter, states];
