@@ -1,46 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link Basic link 1`] = `
-.css-108eusz,
-[data-css-108eusz] {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.css-tc8z0v,
+[data-css-tc8z0v] {
+  font-size: 1.5em;
+}
+
+.css-1qvuwfl,
+[data-css-1qvuwfl] {
   color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
+  text-decoration: none;
 }
 
-.css-108eusz *,
-[data-css-108eusz] *,
-.css-108eusz *::before,
-[data-css-108eusz] *::before,
-.css-108eusz *::after,
-[data-css-108eusz] *::after {
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.css-108eusz:hover,
-[data-css-108eusz]:hover,
-.css-108eusz[data-simulate-hover],
-[data-css-108eusz][data-simulate-hover] {
+.css-1qvuwfl:hover,
+[data-css-1qvuwfl]:hover,
+.css-1qvuwfl[data-simulate-hover],
+[data-css-1qvuwfl][data-simulate-hover] {
   color: #1b8bcc;
+  text-decoration: underline;
 }
 
-.css-108eusz:focus,
-[data-css-108eusz]:focus,
-.css-108eusz[data-simulate-focus],
-[data-css-108eusz][data-simulate-focus] {
+.css-1qvuwfl:focus,
+[data-css-1qvuwfl]:focus,
+.css-1qvuwfl[data-simulate-focus],
+[data-css-1qvuwfl][data-simulate-focus] {
   color: #0f75b0;
+  outline: 1px solid #0f75b0;
+  outline-offset: 2px;
 }
 
-.css-108eusz:active,
-[data-css-108eusz]:active,
-.css-108eusz[data-simulate-active],
-[data-css-108eusz][data-simulate-active] {
+.css-1qvuwfl:active,
+[data-css-1qvuwfl]:active,
+.css-1qvuwfl[data-simulate-active],
+[data-css-1qvuwfl][data-simulate-active] {
   color: #0a6091;
+}
+
+.css-10bvvrb,
+[data-css-10bvvrb] {
+  font-size: 0.75em;
+}
+
+.css-41sc57,
+[data-css-41sc57] {
+  font-weight: 700;
+}
+
+.css-1siiee,
+[data-css-1siiee] {
+  font-family: serif;
 }
 
 <ThemeProvider>
@@ -93,20 +101,29 @@ exports[`Link Basic link 1`] = `
         "color_gray_70": "#707a8a",
         "color_gray_80": "#58606e",
         "color_gray_90": "#434a54",
-        "color_link": "#0f75b0",
-        "color_link_active": "#0a6091",
-        "color_link_focus": "#0f75b0",
-        "color_link_hover": "#1b8bcc",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
         "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
         "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
         "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
         "color_theme_10": "#e1f3fc",
         "color_theme_100": "#084d75",
         "color_theme_20": "#c0e5fc",
@@ -163,17 +180,32 @@ exports[`Link Basic link 1`] = `
     }
   >
     <LiveProvider
-      code="<p>
-      <Link href=\\"http://example.com\\">Light years</Link> star stuff
-      <Link href=\\"http://example.com\\">harvesting</Link> star light citizens of distant
-      <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </p>"
+      code="<div>
+      <Big>
+        Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+      </Big>
+    
+      <Small>
+        citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+      </Small>
+    
+      <Bold>
+        vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+      </Bold>
+    
+      <Serif>
+        shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+      </Serif>
+    </div>"
       mountStylesheet={false}
       noInline={false}
       scope={
         Object {
+          "Big": [Function],
+          "Bold": [Function],
           "Link": [Function],
+          "Serif": [Function],
+          "Small": [Function],
         }
       }
     >
@@ -181,7 +213,11 @@ exports[`Link Basic link 1`] = `
         className="react-live"
         scope={
           Object {
+            "Big": [Function],
+            "Bold": [Function],
             "Link": [Function],
+            "Serif": [Function],
+            "Small": [Function],
           }
         }
       >
@@ -189,53 +225,100 @@ exports[`Link Basic link 1`] = `
           <div
             className="react-live-preview"
           >
-            <p>
-              <Link
-                href="http://example.com"
-              >
-                <Link
-                  href="http://example.com"
+            <div>
+              <glamorous(p)>
+                <p
+                  className="css-tc8z0v"
                 >
-                  <a
-                    className="css-108eusz"
+                  Light years star stuff 
+                  <Link
                     href="http://example.com"
                   >
-                    Light years
-                  </a>
-                </Link>
-              </Link>
-               star stuff 
-              <Link
-                href="http://example.com"
-              >
-                <Link
-                  href="http://example.com"
+                    <Link
+                      href="http://example.com"
+                      variant="regular"
+                    >
+                      <a
+                        className="css-1qvuwfl"
+                        href="http://example.com"
+                      >
+                        harvesting
+                      </a>
+                    </Link>
+                  </Link>
+                   star light
+                </p>
+              </glamorous(p)>
+              <glamorous(p)>
+                <p
+                  className="css-10bvvrb"
                 >
-                  <a
-                    className="css-108eusz"
+                  citizens of distant 
+                  <Link
                     href="http://example.com"
                   >
-                    harvesting
-                  </a>
-                </Link>
-              </Link>
-               star light citizens of distant 
-              <Link
-                href="http://example.com"
-              >
-                <Link
-                  href="http://example.com"
+                    <Link
+                      href="http://example.com"
+                      variant="regular"
+                    >
+                      <a
+                        className="css-1qvuwfl"
+                        href="http://example.com"
+                      >
+                        epochs
+                      </a>
+                    </Link>
+                  </Link>
+                   encyclopaedia galactica
+                </p>
+              </glamorous(p)>
+              <glamorous(p)>
+                <p
+                  className="css-41sc57"
                 >
-                  <a
-                    className="css-108eusz"
+                  vastness is 
+                  <Link
                     href="http://example.com"
                   >
-                    epochs
-                  </a>
-                </Link>
-              </Link>
-               encyclopaedia galactica vastness is bearable only through love, shores of the cosmic ocean!
-            </p>
+                    <Link
+                      href="http://example.com"
+                      variant="regular"
+                    >
+                      <a
+                        className="css-1qvuwfl"
+                        href="http://example.com"
+                      >
+                        bearable
+                      </a>
+                    </Link>
+                  </Link>
+                   only through love,
+                </p>
+              </glamorous(p)>
+              <glamorous(p)>
+                <p
+                  className="css-1siiee"
+                >
+                  shores of the 
+                  <Link
+                    href="http://example.com"
+                  >
+                    <Link
+                      href="http://example.com"
+                      variant="regular"
+                    >
+                      <a
+                        className="css-1qvuwfl"
+                        href="http://example.com"
+                      >
+                        cosmic
+                      </a>
+                    </Link>
+                  </Link>
+                   ocean!
+                </p>
+              </glamorous(p)>
+            </div>
           </div>
         </LivePreview>
       </div>
@@ -245,45 +328,33 @@ exports[`Link Basic link 1`] = `
 `;
 
 exports[`Link Children 1`] = `
-.css-108eusz,
-[data-css-108eusz] {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.css-1qvuwfl,
+[data-css-1qvuwfl] {
   color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
+  text-decoration: none;
 }
 
-.css-108eusz *,
-[data-css-108eusz] *,
-.css-108eusz *::before,
-[data-css-108eusz] *::before,
-.css-108eusz *::after,
-[data-css-108eusz] *::after {
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.css-108eusz:hover,
-[data-css-108eusz]:hover,
-.css-108eusz[data-simulate-hover],
-[data-css-108eusz][data-simulate-hover] {
+.css-1qvuwfl:hover,
+[data-css-1qvuwfl]:hover,
+.css-1qvuwfl[data-simulate-hover],
+[data-css-1qvuwfl][data-simulate-hover] {
   color: #1b8bcc;
+  text-decoration: underline;
 }
 
-.css-108eusz:focus,
-[data-css-108eusz]:focus,
-.css-108eusz[data-simulate-focus],
-[data-css-108eusz][data-simulate-focus] {
+.css-1qvuwfl:focus,
+[data-css-1qvuwfl]:focus,
+.css-1qvuwfl[data-simulate-focus],
+[data-css-1qvuwfl][data-simulate-focus] {
   color: #0f75b0;
+  outline: 1px solid #0f75b0;
+  outline-offset: 2px;
 }
 
-.css-108eusz:active,
-[data-css-108eusz]:active,
-.css-108eusz[data-simulate-active],
-[data-css-108eusz][data-simulate-active] {
+.css-1qvuwfl:active,
+[data-css-1qvuwfl]:active,
+.css-1qvuwfl[data-simulate-active],
+[data-css-1qvuwfl][data-simulate-active] {
   color: #0a6091;
 }
 
@@ -337,20 +408,29 @@ exports[`Link Children 1`] = `
         "color_gray_70": "#707a8a",
         "color_gray_80": "#58606e",
         "color_gray_90": "#434a54",
-        "color_link": "#0f75b0",
-        "color_link_active": "#0a6091",
-        "color_link_focus": "#0f75b0",
-        "color_link_hover": "#1b8bcc",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
         "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
         "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
         "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
         "color_theme_10": "#e1f3fc",
         "color_theme_100": "#084d75",
         "color_theme_20": "#c0e5fc",
@@ -435,9 +515,10 @@ exports[`Link Children 1`] = `
             >
               <Link
                 href="http://example.com"
+                variant="regular"
               >
                 <a
-                  className="css-108eusz"
+                  className="css-1qvuwfl"
                   href="http://example.com"
                 >
                   <img
@@ -456,51 +537,129 @@ exports[`Link Children 1`] = `
 `;
 
 exports[`Link States 1`] = `
-.css-108eusz,
-[data-css-108eusz] {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.css-1qvuwfl,
+[data-css-1qvuwfl] {
   color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
+  text-decoration: none;
 }
 
-.css-108eusz *,
-[data-css-108eusz] *,
-.css-108eusz *::before,
-[data-css-108eusz] *::before,
-.css-108eusz *::after,
-[data-css-108eusz] *::after {
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.css-108eusz:hover,
-[data-css-108eusz]:hover,
-.css-108eusz[data-simulate-hover],
-[data-css-108eusz][data-simulate-hover] {
+.css-1qvuwfl:hover,
+[data-css-1qvuwfl]:hover,
+.css-1qvuwfl[data-simulate-hover],
+[data-css-1qvuwfl][data-simulate-hover] {
   color: #1b8bcc;
+  text-decoration: underline;
 }
 
-.css-108eusz:focus,
-[data-css-108eusz]:focus,
-.css-108eusz[data-simulate-focus],
-[data-css-108eusz][data-simulate-focus] {
+.css-1qvuwfl:focus,
+[data-css-1qvuwfl]:focus,
+.css-1qvuwfl[data-simulate-focus],
+[data-css-1qvuwfl][data-simulate-focus] {
   color: #0f75b0;
+  outline: 1px solid #0f75b0;
+  outline-offset: 2px;
 }
 
-.css-108eusz:active,
-[data-css-108eusz]:active,
-.css-108eusz[data-simulate-active],
-[data-css-108eusz][data-simulate-active] {
+.css-1qvuwfl:active,
+[data-css-1qvuwfl]:active,
+.css-1qvuwfl[data-simulate-active],
+[data-css-1qvuwfl][data-simulate-active] {
   color: #0a6091;
 }
 
 .css-2b2qop > a,
 [data-css-2b2qop] > a {
   margin-right: 0.5rem;
+}
+
+.css-10ibr8w,
+[data-css-10ibr8w] {
+  color: #ad0e0e;
+  text-decoration: none;
+}
+
+.css-10ibr8w:hover,
+[data-css-10ibr8w]:hover,
+.css-10ibr8w[data-simulate-hover],
+[data-css-10ibr8w][data-simulate-hover] {
+  color: #c71818;
+  text-decoration: underline;
+}
+
+.css-10ibr8w:focus,
+[data-css-10ibr8w]:focus,
+.css-10ibr8w[data-simulate-focus],
+[data-css-10ibr8w][data-simulate-focus] {
+  color: #ad0e0e;
+  outline: 1px solid #c71818;
+  outline-offset: 2px;
+}
+
+.css-10ibr8w:active,
+[data-css-10ibr8w]:active,
+.css-10ibr8w[data-simulate-active],
+[data-css-10ibr8w][data-simulate-active] {
+  color: #940909;
+}
+
+.css-1mm5gik,
+[data-css-1mm5gik] {
+  color: #06783f;
+  text-decoration: none;
+}
+
+.css-1mm5gik:hover,
+[data-css-1mm5gik]:hover,
+.css-1mm5gik[data-simulate-hover],
+[data-css-1mm5gik][data-simulate-hover] {
+  color: #0a8f4c;
+  text-decoration: underline;
+}
+
+.css-1mm5gik:focus,
+[data-css-1mm5gik]:focus,
+.css-1mm5gik[data-simulate-focus],
+[data-css-1mm5gik][data-simulate-focus] {
+  color: #06783f;
+  outline: 1px solid #06783f;
+  outline-offset: 2px;
+}
+
+.css-1mm5gik:active,
+[data-css-1mm5gik]:active,
+.css-1mm5gik[data-simulate-active],
+[data-css-1mm5gik][data-simulate-active] {
+  color: #046132;
+}
+
+.css-1g0latm,
+[data-css-1g0latm] {
+  color: #bd3909;
+  text-decoration: none;
+}
+
+.css-1g0latm:hover,
+[data-css-1g0latm]:hover,
+.css-1g0latm[data-simulate-hover],
+[data-css-1g0latm][data-simulate-hover] {
+  color: #cf4615;
+  text-decoration: underline;
+}
+
+.css-1g0latm:focus,
+[data-css-1g0latm]:focus,
+.css-1g0latm[data-simulate-focus],
+[data-css-1g0latm][data-simulate-focus] {
+  color: #bd3909;
+  outline: 1px solid #cf4615;
+  outline-offset: 2px;
+}
+
+.css-1g0latm:active,
+[data-css-1g0latm]:active,
+.css-1g0latm[data-simulate-active],
+[data-css-1g0latm][data-simulate-active] {
+  color: #a83207;
 }
 
 <ThemeProvider>
@@ -553,20 +712,29 @@ exports[`Link States 1`] = `
         "color_gray_70": "#707a8a",
         "color_gray_80": "#58606e",
         "color_gray_90": "#434a54",
-        "color_link": "#0f75b0",
-        "color_link_active": "#0a6091",
-        "color_link_focus": "#0f75b0",
-        "color_link_hover": "#1b8bcc",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
         "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
         "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
         "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
         "color_theme_10": "#e1f3fc",
         "color_theme_100": "#084d75",
         "color_theme_20": "#c0e5fc",
@@ -624,10 +792,33 @@ exports[`Link States 1`] = `
   >
     <LiveProvider
       code="<DemoLayout>
-      <Link href=\\"http://example.com\\">Default</Link>
+      <Link href=\\"http://example.com\\">Regular</Link>
       <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
       <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+      <Link {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+      <Link {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
       <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+      <br /><br />
+      <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+      <Link variant=\\"danger\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+      <Link variant=\\"danger\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+      <Link variant=\\"danger\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+      <Link variant=\\"danger\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+      <Link variant=\\"danger\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+      <br /><br />
+      <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+      <Link variant=\\"success\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+      <Link variant=\\"success\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+      <Link variant=\\"success\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+      <Link variant=\\"success\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+      <Link variant=\\"success\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+      <br /><br />
+      <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+      <Link variant=\\"warning\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+      <Link variant=\\"warning\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+      <Link variant=\\"warning\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+      <Link variant=\\"warning\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+      <Link variant=\\"warning\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
     </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
@@ -662,12 +853,13 @@ exports[`Link States 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    variant="regular"
                   >
                     <a
-                      className="css-108eusz"
+                      className="css-1qvuwfl"
                       href="http://example.com"
                     >
-                      Default
+                      Regular
                     </a>
                   </Link>
                 </Link>
@@ -678,9 +870,10 @@ exports[`Link States 1`] = `
                   <Link
                     data-simulate-hover=""
                     href="http://example.com"
+                    variant="regular"
                   >
                     <a
-                      className="css-108eusz"
+                      className="css-1qvuwfl"
                       data-simulate-hover=""
                       href="http://example.com"
                     >
@@ -695,13 +888,56 @@ exports[`Link States 1`] = `
                   <Link
                     data-simulate-focus=""
                     href="http://example.com"
+                    variant="regular"
                   >
                     <a
-                      className="css-108eusz"
+                      className="css-1qvuwfl"
                       data-simulate-focus=""
                       href="http://example.com"
                     >
                       Focus
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  data-simulate-hover=""
+                  href="http://example.com"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="regular"
+                  >
+                    <a
+                      className="css-1qvuwfl"
+                      data-simulate-focus=""
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Focus & Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  data-simulate-focus=""
+                  href="http://example.com"
+                >
+                  <Link
+                    data-simulate-active=""
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="regular"
+                  >
+                    <a
+                      className="css-1qvuwfl"
+                      data-simulate-active=""
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus & Active
                     </a>
                   </Link>
                 </Link>
@@ -712,13 +948,731 @@ exports[`Link States 1`] = `
                   <Link
                     data-simulate-active=""
                     href="http://example.com"
+                    variant="regular"
                   >
                     <a
-                      className="css-108eusz"
+                      className="css-1qvuwfl"
                       data-simulate-active=""
                       href="http://example.com"
                     >
                       Active
+                    </a>
+                  </Link>
+                </Link>
+                <br />
+                <br />
+                <Link
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      href="http://example.com"
+                    >
+                      Danger
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      data-simulate-focus=""
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Focus & Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    data-simulate-active=""
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      data-simulate-active=""
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus & Active
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    data-simulate-active=""
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      data-simulate-active=""
+                      href="http://example.com"
+                    >
+                      Active
+                    </a>
+                  </Link>
+                </Link>
+                <br />
+                <br />
+                <Link
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      href="http://example.com"
+                    >
+                      Success
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      data-simulate-focus=""
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Focus & Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    data-simulate-active=""
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      data-simulate-active=""
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus & Active
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    data-simulate-active=""
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      data-simulate-active=""
+                      href="http://example.com"
+                    >
+                      Active
+                    </a>
+                  </Link>
+                </Link>
+                <br />
+                <br />
+                <Link
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      href="http://example.com"
+                    >
+                      Warning
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-focus=""
+                  data-simulate-hover=""
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    data-simulate-focus=""
+                    data-simulate-hover=""
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      data-simulate-focus=""
+                      data-simulate-hover=""
+                      href="http://example.com"
+                    >
+                      Focus & Hover
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  data-simulate-focus=""
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    data-simulate-active=""
+                    data-simulate-focus=""
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      data-simulate-active=""
+                      data-simulate-focus=""
+                      href="http://example.com"
+                    >
+                      Focus & Active
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  data-simulate-active=""
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    data-simulate-active=""
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      data-simulate-active=""
+                      href="http://example.com"
+                    >
+                      Active
+                    </a>
+                  </Link>
+                </Link>
+              </div>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Link Variants 1`] = `
+.css-1qvuwfl,
+[data-css-1qvuwfl] {
+  color: #0f75b0;
+  text-decoration: none;
+}
+
+.css-1qvuwfl:hover,
+[data-css-1qvuwfl]:hover,
+.css-1qvuwfl[data-simulate-hover],
+[data-css-1qvuwfl][data-simulate-hover] {
+  color: #1b8bcc;
+  text-decoration: underline;
+}
+
+.css-1qvuwfl:focus,
+[data-css-1qvuwfl]:focus,
+.css-1qvuwfl[data-simulate-focus],
+[data-css-1qvuwfl][data-simulate-focus] {
+  color: #0f75b0;
+  outline: 1px solid #0f75b0;
+  outline-offset: 2px;
+}
+
+.css-1qvuwfl:active,
+[data-css-1qvuwfl]:active,
+.css-1qvuwfl[data-simulate-active],
+[data-css-1qvuwfl][data-simulate-active] {
+  color: #0a6091;
+}
+
+.css-2b2qop > a,
+[data-css-2b2qop] > a {
+  margin-right: 0.5rem;
+}
+
+.css-10ibr8w,
+[data-css-10ibr8w] {
+  color: #ad0e0e;
+  text-decoration: none;
+}
+
+.css-10ibr8w:hover,
+[data-css-10ibr8w]:hover,
+.css-10ibr8w[data-simulate-hover],
+[data-css-10ibr8w][data-simulate-hover] {
+  color: #c71818;
+  text-decoration: underline;
+}
+
+.css-10ibr8w:focus,
+[data-css-10ibr8w]:focus,
+.css-10ibr8w[data-simulate-focus],
+[data-css-10ibr8w][data-simulate-focus] {
+  color: #ad0e0e;
+  outline: 1px solid #c71818;
+  outline-offset: 2px;
+}
+
+.css-10ibr8w:active,
+[data-css-10ibr8w]:active,
+.css-10ibr8w[data-simulate-active],
+[data-css-10ibr8w][data-simulate-active] {
+  color: #940909;
+}
+
+.css-1mm5gik,
+[data-css-1mm5gik] {
+  color: #06783f;
+  text-decoration: none;
+}
+
+.css-1mm5gik:hover,
+[data-css-1mm5gik]:hover,
+.css-1mm5gik[data-simulate-hover],
+[data-css-1mm5gik][data-simulate-hover] {
+  color: #0a8f4c;
+  text-decoration: underline;
+}
+
+.css-1mm5gik:focus,
+[data-css-1mm5gik]:focus,
+.css-1mm5gik[data-simulate-focus],
+[data-css-1mm5gik][data-simulate-focus] {
+  color: #06783f;
+  outline: 1px solid #06783f;
+  outline-offset: 2px;
+}
+
+.css-1mm5gik:active,
+[data-css-1mm5gik]:active,
+.css-1mm5gik[data-simulate-active],
+[data-css-1mm5gik][data-simulate-active] {
+  color: #046132;
+}
+
+.css-1g0latm,
+[data-css-1g0latm] {
+  color: #bd3909;
+  text-decoration: none;
+}
+
+.css-1g0latm:hover,
+[data-css-1g0latm]:hover,
+.css-1g0latm[data-simulate-hover],
+[data-css-1g0latm][data-simulate-hover] {
+  color: #cf4615;
+  text-decoration: underline;
+}
+
+.css-1g0latm:focus,
+[data-css-1g0latm]:focus,
+.css-1g0latm[data-simulate-focus],
+[data-css-1g0latm][data-simulate-focus] {
+  color: #bd3909;
+  outline: 1px solid #cf4615;
+  outline-offset: 2px;
+}
+
+.css-1g0latm:active,
+[data-css-1g0latm]:active,
+.css-1g0latm[data-simulate-active],
+[data-css-1g0latm][data-simulate-active] {
+  color: #a83207;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input_danger": "#fce3e3",
+        "backgroundColor_input_success": "#e8fcf2",
+        "backgroundColor_input_warning": "#fcf1dc",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#51b3f0",
+        "borderColor_danger": "#ad0e0e",
+        "borderColor_danger_active": "#7d0606",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#db2929",
+        "borderColor_focus": "#0f75b0",
+        "borderColor_hover": "#2f9fe0",
+        "borderColor_success": "#0a8f4c",
+        "borderColor_success_active": "#046132",
+        "borderColor_success_focus": "#06783f",
+        "borderColor_success_hover": "#1fc06f",
+        "borderColor_warning": "#d19411",
+        "borderColor_warning_active": "#916504",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#e3a322",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#000",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
+        "color_theme_10": "#e1f3fc",
+        "color_theme_100": "#084d75",
+        "color_theme_20": "#c0e5fc",
+        "color_theme_30": "#9fd9fc",
+        "color_theme_40": "#79c7f7",
+        "color_theme_50": "#51b3f0",
+        "color_theme_60": "#2f9fe0",
+        "color_theme_70": "#1b8bcc",
+        "color_theme_80": "#0f75b0",
+        "color_theme_90": "#0a6091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "rgba(0,0,0,0.5) 0 1px 2px",
+        "shadow_2": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px",
+        "shadow_3": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px",
+        "shadow_4": "rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px",
+        "shadow_5": "rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "spacing_double": "1em",
+        "spacing_half": "0.25em",
+        "spacing_oneAndAHalf": "0.75em",
+        "spacing_quad": "2em",
+        "spacing_quarter": "0.125em",
+        "spacing_single": "0.5em",
+        "spacing_triple": "1.5em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="<DemoLayout>
+      <Link href=\\"http://example.com\\">Regular</Link>
+      <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+      <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+      <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+    </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "DemoLayout": [Function],
+          "Link": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "DemoLayout": [Function],
+            "Link": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
+              <div
+                className="css-2b2qop"
+              >
+                <Link
+                  href="http://example.com"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="regular"
+                  >
+                    <a
+                      className="css-1qvuwfl"
+                      href="http://example.com"
+                    >
+                      Regular
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  href="http://example.com"
+                  variant="danger"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="danger"
+                  >
+                    <a
+                      className="css-10ibr8w"
+                      href="http://example.com"
+                    >
+                      Danger
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  href="http://example.com"
+                  variant="success"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="success"
+                  >
+                    <a
+                      className="css-1mm5gik"
+                      href="http://example.com"
+                    >
+                      Success
+                    </a>
+                  </Link>
+                </Link>
+                <Link
+                  href="http://example.com"
+                  variant="warning"
+                >
+                  <Link
+                    href="http://example.com"
+                    variant="warning"
+                  >
+                    <a
+                      className="css-1g0latm"
+                      href="http://example.com"
+                    >
+                      Warning
                     </a>
                   </Link>
                 </Link>
