@@ -16,6 +16,6 @@
 
 /* @flow */
 // Components are built on an 8px grid
-const fontSize_base = 8;
+const fontSize_base = 16;
 
 export default fontSize_base;

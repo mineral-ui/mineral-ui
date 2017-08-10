@@ -178,11 +178,7 @@ export const color = {
 };
 
 export default {
-  borderRadius_1: pxToEm(4.5),
-  borderRadius_2: pxToEm(6),
-  borderRadius_3: pxToEm(9),
-  borderRadius_4: pxToEm(12),
-  borderRadius_5: pxToEm(16),
+  borderRadius_1: pxToEm(3),
 
   direction: 'ltr',
 
