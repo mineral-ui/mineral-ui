@@ -913,16 +913,31 @@ exports[`App renders correctly 1`] = `
           },
           "examples": Array [
             Object {
-              "description": "Links used in prose create hypertext.",
+              "description": "Links inherit font size, weight, and family.",
               "scope": Object {
+                "Big": [Function],
+                "Bold": [Function],
                 "Link": [Function],
+                "Serif": [Function],
+                "Small": [Function],
               },
-              "source": "<p>
-        <Link href=\\"http://example.com\\">Light years</Link> star stuff
-        <Link href=\\"http://example.com\\">harvesting</Link> star light citizens of distant
-        <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica vastness is bearable only through love,
-        shores of the cosmic ocean!
-      </p>",
+              "source": "<div>
+        <Big>
+          Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+        </Big>
+      
+        <Small>
+          citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+        </Small>
+      
+        <Bold>
+          vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+        </Bold>
+      
+        <Serif>
+          shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+        </Serif>
+      </div>",
               "title": "Basic link",
             },
             Object {
@@ -934,6 +949,20 @@ exports[`App renders correctly 1`] = `
         <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
       </Link>",
               "title": "Children",
+            },
+            Object {
+              "description": "Links can be styled as these variants, to help communicate purpose.",
+              "scope": Object {
+                "DemoLayout": [Function],
+                "Link": [Function],
+              },
+              "source": "<DemoLayout>
+        <Link href=\\"http://example.com\\">Regular</Link>
+        <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+        <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+        <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+      </DemoLayout>",
+              "title": "Variants",
             },
             Object {
               "description": "This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.",
@@ -953,9 +982,9 @@ exports[`App renders correctly 1`] = `
               const path = route.match.params.path;
       
               if ('page-2' === path) {
-                return <Link to=\\"/components/link/page-1\\" element={ReactRouterLink}>Page 1</Link>;
+                return <Link to=\\"/components/link/page-1\\" replace element={ReactRouterLink}>Page 1</Link>;
               }
-              return <Link to=\\"/components/link/page-2\\" element={ReactRouterLink}>Page 2</Link>;
+              return <Link to=\\"/components/link/page-2\\" replace element={ReactRouterLink}>Page 2</Link>;
             }}
           />
           <Redirect from=\\"/\\" to=\\"/components/link\\" />
@@ -971,10 +1000,33 @@ exports[`App renders correctly 1`] = `
                 "simulate": [Function],
               },
               "source": "<DemoLayout>
-        <Link href=\\"http://example.com\\">Default</Link>
+        <Link href=\\"http://example.com\\">Regular</Link>
         <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
         <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+        <Link {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+        <Link {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
         <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+        <br /><br />
+        <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+        <Link variant=\\"danger\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+        <Link variant=\\"danger\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+        <Link variant=\\"danger\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+        <Link variant=\\"danger\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+        <Link variant=\\"danger\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+        <br /><br />
+        <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+        <Link variant=\\"success\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+        <Link variant=\\"success\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+        <Link variant=\\"success\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+        <Link variant=\\"success\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+        <Link variant=\\"success\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+        <br /><br />
+        <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+        <Link variant=\\"warning\\" {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+        <Link variant=\\"warning\\" {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+        <Link variant=\\"warning\\" {...simulate('focus')} {...simulate('hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+        <Link variant=\\"warning\\" {...simulate('focus')} {...simulate('active')} href=\\"http://example.com\\">Focus & Active</Link>
+        <Link variant=\\"warning\\" {...simulate('active')} href=\\"http://example.com\\">Active</Link>
       </DemoLayout>",
               "title": "States",
             },
