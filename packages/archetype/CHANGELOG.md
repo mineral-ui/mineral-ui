@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/archetype@1.0.0...@mineral-ui/archetype@2.0.0) (2017-08-10)
+
+
+### Code Refactoring
+
+* **all:** Refactor package structure to use dist and lib directories ([b6a18ee](https://github.com/mineral-ui/mineral-ui/commit/b6a18ee))
+
+
+### BREAKING CHANGES
+
+* **all:** Refactored package structure to use dist and lib
+directories
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/archetype@0.5.0...@mineral-ui/archetype@1.0.0) (2017-07-28)
 

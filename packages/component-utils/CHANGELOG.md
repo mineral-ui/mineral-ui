@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@1.0.0...@mineral-ui/component-utils@2.0.0) (2017-08-10)
+
+
+### Code Refactoring
+
+* **all:** Refactor package structure to use dist and lib directories ([b6a18ee](https://github.com/mineral-ui/mineral-ui/commit/b6a18ee))
+* **button,component-utils,link:** Update theme variables ([6f3c751](https://github.com/mineral-ui/mineral-ui/commit/6f3c751))
+
+
+### Features
+
+* **component-utils:** Add color_text_variant_state variables ([96f63ad](https://github.com/mineral-ui/mineral-ui/commit/96f63ad))
+* **component-utils:** Update borderRadius_1; remove unused theme variables ([dea1257](https://github.com/mineral-ui/mineral-ui/commit/dea1257))
+
+
+### BREAKING CHANGES
+
+* **button,component-utils,link:** Remove color_link_* theme variables
+* **component-utils:** Remove unused theme variables (borderRadius_2-5, color_heading, color_helpText_*, color_text_primary)
+* **all:** Refactored package structure to use dist and lib
+directories
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@0.3.0...@mineral-ui/component-utils@1.0.0) (2017-07-28)
 

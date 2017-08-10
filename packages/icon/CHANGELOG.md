@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/icon@1.0.1...@mineral-ui/icon@2.0.0) (2017-08-10)
+
+
+### Code Refactoring
+
+* **all:** Refactor package structure to use dist and lib directories ([b6a18ee](https://github.com/mineral-ui/mineral-ui/commit/b6a18ee))
+* **icon:** Flatten icon directory for nicer imports ([55f8156](https://github.com/mineral-ui/mineral-ui/commit/55f8156))
+
+
+### BREAKING CHANGES
+
+* **icon:** Flatten icon directory for nicer imports
+* **all:** Refactored package structure to use dist and lib
+directories
+
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/icon@1.0.0...@mineral-ui/icon@1.0.1) (2017-08-04)
 
