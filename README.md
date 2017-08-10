@@ -25,51 +25,47 @@ A design system and [React](https://facebook.github.io/react/) component library
 
 Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com/org/mineral-ui). E.g., to install the Button package:
 
-1. Install project [peer dependencies](./docs/peer-dependencies.md)
+1. Install the Mineral UI packages that you wish to use
 
-  ```sh
-  npm install --save react react-dom glamorous glamor
-  ```
+```sh
+npm install --save @mineral-ui/button @mineral-ui/component-utils
+```
 
-2. Install the Mineral UI packages that you wish to use
-
-  ```sh
-  npm install --save @mineral-ui/button @mineral-ui/component-utils
-  ```
-
+2. Install any missing peer dependencies reported by `npm` or `yarn`
 3. Then, in your app, import and use just like any other React component
 
-  _ES2015_
+_ES2015_
 
-  ```js
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import { ThemeProvider } from '@mineral-ui/component-utils';
-  import Button from '@mineral-ui/button';
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from '@mineral-ui/component-utils';
+import Button from '@mineral-ui/button';
 
-  const App = () => (
-    <div>
-      <Button>Do Something</Button>
-    </div>
-  );
+const App = () => (
+  <div>
+    <Button>Do Something</Button>
+  </div>
+);
 
-  ReactDOM.render(
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>,
-    document.getElementById('app')
-  );
-  ```
+ReactDOM.render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('app')
+);
+```
 
-  > Note: Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+> Note: Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+
 
 ### Open Sans Font
 
 Mineral UI was designed around [Open Sans](https://fonts.google.com/specimen/Open+Sans). To get the components to look right, you will need to include this font in your project yourself or our styles will fall back to system fonts. To quickly include this font in your app, copy this code into the `<head>` of your HTML document.
 
-  ```html
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  ```
+```html
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+```
 
 For more options loading this font from Google, check out the Seleted Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
 
@@ -110,6 +106,7 @@ Mineral UI supports the latest versions of Chrome, Firefox, Safari, Edge, and In
 ## Roadmap
 
 Future plans and high priority features and enhancements can be found in the [Roadmap](./ROADMAP.md) file.
+
 
 ## License
 
