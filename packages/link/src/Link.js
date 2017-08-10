@@ -24,32 +24,46 @@ type Props = {
   /** A URL or a URL fragment that the link points to */
   href?: string,
   /** Element to be used as the root node - e.g. "a" or { ReactRouterLink } */
-  element?: $FlowFixMe // Should allow string | React class
+  element?: $FlowFixMe,
+  /** Available variants */
+  variant?: 'regular' | 'danger' | 'success' | 'warning' // Should allow string | React class
 };
 
 const linkStyles = (props, baseTheme) => {
-  const theme = {
+  let theme = {
+    Link_borderColor_focus: baseTheme.borderColor_focus,
     Link_color: baseTheme.color_link,
     Link_color_hover: baseTheme.color_link_hover,
     Link_color_focus: baseTheme.color_link_focus,
     Link_color_active: baseTheme.color_link_active,
-    Link_fontSize: `${baseTheme.fontSize_base}px`,
-    Link_fontWeight: baseTheme.fontWeight_regular,
 
     ...baseTheme
   };
 
+  if (props.variant !== 'regular') {
+    // prettier-ignore
+    theme = {
+      ...theme,
+      Link_borderColor_focus: baseTheme[`borderColor_${props.variant}_focus`],
+      Link_color: baseTheme[`color_text_${props.variant}`],
+      Link_color_hover: baseTheme[`color_text_${props.variant}_hover`],
+      Link_color_focus: baseTheme[`color_text_${props.variant}_focus`],
+      Link_color_active: baseTheme[`color_text_${props.variant}_active`],
+    };
+  }
+
   return {
     color: theme.Link_color,
-    fontWeight: theme.Link_fontWeight,
-    fontSize: theme.Link_fontSize,
-    outline: null, // Using the browser's focus styles until design is finalized
+    textDecoration: 'none',
 
     '&:hover': {
-      color: theme.Link_color_hover
+      color: theme.Link_color_hover,
+      textDecoration: 'underline'
     },
     '&:focus': {
-      color: theme.Link_color_focus
+      color: theme.Link_color_focus,
+      outline: `1px solid ${theme.Link_borderColor_focus}`,
+      outlineOffset: '2px'
     },
     // `:active` must be last, to follow LVHFA order:
     // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
@@ -62,12 +76,19 @@ const linkStyles = (props, baseTheme) => {
 /**
  * The Link component creates a hyperlink to another URL.
  */
-export default function Link({ children, element = 'a', ...restProps }: Props) {
+export default function Link({
+  children,
+  element = 'a',
+  variant = 'regular',
+  ...restProps
+}: Props) {
+  const rootProps = {
+    variant,
+    ...restProps
+  };
   const Root = createStyledComponent(element, linkStyles, {
-    displayName: 'Link',
-    includeStyleReset: true,
-    rootEl: element
+    displayName: 'Link'
   });
 
-  return <Root {...restProps}>{children}</Root>;
+  return <Root {...rootProps}>{children}</Root>;
 }

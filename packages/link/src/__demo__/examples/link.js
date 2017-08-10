@@ -15,16 +15,41 @@
  */
 
 /* @flow */
+import { createStyledComponent } from '@mineral-ui/component-utils';
 import Link from '../../Link';
+
+const Big = createStyledComponent('p', {
+  fontSize: '1.5em'
+});
+const Bold = createStyledComponent('p', {
+  fontWeight: 700
+});
+const Serif = createStyledComponent('p', {
+  fontFamily: 'serif'
+});
+const Small = createStyledComponent('p', {
+  fontSize: '0.75em'
+});
 
 export default {
   title: 'Basic link',
-  description: 'Links used in prose create hypertext.',
-  scope: { Link },
-  source: `<p>
-  <Link href="http://example.com">Light years</Link> star stuff
-  <Link href="http://example.com">harvesting</Link> star light citizens of distant
-  <Link href="http://example.com">epochs</Link> encyclopaedia galactica vastness is bearable only through love,
-  shores of the cosmic ocean!
-</p>`
+  description: 'Links inherit font size, weight, and family.',
+  scope: { Big, Bold, Link, Serif, Small },
+  source: `<div>
+  <Big>
+    Light years star stuff <Link href="http://example.com">harvesting</Link> star light
+  </Big>
+
+  <Small>
+    citizens of distant <Link href="http://example.com">epochs</Link> encyclopaedia galactica
+  </Small>
+
+  <Bold>
+    vastness is <Link href="http://example.com">bearable</Link> only through love,
+  </Bold>
+
+  <Serif>
+    shores of the <Link href="http://example.com">cosmic</Link> ocean!
+  </Serif>
+</div>`
 };

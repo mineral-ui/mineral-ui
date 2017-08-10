@@ -36,9 +36,9 @@ export default {
         const path = route.match.params.path;
 
         if ('page-2' === path) {
-          return <Link to="/components/link/page-1" element={ReactRouterLink}>Page 1</Link>;
+          return <Link to="/components/link/page-1" replace element={ReactRouterLink}>Page 1</Link>;
         }
-        return <Link to="/components/link/page-2" element={ReactRouterLink}>Page 2</Link>;
+        return <Link to="/components/link/page-2" replace element={ReactRouterLink}>Page 2</Link>;
       }}
     />
     <Redirect from="/" to="/components/link" />
