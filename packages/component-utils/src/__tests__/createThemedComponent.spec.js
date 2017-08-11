@@ -36,6 +36,6 @@ describe('createThemedComponent', () => {
   it('renders correctly', () => {
     const themedSample = mountThemedSample();
 
-    expect(themedSample).toMatchSnapshotWithGlamor();
+    expect(themedSample).toMatchSnapshot();
   });
 });

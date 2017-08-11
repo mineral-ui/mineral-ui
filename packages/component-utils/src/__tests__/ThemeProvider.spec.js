@@ -34,7 +34,7 @@ describe('ThemeProvider', () => {
   it('renders correctly with default theme', () => {
     const themedSample = mountThemedSample();
 
-    expect(themedSample).toMatchSnapshotWithGlamor();
+    expect(themedSample).toMatchSnapshot();
   });
 
   testDemoExamples(examples);

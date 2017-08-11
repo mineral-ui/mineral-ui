@@ -232,10 +232,6 @@ type JestExpectType = {
    */
   toMatchSnapshot(name?: string): void,
   /**
-   * Customization: Additional method from jest-glamor-react.  This ensures that a React component matches the most recent snapshot.
-   */
-  toMatchSnapshotWithGlamor(...args: Array<any>): any,
-  /**
    * Use .toThrow to test that a function throws when it is called.
    * If you want to test that a specific error gets thrown, you can provide an
    * argument to toThrow. The argument can be a string for the error message,

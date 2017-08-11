@@ -13,11 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { matcher, serializer } from 'jest-glamor-react';
+import serializer from 'jest-glamor-react';
 import { simulations } from 'glamor';
 
 expect.addSnapshotSerializer(serializer);
-expect.extend(matcher);
 
 // Enable Glamor simulate helper
 simulations(true);

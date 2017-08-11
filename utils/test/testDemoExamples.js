@@ -52,7 +52,7 @@ export default function testDemoExamples(
           </LiveProvider>
         </ThemeProvider>
       );
-      expect(component).toMatchSnapshotWithGlamor();
+      expect(component).toMatchSnapshot();
     });
   });
 }
