@@ -18,7 +18,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { createThemedComponent, ThemeProvider } from '../index';
-import Sample from '../Sample';
+import Sample from '../__demo__/components/Sample';
 
 function mountThemedSample() {
   const ThemedSample = createThemedComponent(Sample, {

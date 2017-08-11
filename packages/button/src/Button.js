@@ -50,7 +50,7 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
-const buttonTheme = (props, baseTheme) => ({
+const buttonTheme = ({ size, theme: baseTheme }) => ({
   Button_backgroundColor: baseTheme.color_gray_20,
   Button_backgroundColor_active: baseTheme.color_gray_30,
   Button_backgroundColor_focus: baseTheme.color_gray_20,
@@ -74,7 +74,7 @@ const buttonTheme = (props, baseTheme) => ({
   Button_padding_medium: pxToEm(6),
   Button_padding_large: pxToEm(8),
   Button_padding_jumbo: pxToEm(10),
-  [`Button_size_${props.size}`]: baseTheme[`size_${props.size}`],
+  [`Button_size_${size}`]: baseTheme[`size_${size}`],
 
   ButtonContent_fontSize: baseTheme.fontSize_ui,
   ButtonContent_fontSize_small: pxToEm(12),
@@ -95,59 +95,66 @@ const buttonTheme = (props, baseTheme) => ({
   ...baseTheme
 });
 
-const buttonStyles = (props, baseTheme) => {
-  let theme = buttonTheme(props, baseTheme);
+const buttonStyles = props => {
+  let theme = buttonTheme(props);
+  const {
+    circular,
+    disabled,
+    fullWidth,
+    minimal,
+    primary,
+    size,
+    variant
+  } = props;
 
-  if (props.variant !== 'regular') {
+  if (variant !== 'regular') {
     // prettier-ignore
     theme = {
       ...theme,
-      Button_backgroundColor_primary: theme[`backgroundColor_${props.variant}`],
-      Button_backgroundColor_primary_active: theme[`backgroundColor_${props.variant}_active`],
-      Button_backgroundColor_primary_focus: theme[`backgroundColor_${props.variant}_focus`],
-      Button_backgroundColor_primary_hover: theme[`backgroundColor_${props.variant}_hover`],
-      Button_boxShadow_focus: `0 0 0 1px ${theme[`borderColor_${props.variant}_focus`]}`,
-      Button_color_text: theme[`color_text_${props.variant}`],
-      Button_color_text_minimal: theme[`color_text_${props.variant}`],
-      Button_color_text_primary: theme[`color_text_on${props.variant}`]
+      Button_backgroundColor_primary: theme[`backgroundColor_${variant}`],
+      Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}_active`],
+      Button_backgroundColor_primary_focus: theme[`backgroundColor_${variant}_focus`],
+      Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}_hover`],
+      Button_boxShadow_focus: `0 0 0 1px ${theme[`borderColor_${variant}_focus`]}`,
+      Button_color_text: theme[`color_text_${variant}`],
+      Button_color_text_minimal: theme[`color_text_${variant}`],
+      Button_color_text_primary: theme[`color_text_on${variant}`]
     };
   }
 
   return {
     backgroundColor: (() => {
-      if (props.disabled && !props.minimal) {
+      if (disabled && !minimal) {
         return theme.color_gray_30;
-      } else if (props.primary) {
+      } else if (primary) {
         return theme.Button_backgroundColor_primary;
-      } else if (props.minimal) {
+      } else if (minimal) {
         return 'transparent';
       } else {
         return theme.Button_backgroundColor;
       }
     })(),
     borderColor:
-      props.disabled || props.primary || props.minimal
-        ? 'transparent'
-        : theme.Button_borderColor,
-    borderRadius: props.circular
-      ? `${parseFloat(theme[`Button_size_${props.size}`]) / 2}em`
+      disabled || primary || minimal ? 'transparent' : theme.Button_borderColor,
+    borderRadius: circular
+      ? `${parseFloat(theme[`Button_size_${size}`]) / 2}em`
       : theme.Button_borderRadius,
     borderStyle: 'solid',
     borderWidth: `${theme.Button_borderWidth}px`,
     color: (() => {
-      if (props.disabled) {
+      if (disabled) {
         return theme.color_text_disabled;
-      } else if (props.primary) {
+      } else if (primary) {
         return theme.Button_color_text_primary;
-      } else if (props.minimal) {
+      } else if (minimal) {
         return theme.Button_color_text_minimal;
       } else {
         return theme.Button_color_text;
       }
     })(),
-    cursor: props.disabled ? 'default' : 'pointer',
+    cursor: disabled ? 'default' : 'pointer',
     fontWeight: theme.Button_fontWeight,
-    height: theme[`Button_size_${props.size}`],
+    height: theme[`Button_size_${size}`],
     // Because the small & medium-sized Buttons are shorter than
     // theme.fontSize_base * theme.lineHeight, the text content does not
     // vertically align correctly without setting the lineHeight equal to the
@@ -155,15 +162,15 @@ const buttonStyles = (props, baseTheme) => {
     lineHeight: theme.ButtonContent_fontSize_small,
     // Because we use boxSizing: 'border-box', we need to substract the borderWidth
     // from the padding to have the fixed height of Root and Content be correct.
-    padding: `${parseFloat(theme[`Button_padding_${props.size}`]) -
+    padding: `${parseFloat(theme[`Button_padding_${size}`]) -
       parseFloat(pxToEm(theme.Button_borderWidth))}em`,
     verticalAlign: 'middle',
-    width: props.fullWidth && '100%',
+    width: fullWidth && '100%',
     '&:focus': {
       backgroundColor: (() => {
-        if (props.primary) {
+        if (primary) {
           return theme.Button_backgroundColor_primary_focus;
-        } else if (props.minimal) {
+        } else if (minimal) {
           return theme.Button_backgroundColor_minimal_focus;
         } else {
           return theme.Button_backgroundColor_focus;
@@ -174,10 +181,10 @@ const buttonStyles = (props, baseTheme) => {
     },
     '&:hover': {
       backgroundColor: (() => {
-        if (!props.disabled) {
-          if (props.primary) {
+        if (!disabled) {
+          if (primary) {
             return theme.Button_backgroundColor_primary_hover;
-          } else if (props.minimal) {
+          } else if (minimal) {
             return theme.Button_backgroundColor_minimal_hover;
           } else {
             return theme.Button_backgroundColor_hover;
@@ -189,10 +196,10 @@ const buttonStyles = (props, baseTheme) => {
     // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
     '&:active': {
       backgroundColor: (() => {
-        if (!props.disabled) {
-          if (props.primary) {
+        if (!disabled) {
+          if (primary) {
             return theme.Button_backgroundColor_primary_active;
-          } else if (props.minimal) {
+          } else if (minimal) {
             return theme.Button_backgroundColor_minimal_active;
           } else {
             return theme.Button_backgroundColor_active;
@@ -205,23 +212,21 @@ const buttonStyles = (props, baseTheme) => {
     '& [role="icon"]': {
       boxSizing: 'content-box',
       fill:
-        props.disabled ||
-        props.primary ||
-        props.minimal ||
-        props.variant !== 'regular'
+        disabled || primary || minimal || variant !== 'regular'
           ? 'currentColor'
           : theme.Button_backgroundColor_primary,
       display: 'block',
-      padding: theme[`ButtonIcon_padding_${props.size}`]
+      padding: theme[`ButtonIcon_padding_${size}`]
     }
   };
 };
 
-const contentStyles = (props, baseTheme) => {
-  const theme = buttonTheme(props, baseTheme);
+const contentStyles = props => {
+  const theme = buttonTheme(props);
+  const { size } = props;
 
   const fontSize =
-    props.size === 'small'
+    size === 'small'
       ? theme.ButtonContent_fontSize_small
       : theme.ButtonContent_fontSize;
 
@@ -231,11 +236,11 @@ const contentStyles = (props, baseTheme) => {
     display: 'block',
     fontSize,
     lineHeight: getNormalizedValue(
-      theme[`ButtonContent_lineHeight_${props.size}`],
+      theme[`ButtonContent_lineHeight_${size}`],
       fontSize
     ),
     padding: `0 ${getNormalizedValue(
-      theme[`ButtonContent_padding_${props.size}`],
+      theme[`ButtonContent_padding_${size}`],
       fontSize
     )}`
   };

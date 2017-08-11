@@ -19,31 +19,31 @@ import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
 const styles = {
-  codeValue: (props, theme) => ({
+  codeValue: ({ theme }) => ({
     fontFamily: theme.fontFamily_monospace
   }),
-  heading: (props, theme) => ({
+  heading: ({ theme }) => ({
     margin: `0 0 ${theme.spacing_double}`
   }),
-  propCell: (props, theme) => ({
+  propCell: ({ theme }) => ({
     padding: `${theme.spacing_double} 0`,
     verticalAlign: 'top'
   }),
-  propColumnHeader: (props, theme) => ({
+  propColumnHeader: ({ theme, width }) => ({
     borderBottom: `3px solid ${theme.color_gray_60}`,
     color: theme.color_gray_60,
     fontWeight: theme.fontWeight_bold,
     paddingBottom: theme.spacing_single,
     textAlign: 'left',
-    width: props.width && `${props.width}rem`
+    width: width && `${width}rem`
   }),
   propP: {
     margin: 0
   },
-  propName: (props, theme) => ({
+  propName: ({ theme }) => ({
     fontWeight: theme.fontWeight_semiBold
   }),
-  propRequired: (props, theme) => ({
+  propRequired: ({ theme }) => ({
     backgroundColor: theme.backgroundColor_danger,
     borderRadius: theme.borderRadius_1,
     color: theme.color_white,
@@ -51,26 +51,26 @@ const styles = {
     fontFamily: theme.fontFamily_monospace,
     padding: `${theme.spacing_half} ${theme.spacing_single}`
   }),
-  tr: (props, theme) => ({
+  tr: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`
   }),
-  propTable: (props, theme) => ({
+  propTable: ({ theme }) => ({
     borderCollapse: 'collapse',
     borderSpacing: 0,
     fontSize: theme.fontSize_ui,
     width: '100%'
   }),
-  propType: (props, theme) => ({
+  propType: ({ theme }) => ({
     color: theme.color_theme_90,
     fontFamily: theme.fontFamily_monospace
   }),
-  propValue: (props, theme) => ({
+  propValue: ({ theme }) => ({
     border: `1px solid ${theme.borderColor}`,
     height: '100%',
     resize: 'vertical',
     width: '100%'
   }),
-  root: (props, theme) => ({
+  root: ({ theme }) => ({
     margin: `${theme.spacing_quad} 0 0 0`
   })
 };

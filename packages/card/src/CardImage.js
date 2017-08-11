@@ -23,8 +23,8 @@ type Props = Object;
 
 const Root = createStyledComponent(
   'img',
-  (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  props => {
+    const theme = cardTheme(props);
 
     return {
       display: 'block',

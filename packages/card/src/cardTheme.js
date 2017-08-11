@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-export default function cardTheme(baseTheme: Object) {
+export default function cardTheme({ theme: baseTheme }: Object) {
   return {
     Card_backgroundColor: baseTheme.color_white,
     Card_borderRadius: baseTheme.borderRadius_1,

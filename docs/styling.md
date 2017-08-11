@@ -52,7 +52,7 @@ In Mineral UI, the above would be done like so:
 ```jsx
 import { createStyledComponent } from '@mineral-ui/component-utils';
 
-export default createStyledComponent('button', (props, theme) => ({
+export default createStyledComponent('button', props => ({
   backgroundColor: props.kind === 'primary' ? 'royalblue' : 'white',
   border: 0,
   color: props.kind === 'primary' ? 'white' : 'royalblue',
@@ -83,8 +83,8 @@ export default createStyledComponent('button', (props, theme) => ({
 Theming is a core concept in Mineral UI. To illustrate, consider the signature of [`createStyledComponent()`](#createstyledcomponentelement-styles-options), e.g.:
 
 ```js
-const MyComponent = createStyledComponent('div', (props, theme) => ({
-  backgroundColor: theme.color_primary
+const MyComponent = createStyledComponent('div', props => ({
+  backgroundColor: props.theme.color_primary
 }));
 ```
 
@@ -95,8 +95,8 @@ The theme itself (see the default [MineralTheme](../packages/component-utils/src
 Each component can also have a "theme", which is not a file, but rather a set of variables available to override default values. E.g., if Mineral UI's Button component looked like this:
 
 ```js
-const Button = createStyledComponent('button', (props, theme) => ({
-  color: theme.Button_color || theme.color_primary
+const Button = createStyledComponent('button', props => ({
+  color: props.theme.Button_color || props.theme.color_primary
 }));
 ```
 
@@ -141,8 +141,8 @@ const MyButton = createThemedComponent(Button, {
 If you need to override or write arbitrary styles for a specific component. _Use of this wrapper is not encouraged, as it is more likely to break with future updates._
 
 ```jsx
-const MyButton = createStyledComponent(Button, (props, theme) => ({
-  color: theme.color_warning,
+const MyButton = createStyledComponent(Button, props => ({
+  color: props.theme.color_warning,
   letterSpacing: '1px'
 }));
 ```
@@ -182,16 +182,16 @@ This is how you apply arbitrary styles to a component.
 
 `element`: a React component _or_ a string representation of an HTML element
 
-`styles`: an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a function that accepts props, theme, and context and returns an object of style rules
+`styles`: an [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md) _or_ a function that accepts props and context and returns an object of style rules
 
 `options`: An object of optional configuration. A mix of Mineral UI and [Glamorous options](https://github.com/paypal/glamorous/#glamorous-api). Most common uses are setting a display name on your component, `{displayName: 'MyComponentName'}`, declaring which props to forward on to the element, `{forwardProps: [href, customProp]}`, and including a style reset `{ includeStyleReset: true }`.
 
 ##### Example Usage
 ```jsx
-const Button = createStyledComponent('button', (props, theme) => ({
-  color: theme.Button_color_text || theme.color_primary,
-  fontSize: theme.font_size_3,
-  padding: props.large ? `${theme.measurement_2} ${theme.measurement_3}` : `${theme.measurement_1} ${theme.measurement_2}`
+const Button = createStyledComponent('button', props => ({
+  color: props.theme.Button_color_text || props.theme.color_primary,
+  fontSize: props.theme.font_size_3,
+  padding: props.large ? `${props.theme.measurement_2} ${props.theme.measurement_3}` : `${props.theme.measurement_1} ${props.theme.measurement_2}`
 }));
 
 // Then, in render:
@@ -206,7 +206,7 @@ If you only need to style the themed properties of a component, you can use this
 
 `element`: a React component _or_ a string representation of an HTML element
 
-`theme`: a shallow object of theme variables _or_ a function that accepts props, theme, and context and returns an object of theme variables
+`theme`: a shallow object of theme variables _or_ a function that accepts props and context and returns an object of theme variables
 
 ##### Example Usage
 ```jsx

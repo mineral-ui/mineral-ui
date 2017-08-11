@@ -19,7 +19,7 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent(
   'h5',
-  (props, theme) => ({
+  ({ theme }) => ({
     borderTop: `1px solid ${theme.color_gray}`,
     paddingTop: theme.spacing_oneAndAHalf,
     fontSize: theme.font_size_b,
@@ -31,5 +31,8 @@ export default createStyledComponent(
       marginTop: theme.spacing_single
     }
   }),
-  { displayName: 'CategoryHeader', includeStyleReset: true }
+  {
+    displayName: 'CategoryHeader',
+    includeStyleReset: true
+  }
 );

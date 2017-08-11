@@ -29,10 +29,10 @@ type Props = {|
 |};
 
 const styles = {
-  nav: (props, theme) => ({
+  nav: ({ theme }) => ({
     padding: theme.spacing_double
   }),
-  title: (props, theme) => ({
+  title: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
     fontSize: theme.fontSize_h3,
     margin: `0 0 ${getNormalizedValue(
@@ -41,7 +41,7 @@ const styles = {
     )}`,
     paddingBottom: getNormalizedValue(theme.spacing_double, theme.fontSize_h3)
   }),
-  heading: (props, theme) => ({
+  heading: ({ theme }) => ({
     margin: '0',
     fontSize: theme.fontSize_h4
   }),
@@ -49,8 +49,8 @@ const styles = {
     listStyle: 'none',
     paddingLeft: '0'
   },
-  listItem: (props, theme) => ({
-    paddingLeft: props.isSubcomponent && theme.spacing_single,
+  listItem: ({ isSubcomponent, theme }) => ({
+    paddingLeft: isSubcomponent && theme.spacing_single,
 
     '& + li': {
       marginTop: theme.spacing_single

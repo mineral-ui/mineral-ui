@@ -19,7 +19,7 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent(
   'figure',
-  (props, theme) => ({
+  ({ theme }) => ({
     margin: 0,
     display: 'flex',
     alignItems: 'center',
@@ -29,5 +29,8 @@ export default createStyledComponent(
       outline: '1px dotted currentColor'
     }
   }),
-  { displayName: 'Figure', includeStyleReset: true }
+  {
+    displayName: 'Figure',
+    includeStyleReset: true
+  }
 );

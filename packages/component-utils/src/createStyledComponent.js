@@ -20,21 +20,19 @@ import componentStyleReset from './componentStyleReset';
 
 export default function createStyledComponent(
   element: MnrlReactNode,
-  styles:
-    | Object
-    | ((props: Object, theme?: Object, context?: Object) => Object),
+  styles: Object | ((props: Object, context?: Object) => Object),
   options?: Object = {}
 ) {
   const { includeStyleReset, ...restOptions } = options;
   let outStyles;
 
   if (includeStyleReset) {
-    outStyles = (props: Object, theme?: Object, context?: Object): Object => {
+    outStyles = (props: Object, context?: Object): Object => {
       const componentStyles =
-        typeof styles === 'function' ? styles(props, theme, context) : styles;
+        typeof styles === 'function' ? styles(props, context) : styles;
 
       return {
-        ...componentStyleReset(theme),
+        ...componentStyleReset(props),
         ...componentStyles
       };
     };
