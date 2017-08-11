@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider Component theme var override 1`] = `
-.css-q024wp,
-[data-css-q024wp] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -181,7 +181,7 @@ exports[`ThemeProvider Component theme var override 1`] = `
                 <Sample>
                   <glamorous(span)>
                     <span
-                      className="css-q024wp"
+                      className="glamor-0"
                     >
                       Sample
                     </span>
@@ -198,8 +198,8 @@ exports[`ThemeProvider Component theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Default 1`] = `
-.css-cvzidk,
-[data-css-cvzidk] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   display: inline-block;
   outline: 1px solid #c8d1e0;
@@ -359,7 +359,7 @@ exports[`ThemeProvider Default 1`] = `
             <Sample>
               <glamorous(span)>
                 <span
-                  className="css-cvzidk"
+                  className="glamor-0"
                 >
                   Sample
                 </span>
@@ -374,8 +374,8 @@ exports[`ThemeProvider Default 1`] = `
 `;
 
 exports[`ThemeProvider Global theme var override 1`] = `
-.css-q024wp,
-[data-css-q024wp] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -554,7 +554,7 @@ exports[`ThemeProvider Global theme var override 1`] = `
                 <Sample>
                   <glamorous(span)>
                     <span
-                      className="css-q024wp"
+                      className="glamor-0"
                     >
                       Sample
                     </span>
@@ -571,8 +571,8 @@ exports[`ThemeProvider Global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = `
-.css-q024wp,
-[data-css-q024wp] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -884,7 +884,7 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
                       <Sample>
                         <glamorous(span)>
                           <span
-                            className="css-q024wp"
+                            className="glamor-0"
                           >
                             Sample
                           </span>
@@ -904,8 +904,8 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
 `;
 
 exports[`ThemeProvider Nested global theme var override 1`] = `
-.css-q024wp,
-[data-css-q024wp] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -1100,7 +1100,7 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
                     <Sample>
                       <glamorous(span)>
                         <span
-                          className="css-q024wp"
+                          className="glamor-0"
                         >
                           Sample
                         </span>
@@ -1119,8 +1119,8 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Shallow merged global theme var override 1`] = `
-.css-q024wp,
-[data-css-q024wp] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -1315,7 +1315,7 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
                     <Sample>
                       <glamorous(span)>
                         <span
-                          className="css-q024wp"
+                          className="glamor-0"
                         >
                           Sample
                         </span>
@@ -1334,14 +1334,14 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
 `;
 
 exports[`ThemeProvider Style override via createStyledComponent 1`] = `
-.css-8so7fa,
-[data-css-8so7fa] {
+.glamor-1,
+[data-glamor-1] {
   outline: 3px dashed mediumvioletred;
   font-size: 2.125em;
 }
 
-.css-8hrboq,
-[data-css-8hrboq] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   display: inline-block;
   outline: 3px dashed mediumvioletred;
@@ -1511,13 +1511,13 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
             <wrappedPFC>
               <glamorous(Sample)>
                 <Sample
-                  className="css-8so7fa"
+                  className="glamor-1"
                 >
                   <glamorous(span)
-                    className="css-8so7fa"
+                    className="glamor-1"
                   >
                     <span
-                      className="css-8hrboq"
+                      className="glamor-0"
                     >
                       Sample
                     </span>
@@ -1534,8 +1534,8 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
 `;
 
 exports[`ThemeProvider renders correctly with default theme 1`] = `
-.css-cvzidk,
-[data-css-cvzidk] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
   display: inline-block;
   outline: 1px solid #c8d1e0;
@@ -1673,7 +1673,7 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
     <Sample>
       <glamorous(span)>
         <span
-          className="css-cvzidk"
+          className="glamor-0"
         >
           Sample
         </span>
