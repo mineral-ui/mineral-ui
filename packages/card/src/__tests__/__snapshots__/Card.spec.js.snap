@@ -3,18 +3,17 @@
 exports[`Card Arbitrary children 1`] = `
 .glamor-6,
 [data-glamor-6] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-6 *,
@@ -23,7 +22,6 @@ exports[`Card Arbitrary children 1`] = `
 [data-glamor-6] *::before,
 .glamor-6 *::after,
 [data-glamor-6] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -67,8 +65,8 @@ exports[`Card Arbitrary children 1`] = `
 
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -76,7 +74,7 @@ exports[`Card Arbitrary children 1`] = `
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
-  color: #333840;
+  border-style: solid;
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
@@ -84,7 +82,6 @@ exports[`Card Arbitrary children 1`] = `
   padding: 0.3125em;
   vertical-align: middle;
   width: 100%;
-  border-style: solid;
 }
 
 .glamor-4 *,
@@ -93,7 +90,6 @@ exports[`Card Arbitrary children 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -129,7 +125,6 @@ exports[`Card Arbitrary children 1`] = `
 
 .glamor-4 [role="icon"],
 [data-glamor-4] [role="icon"] {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   fill: #1b8bcc;
   display: block;
@@ -138,16 +133,15 @@ exports[`Card Arbitrary children 1`] = `
 
 .glamor-3,
 [data-glamor-3] {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  display: -webkit-box;
-  display: -moz-box;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
   width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
 .glamor-2,
@@ -421,18 +415,17 @@ exports[`Card Arbitrary children 1`] = `
 exports[`Card Arbitrary children 2`] = `
 .glamor-7,
 [data-glamor-7] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-7 *,
@@ -441,7 +434,6 @@ exports[`Card Arbitrary children 2`] = `
 [data-glamor-7] *::before,
 .glamor-7 *::after,
 [data-glamor-7] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -480,8 +472,8 @@ exports[`Card Arbitrary children 2`] = `
 
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -489,7 +481,7 @@ exports[`Card Arbitrary children 2`] = `
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
-  color: #333840;
+  border-style: solid;
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
@@ -497,7 +489,6 @@ exports[`Card Arbitrary children 2`] = `
   padding: 0.3125em;
   vertical-align: middle;
   width: 100%;
-  border-style: solid;
 }
 
 .glamor-4 *,
@@ -506,7 +497,6 @@ exports[`Card Arbitrary children 2`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -542,7 +532,6 @@ exports[`Card Arbitrary children 2`] = `
 
 .glamor-4 [role="icon"],
 [data-glamor-4] [role="icon"] {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   fill: #1b8bcc;
   display: block;
@@ -551,16 +540,15 @@ exports[`Card Arbitrary children 2`] = `
 
 .glamor-3,
 [data-glamor-3] {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  display: -webkit-box;
-  display: -moz-box;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
   width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
 .glamor-2,
@@ -852,18 +840,17 @@ exports[`Card Arbitrary children 2`] = `
 exports[`Card Basic card 1`] = `
 .glamor-3,
 [data-glamor-3] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-3 *,
@@ -872,7 +859,6 @@ exports[`Card Basic card 1`] = `
 [data-glamor-3] *::before,
 .glamor-3 *::after,
 [data-glamor-3] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -1165,19 +1151,18 @@ exports[`Card Clickable 1`] = `
 
 .glamor-3,
 [data-glamor-3] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   cursor: pointer;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-3 *,
@@ -1186,7 +1171,6 @@ exports[`Card Clickable 1`] = `
 [data-glamor-3] *::before,
 .glamor-3 *::after,
 [data-glamor-3] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -1438,18 +1422,17 @@ exports[`Card Clickable 1`] = `
 exports[`Card Complex title and subtitle 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-5 *,
@@ -1458,7 +1441,6 @@ exports[`Card Complex title and subtitle 1`] = `
 [data-glamor-5] *::before,
 .glamor-5 *::after,
 [data-glamor-5] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -1805,18 +1787,17 @@ exports[`Card Complex title and subtitle 1`] = `
 exports[`Card Consistent spacing 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-5 *,
@@ -1825,7 +1806,6 @@ exports[`Card Consistent spacing 1`] = `
 [data-glamor-5] *::before,
 .glamor-5 *::after,
 [data-glamor-5] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -2134,18 +2114,17 @@ exports[`Card Consistent spacing 1`] = `
 exports[`Card Minor title 1`] = `
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-4 *,
@@ -2154,7 +2133,6 @@ exports[`Card Minor title 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -2466,18 +2444,17 @@ exports[`Card Minor title 1`] = `
 exports[`Card Order of sections 1`] = `
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-4 *,
@@ -2486,7 +2463,6 @@ exports[`Card Order of sections 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -2525,31 +2501,28 @@ exports[`Card Order of sections 1`] = `
 
 .glamor-15,
 [data-glamor-15] {
-  -webkit-align-items: flex-start;
-  -webkit-box-lines: multiple;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+  align-items: flex-start;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin: -2em;
-  font-size: 16px;
   flex-wrap: wrap;
-  align-items: flex-start;
+  font-size: 16px;
+  margin: -2em;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
 }
 
 .glamor-15 > *,
 [data-glamor-15] > * {
-  -webkit-flex: 1 1 25%;
-  -ms-flex: 1 1 25%;
   flex: 1 1 25%;
   margin: 2em;
   min-width: 25em;
   max-width: 40em;
+  -webkit-flex: 1 1 25%;
 }
 
 .glamor-0,
@@ -2947,18 +2920,17 @@ exports[`Card Order of sections 1`] = `
 exports[`Card With a subtitle 1`] = `
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-4 *,
@@ -2967,7 +2939,6 @@ exports[`Card With a subtitle 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -3251,18 +3222,17 @@ exports[`Card With a subtitle 1`] = `
 exports[`Card With an image 1`] = `
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-4 *,
@@ -3271,7 +3241,6 @@ exports[`Card With an image 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -3583,18 +3552,17 @@ exports[`Card With an image 1`] = `
 exports[`Card With meta information 1`] = `
 .glamor-4,
 [data-glamor-4] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
-  color: #333840;
+  background-color: #fff;
   border-radius: 0.1875em;
   box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
   padding-bottom: 1em;
   padding-top: 0.01em;
-  background-color: #fff;
 }
 
 .glamor-4 *,
@@ -3603,7 +3571,6 @@ exports[`Card With meta information 1`] = `
 [data-glamor-4] *::before,
 .glamor-4 *::after,
 [data-glamor-4] *::after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
