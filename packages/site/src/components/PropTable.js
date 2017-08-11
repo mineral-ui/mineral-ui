@@ -17,25 +17,11 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '@mineral-ui/component-utils';
+import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 
 const styles = {
   codeValue: ({ theme }) => ({
     fontFamily: theme.fontFamily_monospace
-  }),
-  heading: ({ theme }) => ({
-    margin: `0 0 ${theme.spacing_double}`
-  }),
-  propCell: ({ theme }) => ({
-    padding: `${theme.spacing_double} 0`,
-    verticalAlign: 'top'
-  }),
-  propColumnHeader: ({ theme, width }) => ({
-    borderBottom: `3px solid ${theme.color_gray_60}`,
-    color: theme.color_gray_60,
-    fontWeight: theme.fontWeight_bold,
-    paddingBottom: theme.spacing_single,
-    textAlign: 'left',
-    width: width && `${width}rem`
   }),
   propP: {
     margin: 0
@@ -50,15 +36,6 @@ const styles = {
     display: 'inline-block',
     fontFamily: theme.fontFamily_monospace,
     padding: `${theme.spacing_half} ${theme.spacing_single}`
-  }),
-  tr: ({ theme }) => ({
-    borderBottom: `1px solid ${theme.borderColor}`
-  }),
-  propTable: ({ theme }) => ({
-    borderCollapse: 'collapse',
-    borderSpacing: 0,
-    fontSize: theme.fontSize_ui,
-    width: '100%'
   }),
   propType: ({ theme }) => ({
     color: theme.color_theme_90,
@@ -76,14 +53,10 @@ const styles = {
 };
 
 const CodeValue = createStyledComponent('span', styles.codeValue);
-const PropCell = createStyledComponent('td', styles.propCell);
-const PropColumnHeader = createStyledComponent('th', styles.propColumnHeader);
 const PropName = createStyledComponent('span', styles.propName);
 const PropP = createStyledComponent('p', styles.propP);
 const PropRequired = createStyledComponent('span', styles.propRequired);
 const PropType = createStyledComponent('span', styles.propType);
-const Table = createStyledComponent('table', styles.propTable);
-const TR = createStyledComponent('tr', styles.tr);
 const Root = createStyledComponent('div', styles.root);
 
 function DefaultValue({
@@ -150,26 +123,26 @@ function PropTableRow({
   type
 }: PropTableRowProps) {
   return (
-    <TR>
-      <PropCell>
+    <TableRow>
+      <TableCell>
         <PropName>
           {name}
         </PropName>
-      </PropCell>
-      <PropCell>
+      </TableCell>
+      <TableCell>
         <PropType>
           {type}
         </PropType>
-      </PropCell>
-      <PropCell>
+      </TableCell>
+      <TableCell>
         <DefaultValue defaultValue={defaultValue} required={required} />
-      </PropCell>
-      <PropCell>
+      </TableCell>
+      <TableCell>
         <PropP>
           {description}
         </PropP>
-      </PropCell>
-    </TR>
+      </TableCell>
+    </TableRow>
   );
 }
 
@@ -183,16 +156,16 @@ export default function PropTable({ propDoc = {} }: Props) {
       <Table>
         <thead>
           <tr>
-            <PropColumnHeader key="prop" width={10}>
+            <TableHeaderCell key="prop" width={10}>
               Name
-            </PropColumnHeader>
-            <PropColumnHeader key="type" width={15}>
+            </TableHeaderCell>
+            <TableHeaderCell key="type" width={15}>
               Type
-            </PropColumnHeader>
-            <PropColumnHeader key="default" width={10}>
+            </TableHeaderCell>
+            <TableHeaderCell key="default" width={10}>
               Default
-            </PropColumnHeader>
-            <PropColumnHeader key="description">Description</PropColumnHeader>
+            </TableHeaderCell>
+            <TableHeaderCell key="description">Description</TableHeaderCell>
           </tr>
         </thead>
         <tbody>

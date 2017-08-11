@@ -16,12 +16,12 @@
 
 /* @flow */
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import {
   createStyledComponent,
   getNormalizedValue
 } from '@mineral-ui/component-utils';
-import Link from '@mineral-ui/link';
+import Link from './Link';
+import pages from '../pages';
 
 type Props = {|
   className?: string,
@@ -30,7 +30,8 @@ type Props = {|
 
 const styles = {
   nav: ({ theme }) => ({
-    padding: theme.spacing_double
+    padding: theme.spacing_double,
+    backgroundColor: theme.slate_10
   }),
   title: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
@@ -55,23 +56,55 @@ const styles = {
     '& + li': {
       marginTop: theme.spacing_single
     }
+  }),
+  subsection: ({ theme }) => ({
+    marginTop: theme.spacing_single,
+    listStyle: 'none',
+    paddingLeft: theme.spacing_single
   })
 };
 
 const Root = createStyledComponent('nav', styles.nav);
-const Title = createStyledComponent('h1', styles.title);
 const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
+const SubSection = createStyledComponent('ul', styles.subsection);
+const Title = createStyledComponent('h1', styles.title);
 
 export default function Nav({ className, demos }: Props) {
   const demoLinks = Object.keys(demos).map(slug => {
     const demo = demos[slug];
     return (
       <ListItem key={slug} isSubcomponent={demo.subcomponent}>
-        <Link to={`/components/${slug}`} element={RouterLink}>
+        <Link to={`/components/${slug}`}>
           {demo.title}
         </Link>
+      </ListItem>
+    );
+  });
+
+  const pageLinks = pages.map((page, i) => {
+    return (
+      <ListItem key={`page-${i}`}>
+        <Link to={page.path}>
+          {page.title}
+        </Link>
+        {Array.isArray(page.sections) &&
+          <SubSection>
+            {page.sections.map((section, j) => {
+              if (!page.path) return null;
+              const path = section.id
+                ? `${page.path}#${section.id}`
+                : section.path;
+              return (
+                <ListItem key={`section-${j}`}>
+                  <Link to={path}>
+                    {section.title}
+                  </Link>
+                </ListItem>
+              );
+            })}
+          </SubSection>}
       </ListItem>
     );
   });
@@ -79,6 +112,9 @@ export default function Nav({ className, demos }: Props) {
   return (
     <Root className={className}>
       <Title>Mineral UI</Title>
+      <List>
+        {pageLinks}
+      </List>
       <Heading>Components</Heading>
       <List>
         {demoLinks}
