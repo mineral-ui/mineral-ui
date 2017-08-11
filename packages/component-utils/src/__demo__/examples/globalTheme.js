@@ -16,7 +16,7 @@
 
 /* @flow */
 import { ThemeProvider } from '../../index';
-import Sample from '../../Sample';
+import Sample from '../components/Sample';
 
 export default {
   title: 'Global theme var override',

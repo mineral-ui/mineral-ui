@@ -23,8 +23,8 @@ import cardTheme from './cardTheme';
  */
 export default createStyledComponent(
   'div',
-  (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  props => {
+    const theme = cardTheme(props);
 
     return {
       marginBottom: theme.CardRow_margin,

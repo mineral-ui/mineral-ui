@@ -19,9 +19,12 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent(
   'figcaption',
-  (props, theme) => ({
+  ({ theme }) => ({
     fontSize: theme.fontSize_mouse,
     marginLeft: theme.spacing_half
   }),
-  { displayName: 'FigCaption', includeStyleReset: true }
+  {
+    displayName: 'FigCaption',
+    includeStyleReset: true
+  }
 );

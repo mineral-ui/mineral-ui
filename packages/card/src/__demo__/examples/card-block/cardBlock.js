@@ -25,7 +25,7 @@ import _CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
-const CardBlock = createStyledComponent(_CardBlock, (props, theme) => ({
+const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
   position: 'relative',
 
   // prettier-ignore

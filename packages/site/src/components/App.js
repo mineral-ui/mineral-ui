@@ -29,7 +29,7 @@ type Props = {|
 |};
 
 const styles = {
-  app: (props, theme) => ({
+  app: ({ theme }) => ({
     fontFamily: theme.fontFamily_system,
 
     '@media(min-width: 45em)': {
@@ -38,7 +38,7 @@ const styles = {
       minHeight: '100vh'
     }
   }),
-  nav: (props, theme) => ({
+  nav: ({ theme }) => ({
     backgroundColor: theme.color_gray_10,
     border: `0 solid ${theme.borderColor}`,
     borderBottomWidth: '1px',

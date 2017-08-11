@@ -27,18 +27,15 @@ function getComponentDisplayName(Component: MnrlReactComponent): string {
 
 export default function createThemedComponent(
   ComponentToTheme: MnrlReactComponent,
-  theme: Object | ((props: Object, theme?: Object, context?: Object) => Object)
+  theme: Object | ((props: Object, context?: Object) => Object)
 ) {
   const ThemedComponent = (props, context) => {
-    const { theme: themeFromProps, ...restProps } = props;
     const outTheme =
-      typeof theme === 'function'
-        ? theme(restProps, themeFromProps, context)
-        : theme;
+      typeof theme === 'function' ? theme(props, context) : theme;
 
     return (
       <ThemeProvider theme={outTheme}>
-        <ComponentToTheme {...restProps} />
+        <ComponentToTheme {...props} />
       </ThemeProvider>
     );
   };

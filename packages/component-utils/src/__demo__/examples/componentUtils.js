@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import Sample from '../../Sample';
+import Sample from '../components/Sample';
 
 export default {
   title: 'Default',

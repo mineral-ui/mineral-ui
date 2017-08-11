@@ -16,7 +16,7 @@
 
 /* @flow */
 import { createThemedComponent } from '../../index';
-import Sample from '../../Sample';
+import Sample from '../components/Sample';
 
 export default {
   title: 'Local theme var override via createThemedComponent',

@@ -19,10 +19,13 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 
 export default createStyledComponent(
   'div',
-  (props, theme) => ({
+  ({ theme }) => ({
     display: 'flex',
     flexWrap: 'wrap',
     marginLeft: `-${theme.spacing_half}`
   }),
-  { displayName: 'FigContainer', includeStyleReset: true }
+  {
+    displayName: 'FigContainer',
+    includeStyleReset: true
+  }
 );

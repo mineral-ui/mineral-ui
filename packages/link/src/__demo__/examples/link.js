@@ -18,18 +18,10 @@
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import Link from '../../Link';
 
-const Big = createStyledComponent('p', {
-  fontSize: '1.5em'
-});
-const Bold = createStyledComponent('p', {
-  fontWeight: 700
-});
-const Serif = createStyledComponent('p', {
-  fontFamily: 'serif'
-});
-const Small = createStyledComponent('p', {
-  fontSize: '0.75em'
-});
+const Big = createStyledComponent('p', { fontSize: '1.5em' });
+const Bold = createStyledComponent('p', { fontWeight: 700 });
+const Serif = createStyledComponent('p', { fontFamily: 'serif' });
+const Small = createStyledComponent('p', { fontSize: '0.75em' });
 
 export default {
   title: 'Basic link',

@@ -23,7 +23,7 @@ import {
 import CardRow from './CardRow';
 import cardTheme from './cardTheme';
 
-type Props = {|
+type Props = {
   /** Information displayed above the title */
   meta?: string,
   /** Title of the card */
@@ -32,18 +32,18 @@ type Props = {|
   minor?: boolean,
   /** Subtitle displayed under the title */
   subtitle?: MnrlReactNode
-|};
+};
 
 const styles = {
-  root: (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  root: props => {
+    const theme = cardTheme(props);
 
     return {
       paddingTop: !props.minor && theme.CardTitle_marginTop
     };
   },
-  meta: (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  meta: props => {
+    const theme = cardTheme(props);
 
     return {
       margin: `0 0 ${getNormalizedValue(
@@ -52,8 +52,8 @@ const styles = {
       )}`
     };
   },
-  subtitle: (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  subtitle: props => {
+    const theme = cardTheme(props);
 
     return {
       color: theme.CardSubtitle_color,
@@ -65,8 +65,8 @@ const styles = {
       )} 0 0`
     };
   },
-  title: (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  title: props => {
+    const theme = cardTheme(props);
 
     return {
       fontSize: props.minor

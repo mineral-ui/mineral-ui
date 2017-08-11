@@ -18,7 +18,7 @@
 import React from 'react';
 import { ThemeProvider } from '../index';
 import { mount } from 'enzyme';
-import Sample from '../Sample';
+import Sample from '../__demo__/components/Sample';
 import examples from '../__demo__/examples';
 import testDemoExamples from '../../../../utils/test/testDemoExamples';
 
