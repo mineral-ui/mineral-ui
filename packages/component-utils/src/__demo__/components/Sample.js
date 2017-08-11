@@ -16,9 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from './index';
+import { createStyledComponent } from '../../index';
 
-const Root = createStyledComponent('span', (props, theme) => ({
+const Root = createStyledComponent('span', ({ theme }) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',
   color: theme.Sample_color || theme.color_primary,
   display: 'inline-block',

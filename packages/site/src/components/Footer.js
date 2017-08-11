@@ -26,7 +26,7 @@ type Props = {|
   className?: string
 |};
 
-const Root = createStyledComponent('div', (props, theme) => ({
+const Root = createStyledComponent('div', ({ theme }) => ({
   color: theme.color_caption,
   fontSize: theme.fontSize_mouse,
   margin: getNormalizedValue(theme.spacing_quad, theme.fontSize_mouse),

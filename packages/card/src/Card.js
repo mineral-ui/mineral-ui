@@ -28,8 +28,8 @@ type Props = {
 
 const Root = createStyledComponent(
   'div',
-  (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  props => {
+    const theme = cardTheme(props);
 
     return {
       backgroundColor: theme.Card_backgroundColor,

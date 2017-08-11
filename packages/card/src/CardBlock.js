@@ -26,8 +26,8 @@ type Props = Object;
 
 const Root = createStyledComponent(
   'div',
-  (props, baseTheme) => {
-    const theme = cardTheme(baseTheme);
+  props => {
+    const theme = cardTheme(props);
 
     // prettier-ignore
     return {

@@ -23,29 +23,29 @@ import {
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
-  componentDocExample: (props, theme) => ({
+  componentDocExample: ({ theme }) => ({
     '& + &': {
       borderTop: `1px solid ${theme.borderColor}`,
       marginTop: theme.spacing_quad
     }
   }),
-  h4: (props, theme) => ({
+  h4: ({ theme }) => ({
     margin: `${getNormalizedValue(
       theme.spacing_quad,
       theme.fontSize_h4
     )} 0 ${getNormalizedValue(theme.spacing_double, theme.fontSize_h4)} 0`,
     fontSize: theme.fontSize_h4
   }),
-  p: (props, theme) => ({
+  p: ({ theme }) => ({
     lineHeight: theme.lineHeight_prose,
     margin: `0 0 ${theme.spacing_double}`
   }),
-  livePreview: (props, theme) => ({
-    backgroundColor: props.backgroundColor,
+  livePreview: ({ backgroundColor, theme }) => ({
+    backgroundColor,
     border: `1px solid ${theme.borderColor}`,
     padding: theme.spacing_double
   }),
-  liveEditor: (props, theme) => ({
+  liveEditor: ({ theme }) => ({
     fontSize: theme.fontSize_ui,
     maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
     overflow: 'auto'

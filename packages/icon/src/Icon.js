@@ -35,7 +35,7 @@ type Props = {
   title?: string
 };
 
-const iconStyles = (props, baseTheme) => {
+const iconStyles = ({ color, rtl, size, theme: baseTheme }) => {
   const theme = {
     Icon_fill: baseTheme.color_gray_60,
     Icon_size_small: pxToEm(12),
@@ -45,11 +45,11 @@ const iconStyles = (props, baseTheme) => {
   };
 
   return {
-    fill: props.color || theme.Icon_fill,
+    fill: color || theme.Icon_fill,
     fontSize: theme.fontSize_base,
-    height: theme[`Icon_size_${props.size}`] || props.size,
-    transform: theme.direction === 'rtl' && props.rtl && 'scaleX(-1)',
-    width: theme[`Icon_size_${props.size}`] || props.size
+    height: theme[`Icon_size_${size}`] || size,
+    transform: theme.direction === 'rtl' && rtl && 'scaleX(-1)',
+    width: theme[`Icon_size_${size}`] || size
   };
 };
 

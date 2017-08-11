@@ -29,7 +29,7 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning' // Should allow string | React class
 };
 
-const linkStyles = (props, baseTheme) => {
+const linkStyles = ({ variant, theme: baseTheme }) => {
   let theme = {
     Link_borderColor_focus: baseTheme.borderColor_focus,
     Link_color: baseTheme.color_text_primary,
@@ -40,15 +40,15 @@ const linkStyles = (props, baseTheme) => {
     ...baseTheme
   };
 
-  if (props.variant !== 'regular') {
+  if (variant !== 'regular') {
     // prettier-ignore
     theme = {
       ...theme,
-      Link_borderColor_focus: baseTheme[`borderColor_${props.variant}_focus`],
-      Link_color: baseTheme[`color_text_${props.variant}`],
-      Link_color_hover: baseTheme[`color_text_${props.variant}_hover`],
-      Link_color_focus: baseTheme[`color_text_${props.variant}_focus`],
-      Link_color_active: baseTheme[`color_text_${props.variant}_active`],
+      Link_borderColor_focus: baseTheme[`borderColor_${variant}_focus`],
+      Link_color: baseTheme[`color_text_${variant}`],
+      Link_color_hover: baseTheme[`color_text_${variant}_hover`],
+      Link_color_focus: baseTheme[`color_text_${variant}_focus`],
+      Link_color_active: baseTheme[`color_text_${variant}_active`],
     };
   }
 

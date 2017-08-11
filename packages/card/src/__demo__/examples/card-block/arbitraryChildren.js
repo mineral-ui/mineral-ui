@@ -25,7 +25,7 @@ import CardBlock from '../../../CardBlock';
 import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
-const CustomContent = createStyledComponent('div', (props, theme) => ({
+const CustomContent = createStyledComponent('div', ({ theme }) => ({
   backgroundColor: theme.color_gray_20,
   padding: `${theme.spacing_double} 0`
 }));

@@ -45,20 +45,20 @@ type Props = {
 };
 
 const styles = {
-  componentDoc: (props, theme) => ({
+  componentDoc: ({ theme }) => ({
     borderBottom: `2px solid ${theme.borderColor}`,
     fontFamily: theme.fontFamily_system,
     margin: `0 ${theme.spacing_quad} ${theme.spacing_quad}`,
     paddingBottom: theme.spacing_quad
   }),
-  header: (props, theme) => ({
+  header: ({ theme }) => ({
     alignItems: 'center',
     display: 'flex',
     flexWrap: 'wrap',
     marginBottom: theme.spacing_single,
     padding: `${theme.spacing_double} 0`
   }),
-  title: (props, theme) => ({
+  title: ({ theme }) => ({
     fontSize: theme.fontSize_h1,
     fontWeight: theme.fontWeight_extraBold,
     margin: `0 0 ${getNormalizedValue(
@@ -68,13 +68,13 @@ const styles = {
     marginRight: 'auto',
     paddingRight: pxToEm(16 * 12)
   }),
-  p: (props, theme) => ({
+  p: ({ theme }) => ({
     fontSize: theme.fontSize_h3,
     flex: '1 0 100%',
     lineHeight: theme.lineHeight_prose,
     margin: '0'
   }),
-  h2: (props, theme) => ({
+  h2: ({ theme }) => ({
     margin: `${2 *
       parseFloat(
         getNormalizedValue(theme.spacing_quad, theme.fontSize_h2)
@@ -82,7 +82,7 @@ const styles = {
     fontSize: theme.fontSize_h2,
     fontWeight: theme.fontWeight_semiBold
   }),
-  h3: (props, theme) => ({
+  h3: ({ theme }) => ({
     fontSize: theme.fontSize_h3,
     fontWeight: theme.fontWeight_semiBold,
     margin: `${2 *
@@ -90,11 +90,11 @@ const styles = {
         getNormalizedValue(theme.spacing_quad, theme.fontSize_h3)
       )}em 0 ${getNormalizedValue(theme.spacing_single, theme.fontSize_h3)} 0`
   }),
-  subnav: (props, theme) => ({
+  subnav: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
     marginBottom: theme.spacing_quad
   }),
-  navElement: (props, theme) => ({
+  navElement: ({ theme }) => ({
     display: 'inline-block',
     marginRight: theme.spacing_triple,
     paddingBottom: theme.spacing_single,
