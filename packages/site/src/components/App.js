@@ -21,7 +21,9 @@ import { createStyledComponent } from '@mineral-ui/component-utils';
 import createKeyMap from '../utils/createKeyMap';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
+import TopLevelNav from './TopLevelNav';
 import _Nav from './Nav';
+import pages from '../pages';
 
 type Props = {|
   className?: string,
@@ -60,33 +62,60 @@ const Root = createStyledComponent('div', styles.app, {
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
-const getDefaultDemo = (demos: Object): string => Object.keys(demos)[0];
-
 export default function App({ className, demos }: Props) {
+  const routes = [];
+
   if (!Array.isArray(demos) && demos.slug) {
     return <ComponentDoc {...demos} />;
+  } else {
+    pages.map((page, i) => {
+      if (page.sections) {
+        page.sections.map((section, j) => {
+          if (section.path) {
+            routes.push(
+              <Route
+                key={`section-${j}`}
+                path={section.path}
+                render={() => <section.component />}
+              />
+            );
+          }
+        });
+      }
+      routes.push(
+        <Route
+          key={`page-${i}`}
+          path={page.path}
+          render={() => <page.component />}
+        />
+      );
+    });
   }
 
   const siteDemos = Array.isArray(demos) ? createKeyMap(demos, 'slug') : demos;
 
   return (
-    <Root className={className}>
-      <Nav demos={siteDemos} />
-      <Main>
-        <Switch>
-          <Route
-            path="/components/:componentId"
-            render={route => {
-              const componentId = route.match.params.componentId;
-              // $FlowFixMe
-              const selectedDemo = siteDemos[componentId];
-              return <ComponentDoc {...selectedDemo} />;
-            }}
-          />
-          <Redirect from="/" to={`/components/${getDefaultDemo(siteDemos)}`} />
-        </Switch>
-        <Footer />
-      </Main>
-    </Root>
+    <div>
+      <Route exact path="/" component={TopLevelNav} />
+      <Root className={className}>
+        <Nav demos={siteDemos} />
+        <Main>
+          <Switch>
+            {routes}
+            <Route
+              path="/components/:componentId"
+              render={route => {
+                const componentId = route.match.params.componentId;
+                // $FlowFixMe
+                const selectedDemo = siteDemos[componentId];
+                return <ComponentDoc {...selectedDemo} />;
+              }}
+            />
+            <Redirect from="/" to="/getting-started" />
+          </Switch>
+          <Footer />
+        </Main>
+      </Root>
+    </div>
   );
 }

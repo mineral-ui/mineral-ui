@@ -15,22 +15,29 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../index';
-import Sample from '../components/Sample';
+import React from 'react';
+import { createStyledComponent } from '@mineral-ui/component-utils';
+import Header from './Header';
 
-export default {
-  title: 'Style override via createStyledComponent',
-  description:
-    'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
-  scope: { createStyledComponent, Sample },
-  source: `
-    () => {
-      const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
-        outline: '3px dashed mediumvioletred',
-        fontSize: theme.fontSize_h1
-      }));
-
-      return <MyStyledSample />;
-    }
-  `
+type Props = {
+  children: MnrlReactNode
 };
+
+const Content = createStyledComponent('section', ({ theme }) => ({
+  lineHeight: theme.lineHeight_prose,
+  minHeight: '100vh',
+  overflow: 'hidden',
+  padding: `${parseFloat(theme.spacing_quad) * 2}em`,
+  width: '100%'
+}));
+
+export default function PageLayout({ children }: Props) {
+  return (
+    <div>
+      <Header currentPath={location.pathname} />
+      <Content>
+        {children}
+      </Content>
+    </div>
+  );
+}

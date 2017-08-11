@@ -15,22 +15,18 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../index';
-import Sample from '../components/Sample';
+import React from 'react';
+import { Link as ReactRouterLink } from 'react-router-dom';
+import _Link from '@mineral-ui/link';
 
-export default {
-  title: 'Style override via createStyledComponent',
-  description:
-    'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
-  scope: { createStyledComponent, Sample },
-  source: `
-    () => {
-      const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
-        outline: '3px dashed mediumvioletred',
-        fontSize: theme.fontSize_h1
-      }));
+type Props = Object;
 
-      return <MyStyledSample />;
-    }
-  `
-};
+export default function Link(props: Props) {
+  const rootProps = {
+    ...props
+  };
+  if (props.to) {
+    rootProps.element = ReactRouterLink;
+  }
+  return <_Link {...rootProps} />;
+}
