@@ -16,12 +16,12 @@
 
 /* @flow */
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
 import { createStyledComponent } from '@mineral-ui/component-utils';
 import createKeyMap from '../utils/createKeyMap';
 import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
+import Router from './Router';
 
 type Props = {|
   className?: string,
@@ -60,8 +60,6 @@ const Root = createStyledComponent('div', styles.app, {
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
-const getDefaultDemo = (demos: Object): string => Object.keys(demos)[0];
-
 export default function App({ className, demos }: Props) {
   if (!Array.isArray(demos) && demos.slug) {
     return <ComponentDoc {...demos} />;
@@ -70,23 +68,14 @@ export default function App({ className, demos }: Props) {
   const siteDemos = Array.isArray(demos) ? createKeyMap(demos, 'slug') : demos;
 
   return (
-    <Root className={className}>
-      <Nav demos={siteDemos} />
-      <Main>
-        <Switch>
-          <Route
-            path="/components/:componentId"
-            render={route => {
-              const componentId = route.match.params.componentId;
-              // $FlowFixMe
-              const selectedDemo = siteDemos[componentId];
-              return <ComponentDoc {...selectedDemo} />;
-            }}
-          />
-          <Redirect from="/" to={`/components/${getDefaultDemo(siteDemos)}`} />
-        </Switch>
-        <Footer />
-      </Main>
-    </Root>
+    <div>
+      <Root className={className}>
+        <Nav demos={siteDemos} />
+        <Main>
+          <Router demos={siteDemos} />
+          <Footer />
+        </Main>
+      </Root>
+    </div>
   );
 }

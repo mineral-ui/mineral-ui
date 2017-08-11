@@ -61,5 +61,6 @@ export default {
       }));
 
       return <MyStyledSample />;
-    }`
+    }
+  `
 };
