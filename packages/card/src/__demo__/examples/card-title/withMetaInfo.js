@@ -27,14 +27,15 @@ export default {
   description:
     'If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
-  source: `<DemoLayout>
-  <Card>
-    <CardTitle meta="July 24, 2017">Card title</CardTitle>
-    <CardBlock>
-      Light years star stuff harvesting star light citizens of distant
-      epochs encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </CardBlock>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card>
+        <CardTitle meta="July 24, 2017">Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>`
 };

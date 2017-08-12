@@ -22,10 +22,11 @@ export default {
   description:
     'Icons are available in three preset sizes, or you can supply your own custom size.',
   scope: { IconSentimentSatisfied },
-  source: `<div>
-  <IconSentimentSatisfied size="small" />
-  <IconSentimentSatisfied />
-  <IconSentimentSatisfied size="large" />
-  <IconSentimentSatisfied size="7em" />
-</div>`
+  source: `
+    <div>
+      <IconSentimentSatisfied size="small" />
+      <IconSentimentSatisfied />
+      <IconSentimentSatisfied size="large" />
+      <IconSentimentSatisfied size="7em" />
+    </div>`
 };

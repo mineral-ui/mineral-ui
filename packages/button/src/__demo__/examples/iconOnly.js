@@ -30,22 +30,25 @@ export default {
   description:
     'Buttons that contain only Icons can use either `iconStart` or `iconEnd` props and must have an `aria-label` provided.',
   scope: { Button, IconCloud, DemoLayout },
-  source: `() => {
-  const icon = <IconCloud />;
+  source: `
+    () => {
+      const icon = <IconCloud />;
 
-  return <DemoLayout>
-    {/* Icon as prop; no text. aria-label applied to Button. */}
-    <Button iconStart={icon} aria-label="Cloud" />
-    {/* primary */}
-    <Button iconStart={icon} primary aria-label="Cloud" />
-    {/* minimal */}
-    <Button iconStart={icon} minimal aria-label="Cloud" />
-    {/* small */}
-    <Button iconStart={icon} size="small" aria-label="Cloud" />
-    {/* large */}
-    <Button iconStart={icon} size="large" aria-label="Cloud" />
-    {/* jumbo */}
-    <Button iconStart={icon} size="jumbo" aria-label="Cloud" />
-  </DemoLayout>
-}`
+      return (
+        <DemoLayout>
+          {/* Icon as prop; no text. aria-label applied to Button. */}
+          <Button iconStart={icon} aria-label="Cloud" />
+          {/* primary */}
+          <Button iconStart={icon} primary aria-label="Cloud" />
+          {/* minimal */}
+          <Button iconStart={icon} minimal aria-label="Cloud" />
+          {/* small */}
+          <Button iconStart={icon} size="small" aria-label="Cloud" />
+          {/* large */}
+          <Button iconStart={icon} size="large" aria-label="Cloud" />
+          {/* jumbo */}
+          <Button iconStart={icon} size="jumbo" aria-label="Cloud" />
+        </DemoLayout>
+      );
+    }`
 };

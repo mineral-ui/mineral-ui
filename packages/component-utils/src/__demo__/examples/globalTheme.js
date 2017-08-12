@@ -23,7 +23,8 @@ export default {
   description:
     'This will affect all components inside this ThemeProvider that use this variable.',
   scope: { ThemeProvider, Sample },
-  source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-  <Sample />
-</ThemeProvider>`
+  source: `
+    <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+      <Sample />
+    </ThemeProvider>`
 };

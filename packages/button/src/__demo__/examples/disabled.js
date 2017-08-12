@@ -27,9 +27,10 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   title: 'Disabled',
   scope: { Button, DemoLayout },
-  source: `<DemoLayout>
-  <Button disabled>Regular</Button>
-  <Button disabled primary>Primary</Button>
-  <Button disabled minimal>Minimal</Button>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Button disabled>Regular</Button>
+      <Button disabled primary>Primary</Button>
+      <Button disabled minimal>Minimal</Button>
+    </DemoLayout>`
 };

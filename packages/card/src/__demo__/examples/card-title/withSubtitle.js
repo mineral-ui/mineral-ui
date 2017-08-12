@@ -26,14 +26,15 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
-  source: `<DemoLayout>
-  <Card>
-    <CardTitle subtitle="Card subtitle">Card title</CardTitle>
-    <CardBlock>
-      Light years star stuff harvesting star light citizens of distant
-      epochs encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </CardBlock>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card>
+        <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>`
 };

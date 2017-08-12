@@ -28,7 +28,8 @@ export default {
   title: 'Truncation',
   description: 'Long button text is truncated when necessary',
   scope: { Button, FixedWidthLayout },
-  source: `<FixedWidthLayout>
-  <Button>Do Something</Button>
-</FixedWidthLayout>`
+  source: `
+    <FixedWidthLayout>
+      <Button>Do Something</Button>
+    </FixedWidthLayout>`
 };
