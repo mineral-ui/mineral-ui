@@ -90,7 +90,10 @@ export default class Icon extends PureComponent {
 
     return (
       <Root {...rootProps}>
-        {title && <title {...titleProps}>{title}</title>}
+        {title &&
+          <title {...titleProps}>
+            {title}
+          </title>}
         {children}
       </Root>
     );

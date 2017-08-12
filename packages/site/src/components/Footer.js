@@ -45,11 +45,8 @@ export default function Footer({ className }: Props) {
     <Root className={className}>
       <div>Copyright © 2017 CA</div>
       <div>
-        We welcome feedback and contributions on
-        {' '}
-        <Link href="https://github.com/mineral-ui/mineral-ui">
-          GitHub
-        </Link>
+        We welcome feedback and contributions on {' '}
+        <Link href="https://github.com/mineral-ui/mineral-ui">GitHub</Link>
       </div>
     </Root>
   );

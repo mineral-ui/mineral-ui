@@ -105,9 +105,17 @@ export default function CardTitle({
   const isMinor = minor || Boolean(meta);
   return (
     <Root {...rootProps}>
-      {meta && <Meta>{meta}</Meta>}
-      <Title minor={isMinor}>{children}</Title>
-      {subtitle && <Subtitle>{subtitle}</Subtitle>}
+      {meta &&
+        <Meta>
+          {meta}
+        </Meta>}
+      <Title minor={isMinor}>
+        {children}
+      </Title>
+      {subtitle &&
+        <Subtitle>
+          {subtitle}
+        </Subtitle>}
     </Root>
   );
 }

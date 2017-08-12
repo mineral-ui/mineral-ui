@@ -90,5 +90,9 @@ export default function Link({
     displayName: 'Link'
   });
 
-  return <Root {...rootProps}>{children}</Root>;
+  return (
+    <Root {...rootProps}>
+      {children}
+    </Root>
+  );
 }

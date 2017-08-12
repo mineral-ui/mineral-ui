@@ -125,9 +125,10 @@ const buttonStyles = (props, baseTheme) => {
         return theme.Button_backgroundColor;
       }
     })(),
-    borderColor: props.disabled || props.primary || props.minimal
-      ? 'transparent'
-      : theme.Button_borderColor,
+    borderColor:
+      props.disabled || props.primary || props.minimal
+        ? 'transparent'
+        : theme.Button_borderColor,
     borderRadius: props.circular
       ? `${parseFloat(theme[`Button_size_${props.size}`]) / 2}em`
       : theme.Button_borderRadius,
@@ -203,12 +204,13 @@ const buttonStyles = (props, baseTheme) => {
 
     '& [role="icon"]': {
       boxSizing: 'content-box',
-      fill: props.disabled ||
+      fill:
+        props.disabled ||
         props.primary ||
         props.minimal ||
         props.variant !== 'regular'
-        ? 'currentColor'
-        : theme.Button_backgroundColor_primary,
+          ? 'currentColor'
+          : theme.Button_backgroundColor_primary,
       display: 'block',
       padding: theme[`ButtonIcon_padding_${props.size}`]
     }
@@ -218,9 +220,10 @@ const buttonStyles = (props, baseTheme) => {
 const contentStyles = (props, baseTheme) => {
   const theme = buttonTheme(props, baseTheme);
 
-  const fontSize = props.size === 'small'
-    ? theme.ButtonContent_fontSize_small
-    : theme.ButtonContent_fontSize;
+  const fontSize =
+    props.size === 'small'
+      ? theme.ButtonContent_fontSize_small
+      : theme.ButtonContent_fontSize;
 
   return {
     ...ellipsis('100%'),
@@ -279,7 +282,10 @@ export default function Button({
     <Root {...rootProps}>
       <Inner>
         {startIcon}
-        {children && <Content size={size}>{children}</Content>}
+        {children &&
+          <Content size={size}>
+            {children}
+          </Content>}
         {endIcon}
       </Inner>
     </Root>
