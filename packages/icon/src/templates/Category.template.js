@@ -22,6 +22,7 @@ import FigCaption from '../../components/FigCaption';
 import FigContainer from '../../components/FigContainer';
 import CategoryHeader from '../../components/CategoryHeader';
 
+/* eslint-disable prettier/prettier */
 {{#components}}
 import {{componentName}} from '../../../{{componentName}}';
 {{/components}}
