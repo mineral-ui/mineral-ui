@@ -180,23 +180,24 @@ exports[`Link Basic link 1`] = `
     }
   >
     <LiveProvider
-      code="<div>
-      <Big>
-        Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
-      </Big>
+      code="
+        <div>
+          <Big>
+            Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+          </Big>
     
-      <Small>
-        citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
-      </Small>
+          <Small>
+            citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+          </Small>
     
-      <Bold>
-        vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
-      </Bold>
+          <Bold>
+            vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+          </Bold>
     
-      <Serif>
-        shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
-      </Serif>
-    </div>"
+          <Serif>
+            shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+          </Serif>
+        </div>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -487,9 +488,10 @@ exports[`Link Children 1`] = `
     }
   >
     <LiveProvider
-      code="<Link href=\\"http://example.com\\">
-      <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
-    </Link>"
+      code="
+        <Link href=\\"http://example.com\\">
+          <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
+        </Link>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -791,35 +793,36 @@ exports[`Link States 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Link href=\\"http://example.com\\">Regular</Link>
-      <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
-      <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
-      <Link {...simulate('focus', 'hover')} href=\\"http://example.com\\">Focus & Hover</Link>
-      <Link {...simulate('focus', 'active')} href=\\"http://example.com\\">Focus & Active</Link>
-      <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
-      <br /><br />
-      <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
-      <Link {...simulate('hover')} variant=\\"danger\\" href=\\"http://example.com\\">Hover</Link>
-      <Link {...simulate('focus')} variant=\\"danger\\" href=\\"http://example.com\\">Focus</Link>
-      <Link {...simulate('focus', 'hover')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Hover</Link>
-      <Link {...simulate('focus', 'active')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Active</Link>
-      <Link  {...simulate('active')} variant=\\"danger\\" href=\\"http://example.com\\">Active</Link>
-      <br /><br />
-      <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
-      <Link {...simulate('hover')} variant=\\"success\\" href=\\"http://example.com\\">Hover</Link>
-      <Link {...simulate('focus')} variant=\\"success\\" href=\\"http://example.com\\">Focus</Link>
-      <Link {...simulate('focus', 'hover')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Hover</Link>
-      <Link {...simulate('focus', 'active')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Active</Link>
-      <Link {...simulate('active')} variant=\\"success\\" href=\\"http://example.com\\">Active</Link>
-      <br /><br />
-      <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
-      <Link {...simulate('hover')} variant=\\"warning\\" href=\\"http://example.com\\">Hover</Link>
-      <Link {...simulate('focus')} variant=\\"warning\\" href=\\"http://example.com\\">Focus</Link>
-      <Link {...simulate('focus', 'hover')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Hover</Link>
-      <Link {...simulate('focus', 'active')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Active</Link>
-      <Link {...simulate('active')} variant=\\"warning\\" href=\\"http://example.com\\">Active</Link>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Link href=\\"http://example.com\\">Regular</Link>
+          <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+          <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+          <Link {...simulate('focus', 'hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+          <Link {...simulate('focus', 'active')} href=\\"http://example.com\\">Focus & Active</Link>
+          <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+          <br /><br />
+          <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+          <Link {...simulate('hover')} variant=\\"danger\\" href=\\"http://example.com\\">Hover</Link>
+          <Link {...simulate('focus')} variant=\\"danger\\" href=\\"http://example.com\\">Focus</Link>
+          <Link {...simulate('focus', 'hover')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Hover</Link>
+          <Link {...simulate('focus', 'active')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Active</Link>
+          <Link  {...simulate('active')} variant=\\"danger\\" href=\\"http://example.com\\">Active</Link>
+          <br /><br />
+          <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+          <Link {...simulate('hover')} variant=\\"success\\" href=\\"http://example.com\\">Hover</Link>
+          <Link {...simulate('focus')} variant=\\"success\\" href=\\"http://example.com\\">Focus</Link>
+          <Link {...simulate('focus', 'hover')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Hover</Link>
+          <Link {...simulate('focus', 'active')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Active</Link>
+          <Link {...simulate('active')} variant=\\"success\\" href=\\"http://example.com\\">Active</Link>
+          <br /><br />
+          <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+          <Link {...simulate('hover')} variant=\\"warning\\" href=\\"http://example.com\\">Hover</Link>
+          <Link {...simulate('focus')} variant=\\"warning\\" href=\\"http://example.com\\">Focus</Link>
+          <Link {...simulate('focus', 'hover')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Hover</Link>
+          <Link {...simulate('focus', 'active')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Active</Link>
+          <Link {...simulate('active')} variant=\\"warning\\" href=\\"http://example.com\\">Active</Link>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1581,12 +1584,13 @@ exports[`Link Variants 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Link href=\\"http://example.com\\">Regular</Link>
-      <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
-      <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
-      <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Link href=\\"http://example.com\\">Regular</Link>
+          <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+          <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+          <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={

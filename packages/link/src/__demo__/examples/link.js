@@ -27,21 +27,22 @@ export default {
   title: 'Basic link',
   description: 'Links inherit font size, weight, and family.',
   scope: { Big, Bold, Link, Serif, Small },
-  source: `<div>
-  <Big>
-    Light years star stuff <Link href="http://example.com">harvesting</Link> star light
-  </Big>
+  source: `
+    <div>
+      <Big>
+        Light years star stuff <Link href="http://example.com">harvesting</Link> star light
+      </Big>
 
-  <Small>
-    citizens of distant <Link href="http://example.com">epochs</Link> encyclopaedia galactica
-  </Small>
+      <Small>
+        citizens of distant <Link href="http://example.com">epochs</Link> encyclopaedia galactica
+      </Small>
 
-  <Bold>
-    vastness is <Link href="http://example.com">bearable</Link> only through love,
-  </Bold>
+      <Bold>
+        vastness is <Link href="http://example.com">bearable</Link> only through love,
+      </Bold>
 
-  <Serif>
-    shores of the <Link href="http://example.com">cosmic</Link> ocean!
-  </Serif>
-</div>`
+      <Serif>
+        shores of the <Link href="http://example.com">cosmic</Link> ocean!
+      </Serif>
+    </div>`
 };

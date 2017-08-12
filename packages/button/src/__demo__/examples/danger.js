@@ -28,9 +28,10 @@ export default {
   title: 'Danger',
   description: 'Use for destructive or potentially-dangerous actions.',
   scope: { Button, DemoLayout },
-  source: `<DemoLayout>
-  <Button variant="danger">Regular</Button>
-  <Button variant="danger" primary>Primary</Button>
-  <Button variant="danger" minimal>Minimal</Button>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Button variant="danger">Regular</Button>
+      <Button variant="danger" primary>Primary</Button>
+      <Button variant="danger" minimal>Minimal</Button>
+    </DemoLayout>`
 };

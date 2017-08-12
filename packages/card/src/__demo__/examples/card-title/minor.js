@@ -28,15 +28,16 @@ export default {
   description:
     'The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.',
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
-  source: `<DemoLayout>
-  <Card>
-    <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-    <CardTitle minor>Card title</CardTitle>
-    <CardBlock>
-      Light years star stuff harvesting star light citizens of distant
-      epochs encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </CardBlock>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card>
+        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
+        <CardTitle minor>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>`
 };

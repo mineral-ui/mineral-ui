@@ -139,9 +139,10 @@ exports[`ThemeProvider Component theme var override 1`] = `
     }
   >
     <LiveProvider
-      code="<ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-      <Sample />
-    </ThemeProvider>"
+      code="
+        <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+          <Sample />
+        </ThemeProvider>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -512,9 +513,10 @@ exports[`ThemeProvider Global theme var override 1`] = `
     }
   >
     <LiveProvider
-      code="<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-      <Sample />
-    </ThemeProvider>"
+      code="
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+          <Sample />
+        </ThemeProvider>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -709,13 +711,14 @@ exports[`ThemeProvider Local theme var override via createThemedComponent 1`] = 
     }
   >
     <LiveProvider
-      code="() => {
-      const MyThemedSample = createThemedComponent(Sample, {
-        color_primary: 'mediumvioletred'
-      });
+      code="
+        () => {
+          const MyThemedSample = createThemedComponent(Sample, {
+            color_primary: 'mediumvioletred'
+          });
     
-      return <MyThemedSample />;
-    }"
+          return <MyThemedSample />;
+        }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1168,11 +1171,12 @@ exports[`ThemeProvider Nested global theme var override 1`] = `
     }
   >
     <LiveProvider
-      code="<ThemeProvider theme={{ color_primary: 'cyan' }}>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <Sample />
-      </ThemeProvider>
-    </ThemeProvider>"
+      code="
+        <ThemeProvider theme={{ color_primary: 'cyan' }}>
+          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+            <Sample />
+          </ThemeProvider>
+        </ThemeProvider>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1383,11 +1387,12 @@ exports[`ThemeProvider Shallow merged global theme var override 1`] = `
     }
   >
     <LiveProvider
-      code="<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-      <ThemeProvider theme={{ color_warning: 'tomato' }}>
-        <Sample />
-      </ThemeProvider>
-    </ThemeProvider>"
+      code="
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+          <ThemeProvider theme={{ color_warning: 'tomato' }}>
+            <Sample />
+          </ThemeProvider>
+        </ThemeProvider>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1604,14 +1609,15 @@ exports[`ThemeProvider Style override via createStyledComponent 1`] = `
     }
   >
     <LiveProvider
-      code="() => {
-      const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
-        outline: '3px dashed mediumvioletred',
-        fontSize: theme.fontSize_h1
-      }));
+      code="
+        () => {
+          const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
+            outline: '3px dashed mediumvioletred',
+            fontSize: theme.fontSize_h1
+          }));
     
-      return <MyStyledSample />;
-    }"
+          return <MyStyledSample />;
+        }"
       mountStylesheet={false}
       noInline={false}
       scope={

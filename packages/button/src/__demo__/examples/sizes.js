@@ -27,10 +27,11 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   title: 'Sizes',
   scope: { Button, DemoLayout },
-  source: `<DemoLayout>
-  <Button size="small">Small</Button>
-  <Button>Medium</Button>
-  <Button size="large">Large</Button>
-  <Button size="jumbo">Jumbo</Button>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Button size="small">Small</Button>
+      <Button>Medium</Button>
+      <Button size="large">Large</Button>
+      <Button size="jumbo">Jumbo</Button>
+    </DemoLayout>`
 };

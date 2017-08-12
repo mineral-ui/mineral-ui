@@ -16,6 +16,7 @@
 
 /* @flow */
 import React, { Component } from 'react';
+import dedent from 'dedent';
 import {
   createStyledComponent,
   getNormalizedValue
@@ -94,7 +95,10 @@ export default class ComponentDocExample extends Component {
               {description}
             </P>
           : description}
-        <LiveProvider code={source} scope={scope} mountStylesheet={false}>
+        <LiveProvider
+          code={dedent(source)}
+          scope={scope}
+          mountStylesheet={false}>
           <MyLivePreview backgroundColor={backgroundColor} />
           {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
         </LiveProvider>

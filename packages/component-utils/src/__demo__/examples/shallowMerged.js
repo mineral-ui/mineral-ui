@@ -23,9 +23,10 @@ export default {
   description:
     'When a nested ThemeProvider provides a different variable, the merge works as expected.',
   scope: { ThemeProvider, Sample },
-  source: `<ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-  <ThemeProvider theme={{ color_warning: 'tomato' }}>
-    <Sample />
-  </ThemeProvider>
-</ThemeProvider>`
+  source: `
+    <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+      <ThemeProvider theme={{ color_warning: 'tomato' }}>
+        <Sample />
+      </ThemeProvider>
+    </ThemeProvider>`
 };

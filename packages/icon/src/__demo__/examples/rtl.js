@@ -23,7 +23,8 @@ export default {
   description:
     'Some icons will be automatically mirrored for (right-to-left) RTL languages',
   scope: { IconHelp, ThemeProvider },
-  source: `<ThemeProvider theme={{ direction: 'rtl' }}>
-  <IconHelp />
-</ThemeProvider>`
+  source: `
+    <ThemeProvider theme={{ direction: 'rtl' }}>
+      <IconHelp />
+    </ThemeProvider>`
 };
