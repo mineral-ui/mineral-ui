@@ -41,12 +41,13 @@ export default {
   description:
     'A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.',
   scope: { Button, Card, CardTitle, CustomContent, DemoLayout },
-  source: `<DemoLayout>
-  <Card>
-    <CardTitle>Card title</CardTitle>
-    <CustomContent>
-      <Button fullWidth>Button</Button>
-    </CustomContent>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CustomContent>
+          <Button fullWidth>Button</Button>
+        </CustomContent>
+      </Card>
+    </DemoLayout>`
 };

@@ -28,9 +28,10 @@ export default {
   title: 'Success',
   description: 'Use for positive actions, like when creating something.',
   scope: { Button, DemoLayout },
-  source: `<DemoLayout>
-  <Button variant="success">Regular</Button>
-  <Button variant="success" primary>Primary</Button>
-  <Button variant="success" minimal>Minimal</Button>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Button variant="success">Regular</Button>
+      <Button variant="success" primary>Primary</Button>
+      <Button variant="success" minimal>Minimal</Button>
+    </DemoLayout>`
 };

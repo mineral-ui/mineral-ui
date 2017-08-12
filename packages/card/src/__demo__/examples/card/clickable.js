@@ -27,14 +27,15 @@ export default {
   description:
     'If an onClick function is provided, the entire card becomes clickable and keyboard actionable.',
   scope: { Card, CardBlock, CardTitle, DemoLayout },
-  source: `<DemoLayout>
-  <Card onClick={event => console.log(event)}>
-    <CardTitle>Card title</CardTitle>
-    <CardBlock>
-      Light years star stuff harvesting star light citizens of distant
-      epochs encyclopaedia galactica vastness is bearable only through love,
-      shores of the cosmic ocean!
-    </CardBlock>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card onClick={event => console.log(event)}>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          Light years star stuff harvesting star light citizens of distant
+          epochs encyclopaedia galactica vastness is bearable only through love,
+          shores of the cosmic ocean!
+        </CardBlock>
+      </Card>
+    </DemoLayout>`
 };

@@ -21,7 +21,8 @@ export default {
   title: 'Children',
   description: 'A Link will render any children.',
   scope: { Link },
-  source: `<Link href="http://example.com">
-  <img alt="a headshot of Bill Murray" src="https://www.fillmurray.com/100/100" />
-</Link>`
+  source: `
+    <Link href="http://example.com">
+      <img alt="a headshot of Bill Murray" src="https://www.fillmurray.com/100/100" />
+    </Link>`
 };

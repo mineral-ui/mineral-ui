@@ -22,7 +22,8 @@ export default {
   title: 'RTL Support',
   description: '',
   scope: { Button, IconBackspace },
-  source: `<div dir="rtl">
-  <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
-</div>`
+  source: `
+    <div dir="rtl">
+      <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+    </div>`
 };

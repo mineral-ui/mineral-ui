@@ -300,14 +300,15 @@ exports[`Card Arbitrary children 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CustomContent>
-          <Button fullWidth>Button</Button>
-        </CustomContent>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CustomContent>
+              <Button fullWidth>Button</Button>
+            </CustomContent>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -713,16 +714,17 @@ exports[`Card Arbitrary children 2`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          <CustomContent>
-            <Button fullWidth>Button</Button>
-          </CustomContent>
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              <CustomContent>
+                <Button fullWidth>Button</Button>
+              </CustomContent>
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1038,16 +1040,17 @@ exports[`Card Basic card 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1324,16 +1327,17 @@ exports[`Card Clickable 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card onClick={event => console.log(event)}>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card onClick={event => console.log(event)}>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1649,40 +1653,41 @@ exports[`Card Complex title and subtitle 1`] = `
     }
   >
     <LiveProvider
-      code="() => {
-      const Status = createStyledComponent('span', {
-        color: 'red',
-        fontSize: '0.6em',
+      code="
+        () => {
+          const Status = createStyledComponent('span', {
+            color: 'red',
+            fontSize: '0.6em',
     
-        '&:before': {
-          backgroundColor: 'red',
-          borderRadius: '0.8em',
-          content: '\\"\\"',
-          display: 'inline-block',
-          height: '0.8em',
-          marginRight: '0.5em',
-          position: 'relative',
-          top: '0.1em',
-          width: '0.8em'
-        }
-      });
+            '&:before': {
+              backgroundColor: 'red',
+              borderRadius: '0.8em',
+              content: '\\"\\"',
+              display: 'inline-block',
+              height: '0.8em',
+              marginRight: '0.5em',
+              position: 'relative',
+              top: '0.1em',
+              width: '0.8em'
+            }
+          });
     
-      return (
-        <DemoLayout>
-          <Card>
-            <CardTitle subtitle={<em>Subtitle</em>}>
-              Card title<br />
-              <Status>Status label</Status>
-            </CardTitle>
-            <CardBlock>
-              Light years star stuff harvesting star light citizens of distant
-              epochs encyclopaedia galactica vastness is bearable only through love,
-              shores of the cosmic ocean!
-            </CardBlock>
-          </Card>
-        </DemoLayout>
-      );
-    }"
+          return (
+            <DemoLayout>
+              <Card>
+                <CardTitle subtitle={<em>Subtitle</em>}>
+                  Card title<br />
+                  <Status>Status label</Status>
+                </CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>
+          );
+        }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2021,16 +2026,17 @@ exports[`Card Consistent spacing 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2335,17 +2341,18 @@ exports[`Card Minor title 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-        <CardTitle minor>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+            <CardTitle minor>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2693,37 +2700,38 @@ exports[`Card Order of sections 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-        <CardTitle minor>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
+      code="
+        <DemoLayout>
+          <Card>
+            <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+            <CardTitle minor>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
     
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
     
-      <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-        <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
-      </Card>
-    </DemoLayout>"
+          <Card>
+            <CardTitle>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+            <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3126,16 +3134,17 @@ exports[`Card With a subtitle 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3443,17 +3452,18 @@ exports[`Card With an image 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
-        <CardTitle minor>Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+            <CardTitle minor>Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3758,16 +3768,17 @@ exports[`Card With meta information 1`] = `
     }
   >
     <LiveProvider
-      code="<DemoLayout>
-      <Card>
-        <CardTitle meta=\\"July 24, 2017\\">Card title</CardTitle>
-        <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
-        </CardBlock>
-      </Card>
-    </DemoLayout>"
+      code="
+        <DemoLayout>
+          <Card>
+            <CardTitle meta=\\"July 24, 2017\\">Card title</CardTitle>
+            <CardBlock>
+              Light years star stuff harvesting star light citizens of distant
+              epochs encyclopaedia galactica vastness is bearable only through love,
+              shores of the cosmic ocean!
+            </CardBlock>
+          </Card>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={

@@ -36,14 +36,15 @@ export default {
   description:
     'A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.',
   scope: { Button, Card, CardBlock, CardTitle, CustomContent, DemoLayout },
-  source: `<DemoLayout>
-  <Card>
-    <CardTitle>Card title</CardTitle>
-    <CardBlock>
-      <CustomContent>
-        <Button fullWidth>Button</Button>
-      </CustomContent>
-    </CardBlock>
-  </Card>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CardBlock>
+          <CustomContent>
+            <Button fullWidth>Button</Button>
+          </CustomContent>
+        </CardBlock>
+      </Card>
+    </DemoLayout>`
 };

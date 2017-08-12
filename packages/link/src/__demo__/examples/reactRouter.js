@@ -28,20 +28,21 @@ export default {
   title: 'ReactRouter',
   description: `This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.`,
   scope: { BrowserRouter, Link, ReactRouterLink, Redirect, Route, Switch },
-  source: `<BrowserRouter>
-  <Switch>
-    <Route
-      path="/components/:componentId/:path?"
-      render={route => {
-        const path = route.match.params.path;
+  source: `
+    <BrowserRouter>
+      <Switch>
+        <Route
+          path="/components/:componentId/:path?"
+          render={route => {
+            const path = route.match.params.path;
 
-        if ('page-2' === path) {
-          return <Link to="/components/link/page-1" replace element={ReactRouterLink}>Page 1</Link>;
-        }
-        return <Link to="/components/link/page-2" replace element={ReactRouterLink}>Page 2</Link>;
-      }}
-    />
-    <Redirect from="/" to="/components/link" />
-  </Switch>
-</BrowserRouter>`
+            if ('page-2' === path) {
+              return <Link to="/components/link/page-1" replace element={ReactRouterLink}>Page 1</Link>;
+            }
+            return <Link to="/components/link/page-2" replace element={ReactRouterLink}>Page 2</Link>;
+          }}
+        />
+        <Redirect from="/" to="/components/link" />
+      </Switch>
+    </BrowserRouter>`
 };

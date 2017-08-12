@@ -29,10 +29,11 @@ export default {
   description:
     'Links can be styled as these variants, to help communicate purpose.',
   scope: { DemoLayout, Link },
-  source: `<DemoLayout>
-  <Link href="http://example.com">Regular</Link>
-  <Link variant="danger" href="http://example.com">Danger</Link>
-  <Link variant="success" href="http://example.com">Success</Link>
-  <Link variant="warning" href="http://example.com">Warning</Link>
-</DemoLayout>`
+  source: `
+    <DemoLayout>
+      <Link href="http://example.com">Regular</Link>
+      <Link variant="danger" href="http://example.com">Danger</Link>
+      <Link variant="success" href="http://example.com">Success</Link>
+      <Link variant="warning" href="http://example.com">Warning</Link>
+    </DemoLayout>`
 };
