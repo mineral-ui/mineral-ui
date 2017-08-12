@@ -31,9 +31,10 @@ export default function createThemedComponent(
 ) {
   const ThemedComponent = (props, context) => {
     const { theme: themeFromProps, ...restProps } = props;
-    const outTheme = typeof theme === 'function'
-      ? theme(restProps, themeFromProps, context)
-      : theme;
+    const outTheme =
+      typeof theme === 'function'
+        ? theme(restProps, themeFromProps, context)
+        : theme;
 
     return (
       <ThemeProvider theme={outTheme}>

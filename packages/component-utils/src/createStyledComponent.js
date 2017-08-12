@@ -30,9 +30,8 @@ export default function createStyledComponent(
 
   if (includeStyleReset) {
     outStyles = (props: Object, theme?: Object, context?: Object): Object => {
-      const componentStyles = typeof styles === 'function'
-        ? styles(props, theme, context)
-        : styles;
+      const componentStyles =
+        typeof styles === 'function' ? styles(props, theme, context) : styles;
 
       return {
         ...componentStyleReset(theme),

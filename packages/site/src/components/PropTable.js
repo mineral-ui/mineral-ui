@@ -95,7 +95,9 @@ function DefaultValue({
 }) {
   return required
     ? <PropRequired>required</PropRequired>
-    : <CodeValue>{defaultValue}</CodeValue>;
+    : <CodeValue>
+        {defaultValue}
+      </CodeValue>;
 }
 
 function getDefaultValue(propDescription: Object): any {
@@ -149,13 +151,23 @@ function PropTableRow({
 }: PropTableRowProps) {
   return (
     <TR>
-      <PropCell><PropName>{name}</PropName></PropCell>
-      <PropCell><PropType>{type}</PropType></PropCell>
+      <PropCell>
+        <PropName>
+          {name}
+        </PropName>
+      </PropCell>
+      <PropCell>
+        <PropType>
+          {type}
+        </PropType>
+      </PropCell>
       <PropCell>
         <DefaultValue defaultValue={defaultValue} required={required} />
       </PropCell>
       <PropCell>
-        <PropP>{description}</PropP>
+        <PropP>
+          {description}
+        </PropP>
       </PropCell>
     </TR>
   );
@@ -174,7 +186,9 @@ export default function PropTable({ propDoc = {} }: Props) {
             <PropColumnHeader key="prop" width={10}>
               Name
             </PropColumnHeader>
-            <PropColumnHeader key="type" width={15}>Type</PropColumnHeader>
+            <PropColumnHeader key="type" width={15}>
+              Type
+            </PropColumnHeader>
             <PropColumnHeader key="default" width={10}>
               Default
             </PropColumnHeader>

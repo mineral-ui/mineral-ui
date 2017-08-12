@@ -134,14 +134,19 @@ export default function ComponentDoc({
   title
 }: Props) {
   const { description: descriptionDoc, props: propDoc } = doc;
-  const description = typeof descriptionDoc === 'string'
-    ? <P>{descriptionDoc}</P>
-    : descriptionDoc;
+  const description =
+    typeof descriptionDoc === 'string'
+      ? <P>
+          {descriptionDoc}
+        </P>
+      : descriptionDoc;
 
   return (
     <Root className={className} id={slug}>
       <Header>
-        <Title>{title}</Title>
+        <Title>
+          {title}
+        </Title>
         <Link
           href={`https://github.com/mineral-ui/mineral-ui/tree/master/packages/${slug}`}
           aria-label="View on GitHub">
@@ -158,9 +163,13 @@ export default function ComponentDoc({
         {renderPropDoc(propDoc)}
         {renderExamples(examples, slug, propDoc)}
         <H2 id="usage">Usage Guidelines</H2>
-        <p>{design}</p>
+        <p>
+          {design}
+        </p>
         <H3>Behavior</H3>
-        <p>{behavior}</p>
+        <p>
+          {behavior}
+        </p>
       </div>
     </Root>
   );
@@ -173,7 +182,9 @@ function renderExamples(
 ) {
   return (
     examples && [
-      <H3 key={0}>{examples.length === 1 ? 'Example' : 'Examples'}</H3>,
+      <H3 key={0}>
+        {examples.length === 1 ? 'Example' : 'Examples'}
+      </H3>,
       examples.map((example, idx) => {
         return (
           <ComponentDocExample
