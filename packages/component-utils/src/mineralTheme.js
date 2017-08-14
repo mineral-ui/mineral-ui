@@ -15,7 +15,8 @@
  */
 
 /* @flow */
-import { default as shared, color } from './styleVariables';
+import color from './color';
+import styleVariables from './styleVariables';
 
 const themeColor = 'sky';
 
@@ -44,7 +45,7 @@ export default {
    * Only 'type' is required. Irrelevant parts are simply skipped.
    */
 
-  ...shared,
+  ...styleVariables,
   ...primaries,
   ...grays,
 

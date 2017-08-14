@@ -21,6 +21,7 @@ export { default as getNormalizedValue } from './getNormalizedValue';
 export { default as pxToEm } from './pxToEm';
 export { default as ThemeProvider } from './ThemeProvider';
 
+export { default as color } from './color';
 export { default as mineralTheme } from './mineralTheme';
 export { default as styleVariables } from './styleVariables';
 
