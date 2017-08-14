@@ -39,6 +39,7 @@ type Props = {
   className?: string,
   design: MnrlReactNode,
   doc: Object,
+  hidePropDoc?: boolean,
   examples?: Array<Example>,
   slug: string,
   title: string
@@ -100,6 +101,9 @@ const styles = {
     paddingBottom: theme.spacing_single,
     borderBottom: '3px solid transparent',
     cursor: 'pointer'
+  }),
+  propsComment: () => ({
+    fontStyle: 'italic'
   })
 };
 
@@ -113,6 +117,7 @@ const H2 = createStyledComponent('h2', styles.h2);
 const H3 = createStyledComponent('h3', styles.h3);
 const SubNav = createStyledComponent('nav', styles.subnav);
 const NavElement = createStyledComponent(Link, styles.navElement);
+const PropsComment = createStyledComponent('p', styles.propsComment);
 
 function IconGithub() {
   return (
@@ -130,6 +135,7 @@ export default function ComponentDoc({
   design,
   doc,
   examples,
+  hidePropDoc,
   slug,
   title
 }: Props) {
@@ -160,7 +166,7 @@ export default function ComponentDoc({
       </SubNav>
       <div>
         <H2 id="code">Code & Examples</H2>
-        {renderPropDoc(propDoc)}
+        {renderPropDoc(propDoc, hidePropDoc)}
         {renderExamples(examples, slug, propDoc)}
         <H2 id="usage">Usage Guidelines</H2>
         <p>
@@ -180,26 +186,34 @@ function renderExamples(
   slug: string,
   propDoc: Object
 ) {
-  return (
-    examples && [
-      <H3 key={0}>
-        {examples.length === 1 ? 'Example' : 'Examples'}
-      </H3>,
-      examples.map((example, idx) => {
-        return (
+  if (examples) {
+    return (
+      <div>
+        <H3>
+          {examples.length === 1 ? 'Example' : 'Examples'}
+        </H3>
+        {examples.map((example, index) =>
           <ComponentDocExample
-            key={`${slug}:${idx}`}
+            key={`${slug}:${index}`}
             propDoc={propDoc}
             {...example}
           />
-        );
-      })
-    ]
-  );
+        )}
+      </div>
+    );
+  }
 }
 
-function renderPropDoc(propDoc: Object) {
-  return (
-    propDoc && [<H3 key={0}>Props</H3>, <PropTable key={1} propDoc={propDoc} />]
-  );
+function renderPropDoc(propDoc: Object, hidePropDoc?: boolean) {
+  if (!hidePropDoc) {
+    return (
+      <div>
+        <H3>Props</H3>
+        {propDoc && <PropTable propDoc={propDoc} />}
+        <PropsComment>
+          Undocumented properties will be applied to the root element.
+        </PropsComment>
+      </div>
+    );
+  }
 }
