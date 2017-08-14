@@ -45,6 +45,9 @@ const styles = {
     margin: '0',
     fontSize: theme.fontSize_h4
   }),
+  link: {
+    textDecoration: 'none'
+  },
   list: {
     listStyle: 'none',
     paddingLeft: '0'

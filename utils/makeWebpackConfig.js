@@ -111,7 +111,7 @@ function getDevServer({ packagePath }) {
       disableHostCheck: true,
       host: '0.0.0.0',
       historyApiFallback: {
-        index: '/404.html'
+        index: '/'
       }
     };
   }
