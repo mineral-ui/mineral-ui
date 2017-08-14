@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@2.0.0...@mineral-ui/component-utils@3.0.0) (2017-08-14)
+
+
+### Features
+
+* **all:** Update API to Glamorous 4.0 ([df9a3df](https://github.com/mineral-ui/mineral-ui/commit/df9a3df))
+
+
+### BREAKING CHANGES
+
+* **all:** Update API to Glamorous 4.0
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@1.0.0...@mineral-ui/component-utils@2.0.0) (2017-08-10)
 
