@@ -25,6 +25,7 @@ export default {
       'Sample implementations of various methods of styling and style overrides.'
   },
   examples,
+  hidePropDoc: true,
   slug: 'component-utils',
   title: 'ComponentUtils'
 };
