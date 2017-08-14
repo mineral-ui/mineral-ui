@@ -78,6 +78,7 @@ export default function App({ className, demos }: Props) {
             path="/components/:componentId"
             render={route => {
               const componentId = route.match.params.componentId;
+              // $FlowFixMe
               const selectedDemo = siteDemos[componentId];
               return <ComponentDoc {...selectedDemo} />;
             }}
