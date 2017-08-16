@@ -16,7 +16,6 @@
 const webpackMerge = require('webpack-merge');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const makeWebpackConfig = require('../../utils/makeWebpackConfig');
-const path = require('path');
 
 const baseConfig = makeWebpackConfig({
   packagePath: __dirname
@@ -31,10 +30,6 @@ const config = webpackMerge(baseConfig, {
       {
         context: './public',
         from: '**/*'
-      },
-      {
-        from: path.resolve(__dirname, '../../public/_redirects'),
-        to: path.resolve(__dirname, 'dist')
       }
     ])
   ],
