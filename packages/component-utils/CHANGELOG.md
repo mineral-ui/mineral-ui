@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@3.0.0...@mineral-ui/component-utils@3.1.0) (2017-08-17)
+
+
+### Features
+
+* **component-utils:** Add `color` export; update black theme value ([bce883f](https://github.com/mineral-ui/mineral-ui/commit/bce883f))
+* **site:** Document passthrough props behavior ([6c63528](https://github.com/mineral-ui/mineral-ui/commit/6c63528))
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/component-utils@2.0.0...@mineral-ui/component-utils@3.0.0) (2017-08-14)
 

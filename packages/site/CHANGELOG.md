@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@1.0.0...@mineral-ui/site@1.1.0) (2017-08-17)
+
+
+### Features
+
+* **site:** Document passthrough props behavior ([6c63528](https://github.com/mineral-ui/mineral-ui/commit/6c63528))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/mineral-ui/mineral-ui/compare/@mineral-ui/site@0.9.0...@mineral-ui/site@1.0.0) (2017-08-14)
 
