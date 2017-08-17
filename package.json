@@ -22,7 +22,7 @@
     "lint": "npm run eslint",
     "pack-ls": "lerna run pack-ls",
     "release:manual": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
-    "release:semantic": "npm run release:manual -- --conventional-commits && npm run deploy:site:dist",
+    "release:semantic": "npm run release:manual -- --conventional-commits",
     "start": "lerna exec --scope @mineral-ui/site -- npm start",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
