@@ -17,6 +17,7 @@ exports[`Button Button 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -70,13 +71,17 @@ exports[`Button Button 1`] = `
 
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -297,6 +302,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -350,13 +356,17 @@ exports[`Button Buttons with Icons 1`] = `
 
 .glamor-2,
 [data-glamor-2] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -390,6 +400,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -457,6 +468,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -528,6 +540,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -595,6 +608,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -662,6 +676,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -729,6 +744,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 1.5em;
+  min-width: 1.5em;
   padding: 0.1875em;
   vertical-align: middle;
 }
@@ -809,6 +825,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2.5em;
+  min-width: 2.5em;
   padding: 0.4375em;
   vertical-align: middle;
 }
@@ -889,6 +906,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 3.25em;
+  min-width: 3.25em;
   padding: 0.5625em;
   vertical-align: middle;
 }
@@ -977,6 +995,7 @@ exports[`Button Buttons with Icons 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -2040,13 +2059,17 @@ exports[`Button Buttons with Icons 1`] = `
 exports[`Button Circular Buttons 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -2096,6 +2119,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -2163,6 +2187,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -2230,6 +2255,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -2296,6 +2322,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 1.5em;
+  min-width: 1.5em;
   padding: 0.1875em;
   vertical-align: middle;
 }
@@ -2363,6 +2390,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2.5em;
+  min-width: 2.5em;
   padding: 0.4375em;
   vertical-align: middle;
 }
@@ -2430,6 +2458,7 @@ exports[`Button Circular Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 3.25em;
+  min-width: 3.25em;
   padding: 0.5625em;
   vertical-align: middle;
 }
@@ -3010,13 +3039,17 @@ exports[`Button Circular Buttons 1`] = `
 exports[`Button Danger 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -3055,6 +3088,7 @@ exports[`Button Danger 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3122,6 +3156,7 @@ exports[`Button Danger 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3189,6 +3224,7 @@ exports[`Button Danger 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3507,13 +3543,17 @@ exports[`Button Danger 1`] = `
 exports[`Button Disabled 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -3552,6 +3592,7 @@ exports[`Button Disabled 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3605,6 +3646,7 @@ exports[`Button Disabled 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3658,6 +3700,7 @@ exports[`Button Disabled 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -3968,13 +4011,17 @@ exports[`Button Disabled 1`] = `
 exports[`Button Full Width 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -4008,6 +4055,7 @@ exports[`Button Full Width 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
   width: 100%;
@@ -4266,6 +4314,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -4319,13 +4368,17 @@ exports[`Button Icon-only Buttons 1`] = `
 
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -4346,6 +4399,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -4413,6 +4467,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -4484,6 +4539,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 1.5em;
+  min-width: 1.5em;
   padding: 0.1875em;
   vertical-align: middle;
 }
@@ -4551,6 +4607,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2.5em;
+  min-width: 2.5em;
   padding: 0.4375em;
   vertical-align: middle;
 }
@@ -4618,6 +4675,7 @@ exports[`Button Icon-only Buttons 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 3.25em;
+  min-width: 3.25em;
   padding: 0.5625em;
   vertical-align: middle;
 }
@@ -5211,13 +5269,17 @@ exports[`Button Icon-only Buttons 1`] = `
 exports[`Button Minimal 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -5251,6 +5313,7 @@ exports[`Button Minimal 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -5493,13 +5556,17 @@ exports[`Button Minimal 1`] = `
 exports[`Button Primary 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -5533,6 +5600,7 @@ exports[`Button Primary 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -5790,6 +5858,7 @@ exports[`Button RTL Support 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -5843,13 +5912,17 @@ exports[`Button RTL Support 1`] = `
 
 .glamor-2,
 [data-glamor-2] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -6118,6 +6191,7 @@ exports[`Button Sizes 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -6171,13 +6245,17 @@ exports[`Button Sizes 1`] = `
 
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -6216,6 +6294,7 @@ exports[`Button Sizes 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 1.5em;
+  min-width: 1.5em;
   padding: 0.1875em;
   vertical-align: middle;
 }
@@ -6296,6 +6375,7 @@ exports[`Button Sizes 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2.5em;
+  min-width: 2.5em;
   padding: 0.4375em;
   vertical-align: middle;
 }
@@ -6376,6 +6456,7 @@ exports[`Button Sizes 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 3.25em;
+  min-width: 3.25em;
   padding: 0.5625em;
   vertical-align: middle;
 }
@@ -6747,6 +6828,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -6800,13 +6882,17 @@ exports[`Button States 1`] = `
 
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -6840,6 +6926,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -6907,6 +6994,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -6973,6 +7061,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7040,6 +7129,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7107,6 +7197,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7173,6 +7264,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7240,6 +7332,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7307,6 +7400,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7373,6 +7467,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7440,6 +7535,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7507,6 +7603,7 @@ exports[`Button States 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7573,6 +7670,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7626,6 +7724,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7679,6 +7778,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7737,6 +7837,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7790,6 +7891,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -7843,6 +7945,7 @@ exports[`Button States 1`] = `
   cursor: default;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -11160,13 +11263,17 @@ exports[`Button States 1`] = `
 exports[`Button Success 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -11205,6 +11312,7 @@ exports[`Button Success 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -11272,6 +11380,7 @@ exports[`Button Success 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -11339,6 +11448,7 @@ exports[`Button Success 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -11671,6 +11781,7 @@ exports[`Button Truncation 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -11724,13 +11835,17 @@ exports[`Button Truncation 1`] = `
 
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -11953,13 +12068,17 @@ exports[`Button Truncation 1`] = `
 exports[`Button Warning 1`] = `
 .glamor-1,
 [data-glamor-1] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -11998,6 +12117,7 @@ exports[`Button Warning 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -12065,6 +12185,7 @@ exports[`Button Warning 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }
@@ -12132,6 +12253,7 @@ exports[`Button Warning 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
 }

@@ -79,6 +79,7 @@ exports[`Card Arbitrary children 1`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
   width: 100%;
@@ -133,13 +134,17 @@ exports[`Card Arbitrary children 1`] = `
 
 .glamor-3,
 [data-glamor-3] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
@@ -487,6 +492,7 @@ exports[`Card Arbitrary children 2`] = `
   cursor: pointer;
   font-weight: 600;
   height: 2em;
+  min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
   width: 100%;
@@ -541,13 +547,17 @@ exports[`Card Arbitrary children 2`] = `
 
 .glamor-3,
 [data-glamor-3] {
+  align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
+  max-height: 100%;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
 }
