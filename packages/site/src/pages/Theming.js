@@ -16,13 +16,119 @@
 
 /* @flow */
 import React from 'react';
+import { readableColor } from 'polished';
+import {
+  createStyledComponent,
+  mineralTheme
+} from '@mineral-ui/component-utils';
+import Link from '@mineral-ui/link';
+import CodeBlock from '../components/CodeBlock';
 import PageLayout from '../components/PageLayout';
+import { Table, Cell, ColumnHeader, TableRow } from '../components/Table';
+
+const Name = createStyledComponent('span', ({ theme }) => ({
+  fontWeight: theme.fontWeight_semiBold
+}));
+const Value = createStyledComponent('span', ({ color, theme }) => {
+  if (color) {
+    return {
+      backgroundColor: color,
+      borderRadius: theme.borderRadius_1,
+      color: readableColor(color),
+      display: 'inline-block',
+      fontFamily: theme.fontFamily_monospace,
+      padding: `${theme.spacing_half} ${theme.spacing_single}`
+    };
+  } else {
+    return {
+      fontFamily: theme.fontFamily_monospace
+    };
+  }
+});
 
 export default function Theming() {
   return (
     <PageLayout>
       <h1>Theming</h1>
-      <p>Coming soon</p>
+      <p>
+        Theming is a core concept in Mineral UI. To illustrate, consider the
+        signature of createStyledComponent, e.g.:
+      </p>
+      <CodeBlock>
+        {`const MyComponent = createStyledComponent('div', props => ({
+            backgroundColor: props.theme.color_primary
+          }));`}
+      </CodeBlock>
+      <p>
+        The ThemeProvider(s) in your app provides the theme to other Mineral UI
+        and/or Glamorous components within that ThemeProvider. Your app{' '}
+        <Link to="/getting-started">
+          must have a ThemeProvider at its root
+        </Link>{' '}
+        and can optionally nest additional ThemeProviders to apply a custom
+        theme to a section of your app. Nested ThemeProviders shallowly merge
+        their theme with the parent theme.
+      </p>
+      <p>
+        The theme itself (see the default MineralTheme for an example) is a
+        simple shallow object of variables that are shared across components.
+      </p>
+      <p>
+        Each component can also have a “theme”, which is not a file, but rather
+        a set of variables available to override default values. E.g., if
+        Mineral UI’s Button component looked like this:
+      </p>
+      <CodeBlock>
+        {`const Button = createStyledComponent('button', props => ({
+            color: props.theme.Button_color || props.theme.color_primary
+          }));`}
+      </CodeBlock>
+      <p>
+        The themes distributed as part of Mineral UI include a value for
+        color_primary but do not include a value for Button_color. In our
+        component code, we leave the component-level variable, Button_color, as
+        a hook for you to define if you’d like. Component-level theme variables
+        start with the capitalized component name to differentiate from the
+        global variables. When you’d like to override the Mineral UI theme at a
+        component level in your app, you can use createThemedComponent:
+      </p>
+      <CodeBlock>
+        {`const MyButton = createThemedComponent(Button, {
+            Button_color: 'tomato'
+          });`}
+      </CodeBlock>
+      <h2>Theme Variables</h2>
+      <p>
+        Themes in Mineral UI are made of the following variables. The values
+        below come from the default mineralTheme. Themes also provide
+      </p>
+      <Table>
+        <thead>
+          <tr>
+            <ColumnHeader scope="col">Variable</ColumnHeader>
+            <ColumnHeader scope="col">Value</ColumnHeader>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.keys(mineralTheme).map(variable => {
+            return (
+              <TableRow key={variable}>
+                <Cell>
+                  <Name>
+                    {variable}
+                  </Name>
+                </Cell>
+                <Cell>
+                  <Value
+                    color={variable.match(/color/i) && mineralTheme[variable]}>
+                    {mineralTheme[variable]}
+                  </Value>
+                </Cell>
+              </TableRow>
+            );
+          })}
+        </tbody>
+      </Table>
     </PageLayout>
   );
 }
