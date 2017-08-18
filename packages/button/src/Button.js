@@ -160,6 +160,10 @@ const buttonStyles = props => {
     // vertically align correctly without setting the lineHeight equal to the
     // smallest fontSize (or smaller).
     lineHeight: theme.ButtonContent_fontSize_small,
+    // if the user puts in a small icon in a large button
+    // we want to force the button to be round/square
+    // (really just pertinent on icon-only buttons)
+    minWidth: theme[`Button_size_${size}`],
     // Because we use boxSizing: 'border-box', we need to substract the borderWidth
     // from the padding to have the fixed height of Root and Content be correct.
     padding: `${parseFloat(theme[`Button_padding_${size}`]) -
@@ -247,8 +251,10 @@ const contentStyles = props => {
 };
 
 const innerStyles = {
+  alignItems: 'center',
   display: 'inline-flex',
   justifyContent: 'center',
+  maxHeight: '100%',
   width: '100%'
 };
 
