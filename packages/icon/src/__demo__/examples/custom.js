@@ -18,6 +18,7 @@
 import Icon from '../../Icon';
 
 export default {
+  id: 'custom',
   title: 'Custom',
   description: 'You can render a custom icon by supplying an SVG as a child.',
   scope: { Icon },

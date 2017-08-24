@@ -19,6 +19,7 @@ import Button from '../../Button';
 import { IconBackspace } from '@mineral-ui/icon';
 
 export default {
+  id: 'rtl',
   title: 'RTL Support',
   description: '',
   scope: { Button, IconBackspace },

@@ -24,6 +24,7 @@ const Serif = createStyledComponent('p', { fontFamily: 'serif' });
 const Small = createStyledComponent('p', { fontSize: '0.75em' });
 
 export default {
+  id: 'basic',
   title: 'Basic link',
   description: 'Links inherit font size, weight, and family.',
   scope: { Big, Bold, Link, Serif, Small },

@@ -18,6 +18,7 @@
 import IconSentimentSatisfied from '../../IconSentimentSatisfied';
 
 export default {
+  id: 'title',
   title: 'Title',
   description:
     'Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).',

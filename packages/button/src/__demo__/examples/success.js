@@ -25,6 +25,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'success',
   title: 'Success',
   description: 'Use for positive actions, like when creating something.',
   scope: { Button, DemoLayout },

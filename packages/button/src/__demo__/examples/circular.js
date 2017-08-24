@@ -26,6 +26,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'circular',
   title: 'Circular Buttons',
   description:
     'Buttons can be made circular. Such Buttons should not have any text.',

@@ -18,6 +18,7 @@
 import Archetype from '../../Archetype';
 
 export default {
+  id: 'default',
   title: 'Default',
   scope: { Archetype },
   source: `<Archetype />`

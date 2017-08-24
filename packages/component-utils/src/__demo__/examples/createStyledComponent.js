@@ -15,13 +15,43 @@
  */
 
 /* @flow */
+import React from 'react';
+import Link from '@mineral-ui/link';
 import { createStyledComponent } from '../../index';
 import Sample from '../components/Sample';
+import Prose from '../components/Prose';
+import Code from '../components/Code';
 
 export default {
-  title: 'Style override via createStyledComponent',
-  description:
-    'If you need to use completely custom styles (which can still reference the props & theme) on a component.',
+  id: 'create-styled-component',
+  title: <Code>createStyledComponent(element, styles, options)</Code>,
+  description: (
+    <Prose>
+      <p>This is how you apply arbitrary styles to a component.</p>
+      <p>
+        <Code>element</Code> — a React component or a string representation of
+        an HTML element
+      </p>
+      <p>
+        <Code>styles</Code> — an{' '}
+        <Link href="https://github.com/threepointone/glamor/blob/master/docs/howto.md">
+          object of style rules
+        </Link>{' '}
+        or a function that accepts props and context and returns an object of
+        style rules
+      </p>
+      <p>
+        <Code>options</Code> — An object of optional configuration. A mix of
+        Mineral UI and{' '}
+        <Link href="https://glamorous.rocks/api">Glamorous options</Link>. Most
+        common uses are setting a display name on your component,{' '}
+        <Code>{`{displayName: 'MyComponentName'}`}</Code>, declaring which props
+        to forward on to the element,{' '}
+        <Code>{`{forwardProps: [href, customProp]}`}</Code>, and including a
+        style reset <Code>{`{ includeStyleReset: true }`}</Code>.
+      </p>
+    </Prose>
+  ),
   scope: { createStyledComponent, Sample },
   source: `
     () => {

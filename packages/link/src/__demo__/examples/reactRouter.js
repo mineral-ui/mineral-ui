@@ -25,6 +25,7 @@ import {
 } from 'react-router-dom';
 
 export default {
+  id: 'react-router',
   title: 'ReactRouter',
   description: `This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.`,
   scope: { BrowserRouter, Link, ReactRouterLink, Redirect, Route, Switch },

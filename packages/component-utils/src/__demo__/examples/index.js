@@ -15,20 +15,14 @@
  */
 
 /* @flow */
-import componentUtils from './componentUtils';
-import globalTheme from './globalTheme';
-import componentTheme from './componentTheme';
-import nestedGlobal from './nestedGlobal';
-import shallowMerged from './shallowMerged';
-import createThemedComponent from './createThemedComponent';
 import createStyledComponent from './createStyledComponent';
+import createThemedComponent from './createThemedComponent';
+import sample from './sample';
+import themeProvider from './themeProvider';
 
 export default [
-  componentUtils,
-  globalTheme,
-  componentTheme,
-  nestedGlobal,
-  shallowMerged,
+  sample,
+  themeProvider,
   createThemedComponent,
   createStyledComponent
 ];

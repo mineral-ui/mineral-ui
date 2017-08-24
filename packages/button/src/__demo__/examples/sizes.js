@@ -25,6 +25,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'sizes',
   title: 'Sizes',
   scope: { Button, DemoLayout },
   source: `

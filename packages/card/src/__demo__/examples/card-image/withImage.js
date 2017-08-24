@@ -23,6 +23,7 @@ import CardImage from '../../../CardImage';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
+  id: 'with-image',
   title: 'With an image',
   backgroundColor: mineralTheme.color_gray_10,
   description:

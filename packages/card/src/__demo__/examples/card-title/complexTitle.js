@@ -25,6 +25,7 @@ import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
+  id: 'complex-title',
   title: 'Complex title and subtitle',
   backgroundColor: mineralTheme.color_gray_10,
   description:

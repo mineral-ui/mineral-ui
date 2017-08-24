@@ -18,6 +18,7 @@
 import Button from '../../Button';
 
 export default {
+  id: 'minimal',
   title: 'Minimal',
   description: 'Use for less-important actions.',
   scope: { Button },

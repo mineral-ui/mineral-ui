@@ -27,11 +27,12 @@ import Link from '@mineral-ui/link';
 import PropTable from './PropTable';
 
 type Example = {
-  description?: string,
+  description?: MnrlReactNode,
   propValues?: Object,
   scope: Object,
+  id: string,
   source: string,
-  title: string
+  title: MnrlReactNode
 };
 
 type Props = {
@@ -167,7 +168,7 @@ export default function ComponentDoc({
       <div>
         <H2 id="code">Code & Examples</H2>
         {renderPropDoc(propDoc, hidePropDoc)}
-        {renderExamples(examples, slug, propDoc)}
+        {renderExamples(examples, propDoc, slug)}
         <H2 id="usage">Usage Guidelines</H2>
         <p>
           {design}
@@ -183,8 +184,8 @@ export default function ComponentDoc({
 
 function renderExamples(
   examples?: Array<Example>,
-  slug: string,
-  propDoc: Object
+  propDoc: Object,
+  slug: string
 ) {
   if (examples) {
     return (
@@ -194,8 +195,9 @@ function renderExamples(
         </H3>
         {examples.map((example, index) =>
           <ComponentDocExample
-            key={`${slug}:${index}`}
+            key={index}
             propDoc={propDoc}
+            slug={slug}
             {...example}
           />
         )}

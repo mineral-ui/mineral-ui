@@ -17,13 +17,18 @@
 /* @flow */
 import React, { Component } from 'react';
 import dedent from 'dedent';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import {
   createStyledComponent,
   getNormalizedValue
 } from '@mineral-ui/component-utils';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 const styles = {
+  anchor: ({ theme }) => ({
+    color: theme.color_caption,
+    fontWeight: theme.fontWeight_semiBold,
+    visibility: 'hidden'
+  }),
   componentDocExample: ({ theme }) => ({
     '& + &': {
       borderTop: `1px solid ${theme.borderColor}`,
@@ -35,7 +40,13 @@ const styles = {
       theme.spacing_quad,
       theme.fontSize_h4
     )} 0 ${getNormalizedValue(theme.spacing_double, theme.fontSize_h4)} 0`,
-    fontSize: theme.fontSize_h4
+    fontSize: theme.fontSize_h4,
+
+    '&:hover,&:focus': {
+      '& > a': {
+        visibility: 'visible'
+      }
+    }
   }),
   p: ({ theme }) => ({
     lineHeight: theme.lineHeight_prose,
@@ -54,6 +65,7 @@ const styles = {
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
+const Anchor = createStyledComponent('a', styles.anchor);
 const H4 = createStyledComponent('h4', styles.h4);
 const P = createStyledComponent('p', styles.p);
 const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
@@ -66,9 +78,11 @@ type Props = {
   className?: string,
   description?: MnrlReactNode,
   hideSource?: boolean,
+  id: string,
   scope: Object,
+  slug: string,
   source: string,
-  title?: string
+  title?: MnrlReactNode
 };
 
 export default class ComponentDocExample extends Component {
@@ -80,15 +94,17 @@ export default class ComponentDocExample extends Component {
       className,
       description,
       hideSource,
+      id,
       scope,
+      slug,
       source,
       title
     } = this.props;
 
     return (
-      <Root className={className}>
+      <Root className={className} id={id}>
         <H4>
-          {title}
+          {title} <Anchor href={`/components/${slug}#${id}`}>#</Anchor>
         </H4>
         {typeof description === 'string'
           ? <P>

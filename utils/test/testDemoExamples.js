@@ -22,8 +22,9 @@ import { ThemeProvider } from '@mineral-ui/component-utils';
 import { LiveProvider, LivePreview } from 'react-live';
 
 type Example = {
-  title: string,
+  title: MnrlReactNode,
   scope: Object,
+  id: string,
   source: string
 };
 type Examples = Array<Example>;
@@ -37,11 +38,11 @@ export default function testDemoExamples(
 ) {
   if (options.exclude) {
     const exclusions = options.exclude || [];
-    examples = examples.filter(example => !exclusions.includes(example.title));
+    examples = examples.filter(example => !exclusions.includes(example.id));
   }
 
   return examples.map(example => {
-    it(example.title, () => {
+    it(example.id, () => {
       const component = mount(
         <ThemeProvider>
           <LiveProvider

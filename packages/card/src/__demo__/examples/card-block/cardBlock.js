@@ -43,6 +43,7 @@ const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
 }));
 
 export default {
+  id: 'consistent-spacing',
   title: 'Consistent spacing',
   backgroundColor: mineralTheme.color_gray_10,
   description:

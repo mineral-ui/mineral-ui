@@ -15,13 +15,34 @@
  */
 
 /* @flow */
+import React from 'react';
+import Link from '@mineral-ui/link';
 import { createThemedComponent } from '../../index';
 import Sample from '../components/Sample';
+import Prose from '../components/Prose';
+import Code from '../components/Code';
 
 export default {
-  title: 'Local theme var override via createThemedComponent',
-  description:
-    'If you need to overwrite a theme variable, either global or component-specific, for a specific component.',
+  id: 'create-themed-component',
+  title: <Code>createThemedComponent(component, theme)</Code>,
+  description: (
+    <Prose>
+      <p>
+        If you only need to style the themed properties of a component, you can
+        use this helper. It’s effectively the same as wrapping a ThemeProvider
+        around a single component.
+      </p>
+      <p>
+        <Code>component</Code> — a{' '}
+        <Link href="https://github.com/paypal/glamorous">Glamorous</Link>{' '}
+        component
+      </p>
+      <p>
+        <Code>theme</Code> — a shallow object of theme variables or a function
+        that accepts props and context and returns an object of theme variables
+      </p>
+    </Prose>
+  ),
   scope: { createThemedComponent, Sample },
   source: `
     () => {
