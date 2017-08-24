@@ -25,6 +25,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'disabled',
   title: 'Disabled',
   scope: { Button, DemoLayout },
   source: `

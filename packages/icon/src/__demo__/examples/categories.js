@@ -18,6 +18,7 @@
 import CategoryIndex from '../components/CategoryIndex';
 
 export default {
+  id: 'categories',
   title: 'Icons by Category',
   hideSource: true,
   scope: { CategoryIndex },

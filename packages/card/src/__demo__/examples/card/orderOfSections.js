@@ -40,6 +40,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'order',
   title: 'Order of sections',
   backgroundColor: mineralTheme.color_gray_10,
   description: 'The sections of Card are designed to work in any order.',

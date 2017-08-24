@@ -15,18 +15,11 @@
  */
 
 /* @flow */
-import { ThemeProvider } from '../../index';
-import Sample from '../components/Sample';
+import { createStyledComponent } from '../../index';
 
-export default {
-  title: 'Nested global theme var override',
-  description:
-    'When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.',
-  scope: { ThemeProvider, Sample },
-  source: `
-    <ThemeProvider theme={{ color_primary: 'cyan' }}>
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <Sample />
-      </ThemeProvider>
-    </ThemeProvider>`
-};
+export default createStyledComponent('code', ({ theme }) => ({
+  backgroundColor: theme.color_gray_20,
+  borderRadius: theme.borderRadius_1,
+  fontFamily: theme.fontFamily_monospace,
+  padding: theme.spacing_half
+}));

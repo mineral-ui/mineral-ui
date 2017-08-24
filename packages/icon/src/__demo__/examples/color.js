@@ -18,6 +18,7 @@
 import IconSentimentSatisfied from '../../IconSentimentSatisfied';
 
 export default {
+  id: 'color',
   title: 'Color',
   description: 'You can apply a color to any icon.',
   scope: { IconSentimentSatisfied },

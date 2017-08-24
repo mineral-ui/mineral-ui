@@ -18,6 +18,7 @@
 import Button from '../../Button';
 
 export default {
+  id: 'primary',
   title: 'Primary',
   description: 'Use once per page, for the primary action.',
   scope: { Button },

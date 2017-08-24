@@ -15,16 +15,13 @@
  */
 
 /* @flow */
-import { ThemeProvider } from '../../index';
 import Sample from '../components/Sample';
 
 export default {
-  title: 'Component theme var override',
+  id: 'sample-component',
+  title: 'Sample Component',
   description:
-    'This will affect all components inside this ThemeProvider that use this variable, which should only be Sample components due to the namespace.',
-  scope: { ThemeProvider, Sample },
-  source: `
-    <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-      <Sample />
-    </ThemeProvider>`
+    'Just a simple sample component to demonstrate the styling below.',
+  scope: { Sample },
+  source: `<Sample />`
 };

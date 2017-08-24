@@ -18,6 +18,7 @@
 import IconSentimentSatisfied from '../../IconSentimentSatisfied';
 
 export default {
+  id: 'icon',
   title: 'Icon',
   scope: { IconSentimentSatisfied },
   source: `<IconSentimentSatisfied />`

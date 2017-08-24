@@ -22,6 +22,7 @@ import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
+  id: 'basic',
   title: 'Basic card',
   backgroundColor: mineralTheme.color_gray_10,
   description:

@@ -26,6 +26,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'icon-only',
   title: 'Icon-only Buttons',
   description:
     'Buttons that contain only Icons can use either `iconStart` or `iconEnd` props and must have an `aria-label` provided.',

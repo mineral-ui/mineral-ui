@@ -14,6 +14,7 @@ exports[`App renders correctly 1`] = `
           "examples": Array [
             Object {
               "description": "Regular button.",
+              "id": "button",
               "scope": Object {
                 "Button": [Function],
               },
@@ -22,6 +23,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Use once per page, for the primary action.",
+              "id": "primary",
               "scope": Object {
                 "Button": [Function],
               },
@@ -30,6 +32,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Use for less-important actions.",
+              "id": "minimal",
               "scope": Object {
                 "Button": [Function],
               },
@@ -38,6 +41,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Use for destructive or potentially-dangerous actions.",
+              "id": "danger",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -52,6 +56,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Use for positive actions, like when creating something.",
+              "id": "success",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -66,6 +71,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Use for potentially-destructive actions.",
+              "id": "warning",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -79,6 +85,7 @@ exports[`App renders correctly 1`] = `
               "title": "Warning",
             },
             Object {
+              "id": "sizes",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -94,6 +101,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.",
+              "id": "icons",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -127,6 +135,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Buttons that contain only Icons can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.",
+              "id": "icon-only",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -157,6 +166,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Buttons can be made circular. Such Buttons should not have any text.",
+              "id": "circular",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -185,6 +195,7 @@ exports[`App renders correctly 1`] = `
               "title": "Circular Buttons",
             },
             Object {
+              "id": "disabled",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -198,6 +209,7 @@ exports[`App renders correctly 1`] = `
               "title": "Disabled",
             },
             Object {
+              "id": "full-width",
               "scope": Object {
                 "Button": [Function],
               },
@@ -206,6 +218,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Long button text is truncated when necessary",
+              "id": "truncation",
               "scope": Object {
                 "Button": [Function],
                 "FixedWidthLayout": [Function],
@@ -218,6 +231,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "",
+              "id": "rtl",
               "scope": Object {
                 "Button": [Function],
                 "IconBackspace": [Function],
@@ -230,6 +244,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "hideSource": true,
+              "id": "states",
               "scope": Object {
                 "Button": [Function],
                 "DemoLayout": [Function],
@@ -405,6 +420,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.",
+              "id": "basic",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -427,6 +443,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.",
+              "id": "children",
               "scope": Object {
                 "Button": [Function],
                 "Card": [Function],
@@ -448,6 +465,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "If an onClick function is provided, the entire card becomes clickable and keyboard actionable.",
+              "id": "clickable",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -470,6 +488,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "The sections of Card are designed to work in any order.",
+              "id": "order",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -525,6 +544,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).",
+              "id": "consistent-spacing",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -547,6 +567,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.",
+              "id": "children",
               "scope": Object {
                 "Button": [Function],
                 "Card": [Function],
@@ -583,6 +604,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+              "id": "with-image",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -619,6 +641,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "In addition to a title, a Card can display a subtitle.",
+              "id": "subtitle",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -641,6 +664,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "Both the title and subtitle can contain a simple string or any HTML/React elements.",
+              "id": "complex-title",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -688,6 +712,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.",
+              "id": "minor-title",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -712,6 +737,7 @@ exports[`App renders correctly 1`] = `
             Object {
               "backgroundColor": "#f5f7fa",
               "description": "If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.",
+              "id": "meta",
               "scope": Object {
                 "Card": [Function],
                 "CardBlock": [Function],
@@ -745,66 +771,86 @@ exports[`App renders correctly 1`] = `
           "examples": Array [
             Object {
               "description": "Just a simple sample component to demonstrate the styling below.",
+              "id": "sample-component",
               "scope": Object {
                 "Sample": [Function],
               },
               "source": "<Sample />",
-              "title": "Default",
+              "title": "Sample Component",
             },
             Object {
-              "description": "This will affect all components inside this ThemeProvider that use this variable.",
+              "description": <glamorous(div)>
+                <p>
+                          Wrap any number of components in a ThemeProvider to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    theme
+                          </glamorous(code)>
+                           — a shallow object of theme variables and their values (defaults to
+                           
+                          <Link
+                                    href="https://github.com/mineral-ui/mineral-ui/blob/master/packages/component-utils/src/mineralTheme.js"
+                          >
+                                    mineralTheme
+                          </Link>
+                          )
+                </p>
+      </glamorous(div)>,
+              "id": "theme-provider",
               "scope": Object {
+                "DemoLayout": [Function],
                 "Sample": [Function],
                 "ThemeProvider": [Function],
               },
               "source": "
-          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-            <Sample />
-          </ThemeProvider>",
-              "title": "Global theme var override",
+          () => {
+            return (
+              <DemoLayout>
+                {/* This will affect all components inside this ThemeProvider that use this variable. */}
+                <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+                  <Sample />
+                </ThemeProvider>
+      
+                {/* This will affect all components inside this ThemeProvider that use this variable,
+                    which should only be Sample components due to the namespace. */}
+                <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+                	<Sample />
+                </ThemeProvider>
+              </DemoLayout>
+            );
+          }",
+              "title": <glamorous(code)>
+                &lt;ThemeProvider theme&gt;
+      </glamorous(code)>,
             },
             Object {
-              "description": "This will affect all components inside this ThemeProvider that use this variable, which should only be Sample components due to the namespace.",
-              "scope": Object {
-                "Sample": [Function],
-                "ThemeProvider": [Function],
-              },
-              "source": "
-          <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-            <Sample />
-          </ThemeProvider>",
-              "title": "Component theme var override",
-            },
-            Object {
-              "description": "When a nested ThemeProvider provides the same variable, the merge works as expected and the most deeply-nested theme wins.",
-              "scope": Object {
-                "Sample": [Function],
-                "ThemeProvider": [Function],
-              },
-              "source": "
-          <ThemeProvider theme={{ color_primary: 'cyan' }}>
-            <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-              <Sample />
-            </ThemeProvider>
-          </ThemeProvider>",
-              "title": "Nested global theme var override",
-            },
-            Object {
-              "description": "When a nested ThemeProvider provides a different variable, the merge works as expected.",
-              "scope": Object {
-                "Sample": [Function],
-                "ThemeProvider": [Function],
-              },
-              "source": "
-          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-            <ThemeProvider theme={{ color_warning: 'tomato' }}>
-              <Sample />
-            </ThemeProvider>
-          </ThemeProvider>",
-              "title": "Shallow merged global theme var override",
-            },
-            Object {
-              "description": "If you need to overwrite a theme variable, either global or component-specific, for a specific component.",
+              "description": <glamorous(div)>
+                <p>
+                          If you only need to style the themed properties of a component, you can use this helper. It’s effectively the same as wrapping a ThemeProvider around a single component.
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    component
+                          </glamorous(code)>
+                           — a
+                           
+                          <Link
+                                    href="https://github.com/paypal/glamorous"
+                          >
+                                    Glamorous
+                          </Link>
+                           
+                          component
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    theme
+                          </glamorous(code)>
+                           — a shallow object of theme variables or a function that accepts props and context and returns an object of theme variables
+                </p>
+      </glamorous(div)>,
+              "id": "create-themed-component",
               "scope": Object {
                 "Sample": [Function],
                 "createThemedComponent": [Function],
@@ -817,10 +863,64 @@ exports[`App renders correctly 1`] = `
       
             return <MyThemedSample />;
           }",
-              "title": "Local theme var override via createThemedComponent",
+              "title": <glamorous(code)>
+                createThemedComponent(component, theme)
+      </glamorous(code)>,
             },
             Object {
-              "description": "If you need to use completely custom styles (which can still reference the props & theme) on a component.",
+              "description": <glamorous(div)>
+                <p>
+                          This is how you apply arbitrary styles to a component.
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    element
+                          </glamorous(code)>
+                           — a React component or a string representation of an HTML element
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    styles
+                          </glamorous(code)>
+                           — an
+                           
+                          <Link
+                                    href="https://github.com/threepointone/glamor/blob/master/docs/howto.md"
+                          >
+                                    object of style rules
+                          </Link>
+                           
+                          or a function that accepts props and context and returns an object of style rules
+                </p>
+                <p>
+                          <glamorous(code)>
+                                    options
+                          </glamorous(code)>
+                           — An object of optional configuration. A mix of Mineral UI and
+                           
+                          <Link
+                                    href="https://glamorous.rocks/api"
+                          >
+                                    Glamorous options
+                          </Link>
+                          . Most common uses are setting a display name on your component,
+                           
+                          <glamorous(code)>
+                                    {displayName: 'MyComponentName'}
+                          </glamorous(code)>
+                          , declaring which props to forward on to the element,
+                           
+                          <glamorous(code)>
+                                    {forwardProps: [href, customProp]}
+                          </glamorous(code)>
+                          , and including a style reset 
+                          <glamorous(code)>
+                                    { includeStyleReset: true }
+                          </glamorous(code)>
+                          .
+                </p>
+      </glamorous(div)>,
+              "id": "create-styled-component",
               "scope": Object {
                 "Sample": [Function],
                 "createStyledComponent": [Function],
@@ -834,7 +934,9 @@ exports[`App renders correctly 1`] = `
       
             return <MyStyledSample />;
           }",
-              "title": "Style override via createStyledComponent",
+              "title": <glamorous(code)>
+                createStyledComponent(element, styles, options)
+      </glamorous(code)>,
             },
           ],
           "hidePropDoc": true,
@@ -849,6 +951,7 @@ exports[`App renders correctly 1`] = `
           },
           "examples": Array [
             Object {
+              "id": "icon",
               "scope": Object {
                 "IconSentimentSatisfied": [Function],
               },
@@ -857,6 +960,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "You can apply a color to any icon.",
+              "id": "color",
               "scope": Object {
                 "IconSentimentSatisfied": [Function],
               },
@@ -865,6 +969,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Icons are available in three preset sizes, or you can supply your own custom size.",
+              "id": "sizes",
               "scope": Object {
                 "IconSentimentSatisfied": [Function],
               },
@@ -879,6 +984,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).",
+              "id": "title",
               "scope": Object {
                 "IconSentimentSatisfied": [Function],
               },
@@ -887,6 +993,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Some icons will be automatically mirrored for (right-to-left) RTL languages",
+              "id": "rtl",
               "scope": Object {
                 "IconHelp": [Function],
                 "ThemeProvider": [Function],
@@ -899,6 +1006,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "You can render a custom icon by supplying an SVG as a child.",
+              "id": "custom",
               "scope": Object {
                 "Icon": [Function],
               },
@@ -933,6 +1041,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "hideSource": true,
+              "id": "categories",
               "scope": Object {
                 "CategoryIndex": [Function],
               },
@@ -952,6 +1061,7 @@ exports[`App renders correctly 1`] = `
           "examples": Array [
             Object {
               "description": "Links inherit font size, weight, and family.",
+              "id": "basic",
               "scope": Object {
                 "Big": [Function],
                 "Bold": [Function],
@@ -981,6 +1091,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "A Link will render any children.",
+              "id": "children",
               "scope": Object {
                 "Link": [Function],
               },
@@ -992,6 +1103,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "Links can be styled as these variants, to help communicate purpose.",
+              "id": "variants",
               "scope": Object {
                 "DemoLayout": [Function],
                 "Link": [Function],
@@ -1007,6 +1119,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "description": "This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.",
+              "id": "react-router",
               "scope": Object {
                 "BrowserRouter": [Function],
                 "Link": [Function],
@@ -1036,6 +1149,7 @@ exports[`App renders correctly 1`] = `
             },
             Object {
               "hideSource": true,
+              "id": "states",
               "scope": Object {
                 "DemoLayout": [Function],
                 "Link": [Function],

@@ -25,6 +25,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'warning',
   title: 'Warning',
   description: 'Use for potentially-destructive actions.',
   scope: { Button, DemoLayout },

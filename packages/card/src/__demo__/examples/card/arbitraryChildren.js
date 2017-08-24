@@ -36,6 +36,7 @@ const CustomContent = createStyledComponent('div', ({ theme }) => ({
 }));
 
 export default {
+  id: 'children',
   title: 'Arbitrary children',
   backgroundColor: mineralTheme.color_gray_10,
   description:

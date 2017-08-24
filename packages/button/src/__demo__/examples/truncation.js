@@ -25,6 +25,7 @@ const FixedWidthLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'truncation',
   title: 'Truncation',
   description: 'Long button text is truncated when necessary',
   scope: { Button, FixedWidthLayout },

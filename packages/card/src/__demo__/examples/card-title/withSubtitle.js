@@ -22,6 +22,7 @@ import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
+  id: 'subtitle',
   title: 'With a subtitle',
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',

@@ -23,6 +23,7 @@ import CardTitle from '../../../CardTitle';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
+  id: 'minor-title',
   title: 'Minor title',
   backgroundColor: mineralTheme.color_gray_10,
   description:

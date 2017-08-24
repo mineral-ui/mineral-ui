@@ -18,6 +18,7 @@
 import Button from '../../Button';
 
 export default {
+  id: 'button',
   title: 'Button',
   description: 'Regular button.',
   scope: { Button },

@@ -37,5 +37,29 @@ describe('ThemeProvider', () => {
     expect(themedSample).toMatchSnapshot();
   });
 
+  it('merges nested theme variables', () => {
+    const themedSample = mount(
+      <ThemeProvider theme={{ color_primary: 'cyan' }}>
+        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+          <Sample />
+        </ThemeProvider>
+      </ThemeProvider>
+    );
+
+    expect(themedSample).toMatchSnapshot();
+  });
+
+  it('merges themes instead of overriding', () => {
+    const themedSample = mount(
+      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+        <ThemeProvider theme={{ color_warning: 'tomato' }}>
+          <Sample />
+        </ThemeProvider>
+      </ThemeProvider>
+    );
+
+    expect(themedSample).toMatchSnapshot();
+  });
+
   testDemoExamples(examples);
 });

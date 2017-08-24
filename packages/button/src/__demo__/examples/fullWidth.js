@@ -18,6 +18,7 @@
 import Button from '../../Button';
 
 export default {
+  id: 'full-width',
   title: 'Full Width',
   scope: { Button },
   source: `<Button fullWidth>Do Something</Button>`

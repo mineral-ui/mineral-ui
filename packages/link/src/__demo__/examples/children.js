@@ -18,6 +18,7 @@
 import Link from '../../Link';
 
 export default {
+  id: 'children',
   title: 'Children',
   description: 'A Link will render any children.',
   scope: { Link },

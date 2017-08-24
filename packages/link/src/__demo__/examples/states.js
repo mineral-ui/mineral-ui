@@ -26,6 +26,7 @@ const DemoLayout = createStyledComponent('div', {
 });
 
 export default {
+  id: 'states',
   title: 'States',
   hideSource: true,
   scope: { Link, DemoLayout, simulate },

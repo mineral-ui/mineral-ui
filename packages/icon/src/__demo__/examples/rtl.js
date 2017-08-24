@@ -19,6 +19,7 @@ import { ThemeProvider } from '@mineral-ui/component-utils';
 import IconHelp from '../../IconHelp';
 
 export default {
+  id: 'rtl',
   title: 'RTL',
   description:
     'Some icons will be automatically mirrored for (right-to-left) RTL languages',
