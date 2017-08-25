@@ -18,11 +18,10 @@
 import React from 'react';
 import { createStyledComponent } from '../../../utils';
 import Link from '../Link';
-import PageLayout from '../PageLayout';
+import Markdown from '../Markdown';
 import pages from './';
 
 const styles = {
-  nav: {},
   page: {
     listStyle: 'none'
   },
@@ -35,49 +34,48 @@ const styles = {
   })
 };
 
-const Nav = createStyledComponent('nav', styles.nav);
 const Page = createStyledComponent('li', styles.page);
 const PageTitle = createStyledComponent('h2', styles.pageTitle);
 const Section = createStyledComponent('div', styles.section);
 
+function renderSections(page) {
+  page.sections &&
+    page.sections.map((section, i) => {
+      if (!page.path) return null;
+      const path = section.id ? `${page.path}#${section.id}` : section.path;
+      return (
+        <Section key={`section-${i}`}>
+          <h3>
+            <Link to={path}>
+              {section.title}
+            </Link>
+          </h3>
+          <Markdown>
+            {section.desc}
+          </Markdown>
+        </Section>
+      );
+    });
+}
+
 export default function Guidelines() {
   return (
-    <PageLayout>
-      <Nav>
-        {pages.map((page, i) => {
-          if (page.path === '/guidelines') {
-            return (
-              <Page key={`page-${i}`}>
-                <PageTitle>
-                  {page.title}
-                </PageTitle>
-                <p>
-                  {page.desc}
-                </p>
-                {Array.isArray(page.sections) &&
-                  page.sections.map((section, j) => {
-                    if (!page.path) return null;
-                    const path = section.id
-                      ? `${page.path}#${section.id}`
-                      : section.path;
-                    return (
-                      <Section key={`section-${j}`}>
-                        <h3>
-                          <Link to={path}>
-                            {section.title}
-                          </Link>
-                        </h3>
-                        <p>
-                          {section.desc}
-                        </p>
-                      </Section>
-                    );
-                  })}
-              </Page>
-            );
-          }
-        })}
-      </Nav>
-    </PageLayout>
+    <div>
+      {pages.map((page, i) => {
+        if (page.path === '/guidelines') {
+          return (
+            <Page key={`page-${i}`}>
+              <PageTitle>
+                {page.title}
+              </PageTitle>
+              <Markdown>
+                {page.desc}
+              </Markdown>
+              {Array.isArray(page.sections) && renderSections(page)}
+            </Page>
+          );
+        }
+      })}
+    </div>
   );
 }

@@ -17,14 +17,14 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../utils';
-import cardTheme from './cardTheme';
+import { componentTheme as cardComponentTheme } from './Card';
 
 type Props = Object;
 
 const Root = createStyledComponent(
   'img',
   props => {
-    const theme = cardTheme(props);
+    const theme = cardComponentTheme(props.theme);
 
     return {
       display: 'block',

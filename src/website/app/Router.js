@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import ComponentDoc from './ComponentDoc';
+import ComponentDoc from './pages/ComponentDoc';
 import pages from './pages';
 
 type Props = {|

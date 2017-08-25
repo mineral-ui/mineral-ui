@@ -35,5 +35,5 @@ describe('Icon', () => {
     expect(icon.exists()).toEqual(true);
   });
 
-  testDemoExamples(examples, { exclude: ['Icons by Category'] });
+  testDemoExamples(examples, { exclude: ['categories'] });
 });

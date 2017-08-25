@@ -28,6 +28,7 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'states',
   title: 'States',
+  hideFromProd: true,
   hideSource: true,
   scope: { Link, DemoLayout, simulate },
   source: `

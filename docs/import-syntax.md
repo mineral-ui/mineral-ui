@@ -4,8 +4,8 @@
 
 If tree shaking is supported and properly configured in your build chain, you can use the following import syntax.  Care must be taken to ensure that it is working properly, else this syntax will cause the entire library to be included in your bundle.
 
-```
-import { Button, Icon } from ‘mineral-ui';
+```js
+import { Button, Icon } from 'mineral-ui';
 ```
 
 ### Option 2 - CommonJS

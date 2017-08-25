@@ -17,8 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../utils';
-import CardRow from './CardRow';
-import cardTheme from './cardTheme';
+import { componentTheme as cardComponentTheme } from './Card';
 
 type Props = {
   /** Information displayed above the title */
@@ -31,16 +30,38 @@ type Props = {
   subtitle?: MnrlReactNode
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  CardTitle_fontSize: baseTheme.fontSize_h3,
+  CardTitle_fontSize_minor: baseTheme.fontSize_h4,
+  CardTitle_fontWeight: baseTheme.fontWeight_semiBold,
+  CardTitle_fontWeight_minor: baseTheme.fontWeight_bold,
+  CardTitle_marginTop: baseTheme.spacing_single,
+
+  CardSubtitle_color: baseTheme.color_gray_80,
+  CardSubtitle_fontSize: baseTheme.fontSize_h5,
+  CardSubtitle_fontWeight: baseTheme.fontWeight_semiBold,
+  CardSubtitle_marginTop: baseTheme.spacing_single,
+
+  ...baseTheme
+});
+
 const styles = {
   root: props => {
-    const theme = cardTheme(props);
+    const theme = {
+      ...componentTheme(props.theme),
+      ...cardComponentTheme(props.theme)
+    };
 
     return {
+      marginBottom: theme.CardRow_margin,
+      marginTop: theme.CardRow_margin,
+      paddingLeft: theme.CardRow_padding,
+      paddingRight: theme.CardRow_padding,
       paddingTop: !props.minor && theme.CardTitle_marginTop
     };
   },
   meta: props => {
-    const theme = cardTheme(props);
+    const theme = componentTheme(props.theme);
 
     return {
       margin: `0 0 ${getNormalizedValue(
@@ -50,7 +71,7 @@ const styles = {
     };
   },
   subtitle: props => {
-    const theme = cardTheme(props);
+    const theme = componentTheme(props.theme);
 
     return {
       color: theme.CardSubtitle_color,
@@ -63,7 +84,7 @@ const styles = {
     };
   },
   title: props => {
-    const theme = cardTheme(props);
+    const theme = componentTheme(props.theme);
 
     return {
       fontSize: props.minor
@@ -77,7 +98,7 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent(CardRow, styles.root, {
+const Root = createStyledComponent('div', styles.root, {
   displayName: 'CardTitle'
 });
 const Subtitle = createStyledComponent('h4', styles.subtitle);

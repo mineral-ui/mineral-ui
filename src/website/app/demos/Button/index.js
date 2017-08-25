@@ -15,15 +15,15 @@
  */
 
 /* @flow */
+import { componentTheme } from '../../../../Button/Button';
 import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../../../../Button/Button');
 
 export default {
-  behavior: 'behavior dummy text for the Button component',
-  design: 'Lofty design theory about Button',
   doc,
   examples,
   slug: 'button',
+  componentTheme,
   title: 'Button'
 };

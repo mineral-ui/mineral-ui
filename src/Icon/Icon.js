@@ -31,14 +31,16 @@ type Props = {
   title?: string
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  Icon_fill: baseTheme.color_gray_60,
+  Icon_size_small: pxToEm(12),
+  Icon_size_medium: pxToEm(16),
+  Icon_size_large: pxToEm(20),
+  ...baseTheme
+});
+
 const iconStyles = ({ color, rtl, size, theme: baseTheme }) => {
-  const theme = {
-    Icon_fill: baseTheme.color_gray_60,
-    Icon_size_small: pxToEm(12),
-    Icon_size_medium: pxToEm(16),
-    Icon_size_large: pxToEm(20),
-    ...baseTheme
-  };
+  let theme = componentTheme(baseTheme);
 
   return {
     fill: color || theme.Icon_fill,

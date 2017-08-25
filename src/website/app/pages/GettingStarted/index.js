@@ -15,27 +15,16 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import React from 'react';
+import Callout from '../../Callout';
+import Markdown from '../../Markdown';
+// $FlowFixMe
+import content from './gettingStarted.md';
 
-export default createStyledComponent(
-  'figure',
-  ({ theme }) => ({
-    margin: 0,
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing_half,
-    width: '18em',
-
-    '&:focus': {
-      outline: '1px dotted currentColor'
-    },
-
-    '& > [role="icon"]': {
-      marginRight: theme.spacing_half
-    }
-  }),
-  {
-    displayName: 'Figure',
-    includeStyleReset: true
-  }
-);
+export default function GettingStarted() {
+  return (
+    <Markdown scope={{ Callout }}>
+      {content}
+    </Markdown>
+  );
+}

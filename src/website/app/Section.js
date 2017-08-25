@@ -15,27 +15,8 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../utils';
 
-export default createStyledComponent(
-  'figure',
-  ({ theme }) => ({
-    margin: 0,
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing_half,
-    width: '18em',
-
-    '&:focus': {
-      outline: '1px dotted currentColor'
-    },
-
-    '& > [role="icon"]': {
-      marginRight: theme.spacing_half
-    }
-  }),
-  {
-    displayName: 'Figure',
-    includeStyleReset: true
-  }
-);
+export default createStyledComponent('section', ({ theme }) => ({
+  margin: `${4 * parseFloat(theme.spacing_quad)}em 0`
+}));

@@ -24,9 +24,14 @@ type Props = {|
 |};
 
 const Root = createStyledComponent('div', ({ theme }) => ({
+  borderTop: `2px solid ${theme.borderColor}`,
   color: theme.color_caption,
   fontSize: theme.fontSize_mouse,
-  margin: getNormalizedValue(theme.spacing_quad, theme.fontSize_mouse),
+  marginTop: getNormalizedValue(
+    `${parseFloat(theme.spacing_quad) * 2}em`,
+    theme.fontSize_mouse
+  ),
+  paddingTop: getNormalizedValue(theme.spacing_quad, theme.fontSize_mouse),
 
   '@media(min-width: 32em)': {
     display: 'flex',

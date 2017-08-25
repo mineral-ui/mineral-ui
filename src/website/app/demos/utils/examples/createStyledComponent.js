@@ -16,42 +16,31 @@
 
 /* @flow */
 import React from 'react';
-import Link from '../../../../../Link';
 import { createStyledComponent } from '../../../../../utils';
 import Sample from '../components/Sample';
-import Prose from '../components/Prose';
 import Code from '../components/Code';
 
 export default {
   id: 'create-styled-component',
   title: <Code>createStyledComponent(element, styles, options)</Code>,
-  description: (
-    <Prose>
-      <p>This is how you apply arbitrary styles to a component.</p>
-      <p>
-        <Code>element</Code> — a React component or a string representation of
-        an HTML element
-      </p>
-      <p>
-        <Code>styles</Code> — an{' '}
-        <Link href="https://github.com/threepointone/glamor/blob/master/docs/howto.md">
-          object of style rules
-        </Link>{' '}
-        or a function that accepts props and context and returns an object of
-        style rules
-      </p>
-      <p>
-        <Code>options</Code> — An object of optional configuration. A mix of
-        Mineral UI and{' '}
-        <Link href="https://glamorous.rocks/api">Glamorous options</Link>. Most
-        common uses are setting a display name on your component,{' '}
-        <Code>{`{displayName: 'MyComponentName'}`}</Code>, declaring which props
-        to forward on to the element,{' '}
-        <Code>{`{forwardProps: [href, customProp]}`}</Code>, and including a
-        style reset <Code>{`{ includeStyleReset: true }`}</Code>.
-      </p>
-    </Prose>
-  ),
+  description: `
+This is how you apply arbitrary styles to a component.
+
+\`element\` — a React component or a string representation of an HTML
+element
+
+\`styles\` — an
+[object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md)
+or a function that accepts props and context and returns an object of style
+rules
+
+\`options\` — An object of optional configuration. A mix of Mineral UI and
+[Glamorous options](https://glamorous.rocks/api). Most common uses are
+setting a display name on your component,
+\`{ displayName: 'MyComponentName' }\`, declaring which props to forward
+on to the element, \`{ forwardProps: [href, customProp] }\`, and including
+a style reset \`{ includeStyleReset: true }\`.
+  `,
   scope: { createStyledComponent, Sample },
   source: `
     () => {

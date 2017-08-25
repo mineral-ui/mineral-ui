@@ -28,7 +28,7 @@ type Example = {
 };
 type Examples = Array<Example>;
 type Options = {
-  exclude?: Array<string> // Example title
+  exclude?: Array<string> // Example id
 };
 
 export default function testDemoExamples(

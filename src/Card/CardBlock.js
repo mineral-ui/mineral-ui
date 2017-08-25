@@ -17,14 +17,24 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../utils';
-import cardTheme from './cardTheme';
+import { componentTheme as cardComponentTheme } from './Card';
 
 type Props = Object;
+
+export const componentTheme = (baseTheme: Object) => ({
+  CardBlock_fontSize: baseTheme.fontSize_prose,
+  CardBlock_lineHeight: baseTheme.lineHeight_prose,
+
+  ...baseTheme
+});
 
 const Root = createStyledComponent(
   'div',
   props => {
-    const theme = cardTheme(props);
+    const theme = {
+      ...componentTheme(props.theme),
+      ...cardComponentTheme(props.theme)
+    };
 
     // prettier-ignore
     return {

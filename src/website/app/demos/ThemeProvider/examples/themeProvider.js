@@ -15,12 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '../../../../../utils';
 import ThemeProvider from '../../../../../ThemeProvider';
 // TODO: Extract shared components to common location
 import Sample from '../../utils/components/Sample';
-import Prose from '../../utils/components/Prose';
 
 const DemoLayout = createStyledComponent('div', {
   '& > *': {
@@ -31,15 +29,7 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'theme-provider',
   title: 'ThemeProvider',
-  description: (
-    <Prose>
-      <p>
-        Wrap any number of components in a ThemeProvider to have those
-        components reference the specified theme. That theme will be shallowly
-        merged with the parent theme.
-      </p>
-    </Prose>
-  ),
+  description: `Wrap any number of components in a \`ThemeProvider\` to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.`,
   scope: { DemoLayout, ThemeProvider, Sample },
   source: `
     () => {

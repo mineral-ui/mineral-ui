@@ -35,5 +35,5 @@ describe('Link', () => {
     expect(link.exists()).toEqual(true);
   });
 
-  testDemoExamples(examples, { exclude: ['ReactRouter'] });
+  testDemoExamples(examples, { exclude: ['react-router'] });
 });

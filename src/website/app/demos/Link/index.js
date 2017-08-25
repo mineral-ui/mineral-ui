@@ -15,13 +15,13 @@
  */
 
 /* @flow */
+import { componentTheme } from '../../../../Link/Link';
 import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../../../../Link/Link');
 
 export default {
-  behavior: 'behavior dummy text for the link component',
-  design: 'design theory about the link component',
+  componentTheme,
   doc,
   examples,
   slug: 'link',
