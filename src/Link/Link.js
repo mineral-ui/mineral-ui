@@ -29,16 +29,18 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning' // Should allow string | React class
 };
 
-const linkStyles = ({ variant, theme: baseTheme }) => {
-  let theme = {
-    Link_borderColor_focus: baseTheme.borderColor_focus,
-    Link_color: baseTheme.color_text_primary,
-    Link_color_hover: baseTheme.color_text_primary_hover,
-    Link_color_focus: baseTheme.color_text_primary_focus,
-    Link_color_active: baseTheme.color_text_primary_active,
+export const componentTheme = (baseTheme: Object) => ({
+  Link_borderColor_focus: baseTheme.borderColor_focus,
+  Link_color: baseTheme.color_text_primary,
+  Link_color_active: baseTheme.color_text_primary_active,
+  Link_color_hover: baseTheme.color_text_primary_hover,
+  Link_color_focus: baseTheme.color_text_primary_focus,
 
-    ...baseTheme
-  };
+  ...baseTheme
+});
+
+const linkStyles = ({ variant, theme: baseTheme }) => {
+  let theme = componentTheme(baseTheme);
 
   if (variant !== 'regular') {
     // prettier-ignore

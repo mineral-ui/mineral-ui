@@ -23,7 +23,8 @@ module.exports = {
     '/website/'
   ],
   moduleNameMapper: {
-    '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js'
+    '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js',
+    '.md$': '<rootDir>/utils/emptyObject.js'
   },
   setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
   snapshotSerializers: ['enzyme-to-json/serializer']

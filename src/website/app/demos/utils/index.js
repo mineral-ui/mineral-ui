@@ -18,8 +18,6 @@
 import examples from './examples';
 
 export default {
-  behavior: 'some cool behavior info',
-  design: 'Lofty design theory about the utils',
   doc: {
     description: 'Shared utilities'
   },

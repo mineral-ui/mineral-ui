@@ -18,7 +18,20 @@
 import React, { Component } from 'react';
 import dedent from 'dedent';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { createStyledComponent } from '../../utils';
+import Heading from './Heading';
+import Markdown from './Markdown';
+
+type Props = {
+  backgroundColor?: string,
+  className?: string,
+  description?: MnrlReactNode,
+  hideSource?: boolean,
+  id: string,
+  scope: Object,
+  source: string,
+  title?: MnrlReactNode
+};
 
 const styles = {
   anchor: ({ theme }) => ({
@@ -32,21 +45,7 @@ const styles = {
       marginTop: theme.spacing_quad
     }
   }),
-  h4: ({ theme }) => ({
-    margin: `${getNormalizedValue(
-      theme.spacing_quad,
-      theme.fontSize_h4
-    )} 0 ${getNormalizedValue(theme.spacing_double, theme.fontSize_h4)} 0`,
-    fontSize: theme.fontSize_h4,
-
-    '&:hover,&:focus': {
-      '& > a': {
-        visibility: 'visible'
-      }
-    }
-  }),
-  p: ({ theme }) => ({
-    lineHeight: theme.lineHeight_prose,
+  description: ({ theme }) => ({
     margin: `0 0 ${theme.spacing_double}`
   }),
   livePreview: ({ backgroundColor, theme }) => ({
@@ -62,25 +61,11 @@ const styles = {
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
-const Anchor = createStyledComponent('a', styles.anchor);
-const H4 = createStyledComponent('h4', styles.h4);
-const P = createStyledComponent('p', styles.p);
+const Description = createStyledComponent(Markdown, styles.description);
 const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
   rootEl: 'div'
 });
 const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
-
-type Props = {
-  backgroundColor?: string,
-  className?: string,
-  description?: MnrlReactNode,
-  hideSource?: boolean,
-  id: string,
-  scope: Object,
-  slug: string,
-  source: string,
-  title?: MnrlReactNode
-};
 
 export default class ComponentDocExample extends Component {
   props: Props;
@@ -93,21 +78,30 @@ export default class ComponentDocExample extends Component {
       hideSource,
       id,
       scope,
-      slug,
       source,
       title
     } = this.props;
 
+    const fake = () => {
+      const texts = [
+        'Text to explain what’s special about this example.',
+        'Slightly longer text to explain what’s so special about this particular example.',
+        'Text to explain what’s special about this example. Text to explain what’s special about this example. Text to explain what’s special about this example.'
+      ];
+      return texts[Math.floor(Math.random() * texts.length)];
+    };
+
+    // $FlowFixMe
+    const fakeDescription = `${description || ''} ${fake()}`;
+
     return (
       <Root className={className} id={id}>
-        <H4>
-          {title} <Anchor href={`/components/${slug}#${id}`}>#</Anchor>
-        </H4>
-        {typeof description === 'string'
-          ? <P>
-              {description}
-            </P>
-          : description}
+        <Heading level={3} id={id}>
+          {title}
+        </Heading>
+        <Description>
+          {fakeDescription}
+        </Description>
         <LiveProvider
           code={dedent(source)}
           scope={scope}

@@ -16,28 +16,28 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../utils';
-import Header from './Header';
+import { createStyledComponent } from '../../../../utils';
+import Heading from '../../Heading';
+import PropTable from '../../PropTable';
+import Section from '../../Section';
 
-type Props = {
-  children: MnrlReactNode
-};
+type Props = {|
+  propDoc: Object,
+  title: string
+|};
 
-const Content = createStyledComponent('section', ({ theme }) => ({
-  lineHeight: theme.lineHeight_prose,
-  minHeight: '100vh',
-  overflow: 'hidden',
-  padding: `${parseFloat(theme.spacing_quad) * 2}em`,
-  width: '100%'
-}));
+const PropsComment = createStyledComponent('p', {
+  fontStyle: 'italic'
+});
 
-export default function PageLayout({ children }: Props) {
+export default function DocProps({ propDoc, title }: Props) {
   return (
-    <div>
-      <Header currentPath={location.pathname} />
-      <Content>
-        {children}
-      </Content>
-    </div>
+    <Section>
+      <Heading level={2} id="props">{`${title} Props`}</Heading>
+      {propDoc && <PropTable propDoc={propDoc} />}
+      <PropsComment>
+        Undocumented properties will be applied to the root element.
+      </PropsComment>
+    </Section>
   );
 }

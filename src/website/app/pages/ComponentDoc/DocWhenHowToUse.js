@@ -15,27 +15,24 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import React from 'react';
+import Heading from '../../Heading';
+import Markdown from '../../Markdown';
+import Section from '../../Section';
 
-export default createStyledComponent(
-  'figure',
-  ({ theme }) => ({
-    margin: 0,
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing_half,
-    width: '18em',
+type Props = {|
+  content: string
+|};
 
-    '&:focus': {
-      outline: '1px dotted currentColor'
-    },
-
-    '& > [role="icon"]': {
-      marginRight: theme.spacing_half
-    }
-  }),
-  {
-    displayName: 'Figure',
-    includeStyleReset: true
-  }
-);
+export default function DocWhenHowToUse({ content }: Props) {
+  return (
+    <Section>
+      <Heading level={2} id="when-how-to-use">
+        When/How to Use
+      </Heading>
+      <Markdown>
+        {content}
+      </Markdown>
+    </Section>
+  );
+}

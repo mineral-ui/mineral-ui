@@ -15,6 +15,9 @@
  */
 
 /* @flow */
+import { componentTheme as cardComponentTheme } from '../../../../Card/Card';
+import { componentTheme as cardBlockComponentTheme } from '../../../../Card/CardBlock';
+import { componentTheme as cardTitleComponentTheme } from '../../../../Card/CardTitle';
 import cardExamples from './examples/card';
 import cardBlockExamples from './examples/card-block';
 import cardImageExamples from './examples/card-image';
@@ -27,16 +30,14 @@ const cardTitleDoc = require('!!react-docgen-loader!../../../../Card/CardTitle')
 
 export default [
   {
-    behavior: 'behavior dummy text for the card component',
-    design: 'design theory about the card component',
+    componentTheme: cardComponentTheme,
     doc: cardDoc,
     examples: cardExamples,
     slug: 'card',
     title: 'Card'
   },
   {
-    behavior: 'behavior dummy text for the card block component',
-    design: 'design theory about the card block component',
+    componentTheme: cardBlockComponentTheme,
     doc: cardBlockDoc,
     examples: cardBlockExamples,
     slug: 'card-block',
@@ -44,8 +45,6 @@ export default [
     title: 'CardBlock'
   },
   {
-    behavior: 'behavior dummy text for the card image component',
-    design: 'design theory about the card image component',
     doc: cardImageDoc,
     examples: cardImageExamples,
     slug: 'card-image',
@@ -53,8 +52,7 @@ export default [
     title: 'CardImage'
   },
   {
-    behavior: 'behavior dummy text for the card title component',
-    design: 'design theory about the card title component',
+    componentTheme: cardTitleComponentTheme,
     doc: cardTitleDoc,
     examples: cardTitleExamples,
     slug: 'card-title',

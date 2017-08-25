@@ -34,7 +34,7 @@ export default function {{componentName}}() {
       <FigContainer>
       {{#components}}
         <Figure tabIndex={0}>
-          <{{componentName}} />
+          <{{componentName}} size="32"/>
           <FigCaption>
             {{componentName}}
           </FigCaption>

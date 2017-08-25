@@ -17,8 +17,8 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../utils';
+import ComponentDoc from './pages/ComponentDoc';
 import createKeyMap from './utils/createKeyMap';
-import ComponentDoc from './ComponentDoc';
 import Footer from './Footer';
 import _Nav from './Nav';
 import Router from './Router';
@@ -49,9 +49,16 @@ const styles = {
       width: `${16 * parseFloat(theme.spacing_double)}em`
     }
   }),
-  main: {
-    width: '100%'
-  }
+  main: ({ theme }) => ({
+    padding: theme.spacing_double,
+    width: '100%',
+
+    '@media(min-width: 45em)': {
+      padding: `${parseFloat(theme.spacing_quad) * 2}em ${parseFloat(
+        theme.spacing_quad
+      ) * 4}em ${theme.spacing_quad}`
+    }
+  })
 };
 
 const Root = createStyledComponent('div', styles.app, {

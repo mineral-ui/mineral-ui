@@ -46,7 +46,7 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
-const buttonTheme = ({ size, theme: baseTheme }) => ({
+export const componentTheme = (baseTheme: Object) => ({
   Button_backgroundColor: baseTheme.color_gray_20,
   Button_backgroundColor_active: baseTheme.color_gray_30,
   Button_backgroundColor_focus: baseTheme.color_gray_20,
@@ -70,7 +70,10 @@ const buttonTheme = ({ size, theme: baseTheme }) => ({
   Button_padding_medium: pxToEm(6),
   Button_padding_large: pxToEm(8),
   Button_padding_jumbo: pxToEm(10),
-  [`Button_size_${size}`]: baseTheme[`size_${size}`],
+  Button_size_small: baseTheme.size_small,
+  Button_size_medium: baseTheme.size_medium,
+  Button_size_large: baseTheme.size_large,
+  Button_size_jumbo: baseTheme.size_jumbo,
 
   ButtonContent_fontSize: baseTheme.fontSize_ui,
   ButtonContent_fontSize_small: pxToEm(12),
@@ -92,7 +95,7 @@ const buttonTheme = ({ size, theme: baseTheme }) => ({
 });
 
 const buttonStyles = props => {
-  let theme = buttonTheme(props);
+  let theme = componentTheme(props.theme);
   const {
     circular,
     disabled,
@@ -222,7 +225,7 @@ const buttonStyles = props => {
 };
 
 const contentStyles = props => {
-  const theme = buttonTheme(props);
+  const theme = componentTheme(props.theme);
   const { size } = props;
 
   const fontSize =

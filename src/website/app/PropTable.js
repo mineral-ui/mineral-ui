@@ -17,18 +17,21 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../utils';
+import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 
 const styles = {
   codeValue: ({ theme }) => ({
     fontFamily: theme.fontFamily_monospace
   }),
-  propP: {
-    margin: 0
-  },
   propName: ({ theme }) => ({
     fontWeight: theme.fontWeight_semiBold
   }),
+  propP: {
+    '& p': {
+      margin: 0
+    }
+  },
   propRequired: ({ theme }) => ({
     backgroundColor: theme.backgroundColor_danger,
     borderRadius: theme.borderRadius_1,
@@ -48,13 +51,14 @@ const styles = {
     width: '100%'
   }),
   root: ({ theme }) => ({
-    margin: `${theme.spacing_quad} 0 0 0`
+    margin: `${theme.spacing_quad} 0 0 0`,
+    overflowX: 'auto'
   })
 };
 
 const CodeValue = createStyledComponent('span', styles.codeValue);
 const PropName = createStyledComponent('span', styles.propName);
-const PropP = createStyledComponent('p', styles.propP);
+const PropP = createStyledComponent(Markdown, styles.propP);
 const PropRequired = createStyledComponent('span', styles.propRequired);
 const PropType = createStyledComponent('span', styles.propType);
 const Root = createStyledComponent('div', styles.root);

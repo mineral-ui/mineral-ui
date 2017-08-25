@@ -20,8 +20,6 @@ import examples from './examples';
 const doc = require('!!react-docgen-loader!../../../../ThemeProvider/ThemeProvider');
 
 export default {
-  behavior: 'some cool behavior info',
-  design: 'Lofty design theory about ThemeProvider',
   doc,
   examples,
   slug: 'theme-provider',

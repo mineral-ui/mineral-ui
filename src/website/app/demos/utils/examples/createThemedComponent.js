@@ -16,33 +16,24 @@
 
 /* @flow */
 import React from 'react';
-import Link from '../../../../../Link';
 import { createThemedComponent } from '../../../../../utils';
 import Sample from '../components/Sample';
-import Prose from '../components/Prose';
 import Code from '../components/Code';
 
 export default {
   id: 'create-themed-component',
   title: <Code>createThemedComponent(component, theme)</Code>,
-  description: (
-    <Prose>
-      <p>
-        If you only need to style the themed properties of a component, you can
-        use this helper. It’s effectively the same as wrapping a ThemeProvider
-        around a single component.
-      </p>
-      <p>
-        <Code>component</Code> — a{' '}
-        <Link href="https://github.com/paypal/glamorous">Glamorous</Link>{' '}
-        component
-      </p>
-      <p>
-        <Code>theme</Code> — a shallow object of theme variables or a function
-        that accepts props and context and returns an object of theme variables
-      </p>
-    </Prose>
-  ),
+  description: `
+If you only need to style the themed properties of a component, you can use
+this helper. It’s effectively the same as wrapping a ThemeProvider around a
+single component.
+
+\`component\` — a [Glamorous](https://github.com/paypal/glamorous")
+component
+
+\`theme\` — a shallow object of theme variables or a function that accepts
+props and context and returns an object of theme variables
+  `,
   scope: { createThemedComponent, Sample },
   source: `
     () => {

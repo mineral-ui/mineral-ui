@@ -16,31 +16,30 @@
 
 /* @flow */
 import React from 'react';
-import dedent from 'dedent';
-import { createStyledComponent } from '../../utils';
-import prism from './utils/prism';
+import { mineralTheme } from '../../../../utils';
+import Markdown from '../../Markdown';
+import VariableTable from '../../VariableTable';
+// $FlowFixMe
+import content from './theming.md';
 
-type Props = {|
-  children: string,
-  language?: string
-|};
+const REGEX_IS_COLOR = /color|fill/i;
 
-const Pre = createStyledComponent('pre', ({ theme }) => ({
-  fontSize: theme.fontSize_ui,
-  maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
-  overflow: 'auto'
-}));
+const getColor = (theme, variable) =>
+  REGEX_IS_COLOR.test(variable) && theme[variable];
 
-export default function CodeBlock({ children, language }: Props) {
+const getValue = (theme, variable) => theme[variable];
+
+export default function Theming() {
   return (
     <div>
-      {language &&
-        <em>
-          {language}
-        </em>}
-      <Pre className="prism-code">
-        <code dangerouslySetInnerHTML={{ __html: prism(dedent(children)) }} />
-      </Pre>
+      <Markdown>
+        {content}
+      </Markdown>
+      <VariableTable
+        theme={mineralTheme}
+        value={getValue}
+        valueColor={getColor}
+      />
     </div>
   );
 }

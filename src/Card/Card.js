@@ -17,19 +17,31 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../utils';
-import cardTheme from './cardTheme';
 
 type Props = {
-  /** Content of the card. Can be anything, but see CardBlock, CardImage, and CardTitle. */
+  /** Content of the card. Can be anything, but see [CardBlock](./card-block), [CardImage](./card-image), and [CardTitle](./card-title). */
   children: MnrlReactNode,
   /** Called with the click event */
   onClick?: (event: Object) => void
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  Card_backgroundColor: baseTheme.color_white,
+  Card_borderRadius: baseTheme.borderRadius_1,
+  Card_boxShadow: baseTheme.shadow_1,
+  Card_boxShadow_focus: `0 0 0 2px ${baseTheme.color_theme_100}, ${baseTheme.shadow_1}`,
+  Card_paddingBottom: baseTheme.spacing_double,
+
+  CardRow_margin: baseTheme.spacing_double,
+  CardRow_padding: baseTheme.spacing_triple,
+
+  ...baseTheme
+});
+
 const Root = createStyledComponent(
   'div',
   props => {
-    const theme = cardTheme(props);
+    const theme = componentTheme(props.theme);
 
     return {
       backgroundColor: theme.Card_backgroundColor,

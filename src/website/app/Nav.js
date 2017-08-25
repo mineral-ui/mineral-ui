@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { createStyledComponent } from '../../utils';
 import Link from './Link';
 import pages from './pages';
 
@@ -26,22 +26,38 @@ type Props = {|
 |};
 
 const styles = {
-  nav: ({ theme }) => ({
-    padding: theme.spacing_double,
-    backgroundColor: theme.slate_10
-  }),
-  title: ({ theme }) => ({
-    borderBottom: `1px solid ${theme.borderColor}`,
-    fontSize: theme.fontSize_h3,
-    margin: `0 0 ${getNormalizedValue(
-      theme.spacing_double,
-      theme.fontSize_h3
-    )}`,
-    paddingBottom: getNormalizedValue(theme.spacing_double, theme.fontSize_h3)
-  }),
   heading: ({ theme }) => ({
     margin: '0',
     fontSize: theme.fontSize_h4
+  }),
+  logo: ({ theme }) => ({
+    alignItems: 'center',
+    borderBottom: `1px solid ${theme.borderColor}`,
+    display: 'flex',
+    height: 50,
+    margin: `0 0 ${theme.spacing_double}`,
+    paddingBottom: theme.spacing_double,
+    textDecoration: 'none',
+
+    '&:hover,&:focus': {
+      textDecoration: 'none'
+    },
+
+    '& > :first-child': {
+      display: 'block',
+      marginRight: 10,
+      borderRadius: 20,
+      width: 40,
+      height: 40,
+      backgroundColor: theme.color_white,
+      color: 'orange',
+      textAlign: 'center',
+      fontSize: '2em'
+    },
+    '& > :last-child': {
+      fontSize: theme.fontSize_h4,
+      fontWeight: theme.fontWeight_bold
+    }
   }),
   list: {
     listStyle: 'none',
@@ -53,6 +69,10 @@ const styles = {
     '& + li': {
       marginTop: theme.spacing_single
     }
+  }),
+  nav: ({ theme }) => ({
+    padding: theme.spacing_double,
+    backgroundColor: theme.slate_10
   }),
   subsection: ({ theme }) => ({
     marginTop: theme.spacing_single,
@@ -66,7 +86,7 @@ const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 const SubSection = createStyledComponent('ul', styles.subsection);
-const Title = createStyledComponent('h1', styles.title);
+const Logo = createStyledComponent(Link, styles.logo);
 
 export default function Nav({ className, demos }: Props) {
   const demoLinks = Object.keys(demos).map(slug => {
@@ -108,7 +128,10 @@ export default function Nav({ className, demos }: Props) {
 
   return (
     <Root className={className}>
-      <Title>Mineral UI</Title>
+      <Logo to="/">
+        <span>M</span>
+        <h1>Mineral UI</h1>
+      </Logo>
       <List>
         {pageLinks}
       </List>

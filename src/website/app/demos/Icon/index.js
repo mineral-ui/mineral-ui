@@ -15,13 +15,13 @@
  */
 
 /* @flow */
+import { componentTheme } from '../../../../Icon/Icon';
 import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../../../../Icon/Icon');
 
 export default {
-  behavior: 'behavior dummy text for the Icon component',
-  design: 'Lofty design theory about Icon',
+  componentTheme,
   doc,
   examples,
   slug: 'icon',

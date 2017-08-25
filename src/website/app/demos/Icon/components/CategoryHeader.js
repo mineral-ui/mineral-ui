@@ -15,21 +15,21 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '../../../../../utils';
 
 export default createStyledComponent(
-  'h5',
+  'h4',
   ({ theme }) => ({
-    borderTop: `1px solid ${theme.color_gray}`,
-    paddingTop: theme.spacing_oneAndAHalf,
-    fontSize: theme.font_size_b,
+    borderTop: `1px solid ${theme.borderColor}`,
+    paddingTop: theme.spacing_triple,
+    fontSize: theme.fontSize_h5,
     textTransform: 'capitalize',
-    margin: `${theme.spacing_oneAndAHalf} 0 ${theme.spacing_single}`,
-    '&:first-of-type': {
-      borderTop: 'none',
-      paddingTop: 0,
-      marginTop: theme.spacing_single
-    }
+    margin: `${parseFloat(
+      getNormalizedValue(theme.spacing_triple, theme.fontSize_h5)
+    )}em 0`
   }),
   {
     displayName: 'CategoryHeader',
