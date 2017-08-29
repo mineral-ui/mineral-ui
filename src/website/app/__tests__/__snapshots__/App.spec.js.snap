@@ -1,0 +1,2389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div>
+  <glamorous(div)>
+    <glamorous(Nav)
+      demos={
+        Object {
+          "button": Object {
+            "behavior": "behavior dummy text for the Button component",
+            "design": "Lofty design theory about Button",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "description": "Regular button.",
+                "id": "button",
+                "scope": Object {
+                  "Button": [Function],
+                },
+                "source": "<Button>Do Something</Button>",
+                "title": "Button",
+              },
+              Object {
+                "description": "Use once per page, for the primary action.",
+                "id": "primary",
+                "scope": Object {
+                  "Button": [Function],
+                },
+                "source": "<Button primary>Do Something</Button>",
+                "title": "Primary",
+              },
+              Object {
+                "description": "Use for less-important actions.",
+                "id": "minimal",
+                "scope": Object {
+                  "Button": [Function],
+                },
+                "source": "<Button minimal>Do Something</Button>",
+                "title": "Minimal",
+              },
+              Object {
+                "description": "Use for destructive or potentially-dangerous actions.",
+                "id": "danger",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button variant=\\"danger\\">Regular</Button>
+              <Button variant=\\"danger\\" primary>Primary</Button>
+              <Button variant=\\"danger\\" minimal>Minimal</Button>
+            </DemoLayout>",
+                "title": "Danger",
+              },
+              Object {
+                "description": "Use for positive actions, like when creating something.",
+                "id": "success",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button variant=\\"success\\">Regular</Button>
+              <Button variant=\\"success\\" primary>Primary</Button>
+              <Button variant=\\"success\\" minimal>Minimal</Button>
+            </DemoLayout>",
+                "title": "Success",
+              },
+              Object {
+                "description": "Use for potentially-destructive actions.",
+                "id": "warning",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button variant=\\"warning\\">Regular</Button>
+              <Button variant=\\"warning\\" primary>Primary</Button>
+              <Button variant=\\"warning\\" minimal>Minimal</Button>
+            </DemoLayout>",
+                "title": "Warning",
+              },
+              Object {
+                "id": "sizes",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button size=\\"small\\">Small</Button>
+              <Button>Medium</Button>
+              <Button size=\\"large\\">Large</Button>
+              <Button size=\\"jumbo\\">Jumbo</Button>
+            </DemoLayout>",
+                "title": "Sizes",
+              },
+              Object {
+                "description": "Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.",
+                "id": "icons",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconCloud": [Function],
+                },
+                "source": "
+            () => {
+              const icon = <IconCloud />;
+        
+              return (
+                <DemoLayout>
+                  <Button iconStart={icon}>Start icon</Button>
+                  <Button iconEnd={icon}>End icon</Button>
+                  <Button iconStart={icon} iconEnd={icon}>Both icons</Button>
+                  <br /><br />
+                  <Button iconStart={icon} primary>Primary</Button>
+                  <Button iconStart={icon} minimal>Minimal</Button>
+                  <Button iconStart={icon} variant=\\"danger\\">Danger</Button>
+                  <Button iconStart={icon} variant=\\"success\\">Success</Button>
+                  <Button iconStart={icon} variant=\\"warning\\">Warning</Button>
+                  <Button iconStart={icon} disabled>Disabled</Button>
+                  <br /><br />
+                  <Button iconStart={icon} size=\\"small\\">Small</Button>
+                  <Button iconStart={icon}>Medium</Button>
+                  <Button iconStart={icon} size=\\"large\\">Large</Button>
+                  <Button iconStart={icon} size=\\"jumbo\\">Jumbo</Button>
+                </DemoLayout>
+              );
+            }",
+                "title": "Buttons with Icons",
+              },
+              Object {
+                "description": "Buttons that contain only Icons can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.",
+                "id": "icon-only",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconCloud": [Function],
+                },
+                "source": "
+            () => {
+              const icon = <IconCloud />;
+        
+              return (
+                <DemoLayout>
+                  {/* Icon as prop; no text. aria-label applied to Button. */}
+                  <Button iconStart={icon} aria-label=\\"Cloud\\" />
+                  {/* primary */}
+                  <Button iconStart={icon} primary aria-label=\\"Cloud\\" />
+                  {/* minimal */}
+                  <Button iconStart={icon} minimal aria-label=\\"Cloud\\" />
+                  {/* small */}
+                  <Button iconStart={icon} size=\\"small\\" aria-label=\\"Cloud\\" />
+                  {/* large */}
+                  <Button iconStart={icon} size=\\"large\\" aria-label=\\"Cloud\\" />
+                  {/* jumbo */}
+                  <Button iconStart={icon} size=\\"jumbo\\" aria-label=\\"Cloud\\" />
+                </DemoLayout>
+              );
+            }",
+                "title": "Icon-only Buttons",
+              },
+              Object {
+                "description": "Buttons can be made circular. Such Buttons should not have any text.",
+                "id": "circular",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "IconCloud": [Function],
+                },
+                "source": "
+            () => {
+              const icon = <IconCloud />;
+        
+              return (
+                <DemoLayout>
+                  <Button iconStart={icon} circular aria-label=\\"Cloud\\" />
+                  {/* primary */}
+                  <Button iconStart={icon} circular primary aria-label=\\"Cloud\\" />
+                  {/* minimal */}
+                  <Button iconStart={icon} circular minimal aria-label=\\"Cloud\\" />
+                  {/* small */}
+                  <Button iconStart={icon} circular size=\\"small\\" aria-label=\\"Cloud\\" />
+                  {/* large */}
+                  <Button iconStart={icon} circular size=\\"large\\" aria-label=\\"Cloud\\" />
+                  {/* jumbo */}
+                  <Button iconStart={icon} circular size=\\"jumbo\\" aria-label=\\"Cloud\\" />
+                </DemoLayout>
+              );
+            }",
+                "title": "Circular Buttons",
+              },
+              Object {
+                "id": "disabled",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button disabled>Regular</Button>
+              <Button disabled primary>Primary</Button>
+              <Button disabled minimal>Minimal</Button>
+            </DemoLayout>",
+                "title": "Disabled",
+              },
+              Object {
+                "id": "full-width",
+                "scope": Object {
+                  "Button": [Function],
+                },
+                "source": "<Button fullWidth>Do Something</Button>",
+                "title": "Full Width",
+              },
+              Object {
+                "description": "Long button text is truncated when necessary",
+                "id": "truncation",
+                "scope": Object {
+                  "Button": [Function],
+                  "FixedWidthLayout": [Function],
+                },
+                "source": "
+            <FixedWidthLayout>
+              <Button>Do Something</Button>
+            </FixedWidthLayout>",
+                "title": "Truncation",
+              },
+              Object {
+                "description": "",
+                "id": "rtl",
+                "scope": Object {
+                  "Button": [Function],
+                  "IconBackspace": [Function],
+                },
+                "source": "
+            <div dir=\\"rtl\\">
+              <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+            </div>",
+                "title": "RTL Support",
+              },
+              Object {
+                "hideSource": true,
+                "id": "states",
+                "scope": Object {
+                  "Button": [Function],
+                  "DemoLayout": [Function],
+                  "simulate": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Button>Regular</Button>
+              <Button primary>Primary</Button>
+              <Button minimal>Minimal</Button>
+              <br /><br />
+              <Button {...simulate('hover')}>Hover</Button>
+              <Button {...simulate('hover')} primary>Hover</Button>
+              <Button {...simulate('hover')} minimal>Hover</Button>
+              <br /><br />
+              <Button {...simulate('focus')}>Focus</Button>
+              <Button {...simulate('focus')} primary>Focus</Button>
+              <Button {...simulate('focus')} minimal>Focus</Button>
+              <br /><br />
+              <Button {...simulate('focus', 'hover')}>Focus & Hover</Button>
+              <Button {...simulate('focus', 'hover')} primary>Focus & Hover</Button>
+              <Button {...simulate('focus', 'hover')} minimal>Focus & Hover</Button>
+              <br /><br />
+              <Button {...simulate('focus', 'active')}>Focus & Active</Button>
+              <Button {...simulate('focus', 'active')} primary>Focus & Active</Button>
+              <Button {...simulate('focus', 'active')} minimal>Focus & Active</Button>
+              <br /><br />
+              <Button {...simulate('active')}>Active</Button>
+              <Button {...simulate('active')} primary>Active</Button>
+              <Button {...simulate('active')} minimal>Active</Button>
+              <br /><br />
+              <Button disabled>Disabled</Button>
+              <Button disabled primary>Disabled</Button>
+              <Button disabled minimal>Disabled</Button>
+              <br /><br /><br />
+        
+              <Button variant=\\"danger\\">Regular</Button>
+              <Button variant=\\"danger\\" primary>Primary</Button>
+              <Button variant=\\"danger\\" minimal>Minimal</Button>
+              <br /><br />
+              <Button {...simulate('hover')} variant=\\"danger\\">Hover</Button>
+              <Button {...simulate('hover')} variant=\\"danger\\" primary>Hover</Button>
+              <Button {...simulate('hover')} variant=\\"danger\\" minimal>Hover</Button>
+              <br /><br />
+              <Button {...simulate('focus')} variant=\\"danger\\">Focus</Button>
+              <Button {...simulate('focus')} variant=\\"danger\\" primary>Focus</Button>
+              <Button {...simulate('focus')} variant=\\"danger\\" minimal>Focus</Button>
+              <br /><br />
+              <Button {...simulate('focus', 'hover')} variant=\\"danger\\">
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"danger\\" primary>
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"danger\\" minimal>
+                Focus & Hover
+              </Button>
+              <br /><br />
+              <Button {...simulate('focus', 'active')} variant=\\"danger\\">
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"danger\\" primary>
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"danger\\" minimal>
+                Focus & Active
+              </Button>
+              <br /><br />
+              <Button {...simulate('active')} variant=\\"danger\\">Active</Button>
+              <Button {...simulate('active')} variant=\\"danger\\" primary>Active</Button>
+              <Button {...simulate('active')} variant=\\"danger\\" minimal>Active</Button>
+              <br /><br />
+              <Button disabled variant=\\"danger\\">Disabled</Button>
+              <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+              <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+              <br /><br /><br />
+        
+              <Button variant=\\"success\\">Regular</Button>
+              <Button variant=\\"success\\" primary>Primary</Button>
+              <Button variant=\\"success\\" minimal>Minimal</Button>
+              <br /><br />
+              <Button {...simulate('hover')} variant=\\"success\\">Hover</Button>
+              <Button {...simulate('hover')} variant=\\"success\\" primary>Hover</Button>
+              <Button {...simulate('hover')} variant=\\"success\\" minimal>Hover</Button>
+              <br /><br />
+              <Button {...simulate('focus')} variant=\\"success\\">Focus</Button>
+              <Button {...simulate('focus')} variant=\\"success\\" primary>Focus</Button>
+              <Button {...simulate('focus')} variant=\\"success\\" minimal>Focus</Button>
+              <br /><br />
+              <Button {...simulate('focus', 'hover')} variant=\\"success\\">
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"success\\" primary>
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"success\\" minimal>
+                Focus & Hover
+              </Button>
+              <br /><br />
+              <Button {...simulate('focus', 'active')} variant=\\"success\\">
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"success\\" primary>
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"success\\" minimal>
+                Focus & Active
+              </Button>
+              <br /><br />
+              <Button {...simulate('active')} variant=\\"success\\">Active</Button>
+              <Button {...simulate('active')} variant=\\"success\\" primary>Active</Button>
+              <Button {...simulate('active')} variant=\\"success\\" minimal>Active</Button>
+              <br /><br />
+              <Button disabled variant=\\"danger\\">Disabled</Button>
+              <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+              <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+              <br /><br /><br />
+        
+              <Button variant=\\"warning\\">Regular</Button>
+              <Button variant=\\"warning\\" primary>Primary</Button>
+              <Button variant=\\"warning\\" minimal>Minimal</Button>
+              <br /><br />
+              <Button {...simulate('hover')} variant=\\"warning\\">Hover</Button>
+              <Button {...simulate('hover')} variant=\\"warning\\" primary>Hover</Button>
+              <Button {...simulate('hover')} variant=\\"warning\\" minimal>Hover</Button>
+              <br /><br />
+              <Button {...simulate('focus')} variant=\\"warning\\">Focus</Button>
+              <Button {...simulate('focus')} variant=\\"warning\\" primary>Focus</Button>
+              <Button {...simulate('focus')} variant=\\"warning\\" minimal>Focus</Button>
+              <br /><br />
+              <Button {...simulate('focus', 'hover')} variant=\\"warning\\">
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"warning\\" primary>
+                Focus & Hover
+              </Button>
+              <Button {...simulate('focus', 'hover')} variant=\\"warning\\" minimal>
+                Focus & Hover
+              </Button>
+              <br /><br />
+              <Button {...simulate('focus', 'active')} variant=\\"warning\\">
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"warning\\" primary>
+                Focus & Active
+              </Button>
+              <Button {...simulate('focus', 'active')} variant=\\"warning\\" minimal>
+                Focus & Active
+              </Button>
+              <br /><br />
+              <Button {...simulate('active')} variant=\\"warning\\">Active</Button>
+              <Button {...simulate('active')} variant=\\"warning\\" primary>Active</Button>
+              <Button {...simulate('active')} variant=\\"warning\\" minimal>Active</Button>
+              <br /><br />
+              <Button disabled variant=\\"danger\\">Disabled</Button>
+              <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+              <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+              <br /><br />
+            </DemoLayout>",
+                "title": "States",
+              },
+            ],
+            "slug": "button",
+            "title": "Button",
+          },
+          "card": Object {
+            "behavior": "behavior dummy text for the card component",
+            "design": "design theory about the card component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.",
+                "id": "basic",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "Basic card",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.",
+                "id": "children",
+                "scope": Object {
+                  "Button": [Function],
+                  "Card": [Function],
+                  "CardTitle": [Function],
+                  "CustomContent": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CustomContent>
+                  <Button fullWidth>Button</Button>
+                </CustomContent>
+              </Card>
+            </DemoLayout>",
+                "title": "Arbitrary children",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "If an onClick function is provided, the entire card becomes clickable and keyboard actionable.",
+                "id": "clickable",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card onClick={event => console.log(event)}>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "Clickable",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "The sections of Card are designed to work in any order.",
+                "id": "order",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                <CardTitle minor>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+        
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+        
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+                <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+              </Card>
+            </DemoLayout>",
+                "title": "Order of sections",
+              },
+            ],
+            "slug": "card",
+            "title": "Card",
+          },
+          "card-block": Object {
+            "behavior": "behavior dummy text for the card block component",
+            "design": "design theory about the card block component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).",
+                "id": "consistent-spacing",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "Consistent spacing",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.",
+                "id": "children",
+                "scope": Object {
+                  "Button": [Function],
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "CustomContent": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle>Card title</CardTitle>
+                <CardBlock>
+                  <CustomContent>
+                    <Button fullWidth>Button</Button>
+                  </CustomContent>
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "Arbitrary children",
+              },
+            ],
+            "slug": "card-block",
+            "subcomponent": true,
+            "title": "CardBlock",
+          },
+          "card-image": Object {
+            "behavior": "behavior dummy text for the card image component",
+            "design": "design theory about the card image component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+                "id": "with-image",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                <CardTitle minor>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "With an image",
+              },
+            ],
+            "slug": "card-image",
+            "subcomponent": true,
+            "title": "CardImage",
+          },
+          "card-title": Object {
+            "behavior": "behavior dummy text for the card title component",
+            "design": "design theory about the card title component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "In addition to a title, a Card can display a subtitle.",
+                "id": "subtitle",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "With a subtitle",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "Both the title and subtitle can contain a simple string or any HTML/React elements.",
+                "id": "complex-title",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                  "createStyledComponent": [Function],
+                },
+                "source": "
+            () => {
+              const Status = createStyledComponent('span', {
+                color: 'red',
+                fontSize: '0.6em',
+        
+                '&:before': {
+                  backgroundColor: 'red',
+                  borderRadius: '0.8em',
+                  content: '\\"\\"',
+                  display: 'inline-block',
+                  height: '0.8em',
+                  marginRight: '0.5em',
+                  position: 'relative',
+                  top: '0.1em',
+                  width: '0.8em'
+                }
+              });
+        
+              return (
+                <DemoLayout>
+                  <Card>
+                    <CardTitle subtitle={<em>Subtitle</em>}>
+                      Card title<br />
+                      <Status>Status label</Status>
+                    </CardTitle>
+                    <CardBlock>
+                      Light years star stuff harvesting star light citizens of distant
+                      epochs encyclopaedia galactica vastness is bearable only through love,
+                      shores of the cosmic ocean!
+                    </CardBlock>
+                  </Card>
+                </DemoLayout>
+              );
+            }",
+                "title": "Complex title and subtitle",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.",
+                "id": "minor-title",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardImage": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                <CardTitle minor>Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "Minor title",
+              },
+              Object {
+                "backgroundColor": "#f5f7fa",
+                "description": "If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.",
+                "id": "meta",
+                "scope": Object {
+                  "Card": [Function],
+                  "CardBlock": [Function],
+                  "CardTitle": [Function],
+                  "DemoLayout": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Card>
+                <CardTitle meta=\\"July 24, 2017\\">Card title</CardTitle>
+                <CardBlock>
+                  Light years star stuff harvesting star light citizens of distant
+                  epochs encyclopaedia galactica vastness is bearable only through love,
+                  shores of the cosmic ocean!
+                </CardBlock>
+              </Card>
+            </DemoLayout>",
+                "title": "With meta information",
+              },
+            ],
+            "slug": "card-title",
+            "subcomponent": true,
+            "title": "CardTitle",
+          },
+          "icon": Object {
+            "behavior": "behavior dummy text for the Icon component",
+            "design": "Lofty design theory about Icon",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "id": "icon",
+                "scope": Object {
+                  "IconSentimentSatisfied": [Function],
+                },
+                "source": "<IconSentimentSatisfied />",
+                "title": "Icon",
+              },
+              Object {
+                "description": "You can apply a color to any icon.",
+                "id": "color",
+                "scope": Object {
+                  "IconSentimentSatisfied": [Function],
+                },
+                "source": "<IconSentimentSatisfied color=\\"coral\\" />",
+                "title": "Color",
+              },
+              Object {
+                "description": "Icons are available in three preset sizes, or you can supply your own custom size.",
+                "id": "sizes",
+                "scope": Object {
+                  "IconSentimentSatisfied": [Function],
+                },
+                "source": "
+            <div>
+              <IconSentimentSatisfied size=\\"small\\" />
+              <IconSentimentSatisfied />
+              <IconSentimentSatisfied size=\\"large\\" />
+              <IconSentimentSatisfied size=\\"7em\\" />
+            </div>",
+                "title": "Sizes",
+              },
+              Object {
+                "description": "Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).",
+                "id": "title",
+                "scope": Object {
+                  "IconSentimentSatisfied": [Function],
+                },
+                "source": "<IconSentimentSatisfied title=\\"smiley-face\\" />",
+                "title": "Title",
+              },
+              Object {
+                "description": "Some icons will be automatically mirrored for (right-to-left) RTL languages",
+                "id": "rtl",
+                "scope": Object {
+                  "IconHelp": [Function],
+                  "ThemeProvider": [Function],
+                },
+                "source": "
+            <ThemeProvider theme={{ direction: 'rtl' }}>
+              <IconHelp />
+            </ThemeProvider>",
+                "title": "RTL",
+              },
+              Object {
+                "description": "You can render a custom icon by supplying an SVG as a child.",
+                "id": "custom",
+                "scope": Object {
+                  "Icon": [Function],
+                },
+                "source": "
+            <Icon size=\\"7em\\" title=\\"CA Technologies\\">
+              <svg viewBox=\\"0 0 16 16\\">
+                <path
+                  className=\\"trademark\\"
+                  d=\\"M14.514 10.187c-0.256 0-0.419-0.186-0.419-0.442s0.186-0.442 0.419-0.442c0.256 0 0.419 0.186 0.419 0.442 0 0.279-0.163 0.442-0.419 0.442zM14.514 9.373c-0.209 0-0.372 0.14-0.372 0.395s0.163 0.372 0.372 0.372c0.209 0 0.372-0.14 0.372-0.372 0-0.256-0.163-0.395-0.372-0.395zM14.653 9.977l-0.14-0.209h-0.070v0.209h-0.093v-0.489h0.14c0.093 0 0.163 0.047 0.163 0.14 0 0.070-0.047 0.116-0.093 0.14l0.14 0.186-0.047 0.023zM14.514 9.582h-0.070v0.14h0.070c0.047 0 0.093-0.023 0.093-0.070s-0.023-0.070-0.093-0.070z\\"
+                />
+                <g className=\\"technologies\\">
+                  <path d=\\"M0.788 12.187v-0.465h0.349v0.465h0.279v0.279h-0.279v0.814c0 0.070 0.047 0.093 0.116 0.093 0.047 0 0.116-0.023 0.163-0.023v0.279c-0.093 0-0.186 0.023-0.279 0.023-0.256 0-0.349-0.116-0.349-0.326v-0.861h-0.186v-0.279h0.186z\\" />
+                  <path d=\\"M1.905 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.861zM2.44 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z\\" />
+                  <path d=\\"M3.859 12.653c-0.047-0.116-0.116-0.209-0.279-0.209-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.14 0 0.233-0.093 0.302-0.233l0.256 0.14c-0.14 0.256-0.302 0.349-0.558 0.349-0.395 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.279 0 0.489 0.14 0.558 0.372l-0.279 0.14z\\" />
+                  <path d=\\"M4.394 13.607v-1.977h0.349v0.698c0.093-0.093 0.233-0.186 0.419-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.326z\\" />
+                  <path d=\\"M5.906 13.607v-1.442h0.302v0.163c0.116-0.093 0.279-0.186 0.442-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.302z\\" />
+                  <path d=\\"M7.953 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM7.953 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z\\" />
+                  <path d=\\"M8.837 13.607v-1.977h0.349v1.977z\\" />
+                  <path d=\\"M10.070 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM10.070 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z\\" />
+                  <path d=\\"M12.094 12.397c-0.070 0-0.163 0-0.209 0.023 0.047 0.070 0.070 0.14 0.070 0.256 0 0.279-0.186 0.465-0.535 0.465-0.14 0-0.256 0-0.256 0.093 0 0.233 0.931-0.093 0.931 0.489 0 0.209-0.209 0.419-0.651 0.419-0.372 0-0.628-0.116-0.628-0.349 0-0.186 0.14-0.256 0.256-0.256v0c-0.070-0.047-0.209-0.070-0.209-0.233 0-0.14 0.163-0.233 0.209-0.256-0.116-0.093-0.209-0.209-0.209-0.372 0-0.256 0.186-0.489 0.558-0.489 0.116 0 0.256 0.047 0.349 0.116 0.070-0.093 0.163-0.14 0.326-0.116v0.209zM11.094 13.746c0 0.116 0.093 0.163 0.372 0.163 0.209 0 0.302-0.116 0.302-0.163 0-0.070-0.093-0.163-0.419-0.163-0.209 0-0.256 0.116-0.256 0.163zM11.396 12.42c-0.14 0-0.256 0.093-0.256 0.233s0.093 0.233 0.256 0.233c0.14 0 0.233-0.116 0.233-0.233 0-0.14-0.093-0.233-0.233-0.233z\\" />
+                  <path d=\\"M12.327 11.932v-0.326h0.349v0.326h-0.349zM12.676 13.188v0.419h-0.349v-1.442h0.349v1.024z\\" />
+                  <path d=\\"M13.281 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.628-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.884zM13.816 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z\\" />
+                  <path d=\\"M15.119 12.56c-0.070-0.070-0.163-0.14-0.256-0.14-0.14 0-0.186 0.047-0.186 0.14 0 0.256 0.721 0.14 0.721 0.675 0 0.302-0.233 0.419-0.512 0.419-0.233 0-0.419-0.093-0.535-0.279l0.233-0.163c0.070 0.116 0.186 0.209 0.326 0.209 0.116 0 0.209-0.070 0.209-0.163 0-0.233-0.721-0.163-0.721-0.651 0-0.256 0.233-0.419 0.465-0.419 0.186 0 0.372 0.070 0.512 0.209l-0.256 0.163z\\" />
+                </g>
+                <g className=\\"ca\\">
+                  <path d=\\"M10.838 8.14c-0.279 0.419-0.698 0.675-1.186 0.675-0.651 0-1.21-0.302-1.21-1.024 0-1.047 1.535-1.419 2.722-1.489v0.302c0 0.698 0 1.047-0.326 1.535zM8.651 4.348c0.186-0.489 0.651-0.675 1.303-0.675 0.931 0 1.186 0.651 1.21 1.186v0.256c-2.559 0.116-4.955 0.605-4.909 2.931 0.023 1.628 1.512 2.303 2.536 2.303 1.186 0 1.838-0.326 2.489-1.117 0 0.349 0.047 0.698 0.116 0.954h2.28c-0.116-0.395-0.163-0.814-0.163-1.21v-4.257c0-1.024-0.186-1.605-0.744-2.117-0.535-0.489-1.373-0.744-2.536-0.744-1.070 0-1.977 0.233-2.652 0.698v0c0.558 0.465 0.931 1.070 1.070 1.791v0z\\" />
+                  <path d=\\"M6.116 7.953c0 0.047 0 0.093 0 0.14 0 0.023 0 0.047 0 0.070 0.047 0.837 0.442 1.349 0.814 1.652-0.628 0.372-1.396 0.512-2.070 0.512-2.443 0.023-3.908-1.721-3.908-4.141 0-2.512 1.512-4.327 4.071-4.327 1.861 0 3.396 1 3.559 2.931h-2.233c0-0.744-0.512-1.117-1.233-1.117-1.163 0-1.512 0.814-1.512 2.326 0 1.535 0.326 2.419 1.512 2.419 0.442 0 0.791-0.14 1-0.465v0z\\" />
+                </g>
+              </svg>
+            </Icon>",
+                "title": "Custom",
+              },
+              Object {
+                "hideSource": true,
+                "id": "categories",
+                "scope": Object {
+                  "CategoryIndex": [Function],
+                },
+                "source": "<CategoryIndex />",
+                "title": "Icons by Category",
+              },
+            ],
+            "slug": "icon",
+            "title": "Icon",
+          },
+          "link": Object {
+            "behavior": "behavior dummy text for the link component",
+            "design": "design theory about the link component",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "description": "Links inherit font size, weight, and family.",
+                "id": "basic",
+                "scope": Object {
+                  "Big": [Function],
+                  "Bold": [Function],
+                  "Link": [Function],
+                  "Serif": [Function],
+                  "Small": [Function],
+                },
+                "source": "
+            <div>
+              <Big>
+                Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+              </Big>
+        
+              <Small>
+                citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+              </Small>
+        
+              <Bold>
+                vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+              </Bold>
+        
+              <Serif>
+                shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+              </Serif>
+            </div>",
+                "title": "Basic link",
+              },
+              Object {
+                "description": "A Link will render any children.",
+                "id": "children",
+                "scope": Object {
+                  "Link": [Function],
+                },
+                "source": "
+            <Link href=\\"http://example.com\\">
+              <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
+            </Link>",
+                "title": "Children",
+              },
+              Object {
+                "description": "Links can be styled as these variants, to help communicate purpose.",
+                "id": "variants",
+                "scope": Object {
+                  "DemoLayout": [Function],
+                  "Link": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Link href=\\"http://example.com\\">Regular</Link>
+              <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+              <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+              <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+            </DemoLayout>",
+                "title": "Variants",
+              },
+              Object {
+                "description": "This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.",
+                "id": "react-router",
+                "scope": Object {
+                  "BrowserRouter": [Function],
+                  "Link": [Function],
+                  "ReactRouterLink": [Function],
+                  "Redirect": [Function],
+                  "Route": [Function],
+                  "Switch": [Function],
+                },
+                "source": "
+            <BrowserRouter>
+              <Switch>
+                <Route
+                  path=\\"/components/:componentId/:path?\\"
+                  render={route => {
+                    const path = route.match.params.path;
+        
+                    if ('page-2' === path) {
+                      return <Link to=\\"/components/link/page-1\\" replace element={ReactRouterLink}>Page 1</Link>;
+                    }
+                    return <Link to=\\"/components/link/page-2\\" replace element={ReactRouterLink}>Page 2</Link>;
+                  }}
+                />
+                <Redirect from=\\"/\\" to=\\"/components/link\\" />
+              </Switch>
+            </BrowserRouter>",
+                "title": "ReactRouter",
+              },
+              Object {
+                "hideSource": true,
+                "id": "states",
+                "scope": Object {
+                  "DemoLayout": [Function],
+                  "Link": [Function],
+                  "simulate": [Function],
+                },
+                "source": "
+            <DemoLayout>
+              <Link href=\\"http://example.com\\">Regular</Link>
+              <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+              <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+              <Link {...simulate('focus', 'hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+              <Link {...simulate('focus', 'active')} href=\\"http://example.com\\">Focus & Active</Link>
+              <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+              <br /><br />
+              <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+              <Link {...simulate('hover')} variant=\\"danger\\" href=\\"http://example.com\\">Hover</Link>
+              <Link {...simulate('focus')} variant=\\"danger\\" href=\\"http://example.com\\">Focus</Link>
+              <Link {...simulate('focus', 'hover')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Hover</Link>
+              <Link {...simulate('focus', 'active')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Active</Link>
+              <Link  {...simulate('active')} variant=\\"danger\\" href=\\"http://example.com\\">Active</Link>
+              <br /><br />
+              <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+              <Link {...simulate('hover')} variant=\\"success\\" href=\\"http://example.com\\">Hover</Link>
+              <Link {...simulate('focus')} variant=\\"success\\" href=\\"http://example.com\\">Focus</Link>
+              <Link {...simulate('focus', 'hover')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Hover</Link>
+              <Link {...simulate('focus', 'active')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Active</Link>
+              <Link {...simulate('active')} variant=\\"success\\" href=\\"http://example.com\\">Active</Link>
+              <br /><br />
+              <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+              <Link {...simulate('hover')} variant=\\"warning\\" href=\\"http://example.com\\">Hover</Link>
+              <Link {...simulate('focus')} variant=\\"warning\\" href=\\"http://example.com\\">Focus</Link>
+              <Link {...simulate('focus', 'hover')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Hover</Link>
+              <Link {...simulate('focus', 'active')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Active</Link>
+              <Link {...simulate('active')} variant=\\"warning\\" href=\\"http://example.com\\">Active</Link>
+            </DemoLayout>",
+                "title": "States",
+              },
+            ],
+            "slug": "link",
+            "title": "Link",
+          },
+          "theme-provider": Object {
+            "behavior": "some cool behavior info",
+            "design": "Lofty design theory about ThemeProvider",
+            "doc": Object {
+              "default": Object {},
+            },
+            "examples": Array [
+              Object {
+                "description": <glamorous(div)>
+                  <p>
+                            Wrap any number of components in a ThemeProvider to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.
+                  </p>
+        </glamorous(div)>,
+                "id": "theme-provider",
+                "scope": Object {
+                  "DemoLayout": [Function],
+                  "Sample": [Function],
+                  "ThemeProvider": [Function],
+                },
+                "source": "
+            () => {
+              return (
+                <DemoLayout>
+                  {/* This will affect all components inside this ThemeProvider that use this variable. */}
+                  <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+                    <Sample />
+                  </ThemeProvider>
+        
+                  {/* This will affect all components inside this ThemeProvider that use this variable,
+                      which should only be Sample components due to the namespace. */}
+                  <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+                  	<Sample />
+                  </ThemeProvider>
+                </DemoLayout>
+              );
+            }",
+                "title": "ThemeProvider",
+              },
+            ],
+            "slug": "theme-provider",
+            "title": "ThemeProvider",
+          },
+          "utils": Object {
+            "behavior": "some cool behavior info",
+            "design": "Lofty design theory about the utils",
+            "doc": Object {
+              "description": "Shared utilities",
+            },
+            "examples": Array [
+              Object {
+                "description": "Just a simple sample component to demonstrate the styling below.",
+                "id": "sample-component",
+                "scope": Object {
+                  "Sample": [Function],
+                },
+                "source": "<Sample />",
+                "title": "Sample Component",
+              },
+              Object {
+                "description": <glamorous(div)>
+                  <p>
+                            If you only need to style the themed properties of a component, you can use this helper. It’s effectively the same as wrapping a ThemeProvider around a single component.
+                  </p>
+                  <p>
+                            <glamorous(code)>
+                                      component
+                            </glamorous(code)>
+                             — a
+                             
+                            <Link
+                                      href="https://github.com/paypal/glamorous"
+                            >
+                                      Glamorous
+                            </Link>
+                             
+                            component
+                  </p>
+                  <p>
+                            <glamorous(code)>
+                                      theme
+                            </glamorous(code)>
+                             — a shallow object of theme variables or a function that accepts props and context and returns an object of theme variables
+                  </p>
+        </glamorous(div)>,
+                "id": "create-themed-component",
+                "scope": Object {
+                  "Sample": [Function],
+                  "createThemedComponent": [Function],
+                },
+                "source": "
+            () => {
+              const MyThemedSample = createThemedComponent(Sample, {
+                color_primary: 'mediumvioletred'
+              });
+        
+              return <MyThemedSample />;
+            }",
+                "title": <glamorous(code)>
+                  createThemedComponent(component, theme)
+        </glamorous(code)>,
+              },
+              Object {
+                "description": <glamorous(div)>
+                  <p>
+                            This is how you apply arbitrary styles to a component.
+                  </p>
+                  <p>
+                            <glamorous(code)>
+                                      element
+                            </glamorous(code)>
+                             — a React component or a string representation of an HTML element
+                  </p>
+                  <p>
+                            <glamorous(code)>
+                                      styles
+                            </glamorous(code)>
+                             — an
+                             
+                            <Link
+                                      href="https://github.com/threepointone/glamor/blob/master/docs/howto.md"
+                            >
+                                      object of style rules
+                            </Link>
+                             
+                            or a function that accepts props and context and returns an object of style rules
+                  </p>
+                  <p>
+                            <glamorous(code)>
+                                      options
+                            </glamorous(code)>
+                             — An object of optional configuration. A mix of Mineral UI and
+                             
+                            <Link
+                                      href="https://glamorous.rocks/api"
+                            >
+                                      Glamorous options
+                            </Link>
+                            . Most common uses are setting a display name on your component,
+                             
+                            <glamorous(code)>
+                                      {displayName: 'MyComponentName'}
+                            </glamorous(code)>
+                            , declaring which props to forward on to the element,
+                             
+                            <glamorous(code)>
+                                      {forwardProps: [href, customProp]}
+                            </glamorous(code)>
+                            , and including a style reset 
+                            <glamorous(code)>
+                                      { includeStyleReset: true }
+                            </glamorous(code)>
+                            .
+                  </p>
+        </glamorous(div)>,
+                "id": "create-styled-component",
+                "scope": Object {
+                  "Sample": [Function],
+                  "createStyledComponent": [Function],
+                },
+                "source": "
+            () => {
+              const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
+                outline: '3px dashed mediumvioletred',
+                fontSize: theme.fontSize_h1
+              }));
+        
+              return <MyStyledSample />;
+            }
+          ",
+                "title": <glamorous(code)>
+                  createStyledComponent(element, styles, options)
+        </glamorous(code)>,
+              },
+            ],
+            "hidePropDoc": true,
+            "slug": "utils",
+            "title": "Utils",
+          },
+        }
+      }
+    />
+    <glamorous(main)>
+      <Router
+        demos={
+          Object {
+            "button": Object {
+              "behavior": "behavior dummy text for the Button component",
+              "design": "Lofty design theory about Button",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "description": "Regular button.",
+                  "id": "button",
+                  "scope": Object {
+                    "Button": [Function],
+                  },
+                  "source": "<Button>Do Something</Button>",
+                  "title": "Button",
+                },
+                Object {
+                  "description": "Use once per page, for the primary action.",
+                  "id": "primary",
+                  "scope": Object {
+                    "Button": [Function],
+                  },
+                  "source": "<Button primary>Do Something</Button>",
+                  "title": "Primary",
+                },
+                Object {
+                  "description": "Use for less-important actions.",
+                  "id": "minimal",
+                  "scope": Object {
+                    "Button": [Function],
+                  },
+                  "source": "<Button minimal>Do Something</Button>",
+                  "title": "Minimal",
+                },
+                Object {
+                  "description": "Use for destructive or potentially-dangerous actions.",
+                  "id": "danger",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button variant=\\"danger\\">Regular</Button>
+                <Button variant=\\"danger\\" primary>Primary</Button>
+                <Button variant=\\"danger\\" minimal>Minimal</Button>
+              </DemoLayout>",
+                  "title": "Danger",
+                },
+                Object {
+                  "description": "Use for positive actions, like when creating something.",
+                  "id": "success",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button variant=\\"success\\">Regular</Button>
+                <Button variant=\\"success\\" primary>Primary</Button>
+                <Button variant=\\"success\\" minimal>Minimal</Button>
+              </DemoLayout>",
+                  "title": "Success",
+                },
+                Object {
+                  "description": "Use for potentially-destructive actions.",
+                  "id": "warning",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button variant=\\"warning\\">Regular</Button>
+                <Button variant=\\"warning\\" primary>Primary</Button>
+                <Button variant=\\"warning\\" minimal>Minimal</Button>
+              </DemoLayout>",
+                  "title": "Warning",
+                },
+                Object {
+                  "id": "sizes",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button size=\\"small\\">Small</Button>
+                <Button>Medium</Button>
+                <Button size=\\"large\\">Large</Button>
+                <Button size=\\"jumbo\\">Jumbo</Button>
+              </DemoLayout>",
+                  "title": "Sizes",
+                },
+                Object {
+                  "description": "Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.",
+                  "id": "icons",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                    "IconCloud": [Function],
+                  },
+                  "source": "
+              () => {
+                const icon = <IconCloud />;
+          
+                return (
+                  <DemoLayout>
+                    <Button iconStart={icon}>Start icon</Button>
+                    <Button iconEnd={icon}>End icon</Button>
+                    <Button iconStart={icon} iconEnd={icon}>Both icons</Button>
+                    <br /><br />
+                    <Button iconStart={icon} primary>Primary</Button>
+                    <Button iconStart={icon} minimal>Minimal</Button>
+                    <Button iconStart={icon} variant=\\"danger\\">Danger</Button>
+                    <Button iconStart={icon} variant=\\"success\\">Success</Button>
+                    <Button iconStart={icon} variant=\\"warning\\">Warning</Button>
+                    <Button iconStart={icon} disabled>Disabled</Button>
+                    <br /><br />
+                    <Button iconStart={icon} size=\\"small\\">Small</Button>
+                    <Button iconStart={icon}>Medium</Button>
+                    <Button iconStart={icon} size=\\"large\\">Large</Button>
+                    <Button iconStart={icon} size=\\"jumbo\\">Jumbo</Button>
+                  </DemoLayout>
+                );
+              }",
+                  "title": "Buttons with Icons",
+                },
+                Object {
+                  "description": "Buttons that contain only Icons can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.",
+                  "id": "icon-only",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                    "IconCloud": [Function],
+                  },
+                  "source": "
+              () => {
+                const icon = <IconCloud />;
+          
+                return (
+                  <DemoLayout>
+                    {/* Icon as prop; no text. aria-label applied to Button. */}
+                    <Button iconStart={icon} aria-label=\\"Cloud\\" />
+                    {/* primary */}
+                    <Button iconStart={icon} primary aria-label=\\"Cloud\\" />
+                    {/* minimal */}
+                    <Button iconStart={icon} minimal aria-label=\\"Cloud\\" />
+                    {/* small */}
+                    <Button iconStart={icon} size=\\"small\\" aria-label=\\"Cloud\\" />
+                    {/* large */}
+                    <Button iconStart={icon} size=\\"large\\" aria-label=\\"Cloud\\" />
+                    {/* jumbo */}
+                    <Button iconStart={icon} size=\\"jumbo\\" aria-label=\\"Cloud\\" />
+                  </DemoLayout>
+                );
+              }",
+                  "title": "Icon-only Buttons",
+                },
+                Object {
+                  "description": "Buttons can be made circular. Such Buttons should not have any text.",
+                  "id": "circular",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                    "IconCloud": [Function],
+                  },
+                  "source": "
+              () => {
+                const icon = <IconCloud />;
+          
+                return (
+                  <DemoLayout>
+                    <Button iconStart={icon} circular aria-label=\\"Cloud\\" />
+                    {/* primary */}
+                    <Button iconStart={icon} circular primary aria-label=\\"Cloud\\" />
+                    {/* minimal */}
+                    <Button iconStart={icon} circular minimal aria-label=\\"Cloud\\" />
+                    {/* small */}
+                    <Button iconStart={icon} circular size=\\"small\\" aria-label=\\"Cloud\\" />
+                    {/* large */}
+                    <Button iconStart={icon} circular size=\\"large\\" aria-label=\\"Cloud\\" />
+                    {/* jumbo */}
+                    <Button iconStart={icon} circular size=\\"jumbo\\" aria-label=\\"Cloud\\" />
+                  </DemoLayout>
+                );
+              }",
+                  "title": "Circular Buttons",
+                },
+                Object {
+                  "id": "disabled",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button disabled>Regular</Button>
+                <Button disabled primary>Primary</Button>
+                <Button disabled minimal>Minimal</Button>
+              </DemoLayout>",
+                  "title": "Disabled",
+                },
+                Object {
+                  "id": "full-width",
+                  "scope": Object {
+                    "Button": [Function],
+                  },
+                  "source": "<Button fullWidth>Do Something</Button>",
+                  "title": "Full Width",
+                },
+                Object {
+                  "description": "Long button text is truncated when necessary",
+                  "id": "truncation",
+                  "scope": Object {
+                    "Button": [Function],
+                    "FixedWidthLayout": [Function],
+                  },
+                  "source": "
+              <FixedWidthLayout>
+                <Button>Do Something</Button>
+              </FixedWidthLayout>",
+                  "title": "Truncation",
+                },
+                Object {
+                  "description": "",
+                  "id": "rtl",
+                  "scope": Object {
+                    "Button": [Function],
+                    "IconBackspace": [Function],
+                  },
+                  "source": "
+              <div dir=\\"rtl\\">
+                <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+              </div>",
+                  "title": "RTL Support",
+                },
+                Object {
+                  "hideSource": true,
+                  "id": "states",
+                  "scope": Object {
+                    "Button": [Function],
+                    "DemoLayout": [Function],
+                    "simulate": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Button>Regular</Button>
+                <Button primary>Primary</Button>
+                <Button minimal>Minimal</Button>
+                <br /><br />
+                <Button {...simulate('hover')}>Hover</Button>
+                <Button {...simulate('hover')} primary>Hover</Button>
+                <Button {...simulate('hover')} minimal>Hover</Button>
+                <br /><br />
+                <Button {...simulate('focus')}>Focus</Button>
+                <Button {...simulate('focus')} primary>Focus</Button>
+                <Button {...simulate('focus')} minimal>Focus</Button>
+                <br /><br />
+                <Button {...simulate('focus', 'hover')}>Focus & Hover</Button>
+                <Button {...simulate('focus', 'hover')} primary>Focus & Hover</Button>
+                <Button {...simulate('focus', 'hover')} minimal>Focus & Hover</Button>
+                <br /><br />
+                <Button {...simulate('focus', 'active')}>Focus & Active</Button>
+                <Button {...simulate('focus', 'active')} primary>Focus & Active</Button>
+                <Button {...simulate('focus', 'active')} minimal>Focus & Active</Button>
+                <br /><br />
+                <Button {...simulate('active')}>Active</Button>
+                <Button {...simulate('active')} primary>Active</Button>
+                <Button {...simulate('active')} minimal>Active</Button>
+                <br /><br />
+                <Button disabled>Disabled</Button>
+                <Button disabled primary>Disabled</Button>
+                <Button disabled minimal>Disabled</Button>
+                <br /><br /><br />
+          
+                <Button variant=\\"danger\\">Regular</Button>
+                <Button variant=\\"danger\\" primary>Primary</Button>
+                <Button variant=\\"danger\\" minimal>Minimal</Button>
+                <br /><br />
+                <Button {...simulate('hover')} variant=\\"danger\\">Hover</Button>
+                <Button {...simulate('hover')} variant=\\"danger\\" primary>Hover</Button>
+                <Button {...simulate('hover')} variant=\\"danger\\" minimal>Hover</Button>
+                <br /><br />
+                <Button {...simulate('focus')} variant=\\"danger\\">Focus</Button>
+                <Button {...simulate('focus')} variant=\\"danger\\" primary>Focus</Button>
+                <Button {...simulate('focus')} variant=\\"danger\\" minimal>Focus</Button>
+                <br /><br />
+                <Button {...simulate('focus', 'hover')} variant=\\"danger\\">
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"danger\\" primary>
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"danger\\" minimal>
+                  Focus & Hover
+                </Button>
+                <br /><br />
+                <Button {...simulate('focus', 'active')} variant=\\"danger\\">
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"danger\\" primary>
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"danger\\" minimal>
+                  Focus & Active
+                </Button>
+                <br /><br />
+                <Button {...simulate('active')} variant=\\"danger\\">Active</Button>
+                <Button {...simulate('active')} variant=\\"danger\\" primary>Active</Button>
+                <Button {...simulate('active')} variant=\\"danger\\" minimal>Active</Button>
+                <br /><br />
+                <Button disabled variant=\\"danger\\">Disabled</Button>
+                <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+                <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+                <br /><br /><br />
+          
+                <Button variant=\\"success\\">Regular</Button>
+                <Button variant=\\"success\\" primary>Primary</Button>
+                <Button variant=\\"success\\" minimal>Minimal</Button>
+                <br /><br />
+                <Button {...simulate('hover')} variant=\\"success\\">Hover</Button>
+                <Button {...simulate('hover')} variant=\\"success\\" primary>Hover</Button>
+                <Button {...simulate('hover')} variant=\\"success\\" minimal>Hover</Button>
+                <br /><br />
+                <Button {...simulate('focus')} variant=\\"success\\">Focus</Button>
+                <Button {...simulate('focus')} variant=\\"success\\" primary>Focus</Button>
+                <Button {...simulate('focus')} variant=\\"success\\" minimal>Focus</Button>
+                <br /><br />
+                <Button {...simulate('focus', 'hover')} variant=\\"success\\">
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"success\\" primary>
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"success\\" minimal>
+                  Focus & Hover
+                </Button>
+                <br /><br />
+                <Button {...simulate('focus', 'active')} variant=\\"success\\">
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"success\\" primary>
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"success\\" minimal>
+                  Focus & Active
+                </Button>
+                <br /><br />
+                <Button {...simulate('active')} variant=\\"success\\">Active</Button>
+                <Button {...simulate('active')} variant=\\"success\\" primary>Active</Button>
+                <Button {...simulate('active')} variant=\\"success\\" minimal>Active</Button>
+                <br /><br />
+                <Button disabled variant=\\"danger\\">Disabled</Button>
+                <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+                <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+                <br /><br /><br />
+          
+                <Button variant=\\"warning\\">Regular</Button>
+                <Button variant=\\"warning\\" primary>Primary</Button>
+                <Button variant=\\"warning\\" minimal>Minimal</Button>
+                <br /><br />
+                <Button {...simulate('hover')} variant=\\"warning\\">Hover</Button>
+                <Button {...simulate('hover')} variant=\\"warning\\" primary>Hover</Button>
+                <Button {...simulate('hover')} variant=\\"warning\\" minimal>Hover</Button>
+                <br /><br />
+                <Button {...simulate('focus')} variant=\\"warning\\">Focus</Button>
+                <Button {...simulate('focus')} variant=\\"warning\\" primary>Focus</Button>
+                <Button {...simulate('focus')} variant=\\"warning\\" minimal>Focus</Button>
+                <br /><br />
+                <Button {...simulate('focus', 'hover')} variant=\\"warning\\">
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"warning\\" primary>
+                  Focus & Hover
+                </Button>
+                <Button {...simulate('focus', 'hover')} variant=\\"warning\\" minimal>
+                  Focus & Hover
+                </Button>
+                <br /><br />
+                <Button {...simulate('focus', 'active')} variant=\\"warning\\">
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"warning\\" primary>
+                  Focus & Active
+                </Button>
+                <Button {...simulate('focus', 'active')} variant=\\"warning\\" minimal>
+                  Focus & Active
+                </Button>
+                <br /><br />
+                <Button {...simulate('active')} variant=\\"warning\\">Active</Button>
+                <Button {...simulate('active')} variant=\\"warning\\" primary>Active</Button>
+                <Button {...simulate('active')} variant=\\"warning\\" minimal>Active</Button>
+                <br /><br />
+                <Button disabled variant=\\"danger\\">Disabled</Button>
+                <Button disabled variant=\\"danger\\" primary>Disabled</Button>
+                <Button disabled variant=\\"danger\\" minimal>Disabled</Button>
+                <br /><br />
+              </DemoLayout>",
+                  "title": "States",
+                },
+              ],
+              "slug": "button",
+              "title": "Button",
+            },
+            "card": Object {
+              "behavior": "behavior dummy text for the card component",
+              "design": "design theory about the card component",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.",
+                  "id": "basic",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "Basic card",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "A Card will render any children. For best results, please make sure your content matches the top/bottom margin and left/right padding of the other Card* components.",
+                  "id": "children",
+                  "scope": Object {
+                    "Button": [Function],
+                    "Card": [Function],
+                    "CardTitle": [Function],
+                    "CustomContent": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CustomContent>
+                    <Button fullWidth>Button</Button>
+                  </CustomContent>
+                </Card>
+              </DemoLayout>",
+                  "title": "Arbitrary children",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "If an onClick function is provided, the entire card becomes clickable and keyboard actionable.",
+                  "id": "clickable",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card onClick={event => console.log(event)}>
+                  <CardTitle>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "Clickable",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "The sections of Card are designed to work in any order.",
+                  "id": "order",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardImage": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                  <CardTitle minor>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+          
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CardImage src=\\"http://fillmurray.com/1001/563\\" alt=\\"Bill Murray\\" />
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+          
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                  <CardImage src=\\"http://fillmurray.com/1002/563\\" alt=\\"Bill Murray\\" />
+                </Card>
+              </DemoLayout>",
+                  "title": "Order of sections",
+                },
+              ],
+              "slug": "card",
+              "title": "Card",
+            },
+            "card-block": Object {
+              "behavior": "behavior dummy text for the card block component",
+              "design": "design theory about the card block component",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).",
+                  "id": "consistent-spacing",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "Consistent spacing",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.",
+                  "id": "children",
+                  "scope": Object {
+                    "Button": [Function],
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "CustomContent": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle>Card title</CardTitle>
+                  <CardBlock>
+                    <CustomContent>
+                      <Button fullWidth>Button</Button>
+                    </CustomContent>
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "Arbitrary children",
+                },
+              ],
+              "slug": "card-block",
+              "subcomponent": true,
+              "title": "CardBlock",
+            },
+            "card-image": Object {
+              "behavior": "behavior dummy text for the card image component",
+              "design": "design theory about the card image component",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+                  "id": "with-image",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardImage": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                  <CardTitle minor>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "With an image",
+                },
+              ],
+              "slug": "card-image",
+              "subcomponent": true,
+              "title": "CardImage",
+            },
+            "card-title": Object {
+              "behavior": "behavior dummy text for the card title component",
+              "design": "design theory about the card title component",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "In addition to a title, a Card can display a subtitle.",
+                  "id": "subtitle",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle subtitle=\\"Card subtitle\\">Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "With a subtitle",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "Both the title and subtitle can contain a simple string or any HTML/React elements.",
+                  "id": "complex-title",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                    "createStyledComponent": [Function],
+                  },
+                  "source": "
+              () => {
+                const Status = createStyledComponent('span', {
+                  color: 'red',
+                  fontSize: '0.6em',
+          
+                  '&:before': {
+                    backgroundColor: 'red',
+                    borderRadius: '0.8em',
+                    content: '\\"\\"',
+                    display: 'inline-block',
+                    height: '0.8em',
+                    marginRight: '0.5em',
+                    position: 'relative',
+                    top: '0.1em',
+                    width: '0.8em'
+                  }
+                });
+          
+                return (
+                  <DemoLayout>
+                    <Card>
+                      <CardTitle subtitle={<em>Subtitle</em>}>
+                        Card title<br />
+                        <Status>Status label</Status>
+                      </CardTitle>
+                      <CardBlock>
+                        Light years star stuff harvesting star light citizens of distant
+                        epochs encyclopaedia galactica vastness is bearable only through love,
+                        shores of the cosmic ocean!
+                      </CardBlock>
+                    </Card>
+                  </DemoLayout>
+                );
+              }",
+                  "title": "Complex title and subtitle",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.",
+                  "id": "minor-title",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardImage": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardImage src=\\"http://fillmurray.com/1000/563\\" alt=\\"Bill Murray\\" />
+                  <CardTitle minor>Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "Minor title",
+                },
+                Object {
+                  "backgroundColor": "#f5f7fa",
+                  "description": "If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.",
+                  "id": "meta",
+                  "scope": Object {
+                    "Card": [Function],
+                    "CardBlock": [Function],
+                    "CardTitle": [Function],
+                    "DemoLayout": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Card>
+                  <CardTitle meta=\\"July 24, 2017\\">Card title</CardTitle>
+                  <CardBlock>
+                    Light years star stuff harvesting star light citizens of distant
+                    epochs encyclopaedia galactica vastness is bearable only through love,
+                    shores of the cosmic ocean!
+                  </CardBlock>
+                </Card>
+              </DemoLayout>",
+                  "title": "With meta information",
+                },
+              ],
+              "slug": "card-title",
+              "subcomponent": true,
+              "title": "CardTitle",
+            },
+            "icon": Object {
+              "behavior": "behavior dummy text for the Icon component",
+              "design": "Lofty design theory about Icon",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "id": "icon",
+                  "scope": Object {
+                    "IconSentimentSatisfied": [Function],
+                  },
+                  "source": "<IconSentimentSatisfied />",
+                  "title": "Icon",
+                },
+                Object {
+                  "description": "You can apply a color to any icon.",
+                  "id": "color",
+                  "scope": Object {
+                    "IconSentimentSatisfied": [Function],
+                  },
+                  "source": "<IconSentimentSatisfied color=\\"coral\\" />",
+                  "title": "Color",
+                },
+                Object {
+                  "description": "Icons are available in three preset sizes, or you can supply your own custom size.",
+                  "id": "sizes",
+                  "scope": Object {
+                    "IconSentimentSatisfied": [Function],
+                  },
+                  "source": "
+              <div>
+                <IconSentimentSatisfied size=\\"small\\" />
+                <IconSentimentSatisfied />
+                <IconSentimentSatisfied size=\\"large\\" />
+                <IconSentimentSatisfied size=\\"7em\\" />
+              </div>",
+                  "title": "Sizes",
+                },
+                Object {
+                  "description": "Standalone icons need a title as opposed to decorative icons (those that repeat the information conveyed by text or do not add significant value).",
+                  "id": "title",
+                  "scope": Object {
+                    "IconSentimentSatisfied": [Function],
+                  },
+                  "source": "<IconSentimentSatisfied title=\\"smiley-face\\" />",
+                  "title": "Title",
+                },
+                Object {
+                  "description": "Some icons will be automatically mirrored for (right-to-left) RTL languages",
+                  "id": "rtl",
+                  "scope": Object {
+                    "IconHelp": [Function],
+                    "ThemeProvider": [Function],
+                  },
+                  "source": "
+              <ThemeProvider theme={{ direction: 'rtl' }}>
+                <IconHelp />
+              </ThemeProvider>",
+                  "title": "RTL",
+                },
+                Object {
+                  "description": "You can render a custom icon by supplying an SVG as a child.",
+                  "id": "custom",
+                  "scope": Object {
+                    "Icon": [Function],
+                  },
+                  "source": "
+              <Icon size=\\"7em\\" title=\\"CA Technologies\\">
+                <svg viewBox=\\"0 0 16 16\\">
+                  <path
+                    className=\\"trademark\\"
+                    d=\\"M14.514 10.187c-0.256 0-0.419-0.186-0.419-0.442s0.186-0.442 0.419-0.442c0.256 0 0.419 0.186 0.419 0.442 0 0.279-0.163 0.442-0.419 0.442zM14.514 9.373c-0.209 0-0.372 0.14-0.372 0.395s0.163 0.372 0.372 0.372c0.209 0 0.372-0.14 0.372-0.372 0-0.256-0.163-0.395-0.372-0.395zM14.653 9.977l-0.14-0.209h-0.070v0.209h-0.093v-0.489h0.14c0.093 0 0.163 0.047 0.163 0.14 0 0.070-0.047 0.116-0.093 0.14l0.14 0.186-0.047 0.023zM14.514 9.582h-0.070v0.14h0.070c0.047 0 0.093-0.023 0.093-0.070s-0.023-0.070-0.093-0.070z\\"
+                  />
+                  <g className=\\"technologies\\">
+                    <path d=\\"M0.788 12.187v-0.465h0.349v0.465h0.279v0.279h-0.279v0.814c0 0.070 0.047 0.093 0.116 0.093 0.047 0 0.116-0.023 0.163-0.023v0.279c-0.093 0-0.186 0.023-0.279 0.023-0.256 0-0.349-0.116-0.349-0.326v-0.861h-0.186v-0.279h0.186z\\" />
+                    <path d=\\"M1.905 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.861zM2.44 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z\\" />
+                    <path d=\\"M3.859 12.653c-0.047-0.116-0.116-0.209-0.279-0.209-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.14 0 0.233-0.093 0.302-0.233l0.256 0.14c-0.14 0.256-0.302 0.349-0.558 0.349-0.395 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.279 0 0.489 0.14 0.558 0.372l-0.279 0.14z\\" />
+                    <path d=\\"M4.394 13.607v-1.977h0.349v0.698c0.093-0.093 0.233-0.186 0.419-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.326z\\" />
+                    <path d=\\"M5.906 13.607v-1.442h0.302v0.163c0.116-0.093 0.279-0.186 0.442-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.302z\\" />
+                    <path d=\\"M7.953 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM7.953 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z\\" />
+                    <path d=\\"M8.837 13.607v-1.977h0.349v1.977z\\" />
+                    <path d=\\"M10.070 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM10.070 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z\\" />
+                    <path d=\\"M12.094 12.397c-0.070 0-0.163 0-0.209 0.023 0.047 0.070 0.070 0.14 0.070 0.256 0 0.279-0.186 0.465-0.535 0.465-0.14 0-0.256 0-0.256 0.093 0 0.233 0.931-0.093 0.931 0.489 0 0.209-0.209 0.419-0.651 0.419-0.372 0-0.628-0.116-0.628-0.349 0-0.186 0.14-0.256 0.256-0.256v0c-0.070-0.047-0.209-0.070-0.209-0.233 0-0.14 0.163-0.233 0.209-0.256-0.116-0.093-0.209-0.209-0.209-0.372 0-0.256 0.186-0.489 0.558-0.489 0.116 0 0.256 0.047 0.349 0.116 0.070-0.093 0.163-0.14 0.326-0.116v0.209zM11.094 13.746c0 0.116 0.093 0.163 0.372 0.163 0.209 0 0.302-0.116 0.302-0.163 0-0.070-0.093-0.163-0.419-0.163-0.209 0-0.256 0.116-0.256 0.163zM11.396 12.42c-0.14 0-0.256 0.093-0.256 0.233s0.093 0.233 0.256 0.233c0.14 0 0.233-0.116 0.233-0.233 0-0.14-0.093-0.233-0.233-0.233z\\" />
+                    <path d=\\"M12.327 11.932v-0.326h0.349v0.326h-0.349zM12.676 13.188v0.419h-0.349v-1.442h0.349v1.024z\\" />
+                    <path d=\\"M13.281 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.628-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.884zM13.816 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z\\" />
+                    <path d=\\"M15.119 12.56c-0.070-0.070-0.163-0.14-0.256-0.14-0.14 0-0.186 0.047-0.186 0.14 0 0.256 0.721 0.14 0.721 0.675 0 0.302-0.233 0.419-0.512 0.419-0.233 0-0.419-0.093-0.535-0.279l0.233-0.163c0.070 0.116 0.186 0.209 0.326 0.209 0.116 0 0.209-0.070 0.209-0.163 0-0.233-0.721-0.163-0.721-0.651 0-0.256 0.233-0.419 0.465-0.419 0.186 0 0.372 0.070 0.512 0.209l-0.256 0.163z\\" />
+                  </g>
+                  <g className=\\"ca\\">
+                    <path d=\\"M10.838 8.14c-0.279 0.419-0.698 0.675-1.186 0.675-0.651 0-1.21-0.302-1.21-1.024 0-1.047 1.535-1.419 2.722-1.489v0.302c0 0.698 0 1.047-0.326 1.535zM8.651 4.348c0.186-0.489 0.651-0.675 1.303-0.675 0.931 0 1.186 0.651 1.21 1.186v0.256c-2.559 0.116-4.955 0.605-4.909 2.931 0.023 1.628 1.512 2.303 2.536 2.303 1.186 0 1.838-0.326 2.489-1.117 0 0.349 0.047 0.698 0.116 0.954h2.28c-0.116-0.395-0.163-0.814-0.163-1.21v-4.257c0-1.024-0.186-1.605-0.744-2.117-0.535-0.489-1.373-0.744-2.536-0.744-1.070 0-1.977 0.233-2.652 0.698v0c0.558 0.465 0.931 1.070 1.070 1.791v0z\\" />
+                    <path d=\\"M6.116 7.953c0 0.047 0 0.093 0 0.14 0 0.023 0 0.047 0 0.070 0.047 0.837 0.442 1.349 0.814 1.652-0.628 0.372-1.396 0.512-2.070 0.512-2.443 0.023-3.908-1.721-3.908-4.141 0-2.512 1.512-4.327 4.071-4.327 1.861 0 3.396 1 3.559 2.931h-2.233c0-0.744-0.512-1.117-1.233-1.117-1.163 0-1.512 0.814-1.512 2.326 0 1.535 0.326 2.419 1.512 2.419 0.442 0 0.791-0.14 1-0.465v0z\\" />
+                  </g>
+                </svg>
+              </Icon>",
+                  "title": "Custom",
+                },
+                Object {
+                  "hideSource": true,
+                  "id": "categories",
+                  "scope": Object {
+                    "CategoryIndex": [Function],
+                  },
+                  "source": "<CategoryIndex />",
+                  "title": "Icons by Category",
+                },
+              ],
+              "slug": "icon",
+              "title": "Icon",
+            },
+            "link": Object {
+              "behavior": "behavior dummy text for the link component",
+              "design": "design theory about the link component",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "description": "Links inherit font size, weight, and family.",
+                  "id": "basic",
+                  "scope": Object {
+                    "Big": [Function],
+                    "Bold": [Function],
+                    "Link": [Function],
+                    "Serif": [Function],
+                    "Small": [Function],
+                  },
+                  "source": "
+              <div>
+                <Big>
+                  Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+                </Big>
+          
+                <Small>
+                  citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+                </Small>
+          
+                <Bold>
+                  vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+                </Bold>
+          
+                <Serif>
+                  shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+                </Serif>
+              </div>",
+                  "title": "Basic link",
+                },
+                Object {
+                  "description": "A Link will render any children.",
+                  "id": "children",
+                  "scope": Object {
+                    "Link": [Function],
+                  },
+                  "source": "
+              <Link href=\\"http://example.com\\">
+                <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
+              </Link>",
+                  "title": "Children",
+                },
+                Object {
+                  "description": "Links can be styled as these variants, to help communicate purpose.",
+                  "id": "variants",
+                  "scope": Object {
+                    "DemoLayout": [Function],
+                    "Link": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Link href=\\"http://example.com\\">Regular</Link>
+                <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+                <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+                <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+              </DemoLayout>",
+                  "title": "Variants",
+                },
+                Object {
+                  "description": "This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.",
+                  "id": "react-router",
+                  "scope": Object {
+                    "BrowserRouter": [Function],
+                    "Link": [Function],
+                    "ReactRouterLink": [Function],
+                    "Redirect": [Function],
+                    "Route": [Function],
+                    "Switch": [Function],
+                  },
+                  "source": "
+              <BrowserRouter>
+                <Switch>
+                  <Route
+                    path=\\"/components/:componentId/:path?\\"
+                    render={route => {
+                      const path = route.match.params.path;
+          
+                      if ('page-2' === path) {
+                        return <Link to=\\"/components/link/page-1\\" replace element={ReactRouterLink}>Page 1</Link>;
+                      }
+                      return <Link to=\\"/components/link/page-2\\" replace element={ReactRouterLink}>Page 2</Link>;
+                    }}
+                  />
+                  <Redirect from=\\"/\\" to=\\"/components/link\\" />
+                </Switch>
+              </BrowserRouter>",
+                  "title": "ReactRouter",
+                },
+                Object {
+                  "hideSource": true,
+                  "id": "states",
+                  "scope": Object {
+                    "DemoLayout": [Function],
+                    "Link": [Function],
+                    "simulate": [Function],
+                  },
+                  "source": "
+              <DemoLayout>
+                <Link href=\\"http://example.com\\">Regular</Link>
+                <Link {...simulate('hover')} href=\\"http://example.com\\">Hover</Link>
+                <Link {...simulate('focus')} href=\\"http://example.com\\">Focus</Link>
+                <Link {...simulate('focus', 'hover')} href=\\"http://example.com\\">Focus & Hover</Link>
+                <Link {...simulate('focus', 'active')} href=\\"http://example.com\\">Focus & Active</Link>
+                <Link {...simulate('active')} href=\\"http://example.com\\">Active</Link>
+                <br /><br />
+                <Link variant=\\"danger\\" href=\\"http://example.com\\">Danger</Link>
+                <Link {...simulate('hover')} variant=\\"danger\\" href=\\"http://example.com\\">Hover</Link>
+                <Link {...simulate('focus')} variant=\\"danger\\" href=\\"http://example.com\\">Focus</Link>
+                <Link {...simulate('focus', 'hover')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Hover</Link>
+                <Link {...simulate('focus', 'active')} variant=\\"danger\\" href=\\"http://example.com\\">Focus & Active</Link>
+                <Link  {...simulate('active')} variant=\\"danger\\" href=\\"http://example.com\\">Active</Link>
+                <br /><br />
+                <Link variant=\\"success\\" href=\\"http://example.com\\">Success</Link>
+                <Link {...simulate('hover')} variant=\\"success\\" href=\\"http://example.com\\">Hover</Link>
+                <Link {...simulate('focus')} variant=\\"success\\" href=\\"http://example.com\\">Focus</Link>
+                <Link {...simulate('focus', 'hover')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Hover</Link>
+                <Link {...simulate('focus', 'active')} variant=\\"success\\" href=\\"http://example.com\\">Focus & Active</Link>
+                <Link {...simulate('active')} variant=\\"success\\" href=\\"http://example.com\\">Active</Link>
+                <br /><br />
+                <Link variant=\\"warning\\" href=\\"http://example.com\\">Warning</Link>
+                <Link {...simulate('hover')} variant=\\"warning\\" href=\\"http://example.com\\">Hover</Link>
+                <Link {...simulate('focus')} variant=\\"warning\\" href=\\"http://example.com\\">Focus</Link>
+                <Link {...simulate('focus', 'hover')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Hover</Link>
+                <Link {...simulate('focus', 'active')} variant=\\"warning\\" href=\\"http://example.com\\">Focus & Active</Link>
+                <Link {...simulate('active')} variant=\\"warning\\" href=\\"http://example.com\\">Active</Link>
+              </DemoLayout>",
+                  "title": "States",
+                },
+              ],
+              "slug": "link",
+              "title": "Link",
+            },
+            "theme-provider": Object {
+              "behavior": "some cool behavior info",
+              "design": "Lofty design theory about ThemeProvider",
+              "doc": Object {
+                "default": Object {},
+              },
+              "examples": Array [
+                Object {
+                  "description": <glamorous(div)>
+                    <p>
+                              Wrap any number of components in a ThemeProvider to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.
+                    </p>
+          </glamorous(div)>,
+                  "id": "theme-provider",
+                  "scope": Object {
+                    "DemoLayout": [Function],
+                    "Sample": [Function],
+                    "ThemeProvider": [Function],
+                  },
+                  "source": "
+              () => {
+                return (
+                  <DemoLayout>
+                    {/* This will affect all components inside this ThemeProvider that use this variable. */}
+                    <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+                      <Sample />
+                    </ThemeProvider>
+          
+                    {/* This will affect all components inside this ThemeProvider that use this variable,
+                        which should only be Sample components due to the namespace. */}
+                    <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+                    	<Sample />
+                    </ThemeProvider>
+                  </DemoLayout>
+                );
+              }",
+                  "title": "ThemeProvider",
+                },
+              ],
+              "slug": "theme-provider",
+              "title": "ThemeProvider",
+            },
+            "utils": Object {
+              "behavior": "some cool behavior info",
+              "design": "Lofty design theory about the utils",
+              "doc": Object {
+                "description": "Shared utilities",
+              },
+              "examples": Array [
+                Object {
+                  "description": "Just a simple sample component to demonstrate the styling below.",
+                  "id": "sample-component",
+                  "scope": Object {
+                    "Sample": [Function],
+                  },
+                  "source": "<Sample />",
+                  "title": "Sample Component",
+                },
+                Object {
+                  "description": <glamorous(div)>
+                    <p>
+                              If you only need to style the themed properties of a component, you can use this helper. It’s effectively the same as wrapping a ThemeProvider around a single component.
+                    </p>
+                    <p>
+                              <glamorous(code)>
+                                        component
+                              </glamorous(code)>
+                               — a
+                               
+                              <Link
+                                        href="https://github.com/paypal/glamorous"
+                              >
+                                        Glamorous
+                              </Link>
+                               
+                              component
+                    </p>
+                    <p>
+                              <glamorous(code)>
+                                        theme
+                              </glamorous(code)>
+                               — a shallow object of theme variables or a function that accepts props and context and returns an object of theme variables
+                    </p>
+          </glamorous(div)>,
+                  "id": "create-themed-component",
+                  "scope": Object {
+                    "Sample": [Function],
+                    "createThemedComponent": [Function],
+                  },
+                  "source": "
+              () => {
+                const MyThemedSample = createThemedComponent(Sample, {
+                  color_primary: 'mediumvioletred'
+                });
+          
+                return <MyThemedSample />;
+              }",
+                  "title": <glamorous(code)>
+                    createThemedComponent(component, theme)
+          </glamorous(code)>,
+                },
+                Object {
+                  "description": <glamorous(div)>
+                    <p>
+                              This is how you apply arbitrary styles to a component.
+                    </p>
+                    <p>
+                              <glamorous(code)>
+                                        element
+                              </glamorous(code)>
+                               — a React component or a string representation of an HTML element
+                    </p>
+                    <p>
+                              <glamorous(code)>
+                                        styles
+                              </glamorous(code)>
+                               — an
+                               
+                              <Link
+                                        href="https://github.com/threepointone/glamor/blob/master/docs/howto.md"
+                              >
+                                        object of style rules
+                              </Link>
+                               
+                              or a function that accepts props and context and returns an object of style rules
+                    </p>
+                    <p>
+                              <glamorous(code)>
+                                        options
+                              </glamorous(code)>
+                               — An object of optional configuration. A mix of Mineral UI and
+                               
+                              <Link
+                                        href="https://glamorous.rocks/api"
+                              >
+                                        Glamorous options
+                              </Link>
+                              . Most common uses are setting a display name on your component,
+                               
+                              <glamorous(code)>
+                                        {displayName: 'MyComponentName'}
+                              </glamorous(code)>
+                              , declaring which props to forward on to the element,
+                               
+                              <glamorous(code)>
+                                        {forwardProps: [href, customProp]}
+                              </glamorous(code)>
+                              , and including a style reset 
+                              <glamorous(code)>
+                                        { includeStyleReset: true }
+                              </glamorous(code)>
+                              .
+                    </p>
+          </glamorous(div)>,
+                  "id": "create-styled-component",
+                  "scope": Object {
+                    "Sample": [Function],
+                    "createStyledComponent": [Function],
+                  },
+                  "source": "
+              () => {
+                const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
+                  outline: '3px dashed mediumvioletred',
+                  fontSize: theme.fontSize_h1
+                }));
+          
+                return <MyStyledSample />;
+              }
+            ",
+                  "title": <glamorous(code)>
+                    createStyledComponent(element, styles, options)
+          </glamorous(code)>,
+                },
+              ],
+              "hidePropDoc": true,
+              "slug": "utils",
+              "title": "Utils",
+            },
+          }
+        }
+      />
+      <Footer />
+    </glamorous(main)>
+  </glamorous(div)>
+</div>
+`;

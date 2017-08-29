@@ -18,15 +18,13 @@
 module.exports = {
   coverageDirectory: 'reports/coverage',
   coveragePathIgnorePatterns: [
-    '/__demo__/',
     '/node_modules/',
-    '/packages/icon/src/Icon.+.js',
-    '/packages/site/'
+    '/components/Icon/Icon.+.js',
+    '/website/'
   ],
   moduleNameMapper: {
     '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js'
   },
-  setupTestFrameworkScriptFile:
-    '<rootDir>/utils/test/setupTestFrameworkScript.js',
+  setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
   snapshotSerializers: ['enzyme-to-json/serializer']
 };

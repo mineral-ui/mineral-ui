@@ -42,7 +42,7 @@ npm update
 
 ### Set Up
 
-1. Install the packages and their dependencies
+1. Install the package dependencies
 
     ```sh
     npm install
@@ -60,16 +60,9 @@ npm update
     nvm install
     ```
 
-1. Build the project
+1. Start the demo
 
     ```sh
-    npm run build
-    ```
-
-1. Navigate to the component you wish to edit and start its demo
-
-    ```sh
-    cd packages/components/button
     npm start
     ```
 
@@ -100,8 +93,6 @@ Unit tests use [Jest](https://github.com/facebook/jest). When appropriate, [snap
     ```sh
     npm test
     ```
-
-    You can run a scoped suite of unit tests by running that same command in any package’s directory.
 
 
 ### Developer Docs

@@ -1,30 +1,48 @@
 {
-  "name": "@mineral-ui/mineral-ui",
+  "name": "mineral-ui",
+  "author": "CA Technologies",
   "description": "Mineral UI component library",
+  "version": "0.0.0",
   "license": "Apache-2.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineral-ui/mineral-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mineral-ui/mineral-ui/issues"
+  },
+  "homepage": "http://mineral-ui.com",
+  "main": "./dist/index.js",
+  "module": "./dist/es/index.js",
+  "jsnext:main": "./dist/es/index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap && npm run link-parent-bin",
-    "build": "npm run clean && npm run bootstrap && lerna run build",
-    "clean": "find packages -name dist -or -name lib -or -name node_modules -type d | xargs rm -rf",
+    "build": "npm run clean && ./scripts/build.js",
+    "build:analyze": "ANALYZE=true npm run start",
+    "build:icons": "./scripts/build-icons.js",
+    "clean": "rm -rf dist",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
-    "deploy:site": "npm run build && npm run test && npm run deploy:site:dist",
-    "deploy:site:dist": "netlify deploy",
+    "deploy": "npm run build && npm test && npm run deploy:dist",
+    "deploy:dist": "netlify deploy",
     "eslint": "eslint .",
     "flow": "flow",
     "flow:restart": "npm run flow -- stop; npm run flow",
     "flow-typed": "flow-typed",
-    "format": "node ./scripts/format.js && eslint --fix .",
-    "jest": "jest --no-cache",
-    "lerna": "lerna",
-    "link-parent-bin": "link-parent-bin -c packages",
+    "format": "./scripts/format.js && eslint --fix .",
+    "jest": "jest",
     "lint": "npm run eslint",
-    "pack-ls": "lerna run pack-ls",
-    "release:manual": "npm run build && npm run test && lerna publish --message='chore(publish): Publish'",
-    "release:semantic": "npm run release:manual -- --conventional-commits",
-    "start": "lerna exec --scope @mineral-ui/site -- npm start",
+    "pack-ls": "cd dist && tar -tvf $(npm pack) && rm *.tgz",
+    "postinstall": "npm run build:icons",
+    "release": "./scripts/release.js",
+    "release:bak": "npm run build && npm test && ./scripts/release.js",
+    "start": "NODE_ENV=development webpack-dev-server --progress",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
@@ -33,9 +51,7 @@
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.1",
     "babel-plugin-flow-react-proptypes": "4.1.0",
-    "babel-plugin-module-resolver": "3.0.0-beta.0",
     "babel-plugin-polished": "1.1.0",
-    "babel-plugin-syntax-dynamic-import": "6.18.0",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.23.0",
@@ -47,6 +63,7 @@
     "babel-preset-react": "6.24.1",
     "colorable": "1.0.5",
     "commitizen": "2.9.6",
+    "conventional-changelog-cli": "1.3.2",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.28.4",
     "cz-conventional-changelog": "2.0.0",
@@ -68,10 +85,9 @@
     "glob": "7.1.2",
     "html-webpack-plugin": "2.30.1",
     "husky": "0.14.3",
+    "inquirer": "3.2.3",
     "jest": "20.0.4",
     "jest-glamor-react": "3.1.0",
-    "lerna": "2.0.0",
-    "link-parent-bin": "0.1.3",
     "lodash.camelcase": "4.3.0",
     "lodash.flatten": "4.4.0",
     "lodash.upperfirst": "4.3.1",
@@ -91,25 +107,18 @@
     "react-router-dom": "4.1.1",
     "react-test-renderer": "15.6.1",
     "rimraf": "2.6.1",
-    "string-replace-loader": "1.3.0",
     "style-loader": "0.18.2",
     "svgo": "0.7.2",
     "uglifyjs-webpack-plugin": "0.4.6",
     "validate-commit-msg": "2.12.2",
     "webpack": "3.5.4",
     "webpack-bundle-analyzer": "2.9.0",
-    "webpack-dev-server": "2.7.1",
-    "webpack-merge": "4.1.0"
+    "webpack-dev-server": "2.7.1"
   },
   "peerDependencies": {
     "glamor": "^2.0.0",
     "glamorous": "^4.0.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }

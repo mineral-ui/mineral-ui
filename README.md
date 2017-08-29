@@ -23,40 +23,39 @@ A design system and [React](https://facebook.github.io/react/) component library
 
 ## Getting Started
 
-Mineral UI is distributed as a multitude of [npm packages](https://www.npmjs.com/org/mineral-ui). E.g., to install the Button package:
+Mineral UI is distributed as an [npm package](https://www.npmjs.com/pacakge/mineral-ui).
 
-1. Install the Mineral UI packages that you wish to use
+1. Install the Mineral UI package
 
 ```sh
-npm install --save @mineral-ui/button @mineral-ui/component-utils
+npm install --save mineral-ui
 ```
 
 2. Install any missing peer dependencies reported by `npm` or `yarn`
 3. Then, in your app, import and use just like any other React component
 
-_ES2015_
-
 ```jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from '@mineral-ui/component-utils';
-import Button from '@mineral-ui/button';
+import { render } from 'react-dom';
+import Button from 'mineral-ui/Button';
+import ThemeProvider from 'mineral-ui/ThemeProvider';
 
-const App = () => (
-  <div>
-    <Button>Do Something</Button>
-  </div>
-);
+function App() {
+  return (
+    <ThemeProvider>
+      <Button>
+        Hello World
+      </Button>
+    </ThemeProvider>
+  );
+}
 
-ReactDOM.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('app')
-);
+render(<App />, document.getElementById('app'));
 ```
 
-> Note: Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+> Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+
+> Also, please see our [import syntax guidelines](./docs/import-syntax.md).
 
 
 ### Open Sans Font
@@ -95,7 +94,9 @@ Thank you for offering your time, expertise, and feedback. It’s greatly apprec
 
 ## Versioning
 
-This project uses [SemVer](http://semver.org/) for its versioning. Each package (component) is versioned independently.
+Until this project reaches a 1.0 milestone, minor version numbers will simply be incremented during each release.  The [Changelog](./CHANGELOG.md) will continue to document the different types of updates, including any "breaking changes".
+
+After the 1.0 milestone, this project will follow [SemVer](http://semver.org/).
 
 
 ## Browser Support
