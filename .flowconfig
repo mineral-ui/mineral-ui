@@ -1,15 +1,17 @@
 [ignore]
 .*/docs/.*
-.*/node_modules/.*
+.*/node_modules/conventional-changelog-core/.*
+.*/node_modules/findup/.*
+.*/node_modules/polished/.*
 .*/reports/.*
 .*/scripts/.*
 .*/*.template.js
 ./utils
+./dist
 
 [include]
 
 [libs]
-*./packages/.*
 
 [options]
 suppress_type=$FlowFixMe
