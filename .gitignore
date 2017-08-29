@@ -1,7 +1,6 @@
 .DS_Store
 *.tgz
 
-lerna-debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -13,9 +12,9 @@ lib/
 node_modules/
 reports/
 
-# Exclude generated files from icon package
-packages/icon/src/Icon*.js
-packages/icon/src/index.js
-packages/icon/src/__demo__/components/categories
-packages/icon/src/__demo__/components/CategoryIndex.js
-!packages/icon/src/Icon.js # not generated
+# Exclude generated files from Icon component
+src/Icon/Icon*.js
+src/Icon/index.js
+src/website/app/demos/Icon/components/categories
+src/website/app/demos/Icon/components/CategoryIndex.js
+!src/Icon/Icon.js # not generated

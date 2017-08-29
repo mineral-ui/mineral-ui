@@ -21,8 +21,8 @@ For a PR to be considered, each item in the checklist must be checked.
 ### How to test
 <!-- Please describe the steps for reviewers to take to cover all facets of this feature. -->
 
-1. `cd mineral-ui/packages/button && npm start`
-2. Navigate to Site > Button > Buttons with kittens section
+1. `cd mineral-ui && npm start`
+2. Navigate to Button > Buttons with kittens section
 3. Click the Cat Button twice (three times in IE 11)
 4. ¡Hear the cat meow en Español!
 
