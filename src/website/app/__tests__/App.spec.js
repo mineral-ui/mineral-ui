@@ -30,10 +30,4 @@ describe('App', () => {
 
     expect(app.exists()).toEqual(true);
   });
-
-  it('renders correctly', () => {
-    const app = renderApp();
-
-    expect(app).toMatchSnapshot();
-  });
 });
