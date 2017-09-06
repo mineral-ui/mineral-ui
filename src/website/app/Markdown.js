@@ -41,6 +41,11 @@ type mdHeadingProps = {
   id?: string
 };
 
+type mdImageProps = {
+  src?: string,
+  alt?: string
+};
+
 type mdLinkProps = {
   href: string,
   title?: string,
@@ -105,6 +110,11 @@ const Root = createStyledComponent('div', ({ theme }) => ({
 const CodeBlock = createStyledComponent('div', ({ theme }) => ({
   marginBottom: theme.spacing_quad
 }));
+const Image = createStyledComponent('img', {
+  '@media(max-width: 60rem)': {
+    width: '100%'
+  }
+});
 
 function replaceHeading(level, children, headingProps: mdHeadingProps) {
   // Render the same props and children that were passed in, but prepend a
@@ -167,6 +177,9 @@ export default function Markdown({ children, className, scope }: Props) {
           : <code>
               {children}
             </code>;
+      },
+      img({ src, alt }: mdImageProps) {
+        return <Image src={src} alt={alt} />;
       },
       h1({ children }) {
         return replaceHeading(1, children, {});

@@ -18,7 +18,7 @@
 import color from './color';
 import styleVariables from './styleVariables';
 
-const themeColor = 'sky';
+const themeColor = 'blue';
 
 function createColorRamp(color: {}, key: string, name: string) {
   const ramp = {};
