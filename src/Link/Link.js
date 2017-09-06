@@ -20,7 +20,7 @@ import { createStyledComponent } from '../utils';
 
 type Props = {
   /** Content of the Link */
-  children: MnrlReactNode,
+  children?: MnrlReactNode,
   /** A URL or a URL fragment that the link points to */
   href?: string,
   /** Element to be used as the root node - e.g. "a" or { ReactRouterLink } */
@@ -87,7 +87,8 @@ export default function Link({
     ...restProps
   };
   const Root = createStyledComponent(element, linkStyles, {
-    displayName: 'Link'
+    displayName: 'Link',
+    filterProps: ['variant']
   });
 
   return (
