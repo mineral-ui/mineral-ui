@@ -1,6 +1,3 @@
-# Change Log
-
-All notable changes to this project will be documented in this file.
 <a name="0.1.0-alpha.0"></a>
 # 0.1.0-alpha.0 (2017-09-05)
 
