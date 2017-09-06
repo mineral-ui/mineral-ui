@@ -65,8 +65,12 @@ exec('cp package.json _package.json');
 exec(`npm --no-git-tag-version version ${nextVersion}`);
 
 // Generate changelog
+const changelogConfigFile = path.resolve(
+  __dirname,
+  '../utils/changelogConfig.js'
+);
 exec(
-  'conventional-changelog --preset angular --infile CHANGELOG.md --same-file --append'
+  `conventional-changelog --preset angular --infile CHANGELOG.md --same-file --config ${changelogConfigFile}`
 );
 // Check if a changelog has been generated
 // Note: tmpfile used to get output from git status command
