@@ -17,6 +17,7 @@
 /* @flow */
 import GettingStarted from './GettingStarted';
 import Theming from './Theming';
+import Color from './Color';
 import Typography from './Typography';
 
 type Page = {
@@ -36,14 +37,19 @@ const pages: Pages = [
     path: '/getting-started'
   },
   {
-    title: 'Theming',
-    component: Theming,
-    path: '/theming'
+    title: 'Color',
+    component: Color,
+    path: '/color'
   },
   {
     title: 'Typography',
     component: Typography,
     path: '/typography'
+  },
+  {
+    title: 'Theming',
+    component: Theming,
+    path: '/theming'
   }
 ];
 
