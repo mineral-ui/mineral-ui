@@ -15,8 +15,12 @@
  */
 import serializer from 'jest-glamor-react';
 import { simulations } from 'glamor';
+import raf from 'raf';
 
 expect.addSnapshotSerializer(serializer);
 
 // Enable Glamor simulate helper
 simulations(true);
+
+// Polyfill requestAnimationFrame
+raf.polyfill();

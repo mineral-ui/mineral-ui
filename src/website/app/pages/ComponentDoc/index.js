@@ -28,13 +28,15 @@ import DocWhenHowToUse from './DocWhenHowToUse';
 
 type Props = {
   className?: string,
-  componentTheme?: (theme: Object) => Object,
+  componentTheme?: Theme | Array<Theme>,
   description?: MnrlReactNode,
   doc: Object,
   examples?: Array<any>,
   hidePropDoc?: boolean,
   title: string
 };
+
+type Theme = (theme: Object) => Object;
 
 const Root = createStyledComponent(
   'div',

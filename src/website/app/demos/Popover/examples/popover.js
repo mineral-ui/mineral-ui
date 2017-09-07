@@ -15,16 +15,17 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import Button from '../../../../../Button';
+import DemoContent from '../components/DemoContent';
+import Popover from '../../../../../Popover';
+
+export default {
+  id: 'basic',
+  title: 'Popover',
+  description: 'Simple popover.',
+  scope: { Button, DemoContent, Popover },
+  source: `
+    <Popover content={<DemoContent />}>
+      <Button>Open Popover</Button>
+    </Popover>`
+};

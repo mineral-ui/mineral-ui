@@ -47,11 +47,11 @@ export default {
   lineHeight: 1.25,
   lineHeight_prose: 1.5,
 
-  shadow_1: 'rgba(0,0,0,0.5) 0 1px 2px',
-  shadow_2: 'rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.35) 0 2px 4px',
-  shadow_3: 'rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.25) 0 2px 8px',
-  shadow_4: 'rgba(0,0,0,0.5) 0 1px 1px, rgba(0,0,0,0.30) 0 4px 10px',
-  shadow_5: 'rgba(0,0,0,0.5) 0 1px 2px, rgba(0,0,0,0.60) 0 15px 15px',
+  shadow_1: '0 1px 2px 0 rgba(0,0,0,0.4)',
+  shadow_2: '0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)',
+  shadow_3: '0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)',
+  shadow_4: '0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)',
+  shadow_5: '0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)',
 
   size_small: pxToEm(24),
   size_medium: pxToEm(32),

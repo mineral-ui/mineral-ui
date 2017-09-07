@@ -15,16 +15,22 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import boundaries from './boundaries';
+import controlled from './controlled';
+import disabled from './disabled';
+import focus from './focus';
+import overflow from './overflow';
+import placement from './placement';
+import popover from './popover';
+import title from './title';
+
+export default [
+  popover,
+  title,
+  placement,
+  overflow,
+  boundaries,
+  focus,
+  disabled,
+  controlled
+];

@@ -21,9 +21,18 @@ import button from './Button';
 import card from './Card';
 import icon from './Icon';
 import link from './Link';
+import popover from './Popover';
 import themeProvider from './ThemeProvider';
 import utils from './utils';
 
-const demos = flatten([button, card, icon, link, themeProvider, utils]);
+const demos = flatten([
+  button,
+  card,
+  icon,
+  link,
+  popover,
+  themeProvider,
+  utils
+]);
 
 export default createKeyMap(demos, 'slug');
