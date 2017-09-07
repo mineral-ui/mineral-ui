@@ -24,6 +24,8 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
+  // Menu_backgroundColor: baseTheme.color_white,
+
   ...baseTheme
 });
 
@@ -32,7 +34,9 @@ const Root = createStyledComponent(
   props => {
     const theme = componentTheme(props.theme);
 
-    return {};
+    return {
+      // backgroundColor: theme.Menu_backgroundColor
+    };
   },
   {
     displayName: 'Menu',

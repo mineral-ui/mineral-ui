@@ -15,8 +15,26 @@
  */
 
 /* @flow */
-import menuItem from './menuItem';
-import states from './states';
-import variants from './variants';
+import { mineralTheme } from '../../../../../../utils';
+import Menu, { MenuItem } from '../../../../../../Menu';
 
-export default [states, menuItem, variants];
+export default {
+  id: 'variants',
+  title: 'Variants',
+  // $FlowFixMe
+  backgroundColor: mineralTheme.color_gray_10,
+  description: 'Various variants',
+  scope: { Menu, MenuItem },
+  source: `
+    <Menu>
+      <MenuItem variant="danger">
+        Danger
+      </MenuItem>
+      <MenuItem variant="success">
+        Success
+      </MenuItem>
+      <MenuItem variant="warning">
+        Warning
+      </MenuItem>
+    </Menu>`
+};
