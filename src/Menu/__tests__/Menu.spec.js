@@ -15,26 +15,27 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import themeProvider from './ThemeProvider';
-import utils from './utils';
+import React from 'react';
+import { shallow } from 'enzyme';
+import Menu from '../Menu';
+import examples from '../../website/app/demos/Menu/examples';
+import testDemoExamples from '../../../utils/testDemoExamples';
 
-const demos = flatten([
-  button,
-  card,
-  icon,
-  link,
-  menu,
-  popover,
-  themeProvider,
-  utils
-]);
+function renderMenu(props, children) {
+  return shallow(
+    <Menu {...props}>
+      {children}
+    </Menu>
+  );
+}
 
-export default createKeyMap(demos, 'slug');
+describe('Menu', () => {
+  let menu;
+  it('renders', () => {
+    menu = renderMenu({}, 'Children');
+
+    expect(menu.exists()).toEqual(true);
+  });
+
+  testDemoExamples(examples);
+});

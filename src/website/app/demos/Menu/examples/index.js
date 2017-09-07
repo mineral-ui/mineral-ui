@@ -15,26 +15,9 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import themeProvider from './ThemeProvider';
-import utils from './utils';
+import menuExamples from './menu';
+import menuItemExamples from './menu-item';
 
-const demos = flatten([
-  button,
-  card,
-  icon,
-  link,
-  menu,
-  popover,
-  themeProvider,
-  utils
-]);
+const examples = [].concat(menuExamples, menuItemExamples);
 
-export default createKeyMap(demos, 'slug');
+export default examples;

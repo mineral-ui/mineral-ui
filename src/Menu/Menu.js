@@ -15,26 +15,34 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import themeProvider from './ThemeProvider';
-import utils from './utils';
+import React from 'react';
+import { createStyledComponent } from '../utils';
 
-const demos = flatten([
-  button,
-  card,
-  icon,
-  link,
-  menu,
-  popover,
-  themeProvider,
-  utils
-]);
+type Props = {
+  /** [MenuItem](../menu-item)s */
+  children: MnrlReactNode
+};
 
-export default createKeyMap(demos, 'slug');
+export const componentTheme = (baseTheme: Object) => ({
+  ...baseTheme
+});
+
+const Root = createStyledComponent(
+  'div',
+  props => {
+    const theme = componentTheme(props.theme);
+
+    return {};
+  },
+  {
+    displayName: 'Menu',
+    includeStyleReset: true
+  }
+);
+
+/**
+ * Menu component
+ */
+export default function Menu(props: Props) {
+  return <Root {...props} />;
+}

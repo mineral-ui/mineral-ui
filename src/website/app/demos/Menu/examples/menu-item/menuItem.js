@@ -15,26 +15,26 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import themeProvider from './ThemeProvider';
-import utils from './utils';
+import { mineralTheme } from '../../../../../../utils';
+import Menu, { MenuItem } from '../../../../../../Menu';
 
-const demos = flatten([
-  button,
-  card,
-  icon,
-  link,
-  menu,
-  popover,
-  themeProvider,
-  utils
-]);
-
-export default createKeyMap(demos, 'slug');
+export default {
+  id: 'basic',
+  title: 'Basic Menu',
+  // $FlowFixMe
+  backgroundColor: mineralTheme.color_gray_10,
+  description: 'This is a menu item',
+  scope: { Menu, MenuItem },
+  source: `
+    <Menu>
+      <MenuItem>
+        Menu item text
+      </MenuItem>
+      <MenuItem>
+        Menu item text
+      </MenuItem>
+      <MenuItem>
+        Menu item text
+      </MenuItem>
+    </Menu>`
+};
