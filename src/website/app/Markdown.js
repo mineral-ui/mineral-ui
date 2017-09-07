@@ -195,7 +195,7 @@ export default function Markdown({ children, className, scope }: Props) {
     }
   });
 
-  const compiled = compile(children);
+  const compiled = compile(children, { smartypants: false });
 
   return (
     <Root className={className}>

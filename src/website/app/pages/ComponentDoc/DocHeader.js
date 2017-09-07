@@ -25,12 +25,14 @@ type Props = {
   bestPractices?: Array<Object>,
   children?: string,
   className?: string,
-  componentTheme?: (theme: Object) => Object,
+  componentTheme?: Theme | Array<Theme>,
   examples?: Array<any>,
   propDoc?: Object,
   title: string,
   whenHowToUse?: string
 };
+
+type Theme = (theme: Object) => Object;
 
 const styles = {
   header: ({ theme }) => ({

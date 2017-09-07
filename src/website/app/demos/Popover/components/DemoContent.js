@@ -15,16 +15,18 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import React from 'react';
+import { createStyledComponent } from '../../../../../utils';
+
+const Root = createStyledComponent('div', {
+  width: '13.75em'
+});
+
+export default function DemoContent() {
+  return (
+    <Root>
+      Light years star stuff harvesting star light citizens of distant epochs
+      encyclopaedia galactica.
+    </Root>
+  );
+}

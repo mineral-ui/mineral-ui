@@ -23,9 +23,11 @@ import VariableTable from '../../VariableTable';
 
 type Props = {|
   baseTheme: Object,
-  componentTheme: (theme: Object) => Object,
+  componentTheme: Theme | Array<Theme>,
   title: string
 |};
+
+type Theme = (theme: Object) => Object;
 
 const createKeyMirror = (obj: Object) => {
   let mirror = {};
@@ -60,7 +62,18 @@ export default function DocThemeVariables({
   title
 }: Props) {
   const baseThemeKeys = createKeyMirror(baseTheme);
-  const theme = componentTheme(baseThemeKeys);
+
+  let theme;
+  if (Array.isArray(componentTheme)) {
+    theme = componentTheme.reduce((acc, themeFn) => {
+      return {
+        ...acc,
+        ...themeFn(baseThemeKeys)
+      };
+    }, {});
+  } else {
+    theme = componentTheme(baseThemeKeys);
+  }
 
   return (
     <Section>
