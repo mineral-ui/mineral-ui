@@ -17,24 +17,28 @@
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
 import Menu, { MenuItem } from '../../../../../../Menu';
+import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'basic',
-  title: 'Basic Menu',
+  title: 'Basic Menu Item',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'This is a menu item',
-  scope: { Menu, MenuItem },
+  description:
+    'This is a menu item. Note: `MenuItem`s normally occupy the full available width of their container. The `MenuItem`s here are width-constrained for illustration purposes.',
+  scope: { DemoLayout, Menu, MenuItem },
   source: `
-    <Menu>
-      <MenuItem>
-        Menu item text
-      </MenuItem>
-      <MenuItem>
-        Menu item text
-      </MenuItem>
-      <MenuItem>
-        Menu item text
-      </MenuItem>
-    </Menu>`
+    <DemoLayout>
+      <Menu>
+        <MenuItem>
+          Menu item text
+        </MenuItem>
+        <MenuItem>
+          Menu item text
+        </MenuItem>
+        <MenuItem>
+          Menu item text
+        </MenuItem>
+      </Menu>
+    </DemoLayout>`
 };

@@ -16,28 +16,25 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
+import IconCloud from '../../../../../../Icon/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
+import ThemeProvider from '../../../../../../ThemeProvider';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'basic',
-  title: 'Basic Menu',
-  // $FlowFixMe
+  id: 'rtl',
+  title: 'RTL Support',
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'This is a menu',
-  scope: { DemoLayout, Menu, MenuItem },
+  description: '',
+  scope: { DemoLayout, IconCloud, Menu, MenuItem, ThemeProvider },
   source: `
-  <DemoLayout>
-    <Menu>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-    </Menu>
-  </DemoLayout>`
+    <DemoLayout dir="rtl">
+      <ThemeProvider theme={{ direction: 'rtl' }}>
+        <Menu>
+          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
+          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
+          <MenuItem withArrow>مع السهم</MenuItem>
+        </Menu>
+      </ThemeProvider>
+    </DemoLayout>`
 };

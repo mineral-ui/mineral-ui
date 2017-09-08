@@ -16,12 +16,14 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../utils';
+import { createStyledComponent } from '../utils';
+import Button from '../Button';
+import IconChevronRight from '../Icon/IconChevronRight';
 
 type Props = {
   /** Rendered content of the component */
   children?: MnrlReactNode,
-  /** Disables the button */
+  /** Disables the menu item */
   disabled?: boolean,
   /** Icon that goes after the children*/
   iconEnd?: React$Element<*>,
@@ -32,7 +34,9 @@ type Props = {
   /** Secondary text */
   secondaryText?: MnrlReactNode,
   /** Available variants */
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
+  variant?: 'regular' | 'danger' | 'success' | 'warning',
+  /** Displays an arrow in place of the end icon */
+  withArrow?: boolean
 };
 
 // Button_padding_large: pxToEm(8),
@@ -44,9 +48,16 @@ type Props = {
 
 export const componentTheme = (baseTheme: Object) => ({
   MenuItem_backgroundColor: baseTheme.color_white,
+  MenuItem_backgroundColor_active: baseTheme.color_theme_50,
+  MenuItem_backgroundColor_focus: baseTheme.color_theme_10,
+  MenuItem_backgroundColor_hover: baseTheme.color_theme_10,
   MenuItem_color_text: baseTheme.color_text,
+  MenuItem_color_text_active: baseTheme.color_text_onprimary,
+  MenuItem_fontWeight: baseTheme.fontWeight_regular,
   MenuItem_paddingH: baseTheme.spacing_double,
   MenuItem_paddingV: baseTheme.spacing_half,
+
+  MenuItemArrow_fill: baseTheme.color_caption,
 
   MenuItemContent_fontSize: baseTheme.fontSize_ui,
 
@@ -54,67 +65,95 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const menuItemStyles = props => {
-  const { variant } = props;
+  const { disabled, variant, withArrow } = props;
   let theme = componentTheme(props.theme);
 
   if (variant !== 'regular') {
     // prettier-ignore
     theme = {
       ...theme,
-      MenuItem_color_text: theme[`color_text_${variant}`]
+      MenuItem_backgroundColor_active: theme[`backgroundColor_${variant}_hover`],
+      MenuItem_backgroundColor_focus: theme[`backgroundColor_input_${variant}`],
+      MenuItem_backgroundColor_hover: theme[`backgroundColor_input_${variant}`],
+      MenuItem_color_text_active: theme[`color_text_on${variant}`]
     };
   }
 
   return {
     backgroundColor: theme.MenuItem_backgroundColor,
-    color: theme.MenuItem_color_text,
-    fontSize: theme.MenuItem_fontSize_ui,
-    padding: `${theme.MenuItem_paddingV} ${theme.MenuItem_paddingH}`
+    border: 0,
+    borderRadius: 0,
+    color: !disabled && variant === 'regular' && theme.MenuItem_color_text,
+    fontWeight: theme.MenuItem_fontWeight,
+
+    '&:hover': {
+      backgroundColor: !disabled && theme.MenuItem_backgroundColor_hover
+    },
+
+    '&:focus': {
+      backgroundColor: theme.MenuItem_backgroundColor_focus,
+      border: 0,
+      boxShadow: 0
+    },
+
+    '&:active': {
+      backgroundColor: !disabled && theme.MenuItem_backgroundColor_active,
+      color: !disabled && theme.MenuItem_color_text_active
+    },
+
+    '& > span': {
+      alignItems: 'start',
+      display: 'inline-flex',
+      justifyContent: 'space-between'
+    },
+
+    '& > span > span': {
+      flex: '1 1 auto',
+      textAlign: theme.direction === 'ltr' ? 'left' : 'right'
+    },
+
+    '& [role="icon"]': {
+      fill: (() => {
+        if (!disabled && withArrow) {
+          return theme.color_gray_60;
+        } else if (!disabled && variant === 'regular') {
+          return theme.color_theme_70;
+        }
+      })()
+    }
   };
 };
 
-const contentStyles = props => {
-  const theme = componentTheme(props.theme);
-
-  return {
-    display: 'block',
-    fontSize: theme.MenuItemContent_fontSize
-    // padding: `0 ${getNormalizedValue(
-    //   theme[`MenuItemContent_padding_${size}`],
-    //   fontSize
-    // )}`
-  };
-};
-
-const innerStyles = {
-  display: 'inline-flex',
-  maxHeight: '100%',
-  width: '100%'
-};
-
-const Root = createStyledComponent('button', menuItemStyles, {
+const Root = createStyledComponent(Button, menuItemStyles, {
   displayName: 'MenuItem'
 });
-const Content = createStyledComponent('span', contentStyles);
-const Inner = createStyledComponent('span', innerStyles);
 
 /**
  * Menu item component
  */
-export default function MenuItem({ children, ...restProps }: Props) {
+export default function MenuItem({
+  children,
+  iconEnd,
+  variant = 'regular',
+  withArrow,
+  ...restProps
+}: Props) {
+  // debugger;
+  const endIcon = withArrow ? <IconChevronRight /> : iconEnd;
+
   const rootProps = {
+    iconEnd: endIcon,
+    fullWidth: true,
+    size: 'large',
+    minimal: true,
+    variant,
+    withArrow,
     ...restProps
   };
+
   return (
     <Root {...rootProps}>
-      <Inner>
-        {/* {startIcon} */}
-        {children &&
-          <Content>
-            {children}
-          </Content>}
-        {/* {endIcon} */}
-      </Inner>
+      {children}
     </Root>
   );
 }

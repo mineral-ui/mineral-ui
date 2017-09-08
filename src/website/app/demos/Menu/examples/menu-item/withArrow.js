@@ -20,24 +20,17 @@ import Menu, { MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'basic',
-  title: 'Basic Menu',
-  // $FlowFixMe
+  id: 'with-arrow',
+  title: 'With Arrow',
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'This is a menu',
+  description: '`MenuItem`s can display an arrow to offer necessary affordance',
   scope: { DemoLayout, Menu, MenuItem },
   source: `
-  <DemoLayout>
-    <Menu>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-    </Menu>
-  </DemoLayout>`
+    <DemoLayout>
+      <Menu>
+        <MenuItem withArrow>With arrow</MenuItem>
+        <MenuItem withArrow>With arrow</MenuItem>
+        <MenuItem withArrow>With arrow</MenuItem>
+      </Menu>
+    </DemoLayout>`
 };

@@ -15,6 +15,14 @@
  */
 
 /* @flow */
-export { default } from './Menu';
-export { default as MenuHeading } from './MenuHeading';
-export { default as MenuItem } from './MenuItem';
+import { createStyledComponent } from '../../../../../utils';
+
+export default createStyledComponent('div', {
+  overflow: 'hidden',
+
+  '& > div': {
+    float: 'left',
+    margin: '0 0.5rem 0.5rem 0',
+    width: '12em'
+  }
+});

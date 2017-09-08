@@ -15,8 +15,11 @@
  */
 
 /* @flow */
+import icons from './icons';
 import menuItem from './menuItem';
+import rtl from './rtl';
 import states from './states';
 import variants from './variants';
+import withArrow from './withArrow';
 
-export default [states, menuItem, variants];
+export default [states, menuItem, variants, icons, withArrow, rtl];

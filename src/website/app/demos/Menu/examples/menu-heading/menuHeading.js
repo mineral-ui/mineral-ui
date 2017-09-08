@@ -16,28 +16,31 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
-import Menu, { MenuItem } from '../../../../../../Menu';
+import Menu, { MenuHeading, MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'basic',
-  title: 'Basic Menu',
+  title: 'Menu with Heading',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'This is a menu',
-  scope: { DemoLayout, Menu, MenuItem },
+  description: 'This is a menu heading',
+  scope: { DemoLayout, Menu, MenuHeading, MenuItem },
   source: `
-  <DemoLayout>
-    <Menu>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-    </Menu>
-  </DemoLayout>`
+    <DemoLayout>
+      <Menu>
+        <MenuHeading>
+          Menu Heading
+        </MenuHeading>
+        <MenuItem>
+          Menu item
+        </MenuItem>
+        <MenuItem>
+          Menu item
+        </MenuItem>
+        <MenuItem>
+          Menu item
+        </MenuItem>
+      </Menu>
+    </DemoLayout>`
 };

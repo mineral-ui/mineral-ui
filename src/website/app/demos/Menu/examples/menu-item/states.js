@@ -16,18 +16,9 @@
 
 /* @flow */
 import { simulate } from 'glamor';
-import { createStyledComponent, mineralTheme } from '../../../../../../utils';
+import { mineralTheme } from '../../../../../../utils';
 import Menu, { MenuItem } from '../../../../../../Menu';
-
-const DemoLayout = createStyledComponent('div', {
-  overflow: 'hidden',
-
-  '& > div': {
-    float: 'left',
-    margin: '0 0.5rem 0.5rem 0',
-    width: '10rem'
-  }
-});
+import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'states',
@@ -35,6 +26,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   hideFromProd: true,
+  hideSource: true,
   scope: { DemoLayout, Menu, MenuItem, simulate },
   source: `
     <DemoLayout>
@@ -120,6 +112,20 @@ export default {
         </MenuItem>
         <MenuItem {...simulate('active')} variant="warning">
           Active
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem disabled>
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant="danger">
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant="success">
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant="warning">
+          Disabled
         </MenuItem>
       </Menu>
     </DemoLayout>`

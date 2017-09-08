@@ -15,6 +15,6 @@
  */
 
 /* @flow */
-export { default } from './Menu';
-export { default as MenuHeading } from './MenuHeading';
-export { default as MenuItem } from './MenuItem';
+import menuHeading from './menuHeading';
+
+export default [menuHeading];

@@ -16,11 +16,14 @@
 
 /* @flow */
 import { componentTheme as menuComponentTheme } from '../../../../Menu/Menu';
+import { componentTheme as menuHeadingComponentTheme } from '../../../../Menu/MenuHeading';
 import { componentTheme as menuItemComponentTheme } from '../../../../Menu/MenuItem';
 import menuExamples from './examples/menu';
+import menuHeadingExamples from './examples/menu-heading';
 import menuItemExamples from './examples/menu-item';
 
 const menuDoc = require('!!react-docgen-loader!../../../../Menu/Menu');
+const menuHeadingDoc = require('!!react-docgen-loader!../../../../Menu/MenuHeading');
 const menuItemDoc = require('!!react-docgen-loader!../../../../Menu/MenuItem');
 
 export default [
@@ -32,11 +35,19 @@ export default [
     title: 'Menu'
   },
   {
+    componentTheme: menuHeadingComponentTheme,
+    doc: menuHeadingDoc,
+    examples: menuHeadingExamples,
+    slug: 'menu-heading',
+    subcomponent: true,
+    title: 'MenuHeading'
+  },
+  {
     componentTheme: menuItemComponentTheme,
     doc: menuItemDoc,
     examples: menuItemExamples,
     slug: 'menu-item',
     subcomponent: true,
-    title: 'Menu Item'
+    title: 'MenuItem'
   }
 ];

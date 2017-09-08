@@ -17,6 +17,7 @@
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
 import Menu, { MenuItem } from '../../../../../../Menu';
+import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'variants',
@@ -24,17 +25,19 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'Various variants',
-  scope: { Menu, MenuItem },
+  scope: { DemoLayout, Menu, MenuItem },
   source: `
-    <Menu>
-      <MenuItem variant="danger">
-        Danger
-      </MenuItem>
-      <MenuItem variant="success">
-        Success
-      </MenuItem>
-      <MenuItem variant="warning">
-        Warning
-      </MenuItem>
-    </Menu>`
+    <DemoLayout>
+      <Menu>
+        <MenuItem variant="danger">
+          Danger
+        </MenuItem>
+        <MenuItem variant="success">
+          Success
+        </MenuItem>
+        <MenuItem variant="warning">
+          Warning
+        </MenuItem>
+      </Menu>
+    </DemoLayout>`
 };
