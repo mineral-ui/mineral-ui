@@ -21,5 +21,6 @@ import rtl from './rtl';
 import states from './states';
 import variants from './variants';
 import withArrow from './withArrow';
+import wrapping from './wrapping';
 
-export default [states, menuItem, variants, icons, withArrow, rtl];
+export default [states, menuItem, variants, icons, withArrow, wrapping, rtl];

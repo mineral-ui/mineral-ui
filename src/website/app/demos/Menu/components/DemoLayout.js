@@ -17,12 +17,12 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../utils';
 
-export default createStyledComponent('div', {
+export default createStyledComponent('div', ({ width }) => ({
   overflow: 'hidden',
 
   '& > div': {
     float: 'left',
     margin: '0 0.5rem 0.5rem 0',
-    width: '12em'
+    width: width || '12em'
   }
-});
+}));

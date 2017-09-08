@@ -16,8 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../utils';
+import { createStyledComponent, getNormalizedValue, pxToEm } from '../utils';
 import Button from '../Button';
+import { componentTheme as buttonComponentTheme } from '../Button/Button';
 import IconChevronRight from '../Icon/IconChevronRight';
 
 type Props = {
@@ -66,7 +67,10 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const menuItemStyles = props => {
   const { disabled, variant, withArrow } = props;
-  let theme = componentTheme(props.theme);
+  let theme = {
+    ...componentTheme(props.theme),
+    ...buttonComponentTheme(props.theme)
+  };
 
   if (variant !== 'regular') {
     // prettier-ignore
@@ -79,12 +83,18 @@ const menuItemStyles = props => {
     };
   }
 
+  // if (props.iconStart) {
+  //   console.log('pxToEm(3)', pxToEm(3));
+  //   console.log('theme.ButtonContent_fontSize', theme.ButtonContent_fontSize);
+  // }
+
   return {
     backgroundColor: theme.MenuItem_backgroundColor,
     border: 0,
     borderRadius: 0,
     color: !disabled && variant === 'regular' && theme.MenuItem_color_text,
     fontWeight: theme.MenuItem_fontWeight,
+    height: 'auto',
 
     '&:hover': {
       backgroundColor: !disabled && theme.MenuItem_backgroundColor_hover
@@ -101,15 +111,26 @@ const menuItemStyles = props => {
       color: !disabled && theme.MenuItem_color_text_active
     },
 
+    // ButtonInner
     '& > span': {
       alignItems: 'start',
       display: 'inline-flex',
       justifyContent: 'space-between'
     },
 
+    // ButtonContent
     '& > span > span': {
       flex: '1 1 auto',
-      textAlign: theme.direction === 'ltr' ? 'left' : 'right'
+      lineHeight: theme.lineHeight,
+      overflow: 'initial',
+      paddingBottom: getNormalizedValue(
+        pxToEm(4),
+        theme.ButtonContent_fontSize
+      ),
+      paddingTop: getNormalizedValue(pxToEm(3), theme.ButtonContent_fontSize),
+      textAlign: theme.direction === 'ltr' ? 'left' : 'right',
+      textOverflow: 'initial',
+      whiteSpace: 'initial'
     },
 
     '& [role="icon"]': {
@@ -119,7 +140,8 @@ const menuItemStyles = props => {
         } else if (!disabled && variant === 'regular') {
           return theme.color_theme_70;
         }
-      })()
+      })(),
+      flex: '0 0 auto'
     }
   };
 };
