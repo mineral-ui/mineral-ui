@@ -24,7 +24,8 @@ export default {
   title: 'Basic Menu',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'This is a menu',
+  description:
+    'This is a menu. For more detailed examples, see [MenuDivider](./menu-divider), [MenuHeading](./menu-heading), and [MenuItem](./menu-item).',
   scope: { DemoLayout, Menu, MenuItem },
   source: `
   <DemoLayout>

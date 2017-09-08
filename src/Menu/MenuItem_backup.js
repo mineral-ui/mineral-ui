@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../utils';
+import { createStyledComponent } from '../utils';
 
 type Props = {
   /** Rendered content of the component */

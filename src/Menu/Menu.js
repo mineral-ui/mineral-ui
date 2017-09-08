@@ -19,25 +19,13 @@ import React from 'react';
 import { createStyledComponent } from '../utils';
 
 type Props = {
-  /** [MenuItem](../menu-item)s */
+  /** [MenuDivider](./menu-divider), [MenuHeading](./menu-heading), or [MenuItem](./menu-item) */
   children: MnrlReactNode
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  // Menu_backgroundColor: baseTheme.color_white,
-
-  ...baseTheme
-});
-
 const Root = createStyledComponent(
   'div',
-  props => {
-    const theme = componentTheme(props.theme);
-
-    return {
-      // backgroundColor: theme.Menu_backgroundColor
-    };
-  },
+  {},
   {
     displayName: 'Menu',
     includeStyleReset: true

@@ -22,6 +22,7 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'with-arrow',
   title: 'With Arrow',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: '`MenuItem`s can display an arrow to offer necessary affordance',
   scope: { DemoLayout, Menu, MenuItem },

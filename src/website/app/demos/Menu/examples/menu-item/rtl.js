@@ -24,6 +24,7 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'rtl',
   title: 'RTL Support',
+  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: '',
   scope: { DemoLayout, IconCloud, Menu, MenuItem, ThemeProvider },

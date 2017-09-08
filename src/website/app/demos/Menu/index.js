@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-import { componentTheme as menuComponentTheme } from '../../../../Menu/Menu';
 import { componentTheme as menuDividerComponentTheme } from '../../../../Menu/MenuDivider';
 import { componentTheme as menuHeadingComponentTheme } from '../../../../Menu/MenuHeading';
 import { componentTheme as menuItemComponentTheme } from '../../../../Menu/MenuItem';
@@ -31,7 +30,6 @@ const menuItemDoc = require('!!react-docgen-loader!../../../../Menu/MenuItem');
 
 export default [
   {
-    componentTheme: menuComponentTheme,
     doc: menuDoc,
     examples: menuExamples,
     slug: 'menu',
