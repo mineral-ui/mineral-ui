@@ -18,6 +18,10 @@ npm run release -- --help
 
 * Since we use protected branches and require status checks to pass before merging on GitHub, one must first toggle `Branch protection for master` or the `Include administrators` option in [GitHub settings](https://github.com/mineral-ui/mineral-ui/settings/branches/master) prior to running any of the following `release` commands.
 
+## Deploying the website
+
+Currently the site is hosted on Netlify. In order to publish the website, one of the administrators must log into the Netlify UI and select a deploy preview to publish. View the details of that (successful) deploy and click the "Publish deploy" button. This will publish to [mineral-ui.com](https://mineral-ui.com).
+
 ## FAQ
 
 * __How do I publish a prerelease version?__
