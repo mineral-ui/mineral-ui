@@ -16,28 +16,28 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
-import IconCloud from '../../../../../../Icon/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
-import ThemeProvider from '../../../../../../ThemeProvider';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'rtl',
-  title: 'RTL Support',
+  id: 'secondary-text',
+  title: 'Secondary Text',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: '',
-  scope: { DemoLayout, IconCloud, Menu, MenuItem, ThemeProvider },
+  description: 'A `MenuItem` can render secondary text',
+  scope: { DemoLayout, Menu, MenuItem },
   source: `
-    <DemoLayout dir="rtl">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <Menu>
-          <MenuItem>نص عنصر القائمة</MenuItem>
-          <MenuItem secondaryText="نص ثانوي">نص عنصر القائمة</MenuItem>
-          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
-          <MenuItem withArrow>مع السهم</MenuItem>
-        </Menu>
-      </ThemeProvider>
+    <DemoLayout>
+      <Menu>
+        <MenuItem secondaryText="Secondary text">
+          Menu item text
+        </MenuItem>
+        <MenuItem secondaryText="Secondary text">
+          Menu item text
+        </MenuItem>
+        <MenuItem secondaryText="Secondary text">
+          Menu item text
+        </MenuItem>
+      </Menu>
     </DemoLayout>`
 };

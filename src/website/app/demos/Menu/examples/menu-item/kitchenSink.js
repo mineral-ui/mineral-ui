@@ -18,26 +18,31 @@
 import { mineralTheme } from '../../../../../../utils';
 import IconCloud from '../../../../../../Icon/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
-import ThemeProvider from '../../../../../../ThemeProvider';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'rtl',
-  title: 'RTL Support',
+  id: 'kitchen-sink',
+  title: 'Kitchen Sink',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: '',
-  scope: { DemoLayout, IconCloud, Menu, MenuItem, ThemeProvider },
+  hideFromProd: true,
+  scope: { DemoLayout, IconCloud, Menu, MenuItem },
   source: `
-    <DemoLayout dir="rtl">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <Menu>
-          <MenuItem>نص عنصر القائمة</MenuItem>
-          <MenuItem secondaryText="نص ثانوي">نص عنصر القائمة</MenuItem>
-          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
-          <MenuItem withArrow>مع السهم</MenuItem>
-        </Menu>
-      </ThemeProvider>
-    </DemoLayout>`
+    <DemoLayout width="18em">
+      <Menu>
+        <MenuItem
+          iconStart={<IconCloud />}
+          secondaryText="Kitchen sink"
+          withArrow>
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          secondaryText="Kitchen sink with longer text to wrap"
+          withArrow>
+          Kitchen Sink with longer text to wrap
+        </MenuItem>
+      </Menu>
+    </DemoLayout>
+  `
 };

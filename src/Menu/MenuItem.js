@@ -62,6 +62,9 @@ export const componentTheme = (baseTheme: Object) => ({
 
   MenuItemContent_fontSize: baseTheme.fontSize_ui,
 
+  MenuItemSecondaryText_color_text: baseTheme.color_caption,
+  MenuItemSecondaryText_fontSize: pxToEm(12),
+
   ...baseTheme
 });
 
@@ -120,8 +123,10 @@ const menuItemStyles = props => {
 
     // ButtonContent
     '& > span > span': {
+      display: 'flex',
       flex: '1 1 auto',
       lineHeight: theme.lineHeight,
+      justifyContent: 'space-between',
       overflow: 'initial',
       paddingBottom: getNormalizedValue(
         pxToEm(4),
@@ -146,9 +151,35 @@ const menuItemStyles = props => {
   };
 };
 
+const secondaryTextStyles = props => {
+  let theme = {
+    ...componentTheme(props.theme),
+    ...buttonComponentTheme(props.theme)
+  };
+
+  const margin = getNormalizedValue(
+    theme.spacing_single,
+    theme.MenuItemSecondaryText_fontSize
+  );
+
+  return {
+    color: theme.MenuItemSecondaryText_color_text,
+    fontSize: theme.MenuItemSecondaryText_fontSize,
+    marginLeft: theme.direction === 'ltr' && margin,
+    marginRight: theme.direction === 'rtl' && margin,
+    // The regular text fontSize is larger than that of the secondary text.
+    // This magic number re-aligns both sets of text vertically.
+    paddingTop: getNormalizedValue(
+      pxToEm(3),
+      theme.MenuItemSecondaryText_fontSize
+    )
+  };
+};
+
 const Root = createStyledComponent(Button, menuItemStyles, {
   displayName: 'MenuItem'
 });
+const SecondaryText = createStyledComponent('span', secondaryTextStyles);
 
 /**
  * Menu item component
@@ -156,6 +187,7 @@ const Root = createStyledComponent(Button, menuItemStyles, {
 export default function MenuItem({
   children,
   iconEnd,
+  secondaryText,
   variant = 'regular',
   withArrow,
   ...restProps
@@ -175,7 +207,13 @@ export default function MenuItem({
 
   return (
     <Root {...rootProps}>
-      {children}
+      <span>
+        {children}
+      </span>
+      {SecondaryText &&
+        <SecondaryText>
+          {secondaryText}
+        </SecondaryText>}
     </Root>
   );
 }

@@ -16,11 +16,23 @@
 
 /* @flow */
 import icons from './icons';
+import kitchenSink from './kitchenSink';
 import menuItem from './menuItem';
 import rtl from './rtl';
+import secondaryText from './secondaryText';
 import states from './states';
 import variants from './variants';
 import withArrow from './withArrow';
 import wrapping from './wrapping';
 
-export default [states, menuItem, variants, icons, withArrow, wrapping, rtl];
+export default [
+  states,
+  kitchenSink,
+  menuItem,
+  secondaryText,
+  variants,
+  icons,
+  withArrow,
+  wrapping,
+  rtl
+];
