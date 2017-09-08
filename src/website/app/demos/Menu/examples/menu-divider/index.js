@@ -15,7 +15,6 @@
  */
 
 /* @flow */
-export { default } from './Menu';
-export { default as MenuDivider } from './MenuDivider';
-export { default as MenuHeading } from './MenuHeading';
-export { default as MenuItem } from './MenuItem';
+import menuDivider from './menuDivider';
+
+export default [menuDivider];

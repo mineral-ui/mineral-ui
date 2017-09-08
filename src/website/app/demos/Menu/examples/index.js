@@ -16,9 +16,15 @@
 
 /* @flow */
 import menuExamples from './menu';
+import menuDividerExamples from './menu-divider';
 import menuHeadingExamples from './menu-heading';
 import menuItemExamples from './menu-item';
 
-const examples = [].concat(menuExamples, menuHeadingExamples, menuItemExamples);
+const examples = [].concat(
+  menuExamples,
+  menuDividerExamples,
+  menuHeadingExamples,
+  menuItemExamples
+);
 
 export default examples;

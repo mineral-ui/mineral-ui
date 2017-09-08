@@ -16,13 +16,16 @@
 
 /* @flow */
 import { componentTheme as menuComponentTheme } from '../../../../Menu/Menu';
+import { componentTheme as menuDividerComponentTheme } from '../../../../Menu/MenuDivider';
 import { componentTheme as menuHeadingComponentTheme } from '../../../../Menu/MenuHeading';
 import { componentTheme as menuItemComponentTheme } from '../../../../Menu/MenuItem';
 import menuExamples from './examples/menu';
+import menuDividerExamples from './examples/menu-divider';
 import menuHeadingExamples from './examples/menu-heading';
 import menuItemExamples from './examples/menu-item';
 
 const menuDoc = require('!!react-docgen-loader!../../../../Menu/Menu');
+const menuDividerDoc = require('!!react-docgen-loader!../../../../Menu/MenuDivider');
 const menuHeadingDoc = require('!!react-docgen-loader!../../../../Menu/MenuHeading');
 const menuItemDoc = require('!!react-docgen-loader!../../../../Menu/MenuItem');
 
@@ -33,6 +36,14 @@ export default [
     examples: menuExamples,
     slug: 'menu',
     title: 'Menu'
+  },
+  {
+    componentTheme: menuDividerComponentTheme,
+    doc: menuDividerDoc,
+    examples: menuDividerExamples,
+    slug: 'menu-divider',
+    subcomponent: true,
+    title: 'MenuDivider'
   },
   {
     componentTheme: menuHeadingComponentTheme,
