@@ -1,7 +1,8 @@
 body {
-    margin: 0;
+  margin: 0;
 }
-pre.prism-code {
-    white-space: pre-wrap;
-    word-break: break-all;
+
+/* For IE11 */
+main {
+  display: block;
 }
