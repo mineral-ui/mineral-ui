@@ -30,13 +30,7 @@ type Props = {|
 
 const styles = {
   app: ({ theme }) => ({
-    fontFamily: theme.fontFamily_system,
-
-    '@media(min-width: 45em)': {
-      alignItems: 'stretch',
-      display: 'flex',
-      minHeight: '100vh'
-    }
+    fontFamily: theme.fontFamily_system
   }),
   nav: ({ theme }) => ({
     backgroundColor: theme.color_gray_10,
@@ -46,14 +40,17 @@ const styles = {
     '@media(min-width: 45em)': {
       borderBottomWidth: '0',
       borderRightWidth: '1px',
+      height: '100vh',
+      overflow: 'auto',
+      position: 'fixed',
       width: `${16 * parseFloat(theme.spacing_double)}em`
     }
   }),
   main: ({ theme }) => ({
     padding: theme.spacing_double,
-    width: '100%',
 
     '@media(min-width: 45em)': {
+      marginLeft: `${16 * parseFloat(theme.spacing_double)}em`,
       padding: `${parseFloat(theme.spacing_quad) * 2}em ${parseFloat(
         theme.spacing_quad
       ) * 4}em ${theme.spacing_quad}`

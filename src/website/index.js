@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import { css } from 'glamor';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { simulations } from 'glamor';
@@ -23,8 +24,19 @@ import 'babel-polyfill';
 import ThemeProvider from '../ThemeProvider';
 import App from './app/App';
 import demos from './app/demos';
-require('./index.css');
-require('react-live/react-live.css');
+import reactLiveCss from 'raw-loader!react-live/react-live.css';
+
+// Global CSS
+const globalCss = `
+  body {
+    margin: 0;
+  }
+  main {
+    display: block;
+  }
+`;
+css.insert(globalCss);
+css.insert(reactLiveCss);
 
 // Enable Glamor simulate helper
 simulations(true);
