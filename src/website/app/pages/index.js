@@ -17,6 +17,7 @@
 /* @flow */
 import GettingStarted from './GettingStarted';
 import Theming from './Theming';
+import Typography from './Typography';
 
 type Page = {
   component?: MnrlReactNode,
@@ -38,6 +39,11 @@ const pages: Pages = [
     title: 'Theming',
     component: Theming,
     path: '/theming'
+  },
+  {
+    title: 'Typography',
+    component: Typography,
+    path: '/typography'
   }
 ];
 
