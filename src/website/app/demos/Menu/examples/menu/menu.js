@@ -16,6 +16,7 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
+import IconCloud from '../../../../../../Icon/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 
@@ -26,19 +27,51 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description:
     'This is a menu. For more detailed examples, see [MenuDivider](./menu-divider), [MenuHeading](./menu-heading), and [MenuItem](./menu-item).',
-  scope: { DemoLayout, Menu, MenuItem },
+  scope: { DemoLayout, IconCloud, Menu, MenuItem },
   source: `
-  <DemoLayout>
-    <Menu>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-      <MenuItem>
-        Menu item
-      </MenuItem>
-    </Menu>
-  </DemoLayout>`
+    () => {
+      const menuItems = [
+        {
+          disabled: true,
+          text: 'Menu item (disabled)'
+        },
+        {
+          divider: true
+        },
+        {
+          heading: true,
+          text: 'Menu Heading'
+        },
+        {
+          iconStart: <IconCloud />,
+          text: 'Icon at start'
+        },
+        {
+          iconEnd: <IconCloud />,
+          text: 'Icon at end'
+        },
+        {
+          onClick: event => { console.log(event); },
+          text: 'Menu item with onClick'
+        },
+        {
+          secondaryText: 'Secondary text',
+          text: 'Menu item'
+        },
+        {
+          text: 'Danger variant',
+          variant: 'danger' // 'danger' | 'success' | 'warning'
+        },
+        {
+          withArrow: true,
+          text: 'With arrow'
+        }
+      ];
+
+      return (
+        <DemoLayout>
+          <Menu data={menuItems} />
+        </DemoLayout>
+      );
+    }`
 };

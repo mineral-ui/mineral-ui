@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu basic 1`] = `
-.glamor-19,
-[data-glamor-19] {
+.glamor-48,
+[data-glamor-48] {
   overflow: hidden;
 }
 
-.glamor-19 > div,
-[data-glamor-19] > div {
+.glamor-48 > div,
+[data-glamor-48] > div {
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 12em;
 }
 
-.glamor-18,
-[data-glamor-18] {
+.glamor-47,
+[data-glamor-47] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -23,12 +23,12 @@ exports[`Menu basic 1`] = `
   outline: 0;
 }
 
-.glamor-18 *,
-[data-glamor-18] *,
-.glamor-18 *::before,
-[data-glamor-18] *::before,
-.glamor-18 *::after,
-[data-glamor-18] *::after {
+.glamor-47 *,
+[data-glamor-47] *,
+.glamor-47 *::before,
+[data-glamor-47] *::before,
+.glamor-47 *::after,
+[data-glamor-47] *::after {
   box-sizing: inherit;
 }
 
@@ -37,16 +37,8 @@ exports[`Menu basic 1`] = `
   background-color: #fff;
   border: 0;
   border-radius: 0;
-  color: #333840;
   font-weight: 400;
   height: auto;
-}
-
-.glamor-4:hover,
-[data-glamor-4]:hover,
-.glamor-4[data-simulate-hover],
-[data-glamor-4][data-simulate-hover] {
-  background-color: #e1f3fc;
 }
 
 .glamor-4:focus,
@@ -56,14 +48,6 @@ exports[`Menu basic 1`] = `
   background-color: #e1f3fc;
   border: 0;
   box-shadow: 0;
-}
-
-.glamor-4:active,
-[data-glamor-4]:active,
-.glamor-4[data-simulate-active],
-[data-glamor-4][data-simulate-active] {
-  background-color: #51b3f0;
-  color: #fff;
 }
 
 .glamor-4 > span,
@@ -104,7 +88,6 @@ exports[`Menu basic 1`] = `
 
 .glamor-4 [role="icon"],
 [data-glamor-4] [role="icon"] {
-  fill: #1b8bcc;
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
 }
@@ -112,7 +95,7 @@ exports[`Menu basic 1`] = `
 .glamor-3,
 [data-glamor-3] {
   box-sizing: border-box;
-  color: #333840;
+  color: #afbacc;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -122,7 +105,7 @@ exports[`Menu basic 1`] = `
   border-radius: 0;
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+  cursor: default;
   font-weight: 400;
   height: auto;
   min-width: 2.5em;
@@ -151,21 +134,6 @@ exports[`Menu basic 1`] = `
   border: 0;
 }
 
-.glamor-3:hover,
-[data-glamor-3]:hover,
-.glamor-3[data-simulate-hover],
-[data-glamor-3][data-simulate-hover] {
-  background-color: #e1f3fc;
-}
-
-.glamor-3:active,
-[data-glamor-3]:active,
-.glamor-3[data-simulate-active],
-[data-glamor-3][data-simulate-active] {
-  background-color: #51b3f0;
-  color: #fff;
-}
-
 .glamor-3::-moz-focus-inner,
 [data-glamor-3]::-moz-focus-inner,
 .glamor-3[data-simulate-mozfocusinner],
@@ -176,7 +144,7 @@ exports[`Menu basic 1`] = `
 .glamor-3 [role="icon"],
 [data-glamor-3] [role="icon"] {
   box-sizing: content-box;
-  fill: #1b8bcc;
+  fill: currentColor;
   display: block;
   padding: 0.25em;
   flex: 0 0 auto;
@@ -255,6 +223,588 @@ exports[`Menu basic 1`] = `
   font-size: 0.75em;
   margin-left: 0.6666666666666666em;
   padding-top: 0.25em;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  background-color: #fff;
+  height: 0.5em;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  background-color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.3333333333333333em 1.0833333333333335em 0.6666666666666666em;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  color: #333840;
+  font-weight: 400;
+  height: auto;
+}
+
+.glamor-13:hover,
+[data-glamor-13]:hover,
+.glamor-13[data-simulate-hover],
+[data-glamor-13][data-simulate-hover] {
+  background-color: #e1f3fc;
+}
+
+.glamor-13:focus,
+[data-glamor-13]:focus,
+.glamor-13[data-simulate-focus],
+[data-glamor-13][data-simulate-focus] {
+  background-color: #e1f3fc;
+  border: 0;
+  box-shadow: 0;
+}
+
+.glamor-13:active,
+[data-glamor-13]:active,
+.glamor-13[data-simulate-active],
+[data-glamor-13][data-simulate-active] {
+  background-color: #51b3f0;
+  color: #fff;
+}
+
+.glamor-13 > span,
+[data-glamor-13] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-13 > span > span,
+[data-glamor-13] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-13 [role="icon"],
+[data-glamor-13] [role="icon"] {
+  fill: #1b8bcc;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 400;
+  height: auto;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  vertical-align: middle;
+  width: 100%;
+  border: 0;
+}
+
+.glamor-12 *,
+[data-glamor-12] *,
+.glamor-12 *::before,
+[data-glamor-12] *::before,
+.glamor-12 *::after,
+[data-glamor-12] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-12:focus,
+[data-glamor-12]:focus,
+.glamor-12[data-simulate-focus],
+[data-glamor-12][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0;
+  background-color: #e1f3fc;
+  border: 0;
+}
+
+.glamor-12:hover,
+[data-glamor-12]:hover,
+.glamor-12[data-simulate-hover],
+[data-glamor-12][data-simulate-hover] {
+  background-color: #e1f3fc;
+}
+
+.glamor-12:active,
+[data-glamor-12]:active,
+.glamor-12[data-simulate-active],
+[data-glamor-12][data-simulate-active] {
+  background-color: #51b3f0;
+  color: #fff;
+}
+
+.glamor-12::-moz-focus-inner,
+[data-glamor-12]::-moz-focus-inner,
+.glamor-12[data-simulate-mozfocusinner],
+[data-glamor-12][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-12 [role="icon"],
+[data-glamor-12] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.25em;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-12 > span,
+[data-glamor-12] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-12 > span > span,
+[data-glamor-12] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-8,
+[data-glamor-8] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+}
+
+.glamor-38,
+[data-glamor-38] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  height: auto;
+}
+
+.glamor-38:hover,
+[data-glamor-38]:hover,
+.glamor-38[data-simulate-hover],
+[data-glamor-38][data-simulate-hover] {
+  background-color: #fce3e3;
+}
+
+.glamor-38:focus,
+[data-glamor-38]:focus,
+.glamor-38[data-simulate-focus],
+[data-glamor-38][data-simulate-focus] {
+  background-color: #fce3e3;
+  border: 0;
+  box-shadow: 0;
+}
+
+.glamor-38:active,
+[data-glamor-38]:active,
+.glamor-38[data-simulate-active],
+[data-glamor-38][data-simulate-active] {
+  background-color: #eb4d4d;
+  color: #fff;
+}
+
+.glamor-38 > span,
+[data-glamor-38] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-38 > span > span,
+[data-glamor-38] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-38 [role="icon"],
+[data-glamor-38] [role="icon"] {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-37,
+[data-glamor-37] {
+  box-sizing: border-box;
+  color: #ad0e0e;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 400;
+  height: auto;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  vertical-align: middle;
+  width: 100%;
+  border: 0;
+}
+
+.glamor-37 *,
+[data-glamor-37] *,
+.glamor-37 *::before,
+[data-glamor-37] *::before,
+.glamor-37 *::after,
+[data-glamor-37] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-37:focus,
+[data-glamor-37]:focus,
+.glamor-37[data-simulate-focus],
+[data-glamor-37][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0;
+  background-color: #fce3e3;
+  border: 0;
+}
+
+.glamor-37:hover,
+[data-glamor-37]:hover,
+.glamor-37[data-simulate-hover],
+[data-glamor-37][data-simulate-hover] {
+  background-color: #fce3e3;
+}
+
+.glamor-37:active,
+[data-glamor-37]:active,
+.glamor-37[data-simulate-active],
+[data-glamor-37][data-simulate-active] {
+  background-color: #eb4d4d;
+  color: #fff;
+}
+
+.glamor-37::-moz-focus-inner,
+[data-glamor-37]::-moz-focus-inner,
+.glamor-37[data-simulate-mozfocusinner],
+[data-glamor-37][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-37 [role="icon"],
+[data-glamor-37] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.25em;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-37 > span,
+[data-glamor-37] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-37 > span > span,
+[data-glamor-37] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-45,
+[data-glamor-45] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  color: #333840;
+  font-weight: 400;
+  height: auto;
+}
+
+.glamor-45:hover,
+[data-glamor-45]:hover,
+.glamor-45[data-simulate-hover],
+[data-glamor-45][data-simulate-hover] {
+  background-color: #e1f3fc;
+}
+
+.glamor-45:focus,
+[data-glamor-45]:focus,
+.glamor-45[data-simulate-focus],
+[data-glamor-45][data-simulate-focus] {
+  background-color: #e1f3fc;
+  border: 0;
+  box-shadow: 0;
+}
+
+.glamor-45:active,
+[data-glamor-45]:active,
+.glamor-45[data-simulate-active],
+[data-glamor-45][data-simulate-active] {
+  background-color: #51b3f0;
+  color: #fff;
+}
+
+.glamor-45 > span,
+[data-glamor-45] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-45 > span > span,
+[data-glamor-45] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-45 [role="icon"],
+[data-glamor-45] [role="icon"] {
+  fill: #8e99ab;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-44,
+[data-glamor-44] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 400;
+  height: auto;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  vertical-align: middle;
+  width: 100%;
+  border: 0;
+}
+
+.glamor-44 *,
+[data-glamor-44] *,
+.glamor-44 *::before,
+[data-glamor-44] *::before,
+.glamor-44 *::after,
+[data-glamor-44] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-44:focus,
+[data-glamor-44]:focus,
+.glamor-44[data-simulate-focus],
+[data-glamor-44][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0;
+  background-color: #e1f3fc;
+  border: 0;
+}
+
+.glamor-44:hover,
+[data-glamor-44]:hover,
+.glamor-44[data-simulate-hover],
+[data-glamor-44][data-simulate-hover] {
+  background-color: #e1f3fc;
+}
+
+.glamor-44:active,
+[data-glamor-44]:active,
+.glamor-44[data-simulate-active],
+[data-glamor-44][data-simulate-active] {
+  background-color: #51b3f0;
+  color: #fff;
+}
+
+.glamor-44::-moz-focus-inner,
+[data-glamor-44]::-moz-focus-inner,
+.glamor-44[data-simulate-mozfocusinner],
+[data-glamor-44][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-44 [role="icon"],
+[data-glamor-44] [role="icon"] {
+  box-sizing: content-box;
+  fill: #8e99ab;
+  display: block;
+  padding: 0.25em;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-44 > span,
+[data-glamor-44] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-44 > span > span,
+[data-glamor-44] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
 }
 
 <ThemeProvider>
@@ -387,24 +937,57 @@ exports[`Menu basic 1`] = `
   >
     <LiveProvider
       code="
-      <DemoLayout>
-        <Menu>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-        </Menu>
-      </DemoLayout>"
+        () => {
+          const menuItems = [
+            {
+              disabled: true,
+              text: 'Menu item (disabled)'
+            },
+            {
+              divider: true
+            },
+            {
+              heading: true,
+              text: 'Menu Heading'
+            },
+            {
+              iconStart: <IconCloud />,
+              text: 'Icon at start'
+            },
+            {
+              iconEnd: <IconCloud />,
+              text: 'Icon at end'
+            },
+            {
+              onClick: event => { console.log(event); },
+              text: 'Menu item with onClick'
+            },
+            {
+              secondaryText: 'Secondary text',
+              text: 'Menu item'
+            },
+            {
+              text: 'Danger variant',
+              variant: 'danger' // 'danger' | 'success' | 'warning'
+            },
+            {
+              withArrow: true,
+              text: 'With arrow'
+            }
+          ];
+    
+          return (
+            <DemoLayout>
+              <Menu data={menuItems} />
+            </DemoLayout>
+          );
+        }"
       mountStylesheet={false}
       noInline={false}
       scope={
         Object {
           "DemoLayout": [Function],
+          "IconCloud": [Function],
           "Menu": [Function],
           "MenuItem": [Function],
         }
@@ -415,6 +998,7 @@ exports[`Menu basic 1`] = `
         scope={
           Object {
             "DemoLayout": [Function],
+            "IconCloud": [Function],
             "Menu": [Function],
             "MenuItem": [Function],
           }
@@ -424,179 +1008,569 @@ exports[`Menu basic 1`] = `
           <div
             className="react-live-preview"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-19"
-              >
-                <Menu>
-                  <Menu>
-                    <div
-                      className="glamor-18"
-                    >
-                      <MenuItem>
+            <wrappedPFC>
+              <glamorous(div)>
+                <div
+                  className="glamor-48"
+                >
+                  <Menu
+                    data={
+                      Array [
+                        Object {
+                          "disabled": true,
+                          "text": "Menu item (disabled)",
+                        },
+                        Object {
+                          "divider": true,
+                        },
+                        Object {
+                          "heading": true,
+                          "text": "Menu Heading",
+                        },
+                        Object {
+                          "iconStart": <IconCloud />,
+                          "text": "Icon at start",
+                        },
+                        Object {
+                          "iconEnd": <IconCloud />,
+                          "text": "Icon at end",
+                        },
+                        Object {
+                          "onClick": [Function],
+                          "text": "Menu item with onClick",
+                        },
+                        Object {
+                          "secondaryText": "Secondary text",
+                          "text": "Menu item",
+                        },
+                        Object {
+                          "text": "Danger variant",
+                          "variant": "danger",
+                        },
+                        Object {
+                          "text": "With arrow",
+                          "withArrow": true,
+                        },
+                      ]
+                    }
+                  >
+                    <Menu>
+                      <div
+                        className="glamor-47"
+                      >
                         <MenuItem
-                          fullWidth={true}
-                          minimal={true}
-                          size="large"
-                          variant="regular"
+                          disabled={true}
                         >
-                          <Button
-                            className="glamor-4"
+                          <MenuItem
+                            disabled={true}
                             fullWidth={true}
                             minimal={true}
                             size="large"
                             variant="regular"
                           >
-                            <glamorous(button)
+                            <Button
                               className="glamor-4"
+                              disabled={true}
                               fullWidth={true}
                               minimal={true}
                               size="large"
-                              type="button"
                               variant="regular"
                             >
-                              <button
-                                className="glamor-3"
+                              <glamorous(button)
+                                className="glamor-4"
+                                disabled={true}
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
                                 type="button"
+                                variant="regular"
                               >
-                                <glamorous(span)>
-                                  <span
-                                    className="glamor-2"
-                                  >
-                                    <glamorous(span)
-                                      size="large"
+                                <button
+                                  className="glamor-3"
+                                  disabled={true}
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
                                     >
-                                      <span
-                                        className="glamor-1"
+                                      <glamorous(span)
+                                        size="large"
                                       >
-                                        <span>
-                                          Menu item
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Menu item (disabled)
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
                                         </span>
-                                        <glamorous(span)>
-                                          <span
-                                            className="glamor-0"
-                                          />
-                                        </glamorous(span)>
-                                      </span>
-                                    </glamorous(span)>
-                                  </span>
-                                </glamorous(span)>
-                              </button>
-                            </glamorous(button)>
-                          </Button>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
                         </MenuItem>
-                      </MenuItem>
-                      <MenuItem>
+                        <MenuDivider>
+                          <MenuDivider>
+                            <div
+                              className="glamor-6"
+                            />
+                          </MenuDivider>
+                        </MenuDivider>
+                        <MenuHeading>
+                          <MenuHeading>
+                            <h3
+                              className="glamor-7"
+                            >
+                              Menu Heading
+                            </h3>
+                          </MenuHeading>
+                        </MenuHeading>
                         <MenuItem
-                          fullWidth={true}
-                          minimal={true}
-                          size="large"
-                          variant="regular"
+                          iconStart={<IconCloud />}
                         >
-                          <Button
-                            className="glamor-4"
+                          <MenuItem
+                            fullWidth={true}
+                            iconStart={<IconCloud />}
+                            minimal={true}
+                            size="large"
+                            variant="regular"
+                          >
+                            <Button
+                              className="glamor-13"
+                              fullWidth={true}
+                              iconStart={<IconCloud />}
+                              minimal={true}
+                              size="large"
+                              variant="regular"
+                            >
+                              <glamorous(button)
+                                className="glamor-13"
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
+                                type="button"
+                                variant="regular"
+                              >
+                                <button
+                                  className="glamor-12"
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      <IconCloud
+                                        size="medium"
+                                      >
+                                        <Icon
+                                          rtl={false}
+                                          size="medium"
+                                        >
+                                          <glamorous(svg)
+                                            aria-hidden={true}
+                                            role="icon"
+                                            rtl={false}
+                                            size="medium"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <svg
+                                              aria-hidden={true}
+                                              className="glamor-8"
+                                              role="icon"
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <g>
+                                                <path
+                                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </glamorous(svg)>
+                                        </Icon>
+                                      </IconCloud>
+                                      <glamorous(span)
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Icon at start
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
+                                        </span>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
+                        </MenuItem>
+                        <MenuItem
+                          iconEnd={<IconCloud />}
+                        >
+                          <MenuItem
+                            fullWidth={true}
+                            iconEnd={<IconCloud />}
+                            minimal={true}
+                            size="large"
+                            variant="regular"
+                          >
+                            <Button
+                              className="glamor-13"
+                              fullWidth={true}
+                              iconEnd={<IconCloud />}
+                              minimal={true}
+                              size="large"
+                              variant="regular"
+                            >
+                              <glamorous(button)
+                                className="glamor-13"
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
+                                type="button"
+                                variant="regular"
+                              >
+                                <button
+                                  className="glamor-12"
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      <glamorous(span)
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Icon at end
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
+                                        </span>
+                                      </glamorous(span)>
+                                      <IconCloud
+                                        size="medium"
+                                      >
+                                        <Icon
+                                          rtl={false}
+                                          size="medium"
+                                        >
+                                          <glamorous(svg)
+                                            aria-hidden={true}
+                                            role="icon"
+                                            rtl={false}
+                                            size="medium"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <svg
+                                              aria-hidden={true}
+                                              className="glamor-8"
+                                              role="icon"
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <g>
+                                                <path
+                                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </glamorous(svg)>
+                                        </Icon>
+                                      </IconCloud>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
+                        </MenuItem>
+                        <MenuItem
+                          onClick={[Function]}
+                        >
+                          <MenuItem
+                            fullWidth={true}
+                            minimal={true}
+                            onClick={[Function]}
+                            size="large"
+                            variant="regular"
+                          >
+                            <Button
+                              className="glamor-13"
+                              fullWidth={true}
+                              minimal={true}
+                              onClick={[Function]}
+                              size="large"
+                              variant="regular"
+                            >
+                              <glamorous(button)
+                                className="glamor-13"
+                                fullWidth={true}
+                                minimal={true}
+                                onClick={[Function]}
+                                size="large"
+                                type="button"
+                                variant="regular"
+                              >
+                                <button
+                                  className="glamor-12"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      <glamorous(span)
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Menu item with onClick
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
+                                        </span>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
+                        </MenuItem>
+                        <MenuItem
+                          secondaryText="Secondary text"
+                        >
+                          <MenuItem
                             fullWidth={true}
                             minimal={true}
                             size="large"
                             variant="regular"
                           >
-                            <glamorous(button)
-                              className="glamor-4"
+                            <Button
+                              className="glamor-13"
                               fullWidth={true}
                               minimal={true}
                               size="large"
-                              type="button"
                               variant="regular"
                             >
-                              <button
-                                className="glamor-3"
+                              <glamorous(button)
+                                className="glamor-13"
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
                                 type="button"
+                                variant="regular"
                               >
-                                <glamorous(span)>
-                                  <span
-                                    className="glamor-2"
-                                  >
-                                    <glamorous(span)
-                                      size="large"
+                                <button
+                                  className="glamor-12"
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
                                     >
-                                      <span
-                                        className="glamor-1"
+                                      <glamorous(span)
+                                        size="large"
                                       >
-                                        <span>
-                                          Menu item
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Menu item
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            >
+                                              Secondary text
+                                            </span>
+                                          </glamorous(span)>
                                         </span>
-                                        <glamorous(span)>
-                                          <span
-                                            className="glamor-0"
-                                          />
-                                        </glamorous(span)>
-                                      </span>
-                                    </glamorous(span)>
-                                  </span>
-                                </glamorous(span)>
-                              </button>
-                            </glamorous(button)>
-                          </Button>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
                         </MenuItem>
-                      </MenuItem>
-                      <MenuItem>
                         <MenuItem
-                          fullWidth={true}
-                          minimal={true}
-                          size="large"
-                          variant="regular"
+                          variant="danger"
                         >
-                          <Button
-                            className="glamor-4"
+                          <MenuItem
                             fullWidth={true}
                             minimal={true}
                             size="large"
-                            variant="regular"
+                            variant="danger"
                           >
-                            <glamorous(button)
-                              className="glamor-4"
+                            <Button
+                              className="glamor-38"
                               fullWidth={true}
                               minimal={true}
                               size="large"
-                              type="button"
-                              variant="regular"
+                              variant="danger"
                             >
-                              <button
-                                className="glamor-3"
+                              <glamorous(button)
+                                className="glamor-38"
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
                                 type="button"
+                                variant="danger"
                               >
-                                <glamorous(span)>
-                                  <span
-                                    className="glamor-2"
-                                  >
-                                    <glamorous(span)
-                                      size="large"
+                                <button
+                                  className="glamor-37"
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
                                     >
-                                      <span
-                                        className="glamor-1"
+                                      <glamorous(span)
+                                        size="large"
                                       >
-                                        <span>
-                                          Menu item
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            Danger variant
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
                                         </span>
-                                        <glamorous(span)>
-                                          <span
-                                            className="glamor-0"
-                                          />
-                                        </glamorous(span)>
-                                      </span>
-                                    </glamorous(span)>
-                                  </span>
-                                </glamorous(span)>
-                              </button>
-                            </glamorous(button)>
-                          </Button>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
                         </MenuItem>
-                      </MenuItem>
-                    </div>
+                        <MenuItem
+                          withArrow={true}
+                        >
+                          <MenuItem
+                            fullWidth={true}
+                            iconEnd={<IconChevronRight />}
+                            minimal={true}
+                            size="large"
+                            variant="regular"
+                            withArrow={true}
+                          >
+                            <Button
+                              className="glamor-45"
+                              fullWidth={true}
+                              iconEnd={<IconChevronRight />}
+                              minimal={true}
+                              size="large"
+                              variant="regular"
+                              withArrow={true}
+                            >
+                              <glamorous(button)
+                                className="glamor-45"
+                                fullWidth={true}
+                                minimal={true}
+                                size="large"
+                                type="button"
+                                variant="regular"
+                                withArrow={true}
+                              >
+                                <button
+                                  className="glamor-44"
+                                  type="button"
+                                >
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      <glamorous(span)
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <span>
+                                            With arrow
+                                          </span>
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-0"
+                                            />
+                                          </glamorous(span)>
+                                        </span>
+                                      </glamorous(span)>
+                                      <IconChevronRight
+                                        size="medium"
+                                      >
+                                        <Icon
+                                          rtl={true}
+                                          size="medium"
+                                        >
+                                          <glamorous(svg)
+                                            aria-hidden={true}
+                                            role="icon"
+                                            rtl={true}
+                                            size="medium"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <svg
+                                              aria-hidden={true}
+                                              className="glamor-8"
+                                              role="icon"
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <g>
+                                                <path
+                                                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </glamorous(svg)>
+                                        </Icon>
+                                      </IconChevronRight>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </MenuItem>
+                        </MenuItem>
+                      </div>
+                    </Menu>
                   </Menu>
-                </Menu>
-              </div>
-            </glamorous(div)>
+                </div>
+              </glamorous(div)>
+            </wrappedPFC>
           </div>
         </LivePreview>
       </div>
@@ -635,6 +1609,59 @@ exports[`Menu basic 2`] = `
 .glamor-27 *::after,
 [data-glamor-27] *::after {
   box-sizing: inherit;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  background-color: #fff;
+  height: 0.5em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  background-color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.3333333333333333em 1.0833333333333335em 0.6666666666666666em;
 }
 
 .glamor-5,
@@ -822,59 +1849,6 @@ exports[`Menu basic 2`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  background-color: #fff;
-  font-size: 0.75em;
-  font-weight: 700;
-  margin: 0;
-  padding: 1.3333333333333333em 1.0833333333333335em 0.6666666666666666em;
-}
-
-.glamor-13,
-[data-glamor-13] {
-  background-color: #fff;
-  height: 0.5em;
 }
 
 <ThemeProvider>
@@ -1349,6 +2323,53 @@ exports[`Menu basic 3`] = `
   box-sizing: inherit;
 }
 
+.glamor-3,
+[data-glamor-3] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  background-color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.3333333333333333em 1.0833333333333335em 0.6666666666666666em;
+}
+
 .glamor-5,
 [data-glamor-5] {
   background-color: #fff;
@@ -1534,53 +2555,6 @@ exports[`Menu basic 3`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  background-color: #fff;
-  font-size: 0.75em;
-  font-weight: 700;
-  margin: 0;
-  padding: 1.3333333333333333em 1.0833333333333335em 0.6666666666666666em;
 }
 
 <ThemeProvider>
@@ -1977,6 +2951,44 @@ exports[`Menu basic 4`] = `
   box-sizing: inherit;
 }
 
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
 .glamor-4,
 [data-glamor-4] {
   background-color: #fff;
@@ -2162,44 +3174,6 @@ exports[`Menu basic 4`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
 }
 
 <ThemeProvider>
@@ -2582,6 +3556,199 @@ exports[`Menu icons 1`] = `
   box-sizing: inherit;
 }
 
+.glamor-49,
+[data-glamor-49] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  height: auto;
+}
+
+.glamor-49:focus,
+[data-glamor-49]:focus,
+.glamor-49[data-simulate-focus],
+[data-glamor-49][data-simulate-focus] {
+  background-color: #e1f3fc;
+  border: 0;
+  box-shadow: 0;
+}
+
+.glamor-49 > span,
+[data-glamor-49] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-49 > span > span,
+[data-glamor-49] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-49 [role="icon"],
+[data-glamor-49] [role="icon"] {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-48,
+[data-glamor-48] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 400;
+  height: auto;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  vertical-align: middle;
+  width: 100%;
+  border: 0;
+}
+
+.glamor-48 *,
+[data-glamor-48] *,
+.glamor-48 *::before,
+[data-glamor-48] *::before,
+.glamor-48 *::after,
+[data-glamor-48] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-48:focus,
+[data-glamor-48]:focus,
+.glamor-48[data-simulate-focus],
+[data-glamor-48][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0;
+  background-color: #e1f3fc;
+  border: 0;
+}
+
+.glamor-48::-moz-focus-inner,
+[data-glamor-48]::-moz-focus-inner,
+.glamor-48[data-simulate-mozfocusinner],
+[data-glamor-48][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-48 [role="icon"],
+[data-glamor-48] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.25em;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-48 > span,
+[data-glamor-48] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-48 > span > span,
+[data-glamor-48] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
 .glamor-5,
 [data-glamor-5] {
   background-color: #fff;
@@ -2769,42 +3936,12 @@ exports[`Menu icons 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
+.glamor-0,
+[data-glamor-0] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
 }
 
 .glamor-28,
@@ -3360,169 +4497,6 @@ exports[`Menu icons 1`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-49,
-[data-glamor-49] {
-  background-color: #fff;
-  border: 0;
-  border-radius: 0;
-  font-weight: 400;
-  height: auto;
-}
-
-.glamor-49:focus,
-[data-glamor-49]:focus,
-.glamor-49[data-simulate-focus],
-[data-glamor-49][data-simulate-focus] {
-  background-color: #e1f3fc;
-  border: 0;
-  box-shadow: 0;
-}
-
-.glamor-49 > span,
-[data-glamor-49] > span {
-  align-items: start;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-49 > span > span,
-[data-glamor-49] > span > span {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 1 auto;
-  line-height: 1.25;
-  justify-content: space-between;
-  overflow: initial;
-  padding-bottom: 0.2857142857142857em;
-  padding-top: 0.21428571428571427em;
-  text-align: left;
-  text-overflow: initial;
-  white-space: initial;
-  -webkit-flex: 1 1 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-49 [role="icon"],
-[data-glamor-49] [role="icon"] {
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.glamor-48,
-[data-glamor-48] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #fff;
-  border-color: transparent;
-  border-radius: 0;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 400;
-  height: auto;
-  min-width: 2.5em;
-  padding: 0.4375em;
-  vertical-align: middle;
-  width: 100%;
-  border: 0;
-}
-
-.glamor-48 *,
-[data-glamor-48] *,
-.glamor-48 *::before,
-[data-glamor-48] *::before,
-.glamor-48 *::after,
-[data-glamor-48] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-48:focus,
-[data-glamor-48]:focus,
-.glamor-48[data-simulate-focus],
-[data-glamor-48][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0;
-  background-color: #e1f3fc;
-  border: 0;
-}
-
-.glamor-48::-moz-focus-inner,
-[data-glamor-48]::-moz-focus-inner,
-.glamor-48[data-simulate-mozfocusinner],
-[data-glamor-48][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-48 [role="icon"],
-[data-glamor-48] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.25em;
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.glamor-48 > span,
-[data-glamor-48] > span {
-  align-items: start;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-48 > span > span,
-[data-glamor-48] > span > span {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 1 auto;
-  line-height: 1.25;
-  justify-content: space-between;
-  overflow: initial;
-  padding-bottom: 0.2857142857142857em;
-  padding-top: 0.21428571428571427em;
-  text-align: left;
-  text-overflow: initial;
-  white-space: initial;
-  -webkit-flex: 1 1 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  fill: #8e99ab;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
 }
 
 <ThemeProvider>
@@ -4432,16 +5406,12 @@ exports[`Menu kitchen-sink 1`] = `
   padding-top: 0.25em;
 }
 
-.glamor-17,
-[data-glamor-17] {
-  overflow: hidden;
-}
-
-.glamor-17 > div,
-[data-glamor-17] > div {
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 18em;
+.glamor-0,
+[data-glamor-0] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
 }
 
 .glamor-6,
@@ -4631,12 +5601,16 @@ exports[`Menu kitchen-sink 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.glamor-0,
-[data-glamor-0] {
-  fill: #8e99ab;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
+.glamor-17,
+[data-glamor-17] {
+  overflow: hidden;
+}
+
+.glamor-17 > div,
+[data-glamor-17] > div {
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 18em;
 }
 
 <ThemeProvider>
@@ -6159,6 +7133,44 @@ exports[`Menu secondary-text 1`] = `
   box-sizing: inherit;
 }
 
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
 .glamor-4,
 [data-glamor-4] {
   background-color: #fff;
@@ -6344,44 +7356,6 @@ exports[`Menu secondary-text 1`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
 }
 
 <ThemeProvider>
@@ -6776,6 +7750,199 @@ exports[`Menu states 1`] = `
   box-sizing: inherit;
 }
 
+.glamor-154,
+[data-glamor-154] {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  height: auto;
+}
+
+.glamor-154:focus,
+[data-glamor-154]:focus,
+.glamor-154[data-simulate-focus],
+[data-glamor-154][data-simulate-focus] {
+  background-color: #e1f3fc;
+  border: 0;
+  box-shadow: 0;
+}
+
+.glamor-154 > span,
+[data-glamor-154] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-154 > span > span,
+[data-glamor-154] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-154 [role="icon"],
+[data-glamor-154] [role="icon"] {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-153,
+[data-glamor-153] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 400;
+  height: auto;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  vertical-align: middle;
+  width: 100%;
+  border: 0;
+}
+
+.glamor-153 *,
+[data-glamor-153] *,
+.glamor-153 *::before,
+[data-glamor-153] *::before,
+.glamor-153 *::after,
+[data-glamor-153] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-153:focus,
+[data-glamor-153]:focus,
+.glamor-153[data-simulate-focus],
+[data-glamor-153][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0;
+  background-color: #e1f3fc;
+  border: 0;
+}
+
+.glamor-153::-moz-focus-inner,
+[data-glamor-153]::-moz-focus-inner,
+.glamor-153[data-simulate-mozfocusinner],
+[data-glamor-153][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-153 [role="icon"],
+[data-glamor-153] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.25em;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-153 > span,
+[data-glamor-153] > span {
+  align-items: start;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-153 > span > span,
+[data-glamor-153] > span > span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
+  line-height: 1.25;
+  justify-content: space-between;
+  overflow: initial;
+  padding-bottom: 0.2857142857142857em;
+  padding-top: 0.21428571428571427em;
+  text-align: left;
+  text-overflow: initial;
+  white-space: initial;
+  -webkit-flex: 1 1 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
 .glamor-4,
 [data-glamor-4] {
   background-color: #fff;
@@ -6961,44 +8128,6 @@ exports[`Menu states 1`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
 }
 
 .glamor-10,
@@ -7537,161 +8666,6 @@ exports[`Menu states 1`] = `
 
 .glamor-21 > span > span,
 [data-glamor-21] > span > span {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 1 auto;
-  line-height: 1.25;
-  justify-content: space-between;
-  overflow: initial;
-  padding-bottom: 0.2857142857142857em;
-  padding-top: 0.21428571428571427em;
-  text-align: left;
-  text-overflow: initial;
-  white-space: initial;
-  -webkit-flex: 1 1 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-154,
-[data-glamor-154] {
-  background-color: #fff;
-  border: 0;
-  border-radius: 0;
-  font-weight: 400;
-  height: auto;
-}
-
-.glamor-154:focus,
-[data-glamor-154]:focus,
-.glamor-154[data-simulate-focus],
-[data-glamor-154][data-simulate-focus] {
-  background-color: #e1f3fc;
-  border: 0;
-  box-shadow: 0;
-}
-
-.glamor-154 > span,
-[data-glamor-154] > span {
-  align-items: start;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-154 > span > span,
-[data-glamor-154] > span > span {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 1 auto;
-  line-height: 1.25;
-  justify-content: space-between;
-  overflow: initial;
-  padding-bottom: 0.2857142857142857em;
-  padding-top: 0.21428571428571427em;
-  text-align: left;
-  text-overflow: initial;
-  white-space: initial;
-  -webkit-flex: 1 1 auto;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-154 [role="icon"],
-[data-glamor-154] [role="icon"] {
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.glamor-153,
-[data-glamor-153] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #fff;
-  border-color: transparent;
-  border-radius: 0;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 400;
-  height: auto;
-  min-width: 2.5em;
-  padding: 0.4375em;
-  vertical-align: middle;
-  width: 100%;
-  border: 0;
-}
-
-.glamor-153 *,
-[data-glamor-153] *,
-.glamor-153 *::before,
-[data-glamor-153] *::before,
-.glamor-153 *::after,
-[data-glamor-153] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-153:focus,
-[data-glamor-153]:focus,
-.glamor-153[data-simulate-focus],
-[data-glamor-153][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0;
-  background-color: #e1f3fc;
-  border: 0;
-}
-
-.glamor-153::-moz-focus-inner,
-[data-glamor-153]::-moz-focus-inner,
-.glamor-153[data-simulate-mozfocusinner],
-[data-glamor-153][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-153 [role="icon"],
-[data-glamor-153] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.25em;
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.glamor-153 > span,
-[data-glamor-153] > span {
-  align-items: start;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-}
-
-.glamor-153 > span > span,
-[data-glamor-153] > span > span {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -11243,6 +12217,14 @@ exports[`Menu with-arrow 1`] = `
   padding-top: 0.25em;
 }
 
+.glamor-2,
+[data-glamor-2] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+}
+
 .glamor-5,
 [data-glamor-5] {
   background-color: #fff;
@@ -11428,14 +12410,6 @@ exports[`Menu with-arrow 1`] = `
   -webkit-flex: 1 1 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  fill: #8e99ab;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
 }
 
 <ThemeProvider>
@@ -11908,6 +12882,44 @@ exports[`Menu wrapping 1`] = `
   box-sizing: inherit;
 }
 
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  padding: 0 0.42857142857142855em;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  color: #58606e;
+  font-size: 0.75em;
+  margin-left: 0.6666666666666666em;
+  padding-top: 0.25em;
+}
+
 .glamor-4,
 [data-glamor-4] {
   background-color: #fff;
@@ -12095,42 +13107,12 @@ exports[`Menu wrapping 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.7142857142857142em;
-  padding: 0 0.42857142857142855em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  color: #58606e;
-  font-size: 0.75em;
-  margin-left: 0.6666666666666666em;
-  padding-top: 0.25em;
+.glamor-6,
+[data-glamor-6] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
 }
 
 .glamor-29,
@@ -12143,14 +13125,6 @@ exports[`Menu wrapping 1`] = `
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 18em;
-}
-
-.glamor-6,
-[data-glamor-6] {
-  fill: #8e99ab;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
 }
 
 <ThemeProvider>

@@ -17,10 +17,26 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../utils';
+import { MenuDivider, MenuHeading, MenuItem } from './index';
 
 type Props = {
   /** [MenuDivider](./menu-divider), [MenuHeading](./menu-heading), or [MenuItem](./menu-item) */
-  children: MnrlReactNode
+  children?: MnrlReactNode,
+  /** See example below */
+  data?: Array<Item>
+};
+
+type Item = {
+  disabled?: boolean,
+  divider?: boolean,
+  heading?: boolean,
+  iconEnd?: React$Element<*>,
+  iconStart?: React$Element<*>,
+  onClick?: (event: Object) => void,
+  secondaryText?: MnrlReactNode,
+  text?: MnrlReactNode,
+  variant?: 'regular' | 'danger' | 'success' | 'warning',
+  withArrow?: boolean
 };
 
 const Root = createStyledComponent(
@@ -32,9 +48,38 @@ const Root = createStyledComponent(
   }
 );
 
+const renderChildren = (children?: MnrlReactNode, data?: Array<Item>) => {
+  if (Array.isArray(data)) {
+    return data.map((item, i) => {
+      if (item.divider) {
+        return <MenuDivider key={i} />;
+      } else if (item.heading) {
+        return (
+          <MenuHeading key={i}>
+            {item.text}
+          </MenuHeading>
+        );
+      } else {
+        const { text, ...itemProps } = item;
+        return (
+          <MenuItem {...itemProps} key={i}>
+            {text}
+          </MenuItem>
+        );
+      }
+    });
+  } else {
+    return children;
+  }
+};
+
 /**
  * Menu component
  */
-export default function Menu(props: Props) {
-  return <Root {...props} />;
+export default function Menu({ children, data, ...restProps }: Props) {
+  return (
+    <Root {...restProps}>
+      {renderChildren(children, data)}
+    </Root>
+  );
 }
