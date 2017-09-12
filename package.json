@@ -36,7 +36,8 @@
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
     "start": "NODE_ENV=development webpack-dev-server --progress",
-    "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
+    "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage",
+    "test:debug": "node --inspect --inspect-brk node_modules/.bin/jest"
   },
   "config": {
     "commitizen": {
