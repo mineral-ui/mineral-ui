@@ -41,3 +41,11 @@ npm run jest -- -o
 ```sh
 npm run jest -- --watch
 ```
+
+#### Debugging
+
+1. Add a `debugger;` breakpoint somewhere in your code or test.
+1. `npm run jest:debug`
+1. Open [chrome://inspect](chrome://inspect) in Chrome.
+1. Under "Remote target", click on "inspect". A new debugger window will open up.
+1. Click play once to get past the initial breakpoint.  The debugger should then stop at your breakpoint.

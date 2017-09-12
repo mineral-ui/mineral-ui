@@ -30,6 +30,7 @@
     "flow-typed": "flow-typed",
     "format": "./scripts/format.js && eslint --fix .",
     "jest": "jest",
+    "jest:debug": "node --inspect --inspect-brk node_modules/.bin/jest",
     "lint": "npm run eslint",
     "pack-ls": "cd dist && tar -tvf $(npm pack) && rm *.tgz",
     "postinstall": "npm run build:icons",
