@@ -37,9 +37,10 @@ props and context and returns an object of theme variables
   scope: { createThemedComponent, Sample },
   source: `
     () => {
-      const MyThemedSample = createThemedComponent(Sample, {
-        color_primary: 'mediumvioletred'
-      });
+      const MyThemedSample = createThemedComponent(Sample, ({ theme }) => ({
+        color_text: 'mediumvioletred',
+        Sample_backgroundColor: theme.color_theme_20
+      }));
 
       return <MyThemedSample />;
     }`

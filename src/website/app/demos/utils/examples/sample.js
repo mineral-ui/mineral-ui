@@ -15,13 +15,24 @@
  */
 
 /* @flow */
-import Sample from '../components/Sample';
+import { createStyledComponent } from '../../../../../utils';
 
 export default {
   id: 'sample-component',
   title: 'Sample Component',
   description:
     'Just a simple sample component to demonstrate the styling below.',
-  scope: { Sample },
-  source: `<Sample />`
+  scope: { createStyledComponent },
+  source: `
+    () => {
+      const Sample = createStyledComponent('span', ({ theme }) => ({
+        backgroundColor: theme.Sample_backgroundColor || 'lavender',
+        color: theme.Sample_color || theme.color_text,
+        display: 'inline-block',
+        outline: '1px solid' + theme.borderColor,
+        padding: theme.spacing_single
+      }));
+
+      return <Sample>Sample</Sample>
+    }`
 };

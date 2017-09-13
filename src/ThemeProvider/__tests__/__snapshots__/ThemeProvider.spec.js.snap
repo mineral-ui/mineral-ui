@@ -4,7 +4,6 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
-  color: mediumvioletred;
   display: inline-block;
   outline: 1px solid undefined;
 }
@@ -56,7 +55,6 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
-  color: mediumvioletred;
   display: inline-block;
   outline: 1px solid undefined;
 }
@@ -108,6 +106,7 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
+  color: #333840;
   display: inline-block;
   outline: 1px solid #c8d1e0;
   padding: 0.5em;
@@ -255,13 +254,22 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
 `;
 
 exports[`ThemeProvider theme-provider 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  background-color: lavender;
+  color: #333840;
+  display: inline-block;
+  outline: 1px solid #c8d1e0;
+  padding: 0.5em;
+}
+
 .glamor-2 > *,
 [data-glamor-2] > * {
   margin-right: 0.5rem;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.glamor-1,
+[data-glamor-1] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -486,7 +494,7 @@ exports[`ThemeProvider theme-provider 1`] = `
                       <Sample>
                         <glamorous(span)>
                           <span
-                            className="glamor-0"
+                            className="glamor-1"
                           >
                             Sample
                           </span>
