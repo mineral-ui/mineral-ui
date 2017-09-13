@@ -25,7 +25,7 @@ type Props = {|
 
 const Root = createStyledComponent('span', ({ theme }) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',
-  color: theme.Sample_color || theme.color_primary,
+  color: theme.Sample_color || theme.color_text,
   display: 'inline-block',
   outline: `1px solid ${theme.borderColor}`,
   padding: theme.spacing_single
