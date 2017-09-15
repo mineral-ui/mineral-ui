@@ -16,10 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { mount } from 'enzyme';
+import { mountInThemeProvider } from '../../../utils/enzymeUtils';
 import { createThemedComponent } from '../index';
 import Link from '../../Link';
-import ThemeProvider from '../../ThemeProvider';
 import Sample from '../../website/app/demos/utils/components/Sample';
 import examples from '../../website/app/demos/utils/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
@@ -27,28 +26,20 @@ import testDemoExamples from '../../../utils/testDemoExamples';
 function mountThemedLink(theme) {
   const ThemedLink = createThemedComponent(Link, theme);
 
-  return mount(
-    <ThemeProvider>
-      <ThemedLink />
-    </ThemeProvider>
-  );
+  return mountInThemeProvider(<ThemedLink />, true);
 }
 
-function mountThemedSample() {
-  const ThemedSample = createThemedComponent(Sample, {
-    color_primary: 'mediumvioletred'
-  });
+function mountThemedSample(theme) {
+  const ThemedSample = createThemedComponent(Sample, theme);
 
-  return mount(
-    <ThemeProvider>
-      <ThemedSample />
-    </ThemeProvider>
-  );
+  return mountInThemeProvider(<ThemedSample />, true);
 }
 
 describe('createThemedComponent', () => {
   it('renders correctly', () => {
-    const themedSample = mountThemedSample();
+    const themedSample = mountThemedSample({
+      color_text: 'mediumvioletred'
+    });
 
     expect(themedSample).toMatchSnapshot();
   });

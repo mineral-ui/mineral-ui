@@ -21,13 +21,13 @@ import Link from '../Link';
 import examples from '../../website/app/demos/Link/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
-function renderLink(props) {
+function shallowLink(props) {
   return shallow(<Link {...props} />);
 }
 
 describe('Link', () => {
   it('renders', () => {
-    const link = renderLink({
+    const link = shallowLink({
       href: 'http://example.com',
       children: 'Children'
     });

@@ -40,19 +40,21 @@ export default function testDemoExamples(
     examples = examples.filter(example => !exclusions.includes(example.id));
   }
 
-  return examples.map(example => {
-    it(example.id, () => {
-      const component = mount(
-        <ThemeProvider>
-          <LiveProvider
-            code={example.source}
-            scope={example.scope}
-            mountStylesheet={false}>
-            <LivePreview />
-          </LiveProvider>
-        </ThemeProvider>
-      );
-      expect(component).toMatchSnapshot();
+  return describe('demo examples', () => {
+    examples.map(example => {
+      it(example.id, () => {
+        const component = mount(
+          <ThemeProvider>
+            <LiveProvider
+              code={example.source}
+              scope={example.scope}
+              mountStylesheet={false}>
+              <LivePreview />
+            </LiveProvider>
+          </ThemeProvider>
+        );
+        expect(component).toMatchSnapshot();
+      });
     });
   });
 }

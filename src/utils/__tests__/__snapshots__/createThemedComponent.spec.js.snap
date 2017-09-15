@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createThemedComponent create-styled-component 1`] = `
+exports[`createThemedComponent demo examples create-styled-component 1`] = `
 .glamor-1,
 [data-glamor-1] {
   outline: 3px dashed mediumvioletred;
@@ -203,7 +203,7 @@ exports[`createThemedComponent create-styled-component 1`] = `
 </ThemeProvider>
 `;
 
-exports[`createThemedComponent create-themed-component 1`] = `
+exports[`createThemedComponent demo examples create-themed-component 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: #c0e5fc;
@@ -1180,7 +1180,7 @@ exports[`createThemedComponent renders correctly 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
-  color: #333840;
+  color: mediumvioletred;
   display: inline-block;
   outline: 1px solid #c8d1e0;
   padding: 0.5em;
@@ -1445,14 +1445,14 @@ exports[`createThemedComponent renders correctly 1`] = `
         <ThemeProvider
           theme={
             Object {
-              "color_primary": "mediumvioletred",
+              "color_text": "mediumvioletred",
             }
           }
         >
           <ThemeProvider
             theme={
               Object {
-                "color_primary": "mediumvioletred",
+                "color_text": "mediumvioletred",
               }
             }
           >
