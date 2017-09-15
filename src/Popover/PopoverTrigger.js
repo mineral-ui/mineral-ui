@@ -16,7 +16,7 @@
 
 /* @flow */
 import React, { Children, PureComponent } from 'react';
-import { Target } from 'react-popper';
+import { Target } from '@mineral-ui/react-popper';
 import { createStyledComponent } from '../utils';
 
 type Props = {
