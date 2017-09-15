@@ -21,7 +21,7 @@ import Card from '../Card';
 import examples from '../../website/app/demos/Card/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
-function renderCard(props, children) {
+function shallowCard(props, children) {
   return shallow(
     <Card {...props}>
       {children}
@@ -32,14 +32,14 @@ function renderCard(props, children) {
 describe('Card', () => {
   let card;
   it('renders', () => {
-    card = renderCard({}, 'Children');
+    card = shallowCard({}, 'Children');
 
     expect(card.exists()).toEqual(true);
   });
 
   describe('onClick', () => {
     beforeEach(() => {
-      card = renderCard({ onClick: jest.fn() }, 'Click me');
+      card = shallowCard({ onClick: jest.fn() }, 'Click me');
     });
 
     it('calls onClick when clicked', () => {

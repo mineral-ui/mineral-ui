@@ -16,8 +16,8 @@
 
 /* @flow */
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import ThemeProvider from '../../ThemeProvider';
+import { shallow } from 'enzyme';
+import { mountInThemeProvider } from '../../../utils/enzymeUtils';
 import Popover from '../Popover';
 import PopoverArrow from '../PopoverArrow';
 import PopoverContent from '../PopoverContent';
@@ -41,13 +41,7 @@ function mountPopover(props = {}) {
     ...props
   };
 
-  const mountedComponent = mount(
-    <ThemeProvider>
-      <Popover {...popoverProps} />
-    </ThemeProvider>
-  );
-
-  return mountedComponent.find(Popover);
+  return mountInThemeProvider(<Popover {...popoverProps} />);
 }
 
 describe('Popover', () => {
