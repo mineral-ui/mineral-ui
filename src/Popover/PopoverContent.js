@@ -16,7 +16,7 @@
 
 /* @flow */
 import React, { PureComponent } from 'react';
-import { Popper } from 'react-popper';
+import { Popper } from '@mineral-ui/react-popper';
 import { createStyledComponent, createThemedComponent } from '../utils';
 import { CardBlock, CardTitle } from '../Card';
 import PopoverArrow from './PopoverArrow';

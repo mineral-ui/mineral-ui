@@ -19,7 +19,7 @@ import React, { PureComponent } from 'react';
 import { findDOMNode } from 'react-dom';
 import { canUseDOM } from 'exenv';
 import update from 'immutability-helper';
-import { Manager } from 'react-popper';
+import { Manager } from '@mineral-ui/react-popper';
 import { createStyledComponent } from '../utils';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';
@@ -96,12 +96,10 @@ export default class Popover extends PureComponent {
     hasArrow: true,
     modifiers: {
       flip: {
-        boundariesElement: 'viewport',
-        flipVariations: true
+        boundariesElement: 'viewport'
       },
       preventOverflow: {
-        boundariesElement: 'viewport',
-        escapeWithReference: true
+        boundariesElement: 'viewport'
       }
     },
     placement: 'bottom',

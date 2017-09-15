@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { Arrow } from 'react-popper';
+import { Arrow } from '@mineral-ui/react-popper';
 import { createStyledComponent } from '../utils';
 import { componentTheme as popoverContentComponentTheme } from './PopoverContent';
 
