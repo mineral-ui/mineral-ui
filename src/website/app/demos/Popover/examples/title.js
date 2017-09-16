@@ -21,7 +21,7 @@ import DemoContent from '../components/DemoContent';
 import Popover from '../components/AlwaysOpenPopover';
 
 const DemoLayout = createStyledComponent('div', {
-  paddingBottom: '13em'
+  padding: '5em 0'
 });
 
 export default {
@@ -33,7 +33,7 @@ export default {
     <DemoLayout>
       <Popover
         content={<DemoContent />}
-        placement="bottom-start"
+        placement="right"
         subtitle="Subtitle"
         title="Title">
         <Button disabled>Open Popover</Button>

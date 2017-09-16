@@ -201,28 +201,5 @@ describe('Popover', () => {
     });
   });
 
-  describe('boundariesElement & modifiers', () => {
-    it('modifiers supercedes boundariesElement', () => {
-      const popover = shallowPopover({
-        boundariesElement: 'window',
-        modifiers: {
-          flip: {
-            boundariesElement: 'scrollParent'
-          },
-          preventOverflow: {
-            boundariesElement: 'scrollParent'
-          }
-        }
-      });
-      const flip = popover.instance().props.modifiers.flip.boundariesElement;
-      const preventOverflow = popover.instance().props.modifiers.preventOverflow
-        .boundariesElement;
-
-      expect(
-        flip === 'scrollParent' && preventOverflow === 'scrollParent'
-      ).toEqual(true);
-    });
-  });
-
   testDemoExamples(examples);
 });
