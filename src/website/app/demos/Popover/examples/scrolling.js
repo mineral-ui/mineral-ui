@@ -21,18 +21,16 @@ import ScrollParent from '../components/ScrollBox';
 import Popover from '../../../../../Popover';
 
 export default {
-  id: 'boundaries',
-  title: 'Boundaries',
-  description:
-    "In some cases, it can be helpful to set the `boundariesElement` to 'scrollParent' instead of the 'viewPort' (default).",
+  id: 'scrolling-container',
+  title: 'Scrolling container',
+  description: 'Behavior inside of a scrolling container.',
   scope: { Button, DemoContent, ScrollParent, Popover },
   source: `
     <ScrollParent>
       <Popover
         content={<DemoContent />}
-        boundariesElement="scrollParent"
         placement="left"
-        defaultIsOpen
+        isOpen
         restoreFocus={false}>
         <Button>Open Popover</Button>
       </Popover>

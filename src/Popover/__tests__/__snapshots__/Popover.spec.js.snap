@@ -269,19 +269,8 @@ exports[`Popover demo examples basic 1`] = `
           >
             <Popover
               autoFocus={true}
-              boundariesElement="viewport"
               content={<DemoContent />}
               hasArrow={true}
-              modifiers={
-                Object {
-                  "flip": Object {
-                    "boundariesElement": "viewport",
-                  },
-                  "preventOverflow": Object {
-                    "boundariesElement": "viewport",
-                  },
-                }
-              }
               placement="bottom"
               restoreFocus={true}
             >
@@ -346,846 +335,6 @@ exports[`Popover demo examples basic 1`] = `
                 </Manager>
               </Popover>
             </Popover>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Popover demo examples boundaries 1`] = `
-.glamor-11,
-[data-glamor-11] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
-  display: inline-block;
-}
-
-.glamor-9,
-[data-glamor-9] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  background-color: #fff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
-  padding: 0.5em 0;
-  z-index: 100;
-}
-
-.glamor-9 *,
-[data-glamor-9] *,
-.glamor-9 *::before,
-[data-glamor-9] *::before,
-.glamor-9 *::after,
-[data-glamor-9] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-6,
-[data-glamor-6] {
-  font-size: 1em;
-  line-height: 1.5;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.glamor-7,
-[data-glamor-7] {
-  color: #fff;
-  display: none;
-  font-size: 8px;
-  margin: 8px;
-  position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
-  -webkit-transform: rotate(0deg) scaleX(2);
-}
-
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: #1b8bcc;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-5,
-[data-glamor-5] {
-  width: 13.75em;
-}
-
-.glamor-20,
-[data-glamor-20] {
-  position: relative;
-}
-
-.glamor-14,
-[data-glamor-14] {
-  background-color: aliceblue;
-  height: 360px;
-  overflow: auto;
-  position: relative;
-}
-
-.glamor-13,
-[data-glamor-13] {
-  padding: 1000px 200vw;
-}
-
-.glamor-18,
-[data-glamor-18] {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.glamor-17,
-[data-glamor-17] {
-  box-sizing: border-box;
-  color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 1.5em;
-  min-width: 1.5em;
-  padding: 0.1875em;
-  vertical-align: middle;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.glamor-17 *,
-[data-glamor-17] *,
-.glamor-17 *::before,
-[data-glamor-17] *::before,
-.glamor-17 *::after,
-[data-glamor-17] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-17:focus,
-[data-glamor-17]:focus,
-.glamor-17[data-simulate-focus],
-[data-glamor-17][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-17:hover,
-[data-glamor-17]:hover,
-.glamor-17[data-simulate-hover],
-[data-glamor-17][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-17:active,
-[data-glamor-17]:active,
-.glamor-17[data-simulate-active],
-[data-glamor-17][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-17::-moz-focus-inner,
-[data-glamor-17]::-moz-focus-inner,
-.glamor-17[data-simulate-mozfocusinner],
-[data-glamor-17][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-17 [role="icon"],
-[data-glamor-17] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-15,
-[data-glamor-15] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.75em;
-  line-height: 1.3333333333333333em;
-  padding: 0 0.25em;
-}
-
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="
-        <ScrollParent>
-          <Popover
-            content={<DemoContent />}
-            boundariesElement=\\"scrollParent\\"
-            placement=\\"left\\"
-            defaultIsOpen
-            restoreFocus={false}>
-            <Button>Open Popover</Button>
-          </Popover>
-        </ScrollParent>
-      "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoContent": [Function],
-          "Popover": [Function],
-          "ScrollParent": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-            "DemoContent": [Function],
-            "Popover": [Function],
-            "ScrollParent": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <ScrollBox
-              autoCenter={true}
-            >
-              <glamorous(div)>
-                <div
-                  className="glamor-20"
-                >
-                  <glamorous(div)>
-                    <div
-                      className="glamor-14"
-                    >
-                      <glamorous(div)>
-                        <div
-                          className="glamor-13"
-                        >
-                          <Popover
-                            autoFocus={true}
-                            boundariesElement="scrollParent"
-                            content={<DemoContent />}
-                            defaultIsOpen={true}
-                            hasArrow={true}
-                            modifiers={
-                              Object {
-                                "flip": Object {
-                                  "boundariesElement": "scrollParent",
-                                },
-                                "preventOverflow": Object {
-                                  "boundariesElement": "scrollParent",
-                                },
-                              }
-                            }
-                            placement="left"
-                            restoreFocus={false}
-                          >
-                            <Popover>
-                              <Manager
-                                className="glamor-11"
-                                tag="div"
-                              >
-                                <div
-                                  className="glamor-11"
-                                >
-                                  <PopoverTrigger
-                                    isOpen={true}
-                                    onClick={[Function]}
-                                  >
-                                    <PopoverTrigger
-                                      aria-expanded={true}
-                                      onClick={[Function]}
-                                      role="button"
-                                    >
-                                      <Target
-                                        aria-expanded={true}
-                                        className="glamor-3"
-                                        onClick={[Function]}
-                                        role="button"
-                                      >
-                                        <div
-                                          aria-expanded={true}
-                                          className="glamor-3"
-                                          onClick={[Function]}
-                                          role="button"
-                                        >
-                                          <Button>
-                                            <glamorous(button)
-                                              size="medium"
-                                              type="button"
-                                              variant="regular"
-                                            >
-                                              <button
-                                                className="glamor-2"
-                                                type="button"
-                                              >
-                                                <glamorous(span)>
-                                                  <span
-                                                    className="glamor-1"
-                                                  >
-                                                    <glamorous(span)
-                                                      size="medium"
-                                                    >
-                                                      <span
-                                                        className="glamor-0"
-                                                      >
-                                                        Open Popover
-                                                      </span>
-                                                    </glamorous(span)>
-                                                  </span>
-                                                </glamorous(span)>
-                                              </button>
-                                            </glamorous(button)>
-                                          </Button>
-                                        </div>
-                                      </Target>
-                                    </PopoverTrigger>
-                                  </PopoverTrigger>
-                                  <PopoverContent
-                                    hasArrow={true}
-                                    modifiers={
-                                      Object {
-                                        "flip": Object {
-                                          "boundariesElement": "scrollParent",
-                                        },
-                                        "preventOverflow": Object {
-                                          "boundariesElement": "scrollParent",
-                                        },
-                                      }
-                                    }
-                                    placement="left"
-                                  >
-                                    <PopoverContent
-                                      modifiers={
-                                        Object {
-                                          "flip": Object {
-                                            "boundariesElement": "scrollParent",
-                                          },
-                                          "preventOverflow": Object {
-                                            "boundariesElement": "scrollParent",
-                                          },
-                                        }
-                                      }
-                                      placement="left"
-                                      tabIndex={0}
-                                    >
-                                      <Popper
-                                        className="glamor-9"
-                                        component="div"
-                                        eventsEnabled={true}
-                                        modifiers={
-                                          Object {
-                                            "flip": Object {
-                                              "boundariesElement": "scrollParent",
-                                            },
-                                            "preventOverflow": Object {
-                                              "boundariesElement": "scrollParent",
-                                            },
-                                          }
-                                        }
-                                        placement="left"
-                                        tabIndex={0}
-                                      >
-                                        <div
-                                          className="glamor-9"
-                                          style={
-                                            Object {
-                                              "opacity": 0,
-                                              "pointerEvents": "none",
-                                              "position": "absolute",
-                                            }
-                                          }
-                                          tabIndex={0}
-                                        >
-                                          <ThemedComponent>
-                                            <Themed(CardBlock)
-                                              theme={
-                                                Object {
-                                                  "backgroundColor_danger": "#db2929",
-                                                  "backgroundColor_danger_active": "#c71818",
-                                                  "backgroundColor_danger_focus": "#db2929",
-                                                  "backgroundColor_danger_hover": "#eb4d4d",
-                                                  "backgroundColor_disabled": "#ebeff5",
-                                                  "backgroundColor_input_danger": "#fce3e3",
-                                                  "backgroundColor_input_success": "#e8fcf2",
-                                                  "backgroundColor_input_warning": "#fcf1dc",
-                                                  "backgroundColor_link_focus": "#dde3ed",
-                                                  "backgroundColor_success": "#0a8f4c",
-                                                  "backgroundColor_success_active": "#06783f",
-                                                  "backgroundColor_success_focus": "#0a8f4c",
-                                                  "backgroundColor_success_hover": "#10a35a",
-                                                  "backgroundColor_warning": "#e05b2b",
-                                                  "backgroundColor_warning_active": "#cf4615",
-                                                  "backgroundColor_warning_focus": "#e05b2b",
-                                                  "backgroundColor_warning_hover": "#ed774c",
-                                                  "borderColor": "#c8d1e0",
-                                                  "borderColor_active": "#51b3f0",
-                                                  "borderColor_danger": "#ad0e0e",
-                                                  "borderColor_danger_active": "#7d0606",
-                                                  "borderColor_danger_focus": "#c71818",
-                                                  "borderColor_danger_hover": "#db2929",
-                                                  "borderColor_focus": "#0f75b0",
-                                                  "borderColor_hover": "#2f9fe0",
-                                                  "borderColor_success": "#0a8f4c",
-                                                  "borderColor_success_active": "#046132",
-                                                  "borderColor_success_focus": "#06783f",
-                                                  "borderColor_success_hover": "#1fc06f",
-                                                  "borderColor_warning": "#d19411",
-                                                  "borderColor_warning_active": "#916504",
-                                                  "borderColor_warning_focus": "#cf4615",
-                                                  "borderColor_warning_hover": "#e3a322",
-                                                  "borderRadius_1": "0.1875em",
-                                                  "color_black": "#1d1f24",
-                                                  "color_caption": "#58606e",
-                                                  "color_gray_10": "#f5f7fa",
-                                                  "color_gray_100": "#333840",
-                                                  "color_gray_20": "#ebeff5",
-                                                  "color_gray_30": "#dde3ed",
-                                                  "color_gray_40": "#c8d1e0",
-                                                  "color_gray_50": "#afbacc",
-                                                  "color_gray_60": "#8e99ab",
-                                                  "color_gray_70": "#707a8a",
-                                                  "color_gray_80": "#58606e",
-                                                  "color_gray_90": "#434a54",
-                                                  "color_placeholder": "#8e99ab",
-                                                  "color_text": "#333840",
-                                                  "color_text_danger": "#ad0e0e",
-                                                  "color_text_danger_active": "#940909",
-                                                  "color_text_danger_focus": "#ad0e0e",
-                                                  "color_text_danger_hover": "#c71818",
-                                                  "color_text_disabled": "#afbacc",
-                                                  "color_text_ondanger": "#fff",
-                                                  "color_text_onprimary": "#fff",
-                                                  "color_text_onsuccess": "#fff",
-                                                  "color_text_onwarning": "#fff",
-                                                  "color_text_primary": "#0f75b0",
-                                                  "color_text_primary_active": "#0a6091",
-                                                  "color_text_primary_focus": "#0f75b0",
-                                                  "color_text_primary_hover": "#1b8bcc",
-                                                  "color_text_success": "#06783f",
-                                                  "color_text_success_active": "#046132",
-                                                  "color_text_success_focus": "#06783f",
-                                                  "color_text_success_hover": "#0a8f4c",
-                                                  "color_text_warning": "#bd3909",
-                                                  "color_text_warning_active": "#a83207",
-                                                  "color_text_warning_focus": "#bd3909",
-                                                  "color_text_warning_hover": "#cf4615",
-                                                  "color_theme_10": "#e1f3fc",
-                                                  "color_theme_100": "#084d75",
-                                                  "color_theme_20": "#c0e5fc",
-                                                  "color_theme_30": "#9fd9fc",
-                                                  "color_theme_40": "#79c7f7",
-                                                  "color_theme_50": "#51b3f0",
-                                                  "color_theme_60": "#2f9fe0",
-                                                  "color_theme_70": "#1b8bcc",
-                                                  "color_theme_80": "#0f75b0",
-                                                  "color_theme_90": "#0a6091",
-                                                  "color_white": "#fff",
-                                                  "direction": "ltr",
-                                                  "fontFamily": "Open Sans",
-                                                  "fontFamily_monospace": "monospace",
-                                                  "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-                                                  "fontSize_base": 16,
-                                                  "fontSize_h1": "2.125em",
-                                                  "fontSize_h2": "1.75em",
-                                                  "fontSize_h3": "1.375em",
-                                                  "fontSize_h4": "1.125em",
-                                                  "fontSize_h5": "0.875em",
-                                                  "fontSize_h6": "0.875em",
-                                                  "fontSize_mouse": "0.6875em",
-                                                  "fontSize_prose": "1em",
-                                                  "fontSize_ui": "0.875em",
-                                                  "fontWeight_bold": 700,
-                                                  "fontWeight_extraBold": 800,
-                                                  "fontWeight_regular": 400,
-                                                  "fontWeight_semiBold": 600,
-                                                  "lineHeight": 1.25,
-                                                  "lineHeight_prose": 1.5,
-                                                  "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-                                                  "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-                                                  "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-                                                  "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-                                                  "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-                                                  "size_jumbo": "3.25em",
-                                                  "size_large": "2.5em",
-                                                  "size_medium": "2em",
-                                                  "size_small": "1.5em",
-                                                  "spacing_double": "1em",
-                                                  "spacing_half": "0.25em",
-                                                  "spacing_oneAndAHalf": "0.75em",
-                                                  "spacing_quad": "2em",
-                                                  "spacing_quarter": "0.125em",
-                                                  "spacing_single": "0.5em",
-                                                  "spacing_triple": "1.5em",
-                                                  "zIndex_100": 100,
-                                                  "zIndex_1600": 1600,
-                                                  "zIndex_200": 200,
-                                                  "zIndex_400": 400,
-                                                  "zIndex_800": 800,
-                                                }
-                                              }
-                                            >
-                                              <ThemeProvider
-                                                theme={
-                                                  Object {
-                                                    "CardRow_margin": "0.5em",
-                                                    "CardRow_padding": "1em",
-                                                  }
-                                                }
-                                              >
-                                                <ThemeProvider
-                                                  theme={
-                                                    Object {
-                                                      "CardRow_margin": "0.5em",
-                                                      "CardRow_padding": "1em",
-                                                    }
-                                                  }
-                                                >
-                                                  <CardBlock>
-                                                    <CardBlock>
-                                                      <div
-                                                        className="glamor-6"
-                                                      >
-                                                        <DemoContent>
-                                                          <glamorous(div)>
-                                                            <div
-                                                              className="glamor-5"
-                                                            >
-                                                              Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
-                                                            </div>
-                                                          </glamorous(div)>
-                                                        </DemoContent>
-                                                      </div>
-                                                    </CardBlock>
-                                                  </CardBlock>
-                                                </ThemeProvider>
-                                              </ThemeProvider>
-                                            </Themed(CardBlock)>
-                                          </ThemedComponent>
-                                          <PopoverArrow
-                                            size="8px"
-                                          >
-                                            <PopoverArrow
-                                              aria-hidden={true}
-                                              size="8px"
-                                            >
-                                              <Arrow
-                                                aria-hidden={true}
-                                                className="glamor-7"
-                                              >
-                                                <span
-                                                  aria-hidden={true}
-                                                  className="glamor-7"
-                                                  style={Object {}}
-                                                >
-                                                  ▼
-                                                </span>
-                                              </Arrow>
-                                            </PopoverArrow>
-                                          </PopoverArrow>
-                                        </div>
-                                      </Popper>
-                                    </PopoverContent>
-                                  </PopoverContent>
-                                </div>
-                              </Manager>
-                            </Popover>
-                          </Popover>
-                        </div>
-                      </glamorous(div)>
-                    </div>
-                  </glamorous(div)>
-                  <glamorous(Button)
-                    minimal={true}
-                    onClick={[Function]}
-                    size="small"
-                  >
-                    <Button
-                      className="glamor-18"
-                      minimal={true}
-                      onClick={[Function]}
-                      size="small"
-                    >
-                      <glamorous(button)
-                        className="glamor-18"
-                        minimal={true}
-                        onClick={[Function]}
-                        size="small"
-                        type="button"
-                        variant="regular"
-                      >
-                        <button
-                          className="glamor-17"
-                          onClick={[Function]}
-                          type="button"
-                        >
-                          <glamorous(span)>
-                            <span
-                              className="glamor-1"
-                            >
-                              <glamorous(span)
-                                size="small"
-                              >
-                                <span
-                                  className="glamor-15"
-                                >
-                                  Re-center
-                                </span>
-                              </glamorous(span)>
-                            </span>
-                          </glamorous(span)>
-                        </button>
-                      </glamorous(button)>
-                    </Button>
-                  </glamorous(Button)>
-                </div>
-              </glamorous(div)>
-            </ScrollBox>
           </div>
         </LivePreview>
       </div>
@@ -1543,20 +692,9 @@ exports[`Popover demo examples controlled 1`] = `
                 >
                   <Popover
                     autoFocus={true}
-                    boundariesElement="viewport"
                     content={<DemoContent />}
                     hasArrow={true}
                     isOpen={false}
-                    modifiers={
-                      Object {
-                        "flip": Object {
-                          "boundariesElement": "scrollParent",
-                        },
-                        "preventOverflow": Object {
-                          "boundariesElement": "scrollParent",
-                        },
-                      }
-                    }
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
@@ -1925,20 +1063,9 @@ exports[`Popover demo examples disabled 1`] = `
           >
             <Popover
               autoFocus={true}
-              boundariesElement="viewport"
               content={<DemoContent />}
               disabled={true}
               hasArrow={true}
-              modifiers={
-                Object {
-                  "flip": Object {
-                    "boundariesElement": "scrollParent",
-                  },
-                  "preventOverflow": Object {
-                    "boundariesElement": "scrollParent",
-                  },
-                }
-              }
               placement="bottom"
               restoreFocus={true}
             >
@@ -2324,19 +1451,8 @@ exports[`Popover demo examples focus 1`] = `
               >
                 <Popover
                   autoFocus={true}
-                  boundariesElement="viewport"
                   content={<DemoContent />}
                   hasArrow={true}
-                  modifiers={
-                    Object {
-                      "flip": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                      "preventOverflow": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                    }
-                  }
                   placement="bottom"
                   restoreFocus={true}
                 >
@@ -2403,19 +1519,8 @@ exports[`Popover demo examples focus 1`] = `
                 </Popover>
                 <Popover
                   autoFocus={false}
-                  boundariesElement="viewport"
                   content={<DemoContent />}
                   hasArrow={true}
-                  modifiers={
-                    Object {
-                      "flip": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                      "preventOverflow": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                    }
-                  }
                   placement="bottom"
                   restoreFocus={true}
                 >
@@ -2482,19 +1587,8 @@ exports[`Popover demo examples focus 1`] = `
                 </Popover>
                 <Popover
                   autoFocus={true}
-                  boundariesElement="viewport"
                   content={<DemoContent />}
                   hasArrow={true}
-                  modifiers={
-                    Object {
-                      "flip": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                      "preventOverflow": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                    }
-                  }
                   placement="bottom"
                   restoreFocus={false}
                 >
@@ -2561,19 +1655,8 @@ exports[`Popover demo examples focus 1`] = `
                 </Popover>
                 <Popover
                   autoFocus={false}
-                  boundariesElement="viewport"
                   content={<DemoContent />}
                   hasArrow={true}
-                  modifiers={
-                    Object {
-                      "flip": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                      "preventOverflow": Object {
-                        "boundariesElement": "scrollParent",
-                      },
-                    }
-                  }
                   placement="bottom"
                   restoreFocus={false}
                 >
@@ -2976,20 +2059,9 @@ exports[`Popover demo examples overflow 1`] = `
                 >
                   <Popover
                     autoFocus={true}
-                    boundariesElement="viewport"
                     content={<DemoContent />}
                     hasArrow={true}
                     isOpen={true}
-                    modifiers={
-                      Object {
-                        "flip": Object {
-                          "boundariesElement": "viewport",
-                        },
-                        "preventOverflow": Object {
-                          "boundariesElement": "viewport",
-                        },
-                      }
-                    }
                     placement="right"
                     restoreFocus={false}
                   >
@@ -3060,29 +2132,9 @@ exports[`Popover demo examples overflow 1`] = `
                           </PopoverTrigger>
                           <PopoverContent
                             hasArrow={true}
-                            modifiers={
-                              Object {
-                                "flip": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                                "preventOverflow": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                              }
-                            }
                             placement="right"
                           >
                             <PopoverContent
-                              modifiers={
-                                Object {
-                                  "flip": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                  "preventOverflow": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                }
-                              }
                               placement="right"
                               tabIndex={0}
                             >
@@ -3090,16 +2142,7 @@ exports[`Popover demo examples overflow 1`] = `
                                 className="glamor-9"
                                 component="div"
                                 eventsEnabled={true}
-                                modifiers={
-                                  Object {
-                                    "flip": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                    "preventOverflow": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                  }
-                                }
+                                modifiers={Object {}}
                                 placement="right"
                                 tabIndex={0}
                               >
@@ -3646,20 +2689,9 @@ exports[`Popover demo examples placement 1`] = `
                 >
                   <Popover
                     autoFocus={true}
-                    boundariesElement="viewport"
                     content={<DemoContent />}
                     hasArrow={true}
                     isOpen={true}
-                    modifiers={
-                      Object {
-                        "flip": Object {
-                          "boundariesElement": "viewport",
-                        },
-                        "preventOverflow": Object {
-                          "boundariesElement": "viewport",
-                        },
-                      }
-                    }
                     placement="bottom"
                     restoreFocus={false}
                   >
@@ -3731,29 +2763,9 @@ exports[`Popover demo examples placement 1`] = `
                           </PopoverTrigger>
                           <PopoverContent
                             hasArrow={true}
-                            modifiers={
-                              Object {
-                                "flip": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                                "preventOverflow": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                              }
-                            }
                             placement="bottom"
                           >
                             <PopoverContent
-                              modifiers={
-                                Object {
-                                  "flip": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                  "preventOverflow": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                }
-                              }
                               placement="bottom"
                               tabIndex={0}
                             >
@@ -3761,16 +2773,7 @@ exports[`Popover demo examples placement 1`] = `
                                 className="glamor-9"
                                 component="div"
                                 eventsEnabled={true}
-                                modifiers={
-                                  Object {
-                                    "flip": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                    "preventOverflow": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                  }
-                                }
+                                modifiers={Object {}}
                                 placement="bottom"
                                 tabIndex={0}
                               >
@@ -3990,6 +2993,805 @@ exports[`Popover demo examples placement 1`] = `
 </ThemeProvider>
 `;
 
+exports[`Popover demo examples scrolling-container 1`] = `
+.glamor-11,
+[data-glamor-11] {
+  display: inline-block;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #fff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
+  padding: 0.5em 0;
+  z-index: 100;
+}
+
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  color: #fff;
+  display: none;
+  font-size: 8px;
+  margin: 8px;
+  position: absolute;
+  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg) scaleX(2);
+  -webkit-transform: rotate(0deg) scaleX(2);
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  width: 13.75em;
+}
+
+.glamor-20,
+[data-glamor-20] {
+  position: relative;
+}
+
+.glamor-14,
+[data-glamor-14] {
+  background-color: aliceblue;
+  height: 360px;
+  overflow: auto;
+  position: relative;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  padding: 500px 200vw;
+}
+
+.glamor-18,
+[data-glamor-18] {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-17,
+[data-glamor-17] {
+  box-sizing: border-box;
+  color: #0f75b0;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 1.5em;
+  min-width: 1.5em;
+  padding: 0.1875em;
+  vertical-align: middle;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-17 *,
+[data-glamor-17] *,
+.glamor-17 *::before,
+[data-glamor-17] *::before,
+.glamor-17 *::after,
+[data-glamor-17] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-17:focus,
+[data-glamor-17]:focus,
+.glamor-17[data-simulate-focus],
+[data-glamor-17][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-17:hover,
+[data-glamor-17]:hover,
+.glamor-17[data-simulate-hover],
+[data-glamor-17][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-17:active,
+[data-glamor-17]:active,
+.glamor-17[data-simulate-active],
+[data-glamor-17][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-17::-moz-focus-inner,
+[data-glamor-17]::-moz-focus-inner,
+.glamor-17[data-simulate-mozfocusinner],
+[data-glamor-17][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-17 [role="icon"],
+[data-glamor-17] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-15,
+[data-glamor-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.75em;
+  line-height: 1.3333333333333333em;
+  padding: 0 0.25em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input_danger": "#fce3e3",
+        "backgroundColor_input_success": "#e8fcf2",
+        "backgroundColor_input_warning": "#fcf1dc",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#51b3f0",
+        "borderColor_danger": "#ad0e0e",
+        "borderColor_danger_active": "#7d0606",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#db2929",
+        "borderColor_focus": "#0f75b0",
+        "borderColor_hover": "#2f9fe0",
+        "borderColor_success": "#0a8f4c",
+        "borderColor_success_active": "#046132",
+        "borderColor_success_focus": "#06783f",
+        "borderColor_success_hover": "#1fc06f",
+        "borderColor_warning": "#d19411",
+        "borderColor_warning_active": "#916504",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#e3a322",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
+        "color_theme_10": "#e1f3fc",
+        "color_theme_100": "#084d75",
+        "color_theme_20": "#c0e5fc",
+        "color_theme_30": "#9fd9fc",
+        "color_theme_40": "#79c7f7",
+        "color_theme_50": "#51b3f0",
+        "color_theme_60": "#2f9fe0",
+        "color_theme_70": "#1b8bcc",
+        "color_theme_80": "#0f75b0",
+        "color_theme_90": "#0a6091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
+        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "spacing_double": "1em",
+        "spacing_half": "0.25em",
+        "spacing_oneAndAHalf": "0.75em",
+        "spacing_quad": "2em",
+        "spacing_quarter": "0.125em",
+        "spacing_single": "0.5em",
+        "spacing_triple": "1.5em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+        <ScrollParent>
+          <Popover
+            content={<DemoContent />}
+            placement=\\"left\\"
+            isOpen
+            restoreFocus={false}>
+            <Button>Open Popover</Button>
+          </Popover>
+        </ScrollParent>
+      "
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Button": [Function],
+          "DemoContent": [Function],
+          "Popover": [Function],
+          "ScrollParent": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "DemoContent": [Function],
+            "Popover": [Function],
+            "ScrollParent": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <ScrollBox
+              autoCenter={true}
+            >
+              <glamorous(div)>
+                <div
+                  className="glamor-20"
+                >
+                  <glamorous(div)>
+                    <div
+                      className="glamor-14"
+                    >
+                      <glamorous(div)>
+                        <div
+                          className="glamor-13"
+                        >
+                          <Popover
+                            autoFocus={true}
+                            content={<DemoContent />}
+                            hasArrow={true}
+                            isOpen={true}
+                            placement="left"
+                            restoreFocus={false}
+                          >
+                            <Popover>
+                              <Manager
+                                className="glamor-11"
+                                tag="div"
+                              >
+                                <div
+                                  className="glamor-11"
+                                >
+                                  <PopoverTrigger
+                                    isOpen={true}
+                                    onClick={[Function]}
+                                  >
+                                    <PopoverTrigger
+                                      aria-expanded={true}
+                                      onClick={[Function]}
+                                      role="button"
+                                    >
+                                      <Target
+                                        aria-expanded={true}
+                                        className="glamor-3"
+                                        onClick={[Function]}
+                                        role="button"
+                                      >
+                                        <div
+                                          aria-expanded={true}
+                                          className="glamor-3"
+                                          onClick={[Function]}
+                                          role="button"
+                                        >
+                                          <Button>
+                                            <glamorous(button)
+                                              size="medium"
+                                              type="button"
+                                              variant="regular"
+                                            >
+                                              <button
+                                                className="glamor-2"
+                                                type="button"
+                                              >
+                                                <glamorous(span)>
+                                                  <span
+                                                    className="glamor-1"
+                                                  >
+                                                    <glamorous(span)
+                                                      size="medium"
+                                                    >
+                                                      <span
+                                                        className="glamor-0"
+                                                      >
+                                                        Open Popover
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </span>
+                                                </glamorous(span)>
+                                              </button>
+                                            </glamorous(button)>
+                                          </Button>
+                                        </div>
+                                      </Target>
+                                    </PopoverTrigger>
+                                  </PopoverTrigger>
+                                  <PopoverContent
+                                    hasArrow={true}
+                                    placement="left"
+                                  >
+                                    <PopoverContent
+                                      placement="left"
+                                      tabIndex={0}
+                                    >
+                                      <Popper
+                                        className="glamor-9"
+                                        component="div"
+                                        eventsEnabled={true}
+                                        modifiers={Object {}}
+                                        placement="left"
+                                        tabIndex={0}
+                                      >
+                                        <div
+                                          className="glamor-9"
+                                          style={
+                                            Object {
+                                              "opacity": 0,
+                                              "pointerEvents": "none",
+                                              "position": "absolute",
+                                            }
+                                          }
+                                          tabIndex={0}
+                                        >
+                                          <ThemedComponent>
+                                            <Themed(CardBlock)
+                                              theme={
+                                                Object {
+                                                  "backgroundColor_danger": "#db2929",
+                                                  "backgroundColor_danger_active": "#c71818",
+                                                  "backgroundColor_danger_focus": "#db2929",
+                                                  "backgroundColor_danger_hover": "#eb4d4d",
+                                                  "backgroundColor_disabled": "#ebeff5",
+                                                  "backgroundColor_input_danger": "#fce3e3",
+                                                  "backgroundColor_input_success": "#e8fcf2",
+                                                  "backgroundColor_input_warning": "#fcf1dc",
+                                                  "backgroundColor_link_focus": "#dde3ed",
+                                                  "backgroundColor_success": "#0a8f4c",
+                                                  "backgroundColor_success_active": "#06783f",
+                                                  "backgroundColor_success_focus": "#0a8f4c",
+                                                  "backgroundColor_success_hover": "#10a35a",
+                                                  "backgroundColor_warning": "#e05b2b",
+                                                  "backgroundColor_warning_active": "#cf4615",
+                                                  "backgroundColor_warning_focus": "#e05b2b",
+                                                  "backgroundColor_warning_hover": "#ed774c",
+                                                  "borderColor": "#c8d1e0",
+                                                  "borderColor_active": "#51b3f0",
+                                                  "borderColor_danger": "#ad0e0e",
+                                                  "borderColor_danger_active": "#7d0606",
+                                                  "borderColor_danger_focus": "#c71818",
+                                                  "borderColor_danger_hover": "#db2929",
+                                                  "borderColor_focus": "#0f75b0",
+                                                  "borderColor_hover": "#2f9fe0",
+                                                  "borderColor_success": "#0a8f4c",
+                                                  "borderColor_success_active": "#046132",
+                                                  "borderColor_success_focus": "#06783f",
+                                                  "borderColor_success_hover": "#1fc06f",
+                                                  "borderColor_warning": "#d19411",
+                                                  "borderColor_warning_active": "#916504",
+                                                  "borderColor_warning_focus": "#cf4615",
+                                                  "borderColor_warning_hover": "#e3a322",
+                                                  "borderRadius_1": "0.1875em",
+                                                  "color_black": "#1d1f24",
+                                                  "color_caption": "#58606e",
+                                                  "color_gray_10": "#f5f7fa",
+                                                  "color_gray_100": "#333840",
+                                                  "color_gray_20": "#ebeff5",
+                                                  "color_gray_30": "#dde3ed",
+                                                  "color_gray_40": "#c8d1e0",
+                                                  "color_gray_50": "#afbacc",
+                                                  "color_gray_60": "#8e99ab",
+                                                  "color_gray_70": "#707a8a",
+                                                  "color_gray_80": "#58606e",
+                                                  "color_gray_90": "#434a54",
+                                                  "color_placeholder": "#8e99ab",
+                                                  "color_text": "#333840",
+                                                  "color_text_danger": "#ad0e0e",
+                                                  "color_text_danger_active": "#940909",
+                                                  "color_text_danger_focus": "#ad0e0e",
+                                                  "color_text_danger_hover": "#c71818",
+                                                  "color_text_disabled": "#afbacc",
+                                                  "color_text_ondanger": "#fff",
+                                                  "color_text_onprimary": "#fff",
+                                                  "color_text_onsuccess": "#fff",
+                                                  "color_text_onwarning": "#fff",
+                                                  "color_text_primary": "#0f75b0",
+                                                  "color_text_primary_active": "#0a6091",
+                                                  "color_text_primary_focus": "#0f75b0",
+                                                  "color_text_primary_hover": "#1b8bcc",
+                                                  "color_text_success": "#06783f",
+                                                  "color_text_success_active": "#046132",
+                                                  "color_text_success_focus": "#06783f",
+                                                  "color_text_success_hover": "#0a8f4c",
+                                                  "color_text_warning": "#bd3909",
+                                                  "color_text_warning_active": "#a83207",
+                                                  "color_text_warning_focus": "#bd3909",
+                                                  "color_text_warning_hover": "#cf4615",
+                                                  "color_theme_10": "#e1f3fc",
+                                                  "color_theme_100": "#084d75",
+                                                  "color_theme_20": "#c0e5fc",
+                                                  "color_theme_30": "#9fd9fc",
+                                                  "color_theme_40": "#79c7f7",
+                                                  "color_theme_50": "#51b3f0",
+                                                  "color_theme_60": "#2f9fe0",
+                                                  "color_theme_70": "#1b8bcc",
+                                                  "color_theme_80": "#0f75b0",
+                                                  "color_theme_90": "#0a6091",
+                                                  "color_white": "#fff",
+                                                  "direction": "ltr",
+                                                  "fontFamily": "Open Sans",
+                                                  "fontFamily_monospace": "monospace",
+                                                  "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+                                                  "fontSize_base": 16,
+                                                  "fontSize_h1": "2.125em",
+                                                  "fontSize_h2": "1.75em",
+                                                  "fontSize_h3": "1.375em",
+                                                  "fontSize_h4": "1.125em",
+                                                  "fontSize_h5": "0.875em",
+                                                  "fontSize_h6": "0.875em",
+                                                  "fontSize_mouse": "0.6875em",
+                                                  "fontSize_prose": "1em",
+                                                  "fontSize_ui": "0.875em",
+                                                  "fontWeight_bold": 700,
+                                                  "fontWeight_extraBold": 800,
+                                                  "fontWeight_regular": 400,
+                                                  "fontWeight_semiBold": 600,
+                                                  "lineHeight": 1.25,
+                                                  "lineHeight_prose": 1.5,
+                                                  "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
+                                                  "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
+                                                  "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
+                                                  "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
+                                                  "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
+                                                  "size_jumbo": "3.25em",
+                                                  "size_large": "2.5em",
+                                                  "size_medium": "2em",
+                                                  "size_small": "1.5em",
+                                                  "spacing_double": "1em",
+                                                  "spacing_half": "0.25em",
+                                                  "spacing_oneAndAHalf": "0.75em",
+                                                  "spacing_quad": "2em",
+                                                  "spacing_quarter": "0.125em",
+                                                  "spacing_single": "0.5em",
+                                                  "spacing_triple": "1.5em",
+                                                  "zIndex_100": 100,
+                                                  "zIndex_1600": 1600,
+                                                  "zIndex_200": 200,
+                                                  "zIndex_400": 400,
+                                                  "zIndex_800": 800,
+                                                }
+                                              }
+                                            >
+                                              <ThemeProvider
+                                                theme={
+                                                  Object {
+                                                    "CardRow_margin": "0.5em",
+                                                    "CardRow_padding": "1em",
+                                                  }
+                                                }
+                                              >
+                                                <ThemeProvider
+                                                  theme={
+                                                    Object {
+                                                      "CardRow_margin": "0.5em",
+                                                      "CardRow_padding": "1em",
+                                                    }
+                                                  }
+                                                >
+                                                  <CardBlock>
+                                                    <CardBlock>
+                                                      <div
+                                                        className="glamor-6"
+                                                      >
+                                                        <DemoContent>
+                                                          <glamorous(div)>
+                                                            <div
+                                                              className="glamor-5"
+                                                            >
+                                                              Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
+                                                            </div>
+                                                          </glamorous(div)>
+                                                        </DemoContent>
+                                                      </div>
+                                                    </CardBlock>
+                                                  </CardBlock>
+                                                </ThemeProvider>
+                                              </ThemeProvider>
+                                            </Themed(CardBlock)>
+                                          </ThemedComponent>
+                                          <PopoverArrow
+                                            size="8px"
+                                          >
+                                            <PopoverArrow
+                                              aria-hidden={true}
+                                              size="8px"
+                                            >
+                                              <Arrow
+                                                aria-hidden={true}
+                                                className="glamor-7"
+                                              >
+                                                <span
+                                                  aria-hidden={true}
+                                                  className="glamor-7"
+                                                  style={Object {}}
+                                                >
+                                                  ▼
+                                                </span>
+                                              </Arrow>
+                                            </PopoverArrow>
+                                          </PopoverArrow>
+                                        </div>
+                                      </Popper>
+                                    </PopoverContent>
+                                  </PopoverContent>
+                                </div>
+                              </Manager>
+                            </Popover>
+                          </Popover>
+                        </div>
+                      </glamorous(div)>
+                    </div>
+                  </glamorous(div)>
+                  <glamorous(Button)
+                    minimal={true}
+                    onClick={[Function]}
+                    size="small"
+                  >
+                    <Button
+                      className="glamor-18"
+                      minimal={true}
+                      onClick={[Function]}
+                      size="small"
+                    >
+                      <glamorous(button)
+                        className="glamor-18"
+                        minimal={true}
+                        onClick={[Function]}
+                        size="small"
+                        type="button"
+                        variant="regular"
+                      >
+                        <button
+                          className="glamor-17"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <glamorous(span)>
+                            <span
+                              className="glamor-1"
+                            >
+                              <glamorous(span)
+                                size="small"
+                              >
+                                <span
+                                  className="glamor-15"
+                                >
+                                  Re-center
+                                </span>
+                              </glamorous(span)>
+                            </span>
+                          </glamorous(span)>
+                        </button>
+                      </glamorous(button)>
+                    </Button>
+                  </glamorous(Button)>
+                </div>
+              </glamorous(div)>
+            </ScrollBox>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
 exports[`Popover demo examples title 1`] = `
 .glamor-14,
 [data-glamor-14] {
@@ -4081,7 +3883,7 @@ exports[`Popover demo examples title 1`] = `
 
 .glamor-16,
 [data-glamor-16] {
-  padding-bottom: 13em;
+  padding: 5em 0;
 }
 
 .glamor-2,
@@ -4300,7 +4102,7 @@ exports[`Popover demo examples title 1`] = `
         <DemoLayout>
           <Popover
             content={<DemoContent />}
-            placement=\\"bottom-start\\"
+            placement=\\"right\\"
             subtitle=\\"Subtitle\\"
             title=\\"Title\\">
             <Button disabled>Open Popover</Button>
@@ -4338,27 +4140,16 @@ exports[`Popover demo examples title 1`] = `
               >
                 <AlwaysOpenPopover
                   content={<DemoContent />}
-                  placement="bottom-start"
+                  placement="right"
                   subtitle="Subtitle"
                   title="Title"
                 >
                   <Popover
                     autoFocus={true}
-                    boundariesElement="viewport"
                     content={<DemoContent />}
                     hasArrow={true}
                     isOpen={true}
-                    modifiers={
-                      Object {
-                        "flip": Object {
-                          "boundariesElement": "viewport",
-                        },
-                        "preventOverflow": Object {
-                          "boundariesElement": "viewport",
-                        },
-                      }
-                    }
-                    placement="bottom-start"
+                    placement="right"
                     restoreFocus={false}
                     subtitle="Subtitle"
                     title="Title"
@@ -4430,49 +4221,20 @@ exports[`Popover demo examples title 1`] = `
                           </PopoverTrigger>
                           <PopoverContent
                             hasArrow={true}
-                            modifiers={
-                              Object {
-                                "flip": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                                "preventOverflow": Object {
-                                  "boundariesElement": "viewport",
-                                },
-                              }
-                            }
-                            placement="bottom-start"
+                            placement="right"
                             subtitle="Subtitle"
                             title="Title"
                           >
                             <PopoverContent
-                              modifiers={
-                                Object {
-                                  "flip": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                  "preventOverflow": Object {
-                                    "boundariesElement": "viewport",
-                                  },
-                                }
-                              }
-                              placement="bottom-start"
+                              placement="right"
                               tabIndex={0}
                             >
                               <Popper
                                 className="glamor-12"
                                 component="div"
                                 eventsEnabled={true}
-                                modifiers={
-                                  Object {
-                                    "flip": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                    "preventOverflow": Object {
-                                      "boundariesElement": "viewport",
-                                    },
-                                  }
-                                }
-                                placement="bottom-start"
+                                modifiers={Object {}}
+                                placement="right"
                                 tabIndex={0}
                               >
                                 <div

@@ -27,8 +27,6 @@ import PopoverContent from './PopoverContent';
 type Props = {
   /** Focuses the popover content when opened */
   autoFocus?: boolean,
-  /** The element which will define the boundaries of the popover position */
-  boundariesElement?: 'scrollParent' | 'viewport' | 'window',
   /** Trigger for the popover */
   children: MnrlReactNode,
   /** Content of the popover */
@@ -39,7 +37,7 @@ type Props = {
   hasArrow?: boolean,
   /** For use with controlled components, in which the app manages popover state */
   isOpen?: boolean,
-  /** Plugins used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options. Note that this will override `boundariesElement`.*/
+  /** Plugins used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options.*/
   modifiers?: Object,
   /** Called when popover is closed */
   onClose?: (event: Object) => void,
@@ -92,16 +90,7 @@ const Root = createStyledComponent(
 export default class Popover extends PureComponent {
   static defaultProps = {
     autoFocus: true,
-    boundariesElement: 'viewport',
     hasArrow: true,
-    modifiers: {
-      flip: {
-        boundariesElement: 'viewport'
-      },
-      preventOverflow: {
-        boundariesElement: 'viewport'
-      }
-    },
     placement: 'bottom',
     restoreFocus: true
   };
@@ -122,7 +111,6 @@ export default class Popover extends PureComponent {
 
   render() {
     const {
-      boundariesElement,
       children,
       content,
       disabled,
@@ -151,27 +139,6 @@ export default class Popover extends PureComponent {
       this.addDocumentEventListeners();
     } else {
       this.removeDocumentEventListeners();
-    }
-
-    // Allow shorthand customization of boundariesElement across modifiers
-    if (boundariesElement !== Popover.defaultProps.boundariesElement) {
-      if (
-        modifiers &&
-        modifiers.flip &&
-        modifiers.flip.boundariesElement ===
-          Popover.defaultProps.modifiers.flip.boundariesElement
-      ) {
-        modifiers.flip.boundariesElement = boundariesElement;
-      }
-
-      if (
-        modifiers &&
-        modifiers.preventOverflow &&
-        modifiers.preventOverflow.boundariesElement ===
-          Popover.defaultProps.modifiers.preventOverflow.boundariesElement
-      ) {
-        modifiers.preventOverflow.boundariesElement = boundariesElement;
-      }
     }
 
     const rootProps = {

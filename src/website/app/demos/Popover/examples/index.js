@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import boundaries from './boundaries';
+import scrolling from './scrolling';
 import controlled from './controlled';
 import disabled from './disabled';
 import focus from './focus';
@@ -29,7 +29,7 @@ export default [
   title,
   placement,
   overflow,
-  boundaries,
+  scrolling,
   focus,
   disabled,
   controlled

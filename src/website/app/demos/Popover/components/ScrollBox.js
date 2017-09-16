@@ -37,7 +37,7 @@ const ScrollArea = createStyledComponent('div', {
 });
 
 const ScrollContent = createStyledComponent('div', {
-  padding: '1000px 200vw'
+  padding: '500px 200vw'
 });
 
 const Recenter = createStyledComponent(Button, {
@@ -98,9 +98,13 @@ export default class ScrollBox extends PureComponent {
       scrollTarget instanceof HTMLElement
     ) {
       scrollArea.scrollTop =
-        scrollTarget.offsetTop - scrollArea.clientHeight / 2;
+        scrollTarget.offsetTop +
+        scrollTarget.clientHeight / 2 -
+        scrollArea.clientHeight / 2;
       scrollArea.scrollLeft =
-        scrollTarget.offsetLeft - scrollArea.clientWidth / 2;
+        scrollTarget.offsetLeft +
+        scrollTarget.clientWidth / 2 -
+        scrollArea.clientWidth / 2;
     }
   };
 }
