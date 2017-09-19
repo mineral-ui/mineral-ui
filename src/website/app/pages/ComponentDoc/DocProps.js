@@ -22,7 +22,7 @@ import PropTable from '../../PropTable';
 import Section from '../../Section';
 
 type Props = {|
-  propDoc: Object,
+  propDoc?: Object,
   title: string
 |};
 
