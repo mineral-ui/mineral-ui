@@ -19,6 +19,7 @@ import React, { createElement } from 'react';
 import marksy from 'marksy/components';
 import { createStyledComponent } from '../../utils';
 import Heading from './Heading';
+import Paragraph from './Paragraph';
 import Link from './Link';
 import prism from './utils/prism';
 
@@ -188,6 +189,13 @@ export default function Markdown({ children, className, scope }: Props) {
       },
       h6({ id, children }) {
         return replaceHeading(6, children, { id });
+      },
+      p({ children }) {
+        return (
+          <Paragraph variant="prose">
+            {children}
+          </Paragraph>
+        );
       }
     },
     components: {
