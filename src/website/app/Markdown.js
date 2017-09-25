@@ -102,8 +102,8 @@ const Root = createStyledComponent('div', ({ theme }) => ({
     overflow: 'auto'
   }
 }));
-const Em = createStyledComponent('em', ({ theme }) => ({
-  color: theme.color_caption
+const CodeBlock = createStyledComponent('div', ({ theme }) => ({
+  marginBottom: theme.spacing_quad
 }));
 
 function replaceHeading(level, children, headingProps: mdHeadingProps) {
@@ -157,17 +157,13 @@ export default function Markdown({ children, className, scope }: Props) {
       },
       code({ language = 'jsx', code, children }: mdCodeProps) {
         return code
-          ? <div>
-              {language &&
-                <Em>
-                  {language}
-                </Em>}
+          ? <CodeBlock>
               <pre className={`prism-code language-${language}`}>
                 <code
                   dangerouslySetInnerHTML={{ __html: prism(code, language) }}
                 />
               </pre>
-            </div>
+            </CodeBlock>
           : <code>
               {children}
             </code>;

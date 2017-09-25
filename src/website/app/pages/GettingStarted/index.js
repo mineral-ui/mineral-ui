@@ -18,13 +18,15 @@
 import React from 'react';
 import Callout from '../../Callout';
 import Markdown from '../../Markdown';
-// $FlowFixMe
 import content from './gettingStarted.md';
+import GuidelinePage from '../../GuidelinePage';
 
 export default function GettingStarted() {
   return (
-    <Markdown scope={{ Callout }}>
-      {content}
-    </Markdown>
+    <GuidelinePage>
+      <Markdown scope={{ Callout }}>
+        {content}
+      </Markdown>
+    </GuidelinePage>
   );
 }

@@ -1,8 +1,16 @@
 # Theming
 
-Theming is a core concept in Mineral UI. To illustrate, consider the
-signature of [createStyledComponent](/components/utils#create-styled-component),
-e.g.:
+Theming is a core concept in Mineral UI.
+Themes provide a consistent look and feel across pages with varied functionality.
+Mineral UI makes it simple to implement and maintain theming across your app.
+
+The theme system is flexible enough to be applied globally or at a component level.
+This page lists of all Mineral UI theme variables for your reference.
+
+
+## Implementation
+
+Consider the signature of [createStyledComponent](/components/utils#create-styled-component):
 
 ```jsx
 const MyComponent = createStyledComponent('div', props => ({
@@ -13,9 +21,9 @@ const MyComponent = createStyledComponent('div', props => ({
 The [ThemeProvider](/components/theme-provider)(s) in
 your app provides the theme to other Mineral UI and/or Glamorous
 components within that ThemeProvider. Your app
-[must have a ThemeProvider at its root]/getting-started) and can
-optionally nest additional ThemeProviders to apply a custom theme to a
-section of your app. Nested ThemeProviders shallowly merge their theme
+[must have a ThemeProvider at its root](/getting-started) and can
+optionally nest additional ThemeProviders to apply a custom theme to sections
+of your app. Nested ThemeProviders shallowly merge their theme
 with the parent theme.
 
 The theme itself (see the default mineralTheme below for an example) is
@@ -33,8 +41,8 @@ const Button = createStyledComponent('button', props => ({
 
 The themes distributed as part of Mineral UI include a value for
 `color_primary` but do not include a value for `Button_color`. In
-our component code, we leave the component-level variable,
-`Button_color`, as a hook for you to define if you’d like.
+our component code, we leave the component-level variable
+`Button_color` as a hook for you to define if you’d like.
 Component-level theme variables start with the capitalized component
 name to differentiate from the global variables. When you’d like to
 override the Mineral UI theme at a component level in your app, you can

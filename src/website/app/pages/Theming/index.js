@@ -17,9 +17,9 @@
 /* @flow */
 import React from 'react';
 import { mineralTheme } from '../../../../utils';
+import GuidelinePage from '../../GuidelinePage';
 import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';
-// $FlowFixMe
 import content from './theming.md';
 
 const REGEX_IS_COLOR = /color|fill/i;
@@ -31,7 +31,7 @@ const getValue = (theme, variable) => theme[variable];
 
 export default function Theming() {
   return (
-    <div>
+    <GuidelinePage>
       <Markdown>
         {content}
       </Markdown>
@@ -40,6 +40,6 @@ export default function Theming() {
         value={getValue}
         valueColor={getColor}
       />
-    </div>
+    </GuidelinePage>
   );
 }
