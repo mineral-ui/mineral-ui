@@ -1,7 +1,11 @@
 # Getting Started
 
-We made Mineral UI to help you quickly build React apps with a
-high-quality UI.
+Mineral UI helps you quickly build React apps with high-quality, accessible components.
+Use npm or yarn to get components and themes that have been tested across modern browsers.
+
+Below are a few simple steps to apply consistent styling and hierarchy to your app,
+so you can focus on solving business problems.
+Mineral UI is an open source project and welcomes all contributions.
 
 ## Installation
 
@@ -9,6 +13,12 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui):
 
 ```bash
 npm install --save mineral-ui
+```
+
+or
+
+```bash
+yarn add mineral-ui
 ```
 
 Then install any missing peer dependencies reported by `npm` or `yarn`.
@@ -34,8 +44,6 @@ function App() {
 render(<App />, document.getElementById('app'));
 ```
 
-<p></p>
-
 <Callout title="Note">
   <p>Your app must be wrapped in a <code>ThemeProvider</code> at its root
   in order for the styles to apply correctly.</p>
@@ -47,7 +55,7 @@ render(<App />, document.getElementById('app'));
 
 Mineral UI was designed around
 [Open Sans](https://fonts.google.com/specimen/Open+Sans). To get the
-components to look right, you will need to include this font in your
+components to look their best, you will need to include this font in your
 project yourself or our styles will fall back to system fonts. To
 quickly include this font in your app, copy this code into the \`head\`
 of your HTML document.
@@ -56,8 +64,8 @@ of your HTML document.
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 ```
 
-For more options loading this font from Google, check out the Seleted
-Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans).
+For more options loading this font from Google, check out the "Family Selected"
+popup in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans).
 You can also download the font file and serve it yourself if you’d like,
 but we’ll leave that to you.
 
@@ -76,7 +84,7 @@ Theming is a core concept in Mineral UI. Refer to the
 ## Contributing
 
 We welcome all contributors who abide by our
-[Code of Conduct](https://github.com/mineral-ui/mineral-ui/blob/master/CODE_OF_CONDUCT.md)
+[Code of Conduct](https://github.com/mineral-ui/mineral-ui/blob/master/CODE_OF_CONDUCT.md).
 Please see the [Contributors Guide](https://github.com/mineral-ui/mineral-ui/blob/master/CONTRIBUTING.md)
 and [Developer Docs](https://github.com/mineral-ui/mineral-ui/blob/master/docs/README.md)
 for more details on submitting a PR, setting up a local dev environment,

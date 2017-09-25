@@ -16,12 +16,10 @@
 
 /* @flow */
 import GettingStarted from './GettingStarted';
-import Guidelines from './Guidelines';
 import Theming from './Theming';
 
 type Page = {
   component?: MnrlReactNode,
-  desc: string,
   id?: string,
   path?: string,
   sections?: Array<Object>,
@@ -34,23 +32,12 @@ const pages: Pages = [
   {
     title: 'Getting Started',
     component: GettingStarted,
-    desc:
-      'A still more glorious dawn awaits inconspicuous motes of rock and gas. Science the ash of stellar alchemy! Globular star cluster Cambrian explosion, shores of the cosmic ocean Tunguska event. Science rogue? Worldlets are creatures of the cosmos as a patch of light science light years',
     path: '/getting-started'
   },
   {
-    title: 'Guidelines',
-    component: Guidelines,
-    desc: 'These guidelines are the foundation of Mineral UI',
-    path: '/guidelines',
-    sections: [
-      {
-        title: 'Theming',
-        component: Theming,
-        desc: 'Theming is very important in Mineral UI',
-        path: '/guidelines/theming'
-      }
-    ]
+    title: 'Theming',
+    component: Theming,
+    path: '/guidelines/theming'
   }
 ];
 
