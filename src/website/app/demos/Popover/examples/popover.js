@@ -21,8 +21,10 @@ import Popover from '../../../../../Popover';
 
 export default {
   id: 'basic',
-  title: 'Popover',
-  description: 'Simple popover.',
+  title: 'Example',
+  description: `Popovers wrap the triggering component.
+Placement is relative to the location of the trigger.
+Popovers will change position relative to the trigger automatically depending on viewport constraints.`,
   scope: { Button, DemoContent, Popover },
   source: `
     <Popover content={<DemoContent />}>

@@ -52,7 +52,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * Card block component
+ * CardBlock is used to normalize font sizes for content and to provide consistent margins and padding.
  */
 export default function CardBlock(props: Props) {
   return <Root {...props} />;

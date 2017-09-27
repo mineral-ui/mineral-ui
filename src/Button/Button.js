@@ -22,9 +22,9 @@ import { createStyledComponent, pxToEm, getNormalizedValue } from '../utils';
 type Props = {
   /** Rendered content of the component */
   children?: MnrlReactNode,
-  /** Displays a circular button */
+  /** Displays a circular Button */
   circular?: boolean,
-  /** Disables the button */
+  /** Disables the Button */
   disabled?: boolean,
   /** Stretch Button to fill its container */
   fullWidth?: boolean,
@@ -32,11 +32,11 @@ type Props = {
   iconEnd?: React$Element<*>,
   /** Icon that goes before the children */
   iconStart?: React$Element<*>,
-  /** Display a minimal button */
+  /** Display a minimal Button */
   minimal?: boolean,
   /** Called with the click event */
   onClick?: (event: Object) => void,
-  /** Display a primary button */
+  /** Display a primary Button */
   primary?: boolean,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
@@ -268,6 +268,10 @@ const Inner = createStyledComponent('span', styles.inner);
 
 /**
  * The Button component represents a clickable button.
+ * Buttons draw attention to actions that can be performed in your app.
+ * Buttons are used to trigger any sort of event.
+ *
+ * Buttons with clear messaging and an appropriate variant applied communicate intention effectively.
  */
 export default function Button({
   children,

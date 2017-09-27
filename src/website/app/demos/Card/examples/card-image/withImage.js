@@ -21,21 +21,20 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'with-image',
-  title: 'With an image',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    "CardImage should be the first child of your Card. Images should be 16:9 and have an 'alt' attribute.",
+  description: 'CardImages should provide an `alt` attribute.',
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-        <CardTitle minor>Card title</CardTitle>
+        <CardImage src="/images/500x281.png" alt="gradient image" />
+        <CardTitle minor>Minor Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

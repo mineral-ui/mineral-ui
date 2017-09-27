@@ -18,14 +18,20 @@
 import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
 
-const DemoLayout = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', ({ theme }) => ({
   '& > button': {
     marginRight: '0.5rem'
+  },
+  ' button:last-of-type': {
+    marginTop: theme.spacing_double
   }
-});
+}));
 
 export default {
   id: 'sizes',
+  description: `To provide hierarchy to actions on your page, change Button impact with the \`size\` attribute.
+
+For a Button whose width is defined by its container, use \`fullWidth\`.`,
   title: 'Sizes',
   scope: { Button, DemoLayout },
   source: `
@@ -34,5 +40,6 @@ export default {
       <Button>Medium</Button>
       <Button size="large">Large</Button>
       <Button size="jumbo">Jumbo</Button>
+      <Button fullWidth>Full Width</Button>
     </DemoLayout>`
 };

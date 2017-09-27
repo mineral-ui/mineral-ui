@@ -50,7 +50,8 @@ const Root = createStyledComponent(
 );
 
 /**
- * Card image component
+ * CardImage renders images full-bleed inside of a [Card](./card).
+ * Use CardImage to display static media.
  */
 export default function CardImage(props: Props) {
   return <Root {...props} />;

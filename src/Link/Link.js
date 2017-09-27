@@ -21,7 +21,7 @@ import { createStyledComponent } from '../utils';
 type Props = {
   /** Content of the Link */
   children?: MnrlReactNode,
-  /** A URL or a URL fragment that the link points to */
+  /** A URL or a URL fragment that the Link points to */
   href?: string,
   /** Element to be used as the root node - e.g. "a" or { ReactRouterLink } */
   element?: $FlowFixMe,
@@ -76,7 +76,11 @@ const linkStyles = ({ variant, theme: baseTheme }) => {
 };
 
 /**
- * The Link component creates a hyperlink to another URL.
+ * The Link component creates a hyperlink to external pages, files, anchors on the same page or another URL.
+ * Links trigger an action, select an option, or provide a gateway to more information.
+ * Links are used to reduce clutter on a page when there are potentially many actions available.
+ *
+ * Links with clear messaging and an appropriate variant applied communicate intention effectively.
  */
 export default function Link({
   children,

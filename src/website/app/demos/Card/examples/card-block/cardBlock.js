@@ -45,7 +45,7 @@ const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
 
 export default {
   id: 'consistent-spacing',
-  title: 'Consistent spacing',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
@@ -54,11 +54,11 @@ export default {
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card title</CardTitle>
+        <CardTitle>Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

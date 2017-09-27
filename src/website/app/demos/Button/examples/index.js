@@ -15,11 +15,8 @@
  */
 
 /* @flow */
-import button from './button';
+import regular from './regular';
 import circular from './circular';
-import fullWidth from './fullWidth';
-import danger from './danger';
-import disabled from './disabled';
 import icons from './icons';
 import iconOnly from './iconOnly';
 import minimal from './minimal';
@@ -27,23 +24,16 @@ import primary from './primary';
 import rtl from './rtl';
 import sizes from './sizes';
 import states from './states';
-import success from './success';
 import truncation from './truncation';
-import warning from './warning';
 
 export default [
-  button,
   primary,
+  regular,
   minimal,
-  danger,
-  success,
-  warning,
   sizes,
   icons,
   iconOnly,
   circular,
-  disabled,
-  fullWidth,
   truncation,
   rtl,
   states

@@ -24,17 +24,18 @@ export default {
   title: 'Clickable',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'If an onClick function is provided, the entire card becomes clickable and keyboard actionable.',
+  description: `If an \`onClick\` callback is provided, the entire Card becomes clickable and keyboard actionable.
+Use this feature when only one action can be taken per Card.
+This simplifies the interface by not requiring an extra [Button](./button).`,
   scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `
     <DemoLayout>
       <Card onClick={event => console.log(event)}>
-        <CardTitle>Card title</CardTitle>
+        <CardTitle>Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

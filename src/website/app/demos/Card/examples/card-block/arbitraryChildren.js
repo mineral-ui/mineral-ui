@@ -27,16 +27,17 @@ const CustomContent = createStyledComponent('div', ({ theme }) => ({
 
 export default {
   id: 'children',
-  title: 'Arbitrary children',
+  title: 'Arbitrary Children',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'A CardBlock will render any children. For best results, please make sure your content has no top/bottom margin or left/right padding.',
+  description: `A Card will render any children.
+
+For best results, please ensure content matches the top/bottom margin and left/right padding of the other \`<Card*/>\` components, or use [CardBlock]('./card-block').`,
   scope: { Button, Card, CardBlock, CardTitle, CustomContent, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card title</CardTitle>
+        <CardTitle>Card Title</CardTitle>
         <CardBlock>
           <CustomContent>
             <Button fullWidth>Button</Button>

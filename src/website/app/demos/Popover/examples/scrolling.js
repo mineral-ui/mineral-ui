@@ -22,8 +22,8 @@ import Popover from '../../../../../Popover';
 
 export default {
   id: 'scrolling-container',
-  title: 'Scrolling container',
-  description: 'Behavior inside of a scrolling container.',
+  title: 'Scrolling Container',
+  description: `Popover will react to an \`overflow: scroll\` container in the same way as to the viewport by re-orienting in relation to the trigger.`,
   scope: { Button, DemoContent, ScrollParent, Popover },
   source: `
     <ScrollParent>

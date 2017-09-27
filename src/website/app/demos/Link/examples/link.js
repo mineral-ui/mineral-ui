@@ -25,25 +25,25 @@ const Small = createStyledComponent('p', { fontSize: '0.75em' });
 
 export default {
   id: 'basic',
-  title: 'Basic link',
+  title: 'Example',
   description: 'Links inherit font size, weight, and family.',
   scope: { Big, Bold, Link, Serif, Small },
   source: `
     <div>
       <Big>
-        Light years star stuff <Link href="http://example.com">harvesting</Link> star light
+        Lorem ipsum dolor sit amet, <Link href="http://example.com">consectetur</Link> adipiscing elit,
       </Big>
 
       <Small>
-        citizens of distant <Link href="http://example.com">epochs</Link> encyclopaedia galactica
+        sed do eiusmod tempor <Link href="http://example.com">incididunt</Link> ut labore et dolore magna aliqua.
       </Small>
 
       <Bold>
-        vastness is <Link href="http://example.com">bearable</Link> only through love,
+        Ut enim <Link href="http://example.com">ad minim veniam</Link> quis nostrud exercitation
       </Bold>
 
       <Serif>
-        shores of the <Link href="http://example.com">cosmic</Link> ocean!
+        ullamco laboris <Link href="http://example.com">nisi ut</Link> aliquip ex ea commodo consequat.
       </Serif>
     </div>`
 };

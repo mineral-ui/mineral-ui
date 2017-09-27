@@ -26,6 +26,9 @@ type Props = {
   theme?: Object
 };
 
+/**
+ * ThemeProvider passes along a theme to its children.
+ */
 export default function ThemeProvider({
   children,
   theme = mineralTheme

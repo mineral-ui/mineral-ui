@@ -15,16 +15,20 @@
  */
 
 /* @flow */
+import ThemeProvider from '../../../../../ThemeProvider';
 import Button from '../../../../../Button';
 import IconBackspace from '../../../../../Icon/IconBackspace';
 
 export default {
   id: 'rtl',
   title: 'RTL Support',
-  description: '',
-  scope: { Button, IconBackspace },
+  description: `Buttons with Icons are reversed when the \`rtl\` prop is set.
+A subset of Icons that [convey directionality](./icon#rtl) will be reversed.`,
+  scope: { Button, IconBackspace, ThemeProvider },
   source: `
     <div dir="rtl">
-      <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+      <ThemeProvider theme={{ direction: 'rtl' }}>
+        <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+      </ThemeProvider>
     </div>`
 };

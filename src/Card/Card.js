@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '../utils';
 
 type Props = {
-  /** Content of the card. Can be anything, but see [CardBlock](./card-block), [CardImage](./card-image), and [CardTitle](./card-title). */
+  /** Content of the Card. Can be anything, but see [CardBlock](./card-block), [CardImage](./card-image), and [CardTitle](./card-title). */
   children: MnrlReactNode,
   /** Called with the click event */
   onClick?: (event: Object) => void
@@ -70,7 +70,9 @@ const onKeyPress = (props: Props, event: Object) => {
 };
 
 /**
- * Card component
+ * Cards are used to group conceptually related content.
+ * Cards represent a gateway to more detailed information in another app view.
+ * You can use Cards to provide detail about a feature in your app, or to represent data with which your users can interact.
  */
 export default function Card(props: Props) {
   const rootProps = {

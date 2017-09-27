@@ -37,8 +37,11 @@ const DemoLayout = createStyledComponent('div', ({ theme }) => ({
 export default {
   id: 'focus',
   title: 'Focus Management',
-  description:
-    'There are a couple options available to help manage focus. Note: the focus style on the popover is for illustration purposes only.',
+  description: `An opened Popover gains focus by default to aid with assistive technology.
+    The \`autoFocus\` and \`restoreFocus\` attributes are available to manage focus.
+<Callout title="Note">
+  The blue focus style on the popover is for illustration purposes only.
+</Callout>`,
   scope: { Button, DemoContent, DemoLayout, Popover },
   source: `
     <DemoLayout>
