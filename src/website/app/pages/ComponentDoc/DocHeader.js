@@ -22,24 +22,18 @@ import Link from '../../Link';
 import Markdown from '../../Markdown';
 
 type Props = {
-  bestPractices?: Array<Object>,
   children?: string,
   className?: string,
-  componentTheme?: Theme | Array<Theme>,
   examples?: Array<any>,
-  propDoc?: Object,
-  title: string,
-  whenHowToUse?: string
+  title: string
 };
-
-type Theme = (theme: Object) => Object;
 
 const styles = {
   header: ({ theme }) => ({
     marginBottom: theme.spacing_quad,
     paddingTop: theme.spacing_double
   }),
-  intro: ({ theme }) => ({
+  lede: ({ theme }) => ({
     fontSize: theme.fontSize_h3,
     lineHeight: theme.lineHeight_prose,
     margin: '0'
@@ -54,7 +48,7 @@ const styles = {
   subnav: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
     marginTop: theme.spacing_double,
-    marginBottom: theme.spacing_quad
+    marginBottom: 0
   }),
   title: ({ theme }) => ({
     marginRight: 'auto',
@@ -63,35 +57,37 @@ const styles = {
 };
 
 const Root = createStyledComponent('header', styles.header);
-const Intro = createStyledComponent(Markdown, styles.intro);
+const Lede = createStyledComponent(Markdown, styles.lede);
 const NavElement = createStyledComponent(Link, styles.navElement);
 const SubNav = createStyledComponent('nav', styles.subnav);
 const Title = createStyledComponent(Heading, styles.title);
 
 export default function DocHeader({
-  bestPractices,
   children,
   className,
-  componentTheme,
   examples,
-  propDoc,
-  title,
-  whenHowToUse
+  title
 }: Props) {
+  // there is no Examples h2, so we just link to the first example.
+  let firstExampleId = 'examples';
+  if (examples && examples.length > 0) {
+    firstExampleId = examples[0].id;
+  }
+
   return (
     <Root className={className}>
       <Title level={1}>
         {title}
       </Title>
-      <Intro>
+      <Lede>
         {children}
-      </Intro>
+      </Lede>
       <SubNav>
-        {examples && <NavElement href="#examples">Examples</NavElement>}
-        {(propDoc || componentTheme) &&
-          <NavElement href="#props">API & Theme</NavElement>}
-        {(whenHowToUse || bestPractices) &&
-          <NavElement href="#when-how-to-use">Usage</NavElement>}
+        {examples &&
+          examples.length > 0 &&
+          <NavElement href={`#${firstExampleId}`}>Examples</NavElement>}
+        <NavElement href="#api-and-theme">API & Theme</NavElement>
+        <NavElement href="#usage">Usage</NavElement>
       </SubNav>
     </Root>
   );

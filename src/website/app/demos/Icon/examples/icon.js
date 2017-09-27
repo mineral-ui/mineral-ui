@@ -19,7 +19,12 @@ import IconSentimentSatisfied from '../../../../../Icon/IconSentimentSatisfied';
 
 export default {
   id: 'icon',
-  title: 'Icon',
+  title: 'Example',
+  description: `Bundled Icons should be imported directly.
+
+\`import IconPrint from 'mineral-ui/Icon/IconPrint'\`.
+
+Icons are used to make your interface easier to scan.`,
   scope: { IconSentimentSatisfied },
   source: `<IconSentimentSatisfied />`
 };

@@ -17,7 +17,6 @@
 /* @flow */
 import React from 'react';
 import ComponentDocExample from '../../ComponentDocExample';
-import Heading from '../../Heading';
 import Section from '../../Section';
 
 type Example = {|
@@ -42,9 +41,6 @@ export default function DocExamples({ examples }: Props) {
   }
   return (
     <Section>
-      <Heading level={2} id="examples">
-        {examples && examples.length === 1 ? 'Example' : 'Examples'}
-      </Heading>
       {examples.map((example, index) =>
         <ComponentDocExample key={index} {...example} />
       )}

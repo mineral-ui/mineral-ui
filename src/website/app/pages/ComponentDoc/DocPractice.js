@@ -57,16 +57,17 @@ export default function DocPractice({
 }: Props) {
   return (
     <div className={className}>
-      <Title as="h3" level={4} type={type}>
-        {type === 'do'
-          ? <strong>DO</strong>
-          : <span>
-              <strong>DON’T</strong> do
-            </span>}{' '}
+      <Title level={4} type={type}>
+        {type === 'do' ? <strong>DO</strong> : <strong>DON’T</strong>}
+        <br />
         {title}
       </Title>
       <Example backgroundColor={backgroundColor}>
-        {example}
+        {typeof example === 'string'
+          ? <Markdown>
+              {example}
+            </Markdown>
+          : example}
       </Example>
       <Markdown>
         {children}

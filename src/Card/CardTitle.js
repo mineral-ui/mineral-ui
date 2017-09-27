@@ -22,7 +22,7 @@ import { componentTheme as cardComponentTheme } from './Card';
 type Props = {
   /** Information displayed above the title */
   meta?: string,
-  /** Title of the card */
+  /** Title of the Card */
   children: MnrlReactNode,
   /** Displays the title in a less important style */
   minor?: boolean,
@@ -107,7 +107,8 @@ const Meta = createStyledComponent(Subtitle, styles.meta);
 const Title = createStyledComponent('h3', styles.title);
 
 /**
- * Card title component
+ * CardTitle displays a Card title and an optional subtitle.
+ * You can put CardTitle in any order in relation to other root components of [Card]('./card').
  */
 export default function CardTitle({
   children,

@@ -37,7 +37,7 @@ const pages: Pages = [
   {
     title: 'Theming',
     component: Theming,
-    path: '/guidelines/theming'
+    path: '/theming'
   }
 ];
 

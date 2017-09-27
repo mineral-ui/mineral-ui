@@ -28,7 +28,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   id: 'theme-provider',
-  title: 'ThemeProvider',
+  title: 'Example',
   description: `Wrap any number of components in a \`ThemeProvider\` to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.`,
   scope: { DemoLayout, ThemeProvider, Sample },
   source: `

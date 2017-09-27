@@ -46,7 +46,7 @@ const Practice = createStyledComponent(DocPractice, styles.practice);
 export default function DocBestPractices({ practices }: Props) {
   return (
     <Section>
-      <Heading level={2} id="best-practices">
+      <Heading level={3} id="best-practices">
         Best Practices
       </Heading>
       <Grid>

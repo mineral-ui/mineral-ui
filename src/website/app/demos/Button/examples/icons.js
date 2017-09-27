@@ -28,8 +28,9 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'icons',
   title: 'Buttons with Icons',
-  description:
-    'Buttons can contain Icons at their start, end, or both. Small Buttons use small Icons; medium and large Buttons use medium Icons; jumbo Buttons use large Icons.',
+  description: `Buttons can contain [Icons](./icon) at their start, end, or both.
+
+\`small\` Buttons use small Icons; \`medium\` and \`large\` Buttons use medium Icons; \`jumbo\` Buttons use large Icons.`,
   scope: { Button, IconCloud, DemoLayout },
   source: `
     () => {

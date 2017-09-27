@@ -29,8 +29,7 @@ const OverflowContainer = createStyledComponent('div', {
 export default {
   id: 'overflow',
   title: 'Overflow',
-  description:
-    'A Popover can extend beyond its bounding container, the blue area in this example, even if the overflow is set to hidden.',
+  description: `A Popover can extend beyond its bounding container (the blue area in this example) even if the parent's \`overflow\` is set to \`hidden\`.`,
   scope: { Button, DemoContent, OverflowContainer, Popover },
   source: `
     <OverflowContainer>

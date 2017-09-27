@@ -1,314 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button demo examples button 1`] = `
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: #1b8bcc;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="<Button>Do Something</Button>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <Button>
-              <glamorous(button)
-                size="medium"
-                type="button"
-                variant="regular"
-              >
-                <button
-                  className="glamor-2"
-                  type="button"
-                >
-                  <glamorous(span)>
-                    <span
-                      className="glamor-1"
-                    >
-                      <glamorous(span)
-                        size="medium"
-                      >
-                        <span
-                          className="glamor-0"
-                        >
-                          Do Something
-                        </span>
-                      </glamorous(span)>
-                    </span>
-                  </glamorous(span)>
-                </button>
-              </glamorous(button)>
-            </Button>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
 exports[`Button demo examples circular 1`] = `
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
 .glamor-18 > button,
 [data-glamor-18] > button {
   margin-right: 0.5rem;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
 .glamor-0,
@@ -1271,7 +983,12 @@ exports[`Button demo examples circular 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Button demo examples danger 1`] = `
+exports[`Button demo examples default 1`] = `
+.glamor-15 > button,
+[data-glamor-15] > button {
+  margin-right: 0.5rem;
+}
+
 .glamor-1,
 [data-glamor-1] {
   align-items: center;
@@ -1302,15 +1019,10 @@ exports[`Button demo examples danger 1`] = `
   padding: 0 0.2857142857142857em;
 }
 
-.glamor-9 > button,
-[data-glamor-9] > button {
-  margin-right: 0.5rem;
-}
-
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
-  color: #ad0e0e;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -1343,7 +1055,7 @@ exports[`Button demo examples danger 1`] = `
 [data-glamor-2][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
+  box-shadow: 0 0 0 1px #0f75b0;
 }
 
 .glamor-2:hover,
@@ -1370,7 +1082,7 @@ exports[`Button demo examples danger 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: currentColor;
+  fill: #1b8bcc;
   display: block;
   padding: 0.125em;
 }
@@ -1378,13 +1090,13 @@ exports[`Button demo examples danger 1`] = `
 .glamor-5,
 [data-glamor-5] {
   box-sizing: border-box;
-  color: #fff;
+  color: #06783f;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
   outline: 0;
-  background-color: #db2929;
-  border-color: transparent;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
@@ -1409,23 +1121,23 @@ exports[`Button demo examples danger 1`] = `
 [data-glamor-5]:focus,
 .glamor-5[data-simulate-focus],
 [data-glamor-5][data-simulate-focus] {
-  background-color: #db2929;
+  background-color: #ebeff5;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
+  box-shadow: 0 0 0 1px #06783f;
 }
 
 .glamor-5:hover,
 [data-glamor-5]:hover,
 .glamor-5[data-simulate-hover],
 [data-glamor-5][data-simulate-hover] {
-  background-color: #eb4d4d;
+  background-color: #f5f7fa;
 }
 
 .glamor-5:active,
 [data-glamor-5]:active,
 .glamor-5[data-simulate-active],
 [data-glamor-5][data-simulate-active] {
-  background-color: #c71818;
+  background-color: #dde3ed;
 }
 
 .glamor-5::-moz-focus-inner,
@@ -1446,13 +1158,13 @@ exports[`Button demo examples danger 1`] = `
 .glamor-8,
 [data-glamor-8] {
   box-sizing: border-box;
-  color: #ad0e0e;
+  color: #bd3909;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
   outline: 0;
-  background-color: transparent;
-  border-color: transparent;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
@@ -1477,8 +1189,9 @@ exports[`Button demo examples danger 1`] = `
 [data-glamor-8]:focus,
 .glamor-8[data-simulate-focus],
 [data-glamor-8][data-simulate-focus] {
+  background-color: #ebeff5;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
+  box-shadow: 0 0 0 1px #cf4615;
 }
 
 .glamor-8:hover,
@@ -1492,7 +1205,7 @@ exports[`Button demo examples danger 1`] = `
 [data-glamor-8]:active,
 .glamor-8[data-simulate-active],
 [data-glamor-8][data-simulate-active] {
-  background-color: #ebeff5;
+  background-color: #dde3ed;
 }
 
 .glamor-8::-moz-focus-inner,
@@ -1510,780 +1223,10 @@ exports[`Button demo examples danger 1`] = `
   padding: 0.125em;
 }
 
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="
-        <DemoLayout>
-          <Button variant=\\"danger\\">Regular</Button>
-          <Button variant=\\"danger\\" primary>Primary</Button>
-          <Button variant=\\"danger\\" minimal>Minimal</Button>
-        </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-            "DemoLayout": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <glamorous(div)>
-              <div
-                className="glamor-9"
-              >
-                <Button
-                  variant="danger"
-                >
-                  <glamorous(button)
-                    size="medium"
-                    type="button"
-                    variant="danger"
-                  >
-                    <button
-                      className="glamor-2"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Regular
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  primary={true}
-                  variant="danger"
-                >
-                  <glamorous(button)
-                    primary={true}
-                    size="medium"
-                    type="button"
-                    variant="danger"
-                  >
-                    <button
-                      className="glamor-5"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Primary
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  minimal={true}
-                  variant="danger"
-                >
-                  <glamorous(button)
-                    minimal={true}
-                    size="medium"
-                    type="button"
-                    variant="danger"
-                  >
-                    <button
-                      className="glamor-8"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Minimal
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Button demo examples disabled 1`] = `
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-9 > button,
-[data-glamor-9] > button {
-  margin-right: 0.5rem;
-}
-
-.glamor-2,
-[data-glamor-2] {
+.glamor-11,
+[data-glamor-11] {
   box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-5,
-[data-glamor-5] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-5 *,
-[data-glamor-5] *,
-.glamor-5 *::before,
-[data-glamor-5] *::before,
-.glamor-5 *::after,
-[data-glamor-5] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-5:focus,
-[data-glamor-5]:focus,
-.glamor-5[data-simulate-focus],
-[data-glamor-5][data-simulate-focus] {
-  background-color: #1b8bcc;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-5::-moz-focus-inner,
-[data-glamor-5]::-moz-focus-inner,
-.glamor-5[data-simulate-mozfocusinner],
-[data-glamor-5][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-5 [role="icon"],
-[data-glamor-5] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-8,
-[data-glamor-8] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-8 *,
-[data-glamor-8] *,
-.glamor-8 *::before,
-[data-glamor-8] *::before,
-.glamor-8 *::after,
-[data-glamor-8] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-8:focus,
-[data-glamor-8]:focus,
-.glamor-8[data-simulate-focus],
-[data-glamor-8][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-8::-moz-focus-inner,
-[data-glamor-8]::-moz-focus-inner,
-.glamor-8[data-simulate-mozfocusinner],
-[data-glamor-8][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-8 [role="icon"],
-[data-glamor-8] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="
-        <DemoLayout>
-          <Button disabled>Regular</Button>
-          <Button disabled primary>Primary</Button>
-          <Button disabled minimal>Minimal</Button>
-        </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-            "DemoLayout": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <glamorous(div)>
-              <div
-                className="glamor-9"
-              >
-                <Button
-                  disabled={true}
-                >
-                  <glamorous(button)
-                    disabled={true}
-                    size="medium"
-                    type="button"
-                    variant="regular"
-                  >
-                    <button
-                      className="glamor-2"
-                      disabled={true}
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Regular
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  disabled={true}
-                  primary={true}
-                >
-                  <glamorous(button)
-                    disabled={true}
-                    primary={true}
-                    size="medium"
-                    type="button"
-                    variant="regular"
-                  >
-                    <button
-                      className="glamor-5"
-                      disabled={true}
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Primary
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  disabled={true}
-                  minimal={true}
-                >
-                  <glamorous(button)
-                    disabled={true}
-                    minimal={true}
-                    size="medium"
-                    type="button"
-                    variant="regular"
-                  >
-                    <button
-                      className="glamor-8"
-                      disabled={true}
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Minimal
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Button demo examples full-width 1`] = `
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
+  color: #ad0e0e;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -2299,52 +1242,105 @@ exports[`Button demo examples full-width 1`] = `
   min-width: 2em;
   padding: 0.3125em;
   vertical-align: middle;
-  width: 100%;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
+.glamor-11 *,
+[data-glamor-11] *,
+.glamor-11 *::before,
+[data-glamor-11] *::before,
+.glamor-11 *::after,
+[data-glamor-11] *::after {
   box-sizing: inherit;
 }
 
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
+.glamor-11:focus,
+[data-glamor-11]:focus,
+.glamor-11[data-simulate-focus],
+[data-glamor-11][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-11:hover,
+[data-glamor-11]:hover,
+.glamor-11[data-simulate-hover],
+[data-glamor-11][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-11:active,
+[data-glamor-11]:active,
+.glamor-11[data-simulate-active],
+[data-glamor-11][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-11::-moz-focus-inner,
+[data-glamor-11]::-moz-focus-inner,
+.glamor-11[data-simulate-mozfocusinner],
+[data-glamor-11][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-11 [role="icon"],
+[data-glamor-11] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-14,
+[data-glamor-14] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #dde3ed;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-14 *,
+[data-glamor-14] *,
+.glamor-14 *::before,
+[data-glamor-14] *::before,
+.glamor-14 *::after,
+[data-glamor-14] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-14:focus,
+[data-glamor-14]:focus,
+.glamor-14[data-simulate-focus],
+[data-glamor-14][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #0f75b0;
 }
 
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
+.glamor-14::-moz-focus-inner,
+[data-glamor-14]::-moz-focus-inner,
+.glamor-14[data-simulate-mozfocusinner],
+[data-glamor-14][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
+.glamor-14 [role="icon"],
+[data-glamor-14] [role="icon"] {
   box-sizing: content-box;
-  fill: #1b8bcc;
+  fill: currentColor;
   display: block;
   padding: 0.125em;
 }
@@ -2481,12 +1477,20 @@ exports[`Button demo examples full-width 1`] = `
     }
   >
     <LiveProvider
-      code="<Button fullWidth>Do Something</Button>"
+      code="
+        <DemoLayout>
+          <Button>Default</Button>
+          <Button variant=\\"success\\">Success</Button>
+          <Button variant=\\"warning\\">Warning</Button>
+          <Button variant=\\"danger\\">Danger</Button>
+          <Button disabled>Disabled</Button>
+        </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
         Object {
           "Button": [Function],
+          "DemoLayout": [Function],
         }
       }
     >
@@ -2495,6 +1499,7 @@ exports[`Button demo examples full-width 1`] = `
         scope={
           Object {
             "Button": [Function],
+            "DemoLayout": [Function],
           }
         }
       >
@@ -2502,37 +1507,162 @@ exports[`Button demo examples full-width 1`] = `
           <div
             className="react-live-preview"
           >
-            <Button
-              fullWidth={true}
-            >
-              <glamorous(button)
-                fullWidth={true}
-                size="medium"
-                type="button"
-                variant="regular"
+            <glamorous(div)>
+              <div
+                className="glamor-15"
               >
-                <button
-                  className="glamor-2"
-                  type="button"
-                >
-                  <glamorous(span)>
-                    <span
-                      className="glamor-1"
+                <Button>
+                  <glamorous(button)
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-2"
+                      type="button"
                     >
-                      <glamorous(span)
-                        size="medium"
-                      >
+                      <glamorous(span)>
                         <span
-                          className="glamor-0"
+                          className="glamor-1"
                         >
-                          Do Something
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Default
+                            </span>
+                          </glamorous(span)>
                         </span>
                       </glamorous(span)>
-                    </span>
-                  </glamorous(span)>
-                </button>
-              </glamorous(button)>
-            </Button>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  variant="success"
+                >
+                  <glamorous(button)
+                    size="medium"
+                    type="button"
+                    variant="success"
+                  >
+                    <button
+                      className="glamor-5"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Success
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  variant="warning"
+                >
+                  <glamorous(button)
+                    size="medium"
+                    type="button"
+                    variant="warning"
+                  >
+                    <button
+                      className="glamor-8"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Warning
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  variant="danger"
+                >
+                  <glamorous(button)
+                    size="medium"
+                    type="button"
+                    variant="danger"
+                  >
+                    <button
+                      className="glamor-11"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Danger
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  disabled={true}
+                >
+                  <glamorous(button)
+                    disabled={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-14"
+                      disabled={true}
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Disabled
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
@@ -2542,89 +1672,9 @@ exports[`Button demo examples full-width 1`] = `
 `;
 
 exports[`Button demo examples icon-only 1`] = `
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: #1b8bcc;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
+.glamor-18 > button,
+[data-glamor-18] > button {
+  margin-right: 0.5rem;
 }
 
 .glamor-5,
@@ -2695,6 +1745,91 @@ exports[`Button demo examples icon-only 1`] = `
   padding: 0.125em;
 }
 
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.125em;
+}
+
 .glamor-8,
 [data-glamor-8] {
   box-sizing: border-box;
@@ -2760,11 +1895,6 @@ exports[`Button demo examples icon-only 1`] = `
   fill: currentColor;
   display: block;
   padding: 0.125em;
-}
-
-.glamor-18 > button,
-[data-glamor-18] > button {
-  margin-right: 0.5rem;
 }
 
 .glamor-11,
@@ -3514,102 +2644,9 @@ exports[`Button demo examples icon-only 1`] = `
 `;
 
 exports[`Button demo examples icons 1`] = `
-.glamor-3,
-[data-glamor-3] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-3:focus,
-[data-glamor-3]:focus,
-.glamor-3[data-simulate-focus],
-[data-glamor-3][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-3:hover,
-[data-glamor-3]:hover,
-.glamor-3[data-simulate-hover],
-[data-glamor-3][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-3:active,
-[data-glamor-3]:active,
-.glamor-3[data-simulate-active],
-[data-glamor-3][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-3::-moz-focus-inner,
-[data-glamor-3]::-moz-focus-inner,
-.glamor-3[data-simulate-mozfocusinner],
-[data-glamor-3][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-3 [role="icon"],
-[data-glamor-3] [role="icon"] {
-  box-sizing: content-box;
-  fill: #1b8bcc;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+.glamor-53 > button,
+[data-glamor-53] > button {
+  margin-right: 0.5rem;
 }
 
 .glamor-16,
@@ -3680,82 +2717,40 @@ exports[`Button demo examples icons 1`] = `
   padding: 0.125em;
 }
 
-.glamor-20,
-[data-glamor-20] {
-  box-sizing: border-box;
-  color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
-.glamor-20 *,
-[data-glamor-20] *,
-.glamor-20 *::before,
-[data-glamor-20] *::before,
-.glamor-20 *::after,
-[data-glamor-20] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-20:focus,
-[data-glamor-20]:focus,
-.glamor-20[data-simulate-focus],
-[data-glamor-20][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-20:hover,
-[data-glamor-20]:hover,
-.glamor-20[data-simulate-hover],
-[data-glamor-20][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-20:active,
-[data-glamor-20]:active,
-.glamor-20[data-simulate-active],
-[data-glamor-20][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-20::-moz-focus-inner,
-[data-glamor-20]::-moz-focus-inner,
-.glamor-20[data-simulate-mozfocusinner],
-[data-glamor-20][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-20 [role="icon"],
-[data-glamor-20] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
+.glamor-1,
+[data-glamor-1] {
   display: block;
-  padding: 0.125em;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
 }
 
-.glamor-53 > button,
-[data-glamor-53] > button {
-  margin-right: 0.5rem;
-}
-
-.glamor-24,
-[data-glamor-24] {
+.glamor-3,
+[data-glamor-3] {
   box-sizing: border-box;
-  color: #ad0e0e;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
@@ -3773,49 +2768,49 @@ exports[`Button demo examples icons 1`] = `
   vertical-align: middle;
 }
 
-.glamor-24 *,
-[data-glamor-24] *,
-.glamor-24 *::before,
-[data-glamor-24] *::before,
-.glamor-24 *::after,
-[data-glamor-24] *::after {
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
   box-sizing: inherit;
 }
 
-.glamor-24:focus,
-[data-glamor-24]:focus,
-.glamor-24[data-simulate-focus],
-[data-glamor-24][data-simulate-focus] {
+.glamor-3:focus,
+[data-glamor-3]:focus,
+.glamor-3[data-simulate-focus],
+[data-glamor-3][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
+  box-shadow: 0 0 0 1px #0f75b0;
 }
 
-.glamor-24:hover,
-[data-glamor-24]:hover,
-.glamor-24[data-simulate-hover],
-[data-glamor-24][data-simulate-hover] {
+.glamor-3:hover,
+[data-glamor-3]:hover,
+.glamor-3[data-simulate-hover],
+[data-glamor-3][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.glamor-24:active,
-[data-glamor-24]:active,
-.glamor-24[data-simulate-active],
-[data-glamor-24][data-simulate-active] {
+.glamor-3:active,
+[data-glamor-3]:active,
+.glamor-3[data-simulate-active],
+[data-glamor-3][data-simulate-active] {
   background-color: #dde3ed;
 }
 
-.glamor-24::-moz-focus-inner,
-[data-glamor-24]::-moz-focus-inner,
-.glamor-24[data-simulate-mozfocusinner],
-[data-glamor-24][data-simulate-mozfocusinner] {
+.glamor-3::-moz-focus-inner,
+[data-glamor-3]::-moz-focus-inner,
+.glamor-3[data-simulate-mozfocusinner],
+[data-glamor-3][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-24 [role="icon"],
-[data-glamor-24] [role="icon"] {
+.glamor-3 [role="icon"],
+[data-glamor-3] [role="icon"] {
   box-sizing: content-box;
-  fill: currentColor;
+  fill: #1b8bcc;
   display: block;
   padding: 0.125em;
 }
@@ -3950,6 +2945,195 @@ exports[`Button demo examples icons 1`] = `
 
 .glamor-32 [role="icon"],
 [data-glamor-32] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-24,
+[data-glamor-24] {
+  box-sizing: border-box;
+  color: #ad0e0e;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-24 *,
+[data-glamor-24] *,
+.glamor-24 *::before,
+[data-glamor-24] *::before,
+.glamor-24 *::after,
+[data-glamor-24] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-24:focus,
+[data-glamor-24]:focus,
+.glamor-24[data-simulate-focus],
+[data-glamor-24][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-24:hover,
+[data-glamor-24]:hover,
+.glamor-24[data-simulate-hover],
+[data-glamor-24][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-24:active,
+[data-glamor-24]:active,
+.glamor-24[data-simulate-active],
+[data-glamor-24][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-24::-moz-focus-inner,
+[data-glamor-24]::-moz-focus-inner,
+.glamor-24[data-simulate-mozfocusinner],
+[data-glamor-24][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-24 [role="icon"],
+[data-glamor-24] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-36,
+[data-glamor-36] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #dde3ed;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-36 *,
+[data-glamor-36] *,
+.glamor-36 *::before,
+[data-glamor-36] *::before,
+.glamor-36 *::after,
+[data-glamor-36] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-36:focus,
+[data-glamor-36]:focus,
+.glamor-36[data-simulate-focus],
+[data-glamor-36][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-36::-moz-focus-inner,
+[data-glamor-36]::-moz-focus-inner,
+.glamor-36[data-simulate-mozfocusinner],
+[data-glamor-36][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-36 [role="icon"],
+[data-glamor-36] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-20,
+[data-glamor-20] {
+  box-sizing: border-box;
+  color: #0f75b0;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-20 *,
+[data-glamor-20] *,
+.glamor-20 *::before,
+[data-glamor-20] *::before,
+.glamor-20 *::after,
+[data-glamor-20] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-20:focus,
+[data-glamor-20]:focus,
+.glamor-20[data-simulate-focus],
+[data-glamor-20][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-20:hover,
+[data-glamor-20]:hover,
+.glamor-20[data-simulate-hover],
+[data-glamor-20][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-20:active,
+[data-glamor-20]:active,
+.glamor-20[data-simulate-active],
+[data-glamor-20][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-20::-moz-focus-inner,
+[data-glamor-20]::-moz-focus-inner,
+.glamor-20[data-simulate-mozfocusinner],
+[data-glamor-20][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-20 [role="icon"],
+[data-glamor-20] [role="icon"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
@@ -4205,60 +3389,6 @@ exports[`Button demo examples icons 1`] = `
   font-size: 16px;
   height: 1em;
   width: 1em;
-}
-
-.glamor-36,
-[data-glamor-36] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-36 *,
-[data-glamor-36] *,
-.glamor-36 *::before,
-[data-glamor-36] *::before,
-.glamor-36 *::after,
-[data-glamor-36] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-36:focus,
-[data-glamor-36]:focus,
-.glamor-36[data-simulate-focus],
-[data-glamor-36][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-36::-moz-focus-inner,
-[data-glamor-36]::-moz-focus-inner,
-.glamor-36[data-simulate-mozfocusinner],
-[data-glamor-36][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-36 [role="icon"],
-[data-glamor-36] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
 }
 
 .glamor-37,
@@ -5288,6 +4418,11 @@ exports[`Button demo examples icons 1`] = `
 `;
 
 exports[`Button demo examples minimal 1`] = `
+.glamor-15 > button,
+[data-glamor-15] > button {
+  margin-right: 0.5rem;
+}
+
 .glamor-1,
 [data-glamor-1] {
   align-items: center;
@@ -5385,238 +4520,15 @@ exports[`Button demo examples minimal 1`] = `
   padding: 0.125em;
 }
 
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="<Button minimal>Do Something</Button>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <Button
-              minimal={true}
-            >
-              <glamorous(button)
-                minimal={true}
-                size="medium"
-                type="button"
-                variant="regular"
-              >
-                <button
-                  className="glamor-2"
-                  type="button"
-                >
-                  <glamorous(span)>
-                    <span
-                      className="glamor-1"
-                    >
-                      <glamorous(span)
-                        size="medium"
-                      >
-                        <span
-                          className="glamor-0"
-                        >
-                          Do Something
-                        </span>
-                      </glamorous(span)>
-                    </span>
-                  </glamorous(span)>
-                </button>
-              </glamorous(button)>
-            </Button>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Button demo examples primary 1`] = `
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-2,
-[data-glamor-2] {
+.glamor-5,
+[data-glamor-5] {
   box-sizing: border-box;
-  color: #fff;
+  color: #06783f;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
   outline: 0;
-  background-color: #1b8bcc;
+  background-color: transparent;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5629,47 +4541,233 @@ exports[`Button demo examples primary 1`] = `
   vertical-align: middle;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
+.glamor-5 *,
+[data-glamor-5] *,
+.glamor-5 *::before,
+[data-glamor-5] *::before,
+.glamor-5 *::after,
+[data-glamor-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #1b8bcc;
+.glamor-5:focus,
+[data-glamor-5]:focus,
+.glamor-5[data-simulate-focus],
+[data-glamor-5][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #06783f;
+}
+
+.glamor-5:hover,
+[data-glamor-5]:hover,
+.glamor-5[data-simulate-hover],
+[data-glamor-5][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-5:active,
+[data-glamor-5]:active,
+.glamor-5[data-simulate-active],
+[data-glamor-5][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-5::-moz-focus-inner,
+[data-glamor-5]::-moz-focus-inner,
+.glamor-5[data-simulate-mozfocusinner],
+[data-glamor-5][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-5 [role="icon"],
+[data-glamor-5] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-8,
+[data-glamor-8] {
+  box-sizing: border-box;
+  color: #bd3909;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-8 *,
+[data-glamor-8] *,
+.glamor-8 *::before,
+[data-glamor-8] *::before,
+.glamor-8 *::after,
+[data-glamor-8] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-8:focus,
+[data-glamor-8]:focus,
+.glamor-8[data-simulate-focus],
+[data-glamor-8][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #cf4615;
+}
+
+.glamor-8:hover,
+[data-glamor-8]:hover,
+.glamor-8[data-simulate-hover],
+[data-glamor-8][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-8:active,
+[data-glamor-8]:active,
+.glamor-8[data-simulate-active],
+[data-glamor-8][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-8::-moz-focus-inner,
+[data-glamor-8]::-moz-focus-inner,
+.glamor-8[data-simulate-mozfocusinner],
+[data-glamor-8][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-8 [role="icon"],
+[data-glamor-8] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-11,
+[data-glamor-11] {
+  box-sizing: border-box;
+  color: #ad0e0e;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-11 *,
+[data-glamor-11] *,
+.glamor-11 *::before,
+[data-glamor-11] *::before,
+.glamor-11 *::after,
+[data-glamor-11] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-11:focus,
+[data-glamor-11]:focus,
+.glamor-11[data-simulate-focus],
+[data-glamor-11][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-11:hover,
+[data-glamor-11]:hover,
+.glamor-11[data-simulate-hover],
+[data-glamor-11][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-11:active,
+[data-glamor-11]:active,
+.glamor-11[data-simulate-active],
+[data-glamor-11][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-11::-moz-focus-inner,
+[data-glamor-11]::-moz-focus-inner,
+.glamor-11[data-simulate-mozfocusinner],
+[data-glamor-11][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-11 [role="icon"],
+[data-glamor-11] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-14,
+[data-glamor-14] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-14 *,
+[data-glamor-14] *,
+.glamor-14 *::before,
+[data-glamor-14] *::before,
+.glamor-14 *::after,
+[data-glamor-14] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-14:focus,
+[data-glamor-14]:focus,
+.glamor-14[data-simulate-focus],
+[data-glamor-14][data-simulate-focus] {
   border-color: #fff;
   box-shadow: 0 0 0 1px #0f75b0;
 }
 
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #2f9fe0;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #0f75b0;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
+.glamor-14::-moz-focus-inner,
+[data-glamor-14]::-moz-focus-inner,
+.glamor-14[data-simulate-mozfocusinner],
+[data-glamor-14][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
+.glamor-14 [role="icon"],
+[data-glamor-14] [role="icon"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
@@ -5808,12 +4906,19 @@ exports[`Button demo examples primary 1`] = `
     }
   >
     <LiveProvider
-      code="<Button primary>Do Something</Button>"
+      code="<DemoLayout>
+        <Button minimal>Default</Button>
+        <Button variant=\\"success\\" minimal>Success</Button>
+        <Button variant=\\"warning\\" minimal>Warning</Button>
+        <Button variant=\\"danger\\" minimal>Danger</Button>
+        <Button disabled minimal>Disabled</Button>
+      </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
         Object {
           "Button": [Function],
+          "DemoLayout": [Function],
         }
       }
     >
@@ -5822,6 +4927,7 @@ exports[`Button demo examples primary 1`] = `
         scope={
           Object {
             "Button": [Function],
+            "DemoLayout": [Function],
           }
         }
       >
@@ -5829,37 +4935,871 @@ exports[`Button demo examples primary 1`] = `
           <div
             className="react-live-preview"
           >
-            <Button
-              primary={true}
-            >
-              <glamorous(button)
-                primary={true}
-                size="medium"
-                type="button"
-                variant="regular"
+            <glamorous(div)>
+              <div
+                className="glamor-15"
               >
-                <button
-                  className="glamor-2"
-                  type="button"
+                <Button
+                  minimal={true}
                 >
-                  <glamorous(span)>
-                    <span
-                      className="glamor-1"
+                  <glamorous(button)
+                    minimal={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-2"
+                      type="button"
                     >
-                      <glamorous(span)
-                        size="medium"
-                      >
+                      <glamorous(span)>
                         <span
-                          className="glamor-0"
+                          className="glamor-1"
                         >
-                          Do Something
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Default
+                            </span>
+                          </glamorous(span)>
                         </span>
                       </glamorous(span)>
-                    </span>
-                  </glamorous(span)>
-                </button>
-              </glamorous(button)>
-            </Button>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  minimal={true}
+                  variant="success"
+                >
+                  <glamorous(button)
+                    minimal={true}
+                    size="medium"
+                    type="button"
+                    variant="success"
+                  >
+                    <button
+                      className="glamor-5"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Success
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  minimal={true}
+                  variant="warning"
+                >
+                  <glamorous(button)
+                    minimal={true}
+                    size="medium"
+                    type="button"
+                    variant="warning"
+                  >
+                    <button
+                      className="glamor-8"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Warning
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  minimal={true}
+                  variant="danger"
+                >
+                  <glamorous(button)
+                    minimal={true}
+                    size="medium"
+                    type="button"
+                    variant="danger"
+                  >
+                    <button
+                      className="glamor-11"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Danger
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  disabled={true}
+                  minimal={true}
+                >
+                  <glamorous(button)
+                    disabled={true}
+                    minimal={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-14"
+                      disabled={true}
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Disabled
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+              </div>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Button demo examples primary 1`] = `
+.glamor-15 > button,
+[data-glamor-15] > button {
+  margin-right: 0.5rem;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #1b8bcc;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #1b8bcc;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #2f9fe0;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #0f75b0;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #0a8f4c;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-5 *,
+[data-glamor-5] *,
+.glamor-5 *::before,
+[data-glamor-5] *::before,
+.glamor-5 *::after,
+[data-glamor-5] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-5:focus,
+[data-glamor-5]:focus,
+.glamor-5[data-simulate-focus],
+[data-glamor-5][data-simulate-focus] {
+  background-color: #0a8f4c;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #06783f;
+}
+
+.glamor-5:hover,
+[data-glamor-5]:hover,
+.glamor-5[data-simulate-hover],
+[data-glamor-5][data-simulate-hover] {
+  background-color: #10a35a;
+}
+
+.glamor-5:active,
+[data-glamor-5]:active,
+.glamor-5[data-simulate-active],
+[data-glamor-5][data-simulate-active] {
+  background-color: #06783f;
+}
+
+.glamor-5::-moz-focus-inner,
+[data-glamor-5]::-moz-focus-inner,
+.glamor-5[data-simulate-mozfocusinner],
+[data-glamor-5][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-5 [role="icon"],
+[data-glamor-5] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-8,
+[data-glamor-8] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #e05b2b;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-8 *,
+[data-glamor-8] *,
+.glamor-8 *::before,
+[data-glamor-8] *::before,
+.glamor-8 *::after,
+[data-glamor-8] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-8:focus,
+[data-glamor-8]:focus,
+.glamor-8[data-simulate-focus],
+[data-glamor-8][data-simulate-focus] {
+  background-color: #e05b2b;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #cf4615;
+}
+
+.glamor-8:hover,
+[data-glamor-8]:hover,
+.glamor-8[data-simulate-hover],
+[data-glamor-8][data-simulate-hover] {
+  background-color: #ed774c;
+}
+
+.glamor-8:active,
+[data-glamor-8]:active,
+.glamor-8[data-simulate-active],
+[data-glamor-8][data-simulate-active] {
+  background-color: #cf4615;
+}
+
+.glamor-8::-moz-focus-inner,
+[data-glamor-8]::-moz-focus-inner,
+.glamor-8[data-simulate-mozfocusinner],
+[data-glamor-8][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-8 [role="icon"],
+[data-glamor-8] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-11,
+[data-glamor-11] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #db2929;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-11 *,
+[data-glamor-11] *,
+.glamor-11 *::before,
+[data-glamor-11] *::before,
+.glamor-11 *::after,
+[data-glamor-11] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-11:focus,
+[data-glamor-11]:focus,
+.glamor-11[data-simulate-focus],
+[data-glamor-11][data-simulate-focus] {
+  background-color: #db2929;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-11:hover,
+[data-glamor-11]:hover,
+.glamor-11[data-simulate-hover],
+[data-glamor-11][data-simulate-hover] {
+  background-color: #eb4d4d;
+}
+
+.glamor-11:active,
+[data-glamor-11]:active,
+.glamor-11[data-simulate-active],
+[data-glamor-11][data-simulate-active] {
+  background-color: #c71818;
+}
+
+.glamor-11::-moz-focus-inner,
+[data-glamor-11]::-moz-focus-inner,
+.glamor-11[data-simulate-mozfocusinner],
+[data-glamor-11][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-11 [role="icon"],
+[data-glamor-11] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-14,
+[data-glamor-14] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #dde3ed;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-14 *,
+[data-glamor-14] *,
+.glamor-14 *::before,
+[data-glamor-14] *::before,
+.glamor-14 *::after,
+[data-glamor-14] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-14:focus,
+[data-glamor-14]:focus,
+.glamor-14[data-simulate-focus],
+[data-glamor-14][data-simulate-focus] {
+  background-color: #1b8bcc;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-14::-moz-focus-inner,
+[data-glamor-14]::-moz-focus-inner,
+.glamor-14[data-simulate-mozfocusinner],
+[data-glamor-14][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-14 [role="icon"],
+[data-glamor-14] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input_danger": "#fce3e3",
+        "backgroundColor_input_success": "#e8fcf2",
+        "backgroundColor_input_warning": "#fcf1dc",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#51b3f0",
+        "borderColor_danger": "#ad0e0e",
+        "borderColor_danger_active": "#7d0606",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#db2929",
+        "borderColor_focus": "#0f75b0",
+        "borderColor_hover": "#2f9fe0",
+        "borderColor_success": "#0a8f4c",
+        "borderColor_success_active": "#046132",
+        "borderColor_success_focus": "#06783f",
+        "borderColor_success_hover": "#1fc06f",
+        "borderColor_warning": "#d19411",
+        "borderColor_warning_active": "#916504",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#e3a322",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
+        "color_theme_10": "#e1f3fc",
+        "color_theme_100": "#084d75",
+        "color_theme_20": "#c0e5fc",
+        "color_theme_30": "#9fd9fc",
+        "color_theme_40": "#79c7f7",
+        "color_theme_50": "#51b3f0",
+        "color_theme_60": "#2f9fe0",
+        "color_theme_70": "#1b8bcc",
+        "color_theme_80": "#0f75b0",
+        "color_theme_90": "#0a6091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
+        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "spacing_double": "1em",
+        "spacing_half": "0.25em",
+        "spacing_oneAndAHalf": "0.75em",
+        "spacing_quad": "2em",
+        "spacing_quarter": "0.125em",
+        "spacing_single": "0.5em",
+        "spacing_triple": "1.5em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="<DemoLayout>
+        <Button primary>Default</Button>
+        <Button variant=\\"success\\" primary>Success</Button>
+        <Button variant=\\"warning\\" primary>Warning</Button>
+        <Button variant=\\"danger\\" primary>Danger</Button>
+        <Button primary disabled>Disabled</Button>
+      </DemoLayout>"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Button": [Function],
+          "DemoLayout": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "DemoLayout": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
+              <div
+                className="glamor-15"
+              >
+                <Button
+                  primary={true}
+                >
+                  <glamorous(button)
+                    primary={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-2"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Default
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  primary={true}
+                  variant="success"
+                >
+                  <glamorous(button)
+                    primary={true}
+                    size="medium"
+                    type="button"
+                    variant="success"
+                  >
+                    <button
+                      className="glamor-5"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Success
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  primary={true}
+                  variant="warning"
+                >
+                  <glamorous(button)
+                    primary={true}
+                    size="medium"
+                    type="button"
+                    variant="warning"
+                  >
+                    <button
+                      className="glamor-8"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Warning
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  primary={true}
+                  variant="danger"
+                >
+                  <glamorous(button)
+                    primary={true}
+                    size="medium"
+                    type="button"
+                    variant="danger"
+                  >
+                    <button
+                      className="glamor-11"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Danger
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+                <Button
+                  disabled={true}
+                  primary={true}
+                >
+                  <glamorous(button)
+                    disabled={true}
+                    primary={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-14"
+                      disabled={true}
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-0"
+                            >
+                              Disabled
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
@@ -5869,6 +5809,36 @@ exports[`Button demo examples primary 1`] = `
 `;
 
 exports[`Button demo examples rtl 1`] = `
+.glamor-2,
+[data-glamor-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
+}
+
 .glamor-3,
 [data-glamor-3] {
   box-sizing: border-box;
@@ -5937,42 +5907,14 @@ exports[`Button demo examples rtl 1`] = `
   padding: 0.125em;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
 .glamor-0,
 [data-glamor-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
+  transform: scaleX(-1);
   width: 1em;
+  -webkit-transform: scaleX(-1);
 }
 
 <ThemeProvider>
@@ -6109,7 +6051,9 @@ exports[`Button demo examples rtl 1`] = `
     <LiveProvider
       code="
         <div dir=\\"rtl\\">
-          <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+          <ThemeProvider theme={{ direction: 'rtl' }}>
+            <Button iconStart={<IconBackspace />}>قم بعمل ما</Button>
+          </ThemeProvider>
         </div>"
       mountStylesheet={false}
       noInline={false}
@@ -6117,6 +6061,7 @@ exports[`Button demo examples rtl 1`] = `
         Object {
           "Button": [Function],
           "IconBackspace": [Function],
+          "ThemeProvider": [Function],
         }
       }
     >
@@ -6126,6 +6071,7 @@ exports[`Button demo examples rtl 1`] = `
           Object {
             "Button": [Function],
             "IconBackspace": [Function],
+            "ThemeProvider": [Function],
           }
         }
       >
@@ -6136,65 +6082,81 @@ exports[`Button demo examples rtl 1`] = `
             <div
               dir="rtl"
             >
-              <Button
-                iconStart={<IconBackspace />}
+              <ThemeProvider
+                theme={
+                  Object {
+                    "direction": "rtl",
+                  }
+                }
               >
-                <glamorous(button)
-                  size="medium"
-                  type="button"
-                  variant="regular"
+                <ThemeProvider
+                  theme={
+                    Object {
+                      "direction": "rtl",
+                    }
+                  }
                 >
-                  <button
-                    className="glamor-3"
-                    type="button"
+                  <Button
+                    iconStart={<IconBackspace />}
                   >
-                    <glamorous(span)>
-                      <span
-                        className="glamor-2"
+                    <glamorous(button)
+                      size="medium"
+                      type="button"
+                      variant="regular"
+                    >
+                      <button
+                        className="glamor-3"
+                        type="button"
                       >
-                        <IconBackspace
-                          size="medium"
-                        >
-                          <Icon
-                            rtl={true}
-                            size="medium"
-                          >
-                            <glamorous(svg)
-                              aria-hidden={true}
-                              role="icon"
-                              rtl={true}
-                              size="medium"
-                              viewBox="0 0 24 24"
-                            >
-                              <svg
-                                aria-hidden={true}
-                                className="glamor-0"
-                                role="icon"
-                                viewBox="0 0 24 24"
-                              >
-                                <g>
-                                  <path
-                                    d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
-                                  />
-                                </g>
-                              </svg>
-                            </glamorous(svg)>
-                          </Icon>
-                        </IconBackspace>
-                        <glamorous(span)
-                          size="medium"
-                        >
+                        <glamorous(span)>
                           <span
-                            className="glamor-1"
+                            className="glamor-2"
                           >
-                            قم بعمل ما
+                            <IconBackspace
+                              size="medium"
+                            >
+                              <Icon
+                                rtl={true}
+                                size="medium"
+                              >
+                                <glamorous(svg)
+                                  aria-hidden={true}
+                                  role="icon"
+                                  rtl={true}
+                                  size="medium"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="glamor-0"
+                                    role="icon"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <g>
+                                      <path
+                                        d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
+                                      />
+                                    </g>
+                                  </svg>
+                                </glamorous(svg)>
+                              </Icon>
+                            </IconBackspace>
+                            <glamorous(span)
+                              size="medium"
+                            >
+                              <span
+                                className="glamor-1"
+                              >
+                                قم بعمل ما
+                              </span>
+                            </glamorous(span)>
                           </span>
                         </glamorous(span)>
-                      </span>
-                    </glamorous(span)>
-                  </button>
-                </glamorous(button)>
-              </Button>
+                      </button>
+                    </glamorous(button)>
+                  </Button>
+                </ThemeProvider>
+              </ThemeProvider>
             </div>
           </div>
         </LivePreview>
@@ -6205,6 +6167,36 @@ exports[`Button demo examples rtl 1`] = `
 `;
 
 exports[`Button demo examples sizes 1`] = `
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
+}
+
 .glamor-5,
 [data-glamor-5] {
   box-sizing: border-box;
@@ -6273,39 +6265,14 @@ exports[`Button demo examples sizes 1`] = `
   padding: 0.125em;
 }
 
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-12 > button,
-[data-glamor-12] > button {
+.glamor-15 > button,
+[data-glamor-15] > button {
   margin-right: 0.5rem;
+}
+
+.glamor-15 button:last-of-type,
+[data-glamor-15] button:last-of-type {
+  margin-top: 1em;
 }
 
 .glamor-2,
@@ -6551,6 +6518,75 @@ exports[`Button demo examples sizes 1`] = `
   padding: 0 0.5714285714285714em;
 }
 
+.glamor-14,
+[data-glamor-14] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.glamor-14 *,
+[data-glamor-14] *,
+.glamor-14 *::before,
+[data-glamor-14] *::before,
+.glamor-14 *::after,
+[data-glamor-14] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-14:focus,
+[data-glamor-14]:focus,
+.glamor-14[data-simulate-focus],
+[data-glamor-14][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-14:hover,
+[data-glamor-14]:hover,
+.glamor-14[data-simulate-hover],
+[data-glamor-14][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-14:active,
+[data-glamor-14]:active,
+.glamor-14[data-simulate-active],
+[data-glamor-14][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-14::-moz-focus-inner,
+[data-glamor-14]::-moz-focus-inner,
+.glamor-14[data-simulate-mozfocusinner],
+[data-glamor-14][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-14 [role="icon"],
+[data-glamor-14] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.125em;
+}
+
 <ThemeProvider>
   <ThemeProvider
     theme={
@@ -6689,6 +6725,7 @@ exports[`Button demo examples sizes 1`] = `
           <Button>Medium</Button>
           <Button size=\\"large\\">Large</Button>
           <Button size=\\"jumbo\\">Jumbo</Button>
+          <Button fullWidth>Full Width</Button>
         </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
@@ -6714,7 +6751,7 @@ exports[`Button demo examples sizes 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-12"
+                className="glamor-15"
               >
                 <Button
                   size="small"
@@ -6834,6 +6871,37 @@ exports[`Button demo examples sizes 1`] = `
                     </button>
                   </glamorous(button)>
                 </Button>
+                <Button
+                  fullWidth={true}
+                >
+                  <glamorous(button)
+                    fullWidth={true}
+                    size="medium"
+                    type="button"
+                    variant="regular"
+                  >
+                    <button
+                      className="glamor-14"
+                      type="button"
+                    >
+                      <glamorous(span)>
+                        <span
+                          className="glamor-1"
+                        >
+                          <glamorous(span)
+                            size="medium"
+                          >
+                            <span
+                              className="glamor-3"
+                            >
+                              Full Width
+                            </span>
+                          </glamorous(span)>
+                        </span>
+                      </glamorous(span)>
+                    </button>
+                  </glamorous(button)>
+                </Button>
               </div>
             </glamorous(div)>
           </div>
@@ -6845,104 +6913,6 @@ exports[`Button demo examples sizes 1`] = `
 `;
 
 exports[`Button demo examples states 1`] = `
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: #1b8bcc;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
 .glamor-5,
 [data-glamor-5] {
   box-sizing: border-box;
@@ -7011,342 +6981,34 @@ exports[`Button demo examples states 1`] = `
   padding: 0.125em;
 }
 
-.glamor-8,
-[data-glamor-8] {
-  box-sizing: border-box;
-  color: #0f75b0;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
-.glamor-8 *,
-[data-glamor-8] *,
-.glamor-8 *::before,
-[data-glamor-8] *::before,
-.glamor-8 *::after,
-[data-glamor-8] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-8:focus,
-[data-glamor-8]:focus,
-.glamor-8[data-simulate-focus],
-[data-glamor-8][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-8:hover,
-[data-glamor-8]:hover,
-.glamor-8[data-simulate-hover],
-[data-glamor-8][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-8:active,
-[data-glamor-8]:active,
-.glamor-8[data-simulate-active],
-[data-glamor-8][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-8::-moz-focus-inner,
-[data-glamor-8]::-moz-focus-inner,
-.glamor-8[data-simulate-mozfocusinner],
-[data-glamor-8][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-8 [role="icon"],
-[data-glamor-8] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
+.glamor-0,
+[data-glamor-0] {
   display: block;
-  padding: 0.125em;
-}
-
-.glamor-65,
-[data-glamor-65] {
-  box-sizing: border-box;
-  color: #ad0e0e;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-65 *,
-[data-glamor-65] *,
-.glamor-65 *::before,
-[data-glamor-65] *::before,
-.glamor-65 *::after,
-[data-glamor-65] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-65:focus,
-[data-glamor-65]:focus,
-.glamor-65[data-simulate-focus],
-[data-glamor-65][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
-}
-
-.glamor-65:hover,
-[data-glamor-65]:hover,
-.glamor-65[data-simulate-hover],
-[data-glamor-65][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-65:active,
-[data-glamor-65]:active,
-.glamor-65[data-simulate-active],
-[data-glamor-65][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-65::-moz-focus-inner,
-[data-glamor-65]::-moz-focus-inner,
-.glamor-65[data-simulate-mozfocusinner],
-[data-glamor-65][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-65 [role="icon"],
-[data-glamor-65] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-68,
-[data-glamor-68] {
-  box-sizing: border-box;
-  color: #fff;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #db2929;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-68 *,
-[data-glamor-68] *,
-.glamor-68 *::before,
-[data-glamor-68] *::before,
-.glamor-68 *::after,
-[data-glamor-68] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-68:focus,
-[data-glamor-68]:focus,
-.glamor-68[data-simulate-focus],
-[data-glamor-68][data-simulate-focus] {
-  background-color: #db2929;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
-}
-
-.glamor-68:hover,
-[data-glamor-68]:hover,
-.glamor-68[data-simulate-hover],
-[data-glamor-68][data-simulate-hover] {
-  background-color: #eb4d4d;
-}
-
-.glamor-68:active,
-[data-glamor-68]:active,
-.glamor-68[data-simulate-active],
-[data-glamor-68][data-simulate-active] {
-  background-color: #c71818;
-}
-
-.glamor-68::-moz-focus-inner,
-[data-glamor-68]::-moz-focus-inner,
-.glamor-68[data-simulate-mozfocusinner],
-[data-glamor-68][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-68 [role="icon"],
-[data-glamor-68] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-71,
-[data-glamor-71] {
-  box-sizing: border-box;
-  color: #ad0e0e;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-71 *,
-[data-glamor-71] *,
-.glamor-71 *::before,
-[data-glamor-71] *::before,
-.glamor-71 *::after,
-[data-glamor-71] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-71:focus,
-[data-glamor-71]:focus,
-.glamor-71[data-simulate-focus],
-[data-glamor-71][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
-}
-
-.glamor-71:hover,
-[data-glamor-71]:hover,
-.glamor-71[data-simulate-hover],
-[data-glamor-71][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-71:active,
-[data-glamor-71]:active,
-.glamor-71[data-simulate-active],
-[data-glamor-71][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-71::-moz-focus-inner,
-[data-glamor-71]::-moz-focus-inner,
-.glamor-71[data-simulate-mozfocusinner],
-[data-glamor-71][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-71 [role="icon"],
-[data-glamor-71] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-128,
-[data-glamor-128] {
-  box-sizing: border-box;
-  color: #06783f;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-128 *,
-[data-glamor-128] *,
-.glamor-128 *::before,
-[data-glamor-128] *::before,
-.glamor-128 *::after,
-[data-glamor-128] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-128:focus,
-[data-glamor-128]:focus,
-.glamor-128[data-simulate-focus],
-[data-glamor-128][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #06783f;
-}
-
-.glamor-128:hover,
-[data-glamor-128]:hover,
-.glamor-128[data-simulate-hover],
-[data-glamor-128][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-128:active,
-[data-glamor-128]:active,
-.glamor-128[data-simulate-active],
-[data-glamor-128][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-128::-moz-focus-inner,
-[data-glamor-128]::-moz-focus-inner,
-.glamor-128[data-simulate-mozfocusinner],
-[data-glamor-128][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-128 [role="icon"],
-[data-glamor-128] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
 }
 
 .glamor-131,
@@ -7411,141 +7073,6 @@ exports[`Button demo examples states 1`] = `
 
 .glamor-131 [role="icon"],
 [data-glamor-131] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-134,
-[data-glamor-134] {
-  box-sizing: border-box;
-  color: #06783f;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-134 *,
-[data-glamor-134] *,
-.glamor-134 *::before,
-[data-glamor-134] *::before,
-.glamor-134 *::after,
-[data-glamor-134] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-134:focus,
-[data-glamor-134]:focus,
-.glamor-134[data-simulate-focus],
-[data-glamor-134][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #06783f;
-}
-
-.glamor-134:hover,
-[data-glamor-134]:hover,
-.glamor-134[data-simulate-hover],
-[data-glamor-134][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-134:active,
-[data-glamor-134]:active,
-.glamor-134[data-simulate-active],
-[data-glamor-134][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-134::-moz-focus-inner,
-[data-glamor-134]::-moz-focus-inner,
-.glamor-134[data-simulate-mozfocusinner],
-[data-glamor-134][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-134 [role="icon"],
-[data-glamor-134] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-191,
-[data-glamor-191] {
-  box-sizing: border-box;
-  color: #bd3909;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-191 *,
-[data-glamor-191] *,
-.glamor-191 *::before,
-[data-glamor-191] *::before,
-.glamor-191 *::after,
-[data-glamor-191] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-191:focus,
-[data-glamor-191]:focus,
-.glamor-191[data-simulate-focus],
-[data-glamor-191][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #cf4615;
-}
-
-.glamor-191:hover,
-[data-glamor-191]:hover,
-.glamor-191[data-simulate-hover],
-[data-glamor-191][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-191:active,
-[data-glamor-191]:active,
-.glamor-191[data-simulate-active],
-[data-glamor-191][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-191::-moz-focus-inner,
-[data-glamor-191]::-moz-focus-inner,
-.glamor-191[data-simulate-mozfocusinner],
-[data-glamor-191][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-191 [role="icon"],
-[data-glamor-191] [role="icon"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
@@ -7620,6 +7147,588 @@ exports[`Button demo examples states 1`] = `
   padding: 0.125em;
 }
 
+.glamor-68,
+[data-glamor-68] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #db2929;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-68 *,
+[data-glamor-68] *,
+.glamor-68 *::before,
+[data-glamor-68] *::before,
+.glamor-68 *::after,
+[data-glamor-68] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-68:focus,
+[data-glamor-68]:focus,
+.glamor-68[data-simulate-focus],
+[data-glamor-68][data-simulate-focus] {
+  background-color: #db2929;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-68:hover,
+[data-glamor-68]:hover,
+.glamor-68[data-simulate-hover],
+[data-glamor-68][data-simulate-hover] {
+  background-color: #eb4d4d;
+}
+
+.glamor-68:active,
+[data-glamor-68]:active,
+.glamor-68[data-simulate-active],
+[data-glamor-68][data-simulate-active] {
+  background-color: #c71818;
+}
+
+.glamor-68::-moz-focus-inner,
+[data-glamor-68]::-moz-focus-inner,
+.glamor-68[data-simulate-mozfocusinner],
+[data-glamor-68][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-68 [role="icon"],
+[data-glamor-68] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-59,
+[data-glamor-59] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #dde3ed;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-59 *,
+[data-glamor-59] *,
+.glamor-59 *::before,
+[data-glamor-59] *::before,
+.glamor-59 *::after,
+[data-glamor-59] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-59:focus,
+[data-glamor-59]:focus,
+.glamor-59[data-simulate-focus],
+[data-glamor-59][data-simulate-focus] {
+  background-color: #1b8bcc;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-59::-moz-focus-inner,
+[data-glamor-59]::-moz-focus-inner,
+.glamor-59[data-simulate-mozfocusinner],
+[data-glamor-59][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-59 [role="icon"],
+[data-glamor-59] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-128,
+[data-glamor-128] {
+  box-sizing: border-box;
+  color: #06783f;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-128 *,
+[data-glamor-128] *,
+.glamor-128 *::before,
+[data-glamor-128] *::before,
+.glamor-128 *::after,
+[data-glamor-128] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-128:focus,
+[data-glamor-128]:focus,
+.glamor-128[data-simulate-focus],
+[data-glamor-128][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #06783f;
+}
+
+.glamor-128:hover,
+[data-glamor-128]:hover,
+.glamor-128[data-simulate-hover],
+[data-glamor-128][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-128:active,
+[data-glamor-128]:active,
+.glamor-128[data-simulate-active],
+[data-glamor-128][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-128::-moz-focus-inner,
+[data-glamor-128]::-moz-focus-inner,
+.glamor-128[data-simulate-mozfocusinner],
+[data-glamor-128][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-128 [role="icon"],
+[data-glamor-128] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-191,
+[data-glamor-191] {
+  box-sizing: border-box;
+  color: #bd3909;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-191 *,
+[data-glamor-191] *,
+.glamor-191 *::before,
+[data-glamor-191] *::before,
+.glamor-191 *::after,
+[data-glamor-191] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-191:focus,
+[data-glamor-191]:focus,
+.glamor-191[data-simulate-focus],
+[data-glamor-191][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #cf4615;
+}
+
+.glamor-191:hover,
+[data-glamor-191]:hover,
+.glamor-191[data-simulate-hover],
+[data-glamor-191][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-191:active,
+[data-glamor-191]:active,
+.glamor-191[data-simulate-active],
+[data-glamor-191][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-191::-moz-focus-inner,
+[data-glamor-191]::-moz-focus-inner,
+.glamor-191[data-simulate-mozfocusinner],
+[data-glamor-191][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-191 [role="icon"],
+[data-glamor-191] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-65,
+[data-glamor-65] {
+  box-sizing: border-box;
+  color: #ad0e0e;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-65 *,
+[data-glamor-65] *,
+.glamor-65 *::before,
+[data-glamor-65] *::before,
+.glamor-65 *::after,
+[data-glamor-65] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-65:focus,
+[data-glamor-65]:focus,
+.glamor-65[data-simulate-focus],
+[data-glamor-65][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-65:hover,
+[data-glamor-65]:hover,
+.glamor-65[data-simulate-hover],
+[data-glamor-65][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-65:active,
+[data-glamor-65]:active,
+.glamor-65[data-simulate-active],
+[data-glamor-65][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-65::-moz-focus-inner,
+[data-glamor-65]::-moz-focus-inner,
+.glamor-65[data-simulate-mozfocusinner],
+[data-glamor-65][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-65 [role="icon"],
+[data-glamor-65] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-56,
+[data-glamor-56] {
+  box-sizing: border-box;
+  color: #afbacc;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #dde3ed;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-56 *,
+[data-glamor-56] *,
+.glamor-56 *::before,
+[data-glamor-56] *::before,
+.glamor-56 *::after,
+[data-glamor-56] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-56:focus,
+[data-glamor-56]:focus,
+.glamor-56[data-simulate-focus],
+[data-glamor-56][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-56::-moz-focus-inner,
+[data-glamor-56]::-moz-focus-inner,
+.glamor-56[data-simulate-mozfocusinner],
+[data-glamor-56][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-56 [role="icon"],
+[data-glamor-56] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-8,
+[data-glamor-8] {
+  box-sizing: border-box;
+  color: #0f75b0;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-8 *,
+[data-glamor-8] *,
+.glamor-8 *::before,
+[data-glamor-8] *::before,
+.glamor-8 *::after,
+[data-glamor-8] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-8:focus,
+[data-glamor-8]:focus,
+.glamor-8[data-simulate-focus],
+[data-glamor-8][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-8:hover,
+[data-glamor-8]:hover,
+.glamor-8[data-simulate-hover],
+[data-glamor-8][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-8:active,
+[data-glamor-8]:active,
+.glamor-8[data-simulate-active],
+[data-glamor-8][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-8::-moz-focus-inner,
+[data-glamor-8]::-moz-focus-inner,
+.glamor-8[data-simulate-mozfocusinner],
+[data-glamor-8][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-8 [role="icon"],
+[data-glamor-8] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-134,
+[data-glamor-134] {
+  box-sizing: border-box;
+  color: #06783f;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-134 *,
+[data-glamor-134] *,
+.glamor-134 *::before,
+[data-glamor-134] *::before,
+.glamor-134 *::after,
+[data-glamor-134] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-134:focus,
+[data-glamor-134]:focus,
+.glamor-134[data-simulate-focus],
+[data-glamor-134][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #06783f;
+}
+
+.glamor-134:hover,
+[data-glamor-134]:hover,
+.glamor-134[data-simulate-hover],
+[data-glamor-134][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-134:active,
+[data-glamor-134]:active,
+.glamor-134[data-simulate-active],
+[data-glamor-134][data-simulate-active] {
+  background-color: #ebeff5;
+}
+
+.glamor-134::-moz-focus-inner,
+[data-glamor-134]::-moz-focus-inner,
+.glamor-134[data-simulate-mozfocusinner],
+[data-glamor-134][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-134 [role="icon"],
+[data-glamor-134] [role="icon"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+  padding: 0.125em;
+}
+
 .glamor-197,
 [data-glamor-197] {
   box-sizing: border-box;
@@ -7687,20 +7796,20 @@ exports[`Button demo examples states 1`] = `
   padding: 0.125em;
 }
 
-.glamor-56,
-[data-glamor-56] {
+.glamor-71,
+[data-glamor-71] {
   box-sizing: border-box;
-  color: #afbacc;
+  color: #ad0e0e;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
   outline: 0;
-  background-color: #dde3ed;
+  background-color: transparent;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
-  cursor: default;
+  cursor: pointer;
   font-weight: 600;
   height: 2em;
   min-width: 2em;
@@ -7708,87 +7817,46 @@ exports[`Button demo examples states 1`] = `
   vertical-align: middle;
 }
 
-.glamor-56 *,
-[data-glamor-56] *,
-.glamor-56 *::before,
-[data-glamor-56] *::before,
-.glamor-56 *::after,
-[data-glamor-56] *::after {
+.glamor-71 *,
+[data-glamor-71] *,
+.glamor-71 *::before,
+[data-glamor-71] *::before,
+.glamor-71 *::after,
+[data-glamor-71] *::after {
   box-sizing: inherit;
 }
 
-.glamor-56:focus,
-[data-glamor-56]:focus,
-.glamor-56[data-simulate-focus],
-[data-glamor-56][data-simulate-focus] {
+.glamor-71:focus,
+[data-glamor-71]:focus,
+.glamor-71[data-simulate-focus],
+[data-glamor-71][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+}
+
+.glamor-71:hover,
+[data-glamor-71]:hover,
+.glamor-71[data-simulate-hover],
+[data-glamor-71][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-71:active,
+[data-glamor-71]:active,
+.glamor-71[data-simulate-active],
+[data-glamor-71][data-simulate-active] {
   background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
 }
 
-.glamor-56::-moz-focus-inner,
-[data-glamor-56]::-moz-focus-inner,
-.glamor-56[data-simulate-mozfocusinner],
-[data-glamor-56][data-simulate-mozfocusinner] {
+.glamor-71::-moz-focus-inner,
+[data-glamor-71]::-moz-focus-inner,
+.glamor-71[data-simulate-mozfocusinner],
+[data-glamor-71][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-56 [role="icon"],
-[data-glamor-56] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-59,
-[data-glamor-59] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-59 *,
-[data-glamor-59] *,
-.glamor-59 *::before,
-[data-glamor-59] *::before,
-.glamor-59 *::after,
-[data-glamor-59] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-59:focus,
-[data-glamor-59]:focus,
-.glamor-59[data-simulate-focus],
-[data-glamor-59][data-simulate-focus] {
-  background-color: #1b8bcc;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #0f75b0;
-}
-
-.glamor-59::-moz-focus-inner,
-[data-glamor-59]::-moz-focus-inner,
-.glamor-59[data-simulate-mozfocusinner],
-[data-glamor-59][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-59 [role="icon"],
-[data-glamor-59] [role="icon"] {
+.glamor-71 [role="icon"],
+[data-glamor-71] [role="icon"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
@@ -11296,7 +11364,7 @@ exports[`Button demo examples states 1`] = `
 </ThemeProvider>
 `;
 
-exports[`Button demo examples success 1`] = `
+exports[`Button demo examples truncation 1`] = `
 .glamor-1,
 [data-glamor-1] {
   align-items: center;
@@ -11327,483 +11395,6 @@ exports[`Button demo examples success 1`] = `
   padding: 0 0.2857142857142857em;
 }
 
-.glamor-9 > button,
-[data-glamor-9] > button {
-  margin-right: 0.5rem;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #06783f;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #06783f;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-5,
-[data-glamor-5] {
-  box-sizing: border-box;
-  color: #fff;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #0a8f4c;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-5 *,
-[data-glamor-5] *,
-.glamor-5 *::before,
-[data-glamor-5] *::before,
-.glamor-5 *::after,
-[data-glamor-5] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-5:focus,
-[data-glamor-5]:focus,
-.glamor-5[data-simulate-focus],
-[data-glamor-5][data-simulate-focus] {
-  background-color: #0a8f4c;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #06783f;
-}
-
-.glamor-5:hover,
-[data-glamor-5]:hover,
-.glamor-5[data-simulate-hover],
-[data-glamor-5][data-simulate-hover] {
-  background-color: #10a35a;
-}
-
-.glamor-5:active,
-[data-glamor-5]:active,
-.glamor-5[data-simulate-active],
-[data-glamor-5][data-simulate-active] {
-  background-color: #06783f;
-}
-
-.glamor-5::-moz-focus-inner,
-[data-glamor-5]::-moz-focus-inner,
-.glamor-5[data-simulate-mozfocusinner],
-[data-glamor-5][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-5 [role="icon"],
-[data-glamor-5] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-8,
-[data-glamor-8] {
-  box-sizing: border-box;
-  color: #06783f;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-8 *,
-[data-glamor-8] *,
-.glamor-8 *::before,
-[data-glamor-8] *::before,
-.glamor-8 *::after,
-[data-glamor-8] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-8:focus,
-[data-glamor-8]:focus,
-.glamor-8[data-simulate-focus],
-[data-glamor-8][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #06783f;
-}
-
-.glamor-8:hover,
-[data-glamor-8]:hover,
-.glamor-8[data-simulate-hover],
-[data-glamor-8][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-8:active,
-[data-glamor-8]:active,
-.glamor-8[data-simulate-active],
-[data-glamor-8][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-8::-moz-focus-inner,
-[data-glamor-8]::-moz-focus-inner,
-.glamor-8[data-simulate-mozfocusinner],
-[data-glamor-8][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-8 [role="icon"],
-[data-glamor-8] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="
-        <DemoLayout>
-          <Button variant=\\"success\\">Regular</Button>
-          <Button variant=\\"success\\" primary>Primary</Button>
-          <Button variant=\\"success\\" minimal>Minimal</Button>
-        </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-            "DemoLayout": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <glamorous(div)>
-              <div
-                className="glamor-9"
-              >
-                <Button
-                  variant="success"
-                >
-                  <glamorous(button)
-                    size="medium"
-                    type="button"
-                    variant="success"
-                  >
-                    <button
-                      className="glamor-2"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Regular
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  primary={true}
-                  variant="success"
-                >
-                  <glamorous(button)
-                    primary={true}
-                    size="medium"
-                    type="button"
-                    variant="success"
-                  >
-                    <button
-                      className="glamor-5"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Primary
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  minimal={true}
-                  variant="success"
-                >
-                  <glamorous(button)
-                    minimal={true}
-                    size="medium"
-                    type="button"
-                    variant="success"
-                  >
-                    <button
-                      className="glamor-8"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Minimal
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Button demo examples truncation 1`] = `
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
@@ -11872,39 +11463,9 @@ exports[`Button demo examples truncation 1`] = `
   padding: 0.125em;
 }
 
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
 .glamor-3 > button,
 [data-glamor-3] > button {
-  width: 6rem;
+  width: 10rem;
 }
 
 <ThemeProvider>
@@ -12041,7 +11602,7 @@ exports[`Button demo examples truncation 1`] = `
     <LiveProvider
       code="
         <FixedWidthLayout>
-          <Button>Do Something</Button>
+          <Button>Supercalifragilisticexpialidocious</Button>
         </FixedWidthLayout>"
       mountStylesheet={false}
       noInline={false}
@@ -12089,514 +11650,7 @@ exports[`Button demo examples truncation 1`] = `
                             <span
                               className="glamor-0"
                             >
-                              Do Something
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
-`;
-
-exports[`Button demo examples warning 1`] = `
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
-}
-
-.glamor-9 > button,
-[data-glamor-9] > button {
-  margin-right: 0.5rem;
-}
-
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #bd3909;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #cf4615;
-}
-
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
-  background-color: #dde3ed;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-5,
-[data-glamor-5] {
-  box-sizing: border-box;
-  color: #fff;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #e05b2b;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-5 *,
-[data-glamor-5] *,
-.glamor-5 *::before,
-[data-glamor-5] *::before,
-.glamor-5 *::after,
-[data-glamor-5] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-5:focus,
-[data-glamor-5]:focus,
-.glamor-5[data-simulate-focus],
-[data-glamor-5][data-simulate-focus] {
-  background-color: #e05b2b;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #cf4615;
-}
-
-.glamor-5:hover,
-[data-glamor-5]:hover,
-.glamor-5[data-simulate-hover],
-[data-glamor-5][data-simulate-hover] {
-  background-color: #ed774c;
-}
-
-.glamor-5:active,
-[data-glamor-5]:active,
-.glamor-5[data-simulate-active],
-[data-glamor-5][data-simulate-active] {
-  background-color: #cf4615;
-}
-
-.glamor-5::-moz-focus-inner,
-[data-glamor-5]::-moz-focus-inner,
-.glamor-5[data-simulate-mozfocusinner],
-[data-glamor-5][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-5 [role="icon"],
-[data-glamor-5] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-.glamor-8,
-[data-glamor-8] {
-  box-sizing: border-box;
-  color: #bd3909;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: transparent;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-8 *,
-[data-glamor-8] *,
-.glamor-8 *::before,
-[data-glamor-8] *::before,
-.glamor-8 *::after,
-[data-glamor-8] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-8:focus,
-[data-glamor-8]:focus,
-.glamor-8[data-simulate-focus],
-[data-glamor-8][data-simulate-focus] {
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #cf4615;
-}
-
-.glamor-8:hover,
-[data-glamor-8]:hover,
-.glamor-8[data-simulate-hover],
-[data-glamor-8][data-simulate-hover] {
-  background-color: #f5f7fa;
-}
-
-.glamor-8:active,
-[data-glamor-8]:active,
-.glamor-8[data-simulate-active],
-[data-glamor-8][data-simulate-active] {
-  background-color: #ebeff5;
-}
-
-.glamor-8::-moz-focus-inner,
-[data-glamor-8]::-moz-focus-inner,
-.glamor-8[data-simulate-mozfocusinner],
-[data-glamor-8][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-8 [role="icon"],
-[data-glamor-8] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
-<ThemeProvider>
-  <ThemeProvider
-    theme={
-      Object {
-        "backgroundColor_danger": "#db2929",
-        "backgroundColor_danger_active": "#c71818",
-        "backgroundColor_danger_activeMuted": "#f79999",
-        "backgroundColor_danger_focus": "#db2929",
-        "backgroundColor_danger_hover": "#eb4d4d",
-        "backgroundColor_disabled": "#ebeff5",
-        "backgroundColor_input_danger": "#fce3e3",
-        "backgroundColor_input_success": "#e8fcf2",
-        "backgroundColor_input_warning": "#fcf1dc",
-        "backgroundColor_link_focus": "#dde3ed",
-        "backgroundColor_success": "#0a8f4c",
-        "backgroundColor_success_active": "#06783f",
-        "backgroundColor_success_activeMuted": "#95f5c3",
-        "backgroundColor_success_focus": "#0a8f4c",
-        "backgroundColor_success_hover": "#10a35a",
-        "backgroundColor_warning": "#e05b2b",
-        "backgroundColor_warning_active": "#cf4615",
-        "backgroundColor_warning_activeMuted": "#fab69d",
-        "backgroundColor_warning_focus": "#e05b2b",
-        "backgroundColor_warning_hover": "#ed774c",
-        "borderColor": "#c8d1e0",
-        "borderColor_active": "#51b3f0",
-        "borderColor_danger": "#ad0e0e",
-        "borderColor_danger_active": "#7d0606",
-        "borderColor_danger_focus": "#c71818",
-        "borderColor_danger_hover": "#db2929",
-        "borderColor_focus": "#0f75b0",
-        "borderColor_hover": "#2f9fe0",
-        "borderColor_success": "#0a8f4c",
-        "borderColor_success_active": "#046132",
-        "borderColor_success_focus": "#06783f",
-        "borderColor_success_hover": "#1fc06f",
-        "borderColor_warning": "#d19411",
-        "borderColor_warning_active": "#916504",
-        "borderColor_warning_focus": "#cf4615",
-        "borderColor_warning_hover": "#e3a322",
-        "borderRadius_1": "0.1875em",
-        "color_black": "#1d1f24",
-        "color_caption": "#58606e",
-        "color_gray_10": "#f5f7fa",
-        "color_gray_100": "#333840",
-        "color_gray_20": "#ebeff5",
-        "color_gray_30": "#dde3ed",
-        "color_gray_40": "#c8d1e0",
-        "color_gray_50": "#afbacc",
-        "color_gray_60": "#8e99ab",
-        "color_gray_70": "#707a8a",
-        "color_gray_80": "#58606e",
-        "color_gray_90": "#434a54",
-        "color_placeholder": "#8e99ab",
-        "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
-        "color_text_disabled": "#afbacc",
-        "color_text_ondanger": "#fff",
-        "color_text_onprimary": "#fff",
-        "color_text_onsuccess": "#fff",
-        "color_text_onwarning": "#fff",
-        "color_text_primary": "#0f75b0",
-        "color_text_primary_active": "#0a6091",
-        "color_text_primary_focus": "#0f75b0",
-        "color_text_primary_hover": "#1b8bcc",
-        "color_text_success": "#06783f",
-        "color_text_success_active": "#046132",
-        "color_text_success_focus": "#06783f",
-        "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
-        "color_theme_10": "#e1f3fc",
-        "color_theme_100": "#084d75",
-        "color_theme_20": "#c0e5fc",
-        "color_theme_30": "#9fd9fc",
-        "color_theme_40": "#79c7f7",
-        "color_theme_50": "#51b3f0",
-        "color_theme_60": "#2f9fe0",
-        "color_theme_70": "#1b8bcc",
-        "color_theme_80": "#0f75b0",
-        "color_theme_90": "#0a6091",
-        "color_white": "#fff",
-        "direction": "ltr",
-        "fontFamily": "Open Sans",
-        "fontFamily_monospace": "monospace",
-        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-        "fontSize_base": 16,
-        "fontSize_h1": "2.125em",
-        "fontSize_h2": "1.75em",
-        "fontSize_h3": "1.375em",
-        "fontSize_h4": "1.125em",
-        "fontSize_h5": "0.875em",
-        "fontSize_h6": "0.875em",
-        "fontSize_mouse": "0.6875em",
-        "fontSize_prose": "1em",
-        "fontSize_ui": "0.875em",
-        "fontWeight_bold": 700,
-        "fontWeight_extraBold": 800,
-        "fontWeight_regular": 400,
-        "fontWeight_semiBold": 600,
-        "lineHeight": 1.25,
-        "lineHeight_prose": 1.5,
-        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
-        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
-        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
-        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
-        "size_jumbo": "3.25em",
-        "size_large": "2.5em",
-        "size_medium": "2em",
-        "size_small": "1.5em",
-        "spacing_double": "1em",
-        "spacing_half": "0.25em",
-        "spacing_oneAndAHalf": "0.75em",
-        "spacing_quad": "2em",
-        "spacing_quarter": "0.125em",
-        "spacing_single": "0.5em",
-        "spacing_triple": "1.5em",
-        "zIndex_100": 100,
-        "zIndex_1600": 1600,
-        "zIndex_200": 200,
-        "zIndex_400": 400,
-        "zIndex_800": 800,
-      }
-    }
-  >
-    <LiveProvider
-      code="
-        <DemoLayout>
-          <Button variant=\\"warning\\">Regular</Button>
-          <Button variant=\\"warning\\" primary>Primary</Button>
-          <Button variant=\\"warning\\" minimal>Minimal</Button>
-        </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-            "DemoLayout": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <glamorous(div)>
-              <div
-                className="glamor-9"
-              >
-                <Button
-                  variant="warning"
-                >
-                  <glamorous(button)
-                    size="medium"
-                    type="button"
-                    variant="warning"
-                  >
-                    <button
-                      className="glamor-2"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Regular
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  primary={true}
-                  variant="warning"
-                >
-                  <glamorous(button)
-                    primary={true}
-                    size="medium"
-                    type="button"
-                    variant="warning"
-                  >
-                    <button
-                      className="glamor-5"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Primary
-                            </span>
-                          </glamorous(span)>
-                        </span>
-                      </glamorous(span)>
-                    </button>
-                  </glamorous(button)>
-                </Button>
-                <Button
-                  minimal={true}
-                  variant="warning"
-                >
-                  <glamorous(button)
-                    minimal={true}
-                    size="medium"
-                    type="button"
-                    variant="warning"
-                  >
-                    <button
-                      className="glamor-8"
-                      type="button"
-                    >
-                      <glamorous(span)>
-                        <span
-                          className="glamor-1"
-                        >
-                          <glamorous(span)
-                            size="medium"
-                          >
-                            <span
-                              className="glamor-0"
-                            >
-                              Minimal
+                              Supercalifragilisticexpialidocious
                             </span>
                           </glamorous(span)>
                         </span>

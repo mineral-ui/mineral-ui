@@ -28,48 +28,51 @@ const DemoLayout = createStyledComponent('div', {
   '& > *': {
     flex: '1 1 25%',
     margin: '2em',
-    minWidth: '25em',
-    maxWidth: '40em'
+    maxWidth: '30em'
+  },
+
+  '& img': {
+    width: '100%'
   }
 });
 
 export default {
   id: 'order',
-  title: 'Order of sections',
+  title: 'Order of Sections',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: 'The sections of Card are designed to work in any order.',
+  description: `There is no 'one true way' to lay out a Card. Cards are flexible enough to accept different component arrangements.`,
   scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-        <CardTitle minor>Card title</CardTitle>
+        <CardImage src="/images/500x500.png" alt="gradient image" />
+        <CardTitle minor>Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
 
       <Card>
-        <CardTitle>Card title</CardTitle>
-        <CardImage src="http://fillmurray.com/1001/563" alt="Bill Murray" />
+        <CardTitle>Card Title</CardTitle>
+        <CardImage src="/images/500x500.png" alt="gradient image" />
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
 
       <Card>
-        <CardTitle>Card title</CardTitle>
+        <CardTitle>Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
-        <CardImage src="http://fillmurray.com/1002/563" alt="Bill Murray" />
+        <CardImage src="/images/690x690.png" alt="gradient image" />
       </Card>
     </DemoLayout>`
 };

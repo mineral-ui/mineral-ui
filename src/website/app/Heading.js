@@ -33,8 +33,8 @@ type Props = {
 const componentTheme = baseTheme => ({
   Heading_color_1: baseTheme.color_text,
   Heading_color_2: baseTheme.color_gray_80,
-  Heading_color_3: baseTheme.color_text,
-  Heading_color_4: baseTheme.color_text,
+  Heading_color_3: baseTheme.color_gray_80,
+  Heading_color_4: baseTheme.color_gray_80,
   Heading_color_5: baseTheme.color_text,
   Heading_color_6: baseTheme.color_gray_80,
   Heading_fontSize_1: baseTheme.fontSize_h1,

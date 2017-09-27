@@ -21,20 +21,21 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'meta',
-  title: 'With meta information',
+  title: 'With Meta Information',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'If you provide meta information, such as a date or category, it will display above the title, which will automatically display in the minor style.',
+  description: `When you must provide information that doesn't belong to every Card in a set, supply it as \`meta\` information.
+The information will display above the title, which will automatically display in the minor style.
+If information is in every card in the set, consider using the \`subtitle\` attribute.`,
   scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle meta="July 24, 2017">Card title</CardTitle>
+        <CardTitle meta="Meta Information for This Card">Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

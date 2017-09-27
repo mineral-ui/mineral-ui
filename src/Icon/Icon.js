@@ -25,7 +25,7 @@ type Props = {
   children?: MnrlReactNode,
   /** Fill color, defaults to theme.color_gray_60 */
   color?: string,
-  /** Flip the icon horizontally when used with RTL languages */
+  /** Flip the Icon horizontally when used with RTL languages */
   rtl?: boolean,
   /** Alternative text */
   title?: string
@@ -54,10 +54,11 @@ const iconStyles = ({ color, rtl, size, theme: baseTheme }) => {
 const Root = createStyledComponent('svg', iconStyles, { rootEl: 'svg' });
 
 /**
- * The Icon component displays a graphic symbol representing an object or function.
+ * Icons use graphical symbols to represent an object or concept in your UI.
+ * They can be used to aid comprehension of core actions in your app, and to provide feedback for user input.
  *
- * The package provides a large number of prepackaged icon components as well
- * as a generic icon component to which you can provide your own SVG.
+ * Mineral UI provides a large number of bundled Icon components as well
+ * as a generic Icon component to which you can provide your own SVG.
  */
 export default class Icon extends Component {
   static displayName = 'Icon';

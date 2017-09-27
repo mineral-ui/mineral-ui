@@ -20,7 +20,10 @@ import Icon from '../../../../../Icon';
 export default {
   id: 'custom',
   title: 'Custom',
-  description: 'You can render a custom icon by supplying an SVG as a child.',
+  description: `You can render a custom icon by supplying an SVG as a child to Icon.
+The default export from the \`Icon\` package is the custom wrapper.
+
+\`import Icon from 'mineral-ui/Icon'\``,
   scope: { Icon },
   source: `
     <Icon size="7em" title="CA Technologies">

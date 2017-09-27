@@ -37,6 +37,7 @@ const Name = createStyledComponent('span', ({ theme }) => ({
 const Value = createStyledComponent('span', ({ color, theme }) => {
   if (color) {
     return {
+      border: color === '#fff' ? `1px solid ${theme.color_gray_50}` : 'none',
       backgroundColor: color,
       borderRadius: theme.borderRadius_1,
       color: a11yColor(color),

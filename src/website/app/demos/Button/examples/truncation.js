@@ -20,17 +20,17 @@ import Button from '../../../../../Button';
 
 const FixedWidthLayout = createStyledComponent('div', {
   '& > button': {
-    width: '6rem'
+    width: '10rem'
   }
 });
 
 export default {
   id: 'truncation',
   title: 'Truncation',
-  description: 'Long button text is truncated when necessary',
+  description: 'Long button text is truncated when necessary.',
   scope: { Button, FixedWidthLayout },
   source: `
     <FixedWidthLayout>
-      <Button>Do Something</Button>
+      <Button>Supercalifragilisticexpialidocious</Button>
     </FixedWidthLayout>`
 };

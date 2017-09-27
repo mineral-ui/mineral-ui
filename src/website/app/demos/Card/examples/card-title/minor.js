@@ -21,7 +21,7 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'minor-title',
-  title: 'Minor title',
+  title: 'Minor Title',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
@@ -30,12 +30,12 @@ export default {
   source: `
     <DemoLayout>
       <Card>
-        <CardImage src="http://fillmurray.com/1000/563" alt="Bill Murray" />
-        <CardTitle minor>Card title</CardTitle>
+        <CardImage src="/images/500x200.png" alt="gradient image" />
+        <CardTitle minor>Minor Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

@@ -26,8 +26,10 @@ import {
 
 export default {
   id: 'react-router',
-  title: 'ReactRouter',
-  description: `This example passes a ReactRouter Link to a Mineral UI Link's element prop in order to apply Mineral UI styles and achieve client side routing.`,
+  title: 'Routing',
+  description: `Client-side routing can be achieved by passing a [ReactRouter Link](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md) (or other routing component that creates an \`<a>\` element) to the \`element\` prop.
+Mineral UI styles are applied.
+`,
   scope: { BrowserRouter, Link, ReactRouterLink, Redirect, Route, Switch },
   source: `
     <BrowserRouter>

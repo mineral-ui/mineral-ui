@@ -19,6 +19,7 @@ import React, { Component } from 'react';
 import dedent from 'dedent';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { createStyledComponent } from '../../utils';
+import Callout from './Callout';
 import Heading from './Heading';
 import Markdown from './Markdown';
 
@@ -46,7 +47,7 @@ const styles = {
     }
   }),
   description: ({ theme }) => ({
-    margin: `0 0 ${theme.spacing_double}`
+    margin: `0 0 ${theme.spacing_quad}`
   }),
   livePreview: ({ backgroundColor, theme }) => ({
     backgroundColor,
@@ -57,6 +58,9 @@ const styles = {
     fontSize: theme.fontSize_ui,
     maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
     overflow: 'auto'
+  }),
+  title: ({ theme }) => ({
+    margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
   })
 };
 
@@ -66,6 +70,7 @@ const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
   rootEl: 'div'
 });
 const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
+const Title = createStyledComponent(Heading, styles.title);
 
 export default class ComponentDocExample extends Component {
   props: Props;
@@ -82,25 +87,13 @@ export default class ComponentDocExample extends Component {
       title
     } = this.props;
 
-    const fake = () => {
-      const texts = [
-        'Text to explain what’s special about this example.',
-        'Slightly longer text to explain what’s so special about this particular example.',
-        'Text to explain what’s special about this example. Text to explain what’s special about this example. Text to explain what’s special about this example.'
-      ];
-      return texts[Math.floor(Math.random() * texts.length)];
-    };
-
-    // $FlowFixMe
-    const fakeDescription = `${description || ''} ${fake()}`;
-
     return (
       <Root className={className} id={id}>
-        <Heading level={3} id={id}>
+        <Title level={3} id={id}>
           {title}
-        </Heading>
-        <Description>
-          {fakeDescription}
+        </Title>
+        <Description scope={{ Callout }}>
+          {description || ''}
         </Description>
         <LiveProvider
           code={dedent(source)}

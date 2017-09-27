@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import { createStyledComponent } from '../../../../utils';
 import Heading from '../../Heading';
 import Markdown from '../../Markdown';
 import Section from '../../Section';
@@ -28,6 +29,10 @@ type Props = {|
 |};
 
 type Theme = (theme: Object) => Object;
+
+const Title = createStyledComponent(Heading, ({ theme }) => ({
+  margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+}));
 
 const createKeyMirror = (obj: Object) => {
   let mirror = {};
@@ -77,9 +82,9 @@ export default function DocThemeVariables({
 
   return (
     <Section>
-      <Heading level={2} id="theme-variables">
+      <Title level={3} id="theme-variables">
         {`${title} Theme Variables`}
-      </Heading>
+      </Title>
       <Markdown>
         {`These variables can be used as hooks to override this component’s
           style at either a [global](/components/theme-provider) or

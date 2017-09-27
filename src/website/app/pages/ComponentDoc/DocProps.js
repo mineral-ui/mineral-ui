@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../utils';
+import Callout from '../../Callout';
 import Heading from '../../Heading';
 import PropTable from '../../PropTable';
 import Section from '../../Section';
@@ -26,18 +27,35 @@ type Props = {|
   title: string
 |};
 
-const PropsComment = createStyledComponent('p', {
-  fontStyle: 'italic'
-});
+const styles = {
+  propsComment: {
+    fontStyle: 'italic'
+  },
+  title: ({ theme }) => ({
+    margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+  })
+};
+
+const PropsComment = createStyledComponent('p', styles.propsComment);
+const Title = createStyledComponent(Heading, styles.title);
 
 export default function DocProps({ propDoc, title }: Props) {
   return (
     <Section>
-      <Heading level={2} id="props">{`${title} Props`}</Heading>
-      {propDoc && <PropTable propDoc={propDoc} />}
-      <PropsComment>
-        Undocumented properties will be applied to the root element.
-      </PropsComment>
+      <Heading level={2} id="api-and-theme">
+        API & Theme
+      </Heading>
+      <Title level={3} id="props">{`${title} Props`}</Title>
+      {propDoc
+        ? <div>
+            <PropTable propDoc={propDoc} />
+            <PropsComment>
+              Undocumented properties will be applied to the root element.
+            </PropsComment>
+          </div>
+        : <Callout title="Note">
+            {`${title} does not have properties of its own. Undocumented properties will be applied to the root element.`}
+          </Callout>}
     </Section>
   );
 }

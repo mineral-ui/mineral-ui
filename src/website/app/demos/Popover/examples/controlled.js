@@ -31,8 +31,9 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'controlled',
   title: 'Controlled',
-  description:
-    'State can be managed by the application rather than the component.',
+  description: `Popover controls its own state by default,
+and can optionally be managed by the application as a controlled component through the \`isOpen\` attribute.
+Callbacks for \`onOpen\` and \`onClose\` are also provided.`,
   scope: { Button, Component, DemoContent, DemoLayout, findDOMNode, Popover },
   source: `
     class App extends Component {

@@ -20,4 +20,4 @@ import arbitraryChildren from './arbitraryChildren';
 import clickable from './clickable';
 import orderOfSections from './orderOfSections';
 
-export default [card, arbitraryChildren, clickable, orderOfSections];
+export default [card, clickable, arbitraryChildren, orderOfSections];

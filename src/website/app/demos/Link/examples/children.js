@@ -24,6 +24,6 @@ export default {
   scope: { Link },
   source: `
     <Link href="http://example.com">
-      <img alt="a headshot of Bill Murray" src="https://www.fillmurray.com/100/100" />
+      <img alt="gradient placeholder" src="/images/125x125.png" />
     </Link>`
 };

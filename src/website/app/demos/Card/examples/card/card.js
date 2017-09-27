@@ -16,25 +16,31 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
-import Card, { CardBlock, CardTitle } from '../../../../../../Card';
+import Button from '../../../../../../Button';
+import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'basic',
-  title: 'Basic card',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'Note: Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.',
-  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  description: `Card content should be neither too simple nor too complex.
+Cards are used as a gateway to more detailed content, not merely as a widget container.
+Cards contain one [CardTitle](./card-title), an optional [CardImage](./card-image), and one or more [CardBlocks](./card-block).
+
+<Callout title="Note">
+  Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.
+</Callout>`,
+  scope: { Button, Card, CardBlock, CardImage, CardTitle, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card title</CardTitle>
+        <CardTitle>Card Title</CardTitle>
+        <CardImage src="/images/500x500.png" alt="gradient placeholder" />
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi.
         </CardBlock>
       </Card>
     </DemoLayout>`

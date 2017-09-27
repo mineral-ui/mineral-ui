@@ -15,12 +15,26 @@
  */
 
 /* @flow */
+import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
+
+const DemoLayout = createStyledComponent('div', {
+  '& > button': {
+    marginRight: '0.5rem'
+  }
+});
 
 export default {
   id: 'minimal',
   title: 'Minimal',
-  description: 'Use for less-important actions.',
-  scope: { Button },
-  source: `<Button minimal>Do Something</Button>`
+  description:
+    'Use for less-important actions, or if there are a lot of other buttons on screen.',
+  scope: { Button, DemoLayout },
+  source: `<DemoLayout>
+    <Button minimal>Default</Button>
+    <Button variant="success" minimal>Success</Button>
+    <Button variant="warning" minimal>Warning</Button>
+    <Button variant="danger" minimal>Danger</Button>
+    <Button disabled minimal>Disabled</Button>
+  </DemoLayout>`
 };

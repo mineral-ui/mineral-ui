@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import { createStyledComponent } from '../../../../utils';
 import Heading from '../../Heading';
 import Markdown from '../../Markdown';
 import Section from '../../Section';
@@ -24,12 +25,19 @@ type Props = {|
   content: string
 |};
 
+const Title = createStyledComponent(Heading, ({ theme }) => ({
+  margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+}));
+
 export default function DocWhenHowToUse({ content }: Props) {
   return (
     <Section>
-      <Heading level={2} id="when-how-to-use">
-        When/How to Use
+      <Heading level={2} id="usage">
+        Usage
       </Heading>
+      <Title level={3} id="when-how-to-use">
+        When/How to Use
+      </Title>
       <Markdown>
         {content}
       </Markdown>

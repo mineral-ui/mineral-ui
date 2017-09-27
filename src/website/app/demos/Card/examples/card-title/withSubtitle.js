@@ -21,7 +21,7 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'subtitle',
-  title: 'With a subtitle',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',
@@ -29,11 +29,11 @@ export default {
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle subtitle="Card subtitle">Card title</CardTitle>
+        <CardTitle subtitle="Subtitle here">Card Title</CardTitle>
         <CardBlock>
-          Light years star stuff harvesting star light citizens of distant
-          epochs encyclopaedia galactica vastness is bearable only through love,
-          shores of the cosmic ocean!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
         </CardBlock>
       </Card>
     </DemoLayout>`

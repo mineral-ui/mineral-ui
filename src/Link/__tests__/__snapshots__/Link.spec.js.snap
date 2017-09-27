@@ -186,19 +186,19 @@ exports[`Link demo examples basic 1`] = `
       code="
         <div>
           <Big>
-            Light years star stuff <Link href=\\"http://example.com\\">harvesting</Link> star light
+            Lorem ipsum dolor sit amet, <Link href=\\"http://example.com\\">consectetur</Link> adipiscing elit,
           </Big>
     
           <Small>
-            citizens of distant <Link href=\\"http://example.com\\">epochs</Link> encyclopaedia galactica
+            sed do eiusmod tempor <Link href=\\"http://example.com\\">incididunt</Link> ut labore et dolore magna aliqua.
           </Small>
     
           <Bold>
-            vastness is <Link href=\\"http://example.com\\">bearable</Link> only through love,
+            Ut enim <Link href=\\"http://example.com\\">ad minim veniam</Link> quis nostrud exercitation
           </Bold>
     
           <Serif>
-            shores of the <Link href=\\"http://example.com\\">cosmic</Link> ocean!
+            ullamco laboris <Link href=\\"http://example.com\\">nisi ut</Link> aliquip ex ea commodo consequat.
           </Serif>
         </div>"
       mountStylesheet={false}
@@ -234,7 +234,7 @@ exports[`Link demo examples basic 1`] = `
                 <p
                   className="glamor-1"
                 >
-                  Light years star stuff 
+                  Lorem ipsum dolor sit amet, 
                   <Link
                     href="http://example.com"
                   >
@@ -246,18 +246,18 @@ exports[`Link demo examples basic 1`] = `
                         className="glamor-0"
                         href="http://example.com"
                       >
-                        harvesting
+                        consectetur
                       </a>
                     </Link>
                   </Link>
-                   star light
+                   adipiscing elit,
                 </p>
               </glamorous(p)>
               <glamorous(p)>
                 <p
                   className="glamor-3"
                 >
-                  citizens of distant 
+                  sed do eiusmod tempor 
                   <Link
                     href="http://example.com"
                   >
@@ -269,18 +269,18 @@ exports[`Link demo examples basic 1`] = `
                         className="glamor-0"
                         href="http://example.com"
                       >
-                        epochs
+                        incididunt
                       </a>
                     </Link>
                   </Link>
-                   encyclopaedia galactica
+                   ut labore et dolore magna aliqua.
                 </p>
               </glamorous(p)>
               <glamorous(p)>
                 <p
                   className="glamor-5"
                 >
-                  vastness is 
+                  Ut enim 
                   <Link
                     href="http://example.com"
                   >
@@ -292,18 +292,18 @@ exports[`Link demo examples basic 1`] = `
                         className="glamor-0"
                         href="http://example.com"
                       >
-                        bearable
+                        ad minim veniam
                       </a>
                     </Link>
                   </Link>
-                   only through love,
+                   quis nostrud exercitation
                 </p>
               </glamorous(p)>
               <glamorous(p)>
                 <p
                   className="glamor-7"
                 >
-                  shores of the 
+                  ullamco laboris 
                   <Link
                     href="http://example.com"
                   >
@@ -315,11 +315,11 @@ exports[`Link demo examples basic 1`] = `
                         className="glamor-0"
                         href="http://example.com"
                       >
-                        cosmic
+                        nisi ut
                       </a>
                     </Link>
                   </Link>
-                   ocean!
+                   aliquip ex ea commodo consequat.
                 </p>
               </glamorous(p)>
             </div>
@@ -496,7 +496,7 @@ exports[`Link demo examples children 1`] = `
     <LiveProvider
       code="
         <Link href=\\"http://example.com\\">
-          <img alt=\\"a headshot of Bill Murray\\" src=\\"https://www.fillmurray.com/100/100\\" />
+          <img alt=\\"gradient placeholder\\" src=\\"/images/125x125.png\\" />
         </Link>"
       mountStylesheet={false}
       noInline={false}
@@ -530,8 +530,8 @@ exports[`Link demo examples children 1`] = `
                   href="http://example.com"
                 >
                   <img
-                    alt="a headshot of Bill Murray"
-                    src="https://www.fillmurray.com/100/100"
+                    alt="gradient placeholder"
+                    src="/images/125x125.png"
                   />
                 </a>
               </Link>
