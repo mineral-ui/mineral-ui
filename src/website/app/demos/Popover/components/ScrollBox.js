@@ -15,30 +15,35 @@
  */
 
 /* @flow */
-import React, { Children, cloneElement, PureComponent } from 'react';
+import React, { Children, cloneElement, Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
 
 type Props = {
   children: MnrlReactNode,
-  autoCenter?: boolean
+  autoCenter?: boolean,
+  /** Height in pixels */
+  height?: number
 };
 
 const Root = createStyledComponent('div', {
   position: 'relative'
 });
 
-const ScrollArea = createStyledComponent('div', {
+const ScrollArea = createStyledComponent('div', ({ height }: Object) => ({
   backgroundColor: 'aliceblue',
-  height: '360px',
+  height: `${height}px`,
   overflow: 'auto',
   position: 'relative'
-});
+}));
 
-const ScrollContent = createStyledComponent('div', {
-  padding: '500px 200vw'
-});
+const ScrollContent = createStyledComponent(
+  'div',
+  ({ scrollAreaHeight }: Object) => ({
+    padding: `${parseInt(scrollAreaHeight) + 200}px 200vw`
+  })
+);
 
 const Recenter = createStyledComponent(Button, {
   left: 0,
@@ -46,9 +51,10 @@ const Recenter = createStyledComponent(Button, {
   top: 0
 });
 
-export default class ScrollBox extends PureComponent {
+export default class ScrollBox extends Component {
   static defaultProps = {
-    autoCenter: true
+    autoCenter: true,
+    height: 360
   };
 
   props: Props;
@@ -64,19 +70,21 @@ export default class ScrollBox extends PureComponent {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, height } = this.props;
     const scrollTarget = cloneElement(Children.only(children), {
       ref: node => {
         this.scrollTarget = node;
       }
     });
+
     return (
       <Root>
         <ScrollArea
           ref={node => {
             this.scrollArea = node;
-          }}>
-          <ScrollContent>
+          }}
+          height={height}>
+          <ScrollContent scrollAreaHeight={height}>
             {scrollTarget}
           </ScrollContent>
         </ScrollArea>

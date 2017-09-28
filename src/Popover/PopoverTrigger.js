@@ -15,8 +15,8 @@
  */
 
 /* @flow */
-import React, { Children, PureComponent } from 'react';
-import { Target } from '@mineral-ui/react-popper';
+import React, { Children, Component } from 'react';
+import { Target } from 'react-popper';
 import { createStyledComponent } from '../utils';
 
 type Props = {
@@ -36,7 +36,7 @@ const Root = createStyledComponent(
   }
 );
 
-export default class PopoverTrigger extends PureComponent {
+export default class PopoverTrigger extends Component {
   props: Props;
 
   render() {

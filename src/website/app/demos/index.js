@@ -19,6 +19,7 @@ import flatten from 'lodash/flatten';
 import createKeyMap from '../utils/createKeyMap';
 import button from './Button';
 import card from './Card';
+import dropdown from './Dropdown';
 import icon from './Icon';
 import link from './Link';
 import menu from './Menu';
@@ -29,6 +30,7 @@ import utils from './utils';
 const demos = flatten([
   button,
   card,
+  dropdown,
   icon,
   link,
   menu,

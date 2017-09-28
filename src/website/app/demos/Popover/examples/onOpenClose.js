@@ -15,19 +15,29 @@
  */
 
 /* @flow */
-import { componentTheme } from '../../../../Popover/PopoverContent';
-import examples from './examples';
-
-const doc = require('!!react-docgen-loader!../../../../Popover/Popover');
-
-// Removing @Private props from the doc
-doc && doc.props && delete doc.props.trigger;
-doc && doc.props && delete doc.props.triggerRef;
+import Button from '../../../../../Button';
+import Popover from '../../../../../Popover';
+import DemoContent from '../components/DemoContent';
 
 export default {
-  componentTheme,
-  doc,
-  examples,
-  slug: 'popover',
-  title: 'Popover'
+  id: 'on-open-close',
+  hideFromProd: true,
+  title: 'onOpen and onClose',
+  scope: { Button, DemoContent, Popover },
+  source: `
+    () => {
+      const onOpen = () => {
+        console.log('Opened');
+      };
+
+      const onClose = () => {
+        console.log('Closed');
+      };
+
+      return (
+        <Popover content={<DemoContent />} onOpen={onOpen} onClose={onClose}>
+          <Button>Menu</Button>
+        </Popover>
+      );
+    }`
 };

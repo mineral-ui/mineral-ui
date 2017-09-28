@@ -19,8 +19,8 @@ import { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../Popover';
+import Dropdown from '../../../../../Dropdown';
+import data from '../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   display: 'flex',
@@ -33,7 +33,7 @@ export default {
   title: 'Controlled',
   description:
     'State can be managed by the application rather than the component.',
-  scope: { Button, Component, DemoContent, DemoLayout, findDOMNode, Popover },
+  scope: { Button, Component, data, DemoLayout, Dropdown, findDOMNode },
   source: `
     class App extends Component {
       constructor(props) {
@@ -45,7 +45,7 @@ export default {
 
         this.onOpen = this.onOpen.bind(this);
         this.onClose = this.onClose.bind(this);
-        this.togglePopover = this.togglePopover.bind(this);
+        this.toggleDropdown = this.toggleDropdown.bind(this);
       }
 
       onOpen(event) {
@@ -53,8 +53,8 @@ export default {
       }
 
       onClose(event) {
-        // Prevent extra call to togglePopover when clicking the controlling button.
-        // Also avoid interactions with other popovers.
+        // Prevent extra call to toggleDropdown when clicking the controlling button.
+        // Also avoid interactions with other dropdowns.
         const demoLayoutNode = findDOMNode(this.demoLayout);
         if (
           !event.nativeEvent &&
@@ -67,7 +67,8 @@ export default {
         this.setState({ isOpen: false });
       }
 
-      togglePopover(event) {
+
+      toggleDropdown(event) {
         if (this.state.isOpen) {
           this.onClose(event);
         } else {
@@ -76,18 +77,17 @@ export default {
       }
 
       render() {
-        const label = this.state.isOpen ? 'Close Popover' : 'Open Popover';
+        const label = this.state.isOpen ? 'Close Dropdown' : 'Open Dropdown';
         return (
           <DemoLayout ref={node => { this.demoLayout = node }}>
-            <Popover
-              content={<DemoContent />}
+            <Dropdown
+              data={data}
               isOpen={this.state.isOpen}
               onOpen={this.onOpen}
-              onClose={this.onClose}
-              restoreFocus={false}>
+              onClose={this.onClose}>
               <Button>{label}</Button>
-            </Popover>
-            <Button onClick={this.togglePopover}>{label}</Button>
+            </Dropdown>
+            <Button onClick={this.toggleDropdown}>{label}</Button>
           </DemoLayout>
         );
       }
