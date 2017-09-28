@@ -116,6 +116,7 @@ exports[`Popover demo examples basic 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -125,10 +126,12 @@ exports[`Popover demo examples basic 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -273,28 +276,38 @@ exports[`Popover demo examples basic 1`] = `
               hasArrow={true}
               placement="bottom"
               restoreFocus={true}
+              wrapContent={true}
             >
-              <Popover>
+              <Popover
+                autoFocus={true}
+                restoreFocus={true}
+              >
                 <Manager
+                  autoFocus={true}
                   className="glamor-5"
                   tag="div"
                 >
                   <div
+                    autoFocus={true}
                     className="glamor-5"
                   >
                     <PopoverTrigger
+                      isOpen={false}
                       onClick={[Function]}
                     >
                       <PopoverTrigger
+                        aria-expanded={false}
                         onClick={[Function]}
                         role="button"
                       >
                         <Target
+                          aria-expanded={false}
                           className="glamor-3"
                           onClick={[Function]}
                           role="button"
                         >
                           <div
+                            aria-expanded={false}
                             className="glamor-3"
                             onClick={[Function]}
                             role="button"
@@ -474,6 +487,7 @@ exports[`Popover demo examples controlled 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -483,10 +497,12 @@ exports[`Popover demo examples controlled 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -612,7 +628,7 @@ exports[`Popover demo examples controlled 1`] = `
           }
     
           onOpen(event) {
-            this.setState({ isOpen: true })
+            this.setState({ isOpen: true });
           }
     
           onClose(event) {
@@ -627,7 +643,7 @@ exports[`Popover demo examples controlled 1`] = `
               event.stopImmediatePropagation();
             }
     
-            this.setState({ isOpen: false })
+            this.setState({ isOpen: false });
           }
     
           togglePopover(event) {
@@ -699,13 +715,22 @@ exports[`Popover demo examples controlled 1`] = `
                     onOpen={[Function]}
                     placement="bottom"
                     restoreFocus={false}
+                    wrapContent={true}
                   >
-                    <Popover>
+                    <Popover
+                      autoFocus={true}
+                      isOpen={false}
+                      onClose={[Function]}
+                      onOpen={[Function]}
+                      restoreFocus={false}
+                    >
                       <Manager
+                        autoFocus={true}
                         className="glamor-5"
                         tag="div"
                       >
                         <div
+                          autoFocus={true}
                           className="glamor-5"
                         >
                           <PopoverTrigger
@@ -910,6 +935,7 @@ exports[`Popover demo examples disabled 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -919,10 +945,12 @@ exports[`Popover demo examples disabled 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -1068,32 +1096,42 @@ exports[`Popover demo examples disabled 1`] = `
               hasArrow={true}
               placement="bottom"
               restoreFocus={true}
+              wrapContent={true}
             >
-              <Popover>
+              <Popover
+                autoFocus={true}
+                restoreFocus={true}
+              >
                 <Manager
+                  autoFocus={true}
                   className="glamor-5"
                   tag="div"
                 >
                   <div
+                    autoFocus={true}
                     className="glamor-5"
                   >
                     <PopoverTrigger
                       disabled={true}
+                      isOpen={false}
                       onClick={false}
                     >
                       <PopoverTrigger
                         aria-disabled={true}
+                        aria-expanded={false}
                         onClick={false}
                         role="button"
                       >
                         <Target
                           aria-disabled={true}
+                          aria-expanded={false}
                           className="glamor-3"
                           onClick={false}
                           role="button"
                         >
                           <div
                             aria-disabled={true}
+                            aria-expanded={false}
                             className="glamor-3"
                             onClick={false}
                             role="button"
@@ -1277,6 +1315,7 @@ exports[`Popover demo examples focus 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -1286,10 +1325,12 @@ exports[`Popover demo examples focus 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -1455,28 +1496,38 @@ exports[`Popover demo examples focus 1`] = `
                   hasArrow={true}
                   placement="bottom"
                   restoreFocus={true}
+                  wrapContent={true}
                 >
-                  <Popover>
+                  <Popover
+                    autoFocus={true}
+                    restoreFocus={true}
+                  >
                     <Manager
+                      autoFocus={true}
                       className="glamor-5"
                       tag="div"
                     >
                       <div
+                        autoFocus={true}
                         className="glamor-5"
                       >
                         <PopoverTrigger
+                          isOpen={false}
                           onClick={[Function]}
                         >
                           <PopoverTrigger
+                            aria-expanded={false}
                             onClick={[Function]}
                             role="button"
                           >
                             <Target
+                              aria-expanded={false}
                               className="glamor-3"
                               onClick={[Function]}
                               role="button"
                             >
                               <div
+                                aria-expanded={false}
                                 className="glamor-3"
                                 onClick={[Function]}
                                 role="button"
@@ -1523,28 +1574,38 @@ exports[`Popover demo examples focus 1`] = `
                   hasArrow={true}
                   placement="bottom"
                   restoreFocus={true}
+                  wrapContent={true}
                 >
-                  <Popover>
+                  <Popover
+                    autoFocus={false}
+                    restoreFocus={true}
+                  >
                     <Manager
+                      autoFocus={false}
                       className="glamor-5"
                       tag="div"
                     >
                       <div
+                        autoFocus={false}
                         className="glamor-5"
                       >
                         <PopoverTrigger
+                          isOpen={false}
                           onClick={[Function]}
                         >
                           <PopoverTrigger
+                            aria-expanded={false}
                             onClick={[Function]}
                             role="button"
                           >
                             <Target
+                              aria-expanded={false}
                               className="glamor-3"
                               onClick={[Function]}
                               role="button"
                             >
                               <div
+                                aria-expanded={false}
                                 className="glamor-3"
                                 onClick={[Function]}
                                 role="button"
@@ -1591,28 +1652,38 @@ exports[`Popover demo examples focus 1`] = `
                   hasArrow={true}
                   placement="bottom"
                   restoreFocus={false}
+                  wrapContent={true}
                 >
-                  <Popover>
+                  <Popover
+                    autoFocus={true}
+                    restoreFocus={false}
+                  >
                     <Manager
+                      autoFocus={true}
                       className="glamor-5"
                       tag="div"
                     >
                       <div
+                        autoFocus={true}
                         className="glamor-5"
                       >
                         <PopoverTrigger
+                          isOpen={false}
                           onClick={[Function]}
                         >
                           <PopoverTrigger
+                            aria-expanded={false}
                             onClick={[Function]}
                             role="button"
                           >
                             <Target
+                              aria-expanded={false}
                               className="glamor-3"
                               onClick={[Function]}
                               role="button"
                             >
                               <div
+                                aria-expanded={false}
                                 className="glamor-3"
                                 onClick={[Function]}
                                 role="button"
@@ -1659,28 +1730,38 @@ exports[`Popover demo examples focus 1`] = `
                   hasArrow={true}
                   placement="bottom"
                   restoreFocus={false}
+                  wrapContent={true}
                 >
-                  <Popover>
+                  <Popover
+                    autoFocus={false}
+                    restoreFocus={false}
+                  >
                     <Manager
+                      autoFocus={false}
                       className="glamor-5"
                       tag="div"
                     >
                       <div
+                        autoFocus={false}
                         className="glamor-5"
                       >
                         <PopoverTrigger
+                          isOpen={false}
                           onClick={[Function]}
                         >
                           <PopoverTrigger
+                            aria-expanded={false}
                             onClick={[Function]}
                             role="button"
                           >
                             <Target
+                              aria-expanded={false}
                               className="glamor-3"
                               onClick={[Function]}
                               role="button"
                             >
                               <div
+                                aria-expanded={false}
                                 className="glamor-3"
                                 onClick={[Function]}
                                 role="button"
@@ -1723,6 +1804,380 @@ exports[`Popover demo examples focus 1`] = `
                 </Popover>
               </div>
             </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Popover demo examples on-open-close 1`] = `
+.glamor-5,
+[data-glamor-5] {
+  display: inline-block;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #0f75b0;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
+  box-sizing: content-box;
+  fill: #1b8bcc;
+  display: block;
+  padding: 0.125em;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 1.4285714285714286em;
+  padding: 0 0.2857142857142857em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input_danger": "#fce3e3",
+        "backgroundColor_input_success": "#e8fcf2",
+        "backgroundColor_input_warning": "#fcf1dc",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#51b3f0",
+        "borderColor_danger": "#ad0e0e",
+        "borderColor_danger_active": "#7d0606",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#db2929",
+        "borderColor_focus": "#0f75b0",
+        "borderColor_hover": "#2f9fe0",
+        "borderColor_success": "#0a8f4c",
+        "borderColor_success_active": "#046132",
+        "borderColor_success_focus": "#06783f",
+        "borderColor_success_hover": "#1fc06f",
+        "borderColor_warning": "#d19411",
+        "borderColor_warning_active": "#916504",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#e3a322",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#ad0e0e",
+        "color_text_danger_active": "#940909",
+        "color_text_danger_focus": "#ad0e0e",
+        "color_text_danger_hover": "#c71818",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#0f75b0",
+        "color_text_primary_active": "#0a6091",
+        "color_text_primary_focus": "#0f75b0",
+        "color_text_primary_hover": "#1b8bcc",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#bd3909",
+        "color_text_warning_active": "#a83207",
+        "color_text_warning_focus": "#bd3909",
+        "color_text_warning_hover": "#cf4615",
+        "color_theme_10": "#e1f3fc",
+        "color_theme_100": "#084d75",
+        "color_theme_20": "#c0e5fc",
+        "color_theme_30": "#9fd9fc",
+        "color_theme_40": "#79c7f7",
+        "color_theme_50": "#51b3f0",
+        "color_theme_60": "#2f9fe0",
+        "color_theme_70": "#1b8bcc",
+        "color_theme_80": "#0f75b0",
+        "color_theme_90": "#0a6091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)",
+        "shadow_5": "0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "spacing_double": "1em",
+        "spacing_half": "0.25em",
+        "spacing_oneAndAHalf": "0.75em",
+        "spacing_quad": "2em",
+        "spacing_quarter": "0.125em",
+        "spacing_single": "0.5em",
+        "spacing_triple": "1.5em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+        () => {
+          const onOpen = () => {
+            console.log('Opened');
+          };
+    
+          const onClose = () => {
+            console.log('Closed');
+          };
+    
+          return (
+            <Popover content={<DemoContent />} onOpen={onOpen} onClose={onClose}>
+              <Button>Menu</Button>
+            </Popover>
+          );
+        }"
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Button": [Function],
+          "DemoContent": [Function],
+          "Popover": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "DemoContent": [Function],
+            "Popover": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <wrappedPFC>
+              <Popover
+                autoFocus={true}
+                content={<DemoContent />}
+                hasArrow={true}
+                onClose={[Function]}
+                onOpen={[Function]}
+                placement="bottom"
+                restoreFocus={true}
+                wrapContent={true}
+              >
+                <Popover
+                  autoFocus={true}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  restoreFocus={true}
+                >
+                  <Manager
+                    autoFocus={true}
+                    className="glamor-5"
+                    tag="div"
+                  >
+                    <div
+                      autoFocus={true}
+                      className="glamor-5"
+                    >
+                      <PopoverTrigger
+                        isOpen={false}
+                        onClick={[Function]}
+                      >
+                        <PopoverTrigger
+                          aria-expanded={false}
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <Target
+                            aria-expanded={false}
+                            className="glamor-3"
+                            onClick={[Function]}
+                            role="button"
+                          >
+                            <div
+                              aria-expanded={false}
+                              className="glamor-3"
+                              onClick={[Function]}
+                              role="button"
+                            >
+                              <Button>
+                                <glamorous(button)
+                                  size="medium"
+                                  type="button"
+                                  variant="regular"
+                                >
+                                  <button
+                                    className="glamor-2"
+                                    type="button"
+                                  >
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-1"
+                                      >
+                                        <glamorous(span)
+                                          size="medium"
+                                        >
+                                          <span
+                                            className="glamor-0"
+                                          >
+                                            Menu
+                                          </span>
+                                        </glamorous(span)>
+                                      </span>
+                                    </glamorous(span)>
+                                  </button>
+                                </glamorous(button)>
+                              </Button>
+                            </div>
+                          </Target>
+                        </PopoverTrigger>
+                      </PopoverTrigger>
+                    </div>
+                  </Manager>
+                </Popover>
+              </Popover>
+            </wrappedPFC>
           </div>
         </LivePreview>
       </div>
@@ -1892,6 +2347,7 @@ exports[`Popover demo examples overflow 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -1901,10 +2357,12 @@ exports[`Popover demo examples overflow 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -2064,13 +2522,20 @@ exports[`Popover demo examples overflow 1`] = `
                     isOpen={true}
                     placement="right"
                     restoreFocus={false}
+                    wrapContent={true}
                   >
-                    <Popover>
+                    <Popover
+                      autoFocus={true}
+                      isOpen={true}
+                      restoreFocus={false}
+                    >
                       <Manager
+                        autoFocus={true}
                         className="glamor-11"
                         tag="div"
                       >
                         <div
+                          autoFocus={true}
                           className="glamor-11"
                         >
                           <PopoverTrigger
@@ -2163,6 +2628,7 @@ exports[`Popover demo examples overflow 1`] = `
                                         Object {
                                           "backgroundColor_danger": "#db2929",
                                           "backgroundColor_danger_active": "#c71818",
+                                          "backgroundColor_danger_activeMuted": "#f79999",
                                           "backgroundColor_danger_focus": "#db2929",
                                           "backgroundColor_danger_hover": "#eb4d4d",
                                           "backgroundColor_disabled": "#ebeff5",
@@ -2172,10 +2638,12 @@ exports[`Popover demo examples overflow 1`] = `
                                           "backgroundColor_link_focus": "#dde3ed",
                                           "backgroundColor_success": "#0a8f4c",
                                           "backgroundColor_success_active": "#06783f",
+                                          "backgroundColor_success_activeMuted": "#95f5c3",
                                           "backgroundColor_success_focus": "#0a8f4c",
                                           "backgroundColor_success_hover": "#10a35a",
                                           "backgroundColor_warning": "#e05b2b",
                                           "backgroundColor_warning_active": "#cf4615",
+                                          "backgroundColor_warning_activeMuted": "#fab69d",
                                           "backgroundColor_warning_focus": "#e05b2b",
                                           "backgroundColor_warning_hover": "#ed774c",
                                           "borderColor": "#c8d1e0",
@@ -2522,6 +2990,7 @@ exports[`Popover demo examples placement 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -2531,10 +3000,12 @@ exports[`Popover demo examples placement 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -2694,13 +3165,20 @@ exports[`Popover demo examples placement 1`] = `
                     isOpen={true}
                     placement="bottom"
                     restoreFocus={false}
+                    wrapContent={true}
                   >
-                    <Popover>
+                    <Popover
+                      autoFocus={true}
+                      isOpen={true}
+                      restoreFocus={false}
+                    >
                       <Manager
+                        autoFocus={true}
                         className="glamor-11"
                         tag="div"
                       >
                         <div
+                          autoFocus={true}
                           className="glamor-11"
                         >
                           <PopoverTrigger
@@ -2794,6 +3272,7 @@ exports[`Popover demo examples placement 1`] = `
                                         Object {
                                           "backgroundColor_danger": "#db2929",
                                           "backgroundColor_danger_active": "#c71818",
+                                          "backgroundColor_danger_activeMuted": "#f79999",
                                           "backgroundColor_danger_focus": "#db2929",
                                           "backgroundColor_danger_hover": "#eb4d4d",
                                           "backgroundColor_disabled": "#ebeff5",
@@ -2803,10 +3282,12 @@ exports[`Popover demo examples placement 1`] = `
                                           "backgroundColor_link_focus": "#dde3ed",
                                           "backgroundColor_success": "#0a8f4c",
                                           "backgroundColor_success_active": "#06783f",
+                                          "backgroundColor_success_activeMuted": "#95f5c3",
                                           "backgroundColor_success_focus": "#0a8f4c",
                                           "backgroundColor_success_hover": "#10a35a",
                                           "backgroundColor_warning": "#e05b2b",
                                           "backgroundColor_warning_active": "#cf4615",
+                                          "backgroundColor_warning_activeMuted": "#fab69d",
                                           "backgroundColor_warning_focus": "#e05b2b",
                                           "backgroundColor_warning_hover": "#ed774c",
                                           "borderColor": "#c8d1e0",
@@ -3170,7 +3651,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
 
 .glamor-13,
 [data-glamor-13] {
-  padding: 500px 200vw;
+  padding: 560px 200vw;
 }
 
 .glamor-18,
@@ -3269,6 +3750,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -3278,10 +3760,12 @@ exports[`Popover demo examples scrolling-container 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -3431,16 +3915,21 @@ exports[`Popover demo examples scrolling-container 1`] = `
           >
             <ScrollBox
               autoCenter={true}
+              height={360}
             >
               <glamorous(div)>
                 <div
                   className="glamor-20"
                 >
-                  <glamorous(div)>
+                  <glamorous(div)
+                    height={360}
+                  >
                     <div
                       className="glamor-14"
                     >
-                      <glamorous(div)>
+                      <glamorous(div)
+                        scrollAreaHeight={360}
+                      >
                         <div
                           className="glamor-13"
                         >
@@ -3451,13 +3940,20 @@ exports[`Popover demo examples scrolling-container 1`] = `
                             isOpen={true}
                             placement="left"
                             restoreFocus={false}
+                            wrapContent={true}
                           >
-                            <Popover>
+                            <Popover
+                              autoFocus={true}
+                              isOpen={true}
+                              restoreFocus={false}
+                            >
                               <Manager
+                                autoFocus={true}
                                 className="glamor-11"
                                 tag="div"
                               >
                                 <div
+                                  autoFocus={true}
                                   className="glamor-11"
                                 >
                                   <PopoverTrigger
@@ -3546,6 +4042,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                                 Object {
                                                   "backgroundColor_danger": "#db2929",
                                                   "backgroundColor_danger_active": "#c71818",
+                                                  "backgroundColor_danger_activeMuted": "#f79999",
                                                   "backgroundColor_danger_focus": "#db2929",
                                                   "backgroundColor_danger_hover": "#eb4d4d",
                                                   "backgroundColor_disabled": "#ebeff5",
@@ -3555,10 +4052,12 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                                   "backgroundColor_link_focus": "#dde3ed",
                                                   "backgroundColor_success": "#0a8f4c",
                                                   "backgroundColor_success_active": "#06783f",
+                                                  "backgroundColor_success_activeMuted": "#95f5c3",
                                                   "backgroundColor_success_focus": "#0a8f4c",
                                                   "backgroundColor_success_hover": "#10a35a",
                                                   "backgroundColor_warning": "#e05b2b",
                                                   "backgroundColor_warning_active": "#cf4615",
+                                                  "backgroundColor_warning_activeMuted": "#fab69d",
                                                   "backgroundColor_warning_focus": "#e05b2b",
                                                   "backgroundColor_warning_hover": "#ed774c",
                                                   "borderColor": "#c8d1e0",
@@ -3975,6 +4474,7 @@ exports[`Popover demo examples title 1`] = `
       Object {
         "backgroundColor_danger": "#db2929",
         "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
         "backgroundColor_danger_focus": "#db2929",
         "backgroundColor_danger_hover": "#eb4d4d",
         "backgroundColor_disabled": "#ebeff5",
@@ -3984,10 +4484,12 @@ exports[`Popover demo examples title 1`] = `
         "backgroundColor_link_focus": "#dde3ed",
         "backgroundColor_success": "#0a8f4c",
         "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
         "backgroundColor_success_focus": "#0a8f4c",
         "backgroundColor_success_hover": "#10a35a",
         "backgroundColor_warning": "#e05b2b",
         "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
         "backgroundColor_warning_focus": "#e05b2b",
         "backgroundColor_warning_hover": "#ed774c",
         "borderColor": "#c8d1e0",
@@ -4153,13 +4655,20 @@ exports[`Popover demo examples title 1`] = `
                     restoreFocus={false}
                     subtitle="Subtitle"
                     title="Title"
+                    wrapContent={true}
                   >
-                    <Popover>
+                    <Popover
+                      autoFocus={true}
+                      isOpen={true}
+                      restoreFocus={false}
+                    >
                       <Manager
+                        autoFocus={true}
                         className="glamor-14"
                         tag="div"
                       >
                         <div
+                          autoFocus={true}
                           className="glamor-14"
                         >
                           <PopoverTrigger
@@ -4257,6 +4766,7 @@ exports[`Popover demo examples title 1`] = `
                                         Object {
                                           "backgroundColor_danger": "#db2929",
                                           "backgroundColor_danger_active": "#c71818",
+                                          "backgroundColor_danger_activeMuted": "#f79999",
                                           "backgroundColor_danger_focus": "#db2929",
                                           "backgroundColor_danger_hover": "#eb4d4d",
                                           "backgroundColor_disabled": "#ebeff5",
@@ -4266,10 +4776,12 @@ exports[`Popover demo examples title 1`] = `
                                           "backgroundColor_link_focus": "#dde3ed",
                                           "backgroundColor_success": "#0a8f4c",
                                           "backgroundColor_success_active": "#06783f",
+                                          "backgroundColor_success_activeMuted": "#95f5c3",
                                           "backgroundColor_success_focus": "#0a8f4c",
                                           "backgroundColor_success_hover": "#10a35a",
                                           "backgroundColor_warning": "#e05b2b",
                                           "backgroundColor_warning_active": "#cf4615",
+                                          "backgroundColor_warning_activeMuted": "#fab69d",
                                           "backgroundColor_warning_focus": "#e05b2b",
                                           "backgroundColor_warning_hover": "#ed774c",
                                           "borderColor": "#c8d1e0",
@@ -4431,6 +4943,7 @@ exports[`Popover demo examples title 1`] = `
                                         Object {
                                           "backgroundColor_danger": "#db2929",
                                           "backgroundColor_danger_active": "#c71818",
+                                          "backgroundColor_danger_activeMuted": "#f79999",
                                           "backgroundColor_danger_focus": "#db2929",
                                           "backgroundColor_danger_hover": "#eb4d4d",
                                           "backgroundColor_disabled": "#ebeff5",
@@ -4440,10 +4953,12 @@ exports[`Popover demo examples title 1`] = `
                                           "backgroundColor_link_focus": "#dde3ed",
                                           "backgroundColor_success": "#0a8f4c",
                                           "backgroundColor_success_active": "#06783f",
+                                          "backgroundColor_success_activeMuted": "#95f5c3",
                                           "backgroundColor_success_focus": "#0a8f4c",
                                           "backgroundColor_success_hover": "#10a35a",
                                           "backgroundColor_warning": "#e05b2b",
                                           "backgroundColor_warning_active": "#cf4615",
+                                          "backgroundColor_warning_activeMuted": "#fab69d",
                                           "backgroundColor_warning_focus": "#e05b2b",
                                           "backgroundColor_warning_hover": "#ed774c",
                                           "borderColor": "#c8d1e0",
