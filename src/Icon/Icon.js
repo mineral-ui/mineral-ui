@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { createStyledComponent, pxToEm, generateId } from '../utils';
 
 type Props = {
@@ -59,7 +59,7 @@ const Root = createStyledComponent('svg', iconStyles, { rootEl: 'svg' });
  * The package provides a large number of prepackaged icon components as well
  * as a generic icon component to which you can provide your own SVG.
  */
-export default class Icon extends PureComponent {
+export default class Icon extends Component {
   static displayName = 'Icon';
 
   static defaultProps: Object = {

@@ -15,19 +15,25 @@
  */
 
 /* @flow */
-import { componentTheme } from '../../../../Popover/PopoverContent';
-import examples from './examples';
-
-const doc = require('!!react-docgen-loader!../../../../Popover/Popover');
-
-// Removing @Private props from the doc
-doc && doc.props && delete doc.props.trigger;
-doc && doc.props && delete doc.props.triggerRef;
+import Button from '../../../../../Button';
+import Dropdown from '../../../../../Dropdown';
+import ScrollParent from '../../Popover/components/ScrollBox';
+import data from '../../Menu/components/menuData';
 
 export default {
-  componentTheme,
-  doc,
-  examples,
-  slug: 'popover',
-  title: 'Popover'
+  id: 'scrolling-container',
+  title: 'Scrolling container',
+  description: 'Behavior inside of a scrolling container.',
+  scope: { Button, data, Dropdown, ScrollParent },
+  source: `
+    <ScrollParent height="430">
+      <Dropdown
+        data={data}
+        isOpen
+        placement="bottom-start"
+        restoreFocus={false}>
+        <Button>Menu</Button>
+      </Dropdown>
+    </ScrollParent>
+  `
 };

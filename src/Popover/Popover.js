@@ -15,37 +15,36 @@
  */
 
 /* @flow */
-import React, { PureComponent } from 'react';
+import React, { cloneElement, Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { canUseDOM } from 'exenv';
-import update from 'immutability-helper';
-import { Manager } from '@mineral-ui/react-popper';
+import { Manager } from 'react-popper';
 import { createStyledComponent } from '../utils';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';
 
 type Props = {
-  /** Focuses the popover content when opened */
+  /** Focuses the Popover content when opened */
   autoFocus?: boolean,
-  /** Trigger for the popover */
+  /** Trigger for the Popover */
   children: MnrlReactNode,
-  /** Content of the popover */
-  content: MnrlReactNode,
-  /** Disables the popover */
+  /** Content of the Popover */
+  content: React$Element<*>,
+  /** Disables the Popover */
   disabled: boolean,
-  /** Include an arrow on the popover content pointing to the trigger */
+  /** Include an arrow on the Popover content pointing to the trigger */
   hasArrow?: boolean,
-  /** For use with controlled components, in which the app manages popover state */
+  /** For use with controlled components, in which the app manages Popover state */
   isOpen?: boolean,
-  /** Plugins used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options.*/
+  /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options.*/
   modifiers?: Object,
-  /** Called when popover is closed */
+  /** Called when Popover is closed */
   onClose?: (event: Object) => void,
-  /** Called when popover is opened */
+  /** Called when Popover is opened */
   onOpen?: (event: Object) => void,
-  /** Open the popover immediately upon initialization */
+  /** Open the Popover immediately upon initialization */
   defaultIsOpen?: boolean,
-  /** Placement of the popover */
+  /** Placement of the Popover */
   placement?:
     | 'auto'
     | 'auto-end'
@@ -62,12 +61,18 @@ type Props = {
     | 'top'
     | 'top-end'
     | 'top-start',
-  /** Focuses trigger when popover is closed */
+  /** Focuses trigger when Popover is closed */
   restoreFocus?: boolean,
   /** Subtitle displayed under the title */
   subtitle?: MnrlReactNode,
-  /** Title of the popover */
-  title?: MnrlReactNode
+  /** Title of the Popover */
+  title?: MnrlReactNode,
+  /** @Private Custom trigger component */
+  trigger?: React$Element<*>,
+  /** @Private Ref for the Popover trigger */
+  triggerRef?: Function,
+  /** Display the content with default styles */
+  wrapContent?: boolean
 };
 
 type State = {
@@ -80,25 +85,27 @@ const Root = createStyledComponent(
     display: 'inline-block'
   },
   {
-    displayName: 'Popover'
+    displayName: 'Popover',
+    rootEl: 'div'
   }
 );
 
 /**
  * Popover component
  */
-export default class Popover extends PureComponent {
+export default class Popover extends Component {
   static defaultProps = {
     autoFocus: true,
     hasArrow: true,
     placement: 'bottom',
-    restoreFocus: true
+    restoreFocus: true,
+    wrapContent: true
   };
 
   props: Props;
 
   state: State = {
-    isOpen: this.props.defaultIsOpen
+    isOpen: Boolean(this.props.defaultIsOpen)
   };
 
   popoverContent: React$Component<*, *, *>;
@@ -119,20 +126,11 @@ export default class Popover extends PureComponent {
       placement,
       subtitle,
       title,
+      trigger,
+      triggerRef,
+      wrapContent,
       ...restProps
     } = this.props;
-
-    // Prevent props from passing to underlying DOM element
-    const updatedRestProps = update(restProps, {
-      $unset: [
-        'autoFocus',
-        'defaultIsOpen',
-        'isOpen',
-        'onClose',
-        'onOpen',
-        'restoreFocus'
-      ]
-    });
 
     const { isOpen } = this.isControlled() ? this.props : this.state;
     if (isOpen) {
@@ -142,36 +140,53 @@ export default class Popover extends PureComponent {
     }
 
     const rootProps = {
-      ...updatedRestProps
+      ...restProps
     };
     const popoverTriggerProps = {
+      children,
       disabled,
       isOpen,
       onClick: !disabled && this.toggleOpenState,
       ref: node => {
         this.popoverTrigger = node;
+        triggerRef && triggerRef(node);
       }
     };
-    const popoverContentProps = {
-      hasArrow,
-      modifiers,
-      placement,
-      ref: node => {
-        this.popoverContent = node;
-      },
-      subtitle,
-      title
-    };
+
+    const popoverTrigger = trigger
+      ? cloneElement(trigger, popoverTriggerProps)
+      : <PopoverTrigger {...popoverTriggerProps} />;
+
+    let popoverContent;
+    if (wrapContent) {
+      const popoverContentProps = {
+        hasArrow,
+        modifiers,
+        placement,
+        ref: node => {
+          this.popoverContent = node;
+        },
+        subtitle,
+        title
+      };
+
+      popoverContent = (
+        <PopoverContent {...popoverContentProps}>
+          {content}
+        </PopoverContent>
+      );
+    } else {
+      popoverContent = cloneElement(content, {
+        ref: node => {
+          this.popoverContent = node;
+        }
+      });
+    }
 
     return (
       <Root {...rootProps}>
-        <PopoverTrigger {...popoverTriggerProps}>
-          {children}
-        </PopoverTrigger>
-        {isOpen &&
-          <PopoverContent {...popoverContentProps}>
-            {content}
-          </PopoverContent>}
+        {popoverTrigger}
+        {isOpen && popoverContent}
       </Root>
     );
   }

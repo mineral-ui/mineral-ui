@@ -15,18 +15,29 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Dropdown } from './Dropdown';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import Button from '../../../../../Button';
+import Dropdown from '../../../../../Dropdown';
+import data from '../../Menu/components/menuData';
+
+export default {
+  id: 'on-open-close',
+  hideFromProd: true,
+  title: 'onOpen and onClose',
+  scope: { Button, data, Dropdown },
+  source: `
+    () => {
+      const onOpen = () => {
+        console.log('Opened');
+      };
+
+      const onClose = () => {
+        console.log('Closed');
+      };
+
+      return (
+        <Dropdown data={data} onOpen={onOpen} onClose={onClose}>
+          <Button>Menu</Button>
+        </Dropdown>
+      );
+    }`
+};
