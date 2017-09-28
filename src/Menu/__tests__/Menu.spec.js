@@ -15,17 +15,27 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import React from 'react';
+import { shallow } from 'enzyme';
+import Menu from '../Menu';
+import examples from '../../website/app/demos/Menu/examples';
+import testDemoExamples from '../../../utils/testDemoExamples';
+
+function renderMenu(props, children) {
+  return shallow(
+    <Menu {...props}>
+      {children}
+    </Menu>
+  );
+}
+
+describe('Menu', () => {
+  let menu;
+  it('renders', () => {
+    menu = renderMenu({}, 'Children');
+
+    expect(menu.exists()).toEqual(true);
+  });
+
+  testDemoExamples(examples);
+});

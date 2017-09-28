@@ -21,6 +21,7 @@ import button from './Button';
 import card from './Card';
 import icon from './Icon';
 import link from './Link';
+import menu from './Menu';
 import popover from './Popover';
 import themeProvider from './ThemeProvider';
 import utils from './utils';
@@ -30,6 +31,7 @@ const demos = flatten([
   card,
   icon,
   link,
+  menu,
   popover,
   themeProvider,
   utils
