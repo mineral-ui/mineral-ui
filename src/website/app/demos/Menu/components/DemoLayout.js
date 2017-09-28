@@ -15,17 +15,16 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import { createStyledComponent, pxToEm } from '../../../../../utils';
+
+export default createStyledComponent('div', ({ theme, width }) => ({
+  overflow: 'hidden',
+
+  '& > div': {
+    backgroundColor: theme.color_white,
+    float: 'left',
+    margin: '0 0.5rem 0.5rem 0',
+    // Default width is width of DropdownContent
+    width: width || pxToEm(224)
+  }
+}));

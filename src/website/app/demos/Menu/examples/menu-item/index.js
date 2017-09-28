@@ -15,17 +15,24 @@
  */
 
 /* @flow */
-export { default as Button } from './Button';
-export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
-export { default as Icon } from './Icon';
-export { default as Link } from './Link';
-export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
-export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
-export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
-  styleVariables
-} from './utils';
+import customRender from './customRender';
+import disabled from './disabled';
+import icons from './icons';
+import kitchenSink from './kitchenSink';
+import menuItem from './menuItem';
+import rtl from './rtl';
+import secondaryText from './secondaryText';
+import states from './states';
+import variants from './variants';
+
+export default [
+  menuItem,
+  secondaryText,
+  variants,
+  icons,
+  disabled,
+  customRender,
+  rtl,
+  kitchenSink,
+  states
+];

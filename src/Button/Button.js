@@ -94,174 +94,177 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const buttonStyles = props => {
-  let theme = componentTheme(props.theme);
-  const {
-    circular,
-    disabled,
-    fullWidth,
-    minimal,
-    primary,
-    size,
-    variant
-  } = props;
+const styles = {
+  button: props => {
+    let theme = componentTheme(props.theme);
+    const {
+      circular,
+      disabled,
+      fullWidth,
+      minimal,
+      primary,
+      size,
+      variant
+    } = props;
 
-  if (variant !== 'regular') {
-    // prettier-ignore
-    theme = {
-      ...theme,
-      Button_backgroundColor_primary: theme[`backgroundColor_${variant}`],
-      Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}_active`],
-      Button_backgroundColor_primary_focus: theme[`backgroundColor_${variant}_focus`],
-      Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}_hover`],
-      Button_boxShadow_focus: `0 0 0 1px ${theme[`borderColor_${variant}_focus`]}`,
-      Button_color_text: theme[`color_text_${variant}`],
-      Button_color_text_minimal: theme[`color_text_${variant}`],
-      Button_color_text_primary: theme[`color_text_on${variant}`]
-    };
-  }
+    if (variant !== 'regular') {
+      // prettier-ignore
+      theme = {
+        ...theme,
+        Button_backgroundColor_primary: theme[`backgroundColor_${variant}`],
+        Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}_active`],
+        Button_backgroundColor_primary_focus: theme[`backgroundColor_${variant}_focus`],
+        Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}_hover`],
+        Button_boxShadow_focus: `0 0 0 1px ${theme[`borderColor_${variant}_focus`]}`,
+        Button_color_text: theme[`color_text_${variant}`],
+        Button_color_text_minimal: theme[`color_text_${variant}`],
+        Button_color_text_primary: theme[`color_text_on${variant}`]
+      };
+    }
 
-  return {
-    backgroundColor: (() => {
-      if (disabled && !minimal) {
-        return theme.color_gray_30;
-      } else if (primary) {
-        return theme.Button_backgroundColor_primary;
-      } else if (minimal) {
-        return 'transparent';
-      } else {
-        return theme.Button_backgroundColor;
-      }
-    })(),
-    borderColor:
-      disabled || primary || minimal ? 'transparent' : theme.Button_borderColor,
-    borderRadius: circular
-      ? `${parseFloat(theme[`Button_size_${size}`]) / 2}em`
-      : theme.Button_borderRadius,
-    borderStyle: 'solid',
-    borderWidth: `${theme.Button_borderWidth}px`,
-    color: (() => {
-      if (disabled) {
-        return theme.color_text_disabled;
-      } else if (primary) {
-        return theme.Button_color_text_primary;
-      } else if (minimal) {
-        return theme.Button_color_text_minimal;
-      } else {
-        return theme.Button_color_text;
-      }
-    })(),
-    cursor: disabled ? 'default' : 'pointer',
-    fontWeight: theme.Button_fontWeight,
-    height: theme[`Button_size_${size}`],
-    // Because the small & medium-sized Buttons are shorter than
-    // theme.fontSize_base * theme.lineHeight, the text content does not
-    // vertically align correctly without setting the lineHeight equal to the
-    // smallest fontSize (or smaller).
-    lineHeight: theme.ButtonContent_fontSize_small,
-    // if the user puts in a small icon in a large button
-    // we want to force the button to be round/square
-    // (really just pertinent on icon-only buttons)
-    minWidth: theme[`Button_size_${size}`],
-    // Because we use boxSizing: 'border-box', we need to substract the borderWidth
-    // from the padding to have the fixed height of Root and Content be correct.
-    padding: `${parseFloat(theme[`Button_padding_${size}`]) -
-      parseFloat(pxToEm(theme.Button_borderWidth))}em`,
-    verticalAlign: 'middle',
-    width: fullWidth && '100%',
-    '&:focus': {
+    return {
       backgroundColor: (() => {
-        if (primary) {
-          return theme.Button_backgroundColor_primary_focus;
+        if (disabled && !minimal) {
+          return theme.color_gray_30;
+        } else if (primary) {
+          return theme.Button_backgroundColor_primary;
         } else if (minimal) {
-          return theme.Button_backgroundColor_minimal_focus;
+          return 'transparent';
         } else {
-          return theme.Button_backgroundColor_focus;
+          return theme.Button_backgroundColor;
         }
       })(),
-      borderColor: theme.Button_borderColor_focus,
-      boxShadow: theme.Button_boxShadow_focus
-    },
-    '&:hover': {
-      backgroundColor: (() => {
-        if (!disabled) {
-          if (primary) {
-            return theme.Button_backgroundColor_primary_hover;
-          } else if (minimal) {
-            return theme.Button_backgroundColor_minimal_hover;
-          } else {
-            return theme.Button_backgroundColor_hover;
-          }
+      borderColor:
+        disabled || primary || minimal
+          ? 'transparent'
+          : theme.Button_borderColor,
+      borderRadius: circular
+        ? `${parseFloat(theme[`Button_size_${size}`]) / 2}em`
+        : theme.Button_borderRadius,
+      borderStyle: 'solid',
+      borderWidth: `${theme.Button_borderWidth}px`,
+      color: (() => {
+        if (disabled) {
+          return theme.color_text_disabled;
+        } else if (primary) {
+          return theme.Button_color_text_primary;
+        } else if (minimal) {
+          return theme.Button_color_text_minimal;
+        } else {
+          return theme.Button_color_text;
         }
-      })()
-    },
-    // `:active` must be last, to follow LVHFA order:
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-    '&:active': {
-      backgroundColor: (() => {
-        if (!disabled) {
+      })(),
+      cursor: disabled ? 'default' : 'pointer',
+      fontWeight: theme.Button_fontWeight,
+      height: theme[`Button_size_${size}`],
+      // Because the small & medium-sized Buttons are shorter than
+      // theme.fontSize_base * theme.lineHeight, the text content does not
+      // vertically align correctly without setting the lineHeight equal to the
+      // smallest fontSize (or smaller).
+      lineHeight: theme.ButtonContent_fontSize_small,
+      // if the user puts in a small icon in a large button
+      // we want to force the button to be round/square
+      // (really just pertinent on icon-only buttons)
+      minWidth: theme[`Button_size_${size}`],
+      // Because we use boxSizing: 'border-box', we need to substract the borderWidth
+      // from the padding to have the fixed height of Root and Content be correct.
+      padding: `${parseFloat(theme[`Button_padding_${size}`]) -
+        parseFloat(pxToEm(theme.Button_borderWidth))}em`,
+      verticalAlign: 'middle',
+      width: fullWidth && '100%',
+      '&:focus': {
+        backgroundColor: (() => {
           if (primary) {
-            return theme.Button_backgroundColor_primary_active;
+            return theme.Button_backgroundColor_primary_focus;
           } else if (minimal) {
-            return theme.Button_backgroundColor_minimal_active;
+            return theme.Button_backgroundColor_minimal_focus;
           } else {
-            return theme.Button_backgroundColor_active;
+            return theme.Button_backgroundColor_focus;
           }
-        }
-      })()
-    },
-    '&::-moz-focus-inner': { border: 0 },
+        })(),
+        borderColor: theme.Button_borderColor_focus,
+        boxShadow: theme.Button_boxShadow_focus
+      },
+      '&:hover': {
+        backgroundColor: (() => {
+          if (!disabled) {
+            if (primary) {
+              return theme.Button_backgroundColor_primary_hover;
+            } else if (minimal) {
+              return theme.Button_backgroundColor_minimal_hover;
+            } else {
+              return theme.Button_backgroundColor_hover;
+            }
+          }
+        })()
+      },
+      // `:active` must be last, to follow LVHFA order:
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+      '&:active': {
+        backgroundColor: (() => {
+          if (!disabled) {
+            if (primary) {
+              return theme.Button_backgroundColor_primary_active;
+            } else if (minimal) {
+              return theme.Button_backgroundColor_minimal_active;
+            } else {
+              return theme.Button_backgroundColor_active;
+            }
+          }
+        })()
+      },
+      '&::-moz-focus-inner': { border: 0 },
 
-    '& [role="icon"]': {
-      boxSizing: 'content-box',
-      fill:
-        disabled || primary || minimal || variant !== 'regular'
-          ? 'currentColor'
-          : theme.Button_backgroundColor_primary,
+      '& [role="icon"]': {
+        boxSizing: 'content-box',
+        fill:
+          disabled || primary || minimal || variant !== 'regular'
+            ? 'currentColor'
+            : theme.Button_backgroundColor_primary,
+        display: 'block',
+        padding: theme[`ButtonIcon_padding_${size}`]
+      }
+    };
+  },
+  content: props => {
+    const theme = componentTheme(props.theme);
+    const { size } = props;
+
+    const fontSize =
+      size === 'small'
+        ? theme.ButtonContent_fontSize_small
+        : theme.ButtonContent_fontSize;
+
+    return {
+      ...ellipsis('100%'),
+
       display: 'block',
-      padding: theme[`ButtonIcon_padding_${size}`]
-    }
-  };
+      fontSize,
+      lineHeight: getNormalizedValue(
+        theme[`ButtonContent_lineHeight_${size}`],
+        fontSize
+      ),
+      padding: `0 ${getNormalizedValue(
+        theme[`ButtonContent_padding_${size}`],
+        fontSize
+      )}`
+    };
+  },
+  inner: {
+    alignItems: 'center',
+    display: 'inline-flex',
+    justifyContent: 'center',
+    maxHeight: '100%',
+    width: '100%'
+  }
 };
 
-const contentStyles = props => {
-  const theme = componentTheme(props.theme);
-  const { size } = props;
-
-  const fontSize =
-    size === 'small'
-      ? theme.ButtonContent_fontSize_small
-      : theme.ButtonContent_fontSize;
-
-  return {
-    ...ellipsis('100%'),
-
-    display: 'block',
-    fontSize,
-    lineHeight: getNormalizedValue(
-      theme[`ButtonContent_lineHeight_${size}`],
-      fontSize
-    ),
-    padding: `0 ${getNormalizedValue(
-      theme[`ButtonContent_padding_${size}`],
-      fontSize
-    )}`
-  };
-};
-
-const innerStyles = {
-  alignItems: 'center',
-  display: 'inline-flex',
-  justifyContent: 'center',
-  maxHeight: '100%',
-  width: '100%'
-};
-
-const Root = createStyledComponent('button', buttonStyles, {
-  includeStyleReset: true
+const Root = createStyledComponent('button', styles.button, {
+  includeStyleReset: true,
+  rootEl: 'button'
 });
-const Content = createStyledComponent('span', contentStyles);
-const Inner = createStyledComponent('span', innerStyles);
+const Content = createStyledComponent('span', styles.content);
+const Inner = createStyledComponent('span', styles.inner);
 
 /**
  * The Button component represents a clickable button.
