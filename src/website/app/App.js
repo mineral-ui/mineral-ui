@@ -15,7 +15,9 @@
  */
 
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
+import { withRouter } from 'react-router';
+import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../../utils';
 import ComponentDoc from './pages/ComponentDoc';
 import createKeyMap from './utils/createKeyMap';
@@ -24,8 +26,10 @@ import _Nav from './Nav';
 import Router from './Router';
 
 type Props = {|
+  children?: any,
   className?: string,
-  demos: Object | Array<Object>
+  demos: Object | Array<Object>,
+  location?: any
 |};
 
 const styles = {
@@ -64,22 +68,38 @@ const Root = createStyledComponent('div', styles.app, {
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
-export default function App({ className, demos }: Props) {
-  if (!Array.isArray(demos) && demos.slug) {
-    return <ComponentDoc {...demos} />;
+class App extends Component {
+  props: Props;
+
+  componentDidUpdate(prevProps) {
+    if (canUseDOM && this.props.location !== prevProps.location) {
+      global.window.scrollTo(0, 0);
+    }
   }
 
-  const siteDemos = Array.isArray(demos) ? createKeyMap(demos, 'slug') : demos;
+  render() {
+    const { className, demos } = this.props;
 
-  return (
-    <div>
-      <Root className={className}>
-        <Nav demos={siteDemos} />
-        <Main>
-          <Router demos={siteDemos} />
-          <Footer />
-        </Main>
-      </Root>
-    </div>
-  );
+    if (!Array.isArray(demos) && demos.slug) {
+      return <ComponentDoc {...demos} />;
+    }
+
+    const siteDemos = Array.isArray(demos)
+      ? createKeyMap(demos, 'slug')
+      : demos;
+
+    return (
+      <div>
+        <Root className={className}>
+          <Nav demos={siteDemos} />
+          <Main>
+            <Router demos={siteDemos} />
+            <Footer />
+          </Main>
+        </Root>
+      </div>
+    );
+  }
 }
+
+export default withRouter(App);
