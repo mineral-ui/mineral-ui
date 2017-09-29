@@ -17,6 +17,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../../utils';
 import ComponentDoc from './pages/ComponentDoc';
@@ -90,13 +91,28 @@ class App extends Component {
 
     return (
       <div>
-        <Root className={className}>
-          <Nav demos={siteDemos} />
-          <Main>
-            <Router demos={siteDemos} />
-            <Footer />
-          </Main>
-        </Root>
+        <Switch>
+          <Route
+            exact
+            strict
+            path="/:url*"
+            render={props => <Redirect to={`${props.location.pathname}/`} />}
+          />
+          <Route
+            render={route => {
+              const isChromeless = route.location.search === '?chromeless';
+              return isChromeless
+                ? <Router demos={siteDemos} />
+                : <Root className={className}>
+                    <Nav demos={siteDemos} />
+                    <Main>
+                      <Router demos={siteDemos} />
+                      <Footer />
+                    </Main>
+                  </Root>;
+            }}
+          />
+        </Switch>
       </div>
     );
   }
