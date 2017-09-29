@@ -21,10 +21,6 @@ import examples from './examples';
 
 const doc = require('!!react-docgen-loader!../../../../Popover/Popover');
 
-// Removing @Private props from the doc
-doc && doc.props && delete doc.props.trigger;
-doc && doc.props && delete doc.props.triggerRef;
-
 export default {
   bestPractices,
   componentTheme,

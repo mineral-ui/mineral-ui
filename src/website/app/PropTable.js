@@ -98,6 +98,11 @@ function getPropTableRows(propDoc) {
   return Object.keys(propDoc).sort().map(name => {
     const propDescription = propDoc[name];
 
+    // Filter out private props
+    if (propDescription.description.startsWith('@Private')) {
+      return null;
+    }
+
     return (
       <PropTableRow
         key={name}

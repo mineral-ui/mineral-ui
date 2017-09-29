@@ -28,9 +28,6 @@ const menuDividerDoc = require('!!react-docgen-loader!../../../../Menu/MenuDivid
 const menuGroupDoc = require('!!react-docgen-loader!../../../../Menu/MenuGroup');
 const menuItemDoc = require('!!react-docgen-loader!../../../../Menu/MenuItem');
 
-// Removing @Private props from the doc
-menuDoc && menuDoc.props && delete menuDoc.props.getItemProps;
-
 export default [
   {
     doc: menuDoc,
