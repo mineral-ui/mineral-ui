@@ -17,7 +17,11 @@
 /* @flow */
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import IconArrowBack from '../../Icon/IconArrowBack';
 import ComponentDoc from './pages/ComponentDoc';
+import ComponentDocExample from './ComponentDocExample';
+import Link from './Link';
+import LiveProvider from './LiveProvider';
 import pages from './pages';
 
 type Props = {|
@@ -53,6 +57,31 @@ export default function Router({ demos }: Props) {
   return (
     <Switch>
       {routes}
+      <Route
+        path="/components/:componentId/:exampleId"
+        render={route => {
+          const { componentId, exampleId } = route.match.params;
+          const selectedDemo = demos[componentId];
+          const selectedExample = selectedDemo.examples.filter(
+            example => example.id === exampleId
+          )[0];
+          const chromeless = route.location.search === '?chromeless';
+          return chromeless
+            ? <LiveProvider
+                hideSource={true}
+                chromeless={true}
+                scope={selectedExample.scope}
+                source={selectedExample.source}
+              />
+            : <div>
+                <Link to="../">
+                  <IconArrowBack color="currentColor" size="small" />{' '}
+                  {selectedDemo.title}
+                </Link>
+                <ComponentDocExample {...selectedExample} />
+              </div>;
+        }}
+      />
       <Route
         path="/components/:componentId"
         render={route => {

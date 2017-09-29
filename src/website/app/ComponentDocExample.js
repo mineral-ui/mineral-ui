@@ -15,12 +15,12 @@
  */
 
 /* @flow */
-import React, { Component } from 'react';
-import dedent from 'dedent';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import { createStyledComponent } from '../../utils';
+import React from 'react';
+import { createStyledComponent, getNormalizedValue } from '../../utils';
 import Callout from './Callout';
 import Heading from './Heading';
+import Link from './Link';
+import LiveProvider from './LiveProvider';
 import Markdown from './Markdown';
 
 type Props = {
@@ -35,92 +35,60 @@ type Props = {
 };
 
 const styles = {
-  anchor: ({ theme }) => ({
-    color: theme.color_caption,
-    fontWeight: theme.fontWeight_semiBold,
-    visibility: 'hidden'
-  }),
   componentDocExample: ({ theme }) => ({
+    paddingBottom: `${parseFloat(theme.spacing_single) * 8}em`,
+
     '& + &': {
-      borderTop: `1px solid ${theme.borderColor}`,
-      marginTop: theme.spacing_quad
+      borderTop: `1px solid ${theme.borderColor}`
     }
   }),
   description: ({ theme }) => ({
     margin: `0 0 ${theme.spacing_quad}`
   }),
-  livePreview: ({ backgroundColor, theme }) => ({
-    backgroundColor,
-    border: `1px solid ${theme.borderColor}`,
-    padding: theme.spacing_double
-  }),
-  liveEditor: ({ theme }) => ({
-    fontSize: theme.fontSize_ui,
-    maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
-    overflow: 'auto',
-
-    '& + .react-live-error': {
-      backgroundColor: '#fce3e3', // color.red_10
-      color: theme.color_text_danger,
-      fontFamily: theme.fontFamily_monospace,
-      fontSize: theme.fontSize_mouse,
-      lineHeight: theme.lineHeight_prose,
-      padding: theme.spacing_single,
-      whiteSpace: 'pre',
-
-      '&:first-line': {
-        fontFamily: theme.fontFamily,
-        fontWeight: theme.fontWeight_semiBold,
-        // Can't use margin/padding here, so this is to space off the heading
-        // from the code
-        lineHeight: 2 * theme.lineHeight_prose
-      }
-    }
-  }),
   title: ({ theme }) => ({
-    margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+    margin: `0 0 ${getNormalizedValue(theme.spacing_quad, theme.fontSize_h3)}`,
+    paddingTop: `${parseFloat(
+      getNormalizedValue(theme.spacing_single, theme.fontSize_h3)
+    ) * 8}em`
+  }),
+  titleLink: ({ theme }) => ({
+    color: theme.color_gray_80 // h2
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const Description = createStyledComponent(Markdown, styles.description);
-const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
-  rootEl: 'div'
-});
-const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 const Title = createStyledComponent(Heading, styles.title);
+const TitleLink = createStyledComponent(Link, styles.titleLink);
 
-export default class ComponentDocExample extends Component {
-  props: Props;
+export default function ComponentDocExample({
+  backgroundColor,
+  className,
+  description,
+  hideSource,
+  id,
+  scope,
+  source,
+  title
+}: Props) {
+  const liveProviderProps = {
+    backgroundColor,
+    hideSource,
+    scope,
+    source
+  };
 
-  render() {
-    const {
-      backgroundColor,
-      className,
-      description,
-      hideSource,
-      id,
-      scope,
-      source,
-      title
-    } = this.props;
-
-    return (
-      <Root className={className} id={id}>
-        <Title level={3} id={id}>
+  return (
+    <Root className={className}>
+      <Title level={3} id={id}>
+        <TitleLink to={id}>
           {title}
-        </Title>
-        <Description scope={{ Callout }}>
-          {description || ''}
-        </Description>
-        <LiveProvider
-          code={dedent(source)}
-          scope={scope}
-          mountStylesheet={false}>
-          <MyLivePreview backgroundColor={backgroundColor} />
-          {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
-        </LiveProvider>
-      </Root>
-    );
-  }
+        </TitleLink>
+      </Title>
+      <Description scope={{ Callout }}>
+        {description || ''}
+      </Description>
+      <LiveProvider {...liveProviderProps} />
+    </Root>
+  );
 }
