@@ -57,7 +57,25 @@ const styles = {
   liveEditor: ({ theme }) => ({
     fontSize: theme.fontSize_ui,
     maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
-    overflow: 'auto'
+    overflow: 'auto',
+
+    '& + .react-live-error': {
+      backgroundColor: '#fce3e3', // color.red_10
+      color: theme.color_text_danger,
+      fontFamily: theme.fontFamily_monospace,
+      fontSize: theme.fontSize_mouse,
+      lineHeight: theme.lineHeight_prose,
+      padding: theme.spacing_single,
+      whiteSpace: 'pre',
+
+      '&:first-line': {
+        fontFamily: theme.fontFamily,
+        fontWeight: theme.fontWeight_semiBold,
+        // Can't use margin/padding here, so this is to space off the heading
+        // from the code
+        lineHeight: 2 * theme.lineHeight_prose
+      }
+    }
   }),
   title: ({ theme }) => ({
     margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
