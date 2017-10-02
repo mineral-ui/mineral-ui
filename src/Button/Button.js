@@ -15,13 +15,13 @@
  */
 
 /* @flow */
-import React from 'react';
+import React, { cloneElement } from 'react';
 import { ellipsis } from 'polished';
 import { createStyledComponent, pxToEm, getNormalizedValue } from '../utils';
 
 type Props = {
   /** Rendered content of the component */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** Displays a circular Button */
   circular?: boolean,
   /** Disables the Button */
@@ -35,7 +35,7 @@ type Props = {
   /** Display a minimal Button */
   minimal?: boolean,
   /** Called with the click event */
-  onClick?: (event: Object) => void,
+  onClick?: (event: SyntheticEvent<>) => void,
   /** Display a primary Button */
   primary?: boolean,
   /** Available sizes */
@@ -290,10 +290,12 @@ export default function Button({
     large: 'medium',
     jumbo: 'large'
   };
-  const startIcon =
-    iconStart && React.cloneElement(iconStart, { size: iconSize[size] });
-  const endIcon =
-    iconEnd && React.cloneElement(iconEnd, { size: iconSize[size] });
+  const startIcon = iconStart
+    ? cloneElement(iconStart, { size: iconSize[size] })
+    : null;
+  const endIcon = iconEnd
+    ? cloneElement(iconEnd, { size: iconSize[size] })
+    : null;
 
   return (
     <Root {...rootProps}>

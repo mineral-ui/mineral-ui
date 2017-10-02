@@ -26,7 +26,7 @@ export default {
   description: 'Behavior inside of a scrolling container.',
   scope: { Button, data, Dropdown, ScrollParent },
   source: `
-    <ScrollParent height="430">
+    <ScrollParent height={430}>
       <Dropdown
         data={data}
         isOpen

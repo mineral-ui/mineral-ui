@@ -21,7 +21,7 @@ import { LiveProvider, LivePreview } from 'react-live';
 import ThemeProvider from '../src/ThemeProvider';
 
 type Example = {
-  title: MnrlReactNode,
+  title: React$Node,
   scope: Object,
   id: string,
   source: string

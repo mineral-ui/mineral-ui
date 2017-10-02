@@ -20,10 +20,9 @@ import { createStyledComponent } from '../../utils';
 import Link from './Link';
 import pages from './pages';
 
-type Props = {|
-  className?: string,
+type Props = {
   demos: Object
-|};
+};
 
 const styles = {
   heading: ({ theme }) => ({
@@ -88,7 +87,9 @@ const ListItem = createStyledComponent('li', styles.listItem);
 const SubSection = createStyledComponent('ul', styles.subsection);
 const Logo = createStyledComponent(Link, styles.logo);
 
-export default function Nav({ className, demos }: Props) {
+export default function Nav({ demos, ...restProps }: Props) {
+  const rootProps = { ...restProps };
+
   const demoLinks = Object.keys(demos).map(slug => {
     const demo = demos[slug];
     return (
@@ -127,7 +128,7 @@ export default function Nav({ className, demos }: Props) {
   });
 
   return (
-    <Root className={className}>
+    <Root {...rootProps}>
       <Logo to="/">
         <span>M</span>
         <h1>Mineral UI</h1>

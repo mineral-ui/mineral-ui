@@ -23,7 +23,7 @@ type Props = {
   /** element used when rendering */
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   /** rendered children */
-  children: MnrlReactNode,
+  children: React$Node,
   /** if an id is provided, an anchor link will display on hover/focus */
   id?: string,
   /** element will be styled as this level */

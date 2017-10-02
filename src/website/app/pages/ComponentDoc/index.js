@@ -27,7 +27,7 @@ import DocWhenHowToUse from './DocWhenHowToUse';
 type BestPractice = {
   type: string,
   title: string,
-  example: MnrlReactNode,
+  example: React$Node,
   description: string
 };
 
@@ -35,7 +35,7 @@ type Props = {
   bestPractices?: Array<BestPractice>,
   className?: string,
   componentTheme?: Theme | Array<Theme>,
-  description?: MnrlReactNode,
+  description?: React$Node,
   doc: Object,
   examples?: Array<any>,
   hidePropDoc?: boolean,

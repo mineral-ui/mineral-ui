@@ -19,9 +19,7 @@ import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../../utils';
 import Link from '../../Link';
 
-type Props = {|
-  className?: string
-|};
+type Props = {};
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   borderTop: `2px solid ${theme.borderColor}`,
@@ -42,9 +40,9 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-export default function Footer({ className }: Props) {
+export default function Footer(props: Props) {
   return (
-    <Root className={className}>
+    <Root {...props}>
       <div>Copyright © 2017 CA</div>
       <div>
         We welcome feedback and contributions on {' '}

@@ -20,8 +20,9 @@ import { Target } from 'react-popper';
 import { createStyledComponent } from '../utils';
 
 type Props = {
-  children: MnrlReactNode,
+  children: React$Node,
   disabled?: boolean,
+  onClick?: (event: SyntheticEvent<>) => void,
   isOpen: boolean
 };
 
@@ -36,7 +37,7 @@ const Root = createStyledComponent(
   }
 );
 
-export default class PopoverTrigger extends Component {
+export default class PopoverTrigger extends Component<Props> {
   props: Props;
 
   render() {

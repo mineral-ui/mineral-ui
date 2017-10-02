@@ -26,16 +26,16 @@ type Item = {
   iconStart?: React$Element<*>,
   disabled?: boolean,
   divider?: boolean,
-  onClick?: (event: Object) => void,
+  onClick?: (event: SyntheticEvent<>) => void,
   render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: MnrlReactNode,
-  text?: MnrlReactNode,
+  secondaryText?: React$Node,
+  text?: React$Node,
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
 type Props = {
   /** Trigger for the Dropdown */
-  children: MnrlReactNode,
+  children: React$Node,
   /** Open the Dropdown immediately upon initialization */
   defaultIsOpen?: boolean,
   /** Disable the Dropdown */
@@ -47,9 +47,9 @@ type Props = {
   /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options. */
   modifiers?: Object,
   /** Called when Dropdown is closed */
-  onClose?: (event: Object) => void,
+  onClose?: (event: SyntheticEvent<>) => void,
   /** Called when Dropdown is opened */
-  onOpen?: (event: Object) => void,
+  onOpen?: (event: SyntheticEvent<>) => void,
   /** Placement of the Dropdown menu */
   placement?:
     | 'bottom-end'
@@ -74,7 +74,7 @@ type State = {
 /**
  * Dropdown provides a list of actions to the user.
  */
-export default class Dropdown extends Component {
+export default class Dropdown extends Component<Props, State> {
   static defaultProps = {
     placement: 'bottom-start',
     restoreFocus: true
@@ -89,7 +89,7 @@ export default class Dropdown extends Component {
 
   _isMounted: boolean = false;
 
-  dropdownTrigger: React$Component<*, *, *>;
+  dropdownTrigger: ?React$Component<*, *>;
 
   id: string = `dropdown-${generateId()}`;
 
@@ -173,7 +173,7 @@ export default class Dropdown extends Component {
     }, []);
   };
 
-  onTriggerKeyDown = (event: Object) => {
+  onTriggerKeyDown = (event: SyntheticEvent<>) => {
     if (event.key === 'ArrowDown') {
       event.preventDefault();
       this.setState(prevState => ({
@@ -209,13 +209,13 @@ export default class Dropdown extends Component {
     }
   };
 
-  onOpen = (event: Object) => {
+  onOpen = (event: SyntheticEvent<>) => {
     this.setState({ isOpen: true }, () => {
       this.props.onOpen && this.props.onOpen(event);
     });
   };
 
-  onClose = (event: Object) => {
+  onClose = (event: SyntheticEvent<>) => {
     this.setState({ highlightedIndex: null, isOpen: false }, () => {
       this.props.onClose && this.props.onClose(event);
     });
@@ -238,7 +238,7 @@ export default class Dropdown extends Component {
     };
   };
 
-  itemOnClick = (item: Item, event: Object) => {
+  itemOnClick = (item: Item, event: SyntheticEvent<>) => {
     const { onClick } = item;
 
     onClick && onClick(event);

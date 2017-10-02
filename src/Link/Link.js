@@ -20,7 +20,7 @@ import { createStyledComponent } from '../utils';
 
 type Props = {
   /** Content of the Link */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** A URL or a URL fragment that the Link points to */
   href?: string,
   /** Element to be used as the root node - e.g. "a" or { ReactRouterLink } */

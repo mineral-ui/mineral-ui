@@ -25,13 +25,12 @@ import Markdown from './Markdown';
 
 type Props = {
   backgroundColor?: string,
-  className?: string,
-  description?: MnrlReactNode,
+  description?: React$Node,
   hideSource?: boolean,
   id: string,
   scope: Object,
   source: string,
-  title?: MnrlReactNode
+  title?: React$Node
 };
 
 const styles = {
@@ -63,14 +62,15 @@ const TitleLink = createStyledComponent(Link, styles.titleLink);
 
 export default function ComponentDocExample({
   backgroundColor,
-  className,
   description,
   hideSource,
   id,
   scope,
   source,
-  title
+  title,
+  ...restProps
 }: Props) {
+  const rootProps = { ...restProps };
   const liveProviderProps = {
     backgroundColor,
     hideSource,
@@ -79,7 +79,7 @@ export default function ComponentDocExample({
   };
 
   return (
-    <Root className={className}>
+    <Root {...rootProps}>
       <Title level={3} id={id}>
         <TitleLink to={id}>
           {title}

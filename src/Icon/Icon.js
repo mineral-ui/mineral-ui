@@ -22,7 +22,7 @@ type Props = {
   /** Available sizes, including custom - e.g. '5em' or '20px' */
   size?: 'small' | 'medium' | 'large' | string,
   /** SVG content, required for the generic Icon component */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** Fill color, defaults to theme.color_gray_60 */
   color?: string,
   /** Flip the Icon horizontally when used with RTL languages */
@@ -60,7 +60,7 @@ const Root = createStyledComponent('svg', iconStyles, { rootEl: 'svg' });
  * Mineral UI provides a large number of bundled Icon components as well
  * as a generic Icon component to which you can provide your own SVG.
  */
-export default class Icon extends Component {
+export default class Icon extends Component<Props> {
   static displayName = 'Icon';
 
   static defaultProps: Object = {

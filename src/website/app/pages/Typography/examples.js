@@ -21,8 +21,8 @@ import Heading from '../../Heading';
 import Paragraph from '../../Paragraph';
 
 type TypeExample = {
-  heading: MnrlReactNode,
-  description: MnrlReactNode,
+  heading: React$Node,
+  description: React$Node,
   examples: Array<Object>
 };
 

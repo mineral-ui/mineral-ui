@@ -20,12 +20,12 @@ import { createStyledComponent } from '../../utils';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
 
-type Props = {|
+type Props = {
   baseTheme?: Object,
   theme: Object,
   value: (theme: Object, variable: string, baseTheme?: Object) => string,
   valueColor: (theme: Object, variable: string, baseTheme?: Object) => any
-|};
+};
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   margin: `${theme.spacing_quad} 0 0 0`,

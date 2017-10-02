@@ -2006,14 +2006,12 @@ exports[`Dropdown demo examples disabled 1`] = `
                         aria-haspopup={true}
                         disabled={true}
                         isOpen={false}
-                        onClick={false}
                         onKeyDown={[Function]}
                       >
                         <PopoverTrigger
                           aria-disabled={true}
                           aria-expanded={false}
                           aria-haspopup={true}
-                          onClick={false}
                           onKeyDown={[Function]}
                           role="button"
                         >
@@ -2022,7 +2020,6 @@ exports[`Dropdown demo examples disabled 1`] = `
                             aria-expanded={false}
                             aria-haspopup={true}
                             className="glamor-3"
-                            onClick={false}
                             onKeyDown={[Function]}
                             role="button"
                           >
@@ -2031,7 +2028,6 @@ exports[`Dropdown demo examples disabled 1`] = `
                               aria-expanded={false}
                               aria-haspopup={true}
                               className="glamor-3"
-                              onClick={false}
                               onKeyDown={[Function]}
                               role="button"
                             >
@@ -4072,7 +4068,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
   >
     <LiveProvider
       code="
-        <ScrollParent height=\\"430\\">
+        <ScrollParent height={430}>
           <Dropdown
             data={data}
             isOpen
@@ -4144,20 +4140,20 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
           >
             <ScrollBox
               autoCenter={true}
-              height="430"
+              height={430}
             >
               <glamorous(div)>
                 <div
                   className="glamor-38"
                 >
                   <glamorous(div)
-                    height="430"
+                    height={430}
                   >
                     <div
                       className="glamor-32"
                     >
                       <glamorous(div)
-                        scrollAreaHeight="430"
+                        scrollAreaHeight={430}
                       >
                         <div
                           className="glamor-31"

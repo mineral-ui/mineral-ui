@@ -20,14 +20,14 @@ import { withTheme } from 'glamorous';
 import update from 'immutability-helper';
 import ThemeProvider from '../ThemeProvider';
 
-function getComponentDisplayName(Component: MnrlReactComponent): string {
+function getComponentDisplayName(Component: React$ComponentType<*>): string {
   return typeof Component === 'string'
     ? Component
     : Component.displayName || Component.name || 'Component';
 }
 
 export default function createThemedComponent(
-  ComponentToTheme: MnrlReactComponent,
+  ComponentToTheme: React$ComponentType<*>,
   theme: Object | ((props: Object, context?: Object) => Object)
 ) {
   const ThemedComponent = (props, context) => {

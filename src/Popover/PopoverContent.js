@@ -23,7 +23,7 @@ import PopoverArrow from './PopoverArrow';
 
 type Props = {
   /** Content of the popper */
-  children: MnrlReactNode,
+  children: React$Node,
   /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
   modifiers?: Object,
   /** Include an arrow on the Popover content pointing to the trigger */
@@ -46,9 +46,9 @@ type Props = {
     | 'top-end'
     | 'top-start',
   /** Subtitle displayed under the title */
-  subtitle?: MnrlReactNode,
+  subtitle?: React$Node,
   /** Title of the popover */
-  title?: MnrlReactNode
+  title?: React$Node
 };
 
 const arrowSize = '8px';
@@ -115,7 +115,7 @@ const PopoverTitle = createThemedComponent(CardTitle, cardOverrides);
 /**
  * PopoverContent component
  */
-export default class PopoverContent extends Component {
+export default class PopoverContent extends Component<Props> {
   props: Props;
 
   render() {

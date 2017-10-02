@@ -21,9 +21,9 @@ import Heading from '../../Heading';
 import Markdown from '../../Markdown';
 import Section from '../../Section';
 
-type Props = {|
+type Props = {
   content: string
-|};
+};
 
 const Title = createStyledComponent(Heading, ({ theme }) => ({
   margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`

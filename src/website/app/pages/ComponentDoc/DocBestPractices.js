@@ -21,9 +21,9 @@ import Heading from '../../Heading';
 import Section from '../../Section';
 import DocPractice from './DocPractice';
 
-type Props = {|
+type Props = {
   practices: Array<Object>
-|};
+};
 
 const styles = {
   grid: ({ theme }) => ({

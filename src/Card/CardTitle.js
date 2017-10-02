@@ -23,11 +23,11 @@ type Props = {
   /** Information displayed above the title */
   meta?: string,
   /** Title of the Card */
-  children: MnrlReactNode,
+  children: React$Node,
   /** Displays the title in a less important style */
   minor?: boolean,
   /** Subtitle displayed under the title */
-  subtitle?: MnrlReactNode
+  subtitle?: React$Node
 };
 
 export const componentTheme = (baseTheme: Object) => ({

@@ -20,14 +20,14 @@ import { createStyledComponent, getNormalizedValue } from '../../../../utils';
 import Markdown from '../../Markdown';
 import _Heading from '../../Heading';
 
-type Props = {|
+type Props = {
   backgroundColor?: string,
-  children?: MnrlReactNode,
+  children?: string,
   className?: string,
-  example?: MnrlReactNode,
+  example?: React$Node,
   title: string,
   type: 'do' | 'dont'
-|};
+};
 
 const Example = createStyledComponent('div', ({ backgroundColor, theme }) => ({
   backgroundColor,

@@ -21,7 +21,7 @@ import Color from './Color';
 import Typography from './Typography';
 
 type Page = {
-  component?: MnrlReactNode,
+  component: React$ComponentType<*>,
   id?: string,
   path?: string,
   sections?: Array<Object>,
@@ -32,24 +32,24 @@ type Pages = Array<Page>;
 
 const pages: Pages = [
   {
-    title: 'Getting Started',
     component: GettingStarted,
-    path: '/getting-started'
+    path: '/getting-started',
+    title: 'Getting Started'
   },
   {
-    title: 'Color',
     component: Color,
-    path: '/color'
+    path: '/color',
+    title: 'Color'
   },
   {
-    title: 'Typography',
     component: Typography,
-    path: '/typography'
+    path: '/typography',
+    title: 'Typography'
   },
   {
-    title: 'Theming',
     component: Theming,
-    path: '/theming'
+    path: '/theming',
+    title: 'Theming'
   }
 ];
 
