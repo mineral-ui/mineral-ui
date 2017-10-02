@@ -22,10 +22,10 @@ import Heading from '../../Heading';
 import PropTable from '../../PropTable';
 import Section from '../../Section';
 
-type Props = {|
+type Props = {
   propDoc?: Object,
   title: string
-|};
+};
 
 const styles = {
   propsComment: {

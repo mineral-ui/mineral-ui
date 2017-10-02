@@ -200,11 +200,11 @@ const Button = createStyledComponent('button', props => ({
 ```
 
 
-### `createThemedComponent(element, theme)`
+### `createThemedComponent(component, theme)`
 
 If you only need to style the themed properties of a component, you can use this helper. It's effectively the same as wrapping a `ThemeProvider` around a single component.
 
-`element`: a React component _or_ a string representation of an HTML element
+`component`: a React component
 
 `theme`: a shallow object of theme variables _or_ a function that accepts props and context and returns an object of theme variables
 

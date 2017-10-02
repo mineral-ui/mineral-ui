@@ -26,12 +26,12 @@ import Footer from './Footer';
 import _Nav from './Nav';
 import Router from './Router';
 
-type Props = {|
+type Props = {
   children?: any,
   className?: string,
   demos: Object | Array<Object>,
   location?: any
-|};
+};
 
 const styles = {
   app: ({ theme }) => ({
@@ -69,7 +69,7 @@ const Root = createStyledComponent('div', styles.app, {
 const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
-class App extends Component {
+class App extends Component<Props> {
   props: Props;
 
   componentDidUpdate(prevProps) {

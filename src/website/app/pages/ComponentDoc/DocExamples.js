@@ -19,21 +19,21 @@ import React from 'react';
 import ComponentDocExample from '../../ComponentDocExample';
 import Section from '../../Section';
 
-type Example = {|
+type Example = {
   backgroundColor?: string,
-  description?: MnrlReactNode,
+  description?: React$Node,
   hideFromProd?: boolean,
   hideSource?: boolean,
   id: string,
   propValues?: Object,
   scope: Object,
   source: string,
-  title: MnrlReactNode
-|};
+  title: React$Node
+};
 
-type Props = {|
+type Props = {
   examples: Array<Example>
-|};
+};
 
 export default function DocExamples({ examples }: Props) {
   if (process.env.NODE_ENV === 'production') {

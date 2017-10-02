@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '../../utils';
 
 type Props = {
-  children: MnrlReactNode,
+  children: React$Node,
   className?: string,
   title?: string,
   variant?: 'danger' | 'regular'

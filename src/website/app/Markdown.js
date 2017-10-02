@@ -24,10 +24,9 @@ import Link from './Link';
 import prism from './utils/prism';
 
 type Props = {
-  children: string,
-  className?: string,
+  children: React$Node,
   scope?: {
-    [string]: MnrlReactNode
+    [string]: React$ComponentType<*>
   }
 };
 
@@ -50,7 +49,7 @@ type mdLinkProps = {
   href: string,
   title?: string,
   target?: string,
-  children: MnrlReactNode
+  children: React$Node
 };
 
 const Root = createStyledComponent('div', ({ theme }) => ({
@@ -153,7 +152,9 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-export default function Markdown({ children, className, scope }: Props) {
+export default function Markdown({ children, scope, ...restProps }: Props) {
+  const rootProps = { ...restProps };
+
   const compile = marksy({
     createElement,
     elements: {
@@ -215,7 +216,7 @@ export default function Markdown({ children, className, scope }: Props) {
   const compiled = compile(children, { smartypants: false });
 
   return (
-    <Root className={className}>
+    <Root {...rootProps}>
       {compiled.tree}
     </Root>
   );

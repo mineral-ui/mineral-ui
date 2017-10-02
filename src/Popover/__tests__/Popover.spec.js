@@ -28,7 +28,7 @@ import testDemoExamples from '../../../utils/testDemoExamples';
 function shallowPopover(props = {}) {
   const popoverProps = {
     children: <button>trigger</button>,
-    content: 'content',
+    content: <div>content</div>,
     ...props
   };
   return shallow(<Popover {...popoverProps} />);
@@ -37,7 +37,7 @@ function shallowPopover(props = {}) {
 function mountPopover(props = {}) {
   const popoverProps = {
     children: <button>trigger</button>,
-    content: 'content',
+    content: <div>content</div>,
     ...props
   };
 

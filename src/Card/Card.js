@@ -20,9 +20,9 @@ import { createStyledComponent } from '../utils';
 
 type Props = {
   /** Content of the Card. Can be anything, but see [CardBlock](./card-block), [CardImage](./card-image), and [CardTitle](./card-title). */
-  children: MnrlReactNode,
+  children: React$Node,
   /** Called with the click event */
-  onClick?: (event: Object) => void
+  onClick?: (event: SyntheticEvent<>) => void
 };
 
 export const componentTheme = (baseTheme: Object) => ({
@@ -62,7 +62,7 @@ const Root = createStyledComponent(
   }
 );
 
-const onKeyPress = (props: Props, event: Object) => {
+const onKeyPress = (props: Props, event: SyntheticEvent<>) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
     props.onClick && props.onClick(event);

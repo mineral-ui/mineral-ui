@@ -20,7 +20,7 @@ import { mount } from 'enzyme';
 import ThemeProvider from '../src/ThemeProvider';
 
 export function mountInThemeProvider(
-  Component: $FlowFixMe,
+  Component: React$Element<*>,
   returnThemeProvider: boolean = false
 ) {
   const mountedComponent = mount(

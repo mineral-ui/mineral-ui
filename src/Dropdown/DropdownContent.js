@@ -95,7 +95,7 @@ const Root = createStyledComponent(
 /**
  * DropdownContent component
  */
-export default class DropdownContent extends Component {
+export default class DropdownContent extends Component<Props> {
   props: Props;
 
   render() {

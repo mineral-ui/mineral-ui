@@ -24,9 +24,9 @@ import Link from './Link';
 import LiveProvider from './LiveProvider';
 import pages from './pages';
 
-type Props = {|
+type Props = {
   demos: Object
-|};
+};
 
 export default function Router({ demos }: Props) {
   const routes = [];
@@ -45,6 +45,7 @@ export default function Router({ demos }: Props) {
         }
       });
     }
+
     routes.push(
       <Route
         key={`page-${i}`}

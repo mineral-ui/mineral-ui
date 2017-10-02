@@ -22,11 +22,11 @@ import Markdown from '../../Markdown';
 import Section from '../../Section';
 import VariableTable from '../../VariableTable';
 
-type Props = {|
+type Props = {
   baseTheme: Object,
   componentTheme: Theme | Array<Theme>,
   title: string
-|};
+};
 
 type Theme = (theme: Object) => Object;
 

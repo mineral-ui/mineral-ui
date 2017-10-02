@@ -21,9 +21,9 @@ import { MenuDivider, MenuGroup, MenuItem } from './index';
 
 type Props = {
   /** [MenuDivider](./menu-divider), [MenuGroup](./menu-group), or [MenuItem](./menu-item) */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
-  data?: Array<{ items: Array<Item>, title?: MnrlReactNode }>,
+  data?: Array<{ items: Array<Item>, title?: React$Node }>,
   /** @Private Function that returns props to be applied to each item */
   getItemProps?: (props: Object, scope: Object) => Object
 };
@@ -33,10 +33,10 @@ type Item = {
   iconStart?: React$Element<*>,
   disabled?: boolean,
   divider?: boolean,
-  onClick?: (event: Object) => void,
+  onClick?: (event: SyntheticEvent<>) => void,
   render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: MnrlReactNode,
-  text?: MnrlReactNode,
+  secondaryText?: React$Node,
+  text?: React$Node,
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 

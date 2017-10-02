@@ -18,10 +18,10 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../../utils';
 
-type Props = {|
+type Props = {
   className?: string,
   text?: string
-|};
+};
 
 const Root = createStyledComponent('span', ({ theme }) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',

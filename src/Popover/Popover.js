@@ -27,11 +27,11 @@ type Props = {
   /** Focuses the Popover content when opened */
   autoFocus?: boolean,
   /** Trigger for the Popover */
-  children: MnrlReactNode,
+  children: React$Node,
   /** Content of the Popover */
-  content: React$Element<*>,
+  content: $FlowFixMe,
   /** Disables the Popover */
-  disabled: boolean,
+  disabled?: boolean,
   /** Include an arrow on the Popover content pointing to the trigger */
   hasArrow?: boolean,
   /** For use with controlled components, in which the app manages Popover state */
@@ -39,9 +39,9 @@ type Props = {
   /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options.*/
   modifiers?: Object,
   /** Called when Popover is closed */
-  onClose?: (event: Object) => void,
+  onClose?: (event: SyntheticEvent<>) => void,
   /** Called when Popover is opened */
-  onOpen?: (event: Object) => void,
+  onOpen?: (event: SyntheticEvent<>) => void,
   /** Open the Popover immediately upon initialization */
   defaultIsOpen?: boolean,
   /** Placement of the Popover */
@@ -64,9 +64,9 @@ type Props = {
   /** Focuses trigger when Popover is closed */
   restoreFocus?: boolean,
   /** Subtitle displayed under the title */
-  subtitle?: MnrlReactNode,
+  subtitle?: React$Node,
   /** Title of the Popover */
-  title?: MnrlReactNode,
+  title?: React$Node,
   /** @Private Custom trigger component */
   trigger?: React$Element<*>,
   /** @Private Ref for the Popover trigger */
@@ -96,7 +96,7 @@ const Root = createStyledComponent(
  * Placement, scroll behavior and focus management can all be controlled to customize your implementation.
  * Popovers can be toggled on a user action or a state change.
  */
-export default class Popover extends Component {
+export default class Popover extends Component<Props, State> {
   static defaultProps = {
     autoFocus: true,
     hasArrow: true,
@@ -111,9 +111,9 @@ export default class Popover extends Component {
     isOpen: Boolean(this.props.defaultIsOpen)
   };
 
-  popoverContent: React$Component<*, *, *>;
+  popoverContent: ?React$Component<*, *>;
 
-  popoverTrigger: React$Component<*, *, *>;
+  popoverTrigger: ?React$Component<*, *>;
 
   componentWillUnmount() {
     this.removeDocumentEventListeners();
@@ -149,7 +149,7 @@ export default class Popover extends Component {
       children,
       disabled,
       isOpen,
-      onClick: !disabled && this.toggleOpenState,
+      onClick: !disabled ? this.toggleOpenState : undefined,
       ref: node => {
         this.popoverTrigger = node;
         triggerRef && triggerRef(node);
@@ -205,7 +205,7 @@ export default class Popover extends Component {
     }
   };
 
-  close = (event: Object) => {
+  close = (event: SyntheticEvent<>) => {
     if (this.isControlled()) {
       this.closeActions(event);
     } else {
@@ -218,7 +218,7 @@ export default class Popover extends Component {
     }
   };
 
-  closeActions = (event: Object) => {
+  closeActions = (event: SyntheticEvent<>) => {
     this.props.onClose && this.props.onClose(event);
     this.props.restoreFocus && this.focusTrigger();
   };
@@ -237,28 +237,34 @@ export default class Popover extends Component {
     }
   };
 
-  handleDocumentClick = (event: Object) => {
+  handleDocumentClick = (event: SyntheticEvent<>) => {
     if (this.isClickOutsideComponent(event)) {
       this.close(event);
     }
   };
 
-  handleDocumentKeydown = (event: Object) => {
+  handleDocumentKeydown = (event: SyntheticEvent<>) => {
     if (event.key === 'Escape') {
       this.close(event);
     }
   };
 
-  isClickOutsideComponent = (event: Object) => {
+  isClickOutsideComponent = (event: SyntheticEvent<>) => {
     const node = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
-    return node && !node.contains(event.target);
+    return (
+      node &&
+      node instanceof HTMLElement &&
+      event.target &&
+      event.target instanceof HTMLElement &&
+      !node.contains(event.target)
+    );
   };
 
   isControlled = () => {
     return this.props.isOpen !== undefined;
   };
 
-  open = (event: Object) => {
+  open = (event: SyntheticEvent<>) => {
     if (this.isControlled()) {
       this.openActions(event);
     } else {
@@ -271,7 +277,7 @@ export default class Popover extends Component {
     }
   };
 
-  openActions = (event: Object) => {
+  openActions = (event: SyntheticEvent<>) => {
     this.props.onOpen && this.props.onOpen(event);
     this.props.autoFocus && this.focusContent();
   };
@@ -291,7 +297,7 @@ export default class Popover extends Component {
     }
   };
 
-  toggleOpenState = (event: Object) => {
+  toggleOpenState = (event: SyntheticEvent<>) => {
     const { isOpen } = this.isControlled() ? this.props : this.state;
     if (isOpen) {
       this.close(event);

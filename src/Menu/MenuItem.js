@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import React from 'react';
+import React, { cloneElement } from 'react';
 import { withTheme } from 'glamorous';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../utils';
 import IconDanger from '../Icon/custom/IconDanger';
@@ -24,7 +24,7 @@ import IconWarning from '../Icon/custom/IconWarning';
 
 type Props = {
   /** Rendered content of the component */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** Disable the menu item */
   disabled?: boolean,
   /** Icon that goes after the children*/
@@ -36,11 +36,11 @@ type Props = {
   /** Item data (see example below) */
   item?: Item,
   /** Called with the click event */
-  onClick?: (event: Object) => void,
+  onClick?: (event: SyntheticEvent<>) => void,
   /** Custom render function */
   render?: (item: Item, props: Object, theme: Object) => React$Element<*>,
   /** Secondary text */
-  secondaryText?: MnrlReactNode,
+  secondaryText?: React$Node,
   /** Determines if the item can be focused */
   tabIndex?: number,
   /** Available variants */
@@ -52,10 +52,10 @@ type Item = {
   iconStart?: React$Element<*>,
   disabled?: boolean,
   divider?: boolean,
-  onClick?: (event: Object) => void,
+  onClick?: (event: SyntheticEvent<>) => void,
   render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: MnrlReactNode,
-  text?: MnrlReactNode,
+  secondaryText?: React$Node,
+  text?: React$Node,
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
@@ -200,7 +200,10 @@ const Inner = createStyledComponent('span', styles.inner);
 const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Text = createStyledComponent('span', styles.text);
 
-const onKeyDown = (onClick: (event: Object) => void, event: Object) => {
+const onKeyDown = (
+  onClick: (event: SyntheticEvent<>) => void,
+  event: SyntheticEvent<>
+) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
     onClick && onClick(event);
@@ -236,10 +239,10 @@ const defaultRender = ({
   let startIcon =
     variant !== undefined && variant !== 'regular' && variantIcons[variant];
   if (iconStart) {
-    startIcon = React.cloneElement(iconStart, { size: 'medium' });
+    startIcon = cloneElement(iconStart, { size: 'medium' });
   }
 
-  const endIcon = iconEnd && React.cloneElement(iconEnd, { size: 'medium' });
+  const endIcon = iconEnd && cloneElement(iconEnd, { size: 'medium' });
 
   // This structure is based on Button
   return (

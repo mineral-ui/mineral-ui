@@ -21,9 +21,9 @@ import MenuGroupTitle from './MenuGroupTitle';
 
 type Props = {
   /** [MenuItems](./menu-item) */
-  children?: MnrlReactNode,
+  children?: React$Node,
   /** Title for the group */
-  title?: MnrlReactNode
+  title?: React$Node
 };
 
 const Root = createStyledComponent(

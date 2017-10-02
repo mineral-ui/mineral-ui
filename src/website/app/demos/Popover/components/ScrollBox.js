@@ -21,7 +21,7 @@ import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
 
 type Props = {
-  children: MnrlReactNode,
+  children: React$Node,
   autoCenter?: boolean,
   /** Height in pixels */
   height?: number
@@ -51,7 +51,7 @@ const Recenter = createStyledComponent(Button, {
   top: 0
 });
 
-export default class ScrollBox extends Component {
+export default class ScrollBox extends Component<Props> {
   static defaultProps = {
     autoCenter: true,
     height: 360
@@ -59,9 +59,9 @@ export default class ScrollBox extends Component {
 
   props: Props;
 
-  scrollArea: React$Component<*, *, *>;
+  scrollArea: ?React$Component<*, *>;
 
-  scrollTarget: React$Component<*, *, *>;
+  scrollTarget: ?React$Component<*, *>;
 
   componentDidMount() {
     if (this.props.autoCenter) {

@@ -20,7 +20,7 @@ import { createStyledComponent } from '../../utils';
 
 type Props = {
   /* rendered chilren */
-  children: MnrlReactNode,
+  children: React$Node,
   /* available font variants */
   variant?: 'ui' | 'prose' | 'mouse'
 };

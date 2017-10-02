@@ -19,7 +19,10 @@ import glamorous from 'glamorous';
 import componentStyleReset from './componentStyleReset';
 
 export default function createStyledComponent(
-  element: MnrlReactNode,
+  element:
+    | React$StatelessFunctionalComponent<*>
+    | Class<React$ComponentType<*>>
+    | string,
   styles: Object | ((props: Object, context?: Object) => Object),
   options?: Object = {}
 ) {
