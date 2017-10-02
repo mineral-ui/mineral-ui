@@ -21,11 +21,14 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'menu-group',
-  title: 'Menu with Groups and Titles',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'To group [MenuItems](../menu-item) together, wrap them in a MenuGroup and optionally provide a title.',
+  description: `To group [MenuItems](../menu-item) together, wrap them in a MenuGroup.
+Optionally, provide a title to provide context if the grouping is large or not immediately obvious.
+
+Your [Menu](../menu) may not need a MenuGroup title.
+If your Menu is simple, instead consider using a [MenuDivider](../menu-divider), which is quicker to scan for your users.`,
   scope: { DemoLayout, Menu, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

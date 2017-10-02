@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, mineralTheme } from '../../../../utils';
+import Heading from '../../Heading';
 import DocBestPractices from './DocBestPractices';
 import DocExamples from './DocExamples';
 import DocHeader from './DocHeader';
@@ -70,7 +71,7 @@ export default function ComponentDoc({
     bestPractices,
     componentTheme,
     examples,
-    propDoc,
+    props: !!(propDoc || componentTheme),
     title,
     whenHowToUse
   };
@@ -87,6 +88,11 @@ export default function ComponentDoc({
       {examples && <DocExamples examples={examples} />}
       {!hidePropDoc && <DocProps {...propProps} />}
       {componentTheme && <DocThemeVariables {...themeVariablesProps} />}
+      {(whenHowToUse || bestPractices) && (
+        <Heading level={2} id="usage">
+          Usage
+        </Heading>
+      )}
       {whenHowToUse && <DocWhenHowToUse content={whenHowToUse} />}
       {bestPractices && <DocBestPractices practices={bestPractices} />}
     </Root>

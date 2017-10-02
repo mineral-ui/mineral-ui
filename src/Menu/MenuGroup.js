@@ -44,7 +44,9 @@ const Root = createStyledComponent(
 );
 
 /**
- * MenuGroups group together [Menu Items](../menu-items) and can display a title.
+ * MenuGroups assemble [MenuItems](../menu-items) and can display a title.
+ * Grouping Menu options provides context clues to users about related actions.
+ * An optional title can be added to reinforce the intent of the grouping.
  */
 export default function MenuGroup({ children, title, ...restProps }: Props) {
   return (

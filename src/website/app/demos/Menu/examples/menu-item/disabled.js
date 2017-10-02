@@ -24,20 +24,20 @@ export default {
   title: 'Disabled',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: '`MenuItem`s can be disabled.',
+  description: `MenuItems can be disabled.
+Render a disabled MenuItem to let your user know that the option is available under the right conditions.
+
+For example, you would disable "Open Recent" if there are no recent files available, yet you want the user to know that feature is available under other conditions.`,
   scope: { DemoLayout, Menu, MenuItem },
   source: `
     <DemoLayout>
       <Menu>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Light years
+        <MenuItem>New File</MenuItem>
+        <MenuItem>Open</MenuItem>
+        <MenuItem disabled onClick={() => console.log('onClick is not triggered for disabled MenuItems')}>
+          Open Recent
         </MenuItem>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Star stuff
-        </MenuItem>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Encyclopaedia galactica
-        </MenuItem>
+        <MenuItem>Save</MenuItem>
       </Menu>
     </DemoLayout>`
 };

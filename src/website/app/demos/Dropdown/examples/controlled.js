@@ -30,9 +30,10 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   id: 'controlled',
+  description: `Dropdown controls its own state by default,
+and can optionally be managed by the application as a controlled component through the \`isOpen\` prop.
+Callbacks for \`onOpen\` and \`onClose\` are also provided.`,
   title: 'Controlled',
-  description:
-    'State can be managed by the application rather than the component.',
   scope: { Button, Component, data, DemoLayout, Dropdown, findDOMNode },
   source: `
     class App extends Component {

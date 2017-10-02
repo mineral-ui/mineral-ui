@@ -32,9 +32,6 @@ const Title = createStyledComponent(Heading, ({ theme }) => ({
 export default function DocWhenHowToUse({ content }: Props) {
   return (
     <Section>
-      <Heading level={2} id="usage">
-        Usage
-      </Heading>
       <Title level={3} id="when-how-to-use">
         When/How to Use
       </Title>

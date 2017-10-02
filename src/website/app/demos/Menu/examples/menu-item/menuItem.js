@@ -21,14 +21,16 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'basic',
-  title: 'Basic Menu Item',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `
-MenuItems can be used to trigger an action or navigate to a new location.
+MenuItems are used to trigger an action or navigate to a new location.
 
-Note: MenuItems normally occupy the full available width of their container.
-The MenuItems here are width-constrained for illustration purposes.`,
+<Callout title="Note">
+  MenuItems normally occupy the full available width of their container.
+  The MenuItems here are width-constrained for illustration purposes.
+</Callout>`,
   scope: { DemoLayout, Menu, MenuItem },
   source: `
     <DemoLayout>

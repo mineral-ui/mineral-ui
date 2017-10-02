@@ -22,7 +22,8 @@ import data from '../../Menu/components/menuData';
 export default {
   id: 'disabled',
   title: 'Disabled',
-  description: 'Disabled Dropdown. Remember to disable the trigger as well.',
+  description: `In addition to disabling the Dropdown, you should also disable the trigger component.
+Dropdowns will open and close regardless of the properties set on the trigger.`,
   scope: { Button, data, Dropdown },
   source: `
     <Dropdown data={data} disabled>

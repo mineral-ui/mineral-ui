@@ -45,7 +45,9 @@ const data = [
 export default {
   id: 'wide',
   title: 'Wide',
-  description: 'Dropdown can display a wider menu.',
+  description: `Dropdown can display a wider menu (~50% wider).
+Use this when there are MenuItems that wrap and look odd.
+Make sure you have enough room for the wider Menu on the devices you're supporting.`,
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>
