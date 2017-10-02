@@ -8,8 +8,7 @@
 
 # [Mineral UI](https://mineral-ui.github.io/)
 
-A design system and [React](https://facebook.github.io/react/) component library for the web brought to you by [CA Technologies](http://ca.com).
-
+A design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps. Created by [CA Technologies](http://ca.com).
 
 ## Project Goals
 
