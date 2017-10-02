@@ -17,8 +17,23 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../utils';
+import IconInfo from '../../Icon/IconInfo';
+import Button from '../../Button';
+import Popover from '../../Popover';
 import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
+
+type Props = {
+  propDoc: Object
+};
+
+type PropTableRowProps = {
+  defaultValue?: any,
+  description?: string,
+  name: string,
+  type: any,
+  required?: boolean
+};
 
 const styles = {
   codeValue: ({ theme }) => ({
@@ -44,6 +59,23 @@ const styles = {
     color: theme.color_theme_90,
     fontFamily: theme.fontFamily_monospace
   }),
+  propTypeButton: ({ theme }) => ({
+    fontFamily: 'inherit',
+    height: 'auto',
+    padding: 0,
+
+    '& > span > span': {
+      paddingLeft: theme.direction === 'ltr' ? 0 : null,
+      paddingRight: theme.direction === 'rtl' ? 0 : null
+    }
+  }),
+  propTypePopoverContent: ({ theme }) => ({
+    fontFamily: theme.fontFamily_monospace,
+    fontSize: theme.fontSize_ui,
+    maxWidth: '80vw',
+    overflowX: 'auto',
+    whiteSpace: 'pre'
+  }),
   propValue: ({ theme }) => ({
     border: `1px solid ${theme.borderColor}`,
     height: '100%',
@@ -56,12 +88,17 @@ const styles = {
   })
 };
 
+const Root = createStyledComponent('div', styles.root);
 const CodeValue = createStyledComponent('span', styles.codeValue);
 const PropName = createStyledComponent('span', styles.propName);
 const PropP = createStyledComponent(Markdown, styles.propP);
 const PropRequired = createStyledComponent('span', styles.propRequired);
 const PropType = createStyledComponent('span', styles.propType);
-const Root = createStyledComponent('div', styles.root);
+const PropTypeButton = createStyledComponent(Button, styles.propTypeButton);
+const PropTypePopoverContent = createStyledComponent(
+  'div',
+  styles.propTypePopoverContent
+);
 
 function DefaultValue({
   defaultValue,
@@ -82,16 +119,41 @@ function getDefaultValue(propDescription: Object): any {
   return value;
 }
 
-function getFlowType(propDescription: Object): string {
+function getFlowType(propDescription: Object): any {
   const { flowType } = propDescription;
-  const type = (flowType && flowType.name) || 'unknown';
-  if (type === 'signature') {
-    return flowType.raw;
-  } else if (type === 'union') {
-    return flowType.raw.split(' | ').join(', ');
+  let { name, raw, type } = flowType;
+  let usePopover = raw && raw.length > 25;
+
+  if (name === 'Array') {
+    type = 'Array';
+  } else if (name === 'signature' && type === 'function') {
+    type = 'Function';
+  } else if (name === 'signature' && type === 'object') {
+    type = 'Object';
+  } else if (name === 'union') {
+    type = 'Union';
+    usePopover = flowType.elements.length > 4 || raw.startsWith('|');
+    raw = raw.startsWith('|')
+      ? raw
+          .split('\n| ')
+          .join(',\n')
+          .replace('| ', '')
+      : raw.split(' | ').join(',\n');
+  } else if (name === 'undefined') {
+    return 'unknown';
+  } else {
+    raw = name;
   }
 
-  return type;
+  return usePopover ? (
+    <Popover content={<PropTypePopoverContent>{raw}</PropTypePopoverContent>}>
+      <PropTypeButton minimal iconEnd={<IconInfo />}>
+        {type}
+      </PropTypeButton>
+    </Popover>
+  ) : (
+    raw
+  );
 }
 
 function getPropTableRows(propDoc) {
@@ -118,14 +180,6 @@ function getPropTableRows(propDoc) {
     });
 }
 
-type PropTableRowProps = {
-  defaultValue?: any,
-  description?: string,
-  name: string,
-  type: string,
-  required?: boolean
-};
-
 function PropTableRow({
   defaultValue,
   description,
@@ -150,10 +204,6 @@ function PropTableRow({
     </TableRow>
   );
 }
-
-type Props = {
-  propDoc: Object
-};
 
 export default function PropTable({ propDoc = {} }: Props) {
   return (
