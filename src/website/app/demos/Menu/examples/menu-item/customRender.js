@@ -36,7 +36,7 @@ help match the other MenuItems, you have access to its
 might be a helpful template. Some things to keep in mind:
 
 1. Remember to include \`:focus\`, \`:hover\`, and \`:active\` styles.
-  1. If this is to be used for a [Dropdown](../dropdown), also apply your
+  - If this is to be used for a [Dropdown](../dropdown), also apply your
      focus/hover styles when \`props.isHighlighted === true\`.
 1. Remember to accommodate the disabled state (\`props.disabled === true\`).
 1. If your app supports RTL languages, you can use \`theme.direction\` to
@@ -79,7 +79,7 @@ might be a helpful template. Some things to keep in mind:
             includeStyleReset: true
           }
         );
-        const Actor = createStyledComponent('span', {
+        const Work = createStyledComponent('span', {
           color: theme.color_text_caption,
           display: 'block',
           fontSize: theme.fontSize_mouse,
@@ -118,10 +118,10 @@ might be a helpful template. Some things to keep in mind:
 
         return (
           <Root {...rootProps}>
-            {item.avatar && <Avatar alt={'Photo of ' + item.character} src={item.avatar} />}
+            {item.avatar && <Avatar alt={'Photo of ' + item.username} src={item.avatar} />}
             <Content>
-              {item.character}
-              {item.actor && <Actor>{item.actor}</Actor>}
+              {item.username}
+              {item.work && <Work>{item.work}</Work>}
             </Content>
           </Root>
         );
@@ -131,21 +131,21 @@ might be a helpful template. Some things to keep in mind:
         {
           items: [
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/102/100',
-              character: 'Captain Steve Zissou',
+              username: 'Newton',
+              avatar: '/images/215x210_avatar.png',
+              work: 'Principia Mathematica',
               render: CustomRender
             },
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/101/100',
-              character: 'Dr. Peter Venkman',
+              username: 'Descartes',
+              avatar: '/images/215x210_avatar.png',
+              work: 'La Géométrie',
               render: CustomRender
             },
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/100/100',
-              character: 'Bob Harris',
+              username: 'Euclid',
+              avatar: '/images/215x210_avatar.png',
+              work: 'Elements',
               render: CustomRender
             }
           ]

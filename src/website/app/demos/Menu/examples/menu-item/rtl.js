@@ -16,7 +16,7 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../utils';
-import IconCloud from '../../../../../../Icon/IconCloud';
+import IconHelp from '../../../../../../Icon/IconHelp';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import ThemeProvider from '../../../../../../ThemeProvider';
 import DemoLayout from '../../components/DemoLayout';
@@ -26,16 +26,17 @@ export default {
   title: 'RTL Support',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: '',
-  scope: { DemoLayout, IconCloud, Menu, MenuItem, ThemeProvider },
+  description: `MenuItems with Icons are reversed when the \`rtl\` prop is set.
+A subset of Icons that [convey directionality](./icon#rtl) will be reversed.`,
+  scope: { DemoLayout, IconHelp, Menu, MenuItem, ThemeProvider },
   source: `
     <DemoLayout dir="rtl">
       <ThemeProvider theme={{ direction: 'rtl' }}>
         <Menu>
           <MenuItem>نص عنصر القائمة</MenuItem>
           <MenuItem secondaryText="نص ثانوي">نص عنصر القائمة</MenuItem>
-          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
+          <MenuItem iconStart={<IconHelp />}>رمز البدء</MenuItem>
+          <MenuItem iconEnd={<IconHelp />}>رمز النهاية</MenuItem>
         </Menu>
       </ThemeProvider>
     </DemoLayout>`

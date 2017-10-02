@@ -35,8 +35,8 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'placement',
   title: 'Placement',
-  description:
-    'The `placement` prop determines the placement of the Dropdown menu relative to the trigger.',
+  description: `The \`placement\` prop determines the initial placement of the Dropdown content relative to the trigger.
+The Dropdown will react to viewport edges and scrolling.`,
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>

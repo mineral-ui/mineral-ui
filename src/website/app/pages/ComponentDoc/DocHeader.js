@@ -22,10 +22,13 @@ import Link from '../../Link';
 import Markdown from '../../Markdown';
 
 type Props = {
+  bestPractices?: Array<Object>,
   children?: string,
   className?: string,
   examples?: Array<any>,
-  title: string
+  props?: boolean,
+  title: string,
+  whenHowToUse?: string
 };
 
 const styles = {
@@ -66,10 +69,13 @@ const SubNav = createStyledComponent('nav', styles.subnav);
 const Title = createStyledComponent(Heading, styles.title);
 
 export default function DocHeader({
+  bestPractices,
   children,
   className,
   examples,
-  title
+  props,
+  title,
+  whenHowToUse
 }: Props) {
   // there is no Examples h2, so we just link to the first example.
   let firstExampleId = 'examples';
@@ -77,18 +83,28 @@ export default function DocHeader({
     firstExampleId = examples[0].id;
   }
 
+  const navElements = []; // only show the tabs menu if there is more than one tab
+  if (examples && examples.length > 0) {
+    navElements.push(
+      <NavElement href={`#${firstExampleId}`}>Examples</NavElement>
+    );
+  }
+
+  if (props) {
+    navElements.push(
+      <NavElement href="#api-and-theme">API & Theme</NavElement>
+    );
+  }
+
+  if (whenHowToUse || bestPractices) {
+    navElements.push(<NavElement href="#usage">Usage</NavElement>);
+  }
+
   return (
     <Root className={className}>
       <Title level={1}>{title}</Title>
       <Lede>{children}</Lede>
-      <SubNav>
-        {examples &&
-          examples.length > 0 && (
-            <NavElement href={`#${firstExampleId}`}>Examples</NavElement>
-          )}
-        <NavElement href="#api-and-theme">API & Theme</NavElement>
-        <NavElement href="#usage">Usage</NavElement>
-      </SubNav>
+      {navElements.length > 1 && <SubNav>{navElements}</SubNav>}
     </Root>
   );
 }

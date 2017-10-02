@@ -24,8 +24,8 @@ export default {
   title: 'Secondary Text',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'A MenuItem can render secondary text, which will wrap when necessary.',
+  description: `A MenuItem can render secondary text, which will wrap when necessary.
+Use secondary text to give hints about extra functionality or show app status related to the action.`,
   scope: { DemoLayout, Menu, MenuItem },
   source: `
     <DemoLayout>

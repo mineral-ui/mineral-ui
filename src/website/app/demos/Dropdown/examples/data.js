@@ -23,9 +23,11 @@ import CustomRender from '../../Menu/components/CustomRender';
 export default {
   id: 'data',
   title: 'Data-Driven',
-  description: `Dropdown items are defined by an array of data, with the
-    structure below. Object properties in the \`items\` array(s) will be passed
-    on to the [MenuItem](../menu-item).`,
+  description: `Dropdown content can also be defined by an array of data, with the structure shown in the code example below.
+Object properties in the \`items\` array(s) will be passed on to the [MenuItem](../menu-item).
+
+A new [MenuGroup](../menu-group) will be created for each array object that has an \`items\` property defined.
+[MenuDividers](../menu-divider) are created simply by passing \`{divider: true}\` as an item.`,
   scope: {
     Button,
     CustomRender,
@@ -67,12 +69,12 @@ export default {
             },
             {
               text: 'Disabled menu item',
-              onClick: event => { console.log(event); },
+              onClick: () => { console.log('onClick is not triggered for disabled MenuItems'); },
               disabled: true
             },
             {
               text: 'Custom render',
-              avatar: 'http://www.fillmurray.com/102/100',
+              avatar: '/images/215x210_avatar.png',
               href: '/components/menu-item#custom-render', // <-- Details here
               render: CustomRender
             }

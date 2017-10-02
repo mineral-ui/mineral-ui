@@ -50,7 +50,10 @@ const Root = createStyledComponent(
 );
 
 /**
- * Menus display a list of [MenuItems](../menu-item). The items can have actions or be used for navigation.
+ * A Menu presents a list of options representing actions or navigation.
+ * Composed of [MenuItems](../menu-item), Menu is usually combined with [Popover](../popover) to create a [Dropdown](../dropdown).
+ *
+ * Menus are great for collecting actions in one place so your users don't need to scan the entire document to find a feature.
  */
 export default function Menu({
   children,

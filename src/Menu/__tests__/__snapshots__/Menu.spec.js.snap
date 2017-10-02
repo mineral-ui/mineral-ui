@@ -1428,7 +1428,7 @@ exports[`Menu demo examples custom-render 1`] = `
             includeStyleReset: true
           }
         );
-        const Actor = createStyledComponent('span', {
+        const Work = createStyledComponent('span', {
           color: theme.color_text_caption,
           display: 'block',
           fontSize: theme.fontSize_mouse,
@@ -1467,10 +1467,10 @@ exports[`Menu demo examples custom-render 1`] = `
 
         return (
           <Root {...rootProps}>
-            {item.avatar && <Avatar alt={'Photo of ' + item.character} src={item.avatar} />}
+            {item.avatar && <Avatar alt={'Photo of ' + item.username} src={item.avatar} />}
             <Content>
-              {item.character}
-              {item.actor && <Actor>{item.actor}</Actor>}
+              {item.username}
+              {item.work && <Work>{item.work}</Work>}
             </Content>
           </Root>
         );
@@ -1480,21 +1480,21 @@ exports[`Menu demo examples custom-render 1`] = `
         {
           items: [
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/102/100',
-              character: 'Captain Steve Zissou',
+              username: 'Newton',
+              avatar: '/images/215x210_avatar.png',
+              work: 'Principia Mathematica',
               render: CustomRender
             },
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/101/100',
-              character: 'Dr. Peter Venkman',
+              username: 'Descartes',
+              avatar: '/images/215x210_avatar.png',
+              work: 'La Géométrie',
               render: CustomRender
             },
             {
-              actor: 'Bill Murray',
-              avatar: 'http://www.fillmurray.com/100/100',
-              character: 'Bob Harris',
+              username: 'Euclid',
+              avatar: '/images/215x210_avatar.png',
+              work: 'Elements',
               render: CustomRender
             }
           ]
@@ -1548,22 +1548,22 @@ exports[`Menu demo examples custom-render 1`] = `
                         Object {
                           "items": Array [
                             Object {
-                              "actor": "Bill Murray",
-                              "avatar": "http://www.fillmurray.com/102/100",
-                              "character": "Captain Steve Zissou",
+                              "avatar": "/images/215x210_avatar.png",
                               "render": [Function],
+                              "username": "Newton",
+                              "work": "Principia Mathematica",
                             },
                             Object {
-                              "actor": "Bill Murray",
-                              "avatar": "http://www.fillmurray.com/101/100",
-                              "character": "Dr. Peter Venkman",
+                              "avatar": "/images/215x210_avatar.png",
                               "render": [Function],
+                              "username": "Descartes",
+                              "work": "La Géométrie",
                             },
                             Object {
-                              "actor": "Bill Murray",
-                              "avatar": "http://www.fillmurray.com/100/100",
-                              "character": "Bob Harris",
+                              "avatar": "/images/215x210_avatar.png",
                               "render": [Function],
+                              "username": "Euclid",
+                              "work": "Elements",
                             },
                           ],
                         },
@@ -1583,38 +1583,38 @@ exports[`Menu demo examples custom-render 1`] = `
                               className="glamor-12"
                             >
                               <MenuItem
-                                actor="Bill Murray"
-                                avatar="http://www.fillmurray.com/102/100"
-                                character="Captain Steve Zissou"
+                                avatar="/images/215x210_avatar.png"
                                 item={
                                   Object {
-                                    "actor": "Bill Murray",
-                                    "avatar": "http://www.fillmurray.com/102/100",
-                                    "character": "Captain Steve Zissou",
+                                    "avatar": "/images/215x210_avatar.png",
                                     "render": [Function],
+                                    "username": "Newton",
+                                    "work": "Principia Mathematica",
                                   }
                                 }
                                 key="0"
                                 render={[Function]}
+                                username="Newton"
+                                work="Principia Mathematica"
                               >
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/102/100",
-                                      "character": "Captain Steve Zissou",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "render": [Function],
+                                      "username": "Newton",
+                                      "work": "Principia Mathematica",
                                     }
                                   }
                                   itemProps={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/102/100",
-                                      "character": "Captain Steve Zissou",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
+                                      "username": "Newton",
                                       "variant": "regular",
+                                      "work": "Principia Mathematica",
                                     }
                                   }
                                   render={[Function]}
@@ -1622,21 +1622,21 @@ exports[`Menu demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/102/100",
-                                        "character": "Captain Steve Zissou",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "render": [Function],
+                                        "username": "Newton",
+                                        "work": "Principia Mathematica",
                                       }
                                     }
                                     itemProps={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/102/100",
-                                        "character": "Captain Steve Zissou",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
+                                        "username": "Newton",
                                         "variant": "regular",
+                                        "work": "Principia Mathematica",
                                       }
                                     }
                                     render={[Function]}
@@ -1770,13 +1770,13 @@ exports[`Menu demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      actor="Bill Murray"
-                                      avatar="http://www.fillmurray.com/102/100"
-                                      character="Captain Steve Zissou"
+                                      avatar="/images/215x210_avatar.png"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
+                                      username="Newton"
                                       variant="regular"
+                                      work="Principia Mathematica"
                                     >
                                       <div
                                         className="glamor-3"
@@ -1784,25 +1784,25 @@ exports[`Menu demo examples custom-render 1`] = `
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
-                                          alt="Photo of Captain Steve Zissou"
-                                          src="http://www.fillmurray.com/102/100"
+                                          alt="Photo of Newton"
+                                          src="/images/215x210_avatar.png"
                                         >
                                           <img
-                                            alt="Photo of Captain Steve Zissou"
+                                            alt="Photo of Newton"
                                             className="glamor-0"
-                                            src="http://www.fillmurray.com/102/100"
+                                            src="/images/215x210_avatar.png"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
                                           <span
                                             className="glamor-2"
                                           >
-                                            Captain Steve Zissou
+                                            Newton
                                             <glamorous(span)>
                                               <span
                                                 className="glamor-1"
                                               >
-                                                Bill Murray
+                                                Principia Mathematica
                                               </span>
                                             </glamorous(span)>
                                           </span>
@@ -1813,38 +1813,38 @@ exports[`Menu demo examples custom-render 1`] = `
                                 </ThemedComponent>
                               </MenuItem>
                               <MenuItem
-                                actor="Bill Murray"
-                                avatar="http://www.fillmurray.com/101/100"
-                                character="Dr. Peter Venkman"
+                                avatar="/images/215x210_avatar.png"
                                 item={
                                   Object {
-                                    "actor": "Bill Murray",
-                                    "avatar": "http://www.fillmurray.com/101/100",
-                                    "character": "Dr. Peter Venkman",
+                                    "avatar": "/images/215x210_avatar.png",
                                     "render": [Function],
+                                    "username": "Descartes",
+                                    "work": "La Géométrie",
                                   }
                                 }
                                 key="1"
                                 render={[Function]}
+                                username="Descartes"
+                                work="La Géométrie"
                               >
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/101/100",
-                                      "character": "Dr. Peter Venkman",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "render": [Function],
+                                      "username": "Descartes",
+                                      "work": "La Géométrie",
                                     }
                                   }
                                   itemProps={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/101/100",
-                                      "character": "Dr. Peter Venkman",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
+                                      "username": "Descartes",
                                       "variant": "regular",
+                                      "work": "La Géométrie",
                                     }
                                   }
                                   render={[Function]}
@@ -1852,21 +1852,21 @@ exports[`Menu demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/101/100",
-                                        "character": "Dr. Peter Venkman",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "render": [Function],
+                                        "username": "Descartes",
+                                        "work": "La Géométrie",
                                       }
                                     }
                                     itemProps={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/101/100",
-                                        "character": "Dr. Peter Venkman",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
+                                        "username": "Descartes",
                                         "variant": "regular",
+                                        "work": "La Géométrie",
                                       }
                                     }
                                     render={[Function]}
@@ -2000,13 +2000,13 @@ exports[`Menu demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      actor="Bill Murray"
-                                      avatar="http://www.fillmurray.com/101/100"
-                                      character="Dr. Peter Venkman"
+                                      avatar="/images/215x210_avatar.png"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
+                                      username="Descartes"
                                       variant="regular"
+                                      work="La Géométrie"
                                     >
                                       <div
                                         className="glamor-3"
@@ -2014,25 +2014,25 @@ exports[`Menu demo examples custom-render 1`] = `
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
-                                          alt="Photo of Dr. Peter Venkman"
-                                          src="http://www.fillmurray.com/101/100"
+                                          alt="Photo of Descartes"
+                                          src="/images/215x210_avatar.png"
                                         >
                                           <img
-                                            alt="Photo of Dr. Peter Venkman"
+                                            alt="Photo of Descartes"
                                             className="glamor-0"
-                                            src="http://www.fillmurray.com/101/100"
+                                            src="/images/215x210_avatar.png"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
                                           <span
                                             className="glamor-2"
                                           >
-                                            Dr. Peter Venkman
+                                            Descartes
                                             <glamorous(span)>
                                               <span
                                                 className="glamor-1"
                                               >
-                                                Bill Murray
+                                                La Géométrie
                                               </span>
                                             </glamorous(span)>
                                           </span>
@@ -2043,38 +2043,38 @@ exports[`Menu demo examples custom-render 1`] = `
                                 </ThemedComponent>
                               </MenuItem>
                               <MenuItem
-                                actor="Bill Murray"
-                                avatar="http://www.fillmurray.com/100/100"
-                                character="Bob Harris"
+                                avatar="/images/215x210_avatar.png"
                                 item={
                                   Object {
-                                    "actor": "Bill Murray",
-                                    "avatar": "http://www.fillmurray.com/100/100",
-                                    "character": "Bob Harris",
+                                    "avatar": "/images/215x210_avatar.png",
                                     "render": [Function],
+                                    "username": "Euclid",
+                                    "work": "Elements",
                                   }
                                 }
                                 key="2"
                                 render={[Function]}
+                                username="Euclid"
+                                work="Elements"
                               >
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/100/100",
-                                      "character": "Bob Harris",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "render": [Function],
+                                      "username": "Euclid",
+                                      "work": "Elements",
                                     }
                                   }
                                   itemProps={
                                     Object {
-                                      "actor": "Bill Murray",
-                                      "avatar": "http://www.fillmurray.com/100/100",
-                                      "character": "Bob Harris",
+                                      "avatar": "/images/215x210_avatar.png",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
+                                      "username": "Euclid",
                                       "variant": "regular",
+                                      "work": "Elements",
                                     }
                                   }
                                   render={[Function]}
@@ -2082,21 +2082,21 @@ exports[`Menu demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/100/100",
-                                        "character": "Bob Harris",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "render": [Function],
+                                        "username": "Euclid",
+                                        "work": "Elements",
                                       }
                                     }
                                     itemProps={
                                       Object {
-                                        "actor": "Bill Murray",
-                                        "avatar": "http://www.fillmurray.com/100/100",
-                                        "character": "Bob Harris",
+                                        "avatar": "/images/215x210_avatar.png",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
+                                        "username": "Euclid",
                                         "variant": "regular",
+                                        "work": "Elements",
                                       }
                                     }
                                     render={[Function]}
@@ -2230,13 +2230,13 @@ exports[`Menu demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      actor="Bill Murray"
-                                      avatar="http://www.fillmurray.com/100/100"
-                                      character="Bob Harris"
+                                      avatar="/images/215x210_avatar.png"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
+                                      username="Euclid"
                                       variant="regular"
+                                      work="Elements"
                                     >
                                       <div
                                         className="glamor-3"
@@ -2244,25 +2244,25 @@ exports[`Menu demo examples custom-render 1`] = `
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
-                                          alt="Photo of Bob Harris"
-                                          src="http://www.fillmurray.com/100/100"
+                                          alt="Photo of Euclid"
+                                          src="/images/215x210_avatar.png"
                                         >
                                           <img
-                                            alt="Photo of Bob Harris"
+                                            alt="Photo of Euclid"
                                             className="glamor-0"
-                                            src="http://www.fillmurray.com/100/100"
+                                            src="/images/215x210_avatar.png"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
                                           <span
                                             className="glamor-2"
                                           >
-                                            Bob Harris
+                                            Euclid
                                             <glamorous(span)>
                                               <span
                                                 className="glamor-1"
                                               >
-                                                Bill Murray
+                                                Elements
                                               </span>
                                             </glamorous(span)>
                                           </span>
@@ -2754,11 +2754,11 @@ exports[`Menu demo examples data 1`] = `
             {
               text: 'Disabled menu item',
               disabled: true,
-              onClick: event => { console.log(event); }
+              onClick: () => { console.log('onClick is not triggered for disabled items'); }
             },
             {
               text: 'Custom render',
-              avatar: 'http://www.fillmurray.com/102/100',
+              avatar: '/images/125x125.png',
               href: '/components/menu-item#custom-render', // <-- Details here
               render: CustomRender
             }
@@ -2841,7 +2841,7 @@ exports[`Menu demo examples data 1`] = `
                               "text": "Disabled menu item",
                             },
                             Object {
-                              "avatar": "http://www.fillmurray.com/102/100",
+                              "avatar": "/images/125x125.png",
                               "href": "/components/menu-item#custom-render",
                               "render": [Function],
                               "text": "Custom render",
@@ -3339,11 +3339,11 @@ exports[`Menu demo examples data 1`] = `
                                 </MenuItem>
                               </MenuItem>
                               <MenuItem
-                                avatar="http://www.fillmurray.com/102/100"
+                                avatar="/images/125x125.png"
                                 href="/components/menu-item#custom-render"
                                 item={
                                   Object {
-                                    "avatar": "http://www.fillmurray.com/102/100",
+                                    "avatar": "/images/125x125.png",
                                     "href": "/components/menu-item#custom-render",
                                     "render": [Function],
                                     "text": "Custom render",
@@ -3355,7 +3355,7 @@ exports[`Menu demo examples data 1`] = `
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "avatar": "http://www.fillmurray.com/102/100",
+                                      "avatar": "/images/125x125.png",
                                       "href": "/components/menu-item#custom-render",
                                       "render": [Function],
                                       "text": "Custom render",
@@ -3363,7 +3363,7 @@ exports[`Menu demo examples data 1`] = `
                                   }
                                   itemProps={
                                     Object {
-                                      "avatar": "http://www.fillmurray.com/102/100",
+                                      "avatar": "/images/125x125.png",
                                       "children": "Custom render",
                                       "href": "/components/menu-item#custom-render",
                                       "onKeyDown": undefined,
@@ -3376,7 +3376,7 @@ exports[`Menu demo examples data 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "avatar": "http://www.fillmurray.com/102/100",
+                                        "avatar": "/images/125x125.png",
                                         "href": "/components/menu-item#custom-render",
                                         "render": [Function],
                                         "text": "Custom render",
@@ -3384,7 +3384,7 @@ exports[`Menu demo examples data 1`] = `
                                     }
                                     itemProps={
                                       Object {
-                                        "avatar": "http://www.fillmurray.com/102/100",
+                                        "avatar": "/images/125x125.png",
                                         "children": "Custom render",
                                         "href": "/components/menu-item#custom-render",
                                         "onKeyDown": undefined,
@@ -3523,7 +3523,7 @@ exports[`Menu demo examples data 1`] = `
                                     }
                                   >
                                     <glamorous(a)
-                                      avatar="http://www.fillmurray.com/102/100"
+                                      avatar="/images/125x125.png"
                                       disabled={undefined}
                                       href="/components/menu-item#custom-render"
                                       onKeyDown={undefined}
@@ -3538,12 +3538,12 @@ exports[`Menu demo examples data 1`] = `
                                       >
                                         <glamorous(img)
                                           alt="Photo of Custom render"
-                                          src="http://www.fillmurray.com/102/100"
+                                          src="/images/125x125.png"
                                         >
                                           <img
                                             alt="Photo of Custom render"
                                             className="glamor-36"
-                                            src="http://www.fillmurray.com/102/100"
+                                            src="/images/125x125.png"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
@@ -3576,21 +3576,21 @@ exports[`Menu demo examples data 1`] = `
 `;
 
 exports[`Menu demo examples disabled 1`] = `
-.glamor-16,
-[data-glamor-16] {
+.glamor-21,
+[data-glamor-21] {
   overflow: hidden;
 }
 
-.glamor-16 > div,
-[data-glamor-16] > div {
+.glamor-21 > div,
+[data-glamor-21] > div {
   background-color: #fff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.glamor-15,
-[data-glamor-15] {
+.glamor-20,
+[data-glamor-20] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -3599,13 +3599,53 @@ exports[`Menu demo examples disabled 1`] = `
   outline: 0;
 }
 
-.glamor-15 *,
-[data-glamor-15] *,
-.glamor-15 *::before,
-[data-glamor-15] *::before,
-.glamor-15 *::after,
-[data-glamor-15] *::after {
+.glamor-20 *,
+[data-glamor-20] *,
+.glamor-20 *::before,
+[data-glamor-20] *::before,
+.glamor-20 *::after,
+[data-glamor-20] *::after {
   box-sizing: inherit;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+.glamor-4:focus,
+[data-glamor-4]:focus,
+.glamor-4[data-simulate-focus],
+[data-glamor-4][data-simulate-focus] {
+  background-color: #ebeff5;
+  outline: 0;
+}
+
+.glamor-4:hover,
+[data-glamor-4]:hover,
+.glamor-4[data-simulate-hover],
+[data-glamor-4][data-simulate-hover] {
+  background-color: #ebeff5;
+}
+
+.glamor-4:active,
+[data-glamor-4]:active,
+.glamor-4[data-simulate-active],
+[data-glamor-4][data-simulate-active] {
+  background-color: #c8d1e0;
+}
+
+.glamor-4 [role="icon"],
+[data-glamor-4] [role="icon"] {
+  box-sizing: content-box;
+  display: block;
+  fill: #1f5dc2;
+  flex: 0 0 auto;
+  padding: 0.25em;
+  -webkit-flex: 0 0 auto;
 }
 
 .glamor-3,
@@ -3655,23 +3695,23 @@ exports[`Menu demo examples disabled 1`] = `
   word-break: break-word;
 }
 
-.glamor-4,
-[data-glamor-4] {
+.glamor-14,
+[data-glamor-14] {
   color: #afbacc;
   cursor: default;
   font-weight: 400;
   padding: 0.5em;
 }
 
-.glamor-4:focus,
-[data-glamor-4]:focus,
-.glamor-4[data-simulate-focus],
-[data-glamor-4][data-simulate-focus] {
+.glamor-14:focus,
+[data-glamor-14]:focus,
+.glamor-14[data-simulate-focus],
+[data-glamor-14][data-simulate-focus] {
   outline: 0;
 }
 
-.glamor-4 [role="icon"],
-[data-glamor-4] [role="icon"] {
+.glamor-14 [role="icon"],
+[data-glamor-14] [role="icon"] {
   box-sizing: content-box;
   display: block;
   fill: currentColor;
@@ -3815,15 +3855,12 @@ exports[`Menu demo examples disabled 1`] = `
       code="
     <DemoLayout>
       <Menu>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Light years
+        <MenuItem>New File</MenuItem>
+        <MenuItem>Open</MenuItem>
+        <MenuItem disabled onClick={() => console.log('onClick is not triggered for disabled MenuItems')}>
+          Open Recent
         </MenuItem>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Star stuff
-        </MenuItem>
-        <MenuItem disabled onClick={event => { console.log(event) }}>
-          Encyclopaedia galactica
-        </MenuItem>
+        <MenuItem>Save</MenuItem>
       </Menu>
     </DemoLayout>"
       mountStylesheet={false}
@@ -3852,29 +3889,26 @@ exports[`Menu demo examples disabled 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-16"
+                className="glamor-21"
               >
                 <Menu>
                   <Menu>
                     <div
-                      className="glamor-15"
+                      className="glamor-20"
                     >
-                      <MenuItem
-                        disabled={true}
-                        onClick={[Function]}
-                      >
+                      <MenuItem>
                         <MenuItem
-                          disabled={true}
+                          disabled={undefined}
                           onClick={undefined}
-                          onKeyDown={[Function]}
-                          tabIndex="-1"
+                          onKeyDown={undefined}
+                          tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
                             onClick={undefined}
-                            onKeyDown={[Function]}
-                            tabIndex="-1"
+                            onKeyDown={undefined}
+                            tabIndex={0}
                           >
                             <glamorous(span)>
                               <span
@@ -3888,7 +3922,48 @@ exports[`Menu demo examples disabled 1`] = `
                                       <span
                                         className="glamor-0"
                                       >
-                                        Light years
+                                        New File
+                                      </span>
+                                    </glamorous(span)>
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-1"
+                                      />
+                                    </glamorous(span)>
+                                  </span>
+                                </glamorous(span)>
+                              </span>
+                            </glamorous(span)>
+                          </div>
+                        </MenuItem>
+                      </MenuItem>
+                      <MenuItem>
+                        <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
+                          tabIndex={0}
+                          variant="regular"
+                        >
+                          <div
+                            className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
+                            tabIndex={0}
+                          >
+                            <glamorous(span)>
+                              <span
+                                className="glamor-3"
+                              >
+                                <glamorous(span)>
+                                  <span
+                                    className="glamor-2"
+                                  >
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-0"
+                                      >
+                                        Open
                                       </span>
                                     </glamorous(span)>
                                     <glamorous(span)>
@@ -3915,7 +3990,7 @@ exports[`Menu demo examples disabled 1`] = `
                           variant="regular"
                         >
                           <div
-                            className="glamor-4"
+                            className="glamor-14"
                             onClick={undefined}
                             onKeyDown={[Function]}
                             tabIndex="-1"
@@ -3932,7 +4007,7 @@ exports[`Menu demo examples disabled 1`] = `
                                       <span
                                         className="glamor-0"
                                       >
-                                        Star stuff
+                                        Open Recent
                                       </span>
                                     </glamorous(span)>
                                     <glamorous(span)>
@@ -3947,22 +4022,19 @@ exports[`Menu demo examples disabled 1`] = `
                           </div>
                         </MenuItem>
                       </MenuItem>
-                      <MenuItem
-                        disabled={true}
-                        onClick={[Function]}
-                      >
+                      <MenuItem>
                         <MenuItem
-                          disabled={true}
+                          disabled={undefined}
                           onClick={undefined}
-                          onKeyDown={[Function]}
-                          tabIndex="-1"
+                          onKeyDown={undefined}
+                          tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
                             onClick={undefined}
-                            onKeyDown={[Function]}
-                            tabIndex="-1"
+                            onKeyDown={undefined}
+                            tabIndex={0}
                           >
                             <glamorous(span)>
                               <span
@@ -3976,7 +4048,7 @@ exports[`Menu demo examples disabled 1`] = `
                                       <span
                                         className="glamor-0"
                                       >
-                                        Encyclopaedia galactica
+                                        Save
                                       </span>
                                     </glamorous(span)>
                                     <glamorous(span)>
@@ -8889,18 +8961,20 @@ exports[`Menu demo examples rtl 1`] = `
   word-break: break-word;
 }
 
+.glamor-0,
+[data-glamor-0] {
+  margin-left: 0.5714285714285714em;
+  word-break: break-word;
+}
+
 .glamor-10,
 [data-glamor-10] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
+  transform: scaleX(-1);
   width: 1em;
-}
-
-.glamor-0,
-[data-glamor-0] {
-  margin-left: 0.5714285714285714em;
-  word-break: break-word;
+  -webkit-transform: scaleX(-1);
 }
 
 <ThemeProvider>
@@ -9041,8 +9115,8 @@ exports[`Menu demo examples rtl 1`] = `
         <Menu>
           <MenuItem>نص عنصر القائمة</MenuItem>
           <MenuItem secondaryText=\\"نص ثانوي\\">نص عنصر القائمة</MenuItem>
-          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
+          <MenuItem iconStart={<IconHelp />}>رمز البدء</MenuItem>
+          <MenuItem iconEnd={<IconHelp />}>رمز النهاية</MenuItem>
         </Menu>
       </ThemeProvider>
     </DemoLayout>"
@@ -9051,7 +9125,7 @@ exports[`Menu demo examples rtl 1`] = `
       scope={
         Object {
           "DemoLayout": [Function],
-          "IconCloud": [Function],
+          "IconHelp": [Function],
           "Menu": [Function],
           "MenuItem": [Function],
           "ThemeProvider": [Function],
@@ -9063,7 +9137,7 @@ exports[`Menu demo examples rtl 1`] = `
         scope={
           Object {
             "DemoLayout": [Function],
-            "IconCloud": [Function],
+            "IconHelp": [Function],
             "Menu": [Function],
             "MenuItem": [Function],
             "ThemeProvider": [Function],
@@ -9187,7 +9261,7 @@ exports[`Menu demo examples rtl 1`] = `
                             </MenuItem>
                           </MenuItem>
                           <MenuItem
-                            iconStart={<IconCloud />}
+                            iconStart={<IconHelp />}
                           >
                             <MenuItem
                               disabled={undefined}
@@ -9206,18 +9280,18 @@ exports[`Menu demo examples rtl 1`] = `
                                   <span
                                     className="glamor-3"
                                   >
-                                    <IconCloud
+                                    <IconHelp
                                       size="medium"
                                     >
                                       <Icon
-                                        rtl={false}
+                                        rtl={true}
                                         size="medium"
                                       >
                                         <glamorous(svg)
                                           aria-hidden={true}
                                           aria-labelledby={undefined}
                                           role="icon"
-                                          rtl={false}
+                                          rtl={true}
                                           size="medium"
                                           viewBox="0 0 24 24"
                                         >
@@ -9230,13 +9304,13 @@ exports[`Menu demo examples rtl 1`] = `
                                           >
                                             <g>
                                               <path
-                                                d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
                                               />
                                             </g>
                                           </svg>
                                         </glamorous(svg)>
                                       </Icon>
-                                    </IconCloud>
+                                    </IconHelp>
                                     <glamorous(span)>
                                       <span
                                         className="glamor-2"
@@ -9261,7 +9335,7 @@ exports[`Menu demo examples rtl 1`] = `
                             </MenuItem>
                           </MenuItem>
                           <MenuItem
-                            iconEnd={<IconCloud />}
+                            iconEnd={<IconHelp />}
                           >
                             <MenuItem
                               disabled={undefined}
@@ -9298,18 +9372,18 @@ exports[`Menu demo examples rtl 1`] = `
                                         </glamorous(span)>
                                       </span>
                                     </glamorous(span)>
-                                    <IconCloud
+                                    <IconHelp
                                       size="medium"
                                     >
                                       <Icon
-                                        rtl={false}
+                                        rtl={true}
                                         size="medium"
                                       >
                                         <glamorous(svg)
                                           aria-hidden={true}
                                           aria-labelledby={undefined}
                                           role="icon"
-                                          rtl={false}
+                                          rtl={true}
                                           size="medium"
                                           viewBox="0 0 24 24"
                                         >
@@ -9322,13 +9396,13 @@ exports[`Menu demo examples rtl 1`] = `
                                           >
                                             <g>
                                               <path
-                                                d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
                                               />
                                             </g>
                                           </svg>
                                         </glamorous(svg)>
                                       </Icon>
-                                    </IconCloud>
+                                    </IconHelp>
                                   </span>
                                 </glamorous(span)>
                               </div>

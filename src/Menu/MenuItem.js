@@ -276,7 +276,11 @@ const customRender = ({ render, item, ...restProps }: Props) => {
 };
 
 /**
- * Menu item component
+ * A MenuItem represents an option in a [Menu](../menu).
+ * They can be used to trigger actions or navigate to a new location.
+ * MenuItems provide context through optional variants, secondary text, or [Icons](../icon).
+ *
+ * A custom rendering hook is exposed to enable any extra functionality your app requires.
  */
 export default function MenuItem({
   tabIndex = 0,

@@ -22,11 +22,16 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'menu',
-  title: 'Menu',
+  title: 'Example',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'Menus are composed of [MenuDivider](../menu-divider), [MenuGroup](../menu-group), and [MenuItem](../menu-item).',
+  description: `Menus are composed of [MenuDivider](../menu-divider), [MenuGroup](../menu-group), and [MenuItem](../menu-item).
+Menus display a list of actions or navigation options.
+
+<Callout title="Note">
+  Menus normally occupy the full available width of their container.
+  The Menus here are width-constrained for illustration purposes.
+</Callout>`,
   scope: { DemoLayout, IconCloud, Menu, MenuDivider, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

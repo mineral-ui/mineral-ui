@@ -16,15 +16,15 @@
 
 /* @flow */
 import Button from '../../../../../Button';
-import IconCloud from '../../../../../Icon/IconCloud';
 import Dropdown from '../../../../../Dropdown';
 import data from '../../Menu/components/menuData';
 
 export default {
   id: 'basic',
-  title: 'Dropdown',
-  description: 'Basic dropdown.',
-  scope: { Button, data, Dropdown, IconCloud },
+  title: 'Example',
+  description: `Placement is relative to the trigger.
+Dropdowns will automatically change position relative to the trigger depending on viewport constraints.`,
+  scope: { Button, data, Dropdown },
   source: `
     <Dropdown data={data}>
       <Button>Menu</Button>
