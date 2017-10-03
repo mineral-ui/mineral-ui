@@ -33,7 +33,7 @@ type Props = {
   iconStart?: React$Element<*>,
   /** Display the item in an active style */
   isHighlighted?: boolean,
-  /** Item data (see example below) */
+  /** Item data (see [example](../menu#data)) */
   item?: Item,
   /** Called with the click event */
   onClick?: (event: SyntheticEvent<>) => void,

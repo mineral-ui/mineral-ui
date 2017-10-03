@@ -21,12 +21,12 @@ import { createStyledComponent } from '../utils';
 type Props = {
   /** Content of the Link */
   children?: React$Node,
-  /** A URL or a URL fragment that the Link points to */
+  /** A URL or URL fragment to which the Link points */
   href?: string,
-  /** Element to be used as the root node - e.g. "a" or { ReactRouterLink } */
-  element?: $FlowFixMe,
+  /** Element to be used as the root node - e.g. "a" or {&nbsp;ReactRouterLink&nbsp;} */
+  element?: $FlowFixMe, // Should allow string | React class
   /** Available variants */
-  variant?: 'regular' | 'danger' | 'success' | 'warning' // Should allow string | React class
+  variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
 export const componentTheme = (baseTheme: Object) => ({
