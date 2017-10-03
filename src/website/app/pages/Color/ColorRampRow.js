@@ -110,9 +110,7 @@ export default function ColorRampRow({ name }: Props) {
   return (
     <Row color={main}>
       <div>
-        <ColorName color={readable}>
-          {name}
-        </ColorName>
+        <ColorName color={readable}>{name}</ColorName>
         <HSL color={readable}>{`hsl(${hsl[0]}, ${hsl[1]}%, ${hsl[2]}%)`}</HSL>
       </div>
       <AccessibilityInfo>

@@ -34,8 +34,6 @@ export default function ThemeProvider({
   theme = mineralTheme
 }: Props) {
   return (
-    <GlamorousThemeProvider theme={theme}>
-      {children}
-    </GlamorousThemeProvider>
+    <GlamorousThemeProvider theme={theme}>{children}</GlamorousThemeProvider>
   );
 }

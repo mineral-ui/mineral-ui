@@ -32,9 +32,7 @@ const getValue = (theme, variable) => theme[variable];
 export default function Theming() {
   return (
     <GuidelinePage>
-      <Markdown>
-        {content}
-      </Markdown>
+      <Markdown>{content}</Markdown>
       <VariableTable
         theme={mineralTheme}
         value={getValue}

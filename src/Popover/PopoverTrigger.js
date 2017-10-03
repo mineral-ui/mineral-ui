@@ -50,10 +50,6 @@ export default class PopoverTrigger extends Component<Props> {
       ...restProps
     };
 
-    return (
-      <Root {...rootProps}>
-        {Children.only(children)}
-      </Root>
-    );
+    return <Root {...rootProps}>{Children.only(children)}</Root>;
   }
 }

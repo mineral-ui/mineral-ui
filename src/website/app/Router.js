@@ -67,20 +67,22 @@ export default function Router({ demos }: Props) {
             example => example.id === exampleId
           )[0];
           const chromeless = route.location.search === '?chromeless';
-          return chromeless
-            ? <LiveProvider
-                hideSource={true}
-                chromeless={true}
-                scope={selectedExample.scope}
-                source={selectedExample.source}
-              />
-            : <div>
-                <Link to="../">
-                  <IconArrowBack color="currentColor" size="small" />{' '}
-                  {selectedDemo.title}
-                </Link>
-                <ComponentDocExample {...selectedExample} />
-              </div>;
+          return chromeless ? (
+            <LiveProvider
+              hideSource={true}
+              chromeless={true}
+              scope={selectedExample.scope}
+              source={selectedExample.source}
+            />
+          ) : (
+            <div>
+              <Link to="../">
+                <IconArrowBack color="currentColor" size="small" />{' '}
+                {selectedDemo.title}
+              </Link>
+              <ComponentDocExample {...selectedExample} />
+            </div>
+          );
         }}
       />
       <Route

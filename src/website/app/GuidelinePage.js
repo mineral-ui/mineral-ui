@@ -36,9 +36,5 @@ const Root = createStyledComponent('div', ({ theme }) => ({
 }));
 
 export default function GuidelinePage({ children }: Props) {
-  return (
-    <Root>
-      {children}
-    </Root>
-  );
+  return <Root>{children}</Root>;
 }

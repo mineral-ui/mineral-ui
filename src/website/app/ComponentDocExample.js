@@ -81,13 +81,9 @@ export default function ComponentDocExample({
   return (
     <Root {...rootProps}>
       <Title level={3} id={id}>
-        <TitleLink to={id}>
-          {title}
-        </TitleLink>
+        <TitleLink to={id}>{title}</TitleLink>
       </Title>
-      <Description scope={{ Callout }}>
-        {description || ''}
-      </Description>
+      <Description scope={{ Callout }}>{description || ''}</Description>
       <LiveProvider {...liveProviderProps} />
     </Root>
   );

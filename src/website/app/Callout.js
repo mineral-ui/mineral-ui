@@ -49,9 +49,7 @@ export default function Callout({
 }: Props) {
   return (
     <Root className={className} variant={variant}>
-      <Title variant={variant}>
-        {title}
-      </Title>
+      <Title variant={variant}>{title}</Title>
       {children}
     </Root>
   );

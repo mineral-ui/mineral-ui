@@ -77,12 +77,10 @@ const ValueCell = createStyledComponent(TableCell, styles.valueCell);
 export default function Typography() {
   return (
     <div>
-      <Markdown scope={{ FontDemo }}>
-        {content}
-      </Markdown>
-      {examples.map((section, i) => {
+      <Markdown scope={{ FontDemo }}>{content}</Markdown>
+      {examples.map((section, index) => {
         return (
-          <section key={`section_${i}`}>
+          <section key={`section_${index}`}>
             {section.heading}
             {section.description}
             <OverflowContainer>
@@ -100,24 +98,18 @@ export default function Typography() {
                   </tr>
                 </thead>
                 <tbody>
-                  {section.examples.map(({ content, value, color, font }) =>
+                  {section.examples.map(({ content, value, color, font }) => (
                     <TableRow key={value}>
-                      <TableCell>
-                        {content}
-                      </TableCell>
-                      <ValueCell>
-                        {value}
-                      </ValueCell>
+                      <TableCell>{content}</TableCell>
+                      <ValueCell>{value}</ValueCell>
                       <ValueCell>
                         <ColorValue color={color}>
                           {`theme.${color}`}
                         </ColorValue>
                       </ValueCell>
-                      <ValueCell>
-                        {font}
-                      </ValueCell>
+                      <ValueCell>{font}</ValueCell>
                     </TableRow>
-                  )}
+                  ))}
                 </tbody>
               </Table>
             </OverflowContainer>

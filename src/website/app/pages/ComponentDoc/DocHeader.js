@@ -76,16 +76,13 @@ export default function DocHeader({
 
   return (
     <Root className={className}>
-      <Title level={1}>
-        {title}
-      </Title>
-      <Lede>
-        {children}
-      </Lede>
+      <Title level={1}>{title}</Title>
+      <Lede>{children}</Lede>
       <SubNav>
         {examples &&
-          examples.length > 0 &&
-          <NavElement href={`#${firstExampleId}`}>Examples</NavElement>}
+          examples.length > 0 && (
+            <NavElement href={`#${firstExampleId}`}>Examples</NavElement>
+          )}
         <NavElement href="#api-and-theme">API & Theme</NavElement>
         <NavElement href="#usage">Usage</NavElement>
       </SubNav>

@@ -89,10 +89,7 @@ export default class Icon extends Component<Props> {
 
     return (
       <Root {...rootProps}>
-        {title &&
-          <title {...titleProps}>
-            {title}
-          </title>}
+        {title && <title {...titleProps}>{title}</title>}
         {children}
       </Root>
     );

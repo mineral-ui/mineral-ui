@@ -80,13 +80,13 @@ function renderFromData(data, getItemProps) {
 }
 
 function renderMenuGroup(group, groupIndex, getItemProps, acc) {
-  return group.items && group.items.length
-    ? <MenuGroup key={groupIndex} title={group.title}>
-        {group.items.map((item, itemIndex) => {
-          return renderMenuItem(item, itemIndex, getItemProps, acc);
-        })}
-      </MenuGroup>
-    : null;
+  return group.items && group.items.length ? (
+    <MenuGroup key={groupIndex} title={group.title}>
+      {group.items.map((item, itemIndex) => {
+        return renderMenuItem(item, itemIndex, getItemProps, acc);
+      })}
+    </MenuGroup>
+  ) : null;
 }
 
 function renderMenuItem(item, itemIndex, getItemProps, acc) {

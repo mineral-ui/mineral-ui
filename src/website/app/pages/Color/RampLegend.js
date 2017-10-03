@@ -40,11 +40,7 @@ const getBadges = () => {
       }
     }));
 
-    return (
-      <Badge key={num}>
-        {num}
-      </Badge>
-    );
+    return <Badge key={num}>{num}</Badge>;
   });
 };
 
@@ -158,13 +154,9 @@ export default function RampLegend() {
     <Root>
       <Column>
         <Name>
-          <p>
-            {themeName}
-          </p>
+          <p>{themeName}</p>
         </Name>
-        <HSL>
-          {hslDefinition}
-        </HSL>
+        <HSL>{hslDefinition}</HSL>
       </Column>
       <CenterColumn>
         <ColorRampRow name={legendBackground} />
@@ -172,13 +164,9 @@ export default function RampLegend() {
       </CenterColumn>
       <Column>
         <White>
-          <p>
-            {whiteAccessibilityDefinition}
-          </p>
+          <p>{whiteAccessibilityDefinition}</p>
         </White>
-        <Black>
-          {blackAccessibilityDefinition}
-        </Black>
+        <Black>{blackAccessibilityDefinition}</Black>
       </Column>
       <MobileList>
         <li>

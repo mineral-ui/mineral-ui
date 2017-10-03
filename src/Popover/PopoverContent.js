@@ -149,13 +149,10 @@ export default class PopoverContent extends Component<Props> {
 
           return (
             <div {...wrapperProps}>
-              {title &&
-                <PopoverTitle subtitle={subtitle}>
-                  {title}
-                </PopoverTitle>}
-              <PopoverBlock>
-                {children}
-              </PopoverBlock>
+              {title && (
+                <PopoverTitle subtitle={subtitle}>{title}</PopoverTitle>
+              )}
+              <PopoverBlock>{children}</PopoverBlock>
               {hasArrow && <PopoverArrow {...popoverArrowProps} />}
             </div>
           );

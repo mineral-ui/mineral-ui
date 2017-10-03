@@ -249,16 +249,12 @@ const defaultRender = ({
     <Root {...rootProps}>
       <Inner>
         {startIcon}
-        {(children || secondaryText) &&
+        {(children || secondaryText) && (
           <Content>
-            <Text>
-              {children}
-            </Text>
-            {SecondaryText &&
-              <SecondaryText>
-                {secondaryText}
-              </SecondaryText>}
-          </Content>}
+            <Text>{children}</Text>
+            {SecondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
+          </Content>
+        )}
         {endIcon}
       </Inner>
     </Root>

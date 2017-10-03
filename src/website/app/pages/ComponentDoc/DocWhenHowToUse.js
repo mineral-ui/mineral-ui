@@ -38,9 +38,7 @@ export default function DocWhenHowToUse({ content }: Props) {
       <Title level={3} id="when-how-to-use">
         When/How to Use
       </Title>
-      <Markdown>
-        {content}
-      </Markdown>
+      <Markdown>{content}</Markdown>
     </Section>
   );
 }

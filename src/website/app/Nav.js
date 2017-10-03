@@ -94,9 +94,7 @@ export default function Nav({ demos, ...restProps }: Props) {
     const demo = demos[slug];
     return (
       <ListItem key={slug} isSubcomponent={demo.subcomponent}>
-        <Link to={`/components/${slug}`}>
-          {demo.title}
-        </Link>
+        <Link to={`/components/${slug}`}>{demo.title}</Link>
       </ListItem>
     );
   });
@@ -104,10 +102,8 @@ export default function Nav({ demos, ...restProps }: Props) {
   const pageLinks = pages.map((page, i) => {
     return (
       <ListItem key={`page-${i}`}>
-        <Link to={page.path}>
-          {page.title}
-        </Link>
-        {Array.isArray(page.sections) &&
+        <Link to={page.path}>{page.title}</Link>
+        {Array.isArray(page.sections) && (
           <SubSection>
             {page.sections.map((section, j) => {
               if (!page.path) return null;
@@ -116,13 +112,12 @@ export default function Nav({ demos, ...restProps }: Props) {
                 : section.path;
               return (
                 <ListItem key={`section-${j}`}>
-                  <Link to={path}>
-                    {section.title}
-                  </Link>
+                  <Link to={path}>{section.title}</Link>
                 </ListItem>
               );
             })}
-          </SubSection>}
+          </SubSection>
+        )}
       </ListItem>
     );
   });
@@ -133,13 +128,9 @@ export default function Nav({ demos, ...restProps }: Props) {
         <span>M</span>
         <h1>Mineral UI</h1>
       </Logo>
-      <List>
-        {pageLinks}
-      </List>
+      <List>{pageLinks}</List>
       <Heading>Components</Heading>
-      <List>
-        {demoLinks}
-      </List>
+      <List>{demoLinks}</List>
     </Root>
   );
 }

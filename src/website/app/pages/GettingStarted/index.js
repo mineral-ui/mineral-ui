@@ -24,9 +24,7 @@ import GuidelinePage from '../../GuidelinePage';
 export default function GettingStarted() {
   return (
     <GuidelinePage>
-      <Markdown scope={{ Callout }}>
-        {content}
-      </Markdown>
+      <Markdown scope={{ Callout }}>{content}</Markdown>
     </GuidelinePage>
   );
 }

@@ -97,9 +97,5 @@ export default function Link({
     filterProps: ['variant']
   });
 
-  return (
-    <Root {...rootProps}>
-      {children}
-    </Root>
-  );
+  return <Root {...rootProps}>{children}</Root>;
 }

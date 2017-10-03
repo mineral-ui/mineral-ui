@@ -23,11 +23,7 @@ export function mountInThemeProvider(
   Component: React$Element<*>,
   returnThemeProvider: boolean = false
 ) {
-  const mountedComponent = mount(
-    <ThemeProvider>
-      {Component}
-    </ThemeProvider>
-  );
+  const mountedComponent = mount(<ThemeProvider>{Component}</ThemeProvider>);
 
   return returnThemeProvider
     ? mountedComponent
