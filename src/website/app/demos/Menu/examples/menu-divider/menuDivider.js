@@ -25,7 +25,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
-    '[MenuItems](./menu-item) and [MenuGroups](./menu-group) can optionally be separated with a MenuDivider.',
+    '[MenuItems](../menu-item) and [MenuGroups](../menu-group) can optionally be separated with a MenuDivider.',
   scope: { DemoLayout, Menu, MenuDivider, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

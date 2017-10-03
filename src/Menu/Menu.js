@@ -20,7 +20,7 @@ import { createStyledComponent } from '../utils';
 import { MenuDivider, MenuGroup, MenuItem } from './index';
 
 type Props = {
-  /** [MenuDivider](./menu-divider), [MenuGroup](./menu-group), or [MenuItem](./menu-item) */
+  /** [MenuDivider](../menu-divider), [MenuGroup](../menu-group), or [MenuItem](../menu-item) */
   children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
   data?: Array<{ items: Array<Item>, title?: React$Node }>,
@@ -50,7 +50,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * Menus display a list of [MenuItems](./menu-item). The items can have actions or be used for navigation.
+ * Menus display a list of [MenuItems](../menu-item). The items can have actions or be used for navigation.
  */
 export default function Menu({
   children,

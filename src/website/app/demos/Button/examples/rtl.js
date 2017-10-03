@@ -23,7 +23,7 @@ export default {
   id: 'rtl',
   title: 'RTL Support',
   description: `Buttons with Icons are reversed when the \`rtl\` prop is set.
-A subset of Icons that [convey directionality](./icon#rtl) will be reversed.`,
+A subset of Icons that [convey directionality](../icon#rtl) will be reversed.`,
   scope: { Button, IconBackspace, ThemeProvider },
   source: `
     <div dir="rtl">

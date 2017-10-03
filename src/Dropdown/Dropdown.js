@@ -40,7 +40,7 @@ type Props = {
   defaultIsOpen?: boolean,
   /** Disable the Dropdown */
   disabled?: boolean,
-  /** Data from which the [Menu](./menu#data) will be constructed */
+  /** Data from which the [Menu](../menu#data) will be constructed */
   data: Array<Object>,
   /** For use with controlled components, in which the app manages Dropdown state */
   isOpen?: boolean,

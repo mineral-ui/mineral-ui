@@ -53,9 +53,9 @@ Cards represent a gateway to more detailed information in another app view.`
     slug: 'card-block',
     subcomponent: true,
     title: 'CardBlock',
-    whenHowToUse: `CardBlock is used to help lay out content that's not a [title](./card-title) or an [image](./card-image) in the body of the [Card](./card).
+    whenHowToUse: `CardBlock is used to help lay out content that's not a [title](../card-title) or an [image](../card-image) in the body of the [Card](../card).
 
-Try not to put inline links in your content. Create purposeful calls to action with [Buttons](./button) at the bottom of the Card.`
+Try not to put inline links in your content. Create purposeful calls to action with [Buttons](../button) at the bottom of the Card.`
   },
   {
     bestPractices: bestPractices.cardImage,
@@ -65,7 +65,7 @@ Try not to put inline links in your content. Create purposeful calls to action w
     subcomponent: true,
     title: 'CardImage',
     whenHowToUse: `CardImage is used when you want to reinforce the intent of the Card.
-Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](./card-title).
+Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](../card-title).
 
 If you are putting text over top of the CardImage, use a solid color or an image with sufficient contrast to the text.`
   },
@@ -77,7 +77,7 @@ If you are putting text over top of the CardImage, use a solid color or an image
     slug: 'card-title',
     subcomponent: true,
     title: 'CardTitle',
-    whenHowToUse: `Use a CardTitle when you need a consistently styled headings for your [Card](./card).
+    whenHowToUse: `Use a CardTitle when you need a consistently styled headings for your [Card](../card).
 Use a subtitle to provide supporting information for the data displayed in the Card.`
   }
 ];

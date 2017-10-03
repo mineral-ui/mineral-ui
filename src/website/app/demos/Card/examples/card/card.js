@@ -27,7 +27,7 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `Card content should be neither too simple nor too complex.
 Cards are used as a gateway to more detailed content, not merely as a widget container.
-Cards contain one [CardTitle](./card-title), an optional [CardImage](./card-image), and one or more [CardBlocks](./card-block).
+Cards contain one [CardTitle](../card-title), an optional [CardImage](../card-image), and one or more [CardBlocks](../card-block).
 
 <Callout title="Note">
   Cards normally occupy the full available width of their container. The Cards here are width-constrained for illustration purposes.

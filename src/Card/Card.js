@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '../utils';
 
 type Props = {
-  /** Content of the Card. Can be anything, but see [CardBlock](./card-block), [CardImage](./card-image), and [CardTitle](./card-title). */
+  /** Content of the Card. Can be anything, but see [CardBlock](../card-block), [CardImage](../card-image), and [CardTitle](../card-title). */
   children: React$Node,
   /** Called with the click event */
   onClick?: (event: SyntheticEvent<>) => void

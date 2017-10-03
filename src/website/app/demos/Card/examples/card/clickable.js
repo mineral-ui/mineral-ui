@@ -26,7 +26,7 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `If an \`onClick\` callback is provided, the entire Card becomes clickable and keyboard actionable.
 Use this feature when only one action can be taken per Card.
-This simplifies the interface by not requiring an extra [Button](./button).`,
+This simplifies the interface by not requiring an extra [Button](../button).`,
   scope: { Card, CardBlock, CardTitle, DemoLayout },
   source: `
     <DemoLayout>

@@ -25,7 +25,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
-    'To group [MenuItems](./menu-item) together, wrap them in a MenuGroup and optionally provide a title.',
+    'To group [MenuItems](../menu-item) together, wrap them in a MenuGroup and optionally provide a title.',
   scope: { DemoLayout, Menu, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

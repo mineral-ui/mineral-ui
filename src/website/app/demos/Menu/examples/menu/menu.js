@@ -26,7 +26,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
-    'Menus are composed of [MenuDivider](./menu-divider), [MenuGroup](./menu-group), and [MenuItem](./menu-item).',
+    'Menus are composed of [MenuDivider](../menu-divider), [MenuGroup](../menu-group), and [MenuItem](../menu-item).',
   scope: { DemoLayout, IconCloud, Menu, MenuDivider, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

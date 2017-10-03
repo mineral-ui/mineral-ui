@@ -45,7 +45,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * MenuDividers are used to separate [MenuItems](./menu-item) and [MenuGroups](./menu-group).
+ * MenuDividers are used to separate [MenuItems](../menu-item) and [MenuGroups](../menu-group).
  */
 export default function MenuDivider(props: Props) {
   return <Root {...props} role="separator" />;
