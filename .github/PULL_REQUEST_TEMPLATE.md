@@ -15,8 +15,10 @@ For a PR to be considered, each item in the checklist must be checked.
 ### Motivation and context
 <!-- Why is this change required? What problem does it solve? If it fixes an open issue, please link to the issue here and auto-close them via commit messages: https://help.github.com/articles/closing-issues-via-commit-messages. -->
 
-### Screenshots or videos, if appropriate
+### Screenshots, videos, or demo, if appropriate
 <!-- To record and share a video: http://recordit.co/ -->
+
+https://<your-branch-name>--mineral-ui.netlify.com/
 
 ### How to test
 <!-- Please describe the steps for reviewers to take to cover all facets of this feature. -->
