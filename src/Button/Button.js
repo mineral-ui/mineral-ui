@@ -301,10 +301,7 @@ export default function Button({
     <Root {...rootProps}>
       <Inner>
         {startIcon}
-        {children &&
-          <Content size={size}>
-            {children}
-          </Content>}
+        {children && <Content size={size}>{children}</Content>}
         {endIcon}
       </Inner>
     </Root>

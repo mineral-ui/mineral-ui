@@ -50,9 +50,7 @@ const RampHolder = createStyledComponent('div', {
 export default function Color() {
   return (
     <div>
-      <Markdown scope={{ Callout, Variants }}>
-        {content}
-      </Markdown>
+      <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
         {ramps.map(ramp => <ColorRamp key={ramp} ramp={ramp} />)}

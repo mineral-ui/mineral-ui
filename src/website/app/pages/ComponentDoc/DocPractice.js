@@ -63,15 +63,9 @@ export default function DocPractice({
         {title}
       </Title>
       <Example backgroundColor={backgroundColor}>
-        {typeof example === 'string'
-          ? <Markdown>
-              {example}
-            </Markdown>
-          : example}
+        {typeof example === 'string' ? <Markdown>{example}</Markdown> : example}
       </Example>
-      <Markdown>
-        {children}
-      </Markdown>
+      <Markdown>{children}</Markdown>
     </div>
   );
 }

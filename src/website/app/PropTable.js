@@ -70,11 +70,11 @@ function DefaultValue({
   defaultValue?: any,
   required?: boolean
 }) {
-  return required
-    ? <PropRequired>required</PropRequired>
-    : <CodeValue>
-        {defaultValue}
-      </CodeValue>;
+  return required ? (
+    <PropRequired>required</PropRequired>
+  ) : (
+    <CodeValue>{defaultValue}</CodeValue>
+  );
 }
 
 function getDefaultValue(propDescription: Object): any {
@@ -95,25 +95,27 @@ function getFlowType(propDescription: Object): string {
 }
 
 function getPropTableRows(propDoc) {
-  return Object.keys(propDoc).sort().map(name => {
-    const propDescription = propDoc[name];
+  return Object.keys(propDoc)
+    .sort()
+    .map(name => {
+      const propDescription = propDoc[name];
 
-    // Filter out private props
-    if (propDescription.description.startsWith('@Private')) {
-      return null;
-    }
+      // Filter out private props
+      if (propDescription.description.startsWith('@Private')) {
+        return null;
+      }
 
-    return (
-      <PropTableRow
-        key={name}
-        defaultValue={getDefaultValue(propDescription)}
-        description={propDescription.description}
-        name={name}
-        required={propDescription.required}
-        type={getFlowType(propDescription)}
-      />
-    );
-  });
+      return (
+        <PropTableRow
+          key={name}
+          defaultValue={getDefaultValue(propDescription)}
+          description={propDescription.description}
+          name={name}
+          required={propDescription.required}
+          type={getFlowType(propDescription)}
+        />
+      );
+    });
 }
 
 type PropTableRowProps = {
@@ -134,22 +136,16 @@ function PropTableRow({
   return (
     <TableRow>
       <TableCell>
-        <PropName>
-          {name}
-        </PropName>
+        <PropName>{name}</PropName>
       </TableCell>
       <TableCell>
-        <PropType>
-          {type}
-        </PropType>
+        <PropType>{type}</PropType>
       </TableCell>
       <TableCell>
         <DefaultValue defaultValue={defaultValue} required={required} />
       </TableCell>
       <TableCell>
-        <PropP>
-          {description}
-        </PropP>
+        <PropP>{description}</PropP>
       </TableCell>
     </TableRow>
   );
@@ -177,9 +173,7 @@ export default function PropTable({ propDoc = {} }: Props) {
             <TableHeaderCell key="description">Description</TableHeaderCell>
           </tr>
         </thead>
-        <tbody>
-          {getPropTableRows(propDoc)}
-        </tbody>
+        <tbody>{getPropTableRows(propDoc)}</tbody>
       </Table>
     </Root>
   );

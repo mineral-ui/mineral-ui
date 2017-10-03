@@ -158,11 +158,7 @@ export default class Dropdown extends Component<Props, State> {
       wrapContent: false
     };
 
-    return (
-      <Root {...rootProps}>
-        {children}
-      </Root>
-    );
+    return <Root {...rootProps}>{children}</Root>;
   }
 
   getItems = () => {

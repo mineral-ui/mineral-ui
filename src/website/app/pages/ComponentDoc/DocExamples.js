@@ -41,9 +41,9 @@ export default function DocExamples({ examples }: Props) {
   }
   return (
     <Section>
-      {examples.map((example, index) =>
+      {examples.map((example, index) => (
         <ComponentDocExample key={index} {...example} />
-      )}
+      ))}
     </Section>
   );
 }

@@ -50,11 +50,11 @@ export default function DocBestPractices({ practices }: Props) {
         Best Practices
       </Heading>
       <Grid>
-        {practices.map((practice, i) =>
-          <Practice key={i} {...practice}>
+        {practices.map((practice, index) => (
+          <Practice key={index} {...practice}>
             {practice.description}
           </Practice>
-        )}
+        ))}
       </Grid>
     </Section>
   );

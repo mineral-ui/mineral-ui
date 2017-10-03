@@ -22,11 +22,7 @@ import examples from '../../website/app/demos/Card/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function shallowCard(props, children) {
-  return shallow(
-    <Card {...props}>
-      {children}
-    </Card>
-  );
+  return shallow(<Card {...props}>{children}</Card>);
 }
 
 describe('Card', () => {

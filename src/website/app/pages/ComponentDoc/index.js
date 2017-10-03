@@ -83,9 +83,7 @@ export default function ComponentDoc({
 
   return (
     <Root className={className}>
-      <DocHeader {...headerProps}>
-        {doc.description}
-      </DocHeader>
+      <DocHeader {...headerProps}>{doc.description}</DocHeader>
       {examples && <DocExamples examples={examples} />}
       {!hidePropDoc && <DocProps {...propProps} />}
       {componentTheme && <DocThemeVariables {...themeVariablesProps} />}

@@ -89,11 +89,10 @@ export default function customRender(
 
   return (
     <Root {...rootProps}>
-      {item.avatar &&
-        <Avatar alt={`Photo of ${item.text}`} src={item.avatar} />}
-      <Content>
-        {item.text}
-      </Content>
+      {item.avatar && (
+        <Avatar alt={`Photo of ${item.text}`} src={item.avatar} />
+      )}
+      <Content>{item.text}</Content>
     </Root>
   );
 }

@@ -101,15 +101,17 @@ class App extends Component<Props> {
           <Route
             render={route => {
               const isChromeless = route.location.search === '?chromeless';
-              return isChromeless
-                ? <Router demos={siteDemos} />
-                : <Root className={className}>
-                    <Nav demos={siteDemos} />
-                    <Main>
-                      <Router demos={siteDemos} />
-                      <Footer />
-                    </Main>
-                  </Root>;
+              return isChromeless ? (
+                <Router demos={siteDemos} />
+              ) : (
+                <Root className={className}>
+                  <Nav demos={siteDemos} />
+                  <Main>
+                    <Router demos={siteDemos} />
+                    <Footer />
+                  </Main>
+                </Root>
+              );
             }}
           />
         </Switch>

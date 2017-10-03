@@ -32,9 +32,5 @@ const Root = createStyledComponent('span', ({ theme }) => ({
 }));
 
 export default function Sample({ className, text = 'Sample' }: Props) {
-  return (
-    <Root className={className}>
-      {text}
-    </Root>
-  );
+  return <Root className={className}>{text}</Root>;
 }

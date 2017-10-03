@@ -46,16 +46,18 @@ export default function DocProps({ propDoc, title }: Props) {
         API & Theme
       </Heading>
       <Title level={3} id="props">{`${title} Props`}</Title>
-      {propDoc
-        ? <div>
-            <PropTable propDoc={propDoc} />
-            <PropsComment>
-              Undocumented properties will be applied to the root element.
-            </PropsComment>
-          </div>
-        : <Callout title="Note">
-            {`${title} does not have properties of its own. Undocumented properties will be applied to the root element.`}
-          </Callout>}
+      {propDoc ? (
+        <div>
+          <PropTable propDoc={propDoc} />
+          <PropsComment>
+            Undocumented properties will be applied to the root element.
+          </PropsComment>
+        </div>
+      ) : (
+        <Callout title="Note">
+          {`${title} does not have properties of its own. Undocumented properties will be applied to the root element.`}
+        </Callout>
+      )}
     </Section>
   );
 }

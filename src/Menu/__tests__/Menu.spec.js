@@ -22,11 +22,7 @@ import examples from '../../website/app/demos/Menu/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function renderMenu(props, children) {
-  return shallow(
-    <Menu {...props}>
-      {children}
-    </Menu>
-  );
+  return shallow(<Menu {...props}>{children}</Menu>);
 }
 
 describe('Menu', () => {

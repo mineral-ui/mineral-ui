@@ -39,11 +39,13 @@ const Root = createStyledComponent('div', ({ theme }) => ({
 export default function ColorRamp({ ramp }: Props) {
   return (
     <Root>
-      {ramp === 'black'
-        ? <ColorRampRow key={ramp} name={ramp} />
-        : range(10, 110, 10).map(step =>
-            <ColorRampRow key={step} name={`${ramp}_${step}`} />
-          )}
+      {ramp === 'black' ? (
+        <ColorRampRow key={ramp} name={ramp} />
+      ) : (
+        range(10, 110, 10).map(step => (
+          <ColorRampRow key={step} name={`${ramp}_${step}`} />
+        ))
+      )}
     </Root>
   );
 }

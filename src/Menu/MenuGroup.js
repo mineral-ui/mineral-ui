@@ -49,10 +49,7 @@ const Root = createStyledComponent(
 export default function MenuGroup({ children, title, ...restProps }: Props) {
   return (
     <Root {...restProps}>
-      {title &&
-        <MenuGroupTitle>
-          {title}
-        </MenuGroupTitle>}
+      {title && <MenuGroupTitle>{title}</MenuGroupTitle>}
       {children}
     </Root>
   );

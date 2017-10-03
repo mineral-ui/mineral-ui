@@ -72,9 +72,7 @@ const getTableRows = (theme, value, valueColor, baseTheme) => {
       return (
         <TableRow key={variable}>
           <TableCell>
-            <Name>
-              {variable}
-            </Name>
+            <Name>{variable}</Name>
           </TableCell>
           <TableCell>
             <Value color={valueColor(theme, variable, baseTheme)}>
@@ -102,9 +100,7 @@ export default function VariableTable({
             <TableHeaderCell scope="col">Value</TableHeaderCell>
           </tr>
         </thead>
-        <tbody>
-          {getTableRows(theme, value, valueColor, baseTheme)}
-        </tbody>
+        <tbody>{getTableRows(theme, value, valueColor, baseTheme)}</tbody>
       </Table>
     </Root>
   );

@@ -160,24 +160,20 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
     elements: {
       a({ href, children }: mdLinkProps) {
         const linkProps = isNormalLink(href) ? { href } : { to: href };
-        return (
-          <Link {...linkProps}>
-            {children}
-          </Link>
-        );
+        return <Link {...linkProps}>{children}</Link>;
       },
       code({ language = 'jsx', code, children }: mdCodeProps) {
-        return code
-          ? <CodeBlock>
-              <pre className={`prism-code language-${language}`}>
-                <code
-                  dangerouslySetInnerHTML={{ __html: prism(code, language) }}
-                />
-              </pre>
-            </CodeBlock>
-          : <code>
-              {children}
-            </code>;
+        return code ? (
+          <CodeBlock>
+            <pre className={`prism-code language-${language}`}>
+              <code
+                dangerouslySetInnerHTML={{ __html: prism(code, language) }}
+              />
+            </pre>
+          </CodeBlock>
+        ) : (
+          <code>{children}</code>
+        );
       },
       img({ src, alt }: mdImageProps) {
         return <Image src={src} alt={alt} />;
@@ -201,11 +197,7 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
         return replaceHeading(6, children, { id });
       },
       p({ children }) {
-        return (
-          <Paragraph variant="prose">
-            {children}
-          </Paragraph>
-        );
+        return <Paragraph variant="prose">{children}</Paragraph>;
       }
     },
     components: {
@@ -215,9 +207,5 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
 
   const compiled = compile(children, { smartypants: false });
 
-  return (
-    <Root {...rootProps}>
-      {compiled.tree}
-    </Root>
-  );
+  return <Root {...rootProps}>{compiled.tree}</Root>;
 }

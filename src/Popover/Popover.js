@@ -156,9 +156,11 @@ export default class Popover extends Component<Props, State> {
       }
     };
 
-    const popoverTrigger = trigger
-      ? cloneElement(trigger, popoverTriggerProps)
-      : <PopoverTrigger {...popoverTriggerProps} />;
+    const popoverTrigger = trigger ? (
+      cloneElement(trigger, popoverTriggerProps)
+    ) : (
+      <PopoverTrigger {...popoverTriggerProps} />
+    );
 
     let popoverContent;
     if (wrapContent) {
@@ -174,9 +176,7 @@ export default class Popover extends Component<Props, State> {
       };
 
       popoverContent = (
-        <PopoverContent {...popoverContentProps}>
-          {content}
-        </PopoverContent>
+        <PopoverContent {...popoverContentProps}>{content}</PopoverContent>
       );
     } else {
       popoverContent = cloneElement(content, {
