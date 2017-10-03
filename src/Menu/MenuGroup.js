@@ -20,7 +20,7 @@ import { createStyledComponent } from '../utils';
 import MenuGroupTitle from './MenuGroupTitle';
 
 type Props = {
-  /** [MenuItems](./menu-item) */
+  /** [MenuItems](../menu-item) */
   children?: React$Node,
   /** Title for the group */
   title?: React$Node
@@ -44,7 +44,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * MenuGroups group together [Menu Items](./menu-items) and can display a title.
+ * MenuGroups group together [Menu Items](../menu-items) and can display a title.
  */
 export default function MenuGroup({ children, title, ...restProps }: Props) {
   return (

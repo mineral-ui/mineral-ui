@@ -36,7 +36,7 @@ help match the other MenuItems, you have access to its
 might be a helpful template. Some things to keep in mind:
 
 1. Remember to include \`:focus\`, \`:hover\`, and \`:active\` styles.
-  1. If this is to be used for a [Dropdown](./dropdown), also apply your
+  1. If this is to be used for a [Dropdown](../dropdown), also apply your
      focus/hover styles when \`props.isHighlighted === true\`.
 1. Remember to accommodate the disabled state (\`props.disabled === true\`).
 1. If your app supports RTL languages, you can use \`theme.direction\` to

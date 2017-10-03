@@ -26,7 +26,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:
-    'MenuItems can contain [Icons](./icon) at their start, end, or both. If both `startIcon` and `variant` props are provided, `startIcon` will be used.',
+    'MenuItems can contain [Icons](../icon) at their start, end, or both. If both `startIcon` and `variant` props are provided, `startIcon` will be used.',
   scope: { DemoLayout, IconCloud, Menu, MenuItem },
   source: `
     () => {

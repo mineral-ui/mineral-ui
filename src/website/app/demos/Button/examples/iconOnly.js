@@ -28,7 +28,7 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'icon-only',
   title: 'Icon-Only Buttons',
-  description: `Buttons that contain only [Icons](./icon) can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.
+  description: `Buttons that contain only [Icons](../icon) can use either \`iconStart\` or \`iconEnd\` props and must have an \`aria-label\` provided.
 
 Use icon-only Buttons sparingly. The meaning of the Button can be diluted without a visual label.`,
   scope: { Button, IconCloud, DemoLayout },

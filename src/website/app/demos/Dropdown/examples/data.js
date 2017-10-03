@@ -25,7 +25,7 @@ export default {
   title: 'Data-Driven',
   description: `Dropdown items are defined by an array of data, with the
     structure below. Object properties in the \`items\` array(s) will be passed
-    on to the [MenuItem](./menu-item).`,
+    on to the [MenuItem](../menu-item).`,
   scope: {
     Button,
     CustomRender,

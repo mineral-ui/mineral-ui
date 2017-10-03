@@ -28,7 +28,7 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menu content can also be defined by an array of data, with the
     structure below. Object properties in the \`items\` array(s) will be passed
-    on to the [MenuItem](./menu-item).`,
+    on to the [MenuItem](../menu-item).`,
   scope: { CustomRender, DemoLayout, IconCloud, Menu },
   source: `
     () => {

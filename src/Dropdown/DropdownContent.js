@@ -23,7 +23,7 @@ import Menu from '../Menu';
 type Props = {
   /** Function that returns props to be applied to each item */
   getItemProps?: (props: Object, scope: Object) => Object,
-  /** Data used to contruct Menu. See [example](./menu#data) */
+  /** Data used to contruct Menu. See [example](../menu#data) */
   data: Array<Object>,
   /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
   modifiers?: Object,
