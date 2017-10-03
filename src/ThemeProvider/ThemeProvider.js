@@ -22,7 +22,7 @@ import mineralTheme from '../utils/mineralTheme';
 type Props = {
   /** Components to which the theme will be applied */
   children?: React$Node,
-  /** A shallow object of theme variables and their values */
+  /** A shallow object of [theme variables](/theming/#theming-theme-variables) and their values */
   theme?: Object
 };
 

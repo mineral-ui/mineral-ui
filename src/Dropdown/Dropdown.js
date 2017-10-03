@@ -40,8 +40,8 @@ type Props = {
   defaultIsOpen?: boolean,
   /** Disable the Dropdown */
   disabled?: boolean,
-  /** Data from which the [Menu](../menu#data) will be constructed */
-  data: Array<Object>,
+  /** Data from which the [Menu](../menu#data) will be constructed (see [example](#data)) */
+  data: Array<{ items: Array<Item>, title?: React$Node }>,
   /** For use with controlled components, in which the app manages Dropdown state */
   isOpen?: boolean,
   /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options. */
