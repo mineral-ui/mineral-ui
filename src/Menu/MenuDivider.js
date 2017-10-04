@@ -23,7 +23,7 @@ type Props = Object;
 export const componentTheme = (baseTheme: Object) => ({
   MenuDivider_borderColor: baseTheme.borderColor,
   MenuDivider_borderWidth: '1px',
-  MenuDivider_margin: baseTheme.spacing_single,
+  MenuDivider_margin: baseTheme.space_stack_sm,
 
   ...baseTheme
 });

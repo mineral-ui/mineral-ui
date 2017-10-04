@@ -35,12 +35,12 @@ export const componentTheme = (baseTheme: Object) => ({
   CardTitle_fontSize_minor: baseTheme.fontSize_h4,
   CardTitle_fontWeight: baseTheme.fontWeight_semiBold,
   CardTitle_fontWeight_minor: baseTheme.fontWeight_bold,
-  CardTitle_marginTop: baseTheme.spacing_single,
+  CardTitle_marginTop: baseTheme.space_stack_sm,
 
   CardSubtitle_color: baseTheme.color_gray_80,
   CardSubtitle_fontSize: baseTheme.fontSize_h5,
   CardSubtitle_fontWeight: baseTheme.fontWeight_semiBold,
-  CardSubtitle_marginTop: baseTheme.spacing_single,
+  CardSubtitle_marginTop: baseTheme.space_stack_sm,
 
   ...baseTheme
 });

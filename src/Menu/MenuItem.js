@@ -172,7 +172,7 @@ const styles = {
     let theme = componentTheme(props.theme);
 
     const margin = getNormalizedValue(
-      theme.spacing_single,
+      theme.space_inline_sm,
       theme.MenuItemContent_fontSize
     );
 
