@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { mineralTheme } from '../../../../themes';
+import Button from '../../../../Button';
 import GuidelinePage from '../../GuidelinePage';
 import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';
@@ -39,7 +40,7 @@ const getValue = (theme, variable) => theme[variable];
 export default function Theming(props: Props) {
   return (
     <GuidelinePage {...props}>
-      <Markdown>{content}</Markdown>
+      <Markdown scope={{ Button }}>{content}</Markdown>
       <VariableTable
         theme={mineralTheme}
         value={getValue}

@@ -2,6 +2,7 @@
 
 Theming is a core concept in Mineral UI.  Themes provide a consistent look and feel across pages with varied functionality.  Mineral UI makes it simple to implement and maintain theming across your app.
 
+<Button primary element="a" href="/palette-demo/">Mineral UI Palette Demo</Button>
 
 ## Common Scenarios
 
@@ -43,7 +44,7 @@ ThemeProviders may be nested in order to apply a custom theme to a portion of yo
 
 ### Theme a component
 
-Each component has a set of component-level theme variables that may be overridden to adjust styles on a per component basis.  These are documented on the individual component pages.  e.g. [Button theme variables](/components/button/#theme-variables)
+Each component has a set of component-level theme variables that may be overridden to adjust styles on a per component basis.  These are documented on the individual component pages,  e.g. [Button theme variables](/components/button/#theme-variables).
 
 To theme a component, use [createThemedComponent](#theming-api) as shown below.  It is effectively the same as wrapping your component with a ThemeProvider.
 

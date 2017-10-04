@@ -32,7 +32,7 @@ type Props = {
   }
 };
 
-const ramps = [
+const baseColors = [
   'red',
   'magenta',
   'purple',
@@ -61,7 +61,9 @@ export default function Color(props: Props) {
       <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
-        {ramps.map(ramp => <ColorRamp key={ramp} ramp={ramp} />)}
+        {baseColors.map(baseColor => (
+          <ColorRamp key={baseColor} baseColor={baseColor} />
+        ))}
       </RampHolder>
     </GuidelinePage>
   );

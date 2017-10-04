@@ -49,7 +49,7 @@ const grays = createColorRamp('gray', 'color_gray', color);
 export default function createTheme(
   baseColor?: Colors = 'blue',
   overrides?: { [string]: any } = {}
-) {
+): { [string]: any } {
   /* Theme key naming convention:
    *
    *   [property]_[target]_[variant]_[state]

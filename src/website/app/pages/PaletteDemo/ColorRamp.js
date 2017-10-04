@@ -1,0 +1,96 @@
+/**
+ * Copyright 2017 CA
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* @flow */
+import React from 'react';
+import { createStyledComponent } from '../../../../styles';
+import Paragraph from '../../Paragraph';
+
+type Props = {
+  isGray?: boolean,
+  ramp: { [string]: string }
+};
+
+const transitionEffect = '350ms cubic-bezier(0.23, 1, 0.32, 1)';
+
+const styles = {
+  hue: ({ theme }) => ({
+    margin: `0 0 ${theme.space_stack_sm}`,
+    padding: theme.space_inset_sm,
+    position: 'relative',
+    '& span:nth-child(2), & span:nth-child(3)': {
+      display: 'inline-block',
+      fontFamily: theme.fontFamily_monospace,
+      marginLeft: theme.space_inline_xl,
+      transition: `opacity 250ms linear, transform ${transitionEffect}`
+    },
+    '& span:nth-child(2)': {
+      opacity: 1
+    },
+    '& span:nth-child(3)': {
+      left: theme.space_inset_sm,
+      opacity: 0,
+      position: 'absolute',
+      top: theme.space_inset_sm,
+      transform: 'translate(6em, 0)'
+    },
+    '&:hover span:nth-child(2)': {
+      opacity: 0
+    },
+    '&:hover span:nth-child(3)': {
+      opacity: 1,
+      transform: 'translate(0, 0)'
+    }
+  }),
+  swatch: ({ theme, color }) => ({
+    backgroundColor: color,
+    borderRadius: theme.borderRadius_1,
+    display: 'inline-block',
+    height: theme.space_stack_xl,
+    left: 0,
+    position: 'absolute',
+    top: theme.space_stack_xs,
+    width: theme.space_stack_xl
+  })
+};
+
+const Hue = createStyledComponent(Paragraph, styles.hue);
+const Swatch = createStyledComponent('span', styles.swatch);
+
+const REGEX_KEY_COLOR = /^.*_/;
+
+export default function ColorRamp({ ramp, isGray }: Props) {
+  return (
+    <div>
+      {Object.entries(ramp).map(([key, color]) => {
+        key = isGray ? key : key.replace(REGEX_KEY_COLOR, 'theme_');
+
+        return (
+          <Hue key={key}>
+            <Swatch color={color} />
+            <span>{key}</span>
+            {/*
+              $FlowFixMe
+              Needed to avoid Flow bug: https://github.com/facebook/flow/issues/2221
+              Alternative is to use a refinement, e.g. color = typeof color === 'string' ? '' + color : '';
+            */}
+            <span>{color}</span>
+          </Hue>
+        );
+      })}
+    </div>
+  );
+}
