@@ -55,6 +55,10 @@ type mdLinkProps = {
 const Root = createStyledComponent('div', ({ theme }) => ({
   lineHeight: theme.lineHeight_prose,
 
+  '& p': {
+    marginBottom: `${theme.lineHeight * 1.5}em`
+  },
+
   '& a:link': {
     color: theme.color_text_primary,
     textDecoration: 'none'

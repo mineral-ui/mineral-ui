@@ -22,6 +22,7 @@ import Callout from '../../Callout';
 import ColorRamp from './ColorRamp';
 import RampLegend from './RampLegend';
 import Variants from './Variants';
+import GuidelinePage from '../../GuidelinePage';
 import content from './color.md';
 
 const ramps = [
@@ -49,12 +50,12 @@ const RampHolder = createStyledComponent('div', {
 
 export default function Color() {
   return (
-    <div>
+    <GuidelinePage>
       <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
         {ramps.map(ramp => <ColorRamp key={ramp} ramp={ramp} />)}
       </RampHolder>
-    </div>
+    </GuidelinePage>
   );
 }

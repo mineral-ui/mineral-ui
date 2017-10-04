@@ -36,7 +36,10 @@ const styles = {
   lede: ({ theme }) => ({
     fontSize: theme.fontSize_h3,
     lineHeight: theme.lineHeight_prose,
-    margin: '0'
+    margin: '0',
+    '& p': {
+      marginBottom: theme.spacing_double
+    }
   }),
   navElement: ({ theme }) => ({
     display: 'inline-block',

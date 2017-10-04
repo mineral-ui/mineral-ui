@@ -26,6 +26,7 @@ import {
   TableRow
 } from '../../Table';
 import FontDemo from './FontDemo';
+import GuidelinePage from '../../GuidelinePage';
 import content from './typography.md';
 import examples from './examples';
 
@@ -76,7 +77,7 @@ const ValueCell = createStyledComponent(TableCell, styles.valueCell);
 
 export default function Typography() {
   return (
-    <div>
+    <GuidelinePage>
       <Markdown scope={{ FontDemo }}>{content}</Markdown>
       {examples.map((section, index) => {
         return (
@@ -116,6 +117,6 @@ export default function Typography() {
           </section>
         );
       })}
-    </div>
+    </GuidelinePage>
   );
 }
