@@ -30,14 +30,14 @@ const styles = {
     fontFamily: 'Open Sans',
     '& p': {
       fontSize: theme.fontSize_h1,
-      margin: `0 0 ${theme.spacing_half} 0`
+      margin: `0 0 ${theme.space_stack_xs}`
     }
   }),
   systemFont: ({ theme }) => ({
     '& h5': { textAlign: 'right' },
     '& p': {
       direction: 'rtl',
-      margin: `0 0 ${theme.spacing_single} 0`
+      margin: `0 0 ${theme.space_stack_sm}`
     }
   })
 };

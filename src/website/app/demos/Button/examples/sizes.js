@@ -23,7 +23,7 @@ const DemoLayout = createStyledComponent('div', ({ theme }) => ({
     marginRight: '0.5rem'
   },
   ' button:last-of-type': {
-    marginTop: theme.spacing_double
+    marginTop: theme.space_stack_md
   }
 }));
 

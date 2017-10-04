@@ -35,19 +35,22 @@ type Props = {
 
 const styles = {
   componentDocExample: ({ theme }) => ({
-    paddingBottom: `${parseFloat(theme.spacing_single) * 8}em`,
+    paddingBottom: `${parseFloat(theme.space_stack_sm) * 8}em`,
 
     '& + &': {
       borderTop: `1px solid ${theme.borderColor}`
     }
   }),
   description: ({ theme }) => ({
-    margin: `0 0 ${theme.spacing_quad}`
+    margin: `0 0 ${theme.space_stack_xl}`
   }),
   title: ({ theme }) => ({
-    margin: `0 0 ${getNormalizedValue(theme.spacing_quad, theme.fontSize_h3)}`,
+    margin: `0 0 ${getNormalizedValue(
+      theme.space_stack_xl,
+      theme.fontSize_h3
+    )}`,
     paddingTop: `${parseFloat(
-      getNormalizedValue(theme.spacing_single, theme.fontSize_h3)
+      getNormalizedValue(theme.space_stack_sm, theme.fontSize_h3)
     ) * 8}em`
   }),
   titleLink: ({ theme }) => ({

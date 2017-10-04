@@ -26,7 +26,7 @@ type Props = {
 };
 
 const Title = createStyledComponent(Heading, ({ theme }) => ({
-  margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+  margin: `${parseFloat(theme.space_stack_sm) * 8}em 0 ${theme.space_stack_xl}`
 }));
 
 export default function DocWhenHowToUse({ content }: Props) {

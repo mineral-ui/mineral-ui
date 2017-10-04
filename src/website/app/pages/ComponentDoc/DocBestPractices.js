@@ -31,12 +31,12 @@ const styles = {
       display: 'grid',
       gridAutoFlow: 'column',
       gridTemplateColumns: '1fr 1fr',
-      gridColumnGap: theme.spacing_quad
+      gridColumnGap: theme.space_inline_xl
     }
   }),
   practice: ({ theme, type }) => ({
     gridColumnStart: type === 'do' ? 1 : 2,
-    marginBottom: `${parseFloat(theme.spacing_quad) * 2}em`
+    marginBottom: `${parseFloat(theme.space_stack_xl) * 2}em`
   })
 };
 

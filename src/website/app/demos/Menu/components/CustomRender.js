@@ -59,8 +59,8 @@ export default function customRender(
     display: 'block',
     flex: '0 0 auto',
     height: pxToEm(32),
-    marginLeft: theme.direction === 'rtl' && theme.spacing_single,
-    marginRight: theme.direction === 'ltr' && theme.spacing_single,
+    marginLeft: theme.direction === 'rtl' && theme.space_inline_sm,
+    marginRight: theme.direction === 'ltr' && theme.space_inline_sm,
     padding: theme.MenuItemIcon_padding,
     width: pxToEm(32)
   });

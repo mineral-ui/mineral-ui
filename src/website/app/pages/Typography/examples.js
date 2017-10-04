@@ -30,11 +30,11 @@ type TypeExamples = Array<TypeExample>;
 
 const styles = {
   description: ({ theme }) => ({
-    margin: `0 0 ${theme.spacing_quad} 0`
+    margin: `0 0 ${theme.space_stack_xl}`
   }),
   list: ({ theme }) => ({
     listStyle: 'square',
-    paddingLeft: theme.spacing_triple
+    paddingLeft: theme.space_inline_lg
   })
 };
 

@@ -23,7 +23,7 @@ export default createStyledComponent(
     margin: 0,
     display: 'flex',
     alignItems: 'center',
-    padding: theme.spacing_half,
+    padding: theme.space_inset_xs,
     width: '18em',
 
     '&:focus': {
@@ -31,7 +31,7 @@ export default createStyledComponent(
     },
 
     '& > [role="icon"]': {
-      marginRight: theme.spacing_half
+      marginRight: theme.space_inline_xs
     }
   }),
   {

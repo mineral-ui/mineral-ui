@@ -21,6 +21,6 @@ export default createStyledComponent('code', ({ theme }) => ({
   backgroundColor: theme.color_gray_20,
   borderRadius: theme.borderRadius_1,
   fontFamily: theme.fontFamily_monospace,
-  padding: theme.spacing_half,
+  padding: theme.space_inset_xs,
   wordBreak: 'break-all'
 }));

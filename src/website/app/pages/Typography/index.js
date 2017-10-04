@@ -50,7 +50,8 @@ const styles = {
       backgroundColor: theme[color],
       borderRadius: theme.borderRadius_1,
       color: a11yColor(theme[color]),
-      padding: `${theme.spacing_half} ${theme.spacing_single}`
+      padding: `${parseFloat(theme.space_inset_sm) /
+        2}em ${theme.space_inset_sm}`
     };
   },
   overflowContainer: {

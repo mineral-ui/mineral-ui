@@ -21,8 +21,8 @@ import Button from '../../../../Button';
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   '& > button': {
-    marginRight: theme.spacing_single,
-    marginBottom: theme.spacing_single
+    marginRight: theme.space_inline_sm,
+    marginBottom: theme.space_stack_sm
   }
 }));
 

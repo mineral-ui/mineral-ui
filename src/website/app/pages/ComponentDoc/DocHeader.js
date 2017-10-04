@@ -33,32 +33,32 @@ type Props = {
 
 const styles = {
   header: ({ theme }) => ({
-    marginBottom: theme.spacing_quad,
-    paddingTop: theme.spacing_double
+    marginBottom: theme.space_stack_xl,
+    paddingTop: theme.space_stack_md
   }),
   lede: ({ theme }) => ({
     fontSize: theme.fontSize_h3,
     lineHeight: theme.lineHeight_prose,
     margin: '0',
     '& p': {
-      marginBottom: theme.spacing_double
+      marginBottom: theme.space_stack_md
     }
   }),
   navElement: ({ theme }) => ({
     display: 'inline-block',
-    marginRight: theme.spacing_triple,
-    marginBottom: theme.spacing_single,
+    marginRight: theme.space_inline_lg,
+    marginBottom: theme.space_stack_sm,
     borderBottom: '3px solid transparent',
     cursor: 'pointer'
   }),
   subnav: ({ theme }) => ({
     borderBottom: `1px solid ${theme.borderColor}`,
-    marginTop: theme.spacing_double,
+    marginTop: theme.space_stack_md,
     marginBottom: 0
   }),
   title: ({ theme }) => ({
     marginRight: 'auto',
-    paddingRight: theme.spacing_single
+    paddingRight: theme.space_inline_sm
   })
 };
 

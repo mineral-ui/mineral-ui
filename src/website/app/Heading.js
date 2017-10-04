@@ -69,7 +69,7 @@ const headingStyles = ({ level, theme: baseTheme }) => {
     margin: `${theme[`Heading_marginMultiplier_${level}`] *
       parseFloat(
         getNormalizedValue(
-          theme.spacing_single,
+          theme.space_stack_sm,
           theme[`Heading_fontSize_${level}`]
         )
       )}em 0`,

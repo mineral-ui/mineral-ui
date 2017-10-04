@@ -17,7 +17,7 @@
 /* @flow */
 import React, { createElement } from 'react';
 import marksy from 'marksy/components';
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../utils';
 import Heading from './Heading';
 import Paragraph from './Paragraph';
 import Link from './Link';
@@ -82,7 +82,7 @@ const Root = createStyledComponent('div', ({ theme }) => ({
     backgroundColor: theme.color_gray_20,
     borderRadius: theme.borderRadius_1,
     fontFamily: theme.fontFamily_monospace,
-    padding: theme.spacing_half
+    padding: `${parseFloat(theme.space_inset_sm) / 2}em`
   },
 
   // Specificity silliness due to having to style markdown content off of the
@@ -106,12 +106,17 @@ const Root = createStyledComponent('div', ({ theme }) => ({
 
   '& pre': {
     fontSize: theme.fontSize_ui,
-    maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
+    // Setting the maxHeight equal to, roughly, 20 lines,
+    // then subtracting a bit to make it clear there's more beyond the scroll
+    maxHeight: getNormalizedValue(
+      `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
+      theme.fontSize_ui
+    ),
     overflow: 'auto'
   }
 }));
 const CodeBlock = createStyledComponent('div', ({ theme }) => ({
-  marginBottom: theme.spacing_quad
+  marginBottom: theme.space_stack_xl
 }));
 const Image = createStyledComponent('img', {
   '@media(max-width: 60rem)': {

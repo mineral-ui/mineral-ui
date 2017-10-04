@@ -30,7 +30,7 @@ export default {
         color: theme.Sample_color || theme.color_text,
         display: 'inline-block',
         outline: '1px solid' + theme.borderColor,
-        padding: theme.spacing_single
+        padding: theme.space_inset_sm
       }));
 
       return <Sample>Sample</Sample>
