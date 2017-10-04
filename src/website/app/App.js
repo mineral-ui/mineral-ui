@@ -19,7 +19,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent, pxToEm } from '../../utils';
 import ComponentDoc from './pages/ComponentDoc';
 import createKeyMap from './utils/createKeyMap';
 import Footer from './Footer';
@@ -51,17 +51,17 @@ const styles = {
       height: '100vh',
       overflow: 'auto',
       position: 'fixed',
-      width: `${16 * parseFloat(theme.spacing_double)}em`
+      width: pxToEm(256)
     }
   }),
   main: ({ theme }) => ({
-    padding: theme.spacing_double,
+    padding: theme.space_inset_md,
 
     '@media(min-width: 45em)': {
-      marginLeft: `${16 * parseFloat(theme.spacing_double)}em`,
-      padding: `${parseFloat(theme.spacing_quad) * 2}em ${parseFloat(
-        theme.spacing_quad
-      ) * 4}em ${theme.spacing_quad}`
+      marginLeft: pxToEm(256),
+      padding: `${parseFloat(theme.space_inset_sm) * 8}em
+        ${parseFloat(theme.space_inset_sm) * 16}em
+        ${parseFloat(theme.space_inset_sm) * 4}em`
     }
   })
 };

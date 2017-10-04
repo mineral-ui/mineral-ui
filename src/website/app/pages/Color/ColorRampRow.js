@@ -30,14 +30,14 @@ const styles = {
     display: 'flex',
     fontSize: theme.fontSize_mouse,
     justifyContent: 'space-between',
-    padding: theme.spacing_double,
+    padding: theme.space_inset_md,
     width: '100%'
   }),
   colorName: ({ color, theme }) => ({
     color,
     display: 'block',
     fontWeight: 'bold',
-    marginBottom: theme.spacing_single
+    marginBottom: theme.space_stack_sm
   }),
   hsl: ({ color }) => ({
     color,
@@ -48,7 +48,7 @@ const styles = {
   whiteOnBackground: ({ theme }) => ({
     color: 'white',
     display: 'block',
-    marginBottom: theme.spacing_single
+    marginBottom: theme.space_stack_sm
   }),
   blackonBackground: { color: color.black, display: 'block' },
   accessibilityInfo: {

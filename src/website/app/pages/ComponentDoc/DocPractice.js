@@ -32,14 +32,14 @@ type Props = {
 const Example = createStyledComponent('div', ({ backgroundColor, theme }) => ({
   backgroundColor,
   border: `1px solid ${theme.borderColor}`,
-  marginBottom: theme.spacing_double,
-  padding: theme.spacing_double
+  marginBottom: theme.space_stack_md,
+  padding: theme.space_inset_md
 }));
 const Title = createStyledComponent(_Heading, ({ type, theme }) => ({
   borderBottom: `2px solid ${type === 'do'
     ? theme.borderColor_success
     : theme.borderColor_danger}`,
-  paddingBottom: getNormalizedValue(theme.spacing_single, theme.fontSize_h4),
+  paddingBottom: getNormalizedValue(theme.space_stack_sm, theme.fontSize_h4),
 
   '& strong': {
     fontSize: theme.fontSize_h2,

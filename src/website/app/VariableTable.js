@@ -28,7 +28,7 @@ type Props = {
 };
 
 const Root = createStyledComponent('div', ({ theme }) => ({
-  margin: `${theme.spacing_quad} 0 0 0`,
+  margin: `${theme.space_stack_xl} 0 0`,
   overflowX: 'auto'
 }));
 const Name = createStyledComponent('span', ({ theme }) => ({
@@ -43,7 +43,8 @@ const Value = createStyledComponent('span', ({ color, theme }) => {
       color: a11yColor(color),
       display: 'inline-block',
       fontFamily: theme.fontFamily_monospace,
-      padding: `${theme.spacing_half} ${theme.spacing_single}`
+      padding: `${parseFloat(theme.space_inset_sm) /
+        2}em ${theme.space_inset_sm}`
     };
   } else {
     return {

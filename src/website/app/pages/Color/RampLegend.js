@@ -49,10 +49,10 @@ const legendBackground = 'blue_60';
 const styles = {
   root: ({ theme }) => ({
     display: 'flex',
-    marginBottom: theme.spacing_quad,
+    marginBottom: theme.space_stack_xl,
     '@media(max-width: 60em)': {
       flexDirection: 'column',
-      marginTop: `${parseFloat(theme.spacing_single) * 6}em`
+      marginTop: `${parseFloat(theme.space_stack_sm) * 6}em`
     }
   }),
   black: {
@@ -76,14 +76,15 @@ const styles = {
       height: '50%',
       margin: 0,
       fontSize: theme.fontSize_mouse,
-      padding: `${theme.spacing_double} ${theme.spacing_quad}`,
+      padding: `${theme.space_inset_md} ${parseFloat(theme.space_inset_md) *
+        2}em`,
       position: 'relative'
     },
     '& > *::after': {
       borderBottom: `1px solid ${theme.borderColor_danger_hover}`,
       content: `''`,
       position: 'absolute',
-      width: theme.spacing_triple
+      width: theme.space_inline_lg
     },
     '@media(max-width: 60em)': {
       display: 'none'
@@ -98,10 +99,10 @@ const styles = {
   },
   mobileList: ({ theme }) => ({
     fontSize: theme.fontSize_mouse,
-    marginTop: `${parseFloat(theme.spacing_single) * 6}em`,
-    paddingLeft: theme.spacing_single,
+    marginTop: `${parseFloat(theme.space_stack_sm) * 6}em`,
+    paddingLeft: theme.space_inline_sm,
     ' li': {
-      marginBottom: theme.spacing_single
+      marginBottom: theme.space_stack_sm
     },
     '@media(min-width: 60em)': {
       display: 'none'
@@ -116,7 +117,7 @@ const styles = {
     '& > p': {
       position: 'absolute',
       bottom: 0,
-      right: theme.spacing_quad
+      right: theme.space_inline_xl
     }
   }),
   white: ({ theme }) => ({
@@ -127,7 +128,7 @@ const styles = {
     '& > p': {
       position: 'absolute',
       bottom: 0,
-      left: theme.spacing_quad
+      left: theme.space_inline_xl
     }
   })
 };

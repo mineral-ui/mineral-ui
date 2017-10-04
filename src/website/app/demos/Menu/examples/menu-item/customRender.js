@@ -83,15 +83,15 @@ might be a helpful template. Some things to keep in mind:
           color: theme.color_text_caption,
           display: 'block',
           fontSize: theme.fontSize_mouse,
-          marginTop: theme.spacing_half
+          marginTop: theme.space_stack_xs
         });
         const Avatar = createStyledComponent('img', {
           borderRadius: pxToEm(18),
           display: 'block',
           flex: '0 0 auto',
           height: pxToEm(36),
-          marginLeft: theme.direction === 'rtl' && theme.spacing_single,
-          marginRight: theme.direction === 'ltr' && theme.spacing_single,
+          marginLeft: theme.direction === 'rtl' && theme.space_inline_sm,
+          marginRight: theme.direction === 'ltr' && theme.space_inline_sm,
           padding: theme.MenuItemIcon_padding,
           width: pxToEm(36)
         });

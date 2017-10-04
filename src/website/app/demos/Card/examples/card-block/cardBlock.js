@@ -29,17 +29,22 @@ import DemoLayout from '../../components/DemoLayout';
 const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
   position: 'relative',
 
-  // prettier-ignore
   '&::before': {
     borderColor: theme.color_theme_10,
     borderStyle: 'solid',
-    borderWidth: `${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)} ${getNormalizedValue(theme.spacing_triple, theme.fontSize_prose)}`,
-    bottom: `-${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)}`,
+    borderWidth: `${getNormalizedValue(
+      theme.space_inset_md,
+      theme.fontSize_prose
+    )} ${getNormalizedValue(theme.space_inset_lg, theme.fontSize_prose)}`,
+    bottom: `-${getNormalizedValue(
+      theme.space_inset_md,
+      theme.fontSize_prose
+    )}`,
     content: '""',
     left: 0,
     position: 'absolute',
     right: 0,
-    top: `-${getNormalizedValue(theme.spacing_double, theme.fontSize_prose)}`,
+    top: `-${getNormalizedValue(theme.space_inset_md, theme.fontSize_prose)}`
   }
 }));
 

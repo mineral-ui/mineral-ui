@@ -21,7 +21,7 @@ import Link from './Link';
 
 const Container = createStyledComponent('header', ({ theme }) => ({
   display: 'flex',
-  padding: `0 ${theme.spacing_quad}`,
+  padding: `0 ${parseFloat(theme.space_inset_sm) * 4}em`,
   justifyContent: 'space-between'
 }));
 const Logo = createStyledComponent(Link, ({ theme }) => ({

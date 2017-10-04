@@ -19,7 +19,7 @@ import { createStyledComponent } from '../../utils';
 
 const styles = {
   cell: ({ theme }) => ({
-    padding: `${theme.spacing_double} ${theme.spacing_single}`,
+    padding: `${theme.space_inset_md} ${theme.space_inset_sm}`,
     verticalAlign: 'top',
 
     '&:first-child': {
@@ -34,7 +34,7 @@ const styles = {
     borderBottom: `3px solid ${theme.color_gray_60}`,
     color: theme.color_gray_60,
     fontWeight: theme.fontWeight_bold,
-    padding: `0 ${theme.spacing_single} ${theme.spacing_single}`,
+    padding: `0 ${theme.space_inset_sm} ${theme.space_inset_sm}`,
     textAlign: 'left',
     width: width && `${width}rem`,
 
