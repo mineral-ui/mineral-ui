@@ -70,37 +70,37 @@ describe('Dropdown', () => {
   });
 
   describe('opens', () => {
-    let dropdown, trigger;
+    let dropdown, themeProvider, trigger;
 
     beforeEach(() => {
-      dropdown = mountDropdown({ onOpen: jest.fn() });
+      [themeProvider, dropdown] = mountDropdown({ onOpen: jest.fn() });
       trigger = dropdown.find(DropdownTrigger);
     });
 
     it('when down arrow is pressed', () => {
       trigger.simulate('keydown', { key: 'ArrowDown' });
-      const content = dropdown.find(DropdownContent);
+      const content = themeProvider.find(DropdownContent);
 
       expect(content.exists()).toEqual(true);
     });
 
-    xit('when up arrow is pressed', () => {
+    it('when up arrow is pressed', () => {
       trigger.simulate('keydown', { key: 'ArrowUp' });
-      const content = dropdown.find(DropdownContent);
+      const content = themeProvider.find(DropdownContent);
 
       expect(content.exists()).toEqual(true);
     });
 
     xit('when enter is pressed', () => {
       trigger.simulate('keydown', { key: 'Enter' });
-      const content = dropdown.find(DropdownContent);
+      const content = themeProvider.find(DropdownContent);
 
       expect(content.exists()).toEqual(true);
     });
 
     xit('when space is pressed', () => {
       trigger.simulate('keydown', { key: ' ' });
-      const content = dropdown.find(DropdownContent);
+      const content = themeProvider.find(DropdownContent);
 
       expect(content.exists()).toEqual(true);
     });
@@ -116,7 +116,7 @@ describe('Dropdown', () => {
     let dropdown, trigger;
 
     beforeEach(() => {
-      dropdown = mountDropdown({
+      [, dropdown] = mountDropdown({
         onClose: jest.fn(),
         defaultIsOpen: true
       });
@@ -131,17 +131,18 @@ describe('Dropdown', () => {
   });
 
   describe('item highlighting', () => {
-    let dropdown, trigger;
+    let dropdown, themeProvider, trigger;
 
     beforeEach(() => {
-      dropdown = mountDropdown();
+      [themeProvider, dropdown] = mountDropdown();
       trigger = dropdown.find(DropdownTrigger);
     });
 
     describe('when down arrow is pressed', () => {
       it('highlights first item upon opening', () => {
         trigger.simulate('keydown', { key: 'ArrowDown' });
-        const menuItem = dropdown.find(MenuItem).first();
+
+        const menuItem = themeProvider.find(MenuItem).first();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
@@ -149,7 +150,7 @@ describe('Dropdown', () => {
       it('highlights next item', () => {
         trigger.simulate('keydown', { key: 'ArrowDown' });
         trigger.simulate('keydown', { key: 'ArrowDown' });
-        const menuItem = dropdown.find(MenuItem).last();
+        const menuItem = themeProvider.find(MenuItem).last();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
@@ -158,33 +159,33 @@ describe('Dropdown', () => {
         trigger.simulate('keydown', { key: 'ArrowDown' });
         trigger.simulate('keydown', { key: 'ArrowDown' });
         trigger.simulate('keydown', { key: 'ArrowDown' });
-        const menuItem = dropdown.find(MenuItem).first();
+        const menuItem = themeProvider.find(MenuItem).first();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
     });
 
     describe('when up arrow is pressed', () => {
-      xit('highlights last item upon opening', () => {
+      it('highlights last item upon opening', () => {
         trigger.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = dropdown.find(MenuItem).last();
+        const menuItem = themeProvider.find(MenuItem).last();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
 
       it('highlights previous item', () => {
-        trigger.simulate('keydown', { key: 'ArrowDown' });
-        trigger.simulate('keydown', { key: 'ArrowDown' });
         trigger.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = dropdown.find(MenuItem).first();
+        trigger.simulate('keydown', { key: 'ArrowUp' });
+        const menuItem = themeProvider.find(MenuItem).first();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
 
       it('highlights last item when start of items is reached', () => {
-        trigger.simulate('keydown', { key: 'ArrowDown' });
         trigger.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = dropdown.find(MenuItem).last();
+        trigger.simulate('keydown', { key: 'ArrowUp' });
+        trigger.simulate('keydown', { key: 'ArrowUp' });
+        const menuItem = themeProvider.find(MenuItem).last();
 
         expect(menuItem.props().isHighlighted).toEqual(true);
       });
@@ -194,7 +195,7 @@ describe('Dropdown', () => {
   describe('item selection', () => {
     let dropdown, item;
 
-    const assert = ({ simulateArgs }) => {
+    const itemSelectionAssertions = ({ simulateArgs }) => {
       it('calls item onClick', () => {
         item.simulate(...simulateArgs);
         const { onClick } = data[0].items[0];
@@ -204,8 +205,7 @@ describe('Dropdown', () => {
 
       it('closes dropdown', () => {
         item.simulate(...simulateArgs);
-        // $FlowFixMe
-        expect(dropdown.getNode().state.isOpen).toBe(false);
+        expect(dropdown.instance().state.isOpen).toBe(false);
       });
 
       describe('when restoreFocus = true', () => {
@@ -221,7 +221,7 @@ describe('Dropdown', () => {
 
       describe('when restoreFocus = false', () => {
         it('does not restore focus to the trigger', () => {
-          dropdown = mountDropdown({
+          [, dropdown] = mountDropdown({
             defaultIsOpen: true,
             restoreFocus: false
           });
@@ -237,7 +237,7 @@ describe('Dropdown', () => {
     };
 
     beforeEach(() => {
-      dropdown = mountDropdown({
+      [, dropdown] = mountDropdown({
         defaultIsOpen: true
       });
       item = dropdown.find(MenuItem).first();
@@ -245,15 +245,15 @@ describe('Dropdown', () => {
     });
 
     describe('when mouse click', () => {
-      assert({ simulateArgs: ['click'] });
+      itemSelectionAssertions({ simulateArgs: ['click'] });
     });
 
     describe('when press enter key', () => {
-      assert({ simulateArgs: ['keydown', { key: 'Enter' }] });
+      itemSelectionAssertions({ simulateArgs: ['keydown', { key: 'Enter' }] });
     });
 
     describe('when press space key', () => {
-      assert({ simulateArgs: ['keydown', { key: 'Enter' }] });
+      itemSelectionAssertions({ simulateArgs: ['keydown', { key: 'Enter' }] });
     });
   });
 

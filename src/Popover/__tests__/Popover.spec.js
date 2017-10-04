@@ -53,7 +53,7 @@ describe('Popover', () => {
     });
 
     it('no arrow when configured', () => {
-      const popover = mountPopover({
+      const [, popover] = mountPopover({
         hasArrow: false,
         defaultIsOpen: true
       });
@@ -64,16 +64,16 @@ describe('Popover', () => {
   });
 
   describe('opens', () => {
-    let popover, trigger;
+    let popover, themeProvider, trigger;
 
     beforeEach(() => {
-      popover = mountPopover({ onOpen: jest.fn() });
+      [themeProvider, popover] = mountPopover({ onOpen: jest.fn() });
       trigger = popover.find(PopoverTrigger);
     });
 
     it('when trigger is clicked', () => {
       trigger.simulate('click');
-      const content = popover.find(PopoverContent);
+      const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(true);
     });
@@ -86,10 +86,10 @@ describe('Popover', () => {
   });
 
   describe('closes', () => {
-    let popover, trigger;
+    let popover, themeProvider, trigger;
 
     beforeEach(() => {
-      popover = mountPopover({
+      [themeProvider, popover] = mountPopover({
         onClose: jest.fn(),
         defaultIsOpen: true
       });
@@ -98,7 +98,7 @@ describe('Popover', () => {
 
     it('when trigger is clicked', () => {
       trigger.simulate('click');
-      const content = popover.find(PopoverContent);
+      const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
     });
@@ -111,8 +111,9 @@ describe('Popover', () => {
       });
 
       document.body && document.body.dispatchEvent(event);
+      themeProvider.update();
 
-      const content = popover.find(PopoverContent);
+      const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
     });
@@ -126,8 +127,9 @@ describe('Popover', () => {
       });
 
       document.body && document.body.dispatchEvent(event);
+      themeProvider.update();
 
-      const content = popover.find(PopoverContent);
+      const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
     });
@@ -142,10 +144,11 @@ describe('Popover', () => {
   describe('focus', () => {
     describe('when autoFocus = true', () => {
       it('sets focus to the content', () => {
-        const popover = mountPopover();
+        const [themeProvider, popover] = mountPopover();
         const trigger = popover.find(PopoverTrigger);
         trigger.simulate('click');
-        const content = popover.find(PopoverContent);
+
+        const content = themeProvider.find(PopoverContent);
 
         expect(content.getDOMNode() === document.activeElement).toEqual(true);
       });
@@ -153,10 +156,10 @@ describe('Popover', () => {
 
     describe('when autoFocus = false', () => {
       it('does not set focus to the content', () => {
-        const popover = mountPopover({ autoFocus: false });
+        const [themeProvider, popover] = mountPopover({ autoFocus: false });
         const trigger = popover.find(PopoverTrigger);
         trigger.simulate('click');
-        const content = popover.find(PopoverContent);
+        const content = themeProvider.find(PopoverContent);
 
         expect(content.getDOMNode() === document.activeElement).toEqual(false);
       });
@@ -164,7 +167,7 @@ describe('Popover', () => {
 
     describe('when restoreFocus = true', () => {
       it('restores focus to the trigger', () => {
-        const popover = mountPopover({ defaultIsOpen: true });
+        const [, popover] = mountPopover({ defaultIsOpen: true });
         const trigger = popover.find(PopoverTrigger);
         trigger.simulate('click');
 
@@ -176,7 +179,7 @@ describe('Popover', () => {
 
     describe('when restoreFocus = false', () => {
       it('does not restore focus to the trigger', () => {
-        const popover = mountPopover({
+        const [, popover] = mountPopover({
           defaultIsOpen: true,
           restoreFocus: false
         });
@@ -192,10 +195,10 @@ describe('Popover', () => {
 
   describe('disabled', () => {
     it('does not open on click', () => {
-      const popover = mountPopover({ disabled: true });
+      const [themeProvider, popover] = mountPopover({ disabled: true });
       const trigger = popover.find(PopoverTrigger);
       trigger.simulate('click');
-      const content = popover.find(PopoverContent);
+      const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
     });
