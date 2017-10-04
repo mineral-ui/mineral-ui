@@ -23,6 +23,10 @@ const compactLicenseHeader = require('./utils/license').compactLicenseHeader;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const ANALYZE = process.env.ANALYZE;
 const isProduction = NODE_ENV === 'production';
+const isDevServer = process.argv.find(arg =>
+  arg.includes('webpack-dev-server')
+);
+const GOOGLE_TRACKING_ID = isProduction ? 'UA-107538931-1' : null;
 
 module.exports = {
   entry: {
@@ -66,7 +70,8 @@ module.exports = {
   plugins: (() => {
     let plugins = [
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
+        'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
+        GOOGLE_TRACKING_ID: JSON.stringify(GOOGLE_TRACKING_ID)
       }),
       new webpack.BannerPlugin({
         banner: compactLicenseHeader,
@@ -74,7 +79,8 @@ module.exports = {
         entryOnly: true
       }),
       new HtmlWebpackPlugin({
-        template: './src/website/index.html'
+        template: './src/website/index.html',
+        GOOGLE_TRACKING_ID
       }),
       new CopyWebpackPlugin([
         {
@@ -92,7 +98,7 @@ module.exports = {
       })
     ];
 
-    if (isProduction) {
+    if (isProduction && !isDevServer) {
       plugins = plugins.concat([
         new webpack.LoaderOptionsPlugin({
           minimize: true,

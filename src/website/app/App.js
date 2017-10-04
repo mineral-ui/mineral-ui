@@ -26,10 +26,13 @@ import Footer from './Footer';
 import _Nav from './Nav';
 import Router from './Router';
 
+declare var GOOGLE_TRACKING_ID: string;
+
 type Props = {
   children?: any,
   className?: string,
   demos: Object | Array<Object>,
+  history: Object,
   location?: any
 };
 
@@ -70,6 +73,21 @@ const Nav = createStyledComponent(_Nav, styles.nav);
 const Main = createStyledComponent('main', styles.main);
 
 class App extends Component<Props> {
+  constructor(props) {
+    super(props);
+
+    if (GOOGLE_TRACKING_ID) {
+      // Analytics tracking of push state page views
+      props.history.listen((location, action) => {
+        if (canUseDOM && action === 'PUSH') {
+          global.window.gtag('config', GOOGLE_TRACKING_ID, {
+            page_path: location.pathname
+          });
+        }
+      });
+    }
+  }
+
   props: Props;
 
   componentDidUpdate(prevProps) {
