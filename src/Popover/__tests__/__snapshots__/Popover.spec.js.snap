@@ -243,9 +243,9 @@ exports[`Popover demo examples basic 1`] = `
   >
     <LiveProvider
       code="
-        <Popover content={<DemoContent />}>
-          <Button>Open Popover</Button>
-        </Popover>"
+    <Popover content={<DemoContent />}>
+      <Button>Open Popover</Button>
+    </Popover>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -614,63 +614,63 @@ exports[`Popover demo examples controlled 1`] = `
   >
     <LiveProvider
       code="
-        class App extends Component {
-          constructor(props) {
-            super(props);
-    
-            this.state = {
-              isOpen: false
-            };
-    
-            this.onOpen = this.onOpen.bind(this);
-            this.onClose = this.onClose.bind(this);
-            this.togglePopover = this.togglePopover.bind(this);
-          }
-    
-          onOpen(event) {
-            this.setState({ isOpen: true });
-          }
-    
-          onClose(event) {
-            // Prevent extra call to togglePopover when clicking the controlling button.
-            // Also avoid interactions with other popovers.
-            const demoLayoutNode = findDOMNode(this.demoLayout);
-            if (
-              !event.nativeEvent &&
-              demoLayoutNode &&
-              demoLayoutNode.contains(event.target)
-            ) {
-              event.stopImmediatePropagation();
-            }
-    
-            this.setState({ isOpen: false });
-          }
-    
-          togglePopover(event) {
-            if (this.state.isOpen) {
-              this.onClose(event);
-            } else {
-              this.onOpen(event);
-            }
-          }
-    
-          render() {
-            const label = this.state.isOpen ? 'Close Popover' : 'Open Popover';
-            return (
-              <DemoLayout ref={node => { this.demoLayout = node }}>
-                <Popover
-                  content={<DemoContent />}
-                  isOpen={this.state.isOpen}
-                  onOpen={this.onOpen}
-                  onClose={this.onClose}
-                  restoreFocus={false}>
-                  <Button>{label}</Button>
-                </Popover>
-                <Button onClick={this.togglePopover}>{label}</Button>
-              </DemoLayout>
-            );
-          }
-        }"
+    class App extends Component {
+      constructor(props) {
+        super(props);
+
+        this.state = {
+          isOpen: false
+        };
+
+        this.onOpen = this.onOpen.bind(this);
+        this.onClose = this.onClose.bind(this);
+        this.togglePopover = this.togglePopover.bind(this);
+      }
+
+      onOpen(event) {
+        this.setState({ isOpen: true });
+      }
+
+      onClose(event) {
+        // Prevent extra call to togglePopover when clicking the controlling button.
+        // Also avoid interactions with other popovers.
+        const demoLayoutNode = findDOMNode(this.demoLayout);
+        if (
+          !event.nativeEvent &&
+          demoLayoutNode &&
+          demoLayoutNode.contains(event.target)
+        ) {
+          event.stopImmediatePropagation();
+        }
+
+        this.setState({ isOpen: false });
+      }
+
+      togglePopover(event) {
+        if (this.state.isOpen) {
+          this.onClose(event);
+        } else {
+          this.onOpen(event);
+        }
+      }
+
+      render() {
+        const label = this.state.isOpen ? 'Close Popover' : 'Open Popover';
+        return (
+          <DemoLayout ref={node => { this.demoLayout = node }}>
+            <Popover
+              content={<DemoContent />}
+              isOpen={this.state.isOpen}
+              onOpen={this.onOpen}
+              onClose={this.onClose}
+              restoreFocus={false}>
+              <Button>{label}</Button>
+            </Popover>
+            <Button onClick={this.togglePopover}>{label}</Button>
+          </DemoLayout>
+        );
+      }
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1062,9 +1062,9 @@ exports[`Popover demo examples disabled 1`] = `
   >
     <LiveProvider
       code="
-        <Popover disabled content={<DemoContent />}>
-          <Button disabled>Open Popover</Button>
-        </Popover>"
+    <Popover disabled content={<DemoContent />}>
+      <Button disabled>Open Popover</Button>
+    </Popover>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1438,24 +1438,24 @@ exports[`Popover demo examples focus 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Popover content={<DemoContent />}>
-            <Button>Both autoFocus and restoreFocus</Button>
-          </Popover>
-    
-          <Popover content={<DemoContent />} autoFocus={false}>
-            <Button>No autoFocus</Button>
-          </Popover>
-    
-          <Popover content={<DemoContent />} restoreFocus={false}>
-            <Button>No restoreFocus</Button>
-          </Popover>
-    
-          <Popover content={<DemoContent />} autoFocus={false} restoreFocus={false}>
-            <Button>Neither autoFocus nor restoreFocus</Button>
-          </Popover>
-        </DemoLayout>
-      "
+    <DemoLayout>
+      <Popover content={<DemoContent />}>
+        <Button>Both autoFocus and restoreFocus</Button>
+      </Popover>
+
+      <Popover content={<DemoContent />} autoFocus={false}>
+        <Button>No autoFocus</Button>
+      </Popover>
+
+      <Popover content={<DemoContent />} restoreFocus={false}>
+        <Button>No restoreFocus</Button>
+      </Popover>
+
+      <Popover content={<DemoContent />} autoFocus={false} restoreFocus={false}>
+        <Button>Neither autoFocus nor restoreFocus</Button>
+      </Popover>
+    </DemoLayout>
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2051,21 +2051,21 @@ exports[`Popover demo examples on-open-close 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const onOpen = () => {
-            console.log('Opened');
-          };
-    
-          const onClose = () => {
-            console.log('Closed');
-          };
-    
-          return (
-            <Popover content={<DemoContent />} onOpen={onOpen} onClose={onClose}>
-              <Button>Menu</Button>
-            </Popover>
-          );
-        }"
+    () => {
+      const onOpen = () => {
+        console.log('Opened');
+      };
+
+      const onClose = () => {
+        console.log('Closed');
+      };
+
+      return (
+        <Popover content={<DemoContent />} onOpen={onOpen} onClose={onClose}>
+          <Button>Menu</Button>
+        </Popover>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2470,13 +2470,13 @@ exports[`Popover demo examples overflow 1`] = `
   >
     <LiveProvider
       code="
-        <OverflowContainer>
-          <Popover
-            content={<DemoContent />}
-            placement=\\"right\\">
-            <Button disabled>Open Popover</Button>
-          </Popover>
-        </OverflowContainer>"
+    <OverflowContainer>
+      <Popover
+        content={<DemoContent />}
+        placement=\\"right\\">
+        <Button disabled>Open Popover</Button>
+      </Popover>
+    </OverflowContainer>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3113,13 +3113,13 @@ exports[`Popover demo examples placement 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Popover
-            content={<DemoContent />}
-            placement=\\"bottom\\">
-            <Button size=\\"jumbo\\" disabled>Open Popover</Button>
-          </Popover>
-        </DemoLayout>"
+    <DemoLayout>
+      <Popover
+        content={<DemoContent />}
+        placement=\\"bottom\\">
+        <Button size=\\"jumbo\\" disabled>Open Popover</Button>
+      </Popover>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3873,16 +3873,16 @@ exports[`Popover demo examples scrolling-container 1`] = `
   >
     <LiveProvider
       code="
-        <ScrollParent>
-          <Popover
-            content={<DemoContent />}
-            placement=\\"left\\"
-            isOpen
-            restoreFocus={false}>
-            <Button>Open Popover</Button>
-          </Popover>
-        </ScrollParent>
-      "
+    <ScrollParent>
+      <Popover
+        content={<DemoContent />}
+        placement=\\"left\\"
+        isOpen
+        restoreFocus={false}>
+        <Button>Open Popover</Button>
+      </Popover>
+    </ScrollParent>
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -4597,15 +4597,15 @@ exports[`Popover demo examples title 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Popover
-            content={<DemoContent />}
-            placement=\\"right\\"
-            subtitle=\\"Subtitle\\"
-            title=\\"Title\\">
-            <Button disabled>Open Popover</Button>
-          </Popover>
-        </DemoLayout>"
+    <DemoLayout>
+      <Popover
+        content={<DemoContent />}
+        placement=\\"right\\"
+        subtitle=\\"Subtitle\\"
+        title=\\"Title\\">
+        <Button disabled>Open Popover</Button>
+      </Popover>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={

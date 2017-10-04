@@ -253,19 +253,19 @@ exports[`MenuItem demo examples basic 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem>
-              Light years
-            </MenuItem>
-            <MenuItem>
-              Star stuff
-            </MenuItem>
-            <MenuItem>
-              Encyclopaedia galactica
-            </MenuItem>
-          </Menu>
-        </DemoLayout>"
+    <DemoLayout>
+      <Menu>
+        <MenuItem>
+          Light years
+        </MenuItem>
+        <MenuItem>
+          Star stuff
+        </MenuItem>
+        <MenuItem>
+          Encyclopaedia galactica
+        </MenuItem>
+      </Menu>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -682,114 +682,114 @@ exports[`MenuItem demo examples custom-render 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          function CustomRender(item, props, theme) {
-            const { isHighlighted, disabled } = props;
-    
-            const Root = createStyledComponent(
-              'div',
-              {
-                backgroundColor: isHighlighted && theme.color_theme_20,
-                display: 'flex',
-                padding: theme.MenuItem_padding,
-                textDecoration: 'none',
-    
-                '&:focus': {
-                  backgroundColor: !disabled && theme.color_theme_20,
-                  outline: 0
-                },
-    
-                '&:hover': {
-                  backgroundColor: !disabled && theme.color_theme_20
-                },
-    
-                '&:active': {
-                  backgroundColor: !disabled && theme.color_theme_40
-                }
-              },
-              {
-                includeStyleReset: true
-              }
-            );
-            const Actor = createStyledComponent('span', {
-              color: theme.color_text_caption,
-              display: 'block',
-              fontSize: theme.fontSize_mouse,
-              marginTop: theme.spacing_half
-            });
-            const Avatar = createStyledComponent('img', {
-              borderRadius: pxToEm(18),
-              display: 'block',
-              flex: '0 0 auto',
-              height: pxToEm(36),
-              marginLeft: theme.direction === 'rtl' && theme.spacing_single,
-              marginRight: theme.direction === 'ltr' && theme.spacing_single,
-              padding: theme.MenuItemIcon_padding,
-              width: pxToEm(36)
-            });
-            const Content = createStyledComponent('span', function() {
-              const fontSize = theme.MenuItemContent_fontSize;
-              const paddingHorizontal = getNormalizedValue(
-                theme.MenuItemContent_padding,
-                fontSize
-              );
-    
-              return {
-                flex: '1 1 auto',
-                fontSize,
-                padding: '0 ' + paddingHorizontal,
-                whiteSpace: 'normal',
-                wordBreak: 'break-all'
-              };
-            });
-    
-            const rootProps = {
-              disabled,
-              ...props
-            };
-    
-            return (
-              <Root {...rootProps}>
-                {item.avatar && <Avatar alt={'Photo of ' + item.character} src={item.avatar} />}
-                <Content>
-                  {item.character}
-                  {item.actor && <Actor>{item.actor}</Actor>}
-                </Content>
-              </Root>
-            );
-          }
-    
-          const data = [
-            {
-              items: [
-                {
-                  actor: 'Bill Murray',
-                  avatar: 'http://www.fillmurray.com/102/100',
-                  character: 'Captain Steve Zissou',
-                  render: CustomRender
-                },
-                {
-                  actor: 'Bill Murray',
-                  avatar: 'http://www.fillmurray.com/101/100',
-                  character: 'Dr. Peter Venkman',
-                  render: CustomRender
-                },
-                {
-                  actor: 'Bill Murray',
-                  avatar: 'http://www.fillmurray.com/100/100',
-                  character: 'Bob Harris',
-                  render: CustomRender
-                }
-              ]
+    () => {
+      function CustomRender(item, props, theme) {
+        const { isHighlighted, disabled } = props;
+
+        const Root = createStyledComponent(
+          'div',
+          {
+            backgroundColor: isHighlighted && theme.color_theme_20,
+            display: 'flex',
+            padding: theme.MenuItem_padding,
+            textDecoration: 'none',
+
+            '&:focus': {
+              backgroundColor: !disabled && theme.color_theme_20,
+              outline: 0
+            },
+
+            '&:hover': {
+              backgroundColor: !disabled && theme.color_theme_20
+            },
+
+            '&:active': {
+              backgroundColor: !disabled && theme.color_theme_40
             }
-          ];
-    
-          return (
-            <DemoLayout>
-              <Menu data={data} />
-            </DemoLayout>
-          )
-        }"
+          },
+          {
+            includeStyleReset: true
+          }
+        );
+        const Actor = createStyledComponent('span', {
+          color: theme.color_text_caption,
+          display: 'block',
+          fontSize: theme.fontSize_mouse,
+          marginTop: theme.spacing_half
+        });
+        const Avatar = createStyledComponent('img', {
+          borderRadius: pxToEm(18),
+          display: 'block',
+          flex: '0 0 auto',
+          height: pxToEm(36),
+          marginLeft: theme.direction === 'rtl' && theme.spacing_single,
+          marginRight: theme.direction === 'ltr' && theme.spacing_single,
+          padding: theme.MenuItemIcon_padding,
+          width: pxToEm(36)
+        });
+        const Content = createStyledComponent('span', function() {
+          const fontSize = theme.MenuItemContent_fontSize;
+          const paddingHorizontal = getNormalizedValue(
+            theme.MenuItemContent_padding,
+            fontSize
+          );
+
+          return {
+            flex: '1 1 auto',
+            fontSize,
+            padding: '0 ' + paddingHorizontal,
+            whiteSpace: 'normal',
+            wordBreak: 'break-all'
+          };
+        });
+
+        const rootProps = {
+          disabled,
+          ...props
+        };
+
+        return (
+          <Root {...rootProps}>
+            {item.avatar && <Avatar alt={'Photo of ' + item.character} src={item.avatar} />}
+            <Content>
+              {item.character}
+              {item.actor && <Actor>{item.actor}</Actor>}
+            </Content>
+          </Root>
+        );
+      }
+
+      const data = [
+        {
+          items: [
+            {
+              actor: 'Bill Murray',
+              avatar: 'http://www.fillmurray.com/102/100',
+              character: 'Captain Steve Zissou',
+              render: CustomRender
+            },
+            {
+              actor: 'Bill Murray',
+              avatar: 'http://www.fillmurray.com/101/100',
+              character: 'Dr. Peter Venkman',
+              render: CustomRender
+            },
+            {
+              actor: 'Bill Murray',
+              avatar: 'http://www.fillmurray.com/100/100',
+              character: 'Bob Harris',
+              render: CustomRender
+            }
+          ]
+        }
+      ];
+
+      return (
+        <DemoLayout>
+          <Menu data={data} />
+        </DemoLayout>
+      )
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1795,19 +1795,19 @@ exports[`MenuItem demo examples disabled 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem disabled onClick={event => { console.log(event) }}>
-              Light years
-            </MenuItem>
-            <MenuItem disabled onClick={event => { console.log(event) }}>
-              Star stuff
-            </MenuItem>
-            <MenuItem disabled onClick={event => { console.log(event) }}>
-              Encyclopaedia galactica
-            </MenuItem>
-          </Menu>
-        </DemoLayout>"
+    <DemoLayout>
+      <Menu>
+        <MenuItem disabled onClick={event => { console.log(event) }}>
+          Light years
+        </MenuItem>
+        <MenuItem disabled onClick={event => { console.log(event) }}>
+          Star stuff
+        </MenuItem>
+        <MenuItem disabled onClick={event => { console.log(event) }}>
+          Encyclopaedia galactica
+        </MenuItem>
+      </Menu>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2386,25 +2386,25 @@ exports[`MenuItem demo examples icons 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const icon = <IconCloud />;
-    
-          return (
-            <DemoLayout>
-              <Menu>
-                <MenuItem iconStart={icon}>Start icon</MenuItem>
-                <MenuItem iconEnd={icon}>End icon</MenuItem>
-                <MenuItem iconStart={icon} iconEnd={icon}>Both icons</MenuItem>
-              </Menu>
-              <Menu>
-                <MenuItem iconStart={icon} variant=\\"danger\\">Danger</MenuItem>
-                <MenuItem iconStart={icon} variant=\\"success\\">Success</MenuItem>
-                <MenuItem iconStart={icon} variant=\\"warning\\">Warning</MenuItem>
-                <MenuItem iconStart={icon} disabled>Disabled</MenuItem>
-              </Menu>
-            </DemoLayout>
-          );
-        }"
+    () => {
+      const icon = <IconCloud />;
+
+      return (
+        <DemoLayout>
+          <Menu>
+            <MenuItem iconStart={icon}>Start icon</MenuItem>
+            <MenuItem iconEnd={icon}>End icon</MenuItem>
+            <MenuItem iconStart={icon} iconEnd={icon}>Both icons</MenuItem>
+          </Menu>
+          <Menu>
+            <MenuItem iconStart={icon} variant=\\"danger\\">Danger</MenuItem>
+            <MenuItem iconStart={icon} variant=\\"success\\">Success</MenuItem>
+            <MenuItem iconStart={icon} variant=\\"warning\\">Warning</MenuItem>
+            <MenuItem iconStart={icon} disabled>Disabled</MenuItem>
+          </Menu>
+        </DemoLayout>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3233,111 +3233,111 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}>
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}>
-              Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}>
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink\\">
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink\\">
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen sink\\">
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen sink\\">
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}>
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}>
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink\\">
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen sink\\">
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen sink\\">
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-              Kitchen Sink
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              iconEnd={<IconCloud />}
-              secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
-              Kitchen Sink with much longer text to force wrapping
-            </MenuItem>
-          </Menu>
-        </DemoLayout>
-      "
+    <DemoLayout>
+      <Menu>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}>
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}>
+          Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}>
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink\\">
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink\\">
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen sink\\">
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen sink\\">
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}>
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}>
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink\\">
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen sink\\">
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen sink\\">
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+          Kitchen Sink
+        </MenuItem>
+        <MenuItem
+          iconStart={<IconCloud />}
+          iconEnd={<IconCloud />}
+          secondaryText=\\"Kitchen Sink with much longer text to force wrapping\\">
+          Kitchen Sink with much longer text to force wrapping
+        </MenuItem>
+      </Menu>
+    </DemoLayout>
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -5430,16 +5430,16 @@ exports[`MenuItem demo examples rtl 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout dir=\\"rtl\\">
-          <ThemeProvider theme={{ direction: 'rtl' }}>
-            <Menu>
-              <MenuItem>نص عنصر القائمة</MenuItem>
-              <MenuItem secondaryText=\\"نص ثانوي\\">نص عنصر القائمة</MenuItem>
-              <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
-              <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
-            </Menu>
-          </ThemeProvider>
-        </DemoLayout>"
+    <DemoLayout dir=\\"rtl\\">
+      <ThemeProvider theme={{ direction: 'rtl' }}>
+        <Menu>
+          <MenuItem>نص عنصر القائمة</MenuItem>
+          <MenuItem secondaryText=\\"نص ثانوي\\">نص عنصر القائمة</MenuItem>
+          <MenuItem iconStart={<IconCloud />}>رمز البدء</MenuItem>
+          <MenuItem iconEnd={<IconCloud />}>رمز النهاية</MenuItem>
+        </Menu>
+      </ThemeProvider>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -5972,19 +5972,19 @@ exports[`MenuItem demo examples secondary-text 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem secondaryText=\\"Star stuff\\">
-              Light years
-            </MenuItem>
-            <MenuItem secondaryText=\\"Distant epochs\\">
-              Harvesting only
-            </MenuItem>
-            <MenuItem secondaryText=\\"Cosmic ocean\\">
-              Encyclopaedia galactica
-            </MenuItem>
-          </Menu>
-        </DemoLayout>"
+    <DemoLayout>
+      <Menu>
+        <MenuItem secondaryText=\\"Star stuff\\">
+          Light years
+        </MenuItem>
+        <MenuItem secondaryText=\\"Distant epochs\\">
+          Harvesting only
+        </MenuItem>
+        <MenuItem secondaryText=\\"Cosmic ocean\\">
+          Encyclopaedia galactica
+        </MenuItem>
+      </Menu>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -6557,106 +6557,106 @@ exports[`MenuItem demo examples states 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem>
-              Regular
-            </MenuItem>
-            <MenuItem variant=\\"danger\\">
-              Danger
-            </MenuItem>
-            <MenuItem variant=\\"success\\">
-              Success
-            </MenuItem>
-            <MenuItem variant=\\"warning\\">
-              Warning
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem {...simulate('hover')}>
-              Hover
-            </MenuItem>
-            <MenuItem {...simulate('hover')} variant=\\"danger\\">
-              Hover
-            </MenuItem>
-            <MenuItem {...simulate('hover')} variant=\\"success\\">
-              Hover
-            </MenuItem>
-            <MenuItem {...simulate('hover')} variant=\\"warning\\">
-              Hover
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem {...simulate('focus')}>
-              Focus
-            </MenuItem>
-            <MenuItem {...simulate('focus')} variant=\\"danger\\">
-              Focus
-            </MenuItem>
-            <MenuItem {...simulate('focus')} variant=\\"success\\">
-              Focus
-            </MenuItem>
-            <MenuItem {...simulate('focus')} variant=\\"warning\\">
-              Focus
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem {...simulate('focus', 'hover')}>
-              Focus & Hover
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'hover')} variant=\\"danger\\">
-              Focus & Hover
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'hover')} variant=\\"success\\">
-              Focus & Hover
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'hover')} variant=\\"warning\\">
-              Focus & Hover
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem {...simulate('focus', 'active')}>
-              Focus & Active
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'active')} variant=\\"danger\\">
-              Focus & Active
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'active')} variant=\\"success\\">
-              Focus & Active
-            </MenuItem>
-            <MenuItem {...simulate('focus', 'active')} variant=\\"warning\\">
-              Focus & Active
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem {...simulate('active')}>
-              Active
-            </MenuItem>
-            <MenuItem {...simulate('active')} variant=\\"danger\\">
-              Active
-            </MenuItem>
-            <MenuItem {...simulate('active')} variant=\\"success\\">
-              Active
-            </MenuItem>
-            <MenuItem {...simulate('active')} variant=\\"warning\\">
-              Active
-            </MenuItem>
-          </Menu>
-          <Menu>
-            <MenuItem disabled>
-              Disabled
-            </MenuItem>
-            <MenuItem disabled variant=\\"danger\\">
-              Disabled
-            </MenuItem>
-            <MenuItem disabled variant=\\"success\\">
-              Disabled
-            </MenuItem>
-            <MenuItem disabled variant=\\"warning\\">
-              Disabled
-            </MenuItem>
-          </Menu>
-        </DemoLayout>"
+    <DemoLayout>
+      <Menu>
+        <MenuItem>
+          Regular
+        </MenuItem>
+        <MenuItem variant=\\"danger\\">
+          Danger
+        </MenuItem>
+        <MenuItem variant=\\"success\\">
+          Success
+        </MenuItem>
+        <MenuItem variant=\\"warning\\">
+          Warning
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem {...simulate('hover')}>
+          Hover
+        </MenuItem>
+        <MenuItem {...simulate('hover')} variant=\\"danger\\">
+          Hover
+        </MenuItem>
+        <MenuItem {...simulate('hover')} variant=\\"success\\">
+          Hover
+        </MenuItem>
+        <MenuItem {...simulate('hover')} variant=\\"warning\\">
+          Hover
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem {...simulate('focus')}>
+          Focus
+        </MenuItem>
+        <MenuItem {...simulate('focus')} variant=\\"danger\\">
+          Focus
+        </MenuItem>
+        <MenuItem {...simulate('focus')} variant=\\"success\\">
+          Focus
+        </MenuItem>
+        <MenuItem {...simulate('focus')} variant=\\"warning\\">
+          Focus
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem {...simulate('focus', 'hover')}>
+          Focus & Hover
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'hover')} variant=\\"danger\\">
+          Focus & Hover
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'hover')} variant=\\"success\\">
+          Focus & Hover
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'hover')} variant=\\"warning\\">
+          Focus & Hover
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem {...simulate('focus', 'active')}>
+          Focus & Active
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'active')} variant=\\"danger\\">
+          Focus & Active
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'active')} variant=\\"success\\">
+          Focus & Active
+        </MenuItem>
+        <MenuItem {...simulate('focus', 'active')} variant=\\"warning\\">
+          Focus & Active
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem {...simulate('active')}>
+          Active
+        </MenuItem>
+        <MenuItem {...simulate('active')} variant=\\"danger\\">
+          Active
+        </MenuItem>
+        <MenuItem {...simulate('active')} variant=\\"success\\">
+          Active
+        </MenuItem>
+        <MenuItem {...simulate('active')} variant=\\"warning\\">
+          Active
+        </MenuItem>
+      </Menu>
+      <Menu>
+        <MenuItem disabled>
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant=\\"danger\\">
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant=\\"success\\">
+          Disabled
+        </MenuItem>
+        <MenuItem disabled variant=\\"warning\\">
+          Disabled
+        </MenuItem>
+      </Menu>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -9019,19 +9019,19 @@ exports[`MenuItem demo examples variants 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Menu>
-            <MenuItem variant=\\"danger\\">
-              Danger
-            </MenuItem>
-            <MenuItem variant=\\"success\\">
-              Success
-            </MenuItem>
-            <MenuItem variant=\\"warning\\">
-              Warning
-            </MenuItem>
-          </Menu>
-        </DemoLayout>"
+    <DemoLayout>
+      <Menu>
+        <MenuItem variant=\\"danger\\">
+          Danger
+        </MenuItem>
+        <MenuItem variant=\\"success\\">
+          Success
+        </MenuItem>
+        <MenuItem variant=\\"warning\\">
+          Warning
+        </MenuItem>
+      </Menu>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={

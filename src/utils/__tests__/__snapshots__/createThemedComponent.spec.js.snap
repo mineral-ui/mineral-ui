@@ -150,15 +150,15 @@ exports[`createThemedComponent demo examples create-styled-component 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
-            outline: '3px dashed mediumvioletred',
-            fontSize: theme.fontSize_h1
-          }));
-    
-          return <MyStyledSample />;
-        }
-      "
+    () => {
+      const MyStyledSample = createStyledComponent(Sample, ({ theme }) => ({
+        outline: '3px dashed mediumvioletred',
+        fontSize: theme.fontSize_h1
+      }));
+
+      return <MyStyledSample />;
+    }
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -349,14 +349,14 @@ exports[`createThemedComponent demo examples create-themed-component 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const MyThemedSample = createThemedComponent(Sample, ({ theme }) => ({
-            color_text: 'mediumvioletred',
-            Sample_backgroundColor: theme.color_theme_20
-          }));
-    
-          return <MyThemedSample />;
-        }"
+    () => {
+      const MyThemedSample = createThemedComponent(Sample, ({ theme }) => ({
+        color_text: 'mediumvioletred',
+        Sample_backgroundColor: theme.color_theme_20
+      }));
+
+      return <MyThemedSample />;
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={

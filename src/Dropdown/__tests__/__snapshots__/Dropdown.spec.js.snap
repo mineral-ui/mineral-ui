@@ -243,9 +243,9 @@ exports[`Dropdown demo examples basic 1`] = `
   >
     <LiveProvider
       code="
-        <Dropdown data={data}>
-          <Button>Menu</Button>
-        </Dropdown>"
+    <Dropdown data={data}>
+      <Button>Menu</Button>
+    </Dropdown>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -733,63 +733,63 @@ exports[`Dropdown demo examples controlled 1`] = `
   >
     <LiveProvider
       code="
-        class App extends Component {
-          constructor(props) {
-            super(props);
-    
-            this.state = {
-              isOpen: false
-            };
-    
-            this.onOpen = this.onOpen.bind(this);
-            this.onClose = this.onClose.bind(this);
-            this.toggleDropdown = this.toggleDropdown.bind(this);
-          }
-    
-          onOpen(event) {
-            this.setState({ isOpen: true });
-          }
-    
-          onClose(event) {
-            // Prevent extra call to toggleDropdown when clicking the controlling button.
-            // Also avoid interactions with other dropdowns.
-            const demoLayoutNode = findDOMNode(this.demoLayout);
-            if (
-              !event.nativeEvent &&
-              demoLayoutNode &&
-              demoLayoutNode.contains(event.target)
-            ) {
-              event.stopImmediatePropagation();
-            }
-    
-            this.setState({ isOpen: false });
-          }
-    
-    
-          toggleDropdown(event) {
-            if (this.state.isOpen) {
-              this.onClose(event);
-            } else {
-              this.onOpen(event);
-            }
-          }
-    
-          render() {
-            const label = this.state.isOpen ? 'Close Dropdown' : 'Open Dropdown';
-            return (
-              <DemoLayout ref={node => { this.demoLayout = node }}>
-                <Dropdown
-                  data={data}
-                  isOpen={this.state.isOpen}
-                  onOpen={this.onOpen}
-                  onClose={this.onClose}>
-                  <Button>{label}</Button>
-                </Dropdown>
-                <Button onClick={this.toggleDropdown}>{label}</Button>
-              </DemoLayout>
-            );
-          }
-        }"
+    class App extends Component {
+      constructor(props) {
+        super(props);
+
+        this.state = {
+          isOpen: false
+        };
+
+        this.onOpen = this.onOpen.bind(this);
+        this.onClose = this.onClose.bind(this);
+        this.toggleDropdown = this.toggleDropdown.bind(this);
+      }
+
+      onOpen(event) {
+        this.setState({ isOpen: true });
+      }
+
+      onClose(event) {
+        // Prevent extra call to toggleDropdown when clicking the controlling button.
+        // Also avoid interactions with other dropdowns.
+        const demoLayoutNode = findDOMNode(this.demoLayout);
+        if (
+          !event.nativeEvent &&
+          demoLayoutNode &&
+          demoLayoutNode.contains(event.target)
+        ) {
+          event.stopImmediatePropagation();
+        }
+
+        this.setState({ isOpen: false });
+      }
+
+
+      toggleDropdown(event) {
+        if (this.state.isOpen) {
+          this.onClose(event);
+        } else {
+          this.onOpen(event);
+        }
+      }
+
+      render() {
+        const label = this.state.isOpen ? 'Close Dropdown' : 'Open Dropdown';
+        return (
+          <DemoLayout ref={node => { this.demoLayout = node }}>
+            <Dropdown
+              data={data}
+              isOpen={this.state.isOpen}
+              onOpen={this.onOpen}
+              onClose={this.onClose}>
+              <Button>{label}</Button>
+            </Dropdown>
+            <Button onClick={this.toggleDropdown}>{label}</Button>
+          </DemoLayout>
+        );
+      }
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1309,59 +1309,59 @@ exports[`Dropdown demo examples data 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const data = [
+    () => {
+      const data = [
+        {
+          items: [
             {
-              items: [
-                {
-                  text: 'Menu item with onClick',
-                  onClick: event => { console.log(event); }
-                },
-                {
-                  text: 'Menu item',
-                  secondaryText: 'Secondary text'
-                }
-              ]
+              text: 'Menu item with onClick',
+              onClick: event => { console.log(event); }
             },
             {
-              title: 'Group Title',
-              items: [
-                {
-                  text: 'Icon at start',
-                  iconStart: <IconCloud />
-                },
-                {
-                  text: 'Icon at end',
-                  iconEnd: <IconCloud />
-                },
-                {
-                  divider: true
-                },
-                {
-                  text: 'Danger variant',
-                  variant: 'danger' // 'danger' | 'success' | 'warning'
-                },
-                {
-                  text: 'Disabled menu item',
-                  onClick: event => { console.log(event); },
-                  disabled: true
-                },
-                {
-                  text: 'Custom render',
-                  avatar: 'http://www.fillmurray.com/102/100',
-                  href: '/components/menu-item#custom-render', // <-- Details here
-                  render: CustomRender
-                }
-              ]
+              text: 'Menu item',
+              secondaryText: 'Secondary text'
             }
-          ];
-    
-          return (
-            <Dropdown data={data}>
-              <Button>Menu</Button>
-            </Dropdown>
-          );
-        }"
+          ]
+        },
+        {
+          title: 'Group Title',
+          items: [
+            {
+              text: 'Icon at start',
+              iconStart: <IconCloud />
+            },
+            {
+              text: 'Icon at end',
+              iconEnd: <IconCloud />
+            },
+            {
+              divider: true
+            },
+            {
+              text: 'Danger variant',
+              variant: 'danger' // 'danger' | 'success' | 'warning'
+            },
+            {
+              text: 'Disabled menu item',
+              onClick: event => { console.log(event); },
+              disabled: true
+            },
+            {
+              text: 'Custom render',
+              avatar: 'http://www.fillmurray.com/102/100',
+              href: '/components/menu-item#custom-render', // <-- Details here
+              render: CustomRender
+            }
+          ]
+        }
+      ];
+
+      return (
+        <Dropdown data={data}>
+          <Button>Menu</Button>
+        </Dropdown>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1842,9 +1842,9 @@ exports[`Dropdown demo examples disabled 1`] = `
   >
     <LiveProvider
       code="
-        <Dropdown data={data} disabled>
-          <Button disabled>Menu</Button>
-        </Dropdown>"
+    <Dropdown data={data} disabled>
+      <Button disabled>Menu</Button>
+    </Dropdown>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2323,21 +2323,21 @@ exports[`Dropdown demo examples on-open-close 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const onOpen = () => {
-            console.log('Opened');
-          };
-    
-          const onClose = () => {
-            console.log('Closed');
-          };
-    
-          return (
-            <Dropdown data={data} onOpen={onOpen} onClose={onClose}>
-              <Button>Menu</Button>
-            </Dropdown>
-          );
-        }"
+    () => {
+      const onOpen = () => {
+        console.log('Opened');
+      };
+
+      const onClose = () => {
+        console.log('Closed');
+      };
+
+      return (
+        <Dropdown data={data} onOpen={onOpen} onClose={onClose}>
+          <Button>Menu</Button>
+        </Dropdown>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2957,11 +2957,11 @@ exports[`Dropdown demo examples placement 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Dropdown placement=\\"bottom-start\\" data={data}>
-            <Button size=\\"jumbo\\" disabled>Menu</Button>
-          </Dropdown>
-        </DemoLayout>"
+    <DemoLayout>
+      <Dropdown placement=\\"bottom-start\\" data={data}>
+        <Button size=\\"jumbo\\" disabled>Menu</Button>
+      </Dropdown>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -4068,16 +4068,16 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
   >
     <LiveProvider
       code="
-        <ScrollParent height={430}>
-          <Dropdown
-            data={data}
-            isOpen
-            placement=\\"bottom-start\\"
-            restoreFocus={false}>
-            <Button>Menu</Button>
-          </Dropdown>
-        </ScrollParent>
-      "
+    <ScrollParent height={430}>
+      <Dropdown
+        data={data}
+        isOpen
+        placement=\\"bottom-start\\"
+        restoreFocus={false}>
+        <Button>Menu</Button>
+      </Dropdown>
+    </ScrollParent>
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -5099,11 +5099,11 @@ exports[`Dropdown demo examples wide 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Dropdown wide data={data}>
-            <Button disabled>Menu</Button>
-          </Dropdown>
-        </DemoLayout>"
+    <DemoLayout>
+      <Dropdown wide data={data}>
+        <Button disabled>Menu</Button>
+      </Dropdown>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
