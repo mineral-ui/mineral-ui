@@ -229,16 +229,16 @@ exports[`Card demo examples basic 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle>Card Title</CardTitle>
-            <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient placeholder\\" />
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card Title</CardTitle>
+        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient placeholder\\" />
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -641,14 +641,14 @@ exports[`Card demo examples children 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle>Card title</CardTitle>
-            <CustomContent>
-              <Button fullWidth>Button</Button>
-            </CustomContent>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card title</CardTitle>
+        <CustomContent>
+          <Button fullWidth>Button</Button>
+        </CustomContent>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1063,16 +1063,16 @@ exports[`Card demo examples children 2`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle>Card Title</CardTitle>
-            <CardBlock>
-              <CustomContent>
-                <Button fullWidth>Button</Button>
-              </CustomContent>
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>
+          <CustomContent>
+            <Button fullWidth>Button</Button>
+          </CustomContent>
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1393,16 +1393,16 @@ exports[`Card demo examples clickable 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card onClick={event => console.log(event)}>
-            <CardTitle>Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card onClick={event => console.log(event)}>
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -1722,40 +1722,40 @@ exports[`Card demo examples complex-title 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          const Status = createStyledComponent('span', {
-            color: 'red',
-            fontSize: '0.6em',
-    
-            '&:before': {
-              backgroundColor: 'red',
-              borderRadius: '0.8em',
-              content: '\\"\\"',
-              display: 'inline-block',
-              height: '0.8em',
-              marginRight: '0.5em',
-              position: 'relative',
-              top: '0.1em',
-              width: '0.8em'
-            }
-          });
-    
-          return (
-            <DemoLayout>
-              <Card>
-                <CardTitle subtitle={<em>Subtitle here</em>}>
-                  Card Title<br />
-                  <Status>Status alert</Status>
-                </CardTitle>
-                <CardBlock>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-                  pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-                  interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                </CardBlock>
-              </Card>
-            </DemoLayout>
-          );
-        }"
+    () => {
+      const Status = createStyledComponent('span', {
+        color: 'red',
+        fontSize: '0.6em',
+
+        '&:before': {
+          backgroundColor: 'red',
+          borderRadius: '0.8em',
+          content: '\\"\\"',
+          display: 'inline-block',
+          height: '0.8em',
+          marginRight: '0.5em',
+          position: 'relative',
+          top: '0.1em',
+          width: '0.8em'
+        }
+      });
+
+      return (
+        <DemoLayout>
+          <Card>
+            <CardTitle subtitle={<em>Subtitle here</em>}>
+              Card Title<br />
+              <Status>Status alert</Status>
+            </CardTitle>
+            <CardBlock>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+            </CardBlock>
+          </Card>
+        </DemoLayout>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2098,16 +2098,16 @@ exports[`Card demo examples consistent-spacing 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle>Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2401,16 +2401,16 @@ exports[`Card demo examples meta 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle meta=\\"Meta Information for This Card\\">Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle meta=\\"Meta Information for This Card\\">Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -2722,17 +2722,17 @@ exports[`Card demo examples minor-title 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardImage src=\\"/images/500x200.png\\" alt=\\"gradient image\\" />
-            <CardTitle minor>Minor Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardImage src=\\"/images/500x200.png\\" alt=\\"gradient image\\" />
+        <CardTitle minor>Minor Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3088,37 +3088,37 @@ exports[`Card demo examples order 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
-            <CardTitle minor>Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-    
-          <Card>
-            <CardTitle>Card Title</CardTitle>
-            <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-    
-          <Card>
-            <CardTitle>Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-            <CardImage src=\\"/images/690x690.png\\" alt=\\"gradient image\\" />
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
+        <CardTitle minor>Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+
+      <Card>
+        <CardTitle>Card Title</CardTitle>
+        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+
+      <Card>
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+        <CardImage src=\\"/images/690x690.png\\" alt=\\"gradient image\\" />
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3525,16 +3525,16 @@ exports[`Card demo examples subtitle 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardTitle subtitle=\\"Subtitle here\\">Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardTitle subtitle=\\"Subtitle here\\">Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -3846,17 +3846,17 @@ exports[`Card demo examples with-image 1`] = `
   >
     <LiveProvider
       code="
-        <DemoLayout>
-          <Card>
-            <CardImage src=\\"/images/500x281.png\\" alt=\\"gradient image\\" />
-            <CardTitle minor>Minor Card Title</CardTitle>
-            <CardBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-              pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-              interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            </CardBlock>
-          </Card>
-        </DemoLayout>"
+    <DemoLayout>
+      <Card>
+        <CardImage src=\\"/images/500x281.png\\" alt=\\"gradient image\\" />
+        <CardTitle minor>Minor Card Title</CardTitle>
+        <CardBlock>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
+          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+        </CardBlock>
+      </Card>
+    </DemoLayout>"
       mountStylesheet={false}
       noInline={false}
       scope={

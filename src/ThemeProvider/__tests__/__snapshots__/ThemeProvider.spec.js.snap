@@ -157,22 +157,22 @@ exports[`ThemeProvider demo examples theme-provider 1`] = `
   >
     <LiveProvider
       code="
-        () => {
-          return (
-            <DemoLayout>
-              {/* This will affect all components inside this ThemeProvider that use this variable. */}
-              <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-                <Sample />
-              </ThemeProvider>
-    
-              {/* This will affect all components inside this ThemeProvider that use this variable,
-                  which should only be Sample components due to the namespace. */}
-              <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-              	<Sample />
-              </ThemeProvider>
-            </DemoLayout>
-          );
-        }"
+    () => {
+      return (
+        <DemoLayout>
+          {/* This will affect all components inside this ThemeProvider that use this variable. */}
+          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+            <Sample />
+          </ThemeProvider>
+
+          {/* This will affect all components inside this ThemeProvider that use this variable,
+              which should only be Sample components due to the namespace. */}
+          <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
+          	<Sample />
+          </ThemeProvider>
+        </DemoLayout>
+      );
+    }"
       mountStylesheet={false}
       noInline={false}
       scope={
