@@ -58,7 +58,7 @@ export const componentTheme = (baseTheme: Object) => ({
   PopoverContent_borderColor: baseTheme.color_gray_20,
   PopoverContent_borderRadius: baseTheme.borderRadius_1,
   PopoverContent_boxShadow: baseTheme.shadow_2,
-  PopoverContent_paddingVertical: baseTheme.spacing_single,
+  PopoverContent_paddingVertical: baseTheme.space_inset_sm,
   PopoverContent_zIndex: baseTheme.zIndex_100,
   ...baseTheme
 });
@@ -104,8 +104,8 @@ const Root = createStyledComponent(
  */
 const cardOverrides = ({ theme }) => {
   return {
-    CardRow_margin: theme.spacing_single,
-    CardRow_padding: theme.spacing_double
+    CardRow_margin: theme.space_stack_sm,
+    CardRow_padding: theme.space_inset_md
   };
 };
 

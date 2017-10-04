@@ -30,10 +30,10 @@ export const componentTheme = (baseTheme: Object) => ({
   Card_borderRadius: baseTheme.borderRadius_1,
   Card_boxShadow: baseTheme.shadow_1,
   Card_boxShadow_focus: `0 0 0 2px ${baseTheme.color_theme_100}, ${baseTheme.shadow_1}`,
-  Card_paddingBottom: baseTheme.spacing_double,
+  Card_paddingBottom: baseTheme.space_stack_md,
 
-  CardRow_margin: baseTheme.spacing_double,
-  CardRow_padding: baseTheme.spacing_triple,
+  CardRow_margin: baseTheme.space_stack_md,
+  CardRow_padding: baseTheme.space_inset_lg,
 
   ...baseTheme
 });

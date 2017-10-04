@@ -26,18 +26,28 @@ type Props = {
   title?: React$Node
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  MenuGroup_margin: baseTheme.space_stack_sm,
+
+  ...baseTheme
+});
+
 const Root = createStyledComponent(
   'div',
-  ({ theme }) => ({
-    margin: `${theme.spacing_single} 0`,
-    '&:first-child,& + &': {
-      marginTop: 0
-    },
+  props => {
+    const theme = componentTheme(props.theme);
 
-    '&:last-child': {
-      marginBottom: 0
-    }
-  }),
+    return {
+      margin: `${theme.MenuGroup_margin} 0`,
+      '&:first-child,& + &': {
+        marginTop: 0
+      },
+
+      '&:last-child': {
+        marginBottom: 0
+      }
+    };
+  },
   {
     displayName: 'MenuGroup'
   }
