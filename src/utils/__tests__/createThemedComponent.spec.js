@@ -26,18 +26,18 @@ import testDemoExamples from '../../../utils/testDemoExamples';
 function mountThemedLink(theme) {
   const ThemedLink = createThemedComponent(Link, theme);
 
-  return mountInThemeProvider(<ThemedLink />, true);
+  return mountInThemeProvider(<ThemedLink />);
 }
 
 function mountThemedSample(theme) {
   const ThemedSample = createThemedComponent(Sample, theme);
 
-  return mountInThemeProvider(<ThemedSample />, true);
+  return mountInThemeProvider(<ThemedSample />);
 }
 
 describe('createThemedComponent', () => {
   it('renders correctly', () => {
-    const themedSample = mountThemedSample({
+    const [themedSample] = mountThemedSample({
       color_text: 'mediumvioletred'
     });
 
@@ -45,7 +45,7 @@ describe('createThemedComponent', () => {
   });
 
   it('renders a Link correctly with a custom theme object', () => {
-    const themedLink = mountThemedLink({
+    const [themedLink] = mountThemedLink({
       Link_color: 'mediumvioletred'
     });
 
@@ -53,7 +53,7 @@ describe('createThemedComponent', () => {
   });
 
   it('renders a Link correctly with a custom theme function', () => {
-    const themedLink = mountThemedLink(({ theme }) => ({
+    const [themedLink] = mountThemedLink(({ theme }) => ({
       Link_color: theme.color_text_danger
     }));
 

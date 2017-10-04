@@ -19,13 +19,9 @@ import React from 'react';
 import { mount } from 'enzyme';
 import ThemeProvider from '../src/ThemeProvider';
 
-export function mountInThemeProvider(
-  Component: React$Element<*>,
-  returnThemeProvider: boolean = false
-) {
-  const mountedComponent = mount(<ThemeProvider>{Component}</ThemeProvider>);
+export function mountInThemeProvider(Component: React$Element<*>) {
+  const themeProvider = mount(<ThemeProvider>{Component}</ThemeProvider>);
+  const component = themeProvider.find(Component.type);
 
-  return returnThemeProvider
-    ? mountedComponent
-    : mountedComponent.find(Component.type);
+  return [themeProvider, component];
 }

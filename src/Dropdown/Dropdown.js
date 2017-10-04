@@ -93,8 +93,6 @@ export default class Dropdown extends Component<Props, State> {
 
   id: string = `dropdown-${generateId()}`;
 
-  items: Array<Item>;
-
   selectedItemId: ?string;
 
   componentDidMount() {
@@ -118,8 +116,6 @@ export default class Dropdown extends Component<Props, State> {
     const { isOpen } = this.isControlled() ? this.props : this.state;
 
     if (isOpen) {
-      this.items = this.getItems();
-
       this.selectedItemId =
         this.state.highlightedIndex === null
           ? undefined
@@ -175,7 +171,7 @@ export default class Dropdown extends Component<Props, State> {
       this.setState(prevState => ({
         highlightedIndex:
           prevState.highlightedIndex === null ||
-          prevState.highlightedIndex === this.items.length - 1
+          prevState.highlightedIndex === this.getItems().length - 1
             ? 0
             : prevState.highlightedIndex + 1,
         isOpen: true
@@ -186,7 +182,7 @@ export default class Dropdown extends Component<Props, State> {
         highlightedIndex:
           prevState.highlightedIndex === null ||
           prevState.highlightedIndex === 0
-            ? this.items.length - 1
+            ? this.getItems().length - 1
             : prevState.highlightedIndex - 1,
         isOpen: true
       }));

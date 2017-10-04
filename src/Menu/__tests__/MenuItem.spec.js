@@ -55,7 +55,7 @@ describe('MenuItem', () => {
     let menuItem;
 
     beforeEach(() => {
-      menuItem = mountMenuItem();
+      [, menuItem] = mountMenuItem();
     });
 
     it('calls onClick', () => {
@@ -79,7 +79,7 @@ describe('MenuItem', () => {
     let menuItem;
 
     beforeEach(() => {
-      menuItem = mountMenuItem({ disabled: true });
+      [, menuItem] = mountMenuItem({ disabled: true });
     });
 
     it('does not call onClick', () => {
