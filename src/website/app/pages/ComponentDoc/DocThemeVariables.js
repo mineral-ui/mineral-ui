@@ -31,7 +31,7 @@ type Props = {
 type Theme = (theme: Object) => Object;
 
 const Title = createStyledComponent(Heading, ({ theme }) => ({
-  margin: `${parseFloat(theme.spacing_single) * 8}em 0 ${theme.spacing_quad}`
+  margin: `${parseFloat(theme.space_stack_sm) * 8}em 0 ${theme.space_stack_xl}`
 }));
 
 const createKeyMirror = (obj: Object) => {

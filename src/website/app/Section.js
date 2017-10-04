@@ -18,5 +18,5 @@
 import { createStyledComponent } from '../../utils';
 
 export default createStyledComponent('section', ({ theme }) => ({
-  margin: `${4 * parseFloat(theme.spacing_quad)}em 0`
+  margin: `${parseFloat(theme.space_stack_sm) * 16}em 0`
 }));

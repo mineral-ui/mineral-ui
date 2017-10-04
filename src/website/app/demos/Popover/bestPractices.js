@@ -38,7 +38,7 @@ const styles = {
   goodDemo: { width: '15em' },
   p: ({ theme }) => ({
     marginBottom: 0,
-    marginTop: theme.spacing_single
+    marginTop: theme.space_stack_sm
   })
 };
 

@@ -21,7 +21,7 @@ export default createStyledComponent(
   'figcaption',
   ({ theme }) => ({
     fontSize: theme.fontSize_mouse,
-    marginLeft: theme.spacing_half
+    marginLeft: theme.space_inline_xs
   }),
   {
     displayName: 'FigCaption',

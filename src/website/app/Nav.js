@@ -34,8 +34,8 @@ const styles = {
     borderBottom: `1px solid ${theme.borderColor}`,
     display: 'flex',
     height: 50,
-    margin: `0 0 ${theme.spacing_double}`,
-    paddingBottom: theme.spacing_double,
+    margin: `0 0 ${theme.space_stack_md}`,
+    paddingBottom: theme.space_stack_md,
     textDecoration: 'none',
 
     '&:hover,&:focus': {
@@ -63,20 +63,20 @@ const styles = {
     paddingLeft: '0'
   },
   listItem: ({ isSubcomponent, theme }) => ({
-    paddingLeft: isSubcomponent && theme.spacing_single,
+    paddingLeft: isSubcomponent && theme.space_inline_sm,
 
     '& + li': {
-      marginTop: theme.spacing_single
+      marginTop: theme.space_stack_sm
     }
   }),
   nav: ({ theme }) => ({
-    padding: theme.spacing_double,
+    padding: theme.space_inset_md,
     backgroundColor: theme.slate_10
   }),
   subsection: ({ theme }) => ({
-    marginTop: theme.spacing_single,
+    marginTop: theme.space_stack_sm,
     listStyle: 'none',
-    paddingLeft: theme.spacing_single
+    paddingLeft: theme.space_inline_sm
   })
 };
 

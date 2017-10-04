@@ -26,10 +26,13 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   color: theme.color_caption,
   fontSize: theme.fontSize_mouse,
   marginTop: getNormalizedValue(
-    `${parseFloat(theme.spacing_quad) * 2}em`,
+    `${parseFloat(theme.space_stack_sm) * 8}em`,
     theme.fontSize_mouse
   ),
-  paddingTop: getNormalizedValue(theme.spacing_quad, theme.fontSize_mouse),
+  paddingTop: getNormalizedValue(
+    `${parseFloat(theme.space_stack_sm) * 4}em`,
+    theme.fontSize_mouse
+  ),
 
   '@media(min-width: 32em)': {
     display: 'flex',

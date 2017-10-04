@@ -28,7 +28,7 @@ const Root = createStyledComponent('span', ({ theme }) => ({
   color: theme.Sample_color || theme.color_text,
   display: 'inline-block',
   outline: `1px solid ${theme.borderColor}`,
-  padding: theme.spacing_single
+  padding: theme.space_inset_sm
 }));
 
 export default function Sample({ className, text = 'Sample' }: Props) {

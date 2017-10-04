@@ -20,7 +20,9 @@ import { createStyledComponent } from '../../../../utils';
 import Card, { CardBlock, CardTitle, CardImage } from '../../../../Card';
 
 const CardList = createStyledComponent('div', ({ theme }) => ({
-  '& > div': { marginBottom: theme.spacing_single }
+  '& > div': {
+    marginBottom: theme.space_stack_sm
+  }
 }));
 
 export default {

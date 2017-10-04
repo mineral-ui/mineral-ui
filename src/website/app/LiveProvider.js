@@ -23,7 +23,7 @@ import {
   LiveError,
   LivePreview
 } from 'react-live';
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../utils';
 
 type Props = {
   backgroundColor?: string,
@@ -40,12 +40,17 @@ const styles = {
       : {
           backgroundColor,
           border: `1px solid ${theme.borderColor}`,
-          padding: theme.spacing_double
+          padding: theme.space_inset_md
         };
   },
   liveEditor: ({ theme }) => ({
     fontSize: theme.fontSize_ui,
-    maxHeight: `${parseFloat(theme.spacing_quad) * 10}em`,
+    // Setting the maxHeight equal to, roughly, 20 lines,
+    // then subtracting a bit to make it clear there's more beyond the scroll
+    maxHeight: getNormalizedValue(
+      `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
+      theme.fontSize_ui
+    ),
     overflow: 'auto'
   })
 };

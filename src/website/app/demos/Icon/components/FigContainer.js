@@ -22,7 +22,7 @@ export default createStyledComponent(
   ({ theme }) => ({
     display: 'flex',
     flexWrap: 'wrap',
-    marginLeft: `-${theme.spacing_half}`
+    marginLeft: `-${theme.space_inline_xs}`
   }),
   {
     displayName: 'FigContainer',

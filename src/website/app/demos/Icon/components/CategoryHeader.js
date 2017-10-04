@@ -24,11 +24,11 @@ export default createStyledComponent(
   'h4',
   ({ theme }) => ({
     borderTop: `1px solid ${theme.borderColor}`,
-    paddingTop: theme.spacing_triple,
+    paddingTop: theme.space_stack_lg,
     fontSize: theme.fontSize_h5,
     textTransform: 'capitalize',
     margin: `${parseFloat(
-      getNormalizedValue(theme.spacing_triple, theme.fontSize_h5)
+      getNormalizedValue(theme.space_stack_lg, theme.fontSize_h5)
     )}em 0`
   }),
   {

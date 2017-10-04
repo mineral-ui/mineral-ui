@@ -26,8 +26,8 @@ type Props = {
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   display: 'inline-block',
-  marginRight: theme.spacing_single,
-  marginBottom: theme.spacing_single,
+  marginRight: theme.space_inline_sm,
+  marginBottom: theme.space_stack_sm,
   width: '12em',
   padding: 0,
   '@media(max-width: 60em)': {

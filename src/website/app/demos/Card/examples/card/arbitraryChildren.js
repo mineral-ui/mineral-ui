@@ -22,12 +22,12 @@ import DemoLayout from '../../components/DemoLayout';
 
 const CustomContent = createStyledComponent('div', ({ theme }) => ({
   backgroundColor: theme.color_gray_20,
-  margin: `${theme.spacing_double} 0`,
-  padding: theme.spacing_triple,
+  margin: `${theme.space_stack_md} 0`,
+  padding: theme.space_inset_lg,
 
   '&:last-child': {
     borderRadius: `0 0 ${theme.borderRadius_1} ${theme.borderRadius_1}`,
-    marginBottom: `-${theme.spacing_double}`
+    marginBottom: `-${theme.space_stack_md}`
   }
 }));
 
@@ -37,7 +37,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `A Card will render any children.
-  
+
 For best results, please ensure content matches the top/bottom margin and left/right padding of the other \`<Card*/>\` components, or use [CardBlock]('./card-block').`,
   scope: { Button, Card, CardTitle, CustomContent, DemoLayout },
   source: `
