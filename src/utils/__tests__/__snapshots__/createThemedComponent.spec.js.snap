@@ -528,7 +528,9 @@ exports[`createThemedComponent demo examples create-themed-component 1`] = `
                       }
                     >
                       <Sample>
-                        <glamorous(span)>
+                        <glamorous(span)
+                          className={undefined}
+                        >
                           <span
                             className="glamor-0"
                           >
@@ -1484,7 +1486,9 @@ exports[`createThemedComponent renders correctly 1`] = `
             }
           >
             <Sample>
-              <glamorous(span)>
+              <glamorous(span)
+                className={undefined}
+              >
                 <span
                   className="glamor-0"
                 >
