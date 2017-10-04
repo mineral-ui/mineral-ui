@@ -1,5 +1,6 @@
 
 [![build status](https://travis-ci.org/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.org/mineral-ui/mineral-ui)
+[![dependency status](https://www.versioneye.com/user/projects/59149f47a78614006150527c/badge.svg)](https://www.versioneye.com/user/projects/59149f47a78614006150527c)
 [![managed with Waffle](https://img.shields.io/badge/managed_with-waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](http://commitizen.github.io/cz-cli/)
 [![formatted with Prettier](https://img.shields.io/badge/formatted_with-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
