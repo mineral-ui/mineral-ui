@@ -24,8 +24,8 @@ type Props = Object;
 export const componentTheme = (baseTheme: Object) => ({
   MenuGroupTitle_fontSize: pxToEm(12),
   MenuGroupTitle_fontWeight: baseTheme.fontWeight_bold,
-  MenuGroupTitle_paddingTop: baseTheme.spacing_double,
-  MenuGroupTitle_paddingBottom: baseTheme.spacing_single,
+  MenuGroupTitle_paddingTop: baseTheme.space_stack_md,
+  MenuGroupTitle_paddingBottom: baseTheme.space_stack_sm,
 
   ...baseTheme
 });
