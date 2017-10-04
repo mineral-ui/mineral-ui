@@ -217,7 +217,9 @@ exports[`ThemeProvider demo examples theme-provider 1`] = `
                       }
                     >
                       <Sample>
-                        <glamorous(span)>
+                        <glamorous(span)
+                          className={undefined}
+                        >
                           <span
                             className="glamor-0"
                           >
@@ -242,7 +244,9 @@ exports[`ThemeProvider demo examples theme-provider 1`] = `
                       }
                     >
                       <Sample>
-                        <glamorous(span)>
+                        <glamorous(span)
+                          className={undefined}
+                        >
                           <span
                             className="glamor-1"
                           >
@@ -300,7 +304,9 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
         }
       >
         <Sample>
-          <glamorous(span)>
+          <glamorous(span)
+            className={undefined}
+          >
             <span
               className="glamor-0"
             >
@@ -351,7 +357,9 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
         }
       >
         <Sample>
-          <glamorous(span)>
+          <glamorous(span)
+            className={undefined}
+          >
             <span
               className="glamor-0"
             >
@@ -375,7 +383,9 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
   padding: 0.5em;
 }
 
-<ThemeProvider>
+<ThemeProvider
+  theme={undefined}
+>
   <ThemeProvider
     theme={
       Object {
@@ -507,7 +517,9 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
     }
   >
     <Sample>
-      <glamorous(span)>
+      <glamorous(span)
+        className={undefined}
+      >
         <span
           className="glamor-0"
         >

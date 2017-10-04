@@ -301,11 +301,16 @@ exports[`MenuItem demo examples basic 1`] = `
                     >
                       <MenuItem>
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -337,11 +342,16 @@ exports[`MenuItem demo examples basic 1`] = `
                       </MenuItem>
                       <MenuItem>
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -373,11 +383,16 @@ exports[`MenuItem demo examples basic 1`] = `
                       </MenuItem>
                       <MenuItem>
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -857,7 +872,10 @@ exports[`MenuItem demo examples custom-render 1`] = `
                       <div
                         className="glamor-13"
                       >
-                        <MenuGroup>
+                        <MenuGroup
+                          key="0"
+                          title={undefined}
+                        >
                           <MenuGroup>
                             <div
                               className="glamor-12"
@@ -874,6 +892,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     "render": [Function],
                                   }
                                 }
+                                key="0"
                                 render={[Function]}
                               >
                                 <ThemedComponent
@@ -1052,11 +1071,14 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       actor="Bill Murray"
                                       avatar="http://www.fillmurray.com/102/100"
                                       character="Captain Steve Zissou"
+                                      disabled={undefined}
+                                      onKeyDown={undefined}
                                       tabIndex={0}
                                       variant="regular"
                                     >
                                       <div
                                         className="glamor-3"
+                                        onKeyDown={undefined}
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
@@ -1100,6 +1122,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     "render": [Function],
                                   }
                                 }
+                                key="1"
                                 render={[Function]}
                               >
                                 <ThemedComponent
@@ -1278,11 +1301,14 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       actor="Bill Murray"
                                       avatar="http://www.fillmurray.com/101/100"
                                       character="Dr. Peter Venkman"
+                                      disabled={undefined}
+                                      onKeyDown={undefined}
                                       tabIndex={0}
                                       variant="regular"
                                     >
                                       <div
                                         className="glamor-3"
+                                        onKeyDown={undefined}
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
@@ -1326,6 +1352,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     "render": [Function],
                                   }
                                 }
+                                key="2"
                                 render={[Function]}
                               >
                                 <ThemedComponent
@@ -1504,11 +1531,14 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       actor="Bill Murray"
                                       avatar="http://www.fillmurray.com/100/100"
                                       character="Bob Harris"
+                                      disabled={undefined}
+                                      onKeyDown={undefined}
                                       tabIndex={0}
                                       variant="regular"
                                     >
                                       <div
                                         className="glamor-3"
+                                        onKeyDown={undefined}
                                         tabIndex={0}
                                       >
                                         <glamorous(img)
@@ -1847,12 +1877,14 @@ exports[`MenuItem demo examples disabled 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
                           onKeyDown={[Function]}
                           tabIndex="-1"
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
                             onKeyDown={[Function]}
                             tabIndex="-1"
                           >
@@ -1889,12 +1921,14 @@ exports[`MenuItem demo examples disabled 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
                           onKeyDown={[Function]}
                           tabIndex="-1"
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
                             onKeyDown={[Function]}
                             tabIndex="-1"
                           >
@@ -1931,12 +1965,14 @@ exports[`MenuItem demo examples disabled 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
                           onKeyDown={[Function]}
                           tabIndex="-1"
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
                             onKeyDown={[Function]}
                             tabIndex="-1"
                           >
@@ -2445,11 +2481,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           iconStart={<IconCloud />}
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="regular"
                           >
                             <div
                               className="glamor-5"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2465,6 +2506,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2472,6 +2514,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2512,11 +2555,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           iconEnd={<IconCloud />}
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="regular"
                           >
                             <div
                               className="glamor-5"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2550,6 +2598,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2557,6 +2606,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2580,11 +2630,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           iconStart={<IconCloud />}
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="regular"
                           >
                             <div
                               className="glamor-5"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2600,6 +2655,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2607,6 +2663,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2647,6 +2704,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2654,6 +2712,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2685,11 +2744,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           variant="danger"
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="danger"
                           >
                             <div
                               className="glamor-25"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2705,6 +2769,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2712,6 +2777,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2753,11 +2819,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           variant="success"
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="success"
                           >
                             <div
                               className="glamor-31"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2773,6 +2844,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2780,6 +2852,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2821,11 +2894,16 @@ exports[`MenuItem demo examples icons 1`] = `
                           variant="warning"
                         >
                           <MenuItem
+                            disabled={undefined}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                             variant="warning"
                           >
                             <div
                               className="glamor-37"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                             >
                               <glamorous(span)>
@@ -2841,6 +2919,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2848,6 +2927,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -2890,11 +2970,15 @@ exports[`MenuItem demo examples icons 1`] = `
                         >
                           <MenuItem
                             disabled={true}
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex="-1"
                             variant="regular"
                           >
                             <div
                               className="glamor-43"
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex="-1"
                             >
                               <glamorous(span)>
@@ -2910,6 +2994,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                     >
                                       <glamorous(svg)
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         role="icon"
                                         rtl={false}
                                         size="medium"
@@ -2917,6 +3002,7 @@ exports[`MenuItem demo examples icons 1`] = `
                                       >
                                         <svg
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           className="glamor-0"
                                           role="icon"
                                           viewBox="0 0 24 24"
@@ -3378,11 +3464,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         iconStart={<IconCloud />}
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3398,6 +3489,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3405,6 +3497,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3445,6 +3538,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3452,6 +3546,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3475,11 +3570,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         iconStart={<IconCloud />}
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3495,6 +3595,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3502,6 +3603,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3542,6 +3644,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3549,6 +3652,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3572,11 +3676,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         iconStart={<IconCloud />}
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3592,6 +3701,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3599,6 +3709,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3639,6 +3750,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3646,6 +3758,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3670,11 +3783,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3690,6 +3808,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3697,6 +3816,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3737,6 +3857,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3744,6 +3865,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3768,11 +3890,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3788,6 +3915,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3795,6 +3923,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3835,6 +3964,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3842,6 +3972,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3866,11 +3997,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3886,6 +4022,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3893,6 +4030,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3933,6 +4071,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3940,6 +4079,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -3964,11 +4104,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -3984,6 +4129,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -3991,6 +4137,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4033,6 +4180,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4040,6 +4188,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4064,11 +4213,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4084,6 +4238,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4091,6 +4246,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4133,6 +4289,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4140,6 +4297,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4164,11 +4322,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4184,6 +4347,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4191,6 +4355,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4233,6 +4398,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4240,6 +4406,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4264,11 +4431,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4284,6 +4456,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4291,6 +4464,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4333,6 +4507,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4340,6 +4515,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4371,11 +4547,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         iconStart={<IconCloud />}
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4391,6 +4572,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4398,6 +4580,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4438,6 +4621,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4445,6 +4629,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4468,11 +4653,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         iconStart={<IconCloud />}
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4488,6 +4678,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4495,6 +4686,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4535,6 +4727,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4542,6 +4735,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4566,11 +4760,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4586,6 +4785,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4593,6 +4793,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4633,6 +4834,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4640,6 +4842,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4664,11 +4867,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4684,6 +4892,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4691,6 +4900,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4731,6 +4941,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4738,6 +4949,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4762,11 +4974,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4782,6 +4999,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4789,6 +5007,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4831,6 +5050,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4838,6 +5058,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4862,11 +5083,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen sink"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4882,6 +5108,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4889,6 +5116,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4931,6 +5159,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4938,6 +5167,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -4962,11 +5192,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -4982,6 +5217,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -4989,6 +5225,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -5031,6 +5268,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -5038,6 +5276,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -5062,11 +5301,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                         secondaryText="Kitchen Sink with much longer text to force wrapping"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-6"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -5082,6 +5326,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -5089,6 +5334,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -5131,6 +5377,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -5138,6 +5385,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -5496,11 +5744,16 @@ exports[`MenuItem demo examples rtl 1`] = `
                         >
                           <MenuItem>
                             <MenuItem
+                              disabled={undefined}
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                               variant="regular"
                             >
                               <div
                                 className="glamor-4"
+                                onClick={undefined}
+                                onKeyDown={undefined}
                                 tabIndex={0}
                               >
                                 <glamorous(span)>
@@ -5534,11 +5787,16 @@ exports[`MenuItem demo examples rtl 1`] = `
                             secondaryText="نص ثانوي"
                           >
                             <MenuItem
+                              disabled={undefined}
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                               variant="regular"
                             >
                               <div
                                 className="glamor-4"
+                                onClick={undefined}
+                                onKeyDown={undefined}
                                 tabIndex={0}
                               >
                                 <glamorous(span)>
@@ -5574,11 +5832,16 @@ exports[`MenuItem demo examples rtl 1`] = `
                             iconStart={<IconCloud />}
                           >
                             <MenuItem
+                              disabled={undefined}
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                               variant="regular"
                             >
                               <div
                                 className="glamor-4"
+                                onClick={undefined}
+                                onKeyDown={undefined}
                                 tabIndex={0}
                               >
                                 <glamorous(span)>
@@ -5594,6 +5857,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                                       >
                                         <glamorous(svg)
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           role="icon"
                                           rtl={false}
                                           size="medium"
@@ -5601,6 +5865,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                                         >
                                           <svg
                                             aria-hidden={true}
+                                            aria-labelledby={undefined}
                                             className="glamor-10"
                                             role="icon"
                                             viewBox="0 0 24 24"
@@ -5641,11 +5906,16 @@ exports[`MenuItem demo examples rtl 1`] = `
                             iconEnd={<IconCloud />}
                           >
                             <MenuItem
+                              disabled={undefined}
+                              onClick={undefined}
+                              onKeyDown={undefined}
                               tabIndex={0}
                               variant="regular"
                             >
                               <div
                                 className="glamor-4"
+                                onClick={undefined}
+                                onKeyDown={undefined}
                                 tabIndex={0}
                               >
                                 <glamorous(span)>
@@ -5679,6 +5949,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                                       >
                                         <glamorous(svg)
                                           aria-hidden={true}
+                                          aria-labelledby={undefined}
                                           role="icon"
                                           rtl={false}
                                           size="medium"
@@ -5686,6 +5957,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                                         >
                                           <svg
                                             aria-hidden={true}
+                                            aria-labelledby={undefined}
                                             className="glamor-10"
                                             role="icon"
                                             viewBox="0 0 24 24"
@@ -6022,11 +6294,16 @@ exports[`MenuItem demo examples secondary-text 1`] = `
                         secondaryText="Star stuff"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6062,11 +6339,16 @@ exports[`MenuItem demo examples secondary-text 1`] = `
                         secondaryText="Distant epochs"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6102,11 +6384,16 @@ exports[`MenuItem demo examples secondary-text 1`] = `
                         secondaryText="Cosmic ocean"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6694,11 +6981,16 @@ exports[`MenuItem demo examples states 1`] = `
                     >
                       <MenuItem>
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6732,11 +7024,16 @@ exports[`MenuItem demo examples states 1`] = `
                         variant="danger"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
                           <div
                             className="glamor-10"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6752,6 +7049,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -6759,6 +7057,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -6807,11 +7106,16 @@ exports[`MenuItem demo examples states 1`] = `
                         variant="success"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
                           <div
                             className="glamor-16"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6827,6 +7131,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -6834,6 +7139,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -6882,11 +7188,16 @@ exports[`MenuItem demo examples states 1`] = `
                         variant="warning"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
                           <div
                             className="glamor-22"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -6902,6 +7213,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -6909,6 +7221,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -6966,12 +7279,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7007,12 +7325,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
                           <div
                             className="glamor-10"
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7028,6 +7351,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7035,6 +7359,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7085,12 +7410,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
                           <div
                             className="glamor-16"
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7106,6 +7436,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7113,6 +7444,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7163,12 +7495,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
                           <div
                             className="glamor-22"
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7184,6 +7521,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7191,6 +7529,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7248,12 +7587,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7289,12 +7633,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
                           <div
                             className="glamor-10"
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7310,6 +7659,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7317,6 +7667,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7367,12 +7718,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
                           <div
                             className="glamor-16"
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7388,6 +7744,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7395,6 +7752,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7445,12 +7803,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
                           <div
                             className="glamor-22"
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7466,6 +7829,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7473,6 +7837,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7532,6 +7897,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-focus=""
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
@@ -7539,6 +7907,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-4"
                             data-simulate-focus=""
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7576,6 +7946,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-focus=""
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
@@ -7583,6 +7956,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-10"
                             data-simulate-focus=""
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7598,6 +7973,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7605,6 +7981,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7657,6 +8034,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-focus=""
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
@@ -7664,6 +8044,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-16"
                             data-simulate-focus=""
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7679,6 +8061,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7686,6 +8069,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7738,6 +8122,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-focus=""
                           data-simulate-hover=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
@@ -7745,6 +8132,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-22"
                             data-simulate-focus=""
                             data-simulate-hover=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7760,6 +8149,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7767,6 +8157,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7826,6 +8217,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-active=""
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
@@ -7833,6 +8227,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-4"
                             data-simulate-active=""
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7870,6 +8266,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-active=""
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
@@ -7877,6 +8276,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-10"
                             data-simulate-active=""
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7892,6 +8293,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7899,6 +8301,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -7951,6 +8354,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-active=""
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
@@ -7958,6 +8364,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-16"
                             data-simulate-active=""
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -7973,6 +8381,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -7980,6 +8389,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8032,6 +8442,9 @@ exports[`MenuItem demo examples states 1`] = `
                         <MenuItem
                           data-simulate-active=""
                           data-simulate-focus=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
@@ -8039,6 +8452,8 @@ exports[`MenuItem demo examples states 1`] = `
                             className="glamor-22"
                             data-simulate-active=""
                             data-simulate-focus=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -8054,6 +8469,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8061,6 +8477,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8118,12 +8535,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-active=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="regular"
                         >
                           <div
                             className="glamor-4"
                             data-simulate-active=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -8159,12 +8581,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-active=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
                           <div
                             className="glamor-10"
                             data-simulate-active=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -8180,6 +8607,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8187,6 +8615,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8237,12 +8666,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-active=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
                           <div
                             className="glamor-16"
                             data-simulate-active=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -8258,6 +8692,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8265,6 +8700,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8315,12 +8751,17 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           data-simulate-active=""
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
                           <div
                             className="glamor-22"
                             data-simulate-active=""
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -8336,6 +8777,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8343,6 +8785,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8400,11 +8843,15 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex="-1"
                           variant="regular"
                         >
                           <div
                             className="glamor-148"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex="-1"
                           >
                             <glamorous(span)>
@@ -8440,11 +8887,15 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex="-1"
                           variant="danger"
                         >
                           <div
                             className="glamor-148"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex="-1"
                           >
                             <glamorous(span)>
@@ -8460,6 +8911,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8467,6 +8919,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8517,11 +8970,15 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex="-1"
                           variant="success"
                         >
                           <div
                             className="glamor-148"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex="-1"
                           >
                             <glamorous(span)>
@@ -8537,6 +8994,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8544,6 +9002,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -8594,11 +9053,15 @@ exports[`MenuItem demo examples states 1`] = `
                       >
                         <MenuItem
                           disabled={true}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex="-1"
                           variant="warning"
                         >
                           <div
                             className="glamor-148"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex="-1"
                           >
                             <glamorous(span)>
@@ -8614,6 +9077,7 @@ exports[`MenuItem demo examples states 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -8621,6 +9085,7 @@ exports[`MenuItem demo examples states 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-5"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -9069,11 +9534,16 @@ exports[`MenuItem demo examples variants 1`] = `
                         variant="danger"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="danger"
                         >
                           <div
                             className="glamor-5"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -9089,6 +9559,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -9096,6 +9567,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -9144,11 +9616,16 @@ exports[`MenuItem demo examples variants 1`] = `
                         variant="success"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="success"
                         >
                           <div
                             className="glamor-11"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -9164,6 +9641,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -9171,6 +9649,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
@@ -9219,11 +9698,16 @@ exports[`MenuItem demo examples variants 1`] = `
                         variant="warning"
                       >
                         <MenuItem
+                          disabled={undefined}
+                          onClick={undefined}
+                          onKeyDown={undefined}
                           tabIndex={0}
                           variant="warning"
                         >
                           <div
                             className="glamor-17"
+                            onClick={undefined}
+                            onKeyDown={undefined}
                             tabIndex={0}
                           >
                             <glamorous(span)>
@@ -9239,6 +9723,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                   >
                                     <glamorous(svg)
                                       aria-hidden={true}
+                                      aria-labelledby={undefined}
                                       role="icon"
                                       rtl={false}
                                       size="medium"
@@ -9246,6 +9731,7 @@ exports[`MenuItem demo examples variants 1`] = `
                                     >
                                       <svg
                                         aria-hidden={true}
+                                        aria-labelledby={undefined}
                                         className="glamor-0"
                                         role="icon"
                                         viewBox="0 0 24 24"
