@@ -34,7 +34,7 @@
     "postinstall": "npm run build:icons",
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
-    "start": "NODE_ENV=development webpack-dev-server --progress",
+    "start": "webpack-dev-server --progress",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
   "config": {

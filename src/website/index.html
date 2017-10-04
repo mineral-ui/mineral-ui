@@ -7,6 +7,15 @@
     <meta name="description" content="Mineral UI is a design system and React component library for the web that lets you quickly build high-quality, accessible apps. Created by CA Technologies.">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,greek" rel="stylesheet">
     <title>Mineral UI</title>
+    <% if (htmlWebpackPlugin.options.GOOGLE_TRACKING_ID) { %>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.GOOGLE_TRACKING_ID %>"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '<%= htmlWebpackPlugin.options.GOOGLE_TRACKING_ID %>');
+      </script>
+    <% } %>
   </head>
   <body>
     <div id="app"></div>
