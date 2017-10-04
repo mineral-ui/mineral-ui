@@ -30,7 +30,7 @@ type Props = {
   level: 1 | 2 | 3 | 4 | 5 | 6
 };
 
-const componentTheme = baseTheme => ({
+export const componentTheme = (baseTheme: Object) => ({
   Heading_color_1: baseTheme.color_text,
   Heading_color_2: baseTheme.color_gray_80,
   Heading_color_3: baseTheme.color_gray_80,

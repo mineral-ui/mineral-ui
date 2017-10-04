@@ -21,7 +21,7 @@ import ColorRampRow from './ColorRampRow';
 import range from 'lodash/range';
 
 type Props = {
-  ramp: string
+  baseColor: string
 };
 
 const Root = createStyledComponent('div', ({ theme }) => ({
@@ -36,14 +36,14 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-export default function ColorRamp({ ramp }: Props) {
+export default function ColorRamp({ baseColor }: Props) {
   return (
     <Root>
-      {ramp === 'black' ? (
-        <ColorRampRow key={ramp} name={ramp} />
+      {baseColor === 'black' ? (
+        <ColorRampRow key={baseColor} name={baseColor} />
       ) : (
         range(10, 110, 10).map(step => (
-          <ColorRampRow key={step} name={`${ramp}_${step}`} />
+          <ColorRampRow key={step} name={`${baseColor}_${step}`} />
         ))
       )}
     </Root>

@@ -39,7 +39,7 @@
 export default function createColorRamp(
   inKey: string, // The key of the color in the color palette, excluding the index
   outKey: string, // The key of the color in the returned object, excluding the index
-  colors: { [string]: string } // The palette of colors
+  colors: { [string]: any } // The palette of colors
 ): {
   [string]: any
 } {

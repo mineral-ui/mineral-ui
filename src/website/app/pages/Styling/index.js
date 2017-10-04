@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import Button from '../../../../Button';
 import GuidelinePage from '../../GuidelinePage';
 import Markdown from '../../Markdown';
 import content from './styling.md';
@@ -30,7 +31,7 @@ type Props = {
 export default function Theming(props: Props) {
   return (
     <GuidelinePage {...props}>
-      <Markdown>{content}</Markdown>
+      <Markdown scope={{ Button }}>{content}</Markdown>
     </GuidelinePage>
   );
 }

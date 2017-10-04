@@ -22,10 +22,10 @@ import Color from './Color';
 import Typography from './Typography';
 import ComponentStatus from './ComponentStatus';
 import Roadmap from './Roadmap';
+import PaletteDemo from './PaletteDemo';
 
 type Page = {
   component: React$ComponentType<*>,
-  id?: string,
   path: string,
   hiddenInNav?: boolean,
   title: string
@@ -56,6 +56,12 @@ const sections: Array<Section> = [
         component: Typography,
         path: '/typography',
         title: 'Typography'
+      },
+      {
+        component: PaletteDemo,
+        hiddenInNav: true,
+        path: '/palette-demo',
+        title: 'Palette Demo'
       }
     ]
   },
