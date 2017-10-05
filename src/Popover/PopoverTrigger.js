@@ -17,14 +17,12 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
 import { Target } from 'react-popper';
-import { composeEventHandlers, createStyledComponent } from '../utils';
+import { createStyledComponent } from '../utils';
 
 type Props = {
   contentId: string,
   children: React$Node,
   disabled?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
-  onKeyDown?: (event: SyntheticEvent<>) => void,
   isOpen: boolean
 };
 
@@ -40,28 +38,17 @@ export default class PopoverTrigger extends Component<Props> {
   props: Props;
 
   render() {
-    const {
-      children,
-      disabled,
-      isOpen,
-      contentId,
-      onClick,
-      onKeyDown,
-      ...restProps
-    } = this.props;
-    const child = Children.only(children);
-    const { onClick: childOnClick, onKeyDown: childOnKeyDown } = child.props;
+    const { children, disabled, isOpen, contentId, ...restProps } = this.props;
     const triggerProps = {
+      'aria-owns': contentId,
       'aria-describedby': contentId,
       'aria-disabled': disabled,
       'aria-expanded': isOpen,
       disabled,
-      onClick: composeEventHandlers(childOnClick, onClick),
-      onKeyDown: composeEventHandlers(childOnKeyDown, onKeyDown),
       role: 'button',
       ...restProps
     };
 
-    return <Root>{cloneElement(child, triggerProps)}</Root>;
+    return <Root>{cloneElement(Children.only(children), triggerProps)}</Root>;
   }
 }

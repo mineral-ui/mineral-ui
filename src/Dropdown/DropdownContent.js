@@ -25,6 +25,8 @@ type Props = {
   getItemProps?: (props: Object, scope: Object) => Object,
   /** Data from which the [Menu](../menu#data) will be constructed */
   data: Array<Object>,
+  /** Id of the Dropdown content */
+  id: string,
   /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
   modifiers?: Object,
   /** Placement of the dropdown */
@@ -98,15 +100,24 @@ export default class DropdownContent extends Component<Props> {
   props: Props;
 
   render() {
-    const { data, getItemProps, placement, wide, ...restProps } = this.props;
+    const {
+      data,
+      getItemProps,
+      id,
+      placement,
+      wide,
+      ...restProps
+    } = this.props;
 
     const rootProps = {
+      id,
       placement,
       wide,
       ...restProps
     };
 
     const menuProps = {
+      id: `${id}-menu`,
       data,
       getItemProps,
       role: 'menu'
