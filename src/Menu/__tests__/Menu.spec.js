@@ -18,7 +18,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Menu from '../Menu';
-import examples from '../../website/app/demos/Menu/examples';
+import examples from '../../website/app/demos/Menu/examples/menu';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function renderMenu(props, children) {
