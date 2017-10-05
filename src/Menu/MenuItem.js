@@ -59,20 +59,21 @@ type Item = {
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
-// Some of these values (all of the paddings and the content fontSize) come
-// from Button
+// Some of these values (all of the margins & paddings and the content fontSize)
+// come from Button (large)
 export const componentTheme = (baseTheme: Object) => ({
   MenuItem_backgroundColor_active: baseTheme.color_gray_40,
   MenuItem_backgroundColor_focus: baseTheme.color_gray_20,
   MenuItem_backgroundColor_hover: baseTheme.color_gray_20,
   MenuItem_color_text: baseTheme.color_text,
   MenuItem_fontWeight: baseTheme.fontWeight_regular,
-  MenuItem_padding: pxToEm(8),
+  MenuItem_paddingHorizontal: baseTheme.space_inset_md,
+  MenuItem_paddingVertical: baseTheme.space_inset_sm,
 
   MenuItemContent_fontSize: baseTheme.fontSize_ui,
-  MenuItemContent_padding: pxToEm(6),
 
-  MenuItemIcon_padding: pxToEm(4),
+  MenuItemIcon_fill: baseTheme.color_theme_60,
+  MenuItemIcon_margin: baseTheme.space_inset_sm,
 
   MenuItemSecondaryText_color_text: baseTheme.color_caption,
   MenuItemSecondaryText_fontSize: pxToEm(12),
@@ -87,10 +88,6 @@ const styles = {
 
     const fontSize = theme.MenuItemContent_fontSize;
     const paddingBottom = getNormalizedValue(pxToEm(4), fontSize);
-    const paddingHorizontal = getNormalizedValue(
-      theme.MenuItemContent_padding,
-      fontSize
-    );
     const paddingTop = getNormalizedValue(pxToEm(3), fontSize);
 
     return {
@@ -99,7 +96,7 @@ const styles = {
       flexWrap: 'wrap',
       fontSize,
       justifyContent: 'space-between',
-      padding: `${paddingTop} ${paddingHorizontal} ${paddingBottom}`,
+      padding: `${paddingTop} 0 ${paddingBottom}`,
       whiteSpace: 'normal',
       wordBreak: 'break-all'
     };
@@ -126,7 +123,7 @@ const styles = {
       color: disabled ? theme.color_text_disabled : theme.MenuItem_color_text,
       cursor: disabled ? 'default' : 'pointer',
       fontWeight: theme.MenuItem_fontWeight,
-      padding: theme.MenuItem_padding,
+      padding: `${theme.MenuItem_paddingVertical} ${theme.MenuItem_paddingHorizontal}`,
 
       '&:focus': {
         backgroundColor: !disabled && theme.MenuItem_backgroundColor_focus,
@@ -147,9 +144,22 @@ const styles = {
         fill:
           disabled || variant !== 'regular'
             ? 'currentColor'
-            : theme.color_theme_70,
+            : theme.MenuItemIcon_fill,
         flex: '0 0 auto',
-        padding: theme.MenuItemIcon_padding
+
+        '&:first-child': {
+          marginLeft:
+            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null,
+          marginRight:
+            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null
+        },
+
+        '&:last-child': {
+          marginLeft:
+            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null,
+          marginRight:
+            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null
+        }
       }
     };
   },
@@ -160,7 +170,7 @@ const styles = {
       color: theme.MenuItemSecondaryText_color_text,
       fontSize: theme.MenuItemSecondaryText_fontSize,
       // The regular text fontSize is larger than that of the secondary text.
-      // This magic number re-aligns both sets of text vertically.
+      // This magic number (optically) re-aligns both sets of text vertically.
       paddingTop: getNormalizedValue(
         pxToEm(3),
         theme.MenuItemSecondaryText_fontSize
@@ -211,9 +221,9 @@ const onKeyDown = (
 };
 
 const variantIcons = {
-  danger: <IconDanger size="medium" />,
-  success: <IconSuccess size="medium" />,
-  warning: <IconWarning size="medium" />
+  danger: <IconDanger size={pxToEm(24)} />,
+  success: <IconSuccess size={pxToEm(24)} />,
+  warning: <IconWarning size={pxToEm(24)} />
 };
 
 const defaultRender = ({
@@ -239,10 +249,10 @@ const defaultRender = ({
   let startIcon =
     variant !== undefined && variant !== 'regular' && variantIcons[variant];
   if (iconStart) {
-    startIcon = cloneElement(iconStart, { size: 'medium' });
+    startIcon = cloneElement(iconStart, { size: pxToEm(24) });
   }
 
-  const endIcon = iconEnd && cloneElement(iconEnd, { size: 'medium' });
+  const endIcon = iconEnd && cloneElement(iconEnd, { size: pxToEm(24) });
 
   // This structure is based on Button
   return (
