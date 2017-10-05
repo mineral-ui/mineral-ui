@@ -59,7 +59,7 @@ might be a helpful template. Some things to keep in mind:
           {
             backgroundColor: isHighlighted && theme.color_theme_20,
             display: 'flex',
-            padding: theme.MenuItem_padding,
+            padding: theme.MenuItem_paddingVertical + ' ' + theme.MenuItem_paddingHorizontal,
             textDecoration: 'none',
 
             '&:focus': {
@@ -90,25 +90,15 @@ might be a helpful template. Some things to keep in mind:
           display: 'block',
           flex: '0 0 auto',
           height: pxToEm(36),
-          marginLeft: theme.direction === 'rtl' && theme.space_inline_sm,
-          marginRight: theme.direction === 'ltr' && theme.space_inline_sm,
-          padding: theme.MenuItemIcon_padding,
+          marginLeft: theme.direction === 'rtl' && theme.MenuItemIcon_margin,
+          marginRight: theme.direction === 'ltr' && theme.MenuItemIcon_margin,
           width: pxToEm(36)
         });
-        const Content = createStyledComponent('span', function() {
-          const fontSize = theme.MenuItemContent_fontSize;
-          const paddingHorizontal = getNormalizedValue(
-            theme.MenuItemContent_padding,
-            fontSize
-          );
-
-          return {
-            flex: '1 1 auto',
-            fontSize,
-            padding: '0 ' + paddingHorizontal,
-            whiteSpace: 'normal',
-            wordBreak: 'break-all'
-          };
+        const Content = createStyledComponent('span', {
+          flex: '1 1 auto',
+          fontSize: theme.MenuItemContent_fontSize,
+          whiteSpace: 'normal',
+          wordBreak: 'break-all'
         });
 
         const rootProps = {

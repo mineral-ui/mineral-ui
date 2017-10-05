@@ -34,7 +34,8 @@ export default function customRender(
     {
       backgroundColor: isHighlighted && theme.color_theme_20,
       display: 'flex',
-      padding: theme.MenuItem_padding,
+      padding:
+        theme.MenuItem_paddingVertical + ' ' + theme.MenuItem_paddingHorizontal,
       textDecoration: 'none',
 
       '&:focus': {
@@ -59,23 +60,18 @@ export default function customRender(
     display: 'block',
     flex: '0 0 auto',
     height: pxToEm(32),
-    marginLeft: theme.direction === 'rtl' && theme.space_inline_sm,
-    marginRight: theme.direction === 'ltr' && theme.space_inline_sm,
-    padding: theme.MenuItemIcon_padding,
+    marginLeft: theme.direction === 'rtl' && theme.MenuItemIcon_margin,
+    marginRight: theme.direction === 'ltr' && theme.MenuItemIcon_margin,
     width: pxToEm(32)
   });
   const Content = createStyledComponent('span', function() {
     const fontSize = theme.MenuItemContent_fontSize;
     const paddingVertical = getNormalizedValue(pxToEm(7), fontSize);
-    const paddingHorizontal = getNormalizedValue(
-      theme.MenuItemContent_padding,
-      fontSize
-    );
 
     return {
       flex: '1 1 auto',
       fontSize,
-      padding: paddingVertical + ' ' + paddingHorizontal,
+      padding: paddingVertical + ' 0',
       whiteSpace: 'normal',
       wordBreak: 'break-all'
     };
