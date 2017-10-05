@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import React, { cloneElement, Component } from 'react';
+import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { canUseEventListeners } from 'exenv';
 import { Manager } from 'react-popper';
@@ -42,6 +42,8 @@ type Props = {
   onOpen?: (event: SyntheticEvent<>) => void,
   /** Open the Popover immediately upon initialization */
   defaultIsOpen?: boolean,
+  /** Function that returns props to be applied to the trigger */
+  getTriggerProps?: (props: Object, scope?: Object) => Object,
   /** Placement of the Popover */
   placement?:
     | 'auto'
@@ -63,10 +65,8 @@ type Props = {
   subtitle?: React$Node,
   /** Title of the Popover */
   title?: React$Node,
-  /** @Private Custom trigger component */
-  trigger?: React$Element<*>,
-  /** @Private Ref for the Popover trigger */
-  triggerRef?: Function,
+  /** @Private ref for the Popover trigger */
+  triggerRef?: (node: ?React$Component<*, *>) => void,
   /** Display the content with default styles */
   wrapContent?: boolean
 };
@@ -120,12 +120,12 @@ export default class Popover extends Component<Props, State> {
       children,
       content,
       disabled,
+      getTriggerProps,
       hasArrow,
       modifiers,
       placement,
       subtitle,
       title,
-      trigger,
       triggerRef,
       wrapContent,
       ...restProps
@@ -142,7 +142,8 @@ export default class Popover extends Component<Props, State> {
       ...restProps
     };
     const contentId = `${this.id}-popoverContent`;
-    const popoverTriggerProps = {
+
+    let popoverTriggerProps = {
       contentId,
       children,
       disabled,
@@ -154,33 +155,34 @@ export default class Popover extends Component<Props, State> {
       }
     };
 
-    const popoverTrigger = trigger ? (
-      cloneElement(trigger, popoverTriggerProps)
-    ) : (
-      <PopoverTrigger {...popoverTriggerProps} />
-    );
+    popoverTriggerProps = {
+      ...popoverTriggerProps,
+      ...(getTriggerProps && getTriggerProps(popoverTriggerProps))
+    };
 
     let popoverContent;
-    if (wrapContent) {
-      const popoverContentProps = {
-        hasArrow,
-        id: contentId,
-        modifiers,
-        placement,
-        subtitle,
-        title
-      };
+    if (isOpen) {
+      if (wrapContent) {
+        const popoverContentProps = {
+          hasArrow,
+          id: contentId,
+          modifiers,
+          placement,
+          subtitle,
+          title
+        };
 
-      popoverContent = (
-        <PopoverContent {...popoverContentProps}>{content}</PopoverContent>
-      );
-    } else {
-      popoverContent = content;
+        popoverContent = (
+          <PopoverContent {...popoverContentProps}>{content}</PopoverContent>
+        );
+      } else {
+        popoverContent = content;
+      }
     }
 
     return (
       <Root {...rootProps}>
-        {popoverTrigger}
+        <PopoverTrigger {...popoverTriggerProps} />
         {isOpen && popoverContent}
       </Root>
     );

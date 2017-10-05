@@ -18,7 +18,7 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { generateId } from '../utils';
-import Root, { PopoverTrigger as DropdownTrigger } from '../Popover';
+import Root from '../Popover';
 import DropdownContent from './DropdownContent';
 
 type Item = {
@@ -119,20 +119,9 @@ export default class Dropdown extends Component<Props, State> {
           : `${this.id}-menuItem-${this.state.highlightedIndex}`;
     }
 
-    const contentId = `${this.id}-dropdownContent`;
-
-    const dropdownTriggerProps = {
-      'aria-activedescendant': this.selectedItemId,
-      'aria-haspopup': true,
-      children,
-      contentId,
-      isOpen,
-      onKeyDown: this.onTriggerKeyDown
-    };
-
     const dropdownContentProps = {
       data,
-      id: contentId,
+      id: `${this.id}-dropdownContent`,
       getItemProps: this.getItemProps,
       modifiers,
       placement,
@@ -142,13 +131,12 @@ export default class Dropdown extends Component<Props, State> {
     const rootProps = {
       id: this.id,
       ...restProps,
-      autoFocus: false,
       content: <DropdownContent {...dropdownContentProps} />,
+      getTriggerProps: this.getTriggerProps,
       isOpen,
       onClose: this.close,
       onOpen: this.open,
-      trigger: <DropdownTrigger {...dropdownTriggerProps} />,
-      triggerRef: node => {
+      triggerRef: (node: ?React$Component<*, *>) => {
         this.dropdownTrigger = node;
       },
       wrapContent: false
@@ -156,6 +144,21 @@ export default class Dropdown extends Component<Props, State> {
 
     return <Root {...rootProps}>{children}</Root>;
   }
+
+  getTriggerProps = (props: Object) => {
+    const contentId = `${this.id}-dropdownContent`;
+    const { isOpen } = props;
+
+    return {
+      ...props,
+      'aria-activedescendant': isOpen
+        ? this.selectedItemId || `${contentId}-menu`
+        : undefined,
+      'aria-haspopup': true,
+      contentId,
+      onKeyDown: this.onTriggerKeyDown
+    };
+  };
 
   getItems = () => {
     return this.props.data.reduce((acc, group) => {
@@ -246,11 +249,12 @@ export default class Dropdown extends Component<Props, State> {
 
     return {
       ...props,
+      'aria-disabled': props.disabled,
       id: `${this.id}-menuItem-${index}`,
       isHighlighted: this.state.highlightedIndex === index,
       onClick: this.itemOnClick.bind(null, item),
       role: 'menuitem',
-      tabIndex: null
+      tabIndex: null // Unset tabIndex because we use arrow keys to navigate instead
     };
   };
 

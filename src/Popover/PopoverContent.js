@@ -22,13 +22,13 @@ import { CardBlock, CardTitle } from '../Card';
 import PopoverArrow from './PopoverArrow';
 
 type Props = {
-  /** Content of the popper */
+  /** Content of the Popover */
   children: React$Node,
   /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
   modifiers?: Object,
   /** Include an arrow on the Popover content pointing to the trigger */
   hasArrow?: boolean,
-  /** Placement of the popper */
+  /** Placement of the Popover */
   placement?:
     | 'auto'
     | 'auto-end'
@@ -47,7 +47,7 @@ type Props = {
     | 'top-start',
   /** Subtitle displayed under the title */
   subtitle?: React$Node,
-  /** Title of the popover */
+  /** Title of the Popover */
   title?: React$Node
 };
 
