@@ -18,7 +18,6 @@
 import scrolling from './scrolling';
 import controlled from './controlled';
 import disabled from './disabled';
-import focus from './focus';
 import onOpenClose from './onOpenClose';
 import overflow from './overflow';
 import placement from './placement';
@@ -32,7 +31,6 @@ export default [
   overflow,
   scrolling,
   onOpenClose,
-  focus,
   disabled,
   controlled
 ];

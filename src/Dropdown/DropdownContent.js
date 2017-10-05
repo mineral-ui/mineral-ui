@@ -47,7 +47,6 @@ export const componentTheme = (baseTheme: Object) => ({
   DropdownContent_borderRadius: baseTheme.borderRadius_1,
   DropdownContent_boxShadow: baseTheme.shadow_2,
   DropdownContent_margin: '5px',
-  DropdownContent_paddingVertical: baseTheme.spacing_single,
   DropdownContent_zIndex: baseTheme.zIndex_100,
   ...baseTheme
 });
@@ -64,7 +63,7 @@ const Root = createStyledComponent(
       boxShadow: theme.DropdownContent_boxShadow,
       maxHeight: pxToEm(368),
       overflowY: 'auto',
-      padding: `${theme.DropdownContent_paddingVertical} 0`,
+      userSelect: 'none',
       width: wide ? pxToEm(344) : pxToEm(224),
       zIndex: theme.DropdownContent_zIndex,
 

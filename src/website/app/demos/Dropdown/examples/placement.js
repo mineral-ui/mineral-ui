@@ -17,7 +17,7 @@
 /* @flow */
 import Button from '../../../../../Button';
 import { createStyledComponent } from '../../../../../utils';
-import Dropdown from '../components/AlwaysOpenDropdown';
+import Dropdown from '../../../../../Dropdown';
 import data from '../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
@@ -40,7 +40,7 @@ The Dropdown will react to viewport edges and scrolling.`,
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>
-      <Dropdown placement="bottom-start" data={data}>
+      <Dropdown placement="bottom-start" data={data} isOpen={true}>
         <Button size="jumbo" disabled>Menu</Button>
       </Dropdown>
     </DemoLayout>`

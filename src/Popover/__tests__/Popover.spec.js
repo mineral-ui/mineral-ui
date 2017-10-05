@@ -44,6 +44,12 @@ function mountPopover(props = {}) {
   return mountInThemeProvider(<Popover {...popoverProps} />);
 }
 
+function assertTriggerHasFocus(trigger) {
+  expect(
+    trigger.find('button').getDOMNode() === document.activeElement
+  ).toEqual(true);
+}
+
 describe('Popover', () => {
   describe('renders', () => {
     it('root', () => {
@@ -64,29 +70,36 @@ describe('Popover', () => {
   });
 
   describe('opens', () => {
-    let popover, themeProvider, trigger;
+    let button, popover, themeProvider, trigger;
 
     beforeEach(() => {
       [themeProvider, popover] = mountPopover({ onOpen: jest.fn() });
       trigger = popover.find(PopoverTrigger);
+      button = trigger.find('button');
     });
 
     it('when trigger is clicked', () => {
-      trigger.simulate('click');
+      button.simulate('click');
       const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(true);
     });
 
     it('calls onOpen', () => {
-      trigger.simulate('click');
+      button.simulate('click');
 
       expect(popover.props().onOpen).toHaveBeenCalled();
+    });
+
+    it('sets focus to the trigger', () => {
+      button.simulate('click');
+
+      assertTriggerHasFocus(trigger);
     });
   });
 
   describe('closes', () => {
-    let popover, themeProvider, trigger;
+    let button, popover, themeProvider, trigger;
 
     beforeEach(() => {
       [themeProvider, popover] = mountPopover({
@@ -94,13 +107,15 @@ describe('Popover', () => {
         defaultIsOpen: true
       });
       trigger = popover.find(PopoverTrigger);
+      button = trigger.find('button');
     });
 
     it('when trigger is clicked', () => {
-      trigger.simulate('click');
+      button.simulate('click');
       const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
+      assertTriggerHasFocus(trigger);
     });
 
     it('when document is clicked', () => {
@@ -116,6 +131,7 @@ describe('Popover', () => {
       const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
+      assertTriggerHasFocus(trigger);
     });
 
     it('when pressing escape', () => {
@@ -132,64 +148,13 @@ describe('Popover', () => {
       const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
+      assertTriggerHasFocus(trigger);
     });
 
     it('calls onClose', () => {
-      trigger.simulate('click');
+      button.simulate('click');
 
       expect(popover.props().onClose).toHaveBeenCalled();
-    });
-  });
-
-  describe('focus', () => {
-    describe('when autoFocus = true', () => {
-      it('sets focus to the content', () => {
-        const [themeProvider, popover] = mountPopover();
-        const trigger = popover.find(PopoverTrigger);
-        trigger.simulate('click');
-
-        const content = themeProvider.find(PopoverContent);
-
-        expect(content.getDOMNode() === document.activeElement).toEqual(true);
-      });
-    });
-
-    describe('when autoFocus = false', () => {
-      it('does not set focus to the content', () => {
-        const [themeProvider, popover] = mountPopover({ autoFocus: false });
-        const trigger = popover.find(PopoverTrigger);
-        trigger.simulate('click');
-        const content = themeProvider.find(PopoverContent);
-
-        expect(content.getDOMNode() === document.activeElement).toEqual(false);
-      });
-    });
-
-    describe('when restoreFocus = true', () => {
-      it('restores focus to the trigger', () => {
-        const [, popover] = mountPopover({ defaultIsOpen: true });
-        const trigger = popover.find(PopoverTrigger);
-        trigger.simulate('click');
-
-        expect(
-          trigger.getDOMNode().firstChild === document.activeElement
-        ).toEqual(true);
-      });
-    });
-
-    describe('when restoreFocus = false', () => {
-      it('does not restore focus to the trigger', () => {
-        const [, popover] = mountPopover({
-          defaultIsOpen: true,
-          restoreFocus: false
-        });
-        const trigger = popover.find(PopoverTrigger);
-        trigger.simulate('click');
-
-        expect(
-          trigger.getDOMNode().firstChild === document.activeElement
-        ).toEqual(false);
-      });
     });
   });
 
@@ -197,7 +162,7 @@ describe('Popover', () => {
     it('does not open on click', () => {
       const [themeProvider, popover] = mountPopover({ disabled: true });
       const trigger = popover.find(PopoverTrigger);
-      trigger.simulate('click');
+      trigger.find('button').simulate('click');
       const content = themeProvider.find(PopoverContent);
 
       expect(content.exists()).toEqual(false);
