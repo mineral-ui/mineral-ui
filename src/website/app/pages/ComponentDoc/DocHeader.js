@@ -86,18 +86,26 @@ export default function DocHeader({
   const navElements = []; // only show the tabs menu if there is more than one tab
   if (examples && examples.length > 0) {
     navElements.push(
-      <NavElement href={`#${firstExampleId}`}>Examples</NavElement>
+      <NavElement href={`#${firstExampleId}`} key="examples">
+        Examples
+      </NavElement>
     );
   }
 
   if (props) {
     navElements.push(
-      <NavElement href="#api-and-theme">API & Theme</NavElement>
+      <NavElement href="#api-and-theme" key="api-and-theme">
+        API & Theme
+      </NavElement>
     );
   }
 
   if (whenHowToUse || bestPractices) {
-    navElements.push(<NavElement href="#usage">Usage</NavElement>);
+    navElements.push(
+      <NavElement href="#usage" key="usage">
+        Usage
+      </NavElement>
+    );
   }
 
   return (
