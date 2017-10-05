@@ -19,12 +19,13 @@ import GettingStarted from './GettingStarted';
 import Theming from './Theming';
 import Color from './Color';
 import Typography from './Typography';
+import ComponentStatus from './ComponentStatus';
 
 type Page = {
   component: React$ComponentType<*>,
   id?: string,
   path?: string,
-  sections?: Array<Object>,
+  hiddenInNav?: boolean,
   title: string
 };
 
@@ -50,6 +51,12 @@ const pages: Pages = [
     component: Theming,
     path: '/theming',
     title: 'Theming'
+  },
+  {
+    component: ComponentStatus,
+    hiddenInNav: true,
+    path: '/component-status',
+    title: 'Component Status'
   }
 ];
 

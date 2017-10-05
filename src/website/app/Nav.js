@@ -73,10 +73,8 @@ const styles = {
     padding: theme.space_inset_md,
     backgroundColor: theme.slate_10
   }),
-  subsection: ({ theme }) => ({
-    marginTop: theme.space_stack_sm,
-    listStyle: 'none',
-    paddingLeft: theme.space_inline_sm
+  status: ({ theme }) => ({
+    fontWeight: theme.fontWeight_regular
   })
 };
 
@@ -84,8 +82,8 @@ const Root = createStyledComponent('nav', styles.nav);
 const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
-const SubSection = createStyledComponent('ul', styles.subsection);
 const Logo = createStyledComponent(Link, styles.logo);
+const Status = createStyledComponent(Link, styles.status);
 
 export default function Nav({ demos, ...restProps }: Props) {
   const rootProps = { ...restProps };
@@ -102,22 +100,7 @@ export default function Nav({ demos, ...restProps }: Props) {
   const pageLinks = pages.map((page, i) => {
     return (
       <ListItem key={`page-${i}`}>
-        <Link to={page.path}>{page.title}</Link>
-        {Array.isArray(page.sections) && (
-          <SubSection>
-            {page.sections.map((section, j) => {
-              if (!page.path) return null;
-              const path = section.id
-                ? `${page.path}#${section.id}`
-                : section.path;
-              return (
-                <ListItem key={`section-${j}`}>
-                  <Link to={path}>{section.title}</Link>
-                </ListItem>
-              );
-            })}
-          </SubSection>
-        )}
+        {!page.hiddenInNav && <Link to={page.path}>{page.title}</Link>}
       </ListItem>
     );
   });
@@ -129,7 +112,9 @@ export default function Nav({ demos, ...restProps }: Props) {
         <h1>Mineral UI</h1>
       </Logo>
       <List>{pageLinks}</List>
-      <Heading>Components</Heading>
+      <Heading>
+        Components <Status href="/component-status">[status]</Status>
+      </Heading>
       <List>{demoLinks}</List>
     </Root>
   );
