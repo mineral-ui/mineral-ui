@@ -32,12 +32,8 @@ For example: [Button] Does not support id attribute
 ### Context
 <!-- How has this issue affected you? What are you trying to accomplish? Providing context helps us come up with a solution that is most useful in the real world. -->
 
-### Versions
-<!-- Please provide the versions you’re using of each Mineral UI component related to the issue. A brief description of your app’s front-end stack can also be helpful. -->
+### Version
+<!-- Please indicate the version of Mineral UI related to this issue. -->
 
-| Component | Version |
-| :-------- | :------ |
-| ComponentName | 0.0.0 |
-<!-- For example:
-| Button | 1.1.0 |
--->
+### Environment
+<!-- Not required, but a brief description of your app’s front-end stack may also be helpful. -->
