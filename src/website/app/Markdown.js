@@ -21,6 +21,7 @@ import { createStyledComponent, getNormalizedValue } from '../../utils';
 import Heading from './Heading';
 import Paragraph from './Paragraph';
 import Link from './Link';
+import MarkdownTable from './MarkdownTable';
 import prism from './utils/prism';
 
 type Props = {
@@ -207,6 +208,9 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
       },
       p({ children }) {
         return <Paragraph variant="prose">{children}</Paragraph>;
+      },
+      table({ children }) {
+        return <MarkdownTable>{children}</MarkdownTable>;
       }
     },
     components: {

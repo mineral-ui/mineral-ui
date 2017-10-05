@@ -31,24 +31,10 @@ type Props = {
 export default function Router({ demos }: Props) {
   const routes = [];
 
-  pages.map((page, i) => {
-    if (page.sections) {
-      page.sections.map((section, j) => {
-        if (section.path) {
-          routes.push(
-            <Route
-              key={`section-${j}`}
-              path={section.path}
-              render={() => <section.component />}
-            />
-          );
-        }
-      });
-    }
-
+  pages.map((page, index) => {
     routes.push(
       <Route
-        key={`page-${i}`}
+        key={`page-${index}`}
         path={page.path}
         render={() => <page.component />}
       />
