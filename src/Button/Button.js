@@ -53,43 +53,33 @@ export const componentTheme = (baseTheme: Object) => ({
   Button_backgroundColor_hover: baseTheme.color_gray_10,
   Button_backgroundColor_minimal_active: baseTheme.color_gray_20,
   Button_backgroundColor_minimal_hover: baseTheme.color_gray_10,
-  Button_backgroundColor_primary: baseTheme.color_theme_70,
-  Button_backgroundColor_primary_active: baseTheme.color_theme_80,
-  Button_backgroundColor_primary_focus: baseTheme.color_theme_70,
-  Button_backgroundColor_primary_hover: baseTheme.color_theme_60,
+  Button_backgroundColor_primary: baseTheme.color_theme_60,
+  Button_backgroundColor_primary_active: baseTheme.color_theme_70,
+  Button_backgroundColor_primary_focus: baseTheme.color_theme_60,
+  Button_backgroundColor_primary_hover: baseTheme.color_theme_50,
   Button_borderColor: baseTheme.borderColor,
   Button_borderColor_focus: baseTheme.color_white,
   Button_borderRadius: baseTheme.borderRadius_1,
-  Button_borderWidth: 1, // px, also used to calculate padding (in ems)
+  Button_borderWidth: 1, // px
   Button_boxShadow_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
   Button_color_text: baseTheme.color_gray_100,
   Button_color_text_minimal: baseTheme.color_text_primary,
   Button_color_text_primary: baseTheme.color_text_onprimary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
-  Button_padding_small: pxToEm(4),
-  Button_padding_medium: pxToEm(6),
-  Button_padding_large: pxToEm(8),
-  Button_padding_jumbo: pxToEm(10),
-  Button_size_small: baseTheme.size_small,
-  Button_size_medium: baseTheme.size_medium,
-  Button_size_large: baseTheme.size_large,
-  Button_size_jumbo: baseTheme.size_jumbo,
+  Button_paddingHorizontal: baseTheme.space_inset_sm,
+  Button_paddingIconOnly_small: pxToEm(3),
+  Button_paddingIconOnly_medium: pxToEm(7),
+  Button_paddingIconOnly_large: pxToEm(7),
+  Button_paddingIconOnly_jumbo: pxToEm(13),
+  Button_height_small: baseTheme.size_small,
+  Button_height_medium: baseTheme.size_medium,
+  Button_height_large: baseTheme.size_large,
+  Button_height_jumbo: baseTheme.size_jumbo,
 
   ButtonContent_fontSize: baseTheme.fontSize_ui,
   ButtonContent_fontSize_small: pxToEm(12),
-  ButtonContent_lineHeight_small: pxToEm(16),
-  ButtonContent_lineHeight_medium: pxToEm(20),
-  ButtonContent_lineHeight_large: pxToEm(24),
-  ButtonContent_lineHeight_jumbo: pxToEm(32),
-  ButtonContent_padding_small: pxToEm(3),
-  ButtonContent_padding_medium: pxToEm(4),
-  ButtonContent_padding_large: pxToEm(6),
-  ButtonContent_padding_jumbo: pxToEm(8),
 
-  ButtonIcon_padding_small: pxToEm(2),
-  ButtonIcon_padding_medium: pxToEm(2),
-  ButtonIcon_padding_large: pxToEm(4),
-  ButtonIcon_padding_jumbo: pxToEm(6),
+  ButtonIcon_margin: baseTheme.space_inset_sm,
 
   ...baseTheme
 });
@@ -104,6 +94,7 @@ const styles = {
       minimal,
       primary,
       size,
+      text,
       variant
     } = props;
 
@@ -139,7 +130,7 @@ const styles = {
           ? 'transparent'
           : theme.Button_borderColor,
       borderRadius: circular
-        ? `${parseFloat(theme[`Button_size_${size}`]) / 2}em`
+        ? `${parseFloat(theme[`Button_height_${size}`]) / 2}em`
         : theme.Button_borderRadius,
       borderStyle: 'solid',
       borderWidth: `${theme.Button_borderWidth}px`,
@@ -156,20 +147,15 @@ const styles = {
       })(),
       cursor: disabled ? 'default' : 'pointer',
       fontWeight: theme.Button_fontWeight,
-      height: theme[`Button_size_${size}`],
-      // Because the small & medium-sized Buttons are shorter than
-      // theme.fontSize_base * theme.lineHeight, the text content does not
-      // vertically align correctly without setting the lineHeight equal to the
-      // smallest fontSize (or smaller).
-      lineHeight: theme.ButtonContent_fontSize_small,
+      height: theme[`Button_height_${size}`],
       // if the user puts in a small icon in a large button
       // we want to force the button to be round/square
       // (really just pertinent on icon-only buttons)
-      minWidth: theme[`Button_size_${size}`],
-      // Because we use boxSizing: 'border-box', we need to substract the borderWidth
-      // from the padding to have the fixed height of Root and Content be correct.
-      padding: `${parseFloat(theme[`Button_padding_${size}`]) -
-        parseFloat(pxToEm(theme.Button_borderWidth))}em`,
+      minWidth: theme[`Button_height_${size}`],
+      padding:
+        text === undefined
+          ? theme[`Button_paddingIconOnly_${size}`]
+          : `0 ${theme.Button_paddingHorizontal}`,
       verticalAlign: 'middle',
       width: fullWidth && '100%',
       '&:focus': {
@@ -222,7 +208,24 @@ const styles = {
             ? 'currentColor'
             : theme.Button_backgroundColor_primary,
         display: 'block',
-        padding: theme[`ButtonIcon_padding_${size}`]
+
+        '&:first-child': {
+          marginLeft:
+            theme.direction === 'rtl' ? theme.ButtonIcon_margin : null,
+          marginRight:
+            theme.direction === 'ltr' ? theme.ButtonIcon_margin : null
+        },
+
+        '&:last-child': {
+          marginLeft:
+            theme.direction === 'ltr' ? theme.ButtonIcon_margin : null,
+          marginRight:
+            theme.direction === 'rtl' ? theme.ButtonIcon_margin : null
+        },
+
+        '&:only-child': {
+          margin: 0
+        }
       }
     };
   },
@@ -230,24 +233,38 @@ const styles = {
     const theme = componentTheme(props.theme);
     const { size } = props;
 
+    let paddings;
+
     const fontSize =
       size === 'small'
         ? theme.ButtonContent_fontSize_small
         : theme.ButtonContent_fontSize;
+
+    if (size === 'large' || size === 'jumbo') {
+      const padding = getNormalizedValue(
+        theme.Button_paddingHorizontal,
+        fontSize
+      );
+      paddings = {
+        '&:first-child': {
+          paddingLeft: theme.direction === 'ltr' ? padding : null,
+          paddingRight: theme.direction === 'rtl' ? padding : null
+        },
+
+        '&:last-child': {
+          paddingLeft: theme.direction === 'rtl' ? padding : null,
+          paddingRight: theme.direction === 'ltr' ? padding : null
+        }
+      };
+    }
 
     return {
       ...ellipsis('100%'),
 
       display: 'block',
       fontSize,
-      lineHeight: getNormalizedValue(
-        theme[`ButtonContent_lineHeight_${size}`],
-        fontSize
-      ),
-      padding: `0 ${getNormalizedValue(
-        theme[`ButtonContent_padding_${size}`],
-        fontSize
-      )}`
+      lineHeight: getNormalizedValue(theme[`Button_height_${size}`], fontSize),
+      ...paddings
     };
   },
   inner: {
@@ -282,13 +299,13 @@ export default function Button({
   variant = 'regular',
   ...restProps
 }: Props) {
-  const rootProps = { size, type, variant, ...restProps };
+  const rootProps = { size, text: children, type, variant, ...restProps };
 
   const iconSize = {
-    small: 'small',
+    small: 'medium',
     medium: 'medium',
-    large: 'medium',
-    jumbo: 'large'
+    large: pxToEm(24),
+    jumbo: pxToEm(24)
   };
   const startIcon = iconStart
     ? cloneElement(iconStart, { size: iconSize[size] })
