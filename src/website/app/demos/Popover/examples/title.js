@@ -27,8 +27,8 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'title',
   title: 'Title and Subtitle',
-  description: `Formatted titles will be rendered above any other content if provided.
-Subtitles will only be rendered if the \`title\` attribute is present.`,
+  description: `Formatted titles render above any other content if provided.
+Subtitles are only be rendered if the \`title\` attribute is present.`,
   scope: { Button, DemoContent, DemoLayout, Popover },
   source: `
     <DemoLayout>

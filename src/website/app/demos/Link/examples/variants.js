@@ -27,8 +27,7 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'variants',
   title: 'Variants',
-  description:
-    'Links can be styled as these variants, to help communicate purpose.',
+  description: 'Style Links with these variants to help communicate purpose.',
   scope: { DemoLayout, Link },
   source: `
     <DemoLayout>

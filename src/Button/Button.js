@@ -288,7 +288,7 @@ const Inner = createStyledComponent('span', styles.inner);
  * Buttons draw attention to actions that can be performed in your app.
  * Buttons are used to trigger any sort of event.
  *
- * Buttons with clear messaging and an appropriate variant applied communicate intention effectively.
+ * Always use the appropriate variant for your button, and write a clear, concise label to effectively communicate intention.
  */
 export default function Button({
   children,

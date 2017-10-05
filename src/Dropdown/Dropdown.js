@@ -70,7 +70,7 @@ type State = {
 };
 
 /**
- * Dropdown provides a transitory list of actions that appears upon user interaction with a trigger.
+ * Dropdown presents a list of actions after a user interacts with a trigger.
  */
 export default class Dropdown extends Component<Props, State> {
   static defaultProps = {
