@@ -112,10 +112,10 @@ const examples: TypeExamples = [
     ),
     description: (
       <Description variant="prose">
-        <strong>Display text</strong> makes a bold statement, and is useful to
+        Use <strong>Display text</strong> sparingly to make a bold statement, or
         draw attention to different sections in an application view. Display
-        text is for short titles and section divisions. They should be used
-        sparingly – they aren’t for long-form content.{' '}
+        text is for short titles and section divisions – it’s not for long-form
+        content.{' '}
       </Description>
     ),
     examples: [

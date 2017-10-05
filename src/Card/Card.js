@@ -70,9 +70,9 @@ const onKeyPress = (props: Props, event: SyntheticEvent<>) => {
 };
 
 /**
- * Cards are used to group conceptually related content.
+ * Cards group conceptually related content.
  * Cards represent a gateway to more detailed information in another app view.
- * You can use Cards to provide detail about a feature in your app, or to represent data with which your users can interact.
+ * Use Cards to provide detail about a feature in your app, or to represent data with which your users can interact.
  */
 export default function Card(props: Props) {
   const rootProps = {

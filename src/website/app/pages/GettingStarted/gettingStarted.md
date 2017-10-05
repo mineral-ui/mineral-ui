@@ -53,12 +53,9 @@ render(<App />, document.getElementById('app'));
 
 ### Open Sans Font
 
-Mineral UI was designed around
-[Open Sans](https://fonts.google.com/specimen/Open+Sans). To get the
-components to look their best, you will need to include this font in your
-project yourself or our styles will fall back to system fonts. To
-quickly include this font in your app, copy this code into the \`head\`
-of your HTML document.
+Mineral UI is designed around [Open Sans](https://fonts.google.com/specimen/Open+Sans). For components to look their best, use Open Sans in your project.
+
+To quickly include Open Sans in your app, copy this code into the `head` of your HTML document.
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -79,7 +76,7 @@ for details.
 ### Theming
 
 Theming is a core concept in Mineral UI. Refer to the
-[documentation](/guidelines/theming) for details.
+[documentation](/theming) for details.
 
 ## Contributing
 

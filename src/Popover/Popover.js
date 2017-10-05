@@ -88,8 +88,8 @@ const Root = createStyledComponent(
 
 /**
  * Popovers hold supporting information or user controls.
- * Popovers will float over page content.
- * Placement, scroll behavior and focus management can all be controlled to customize your implementation.
+ * Popovers float over page content.
+ * You can control placement, scroll behavior, and focus management to customize your implementation.
  * Popovers can be toggled on a user action or a state change.
  */
 export default class Popover extends Component<Props, State> {
