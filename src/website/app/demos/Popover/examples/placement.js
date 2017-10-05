@@ -18,7 +18,7 @@
 import Button from '../../../../../Button';
 import { createStyledComponent } from '../../../../../utils';
 import DemoContent from '../components/DemoContent';
-import Popover from '../components/AlwaysOpenPopover';
+import Popover from '../../../../../Popover';
 
 const DemoLayout = createStyledComponent('div', {
   height: '350px',
@@ -42,7 +42,8 @@ The Popover will still react to viewport edges and scrolling.`,
     <DemoLayout>
       <Popover
         content={<DemoContent />}
-        placement="bottom">
+        placement="bottom"
+        isOpen={true}>
         <Button size="jumbo" disabled>Open Popover</Button>
       </Popover>
     </DemoLayout>`

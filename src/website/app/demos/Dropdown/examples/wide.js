@@ -17,7 +17,7 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
-import Dropdown from '../components/AlwaysOpenDropdown';
+import Dropdown from '../../../../../Dropdown';
 
 const DemoLayout = createStyledComponent('div', {
   height: '210px'
@@ -51,7 +51,7 @@ Make sure you have enough room for the wider Menu on the devices you're supporti
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>
-      <Dropdown wide data={data}>
+      <Dropdown wide data={data} isOpen={true}>
         <Button disabled>Menu</Button>
       </Dropdown>
     </DemoLayout>`

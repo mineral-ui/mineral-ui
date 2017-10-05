@@ -18,7 +18,7 @@
 import { createStyledComponent } from '../../../../../utils';
 import Button from '../../../../../Button';
 import DemoContent from '../components/DemoContent';
-import Popover from '../components/AlwaysOpenPopover';
+import Popover from '../../../../../Popover';
 
 const DemoLayout = createStyledComponent('div', {
   padding: '5em 0'
@@ -36,7 +36,8 @@ Subtitles will only be rendered if the \`title\` attribute is present.`,
         content={<DemoContent />}
         placement="right"
         subtitle="Subtitle"
-        title="Title">
+        title="Title"
+        isOpen={true}>
         <Button disabled>Open Popover</Button>
       </Popover>
     </DemoLayout>`

@@ -18,7 +18,7 @@
 import Button from '../../../../../Button';
 import { createStyledComponent } from '../../../../../utils';
 import DemoContent from '../components/DemoContent';
-import Popover from '../components/AlwaysOpenPopover';
+import Popover from '../../../../../Popover';
 
 const OverflowContainer = createStyledComponent('div', {
   backgroundColor: 'aliceblue',
@@ -35,7 +35,8 @@ export default {
     <OverflowContainer>
       <Popover
         content={<DemoContent />}
-        placement="right">
+        placement="right"
+        isOpen={true}>
         <Button disabled>Open Popover</Button>
       </Popover>
     </OverflowContainer>`

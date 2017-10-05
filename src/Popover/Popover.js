@@ -17,15 +17,13 @@
 /* @flow */
 import React, { cloneElement, Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { canUseDOM } from 'exenv';
+import { canUseEventListeners } from 'exenv';
 import { Manager } from 'react-popper';
-import { createStyledComponent } from '../utils';
+import { createStyledComponent, generateId } from '../utils';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';
 
 type Props = {
-  /** Focuses the Popover content when opened */
-  autoFocus?: boolean,
   /** Trigger for the Popover */
   children: React$Node,
   /** Content of the Popover */
@@ -61,8 +59,6 @@ type Props = {
     | 'top'
     | 'top-end'
     | 'top-start',
-  /** Focuses trigger when Popover is closed */
-  restoreFocus?: boolean,
   /** Subtitle displayed under the title */
   subtitle?: React$Node,
   /** Title of the Popover */
@@ -98,10 +94,8 @@ const Root = createStyledComponent(
  */
 export default class Popover extends Component<Props, State> {
   static defaultProps = {
-    autoFocus: true,
     hasArrow: true,
     placement: 'bottom',
-    restoreFocus: true,
     wrapContent: true
   };
 
@@ -110,6 +104,8 @@ export default class Popover extends Component<Props, State> {
   state: State = {
     isOpen: Boolean(this.props.defaultIsOpen)
   };
+
+  id: string = `popover-${generateId()}`;
 
   popoverContent: ?React$Component<*, *>;
 
@@ -145,7 +141,9 @@ export default class Popover extends Component<Props, State> {
     const rootProps = {
       ...restProps
     };
+    const contentId = `${this.id}-popoverContent`;
     const popoverTriggerProps = {
+      contentId,
       children,
       disabled,
       isOpen,
@@ -166,11 +164,9 @@ export default class Popover extends Component<Props, State> {
     if (wrapContent) {
       const popoverContentProps = {
         hasArrow,
+        id: contentId,
         modifiers,
         placement,
-        ref: node => {
-          this.popoverContent = node;
-        },
         subtitle,
         title
       };
@@ -179,11 +175,7 @@ export default class Popover extends Component<Props, State> {
         <PopoverContent {...popoverContentProps}>{content}</PopoverContent>
       );
     } else {
-      popoverContent = cloneElement(content, {
-        ref: node => {
-          this.popoverContent = node;
-        }
-      });
+      popoverContent = content;
     }
 
     return (
@@ -195,7 +187,7 @@ export default class Popover extends Component<Props, State> {
   }
 
   addDocumentEventListeners = () => {
-    if (canUseDOM) {
+    if (canUseEventListeners) {
       global.document.addEventListener('click', this.handleDocumentClick, true);
       global.document.addEventListener(
         'keydown',
@@ -220,20 +212,14 @@ export default class Popover extends Component<Props, State> {
 
   closeActions = (event: SyntheticEvent<>) => {
     this.props.onClose && this.props.onClose(event);
-    this.props.restoreFocus && this.focusTrigger();
-  };
-
-  focusContent = () => {
-    const el = findDOMNode(this.popoverContent); // eslint-disable-line react/no-find-dom-node
-    if (el && el instanceof HTMLElement) {
-      el.focus();
-    }
+    const { isOpen } = this.isControlled() ? this.props : this.state;
+    !isOpen && this.focusTrigger();
   };
 
   focusTrigger = () => {
-    const el = findDOMNode(this.popoverTrigger); // eslint-disable-line react/no-find-dom-node
-    if (el && el.firstChild && el.firstChild instanceof HTMLElement) {
-      el.firstChild.focus();
+    const node = findDOMNode(this.popoverTrigger); // eslint-disable-line react/no-find-dom-node
+    if (node && node.firstChild && node.firstChild instanceof HTMLElement) {
+      node.firstChild.focus();
     }
   };
 
@@ -278,12 +264,12 @@ export default class Popover extends Component<Props, State> {
   };
 
   openActions = (event: SyntheticEvent<>) => {
+    this.focusTrigger();
     this.props.onOpen && this.props.onOpen(event);
-    this.props.autoFocus && this.focusContent();
   };
 
   removeDocumentEventListeners = () => {
-    if (canUseDOM) {
+    if (canUseEventListeners) {
       global.document.removeEventListener(
         'click',
         this.handleDocumentClick,

@@ -22,11 +22,10 @@ import data from '../../Menu/components/menuData';
 export default {
   id: 'disabled',
   title: 'Disabled',
-  description: `In addition to disabling the Dropdown, you should also disable the trigger component.
-Dropdowns will open and close regardless of the properties set on the trigger.`,
+  description: `Disable the Dropdown and its trigger.`,
   scope: { Button, data, Dropdown },
   source: `
     <Dropdown data={data} disabled>
-      <Button disabled>Menu</Button>
+      <Button>Menu</Button>
     </Dropdown>`
 };

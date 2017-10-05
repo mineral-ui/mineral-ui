@@ -25,3 +25,4 @@ export { default as mineralTheme } from './mineralTheme';
 export { default as styleVariables } from './styleVariables';
 
 export { generateId, resetId } from './generateId';
+export { default as composeEventHandlers } from './composeEventHandlers';

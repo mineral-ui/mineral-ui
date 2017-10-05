@@ -60,8 +60,6 @@ type Props = {
     | 'right-start'
     | 'top-end'
     | 'top-start',
-  /** Focus trigger after selecting an item */
-  restoreFocus?: boolean,
   /** Display a wider Dropdown menu */
   wide?: boolean
 };
@@ -76,8 +74,7 @@ type State = {
  */
 export default class Dropdown extends Component<Props, State> {
   static defaultProps = {
-    placement: 'bottom-start',
-    restoreFocus: true
+    placement: 'bottom-start'
   };
 
   props: Props;
@@ -122,16 +119,20 @@ export default class Dropdown extends Component<Props, State> {
           : `${this.id}-menuItem-${this.state.highlightedIndex}`;
     }
 
+    const contentId = `${this.id}-dropdownContent`;
+
     const dropdownTriggerProps = {
       'aria-activedescendant': this.selectedItemId,
       'aria-haspopup': true,
       children,
+      contentId,
       isOpen,
       onKeyDown: this.onTriggerKeyDown
     };
 
     const dropdownContentProps = {
       data,
+      id: contentId,
       getItemProps: this.getItemProps,
       modifiers,
       placement,
@@ -140,13 +141,12 @@ export default class Dropdown extends Component<Props, State> {
 
     const rootProps = {
       id: this.id,
-      restoreFocus: false,
       ...restProps,
       autoFocus: false,
       content: <DropdownContent {...dropdownContentProps} />,
       isOpen,
-      onClose: this.onClose,
-      onOpen: this.onOpen,
+      onClose: this.close,
+      onOpen: this.open,
       trigger: <DropdownTrigger {...dropdownTriggerProps} />,
       triggerRef: node => {
         this.dropdownTrigger = node;
@@ -173,9 +173,9 @@ export default class Dropdown extends Component<Props, State> {
           prevState.highlightedIndex === null ||
           prevState.highlightedIndex === this.getItems().length - 1
             ? 0
-            : prevState.highlightedIndex + 1,
-        isOpen: true
+            : prevState.highlightedIndex + 1
       }));
+      this.open(event);
     } else if (event.key === 'ArrowUp') {
       event.preventDefault();
       this.setState(prevState => ({
@@ -183,9 +183,9 @@ export default class Dropdown extends Component<Props, State> {
           prevState.highlightedIndex === null ||
           prevState.highlightedIndex === 0
             ? this.getItems().length - 1
-            : prevState.highlightedIndex - 1,
-        isOpen: true
+            : prevState.highlightedIndex - 1
       }));
+      this.open(event);
     } else if (event.key === 'Enter' || event.key === ' ') {
       const { isOpen } = this.isControlled() ? this.props : this.state;
       if (!isOpen || !this._isMounted || !this.selectedItemId) {
@@ -201,16 +201,40 @@ export default class Dropdown extends Component<Props, State> {
     }
   };
 
-  onOpen = (event: SyntheticEvent<>) => {
-    this.setState({ isOpen: true }, () => {
-      this.props.onOpen && this.props.onOpen(event);
-    });
+  open = (event: SyntheticEvent<>) => {
+    if (this.isControlled()) {
+      this.openActions(event);
+    } else {
+      this.setState(
+        () => ({ isOpen: true }),
+        () => {
+          this.openActions(event);
+        }
+      );
+    }
   };
 
-  onClose = (event: SyntheticEvent<>) => {
-    this.setState({ highlightedIndex: null, isOpen: false }, () => {
-      this.props.onClose && this.props.onClose(event);
-    });
+  openActions = (event: SyntheticEvent<>) => {
+    this.props.onOpen && this.props.onOpen(event);
+  };
+
+  close = (event: SyntheticEvent<>) => {
+    this.setState({ highlightedIndex: null });
+
+    if (this.isControlled()) {
+      this.closeActions(event);
+    } else {
+      this.setState(
+        () => ({ isOpen: false }),
+        () => {
+          this.closeActions(event);
+        }
+      );
+    }
+  };
+
+  closeActions = (event: SyntheticEvent<>) => {
+    this.props.onClose && this.props.onClose(event);
   };
 
   isControlled = () => {
@@ -234,15 +258,14 @@ export default class Dropdown extends Component<Props, State> {
     const { onClick } = item;
 
     onClick && onClick(event);
-    this.onClose(event);
-
-    this.props.restoreFocus && this.focusTrigger();
+    this.close(event);
+    this.focusTrigger();
   };
 
   focusTrigger = () => {
-    const el = findDOMNode(this.dropdownTrigger); // eslint-disable-line react/no-find-dom-node
-    if (el && el.firstChild && el.firstChild instanceof HTMLElement) {
-      el.firstChild.focus();
+    const node = findDOMNode(this.dropdownTrigger); // eslint-disable-line react/no-find-dom-node
+    if (node && node.firstChild && node.firstChild instanceof HTMLElement) {
+      node.firstChild.focus();
     }
   };
 }

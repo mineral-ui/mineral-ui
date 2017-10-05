@@ -15,23 +15,22 @@
  */
 
 /* @flow */
-import React, { Children, Component } from 'react';
+import React, { Children, cloneElement, Component } from 'react';
 import { Target } from 'react-popper';
-import { createStyledComponent } from '../utils';
+import { composeEventHandlers, createStyledComponent } from '../utils';
 
 type Props = {
+  contentId: string,
   children: React$Node,
   disabled?: boolean,
   onClick?: (event: SyntheticEvent<>) => void,
+  onKeyDown?: (event: SyntheticEvent<>) => void,
   isOpen: boolean
 };
 
 const Root = createStyledComponent(
   Target,
-  {
-    cursor: 'pointer',
-    display: 'inline-block'
-  },
+  {},
   {
     displayName: 'PopoverTrigger'
   }
@@ -41,15 +40,28 @@ export default class PopoverTrigger extends Component<Props> {
   props: Props;
 
   render() {
-    const { children, disabled, isOpen, ...restProps } = this.props;
-
-    const rootProps = {
+    const {
+      children,
+      disabled,
+      isOpen,
+      contentId,
+      onClick,
+      onKeyDown,
+      ...restProps
+    } = this.props;
+    const child = Children.only(children);
+    const { onClick: childOnClick, onKeyDown: childOnKeyDown } = child.props;
+    const triggerProps = {
+      'aria-describedby': contentId,
       'aria-disabled': disabled,
       'aria-expanded': isOpen,
+      disabled,
+      onClick: composeEventHandlers(childOnClick, onClick),
+      onKeyDown: composeEventHandlers(childOnKeyDown, onKeyDown),
       role: 'button',
       ...restProps
     };
 
-    return <Root {...rootProps}>{Children.only(children)}</Root>;
+    return <Root>{cloneElement(child, triggerProps)}</Root>;
   }
 }

@@ -22,11 +22,10 @@ import Popover from '../../../../../Popover';
 export default {
   id: 'disabled',
   title: 'Disabled',
-  description: `In addition to disabling the Popover, you should also disable the trigger component.
-Popovers will open and close regardless of the properties set on the trigger.`,
+  description: `Disable the Popover and its trigger.`,
   scope: { Button, DemoContent, Popover },
   source: `
-    <Popover disabled content={<DemoContent />}>
-      <Button disabled>Open Popover</Button>
+    <Popover content={<DemoContent />} disabled>
+      <Button>Open Popover</Button>
     </Popover>`
 };
