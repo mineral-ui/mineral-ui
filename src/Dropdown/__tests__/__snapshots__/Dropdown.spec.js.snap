@@ -6,12 +6,6 @@ exports[`Dropdown demo examples basic 1`] = `
   display: inline-block;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
-  display: inline-block;
-}
-
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
@@ -326,7 +320,6 @@ exports[`Dropdown demo examples basic 1`] = `
                 ]
               }
               placement="bottom-start"
-              restoreFocus={true}
             >
               <Popover
                 autoFocus={false}
@@ -353,22 +346,23 @@ exports[`Dropdown demo examples basic 1`] = `
                       ]
                     }
                     getItemProps={[Function]}
+                    id="dropdown-42-dropdownContent"
                     modifiers={undefined}
                     placement="bottom-start"
                     wide={undefined}
                   />
                 }
                 hasArrow={true}
-                id="dropdown-27"
+                id="dropdown-42"
                 isOpen={false}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom"
-                restoreFocus={true}
                 trigger={
                   <PopoverTrigger
                     aria-activedescendant={undefined}
                     aria-haspopup={true}
+                    contentId="dropdown-42-dropdownContent"
                     isOpen={false}
                     onKeyDown={[Function]}
                   >
@@ -382,68 +376,74 @@ exports[`Dropdown demo examples basic 1`] = `
               >
                 <Popover
                   autoFocus={false}
-                  id="dropdown-27"
+                  id="dropdown-42"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
-                  restoreFocus={true}
                 >
                   <Manager
                     autoFocus={false}
                     className="glamor-5"
-                    id="dropdown-27"
+                    id="dropdown-42"
                     tag="div"
                   >
                     <div
                       autoFocus={false}
                       className="glamor-5"
-                      id="dropdown-27"
+                      id="dropdown-42"
                     >
                       <PopoverTrigger
                         aria-activedescendant={undefined}
                         aria-haspopup={true}
+                        contentId="popover-43-popoverContent"
                         disabled={undefined}
                         isOpen={false}
                         onClick={[Function]}
                         onKeyDown={[Function]}
                       >
-                        <PopoverTrigger
-                          aria-activedescendant={undefined}
-                          aria-disabled={undefined}
-                          aria-expanded={false}
-                          aria-haspopup={true}
-                          onClick={[Function]}
-                          onKeyDown={[Function]}
-                          role="button"
-                        >
+                        <PopoverTrigger>
                           <Target
-                            aria-activedescendant={undefined}
-                            aria-disabled={undefined}
-                            aria-expanded={false}
-                            aria-haspopup={true}
                             className="glamor-3"
-                            onClick={[Function]}
-                            onKeyDown={[Function]}
-                            role="button"
                           >
                             <div
-                              aria-activedescendant={undefined}
-                              aria-disabled={undefined}
-                              aria-expanded={false}
-                              aria-haspopup={true}
                               className="glamor-3"
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
                             >
-                              <Button>
+                              <Button
+                                aria-activedescendant={undefined}
+                                aria-describedby="popover-43-popoverContent"
+                                aria-disabled={undefined}
+                                aria-expanded={false}
+                                aria-haspopup={true}
+                                disabled={undefined}
+                                onClick={[Function]}
+                                onKeyDown={[Function]}
+                                role="button"
+                              >
                                 <glamorous(button)
+                                  aria-activedescendant={undefined}
+                                  aria-describedby="popover-43-popoverContent"
+                                  aria-disabled={undefined}
+                                  aria-expanded={false}
+                                  aria-haspopup={true}
+                                  disabled={undefined}
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="button"
                                   size="medium"
                                   type="button"
                                   variant="regular"
                                 >
                                   <button
+                                    aria-activedescendant={undefined}
+                                    aria-describedby="popover-43-popoverContent"
+                                    aria-disabled={undefined}
+                                    aria-expanded={false}
+                                    aria-haspopup={true}
                                     className="glamor-2"
+                                    disabled={undefined}
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="button"
                                     type="button"
                                   >
                                     <glamorous(span)>
@@ -484,12 +484,6 @@ exports[`Dropdown demo examples basic 1`] = `
 exports[`Dropdown demo examples controlled 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -890,7 +884,6 @@ exports[`Dropdown demo examples controlled 1`] = `
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom-start"
-                    restoreFocus={true}
                   >
                     <Popover
                       autoFocus={false}
@@ -917,22 +910,23 @@ exports[`Dropdown demo examples controlled 1`] = `
                             ]
                           }
                           getItemProps={[Function]}
+                          id="dropdown-56-dropdownContent"
                           modifiers={undefined}
                           placement="bottom-start"
                           wide={undefined}
                         />
                       }
                       hasArrow={true}
-                      id="dropdown-34"
+                      id="dropdown-56"
                       isOpen={false}
                       onClose={[Function]}
                       onOpen={[Function]}
                       placement="bottom"
-                      restoreFocus={true}
                       trigger={
                         <PopoverTrigger
                           aria-activedescendant={undefined}
                           aria-haspopup={true}
+                          contentId="dropdown-56-dropdownContent"
                           isOpen={false}
                           onKeyDown={[Function]}
                         >
@@ -946,68 +940,74 @@ exports[`Dropdown demo examples controlled 1`] = `
                     >
                       <Popover
                         autoFocus={false}
-                        id="dropdown-34"
+                        id="dropdown-56"
                         isOpen={false}
                         onClose={[Function]}
                         onOpen={[Function]}
-                        restoreFocus={true}
                       >
                         <Manager
                           autoFocus={false}
                           className="glamor-5"
-                          id="dropdown-34"
+                          id="dropdown-56"
                           tag="div"
                         >
                           <div
                             autoFocus={false}
                             className="glamor-5"
-                            id="dropdown-34"
+                            id="dropdown-56"
                           >
                             <PopoverTrigger
                               aria-activedescendant={undefined}
                               aria-haspopup={true}
+                              contentId="popover-57-popoverContent"
                               disabled={undefined}
                               isOpen={false}
                               onClick={[Function]}
                               onKeyDown={[Function]}
                             >
-                              <PopoverTrigger
-                                aria-activedescendant={undefined}
-                                aria-disabled={undefined}
-                                aria-expanded={false}
-                                aria-haspopup={true}
-                                onClick={[Function]}
-                                onKeyDown={[Function]}
-                                role="button"
-                              >
+                              <PopoverTrigger>
                                 <Target
-                                  aria-activedescendant={undefined}
-                                  aria-disabled={undefined}
-                                  aria-expanded={false}
-                                  aria-haspopup={true}
                                   className="glamor-3"
-                                  onClick={[Function]}
-                                  onKeyDown={[Function]}
-                                  role="button"
                                 >
                                   <div
-                                    aria-activedescendant={undefined}
-                                    aria-disabled={undefined}
-                                    aria-expanded={false}
-                                    aria-haspopup={true}
                                     className="glamor-3"
-                                    onClick={[Function]}
-                                    onKeyDown={[Function]}
-                                    role="button"
                                   >
-                                    <Button>
+                                    <Button
+                                      aria-activedescendant={undefined}
+                                      aria-describedby="popover-57-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={false}
+                                      aria-haspopup={true}
+                                      disabled={undefined}
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="button"
+                                    >
                                       <glamorous(button)
+                                        aria-activedescendant={undefined}
+                                        aria-describedby="popover-57-popoverContent"
+                                        aria-disabled={undefined}
+                                        aria-expanded={false}
+                                        aria-haspopup={true}
+                                        disabled={undefined}
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="button"
                                         size="medium"
                                         type="button"
                                         variant="regular"
                                       >
                                         <button
+                                          aria-activedescendant={undefined}
+                                          aria-describedby="popover-57-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={false}
+                                          aria-haspopup={true}
                                           className="glamor-2"
+                                          disabled={undefined}
+                                          onClick={[Function]}
+                                          onKeyDown={[Function]}
+                                          role="button"
                                           type="button"
                                         >
                                           <glamorous(span)>
@@ -1083,12 +1083,6 @@ exports[`Dropdown demo examples controlled 1`] = `
 exports[`Dropdown demo examples data 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -1452,7 +1446,6 @@ exports[`Dropdown demo examples data 1`] = `
                   ]
                 }
                 placement="bottom-start"
-                restoreFocus={true}
               >
                 <Popover
                   autoFocus={false}
@@ -1506,22 +1499,23 @@ exports[`Dropdown demo examples data 1`] = `
                         ]
                       }
                       getItemProps={[Function]}
+                      id="dropdown-44-dropdownContent"
                       modifiers={undefined}
                       placement="bottom-start"
                       wide={undefined}
                     />
                   }
                   hasArrow={true}
-                  id="dropdown-28"
+                  id="dropdown-44"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
-                  restoreFocus={true}
                   trigger={
                     <PopoverTrigger
                       aria-activedescendant={undefined}
                       aria-haspopup={true}
+                      contentId="dropdown-44-dropdownContent"
                       isOpen={false}
                       onKeyDown={[Function]}
                     >
@@ -1535,68 +1529,74 @@ exports[`Dropdown demo examples data 1`] = `
                 >
                   <Popover
                     autoFocus={false}
-                    id="dropdown-28"
+                    id="dropdown-44"
                     isOpen={false}
                     onClose={[Function]}
                     onOpen={[Function]}
-                    restoreFocus={true}
                   >
                     <Manager
                       autoFocus={false}
                       className="glamor-5"
-                      id="dropdown-28"
+                      id="dropdown-44"
                       tag="div"
                     >
                       <div
                         autoFocus={false}
                         className="glamor-5"
-                        id="dropdown-28"
+                        id="dropdown-44"
                       >
                         <PopoverTrigger
                           aria-activedescendant={undefined}
                           aria-haspopup={true}
+                          contentId="popover-45-popoverContent"
                           disabled={undefined}
                           isOpen={false}
                           onClick={[Function]}
                           onKeyDown={[Function]}
                         >
-                          <PopoverTrigger
-                            aria-activedescendant={undefined}
-                            aria-disabled={undefined}
-                            aria-expanded={false}
-                            aria-haspopup={true}
-                            onClick={[Function]}
-                            onKeyDown={[Function]}
-                            role="button"
-                          >
+                          <PopoverTrigger>
                             <Target
-                              aria-activedescendant={undefined}
-                              aria-disabled={undefined}
-                              aria-expanded={false}
-                              aria-haspopup={true}
                               className="glamor-3"
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
                             >
                               <div
-                                aria-activedescendant={undefined}
-                                aria-disabled={undefined}
-                                aria-expanded={false}
-                                aria-haspopup={true}
                                 className="glamor-3"
-                                onClick={[Function]}
-                                onKeyDown={[Function]}
-                                role="button"
                               >
-                                <Button>
+                                <Button
+                                  aria-activedescendant={undefined}
+                                  aria-describedby="popover-45-popoverContent"
+                                  aria-disabled={undefined}
+                                  aria-expanded={false}
+                                  aria-haspopup={true}
+                                  disabled={undefined}
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="button"
+                                >
                                   <glamorous(button)
+                                    aria-activedescendant={undefined}
+                                    aria-describedby="popover-45-popoverContent"
+                                    aria-disabled={undefined}
+                                    aria-expanded={false}
+                                    aria-haspopup={true}
+                                    disabled={undefined}
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="button"
                                     size="medium"
                                     type="button"
                                     variant="regular"
                                   >
                                     <button
+                                      aria-activedescendant={undefined}
+                                      aria-describedby="popover-45-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={false}
+                                      aria-haspopup={true}
                                       className="glamor-2"
+                                      disabled={undefined}
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="button"
                                       type="button"
                                     >
                                       <glamorous(span)>
@@ -1638,12 +1638,6 @@ exports[`Dropdown demo examples data 1`] = `
 exports[`Dropdown demo examples disabled 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -1865,7 +1859,7 @@ exports[`Dropdown demo examples disabled 1`] = `
     <LiveProvider
       code="
     <Dropdown data={data} disabled>
-      <Button disabled>Menu</Button>
+      <Button>Menu</Button>
     </Dropdown>"
       mountStylesheet={false}
       noInline={false}
@@ -1948,7 +1942,6 @@ exports[`Dropdown demo examples disabled 1`] = `
               }
               disabled={true}
               placement="bottom-start"
-              restoreFocus={true}
             >
               <Popover
                 autoFocus={false}
@@ -1975,6 +1968,7 @@ exports[`Dropdown demo examples disabled 1`] = `
                       ]
                     }
                     getItemProps={[Function]}
+                    id="dropdown-54-dropdownContent"
                     modifiers={undefined}
                     placement="bottom-start"
                     wide={undefined}
@@ -1982,22 +1976,20 @@ exports[`Dropdown demo examples disabled 1`] = `
                 }
                 disabled={true}
                 hasArrow={true}
-                id="dropdown-33"
+                id="dropdown-54"
                 isOpen={false}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom"
-                restoreFocus={true}
                 trigger={
                   <PopoverTrigger
                     aria-activedescendant={undefined}
                     aria-haspopup={true}
+                    contentId="dropdown-54-dropdownContent"
                     isOpen={false}
                     onKeyDown={[Function]}
                   >
-                    <Button
-                      disabled={true}
-                    >
+                    <Button>
                       Menu
                     </Button>
                   </PopoverTrigger>
@@ -2007,72 +1999,74 @@ exports[`Dropdown demo examples disabled 1`] = `
               >
                 <Popover
                   autoFocus={false}
-                  id="dropdown-33"
+                  id="dropdown-54"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
-                  restoreFocus={true}
                 >
                   <Manager
                     autoFocus={false}
                     className="glamor-5"
-                    id="dropdown-33"
+                    id="dropdown-54"
                     tag="div"
                   >
                     <div
                       autoFocus={false}
                       className="glamor-5"
-                      id="dropdown-33"
+                      id="dropdown-54"
                     >
                       <PopoverTrigger
                         aria-activedescendant={undefined}
                         aria-haspopup={true}
+                        contentId="popover-55-popoverContent"
                         disabled={true}
                         isOpen={false}
                         onClick={undefined}
                         onKeyDown={[Function]}
                       >
-                        <PopoverTrigger
-                          aria-activedescendant={undefined}
-                          aria-disabled={true}
-                          aria-expanded={false}
-                          aria-haspopup={true}
-                          onClick={undefined}
-                          onKeyDown={[Function]}
-                          role="button"
-                        >
+                        <PopoverTrigger>
                           <Target
-                            aria-activedescendant={undefined}
-                            aria-disabled={true}
-                            aria-expanded={false}
-                            aria-haspopup={true}
                             className="glamor-3"
-                            onClick={undefined}
-                            onKeyDown={[Function]}
-                            role="button"
                           >
                             <div
-                              aria-activedescendant={undefined}
-                              aria-disabled={true}
-                              aria-expanded={false}
-                              aria-haspopup={true}
                               className="glamor-3"
-                              onClick={undefined}
-                              onKeyDown={[Function]}
-                              role="button"
                             >
                               <Button
+                                aria-activedescendant={undefined}
+                                aria-describedby="popover-55-popoverContent"
+                                aria-disabled={true}
+                                aria-expanded={false}
+                                aria-haspopup={true}
                                 disabled={true}
+                                onClick={undefined}
+                                onKeyDown={[Function]}
+                                role="button"
                               >
                                 <glamorous(button)
+                                  aria-activedescendant={undefined}
+                                  aria-describedby="popover-55-popoverContent"
+                                  aria-disabled={true}
+                                  aria-expanded={false}
+                                  aria-haspopup={true}
                                   disabled={true}
+                                  onClick={undefined}
+                                  onKeyDown={[Function]}
+                                  role="button"
                                   size="medium"
                                   type="button"
                                   variant="regular"
                                 >
                                   <button
+                                    aria-activedescendant={undefined}
+                                    aria-describedby="popover-55-popoverContent"
+                                    aria-disabled={true}
+                                    aria-expanded={false}
+                                    aria-haspopup={true}
                                     className="glamor-2"
                                     disabled={true}
+                                    onClick={undefined}
+                                    onKeyDown={[Function]}
+                                    role="button"
                                     type="button"
                                   >
                                     <glamorous(span)>
@@ -2113,12 +2107,6 @@ exports[`Dropdown demo examples disabled 1`] = `
 exports[`Dropdown demo examples on-open-close 1`] = `
 .glamor-5,
 [data-glamor-5] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -2451,7 +2439,6 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom-start"
-                restoreFocus={true}
               >
                 <Popover
                   autoFocus={false}
@@ -2478,22 +2465,23 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                         ]
                       }
                       getItemProps={[Function]}
+                      id="dropdown-52-dropdownContent"
                       modifiers={undefined}
                       placement="bottom-start"
                       wide={undefined}
                     />
                   }
                   hasArrow={true}
-                  id="dropdown-32"
+                  id="dropdown-52"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
-                  restoreFocus={true}
                   trigger={
                     <PopoverTrigger
                       aria-activedescendant={undefined}
                       aria-haspopup={true}
+                      contentId="dropdown-52-dropdownContent"
                       isOpen={false}
                       onKeyDown={[Function]}
                     >
@@ -2507,68 +2495,74 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                 >
                   <Popover
                     autoFocus={false}
-                    id="dropdown-32"
+                    id="dropdown-52"
                     isOpen={false}
                     onClose={[Function]}
                     onOpen={[Function]}
-                    restoreFocus={true}
                   >
                     <Manager
                       autoFocus={false}
                       className="glamor-5"
-                      id="dropdown-32"
+                      id="dropdown-52"
                       tag="div"
                     >
                       <div
                         autoFocus={false}
                         className="glamor-5"
-                        id="dropdown-32"
+                        id="dropdown-52"
                       >
                         <PopoverTrigger
                           aria-activedescendant={undefined}
                           aria-haspopup={true}
+                          contentId="popover-53-popoverContent"
                           disabled={undefined}
                           isOpen={false}
                           onClick={[Function]}
                           onKeyDown={[Function]}
                         >
-                          <PopoverTrigger
-                            aria-activedescendant={undefined}
-                            aria-disabled={undefined}
-                            aria-expanded={false}
-                            aria-haspopup={true}
-                            onClick={[Function]}
-                            onKeyDown={[Function]}
-                            role="button"
-                          >
+                          <PopoverTrigger>
                             <Target
-                              aria-activedescendant={undefined}
-                              aria-disabled={undefined}
-                              aria-expanded={false}
-                              aria-haspopup={true}
                               className="glamor-3"
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                              role="button"
                             >
                               <div
-                                aria-activedescendant={undefined}
-                                aria-disabled={undefined}
-                                aria-expanded={false}
-                                aria-haspopup={true}
                                 className="glamor-3"
-                                onClick={[Function]}
-                                onKeyDown={[Function]}
-                                role="button"
                               >
-                                <Button>
+                                <Button
+                                  aria-activedescendant={undefined}
+                                  aria-describedby="popover-53-popoverContent"
+                                  aria-disabled={undefined}
+                                  aria-expanded={false}
+                                  aria-haspopup={true}
+                                  disabled={undefined}
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="button"
+                                >
                                   <glamorous(button)
+                                    aria-activedescendant={undefined}
+                                    aria-describedby="popover-53-popoverContent"
+                                    aria-disabled={undefined}
+                                    aria-expanded={false}
+                                    aria-haspopup={true}
+                                    disabled={undefined}
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    role="button"
                                     size="medium"
                                     type="button"
                                     variant="regular"
                                   >
                                     <button
+                                      aria-activedescendant={undefined}
+                                      aria-describedby="popover-53-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={false}
+                                      aria-haspopup={true}
                                       className="glamor-2"
+                                      disabled={undefined}
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="button"
                                       type="button"
                                     >
                                       <glamorous(span)>
@@ -2613,12 +2607,6 @@ exports[`Dropdown demo examples placement 1`] = `
   display: inline-block;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
-  display: inline-block;
-}
-
 .glamor-27,
 [data-glamor-27] {
   box-sizing: border-box;
@@ -2633,9 +2621,12 @@ exports[`Dropdown demo examples placement 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
   max-height: 23em;
   overflow-y: auto;
-  padding: 0.5em 0;
+  user-select: none;
   width: 14em;
   z-index: 100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .glamor-27 *,
@@ -2685,6 +2676,46 @@ exports[`Dropdown demo examples placement 1`] = `
   margin-bottom: 0;
 }
 
+.glamor-9,
+[data-glamor-9] {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+.glamor-9:focus,
+[data-glamor-9]:focus,
+.glamor-9[data-simulate-focus],
+[data-glamor-9][data-simulate-focus] {
+  background-color: #ebeff5;
+  outline: 0;
+}
+
+.glamor-9:hover,
+[data-glamor-9]:hover,
+.glamor-9[data-simulate-hover],
+[data-glamor-9][data-simulate-hover] {
+  background-color: #ebeff5;
+}
+
+.glamor-9:active,
+[data-glamor-9]:active,
+.glamor-9[data-simulate-active],
+[data-glamor-9][data-simulate-active] {
+  background-color: #c8d1e0;
+}
+
+.glamor-9 [role="icon"],
+[data-glamor-9] [role="icon"] {
+  box-sizing: content-box;
+  display: block;
+  fill: #1f5dc2;
+  flex: 0 0 auto;
+  padding: 0.25em;
+  -webkit-flex: 0 0 auto;
+}
+
 .glamor-8,
 [data-glamor-8] {
   display: -webkit-box;
@@ -2732,46 +2763,6 @@ exports[`Dropdown demo examples placement 1`] = `
   word-break: break-word;
 }
 
-.glamor-9,
-[data-glamor-9] {
-  color: #333840;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em;
-}
-
-.glamor-9:focus,
-[data-glamor-9]:focus,
-.glamor-9[data-simulate-focus],
-[data-glamor-9][data-simulate-focus] {
-  background-color: #ebeff5;
-  outline: 0;
-}
-
-.glamor-9:hover,
-[data-glamor-9]:hover,
-.glamor-9[data-simulate-hover],
-[data-glamor-9][data-simulate-hover] {
-  background-color: #ebeff5;
-}
-
-.glamor-9:active,
-[data-glamor-9]:active,
-.glamor-9[data-simulate-active],
-[data-glamor-9][data-simulate-active] {
-  background-color: #c8d1e0;
-}
-
-.glamor-9 [role="icon"],
-[data-glamor-9] [role="icon"] {
-  box-sizing: content-box;
-  display: block;
-  fill: #1f5dc2;
-  flex: 0 0 auto;
-  padding: 0.25em;
-  -webkit-flex: 0 0 auto;
-}
-
 .glamor-1,
 [data-glamor-1] {
   align-items: center;
@@ -2798,17 +2789,17 @@ exports[`Dropdown demo examples placement 1`] = `
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
-  color: #afbacc;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 0.75em;
   outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
-  cursor: default;
+  cursor: pointer;
   font-weight: 600;
   height: 3.25em;
   min-width: 3.25em;
@@ -2834,6 +2825,20 @@ exports[`Dropdown demo examples placement 1`] = `
   box-shadow: 0 0 0 1px #164ea8;
 }
 
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
 .glamor-2::-moz-focus-inner,
 [data-glamor-2]::-moz-focus-inner,
 .glamor-2[data-simulate-mozfocusinner],
@@ -2844,7 +2849,7 @@ exports[`Dropdown demo examples placement 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: currentColor;
+  fill: #1f5dc2;
   display: block;
   padding: 0.375em;
 }
@@ -2996,7 +3001,7 @@ exports[`Dropdown demo examples placement 1`] = `
     <LiveProvider
       code="
     <DemoLayout>
-      <Dropdown placement=\\"bottom-start\\" data={data}>
+      <Dropdown placement=\\"bottom-start\\" data={data} isOpen={true}>
         <Button size=\\"jumbo\\" disabled>Menu</Button>
       </Dropdown>
     </DemoLayout>"
@@ -3064,7 +3069,7 @@ exports[`Dropdown demo examples placement 1`] = `
               <div
                 className="glamor-31"
               >
-                <AlwaysOpenDropdown
+                <Dropdown
                   data={
                     Array [
                       Object {
@@ -3085,538 +3090,520 @@ exports[`Dropdown demo examples placement 1`] = `
                       },
                     ]
                   }
+                  isOpen={true}
                   placement="bottom-start"
                 >
-                  <Dropdown
-                    data={
-                      Array [
-                        Object {
-                          "items": Array [
+                  <Popover
+                    autoFocus={false}
+                    content={
+                      <DropdownContent
+                        data={
+                          Array [
                             Object {
-                              "text": "Light years",
+                              "items": Array [
+                                Object {
+                                  "text": "Light years",
+                                },
+                                Object {
+                                  "text": "Star stuff",
+                                },
+                                Object {
+                                  "text": "Encyclopaedia galactica",
+                                },
+                                Object {
+                                  "text": "Cosmic ocean",
+                                },
+                              ],
                             },
-                            Object {
-                              "text": "Star stuff",
-                            },
-                            Object {
-                              "text": "Encyclopaedia galactica",
-                            },
-                            Object {
-                              "text": "Cosmic ocean",
-                            },
-                          ],
-                        },
-                      ]
+                          ]
+                        }
+                        getItemProps={[Function]}
+                        id="dropdown-48-dropdownContent"
+                        modifiers={undefined}
+                        placement="bottom-start"
+                        wide={undefined}
+                      />
                     }
+                    hasArrow={true}
+                    id="dropdown-48"
                     isOpen={true}
-                    placement="bottom-start"
-                    restoreFocus={false}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    placement="bottom"
+                    trigger={
+                      <PopoverTrigger
+                        aria-activedescendant={undefined}
+                        aria-haspopup={true}
+                        contentId="dropdown-48-dropdownContent"
+                        isOpen={true}
+                        onKeyDown={[Function]}
+                      >
+                        <Button
+                          disabled={true}
+                          size="jumbo"
+                        >
+                          Menu
+                        </Button>
+                      </PopoverTrigger>
+                    }
+                    triggerRef={[Function]}
+                    wrapContent={false}
                   >
                     <Popover
                       autoFocus={false}
-                      content={
-                        <DropdownContent
-                          data={
-                            Array [
-                              Object {
-                                "items": Array [
-                                  Object {
-                                    "text": "Light years",
-                                  },
-                                  Object {
-                                    "text": "Star stuff",
-                                  },
-                                  Object {
-                                    "text": "Encyclopaedia galactica",
-                                  },
-                                  Object {
-                                    "text": "Cosmic ocean",
-                                  },
-                                ],
-                              },
-                            ]
-                          }
-                          getItemProps={[Function]}
-                          modifiers={undefined}
-                          placement="bottom-start"
-                          wide={undefined}
-                        />
-                      }
-                      hasArrow={true}
-                      id="dropdown-30"
+                      id="dropdown-48"
                       isOpen={true}
                       onClose={[Function]}
                       onOpen={[Function]}
-                      placement="bottom"
-                      restoreFocus={false}
-                      trigger={
-                        <PopoverTrigger
-                          aria-activedescendant={undefined}
-                          aria-haspopup={true}
-                          isOpen={true}
-                          onKeyDown={[Function]}
-                        >
-                          <Button
-                            disabled={true}
-                            size="jumbo"
-                          >
-                            Menu
-                          </Button>
-                        </PopoverTrigger>
-                      }
-                      triggerRef={[Function]}
-                      wrapContent={false}
                     >
-                      <Popover
+                      <Manager
                         autoFocus={false}
-                        id="dropdown-30"
-                        isOpen={true}
-                        onClose={[Function]}
-                        onOpen={[Function]}
-                        restoreFocus={false}
+                        className="glamor-29"
+                        id="dropdown-48"
+                        tag="div"
                       >
-                        <Manager
+                        <div
                           autoFocus={false}
                           className="glamor-29"
-                          id="dropdown-30"
-                          tag="div"
+                          id="dropdown-48"
                         >
-                          <div
-                            autoFocus={false}
-                            className="glamor-29"
-                            id="dropdown-30"
+                          <PopoverTrigger
+                            aria-activedescendant={undefined}
+                            aria-haspopup={true}
+                            contentId="popover-49-popoverContent"
+                            disabled={undefined}
+                            isOpen={true}
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
                           >
-                            <PopoverTrigger
-                              aria-activedescendant={undefined}
-                              aria-haspopup={true}
-                              disabled={undefined}
-                              isOpen={true}
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                            >
-                              <PopoverTrigger
-                                aria-activedescendant={undefined}
-                                aria-disabled={undefined}
-                                aria-expanded={true}
-                                aria-haspopup={true}
-                                onClick={[Function]}
-                                onKeyDown={[Function]}
-                                role="button"
+                            <PopoverTrigger>
+                              <Target
+                                className="glamor-3"
                               >
-                                <Target
-                                  aria-activedescendant={undefined}
-                                  aria-disabled={undefined}
-                                  aria-expanded={true}
-                                  aria-haspopup={true}
+                                <div
                                   className="glamor-3"
-                                  onClick={[Function]}
-                                  onKeyDown={[Function]}
-                                  role="button"
                                 >
-                                  <div
+                                  <Button
                                     aria-activedescendant={undefined}
+                                    aria-describedby="popover-49-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
                                     aria-haspopup={true}
-                                    className="glamor-3"
+                                    disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
                                     role="button"
+                                    size="jumbo"
                                   >
-                                    <Button
-                                      disabled={true}
+                                    <glamorous(button)
+                                      aria-activedescendant={undefined}
+                                      aria-describedby="popover-49-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={true}
+                                      aria-haspopup={true}
+                                      disabled={undefined}
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="button"
                                       size="jumbo"
+                                      type="button"
+                                      variant="regular"
                                     >
-                                      <glamorous(button)
-                                        disabled={true}
-                                        size="jumbo"
+                                      <button
+                                        aria-activedescendant={undefined}
+                                        aria-describedby="popover-49-popoverContent"
+                                        aria-disabled={undefined}
+                                        aria-expanded={true}
+                                        aria-haspopup={true}
+                                        className="glamor-2"
+                                        disabled={undefined}
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="button"
                                         type="button"
-                                        variant="regular"
                                       >
-                                        <button
-                                          className="glamor-2"
-                                          disabled={true}
-                                          type="button"
-                                        >
-                                          <glamorous(span)>
-                                            <span
-                                              className="glamor-1"
+                                        <glamorous(span)>
+                                          <span
+                                            className="glamor-1"
+                                          >
+                                            <glamorous(span)
+                                              size="jumbo"
                                             >
-                                              <glamorous(span)
-                                                size="jumbo"
+                                              <span
+                                                className="glamor-0"
                                               >
-                                                <span
-                                                  className="glamor-0"
-                                                >
-                                                  Menu
-                                                </span>
-                                              </glamorous(span)>
-                                            </span>
-                                          </glamorous(span)>
-                                        </button>
-                                      </glamorous(button)>
-                                    </Button>
-                                  </div>
-                                </Target>
-                              </PopoverTrigger>
+                                                Menu
+                                              </span>
+                                            </glamorous(span)>
+                                          </span>
+                                        </glamorous(span)>
+                                      </button>
+                                    </glamorous(button)>
+                                  </Button>
+                                </div>
+                              </Target>
                             </PopoverTrigger>
+                          </PopoverTrigger>
+                          <DropdownContent
+                            data={
+                              Array [
+                                Object {
+                                  "items": Array [
+                                    Object {
+                                      "text": "Light years",
+                                    },
+                                    Object {
+                                      "text": "Star stuff",
+                                    },
+                                    Object {
+                                      "text": "Encyclopaedia galactica",
+                                    },
+                                    Object {
+                                      "text": "Cosmic ocean",
+                                    },
+                                  ],
+                                },
+                              ]
+                            }
+                            getItemProps={[Function]}
+                            id="dropdown-48-dropdownContent"
+                            modifiers={undefined}
+                            placement="bottom-start"
+                            wide={undefined}
+                          >
                             <DropdownContent
-                              data={
-                                Array [
-                                  Object {
-                                    "items": Array [
-                                      Object {
-                                        "text": "Light years",
-                                      },
-                                      Object {
-                                        "text": "Star stuff",
-                                      },
-                                      Object {
-                                        "text": "Encyclopaedia galactica",
-                                      },
-                                      Object {
-                                        "text": "Cosmic ocean",
-                                      },
-                                    ],
-                                  },
-                                ]
-                              }
-                              getItemProps={[Function]}
+                              id="dropdown-48-dropdownContent"
                               modifiers={undefined}
                               placement="bottom-start"
                               wide={undefined}
                             >
-                              <DropdownContent
-                                modifiers={undefined}
+                              <Popper
+                                className="glamor-27"
+                                component="div"
+                                eventsEnabled={true}
+                                id="dropdown-48-dropdownContent"
+                                modifiers={Object {}}
                                 placement="bottom-start"
-                                wide={undefined}
                               >
-                                <Popper
+                                <div
                                   className="glamor-27"
-                                  component="div"
-                                  eventsEnabled={true}
-                                  modifiers={Object {}}
-                                  placement="bottom-start"
-                                >
-                                  <div
-                                    className="glamor-27"
-                                    data-placement={undefined}
-                                    data-x-out-of-boundaries={undefined}
-                                    style={
-                                      Object {
-                                        "opacity": 0,
-                                        "pointerEvents": "none",
-                                        "position": "absolute",
-                                      }
+                                  data-placement={undefined}
+                                  data-x-out-of-boundaries={undefined}
+                                  id="dropdown-48-dropdownContent"
+                                  style={
+                                    Object {
+                                      "opacity": 0,
+                                      "pointerEvents": "none",
+                                      "position": "absolute",
                                     }
+                                  }
+                                >
+                                  <Menu
+                                    data={
+                                      Array [
+                                        Object {
+                                          "items": Array [
+                                            Object {
+                                              "text": "Light years",
+                                            },
+                                            Object {
+                                              "text": "Star stuff",
+                                            },
+                                            Object {
+                                              "text": "Encyclopaedia galactica",
+                                            },
+                                            Object {
+                                              "text": "Cosmic ocean",
+                                            },
+                                          ],
+                                        },
+                                      ]
+                                    }
+                                    getItemProps={[Function]}
+                                    role="menu"
                                   >
                                     <Menu
-                                      data={
-                                        Array [
-                                          Object {
-                                            "items": Array [
-                                              Object {
-                                                "text": "Light years",
-                                              },
-                                              Object {
-                                                "text": "Star stuff",
-                                              },
-                                              Object {
-                                                "text": "Encyclopaedia galactica",
-                                              },
-                                              Object {
-                                                "text": "Cosmic ocean",
-                                              },
-                                            ],
-                                          },
-                                        ]
-                                      }
-                                      getItemProps={[Function]}
                                       role="menu"
                                     >
-                                      <Menu
+                                      <div
+                                        className="glamor-26"
                                         role="menu"
                                       >
-                                        <div
-                                          className="glamor-26"
-                                          role="menu"
+                                        <MenuGroup
+                                          key="0"
+                                          title={undefined}
                                         >
-                                          <MenuGroup
-                                            key="0"
-                                            title={undefined}
-                                          >
-                                            <MenuGroup>
-                                              <div
-                                                className="glamor-25"
+                                          <MenuGroup>
+                                            <div
+                                              className="glamor-25"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-48-menuItem-0"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Light years",
+                                                  }
+                                                }
+                                                key="0"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
                                               >
                                                 <MenuItem
-                                                  id="dropdown-30-menuItem-0"
+                                                  disabled={undefined}
+                                                  id="dropdown-48-menuItem-0"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Light years",
                                                     }
                                                   }
-                                                  key="0"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-30-menuItem-0"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Light years",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-48-menuItem-0"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-30-menuItem-0"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Light years
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Light years
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-48-menuItem-1"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Star stuff",
+                                                  }
+                                                }
+                                                key="1"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-30-menuItem-1"
+                                                  disabled={undefined}
+                                                  id="dropdown-48-menuItem-1"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Star stuff",
                                                     }
                                                   }
-                                                  key="1"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-30-menuItem-1"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Star stuff",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-48-menuItem-1"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-30-menuItem-1"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Star stuff
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Star stuff
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-48-menuItem-2"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Encyclopaedia galactica",
+                                                  }
+                                                }
+                                                key="2"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-30-menuItem-2"
+                                                  disabled={undefined}
+                                                  id="dropdown-48-menuItem-2"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Encyclopaedia galactica",
                                                     }
                                                   }
-                                                  key="2"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-30-menuItem-2"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Encyclopaedia galactica",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-48-menuItem-2"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-30-menuItem-2"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Encyclopaedia galactica
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Encyclopaedia galactica
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-48-menuItem-3"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Cosmic ocean",
+                                                  }
+                                                }
+                                                key="3"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-30-menuItem-3"
+                                                  disabled={undefined}
+                                                  id="dropdown-48-menuItem-3"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Cosmic ocean",
                                                     }
                                                   }
-                                                  key="3"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-30-menuItem-3"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Cosmic ocean",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-48-menuItem-3"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-30-menuItem-3"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Cosmic ocean
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Cosmic ocean
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
-                                              </div>
-                                            </MenuGroup>
+                                              </MenuItem>
+                                            </div>
                                           </MenuGroup>
-                                        </div>
-                                      </Menu>
+                                        </MenuGroup>
+                                      </div>
                                     </Menu>
-                                  </div>
-                                </Popper>
-                              </DropdownContent>
+                                  </Menu>
+                                </div>
+                              </Popper>
                             </DropdownContent>
-                          </div>
-                        </Manager>
-                      </Popover>
+                          </DropdownContent>
+                        </div>
+                      </Manager>
                     </Popover>
-                  </Dropdown>
-                </AlwaysOpenDropdown>
+                  </Popover>
+                </Dropdown>
               </div>
             </glamorous(div)>
           </div>
@@ -3630,12 +3617,6 @@ exports[`Dropdown demo examples placement 1`] = `
 exports[`Dropdown demo examples scrolling-container 1`] = `
 .glamor-29,
 [data-glamor-29] {
-  display: inline-block;
-}
-
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -3653,9 +3634,12 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
   max-height: 23em;
   overflow-y: auto;
-  padding: 0.5em 0;
+  user-select: none;
   width: 14em;
   z-index: 100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .glamor-27 *,
@@ -3705,6 +3689,46 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
   margin-bottom: 0;
 }
 
+.glamor-9,
+[data-glamor-9] {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+.glamor-9:focus,
+[data-glamor-9]:focus,
+.glamor-9[data-simulate-focus],
+[data-glamor-9][data-simulate-focus] {
+  background-color: #ebeff5;
+  outline: 0;
+}
+
+.glamor-9:hover,
+[data-glamor-9]:hover,
+.glamor-9[data-simulate-hover],
+[data-glamor-9][data-simulate-hover] {
+  background-color: #ebeff5;
+}
+
+.glamor-9:active,
+[data-glamor-9]:active,
+.glamor-9[data-simulate-active],
+[data-glamor-9][data-simulate-active] {
+  background-color: #c8d1e0;
+}
+
+.glamor-9 [role="icon"],
+[data-glamor-9] [role="icon"] {
+  box-sizing: content-box;
+  display: block;
+  fill: #1f5dc2;
+  flex: 0 0 auto;
+  padding: 0.25em;
+  -webkit-flex: 0 0 auto;
+}
+
 .glamor-8,
 [data-glamor-8] {
   display: -webkit-box;
@@ -3750,46 +3774,6 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
   font-size: 0.75em;
   padding-top: 0.25em;
   word-break: break-word;
-}
-
-.glamor-9,
-[data-glamor-9] {
-  color: #333840;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em;
-}
-
-.glamor-9:focus,
-[data-glamor-9]:focus,
-.glamor-9[data-simulate-focus],
-[data-glamor-9][data-simulate-focus] {
-  background-color: #ebeff5;
-  outline: 0;
-}
-
-.glamor-9:hover,
-[data-glamor-9]:hover,
-.glamor-9[data-simulate-hover],
-[data-glamor-9][data-simulate-hover] {
-  background-color: #ebeff5;
-}
-
-.glamor-9:active,
-[data-glamor-9]:active,
-.glamor-9[data-simulate-active],
-[data-glamor-9][data-simulate-active] {
-  background-color: #c8d1e0;
-}
-
-.glamor-9 [role="icon"],
-[data-glamor-9] [role="icon"] {
-  box-sizing: content-box;
-  display: block;
-  fill: #1f5dc2;
-  flex: 0 0 auto;
-  padding: 0.25em;
-  -webkit-flex: 0 0 auto;
 }
 
 .glamor-2,
@@ -4271,13 +4255,14 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                     ]
                                   }
                                   getItemProps={[Function]}
+                                  id="dropdown-50-dropdownContent"
                                   modifiers={undefined}
                                   placement="bottom-start"
                                   wide={undefined}
                                 />
                               }
                               hasArrow={true}
-                              id="dropdown-31"
+                              id="dropdown-50"
                               isOpen={true}
                               onClose={[Function]}
                               onOpen={[Function]}
@@ -4287,6 +4272,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                 <PopoverTrigger
                                   aria-activedescendant={undefined}
                                   aria-haspopup={true}
+                                  contentId="dropdown-50-dropdownContent"
                                   isOpen={true}
                                   onKeyDown={[Function]}
                                 >
@@ -4300,7 +4286,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                             >
                               <Popover
                                 autoFocus={false}
-                                id="dropdown-31"
+                                id="dropdown-50"
                                 isOpen={true}
                                 onClose={[Function]}
                                 onOpen={[Function]}
@@ -4309,59 +4295,66 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                 <Manager
                                   autoFocus={false}
                                   className="glamor-29"
-                                  id="dropdown-31"
+                                  id="dropdown-50"
                                   tag="div"
                                 >
                                   <div
                                     autoFocus={false}
                                     className="glamor-29"
-                                    id="dropdown-31"
+                                    id="dropdown-50"
                                   >
                                     <PopoverTrigger
                                       aria-activedescendant={undefined}
                                       aria-haspopup={true}
+                                      contentId="popover-51-popoverContent"
                                       disabled={undefined}
                                       isOpen={true}
                                       onClick={[Function]}
                                       onKeyDown={[Function]}
                                     >
-                                      <PopoverTrigger
-                                        aria-activedescendant={undefined}
-                                        aria-disabled={undefined}
-                                        aria-expanded={true}
-                                        aria-haspopup={true}
-                                        onClick={[Function]}
-                                        onKeyDown={[Function]}
-                                        role="button"
-                                      >
+                                      <PopoverTrigger>
                                         <Target
-                                          aria-activedescendant={undefined}
-                                          aria-disabled={undefined}
-                                          aria-expanded={true}
-                                          aria-haspopup={true}
                                           className="glamor-3"
-                                          onClick={[Function]}
-                                          onKeyDown={[Function]}
-                                          role="button"
                                         >
                                           <div
-                                            aria-activedescendant={undefined}
-                                            aria-disabled={undefined}
-                                            aria-expanded={true}
-                                            aria-haspopup={true}
                                             className="glamor-3"
-                                            onClick={[Function]}
-                                            onKeyDown={[Function]}
-                                            role="button"
                                           >
-                                            <Button>
+                                            <Button
+                                              aria-activedescendant={undefined}
+                                              aria-describedby="popover-51-popoverContent"
+                                              aria-disabled={undefined}
+                                              aria-expanded={true}
+                                              aria-haspopup={true}
+                                              disabled={undefined}
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="button"
+                                            >
                                               <glamorous(button)
+                                                aria-activedescendant={undefined}
+                                                aria-describedby="popover-51-popoverContent"
+                                                aria-disabled={undefined}
+                                                aria-expanded={true}
+                                                aria-haspopup={true}
+                                                disabled={undefined}
+                                                onClick={[Function]}
+                                                onKeyDown={[Function]}
+                                                role="button"
                                                 size="medium"
                                                 type="button"
                                                 variant="regular"
                                               >
                                                 <button
+                                                  aria-activedescendant={undefined}
+                                                  aria-describedby="popover-51-popoverContent"
+                                                  aria-disabled={undefined}
+                                                  aria-expanded={true}
+                                                  aria-haspopup={true}
                                                   className="glamor-2"
+                                                  disabled={undefined}
+                                                  onClick={[Function]}
+                                                  onKeyDown={[Function]}
+                                                  role="button"
                                                   type="button"
                                                 >
                                                   <glamorous(span)>
@@ -4408,11 +4401,13 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                         ]
                                       }
                                       getItemProps={[Function]}
+                                      id="dropdown-50-dropdownContent"
                                       modifiers={undefined}
                                       placement="bottom-start"
                                       wide={undefined}
                                     >
                                       <DropdownContent
+                                        id="dropdown-50-dropdownContent"
                                         modifiers={undefined}
                                         placement="bottom-start"
                                         wide={undefined}
@@ -4421,6 +4416,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                           className="glamor-27"
                                           component="div"
                                           eventsEnabled={true}
+                                          id="dropdown-50-dropdownContent"
                                           modifiers={Object {}}
                                           placement="bottom-start"
                                         >
@@ -4428,6 +4424,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                             className="glamor-27"
                                             data-placement={undefined}
                                             data-x-out-of-boundaries={undefined}
+                                            id="dropdown-50-dropdownContent"
                                             style={
                                               Object {
                                                 "opacity": 0,
@@ -4476,7 +4473,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         className="glamor-25"
                                                       >
                                                         <MenuItem
-                                                          id="dropdown-31-menuItem-0"
+                                                          id="dropdown-50-menuItem-0"
                                                           isHighlighted={false}
                                                           item={
                                                             Object {
@@ -4490,7 +4487,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         >
                                                           <MenuItem
                                                             disabled={undefined}
-                                                            id="dropdown-31-menuItem-0"
+                                                            id="dropdown-50-menuItem-0"
                                                             isHighlighted={false}
                                                             item={
                                                               Object {
@@ -4505,7 +4502,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           >
                                                             <div
                                                               className="glamor-9"
-                                                              id="dropdown-31-menuItem-0"
+                                                              id="dropdown-50-menuItem-0"
                                                               onClick={[Function]}
                                                               onKeyDown={[Function]}
                                                               role="menuitem"
@@ -4539,7 +4536,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
-                                                          id="dropdown-31-menuItem-1"
+                                                          id="dropdown-50-menuItem-1"
                                                           isHighlighted={false}
                                                           item={
                                                             Object {
@@ -4553,7 +4550,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         >
                                                           <MenuItem
                                                             disabled={undefined}
-                                                            id="dropdown-31-menuItem-1"
+                                                            id="dropdown-50-menuItem-1"
                                                             isHighlighted={false}
                                                             item={
                                                               Object {
@@ -4568,7 +4565,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           >
                                                             <div
                                                               className="glamor-9"
-                                                              id="dropdown-31-menuItem-1"
+                                                              id="dropdown-50-menuItem-1"
                                                               onClick={[Function]}
                                                               onKeyDown={[Function]}
                                                               role="menuitem"
@@ -4602,7 +4599,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
-                                                          id="dropdown-31-menuItem-2"
+                                                          id="dropdown-50-menuItem-2"
                                                           isHighlighted={false}
                                                           item={
                                                             Object {
@@ -4616,7 +4613,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         >
                                                           <MenuItem
                                                             disabled={undefined}
-                                                            id="dropdown-31-menuItem-2"
+                                                            id="dropdown-50-menuItem-2"
                                                             isHighlighted={false}
                                                             item={
                                                               Object {
@@ -4631,7 +4628,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           >
                                                             <div
                                                               className="glamor-9"
-                                                              id="dropdown-31-menuItem-2"
+                                                              id="dropdown-50-menuItem-2"
                                                               onClick={[Function]}
                                                               onKeyDown={[Function]}
                                                               role="menuitem"
@@ -4665,7 +4662,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
-                                                          id="dropdown-31-menuItem-3"
+                                                          id="dropdown-50-menuItem-3"
                                                           isHighlighted={false}
                                                           item={
                                                             Object {
@@ -4679,7 +4676,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         >
                                                           <MenuItem
                                                             disabled={undefined}
-                                                            id="dropdown-31-menuItem-3"
+                                                            id="dropdown-50-menuItem-3"
                                                             isHighlighted={false}
                                                             item={
                                                               Object {
@@ -4694,7 +4691,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           >
                                                             <div
                                                               className="glamor-9"
-                                                              id="dropdown-31-menuItem-3"
+                                                              id="dropdown-50-menuItem-3"
                                                               onClick={[Function]}
                                                               onKeyDown={[Function]}
                                                               role="menuitem"
@@ -4806,12 +4803,6 @@ exports[`Dropdown demo examples wide 1`] = `
   display: inline-block;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  cursor: pointer;
-  display: inline-block;
-}
-
 .glamor-26,
 [data-glamor-26] {
   box-sizing: border-box;
@@ -4848,6 +4839,46 @@ exports[`Dropdown demo examples wide 1`] = `
 .glamor-25[data-simulate-lastchild],
 [data-glamor-25][data-simulate-lastchild] {
   margin-bottom: 0;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+.glamor-9:focus,
+[data-glamor-9]:focus,
+.glamor-9[data-simulate-focus],
+[data-glamor-9][data-simulate-focus] {
+  background-color: #ebeff5;
+  outline: 0;
+}
+
+.glamor-9:hover,
+[data-glamor-9]:hover,
+.glamor-9[data-simulate-hover],
+[data-glamor-9][data-simulate-hover] {
+  background-color: #ebeff5;
+}
+
+.glamor-9:active,
+[data-glamor-9]:active,
+.glamor-9[data-simulate-active],
+[data-glamor-9][data-simulate-active] {
+  background-color: #c8d1e0;
+}
+
+.glamor-9 [role="icon"],
+[data-glamor-9] [role="icon"] {
+  box-sizing: content-box;
+  display: block;
+  fill: #1f5dc2;
+  flex: 0 0 auto;
+  padding: 0.25em;
+  -webkit-flex: 0 0 auto;
 }
 
 .glamor-8,
@@ -4897,44 +4928,72 @@ exports[`Dropdown demo examples wide 1`] = `
   word-break: break-word;
 }
 
-.glamor-9,
-[data-glamor-9] {
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
   color: #333840;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em;
-}
-
-.glamor-9:focus,
-[data-glamor-9]:focus,
-.glamor-9[data-simulate-focus],
-[data-glamor-9][data-simulate-focus] {
-  background-color: #ebeff5;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 0.75em;
   outline: 0;
-}
-
-.glamor-9:hover,
-[data-glamor-9]:hover,
-.glamor-9[data-simulate-hover],
-[data-glamor-9][data-simulate-hover] {
   background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  height: 2em;
+  min-width: 2em;
+  padding: 0.3125em;
+  vertical-align: middle;
 }
 
-.glamor-9:active,
-[data-glamor-9]:active,
-.glamor-9[data-simulate-active],
-[data-glamor-9][data-simulate-active] {
-  background-color: #c8d1e0;
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
 }
 
-.glamor-9 [role="icon"],
-[data-glamor-9] [role="icon"] {
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #164ea8;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="icon"],
+[data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  display: block;
   fill: #1f5dc2;
-  flex: 0 0 auto;
-  padding: 0.25em;
-  -webkit-flex: 0 0 auto;
+  display: block;
+  padding: 0.125em;
 }
 
 .glamor-1,
@@ -4972,60 +5031,6 @@ exports[`Dropdown demo examples wide 1`] = `
   height: 210px;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #afbacc;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 0.75em;
-  outline: 0;
-  background-color: #dde3ed;
-  border-color: transparent;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
-  vertical-align: middle;
-}
-
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #164ea8;
-}
-
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.glamor-2 [role="icon"],
-[data-glamor-2] [role="icon"] {
-  box-sizing: content-box;
-  fill: currentColor;
-  display: block;
-  padding: 0.125em;
-}
-
 .glamor-27,
 [data-glamor-27] {
   box-sizing: border-box;
@@ -5040,9 +5045,12 @@ exports[`Dropdown demo examples wide 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
   max-height: 23em;
   overflow-y: auto;
-  padding: 0.5em 0;
+  user-select: none;
   width: 21.5em;
   z-index: 100;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .glamor-27 *,
@@ -5188,7 +5196,7 @@ exports[`Dropdown demo examples wide 1`] = `
     <LiveProvider
       code="
     <DemoLayout>
-      <Dropdown wide data={data}>
+      <Dropdown wide data={data} isOpen={true}>
         <Button disabled>Menu</Button>
       </Dropdown>
     </DemoLayout>"
@@ -5256,7 +5264,7 @@ exports[`Dropdown demo examples wide 1`] = `
               <div
                 className="glamor-31"
               >
-                <AlwaysOpenDropdown
+                <Dropdown
                   data={
                     Array [
                       Object {
@@ -5277,537 +5285,519 @@ exports[`Dropdown demo examples wide 1`] = `
                       },
                     ]
                   }
+                  isOpen={true}
+                  placement="bottom-start"
                   wide={true}
                 >
-                  <Dropdown
-                    data={
-                      Array [
-                        Object {
-                          "items": Array [
+                  <Popover
+                    autoFocus={false}
+                    content={
+                      <DropdownContent
+                        data={
+                          Array [
                             Object {
-                              "text": "Light years star stuff",
+                              "items": Array [
+                                Object {
+                                  "text": "Light years star stuff",
+                                },
+                                Object {
+                                  "text": "Harvesting star light citizens of distant epochs",
+                                },
+                                Object {
+                                  "text": "Encyclopaedia galactica vastness is bearable",
+                                },
+                                Object {
+                                  "text": "Shores of the cosmic ocean",
+                                },
+                              ],
                             },
-                            Object {
-                              "text": "Harvesting star light citizens of distant epochs",
-                            },
-                            Object {
-                              "text": "Encyclopaedia galactica vastness is bearable",
-                            },
-                            Object {
-                              "text": "Shores of the cosmic ocean",
-                            },
-                          ],
-                        },
-                      ]
+                          ]
+                        }
+                        getItemProps={[Function]}
+                        id="dropdown-46-dropdownContent"
+                        modifiers={undefined}
+                        placement="bottom-start"
+                        wide={true}
+                      />
                     }
+                    hasArrow={true}
+                    id="dropdown-46"
                     isOpen={true}
-                    placement="bottom-start"
-                    restoreFocus={false}
-                    wide={true}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    placement="bottom"
+                    trigger={
+                      <PopoverTrigger
+                        aria-activedescendant={undefined}
+                        aria-haspopup={true}
+                        contentId="dropdown-46-dropdownContent"
+                        isOpen={true}
+                        onKeyDown={[Function]}
+                      >
+                        <Button
+                          disabled={true}
+                        >
+                          Menu
+                        </Button>
+                      </PopoverTrigger>
+                    }
+                    triggerRef={[Function]}
+                    wrapContent={false}
                   >
                     <Popover
                       autoFocus={false}
-                      content={
-                        <DropdownContent
-                          data={
-                            Array [
-                              Object {
-                                "items": Array [
-                                  Object {
-                                    "text": "Light years star stuff",
-                                  },
-                                  Object {
-                                    "text": "Harvesting star light citizens of distant epochs",
-                                  },
-                                  Object {
-                                    "text": "Encyclopaedia galactica vastness is bearable",
-                                  },
-                                  Object {
-                                    "text": "Shores of the cosmic ocean",
-                                  },
-                                ],
-                              },
-                            ]
-                          }
-                          getItemProps={[Function]}
-                          modifiers={undefined}
-                          placement="bottom-start"
-                          wide={true}
-                        />
-                      }
-                      hasArrow={true}
-                      id="dropdown-29"
+                      id="dropdown-46"
                       isOpen={true}
                       onClose={[Function]}
                       onOpen={[Function]}
-                      placement="bottom"
-                      restoreFocus={false}
-                      trigger={
-                        <PopoverTrigger
-                          aria-activedescendant={undefined}
-                          aria-haspopup={true}
-                          isOpen={true}
-                          onKeyDown={[Function]}
-                        >
-                          <Button
-                            disabled={true}
-                          >
-                            Menu
-                          </Button>
-                        </PopoverTrigger>
-                      }
-                      triggerRef={[Function]}
-                      wrapContent={false}
                     >
-                      <Popover
+                      <Manager
                         autoFocus={false}
-                        id="dropdown-29"
-                        isOpen={true}
-                        onClose={[Function]}
-                        onOpen={[Function]}
-                        restoreFocus={false}
+                        className="glamor-29"
+                        id="dropdown-46"
+                        tag="div"
                       >
-                        <Manager
+                        <div
                           autoFocus={false}
                           className="glamor-29"
-                          id="dropdown-29"
-                          tag="div"
+                          id="dropdown-46"
                         >
-                          <div
-                            autoFocus={false}
-                            className="glamor-29"
-                            id="dropdown-29"
+                          <PopoverTrigger
+                            aria-activedescendant={undefined}
+                            aria-haspopup={true}
+                            contentId="popover-47-popoverContent"
+                            disabled={undefined}
+                            isOpen={true}
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
                           >
-                            <PopoverTrigger
-                              aria-activedescendant={undefined}
-                              aria-haspopup={true}
-                              disabled={undefined}
-                              isOpen={true}
-                              onClick={[Function]}
-                              onKeyDown={[Function]}
-                            >
-                              <PopoverTrigger
-                                aria-activedescendant={undefined}
-                                aria-disabled={undefined}
-                                aria-expanded={true}
-                                aria-haspopup={true}
-                                onClick={[Function]}
-                                onKeyDown={[Function]}
-                                role="button"
+                            <PopoverTrigger>
+                              <Target
+                                className="glamor-3"
                               >
-                                <Target
-                                  aria-activedescendant={undefined}
-                                  aria-disabled={undefined}
-                                  aria-expanded={true}
-                                  aria-haspopup={true}
+                                <div
                                   className="glamor-3"
-                                  onClick={[Function]}
-                                  onKeyDown={[Function]}
-                                  role="button"
                                 >
-                                  <div
+                                  <Button
                                     aria-activedescendant={undefined}
+                                    aria-describedby="popover-47-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
                                     aria-haspopup={true}
-                                    className="glamor-3"
+                                    disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
                                     role="button"
                                   >
-                                    <Button
-                                      disabled={true}
+                                    <glamorous(button)
+                                      aria-activedescendant={undefined}
+                                      aria-describedby="popover-47-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={true}
+                                      aria-haspopup={true}
+                                      disabled={undefined}
+                                      onClick={[Function]}
+                                      onKeyDown={[Function]}
+                                      role="button"
+                                      size="medium"
+                                      type="button"
+                                      variant="regular"
                                     >
-                                      <glamorous(button)
-                                        disabled={true}
-                                        size="medium"
+                                      <button
+                                        aria-activedescendant={undefined}
+                                        aria-describedby="popover-47-popoverContent"
+                                        aria-disabled={undefined}
+                                        aria-expanded={true}
+                                        aria-haspopup={true}
+                                        className="glamor-2"
+                                        disabled={undefined}
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="button"
                                         type="button"
-                                        variant="regular"
                                       >
-                                        <button
-                                          className="glamor-2"
-                                          disabled={true}
-                                          type="button"
-                                        >
-                                          <glamorous(span)>
-                                            <span
-                                              className="glamor-1"
+                                        <glamorous(span)>
+                                          <span
+                                            className="glamor-1"
+                                          >
+                                            <glamorous(span)
+                                              size="medium"
                                             >
-                                              <glamorous(span)
-                                                size="medium"
+                                              <span
+                                                className="glamor-0"
                                               >
-                                                <span
-                                                  className="glamor-0"
-                                                >
-                                                  Menu
-                                                </span>
-                                              </glamorous(span)>
-                                            </span>
-                                          </glamorous(span)>
-                                        </button>
-                                      </glamorous(button)>
-                                    </Button>
-                                  </div>
-                                </Target>
-                              </PopoverTrigger>
+                                                Menu
+                                              </span>
+                                            </glamorous(span)>
+                                          </span>
+                                        </glamorous(span)>
+                                      </button>
+                                    </glamorous(button)>
+                                  </Button>
+                                </div>
+                              </Target>
                             </PopoverTrigger>
+                          </PopoverTrigger>
+                          <DropdownContent
+                            data={
+                              Array [
+                                Object {
+                                  "items": Array [
+                                    Object {
+                                      "text": "Light years star stuff",
+                                    },
+                                    Object {
+                                      "text": "Harvesting star light citizens of distant epochs",
+                                    },
+                                    Object {
+                                      "text": "Encyclopaedia galactica vastness is bearable",
+                                    },
+                                    Object {
+                                      "text": "Shores of the cosmic ocean",
+                                    },
+                                  ],
+                                },
+                              ]
+                            }
+                            getItemProps={[Function]}
+                            id="dropdown-46-dropdownContent"
+                            modifiers={undefined}
+                            placement="bottom-start"
+                            wide={true}
+                          >
                             <DropdownContent
-                              data={
-                                Array [
-                                  Object {
-                                    "items": Array [
-                                      Object {
-                                        "text": "Light years star stuff",
-                                      },
-                                      Object {
-                                        "text": "Harvesting star light citizens of distant epochs",
-                                      },
-                                      Object {
-                                        "text": "Encyclopaedia galactica vastness is bearable",
-                                      },
-                                      Object {
-                                        "text": "Shores of the cosmic ocean",
-                                      },
-                                    ],
-                                  },
-                                ]
-                              }
-                              getItemProps={[Function]}
+                              id="dropdown-46-dropdownContent"
                               modifiers={undefined}
                               placement="bottom-start"
                               wide={true}
                             >
-                              <DropdownContent
-                                modifiers={undefined}
+                              <Popper
+                                className="glamor-27"
+                                component="div"
+                                eventsEnabled={true}
+                                id="dropdown-46-dropdownContent"
+                                modifiers={Object {}}
                                 placement="bottom-start"
-                                wide={true}
                               >
-                                <Popper
+                                <div
                                   className="glamor-27"
-                                  component="div"
-                                  eventsEnabled={true}
-                                  modifiers={Object {}}
-                                  placement="bottom-start"
-                                >
-                                  <div
-                                    className="glamor-27"
-                                    data-placement={undefined}
-                                    data-x-out-of-boundaries={undefined}
-                                    style={
-                                      Object {
-                                        "opacity": 0,
-                                        "pointerEvents": "none",
-                                        "position": "absolute",
-                                      }
+                                  data-placement={undefined}
+                                  data-x-out-of-boundaries={undefined}
+                                  id="dropdown-46-dropdownContent"
+                                  style={
+                                    Object {
+                                      "opacity": 0,
+                                      "pointerEvents": "none",
+                                      "position": "absolute",
                                     }
+                                  }
+                                >
+                                  <Menu
+                                    data={
+                                      Array [
+                                        Object {
+                                          "items": Array [
+                                            Object {
+                                              "text": "Light years star stuff",
+                                            },
+                                            Object {
+                                              "text": "Harvesting star light citizens of distant epochs",
+                                            },
+                                            Object {
+                                              "text": "Encyclopaedia galactica vastness is bearable",
+                                            },
+                                            Object {
+                                              "text": "Shores of the cosmic ocean",
+                                            },
+                                          ],
+                                        },
+                                      ]
+                                    }
+                                    getItemProps={[Function]}
+                                    role="menu"
                                   >
                                     <Menu
-                                      data={
-                                        Array [
-                                          Object {
-                                            "items": Array [
-                                              Object {
-                                                "text": "Light years star stuff",
-                                              },
-                                              Object {
-                                                "text": "Harvesting star light citizens of distant epochs",
-                                              },
-                                              Object {
-                                                "text": "Encyclopaedia galactica vastness is bearable",
-                                              },
-                                              Object {
-                                                "text": "Shores of the cosmic ocean",
-                                              },
-                                            ],
-                                          },
-                                        ]
-                                      }
-                                      getItemProps={[Function]}
                                       role="menu"
                                     >
-                                      <Menu
+                                      <div
+                                        className="glamor-26"
                                         role="menu"
                                       >
-                                        <div
-                                          className="glamor-26"
-                                          role="menu"
+                                        <MenuGroup
+                                          key="0"
+                                          title={undefined}
                                         >
-                                          <MenuGroup
-                                            key="0"
-                                            title={undefined}
-                                          >
-                                            <MenuGroup>
-                                              <div
-                                                className="glamor-25"
+                                          <MenuGroup>
+                                            <div
+                                              className="glamor-25"
+                                            >
+                                              <MenuItem
+                                                id="dropdown-46-menuItem-0"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Light years star stuff",
+                                                  }
+                                                }
+                                                key="0"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
                                               >
                                                 <MenuItem
-                                                  id="dropdown-29-menuItem-0"
+                                                  disabled={undefined}
+                                                  id="dropdown-46-menuItem-0"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Light years star stuff",
                                                     }
                                                   }
-                                                  key="0"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-29-menuItem-0"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Light years star stuff",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-46-menuItem-0"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-29-menuItem-0"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Light years star stuff
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Light years star stuff
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-46-menuItem-1"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Harvesting star light citizens of distant epochs",
+                                                  }
+                                                }
+                                                key="1"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-29-menuItem-1"
+                                                  disabled={undefined}
+                                                  id="dropdown-46-menuItem-1"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Harvesting star light citizens of distant epochs",
                                                     }
                                                   }
-                                                  key="1"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-29-menuItem-1"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Harvesting star light citizens of distant epochs",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-46-menuItem-1"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-29-menuItem-1"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Harvesting star light citizens of distant epochs
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Harvesting star light citizens of distant epochs
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-46-menuItem-2"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Encyclopaedia galactica vastness is bearable",
+                                                  }
+                                                }
+                                                key="2"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-29-menuItem-2"
+                                                  disabled={undefined}
+                                                  id="dropdown-46-menuItem-2"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Encyclopaedia galactica vastness is bearable",
                                                     }
                                                   }
-                                                  key="2"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-29-menuItem-2"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Encyclopaedia galactica vastness is bearable",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-46-menuItem-2"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-29-menuItem-2"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Encyclopaedia galactica vastness is bearable
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Encyclopaedia galactica vastness is bearable
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
+                                              </MenuItem>
+                                              <MenuItem
+                                                id="dropdown-46-menuItem-3"
+                                                isHighlighted={false}
+                                                item={
+                                                  Object {
+                                                    "text": "Shores of the cosmic ocean",
+                                                  }
+                                                }
+                                                key="3"
+                                                onClick={[Function]}
+                                                role="menuitem"
+                                                tabIndex={null}
+                                              >
                                                 <MenuItem
-                                                  id="dropdown-29-menuItem-3"
+                                                  disabled={undefined}
+                                                  id="dropdown-46-menuItem-3"
                                                   isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Shores of the cosmic ocean",
                                                     }
                                                   }
-                                                  key="3"
                                                   onClick={[Function]}
+                                                  onKeyDown={[Function]}
                                                   role="menuitem"
                                                   tabIndex={null}
+                                                  variant="regular"
                                                 >
-                                                  <MenuItem
-                                                    disabled={undefined}
-                                                    id="dropdown-29-menuItem-3"
-                                                    isHighlighted={false}
-                                                    item={
-                                                      Object {
-                                                        "text": "Shores of the cosmic ocean",
-                                                      }
-                                                    }
+                                                  <div
+                                                    className="glamor-9"
+                                                    id="dropdown-46-menuItem-3"
                                                     onClick={[Function]}
                                                     onKeyDown={[Function]}
                                                     role="menuitem"
                                                     tabIndex={null}
-                                                    variant="regular"
                                                   >
-                                                    <div
-                                                      className="glamor-9"
-                                                      id="dropdown-29-menuItem-3"
-                                                      onClick={[Function]}
-                                                      onKeyDown={[Function]}
-                                                      role="menuitem"
-                                                      tabIndex={null}
-                                                    >
-                                                      <glamorous(span)>
-                                                        <span
-                                                          className="glamor-8"
-                                                        >
-                                                          <glamorous(span)>
-                                                            <span
-                                                              className="glamor-7"
-                                                            >
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Shores of the cosmic ocean
-                                                                </span>
-                                                              </glamorous(span)>
-                                                              <glamorous(span)>
-                                                                <span
-                                                                  className="glamor-6"
-                                                                />
-                                                              </glamorous(span)>
-                                                            </span>
-                                                          </glamorous(span)>
-                                                        </span>
-                                                      </glamorous(span)>
-                                                    </div>
-                                                  </MenuItem>
+                                                    <glamorous(span)>
+                                                      <span
+                                                        className="glamor-8"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-7"
+                                                          >
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-5"
+                                                              >
+                                                                Shores of the cosmic ocean
+                                                              </span>
+                                                            </glamorous(span)>
+                                                            <glamorous(span)>
+                                                              <span
+                                                                className="glamor-6"
+                                                              />
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </div>
                                                 </MenuItem>
-                                              </div>
-                                            </MenuGroup>
+                                              </MenuItem>
+                                            </div>
                                           </MenuGroup>
-                                        </div>
-                                      </Menu>
+                                        </MenuGroup>
+                                      </div>
                                     </Menu>
-                                  </div>
-                                </Popper>
-                              </DropdownContent>
+                                  </Menu>
+                                </div>
+                              </Popper>
                             </DropdownContent>
-                          </div>
-                        </Manager>
-                      </Popover>
+                          </DropdownContent>
+                        </div>
+                      </Manager>
                     </Popover>
-                  </Dropdown>
-                </AlwaysOpenDropdown>
+                  </Popover>
+                </Dropdown>
               </div>
             </glamorous(div)>
           </div>
