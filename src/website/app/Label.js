@@ -20,28 +20,29 @@ import { createStyledComponent } from '../../styles';
 
 type Props = {
   children: React$Node,
-  variant?: string
+  variant?: 'regular' | 'success' | 'warning' | 'danger'
 };
 
 const Root = createStyledComponent('span', ({ theme, variant }) => {
   const backgroundColor =
     variant === 'regular'
-      ? theme.color_gray_50
+      ? theme.color_theme_60
       : theme[`backgroundColor_${variant}`];
 
   const color =
-    variant === 'regular' ? theme.color_text : theme[`color_text_on${variant}`];
+    variant === 'regular'
+      ? theme.color_text_onprimary
+      : theme[`color_text_on${variant}`];
 
   return {
     backgroundColor,
     borderRadius: theme.borderRadius_1,
+    bottom: '0.15em', // optical adjustment for middle vertical alignment
     color,
     fontSize: theme.fontSize_mouse,
-    lineHeight: theme.lineHeight_prose,
-    padding: `${parseFloat(theme.space_inset_sm) / 2}em
-      ${theme.space_inset_sm}`,
+    padding: `${theme.space_stack_xs} ${theme.space_inset_sm}`,
+    position: 'relative', // optical adjustment for middle vertical alignment
     textTransform: 'uppercase',
-    verticalAlign: 'middle',
     whiteSpace: 'nowrap'
   };
 });

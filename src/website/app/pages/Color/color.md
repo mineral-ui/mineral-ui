@@ -13,7 +13,7 @@ Take care when overriding individual theme values, since they enable consistent 
 
 ## Themes
 
-A **theme** is composed of a hue color ramp and the base gray ramp. Every theme uses the base gray ramp.  
+A **theme** is composed of a hue color ramp and the base gray ramp. Every theme uses the base gray ramp.
 
 You can create your own theme:
   - `<value>_60` represents the base color for the theme.

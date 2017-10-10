@@ -112,7 +112,7 @@ Mineral UI supports the latest versions of Chrome, Firefox, Safari, Edge, and In
 
 ## Roadmap
 
-Future plans and high priority features and enhancements can be found in the [Roadmap](./ROADMAP.md) file.
+Future plans and high priority features and enhancements can be found on the [Roadmap](https://mineral-ui.com/roadmap).
 
 
 ## License
