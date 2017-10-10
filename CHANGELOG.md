@@ -5,10 +5,6 @@
 ### Features
 
 * **dropdown,popover:** Dropdown and Popover updates ([23b96ff](https://github.com/mineral-ui/mineral-ui/commit/23b96ff))
-* **site:** add Color page ([2e5ff5e](https://github.com/mineral-ui/mineral-ui/commit/2e5ff5e))
-* **site:** Typography page with some demos and tokens ([a2ce02b](https://github.com/mineral-ui/mineral-ui/commit/a2ce02b))
-* **website:** Add a meta description tag to the index page and update the README.md to match ([bb995bd](https://github.com/mineral-ui/mineral-ui/commit/bb995bd))
-
 
 ### BREAKING CHANGES
 
@@ -20,18 +16,10 @@
 # [0.5.0](https://github.com/mineral-ui/mineral-ui/compare/v0.4.0...v0.5.0) (2017-09-29)
 
 
-### Bug Fixes
-
-* **site:** make the propDoc optional in DocProps component ([ed22069](https://github.com/mineral-ui/mineral-ui/commit/ed22069))
-
-
 ### Features
 
 * **dropdown:** Add new component ([5ee58ba](https://github.com/mineral-ui/mineral-ui/commit/5ee58ba))
 * **menu:** Add new component ([7fbd662](https://github.com/mineral-ui/mineral-ui/commit/7fbd662))
-* **site:** add styled typographic elements ([a5fbeb7](https://github.com/mineral-ui/mineral-ui/commit/a5fbeb7))
-* **website:** normalize guidelines pages layout ([1f5e40b](https://github.com/mineral-ui/mineral-ui/commit/1f5e40b))
-
 
 
 <a name="0.4.0"></a>
@@ -81,6 +69,3 @@
 ### Bug Fixes
 
 * **Link:** closes [#317](https://github.com/mineral-ui/mineral-ui/issues/317), closes [#255](https://github.com/mineral-ui/mineral-ui/issues/255) ([825ba31](https://github.com/mineral-ui/mineral-ui/commit/825ba31))
-
-
-
