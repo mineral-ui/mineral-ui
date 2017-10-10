@@ -20,7 +20,6 @@ import { createStyledComponent } from '../../styles';
 const styles = {
   cell: ({ theme }) => ({
     padding: `${theme.space_inset_md} ${theme.space_inset_sm}`,
-    verticalAlign: 'top',
 
     '&:first-child': {
       paddingLeft: 0

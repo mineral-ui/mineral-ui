@@ -23,6 +23,9 @@ import Paragraph from './Paragraph';
 import Link from './Link';
 import MarkdownTable from './MarkdownTable';
 import prism from './utils/prism';
+import _Label from './Label';
+
+const REGEX_LABEL_DELIMITER = /\s*~\s*/;
 
 type Props = {
   children: React$Node,
@@ -53,78 +56,73 @@ type mdLinkProps = {
   children: React$Node
 };
 
-const Root = createStyledComponent('div', ({ theme }) => ({
-  lineHeight: theme.lineHeight_prose,
-
-  '& p': {
-    marginBottom: `${theme.lineHeight * 1.5}em`
-  },
-
-  '& a:link': {
-    color: theme.color_text_primary,
-    textDecoration: 'none'
-  },
-  '& a:hover': {
-    color: theme.color_text_primary_hover,
-    textDecoration: 'underline'
-  },
-  '& a:focus': {
-    color: theme.color_text_primary_focus,
-    outline: `1px solid ${theme.borderColor_focus}`,
-    outlineOffset: '2px'
-  },
-  // `:active` must be last, to follow LVHFA order:
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-  '& a:active': {
-    color: theme.color_text_primary_active
-  },
-
-  '& :not(pre) > code': {
-    backgroundColor: theme.color_gray_20,
-    borderRadius: theme.borderRadius_1,
-    fontFamily: theme.fontFamily_monospace,
-    padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
-    wordBreak: 'break-all'
-  },
-
-  // Specificity silliness due to having to style markdown content off of the
-  // container
-  '& h2,& h3,& h4,& h5,& h6': {
-    '& > a:link': {
-      color: theme.color_caption
-    },
-    '& > a:hover': {
-      color: theme.color_text_primary_hover
-    },
-    '& > a:focus': {
-      color: theme.color_text_primary_focus
-    },
-    // `:active` must be last, to follow LVHFA order:
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-    '& > a:active': {
-      color: theme.color_text_primary_active
+const styles = {
+  codeBlock: ({ theme }) => ({
+    marginBottom: theme.space_stack_xl
+  }),
+  image: {
+    '@media(max-width: 60rem)': {
+      width: '100%'
     }
   },
+  label: ({ theme }) => ({
+    marginLeft: theme.space_inline_sm
+  }),
+  listItem: ({ theme }) => ({
+    marginBottom: theme.space_stack_sm
+  }),
+  root: ({ theme }) => ({
+    lineHeight: theme.lineHeight_prose,
 
-  '& pre': {
-    fontSize: theme.fontSize_ui,
-    // Setting the maxHeight equal to, roughly, 20 lines,
-    // then subtracting a bit to make it clear there's more beyond the scroll
-    maxHeight: getNormalizedValue(
-      `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
-      theme.fontSize_ui
-    ),
-    overflow: 'auto'
-  }
-}));
-const CodeBlock = createStyledComponent('div', ({ theme }) => ({
-  marginBottom: theme.space_stack_xl
-}));
-const Image = createStyledComponent('img', {
-  '@media(max-width: 60rem)': {
-    width: '100%'
-  }
-});
+    '& p': {
+      marginBottom: `${theme.lineHeight * 1.5}em`
+    },
+
+    '& :not(pre) > code': {
+      backgroundColor: theme.color_gray_20,
+      borderRadius: theme.borderRadius_1,
+      fontFamily: theme.fontFamily_monospace,
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
+      wordBreak: 'break-all'
+    },
+
+    // Specificity silliness due to having to style markdown content off of the
+    // container
+    '& h2,& h3,& h4,& h5,& h6': {
+      '& > a:link': {
+        color: theme.color_caption
+      },
+      '& > a:hover': {
+        color: theme.color_text_primary_hover
+      },
+      '& > a:focus': {
+        color: theme.color_text_primary_focus
+      },
+      // `:active` must be last, to follow LVHFA order:
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+      '& > a:active': {
+        color: theme.color_text_primary_active
+      }
+    },
+
+    '& pre': {
+      fontSize: theme.fontSize_ui,
+      // Setting the maxHeight equal to, roughly, 20 lines,
+      // then subtracting a bit to make it clear there's more beyond the scroll
+      maxHeight: getNormalizedValue(
+        `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
+        theme.fontSize_ui
+      ),
+      overflow: 'auto'
+    }
+  })
+};
+
+const CodeBlock = createStyledComponent('div', styles.codeBlock);
+const Image = createStyledComponent('img', styles.image);
+const Label = createStyledComponent(_Label, styles.label);
+const LI = createStyledComponent('li', styles.listItem);
+const Root = createStyledComponent('div', styles.root);
 
 function replaceHeading(level, children, headingProps: mdHeadingProps) {
   // Render the same props and children that were passed in, but prepend a
@@ -134,6 +132,34 @@ function replaceHeading(level, children, headingProps: mdHeadingProps) {
       {children}
     </Heading>
   );
+}
+
+type ListItemProps = {
+  children: Array<any>
+};
+
+function ListItem({ children }: ListItemProps) {
+  const newChildren = children.map(child => {
+    if (child && child.split) {
+      const [preLabelText, labelText] = child.split(REGEX_LABEL_DELIMITER);
+
+      if (!labelText) {
+        return child;
+      }
+
+      const labelVariant = 'done' === labelText ? 'success' : 'regular';
+
+      return [
+        preLabelText,
+        <Label key={1} variant={labelVariant}>
+          {labelText}
+        </Label>
+      ];
+    } else {
+      return child;
+    }
+  });
+  return <LI>{newChildren}</LI>;
 }
 
 /**
@@ -210,8 +236,11 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
       p({ children }) {
         return <Paragraph variant="prose">{children}</Paragraph>;
       },
-      table({ children }) {
-        return <MarkdownTable>{children}</MarkdownTable>;
+      table(props) {
+        return <MarkdownTable {...props} />;
+      },
+      li(props) {
+        return <ListItem {...props} />;
       }
     },
     components: {

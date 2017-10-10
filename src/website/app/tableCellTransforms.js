@@ -30,7 +30,9 @@ const REGEX_LABEL_NEW = /^\s+?~\s+?(new)/;
 const REGEX_LABEL_EXPERIMENTAL = /^\s+?~\s+?(experimental)/;
 
 const styles = {
-  label: ({ theme }) => ({ marginLeft: theme.space_inline_md }),
+  label: ({ theme }) => ({
+    marginLeft: theme.space_inline_sm
+  }),
   icon: {
     '& svg': {
       verticalAlign: 'text-top'
