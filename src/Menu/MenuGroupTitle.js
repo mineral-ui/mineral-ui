@@ -48,10 +48,9 @@ const Root = createStyledComponent(
       theme.MenuGroupTitle_fontSize
     );
 
-    // We need to use MenuItem's total (Root + Content) left/right padding
+    // We need to use MenuItem's padding, to match
     const paddingHorizontal = getNormalizedValue(
-      `${parseFloat(theme.MenuItem_padding) +
-        parseFloat(theme.MenuItemContent_padding)}em`,
+      theme.MenuItem_paddingHorizontal,
       theme.MenuGroupTitle_fontSize
     );
 
