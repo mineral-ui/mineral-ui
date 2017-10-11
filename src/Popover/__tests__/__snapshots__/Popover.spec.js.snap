@@ -12,7 +12,7 @@ exports[`Popover demo examples basic 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -21,9 +21,9 @@ exports[`Popover demo examples basic 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -69,9 +69,23 @@ exports[`Popover demo examples basic 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -100,8 +114,21 @@ exports[`Popover demo examples basic 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 <ThemeProvider>
@@ -159,27 +186,27 @@ exports[`Popover demo examples basic 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -318,7 +345,8 @@ exports[`Popover demo examples basic 1`] = `
                                 onClick={[Function]}
                                 onKeyDown={undefined}
                                 role="button"
-                                size="medium"
+                                size="large"
+                                text="Open Popover"
                                 type="button"
                                 variant="regular"
                               >
@@ -338,7 +366,7 @@ exports[`Popover demo examples basic 1`] = `
                                       className="glamor-1"
                                     >
                                       <glamorous(span)
-                                        size="medium"
+                                        size="large"
                                       >
                                         <span
                                           className="glamor-0"
@@ -379,7 +407,7 @@ exports[`Popover demo examples controlled 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -388,9 +416,9 @@ exports[`Popover demo examples controlled 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -436,9 +464,23 @@ exports[`Popover demo examples controlled 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -467,8 +509,21 @@ exports[`Popover demo examples controlled 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-10,
@@ -541,27 +596,27 @@ exports[`Popover demo examples controlled 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -774,7 +829,8 @@ exports[`Popover demo examples controlled 1`] = `
                                       onClick={[Function]}
                                       onKeyDown={undefined}
                                       role="button"
-                                      size="medium"
+                                      size="large"
+                                      text="Open Popover"
                                       type="button"
                                       variant="regular"
                                     >
@@ -794,7 +850,7 @@ exports[`Popover demo examples controlled 1`] = `
                                             className="glamor-1"
                                           >
                                             <glamorous(span)
-                                              size="medium"
+                                              size="large"
                                             >
                                               <span
                                                 className="glamor-0"
@@ -820,7 +876,8 @@ exports[`Popover demo examples controlled 1`] = `
                   >
                     <glamorous(button)
                       onClick={[Function]}
-                      size="medium"
+                      size="large"
+                      text="Open Popover"
                       type="button"
                       variant="regular"
                     >
@@ -834,7 +891,7 @@ exports[`Popover demo examples controlled 1`] = `
                             className="glamor-1"
                           >
                             <glamorous(span)
-                              size="medium"
+                              size="large"
                             >
                               <span
                                 className="glamor-0"
@@ -890,8 +947,21 @@ exports[`Popover demo examples disabled 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-2,
@@ -900,7 +970,7 @@ exports[`Popover demo examples disabled 1`] = `
   color: #afbacc;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #dde3ed;
   border-color: transparent;
@@ -909,9 +979,9 @@ exports[`Popover demo examples disabled 1`] = `
   border-width: 1px;
   cursor: default;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -945,7 +1015,21 @@ exports[`Popover demo examples disabled 1`] = `
   box-sizing: content-box;
   fill: currentColor;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 <ThemeProvider>
@@ -1003,27 +1087,27 @@ exports[`Popover demo examples disabled 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -1163,7 +1247,8 @@ exports[`Popover demo examples disabled 1`] = `
                                 onClick={undefined}
                                 onKeyDown={undefined}
                                 role="button"
-                                size="medium"
+                                size="large"
+                                text="Open Popover"
                                 type="button"
                                 variant="regular"
                               >
@@ -1183,7 +1268,7 @@ exports[`Popover demo examples disabled 1`] = `
                                       className="glamor-1"
                                     >
                                       <glamorous(span)
-                                        size="medium"
+                                        size="large"
                                       >
                                         <span
                                           className="glamor-0"
@@ -1224,7 +1309,7 @@ exports[`Popover demo examples on-open-close 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -1233,9 +1318,9 @@ exports[`Popover demo examples on-open-close 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -1281,9 +1366,23 @@ exports[`Popover demo examples on-open-close 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -1312,8 +1411,21 @@ exports[`Popover demo examples on-open-close 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 <ThemeProvider>
@@ -1371,27 +1483,27 @@ exports[`Popover demo examples on-open-close 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -1548,7 +1660,8 @@ exports[`Popover demo examples on-open-close 1`] = `
                                   onClick={[Function]}
                                   onKeyDown={undefined}
                                   role="button"
-                                  size="medium"
+                                  size="large"
+                                  text="Menu"
                                   type="button"
                                   variant="regular"
                                 >
@@ -1568,7 +1681,7 @@ exports[`Popover demo examples on-open-close 1`] = `
                                         className="glamor-1"
                                       >
                                         <glamorous(span)
-                                          size="medium"
+                                          size="large"
                                         >
                                           <span
                                             className="glamor-0"
@@ -1657,7 +1770,7 @@ exports[`Popover demo examples overflow 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -1666,9 +1779,9 @@ exports[`Popover demo examples overflow 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -1714,9 +1827,23 @@ exports[`Popover demo examples overflow 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -1745,8 +1872,21 @@ exports[`Popover demo examples overflow 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-5,
@@ -1816,27 +1956,27 @@ exports[`Popover demo examples overflow 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -1989,7 +2129,8 @@ exports[`Popover demo examples overflow 1`] = `
                                     onClick={[Function]}
                                     onKeyDown={undefined}
                                     role="button"
-                                    size="medium"
+                                    size="large"
+                                    text="Open Popover"
                                     type="button"
                                     variant="regular"
                                   >
@@ -2009,7 +2150,7 @@ exports[`Popover demo examples overflow 1`] = `
                                           className="glamor-1"
                                         >
                                           <glamorous(span)
-                                            size="medium"
+                                            size="large"
                                           >
                                             <span
                                               className="glamor-0"
@@ -2118,27 +2259,27 @@ exports[`Popover demo examples overflow 1`] = `
                                         "color_gray_90": "#434a54",
                                         "color_placeholder": "#8e99ab",
                                         "color_text": "#333840",
-                                        "color_text_danger": "#ad0e0e",
-                                        "color_text_danger_active": "#940909",
-                                        "color_text_danger_focus": "#ad0e0e",
-                                        "color_text_danger_hover": "#c71818",
+                                        "color_text_danger": "#db2929",
+                                        "color_text_danger_active": "#c71818",
+                                        "color_text_danger_focus": "#db2929",
+                                        "color_text_danger_hover": "#eb4d4d",
                                         "color_text_disabled": "#afbacc",
                                         "color_text_ondanger": "#fff",
                                         "color_text_onprimary": "#fff",
                                         "color_text_onsuccess": "#fff",
                                         "color_text_onwarning": "#fff",
-                                        "color_text_primary": "#164ea8",
-                                        "color_text_primary_active": "#114091",
-                                        "color_text_primary_focus": "#164ea8",
-                                        "color_text_primary_hover": "#1f5dc2",
+                                        "color_text_primary": "#2e6fd9",
+                                        "color_text_primary_active": "#1f5dc2",
+                                        "color_text_primary_focus": "#2e6fd9",
+                                        "color_text_primary_hover": "#4a89e8",
                                         "color_text_success": "#06783f",
                                         "color_text_success_active": "#046132",
                                         "color_text_success_focus": "#06783f",
                                         "color_text_success_hover": "#0a8f4c",
-                                        "color_text_warning": "#bd3909",
-                                        "color_text_warning_active": "#a83207",
-                                        "color_text_warning_focus": "#bd3909",
-                                        "color_text_warning_hover": "#cf4615",
+                                        "color_text_warning": "#cf4615",
+                                        "color_text_warning_active": "#bd3909",
+                                        "color_text_warning_focus": "#cf4615",
+                                        "color_text_warning_hover": "#e05b2b",
                                         "color_theme_10": "#e6eefc",
                                         "color_theme_100": "#0f397d",
                                         "color_theme_20": "#c2dbfc",
@@ -2369,7 +2510,7 @@ exports[`Popover demo examples placement 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -2380,7 +2521,7 @@ exports[`Popover demo examples placement 1`] = `
   font-weight: 600;
   height: 3.25em;
   min-width: 3.25em;
-  padding: 0.5625em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -2426,9 +2567,23 @@ exports[`Popover demo examples placement 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.375em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-0,
@@ -2440,8 +2595,21 @@ exports[`Popover demo examples placement 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 2.2857142857142856em;
-  padding: 0 0.5714285714285714em;
+  line-height: 3.7142857142857144em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 <ThemeProvider>
@@ -2499,27 +2667,27 @@ exports[`Popover demo examples placement 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -2674,6 +2842,7 @@ exports[`Popover demo examples placement 1`] = `
                                     onKeyDown={undefined}
                                     role="button"
                                     size="jumbo"
+                                    text="Open Popover"
                                     type="button"
                                     variant="regular"
                                   >
@@ -2802,27 +2971,27 @@ exports[`Popover demo examples placement 1`] = `
                                         "color_gray_90": "#434a54",
                                         "color_placeholder": "#8e99ab",
                                         "color_text": "#333840",
-                                        "color_text_danger": "#ad0e0e",
-                                        "color_text_danger_active": "#940909",
-                                        "color_text_danger_focus": "#ad0e0e",
-                                        "color_text_danger_hover": "#c71818",
+                                        "color_text_danger": "#db2929",
+                                        "color_text_danger_active": "#c71818",
+                                        "color_text_danger_focus": "#db2929",
+                                        "color_text_danger_hover": "#eb4d4d",
                                         "color_text_disabled": "#afbacc",
                                         "color_text_ondanger": "#fff",
                                         "color_text_onprimary": "#fff",
                                         "color_text_onsuccess": "#fff",
                                         "color_text_onwarning": "#fff",
-                                        "color_text_primary": "#164ea8",
-                                        "color_text_primary_active": "#114091",
-                                        "color_text_primary_focus": "#164ea8",
-                                        "color_text_primary_hover": "#1f5dc2",
+                                        "color_text_primary": "#2e6fd9",
+                                        "color_text_primary_active": "#1f5dc2",
+                                        "color_text_primary_focus": "#2e6fd9",
+                                        "color_text_primary_hover": "#4a89e8",
                                         "color_text_success": "#06783f",
                                         "color_text_success_active": "#046132",
                                         "color_text_success_focus": "#06783f",
                                         "color_text_success_hover": "#0a8f4c",
-                                        "color_text_warning": "#bd3909",
-                                        "color_text_warning_active": "#a83207",
-                                        "color_text_warning_focus": "#bd3909",
-                                        "color_text_warning_hover": "#cf4615",
+                                        "color_text_warning": "#cf4615",
+                                        "color_text_warning_active": "#bd3909",
+                                        "color_text_warning_focus": "#cf4615",
+                                        "color_text_warning_hover": "#e05b2b",
                                         "color_theme_10": "#e6eefc",
                                         "color_theme_100": "#0f397d",
                                         "color_theme_20": "#c2dbfc",
@@ -3025,7 +3194,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -3034,9 +3203,9 @@ exports[`Popover demo examples scrolling-container 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -3082,9 +3251,23 @@ exports[`Popover demo examples scrolling-container 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -3113,8 +3296,21 @@ exports[`Popover demo examples scrolling-container 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-5,
@@ -3150,10 +3346,10 @@ exports[`Popover demo examples scrolling-container 1`] = `
 .glamor-17,
 [data-glamor-17] {
   box-sizing: border-box;
-  color: #164ea8;
+  color: #2e6fd9;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: transparent;
   border-color: transparent;
@@ -3164,7 +3360,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
   font-weight: 600;
   height: 1.5em;
   min-width: 1.5em;
-  padding: 0.1875em;
+  padding: 0 0.5em;
   vertical-align: middle;
   left: 0;
   position: absolute;
@@ -3214,7 +3410,21 @@ exports[`Popover demo examples scrolling-container 1`] = `
   box-sizing: content-box;
   fill: currentColor;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-17 [role="icon"]:first-child,
+[data-glamor-17] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-17 [role="icon"]:last-child,
+[data-glamor-17] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-17 [role="icon"]:only-child,
+[data-glamor-17] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-15,
@@ -3226,8 +3436,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.75em;
-  line-height: 1.3333333333333333em;
-  padding: 0 0.25em;
+  line-height: 2em;
 }
 
 <ThemeProvider>
@@ -3285,27 +3494,27 @@ exports[`Popover demo examples scrolling-container 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -3478,7 +3687,8 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                               onClick={[Function]}
                                               onKeyDown={undefined}
                                               role="button"
-                                              size="medium"
+                                              size="large"
+                                              text="Open Popover"
                                               type="button"
                                               variant="regular"
                                             >
@@ -3498,7 +3708,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                                     className="glamor-1"
                                                   >
                                                     <glamorous(span)
-                                                      size="medium"
+                                                      size="large"
                                                     >
                                                       <span
                                                         className="glamor-0"
@@ -3607,27 +3817,27 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                                   "color_gray_90": "#434a54",
                                                   "color_placeholder": "#8e99ab",
                                                   "color_text": "#333840",
-                                                  "color_text_danger": "#ad0e0e",
-                                                  "color_text_danger_active": "#940909",
-                                                  "color_text_danger_focus": "#ad0e0e",
-                                                  "color_text_danger_hover": "#c71818",
+                                                  "color_text_danger": "#db2929",
+                                                  "color_text_danger_active": "#c71818",
+                                                  "color_text_danger_focus": "#db2929",
+                                                  "color_text_danger_hover": "#eb4d4d",
                                                   "color_text_disabled": "#afbacc",
                                                   "color_text_ondanger": "#fff",
                                                   "color_text_onprimary": "#fff",
                                                   "color_text_onsuccess": "#fff",
                                                   "color_text_onwarning": "#fff",
-                                                  "color_text_primary": "#164ea8",
-                                                  "color_text_primary_active": "#114091",
-                                                  "color_text_primary_focus": "#164ea8",
-                                                  "color_text_primary_hover": "#1f5dc2",
+                                                  "color_text_primary": "#2e6fd9",
+                                                  "color_text_primary_active": "#1f5dc2",
+                                                  "color_text_primary_focus": "#2e6fd9",
+                                                  "color_text_primary_hover": "#4a89e8",
                                                   "color_text_success": "#06783f",
                                                   "color_text_success_active": "#046132",
                                                   "color_text_success_focus": "#06783f",
                                                   "color_text_success_hover": "#0a8f4c",
-                                                  "color_text_warning": "#bd3909",
-                                                  "color_text_warning_active": "#a83207",
-                                                  "color_text_warning_focus": "#bd3909",
-                                                  "color_text_warning_hover": "#cf4615",
+                                                  "color_text_warning": "#cf4615",
+                                                  "color_text_warning_active": "#bd3909",
+                                                  "color_text_warning_focus": "#cf4615",
+                                                  "color_text_warning_hover": "#e05b2b",
                                                   "color_theme_10": "#e6eefc",
                                                   "color_theme_100": "#0f397d",
                                                   "color_theme_20": "#c2dbfc",
@@ -3781,6 +3991,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                         minimal={true}
                         onClick={[Function]}
                         size="small"
+                        text="Re-center"
                         type="button"
                         variant="regular"
                       >
@@ -3878,7 +4089,7 @@ exports[`Popover demo examples title 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -3887,9 +4098,9 @@ exports[`Popover demo examples title 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
 }
 
@@ -3935,9 +4146,23 @@ exports[`Popover demo examples title 1`] = `
 .glamor-2 [role="icon"],
 [data-glamor-2] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-2 [role="icon"]:first-child,
+[data-glamor-2] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="icon"]:last-child,
+[data-glamor-2] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="icon"]:only-child,
+[data-glamor-2] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-1,
@@ -3966,8 +4191,21 @@ exports[`Popover demo examples title 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-16,
@@ -4059,27 +4297,27 @@ exports[`Popover demo examples title 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -4236,7 +4474,8 @@ exports[`Popover demo examples title 1`] = `
                                     onClick={[Function]}
                                     onKeyDown={undefined}
                                     role="button"
-                                    size="medium"
+                                    size="large"
+                                    text="Open Popover"
                                     type="button"
                                     variant="regular"
                                   >
@@ -4256,7 +4495,7 @@ exports[`Popover demo examples title 1`] = `
                                           className="glamor-1"
                                         >
                                           <glamorous(span)
-                                            size="medium"
+                                            size="large"
                                           >
                                             <span
                                               className="glamor-0"
@@ -4368,27 +4607,27 @@ exports[`Popover demo examples title 1`] = `
                                         "color_gray_90": "#434a54",
                                         "color_placeholder": "#8e99ab",
                                         "color_text": "#333840",
-                                        "color_text_danger": "#ad0e0e",
-                                        "color_text_danger_active": "#940909",
-                                        "color_text_danger_focus": "#ad0e0e",
-                                        "color_text_danger_hover": "#c71818",
+                                        "color_text_danger": "#db2929",
+                                        "color_text_danger_active": "#c71818",
+                                        "color_text_danger_focus": "#db2929",
+                                        "color_text_danger_hover": "#eb4d4d",
                                         "color_text_disabled": "#afbacc",
                                         "color_text_ondanger": "#fff",
                                         "color_text_onprimary": "#fff",
                                         "color_text_onsuccess": "#fff",
                                         "color_text_onwarning": "#fff",
-                                        "color_text_primary": "#164ea8",
-                                        "color_text_primary_active": "#114091",
-                                        "color_text_primary_focus": "#164ea8",
-                                        "color_text_primary_hover": "#1f5dc2",
+                                        "color_text_primary": "#2e6fd9",
+                                        "color_text_primary_active": "#1f5dc2",
+                                        "color_text_primary_focus": "#2e6fd9",
+                                        "color_text_primary_hover": "#4a89e8",
                                         "color_text_success": "#06783f",
                                         "color_text_success_active": "#046132",
                                         "color_text_success_focus": "#06783f",
                                         "color_text_success_hover": "#0a8f4c",
-                                        "color_text_warning": "#bd3909",
-                                        "color_text_warning_active": "#a83207",
-                                        "color_text_warning_focus": "#bd3909",
-                                        "color_text_warning_hover": "#cf4615",
+                                        "color_text_warning": "#cf4615",
+                                        "color_text_warning_active": "#bd3909",
+                                        "color_text_warning_focus": "#cf4615",
+                                        "color_text_warning_hover": "#e05b2b",
                                         "color_theme_10": "#e6eefc",
                                         "color_theme_100": "#0f397d",
                                         "color_theme_20": "#c2dbfc",
@@ -4557,27 +4796,27 @@ exports[`Popover demo examples title 1`] = `
                                         "color_gray_90": "#434a54",
                                         "color_placeholder": "#8e99ab",
                                         "color_text": "#333840",
-                                        "color_text_danger": "#ad0e0e",
-                                        "color_text_danger_active": "#940909",
-                                        "color_text_danger_focus": "#ad0e0e",
-                                        "color_text_danger_hover": "#c71818",
+                                        "color_text_danger": "#db2929",
+                                        "color_text_danger_active": "#c71818",
+                                        "color_text_danger_focus": "#db2929",
+                                        "color_text_danger_hover": "#eb4d4d",
                                         "color_text_disabled": "#afbacc",
                                         "color_text_ondanger": "#fff",
                                         "color_text_onprimary": "#fff",
                                         "color_text_onsuccess": "#fff",
                                         "color_text_onwarning": "#fff",
-                                        "color_text_primary": "#164ea8",
-                                        "color_text_primary_active": "#114091",
-                                        "color_text_primary_focus": "#164ea8",
-                                        "color_text_primary_hover": "#1f5dc2",
+                                        "color_text_primary": "#2e6fd9",
+                                        "color_text_primary_active": "#1f5dc2",
+                                        "color_text_primary_focus": "#2e6fd9",
+                                        "color_text_primary_hover": "#4a89e8",
                                         "color_text_success": "#06783f",
                                         "color_text_success_active": "#046132",
                                         "color_text_success_focus": "#06783f",
                                         "color_text_success_hover": "#0a8f4c",
-                                        "color_text_warning": "#bd3909",
-                                        "color_text_warning_active": "#a83207",
-                                        "color_text_warning_focus": "#bd3909",
-                                        "color_text_warning_hover": "#cf4615",
+                                        "color_text_warning": "#cf4615",
+                                        "color_text_warning_active": "#bd3909",
+                                        "color_text_warning_focus": "#cf4615",
+                                        "color_text_warning_hover": "#e05b2b",
                                         "color_theme_10": "#e6eefc",
                                         "color_theme_100": "#0f397d",
                                         "color_theme_20": "#c2dbfc",
