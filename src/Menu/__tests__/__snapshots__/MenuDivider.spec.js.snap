@@ -38,7 +38,7 @@ exports[`MenuDivider demo examples basic 1`] = `
   color: #333840;
   cursor: pointer;
   font-weight: 400;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 
 .glamor-4:focus,
@@ -67,10 +67,19 @@ exports[`MenuDivider demo examples basic 1`] = `
 [data-glamor-4] [role="icon"] {
   box-sizing: content-box;
   display: block;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   flex: 0 0 auto;
-  padding: 0.25em;
   -webkit-flex: 0 0 auto;
+}
+
+.glamor-4 [role="icon"]:first-child,
+[data-glamor-4] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-4 [role="icon"]:last-child,
+[data-glamor-4] [role="icon"]:last-child {
+  margin-left: 0.5em;
 }
 
 .glamor-3,
@@ -96,7 +105,7 @@ exports[`MenuDivider demo examples basic 1`] = `
   flex-wrap: wrap;
   font-size: 0.875em;
   justify-content: space-between;
-  padding: 0.21428571428571427em 0.42857142857142855em 0.2857142857142857em;
+  padding: 0.21428571428571427em 0 0.2857142857142857em;
   white-space: normal;
   word-break: break-all;
   -webkit-flex: 1 1 auto;
@@ -151,7 +160,7 @@ exports[`MenuDivider demo examples basic 1`] = `
   font-size: 0.75em;
   font-weight: 700;
   margin: 0;
-  padding: 1.3333333333333333em 1.1666666666666667em 0.6666666666666666em;
+  padding: 1.3333333333333333em 1.3333333333333333em 0.6666666666666666em;
 }
 
 <ThemeProvider>
@@ -209,27 +218,27 @@ exports[`MenuDivider demo examples basic 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",

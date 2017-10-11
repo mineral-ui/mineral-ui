@@ -151,27 +151,27 @@ exports[`Card demo examples basic 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -420,7 +420,7 @@ exports[`Card demo examples children 1`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -429,9 +429,9 @@ exports[`Card demo examples children 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
   width: 100%;
 }
@@ -478,9 +478,23 @@ exports[`Card demo examples children 1`] = `
 .glamor-4 [role="icon"],
 [data-glamor-4] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-4 [role="icon"]:first-child,
+[data-glamor-4] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-4 [role="icon"]:last-child,
+[data-glamor-4] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-4 [role="icon"]:only-child,
+[data-glamor-4] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-3,
@@ -509,8 +523,21 @@ exports[`Card demo examples children 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-2:first-child,
+[data-glamor-2]:first-child,
+.glamor-2[data-simulate-firstchild],
+[data-glamor-2][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-2:last-child,
+[data-glamor-2]:last-child,
+.glamor-2[data-simulate-lastchild],
+[data-glamor-2][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 @media (min-width: 40em) {
@@ -582,27 +609,27 @@ exports[`Card demo examples children 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -750,7 +777,8 @@ exports[`Card demo examples children 1`] = `
                           >
                             <glamorous(button)
                               fullWidth={true}
-                              size="medium"
+                              size="large"
+                              text="Button"
                               type="button"
                               variant="regular"
                             >
@@ -763,7 +791,7 @@ exports[`Card demo examples children 1`] = `
                                     className="glamor-3"
                                   >
                                     <glamorous(span)
-                                      size="medium"
+                                      size="large"
                                     >
                                       <span
                                         className="glamor-2"
@@ -855,7 +883,7 @@ exports[`Card demo examples children 2`] = `
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 0.75em;
+  line-height: 1.25;
   outline: 0;
   background-color: #ebeff5;
   border-color: #c8d1e0;
@@ -864,9 +892,9 @@ exports[`Card demo examples children 2`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 2em;
-  min-width: 2em;
-  padding: 0.3125em;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
   vertical-align: middle;
   width: 100%;
 }
@@ -913,9 +941,23 @@ exports[`Card demo examples children 2`] = `
 .glamor-4 [role="icon"],
 [data-glamor-4] [role="icon"] {
   box-sizing: content-box;
-  fill: #1f5dc2;
+  fill: #2e6fd9;
   display: block;
-  padding: 0.125em;
+}
+
+.glamor-4 [role="icon"]:first-child,
+[data-glamor-4] [role="icon"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-4 [role="icon"]:last-child,
+[data-glamor-4] [role="icon"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-4 [role="icon"]:only-child,
+[data-glamor-4] [role="icon"]:only-child {
+  margin: 0;
 }
 
 .glamor-3,
@@ -944,8 +986,21 @@ exports[`Card demo examples children 2`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 1.4285714285714286em;
-  padding: 0 0.2857142857142857em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-2:first-child,
+[data-glamor-2]:first-child,
+.glamor-2[data-simulate-firstchild],
+[data-glamor-2][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-2:last-child,
+[data-glamor-2]:last-child,
+.glamor-2[data-simulate-lastchild],
+[data-glamor-2][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .glamor-5,
@@ -1023,27 +1078,27 @@ exports[`Card demo examples children 2`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -1200,7 +1255,8 @@ exports[`Card demo examples children 2`] = `
                                 >
                                   <glamorous(button)
                                     fullWidth={true}
-                                    size="medium"
+                                    size="large"
+                                    text="Button"
                                     type="button"
                                     variant="regular"
                                   >
@@ -1213,7 +1269,7 @@ exports[`Card demo examples children 2`] = `
                                           className="glamor-3"
                                         >
                                           <glamorous(span)
-                                            size="medium"
+                                            size="large"
                                           >
                                             <span
                                               className="glamor-2"
@@ -1372,27 +1428,27 @@ exports[`Card demo examples clickable 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -1713,27 +1769,27 @@ exports[`Card demo examples complex-title 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -2108,27 +2164,27 @@ exports[`Card demo examples consistent-spacing 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -2430,27 +2486,27 @@ exports[`Card demo examples meta 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -2770,27 +2826,27 @@ exports[`Card demo examples minor-title 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -3153,27 +3209,27 @@ exports[`Card demo examples order 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -3625,27 +3681,27 @@ exports[`Card demo examples subtitle 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
@@ -3965,27 +4021,27 @@ exports[`Card demo examples with-image 1`] = `
         "color_gray_90": "#434a54",
         "color_placeholder": "#8e99ab",
         "color_text": "#333840",
-        "color_text_danger": "#ad0e0e",
-        "color_text_danger_active": "#940909",
-        "color_text_danger_focus": "#ad0e0e",
-        "color_text_danger_hover": "#c71818",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
         "color_text_disabled": "#afbacc",
         "color_text_ondanger": "#fff",
         "color_text_onprimary": "#fff",
         "color_text_onsuccess": "#fff",
         "color_text_onwarning": "#fff",
-        "color_text_primary": "#164ea8",
-        "color_text_primary_active": "#114091",
-        "color_text_primary_focus": "#164ea8",
-        "color_text_primary_hover": "#1f5dc2",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
         "color_text_success": "#06783f",
         "color_text_success_active": "#046132",
         "color_text_success_focus": "#06783f",
         "color_text_success_hover": "#0a8f4c",
-        "color_text_warning": "#bd3909",
-        "color_text_warning_active": "#a83207",
-        "color_text_warning_focus": "#bd3909",
-        "color_text_warning_hover": "#cf4615",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
         "color_theme_10": "#e6eefc",
         "color_theme_100": "#0f397d",
         "color_theme_20": "#c2dbfc",
