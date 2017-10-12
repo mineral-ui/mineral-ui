@@ -45,7 +45,7 @@ export default {
           {/* small */}
           <Button iconStart={icon} circular size="small" aria-label="Cloud" />
           {/* large */}
-          <Button iconStart={icon} circular size="large" aria-label="Cloud" />
+          <Button iconStart={icon} circular size="medium" aria-label="Cloud" />
           {/* jumbo */}
           <Button iconStart={icon} circular size="jumbo" aria-label="Cloud" />
         </DemoLayout>

@@ -240,7 +240,7 @@ const styles = {
         ? theme.ButtonContent_fontSize_small
         : theme.ButtonContent_fontSize;
 
-    if (size === 'large' || size === 'jumbo') {
+    if (size === undefined || size === 'large' || size === 'jumbo') {
       const padding = getNormalizedValue(
         theme.Button_paddingHorizontal,
         fontSize
@@ -294,7 +294,7 @@ export default function Button({
   children,
   iconStart,
   iconEnd,
-  size = 'medium',
+  size = 'large',
   type = 'button',
   variant = 'regular',
   ...restProps

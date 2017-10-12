@@ -50,8 +50,8 @@ export default {
           <Button iconStart={icon} disabled>Disabled</Button>
           <br /><br />
           <Button iconStart={icon} size="small">Small</Button>
-          <Button iconStart={icon}>Medium</Button>
-          <Button iconStart={icon} size="large">Large</Button>
+          <Button iconStart={icon} size="medium">Medium</Button>
+          <Button iconStart={icon}>Large</Button>
           <Button iconStart={icon} size="jumbo">Jumbo</Button>
         </DemoLayout>
       );
