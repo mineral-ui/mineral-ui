@@ -47,7 +47,7 @@ Use icon-only Buttons sparingly. The meaning of the Button can be diluted withou
           {/* small */}
           <Button iconStart={icon} size="small" aria-label="Cloud" />
           {/* large */}
-          <Button iconStart={icon} size="large" aria-label="Cloud" />
+          <Button iconStart={icon} size="medium" aria-label="Cloud" />
           {/* jumbo */}
           <Button iconStart={icon} size="jumbo" aria-label="Cloud" />
         </DemoLayout>

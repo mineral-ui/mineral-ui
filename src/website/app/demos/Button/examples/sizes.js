@@ -37,8 +37,8 @@ For a Button whose width is defined by its container, use \`fullWidth\`.`,
   source: `
     <DemoLayout>
       <Button size="small">Small</Button>
-      <Button>Medium</Button>
-      <Button size="large">Large</Button>
+      <Button size="medium">Medium</Button>
+      <Button>Large</Button>
       <Button size="jumbo">Jumbo</Button>
       <Button fullWidth>Full Width</Button>
     </DemoLayout>`
