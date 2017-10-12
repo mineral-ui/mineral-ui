@@ -1,5 +1,3 @@
-# Typography
-
 Mineral UI provides a simple set of typographic elements to easily apply structure to your interface.
 Using consistent typographic styles will create clear paths for users to move through your application.
 

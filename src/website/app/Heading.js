@@ -17,22 +17,17 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../../styles';
-import Link from './Link';
 
 type Props = {
-  /** displays an anchor link upon hover/focus */
-  anchor?: boolean,
   /** element used when rendering */
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   /** rendered children */
   children: React$Node,
-  /** if an id is provided, an anchor link will display on hover/focus */
-  id?: string,
   /** element will be styled as this level */
   level: 1 | 2 | 3 | 4 | 5 | 6
 };
 
-export const componentTheme = (baseTheme: Object) => ({
+const componentTheme = (baseTheme: Object) => ({
   Heading_color_1: baseTheme.color_text,
   Heading_color_2: baseTheme.color_gray_80,
   Heading_color_3: baseTheme.color_gray_80,
@@ -68,44 +63,22 @@ const headingStyles = ({ level, theme: baseTheme }) => {
     color: theme[`Heading_color_${level}`],
     fontSize: theme[`Heading_fontSize_${level}`],
     fontWeight: theme[`Heading_fontWeight_${level}`],
-    margin: `${theme[`Heading_marginMultiplier_${level}`] *
+    margin: `0 0 ${theme[`Heading_marginMultiplier_${level}`] *
       parseFloat(
         getNormalizedValue(
           theme.space_stack_sm,
           theme[`Heading_fontSize_${level}`]
         )
-      )}em 0`,
-
-    '&:hover,&:focus': {
-      '& > a': {
-        visibility: 'visible'
-      }
-    }
+      )}em`
   };
 };
-const Anchor = createStyledComponent(Link, ({ theme }) => ({
-  color: theme.color_caption,
-  visibility: 'hidden'
-}));
 
-export default function Heading({
-  anchor = true,
-  as,
-  children,
-  id,
-  level,
-  ...restProps
-}: Props) {
+export default function Heading({ as, children, level, ...restProps }: Props) {
   const rootProps = {
-    id,
     level,
     ...restProps
   };
   const useAs = as ? as : `h${level}`;
   const Root = createStyledComponent(useAs, headingStyles);
-  return (
-    <Root {...rootProps}>
-      {children} {anchor && id && <Anchor href={`#${id}`}>#</Anchor>}
-    </Root>
-  );
+  return <Root {...rootProps}>{children}</Root>;
 }

@@ -15,7 +15,9 @@
  */
 
 /* @flow */
+import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent } from '../../styles';
+import siteColors from './siteColors';
 
 const styles = {
   cell: ({ theme }) => ({
@@ -30,8 +32,8 @@ const styles = {
     }
   }),
   headerCell: ({ theme, width }) => ({
-    borderBottom: `3px solid ${theme.color_gray_60}`,
-    color: theme.color_gray_60,
+    borderBottom: `3px solid ${rgba(theme.borderColor, 0.3)}`,
+    color: siteColors.slate,
     fontWeight: theme.fontWeight_bold,
     padding: `0 ${theme.space_inset_sm} ${theme.space_inset_sm}`,
     textAlign: 'left',
@@ -46,7 +48,7 @@ const styles = {
     }
   }),
   row: ({ theme }) => ({
-    borderBottom: `1px solid ${theme.borderColor}`
+    borderBottom: `1px solid ${rgba(theme.borderColor, 0.3)}`
   }),
   table: ({ theme }) => ({
     borderCollapse: 'collapse',

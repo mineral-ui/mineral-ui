@@ -21,14 +21,14 @@ import { createStyledComponent } from '../../../../../../styles';
 import Figure from '../Figure';
 import FigCaption from '../FigCaption';
 import FigContainer from '../FigContainer';
-import Heading from '../../../../Heading';
+import Heading from '../../../../SiteHeading';
 
 const CategoryHeading = createStyledComponent(Heading, ({ theme }) => ({
   borderTop: `1px solid ${theme.borderColor}`,
   paddingTop: theme.space_stack_lg,
   position: 'relative',
   textTransform: 'capitalize'
-}));
+})).withProps({ as: 'h5', level: 4});
 
 /* eslint-disable prettier/prettier */
 {{#components}}
@@ -38,7 +38,7 @@ import {{componentName}} from '../../../../../../Icon/{{componentName}}';
 export default function {{componentName}}() {
   return (
     <div>
-      <CategoryHeading level={4} as="h5" id="category-{{componentCategory}}">
+      <CategoryHeading id="category-{{componentCategory}}">
         {{componentCategory}}
       </CategoryHeading>
       <FigContainer>

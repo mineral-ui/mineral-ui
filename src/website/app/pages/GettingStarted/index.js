@@ -19,19 +19,13 @@ import React from 'react';
 import Callout from '../../Callout';
 import Markdown from '../../Markdown';
 import content from './gettingStarted.md';
-import GuidelinePage from '../../GuidelinePage';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 export default function GettingStarted(props: Props) {
   return (
-    <GuidelinePage {...props}>
-      <Markdown scope={{ Callout }}>{content}</Markdown>
-    </GuidelinePage>
+    <Markdown scope={{ Callout }} {...props}>
+      {content}
+    </Markdown>
   );
 }

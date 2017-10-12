@@ -17,40 +17,69 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../../styles';
-import Link from '../../Link';
+import { createThemedComponent, mineralTheme } from '../../themes';
+import Markdown from './Markdown';
+import Section from './Section';
+import siteColors from './siteColors';
 
 type Props = {};
 
-const Root = createStyledComponent('div', ({ theme }) => ({
-  borderTop: `2px solid ${theme.borderColor}`,
-  color: theme.color_caption,
-  fontSize: theme.fontSize_mouse,
-  marginTop: getNormalizedValue(
-    `${parseFloat(theme.space_stack_sm) * 8}em`,
-    theme.fontSize_mouse
-  ),
-  paddingTop: getNormalizedValue(
-    `${parseFloat(theme.space_stack_sm) * 4}em`,
-    theme.fontSize_mouse
-  ),
+const ThemedSection = createThemedComponent(Section, {
+  color_text: mineralTheme.color_white,
 
-  '@media(min-width: 32em)': {
-    display: 'flex',
+  Heading_color_4: mineralTheme.color_white,
 
-    '& > :last-child': {
-      marginLeft: 'auto'
+  Link_color: siteColors.yellow,
+  Link_color_active: siteColors.yellow_active,
+  Link_color_focus: siteColors.yellow_focus,
+  Link_color_hover: siteColors.yellow_hover
+});
+
+const Root = createStyledComponent(
+  ThemedSection,
+  ({ theme }) => ({
+    backgroundColor: theme.color_black,
+    color: theme.color_gray_40,
+
+    // Inner
+    '& > div': {
+      paddingBottom: 1, // To prevent margin collapse
+      paddingTop: 1, // To prevent margin collapse
+
+      // Markdown
+      '& > div': {
+        '& > p[class]': {
+          fontSize: theme.fontSize_mouse,
+          lineHeight: theme.lineHeight,
+          margin: `${getNormalizedValue(
+            theme.baseline_1,
+            theme.fontSize_mouse
+          )} 0`
+        },
+
+        [theme.bp_home_navExpanded]: {
+          display: 'flex',
+
+          '& > p:last-child': {
+            marginLeft: 'auto'
+          }
+        }
+      }
     }
+  }),
+  {
+    includeStyleReset: true
   }
-}));
+);
 
 export default function Footer(props: Props) {
   return (
-    <Root {...props}>
-      <div>Copyright © 2017 CA</div>
-      <div>
-        We welcome feedback and contributions on {' '}
-        <Link href="https://github.com/mineral-ui/mineral-ui">GitHub</Link>
-      </div>
+    <Root as="footer" {...props}>
+      <Markdown>
+        {`Copyright © 2017 CA Technologies
+
+We welcome feedback and contributions on [GitHub](https://github.com/mineral-ui/mineral-ui)`}
+      </Markdown>
     </Root>
   );
 }

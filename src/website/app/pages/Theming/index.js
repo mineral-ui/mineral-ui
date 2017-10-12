@@ -17,18 +17,12 @@
 /* @flow */
 import React from 'react';
 import { mineralTheme } from '../../../../themes';
-import Button from '../../../../Button';
-import GuidelinePage from '../../GuidelinePage';
+import Button from '../../SiteButton';
 import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';
 import content from './theming.md';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 const REGEX_IS_COLOR = /color|fill/i;
 
@@ -39,13 +33,13 @@ const getValue = (theme, variable) => theme[variable];
 
 export default function Theming(props: Props) {
   return (
-    <GuidelinePage {...props}>
+    <div {...props}>
       <Markdown scope={{ Button }}>{content}</Markdown>
       <VariableTable
         theme={mineralTheme}
         value={getValue}
         valueColor={getColor}
       />
-    </GuidelinePage>
+    </div>
   );
 }

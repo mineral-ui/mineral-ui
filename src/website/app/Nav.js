@@ -15,112 +15,134 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '../../styles';
-import Link from './Link';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../styles';
+import { ThemeProvider } from '../../themes';
+import _Logo from './Logo';
+import Heading from './SiteHeading';
+import _Link from './SiteLink';
+import siteColors from './siteColors';
 import sections from './pages';
 
 type Props = {
-  demos: Object
+  demos: Object,
+  contextualTheme?: Object
 };
 
 const styles = {
-  heading: ({ theme }) => ({
-    margin: '0',
-    fontSize: theme.fontSize_h4
-  }),
-  logo: ({ theme }) => ({
-    alignItems: 'center',
-    borderBottom: `1px solid ${theme.borderColor}`,
-    display: 'flex',
-    height: 50,
-    margin: `0 0 ${theme.space_stack_md}`,
-    paddingBottom: theme.space_stack_md,
-    textDecoration: 'none',
+  heading: {
+    margin: 0
+  },
+  link: ({ theme }) => ({
+    display: 'block',
+    // top & bottom: results of `getNormalizedValue(pxToEm(5), theme.fontSize_ui)`
+    // (6px for bottom), rounded down for baseline alignment
+    padding: '0.35em 0 0.4em',
 
-    '&:hover,&:focus': {
-      textDecoration: 'none'
-    },
-
-    '& > :first-child': {
-      display: 'block',
-      marginRight: 10,
-      borderRadius: 20,
-      width: 40,
-      height: 40,
-      backgroundColor: theme.color_white,
-      color: 'orange',
-      textAlign: 'center',
-      fontSize: '2em'
-    },
-    '& > :last-child': {
-      fontSize: theme.fontSize_h4,
-      fontWeight: theme.fontWeight_bold
+    '&.active': {
+      color: theme.color_text_primary
     }
   }),
   list: {
     listStyle: 'none',
+    margin: `0 0 ${pxToEm(44)}`, // to baseline
     paddingLeft: '0'
   },
-  listItem: ({ isSubcomponent, theme }) => ({
-    paddingLeft: isSubcomponent && theme.space_inline_sm,
+  listItem: ({ theme }) => ({
+    fontSize: theme.fontSize_ui,
 
-    '& + li': {
-      marginTop: theme.space_stack_sm
-    }
+    '& > a': {}
   }),
-  nav: ({ theme }) => ({
-    padding: theme.space_inset_md,
-    backgroundColor: theme.slate_10
-  })
+  // [1] to align first SectionHeading with baseline of third intro line
+  logoHeading: {
+    fontSize: '1em',
+    margin: `0 0 ${pxToEm(9)}`, // [1]
+
+    '& svg': {
+      width: 29, // 36px tall is the important dimension
+
+      '& .band-1': { fill: siteColors.yellow },
+      '& .band-2': { fill: siteColors.orange },
+      '& .band-3': { fill: siteColors.slate }
+    }
+  }
 };
 
-const Root = createStyledComponent('nav', styles.nav);
-const Heading = createStyledComponent('h2', styles.heading);
+const Link = createStyledComponent(_Link, styles.link).withProps({
+  element: NavLink
+});
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
-const Logo = createStyledComponent(Link, styles.logo);
+const SectionHeading = createStyledComponent(
+  Heading,
+  styles.heading
+).withProps({
+  as: 'h2',
+  level: 4
+});
+const LogoHeading = createStyledComponent(
+  Heading,
+  styles.logoHeading
+).withProps({
+  level: 1
+});
 
-export default function Nav({ demos, ...restProps }: Props) {
-  const rootProps = { ...restProps };
+const Logo = () => (
+  <LogoHeading>
+    <Link exact to="/">
+      <_Logo />
+    </Link>
+  </LogoHeading>
+);
 
-  const demoLinks = Object.keys(demos).map(slug => {
-    const demo = demos[slug];
-    return (
-      <ListItem key={slug} isSubcomponent={demo.subcomponent}>
-        <Link to={`/components/${slug}`}>{demo.title}</Link>
-      </ListItem>
-    );
-  });
-
-  const nav = sections.map((section, index) => {
-    return (
-      <div key={index}>
-        <Heading>{section.heading}</Heading>
-        <List>
-          {section.pages.map(page => {
-            return (
-              !page.hiddenInNav && (
-                <ListItem key={page.title}>
-                  <Link to={page.path}>{page.title}</Link>
-                </ListItem>
-              )
-            );
-          })}
-        </List>
-      </div>
-    );
-  });
-
+const pages = sections.map((section, index) => {
   return (
-    <Root {...rootProps}>
-      <Logo to="/">
-        <span>M</span>
-        <h1>Mineral UI</h1>
-      </Logo>
-      {nav}
-      <Heading>Components</Heading>
-      <List>{demoLinks}</List>
-    </Root>
+    <div key={index}>
+      <SectionHeading>{section.heading}</SectionHeading>
+      <List>
+        {section.pages.map(page => {
+          return (
+            !page.hiddenInNav && (
+              <ListItem key={page.title}>
+                <Link to={page.path}>{page.title}</Link>
+              </ListItem>
+            )
+          );
+        })}
+      </List>
+    </div>
   );
+});
+
+export default class Nav extends Component<Props> {
+  render() {
+    const { demos, contextualTheme, ...restProps } = this.props;
+
+    const rootProps = { ...restProps };
+
+    const demoLinks = Object.keys(demos).map(slug => {
+      const demo = demos[slug];
+      return (
+        <ListItem key={slug} isSubcomponent={demo.subcomponent}>
+          <Link to={`/components/${slug}`}>{demo.title}</Link>
+        </ListItem>
+      );
+    });
+
+    return (
+      <ThemeProvider theme={contextualTheme}>
+        <nav {...rootProps}>
+          <Logo />
+          {pages}
+          <SectionHeading>Components</SectionHeading>
+          <List>{demoLinks}</List>
+        </nav>
+      </ThemeProvider>
+    );
+  }
 }
