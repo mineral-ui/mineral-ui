@@ -65,6 +65,7 @@ const styles = {
     padding: 0,
 
     '& > span > span': {
+      lineHeight: theme.lineHeight,
       paddingLeft: theme.direction === 'ltr' ? 0 : null,
       paddingRight: theme.direction === 'rtl' ? 0 : null
     }
@@ -147,7 +148,7 @@ function getFlowType(propDescription: Object): any {
 
   return usePopover ? (
     <Popover content={<PropTypePopoverContent>{raw}</PropTypePopoverContent>}>
-      <PropTypeButton minimal iconEnd={<IconInfo />}>
+      <PropTypeButton iconEnd={<IconInfo />} minimal size="medium">
         {type}
       </PropTypeButton>
     </Popover>
