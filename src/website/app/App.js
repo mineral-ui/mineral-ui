@@ -21,6 +21,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
 import { createStyledComponent, pxToEm } from '../../utils';
 import ComponentDoc from './pages/ComponentDoc';
+import Home from './pages/Home';
 import createKeyMap from './utils/createKeyMap';
 import Footer from './Footer';
 import _Nav from './Nav';
@@ -116,6 +117,7 @@ class App extends Component<Props> {
             path="/:url*"
             render={props => <Redirect to={`${props.location.pathname}/`} />}
           />
+          <Route path="/" exact component={Home} />
           <Route
             render={route => {
               const isChromeless = route.location.search === '?chromeless';
