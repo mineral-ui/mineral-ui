@@ -1,5 +1,3 @@
-# Roadmap
-
 If you want to see the types of work we're doing, what's been completed and what's left to do, you've come to the right place.
 
 ## Current Sprint

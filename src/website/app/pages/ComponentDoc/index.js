@@ -16,23 +16,21 @@
 
 /* @flow */
 import React from 'react';
-import Helmet from 'react-helmet';
-import { createStyledComponent } from '../../../../styles';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../../../styles';
 import { mineralTheme } from '../../../../themes';
-import Heading from '../../Heading';
+import Heading from '../../SiteHeading';
+import Intro from '../../Intro';
 import DocBestPractices from './DocBestPractices';
 import DocExamples from './DocExamples';
-import DocHeader from './DocHeader';
 import DocProps from './DocProps';
+import DocSection from './DocSection';
+import DocSubNav from './DocSubNav';
 import DocThemeVariables from './DocThemeVariables';
 import DocWhenHowToUse from './DocWhenHowToUse';
-
-type BestPractice = {
-  type: string,
-  title: string,
-  example: React$Node,
-  description: string
-};
 
 type Props = {
   bestPractices?: Array<BestPractice>,
@@ -50,38 +48,69 @@ type Props = {
   whenHowToUse?: string
 };
 
+type BestPractice = {
+  type: string,
+  title: string,
+  example: React$Node,
+  description: string
+};
+
 type Theme = (theme: Object) => Object;
 
-const Root = createStyledComponent(
-  'div',
-  ({ theme }) => ({
-    fontFamily: theme.fontFamily_system
-  }),
-  {
-    includeStyleReset: true
+const StyledDocHeading = createStyledComponent(Heading, ({ theme }) => ({
+  marginBottom: 0,
+  paddingTop: getNormalizedValue(pxToEm(62), theme.SiteHeading_fontSize_2),
+
+  [theme.bp_moreSpacious]: {
+    fontSize: theme.SiteHeading_fontSize_2_wide,
+    paddingTop: getNormalizedValue(
+      pxToEm(80),
+      theme.SiteHeading_fontSize_2_wide
+    )
   }
+})).withProps({ level: 2 });
+
+const DocHeading = ({
+  children,
+  id,
+  ...restProps
+}: {
+  children?: React$Node,
+  id?: string
+}) => (
+  <DocSection element="div" {...restProps}>
+    <StyledDocHeading id={id}>{children}</StyledDocHeading>
+  </DocSection>
+);
+
+const DocIntro = ({ children }: { children: string }) => (
+  <DocSection>
+    <Intro>{children}</Intro>
+  </DocSection>
 );
 
 export default function ComponentDoc({
   bestPractices,
-  className,
   doc,
   examples,
   hidePropDoc,
   componentTheme,
-  pageMeta,
   title,
-  whenHowToUse
+  whenHowToUse,
+  ...restProps
 }: Props) {
   const { props: propDoc } = doc;
-  const headerProps = {
+  const subNavProps = {
     bestPractices,
     componentTheme,
     examples,
     props: !!(propDoc || componentTheme),
-    title,
     whenHowToUse
   };
+  const rootProps = {
+    ...restProps
+  };
+  delete rootProps.slug;
   const propProps = { propDoc, title };
   const themeVariablesProps = {
     baseTheme: mineralTheme,
@@ -90,22 +119,21 @@ export default function ComponentDoc({
   };
 
   return (
-    <Root className={className}>
-      <Helmet>
-        <title>{pageMeta.title}</title>
-        <link rel="canonical" href={pageMeta.canonicalLink} />
-      </Helmet>
-      <DocHeader {...headerProps}>{doc.description}</DocHeader>
+    <div {...rootProps}>
+      {doc.description && <DocIntro>{doc.description}</DocIntro>}
+      <DocSubNav {...subNavProps} />
+      {examples && <DocHeading id="examples">Examples</DocHeading>}
       {examples && <DocExamples examples={examples} />}
+      {(!hidePropDoc || componentTheme) && (
+        <DocHeading id="api-and-theme">API & Theme</DocHeading>
+      )}
       {!hidePropDoc && <DocProps {...propProps} />}
       {componentTheme && <DocThemeVariables {...themeVariablesProps} />}
       {(whenHowToUse || bestPractices) && (
-        <Heading level={2} id="usage">
-          Usage
-        </Heading>
+        <DocHeading id="usage">Usage</DocHeading>
       )}
       {whenHowToUse && <DocWhenHowToUse content={whenHowToUse} />}
       {bestPractices && <DocBestPractices practices={bestPractices} />}
-    </Root>
+    </div>
   );
 }

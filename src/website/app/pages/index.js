@@ -26,6 +26,7 @@ import PaletteDemo from './PaletteDemo';
 
 type Page = {
   component: React$ComponentType<*>,
+  id?: string,
   path: string,
   hiddenInNav?: boolean,
   title: string

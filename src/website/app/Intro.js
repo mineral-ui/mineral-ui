@@ -15,18 +15,23 @@
  */
 
 /* @flow */
-import React from 'react';
-import { Link as ReactRouterLink } from 'react-router-dom';
-import _Link from '../../Link';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../styles';
+import Markdown from './Markdown';
 
-type Props = Object;
+export default createStyledComponent(Markdown, ({ theme }) => ({
+  '& > p': {
+    color: theme.color_gray_70,
+    fontSize: pxToEm(20),
+    fontWeight: '300',
+    maxWidth: getNormalizedValue(theme.maxTextWidth, pxToEm(20)),
 
-export default function Link(props: Props) {
-  const rootProps = {
-    ...props
-  };
-  if (props.to) {
-    rootProps.element = ReactRouterLink;
+    [theme.bp_moreSpacious]: {
+      fontSize: pxToEm(24),
+      maxWidth: getNormalizedValue(theme.maxTextWidth, pxToEm(24))
+    }
   }
-  return <_Link {...rootProps} />;
-}
+}));

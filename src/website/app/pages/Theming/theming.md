@@ -1,5 +1,3 @@
-# Theming
-
 Theming is a core concept in Mineral UI.  Themes provide a consistent look and feel across pages with varied functionality.  Mineral UI makes it simple to implement and maintain theming across your app.
 
 <Button primary element="a" href="/palette-demo/">Mineral UI Palette Demo</Button>
@@ -31,7 +29,7 @@ render(<App />, document.getElementById('app'));
 
 ### Theme a portion of your app
 
-ThemeProviders may be nested in order to apply a custom theme to a portion of your app.  Nested ThemeProviders shallowly merge their theme with the parent theme.  The theme itself is a simple shallow object of variables that are shared across components.  [See the default mineralTheme below for an example](#theming-theme-structure).
+ThemeProviders may be nested in order to apply a custom theme to a portion of your app.  Nested ThemeProviders shallowly merge their theme with the parent theme.  The theme itself is a simple shallow object of variables that are shared across components.  [See the default mineralTheme below for an example](#common-scenarios-theme-structure).
 
 ```jsx
 <ThemeProvider>

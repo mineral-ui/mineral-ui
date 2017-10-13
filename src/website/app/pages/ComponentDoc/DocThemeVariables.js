@@ -16,10 +16,9 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import Heading from '../../Heading';
 import Markdown from '../../Markdown';
-import Section from '../../Section';
+import Section from './DocSection';
+import DocSectionTitle from './DocSectionTitle';
 import VariableTable from '../../VariableTable';
 
 type Props = {
@@ -29,10 +28,6 @@ type Props = {
 };
 
 type Theme = (theme: Object) => Object;
-
-const Title = createStyledComponent(Heading, ({ theme }) => ({
-  margin: `${parseFloat(theme.space_stack_sm) * 8}em 0 ${theme.space_stack_xl}`
-}));
 
 const createKeyMirror = (obj: Object) => {
   let mirror = {};
@@ -82,9 +77,9 @@ export default function DocThemeVariables({
 
   return (
     <Section>
-      <Title level={3} id="theme-variables">
+      <DocSectionTitle id="theme-variables">
         {`${title} Theme Variables`}
-      </Title>
+      </DocSectionTitle>
       <Markdown>
         {`These variables can be used as hooks to override this component's
           style at either a [local](/theming/#theming-common-scenarios-theme-a-component)

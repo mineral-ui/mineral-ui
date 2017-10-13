@@ -16,44 +16,59 @@
 
 /* @flow */
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import startCase from 'lodash.startcase';
-import IconArrowBack from '../../Icon/IconArrowBack';
-import ComponentDoc from './pages/ComponentDoc';
 import ComponentDocExample from './ComponentDocExample';
-import Link from './Link';
-import LiveProvider from './LiveProvider';
+import Home from './pages/Home';
+import Page from './Page';
 import sections from './pages';
+import ComponentDoc from './pages/ComponentDoc';
 
 type Props = {
   demos: Object
 };
 
+const getPageHeader = (heading: string, title: string) => {
+  return `${heading}
+
+# ${title}`;
+};
+
 export default function Router({ demos }: Props) {
   const routes = sections
-    .map(section => section.pages)
-    // flatten array of pages arrays
-    .reduce((acc, pages) => {
-      return [...acc, ...pages];
-    }, [])
-    .map((page, index) => {
-      return (
+    .map((section, sectionIndex) => {
+      return section.pages.map((page, pageIndex) => (
         <Route
-          key={`page-${index}`}
+          key={`page-${sectionIndex}-${pageIndex}`}
           path={page.path}
           render={() => {
             const pageMeta = {
               title: `${page.title} | Mineral UI`,
               canonicalLink: `https://mineral-ui.com${page.path}`
             };
-            return <page.component pageMeta={pageMeta} />;
+            const pageProps = {
+              headerContent: getPageHeader(section.heading, page.title),
+              demos,
+              pageMeta,
+              type: sectionIndex
+            };
+            return (
+              <Page {...pageProps}>
+                <page.component />
+              </Page>
+            );
           }}
         />
-      );
-    });
+      ));
+    })
+    // Flatten array of routes arrays
+    .reduce((acc, routes) => {
+      return [...acc, ...routes];
+    }, []);
 
   return (
     <Switch>
+      <Route path="/" exact component={Home} />
       {routes}
       <Route
         path="/components/:componentId/:exampleId"
@@ -70,23 +85,23 @@ export default function Router({ demos }: Props) {
             )} | Mineral UI`,
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}/${selectedExample.id}`
           };
+          const pageProps = {
+            chromeless,
+            demos,
+            pageMeta
+          };
+          const exampleProps = {
+            chromeless,
+            componentName: selectedDemo.title,
+            demos,
+            standalone: true,
+            ...selectedExample
+          };
 
-          return chromeless ? (
-            <LiveProvider
-              hideSource
-              chromeless
-              pageMeta={pageMeta}
-              scope={selectedExample.scope}
-              source={selectedExample.source}
-            />
-          ) : (
-            <div>
-              <Link to="../">
-                <IconArrowBack color="currentColor" size="small" />{' '}
-                {selectedDemo.title}
-              </Link>
-              <ComponentDocExample pageMeta={pageMeta} {...selectedExample} />
-            </div>
+          return (
+            <Page {...pageProps}>
+              <ComponentDocExample {...exampleProps} />
+            </Page>
           );
         }}
       />
@@ -99,10 +114,18 @@ export default function Router({ demos }: Props) {
             title: `${selectedDemo.title} | Mineral UI`,
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`
           };
-          return <ComponentDoc {...selectedDemo} pageMeta={pageMeta} />;
+          const pageProps = {
+            demos,
+            headerContent: getPageHeader('Components', selectedDemo.title),
+            pageMeta
+          };
+          return (
+            <Page {...pageProps}>
+              <ComponentDoc {...selectedDemo} />
+            </Page>
+          );
         }}
       />
-      <Redirect from="/" to="/getting-started" />
     </Switch>
   );
 }

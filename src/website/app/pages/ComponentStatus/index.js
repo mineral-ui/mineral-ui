@@ -17,19 +17,13 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
-import GuidelinePage from '../../GuidelinePage';
 import Markdown from '../../Markdown';
 import Legend from './Legend';
 import content from './componentStatus.md';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
-const Layout = createStyledComponent(GuidelinePage, ({ theme }) => ({
+const Layout = createStyledComponent('div', ({ theme }) => ({
   '& table': {
     maxWidth: '40em'
   },
