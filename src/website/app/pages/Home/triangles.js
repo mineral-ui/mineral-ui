@@ -1049,6 +1049,7 @@ FSS.SVGRenderer.prototype.render = function(scene) {
         points += this.formatPoint(triangle.b) + ' ';
         points += this.formatPoint(triangle.c);
         style = this.formatStyle(triangle.color.format());
+        triangle.polygon.setAttributeNS(null, 'id', `triangle-${t}`);
         triangle.polygon.setAttributeNS(null, 'points', points);
         triangle.polygon.setAttributeNS(null, 'style', style);
       }
@@ -1080,7 +1081,7 @@ export default function triangles(xPos = 250) {
     width: 1.5, // 1.2
     height: 1.5, // 1.2
     slices: 50, // 250
-    ambient: '#555555',
+    ambient: '#59728c',
     diffuse: '#FFFFFF'
   };
 
@@ -1185,14 +1186,30 @@ export default function triangles(xPos = 250) {
     window.addEventListener('resize', onWindowResize);
   }
 
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+
   //------------------------------
   // Callbacks
   //------------------------------
 
-  function onWindowResize() {
+  var onWindowResize = debounce(function() {
     resize(container.offsetWidth, container.offsetHeight);
     render();
-  }
+  }, 25);
 
   // Let there be light!
   initialise();

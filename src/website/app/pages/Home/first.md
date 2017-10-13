@@ -6,3 +6,8 @@ design guidelines that are visually appealing, consistent, and easy to use.
 Using drop-in React components and rich design libraries will enable teams to
 build, launch, and maintain high-quality products with greater speed and
 efficiency.
+
+<CTALink to="/color">
+  Discover how our guidelines can help your next project
+  <IconChevronRight size="large" />
+</CTALink>

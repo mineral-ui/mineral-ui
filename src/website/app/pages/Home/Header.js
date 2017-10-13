@@ -19,26 +19,58 @@ import React from 'react';
 import { createStyledComponent } from '../../../../utils';
 import Heading from '../../Heading';
 import _Link from '../../Link';
+import Logo from '../../Logo';
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
-  // minHeight: '10em',
-  padding: `${parseFloat(theme.space_inset_sm) * 8}em`,
-  justifyContent: 'space-between'
+  flexDirection: 'column',
+  padding: `${parseFloat(theme.space_inset_sm) * 8}em ${parseFloat(
+    theme.space_inset_sm
+  ) * 2}em`,
+
+  '@media(min-width: 46em)': {
+    alignItems: 'center',
+    flexDirection: 'row',
+    // Matches that of index's Main
+    padding: `${parseFloat(theme.space_inset_sm) * 8}em ${parseFloat(
+      theme.space_inset_sm
+    ) * 16}em`,
+    justifyContent: 'space-between'
+  }
 }));
 
 const Link = createStyledComponent(_Link, {
   textTransform: 'uppercase'
 });
 
-const Logotype = createStyledComponent(Heading, {
-  margin: 0
-});
+const Logotype = createStyledComponent(Heading, ({ theme }) => ({
+  alignItems: 'center',
+  display: 'flex',
+  fontWeight: theme.fontWeight_semiBold,
+  margin: `0 0 ${theme.space_stack_lg} 0`,
+
+  '@media(min-width: 46em)': {
+    margin: `0 0 0 -${parseFloat(theme.space_inline_sm) + 1}em`
+  },
+
+  '& > svg': {
+    marginRight: theme.space_inline_sm,
+    width: '1em',
+
+    '& [class*="shape"]': {
+      fill: theme.color_white
+    }
+  }
+}));
 
 const Nav = createStyledComponent('nav', ({ theme }) => ({
   '& > a + a': {
-    marginLeft: theme.space_inline_lg
+    marginLeft: theme.space_inline_md,
+
+    '@media(min-width: 46em)': {
+      marginLeft: theme.space_inline_lg
+    }
   }
 }));
 
@@ -46,7 +78,7 @@ export default function Header() {
   return (
     <Root>
       <Logotype level={1} ariaLabel="Mineral UI">
-        MNRL
+        <Logo /> MNRL
       </Logotype>
       <Nav>
         <Link to="/color">Guidelines</Link>

@@ -1,4 +1,4 @@
-## The Internet Won’t Build Itself
+## Build Modern Products Faster
 
 Mineral UI is an open-source design system created to simplify building
 appealing, modern software experiences. It is the culmination of designers and
