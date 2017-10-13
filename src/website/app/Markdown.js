@@ -28,6 +28,7 @@ import _Label from './Label';
 const REGEX_LABEL_DELIMITER = /\s*~\s*/;
 
 type Props = {
+  anchors?: boolean,
   children: React$Node,
   scope?: {
     [string]: React$ComponentType<*>
@@ -124,11 +125,16 @@ const Label = createStyledComponent(_Label, styles.label);
 const LI = createStyledComponent('li', styles.listItem);
 const Root = createStyledComponent('div', styles.root);
 
-function replaceHeading(level, children, headingProps: mdHeadingProps) {
+function replaceHeading(
+  level,
+  children,
+  headingProps: mdHeadingProps,
+  anchors
+) {
   // Render the same props and children that were passed in, but prepend a
   // link to this title with the text '#'.
   return (
-    <Heading level={level} id={headingProps.id}>
+    <Heading anchor={anchors} level={level} id={headingProps.id}>
       {children}
     </Heading>
   );
@@ -189,7 +195,12 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-export default function Markdown({ children, scope, ...restProps }: Props) {
+export default function Markdown({
+  anchors = true,
+  children,
+  scope,
+  ...restProps
+}: Props) {
   const rootProps = { ...restProps };
 
   const compile = marksy({
@@ -216,22 +227,22 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
         return <Image src={src} alt={alt} />;
       },
       h1({ children }) {
-        return replaceHeading(1, children, {});
+        return replaceHeading(1, children, {}, anchors);
       },
       h2({ id, children }) {
-        return replaceHeading(2, children, { id });
+        return replaceHeading(2, children, { id }, anchors);
       },
       h3({ id, children }) {
-        return replaceHeading(3, children, { id });
+        return replaceHeading(3, children, { id }, anchors);
       },
       h4({ id, children }) {
-        return replaceHeading(4, children, { id });
+        return replaceHeading(4, children, { id }, anchors);
       },
       h5({ id, children }) {
-        return replaceHeading(5, children, { id });
+        return replaceHeading(5, children, { id }, anchors);
       },
       h6({ id, children }) {
-        return replaceHeading(6, children, { id });
+        return replaceHeading(6, children, { id }, anchors);
       },
       p({ children }) {
         return <Paragraph variant="prose">{children}</Paragraph>;

@@ -20,6 +20,8 @@ import { createStyledComponent, getNormalizedValue } from '../../styles';
 import Link from './Link';
 
 type Props = {
+  /** displays an anchor link upon hover/focus */
+  anchor?: boolean,
   /** element used when rendering */
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
   /** rendered children */
@@ -87,6 +89,7 @@ const Anchor = createStyledComponent(Link, ({ theme }) => ({
 }));
 
 export default function Heading({
+  anchor = true,
   as,
   children,
   id,
@@ -102,7 +105,7 @@ export default function Heading({
   const Root = createStyledComponent(useAs, headingStyles);
   return (
     <Root {...rootProps}>
-      {children} {id && <Anchor href={`#${id}`}>#</Anchor>}
+      {children} {anchor && id && <Anchor href={`#${id}`}>#</Anchor>}
     </Root>
   );
 }
