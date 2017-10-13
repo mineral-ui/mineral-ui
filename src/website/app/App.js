@@ -20,12 +20,13 @@ import { withRouter } from 'react-router';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
 import { createStyledComponent, pxToEm } from '../../utils';
-import ComponentDoc from './pages/ComponentDoc';
-import Home from './pages/Home';
-import createKeyMap from './utils/createKeyMap';
+import BaselineGrid from './BaselineGrid';
 import Footer from './Footer';
 import _Nav from './Nav';
 import Router from './Router';
+import createKeyMap from './utils/createKeyMap';
+import ComponentDoc from './pages/ComponentDoc';
+import Home from './pages/Home';
 
 declare var GOOGLE_TRACKING_ID: string;
 
@@ -135,6 +136,7 @@ class App extends Component<Props> {
             }}
           />
         </Switch>
+        <BaselineGrid />
       </div>
     );
   }
