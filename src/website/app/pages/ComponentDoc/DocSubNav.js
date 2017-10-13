@@ -16,66 +16,56 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import Heading from '../../Heading';
-import Link from '../../Link';
-import Markdown from '../../Markdown';
+import { createStyledComponent, pxToEm } from '../../../../styles';
+import Link from '../../SiteLink';
+import Section from './DocSection';
 
 type Props = {
   bestPractices?: Array<Object>,
-  children?: string,
-  className?: string,
   examples?: Array<any>,
   props?: boolean,
-  title: string,
   whenHowToUse?: string
 };
 
 const styles = {
-  header: ({ theme }) => ({
-    marginBottom: theme.space_stack_xl,
-    paddingTop: theme.space_stack_md
-  }),
-  lede: ({ theme }) => ({
-    fontSize: theme.fontSize_h3,
-    lineHeight: theme.lineHeight_prose,
-    margin: '0',
-    '& p': {
-      marginBottom: theme.space_stack_md
-    }
-  }),
   navElement: ({ theme }) => ({
     display: 'inline-block',
+    fontFamily: theme.fontFamily_headline,
     marginRight: theme.space_inline_lg,
-    marginBottom: theme.space_stack_sm,
-    borderBottom: '3px solid transparent',
-    cursor: 'pointer'
+
+    [theme.bp_moreSpacious]: {
+      fontSize: pxToEm(22)
+    }
   }),
   subnav: ({ theme }) => ({
-    borderBottom: `1px solid ${theme.borderColor}`,
-    marginTop: theme.space_stack_md,
-    marginBottom: 0
-  }),
-  title: ({ theme }) => ({
-    marginRight: 'auto',
-    paddingRight: theme.space_inline_sm
+    marginTop: pxToEm(89), // to baseline
+    position: 'sticky',
+    top: -1,
+    zIndex: theme.zIndex_800,
+
+    [theme.bp_moreSpacious]: {
+      marginTop: pxToEm(108) // to baseline
+    },
+
+    '& > div': {
+      backgroundColor: theme.color_white,
+      borderBottom: `2px solid ${theme.borderColor}`,
+      padding: `${pxToEm(6)} 0`
+    }
   })
 };
 
-const Root = createStyledComponent('header', styles.header);
-const Lede = createStyledComponent(Markdown, styles.lede);
+const Root = createStyledComponent(Section, styles.subnav).withProps({
+  element: 'nav'
+});
 const NavElement = createStyledComponent(Link, styles.navElement);
-const SubNav = createStyledComponent('nav', styles.subnav);
-const Title = createStyledComponent(Heading, styles.title);
 
-export default function DocHeader({
+export default function DocSubNav({
   bestPractices,
-  children,
-  className,
   examples,
   props,
-  title,
-  whenHowToUse
+  whenHowToUse,
+  ...restProps
 }: Props) {
   // there is no Examples h2, so we just link to the first example.
   let firstExampleId = 'examples';
@@ -108,11 +98,5 @@ export default function DocHeader({
     );
   }
 
-  return (
-    <Root className={className}>
-      <Title level={1}>{title}</Title>
-      <Lede>{children}</Lede>
-      {navElements.length > 1 && <SubNav>{navElements}</SubNav>}
-    </Root>
-  );
+  return navElements.length > 1 && <Root {...restProps}>{navElements}</Root>;
 }

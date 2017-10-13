@@ -16,6 +16,8 @@
 
 /* @flow */
 import React from 'react';
+import darken from 'polished/lib/color/darken';
+import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent } from '../../styles';
 
 type Props = {
@@ -29,13 +31,39 @@ const Root = createStyledComponent('div', ({ theme, variant }) => ({
   backgroundColor:
     variant === 'danger'
       ? theme.backgroundColor_input_danger
-      : theme.color_theme_10,
-  borderRadius: theme.borderRadius_1,
-  padding: theme.space_inset_md
+      : rgba(theme.color_text_primary, 0.1),
+  borderLeft: `3px solid ${variant === 'danger'
+    ? theme.color_text_danger
+    : theme.color_text_primary}`,
+  padding: theme.baseline_2,
+
+  // These styles from Link. Necessary because you cannot use markdown within
+  // this component if it itself is used within Markdown.
+  '& a:link': {
+    color: darken(0.1, theme.SiteLink_color),
+    textDecoration: 'none',
+
+    '&:hover': {
+      color: darken(0.1, theme.SiteLink_color_hover),
+      textDecoration: 'underline'
+    },
+    '&:focus': {
+      color: darken(0.1, theme.SiteLink_color_focus),
+      outline: `1px solid ${darken(0.1, theme.SiteLink_borderColor_focus)}`,
+      outlineOffset: '2px'
+    },
+    // `:active` must be last, to follow LVHFA order:
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+    '&:active': {
+      color: darken(0.1, theme.SiteLink_color_active)
+    }
+  }
 }));
 const Title = createStyledComponent('h4', ({ variant, theme }) => ({
   color:
-    variant === 'danger' ? theme.color_text_danger : theme.color_text_primary,
+    variant === 'danger'
+      ? darken(0.1, theme.color_text_danger)
+      : darken(0.1, theme.color_text_primary),
   fontSize: '1em',
   fontWeight: theme.fontWeight_semiBold,
   margin: `0 0 ${theme.space_stack_sm}`

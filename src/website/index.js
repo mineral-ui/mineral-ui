@@ -24,7 +24,7 @@ import ThemeProvider from '../themes/ThemeProvider';
 import App from './app/App';
 import demos from './app/demos';
 require('./index.css');
-require('react-live/react-live.css');
+require('./app/utils/prismTheme.css');
 
 // Enable Glamor simulate helper
 simulations(true);

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <title>Mineral UI</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Mineral UI is a design system and React component library for the web that lets you quickly build high-quality, accessible apps. Created by CA Technologies.">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,greek" rel="stylesheet">
-    <title>Mineral UI</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#598296">
+    <meta name="theme-color" content="#3a5663">
     <% if (htmlWebpackPlugin.options.GOOGLE_TRACKING_ID) { %>
       <script async src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.GOOGLE_TRACKING_ID %>"></script>
       <script>
@@ -16,6 +22,16 @@
         gtag('config', '<%= htmlWebpackPlugin.options.GOOGLE_TRACKING_ID %>');
       </script>
     <% } %>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ynh7ncw',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <div id="app"></div>

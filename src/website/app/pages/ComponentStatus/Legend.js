@@ -24,11 +24,14 @@ import IconSlowMotionVideo from '../../../../Icon/IconSlowMotionVideo';
 
 const styles = {
   list: ({ theme }) => ({
+    lineHeight: 2,
     paddingLeft: 0,
     margin: `0 0 ${theme.space_stack_xl}`,
+
     '& li': {
       display: 'inline-block',
       marginRight: theme.space_inline_xl,
+
       '@media(max-width: 45em)': {
         display: 'block'
       }

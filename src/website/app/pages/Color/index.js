@@ -22,15 +22,9 @@ import Callout from '../../Callout';
 import ColorRamp from './ColorRamp';
 import RampLegend from './RampLegend';
 import Variants from './Variants';
-import GuidelinePage from '../../GuidelinePage';
 import content from './color.md';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 const baseColors = [
   'red',
@@ -57,7 +51,7 @@ const RampHolder = createStyledComponent('div', {
 
 export default function Color(props: Props) {
   return (
-    <GuidelinePage {...props}>
+    <div {...props}>
       <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
@@ -65,6 +59,6 @@ export default function Color(props: Props) {
           <ColorRamp key={baseColor} baseColor={baseColor} />
         ))}
       </RampHolder>
-    </GuidelinePage>
+    </div>
   );
 }

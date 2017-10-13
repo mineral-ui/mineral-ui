@@ -15,15 +15,9 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
 import IconCloud from '../../../../../Icon/IconCloud';
-
-const DemoLayout = createStyledComponent('div', {
-  '& > button': {
-    marginRight: '0.5rem'
-  }
-});
+import DemoLayout from '../components/DemoLayout';
 
 export default {
   id: 'icon-only',

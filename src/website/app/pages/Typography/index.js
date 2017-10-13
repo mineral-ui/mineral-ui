@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import colorable from 'colorable';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent, pxToEm } from '../../../../styles';
 import Markdown from '../../Markdown';
 import {
   Table as _Table,
@@ -26,16 +26,10 @@ import {
   TableRow
 } from '../../Table';
 import FontDemo from './FontDemo';
-import GuidelinePage from '../../GuidelinePage';
 import content from './typography.md';
 import examples from './examples';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 const a11yColor = color => {
   const a11y = colorable({
@@ -66,6 +60,13 @@ const styles = {
       overflowX: 'auto'
     }
   },
+  section: ({ theme }) => ({
+    marginTop: pxToEm(65), // to baseline
+
+    [theme.bp_moreSpacious]: {
+      marginTop: pxToEm(82) // to baseline
+    }
+  }),
   table: {
     fontFamily: 'Open Sans'
   },
@@ -80,18 +81,18 @@ const OverflowContainer = createStyledComponent(
   'div',
   styles.overflowContainer
 );
+const Section = createStyledComponent('section', styles.section);
 const Table = createStyledComponent(_Table, styles.table);
 const ValueCell = createStyledComponent(TableCell, styles.valueCell);
 
 export default function Typography(props: Props) {
   return (
-    <GuidelinePage {...props}>
+    <div {...props}>
       <Markdown scope={{ FontDemo }}>{content}</Markdown>
       {examples.map((section, index) => {
         return (
-          <section key={`section_${index}`}>
-            {section.heading}
-            {section.description}
+          <Section key={`section_${index}`}>
+            <Markdown>{section.description}</Markdown>
             <OverflowContainer>
               <Table>
                 <thead>
@@ -122,9 +123,9 @@ export default function Typography(props: Props) {
                 </tbody>
               </Table>
             </OverflowContainer>
-          </section>
+          </Section>
         );
       })}
-    </GuidelinePage>
+    </div>
   );
 }

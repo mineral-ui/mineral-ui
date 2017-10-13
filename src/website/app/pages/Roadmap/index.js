@@ -16,22 +16,16 @@
 
 /* @flow */
 import React from 'react';
-import GuidelinePage from '../../GuidelinePage';
 import Markdown from '../../Markdown';
-import Button from '../../../../Button';
+import Button from '../../SiteButton';
 import content from './roadmap.md';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 export default function Roadmap(props: Props) {
   return (
-    <GuidelinePage {...props}>
-      <Markdown scope={{ Button }}>{content}</Markdown>
-    </GuidelinePage>
+    <Markdown scope={{ Button }} {...props}>
+      {content}
+    </Markdown>
   );
 }

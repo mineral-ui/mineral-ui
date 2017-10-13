@@ -19,7 +19,7 @@ import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { createStyledComponent } from '../../../../styles';
 import Button from '../../../../Button';
-import Heading from '../../Heading';
+import Heading from '../../SiteHeading';
 import Popover from '../../../../Popover';
 
 const styles = {

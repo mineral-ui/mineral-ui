@@ -24,7 +24,7 @@ module.exports = {
   ],
   moduleNameMapper: {
     '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js',
-    '.md$': '<rootDir>/utils/emptyObject.js'
+    '.(md|svg)$': '<rootDir>/utils/emptyString.js'
   },
   setupFiles: ['raf/polyfill'],
   setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',

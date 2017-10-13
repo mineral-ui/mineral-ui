@@ -1,5 +1,3 @@
-# Styling
-
 Mineral UI is built on a design system with styles ready to go out of the box.  We realize however that there will be cases when you need to customize styles for your unique needs.  Below are some different techniques for customizing Mineral UI styles across all levels of your application.
 
 ## Customization Techniques

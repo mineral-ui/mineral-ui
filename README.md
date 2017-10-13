@@ -24,7 +24,7 @@ A design system and [React](https://reactjs.org/) component library for the web 
 
 ### Installation
 
-Install the [Mineral UI package](https://www.npmjs.com/pacakge/mineral-ui).
+Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui).
 
 ```sh
 npm install --save mineral-ui

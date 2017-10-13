@@ -16,87 +16,122 @@
 
 /* @flow */
 import React from 'react';
-import Helmet from 'react-helmet';
-import { createStyledComponent, getNormalizedValue } from '../../styles';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../styles';
+import IconArrowBack from '../../Icon/IconArrowBack';
 import Callout from './Callout';
-import Heading from './Heading';
-import Link from './Link';
+import Heading from './SiteHeading';
+import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
 import Markdown from './Markdown';
 
 type Props = {
   backgroundColor?: string,
+  chromeless?: boolean,
+  componentName?: string,
   description?: React$Node,
   hideSource?: boolean,
   id: string,
-  pageMeta?: {
-    title: string,
-    canonicalLink: string
-  },
   scope: Object,
   source: string,
+  standalone?: boolean,
   title?: React$Node
 };
 
 const styles = {
-  componentDocExample: ({ theme }) => ({
-    paddingBottom: `${parseFloat(theme.space_stack_sm) * 8}em`,
+  backLink: ({ theme }) => ({
+    display: 'inline-block',
+    margin: `${pxToEm(63)} 0 ${pxToEm(33)}`, // to baseline
 
-    '& + &': {
-      borderTop: `1px solid ${theme.borderColor}`
+    [theme.bp_moreSpacious]: {
+      margin: `${pxToEm(85)} 0 ${pxToEm(43)}` // to baseline
+    }
+  }),
+  componentDocExample: ({ theme }) => ({
+    '&:not(:first-child)': {
+      marginTop: pxToEm(27), // to baseline
+
+      [theme.bp_moreSpacious]: {
+        marginTop: pxToEm(33) // to baseline
+      }
     }
   }),
   description: ({ theme }) => ({
-    margin: `0 0 ${theme.space_stack_xl}`
+    marginBottom: `${pxToEm(31)}`, // to baseline
+
+    // Specificity hack
+    // Sometimes Page's intro styling needs undone
+    '& > p[class][class]': {
+      fontSize: theme.fontSize_prose,
+      maxWidth: theme.maxTextWidth
+    }
   }),
   title: ({ theme }) => ({
     margin: `0 0 ${getNormalizedValue(
-      theme.space_stack_xl,
-      theme.fontSize_h3
+      pxToEm(21 - 12), // to mid-baseline
+      theme.SiteHeading_fontSize_3
     )}`,
-    paddingTop: `${parseFloat(
-      getNormalizedValue(theme.space_stack_sm, theme.fontSize_h3)
-    ) * 8}em`
-  }),
-  titleLink: ({ theme }) => ({
-    color: theme.color_gray_80 // h2
+    paddingTop: getNormalizedValue(
+      pxToEm(68), // to baseline
+      theme.SiteHeading_fontSize_3
+    ),
+
+    [theme.bp_moreSpacious]: {
+      fontSize: theme.SiteHeading_fontSize_3_wide,
+      margin: `0 0 ${getNormalizedValue(
+        pxToEm(19 - 12), // to mid-baseline
+        theme.SiteHeading_fontSize_3_wide
+      )}`,
+      paddingTop: getNormalizedValue(
+        pxToEm(80), // to baseline
+        theme.SiteHeading_fontSize_3_wide
+      )
+    }
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const Description = createStyledComponent(Markdown, styles.description);
-const Title = createStyledComponent(Heading, styles.title);
-const TitleLink = createStyledComponent(Link, styles.titleLink);
+const Title = createStyledComponent(Heading, styles.title).withProps({
+  level: 3
+});
+const BackLink = createStyledComponent(Link, styles.backLink);
 
 export default function ComponentDocExample({
   backgroundColor,
+  chromeless,
+  componentName,
   description,
   hideSource,
   id,
-  pageMeta,
   scope,
   source,
+  standalone,
   title,
   ...restProps
 }: Props) {
   const rootProps = { ...restProps };
   const liveProviderProps = {
     backgroundColor,
-    hideSource,
+    hideSource: chromeless || hideSource,
     scope,
     source
   };
 
-  return (
+  return standalone && chromeless ? (
+    <LiveProvider {...liveProviderProps} chromeless />
+  ) : (
     <Root {...rootProps}>
-      {pageMeta && (
-        <Helmet>
-          <title>{pageMeta.title}</title>
-          <link rel="canonical" href={pageMeta.canonicalLink} />
-        </Helmet>
+      {standalone && (
+        <BackLink to="../">
+          <IconArrowBack color="currentColor" size="small" /> {componentName}
+        </BackLink>
       )}
-      <Title level={3} id={id}>
-        <TitleLink to={id}>{title}</TitleLink>
+      <Title id={!standalone ? id : undefined}>
+        {!standalone ? <Link to={id}>{title}</Link> : title}
       </Title>
       <Description scope={{ Callout }}>{description || ''}</Description>
       <LiveProvider {...liveProviderProps} />
