@@ -17,7 +17,6 @@
 /* @flow */
 import React from 'react';
 import { withTheme } from 'glamorous';
-import update from 'immutability-helper';
 import ThemeProvider from '../ThemeProvider';
 
 function getComponentDisplayName(Component: React$ComponentType<*>): string {
@@ -33,7 +32,7 @@ export default function createThemedComponent(
   const ThemedComponent = (props, context) => {
     const outTheme =
       typeof theme === 'function' ? theme(props, context) : theme;
-    const outProps = update(props, { $unset: ['theme'] });
+    const { theme: ignore, ...outProps } = props;
 
     return (
       <ThemeProvider theme={outTheme}>
