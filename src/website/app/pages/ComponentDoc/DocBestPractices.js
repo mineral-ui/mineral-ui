@@ -17,9 +17,9 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
-import Heading from '../../Heading';
-import Section from '../../Section';
 import DocPractice from './DocPractice';
+import Section from './DocSection';
+import DocSectionTitle from './DocSectionTitle';
 
 type Props = {
   practices: Array<Object>
@@ -27,16 +27,10 @@ type Props = {
 
 const styles = {
   grid: ({ theme }) => ({
-    '@media(min-width: 45em)': {
-      display: 'grid',
-      gridAutoFlow: 'column',
-      gridTemplateColumns: '1fr 1fr',
-      gridColumnGap: theme.space_inline_xl
-    }
+    marginTop: theme.baseline_3
   }),
-  practice: ({ theme, type }) => ({
-    gridColumnStart: type === 'do' ? 1 : 2,
-    marginBottom: `${parseFloat(theme.space_stack_xl) * 2}em`
+  practice: ({ theme }) => ({
+    marginBottom: theme.baseline_4
   })
 };
 
@@ -46,9 +40,7 @@ const Practice = createStyledComponent(DocPractice, styles.practice);
 export default function DocBestPractices({ practices }: Props) {
   return (
     <Section>
-      <Heading level={3} id="best-practices">
-        Best Practices
-      </Heading>
+      <DocSectionTitle id="best-practices">Best Practices</DocSectionTitle>
       <Grid>
         {practices.map((practice, index) => (
           <Practice key={index} {...practice}>

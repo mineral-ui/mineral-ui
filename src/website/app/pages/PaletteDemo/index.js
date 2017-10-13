@@ -16,20 +16,14 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent, pxToEm } from '../../../../styles';
 import { createTheme, mineralTheme, ThemeProvider } from '../../../../themes';
-import GuidelinePage from '../../GuidelinePage';
-import Markdown from '../../Markdown';
+import _Intro from '../../Intro';
 import ControlPanel from './ControlPanel';
 import Demo from './Demo';
 import content from './paletteDemo.md';
 
-type Props = {
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  }
-};
+type Props = {};
 
 type State = {
   activeColor: Colors,
@@ -62,9 +56,17 @@ const availableThemes: { [Colors]: string } = {
 };
 
 const styles = {
+  intro: ({ theme }) => ({
+    marginBottom: pxToEm(83), // to baseline
+
+    [theme.bp_moreSpacious]: {
+      marginBottom: pxToEm(101) // to baseline
+    }
+  }),
   leftColumn: ({ theme }) => ({
-    marginRight: theme.space_inline_md,
-    [breakpoints.bp_mobile]: {
+    marginRight: theme.baseline_3,
+
+    [breakpoints.bp_tablet]: {
       marginRight: 0
     }
   }),
@@ -73,16 +75,19 @@ const styles = {
     position: 'sticky',
     top: -1,
     zIndex: theme.zIndex_200,
+
     [breakpoints.bp_tablet]: {
-      display: 'block'
+      display: 'block',
+      marginBottom: pxToEm(83) // to baseline
     }
   }),
   paragraph: ({ theme }) => ({
-    margin: `${theme.space_stack_xxl} 0`
+    margin: `${parseFloat(theme.fontSize_prose) * theme.lineHeight_prose}em 0`
   }),
   rightColumn: {
     minWidth: '20em',
     width: '20em',
+
     [breakpoints.bp_tablet]: {
       display: 'none'
     }
@@ -90,6 +95,7 @@ const styles = {
   root: ({ theme }) => ({
     display: 'flex',
     position: 'relative',
+
     '& h1 + p': {
       marginBottom: parseFloat(theme.space_stack_sm) * 10 + 'em'
     }
@@ -97,8 +103,9 @@ const styles = {
 };
 
 const Root = createStyledComponent('div', styles.root);
+const Intro = createStyledComponent(_Intro, styles.intro);
 const MobileSticky = createStyledComponent('div', styles.mobileSticky);
-const LeftColumn = createStyledComponent(GuidelinePage, styles.leftColumn);
+const LeftColumn = createStyledComponent('div', styles.leftColumn);
 const RightColumn = createStyledComponent('div', styles.rightColumn);
 
 const mineralColor = 'blue';
@@ -126,7 +133,7 @@ export default class PaletteDemo extends Component<Props, State> {
       <ThemeProvider theme={{ ...mineralTheme, ...breakpoints }}>
         <Root>
           <LeftColumn {...this.props}>
-            <Markdown>{content}</Markdown>
+            <Intro>{content}</Intro>
             <MobileSticky>
               <ControlPanel {...controlPanelProps} />
             </MobileSticky>

@@ -17,17 +17,17 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, pxToEm } from '../../../../styles';
+import { mineralTheme } from '../../../../themes';
 import Menu, { MenuDivider, MenuGroup, MenuItem } from '../../../../Menu';
 
-const DemoLayout = createStyledComponent('div', ({ theme }) => ({
-  backgroundColor: theme.color_gray_10,
-  padding: theme.spacing_double,
-
+const DemoLayout = createStyledComponent('div', {
   '& > div': {
     backgroundColor: 'white',
     width: pxToEm(224)
   }
-}));
+});
+
+const backgroundColor = mineralTheme.color_gray_10;
 
 export default {
   menu: [
@@ -44,7 +44,8 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `Match Mineral UI's [pre-defined variants](/color/#color-variants) with semantic purpose.`
+      description: `Match Mineral UI's [pre-defined variants](/color/#color-variants) with semantic purpose.`,
+      backgroundColor
     },
     {
       type: 'do',
@@ -59,7 +60,8 @@ export default {
         </DemoLayout>
       ),
       description: `[MenuItem](../menu-item) actions should be predictable for frictionless interaction.
-  Labels should be structured: \`<verb> <noun>\`.`
+  Labels should be structured: \`<verb> <noun>\`.`,
+      backgroundColor
     },
     {
       type: 'dont',
@@ -74,7 +76,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'Using the wrong variant can cause confusion, or undue stress for users.'
+        'Using the wrong variant can cause confusion, or undue stress for users.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -89,7 +92,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'Users should know exactly what will happen when they choose an option.'
+        'Users should know exactly what will happen when they choose an option.',
+      backgroundColor
     }
   ],
   menuDivider: [
@@ -112,7 +116,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'If a long list of menu options are all similar conceptually, create hierarchy by placing dividers.'
+        'If a long list of menu options are all similar conceptually, create hierarchy by placing dividers.',
+      backgroundColor
     },
     {
       type: 'do',
@@ -129,7 +134,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'You can separate options that are related but should be set apart to increase usability.'
+        'You can separate options that are related but should be set apart to increase usability.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -153,7 +159,8 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `If there is no need to create further grouping, don't use MenuDividers for decoration.`
+      description: `If there is no need to create further grouping, don't use MenuDividers for decoration.`,
+      backgroundColor
     }
   ],
   menuGroup: [
@@ -176,7 +183,8 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `Users will be able to quickly scan their available options if there aren't too many actions at the same level of hierarchy.`
+      description: `Users will be able to quickly scan their available options if there aren't too many actions at the same level of hierarchy.`,
+      backgroundColor
     },
     {
       type: 'dont',
@@ -196,7 +204,8 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `If there are only a couple of groups with a handful of elements, trust that the user will figure out the grouping from context.`
+      description: `If there are only a couple of groups with a handful of elements, trust that the user will figure out the grouping from context.`,
+      backgroundColor
     },
     {
       type: 'dont',
@@ -230,7 +239,8 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `If there are too many options in a group, it will be overwhelming to users and your feature will get buried.`
+      description: `If there are too many options in a group, it will be overwhelming to users and your feature will get buried.`,
+      backgroundColor
     }
   ],
   menuItem: [
@@ -248,7 +258,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'Give your users hints about what the potential outcome of an action will be.'
+        'Give your users hints about what the potential outcome of an action will be.',
+      backgroundColor
     },
     {
       type: 'do',
@@ -263,7 +274,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'Use the `secondaryText` attribute to give hints about extra functionality or provide status context.'
+        'Use the `secondaryText` attribute to give hints about extra functionality or provide status context.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -279,7 +291,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'All MenuItems in a Menu should be actionable. If an option only exists to provide information, it probably belongs somewhere else.'
+        'All MenuItems in a Menu should be actionable. If an option only exists to provide information, it probably belongs somewhere else.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -297,7 +310,8 @@ export default {
         </DemoLayout>
       ),
       description:
-        'Use the `title` attribute to show meta information for a group, or place this information elsewhere in the interface.'
+        'Use the `title` attribute to show meta information for a group, or place this information elsewhere in the interface.',
+      backgroundColor
     }
   ]
 };

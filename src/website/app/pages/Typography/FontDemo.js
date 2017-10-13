@@ -17,15 +17,18 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
-import Heading from '../../Heading';
+import Heading from '../../SiteHeading';
 
 const styles = {
-  root: {
-    display: 'flex',
+  root: ({ theme }) => ({
+    [theme.bp_moreSpacious]: {
+      display: 'flex'
+    },
+
     '& div': {
       flex: '1 0 50%'
     }
-  },
+  }),
   openSans: ({ theme }) => ({
     fontFamily: 'Open Sans',
     '& p': {

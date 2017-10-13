@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
+import { mineralTheme } from '../../../../themes';
 import Card, { CardBlock, CardTitle, CardImage } from '../../../../Card';
 
 const CardList = createStyledComponent('div', ({ theme }) => ({
@@ -24,6 +25,8 @@ const CardList = createStyledComponent('div', ({ theme }) => ({
     marginBottom: theme.space_stack_sm
   }
 }));
+
+const backgroundColor = mineralTheme.color_gray_10;
 
 export default {
   card: [
@@ -43,7 +46,8 @@ export default {
         </Card>
       ),
       description:
-        'Use a Card when you have different kinds of related content representing one data object.'
+        'Use a Card when you have different kinds of related content representing one data object.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -62,7 +66,8 @@ export default {
         </CardList>
       ),
       description:
-        'Cards group elements. Using a List for single pieces of information is a more efficent design.'
+        'Cards group elements. Using a List for single pieces of information is a more efficent design.',
+      backgroundColor
     }
   ],
   cardBlock: [
@@ -80,7 +85,8 @@ export default {
         </Card>
       ),
       description:
-        'Use the CardBlock component to add formatting to content in your Cards.'
+        'Use the CardBlock component to add formatting to content in your Cards.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -93,11 +99,16 @@ export default {
             mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
             vulputate interdum sollicitudin.
           </p>
-          <img src="/images/200x200.png" alt="gradient placeholder" />
+          <img
+            src="/images/200x200.png"
+            alt="gradient placeholder"
+            style={{ maxWidth: '100%' }}
+          />
         </Card>
       ),
       description:
-        'Content placed into a Card outside the CardBlock will not have formatting applied.'
+        'Content placed into a Card outside the CardBlock will not have formatting applied.',
+      backgroundColor
     }
   ],
   cardImage: [
@@ -116,7 +127,8 @@ export default {
         </Card>
       ),
       description:
-        'Use the CardImage component with `src` and `alt` attributes.'
+        'Use the CardImage component with `src` and `alt` attributes.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -134,7 +146,8 @@ export default {
         </Card>
       ),
       description:
-        'Using regular `<img />` tags will result in unformatted content.'
+        'Using regular `<img />` tags will result in unformatted content.',
+      backgroundColor
     }
   ],
   cardTitle: [
@@ -151,7 +164,8 @@ export default {
           </CardBlock>
         </Card>
       ),
-      description: 'Use the CardTitle component to add headings to your Cards.'
+      description: 'Use the CardTitle component to add headings to your Cards.',
+      backgroundColor
     },
     {
       type: 'dont',
@@ -166,7 +180,8 @@ export default {
         </Card>
       ),
       description:
-        'Regular `<h1>, <h2>` etc. will not be formatted automatically.'
+        'Regular `<h1>, <h2>` etc. will not be formatted automatically.',
+      backgroundColor
     }
   ]
 };
