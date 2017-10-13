@@ -18,6 +18,7 @@
 import React, { createElement } from 'react';
 import marksy from 'marksy/components';
 import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { componentTheme as linkComponentTheme } from '../../Link/Link';
 import Heading from './Heading';
 import Paragraph from './Paragraph';
 import Link from './Link';
@@ -25,6 +26,7 @@ import MarkdownTable from './MarkdownTable';
 import prism from './utils/prism';
 
 type Props = {
+  anchors?: boolean,
   children: React$Node,
   scope?: {
     [string]: React$ComponentType<*>
@@ -53,69 +55,73 @@ type mdLinkProps = {
   children: React$Node
 };
 
-const Root = createStyledComponent('div', ({ theme }) => ({
-  lineHeight: theme.lineHeight_prose,
+const Root = createStyledComponent('div', props => {
+  const theme = linkComponentTheme(props.theme);
 
-  '& p': {
-    marginBottom: `${theme.lineHeight * 1.5}em`
-  },
+  return {
+    lineHeight: theme.lineHeight_prose,
 
-  '& a:link': {
-    color: theme.color_text_primary,
-    textDecoration: 'none'
-  },
-  '& a:hover': {
-    color: theme.color_text_primary_hover,
-    textDecoration: 'underline'
-  },
-  '& a:focus': {
-    color: theme.color_text_primary_focus,
-    outline: `1px solid ${theme.borderColor_focus}`,
-    outlineOffset: '2px'
-  },
-  // `:active` must be last, to follow LVHFA order:
-  // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-  '& a:active': {
-    color: theme.color_text_primary_active
-  },
-
-  '& :not(pre) > code': {
-    backgroundColor: theme.color_gray_20,
-    borderRadius: theme.borderRadius_1,
-    fontFamily: theme.fontFamily_monospace,
-    padding: `${parseFloat(theme.space_inset_sm) / 2}em`
-  },
-
-  // Specificity silliness due to having to style markdown content off of the
-  // container
-  '& h2,& h3,& h4,& h5,& h6': {
-    '& > a:link': {
-      color: theme.color_caption
+    '& p': {
+      marginBottom: `${theme.lineHeight * 1.5}em`
     },
-    '& > a:hover': {
-      color: theme.color_text_primary_hover
+
+    '& a:link': {
+      color: theme.Link_color,
+      textDecoration: 'none'
     },
-    '& > a:focus': {
-      color: theme.color_text_primary_focus
+    '& a:hover': {
+      color: theme.Link_color_hover,
+      textDecoration: 'underline'
+    },
+    '& a:focus': {
+      color: theme.Link_color_focus,
+      outline: `1px solid ${theme.Link_borderColor_focus}`,
+      outlineOffset: '2px'
     },
     // `:active` must be last, to follow LVHFA order:
     // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
-    '& > a:active': {
-      color: theme.color_text_primary_active
-    }
-  },
+    '& a:active': {
+      color: theme.Link_color__active
+    },
 
-  '& pre': {
-    fontSize: theme.fontSize_ui,
-    // Setting the maxHeight equal to, roughly, 20 lines,
-    // then subtracting a bit to make it clear there's more beyond the scroll
-    maxHeight: getNormalizedValue(
-      `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
-      theme.fontSize_ui
-    ),
-    overflow: 'auto'
-  }
-}));
+    '& :not(pre) > code': {
+      backgroundColor: theme.color_gray_20,
+      borderRadius: theme.borderRadius_1,
+      fontFamily: theme.fontFamily_monospace,
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em`
+    },
+
+    // Specificity silliness due to having to style markdown content off of the
+    // container
+    '& h2,& h3,& h4,& h5,& h6': {
+      '& > a:link': {
+        color: theme.color_caption
+      },
+      '& > a:hover': {
+        color: theme.color_text_primary_hover
+      },
+      '& > a:focus': {
+        color: theme.color_text_primary_focus
+      },
+      // `:active` must be last, to follow LVHFA order:
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+      '& > a:active': {
+        color: theme.color_text_primary_active
+      }
+    },
+
+    '& pre': {
+      fontSize: theme.fontSize_ui,
+      // Setting the maxHeight equal to, roughly, 20 lines,
+      // then subtracting a bit to make it clear there's more beyond the scroll
+      maxHeight: getNormalizedValue(
+        `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
+        theme.fontSize_ui
+      ),
+      overflow: 'auto'
+    }
+  };
+});
 const CodeBlock = createStyledComponent('div', ({ theme }) => ({
   marginBottom: theme.space_stack_xl
 }));
@@ -125,11 +131,16 @@ const Image = createStyledComponent('img', {
   }
 });
 
-function replaceHeading(level, children, headingProps: mdHeadingProps) {
+function replaceHeading(
+  level,
+  children,
+  headingProps: mdHeadingProps,
+  anchors
+) {
   // Render the same props and children that were passed in, but prepend a
   // link to this title with the text '#'.
   return (
-    <Heading level={level} id={headingProps.id}>
+    <Heading anchor={anchors} level={level} id={headingProps.id}>
       {children}
     </Heading>
   );
@@ -162,7 +173,12 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-export default function Markdown({ children, scope, ...restProps }: Props) {
+export default function Markdown({
+  anchors = true,
+  children,
+  scope,
+  ...restProps
+}: Props) {
   const rootProps = { ...restProps };
 
   const compile = marksy({
@@ -189,22 +205,22 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
         return <Image src={src} alt={alt} />;
       },
       h1({ children }) {
-        return replaceHeading(1, children, {});
+        return replaceHeading(1, children, {}, anchors);
       },
       h2({ id, children }) {
-        return replaceHeading(2, children, { id });
+        return replaceHeading(2, children, { id }, anchors);
       },
       h3({ id, children }) {
-        return replaceHeading(3, children, { id });
+        return replaceHeading(3, children, { id }, anchors);
       },
       h4({ id, children }) {
-        return replaceHeading(4, children, { id });
+        return replaceHeading(4, children, { id }, anchors);
       },
       h5({ id, children }) {
-        return replaceHeading(5, children, { id });
+        return replaceHeading(5, children, { id }, anchors);
       },
       h6({ id, children }) {
-        return replaceHeading(6, children, { id });
+        return replaceHeading(6, children, { id }, anchors);
       },
       p({ children }) {
         return <Paragraph variant="prose">{children}</Paragraph>;
