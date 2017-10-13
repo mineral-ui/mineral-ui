@@ -22,7 +22,7 @@ import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../../../../styles';
 import color from '../../../../colors';
 import IconKeyboardArrowDown from '../../../../Icon/IconKeyboardArrowDown';
-import Heading from '../../Heading';
+import Heading from '../../SiteHeading';
 import Paragraph from '../../Paragraph';
 
 type Props = {

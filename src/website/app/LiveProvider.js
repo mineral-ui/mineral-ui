@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import dedent from 'dedent';
-import Helmet from 'react-helmet';
+import rgba from 'polished/lib/color/rgba';
 import {
   LiveProvider as ReactLiveProvider,
   LiveEditor,
@@ -25,15 +25,13 @@ import {
   LivePreview
 } from 'react-live';
 import { createStyledComponent, getNormalizedValue } from '../../styles';
+import { ThemeProvider } from '../../themes';
+import siteColors from './siteColors';
 
 type Props = {
   backgroundColor?: string,
   chromeless?: boolean,
   hideSource?: boolean,
-  pageMeta?: {
-    title: string,
-    canonicalLink: string
-  },
   scope: Object,
   source: string
 };
@@ -44,7 +42,7 @@ const styles = {
       ? { padding: '1rem' }
       : {
           backgroundColor,
-          border: `1px solid ${theme.borderColor}`,
+          border: `1px solid ${rgba(siteColors.slate, 0.3)}`,
           padding: theme.space_inset_md
         };
   },
@@ -56,7 +54,14 @@ const styles = {
       `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
       theme.fontSize_ui
     ),
-    overflow: 'auto'
+
+    // Specificity hack
+    '&[class]': {
+      margin: 0
+    },
+    '&:focus': {
+      outline: `6px solid ${rgba(siteColors.orange, 0.3)}`
+    }
   }),
   liveError: ({ theme }) => ({
     backgroundColor: '#fce3e3', // color.red_10
@@ -81,35 +86,37 @@ const styles = {
 const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
   rootEl: 'div'
 });
-const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
+const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor, {
+  filterProps: ['ignoreTabKey']
+});
 const MyLiveError = createStyledComponent(LiveError, styles.liveError);
 
 export default function LiveProvider({
   backgroundColor,
   chromeless,
   hideSource,
-  pageMeta,
   scope,
-  source
+  source,
+  ...restProps
 }: Props) {
+  const liveProviderProps = {
+    code: dedent(source),
+    scope,
+    mountStylesheet: false,
+    ...restProps
+  };
   return (
-    <div>
-      {pageMeta && (
-        <Helmet>
-          <title>{pageMeta.title}</title>
-          <link rel="canonical" href={pageMeta.canonicalLink} />
-        </Helmet>
-      )}
-      <ReactLiveProvider
-        code={dedent(source)}
-        scope={scope}
-        mountStylesheet={false}>
+    <ThemeProvider>
+      <ReactLiveProvider {...liveProviderProps}>
         <MyLivePreview
           backgroundColor={backgroundColor}
           chromeless={chromeless}
         />
-        {!hideSource && [<MyLiveEditor key={0} />, <MyLiveError key={1} />]}
+        {!hideSource && [
+          <MyLiveEditor key={0} ignoreTabKey={true} />,
+          <MyLiveError key={1} />
+        ]}
       </ReactLiveProvider>
-    </div>
+    </ThemeProvider>
   );
 }

@@ -21,17 +21,13 @@ import Heading from '../../Heading';
 import Paragraph from '../../Paragraph';
 
 type TypeExample = {
-  heading: React$Node,
-  description: React$Node,
+  description: string,
   examples: Array<Object>
 };
 
 type TypeExamples = Array<TypeExample>;
 
 const styles = {
-  description: ({ theme }) => ({
-    margin: `0 0 ${theme.space_stack_xl}`
-  }),
   list: ({ theme }) => ({
     listStyle: 'square',
     paddingLeft: theme.space_inline_lg
@@ -39,24 +35,14 @@ const styles = {
 };
 
 const List = createStyledComponent('ul', styles.list);
-const Description = createStyledComponent(Paragraph, styles.description);
-
 const examples: TypeExamples = [
   {
-    heading: (
-      <Heading level={2} id="long-form-text">
-        Long-form Text
-      </Heading>
-    ),
-    description: (
-      <Description variant="prose">
-        Default text and caption styles are intended for sections of content
-        that provide description and assistance. {' '}
-        <strong>Paragraph text</strong> is primarily used for content sections.{' '}
-        <strong>Caption Text</strong> is used to highlight or offset content,
-        such as inline help or when captioning dashboard content.
-      </Description>
-    ),
+    description: `### Long-form Text
+
+Default text and caption styles are intended for sections of content that
+provide description and assistance. **Paragraph text** is primarily used for
+content sections. **Caption Text** is used to highlight or offset content, such
+as inline help or when captioning dashboard content.`,
     examples: [
       {
         content: <Paragraph type="ui">Paragraph UI</Paragraph>,
@@ -105,19 +91,11 @@ const examples: TypeExamples = [
     ]
   },
   {
-    heading: (
-      <Heading level={2} id="display-text">
-        Display Text
-      </Heading>
-    ),
-    description: (
-      <Description variant="prose">
-        Use <strong>Display text</strong> sparingly to make a bold statement, or
-        draw attention to different sections in an application view. Display
-        text is for short titles and section divisions – it’s not for long-form
-        content.{' '}
-      </Description>
-    ),
+    description: `### Display Text
+
+Use **Display text** sparingly to make a bold statement, or draw attention to
+different sections in an application view. Display text is for short titles and
+section divisions—it’s not for long-form content.`,
     examples: [
       {
         content: <Heading level={1}>Page Title</Heading>,

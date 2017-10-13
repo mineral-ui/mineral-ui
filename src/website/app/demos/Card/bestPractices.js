@@ -93,7 +93,11 @@ export default {
             mattis pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec
             vulputate interdum sollicitudin.
           </p>
-          <img src="/images/200x200.png" alt="gradient placeholder" />
+          <img
+            src="/images/200x200.png"
+            alt="gradient placeholder"
+            style={{ maxWidth: '100%' }}
+          />
         </Card>
       ),
       description:

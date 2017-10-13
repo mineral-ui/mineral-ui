@@ -15,14 +15,8 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
-
-const DemoLayout = createStyledComponent('div', {
-  '& > button': {
-    marginRight: '0.5rem'
-  }
-});
+import DemoLayout from '../components/DemoLayout';
 
 export default {
   id: 'primary',

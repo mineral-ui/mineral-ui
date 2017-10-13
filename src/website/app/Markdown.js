@@ -17,10 +17,15 @@
 /* @flow */
 import React, { createElement } from 'react';
 import marksy from 'marksy/components';
-import { createStyledComponent, getNormalizedValue } from '../../styles';
-import Heading from './Heading';
+import rgba from 'polished/lib/color/rgba';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../styles';
+import Heading from './SiteHeading';
 import Paragraph from './Paragraph';
-import Link from './Link';
+import Link from './SiteLink';
 import MarkdownTable from './MarkdownTable';
 import prism from './utils/prism';
 import _Label from './Label';
@@ -28,7 +33,9 @@ import _Label from './Label';
 const REGEX_LABEL_DELIMITER = /\s*~\s*/;
 
 type Props = {
+  anchors?: boolean,
   children: React$Node,
+  className?: string,
   scope?: {
     [string]: React$ComponentType<*>
   }
@@ -73,35 +80,139 @@ const styles = {
   }),
   root: ({ theme }) => ({
     lineHeight: theme.lineHeight_prose,
+    position: 'relative', // for baseline grid,
 
-    '& p': {
-      marginBottom: `${theme.lineHeight * 1.5}em`
+    '& p, & ol, & ul': {
+      margin: `${parseFloat(theme.fontSize_prose) *
+        theme.lineHeight_prose}em 0`,
+      maxWidth: theme.maxTextWidth,
+
+      '&:first-child': {
+        marginTop: 0
+      }
     },
 
-    '& :not(pre) > code': {
-      backgroundColor: theme.color_gray_20,
-      borderRadius: theme.borderRadius_1,
-      fontFamily: theme.fontFamily_monospace,
-      padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
-      wordBreak: 'break-all'
+    '& h2': {
+      fontSize: theme.SiteHeading_fontSize_2,
+      margin: `${getNormalizedValue(
+        pxToEm(21), // to baseline
+        theme.SiteHeading_fontSize_2
+      )} 0`,
+
+      [theme.bp_moreSpacious]: {
+        fontSize: theme.SiteHeading_fontSize_2_wide,
+        margin: `${getNormalizedValue(
+          pxToEm(19), // to baseline
+          theme.SiteHeading_fontSize_2_wide
+        )} 0`,
+        maxWidth: getNormalizedValue(
+          theme.maxTextWidth,
+          theme.SiteHeading_fontSize_2_wide
+        )
+      },
+
+      '& + p': {
+        marginTop: 0
+      }
+    },
+
+    '& h3': {
+      fontSize: theme.SiteHeading_fontSize_3,
+      margin: `${getNormalizedValue(
+        pxToEm(21), // to baseline
+        theme.SiteHeading_fontSize_3
+      )} 0 ${getNormalizedValue(
+        pxToEm(21 - 12), // to mid-baseline
+        theme.SiteHeading_fontSize_3
+      )}`,
+
+      [theme.bp_moreSpacious]: {
+        fontSize: theme.SiteHeading_fontSize_3_wide,
+        margin: `${getNormalizedValue(
+          pxToEm(19), // to baseline
+          theme.SiteHeading_fontSize_3_wide
+        )} 0 ${getNormalizedValue(
+          pxToEm(19 - 12), // to mid-baseline
+          theme.SiteHeading_fontSize_3_wide
+        )}`,
+        maxWidth: getNormalizedValue(
+          theme.maxTextWidth,
+          theme.SiteHeading_fontSize_3_wide
+        )
+      },
+
+      '& + p': {
+        marginTop: 0
+      }
+    },
+
+    '& * + h2': {
+      marginTop: getNormalizedValue(
+        pxToEm(83), // to baseline
+        theme.SiteHeading_fontSize_2
+      ),
+
+      [theme.bp_moreSpacious]: {
+        marginTop: getNormalizedValue(
+          pxToEm(101), // to baseline
+          theme.SiteHeading_fontSize_2_wide
+        )
+      }
+    },
+
+    '& * + h3': {
+      marginTop: getNormalizedValue(
+        pxToEm(65), // to baseline
+        theme.SiteHeading_fontSize_3
+      ),
+
+      [theme.bp_moreSpacious]: {
+        marginTop: getNormalizedValue(
+          pxToEm(82), // to baseline
+          theme.SiteHeading_fontSize_3_wide
+        )
+      }
+    },
+
+    '& h2 + h3': {
+      marginTop: getNormalizedValue(
+        pxToEm(55), // to baseline
+        theme.SiteHeading_fontSize_3
+      ),
+
+      [theme.bp_moreSpacious]: {
+        marginTop: getNormalizedValue(
+          pxToEm(55), // to baseline
+          theme.SiteHeading_fontSize_3_wide
+        )
+      }
+    },
+
+    '& > p a:link': {
+      fontWeight: theme.fontWeight_semiBold
     },
 
     // Specificity silliness due to having to style markdown content off of the
     // container
     '& h2,& h3,& h4,& h5,& h6': {
       '& > a:link': {
-        color: theme.color_caption
+        color: theme.color_caption,
+        fontWeight: 'inherit'
       },
       '& > a:hover': {
-        color: theme.color_text_primary_hover
+        color: theme.SiteLink_color_hover || theme.color_text_primary_hover
       },
       '& > a:focus': {
-        color: theme.color_text_primary_focus
+        color: theme.SiteLink_color_focus || theme.color_text_primary_focus
       },
       // `:active` must be last, to follow LVHFA order:
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
       '& > a:active': {
-        color: theme.color_text_primary_active
+        color: theme.SiteLink_color_active || theme.color_text_primary_active
+      },
+
+      '& code': {
+        wordBreak: 'break-all'
       }
     },
 
@@ -113,7 +224,22 @@ const styles = {
         `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
         theme.fontSize_ui
       ),
+      // to baseline
+      margin: `${getNormalizedValue(pxToEm(31), theme.fontSize_ui)} 0
+        ${getNormalizedValue(pxToEm(42), theme.fontSize_ui)}`,
       overflow: 'auto'
+    },
+
+    '& :not(pre) > code': {
+      backgroundColor: rgba(theme.color_text_primary, 0.15),
+      fontFamily: theme.fontFamily_monospace,
+      fontSize: '0.8em',
+      fontWeight: '500',
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em`
+    },
+
+    '& > p > img': {
+      maxWidth: '100%'
     }
   })
 };
@@ -124,11 +250,16 @@ const Label = createStyledComponent(_Label, styles.label);
 const LI = createStyledComponent('li', styles.listItem);
 const Root = createStyledComponent('div', styles.root);
 
-function replaceHeading(level, children, headingProps: mdHeadingProps) {
+function replaceHeading(
+  level,
+  children,
+  headingProps: mdHeadingProps,
+  anchors
+) {
   // Render the same props and children that were passed in, but prepend a
   // link to this title with the text '#'.
   return (
-    <Heading level={level} id={headingProps.id}>
+    <Heading anchor={anchors} level={level} id={headingProps.id}>
       {children}
     </Heading>
   );
@@ -189,8 +320,17 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-export default function Markdown({ children, scope, ...restProps }: Props) {
-  const rootProps = { ...restProps };
+export default function Markdown({
+  anchors = true,
+  children,
+  className,
+  scope,
+  ...restProps
+}: Props) {
+  const rootProps = {
+    className: className ? `markdown ${className}` : 'markdown',
+    ...restProps
+  };
 
   const compile = marksy({
     createElement,
@@ -216,22 +356,22 @@ export default function Markdown({ children, scope, ...restProps }: Props) {
         return <Image src={src} alt={alt} />;
       },
       h1({ children }) {
-        return replaceHeading(1, children, {});
+        return replaceHeading(1, children, {}, anchors);
       },
       h2({ id, children }) {
-        return replaceHeading(2, children, { id });
+        return replaceHeading(2, children, { id }, anchors);
       },
       h3({ id, children }) {
-        return replaceHeading(3, children, { id });
+        return replaceHeading(3, children, { id }, anchors);
       },
       h4({ id, children }) {
-        return replaceHeading(4, children, { id });
+        return replaceHeading(4, children, { id }, anchors);
       },
       h5({ id, children }) {
-        return replaceHeading(5, children, { id });
+        return replaceHeading(5, children, { id }, anchors);
       },
       h6({ id, children }) {
-        return replaceHeading(6, children, { id });
+        return replaceHeading(6, children, { id }, anchors);
       },
       p({ children }) {
         return <Paragraph variant="prose">{children}</Paragraph>;

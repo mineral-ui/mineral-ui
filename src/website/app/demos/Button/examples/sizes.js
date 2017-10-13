@@ -15,17 +15,8 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
-
-const DemoLayout = createStyledComponent('div', ({ theme }) => ({
-  '& > button': {
-    marginRight: '0.5rem'
-  },
-  ' button:last-of-type': {
-    marginTop: theme.space_stack_md
-  }
-}));
+import DemoLayout from '../components/DemoLayout';
 
 export default {
   id: 'sizes',

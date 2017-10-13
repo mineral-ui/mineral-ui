@@ -16,56 +16,139 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../../../../styles';
+import rgba from 'polished/lib/color/rgba';
+import { createStyledComponent, pxToEm } from '../../../../styles';
+import { ThemeProvider } from '../../../../themes';
+import IconCheck from '../../../../Icon/IconCheck';
+import IconClose from '../../../../Icon/IconClose';
 import Markdown from '../../Markdown';
-import _Heading from '../../Heading';
+import Heading from '../../SiteHeading';
 
 type Props = {
   backgroundColor?: string,
   children?: string,
   className?: string,
   example?: React$Node,
-  title: string,
+  title?: string,
   type: 'do' | 'dont'
 };
 
-const Example = createStyledComponent('div', ({ backgroundColor, theme }) => ({
-  backgroundColor,
-  border: `1px solid ${theme.borderColor}`,
-  marginBottom: theme.space_stack_md,
-  padding: theme.space_inset_md
-}));
-const Title = createStyledComponent(_Heading, ({ type, theme }) => ({
-  borderBottom: `2px solid ${type === 'do'
-    ? theme.borderColor_success
-    : theme.borderColor_danger}`,
-  paddingBottom: getNormalizedValue(theme.space_stack_sm, theme.fontSize_h4),
+const styles = {
+  root: ({ theme }) => ({
+    [theme.bp_interior_bestPracticesMultiColumn]: {
+      display: 'flex',
+      alignItems: 'stretch',
+      justifyContent: 'space-between'
+    }
+  }),
+  example: ({ backgroundColor, theme }) => ({
+    backgroundColor,
+    border: `1px solid ${rgba(theme.borderColor, 0.3)}`,
+    padding: theme.space_inset_md,
 
-  '& strong': {
-    fontSize: theme.fontSize_h2,
-    fontWeight: 'inherit'
-  }
-}));
+    [theme.bp_interior_bestPracticesMultiColumn]: {
+      flex: `1 1 ${7 / 12 * 100}%`
+    }
+  }),
+  header: ({ theme, type }) => ({
+    backgroundColor:
+      type === 'do'
+        ? rgba(theme.borderColor_success, 0.1)
+        : rgba(theme.borderColor_danger, 0.1),
+    borderTop: `3px solid ${type === 'do'
+      ? theme.borderColor_success
+      : theme.borderColor_danger}`,
+    padding: `${theme.baseline_1} ${theme.baseline_2}`,
+
+    [theme.bp_interior_bestPracticesMultiColumn]: {
+      borderLeft: `3px solid ${type === 'do'
+        ? rgba(theme.borderColor_success, 0.6)
+        : rgba(theme.borderColor_danger, 0.6)}`,
+      borderTop: 0,
+      flex: `1 1 ${5 / 12 * 100}%`
+    },
+
+    '& > [role="icon"]': {
+      backgroundColor:
+        type === 'do'
+          ? rgba(theme.borderColor_success, 0.2)
+          : rgba(theme.borderColor_danger, 0.2),
+      borderRadius: theme.baseline_3,
+      fill:
+        type === 'do'
+          ? rgba(theme.borderColor_success, 0.5)
+          : rgba(theme.borderColor_danger, 0.5),
+      float: 'left',
+      height: theme.baseline_3,
+      marginRight: theme.baseline_2,
+      padding: `${parseFloat(theme.baseline_1) / 2}em`,
+      width: theme.baseline_3
+    },
+
+    // Markdown
+    '& > div': {
+      overflow: 'hidden',
+
+      '& code': {
+        backgroundColor:
+          type === 'do'
+            ? rgba(theme.borderColor_success, 0.1)
+            : rgba(theme.borderColor_danger, 0.1)
+      },
+
+      '& > p:last-child': {
+        marginBottom: 0
+      }
+    }
+  }),
+  title: ({ theme, type }) => ({
+    color: type === 'do' ? theme.borderColor_success : theme.borderColor_danger,
+    fontSize: theme.SiteHeading_fontSize_4,
+    lineHeight: 1.1,
+    margin: 0,
+
+    [theme.bp_moreSpacious]: {
+      fontSize: theme.SiteHeading_fontSize_4_wide
+    }
+  })
+};
+
+const Root = createStyledComponent('div', styles.root);
+const Example = createStyledComponent('div', styles.example);
+const Header = createStyledComponent('div', styles.header);
+const Title = createStyledComponent(Heading, styles.title);
 
 export default function DocPractice({
   backgroundColor,
   children,
   className,
   example,
-  title,
   type
 }: Props) {
+  const iconProps = {
+    size: pxToEm(50)
+  };
+  const icon =
+    type === 'do' ? <IconCheck {...iconProps} /> : <IconClose {...iconProps} />;
+
   return (
-    <div className={className}>
-      <Title level={4} type={type}>
-        {type === 'do' ? <strong>DO</strong> : <strong>DON’T</strong>}
-        <br />
-        {title}
-      </Title>
-      <Example backgroundColor={backgroundColor}>
-        {typeof example === 'string' ? <Markdown>{example}</Markdown> : example}
+    <Root className={className}>
+      <Header type={type}>
+        {icon}
+        <Title level={4} type={type}>
+          {type === 'do' ? 'Do' : 'Don’t'}
+        </Title>
+        <Markdown>{children}</Markdown>
+      </Header>
+      <Example backgroundColor={backgroundColor} type={type}>
+        <ThemeProvider>
+          {typeof example === 'string' ? (
+            <Markdown>{example}</Markdown>
+          ) : (
+            example
+          )}
+        </ThemeProvider>
       </Example>
-      <Markdown>{children}</Markdown>
-    </div>
+    </Root>
   );
 }

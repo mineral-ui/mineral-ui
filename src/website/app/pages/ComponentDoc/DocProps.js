@@ -18,35 +18,23 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
 import Callout from '../../Callout';
-import Heading from '../../Heading';
 import PropTable from '../../PropTable';
-import Section from '../../Section';
+import Section from './DocSection';
+import DocSectionTitle from './DocSectionTitle';
 
 type Props = {
   propDoc?: Object,
   title: string
 };
 
-// prettier-ignore
-const styles = {
-  propsComment: {
-    fontStyle: 'italic'
-  },
-  title: ({ theme }) => ({
-    margin: `${parseFloat(theme.space_stack_sm) * 8}em 0 ${theme.space_stack_xl}`
-  })
-};
-
-const PropsComment = createStyledComponent('p', styles.propsComment);
-const Title = createStyledComponent(Heading, styles.title);
+const PropsComment = createStyledComponent('p', {
+  fontStyle: 'italic'
+});
 
 export default function DocProps({ propDoc, title }: Props) {
   return (
     <Section>
-      <Heading level={2} id="api-and-theme">
-        API & Theme
-      </Heading>
-      <Title level={3} id="props">{`${title} Props`}</Title>
+      <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>
       {propDoc ? (
         <div>
           <PropTable propDoc={propDoc} />
