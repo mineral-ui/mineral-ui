@@ -20,7 +20,9 @@ import data from './data';
 import disabled from './disabled';
 import dropdown from './dropdown';
 import onOpenClose from './onOpenClose';
+import overflow from './overflow';
 import placement from './placement';
+import portal from './portal';
 import scrolling from './scrolling';
 import wide from './wide';
 
@@ -29,7 +31,9 @@ export default [
   data,
   wide,
   placement,
+  overflow,
   scrolling,
+  portal,
   onOpenClose,
   disabled,
   controlled

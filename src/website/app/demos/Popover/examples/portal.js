@@ -16,28 +16,30 @@
 
 /* @flow */
 import Button from '../../../../../Button';
-import { createStyledComponent } from '../../../../../styles';
 import DemoContent from '../components/DemoContent';
+import ScrollParent from '../components/ScrollBox';
 import Popover from '../../../../../Popover';
 
-const OverflowContainer = createStyledComponent('div', {
-  backgroundColor: 'aliceblue',
-  overflow: 'hidden',
-  padding: '25px'
-});
-
 export default {
-  id: 'overflow',
-  title: 'Overflow',
-  description: `A Popover can extend beyond its bounding container (the blue area in this example) even if the container has an \`overflow: hidden\` style.  See the [portal example](#portal) for even greater control.`,
-  scope: { Button, DemoContent, OverflowContainer, Popover },
+  id: 'portal',
+  title: 'Portal',
+  description:
+    'Use a portal to render the Popover to the body of the page rather than as a sibling of the trigger.  This can be useful to visually "break out" of a container with `overflow` or `z-index` styles. Note that you may have to adjust the `modifiers` to get the exact behavior that you want.',
+  scope: { Button, DemoContent, ScrollParent, Popover },
   source: `
-    <OverflowContainer>
+    <ScrollParent>
       <Popover
         content={<DemoContent />}
-        placement="right"
-        isOpen>
+        placement="bottom"
+        usePortal
+        isOpen
+        modifiers={{
+          preventOverflow: {
+            escapeWithReference: true
+          }
+        }}>
         <Button>Open Popover</Button>
       </Popover>
-    </OverflowContainer>`
+    </ScrollParent>
+  `
 };

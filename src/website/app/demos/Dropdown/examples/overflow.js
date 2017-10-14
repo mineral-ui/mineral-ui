@@ -17,8 +17,8 @@
 /* @flow */
 import Button from '../../../../../Button';
 import { createStyledComponent } from '../../../../../styles';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../Popover';
+import Dropdown from '../../../../../Dropdown';
+import data from '../../Menu/components/menuData';
 
 const OverflowContainer = createStyledComponent('div', {
   backgroundColor: 'aliceblue',
@@ -29,15 +29,12 @@ const OverflowContainer = createStyledComponent('div', {
 export default {
   id: 'overflow',
   title: 'Overflow',
-  description: `A Popover can extend beyond its bounding container (the blue area in this example) even if the container has an \`overflow: hidden\` style.  See the [portal example](#portal) for even greater control.`,
-  scope: { Button, DemoContent, OverflowContainer, Popover },
+  description: `A Dropdown can extend beyond its bounding container (the blue area in this example) even if the container has an \`overflow: hidden\` style.    See the [portal example](#portal) for even greater control.`,
+  scope: { Button, data, Dropdown, OverflowContainer },
   source: `
     <OverflowContainer>
-      <Popover
-        content={<DemoContent />}
-        placement="right"
-        isOpen>
-        <Button>Open Popover</Button>
-      </Popover>
+      <Dropdown data={data}>
+        <Button>Menu</Button>
+      </Dropdown>
     </OverflowContainer>`
 };
