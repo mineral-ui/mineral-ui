@@ -25,18 +25,19 @@ Statuses:
 |---|---|
 | [Button](/components/button) | [available] |
 | [Card](/components/card) | [available] |
-| DateInput | [planned] |
 | [Dropdown](/components/dropdown) ~ new | [available] |
-| Navigation | [planned] |
-| Grid | [planned] |
 | [Icon](/components/icon) | [available] |
 | [Link](/components/link) | [available] |
 | [Menu](/components/menu) ~ new | [available] |
-| NumericInput | [planned] |
 | [Popover](/components/popover) | [available] |
+| [ThemeProvider](/components/theme-provider) | [available] |
+| [Utils](/components/utils) | [available] |
+| NumericInput | [planned] |
 | Select | [planned] |
 | TextArea | [planned] |
 | TextInput | [planned] |
-| [ThemeProvider](/components/theme-provider) | [available] |
 | Tooltip | [planned] |
-| [Utils](/components/utils) | [available] |
+| DataTable | |
+| DateInput | |
+| Grid | |
+| Navigation | |

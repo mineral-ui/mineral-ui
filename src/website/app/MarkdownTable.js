@@ -46,14 +46,14 @@ export default function MarkdownTable({ children }: Props) {
     headRow &&
     headRow.props.children
       .filter(cell => cell)
-      .map(cell => (
-        <TableHeaderCell key={cell.key}>{cell.props.children}</TableHeaderCell>
+      .map((cell, index) => (
+        <TableHeaderCell key={index}>{cell.props.children}</TableHeaderCell>
       ));
   const bodyNode = body.find(element => element);
   const bodyRows =
     bodyNode &&
     bodyNode.props.children.filter(row => row).map(row => {
-      const bodyCells = row.props.children.filter(cell => cell).map(cell => {
+      const rowCells = row.props.children.filter(cell => cell).map(cell => {
         let { children: cellReactChildren } = cell.props;
         if (cellReactChildren == null) {
           return <TableCell key={cell.key} />;
@@ -78,7 +78,14 @@ export default function MarkdownTable({ children }: Props) {
         return <TableCell key={cell.key}>{enhancedChildren}</TableCell>;
       });
 
-      return <TableRow key={row.key}>{bodyCells}</TableRow>;
+      // Sometimes marksy returns null if the cell actually contains empty string.
+      // Pad out the length of the rowCells array so there are at least as many
+      // columns as defined in the header
+      while (headCells && rowCells.length < headCells.length) {
+        rowCells.push(<TableCell key={`emptyCell_${rowCells.length}`} />);
+      }
+
+      return <TableRow key={row.key}>{rowCells}</TableRow>;
     });
 
   return (
