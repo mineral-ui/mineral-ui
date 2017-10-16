@@ -18,7 +18,7 @@
 import React from 'react';
 import { createStyledComponent } from '../../utils';
 import Link from './Link';
-import pages from './pages';
+import sections from './pages';
 
 type Props = {
   demos: Object
@@ -72,9 +72,6 @@ const styles = {
   nav: ({ theme }) => ({
     padding: theme.space_inset_md,
     backgroundColor: theme.slate_10
-  }),
-  status: ({ theme }) => ({
-    fontWeight: theme.fontWeight_regular
   })
 };
 
@@ -83,7 +80,6 @@ const Heading = createStyledComponent('h2', styles.heading);
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
 const Logo = createStyledComponent(Link, styles.logo);
-const Status = createStyledComponent(Link, styles.status);
 
 export default function Nav({ demos, ...restProps }: Props) {
   const rootProps = { ...restProps };
@@ -97,11 +93,22 @@ export default function Nav({ demos, ...restProps }: Props) {
     );
   });
 
-  const pageLinks = pages.map((page, i) => {
+  const nav = sections.map((section, index) => {
     return (
-      <ListItem key={`page-${i}`}>
-        {!page.hiddenInNav && <Link to={page.path}>{page.title}</Link>}
-      </ListItem>
+      <div key={index}>
+        <Heading>{section.heading}</Heading>
+        <List>
+          {section.pages.map(page => {
+            return (
+              !page.hiddenInNav && (
+                <ListItem key={page.title}>
+                  <Link to={page.path}>{page.title}</Link>
+                </ListItem>
+              )
+            );
+          })}
+        </List>
+      </div>
     );
   });
 
@@ -111,10 +118,8 @@ export default function Nav({ demos, ...restProps }: Props) {
         <span>M</span>
         <h1>Mineral UI</h1>
       </Logo>
-      <List>{pageLinks}</List>
-      <Heading>
-        Components <Status href="/component-status">[status]</Status>
-      </Heading>
+      {nav}
+      <Heading>Components</Heading>
       <List>{demoLinks}</List>
     </Root>
   );

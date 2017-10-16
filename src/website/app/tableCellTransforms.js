@@ -82,13 +82,8 @@ export const isAvailable = (child: React$Node, index: number) => {
   }
 
   return (
-    <Available>
-      <IconCheck
-        color={color.green_60}
-        size="large"
-        key={`icon-${index}`}
-        title="available"
-      />
+    <Available key={`icon-${index}`}>
+      <IconCheck color={color.green_60} size="large" title="available" />
       <span>available</span>
     </Available>
   );
@@ -100,11 +95,10 @@ export const isInDevelopment = (child: React$Node, index: number) => {
   }
 
   return (
-    <InDevelopment>
+    <InDevelopment key={`icon-${index}`}>
       <IconSlowMotionVideo
         color={color.yellow_60}
         size="large"
-        key={`icon-${index}`}
         title="in development"
       />
       <span>in development</span>
@@ -118,13 +112,8 @@ export const isPlanned = (child: React$Node, index: number) => {
   }
 
   return (
-    <Planned>
-      <IconAssignment
-        size="large"
-        color={color.blue_60}
-        key={`icon-${index}`}
-        title="in review"
-      />
+    <Planned key={`icon-${index}`}>
+      <IconAssignment size="large" color={color.blue_60} title="in review" />
       <span>planned</span>
     </Planned>
   );
@@ -136,13 +125,8 @@ export const isDeprecated = (child: React$Node, index: number) => {
   }
 
   return (
-    <Deprecated>
-      <IconWarning
-        color={color.red_60}
-        size="large"
-        key={`icon-${index}`}
-        title="deprecated"
-      />
+    <Deprecated key={`icon-${index}`}>
+      <IconWarning color={color.red_60} size="large" title="deprecated" />
       <span>deprecated</span>
     </Deprecated>
   );

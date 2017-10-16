@@ -22,24 +22,28 @@ import ComponentDoc from './pages/ComponentDoc';
 import ComponentDocExample from './ComponentDocExample';
 import Link from './Link';
 import LiveProvider from './LiveProvider';
-import pages from './pages';
+import sections from './pages';
 
 type Props = {
   demos: Object
 };
 
 export default function Router({ demos }: Props) {
-  const routes = [];
-
-  pages.map((page, index) => {
-    routes.push(
-      <Route
-        key={`page-${index}`}
-        path={page.path}
-        render={() => <page.component />}
-      />
-    );
-  });
+  const routes = sections
+    .map(section => section.pages)
+    // flatten array of pages arrays
+    .reduce((acc, pages) => {
+      return [...acc, ...pages];
+    }, [])
+    .map((page, index) => {
+      return (
+        <Route
+          key={`page-${index}`}
+          path={page.path}
+          render={() => <page.component />}
+        />
+      );
+    });
 
   return (
     <Switch>

@@ -41,7 +41,7 @@ const Root = createStyledComponent('span', ({ theme, variant }) => {
     padding: `${parseFloat(theme.space_inset_sm) / 2}em
       ${theme.space_inset_sm}`,
     textTransform: 'uppercase',
-    verticalAlign: 'text-top',
+    verticalAlign: 'middle',
     whiteSpace: 'nowrap'
   };
 });

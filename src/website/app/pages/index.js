@@ -24,40 +24,54 @@ import ComponentStatus from './ComponentStatus';
 type Page = {
   component: React$ComponentType<*>,
   id?: string,
-  path?: string,
+  path: string,
   hiddenInNav?: boolean,
   title: string
 };
 
 type Pages = Array<Page>;
 
-const pages: Pages = [
+type Section = {
+  heading: string,
+  pages: Pages
+};
+
+const sections: Array<Section> = [
   {
-    component: GettingStarted,
-    path: '/getting-started',
-    title: 'Getting Started'
+    heading: 'Guidelines',
+    pages: [
+      {
+        component: GettingStarted,
+        path: '/getting-started',
+        title: 'Getting Started'
+      },
+      {
+        component: Color,
+        path: '/color',
+        title: 'Color'
+      },
+      {
+        component: Typography,
+        path: '/typography',
+        title: 'Typography'
+      },
+      {
+        component: Theming,
+        path: '/theming',
+        title: 'Theming'
+      }
+    ]
   },
   {
-    component: Color,
-    path: '/color',
-    title: 'Color'
-  },
-  {
-    component: Typography,
-    path: '/typography',
-    title: 'Typography'
-  },
-  {
-    component: Theming,
-    path: '/theming',
-    title: 'Theming'
-  },
-  {
-    component: ComponentStatus,
-    hiddenInNav: true,
-    path: '/component-status',
-    title: 'Component Status'
+    heading: 'What’s New',
+    pages: [
+      {
+        component: ComponentStatus,
+        path: '/component-status',
+        title: 'Component Status'
+      }
+    ]
   }
 ];
 
-export default pages;
+export default sections;

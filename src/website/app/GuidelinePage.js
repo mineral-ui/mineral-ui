@@ -30,12 +30,13 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   // There might be more than one paragraph element in the Intro section.
   // marksy generates a flat-ish tree of elements, so body copy Ps are on the same level
   // as the intro paragraph.
-  '& > div > h2 ~ p': {
+  '& > div > h2 ~ p, & > div > ul ~ p': {
     fontSize: theme.fontSize_prose,
     margin: `0 0 ${theme.lineHeight * 1.5}em`
   }
 }));
 
-export default function GuidelinePage({ children }: Props) {
-  return <Root>{children}</Root>;
+export default function GuidelinePage({ children, ...restProps }: Props) {
+  const rootProps = { ...restProps };
+  return <Root {...rootProps}>{children}</Root>;
 }
