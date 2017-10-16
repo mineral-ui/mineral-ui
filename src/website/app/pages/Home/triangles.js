@@ -1073,14 +1073,14 @@ FSS.SVGRenderer.prototype.formatStyle = function(color) {
   return style;
 };
 
-export default function triangles(xPos = 250) {
+export default function triangles(xPos = 100, yPos = 300) {
   //------------------------------
   // Mesh Properties
   //------------------------------
   var MESH = {
     width: 1.5, // 1.2
     height: 1.5, // 1.2
-    slices: 50, // 250
+    slices: 100, // 250
     ambient: '#59728c',
     diffuse: '#FFFFFF'
   };
@@ -1091,7 +1091,7 @@ export default function triangles(xPos = 250) {
   var LIGHT = {
     count: 1,
     xPos,
-    yPos: 200,
+    yPos,
     zOffset: 100,
     ambient: '#293234',
     diffuse: '#59728c',
@@ -1120,6 +1120,7 @@ export default function triangles(xPos = 250) {
     addEventListeners();
     resize(container.offsetWidth, container.offsetHeight);
     animate();
+    moveLight();
   }
 
   function createRenderer() {
@@ -1164,6 +1165,25 @@ export default function triangles(xPos = 250) {
     LIGHT.proxy = light;
     LIGHT.pickedup = true;
     LIGHT.currIndex++;
+  }
+
+  function moveLight() {
+    for (let i = 0; i <= xPos + 300; i += 2) {
+      adjustLight(i);
+    }
+
+    function adjustLight(i) {
+      setTimeout(() => {
+        LIGHT.xPos += 1;
+        LIGHT.yPos -= 2;
+        LIGHT.proxy.setPosition(
+          LIGHT.xPos,
+          LIGHT.yPos,
+          LIGHT.proxy.position[2]
+        );
+        // console.log(`x: ${LIGHT.xPos}, y: ${LIGHT.yPos}`);
+      }, 30 * i);
+    }
   }
 
   // Resize canvas
