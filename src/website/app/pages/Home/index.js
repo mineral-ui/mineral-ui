@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import Media from 'react-media';
 import {
   createStyledComponent,
   createThemedComponent,
@@ -28,8 +29,9 @@ import Footer from '../../Footer';
 import Link from '../../Link';
 import Logo from '../../Logo';
 import Markdown from '../../Markdown';
-import _Background from './Background';
 import Header from './Header';
+import _Hero from './Hero';
+import _Section from './Section';
 import intro from './intro.md';
 import first from './first.md';
 
@@ -59,20 +61,26 @@ const heroTheme = {
 
 const Root = createStyledComponent(
   'div',
-  {},
+  ({ theme }) => ({
+    paddingBottom: theme.space_inset_md
+  }),
   {
     includeStyleReset: true
   }
 );
 
+const Section = createStyledComponent(_Section, ({ clip, theme }) => ({
+  paddingBottom:
+    clip || clip === undefined
+      ? `${parseFloat(theme.space_stack_sm) * 24}em`
+      : `${parseFloat(theme.space_stack_sm) * 16}em`,
+  paddingTop: `${parseFloat(theme.space_stack_sm) * 16}em`
+}));
+
 // $FlowFixMe
-const Background = createStyledComponent(_Background, {
-  height: '105vh',
-  left: 0,
-  position: 'absolute',
-  right: 0,
-  transform: 'skewY(-10deg) translateY(-10vh)',
-  zIndex: '-1'
+const Hero = createStyledComponent(_Hero, {
+  height: '90vh',
+  maxHeight: '700px'
 });
 
 const Buttons = createStyledComponent('div', ({ theme }) => ({
@@ -112,7 +120,7 @@ const Intro = createStyledComponent(Markdown, {
   }
 });
 
-const First = createStyledComponent('div', ({ theme }) => ({
+const First = createStyledComponent(Section, ({ theme }) => ({
   alignItems: 'flex-end',
   display: 'flex',
   justifyContent: 'flex-end',
@@ -128,47 +136,50 @@ const First = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-const Main = createStyledComponent('div', ({ theme }) => ({
-  padding: `0 ${parseFloat(theme.space_inset_sm) * 4}em`,
-
-  '@media(min-width: 46em)': {
-    padding: `0 ${parseFloat(theme.space_inset_sm) * 16}em`
-  }
-}));
-
 const CallsToAction = () => {
   return (
-    <Buttons>
-      <Button primary size="jumbo">
-        Get Started
-      </Button>
-      <Button size="jumbo">View on GitHub</Button>
-    </Buttons>
+    <Media query="(min-width: 36em)">
+      {matches =>
+        matches ? (
+          <Buttons>
+            <Button primary size="jumbo">
+              Get Started
+            </Button>
+            <Button size="jumbo">View on GitHub</Button>
+          </Buttons>
+        ) : (
+          <Button fullWidth primary size="jumbo">
+            Get Started
+          </Button>
+        )}
+    </Media>
   );
 };
 
-export default function Theming() {
+export default function Home() {
   return (
     <ThemeProvider theme={homeTheme}>
       <Root>
-        <Background />
         <ThemeProvider theme={heroTheme}>
-          <Header />
-        </ThemeProvider>
-        <Main>
-          <ThemeProvider theme={heroTheme}>
+          <Hero>
+            <Header />
             <Intro anchors={false} scope={{ CallsToAction }}>
               {intro}
             </Intro>
-          </ThemeProvider>
-          <First>
-            <Markdown anchors={false} scope={{ IconChevronRight, CTALink }}>
-              {first}
-            </Markdown>
-            <ColoredLogo />
-          </First>
+          </Hero>
+        </ThemeProvider>
+        <First backgroundColor="#dd7c59" point={3 / 4}>
+          <Markdown anchors={false} scope={{ IconChevronRight, CTALink }}>
+            {first}
+          </Markdown>
+          <ColoredLogo />
+        </First>
+        <Section point={1 / 2} style={{ backgroundColor: '#dd7c59' }}>
+          <div style={{ height: '20em' }} />
+        </Section>
+        <Section clip={false}>
           <Footer />
-        </Main>
+        </Section>
       </Root>
     </ThemeProvider>
   );

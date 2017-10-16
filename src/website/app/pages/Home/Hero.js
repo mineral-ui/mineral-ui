@@ -17,25 +17,25 @@
 /* @flow */
 import React, { Component } from 'react';
 import { createStyledComponent } from '../../../../utils';
+import Section from './Section';
 import triangles from './triangles';
 
-type Props = {};
+type Props = {
+  children?: React$Node
+};
 
 type State = {};
-
-const Container = createStyledComponent('div', {
-  position: 'relative'
-});
 
 const Output = createStyledComponent('div', {
   bottom: 0,
   left: 0,
   position: 'absolute',
   right: 0,
-  top: 0
+  top: 0,
+  zIndex: '-1'
 });
 
-export default class Background extends Component<Props, State> {
+export default class Hero extends Component<Props, State> {
   componentDidMount() {
     triangles();
   }
@@ -44,9 +44,10 @@ export default class Background extends Component<Props, State> {
 
   render() {
     return (
-      <Container id="container" {...this.props}>
+      <Section id="container" {...this.props}>
         <Output id="output" />
-      </Container>
+        {this.props.children}
+      </Section>
     );
   }
 }
