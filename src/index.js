@@ -22,11 +22,18 @@ export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
 export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
 export {
+  blue,
+  dusk,
+  indigo,
+  lime,
+  mineral,
+  purple,
+  sky,
+  slate,
+  teal,
   color,
-  createStyledComponent,
-  createThemedComponent,
-  mineralTheme,
   styleVariables
-} from './utils';
+} from './themes';
+export { default as ThemeProvider } from './ThemeProvider';
+export { createStyledComponent, createThemedComponent } from './utils';

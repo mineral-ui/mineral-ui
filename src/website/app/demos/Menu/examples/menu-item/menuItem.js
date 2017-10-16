@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { mineralTheme } from '../../../../../../utils';
+import mineralTheme from '../../../../../../themes/mineral';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 

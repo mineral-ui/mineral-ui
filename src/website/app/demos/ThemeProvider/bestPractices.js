@@ -21,7 +21,7 @@ export default [
     title: 'override theme variables at the top level',
     example: `
 \`\`\`
-import { mineralTheme } from 'mineral-ui/utils';
+import mineralTheme from 'mineral-ui/themes/mineral';
 
 <ThemeProvider theme={{
   ...mineralTheme,

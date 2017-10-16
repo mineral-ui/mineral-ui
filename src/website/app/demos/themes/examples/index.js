@@ -15,11 +15,7 @@
  */
 
 /* @flow */
-/**
-  * Helper to convert a px value to ems, relative to the base font size
-  */
-import fontSize_base from '../themes/fontSizeBase';
+import available from './available';
+import themes from './themes';
 
-export default function pxToEm(value: number) {
-  return `${value / fontSize_base}em`;
-}
+export default [themes, available];

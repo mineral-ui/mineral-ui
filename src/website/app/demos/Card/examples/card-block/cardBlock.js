@@ -17,9 +17,9 @@
 /* @flow */
 import {
   createStyledComponent,
-  getNormalizedValue,
-  mineralTheme
+  getNormalizedValue
 } from '../../../../../../utils';
+import mineralTheme from '../../../../../../themes/mineral';
 import Card, {
   CardBlock as _CardBlock,
   CardTitle

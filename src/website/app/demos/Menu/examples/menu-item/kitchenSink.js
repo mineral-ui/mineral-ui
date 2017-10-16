@@ -15,11 +15,8 @@
  */
 
 /* @flow */
-import {
-  createStyledComponent,
-  mineralTheme,
-  pxToEm
-} from '../../../../../../utils';
+import { createStyledComponent, pxToEm } from '../../../../../../utils';
+import mineralTheme from '../../../../../../themes/mineral';
 import IconCloud from '../../../../../../Icon/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import _DemoLayout from '../../components/DemoLayout';

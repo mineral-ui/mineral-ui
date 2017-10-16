@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { mineralTheme } from '../../../../../../utils';
+import mineralTheme from '../../../../../../themes/mineral';
 import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 

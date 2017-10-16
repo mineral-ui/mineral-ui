@@ -15,11 +15,22 @@
  */
 
 /* @flow */
-/**
-  * Helper to convert a px value to ems, relative to the base font size
-  */
-import fontSize_base from '../themes/fontSizeBase';
+import React from 'react';
+import ThemeProvider from '../../../../../ThemeProvider';
+import Button from '../../../../../Button';
+import IconFavorite from '../../../../../Icon/IconFavorite';
 
-export default function pxToEm(value: number) {
-  return `${value / fontSize_base}em`;
-}
+const icon = <IconFavorite />;
+
+export default {
+  id: 'themes',
+  title: 'Example',
+  description: `Themes are applied via the [ThemeProvider](/components/theme-provider) which by default uses the mineral theme.`,
+
+  scope: { Button, icon, ThemeProvider },
+  source: `
+    <ThemeProvider>
+      <Button primary iconStart={icon}>I like the default</Button>
+    </ThemeProvider>
+  `
+};
