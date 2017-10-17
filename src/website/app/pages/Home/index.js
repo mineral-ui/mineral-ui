@@ -20,9 +20,10 @@ import Media from 'react-media';
 import {
   createStyledComponent,
   createThemedComponent,
-  color
+  mineralTheme,
+  pxToEm
 } from '../../../../utils';
-import Button from '../../../../Button';
+import _Button from '../../../../Button';
 import IconChevronRight from '../../../../Icon/IconChevronRight';
 import ThemeProvider from '../../../../ThemeProvider';
 import Footer from '../../Footer';
@@ -36,27 +37,40 @@ import intro from './intro.md';
 import first from './first.md';
 
 const homeTheme = {
-  Button_backgroundColor_primary: color.orange_60,
-  Button_backgroundColor_primary_active: color.orange_70,
-  Button_backgroundColor_primary_focus: color.orange_60,
-  Button_backgroundColor_primary_hover: color.orange_50,
+  fontFamily: null,
+  fontFamily_headline: `nimbus-sans, ${mineralTheme.fontFamily_system}`,
 
-  Button_color_text: color.orange_60,
+  Button_backgroundColor_primary: 'hsl(13, 62%, 58%)',
+  Button_backgroundColor_primary_active: 'hsl(16, 68%, 53%)',
+  Button_backgroundColor_primary_focus: 'hsl(13, 62%, 58%)',
+  Button_backgroundColor_primary_hover: 'hsl(16, 68%, 63%)',
 
-  Heading_color_3: color.orange_60
+  Button_color_text: 'hsl(13, 62%, 58%)',
+
+  Heading_color_3: 'hsl(13, 62%, 58%)',
+  Heading_fontFamily: `nimbus-sans, ${mineralTheme.fontFamily_system}`,
+  Heading_fontSize_2: pxToEm(59),
+  Heading_fontSize_3: pxToEm(40),
+  Heading_fontWeight_1: '300',
+  Heading_fontWeight_2: '300',
+  Heading_fontWeight_3: '300',
+  Heading_lineHeight: '1.1'
 };
 
 const heroTheme = {
-  borderColor: color.gray_90,
-  color_caption: color.gray_50,
-  color_text: color.white,
+  // $FlowFixMe
+  borderColor: mineralTheme.color_gray_90,
+  // $FlowFixMe
+  color_caption: mineralTheme.color_gray_50,
+  color_text: mineralTheme.color_white,
 
-  Heading_color_2: color.white,
+  Heading_color_2: mineralTheme.color_white,
 
-  Link_color: color.white,
-  Link_color_active: color.gray_10,
-  Link_color_hover: color.white,
-  Link_color_focus: color.white
+  Link_color: mineralTheme.color_white,
+  // $FlowFixMe
+  Link_color_active: mineralTheme.color_gray_10,
+  Link_color_hover: mineralTheme.color_white,
+  Link_color_focus: mineralTheme.color_white
 };
 
 const Root = createStyledComponent(
@@ -77,10 +91,8 @@ const Section = createStyledComponent(_Section, ({ clip, theme }) => ({
   paddingTop: `${parseFloat(theme.space_stack_sm) * 16}em`
 }));
 
-// $FlowFixMe
-const Hero = createStyledComponent(_Hero, {
-  height: '90vh',
-  maxHeight: '700px'
+const Button = createThemedComponent(_Button, {
+  ButtonContent_fontSize: '1.1em'
 });
 
 const Buttons = createStyledComponent('div', ({ theme }) => ({
@@ -91,21 +103,49 @@ const Buttons = createStyledComponent('div', ({ theme }) => ({
 
 const ColoredLogo = createStyledComponent(Logo, {
   '& .band-1': {
-    fill: 'rgb(225,169,90)'
+    fill: 'hsl(35, 69%, 62%)'
   },
   '& .band-2': {
-    fill: 'rgb(214,112,83)'
+    fill: 'hsl(13, 62%, 58%)'
   },
   '& .band-3': {
-    fill: 'rgb(89,118,136)'
+    fill: 'hsl(203, 21%, 44%)'
   }
 });
 
 const CTALink = createThemedComponent(Link, {
-  Link_color: color.gray_80,
-  Link_color_active: color.gray_90,
-  Link_color_hover: color.gray_70,
-  Link_color_focus: color.gray_80
+  // $FlowFixMe
+  Link_color: mineralTheme.color_gray_80,
+  // $FlowFixMe
+  Link_color_active: mineralTheme.color_gray_90,
+  // $FlowFixMe
+  Link_color_hover: mineralTheme.color_gray_70,
+  // $FlowFixMe
+  Link_color_focus: mineralTheme.color_gray_80
+});
+
+const First = createStyledComponent(Section, ({ theme }) => ({
+  '& > div': {
+    alignItems: 'flex-end',
+    display: 'flex',
+    justifyContent: 'flex-end'
+  },
+
+  '& > div > div': {
+    textAlign: 'right',
+    marginRight: theme.space_inline_xl,
+    width: '50%'
+  },
+
+  '& svg': {
+    width: '20%'
+  }
+}));
+
+// $FlowFixMe
+const Hero = createStyledComponent(_Hero, {
+  height: '90vh',
+  maxHeight: '700px'
 });
 
 const Intro = createStyledComponent(Markdown, {
@@ -119,22 +159,6 @@ const Intro = createStyledComponent(Markdown, {
     width: '50%'
   }
 });
-
-const First = createStyledComponent(Section, ({ theme }) => ({
-  alignItems: 'flex-end',
-  display: 'flex',
-  justifyContent: 'flex-end',
-
-  '& > div': {
-    textAlign: 'right',
-    marginRight: theme.space_inline_xl,
-    width: '50%'
-  },
-
-  '& > svg': {
-    width: '20%'
-  }
-}));
 
 const CallsToAction = () => {
   return (
@@ -168,13 +192,13 @@ export default function Home() {
             </Intro>
           </Hero>
         </ThemeProvider>
-        <First backgroundColor="#dd7c59" point={3 / 4}>
+        <First backgroundColor="hsl(13, 62%, 58%)" point={3 / 4}>
           <Markdown anchors={false} scope={{ IconChevronRight, CTALink }}>
             {first}
           </Markdown>
           <ColoredLogo />
         </First>
-        <Section point={1 / 2} style={{ backgroundColor: '#dd7c59' }}>
+        <Section point={1 / 2} style={{ backgroundColor: 'hsl(13, 62%, 58%)' }}>
           <div style={{ height: '20em' }} />
         </Section>
         <Section clip={false}>

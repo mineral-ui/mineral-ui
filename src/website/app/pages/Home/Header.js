@@ -19,7 +19,9 @@ import React, { Component } from 'react';
 import Media from 'react-media';
 import {
   createStyledComponent,
-  createThemedComponent
+  createThemedComponent,
+  getNormalizedValue,
+  pxToEm
 } from '../../../../utils';
 import Button from '../../../../Button';
 import IconArrowDropDown from '../../../../Icon/IconArrowDropDown';
@@ -35,13 +37,13 @@ type State = {
 };
 
 const Root = createStyledComponent('div', ({ isMenuOpen, theme }) => ({
-  alignItems: 'center',
+  alignItems: 'flex-end',
   display: 'flex',
   justifyContent: 'space-between',
   marginBottom: `${parseFloat(theme.space_inset_sm) * 16}em`,
   paddingTop: `${parseFloat(theme.space_inset_sm) * 8}em`,
 
-  '@media(max-width: 36em)': {
+  '@media(max-width: 38.999em)': {
     marginBottom: isMenuOpen
       ? `${parseFloat(theme.space_inset_sm) * 24}em`
       : `${parseFloat(theme.space_inset_sm) * 8}em`,
@@ -56,31 +58,41 @@ const Root = createStyledComponent('div', ({ isMenuOpen, theme }) => ({
 }));
 
 const Link = createStyledComponent(_Link, {
-  textTransform: 'uppercase'
+  fontSize: pxToEm(18)
 });
 
-const Logotype = createStyledComponent(Heading, ({ theme }) => ({
-  alignItems: 'center',
-  display: 'flex',
-  fontWeight: theme.fontWeight_semiBold,
-  margin: 0,
+const Logotype = createStyledComponent(Heading, ({ theme }) => {
+  const fontSize = pxToEm(40);
+  const marginRight = getNormalizedValue(theme.space_inline_sm, fontSize);
+  const width = '0.65em';
 
-  '@media(min-width: 46em)': {
-    margin: `0 0 0 -${parseFloat(theme.space_inline_sm) + 1}em`
-  },
+  return {
+    alignItems: 'flex-end',
+    display: 'flex',
+    fontSize,
+    lineHeight: 1,
+    margin: 0,
 
-  '& > svg': {
-    marginRight: theme.space_inline_sm,
-    width: '1em',
+    '@media(min-width: 48em)': {
+      margin: `0 0 0 -${parseFloat(marginRight) + parseFloat(width)}em`
+    },
 
-    '& [class*="shape"]': {
-      fill: theme.color_white
+    '& > svg': {
+      bottom: '0.18em',
+      marginRight,
+      position: 'relative',
+      width,
+
+      '& [class*="shape"]': {
+        fill: theme.color_white
+      }
     }
-  }
-}));
+  };
+});
 
 const MenuButton = createThemedComponent(Button, ({ theme }) => ({
   borderColor_focus: theme.color_white,
+  fontFamily: theme.fontFamily_headline,
   Button_color_text_minimal: theme.color_white,
   Button_backgroundColor_minimal_hover: 'rgba(255,255,255,0.2)',
   Button_backgroundColor_minimal_active: 'rgba(255,255,255,0.1)',
@@ -95,12 +107,12 @@ const Popover = createThemedComponent(_Popover, {
 });
 
 const StyledNav = createStyledComponent('nav', ({ theme }) => ({
-  '@media(max-width: 36em)': {
+  '@media(max-width: 38.999em)': {
     width: '100vw'
   },
 
   '& > a': {
-    '@media(max-width: 36em)': {
+    '@media(max-width: 38.999em)': {
       display: 'block',
       textAlign: 'center'
     }
@@ -109,7 +121,7 @@ const StyledNav = createStyledComponent('nav', ({ theme }) => ({
   '& > a + a': {
     marginTop: theme.space_stack_sm,
 
-    '@media(min-width: 36em)': {
+    '@media(min-width: 39em)': {
       marginLeft: theme.space_inline_lg,
       marginTop: 0
     }
@@ -122,7 +134,7 @@ const Nav = () => {
       <Link to="/color">Guidelines</Link>
       <Link to="/whats-new">What’s New</Link>
       <Link to="/component-status">Components</Link>
-      <Media query="(max-width: 36em)">
+      <Media query="(max-width: 38.999em)">
         {matches =>
           matches ? (
             <Link to="https://github.com/mineral-ui/mineral-ui">
@@ -170,16 +182,16 @@ export default class Header extends Component<Props, State> {
     return (
       <Root {...rootProps}>
         <Logotype level={1} ariaLabel="Mineral UI">
-          <Logo /> MNRL
+          <Logo /> Mineral
         </Logotype>
-        <Media query="(min-width: 36em)">
+        <Media query="(min-width: 39em)">
           {matches =>
             matches ? (
               <Nav />
             ) : (
               <Popover {...popoverProps}>
                 <MenuButton iconEnd={<IconArrowDropDown />} minimal>
-                  Menu
+                  MENU
                 </MenuButton>
               </Popover>
             )}

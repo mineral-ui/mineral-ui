@@ -39,6 +39,7 @@ const componentTheme = baseTheme => ({
   Heading_color_4: baseTheme.color_gray_80,
   Heading_color_5: baseTheme.color_text,
   Heading_color_6: baseTheme.color_gray_80,
+  Heading_fontFamily: baseTheme.fontFamily,
   Heading_fontSize_1: baseTheme.fontSize_h1,
   Heading_fontSize_2: baseTheme.fontSize_h2,
   Heading_fontSize_3: baseTheme.fontSize_h3,
@@ -51,6 +52,7 @@ const componentTheme = baseTheme => ({
   Heading_fontWeight_4: baseTheme.fontWeight_bold,
   Heading_fontWeight_5: baseTheme.fontWeight_bold,
   Heading_fontWeight_6: baseTheme.fontWeight_regular,
+  Heading_lineHeight: baseTheme.lineHeight,
   Heading_marginMultiplier_1: 6,
   Heading_marginMultiplier_2: 5,
   Heading_marginMultiplier_3: 4,
@@ -66,8 +68,10 @@ const headingStyles = ({ level, theme: baseTheme }) => {
 
   return {
     color: theme[`Heading_color_${level}`],
+    fontFamily: theme.Heading_fontFamily,
     fontSize: theme[`Heading_fontSize_${level}`],
     fontWeight: theme[`Heading_fontWeight_${level}`],
+    lineHeight: theme.Heading_lineHeight,
     margin: `${theme[`Heading_marginMultiplier_${level}`] *
       parseFloat(
         getNormalizedValue(

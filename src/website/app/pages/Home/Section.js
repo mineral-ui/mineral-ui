@@ -38,11 +38,16 @@ const Root = createStyledComponent('div', ({ clip, theme }) => ({
   paddingRight: `${parseFloat(theme.space_inset_sm) * 4}em`,
   position: 'relative',
 
-  '@media(min-width: 46em)': {
+  '@media(min-width: 48em)': {
     paddingLeft: `${parseFloat(theme.space_inset_sm) * 16}em`,
     paddingRight: `${parseFloat(theme.space_inset_sm) * 16}em`
   }
 }));
+
+const Inner = createStyledComponent('div', {
+  margin: '0 auto',
+  maxWidth: '80em'
+});
 
 const Left = createStyledComponent(
   'span',
@@ -83,9 +88,11 @@ export default function Section({
   };
   return (
     <Root {...restProps}>
-      {children}
-      {clip && <Left {...props} />}
-      {clip && <Right {...props} />}
+      <Inner>
+        {children}
+        {clip && <Left {...props} />}
+        {clip && <Right {...props} />}
+      </Inner>
     </Root>
   );
 }
