@@ -52,6 +52,24 @@ const styles = {
       theme.fontSize_ui
     ),
     overflow: 'auto'
+  }),
+  liveError: ({ theme }) => ({
+    backgroundColor: '#fce3e3', // color.red_10
+    color: theme.color_text_danger,
+    fontFamily: theme.fontFamily_monospace,
+    fontSize: theme.fontSize_mouse,
+    lineHeight: theme.lineHeight_prose,
+    overflow: 'auto',
+    padding: '0 0.5rem', // Match value of the live-editor from .prism-code
+    whiteSpace: 'pre',
+
+    '&:first-line': {
+      fontFamily: theme.fontFamily,
+      fontWeight: theme.fontWeight_semiBold,
+      // Can't use margin/padding here, so this is to space off the heading
+      // from the code
+      lineHeight: 2 * theme.lineHeight_prose
+    }
   })
 };
 
@@ -59,6 +77,7 @@ const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
   rootEl: 'div'
 });
 const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
+const MyLiveError = createStyledComponent(LiveError, styles.liveError);
 
 export default function LiveProvider({
   backgroundColor,
@@ -76,7 +95,7 @@ export default function LiveProvider({
         backgroundColor={backgroundColor}
         chromeless={chromeless}
       />
-      {!hideSource && [<MyLiveEditor key={0} />, <LiveError key={1} />]}
+      {!hideSource && [<MyLiveEditor key={0} />, <MyLiveError key={1} />]}
     </ReactLiveProvider>
   );
 }
