@@ -147,7 +147,8 @@ export default function createTheme(
     fontFamily: 'Open Sans',
     fontFamily_system:
       '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-    fontFamily_monospace: 'monospace',
+    fontFamily_monospace:
+      '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
 
     fontSize_base,
     fontSize_h1: pxToEm(34),
