@@ -17,9 +17,9 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { canUseEventListeners } from 'exenv';
 import { Manager } from 'react-popper';
 import { createStyledComponent, generateId } from '../utils';
+import EventListener from '../EventListener';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';
 
@@ -111,10 +111,6 @@ export default class Popover extends Component<Props, State> {
 
   popoverTrigger: ?React$Component<*, *>;
 
-  componentWillUnmount() {
-    this.removeDocumentEventListeners();
-  }
-
   render() {
     const {
       children,
@@ -132,11 +128,6 @@ export default class Popover extends Component<Props, State> {
     } = this.props;
 
     const { isOpen } = this.isControlled() ? this.props : this.state;
-    if (isOpen) {
-      this.addDocumentEventListeners();
-    } else {
-      this.removeDocumentEventListeners();
-    }
 
     const rootProps = {
       ...restProps
@@ -184,20 +175,27 @@ export default class Popover extends Component<Props, State> {
       <Root {...rootProps}>
         <PopoverTrigger {...popoverTriggerProps} />
         {isOpen && popoverContent}
+        {isOpen && (
+          <EventListener
+            listeners={[
+              {
+                target: 'document',
+                event: 'click',
+                handler: this.handleDocumentClick,
+                options: true
+              },
+              {
+                target: 'document',
+                event: 'keydown',
+                handler: this.handleDocumentKeydown,
+                options: true
+              }
+            ]}
+          />
+        )}
       </Root>
     );
   }
-
-  addDocumentEventListeners = () => {
-    if (canUseEventListeners) {
-      global.document.addEventListener('click', this.handleDocumentClick, true);
-      global.document.addEventListener(
-        'keydown',
-        this.handleDocumentKeydown,
-        true
-      );
-    }
-  };
 
   close = (event: SyntheticEvent<>) => {
     if (this.isControlled()) {
@@ -268,21 +266,6 @@ export default class Popover extends Component<Props, State> {
   openActions = (event: SyntheticEvent<>) => {
     this.focusTrigger();
     this.props.onOpen && this.props.onOpen(event);
-  };
-
-  removeDocumentEventListeners = () => {
-    if (canUseEventListeners) {
-      global.document.removeEventListener(
-        'click',
-        this.handleDocumentClick,
-        true
-      );
-      global.document.removeEventListener(
-        'keydown',
-        this.handleDocumentKeydown,
-        true
-      );
-    }
   };
 
   toggleOpenState = (event: SyntheticEvent<>) => {
