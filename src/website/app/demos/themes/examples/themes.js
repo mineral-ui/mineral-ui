@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import ThemeProvider from '../../../../../ThemeProvider';
+import { ThemeProvider } from '../../../../../themes';
 import Button from '../../../../../Button';
 import IconFavorite from '../../../../../Icon/IconFavorite';
 

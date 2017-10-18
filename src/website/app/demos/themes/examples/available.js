@@ -16,18 +16,18 @@
 
 /* @flow */
 import React from 'react';
-import ThemeProvider from '../../../../../ThemeProvider';
 import Button from '../../../../../Button';
 import {
-  blue,
-  dusk,
-  indigo,
-  lime,
-  mineral,
-  purple,
-  sky,
-  slate,
-  teal
+  blueTheme,
+  duskTheme,
+  indigoTheme,
+  limeTheme,
+  mineralTheme,
+  purpleTheme,
+  skyTheme,
+  slateTheme,
+  tealTheme,
+  ThemeProvider
 } from '../../../../../themes';
 import IconFavorite from '../../../../../Icon/IconFavorite';
 
@@ -39,25 +39,25 @@ export default {
   description: `To apply a different theme, simply import it, and pass it to your [ThemeProvider](/components/theme-provider).
 
 \`\`\`js
-import lime from 'mineral-ui/themes/lime'; // Available themes: blue, dusk, indigo, lime, mineral, purple, sky, slate, teal
+import limeTheme from 'mineral-ui/themes/limeTheme'; // Available themes: blueTheme, duskTheme, indigoTheme, limeTheme, mineralTheme, purpleTheme, skyTheme, slateTheme, tealTheme
 \`\`\`
   `,
   scope: {
     Button,
     icon,
     ThemeProvider,
-    blue,
-    dusk,
-    indigo,
-    lime,
-    mineral,
-    purple,
-    sky,
-    slate,
-    teal
+    blueTheme,
+    duskTheme,
+    indigoTheme,
+    limeTheme,
+    mineralTheme,
+    purpleTheme,
+    skyTheme,
+    slateTheme,
+    tealTheme
   },
   source: `
-    <ThemeProvider theme={lime}>
+    <ThemeProvider theme={limeTheme}>
       <Button primary iconStart={icon}>I prefer choice!</Button>
     </ThemeProvider>
   `

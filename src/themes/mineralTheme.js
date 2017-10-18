@@ -15,6 +15,4 @@
  */
 
 /* @flow */
-import createTheme from './createTheme';
-
-export default createTheme('dusk');
+export { default } from './blueTheme';

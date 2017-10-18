@@ -18,3 +18,8 @@ src/Icon/index.js
 src/website/app/demos/Icon/components/categories
 src/website/app/demos/Icon/components/CategoryIndex.js
 !src/Icon/Icon.js # not generated
+
+# Exclude generated files from themes
+src/themes/*Theme.js
+src/themes/index.js
+!src/themes/mineralTheme.js # not generated

@@ -15,6 +15,18 @@
  */
 
 /* @flow */
-import createTheme from './createTheme';
+export default function createColorRamp(
+  key: string, // The key of the color in the color object
+  name: string, // The output key name
+  colors: {} // The palette of colors
+): {
+  [string]: any
+} {
+  const ramp = {};
 
-export default createTheme('lime');
+  for (let index = 10; index <= 100; index += 10) {
+    ramp[`color_${name}_${index}`] = colors[`${key}_${index}`];
+  }
+
+  return ramp;
+}

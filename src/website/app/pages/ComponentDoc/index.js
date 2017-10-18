@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../utils';
-import mineralTheme from '../../../../themes/mineral';
+import { mineralTheme } from '../../../../themes';
 import Heading from '../../Heading';
 import DocBestPractices from './DocBestPractices';
 import DocExamples from './DocExamples';

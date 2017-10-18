@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { ThemeProvider as GlamorousThemeProvider } from 'glamorous';
-import mineralTheme from '../themes/mineral';
+import mineralTheme from '../themes/mineralTheme';
 
 type Props = {
   /** Components to which the theme will be applied */

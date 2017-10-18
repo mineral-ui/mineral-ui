@@ -15,15 +15,19 @@
  */
 
 /* @flow */
-export { default as mineral } from './mineral';
-export { default as blue } from './blue';
-export { default as dusk } from './dusk';
-export { default as indigo } from './indigo';
-export { default as lime } from './lime';
-export { default as purple } from './purple';
-export { default as sky } from './sky';
-export { default as slate } from './slate';
-export { default as teal } from './teal';
-
 export { default as color } from './color';
+export { default as createColorRamp } from './createColorRamp';
 export { default as styleVariables } from './styleVariables';
+export { default as ThemeProvider } from './ThemeProvider';
+
+/* eslint-disable prettier/prettier */
+export { default as mineralTheme } from './mineralTheme';
+export { default as blueTheme } from './blueTheme';
+export { default as duskTheme } from './duskTheme';
+export { default as grayTheme } from './grayTheme';
+export { default as indigoTheme } from './indigoTheme';
+export { default as limeTheme } from './limeTheme';
+export { default as purpleTheme } from './purpleTheme';
+export { default as skyTheme } from './skyTheme';
+export { default as slateTheme } from './slateTheme';
+export { default as tealTheme } from './tealTheme';

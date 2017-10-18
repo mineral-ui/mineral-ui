@@ -19,7 +19,7 @@ import {
   createStyledComponent,
   getNormalizedValue
 } from '../../../../../../utils';
-import mineralTheme from '../../../../../../themes/mineral';
+import { mineralTheme } from '../../../../../../themes';
 import Card, {
   CardBlock as _CardBlock,
   CardTitle

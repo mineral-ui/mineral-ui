@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { withTheme } from 'glamorous';
-import ThemeProvider from '../ThemeProvider';
+import ThemeProvider from '../themes/ThemeProvider';
 
 function getComponentDisplayName(Component: React$ComponentType<*>): string {
   return typeof Component === 'string'

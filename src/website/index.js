@@ -20,7 +20,7 @@ import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { simulations } from 'glamor';
 import 'babel-polyfill';
-import ThemeProvider from '../ThemeProvider';
+import { ThemeProvider } from '../themes';
 import App from './app/App';
 import demos from './app/demos';
 require('./index.css');

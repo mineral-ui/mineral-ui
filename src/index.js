@@ -23,17 +23,17 @@ export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
 export { default as Popover } from './Popover';
 export {
-  blue,
-  dusk,
-  indigo,
-  lime,
-  mineral,
-  purple,
-  sky,
-  slate,
-  teal,
+  blueTheme,
+  duskTheme,
+  indigoTheme,
+  limeTheme,
+  mineralTheme,
+  purpleTheme,
+  skyTheme,
+  slateTheme,
+  tealTheme,
   color,
-  styleVariables
+  styleVariables,
+  ThemeProvider
 } from './themes';
-export { default as ThemeProvider } from './ThemeProvider';
 export { createStyledComponent, createThemedComponent } from './utils';
