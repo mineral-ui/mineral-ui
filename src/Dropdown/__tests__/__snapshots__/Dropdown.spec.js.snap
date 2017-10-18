@@ -359,7 +359,6 @@ exports[`Dropdown demo examples basic 1`] = `
               placement="bottom-start"
             >
               <Popover
-                autoFocus={false}
                 content={
                   <DropdownContent
                     data={
@@ -389,50 +388,35 @@ exports[`Dropdown demo examples basic 1`] = `
                     wide={undefined}
                   />
                 }
+                getTriggerProps={[Function]}
                 hasArrow={true}
                 id="dropdown-42"
                 isOpen={false}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom"
-                trigger={
-                  <PopoverTrigger
-                    aria-activedescendant={undefined}
-                    aria-haspopup={true}
-                    contentId="dropdown-42-dropdownContent"
-                    isOpen={false}
-                    onKeyDown={[Function]}
-                  >
-                    <Button>
-                      Menu
-                    </Button>
-                  </PopoverTrigger>
-                }
                 triggerRef={[Function]}
                 wrapContent={false}
               >
                 <Popover
-                  autoFocus={false}
                   id="dropdown-42"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                 >
                   <Manager
-                    autoFocus={false}
                     className="glamor-5"
                     id="dropdown-42"
                     tag="div"
                   >
                     <div
-                      autoFocus={false}
                       className="glamor-5"
                       id="dropdown-42"
                     >
                       <PopoverTrigger
                         aria-activedescendant={undefined}
                         aria-haspopup={true}
-                        contentId="popover-43-popoverContent"
+                        contentId="dropdown-42-dropdownContent"
                         disabled={undefined}
                         isOpen={false}
                         onClick={[Function]}
@@ -447,10 +431,11 @@ exports[`Dropdown demo examples basic 1`] = `
                             >
                               <Button
                                 aria-activedescendant={undefined}
-                                aria-describedby="popover-43-popoverContent"
+                                aria-describedby="dropdown-42-dropdownContent"
                                 aria-disabled={undefined}
                                 aria-expanded={false}
                                 aria-haspopup={true}
+                                aria-owns="dropdown-42-dropdownContent"
                                 disabled={undefined}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -458,10 +443,11 @@ exports[`Dropdown demo examples basic 1`] = `
                               >
                                 <glamorous(button)
                                   aria-activedescendant={undefined}
-                                  aria-describedby="popover-43-popoverContent"
+                                  aria-describedby="dropdown-42-dropdownContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
                                   aria-haspopup={true}
+                                  aria-owns="dropdown-42-dropdownContent"
                                   disabled={undefined}
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
@@ -473,10 +459,11 @@ exports[`Dropdown demo examples basic 1`] = `
                                 >
                                   <button
                                     aria-activedescendant={undefined}
-                                    aria-describedby="popover-43-popoverContent"
+                                    aria-describedby="dropdown-42-dropdownContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-42-dropdownContent"
                                     className="glamor-2"
                                     disabled={undefined}
                                     onClick={[Function]}
@@ -961,7 +948,6 @@ exports[`Dropdown demo examples controlled 1`] = `
                     placement="bottom-start"
                   >
                     <Popover
-                      autoFocus={false}
                       content={
                         <DropdownContent
                           data={
@@ -991,50 +977,35 @@ exports[`Dropdown demo examples controlled 1`] = `
                           wide={undefined}
                         />
                       }
+                      getTriggerProps={[Function]}
                       hasArrow={true}
                       id="dropdown-56"
                       isOpen={false}
                       onClose={[Function]}
                       onOpen={[Function]}
                       placement="bottom"
-                      trigger={
-                        <PopoverTrigger
-                          aria-activedescendant={undefined}
-                          aria-haspopup={true}
-                          contentId="dropdown-56-dropdownContent"
-                          isOpen={false}
-                          onKeyDown={[Function]}
-                        >
-                          <Button>
-                            Open Dropdown
-                          </Button>
-                        </PopoverTrigger>
-                      }
                       triggerRef={[Function]}
                       wrapContent={false}
                     >
                       <Popover
-                        autoFocus={false}
                         id="dropdown-56"
                         isOpen={false}
                         onClose={[Function]}
                         onOpen={[Function]}
                       >
                         <Manager
-                          autoFocus={false}
                           className="glamor-5"
                           id="dropdown-56"
                           tag="div"
                         >
                           <div
-                            autoFocus={false}
                             className="glamor-5"
                             id="dropdown-56"
                           >
                             <PopoverTrigger
                               aria-activedescendant={undefined}
                               aria-haspopup={true}
-                              contentId="popover-57-popoverContent"
+                              contentId="dropdown-56-dropdownContent"
                               disabled={undefined}
                               isOpen={false}
                               onClick={[Function]}
@@ -1049,10 +1020,11 @@ exports[`Dropdown demo examples controlled 1`] = `
                                   >
                                     <Button
                                       aria-activedescendant={undefined}
-                                      aria-describedby="popover-57-popoverContent"
+                                      aria-describedby="dropdown-56-dropdownContent"
                                       aria-disabled={undefined}
                                       aria-expanded={false}
                                       aria-haspopup={true}
+                                      aria-owns="dropdown-56-dropdownContent"
                                       disabled={undefined}
                                       onClick={[Function]}
                                       onKeyDown={[Function]}
@@ -1060,10 +1032,11 @@ exports[`Dropdown demo examples controlled 1`] = `
                                     >
                                       <glamorous(button)
                                         aria-activedescendant={undefined}
-                                        aria-describedby="popover-57-popoverContent"
+                                        aria-describedby="dropdown-56-dropdownContent"
                                         aria-disabled={undefined}
                                         aria-expanded={false}
                                         aria-haspopup={true}
+                                        aria-owns="dropdown-56-dropdownContent"
                                         disabled={undefined}
                                         onClick={[Function]}
                                         onKeyDown={[Function]}
@@ -1075,10 +1048,11 @@ exports[`Dropdown demo examples controlled 1`] = `
                                       >
                                         <button
                                           aria-activedescendant={undefined}
-                                          aria-describedby="popover-57-popoverContent"
+                                          aria-describedby="dropdown-56-dropdownContent"
                                           aria-disabled={undefined}
                                           aria-expanded={false}
                                           aria-haspopup={true}
+                                          aria-owns="dropdown-56-dropdownContent"
                                           className="glamor-2"
                                           disabled={undefined}
                                           onClick={[Function]}
@@ -1562,7 +1536,6 @@ exports[`Dropdown demo examples data 1`] = `
                 placement="bottom-start"
               >
                 <Popover
-                  autoFocus={false}
                   content={
                     <DropdownContent
                       data={
@@ -1619,50 +1592,35 @@ exports[`Dropdown demo examples data 1`] = `
                       wide={undefined}
                     />
                   }
+                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="dropdown-44"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
-                  trigger={
-                    <PopoverTrigger
-                      aria-activedescendant={undefined}
-                      aria-haspopup={true}
-                      contentId="dropdown-44-dropdownContent"
-                      isOpen={false}
-                      onKeyDown={[Function]}
-                    >
-                      <Button>
-                        Menu
-                      </Button>
-                    </PopoverTrigger>
-                  }
                   triggerRef={[Function]}
                   wrapContent={false}
                 >
                   <Popover
-                    autoFocus={false}
                     id="dropdown-44"
                     isOpen={false}
                     onClose={[Function]}
                     onOpen={[Function]}
                   >
                     <Manager
-                      autoFocus={false}
                       className="glamor-5"
                       id="dropdown-44"
                       tag="div"
                     >
                       <div
-                        autoFocus={false}
                         className="glamor-5"
                         id="dropdown-44"
                       >
                         <PopoverTrigger
                           aria-activedescendant={undefined}
                           aria-haspopup={true}
-                          contentId="popover-45-popoverContent"
+                          contentId="dropdown-44-dropdownContent"
                           disabled={undefined}
                           isOpen={false}
                           onClick={[Function]}
@@ -1677,10 +1635,11 @@ exports[`Dropdown demo examples data 1`] = `
                               >
                                 <Button
                                   aria-activedescendant={undefined}
-                                  aria-describedby="popover-45-popoverContent"
+                                  aria-describedby="dropdown-44-dropdownContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
                                   aria-haspopup={true}
+                                  aria-owns="dropdown-44-dropdownContent"
                                   disabled={undefined}
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
@@ -1688,10 +1647,11 @@ exports[`Dropdown demo examples data 1`] = `
                                 >
                                   <glamorous(button)
                                     aria-activedescendant={undefined}
-                                    aria-describedby="popover-45-popoverContent"
+                                    aria-describedby="dropdown-44-dropdownContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-44-dropdownContent"
                                     disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
@@ -1703,10 +1663,11 @@ exports[`Dropdown demo examples data 1`] = `
                                   >
                                     <button
                                       aria-activedescendant={undefined}
-                                      aria-describedby="popover-45-popoverContent"
+                                      aria-describedby="dropdown-44-dropdownContent"
                                       aria-disabled={undefined}
                                       aria-expanded={false}
                                       aria-haspopup={true}
+                                      aria-owns="dropdown-44-dropdownContent"
                                       className="glamor-2"
                                       disabled={undefined}
                                       onClick={[Function]}
@@ -2096,7 +2057,6 @@ exports[`Dropdown demo examples disabled 1`] = `
               placement="bottom-start"
             >
               <Popover
-                autoFocus={false}
                 content={
                   <DropdownContent
                     data={
@@ -2127,50 +2087,35 @@ exports[`Dropdown demo examples disabled 1`] = `
                   />
                 }
                 disabled={true}
+                getTriggerProps={[Function]}
                 hasArrow={true}
                 id="dropdown-54"
                 isOpen={false}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom"
-                trigger={
-                  <PopoverTrigger
-                    aria-activedescendant={undefined}
-                    aria-haspopup={true}
-                    contentId="dropdown-54-dropdownContent"
-                    isOpen={false}
-                    onKeyDown={[Function]}
-                  >
-                    <Button>
-                      Menu
-                    </Button>
-                  </PopoverTrigger>
-                }
                 triggerRef={[Function]}
                 wrapContent={false}
               >
                 <Popover
-                  autoFocus={false}
                   id="dropdown-54"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                 >
                   <Manager
-                    autoFocus={false}
                     className="glamor-5"
                     id="dropdown-54"
                     tag="div"
                   >
                     <div
-                      autoFocus={false}
                       className="glamor-5"
                       id="dropdown-54"
                     >
                       <PopoverTrigger
                         aria-activedescendant={undefined}
                         aria-haspopup={true}
-                        contentId="popover-55-popoverContent"
+                        contentId="dropdown-54-dropdownContent"
                         disabled={true}
                         isOpen={false}
                         onClick={undefined}
@@ -2185,10 +2130,11 @@ exports[`Dropdown demo examples disabled 1`] = `
                             >
                               <Button
                                 aria-activedescendant={undefined}
-                                aria-describedby="popover-55-popoverContent"
+                                aria-describedby="dropdown-54-dropdownContent"
                                 aria-disabled={true}
                                 aria-expanded={false}
                                 aria-haspopup={true}
+                                aria-owns="dropdown-54-dropdownContent"
                                 disabled={true}
                                 onClick={undefined}
                                 onKeyDown={[Function]}
@@ -2196,10 +2142,11 @@ exports[`Dropdown demo examples disabled 1`] = `
                               >
                                 <glamorous(button)
                                   aria-activedescendant={undefined}
-                                  aria-describedby="popover-55-popoverContent"
+                                  aria-describedby="dropdown-54-dropdownContent"
                                   aria-disabled={true}
                                   aria-expanded={false}
                                   aria-haspopup={true}
+                                  aria-owns="dropdown-54-dropdownContent"
                                   disabled={true}
                                   onClick={undefined}
                                   onKeyDown={[Function]}
@@ -2211,10 +2158,11 @@ exports[`Dropdown demo examples disabled 1`] = `
                                 >
                                   <button
                                     aria-activedescendant={undefined}
-                                    aria-describedby="popover-55-popoverContent"
+                                    aria-describedby="dropdown-54-dropdownContent"
                                     aria-disabled={true}
                                     aria-expanded={false}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-54-dropdownContent"
                                     className="glamor-2"
                                     disabled={true}
                                     onClick={undefined}
@@ -2631,7 +2579,6 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                 placement="bottom-start"
               >
                 <Popover
-                  autoFocus={false}
                   content={
                     <DropdownContent
                       data={
@@ -2661,50 +2608,35 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                       wide={undefined}
                     />
                   }
+                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="dropdown-52"
                   isOpen={false}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
-                  trigger={
-                    <PopoverTrigger
-                      aria-activedescendant={undefined}
-                      aria-haspopup={true}
-                      contentId="dropdown-52-dropdownContent"
-                      isOpen={false}
-                      onKeyDown={[Function]}
-                    >
-                      <Button>
-                        Menu
-                      </Button>
-                    </PopoverTrigger>
-                  }
                   triggerRef={[Function]}
                   wrapContent={false}
                 >
                   <Popover
-                    autoFocus={false}
                     id="dropdown-52"
                     isOpen={false}
                     onClose={[Function]}
                     onOpen={[Function]}
                   >
                     <Manager
-                      autoFocus={false}
                       className="glamor-5"
                       id="dropdown-52"
                       tag="div"
                     >
                       <div
-                        autoFocus={false}
                         className="glamor-5"
                         id="dropdown-52"
                       >
                         <PopoverTrigger
                           aria-activedescendant={undefined}
                           aria-haspopup={true}
-                          contentId="popover-53-popoverContent"
+                          contentId="dropdown-52-dropdownContent"
                           disabled={undefined}
                           isOpen={false}
                           onClick={[Function]}
@@ -2719,10 +2651,11 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                               >
                                 <Button
                                   aria-activedescendant={undefined}
-                                  aria-describedby="popover-53-popoverContent"
+                                  aria-describedby="dropdown-52-dropdownContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
                                   aria-haspopup={true}
+                                  aria-owns="dropdown-52-dropdownContent"
                                   disabled={undefined}
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
@@ -2730,10 +2663,11 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                                 >
                                   <glamorous(button)
                                     aria-activedescendant={undefined}
-                                    aria-describedby="popover-53-popoverContent"
+                                    aria-describedby="dropdown-52-dropdownContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-52-dropdownContent"
                                     disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
@@ -2745,10 +2679,11 @@ exports[`Dropdown demo examples on-open-close 1`] = `
                                   >
                                     <button
                                       aria-activedescendant={undefined}
-                                      aria-describedby="popover-53-popoverContent"
+                                      aria-describedby="dropdown-52-dropdownContent"
                                       aria-disabled={undefined}
                                       aria-expanded={false}
                                       aria-haspopup={true}
+                                      aria-owns="dropdown-52-dropdownContent"
                                       className="glamor-2"
                                       disabled={undefined}
                                       onClick={[Function]}
@@ -2963,29 +2898,6 @@ exports[`Dropdown demo examples placement 1`] = `
   word-break: break-word;
 }
 
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-31,
-[data-glamor-31] {
-  height: 400px;
-  position: relative;
-}
-
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
@@ -3001,8 +2913,8 @@ exports[`Dropdown demo examples placement 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 3.25em;
-  min-width: 3.25em;
+  height: 2.5em;
+  min-width: 2.5em;
   padding: 0 0.5em;
   vertical-align: middle;
 }
@@ -3068,6 +2980,23 @@ exports[`Dropdown demo examples placement 1`] = `
   margin: 0;
 }
 
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
 .glamor-0,
 [data-glamor-0] {
   display: block;
@@ -3077,7 +3006,7 @@ exports[`Dropdown demo examples placement 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 3.7142857142857144em;
+  line-height: 2.857142857142857em;
 }
 
 .glamor-0:first-child,
@@ -3092,6 +3021,12 @@ exports[`Dropdown demo examples placement 1`] = `
 .glamor-0[data-simulate-lastchild],
 [data-glamor-0][data-simulate-lastchild] {
   padding-right: 0.5714285714285714em;
+}
+
+.glamor-31,
+[data-glamor-31] {
+  height: 400px;
+  position: relative;
 }
 
 <ThemeProvider>
@@ -3238,8 +3173,11 @@ exports[`Dropdown demo examples placement 1`] = `
     <LiveProvider
       code="
     <DemoLayout>
-      <Dropdown placement=\\"bottom-start\\" data={data} isOpen={true}>
-        <Button size=\\"jumbo\\" disabled>Menu</Button>
+      <Dropdown
+        placement=\\"bottom-start\\"
+        data={data}
+        isOpen>
+        <Button>Menu</Button>
       </Dropdown>
     </DemoLayout>"
       mountStylesheet={false}
@@ -3331,7 +3269,6 @@ exports[`Dropdown demo examples placement 1`] = `
                   placement="bottom-start"
                 >
                   <Popover
-                    autoFocus={false}
                     content={
                       <DropdownContent
                         data={
@@ -3361,53 +3298,35 @@ exports[`Dropdown demo examples placement 1`] = `
                         wide={undefined}
                       />
                     }
+                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="dropdown-48"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
-                    trigger={
-                      <PopoverTrigger
-                        aria-activedescendant={undefined}
-                        aria-haspopup={true}
-                        contentId="dropdown-48-dropdownContent"
-                        isOpen={true}
-                        onKeyDown={[Function]}
-                      >
-                        <Button
-                          disabled={true}
-                          size="jumbo"
-                        >
-                          Menu
-                        </Button>
-                      </PopoverTrigger>
-                    }
                     triggerRef={[Function]}
                     wrapContent={false}
                   >
                     <Popover
-                      autoFocus={false}
                       id="dropdown-48"
                       isOpen={true}
                       onClose={[Function]}
                       onOpen={[Function]}
                     >
                       <Manager
-                        autoFocus={false}
                         className="glamor-29"
                         id="dropdown-48"
                         tag="div"
                       >
                         <div
-                          autoFocus={false}
                           className="glamor-29"
                           id="dropdown-48"
                         >
                           <PopoverTrigger
-                            aria-activedescendant={undefined}
+                            aria-activedescendant="dropdown-48-dropdownContent-menu"
                             aria-haspopup={true}
-                            contentId="popover-49-popoverContent"
+                            contentId="dropdown-48-dropdownContent"
                             disabled={undefined}
                             isOpen={true}
                             onClick={[Function]}
@@ -3421,38 +3340,40 @@ exports[`Dropdown demo examples placement 1`] = `
                                   className="glamor-3"
                                 >
                                   <Button
-                                    aria-activedescendant={undefined}
-                                    aria-describedby="popover-49-popoverContent"
+                                    aria-activedescendant="dropdown-48-dropdownContent-menu"
+                                    aria-describedby="dropdown-48-dropdownContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-48-dropdownContent"
                                     disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
                                     role="button"
-                                    size="jumbo"
                                   >
                                     <glamorous(button)
-                                      aria-activedescendant={undefined}
-                                      aria-describedby="popover-49-popoverContent"
+                                      aria-activedescendant="dropdown-48-dropdownContent-menu"
+                                      aria-describedby="dropdown-48-dropdownContent"
                                       aria-disabled={undefined}
                                       aria-expanded={true}
                                       aria-haspopup={true}
+                                      aria-owns="dropdown-48-dropdownContent"
                                       disabled={undefined}
                                       onClick={[Function]}
                                       onKeyDown={[Function]}
                                       role="button"
-                                      size="jumbo"
+                                      size="large"
                                       text="Menu"
                                       type="button"
                                       variant="regular"
                                     >
                                       <button
-                                        aria-activedescendant={undefined}
-                                        aria-describedby="popover-49-popoverContent"
+                                        aria-activedescendant="dropdown-48-dropdownContent-menu"
+                                        aria-describedby="dropdown-48-dropdownContent"
                                         aria-disabled={undefined}
                                         aria-expanded={true}
                                         aria-haspopup={true}
+                                        aria-owns="dropdown-48-dropdownContent"
                                         className="glamor-2"
                                         disabled={undefined}
                                         onClick={[Function]}
@@ -3465,7 +3386,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                             className="glamor-1"
                                           >
                                             <glamorous(span)
-                                              size="jumbo"
+                                              size="large"
                                             >
                                               <span
                                                 className="glamor-0"
@@ -3558,13 +3479,16 @@ exports[`Dropdown demo examples placement 1`] = `
                                       ]
                                     }
                                     getItemProps={[Function]}
+                                    id="dropdown-48-dropdownContent-menu"
                                     role="menu"
                                   >
                                     <Menu
+                                      id="dropdown-48-dropdownContent-menu"
                                       role="menu"
                                     >
                                       <div
                                         className="glamor-26"
+                                        id="dropdown-48-dropdownContent-menu"
                                         role="menu"
                                       >
                                         <MenuGroup
@@ -3576,6 +3500,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                               className="glamor-25"
                                             >
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-48-menuItem-0"
                                                 isHighlighted={false}
                                                 item={
@@ -3589,6 +3514,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-48-menuItem-0"
                                                   isHighlighted={false}
@@ -3604,6 +3530,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-48-menuItem-0"
                                                     onClick={[Function]}
@@ -3639,6 +3566,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-48-menuItem-1"
                                                 isHighlighted={false}
                                                 item={
@@ -3652,6 +3580,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-48-menuItem-1"
                                                   isHighlighted={false}
@@ -3667,6 +3596,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-48-menuItem-1"
                                                     onClick={[Function]}
@@ -3702,6 +3632,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-48-menuItem-2"
                                                 isHighlighted={false}
                                                 item={
@@ -3715,6 +3646,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-48-menuItem-2"
                                                   isHighlighted={false}
@@ -3730,6 +3662,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-48-menuItem-2"
                                                     onClick={[Function]}
@@ -3765,6 +3698,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-48-menuItem-3"
                                                 isHighlighted={false}
                                                 item={
@@ -3778,6 +3712,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-48-menuItem-3"
                                                   isHighlighted={false}
@@ -3793,6 +3728,7 @@ exports[`Dropdown demo examples placement 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-48-menuItem-3"
                                                     onClick={[Function]}
@@ -3837,6 +3773,24 @@ exports[`Dropdown demo examples placement 1`] = `
                               </Popper>
                             </DropdownContent>
                           </DropdownContent>
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "click",
+                                  "handler": [Function],
+                                  "options": true,
+                                  "target": "document",
+                                },
+                                Object {
+                                  "event": "keydown",
+                                  "handler": [Function],
+                                  "options": true,
+                                  "target": "document",
+                                },
+                              ]
+                            }
+                          />
                         </div>
                       </Manager>
                     </Popover>
@@ -4416,8 +4370,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
       <Dropdown
         data={data}
         isOpen
-        placement=\\"bottom-start\\"
-        restoreFocus={false}>
+        placement=\\"bottom-start\\">
         <Button>Menu</Button>
       </Dropdown>
     </ScrollParent>
@@ -4525,10 +4478,8 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                             }
                             isOpen={true}
                             placement="bottom-start"
-                            restoreFocus={false}
                           >
                             <Popover
-                              autoFocus={false}
                               content={
                                 <DropdownContent
                                   data={
@@ -4558,52 +4509,35 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                   wide={undefined}
                                 />
                               }
+                              getTriggerProps={[Function]}
                               hasArrow={true}
                               id="dropdown-50"
                               isOpen={true}
                               onClose={[Function]}
                               onOpen={[Function]}
                               placement="bottom"
-                              restoreFocus={false}
-                              trigger={
-                                <PopoverTrigger
-                                  aria-activedescendant={undefined}
-                                  aria-haspopup={true}
-                                  contentId="dropdown-50-dropdownContent"
-                                  isOpen={true}
-                                  onKeyDown={[Function]}
-                                >
-                                  <Button>
-                                    Menu
-                                  </Button>
-                                </PopoverTrigger>
-                              }
                               triggerRef={[Function]}
                               wrapContent={false}
                             >
                               <Popover
-                                autoFocus={false}
                                 id="dropdown-50"
                                 isOpen={true}
                                 onClose={[Function]}
                                 onOpen={[Function]}
-                                restoreFocus={false}
                               >
                                 <Manager
-                                  autoFocus={false}
                                   className="glamor-29"
                                   id="dropdown-50"
                                   tag="div"
                                 >
                                   <div
-                                    autoFocus={false}
                                     className="glamor-29"
                                     id="dropdown-50"
                                   >
                                     <PopoverTrigger
-                                      aria-activedescendant={undefined}
+                                      aria-activedescendant="dropdown-50-dropdownContent-menu"
                                       aria-haspopup={true}
-                                      contentId="popover-51-popoverContent"
+                                      contentId="dropdown-50-dropdownContent"
                                       disabled={undefined}
                                       isOpen={true}
                                       onClick={[Function]}
@@ -4617,22 +4551,24 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                             className="glamor-3"
                                           >
                                             <Button
-                                              aria-activedescendant={undefined}
-                                              aria-describedby="popover-51-popoverContent"
+                                              aria-activedescendant="dropdown-50-dropdownContent-menu"
+                                              aria-describedby="dropdown-50-dropdownContent"
                                               aria-disabled={undefined}
                                               aria-expanded={true}
                                               aria-haspopup={true}
+                                              aria-owns="dropdown-50-dropdownContent"
                                               disabled={undefined}
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
                                               role="button"
                                             >
                                               <glamorous(button)
-                                                aria-activedescendant={undefined}
-                                                aria-describedby="popover-51-popoverContent"
+                                                aria-activedescendant="dropdown-50-dropdownContent-menu"
+                                                aria-describedby="dropdown-50-dropdownContent"
                                                 aria-disabled={undefined}
                                                 aria-expanded={true}
                                                 aria-haspopup={true}
+                                                aria-owns="dropdown-50-dropdownContent"
                                                 disabled={undefined}
                                                 onClick={[Function]}
                                                 onKeyDown={[Function]}
@@ -4643,11 +4579,12 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                 variant="regular"
                                               >
                                                 <button
-                                                  aria-activedescendant={undefined}
-                                                  aria-describedby="popover-51-popoverContent"
+                                                  aria-activedescendant="dropdown-50-dropdownContent-menu"
+                                                  aria-describedby="dropdown-50-dropdownContent"
                                                   aria-disabled={undefined}
                                                   aria-expanded={true}
                                                   aria-haspopup={true}
+                                                  aria-owns="dropdown-50-dropdownContent"
                                                   className="glamor-2"
                                                   disabled={undefined}
                                                   onClick={[Function]}
@@ -4753,13 +4690,16 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                 ]
                                               }
                                               getItemProps={[Function]}
+                                              id="dropdown-50-dropdownContent-menu"
                                               role="menu"
                                             >
                                               <Menu
+                                                id="dropdown-50-dropdownContent-menu"
                                                 role="menu"
                                               >
                                                 <div
                                                   className="glamor-26"
+                                                  id="dropdown-50-dropdownContent-menu"
                                                   role="menu"
                                                 >
                                                   <MenuGroup
@@ -4771,6 +4711,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                         className="glamor-25"
                                                       >
                                                         <MenuItem
+                                                          aria-disabled={undefined}
                                                           id="dropdown-50-menuItem-0"
                                                           isHighlighted={false}
                                                           item={
@@ -4784,6 +4725,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           tabIndex={null}
                                                         >
                                                           <MenuItem
+                                                            aria-disabled={undefined}
                                                             disabled={undefined}
                                                             id="dropdown-50-menuItem-0"
                                                             isHighlighted={false}
@@ -4799,6 +4741,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                             variant="regular"
                                                           >
                                                             <div
+                                                              aria-disabled={undefined}
                                                               className="glamor-9"
                                                               id="dropdown-50-menuItem-0"
                                                               onClick={[Function]}
@@ -4834,6 +4777,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
+                                                          aria-disabled={undefined}
                                                           id="dropdown-50-menuItem-1"
                                                           isHighlighted={false}
                                                           item={
@@ -4847,6 +4791,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           tabIndex={null}
                                                         >
                                                           <MenuItem
+                                                            aria-disabled={undefined}
                                                             disabled={undefined}
                                                             id="dropdown-50-menuItem-1"
                                                             isHighlighted={false}
@@ -4862,6 +4807,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                             variant="regular"
                                                           >
                                                             <div
+                                                              aria-disabled={undefined}
                                                               className="glamor-9"
                                                               id="dropdown-50-menuItem-1"
                                                               onClick={[Function]}
@@ -4897,6 +4843,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
+                                                          aria-disabled={undefined}
                                                           id="dropdown-50-menuItem-2"
                                                           isHighlighted={false}
                                                           item={
@@ -4910,6 +4857,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           tabIndex={null}
                                                         >
                                                           <MenuItem
+                                                            aria-disabled={undefined}
                                                             disabled={undefined}
                                                             id="dropdown-50-menuItem-2"
                                                             isHighlighted={false}
@@ -4925,6 +4873,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                             variant="regular"
                                                           >
                                                             <div
+                                                              aria-disabled={undefined}
                                                               className="glamor-9"
                                                               id="dropdown-50-menuItem-2"
                                                               onClick={[Function]}
@@ -4960,6 +4909,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           </MenuItem>
                                                         </MenuItem>
                                                         <MenuItem
+                                                          aria-disabled={undefined}
                                                           id="dropdown-50-menuItem-3"
                                                           isHighlighted={false}
                                                           item={
@@ -4973,6 +4923,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                           tabIndex={null}
                                                         >
                                                           <MenuItem
+                                                            aria-disabled={undefined}
                                                             disabled={undefined}
                                                             id="dropdown-50-menuItem-3"
                                                             isHighlighted={false}
@@ -4988,6 +4939,7 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                                             variant="regular"
                                                           >
                                                             <div
+                                                              aria-disabled={undefined}
                                                               className="glamor-9"
                                                               id="dropdown-50-menuItem-3"
                                                               onClick={[Function]}
@@ -5032,6 +4984,24 @@ exports[`Dropdown demo examples scrolling-container 1`] = `
                                         </Popper>
                                       </DropdownContent>
                                     </DropdownContent>
+                                    <EventListener
+                                      listeners={
+                                        Array [
+                                          Object {
+                                            "event": "click",
+                                            "handler": [Function],
+                                            "options": true,
+                                            "target": "document",
+                                          },
+                                          Object {
+                                            "event": "keydown",
+                                            "handler": [Function],
+                                            "options": true,
+                                            "target": "document",
+                                          },
+                                        ]
+                                      }
+                                    />
                                   </div>
                                 </Manager>
                               </Popover>
@@ -5541,8 +5511,8 @@ exports[`Dropdown demo examples wide 1`] = `
     <LiveProvider
       code="
     <DemoLayout>
-      <Dropdown wide data={data} isOpen={true}>
-        <Button disabled>Menu</Button>
+      <Dropdown wide isOpen data={data}>
+        <Button>Menu</Button>
       </Dropdown>
     </DemoLayout>"
       mountStylesheet={false}
@@ -5635,7 +5605,6 @@ exports[`Dropdown demo examples wide 1`] = `
                   wide={true}
                 >
                   <Popover
-                    autoFocus={false}
                     content={
                       <DropdownContent
                         data={
@@ -5665,52 +5634,35 @@ exports[`Dropdown demo examples wide 1`] = `
                         wide={true}
                       />
                     }
+                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="dropdown-46"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
-                    trigger={
-                      <PopoverTrigger
-                        aria-activedescendant={undefined}
-                        aria-haspopup={true}
-                        contentId="dropdown-46-dropdownContent"
-                        isOpen={true}
-                        onKeyDown={[Function]}
-                      >
-                        <Button
-                          disabled={true}
-                        >
-                          Menu
-                        </Button>
-                      </PopoverTrigger>
-                    }
                     triggerRef={[Function]}
                     wrapContent={false}
                   >
                     <Popover
-                      autoFocus={false}
                       id="dropdown-46"
                       isOpen={true}
                       onClose={[Function]}
                       onOpen={[Function]}
                     >
                       <Manager
-                        autoFocus={false}
                         className="glamor-29"
                         id="dropdown-46"
                         tag="div"
                       >
                         <div
-                          autoFocus={false}
                           className="glamor-29"
                           id="dropdown-46"
                         >
                           <PopoverTrigger
-                            aria-activedescendant={undefined}
+                            aria-activedescendant="dropdown-46-dropdownContent-menu"
                             aria-haspopup={true}
-                            contentId="popover-47-popoverContent"
+                            contentId="dropdown-46-dropdownContent"
                             disabled={undefined}
                             isOpen={true}
                             onClick={[Function]}
@@ -5724,22 +5676,24 @@ exports[`Dropdown demo examples wide 1`] = `
                                   className="glamor-3"
                                 >
                                   <Button
-                                    aria-activedescendant={undefined}
-                                    aria-describedby="popover-47-popoverContent"
+                                    aria-activedescendant="dropdown-46-dropdownContent-menu"
+                                    aria-describedby="dropdown-46-dropdownContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
                                     aria-haspopup={true}
+                                    aria-owns="dropdown-46-dropdownContent"
                                     disabled={undefined}
                                     onClick={[Function]}
                                     onKeyDown={[Function]}
                                     role="button"
                                   >
                                     <glamorous(button)
-                                      aria-activedescendant={undefined}
-                                      aria-describedby="popover-47-popoverContent"
+                                      aria-activedescendant="dropdown-46-dropdownContent-menu"
+                                      aria-describedby="dropdown-46-dropdownContent"
                                       aria-disabled={undefined}
                                       aria-expanded={true}
                                       aria-haspopup={true}
+                                      aria-owns="dropdown-46-dropdownContent"
                                       disabled={undefined}
                                       onClick={[Function]}
                                       onKeyDown={[Function]}
@@ -5750,11 +5704,12 @@ exports[`Dropdown demo examples wide 1`] = `
                                       variant="regular"
                                     >
                                       <button
-                                        aria-activedescendant={undefined}
-                                        aria-describedby="popover-47-popoverContent"
+                                        aria-activedescendant="dropdown-46-dropdownContent-menu"
+                                        aria-describedby="dropdown-46-dropdownContent"
                                         aria-disabled={undefined}
                                         aria-expanded={true}
                                         aria-haspopup={true}
+                                        aria-owns="dropdown-46-dropdownContent"
                                         className="glamor-2"
                                         disabled={undefined}
                                         onClick={[Function]}
@@ -5860,13 +5815,16 @@ exports[`Dropdown demo examples wide 1`] = `
                                       ]
                                     }
                                     getItemProps={[Function]}
+                                    id="dropdown-46-dropdownContent-menu"
                                     role="menu"
                                   >
                                     <Menu
+                                      id="dropdown-46-dropdownContent-menu"
                                       role="menu"
                                     >
                                       <div
                                         className="glamor-26"
+                                        id="dropdown-46-dropdownContent-menu"
                                         role="menu"
                                       >
                                         <MenuGroup
@@ -5878,6 +5836,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                               className="glamor-25"
                                             >
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-46-menuItem-0"
                                                 isHighlighted={false}
                                                 item={
@@ -5891,6 +5850,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-46-menuItem-0"
                                                   isHighlighted={false}
@@ -5906,6 +5866,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-46-menuItem-0"
                                                     onClick={[Function]}
@@ -5941,6 +5902,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-46-menuItem-1"
                                                 isHighlighted={false}
                                                 item={
@@ -5954,6 +5916,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-46-menuItem-1"
                                                   isHighlighted={false}
@@ -5969,6 +5932,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-46-menuItem-1"
                                                     onClick={[Function]}
@@ -6004,6 +5968,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-46-menuItem-2"
                                                 isHighlighted={false}
                                                 item={
@@ -6017,6 +5982,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-46-menuItem-2"
                                                   isHighlighted={false}
@@ -6032,6 +5998,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-46-menuItem-2"
                                                     onClick={[Function]}
@@ -6067,6 +6034,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 </MenuItem>
                                               </MenuItem>
                                               <MenuItem
+                                                aria-disabled={undefined}
                                                 id="dropdown-46-menuItem-3"
                                                 isHighlighted={false}
                                                 item={
@@ -6080,6 +6048,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                 tabIndex={null}
                                               >
                                                 <MenuItem
+                                                  aria-disabled={undefined}
                                                   disabled={undefined}
                                                   id="dropdown-46-menuItem-3"
                                                   isHighlighted={false}
@@ -6095,6 +6064,7 @@ exports[`Dropdown demo examples wide 1`] = `
                                                   variant="regular"
                                                 >
                                                   <div
+                                                    aria-disabled={undefined}
                                                     className="glamor-9"
                                                     id="dropdown-46-menuItem-3"
                                                     onClick={[Function]}
@@ -6139,6 +6109,24 @@ exports[`Dropdown demo examples wide 1`] = `
                               </Popper>
                             </DropdownContent>
                           </DropdownContent>
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "click",
+                                  "handler": [Function],
+                                  "options": true,
+                                  "target": "document",
+                                },
+                                Object {
+                                  "event": "keydown",
+                                  "handler": [Function],
+                                  "options": true,
+                                  "target": "document",
+                                },
+                              ]
+                            }
+                          />
                         </div>
                       </Manager>
                     </Popover>
