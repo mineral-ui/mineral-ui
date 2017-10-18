@@ -332,18 +332,18 @@ exports[`Popover demo examples basic 1`] = `
                               aria-describedby="popover-11-popoverContent"
                               aria-disabled={undefined}
                               aria-expanded={false}
+                              aria-owns="popover-11-popoverContent"
                               disabled={undefined}
                               onClick={[Function]}
-                              onKeyDown={undefined}
                               role="button"
                             >
                               <glamorous(button)
                                 aria-describedby="popover-11-popoverContent"
                                 aria-disabled={undefined}
                                 aria-expanded={false}
+                                aria-owns="popover-11-popoverContent"
                                 disabled={undefined}
                                 onClick={[Function]}
-                                onKeyDown={undefined}
                                 role="button"
                                 size="large"
                                 text="Open Popover"
@@ -354,10 +354,10 @@ exports[`Popover demo examples basic 1`] = `
                                   aria-describedby="popover-11-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
+                                  aria-owns="popover-11-popoverContent"
                                   className="glamor-2"
                                   disabled={undefined}
                                   onClick={[Function]}
-                                  onKeyDown={undefined}
                                   role="button"
                                   type="button"
                                 >
@@ -732,8 +732,7 @@ exports[`Popover demo examples controlled 1`] = `
               content={<DemoContent />}
               isOpen={this.state.isOpen}
               onOpen={this.onOpen}
-              onClose={this.onClose}
-              restoreFocus={false}>
+              onClose={this.onClose}>
               <Button>{label}</Button>
             </Popover>
             <Button onClick={this.togglePopover}>{label}</Button>
@@ -783,14 +782,12 @@ exports[`Popover demo examples controlled 1`] = `
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
-                    restoreFocus={false}
                     wrapContent={true}
                   >
                     <Popover
                       isOpen={false}
                       onClose={[Function]}
                       onOpen={[Function]}
-                      restoreFocus={false}
                     >
                       <Manager
                         className="glamor-5"
@@ -816,18 +813,18 @@ exports[`Popover demo examples controlled 1`] = `
                                     aria-describedby="popover-18-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
+                                    aria-owns="popover-18-popoverContent"
                                     disabled={undefined}
                                     onClick={[Function]}
-                                    onKeyDown={undefined}
                                     role="button"
                                   >
                                     <glamorous(button)
                                       aria-describedby="popover-18-popoverContent"
                                       aria-disabled={undefined}
                                       aria-expanded={false}
+                                      aria-owns="popover-18-popoverContent"
                                       disabled={undefined}
                                       onClick={[Function]}
-                                      onKeyDown={undefined}
                                       role="button"
                                       size="large"
                                       text="Open Popover"
@@ -838,10 +835,10 @@ exports[`Popover demo examples controlled 1`] = `
                                         aria-describedby="popover-18-popoverContent"
                                         aria-disabled={undefined}
                                         aria-expanded={false}
+                                        aria-owns="popover-18-popoverContent"
                                         className="glamor-2"
                                         disabled={undefined}
                                         onClick={[Function]}
-                                        onKeyDown={undefined}
                                         role="button"
                                         type="button"
                                       >
@@ -1234,18 +1231,18 @@ exports[`Popover demo examples disabled 1`] = `
                               aria-describedby="popover-17-popoverContent"
                               aria-disabled={true}
                               aria-expanded={false}
+                              aria-owns="popover-17-popoverContent"
                               disabled={true}
                               onClick={undefined}
-                              onKeyDown={undefined}
                               role="button"
                             >
                               <glamorous(button)
                                 aria-describedby="popover-17-popoverContent"
                                 aria-disabled={true}
                                 aria-expanded={false}
+                                aria-owns="popover-17-popoverContent"
                                 disabled={true}
                                 onClick={undefined}
-                                onKeyDown={undefined}
                                 role="button"
                                 size="large"
                                 text="Open Popover"
@@ -1256,10 +1253,10 @@ exports[`Popover demo examples disabled 1`] = `
                                   aria-describedby="popover-17-popoverContent"
                                   aria-disabled={true}
                                   aria-expanded={false}
+                                  aria-owns="popover-17-popoverContent"
                                   className="glamor-2"
                                   disabled={true}
                                   onClick={undefined}
-                                  onKeyDown={undefined}
                                   role="button"
                                   type="button"
                                 >
@@ -1647,18 +1644,18 @@ exports[`Popover demo examples on-open-close 1`] = `
                                 aria-describedby="popover-16-popoverContent"
                                 aria-disabled={undefined}
                                 aria-expanded={false}
+                                aria-owns="popover-16-popoverContent"
                                 disabled={undefined}
                                 onClick={[Function]}
-                                onKeyDown={undefined}
                                 role="button"
                               >
                                 <glamorous(button)
                                   aria-describedby="popover-16-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
+                                  aria-owns="popover-16-popoverContent"
                                   disabled={undefined}
                                   onClick={[Function]}
-                                  onKeyDown={undefined}
                                   role="button"
                                   size="large"
                                   text="Menu"
@@ -1669,10 +1666,10 @@ exports[`Popover demo examples on-open-close 1`] = `
                                     aria-describedby="popover-16-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
+                                    aria-owns="popover-16-popoverContent"
                                     className="glamor-2"
                                     disabled={undefined}
                                     onClick={[Function]}
-                                    onKeyDown={undefined}
                                     role="button"
                                     type="button"
                                   >
@@ -2048,8 +2045,8 @@ exports[`Popover demo examples overflow 1`] = `
       <Popover
         content={<DemoContent />}
         placement=\\"right\\"
-        isOpen={true}>
-        <Button disabled>Open Popover</Button>
+        isOpen>
+        <Button>Open Popover</Button>
       </Popover>
     </OverflowContainer>"
       mountStylesheet={false}
@@ -2116,18 +2113,18 @@ exports[`Popover demo examples overflow 1`] = `
                                   aria-describedby="popover-14-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
+                                  aria-owns="popover-14-popoverContent"
                                   disabled={undefined}
                                   onClick={[Function]}
-                                  onKeyDown={undefined}
                                   role="button"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-14-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
+                                    aria-owns="popover-14-popoverContent"
                                     disabled={undefined}
                                     onClick={[Function]}
-                                    onKeyDown={undefined}
                                     role="button"
                                     size="large"
                                     text="Open Popover"
@@ -2138,10 +2135,10 @@ exports[`Popover demo examples overflow 1`] = `
                                       aria-describedby="popover-14-popoverContent"
                                       aria-disabled={undefined}
                                       aria-expanded={true}
+                                      aria-owns="popover-14-popoverContent"
                                       className="glamor-2"
                                       disabled={undefined}
                                       onClick={[Function]}
-                                      onKeyDown={undefined}
                                       role="button"
                                       type="button"
                                     >
@@ -2409,6 +2406,24 @@ exports[`Popover demo examples overflow 1`] = `
                             </Popper>
                           </PopoverContent>
                         </PopoverContent>
+                        <EventListener
+                          listeners={
+                            Array [
+                              Object {
+                                "event": "click",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                              Object {
+                                "event": "keydown",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                            ]
+                          }
+                        />
                       </div>
                     </Manager>
                   </Popover>
@@ -2476,34 +2491,6 @@ exports[`Popover demo examples placement 1`] = `
   -webkit-transform: rotate(0deg) scaleX(2);
 }
 
-.glamor-1,
-[data-glamor-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.glamor-5,
-[data-glamor-5] {
-  width: 13.75em;
-}
-
-.glamor-13,
-[data-glamor-13] {
-  height: 350px;
-  position: relative;
-}
-
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
@@ -2519,8 +2506,8 @@ exports[`Popover demo examples placement 1`] = `
   border-width: 1px;
   cursor: pointer;
   font-weight: 600;
-  height: 3.25em;
-  min-width: 3.25em;
+  height: 2.5em;
+  min-width: 2.5em;
   padding: 0 0.5em;
   vertical-align: middle;
 }
@@ -2586,6 +2573,23 @@ exports[`Popover demo examples placement 1`] = `
   margin: 0;
 }
 
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
 .glamor-0,
 [data-glamor-0] {
   display: block;
@@ -2595,7 +2599,7 @@ exports[`Popover demo examples placement 1`] = `
   white-space: nowrap;
   word-wrap: normal;
   font-size: 0.875em;
-  line-height: 3.7142857142857144em;
+  line-height: 2.857142857142857em;
 }
 
 .glamor-0:first-child,
@@ -2610,6 +2614,17 @@ exports[`Popover demo examples placement 1`] = `
 .glamor-0[data-simulate-lastchild],
 [data-glamor-0][data-simulate-lastchild] {
   padding-right: 0.5714285714285714em;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  width: 13.75em;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  height: 350px;
+  position: relative;
 }
 
 <ThemeProvider>
@@ -2759,8 +2774,8 @@ exports[`Popover demo examples placement 1`] = `
       <Popover
         content={<DemoContent />}
         placement=\\"bottom\\"
-        isOpen={true}>
-        <Button size=\\"jumbo\\" disabled>Open Popover</Button>
+        isOpen>
+        <Button>Open Popover</Button>
       </Popover>
     </DemoLayout>"
       mountStylesheet={false}
@@ -2827,21 +2842,20 @@ exports[`Popover demo examples placement 1`] = `
                                   aria-describedby="popover-13-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
+                                  aria-owns="popover-13-popoverContent"
                                   disabled={undefined}
                                   onClick={[Function]}
-                                  onKeyDown={undefined}
                                   role="button"
-                                  size="jumbo"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-13-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
+                                    aria-owns="popover-13-popoverContent"
                                     disabled={undefined}
                                     onClick={[Function]}
-                                    onKeyDown={undefined}
                                     role="button"
-                                    size="jumbo"
+                                    size="large"
                                     text="Open Popover"
                                     type="button"
                                     variant="regular"
@@ -2850,10 +2864,10 @@ exports[`Popover demo examples placement 1`] = `
                                       aria-describedby="popover-13-popoverContent"
                                       aria-disabled={undefined}
                                       aria-expanded={true}
+                                      aria-owns="popover-13-popoverContent"
                                       className="glamor-2"
                                       disabled={undefined}
                                       onClick={[Function]}
-                                      onKeyDown={undefined}
                                       role="button"
                                       type="button"
                                     >
@@ -2862,7 +2876,7 @@ exports[`Popover demo examples placement 1`] = `
                                           className="glamor-1"
                                         >
                                           <glamorous(span)
-                                            size="jumbo"
+                                            size="large"
                                           >
                                             <span
                                               className="glamor-0"
@@ -3121,6 +3135,24 @@ exports[`Popover demo examples placement 1`] = `
                             </Popper>
                           </PopoverContent>
                         </PopoverContent>
+                        <EventListener
+                          listeners={
+                            Array [
+                              Object {
+                                "event": "click",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                              Object {
+                                "event": "keydown",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                            ]
+                          }
+                        />
                       </div>
                     </Manager>
                   </Popover>
@@ -3586,8 +3618,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
       <Popover
         content={<DemoContent />}
         placement=\\"left\\"
-        isOpen
-        restoreFocus={false}>
+        isOpen>
         <Button>Open Popover</Button>
       </Popover>
     </ScrollParent>
@@ -3643,12 +3674,10 @@ exports[`Popover demo examples scrolling-container 1`] = `
                             hasArrow={true}
                             isOpen={true}
                             placement="left"
-                            restoreFocus={false}
                             wrapContent={true}
                           >
                             <Popover
                               isOpen={true}
-                              restoreFocus={false}
                             >
                               <Manager
                                 className="glamor-11"
@@ -3674,18 +3703,18 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                             aria-describedby="popover-15-popoverContent"
                                             aria-disabled={undefined}
                                             aria-expanded={true}
+                                            aria-owns="popover-15-popoverContent"
                                             disabled={undefined}
                                             onClick={[Function]}
-                                            onKeyDown={undefined}
                                             role="button"
                                           >
                                             <glamorous(button)
                                               aria-describedby="popover-15-popoverContent"
                                               aria-disabled={undefined}
                                               aria-expanded={true}
+                                              aria-owns="popover-15-popoverContent"
                                               disabled={undefined}
                                               onClick={[Function]}
-                                              onKeyDown={undefined}
                                               role="button"
                                               size="large"
                                               text="Open Popover"
@@ -3696,10 +3725,10 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                                 aria-describedby="popover-15-popoverContent"
                                                 aria-disabled={undefined}
                                                 aria-expanded={true}
+                                                aria-owns="popover-15-popoverContent"
                                                 className="glamor-2"
                                                 disabled={undefined}
                                                 onClick={[Function]}
-                                                onKeyDown={undefined}
                                                 role="button"
                                                 type="button"
                                               >
@@ -3967,6 +3996,24 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                       </Popper>
                                     </PopoverContent>
                                   </PopoverContent>
+                                  <EventListener
+                                    listeners={
+                                      Array [
+                                        Object {
+                                          "event": "click",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                        Object {
+                                          "event": "keydown",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                      ]
+                                    }
+                                  />
                                 </div>
                               </Manager>
                             </Popover>
@@ -4391,8 +4438,8 @@ exports[`Popover demo examples title 1`] = `
         placement=\\"right\\"
         subtitle=\\"Subtitle\\"
         title=\\"Title\\"
-        isOpen={true}>
-        <Button disabled>Open Popover</Button>
+        isOpen>
+        <Button>Open Popover</Button>
       </Popover>
     </DemoLayout>"
       mountStylesheet={false}
@@ -4461,18 +4508,18 @@ exports[`Popover demo examples title 1`] = `
                                   aria-describedby="popover-12-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
+                                  aria-owns="popover-12-popoverContent"
                                   disabled={undefined}
                                   onClick={[Function]}
-                                  onKeyDown={undefined}
                                   role="button"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-12-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
+                                    aria-owns="popover-12-popoverContent"
                                     disabled={undefined}
                                     onClick={[Function]}
-                                    onKeyDown={undefined}
                                     role="button"
                                     size="large"
                                     text="Open Popover"
@@ -4483,10 +4530,10 @@ exports[`Popover demo examples title 1`] = `
                                       aria-describedby="popover-12-popoverContent"
                                       aria-disabled={undefined}
                                       aria-expanded={true}
+                                      aria-owns="popover-12-popoverContent"
                                       className="glamor-2"
                                       disabled={undefined}
                                       onClick={[Function]}
-                                      onKeyDown={undefined}
                                       role="button"
                                       type="button"
                                     >
@@ -4946,6 +4993,24 @@ exports[`Popover demo examples title 1`] = `
                             </Popper>
                           </PopoverContent>
                         </PopoverContent>
+                        <EventListener
+                          listeners={
+                            Array [
+                              Object {
+                                "event": "click",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                              Object {
+                                "event": "keydown",
+                                "handler": [Function],
+                                "options": true,
+                                "target": "document",
+                              },
+                            ]
+                          }
+                        />
                       </div>
                     </Manager>
                   </Popover>
