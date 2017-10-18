@@ -20,79 +20,111 @@ import { createStyledComponent } from '../../../../utils';
 
 type Props = {
   angle?: number,
-  backgroundColor?: string,
   children: React$Node,
-  clip?: boolean,
+  clipColor?: string,
   point?: number
 };
 
-const commonStyles = {
-  bottom: 0,
-  position: 'absolute',
-  height: '1em'
-};
-
-const Root = createStyledComponent('div', ({ clip, theme }) => ({
-  overflow: clip ? 'hidden' : null,
-  paddingLeft: `${parseFloat(theme.space_inset_sm) * 4}em`,
-  paddingRight: `${parseFloat(theme.space_inset_sm) * 4}em`,
-  position: 'relative',
-
-  '@media(min-width: 48em)': {
-    paddingLeft: `${parseFloat(theme.space_inset_sm) * 16}em`,
-    paddingRight: `${parseFloat(theme.space_inset_sm) * 16}em`
-  }
+const Root = createStyledComponent('div', ({ point }) => ({
+  overflow: point ? 'hidden' : null
 }));
 
-const Inner = createStyledComponent('div', {
-  margin: '0 auto',
-  maxWidth: '80em'
-});
+const Inner = createStyledComponent(
+  'div',
+  ({ angle, clipColor, point, theme }) => {
+    const paddingHorizontal = `${parseFloat(theme.space_inset_sm) * 4}em`;
+    const paddingHorizontalWide = `${parseFloat(theme.space_inset_sm) * 16}em`;
+    const paddingTop = `${parseFloat(theme.space_inset_sm) * 4}em`;
+    const paddingTopWide = `${parseFloat(theme.space_inset_sm) * 16}em`;
+    const paddingBottom = `${parseFloat(theme.space_inset_sm) * 16}em`;
+    const paddingBottomWide = `${parseFloat(theme.space_inset_sm) * 24}em`;
 
-const Left = createStyledComponent(
-  'span',
-  ({ angle, backgroundColor, point }) => ({
-    ...commonStyles,
-    backgroundColor,
-    left: 0,
-    transform: `skewY(${angle}deg) translateY(1em) scaleY(30)`,
-    transformOrigin: 'top right',
-    width: `${point * 100}%`
-  })
-);
+    const styles = [
+      {
+        margin: '0 auto',
+        maxWidth: '80em',
+        paddingBottom: point ? paddingBottom : paddingTop,
+        paddingLeft: paddingHorizontal,
+        paddingRight: paddingHorizontal,
+        paddingTop,
+        position: 'relative',
 
-const Right = createStyledComponent(
-  'span',
-  ({ angle, backgroundColor, point }) => ({
-    ...commonStyles,
-    backgroundColor,
-    right: 0,
-    transform: `skewY(-${angle}deg) translateY(1em) scaleY(30)`,
-    transformOrigin: 'top left',
-    width: `${(1 - point) * 100}%`
-  })
+        '@media(min-width: 48em)': {
+          paddingBottom: point ? paddingBottomWide : paddingTopWide,
+          paddingLeft: paddingHorizontalWide,
+          paddingRight: paddingHorizontalWide,
+          paddingTop
+        }
+      }
+    ];
+
+    const pseudoStyles = {
+      backgroundColor: clipColor,
+      bottom: 0,
+      content: '""',
+      position: 'absolute',
+      height: '1em'
+    };
+
+    const transformProperties = 'translateY(1em) scaleY(30)';
+
+    /*
+     * The intersecting point of the two clipping shapes should be relative to
+     * the width of the Inner, but the shapes themselves need to extend to the
+     * viewport edge. Doing so requires:
+     * [1] This calc finds the distance between the viewport edge and the
+     *     Inner edge, then negates it to apply as a left/right offset
+     * [2] This calc takes the distance from [1] and adds the proportional width
+     *     of each clipping shape
+     */
+
+    const beforeStyles = {
+      '&::before': {
+        ...pseudoStyles,
+        left: 'calc(-50vw + 50%)', // [1]
+        transform: `skewY(${angle}deg) ${transformProperties}`,
+        transformOrigin: 'top right',
+        width: `calc(50vw - 50% + ${point * 100}%)` // [2]
+      }
+    };
+
+    const afterStyles = {
+      '&::after': {
+        ...pseudoStyles,
+        right: 'calc(-50vw + 50%)', // [1]
+        transform: `skewY(-${angle}deg) ${transformProperties}`,
+        transformOrigin: 'top left',
+        width: `calc(50vw - 50% + ${(1 - point) * 100}%)` // [2]
+      }
+    };
+
+    if (point) {
+      styles.push(beforeStyles, afterStyles);
+    }
+
+    return styles;
+  }
 );
 
 export default function Section({
   angle = 7,
-  backgroundColor = '#fff',
+  clipColor = '#fff',
   children,
-  clip = true,
-  point = 1 / 4,
+  point,
   ...restProps
 }: Props) {
-  const props = {
+  const rootProps = {
+    point,
+    ...restProps
+  };
+  const innerProps = {
     angle,
-    backgroundColor,
+    clipColor,
     point
   };
   return (
-    <Root {...restProps}>
-      <Inner>
-        {children}
-        {clip && <Left {...props} />}
-        {clip && <Right {...props} />}
-      </Inner>
+    <Root {...rootProps}>
+      <Inner {...innerProps}>{children}</Inner>
     </Root>
   );
 }

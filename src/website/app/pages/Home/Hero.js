@@ -26,13 +26,27 @@ type Props = {
 
 type State = {};
 
-const Output = createStyledComponent('div', {
+const Root = createStyledComponent(Section, {
+  '& > div': {
+    paddingTop: 0
+  }
+});
+
+const Canvas = createStyledComponent('div', {
+  bottom: 0,
+  left: 'calc(-50vw + 50%)',
+  position: 'absolute',
+  right: 'calc(-50vw + 50%)',
+  top: 0,
+  zIndex: '-1'
+});
+
+const Triangles = createStyledComponent('div', {
   bottom: 0,
   left: 0,
   position: 'absolute',
   right: 0,
-  top: 0,
-  zIndex: '-1'
+  top: 0
 });
 
 export default class Hero extends Component<Props, State> {
@@ -43,11 +57,14 @@ export default class Hero extends Component<Props, State> {
   props: Props;
 
   render() {
+    const { children, ...restProps } = this.props;
     return (
-      <Section id="container" {...this.props}>
-        <Output id="output" />
-        {this.props.children}
-      </Section>
+      <Root {...restProps}>
+        <Canvas id="canvas">
+          <Triangles id="triangles" />
+        </Canvas>
+        {children}
+      </Root>
     );
   }
 }

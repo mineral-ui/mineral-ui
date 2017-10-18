@@ -32,13 +32,18 @@ import Logo from '../../Logo';
 import Markdown from '../../Markdown';
 import Header from './Header';
 import _Hero from './Hero';
-import _Section from './Section';
+import Section from './Section';
 import intro from './intro.md';
 import first from './first.md';
 
+const latestPost = {
+  title: 'How we built our site using our components',
+  url: 'https://medium.com'
+};
+
 const homeTheme = {
   fontFamily: null,
-  fontFamily_headline: `nimbus-sans, ${mineralTheme.fontFamily_system}`,
+  fontFamily_headline: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
 
   Button_backgroundColor_primary: 'hsl(13, 62%, 58%)',
   Button_backgroundColor_primary_active: 'hsl(16, 68%, 53%)',
@@ -48,7 +53,7 @@ const homeTheme = {
   Button_color_text: 'hsl(13, 62%, 58%)',
 
   Heading_color_3: 'hsl(13, 62%, 58%)',
-  Heading_fontFamily: `nimbus-sans, ${mineralTheme.fontFamily_system}`,
+  Heading_fontFamily: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
   Heading_fontSize_2: pxToEm(59),
   Heading_fontSize_3: pxToEm(40),
   Heading_fontWeight_1: '300',
@@ -76,20 +81,13 @@ const heroTheme = {
 const Root = createStyledComponent(
   'div',
   ({ theme }) => ({
+    // Matches interior pages
     paddingBottom: theme.space_inset_md
   }),
   {
     includeStyleReset: true
   }
 );
-
-const Section = createStyledComponent(_Section, ({ clip, theme }) => ({
-  paddingBottom:
-    clip || clip === undefined
-      ? `${parseFloat(theme.space_stack_sm) * 24}em`
-      : `${parseFloat(theme.space_stack_sm) * 16}em`,
-  paddingTop: `${parseFloat(theme.space_stack_sm) * 16}em`
-}));
 
 const Button = createThemedComponent(_Button, {
   ButtonContent_fontSize: '1.1em'
@@ -103,13 +101,13 @@ const Buttons = createStyledComponent('div', ({ theme }) => ({
 
 const ColoredLogo = createStyledComponent(Logo, {
   '& .band-1': {
-    fill: 'hsl(35, 69%, 62%)'
+    fill: 'hsl(35, 69%, 62%)' // yellow
   },
   '& .band-2': {
-    fill: 'hsl(13, 62%, 58%)'
+    fill: 'hsl(13, 62%, 58%)' // orange
   },
   '& .band-3': {
-    fill: 'hsl(203, 21%, 44%)'
+    fill: 'hsl(203, 21%, 44%)' // slate
   }
 });
 
@@ -125,86 +123,212 @@ const CTALink = createThemedComponent(Link, {
 });
 
 const First = createStyledComponent(Section, ({ theme }) => ({
-  '& > div': {
-    alignItems: 'flex-end',
-    display: 'flex',
-    justifyContent: 'flex-end'
-  },
+  '& > div > div ': {
+    '@media(max-width: 38.999em)': {
+      textAlign: 'center',
 
-  '& > div > div': {
-    textAlign: 'right',
-    marginRight: theme.space_inline_xl,
-    width: '50%'
-  },
+      '& > svg': {
+        margin: '0 auto',
+        maxWidth: '10vh',
+        width: '50%'
+      }
+    },
 
-  '& svg': {
-    width: '20%'
+    '@media(min-width: 39em)': {
+      display: 'grid',
+      gridTemplateColumns: '1fr 10em',
+      gridColumnGap: theme.space_inline_md,
+
+      '& > *': {
+        gridColumn: 1,
+        textAlign: 'right'
+      },
+
+      '& > svg': {
+        alignSelf: 'center',
+        gridColumn: 2,
+        gridRow: '1 / span 2',
+        width: '100%'
+      }
+    }
   }
 }));
 
 // $FlowFixMe
 const Hero = createStyledComponent(_Hero, {
-  height: '90vh',
-  maxHeight: '700px'
-});
-
-const Intro = createStyledComponent(Markdown, {
-  minHeight: '85vh',
-
-  '@media(min-width: 52em)': {
-    width: '70%'
-  },
-
-  '@media(min-width: 66.5em)': {
-    width: '50%'
+  // Output
+  '@media(max-width: 38.999em)': {
+    '> div > div:first-child': {
+      bottom: '-12.5em' // Matches change in Header margin due to open menu
+    }
   }
 });
 
+const Intro = createStyledComponent(Markdown, {
+  // Dependent on h2 content
+  '& > h2': {
+    '@media(max-width: 29.999em)': {
+      fontSize: pxToEm(44)
+    }
+  },
+
+  // All of these numbers are dependent on width of h2 content
+  '& > p': {
+    '@media(min-width: 52em)': {
+      maxWidth: '36em'
+    },
+
+    '@media(min-width: 62em)': {
+      maxWidth: '41em'
+    }
+  }
+});
+
+const PlaygroundContainer = createStyledComponent('div', ({ theme }) => ({
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, auto)',
+  gridTemplateRows: `${theme.space_stack_xxl} auto`,
+  gridGap: theme.space_inline_md,
+  marginTop: theme.space_stack_xl,
+  position: 'relative', // for z-index
+  zIndex: 2,
+
+  '@media(min-width: 48em)': {
+    gridTemplateColumns: '6em auto',
+    gridTemplateRows: 'repeat(3, auto)'
+  }
+}));
+
+const PlaygroundOption = createStyledComponent('span', ({ theme }) => ({
+  alignItems: 'center',
+  backgroundColor: theme.color_white,
+  borderRadius: theme.borderRadius_1,
+  boxShadow: theme.shadow_3,
+  display: 'flex',
+  justifyContent: 'center'
+}));
+
+const PlaygroundSandbox = createStyledComponent('div', ({ theme }) => ({
+  backgroundColor: theme.color_white,
+  borderRadius: theme.borderRadius_1,
+  boxShadow: theme.shadow_3,
+  gridColumn: '1 / span 3',
+  height: pxToEm(300),
+
+  '@media(min-width: 48em)': {
+    gridColumn: 2,
+    gridRow: '1 / span 3'
+  }
+}));
+
+const PlaygroundSection = createStyledComponent(Section, ({ theme }) => ({
+  background: 'linear-gradient(hsl(35, 69%, 62%), hsl(13, 62%, 58%))',
+
+  '& > div': {
+    paddingBottom: theme.space_inset_md
+  }
+}));
+
+const StyledBlogLink = createStyledComponent(Link, ({ theme }) => ({
+  backgroundColor: 'rgba(0,0,0,0.4)',
+  borderRadius: theme.borderRadius_1,
+  padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
+
+  '&::before': {
+    backgroundColor: 'hsl(35, 69%, 62%)',
+    borderRadius: theme.borderRadius_1,
+    bottom: '0.1em',
+    color: theme.color_black,
+    content: 'New',
+    fontSize: '0.8em',
+    fontWeight: theme.fontWeight_bold,
+    marginRight: theme.space_inline_sm,
+    padding: `
+      ${parseFloat(theme.space_inset_sm) / 4}em
+      ${parseFloat(theme.space_inset_sm) / 2}em
+      `,
+    position: 'relative',
+    textTransform: 'uppercase'
+  },
+
+  '&:hover::before': {
+    textDecoration: 'none'
+  }
+}));
+
+const BlogLink = ({ children, to }: { children: React$Node, to: string }) => {
+  return (
+    <Media
+      query="(min-width: 39em)"
+      render={() => (
+        <StyledBlogLink to={to}>
+          {children}
+          <IconChevronRight size="large" />
+        </StyledBlogLink>
+      )}
+    />
+  );
+};
+
 const CallsToAction = () => {
   return (
-    <Media query="(min-width: 36em)">
-      {matches =>
-        matches ? (
-          <Buttons>
-            <Button primary size="jumbo">
-              Get Started
-            </Button>
-            <Button size="jumbo">View on GitHub</Button>
-          </Buttons>
-        ) : (
-          <Button fullWidth primary size="jumbo">
-            Get Started
-          </Button>
-        )}
-    </Media>
+    <Buttons>
+      <Button primary size="jumbo">
+        Get Started
+      </Button>
+      <Media
+        query="(min-width: 39em)"
+        render={() => <Button size="jumbo">View on GitHub</Button>}
+      />
+    </Buttons>
+  );
+};
+
+const Playground = () => {
+  return (
+    <PlaygroundContainer>
+      <PlaygroundOption>Snap</PlaygroundOption>
+      <PlaygroundOption>Crackle</PlaygroundOption>
+      <PlaygroundOption>Pop</PlaygroundOption>
+      <PlaygroundSandbox />
+    </PlaygroundContainer>
   );
 };
 
 export default function Home() {
   return (
-    <ThemeProvider theme={homeTheme}>
-      <Root>
-        <ThemeProvider theme={heroTheme}>
-          <Hero>
-            <Header />
-            <Intro anchors={false} scope={{ CallsToAction }}>
-              {intro}
-            </Intro>
-          </Hero>
+    <Media query="(min-width: 39em)">
+      {matches => (
+        <ThemeProvider theme={homeTheme}>
+          <Root>
+            <ThemeProvider theme={heroTheme}>
+              <Hero point={matches ? 1 / 4 : 1 / 1000}>
+                <Header latestPost={latestPost} />
+                {latestPost && (
+                  <BlogLink to={latestPost.url}>{latestPost.title}</BlogLink>
+                )}
+                <Intro anchors={false}>{intro}</Intro>
+                <CallsToAction />
+              </Hero>
+            </ThemeProvider>
+            <First
+              clipColor="hsl(35, 69%, 62%)"
+              point={matches ? 3 / 4 : 999 / 1000}>
+              <Markdown
+                anchors={false}
+                scope={{ ColoredLogo, IconChevronRight, CTALink }}>
+                {first}
+              </Markdown>
+            </First>
+            <PlaygroundSection point={1 / 2}>
+              <Playground />
+            </PlaygroundSection>
+            <Section>
+              <Footer />
+            </Section>
+          </Root>
         </ThemeProvider>
-        <First backgroundColor="hsl(13, 62%, 58%)" point={3 / 4}>
-          <Markdown anchors={false} scope={{ IconChevronRight, CTALink }}>
-            {first}
-          </Markdown>
-          <ColoredLogo />
-        </First>
-        <Section point={1 / 2} style={{ backgroundColor: 'hsl(13, 62%, 58%)' }}>
-          <div style={{ height: '20em' }} />
-        </Section>
-        <Section clip={false}>
-          <Footer />
-        </Section>
-      </Root>
-    </ThemeProvider>
+      )}
+    </Media>
   );
 }

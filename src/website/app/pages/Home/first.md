@@ -1,5 +1,7 @@
 ### Simplicity, Speed, Quality — Pick Three
 
+<ColoredLogo />
+
 People expect modern, engaging product experiences that work. Mineral UI makes
 this easier to deliver by providing common patterns, reusable components, and
 design guidelines that are visually appealing, consistent, and easy to use.

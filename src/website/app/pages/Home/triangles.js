@@ -1104,8 +1104,8 @@ export default function triangles(xPos = 100, yPos = 300) {
   // Global Properties
   //------------------------------
   var center = FSS.Vector3.create();
-  var container = document.getElementById('container');
-  var output = document.getElementById('output');
+  var container = document.getElementById('canvas');
+  var output = document.getElementById('triangles');
   var renderer, scene, mesh, geometry, material;
   var svgRenderer;
 
