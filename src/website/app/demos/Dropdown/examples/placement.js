@@ -40,8 +40,11 @@ The Dropdown will react to viewport edges and scrolling.`,
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>
-      <Dropdown placement="bottom-start" data={data} isOpen={true}>
-        <Button size="jumbo" disabled>Menu</Button>
+      <Dropdown
+        placement="bottom-start"
+        data={data}
+        isOpen>
+        <Button>Menu</Button>
       </Dropdown>
     </DemoLayout>`
 };

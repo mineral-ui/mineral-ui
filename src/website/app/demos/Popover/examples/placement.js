@@ -43,8 +43,8 @@ The Popover will still react to viewport edges and scrolling.`,
       <Popover
         content={<DemoContent />}
         placement="bottom"
-        isOpen={true}>
-        <Button size="jumbo" disabled>Open Popover</Button>
+        isOpen>
+        <Button>Open Popover</Button>
       </Popover>
     </DemoLayout>`
 };

@@ -111,7 +111,6 @@ class PopOverDo extends Component<{}, State> {
         <Popover
           onOpen={this.onOpen}
           onClose={this.onClose}
-          restoreFocus={false}
           isOpen={this.state.isOpen}
           content={DemoContent}>
           <P>Mineral UI</P>

@@ -84,8 +84,7 @@ Callbacks for \`onOpen\` and \`onClose\` are also provided.`,
               content={<DemoContent />}
               isOpen={this.state.isOpen}
               onOpen={this.onOpen}
-              onClose={this.onClose}
-              restoreFocus={false}>
+              onClose={this.onClose}>
               <Button>{label}</Button>
             </Popover>
             <Button onClick={this.togglePopover}>{label}</Button>

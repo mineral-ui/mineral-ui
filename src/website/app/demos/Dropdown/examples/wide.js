@@ -51,8 +51,8 @@ Make sure you have enough room for the wider Menu on the devices you're supporti
   scope: { Button, data, DemoLayout, Dropdown },
   source: `
     <DemoLayout>
-      <Dropdown wide data={data} isOpen={true}>
-        <Button disabled>Menu</Button>
+      <Dropdown wide isOpen data={data}>
+        <Button>Menu</Button>
       </Dropdown>
     </DemoLayout>`
 };
