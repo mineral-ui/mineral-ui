@@ -37,8 +37,8 @@ Subtitles will only be rendered if the \`title\` attribute is present.`,
         placement="right"
         subtitle="Subtitle"
         title="Title"
-        isOpen={true}>
-        <Button disabled>Open Popover</Button>
+        isOpen>
+        <Button>Open Popover</Button>
       </Popover>
     </DemoLayout>`
 };

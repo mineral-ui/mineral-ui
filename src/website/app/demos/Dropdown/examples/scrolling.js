@@ -30,8 +30,7 @@ export default {
       <Dropdown
         data={data}
         isOpen
-        placement="bottom-start"
-        restoreFocus={false}>
+        placement="bottom-start">
         <Button>Menu</Button>
       </Dropdown>
     </ScrollParent>

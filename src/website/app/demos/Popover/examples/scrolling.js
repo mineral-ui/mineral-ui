@@ -30,8 +30,7 @@ export default {
       <Popover
         content={<DemoContent />}
         placement="left"
-        isOpen
-        restoreFocus={false}>
+        isOpen>
         <Button>Open Popover</Button>
       </Popover>
     </ScrollParent>
