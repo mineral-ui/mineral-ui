@@ -119,7 +119,7 @@ describe('Popover', () => {
     });
 
     it('when document is clicked', () => {
-      var event = new MouseEvent('click', {
+      const event = new MouseEvent('click', {
         view: window,
         bubbles: true,
         cancelable: true
@@ -135,7 +135,7 @@ describe('Popover', () => {
     });
 
     it('when pressing escape', () => {
-      var event = new KeyboardEvent('keydown', {
+      const event = new KeyboardEvent('keydown', {
         key: 'Escape',
         view: window,
         bubbles: true,
