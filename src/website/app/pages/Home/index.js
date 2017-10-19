@@ -188,6 +188,14 @@ const First = createStyledComponent(Section, ({ theme }) => ({
 
 // $FlowFixMe
 const Hero = createStyledComponent(_Hero, {
+  '@media(min-width: 39em)': {
+    '> div': {
+      justifyContent: 'space-between',
+      height: '95vh',
+      maxHeight: '48em' // Dependent on content
+    }
+  },
+
   // Output
   '@media(max-width: 38.999em)': {
     '> div > div:first-child': {
@@ -312,7 +320,9 @@ export default class Home extends Component<Props, State> {
                   {first}
                 </Markdown>
               </First>
-              <PlaygroundSection index={themeIndex} point={1 / 2}>
+              <PlaygroundSection
+                index={themeIndex}
+                point={matches ? 1 / 4 : 1 / 1000}>
                 <ThemePlayground
                   index={themeIndex}
                   setIndex={index => {
@@ -340,7 +350,7 @@ export default class Home extends Component<Props, State> {
     const newIndex = index < themes.length - 1 ? index + 1 : 0;
     this.changeTheme = setTimeout(() => {
       this.setThemeIndex(newIndex);
-    }, 3000);
+    }, 12000);
   };
 
   setThemeIndex = (index: number, isClick?: boolean) => {

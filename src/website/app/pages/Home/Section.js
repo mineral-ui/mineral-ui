@@ -107,7 +107,7 @@ const Inner = createStyledComponent(
 );
 
 export default function Section({
-  angle = 7,
+  angle = 5,
   clipColor = '#fff',
   children,
   point,
