@@ -16,12 +16,11 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../utils';
+import { createStyledComponent } from '../../../../utils';
+import IconCheck from '../../../../Icon/IconCheck';
 import IconFavorite from '../../../../Icon/IconFavorite';
 import ThemeProvider from '../../../../ThemeProvider';
 import Button from '../../../../Button';
-import Heading from '../../Heading';
-import Link from '../../Link';
 import Markdown from '../../Markdown';
 
 type Props = {
@@ -34,14 +33,15 @@ const Root = createStyledComponent(
   'div',
   ({ theme }) => ({
     display: 'grid',
+    gridGap: theme.space_inline_sm,
     gridTemplateColumns: 'repeat(3, auto)',
-    gridTemplateRows: `${theme.space_stack_xxl} auto`,
-    gridGap: theme.space_inline_md,
+    gridTemplateRows: `min-content auto`,
     marginTop: theme.space_stack_xl,
     position: 'relative', // for z-index
     zIndex: 2,
 
     '@media(min-width: 48em)': {
+      gridGap: theme.space_inline_md,
       gridTemplateColumns: 'min-content auto',
       gridTemplateRows: 'repeat(3, auto)'
     }
@@ -54,37 +54,56 @@ const Root = createStyledComponent(
 const PlaygroundOptionRoot = createStyledComponent(
   'button',
   ({ thisIndex, isActive, theme, themes }) => {
-    const swatchSize = '2em';
-
     return {
-      backgroundColor: isActive ? theme.color_theme_10 : theme.color_white,
+      alignItems: 'center',
+      backgroundColor: isActive
+        ? themes[thisIndex].color_theme_10
+        : theme.color_white,
       border: `1px solid ${isActive ? theme.color_white : 'transparent'}`,
       borderRadius: theme.borderRadius_1,
       boxShadow: isActive ? `0 0 0 1px ${theme[`borderColor_focus`]}` : null,
+      cursor: 'pointer',
       display: 'flex',
-      flexDirection: 'column',
       justifyContent: 'center',
-      padding: `
-        ${theme.space_inset_md}
-        ${theme.space_inset_md}
-        ${theme.space_inset_md}
-        ${parseFloat(theme.space_inset_md) +
-          parseFloat(swatchSize) +
-          parseFloat(theme.space_inline_sm)}em
-      `,
+      padding: theme.space_inset_sm,
       position: 'relative',
       '&::-moz-focus-inner': { border: 0 },
 
-      '&::before': {
+      '&:focus,&:hover': {
+        backgroundColor: themes[thisIndex].color_theme_10
+      },
+
+      '& > [role="icon"]': {
         backgroundColor: themes[thisIndex].color_theme_60,
         borderRadius: theme.borderRadius_1,
-        content: '""',
-        height: swatchSize,
-        left: theme.space_inset_md,
-        position: 'absolute',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        width: swatchSize
+        boxSizing: 'content-box',
+        flex: '0 0 auto',
+        fill: isActive ? theme.color_white : 'transparent',
+        marginRight: theme.space_inline_xs,
+        padding: `${parseFloat(theme.space_inset_sm) / 2}em`
+      },
+
+      '@media(min-width: 29em)': {
+        alignItems: 'flex-start',
+        flexDirection: 'column',
+        padding: `
+          ${theme.space_inset_md}
+          ${theme.space_inset_md}
+          ${theme.space_inset_md}
+          ${parseFloat(theme.space_inset_md) +
+          1.25 + // Large icon size
+          parseFloat(theme.space_inset_sm) + // padding left & right
+            parseFloat(theme.space_inline_sm)}em
+        `,
+
+        '& > [role="icon"]': {
+          height: '1.25em', // Large size
+          left: theme.space_inset_md,
+          position: 'absolute',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          width: '1.25em' // Large size
+        }
       }
     };
   },
@@ -96,14 +115,18 @@ const PlaygroundOptionRoot = createStyledComponent(
 const PlaygroundOptionHex = createStyledComponent('span', ({ theme }) => ({
   color: theme.color_caption,
   display: 'block',
-  fontSize: theme.fontSize_mouse
+  fontSize: theme.fontSize_mouse,
+  marginTop: theme.space_stack_xxs,
+
+  '@media(max-width: 28.999em)': {
+    display: 'none'
+  }
 }));
 
 const PlaygroundOptionName = createStyledComponent('span', ({ theme }) => ({
   display: 'block',
   fontSize: theme.fontSize_ui,
-  fontWeight: theme.fontWeight_bold,
-  marginBottom: theme.space_stack_xxs
+  fontWeight: theme.fontWeight_bold
 }));
 
 const PlaygroundSandbox = createStyledComponent(Markdown, ({ theme }) => ({
@@ -115,7 +138,7 @@ const PlaygroundSandbox = createStyledComponent(Markdown, ({ theme }) => ({
 
   '@media(min-width: 48em)': {
     gridColumn: 2,
-    gridRow: '1 / span 3'
+    gridRow: '1 / span 4'
   }
 }));
 
@@ -142,6 +165,7 @@ const PlaygroundOption = ({
   };
   return (
     <PlaygroundOptionRoot {...rootProps}>
+      <IconCheck size="small" />
       <PlaygroundOptionName>{children}</PlaygroundOptionName>
       <PlaygroundOptionHex>
         {themes[thisIndex].color_theme_60}
@@ -164,9 +188,14 @@ stars billions upon billions dream of the mind’s eye, a very small stage in
 a vast cosmic arena.
 
 <Button iconStart={playgroundButtonIcon} primary>
-  Discover why we love themes
+  We love themes
 </Button>
 `;
+
+const handleClick = (fn: () => void) => {
+  fn();
+  // TODO: blur here
+};
 
 export default function ThemePlaygound({
   index,
@@ -184,7 +213,7 @@ export default function ThemePlaygound({
           thisIndex={0}
           isActive={index === 0}
           onClick={() => {
-            setIndex(0);
+            handleClick(() => setIndex(0));
           }}
           themes={themes}>
           Magenta
@@ -193,7 +222,7 @@ export default function ThemePlaygound({
           thisIndex={1}
           isActive={index === 1}
           onClick={() => {
-            setIndex(1);
+            handleClick(() => setIndex(1));
           }}
           themes={themes}>
           Sky
@@ -202,7 +231,7 @@ export default function ThemePlaygound({
           thisIndex={2}
           isActive={index === 2}
           onClick={() => {
-            setIndex(2);
+            handleClick(() => setIndex(2));
           }}
           themes={themes}>
           Teal

@@ -218,8 +218,9 @@ const Intro = createStyledComponent(Markdown, {
 
 const PlaygroundSection = createStyledComponent(Section, ({ index }) => ({
   background: `linear-gradient(
-    ${themes[index].color_theme_40},
-    ${themes[index].color_theme_80})`
+    ${themes[index].color_theme_80},
+    ${themes[index].color_theme_40}
+  )`
 }));
 
 const BlogLink = createStyledComponent(Link, ({ theme }) => ({
@@ -276,6 +277,10 @@ export default class Home extends Component<Props, State> {
     };
   }
 
+  componentDidMount() {
+    this.rotateThemes(this.state.themeIndex);
+  }
+
   render() {
     const { themeIndex } = this.state;
 
@@ -299,7 +304,7 @@ export default class Home extends Component<Props, State> {
                 </Hero>
               </ThemeProvider>
               <First
-                clipColor={themes[themeIndex].color_theme_40}
+                clipColor={themes[themeIndex].color_theme_80}
                 point={matches ? 3 / 4 : 999 / 1000}>
                 <Markdown
                   anchors={false}
@@ -311,7 +316,7 @@ export default class Home extends Component<Props, State> {
                 <ThemePlayground
                   index={themeIndex}
                   setIndex={index => {
-                    this.setThemeIndex(index);
+                    this.setThemeIndex(index, true);
                   }}
                   themes={themes}
                 />
@@ -326,7 +331,21 @@ export default class Home extends Component<Props, State> {
     );
   }
 
-  setThemeIndex = (index: number) => {
-    this.setState({ themeIndex: index });
+  changeTheme: any;
+
+  rotateThemes = (index: number, isClick?: boolean) => {
+    if (isClick) {
+      clearTimeout(this.changeTheme);
+    }
+    const newIndex = index < themes.length - 1 ? index + 1 : 0;
+    this.changeTheme = setTimeout(() => {
+      this.setThemeIndex(newIndex);
+    }, 3000);
+  };
+
+  setThemeIndex = (index: number, isClick?: boolean) => {
+    this.setState({ themeIndex: index }, () => {
+      this.rotateThemes(index, isClick);
+    });
   };
 }
