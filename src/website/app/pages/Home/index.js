@@ -222,7 +222,7 @@ const PlaygroundSection = createStyledComponent(Section, ({ index }) => ({
     ${themes[index].color_theme_80})`
 }));
 
-const StyledBlogLink = createStyledComponent(Link, ({ theme }) => ({
+const BlogLink = createStyledComponent(Link, ({ theme }) => ({
   backgroundColor: 'rgba(0,0,0,0.4)',
   borderRadius: theme.borderRadius_1,
   padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
@@ -248,20 +248,6 @@ const StyledBlogLink = createStyledComponent(Link, ({ theme }) => ({
     textDecoration: 'none'
   }
 }));
-
-const BlogLink = ({ children, to }: { children: React$Node, to: string }) => {
-  return (
-    <Media
-      query="(min-width: 39em)"
-      render={() => (
-        <StyledBlogLink to={to}>
-          {children}
-          <IconChevronRight size="large" />
-        </StyledBlogLink>
-      )}
-    />
-  );
-};
 
 const CallsToAction = () => {
   return (
@@ -301,9 +287,13 @@ export default class Home extends Component<Props, State> {
               <ThemeProvider theme={heroTheme}>
                 <Hero point={matches ? 1 / 4 : 1 / 1000}>
                   <Header latestPost={latestPost} />
-                  {latestPost && (
-                    <BlogLink to={latestPost.url}>{latestPost.title}</BlogLink>
-                  )}
+                  {latestPost &&
+                    matches && (
+                      <BlogLink to={latestPost.url}>
+                        {latestPost.title}
+                        <IconChevronRight size="large" />
+                      </BlogLink>
+                    )}
                   <Intro anchors={false}>{intro}</Intro>
                   <CallsToAction />
                 </Hero>
