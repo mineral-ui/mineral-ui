@@ -16,33 +16,23 @@
 
 /* @flow */
 import color from './color';
+import createColorRamp from './createColorRamp';
 import styleVariables from './styleVariables';
 
-const themeColor = 'blue';
-
-function createColorRamp(color: {}, key: string, name: string) {
-  const ramp = {};
-
-  for (let i = 10; i <= 100; i += 10) {
-    ramp[`color_${name}_${i}`] = color[`${key}_${i}`];
-  }
-
-  return ramp;
-}
-
-const primaries = createColorRamp(color, themeColor, 'theme');
-const grays = createColorRamp(color, 'gray', 'gray');
+const grays = createColorRamp('gray', 'gray', color);
+const primaries = createColorRamp('{{color}}', 'theme', color);
 
 export default {
-  /* Naming convention:
+  /* Theme key naming convention:
    *
-   * property_target_variant_state
+   *   [property]_[target]_[variant]_[state]
    *
-   * E.g., to define a variable for the border-color on focused "success" buttons and inputs:
+   * E.g., A key for the border-color on focused "success" buttons and inputs
+   * would look like the following.
    *
-   * borderColor_success_focus
+   *   borderColor_success_focus
    *
-   * Only 'type' is required. Irrelevant parts are simply skipped.
+   * Only [property] is required. Irrelevant parts are skipped.
    */
 
   ...styleVariables,
@@ -107,7 +97,7 @@ export default {
   color_text_primary_active: primaries.color_theme_70,
   color_text_primary_focus: primaries.color_theme_60,
   color_text_primary_hover: primaries.color_theme_50,
-  color_text_onprimary: color.white,
+  color_text_onprimary: {{color_text_onprimary}},
   color_text_success: color.green_90,
   color_text_success_active: color.green_100,
   color_text_success_focus: color.green_90,

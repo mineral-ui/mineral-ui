@@ -90,7 +90,7 @@ const MyComponent = createStyledComponent('div', props => ({
 
  The [`ThemeProvider`](#themeprovider-theme)(s) in your app provides the theme to other Mineral UI and/or Glamorous components within that ThemeProvider. Your app [must have a ThemeProvider at its root](../README.md#getting-started) and can optionally nest additional ThemeProviders to apply a custom theme to a section of your app. Nested ThemeProviders shallowly merge their theme with the parent theme.
 
-The theme itself (see the default [MineralTheme](../utils/mineralTheme.js) for an example) is a simple shallow object of variables that are shared across components.
+The theme itself is a simple shallow object of variables that are shared across components.
 
 Each component can also have a "theme", which is not a file, but rather a set of variables available to override default values. E.g., if Mineral UI's Button component looked like this:
 

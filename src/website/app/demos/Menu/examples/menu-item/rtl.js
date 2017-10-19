@@ -15,10 +15,9 @@
  */
 
 /* @flow */
-import { mineralTheme } from '../../../../../../utils';
 import IconHelp from '../../../../../../Icon/IconHelp';
 import Menu, { MenuItem } from '../../../../../../Menu';
-import ThemeProvider from '../../../../../../ThemeProvider';
+import { mineralTheme, ThemeProvider } from '../../../../../../themes';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

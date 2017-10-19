@@ -15,11 +15,14 @@
  */
 
 /* @flow */
-/**
-  * Helper to convert a px value to ems, relative to the base font size
-  */
-import fontSize_base from '../themes/fontSizeBase';
+import examples from './examples';
 
-export default function pxToEm(value: number) {
-  return `${value / fontSize_base}em`;
-}
+export default {
+  doc: {
+    description: `Mineral UI provides several different bundled themes.  Choose the one that best suits your style.  Please see the [theming guide](/theming) for more information.`
+  },
+  examples,
+  hidePropDoc: true,
+  slug: 'themes',
+  title: 'Themes'
+};

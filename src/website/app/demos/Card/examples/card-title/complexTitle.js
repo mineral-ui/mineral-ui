@@ -15,7 +15,8 @@
  */
 
 /* @flow */
-import { createStyledComponent, mineralTheme } from '../../../../../../utils';
+import { createStyledComponent } from '../../../../../../utils';
+import { mineralTheme } from '../../../../../../themes';
 import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 

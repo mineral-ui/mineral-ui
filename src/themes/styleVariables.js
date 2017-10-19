@@ -15,8 +15,8 @@
  */
 
 /* @flow */
-import fontSize_base from './font-size-base';
-import pxToEm from './pxToEm';
+import fontSize_base from './fontSizeBase';
+import pxToEm from '../utils/pxToEm';
 
 const spacing_quarter = pxToEm(2);
 const spacing_half = pxToEm(4);

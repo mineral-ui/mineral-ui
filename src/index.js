@@ -22,11 +22,18 @@ export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
 export { default as Popover } from './Popover';
-export { default as ThemeProvider } from './ThemeProvider';
 export {
-  color,
-  createStyledComponent,
-  createThemedComponent,
+  blueTheme,
+  duskTheme,
+  indigoTheme,
+  limeTheme,
   mineralTheme,
-  styleVariables
-} from './utils';
+  purpleTheme,
+  skyTheme,
+  slateTheme,
+  tealTheme,
+  color,
+  styleVariables,
+  ThemeProvider
+} from './themes';
+export { createStyledComponent, createThemedComponent } from './utils';

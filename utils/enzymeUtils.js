@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { mount } from 'enzyme';
-import ThemeProvider from '../src/ThemeProvider';
+import { ThemeProvider } from '../src/themes';
 
 export function mountInThemeProvider(Component: React$Element<*>) {
   const themeProvider = mount(<ThemeProvider>{Component}</ThemeProvider>);

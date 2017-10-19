@@ -15,4 +15,13 @@
  */
 
 /* @flow */
-export { default } from './ThemeProvider';
+export { default as color } from './color';
+export { default as createColorRamp } from './createColorRamp';
+export { default as styleVariables } from './styleVariables';
+export { default as ThemeProvider } from './ThemeProvider';
+
+/* eslint-disable prettier/prettier */
+export { default as mineralTheme } from './mineralTheme';
+{{#themeNames}}
+export { default as {{themeName}} } from './{{themeName}}';
+{{/themeNames}}

@@ -15,11 +15,18 @@
  */
 
 /* @flow */
-/**
-  * Helper to convert a px value to ems, relative to the base font size
-  */
-import fontSize_base from '../themes/fontSizeBase';
+export default function createColorRamp(
+  key: string, // The key of the color in the color object
+  name: string, // The output key name
+  colors: {} // The palette of colors
+): {
+  [string]: any
+} {
+  const ramp = {};
 
-export default function pxToEm(value: number) {
-  return `${value / fontSize_base}em`;
+  for (let index = 10; index <= 100; index += 10) {
+    ramp[`color_${name}_${index}`] = colors[`${key}_${index}`];
+  }
+
+  return ramp;
 }

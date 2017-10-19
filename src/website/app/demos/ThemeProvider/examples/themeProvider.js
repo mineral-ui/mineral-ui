@@ -16,7 +16,7 @@
 
 /* @flow */
 import { createStyledComponent } from '../../../../../utils';
-import ThemeProvider from '../../../../../ThemeProvider';
+import { ThemeProvider } from '../../../../../themes';
 // TODO: Extract shared components to common location
 import Sample from '../../utils/components/Sample';
 

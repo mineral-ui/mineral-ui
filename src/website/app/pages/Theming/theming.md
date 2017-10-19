@@ -26,7 +26,7 @@ optionally nest additional ThemeProviders to apply a custom theme to sections
 of your app. Nested ThemeProviders shallowly merge their theme
 with the parent theme.
 
-The theme itself (see the default mineralTheme below for an example) is
+The theme itself (see the default mineral theme below for an example) is
 a simple shallow object of variables that are shared across components.
 
 Each component can also have a “theme”, which is not a file, but rather
@@ -57,7 +57,7 @@ const MyButton = createThemedComponent(Button, {
 ## Theme Variables
 
 Themes in Mineral UI are made of the following variables. The values
-below come from the default mineralTheme. Note the naming convention:
+below come from the default mineral theme. Note the naming convention:
 ‘property_target_variant_state’.
 
 <!-- Table of theme variables here -->
