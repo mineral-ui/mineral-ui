@@ -15,9 +15,10 @@
  */
 
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
 import Media from 'react-media';
 import {
+  color,
   createStyledComponent,
   createThemedComponent,
   mineralTheme,
@@ -33,13 +34,44 @@ import Markdown from '../../Markdown';
 import Header from './Header';
 import _Hero from './Hero';
 import Section from './Section';
+import ThemePlayground from './ThemePlayground';
 import intro from './intro.md';
 import first from './first.md';
+
+// Temp
+import magenta from './themes/magenta';
+import sky from './themes/sky';
+import teal from './themes/teal';
+
+type Props = {};
+
+type State = {
+  themeIndex: number
+};
 
 const latestPost = {
   title: 'How we built our site using our components',
   url: 'https://medium.com'
 };
+
+// Undoing home theme customization
+const intermediateTheme = baseTheme => ({
+  Button_backgroundColor_primary: baseTheme.color_theme_60,
+  Button_backgroundColor_primary_active: baseTheme.color_theme_70,
+  Button_backgroundColor_primary_focus: baseTheme.color_theme_60,
+  Button_backgroundColor_primary_hover: baseTheme.color_theme_50,
+  Button_color_text: baseTheme.color_gray_100,
+
+  Heading_color_3: baseTheme.color_theme_80,
+
+  ...baseTheme
+});
+
+const themes = [
+  intermediateTheme(magenta),
+  intermediateTheme(sky),
+  intermediateTheme(teal)
+];
 
 const homeTheme = {
   fontFamily: null,
@@ -184,49 +216,10 @@ const Intro = createStyledComponent(Markdown, {
   }
 });
 
-const PlaygroundContainer = createStyledComponent('div', ({ theme }) => ({
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, auto)',
-  gridTemplateRows: `${theme.space_stack_xxl} auto`,
-  gridGap: theme.space_inline_md,
-  marginTop: theme.space_stack_xl,
-  position: 'relative', // for z-index
-  zIndex: 2,
-
-  '@media(min-width: 48em)': {
-    gridTemplateColumns: '6em auto',
-    gridTemplateRows: 'repeat(3, auto)'
-  }
-}));
-
-const PlaygroundOption = createStyledComponent('span', ({ theme }) => ({
-  alignItems: 'center',
-  backgroundColor: theme.color_white,
-  borderRadius: theme.borderRadius_1,
-  boxShadow: theme.shadow_3,
-  display: 'flex',
-  justifyContent: 'center'
-}));
-
-const PlaygroundSandbox = createStyledComponent('div', ({ theme }) => ({
-  backgroundColor: theme.color_white,
-  borderRadius: theme.borderRadius_1,
-  boxShadow: theme.shadow_3,
-  gridColumn: '1 / span 3',
-  height: pxToEm(300),
-
-  '@media(min-width: 48em)': {
-    gridColumn: 2,
-    gridRow: '1 / span 3'
-  }
-}));
-
-const PlaygroundSection = createStyledComponent(Section, ({ theme }) => ({
-  background: 'linear-gradient(hsl(35, 69%, 62%), hsl(13, 62%, 58%))',
-
-  '& > div': {
-    paddingBottom: theme.space_inset_md
-  }
+const PlaygroundSection = createStyledComponent(Section, ({ index }) => ({
+  background: `linear-gradient(
+    ${themes[index].color_theme_40},
+    ${themes[index].color_theme_80})`
 }));
 
 const StyledBlogLink = createStyledComponent(Link, ({ theme }) => ({
@@ -284,51 +277,66 @@ const CallsToAction = () => {
   );
 };
 
-const Playground = () => {
-  return (
-    <PlaygroundContainer>
-      <PlaygroundOption>Snap</PlaygroundOption>
-      <PlaygroundOption>Crackle</PlaygroundOption>
-      <PlaygroundOption>Pop</PlaygroundOption>
-      <PlaygroundSandbox />
-    </PlaygroundContainer>
-  );
-};
+export default class Home extends Component<Props, State> {
+  props: Props;
 
-export default function Home() {
-  return (
-    <Media query="(min-width: 39em)">
-      {matches => (
-        <ThemeProvider theme={homeTheme}>
-          <Root>
-            <ThemeProvider theme={heroTheme}>
-              <Hero point={matches ? 1 / 4 : 1 / 1000}>
-                <Header latestPost={latestPost} />
-                {latestPost && (
-                  <BlogLink to={latestPost.url}>{latestPost.title}</BlogLink>
-                )}
-                <Intro anchors={false}>{intro}</Intro>
-                <CallsToAction />
-              </Hero>
-            </ThemeProvider>
-            <First
-              clipColor="hsl(35, 69%, 62%)"
-              point={matches ? 3 / 4 : 999 / 1000}>
-              <Markdown
-                anchors={false}
-                scope={{ ColoredLogo, IconChevronRight, CTALink }}>
-                {first}
-              </Markdown>
-            </First>
-            <PlaygroundSection point={1 / 2}>
-              <Playground />
-            </PlaygroundSection>
-            <Section>
-              <Footer />
-            </Section>
-          </Root>
-        </ThemeProvider>
-      )}
-    </Media>
-  );
+  state: State;
+
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {
+      themeIndex: 0
+    };
+  }
+
+  render() {
+    const { themeIndex } = this.state;
+
+    return (
+      <Media query="(min-width: 39em)">
+        {matches => (
+          <ThemeProvider theme={homeTheme}>
+            <Root>
+              <ThemeProvider theme={heroTheme}>
+                <Hero point={matches ? 1 / 4 : 1 / 1000}>
+                  <Header latestPost={latestPost} />
+                  {latestPost && (
+                    <BlogLink to={latestPost.url}>{latestPost.title}</BlogLink>
+                  )}
+                  <Intro anchors={false}>{intro}</Intro>
+                  <CallsToAction />
+                </Hero>
+              </ThemeProvider>
+              <First
+                clipColor={themes[themeIndex].color_theme_40}
+                point={matches ? 3 / 4 : 999 / 1000}>
+                <Markdown
+                  anchors={false}
+                  scope={{ ColoredLogo, IconChevronRight, CTALink }}>
+                  {first}
+                </Markdown>
+              </First>
+              <PlaygroundSection index={themeIndex} point={1 / 2}>
+                <ThemePlayground
+                  index={themeIndex}
+                  setIndex={index => {
+                    this.setThemeIndex(index);
+                  }}
+                  themes={themes}
+                />
+              </PlaygroundSection>
+              <Section>
+                <Footer />
+              </Section>
+            </Root>
+          </ThemeProvider>
+        )}
+      </Media>
+    );
+  }
+
+  setThemeIndex = (index: number) => {
+    this.setState({ themeIndex: index });
+  };
 }
