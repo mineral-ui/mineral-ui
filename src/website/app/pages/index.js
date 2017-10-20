@@ -20,6 +20,7 @@ import Theming from './Theming';
 import Color from './Color';
 import Typography from './Typography';
 import ComponentStatus from './ComponentStatus';
+import Roadmap from './Roadmap';
 
 type Page = {
   component: React$ComponentType<*>,
@@ -69,6 +70,11 @@ const sections: Array<Section> = [
         component: ComponentStatus,
         path: '/component-status',
         title: 'Component Status'
+      },
+      {
+        component: Roadmap,
+        path: '/roadmap',
+        title: 'Product Roadmap'
       }
     ]
   }

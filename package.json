@@ -34,6 +34,7 @@
     "postinstall": "npm run build:icons",
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
+    "roadmap": "./scripts/roadmap.js ./src/website/app/pages/Roadmap/milestones.js",
     "start": "webpack-dev-server --progress",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
