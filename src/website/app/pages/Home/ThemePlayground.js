@@ -139,6 +139,10 @@ const PlaygroundSandbox = createStyledComponent(Markdown, ({ theme }) => ({
   '@media(min-width: 48em)': {
     gridColumn: 2,
     gridRow: '1 / span 4'
+  },
+
+  '& > h3': {
+    color: theme.color_theme_80
   }
 }));
 

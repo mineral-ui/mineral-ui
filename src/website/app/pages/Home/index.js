@@ -24,10 +24,9 @@ import {
   mineralTheme,
   pxToEm
 } from '../../../../utils';
-import _Button from '../../../../Button';
+import Button from '../../../../Button';
 import IconChevronRight from '../../../../Icon/IconChevronRight';
 import ThemeProvider from '../../../../ThemeProvider';
-import Footer from '../../Footer';
 import Link from '../../Link';
 import Logo from '../../Logo';
 import Markdown from '../../Markdown';
@@ -35,8 +34,11 @@ import Header from './Header';
 import _Hero from './Hero';
 import Section from './Section';
 import ThemePlayground from './ThemePlayground';
-import intro from './intro.md';
+import featureOne from './featureOne.md';
+import featureTwo from './featureTwo.md';
 import first from './first.md';
+import getStarted from './getStarted.md';
+import intro from './intro.md';
 
 // Temp
 import magenta from './themes/magenta';
@@ -54,37 +56,30 @@ const latestPost = {
   url: 'https://medium.com'
 };
 
-// Undoing home theme customization
-const intermediateTheme = baseTheme => ({
-  Button_backgroundColor_primary: baseTheme.color_theme_60,
-  Button_backgroundColor_primary_active: baseTheme.color_theme_70,
-  Button_backgroundColor_primary_focus: baseTheme.color_theme_60,
-  Button_backgroundColor_primary_hover: baseTheme.color_theme_50,
-  Button_color_text: baseTheme.color_gray_100,
+const playgroundThemes = [magenta, sky, teal];
 
-  Heading_color_3: baseTheme.color_theme_80,
+const mineralColor = {
+  orange: color.orange_50,
+  orange_active: color.orange_60,
+  orange_focus: color.orange_50,
+  orange_hover: color.orange_40,
+  yellow: color.yellow_50,
+  yellow_active: color.yellow_60,
+  yellow_focus: color.yellow_50,
+  yellow_hover: color.yellow_40,
+  slate: color.slate_60,
+  slate_active: color.slate_70,
+  slate_focus: color.slate_60,
+  slate_hover: color.slate_50
+};
 
-  ...baseTheme
-});
-
-const themes = [
-  intermediateTheme(magenta),
-  intermediateTheme(sky),
-  intermediateTheme(teal)
-];
-
-const homeTheme = {
+const rootTheme = {
   fontFamily: null,
   fontFamily_headline: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
 
-  Button_backgroundColor_primary: 'hsl(13, 62%, 58%)',
-  Button_backgroundColor_primary_active: 'hsl(16, 68%, 53%)',
-  Button_backgroundColor_primary_focus: 'hsl(13, 62%, 58%)',
-  Button_backgroundColor_primary_hover: 'hsl(16, 68%, 63%)',
+  ButtonContent_fontSize: '1.1em',
 
-  Button_color_text: 'hsl(13, 62%, 58%)',
-
-  Heading_color_3: 'hsl(13, 62%, 58%)',
+  Heading_color_3: mineralColor.orange,
   Heading_fontFamily: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
   Heading_fontSize_2: pxToEm(59),
   Heading_fontSize_3: pxToEm(40),
@@ -95,35 +90,76 @@ const homeTheme = {
 };
 
 const heroTheme = {
-  // $FlowFixMe
-  borderColor: mineralTheme.color_gray_90,
-  // $FlowFixMe
-  color_caption: mineralTheme.color_gray_50,
-  color_text: mineralTheme.color_white,
+  color_text: color.white,
 
-  Heading_color_2: mineralTheme.color_white,
+  Button_backgroundColor_primary: mineralColor.orange,
+  Button_backgroundColor_primary_active: mineralColor.orange_active,
+  Button_backgroundColor_primary_focus: mineralColor.orange_focus,
+  Button_backgroundColor_primary_hover: mineralColor.orange_hover,
+  Button_color_text: mineralColor.orange,
 
-  Link_color: mineralTheme.color_white,
-  // $FlowFixMe
-  Link_color_active: mineralTheme.color_gray_10,
-  Link_color_hover: mineralTheme.color_white,
-  Link_color_focus: mineralTheme.color_white
+  Heading_color_2: color.white,
+
+  Link_color: color.white,
+  Link_color_active: color.gray_10,
+  Link_color_focus: color.white,
+  Link_color_hover: color.white
+};
+
+const gettingStartedTheme = {
+  color_text: color.white,
+
+  Button_backgroundColor_primary: mineralColor.yellow,
+  Button_backgroundColor_primary_active: mineralColor.yellow_active,
+  Button_backgroundColor_primary_focus: mineralColor.yellow_focus,
+  Button_backgroundColor_primary_hover: mineralColor.yellow_hover,
+
+  Button_color_text: color.gray_100,
+  Button_color_text_primary: color.gray_100,
+
+  Heading_color_3: color.white,
+  Heading_color_4: color.white,
+
+  Link_color: mineralColor.yellow,
+  Link_color_active: mineralColor.yellow_active,
+  Link_color_focus: mineralColor.yellow_focus,
+  Link_color_hover: mineralColor.yellow_hover
 };
 
 const Root = createStyledComponent(
   'div',
-  ({ theme }) => ({
-    // Matches interior pages
-    paddingBottom: theme.space_inset_md
-  }),
+  {},
   {
     includeStyleReset: true
   }
 );
 
-const Button = createThemedComponent(_Button, {
-  ButtonContent_fontSize: '1.1em'
-});
+const BlogLink = createStyledComponent(Link, ({ theme }) => ({
+  backgroundColor: 'rgba(0,0,0,0.4)',
+  borderRadius: theme.borderRadius_1,
+  padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
+
+  '&::before': {
+    backgroundColor: mineralColor.yellow,
+    borderRadius: theme.borderRadius_1,
+    bottom: '0.1em',
+    color: theme.color_black,
+    content: 'New',
+    fontSize: '0.8em',
+    fontWeight: theme.fontWeight_bold,
+    marginRight: theme.space_inline_sm,
+    padding: `
+      ${parseFloat(theme.space_inset_sm) / 4}em
+      ${parseFloat(theme.space_inset_sm) / 2}em
+      `,
+    position: 'relative',
+    textTransform: 'uppercase'
+  },
+
+  '&:hover::before': {
+    textDecoration: 'none'
+  }
+}));
 
 const Buttons = createStyledComponent('div', ({ theme }) => ({
   '& > * + *': {
@@ -133,58 +169,111 @@ const Buttons = createStyledComponent('div', ({ theme }) => ({
 
 const ColoredLogo = createStyledComponent(Logo, {
   '& .band-1': {
-    fill: 'hsl(35, 69%, 62%)' // yellow
+    fill: mineralColor.yellow
   },
   '& .band-2': {
-    fill: 'hsl(13, 62%, 58%)' // orange
+    fill: mineralColor.orange
   },
   '& .band-3': {
-    fill: 'hsl(203, 21%, 44%)' // slate
+    fill: mineralColor.slate
   }
 });
 
 const CTALink = createThemedComponent(Link, {
-  // $FlowFixMe
-  Link_color: mineralTheme.color_gray_80,
-  // $FlowFixMe
-  Link_color_active: mineralTheme.color_gray_90,
-  // $FlowFixMe
-  Link_color_hover: mineralTheme.color_gray_70,
-  // $FlowFixMe
-  Link_color_focus: mineralTheme.color_gray_80
+  Link_color: color.gray_80,
+  Link_color_active: color.gray_90,
+  Link_color_hover: color.gray_70,
+  Link_color_focus: color.gray_80
 });
 
-const First = createStyledComponent(Section, ({ theme }) => ({
-  '& > div > div ': {
-    '@media(max-width: 38.999em)': {
+const Features = createStyledComponent('div', {
+  '@media(min-width: 39em)': {
+    display: 'flex',
+    justifyContent: 'space-between'
+  }
+});
+
+const Feature = createStyledComponent(Markdown, {
+  '@media(min-width: 39em)': {
+    width: '40%'
+  }
+}).withProps({
+  anchors: false
+});
+
+const GetStartedSection = createStyledComponent(Section, ({ theme }) => ({
+  backgroundColor: theme.color_gray_100
+}));
+
+const GetStarted = createStyledComponent(Markdown, ({ theme }) => ({
+  margin: '0 auto',
+  width: 'min-content',
+
+  '& > svg': {
+    display: 'block',
+    margin: '0 auto',
+    width: '50px'
+  },
+
+  '& > h3': {
+    textAlign: 'center'
+  },
+
+  '& > ol': {
+    counterReset: 'getStarted',
+    listStyle: 'none',
+    padding: 0
+  },
+
+  '& > ol > li': {
+    counterIncrement: 'getStarted',
+    position: 'relative',
+
+    '&::before': {
+      backgroundColor: mineralColor.yellow,
+      borderRadius: '0.75em',
+      content: 'counter(getStarted)',
+      color: theme.color_gray_100,
+      fontWeight: theme.fontWeight_extraBold,
+      height: '1.5em',
+      right: `calc(100% + ${theme.space_inline_md})`,
+      position: 'absolute',
       textAlign: 'center',
-
-      '& > svg': {
-        margin: '0 auto',
-        maxWidth: '10vh',
-        width: '50%'
-      }
-    },
-
-    '@media(min-width: 39em)': {
-      display: 'grid',
-      gridTemplateColumns: '1fr 10em',
-      gridColumnGap: theme.space_inline_md,
-
-      '& > *': {
-        gridColumn: 1,
-        textAlign: 'right'
-      },
-
-      '& > svg': {
-        alignSelf: 'center',
-        gridColumn: 2,
-        gridRow: '1 / span 2',
-        width: '100%'
-      }
+      top: '-0.2em', // Optical adjustment
+      width: '1.5em'
     }
   }
-}));
+})).withProps({ anchors: false });
+
+const Guidelines = createStyledComponent(Markdown, ({ theme }) => ({
+  '@media(max-width: 38.999em)': {
+    textAlign: 'center',
+
+    '& > svg': {
+      margin: '0 auto',
+      maxWidth: '10vh',
+      width: '50%'
+    }
+  },
+
+  '@media(min-width: 39em)': {
+    display: 'grid',
+    gridTemplateColumns: '1fr 10em',
+    gridColumnGap: theme.space_inline_md,
+
+    '& > *': {
+      gridColumn: 1,
+      textAlign: 'right'
+    },
+
+    '& > svg': {
+      alignSelf: 'center',
+      gridColumn: 2,
+      gridRow: '1 / span 2',
+      width: '100%'
+    }
+  }
+})).withProps({ anchors: false });
 
 // $FlowFixMe
 const Hero = createStyledComponent(_Hero, {
@@ -222,55 +311,14 @@ const Intro = createStyledComponent(Markdown, {
       maxWidth: '41em'
     }
   }
-});
+}).withProps({ anchors: false });
 
 const PlaygroundSection = createStyledComponent(Section, ({ index }) => ({
   background: `linear-gradient(
-    ${themes[index].color_theme_80},
-    ${themes[index].color_theme_40}
+    ${playgroundThemes[index].color_theme_80},
+    ${playgroundThemes[index].color_theme_40}
   )`
 }));
-
-const BlogLink = createStyledComponent(Link, ({ theme }) => ({
-  backgroundColor: 'rgba(0,0,0,0.4)',
-  borderRadius: theme.borderRadius_1,
-  padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
-
-  '&::before': {
-    backgroundColor: 'hsl(35, 69%, 62%)',
-    borderRadius: theme.borderRadius_1,
-    bottom: '0.1em',
-    color: theme.color_black,
-    content: 'New',
-    fontSize: '0.8em',
-    fontWeight: theme.fontWeight_bold,
-    marginRight: theme.space_inline_sm,
-    padding: `
-      ${parseFloat(theme.space_inset_sm) / 4}em
-      ${parseFloat(theme.space_inset_sm) / 2}em
-      `,
-    position: 'relative',
-    textTransform: 'uppercase'
-  },
-
-  '&:hover::before': {
-    textDecoration: 'none'
-  }
-}));
-
-const CallsToAction = () => {
-  return (
-    <Buttons>
-      <Button primary size="jumbo">
-        Get Started
-      </Button>
-      <Media
-        query="(min-width: 39em)"
-        render={() => <Button size="jumbo">View on GitHub</Button>}
-      />
-    </Buttons>
-  );
-};
 
 export default class Home extends Component<Props, State> {
   props: Props;
@@ -295,7 +343,7 @@ export default class Home extends Component<Props, State> {
     return (
       <Media query="(min-width: 39em)">
         {matches => (
-          <ThemeProvider theme={homeTheme}>
+          <ThemeProvider theme={rootTheme}>
             <Root>
               <ThemeProvider theme={heroTheme}>
                 <Hero point={matches ? 1 / 4 : 1 / 1000}>
@@ -307,19 +355,28 @@ export default class Home extends Component<Props, State> {
                         <IconChevronRight size="large" />
                       </BlogLink>
                     )}
-                  <Intro anchors={false}>{intro}</Intro>
-                  <CallsToAction />
+                  <Intro>{intro}</Intro>
+                  <Buttons>
+                    <Button primary size="jumbo">
+                      Get Started
+                    </Button>
+                    <Media
+                      query="(min-width: 39em)"
+                      render={() => (
+                        <Button size="jumbo">View on GitHub</Button>
+                      )}
+                    />
+                  </Buttons>
                 </Hero>
               </ThemeProvider>
-              <First
-                clipColor={themes[themeIndex].color_theme_80}
+              <Section
+                // $FlowFixMe
+                clipColor={playgroundThemes[themeIndex].color_theme_80}
                 point={matches ? 3 / 4 : 999 / 1000}>
-                <Markdown
-                  anchors={false}
-                  scope={{ ColoredLogo, IconChevronRight, CTALink }}>
+                <Guidelines scope={{ ColoredLogo, IconChevronRight, CTALink }}>
                   {first}
-                </Markdown>
-              </First>
+                </Guidelines>
+              </Section>
               <PlaygroundSection
                 index={themeIndex}
                 point={matches ? 1 / 4 : 1 / 1000}>
@@ -328,12 +385,25 @@ export default class Home extends Component<Props, State> {
                   setIndex={index => {
                     this.setThemeIndex(index, true);
                   }}
-                  themes={themes}
+                  themes={playgroundThemes}
                 />
               </PlaygroundSection>
               <Section>
-                <Footer />
+                <Features>
+                  <Feature>{featureOne}</Feature>
+                  <Feature>{featureTwo}</Feature>
+                </Features>
               </Section>
+              <GetStartedSection
+                angle={-5}
+                clipColor={color.white}
+                point={1 / 2}>
+                <ThemeProvider theme={gettingStartedTheme}>
+                  <GetStarted scope={{ Buttons, Button, Logo }}>
+                    {getStarted}
+                  </GetStarted>
+                </ThemeProvider>
+              </GetStartedSection>
             </Root>
           </ThemeProvider>
         )}
@@ -347,7 +417,7 @@ export default class Home extends Component<Props, State> {
     if (isClick) {
       clearTimeout(this.changeTheme);
     }
-    const newIndex = index < themes.length - 1 ? index + 1 : 0;
+    const newIndex = index < playgroundThemes.length - 1 ? index + 1 : 0;
     this.changeTheme = setTimeout(() => {
       this.setThemeIndex(newIndex);
     }, 12000);

@@ -18,6 +18,7 @@
 import React, { Component } from 'react';
 import Media from 'react-media';
 import {
+  color,
   createStyledComponent,
   createThemedComponent,
   pxToEm
@@ -107,7 +108,7 @@ const MenuButton = createStyledComponent(ThemedMenuButton, {
   top: '0.3em', // Optical adjustment for baseline alignment with Logotype
 
   '&:focus': {
-    color: 'hsl(13, 62%, 58%)',
+    color: color.orange_50,
     boxShadow: 'none'
   }
 });

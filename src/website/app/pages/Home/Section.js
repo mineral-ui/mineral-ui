@@ -32,41 +32,52 @@ const Root = createStyledComponent('div', ({ point }) => ({
 const Inner = createStyledComponent(
   'div',
   ({ angle, clipColor, point, theme }) => {
+    const clipBottomEdge = angle > 0;
     const paddingHorizontal = `${parseFloat(theme.space_inset_sm) * 4}em`;
     const paddingHorizontalWide = `${parseFloat(theme.space_inset_sm) * 16}em`;
-    const paddingTop = `${parseFloat(theme.space_inset_sm) * 4}em`;
-    const paddingTopWide = `${parseFloat(theme.space_inset_sm) * 16}em`;
-    const paddingBottom = `${parseFloat(theme.space_inset_sm) * 16}em`;
-    const paddingBottomWide = `${parseFloat(theme.space_inset_sm) * 24}em`;
+    const paddingVertical = `${parseFloat(theme.space_inset_sm) * 4}em`;
+    const paddingVerticalWide = `${parseFloat(theme.space_inset_sm) * 16}em`;
+    const paddingWithClip = `${parseFloat(theme.space_inset_sm) * 16}em`;
+    const paddingWithClipWide = `${parseFloat(theme.space_inset_sm) * 24}em`;
+    const paddingBottom =
+      point && clipBottomEdge ? paddingWithClip : paddingVertical;
+    const paddingBottomWide =
+      point && clipBottomEdge ? paddingWithClipWide : paddingVerticalWide;
+    const paddingTop =
+      point && !clipBottomEdge ? paddingWithClip : paddingVertical;
+    const paddingTopWide =
+      point && !clipBottomEdge ? paddingWithClipWide : paddingVerticalWide;
 
     const styles = [
       {
         margin: '0 auto',
         maxWidth: '80em',
-        paddingBottom: point ? paddingBottom : paddingTop,
+        paddingBottom,
         paddingLeft: paddingHorizontal,
         paddingRight: paddingHorizontal,
         paddingTop,
         position: 'relative',
 
         '@media(min-width: 48em)': {
-          paddingBottom: point ? paddingBottomWide : paddingTopWide,
+          paddingBottom: paddingBottomWide,
           paddingLeft: paddingHorizontalWide,
           paddingRight: paddingHorizontalWide,
-          paddingTop
+          paddingTop: paddingTopWide
         }
       }
     ];
 
     const pseudoStyles = {
       backgroundColor: clipColor,
-      bottom: 0,
+      bottom: clipBottomEdge ? 0 : null,
       content: '""',
+      height: '1em',
       position: 'absolute',
-      height: '1em'
+      top: !clipBottomEdge ? 0 : null
     };
 
-    const transformProperties = 'translateY(1em) scaleY(30)';
+    const transformProperties = `translateY(
+      ${clipBottomEdge ? '1em' : '-1em'}) scaleY(30)`;
 
     /*
      * The intersecting point of the two clipping shapes should be relative to
@@ -83,7 +94,7 @@ const Inner = createStyledComponent(
         ...pseudoStyles,
         left: 'calc(-50vw + 50%)', // [1]
         transform: `skewY(${angle}deg) ${transformProperties}`,
-        transformOrigin: 'top right',
+        transformOrigin: `${clipBottomEdge ? 'top' : 'bottom'} right`,
         width: `calc(50vw - 50% + ${point * 100}%)` // [2]
       }
     };
@@ -92,8 +103,8 @@ const Inner = createStyledComponent(
       '&::after': {
         ...pseudoStyles,
         right: 'calc(-50vw + 50%)', // [1]
-        transform: `skewY(-${angle}deg) ${transformProperties}`,
-        transformOrigin: 'top left',
+        transform: `skewY(${-1 * angle}deg) ${transformProperties}`,
+        transformOrigin: `${clipBottomEdge ? 'top' : 'bottom'} left`,
         width: `calc(50vw - 50% + ${(1 - point) * 100}%)` // [2]
       }
     };
