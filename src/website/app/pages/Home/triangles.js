@@ -1008,7 +1008,9 @@ FSS.SVGRenderer = function() {
   this.element = document.createElementNS(FSS.SVGNS, 'svg');
   this.element.setAttribute('xmlns', FSS.SVGNS);
   this.element.setAttribute('version', '1.1');
-  this.element.style.display = 'block';
+  this.symbol = document.createElementNS(FSS.SVGNS, 'symbol');
+  this.symbol.setAttribute('id', 'triangles');
+  this.element.appendChild(this.symbol);
   this.setSize(300, 150);
 };
 
@@ -1016,15 +1018,14 @@ FSS.SVGRenderer.prototype = Object.create(FSS.Renderer.prototype);
 
 FSS.SVGRenderer.prototype.setSize = function(width, height) {
   FSS.Renderer.prototype.setSize.call(this, width, height);
-  this.element.setAttribute('width', width);
-  this.element.setAttribute('height', height);
+  this.symbol.setAttribute('viewbox', `0 0 ${width} ${height}`);
   return this;
 };
 
 FSS.SVGRenderer.prototype.clear = function() {
   FSS.Renderer.prototype.clear.call(this);
-  for (var i = this.element.childNodes.length - 1; i >= 0; i--) {
-    this.element.removeChild(this.element.childNodes[i]);
+  for (var i = this.symbol.childNodes.length - 1; i >= 0; i--) {
+    this.symbol.removeChild(this.symbol.childNodes[i]);
   }
   return this;
 };
@@ -1042,8 +1043,8 @@ FSS.SVGRenderer.prototype.render = function(scene) {
       // Render Triangles
       for (t = mesh.geometry.triangles.length - 1; t >= 0; t--) {
         triangle = mesh.geometry.triangles[t];
-        if (triangle.polygon.parentNode !== this.element) {
-          this.element.appendChild(triangle.polygon);
+        if (triangle.polygon.parentNode !== this.symbol) {
+          this.symbol.appendChild(triangle.polygon);
         }
         points = this.formatPoint(triangle.a) + ' ';
         points += this.formatPoint(triangle.b) + ' ';
@@ -1105,7 +1106,8 @@ export default function triangles(xPos = 100, yPos = 300) {
   //------------------------------
   var center = FSS.Vector3.create();
   var container = document.getElementById('canvas');
-  var output = document.getElementById('triangles');
+  var output = document.head;
+  var instances = document.querySelectorAll('.triangles');
   var renderer, scene, mesh, geometry, material;
   var svgRenderer;
 
@@ -1134,7 +1136,14 @@ export default function triangles(xPos = 100, yPos = 300) {
     }
     renderer = svgRenderer;
     renderer.setSize(container.offsetWidth, container.offsetHeight);
+    setInstanceSizes(container.offsetWidth, container.offsetHeight);
     output.appendChild(renderer.element);
+  }
+
+  function setInstanceSizes(width, height) {
+    instances.forEach(instance => {
+      instance.setAttribute('style', `height: ${height}px; width: ${width}px`);
+    });
   }
 
   function createScene() {
@@ -1189,6 +1198,7 @@ export default function triangles(xPos = 100, yPos = 300) {
   // Resize canvas
   function resize(width, height) {
     renderer.setSize(width, height);
+    setInstanceSizes(container.offsetWidth, container.offsetHeight);
     FSS.Vector3.set(center, renderer.halfWidth, renderer.halfHeight);
     createMesh();
   }

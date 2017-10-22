@@ -41,14 +41,6 @@ const Canvas = createStyledComponent('div', {
   zIndex: '-1'
 });
 
-const Triangles = createStyledComponent('div', {
-  bottom: 0,
-  left: 0,
-  position: 'absolute',
-  right: 0,
-  top: 0
-});
-
 export default class Hero extends Component<Props, State> {
   componentDidMount() {
     triangles();
@@ -61,7 +53,9 @@ export default class Hero extends Component<Props, State> {
     return (
       <Root {...restProps}>
         <Canvas id="canvas">
-          <Triangles id="triangles" />
+          <svg className="triangles">
+            <use xlinkHref="#triangles" />
+          </svg>
         </Canvas>
         {children}
       </Root>
