@@ -17,7 +17,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import { Popper } from 'react-popper';
-import { createStyledComponent, pxToEm } from '../utils';
+import { createStyledComponent, pxToEm } from '../styles';
 import Menu from '../Menu';
 
 type Props = {

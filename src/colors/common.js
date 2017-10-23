@@ -15,4 +15,7 @@
  */
 
 /* @flow */
-export { default } from './ThemeProvider';
+export default {
+  black: '#1d1f24',
+  white: '#fff'
+};

@@ -15,13 +15,9 @@
  */
 
 /* @flow */
-import React from 'react';
-import { mount } from 'enzyme';
-import ThemeProvider from '../src/themes/ThemeProvider';
-
-export function mountInThemeProvider(Component: React$Element<*>) {
-  const themeProvider = mount(<ThemeProvider>{Component}</ThemeProvider>);
-  const component = themeProvider.find(Component.type);
-
-  return [themeProvider, component];
-}
+export { default as createColorRamp } from './createColorRamp';
+export { default as createTheme } from './createTheme';
+export { default as createThemedComponent } from './createThemedComponent';
+export { default as fontSizeBase } from './fontSizeBase';
+export { default as mineralTheme } from './mineralTheme';
+export { default as ThemeProvider } from './ThemeProvider';

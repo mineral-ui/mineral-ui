@@ -17,7 +17,7 @@
 /* @flow */
 import React, { cloneElement } from 'react';
 import { ellipsis } from 'polished';
-import { createStyledComponent, pxToEm, getNormalizedValue } from '../utils';
+import { createStyledComponent, pxToEm, getNormalizedValue } from '../styles';
 
 type Props = {
   /** Rendered content of the component */

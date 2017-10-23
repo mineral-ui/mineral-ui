@@ -15,11 +15,15 @@
  */
 
 /* @flow */
-/**
-  * Helper to convert a px value to ems, relative to the base font size
-  */
-import fontSize_base from './font-size-base';
-
-export default function pxToEm(value: number) {
-  return `${value / fontSize_base}em`;
-}
+export default {
+  slate_10: '#ebf3f7',
+  slate_20: '#d3e4ed',
+  slate_30: '#b1cfde',
+  slate_40: '#8fb6c9',
+  slate_50: '#709cb3',
+  slate_60: '#598296',
+  slate_70: '#47697a',
+  slate_80: '#3a5663',
+  slate_90: '#2e444f',
+  slate_100: '#253740'
+};

@@ -15,13 +15,6 @@
  */
 
 /* @flow */
-import React from 'react';
-import { mount } from 'enzyme';
-import ThemeProvider from '../src/themes/ThemeProvider';
-
-export function mountInThemeProvider(Component: React$Element<*>) {
-  const themeProvider = mount(<ThemeProvider>{Component}</ThemeProvider>);
-  const component = themeProvider.find(Component.type);
-
-  return [themeProvider, component];
-}
+export { default as createStyledComponent } from './createStyledComponent';
+export { default as getNormalizedValue } from './getNormalizedValue';
+export { default as pxToEm } from './pxToEm';

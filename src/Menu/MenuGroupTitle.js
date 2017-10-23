@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../utils';
+import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { componentTheme as menuItemComponentTheme } from '../Menu/MenuItem';
 
 type Props = Object;

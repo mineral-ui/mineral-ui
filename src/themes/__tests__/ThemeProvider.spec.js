@@ -18,7 +18,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import ThemeProvider from '../ThemeProvider';
-import Sample from '../../website/app/demos/utils/components/Sample';
+import Sample from '../../website/app/demos/ThemeProvider/components/Sample';
 import examples from '../../website/app/demos/ThemeProvider/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
@@ -39,8 +39,8 @@ describe('ThemeProvider', () => {
 
   it('merges nested theme variables', () => {
     const themedSample = mount(
-      <ThemeProvider theme={{ color_primary: 'cyan' }}>
-        <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
+      <ThemeProvider theme={{ color_text: 'black' }}>
+        <ThemeProvider theme={{ color_text: 'tomato' }}>
           <Sample />
         </ThemeProvider>
       </ThemeProvider>
@@ -51,8 +51,8 @@ describe('ThemeProvider', () => {
 
   it('merges themes instead of overriding', () => {
     const themedSample = mount(
-      <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-        <ThemeProvider theme={{ color_warning: 'tomato' }}>
+      <ThemeProvider theme={{ color_text: 'black' }}>
+        <ThemeProvider theme={{ color_text_warning: 'tomato' }}>
           <Sample />
         </ThemeProvider>
       </ThemeProvider>
