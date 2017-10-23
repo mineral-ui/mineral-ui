@@ -26,6 +26,8 @@ type Props = {
   circular?: boolean,
   /** Disables the Button */
   disabled?: boolean,
+  /** Element to be used as the root node - e.g. `a` can be used to create a link that is styled like a Button */
+  element?: $FlowFixMe, // Should allow string | React class
   /** Stretch Button to fill its container */
   fullWidth?: boolean,
   /** Icon that goes after the children*/
@@ -41,7 +43,7 @@ type Props = {
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
   /** Available types */
-  type?: 'button' | 'submit',
+  type?: string,
   /** Available variants */
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
@@ -84,6 +86,18 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
+function chooseColor({ disabled, primary, minimal }: Props, theme) {
+  if (disabled) {
+    return theme.color_text_disabled;
+  } else if (primary) {
+    return theme.Button_color_text_primary;
+  } else if (minimal) {
+    return theme.Button_color_text_minimal;
+  } else {
+    return theme.Button_color_text;
+  }
+}
+
 const styles = {
   button: props => {
     let theme = componentTheme(props.theme);
@@ -113,6 +127,7 @@ const styles = {
       };
     }
 
+    const color = chooseColor(props, theme);
     return {
       backgroundColor: (() => {
         if (disabled && !minimal) {
@@ -134,18 +149,9 @@ const styles = {
         : theme.Button_borderRadius,
       borderStyle: 'solid',
       borderWidth: `${theme.Button_borderWidth}px`,
-      color: (() => {
-        if (disabled) {
-          return theme.color_text_disabled;
-        } else if (primary) {
-          return theme.Button_color_text_primary;
-        } else if (minimal) {
-          return theme.Button_color_text_minimal;
-        } else {
-          return theme.Button_color_text;
-        }
-      })(),
+      color,
       cursor: disabled ? 'default' : 'pointer',
+      display: 'inline-block',
       fontWeight: theme.Button_fontWeight,
       height: theme[`Button_height_${size}`],
       // if the user puts in a small icon in a large button
@@ -156,6 +162,7 @@ const styles = {
         text === undefined
           ? theme[`Button_paddingIconOnly_${size}`]
           : `0 ${theme.Button_paddingHorizontal}`,
+      textDecoration: 'none',
       verticalAlign: 'middle',
       width: fullWidth && '100%',
       '&:focus': {
@@ -169,7 +176,9 @@ const styles = {
           }
         })(),
         borderColor: theme.Button_borderColor_focus,
-        boxShadow: theme.Button_boxShadow_focus
+        boxShadow: theme.Button_boxShadow_focus,
+        color,
+        textDecoration: 'none'
       },
       '&:hover': {
         backgroundColor: (() => {
@@ -182,7 +191,9 @@ const styles = {
               return theme.Button_backgroundColor_hover;
             }
           }
-        })()
+        })(),
+        color,
+        textDecoration: 'none'
       },
       // `:active` must be last, to follow LVHFA order:
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
@@ -197,7 +208,8 @@ const styles = {
               return theme.Button_backgroundColor_active;
             }
           }
-        })()
+        })(),
+        color
       },
       '&::-moz-focus-inner': { border: 0 },
 
@@ -276,12 +288,22 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent('button', styles.button, {
-  includeStyleReset: true,
-  rootEl: 'button'
-});
 const Content = createStyledComponent('span', styles.content);
 const Inner = createStyledComponent('span', styles.inner);
+
+function isTypeButton(type: ?string) {
+  const buttonTypes = ['button', 'submit', 'reset'];
+  return buttonTypes.indexOf(type) !== -1;
+}
+
+function filterProps({ element, type }: Props) {
+  // When element is a component, e.g. ReactRouterLink,
+  // these are not filtered automatically by rootEl
+  const invalidComponentProps = ['primary', 'text', 'variant'];
+  const invalidLinkProps =
+    element === 'a' && isTypeButton(type) ? ['type'] : [];
+  return Array.prototype.concat(invalidComponentProps, invalidLinkProps);
+}
 
 /**
  * The Button component represents a clickable button.
@@ -292,6 +314,7 @@ const Inner = createStyledComponent('span', styles.inner);
  */
 export default function Button({
   children,
+  element = 'button',
   iconStart,
   iconEnd,
   size = 'large',
@@ -299,7 +322,19 @@ export default function Button({
   variant = 'regular',
   ...restProps
 }: Props) {
-  const rootProps = { size, text: children, type, variant, ...restProps };
+  const rootProps = {
+    size,
+    text: children,
+    type,
+    variant,
+    ...restProps
+  };
+
+  const Root = createStyledComponent(element, styles.button, {
+    filterProps: filterProps(rootProps),
+    includeStyleReset: true,
+    rootEl: element
+  });
 
   const iconSize = {
     small: 'medium',
