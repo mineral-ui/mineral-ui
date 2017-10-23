@@ -17,17 +17,17 @@
 /* @flow */
 import React from 'react';
 import { ThemeProvider as GlamorousThemeProvider } from 'glamorous';
-import mineralTheme from '../utils/mineralTheme';
+import mineralTheme from './mineralTheme';
 
 type Props = {
   /** Components to which the theme will be applied */
   children?: React$Node,
-  /** A shallow object of [theme variables](/theming/#theming-theme-variables) and their values */
+  /** A shallow object of [theme variables](/theming/#theming-theme-structure) and their values */
   theme?: Object
 };
 
 /**
- * ThemeProvider passes along a theme to its children.
+ * ThemeProvider provides a theme to the tree of components contained within.  See the [theming page](/theming) for more information.
  */
 export default function ThemeProvider({
   children,

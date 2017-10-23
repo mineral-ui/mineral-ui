@@ -16,7 +16,8 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, pxToEm, generateId } from '../utils';
+import { createStyledComponent, pxToEm } from '../styles';
+import { generateId } from '../utils';
 
 type Props = {
   /** Available sizes, including custom - e.g. '5em' or '20px' */

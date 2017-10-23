@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { Arrow } from 'react-popper';
-import { createStyledComponent } from '../utils';
+import { createStyledComponent } from '../styles';
 import { componentTheme as popoverContentComponentTheme } from './PopoverContent';
 
 type Props = {

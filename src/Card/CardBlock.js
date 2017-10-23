@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../utils';
+import { createStyledComponent, getNormalizedValue } from '../styles';
 import { componentTheme as cardComponentTheme } from './Card';
 
 type Props = Object;

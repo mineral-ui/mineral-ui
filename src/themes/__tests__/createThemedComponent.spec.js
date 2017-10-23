@@ -19,9 +19,7 @@ import React from 'react';
 import { mountInThemeProvider } from '../../../utils/enzymeUtils';
 import { createThemedComponent } from '../index';
 import Link from '../../Link';
-import Sample from '../../website/app/demos/utils/components/Sample';
-import examples from '../../website/app/demos/utils/examples';
-import testDemoExamples from '../../../utils/testDemoExamples';
+import Sample from '../../website/app/demos/ThemeProvider/components/Sample';
 
 function mountThemedLink(theme) {
   const ThemedLink = createThemedComponent(Link, theme);
@@ -59,6 +57,4 @@ describe('createThemedComponent', () => {
 
     expect(themedLink).toMatchSnapshot();
   });
-
-  testDemoExamples(examples, { exclude: ['sample-component'] });
 });

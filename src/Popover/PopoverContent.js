@@ -17,7 +17,8 @@
 /* @flow */
 import React, { Component } from 'react';
 import { Popper } from 'react-popper';
-import { createStyledComponent, createThemedComponent } from '../utils';
+import { createStyledComponent } from '../styles';
+import { createThemedComponent } from '../themes';
 import { CardBlock, CardTitle } from '../Card';
 import PopoverArrow from './PopoverArrow';
 

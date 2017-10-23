@@ -15,14 +15,5 @@
  */
 
 /* @flow */
-export { default as createStyledComponent } from './createStyledComponent';
-export { default as createThemedComponent } from './createThemedComponent';
-
-export { default as getNormalizedValue } from './getNormalizedValue';
-export { default as pxToEm } from './pxToEm';
-export { default as color } from './color';
-export { default as mineralTheme } from './mineralTheme';
-export { default as styleVariables } from './styleVariables';
-
 export { generateId, resetId } from './generateId';
 export { default as composeEventHandlers } from './composeEventHandlers';

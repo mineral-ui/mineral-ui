@@ -18,7 +18,8 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Manager } from 'react-popper';
-import { createStyledComponent, generateId } from '../utils';
+import { createStyledComponent } from '../styles';
+import { generateId } from '../utils';
 import EventListener from '../EventListener';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';

@@ -18,7 +18,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { LiveProvider, LivePreview } from 'react-live';
-import ThemeProvider from '../src/ThemeProvider';
+import ThemeProvider from '../src/themes/ThemeProvider';
 
 type Example = {
   title: React$Node,

@@ -15,13 +15,15 @@
  */
 
 /* @flow */
-import React from 'react';
-import { mount } from 'enzyme';
-import ThemeProvider from '../src/themes/ThemeProvider';
-
-export function mountInThemeProvider(Component: React$Element<*>) {
-  const themeProvider = mount(<ThemeProvider>{Component}</ThemeProvider>);
-  const component = themeProvider.find(Component.type);
-
-  return [themeProvider, component];
-}
+export default {
+  blue_10: '#e6eefc',
+  blue_20: '#c2dbfc',
+  blue_30: '#9dc2fa',
+  blue_40: '#72a5f2',
+  blue_50: '#4a89e8',
+  blue_60: '#2e6fd9',
+  blue_70: '#1f5dc2',
+  blue_80: '#164ea8',
+  blue_90: '#114091',
+  blue_100: '#0f397d'
+};
