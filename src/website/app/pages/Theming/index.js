@@ -22,6 +22,13 @@ import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';
 import content from './theming.md';
 
+type Props = {
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
+};
+
 const REGEX_IS_COLOR = /color|fill/i;
 
 const getColor = (theme, variable) =>
@@ -29,9 +36,9 @@ const getColor = (theme, variable) =>
 
 const getValue = (theme, variable) => theme[variable];
 
-export default function Theming() {
+export default function Theming(props: Props) {
   return (
-    <GuidelinePage>
+    <GuidelinePage {...props}>
       <Markdown>{content}</Markdown>
       <VariableTable
         theme={mineralTheme}

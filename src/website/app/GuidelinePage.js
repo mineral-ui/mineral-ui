@@ -16,10 +16,15 @@
 
 /* @flow */
 import React from 'react';
+import Helmet from 'react-helmet';
 import { createStyledComponent } from '../../utils';
 
 type Props = {
-  children: React$Node
+  children: React$Node,
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
 };
 
 const Root = createStyledComponent('div', ({ theme }) => ({
@@ -36,7 +41,19 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-export default function GuidelinePage({ children, ...restProps }: Props) {
+export default function GuidelinePage({
+  children,
+  pageMeta,
+  ...restProps
+}: Props) {
   const rootProps = { ...restProps };
-  return <Root {...rootProps}>{children}</Root>;
+  return (
+    <Root {...rootProps}>
+      <Helmet>
+        <link rel="canonical" href={pageMeta.canonicalLink} />
+        <title>{pageMeta.title}</title>
+      </Helmet>
+      {children}
+    </Root>
+  );
 }

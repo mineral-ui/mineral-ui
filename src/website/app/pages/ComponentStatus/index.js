@@ -22,6 +22,13 @@ import Markdown from '../../Markdown';
 import Legend from './Legend';
 import content from './componentStatus.md';
 
+type Props = {
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
+};
+
 const Layout = createStyledComponent(GuidelinePage, ({ theme }) => ({
   '& table': {
     maxWidth: '40em'
@@ -40,9 +47,9 @@ const Layout = createStyledComponent(GuidelinePage, ({ theme }) => ({
   }
 }));
 
-export default function ComponentStatus() {
+export default function ComponentStatus(props: Props) {
   return (
-    <Layout>
+    <Layout {...props}>
       <Markdown scope={{ Legend }}>{content}</Markdown>
     </Layout>
   );

@@ -25,6 +25,13 @@ import Variants from './Variants';
 import GuidelinePage from '../../GuidelinePage';
 import content from './color.md';
 
+type Props = {
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
+};
+
 const ramps = [
   'red',
   'magenta',
@@ -48,9 +55,9 @@ const RampHolder = createStyledComponent('div', {
   flexWrap: 'wrap'
 });
 
-export default function Color() {
+export default function Color(props: Props) {
   return (
-    <GuidelinePage>
+    <GuidelinePage {...props}>
       <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>

@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import dedent from 'dedent';
+import Helmet from 'react-helmet';
 import {
   LiveProvider as ReactLiveProvider,
   LiveEditor,
@@ -27,8 +28,12 @@ import { createStyledComponent, getNormalizedValue } from '../../utils';
 
 type Props = {
   backgroundColor?: string,
-  hideSource?: boolean,
   chromeless?: boolean,
+  hideSource?: boolean,
+  pageMeta?: {
+    title: string,
+    canonicalLink: string
+  },
   scope: Object,
   source: string
 };
@@ -81,21 +86,30 @@ const MyLiveError = createStyledComponent(LiveError, styles.liveError);
 
 export default function LiveProvider({
   backgroundColor,
-  hideSource,
   chromeless,
+  hideSource,
+  pageMeta,
   scope,
   source
 }: Props) {
   return (
-    <ReactLiveProvider
-      code={dedent(source)}
-      scope={scope}
-      mountStylesheet={false}>
-      <MyLivePreview
-        backgroundColor={backgroundColor}
-        chromeless={chromeless}
-      />
-      {!hideSource && [<MyLiveEditor key={0} />, <MyLiveError key={1} />]}
-    </ReactLiveProvider>
+    <div>
+      {pageMeta && (
+        <Helmet>
+          <title>{pageMeta.title}</title>
+          <link rel="canonical" href={pageMeta.canonicalLink} />
+        </Helmet>
+      )}
+      <ReactLiveProvider
+        code={dedent(source)}
+        scope={scope}
+        mountStylesheet={false}>
+        <MyLivePreview
+          backgroundColor={backgroundColor}
+          chromeless={chromeless}
+        />
+        {!hideSource && [<MyLiveEditor key={0} />, <MyLiveError key={1} />]}
+      </ReactLiveProvider>
+    </div>
   );
 }
