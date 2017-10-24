@@ -1,15 +1,2 @@
-### Simplicity, Speed, Quality — Pick Three
 
-<ColoredLogo />
-
-People expect modern, engaging product experiences that work. Mineral UI makes
-this easier to deliver by providing common patterns, reusable components, and
-design guidelines that are visually appealing, consistent, and easy to use.
-Using drop-in React components and rich design libraries will enable teams to
-build, launch, and maintain high-quality products with greater speed and
-efficiency.
-
-<CTALink to="/color">
-  Discover how our guidelines can help your next project
-  <IconChevronRight size="large" />
-</CTALink>
+<FloatedRocks />

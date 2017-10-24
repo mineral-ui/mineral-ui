@@ -39,6 +39,7 @@ import featureTwo from './featureTwo.md';
 import first from './first.md';
 import getStarted from './getStarted.md';
 import intro from './intro.md';
+import Rocks from './Rocks';
 
 // Temp
 import magenta from './themes/magenta';
@@ -167,23 +168,18 @@ const Buttons = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-const ColoredLogo = createStyledComponent(Logo, {
-  '& .band-1': {
-    fill: mineralColor.yellow
-  },
-  '& .band-2': {
-    fill: mineralColor.orange
-  },
-  '& .band-3': {
-    fill: mineralColor.slate
-  }
-});
-
 const CTALink = createThemedComponent(Link, {
   Link_color: color.gray_80,
   Link_color_active: color.gray_90,
   Link_color_hover: color.gray_70,
   Link_color_focus: color.gray_80
+});
+
+const FloatedRocks = createStyledComponent(Rocks, {
+  border: '1px #C00 solid',
+  height: 300,
+}).withProps({
+  showRockPile: true,
 });
 
 const Features = createStyledComponent('div', {
@@ -486,7 +482,7 @@ export default class Home extends Component<Props, State> {
                 // $FlowFixMe
                 clipColor={playgroundThemes[themeIndex].color_theme_80}
                 point={matches ? 3 / 4 : 999 / 1000}>
-                <Guidelines scope={{ ColoredLogo, IconChevronRight, CTALink }}>
+                <Guidelines scope={{ IconChevronRight, CTALink, FloatedRocks }}>
                   {first}
                 </Guidelines>
               </Section>
