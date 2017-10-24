@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import Helmet from 'react-helmet';
 import { createStyledComponent, mineralTheme } from '../../../../utils';
 import Heading from '../../Heading';
 import DocBestPractices from './DocBestPractices';
@@ -40,6 +41,10 @@ type Props = {
   doc: Object,
   examples?: Array<any>,
   hidePropDoc?: boolean,
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  },
   title: string,
   whenHowToUse?: string
 };
@@ -63,6 +68,7 @@ export default function ComponentDoc({
   examples,
   hidePropDoc,
   componentTheme,
+  pageMeta,
   title,
   whenHowToUse
 }: Props) {
@@ -84,6 +90,10 @@ export default function ComponentDoc({
 
   return (
     <Root className={className}>
+      <Helmet>
+        <title>{pageMeta.title}</title>
+        <link rel="canonical" href={pageMeta.canonicalLink} />
+      </Helmet>
       <DocHeader {...headerProps}>{doc.description}</DocHeader>
       {examples && <DocExamples examples={examples} />}
       {!hidePropDoc && <DocProps {...propProps} />}

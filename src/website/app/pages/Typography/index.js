@@ -30,6 +30,13 @@ import GuidelinePage from '../../GuidelinePage';
 import content from './typography.md';
 import examples from './examples';
 
+type Props = {
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
+};
+
 const a11yColor = color => {
   const a11y = colorable({
     main: color,
@@ -76,9 +83,9 @@ const OverflowContainer = createStyledComponent(
 const Table = createStyledComponent(_Table, styles.table);
 const ValueCell = createStyledComponent(TableCell, styles.valueCell);
 
-export default function Typography() {
+export default function Typography(props: Props) {
   return (
-    <GuidelinePage>
+    <GuidelinePage {...props}>
       <Markdown scope={{ FontDemo }}>{content}</Markdown>
       {examples.map((section, index) => {
         return (

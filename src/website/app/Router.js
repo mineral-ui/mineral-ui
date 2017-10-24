@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import startCase from 'lodash.startcase';
 import IconArrowBack from '../../Icon/IconArrowBack';
 import ComponentDoc from './pages/ComponentDoc';
 import ComponentDocExample from './ComponentDocExample';
@@ -36,11 +37,15 @@ export default function Router({ demos }: Props) {
       return [...acc, ...pages];
     }, [])
     .map((page, index) => {
+      const pageMeta = {
+        title: `${page.title} | Mineral UI`,
+        canonicalLink: `https://mineral-ui.com${page.path}`
+      };
       return (
         <Route
           key={`page-${index}`}
           path={page.path}
-          render={() => <page.component />}
+          render={() => <page.component pageMeta={pageMeta} />}
         />
       );
     });
@@ -53,14 +58,22 @@ export default function Router({ demos }: Props) {
         render={route => {
           const { componentId, exampleId } = route.match.params;
           const selectedDemo = demos[componentId];
-          const selectedExample = selectedDemo.examples.filter(
+          const selectedExample = selectedDemo.examples.find(
             example => example.id === exampleId
-          )[0];
+          );
           const chromeless = route.location.search === '?chromeless';
+          const pageMeta = {
+            title: `${selectedDemo.title} ${startCase(
+              selectedExample.id
+            )} | Mineral UI`,
+            canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}/${selectedExample.id}`
+          };
+
           return chromeless ? (
             <LiveProvider
-              hideSource={true}
-              chromeless={true}
+              hideSource
+              chromeless
+              pageMeta={pageMeta}
               scope={selectedExample.scope}
               source={selectedExample.source}
             />
@@ -70,7 +83,7 @@ export default function Router({ demos }: Props) {
                 <IconArrowBack color="currentColor" size="small" />{' '}
                 {selectedDemo.title}
               </Link>
-              <ComponentDocExample {...selectedExample} />
+              <ComponentDocExample pageMeta={pageMeta} {...selectedExample} />
             </div>
           );
         }}
@@ -80,7 +93,11 @@ export default function Router({ demos }: Props) {
         render={route => {
           const componentId = route.match.params.componentId;
           const selectedDemo = demos[componentId];
-          return <ComponentDoc {...selectedDemo} />;
+          const pageMeta = {
+            title: `${selectedDemo.title} | Mineral UI`,
+            canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`
+          };
+          return <ComponentDoc {...selectedDemo} pageMeta={pageMeta} />;
         }}
       />
       <Redirect from="/" to="/getting-started" />
