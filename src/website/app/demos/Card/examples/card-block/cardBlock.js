@@ -50,7 +50,7 @@ const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
 
 export default {
   id: 'consistent-spacing',
-  title: 'Example',
+  title: 'Provide Consistent Spacing',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description:

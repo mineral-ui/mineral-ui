@@ -27,7 +27,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   id: 'theme-provider',
-  title: 'Example',
+  title: 'Using Mineral UI Styles',
   description: `Wrap components in a \`ThemeProvider\` to apply the theme to that section of the component tree. That theme will be shallowly merged with the parent theme.`,
   scope: { DemoLayout, ThemeProvider, Sample },
   source: `

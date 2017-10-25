@@ -22,7 +22,7 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'basic',
-  title: 'Example',
+  title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Card content should be neither too simple nor too complex.

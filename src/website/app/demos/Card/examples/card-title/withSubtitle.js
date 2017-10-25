@@ -20,8 +20,8 @@ import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'subtitle',
-  title: 'Example',
+  id: 'titles',
+  title: 'Displaying Titles',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',

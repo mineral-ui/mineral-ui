@@ -19,7 +19,7 @@ import IconSentimentSatisfied from '../../../../../Icon/IconSentimentSatisfied';
 
 export default {
   id: 'icon',
-  title: 'Example',
+  title: 'Importing Icons',
   description: `Directly import bundled icons.
 
 \`import IconPrint from 'mineral-ui/Icon/IconPrint'\`.

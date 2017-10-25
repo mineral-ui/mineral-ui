@@ -17,10 +17,18 @@
 /* @flow */
 
 import React from 'react';
+import { createStyledComponent } from '../../../../../../styles';
 import Figure from '../Figure';
 import FigCaption from '../FigCaption';
 import FigContainer from '../FigContainer';
-import CategoryHeader from '../CategoryHeader';
+import Heading from '../../../../Heading';
+
+const CategoryHeading = createStyledComponent(Heading, ({ theme }) => ({
+  borderTop: `1px solid ${theme.borderColor}`,
+  paddingTop: theme.space_stack_lg,
+  position: 'relative',
+  textTransform: 'capitalize'
+}));
 
 /* eslint-disable prettier/prettier */
 {{#components}}
@@ -30,7 +38,9 @@ import {{componentName}} from '../../../../../../Icon/{{componentName}}';
 export default function {{componentName}}() {
   return (
     <div>
-      <CategoryHeader>{{componentCategory}}</CategoryHeader>
+      <CategoryHeading level={4} as="h5" id="category-{{componentCategory}}">
+        {{componentCategory}}
+      </CategoryHeading>
       <FigContainer>
       {{#components}}
         <Figure tabIndex={0}>

@@ -21,8 +21,8 @@ import Menu, { MenuDivider, MenuGroup, MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'menu',
-  title: 'Example',
+  id: 'basic',
+  title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menus are composed of [MenuDivider](../menu-divider), [MenuGroup](../menu-group), and [MenuItem](../menu-item).

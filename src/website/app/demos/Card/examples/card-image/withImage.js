@@ -21,7 +21,7 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'with-image',
-  title: 'Example',
+  title: 'Displaying an Image in a Card',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'CardImages should provide an `alt` attribute.',
