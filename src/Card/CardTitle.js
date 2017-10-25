@@ -108,7 +108,7 @@ const Title = createStyledComponent('h3', styles.title);
 
 /**
  * CardTitle displays a Card title and an optional subtitle.
- * You can put CardTitle in any order in relation to other root components of [Card]('./card').
+ * You can put CardTitle in any order in relation to other root components of [Card](./card).
  */
 export default function CardTitle({
   children,

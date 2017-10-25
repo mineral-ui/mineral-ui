@@ -20,8 +20,8 @@ import Menu, { MenuDivider, MenuGroup, MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'basic',
-  title: 'Example',
+  id: 'separating-items',
+  title: 'Separating MenuItems',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `[MenuItems](../menu-item) and [MenuGroups](../menu-group) can be separated with a MenuDivider.

@@ -26,7 +26,7 @@ const DemoLayout = createStyledComponent('div', {
 
 export default {
   id: 'primary',
-  title: 'Example',
+  title: 'Primary Buttons',
   description: `Buttons trigger different actions around the page. Primary Buttons are used once per container, usually as the main call to action for the page.
     Overuse of primary buttons could make the interface feel too busy.`,
   scope: { Button, DemoLayout },

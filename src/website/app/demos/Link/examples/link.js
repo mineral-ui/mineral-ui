@@ -25,8 +25,9 @@ const Small = createStyledComponent('p', { fontSize: '0.75em' });
 
 export default {
   id: 'basic',
-  title: 'Example',
-  description: 'Links inherit font size, weight, and family.',
+  title: 'Basic Usage',
+  description: `Use the Link component to ensure that anchors are consistently styled with the rest of your app.
+Links inherit font size, weight, and family from context; colors are inherited from the theme.`,
   scope: { Big, Bold, Link, Serif, Small },
   source: `
     <div>

@@ -21,7 +21,7 @@ import data from '../../Menu/components/menuData';
 
 export default {
   id: 'basic',
-  title: 'Example',
+  title: 'Basic Usage',
   description: `Placement is relative to the trigger.
 Dropdowns will automatically change position relative to the trigger depending on viewport constraints.`,
   scope: { Button, data, Dropdown },

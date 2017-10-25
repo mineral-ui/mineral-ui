@@ -22,10 +22,10 @@ import DemoLayout from '../../components/DemoLayout';
 
 export default {
   id: 'rtl',
-  title: 'RTL Support',
+  title: 'Bidirectionality',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `MenuItems with Icons are reversed when the \`rtl\` prop is set.
+  description: `MenuItems with Icons are reversed when the \`direction\` theme variable is set to \`rtl\` (right-to-left).
 A subset of Icons that [convey directionality](./icon#rtl) will be reversed.`,
   scope: { DemoLayout, IconHelp, Menu, MenuItem, ThemeProvider },
   source: `

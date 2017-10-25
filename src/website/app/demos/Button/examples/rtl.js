@@ -21,8 +21,9 @@ import IconBackspace from '../../../../../Icon/IconBackspace';
 
 export default {
   id: 'rtl',
-  title: 'RTL Support',
-  description: `Buttons with Icons are reversed when the \`rtl\` prop is set.
+  title: 'Bidirectionality',
+  description: `Buttons support right-to-left (RTL) languages.
+Buttons with Icons are reversed when the \`direction\` theme variable is set to \`rtl\`.
 A subset of Icons that [convey directionality](../icon#rtl) will be reversed.`,
   scope: { Button, IconBackspace, ThemeProvider },
   source: `

@@ -21,7 +21,7 @@ import Popover from '../../../../../Popover';
 
 export default {
   id: 'basic',
-  title: 'Example',
+  title: 'Basic Usage',
   description: `Popovers wrap the triggering component.
 Placement is relative to the location of the trigger.
 Popovers will change position relative to the trigger automatically depending on viewport constraints.`,

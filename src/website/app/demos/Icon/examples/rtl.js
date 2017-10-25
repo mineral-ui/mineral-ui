@@ -20,9 +20,9 @@ import IconHelp from '../../../../../Icon/IconHelp';
 
 export default {
   id: 'rtl',
-  title: 'RTL',
+  title: 'Bidirectionality',
   description:
-    'Some icons will be [automatically mirrored](http://google.github.io/material-design-icons/#which-icons-should-be-mirrored-for-rtl-) for RTL (right-to-left) languages, depending on context.',
+    'Some icons will be [automatically mirrored](http://google.github.io/material-design-icons/#which-icons-should-be-mirrored-for-rtl-) for right-to-left (RTL) languages, depending on context.',
   scope: { IconHelp, ThemeProvider },
   source: `
     <ThemeProvider theme={{ direction: 'rtl' }}>
