@@ -1,24 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider demo examples theme-provider 1`] = `
-.glamor-0,
-[data-glamor-0] {
-  background-color: lavender;
-  color: #333840;
-  display: inline-block;
-  outline: 1px solid #c8d1e0;
-  padding: 0.5em;
-}
-
-.glamor-2 > *,
-[data-glamor-2] > * {
+.glamor-1 > *,
+[data-glamor-1] > * {
   margin-right: 0.5rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.glamor-0,
+[data-glamor-0] {
   background-color: lavender;
-  color: mediumvioletred;
+  color: tomato;
   display: inline-block;
   outline: 1px solid #c8d1e0;
   padding: 0.5em;
@@ -167,22 +158,12 @@ exports[`ThemeProvider demo examples theme-provider 1`] = `
   >
     <LiveProvider
       code="
-    () => {
-      return (
-        <DemoLayout>
-          {/* This will affect all components inside this ThemeProvider that use this variable. */}
-          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-            <Sample />
-          </ThemeProvider>
-
-          {/* This will affect all components inside this ThemeProvider that use this variable,
-              which should only be Sample components due to the namespace. */}
-          <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-          	<Sample />
-          </ThemeProvider>
-        </DemoLayout>
-      );
-    }"
+    <DemoLayout>
+      <ThemeProvider theme={{ color_text: 'tomato' }}>
+        <Sample />
+      </ThemeProvider>
+    </DemoLayout>
+  "
       mountStylesheet={false}
       noInline={false}
       scope={
@@ -207,68 +188,37 @@ exports[`ThemeProvider demo examples theme-provider 1`] = `
           <div
             className="react-live-preview"
           >
-            <wrappedPFC>
-              <glamorous(div)>
-                <div
-                  className="glamor-2"
+            <glamorous(div)>
+              <div
+                className="glamor-1"
+              >
+                <ThemeProvider
+                  theme={
+                    Object {
+                      "color_text": "tomato",
+                    }
+                  }
                 >
                   <ThemeProvider
                     theme={
                       Object {
-                        "color_primary": "mediumvioletred",
+                        "color_text": "tomato",
                       }
                     }
                   >
-                    <ThemeProvider
-                      theme={
-                        Object {
-                          "color_primary": "mediumvioletred",
-                        }
-                      }
-                    >
-                      <Sample>
-                        <glamorous(span)
-                          className={undefined}
+                    <Sample>
+                      <glamorous(span)>
+                        <span
+                          className="glamor-0"
                         >
-                          <span
-                            className="glamor-0"
-                          >
-                            Sample
-                          </span>
-                        </glamorous(span)>
-                      </Sample>
-                    </ThemeProvider>
+                          Sample
+                        </span>
+                      </glamorous(span)>
+                    </Sample>
                   </ThemeProvider>
-                  <ThemeProvider
-                    theme={
-                      Object {
-                        "Sample_color": "mediumvioletred",
-                      }
-                    }
-                  >
-                    <ThemeProvider
-                      theme={
-                        Object {
-                          "Sample_color": "mediumvioletred",
-                        }
-                      }
-                    >
-                      <Sample>
-                        <glamorous(span)
-                          className={undefined}
-                        >
-                          <span
-                            className="glamor-1"
-                          >
-                            Sample
-                          </span>
-                        </glamorous(span)>
-                      </Sample>
-                    </ThemeProvider>
-                  </ThemeProvider>
-                </div>
-              </glamorous(div)>
-            </wrappedPFC>
+                </ThemeProvider>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
@@ -281,6 +231,7 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
+  color: tomato;
   display: inline-block;
   outline: 1px solid undefined;
 }
@@ -288,35 +239,33 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "color_primary": "cyan",
+      "color_text": "black",
     }
   }
 >
   <ThemeProvider
     theme={
       Object {
-        "color_primary": "cyan",
+        "color_text": "black",
       }
     }
   >
     <ThemeProvider
       theme={
         Object {
-          "color_primary": "mediumvioletred",
+          "color_text": "tomato",
         }
       }
     >
       <ThemeProvider
         theme={
           Object {
-            "color_primary": "mediumvioletred",
+            "color_text": "tomato",
           }
         }
       >
         <Sample>
-          <glamorous(span)
-            className={undefined}
-          >
+          <glamorous(span)>
             <span
               className="glamor-0"
             >
@@ -334,6 +283,7 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
 .glamor-0,
 [data-glamor-0] {
   background-color: lavender;
+  color: black;
   display: inline-block;
   outline: 1px solid undefined;
 }
@@ -341,35 +291,33 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "color_primary": "mediumvioletred",
+      "color_text": "black",
     }
   }
 >
   <ThemeProvider
     theme={
       Object {
-        "color_primary": "mediumvioletred",
+        "color_text": "black",
       }
     }
   >
     <ThemeProvider
       theme={
         Object {
-          "color_warning": "tomato",
+          "color_text_warning": "tomato",
         }
       }
     >
       <ThemeProvider
         theme={
           Object {
-            "color_warning": "tomato",
+            "color_text_warning": "tomato",
           }
         }
       >
         <Sample>
-          <glamorous(span)
-            className={undefined}
-          >
+          <glamorous(span)>
             <span
               className="glamor-0"
             >
@@ -537,9 +485,7 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
     }
   >
     <Sample>
-      <glamorous(span)
-        className={undefined}
-      >
+      <glamorous(span)>
         <span
           className="glamor-0"
         >
