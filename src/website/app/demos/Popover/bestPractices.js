@@ -17,7 +17,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Button from '../../../../Button';
 import Heading from '../../Heading';
 import Popover from '../../../../Popover';

@@ -18,14 +18,15 @@
 import React from 'react';
 import colorable from 'colorable';
 import readableColor from 'polished/lib/color/readableColor';
-import { createStyledComponent, color } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
+import color from '../../../../colors';
 
 type Props = {
   name: string
 };
 
 const styles = {
-  row: ({ theme, color }) => ({
+  row: ({ color, theme }) => ({
     backgroundColor: color,
     display: 'flex',
     fontSize: theme.fontSize_mouse,

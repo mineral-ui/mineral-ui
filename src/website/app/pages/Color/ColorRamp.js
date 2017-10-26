@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import ColorRampRow from './ColorRampRow';
 import range from 'lodash/range';
 

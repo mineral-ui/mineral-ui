@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Heading from '../../Heading';
 import Markdown from '../../Markdown';
 import Section from '../../Section';
@@ -86,11 +86,11 @@ export default function DocThemeVariables({
         {`${title} Theme Variables`}
       </Title>
       <Markdown>
-        {`These variables can be used as hooks to override this component’s
-          style at either a [global](/components/theme-provider) or
-          [local](/components/utils#create-themed-component) level. The
-          \`theme\` referenced below is whatever theme is available from props
-          to the instance of this component.`}
+        {`These variables can be used as hooks to override this component's
+          style at either a [local](/theming/#theming-common-scenarios-theme-a-component)
+          or [global](/theming/#theming-common-scenarios-theme-your-entire-app)
+          level. The \`theme\` referenced below is whatever theme is available
+          from props to the instance of this component.`}
       </Markdown>
       <VariableTable
         baseTheme={baseTheme}

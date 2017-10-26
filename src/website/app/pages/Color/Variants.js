@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Button from '../../../../Button';
 
 const Root = createStyledComponent('div', ({ theme }) => ({

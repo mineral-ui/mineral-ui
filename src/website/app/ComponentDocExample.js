@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import Helmet from 'react-helmet';
-import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../styles';
 import Callout from './Callout';
 import Heading from './Heading';
 import Link from './Link';

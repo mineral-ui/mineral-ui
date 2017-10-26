@@ -17,7 +17,7 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
 
 type Props = {

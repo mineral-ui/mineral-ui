@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../utils';
+import { createStyledComponent, pxToEm } from '../../../../styles';
 import Menu, { MenuDivider, MenuGroup, MenuItem } from '../../../../Menu';
 
 const DemoLayout = createStyledComponent('div', ({ theme }) => ({

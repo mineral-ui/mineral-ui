@@ -16,6 +16,7 @@
 
 /* @flow */
 import GettingStarted from './GettingStarted';
+import Styling from './Styling';
 import Theming from './Theming';
 import Color from './Color';
 import Typography from './Typography';
@@ -54,11 +55,6 @@ const sections: Array<Section> = [
         component: Typography,
         path: '/typography',
         title: 'Typography'
-      },
-      {
-        component: Theming,
-        path: '/theming',
-        title: 'Theming'
       }
     ]
   },
@@ -69,6 +65,21 @@ const sections: Array<Section> = [
         component: ComponentStatus,
         path: '/component-status',
         title: 'Component Status'
+      }
+    ]
+  },
+  {
+    heading: 'Customization',
+    pages: [
+      {
+        component: Styling,
+        path: '/styling',
+        title: 'Styling'
+      },
+      {
+        component: Theming,
+        path: '/theming',
+        title: 'Theming'
       }
     ]
   }

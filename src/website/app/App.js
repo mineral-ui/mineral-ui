@@ -19,7 +19,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
-import { createStyledComponent, pxToEm } from '../../utils';
+import { createStyledComponent, pxToEm } from '../../styles';
 import ComponentDoc from './pages/ComponentDoc';
 import createKeyMap from './utils/createKeyMap';
 import Footer from './Footer';

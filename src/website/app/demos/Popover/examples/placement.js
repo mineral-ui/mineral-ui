@@ -16,7 +16,7 @@
 
 /* @flow */
 import Button from '../../../../../Button';
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import DemoContent from '../components/DemoContent';
 import Popover from '../../../../../Popover';
 

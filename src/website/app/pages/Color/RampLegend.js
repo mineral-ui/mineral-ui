@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import ColorRampRow from './ColorRampRow';
-import { createStyledComponent, pxToEm } from '../../../../utils';
+import { createStyledComponent, pxToEm } from '../../../../styles';
 
 const getBadges = () => {
   return [1, 2, 3, 4].map(num => {

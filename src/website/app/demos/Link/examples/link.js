@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import Link from '../../../../../Link';
 
 const Big = createStyledComponent('p', { fontSize: '1.5em' });

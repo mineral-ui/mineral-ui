@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import ThemeProvider from '../../../../../ThemeProvider';
+import { ThemeProvider } from '../../../../../themes';
 import IconHelp from '../../../../../Icon/IconHelp';
 
 export default {

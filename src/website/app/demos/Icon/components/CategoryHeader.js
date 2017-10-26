@@ -18,7 +18,7 @@
 import {
   createStyledComponent,
   getNormalizedValue
-} from '../../../../../utils';
+} from '../../../../../styles';
 
 export default createStyledComponent(
   'h4',

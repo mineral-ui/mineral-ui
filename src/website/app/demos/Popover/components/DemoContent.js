@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 
 const Root = createStyledComponent('div', {
   width: '13.75em'

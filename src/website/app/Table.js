@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent } from '../../styles';
 
 const styles = {
   cell: ({ theme }) => ({

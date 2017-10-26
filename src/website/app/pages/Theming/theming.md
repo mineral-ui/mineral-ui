@@ -1,63 +1,145 @@
 # Theming
 
-Theming is a core concept in Mineral UI.
-Themes provide a consistent look and feel across pages with varied functionality.
-Mineral UI makes it simple to implement and maintain theming across your app.
-
-The theme system is flexible enough to be applied globally or at a component level.
-This page lists of all Mineral UI theme variables for your reference.
+Theming is a core concept in Mineral UI.  Themes provide a consistent look and feel across pages with varied functionality.  Mineral UI makes it simple to implement and maintain theming across your app.
 
 
-## Implementation
+## Common Scenarios
 
-Consider the signature of [createStyledComponent](/components/utils#create-styled-component):
+### Theme your entire app
+
+Wrap your app in a [ThemeProvider](#theming-api) in order for styles to be properly applied. The ThemeProvider provides the theme to the tree of Mineral UI components, and any other Glamorous components contained within.
 
 ```jsx
-const MyComponent = createStyledComponent('div', props => ({
-  backgroundColor: props.theme.color_primary
-}));
+import React from 'react';
+import { render } from 'react-dom';
+import Button from 'mineral-ui/Button';
+import { ThemeProvider } from 'mineral-ui/themes';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <Button>
+        Hello World
+      </Button>
+    </ThemeProvider>
+  );
+}
+
+render(<App />, document.getElementById('app'));
 ```
 
-The [ThemeProvider](/components/theme-provider)(s) in
-your app provides the theme to other Mineral UI and/or Glamorous
-components within that ThemeProvider. Your app
-[must have a ThemeProvider at its root](/getting-started) and can
-optionally nest additional ThemeProviders to apply a custom theme to sections
-of your app. Nested ThemeProviders shallowly merge their theme
-with the parent theme.
+### Theme a portion of your app
 
-The theme itself (see the default mineralTheme below for an example) is
-a simple shallow object of variables that are shared across components.
-
-Each component can also have a “theme”, which is not a file, but rather
-a set of variables available to override default values. E.g., if
-Mineral UI’s [Button](/components/button) component looked like this:
+ThemeProviders may be nested in order to apply a custom theme to a portion of your app.  Nested ThemeProviders shallowly merge their theme with the parent theme.  The theme itself is a simple shallow object of variables that are shared across components.  [See the default mineralTheme below for an example](#theming-theme-structure).
 
 ```jsx
-const Button = createStyledComponent('button', props => ({
-  color: props.theme.Button_color || props.theme.color_primary
-}));
+<ThemeProvider>
+  <ThemeProvider theme={{ color_primary: 'darkgray' }}>
+    <nav>Navigation<nav>
+  </ThemeProvider>
+  <main>The main part of your app</main>
+</ThemeProvider>
 ```
 
-The themes distributed as part of Mineral UI include a value for
-`color_primary` but do not include a value for `Button_color`. In
-our component code, we leave the component-level variable
-`Button_color` as a hook for you to define if you’d like.
-Component-level theme variables start with the capitalized component
-name to differentiate from the global variables. When you’d like to
-override the Mineral UI theme at a component level in your app, you can
-use [createThemedComponent](/components/utils#create-themed-component):
+### Theme a component
+
+Each component has a set of component-level theme variables that may be overridden to adjust styles on a per component basis.  These are documented on the individual component pages.  e.g. [Button theme variables](/components/button/#theme-variables)
+
+To theme a component, use [createThemedComponent](#theming-api) as shown below.  It is effectively the same as wrapping your component with a ThemeProvider.
 
 ```jsx
+import { createThemedComponent } from 'mineral-ui/themes';
+
 const MyButton = createThemedComponent(Button, {
-  Button_color: 'tomato'
+  Button_backgroundColor: 'tomato'
 });
 ```
 
-## Theme Variables
+### Create your own theme
 
-Themes in Mineral UI are made of the following variables. The values
-below come from the default mineralTheme. Note the naming convention:
-‘property_target_variant_state’.
+Use [createTheme](#theming-api) in order to create a custom theme.  Once created, this theme can be applied using a ThemeProvider.
+
+```jsx
+import React from 'react';
+import { render } from 'react-dom';
+import Button from 'mineral-ui/Button';
+import { createTheme, ThemeProvider } from 'mineral-ui/themes';
+
+const myTheme = createTheme('dusk');
+
+function App() {
+  return (
+    <ThemeProvider theme={myTheme}>
+      <Button>
+        Hello World
+      </Button>
+    </ThemeProvider>
+  );
+}
+
+render(<App />, document.getElementById('app'));
+```
+
+
+## API
+
+### `<ThemeProvider theme />`
+
+This component takes a theme property and provides it to the tree of components contained within.  When nested, child themes will be shallowly merged with the parent theme.
+
+See the previous examples and the [ThemeProvider](/components/theme-provider) page for more details.
+
+### `createThemedComponent(component, theme)`
+
+This function is useful when you need to override component-level theme variables.
+It is effectively the same as wrapping a ThemeProvider around a single component.
+
+**Parameters**
+
+* `component`: A React component
+* `theme`: A shallow object of theme variables or a function that accepts props and context and returns an object of theme variables
+
+**Returns**
+
+* The original React component wrapped in a ThemeProvider with the merged theme provided.
+
+**Example**
+
+```jsx
+import { createThemedComponent } from 'mineral-ui/themes';
+
+const MyButton = createThemedComponent(Button, {
+  Button_backgroundColor: 'tomato'
+});
+```
+
+### `createTheme(baseColor, overrides)`
+
+This function is useful when you want to create a new theme that uses a different color scheme or otherwise overrides default values.
+
+**Parameters**
+
+* `baseColor`: Optional.  Default: 'blue'.  Color used to generate theme color scheme.  Value must be a valid [Mineral UI color](/color/#color-ramps).
+* `overrides`: Optional.  A shallow object of variables to be spread on to the default theme.  Useful to override default values.
+
+**Returns**
+
+* A new theme object
+
+**Example**
+
+```jsx
+import { createTheme } from 'mineral-ui/themes';
+
+const myTheme = createTheme('dusk', {
+  fontFamily: 'Comic Sans MS'
+});
+```
+
+
+## Theme Structure
+
+Mineral UI themes are shallow objects of variables that are shared across components. The values in the table below are from the default mineralTheme.
+Note the naming convention: `[property]_[target]_[variant]_[state]`.
 
 <!-- Table of theme variables here -->
