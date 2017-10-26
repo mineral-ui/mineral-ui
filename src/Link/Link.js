@@ -23,7 +23,7 @@ type Props = {
   children?: React$Node,
   /** A URL or URL fragment to which the Link points */
   href?: string,
-  /** Element to be used as the root node - e.g. "a" or {&nbsp;ReactRouterLink&nbsp;} */
+  /** Element to be used as the root node - e.g. `a` or `ReactRouterLink` */
   element?: $FlowFixMe, // Should allow string | React class
   /** Available variants */
   variant?: 'regular' | 'danger' | 'success' | 'warning'
