@@ -30,6 +30,12 @@ Install the [Mineral UI package](https://www.npmjs.com/pacakge/mineral-ui).
 npm install --save mineral-ui
 ```
 
+or
+
+```bash
+yarn add mineral-ui
+```
+
 Then install any missing peer dependencies reported by `npm` or `yarn`.
 
 ### Usage
@@ -38,7 +44,7 @@ Then install any missing peer dependencies reported by `npm` or `yarn`.
 import React from 'react';
 import { render } from 'react-dom';
 import Button from 'mineral-ui/Button';
-import ThemeProvider from 'mineral-ui/ThemeProvider';
+import { ThemeProvider } from 'mineral-ui/themes';
 
 function App() {
   return (
@@ -53,7 +59,7 @@ function App() {
 render(<App />, document.getElementById('app'));
 ```
 
-> Your app must be wrapped in a [ThemeProvider](./docs/styling.md#themeprovider-theme) at its root in order for the styles to apply correctly.
+> Your app must be wrapped in a [ThemeProvider](https://mineral-ui.com/components/theme-provider/) at its root in order for the styles to apply correctly.
 
 > Also, please see our [import syntax guidelines](./docs/import-syntax.md).
 
@@ -71,7 +77,7 @@ For more options loading this font from Google, check out the Seleted Family pop
 
 ### Styling
 
-This project uses [Glamorous](https://github.com/paypal/glamorous/) for its styling. Please see our [documentation](./docs/styling.md) for details.
+This project uses CSS-in-JS and [Glamorous](https://glamorous.rocks) for styling components. Refer to the [styling page](https://mineral-ui.com/styling/) for details.
 
 
 ## Contributing
