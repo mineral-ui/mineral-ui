@@ -18,7 +18,7 @@
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../ThemeProvider/ThemeProvider');
+const doc = require('!!react-docgen-loader!../../../../themes/ThemeProvider');
 
 export default {
   bestPractices,
@@ -26,8 +26,6 @@ export default {
   examples,
   slug: 'theme-provider',
   title: 'ThemeProvider',
-  whenHowToUse: `ThemeProvider can be used as a wrapper around the root App component to override theme variables.
-It can be used deeper in your component hierarchy to theme specific areas.
-
-Granular control for individual React instances is provided by \`createThemedComponent\``
+  whenHowToUse: `Wrap your app in a ThemeProvider in order for styles to be properly applied.
+    Additionally, it can be nested deeper in your component hierarchy to theme portions of your app.`
 };

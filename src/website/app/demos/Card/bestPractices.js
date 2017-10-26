@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Card, { CardBlock, CardTitle, CardImage } from '../../../../Card';
 
 const CardList = createStyledComponent('div', ({ theme }) => ({

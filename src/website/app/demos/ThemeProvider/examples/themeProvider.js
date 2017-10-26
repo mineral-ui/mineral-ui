@@ -15,10 +15,9 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
-import ThemeProvider from '../../../../../ThemeProvider';
-// TODO: Extract shared components to common location
-import Sample from '../../utils/components/Sample';
+import { createStyledComponent } from '../../../../../styles';
+import { ThemeProvider } from '../../../../../themes';
+import Sample from '../components/Sample';
 
 const DemoLayout = createStyledComponent('div', {
   '& > *': {
@@ -29,23 +28,13 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'theme-provider',
   title: 'Example',
-  description: `Wrap any number of components in a \`ThemeProvider\` to have those components reference the specified theme. That theme will be shallowly merged with the parent theme.`,
+  description: `Wrap components in a \`ThemeProvider\` to apply the theme to that section of the component tree. That theme will be shallowly merged with the parent theme.`,
   scope: { DemoLayout, ThemeProvider, Sample },
   source: `
-    () => {
-      return (
-        <DemoLayout>
-          {/* This will affect all components inside this ThemeProvider that use this variable. */}
-          <ThemeProvider theme={{ color_primary: 'mediumvioletred' }}>
-            <Sample />
-          </ThemeProvider>
-
-          {/* This will affect all components inside this ThemeProvider that use this variable,
-              which should only be Sample components due to the namespace. */}
-          <ThemeProvider theme={{ Sample_color: 'mediumvioletred' }}>
-          	<Sample />
-          </ThemeProvider>
-        </DemoLayout>
-      );
-    }`
+    <DemoLayout>
+      <ThemeProvider theme={{ color_text: 'tomato' }}>
+        <Sample />
+      </ThemeProvider>
+    </DemoLayout>
+  `
 };

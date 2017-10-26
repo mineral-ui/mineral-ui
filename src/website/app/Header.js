@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent } from '../../styles';
 import Link from './Link';
 
 const Container = createStyledComponent('header', ({ theme }) => ({

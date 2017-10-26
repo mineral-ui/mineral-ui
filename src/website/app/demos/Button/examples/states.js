@@ -16,7 +16,7 @@
 
 /* @flow */
 import { simulate } from 'glamor';
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
 
 const DemoLayout = createStyledComponent('div', {

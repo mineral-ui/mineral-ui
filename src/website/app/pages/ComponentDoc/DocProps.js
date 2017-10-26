@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Callout from '../../Callout';
 import Heading from '../../Heading';
 import PropTable from '../../PropTable';

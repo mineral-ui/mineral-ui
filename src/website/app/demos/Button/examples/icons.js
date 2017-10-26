@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
 import IconCloud from '../../../../../Icon/IconCloud';
 

@@ -17,7 +17,7 @@
 /* @flow */
 import { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../utils';
+import { createStyledComponent } from '../../../../../styles';
 import Button from '../../../../../Button';
 import Dropdown from '../../../../../Dropdown';
 import data from '../../Menu/components/menuData';

@@ -17,7 +17,7 @@
 /* @flow */
 import React, { createElement } from 'react';
 import marksy from 'marksy/components';
-import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../styles';
 import Heading from './Heading';
 import Paragraph from './Paragraph';
 import Link from './Link';
@@ -83,7 +83,8 @@ const Root = createStyledComponent('div', ({ theme }) => ({
     backgroundColor: theme.color_gray_20,
     borderRadius: theme.borderRadius_1,
     fontFamily: theme.fontFamily_monospace,
-    padding: `${parseFloat(theme.space_inset_sm) / 2}em`
+    padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
+    wordBreak: 'break-all'
   },
 
   // Specificity silliness due to having to style markdown content off of the

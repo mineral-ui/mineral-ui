@@ -18,9 +18,9 @@
 import {
   createStyledComponent,
   getNormalizedValue,
-  pxToEm,
-  mineralTheme
-} from '../../../../../../utils';
+  pxToEm
+} from '../../../../../../styles';
+import { mineralTheme } from '../../../../../../themes';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 

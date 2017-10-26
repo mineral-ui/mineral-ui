@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../../../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../../../styles';
 import Markdown from '../../Markdown';
 import _Heading from '../../Heading';
 

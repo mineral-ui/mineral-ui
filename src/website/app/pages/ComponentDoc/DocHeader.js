@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Heading from '../../Heading';
 import Link from '../../Link';
 import Markdown from '../../Markdown';

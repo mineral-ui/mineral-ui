@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import ThemeProvider from '../../../../../ThemeProvider';
+import { ThemeProvider } from '../../../../../themes';
 import Button from '../../../../../Button';
 import IconBackspace from '../../../../../Icon/IconBackspace';
 

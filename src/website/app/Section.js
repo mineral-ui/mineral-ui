@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../utils';
+import { createStyledComponent } from '../../styles';
 
 export default createStyledComponent('section', ({ theme }) => ({
   margin: `${parseFloat(theme.space_stack_sm) * 16}em 0`

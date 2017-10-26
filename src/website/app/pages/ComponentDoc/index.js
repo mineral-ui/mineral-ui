@@ -17,7 +17,8 @@
 /* @flow */
 import React from 'react';
 import Helmet from 'react-helmet';
-import { createStyledComponent, mineralTheme } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
+import { mineralTheme } from '../../../../themes';
 import Heading from '../../Heading';
 import DocBestPractices from './DocBestPractices';
 import DocExamples from './DocExamples';

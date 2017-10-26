@@ -16,21 +16,21 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../utils';
+import GuidelinePage from '../../GuidelinePage';
+import Markdown from '../../Markdown';
+import content from './styling.md';
 
 type Props = {
-  className?: string,
-  text?: string
+  pageMeta: {
+    title: string,
+    canonicalLink: string
+  }
 };
 
-const Root = createStyledComponent('span', ({ theme }) => ({
-  backgroundColor: theme.Sample_backgroundColor || 'lavender',
-  color: theme.Sample_color || theme.color_text,
-  display: 'inline-block',
-  outline: `1px solid ${theme.borderColor}`,
-  padding: theme.space_inset_sm
-}));
-
-export default function Sample({ className, text = 'Sample' }: Props) {
-  return <Root className={className}>{text}</Root>;
+export default function Theming(props: Props) {
+  return (
+    <GuidelinePage {...props}>
+      <Markdown>{content}</Markdown>
+    </GuidelinePage>
+  );
 }

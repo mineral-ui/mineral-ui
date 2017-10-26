@@ -29,7 +29,7 @@ Then install any missing peer dependencies reported by `npm` or `yarn`.
 import React from 'react';
 import { render } from 'react-dom';
 import Button from 'mineral-ui/Button';
-import ThemeProvider from 'mineral-ui/ThemeProvider';
+import { ThemeProvider } from 'mineral-ui/themes';
 
 function App() {
   return (
@@ -68,15 +68,11 @@ but we’ll leave that to you.
 
 ### Styling
 
-This project uses [Glamorous](https://github.com/paypal/glamorous) for
-its styling. Please see our
-[documentation](https://github.com/mineral-ui/mineral-ui/blob/master/docs/styling.md)
-for details.
+This project uses CSS-in-JS and [Glamorous](https://glamorous.rocks) for styling components. Refer to the [styling page](/styling/) for details.
 
 ### Theming
 
-Theming is a core concept in Mineral UI. Refer to the
-[documentation](/theming) for details.
+Theming is a core concept in Mineral UI. Refer to the [theming page](/theming/) for details.
 
 ## Contributing
 

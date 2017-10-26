@@ -21,42 +21,40 @@ export default [
     title: 'override theme variables at the top level',
     example: `
 \`\`\`
-import { mineralTheme } from 'mineral-ui/utils';
+const myTheme = createTheme('blue', {
+  color_text: 'rebeccapurple'
+});
 
-<ThemeProvider theme={{
-  ...mineralTheme,
-  color_primary: 'rebeccapurple'
-}}>
+<ThemeProvider theme={myTheme}>
   <App />
 </ThemeProvider>
 \`\`\`
 `,
-    description: `Try to keep theme overrides all in one place, as they will be easier to change later.
-If you are creating custom-themed components which will be re-used, it's fine to keep them in the component definition.`
+    description: `Try to keep global theme overrides all in one place, as they will be easier to change later.`
   },
   {
     type: 'do',
-    title: 'use a second or third themeprovider to style different sections',
+    title: 'use additional ThemeProviders to style different sections',
     example: `
 \`\`\`
 <ThemeProvider>
-  <div>The Main Part of your app</div>
   <ThemeProvider theme={{
-    color_primary: 'limegreen'
+    color_text: 'darkgray'
   }}>
-    <div>The admin section</div>
-  </ThemeProvider
+    <nav>Navigation<nav>
+  </ThemeProvider>
+  <main>The main part of your app</main>
 </ThemeProvider>
 \`\`\`
 `,
-    description: `You might want to style different pages of your app with separate themes to create a visual separation.`
+    description: `You might want to style different portions of your app with separate themes to create a visual separation.`
   },
   {
     type: 'dont',
     title: 'override themes unless you really need to',
     example: `
 \`\`\`
-<ThemeProvider theme={{ color_primary: '#f00' }}>
+<ThemeProvider theme={{ color_text: '#f00' }}>
   <div>Awesome custom app</div>
 </ThemeProvider>
 \`\`\`

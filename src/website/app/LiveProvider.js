@@ -24,7 +24,7 @@ import {
   LiveError,
   LivePreview
 } from 'react-live';
-import { createStyledComponent, getNormalizedValue } from '../../utils';
+import { createStyledComponent, getNormalizedValue } from '../../styles';
 
 type Props = {
   backgroundColor?: string,

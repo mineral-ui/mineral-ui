@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import colorable from 'colorable';
-import { createStyledComponent } from '../../../../utils';
+import { createStyledComponent } from '../../../../styles';
 import Markdown from '../../Markdown';
 import {
   Table as _Table,

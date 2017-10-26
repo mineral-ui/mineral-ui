@@ -16,7 +16,8 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, color } from '../../utils';
+import { createStyledComponent } from '../../styles';
+import color from '../../colors';
 import IconCheck from '../../Icon/IconCheck';
 import IconAssignment from '../../Icon/IconAssignment';
 import IconSlowMotionVideo from '../../Icon/IconSlowMotionVideo';

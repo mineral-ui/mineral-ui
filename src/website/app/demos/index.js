@@ -25,7 +25,6 @@ import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
 import themeProvider from './ThemeProvider';
-import utils from './utils';
 
 const demos = flatten([
   button,
@@ -35,8 +34,7 @@ const demos = flatten([
   link,
   menu,
   popover,
-  themeProvider,
-  utils
+  themeProvider
 ]);
 
 export default createKeyMap(demos, 'slug');
