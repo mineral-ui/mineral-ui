@@ -292,8 +292,7 @@ const Content = createStyledComponent('span', styles.content);
 const Inner = createStyledComponent('span', styles.inner);
 
 function isTypeButton(type: ?string) {
-  const buttonTypes = ['button', 'submit', 'reset'];
-  return buttonTypes.indexOf(type) !== -1;
+  return ['button', 'submit', 'reset'].indexOf(type) !== -1;
 }
 
 function filterProps({ element, type }: Props) {
@@ -331,7 +330,7 @@ export default function Button({
   };
 
   const Root = createStyledComponent(element, styles.button, {
-    filterProps: filterProps(rootProps),
+    filterProps: filterProps({ element, type }),
     includeStyleReset: true,
     rootEl: element
   });
