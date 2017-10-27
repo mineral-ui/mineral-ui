@@ -19,6 +19,7 @@ import regular from './regular';
 import circular from './circular';
 import icons from './icons';
 import iconOnly from './iconOnly';
+import link from './link';
 import minimal from './minimal';
 import primary from './primary';
 import rtl from './rtl';
@@ -34,6 +35,7 @@ export default [
   icons,
   iconOnly,
   circular,
+  link,
   truncation,
   rtl,
   states

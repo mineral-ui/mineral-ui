@@ -15,11 +15,12 @@
  */
 
 /* @flow */
-import link from './link';
-import button from './button';
-import children from './children';
-import reactRouter from './reactRouter';
-import states from './states';
-import variants from './variants';
+import Button from '../../../../../Button';
 
-export default [link, children, variants, button, reactRouter, states];
+export default {
+  id: 'link',
+  title: 'Link',
+  description: `Link with Button styling.  See the [Link](/components/link) component for more conventionally styled links.`,
+  scope: { Button },
+  source: `<Button element="a" href="#link">Link</Button>`
+};
