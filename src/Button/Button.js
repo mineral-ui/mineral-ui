@@ -342,10 +342,10 @@ export default function Button({
     jumbo: pxToEm(24)
   };
   const startIcon = iconStart
-    ? cloneElement(iconStart, { size: iconSize[size] })
+    ? cloneElement(iconStart, { size: iconSize[size], key: 'iconStart' })
     : null;
   const endIcon = iconEnd
-    ? cloneElement(iconEnd, { size: iconSize[size] })
+    ? cloneElement(iconEnd, { size: iconSize[size], key: 'iconEnd' })
     : null;
 
   return (
