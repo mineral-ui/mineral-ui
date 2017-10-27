@@ -40,5 +40,5 @@ Currently the site is hosted on Netlify. In order to publish the website, one of
     * As mentioned above, check the `release` command usage for options.
 
     ```sh
-    npm run release -- --help
+    npm run release:dist -- --help
     ```
