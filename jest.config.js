@@ -26,6 +26,7 @@ module.exports = {
     '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js',
     '.md$': '<rootDir>/utils/emptyObject.js'
   },
+  setupFiles: ['raf/polyfill'],
   setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
   snapshotSerializers: ['enzyme-to-json/serializer']
 };

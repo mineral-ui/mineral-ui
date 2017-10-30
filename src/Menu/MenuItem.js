@@ -249,10 +249,11 @@ const defaultRender = ({
   let startIcon =
     variant !== undefined && variant !== 'regular' && variantIcons[variant];
   if (iconStart) {
-    startIcon = cloneElement(iconStart, { size: pxToEm(24) });
+    startIcon = cloneElement(iconStart, { size: pxToEm(24), key: 'iconStart' });
   }
 
-  const endIcon = iconEnd && cloneElement(iconEnd, { size: pxToEm(24) });
+  const endIcon =
+    iconEnd && cloneElement(iconEnd, { size: pxToEm(24), key: 'iconEnd' });
 
   // This structure is based on Button
   return (
