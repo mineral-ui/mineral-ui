@@ -35,5 +35,5 @@ render(
       <App demos={demos} />
     </ThemeProvider>
   </BrowserRouter>,
-  document.getElementById('app')
+  global.document.getElementById('app')
 );
