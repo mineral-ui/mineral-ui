@@ -17,7 +17,6 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 import serializer from 'jest-glamor-react';
 import { simulations } from 'glamor';
-import raf from 'raf';
 
 // Configure Enzyme for our version of React
 Enzyme.configure({ adapter: new Adapter() });
@@ -27,6 +26,3 @@ expect.addSnapshotSerializer(serializer);
 
 // Enable Glamor simulate helper
 simulations(true);
-
-// Polyfill requestAnimationFrame
-raf.polyfill();
