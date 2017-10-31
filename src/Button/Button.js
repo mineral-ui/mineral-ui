@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import React, { cloneElement } from 'react';
+import React, { Component, cloneElement } from 'react';
 import { ellipsis } from 'polished';
 import { createStyledComponent, pxToEm, getNormalizedValue } from '../styles';
 
@@ -288,6 +288,13 @@ const styles = {
   }
 };
 
+const iconSize = {
+  small: 'medium',
+  medium: 'medium',
+  large: pxToEm(24),
+  jumbo: pxToEm(24)
+};
+
 const Content = createStyledComponent('span', styles.content);
 const Inner = createStyledComponent('span', styles.inner);
 
@@ -304,6 +311,19 @@ function filterProps({ element, type }: Props) {
   return Array.prototype.concat(invalidComponentProps, invalidLinkProps);
 }
 
+// Button's root node must be created outside of render, so that the entire DOM
+// element is replaced only when the element prop is changed, otherwise it is
+// updated in place
+function createRootNode(props: Props) {
+  const { element = Button.defaultProps.element } = props;
+
+  return createStyledComponent(element, styles.button, {
+    filterProps: filterProps(props),
+    includeStyleReset: true,
+    rootEl: element
+  });
+}
+
 /**
  * The Button component represents a clickable button.
  * Buttons draw attention to actions that can be performed in your app.
@@ -311,50 +331,66 @@ function filterProps({ element, type }: Props) {
  *
  * Always use the appropriate variant for your button, and write a clear, concise label to effectively communicate intention.
  */
-export default function Button({
-  children,
-  element = 'button',
-  iconStart,
-  iconEnd,
-  size = 'large',
-  type = 'button',
-  variant = 'regular',
-  ...restProps
-}: Props) {
-  const rootProps = {
-    size,
-    text: children,
-    type,
-    variant,
-    ...restProps
+export default class Button extends Component<Props> {
+  static defaultProps = {
+    element: 'button',
+    size: 'large',
+    type: 'button',
+    variant: 'regular'
   };
 
-  const Root = createStyledComponent(element, styles.button, {
-    filterProps: filterProps({ element, type }),
-    includeStyleReset: true,
-    rootEl: element
-  });
+  constructor(props: Props) {
+    super();
 
-  const iconSize = {
-    small: 'medium',
-    medium: 'medium',
-    large: pxToEm(24),
-    jumbo: pxToEm(24)
-  };
-  const startIcon = iconStart
-    ? cloneElement(iconStart, { size: iconSize[size] })
-    : null;
-  const endIcon = iconEnd
-    ? cloneElement(iconEnd, { size: iconSize[size] })
-    : null;
+    this.rootNode = createRootNode(props);
+  }
 
-  return (
-    <Root {...rootProps}>
-      <Inner>
-        {startIcon}
-        {children && <Content size={size}>{children}</Content>}
-        {endIcon}
-      </Inner>
-    </Root>
-  );
+  componentWillUpdate(nextProps: Props) {
+    if (this.props.element !== nextProps.element) {
+      this.rootNode = createRootNode(nextProps);
+    }
+  }
+
+  props: Props;
+
+  rootNode: React$ComponentType<*>;
+
+  render() {
+    const {
+      children,
+      iconStart,
+      iconEnd,
+      size = Button.defaultProps.size,
+      type = Button.defaultProps.type,
+      variant = Button.defaultProps.variant,
+      ...restProps
+    } = this.props;
+
+    const rootProps = {
+      size,
+      text: children,
+      type,
+      variant,
+      ...restProps
+    };
+
+    const Root = this.rootNode;
+
+    const startIcon = iconStart
+      ? cloneElement(iconStart, { size: iconSize[size] })
+      : null;
+    const endIcon = iconEnd
+      ? cloneElement(iconEnd, { size: iconSize[size] })
+      : null;
+
+    return (
+      <Root {...rootProps}>
+        <Inner>
+          {startIcon}
+          {children && <Content size={size}>{children}</Content>}
+          {endIcon}
+        </Inner>
+      </Root>
+    );
+  }
 }

@@ -21,7 +21,7 @@ import componentStyleReset from './componentStyleReset';
 export default function createStyledComponent(
   element:
     | React$StatelessFunctionalComponent<*>
-    | Class<React$ComponentType<*>>
+    | React$ComponentType<*>
     | string,
   styles: Object | ((props: Object, context?: Object) => Object),
   options?: Object = {}
