@@ -1,3 +1,13 @@
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/mineral-ui/mineral-ui/compare/v0.9.0...v0.10.0) (2017-10-31)
+
+
+### Bug Fixes
+
+* **dropdown,button:** Fix Dropdown keyboard nav ([29f33a5](https://github.com/mineral-ui/mineral-ui/commit/29f33a5))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/mineral-ui/mineral-ui/compare/v0.8.0...v0.9.0) (2017-10-27)
 
