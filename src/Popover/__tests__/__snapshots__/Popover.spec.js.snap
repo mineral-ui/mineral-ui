@@ -341,8 +341,12 @@ exports[`Popover demo examples basic 1`] = `
                               aria-expanded={false}
                               aria-owns="popover-11-popoverContent"
                               disabled={undefined}
+                              element="button"
                               onClick={[Function]}
                               role="button"
+                              size="large"
+                              type="button"
+                              variant="regular"
                             >
                               <glamorous(button)
                                 aria-describedby="popover-11-popoverContent"
@@ -350,6 +354,7 @@ exports[`Popover demo examples basic 1`] = `
                                 aria-expanded={false}
                                 aria-owns="popover-11-popoverContent"
                                 disabled={undefined}
+                                element="button"
                                 onClick={[Function]}
                                 role="button"
                                 size="large"
@@ -829,8 +834,12 @@ exports[`Popover demo examples controlled 1`] = `
                                     aria-expanded={false}
                                     aria-owns="popover-18-popoverContent"
                                     disabled={undefined}
+                                    element="button"
                                     onClick={[Function]}
                                     role="button"
+                                    size="large"
+                                    type="button"
+                                    variant="regular"
                                   >
                                     <glamorous(button)
                                       aria-describedby="popover-18-popoverContent"
@@ -838,6 +847,7 @@ exports[`Popover demo examples controlled 1`] = `
                                       aria-expanded={false}
                                       aria-owns="popover-18-popoverContent"
                                       disabled={undefined}
+                                      element="button"
                                       onClick={[Function]}
                                       role="button"
                                       size="large"
@@ -883,9 +893,14 @@ exports[`Popover demo examples controlled 1`] = `
                     </Popover>
                   </Popover>
                   <Button
+                    element="button"
                     onClick={[Function]}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       onClick={[Function]}
                       size="large"
                       text="Open Popover"
@@ -1266,8 +1281,12 @@ exports[`Popover demo examples disabled 1`] = `
                               aria-expanded={false}
                               aria-owns="popover-17-popoverContent"
                               disabled={true}
+                              element="button"
                               onClick={undefined}
                               role="button"
+                              size="large"
+                              type="button"
+                              variant="regular"
                             >
                               <glamorous(button)
                                 aria-describedby="popover-17-popoverContent"
@@ -1275,6 +1294,7 @@ exports[`Popover demo examples disabled 1`] = `
                                 aria-expanded={false}
                                 aria-owns="popover-17-popoverContent"
                                 disabled={true}
+                                element="button"
                                 onClick={undefined}
                                 role="button"
                                 size="large"
@@ -1686,8 +1706,12 @@ exports[`Popover demo examples on-open-close 1`] = `
                                 aria-expanded={false}
                                 aria-owns="popover-16-popoverContent"
                                 disabled={undefined}
+                                element="button"
                                 onClick={[Function]}
                                 role="button"
+                                size="large"
+                                type="button"
+                                variant="regular"
                               >
                                 <glamorous(button)
                                   aria-describedby="popover-16-popoverContent"
@@ -1695,6 +1719,7 @@ exports[`Popover demo examples on-open-close 1`] = `
                                   aria-expanded={false}
                                   aria-owns="popover-16-popoverContent"
                                   disabled={undefined}
+                                  element="button"
                                   onClick={[Function]}
                                   role="button"
                                   size="large"
@@ -2162,8 +2187,12 @@ exports[`Popover demo examples overflow 1`] = `
                                   aria-expanded={true}
                                   aria-owns="popover-14-popoverContent"
                                   disabled={undefined}
+                                  element="button"
                                   onClick={[Function]}
                                   role="button"
+                                  size="large"
+                                  type="button"
+                                  variant="regular"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-14-popoverContent"
@@ -2171,6 +2200,7 @@ exports[`Popover demo examples overflow 1`] = `
                                     aria-expanded={true}
                                     aria-owns="popover-14-popoverContent"
                                     disabled={undefined}
+                                    element="button"
                                     onClick={[Function]}
                                     role="button"
                                     size="large"
@@ -2898,8 +2928,12 @@ exports[`Popover demo examples placement 1`] = `
                                   aria-expanded={true}
                                   aria-owns="popover-13-popoverContent"
                                   disabled={undefined}
+                                  element="button"
                                   onClick={[Function]}
                                   role="button"
+                                  size="large"
+                                  type="button"
+                                  variant="regular"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-13-popoverContent"
@@ -2907,6 +2941,7 @@ exports[`Popover demo examples placement 1`] = `
                                     aria-expanded={true}
                                     aria-owns="popover-13-popoverContent"
                                     disabled={undefined}
+                                    element="button"
                                     onClick={[Function]}
                                     role="button"
                                     size="large"
@@ -3773,8 +3808,12 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                             aria-expanded={true}
                                             aria-owns="popover-15-popoverContent"
                                             disabled={undefined}
+                                            element="button"
                                             onClick={[Function]}
                                             role="button"
+                                            size="large"
+                                            type="button"
+                                            variant="regular"
                                           >
                                             <glamorous(button)
                                               aria-describedby="popover-15-popoverContent"
@@ -3782,6 +3821,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                               aria-expanded={true}
                                               aria-owns="popover-15-popoverContent"
                                               disabled={undefined}
+                                              element="button"
                                               onClick={[Function]}
                                               role="button"
                                               size="large"
@@ -4097,12 +4137,16 @@ exports[`Popover demo examples scrolling-container 1`] = `
                   >
                     <Button
                       className="glamor-18"
+                      element="button"
                       minimal={true}
                       onClick={[Function]}
                       size="small"
+                      type="button"
+                      variant="regular"
                     >
                       <glamorous(button)
                         className="glamor-18"
+                        element="button"
                         minimal={true}
                         onClick={[Function]}
                         size="small"
@@ -4585,8 +4629,12 @@ exports[`Popover demo examples title 1`] = `
                                   aria-expanded={true}
                                   aria-owns="popover-12-popoverContent"
                                   disabled={undefined}
+                                  element="button"
                                   onClick={[Function]}
                                   role="button"
+                                  size="large"
+                                  type="button"
+                                  variant="regular"
                                 >
                                   <glamorous(button)
                                     aria-describedby="popover-12-popoverContent"
@@ -4594,6 +4642,7 @@ exports[`Popover demo examples title 1`] = `
                                     aria-expanded={true}
                                     aria-owns="popover-12-popoverContent"
                                     disabled={undefined}
+                                    element="button"
                                     onClick={[Function]}
                                     role="button"
                                     size="large"

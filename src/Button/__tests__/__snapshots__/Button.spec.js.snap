@@ -766,11 +766,16 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       size="large"
                       text={undefined}
                       type="button"
@@ -824,12 +829,17 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
                     primary={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       primary={true}
                       size="large"
                       text={undefined}
@@ -884,12 +894,17 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
                     minimal={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       minimal={true}
                       size="large"
                       text={undefined}
@@ -944,12 +959,16 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
                     size="small"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       size="small"
                       text={undefined}
                       type="button"
@@ -1003,12 +1022,16 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
                     size="medium"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       size="medium"
                       text={undefined}
                       type="button"
@@ -1062,12 +1085,16 @@ exports[`Button demo examples circular 1`] = `
                   <Button
                     aria-label="Cloud"
                     circular={true}
+                    element="button"
                     iconStart={<IconCloud />}
                     size="jumbo"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
                       circular={true}
+                      element="button"
                       size="jumbo"
                       text={undefined}
                       type="button"
@@ -1797,8 +1824,14 @@ exports[`Button demo examples default 1`] = `
               <div
                 className="glamor-15"
               >
-                <Button>
+                <Button
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
+                >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Default"
                     type="button"
@@ -1827,9 +1860,13 @@ exports[`Button demo examples default 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Success"
                     type="button"
@@ -1858,9 +1895,13 @@ exports[`Button demo examples default 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Warning"
                     type="button"
@@ -1889,9 +1930,13 @@ exports[`Button demo examples default 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Danger"
                     type="button"
@@ -1921,9 +1966,14 @@ exports[`Button demo examples default 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     size="large"
                     text="Disabled"
                     type="button"
@@ -2728,10 +2778,15 @@ exports[`Button demo examples icon-only 1`] = `
                 >
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       size="large"
                       text={undefined}
                       type="button"
@@ -2784,11 +2839,16 @@ exports[`Button demo examples icon-only 1`] = `
                   </Button>
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
                     primary={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       primary={true}
                       size="large"
                       text={undefined}
@@ -2842,11 +2902,16 @@ exports[`Button demo examples icon-only 1`] = `
                   </Button>
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
                     minimal={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       minimal={true}
                       size="large"
                       text={undefined}
@@ -2900,11 +2965,15 @@ exports[`Button demo examples icon-only 1`] = `
                   </Button>
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
                     size="small"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       size="small"
                       text={undefined}
                       type="button"
@@ -2957,11 +3026,15 @@ exports[`Button demo examples icon-only 1`] = `
                   </Button>
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
                     size="medium"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       size="medium"
                       text={undefined}
                       type="button"
@@ -3014,11 +3087,15 @@ exports[`Button demo examples icon-only 1`] = `
                   </Button>
                   <Button
                     aria-label="Cloud"
+                    element="button"
                     iconStart={<IconCloud />}
                     size="jumbo"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       aria-label="Cloud"
+                      element="button"
                       size="jumbo"
                       text={undefined}
                       type="button"
@@ -4278,9 +4355,14 @@ exports[`Button demo examples icons 1`] = `
                   className="glamor-53"
                 >
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Start icon"
                       type="button"
@@ -4340,9 +4422,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconEnd={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="End icon"
                       type="button"
@@ -4402,10 +4489,15 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconEnd={<IconCloud />}
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Both icons"
                       type="button"
@@ -4498,10 +4590,15 @@ exports[`Button demo examples icons 1`] = `
                   <br />
                   <br />
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
                     primary={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       primary={true}
                       size="large"
                       text="Primary"
@@ -4562,10 +4659,15 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
                     minimal={true}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       minimal={true}
                       size="large"
                       text="Minimal"
@@ -4626,10 +4728,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
                     variant="danger"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Danger"
                       type="button"
@@ -4689,10 +4795,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
                     variant="success"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Success"
                       type="button"
@@ -4752,10 +4862,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
                     variant="warning"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Warning"
                       type="button"
@@ -4816,10 +4930,15 @@ exports[`Button demo examples icons 1`] = `
                   </Button>
                   <Button
                     disabled={true}
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
                       disabled={true}
+                      element="button"
                       size="large"
                       text="Disabled"
                       type="button"
@@ -4882,10 +5001,14 @@ exports[`Button demo examples icons 1`] = `
                   <br />
                   <br />
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
                     size="small"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="small"
                       text="Small"
                       type="button"
@@ -4945,10 +5068,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
                     size="medium"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="medium"
                       text="Medium"
                       type="button"
@@ -5008,9 +5135,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="Large"
                       type="button"
@@ -5070,10 +5202,14 @@ exports[`Button demo examples icons 1`] = `
                     </glamorous(button)>
                   </Button>
                   <Button
+                    element="button"
                     iconStart={<IconCloud />}
                     size="jumbo"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="jumbo"
                       text="Jumbo"
                       type="button"
@@ -5442,8 +5578,12 @@ exports[`Button demo examples link 1`] = `
             <Button
               element="a"
               href="#link"
+              size="large"
+              type="button"
+              variant="regular"
             >
               <glamorous(a)
+                element="a"
                 href="#link"
                 size="large"
                 text="Link"
@@ -6143,9 +6283,14 @@ exports[`Button demo examples minimal 1`] = `
                 className="glamor-15"
               >
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Default"
@@ -6175,10 +6320,14 @@ exports[`Button demo examples minimal 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Success"
@@ -6208,10 +6357,14 @@ exports[`Button demo examples minimal 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Warning"
@@ -6241,10 +6394,14 @@ exports[`Button demo examples minimal 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Danger"
@@ -6275,10 +6432,15 @@ exports[`Button demo examples minimal 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Disabled"
@@ -6987,9 +7149,14 @@ exports[`Button demo examples primary 1`] = `
                 className="glamor-15"
               >
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Default"
@@ -7019,10 +7186,14 @@ exports[`Button demo examples primary 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Success"
@@ -7052,10 +7223,14 @@ exports[`Button demo examples primary 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Warning"
@@ -7085,10 +7260,14 @@ exports[`Button demo examples primary 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Danger"
@@ -7119,10 +7298,15 @@ exports[`Button demo examples primary 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     primary={true}
                     size="large"
                     text="Disabled"
@@ -7495,9 +7679,14 @@ exports[`Button demo examples rtl 1`] = `
                   }
                 >
                   <Button
+                    element="button"
                     iconStart={<IconBackspace />}
+                    size="large"
+                    type="button"
+                    variant="regular"
                   >
                     <glamorous(button)
+                      element="button"
                       size="large"
                       text="قم بعمل ما"
                       type="button"
@@ -8294,9 +8483,13 @@ exports[`Button demo examples sizes 1`] = `
                 className="glamor-15"
               >
                 <Button
+                  element="button"
                   size="small"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     size="small"
                     text="Small"
                     type="button"
@@ -8325,9 +8518,13 @@ exports[`Button demo examples sizes 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   size="medium"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     size="medium"
                     text="Medium"
                     type="button"
@@ -8355,8 +8552,14 @@ exports[`Button demo examples sizes 1`] = `
                     </button>
                   </glamorous(button)>
                 </Button>
-                <Button>
+                <Button
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
+                >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Large"
                     type="button"
@@ -8385,9 +8588,13 @@ exports[`Button demo examples sizes 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   size="jumbo"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     size="jumbo"
                     text="Jumbo"
                     type="button"
@@ -8416,9 +8623,14 @@ exports[`Button demo examples sizes 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   fullWidth={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     fullWidth={true}
                     size="large"
                     text="Full Width"
@@ -10415,8 +10627,14 @@ exports[`Button demo examples states 1`] = `
               <div
                 className="glamor-252"
               >
-                <Button>
+                <Button
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
+                >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Regular"
                     type="button"
@@ -10445,9 +10663,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Primary"
@@ -10477,9 +10700,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Minimal"
@@ -10512,9 +10740,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Hover"
                     type="button"
@@ -10545,10 +10778,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Hover"
@@ -10580,10 +10818,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Hover"
@@ -10617,9 +10860,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus"
                     type="button"
@@ -10650,10 +10898,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus"
@@ -10685,10 +10938,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus"
@@ -10723,10 +10981,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Focus & Hover"
                     type="button"
@@ -10759,11 +11022,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Hover"
@@ -10797,11 +11065,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Hover"
@@ -10837,10 +11110,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus & Active"
                     type="button"
@@ -10873,11 +11151,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Active"
@@ -10911,11 +11194,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Active"
@@ -10950,9 +11238,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-active=""
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     size="large"
                     text="Active"
                     type="button"
@@ -10983,10 +11276,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Active"
@@ -11018,10 +11316,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Active"
@@ -11055,9 +11358,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   disabled={true}
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     size="large"
                     text="Disabled"
                     type="button"
@@ -11088,10 +11396,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     primary={true}
                     size="large"
                     text="Disabled"
@@ -11123,10 +11436,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Disabled"
@@ -11160,9 +11478,13 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <br />
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Regular"
                     type="button"
@@ -11191,10 +11513,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Primary"
@@ -11224,10 +11550,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Minimal"
@@ -11260,10 +11590,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Hover"
                     type="button"
@@ -11294,11 +11628,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Hover"
@@ -11330,11 +11668,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Hover"
@@ -11368,10 +11710,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus"
                     type="button"
@@ -11402,11 +11748,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus"
@@ -11438,11 +11788,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus"
@@ -11477,11 +11831,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Focus & Hover"
                     type="button"
@@ -11514,12 +11872,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Hover"
@@ -11553,12 +11915,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Hover"
@@ -11594,11 +11960,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus & Active"
                     type="button"
@@ -11631,12 +12001,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Active"
@@ -11670,12 +12044,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Active"
@@ -11710,10 +12088,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-active=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     size="large"
                     text="Active"
                     type="button"
@@ -11744,11 +12126,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Active"
@@ -11780,11 +12166,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Active"
@@ -11818,10 +12208,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   disabled={true}
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     size="large"
                     text="Disabled"
                     type="button"
@@ -11852,11 +12246,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     primary={true}
                     size="large"
                     text="Disabled"
@@ -11888,11 +12286,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Disabled"
@@ -11926,9 +12328,13 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <br />
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Regular"
                     type="button"
@@ -11957,10 +12363,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Primary"
@@ -11990,10 +12400,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Minimal"
@@ -12026,10 +12440,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Hover"
                     type="button"
@@ -12060,11 +12478,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Hover"
@@ -12096,11 +12518,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Hover"
@@ -12134,10 +12560,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus"
                     type="button"
@@ -12168,11 +12598,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus"
@@ -12204,11 +12638,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus"
@@ -12243,11 +12681,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Focus & Hover"
                     type="button"
@@ -12280,12 +12722,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Hover"
@@ -12319,12 +12765,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Hover"
@@ -12360,11 +12810,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus & Active"
                     type="button"
@@ -12397,12 +12851,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Active"
@@ -12436,12 +12894,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Active"
@@ -12476,10 +12938,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-active=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     size="large"
                     text="Active"
                     type="button"
@@ -12510,11 +12976,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Active"
@@ -12546,11 +13016,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="success"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Active"
@@ -12584,10 +13058,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   disabled={true}
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     size="large"
                     text="Disabled"
                     type="button"
@@ -12618,11 +13096,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     primary={true}
                     size="large"
                     text="Disabled"
@@ -12654,11 +13136,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Disabled"
@@ -12692,9 +13178,13 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <br />
                 <Button
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Regular"
                     type="button"
@@ -12723,10 +13213,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     primary={true}
                     size="large"
                     text="Primary"
@@ -12756,10 +13250,14 @@ exports[`Button demo examples states 1`] = `
                   </glamorous(button)>
                 </Button>
                 <Button
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Minimal"
@@ -12792,10 +13290,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Hover"
                     type="button"
@@ -12826,11 +13328,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Hover"
@@ -12862,11 +13368,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Hover"
@@ -12900,10 +13410,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus"
                     type="button"
@@ -12934,11 +13448,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus"
@@ -12970,11 +13488,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus"
@@ -13009,11 +13531,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     size="large"
                     text="Focus & Hover"
                     type="button"
@@ -13046,12 +13572,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Hover"
@@ -13085,12 +13615,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-focus=""
                   data-simulate-hover=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-focus=""
                     data-simulate-hover=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Hover"
@@ -13126,11 +13660,15 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     size="large"
                     text="Focus & Active"
                     type="button"
@@ -13163,12 +13701,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Focus & Active"
@@ -13202,12 +13744,16 @@ exports[`Button demo examples states 1`] = `
                 <Button
                   data-simulate-active=""
                   data-simulate-focus=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
                     data-simulate-focus=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Focus & Active"
@@ -13242,10 +13788,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   data-simulate-active=""
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     size="large"
                     text="Active"
                     type="button"
@@ -13276,11 +13826,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     primary={true}
                     size="large"
                     text="Active"
@@ -13312,11 +13866,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   data-simulate-active=""
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="warning"
                 >
                   <glamorous(button)
                     data-simulate-active=""
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Active"
@@ -13350,10 +13908,14 @@ exports[`Button demo examples states 1`] = `
                 <br />
                 <Button
                   disabled={true}
+                  element="button"
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     size="large"
                     text="Disabled"
                     type="button"
@@ -13384,11 +13946,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   primary={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     primary={true}
                     size="large"
                     text="Disabled"
@@ -13420,11 +13986,15 @@ exports[`Button demo examples states 1`] = `
                 </Button>
                 <Button
                   disabled={true}
+                  element="button"
                   minimal={true}
+                  size="large"
+                  type="button"
                   variant="danger"
                 >
                   <glamorous(button)
                     disabled={true}
+                    element="button"
                     minimal={true}
                     size="large"
                     text="Disabled"
@@ -13776,8 +14346,14 @@ exports[`Button demo examples truncation 1`] = `
               <div
                 className="glamor-3"
               >
-                <Button>
+                <Button
+                  element="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
+                >
                   <glamorous(button)
+                    element="button"
                     size="large"
                     text="Supercalifragilisticexpialidocious"
                     type="button"
