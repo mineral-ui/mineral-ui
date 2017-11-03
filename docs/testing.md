@@ -20,9 +20,17 @@ Unit tests are defined with the [Jest test framework](https://facebook.github.io
 npm run jest
 ```
 
-### Jest command line options
+#### Run tests in different versions of React
 
-All [Jest command line options](https://facebook.github.io/jest/docs/cli.html) are allowed in both the root directory and individual package directories.
+```sh
+npm run jest:react
+```
+
+or
+
+```sh
+npm run jest:react -- --version=16.0.0
+```
 
 #### Run a single spec
 
