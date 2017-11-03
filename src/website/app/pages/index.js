@@ -56,12 +56,6 @@ const sections: Array<Section> = [
         component: Typography,
         path: '/typography',
         title: 'Typography'
-      },
-      {
-        component: PaletteDemo,
-        hiddenInNav: true,
-        path: '/palette-demo',
-        title: 'Palette Demo'
       }
     ]
   },
@@ -92,6 +86,11 @@ const sections: Array<Section> = [
         component: Theming,
         path: '/theming',
         title: 'Theming'
+      },
+      {
+        component: PaletteDemo,
+        path: '/palette-demo',
+        title: 'Palette Demo'
       }
     ]
   }
