@@ -15,14 +15,15 @@
  */
 
 /* @flow */
+import Color from './Color';
+import ComponentStatus from './ComponentStatus';
 import GettingStarted from './GettingStarted';
+import PaletteDemo from './PaletteDemo';
+import Roadmap from './Roadmap';
+import StyleTesting from './StyleTesting';
 import Styling from './Styling';
 import Theming from './Theming';
-import Color from './Color';
 import Typography from './Typography';
-import ComponentStatus from './ComponentStatus';
-import Roadmap from './Roadmap';
-import PaletteDemo from './PaletteDemo';
 
 type Page = {
   component: React$ComponentType<*>,
@@ -42,6 +43,12 @@ const sections: Array<Section> = [
   {
     heading: 'Guidelines',
     pages: [
+      {
+        component: StyleTesting,
+        hiddenInNav: true,
+        path: '/style-testing',
+        title: 'Style Testing'
+      },
       {
         component: GettingStarted,
         path: '/getting-started',
