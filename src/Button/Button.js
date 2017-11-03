@@ -339,12 +339,6 @@ export default class Button extends Component<Props> {
     variant: 'regular'
   };
 
-  constructor(props: Props) {
-    super();
-
-    this.rootNode = createRootNode(props);
-  }
-
   componentWillUpdate(nextProps: Props) {
     if (this.props.element !== nextProps.element) {
       this.rootNode = createRootNode(nextProps);
@@ -353,7 +347,7 @@ export default class Button extends Component<Props> {
 
   props: Props;
 
-  rootNode: React$ComponentType<*>;
+  rootNode: React$ComponentType<*> = createRootNode(this.props);
 
   render() {
     const {
