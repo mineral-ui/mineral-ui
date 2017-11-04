@@ -36,13 +36,18 @@ const Root = createStyledComponent('div', {
   position: 'absolute',
   right: 'calc(-50vw + 50%)',
   top: 0,
-  zIndex: '-1',
+  zIndex: '-1'
+});
 
-  '& > svg': {
-    height: 875, // [1]
-    mixBlendMode: 'hard-light',
-    width: '100%'
-  }
+const Triangles = createStyledComponent('div', {
+  backgroundImage: "url(/images/triangles.svg)",
+  backgroundSize: "cover",
+  bottom: 0,
+  left: 0,
+  mixBlendMode: "hard-light",
+  position: "absolute",
+  right: 0,
+  top: 0
 });
 
 let trianglesExist = false;
@@ -52,23 +57,12 @@ export default class Canvas extends Component<Props> {
   svgNode: any;
   svgUseNode: any;
 
-  componentDidMount() {
-    if (!trianglesExist) {
-      // triangles();
-      // trianglesExist = true;
-    }
-  }
-
   render() {
     const { className, triangles = true, ...restProps } = this.props;
     const classes = className ? className : '';
     return (
       <Root className={`canvas ${classes}`} {...restProps}>
-        {triangles && (
-          <svg className="triangles">
-            <use href="#triangles" />
-          </svg>
-        )}
+        <Triangles />
       </Root>
     );
   }
