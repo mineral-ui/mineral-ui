@@ -8,7 +8,7 @@ const { NODE_ENV = 'production' } = process.env;
 const exec = (command, env) =>
   execSync(command, {
     stdio: 'inherit',
-    env: Object.assign({}, process.env, env)
+    env: { ...process.env, ...env }
   });
 
 // components es modules
@@ -25,13 +25,6 @@ console.log('\n\nBuilding CommonJS modules...');
 exec('babel ./src --out-dir ./dist --ignore website,*.spec.js,*.template.js', {
   BABEL_ENV: 'cjs',
   NODE_ENV
-});
-
-// website umd
-console.log('\n\nBuilding Website UMD...');
-exec('webpack', {
-  NODE_ENV,
-  TARGET: 'website'
 });
 
 // flow definitions - not yet ready for public consumption
