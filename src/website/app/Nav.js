@@ -19,7 +19,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   createStyledComponent,
-  getNormalizedValue,
   pxToEm
 } from '../../styles';
 import { ThemeProvider } from '../../themes';
@@ -40,8 +39,6 @@ const styles = {
   },
   link: ({ theme }) => ({
     display: 'block',
-    // top & bottom: results of `getNormalizedValue(pxToEm(5), theme.fontSize_ui)`
-    // (6px for bottom), rounded down for baseline alignment
     padding: '0.35em 0 0.4em',
 
     '&.active': {

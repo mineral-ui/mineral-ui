@@ -17,18 +17,10 @@
 /* @flow */
 import React, { Component } from 'react';
 import { createStyledComponent } from '../../styles';
-// import triangles from './triangles';
 
 type Props = {
-  className?: string,
-  triangles?: boolean
+  className?: string
 };
-
-/*
- * [1] 875 is the maximum height of the home page hero. To avoid regenerating
- *     the triangles while also having those triangles be tall enough for all
- *     use cases, we must force a height on all. See also: triangles.js
- */
 
 const Root = createStyledComponent('div', {
   bottom: 0,
@@ -36,39 +28,31 @@ const Root = createStyledComponent('div', {
   position: 'absolute',
   right: 'calc(-50vw + 50%)',
   top: 0,
-  zIndex: '-1',
-
-  '& > svg': {
-    height: 875, // [1]
-    mixBlendMode: 'hard-light',
-    width: '100%'
-  }
+  zIndex: '-1'
 });
 
-let trianglesExist = false;
+const Triangles = createStyledComponent('div', {
+  backgroundImage: 'url(/images/triangles.svg)',
+  backgroundSize: 'cover',
+  bottom: 0,
+  left: 0,
+  mixBlendMode: 'hard-light',
+  position: 'absolute',
+  right: 0,
+  top: 0
+});
 
 export default class Canvas extends Component<Props> {
   rootNode: any;
   svgNode: any;
   svgUseNode: any;
 
-  componentDidMount() {
-    if (!trianglesExist) {
-      // triangles();
-      // trianglesExist = true;
-    }
-  }
-
   render() {
-    const { className, triangles = true, ...restProps } = this.props;
+    const { className, ...restProps } = this.props;
     const classes = className ? className : '';
     return (
       <Root className={`canvas ${classes}`} {...restProps}>
-        {triangles && (
-          <svg className="triangles">
-            <use href="#triangles" />
-          </svg>
-        )}
+        <Triangles />
       </Root>
     );
   }

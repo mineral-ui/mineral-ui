@@ -417,7 +417,7 @@ const styles = {
     }
   }),
   heroCanvas: ({ theme }) => ({
-    backgroundColor: siteColors.slate,
+    backgroundColor: '#3B5663',
 
     [theme.bp_home_navCollapsedAndDown]: {
       bottom: '-14.5em' // Matches change in Header margin due to open menu
