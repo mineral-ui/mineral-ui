@@ -15,7 +15,7 @@ const SVGO = require('svgo');
 const { VERBOSE } = process.env;
 
 const SVG_DIR = path.join(__dirname, '../node_modules/material-design-icons');
-const SVG_GLOB = '**/production/*_24px.svg';
+const SVG_GLOB = '*/svg/production/*_24px.svg';
 const ICON_SRC_DIR = path.join(__dirname, '../src/Icon');
 const ICON_COMPONENTS_DIR = ICON_SRC_DIR;
 const ICON_COMPONENT_TEMPLATE_PATH = path.join(
