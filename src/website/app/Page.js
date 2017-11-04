@@ -140,17 +140,15 @@ const navThemeWide = {
 const magic = 18;
 
 const styles = {
-  canvas: ({ theme }) => {
-    // See Router.js
-    return {
-      [theme.bp_moreSpacious]: {
-        backgroundColor:
-          theme.PageHeader_backgroundColor || theme.color_text_primary,
-        left: `calc(-50vw + 50% - ${parseFloat(theme.sidebarWidth) / 2}em)`, // [1]
-        right: `calc(-50vw + 50% - ${magic}%)`
-      }
-    };
-  },
+  canvas: ({ theme }) => ({
+    backgroundColor:
+      theme.PageHeader_backgroundColor || theme.color_text_primary,
+
+    [theme.bp_moreSpacious]: {
+      left: `calc(-50vw + 50% - ${parseFloat(theme.sidebarWidth) / 2}em)`, // [1]
+      right: `calc(-50vw + 50% - ${magic}%)`
+    }
+  }),
   content: ({ theme }) => ({
     padding: `0 ${theme.SectionPaddingHorizontal} ${theme.baseline_3}`,
 

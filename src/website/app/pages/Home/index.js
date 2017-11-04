@@ -81,6 +81,7 @@ const playgroundThemes = [
 
 export const heroTheme = {
   color_text: colors.white,
+  textShadow: '0 0 3px rgba(0, 0, 0, 0.8)',
 
   SiteButton_color_text: siteColors.slate_active,
 
@@ -95,6 +96,7 @@ export const heroTheme = {
 const gettingStartedTheme = {
   borderColor_focus: siteColors.yellow,
   color_text: colors.white,
+  textShadow: '0 0 3px rgba(0, 0, 0, 0.8)',
 
   SiteButton_backgroundColor_primary: siteColors.yellow,
   SiteButton_backgroundColor_primary_active: siteColors.yellow_active,
@@ -241,6 +243,7 @@ const styles = {
         theme.SiteHeading_fontSize_3_wide
       )}`,
       textAlign: 'center',
+      textShadow: theme.textShadow,
 
       [theme.bp_home_smallH3AndDown]: {
         margin: `0 0 ${getNormalizedValue(
@@ -296,10 +299,10 @@ const styles = {
         }
       },
 
-      '& > h4': {
+      '& strong': {
         lineHeight: theme.lineHeight_prose,
         fontWeight: theme.SiteHeading_fontWeight_4,
-        margin: `0 0 ${getNormalizedValue(theme.baseline_2, theme.fontSize_h4)}`
+        textShadow: theme.textShadow
       }
     },
 
@@ -423,7 +426,7 @@ const styles = {
     }
   }),
   heroCanvas: ({ theme }) => ({
-    backgroundColor: siteColors.slate,
+    backgroundColor: '#3B5663',
 
     [theme.bp_home_navCollapsedAndDown]: {
       bottom: '-14.5em' // Matches change in Header margin due to open menu
@@ -437,6 +440,7 @@ const styles = {
         pxToEm(20), // to baseline
         theme.SiteHeading_fontSize_1
       )}`,
+      textShadow: theme.textShadow,
 
       [theme.bp_moreSpacious]: {
         fontSize: theme.SiteHeading_fontSize_1_wide,
@@ -458,6 +462,8 @@ const styles = {
     },
 
     '& > p': {
+      textShadow: theme.textShadow,
+
       [theme.bp_home_navExpanded]: {
         maxWidth: pxToEm(396) // [1]
       },

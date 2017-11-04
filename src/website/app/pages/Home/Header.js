@@ -111,16 +111,17 @@ const styles = {
       }
     }
   }),
-  menuButton: {
+  menuButton: ({ theme }) => ({
     border: 0,
     position: 'relative',
+    textShadow: theme.textShadow,
     top: '0.45em', // Optical adjustment for baseline alignment with Logotype
 
     '&:focus': {
       color: colors.orange_50,
       boxShadow: 'none'
     }
-  },
+  }),
   nav: ({ theme }) => ({
     [theme.bp_home_navCollapsedAndDown]: {
       width: '100vw',
