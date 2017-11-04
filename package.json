@@ -16,9 +16,11 @@
   "main": "./dist/index.js",
   "module": "./dist/es/index.js",
   "scripts": {
-    "build": "npm run clean && ./scripts/build.js",
+    "build": "npm run clean && npm run build:package && npm run build:website",
     "build:analyze": "ANALYZE=true npm run start",
     "build:icons": "./scripts/build-icons.js",
+    "build:package": "./scripts/build-package.js",
+    "build:website": "./scripts/build-website.js",
     "clean": "rm -rf dist",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
