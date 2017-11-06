@@ -37,6 +37,17 @@ module.exports = {
         'babel-plugin-transform-react-constant-elements',
         'babel-plugin-transform-react-inline-elements'
       );
+
+      if (TARGET === 'website') {
+        plugins.push(
+          ['transform-react-remove-prop-types', {
+            'plugins': [
+              ['babel-plugin-flow-react-proptypes', { 'omitRuntimeTypeExport': true }],
+              'babel-plugin-transform-flow-strip-types'
+            ]
+          }]
+        );
+      }
     }
 
     return plugins;
