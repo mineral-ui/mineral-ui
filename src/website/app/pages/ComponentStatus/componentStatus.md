@@ -8,17 +8,15 @@ See more detailed progress on our [Waffle.io board](https://waffle.io/mineral-ui
 <Legend />
 
 <!--
-
 Labels:
-~ new
-~ experimental
+  ~ new
+  ~ experimental
 
 Statuses:
-[available]
-[planned]
-[in development]
-[deprecated]
-
+  [available]
+  [planned]
+  [in development]
+  [deprecated]
 -->
 
 | Component                                   | Status      |
@@ -31,13 +29,11 @@ Statuses:
 | [Menu](/components/menu) ~ new              | [available] |
 | [Popover](/components/popover)              | [available] |
 | [ThemeProvider](/components/theme-provider) | [available] |
-| [Utils](/components/utils)                  | [available] |
-| NumericInput                                | [planned]   |
 | Select                                      | [planned]   |
-| TextArea                                    | [planned]   |
 | TextInput                                   | [planned]   |
+| TextArea                                    | [planned]   |
 | Tooltip                                     | [planned]   |
 | DataTable                                   |             |
-| DateInput                                   |             |
+| DatePicker                                  |             |
 | Grid                                        |             |
 | Navigation                                  |             |
