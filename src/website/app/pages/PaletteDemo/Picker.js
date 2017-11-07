@@ -26,13 +26,12 @@ import Heading from '../../Heading';
 import Paragraph from '../../Paragraph';
 
 type Props = {
-  defaultColor: Colors,
+  activeColor: Colors,
   availableThemes: { [Colors]: string },
   changeTheme: Colors => void
 };
 
 type State = {
-  activeColor: Colors,
   isOpen: boolean,
   visibleThemeCount: number
 };
@@ -236,7 +235,6 @@ const Flip = ({
 
 export default class Picker extends Component<Props, State> {
   state: State = {
-    activeColor: this.props.defaultColor,
     isOpen: false,
     visibleThemeCount: 0
   };
@@ -244,8 +242,8 @@ export default class Picker extends Component<Props, State> {
   toggleInterval: ?number;
 
   render() {
-    const { availableThemes } = this.props;
-    const { activeColor, isOpen, visibleThemeCount } = this.state;
+    const { availableThemes, activeColor } = this.props;
+    const { isOpen, visibleThemeCount } = this.state;
 
     return (
       <Root>
@@ -285,7 +283,6 @@ export default class Picker extends Component<Props, State> {
 
   handleColorChange = (color: Colors) => {
     this.props.changeTheme(color);
-    this.setState({ activeColor: color });
   };
 
   open = () => {

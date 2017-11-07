@@ -23,10 +23,9 @@ import ColorRamp from './ColorRamp';
 import Picker from './Picker';
 
 type Props = {
-  activeColor: string,
+  activeColor: Colors,
   availableThemes: { [Colors]: string },
   changeTheme: Colors => void,
-  defaultColor: Colors,
   theme: { [string]: any }
 };
 
@@ -76,7 +75,6 @@ export default function ControlPanel({
   activeColor,
   availableThemes,
   changeTheme,
-  defaultColor,
   theme
 }: Props) {
   const primaries = createColorRamp('color_theme', activeColor, theme);
@@ -87,7 +85,7 @@ export default function ControlPanel({
       <ThemeProvider theme={theme}>
         <div>
           <Picker
-            defaultColor={defaultColor}
+            activeColor={activeColor}
             availableThemes={availableThemes}
             changeTheme={changeTheme}
           />
