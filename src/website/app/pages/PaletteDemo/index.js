@@ -119,7 +119,6 @@ export default class PaletteDemo extends Component<Props, State> {
       activeColor,
       availableThemes,
       theme,
-      defaultColor: mineralColor,
       changeTheme: this.handleThemeChange
     };
 
