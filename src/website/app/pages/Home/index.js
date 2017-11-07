@@ -47,7 +47,6 @@ import Link from '../../SiteLink';
 import _Markdown from '../../Markdown';
 import siteColors from '../../siteColors';
 import Header from './Header';
-import Rocks from './Rocks';
 import ThemePlayground from './ThemePlayground';
 import accessibility from './content/accessibility.md';
 import dropInComponents from './content/dropInComponents.md';
@@ -55,6 +54,7 @@ import getStarted from './content/getStarted.md';
 import guidelines from './content/guidelines.md';
 import intro from './content/intro.md';
 import themePlayground from './content/themePlayground.md';
+const floatingMineralsSvg = require('!!raw-loader!../../../public/images/minerals.svg');
 
 type Props = {};
 
@@ -217,7 +217,7 @@ const styles = {
       }
     }
   }),
-  floatingRocks: ({ theme }) => ({
+  floatingMinerals: ({ theme }) => ({
     height: 150,
     margin: `0 auto ${theme.baseline_2}`,
     width: 300,
@@ -231,6 +231,14 @@ const styles = {
       flex: `0 0 300px`,
       order: 2,
       margin: 0
+    },
+
+    '& .pile': {
+      display: 'none',
+
+      [theme.bp_home_guidelinesMultiColumn]: {
+        display: 'block'
+      }
     }
   }),
   getStarted: ({ theme }) => ({
@@ -576,8 +584,8 @@ const Feature = createStyledComponent('div', styles.feature);
 const FeatureImg = createStyledComponent('img', styles.featureImg).withProps({
   alt: ''
 });
+const FloatingMinerals = createStyledComponent('div', styles.floatingMinerals);
 const FeatureSection = createStyledComponent(Section, styles.featureSection);
-const FloatingRocks = createStyledComponent(Rocks, styles.floatingRocks);
 const GetStarted = createStyledComponent(Markdown, styles.getStarted);
 const GetStartedBackgrounds = createStyledComponent(
   'div',
@@ -704,9 +712,9 @@ export default class Home extends Component<Props, State> {
                 playgroundThemes[themeIndex].color_theme_60
               )}
               point={navExpanded ? '75%' : '99.999%'}>
-              <Media query="(min-width: 61em)">
-                {navExpanded => <FloatingRocks showRockPile={navExpanded} />}
-              </Media>
+              <FloatingMinerals
+                dangerouslySetInnerHTML={{ __html: floatingMineralsSvg }}
+              />
               <Guidelines scope={{ CTALink, IconChevronRight }}>
                 {guidelines}
               </Guidelines>
