@@ -25,17 +25,18 @@ import { mineralTheme, ThemeProvider } from '../../themes';
 import BaselineGrid from './BaselineGrid';
 import Router from './Router';
 import siteColors from './siteColors';
-import createKeyMap from './utils/createKeyMap';
 
 declare var GOOGLE_TRACKING_ID: string;
 
 type Props = {
   children?: any,
   className?: string,
-  demos: Object | Array<Object>,
+  demoRoutes: { [string]: DemoRoute },
   history: Object,
   location?: any
 };
+
+type DemoRoute = { slug: string, title: string };
 
 const siteTheme = {
   baseline_1: pxToEm(12),
@@ -137,11 +138,7 @@ class App extends Component<Props> {
   }
 
   render() {
-    const { demos } = this.props;
-
-    const siteDemos = Array.isArray(demos)
-      ? createKeyMap(demos, 'slug')
-      : demos;
+    const { demoRoutes } = this.props;
 
     return (
       <ThemeProvider theme={siteTheme}>
@@ -153,7 +150,7 @@ class App extends Component<Props> {
               path="/:url*"
               render={props => <Redirect to={`${props.location.pathname}/`} />}
             />
-            <Route render={() => <Router demos={siteDemos} />} />
+            <Route render={() => <Router demoRoutes={demoRoutes} />} />
           </Switch>
           <BaselineGrid />
         </div>

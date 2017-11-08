@@ -15,14 +15,7 @@
  */
 
 /* @flow */
-import GettingStarted from './GettingStarted';
-import Styling from './Styling';
-import Theming from './Theming';
-import Color from './Color';
-import Typography from './Typography';
-import ComponentStatus from './ComponentStatus';
-import Roadmap from './Roadmap';
-import PaletteDemo from './PaletteDemo';
+import Loadable from '../Loadable';
 
 type Page = {
   component: React$ComponentType<*>,
@@ -44,17 +37,23 @@ const sections: Array<Section> = [
     heading: 'Guidelines',
     pages: [
       {
-        component: GettingStarted,
+        component: Loadable({
+          loader: () => import('./GettingStarted')
+        }),
         path: '/getting-started',
         title: 'Getting Started'
       },
       {
-        component: Color,
+        component: Loadable({
+          loader: () => import('./Color')
+        }),
         path: '/color',
         title: 'Color'
       },
       {
-        component: Typography,
+        component: Loadable({
+          loader: () => import('./Typography')
+        }),
         path: '/typography',
         title: 'Typography'
       }
@@ -64,12 +63,16 @@ const sections: Array<Section> = [
     heading: 'What’s New',
     pages: [
       {
-        component: ComponentStatus,
+        component: Loadable({
+          loader: () => import('./ComponentStatus')
+        }),
         path: '/component-status',
         title: 'Component Status'
       },
       {
-        component: Roadmap,
+        component: Loadable({
+          loader: () => import('./Roadmap')
+        }),
         path: '/roadmap',
         title: 'Roadmap'
       }
@@ -79,17 +82,23 @@ const sections: Array<Section> = [
     heading: 'Customization',
     pages: [
       {
-        component: Styling,
+        component: Loadable({
+          loader: () => import('./Styling')
+        }),
         path: '/styling',
         title: 'Styling'
       },
       {
-        component: Theming,
+        component: Loadable({
+          loader: () => import('./Theming')
+        }),
         path: '/theming',
         title: 'Theming'
       },
       {
-        component: PaletteDemo,
+        component: Loadable({
+          loader: () => import('./PaletteDemo')
+        }),
         path: '/palette-demo',
         title: 'Palette Demo'
       }

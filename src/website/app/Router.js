@@ -17,16 +17,21 @@
 /* @flow */
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import startCase from 'lodash.startcase';
 import ComponentDocExample from './ComponentDocExample';
-import Home from './pages/Home';
 import Page from './Page';
 import sections from './pages';
 import ComponentDoc from './pages/ComponentDoc';
+import Loadable from './Loadable';
 
 type Props = {
-  demos: Object
+  demoRoutes: { [string]: DemoRoute }
 };
+
+type DemoRoute = { slug: string, title: string };
+
+const AsyncHome = Loadable({
+  loader: () => import('./pages/Home')
+});
 
 const getPageHeader = (heading: string, title: string) => {
   return `${heading}
@@ -34,7 +39,7 @@ const getPageHeader = (heading: string, title: string) => {
 # ${title}`;
 };
 
-export default function Router({ demos }: Props) {
+export default function Router({ demoRoutes }: Props) {
   const routes = sections
     .map((section, sectionIndex) => {
       return section.pages.map((page, pageIndex) => (
@@ -48,7 +53,7 @@ export default function Router({ demos }: Props) {
             };
             const pageProps = {
               headerContent: getPageHeader(section.heading, page.title),
-              demos,
+              demoRoutes,
               pageMeta,
               type: sectionIndex
             };
@@ -68,39 +73,44 @@ export default function Router({ demos }: Props) {
 
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route path="/" exact component={AsyncHome} />
       {routes}
       <Route
         path="/components/:componentId/:exampleId"
         render={route => {
           const { componentId, exampleId } = route.match.params;
-          const selectedDemo = demos[componentId];
-          const selectedExample = selectedDemo.examples.find(
-            example => example.id === exampleId
-          );
+          const selectedDemo = demoRoutes[componentId || 'button'];
           const chromeless = route.location.search === '?chromeless';
-          const pageMeta = {
-            title: `${selectedDemo.title} ${startCase(
-              selectedExample.id
-            )} | Mineral UI`,
-            canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}/${selectedExample.id}`
-          };
           const pageProps = {
             chromeless,
-            demos,
-            pageMeta
+            demoRoutes,
+            pageMeta: {
+              title: `${selectedDemo.title} | Mineral UI`
+            }
           };
-          const exampleProps = {
-            chromeless,
-            componentName: selectedDemo.title,
-            demos,
-            standalone: true,
-            ...selectedExample
-          };
+
+          const AsyncComponentDocExample = Loadable({
+            loader: () => import('./demos/index'),
+            render({ default: fullDemos }: Object) {
+              const selectedFullDemo = fullDemos[componentId];
+              const selectedExample = selectedFullDemo.examples.find(
+                example => example.id === exampleId
+              );
+
+              const exampleProps = {
+                chromeless,
+                componentName: selectedFullDemo.title,
+                standalone: true,
+                ...selectedExample
+              };
+
+              return <ComponentDocExample {...exampleProps} />;
+            }
+          });
 
           return (
             <Page {...pageProps}>
-              <ComponentDocExample {...exampleProps} />
+              <AsyncComponentDocExample />
             </Page>
           );
         }}
@@ -108,20 +118,28 @@ export default function Router({ demos }: Props) {
       <Route
         path="/components/:componentId"
         render={route => {
-          const componentId = route.match.params.componentId;
-          const selectedDemo = demos[componentId];
+          const componentId = route.match.params.componentId || 'button';
+          const selectedDemo = demoRoutes[componentId];
           const pageMeta = {
             title: `${selectedDemo.title} | Mineral UI`,
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`
           };
           const pageProps = {
-            demos,
+            demoRoutes,
             headerContent: getPageHeader('Components', selectedDemo.title),
             pageMeta
           };
+
+          const AsyncComponentDoc = Loadable({
+            loader: () => import('./demos/index'),
+            render({ default: fullDemos }: Object) {
+              return <ComponentDoc {...fullDemos[componentId]} />;
+            }
+          });
+
           return (
             <Page {...pageProps}>
-              <ComponentDoc {...selectedDemo} />
+              <AsyncComponentDoc />
             </Page>
           );
         }}

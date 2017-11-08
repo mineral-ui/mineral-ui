@@ -51,7 +51,6 @@ Cards represent a gateway to more detailed information in another app view.`
     doc: cardBlockDoc,
     examples: cardBlockExamples,
     slug: 'card-block',
-    subcomponent: true,
     title: 'CardBlock',
     whenHowToUse: `CardBlock is used to help lay out content that's not a [title](../card-title) or an [image](../card-image) in the body of the [Card](../card).
 
@@ -62,7 +61,6 @@ Try not to put inline links in your content. Create purposeful calls to action w
     doc: cardImageDoc,
     examples: cardImageExamples,
     slug: 'card-image',
-    subcomponent: true,
     title: 'CardImage',
     whenHowToUse: `CardImage is used when you want to reinforce the intent of the Card.
 Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](../card-title).
@@ -75,7 +73,6 @@ If you are putting text over top of the CardImage, use a solid color or an image
     doc: cardTitleDoc,
     examples: cardTitleExamples,
     slug: 'card-title',
-    subcomponent: true,
     title: 'CardTitle',
     whenHowToUse: `Use a CardTitle when you need a consistently styled headings for your [Card](../card).
 Use a subtitle to provide supporting information for the data displayed in the Card.`

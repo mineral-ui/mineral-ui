@@ -15,16 +15,14 @@
  */
 
 /* @flow */
-import Loadable from '../../../Loadable';
+import _Loadable from 'react-loadable';
+import Loading from './Loading';
 
-const CategoryIndex = Loadable({
-  loader: () => import('../components/CategoryIndex')
-});
-
-export default {
-  id: 'categories',
-  title: 'Icons by Category',
-  hideSource: true,
-  scope: { CategoryIndex },
-  source: `<CategoryIndex />`
-};
+export default function Loadable(options: Object) {
+  return _Loadable({
+    delay: 500,
+    loading: Loading,
+    timeout: 10000,
+    ...options
+  });
+}

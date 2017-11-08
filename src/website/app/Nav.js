@@ -26,9 +26,11 @@ import siteColors from './siteColors';
 import sections from './pages';
 
 type Props = {
-  demos: Object,
+  demoRoutes: { [string]: DemoRoute },
   contextualTheme?: Object
 };
+
+type DemoRoute = { slug: string, title: string };
 
 const styles = {
   heading: {
@@ -117,13 +119,17 @@ const pages = sections.map((section, index) => {
   );
 });
 
-export default function Nav({ demos, contextualTheme, ...restProps }: Props) {
+export default function Nav({
+  demoRoutes,
+  contextualTheme,
+  ...restProps
+}: Props) {
   const rootProps = { ...restProps };
 
-  const demoLinks = Object.keys(demos).map(slug => {
-    const demo = demos[slug];
+  const demoLinks = Object.keys(demoRoutes).map(slug => {
+    const demo = demoRoutes[slug];
     return (
-      <ListItem key={slug} isSubcomponent={demo.subcomponent}>
+      <ListItem key={slug}>
         <Link to={`/components/${slug}`}>{demo.title}</Link>
       </ListItem>
     );
