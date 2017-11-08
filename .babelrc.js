@@ -29,8 +29,13 @@ module.exports = {
       'polished',
       'transform-object-rest-spread',
       'transform-class-properties',
-      'flow-react-proptypes'
+      'flow-react-proptypes',
+      'syntax-dynamic-import'
     ];
+
+    if (NODE_ENV === 'test') {
+      plugins.push('dynamic-import-node');
+    }
 
     if (NODE_ENV === 'production') {
       plugins.push(

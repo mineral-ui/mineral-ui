@@ -42,7 +42,7 @@ import { heroTheme } from './pages/Home/index';
 type Props = {
   children: React$Node,
   chromeless?: boolean,
-  demos?: Object,
+  demoRoutes?: { [string]: DemoRoute },
   headerContent?: React$Node,
   pageMeta?: {
     canonicalLink?: string,
@@ -50,6 +50,8 @@ type Props = {
   },
   type?: number
 };
+
+type DemoRoute = { slug: string, title: string };
 
 type State = {
   isNavOpen: boolean
@@ -397,6 +399,9 @@ const styles = {
           }
         }
       : null;
+  },
+  wrapInner: {
+    minHeight: `calc(100vh - ${pxToEm(39)})` // Footer height
   }
 };
 
@@ -415,6 +420,7 @@ const MenuButton = createStyledComponent(Button, styles.menuButton).withProps({
 });
 const Nav = createStyledComponent(_Nav, styles.nav, { filterProps: ['wide'] });
 const Wrap = createStyledComponent('div', styles.wrap);
+const WrapInner = createStyledComponent('div', styles.wrapInner);
 
 export default class Page extends Component<Props, State> {
   state: State = {
@@ -429,7 +435,7 @@ export default class Page extends Component<Props, State> {
     const {
       children,
       chromeless,
-      demos,
+      demoRoutes,
       headerContent,
       pageMeta,
       type,
@@ -445,7 +451,9 @@ export default class Page extends Component<Props, State> {
 
     const helmetItems = pageMeta && (
       <Helmet>
-        <link rel="canonical" href={pageMeta.canonicalLink} />
+        {pageMeta.canonicalLink && (
+          <link rel="canonical" href={pageMeta.canonicalLink} />
+        )}
         <title>{pageMeta.title}</title>
       </Helmet>
     );
@@ -465,7 +473,7 @@ export default class Page extends Component<Props, State> {
                   inDialog
                   onClick={this.close.bind(this)}
                 />
-                <Nav demos={demos} contextualTheme={navTheme} />
+                <Nav demoRoutes={demoRoutes} contextualTheme={navTheme} />
               </Dialog>
             </div>
           );
@@ -497,25 +505,31 @@ export default class Page extends Component<Props, State> {
               {helmetItems}
               {navNarrow(moreSpacious)}
               <Wrap {...wrapProps}>
-                {headerContent && (
-                  <ThemeProvider theme={heroTheme}>
-                    <Header
-                      angles={moreSpacious ? [5, 6] : [4, 4]}
-                      as="header"
-                      point={1 / 1000}>
-                      <Canvas />
-                      {typeof headerContent === 'string' ? (
-                        <Markdown>{headerContent}</Markdown>
-                      ) : (
-                        headerContent
-                      )}
-                    </Header>
-                  </ThemeProvider>
-                )}
-                {moreSpacious && (
-                  <Nav demos={demos} contextualTheme={navThemeWide} wide />
-                )}
-                <Content>{children}</Content>
+                <WrapInner>
+                  {headerContent && (
+                    <ThemeProvider theme={heroTheme}>
+                      <Header
+                        angles={moreSpacious ? [5, 6] : [4, 4]}
+                        as="header"
+                        point={1 / 1000}>
+                        <Canvas />
+                        {typeof headerContent === 'string' ? (
+                          <Markdown>{headerContent}</Markdown>
+                        ) : (
+                          headerContent
+                        )}
+                      </Header>
+                    </ThemeProvider>
+                  )}
+                  {moreSpacious && (
+                    <Nav
+                      demoRoutes={demoRoutes}
+                      contextualTheme={navThemeWide}
+                      wide
+                    />
+                  )}
+                  <Content>{children}</Content>
+                </WrapInner>
                 <Footer />
               </Wrap>
             </Root>

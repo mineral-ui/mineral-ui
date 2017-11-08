@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import Icon from '../../../../../Icon';
+import Icon from '../../../../../Icon/Icon';
 
 export default {
   id: 'custom',
@@ -23,7 +23,7 @@ export default {
   description: `You can render a custom icon by supplying an SVG as a child to Icon.
 The default export from the \`Icon\` package is the custom wrapper.
 
-\`import Icon from 'mineral-ui/Icon'\``,
+\`import Icon from 'mineral-ui/Icon/Icon'\``,
   scope: { Icon },
   source: `
     <Icon size="7em" title="CA Technologies">

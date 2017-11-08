@@ -72,9 +72,9 @@ const latestPost = {
 };
 
 const playgroundThemes = [
-  { name: 'Magenta', ...createTheme('magenta') },
-  { name: 'Purple', ...createTheme('purple') },
-  { name: 'Indigo', ...createTheme('indigo') }
+  { name: 'Magenta', ...createTheme('magenta', { fontFamily: null }) },
+  { name: 'Purple', ...createTheme('purple', { fontFamily: null }) },
+  { name: 'Indigo', ...createTheme('indigo', { fontFamily: null }) }
 ];
 
 const homeTheme = {
@@ -748,10 +748,10 @@ export default class Home extends Component<Props, State> {
                   themes={playgroundThemes}>
                   <Media query="(min-width: 23em)">
                     {navExpanded => {
-                      const PlaygroundButton = createStyledComponent(
-                        Button,
-                        styles.button
-                      ).withProps({
+                      const PlaygroundButton = createStyledComponent(Button, {
+                        ...styles.button,
+                        fontFamily: 'inherit'
+                      }).withProps({
                         element: Link,
                         iconStart: navExpanded ? <IconFavorite /> : undefined,
                         primary: true,

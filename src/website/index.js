@@ -22,7 +22,7 @@ import { simulations } from 'glamor';
 import 'babel-polyfill';
 import ThemeProvider from '../themes/ThemeProvider';
 import App from './app/App';
-import demos from './app/demos';
+import demoRoutes from './app/demos/routes';
 require('./index.css');
 require('./app/utils/prismTheme.css');
 
@@ -32,7 +32,7 @@ simulations(true);
 render(
   <BrowserRouter>
     <ThemeProvider>
-      <App demos={demos} />
+      <App demoRoutes={demoRoutes} />
     </ThemeProvider>
   </BrowserRouter>,
   global.document.getElementById('app')
