@@ -36,6 +36,7 @@
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
     "start": "webpack-dev-server --progress",
+    "svg": "reload --port 6060 --browser --exts svg --start-page src/website/public/images/minerals.svg",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
   "config": {
@@ -122,6 +123,7 @@
     "react-router-dom": "4.2.2",
     "react-test-renderer": "15.6.1",
     "react-transition-group": "2.2.1",
+    "reload": "2.2.2",
     "rimraf": "2.6.2",
     "style-loader": "0.19.0",
     "svgo": "0.7.2",
