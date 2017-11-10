@@ -76,11 +76,7 @@ const linkStyles = ({ variant, theme: baseTheme }) => {
 };
 
 /**
- * The Link component creates a hyperlink to external pages, files, anchors on the same page or another URL.
- * Links trigger an action, select an option, or provide a gateway to more information.
- * Links are used to reduce clutter on a page when there are potentially many actions available.
- *
- * Links with clear messaging and an appropriate variant applied communicate intention effectively.
+ * The Link component creates a hyperlink to external pages, files, anchors on the same page, or another URL.
  */
 export default function Link({
   children,

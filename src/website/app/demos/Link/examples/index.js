@@ -18,8 +18,8 @@
 import link from './link';
 import button from './button';
 import children from './children';
-import reactRouter from './reactRouter';
+import other from './other';
 import states from './states';
 import variants from './variants';
 
-export default [link, children, variants, button, reactRouter, states];
+export default [link, children, variants, button, other, states];
