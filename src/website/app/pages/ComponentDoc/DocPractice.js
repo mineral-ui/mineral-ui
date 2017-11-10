@@ -70,7 +70,7 @@ const styles = {
       flex: `1 1 ${5 / 12 * 100}%`
     },
 
-    '& > [role="icon"]': {
+    '& > [role="img"]': {
       backgroundColor:
         type === 'do'
           ? rgba(theme.borderColor_success, 0.2)
