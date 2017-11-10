@@ -308,7 +308,7 @@ const styles = {
       backgroundColor: siteColors.slateDarker_active
     },
 
-    '& [role="icon"]': {
+    '& [role="img"]': {
       fill: theme.color_white
     }
   }),

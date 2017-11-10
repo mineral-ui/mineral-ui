@@ -30,7 +30,7 @@ export default createStyledComponent(
       outline: '1px dotted currentColor'
     },
 
-    '& > [role="icon"]': {
+    '& > [role="img"]': {
       marginRight: theme.space_inline_xs
     }
   }),
