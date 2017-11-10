@@ -213,7 +213,7 @@ const styles = {
       },
       '&::-moz-focus-inner': { border: 0 },
 
-      '& [role="icon"]': {
+      '& [role="img"]': {
         boxSizing: 'content-box',
         fill:
           disabled || primary || minimal || variant !== 'regular'
