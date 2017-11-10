@@ -70,16 +70,15 @@ export default class Icon extends Component<Props> {
 
   props: Props;
 
-  uniqueId: string = generateId();
+  id: string = `icon-${generateId()}`;
 
   render() {
-    const { size, title, children, ...restProps } = this.props;
-    const titleElementId = `Icon-title-${this.uniqueId}`;
+    const { title, children, ...restProps } = this.props;
+    const titleElementId = `icon-title-${this.id}`;
     const rootProps = {
       'aria-hidden': title ? null : true,
       'aria-labelledby': title && titleElementId,
-      role: 'icon',
-      size,
+      role: 'img',
       viewBox: '0 0 24 24',
       ...restProps
     };

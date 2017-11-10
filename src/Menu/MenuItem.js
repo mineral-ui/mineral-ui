@@ -138,7 +138,7 @@ const styles = {
         backgroundColor: !disabled && theme.MenuItem_backgroundColor_active
       },
 
-      '& [role="icon"]': {
+      '& [role="img"]': {
         boxSizing: 'content-box',
         display: 'block',
         fill:
