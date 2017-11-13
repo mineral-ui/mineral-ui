@@ -16,6 +16,7 @@
 
 /* @flow */
 import React from 'react';
+import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent, pxToEm } from '../../../../styles';
 import IconCheck from '../../../../Icon/IconCheck';
 import { ThemeProvider } from '../../../../themes';
@@ -36,10 +37,14 @@ type OptionProps = {
 };
 
 const styles = {
-  root: ({ theme }) => ({
+  root: ({ theme, themes, index }) => ({
     marginTop: theme.space_stack_xl,
     position: 'relative', // for z-index
     zIndex: 2,
+
+    '& ::selection': {
+      backgroundColor: rgba(themes[index].color_text_primary, 0.2)
+    },
 
     '@media(min-width: 23em)': {
       display: 'flex',
@@ -118,7 +123,7 @@ const styles = {
   optionIcon: ({ isActive, theme, themes, thisIndex }) => ({
     backgroundColor: themes[thisIndex].color_theme_60,
     borderRadius: theme.borderRadius_1,
-    boxSizing: 'content-box',
+    boxSizing: 'content-box !important', // This needs to win over `.class *` from componentStyleReset
     flex: '0 0 auto',
     fill: isActive ? theme.color_white : 'transparent',
     marginRight: theme.space_inline_xs,
@@ -238,6 +243,8 @@ export default function ThemePlaygound({
   ...restProps
 }: Props) {
   const rootProps = {
+    index,
+    themes,
     ...restProps
   };
   return (

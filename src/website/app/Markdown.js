@@ -189,10 +189,6 @@ const styles = {
       }
     },
 
-    '& > p a:link': {
-      fontWeight: theme.fontWeight_semiBold
-    },
-
     // Specificity silliness due to having to style markdown content off of the
     // container
     '& h2,& h3,& h4,& h5,& h6': {

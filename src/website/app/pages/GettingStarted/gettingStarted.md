@@ -46,7 +46,7 @@ render(<App />, document.getElementById('app'));
   <p key="one">Your app must be wrapped in a <code key="two">ThemeProvider</code> at its root
   in order for the styles to apply correctly.</p>
 
-  <p key="three">Also, please see our <a key="four" href="https://github.com/mineral-ui/mineral-ui/tree/master/docs/import-syntax.md">import syntax guidelines</a>.</p>
+  <p key="three">Also, please see our <a key="four" target="_blank" href="https://github.com/mineral-ui/mineral-ui/tree/master/docs/import-syntax.md">import syntax guidelines</a>.</p>
 </Callout>
 
 ### Open Sans Font

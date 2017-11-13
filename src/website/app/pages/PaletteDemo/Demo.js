@@ -26,7 +26,7 @@ import IconQuestionAnswer from '../../../../Icon/IconQuestionAnswer';
 import IconDirectionsBoat from '../../../../Icon/IconDirectionsBoat';
 import IconSpa from '../../../../Icon/IconSpa';
 import IconShoppingCart from '../../../../Icon/IconShoppingCart';
-import Link from '../../../../Link';
+import _Link from '../../../../Link';
 import Menu from '../../../../Menu';
 import Markdown from '../../Markdown';
 import Paragraph from '../../Paragraph';
@@ -98,6 +98,8 @@ const Icon3 = createStyledComponent(IconDirectionsBoat, styles.icon);
 const InlineText = createStyledComponent(Paragraph, styles.paragraph);
 const MenuContainer = createStyledComponent('div', styles.menuContainer);
 
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
+
 export default function Demo({ theme }: Props) {
   return (
     <Root>
@@ -113,7 +115,7 @@ export default function Demo({ theme }: Props) {
               <CardBlock>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 mattis pretium massa.{' '}
-                <Link href="https://mineral-ui.com">Aliquam</Link> erat
+                <Link href="https://example.com.com">Aliquam</Link> erat
                 volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin.
                 Nunc lacinia auctor quam sed pellentesque.
               </CardBlock>
@@ -123,7 +125,7 @@ export default function Demo({ theme }: Props) {
           <Button size="jumbo" circular iconStart={<IconBatteryCharging50 />} />
           <Button size="jumbo" iconStart={<IconShoppingCart />} />
           <InlineText variant="prose">
-            A link to <Link href="https://mineral-ui.com">mineral-ui.com</Link>.
+            A link to <Link href="https://example.com.com">example.com</Link>.
           </InlineText>
           <DropdownContainer>
             <Dropdown

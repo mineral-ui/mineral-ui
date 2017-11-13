@@ -38,9 +38,11 @@ const styles = {
   },
   link: ({ theme }) => ({
     display: 'block',
+    fontWeight: theme.fontWeight_regular,
     // top & bottom: results of `getNormalizedValue(pxToEm(5), theme.fontSize_ui)`
     // (6px for bottom), rounded down for baseline alignment
     padding: '0.35em 0 0.4em',
+    textDecoration: 'none',
 
     '&.active': {
       color: theme.color_text_primary

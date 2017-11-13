@@ -15,9 +15,12 @@
  */
 
 /* @flow */
+import React from 'react';
 import { simulate } from 'glamor';
 import { createStyledComponent } from '../../../../../styles';
-import Link from '../../../../../Link';
+import _Link from '../../../../../Link';
+
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
 const DemoLayout = createStyledComponent('div', {
   '& > a': {

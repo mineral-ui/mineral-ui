@@ -44,7 +44,7 @@ export default {
           </Menu>
         </DemoLayout>
       ),
-      description: `Match Mineral UI's [pre-defined variants](/color/#color-variants) with semantic purpose.`,
+      description: `Match Mineral UI's [pre-defined variants](/color/#guidelines-variants) with semantic purpose.`,
       backgroundColor
     },
     {

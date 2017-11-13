@@ -151,7 +151,6 @@ const styles = {
   canvas: ({ theme }) => ({
     backgroundColor:
       theme.PageHeader_backgroundColor || theme.color_text_primary,
-    transform: 'scaleX(-1)',
 
     [theme.bp_moreSpacious]: {
       left: `calc(-50vw + 50% - ${parseFloat(theme.sidebarWidth) / 2}em)`, // [1]
@@ -187,6 +186,11 @@ const styles = {
         [theme.bp_moreSpacious]: {
           fontSize: pxToEm(24),
           maxWidth: getNormalizedValue(theme.maxTextWidth, pxToEm(24))
+        },
+
+        '& a > [role="img"]': {
+          borderBottomWidth: 2,
+          top: 4
         }
       },
 
@@ -208,7 +212,12 @@ const styles = {
           color: 'inherit',
           fontSize: theme.fontSize_prose,
           fontWeight: 'inherit',
-          maxWidth: theme.maxTextWidth
+          maxWidth: theme.maxTextWidth,
+
+          '& a > [role="img"]': {
+            borderBottomWidth: 1,
+            top: 2
+          }
         }
       }
     }
@@ -325,7 +334,7 @@ const styles = {
           width: theme.sidebarWidth,
 
           '@supports(position:sticky)': {
-            maxHeight: `calc(100vh - ${pxToEm(39)})`, // Footer height
+            maxHeight: '100vh',
             position: 'sticky'
           },
 
@@ -386,7 +395,7 @@ const styles = {
     fontFamily: theme.fontFamily_system,
 
     '& ::selection': {
-      backgroundColor: rgba(lighten(0.3, theme.color_text_primary), 0.4)
+      backgroundColor: rgba(theme.color_text_primary, 0.2)
     }
   }),
   wrap: ({ isNavOpen, theme }) => {

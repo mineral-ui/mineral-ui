@@ -65,7 +65,9 @@ const siteTheme = {
 
   maxContentWidth: '70em',
   maxTextWidth: '50em',
+  navLink_color_active_narrow: lighten(0.12, siteColors.jade),
   sidebarWidth: pxToEm(200), // 180 + 20 for scrollbar
+  textShadow: '2px 2px 2px rgba(0,0,0,0.2)',
 
   borderColor: siteColors.slate,
   borderColor_focus: siteColors.jade,
@@ -73,8 +75,6 @@ const siteTheme = {
   color_text_primary: siteColors.jade,
   fontFamily: null,
   fontFamily_headline: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
-
-  navLink_color_active_narrow: lighten(0.12, siteColors.jade),
 
   SectionPaddingHorizontal: pxToEm(30),
   SectionPaddingHorizontalWide: pxToEm(100),

@@ -16,7 +16,14 @@
 
 /* @flow */
 import React from 'react';
-import Link from '../../../../Link';
+import _Link from '../../../../Link';
+
+const Link = ({ href, ...restProps }: { href?: string }) => (
+  <_Link
+    target={href && href.startsWith('http') ? '_blank' : undefined}
+    {...restProps}
+  />
+);
 
 export default [
   {
@@ -25,7 +32,7 @@ export default [
     example: (
       <div>
         <p>
-          <Link href="https://mineral-ui.com">Lorem ipsum</Link> dolor sit amet,
+          <Link href="https://example.com">Lorem ipsum</Link> dolor sit amet,
           consectetur adipiscing elit. Donec mattis pretium massa. Aliquam erat
           volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin.
         </p>
