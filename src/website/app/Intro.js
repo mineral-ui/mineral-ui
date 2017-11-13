@@ -29,6 +29,11 @@ export default createStyledComponent(Markdown, ({ theme }) => ({
     fontWeight: '300',
     maxWidth: getNormalizedValue(theme.maxTextWidth, pxToEm(20)),
 
+    '& a > [role="img"]': {
+      borderBottomWidth: 2,
+      top: 4
+    },
+
     [theme.bp_moreSpacious]: {
       fontSize: pxToEm(24),
       maxWidth: getNormalizedValue(theme.maxTextWidth, pxToEm(24))

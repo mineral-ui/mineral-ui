@@ -82,7 +82,8 @@ export default function DocThemeVariables({
       </DocSectionTitle>
       <Markdown>
         {`These variables can be used as hooks to override this component's
-          style at either a [local](/theming/#theming-common-scenarios-theme-a-component)
+          style at either a
+          [local](/theming/#common-scenarios-theme-your-entire-app-theme-a-component)
           or [global](/theming/#theming-common-scenarios-theme-your-entire-app)
           level. The \`theme\` referenced below is whatever theme is available
           from props to the instance of this component.`}

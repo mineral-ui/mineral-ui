@@ -15,8 +15,11 @@
  */
 
 /* @flow */
+import React from 'react';
 import { createStyledComponent } from '../../../../../styles';
-import Link from '../../../../../Link';
+import _Link from '../../../../../Link';
+
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
 const Big = createStyledComponent('p', { fontSize: '1.5em' });
 const Bold = createStyledComponent('p', { fontWeight: 700 });

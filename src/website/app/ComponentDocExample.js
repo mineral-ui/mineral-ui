@@ -89,6 +89,16 @@ const styles = {
         pxToEm(80), // to baseline
         theme.SiteHeading_fontSize_3_wide
       )
+    },
+
+    '& > a:link': {
+      color: 'inherit',
+      fontWeight: 'inherit',
+      textDecoration: 'none',
+
+      '&:hover': {
+        textDecoration: 'underline'
+      }
     }
   })
 };

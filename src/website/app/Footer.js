@@ -41,6 +41,10 @@ const Root = createStyledComponent(
     backgroundColor: theme.color_black,
     color: theme.color_gray_40,
 
+    '& ::selection': {
+      backgroundColor: 'rgba(255,255,255,0.2)'
+    },
+
     // Inner
     '& > div': {
       paddingBottom: 1, // To prevent margin collapse

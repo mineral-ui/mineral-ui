@@ -19,8 +19,8 @@ import React, { Component } from 'react';
 import Media from 'react-media';
 import Helmet from 'react-helmet';
 import { canUseDOM } from 'exenv';
+import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
-import lighten from 'polished/lib/color/lighten';
 import rgba from 'polished/lib/color/rgba';
 import colors from '../../../../colors';
 import {
@@ -62,7 +62,8 @@ type State = {
 };
 
 const pageMeta = {
-  canonicalLink: 'https://mineral-ui.com'
+  canonicalLink: 'https://mineral-ui.com',
+  title: 'Mineral UI'
 };
 
 const latestPost = {
@@ -95,9 +96,8 @@ const homeTheme = {
 };
 export const heroTheme = {
   color_text: colors.white,
-  textShadow: '0 0 3px rgba(0, 0, 0, 0.8)',
 
-  SiteButton_color_text: siteColors.slateDarker,
+  SiteButton_color_text: darken(0.04, siteColors.slateDarker),
 
   SiteHeading_color_2: colors.white,
 
@@ -108,10 +108,8 @@ export const heroTheme = {
   SiteLink_color_hover: colors.white
 };
 const gettingStartedTheme = {
-  borderColor_focus: siteColors.yellow,
   color_text: colors.white,
   color_text_primary: siteColors.yellow,
-  textShadow: '0 0 3px rgba(0, 0, 0, 0.8)',
 
   SiteButton_backgroundColor_primary: siteColors.yellow,
   SiteButton_backgroundColor_primary_active: siteColors.yellow_active,
@@ -147,16 +145,18 @@ const CTALinkTheme = {
 const styles = {
   blogLink: ({ theme }) => ({
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.4)',
+    backgroundColor: 'rgba(0,0,0,0.3)',
     borderRadius: theme.borderRadius_1,
     display: 'inline-flex',
     fontFamily: theme.fontFamily_headline,
+    fontWeight: theme.fontWeight_regular,
     marginBottom: theme.baseline_6,
     padding: `${parseFloat(theme.space_inset_sm) / 2}em
       ${theme.space_inset_sm}`,
+    textDecoration: 'none',
 
     '&:hover,&:focus': {
-      backgroundColor: 'rgba(0,0,0,0.2)',
+      backgroundColor: 'rgba(0,0,0,0.1)',
       textDecoration: 'none'
     },
 
@@ -174,8 +174,8 @@ const styles = {
       textTransform: 'uppercase'
     },
 
-    '& > svg': {
-      flex: '0 0 auto'
+    '& > [role="img"]': {
+      display: 'none'
     }
   }),
   button: ({ theme }) => ({
@@ -350,13 +350,7 @@ const styles = {
     },
 
     '& > :nth-child(2)': {
-      background: `repeating-linear-gradient(
-        -45deg,
-        rgba(255,255,255,0.025),
-        rgba(255,255,255,0.025) 1px,
-        rgba(0,0,0,0) 1px,
-        rgba(0,0,0,0) 6px
-      ), linear-gradient(
+      background: `linear-gradient(
         rgba(0,0,0,0.4),
         ${theme.color_gray_100} 75%
       )`
@@ -385,6 +379,10 @@ const styles = {
   }),
   getStartedSection: ({ theme }) => ({
     position: 'relative',
+
+    '& ::selection': {
+      backgroundColor: 'rgba(255,255,255,0.2)'
+    },
 
     // Inner
     '& > div': {
@@ -439,26 +437,27 @@ const styles = {
       }
     }
   }),
-  hero: ({ theme }) => ({
-    // Inner
-    '> div': {
-      paddingTop: 0,
+  hero: {
+    '& ::selection': {
+      backgroundColor: 'rgba(255,255,255,0.2)'
+    },
 
-      [theme.bp_home_navExpanded]: {
-        justifyContent: 'space-between'
-      }
+    // Inner
+    '& > div': {
+      paddingTop: 0
     }
-  }),
+  },
   heroCanvas: ({ theme }) => ({
-    backgroundColor: '#3B5663',
+    backgroundColor: 'hsl(199,35%,31%)',
 
     [theme.bp_home_navCollapsedAndDown]: {
+      backgroundColor: 'hsl(199,35%,26%)',
       bottom: '-14.5em' // Matches change in Header margin due to open menu
     }
   }),
   home: ({ theme }) => ({
     '& ::selection': {
-      backgroundColor: rgba(lighten(0.3, theme.color_text_primary), 0.4)
+      backgroundColor: rgba(theme.color_text_primary, 0.2)
     }
   }),
   intro: ({ theme }) => ({
@@ -673,6 +672,7 @@ export default class Home extends Component<Props, State> {
             <Root>
               <Helmet>
                 <link rel="canonical" href={pageMeta.canonicalLink} />
+                <title>{pageMeta.title}</title>
               </Helmet>
 
               <ThemeProvider theme={heroTheme}>
@@ -700,7 +700,6 @@ export default class Home extends Component<Props, State> {
                           navExpanded && (
                             <BlogLink href={latestPost.url}>
                               {latestPost.title}
-                              <IconChevronRight size="large" />
                             </BlogLink>
                           )}
                         <Intro>{intro}</Intro>

@@ -26,7 +26,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `MenuItems with Icons are reversed when the \`direction\` theme variable is set to \`rtl\` (right-to-left).
-A subset of Icons that [convey directionality](./icon#rtl) will be reversed.`,
+A subset of Icons that [convey directionality](../icon/#rtl) will be reversed.`,
   scope: { DemoLayout, IconHelp, Menu, MenuItem, ThemeProvider },
   source: `
     <DemoLayout dir="rtl">

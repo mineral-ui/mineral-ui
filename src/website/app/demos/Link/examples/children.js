@@ -15,7 +15,10 @@
  */
 
 /* @flow */
-import Link from '../../../../../Link';
+import React from 'react';
+import _Link from '../../../../../Link';
+
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
 export default {
   id: 'children',

@@ -17,6 +17,7 @@
 /* @flow */
 import React from 'react';
 import darken from 'polished/lib/color/darken';
+import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent } from '../../styles';
 
@@ -37,12 +38,17 @@ const Root = createStyledComponent('div', ({ theme, variant }) => ({
     : theme.color_text_primary}`,
   padding: theme.baseline_2,
 
-  // These styles from Link. Necessary because you cannot use markdown within
-  // this component if it itself is used within Markdown.
+  // These styles from Link & SiteLink. Necessary because you cannot use
+  // markdown within this component if it itself is used within Markdown.
   '& a:link': {
     color: darken(0.1, theme.SiteLink_color),
-    textDecoration: 'none',
+    fontWeight: theme.fontWeight_semiBold,
+    textDecoration: 'underline',
+    textDecorationColor: rgba(theme.color_text_primary, 0.5),
 
+    '&:visited': {
+      color: desaturate(0.2, theme.SiteLink_color)
+    },
     '&:hover': {
       color: darken(0.1, theme.SiteLink_color_hover),
       textDecoration: 'underline'
@@ -57,6 +63,10 @@ const Root = createStyledComponent('div', ({ theme, variant }) => ({
     '&:active': {
       color: darken(0.1, theme.SiteLink_color_active)
     }
+  },
+
+  '& > :last-child': {
+    marginBottom: 0
   }
 }));
 const Title = createStyledComponent('h4', ({ variant, theme }) => ({

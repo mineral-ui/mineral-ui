@@ -29,6 +29,15 @@ pre.prism-code {
   hyphens: none;
 }
 
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+pre.prism-code::selection,
+pre.prism-code ::selection {
+  background-color: rgba(255,255,255,0.15)
+}
+
 /* Code blocks */
 pre[class*="language-"],
 pre.prism-code {

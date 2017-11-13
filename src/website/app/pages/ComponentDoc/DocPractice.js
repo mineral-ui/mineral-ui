@@ -70,6 +70,13 @@ const styles = {
       flex: `1 1 ${5 / 12 * 100}%`
     },
 
+    '& ::selection': {
+      backgroundColor:
+        type === 'do'
+          ? rgba(theme.borderColor_success, 0.2)
+          : rgba(theme.borderColor_danger, 0.2)
+    },
+
     '& > [role="img"]': {
       backgroundColor:
         type === 'do'
@@ -96,6 +103,15 @@ const styles = {
           type === 'do'
             ? rgba(lighten(0.5, theme.borderColor_success), 0.5)
             : rgba(lighten(0.5, theme.borderColor_danger), 0.5)
+      },
+
+      '& a': {
+        '&,&:hover,&:focus,&:active': {
+          color:
+            type === 'do'
+              ? darken(0.1, theme.borderColor_success)
+              : darken(0.1, theme.borderColor_danger)
+        }
       },
 
       '& > p:last-child': {

@@ -31,7 +31,9 @@ const styles = {
   navElement: ({ theme }) => ({
     display: 'inline-block',
     fontFamily: theme.fontFamily_headline,
+    fontWeight: theme.fontWeight_regular,
     marginRight: theme.space_inline_lg,
+    textDecoration: 'none',
 
     [theme.bp_moreSpacious]: {
       fontSize: pxToEm(22)

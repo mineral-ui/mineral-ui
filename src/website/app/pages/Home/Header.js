@@ -93,7 +93,14 @@ const styles = {
   },
   link: ({ theme }) => ({
     fontFamily: theme.fontFamily_headline,
-    fontSize: '1em'
+    fontWeight: theme.fontWeight_regular,
+    fontSize: '1em',
+    textDecoration: 'none',
+    textShadow: theme.textShadow,
+
+    '& > [role="img"]': {
+      borderBottom: 0
+    }
   }),
   logotype: ({ theme }) => ({
     lineHeight: 1,
@@ -133,6 +140,7 @@ const styles = {
         paddingRight: '3.5em', // Optical adjument to align with MenuButton text
         paddingTop: theme.space_inset_sm,
         textAlign: 'right',
+        textShadow: 'none',
 
         '&:nth-child(1)': { backgroundColor: 'rgba(0,0,0,0.5)' },
         '&:nth-child(2)': { backgroundColor: 'rgba(0,0,0,0.44)' },

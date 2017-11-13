@@ -17,7 +17,10 @@
 /* @flow */
 import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
+import rgba from 'polished/lib/color/rgba';
+import { createStyledComponent } from '../../styles';
 import { createThemedComponent } from '../../themes';
+import IconLaunch from '../../Icon/IconLaunch';
 import Link from '../../Link';
 
 type Props = {
@@ -38,18 +41,79 @@ const componentTheme = baseTheme => ({
   ...baseTheme
 });
 
-const Root = createThemedComponent(Link, ({ theme }) => ({
+const ThemedLink = createThemedComponent(Link, ({ theme }) => ({
   ...componentTheme(theme)
 }));
 
-export default function SiteLink({ element, to, ...restProps }: Props) {
+const Root = createStyledComponent(ThemedLink, ({ href, theme }) => {
+  let styles = {
+    fontWeight: theme.fontWeight_semiBold,
+    textDecoration: 'underline',
+    textDecorationColor: rgba(theme.color_text_primary, 0.5),
+    textDecorationSkip: 'ink',
+
+    '&:focus': {
+      textDecoration: 'none'
+    }
+  };
+
+  if (href) {
+    styles = {
+      ...styles,
+
+      '& > [role="img"]': {
+        borderBottom: `1px solid ${rgba(theme.color_text_primary, 0.5)}`,
+        boxSizing: 'content-box',
+        fill: 'currentColor',
+        paddingLeft: theme.space_inline_xs,
+        position: 'relative',
+        top: 2
+      },
+
+      '&:hover > [role="img"]': {
+        borderBottomColor: 'currentColor'
+      },
+
+      '&:focus > [role="img"]': {
+        borderBottomColor: 'transparent'
+      },
+
+      // Hiding the external link icon when the link looks like a button
+      '& > span ~ [role="img"]': {
+        display: 'none'
+      }
+    };
+  }
+
+  return styles;
+});
+
+export default function SiteLink({
+  children,
+  element,
+  href,
+  to,
+  ...restProps
+}: Props) {
+  const isExternal = href && !href.startsWith('#');
+
   const rootProps = {
     element: to ? element || ReactRouterLink : element,
+    href,
+    target: isExternal ? '_blank' : undefined,
     to,
     ...restProps
+  };
+  const iconProps = {
+    size: 'medium'
   };
 
   delete rootProps.context; // Ignore context prop injected from Marksy.compile()
 
-  return <Root {...rootProps} />;
+  return (
+    <Root {...rootProps}>
+      {children}
+      {isExternal && <IconLaunch {...iconProps} />}
+    </Root>
+  );
 }
