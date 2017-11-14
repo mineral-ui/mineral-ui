@@ -15,29 +15,4 @@
  */
 
 /* @flow */
-
-import React from 'react';
-import Icon from './Icon';
-
-type Props = {
-  size?: string | 'small' | 'medium' | 'large',
-  color?: string,
-  rtl?: boolean,
-  title?: string
-};
-
-/* eslint-disable prettier/prettier */
-export default function {{componentName}}(props: Props) {
-  const iconProps = {
-    rtl: {{rtl}},
-    ...props
-  };
-
-  return (
-    <Icon {...iconProps}>
-      <g>
-        {{{svgChildren}}}
-      </g>
-    </Icon>
-  );
-}
+export { default } from './Icon';

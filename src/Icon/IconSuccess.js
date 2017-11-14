@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import Icon from '../Icon';
+import Icon from 'mineral-ui/Icon';
 
 type Props = {
   size?: string | 'small' | 'medium' | 'large',
@@ -25,7 +25,8 @@ type Props = {
   title?: string
 };
 
-export default function IconDanger(props: Props) {
+/* eslint-disable prettier/prettier */
+export default function IconSuccess(props: Props) {
   const iconProps = {
     rtl: false,
     ...props
@@ -33,14 +34,11 @@ export default function IconDanger(props: Props) {
 
   return (
     <Icon {...iconProps}>
-      <g fill="none" fillRule="evenodd">
-        <path d="M0 0h24v24H0" />
-        <path
-          d="M3.94 19.49h16.118c.552 0 1-.447 1-1 0-.174-.046-.347-.134-.498l-8.06-13.99c-.274-.48-.886-.644-1.364-.368-.153.088-.28.214-.368.367L3.074 17.993c-.276.478-.112 1.09.367 1.365.153.088.325.134.5.134zM12 17c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm1-3.503h-2v-5h2v5z"
-          fill="currentColor"
-          fillRule="nonzero"
-        />
+      <g>
+        <path d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"/>
       </g>
     </Icon>
   );
 }
+
+IconSuccess.category = 'alert';

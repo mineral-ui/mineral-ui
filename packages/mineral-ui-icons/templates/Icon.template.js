@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import Icon from '../Icon';
+import Icon from 'mineral-ui/Icon';
 
 type Props = {
   size?: string | 'small' | 'medium' | 'large',
@@ -25,22 +25,20 @@ type Props = {
   title?: string
 };
 
-export default function IconWarning(props: Props) {
+/* eslint-disable prettier/prettier */
+export default function {{componentName}}(props: Props) {
   const iconProps = {
-    rtl: false,
+    rtl: {{rtl}},
     ...props
   };
 
   return (
     <Icon {...iconProps}>
-      <g fill="none" fillRule="evenodd">
-        <path d="M0 0h24v24H0" />
-        <path
-          d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868c-.78-.78-.78-2.047 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm1-3.958V8h-2v5.042h2z"
-          fill="currentColor"
-          fillRule="nonzero"
-        />
+      <g>
+        {{{svgChildren}}}
       </g>
     </Icon>
   );
 }
+
+{{componentName}}.category = '{{componentCategory}}';

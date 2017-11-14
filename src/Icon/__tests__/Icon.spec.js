@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import IconHelp from '../IconHelp';
+import Icon from '../Icon';
 import examples from '../../website/app/demos/Icon/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
@@ -25,7 +25,7 @@ function shallowIcon(props = {}) {
   const iconProps = {
     ...props
   };
-  return shallow(<IconHelp {...iconProps} />);
+  return shallow(<Icon {...iconProps} />);
 }
 
 describe('Icon', () => {
