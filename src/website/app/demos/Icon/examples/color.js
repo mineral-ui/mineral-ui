@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import IconSentimentSatisfied from '../../../../../Icon/IconSentimentSatisfied';
+import IconSentimentSatisfied from 'mineral-ui-icons/IconSentimentSatisfied';
 
 export default {
   id: 'color',

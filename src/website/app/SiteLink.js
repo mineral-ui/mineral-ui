@@ -20,7 +20,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent } from '../../styles';
 import { createThemedComponent } from '../../themes';
-import IconLaunch from '../../Icon/IconLaunch';
+import IconLaunch from 'mineral-ui-icons/IconLaunch';
 import Link from '../../Link';
 
 type Props = {

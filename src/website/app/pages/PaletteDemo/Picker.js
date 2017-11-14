@@ -21,7 +21,7 @@ import { Transition } from 'react-transition-group';
 import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../../../../styles';
 import color from '../../../../colors';
-import IconKeyboardArrowDown from '../../../../Icon/IconKeyboardArrowDown';
+import IconKeyboardArrowDown from 'mineral-ui-icons/IconKeyboardArrowDown';
 import Heading from '../../SiteHeading';
 import Paragraph from '../../Paragraph';
 

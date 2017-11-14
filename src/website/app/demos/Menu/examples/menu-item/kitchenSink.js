@@ -17,7 +17,7 @@
 /* @flow */
 import { createStyledComponent, pxToEm } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
-import IconCloud from '../../../../../../Icon/IconCloud';
+import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import _DemoLayout from '../../components/DemoLayout';
 

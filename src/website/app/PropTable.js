@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../styles';
-import IconInfo from '../../Icon/IconInfo';
+import IconInfo from 'mineral-ui-icons/IconInfo';
 import Button from '../../Button';
 import Popover from '../../Popover';
 import Markdown from './Markdown';

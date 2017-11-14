@@ -21,7 +21,7 @@ import {
   getNormalizedValue,
   pxToEm
 } from '../../styles';
-import IconArrowBack from '../../Icon/IconArrowBack';
+import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
 import Heading from './SiteHeading';
 import Link from './SiteLink';

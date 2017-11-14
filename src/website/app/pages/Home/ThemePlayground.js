@@ -18,7 +18,7 @@
 import React from 'react';
 import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent, pxToEm } from '../../../../styles';
-import IconCheck from '../../../../Icon/IconCheck';
+import IconCheck from 'mineral-ui-icons/IconCheck';
 import { ThemeProvider } from '../../../../themes';
 
 type Props = {

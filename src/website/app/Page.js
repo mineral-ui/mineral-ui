@@ -29,8 +29,8 @@ import {
 } from '../../styles';
 import { mineralTheme, ThemeProvider } from '../../themes';
 import Button from '../../Button';
-import IconClose from '../../Icon/IconClose';
-import IconMenu from '../../Icon/IconMenu';
+import IconClose from 'mineral-ui-icons/IconClose';
+import IconMenu from 'mineral-ui-icons/IconMenu';
 import _Canvas from './Canvas';
 import _Footer from './Footer';
 import Markdown from './Markdown';

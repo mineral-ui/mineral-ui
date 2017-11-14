@@ -20,8 +20,8 @@ import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent, pxToEm } from '../../../../styles';
 import { mineralTheme, ThemeProvider } from '../../../../themes';
-import IconCheck from '../../../../Icon/IconCheck';
-import IconClose from '../../../../Icon/IconClose';
+import IconCheck from 'mineral-ui-icons/IconCheck';
+import IconClose from 'mineral-ui-icons/IconClose';
 import Markdown from '../../Markdown';
 import Heading from '../../SiteHeading';
 
