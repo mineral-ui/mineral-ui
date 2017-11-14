@@ -24,7 +24,6 @@ import ThemeProvider from '../themes/ThemeProvider';
 import App from './app/App';
 import demoRoutes from './app/demos/routes';
 require('./index.css');
-require('./app/utils/prismTheme.css');
 
 // Enable Glamor simulate helper
 simulations(true);

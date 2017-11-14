@@ -28,6 +28,7 @@ import Heading from './SiteHeading';
 import Paragraph from './Paragraph';
 import Link from './SiteLink';
 import MarkdownTable from './MarkdownTable';
+import getCodeBlockStyles from './utils/getCodeBlockStyles';
 import prism from './utils/prism';
 import _Label from './Label';
 
@@ -214,26 +215,24 @@ const styles = {
     },
 
     '& pre': {
-      fontSize: theme.fontSize_ui,
-      // Setting the maxHeight equal to, roughly, 20 lines,
-      // then subtracting a bit to make it clear there's more beyond the scroll
-      maxHeight: getNormalizedValue(
-        `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
-        theme.fontSize_ui
-      ),
+      ...getCodeBlockStyles(theme),
       // to baseline
       margin: `${getNormalizedValue(pxToEm(31), theme.fontSize_ui)} 0
-        ${getNormalizedValue(pxToEm(42), theme.fontSize_ui)}`,
-      overflow: 'auto'
+        ${getNormalizedValue(pxToEm(42), theme.fontSize_ui)}`
     },
 
     '& :not(pre) > code': {
       backgroundColor: rgba(theme.color_text_primary, 0.15),
       color: darken(0.1, theme.color_text_primary),
+      direction: 'ltr',
       fontFamily: theme.fontFamily_monospace,
       fontSize: '0.8em',
       fontWeight: '500',
-      padding: `${parseFloat(theme.space_inset_sm) / 2}em`
+      hyphens: 'none',
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em`,
+      wordBreak: 'normal',
+      wordSpacing: 'normal',
+      wordWrap: 'normal'
     },
 
     '& > p > img': {
