@@ -1,3 +1,19 @@
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/mineral-ui/mineral-ui/compare/v0.10.0...v0.11.0) (2017-11-14)
+
+
+### Bug Fixes
+
+* **dependencies:** Update minimum React/ReactDOM peer dependency version ([7d49cbe](https://github.com/mineral-ui/mineral-ui/commit/7d49cbe))
+* **icon,button,menuitem:** Improve icon a11y by using role=“img” ([970191c](https://github.com/mineral-ui/mineral-ui/commit/970191c))
+
+
+### Features
+
+* **dropdown,popover:** Add ability to render to body using ‘usePortal’ prop ([c8e914c](https://github.com/mineral-ui/mineral-ui/commit/c8e914c))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/mineral-ui/mineral-ui/compare/v0.9.0...v0.10.0) (2017-10-31)
 
