@@ -24,8 +24,9 @@ import {
   LiveError,
   LivePreview
 } from 'react-live';
-import { createStyledComponent, getNormalizedValue } from '../../styles';
+import { createStyledComponent } from '../../styles';
 import { ThemeProvider } from '../../themes';
+import getCodeBlockStyles from './utils/getCodeBlockStyles';
 import siteColors from './siteColors';
 
 type Props = {
@@ -47,20 +48,10 @@ const styles = {
         };
   },
   liveEditor: ({ theme }) => ({
-    fontSize: theme.fontSize_ui,
-    // Setting the maxHeight equal to, roughly, 20 lines,
-    // then subtracting a bit to make it clear there's more beyond the scroll
-    maxHeight: getNormalizedValue(
-      `${parseFloat(theme.fontSize_ui) * theme.lineHeight * (20 - 0.5)}em`,
-      theme.fontSize_ui
-    ),
+    ...getCodeBlockStyles(theme),
 
-    // Specificity hack
-    '&[class]': {
-      margin: 0
-    },
     '&:focus': {
-      outline: `6px solid ${rgba(siteColors.jade, 0.3)}`
+      outline: `6px solid ${rgba(theme.color_text_primary, 0.3)}`
     }
   }),
   liveError: ({ theme }) => ({
@@ -74,7 +65,7 @@ const styles = {
     whiteSpace: 'pre',
 
     '&:first-line': {
-      fontFamily: theme.fontFamily,
+      fontFamily: theme.fontFamily_system,
       fontWeight: theme.fontWeight_semiBold,
       // Can't use margin/padding here, so this is to space off the heading
       // from the code
@@ -106,17 +97,17 @@ export default function LiveProvider({
     ...restProps
   };
   return (
-    <ThemeProvider>
-      <ReactLiveProvider {...liveProviderProps}>
+    <ReactLiveProvider {...liveProviderProps}>
+      <ThemeProvider>
         <MyLivePreview
           backgroundColor={backgroundColor}
           chromeless={chromeless}
         />
-        {!hideSource && [
-          <MyLiveEditor key={0} ignoreTabKey={true} />,
-          <MyLiveError key={1} />
-        ]}
-      </ReactLiveProvider>
-    </ThemeProvider>
+      </ThemeProvider>
+      {!hideSource && [
+        <MyLiveEditor key={0} ignoreTabKey={true} />,
+        <MyLiveError key={1} />
+      ]}
+    </ReactLiveProvider>
   );
 }
