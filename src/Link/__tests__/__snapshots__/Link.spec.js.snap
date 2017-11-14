@@ -250,14 +250,21 @@ exports[`Link demo examples basic 1`] = `
                   >
                     <Link
                       href="http://example.com"
-                      variant="regular"
+                      target="_blank"
                     >
-                      <a
-                        className="glamor-0"
+                      <Link
                         href="http://example.com"
+                        target="_blank"
+                        variant="regular"
                       >
-                        consectetur
-                      </a>
+                        <a
+                          className="glamor-0"
+                          href="http://example.com"
+                          target="_blank"
+                        >
+                          consectetur
+                        </a>
+                      </Link>
                     </Link>
                   </Link>
                    adipiscing elit,
@@ -273,14 +280,21 @@ exports[`Link demo examples basic 1`] = `
                   >
                     <Link
                       href="http://example.com"
-                      variant="regular"
+                      target="_blank"
                     >
-                      <a
-                        className="glamor-0"
+                      <Link
                         href="http://example.com"
+                        target="_blank"
+                        variant="regular"
                       >
-                        incididunt
-                      </a>
+                        <a
+                          className="glamor-0"
+                          href="http://example.com"
+                          target="_blank"
+                        >
+                          incididunt
+                        </a>
+                      </Link>
                     </Link>
                   </Link>
                    ut labore et dolore magna aliqua.
@@ -296,14 +310,21 @@ exports[`Link demo examples basic 1`] = `
                   >
                     <Link
                       href="http://example.com"
-                      variant="regular"
+                      target="_blank"
                     >
-                      <a
-                        className="glamor-0"
+                      <Link
                         href="http://example.com"
+                        target="_blank"
+                        variant="regular"
                       >
-                        ad minim veniam
-                      </a>
+                        <a
+                          className="glamor-0"
+                          href="http://example.com"
+                          target="_blank"
+                        >
+                          ad minim veniam
+                        </a>
+                      </Link>
                     </Link>
                   </Link>
                    quis nostrud exercitation
@@ -319,14 +340,21 @@ exports[`Link demo examples basic 1`] = `
                   >
                     <Link
                       href="http://example.com"
-                      variant="regular"
+                      target="_blank"
                     >
-                      <a
-                        className="glamor-0"
+                      <Link
                         href="http://example.com"
+                        target="_blank"
+                        variant="regular"
                       >
-                        nisi ut
-                      </a>
+                        <a
+                          className="glamor-0"
+                          href="http://example.com"
+                          target="_blank"
+                        >
+                          nisi ut
+                        </a>
+                      </Link>
                     </Link>
                   </Link>
                    aliquip ex ea commodo consequat.
@@ -884,17 +912,24 @@ exports[`Link demo examples children 1`] = `
             >
               <Link
                 href="http://example.com"
-                variant="regular"
+                target="_blank"
               >
-                <a
-                  className="glamor-0"
+                <Link
                   href="http://example.com"
+                  target="_blank"
+                  variant="regular"
                 >
-                  <img
-                    alt="gradient placeholder"
-                    src="/images/125x125.png"
-                  />
-                </a>
+                  <a
+                    className="glamor-0"
+                    href="http://example.com"
+                    target="_blank"
+                  >
+                    <img
+                      alt="gradient placeholder"
+                      src="/images/125x125.png"
+                    />
+                  </a>
+                </Link>
               </Link>
             </Link>
           </div>
@@ -1494,14 +1529,21 @@ exports[`Link demo examples states 1`] = `
                 >
                   <Link
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Regular
-                    </a>
+                      <a
+                        className="glamor-0"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Regular
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1511,15 +1553,23 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-hover=""
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Hover
-                    </a>
+                      <a
+                        className="glamor-0"
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1529,15 +1579,23 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-focus=""
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Focus
-                    </a>
+                      <a
+                        className="glamor-0"
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1549,16 +1607,25 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-focus=""
                     data-simulate-hover=""
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       data-simulate-focus=""
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Focus & Hover
-                    </a>
+                      <a
+                        className="glamor-0"
+                        data-simulate-focus=""
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1570,16 +1637,25 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-active=""
                     data-simulate-focus=""
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       data-simulate-active=""
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Focus & Active
-                    </a>
+                      <a
+                        className="glamor-0"
+                        data-simulate-active=""
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1589,15 +1665,23 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-active=""
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       data-simulate-active=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Active
-                    </a>
+                      <a
+                        className="glamor-0"
+                        data-simulate-active=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <br />
@@ -1608,14 +1692,22 @@ exports[`Link demo examples states 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Danger
-                    </a>
+                      <a
+                        className="glamor-6"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Danger
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1626,15 +1718,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Hover
-                    </a>
+                      <a
+                        className="glamor-6"
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1645,15 +1746,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Focus
-                    </a>
+                      <a
+                        className="glamor-6"
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1666,16 +1776,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-focus=""
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       data-simulate-focus=""
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Focus & Hover
-                    </a>
+                      <a
+                        className="glamor-6"
+                        data-simulate-focus=""
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1688,16 +1808,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-active=""
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       data-simulate-active=""
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Focus & Active
-                    </a>
+                      <a
+                        className="glamor-6"
+                        data-simulate-active=""
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1708,15 +1838,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-active=""
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-6"
+                    <Link
                       data-simulate-active=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Active
-                    </a>
+                      <a
+                        className="glamor-6"
+                        data-simulate-active=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <br />
@@ -1727,14 +1866,22 @@ exports[`Link demo examples states 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Success
-                    </a>
+                      <a
+                        className="glamor-12"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Success
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1745,15 +1892,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Hover
-                    </a>
+                      <a
+                        className="glamor-12"
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1764,15 +1920,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Focus
-                    </a>
+                      <a
+                        className="glamor-12"
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1785,16 +1950,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-focus=""
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       data-simulate-focus=""
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Focus & Hover
-                    </a>
+                      <a
+                        className="glamor-12"
+                        data-simulate-focus=""
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1807,16 +1982,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-active=""
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       data-simulate-active=""
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Focus & Active
-                    </a>
+                      <a
+                        className="glamor-12"
+                        data-simulate-active=""
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1827,15 +2012,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-active=""
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-12"
+                    <Link
                       data-simulate-active=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Active
-                    </a>
+                      <a
+                        className="glamor-12"
+                        data-simulate-active=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <br />
@@ -1846,14 +2040,22 @@ exports[`Link demo examples states 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Warning
-                    </a>
+                      <a
+                        className="glamor-18"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Warning
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1864,15 +2066,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Hover
-                    </a>
+                      <a
+                        className="glamor-18"
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1883,15 +2094,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Focus
-                    </a>
+                      <a
+                        className="glamor-18"
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1904,16 +2124,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-focus=""
                     data-simulate-hover=""
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       data-simulate-focus=""
                       data-simulate-hover=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Focus & Hover
-                    </a>
+                      <a
+                        className="glamor-18"
+                        data-simulate-focus=""
+                        data-simulate-hover=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Hover
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1926,16 +2156,26 @@ exports[`Link demo examples states 1`] = `
                     data-simulate-active=""
                     data-simulate-focus=""
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       data-simulate-active=""
                       data-simulate-focus=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Focus & Active
-                    </a>
+                      <a
+                        className="glamor-18"
+                        data-simulate-active=""
+                        data-simulate-focus=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Focus & Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -1946,15 +2186,24 @@ exports[`Link demo examples states 1`] = `
                   <Link
                     data-simulate-active=""
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-18"
+                    <Link
                       data-simulate-active=""
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Active
-                    </a>
+                      <a
+                        className="glamor-18"
+                        data-simulate-active=""
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Active
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
               </div>
@@ -2273,14 +2522,21 @@ exports[`Link demo examples variants 1`] = `
                 >
                   <Link
                     href="http://example.com"
-                    variant="regular"
+                    target="_blank"
                   >
-                    <a
-                      className="glamor-0"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="regular"
                     >
-                      Regular
-                    </a>
+                      <a
+                        className="glamor-0"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Regular
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -2289,14 +2545,22 @@ exports[`Link demo examples variants 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="danger"
                   >
-                    <a
-                      className="glamor-1"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="danger"
                     >
-                      Danger
-                    </a>
+                      <a
+                        className="glamor-1"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Danger
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -2305,14 +2569,22 @@ exports[`Link demo examples variants 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="success"
                   >
-                    <a
-                      className="glamor-2"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="success"
                     >
-                      Success
-                    </a>
+                      <a
+                        className="glamor-2"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Success
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
                 <Link
@@ -2321,14 +2593,22 @@ exports[`Link demo examples variants 1`] = `
                 >
                   <Link
                     href="http://example.com"
+                    target="_blank"
                     variant="warning"
                   >
-                    <a
-                      className="glamor-3"
+                    <Link
                       href="http://example.com"
+                      target="_blank"
+                      variant="warning"
                     >
-                      Warning
-                    </a>
+                      <a
+                        className="glamor-3"
+                        href="http://example.com"
+                        target="_blank"
+                      >
+                        Warning
+                      </a>
+                    </Link>
                   </Link>
                 </Link>
               </div>
