@@ -115,9 +115,9 @@ export default function Demo({ theme }: Props) {
               <CardBlock>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 mattis pretium massa.{' '}
-                <Link href="https://example.com.com">Aliquam</Link> erat
-                volutpat. Nulla facilisi. Donec vulputate interdum sollicitudin.
-                Nunc lacinia auctor quam sed pellentesque.
+                <Link href="https://example.com">Aliquam</Link> erat volutpat.
+                Nulla facilisi. Donec vulputate interdum sollicitudin. Nunc
+                lacinia auctor quam sed pellentesque.
               </CardBlock>
             </Card>
           </CardHolder>
@@ -125,7 +125,7 @@ export default function Demo({ theme }: Props) {
           <Button size="jumbo" circular iconStart={<IconBatteryCharging50 />} />
           <Button size="jumbo" iconStart={<IconShoppingCart />} />
           <InlineText variant="prose">
-            A link to <Link href="https://example.com.com">example.com</Link>.
+            A link to <Link href="https://example.com">example.com</Link>.
           </InlineText>
           <DropdownContainer>
             <Dropdown
