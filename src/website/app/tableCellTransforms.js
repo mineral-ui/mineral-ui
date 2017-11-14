@@ -18,10 +18,10 @@
 import React from 'react';
 import { createStyledComponent } from '../../styles';
 import color from '../../colors';
-import IconCheck from '../../Icon/IconCheck';
-import IconAssignment from '../../Icon/IconAssignment';
-import IconSlowMotionVideo from '../../Icon/IconSlowMotionVideo';
-import IconWarning from '../../Icon/IconWarning';
+import IconCheck from 'mineral-ui-icons/IconCheck';
+import IconAssignment from 'mineral-ui-icons/IconAssignment';
+import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
+import IconWarning from 'mineral-ui-icons/IconWarning';
 import _Label from './Label';
 
 // a tilde surrounded by some spaces and "new"

@@ -18,9 +18,9 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
 import color from '../../../../colors';
-import IconAssignment from '../../../../Icon/IconAssignment';
-import IconCheck from '../../../../Icon/IconCheck';
-import IconSlowMotionVideo from '../../../../Icon/IconSlowMotionVideo';
+import IconAssignment from 'mineral-ui-icons/IconAssignment';
+import IconCheck from 'mineral-ui-icons/IconCheck';
+import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
 
 const styles = {
   list: ({ theme }) => ({

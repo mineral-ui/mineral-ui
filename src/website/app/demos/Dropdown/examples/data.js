@@ -16,7 +16,7 @@
 
 /* @flow */
 import Button from '../../../../../Button';
-import IconCloud from '../../../../../Icon/IconCloud';
+import IconCloud from 'mineral-ui-icons/IconCloud';
 import Dropdown from '../../../../../Dropdown';
 import CustomRender from '../../Menu/components/CustomRender';
 

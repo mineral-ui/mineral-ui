@@ -17,7 +17,7 @@
 /* @flow */
 import React from 'react';
 import Button from '../../../../Button';
-import IconMenu from '../../../../Icon/IconMenu';
+import IconMenu from 'mineral-ui-icons/IconMenu';
 import Dropdown from '../../../../Dropdown';
 
 const data = [

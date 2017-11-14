@@ -16,7 +16,7 @@
 
 /* @flow */
 import { mineralTheme, ThemeProvider } from '../../../../../../themes';
-import IconHelp from '../../../../../../Icon/IconHelp';
+import IconHelp from 'mineral-ui-icons/IconHelp';
 import Menu, { MenuItem } from '../../../../../../Menu';
 import DemoLayout from '../../components/DemoLayout';
 

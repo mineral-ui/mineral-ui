@@ -21,7 +21,7 @@ import colors from '../../../../colors';
 import { createStyledComponent, pxToEm } from '../../../../styles';
 import { createThemedComponent } from '../../../../themes';
 import Button from '../../../../Button';
-import IconArrowDropDown from '../../../../Icon/IconArrowDropDown';
+import IconArrowDropDown from 'mineral-ui-icons/IconArrowDropDown';
 import _Popover from '../../../../Popover';
 import Heading from '../../SiteHeading';
 import _Link from '../../SiteLink';

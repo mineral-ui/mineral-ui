@@ -17,12 +17,12 @@
 /* @flow */
 import React from 'react';
 import Button from '../../../../Button';
-import IconRefresh from '../../../../Icon/IconRefresh';
-import IconLocalPlay from '../../../../Icon/IconLocalPlay';
-import IconLocalOffer from '../../../../Icon/IconLocalOffer';
-import IconLocalLaundryService from '../../../../Icon/IconLocalLaundryService';
-import IconStoreMallDirectory from '../../../../Icon/IconStoreMallDirectory';
-import IconStreetview from '../../../../Icon/IconStreetview';
+import IconRefresh from 'mineral-ui-icons/IconRefresh';
+import IconLocalPlay from 'mineral-ui-icons/IconLocalPlay';
+import IconLocalOffer from 'mineral-ui-icons/IconLocalOffer';
+import IconLocalLaundryService from 'mineral-ui-icons/IconLocalLaundryService';
+import IconStoreMallDirectory from 'mineral-ui-icons/IconStoreMallDirectory';
+import IconStreetview from 'mineral-ui-icons/IconStreetview';
 
 export default [
   {

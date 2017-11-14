@@ -35,8 +35,8 @@ import {
   ThemeProvider
 } from '../../../../themes';
 import _Button from '../../../../Button';
-import IconChevronRight from '../../../../Icon/IconChevronRight';
-import IconFavorite from '../../../../Icon/IconFavorite';
+import IconChevronRight from 'mineral-ui-icons/IconChevronRight';
+import IconFavorite from 'mineral-ui-icons/IconFavorite';
 import Canvas from '../../Canvas';
 import Footer from '../../Footer';
 import Logo from '../../Logo';

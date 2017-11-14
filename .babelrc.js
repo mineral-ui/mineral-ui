@@ -33,6 +33,20 @@ module.exports = {
       'syntax-dynamic-import'
     ];
 
+    if (TARGET !== 'icons') {
+      // TARGET=icons is used when building mineral-ui-icons
+      // mineral-ui package built using local paths - not dependent on mineral-ui-icons package
+      // mineral-ui-icons package built using actual npm package name - dependent on mineral-ui package
+      plugins.push(
+        ['module-resolver', {
+          alias: {
+            'mineral-ui': './src', // Used inside mineral-ui-icons components
+            'mineral-ui-icons': './packages/mineral-ui-icons/src' // Used inside mineral-ui website
+          }
+        }]
+      );
+    }
+
     if (NODE_ENV === 'test') {
       plugins.push('dynamic-import-node');
     }
