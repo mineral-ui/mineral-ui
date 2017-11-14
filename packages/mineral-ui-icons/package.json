@@ -1,0 +1,33 @@
+{
+  "name": "mineral-ui-icons",
+  "author": "CA Technologies",
+  "description": "Mineral UI Icon React Components",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineral-ui/mineral-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mineral-ui/mineral-ui/issues"
+  },
+  "homepage": "http://mineral-ui.com",
+  "main": "./dist/index.js",
+  "module": "./dist/es/index.js",
+  "scripts": {
+    "build": "npm run clean && TARGET=icons ./scripts/build.js",
+    "build:icons": "./scripts/build-icons.js",
+    "clean": "rm -rf dist",
+    "pack-ls": "cd dist && tar -tvf $(npm pack) && rm *.tgz"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "fs-extra": "4.0.2",
+    "material-design-icons": "3.0.1"
+  },
+  "peerDependencies": {
+    "mineral-ui": "^0.12.0",
+    "react": "^15.3.0 || ^16.0.0"
+  }
+}

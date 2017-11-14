@@ -19,7 +19,7 @@ module.exports = {
   coverageDirectory: 'reports/coverage',
   coveragePathIgnorePatterns: [
     '/node_modules/',
-    '/Icon/Icon.+.js',
+    '/packages/mineral-ui-icons',
     '/website/'
   ],
   moduleNameMapper: {

@@ -16,7 +16,6 @@
 
 /* @flow */
 /* eslint-disable prettier/prettier */
-export { default } from './Icon';
 {{#components}}
 export { default as {{componentName}} } from './{{componentName}}';
 {{/components}}

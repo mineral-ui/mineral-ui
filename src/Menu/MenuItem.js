@@ -18,9 +18,9 @@
 import React, { cloneElement } from 'react';
 import { withTheme } from 'glamorous';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import IconDanger from '../Icon/custom/IconDanger';
-import IconSuccess from '../Icon/custom/IconSuccess';
-import IconWarning from '../Icon/custom/IconWarning';
+import IconDanger from '../Icon/IconDanger';
+import IconSuccess from '../Icon/IconSuccess';
+import IconWarning from '../Icon/IconWarning';
 
 type Props = {
   /** Rendered content of the component */
