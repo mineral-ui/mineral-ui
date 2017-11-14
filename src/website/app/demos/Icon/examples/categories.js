@@ -17,14 +17,14 @@
 /* @flow */
 import Loadable from '../../../Loadable';
 
-const CategoryIndex = Loadable({
-  loader: () => import('../components/CategoryIndex')
+const IconsByCategory = Loadable({
+  loader: () => import('../components/IconsByCategory')
 });
 
 export default {
   id: 'categories',
   title: 'Icons by Category',
   hideSource: true,
-  scope: { CategoryIndex },
-  source: `<CategoryIndex />`
+  scope: { IconsByCategory },
+  source: `<IconsByCategory />`
 };
