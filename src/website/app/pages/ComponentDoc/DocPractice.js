@@ -17,10 +17,9 @@
 /* @flow */
 import React from 'react';
 import darken from 'polished/lib/color/darken';
-import lighten from 'polished/lib/color/lighten';
 import rgba from 'polished/lib/color/rgba';
 import { createStyledComponent, pxToEm } from '../../../../styles';
-import { ThemeProvider } from '../../../../themes';
+import { mineralTheme, ThemeProvider } from '../../../../themes';
 import IconCheck from '../../../../Icon/IconCheck';
 import IconClose from '../../../../Icon/IconClose';
 import Markdown from '../../Markdown';
@@ -33,6 +32,29 @@ type Props = {
   example?: React$Node,
   title?: string,
   type: 'do' | 'dont'
+};
+
+const themes = {
+  do: {
+    borderColor: darken(0.1, mineralTheme.borderColor_success),
+    color_text_primary: mineralTheme.color_text_success,
+
+    SiteLink_borderColor_focus: mineralTheme.color_text_success,
+    SiteLink_color: mineralTheme.color_text_success,
+    SiteLink_color_active: mineralTheme.color_text_success,
+    SiteLink_color_hover: mineralTheme.color_text_success,
+    SiteLink_color_focus: mineralTheme.color_text_success
+  },
+  dont: {
+    borderColor: mineralTheme.borderColor_danger,
+    color_text_primary: darken(0.1, mineralTheme.color_text_danger),
+
+    SiteLink_borderColor_focus: darken(0.1, mineralTheme.color_text_danger),
+    SiteLink_color: darken(0.1, mineralTheme.color_text_danger),
+    SiteLink_color_active: darken(0.1, mineralTheme.color_text_danger),
+    SiteLink_color_hover: darken(0.1, mineralTheme.color_text_danger),
+    SiteLink_color_focus: darken(0.1, mineralTheme.color_text_danger)
+  }
 };
 
 const styles = {
@@ -52,41 +74,25 @@ const styles = {
       flex: `1 1 ${7 / 12 * 100}%`
     }
   }),
-  header: ({ theme, type }) => ({
-    backgroundColor:
-      type === 'do'
-        ? rgba(theme.borderColor_success, 0.1)
-        : rgba(theme.borderColor_danger, 0.1),
-    borderTop: `3px solid ${type === 'do'
-      ? theme.borderColor_success
-      : theme.borderColor_danger}`,
+  header: ({ theme }) => ({
+    backgroundColor: rgba(theme.borderColor, 0.1),
+    borderTop: `3px solid ${rgba(theme.borderColor, 0.6)}`,
     padding: `${theme.baseline_1} ${theme.baseline_2}`,
 
     [theme.bp_interior_bestPracticesMultiColumn]: {
-      borderLeft: `3px solid ${type === 'do'
-        ? rgba(theme.borderColor_success, 0.6)
-        : rgba(theme.borderColor_danger, 0.6)}`,
+      borderLeft: `3px solid ${rgba(theme.borderColor, 0.6)}`,
       borderTop: 0,
       flex: `1 1 ${5 / 12 * 100}%`
     },
 
     '& ::selection': {
-      backgroundColor:
-        type === 'do'
-          ? rgba(theme.borderColor_success, 0.2)
-          : rgba(theme.borderColor_danger, 0.2)
+      backgroundColor: rgba(theme.color_text_primary, 0.2)
     },
 
     '& > [role="img"]': {
-      backgroundColor:
-        type === 'do'
-          ? rgba(theme.borderColor_success, 0.2)
-          : rgba(theme.borderColor_danger, 0.2),
+      backgroundColor: rgba(theme.borderColor, 0.2),
       borderRadius: theme.baseline_3,
-      fill:
-        type === 'do'
-          ? rgba(theme.borderColor_success, 0.5)
-          : rgba(theme.borderColor_danger, 0.5),
+      fill: rgba(theme.borderColor, 0.5),
       float: 'left',
       height: theme.baseline_3,
       marginRight: theme.baseline_2,
@@ -98,32 +104,13 @@ const styles = {
     '& > div': {
       overflow: 'hidden',
 
-      '& code': {
-        backgroundColor:
-          type === 'do'
-            ? rgba(lighten(0.5, theme.borderColor_success), 0.5)
-            : rgba(lighten(0.5, theme.borderColor_danger), 0.5)
-      },
-
-      '& a': {
-        '&,&:hover,&:focus,&:active': {
-          color:
-            type === 'do'
-              ? darken(0.1, theme.borderColor_success)
-              : darken(0.1, theme.borderColor_danger)
-        }
-      },
-
       '& > p:last-child': {
         marginBottom: 0
       }
     }
   }),
-  title: ({ theme, type }) => ({
-    color:
-      type === 'do'
-        ? darken(0.1, theme.borderColor_success)
-        : darken(0.1, theme.borderColor_danger),
+  title: ({ theme }) => ({
+    color: theme.color_text_primary,
     fontSize: theme.SiteHeading_fontSize_4,
     fontWeight: theme.fontWeight_regular,
     lineHeight: 1.1,
@@ -155,14 +142,14 @@ export default function DocPractice({
 
   return (
     <Root className={className}>
-      <Header type={type}>
-        {icon}
-        <Title level={4} type={type}>
-          {type === 'do' ? 'Do' : 'Don’t'}
-        </Title>
-        <Markdown>{children}</Markdown>
-      </Header>
-      <Example backgroundColor={backgroundColor} type={type}>
+      <ThemeProvider theme={themes[type]}>
+        <Header>
+          {icon}
+          <Title level={4}>{type === 'do' ? 'Do' : 'Don’t'}</Title>
+          <Markdown>{children}</Markdown>
+        </Header>
+      </ThemeProvider>
+      <Example backgroundColor={backgroundColor}>
         <ThemeProvider>
           {typeof example === 'string' ? (
             <Markdown>{example}</Markdown>
