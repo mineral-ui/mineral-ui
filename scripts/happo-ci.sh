@@ -9,13 +9,10 @@ set -euo pipefail
 # Bail if this build isn't triggered by a PR
 [ -z "$TRAVIS_PULL_REQUEST_SHA" ] && echo 'Not a a pull request' && exit 0
 
-# Travis gives us a range of commits. We need the first one so that we can grab
-# the one it is based on.
-FIRST_SHA_IN_RANGE="${TRAVIS_COMMIT_RANGE//\.\..*/}"
-
 # The PREVIOUS_SHA will be equal to the commit that this PR is based on (which
-# is usually some commit on the master branch).
-PREVIOUS_SHA="$(git rev-parse "$FIRST_SHA_IN_RANGE"^)"
+# is usually some commit on the master branch). Travis gives us a range of
+# commits. We need the first one.
+PREVIOUS_SHA="${TRAVIS_COMMIT_RANGE//\.\..*/}"
 CURRENT_SHA="${TRAVIS_PULL_REQUEST_SHA}"
 
 # Construct a URL to the PR so that we can link the happo reports to it
