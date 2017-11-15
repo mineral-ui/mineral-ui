@@ -61,7 +61,4 @@ $SUMMARY"
 
 echo "Attempting to post comment on ${PR_URL}: ${MESSAGE}"
 
-GHE_TOKEN="fd9a1e7da0129de22b"
-GHE_TOKEN+="21100db458c8dfd79c054b"
-
-GHE_TOKEN="$GHE_TOKEN" node scripts/postCommentOnPR.js "$MESSAGE"
+node scripts/postCommentOnPR.js "$MESSAGE"
