@@ -34,9 +34,13 @@ run-happo() {
   # git history)
   npm install
 
-  npm run --silent happo run "$SHA" \
-    --link "${PR_URL}" \
-    --message "${COMMIT_SUBJECT}"
+  if npm ls happo.io; then
+    npm run --silent happo run "$SHA" \
+      --link "${PR_URL}" \
+      --message "${COMMIT_SUBJECT}"
+  else
+    echo "NPM package happo.io not installed. Assuming this is the first run."
+  fi
 }
 
 # Check if we need to generate a baseline. In some cases, the baseline is
