@@ -68,7 +68,7 @@ export const componentTheme = (baseTheme: Object) => ({
   Button_color_text_minimal: baseTheme.color_text_primary,
   Button_color_text_primary: baseTheme.color_text_onprimary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
-  Button_paddingHorizontal: baseTheme.space_inset_sm,
+  Button_paddingHorizontal: '2px',
   Button_paddingIconOnly_small: pxToEm(3),
   Button_paddingIconOnly_medium: pxToEm(7),
   Button_paddingIconOnly_large: pxToEm(7),
