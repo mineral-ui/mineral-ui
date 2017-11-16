@@ -28,6 +28,12 @@
     // Temporarily disable rule until issue is resolved.
     // https://github.com/gajus/eslint-plugin-flowtype/issues/224
     "flowtype/no-types-missing-file-annotation": 0,
+    "jsx-a11y/label-has-for": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      },
+      "allowChildren": true
+    }],
     "no-console": ["error", {
       "allow": ["warn", "error"]
     }],
