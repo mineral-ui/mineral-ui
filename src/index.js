@@ -18,6 +18,7 @@
 export { default as Button } from './Button';
 export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
 export { default as Dropdown } from './Dropdown';
+export { FormField, FormFieldset, FormFieldDivider } from './Form';
 export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
