@@ -1,3 +1,19 @@
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/mineral-ui/mineral-ui/compare/v0.11.0...v0.12.0) (2017-11-17)
+
+
+### Features
+
+* **icon:** Extract pre-built icons to new mineral-ui-icons package ([6d156e8](https://github.com/mineral-ui/mineral-ui/commit/6d156e8))
+* **mineral-ui-icons:** Add generated icons ([befc5d0](https://github.com/mineral-ui/mineral-ui/commit/befc5d0))
+
+
+### BREAKING CHANGES
+
+* **icon:** Pre-built icons are now available separately via the `mineral-ui-icons` package and are no longer contained within the Icon component.
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/mineral-ui/mineral-ui/compare/v0.10.0...v0.11.0) (2017-11-14)
 
