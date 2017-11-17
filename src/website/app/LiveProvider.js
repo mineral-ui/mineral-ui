@@ -77,9 +77,7 @@ const styles = {
 const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
   rootEl: 'div'
 });
-const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor, {
-  filterProps: ['ignoreTabKey']
-});
+const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 const MyLiveError = createStyledComponent(LiveError, styles.liveError);
 
 export default function LiveProvider({
