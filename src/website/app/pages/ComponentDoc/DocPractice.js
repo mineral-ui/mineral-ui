@@ -23,7 +23,6 @@ import { mineralTheme, ThemeProvider } from '../../../../themes';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconClose from 'mineral-ui-icons/IconClose';
 import Markdown from '../../Markdown';
-import Heading from '../../SiteHeading';
 
 type Props = {
   backgroundColor?: string,
@@ -72,6 +71,11 @@ const styles = {
 
     [theme.bp_interior_bestPracticesMultiColumn]: {
       flex: `1 1 ${7 / 12 * 100}%`
+    },
+
+    // Specificity hack
+    '& pre[class]': {
+      margin: 0
     }
   }),
   header: ({ theme }) => ({
@@ -92,11 +96,13 @@ const styles = {
     '& > [role="img"]': {
       backgroundColor: rgba(theme.borderColor, 0.2),
       borderRadius: theme.baseline_3,
-      fill: rgba(theme.borderColor, 0.5),
+      fill: theme.borderColor,
       float: 'left',
       height: theme.baseline_3,
       marginRight: theme.baseline_2,
       padding: `${parseFloat(theme.baseline_1) / 2}em`,
+      position: 'relative',
+      top: pxToEm(4), // Optical alignment
       width: theme.baseline_3
     },
 
@@ -108,24 +114,12 @@ const styles = {
         marginBottom: 0
       }
     }
-  }),
-  title: ({ theme }) => ({
-    color: theme.color_text_primary,
-    fontSize: theme.SiteHeading_fontSize_4,
-    fontWeight: theme.fontWeight_regular,
-    lineHeight: 1.1,
-    margin: 0,
-
-    [theme.bp_moreSpacious]: {
-      fontSize: theme.SiteHeading_fontSize_4_wide
-    }
   })
 };
 
 const Root = createStyledComponent('div', styles.root);
 const Example = createStyledComponent('div', styles.example);
 const Header = createStyledComponent('div', styles.header);
-const Title = createStyledComponent(Heading, styles.title);
 
 export default function DocPractice({
   backgroundColor,
@@ -145,7 +139,6 @@ export default function DocPractice({
       <ThemeProvider theme={themes[type]}>
         <Header>
           {icon}
-          <Title level={4}>{type === 'do' ? 'Do' : 'Don’t'}</Title>
           <Markdown>{children}</Markdown>
         </Header>
       </ThemeProvider>

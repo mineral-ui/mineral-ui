@@ -27,24 +27,24 @@ import IconStreetview from 'mineral-ui-icons/IconStreetview';
 export default [
   {
     type: 'do',
-    title: 'use Icons with labels',
+    description:
+      'Use Icons with labels. Icons are used to reinforce a message.',
     example: (
       <Button iconStart={<IconRefresh />} primary>
         Refresh
       </Button>
-    ),
-    description: 'Icons are used to reinforce a message.'
+    )
   },
   {
     type: 'dont',
-    title: 'use Icons without context',
-    example: <Button primary iconStart={<IconLocalPlay />} />,
-    description:
-      'Icons can be small and should not be presented without labels unless they are very simple and well-known.'
+    description: `Don't present an Icon without a label unless it is very simple
+and well-known.`,
+    example: <Button primary iconStart={<IconLocalPlay />} />
   },
   {
     type: 'dont',
-    title: 'use Icons as decoration',
+    description: `Don't use Icons as decoration. In large lists of Buttons,
+avoid using Icons on all elements, as they become visual noise.`,
     example: (
       <div>
         <Button minimal iconStart={<IconLocalOffer />}>
@@ -60,8 +60,6 @@ export default [
           Street View
         </Button>
       </div>
-    ),
-    description:
-      'In large lists of Buttons, avoid using Icons on all elements, as they become visual noise.'
+    )
   }
 ];
