@@ -36,7 +36,7 @@ type Props = {
   location?: any
 };
 
-type DemoRoute = { slug: string, title: string };
+type DemoRoute = { slug: string, title: string, description: string };
 
 const siteTheme = {
   baseline_1: pxToEm(12),

@@ -1,5 +1,5 @@
-Mineral UI helps you quickly build React apps with high-quality, accessible components.
-Use npm or yarn to get components and themes that have been tested across modern browsers.
+Mineral UI helps you quickly build React apps with our library of high-quality, accessible components.
+Use npm or yarn to install components and themes that have been tested across modern browsers.
 
 Below are a few simple steps to apply consistent styling and hierarchy to your app,
 so you can focus on solving business problems.

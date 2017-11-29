@@ -35,6 +35,7 @@ export default function DocProps({ propDoc, title }: Props) {
   return (
     <Section>
       <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>
+      <p>The {title} component takes the following React props.</p>
       {propDoc ? (
         <div>
           <PropTable propDoc={propDoc} />
