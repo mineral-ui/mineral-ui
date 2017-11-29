@@ -27,7 +27,7 @@ type Props = {
   demoRoutes: { [string]: DemoRoute }
 };
 
-type DemoRoute = { slug: string, title: string };
+type DemoRoute = { slug: string, title: string, description: string };
 
 const AsyncHome = Loadable({
   loader: () => import('./pages/Home')
@@ -48,8 +48,9 @@ export default function Router({ demoRoutes }: Props) {
           path={page.path}
           render={() => {
             const pageMeta = {
-              title: `${page.title} | Mineral UI`,
-              canonicalLink: `https://mineral-ui.com${page.path}`
+              canonicalLink: `https://mineral-ui.com${page.path}`,
+              description: page.description,
+              title: `${page.title} | Mineral UI`
             };
             const pageProps = {
               headerContent: getPageHeader(section.heading, page.title),
@@ -85,6 +86,7 @@ export default function Router({ demoRoutes }: Props) {
             chromeless,
             demoRoutes,
             pageMeta: {
+              description: selectedDemo.description,
               title: `${selectedDemo.title} | Mineral UI`
             }
           };
@@ -121,8 +123,9 @@ export default function Router({ demoRoutes }: Props) {
           const componentId = route.match.params.componentId || 'button';
           const selectedDemo = demoRoutes[componentId];
           const pageMeta = {
-            title: `${selectedDemo.title} | Mineral UI`,
-            canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`
+            canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`,
+            description: selectedDemo.description,
+            title: `${selectedDemo.title} | Mineral UI`
           };
           const pageProps = {
             demoRoutes,

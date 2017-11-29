@@ -46,12 +46,13 @@ type Props = {
   headerContent?: React$Node,
   pageMeta?: {
     canonicalLink?: string,
+    description?: string,
     title?: string
   },
   type?: number
 };
 
-type DemoRoute = { slug: string, title: string };
+type DemoRoute = { slug: string, title: string, description: string };
 
 type State = {
   isNavOpen: boolean
@@ -464,6 +465,9 @@ export default class Page extends Component<Props, State> {
           <link rel="canonical" href={pageMeta.canonicalLink} />
         )}
         <title>{pageMeta.title}</title>
+        {pageMeta.description && (
+          <meta name="description" content={pageMeta.description} />
+        )}
       </Helmet>
     );
 

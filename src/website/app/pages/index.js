@@ -19,6 +19,7 @@ import Loadable from '../Loadable';
 
 type Page = {
   component: React$ComponentType<*>,
+  description: string,
   id?: string,
   path: string,
   hiddenInNav?: boolean,
@@ -40,6 +41,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./GettingStarted')
         }),
+        description:
+          'Mineral UI’s React component library helps you quickly build elegantly accessible apps. Use npm or yarn to install components and themes tested across modern browsers.',
         path: '/getting-started',
         title: 'Getting Started'
       },
@@ -47,6 +50,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./Color')
         }),
+        description:
+          'Make your apps beautiful and accessibile with Mineral UI color palettes and themes.',
         path: '/color',
         title: 'Color'
       },
@@ -54,6 +59,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./Typography')
         }),
+        description:
+          'Mineral UI provides a simple set of typographic elements to easily apply structure to your interface.',
         path: '/typography',
         title: 'Typography'
       }
@@ -66,6 +73,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./ComponentStatus')
         }),
+        description:
+          'Check back here anytime to see current component status information for Mineral UI. Check our GitHub for issues or to suggest a new feature!',
         path: '/component-status',
         title: 'Component Status'
       },
@@ -73,6 +82,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./Roadmap')
         }),
+        description:
+          'Mineral UI is committed to stable and predictable releases. Learn more about our plans for the future.',
         path: '/roadmap',
         title: 'Roadmap'
       }
@@ -85,6 +96,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./Styling')
         }),
+        description:
+          'Mineral UI is built on a design system with styles ready to go out of the box. Learn the techniques for customizing styles in your application.',
         path: '/styling',
         title: 'Styling'
       },
@@ -92,6 +105,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./Theming')
         }),
+        description:
+          'Theming is a core concept in Mineral UI. Mineral UI makes it simple to implement and maintain theming across your app.',
         path: '/theming',
         title: 'Theming'
       },
@@ -99,6 +114,8 @@ const sections: Array<Section> = [
         component: Loadable({
           loader: () => import('./PaletteDemo')
         }),
+        description:
+          'Select from the main theme colors in the picker to see how components are affected. Mineral UI themes are composed of a main color ramp and the base gray ramp.',
         path: '/palette-demo',
         title: 'Palette Demo'
       }

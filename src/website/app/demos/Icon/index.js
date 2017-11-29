@@ -28,7 +28,7 @@ export default {
   examples,
   slug: 'icon',
   title: 'Icon',
-  whenHowToUse: `Icons can symbolize actions and objects in your interace.
+  whenHowToUse: `Icons can symbolize actions and objects in your interface.
 Use icons in combination with labels to help users more quickly process your UI.
 
 Don't use too many icons or you run the risk of creating visual clutter.
