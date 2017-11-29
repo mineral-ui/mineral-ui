@@ -18,6 +18,13 @@
 import card from './card';
 import arbitraryChildren from './arbitraryChildren';
 import clickable from './clickable';
+import importSyntax from './importSyntax';
 import orderOfSections from './orderOfSections';
 
-export default [card, clickable, arbitraryChildren, orderOfSections];
+export default [
+  importSyntax,
+  card,
+  clickable,
+  arbitraryChildren,
+  orderOfSections
+];

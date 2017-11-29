@@ -16,5 +16,6 @@
 
 /* @flow */
 import menuGroup from './menuGroup';
+import importSyntax from './importSyntax';
 
-export default [menuGroup];
+export default [importSyntax, menuGroup];

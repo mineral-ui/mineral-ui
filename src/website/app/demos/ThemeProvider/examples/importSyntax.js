@@ -15,8 +15,10 @@
  */
 
 /* @flow */
-import data from './data';
-import importSyntax from './importSyntax';
-import menu from './menu';
-
-export default [importSyntax, menu, data];
+export default {
+  id: 'import-syntax',
+  title: 'Import Syntax',
+  description: `\`\`\`
+import { ThemeProvider } from 'mineral-ui/themes';
+\`\`\``
+};

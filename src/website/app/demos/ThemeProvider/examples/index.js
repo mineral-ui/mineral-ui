@@ -16,5 +16,6 @@
 
 /* @flow */
 import themeProvider from './themeProvider';
+import importSyntax from './importSyntax';
 
-export default [themeProvider];
+export default [importSyntax, themeProvider];

@@ -15,8 +15,18 @@
  */
 
 /* @flow */
-import data from './data';
-import importSyntax from './importSyntax';
-import menu from './menu';
+export default {
+  id: 'import-syntax',
+  title: 'Import Syntax',
+  description: `To render a custom icon, use the default export from the \`mineral-ui/Icon\` package.
 
-export default [importSyntax, menu, data];
+\`\`\`
+import Icon from 'mineral-ui-icons/Icon';
+\`\`\`
+
+Import Mineral UI's provided icons directly from the \`mineral-ui-icons\` package.
+
+\`\`\`
+import IconSentimentSatisfied from 'mineral-ui-icons/IconSentimentSatisfied';
+\`\`\``
+};

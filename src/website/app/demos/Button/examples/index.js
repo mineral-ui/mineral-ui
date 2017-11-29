@@ -15,6 +15,7 @@
  */
 
 /* @flow */
+import importSyntax from './importSyntax';
 import regular from './regular';
 import circular from './circular';
 import icons from './icons';
@@ -28,6 +29,7 @@ import states from './states';
 import truncation from './truncation';
 
 export default [
+  importSyntax,
   primary,
   regular,
   minimal,

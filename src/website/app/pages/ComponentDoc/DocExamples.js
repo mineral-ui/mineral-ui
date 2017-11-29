@@ -26,8 +26,8 @@ type Example = {
   hideSource?: boolean,
   id: string,
   propValues?: Object,
-  scope: Object,
-  source: string,
+  scope?: Object,
+  source?: string,
   title: React$Node
 };
 
