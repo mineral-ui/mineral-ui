@@ -17,5 +17,6 @@
 /* @flow */
 import cardBlock from './cardBlock';
 import arbitraryChildren from './arbitraryChildren';
+import importSyntax from './importSyntax';
 
-export default [cardBlock, arbitraryChildren];
+export default [importSyntax, cardBlock, arbitraryChildren];

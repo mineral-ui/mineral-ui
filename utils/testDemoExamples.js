@@ -22,9 +22,9 @@ import ThemeProvider from '../src/themes/ThemeProvider';
 
 type Example = {
   title: React$Node,
-  scope: Object,
+  scope?: Object,
   id: string,
-  source: string
+  source?: string
 };
 type Examples = Array<Example>;
 type Options = {
@@ -41,7 +41,7 @@ export default function testDemoExamples(
   }
 
   return describe('demo examples', () => {
-    examples.map(example => {
+    examples.filter(({ scope, source }) => scope && source).map(example => {
       it(example.id, () => {
         const component = mount(
           <ThemeProvider>

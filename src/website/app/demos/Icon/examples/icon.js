@@ -19,12 +19,8 @@ import IconSentimentSatisfied from 'mineral-ui-icons/IconSentimentSatisfied';
 
 export default {
   id: 'icon',
-  title: 'Importing Icons',
-  description: `Directly import bundled icons.
-
-\`import IconSentimentSatisfied from 'mineral-ui-icons/IconSentimentSatisfied'\`
-
-Icons are used to make your interface easier to scan.`,
+  title: 'Icons',
+  description: `Icons are used to make your interface easier to scan.`,
   scope: { IconSentimentSatisfied },
   source: `<IconSentimentSatisfied />`
 };

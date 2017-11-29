@@ -18,6 +18,7 @@
 import scrolling from './scrolling';
 import controlled from './controlled';
 import disabled from './disabled';
+import importSyntax from './importSyntax';
 import onOpenClose from './onOpenClose';
 import overflow from './overflow';
 import placement from './placement';
@@ -26,6 +27,7 @@ import portal from './portal';
 import title from './title';
 
 export default [
+  importSyntax,
   popover,
   title,
   placement,

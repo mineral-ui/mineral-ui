@@ -35,8 +35,8 @@ type Props = {
   description?: React$Node,
   hideSource?: boolean,
   id: string,
-  scope: Object,
-  source: string,
+  scope?: Object,
+  source?: string,
   standalone?: boolean,
   title?: React$Node
 };
@@ -131,8 +131,16 @@ export default function ComponentDocExample({
     source
   };
 
+  const liveCode =
+    scope && source ? (
+      <LiveProvider
+        {...liveProviderProps}
+        chromeless={standalone && chromeless}
+      />
+    ) : null;
+
   return standalone && chromeless ? (
-    <LiveProvider {...liveProviderProps} chromeless />
+    liveCode
   ) : (
     <Root {...rootProps}>
       {standalone && (
@@ -144,7 +152,7 @@ export default function ComponentDocExample({
         {!standalone ? <Link to={id}>{title}</Link> : title}
       </Title>
       <Description scope={{ Callout }}>{description || ''}</Description>
-      <LiveProvider {...liveProviderProps} />
+      {liveCode}
     </Root>
   );
 }
