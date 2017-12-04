@@ -15,14 +15,15 @@
  */
 
 /* @flow */
+import React from 'react';
 import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
 } from '../../styles';
-import Markdown from './Markdown';
+import _Markdown from './Markdown';
 
-export default createStyledComponent(Markdown, ({ theme }) => ({
+const Markdown = createStyledComponent(_Markdown, ({ theme }) => ({
   '& > p': {
     color: theme.color_gray_70,
     fontSize: pxToEm(20),
@@ -40,3 +41,7 @@ export default createStyledComponent(Markdown, ({ theme }) => ({
     }
   }
 }));
+
+export default function Intro(props: {}) {
+  return <Markdown {...props} />;
+}
