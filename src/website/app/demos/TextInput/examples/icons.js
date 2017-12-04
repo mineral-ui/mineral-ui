@@ -15,30 +15,25 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+import TextInput from '../../../../../TextInput';
+import IconCloud from 'mineral-ui-icons/IconCloud';
+import DemoLayout from '../components/DemoLayout';
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
+export default {
+  id: 'icons',
+  title: 'With Icons',
+  description: `TextInputs can contain [Icons](../icon) at their start, end, or both.`,
+  scope: { DemoLayout, IconCloud, TextInput },
+  source: `
+  () => {
+    const icon = <IconCloud />;
 
-export default createKeyMap(demos, 'slug');
+    return(
+      <DemoLayout>
+        <TextInput iconStart={icon} />
+        <TextInput iconEnd={icon} />
+        <TextInput iconStart={icon} iconEnd={icon} />
+      </DemoLayout>
+    );
+  }`
+};

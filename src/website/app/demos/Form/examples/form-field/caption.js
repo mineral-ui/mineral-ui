@@ -15,30 +15,20 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+import TextInput from '../../../../../../TextInput';
+import FormField from '../../../../../../Form/FormField';
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
-
-export default createKeyMap(demos, 'slug');
+export default {
+  id: 'caption',
+  title: 'Caption',
+  description: `Use a \`caption\` to display not-so-brief additional information,
+such as help text or an [error message](#validation).`,
+  scope: { FormField, TextInput },
+  source: `
+    <FormField
+      label="Name"
+      caption="This is help text">
+      <TextInput />
+    </FormField>
+  `
+};

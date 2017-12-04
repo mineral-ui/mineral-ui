@@ -15,30 +15,16 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+export default {
+  id: 'import-syntax',
+  title: 'Import Syntax',
+  description: `\`\`\`
+import TextInput from 'mineral-ui/TextInput';
+\`\`\`
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
-
-export default createKeyMap(demos, 'slug');
+<Callout title="Note">
+  TextInputs should be wrapped in a <a href="../form-field" key={0}>FormField</a> to
+  provide an accessible label and other embellishments. Examples here omit
+  labels for clarity and brevity.
+</Callout>`
+};

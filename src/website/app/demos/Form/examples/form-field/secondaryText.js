@@ -15,30 +15,21 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+import TextInput from '../../../../../../TextInput';
+import FormField from '../../../../../../Form/FormField';
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
-
-export default createKeyMap(demos, 'slug');
+export default {
+  id: 'secondaryText',
+  title: 'Secondary Text',
+  description: `Use the \`secondaryText\` prop to provide brief additional
+details to the label text. Note that if \`secondaryText\` is provided, it will
+display instead of \`requiredText\`.`,
+  scope: { FormField, TextInput },
+  source: `
+    <FormField
+      label="Name"
+      secondaryText="Optional">
+      <TextInput />
+    </FormField>
+  `
+};

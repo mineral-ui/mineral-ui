@@ -17,22 +17,22 @@ Statuses:
   [deprecated]
 -->
 
-| Component                                   | Status            |
-|---------------------------------------------|-------------------|
-| [Button](/components/button)                | [available]       |
-| [Card](/components/card)                    | [available]       |
-| [Dropdown](/components/dropdown)            | [available]       |
-| [Icon](/components/icon)                    | [available]       |
-| [Link](/components/link)                    | [available]       |
-| [Menu](/components/menu)                    | [available]       |
-| [Popover](/components/popover)              | [available]       |
-| [ThemeProvider](/components/theme-provider) | [available]       |
-| Input                                       | [in development]  |
-| Form                                        | [in development]  |
-| Select                                      | [in development]  |
-| TextArea                                    | [planned]         |
-| Tooltip                                     | [planned]         |
-| DataTable                                   |                   |
-| DatePicker                                  |                   |
-| Grid                                        |                   |
-| Navigation                                  |                   |
+| Component                                   | Status           |
+|---------------------------------------------|------------------|
+| [Button](/components/button)                | [available]      |
+| [Card](/components/card)                    | [available]      |
+| [Dropdown](/components/dropdown)            | [available]      |
+| [Form](/components/form-field) ~ new        | [available]      |
+| [Icon](/components/icon)                    | [available]      |
+| [Link](/components/link)                    | [available]      |
+| [Menu](/components/menu)                    | [available]      |
+| [Popover](/components/popover)              | [available]      |
+| [TextInput](/components/text-input) ~ new   | [available]      |
+| [ThemeProvider](/components/theme-provider) | [available]      |
+| Select                                      | [planned]        |
+| TextArea                                    | [planned]        |
+| Tooltip                                     | [planned]        |
+| DataTable                                   |                  |
+| DatePicker                                  |                  |
+| Grid                                        |                  |
+| Navigation                                  |                  |

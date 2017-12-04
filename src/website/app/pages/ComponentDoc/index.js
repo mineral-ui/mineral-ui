@@ -44,6 +44,7 @@ type Props = {
     title: string,
     canonicalLink: string
   },
+  propsComment?: string | React$Element<*>,
   title: string,
   whenHowToUse?: string
 };
@@ -91,10 +92,11 @@ const DocIntro = ({ children }: { children: string }) => (
 
 export default function ComponentDoc({
   bestPractices,
+  componentTheme,
   doc,
   examples,
   hidePropDoc,
-  componentTheme,
+  propsComment,
   title,
   whenHowToUse,
   ...restProps
@@ -112,7 +114,7 @@ export default function ComponentDoc({
   };
   delete rootProps.subcomponent;
   delete rootProps.slug;
-  const propProps = { propDoc, title };
+  const propProps = { propDoc, propsComment, title };
   const themeVariablesProps = {
     baseTheme: mineralTheme,
     componentTheme,
