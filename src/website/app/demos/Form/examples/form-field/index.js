@@ -15,30 +15,24 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+import basic from './basic';
+import caption from './caption';
+import hideLabel from './hideLabel';
+import importSyntax from './importSyntax';
+import required from './required';
+import rtl from './rtl';
+import secondaryText from './secondaryText';
+import validation from './validation';
+import variants from './variants';
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
-
-export default createKeyMap(demos, 'slug');
+export default [
+  importSyntax,
+  basic,
+  required,
+  secondaryText,
+  caption,
+  variants,
+  hideLabel,
+  validation,
+  rtl
+];

@@ -52,6 +52,24 @@ export default {
     slug: 'dropdown',
     title: 'Dropdown'
   },
+  'form-field': {
+    description:
+      'FormFields wrap an input with a label and other features.  Wrap each input in your app with a FormField for appropriate accessibilty and styling.',
+    slug: 'form-field',
+    title: 'FormField'
+  },
+  'form-fieldset': {
+    description:
+      'FormFieldsets wrap related FormFields and provide a legend.  Wrap related FormFields in a FormFieldset with a useful legend to help communicate relationships.',
+    slug: 'form-fieldset',
+    title: 'FormFieldset'
+  },
+  'form-field-divider': {
+    description:
+      'FormFieldDividers separate FormFields.  FormFieldDividers are best used to call attention to a subtle difference between fields.',
+    slug: 'form-field-divider',
+    title: 'FormFieldDivider'
+  },
   icon: {
     description:
       'Icons symbolize actions and objects in your interface. Use icons in combination with labels to help users more quickly process your UI.',
@@ -92,6 +110,12 @@ export default {
       'Popovers display supporting content when your user interacts with an associated trigger. Use Popovers to implement other custom behaviors or widgets.',
     slug: 'popover',
     title: 'Popover'
+  },
+  'text-input': {
+    description:
+      'TextInputs accept data from the user.  Use a TextInput to accept brief, free-form input from a user',
+    slug: 'text-input',
+    title: 'TextInput'
   },
   'theme-provider': {
     description:

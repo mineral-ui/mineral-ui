@@ -40,12 +40,13 @@ const Root = createStyledComponent('div', ({ theme, variant }) => ({
 
   // These styles from Link & SiteLink. Necessary because you cannot use
   // markdown within this component if it itself is used within Markdown.
-  '& a:link': {
-    color: darken(0.1, theme.SiteLink_color),
-    fontWeight: theme.fontWeight_semiBold,
-    textDecoration: 'underline',
-    textDecorationColor: rgba(theme.color_text_primary, 0.5),
-
+  '& a': {
+    '&:link': {
+      color: darken(0.1, theme.SiteLink_color),
+      fontWeight: theme.fontWeight_semiBold,
+      textDecoration: 'underline',
+      textDecorationColor: rgba(theme.color_text_primary, 0.5)
+    },
     '&:visited': {
       color: desaturate(0.2, theme.SiteLink_color)
     },
