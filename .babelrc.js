@@ -26,7 +26,6 @@ module.exports = {
   ],
   plugins: (() => {
     let plugins = [
-      'polished',
       'transform-object-rest-spread',
       'transform-class-properties',
       'flow-react-proptypes',
@@ -49,6 +48,9 @@ module.exports = {
 
     if (NODE_ENV === 'test') {
       plugins.push('dynamic-import-node');
+    } else {
+      // This plugin breaks Jest code coverage on CI
+      plugins.push('polished');
     }
 
     if (NODE_ENV === 'production') {
