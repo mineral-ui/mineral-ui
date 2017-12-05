@@ -2,9 +2,6 @@ const path = require('path');
 const { RemoteBrowserTarget } = require('happo.io');
 
 const babelLoader = require.resolve('babel-loader');
-const cssLoader = require.resolve('css-loader');
-const rawLoader = require.resolve('raw-loader');
-const styleLoader = require.resolve('style-loader');
 
 const { HAPPO_KEY, HAPPO_SECRET } = process.env;
 
@@ -18,26 +15,23 @@ module.exports = {
   // Set up the browsers and viewports we want to render our happo examples in.
   targets: {
     'chrome': new RemoteBrowserTarget('chrome', {
-      viewport: '800x600',
-    }),
-    'chrome-mobile': new RemoteBrowserTarget('chrome', {
-      viewport: '320x640',
+      viewport: '800x600'
     }),
     'internet explorer': new RemoteBrowserTarget('internet explorer', {
-      viewport: '800x600',
-    }),
+      viewport: '800x600'
+    })
   },
 
   // Make sure the OpenSans font is available
   stylesheets: [
-    'http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i',
+    'http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,greek'
   ],
 
   // Some examples depend on images found in `src/website/public`. By adding
   // that folder to the happo config, we make sure they are included in the test
   // run.
   publicFolders: [
-    path.resolve(__dirname, 'src/website/public'),
+    path.resolve(__dirname, 'src/website/public')
   ],
 
   // The <LiveProvider> wrapper adds a full-width div around the content. We can
@@ -54,18 +48,10 @@ module.exports = {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: babelLoader,
-        },
-        {
-          test: /\.md$/,
-          loader: rawLoader,
-        },
-        {
-          test: /\.css$/,
-          use: [styleLoader, cssLoader]
+          loader: babelLoader
         }
-      ],
+      ]
     };
     return config;
-  },
+  }
 };
