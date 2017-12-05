@@ -18,10 +18,7 @@ github.authenticate({
 
 const [owner, repo] = TRAVIS_REPO_SLUG.split('/');
 
-// Post comment on PR. We're not going to fail or pass any build, we're just
-// going to let them know if the PR resulted in any diffs. We do this because
-// many changes have expected diffs, and we don't want to tell people that
-// they've done something wrong.
+// Post a PR review comment.  Does not pass or fail a build.
 github.pullRequests.createReview(
   {
     body,

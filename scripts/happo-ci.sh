@@ -4,10 +4,26 @@
 # and current commit.
 
 # Make the whole script fail on errors
-set -euo pipefail
+set -eo pipefail
 
 # Bail if this build isn't triggered by a PR
 [ -z "$TRAVIS_PULL_REQUEST_SHA" ] && echo 'Not a a pull request' && exit 0
+
+# Bail if the required environment variables are not defined
+# This prevents the script from failing on PR's from repo forks
+if [[ -z $GHE_TOKEN || -z $HAPPO_KEY || -z $HAPPO_SECRET ]]; then
+  echo 'One or more environment variables were undefined.
+
+  GHE_TOKEN
+  HAPPO_KEY
+  HAPPO_SECRET
+
+Skipping Happo tests...'
+  exit 0
+fi
+
+# Fail on unset variables
+set -u pipefail
 
 # The PREVIOUS_SHA will be equal to the commit that this PR is based on (which
 # is usually some commit on the master branch). Travis gives us a range of
