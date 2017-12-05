@@ -57,3 +57,23 @@ npm run jest -- --watch
 1. Open [chrome://inspect](chrome://inspect) in Chrome.
 1. Under "Remote target", click on "inspect". A new debugger window will open up.
 1. Click play once to get past the initial breakpoint.  The debugger should then stop at your breakpoint.
+
+## Visual diff tests
+
+Visual diff testing is performed using [Happo.io](https://happo.io/).
+
+Visual diff tests are run automatically on local pull-requests.  They are not run on pull-requests from repo forks as they do not have access to the respective environment variables.
+
+Given that you have valid `HAPPO_KEY` and `HAPPO_SECRET` environment variables, the following commands can be used to execute visual diff tests.
+
+#### Run all visual diff tests and generate a report
+```sh
+npm run happo run
+```
+
+#### Watch for file changes and re-generate report
+```sh
+npm run happo dev
+```
+
+More information can be found at https://github.com/enduire/happo.io
