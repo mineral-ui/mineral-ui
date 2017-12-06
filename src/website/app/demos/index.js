@@ -20,20 +20,24 @@ import createKeyMap from '../utils/createKeyMap';
 import button from './Button';
 import card from './Card';
 import dropdown from './Dropdown';
+import form from './Form';
 import icon from './Icon';
 import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
+import textInput from './TextInput';
 import themeProvider from './ThemeProvider';
 
 const demos = flatten([
   button,
   card,
   dropdown,
+  form,
   icon,
   link,
   menu,
   popover,
+  textInput,
   themeProvider
 ]);
 

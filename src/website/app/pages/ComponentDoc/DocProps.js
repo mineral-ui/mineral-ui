@@ -17,30 +17,38 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../styles';
-import Callout from '../../Callout';
+import _Callout from '../../Callout';
 import PropTable from '../../PropTable';
 import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
 
 type Props = {
   propDoc?: Object,
+  propsComment?: string | React$Element<*>,
   title: string
 };
 
+const Callout = createStyledComponent(_Callout, ({ theme }) => ({
+  marginTop: theme.baseline_2
+}));
 const PropsComment = createStyledComponent('p', {
   fontStyle: 'italic'
 });
 
-export default function DocProps({ propDoc, title }: Props) {
+export default function DocProps({ propDoc, propsComment, title }: Props) {
   return (
     <Section>
       <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>
       {propDoc ? (
         <div>
           <PropTable propDoc={propDoc} />
-          <PropsComment>
-            Undocumented properties will be applied to the root element.
-          </PropsComment>
+          {propsComment ? (
+            <Callout title="Note">{propsComment}</Callout>
+          ) : (
+            <PropsComment>
+              Undocumented properties will be applied to the root element.
+            </PropsComment>
+          )}
         </div>
       ) : (
         <Callout title="Note">

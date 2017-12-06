@@ -21,6 +21,8 @@ import { ThemeProvider } from '../../../../themes';
 import Button from '../../../../Button';
 import _Card, { CardBlock, CardTitle } from '../../../../Card';
 import Dropdown from '../../../../Dropdown';
+import FormField from '../../../../Form/FormField';
+import TextInput from '../../../../TextInput';
 import IconBatteryCharging50 from 'mineral-ui-icons/IconBatteryCharging50';
 import IconQuestionAnswer from 'mineral-ui-icons/IconQuestionAnswer';
 import IconDirectionsBoat from 'mineral-ui-icons/IconDirectionsBoat';
@@ -109,6 +111,9 @@ export default function Demo({ theme }: Props) {
           <Button primary>Primary Button</Button>
           <Button>Regular Button</Button>
           <Button minimal>Minimal Button</Button>
+          <FormField label="TextInput">
+            <TextInput />
+          </FormField>
           <CardHolder>
             <Card>
               <CardTitle subtitle="Card subtitle here">Card Title</CardTitle>
