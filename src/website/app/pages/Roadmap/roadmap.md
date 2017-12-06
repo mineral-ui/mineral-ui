@@ -13,8 +13,9 @@ Our day-to-day work always has an eye towards the bigger picture and the goals o
 ### Publish CA Technologies' Design System
 
 * Write guideline pages explaining the different parts of our system ~ done
-* Crystallize a home page that delights and excites potential users ~ in progress
-* Devise community pages that engage contributors
+* Crystallize a home page that delights and excites potential users ~ done
+* Streamline users' experience on our site using behavioral analysis ~ in progress
+* Demonstrate our experience in a writing section on our site ~ in progress
 
 ### Build Components
 
@@ -23,7 +24,13 @@ Our day-to-day work always has an eye towards the bigger picture and the goals o
 * Forge some higher-level components that stitch several of our base components together
 * Synthesize a stylistically robust DataTable that is performant under load
 
+### Engage the Community
+
+* Produce apparel and other items to reward contributions ~ in progress
+* Speak at a local tech events to encourage contributions and adoption
+
 ### Adoption Across CA Technologies' Products
 
-* Fully Support CA Technologies API Management UI ~ in progress
-* Identify our next early adopter product
+* Support CA Technologies API Management UI ~ done
+* Enable a product UI team to use and evangelize Mineral UI ~ in progress
+* Assess CA Technologies' front-end capabilities across products
