@@ -64,19 +64,23 @@ export default function createTheme(
 
   const primaries = createColorRamp(baseColor, 'color_theme', color);
 
+  // prettier-ignore
   return {
     backgroundColor_disabled: color.gray_20,
     backgroundColor_danger: color.red_60,
+    backgroundColor_danger_muted: color.red_20,
     backgroundColor_danger_active: color.red_70,
     backgroundColor_danger_activeMuted: color.red_30,
     backgroundColor_danger_focus: color.red_60,
     backgroundColor_danger_hover: color.red_50,
     backgroundColor_success: color.green_80,
+    backgroundColor_success_muted: color.green_20,
     backgroundColor_success_active: color.green_90,
     backgroundColor_success_activeMuted: color.green_30,
     backgroundColor_success_focus: color.green_80,
     backgroundColor_success_hover: color.green_70,
     backgroundColor_warning: color.orange_60,
+    backgroundColor_warning_muted: color.orange_20,
     backgroundColor_warning_active: color.orange_70,
     backgroundColor_warning_activeMuted: color.orange_30,
     backgroundColor_warning_focus: color.orange_60,
@@ -94,14 +98,17 @@ export default function createTheme(
     borderColor_danger_active: color.red_70,
     borderColor_danger_focus: color.red_70,
     borderColor_danger_hover: color.red_70,
+    borderColor_danger_muted: color.red_40,
     borderColor_success: color.green_70,
     borderColor_success_active: color.green_80,
     borderColor_success_focus: color.green_80,
     borderColor_success_hover: color.green_80,
+    borderColor_success_muted: color.green_40,
     borderColor_warning: color.orange_60,
     borderColor_warning_active: color.orange_70,
     borderColor_warning_focus: color.orange_70,
     borderColor_warning_hover: color.orange_70,
+    borderColor_warning_muted: color.orange_40,
 
     borderRadius_1: pxToEm(3),
 
@@ -143,10 +150,8 @@ export default function createTheme(
     direction: 'ltr',
 
     fontFamily: 'Open Sans',
-    fontFamily_system:
-      '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-    fontFamily_monospace:
-      '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
+    fontFamily_system: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+    fontFamily_monospace: '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
 
     fontSize_base,
     fontSize_h1: pxToEm(34),
@@ -167,11 +172,11 @@ export default function createTheme(
     lineHeight: 1.25,
     lineHeight_prose: 1.5,
 
-    shadow_1: '0 1px 2px 0 rgba(0,0,0,0.4)',
-    shadow_2: '0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 2px 0 rgba(0,0,0,0.4)',
-    shadow_3: '0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.4)',
-    shadow_4: '0 8px 16px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.4)',
-    shadow_5: '0 24px 24px -8px rgba(0,0,0,0.4), 0 8px 16px 0 rgba(0,0,0,0.4)',
+    shadow_1: '0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)',
+    shadow_2: '0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)',
+    shadow_3: '0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)',
+    shadow_4: '0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)',
+    shadow_5: '0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)',
 
     size_small: pxToEm(24),
     size_medium: pxToEm(32),
