@@ -53,6 +53,7 @@ import getStarted from './content/getStarted.md';
 import guidelines from './content/guidelines.md';
 import intro from './content/intro.md';
 import themePlayground from './content/themePlayground.md';
+import structuredData from './content/structuredData';
 const floatingMineralsSvg = require('!!raw-loader!../../../public/images/minerals.svg');
 
 type Props = {};
@@ -676,6 +677,9 @@ export default class Home extends Component<Props, State> {
                 <link rel="canonical" href={pageMeta.canonicalLink} />
                 <meta name="description" content={pageMeta.description} />
                 <title>{pageMeta.title}</title>
+                <script type="application/ld+json">
+                  {JSON.stringify(structuredData)}
+                </script>
               </Helmet>
 
               <ThemeProvider theme={heroTheme}>
