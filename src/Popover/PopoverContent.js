@@ -100,15 +100,9 @@ const Root = createStyledComponent(
   }
 );
 
-/**
- * Temporary overrides until Card theme updated to match updated design spec
- */
-const cardOverrides = ({ theme }) => {
-  return {
-    CardRow_margin: theme.space_stack_sm,
-    CardRow_padding: theme.space_inset_md
-  };
-};
+const cardOverrides = ({ theme }) => ({
+  CardRow_marginVertical: theme.space_stack_sm
+});
 
 const PopoverBlock = createThemedComponent(CardBlock, cardOverrides);
 const PopoverTitle = createThemedComponent(CardTitle, cardOverrides);
