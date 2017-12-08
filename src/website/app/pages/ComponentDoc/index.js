@@ -39,7 +39,6 @@ type Props = {
   description?: React$Node,
   doc: Object,
   examples?: Array<any>,
-  hidePropDoc?: boolean,
   pageMeta: {
     title: string,
     canonicalLink: string
@@ -93,7 +92,6 @@ export default function ComponentDoc({
   bestPractices,
   doc,
   examples,
-  hidePropDoc,
   componentTheme,
   title,
   whenHowToUse,
@@ -104,7 +102,6 @@ export default function ComponentDoc({
     bestPractices,
     componentTheme,
     examples,
-    props: !!(propDoc || componentTheme),
     whenHowToUse
   };
   const rootProps = {
@@ -125,10 +122,8 @@ export default function ComponentDoc({
       <DocSubNav {...subNavProps} />
       {examples && <DocHeading id="examples">Examples</DocHeading>}
       {examples && <DocExamples examples={examples} />}
-      {(!hidePropDoc || componentTheme) && (
-        <DocHeading id="api-and-theme">API & Theme</DocHeading>
-      )}
-      {!hidePropDoc && <DocProps {...propProps} />}
+      <DocHeading id="api-and-theme">API & Theme</DocHeading>
+      <DocProps {...propProps} />
       {componentTheme && <DocThemeVariables {...themeVariablesProps} />}
       {(whenHowToUse || bestPractices) && (
         <DocHeading id="usage">Usage</DocHeading>

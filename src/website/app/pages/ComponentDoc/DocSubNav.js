@@ -23,7 +23,6 @@ import Section from './DocSection';
 type Props = {
   bestPractices?: Array<Object>,
   examples?: Array<any>,
-  props?: boolean,
   whenHowToUse?: string
 };
 
@@ -65,7 +64,6 @@ const NavElement = createStyledComponent(Link, styles.navElement);
 export default function DocSubNav({
   bestPractices,
   examples,
-  props,
   whenHowToUse,
   ...restProps
 }: Props) {
@@ -84,13 +82,11 @@ export default function DocSubNav({
     );
   }
 
-  if (props) {
-    navElements.push(
-      <NavElement href="#api-and-theme" key="api-and-theme">
-        API & Theme
-      </NavElement>
-    );
-  }
+  navElements.push(
+    <NavElement href="#api-and-theme" key="api-and-theme">
+      API & Theme
+    </NavElement>
+  );
 
   if (whenHowToUse || bestPractices) {
     navElements.push(
