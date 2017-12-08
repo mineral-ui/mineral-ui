@@ -68,7 +68,8 @@ const Root = createStyledComponent(
 );
 
 /**
- * FormFieldset wraps related [FormFields](../form-field) and provides a legend.
+ * FormFieldsets group related [FormFields](../form-field) and provide a legend.
+ * Grouping FormFields provides context clues to users and enhances accessibility.
  */
 export default function FormFieldset({
   children,

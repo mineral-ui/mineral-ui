@@ -22,8 +22,8 @@ export default {
   id: 'secondaryText',
   title: 'Secondary Text',
   description: `Use the \`secondaryText\` prop to provide brief additional
-details to the label text. Note that if \`secondaryText\` is provided, it will
-display instead of \`requiredText\`.`,
+details to the label text. Note that if \`requiredText\` is provided, it
+displays instead of \`secondaryText\`.`,
   scope: { FormField, TextInput },
   source: `
     <FormField

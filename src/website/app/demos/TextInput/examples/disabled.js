@@ -20,7 +20,7 @@ import TextInput from '../../../../../TextInput';
 export default {
   id: 'disabled',
   title: 'Disabled',
-  description: `The \`disabled\` prop indicates that the input is not available
+  description: `Use the \`disabled\` prop to indicate that your input is not available
 for interaction.`,
   scope: { TextInput },
   source: `

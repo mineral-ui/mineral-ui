@@ -46,7 +46,19 @@ export default [
     slug: 'form-field',
     title: 'FormField',
     whenHowToUse: `Wrap each input in your app with a FormField for appropriate
-accessibility and styling.`
+accessibility and styling.
+
+Labels should be short (1-3 words) and indicate the type of input requested.
+Labels are not meant to explain the intent of the form as a whole.
+
+Only use [Sentence case](https://en.wikipedia.org/wiki/Letter_case#Sentence_case) for labels.
+
+Placeholder texts are example input values, not instructions, as the contrast is too low to be accessible.
+
+Do not use an asterisk in labels for required fields; use the \`required\` attribute instead.
+
+Error text should be short and concise, telling the user how to fix the problem.
+Form errors should be shown next to the pertinent input field – as opposed to the top of the form – so the user knows exactly what to change.`
   },
   {
     bestPractices: bestPractices.formFieldset,
@@ -55,9 +67,10 @@ accessibility and styling.`
     examples: formFieldsetExamples,
     slug: 'form-fieldset',
     title: 'FormFieldset',
-    whenHowToUse: `Groups of related inputs (which themselves should be wrapped
-in [FormFields](../form-field)) should be wrapped in a FormFieldset with a
-useful legend.`
+    whenHowToUse: `Wrap groups of related inputs (which themselves should be wrapped
+in [FormFields](../form-field)) in a FormFieldset with a useful legend.
+
+Consider using FormFieldset instead of a heading element to improve accessibility.`
   },
   {
     bestPractices: bestPractices.formFieldDivider,

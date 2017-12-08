@@ -22,8 +22,9 @@ import FormField from '../../../../../../Form/FormField';
 export default {
   id: 'required',
   title: 'Required',
-  description: `Marking a FormField as required will display the \`requiredText\`
-and pass along the \`required\` prop to the child input.`,
+  description: `Mark a FormField as required to display the \`requiredText\`
+and pass the \`required\` prop along to the child input.
+Required text takes precedence over any provided \`secondaryText\`.`,
   scope: { DemoLayout, FormField, TextInput },
   source: `
     <DemoLayout>
