@@ -23,8 +23,8 @@ export default {
   id: 'basic',
   title: 'Basic Usage',
   description: `Wrap any number of [FormFields](../form-field) in a FormFieldset
-to group them together semantically. A brief, descriptive legend is especially
-useful for users of Accessibility Technology (AT), such as a screen reader.`,
+to semantically group them. A brief, descriptive legend is especially
+useful for users of Assistive Technology (AT), such as a screen reader.`,
   scope: { DemoLayout, FormField, FormFieldset, TextInput },
   source: `
     <FormFieldset legend="Login">

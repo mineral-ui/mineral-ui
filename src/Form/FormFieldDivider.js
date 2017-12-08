@@ -45,7 +45,11 @@ const Root = createStyledComponent(
 );
 
 /**
- * FormFieldDivider separates [FormFields](../form-field).
+ * FormFieldDivider separates [FormFields](../form-field) to group form inputs.
+ *
+ * FormFieldDividers help your users grok forms with several inputs by hinting
+ * at related fields, without explicitly adding a legend. Too many dividers will
+ * add unnecessary weight to your form.
  */
 export default function FormFieldDivider(props: Props) {
   return <Root {...props} role="separator" />;

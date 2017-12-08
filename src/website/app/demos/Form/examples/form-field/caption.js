@@ -22,7 +22,7 @@ export default {
   id: 'caption',
   title: 'Caption',
   description: `Use a \`caption\` to display not-so-brief additional information,
-such as help text or an [error message](#validation).`,
+such as help text or, along with a [variant](#variants), an [error message](#validation).`,
   scope: { FormField, TextInput },
   source: `
     <FormField

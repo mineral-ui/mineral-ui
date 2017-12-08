@@ -40,6 +40,13 @@ export default [
     whenHowToUse: `Use a TextInput to accept brief, free-form input from a user.
 Make sure you use the proper type, which is especially important for mobile users.
 Additionally, you should rarely use a TextInput outside of a
-[FormField](../form-field).`
+[FormField](../form-field).
+TextInputs should always be associated with a label so the user knows what information to provide.
+
+Be specific when choosing the \`type\` for your TextInput.
+Mobile devices will display different keyboards depending on the input type.
+
+Provide [additional attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Attributes) to aid frictionless interaction with your forms.
+E.g. \`autocorrect="off"\` on an input accepting a user's name.`
   }
 ];
