@@ -22,7 +22,7 @@ import FormField from '../../../../../../Form/FormField';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  description: `FormField can contain any input and will accessibly connect the
+  description: `FormField accepts any input, either to the \`input\` prop or as a child, accessibly connecting the
 label to it.`,
   scope: { DemoLayout, FormField, TextInput },
   source: `

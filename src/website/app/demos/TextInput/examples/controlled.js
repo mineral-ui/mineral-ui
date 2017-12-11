@@ -23,8 +23,8 @@ export default {
   id: 'controlled',
   title: 'Controlled',
   description: `In a controlled TextInput, the value is handled by a React
-component.  The value is set with the \`value\` prop and an \`onChange\`
-handler must be provided.`,
+component.  Set the value with the \`value\` prop and provide an \`onChange\`
+handler.`,
   scope: { Component, DemoLayout, TextInput },
   source: `
   () => {

@@ -123,6 +123,8 @@ const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Caption = createStyledComponent('div', styles.caption);
 
 /**
+ * Mineral UI allows your app to enhance form inputs with extra messaging, provide hints to users and help them fix errors.
+ *
  * The FormField component wraps an input with an accessible label and displays
  * optional secondary text or a message.
  */

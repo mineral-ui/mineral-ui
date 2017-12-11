@@ -22,9 +22,9 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'hide-label',
   title: 'Visually Hidden Label',
-  description: `If the purpose of a FormField is obvious from context and would
+  description: `If the purpose of a FormField is obvious from context and adding a label would
 negatively affect the design, as in the example below, you can use \`hideLabel\`
-to visually hide the label in a way that is still accessible.`,
+to visually hide the label while retaining accessibility.`,
   scope: { DemoLayout, FormField, TextInput },
   source: `
     <DemoLayout>
