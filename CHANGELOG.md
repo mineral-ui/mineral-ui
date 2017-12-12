@@ -1,3 +1,20 @@
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/mineral-ui/mineral-ui/compare/v0.12.0...v0.13.0) (2017-12-12)
+
+
+### Features
+
+* **form:** New components ([4baac24](https://github.com/mineral-ui/mineral-ui/commit/4baac24))
+* **text-input:** New component ([b3f409b](https://github.com/mineral-ui/mineral-ui/commit/b3f409b))
+* **themes:** Misc updates ([b45fb94](https://github.com/mineral-ui/mineral-ui/commit/b45fb94))
+
+
+### BREAKING CHANGES
+
+* **themes:** Remove “backgroundColor_input_*” keys
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/mineral-ui/mineral-ui/compare/v0.11.0...v0.12.0) (2017-11-17)
 
