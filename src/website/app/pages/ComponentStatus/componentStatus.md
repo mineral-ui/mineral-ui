@@ -29,8 +29,8 @@ Statuses:
 | [Popover](/components/popover)              | [available]      |
 | [TextInput](/components/text-input) ~ new   | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
+| TextArea                                    | [in development] |
 | Select                                      | [planned]        |
-| TextArea                                    | [planned]        |
 | Tooltip                                     | [planned]        |
 | DataTable                                   |                  |
 | DatePicker                                  |                  |
