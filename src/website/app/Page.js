@@ -165,6 +165,7 @@ const styles = {
       boxSizing: 'content-box',
       marginLeft: theme.sidebarWidth,
       maxWidth: theme.maxContentWidth,
+      overflow: 'hidden', // Neccessary because the nav sidebar is floated
       padding: `0 ${theme.SectionPaddingHorizontalWide} ${theme.baseline_6}`,
 
       '& > *': {
