@@ -19,7 +19,7 @@ export default {
   id: 'import-syntax',
   title: 'Import Syntax',
   description: `\`\`\`
-import Card, { CardTitle } from 'mineral-ui/Card';
+import Card, { CardActions } from 'mineral-ui/Card';
 \`\`\`
 
 <Callout title="Note">

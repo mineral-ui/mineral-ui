@@ -15,54 +15,45 @@
  */
 
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
+import { mineralTheme, ThemeProvider } from '../../../../../../themes';
 import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
-import loremIpsum from '../../components/loremIpsum';
+import loremIpsum from '../../components/loremIpsumRtl';
 
 export default {
-  id: 'complex-title',
-  title: 'Complex Title and Subtitle',
+  id: 'rtl',
+  title: 'Bidirectionality',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'Both the title and subtitle can contain a simple string or any HTML/React elements.',
+  description: `CardTitle reverses its alignment when the \`direction\` theme
+variable is set to \`rtl\` (right-to-left).`,
   scope: {
     Card,
     CardTitle,
     CardBlock,
-    createStyledComponent,
     loremIpsum,
-    DemoLayout
+    DemoLayout,
+    ThemeProvider
   },
   source: `
-    () => {
-      const Status = createStyledComponent('span', {
-        color: 'red',
-        fontSize: '0.6em',
-
-        '&:before': {
-          backgroundColor: 'red',
-          borderRadius: '0.8em',
-          content: '""',
-          display: 'inline-block',
-          height: '0.8em',
-          marginRight: '0.5em',
-          width: '0.8em'
-        }
-      });
-
-      return (
+    <div dir="rtl">
+      <ThemeProvider theme={{ direction: 'rtl' }}>
         <DemoLayout>
           <Card>
-            <CardTitle subtitle={<em>Card Subtitle</em>}>
-              Card Title<br />
-              <Status>Status alert</Status>
+            <CardTitle
+              avatar={<img src="/images/215x210_avatar.png" alt="نص بديل" />}
+              subtitle="الترجمة هنا">
+              عنوان البطاقة
+            </CardTitle>
+            <CardBlock>{loremIpsum}</CardBlock>
+          </Card>
+          <Card>
+            <CardTitle secondaryText="نص ثانوي">
+              عنوان البطاقة
             </CardTitle>
             <CardBlock>{loremIpsum}</CardBlock>
           </Card>
         </DemoLayout>
-      );
-    }`
+      </ThemeProvider>
+    </div>`
 };

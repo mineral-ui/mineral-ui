@@ -28,11 +28,27 @@ export default {
     slug: 'card',
     title: 'Card'
   },
+  'card-actions': {
+    description:
+      'CardActions lays out actions like Buttons or Links in the body of the Card.',
+    slug: 'card-actions',
+    title: 'CardActions'
+  },
   'card-block': {
     description:
       'CardBlock lays out content that’s not a title or an image in the body of the Card.',
     slug: 'card-block',
     title: 'CardBlock'
+  },
+  'card-divider': {
+    description: 'CardDivider visually seperates sections of content in Card.',
+    slug: 'card-divider',
+    title: 'CardDivider'
+  },
+  'card-footer': {
+    description: 'CardFooter provides a stateful extension to Card.',
+    slug: 'card-footer',
+    title: 'CardFooter'
   },
   'card-image': {
     description:

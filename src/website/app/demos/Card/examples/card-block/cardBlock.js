@@ -15,16 +15,14 @@
  */
 
 /* @flow */
-import {
-  createStyledComponent,
-  getNormalizedValue
-} from '../../../../../../styles';
+import { createStyledComponent } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
 import Card, {
   CardBlock as _CardBlock,
   CardTitle
 } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
 
 const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
   position: 'relative',
@@ -32,19 +30,13 @@ const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
   '&::before': {
     borderColor: theme.color_theme_10,
     borderStyle: 'solid',
-    borderWidth: `${getNormalizedValue(
-      theme.space_inset_md,
-      theme.fontSize_prose
-    )} ${getNormalizedValue(theme.space_inset_lg, theme.fontSize_prose)}`,
-    bottom: `-${getNormalizedValue(
-      theme.space_inset_md,
-      theme.fontSize_prose
-    )}`,
+    borderWidth: `${theme.space_inset_md} ${theme.space_inset_md} ${theme.space_inset_lg}`,
+    bottom: `-${theme.space_inset_lg}`,
     content: '""',
     left: 0,
     position: 'absolute',
     right: 0,
-    top: `-${getNormalizedValue(theme.space_inset_md, theme.fontSize_prose)}`
+    top: `-${theme.space_inset_md}`
   }
 }));
 
@@ -53,18 +45,14 @@ export default {
   title: 'Provide Consistent Spacing',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'CardBlock provides uniform top/bottom margin & left/right padding (highlighted here in light blue).',
-  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  description: `CardBlock provides uniform spacing (highlighted here in light
+blue), relative to the other Card components, around its content.`,
+  scope: { Card, CardBlock, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
         <CardTitle>Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     </DemoLayout>`
 };

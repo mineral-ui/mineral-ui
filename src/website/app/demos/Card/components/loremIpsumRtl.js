@@ -15,16 +15,8 @@
  */
 
 /* @flow */
-export default {
-  id: 'import-syntax',
-  title: 'Import Syntax',
-  description: `\`\`\`
-import Card, { CardTitle } from 'mineral-ui/Card';
-\`\`\`
+const content = `
+  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
+`;
 
-<Callout title="Note">
-  <a href="../card" key={0}>Cards</a> normally occupy the full available width
-  of their container. The Cards here are width-constrained for illustration
-  purposes.
-</Callout>`
-};
+export default content;

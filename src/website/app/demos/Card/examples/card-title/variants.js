@@ -15,36 +15,34 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
 import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
-
-const CustomContent = createStyledComponent('div', ({ theme }) => ({
-  backgroundColor: theme.color_gray_20,
-  padding: `${theme.space_stack_md} 0`
-}));
-
-const customContent = (
-  <CustomContent>
-    <Button fullWidth>Button</Button>
-  </CustomContent>
-);
+import loremIpsum from '../../components/loremIpsum';
 
 export default {
-  id: 'children',
-  title: 'Arbitrary Children',
+  id: 'variants',
+  title: 'Variants',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `A CardBlock will render any children.`,
-  scope: { Button, Card, CardBlock, CardTitle, customContent, DemoLayout },
+  description: `CardTitle is available in a few variants. Be sure to use the
+[appropriate variant](/color#guidelines-variants) for your intent.`,
+  scope: { Card, CardBlock, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{customContent}</CardBlock>
+        <CardTitle variant="danger">Danger Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
+      </Card>
+
+      <Card>
+        <CardTitle variant="success">Success Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
+      </Card>
+
+      <Card>
+        <CardTitle variant="warning" subtitle="Card Subtitle">Warning Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     </DemoLayout>`
 };

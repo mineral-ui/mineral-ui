@@ -15,36 +15,33 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
-import Card, { CardBlock, CardTitle } from '../../../../../../Card';
+import Card, { CardBlock, CardFooter } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
-
-const CustomContent = createStyledComponent('div', ({ theme }) => ({
-  backgroundColor: theme.color_gray_20,
-  padding: `${theme.space_stack_md} 0`
-}));
-
-const customContent = (
-  <CustomContent>
-    <Button fullWidth>Button</Button>
-  </CustomContent>
-);
+import loremIpsum from '../../components/loremIpsum';
 
 export default {
-  id: 'children',
-  title: 'Arbitrary Children',
+  id: 'expandable',
+  title: 'Expandable Footer',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `A CardBlock will render any children.`,
-  scope: { Button, Card, CardBlock, CardTitle, customContent, DemoLayout },
+  description: `Set \`expandable\` to true to allow the user to expand/collapse
+CardFooter. Note that a \`title\` must be provided to expandable CardFooters.`,
+  scope: { Card, CardBlock, CardFooter, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{customContent}</CardBlock>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardFooter title="Collapsed by Default" expandable>
+          <CardBlock>{loremIpsum}</CardBlock>
+        </CardFooter>
+      </Card>
+
+      <Card>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardFooter title="Expanded by Default" expandable defaultIsOpen>
+          <CardBlock>{loremIpsum}</CardBlock>
+        </CardFooter>
       </Card>
     </DemoLayout>`
 };
