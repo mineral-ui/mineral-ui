@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '../styles';
 
 type Props = {
-  /** Content of the Card. Can be anything, but see [CardBlock](../card-block), [CardImage](../card-image), and [CardTitle](../card-title). */
+  /** Content of Card; see the [Basic](#basic) example for more details */
   children: React$Node,
   /** Called with the click event */
   onClick?: (event: SyntheticEvent<>) => void
@@ -27,13 +27,14 @@ type Props = {
 
 export const componentTheme = (baseTheme: Object) => ({
   Card_backgroundColor: baseTheme.color_white,
+  Card_borderColor: baseTheme.color_gray_20,
   Card_borderRadius: baseTheme.borderRadius_1,
-  Card_boxShadow: baseTheme.shadow_1,
+  Card_boxShadow: baseTheme.shadow_2,
   Card_boxShadow_focus: `0 0 0 2px ${baseTheme.color_theme_100}, ${baseTheme.shadow_1}`,
-  Card_paddingBottom: baseTheme.space_stack_md,
 
-  CardRow_margin: baseTheme.space_stack_md,
-  CardRow_padding: baseTheme.space_inset_lg,
+  CardRow_marginVertical: baseTheme.space_stack_md,
+  CardRow_marginVerticalLast: baseTheme.space_stack_lg,
+  CardRow_paddingHorizontal: baseTheme.space_inset_md,
 
   ...baseTheme
 });
@@ -45,10 +46,11 @@ const Root = createStyledComponent(
 
     return {
       backgroundColor: theme.Card_backgroundColor,
+      border: `1px solid ${theme.Card_borderColor}`,
       borderRadius: theme.Card_borderRadius,
       boxShadow: theme.Card_boxShadow,
       cursor: props.onClick && 'pointer',
-      paddingBottom: theme.Card_paddingBottom,
+      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
       paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
 
       '&:focus, &[data-simulate-focus]': {
@@ -62,7 +64,7 @@ const Root = createStyledComponent(
   }
 );
 
-const onKeyPress = (props: Props, event: SyntheticEvent<>) => {
+const onKeyDown = (props: Props, event: SyntheticEvent<>) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
     props.onClick && props.onClick(event);
@@ -72,11 +74,12 @@ const onKeyPress = (props: Props, event: SyntheticEvent<>) => {
 /**
  * Cards group conceptually related content.
  * Cards represent a gateway to more detailed information in another app view.
- * Use Cards to provide detail about a feature in your app, or to represent data with which your users can interact.
+ * Use Cards to provide detail about a feature in your app, or to represent data
+ * with which your users can interact.
  */
 export default function Card(props: Props) {
   const rootProps = {
-    onKeyPress: props.onClick ? onKeyPress.bind(null, props) : undefined,
+    onKeyDown: props.onClick ? onKeyDown.bind(null, props) : undefined,
     role: props.onClick ? 'button' : undefined,
     tabIndex: props.onClick ? 0 : undefined,
     ...props

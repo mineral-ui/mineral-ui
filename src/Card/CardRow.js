@@ -15,10 +15,22 @@
  */
 
 /* @flow */
-export { default } from './Card';
-export { default as CardActions } from './CardActions';
-export { default as CardBlock } from './CardBlock';
-export { default as CardFooter } from './CardFooter';
-export { default as CardImage } from './CardImage';
-export { default as CardTitle } from './CardTitle';
-export { default as CardTitleMenu } from './CardTitleMenu';
+import { createStyledComponent } from '../styles';
+import { componentTheme as cardComponentTheme } from './Card';
+
+export default createStyledComponent(
+  'div',
+  props => {
+    const theme = cardComponentTheme(props.theme);
+
+    return {
+      marginBottom: theme.CardRow_marginVertical,
+      marginTop: theme.CardRow_marginVertical,
+      paddingLeft: theme.CardRow_paddingHorizontal,
+      paddingRight: theme.CardRow_paddingHorizontal
+    };
+  },
+  {
+    displayName: 'CardRow'
+  }
+);
