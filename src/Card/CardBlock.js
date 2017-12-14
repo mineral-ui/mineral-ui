@@ -16,44 +16,55 @@
 
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import { componentTheme as cardComponentTheme } from './Card';
+import CardRow from './CardRow';
 
-type Props = Object;
+type Props = {
+  /** Contents of CardBlock */
+  children: React$Node
+};
 
 export const componentTheme = (baseTheme: Object) => ({
-  CardBlock_fontSize: baseTheme.fontSize_prose,
+  CardBlock_fontSize: baseTheme.fontSize_ui,
   CardBlock_lineHeight: baseTheme.lineHeight_prose,
 
   ...baseTheme
 });
 
-const Root = createStyledComponent(
-  'div',
-  props => {
-    const theme = {
-      ...componentTheme(props.theme),
-      ...cardComponentTheme(props.theme)
-    };
+const styles = {
+  inner: props => {
+    const theme = componentTheme(props.theme);
 
-    // prettier-ignore
     return {
       fontSize: theme.CardBlock_fontSize,
-      lineHeight: theme.CardBlock_lineHeight,
-      marginBottom: getNormalizedValue(theme.CardRow_margin, theme.CardBlock_fontSize),
-      marginTop: getNormalizedValue(theme.CardRow_margin, theme.CardBlock_fontSize),
-      paddingLeft: getNormalizedValue(theme.CardRow_padding, theme.CardBlock_fontSize),
-      paddingRight: getNormalizedValue(theme.CardRow_padding, theme.CardBlock_fontSize)
+      lineHeight: theme.CardBlock_lineHeight
     };
   },
-  {
-    displayName: 'CardBlock'
+  root: props => {
+    const theme = cardComponentTheme(props.theme);
+
+    return {
+      '&:last-child': {
+        marginBottom: theme.CardRow_marginVerticalLast
+      }
+    };
   }
-);
+};
+
+const Root = createStyledComponent(CardRow, styles.root, {
+  displayName: 'CardBlock'
+});
+const Inner = createStyledComponent('div', styles.inner);
 
 /**
- * CardBlock is used to normalize font sizes for content and to provide consistent margins and padding.
+ * CardBlock is used to normalize font sizes for content and to provide
+ * consistent margins and padding.
  */
-export default function CardBlock(props: Props) {
-  return <Root {...props} />;
+export default function CardBlock({ children, ...restProps }: Props) {
+  return (
+    <Root {...restProps}>
+      <Inner>{children}</Inner>
+    </Root>
+  );
 }

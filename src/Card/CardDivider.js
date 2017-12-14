@@ -21,38 +21,37 @@ import { componentTheme as cardComponentTheme } from './Card';
 
 type Props = Object;
 
+export const componentTheme = (baseTheme: Object) => ({
+  CardDivider_borderColor: baseTheme.borderColor,
+  CardDivider_borderWidth: '1px',
+
+  ...baseTheme
+});
+
 const Root = createStyledComponent(
-  'img',
+  'div',
   props => {
-    const theme = cardComponentTheme(props.theme);
+    const theme = {
+      ...componentTheme(props.theme),
+      ...cardComponentTheme(props.theme)
+    };
 
     return {
-      display: 'block',
-      marginBottom: theme.CardRow_marginVertical,
-      marginTop: theme.CardRow_marginVertical,
-      maxWidth: '100%',
-
-      '&:first-child': {
-        borderRadius: `${theme.Card_borderRadius} ${theme.Card_borderRadius} 0 0`,
-        marginTop: 0
-      },
-
-      '&:last-child': {
-        borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
-        marginBottom: 0
-      }
+      backgroundColor: theme.CardDivider_borderColor,
+      height: theme.CardDivider_borderWidth,
+      margin: `${theme.CardRow_marginVertical} 0`
     };
   },
   {
-    displayName: 'CardImage',
-    rootEl: 'img'
+    displayName: 'CardDivider'
   }
 );
 
 /**
- * CardImage renders images full-bleed inside of a [Card](../card).
- * Use CardImage to display static media.
+ * CardDividers separate content in [Card](../card) to establish hierarchy.
+ *
+ * Too many dividers will add unnecessary weight to your Card.
  */
-export default function CardImage(props: Props) {
-  return <Root {...props} />;
+export default function CardDivider(props: Props) {
+  return <Root {...props} role="separator" />;
 }

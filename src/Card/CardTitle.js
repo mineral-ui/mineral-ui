@@ -15,118 +15,195 @@
  */
 
 /* @flow */
-import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
-import { componentTheme as cardComponentTheme } from './Card';
+import React, { Children, cloneElement } from 'react';
+import { ellipsis } from 'polished';
+import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import IconDanger from '../Icon/IconDanger';
+import IconSuccess from '../Icon/IconSuccess';
+import IconWarning from '../Icon/IconWarning';
+import CardRow from './CardRow';
 
 type Props = {
-  /** Information displayed above the title */
-  meta?: string,
-  /** Title of the Card */
+  /** See the [Actions Menu](#actions-menu) example (will take precedence over `secondaryText`) */
+  actions?: React$Node,
+  /** Avatar image displayed beside the title */
+  avatar?: string | React$Element<*>,
+  /** Title of Card */
   children: React$Node,
-  /** Displays the title in a less important style */
-  minor?: boolean,
+  /** Information displayed beside the title (`actions` will take precedence over this) */
+  secondaryText?: string | React$Element<*>,
   /** Subtitle displayed under the title */
-  subtitle?: React$Node
+  subtitle?: React$Node,
+  /** Available variants */
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  CardTitle_fontSize: baseTheme.fontSize_h3,
-  CardTitle_fontSize_minor: baseTheme.fontSize_h4,
-  CardTitle_fontWeight: baseTheme.fontWeight_semiBold,
-  CardTitle_fontWeight_minor: baseTheme.fontWeight_bold,
-  CardTitle_marginTop: baseTheme.space_stack_sm,
+  CardTitle_color: baseTheme.color_gray_80,
+  CardTitle_fontSize: baseTheme.fontSize_h4,
+  CardTitle_fontWeight: baseTheme.fontWeight_bold,
+
+  CardTitleAvatar_margin: baseTheme.space_inline_sm,
+  CardTitleAvatarSize: baseTheme.size_small,
+  CardTitleAvatarSize_large: baseTheme.size_large,
+
+  CardTitleIcon_margin: baseTheme.space_inline_sm,
+
+  CardTitleSecondaryText_fontSize: baseTheme.fontSize_mouse,
+  CardTitleSecondaryText_fontWeight: baseTheme.fontWeight_regular,
 
   CardSubtitle_color: baseTheme.color_gray_80,
-  CardSubtitle_fontSize: baseTheme.fontSize_h5,
-  CardSubtitle_fontWeight: baseTheme.fontWeight_semiBold,
+  CardSubtitle_fontSize: baseTheme.fontSize_mouse,
+  CardSubtitle_fontWeight: baseTheme.fontWeight_regular,
   CardSubtitle_marginTop: baseTheme.space_stack_sm,
 
   ...baseTheme
 });
 
 const styles = {
-  root: props => {
-    const theme = {
-      ...componentTheme(props.theme),
-      ...cardComponentTheme(props.theme)
-    };
+  avatar: ({ subtitle, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+    const size = subtitle
+      ? theme.CardTitleAvatarSize_large
+      : theme.CardTitleAvatarSize;
+    const rtl = theme.direction === 'rtl';
 
     return {
-      marginBottom: theme.CardRow_margin,
-      marginTop: theme.CardRow_margin,
-      paddingLeft: theme.CardRow_padding,
-      paddingRight: theme.CardRow_padding,
-      paddingTop: !props.minor && theme.CardTitle_marginTop
+      borderRadius: `${parseFloat(size) / 2}em`,
+      flex: '0 0 auto',
+      height: size,
+      marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
+      marginRight: rtl ? null : theme.CardTitleAvatar_margin,
+      width: size,
+
+      '& > *': {
+        maxWidth: '100%'
+      }
     };
   },
-  meta: props => {
+  inner: {
+    flex: '1 1 auto'
+  },
+  secondaryText: props => {
     const theme = componentTheme(props.theme);
+    const fontSize = theme.CardTitleSecondaryText_fontSize;
 
     return {
-      margin: `0 0 ${getNormalizedValue(
-        theme.CardSubtitle_marginTop,
-        theme.CardSubtitle_fontSize
-      )}`
+      flex: '0 0 auto',
+      fontSize,
+      fontWeight: theme.CardTitleSecondaryText_fontWeight,
+      transform: `translateY(${getNormalizedValue(pxToEm(5), fontSize)})`, // Optical alignment
+      ...ellipsis('33%')
     };
   },
-  subtitle: props => {
-    const theme = componentTheme(props.theme);
+  root: {
+    display: 'flex'
+  },
+  subtitle: ({ avatar, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+    const fontSize = theme.CardSubtitle_fontSize;
 
     return {
       color: theme.CardSubtitle_color,
-      fontSize: theme.CardSubtitle_fontSize,
+      fontSize,
       fontWeight: theme.CardSubtitle_fontWeight,
-      margin: `${getNormalizedValue(
-        theme.CardSubtitle_marginTop,
-        theme.CardSubtitle_fontSize
-      )} 0 0`
+      margin: 0,
+      marginTop: avatar
+        ? null
+        : getNormalizedValue(theme.CardSubtitle_marginTop, fontSize)
     };
   },
-  title: props => {
-    const theme = componentTheme(props.theme);
+  title: ({ theme: baseTheme, variant }) => {
+    const theme = componentTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
 
     return {
-      fontSize: props.minor
-        ? theme.CardTitle_fontSize_minor
-        : theme.CardTitle_fontSize,
-      fontWeight: props.minor
-        ? theme.CardTitle_fontWeight_minor
-        : theme.CardTitle_fontWeight,
-      margin: 0
+      alignItems: 'flex-start',
+      display: 'flex',
+
+      '& > [role="img"]': {
+        fill: variant ? theme[`color_text_${variant}`] : null,
+        marginLeft: rtl ? theme.CardTitleIcon_margin : null,
+        marginRight: rtl ? null : theme.CardTitleIcon_margin,
+        position: 'relative',
+        top: pxToEm(4) // optical alignment
+      }
+    };
+  },
+  titleContent: ({ actions, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
+    const fontSize = theme.CardTitle_fontSize;
+    const actionsMargin = getNormalizedValue(
+      theme.CardTitleIcon_margin,
+      fontSize
+    );
+
+    return {
+      color: theme.CardTitle_color,
+      flex: '1 1 auto',
+      fontSize,
+      fontWeight: theme.CardTitle_fontWeight,
+      margin: 0,
+      marginLeft: actions && rtl ? actionsMargin : null,
+      marginRight: actions && !rtl ? actionsMargin : null
     };
   }
 };
 
-const Root = createStyledComponent('div', styles.root, {
+const Root = createStyledComponent(CardRow, styles.root, {
   displayName: 'CardTitle'
 });
+const Avatar = createStyledComponent('span', styles.avatar);
+const Inner = createStyledComponent('div', styles.inner);
+const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Subtitle = createStyledComponent('h4', styles.subtitle);
-// CategoryTitle styles Subtitle, so it must break alphabetical order
-const Meta = createStyledComponent(Subtitle, styles.meta);
-const Title = createStyledComponent('h3', styles.title);
+const Title = createStyledComponent('div', styles.title);
+const TitleContent = createStyledComponent('h3', styles.titleContent);
+
+const variantIcons = {
+  danger: <IconDanger size="medium" />,
+  success: <IconSuccess size="medium" />,
+  warning: <IconWarning size="medium" />
+};
 
 /**
  * CardTitle displays a Card title and an optional subtitle.
- * You can put CardTitle in any order in relation to other root components of [Card](../card).
+ * You can put CardTitle in any order in relation to other root components of
+ * [Card](../card).
  */
 export default function CardTitle({
+  actions,
+  avatar,
   children,
-  meta,
-  minor,
+  secondaryText,
   subtitle,
+  variant,
   ...restProps
 }: Props) {
   const rootProps = {
-    minor,
     ...restProps
   };
-  const isMinor = minor || Boolean(meta);
+
+  const secondaryComponent = actions ? (
+    Children.map(actions, (action, index) =>
+      cloneElement(action, { key: index })
+    )
+  ) : secondaryText ? (
+    <SecondaryText>{secondaryText}</SecondaryText>
+  ) : null;
+
   return (
     <Root {...rootProps}>
-      {meta && <Meta>{meta}</Meta>}
-      <Title minor={isMinor}>{children}</Title>
-      {subtitle && <Subtitle>{subtitle}</Subtitle>}
+      {avatar && <Avatar subtitle={subtitle}>{avatar}</Avatar>}
+      <Inner>
+        <Title variant={variant}>
+          {variant && variantIcons[variant]}
+          <TitleContent actions={actions}>{children}</TitleContent>
+          {secondaryComponent}
+        </Title>
+        {subtitle && <Subtitle avatar={avatar}>{subtitle}</Subtitle>}
+      </Inner>
     </Root>
   );
 }
