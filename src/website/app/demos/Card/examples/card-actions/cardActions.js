@@ -17,7 +17,8 @@
 /* @flow */
 import { mineralTheme } from '../../../../../../themes';
 import Button from '../../../../../../Button';
-import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
+import Card, { CardBlock, CardActions } from '../../../../../../Card';
+import IconCloud from 'mineral-ui-icons/IconCloud';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 
@@ -26,27 +27,43 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Card content should be neither too simple nor too complex. Cards
-are used as a gateway to more detailed content, not merely as a widget container.
-Cards can contain any children, but are best used with
-[CardActions](../card-actions), [CardBlock](../card-block),
-[CardDivider](../card-divider), [CardFooter](../card-footer),
-[CardImage](../card-image), and [CardTitle](../card-title).`,
+  description: `Use CardActions to add actions, [Buttons](../button) or
+[Links](../link), to your [Card](../card). Buttons will automatically size
+themselves appropriately, and can be any variety (primary, minimal, icon-only,
+etc.)`,
   scope: {
     Button,
     Card,
+    CardActions,
     CardBlock,
-    CardImage,
-    CardTitle,
     loremIpsum,
-    DemoLayout
+    DemoLayout,
+    IconCloud
   },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardImage src="/images/500x500.png" alt="gradient placeholder" />
         <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Button>Button 1</Button>
+          <Button iconStart={<IconCloud />}>Button 2</Button>
+        </CardActions>
+      </Card>
+
+      <Card>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Button minimal >Button 1</Button>
+          <Button iconStart={<IconCloud />} primary>Button 2</Button>
+        </CardActions>
+      </Card>
+
+      <Card>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Button iconStart={<IconCloud title="Button label 1" />} minimal />
+          <Button iconStart={<IconCloud title="Button label 2" />} minimal />
+        </CardActions>
       </Card>
     </DemoLayout>`
 };

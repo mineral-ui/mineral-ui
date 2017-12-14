@@ -51,9 +51,6 @@ accessibility and styling.
 Labels should be short (1-3 words) and indicate the type of input requested.
 Labels are not meant to explain the intent of the form as a whole.
 
-Only use [sentence case](https://en.wikipedia.org/wiki/Letter_case#Sentence_case)
-for labels.
-
 Placeholder text is not a replacement for labels.
 
 Do not use an asterisk in labels for required fields; use the \`required\` prop

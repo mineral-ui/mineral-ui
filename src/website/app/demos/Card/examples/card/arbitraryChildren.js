@@ -15,6 +15,7 @@
  */
 
 /* @flow */
+import React from 'react';
 import { createStyledComponent } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
 import Button from '../../../../../../Button';
@@ -24,13 +25,19 @@ import DemoLayout from '../../components/DemoLayout';
 const CustomContent = createStyledComponent('div', ({ theme }) => ({
   backgroundColor: theme.color_gray_20,
   margin: `${theme.space_stack_md} 0`,
-  padding: theme.space_inset_lg,
+  padding: theme.space_inset_md,
 
   '&:last-child': {
     borderRadius: `0 0 ${theme.borderRadius_1} ${theme.borderRadius_1}`,
-    marginBottom: `-${theme.space_stack_md}`
+    marginBottom: 0
   }
 }));
+
+const customContent = (
+  <CustomContent>
+    <Button fullWidth>Button</Button>
+  </CustomContent>
+);
 
 export default {
   id: 'children',
@@ -40,14 +47,12 @@ export default {
   description: `A Card will render any children.
 
 For best results, please ensure content matches the top/bottom margin and left/right padding of the other \`<Card*/>\` components, or use [CardBlock](../card-block).`,
-  scope: { Button, Card, CardTitle, CustomContent, DemoLayout },
+  scope: { Button, Card, CardTitle, customContent, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card title</CardTitle>
-        <CustomContent>
-          <Button fullWidth>Button</Button>
-        </CustomContent>
+        <CardTitle>Card Title</CardTitle>
+        {customContent}
       </Card>
     </DemoLayout>`
 };

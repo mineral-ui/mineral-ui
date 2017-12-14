@@ -15,16 +15,18 @@
  */
 
 /* @flow */
-export default {
-  id: 'import-syntax',
-  title: 'Import Syntax',
-  description: `\`\`\`
-import Card, { CardTitle } from 'mineral-ui/Card';
-\`\`\`
+import cardFooter from './cardFooter';
+import controlled from './controlled';
+import expandable from './expandable';
+import importSyntax from './importSyntax';
+import rtl from './rtl';
+import variants from './variants';
 
-<Callout title="Note">
-  <a href="../card" key={0}>Cards</a> normally occupy the full available width
-  of their container. The Cards here are width-constrained for illustration
-  purposes.
-</Callout>`
-};
+export default [
+  importSyntax,
+  cardFooter,
+  expandable,
+  controlled,
+  variants,
+  rtl
+];

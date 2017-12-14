@@ -15,10 +15,22 @@
  */
 
 /* @flow */
+import actionsMenu from './actionsMenu';
+import avatar from './avatar';
+import cardTitle from './cardTitle';
 import complexTitle from './complexTitle';
 import importSyntax from './importSyntax';
-import withMetaInfo from './withMetaInfo';
-import withSubtitle from './withSubtitle';
-import minor from './minor';
+import rtl from './rtl';
+import secondaryText from './secondaryText';
+import variants from './variants';
 
-export default [importSyntax, withSubtitle, complexTitle, minor, withMetaInfo];
+export default [
+  importSyntax,
+  cardTitle,
+  complexTitle,
+  avatar,
+  actionsMenu,
+  secondaryText,
+  variants,
+  rtl
+];

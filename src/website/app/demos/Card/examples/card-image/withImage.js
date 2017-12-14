@@ -18,6 +18,7 @@
 import { mineralTheme } from '../../../../../../themes';
 import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
 
 export default {
   id: 'with-image',
@@ -25,17 +26,13 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'CardImages should provide an `alt` attribute.',
-  scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
+  scope: { Card, CardBlock, CardImage, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
         <CardImage src="/images/500x281.png" alt="gradient image" />
-        <CardTitle minor>Minor Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     </DemoLayout>`
 };

@@ -17,7 +17,11 @@
 /* @flow */
 import { mineralTheme } from '../../../../../../themes';
 import Button from '../../../../../../Button';
-import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
+import Card, {
+  CardActions,
+  CardBlock,
+  CardFooter
+} from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 
@@ -26,27 +30,44 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Card content should be neither too simple nor too complex. Cards
-are used as a gateway to more detailed content, not merely as a widget container.
-Cards can contain any children, but are best used with
-[CardActions](../card-actions), [CardBlock](../card-block),
-[CardDivider](../card-divider), [CardFooter](../card-footer),
-[CardImage](../card-image), and [CardTitle](../card-title).`,
+  description: `CardFooter is used to add an extension to a Card. It can
+contain any children, but is best used with [CardActions](../card-actions) and
+[CardBlock](../card-block).`,
   scope: {
     Button,
     Card,
+    CardActions,
     CardBlock,
-    CardImage,
-    CardTitle,
+    CardFooter,
     loremIpsum,
     DemoLayout
   },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardImage src="/images/500x500.png" alt="gradient placeholder" />
         <CardBlock>{loremIpsum}</CardBlock>
+        <CardFooter title="Footer Title Only" />
+      </Card>
+
+      <Card>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardFooter>
+          <CardActions>
+            <Button minimal>Button 1</Button>
+            <Button primary>Button 2</Button>
+          </CardActions>
+        </CardFooter>
+      </Card>
+
+      <Card>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardFooter title="Footer Title">
+          <CardBlock>{loremIpsum}</CardBlock>
+          <CardActions>
+            <Button minimal>Button 1</Button>
+            <Button primary>Button 2</Button>
+          </CardActions>
+        </CardFooter>
       </Card>
     </DemoLayout>`
 };

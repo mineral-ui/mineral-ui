@@ -114,7 +114,7 @@ export default function Demo({ theme }: Props) {
           <FormField input={TextInput} label="TextInput" />
           <CardHolder>
             <Card>
-              <CardTitle subtitle="Card subtitle here">Card Title</CardTitle>
+              <CardTitle subtitle="Card Subtitle here">Card Title</CardTitle>
               <CardBlock>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 mattis pretium massa.{' '}

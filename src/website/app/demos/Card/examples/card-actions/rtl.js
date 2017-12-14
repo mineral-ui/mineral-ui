@@ -15,38 +15,40 @@
  */
 
 /* @flow */
-import { mineralTheme } from '../../../../../../themes';
+import { mineralTheme, ThemeProvider } from '../../../../../../themes';
+import IconCloud from 'mineral-ui-icons/IconCloud';
 import Button from '../../../../../../Button';
-import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
+import Card, { CardActions, CardBlock } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
-import loremIpsum from '../../components/loremIpsum';
+import loremIpsum from '../../components/loremIpsumRtl';
 
 export default {
-  id: 'basic',
-  title: 'Basic Usage',
+  id: 'rtl',
+  title: 'Bidirectionality',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Card content should be neither too simple nor too complex. Cards
-are used as a gateway to more detailed content, not merely as a widget container.
-Cards can contain any children, but are best used with
-[CardActions](../card-actions), [CardBlock](../card-block),
-[CardDivider](../card-divider), [CardFooter](../card-footer),
-[CardImage](../card-image), and [CardTitle](../card-title).`,
+  description: `CardActions reverses its alignment when the \`direction\` theme
+variable is set to \`rtl\` (right-to-left).`,
   scope: {
     Button,
     Card,
+    CardActions,
     CardBlock,
-    CardImage,
-    CardTitle,
     loremIpsum,
-    DemoLayout
+    DemoLayout,
+    IconCloud,
+    ThemeProvider
   },
   source: `
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardImage src="/images/500x500.png" alt="gradient placeholder" />
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
+    <DemoLayout dir="rtl">
+      <ThemeProvider theme={{ direction: 'rtl' }}>
+        <Card>
+          <CardBlock>{loremIpsum}</CardBlock>
+          <CardActions>
+            <Button>زر واحد</Button>
+            <Button iconStart={<IconCloud />}>زر اثنين</Button>
+          </CardActions>
+        </Card>
+      </ThemeProvider>
     </DemoLayout>`
 };

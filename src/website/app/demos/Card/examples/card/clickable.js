@@ -18,6 +18,7 @@
 import { mineralTheme } from '../../../../../../themes';
 import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
 
 export default {
   id: 'clickable',
@@ -27,16 +28,12 @@ export default {
   description: `If an \`onClick\` callback is provided, the entire Card becomes clickable and keyboard actionable.
 Use this feature when only one action can be taken per Card.
 This simplifies the interface by not requiring an extra [Button](../button).`,
-  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  scope: { Card, CardBlock, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card onClick={event => console.log(event)}>
         <CardTitle>Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     </DemoLayout>`
 };

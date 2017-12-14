@@ -17,21 +17,18 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../styles';
 import { mineralTheme } from '../../../../../../themes';
-import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
+import Button from '../../../../../../Button';
+import Card, {
+  CardActions,
+  CardBlock,
+  CardFooter,
+  CardImage,
+  CardTitle
+} from '../../../../../../Card';
+import _DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
 
-const DemoLayout = createStyledComponent('div', {
-  alignItems: 'flex-start',
-  display: 'flex',
-  flexWrap: 'wrap',
-  fontSize: mineralTheme.fontSize_base,
-  margin: '-2em',
-
-  '& > *': {
-    flex: '1 1 25%',
-    margin: '2em',
-    maxWidth: '30em'
-  },
-
+const DemoLayout = createStyledComponent(_DemoLayout, {
   '& img': {
     width: '100%'
   }
@@ -42,38 +39,53 @@ export default {
   title: 'Order of Sections',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `There is no 'one true way' to lay out a Card. Cards are flexible enough to accept different component arrangements.`,
-  scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
+  description: `There is no "one true way" to lay out children in Card; it is
+flexible enough to accept different component arrangements. The one exception is
+[CardFooter](../card-footer), which must be last in Card.`,
+  scope: {
+    Button,
+    Card,
+    CardActions,
+    CardBlock,
+    CardFooter,
+    CardImage,
+    CardTitle,
+    loremIpsum,
+    DemoLayout
+  },
   source: `
     <DemoLayout>
       <Card>
+        <CardTitle>Card Title</CardTitle>
         <CardImage src="/images/500x500.png" alt="gradient image" />
-        <CardTitle minor>Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Button minimal>Button 1</Button>
+          <Button primary>Button 2</Button>
+        </CardActions>
+        <CardFooter title="Card Footer" />
+      </Card>
+
+      <Card>
+        <CardImage src="/images/500x500.png" alt="gradient image" />
+        <CardTitle>Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Button minimal>Button 1</Button>
+          <Button primary>Button 2</Button>
+        </CardActions>
+        <CardFooter title="Card Footer" />
       </Card>
 
       <Card>
         <CardTitle>Card Title</CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
         <CardImage src="/images/500x500.png" alt="gradient image" />
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
-        <CardImage src="/images/690x690.png" alt="gradient image" />
+        <CardActions>
+          <Button minimal>Button 1</Button>
+          <Button primary>Button 2</Button>
+        </CardActions>
+        <CardFooter title="Card Footer" />
       </Card>
     </DemoLayout>`
 };

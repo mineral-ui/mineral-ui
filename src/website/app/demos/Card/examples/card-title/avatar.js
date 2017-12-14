@@ -16,27 +16,36 @@
 
 /* @flow */
 import { mineralTheme } from '../../../../../../themes';
-import Card, { CardBlock, CardImage, CardTitle } from '../../../../../../Card';
+import Card, { CardBlock, CardTitle } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
 
 export default {
-  id: 'minor-title',
-  title: 'Minor Title',
+  id: 'avatar',
+  title: 'With an Avatar',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description:
-    'The Card title can be rendered in a minor style. Use this style whenever placing a CardTitle immediately after a CardImage.',
-  scope: { Card, CardBlock, CardImage, CardTitle, DemoLayout },
+  description: `To help communicate ownership or categorization of a Card, add
+an \`avatar\` to CardTitle. The image will automatically size itself correctly
+whether a \`subtitle\` is also provided or not.`,
+  scope: { Card, CardBlock, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardImage src="/images/500x200.png" alt="gradient image" />
-        <CardTitle minor>Minor Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardTitle
+          avatar={<img src="/images/215x210_avatar.png" alt="Alt text" />}>
+          Card Title
+        </CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
+      </Card>
+
+      <Card>
+        <CardTitle
+          avatar={<img src="/images/215x210_avatar.png" alt="Alt text" />}
+          subtitle="Card Subtitle">
+          Card Title
+        </CardTitle>
+        <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     </DemoLayout>`
 };

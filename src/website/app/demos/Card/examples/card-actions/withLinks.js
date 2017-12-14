@@ -15,28 +15,31 @@
  */
 
 /* @flow */
+import React from 'react';
 import { mineralTheme } from '../../../../../../themes';
-import Card, { CardBlock, CardTitle } from '../../../../../../Card';
+import _Link from '../../../../../../Link';
+import Card, { CardBlock, CardActions } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
+import loremIpsum from '../../components/loremIpsum';
+
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
 export default {
-  id: 'meta',
-  title: 'With Meta Information',
+  id: 'with-links',
+  title: 'With Links',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `When you must provide information that doesn't belong to every Card in a set, supply it as \`meta\` information.
-The information will display above the title, which will automatically display in the minor style.
-If information is in every card in the set, consider using the \`subtitle\` attribute.`,
-  scope: { Card, CardBlock, CardTitle, DemoLayout },
+  description: `Place [Links](../links) in CardActions when your Card needs to
+point the users to another location.`,
+  scope: { Link, Card, CardActions, CardBlock, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>
       <Card>
-        <CardTitle meta="Meta Information for This Card">Card Title</CardTitle>
-        <CardBlock>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-          pretium massa. Aliquam erat volutpat. Nulla facilisi. Donec vulputate
-          interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-        </CardBlock>
+        <CardBlock>{loremIpsum}</CardBlock>
+        <CardActions>
+          <Link href="https://example.com">Link 1</Link>
+          <Link href="https://example.com">Link 2</Link>
+        </CardActions>
       </Card>
     </DemoLayout>`
 };
