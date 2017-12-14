@@ -44,7 +44,7 @@ describe('Card', () => {
     });
 
     it('calls onClick when pressing enter', () => {
-      card.simulate('keypress', {
+      card.simulate('keydown', {
         key: 'Enter',
         preventDefault: () => {}
       });
@@ -52,7 +52,7 @@ describe('Card', () => {
     });
 
     it('calls onClick when pressing space', () => {
-      card.simulate('keypress', {
+      card.simulate('keydown', {
         key: ' ',
         preventDefault: () => {}
       });
