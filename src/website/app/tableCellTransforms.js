@@ -116,7 +116,7 @@ export const isPlanned = (child: React$Node, index: number) => {
 
   return (
     <Planned key={`icon-${index}`}>
-      <IconAssignment size="large" color={color.blue_60} title="in review" />
+      <IconAssignment size="large" color={color.blue_60} title="planned" />
       <span>planned</span>
     </Planned>
   );
