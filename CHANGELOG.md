@@ -1,3 +1,13 @@
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/mineral-ui/mineral-ui/compare/v0.13.0...v0.14.0) (2017-12-15)
+
+
+### Features
+
+* **text-area:** New component ([d2bb771](https://github.com/mineral-ui/mineral-ui/commit/d2bb771))
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/mineral-ui/mineral-ui/compare/v0.12.0...v0.13.0) (2017-12-12)
 
