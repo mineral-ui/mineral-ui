@@ -135,7 +135,6 @@ const styles = {
     };
 
     return {
-      alignSelf: 'stretch',
       backgroundColor: 'transparent',
       border: 0,
       boxShadow: 'none',

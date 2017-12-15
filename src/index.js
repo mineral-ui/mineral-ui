@@ -23,6 +23,7 @@ export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
 export { default as Popover } from './Popover';
+export { default as TextArea } from './TextArea';
 export { default as TextInput } from './TextInput';
 export * from './colors';
 export { createStyledComponent } from './styles';
