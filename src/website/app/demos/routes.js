@@ -111,6 +111,12 @@ export default {
     slug: 'popover',
     title: 'Popover'
   },
+  'text-area': {
+    description:
+      'TextAreas accept data from the user.  Use a TextArea to accept potentially lengthy, free-form input from a user',
+    slug: 'text-area',
+    title: 'TextArea'
+  },
   'text-input': {
     description:
       'TextInputs accept data from the user.  Use a TextInput to accept brief, free-form input from a user',

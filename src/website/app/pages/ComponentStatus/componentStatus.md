@@ -27,9 +27,9 @@ Statuses:
 | [Link](/components/link)                    | [available]      |
 | [Menu](/components/menu)                    | [available]      |
 | [Popover](/components/popover)              | [available]      |
+| [TextArea](/components/text-area) ~ new     | [available]      |
 | [TextInput](/components/text-input) ~ new   | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
-| TextArea                                    | [in development] |
 | Select                                      | [planned]        |
 | Tooltip                                     | [planned]        |
 | DataTable                                   |                  |
