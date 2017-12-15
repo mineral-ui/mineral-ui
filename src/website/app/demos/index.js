@@ -25,6 +25,7 @@ import icon from './Icon';
 import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
+import textArea from './TextArea';
 import textInput from './TextInput';
 import themeProvider from './ThemeProvider';
 
@@ -37,6 +38,7 @@ const demos = flatten([
   link,
   menu,
   popover,
+  textArea,
   textInput,
   themeProvider
 ]);

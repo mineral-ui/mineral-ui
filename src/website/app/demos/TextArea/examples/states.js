@@ -19,7 +19,7 @@ import React from 'react';
 import { createStyledComponent } from '../../../../../styles';
 import DemoLayout from '../components/DemoLayout';
 import { FormFieldset } from '../../../../../Form';
-import TextInput from '../../../../../TextInput';
+import TextArea from '../../../../../TextArea';
 import { simulate } from 'glamor';
 
 const FieldSetRoot = createStyledComponent(FormFieldset, {
@@ -34,7 +34,7 @@ function FieldSet(props: {
   variant?: 'success' | 'warning' | 'danger'
 }) {
   const { legend, variant } = props;
-  const textInputProps = {
+  const textAreaProps = {
     label: 'Example',
     variant
   };
@@ -42,29 +42,29 @@ function FieldSet(props: {
   return (
     <FieldSetRoot>
       <legend>{legend}</legend>
-      <TextInput defaultValue="Regular" {...textInputProps} />
-      <TextInput
+      <TextArea defaultValue="Regular" {...textAreaProps} />
+      <TextArea
         {...simulate('hover')}
         defaultValue="Hover"
-        {...textInputProps}
+        {...textAreaProps}
       />
-      <TextInput
+      <TextArea
         {...simulate('focus', 'hover')}
         defaultValue="Focus & Hover"
-        {...textInputProps}
+        {...textAreaProps}
       />
-      <TextInput
+      <TextArea
         {...simulate('focus', 'active')}
         defaultValue="Focus & Active"
-        {...textInputProps}
+        {...textAreaProps}
       />
-      <TextInput
+      <TextArea
         {...simulate('active')}
         defaultValue="Active"
-        {...textInputProps}
+        {...textAreaProps}
       />
-      <TextInput readOnly defaultValue="Read Only" {...textInputProps} />
-      <TextInput disabled defaultValue="Disabled" {...textInputProps} />
+      <TextArea readOnly defaultValue="Read Only" {...textAreaProps} />
+      <TextArea disabled defaultValue="Disabled" {...textAreaProps} />
     </FieldSetRoot>
   );
 }
