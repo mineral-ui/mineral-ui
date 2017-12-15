@@ -30,6 +30,8 @@ Statuses:
 | [TextArea](/components/text-area) ~ new     | [available]      |
 | [TextInput](/components/text-input) ~ new   | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
+| Radio                                       | [in development] |
+| Checkbox                                    | [planned]        |
 | Select                                      | [planned]        |
 | Tooltip                                     | [planned]        |
 | DataTable                                   |                  |
