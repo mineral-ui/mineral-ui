@@ -15,22 +15,11 @@
  */
 
 /* @flow */
-import cardExamples from './card';
-import cardActionsExamples from './card-actions';
-import cardBlockExamples from './card-block';
-import cardDividerExamples from './card-divider';
-import cardImageExamples from './card-image';
-import cardStatusExamples from './card-status';
-import cardTitleExamples from './card-title';
+import { createStyledComponent } from '../../../../../styles';
 
-const examples = [].concat(
-  cardExamples,
-  cardActionsExamples,
-  cardBlockExamples,
-  cardDividerExamples,
-  cardImageExamples,
-  cardStatusExamples,
-  cardTitleExamples
-);
-
-export default examples;
+export default createStyledComponent('div', {
+  '& > *': {
+    marginRight: '1rem',
+    marginBottom: '1rem'
+  }
+});

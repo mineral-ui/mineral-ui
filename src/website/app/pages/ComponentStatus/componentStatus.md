@@ -19,6 +19,7 @@ Statuses:
 
 | Component                                   | Status           |
 |---------------------------------------------|------------------|
+| [Avatar](/components/avatar)                | [available]      |
 | [Button](/components/button)                | [available]      |
 | [Card](/components/card)                    | [available]      |
 | [Dropdown](/components/dropdown)            | [available]      |

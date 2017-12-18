@@ -15,22 +15,18 @@
  */
 
 /* @flow */
-import cardExamples from './card';
-import cardActionsExamples from './card-actions';
-import cardBlockExamples from './card-block';
-import cardDividerExamples from './card-divider';
-import cardImageExamples from './card-image';
-import cardStatusExamples from './card-status';
-import cardTitleExamples from './card-title';
+import Avatar from '../../../../../Avatar';
+import DemoLayout from '../components/DemoLayout';
 
-const examples = [].concat(
-  cardExamples,
-  cardActionsExamples,
-  cardBlockExamples,
-  cardDividerExamples,
-  cardImageExamples,
-  cardStatusExamples,
-  cardTitleExamples
-);
-
-export default examples;
+export default {
+  id: 'shapes',
+  title: 'Shapes',
+  description: `Avatar is available in the following shapes.`,
+  scope: { Avatar, DemoLayout },
+  source: `
+    <DemoLayout>
+      <Avatar>Circle</Avatar>
+      <Avatar shape="rounded">Rounded</Avatar>
+      <Avatar shape="square">Square</Avatar>
+    </DemoLayout>`
+};

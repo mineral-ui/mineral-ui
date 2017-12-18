@@ -20,6 +20,7 @@ import { componentTheme as cardActionsComponentTheme } from '../../../../Card/Ca
 import { componentTheme as cardBlockComponentTheme } from '../../../../Card/CardBlock';
 import { componentTheme as cardDividerComponentTheme } from '../../../../Card/CardDivider';
 import { componentTheme as cardFooterComponentTheme } from '../../../../Card/CardFooter';
+import { componentTheme as cardStatusComponentTheme } from '../../../../Card/CardStatus';
 import { componentTheme as cardTitleComponentTheme } from '../../../../Card/CardTitle';
 
 import cardExamples from './examples/card';
@@ -28,6 +29,7 @@ import cardBlockExamples from './examples/card-block';
 import cardDividerExamples from './examples/card-divider';
 import cardFooterExamples from './examples/card-footer';
 import cardImageExamples from './examples/card-image';
+import cardStatusExamples from './examples/card-status';
 import cardTitleExamples from './examples/card-title';
 
 const cardDoc = require('!!react-docgen-loader!../../../../Card/Card');
@@ -36,6 +38,7 @@ const cardBlockDoc = require('!!react-docgen-loader!../../../../Card/CardBlock')
 const cardDividerDoc = require('!!react-docgen-loader!../../../../Card/CardDivider');
 const cardFooterDoc = require('!!react-docgen-loader!../../../../Card/CardFooter');
 const cardImageDoc = require('!!react-docgen-loader!../../../../Card/CardImage');
+const cardStatusDoc = require('!!react-docgen-loader!../../../../Card/CardStatus');
 const cardTitleDoc = require('!!react-docgen-loader!../../../../Card/CardTitle');
 
 import bestPractices from './bestPractices';
@@ -111,6 +114,17 @@ be the last thing in a Card.`
 Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](../card-title).
 
 If you are putting text over top of the CardImage, use a solid color or an image with sufficient contrast to the text.`
+  },
+  {
+    bestPractices: bestPractices.cardStatus,
+    componentTheme: cardStatusComponentTheme,
+    doc: cardStatusDoc,
+    examples: cardStatusExamples,
+    slug: 'card-status',
+    title: 'CardStatus',
+    whenHowToUse: `CardStatus is used to display a Card's current status. If
+the status information is not likely to change, use [CardTitle's](../card-title)
+\`secondaryText\` or \`subtitle\` prop, instead.`
   },
   {
     bestPractices: bestPractices.cardTitle,

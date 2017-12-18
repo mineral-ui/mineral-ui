@@ -15,22 +15,16 @@
  */
 
 /* @flow */
-import cardExamples from './card';
-import cardActionsExamples from './card-actions';
-import cardBlockExamples from './card-block';
-import cardDividerExamples from './card-divider';
-import cardImageExamples from './card-image';
-import cardStatusExamples from './card-status';
-import cardTitleExamples from './card-title';
+export default {
+  id: 'import-syntax',
+  title: 'Import Syntax',
+  description: `\`\`\`
+import Card, { CardStatus } from 'mineral-ui/Card';
+\`\`\`
 
-const examples = [].concat(
-  cardExamples,
-  cardActionsExamples,
-  cardBlockExamples,
-  cardDividerExamples,
-  cardImageExamples,
-  cardStatusExamples,
-  cardTitleExamples
-);
-
-export default examples;
+<Callout title="Note">
+  <a href="../card" key={0}>Cards</a> normally occupy the full available width
+  of their container. The Cards here are width-constrained for illustration
+  purposes.
+</Callout>`
+};
