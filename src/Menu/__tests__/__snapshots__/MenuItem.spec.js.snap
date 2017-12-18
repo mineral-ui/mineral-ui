@@ -804,19 +804,19 @@ exports[`MenuItem demo examples custom-render 1`] = `
           items: [
             {
               username: 'Newton',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'Principia Mathematica',
               render: CustomRender
             },
             {
               username: 'Descartes',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'La Géométrie',
               render: CustomRender
             },
             {
               username: 'Euclid',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'Elements',
               render: CustomRender
             }
@@ -871,19 +871,19 @@ exports[`MenuItem demo examples custom-render 1`] = `
                         Object {
                           "items": Array [
                             Object {
-                              "avatar": "/images/215x210_avatar.png",
+                              "avatar": "/images/avatar.svg",
                               "render": [Function],
                               "username": "Newton",
                               "work": "Principia Mathematica",
                             },
                             Object {
-                              "avatar": "/images/215x210_avatar.png",
+                              "avatar": "/images/avatar.svg",
                               "render": [Function],
                               "username": "Descartes",
                               "work": "La Géométrie",
                             },
                             Object {
-                              "avatar": "/images/215x210_avatar.png",
+                              "avatar": "/images/avatar.svg",
                               "render": [Function],
                               "username": "Euclid",
                               "work": "Elements",
@@ -906,10 +906,10 @@ exports[`MenuItem demo examples custom-render 1`] = `
                               className="glamor-12"
                             >
                               <MenuItem
-                                avatar="/images/215x210_avatar.png"
+                                avatar="/images/avatar.svg"
                                 item={
                                   Object {
-                                    "avatar": "/images/215x210_avatar.png",
+                                    "avatar": "/images/avatar.svg",
                                     "render": [Function],
                                     "username": "Newton",
                                     "work": "Principia Mathematica",
@@ -923,7 +923,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "render": [Function],
                                       "username": "Newton",
                                       "work": "Principia Mathematica",
@@ -931,7 +931,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   }
                                   itemProps={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
@@ -945,7 +945,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "render": [Function],
                                         "username": "Newton",
                                         "work": "Principia Mathematica",
@@ -953,7 +953,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                     itemProps={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
@@ -1107,7 +1107,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      avatar="/images/215x210_avatar.png"
+                                      avatar="/images/avatar.svg"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
@@ -1122,12 +1122,12 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       >
                                         <glamorous(img)
                                           alt="Photo of Newton"
-                                          src="/images/215x210_avatar.png"
+                                          src="/images/avatar.svg"
                                         >
                                           <img
                                             alt="Photo of Newton"
                                             className="glamor-0"
-                                            src="/images/215x210_avatar.png"
+                                            src="/images/avatar.svg"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
@@ -1150,10 +1150,10 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                 </ThemedComponent>
                               </MenuItem>
                               <MenuItem
-                                avatar="/images/215x210_avatar.png"
+                                avatar="/images/avatar.svg"
                                 item={
                                   Object {
-                                    "avatar": "/images/215x210_avatar.png",
+                                    "avatar": "/images/avatar.svg",
                                     "render": [Function],
                                     "username": "Descartes",
                                     "work": "La Géométrie",
@@ -1167,7 +1167,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "render": [Function],
                                       "username": "Descartes",
                                       "work": "La Géométrie",
@@ -1175,7 +1175,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   }
                                   itemProps={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
@@ -1189,7 +1189,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "render": [Function],
                                         "username": "Descartes",
                                         "work": "La Géométrie",
@@ -1197,7 +1197,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                     itemProps={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
@@ -1351,7 +1351,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      avatar="/images/215x210_avatar.png"
+                                      avatar="/images/avatar.svg"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
@@ -1366,12 +1366,12 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       >
                                         <glamorous(img)
                                           alt="Photo of Descartes"
-                                          src="/images/215x210_avatar.png"
+                                          src="/images/avatar.svg"
                                         >
                                           <img
                                             alt="Photo of Descartes"
                                             className="glamor-0"
-                                            src="/images/215x210_avatar.png"
+                                            src="/images/avatar.svg"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
@@ -1394,10 +1394,10 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                 </ThemedComponent>
                               </MenuItem>
                               <MenuItem
-                                avatar="/images/215x210_avatar.png"
+                                avatar="/images/avatar.svg"
                                 item={
                                   Object {
-                                    "avatar": "/images/215x210_avatar.png",
+                                    "avatar": "/images/avatar.svg",
                                     "render": [Function],
                                     "username": "Euclid",
                                     "work": "Elements",
@@ -1411,7 +1411,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                 <ThemedComponent
                                   item={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "render": [Function],
                                       "username": "Euclid",
                                       "work": "Elements",
@@ -1419,7 +1419,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   }
                                   itemProps={
                                     Object {
-                                      "avatar": "/images/215x210_avatar.png",
+                                      "avatar": "/images/avatar.svg",
                                       "children": undefined,
                                       "onKeyDown": undefined,
                                       "tabIndex": 0,
@@ -1433,7 +1433,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                   <Component
                                     item={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "render": [Function],
                                         "username": "Euclid",
                                         "work": "Elements",
@@ -1441,7 +1441,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                     itemProps={
                                       Object {
-                                        "avatar": "/images/215x210_avatar.png",
+                                        "avatar": "/images/avatar.svg",
                                         "children": undefined,
                                         "onKeyDown": undefined,
                                         "tabIndex": 0,
@@ -1595,7 +1595,7 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                     }
                                   >
                                     <glamorous(div)
-                                      avatar="/images/215x210_avatar.png"
+                                      avatar="/images/avatar.svg"
                                       disabled={undefined}
                                       onKeyDown={undefined}
                                       tabIndex={0}
@@ -1610,12 +1610,12 @@ exports[`MenuItem demo examples custom-render 1`] = `
                                       >
                                         <glamorous(img)
                                           alt="Photo of Euclid"
-                                          src="/images/215x210_avatar.png"
+                                          src="/images/avatar.svg"
                                         >
                                           <img
                                             alt="Photo of Euclid"
                                             className="glamor-0"
-                                            src="/images/215x210_avatar.png"
+                                            src="/images/avatar.svg"
                                           />
                                         </glamorous(img)>
                                         <glamorous(span)>
