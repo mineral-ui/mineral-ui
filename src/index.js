@@ -15,6 +15,7 @@
  */
 
 /* @flow */
+export { default as Avatar } from './Avatar';
 export { default as Button } from './Button';
 export { default as Card, CardBlock, CardImage, CardTitle } from './Card';
 export { default as Dropdown } from './Dropdown';
