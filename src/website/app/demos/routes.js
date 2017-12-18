@@ -16,6 +16,12 @@
 
 /* @flow */
 export default {
+  avatar: {
+    description:
+      'Avatar provides a graphic representation of an identity. It can display an image, text, or an icon.',
+    slug: 'avatar',
+    title: 'Avatar'
+  },
   button: {
     description:
       'Buttons trigger actions or state changes in your app. Choose a button color to match the intent of the action.',
@@ -55,6 +61,12 @@ export default {
       'CardImages reinforce the intent of the Card. Images shouldn’t be used alone in a Card, but should be paired with a call to action and/or a CardTitle.',
     slug: 'card-image',
     title: 'CardImage'
+  },
+  'card-status': {
+    description:
+      "CardStatus provides a standard way of displaying a Card's current status.",
+    slug: 'card-status',
+    title: 'CardStatus'
   },
   'card-title': {
     description:

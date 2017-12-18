@@ -15,22 +15,15 @@
  */
 
 /* @flow */
-import cardExamples from './card';
-import cardActionsExamples from './card-actions';
-import cardBlockExamples from './card-block';
-import cardDividerExamples from './card-divider';
-import cardImageExamples from './card-image';
-import cardStatusExamples from './card-status';
-import cardTitleExamples from './card-title';
+import Avatar from '../../../../../Avatar';
 
-const examples = [].concat(
-  cardExamples,
-  cardActionsExamples,
-  cardBlockExamples,
-  cardDividerExamples,
-  cardImageExamples,
-  cardStatusExamples,
-  cardTitleExamples
-);
-
-export default examples;
+export default {
+  id: 'custom-text-abbr',
+  title: 'Custom Text Abbreviation',
+  description: `By default, the first letter of text \`children\` will be used
+as the rendered abbreviated text. Pass a string to the \`abbr\` prop to provide
+a custom abbreviation.`,
+  scope: { Avatar },
+  source: `
+    <Avatar abbr="B">Dr. Bernard Johnson</Avatar>`
+};

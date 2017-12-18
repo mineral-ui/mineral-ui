@@ -25,6 +25,7 @@ import Card, {
   CardDivider,
   CardFooter,
   CardImage,
+  CardStatus,
   CardTitle,
   CardTitleMenu
 } from '../../../../Card';
@@ -328,6 +329,34 @@ CardFooter content should be as brief as possible.`,
               <Button primary>Primary Action</Button>
             </CardActions>
           </CardFooter>
+        </Card>
+      )
+    }
+  ],
+  cardStatus: [
+    {
+      type: 'do',
+      backgroundColor,
+      description: `Use the [appropriate variant](/color#guidelines-variants)
+for your intent.`,
+      example: (
+        <Card>
+          <CardTitle>Card Title</CardTitle>
+          <CardBlock>{loremIpsum}</CardBlock>
+          <CardStatus variant="success">Available</CardStatus>
+        </Card>
+      )
+    },
+    {
+      type: 'dont',
+      backgroundColor,
+      description: `Don't use a variant that differs from intent, as this will
+cause confusion.`,
+      example: (
+        <Card>
+          <CardTitle>Card Title</CardTitle>
+          <CardBlock>{loremIpsum}</CardBlock>
+          <CardStatus variant="danger">99.999% Uptime</CardStatus>
         </Card>
       )
     }

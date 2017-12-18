@@ -74,7 +74,7 @@ A new [MenuGroup](../menu-group) will be created for each array object that has 
             },
             {
               text: 'Custom render',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               href: '/components/menu-item#custom-render', // <-- Details here
               render: CustomRender
             }

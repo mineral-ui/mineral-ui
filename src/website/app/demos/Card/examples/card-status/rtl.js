@@ -16,8 +16,7 @@
 
 /* @flow */
 import { mineralTheme, ThemeProvider } from '../../../../../../themes';
-import Avatar from '../../../../../../Avatar';
-import Card, { CardBlock, CardTitle } from '../../../../../../Card';
+import Card, { CardBlock, CardStatus } from '../../../../../../Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsumRtl';
 
@@ -26,36 +25,23 @@ export default {
   title: 'Bidirectionality',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `CardTitle reverses its alignment when the \`direction\` theme
+  description: `CardStatus reverses its alignment when the \`direction\` theme
 variable is set to \`rtl\` (right-to-left).`,
   scope: {
-    Avatar,
     Card,
-    CardTitle,
     CardBlock,
+    CardStatus,
     loremIpsum,
     DemoLayout,
     ThemeProvider
   },
   source: `
-    <div dir="rtl">
+    <DemoLayout dir="rtl">
       <ThemeProvider theme={{ direction: 'rtl' }}>
-        <DemoLayout>
-          <Card>
-            <CardTitle
-              avatar={<Avatar><img src="/images/avatar.svg" alt="نص بديل" /></Avatar>}
-              subtitle="الترجمة هنا">
-              عنوان البطاقة
-            </CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-          <Card>
-            <CardTitle secondaryText="نص ثانوي">
-              عنوان البطاقة
-            </CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-        </DemoLayout>
+        <Card>
+          <CardBlock>{loremIpsum}</CardBlock>
+          <CardStatus variant="danger">غير متوفره</CardStatus>
+        </Card>
       </ThemeProvider>
-    </div>`
+    </DemoLayout>`
 };

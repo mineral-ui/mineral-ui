@@ -18,7 +18,6 @@
 import actionsMenu from './actionsMenu';
 import avatar from './avatar';
 import cardTitle from './cardTitle';
-import complexTitle from './complexTitle';
 import importSyntax from './importSyntax';
 import rtl from './rtl';
 import secondaryText from './secondaryText';
@@ -27,7 +26,6 @@ import variants from './variants';
 export default [
   importSyntax,
   cardTitle,
-  complexTitle,
   avatar,
   actionsMenu,
   secondaryText,

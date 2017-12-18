@@ -35,8 +35,7 @@ or [Dropdown](../dropdown) to the \`actions\` prop.
 <Callout title="Note">
   To help with styling and using the correct <a href="../icon" key="0">Icon</a>,
   Card provides a CardTitleMenu component, as used in the example below. In
-  addition to accepting
-  <a href="../dropdown/#props" key="1">any prop accepted by Dropdown</a>,
+  addition to accepting <a href="../dropdown/#props" key="1">any prop accepted by Dropdown</a>,
   it also accepts <code key="2">triggerTitle</code>, which is used for the
   Icon's title. You can import it like so:
 </Callout>

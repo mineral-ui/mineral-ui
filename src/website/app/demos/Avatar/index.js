@@ -15,22 +15,20 @@
  */
 
 /* @flow */
-import cardExamples from './card';
-import cardActionsExamples from './card-actions';
-import cardBlockExamples from './card-block';
-import cardDividerExamples from './card-divider';
-import cardImageExamples from './card-image';
-import cardStatusExamples from './card-status';
-import cardTitleExamples from './card-title';
+import { componentTheme } from '../../../../Avatar/Avatar';
+import bestPractices from './bestPractices';
+import examples from './examples';
 
-const examples = [].concat(
-  cardExamples,
-  cardActionsExamples,
-  cardBlockExamples,
-  cardDividerExamples,
-  cardImageExamples,
-  cardStatusExamples,
-  cardTitleExamples
-);
+const doc = require('!!react-docgen-loader!../../../../Avatar/Avatar');
 
-export default examples;
+export default {
+  bestPractices,
+  componentTheme,
+  doc,
+  examples,
+  slug: 'avatar',
+  title: 'Avatar',
+  whenHowToUse: `Avatar should be used to associate something to an identity.
+For example, add a user's Avatar to a [Card](../card) to connect that Card's
+content to that user.`
+};

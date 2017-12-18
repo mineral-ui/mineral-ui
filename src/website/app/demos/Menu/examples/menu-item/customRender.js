@@ -122,19 +122,19 @@ might be a helpful template. Some things to keep in mind:
           items: [
             {
               username: 'Newton',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'Principia Mathematica',
               render: CustomRender
             },
             {
               username: 'Descartes',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'La Géométrie',
               render: CustomRender
             },
             {
               username: 'Euclid',
-              avatar: '/images/215x210_avatar.png',
+              avatar: '/images/avatar.svg',
               work: 'Elements',
               render: CustomRender
             }
