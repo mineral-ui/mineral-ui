@@ -63,21 +63,20 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   avatar: ({ subtitle, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const size = subtitle
+    const rtl = theme.direction === 'rtl';
+    const width = subtitle
       ? theme.CardTitleAvatarSize_large
       : theme.CardTitleAvatarSize;
-    const rtl = theme.direction === 'rtl';
 
     return {
-      borderRadius: `${parseFloat(size) / 2}em`,
       flex: '0 0 auto',
-      height: size,
       marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
       marginRight: rtl ? null : theme.CardTitleAvatar_margin,
-      width: size,
+      width,
 
-      '& > *': {
-        maxWidth: '100%'
+      '&[class] > *': {
+        height: 'auto',
+        width: '100%'
       }
     };
   },
