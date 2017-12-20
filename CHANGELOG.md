@@ -1,3 +1,23 @@
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/mineral-ui/mineral-ui/compare/v0.14.0...v0.15.0) (2017-12-20)
+
+
+### Features
+
+* **card:** Update design; add functionality ([1891906](https://github.com/mineral-ui/mineral-ui/commit/1891906))
+* **themes:** Add/update theme variables ([50344b8](https://github.com/mineral-ui/mineral-ui/commit/50344b8))
+
+
+### BREAKING CHANGES
+
+* **card:** Card - Change `CardRow_margin` & `CardRow_padding`
+theme variables to `CardRow_marginVertical` &
+`CardRow_paddingHorizontal`, respectively. CardTitle - Remove `minor`
+prop and all associated theme variables; remove `meta` prop; remove
+`CardTitle_marginTop` theme variable.
+
+
+
 <a name="0.14.0"></a>
 # [0.14.0](https://github.com/mineral-ui/mineral-ui/compare/v0.13.0...v0.14.0) (2017-12-15)
 
