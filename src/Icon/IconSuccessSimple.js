@@ -15,12 +15,30 @@
  */
 
 /* @flow */
-export { default } from './Card';
-export { default as CardActions } from './CardActions';
-export { default as CardBlock } from './CardBlock';
-export { default as CardDivider } from './CardDivider';
-export { default as CardFooter } from './CardFooter';
-export { default as CardImage } from './CardImage';
-export { default as CardStatus } from './CardStatus';
-export { default as CardTitle } from './CardTitle';
-export { default as CardTitleMenu } from './CardTitleMenu';
+import React from 'react';
+import Icon from 'mineral-ui/Icon';
+
+type Props = {
+  size?: string | 'small' | 'medium' | 'large',
+  color?: string,
+  rtl?: boolean,
+  title?: string
+};
+
+/* eslint-disable prettier/prettier */
+export default function IconSuccessSimple(props: Props) {
+  const iconProps = {
+    rtl: false,
+    ...props
+  };
+
+  return (
+    <Icon {...iconProps}>
+      <g>
+        <path d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9z"/>
+      </g>
+    </Icon>
+  );
+}
+
+IconSuccessSimple.category = 'alert';
