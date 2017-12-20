@@ -30,11 +30,14 @@ const REGEX_MINERAL_ICONS_SVG_NAME = /(.*?).svg/;
 // Icons used interally by mineral-ui components
 const internalMineralIcons = [
   'IconDanger',
+  'IconDangerSimple',
   'IconExpandLess',
   'IconExpandMore',
   'IconMoreHoriz',
   'IconSuccess',
-  'IconWarning'
+  'IconSuccessSimple',
+  'IconWarning',
+  'IconWarningSimple'
 ];
 
 // A subset of icons should be mirrored for RTL languages
