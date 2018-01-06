@@ -7,7 +7,7 @@
 
 > **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
 
-# [Mineral UI](https://mineral-ui.github.io/)
+# [Mineral UI](https://mineral-ui.com/)
 
 A design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps. Created by [CA Technologies](http://ca.com).
 
