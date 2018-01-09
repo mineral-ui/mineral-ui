@@ -21,7 +21,7 @@ export default {
   description: `To render a custom icon, use the default export from the \`mineral-ui/Icon\` package.
 
 \`\`\`
-import Icon from 'mineral-ui-icons/Icon';
+import Icon from 'mineral-ui/Icon';
 \`\`\`
 
 Import Mineral UI's provided icons directly from the \`mineral-ui-icons\` package.
