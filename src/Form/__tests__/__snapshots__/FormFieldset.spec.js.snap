@@ -417,16 +417,23 @@ exports[`FormFieldset demo examples basic 1`] = `
                             <label>
                               <glamorous(div)
                                 hideLabel={undefined}
+                                key="formField-1-textWrapper"
                               >
                                 <div
                                   className="glamor-0"
                                 >
-                                  Email
+                                  <span
+                                    id="formField-1-labelText"
+                                  >
+                                    Email
+                                  </span>
                                 </div>
                               </glamorous(div)>
                               <TextInput
                                 aria-describedby={undefined}
+                                key="formField-1-control"
                                 required={undefined}
+                                rootProps={undefined}
                                 type="email"
                                 variant={undefined}
                               >
@@ -487,16 +494,23 @@ exports[`FormFieldset demo examples basic 1`] = `
                             <label>
                               <glamorous(div)
                                 hideLabel={undefined}
+                                key="formField-2-textWrapper"
                               >
                                 <div
                                   className="glamor-0"
                                 >
-                                  Password
+                                  <span
+                                    id="formField-2-labelText"
+                                  >
+                                    Password
+                                  </span>
                                 </div>
                               </glamorous(div)>
                               <TextInput
                                 aria-describedby={undefined}
+                                key="formField-2-control"
                                 required={undefined}
+                                rootProps={undefined}
                                 type="password"
                                 variant={undefined}
                               >
@@ -971,17 +985,24 @@ exports[`FormFieldset demo examples disabled 1`] = `
                             <label>
                               <glamorous(div)
                                 hideLabel={undefined}
+                                key="formField-3-textWrapper"
                               >
                                 <div
                                   className="glamor-0"
                                 >
-                                  Email
+                                  <span
+                                    id="formField-3-labelText"
+                                  >
+                                    Email
+                                  </span>
                                 </div>
                               </glamorous(div)>
                               <TextInput
                                 aria-describedby={undefined}
                                 disabled={true}
+                                key="formField-3-control"
                                 required={undefined}
+                                rootProps={undefined}
                                 type="email"
                                 variant={undefined}
                               >
@@ -1042,17 +1063,24 @@ exports[`FormFieldset demo examples disabled 1`] = `
                             <label>
                               <glamorous(div)
                                 hideLabel={undefined}
+                                key="formField-4-textWrapper"
                               >
                                 <div
                                   className="glamor-0"
                                 >
-                                  Password
+                                  <span
+                                    id="formField-4-labelText"
+                                  >
+                                    Password
+                                  </span>
                                 </div>
                               </glamorous(div)>
                               <TextInput
                                 aria-describedby={undefined}
                                 disabled={true}
+                                key="formField-4-control"
                                 required={undefined}
+                                rootProps={undefined}
                                 type="password"
                                 variant={undefined}
                               >
@@ -1553,18 +1581,25 @@ exports[`FormFieldset demo examples rtl 1`] = `
                               <label>
                                 <glamorous(div)
                                   hideLabel={undefined}
+                                  key="formField-5-textWrapper"
                                 >
                                   <div
                                     className="glamor-0"
                                   >
-                                    مرحبا بالعالم
+                                    <span
+                                      id="formField-5-labelText"
+                                    >
+                                      مرحبا بالعالم
+                                    </span>
                                   </div>
                                 </glamorous(div)>
                                 <TextInput
                                   aria-describedby={undefined}
                                   defaultValue="مرحبا بالعالم"
                                   iconStart={<IconBackspace />}
+                                  key="formField-5-control"
                                   required={undefined}
+                                  rootProps={undefined}
                                   variant={undefined}
                                 >
                                   <TextInput

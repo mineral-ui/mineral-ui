@@ -441,10 +441,10 @@ exports[`FormField demo examples basic 1`] = `
     <LiveProvider
       code="
     <DemoLayout>
-      {/* Use the \\"input\\" prop to help reduce clutter */}
+      {/* Use the \\"input\\" prop for a streamlined approach. */}
       <FormField input={TextInput} label=\\"Name\\" />
 
-      {/* Or use \\"children\\" if you prefer */}
+      {/* Or use \\"children\\", if you prefer. */}
       <FormField label=\\"Description\\">
         <TextArea />
       </FormField>
@@ -494,16 +494,23 @@ exports[`FormField demo examples basic 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-2-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Name
+                            <span
+                              id="formField-2-labelText"
+                            >
+                              Name
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-2-control"
                           required={undefined}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextInput
@@ -563,16 +570,23 @@ exports[`FormField demo examples basic 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-3-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Description
+                            <span
+                              id="formField-3-labelText"
+                            >
+                              Description
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextArea
                           aria-describedby={undefined}
+                          key="formField-3-control"
                           required={undefined}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextArea
@@ -805,7 +819,7 @@ exports[`FormField demo examples caption 1`] = `
 [data-glamor-3] {
   color: #58606e;
   font-size: 0.6875em;
-  margin-top: 0.13636363636363635em;
+  margin-top: 0.18181818181818182em;
 }
 
 <ThemeProvider>
@@ -997,16 +1011,23 @@ exports[`FormField demo examples caption 1`] = `
                   <label>
                     <glamorous(div)
                       hideLabel={undefined}
+                      key="formField-7-textWrapper"
                     >
                       <div
                         className="glamor-0"
                       >
-                        Name
+                        <span
+                          id="formField-7-labelText"
+                        >
+                          Name
+                        </span>
                       </div>
                     </glamorous(div)>
                     <TextInput
                       aria-describedby="formField-7-caption"
+                      key="formField-7-control"
                       required={undefined}
+                      rootProps={undefined}
                       variant={undefined}
                     >
                       <TextInput
@@ -1053,6 +1074,7 @@ exports[`FormField demo examples caption 1`] = `
                   <glamorous(div)
                     caption="This is help text"
                     id="formField-7-caption"
+                    isGroup={false}
                     variant={undefined}
                   >
                     <div
@@ -1483,17 +1505,24 @@ exports[`FormField demo examples hide-label 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-14-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Address
+                            <span
+                              id="formField-14-labelText"
+                            >
+                              Address
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-14-control"
                           placeholder="1234 Main St"
                           required={undefined}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextInput
@@ -1558,17 +1587,24 @@ exports[`FormField demo examples hide-label 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={true}
+                          key="formField-15-textWrapper"
                         >
                           <div
                             className="glamor-4"
                           >
-                            Address Line 2
+                            <span
+                              id="formField-15-labelText"
+                            >
+                              Address Line 2
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-15-control"
                           placeholder="Apt 101"
                           required={undefined}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextInput
@@ -2009,11 +2045,16 @@ exports[`FormField demo examples required 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-4-textWrapper"
                         >
                           <div
                             className="glamor-1"
                           >
-                            Name
+                            <span
+                              id="formField-4-labelText"
+                            >
+                              Name
+                            </span>
                             <glamorous(span)
                               secondaryText={undefined}
                             >
@@ -2027,7 +2068,9 @@ exports[`FormField demo examples required 1`] = `
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-4-control"
                           required={true}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextInput
@@ -2089,11 +2132,16 @@ exports[`FormField demo examples required 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-5-textWrapper"
                         >
                           <div
                             className="glamor-1"
                           >
-                            Nombre
+                            <span
+                              id="formField-5-labelText"
+                            >
+                              Nombre
+                            </span>
                             <glamorous(span)
                               secondaryText={undefined}
                             >
@@ -2107,7 +2155,9 @@ exports[`FormField demo examples required 1`] = `
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-5-control"
                           required={true}
+                          rootProps={undefined}
                           variant={undefined}
                         >
                           <TextInput
@@ -2572,11 +2622,16 @@ exports[`FormField demo examples rtl 1`] = `
                         <label>
                           <glamorous(div)
                             hideLabel={undefined}
+                            key="formField-17-textWrapper"
                           >
                             <div
                               className="glamor-1"
                             >
-                              نموذج
+                              <span
+                                id="formField-17-labelText"
+                              >
+                                نموذج
+                              </span>
                               <glamorous(span)
                                 secondaryText={undefined}
                               >
@@ -2592,7 +2647,9 @@ exports[`FormField demo examples rtl 1`] = `
                             aria-describedby={undefined}
                             defaultValue="مرحبا بالعالم"
                             iconStart={<IconBackspace />}
+                            key="formField-17-control"
                             required={true}
+                            rootProps={undefined}
                             variant={undefined}
                           >
                             <TextInput
@@ -3053,11 +3110,16 @@ exports[`FormField demo examples secondaryText 1`] = `
                   <label>
                     <glamorous(div)
                       hideLabel={undefined}
+                      key="formField-6-textWrapper"
                     >
                       <div
                         className="glamor-1"
                       >
-                        Name
+                        <span
+                          id="formField-6-labelText"
+                        >
+                          Name
+                        </span>
                         <glamorous(span)
                           secondaryText="Optional"
                         >
@@ -3071,7 +3133,9 @@ exports[`FormField demo examples secondaryText 1`] = `
                     </glamorous(div)>
                     <TextInput
                       aria-describedby={undefined}
+                      key="formField-6-control"
                       required={undefined}
+                      rootProps={undefined}
                       variant={undefined}
                     >
                       <TextInput
@@ -3708,11 +3772,16 @@ exports[`FormField demo examples validation 1`] = `
                           <label>
                             <glamorous(div)
                               hideLabel={undefined}
+                              key="formField-16-textWrapper"
                             >
                               <div
                                 className="glamor-1"
                               >
-                                Example
+                                <span
+                                  id="formField-16-labelText"
+                                >
+                                  Example
+                                </span>
                                 <glamorous(span)
                                   secondaryText={undefined}
                                 >
@@ -3728,8 +3797,10 @@ exports[`FormField demo examples validation 1`] = `
                               aria-describedby={undefined}
                               inputRef={[Function]}
                               invalid={undefined}
+                              key="formField-16-control"
                               onChange={[Function]}
                               required={true}
+                              rootProps={undefined}
                               value=""
                               variant={undefined}
                             >
@@ -4017,7 +4088,7 @@ exports[`FormField demo examples variants 1`] = `
 [data-glamor-4] {
   color: #06783f;
   font-size: 0.6875em;
-  margin-top: 0.13636363636363635em;
+  margin-top: 0.18181818181818182em;
 }
 
 .glamor-9,
@@ -4155,7 +4226,7 @@ exports[`FormField demo examples variants 1`] = `
 [data-glamor-10] {
   color: #cf4615;
   font-size: 0.6875em;
-  margin-top: 0.13636363636363635em;
+  margin-top: 0.18181818181818182em;
 }
 
 .glamor-15,
@@ -4293,7 +4364,7 @@ exports[`FormField demo examples variants 1`] = `
 [data-glamor-16] {
   color: #db2929;
   font-size: 0.6875em;
-  margin-top: 0.13636363636363635em;
+  margin-top: 0.18181818181818182em;
 }
 
 <ThemeProvider>
@@ -4505,16 +4576,23 @@ exports[`FormField demo examples variants 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-8-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Success
+                            <span
+                              id="formField-8-labelText"
+                            >
+                              Success
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby="formField-8-caption"
+                          key="formField-8-control"
                           required={undefined}
+                          rootProps={undefined}
                           variant="success"
                         >
                           <TextInput
@@ -4593,6 +4671,7 @@ exports[`FormField demo examples variants 1`] = `
                       <glamorous(div)
                         caption="This is help text"
                         id="formField-8-caption"
+                        isGroup={false}
                         variant="success"
                       >
                         <div
@@ -4621,16 +4700,23 @@ exports[`FormField demo examples variants 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-10-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Warning
+                            <span
+                              id="formField-10-labelText"
+                            >
+                              Warning
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby="formField-10-caption"
+                          key="formField-10-control"
                           required={undefined}
+                          rootProps={undefined}
                           variant="warning"
                         >
                           <TextInput
@@ -4709,6 +4795,7 @@ exports[`FormField demo examples variants 1`] = `
                       <glamorous(div)
                         caption="This is help text"
                         id="formField-10-caption"
+                        isGroup={false}
                         variant="warning"
                       >
                         <div
@@ -4737,16 +4824,23 @@ exports[`FormField demo examples variants 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-12-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Danger
+                            <span
+                              id="formField-12-labelText"
+                            >
+                              Danger
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby="formField-12-caption"
+                          key="formField-12-control"
                           required={undefined}
+                          rootProps={undefined}
                           variant="danger"
                         >
                           <TextInput
@@ -4825,6 +4919,7 @@ exports[`FormField demo examples variants 1`] = `
                       <glamorous(div)
                         caption="This is help text"
                         id="formField-12-caption"
+                        isGroup={false}
                         variant="danger"
                       >
                         <div

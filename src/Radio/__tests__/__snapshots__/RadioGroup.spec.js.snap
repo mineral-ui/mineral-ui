@@ -1,0 +1,3122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup demo examples controlled 1`] = `
+.glamor-13 > *:not(:last-child),
+[data-glamor-13] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+}
+
+.glamor-12 *,
+[data-glamor-12] *,
+.glamor-12 *::before,
+[data-glamor-12] *::before,
+.glamor-12 *::after,
+[data-glamor-12] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-12 > *:not(:last-child),
+[data-glamor-12] > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover span:first-of-type,
+[data-glamor-3]:hover span:first-of-type,
+.glamor-3[data-simulate-hover] span:first-of-type,
+[data-glamor-3][data-simulate-hover] span:first-of-type {
+  border-color: #1f5dc2;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  border: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  -webkit-clip-path: inset(50%);
+}
+
+.glamor-0:hover + span,
+[data-glamor-0]:hover + span,
+.glamor-0[data-simulate-hover] + span,
+[data-glamor-0][data-simulate-hover] + span {
+  border-color: #1f5dc2;
+}
+
+.glamor-0:focus + span,
+[data-glamor-0]:focus + span,
+.glamor-0[data-simulate-focus] + span,
+[data-glamor-0][data-simulate-focus] + span {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-0:checked + span,
+[data-glamor-0]:checked + span {
+  background-color: #2e6fd9;
+  border-color: #2e6fd9;
+}
+
+.glamor-0:checked:hover + span,
+[data-glamor-0]:checked:hover + span,
+.glamor-0:checked[data-simulate-hover] + span,
+[data-glamor-0]:checked[data-simulate-hover] + span {
+  background-color: #1f5dc2;
+  border-color: #1f5dc2;
+}
+
+.glamor-0:checked:focus + span,
+[data-glamor-0]:checked:focus + span,
+.glamor-0:checked[data-simulate-focus] + span,
+[data-glamor-0]:checked[data-simulate-focus] + span {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  background-color: #fff;
+  border-color: #c8d1e0;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex: none;
+  height: 1em;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 1em;
+  width: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-flex: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1 svg,
+[data-glamor-1] svg {
+  fill: currentColor;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  font-size: 0.875em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_danger_muted": "#fabebe",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input": "#fff",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_success_muted": "#c0fadc",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "backgroundColor_warning_muted": "#fcd0c0",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#2e6fd9",
+        "borderColor_danger": "#db2929",
+        "borderColor_danger_active": "#c71818",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#c71818",
+        "borderColor_danger_muted": "#f27474",
+        "borderColor_focus": "#2e6fd9",
+        "borderColor_hover": "#2e6fd9",
+        "borderColor_success": "#10a35a",
+        "borderColor_success_active": "#0a8f4c",
+        "borderColor_success_focus": "#0a8f4c",
+        "borderColor_success_hover": "#0a8f4c",
+        "borderColor_success_muted": "#67eba7",
+        "borderColor_warning": "#e05b2b",
+        "borderColor_warning_active": "#cf4615",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#cf4615",
+        "borderColor_warning_muted": "#f59776",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
+        "color_theme_10": "#e6eefc",
+        "color_theme_100": "#0f397d",
+        "color_theme_20": "#c2dbfc",
+        "color_theme_30": "#9dc2fa",
+        "color_theme_40": "#72a5f2",
+        "color_theme_50": "#4a89e8",
+        "color_theme_60": "#2e6fd9",
+        "color_theme_70": "#1f5dc2",
+        "color_theme_80": "#164ea8",
+        "color_theme_90": "#114091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+        "shadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "space_inline_lg": "1.5em",
+        "space_inline_md": "1em",
+        "space_inline_sm": "0.5em",
+        "space_inline_xl": "2em",
+        "space_inline_xs": "0.25em",
+        "space_inline_xxl": "4em",
+        "space_inline_xxs": "0.125em",
+        "space_inset_lg": "1.5em",
+        "space_inset_md": "1em",
+        "space_inset_sm": "0.5em",
+        "space_stack_lg": "1.5em",
+        "space_stack_md": "1em",
+        "space_stack_sm": "0.5em",
+        "space_stack_xl": "2em",
+        "space_stack_xs": "0.25em",
+        "space_stack_xxl": "4em",
+        "space_stack_xxs": "0.125em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+  () => {
+    class MyForm extends Component {
+      constructor(props) {
+        super(props);
+
+        this.state = {
+          value: 'quartz'
+        };
+
+        this.handleChange = this.handleChange.bind(this);
+      }
+
+      handleChange(event) {
+        this.setState({
+          value: event.target.value
+        });
+      }
+
+      render() {
+        return (
+          <DemoForm>
+            <RadioGroup
+              name=\\"minerals\\"
+              onChange={this.handleChange}
+              checked={this.state.value}
+              data={[
+                { label: 'Flourite', value: 'flourite' },
+                { label: 'Magnetite', value: 'magnetite' },
+                { label: 'Quartz', value: 'quartz' }
+              ]} />
+          </DemoForm>
+        );
+      }
+    }
+
+    return <MyForm />;
+  }
+  "
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "Component": [Function],
+          "DemoForm": [Function],
+          "Radio": [Function],
+          "RadioGroup": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Component": [Function],
+            "DemoForm": [Function],
+            "Radio": [Function],
+            "RadioGroup": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <wrappedPFC>
+              <MyForm>
+                <DemoForm>
+                  <glamorous(form)
+                    onSubmit={[Function]}
+                  >
+                    <form
+                      className="glamor-13"
+                      onSubmit={[Function]}
+                    >
+                      <RadioGroup
+                        checked="quartz"
+                        data={
+                          Array [
+                            Object {
+                              "label": "Flourite",
+                              "value": "flourite",
+                            },
+                            Object {
+                              "label": "Magnetite",
+                              "value": "magnetite",
+                            },
+                            Object {
+                              "label": "Quartz",
+                              "value": "quartz",
+                            },
+                          ]
+                        }
+                        name="minerals"
+                        onChange={[Function]}
+                      >
+                        <RadioGroup
+                          inline={undefined}
+                          role="radiogroup"
+                          size="large"
+                        >
+                          <div
+                            className="glamor-12"
+                            role="radiogroup"
+                          >
+                            <Radio
+                              checked={false}
+                              defaultChecked={undefined}
+                              key="0"
+                              label="Flourite"
+                              name="minerals"
+                              onChange={[Function]}
+                              size="large"
+                              value="flourite"
+                            >
+                              <Radio
+                                className={undefined}
+                                disabled={undefined}
+                              >
+                                <label
+                                  className="glamor-3"
+                                >
+                                  <glamorous(input)
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    checked={false}
+                                    defaultChecked={undefined}
+                                    disabled={undefined}
+                                    innerRef={[Function]}
+                                    name="minerals"
+                                    onChange={[Function]}
+                                    required={undefined}
+                                    size="large"
+                                    type="radio"
+                                    value="flourite"
+                                  >
+                                    <input
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      checked={false}
+                                      className="glamor-0"
+                                      defaultChecked={undefined}
+                                      disabled={undefined}
+                                      name="minerals"
+                                      onChange={[Function]}
+                                      required={undefined}
+                                      size="large"
+                                      type="radio"
+                                      value="flourite"
+                                    />
+                                  </glamorous(input)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-1"
+                                    >
+                                      <svg
+                                        aria-hidden="true"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <circle
+                                          cx="12"
+                                          cy="12"
+                                          r="6"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </glamorous(span)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      Flourite
+                                    </span>
+                                  </glamorous(span)>
+                                </label>
+                              </Radio>
+                            </Radio>
+                            <Radio
+                              checked={false}
+                              defaultChecked={undefined}
+                              key="1"
+                              label="Magnetite"
+                              name="minerals"
+                              onChange={[Function]}
+                              size="large"
+                              value="magnetite"
+                            >
+                              <Radio
+                                className={undefined}
+                                disabled={undefined}
+                              >
+                                <label
+                                  className="glamor-3"
+                                >
+                                  <glamorous(input)
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    checked={false}
+                                    defaultChecked={undefined}
+                                    disabled={undefined}
+                                    innerRef={[Function]}
+                                    name="minerals"
+                                    onChange={[Function]}
+                                    required={undefined}
+                                    size="large"
+                                    type="radio"
+                                    value="magnetite"
+                                  >
+                                    <input
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      checked={false}
+                                      className="glamor-0"
+                                      defaultChecked={undefined}
+                                      disabled={undefined}
+                                      name="minerals"
+                                      onChange={[Function]}
+                                      required={undefined}
+                                      size="large"
+                                      type="radio"
+                                      value="magnetite"
+                                    />
+                                  </glamorous(input)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-1"
+                                    >
+                                      <svg
+                                        aria-hidden="true"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <circle
+                                          cx="12"
+                                          cy="12"
+                                          r="6"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </glamorous(span)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      Magnetite
+                                    </span>
+                                  </glamorous(span)>
+                                </label>
+                              </Radio>
+                            </Radio>
+                            <Radio
+                              checked={true}
+                              defaultChecked={undefined}
+                              key="2"
+                              label="Quartz"
+                              name="minerals"
+                              onChange={[Function]}
+                              size="large"
+                              value="quartz"
+                            >
+                              <Radio
+                                className={undefined}
+                                disabled={undefined}
+                              >
+                                <label
+                                  className="glamor-3"
+                                >
+                                  <glamorous(input)
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    checked={true}
+                                    defaultChecked={undefined}
+                                    disabled={undefined}
+                                    innerRef={[Function]}
+                                    name="minerals"
+                                    onChange={[Function]}
+                                    required={undefined}
+                                    size="large"
+                                    type="radio"
+                                    value="quartz"
+                                  >
+                                    <input
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      checked={true}
+                                      className="glamor-0"
+                                      defaultChecked={undefined}
+                                      disabled={undefined}
+                                      name="minerals"
+                                      onChange={[Function]}
+                                      required={undefined}
+                                      size="large"
+                                      type="radio"
+                                      value="quartz"
+                                    />
+                                  </glamorous(input)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-1"
+                                    >
+                                      <svg
+                                        aria-hidden="true"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <circle
+                                          cx="12"
+                                          cy="12"
+                                          r="6"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </glamorous(span)>
+                                  <glamorous(span)
+                                    disabled={undefined}
+                                    size="large"
+                                  >
+                                    <span
+                                      className="glamor-2"
+                                    >
+                                      Quartz
+                                    </span>
+                                  </glamorous(span)>
+                                </label>
+                              </Radio>
+                            </Radio>
+                          </div>
+                        </RadioGroup>
+                      </RadioGroup>
+                    </form>
+                  </glamorous(form)>
+                </DemoForm>
+              </MyForm>
+            </wrappedPFC>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`RadioGroup demo examples form-field 1`] = `
+.glamor-21 > *:not(:last-child),
+[data-glamor-21] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.glamor-18,
+[data-glamor-18] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+}
+
+.glamor-18 *,
+[data-glamor-18] *,
+.glamor-18 *::before,
+[data-glamor-18] *::before,
+.glamor-18 *::after,
+[data-glamor-18] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-18 > *:not(:last-child),
+[data-glamor-18] > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-5 *,
+[data-glamor-5] *,
+.glamor-5 *::before,
+[data-glamor-5] *::before,
+.glamor-5 *::after,
+[data-glamor-5] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-5:hover span:first-of-type,
+[data-glamor-5]:hover span:first-of-type,
+.glamor-5[data-simulate-hover] span:first-of-type,
+[data-glamor-5][data-simulate-hover] span:first-of-type {
+  border-color: #1f5dc2;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  border: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  -webkit-clip-path: inset(50%);
+}
+
+.glamor-2:hover + span,
+[data-glamor-2]:hover + span,
+.glamor-2[data-simulate-hover] + span,
+[data-glamor-2][data-simulate-hover] + span {
+  border-color: #1f5dc2;
+}
+
+.glamor-2:focus + span,
+[data-glamor-2]:focus + span,
+.glamor-2[data-simulate-focus] + span,
+[data-glamor-2][data-simulate-focus] + span {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-2:checked + span,
+[data-glamor-2]:checked + span {
+  background-color: #2e6fd9;
+  border-color: #2e6fd9;
+}
+
+.glamor-2:checked:hover + span,
+[data-glamor-2]:checked:hover + span,
+.glamor-2:checked[data-simulate-hover] + span,
+[data-glamor-2]:checked[data-simulate-hover] + span {
+  background-color: #1f5dc2;
+  border-color: #1f5dc2;
+}
+
+.glamor-2:checked:focus + span,
+[data-glamor-2]:checked:focus + span,
+.glamor-2:checked[data-simulate-focus] + span,
+[data-glamor-2]:checked[data-simulate-focus] + span {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  align-items: center;
+  background-color: #fff;
+  border-color: #c8d1e0;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex: none;
+  height: 1em;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 1em;
+  width: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-flex: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-3 svg,
+[data-glamor-3] svg {
+  fill: currentColor;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  font-size: 0.875em;
+}
+
+.glamor-20,
+[data-glamor-20] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+}
+
+.glamor-20 *,
+[data-glamor-20] *,
+.glamor-20 *::before,
+[data-glamor-20] *::before,
+.glamor-20 *::after,
+[data-glamor-20] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  color: #58606e;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0.875em;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+.glamor-1 > *,
+[data-glamor-1] > * {
+  align-self: flex-end;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  color: #db2929;
+  font-size: 0.6875em;
+}
+
+.glamor-19,
+[data-glamor-19] {
+  color: #58606e;
+  font-size: 0.6875em;
+  margin-top: 0.7272727272727273em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_danger_muted": "#fabebe",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input": "#fff",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_success_muted": "#c0fadc",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "backgroundColor_warning_muted": "#fcd0c0",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#2e6fd9",
+        "borderColor_danger": "#db2929",
+        "borderColor_danger_active": "#c71818",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#c71818",
+        "borderColor_danger_muted": "#f27474",
+        "borderColor_focus": "#2e6fd9",
+        "borderColor_hover": "#2e6fd9",
+        "borderColor_success": "#10a35a",
+        "borderColor_success_active": "#0a8f4c",
+        "borderColor_success_focus": "#0a8f4c",
+        "borderColor_success_hover": "#0a8f4c",
+        "borderColor_success_muted": "#67eba7",
+        "borderColor_warning": "#e05b2b",
+        "borderColor_warning_active": "#cf4615",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#cf4615",
+        "borderColor_warning_muted": "#f59776",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
+        "color_theme_10": "#e6eefc",
+        "color_theme_100": "#0f397d",
+        "color_theme_20": "#c2dbfc",
+        "color_theme_30": "#9dc2fa",
+        "color_theme_40": "#72a5f2",
+        "color_theme_50": "#4a89e8",
+        "color_theme_60": "#2e6fd9",
+        "color_theme_70": "#1f5dc2",
+        "color_theme_80": "#164ea8",
+        "color_theme_90": "#114091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+        "shadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "space_inline_lg": "1.5em",
+        "space_inline_md": "1em",
+        "space_inline_sm": "0.5em",
+        "space_inline_xl": "2em",
+        "space_inline_xs": "0.25em",
+        "space_inline_xxl": "4em",
+        "space_inline_xxs": "0.125em",
+        "space_inset_lg": "1.5em",
+        "space_inset_md": "1em",
+        "space_inset_sm": "0.5em",
+        "space_stack_lg": "1.5em",
+        "space_stack_md": "1em",
+        "space_stack_sm": "0.5em",
+        "space_stack_xl": "2em",
+        "space_stack_xs": "0.25em",
+        "space_stack_xxl": "4em",
+        "space_stack_xxs": "0.125em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+    <DemoForm>
+      <FormField
+        input={RadioGroup}
+        label=\\"Contact Method\\"
+        caption=\\"We promise not to spam you.\\"
+        name=\\"contact\\"
+        defaultChecked=\\"text\\"
+        required
+        data={[
+          { label: 'Email', value: 'email' },
+          { label: 'Telephone', value: 'telephone' },
+          { label: 'Text message', value: 'text' },
+          { label: 'None', value: 'none' }
+        ]}
+      />
+    </DemoForm>
+  "
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "DemoForm": [Function],
+          "FormField": [Function],
+          "RadioGroup": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "DemoForm": [Function],
+            "FormField": [Function],
+            "RadioGroup": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <DemoForm>
+              <glamorous(form)
+                onSubmit={[Function]}
+              >
+                <form
+                  className="glamor-21"
+                  onSubmit={[Function]}
+                >
+                  <FormField
+                    caption="We promise not to spam you."
+                    data={
+                      Array [
+                        Object {
+                          "label": "Email",
+                          "value": "email",
+                        },
+                        Object {
+                          "label": "Telephone",
+                          "value": "telephone",
+                        },
+                        Object {
+                          "label": "Text message",
+                          "value": "text",
+                        },
+                        Object {
+                          "label": "None",
+                          "value": "none",
+                        },
+                      ]
+                    }
+                    defaultChecked="text"
+                    input={[Function]}
+                    label="Contact Method"
+                    name="contact"
+                    required={true}
+                    requiredText="Required"
+                  >
+                    <FormField
+                      className={undefined}
+                    >
+                      <div
+                        className="glamor-20"
+                      >
+                        <div>
+                          <glamorous(div)
+                            hideLabel={undefined}
+                            key="formField-1-textWrapper"
+                          >
+                            <div
+                              className="glamor-1"
+                            >
+                              <span
+                                id="formField-1-labelText"
+                              >
+                                Contact Method
+                              </span>
+                              <glamorous(span)
+                                secondaryText={undefined}
+                              >
+                                <span
+                                  className="glamor-0"
+                                >
+                                  Required
+                                </span>
+                              </glamorous(span)>
+                            </div>
+                          </glamorous(div)>
+                          <RadioGroup
+                            aria-describedby="formField-1-caption"
+                            data={
+                              Array [
+                                Object {
+                                  "label": "Email",
+                                  "value": "email",
+                                },
+                                Object {
+                                  "label": "Telephone",
+                                  "value": "telephone",
+                                },
+                                Object {
+                                  "label": "Text message",
+                                  "value": "text",
+                                },
+                                Object {
+                                  "label": "None",
+                                  "value": "none",
+                                },
+                              ]
+                            }
+                            defaultChecked="text"
+                            key="formField-1-control"
+                            name="contact"
+                            required={true}
+                            rootProps={
+                              Object {
+                                "aria-describedby": "formField-1-caption",
+                                "aria-labelledby": "formField-1-labelText",
+                              }
+                            }
+                            variant={undefined}
+                          >
+                            <RadioGroup
+                              aria-describedby="formField-1-caption"
+                              aria-labelledby="formField-1-labelText"
+                              inline={undefined}
+                              role="radiogroup"
+                              size="large"
+                            >
+                              <div
+                                aria-describedby="formField-1-caption"
+                                aria-labelledby="formField-1-labelText"
+                                className="glamor-18"
+                                role="radiogroup"
+                              >
+                                <Radio
+                                  aria-describedby="formField-1-caption"
+                                  checked={undefined}
+                                  defaultChecked={false}
+                                  key="0"
+                                  label="Email"
+                                  name="contact"
+                                  onChange={undefined}
+                                  required={true}
+                                  size="large"
+                                  value="email"
+                                  variant={undefined}
+                                >
+                                  <Radio
+                                    className={undefined}
+                                    disabled={undefined}
+                                  >
+                                    <label
+                                      className="glamor-5"
+                                    >
+                                      <glamorous(input)
+                                        aria-describedby="formField-1-caption"
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        checked={undefined}
+                                        defaultChecked={false}
+                                        disabled={undefined}
+                                        innerRef={[Function]}
+                                        name="contact"
+                                        onChange={undefined}
+                                        required={true}
+                                        size="large"
+                                        type="radio"
+                                        value="email"
+                                        variant={undefined}
+                                      >
+                                        <input
+                                          aria-describedby="formField-1-caption"
+                                          aria-invalid={undefined}
+                                          aria-required={true}
+                                          checked={undefined}
+                                          className="glamor-2"
+                                          defaultChecked={false}
+                                          disabled={undefined}
+                                          name="contact"
+                                          onChange={undefined}
+                                          required={true}
+                                          size="large"
+                                          type="radio"
+                                          value="email"
+                                        />
+                                      </glamorous(input)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-3"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <circle
+                                              cx="12"
+                                              cy="12"
+                                              r="6"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </glamorous(span)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-4"
+                                        >
+                                          Email
+                                        </span>
+                                      </glamorous(span)>
+                                    </label>
+                                  </Radio>
+                                </Radio>
+                                <Radio
+                                  aria-describedby="formField-1-caption"
+                                  checked={undefined}
+                                  defaultChecked={false}
+                                  key="1"
+                                  label="Telephone"
+                                  name="contact"
+                                  onChange={undefined}
+                                  required={true}
+                                  size="large"
+                                  value="telephone"
+                                  variant={undefined}
+                                >
+                                  <Radio
+                                    className={undefined}
+                                    disabled={undefined}
+                                  >
+                                    <label
+                                      className="glamor-5"
+                                    >
+                                      <glamorous(input)
+                                        aria-describedby="formField-1-caption"
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        checked={undefined}
+                                        defaultChecked={false}
+                                        disabled={undefined}
+                                        innerRef={[Function]}
+                                        name="contact"
+                                        onChange={undefined}
+                                        required={true}
+                                        size="large"
+                                        type="radio"
+                                        value="telephone"
+                                        variant={undefined}
+                                      >
+                                        <input
+                                          aria-describedby="formField-1-caption"
+                                          aria-invalid={undefined}
+                                          aria-required={true}
+                                          checked={undefined}
+                                          className="glamor-2"
+                                          defaultChecked={false}
+                                          disabled={undefined}
+                                          name="contact"
+                                          onChange={undefined}
+                                          required={true}
+                                          size="large"
+                                          type="radio"
+                                          value="telephone"
+                                        />
+                                      </glamorous(input)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-3"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <circle
+                                              cx="12"
+                                              cy="12"
+                                              r="6"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </glamorous(span)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-4"
+                                        >
+                                          Telephone
+                                        </span>
+                                      </glamorous(span)>
+                                    </label>
+                                  </Radio>
+                                </Radio>
+                                <Radio
+                                  aria-describedby="formField-1-caption"
+                                  checked={undefined}
+                                  defaultChecked={true}
+                                  key="2"
+                                  label="Text message"
+                                  name="contact"
+                                  onChange={undefined}
+                                  required={true}
+                                  size="large"
+                                  value="text"
+                                  variant={undefined}
+                                >
+                                  <Radio
+                                    className={undefined}
+                                    disabled={undefined}
+                                  >
+                                    <label
+                                      className="glamor-5"
+                                    >
+                                      <glamorous(input)
+                                        aria-describedby="formField-1-caption"
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        checked={undefined}
+                                        defaultChecked={true}
+                                        disabled={undefined}
+                                        innerRef={[Function]}
+                                        name="contact"
+                                        onChange={undefined}
+                                        required={true}
+                                        size="large"
+                                        type="radio"
+                                        value="text"
+                                        variant={undefined}
+                                      >
+                                        <input
+                                          aria-describedby="formField-1-caption"
+                                          aria-invalid={undefined}
+                                          aria-required={true}
+                                          checked={undefined}
+                                          className="glamor-2"
+                                          defaultChecked={true}
+                                          disabled={undefined}
+                                          name="contact"
+                                          onChange={undefined}
+                                          required={true}
+                                          size="large"
+                                          type="radio"
+                                          value="text"
+                                        />
+                                      </glamorous(input)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-3"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <circle
+                                              cx="12"
+                                              cy="12"
+                                              r="6"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </glamorous(span)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-4"
+                                        >
+                                          Text message
+                                        </span>
+                                      </glamorous(span)>
+                                    </label>
+                                  </Radio>
+                                </Radio>
+                                <Radio
+                                  aria-describedby="formField-1-caption"
+                                  checked={undefined}
+                                  defaultChecked={false}
+                                  key="3"
+                                  label="None"
+                                  name="contact"
+                                  onChange={undefined}
+                                  required={true}
+                                  size="large"
+                                  value="none"
+                                  variant={undefined}
+                                >
+                                  <Radio
+                                    className={undefined}
+                                    disabled={undefined}
+                                  >
+                                    <label
+                                      className="glamor-5"
+                                    >
+                                      <glamorous(input)
+                                        aria-describedby="formField-1-caption"
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        checked={undefined}
+                                        defaultChecked={false}
+                                        disabled={undefined}
+                                        innerRef={[Function]}
+                                        name="contact"
+                                        onChange={undefined}
+                                        required={true}
+                                        size="large"
+                                        type="radio"
+                                        value="none"
+                                        variant={undefined}
+                                      >
+                                        <input
+                                          aria-describedby="formField-1-caption"
+                                          aria-invalid={undefined}
+                                          aria-required={true}
+                                          checked={undefined}
+                                          className="glamor-2"
+                                          defaultChecked={false}
+                                          disabled={undefined}
+                                          name="contact"
+                                          onChange={undefined}
+                                          required={true}
+                                          size="large"
+                                          type="radio"
+                                          value="none"
+                                        />
+                                      </glamorous(input)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-3"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <circle
+                                              cx="12"
+                                              cy="12"
+                                              r="6"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </glamorous(span)>
+                                      <glamorous(span)
+                                        disabled={undefined}
+                                        size="large"
+                                      >
+                                        <span
+                                          className="glamor-4"
+                                        >
+                                          None
+                                        </span>
+                                      </glamorous(span)>
+                                    </label>
+                                  </Radio>
+                                </Radio>
+                              </div>
+                            </RadioGroup>
+                          </RadioGroup>
+                        </div>
+                        <glamorous(div)
+                          caption="We promise not to spam you."
+                          id="formField-1-caption"
+                          isGroup={true}
+                          variant={undefined}
+                        >
+                          <div
+                            className="glamor-19"
+                            id="formField-1-caption"
+                          >
+                            We promise not to spam you.
+                          </div>
+                        </glamorous(div)>
+                      </div>
+                    </FormField>
+                  </FormField>
+                </form>
+              </glamorous(form)>
+            </DemoForm>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`RadioGroup demo examples inline 1`] = `
+.glamor-13 > *:not(:last-child),
+[data-glamor-13] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover span:first-of-type,
+[data-glamor-3]:hover span:first-of-type,
+.glamor-3[data-simulate-hover] span:first-of-type,
+[data-glamor-3][data-simulate-hover] span:first-of-type {
+  border-color: #1f5dc2;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  border: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  -webkit-clip-path: inset(50%);
+}
+
+.glamor-0:hover + span,
+[data-glamor-0]:hover + span,
+.glamor-0[data-simulate-hover] + span,
+[data-glamor-0][data-simulate-hover] + span {
+  border-color: #1f5dc2;
+}
+
+.glamor-0:focus + span,
+[data-glamor-0]:focus + span,
+.glamor-0[data-simulate-focus] + span,
+[data-glamor-0][data-simulate-focus] + span {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-0:checked + span,
+[data-glamor-0]:checked + span {
+  background-color: #2e6fd9;
+  border-color: #2e6fd9;
+}
+
+.glamor-0:checked:hover + span,
+[data-glamor-0]:checked:hover + span,
+.glamor-0:checked[data-simulate-hover] + span,
+[data-glamor-0]:checked[data-simulate-hover] + span {
+  background-color: #1f5dc2;
+  border-color: #1f5dc2;
+}
+
+.glamor-0:checked:focus + span,
+[data-glamor-0]:checked:focus + span,
+.glamor-0:checked[data-simulate-focus] + span,
+[data-glamor-0]:checked[data-simulate-focus] + span {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  background-color: #fff;
+  border-color: #c8d1e0;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex: none;
+  height: 1em;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 1em;
+  width: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-flex: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1 svg,
+[data-glamor-1] svg {
+  fill: currentColor;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  font-size: 0.875em;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+}
+
+.glamor-12 *,
+[data-glamor-12] *,
+.glamor-12 *::before,
+[data-glamor-12] *::before,
+.glamor-12 *::after,
+[data-glamor-12] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-12 > *:not(:last-child),
+[data-glamor-12] > *:not(:last-child) {
+  margin-bottom: 0;
+  margin-right: 2em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_danger_muted": "#fabebe",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input": "#fff",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_success_muted": "#c0fadc",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "backgroundColor_warning_muted": "#fcd0c0",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#2e6fd9",
+        "borderColor_danger": "#db2929",
+        "borderColor_danger_active": "#c71818",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#c71818",
+        "borderColor_danger_muted": "#f27474",
+        "borderColor_focus": "#2e6fd9",
+        "borderColor_hover": "#2e6fd9",
+        "borderColor_success": "#10a35a",
+        "borderColor_success_active": "#0a8f4c",
+        "borderColor_success_focus": "#0a8f4c",
+        "borderColor_success_hover": "#0a8f4c",
+        "borderColor_success_muted": "#67eba7",
+        "borderColor_warning": "#e05b2b",
+        "borderColor_warning_active": "#cf4615",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#cf4615",
+        "borderColor_warning_muted": "#f59776",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
+        "color_theme_10": "#e6eefc",
+        "color_theme_100": "#0f397d",
+        "color_theme_20": "#c2dbfc",
+        "color_theme_30": "#9dc2fa",
+        "color_theme_40": "#72a5f2",
+        "color_theme_50": "#4a89e8",
+        "color_theme_60": "#2e6fd9",
+        "color_theme_70": "#1f5dc2",
+        "color_theme_80": "#164ea8",
+        "color_theme_90": "#114091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+        "shadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "space_inline_lg": "1.5em",
+        "space_inline_md": "1em",
+        "space_inline_sm": "0.5em",
+        "space_inline_xl": "2em",
+        "space_inline_xs": "0.25em",
+        "space_inline_xxl": "4em",
+        "space_inline_xxs": "0.125em",
+        "space_inset_lg": "1.5em",
+        "space_inset_md": "1em",
+        "space_inset_sm": "0.5em",
+        "space_stack_lg": "1.5em",
+        "space_stack_md": "1em",
+        "space_stack_sm": "0.5em",
+        "space_stack_xl": "2em",
+        "space_stack_xs": "0.25em",
+        "space_stack_xxl": "4em",
+        "space_stack_xxs": "0.125em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+    <DemoForm>
+      <RadioGroup
+        name=\\"minerals\\"
+        defaultChecked=\\"quartz\\"
+        data={[
+          { label: 'Flourite', value: 'flourite' },
+          { label: 'Magnetite', value: 'magnetite' },
+          { label: 'Quartz', value: 'quartz' }
+        ]}
+        inline />
+    </DemoForm>
+  "
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "DemoForm": [Function],
+          "Radio": [Function],
+          "RadioGroup": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "DemoForm": [Function],
+            "Radio": [Function],
+            "RadioGroup": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <DemoForm>
+              <glamorous(form)
+                onSubmit={[Function]}
+              >
+                <form
+                  className="glamor-13"
+                  onSubmit={[Function]}
+                >
+                  <RadioGroup
+                    data={
+                      Array [
+                        Object {
+                          "label": "Flourite",
+                          "value": "flourite",
+                        },
+                        Object {
+                          "label": "Magnetite",
+                          "value": "magnetite",
+                        },
+                        Object {
+                          "label": "Quartz",
+                          "value": "quartz",
+                        },
+                      ]
+                    }
+                    defaultChecked="quartz"
+                    inline={true}
+                    name="minerals"
+                  >
+                    <RadioGroup
+                      inline={true}
+                      role="radiogroup"
+                      size="large"
+                    >
+                      <div
+                        className="glamor-12"
+                        role="radiogroup"
+                      >
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="0"
+                          label="Flourite"
+                          name="minerals"
+                          onChange={undefined}
+                          size="large"
+                          value="flourite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="flourite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="flourite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Flourite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="1"
+                          label="Magnetite"
+                          name="minerals"
+                          onChange={undefined}
+                          size="large"
+                          value="magnetite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="magnetite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="magnetite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Magnetite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={true}
+                          key="2"
+                          label="Quartz"
+                          name="minerals"
+                          onChange={undefined}
+                          size="large"
+                          value="quartz"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={true}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="quartz"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={true}
+                                  disabled={undefined}
+                                  name="minerals"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="quartz"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Quartz
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                      </div>
+                    </RadioGroup>
+                  </RadioGroup>
+                </form>
+              </glamorous(form)>
+            </DemoForm>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`RadioGroup demo examples uncontrolled 1`] = `
+.glamor-27 > *:not(:last-child),
+[data-glamor-27] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+}
+
+.glamor-12 *,
+[data-glamor-12] *,
+.glamor-12 *::before,
+[data-glamor-12] *::before,
+.glamor-12 *::after,
+[data-glamor-12] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-12 > *:not(:last-child),
+[data-glamor-12] > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover span:first-of-type,
+[data-glamor-3]:hover span:first-of-type,
+.glamor-3[data-simulate-hover] span:first-of-type,
+[data-glamor-3][data-simulate-hover] span:first-of-type {
+  border-color: #1f5dc2;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  border: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  -webkit-clip-path: inset(50%);
+}
+
+.glamor-0:hover + span,
+[data-glamor-0]:hover + span,
+.glamor-0[data-simulate-hover] + span,
+[data-glamor-0][data-simulate-hover] + span {
+  border-color: #1f5dc2;
+}
+
+.glamor-0:focus + span,
+[data-glamor-0]:focus + span,
+.glamor-0[data-simulate-focus] + span,
+[data-glamor-0][data-simulate-focus] + span {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-0:checked + span,
+[data-glamor-0]:checked + span {
+  background-color: #2e6fd9;
+  border-color: #2e6fd9;
+}
+
+.glamor-0:checked:hover + span,
+[data-glamor-0]:checked:hover + span,
+.glamor-0:checked[data-simulate-hover] + span,
+[data-glamor-0]:checked[data-simulate-hover] + span {
+  background-color: #1f5dc2;
+  border-color: #1f5dc2;
+}
+
+.glamor-0:checked:focus + span,
+[data-glamor-0]:checked:focus + span,
+.glamor-0:checked[data-simulate-focus] + span,
+[data-glamor-0]:checked[data-simulate-focus] + span {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  background-color: #fff;
+  border-color: #c8d1e0;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  content: " ";
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  flex: none;
+  height: 1em;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 1em;
+  width: 1em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-flex: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-1 svg,
+[data-glamor-1] svg {
+  fill: currentColor;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  font-size: 0.875em;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  background-color: #c8d1e0;
+  height: 1px;
+  margin: 0.5em 0;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme={
+      Object {
+        "backgroundColor_danger": "#db2929",
+        "backgroundColor_danger_active": "#c71818",
+        "backgroundColor_danger_activeMuted": "#f79999",
+        "backgroundColor_danger_focus": "#db2929",
+        "backgroundColor_danger_hover": "#eb4d4d",
+        "backgroundColor_danger_muted": "#fabebe",
+        "backgroundColor_disabled": "#ebeff5",
+        "backgroundColor_input": "#fff",
+        "backgroundColor_link_focus": "#dde3ed",
+        "backgroundColor_success": "#0a8f4c",
+        "backgroundColor_success_active": "#06783f",
+        "backgroundColor_success_activeMuted": "#95f5c3",
+        "backgroundColor_success_focus": "#0a8f4c",
+        "backgroundColor_success_hover": "#10a35a",
+        "backgroundColor_success_muted": "#c0fadc",
+        "backgroundColor_warning": "#e05b2b",
+        "backgroundColor_warning_active": "#cf4615",
+        "backgroundColor_warning_activeMuted": "#fab69d",
+        "backgroundColor_warning_focus": "#e05b2b",
+        "backgroundColor_warning_hover": "#ed774c",
+        "backgroundColor_warning_muted": "#fcd0c0",
+        "borderColor": "#c8d1e0",
+        "borderColor_active": "#2e6fd9",
+        "borderColor_danger": "#db2929",
+        "borderColor_danger_active": "#c71818",
+        "borderColor_danger_focus": "#c71818",
+        "borderColor_danger_hover": "#c71818",
+        "borderColor_danger_muted": "#f27474",
+        "borderColor_focus": "#2e6fd9",
+        "borderColor_hover": "#2e6fd9",
+        "borderColor_success": "#10a35a",
+        "borderColor_success_active": "#0a8f4c",
+        "borderColor_success_focus": "#0a8f4c",
+        "borderColor_success_hover": "#0a8f4c",
+        "borderColor_success_muted": "#67eba7",
+        "borderColor_warning": "#e05b2b",
+        "borderColor_warning_active": "#cf4615",
+        "borderColor_warning_focus": "#cf4615",
+        "borderColor_warning_hover": "#cf4615",
+        "borderColor_warning_muted": "#f59776",
+        "borderRadius_1": "0.1875em",
+        "color_black": "#1d1f24",
+        "color_caption": "#58606e",
+        "color_gray_10": "#f5f7fa",
+        "color_gray_100": "#333840",
+        "color_gray_20": "#ebeff5",
+        "color_gray_30": "#dde3ed",
+        "color_gray_40": "#c8d1e0",
+        "color_gray_50": "#afbacc",
+        "color_gray_60": "#8e99ab",
+        "color_gray_70": "#707a8a",
+        "color_gray_80": "#58606e",
+        "color_gray_90": "#434a54",
+        "color_placeholder": "#8e99ab",
+        "color_text": "#333840",
+        "color_text_danger": "#db2929",
+        "color_text_danger_active": "#c71818",
+        "color_text_danger_focus": "#db2929",
+        "color_text_danger_hover": "#eb4d4d",
+        "color_text_disabled": "#afbacc",
+        "color_text_ondanger": "#fff",
+        "color_text_onprimary": "#fff",
+        "color_text_onsuccess": "#fff",
+        "color_text_onwarning": "#fff",
+        "color_text_primary": "#2e6fd9",
+        "color_text_primary_active": "#1f5dc2",
+        "color_text_primary_focus": "#2e6fd9",
+        "color_text_primary_hover": "#4a89e8",
+        "color_text_success": "#06783f",
+        "color_text_success_active": "#046132",
+        "color_text_success_focus": "#06783f",
+        "color_text_success_hover": "#0a8f4c",
+        "color_text_warning": "#cf4615",
+        "color_text_warning_active": "#bd3909",
+        "color_text_warning_focus": "#cf4615",
+        "color_text_warning_hover": "#e05b2b",
+        "color_theme_10": "#e6eefc",
+        "color_theme_100": "#0f397d",
+        "color_theme_20": "#c2dbfc",
+        "color_theme_30": "#9dc2fa",
+        "color_theme_40": "#72a5f2",
+        "color_theme_50": "#4a89e8",
+        "color_theme_60": "#2e6fd9",
+        "color_theme_70": "#1f5dc2",
+        "color_theme_80": "#164ea8",
+        "color_theme_90": "#114091",
+        "color_white": "#fff",
+        "direction": "ltr",
+        "fontFamily": "Open Sans",
+        "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+        "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+        "fontSize_base": 16,
+        "fontSize_h1": "2.125em",
+        "fontSize_h2": "1.75em",
+        "fontSize_h3": "1.375em",
+        "fontSize_h4": "1.125em",
+        "fontSize_h5": "0.875em",
+        "fontSize_h6": "0.875em",
+        "fontSize_mouse": "0.6875em",
+        "fontSize_prose": "1em",
+        "fontSize_ui": "0.875em",
+        "fontWeight_bold": 700,
+        "fontWeight_extraBold": 800,
+        "fontWeight_regular": 400,
+        "fontWeight_semiBold": 600,
+        "lineHeight": 1.25,
+        "lineHeight_prose": 1.5,
+        "shadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+        "shadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+        "shadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+        "shadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+        "shadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+        "size_jumbo": "3.25em",
+        "size_large": "2.5em",
+        "size_medium": "2em",
+        "size_small": "1.5em",
+        "space_inline_lg": "1.5em",
+        "space_inline_md": "1em",
+        "space_inline_sm": "0.5em",
+        "space_inline_xl": "2em",
+        "space_inline_xs": "0.25em",
+        "space_inline_xxl": "4em",
+        "space_inline_xxs": "0.125em",
+        "space_inset_lg": "1.5em",
+        "space_inset_md": "1em",
+        "space_inset_sm": "0.5em",
+        "space_stack_lg": "1.5em",
+        "space_stack_md": "1em",
+        "space_stack_sm": "0.5em",
+        "space_stack_xl": "2em",
+        "space_stack_xs": "0.25em",
+        "space_stack_xxl": "4em",
+        "space_stack_xxs": "0.125em",
+        "zIndex_100": 100,
+        "zIndex_1600": 1600,
+        "zIndex_200": 200,
+        "zIndex_400": 400,
+        "zIndex_800": 800,
+      }
+    }
+  >
+    <LiveProvider
+      code="
+    <DemoForm>
+      {/* Use the \\"data\\" prop for a streamlined approach. */}
+      <RadioGroup
+        name=\\"minerals-1\\"
+        defaultChecked=\\"quartz\\"
+        data={[
+          { label: 'Flourite', value: 'flourite' },
+          { label: 'Magnetite', value: 'magnetite' },
+          { label: 'Quartz', value: 'quartz' }
+        ]} />
+
+      <FormFieldDivider />
+
+      {/* Or use \\"children\\", if you prefer. */}
+      <RadioGroup name=\\"minerals-2\\" defaultChecked=\\"pyrite\\">
+        <Radio label=\\"Azurite\\" value=\\"azurite\\" />
+        <Radio label=\\"Hematite\\" value=\\"hematite\\" />
+        <Radio label=\\"Pyrite\\" value=\\"pyrite\\" />
+      </RadioGroup>
+    </DemoForm>
+  "
+      mountStylesheet={false}
+      noInline={false}
+      scope={
+        Object {
+          "DemoForm": [Function],
+          "FormFieldDivider": [Function],
+          "Radio": [Function],
+          "RadioGroup": [Function],
+        }
+      }
+    >
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "DemoForm": [Function],
+            "FormFieldDivider": [Function],
+            "Radio": [Function],
+            "RadioGroup": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <DemoForm>
+              <glamorous(form)
+                onSubmit={[Function]}
+              >
+                <form
+                  className="glamor-27"
+                  onSubmit={[Function]}
+                >
+                  <RadioGroup
+                    data={
+                      Array [
+                        Object {
+                          "label": "Flourite",
+                          "value": "flourite",
+                        },
+                        Object {
+                          "label": "Magnetite",
+                          "value": "magnetite",
+                        },
+                        Object {
+                          "label": "Quartz",
+                          "value": "quartz",
+                        },
+                      ]
+                    }
+                    defaultChecked="quartz"
+                    name="minerals-1"
+                  >
+                    <RadioGroup
+                      inline={undefined}
+                      role="radiogroup"
+                      size="large"
+                    >
+                      <div
+                        className="glamor-12"
+                        role="radiogroup"
+                      >
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="0"
+                          label="Flourite"
+                          name="minerals-1"
+                          onChange={undefined}
+                          size="large"
+                          value="flourite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-1"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="flourite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals-1"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="flourite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Flourite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="1"
+                          label="Magnetite"
+                          name="minerals-1"
+                          onChange={undefined}
+                          size="large"
+                          value="magnetite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-1"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="magnetite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals-1"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="magnetite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Magnetite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={true}
+                          key="2"
+                          label="Quartz"
+                          name="minerals-1"
+                          onChange={undefined}
+                          size="large"
+                          value="quartz"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={true}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-1"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="quartz"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={true}
+                                  disabled={undefined}
+                                  name="minerals-1"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="quartz"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Quartz
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                      </div>
+                    </RadioGroup>
+                  </RadioGroup>
+                  <FormFieldDivider>
+                    <FormFieldDivider
+                      role="separator"
+                    >
+                      <div
+                        className="glamor-13"
+                        role="separator"
+                      />
+                    </FormFieldDivider>
+                  </FormFieldDivider>
+                  <RadioGroup
+                    defaultChecked="pyrite"
+                    name="minerals-2"
+                  >
+                    <RadioGroup
+                      inline={undefined}
+                      role="radiogroup"
+                      size="large"
+                    >
+                      <div
+                        className="glamor-12"
+                        role="radiogroup"
+                      >
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="0/.0"
+                          label="Azurite"
+                          name="minerals-2"
+                          onChange={undefined}
+                          size="large"
+                          value="azurite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-2"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="azurite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals-2"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="azurite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Azurite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={false}
+                          key="1/.1"
+                          label="Hematite"
+                          name="minerals-2"
+                          onChange={undefined}
+                          size="large"
+                          value="hematite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={false}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-2"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="hematite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={false}
+                                  disabled={undefined}
+                                  name="minerals-2"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="hematite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Hematite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                        <Radio
+                          checked={undefined}
+                          defaultChecked={true}
+                          key="2/.2"
+                          label="Pyrite"
+                          name="minerals-2"
+                          onChange={undefined}
+                          size="large"
+                          value="pyrite"
+                        >
+                          <Radio
+                            className={undefined}
+                            disabled={undefined}
+                          >
+                            <label
+                              className="glamor-3"
+                            >
+                              <glamorous(input)
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                checked={undefined}
+                                defaultChecked={true}
+                                disabled={undefined}
+                                innerRef={[Function]}
+                                name="minerals-2"
+                                onChange={undefined}
+                                required={undefined}
+                                size="large"
+                                type="radio"
+                                value="pyrite"
+                              >
+                                <input
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  checked={undefined}
+                                  className="glamor-0"
+                                  defaultChecked={true}
+                                  disabled={undefined}
+                                  name="minerals-2"
+                                  onChange={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="radio"
+                                  value="pyrite"
+                                />
+                              </glamorous(input)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-1"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="6"
+                                    />
+                                  </svg>
+                                </span>
+                              </glamorous(span)>
+                              <glamorous(span)
+                                disabled={undefined}
+                                size="large"
+                              >
+                                <span
+                                  className="glamor-2"
+                                >
+                                  Pyrite
+                                </span>
+                              </glamorous(span)>
+                            </label>
+                          </Radio>
+                        </Radio>
+                      </div>
+                    </RadioGroup>
+                  </RadioGroup>
+                </form>
+              </glamorous(form)>
+            </DemoForm>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;

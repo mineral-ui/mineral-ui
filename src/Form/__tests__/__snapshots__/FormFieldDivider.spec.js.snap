@@ -386,16 +386,23 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-1-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Old Password
+                            <span
+                              id="formField-1-labelText"
+                            >
+                              Old Password
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-1-control"
                           required={undefined}
+                          rootProps={undefined}
                           type="password"
                           variant={undefined}
                         >
@@ -466,16 +473,23 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-2-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            New Password
+                            <span
+                              id="formField-2-labelText"
+                            >
+                              New Password
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-2-control"
                           required={undefined}
+                          rootProps={undefined}
                           type="password"
                           variant={undefined}
                         >
@@ -536,16 +550,23 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                       <label>
                         <glamorous(div)
                           hideLabel={undefined}
+                          key="formField-3-textWrapper"
                         >
                           <div
                             className="glamor-0"
                           >
-                            Repeat New Password
+                            <span
+                              id="formField-3-labelText"
+                            >
+                              Repeat New Password
+                            </span>
                           </div>
                         </glamorous(div)>
                         <TextInput
                           aria-describedby={undefined}
+                          key="formField-3-control"
                           required={undefined}
+                          rootProps={undefined}
                           type="password"
                           variant={undefined}
                         >
