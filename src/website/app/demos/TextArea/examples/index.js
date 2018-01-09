@@ -18,6 +18,7 @@
 import autoSize from './autoSize';
 import controlled from './controlled';
 import disabled from './disabled';
+import formField from './formField';
 import inputRef from './inputRef';
 import importSyntax from './importSyntax';
 import invalid from './invalid';
@@ -47,6 +48,7 @@ export default [
   variants,
   inputRef,
   rtl,
+  formField,
   nextToOtherInputs,
   states
 ];

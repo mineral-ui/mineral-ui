@@ -17,6 +17,7 @@
 /* @flow */
 import controlled from './controlled';
 import disabled from './disabled';
+import formField from './formField';
 import icons from './icons';
 import inputRef from './inputRef';
 import importSyntax from './importSyntax';
@@ -48,6 +49,7 @@ export default [
   prefixAndSuffix,
   inputRef,
   rtl,
+  formField,
   nextToButton,
   kitchenSink,
   states
