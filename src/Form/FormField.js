@@ -17,11 +17,14 @@
 /* @flow */
 import React, { Children, cloneElement, createElement, Component } from 'react';
 import { hideVisually } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, getNormalizedValue } from '../styles';
 import { generateId } from '../utils';
 
 type Props = {
-  /** Caption associated with the input element. Commonly used to provide help text. */
+  /**
+   * Caption associated with the input element; commonly used to provide help
+   * text
+   */
   caption?: string | React$Element<*>,
   /** Form input element */
   children?: React$Node,
@@ -29,7 +32,7 @@ type Props = {
   className?: string,
   /** Visually hide label, but keep available for assistive technologies */
   hideLabel?: boolean,
-  /** Form input class. Alternative to children. */
+  /** Form input class; alternative to `children` */
   input?: React$ComponentType<*>,
   /** Props to be applied directly to the root element, rather than the input */
   rootProps?: Object,
@@ -39,15 +42,22 @@ type Props = {
   required?: boolean,
   /** Text used to indicate a required field */
   requiredText?: string | React$Element<*>,
-  /** Secondary text associated with the input element; takes precedence over `requiredText` */
+  /**
+   * Secondary text associated with the input element; takes precedence over
+   * `requiredText`
+   */
   secondaryText?: string | React$Element<*>,
   /** Available variants */
   variant?: 'success' | 'warning' | 'danger'
 };
 
+const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
+
 export const componentTheme = (baseTheme: Object) => ({
   FormFieldCaption_color_text: baseTheme.color_gray_80,
   FormFieldCaption_fontSize: baseTheme.fontSize_mouse,
+  FormFieldCaption_marginTop: baseTheme.space_stack_xxs,
+  FormFieldCaption_marginTop_isGroup: baseTheme.space_stack_sm,
 
   FormFieldLabel_color_text: baseTheme.color_gray_80,
   FormFieldLabel_fontSize: baseTheme.fontSize_ui,
@@ -62,7 +72,7 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  caption: ({ theme: baseTheme, variant }) => {
+  caption: ({ isGroup, theme: baseTheme, variant }) => {
     let theme = componentTheme(baseTheme);
     if (variant) {
       // prettier-ignore
@@ -77,8 +87,9 @@ const styles = {
     return {
       color: theme.FormFieldCaption_color_text,
       fontSize,
-      // 1.5 provides same top gap as the spec'd lineHeight of 16 would
-      marginTop: getNormalizedValue(pxToEm(1.5), fontSize)
+      marginTop: isGroup
+        ? getNormalizedValue(theme.FormFieldCaption_marginTop_isGroup, fontSize)
+        : getNormalizedValue(theme.FormFieldCaption_marginTop, fontSize)
     };
   },
   textWrapper: ({ hideLabel, theme: baseTheme }) => {
@@ -154,29 +165,58 @@ export default class FormField extends Component<Props> {
       ...otherRootProps
     };
 
+    // Label structure differs if input/control is a group
+    //   e.g. RadioGroup, CheckboxGroup
+    const isGroup = this.isGroup();
+    const Label = isGroup ? 'div' : 'label';
+
+    const textWrapperProps = {
+      hideLabel,
+      key: `${this.id}-textWrapper`
+    };
+
+    const labelTextProps = {
+      id: `${this.id}-labelText`
+    };
+
     const captionProps = {
       caption,
+      isGroup,
       variant,
       id: `${this.id}-caption`
     };
 
-    const controlProps = {
-      'aria-describedby': caption && captionProps.id,
-      required,
-      variant,
-      // Note: Props are spread to input rather than Root
-      ...restProps
+    const controlProps = (props = {}) => {
+      return {
+        'aria-describedby': caption && captionProps.id,
+        key: `${this.id}-control`,
+        required,
+        rootProps: isGroup
+          ? {
+              'aria-labelledby': labelTextProps.id,
+              'aria-describedby': caption && captionProps.id,
+              ...props.rootProps
+            }
+          : props.rootProps,
+        variant,
+        // Note: Props are spread to input rather than Root
+        ...restProps
+      };
     };
 
-    const control = input
-      ? createElement(input, controlProps)
-      : children ? cloneElement(Children.only(children), controlProps) : null;
+    let control = null;
+    if (input) {
+      control = createElement(input, controlProps());
+    } else if (children) {
+      const child = Children.only(children);
+      control = cloneElement(child, controlProps(child.props));
+    }
 
     return (
       <Root {...rootProps}>
-        <label>
-          <TextWrapper hideLabel={hideLabel}>
-            {label}
+        <Label>
+          <TextWrapper {...textWrapperProps}>
+            <span {...labelTextProps}>{label}</span>
             {(required || secondaryText) && (
               <SecondaryText secondaryText={secondaryText}>
                 {secondaryText ? secondaryText : requiredText}
@@ -184,9 +224,31 @@ export default class FormField extends Component<Props> {
             )}
           </TextWrapper>
           {control}
-        </label>
+        </Label>
         {caption && <Caption {...captionProps}>{caption}</Caption>}
       </Root>
     );
   }
+
+  getControlName = () => {
+    const { children, input } = this.props;
+    let controlName;
+
+    if (input && input.name) {
+      controlName = input.name;
+    } else if (children) {
+      const child = Children.only(children);
+      if (child.type && child.type.name) {
+        controlName = child.type.name;
+      }
+    }
+
+    return controlName;
+  };
+
+  isGroup = () => {
+    const controlName = this.getControlName();
+
+    return controlName && REGEX_GROUP.test(controlName);
+  };
 }
