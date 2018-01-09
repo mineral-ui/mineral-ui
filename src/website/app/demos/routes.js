@@ -127,6 +127,18 @@ export default {
     slug: 'popover',
     title: 'Popover'
   },
+  radio: {
+    description:
+      'Radios allows users to select a single option from a set. Use Radios to accept limited choice input from a user.',
+    slug: 'radio',
+    title: 'Radio'
+  },
+  'radio-group': {
+    description:
+      'RadioGroup allows users to select a single option from a set.  Use a RadioGroup for a simpler API than working with Radios directly.',
+    slug: 'radio-group',
+    title: 'RadioGroup'
+  },
   'text-area': {
     description:
       'TextAreas accept data from the user.  Use a TextArea to accept potentially lengthy, free-form input from a user',
