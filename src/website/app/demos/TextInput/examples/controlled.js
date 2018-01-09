@@ -16,7 +16,6 @@
 
 /* @flow */
 import { Component } from 'react';
-import DemoLayout from '../components/DemoLayout';
 import TextInput from '../../../../../TextInput';
 
 export default {
@@ -25,7 +24,7 @@ export default {
   description: `In a controlled TextInput, the value is handled by a React
 component.  Set the value with the \`value\` prop and provide an \`onChange\`
 handler.`,
-  scope: { Component, DemoLayout, TextInput },
+  scope: { Component, TextInput },
   source: `
   () => {
     class MyForm extends Component {
@@ -33,31 +32,23 @@ handler.`,
         super(props);
 
         this.state = {
-          value: this.props.value
+          value: 'Hello World'
         };
 
-        this.handleTextInputChange = this.handleTextInputChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
       }
 
-      handleTextInputChange(event) {
+      handleChange(event) {
         this.setState({
           value: event.target.value
         });
-
-        if (this.props.onChange) {
-          this.props.onChange(event);
-        }
       }
 
       render() {
-        const textInputProps = {
-          ...this.props,
-          onChange: this.handleTextInputChange,
-          value: this.state.value || 'Hello World'
-        };
-
         return (
-          <TextInput { ...textInputProps } />
+          <TextInput
+            value={this.state.value}
+            onChange={this.handleChange} />
         );
       }
     }

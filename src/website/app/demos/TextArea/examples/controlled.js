@@ -16,7 +16,6 @@
 
 /* @flow */
 import { Component } from 'react';
-import DemoLayout from '../components/DemoLayout';
 import TextArea from '../../../../../TextArea';
 
 export default {
@@ -25,7 +24,7 @@ export default {
   description: `In a controlled TextArea, the value is handled by a React
 component.  Set the value with the \`value\` prop and provide an \`onChange\`
 handler.`,
-  scope: { Component, DemoLayout, TextArea },
+  scope: { Component, TextArea },
   source: `
   () => {
     class MyForm extends Component {
@@ -33,31 +32,23 @@ handler.`,
         super(props);
 
         this.state = {
-          value: this.props.value
+          value: 'Hello World'
         };
 
-        this.handleTextAreaChange = this.handleTextAreaChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
       }
 
-      handleTextAreaChange(event) {
+      handleChange(event) {
         this.setState({
           value: event.target.value
         });
-
-        if (this.props.onChange) {
-          this.props.onChange(event);
-        }
       }
 
       render() {
-        const textAreaProps = {
-          ...this.props,
-          onChange: this.handleTextAreaChange,
-          value: this.state.value || 'Hello World'
-        };
-
         return (
-          <TextArea { ...textAreaProps } />
+          <TextArea
+            value={this.state.value}
+            onChange={this.handleChange} />
         );
       }
     }
