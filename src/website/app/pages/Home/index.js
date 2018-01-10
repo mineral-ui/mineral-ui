@@ -69,9 +69,9 @@ const pageMeta = {
 };
 
 const latestPost = {
-  title: 'Change is the Real Value of a Design System',
+  title: 'Deleting 2000 Lines of JavaScript with SVG',
   url:
-    'https://medium.com/@MichaelWaite/change-is-the-real-value-of-a-design-system-3affc03c738d'
+    'https://medium.com/@coldpour/deleting-2000-lines-of-javascript-with-svg-424b89c6e466'
 };
 
 const playgroundThemes = [
