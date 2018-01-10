@@ -344,13 +344,6 @@ const styles = {
     }
   }),
   getStartedBackgrounds: ({ theme }) => ({
-    '& > :nth-child(1)': {
-      '& > svg': {
-        mixBlendMode: 'luminosity',
-        transform: 'translateX(50%) rotate(180deg) scale(2)'
-      }
-    },
-
     '& > :nth-child(2)': {
       background: `linear-gradient(
         rgba(0,0,0,0.4),
@@ -542,11 +535,7 @@ const styles = {
       ${playgroundThemes[index].color_theme_40},
       ${desaturate(0.5, playgroundThemes[index].color_theme_10)}
     )`,
-    transform: 'scaleX(-1)',
-
-    '& > svg': {
-      transform: 'scale(2)'
-    }
+    transform: 'scaleX(-1)'
   }),
   playgroundSection: ({ index, theme }) => ({
     position: 'relative',
