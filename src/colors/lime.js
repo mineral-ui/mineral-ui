@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /* @flow */
 export default {
   lime_10: '#f1fae6',
@@ -25,5 +24,7 @@ export default {
   lime_70: '#6cbf19',
   lime_80: '#5aa60d',
   lime_90: '#4a8c08',
-  lime_100: '#3d7307'
+  lime_100: '#3d7307',
+
+  a11y_text_light: [100]
 };

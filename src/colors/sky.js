@@ -25,5 +25,7 @@ export default {
   sky_70: '#1b8bcc',
   sky_80: '#0f75b0',
   sky_90: '#0a6091',
-  sky_100: '#084d75'
+  sky_100: '#084d75',
+
+  a11y_text_light: [80, 90, 100]
 };

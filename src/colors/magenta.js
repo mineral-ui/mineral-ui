@@ -25,5 +25,7 @@ export default {
   magenta_70: '#c91451',
   magenta_80: '#b30b43',
   magenta_90: '#a1083b',
-  magenta_100: '#8d0633'
+  magenta_100: '#8d0633',
+
+  a11y_text_light: [60, 70, 80, 90, 100]
 };

@@ -31,3 +31,6 @@ export { default as sky } from './sky';
 export { default as slate } from './slate';
 export { default as teal } from './teal';
 export { default as yellow } from './yellow';
+
+export { default as getColor } from './getColor';
+export { default as getReadableTextColor } from './getReadableTextColor';

@@ -25,5 +25,7 @@ export default {
   indigo_70: '#3737d3',
   indigo_80: '#2c2abd',
   indigo_90: '#2621a6',
-  indigo_100: '#201d8f'
+  indigo_100: '#201d8f',
+
+  a11y_text_light: [60, 70, 80, 90, 100]
 };
