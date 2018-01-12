@@ -25,5 +25,7 @@ export default {
   gray_70: '#707a8a',
   gray_80: '#58606e',
   gray_90: '#434a54',
-  gray_100: '#333840'
+  gray_100: '#333840',
+
+  a11y_text_light: [80, 90, 100]
 };

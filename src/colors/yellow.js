@@ -25,5 +25,7 @@ export default {
   yellow_70: '#d19411',
   yellow_80: '#bd8308',
   yellow_90: '#a67305',
-  yellow_100: '#916504'
+  yellow_100: '#916504',
+
+  a11y_text_light: [100]
 };

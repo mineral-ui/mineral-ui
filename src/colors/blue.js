@@ -25,5 +25,7 @@ export default {
   blue_70: '#1f5dc2',
   blue_80: '#164ea8',
   blue_90: '#114091',
-  blue_100: '#0f397d'
+  blue_100: '#0f397d',
+
+  a11y_text_light: [60, 70, 80, 90, 100]
 };

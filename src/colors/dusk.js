@@ -25,5 +25,7 @@ export default {
   dusk_70: '#454e6e',
   dusk_80: '#373f59',
   dusk_90: '#2c3247',
-  dusk_100: '#24293b'
+  dusk_100: '#24293b',
+
+  a11y_text_light: [60, 70, 80, 90, 100]
 };

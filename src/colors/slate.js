@@ -25,5 +25,7 @@ export default {
   slate_70: '#47697a',
   slate_80: '#3a5663',
   slate_90: '#2e444f',
-  slate_100: '#253740'
+  slate_100: '#253740',
+
+  a11y_text_light: [70, 80, 90, 100]
 };

@@ -25,5 +25,7 @@ export default {
   orange_70: '#cf4615',
   orange_80: '#bd3909',
   orange_90: '#a83207',
-  orange_100: '#942c06'
+  orange_100: '#942c06',
+
+  a11y_text_light: [70, 80, 90, 100]
 };

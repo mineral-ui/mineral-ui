@@ -25,5 +25,7 @@ export default {
   purple_70: '#8136bf',
   purple_80: '#6d2aa3',
   purple_90: '#5f248f',
-  purple_100: '#511f7a'
+  purple_100: '#511f7a',
+
+  a11y_text_light: [60, 70, 80, 90, 100]
 };

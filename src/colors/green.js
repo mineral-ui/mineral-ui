@@ -25,5 +25,7 @@ export default {
   green_70: '#10a35a',
   green_80: '#0a8f4c',
   green_90: '#06783f',
-  green_100: '#046132'
+  green_100: '#046132',
+
+  a11y_text_light: [90, 100]
 };
