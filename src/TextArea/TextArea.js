@@ -214,9 +214,6 @@ const sizeToRows = {
 /**
  * TextArea allows your app to accept a potentially lengthy text value from the
  * user.
- *
- * Mineral UI also provides [FormField](../form-field), which adds labeling,
- * messaging, and additional accessibility.
  */
 export default class TextArea extends Component<Props> {
   textArea: ?HTMLTextAreaElement;

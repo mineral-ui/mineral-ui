@@ -342,9 +342,6 @@ function getIcons({
 /**
  * TextInput allows your app to accept a text value from the user. It supports
  * any of the text-based input types, such as `text`, `number` or `email`.
- *
- * Mineral UI also provides [FormField](../form-field), which adds labeling,
- * messaging, and additional accessibility.
  */
 export default function TextInput({
   className,
