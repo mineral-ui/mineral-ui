@@ -328,8 +328,6 @@ function createRootNode(props: Props) {
  * The Button component represents a clickable button.
  * Buttons draw attention to actions that can be performed in your app.
  * Buttons are used to trigger any sort of event.
- *
- * Always use the appropriate variant for your button, and write a clear, concise label to effectively communicate intention.
  */
 export default class Button extends Component<Props> {
   static defaultProps = {
