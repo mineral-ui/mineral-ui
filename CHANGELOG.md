@@ -1,3 +1,14 @@
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/mineral-ui/mineral-ui/compare/v0.15.0...v0.16.0) (2018-01-12)
+
+
+### Features
+
+* **form:** Update FormField to support grouped inputs ([d148473](https://github.com/mineral-ui/mineral-ui/commit/d148473))
+* **radio,radiogroup:** New components ([67d7f83](https://github.com/mineral-ui/mineral-ui/commit/67d7f83))
+
+
+
 <a name="0.15.0"></a>
 # [0.15.0](https://github.com/mineral-ui/mineral-ui/compare/v0.14.0...v0.15.0) (2017-12-20)
 
