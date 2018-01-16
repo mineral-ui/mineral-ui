@@ -27,12 +27,14 @@ import required from './required';
 import rtl from './rtl';
 import sizes from './sizes';
 import states from './states';
+import triState from './triState';
 import uncontrolled from './uncontrolled';
 
 export default [
   importSyntax,
   uncontrolled,
   controlled,
+  triState,
   disabled,
   required,
   invalid,

@@ -16,18 +16,21 @@
 
 /* @flow */
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
+import Checkbox from '../../../../../../Checkbox';
+import { FormFieldDivider } from '../../../../../../Form';
 
 export default {
-  id: 'invalid',
-  title: 'Invalid',
-  description: `The \`invalid\` prop on a Radio does nothing visually on its
-own, but is important for accessibility.`,
-  scope: { DemoForm, Radio },
+  id: 'justify',
+  title: 'Justify',
+  description: `Use the \`justify\` prop to maximize the space between the label
+and the control. This prop is often useful when used in conjunction with the
+\`labelPosition\` prop.`,
+  scope: { Checkbox, DemoForm, FormFieldDivider },
   source: `
     <DemoForm>
-      <Radio name="mineral" label="Quartz" value="quartz" defaultChecked invalid />
-      <Radio name="mineral" label="Magnetite" value="magnetite" invalid />
+      <Checkbox name="minerals" label="Quartz" value="quartz" justify />
+      <FormFieldDivider />
+      <Checkbox name="minerals" label="Magnetite" value="magnetite" justify labelPosition="start" />
     </DemoForm>
   `
 };

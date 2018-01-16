@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { RadioGroup } from '../../../../../../Radio';
+import { CheckboxGroup } from '../../../../../../Checkbox';
 import { FormField } from '../../../../../../Form';
 import DemoForm from '../../components/DemoForm';
 
@@ -23,22 +23,28 @@ export default {
   id: 'form-field',
   title: 'FormField',
   description: `Use a [FormField](../form-field) to provide an accessible label
-and other features as well as a more streamlined API.`,
-  scope: { DemoForm, FormField, RadioGroup },
+and other features as well as a more streamlined API.
+
+_Note: The \`invalid\` and \`required\` props are not automatically forwarded
+to Checkboxes because doing so might not do what the author expects (marking
+**all** Checkboxes as invalid or required).  These props can, however, be set
+using the \`data\` prop._`,
+  scope: { CheckboxGroup, DemoForm, FormField },
   source: `
     <DemoForm>
       <FormField
-        input={RadioGroup}
-        label="What is your preferred contact method?"
-        caption="We promise not to spam you."
+        input={CheckboxGroup}
+        label="What are the primary characteristics of a mineral?"
+        caption="Hint: All of the above"
         name="contact"
-        defaultChecked="none"
+        variant="success"
         required
         data={[
-          { label: 'Email', value: 'email' },
-          { label: 'Telephone', value: 'telephone' },
-          { label: 'Text message', value: 'text' },
-          { label: 'None', value: 'none' }
+          { label: 'Naturally occurring', value: 'natural' },
+          { label: 'Inorganic', value: 'inorganic' },
+          { label: 'Solid', value: 'solid' },
+          { label: 'Definite chemical composition', value: 'composition' },
+          { label: 'Crystalline structure', value: 'crystalline' }
         ]} />
     </DemoForm>
   `

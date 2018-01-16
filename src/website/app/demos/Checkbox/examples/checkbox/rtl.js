@@ -16,8 +16,8 @@
 
 /* @flow */
 import { ThemeProvider } from '../../../../../../themes';
+import Checkbox from '../../../../../../Checkbox';
 import { FormFieldDivider } from '../../../../../../Form';
-import Radio from '../../../../../../Radio';
 import DemoForm from '../../components/DemoForm';
 
 /*
@@ -28,17 +28,17 @@ import DemoForm from '../../components/DemoForm';
 export default {
   id: 'rtl',
   title: 'Bidirectionality',
-  description: `Radios support right-to-left (RTL) languages.`,
-  scope: { DemoForm, FormFieldDivider, Radio, ThemeProvider },
+  description: `Checkboxes support right-to-left (RTL) languages.`,
+  scope: { Checkbox, DemoForm, FormFieldDivider, ThemeProvider },
   source: `
     <div dir="rtl">
       <ThemeProvider theme={{ direction: 'rtl' }}>
         <DemoForm>
-          <Radio name="example" label="مرحبا بالعالم"  />
-          <Radio name="example" label="مرحبا بالعالم"  labelPosition="start" />
+          <Checkbox name="example" label="مرحبا بالعالم"  />
+          <Checkbox name="example" label="مرحبا بالعالم"  labelPosition="start" />
           <FormFieldDivider />
-          <Radio name="example" label="مرحبا بالعالم"  justify />
-          <Radio name="example" label="مرحبا بالعالم"  labelPosition="start" justify />
+          <Checkbox name="example" label="مرحبا بالعالم"  justify />
+          <Checkbox name="example" label="مرحبا بالعالم"  labelPosition="start" justify />
         </DemoForm>
       </ThemeProvider>
     </div>`

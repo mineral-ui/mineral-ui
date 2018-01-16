@@ -16,7 +16,7 @@
 
 /* @flow */
 import { Component } from 'react';
-import { RadioGroup } from '../../../../../../Radio';
+import { CheckboxGroup } from '../../../../../../Checkbox';
 import DemoForm from '../../components/DemoForm';
 
 export default {
@@ -24,7 +24,7 @@ export default {
   title: 'Controlled',
   description: `Provide the \`checked\` prop and an \`onChange\` handler to
 create a controlled component.`,
-  scope: { Component, DemoForm, RadioGroup },
+  scope: { CheckboxGroup, Component, DemoForm },
   source: `
   () => {
     class MyForm extends Component {
@@ -32,25 +32,37 @@ create a controlled component.`,
         super(props);
 
         this.state = {
-          value: 'quartz'
+          values: ['magnetite', 'quartz']
         };
 
         this.handleChange = this.handleChange.bind(this);
       }
 
       handleChange(event) {
-        this.setState({
-          value: event.target.value
+        const { checked, value } = event.target;
+
+        this.setState(prevState => {
+          const values = [...prevState.values];
+          const index = values.indexOf(value);
+          const hasValue = index !== -1;
+
+          if (checked && !hasValue) {
+            values.push(value);
+          } else if (hasValue) {
+            values.splice(index, 1);
+          }
+
+          return { values };
         });
       }
 
       render() {
         return (
           <DemoForm>
-            <RadioGroup
-              name="mineral"
+            <CheckboxGroup
+              name="minerals"
               onChange={this.handleChange}
-              checked={this.state.value}
+              checked={this.state.values}
               data={[
                 { label: 'Flourite', value: 'flourite' },
                 { label: 'Magnetite', value: 'magnetite' },

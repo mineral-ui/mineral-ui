@@ -74,6 +74,18 @@ export default {
     slug: 'card-title',
     title: 'CardTitle'
   },
+  checkbox: {
+    description:
+      'Checkboxes allows users to select one or more options from a list. Use Checkboxes to accept multiple choice input from a user.',
+    slug: 'checkbox',
+    title: 'Checkbox'
+  },
+  'checkbox-group': {
+    description:
+      'CheckboxGroup allows users to construct a group of Checkboxes and provides a simpler API than working with Checkbox directly',
+    slug: 'checkbox-group',
+    title: 'CheckboxGroup'
+  },
   dropdown: {
     description:
       'Dropdowns display a hidden Menu, available upon user interaction. Use Dropdowns for non-primary actions only.',
@@ -141,13 +153,13 @@ export default {
   },
   radio: {
     description:
-      'Radios allows users to select a single option from a set. Use Radios to accept limited choice input from a user.',
+      'Radios allows users to select a single option from a list. Use Radios to accept limited choice input from a user.',
     slug: 'radio',
     title: 'Radio'
   },
   'radio-group': {
     description:
-      'RadioGroup allows users to select a single option from a set.  Use a RadioGroup for a simpler API than working with Radios directly.',
+      'RadioGroup allows users to construct a group of Radios and provides a simpler API than working with Radio directly',
     slug: 'radio-group',
     title: 'RadioGroup'
   },

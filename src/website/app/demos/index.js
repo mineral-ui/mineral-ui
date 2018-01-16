@@ -20,6 +20,7 @@ import createKeyMap from '../utils/createKeyMap';
 import avatar from './Avatar';
 import button from './Button';
 import card from './Card';
+import checkbox from './Checkbox';
 import dropdown from './Dropdown';
 import form from './Form';
 import icon from './Icon';
@@ -35,6 +36,7 @@ const demos = flatten([
   avatar,
   button,
   card,
+  checkbox,
   dropdown,
   form,
   icon,

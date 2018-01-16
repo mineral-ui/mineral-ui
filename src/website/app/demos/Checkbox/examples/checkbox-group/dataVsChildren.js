@@ -15,26 +15,34 @@
  */
 
 /* @flow */
-import { RadioGroup } from '../../../../../../Radio';
+import Checkbox, { CheckboxGroup } from '../../../../../../Checkbox';
+import { FormFieldDivider } from '../../../../../../Form';
 import DemoForm from '../../components/DemoForm';
 
 export default {
-  id: 'inline',
-  title: 'Inline',
-  description: `Use the \`inline\` prop to display choices inline horizontally
-rather than stacked vertically.`,
-  scope: { DemoForm, RadioGroup },
+  id: 'data-vs-children',
+  title: 'Data vs. Children',
+  description: `Use either the \`data\` prop or \`children\` to construct a
+group of related controls.`,
+  scope: { Checkbox, CheckboxGroup, DemoForm, FormFieldDivider },
   source: `
     <DemoForm>
-      <RadioGroup
-        inline
-        name="mineral"
-        defaultChecked="quartz"
+      <CheckboxGroup
+        name="minerals-1"
+        defaultChecked={['magnetite', 'quartz']}
         data={[
           { label: 'Flourite', value: 'flourite' },
           { label: 'Magnetite', value: 'magnetite' },
           { label: 'Quartz', value: 'quartz' }
         ]} />
+
+      <FormFieldDivider />
+
+      <CheckboxGroup name="minerals-2" defaultChecked={['hematite', 'pyrite']}>
+        <Checkbox label="Azurite" value="azurite" />
+        <Checkbox label="Hematite" value="hematite" />
+        <Checkbox label="Pyrite" value="pyrite" />
+      </CheckboxGroup>
     </DemoForm>
   `
 };

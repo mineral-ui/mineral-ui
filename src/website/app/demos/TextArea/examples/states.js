@@ -49,6 +49,11 @@ function FieldSet(props: {
         {...textAreaProps}
       />
       <TextArea
+        {...simulate('focus')}
+        defaultValue="Focus"
+        {...textAreaProps}
+      />
+      <TextArea
         {...simulate('focus', 'hover')}
         defaultValue="Focus & Hover"
         {...textAreaProps}
