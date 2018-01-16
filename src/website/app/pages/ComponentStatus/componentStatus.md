@@ -31,7 +31,8 @@ Statuses:
 | [TextArea](/components/text-area)           | [available]      |
 | [TextInput](/components/text-input)         | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
-| Checkbox                                    | [planned]        |
+| Checkbox                                    | [in development] |
+| Toggle                                      | [planned]        |
 | Select                                      | [planned]        |
 | Tooltip                                     | [planned]        |
 | DataTable                                   |                  |
