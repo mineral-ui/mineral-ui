@@ -15,19 +15,25 @@
  */
 
 /* @flow */
+import { CheckboxGroup } from '../../../../../../Checkbox';
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
 
 export default {
-  id: 'invalid',
-  title: 'Invalid',
-  description: `The \`invalid\` prop on a Radio does nothing visually on its
-own, but is important for accessibility.`,
-  scope: { DemoForm, Radio },
+  id: 'uncontrolled',
+  title: 'Uncontrolled',
+  description: `Create an uncontrolled CheckboxGroup by using the
+\`defaultChecked\` prop rather than the \`checked\` prop.`,
+  scope: { CheckboxGroup, DemoForm },
   source: `
     <DemoForm>
-      <Radio name="mineral" label="Quartz" value="quartz" defaultChecked invalid />
-      <Radio name="mineral" label="Magnetite" value="magnetite" invalid />
+      <CheckboxGroup
+        name="minerals"
+        defaultChecked={['magnetite', 'quartz']}
+        data={[
+          { label: 'Flourite', value: 'flourite' },
+          { label: 'Magnetite', value: 'magnetite' },
+          { label: 'Quartz', value: 'quartz' }
+        ]} />
     </DemoForm>
   `
 };

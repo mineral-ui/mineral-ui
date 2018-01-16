@@ -16,18 +16,20 @@
 
 /* @flow */
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
+import Checkbox from '../../../../../../Checkbox';
 
 export default {
-  id: 'invalid',
-  title: 'Invalid',
-  description: `The \`invalid\` prop on a Radio does nothing visually on its
-own, but is important for accessibility.`,
-  scope: { DemoForm, Radio },
+  id: 'uncontrolled',
+  title: 'Uncontrolled',
+  description: `Uncontrolled Checkboxes behave just like their HTML input
+counterparts wherein the checked state is handled by the DOM.  The only
+difference is that \`defaultChecked\` must be used to set the initial state
+rather than \`checked\`.`,
+  scope: { DemoForm, Checkbox },
   source: `
     <DemoForm>
-      <Radio name="mineral" label="Quartz" value="quartz" defaultChecked invalid />
-      <Radio name="mineral" label="Magnetite" value="magnetite" invalid />
+      <Checkbox name="minerals" label="Quartz" value="quartz" defaultChecked />
+      <Checkbox name="minerals" label="Magnetite" value="magnetite" />
     </DemoForm>
   `
 };

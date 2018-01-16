@@ -15,19 +15,19 @@
  */
 
 /* @flow */
-export default {
-  id: 'import-syntax',
-  title: 'Import Syntax',
-  description: `\`\`\`
-import Radio from 'mineral-ui/Radio';
-\`\`\`
+import DemoForm from '../../components/DemoForm';
+import Checkbox from '../../../../../../Checkbox';
 
-<Callout title="Note">
-  Mineral UI also provides a <a href="../radio-group" key={0}>RadioGroup</a>,
-  which offers a simpler API for working with a group of Radios, and
-  a <a href="../form-field" key={1}>FormField</a> to provide an accessible label
-  and other features. Examples here omit RadioGroups and FormFields for clarity
-  and brevity.
-</Callout>
-`
+export default {
+  id: 'invalid',
+  title: 'Invalid',
+  description: `The \`invalid\` prop on a Checkbox does nothing visually on its
+own, but is important for accessibility.`,
+  scope: { DemoForm, Checkbox },
+  source: `
+    <DemoForm>
+      <Checkbox name="minerals" label="Quartz" value="quartz" defaultChecked invalid />
+      <Checkbox name="minerals" label="Magnetite" value="magnetite" invalid />
+    </DemoForm>
+  `
 };

@@ -15,37 +15,25 @@
  */
 
 /* @flow */
-import Radio, { RadioGroup } from '../../../../../../Radio';
-import { FormFieldDivider } from '../../../../../../Form';
+import { RadioGroup } from '../../../../../../Radio';
 import DemoForm from '../../components/DemoForm';
 
 export default {
   id: 'uncontrolled',
   title: 'Uncontrolled',
   description: `Create an uncontrolled RadioGroup by using the
-\`defaultChecked\` prop rather than the \`checked\` prop. Use either the
-\`data\` prop or \`children\` to construct a group of Radios.`,
-  scope: { DemoForm, FormFieldDivider, Radio, RadioGroup },
+\`defaultChecked\` prop rather than the \`checked\` prop.`,
+  scope: { DemoForm, RadioGroup },
   source: `
     <DemoForm>
-      {/* Use the "data" prop for a streamlined approach. */}
       <RadioGroup
-        name="minerals-1"
+        name="mineral"
         defaultChecked="quartz"
         data={[
           { label: 'Flourite', value: 'flourite' },
           { label: 'Magnetite', value: 'magnetite' },
           { label: 'Quartz', value: 'quartz' }
         ]} />
-
-      <FormFieldDivider />
-
-      {/* Or use "children", if you prefer. */}
-      <RadioGroup name="minerals-2" defaultChecked="pyrite">
-        <Radio label="Azurite" value="azurite" />
-        <Radio label="Hematite" value="hematite" />
-        <Radio label="Pyrite" value="pyrite" />
-      </RadioGroup>
     </DemoForm>
   `
 };

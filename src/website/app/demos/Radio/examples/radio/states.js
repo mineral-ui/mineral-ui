@@ -24,6 +24,7 @@ const Demo = (
   <DemoForm>
     <Radio label="Regular" />
     <Radio label="Hover" {...simulate('hover')} />
+    <Radio label="Focus" {...simulate('focus')} />
     <Radio label="Focus & Hover" {...simulate('focus', 'hover')} />
     <Radio label="Focus & Active" {...simulate('focus', 'active')} />
     <Radio label="Active" {...simulate('active')} />
@@ -31,6 +32,7 @@ const Demo = (
 
     <Radio label="Regular (checked)" defaultChecked />
     <Radio label="Hover (checked)" defaultChecked {...simulate('hover')} />
+    <Radio label="Focus" defaultChecked {...simulate('focus')} />
     <Radio
       label="Focus & Hover (checked)"
       defaultChecked

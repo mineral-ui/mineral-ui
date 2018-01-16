@@ -49,6 +49,11 @@ function FieldSet(props: {
         {...textInputProps}
       />
       <TextInput
+        {...simulate('focus')}
+        defaultValue="Focus"
+        {...textInputProps}
+      />
+      <TextInput
         {...simulate('focus', 'hover')}
         defaultValue="Focus & Hover"
         {...textInputProps}
