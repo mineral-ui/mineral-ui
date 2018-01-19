@@ -17,6 +17,8 @@
 /* @flow */
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import flatten from 'lodash/flatten';
+import createKeyMap from './utils/createKeyMap';
 import ComponentDocExample from './ComponentDocExample';
 import Page from './Page';
 import sections from './pages';
@@ -24,10 +26,14 @@ import ComponentDoc from './pages/ComponentDoc';
 import Loadable from './Loadable';
 
 type Props = {
-  demoRoutes: { [string]: DemoRoute }
+  demoRoutes: Array<DemoRoute>
 };
 
-type DemoRoute = { slug: string, title: string, description: string };
+type DemoRoute = {
+  description: string,
+  slug: string,
+  title: string
+};
 
 const AsyncHome = Loadable({
   loader: () => import('./pages/Home')
@@ -40,6 +46,8 @@ const getPageHeader = (heading: string, title: string) => {
 };
 
 export default function Router({ demoRoutes }: Props) {
+  const flatDemoRoutes = createKeyMap(flatten(demoRoutes), 'slug');
+
   const routes = sections
     .map((section, sectionIndex) => {
       return section.pages.map((page, pageIndex) => (
@@ -53,8 +61,8 @@ export default function Router({ demoRoutes }: Props) {
               title: `${page.title} | Mineral UI`
             };
             const pageProps = {
-              headerContent: getPageHeader(section.heading, page.title),
               demoRoutes,
+              headerContent: getPageHeader(section.heading, page.title),
               pageMeta,
               type: sectionIndex
             };
@@ -80,7 +88,8 @@ export default function Router({ demoRoutes }: Props) {
         path="/components/:componentId/:exampleId"
         render={route => {
           const { componentId, exampleId } = route.match.params;
-          const selectedDemo = demoRoutes[componentId || 'button'];
+          // $FlowFixMe
+          const selectedDemo = flatDemoRoutes[componentId || 'button'];
           const chromeless = route.location.search === '?chromeless';
           const pageProps = {
             chromeless,
@@ -88,7 +97,8 @@ export default function Router({ demoRoutes }: Props) {
             pageMeta: {
               description: selectedDemo.description,
               title: `${selectedDemo.title} | Mineral UI`
-            }
+            },
+            slug: selectedDemo.slug
           };
 
           const AsyncComponentDocExample = Loadable({
@@ -121,7 +131,8 @@ export default function Router({ demoRoutes }: Props) {
         path="/components/:componentId"
         render={route => {
           const componentId = route.match.params.componentId || 'button';
-          const selectedDemo = demoRoutes[componentId];
+          // $FlowFixMe
+          const selectedDemo = flatDemoRoutes[componentId];
           const pageMeta = {
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`,
             description: selectedDemo.description,
@@ -130,7 +141,8 @@ export default function Router({ demoRoutes }: Props) {
           const pageProps = {
             demoRoutes,
             headerContent: getPageHeader('Components', selectedDemo.title),
-            pageMeta
+            pageMeta,
+            slug: selectedDemo.slug
           };
 
           const AsyncComponentDoc = Loadable({
