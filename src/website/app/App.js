@@ -31,12 +31,16 @@ declare var GOOGLE_TRACKING_ID: string;
 type Props = {
   children?: any,
   className?: string,
-  demoRoutes: { [string]: DemoRoute },
+  demoRoutes: Array<DemoRoute>,
   history: Object,
   location?: any
 };
 
-type DemoRoute = { slug: string, title: string, description: string };
+type DemoRoute = {
+  description: string,
+  slug: string,
+  title: string
+};
 
 const siteTheme = {
   baseline_1: pxToEm(12),

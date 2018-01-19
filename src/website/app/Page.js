@@ -27,7 +27,7 @@ import {
   getNormalizedValue,
   pxToEm
 } from '../../styles';
-import { mineralTheme, ThemeProvider } from '../../themes';
+import { ThemeProvider } from '../../themes';
 import Button from '../../Button';
 import IconClose from 'mineral-ui-icons/IconClose';
 import IconMenu from 'mineral-ui-icons/IconMenu';
@@ -42,17 +42,22 @@ import { heroTheme } from './pages/Home/index';
 type Props = {
   children: React$Node,
   chromeless?: boolean,
-  demoRoutes?: { [string]: DemoRoute },
+  demoRoutes?: Array<DemoRoute>,
   headerContent?: React$Node,
   pageMeta?: {
     canonicalLink?: string,
     description?: string,
     title?: string
   },
+  slug?: string,
   type?: number
 };
 
-type DemoRoute = { slug: string, title: string, description: string };
+type DemoRoute = {
+  description: string,
+  slug: string,
+  title: string
+};
 
 type State = {
   isNavOpen: boolean
@@ -117,25 +122,6 @@ const pageThemes = [
     SiteLink_color_hover: siteColors.orangePunch_hover
   }
 ];
-
-const navTheme = {
-  Heading_color_4: mineralTheme.color_gray_30,
-
-  SiteLink_borderColor_focus: mineralTheme.color_white,
-  SiteLink_color: mineralTheme.color_gray_30,
-  SiteLink_color_focus: mineralTheme.color_white,
-  SiteLink_color_hover: mineralTheme.color_white
-};
-
-const navThemeWide = {
-  Heading_color_4: siteColors.slateDarker,
-
-  SiteLink_borderColor_focus: siteColors.slateDarker_focus,
-  SiteLink_color: siteColors.slateDarker,
-  SiteLink_color_active: siteColors.slateDarker_active,
-  SiteLink_color_focus: siteColors.slateDarker_focus,
-  SiteLink_color_hover: siteColors.slateDarker_hover
-};
 
 /*
  * [1] The left bleed of the Section needs adjusting due to the nav sidebar.
@@ -338,31 +324,6 @@ const styles = {
           '@supports(position:sticky)': {
             maxHeight: '100vh',
             position: 'sticky'
-          },
-
-          '& h2': {
-            paddingRight: getNormalizedValue(pxToEm(8), theme.fontSize_h4)
-          },
-
-          '& a': {
-            paddingLeft: getNormalizedValue(pxToEm(8), theme.fontSize_ui),
-            paddingRight: getNormalizedValue(pxToEm(8), theme.fontSize_ui),
-
-            '&.active': {
-              backgroundColor: rgba(theme.color_text_primary, 0.15),
-              color: darken(0.1, theme.color_text_primary),
-              position: 'relative',
-
-              '&::before': {
-                backgroundColor: theme.color_text_primary,
-                bottom: 0,
-                content: '""',
-                position: 'absolute',
-                right: `-${pxToEm(3)}`,
-                top: 0,
-                width: pxToEm(3)
-              }
-            }
           }
         }
       : {
@@ -371,26 +332,7 @@ const styles = {
           overflowY: 'scroll', // [3]
           WebkitOverflowScrolling: 'touch', // [3]
           // 30px to match Section padding, 80px to make room for close button
-          padding: `${pxToEm(30)} ${pxToEm(80)} ${pxToEm(30)} ${pxToEm(30)}`,
-
-          '& a': {
-            paddingLeft: 0,
-
-            '&.active': {
-              color: theme.navLink_color_active_narrow,
-              position: 'relative',
-
-              '&::before': {
-                backgroundColor: theme.navLink_color_active_narrow,
-                bottom: 2,
-                content: '""',
-                left: `-${pxToEm(18)}`,
-                position: 'absolute',
-                top: 2,
-                width: pxToEm(6)
-              }
-            }
-          }
+          padding: `${pxToEm(30)} ${pxToEm(80)} ${pxToEm(30)} ${pxToEm(30)}`
         };
   },
   root: ({ theme }) => ({
@@ -429,7 +371,7 @@ const Header = createStyledComponent(Section, styles.header).withProps({
 const MenuButton = createStyledComponent(Button, styles.menuButton).withProps({
   circular: true
 });
-const Nav = createStyledComponent(_Nav, styles.nav, { filterProps: ['wide'] });
+const Nav = createStyledComponent(_Nav, styles.nav);
 const Wrap = createStyledComponent('div', styles.wrap);
 const WrapInner = createStyledComponent('div', styles.wrapInner);
 
@@ -449,6 +391,7 @@ export default class Page extends Component<Props, State> {
       demoRoutes,
       headerContent,
       pageMeta,
+      slug,
       type,
       ...restProps
     } = this.props;
@@ -458,6 +401,10 @@ export default class Page extends Component<Props, State> {
     const wrapProps = {
       isNavOpen,
       tabIndex: isNavOpen ? '-1' : undefined
+    };
+    const navProps = {
+      currentDemo: slug,
+      demoRoutes
     };
 
     const helmetItems = pageMeta && (
@@ -487,7 +434,7 @@ export default class Page extends Component<Props, State> {
                   inDialog
                   onClick={this.close.bind(this)}
                 />
-                <Nav demoRoutes={demoRoutes} contextualTheme={navTheme} />
+                <Nav {...navProps} />
               </Dialog>
             </div>
           );
@@ -535,13 +482,7 @@ export default class Page extends Component<Props, State> {
                       </Header>
                     </ThemeProvider>
                   )}
-                  {moreSpacious && (
-                    <Nav
-                      demoRoutes={demoRoutes}
-                      contextualTheme={navThemeWide}
-                      wide
-                    />
-                  )}
+                  {moreSpacious && <Nav {...navProps} wide />}
                   <Content>{children}</Content>
                 </WrapInner>
                 <Footer />
