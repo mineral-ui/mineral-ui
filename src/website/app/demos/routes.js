@@ -123,6 +123,37 @@ export default [
     slug: 'icon',
     title: 'Icon'
   },
+  [
+    {
+      redirect: 'box',
+      slug: 'layout',
+      title: 'Layout'
+    },
+    {
+      description:
+        'Box component provides an easy way to apply standardized size & space to your layout.',
+      slug: 'box',
+      title: 'Box'
+    },
+    {
+      description:
+        'Flex component is used together with FlexItem to lay out other components in a flexible, and optionally responsive, manner.',
+      slug: 'flex',
+      title: 'Flex'
+    },
+    {
+      description:
+        'FlexItem is used within Flex to lay out other components in your app.',
+      slug: 'flex-item',
+      title: 'FlexItem'
+    },
+    {
+      description:
+        'StartEnd provides a simple way to align components to the start or end of a container.',
+      slug: 'start-end',
+      title: 'StartEnd'
+    }
+  ],
   {
     description:
       'Links change the users’ browser location, and clearly express the intended destination.',
