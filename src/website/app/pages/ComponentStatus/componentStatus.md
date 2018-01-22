@@ -26,6 +26,7 @@ Statuses:
 | [Dropdown](/components/dropdown)            | [available]      |
 | [Form](/components/form-field)              | [available]      |
 | [Icon](/components/icon)                    | [available]      |
+| [Layout](/components/layout) ~ new          | [available]      |
 | [Link](/components/link)                    | [available]      |
 | [Menu](/components/menu)                    | [available]      |
 | [Popover](/components/popover)              | [available]      |
@@ -35,6 +36,7 @@ Statuses:
 | [ThemeProvider](/components/theme-provider) | [available]      |
 | [Tooltip](/components/tooltip) ~ new        | [available]      |
 | Select                                      | [in development] |
+| Grid                                        | [planned]        |
 | Toggle                                      | [planned]        |
 | DataTable                                   |                  |
 | DatePicker                                  |                  |
