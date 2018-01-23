@@ -165,8 +165,8 @@ export default class FormField extends Component<Props> {
       ...otherRootProps
     };
 
-    // Label structure differs if input/control is a group
-    //   e.g. RadioGroup, CheckboxGroup
+    // Label structure differs if input/control is a grouped control which has
+    // its own label tag.  e.g. Radio, Checkbox, RadioGroup, CheckboxGroup
     const isGroup = this.isGroup();
     const Label = isGroup ? 'div' : 'label';
 

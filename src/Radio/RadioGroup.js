@@ -15,131 +15,90 @@
  */
 
 /* @flow */
-import React, { Children, cloneElement, createElement } from 'react';
-import { createStyledComponent } from '../styles';
+import React from 'react';
+import { createThemedComponent, mapComponentThemes } from '../themes';
+import ChoiceGroup, {
+  componentTheme as choiceGroupComponentTheme
+} from '../Choice/ChoiceGroup';
 import Radio from './Radio';
 
 type Props = {
   /**
-   * Checked state of the radio button. Primarily for use with controlled
+   * Value of the selected [Radio](../radio); primarily for use with controlled
    * components. If this prop is specified, an `onChange` handler must also be
    * specified. See also: `defaultChecked`.
    */
   checked?: string,
-  /** Mineral Radio components */
+  /** Mineral [Radio](../radio) components */
   children?: React$Node,
-  /** Data used to contruct Radios, see [example](#data) */
+  /** Data used to contruct [Radio](../radio), see [example](#data) */
   data?: Array<{ label: string | React$Element<*>, value: string }>,
   /**
-   * Value of the selected Radio; primarily for use with uncontrolled
-   * components
+   * Value of the selected [Radio](../radio); primarily for use with
+   * uncontrolled components.
    */
   defaultChecked?: string,
-  /** Display the choices inline horizontally rather than stacked vertically */
+  /** Display the choices inline horizontally rather than stacked vertically. */
   inline?: boolean,
-  /**
-   * The name of the radio group; used to uniquely define a group of radio
-   * buttons
-   */
+  /** The name of the group */
   name: string,
-  /** Function called when a radio button is selected */
+  /** Function called when a choice is selected */
   onChange?: (event: SyntheticEvent<>) => void,
   /** Props to be applied directly to the root element */
-  rootProps?: Object,
-  /** @Private Available sizes */
-  size?: 'small' | 'medium' | 'large' | 'jumbo'
+  rootProps?: Object
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  RadioGroup_marginHorizontal_inline: baseTheme.space_inline_xl,
-  RadioGroup_marginVertical: baseTheme.space_stack_md,
-  RadioGroup_marginVertical_jumbo: baseTheme.space_stack_lg,
-
-  ...baseTheme
-});
-
-const styles = {
-  root: ({ inline, size, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    return {
-      display: 'flex',
-      flexDirection: inline ? 'row' : 'column',
-
-      '& > *:not(:last-child)': {
-        marginBottom: inline
-          ? 0
-          : size === 'jumbo'
-            ? theme.RadioGroup_marginVertical_jumbo
-            : theme.RadioGroup_marginVertical,
-        marginRight: inline
-          ? theme.RadioGroup_marginHorizontal_inline
-          : undefined
-      }
-    };
-  }
+export const componentTheme = (baseTheme: Object) => {
+  return {
+    ...mapComponentThemes(
+      {
+        name: 'ChoiceGroup',
+        theme: choiceGroupComponentTheme(baseTheme)
+      },
+      {
+        name: 'RadioGroup',
+        theme: {}
+      },
+      baseTheme
+    )
+  };
 };
 
-const Root = createStyledComponent('div', styles.root, {
-  displayName: 'RadioGroup',
-  includeStyleReset: true
+const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) => {
+  return {
+    ...mapComponentThemes(
+      {
+        name: 'RadioGroup',
+        theme: componentTheme(baseTheme)
+      },
+      {
+        name: 'ChoiceGroup',
+        theme: {}
+      },
+      baseTheme
+    )
+  };
 });
 
 /**
- * RadioGroup allows users to select a single option from a set and provides a
- * simpler API than working with [Radios](../radio) directly.
+ * RadioGroup allows authors to construct a group of [Radios](../radio)
+ * and provides a simpler API than working with Radio directly.
+ *
+ * RadioGroup allows users to select a single option from a list.
  */
 export default function RadioGroup({
-  checked,
-  children,
-  data,
-  defaultChecked,
-  inline,
-  name,
-  onChange,
   rootProps: otherRootProps,
-  size = 'large',
   ...restProps
 }: Props) {
   const rootProps = {
-    inline,
-    role: 'radiogroup',
-    size,
-    ...otherRootProps
-  };
-
-  const inputProps = {
-    name,
-    onChange,
-    size,
+    rootProps: {
+      role: 'radiogroup',
+      ...otherRootProps
+    },
+    input: Radio,
+    type: 'radio',
     ...restProps // Note: Props are spread to input rather than Root
   };
 
-  let inputs = null;
-  if (data) {
-    inputs = data.map((inputData, index) => {
-      return createElement(Radio, {
-        checked: checked ? checked === inputData.value : undefined,
-        defaultChecked: defaultChecked
-          ? defaultChecked === inputData.value
-          : undefined,
-        key: index,
-        ...inputProps,
-        ...inputData
-      });
-    });
-  } else if (children) {
-    inputs = Children.map(children, (child, index) => {
-      return cloneElement(child, {
-        checked: checked ? checked === child.props.value : undefined,
-        defaultChecked: defaultChecked
-          ? defaultChecked === child.props.value
-          : undefined,
-        key: index,
-        ...inputProps
-      });
-    });
-  }
-
-  return <Root {...rootProps}>{inputs}</Root>;
+  return <Root {...rootProps} />;
 }
