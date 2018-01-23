@@ -24,6 +24,7 @@ export {
   CardStatus,
   CardTitle
 } from './Card';
+export { default as Checkbox, CheckboxGroup } from './Checkbox';
 export { default as Dropdown } from './Dropdown';
 export { FormField, FormFieldset, FormFieldDivider } from './Form';
 export { default as Icon } from './Icon';
