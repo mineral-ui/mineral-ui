@@ -17,19 +17,19 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import Radio from '../Radio';
-import examples from '../../website/app/demos/Radio/examples';
+import Checkbox from '../Checkbox';
+import examples from '../../website/app/demos/Checkbox/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
-function shallowRadio() {
-  return shallow(<Radio label="example" />);
+function shallowCheckbox() {
+  return shallow(<Checkbox label="example" />);
 }
 
-describe('Radio', () => {
+describe('Checkbox', () => {
   it('renders', () => {
-    const radio = shallowRadio();
+    const checkbox = shallowCheckbox();
 
-    expect(radio.exists()).toEqual(true);
+    expect(checkbox.exists()).toEqual(true);
   });
 
   testDemoExamples(examples);
