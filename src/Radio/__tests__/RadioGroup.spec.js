@@ -22,7 +22,7 @@ import examples from '../../website/app/demos/Radio/examples/radio-group';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function shallowRadioGroup() {
-  return shallow(<RadioGroup name="example" checked="" />);
+  return shallow(<RadioGroup name="example" />);
 }
 
 describe('RadioGroup', () => {
