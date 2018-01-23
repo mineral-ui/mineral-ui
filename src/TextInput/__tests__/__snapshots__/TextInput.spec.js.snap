@@ -10250,12 +10250,92 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
+.glamor-14,
+[data-glamor-14] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #afbacc;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  min-width: 0;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 1.1428571428571428em;
+  width: 100%;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-14::placeholder,
+[data-glamor-14]::placeholder,
+.glamor-14[data-simulate-placeholder],
+[data-glamor-14][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14::-ms-input-placeholder,
+[data-glamor-14]::-ms-input-placeholder,
+.glamor-14[data-simulate-msinputplaceholder],
+[data-glamor-14][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14:-ms-input-placeholder,
+[data-glamor-14]:-ms-input-placeholder,
+.glamor-14[data-simulate-msinputplaceholder],
+[data-glamor-14][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14::-ms-clear,
+[data-glamor-14]::-ms-clear,
+.glamor-14[data-simulate-msclear],
+[data-glamor-14][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-14:focus ~ div,
+[data-glamor-14]:focus ~ div,
+.glamor-14[data-simulate-focus] ~ div,
+[data-glamor-14][data-simulate-focus] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-14:active ~ div,
+[data-glamor-14]:active ~ div,
+.glamor-14[data-simulate-active] ~ div,
+[data-glamor-14][data-simulate-active] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: none;
+}
+
+.glamor-14 ~ div,
+[data-glamor-14] ~ div {
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .glamor-12,
 [data-glamor-12] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #afbacc;
+  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
   font-size: 0.875em;
@@ -10299,6 +10379,13 @@ exports[`TextInput demo examples states 1`] = `
   display: none;
 }
 
+.glamor-12:hover ~ div,
+[data-glamor-12]:hover ~ div,
+.glamor-12[data-simulate-hover] ~ div,
+[data-glamor-12][data-simulate-hover] ~ div {
+  border-color: #2e6fd9;
+}
+
 .glamor-12:focus ~ div,
 [data-glamor-12]:focus ~ div,
 .glamor-12[data-simulate-focus] ~ div,
@@ -10312,7 +10399,7 @@ exports[`TextInput demo examples states 1`] = `
 .glamor-12[data-simulate-active] ~ div,
 [data-glamor-12][data-simulate-active] ~ div {
   border-color: #c8d1e0;
-  box-shadow: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
 .glamor-12 ~ div,
@@ -10330,100 +10417,13 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-10,
-[data-glamor-10] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
-  outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 1.1428571428571428em;
-  width: 100%;
-  -webkit-flex: 1 1 auto;
-}
-
-.glamor-10::placeholder,
-[data-glamor-10]::placeholder,
-.glamor-10[data-simulate-placeholder],
-[data-glamor-10][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10::-ms-input-placeholder,
-[data-glamor-10]::-ms-input-placeholder,
-.glamor-10[data-simulate-msinputplaceholder],
-[data-glamor-10][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10:-ms-input-placeholder,
-[data-glamor-10]:-ms-input-placeholder,
-.glamor-10[data-simulate-msinputplaceholder],
-[data-glamor-10][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10::-ms-clear,
-[data-glamor-10]::-ms-clear,
-.glamor-10[data-simulate-msclear],
-[data-glamor-10][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-10:hover ~ div,
-[data-glamor-10]:hover ~ div,
-.glamor-10[data-simulate-hover] ~ div,
-[data-glamor-10][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-10:focus ~ div,
-[data-glamor-10]:focus ~ div,
-.glamor-10[data-simulate-focus] ~ div,
-[data-glamor-10][data-simulate-focus] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-10:active ~ div,
-[data-glamor-10]:active ~ div,
-.glamor-10[data-simulate-active] ~ div,
-[data-glamor-10][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-10 ~ div,
-[data-glamor-10] ~ div {
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.glamor-83 > *:not(:last-child),
-[data-glamor-83] > *:not(:last-child) {
+.glamor-94 > *:not(:last-child),
+[data-glamor-94] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-19,
-[data-glamor-19] {
+.glamor-21,
+[data-glamor-21] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10443,17 +10443,17 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-align-items: center;
 }
 
-.glamor-19 *,
-[data-glamor-19] *,
-.glamor-19 *::before,
-[data-glamor-19] *::before,
-.glamor-19 *::after,
-[data-glamor-19] *::after {
+.glamor-21 *,
+[data-glamor-21] *,
+.glamor-21 *::before,
+[data-glamor-21] *::before,
+.glamor-21 *::after,
+[data-glamor-21] *::after {
   box-sizing: inherit;
 }
 
-.glamor-19 [role="img"],
-[data-glamor-19] [role="img"] {
+.glamor-21 [role="img"],
+[data-glamor-21] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -10461,13 +10461,13 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-19 [role="img"]:last-of-type,
-[data-glamor-19] [role="img"]:last-of-type {
+.glamor-21 [role="img"]:last-of-type,
+[data-glamor-21] [role="img"]:last-of-type {
   fill: #06783f;
 }
 
-.glamor-17,
-[data-glamor-17] {
+.glamor-19,
+[data-glamor-19] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -10484,62 +10484,62 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-17::placeholder,
-[data-glamor-17]::placeholder,
-.glamor-17[data-simulate-placeholder],
-[data-glamor-17][data-simulate-placeholder] {
+.glamor-19::placeholder,
+[data-glamor-19]::placeholder,
+.glamor-19[data-simulate-placeholder],
+[data-glamor-19][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17::-ms-input-placeholder,
-[data-glamor-17]::-ms-input-placeholder,
-.glamor-17[data-simulate-msinputplaceholder],
-[data-glamor-17][data-simulate-msinputplaceholder] {
+.glamor-19::-ms-input-placeholder,
+[data-glamor-19]::-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17:-ms-input-placeholder,
-[data-glamor-17]:-ms-input-placeholder,
-.glamor-17[data-simulate-msinputplaceholder],
-[data-glamor-17][data-simulate-msinputplaceholder] {
+.glamor-19:-ms-input-placeholder,
+[data-glamor-19]:-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17::-ms-clear,
-[data-glamor-17]::-ms-clear,
-.glamor-17[data-simulate-msclear],
-[data-glamor-17][data-simulate-msclear] {
+.glamor-19::-ms-clear,
+[data-glamor-19]::-ms-clear,
+.glamor-19[data-simulate-msclear],
+[data-glamor-19][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-17:hover ~ div,
-[data-glamor-17]:hover ~ div,
-.glamor-17[data-simulate-hover] ~ div,
-[data-glamor-17][data-simulate-hover] ~ div {
+.glamor-19:hover ~ div,
+[data-glamor-19]:hover ~ div,
+.glamor-19[data-simulate-hover] ~ div,
+[data-glamor-19][data-simulate-hover] ~ div {
   border-color: #0a8f4c;
 }
 
-.glamor-17:focus ~ div,
-[data-glamor-17]:focus ~ div,
-.glamor-17[data-simulate-focus] ~ div,
-[data-glamor-17][data-simulate-focus] ~ div {
+.glamor-19:focus ~ div,
+[data-glamor-19]:focus ~ div,
+.glamor-19[data-simulate-focus] ~ div,
+[data-glamor-19][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-17:active ~ div,
-[data-glamor-17]:active ~ div,
-.glamor-17[data-simulate-active] ~ div,
-[data-glamor-17][data-simulate-active] ~ div {
+.glamor-19:active ~ div,
+[data-glamor-19]:active ~ div,
+.glamor-19[data-simulate-active] ~ div,
+[data-glamor-19][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-17 ~ div,
-[data-glamor-17] ~ div {
+.glamor-19 ~ div,
+[data-glamor-19] ~ div {
   background-color: #fff;
   border-color: #10a35a;
   border-radius: 0.1875em;
@@ -10553,16 +10553,16 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-18,
-[data-glamor-18] {
+.glamor-20,
+[data-glamor-20] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
 }
 
-.glamor-41,
-[data-glamor-41] {
+.glamor-46,
+[data-glamor-46] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10582,17 +10582,17 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-align-items: center;
 }
 
-.glamor-41 *,
-[data-glamor-41] *,
-.glamor-41 *::before,
-[data-glamor-41] *::before,
-.glamor-41 *::after,
-[data-glamor-41] *::after {
+.glamor-46 *,
+[data-glamor-46] *,
+.glamor-46 *::before,
+[data-glamor-46] *::before,
+.glamor-46 *::after,
+[data-glamor-46] *::after {
   box-sizing: inherit;
 }
 
-.glamor-41 [role="img"],
-[data-glamor-41] [role="img"] {
+.glamor-46 [role="img"],
+[data-glamor-46] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -10600,9 +10600,358 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-41 [role="img"]:last-of-type,
-[data-glamor-41] [role="img"]:last-of-type {
+.glamor-46 [role="img"]:last-of-type,
+[data-glamor-46] [role="img"]:last-of-type {
   fill: #cf4615;
+}
+
+.glamor-44,
+[data-glamor-44] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #58606e;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  min-width: 0;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 0;
+  width: 100%;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-44::placeholder,
+[data-glamor-44]::placeholder,
+.glamor-44[data-simulate-placeholder],
+[data-glamor-44][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-44::-ms-input-placeholder,
+[data-glamor-44]::-ms-input-placeholder,
+.glamor-44[data-simulate-msinputplaceholder],
+[data-glamor-44][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-44:-ms-input-placeholder,
+[data-glamor-44]:-ms-input-placeholder,
+.glamor-44[data-simulate-msinputplaceholder],
+[data-glamor-44][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-44::-ms-clear,
+[data-glamor-44]::-ms-clear,
+.glamor-44[data-simulate-msclear],
+[data-glamor-44][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-44:hover ~ div,
+[data-glamor-44]:hover ~ div,
+.glamor-44[data-simulate-hover] ~ div,
+[data-glamor-44][data-simulate-hover] ~ div {
+  border-color: #cf4615;
+}
+
+.glamor-44:focus ~ div,
+[data-glamor-44]:focus ~ div,
+.glamor-44[data-simulate-focus] ~ div,
+[data-glamor-44][data-simulate-focus] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
+}
+
+.glamor-44:active ~ div,
+[data-glamor-44]:active ~ div,
+.glamor-44[data-simulate-active] ~ div,
+[data-glamor-44][data-simulate-active] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
+}
+
+.glamor-44 ~ div,
+[data-glamor-44] ~ div {
+  background-color: #fff;
+  border-color: #e05b2b;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.glamor-71,
+[data-glamor-71] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-71 *,
+[data-glamor-71] *,
+.glamor-71 *::before,
+[data-glamor-71] *::before,
+.glamor-71 *::after,
+[data-glamor-71] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-71 [role="img"],
+[data-glamor-71] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-71 [role="img"]:last-of-type,
+[data-glamor-71] [role="img"]:last-of-type {
+  fill: #db2929;
+}
+
+.glamor-69,
+[data-glamor-69] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #58606e;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  min-width: 0;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 0;
+  width: 100%;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-69::placeholder,
+[data-glamor-69]::placeholder,
+.glamor-69[data-simulate-placeholder],
+[data-glamor-69][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-69::-ms-input-placeholder,
+[data-glamor-69]::-ms-input-placeholder,
+.glamor-69[data-simulate-msinputplaceholder],
+[data-glamor-69][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-69:-ms-input-placeholder,
+[data-glamor-69]:-ms-input-placeholder,
+.glamor-69[data-simulate-msinputplaceholder],
+[data-glamor-69][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-69::-ms-clear,
+[data-glamor-69]::-ms-clear,
+.glamor-69[data-simulate-msclear],
+[data-glamor-69][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-69:hover ~ div,
+[data-glamor-69]:hover ~ div,
+.glamor-69[data-simulate-hover] ~ div,
+[data-glamor-69][data-simulate-hover] ~ div {
+  border-color: #c71818;
+}
+
+.glamor-69:focus ~ div,
+[data-glamor-69]:focus ~ div,
+.glamor-69[data-simulate-focus] ~ div,
+[data-glamor-69][data-simulate-focus] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
+}
+
+.glamor-69:active ~ div,
+[data-glamor-69]:active ~ div,
+.glamor-69[data-simulate-active] ~ div,
+[data-glamor-69][data-simulate-active] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
+}
+
+.glamor-69 ~ div,
+[data-glamor-69] ~ div {
+  background-color: #fff;
+  border-color: #db2929;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.glamor-17 > *,
+[data-glamor-17] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.glamor-16,
+[data-glamor-16] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  border: 1px solid transparent;
+  border-top-color: #c8d1e0;
+  padding: 0;
+}
+
+.glamor-16 *,
+[data-glamor-16] *,
+.glamor-16 *::before,
+[data-glamor-16] *::before,
+.glamor-16 *::after,
+[data-glamor-16] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-16 > legend,
+[data-glamor-16] > legend {
+  color: #333840;
+  font-size: 0.875em;
+  font-weight: 700;
+  line-height: 2em;
+  padding: 0;
+  padding-right: 0.5em;
+}
+
+.glamor-16 > *,
+[data-glamor-16] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.glamor-37,
+[data-glamor-37] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #58606e;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  min-width: 0;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 0;
+  width: 100%;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-37::placeholder,
+[data-glamor-37]::placeholder,
+.glamor-37[data-simulate-placeholder],
+[data-glamor-37][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-37::-ms-input-placeholder,
+[data-glamor-37]::-ms-input-placeholder,
+.glamor-37[data-simulate-msinputplaceholder],
+[data-glamor-37][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-37:-ms-input-placeholder,
+[data-glamor-37]:-ms-input-placeholder,
+.glamor-37[data-simulate-msinputplaceholder],
+[data-glamor-37][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-37::-ms-clear,
+[data-glamor-37]::-ms-clear,
+.glamor-37[data-simulate-msclear],
+[data-glamor-37][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-37:hover ~ div,
+[data-glamor-37]:hover ~ div,
+.glamor-37[data-simulate-hover] ~ div,
+[data-glamor-37][data-simulate-hover] ~ div {
+  border-color: #0a8f4c;
+}
+
+.glamor-37:focus ~ div,
+[data-glamor-37]:focus ~ div,
+.glamor-37[data-simulate-focus] ~ div,
+[data-glamor-37][data-simulate-focus] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
+}
+
+.glamor-37:active ~ div,
+[data-glamor-37]:active ~ div,
+.glamor-37[data-simulate-active] ~ div,
+[data-glamor-37][data-simulate-active] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
+}
+
+.glamor-37 ~ div,
+[data-glamor-37] ~ div {
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .glamor-39,
@@ -10610,7 +10959,7 @@ exports[`TextInput demo examples states 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
+  color: #afbacc;
   flex: 1 1 auto;
   font-family: inherit;
   font-size: 0.875em;
@@ -10654,19 +11003,12 @@ exports[`TextInput demo examples states 1`] = `
   display: none;
 }
 
-.glamor-39:hover ~ div,
-[data-glamor-39]:hover ~ div,
-.glamor-39[data-simulate-hover] ~ div,
-[data-glamor-39][data-simulate-hover] ~ div {
-  border-color: #cf4615;
-}
-
 .glamor-39:focus ~ div,
 [data-glamor-39]:focus ~ div,
 .glamor-39[data-simulate-focus] ~ div,
 [data-glamor-39][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
 .glamor-39:active ~ div,
@@ -10674,273 +11016,11 @@ exports[`TextInput demo examples states 1`] = `
 .glamor-39[data-simulate-active] ~ div,
 [data-glamor-39][data-simulate-active] ~ div {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
+  box-shadow: none;
 }
 
 .glamor-39 ~ div,
 [data-glamor-39] ~ div {
-  background-color: #fff;
-  border-color: #e05b2b;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.glamor-63,
-[data-glamor-63] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  align-items: center;
-  cursor: text;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  position: relative;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-}
-
-.glamor-63 *,
-[data-glamor-63] *,
-.glamor-63 *::before,
-[data-glamor-63] *::before,
-.glamor-63 *::after,
-[data-glamor-63] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-63 [role="img"],
-[data-glamor-63] [role="img"] {
-  display: block;
-  fill: #c8d1e0;
-  flex: 0 0 auto;
-  margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
-}
-
-.glamor-63 [role="img"]:last-of-type,
-[data-glamor-63] [role="img"]:last-of-type {
-  fill: #db2929;
-}
-
-.glamor-61,
-[data-glamor-61] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
-  outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 0;
-  width: 100%;
-  -webkit-flex: 1 1 auto;
-}
-
-.glamor-61::placeholder,
-[data-glamor-61]::placeholder,
-.glamor-61[data-simulate-placeholder],
-[data-glamor-61][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-61::-ms-input-placeholder,
-[data-glamor-61]::-ms-input-placeholder,
-.glamor-61[data-simulate-msinputplaceholder],
-[data-glamor-61][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-61:-ms-input-placeholder,
-[data-glamor-61]:-ms-input-placeholder,
-.glamor-61[data-simulate-msinputplaceholder],
-[data-glamor-61][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-61::-ms-clear,
-[data-glamor-61]::-ms-clear,
-.glamor-61[data-simulate-msclear],
-[data-glamor-61][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-61:hover ~ div,
-[data-glamor-61]:hover ~ div,
-.glamor-61[data-simulate-hover] ~ div,
-[data-glamor-61][data-simulate-hover] ~ div {
-  border-color: #c71818;
-}
-
-.glamor-61:focus ~ div,
-[data-glamor-61]:focus ~ div,
-.glamor-61[data-simulate-focus] ~ div,
-[data-glamor-61][data-simulate-focus] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
-}
-
-.glamor-61:active ~ div,
-[data-glamor-61]:active ~ div,
-.glamor-61[data-simulate-active] ~ div,
-[data-glamor-61][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
-}
-
-.glamor-61 ~ div,
-[data-glamor-61] ~ div {
-  background-color: #fff;
-  border-color: #db2929;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.glamor-15 > *,
-[data-glamor-15] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.glamor-14,
-[data-glamor-14] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  border: 1px solid transparent;
-  border-top-color: #c8d1e0;
-  padding: 0;
-}
-
-.glamor-14 *,
-[data-glamor-14] *,
-.glamor-14 *::before,
-[data-glamor-14] *::before,
-.glamor-14 *::after,
-[data-glamor-14] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-14 > legend,
-[data-glamor-14] > legend {
-  color: #333840;
-  font-size: 0.875em;
-  font-weight: 700;
-  line-height: 2em;
-  padding: 0;
-  padding-right: 0.5em;
-}
-
-.glamor-14 > *,
-[data-glamor-14] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.glamor-32,
-[data-glamor-32] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
-  outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 0;
-  width: 100%;
-  -webkit-flex: 1 1 auto;
-}
-
-.glamor-32::placeholder,
-[data-glamor-32]::placeholder,
-.glamor-32[data-simulate-placeholder],
-[data-glamor-32][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-32::-ms-input-placeholder,
-[data-glamor-32]::-ms-input-placeholder,
-.glamor-32[data-simulate-msinputplaceholder],
-[data-glamor-32][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-32:-ms-input-placeholder,
-[data-glamor-32]:-ms-input-placeholder,
-.glamor-32[data-simulate-msinputplaceholder],
-[data-glamor-32][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-32::-ms-clear,
-[data-glamor-32]::-ms-clear,
-.glamor-32[data-simulate-msclear],
-[data-glamor-32][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-32:hover ~ div,
-[data-glamor-32]:hover ~ div,
-.glamor-32[data-simulate-hover] ~ div,
-[data-glamor-32][data-simulate-hover] ~ div {
-  border-color: #0a8f4c;
-}
-
-.glamor-32:focus ~ div,
-[data-glamor-32]:focus ~ div,
-.glamor-32[data-simulate-focus] ~ div,
-[data-glamor-32][data-simulate-focus] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
-}
-
-.glamor-32:active ~ div,
-[data-glamor-32]:active ~ div,
-.glamor-32[data-simulate-active] ~ div,
-[data-glamor-32][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
-}
-
-.glamor-32 ~ div,
-[data-glamor-32] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -10954,88 +11034,8 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-34,
-[data-glamor-34] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #afbacc;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
-  outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 0;
-  width: 100%;
-  -webkit-flex: 1 1 auto;
-}
-
-.glamor-34::placeholder,
-[data-glamor-34]::placeholder,
-.glamor-34[data-simulate-placeholder],
-[data-glamor-34][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-34::-ms-input-placeholder,
-[data-glamor-34]::-ms-input-placeholder,
-.glamor-34[data-simulate-msinputplaceholder],
-[data-glamor-34][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-34:-ms-input-placeholder,
-[data-glamor-34]:-ms-input-placeholder,
-.glamor-34[data-simulate-msinputplaceholder],
-[data-glamor-34][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-34::-ms-clear,
-[data-glamor-34]::-ms-clear,
-.glamor-34[data-simulate-msclear],
-[data-glamor-34][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-34:focus ~ div,
-[data-glamor-34]:focus ~ div,
-.glamor-34[data-simulate-focus] ~ div,
-[data-glamor-34][data-simulate-focus] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
-}
-
-.glamor-34:active ~ div,
-[data-glamor-34]:active ~ div,
-.glamor-34[data-simulate-active] ~ div,
-[data-glamor-34][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: none;
-}
-
-.glamor-34 ~ div,
-[data-glamor-34] ~ div {
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.glamor-54,
-[data-glamor-54] {
+.glamor-62,
+[data-glamor-62] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -11052,62 +11052,62 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-54::placeholder,
-[data-glamor-54]::placeholder,
-.glamor-54[data-simulate-placeholder],
-[data-glamor-54][data-simulate-placeholder] {
+.glamor-62::placeholder,
+[data-glamor-62]::placeholder,
+.glamor-62[data-simulate-placeholder],
+[data-glamor-62][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-54::-ms-input-placeholder,
-[data-glamor-54]::-ms-input-placeholder,
-.glamor-54[data-simulate-msinputplaceholder],
-[data-glamor-54][data-simulate-msinputplaceholder] {
+.glamor-62::-ms-input-placeholder,
+[data-glamor-62]::-ms-input-placeholder,
+.glamor-62[data-simulate-msinputplaceholder],
+[data-glamor-62][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-54:-ms-input-placeholder,
-[data-glamor-54]:-ms-input-placeholder,
-.glamor-54[data-simulate-msinputplaceholder],
-[data-glamor-54][data-simulate-msinputplaceholder] {
+.glamor-62:-ms-input-placeholder,
+[data-glamor-62]:-ms-input-placeholder,
+.glamor-62[data-simulate-msinputplaceholder],
+[data-glamor-62][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-54::-ms-clear,
-[data-glamor-54]::-ms-clear,
-.glamor-54[data-simulate-msclear],
-[data-glamor-54][data-simulate-msclear] {
+.glamor-62::-ms-clear,
+[data-glamor-62]::-ms-clear,
+.glamor-62[data-simulate-msclear],
+[data-glamor-62][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-54:hover ~ div,
-[data-glamor-54]:hover ~ div,
-.glamor-54[data-simulate-hover] ~ div,
-[data-glamor-54][data-simulate-hover] ~ div {
+.glamor-62:hover ~ div,
+[data-glamor-62]:hover ~ div,
+.glamor-62[data-simulate-hover] ~ div,
+[data-glamor-62][data-simulate-hover] ~ div {
   border-color: #cf4615;
 }
 
-.glamor-54:focus ~ div,
-[data-glamor-54]:focus ~ div,
-.glamor-54[data-simulate-focus] ~ div,
-[data-glamor-54][data-simulate-focus] ~ div {
+.glamor-62:focus ~ div,
+[data-glamor-62]:focus ~ div,
+.glamor-62[data-simulate-focus] ~ div,
+[data-glamor-62][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-54:active ~ div,
-[data-glamor-54]:active ~ div,
-.glamor-54[data-simulate-active] ~ div,
-[data-glamor-54][data-simulate-active] ~ div {
+.glamor-62:active ~ div,
+[data-glamor-62]:active ~ div,
+.glamor-62[data-simulate-active] ~ div,
+[data-glamor-62][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-54 ~ div,
-[data-glamor-54] ~ div {
+.glamor-62 ~ div,
+[data-glamor-62] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -11121,8 +11121,8 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-56,
-[data-glamor-56] {
+.glamor-64,
+[data-glamor-64] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -11139,55 +11139,55 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-56::placeholder,
-[data-glamor-56]::placeholder,
-.glamor-56[data-simulate-placeholder],
-[data-glamor-56][data-simulate-placeholder] {
+.glamor-64::placeholder,
+[data-glamor-64]::placeholder,
+.glamor-64[data-simulate-placeholder],
+[data-glamor-64][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-56::-ms-input-placeholder,
-[data-glamor-56]::-ms-input-placeholder,
-.glamor-56[data-simulate-msinputplaceholder],
-[data-glamor-56][data-simulate-msinputplaceholder] {
+.glamor-64::-ms-input-placeholder,
+[data-glamor-64]::-ms-input-placeholder,
+.glamor-64[data-simulate-msinputplaceholder],
+[data-glamor-64][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-56:-ms-input-placeholder,
-[data-glamor-56]:-ms-input-placeholder,
-.glamor-56[data-simulate-msinputplaceholder],
-[data-glamor-56][data-simulate-msinputplaceholder] {
+.glamor-64:-ms-input-placeholder,
+[data-glamor-64]:-ms-input-placeholder,
+.glamor-64[data-simulate-msinputplaceholder],
+[data-glamor-64][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-56::-ms-clear,
-[data-glamor-56]::-ms-clear,
-.glamor-56[data-simulate-msclear],
-[data-glamor-56][data-simulate-msclear] {
+.glamor-64::-ms-clear,
+[data-glamor-64]::-ms-clear,
+.glamor-64[data-simulate-msclear],
+[data-glamor-64][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-56:focus ~ div,
-[data-glamor-56]:focus ~ div,
-.glamor-56[data-simulate-focus] ~ div,
-[data-glamor-56][data-simulate-focus] ~ div {
+.glamor-64:focus ~ div,
+[data-glamor-64]:focus ~ div,
+.glamor-64[data-simulate-focus] ~ div,
+[data-glamor-64][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-56:active ~ div,
-[data-glamor-56]:active ~ div,
-.glamor-56[data-simulate-active] ~ div,
-[data-glamor-56][data-simulate-active] ~ div {
+.glamor-64:active ~ div,
+[data-glamor-64]:active ~ div,
+.glamor-64[data-simulate-active] ~ div,
+[data-glamor-64][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: none;
 }
 
-.glamor-56 ~ div,
-[data-glamor-56] ~ div {
+.glamor-64 ~ div,
+[data-glamor-64] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -11201,8 +11201,8 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-76,
-[data-glamor-76] {
+.glamor-87,
+[data-glamor-87] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -11219,62 +11219,62 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-76::placeholder,
-[data-glamor-76]::placeholder,
-.glamor-76[data-simulate-placeholder],
-[data-glamor-76][data-simulate-placeholder] {
+.glamor-87::placeholder,
+[data-glamor-87]::placeholder,
+.glamor-87[data-simulate-placeholder],
+[data-glamor-87][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-76::-ms-input-placeholder,
-[data-glamor-76]::-ms-input-placeholder,
-.glamor-76[data-simulate-msinputplaceholder],
-[data-glamor-76][data-simulate-msinputplaceholder] {
+.glamor-87::-ms-input-placeholder,
+[data-glamor-87]::-ms-input-placeholder,
+.glamor-87[data-simulate-msinputplaceholder],
+[data-glamor-87][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-76:-ms-input-placeholder,
-[data-glamor-76]:-ms-input-placeholder,
-.glamor-76[data-simulate-msinputplaceholder],
-[data-glamor-76][data-simulate-msinputplaceholder] {
+.glamor-87:-ms-input-placeholder,
+[data-glamor-87]:-ms-input-placeholder,
+.glamor-87[data-simulate-msinputplaceholder],
+[data-glamor-87][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-76::-ms-clear,
-[data-glamor-76]::-ms-clear,
-.glamor-76[data-simulate-msclear],
-[data-glamor-76][data-simulate-msclear] {
+.glamor-87::-ms-clear,
+[data-glamor-87]::-ms-clear,
+.glamor-87[data-simulate-msclear],
+[data-glamor-87][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-76:hover ~ div,
-[data-glamor-76]:hover ~ div,
-.glamor-76[data-simulate-hover] ~ div,
-[data-glamor-76][data-simulate-hover] ~ div {
+.glamor-87:hover ~ div,
+[data-glamor-87]:hover ~ div,
+.glamor-87[data-simulate-hover] ~ div,
+[data-glamor-87][data-simulate-hover] ~ div {
   border-color: #c71818;
 }
 
-.glamor-76:focus ~ div,
-[data-glamor-76]:focus ~ div,
-.glamor-76[data-simulate-focus] ~ div,
-[data-glamor-76][data-simulate-focus] ~ div {
+.glamor-87:focus ~ div,
+[data-glamor-87]:focus ~ div,
+.glamor-87[data-simulate-focus] ~ div,
+[data-glamor-87][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-76:active ~ div,
-[data-glamor-76]:active ~ div,
-.glamor-76[data-simulate-active] ~ div,
-[data-glamor-76][data-simulate-active] ~ div {
+.glamor-87:active ~ div,
+[data-glamor-87]:active ~ div,
+.glamor-87[data-simulate-active] ~ div,
+[data-glamor-87][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-76 ~ div,
-[data-glamor-76] ~ div {
+.glamor-87 ~ div,
+[data-glamor-87] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -11288,8 +11288,8 @@ exports[`TextInput demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-78,
-[data-glamor-78] {
+.glamor-89,
+[data-glamor-89] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -11306,55 +11306,55 @@ exports[`TextInput demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-78::placeholder,
-[data-glamor-78]::placeholder,
-.glamor-78[data-simulate-placeholder],
-[data-glamor-78][data-simulate-placeholder] {
+.glamor-89::placeholder,
+[data-glamor-89]::placeholder,
+.glamor-89[data-simulate-placeholder],
+[data-glamor-89][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-78::-ms-input-placeholder,
-[data-glamor-78]::-ms-input-placeholder,
-.glamor-78[data-simulate-msinputplaceholder],
-[data-glamor-78][data-simulate-msinputplaceholder] {
+.glamor-89::-ms-input-placeholder,
+[data-glamor-89]::-ms-input-placeholder,
+.glamor-89[data-simulate-msinputplaceholder],
+[data-glamor-89][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-78:-ms-input-placeholder,
-[data-glamor-78]:-ms-input-placeholder,
-.glamor-78[data-simulate-msinputplaceholder],
-[data-glamor-78][data-simulate-msinputplaceholder] {
+.glamor-89:-ms-input-placeholder,
+[data-glamor-89]:-ms-input-placeholder,
+.glamor-89[data-simulate-msinputplaceholder],
+[data-glamor-89][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-78::-ms-clear,
-[data-glamor-78]::-ms-clear,
-.glamor-78[data-simulate-msclear],
-[data-glamor-78][data-simulate-msclear] {
+.glamor-89::-ms-clear,
+[data-glamor-89]::-ms-clear,
+.glamor-89[data-simulate-msclear],
+[data-glamor-89][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-78:focus ~ div,
-[data-glamor-78]:focus ~ div,
-.glamor-78[data-simulate-focus] ~ div,
-[data-glamor-78][data-simulate-focus] ~ div {
+.glamor-89:focus ~ div,
+[data-glamor-89]:focus ~ div,
+.glamor-89[data-simulate-focus] ~ div,
+[data-glamor-89][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-78:active ~ div,
-[data-glamor-78]:active ~ div,
-.glamor-78[data-simulate-active] ~ div,
-[data-glamor-78][data-simulate-active] ~ div {
+.glamor-89:active ~ div,
+[data-glamor-89]:active ~ div,
+.glamor-89[data-simulate-active] ~ div,
+[data-glamor-89][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: none;
 }
 
-.glamor-78 ~ div,
-[data-glamor-78] ~ div {
+.glamor-89 ~ div,
+[data-glamor-89] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -11546,20 +11546,20 @@ exports[`TextInput demo examples states 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-83"
+                className="glamor-94"
               >
                 <FieldSet
                   legend="Regular"
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Regular
@@ -11661,6 +11661,55 @@ exports[`TextInput demo examples states 1`] = `
                           </TextInput>
                           <TextInput
                             data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant={undefined}
+                          >
+                            <TextInput
+                              className={undefined}
+                              variant={undefined}
+                            >
+                              <div
+                                className="glamor-1"
+                              >
+                                <glamorous(input)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  iconEnd={undefined}
+                                  iconStart={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  suffix={undefined}
+                                  type="text"
+                                  variant={undefined}
+                                >
+                                  <input
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-0"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
+                                    disabled={undefined}
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </glamorous(input)>
+                                <div />
+                              </div>
+                            </TextInput>
+                          </TextInput>
+                          <TextInput
+                            data-simulate-focus=""
                             data-simulate-hover=""
                             defaultValue="Focus & Hover"
                             label="Example"
@@ -11845,7 +11894,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-10"
+                                    className="glamor-12"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -11892,7 +11941,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-12"
+                                    className="glamor-14"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     prefix={undefined}
@@ -11917,13 +11966,13 @@ exports[`TextInput demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Success
@@ -11938,7 +11987,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -11960,7 +12009,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -11989,7 +12038,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12017,7 +12066,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12040,7 +12089,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
                                     disabled={undefined}
@@ -12070,7 +12119,88 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </glamorous(svg)>
+                                  </Icon>
+                                </IconSuccess>
+                                <div />
+                              </div>
+                            </TextInput>
+                          </TextInput>
+                          <TextInput
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="success"
+                          >
+                            <TextInput
+                              className={undefined}
+                              variant="success"
+                            >
+                              <div
+                                className="glamor-21"
+                              >
+                                <glamorous(input)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  iconEnd={undefined}
+                                  iconStart={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  suffix={undefined}
+                                  type="text"
+                                  variant="success"
+                                >
+                                  <input
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-19"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
+                                    disabled={undefined}
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </glamorous(input)>
+                                <IconSuccess
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <glamorous(svg)
+                                      aria-hidden={true}
+                                      aria-labelledby={undefined}
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12099,7 +12229,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12123,7 +12253,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -12154,7 +12284,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12183,7 +12313,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12207,7 +12337,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -12238,7 +12368,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12266,7 +12396,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12289,7 +12419,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -12319,7 +12449,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12347,7 +12477,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12369,7 +12499,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-32"
+                                    className="glamor-37"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -12394,7 +12524,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="success"
                             >
                               <div
-                                className="glamor-19"
+                                className="glamor-21"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12416,7 +12546,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-39"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     prefix={undefined}
@@ -12441,13 +12571,13 @@ exports[`TextInput demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Warning
@@ -12462,7 +12592,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12484,7 +12614,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-39"
+                                    className="glamor-44"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -12513,7 +12643,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12541,7 +12671,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12564,7 +12694,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-39"
+                                    className="glamor-44"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
                                     disabled={undefined}
@@ -12594,7 +12724,88 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </glamorous(svg)>
+                                  </Icon>
+                                </IconWarning>
+                                <div />
+                              </div>
+                            </TextInput>
+                          </TextInput>
+                          <TextInput
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="warning"
+                          >
+                            <TextInput
+                              className={undefined}
+                              variant="warning"
+                            >
+                              <div
+                                className="glamor-46"
+                              >
+                                <glamorous(input)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  iconEnd={undefined}
+                                  iconStart={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  suffix={undefined}
+                                  type="text"
+                                  variant="warning"
+                                >
+                                  <input
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-44"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
+                                    disabled={undefined}
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </glamorous(input)>
+                                <IconWarning
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <glamorous(svg)
+                                      aria-hidden={true}
+                                      aria-labelledby={undefined}
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12623,7 +12834,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12647,7 +12858,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-39"
+                                    className="glamor-44"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -12678,7 +12889,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12707,7 +12918,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12731,7 +12942,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-39"
+                                    className="glamor-44"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -12762,7 +12973,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12790,7 +13001,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12813,7 +13024,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-39"
+                                    className="glamor-44"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -12843,7 +13054,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -12871,7 +13082,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12893,7 +13104,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-54"
+                                    className="glamor-62"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -12918,7 +13129,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="warning"
                             >
                               <div
-                                className="glamor-41"
+                                className="glamor-46"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -12940,7 +13151,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-56"
+                                    className="glamor-64"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     prefix={undefined}
@@ -12965,13 +13176,13 @@ exports[`TextInput demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Danger
@@ -12986,7 +13197,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13008,7 +13219,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -13037,7 +13248,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -13065,7 +13276,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13088,7 +13299,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
                                     disabled={undefined}
@@ -13118,7 +13329,88 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </glamorous(svg)>
+                                  </Icon>
+                                </IconDanger>
+                                <div />
+                              </div>
+                            </TextInput>
+                          </TextInput>
+                          <TextInput
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="danger"
+                          >
+                            <TextInput
+                              className={undefined}
+                              variant="danger"
+                            >
+                              <div
+                                className="glamor-71"
+                              >
+                                <glamorous(input)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  iconEnd={undefined}
+                                  iconStart={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  suffix={undefined}
+                                  type="text"
+                                  variant="danger"
+                                >
+                                  <input
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-69"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
+                                    disabled={undefined}
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </glamorous(input)>
+                                <IconDanger
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <glamorous(svg)
+                                      aria-hidden={true}
+                                      aria-labelledby={undefined}
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -13147,7 +13439,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13171,7 +13463,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -13202,7 +13494,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -13231,7 +13523,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13255,7 +13547,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -13286,7 +13578,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -13314,7 +13606,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13337,7 +13629,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -13367,7 +13659,7 @@ exports[`TextInput demo examples states 1`] = `
                                       <svg
                                         aria-hidden={true}
                                         aria-labelledby={undefined}
-                                        className="glamor-18"
+                                        className="glamor-20"
                                         role="img"
                                         viewBox="0 0 24 24"
                                       >
@@ -13395,7 +13687,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13417,7 +13709,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-76"
+                                    className="glamor-87"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     prefix={undefined}
@@ -13442,7 +13734,7 @@ exports[`TextInput demo examples states 1`] = `
                               variant="danger"
                             >
                               <div
-                                className="glamor-63"
+                                className="glamor-71"
                               >
                                 <glamorous(input)
                                   aria-invalid={undefined}
@@ -13464,7 +13756,7 @@ exports[`TextInput demo examples states 1`] = `
                                   <input
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-78"
+                                    className="glamor-89"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     prefix={undefined}
