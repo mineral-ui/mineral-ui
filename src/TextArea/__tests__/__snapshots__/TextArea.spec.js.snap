@@ -8106,12 +8106,94 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
+.glamor-14,
+[data-glamor-14] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #afbacc;
+  flex: 1 1 auto;
+  font-family: inherit;
+  font-size: 0.875em;
+  line-height: 1.5;
+  margin: 1px;
+  min-height: 2.5580357142857144em;
+  min-width: 0;
+  outline: 0;
+  padding: 0.6071428571428571em 1.1428571428571428em;
+  resize: vertical;
+  width: 100%;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-14::placeholder,
+[data-glamor-14]::placeholder,
+.glamor-14[data-simulate-placeholder],
+[data-glamor-14][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14::-ms-input-placeholder,
+[data-glamor-14]::-ms-input-placeholder,
+.glamor-14[data-simulate-msinputplaceholder],
+[data-glamor-14][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14:-ms-input-placeholder,
+[data-glamor-14]:-ms-input-placeholder,
+.glamor-14[data-simulate-msinputplaceholder],
+[data-glamor-14][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-14::-ms-clear,
+[data-glamor-14]::-ms-clear,
+.glamor-14[data-simulate-msclear],
+[data-glamor-14][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-14:focus ~ div,
+[data-glamor-14]:focus ~ div,
+.glamor-14[data-simulate-focus] ~ div,
+[data-glamor-14][data-simulate-focus] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-14:active ~ div,
+[data-glamor-14]:active ~ div,
+.glamor-14[data-simulate-active] ~ div,
+[data-glamor-14][data-simulate-active] ~ div {
+  border-color: #c8d1e0;
+  box-shadow: none;
+}
+
+.glamor-14 ~ div,
+[data-glamor-14] ~ div {
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .glamor-12,
 [data-glamor-12] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #afbacc;
+  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
   font-size: 0.875em;
@@ -8157,6 +8239,13 @@ exports[`TextArea demo examples states 1`] = `
   display: none;
 }
 
+.glamor-12:hover ~ div,
+[data-glamor-12]:hover ~ div,
+.glamor-12[data-simulate-hover] ~ div,
+[data-glamor-12][data-simulate-hover] ~ div {
+  border-color: #2e6fd9;
+}
+
 .glamor-12:focus ~ div,
 [data-glamor-12]:focus ~ div,
 .glamor-12[data-simulate-focus] ~ div,
@@ -8170,7 +8259,7 @@ exports[`TextArea demo examples states 1`] = `
 .glamor-12[data-simulate-active] ~ div,
 [data-glamor-12][data-simulate-active] ~ div {
   border-color: #c8d1e0;
-  box-shadow: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
 .glamor-12 ~ div,
@@ -8188,102 +8277,13 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-10,
-[data-glamor-10] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  line-height: 1.5;
-  margin: 1px;
-  min-height: 2.5580357142857144em;
-  min-width: 0;
-  outline: 0;
-  padding: 0.6071428571428571em 1.1428571428571428em;
-  resize: vertical;
-  width: 100%;
-  -webkit-flex: 1 1 auto;
-}
-
-.glamor-10::placeholder,
-[data-glamor-10]::placeholder,
-.glamor-10[data-simulate-placeholder],
-[data-glamor-10][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10::-ms-input-placeholder,
-[data-glamor-10]::-ms-input-placeholder,
-.glamor-10[data-simulate-msinputplaceholder],
-[data-glamor-10][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10:-ms-input-placeholder,
-[data-glamor-10]:-ms-input-placeholder,
-.glamor-10[data-simulate-msinputplaceholder],
-[data-glamor-10][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-10::-ms-clear,
-[data-glamor-10]::-ms-clear,
-.glamor-10[data-simulate-msclear],
-[data-glamor-10][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-10:hover ~ div,
-[data-glamor-10]:hover ~ div,
-.glamor-10[data-simulate-hover] ~ div,
-[data-glamor-10][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-10:focus ~ div,
-[data-glamor-10]:focus ~ div,
-.glamor-10[data-simulate-focus] ~ div,
-[data-glamor-10][data-simulate-focus] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-10:active ~ div,
-[data-glamor-10]:active ~ div,
-.glamor-10[data-simulate-active] ~ div,
-[data-glamor-10][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-10 ~ div,
-[data-glamor-10] ~ div {
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.glamor-68 > *:not(:last-child),
-[data-glamor-68] > *:not(:last-child) {
+.glamor-76 > *:not(:last-child),
+[data-glamor-76] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-17,
-[data-glamor-17] {
+.glamor-19,
+[data-glamor-19] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8302,62 +8302,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-17::placeholder,
-[data-glamor-17]::placeholder,
-.glamor-17[data-simulate-placeholder],
-[data-glamor-17][data-simulate-placeholder] {
+.glamor-19::placeholder,
+[data-glamor-19]::placeholder,
+.glamor-19[data-simulate-placeholder],
+[data-glamor-19][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17::-ms-input-placeholder,
-[data-glamor-17]::-ms-input-placeholder,
-.glamor-17[data-simulate-msinputplaceholder],
-[data-glamor-17][data-simulate-msinputplaceholder] {
+.glamor-19::-ms-input-placeholder,
+[data-glamor-19]::-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17:-ms-input-placeholder,
-[data-glamor-17]:-ms-input-placeholder,
-.glamor-17[data-simulate-msinputplaceholder],
-[data-glamor-17][data-simulate-msinputplaceholder] {
+.glamor-19:-ms-input-placeholder,
+[data-glamor-19]:-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-17::-ms-clear,
-[data-glamor-17]::-ms-clear,
-.glamor-17[data-simulate-msclear],
-[data-glamor-17][data-simulate-msclear] {
+.glamor-19::-ms-clear,
+[data-glamor-19]::-ms-clear,
+.glamor-19[data-simulate-msclear],
+[data-glamor-19][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-17:hover ~ div,
-[data-glamor-17]:hover ~ div,
-.glamor-17[data-simulate-hover] ~ div,
-[data-glamor-17][data-simulate-hover] ~ div {
+.glamor-19:hover ~ div,
+[data-glamor-19]:hover ~ div,
+.glamor-19[data-simulate-hover] ~ div,
+[data-glamor-19][data-simulate-hover] ~ div {
   border-color: #0a8f4c;
 }
 
-.glamor-17:focus ~ div,
-[data-glamor-17]:focus ~ div,
-.glamor-17[data-simulate-focus] ~ div,
-[data-glamor-17][data-simulate-focus] ~ div {
+.glamor-19:focus ~ div,
+[data-glamor-19]:focus ~ div,
+.glamor-19[data-simulate-focus] ~ div,
+[data-glamor-19][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-17:active ~ div,
-[data-glamor-17]:active ~ div,
-.glamor-17[data-simulate-active] ~ div,
-[data-glamor-17][data-simulate-active] ~ div {
+.glamor-19:active ~ div,
+[data-glamor-19]:active ~ div,
+.glamor-19[data-simulate-active] ~ div,
+[data-glamor-19][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-17 ~ div,
-[data-glamor-17] ~ div {
+.glamor-19 ~ div,
+[data-glamor-19] ~ div {
   background-color: #fff;
   border-color: #10a35a;
   border-radius: 0.1875em;
@@ -8371,8 +8371,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-34,
-[data-glamor-34] {
+.glamor-38,
+[data-glamor-38] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8391,62 +8391,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-34::placeholder,
-[data-glamor-34]::placeholder,
-.glamor-34[data-simulate-placeholder],
-[data-glamor-34][data-simulate-placeholder] {
+.glamor-38::placeholder,
+[data-glamor-38]::placeholder,
+.glamor-38[data-simulate-placeholder],
+[data-glamor-38][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-34::-ms-input-placeholder,
-[data-glamor-34]::-ms-input-placeholder,
-.glamor-34[data-simulate-msinputplaceholder],
-[data-glamor-34][data-simulate-msinputplaceholder] {
+.glamor-38::-ms-input-placeholder,
+[data-glamor-38]::-ms-input-placeholder,
+.glamor-38[data-simulate-msinputplaceholder],
+[data-glamor-38][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-34:-ms-input-placeholder,
-[data-glamor-34]:-ms-input-placeholder,
-.glamor-34[data-simulate-msinputplaceholder],
-[data-glamor-34][data-simulate-msinputplaceholder] {
+.glamor-38:-ms-input-placeholder,
+[data-glamor-38]:-ms-input-placeholder,
+.glamor-38[data-simulate-msinputplaceholder],
+[data-glamor-38][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-34::-ms-clear,
-[data-glamor-34]::-ms-clear,
-.glamor-34[data-simulate-msclear],
-[data-glamor-34][data-simulate-msclear] {
+.glamor-38::-ms-clear,
+[data-glamor-38]::-ms-clear,
+.glamor-38[data-simulate-msclear],
+[data-glamor-38][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-34:hover ~ div,
-[data-glamor-34]:hover ~ div,
-.glamor-34[data-simulate-hover] ~ div,
-[data-glamor-34][data-simulate-hover] ~ div {
+.glamor-38:hover ~ div,
+[data-glamor-38]:hover ~ div,
+.glamor-38[data-simulate-hover] ~ div,
+[data-glamor-38][data-simulate-hover] ~ div {
   border-color: #cf4615;
 }
 
-.glamor-34:focus ~ div,
-[data-glamor-34]:focus ~ div,
-.glamor-34[data-simulate-focus] ~ div,
-[data-glamor-34][data-simulate-focus] ~ div {
+.glamor-38:focus ~ div,
+[data-glamor-38]:focus ~ div,
+.glamor-38[data-simulate-focus] ~ div,
+[data-glamor-38][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-34:active ~ div,
-[data-glamor-34]:active ~ div,
-.glamor-34[data-simulate-active] ~ div,
-[data-glamor-34][data-simulate-active] ~ div {
+.glamor-38:active ~ div,
+[data-glamor-38]:active ~ div,
+.glamor-38[data-simulate-active] ~ div,
+[data-glamor-38][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-34 ~ div,
-[data-glamor-34] ~ div {
+.glamor-38 ~ div,
+[data-glamor-38] ~ div {
   background-color: #fff;
   border-color: #e05b2b;
   border-radius: 0.1875em;
@@ -8460,8 +8460,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-51,
-[data-glamor-51] {
+.glamor-57,
+[data-glamor-57] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8480,62 +8480,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-51::placeholder,
-[data-glamor-51]::placeholder,
-.glamor-51[data-simulate-placeholder],
-[data-glamor-51][data-simulate-placeholder] {
+.glamor-57::placeholder,
+[data-glamor-57]::placeholder,
+.glamor-57[data-simulate-placeholder],
+[data-glamor-57][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-51::-ms-input-placeholder,
-[data-glamor-51]::-ms-input-placeholder,
-.glamor-51[data-simulate-msinputplaceholder],
-[data-glamor-51][data-simulate-msinputplaceholder] {
+.glamor-57::-ms-input-placeholder,
+[data-glamor-57]::-ms-input-placeholder,
+.glamor-57[data-simulate-msinputplaceholder],
+[data-glamor-57][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-51:-ms-input-placeholder,
-[data-glamor-51]:-ms-input-placeholder,
-.glamor-51[data-simulate-msinputplaceholder],
-[data-glamor-51][data-simulate-msinputplaceholder] {
+.glamor-57:-ms-input-placeholder,
+[data-glamor-57]:-ms-input-placeholder,
+.glamor-57[data-simulate-msinputplaceholder],
+[data-glamor-57][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-51::-ms-clear,
-[data-glamor-51]::-ms-clear,
-.glamor-51[data-simulate-msclear],
-[data-glamor-51][data-simulate-msclear] {
+.glamor-57::-ms-clear,
+[data-glamor-57]::-ms-clear,
+.glamor-57[data-simulate-msclear],
+[data-glamor-57][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-51:hover ~ div,
-[data-glamor-51]:hover ~ div,
-.glamor-51[data-simulate-hover] ~ div,
-[data-glamor-51][data-simulate-hover] ~ div {
+.glamor-57:hover ~ div,
+[data-glamor-57]:hover ~ div,
+.glamor-57[data-simulate-hover] ~ div,
+[data-glamor-57][data-simulate-hover] ~ div {
   border-color: #c71818;
 }
 
-.glamor-51:focus ~ div,
-[data-glamor-51]:focus ~ div,
-.glamor-51[data-simulate-focus] ~ div,
-[data-glamor-51][data-simulate-focus] ~ div {
+.glamor-57:focus ~ div,
+[data-glamor-57]:focus ~ div,
+.glamor-57[data-simulate-focus] ~ div,
+[data-glamor-57][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-51:active ~ div,
-[data-glamor-51]:active ~ div,
-.glamor-51[data-simulate-active] ~ div,
-[data-glamor-51][data-simulate-active] ~ div {
+.glamor-57:active ~ div,
+[data-glamor-57]:active ~ div,
+.glamor-57[data-simulate-active] ~ div,
+[data-glamor-57][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-51 ~ div,
-[data-glamor-51] ~ div {
+.glamor-57 ~ div,
+[data-glamor-57] ~ div {
   background-color: #fff;
   border-color: #db2929;
   border-radius: 0.1875em;
@@ -8549,14 +8549,14 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-15 > *,
-[data-glamor-15] > * {
+.glamor-17 > *,
+[data-glamor-17] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.glamor-14,
-[data-glamor-14] {
+.glamor-16,
+[data-glamor-16] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -8568,17 +8568,17 @@ exports[`TextArea demo examples states 1`] = `
   padding: 0;
 }
 
-.glamor-14 *,
-[data-glamor-14] *,
-.glamor-14 *::before,
-[data-glamor-14] *::before,
-.glamor-14 *::after,
-[data-glamor-14] *::after {
+.glamor-16 *,
+[data-glamor-16] *,
+.glamor-16 *::before,
+[data-glamor-16] *::before,
+.glamor-16 *::after,
+[data-glamor-16] *::after {
   box-sizing: inherit;
 }
 
-.glamor-14 > legend,
-[data-glamor-14] > legend {
+.glamor-16 > legend,
+[data-glamor-16] > legend {
   color: #333840;
   font-size: 0.875em;
   font-weight: 700;
@@ -8587,14 +8587,14 @@ exports[`TextArea demo examples states 1`] = `
   padding-right: 0.5em;
 }
 
-.glamor-14 > *,
-[data-glamor-14] > * {
+.glamor-16 > *,
+[data-glamor-16] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.glamor-27,
-[data-glamor-27] {
+.glamor-31,
+[data-glamor-31] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8613,62 +8613,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-27::placeholder,
-[data-glamor-27]::placeholder,
-.glamor-27[data-simulate-placeholder],
-[data-glamor-27][data-simulate-placeholder] {
+.glamor-31::placeholder,
+[data-glamor-31]::placeholder,
+.glamor-31[data-simulate-placeholder],
+[data-glamor-31][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-27::-ms-input-placeholder,
-[data-glamor-27]::-ms-input-placeholder,
-.glamor-27[data-simulate-msinputplaceholder],
-[data-glamor-27][data-simulate-msinputplaceholder] {
+.glamor-31::-ms-input-placeholder,
+[data-glamor-31]::-ms-input-placeholder,
+.glamor-31[data-simulate-msinputplaceholder],
+[data-glamor-31][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-27:-ms-input-placeholder,
-[data-glamor-27]:-ms-input-placeholder,
-.glamor-27[data-simulate-msinputplaceholder],
-[data-glamor-27][data-simulate-msinputplaceholder] {
+.glamor-31:-ms-input-placeholder,
+[data-glamor-31]:-ms-input-placeholder,
+.glamor-31[data-simulate-msinputplaceholder],
+[data-glamor-31][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-27::-ms-clear,
-[data-glamor-27]::-ms-clear,
-.glamor-27[data-simulate-msclear],
-[data-glamor-27][data-simulate-msclear] {
+.glamor-31::-ms-clear,
+[data-glamor-31]::-ms-clear,
+.glamor-31[data-simulate-msclear],
+[data-glamor-31][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-27:hover ~ div,
-[data-glamor-27]:hover ~ div,
-.glamor-27[data-simulate-hover] ~ div,
-[data-glamor-27][data-simulate-hover] ~ div {
+.glamor-31:hover ~ div,
+[data-glamor-31]:hover ~ div,
+.glamor-31[data-simulate-hover] ~ div,
+[data-glamor-31][data-simulate-hover] ~ div {
   border-color: #0a8f4c;
 }
 
-.glamor-27:focus ~ div,
-[data-glamor-27]:focus ~ div,
-.glamor-27[data-simulate-focus] ~ div,
-[data-glamor-27][data-simulate-focus] ~ div {
+.glamor-31:focus ~ div,
+[data-glamor-31]:focus ~ div,
+.glamor-31[data-simulate-focus] ~ div,
+[data-glamor-31][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-27:active ~ div,
-[data-glamor-27]:active ~ div,
-.glamor-27[data-simulate-active] ~ div,
-[data-glamor-27][data-simulate-active] ~ div {
+.glamor-31:active ~ div,
+[data-glamor-31]:active ~ div,
+.glamor-31[data-simulate-active] ~ div,
+[data-glamor-31][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-27 ~ div,
-[data-glamor-27] ~ div {
+.glamor-31 ~ div,
+[data-glamor-31] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -8682,8 +8682,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-29,
-[data-glamor-29] {
+.glamor-33,
+[data-glamor-33] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8702,55 +8702,55 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-29::placeholder,
-[data-glamor-29]::placeholder,
-.glamor-29[data-simulate-placeholder],
-[data-glamor-29][data-simulate-placeholder] {
+.glamor-33::placeholder,
+[data-glamor-33]::placeholder,
+.glamor-33[data-simulate-placeholder],
+[data-glamor-33][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-29::-ms-input-placeholder,
-[data-glamor-29]::-ms-input-placeholder,
-.glamor-29[data-simulate-msinputplaceholder],
-[data-glamor-29][data-simulate-msinputplaceholder] {
+.glamor-33::-ms-input-placeholder,
+[data-glamor-33]::-ms-input-placeholder,
+.glamor-33[data-simulate-msinputplaceholder],
+[data-glamor-33][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-29:-ms-input-placeholder,
-[data-glamor-29]:-ms-input-placeholder,
-.glamor-29[data-simulate-msinputplaceholder],
-[data-glamor-29][data-simulate-msinputplaceholder] {
+.glamor-33:-ms-input-placeholder,
+[data-glamor-33]:-ms-input-placeholder,
+.glamor-33[data-simulate-msinputplaceholder],
+[data-glamor-33][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-29::-ms-clear,
-[data-glamor-29]::-ms-clear,
-.glamor-29[data-simulate-msclear],
-[data-glamor-29][data-simulate-msclear] {
+.glamor-33::-ms-clear,
+[data-glamor-33]::-ms-clear,
+.glamor-33[data-simulate-msclear],
+[data-glamor-33][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-29:focus ~ div,
-[data-glamor-29]:focus ~ div,
-.glamor-29[data-simulate-focus] ~ div,
-[data-glamor-29][data-simulate-focus] ~ div {
+.glamor-33:focus ~ div,
+[data-glamor-33]:focus ~ div,
+.glamor-33[data-simulate-focus] ~ div,
+[data-glamor-33][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-29:active ~ div,
-[data-glamor-29]:active ~ div,
-.glamor-29[data-simulate-active] ~ div,
-[data-glamor-29][data-simulate-active] ~ div {
+.glamor-33:active ~ div,
+[data-glamor-33]:active ~ div,
+.glamor-33[data-simulate-active] ~ div,
+[data-glamor-33][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: none;
 }
 
-.glamor-29 ~ div,
-[data-glamor-29] ~ div {
+.glamor-33 ~ div,
+[data-glamor-33] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -8764,8 +8764,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-44,
-[data-glamor-44] {
+.glamor-50,
+[data-glamor-50] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8784,62 +8784,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-44::placeholder,
-[data-glamor-44]::placeholder,
-.glamor-44[data-simulate-placeholder],
-[data-glamor-44][data-simulate-placeholder] {
+.glamor-50::placeholder,
+[data-glamor-50]::placeholder,
+.glamor-50[data-simulate-placeholder],
+[data-glamor-50][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-44::-ms-input-placeholder,
-[data-glamor-44]::-ms-input-placeholder,
-.glamor-44[data-simulate-msinputplaceholder],
-[data-glamor-44][data-simulate-msinputplaceholder] {
+.glamor-50::-ms-input-placeholder,
+[data-glamor-50]::-ms-input-placeholder,
+.glamor-50[data-simulate-msinputplaceholder],
+[data-glamor-50][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-44:-ms-input-placeholder,
-[data-glamor-44]:-ms-input-placeholder,
-.glamor-44[data-simulate-msinputplaceholder],
-[data-glamor-44][data-simulate-msinputplaceholder] {
+.glamor-50:-ms-input-placeholder,
+[data-glamor-50]:-ms-input-placeholder,
+.glamor-50[data-simulate-msinputplaceholder],
+[data-glamor-50][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-44::-ms-clear,
-[data-glamor-44]::-ms-clear,
-.glamor-44[data-simulate-msclear],
-[data-glamor-44][data-simulate-msclear] {
+.glamor-50::-ms-clear,
+[data-glamor-50]::-ms-clear,
+.glamor-50[data-simulate-msclear],
+[data-glamor-50][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-44:hover ~ div,
-[data-glamor-44]:hover ~ div,
-.glamor-44[data-simulate-hover] ~ div,
-[data-glamor-44][data-simulate-hover] ~ div {
+.glamor-50:hover ~ div,
+[data-glamor-50]:hover ~ div,
+.glamor-50[data-simulate-hover] ~ div,
+[data-glamor-50][data-simulate-hover] ~ div {
   border-color: #cf4615;
 }
 
-.glamor-44:focus ~ div,
-[data-glamor-44]:focus ~ div,
-.glamor-44[data-simulate-focus] ~ div,
-[data-glamor-44][data-simulate-focus] ~ div {
+.glamor-50:focus ~ div,
+[data-glamor-50]:focus ~ div,
+.glamor-50[data-simulate-focus] ~ div,
+[data-glamor-50][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-44:active ~ div,
-[data-glamor-44]:active ~ div,
-.glamor-44[data-simulate-active] ~ div,
-[data-glamor-44][data-simulate-active] ~ div {
+.glamor-50:active ~ div,
+[data-glamor-50]:active ~ div,
+.glamor-50[data-simulate-active] ~ div,
+[data-glamor-50][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-44 ~ div,
-[data-glamor-44] ~ div {
+.glamor-50 ~ div,
+[data-glamor-50] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -8853,8 +8853,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-46,
-[data-glamor-46] {
+.glamor-52,
+[data-glamor-52] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8873,55 +8873,55 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-46::placeholder,
-[data-glamor-46]::placeholder,
-.glamor-46[data-simulate-placeholder],
-[data-glamor-46][data-simulate-placeholder] {
+.glamor-52::placeholder,
+[data-glamor-52]::placeholder,
+.glamor-52[data-simulate-placeholder],
+[data-glamor-52][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-46::-ms-input-placeholder,
-[data-glamor-46]::-ms-input-placeholder,
-.glamor-46[data-simulate-msinputplaceholder],
-[data-glamor-46][data-simulate-msinputplaceholder] {
+.glamor-52::-ms-input-placeholder,
+[data-glamor-52]::-ms-input-placeholder,
+.glamor-52[data-simulate-msinputplaceholder],
+[data-glamor-52][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-46:-ms-input-placeholder,
-[data-glamor-46]:-ms-input-placeholder,
-.glamor-46[data-simulate-msinputplaceholder],
-[data-glamor-46][data-simulate-msinputplaceholder] {
+.glamor-52:-ms-input-placeholder,
+[data-glamor-52]:-ms-input-placeholder,
+.glamor-52[data-simulate-msinputplaceholder],
+[data-glamor-52][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-46::-ms-clear,
-[data-glamor-46]::-ms-clear,
-.glamor-46[data-simulate-msclear],
-[data-glamor-46][data-simulate-msclear] {
+.glamor-52::-ms-clear,
+[data-glamor-52]::-ms-clear,
+.glamor-52[data-simulate-msclear],
+[data-glamor-52][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-46:focus ~ div,
-[data-glamor-46]:focus ~ div,
-.glamor-46[data-simulate-focus] ~ div,
-[data-glamor-46][data-simulate-focus] ~ div {
+.glamor-52:focus ~ div,
+[data-glamor-52]:focus ~ div,
+.glamor-52[data-simulate-focus] ~ div,
+[data-glamor-52][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-46:active ~ div,
-[data-glamor-46]:active ~ div,
-.glamor-46[data-simulate-active] ~ div,
-[data-glamor-46][data-simulate-active] ~ div {
+.glamor-52:active ~ div,
+[data-glamor-52]:active ~ div,
+.glamor-52[data-simulate-active] ~ div,
+[data-glamor-52][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: none;
 }
 
-.glamor-46 ~ div,
-[data-glamor-46] ~ div {
+.glamor-52 ~ div,
+[data-glamor-52] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -8935,8 +8935,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-61,
-[data-glamor-61] {
+.glamor-69,
+[data-glamor-69] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -8955,62 +8955,62 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-61::placeholder,
-[data-glamor-61]::placeholder,
-.glamor-61[data-simulate-placeholder],
-[data-glamor-61][data-simulate-placeholder] {
+.glamor-69::placeholder,
+[data-glamor-69]::placeholder,
+.glamor-69[data-simulate-placeholder],
+[data-glamor-69][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-61::-ms-input-placeholder,
-[data-glamor-61]::-ms-input-placeholder,
-.glamor-61[data-simulate-msinputplaceholder],
-[data-glamor-61][data-simulate-msinputplaceholder] {
+.glamor-69::-ms-input-placeholder,
+[data-glamor-69]::-ms-input-placeholder,
+.glamor-69[data-simulate-msinputplaceholder],
+[data-glamor-69][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-61:-ms-input-placeholder,
-[data-glamor-61]:-ms-input-placeholder,
-.glamor-61[data-simulate-msinputplaceholder],
-[data-glamor-61][data-simulate-msinputplaceholder] {
+.glamor-69:-ms-input-placeholder,
+[data-glamor-69]:-ms-input-placeholder,
+.glamor-69[data-simulate-msinputplaceholder],
+[data-glamor-69][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-61::-ms-clear,
-[data-glamor-61]::-ms-clear,
-.glamor-61[data-simulate-msclear],
-[data-glamor-61][data-simulate-msclear] {
+.glamor-69::-ms-clear,
+[data-glamor-69]::-ms-clear,
+.glamor-69[data-simulate-msclear],
+[data-glamor-69][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-61:hover ~ div,
-[data-glamor-61]:hover ~ div,
-.glamor-61[data-simulate-hover] ~ div,
-[data-glamor-61][data-simulate-hover] ~ div {
+.glamor-69:hover ~ div,
+[data-glamor-69]:hover ~ div,
+.glamor-69[data-simulate-hover] ~ div,
+[data-glamor-69][data-simulate-hover] ~ div {
   border-color: #c71818;
 }
 
-.glamor-61:focus ~ div,
-[data-glamor-61]:focus ~ div,
-.glamor-61[data-simulate-focus] ~ div,
-[data-glamor-61][data-simulate-focus] ~ div {
+.glamor-69:focus ~ div,
+[data-glamor-69]:focus ~ div,
+.glamor-69[data-simulate-focus] ~ div,
+[data-glamor-69][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-61:active ~ div,
-[data-glamor-61]:active ~ div,
-.glamor-61[data-simulate-active] ~ div,
-[data-glamor-61][data-simulate-active] ~ div {
+.glamor-69:active ~ div,
+[data-glamor-69]:active ~ div,
+.glamor-69[data-simulate-active] ~ div,
+[data-glamor-69][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-61 ~ div,
-[data-glamor-61] ~ div {
+.glamor-69 ~ div,
+[data-glamor-69] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -9024,8 +9024,8 @@ exports[`TextArea demo examples states 1`] = `
   z-index: -1;
 }
 
-.glamor-63,
-[data-glamor-63] {
+.glamor-71,
+[data-glamor-71] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -9044,55 +9044,55 @@ exports[`TextArea demo examples states 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-63::placeholder,
-[data-glamor-63]::placeholder,
-.glamor-63[data-simulate-placeholder],
-[data-glamor-63][data-simulate-placeholder] {
+.glamor-71::placeholder,
+[data-glamor-71]::placeholder,
+.glamor-71[data-simulate-placeholder],
+[data-glamor-71][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-63::-ms-input-placeholder,
-[data-glamor-63]::-ms-input-placeholder,
-.glamor-63[data-simulate-msinputplaceholder],
-[data-glamor-63][data-simulate-msinputplaceholder] {
+.glamor-71::-ms-input-placeholder,
+[data-glamor-71]::-ms-input-placeholder,
+.glamor-71[data-simulate-msinputplaceholder],
+[data-glamor-71][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-63:-ms-input-placeholder,
-[data-glamor-63]:-ms-input-placeholder,
-.glamor-63[data-simulate-msinputplaceholder],
-[data-glamor-63][data-simulate-msinputplaceholder] {
+.glamor-71:-ms-input-placeholder,
+[data-glamor-71]:-ms-input-placeholder,
+.glamor-71[data-simulate-msinputplaceholder],
+[data-glamor-71][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-63::-ms-clear,
-[data-glamor-63]::-ms-clear,
-.glamor-63[data-simulate-msclear],
-[data-glamor-63][data-simulate-msclear] {
+.glamor-71::-ms-clear,
+[data-glamor-71]::-ms-clear,
+.glamor-71[data-simulate-msclear],
+[data-glamor-71][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-63:focus ~ div,
-[data-glamor-63]:focus ~ div,
-.glamor-63[data-simulate-focus] ~ div,
-[data-glamor-63][data-simulate-focus] ~ div {
+.glamor-71:focus ~ div,
+[data-glamor-71]:focus ~ div,
+.glamor-71[data-simulate-focus] ~ div,
+[data-glamor-71][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-63:active ~ div,
-[data-glamor-63]:active ~ div,
-.glamor-63[data-simulate-active] ~ div,
-[data-glamor-63][data-simulate-active] ~ div {
+.glamor-71:active ~ div,
+[data-glamor-71]:active ~ div,
+.glamor-71[data-simulate-active] ~ div,
+[data-glamor-71][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: none;
 }
 
-.glamor-63 ~ div,
-[data-glamor-63] ~ div {
+.glamor-71 ~ div,
+[data-glamor-71] ~ div {
   background-color: #ebeff5;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -9284,20 +9284,20 @@ exports[`TextArea demo examples states 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-68"
+                className="glamor-76"
               >
                 <FieldSet
                   legend="Regular"
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Regular
@@ -9395,6 +9395,53 @@ exports[`TextArea demo examples states 1`] = `
                           </TextArea>
                           <TextArea
                             data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant={undefined}
+                          >
+                            <TextArea
+                              className={undefined}
+                              variant={undefined}
+                            >
+                              <div
+                                className="glamor-1"
+                              >
+                                <glamorous(textarea)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  autoSize={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  onInput={[Function]}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  resizeable={true}
+                                  rows={8}
+                                  size="large"
+                                  variant={undefined}
+                                >
+                                  <textarea
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-0"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
+                                    disabled={undefined}
+                                    onInput={[Function]}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    rows={8}
+                                  />
+                                </glamorous(textarea)>
+                                <div />
+                              </div>
+                            </TextArea>
+                          </TextArea>
+                          <TextArea
+                            data-simulate-focus=""
                             data-simulate-hover=""
                             defaultValue="Focus & Hover"
                             label="Example"
@@ -9572,7 +9619,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-10"
+                                    className="glamor-12"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -9617,7 +9664,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-12"
+                                    className="glamor-14"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     onInput={[Function]}
@@ -9641,13 +9688,13 @@ exports[`TextArea demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Success
@@ -9683,7 +9730,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -9729,9 +9776,56 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
+                                    disabled={undefined}
+                                    onInput={[Function]}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    rows={8}
+                                  />
+                                </glamorous(textarea)>
+                                <div />
+                              </div>
+                            </TextArea>
+                          </TextArea>
+                          <TextArea
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="success"
+                          >
+                            <TextArea
+                              className={undefined}
+                              variant="success"
+                            >
+                              <div
+                                className="glamor-1"
+                              >
+                                <glamorous(textarea)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  autoSize={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  onInput={[Function]}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  resizeable={true}
+                                  rows={8}
+                                  size="large"
+                                  variant="success"
+                                >
+                                  <textarea
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-19"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
                                     disabled={undefined}
                                     onInput={[Function]}
                                     readOnly={undefined}
@@ -9778,7 +9872,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -9828,7 +9922,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -9876,7 +9970,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-17"
+                                    className="glamor-19"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -9922,7 +10016,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-27"
+                                    className="glamor-31"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -9967,7 +10061,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-29"
+                                    className="glamor-33"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     onInput={[Function]}
@@ -9991,13 +10085,13 @@ exports[`TextArea demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Warning
@@ -10033,7 +10127,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-38"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -10079,9 +10173,56 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-38"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
+                                    disabled={undefined}
+                                    onInput={[Function]}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    rows={8}
+                                  />
+                                </glamorous(textarea)>
+                                <div />
+                              </div>
+                            </TextArea>
+                          </TextArea>
+                          <TextArea
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="warning"
+                          >
+                            <TextArea
+                              className={undefined}
+                              variant="warning"
+                            >
+                              <div
+                                className="glamor-1"
+                              >
+                                <glamorous(textarea)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  autoSize={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  onInput={[Function]}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  resizeable={true}
+                                  rows={8}
+                                  size="large"
+                                  variant="warning"
+                                >
+                                  <textarea
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-38"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
                                     disabled={undefined}
                                     onInput={[Function]}
                                     readOnly={undefined}
@@ -10128,7 +10269,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-38"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -10178,7 +10319,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-38"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -10226,7 +10367,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-34"
+                                    className="glamor-38"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -10272,7 +10413,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-44"
+                                    className="glamor-50"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -10317,7 +10458,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-46"
+                                    className="glamor-52"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     onInput={[Function]}
@@ -10341,13 +10482,13 @@ exports[`TextArea demo examples states 1`] = `
                 >
                   <glamorous(FormFieldset)>
                     <FormFieldset
-                      className="glamor-15"
+                      className="glamor-17"
                     >
                       <FormFieldset
-                        className="glamor-15"
+                        className="glamor-17"
                       >
                         <fieldset
-                          className="glamor-14"
+                          className="glamor-16"
                         >
                           <legend>
                             Danger
@@ -10383,7 +10524,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-51"
+                                    className="glamor-57"
                                     defaultValue="Regular"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -10429,9 +10570,56 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-51"
+                                    className="glamor-57"
                                     data-simulate-hover=""
                                     defaultValue="Hover"
+                                    disabled={undefined}
+                                    onInput={[Function]}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    rows={8}
+                                  />
+                                </glamorous(textarea)>
+                                <div />
+                              </div>
+                            </TextArea>
+                          </TextArea>
+                          <TextArea
+                            data-simulate-focus=""
+                            defaultValue="Focus"
+                            label="Example"
+                            variant="danger"
+                          >
+                            <TextArea
+                              className={undefined}
+                              variant="danger"
+                            >
+                              <div
+                                className="glamor-1"
+                              >
+                                <glamorous(textarea)
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  autoSize={undefined}
+                                  data-simulate-focus=""
+                                  defaultValue="Focus"
+                                  disabled={undefined}
+                                  innerRef={[Function]}
+                                  label="Example"
+                                  onInput={[Function]}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  resizeable={true}
+                                  rows={8}
+                                  size="large"
+                                  variant="danger"
+                                >
+                                  <textarea
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    className="glamor-57"
+                                    data-simulate-focus=""
+                                    defaultValue="Focus"
                                     disabled={undefined}
                                     onInput={[Function]}
                                     readOnly={undefined}
@@ -10478,7 +10666,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-51"
+                                    className="glamor-57"
                                     data-simulate-focus=""
                                     data-simulate-hover=""
                                     defaultValue="Focus & Hover"
@@ -10528,7 +10716,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-51"
+                                    className="glamor-57"
                                     data-simulate-active=""
                                     data-simulate-focus=""
                                     defaultValue="Focus & Active"
@@ -10576,7 +10764,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-51"
+                                    className="glamor-57"
                                     data-simulate-active=""
                                     defaultValue="Active"
                                     disabled={undefined}
@@ -10622,7 +10810,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-61"
+                                    className="glamor-69"
                                     defaultValue="Read Only"
                                     disabled={undefined}
                                     onInput={[Function]}
@@ -10667,7 +10855,7 @@ exports[`TextArea demo examples states 1`] = `
                                   <textarea
                                     aria-invalid={undefined}
                                     aria-required={undefined}
-                                    className="glamor-63"
+                                    className="glamor-71"
                                     defaultValue="Disabled"
                                     disabled={true}
                                     onInput={[Function]}
