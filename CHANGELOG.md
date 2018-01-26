@@ -1,3 +1,20 @@
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/mineral-ui/mineral-ui/compare/v0.17.0...v0.18.0) (2018-01-26)
+
+
+### Features
+
+* **checkbox,checkbox-group:** New components ([2847643](https://github.com/mineral-ui/mineral-ui/commit/2847643))
+* **icon,mineral-ui-icons:** Add several toggle new icons ([74052fd](https://github.com/mineral-ui/mineral-ui/commit/74052fd))
+* **radio,radio-group:** Add labelPosition and justify props; update themes. ([cb69adf](https://github.com/mineral-ui/mineral-ui/commit/cb69adf))
+
+
+### BREAKING CHANGES
+
+* **radio,radio-group:** Simplified Radio/RadioGroup themes.  Removed keys: RadioControl_borderColor_focus, RadioControl_boxShadow_checkedFocus, RadioControl_size_jumbo, RadioIcon_*.  Renamed all RadioGroup keys to improve clarity.
+
+
+
 <a name="0.17.0"></a>
 # [0.17.0](https://github.com/mineral-ui/mineral-ui/compare/v0.16.0...v0.17.0) (2018-01-17)
 
