@@ -16,7 +16,6 @@
 
 import React from 'react';
 import Enzyme from 'enzyme';
-import serializer from 'jest-glamor-react';
 import { simulations } from 'glamor';
 import semver from 'semver';
 
@@ -30,9 +29,6 @@ if (semver.satisfies(React.version, '15.0.0 - 15.4.x')) {
   Adapter = require('enzyme-adapter-react-16');
 }
 Enzyme.configure({ adapter: new Adapter() });
-
-// Include Glamor generated CSS instead of just classNames
-expect.addSnapshotSerializer(serializer);
 
 // Enable Glamor simulate helper
 simulations(true);

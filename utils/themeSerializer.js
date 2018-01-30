@@ -16,21 +16,19 @@
 
 /* @flow */
 module.exports = {
-  coverageDirectory: 'reports/coverage',
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-    '/packages/mineral-ui-icons',
-    '/website/'
-  ],
-  moduleNameMapper: {
-    '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js',
-    '.(md|svg)$': '<rootDir>/utils/emptyString.js'
+  test: (val: Object) => {
+    return (
+      val &&
+      val.type === 'ThemeProvider' &&
+      val.props &&
+      val.props.theme &&
+      !val.processed
+    );
   },
-  setupFiles: ['raf/polyfill'],
-  setupTestFrameworkScriptFile: '<rootDir>/utils/setupTestFrameworkScript.js',
-  snapshotSerializers: [
-    'enzyme-to-json/serializer',
-    'jest-glamor-react',
-    '<rootDir>/utils/themeSerializer'
-  ]
+
+  print: (val: Object, serialize: Function) => {
+    val.props.theme = '<THEME-HIDDEN-FROM-SNAPSHOT>';
+    val.processed = true;
+    return serialize(val);
+  }
 };
