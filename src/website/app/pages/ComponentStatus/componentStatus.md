@@ -34,7 +34,7 @@ Statuses:
 | [TextInput](/components/text-input)           | [available]      |
 | [ThemeProvider](/components/theme-provider)   | [available]      |
 | Tooltip                                       | [in development] |
-| Select                                        | [planned]        |
+| Select                                        | [in development] |
 | Toggle                                        | [planned]        |
 | DataTable                                     |                  |
 | DatePicker                                    |                  |
