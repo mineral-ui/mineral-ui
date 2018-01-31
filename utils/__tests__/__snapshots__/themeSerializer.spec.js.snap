@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`themeSerializer Excludes verbose theme value from snapshot 1`] = `
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<ThemeProvider>
+  <ThemeProvider
+    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
+  >
+    <Button
+      element="button"
+      size="large"
+      type="button"
+      variant="regular"
+    >
+      <glamorous(button)
+        element="button"
+        size="large"
+        text="Submit"
+        type="button"
+        variant="regular"
+      >
+        <button
+          className="glamor-2"
+          type="button"
+        >
+          <glamorous(span)>
+            <span
+              className="glamor-1"
+            >
+              <glamorous(span)
+                size="large"
+              >
+                <span
+                  className="glamor-0"
+                >
+                  Submit
+                </span>
+              </glamorous(span)>
+            </span>
+          </glamorous(span)>
+        </button>
+      </glamorous(button)>
+    </Button>
+  </ThemeProvider>
+</ThemeProvider>
+`;
