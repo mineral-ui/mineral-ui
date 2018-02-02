@@ -16,7 +16,7 @@
 
 /* @flow */
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import flatten from 'lodash/flatten';
 import createKeyMap from './utils/createKeyMap';
 import ComponentDocExample from './ComponentDocExample';
@@ -133,6 +133,11 @@ export default function Router({ demoRoutes }: Props) {
           const componentId = route.match.params.componentId || 'button';
           // $FlowFixMe
           const selectedDemo = flatDemoRoutes[componentId];
+
+          if (selectedDemo.redirect) {
+            return <Redirect to={`/components/${selectedDemo.redirect}`} />;
+          }
+
           const pageMeta = {
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`,
             description: selectedDemo.description,
