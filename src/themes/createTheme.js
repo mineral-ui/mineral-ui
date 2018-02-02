@@ -112,6 +112,10 @@ export default function createTheme(
 
     borderRadius_1: pxToEm(3),
 
+    breakpoint_narrow: 512,
+    breakpoint_medium: 768,
+    breakpoint_wide: 1024,
+
     color_black: color.black,
 
     color_caption: color.gray_80,
