@@ -33,6 +33,7 @@ type Props = {
   chromeless?: boolean,
   componentName?: string,
   description?: React$Node,
+  hideFromProd?: boolean,
   hideSource?: boolean,
   id: string,
   scope?: Object,
@@ -115,12 +116,13 @@ export default function ComponentDocExample({
   chromeless,
   componentName,
   description,
+  hideFromProd,
   hideSource,
   id,
   scope,
   source,
   standalone,
-  title,
+  title: propsTitle,
   ...restProps
 }: Props) {
   const rootProps = { ...restProps };
@@ -138,6 +140,11 @@ export default function ComponentDocExample({
         chromeless={standalone && chromeless}
       />
     ) : null;
+
+  const title =
+    hideFromProd && typeof propsTitle === 'string'
+      ? `${propsTitle} [Dev-only]`
+      : propsTitle;
 
   return standalone && chromeless ? (
     liveCode
