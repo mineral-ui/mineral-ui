@@ -15,19 +15,26 @@
  */
 
 /* @flow */
+const matcher = new RegExp('(ThemeProvider|LiveProvider|^Themed\\(.*)');
+
 module.exports = {
   test: (val: Object) => {
     return (
       val &&
-      val.type === 'ThemeProvider' &&
-      val.props &&
-      val.props.theme &&
+      val.type &&
+      typeof val.type === 'string' &&
+      matcher.test(val.type) &&
       !val.processed
     );
   },
 
   print: (val: Object, serialize: Function) => {
-    val.props.theme = '<THEME-HIDDEN-FROM-SNAPSHOT>';
+    if (val.type.startsWith('Themed(')) {
+      delete val.props.theme;
+    } else {
+      delete val.props;
+    }
+
     val.processed = true;
     return serialize(val);
   }

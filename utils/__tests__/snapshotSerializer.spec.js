@@ -20,8 +20,8 @@ import { mount } from 'enzyme';
 import ThemeProvider from '../../src/themes/ThemeProvider';
 import Button from '../../src/Button';
 
-describe('themeSerializer', () => {
-  it('Excludes verbose theme value from snapshot', () => {
+describe('snapshotSerializer', () => {
+  it('Excludes verbose ThemeProvider props from snapshot', () => {
     const tree = mount(
       <ThemeProvider>
         <Button>Submit</Button>
