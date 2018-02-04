@@ -31,6 +31,6 @@ module.exports = {
   snapshotSerializers: [
     'enzyme-to-json/serializer',
     'jest-glamor-react',
-    '<rootDir>/utils/themeSerializer'
+    '<rootDir>/utils/snapshotSerializer'
   ]
 };
