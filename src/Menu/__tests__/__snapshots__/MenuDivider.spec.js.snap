@@ -164,54 +164,8 @@ exports[`MenuDivider demo examples separating-items 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Menu>
-        <MenuItem>
-          Menu item
-        </MenuItem>
-        <MenuDivider />
-        <MenuItem>
-          Menu item
-        </MenuItem>
-        <MenuItem>
-          Menu item
-        </MenuItem>
-        <MenuGroup title=\\"Menu Group Title\\">
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-        </MenuGroup>
-        <MenuDivider />
-        <MenuGroup>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-        </MenuGroup>
-      </Menu>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "Menu": [Function],
-          "MenuDivider": [Function],
-          "MenuGroup": [Function],
-          "MenuItem": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

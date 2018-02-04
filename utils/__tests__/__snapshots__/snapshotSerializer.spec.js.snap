@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`themeSerializer Excludes verbose theme value from snapshot 1`] = `
+exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1`] = `
 .glamor-2,
 [data-glamor-2] {
   box-sizing: border-box;
@@ -134,9 +134,7 @@ exports[`themeSerializer Excludes verbose theme value from snapshot 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
+  <ThemeProvider>
     <Button
       element="button"
       size="large"

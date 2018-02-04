@@ -255,41 +255,8 @@ exports[`Menu demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Menu>
-        <MenuItem onClick={event => { console.log(event) }}>
-          Menu item with onClick
-        </MenuItem>
-        <MenuItem secondaryText=\\"Secondary text\\">
-          Menu item
-        </MenuItem>
-        <MenuGroup title=\\"Group Title\\">
-          <MenuItem iconStart={<IconCloud />}>Icon at start</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>Icon at end</MenuItem>
-          <MenuDivider />
-          <MenuItem variant=\\"danger\\">Danger variant</MenuItem>
-          <MenuItem disabled onClick={event => { console.log(event) }}>Disabled menu item</MenuItem>
-        </MenuGroup>
-      </Menu>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "Menu": [Function],
-          "MenuDivider": [Function],
-          "MenuGroup": [Function],
-          "MenuItem": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1038,75 +1005,8 @@ exports[`Menu demo examples data 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    () => {
-      const data = [
-        {
-          items: [
-            {
-              text: 'Menu item with onClick',
-              onClick: event => { console.log(event); }
-            },
-            {
-              text: 'Menu item',
-              secondaryText: 'Secondary text'
-            }
-          ]
-        },
-        {
-          title: 'Group Title',
-          items: [
-            {
-              text: 'Icon at start',
-              iconStart: <IconCloud />
-            },
-            {
-              text: 'Icon at end',
-              iconEnd: <IconCloud />
-            },
-            {
-              divider: true
-            },
-            {
-              text: 'Danger variant',
-              variant: 'danger' // 'danger' | 'success' | 'warning'
-            },
-            {
-              text: 'Disabled menu item',
-              disabled: true,
-              onClick: () => { console.log('onClick is not triggered for disabled items'); }
-            },
-            {
-              text: 'Custom render',
-              avatar: '/images/125x125.png',
-              href: '/components/menu-item#custom-render', // <-- Details here
-              render: CustomRender
-            }
-          ]
-        }
-      ];
-
-      return (
-        <DemoLayout>
-          <Menu data={data} />
-        </DemoLayout>
-      );
-    }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "CustomRender": [Function],
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "Menu": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

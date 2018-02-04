@@ -294,32 +294,8 @@ exports[`FormField demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      {/* Use the \\"input\\" prop for a streamlined approach. */}
-      <FormField input={TextInput} label=\\"Name\\" />
-
-      {/* Or use \\"children\\", if you prefer. */}
-      <FormField label=\\"Description\\">
-        <TextArea />
-      </FormField>
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextArea": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -682,25 +658,8 @@ exports[`FormField demo examples caption 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <FormField
-      input={TextInput}
-      label=\\"Name\\"
-      caption=\\"This is help text\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1022,33 +981,8 @@ exports[`FormField demo examples hide-label 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField
-        input={TextInput}
-        label=\\"Address\\"
-        placeholder=\\"1234 Main St\\" />
-      <FormField
-        input={TextInput}
-        label=\\"Address Line 2\\"
-        placeholder=\\"Apt 101\\"
-        hideLabel />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1421,33 +1355,8 @@ exports[`FormField demo examples required 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField
-        input={TextInput}
-        label=\\"Name\\"
-        required />
-      <FormField
-        input={TextInput}
-        label=\\"Nombre\\"
-        required
-        requiredText=\\"Necesario\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1841,33 +1750,8 @@ exports[`FormField demo examples rtl 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <div dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <FormField
-          input={TextInput}
-          iconStart={<IconBackspace />}
-          label=\\"نموذج\\"
-          defaultValue=\\"مرحبا بالعالم\\"
-          required
-          requiredText=\\"مطلوب\\" />
-      </ThemeProvider>
-    </div>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "FormField": [Function],
-          "IconBackspace": [Function],
-          "TextInput": [Function],
-          "ThemeProvider": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1886,12 +1770,8 @@ exports[`FormField demo examples rtl 1`] = `
             <div
               dir="rtl"
             >
-              <ThemeProvider
-                theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-              >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
+              <ThemeProvider>
+                <ThemeProvider>
                   <FormField
                     defaultValue="مرحبا بالعالم"
                     iconStart={<IconBackspace />}
@@ -2209,25 +2089,8 @@ exports[`FormField demo examples secondaryText 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <FormField
-      input={TextInput}
-      label=\\"Name\\"
-      secondaryText=\\"Optional\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2649,91 +2512,8 @@ exports[`FormField demo examples validation 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    class MyForm extends Component {
-      constructor(props) {
-        super(props);
-
-        this.state = {
-          caption: undefined,
-          valid: false,
-          validated: false,
-          value: '',
-          variant: undefined
-        };
-
-        this.handleTextInputChange = this.handleTextInputChange.bind(this);
-        this.validate = this.validate.bind(this);
-      }
-
-      handleTextInputChange(event) {
-        this.setState({
-          value: event.target.value
-        });
-      }
-
-      validate(event) {
-        if (this.state.value) {
-          this.setState({
-            caption: 'Success, the value is valid.',
-            valid: true,
-            validated: true,
-            variant: 'success'
-          });
-        } else {
-          this.setState({
-            caption: 'Oops, the value is invalid.',
-            valid: false,
-            validated: true,
-            variant: 'danger'
-          });
-        }
-
-        this.input.focus();
-      }
-
-      render() {
-        const { caption, valid, validated, variant, value } = this.state;
-        const formFieldProps = {
-          input: TextInput,
-          inputRef: ref => { this.input = ref; },
-          invalid: validated ? !valid : undefined,
-          label: 'Example',
-          onChange: this.handleTextInputChange,
-          caption,
-          required: true,
-          value,
-          variant
-        };
-
-        return (
-          <DemoLayout>
-            <FormField {...formFieldProps} />
-            <Button onClick={this.validate}>Validate</Button>
-          </DemoLayout>
-        );
-      }
-    }
-
-    return <MyForm />;
-  }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Component": [Function],
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -3373,39 +3153,8 @@ exports[`FormField demo examples variants 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField
-        input={TextInput}
-        label=\\"Success\\"
-        caption=\\"This is help text\\"
-        variant=\\"success\\" />
-      <FormField
-        input={TextInput}
-        label=\\"Warning\\"
-        caption=\\"This is help text\\"
-        variant=\\"warning\\" />
-      <FormField
-        input={TextInput}
-        label=\\"Danger\\"
-        caption=\\"This is help text\\"
-        variant=\\"danger\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

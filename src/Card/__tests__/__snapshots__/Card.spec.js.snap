@@ -280,48 +280,8 @@ exports[`Card demo examples actions-menu 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    () => {
-      const menuData = [
-        {
-          items: [
-            { onClick: () => { console.log('Clicked 1') }, text: 'MenuItem 1' },
-            { onClick: () => { console.log('Clicked 2') }, text: 'MenuItem 2' },
-            { divider: true },
-            { onClick: () => { console.log('Clicked 3') }, text: 'MenuItem 3' }
-          ]
-        }
-      ];
-
-      return (
-        <DemoLayout>
-          <Card>
-            <CardTitle actions={<CardTitleMenu data={menuData} />}>Card Title</CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-        </DemoLayout>
-      );
-    }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "CardTitleMenu": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -953,52 +913,8 @@ exports[`Card demo examples avatar 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    () => {
-      const avatar = (
-        <Avatar>
-          <img src=\\"/images/avatar.svg\\" alt=\\"Alt text\\" />
-        </Avatar>
-      );
-
-      return (
-        <DemoLayout>
-          <Card>
-            <CardTitle avatar={avatar}>Card Title</CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-
-          <Card>
-            <CardTitle
-              avatar={avatar}
-              subtitle=\\"Card Subtitle\\">
-              Card Title
-            </CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-        </DemoLayout>
-      );
-    }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1409,35 +1325,8 @@ exports[`Card demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient placeholder\\" />
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardImage": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2066,53 +1955,8 @@ exports[`Card demo examples basic 2`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Button>Button 1</Button>
-          <Button iconStart={<IconCloud />}>Button 2</Button>
-        </CardActions>
-      </Card>
-
-      <Card>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Button minimal >Button 1</Button>
-          <Button iconStart={<IconCloud />} primary>Button 2</Button>
-        </CardActions>
-      </Card>
-
-      <Card>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Button iconStart={<IconCloud title=\\"Button label 1\\" />} minimal />
-          <Button iconStart={<IconCloud title=\\"Button label 2\\" />} minimal />
-        </CardActions>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardActions": [Function],
-          "CardBlock": [Function],
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2815,37 +2659,8 @@ exports[`Card demo examples basic 3`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardDivider />
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardDivider />
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardDivider": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -3224,44 +3039,8 @@ exports[`Card demo examples basic 4`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardStatus variant=\\"danger\\">Unavailable</CardStatus>
-      </Card>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardStatus variant=\\"success\\">Available</CardStatus>
-      </Card>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardStatus variant=\\"warning\\">Warning</CardStatus>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardStatus": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -3876,39 +3655,8 @@ exports[`Card demo examples children 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        {customContent}
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "customContent": <glamorous(div)>
-            <Button
-              element="button"
-              fullWidth={true}
-              size="large"
-              type="button"
-              variant="regular"
-            >
-              Button
-            </Button>
-          </glamorous(div)>,
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4312,40 +4060,8 @@ exports[`Card demo examples children 2`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{customContent}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "customContent": <glamorous(div)>
-            <Button
-              element="button"
-              fullWidth={true}
-              size="large"
-              type="button"
-              variant="regular"
-            >
-              Button
-            </Button>
-          </glamorous(div)>,
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4626,32 +4342,8 @@ exports[`Card demo examples clickable 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card onClick={event => console.log(event)}>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4924,32 +4616,8 @@ exports[`Card demo examples consistent-spacing 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -5495,64 +5163,8 @@ exports[`Card demo examples order 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Button minimal>Button 1</Button>
-          <Button primary>Button 2</Button>
-        </CardActions>
-        <CardFooter title=\\"Card Footer\\" />
-      </Card>
-
-      <Card>
-        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Button minimal>Button 1</Button>
-          <Button primary>Button 2</Button>
-        </CardActions>
-        <CardFooter title=\\"Card Footer\\" />
-      </Card>
-
-      <Card>
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardImage src=\\"/images/500x500.png\\" alt=\\"gradient image\\" />
-        <CardActions>
-          <Button minimal>Button 1</Button>
-          <Button primary>Button 2</Button>
-        </CardActions>
-        <CardFooter title=\\"Card Footer\\" />
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardActions": [Function],
-          "CardBlock": [Function],
-          "CardFooter": [Function],
-          "CardImage": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6442,39 +6054,8 @@ exports[`Card demo examples rtl 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <Card>
-          <CardBlock>{loremIpsum}</CardBlock>
-          <CardActions>
-            <Button>زر واحد</Button>
-            <Button iconStart={<IconCloud />}>زر اثنين</Button>
-          </CardActions>
-        </Card>
-      </ThemeProvider>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Card": [Function],
-          "CardActions": [Function],
-          "CardBlock": [Function],
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "ThemeProvider": [Function],
-          "loremIpsum": "
-  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6503,12 +6084,8 @@ exports[`Card demo examples rtl 1`] = `
                 className="glamor-13"
                 dir="rtl"
               >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
-                  <ThemeProvider
-                    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                  >
+                <ThemeProvider>
+                  <ThemeProvider>
                     <Card>
                       <Card
                         onKeyDown={undefined}
@@ -6802,34 +6379,8 @@ exports[`Card demo examples rtl 2`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <Card>
-          <CardBlock>{loremIpsum}</CardBlock>
-          <CardStatus variant=\\"danger\\">غير متوفره</CardStatus>
-        </Card>
-      </ThemeProvider>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardStatus": [Function],
-          "DemoLayout": [Function],
-          "ThemeProvider": [Function],
-          "loremIpsum": "
-  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6856,12 +6407,8 @@ exports[`Card demo examples rtl 2`] = `
                 className="glamor-5"
                 dir="rtl"
               >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
-                  <ThemeProvider
-                    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                  >
+                <ThemeProvider>
+                  <ThemeProvider>
                     <Card>
                       <Card
                         onKeyDown={undefined}
@@ -7174,47 +6721,8 @@ exports[`Card demo examples rtl 3`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <div dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <DemoLayout>
-          <Card>
-            <CardTitle
-              avatar={<Avatar><img src=\\"/images/avatar.svg\\" alt=\\"نص بديل\\" /></Avatar>}
-              subtitle=\\"الترجمة هنا\\">
-              عنوان البطاقة
-            </CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-          <Card>
-            <CardTitle secondaryText=\\"نص ثانوي\\">
-              عنوان البطاقة
-            </CardTitle>
-            <CardBlock>{loremIpsum}</CardBlock>
-          </Card>
-        </DemoLayout>
-      </ThemeProvider>
-    </div>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "ThemeProvider": [Function],
-          "loremIpsum": "
-  خدمة الجزر أبجد هوز. حتى على مستوى أسعار العقارات. الغلوتين. لا عقوبة. حتى الرعاية. ولكن الآن تنورة المؤلف والتغذية.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -7238,12 +6746,8 @@ exports[`Card demo examples rtl 3`] = `
             <div
               dir="rtl"
             >
-              <ThemeProvider
-                theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-              >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
+              <ThemeProvider>
+                <ThemeProvider>
                   <glamorous(div)>
                     <div
                       className="glamor-18"
@@ -7599,37 +7103,8 @@ exports[`Card demo examples secondary-text 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle secondaryText=\\"Secondary info\\">Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle secondaryText=\\"Longer secondary info will be truncated\\">Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -7953,32 +7428,8 @@ exports[`Card demo examples titles 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle subtitle=\\"Card Subtitle\\">Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -8280,42 +7731,8 @@ exports[`Card demo examples variants 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardTitle variant=\\"danger\\">Danger Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle variant=\\"success\\">Success Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-
-      <Card>
-        <CardTitle variant=\\"warning\\" subtitle=\\"Card Subtitle\\">Warning Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -8809,34 +8226,8 @@ exports[`Card demo examples with-image 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardImage src=\\"/images/500x281.png\\" alt=\\"gradient image\\" />
-        <CardTitle>Card Title</CardTitle>
-        <CardBlock>{loremIpsum}</CardBlock>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardBlock": [Function],
-          "CardImage": [Function],
-          "CardTitle": [Function],
-          "DemoLayout": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -9103,36 +8494,8 @@ exports[`Card demo examples with-links 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Card>
-        <CardBlock>{loremIpsum}</CardBlock>
-        <CardActions>
-          <Link href=\\"https://example.com\\">Link 1</Link>
-          <Link href=\\"https://example.com\\">Link 2</Link>
-        </CardActions>
-      </Card>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Card": [Function],
-          "CardActions": [Function],
-          "CardBlock": [Function],
-          "DemoLayout": [Function],
-          "Link": [Function],
-          "loremIpsum": "
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
-  pretium massa. Aliquam erat volutpat. Nulla facilisi.
-",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
