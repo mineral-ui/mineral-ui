@@ -23,8 +23,8 @@ import examples from '../../website/app/demos/ThemeProvider/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 // Allow full theme values in snapshots for ThemeProvider
-import themeSerializer from '../../../utils/themeSerializer';
-themeSerializer.print = (val: Object, serialize: Function) => {
+import snapshotSerializer from '../../../utils/snapshotSerializer';
+snapshotSerializer.print = (val: Object, serialize: Function) => {
   val.processed = true;
   return serialize(val);
 };

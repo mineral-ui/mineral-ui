@@ -215,29 +215,8 @@ exports[`TextArea demo examples autosize 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextArea spellCheck={false} defaultValue={loremIpsum} autoSize />
-      <TextArea rows={1} defaultValue=\\"Hello World\\" autoSize />
-      <TextArea rows={1} size=\\"small\\" defaultValue=\\"Hello World\\" autoSize />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-          "loremIpsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis. Fusce hendrerit, nunc vitae tempor tempor, urna dolor fringilla eros, non condimentum urna dui id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tempor metus eget ipsum volutpat, venenatis imperdiet lacus commodo. Morbi quis dictum urna, vel facilisis magna. Phasellus nec vehicula lectus. Nulla laoreet nisi nec varius rhoncus. Integer at risus blandit, commodo urna sed, viverra dui.
-
-Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pellentesque, vestibulum odio sit amet, vehicula ante. Curabitur et turpis velit. Pellentesque in tincidunt nulla. Aenean malesuada ornare condimentum. Vivamus maximus efficitur sem, non consectetur arcu pretium in. Integer sodales quis quam nec iaculis. Donec accumsan tortor et magna tristique euismod. Nullam pellentesque, ligula nec condimentum rhoncus, arcu dui mollis lectus, ac porttitor purus nisi sed lacus.",
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -527,50 +506,8 @@ exports[`TextArea demo examples controlled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    class MyForm extends Component {
-      constructor(props) {
-        super(props);
-
-        this.state = {
-          value: 'Hello World'
-        };
-
-        this.handleChange = this.handleChange.bind(this);
-      }
-
-      handleChange(event) {
-        this.setState({
-          value: event.target.value
-        });
-      }
-
-      render() {
-        return (
-          <TextArea
-            value={this.state.value}
-            onChange={this.handleChange} />
-        );
-      }
-    }
-
-    return <MyForm />;
-  }
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Component": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -754,21 +691,8 @@ exports[`TextArea demo examples disabled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea defaultValue=\\"Hello World\\" disabled />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1012,31 +936,8 @@ exports[`TextArea demo examples form-field 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField
-        input={TextArea}
-        label=\\"Comments\\"
-        caption=\\"Please keep comments brief and descriptive\\"
-        rows={2}
-        autoSize
-        required />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1426,46 +1327,8 @@ exports[`TextArea demo examples input-ref 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    class MyForm extends Component {
-      constructor() {
-        super();
-
-        this.focus = this.focus.bind(this);
-      }
-
-      focus() {
-        this.input.focus();
-      }
-
-      render() {
-        return (
-          <DemoLayout>
-            <TextArea inputRef={ref => { this.input = ref; }} />
-            <Button onClick={ this.focus }>Focus the input</Button>
-          </DemoLayout>
-        )
-      }
-    }
-
-    return <MyForm />;
-  }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Component": [Function],
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1697,21 +1560,8 @@ exports[`TextArea demo examples invalid 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea invalid />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -3380,49 +3230,8 @@ exports[`TextArea demo examples next-to-other-inputs 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <div>
-        <TextArea size=\\"small\\" defaultValue=\\"Small\\" rows={1} />
-        <TextArea size=\\"small\\" defaultValue=\\"Small\\" rows={1} autoSize />
-        <TextInput size=\\"small\\" defaultValue=\\"Small\\" />
-        <Button size=\\"small\\">Small</Button>
-      </div>
-      <div>
-        <TextArea size=\\"medium\\" defaultValue=\\"Medium\\" rows={1} />
-        <TextArea size=\\"medium\\" defaultValue=\\"Medium\\" rows={1} autoSize />
-        <TextInput size=\\"medium\\" defaultValue=\\"Medium\\" />
-        <Button size=\\"medium\\">Medium</Button>
-      </div>
-      <div>
-        <TextArea defaultValue=\\"Large\\" rows={1} />
-        <TextArea defaultValue=\\"Large\\" rows={1} autoSize />
-        <TextInput defaultValue=\\"Large\\" />
-        <Button>Large</Button>
-      </div>
-      <div>
-        <TextArea size=\\"jumbo\\" defaultValue=\\"Jumbo\\" rows={1} />
-        <TextArea size=\\"jumbo\\" defaultValue=\\"Jumbo\\" rows={1} autoSize />
-        <TextInput size=\\"jumbo\\" defaultValue=\\"Jumbo\\" />
-        <Button size=\\"jumbo\\">Jumbo</Button>
-      </div>
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4242,21 +4051,8 @@ exports[`TextArea demo examples placeholder 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea placeholder=\\"Leave a comment\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4439,21 +4235,8 @@ exports[`TextArea demo examples read-only 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea defaultValue=\\"Hello World\\" readOnly />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -4637,21 +4420,8 @@ exports[`TextArea demo examples required 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea required />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -5104,27 +4874,8 @@ exports[`TextArea demo examples rows 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextArea rows={1} size=\\"small\\" defaultValue=\\"Small\\" />
-      <TextArea rows={1} size=\\"medium\\" defaultValue=\\"Medium\\" />
-      <TextArea rows={1} defaultValue=\\"Large\\" />
-      <TextArea rows={1} size=\\"jumbo\\" defaultValue=\\"Jumbo\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -5444,25 +5195,8 @@ exports[`TextArea demo examples rtl 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <div dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <TextArea defaultValue=\\"مرحبا بالعالم\\" />
-      </ThemeProvider>
-    </div>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-          "ThemeProvider": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -5479,12 +5213,8 @@ exports[`TextArea demo examples rtl 1`] = `
             <div
               dir="rtl"
             >
-              <ThemeProvider
-                theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-              >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
+              <ThemeProvider>
+                <ThemeProvider>
                   <TextArea
                     defaultValue="مرحبا بالعالم"
                   >
@@ -5930,27 +5660,8 @@ exports[`TextArea demo examples size 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextArea size=\\"small\\" defaultValue=\\"Small\\" />
-      <TextArea size=\\"medium\\" defaultValue=\\"Medium\\" />
-      <TextArea defaultValue=\\"Large\\" />
-      <TextArea size=\\"jumbo\\" defaultValue=\\"Jumbo\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -7266,27 +6977,8 @@ exports[`TextArea demo examples states 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FieldSet legend=\\"Regular\\" />
-      <FieldSet legend=\\"Success\\" variant=\\"success\\" />
-      <FieldSet legend=\\"Warning\\" variant=\\"warning\\" />
-      <FieldSet legend=\\"Danger\\" variant=\\"danger\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FieldSet": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -9022,21 +8714,8 @@ exports[`TextArea demo examples uncontrolled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextArea defaultValue=\\"Hello World\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -9402,26 +9081,8 @@ exports[`TextArea demo examples variants 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextArea variant=\\"success\\" defaultValue=\\"Success\\" />
-      <TextArea variant=\\"warning\\" defaultValue=\\"Warning\\" />
-      <TextArea variant=\\"danger\\" defaultValue=\\"Danger\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextArea": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

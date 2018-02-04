@@ -157,42 +157,8 @@ exports[`MenuGroup demo examples menu-group 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Menu>
-        <MenuGroup title=\\"Menu Group Title\\">
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-        </MenuGroup>
-        <MenuGroup title=\\"Menu Group Title\\">
-          <MenuItem>
-            Menu item
-          </MenuItem>
-          <MenuItem>
-            Menu item
-          </MenuItem>
-        </MenuGroup>
-      </Menu>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "Menu": [Function],
-          "MenuGroup": [Function],
-          "MenuItem": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

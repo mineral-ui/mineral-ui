@@ -133,50 +133,8 @@ exports[`TextInput demo examples controlled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    class MyForm extends Component {
-      constructor(props) {
-        super(props);
-
-        this.state = {
-          value: 'Hello World'
-        };
-
-        this.handleChange = this.handleChange.bind(this);
-      }
-
-      handleChange(event) {
-        this.setState({
-          value: event.target.value
-        });
-      }
-
-      render() {
-        return (
-          <TextInput
-            value={this.state.value}
-            onChange={this.handleChange} />
-        );
-      }
-    }
-
-    return <MyForm />;
-  }
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Component": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -374,21 +332,8 @@ exports[`TextInput demo examples disabled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput defaultValue=\\"Hello World\\" disabled />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -654,31 +599,8 @@ exports[`TextInput demo examples form-field 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField
-        input={TextInput}
-        label=\\"Last Name\\"
-        caption=\\"Surname, family name\\"
-        iconStart={<IconAccountBox />}
-        required />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "IconAccountBox": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1163,32 +1085,8 @@ exports[`TextInput demo examples icons 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    const icon = <IconCloud />;
-
-    return(
-      <DemoLayout>
-        <TextInput iconStart={icon} />
-        <TextInput iconEnd={icon} />
-        <TextInput iconStart={icon} iconEnd={icon} />
-      </DemoLayout>
-    );
-  }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1741,46 +1639,8 @@ exports[`TextInput demo examples input-ref 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    class MyForm extends Component {
-      constructor() {
-        super();
-
-        this.focus = this.focus.bind(this);
-      }
-
-      focus() {
-        this.input.focus();
-      }
-
-      render() {
-        return (
-          <DemoLayout>
-            <TextInput inputRef={ref => { this.input = ref; }} />
-            <Button onClick={ this.focus }>Focus the input</Button>
-          </DemoLayout>
-        )
-      }
-    }
-
-    return <MyForm />;
-  }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "Component": [Function],
-          "DemoLayout": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2026,21 +1886,8 @@ exports[`TextInput demo examples invalid 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput invalid />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2932,19 +2779,8 @@ exports[`TextInput demo examples kitchen-sink 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="<KitchenSink />"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "KitchenSink": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -3741,12 +3577,8 @@ exports[`TextInput demo examples kitchen-sink 1`] = `
                   <h3>
                     RTL
                   </h3>
-                  <ThemeProvider
-                    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                  >
-                    <ThemeProvider
-                      theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                    >
+                  <ThemeProvider>
+                    <ThemeProvider>
                       <glamorous(div)>
                         <div
                           className="glamor-36"
@@ -5403,40 +5235,8 @@ exports[`TextInput demo examples next-to-button 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <div>
-        <TextInput size=\\"small\\" defaultValue=\\"Small\\" />
-        <Button size=\\"small\\">Small</Button>
-      </div>
-      <div>
-        <TextInput size=\\"medium\\" defaultValue=\\"Medium\\" />
-        <Button size=\\"medium\\">Medium</Button>
-      </div>
-      <div>
-        <TextInput defaultValue=\\"Large\\" />
-        <Button>Large</Button>
-      </div>
-      <div>
-        <TextInput size=\\"jumbo\\" defaultValue=\\"Jumbo\\" />
-        <Button size=\\"jumbo\\">Jumbo</Button>
-      </div>
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Button": [Function],
-          "DemoLayout": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -5921,21 +5721,8 @@ exports[`TextInput demo examples placeholder 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput placeholder=\\"12345-123\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6254,31 +6041,8 @@ exports[`TextInput demo examples prefix-and-suffix 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-  () => {
-    const icon = <IconCloud />;
-
-    return(
-      <DemoLayout>
-        <TextInput type=\\"number\\" prefix=\\"$\\" />
-        <TextInput type=\\"number\\" suffix=\\"cm\\" />
-      </DemoLayout>
-    );
-  }"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6550,21 +6314,8 @@ exports[`TextInput demo examples read-only 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput defaultValue=\\"Hello World\\" readOnly />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -6762,21 +6513,8 @@ exports[`TextInput demo examples required 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput required />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -7212,31 +6950,8 @@ exports[`TextInput demo examples rtl 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <div dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <DemoLayout>
-          <TextInput iconStart={<IconBackspace />} defaultValue=\\"مرحبا بالعالم\\" />
-          <TextInput iconEnd={<IconBackspace />} defaultValue=\\"مرحبا بالعالم\\" />
-          <TextInput variant=\\"success\\" defaultValue=\\"مرحبا بالعالم\\" />
-        </DemoLayout>
-      </ThemeProvider>
-    </div>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "IconBackspace": [Function],
-          "TextInput": [Function],
-          "ThemeProvider": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -7255,12 +6970,8 @@ exports[`TextInput demo examples rtl 1`] = `
             <div
               dir="rtl"
             >
-              <ThemeProvider
-                theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-              >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
+              <ThemeProvider>
+                <ThemeProvider>
                   <glamorous(div)>
                     <div
                       className="glamor-9"
@@ -7905,27 +7616,8 @@ exports[`TextInput demo examples size 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextInput size=\\"small\\" defaultValue=\\"Small\\" />
-      <TextInput size=\\"medium\\" defaultValue=\\"Medium\\" />
-      <TextInput defaultValue=\\"Large\\" />
-      <TextInput size=\\"jumbo\\" defaultValue=\\"Jumbo\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -9379,27 +9071,8 @@ exports[`TextInput demo examples states 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FieldSet legend=\\"Regular\\" />
-      <FieldSet legend=\\"Success\\" variant=\\"success\\" />
-      <FieldSet legend=\\"Warning\\" variant=\\"warning\\" />
-      <FieldSet legend=\\"Danger\\" variant=\\"danger\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FieldSet": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -11787,21 +11460,8 @@ exports[`TextInput demo examples uncontrolled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <TextInput defaultValue=\\"Hello World\\" />
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -12273,26 +11933,8 @@ exports[`TextInput demo examples variants 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <TextInput variant=\\"success\\" defaultValue=\\"Success\\" />
-      <TextInput variant=\\"warning\\" defaultValue=\\"Warning\\" />
-      <TextInput variant=\\"danger\\" defaultValue=\\"Danger\\" />
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

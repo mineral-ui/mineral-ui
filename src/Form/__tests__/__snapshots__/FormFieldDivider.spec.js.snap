@@ -182,37 +182,8 @@ exports[`FormFieldDivider demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <FormField label=\\"Old Password\\">
-        <TextInput type=\\"password\\" />
-      </FormField>
-
-      <FormFieldDivider />
-
-      <FormField label=\\"New Password\\">
-        <TextInput type=\\"password\\" />
-      </FormField>
-      <FormField label=\\"Repeat New Password\\">
-        <TextInput type=\\"password\\" />
-      </FormField>
-    </DemoLayout>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "FormFieldDivider": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

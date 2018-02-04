@@ -188,30 +188,8 @@ exports[`Avatar demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Avatar>
-        <img src=\\"/images/avatar.svg\\" alt=\\"Allison\\" />
-      </Avatar>
-      <Avatar>Allison</Avatar>
-      <Avatar>
-        <IconCloud title=\\"cloud\\" />
-      </Avatar>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1247,38 +1225,8 @@ exports[`Avatar demo examples colors 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Avatar                     >Theme  </Avatar>
-      <Avatar background=\\"red\\"    >Red    </Avatar>
-      <Avatar background=\\"magenta\\">Magenta</Avatar>
-      <Avatar background=\\"purple\\" >Purple </Avatar>
-      <Avatar background=\\"indigo\\" >Indigo </Avatar>
-      <Avatar background=\\"blue\\"   >Blue   </Avatar>
-      <Avatar background=\\"sky\\"    >Sky    </Avatar>
-      <Avatar background=\\"teal\\"   >Teal   </Avatar>
-      <Avatar background=\\"green\\"  >Green  </Avatar>
-      <Avatar background=\\"lime\\"   >Lime   </Avatar>
-      <Avatar background=\\"yellow\\" >Yellow </Avatar>
-      <Avatar background=\\"orange\\" >Orange </Avatar>
-      <Avatar background=\\"gray\\"   >Gray   </Avatar>
-      <Avatar background=\\"slate\\"  >Slate  </Avatar>
-      <Avatar background=\\"dusk\\"   >Dusk   </Avatar>
-      <Avatar background=\\"rgba(139,231,172,0.8)\\" color=\\"hsl(322,71%,27%)\\">Custom</Avatar>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1719,20 +1667,8 @@ exports[`Avatar demo examples custom-text-abbr 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <Avatar abbr=\\"B\\">Dr. Bernard Johnson</Avatar>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1961,25 +1897,8 @@ exports[`Avatar demo examples shapes 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Avatar>Circle</Avatar>
-      <Avatar shape=\\"rounded\\">Rounded</Avatar>
-      <Avatar shape=\\"square\\">Square</Avatar>
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "DemoLayout": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -2780,58 +2699,8 @@ exports[`Avatar demo examples sizes 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <DemoLayout>
-      <Avatar size=\\"small\\">
-        <img src=\\"/images/avatar.svg\\" alt=\\"Sam\\" />
-      </Avatar>
-      <Avatar size=\\"small\\">Sam</Avatar>
-      <Avatar size=\\"small\\">
-        <IconCloud title=\\"cloud\\" />
-      </Avatar>
-      <br />
-
-      <Avatar size=\\"medium\\">
-        <img src=\\"/images/avatar.svg\\" alt=\\"Melissa\\" />
-      </Avatar>
-      <Avatar size=\\"medium\\">Melissa</Avatar>
-      <Avatar size=\\"medium\\">
-        <IconCloud title=\\"cloud\\" />
-      </Avatar>
-      <br />
-
-      <Avatar>
-        <img src=\\"/images/avatar.svg\\" alt=\\"Larry\\" />
-      </Avatar>
-      <Avatar>Larry</Avatar>
-      <Avatar>
-        <IconCloud title=\\"cloud\\" />
-      </Avatar>
-      <br />
-
-      <Avatar size=\\"jumbo\\">
-        <img src=\\"/images/avatar.svg\\" alt=\\"Jennifer\\" />
-      </Avatar>
-      <Avatar size=\\"jumbo\\">Jennifer</Avatar>
-      <Avatar size=\\"jumbo\\">
-        <IconCloud title=\\"cloud\\" />
-      </Avatar>
-
-    </DemoLayout>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "Avatar": [Function],
-          "DemoLayout": [Function],
-          "IconCloud": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={

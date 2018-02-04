@@ -207,33 +207,8 @@ exports[`FormFieldset demo examples basic 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <FormFieldset legend=\\"Login\\">
-      <DemoLayout>
-        <FormField label=\\"Email\\">
-          <TextInput type=\\"email\\" />
-        </FormField>
-        <FormField label=\\"Password\\">
-          <TextInput type=\\"password\\" />
-        </FormField>
-      </DemoLayout>
-    </FormFieldset>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "FormFieldset": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -630,33 +605,8 @@ exports[`FormFieldset demo examples disabled 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <FormFieldset legend=\\"Login\\" disabled>
-      <DemoLayout>
-        <FormField label=\\"Email\\">
-          <TextInput type=\\"email\\" disabled />
-        </FormField>
-        <FormField label=\\"Password\\">
-          <TextInput type=\\"password\\" disabled />
-        </FormField>
-      </DemoLayout>
-    </FormFieldset>
-  "
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "DemoLayout": [Function],
-          "FormField": [Function],
-          "FormFieldset": [Function],
-          "TextInput": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1076,32 +1026,8 @@ exports[`FormFieldset demo examples rtl 1`] = `
 }
 
 <ThemeProvider>
-  <ThemeProvider
-    theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-  >
-    <LiveProvider
-      code="
-    <div dir=\\"rtl\\">
-      <ThemeProvider theme={{ direction: 'rtl' }}>
-        <FormFieldset legend=\\"أسطورة\\">
-          <FormField label=\\"مرحبا بالعالم\\">
-            <TextInput iconStart={<IconBackspace />} defaultValue=\\"مرحبا بالعالم\\" />
-          </FormField>
-        </FormFieldset>
-      </ThemeProvider>
-    </div>"
-      mountStylesheet={false}
-      noInline={false}
-      scope={
-        Object {
-          "FormField": [Function],
-          "FormFieldset": [Function],
-          "IconBackspace": [Function],
-          "TextInput": [Function],
-          "ThemeProvider": [Function],
-        }
-      }
-    >
+  <ThemeProvider>
+    <LiveProvider>
       <div
         className="react-live"
         scope={
@@ -1121,12 +1047,8 @@ exports[`FormFieldset demo examples rtl 1`] = `
             <div
               dir="rtl"
             >
-              <ThemeProvider
-                theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-              >
-                <ThemeProvider
-                  theme="<THEME-HIDDEN-FROM-SNAPSHOT>"
-                >
+              <ThemeProvider>
+                <ThemeProvider>
                   <FormFieldset
                     legend="أسطورة"
                   >
