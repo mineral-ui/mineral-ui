@@ -36,7 +36,8 @@ export default createStyledComponent(ThemedSection, ({ theme }) => ({
     margin: 0,
     maxWidth: theme.maxContentWidth,
     paddingBottom: 0,
-    paddingTop: 0
+    paddingTop: 0,
+    position: 'static'
   },
 
   // Targets DocSectionTitle inside any DocSection immediately following
