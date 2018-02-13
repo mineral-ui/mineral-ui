@@ -22,14 +22,9 @@ import data from '../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   height: '400px',
-  position: 'relative',
-
-  '> div': {
-    left: '50%',
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(-50%, -50%)'
-  }
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
 });
 
 export default {

@@ -17,11 +17,11 @@
 /* @flow */
 import Button from '../../../../../Button';
 import { createStyledComponent } from '../../../../../styles';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../Popover';
+import Tooltip from '../../../../../Tooltip';
+import IconDelete from 'mineral-ui-icons/IconDelete';
 
 const DemoLayout = createStyledComponent('div', {
-  height: '350px',
+  height: '200px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center'
@@ -30,16 +30,17 @@ const DemoLayout = createStyledComponent('div', {
 export default {
   id: 'placement',
   title: 'Placement',
-  description: `The \`placement\` prop determines the initial placement of the Popover content relative to the trigger.
-The Popover will still react to viewport edges and scrolling.`,
-  scope: { Button, DemoContent, DemoLayout, Popover },
+  description: `The \`placement\` prop determines the initial placement of the
+Tooltip content relative to the trigger. The Tooltip will still react to
+viewport edges and scrolling.`,
+  scope: { Button, DemoLayout, IconDelete, Tooltip },
   source: `
     <DemoLayout>
-      <Popover
-        content={<DemoContent />}
-        placement="bottom"
-        isOpen>
-        <Button>Open Popover</Button>
-      </Popover>
+      <Tooltip
+        content="Light years star stuff harvesting star light citizens of distant epochs."
+        isOpen
+        placement="bottom">
+        <Button variant="danger" iconStart={<IconDelete title="delete" />}/>
+      </Tooltip>
     </DemoLayout>`
 };

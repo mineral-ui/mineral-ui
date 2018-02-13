@@ -17,26 +17,26 @@ Statuses:
   [deprecated]
 -->
 
-| Component                                     | Status           |
-|-----------------------------------------------|------------------|
-| [Avatar](/components/avatar)                  | [available]      |
-| [Button](/components/button)                  | [available]      |
-| [Card](/components/card)                      | [available]      |
-| [Checkbox](/components/checkbox) ~ new        | [available]      |
-| [Dropdown](/components/dropdown)              | [available]      |
-| [Form](/components/form-field)                | [available]      |
-| [Icon](/components/icon)                      | [available]      |
-| [Link](/components/link)                      | [available]      |
-| [Menu](/components/menu)                      | [available]      |
-| [Popover](/components/popover)                | [available]      |
-| [Radio](/components/radio) ~ new              | [available]      |
-| [TextArea](/components/text-area)             | [available]      |
-| [TextInput](/components/text-input)           | [available]      |
-| [ThemeProvider](/components/theme-provider)   | [available]      |
-| Tooltip                                       | [in development] |
-| Select                                        | [in development] |
-| Toggle                                        | [planned]        |
-| DataTable                                     |                  |
-| DatePicker                                    |                  |
-| Grid                                          |                  |
-| Navigation                                    |                  |
+| Component                                   | Status           |
+|---------------------------------------------|------------------|
+| [Avatar](/components/avatar)                | [available]      |
+| [Button](/components/button)                | [available]      |
+| [Card](/components/card)                    | [available]      |
+| [Checkbox](/components/checkbox)            | [available]      |
+| [Dropdown](/components/dropdown)            | [available]      |
+| [Form](/components/form-field)              | [available]      |
+| [Icon](/components/icon)                    | [available]      |
+| [Link](/components/link)                    | [available]      |
+| [Menu](/components/menu)                    | [available]      |
+| [Popover](/components/popover)              | [available]      |
+| [Radio](/components/radio)                  | [available]      |
+| [TextArea](/components/text-area)           | [available]      |
+| [TextInput](/components/text-input)         | [available]      |
+| [ThemeProvider](/components/theme-provider) | [available]      |
+| [Tooltip](/components/tooltip) ~ new        | [available]      |
+| Select                                      | [in development] |
+| Toggle                                      | [planned]        |
+| DataTable                                   |                  |
+| DatePicker                                  |                  |
+| Grid                                        |                  |
+| Navigation                                  |                  |
