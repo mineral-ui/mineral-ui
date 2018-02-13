@@ -20,7 +20,7 @@ const { LiveProvider, LivePreview } = require('react-live');
 const { ThemeProvider } = require('../src/themes');
 
 // Exclude components that cannot be rendered in JSDOM.
-const excludedComponents = ['Popover', 'Dropdown'];
+const excludedComponents = ['Popover', 'Dropdown', 'Tooltip'];
 
 function getComponentNameFromPath(path) {
   // ./<component>/examples/index.js
