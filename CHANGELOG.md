@@ -1,3 +1,14 @@
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/mineral-ui/mineral-ui/compare/v0.18.0...v0.19.0) (2018-02-13)
+
+
+### Features
+
+* **popover:** Add props, enhance theme, improve DOM structure ([4146902](https://github.com/mineral-ui/mineral-ui/commit/4146902))
+* **tooltip:** Add new component ([927e9e6](https://github.com/mineral-ui/mineral-ui/commit/927e9e6))
+
+
+
 <a name="0.18.0"></a>
 # [0.18.0](https://github.com/mineral-ui/mineral-ui/compare/v0.17.0...v0.18.0) (2018-01-26)
 
