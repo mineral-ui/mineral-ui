@@ -1,0 +1,3604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip demo examples basic 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "IconPerson": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <Tooltip
+              content="Edit your account settings"
+            >
+              <ThemedComponent
+                content="Edit your account settings"
+                focusTriggerOnClose={false}
+                getContentProps={[Function]}
+                getTriggerProps={[Function]}
+                isOpen={false}
+                onClose={[Function]}
+                onOpen={[Function]}
+              >
+                <Themed(Popover)
+                  content="Edit your account settings"
+                  focusTriggerOnClose={false}
+                  getContentProps={[Function]}
+                  getTriggerProps={[Function]}
+                  isOpen={false}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                >
+                  <ThemeProvider>
+                    <ThemeProvider>
+                      <Popover
+                        content="Edit your account settings"
+                        focusTriggerOnClose={false}
+                        getContentProps={[Function]}
+                        getTriggerProps={[Function]}
+                        hasArrow={true}
+                        isOpen={false}
+                        onClose={[Function]}
+                        onOpen={[Function]}
+                        placement="bottom"
+                        wrapContent={true}
+                      >
+                        <Popover
+                          focusTriggerOnClose={false}
+                          isOpen={false}
+                          onClose={[Function]}
+                          onOpen={[Function]}
+                          tag={false}
+                        >
+                          <Manager
+                            className="glamor-3"
+                            focusTriggerOnClose={false}
+                            isOpen={false}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            tag={false}
+                          >
+                            <PopoverTrigger
+                              aria-expanded={undefined}
+                              contentId="popover-15-popoverContent"
+                              disabled={undefined}
+                              isOpen={false}
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              tabIndex={0}
+                            >
+                              <PopoverTrigger
+                                component="span"
+                              >
+                                <Target
+                                  className="glamor-3"
+                                  component="span"
+                                >
+                                  <span
+                                    className="glamor-3"
+                                  >
+                                    <Button
+                                      aria-describedby="popover-15-popoverContent"
+                                      aria-disabled={undefined}
+                                      aria-expanded={undefined}
+                                      aria-owns="popover-15-popoverContent"
+                                      disabled={undefined}
+                                      element="button"
+                                      iconStart={
+                                        <IconPerson
+                                          title="account settings"
+                                        />
+                                      }
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                      role="button"
+                                      size="large"
+                                      tabIndex={0}
+                                      type="button"
+                                      variant="regular"
+                                    >
+                                      <glamorous(button)
+                                        aria-describedby="popover-15-popoverContent"
+                                        aria-disabled={undefined}
+                                        aria-expanded={undefined}
+                                        aria-owns="popover-15-popoverContent"
+                                        disabled={undefined}
+                                        element="button"
+                                        onBlur={[Function]}
+                                        onClick={[Function]}
+                                        onFocus={[Function]}
+                                        onMouseEnter={[Function]}
+                                        onMouseLeave={[Function]}
+                                        role="button"
+                                        size="large"
+                                        tabIndex={0}
+                                        text={undefined}
+                                        type="button"
+                                        variant="regular"
+                                      >
+                                        <button
+                                          aria-describedby="popover-15-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={undefined}
+                                          aria-owns="popover-15-popoverContent"
+                                          className="glamor-2"
+                                          disabled={undefined}
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                          role="button"
+                                          tabIndex={0}
+                                          type="button"
+                                        >
+                                          <glamorous(span)>
+                                            <span
+                                              className="glamor-1"
+                                            >
+                                              <IconPerson
+                                                key="iconStart"
+                                                size="1.5em"
+                                                title="account settings"
+                                              >
+                                                <Icon
+                                                  rtl={false}
+                                                  size="1.5em"
+                                                  title="account settings"
+                                                >
+                                                  <glamorous(svg)
+                                                    aria-hidden={null}
+                                                    aria-labelledby="icon-title-icon-16"
+                                                    role="img"
+                                                    rtl={false}
+                                                    size="1.5em"
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <svg
+                                                      aria-hidden={null}
+                                                      aria-labelledby="icon-title-icon-16"
+                                                      className="glamor-0"
+                                                      role="img"
+                                                      viewBox="0 0 24 24"
+                                                    >
+                                                      <title
+                                                        id="icon-title-icon-16"
+                                                      >
+                                                        account settings
+                                                      </title>
+                                                      <g>
+                                                        <path
+                                                          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                                                        />
+                                                      </g>
+                                                    </svg>
+                                                  </glamorous(svg)>
+                                                </Icon>
+                                              </IconPerson>
+                                            </span>
+                                          </glamorous(span)>
+                                        </button>
+                                      </glamorous(button)>
+                                    </Button>
+                                  </span>
+                                </Target>
+                              </PopoverTrigger>
+                            </PopoverTrigger>
+                          </Manager>
+                        </Popover>
+                      </Popover>
+                    </ThemeProvider>
+                  </ThemeProvider>
+                </Themed(Popover)>
+              </ThemedComponent>
+            </Tooltip>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples controlled 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #434a54;
+  border: 1px solid #434a54;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0.5em 0;
+  max-width: 18em;
+  z-index: 100;
+}
+
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.glamor-6:last-child,
+[data-glamor-6]:last-child,
+.glamor-6[data-simulate-lastchild],
+[data-glamor-6][data-simulate-lastchild] {
+  margin-bottom: 0px;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  color: #434a54;
+  display: none;
+  font-size: 8px;
+  margin: 8px;
+  position: absolute;
+  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg) scaleX(2);
+  -webkit-transform: rotate(0deg) scaleX(2);
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.glamor-15,
+[data-glamor-15] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "Component": [Function],
+            "DemoLayout": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <App>
+              <glamorous(div)>
+                <div
+                  className="glamor-15"
+                >
+                  <Tooltip
+                    content="This tooltip is controlled"
+                    isOpen={true}
+                    placement="top"
+                  >
+                    <ThemedComponent
+                      content="This tooltip is controlled"
+                      focusTriggerOnClose={false}
+                      getContentProps={[Function]}
+                      getTriggerProps={[Function]}
+                      isOpen={true}
+                      onClose={[Function]}
+                      onOpen={[Function]}
+                      placement="top"
+                    >
+                      <Themed(Popover)
+                        content="This tooltip is controlled"
+                        focusTriggerOnClose={false}
+                        getContentProps={[Function]}
+                        getTriggerProps={[Function]}
+                        isOpen={true}
+                        onClose={[Function]}
+                        onOpen={[Function]}
+                        placement="top"
+                      >
+                        <ThemeProvider>
+                          <ThemeProvider>
+                            <Popover
+                              content="This tooltip is controlled"
+                              focusTriggerOnClose={false}
+                              getContentProps={[Function]}
+                              getTriggerProps={[Function]}
+                              hasArrow={true}
+                              isOpen={true}
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              placement="top"
+                              wrapContent={true}
+                            >
+                              <Popover
+                                focusTriggerOnClose={false}
+                                isOpen={true}
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                tag={false}
+                              >
+                                <Manager
+                                  className="glamor-3"
+                                  focusTriggerOnClose={false}
+                                  isOpen={true}
+                                  onClose={[Function]}
+                                  onOpen={[Function]}
+                                  tag={false}
+                                >
+                                  <PopoverTrigger
+                                    aria-expanded={undefined}
+                                    contentId="popover-24-popoverContent"
+                                    disabled={undefined}
+                                    isOpen={true}
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
+                                    tabIndex={0}
+                                  >
+                                    <PopoverTrigger
+                                      component="span"
+                                    >
+                                      <Target
+                                        className="glamor-3"
+                                        component="span"
+                                      >
+                                        <span
+                                          className="glamor-3"
+                                        >
+                                          <Button
+                                            aria-describedby="popover-24-popoverContent"
+                                            aria-disabled={undefined}
+                                            aria-expanded={undefined}
+                                            aria-owns="popover-24-popoverContent"
+                                            disabled={undefined}
+                                            element="button"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                            size="large"
+                                            tabIndex={0}
+                                            type="button"
+                                            variant="regular"
+                                          >
+                                            <glamorous(button)
+                                              aria-describedby="popover-24-popoverContent"
+                                              aria-disabled={undefined}
+                                              aria-expanded={undefined}
+                                              aria-owns="popover-24-popoverContent"
+                                              disabled={undefined}
+                                              element="button"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              role="button"
+                                              size="large"
+                                              tabIndex={0}
+                                              text="Button"
+                                              type="button"
+                                              variant="regular"
+                                            >
+                                              <button
+                                                aria-describedby="popover-24-popoverContent"
+                                                aria-disabled={undefined}
+                                                aria-expanded={undefined}
+                                                aria-owns="popover-24-popoverContent"
+                                                className="glamor-2"
+                                                disabled={undefined}
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onFocus={[Function]}
+                                                onMouseEnter={[Function]}
+                                                onMouseLeave={[Function]}
+                                                role="button"
+                                                tabIndex={0}
+                                                type="button"
+                                              >
+                                                <glamorous(span)>
+                                                  <span
+                                                    className="glamor-1"
+                                                  >
+                                                    <glamorous(span)
+                                                      size="large"
+                                                    >
+                                                      <span
+                                                        className="glamor-0"
+                                                      >
+                                                        Button
+                                                      </span>
+                                                    </glamorous(span)>
+                                                  </span>
+                                                </glamorous(span)>
+                                              </button>
+                                            </glamorous(button)>
+                                          </Button>
+                                        </span>
+                                      </Target>
+                                    </PopoverTrigger>
+                                  </PopoverTrigger>
+                                  <PopoverContent
+                                    aria-live="polite"
+                                    hasArrow={true}
+                                    id="popover-24-popoverContent"
+                                    modifiers={undefined}
+                                    placement="top"
+                                    role="tooltip"
+                                    subtitle={undefined}
+                                    tabIndex={undefined}
+                                    title={undefined}
+                                  >
+                                    <PopoverContent
+                                      aria-live="polite"
+                                      id="popover-24-popoverContent"
+                                      modifiers={undefined}
+                                      placement="top"
+                                      role="tooltip"
+                                      tabIndex={undefined}
+                                    >
+                                      <Popper
+                                        aria-live="polite"
+                                        className="glamor-9"
+                                        component="div"
+                                        eventsEnabled={true}
+                                        id="popover-24-popoverContent"
+                                        modifiers={Object {}}
+                                        placement="top"
+                                        role="tooltip"
+                                        tabIndex={undefined}
+                                      >
+                                        <div
+                                          aria-live="polite"
+                                          className="glamor-9"
+                                          data-placement={undefined}
+                                          data-x-out-of-boundaries={undefined}
+                                          id="popover-24-popoverContent"
+                                          role="tooltip"
+                                          style={
+                                            Object {
+                                              "opacity": 0,
+                                              "pointerEvents": "none",
+                                              "position": "absolute",
+                                            }
+                                          }
+                                          tabIndex={undefined}
+                                        >
+                                          <ThemedComponent>
+                                            <Themed(CardBlock)>
+                                              <ThemeProvider>
+                                                <ThemeProvider>
+                                                  <CardBlock>
+                                                    <CardBlock>
+                                                      <div
+                                                        className="glamor-6"
+                                                      >
+                                                        <glamorous(div)>
+                                                          <div
+                                                            className="glamor-5"
+                                                          >
+                                                            This tooltip is controlled
+                                                          </div>
+                                                        </glamorous(div)>
+                                                      </div>
+                                                    </CardBlock>
+                                                  </CardBlock>
+                                                </ThemeProvider>
+                                              </ThemeProvider>
+                                            </Themed(CardBlock)>
+                                          </ThemedComponent>
+                                          <PopoverArrow
+                                            placement={undefined}
+                                            size="8px"
+                                          >
+                                            <PopoverArrow
+                                              aria-hidden={true}
+                                              placement={undefined}
+                                              size="8px"
+                                            >
+                                              <Arrow
+                                                aria-hidden={true}
+                                                className="glamor-7"
+                                              >
+                                                <span
+                                                  aria-hidden={true}
+                                                  className="glamor-7"
+                                                  style={Object {}}
+                                                >
+                                                  ▼
+                                                </span>
+                                              </Arrow>
+                                            </PopoverArrow>
+                                          </PopoverArrow>
+                                        </div>
+                                      </Popper>
+                                    </PopoverContent>
+                                  </PopoverContent>
+                                  <EventListener
+                                    listeners={
+                                      Array [
+                                        Object {
+                                          "event": "click",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                        Object {
+                                          "event": "keydown",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                      ]
+                                    }
+                                  />
+                                </Manager>
+                              </Popover>
+                            </Popover>
+                          </ThemeProvider>
+                        </ThemeProvider>
+                      </Themed(Popover)>
+                    </ThemedComponent>
+                  </Tooltip>
+                  <Button
+                    element="button"
+                    onClick={[Function]}
+                    size="large"
+                    type="button"
+                    variant="regular"
+                  >
+                    <glamorous(button)
+                      element="button"
+                      onClick={[Function]}
+                      size="large"
+                      text="Close Tooltip"
+                      type="button"
+                      variant="regular"
+                    >
+                      <button
+                        className="glamor-2"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <glamorous(span)>
+                          <span
+                            className="glamor-1"
+                          >
+                            <glamorous(span)
+                              size="large"
+                            >
+                              <span
+                                className="glamor-0"
+                              >
+                                Close Tooltip
+                              </span>
+                            </glamorous(span)>
+                          </span>
+                        </glamorous(span)>
+                      </button>
+                    </glamorous(button)>
+                  </Button>
+                </div>
+              </glamorous(div)>
+            </App>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples disabled 1`] = `
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "IconPerson": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <Tooltip
+              content="Edit your account settings"
+              disabled={true}
+            >
+              <Button
+                element="button"
+                iconStart={
+                  <IconPerson
+                    title="account settings"
+                  />
+                }
+                size="large"
+                type="button"
+                variant="regular"
+              >
+                <glamorous(button)
+                  element="button"
+                  size="large"
+                  text={undefined}
+                  type="button"
+                  variant="regular"
+                >
+                  <button
+                    className="glamor-2"
+                    type="button"
+                  >
+                    <glamorous(span)>
+                      <span
+                        className="glamor-1"
+                      >
+                        <IconPerson
+                          key="iconStart"
+                          size="1.5em"
+                          title="account settings"
+                        >
+                          <Icon
+                            rtl={false}
+                            size="1.5em"
+                            title="account settings"
+                          >
+                            <glamorous(svg)
+                              aria-hidden={null}
+                              aria-labelledby="icon-title-icon-23"
+                              role="img"
+                              rtl={false}
+                              size="1.5em"
+                              viewBox="0 0 24 24"
+                            >
+                              <svg
+                                aria-hidden={null}
+                                aria-labelledby="icon-title-icon-23"
+                                className="glamor-0"
+                                role="img"
+                                viewBox="0 0 24 24"
+                              >
+                                <title
+                                  id="icon-title-icon-23"
+                                >
+                                  account settings
+                                </title>
+                                <g>
+                                  <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                                  />
+                                </g>
+                              </svg>
+                            </glamorous(svg)>
+                          </Icon>
+                        </IconPerson>
+                      </span>
+                    </glamorous(span)>
+                  </button>
+                </glamorous(button)>
+              </Button>
+            </Tooltip>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples overflow 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #434a54;
+  border: 1px solid #434a54;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0.5em 0;
+  max-width: 18em;
+  z-index: 100;
+}
+
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.glamor-6:last-child,
+[data-glamor-6]:last-child,
+.glamor-6[data-simulate-lastchild],
+[data-glamor-6][data-simulate-lastchild] {
+  margin-bottom: 0px;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  color: #434a54;
+  display: none;
+  font-size: 8px;
+  margin: 8px;
+  position: absolute;
+  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg) scaleX(2);
+  -webkit-transform: rotate(0deg) scaleX(2);
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  background-color: aliceblue;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "OverflowContainer": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
+              <div
+                className="glamor-12"
+              >
+                <Tooltip
+                  content="Light years star stuff"
+                  isOpen={true}
+                  placement="top"
+                >
+                  <ThemedComponent
+                    content="Light years star stuff"
+                    focusTriggerOnClose={false}
+                    getContentProps={[Function]}
+                    getTriggerProps={[Function]}
+                    isOpen={true}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    placement="top"
+                  >
+                    <Themed(Popover)
+                      content="Light years star stuff"
+                      focusTriggerOnClose={false}
+                      getContentProps={[Function]}
+                      getTriggerProps={[Function]}
+                      isOpen={true}
+                      onClose={[Function]}
+                      onOpen={[Function]}
+                      placement="top"
+                    >
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <Popover
+                            content="Light years star stuff"
+                            focusTriggerOnClose={false}
+                            getContentProps={[Function]}
+                            getTriggerProps={[Function]}
+                            hasArrow={true}
+                            isOpen={true}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            placement="top"
+                            wrapContent={true}
+                          >
+                            <Popover
+                              focusTriggerOnClose={false}
+                              isOpen={true}
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              tag={false}
+                            >
+                              <Manager
+                                className="glamor-3"
+                                focusTriggerOnClose={false}
+                                isOpen={true}
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                tag={false}
+                              >
+                                <PopoverTrigger
+                                  aria-expanded={undefined}
+                                  contentId="popover-20-popoverContent"
+                                  disabled={undefined}
+                                  isOpen={true}
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  tabIndex={0}
+                                >
+                                  <PopoverTrigger
+                                    component="span"
+                                  >
+                                    <Target
+                                      className="glamor-3"
+                                      component="span"
+                                    >
+                                      <span
+                                        className="glamor-3"
+                                      >
+                                        <Button
+                                          aria-describedby="popover-20-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={undefined}
+                                          aria-owns="popover-20-popoverContent"
+                                          disabled={undefined}
+                                          element="button"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                          role="button"
+                                          size="large"
+                                          tabIndex={0}
+                                          type="button"
+                                          variant="regular"
+                                        >
+                                          <glamorous(button)
+                                            aria-describedby="popover-20-popoverContent"
+                                            aria-disabled={undefined}
+                                            aria-expanded={undefined}
+                                            aria-owns="popover-20-popoverContent"
+                                            disabled={undefined}
+                                            element="button"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                            size="large"
+                                            tabIndex={0}
+                                            text="Button"
+                                            type="button"
+                                            variant="regular"
+                                          >
+                                            <button
+                                              aria-describedby="popover-20-popoverContent"
+                                              aria-disabled={undefined}
+                                              aria-expanded={undefined}
+                                              aria-owns="popover-20-popoverContent"
+                                              className="glamor-2"
+                                              disabled={undefined}
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              role="button"
+                                              tabIndex={0}
+                                              type="button"
+                                            >
+                                              <glamorous(span)>
+                                                <span
+                                                  className="glamor-1"
+                                                >
+                                                  <glamorous(span)
+                                                    size="large"
+                                                  >
+                                                    <span
+                                                      className="glamor-0"
+                                                    >
+                                                      Button
+                                                    </span>
+                                                  </glamorous(span)>
+                                                </span>
+                                              </glamorous(span)>
+                                            </button>
+                                          </glamorous(button)>
+                                        </Button>
+                                      </span>
+                                    </Target>
+                                  </PopoverTrigger>
+                                </PopoverTrigger>
+                                <PopoverContent
+                                  aria-live="polite"
+                                  hasArrow={true}
+                                  id="popover-20-popoverContent"
+                                  modifiers={undefined}
+                                  placement="top"
+                                  role="tooltip"
+                                  subtitle={undefined}
+                                  tabIndex={undefined}
+                                  title={undefined}
+                                >
+                                  <PopoverContent
+                                    aria-live="polite"
+                                    id="popover-20-popoverContent"
+                                    modifiers={undefined}
+                                    placement="top"
+                                    role="tooltip"
+                                    tabIndex={undefined}
+                                  >
+                                    <Popper
+                                      aria-live="polite"
+                                      className="glamor-9"
+                                      component="div"
+                                      eventsEnabled={true}
+                                      id="popover-20-popoverContent"
+                                      modifiers={Object {}}
+                                      placement="top"
+                                      role="tooltip"
+                                      tabIndex={undefined}
+                                    >
+                                      <div
+                                        aria-live="polite"
+                                        className="glamor-9"
+                                        data-placement={undefined}
+                                        data-x-out-of-boundaries={undefined}
+                                        id="popover-20-popoverContent"
+                                        role="tooltip"
+                                        style={
+                                          Object {
+                                            "opacity": 0,
+                                            "pointerEvents": "none",
+                                            "position": "absolute",
+                                          }
+                                        }
+                                        tabIndex={undefined}
+                                      >
+                                        <ThemedComponent>
+                                          <Themed(CardBlock)>
+                                            <ThemeProvider>
+                                              <ThemeProvider>
+                                                <CardBlock>
+                                                  <CardBlock>
+                                                    <div
+                                                      className="glamor-6"
+                                                    >
+                                                      <glamorous(div)>
+                                                        <div
+                                                          className="glamor-5"
+                                                        >
+                                                          Light years star stuff
+                                                        </div>
+                                                      </glamorous(div)>
+                                                    </div>
+                                                  </CardBlock>
+                                                </CardBlock>
+                                              </ThemeProvider>
+                                            </ThemeProvider>
+                                          </Themed(CardBlock)>
+                                        </ThemedComponent>
+                                        <PopoverArrow
+                                          placement={undefined}
+                                          size="8px"
+                                        >
+                                          <PopoverArrow
+                                            aria-hidden={true}
+                                            placement={undefined}
+                                            size="8px"
+                                          >
+                                            <Arrow
+                                              aria-hidden={true}
+                                              className="glamor-7"
+                                            >
+                                              <span
+                                                aria-hidden={true}
+                                                className="glamor-7"
+                                                style={Object {}}
+                                              >
+                                                ▼
+                                              </span>
+                                            </Arrow>
+                                          </PopoverArrow>
+                                        </PopoverArrow>
+                                      </div>
+                                    </Popper>
+                                  </PopoverContent>
+                                </PopoverContent>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "click",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                      Object {
+                                        "event": "keydown",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Manager>
+                            </Popover>
+                          </Popover>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(Popover)>
+                  </ThemedComponent>
+                </Tooltip>
+              </div>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples placement 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #434a54;
+  border: 1px solid #434a54;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0.5em 0;
+  max-width: 18em;
+  z-index: 100;
+}
+
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.glamor-6:last-child,
+[data-glamor-6]:last-child,
+.glamor-6[data-simulate-lastchild],
+[data-glamor-6][data-simulate-lastchild] {
+  margin-bottom: 0px;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  color: #434a54;
+  display: none;
+  font-size: 8px;
+  margin: 8px;
+  position: absolute;
+  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg) scaleX(2);
+  -webkit-transform: rotate(0deg) scaleX(2);
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  height: 200px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #db2929;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0.4375em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #c71818;
+  color: #db2929;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #db2929;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #db2929;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "DemoLayout": [Function],
+            "IconDelete": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <glamorous(div)>
+              <div
+                className="glamor-12"
+              >
+                <Tooltip
+                  content="Light years star stuff harvesting star light citizens of distant epochs."
+                  isOpen={true}
+                  placement="bottom"
+                >
+                  <ThemedComponent
+                    content="Light years star stuff harvesting star light citizens of distant epochs."
+                    focusTriggerOnClose={false}
+                    getContentProps={[Function]}
+                    getTriggerProps={[Function]}
+                    isOpen={true}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    placement="bottom"
+                  >
+                    <Themed(Popover)
+                      content="Light years star stuff harvesting star light citizens of distant epochs."
+                      focusTriggerOnClose={false}
+                      getContentProps={[Function]}
+                      getTriggerProps={[Function]}
+                      isOpen={true}
+                      onClose={[Function]}
+                      onOpen={[Function]}
+                      placement="bottom"
+                    >
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <Popover
+                            content="Light years star stuff harvesting star light citizens of distant epochs."
+                            focusTriggerOnClose={false}
+                            getContentProps={[Function]}
+                            getTriggerProps={[Function]}
+                            hasArrow={true}
+                            isOpen={true}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            placement="bottom"
+                            wrapContent={true}
+                          >
+                            <Popover
+                              focusTriggerOnClose={false}
+                              isOpen={true}
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              tag={false}
+                            >
+                              <Manager
+                                className="glamor-3"
+                                focusTriggerOnClose={false}
+                                isOpen={true}
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                tag={false}
+                              >
+                                <PopoverTrigger
+                                  aria-expanded={undefined}
+                                  contentId="popover-18-popoverContent"
+                                  disabled={undefined}
+                                  isOpen={true}
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  tabIndex={0}
+                                >
+                                  <PopoverTrigger
+                                    component="span"
+                                  >
+                                    <Target
+                                      className="glamor-3"
+                                      component="span"
+                                    >
+                                      <span
+                                        className="glamor-3"
+                                      >
+                                        <Button
+                                          aria-describedby="popover-18-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={undefined}
+                                          aria-owns="popover-18-popoverContent"
+                                          disabled={undefined}
+                                          element="button"
+                                          iconStart={
+                                            <IconDelete
+                                              title="delete"
+                                            />
+                                          }
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                          role="button"
+                                          size="large"
+                                          tabIndex={0}
+                                          type="button"
+                                          variant="danger"
+                                        >
+                                          <glamorous(button)
+                                            aria-describedby="popover-18-popoverContent"
+                                            aria-disabled={undefined}
+                                            aria-expanded={undefined}
+                                            aria-owns="popover-18-popoverContent"
+                                            disabled={undefined}
+                                            element="button"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                            size="large"
+                                            tabIndex={0}
+                                            text={undefined}
+                                            type="button"
+                                            variant="danger"
+                                          >
+                                            <button
+                                              aria-describedby="popover-18-popoverContent"
+                                              aria-disabled={undefined}
+                                              aria-expanded={undefined}
+                                              aria-owns="popover-18-popoverContent"
+                                              className="glamor-2"
+                                              disabled={undefined}
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              role="button"
+                                              tabIndex={0}
+                                              type="button"
+                                            >
+                                              <glamorous(span)>
+                                                <span
+                                                  className="glamor-1"
+                                                >
+                                                  <IconDelete
+                                                    key="iconStart"
+                                                    size="1.5em"
+                                                    title="delete"
+                                                  >
+                                                    <Icon
+                                                      rtl={false}
+                                                      size="1.5em"
+                                                      title="delete"
+                                                    >
+                                                      <glamorous(svg)
+                                                        aria-hidden={null}
+                                                        aria-labelledby="icon-title-icon-19"
+                                                        role="img"
+                                                        rtl={false}
+                                                        size="1.5em"
+                                                        viewBox="0 0 24 24"
+                                                      >
+                                                        <svg
+                                                          aria-hidden={null}
+                                                          aria-labelledby="icon-title-icon-19"
+                                                          className="glamor-0"
+                                                          role="img"
+                                                          viewBox="0 0 24 24"
+                                                        >
+                                                          <title
+                                                            id="icon-title-icon-19"
+                                                          >
+                                                            delete
+                                                          </title>
+                                                          <g>
+                                                            <path
+                                                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                                                            />
+                                                          </g>
+                                                        </svg>
+                                                      </glamorous(svg)>
+                                                    </Icon>
+                                                  </IconDelete>
+                                                </span>
+                                              </glamorous(span)>
+                                            </button>
+                                          </glamorous(button)>
+                                        </Button>
+                                      </span>
+                                    </Target>
+                                  </PopoverTrigger>
+                                </PopoverTrigger>
+                                <PopoverContent
+                                  aria-live="polite"
+                                  hasArrow={true}
+                                  id="popover-18-popoverContent"
+                                  modifiers={undefined}
+                                  placement="bottom"
+                                  role="tooltip"
+                                  subtitle={undefined}
+                                  tabIndex={undefined}
+                                  title={undefined}
+                                >
+                                  <PopoverContent
+                                    aria-live="polite"
+                                    id="popover-18-popoverContent"
+                                    modifiers={undefined}
+                                    placement="bottom"
+                                    role="tooltip"
+                                    tabIndex={undefined}
+                                  >
+                                    <Popper
+                                      aria-live="polite"
+                                      className="glamor-9"
+                                      component="div"
+                                      eventsEnabled={true}
+                                      id="popover-18-popoverContent"
+                                      modifiers={Object {}}
+                                      placement="bottom"
+                                      role="tooltip"
+                                      tabIndex={undefined}
+                                    >
+                                      <div
+                                        aria-live="polite"
+                                        className="glamor-9"
+                                        data-placement={undefined}
+                                        data-x-out-of-boundaries={undefined}
+                                        id="popover-18-popoverContent"
+                                        role="tooltip"
+                                        style={
+                                          Object {
+                                            "opacity": 0,
+                                            "pointerEvents": "none",
+                                            "position": "absolute",
+                                          }
+                                        }
+                                        tabIndex={undefined}
+                                      >
+                                        <ThemedComponent>
+                                          <Themed(CardBlock)>
+                                            <ThemeProvider>
+                                              <ThemeProvider>
+                                                <CardBlock>
+                                                  <CardBlock>
+                                                    <div
+                                                      className="glamor-6"
+                                                    >
+                                                      <glamorous(div)>
+                                                        <div
+                                                          className="glamor-5"
+                                                        >
+                                                          Light years star stuff harvesting star light citizens of distant epochs.
+                                                        </div>
+                                                      </glamorous(div)>
+                                                    </div>
+                                                  </CardBlock>
+                                                </CardBlock>
+                                              </ThemeProvider>
+                                            </ThemeProvider>
+                                          </Themed(CardBlock)>
+                                        </ThemedComponent>
+                                        <PopoverArrow
+                                          placement={undefined}
+                                          size="8px"
+                                        >
+                                          <PopoverArrow
+                                            aria-hidden={true}
+                                            placement={undefined}
+                                            size="8px"
+                                          >
+                                            <Arrow
+                                              aria-hidden={true}
+                                              className="glamor-7"
+                                            >
+                                              <span
+                                                aria-hidden={true}
+                                                className="glamor-7"
+                                                style={Object {}}
+                                              >
+                                                ▼
+                                              </span>
+                                            </Arrow>
+                                          </PopoverArrow>
+                                        </PopoverArrow>
+                                      </div>
+                                    </Popper>
+                                  </PopoverContent>
+                                </PopoverContent>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "click",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                      Object {
+                                        "event": "keydown",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Manager>
+                            </Popover>
+                          </Popover>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(Popover)>
+                  </ThemedComponent>
+                </Tooltip>
+              </div>
+            </glamorous(div)>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples portal 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  position: relative;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  background-color: aliceblue;
+  height: 360px;
+  overflow: auto;
+  position: relative;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  padding: 560px 200vw;
+}
+
+.glamor-11,
+[data-glamor-11] {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-10,
+[data-glamor-10] {
+  box-sizing: border-box;
+  color: #2e6fd9;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 1.5em;
+  min-width: 1.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-10 *,
+[data-glamor-10] *,
+.glamor-10 *::before,
+[data-glamor-10] *::before,
+.glamor-10 *::after,
+[data-glamor-10] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-10:focus,
+[data-glamor-10]:focus,
+.glamor-10[data-simulate-focus],
+[data-glamor-10][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #2e6fd9;
+  text-decoration: none;
+}
+
+.glamor-10:hover,
+[data-glamor-10]:hover,
+.glamor-10[data-simulate-hover],
+[data-glamor-10][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #2e6fd9;
+  text-decoration: none;
+}
+
+.glamor-10:active,
+[data-glamor-10]:active,
+.glamor-10[data-simulate-active],
+[data-glamor-10][data-simulate-active] {
+  background-color: #ebeff5;
+  color: #2e6fd9;
+}
+
+.glamor-10::-moz-focus-inner,
+[data-glamor-10]::-moz-focus-inner,
+.glamor-10[data-simulate-mozfocusinner],
+[data-glamor-10][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-10 [role="img"],
+[data-glamor-10] [role="img"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+}
+
+.glamor-10 [role="img"]:first-child,
+[data-glamor-10] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-10 [role="img"]:last-child,
+[data-glamor-10] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-10 [role="img"]:only-child,
+[data-glamor-10] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-8,
+[data-glamor-8] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "ScrollParent": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <ScrollBox
+              autoCenter={true}
+              height={360}
+            >
+              <glamorous(div)>
+                <div
+                  className="glamor-13"
+                >
+                  <glamorous(div)
+                    height={360}
+                  >
+                    <div
+                      className="glamor-7"
+                    >
+                      <glamorous(div)
+                        scrollAreaHeight={360}
+                      >
+                        <div
+                          className="glamor-6"
+                        >
+                          <Tooltip
+                            content="Light years star stuff"
+                            isOpen={true}
+                            modifiers={
+                              Object {
+                                "preventOverflow": Object {
+                                  "escapeWithReference": true,
+                                },
+                              }
+                            }
+                            placement="bottom"
+                            usePortal={true}
+                          >
+                            <ThemedComponent
+                              content="Light years star stuff"
+                              focusTriggerOnClose={false}
+                              getContentProps={[Function]}
+                              getTriggerProps={[Function]}
+                              isOpen={true}
+                              modifiers={
+                                Object {
+                                  "preventOverflow": Object {
+                                    "escapeWithReference": true,
+                                  },
+                                }
+                              }
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              placement="bottom"
+                              usePortal={true}
+                            >
+                              <Themed(Popover)
+                                content="Light years star stuff"
+                                focusTriggerOnClose={false}
+                                getContentProps={[Function]}
+                                getTriggerProps={[Function]}
+                                isOpen={true}
+                                modifiers={
+                                  Object {
+                                    "preventOverflow": Object {
+                                      "escapeWithReference": true,
+                                    },
+                                  }
+                                }
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                placement="bottom"
+                                usePortal={true}
+                              >
+                                <ThemeProvider>
+                                  <ThemeProvider>
+                                    <Popover
+                                      content="Light years star stuff"
+                                      focusTriggerOnClose={false}
+                                      getContentProps={[Function]}
+                                      getTriggerProps={[Function]}
+                                      hasArrow={true}
+                                      isOpen={true}
+                                      modifiers={
+                                        Object {
+                                          "preventOverflow": Object {
+                                            "escapeWithReference": true,
+                                          },
+                                        }
+                                      }
+                                      onClose={[Function]}
+                                      onOpen={[Function]}
+                                      placement="bottom"
+                                      usePortal={true}
+                                      wrapContent={true}
+                                    >
+                                      <Popover
+                                        focusTriggerOnClose={false}
+                                        isOpen={true}
+                                        onClose={[Function]}
+                                        onOpen={[Function]}
+                                        tag={false}
+                                      >
+                                        <Manager
+                                          className="glamor-3"
+                                          focusTriggerOnClose={false}
+                                          isOpen={true}
+                                          onClose={[Function]}
+                                          onOpen={[Function]}
+                                          tag={false}
+                                        >
+                                          <PopoverTrigger
+                                            aria-expanded={undefined}
+                                            contentId="popover-22-popoverContent"
+                                            disabled={undefined}
+                                            isOpen={true}
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            tabIndex={0}
+                                          >
+                                            <PopoverTrigger
+                                              component="span"
+                                            >
+                                              <Target
+                                                className="glamor-3"
+                                                component="span"
+                                              >
+                                                <span
+                                                  className="glamor-3"
+                                                >
+                                                  <Button
+                                                    aria-describedby="popover-22-popoverContent"
+                                                    aria-disabled={undefined}
+                                                    aria-expanded={undefined}
+                                                    aria-owns="popover-22-popoverContent"
+                                                    disabled={undefined}
+                                                    element="button"
+                                                    onBlur={[Function]}
+                                                    onClick={[Function]}
+                                                    onFocus={[Function]}
+                                                    onMouseEnter={[Function]}
+                                                    onMouseLeave={[Function]}
+                                                    role="button"
+                                                    size="large"
+                                                    tabIndex={0}
+                                                    type="button"
+                                                    variant="regular"
+                                                  >
+                                                    <glamorous(button)
+                                                      aria-describedby="popover-22-popoverContent"
+                                                      aria-disabled={undefined}
+                                                      aria-expanded={undefined}
+                                                      aria-owns="popover-22-popoverContent"
+                                                      disabled={undefined}
+                                                      element="button"
+                                                      onBlur={[Function]}
+                                                      onClick={[Function]}
+                                                      onFocus={[Function]}
+                                                      onMouseEnter={[Function]}
+                                                      onMouseLeave={[Function]}
+                                                      role="button"
+                                                      size="large"
+                                                      tabIndex={0}
+                                                      text="Button"
+                                                      type="button"
+                                                      variant="regular"
+                                                    >
+                                                      <button
+                                                        aria-describedby="popover-22-popoverContent"
+                                                        aria-disabled={undefined}
+                                                        aria-expanded={undefined}
+                                                        aria-owns="popover-22-popoverContent"
+                                                        className="glamor-2"
+                                                        disabled={undefined}
+                                                        onBlur={[Function]}
+                                                        onClick={[Function]}
+                                                        onFocus={[Function]}
+                                                        onMouseEnter={[Function]}
+                                                        onMouseLeave={[Function]}
+                                                        role="button"
+                                                        tabIndex={0}
+                                                        type="button"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-1"
+                                                          >
+                                                            <glamorous(span)
+                                                              size="large"
+                                                            >
+                                                              <span
+                                                                className="glamor-0"
+                                                              >
+                                                                Button
+                                                              </span>
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </button>
+                                                    </glamorous(button)>
+                                                  </Button>
+                                                </span>
+                                              </Target>
+                                            </PopoverTrigger>
+                                          </PopoverTrigger>
+                                          <Portal />
+                                          <EventListener
+                                            listeners={
+                                              Array [
+                                                Object {
+                                                  "event": "click",
+                                                  "handler": [Function],
+                                                  "options": true,
+                                                  "target": "document",
+                                                },
+                                                Object {
+                                                  "event": "keydown",
+                                                  "handler": [Function],
+                                                  "options": true,
+                                                  "target": "document",
+                                                },
+                                              ]
+                                            }
+                                          />
+                                        </Manager>
+                                      </Popover>
+                                    </Popover>
+                                  </ThemeProvider>
+                                </ThemeProvider>
+                              </Themed(Popover)>
+                            </ThemedComponent>
+                          </Tooltip>
+                        </div>
+                      </glamorous(div)>
+                    </div>
+                  </glamorous(div)>
+                  <glamorous(Button)
+                    minimal={true}
+                    onClick={[Function]}
+                    size="small"
+                  >
+                    <Button
+                      className="glamor-11"
+                      element="button"
+                      minimal={true}
+                      onClick={[Function]}
+                      size="small"
+                      type="button"
+                      variant="regular"
+                    >
+                      <glamorous(button)
+                        className="glamor-11"
+                        element="button"
+                        minimal={true}
+                        onClick={[Function]}
+                        size="small"
+                        text="Re-center"
+                        type="button"
+                        variant="regular"
+                      >
+                        <button
+                          className="glamor-10"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <glamorous(span)>
+                            <span
+                              className="glamor-1"
+                            >
+                              <glamorous(span)
+                                size="small"
+                              >
+                                <span
+                                  className="glamor-8"
+                                >
+                                  Re-center
+                                </span>
+                              </glamorous(span)>
+                            </span>
+                          </glamorous(span)>
+                        </button>
+                      </glamorous(button)>
+                    </Button>
+                  </glamorous(Button)>
+                </div>
+              </glamorous(div)>
+            </ScrollBox>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples prose 1`] = `
+.glamor-1,
+[data-glamor-1] {
+  display: inline-block;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  border-bottom-style: dashed;
+  border-bottom-color: #333840;
+  border-bottom-width: 1px;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <p>
+              Here's some prose with a 
+              <Tooltip
+                content="Light years star stuff"
+                isOpen={true}
+                usePortal={true}
+              >
+                <ThemedComponent
+                  content="Light years star stuff"
+                  focusTriggerOnClose={false}
+                  getContentProps={[Function]}
+                  getTriggerProps={[Function]}
+                  isOpen={true}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  usePortal={true}
+                >
+                  <Themed(Popover)
+                    content="Light years star stuff"
+                    focusTriggerOnClose={false}
+                    getContentProps={[Function]}
+                    getTriggerProps={[Function]}
+                    isOpen={true}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    usePortal={true}
+                  >
+                    <ThemeProvider>
+                      <ThemeProvider>
+                        <Popover
+                          content="Light years star stuff"
+                          focusTriggerOnClose={false}
+                          getContentProps={[Function]}
+                          getTriggerProps={[Function]}
+                          hasArrow={true}
+                          isOpen={true}
+                          onClose={[Function]}
+                          onOpen={[Function]}
+                          placement="bottom"
+                          usePortal={true}
+                          wrapContent={true}
+                        >
+                          <Popover
+                            focusTriggerOnClose={false}
+                            isOpen={true}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            tag={false}
+                          >
+                            <Manager
+                              className="glamor-1"
+                              focusTriggerOnClose={false}
+                              isOpen={true}
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              tag={false}
+                            >
+                              <PopoverTrigger
+                                aria-expanded={undefined}
+                                contentId="popover-17-popoverContent"
+                                disabled={undefined}
+                                isOpen={true}
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                tabIndex={0}
+                              >
+                                <PopoverTrigger
+                                  component="span"
+                                >
+                                  <Target
+                                    className="glamor-1"
+                                    component="span"
+                                  >
+                                    <span
+                                      className="glamor-1"
+                                    >
+                                      <glamorous(span)
+                                        aria-describedby="popover-17-popoverContent"
+                                        aria-disabled={undefined}
+                                        aria-expanded={undefined}
+                                        aria-owns="popover-17-popoverContent"
+                                        disabled={undefined}
+                                        onBlur={[Function]}
+                                        onClick={[Function]}
+                                        onFocus={[Function]}
+                                        onMouseEnter={[Function]}
+                                        onMouseLeave={[Function]}
+                                        role="button"
+                                        tabIndex={0}
+                                      >
+                                        <span
+                                          aria-describedby="popover-17-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={undefined}
+                                          aria-owns="popover-17-popoverContent"
+                                          className="glamor-0"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseEnter={[Function]}
+                                          onMouseLeave={[Function]}
+                                          role="button"
+                                          tabIndex={0}
+                                        >
+                                          Tooltip
+                                        </span>
+                                      </glamorous(span)>
+                                    </span>
+                                  </Target>
+                                </PopoverTrigger>
+                              </PopoverTrigger>
+                              <Portal />
+                              <EventListener
+                                listeners={
+                                  Array [
+                                    Object {
+                                      "event": "click",
+                                      "handler": [Function],
+                                      "options": true,
+                                      "target": "document",
+                                    },
+                                    Object {
+                                      "event": "keydown",
+                                      "handler": [Function],
+                                      "options": true,
+                                      "target": "document",
+                                    },
+                                  ]
+                                }
+                              />
+                            </Manager>
+                          </Popover>
+                        </Popover>
+                      </ThemeProvider>
+                    </ThemeProvider>
+                  </Themed(Popover)>
+                </ThemedComponent>
+              </Tooltip>
+               in the middle of it.
+            </p>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;
+
+exports[`Tooltip demo examples scrolling-container 1`] = `
+.glamor-3,
+[data-glamor-3] {
+  display: inline-block;
+}
+
+.glamor-9,
+[data-glamor-9] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #434a54;
+  border: 1px solid #434a54;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 0.5em 0;
+  max-width: 18em;
+  z-index: 100;
+}
+
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-6,
+[data-glamor-6] {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.glamor-6:last-child,
+[data-glamor-6]:last-child,
+.glamor-6[data-simulate-lastchild],
+[data-glamor-6][data-simulate-lastchild] {
+  margin-bottom: 0px;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.glamor-7,
+[data-glamor-7] {
+  color: #434a54;
+  display: none;
+  font-size: 8px;
+  margin: 8px;
+  position: absolute;
+  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg) scaleX(2);
+  -webkit-transform: rotate(0deg) scaleX(2);
+}
+
+.glamor-1,
+[data-glamor-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.glamor-2,
+[data-glamor-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.glamor-2 *,
+[data-glamor-2] *,
+.glamor-2 *::before,
+[data-glamor-2] *::before,
+.glamor-2 *::after,
+[data-glamor-2] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-2:focus,
+[data-glamor-2]:focus,
+.glamor-2[data-simulate-focus],
+[data-glamor-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:hover,
+[data-glamor-2]:hover,
+.glamor-2[data-simulate-hover],
+[data-glamor-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.glamor-2:active,
+[data-glamor-2]:active,
+.glamor-2[data-simulate-active],
+[data-glamor-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.glamor-2::-moz-focus-inner,
+[data-glamor-2]::-moz-focus-inner,
+.glamor-2[data-simulate-mozfocusinner],
+[data-glamor-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-2 [role="img"],
+[data-glamor-2] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.glamor-2 [role="img"]:first-child,
+[data-glamor-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-2 [role="img"]:last-child,
+[data-glamor-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-2 [role="img"]:only-child,
+[data-glamor-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-0,
+[data-glamor-0] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.glamor-0:first-child,
+[data-glamor-0]:first-child,
+.glamor-0[data-simulate-firstchild],
+[data-glamor-0][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.glamor-0:last-child,
+[data-glamor-0]:last-child,
+.glamor-0[data-simulate-lastchild],
+[data-glamor-0][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.glamor-19,
+[data-glamor-19] {
+  position: relative;
+}
+
+.glamor-13,
+[data-glamor-13] {
+  background-color: aliceblue;
+  height: 360px;
+  overflow: auto;
+  position: relative;
+}
+
+.glamor-12,
+[data-glamor-12] {
+  padding: 560px 200vw;
+}
+
+.glamor-17,
+[data-glamor-17] {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-16,
+[data-glamor-16] {
+  box-sizing: border-box;
+  color: #2e6fd9;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 1.5em;
+  min-width: 1.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.glamor-16 *,
+[data-glamor-16] *,
+.glamor-16 *::before,
+[data-glamor-16] *::before,
+.glamor-16 *::after,
+[data-glamor-16] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-16:focus,
+[data-glamor-16]:focus,
+.glamor-16[data-simulate-focus],
+[data-glamor-16][data-simulate-focus] {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #2e6fd9;
+  text-decoration: none;
+}
+
+.glamor-16:hover,
+[data-glamor-16]:hover,
+.glamor-16[data-simulate-hover],
+[data-glamor-16][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #2e6fd9;
+  text-decoration: none;
+}
+
+.glamor-16:active,
+[data-glamor-16]:active,
+.glamor-16[data-simulate-active],
+[data-glamor-16][data-simulate-active] {
+  background-color: #ebeff5;
+  color: #2e6fd9;
+}
+
+.glamor-16::-moz-focus-inner,
+[data-glamor-16]::-moz-focus-inner,
+.glamor-16[data-simulate-mozfocusinner],
+[data-glamor-16][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.glamor-16 [role="img"],
+[data-glamor-16] [role="img"] {
+  box-sizing: content-box;
+  fill: currentColor;
+  display: block;
+}
+
+.glamor-16 [role="img"]:first-child,
+[data-glamor-16] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.glamor-16 [role="img"]:last-child,
+[data-glamor-16] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.glamor-16 [role="img"]:only-child,
+[data-glamor-16] [role="img"]:only-child {
+  margin: 0;
+}
+
+.glamor-14,
+[data-glamor-14] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+
+<ThemeProvider>
+  <ThemeProvider>
+    <LiveProvider>
+      <div
+        className="react-live"
+        scope={
+          Object {
+            "Button": [Function],
+            "ScrollParent": [Function],
+            "Tooltip": [Function],
+          }
+        }
+      >
+        <LivePreview>
+          <div
+            className="react-live-preview"
+          >
+            <ScrollBox
+              autoCenter={true}
+              height={360}
+            >
+              <glamorous(div)>
+                <div
+                  className="glamor-19"
+                >
+                  <glamorous(div)
+                    height={360}
+                  >
+                    <div
+                      className="glamor-13"
+                    >
+                      <glamorous(div)
+                        scrollAreaHeight={360}
+                      >
+                        <div
+                          className="glamor-12"
+                        >
+                          <Tooltip
+                            content="Light years star stuff"
+                            isOpen={true}
+                            placement="left"
+                          >
+                            <ThemedComponent
+                              content="Light years star stuff"
+                              focusTriggerOnClose={false}
+                              getContentProps={[Function]}
+                              getTriggerProps={[Function]}
+                              isOpen={true}
+                              onClose={[Function]}
+                              onOpen={[Function]}
+                              placement="left"
+                            >
+                              <Themed(Popover)
+                                content="Light years star stuff"
+                                focusTriggerOnClose={false}
+                                getContentProps={[Function]}
+                                getTriggerProps={[Function]}
+                                isOpen={true}
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                placement="left"
+                              >
+                                <ThemeProvider>
+                                  <ThemeProvider>
+                                    <Popover
+                                      content="Light years star stuff"
+                                      focusTriggerOnClose={false}
+                                      getContentProps={[Function]}
+                                      getTriggerProps={[Function]}
+                                      hasArrow={true}
+                                      isOpen={true}
+                                      onClose={[Function]}
+                                      onOpen={[Function]}
+                                      placement="left"
+                                      wrapContent={true}
+                                    >
+                                      <Popover
+                                        focusTriggerOnClose={false}
+                                        isOpen={true}
+                                        onClose={[Function]}
+                                        onOpen={[Function]}
+                                        tag={false}
+                                      >
+                                        <Manager
+                                          className="glamor-3"
+                                          focusTriggerOnClose={false}
+                                          isOpen={true}
+                                          onClose={[Function]}
+                                          onOpen={[Function]}
+                                          tag={false}
+                                        >
+                                          <PopoverTrigger
+                                            aria-expanded={undefined}
+                                            contentId="popover-21-popoverContent"
+                                            disabled={undefined}
+                                            isOpen={true}
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            tabIndex={0}
+                                          >
+                                            <PopoverTrigger
+                                              component="span"
+                                            >
+                                              <Target
+                                                className="glamor-3"
+                                                component="span"
+                                              >
+                                                <span
+                                                  className="glamor-3"
+                                                >
+                                                  <Button
+                                                    aria-describedby="popover-21-popoverContent"
+                                                    aria-disabled={undefined}
+                                                    aria-expanded={undefined}
+                                                    aria-owns="popover-21-popoverContent"
+                                                    disabled={undefined}
+                                                    element="button"
+                                                    onBlur={[Function]}
+                                                    onClick={[Function]}
+                                                    onFocus={[Function]}
+                                                    onMouseEnter={[Function]}
+                                                    onMouseLeave={[Function]}
+                                                    role="button"
+                                                    size="large"
+                                                    tabIndex={0}
+                                                    type="button"
+                                                    variant="regular"
+                                                  >
+                                                    <glamorous(button)
+                                                      aria-describedby="popover-21-popoverContent"
+                                                      aria-disabled={undefined}
+                                                      aria-expanded={undefined}
+                                                      aria-owns="popover-21-popoverContent"
+                                                      disabled={undefined}
+                                                      element="button"
+                                                      onBlur={[Function]}
+                                                      onClick={[Function]}
+                                                      onFocus={[Function]}
+                                                      onMouseEnter={[Function]}
+                                                      onMouseLeave={[Function]}
+                                                      role="button"
+                                                      size="large"
+                                                      tabIndex={0}
+                                                      text="Button"
+                                                      type="button"
+                                                      variant="regular"
+                                                    >
+                                                      <button
+                                                        aria-describedby="popover-21-popoverContent"
+                                                        aria-disabled={undefined}
+                                                        aria-expanded={undefined}
+                                                        aria-owns="popover-21-popoverContent"
+                                                        className="glamor-2"
+                                                        disabled={undefined}
+                                                        onBlur={[Function]}
+                                                        onClick={[Function]}
+                                                        onFocus={[Function]}
+                                                        onMouseEnter={[Function]}
+                                                        onMouseLeave={[Function]}
+                                                        role="button"
+                                                        tabIndex={0}
+                                                        type="button"
+                                                      >
+                                                        <glamorous(span)>
+                                                          <span
+                                                            className="glamor-1"
+                                                          >
+                                                            <glamorous(span)
+                                                              size="large"
+                                                            >
+                                                              <span
+                                                                className="glamor-0"
+                                                              >
+                                                                Button
+                                                              </span>
+                                                            </glamorous(span)>
+                                                          </span>
+                                                        </glamorous(span)>
+                                                      </button>
+                                                    </glamorous(button)>
+                                                  </Button>
+                                                </span>
+                                              </Target>
+                                            </PopoverTrigger>
+                                          </PopoverTrigger>
+                                          <PopoverContent
+                                            aria-live="polite"
+                                            hasArrow={true}
+                                            id="popover-21-popoverContent"
+                                            modifiers={undefined}
+                                            placement="left"
+                                            role="tooltip"
+                                            subtitle={undefined}
+                                            tabIndex={undefined}
+                                            title={undefined}
+                                          >
+                                            <PopoverContent
+                                              aria-live="polite"
+                                              id="popover-21-popoverContent"
+                                              modifiers={undefined}
+                                              placement="left"
+                                              role="tooltip"
+                                              tabIndex={undefined}
+                                            >
+                                              <Popper
+                                                aria-live="polite"
+                                                className="glamor-9"
+                                                component="div"
+                                                eventsEnabled={true}
+                                                id="popover-21-popoverContent"
+                                                modifiers={Object {}}
+                                                placement="left"
+                                                role="tooltip"
+                                                tabIndex={undefined}
+                                              >
+                                                <div
+                                                  aria-live="polite"
+                                                  className="glamor-9"
+                                                  data-placement={undefined}
+                                                  data-x-out-of-boundaries={undefined}
+                                                  id="popover-21-popoverContent"
+                                                  role="tooltip"
+                                                  style={
+                                                    Object {
+                                                      "opacity": 0,
+                                                      "pointerEvents": "none",
+                                                      "position": "absolute",
+                                                    }
+                                                  }
+                                                  tabIndex={undefined}
+                                                >
+                                                  <ThemedComponent>
+                                                    <Themed(CardBlock)>
+                                                      <ThemeProvider>
+                                                        <ThemeProvider>
+                                                          <CardBlock>
+                                                            <CardBlock>
+                                                              <div
+                                                                className="glamor-6"
+                                                              >
+                                                                <glamorous(div)>
+                                                                  <div
+                                                                    className="glamor-5"
+                                                                  >
+                                                                    Light years star stuff
+                                                                  </div>
+                                                                </glamorous(div)>
+                                                              </div>
+                                                            </CardBlock>
+                                                          </CardBlock>
+                                                        </ThemeProvider>
+                                                      </ThemeProvider>
+                                                    </Themed(CardBlock)>
+                                                  </ThemedComponent>
+                                                  <PopoverArrow
+                                                    placement={undefined}
+                                                    size="8px"
+                                                  >
+                                                    <PopoverArrow
+                                                      aria-hidden={true}
+                                                      placement={undefined}
+                                                      size="8px"
+                                                    >
+                                                      <Arrow
+                                                        aria-hidden={true}
+                                                        className="glamor-7"
+                                                      >
+                                                        <span
+                                                          aria-hidden={true}
+                                                          className="glamor-7"
+                                                          style={Object {}}
+                                                        >
+                                                          ▼
+                                                        </span>
+                                                      </Arrow>
+                                                    </PopoverArrow>
+                                                  </PopoverArrow>
+                                                </div>
+                                              </Popper>
+                                            </PopoverContent>
+                                          </PopoverContent>
+                                          <EventListener
+                                            listeners={
+                                              Array [
+                                                Object {
+                                                  "event": "click",
+                                                  "handler": [Function],
+                                                  "options": true,
+                                                  "target": "document",
+                                                },
+                                                Object {
+                                                  "event": "keydown",
+                                                  "handler": [Function],
+                                                  "options": true,
+                                                  "target": "document",
+                                                },
+                                              ]
+                                            }
+                                          />
+                                        </Manager>
+                                      </Popover>
+                                    </Popover>
+                                  </ThemeProvider>
+                                </ThemeProvider>
+                              </Themed(Popover)>
+                            </ThemedComponent>
+                          </Tooltip>
+                        </div>
+                      </glamorous(div)>
+                    </div>
+                  </glamorous(div)>
+                  <glamorous(Button)
+                    minimal={true}
+                    onClick={[Function]}
+                    size="small"
+                  >
+                    <Button
+                      className="glamor-17"
+                      element="button"
+                      minimal={true}
+                      onClick={[Function]}
+                      size="small"
+                      type="button"
+                      variant="regular"
+                    >
+                      <glamorous(button)
+                        className="glamor-17"
+                        element="button"
+                        minimal={true}
+                        onClick={[Function]}
+                        size="small"
+                        text="Re-center"
+                        type="button"
+                        variant="regular"
+                      >
+                        <button
+                          className="glamor-16"
+                          onClick={[Function]}
+                          type="button"
+                        >
+                          <glamorous(span)>
+                            <span
+                              className="glamor-1"
+                            >
+                              <glamorous(span)
+                                size="small"
+                              >
+                                <span
+                                  className="glamor-14"
+                                >
+                                  Re-center
+                                </span>
+                              </glamorous(span)>
+                            </span>
+                          </glamorous(span)>
+                        </button>
+                      </glamorous(button)>
+                    </Button>
+                  </glamorous(Button)>
+                </div>
+              </glamorous(div)>
+            </ScrollBox>
+          </div>
+        </LivePreview>
+      </div>
+    </LiveProvider>
+  </ThemeProvider>
+</ThemeProvider>
+`;

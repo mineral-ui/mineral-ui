@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover demo examples basic 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -157,92 +157,96 @@ exports[`Popover demo examples basic 1`] = `
           >
             <Popover
               content={<DemoContent />}
+              focusTriggerOnClose={true}
               hasArrow={true}
               placement="bottom"
               wrapContent={true}
             >
-              <Popover>
+              <Popover
+                focusTriggerOnClose={true}
+                tag={false}
+              >
                 <Manager
-                  className="glamor-5"
-                  tag="div"
+                  className="glamor-3"
+                  focusTriggerOnClose={true}
+                  tag={false}
                 >
-                  <div
-                    className="glamor-5"
+                  <PopoverTrigger
+                    contentId="popover-12-popoverContent"
+                    disabled={undefined}
+                    isOpen={false}
+                    onClick={[Function]}
                   >
                     <PopoverTrigger
-                      contentId="popover-11-popoverContent"
-                      disabled={undefined}
-                      isOpen={false}
-                      onClick={[Function]}
+                      component="span"
                     >
-                      <PopoverTrigger>
-                        <Target
+                      <Target
+                        className="glamor-3"
+                        component="span"
+                      >
+                        <span
                           className="glamor-3"
                         >
-                          <div
-                            className="glamor-3"
+                          <Button
+                            aria-describedby="popover-12-popoverContent"
+                            aria-disabled={undefined}
+                            aria-expanded={false}
+                            aria-owns="popover-12-popoverContent"
+                            disabled={undefined}
+                            element="button"
+                            onClick={[Function]}
+                            role="button"
+                            size="large"
+                            type="button"
+                            variant="regular"
                           >
-                            <Button
-                              aria-describedby="popover-11-popoverContent"
+                            <glamorous(button)
+                              aria-describedby="popover-12-popoverContent"
                               aria-disabled={undefined}
                               aria-expanded={false}
-                              aria-owns="popover-11-popoverContent"
+                              aria-owns="popover-12-popoverContent"
                               disabled={undefined}
                               element="button"
                               onClick={[Function]}
                               role="button"
                               size="large"
+                              text="Open Popover"
                               type="button"
                               variant="regular"
                             >
-                              <glamorous(button)
-                                aria-describedby="popover-11-popoverContent"
+                              <button
+                                aria-describedby="popover-12-popoverContent"
                                 aria-disabled={undefined}
                                 aria-expanded={false}
-                                aria-owns="popover-11-popoverContent"
+                                aria-owns="popover-12-popoverContent"
+                                className="glamor-2"
                                 disabled={undefined}
-                                element="button"
                                 onClick={[Function]}
                                 role="button"
-                                size="large"
-                                text="Open Popover"
                                 type="button"
-                                variant="regular"
                               >
-                                <button
-                                  aria-describedby="popover-11-popoverContent"
-                                  aria-disabled={undefined}
-                                  aria-expanded={false}
-                                  aria-owns="popover-11-popoverContent"
-                                  className="glamor-2"
-                                  disabled={undefined}
-                                  onClick={[Function]}
-                                  role="button"
-                                  type="button"
-                                >
-                                  <glamorous(span)>
-                                    <span
-                                      className="glamor-1"
+                                <glamorous(span)>
+                                  <span
+                                    className="glamor-1"
+                                  >
+                                    <glamorous(span)
+                                      size="large"
                                     >
-                                      <glamorous(span)
-                                        size="large"
+                                      <span
+                                        className="glamor-0"
                                       >
-                                        <span
-                                          className="glamor-0"
-                                        >
-                                          Open Popover
-                                        </span>
-                                      </glamorous(span)>
-                                    </span>
-                                  </glamorous(span)>
-                                </button>
-                              </glamorous(button)>
-                            </Button>
-                          </div>
-                        </Target>
-                      </PopoverTrigger>
+                                        Open Popover
+                                      </span>
+                                    </glamorous(span)>
+                                  </span>
+                                </glamorous(span)>
+                              </button>
+                            </glamorous(button)>
+                          </Button>
+                        </span>
+                      </Target>
                     </PopoverTrigger>
-                  </div>
+                  </PopoverTrigger>
                 </Manager>
               </Popover>
             </Popover>
@@ -255,8 +259,8 @@ exports[`Popover demo examples basic 1`] = `
 `;
 
 exports[`Popover demo examples controlled 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -392,8 +396,8 @@ exports[`Popover demo examples controlled 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.glamor-10,
-[data-glamor-10] {
+.glamor-9,
+[data-glamor-9] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -430,10 +434,11 @@ exports[`Popover demo examples controlled 1`] = `
             <App>
               <glamorous(div)>
                 <div
-                  className="glamor-10"
+                  className="glamor-9"
                 >
                   <Popover
                     content={<DemoContent />}
+                    focusTriggerOnClose={true}
                     hasArrow={true}
                     isOpen={false}
                     onClose={[Function]}
@@ -442,91 +447,96 @@ exports[`Popover demo examples controlled 1`] = `
                     wrapContent={true}
                   >
                     <Popover
+                      focusTriggerOnClose={true}
                       isOpen={false}
                       onClose={[Function]}
                       onOpen={[Function]}
+                      tag={false}
                     >
                       <Manager
-                        className="glamor-5"
-                        tag="div"
+                        className="glamor-3"
+                        focusTriggerOnClose={true}
+                        isOpen={false}
+                        onClose={[Function]}
+                        onOpen={[Function]}
+                        tag={false}
                       >
-                        <div
-                          className="glamor-5"
+                        <PopoverTrigger
+                          contentId="popover-20-popoverContent"
+                          disabled={undefined}
+                          isOpen={false}
+                          onClick={[Function]}
                         >
                           <PopoverTrigger
-                            contentId="popover-19-popoverContent"
-                            disabled={undefined}
-                            isOpen={false}
-                            onClick={[Function]}
+                            component="span"
                           >
-                            <PopoverTrigger>
-                              <Target
+                            <Target
+                              className="glamor-3"
+                              component="span"
+                            >
+                              <span
                                 className="glamor-3"
                               >
-                                <div
-                                  className="glamor-3"
+                                <Button
+                                  aria-describedby="popover-20-popoverContent"
+                                  aria-disabled={undefined}
+                                  aria-expanded={false}
+                                  aria-owns="popover-20-popoverContent"
+                                  disabled={undefined}
+                                  element="button"
+                                  onClick={[Function]}
+                                  role="button"
+                                  size="large"
+                                  type="button"
+                                  variant="regular"
                                 >
-                                  <Button
-                                    aria-describedby="popover-19-popoverContent"
+                                  <glamorous(button)
+                                    aria-describedby="popover-20-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={false}
-                                    aria-owns="popover-19-popoverContent"
+                                    aria-owns="popover-20-popoverContent"
                                     disabled={undefined}
                                     element="button"
                                     onClick={[Function]}
                                     role="button"
                                     size="large"
+                                    text="Open Popover"
                                     type="button"
                                     variant="regular"
                                   >
-                                    <glamorous(button)
-                                      aria-describedby="popover-19-popoverContent"
+                                    <button
+                                      aria-describedby="popover-20-popoverContent"
                                       aria-disabled={undefined}
                                       aria-expanded={false}
-                                      aria-owns="popover-19-popoverContent"
+                                      aria-owns="popover-20-popoverContent"
+                                      className="glamor-2"
                                       disabled={undefined}
-                                      element="button"
                                       onClick={[Function]}
                                       role="button"
-                                      size="large"
-                                      text="Open Popover"
                                       type="button"
-                                      variant="regular"
                                     >
-                                      <button
-                                        aria-describedby="popover-19-popoverContent"
-                                        aria-disabled={undefined}
-                                        aria-expanded={false}
-                                        aria-owns="popover-19-popoverContent"
-                                        className="glamor-2"
-                                        disabled={undefined}
-                                        onClick={[Function]}
-                                        role="button"
-                                        type="button"
-                                      >
-                                        <glamorous(span)>
-                                          <span
-                                            className="glamor-1"
+                                      <glamorous(span)>
+                                        <span
+                                          className="glamor-1"
+                                        >
+                                          <glamorous(span)
+                                            size="large"
                                           >
-                                            <glamorous(span)
-                                              size="large"
+                                            <span
+                                              className="glamor-0"
                                             >
-                                              <span
-                                                className="glamor-0"
-                                              >
-                                                Open Popover
-                                              </span>
-                                            </glamorous(span)>
-                                          </span>
-                                        </glamorous(span)>
-                                      </button>
-                                    </glamorous(button)>
-                                  </Button>
-                                </div>
-                              </Target>
-                            </PopoverTrigger>
+                                              Open Popover
+                                            </span>
+                                          </glamorous(span)>
+                                        </span>
+                                      </glamorous(span)>
+                                    </button>
+                                  </glamorous(button)>
+                                </Button>
+                              </span>
+                            </Target>
                           </PopoverTrigger>
-                        </div>
+                        </PopoverTrigger>
                       </Manager>
                     </Popover>
                   </Popover>
@@ -580,8 +590,8 @@ exports[`Popover demo examples controlled 1`] = `
 `;
 
 exports[`Popover demo examples disabled 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -735,92 +745,96 @@ exports[`Popover demo examples disabled 1`] = `
             <Popover
               content={<DemoContent />}
               disabled={true}
+              focusTriggerOnClose={true}
               hasArrow={true}
               placement="bottom"
               wrapContent={true}
             >
-              <Popover>
+              <Popover
+                focusTriggerOnClose={true}
+                tag={false}
+              >
                 <Manager
-                  className="glamor-5"
-                  tag="div"
+                  className="glamor-3"
+                  focusTriggerOnClose={true}
+                  tag={false}
                 >
-                  <div
-                    className="glamor-5"
+                  <PopoverTrigger
+                    contentId="popover-19-popoverContent"
+                    disabled={true}
+                    isOpen={false}
+                    onClick={undefined}
                   >
                     <PopoverTrigger
-                      contentId="popover-18-popoverContent"
-                      disabled={true}
-                      isOpen={false}
-                      onClick={undefined}
+                      component="span"
                     >
-                      <PopoverTrigger>
-                        <Target
+                      <Target
+                        className="glamor-3"
+                        component="span"
+                      >
+                        <span
                           className="glamor-3"
                         >
-                          <div
-                            className="glamor-3"
+                          <Button
+                            aria-describedby="popover-19-popoverContent"
+                            aria-disabled={true}
+                            aria-expanded={false}
+                            aria-owns="popover-19-popoverContent"
+                            disabled={true}
+                            element="button"
+                            onClick={undefined}
+                            role="button"
+                            size="large"
+                            type="button"
+                            variant="regular"
                           >
-                            <Button
-                              aria-describedby="popover-18-popoverContent"
+                            <glamorous(button)
+                              aria-describedby="popover-19-popoverContent"
                               aria-disabled={true}
                               aria-expanded={false}
-                              aria-owns="popover-18-popoverContent"
+                              aria-owns="popover-19-popoverContent"
                               disabled={true}
                               element="button"
                               onClick={undefined}
                               role="button"
                               size="large"
+                              text="Open Popover"
                               type="button"
                               variant="regular"
                             >
-                              <glamorous(button)
-                                aria-describedby="popover-18-popoverContent"
+                              <button
+                                aria-describedby="popover-19-popoverContent"
                                 aria-disabled={true}
                                 aria-expanded={false}
-                                aria-owns="popover-18-popoverContent"
+                                aria-owns="popover-19-popoverContent"
+                                className="glamor-2"
                                 disabled={true}
-                                element="button"
                                 onClick={undefined}
                                 role="button"
-                                size="large"
-                                text="Open Popover"
                                 type="button"
-                                variant="regular"
                               >
-                                <button
-                                  aria-describedby="popover-18-popoverContent"
-                                  aria-disabled={true}
-                                  aria-expanded={false}
-                                  aria-owns="popover-18-popoverContent"
-                                  className="glamor-2"
-                                  disabled={true}
-                                  onClick={undefined}
-                                  role="button"
-                                  type="button"
-                                >
-                                  <glamorous(span)>
-                                    <span
-                                      className="glamor-1"
+                                <glamorous(span)>
+                                  <span
+                                    className="glamor-1"
+                                  >
+                                    <glamorous(span)
+                                      size="large"
                                     >
-                                      <glamorous(span)
-                                        size="large"
+                                      <span
+                                        className="glamor-0"
                                       >
-                                        <span
-                                          className="glamor-0"
-                                        >
-                                          Open Popover
-                                        </span>
-                                      </glamorous(span)>
-                                    </span>
-                                  </glamorous(span)>
-                                </button>
-                              </glamorous(button)>
-                            </Button>
-                          </div>
-                        </Target>
-                      </PopoverTrigger>
+                                        Open Popover
+                                      </span>
+                                    </glamorous(span)>
+                                  </span>
+                                </glamorous(span)>
+                              </button>
+                            </glamorous(button)>
+                          </Button>
+                        </span>
+                      </Target>
                     </PopoverTrigger>
-                  </div>
+                  </PopoverTrigger>
                 </Manager>
               </Popover>
             </Popover>
@@ -833,8 +847,8 @@ exports[`Popover demo examples disabled 1`] = `
 `;
 
 exports[`Popover demo examples on-open-close 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -990,6 +1004,7 @@ exports[`Popover demo examples on-open-close 1`] = `
             <wrappedPFC>
               <Popover
                 content={<DemoContent />}
+                focusTriggerOnClose={true}
                 hasArrow={true}
                 onClose={[Function]}
                 onOpen={[Function]}
@@ -997,90 +1012,94 @@ exports[`Popover demo examples on-open-close 1`] = `
                 wrapContent={true}
               >
                 <Popover
+                  focusTriggerOnClose={true}
                   onClose={[Function]}
                   onOpen={[Function]}
+                  tag={false}
                 >
                   <Manager
-                    className="glamor-5"
-                    tag="div"
+                    className="glamor-3"
+                    focusTriggerOnClose={true}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    tag={false}
                   >
-                    <div
-                      className="glamor-5"
+                    <PopoverTrigger
+                      contentId="popover-18-popoverContent"
+                      disabled={undefined}
+                      isOpen={false}
+                      onClick={[Function]}
                     >
                       <PopoverTrigger
-                        contentId="popover-17-popoverContent"
-                        disabled={undefined}
-                        isOpen={false}
-                        onClick={[Function]}
+                        component="span"
                       >
-                        <PopoverTrigger>
-                          <Target
+                        <Target
+                          className="glamor-3"
+                          component="span"
+                        >
+                          <span
                             className="glamor-3"
                           >
-                            <div
-                              className="glamor-3"
+                            <Button
+                              aria-describedby="popover-18-popoverContent"
+                              aria-disabled={undefined}
+                              aria-expanded={false}
+                              aria-owns="popover-18-popoverContent"
+                              disabled={undefined}
+                              element="button"
+                              onClick={[Function]}
+                              role="button"
+                              size="large"
+                              type="button"
+                              variant="regular"
                             >
-                              <Button
-                                aria-describedby="popover-17-popoverContent"
+                              <glamorous(button)
+                                aria-describedby="popover-18-popoverContent"
                                 aria-disabled={undefined}
                                 aria-expanded={false}
-                                aria-owns="popover-17-popoverContent"
+                                aria-owns="popover-18-popoverContent"
                                 disabled={undefined}
                                 element="button"
                                 onClick={[Function]}
                                 role="button"
                                 size="large"
+                                text="Menu"
                                 type="button"
                                 variant="regular"
                               >
-                                <glamorous(button)
-                                  aria-describedby="popover-17-popoverContent"
+                                <button
+                                  aria-describedby="popover-18-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={false}
-                                  aria-owns="popover-17-popoverContent"
+                                  aria-owns="popover-18-popoverContent"
+                                  className="glamor-2"
                                   disabled={undefined}
-                                  element="button"
                                   onClick={[Function]}
                                   role="button"
-                                  size="large"
-                                  text="Menu"
                                   type="button"
-                                  variant="regular"
                                 >
-                                  <button
-                                    aria-describedby="popover-17-popoverContent"
-                                    aria-disabled={undefined}
-                                    aria-expanded={false}
-                                    aria-owns="popover-17-popoverContent"
-                                    className="glamor-2"
-                                    disabled={undefined}
-                                    onClick={[Function]}
-                                    role="button"
-                                    type="button"
-                                  >
-                                    <glamorous(span)>
-                                      <span
-                                        className="glamor-1"
+                                  <glamorous(span)>
+                                    <span
+                                      className="glamor-1"
+                                    >
+                                      <glamorous(span)
+                                        size="large"
                                       >
-                                        <glamorous(span)
-                                          size="large"
+                                        <span
+                                          className="glamor-0"
                                         >
-                                          <span
-                                            className="glamor-0"
-                                          >
-                                            Menu
-                                          </span>
-                                        </glamorous(span)>
-                                      </span>
-                                    </glamorous(span)>
-                                  </button>
-                                </glamorous(button)>
-                              </Button>
-                            </div>
-                          </Target>
-                        </PopoverTrigger>
+                                          Menu
+                                        </span>
+                                      </glamorous(span)>
+                                    </span>
+                                  </glamorous(span)>
+                                </button>
+                              </glamorous(button)>
+                            </Button>
+                          </span>
+                        </Target>
                       </PopoverTrigger>
-                    </div>
+                    </PopoverTrigger>
                   </Manager>
                 </Popover>
               </Popover>
@@ -1094,8 +1113,8 @@ exports[`Popover demo examples on-open-close 1`] = `
 `;
 
 exports[`Popover demo examples overflow 1`] = `
-.glamor-12,
-[data-glamor-12] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -1112,6 +1131,7 @@ exports[`Popover demo examples overflow 1`] = `
   border-radius: 0.1875em;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
+  max-width: none;
   z-index: 100;
 }
 
@@ -1136,7 +1156,7 @@ exports[`Popover demo examples overflow 1`] = `
 [data-glamor-7]:last-child,
 .glamor-7[data-simulate-lastchild],
 [data-glamor-7][data-simulate-lastchild] {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .glamor-6,
@@ -1294,8 +1314,8 @@ exports[`Popover demo examples overflow 1`] = `
   width: 13.75em;
 }
 
-.glamor-14,
-[data-glamor-14] {
+.glamor-13,
+[data-glamor-13] {
   background-color: aliceblue;
   overflow: hidden;
   padding: 25px;
@@ -1321,212 +1341,217 @@ exports[`Popover demo examples overflow 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-14"
+                className="glamor-13"
               >
                 <Popover
                   content={<DemoContent />}
+                  focusTriggerOnClose={true}
                   hasArrow={true}
                   isOpen={true}
                   placement="right"
                   wrapContent={true}
                 >
                   <Popover
+                    focusTriggerOnClose={true}
                     isOpen={true}
+                    tag={false}
                   >
                     <Manager
-                      className="glamor-12"
-                      tag="div"
+                      className="glamor-3"
+                      focusTriggerOnClose={true}
+                      isOpen={true}
+                      tag={false}
                     >
-                      <div
-                        className="glamor-12"
+                      <PopoverTrigger
+                        contentId="popover-15-popoverContent"
+                        disabled={undefined}
+                        isOpen={true}
+                        onClick={[Function]}
                       >
                         <PopoverTrigger
-                          contentId="popover-14-popoverContent"
-                          disabled={undefined}
-                          isOpen={true}
-                          onClick={[Function]}
+                          component="span"
                         >
-                          <PopoverTrigger>
-                            <Target
+                          <Target
+                            className="glamor-3"
+                            component="span"
+                          >
+                            <span
                               className="glamor-3"
                             >
-                              <div
-                                className="glamor-3"
+                              <Button
+                                aria-describedby="popover-15-popoverContent"
+                                aria-disabled={undefined}
+                                aria-expanded={true}
+                                aria-owns="popover-15-popoverContent"
+                                disabled={undefined}
+                                element="button"
+                                onClick={[Function]}
+                                role="button"
+                                size="large"
+                                type="button"
+                                variant="regular"
                               >
-                                <Button
-                                  aria-describedby="popover-14-popoverContent"
+                                <glamorous(button)
+                                  aria-describedby="popover-15-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
-                                  aria-owns="popover-14-popoverContent"
+                                  aria-owns="popover-15-popoverContent"
                                   disabled={undefined}
                                   element="button"
                                   onClick={[Function]}
                                   role="button"
                                   size="large"
+                                  text="Open Popover"
                                   type="button"
                                   variant="regular"
                                 >
-                                  <glamorous(button)
-                                    aria-describedby="popover-14-popoverContent"
+                                  <button
+                                    aria-describedby="popover-15-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
-                                    aria-owns="popover-14-popoverContent"
+                                    aria-owns="popover-15-popoverContent"
+                                    className="glamor-2"
                                     disabled={undefined}
-                                    element="button"
                                     onClick={[Function]}
                                     role="button"
-                                    size="large"
-                                    text="Open Popover"
                                     type="button"
-                                    variant="regular"
                                   >
-                                    <button
-                                      aria-describedby="popover-14-popoverContent"
-                                      aria-disabled={undefined}
-                                      aria-expanded={true}
-                                      aria-owns="popover-14-popoverContent"
-                                      className="glamor-2"
-                                      disabled={undefined}
-                                      onClick={[Function]}
-                                      role="button"
-                                      type="button"
-                                    >
-                                      <glamorous(span)>
-                                        <span
-                                          className="glamor-1"
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-1"
+                                      >
+                                        <glamorous(span)
+                                          size="large"
                                         >
-                                          <glamorous(span)
-                                            size="large"
+                                          <span
+                                            className="glamor-0"
                                           >
-                                            <span
-                                              className="glamor-0"
-                                            >
-                                              Open Popover
-                                            </span>
-                                          </glamorous(span)>
-                                        </span>
-                                      </glamorous(span)>
-                                    </button>
-                                  </glamorous(button)>
-                                </Button>
-                              </div>
-                            </Target>
-                          </PopoverTrigger>
+                                            Open Popover
+                                          </span>
+                                        </glamorous(span)>
+                                      </span>
+                                    </glamorous(span)>
+                                  </button>
+                                </glamorous(button)>
+                              </Button>
+                            </span>
+                          </Target>
                         </PopoverTrigger>
+                      </PopoverTrigger>
+                      <PopoverContent
+                        hasArrow={true}
+                        id="popover-15-popoverContent"
+                        modifiers={undefined}
+                        placement="right"
+                        subtitle={undefined}
+                        tabIndex={0}
+                        title={undefined}
+                      >
                         <PopoverContent
-                          hasArrow={true}
-                          id="popover-14-popoverContent"
+                          id="popover-15-popoverContent"
                           modifiers={undefined}
                           placement="right"
-                          subtitle={undefined}
-                          title={undefined}
+                          tabIndex={0}
                         >
-                          <PopoverContent
-                            id="popover-14-popoverContent"
-                            modifiers={undefined}
+                          <Popper
+                            className="glamor-10"
+                            component="div"
+                            eventsEnabled={true}
+                            id="popover-15-popoverContent"
+                            modifiers={Object {}}
                             placement="right"
                             tabIndex={0}
                           >
-                            <Popper
+                            <div
                               className="glamor-10"
-                              component="div"
-                              eventsEnabled={true}
-                              id="popover-14-popoverContent"
-                              modifiers={Object {}}
-                              placement="right"
+                              data-placement={undefined}
+                              data-x-out-of-boundaries={undefined}
+                              id="popover-15-popoverContent"
+                              style={
+                                Object {
+                                  "opacity": 0,
+                                  "pointerEvents": "none",
+                                  "position": "absolute",
+                                }
+                              }
                               tabIndex={0}
                             >
-                              <div
-                                className="glamor-10"
-                                data-placement={undefined}
-                                data-x-out-of-boundaries={undefined}
-                                id="popover-14-popoverContent"
-                                style={
-                                  Object {
-                                    "opacity": 0,
-                                    "pointerEvents": "none",
-                                    "position": "absolute",
-                                  }
-                                }
-                                tabIndex={0}
-                              >
-                                <ThemedComponent>
-                                  <Themed(CardBlock)>
+                              <ThemedComponent>
+                                <Themed(CardBlock)>
+                                  <ThemeProvider>
                                     <ThemeProvider>
-                                      <ThemeProvider>
+                                      <CardBlock>
                                         <CardBlock>
-                                          <CardBlock>
-                                            <div
-                                              className="glamor-7"
-                                            >
-                                              <glamorous(div)>
-                                                <div
-                                                  className="glamor-6"
-                                                >
-                                                  <DemoContent>
-                                                    <glamorous(div)>
-                                                      <div
-                                                        className="glamor-5"
-                                                      >
-                                                        Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
-                                                      </div>
-                                                    </glamorous(div)>
-                                                  </DemoContent>
-                                                </div>
-                                              </glamorous(div)>
-                                            </div>
-                                          </CardBlock>
+                                          <div
+                                            className="glamor-7"
+                                          >
+                                            <glamorous(div)>
+                                              <div
+                                                className="glamor-6"
+                                              >
+                                                <DemoContent>
+                                                  <glamorous(div)>
+                                                    <div
+                                                      className="glamor-5"
+                                                    >
+                                                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
+                                                    </div>
+                                                  </glamorous(div)>
+                                                </DemoContent>
+                                              </div>
+                                            </glamorous(div)>
+                                          </div>
                                         </CardBlock>
-                                      </ThemeProvider>
+                                      </CardBlock>
                                     </ThemeProvider>
-                                  </Themed(CardBlock)>
-                                </ThemedComponent>
+                                  </ThemeProvider>
+                                </Themed(CardBlock)>
+                              </ThemedComponent>
+                              <PopoverArrow
+                                placement={undefined}
+                                size="8px"
+                              >
                                 <PopoverArrow
+                                  aria-hidden={true}
                                   placement={undefined}
                                   size="8px"
                                 >
-                                  <PopoverArrow
+                                  <Arrow
                                     aria-hidden={true}
-                                    placement={undefined}
-                                    size="8px"
+                                    className="glamor-8"
                                   >
-                                    <Arrow
+                                    <span
                                       aria-hidden={true}
                                       className="glamor-8"
+                                      style={Object {}}
                                     >
-                                      <span
-                                        aria-hidden={true}
-                                        className="glamor-8"
-                                        style={Object {}}
-                                      >
-                                        ▼
-                                      </span>
-                                    </Arrow>
-                                  </PopoverArrow>
+                                      ▼
+                                    </span>
+                                  </Arrow>
                                 </PopoverArrow>
-                              </div>
-                            </Popper>
-                          </PopoverContent>
+                              </PopoverArrow>
+                            </div>
+                          </Popper>
                         </PopoverContent>
-                        <EventListener
-                          listeners={
-                            Array [
-                              Object {
-                                "event": "click",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                              Object {
-                                "event": "keydown",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                            ]
-                          }
-                        />
-                      </div>
+                      </PopoverContent>
+                      <EventListener
+                        listeners={
+                          Array [
+                            Object {
+                              "event": "click",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                            Object {
+                              "event": "keydown",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                          ]
+                        }
+                      />
                     </Manager>
                   </Popover>
                 </Popover>
@@ -1541,8 +1566,8 @@ exports[`Popover demo examples overflow 1`] = `
 `;
 
 exports[`Popover demo examples placement 1`] = `
-.glamor-12,
-[data-glamor-12] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -1559,6 +1584,7 @@ exports[`Popover demo examples placement 1`] = `
   border-radius: 0.1875em;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
+  max-width: none;
   z-index: 100;
 }
 
@@ -1583,7 +1609,7 @@ exports[`Popover demo examples placement 1`] = `
 [data-glamor-7]:last-child,
 .glamor-7[data-simulate-lastchild],
 [data-glamor-7][data-simulate-lastchild] {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .glamor-6,
@@ -1741,10 +1767,20 @@ exports[`Popover demo examples placement 1`] = `
   width: 13.75em;
 }
 
-.glamor-14,
-[data-glamor-14] {
+.glamor-13,
+[data-glamor-13] {
   height: 350px;
-  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
 <ThemeProvider>
@@ -1767,212 +1803,217 @@ exports[`Popover demo examples placement 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-14"
+                className="glamor-13"
               >
                 <Popover
                   content={<DemoContent />}
+                  focusTriggerOnClose={true}
                   hasArrow={true}
                   isOpen={true}
                   placement="bottom"
                   wrapContent={true}
                 >
                   <Popover
+                    focusTriggerOnClose={true}
                     isOpen={true}
+                    tag={false}
                   >
                     <Manager
-                      className="glamor-12"
-                      tag="div"
+                      className="glamor-3"
+                      focusTriggerOnClose={true}
+                      isOpen={true}
+                      tag={false}
                     >
-                      <div
-                        className="glamor-12"
+                      <PopoverTrigger
+                        contentId="popover-14-popoverContent"
+                        disabled={undefined}
+                        isOpen={true}
+                        onClick={[Function]}
                       >
                         <PopoverTrigger
-                          contentId="popover-13-popoverContent"
-                          disabled={undefined}
-                          isOpen={true}
-                          onClick={[Function]}
+                          component="span"
                         >
-                          <PopoverTrigger>
-                            <Target
+                          <Target
+                            className="glamor-3"
+                            component="span"
+                          >
+                            <span
                               className="glamor-3"
                             >
-                              <div
-                                className="glamor-3"
+                              <Button
+                                aria-describedby="popover-14-popoverContent"
+                                aria-disabled={undefined}
+                                aria-expanded={true}
+                                aria-owns="popover-14-popoverContent"
+                                disabled={undefined}
+                                element="button"
+                                onClick={[Function]}
+                                role="button"
+                                size="large"
+                                type="button"
+                                variant="regular"
                               >
-                                <Button
-                                  aria-describedby="popover-13-popoverContent"
+                                <glamorous(button)
+                                  aria-describedby="popover-14-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
-                                  aria-owns="popover-13-popoverContent"
+                                  aria-owns="popover-14-popoverContent"
                                   disabled={undefined}
                                   element="button"
                                   onClick={[Function]}
                                   role="button"
                                   size="large"
+                                  text="Open Popover"
                                   type="button"
                                   variant="regular"
                                 >
-                                  <glamorous(button)
-                                    aria-describedby="popover-13-popoverContent"
+                                  <button
+                                    aria-describedby="popover-14-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
-                                    aria-owns="popover-13-popoverContent"
+                                    aria-owns="popover-14-popoverContent"
+                                    className="glamor-2"
                                     disabled={undefined}
-                                    element="button"
                                     onClick={[Function]}
                                     role="button"
-                                    size="large"
-                                    text="Open Popover"
                                     type="button"
-                                    variant="regular"
                                   >
-                                    <button
-                                      aria-describedby="popover-13-popoverContent"
-                                      aria-disabled={undefined}
-                                      aria-expanded={true}
-                                      aria-owns="popover-13-popoverContent"
-                                      className="glamor-2"
-                                      disabled={undefined}
-                                      onClick={[Function]}
-                                      role="button"
-                                      type="button"
-                                    >
-                                      <glamorous(span)>
-                                        <span
-                                          className="glamor-1"
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-1"
+                                      >
+                                        <glamorous(span)
+                                          size="large"
                                         >
-                                          <glamorous(span)
-                                            size="large"
+                                          <span
+                                            className="glamor-0"
                                           >
-                                            <span
-                                              className="glamor-0"
-                                            >
-                                              Open Popover
-                                            </span>
-                                          </glamorous(span)>
-                                        </span>
-                                      </glamorous(span)>
-                                    </button>
-                                  </glamorous(button)>
-                                </Button>
-                              </div>
-                            </Target>
-                          </PopoverTrigger>
+                                            Open Popover
+                                          </span>
+                                        </glamorous(span)>
+                                      </span>
+                                    </glamorous(span)>
+                                  </button>
+                                </glamorous(button)>
+                              </Button>
+                            </span>
+                          </Target>
                         </PopoverTrigger>
+                      </PopoverTrigger>
+                      <PopoverContent
+                        hasArrow={true}
+                        id="popover-14-popoverContent"
+                        modifiers={undefined}
+                        placement="bottom"
+                        subtitle={undefined}
+                        tabIndex={0}
+                        title={undefined}
+                      >
                         <PopoverContent
-                          hasArrow={true}
-                          id="popover-13-popoverContent"
+                          id="popover-14-popoverContent"
                           modifiers={undefined}
                           placement="bottom"
-                          subtitle={undefined}
-                          title={undefined}
+                          tabIndex={0}
                         >
-                          <PopoverContent
-                            id="popover-13-popoverContent"
-                            modifiers={undefined}
+                          <Popper
+                            className="glamor-10"
+                            component="div"
+                            eventsEnabled={true}
+                            id="popover-14-popoverContent"
+                            modifiers={Object {}}
                             placement="bottom"
                             tabIndex={0}
                           >
-                            <Popper
+                            <div
                               className="glamor-10"
-                              component="div"
-                              eventsEnabled={true}
-                              id="popover-13-popoverContent"
-                              modifiers={Object {}}
-                              placement="bottom"
+                              data-placement={undefined}
+                              data-x-out-of-boundaries={undefined}
+                              id="popover-14-popoverContent"
+                              style={
+                                Object {
+                                  "opacity": 0,
+                                  "pointerEvents": "none",
+                                  "position": "absolute",
+                                }
+                              }
                               tabIndex={0}
                             >
-                              <div
-                                className="glamor-10"
-                                data-placement={undefined}
-                                data-x-out-of-boundaries={undefined}
-                                id="popover-13-popoverContent"
-                                style={
-                                  Object {
-                                    "opacity": 0,
-                                    "pointerEvents": "none",
-                                    "position": "absolute",
-                                  }
-                                }
-                                tabIndex={0}
-                              >
-                                <ThemedComponent>
-                                  <Themed(CardBlock)>
+                              <ThemedComponent>
+                                <Themed(CardBlock)>
+                                  <ThemeProvider>
                                     <ThemeProvider>
-                                      <ThemeProvider>
+                                      <CardBlock>
                                         <CardBlock>
-                                          <CardBlock>
-                                            <div
-                                              className="glamor-7"
-                                            >
-                                              <glamorous(div)>
-                                                <div
-                                                  className="glamor-6"
-                                                >
-                                                  <DemoContent>
-                                                    <glamorous(div)>
-                                                      <div
-                                                        className="glamor-5"
-                                                      >
-                                                        Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
-                                                      </div>
-                                                    </glamorous(div)>
-                                                  </DemoContent>
-                                                </div>
-                                              </glamorous(div)>
-                                            </div>
-                                          </CardBlock>
+                                          <div
+                                            className="glamor-7"
+                                          >
+                                            <glamorous(div)>
+                                              <div
+                                                className="glamor-6"
+                                              >
+                                                <DemoContent>
+                                                  <glamorous(div)>
+                                                    <div
+                                                      className="glamor-5"
+                                                    >
+                                                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
+                                                    </div>
+                                                  </glamorous(div)>
+                                                </DemoContent>
+                                              </div>
+                                            </glamorous(div)>
+                                          </div>
                                         </CardBlock>
-                                      </ThemeProvider>
+                                      </CardBlock>
                                     </ThemeProvider>
-                                  </Themed(CardBlock)>
-                                </ThemedComponent>
+                                  </ThemeProvider>
+                                </Themed(CardBlock)>
+                              </ThemedComponent>
+                              <PopoverArrow
+                                placement={undefined}
+                                size="8px"
+                              >
                                 <PopoverArrow
+                                  aria-hidden={true}
                                   placement={undefined}
                                   size="8px"
                                 >
-                                  <PopoverArrow
+                                  <Arrow
                                     aria-hidden={true}
-                                    placement={undefined}
-                                    size="8px"
+                                    className="glamor-8"
                                   >
-                                    <Arrow
+                                    <span
                                       aria-hidden={true}
                                       className="glamor-8"
+                                      style={Object {}}
                                     >
-                                      <span
-                                        aria-hidden={true}
-                                        className="glamor-8"
-                                        style={Object {}}
-                                      >
-                                        ▼
-                                      </span>
-                                    </Arrow>
-                                  </PopoverArrow>
+                                      ▼
+                                    </span>
+                                  </Arrow>
                                 </PopoverArrow>
-                              </div>
-                            </Popper>
-                          </PopoverContent>
+                              </PopoverArrow>
+                            </div>
+                          </Popper>
                         </PopoverContent>
-                        <EventListener
-                          listeners={
-                            Array [
-                              Object {
-                                "event": "click",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                              Object {
-                                "event": "keydown",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                            ]
-                          }
-                        />
-                      </div>
+                      </PopoverContent>
+                      <EventListener
+                        listeners={
+                          Array [
+                            Object {
+                              "event": "click",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                            Object {
+                              "event": "keydown",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                          ]
+                        }
+                      />
                     </Manager>
                   </Popover>
                 </Popover>
@@ -1987,8 +2028,8 @@ exports[`Popover demo examples placement 1`] = `
 `;
 
 exports[`Popover demo examples portal 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -2124,33 +2165,33 @@ exports[`Popover demo examples portal 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.glamor-14,
-[data-glamor-14] {
+.glamor-13,
+[data-glamor-13] {
   position: relative;
 }
 
-.glamor-8,
-[data-glamor-8] {
+.glamor-7,
+[data-glamor-7] {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.glamor-7,
-[data-glamor-7] {
+.glamor-6,
+[data-glamor-6] {
   padding: 560px 200vw;
 }
 
-.glamor-12,
-[data-glamor-12] {
+.glamor-11,
+[data-glamor-11] {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.glamor-11,
-[data-glamor-11] {
+.glamor-10,
+[data-glamor-10] {
   box-sizing: border-box;
   color: #2e6fd9;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2175,73 +2216,73 @@ exports[`Popover demo examples portal 1`] = `
   top: 0;
 }
 
-.glamor-11 *,
-[data-glamor-11] *,
-.glamor-11 *::before,
-[data-glamor-11] *::before,
-.glamor-11 *::after,
-[data-glamor-11] *::after {
+.glamor-10 *,
+[data-glamor-10] *,
+.glamor-10 *::before,
+[data-glamor-10] *::before,
+.glamor-10 *::after,
+[data-glamor-10] *::after {
   box-sizing: inherit;
 }
 
-.glamor-11:focus,
-[data-glamor-11]:focus,
-.glamor-11[data-simulate-focus],
-[data-glamor-11][data-simulate-focus] {
+.glamor-10:focus,
+[data-glamor-10]:focus,
+.glamor-10[data-simulate-focus],
+[data-glamor-10][data-simulate-focus] {
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-11:hover,
-[data-glamor-11]:hover,
-.glamor-11[data-simulate-hover],
-[data-glamor-11][data-simulate-hover] {
+.glamor-10:hover,
+[data-glamor-10]:hover,
+.glamor-10[data-simulate-hover],
+[data-glamor-10][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-11:active,
-[data-glamor-11]:active,
-.glamor-11[data-simulate-active],
-[data-glamor-11][data-simulate-active] {
+.glamor-10:active,
+[data-glamor-10]:active,
+.glamor-10[data-simulate-active],
+[data-glamor-10][data-simulate-active] {
   background-color: #ebeff5;
   color: #2e6fd9;
 }
 
-.glamor-11::-moz-focus-inner,
-[data-glamor-11]::-moz-focus-inner,
-.glamor-11[data-simulate-mozfocusinner],
-[data-glamor-11][data-simulate-mozfocusinner] {
+.glamor-10::-moz-focus-inner,
+[data-glamor-10]::-moz-focus-inner,
+.glamor-10[data-simulate-mozfocusinner],
+[data-glamor-10][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-11 [role="img"],
-[data-glamor-11] [role="img"] {
+.glamor-10 [role="img"],
+[data-glamor-10] [role="img"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
 }
 
-.glamor-11 [role="img"]:first-child,
-[data-glamor-11] [role="img"]:first-child {
+.glamor-10 [role="img"]:first-child,
+[data-glamor-10] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.glamor-11 [role="img"]:last-child,
-[data-glamor-11] [role="img"]:last-child {
+.glamor-10 [role="img"]:last-child,
+[data-glamor-10] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.glamor-11 [role="img"]:only-child,
-[data-glamor-11] [role="img"]:only-child {
+.glamor-10 [role="img"]:only-child,
+[data-glamor-10] [role="img"]:only-child {
   margin: 0;
 }
 
-.glamor-9,
-[data-glamor-9] {
+.glamor-8,
+[data-glamor-8] {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2276,22 +2317,23 @@ exports[`Popover demo examples portal 1`] = `
             >
               <glamorous(div)>
                 <div
-                  className="glamor-14"
+                  className="glamor-13"
                 >
                   <glamorous(div)
                     height={360}
                   >
                     <div
-                      className="glamor-8"
+                      className="glamor-7"
                     >
                       <glamorous(div)
                         scrollAreaHeight={360}
                       >
                         <div
-                          className="glamor-7"
+                          className="glamor-6"
                         >
                           <Popover
                             content={<DemoContent />}
+                            focusTriggerOnClose={true}
                             hasArrow={true}
                             isOpen={true}
                             modifiers={
@@ -2306,108 +2348,111 @@ exports[`Popover demo examples portal 1`] = `
                             wrapContent={true}
                           >
                             <Popover
+                              focusTriggerOnClose={true}
                               isOpen={true}
+                              tag={false}
                             >
                               <Manager
-                                className="glamor-5"
-                                tag="div"
+                                className="glamor-3"
+                                focusTriggerOnClose={true}
+                                isOpen={true}
+                                tag={false}
                               >
-                                <div
-                                  className="glamor-5"
+                                <PopoverTrigger
+                                  contentId="popover-17-popoverContent"
+                                  disabled={undefined}
+                                  isOpen={true}
+                                  onClick={[Function]}
                                 >
                                   <PopoverTrigger
-                                    contentId="popover-16-popoverContent"
-                                    disabled={undefined}
-                                    isOpen={true}
-                                    onClick={[Function]}
+                                    component="span"
                                   >
-                                    <PopoverTrigger>
-                                      <Target
+                                    <Target
+                                      className="glamor-3"
+                                      component="span"
+                                    >
+                                      <span
                                         className="glamor-3"
                                       >
-                                        <div
-                                          className="glamor-3"
+                                        <Button
+                                          aria-describedby="popover-17-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={true}
+                                          aria-owns="popover-17-popoverContent"
+                                          disabled={undefined}
+                                          element="button"
+                                          onClick={[Function]}
+                                          role="button"
+                                          size="large"
+                                          type="button"
+                                          variant="regular"
                                         >
-                                          <Button
-                                            aria-describedby="popover-16-popoverContent"
+                                          <glamorous(button)
+                                            aria-describedby="popover-17-popoverContent"
                                             aria-disabled={undefined}
                                             aria-expanded={true}
-                                            aria-owns="popover-16-popoverContent"
+                                            aria-owns="popover-17-popoverContent"
                                             disabled={undefined}
                                             element="button"
                                             onClick={[Function]}
                                             role="button"
                                             size="large"
+                                            text="Open Popover"
                                             type="button"
                                             variant="regular"
                                           >
-                                            <glamorous(button)
-                                              aria-describedby="popover-16-popoverContent"
+                                            <button
+                                              aria-describedby="popover-17-popoverContent"
                                               aria-disabled={undefined}
                                               aria-expanded={true}
-                                              aria-owns="popover-16-popoverContent"
+                                              aria-owns="popover-17-popoverContent"
+                                              className="glamor-2"
                                               disabled={undefined}
-                                              element="button"
                                               onClick={[Function]}
                                               role="button"
-                                              size="large"
-                                              text="Open Popover"
                                               type="button"
-                                              variant="regular"
                                             >
-                                              <button
-                                                aria-describedby="popover-16-popoverContent"
-                                                aria-disabled={undefined}
-                                                aria-expanded={true}
-                                                aria-owns="popover-16-popoverContent"
-                                                className="glamor-2"
-                                                disabled={undefined}
-                                                onClick={[Function]}
-                                                role="button"
-                                                type="button"
-                                              >
-                                                <glamorous(span)>
-                                                  <span
-                                                    className="glamor-1"
+                                              <glamorous(span)>
+                                                <span
+                                                  className="glamor-1"
+                                                >
+                                                  <glamorous(span)
+                                                    size="large"
                                                   >
-                                                    <glamorous(span)
-                                                      size="large"
+                                                    <span
+                                                      className="glamor-0"
                                                     >
-                                                      <span
-                                                        className="glamor-0"
-                                                      >
-                                                        Open Popover
-                                                      </span>
-                                                    </glamorous(span)>
-                                                  </span>
-                                                </glamorous(span)>
-                                              </button>
-                                            </glamorous(button)>
-                                          </Button>
-                                        </div>
-                                      </Target>
-                                    </PopoverTrigger>
+                                                      Open Popover
+                                                    </span>
+                                                  </glamorous(span)>
+                                                </span>
+                                              </glamorous(span)>
+                                            </button>
+                                          </glamorous(button)>
+                                        </Button>
+                                      </span>
+                                    </Target>
                                   </PopoverTrigger>
-                                  <Portal />
-                                  <EventListener
-                                    listeners={
-                                      Array [
-                                        Object {
-                                          "event": "click",
-                                          "handler": [Function],
-                                          "options": true,
-                                          "target": "document",
-                                        },
-                                        Object {
-                                          "event": "keydown",
-                                          "handler": [Function],
-                                          "options": true,
-                                          "target": "document",
-                                        },
-                                      ]
-                                    }
-                                  />
-                                </div>
+                                </PopoverTrigger>
+                                <Portal />
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "click",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                      Object {
+                                        "event": "keydown",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
                               </Manager>
                             </Popover>
                           </Popover>
@@ -2421,7 +2466,7 @@ exports[`Popover demo examples portal 1`] = `
                     size="small"
                   >
                     <Button
-                      className="glamor-12"
+                      className="glamor-11"
                       element="button"
                       minimal={true}
                       onClick={[Function]}
@@ -2430,7 +2475,7 @@ exports[`Popover demo examples portal 1`] = `
                       variant="regular"
                     >
                       <glamorous(button)
-                        className="glamor-12"
+                        className="glamor-11"
                         element="button"
                         minimal={true}
                         onClick={[Function]}
@@ -2440,7 +2485,7 @@ exports[`Popover demo examples portal 1`] = `
                         variant="regular"
                       >
                         <button
-                          className="glamor-11"
+                          className="glamor-10"
                           onClick={[Function]}
                           type="button"
                         >
@@ -2452,7 +2497,7 @@ exports[`Popover demo examples portal 1`] = `
                                 size="small"
                               >
                                 <span
-                                  className="glamor-9"
+                                  className="glamor-8"
                                 >
                                   Re-center
                                 </span>
@@ -2475,8 +2520,8 @@ exports[`Popover demo examples portal 1`] = `
 `;
 
 exports[`Popover demo examples scrolling-container 1`] = `
-.glamor-12,
-[data-glamor-12] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -2493,6 +2538,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
   border-radius: 0.1875em;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
+  max-width: none;
   z-index: 100;
 }
 
@@ -2517,7 +2563,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
 [data-glamor-7]:last-child,
 .glamor-7[data-simulate-lastchild],
 [data-glamor-7][data-simulate-lastchild] {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .glamor-6,
@@ -2675,33 +2721,33 @@ exports[`Popover demo examples scrolling-container 1`] = `
   width: 13.75em;
 }
 
-.glamor-21,
-[data-glamor-21] {
+.glamor-20,
+[data-glamor-20] {
   position: relative;
 }
 
-.glamor-15,
-[data-glamor-15] {
+.glamor-14,
+[data-glamor-14] {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.glamor-14,
-[data-glamor-14] {
+.glamor-13,
+[data-glamor-13] {
   padding: 560px 200vw;
 }
 
-.glamor-19,
-[data-glamor-19] {
+.glamor-18,
+[data-glamor-18] {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.glamor-18,
-[data-glamor-18] {
+.glamor-17,
+[data-glamor-17] {
   box-sizing: border-box;
   color: #2e6fd9;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2726,73 +2772,73 @@ exports[`Popover demo examples scrolling-container 1`] = `
   top: 0;
 }
 
-.glamor-18 *,
-[data-glamor-18] *,
-.glamor-18 *::before,
-[data-glamor-18] *::before,
-.glamor-18 *::after,
-[data-glamor-18] *::after {
+.glamor-17 *,
+[data-glamor-17] *,
+.glamor-17 *::before,
+[data-glamor-17] *::before,
+.glamor-17 *::after,
+[data-glamor-17] *::after {
   box-sizing: inherit;
 }
 
-.glamor-18:focus,
-[data-glamor-18]:focus,
-.glamor-18[data-simulate-focus],
-[data-glamor-18][data-simulate-focus] {
+.glamor-17:focus,
+[data-glamor-17]:focus,
+.glamor-17[data-simulate-focus],
+[data-glamor-17][data-simulate-focus] {
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-18:hover,
-[data-glamor-18]:hover,
-.glamor-18[data-simulate-hover],
-[data-glamor-18][data-simulate-hover] {
+.glamor-17:hover,
+[data-glamor-17]:hover,
+.glamor-17[data-simulate-hover],
+[data-glamor-17][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-18:active,
-[data-glamor-18]:active,
-.glamor-18[data-simulate-active],
-[data-glamor-18][data-simulate-active] {
+.glamor-17:active,
+[data-glamor-17]:active,
+.glamor-17[data-simulate-active],
+[data-glamor-17][data-simulate-active] {
   background-color: #ebeff5;
   color: #2e6fd9;
 }
 
-.glamor-18::-moz-focus-inner,
-[data-glamor-18]::-moz-focus-inner,
-.glamor-18[data-simulate-mozfocusinner],
-[data-glamor-18][data-simulate-mozfocusinner] {
+.glamor-17::-moz-focus-inner,
+[data-glamor-17]::-moz-focus-inner,
+.glamor-17[data-simulate-mozfocusinner],
+[data-glamor-17][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-18 [role="img"],
-[data-glamor-18] [role="img"] {
+.glamor-17 [role="img"],
+[data-glamor-17] [role="img"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
 }
 
-.glamor-18 [role="img"]:first-child,
-[data-glamor-18] [role="img"]:first-child {
+.glamor-17 [role="img"]:first-child,
+[data-glamor-17] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.glamor-18 [role="img"]:last-child,
-[data-glamor-18] [role="img"]:last-child {
+.glamor-17 [role="img"]:last-child,
+[data-glamor-17] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.glamor-18 [role="img"]:only-child,
-[data-glamor-18] [role="img"]:only-child {
+.glamor-17 [role="img"]:only-child,
+[data-glamor-17] [role="img"]:only-child {
   margin: 0;
 }
 
-.glamor-16,
-[data-glamor-16] {
+.glamor-15,
+[data-glamor-15] {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2827,224 +2873,229 @@ exports[`Popover demo examples scrolling-container 1`] = `
             >
               <glamorous(div)>
                 <div
-                  className="glamor-21"
+                  className="glamor-20"
                 >
                   <glamorous(div)
                     height={360}
                   >
                     <div
-                      className="glamor-15"
+                      className="glamor-14"
                     >
                       <glamorous(div)
                         scrollAreaHeight={360}
                       >
                         <div
-                          className="glamor-14"
+                          className="glamor-13"
                         >
                           <Popover
                             content={<DemoContent />}
+                            focusTriggerOnClose={true}
                             hasArrow={true}
                             isOpen={true}
                             placement="left"
                             wrapContent={true}
                           >
                             <Popover
+                              focusTriggerOnClose={true}
                               isOpen={true}
+                              tag={false}
                             >
                               <Manager
-                                className="glamor-12"
-                                tag="div"
+                                className="glamor-3"
+                                focusTriggerOnClose={true}
+                                isOpen={true}
+                                tag={false}
                               >
-                                <div
-                                  className="glamor-12"
+                                <PopoverTrigger
+                                  contentId="popover-16-popoverContent"
+                                  disabled={undefined}
+                                  isOpen={true}
+                                  onClick={[Function]}
                                 >
                                   <PopoverTrigger
-                                    contentId="popover-15-popoverContent"
-                                    disabled={undefined}
-                                    isOpen={true}
-                                    onClick={[Function]}
+                                    component="span"
                                   >
-                                    <PopoverTrigger>
-                                      <Target
+                                    <Target
+                                      className="glamor-3"
+                                      component="span"
+                                    >
+                                      <span
                                         className="glamor-3"
                                       >
-                                        <div
-                                          className="glamor-3"
+                                        <Button
+                                          aria-describedby="popover-16-popoverContent"
+                                          aria-disabled={undefined}
+                                          aria-expanded={true}
+                                          aria-owns="popover-16-popoverContent"
+                                          disabled={undefined}
+                                          element="button"
+                                          onClick={[Function]}
+                                          role="button"
+                                          size="large"
+                                          type="button"
+                                          variant="regular"
                                         >
-                                          <Button
-                                            aria-describedby="popover-15-popoverContent"
+                                          <glamorous(button)
+                                            aria-describedby="popover-16-popoverContent"
                                             aria-disabled={undefined}
                                             aria-expanded={true}
-                                            aria-owns="popover-15-popoverContent"
+                                            aria-owns="popover-16-popoverContent"
                                             disabled={undefined}
                                             element="button"
                                             onClick={[Function]}
                                             role="button"
                                             size="large"
+                                            text="Open Popover"
                                             type="button"
                                             variant="regular"
                                           >
-                                            <glamorous(button)
-                                              aria-describedby="popover-15-popoverContent"
+                                            <button
+                                              aria-describedby="popover-16-popoverContent"
                                               aria-disabled={undefined}
                                               aria-expanded={true}
-                                              aria-owns="popover-15-popoverContent"
+                                              aria-owns="popover-16-popoverContent"
+                                              className="glamor-2"
                                               disabled={undefined}
-                                              element="button"
                                               onClick={[Function]}
                                               role="button"
-                                              size="large"
-                                              text="Open Popover"
                                               type="button"
-                                              variant="regular"
                                             >
-                                              <button
-                                                aria-describedby="popover-15-popoverContent"
-                                                aria-disabled={undefined}
-                                                aria-expanded={true}
-                                                aria-owns="popover-15-popoverContent"
-                                                className="glamor-2"
-                                                disabled={undefined}
-                                                onClick={[Function]}
-                                                role="button"
-                                                type="button"
-                                              >
-                                                <glamorous(span)>
-                                                  <span
-                                                    className="glamor-1"
+                                              <glamorous(span)>
+                                                <span
+                                                  className="glamor-1"
+                                                >
+                                                  <glamorous(span)
+                                                    size="large"
                                                   >
-                                                    <glamorous(span)
-                                                      size="large"
+                                                    <span
+                                                      className="glamor-0"
                                                     >
-                                                      <span
-                                                        className="glamor-0"
-                                                      >
-                                                        Open Popover
-                                                      </span>
-                                                    </glamorous(span)>
-                                                  </span>
-                                                </glamorous(span)>
-                                              </button>
-                                            </glamorous(button)>
-                                          </Button>
-                                        </div>
-                                      </Target>
-                                    </PopoverTrigger>
+                                                      Open Popover
+                                                    </span>
+                                                  </glamorous(span)>
+                                                </span>
+                                              </glamorous(span)>
+                                            </button>
+                                          </glamorous(button)>
+                                        </Button>
+                                      </span>
+                                    </Target>
                                   </PopoverTrigger>
+                                </PopoverTrigger>
+                                <PopoverContent
+                                  hasArrow={true}
+                                  id="popover-16-popoverContent"
+                                  modifiers={undefined}
+                                  placement="left"
+                                  subtitle={undefined}
+                                  tabIndex={0}
+                                  title={undefined}
+                                >
                                   <PopoverContent
-                                    hasArrow={true}
-                                    id="popover-15-popoverContent"
+                                    id="popover-16-popoverContent"
                                     modifiers={undefined}
                                     placement="left"
-                                    subtitle={undefined}
-                                    title={undefined}
+                                    tabIndex={0}
                                   >
-                                    <PopoverContent
-                                      id="popover-15-popoverContent"
-                                      modifiers={undefined}
+                                    <Popper
+                                      className="glamor-10"
+                                      component="div"
+                                      eventsEnabled={true}
+                                      id="popover-16-popoverContent"
+                                      modifiers={Object {}}
                                       placement="left"
                                       tabIndex={0}
                                     >
-                                      <Popper
+                                      <div
                                         className="glamor-10"
-                                        component="div"
-                                        eventsEnabled={true}
-                                        id="popover-15-popoverContent"
-                                        modifiers={Object {}}
-                                        placement="left"
+                                        data-placement={undefined}
+                                        data-x-out-of-boundaries={undefined}
+                                        id="popover-16-popoverContent"
+                                        style={
+                                          Object {
+                                            "opacity": 0,
+                                            "pointerEvents": "none",
+                                            "position": "absolute",
+                                          }
+                                        }
                                         tabIndex={0}
                                       >
-                                        <div
-                                          className="glamor-10"
-                                          data-placement={undefined}
-                                          data-x-out-of-boundaries={undefined}
-                                          id="popover-15-popoverContent"
-                                          style={
-                                            Object {
-                                              "opacity": 0,
-                                              "pointerEvents": "none",
-                                              "position": "absolute",
-                                            }
-                                          }
-                                          tabIndex={0}
-                                        >
-                                          <ThemedComponent>
-                                            <Themed(CardBlock)>
+                                        <ThemedComponent>
+                                          <Themed(CardBlock)>
+                                            <ThemeProvider>
                                               <ThemeProvider>
-                                                <ThemeProvider>
+                                                <CardBlock>
                                                   <CardBlock>
-                                                    <CardBlock>
-                                                      <div
-                                                        className="glamor-7"
-                                                      >
-                                                        <glamorous(div)>
-                                                          <div
-                                                            className="glamor-6"
-                                                          >
-                                                            <DemoContent>
-                                                              <glamorous(div)>
-                                                                <div
-                                                                  className="glamor-5"
-                                                                >
-                                                                  Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
-                                                                </div>
-                                                              </glamorous(div)>
-                                                            </DemoContent>
-                                                          </div>
-                                                        </glamorous(div)>
-                                                      </div>
-                                                    </CardBlock>
+                                                    <div
+                                                      className="glamor-7"
+                                                    >
+                                                      <glamorous(div)>
+                                                        <div
+                                                          className="glamor-6"
+                                                        >
+                                                          <DemoContent>
+                                                            <glamorous(div)>
+                                                              <div
+                                                                className="glamor-5"
+                                                              >
+                                                                Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
+                                                              </div>
+                                                            </glamorous(div)>
+                                                          </DemoContent>
+                                                        </div>
+                                                      </glamorous(div)>
+                                                    </div>
                                                   </CardBlock>
-                                                </ThemeProvider>
+                                                </CardBlock>
                                               </ThemeProvider>
-                                            </Themed(CardBlock)>
-                                          </ThemedComponent>
+                                            </ThemeProvider>
+                                          </Themed(CardBlock)>
+                                        </ThemedComponent>
+                                        <PopoverArrow
+                                          placement={undefined}
+                                          size="8px"
+                                        >
                                           <PopoverArrow
+                                            aria-hidden={true}
                                             placement={undefined}
                                             size="8px"
                                           >
-                                            <PopoverArrow
+                                            <Arrow
                                               aria-hidden={true}
-                                              placement={undefined}
-                                              size="8px"
+                                              className="glamor-8"
                                             >
-                                              <Arrow
+                                              <span
                                                 aria-hidden={true}
                                                 className="glamor-8"
+                                                style={Object {}}
                                               >
-                                                <span
-                                                  aria-hidden={true}
-                                                  className="glamor-8"
-                                                  style={Object {}}
-                                                >
-                                                  ▼
-                                                </span>
-                                              </Arrow>
-                                            </PopoverArrow>
+                                                ▼
+                                              </span>
+                                            </Arrow>
                                           </PopoverArrow>
-                                        </div>
-                                      </Popper>
-                                    </PopoverContent>
+                                        </PopoverArrow>
+                                      </div>
+                                    </Popper>
                                   </PopoverContent>
-                                  <EventListener
-                                    listeners={
-                                      Array [
-                                        Object {
-                                          "event": "click",
-                                          "handler": [Function],
-                                          "options": true,
-                                          "target": "document",
-                                        },
-                                        Object {
-                                          "event": "keydown",
-                                          "handler": [Function],
-                                          "options": true,
-                                          "target": "document",
-                                        },
-                                      ]
-                                    }
-                                  />
-                                </div>
+                                </PopoverContent>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "click",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                      Object {
+                                        "event": "keydown",
+                                        "handler": [Function],
+                                        "options": true,
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
                               </Manager>
                             </Popover>
                           </Popover>
@@ -3058,7 +3109,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                     size="small"
                   >
                     <Button
-                      className="glamor-19"
+                      className="glamor-18"
                       element="button"
                       minimal={true}
                       onClick={[Function]}
@@ -3067,7 +3118,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                       variant="regular"
                     >
                       <glamorous(button)
-                        className="glamor-19"
+                        className="glamor-18"
                         element="button"
                         minimal={true}
                         onClick={[Function]}
@@ -3077,7 +3128,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                         variant="regular"
                       >
                         <button
-                          className="glamor-18"
+                          className="glamor-17"
                           onClick={[Function]}
                           type="button"
                         >
@@ -3089,7 +3140,7 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                 size="small"
                               >
                                 <span
-                                  className="glamor-16"
+                                  className="glamor-15"
                                 >
                                   Re-center
                                 </span>
@@ -3112,8 +3163,8 @@ exports[`Popover demo examples scrolling-container 1`] = `
 `;
 
 exports[`Popover demo examples title 1`] = `
-.glamor-17,
-[data-glamor-17] {
+.glamor-3,
+[data-glamor-3] {
   display: inline-block;
 }
 
@@ -3130,6 +3181,7 @@ exports[`Popover demo examples title 1`] = `
   border-radius: 0.1875em;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
+  max-width: none;
   z-index: 100;
 }
 
@@ -3154,7 +3206,7 @@ exports[`Popover demo examples title 1`] = `
 [data-glamor-12]:last-child,
 .glamor-12[data-simulate-lastchild],
 [data-glamor-12][data-simulate-lastchild] {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .glamor-11,
@@ -3307,8 +3359,8 @@ exports[`Popover demo examples title 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.glamor-19,
-[data-glamor-19] {
+.glamor-18,
+[data-glamor-18] {
   padding: 5em 0;
 }
 
@@ -3394,10 +3446,11 @@ exports[`Popover demo examples title 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-19"
+                className="glamor-18"
               >
                 <Popover
                   content={<DemoContent />}
+                  focusTriggerOnClose={true}
                   hasArrow={true}
                   isOpen={true}
                   placement="right"
@@ -3406,256 +3459,260 @@ exports[`Popover demo examples title 1`] = `
                   wrapContent={true}
                 >
                   <Popover
+                    focusTriggerOnClose={true}
                     isOpen={true}
+                    tag={false}
                   >
                     <Manager
-                      className="glamor-17"
-                      tag="div"
+                      className="glamor-3"
+                      focusTriggerOnClose={true}
+                      isOpen={true}
+                      tag={false}
                     >
-                      <div
-                        className="glamor-17"
+                      <PopoverTrigger
+                        contentId="popover-13-popoverContent"
+                        disabled={undefined}
+                        isOpen={true}
+                        onClick={[Function]}
                       >
                         <PopoverTrigger
-                          contentId="popover-12-popoverContent"
-                          disabled={undefined}
-                          isOpen={true}
-                          onClick={[Function]}
+                          component="span"
                         >
-                          <PopoverTrigger>
-                            <Target
+                          <Target
+                            className="glamor-3"
+                            component="span"
+                          >
+                            <span
                               className="glamor-3"
                             >
-                              <div
-                                className="glamor-3"
+                              <Button
+                                aria-describedby="popover-13-popoverContent"
+                                aria-disabled={undefined}
+                                aria-expanded={true}
+                                aria-owns="popover-13-popoverContent"
+                                disabled={undefined}
+                                element="button"
+                                onClick={[Function]}
+                                role="button"
+                                size="large"
+                                type="button"
+                                variant="regular"
                               >
-                                <Button
-                                  aria-describedby="popover-12-popoverContent"
+                                <glamorous(button)
+                                  aria-describedby="popover-13-popoverContent"
                                   aria-disabled={undefined}
                                   aria-expanded={true}
-                                  aria-owns="popover-12-popoverContent"
+                                  aria-owns="popover-13-popoverContent"
                                   disabled={undefined}
                                   element="button"
                                   onClick={[Function]}
                                   role="button"
                                   size="large"
+                                  text="Open Popover"
                                   type="button"
                                   variant="regular"
                                 >
-                                  <glamorous(button)
-                                    aria-describedby="popover-12-popoverContent"
+                                  <button
+                                    aria-describedby="popover-13-popoverContent"
                                     aria-disabled={undefined}
                                     aria-expanded={true}
-                                    aria-owns="popover-12-popoverContent"
+                                    aria-owns="popover-13-popoverContent"
+                                    className="glamor-2"
                                     disabled={undefined}
-                                    element="button"
                                     onClick={[Function]}
                                     role="button"
-                                    size="large"
-                                    text="Open Popover"
                                     type="button"
-                                    variant="regular"
                                   >
-                                    <button
-                                      aria-describedby="popover-12-popoverContent"
-                                      aria-disabled={undefined}
-                                      aria-expanded={true}
-                                      aria-owns="popover-12-popoverContent"
-                                      className="glamor-2"
-                                      disabled={undefined}
-                                      onClick={[Function]}
-                                      role="button"
-                                      type="button"
-                                    >
-                                      <glamorous(span)>
-                                        <span
-                                          className="glamor-1"
+                                    <glamorous(span)>
+                                      <span
+                                        className="glamor-1"
+                                      >
+                                        <glamorous(span)
+                                          size="large"
                                         >
-                                          <glamorous(span)
-                                            size="large"
+                                          <span
+                                            className="glamor-0"
                                           >
-                                            <span
-                                              className="glamor-0"
-                                            >
-                                              Open Popover
-                                            </span>
-                                          </glamorous(span)>
-                                        </span>
-                                      </glamorous(span)>
-                                    </button>
-                                  </glamorous(button)>
-                                </Button>
-                              </div>
-                            </Target>
-                          </PopoverTrigger>
+                                            Open Popover
+                                          </span>
+                                        </glamorous(span)>
+                                      </span>
+                                    </glamorous(span)>
+                                  </button>
+                                </glamorous(button)>
+                              </Button>
+                            </span>
+                          </Target>
                         </PopoverTrigger>
+                      </PopoverTrigger>
+                      <PopoverContent
+                        hasArrow={true}
+                        id="popover-13-popoverContent"
+                        modifiers={undefined}
+                        placement="right"
+                        subtitle="Subtitle"
+                        tabIndex={0}
+                        title="Title"
+                      >
                         <PopoverContent
-                          hasArrow={true}
-                          id="popover-12-popoverContent"
+                          id="popover-13-popoverContent"
                           modifiers={undefined}
                           placement="right"
-                          subtitle="Subtitle"
-                          title="Title"
+                          tabIndex={0}
                         >
-                          <PopoverContent
-                            id="popover-12-popoverContent"
-                            modifiers={undefined}
+                          <Popper
+                            className="glamor-15"
+                            component="div"
+                            eventsEnabled={true}
+                            id="popover-13-popoverContent"
+                            modifiers={Object {}}
                             placement="right"
                             tabIndex={0}
                           >
-                            <Popper
+                            <div
                               className="glamor-15"
-                              component="div"
-                              eventsEnabled={true}
-                              id="popover-12-popoverContent"
-                              modifiers={Object {}}
-                              placement="right"
+                              data-placement={undefined}
+                              data-x-out-of-boundaries={undefined}
+                              id="popover-13-popoverContent"
+                              style={
+                                Object {
+                                  "opacity": 0,
+                                  "pointerEvents": "none",
+                                  "position": "absolute",
+                                }
+                              }
                               tabIndex={0}
                             >
-                              <div
-                                className="glamor-15"
-                                data-placement={undefined}
-                                data-x-out-of-boundaries={undefined}
-                                id="popover-12-popoverContent"
-                                style={
-                                  Object {
-                                    "opacity": 0,
-                                    "pointerEvents": "none",
-                                    "position": "absolute",
-                                  }
-                                }
-                                tabIndex={0}
+                              <ThemedComponent
+                                subtitle="Subtitle"
                               >
-                                <ThemedComponent
+                                <Themed(CardTitle)
                                   subtitle="Subtitle"
                                 >
-                                  <Themed(CardTitle)
-                                    subtitle="Subtitle"
-                                  >
+                                  <ThemeProvider>
                                     <ThemeProvider>
-                                      <ThemeProvider>
-                                        <CardTitle
-                                          subtitle="Subtitle"
-                                        >
-                                          <CardTitle>
-                                            <div
-                                              className="glamor-9"
-                                            >
-                                              <glamorous(div)>
-                                                <div
-                                                  className="glamor-8"
+                                      <CardTitle
+                                        subtitle="Subtitle"
+                                      >
+                                        <CardTitle>
+                                          <div
+                                            className="glamor-9"
+                                          >
+                                            <glamorous(div)>
+                                              <div
+                                                className="glamor-8"
+                                              >
+                                                <glamorous(div)
+                                                  variant={undefined}
                                                 >
-                                                  <glamorous(div)
-                                                    variant={undefined}
+                                                  <div
+                                                    className="glamor-6"
                                                   >
-                                                    <div
-                                                      className="glamor-6"
+                                                    <glamorous(h3)
+                                                      actions={undefined}
                                                     >
-                                                      <glamorous(h3)
-                                                        actions={undefined}
+                                                      <h3
+                                                        className="glamor-5"
                                                       >
-                                                        <h3
-                                                          className="glamor-5"
-                                                        >
-                                                          Title
-                                                        </h3>
-                                                      </glamorous(h3)>
+                                                        Title
+                                                      </h3>
+                                                    </glamorous(h3)>
+                                                  </div>
+                                                </glamorous(div)>
+                                                <glamorous(h4)
+                                                  avatar={undefined}
+                                                >
+                                                  <h4
+                                                    className="glamor-7"
+                                                  >
+                                                    Subtitle
+                                                  </h4>
+                                                </glamorous(h4)>
+                                              </div>
+                                            </glamorous(div)>
+                                          </div>
+                                        </CardTitle>
+                                      </CardTitle>
+                                    </ThemeProvider>
+                                  </ThemeProvider>
+                                </Themed(CardTitle)>
+                              </ThemedComponent>
+                              <ThemedComponent>
+                                <Themed(CardBlock)>
+                                  <ThemeProvider>
+                                    <ThemeProvider>
+                                      <CardBlock>
+                                        <CardBlock>
+                                          <div
+                                            className="glamor-12"
+                                          >
+                                            <glamorous(div)>
+                                              <div
+                                                className="glamor-11"
+                                              >
+                                                <DemoContent>
+                                                  <glamorous(div)>
+                                                    <div
+                                                      className="glamor-10"
+                                                    >
+                                                      Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                                     </div>
                                                   </glamorous(div)>
-                                                  <glamorous(h4)
-                                                    avatar={undefined}
-                                                  >
-                                                    <h4
-                                                      className="glamor-7"
-                                                    >
-                                                      Subtitle
-                                                    </h4>
-                                                  </glamorous(h4)>
-                                                </div>
-                                              </glamorous(div)>
-                                            </div>
-                                          </CardTitle>
-                                        </CardTitle>
-                                      </ThemeProvider>
-                                    </ThemeProvider>
-                                  </Themed(CardTitle)>
-                                </ThemedComponent>
-                                <ThemedComponent>
-                                  <Themed(CardBlock)>
-                                    <ThemeProvider>
-                                      <ThemeProvider>
-                                        <CardBlock>
-                                          <CardBlock>
-                                            <div
-                                              className="glamor-12"
-                                            >
-                                              <glamorous(div)>
-                                                <div
-                                                  className="glamor-11"
-                                                >
-                                                  <DemoContent>
-                                                    <glamorous(div)>
-                                                      <div
-                                                        className="glamor-10"
-                                                      >
-                                                        Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
-                                                      </div>
-                                                    </glamorous(div)>
-                                                  </DemoContent>
-                                                </div>
-                                              </glamorous(div)>
-                                            </div>
-                                          </CardBlock>
+                                                </DemoContent>
+                                              </div>
+                                            </glamorous(div)>
+                                          </div>
                                         </CardBlock>
-                                      </ThemeProvider>
+                                      </CardBlock>
                                     </ThemeProvider>
-                                  </Themed(CardBlock)>
-                                </ThemedComponent>
+                                  </ThemeProvider>
+                                </Themed(CardBlock)>
+                              </ThemedComponent>
+                              <PopoverArrow
+                                placement={undefined}
+                                size="8px"
+                              >
                                 <PopoverArrow
+                                  aria-hidden={true}
                                   placement={undefined}
                                   size="8px"
                                 >
-                                  <PopoverArrow
+                                  <Arrow
                                     aria-hidden={true}
-                                    placement={undefined}
-                                    size="8px"
+                                    className="glamor-13"
                                   >
-                                    <Arrow
+                                    <span
                                       aria-hidden={true}
                                       className="glamor-13"
+                                      style={Object {}}
                                     >
-                                      <span
-                                        aria-hidden={true}
-                                        className="glamor-13"
-                                        style={Object {}}
-                                      >
-                                        ▼
-                                      </span>
-                                    </Arrow>
-                                  </PopoverArrow>
+                                      ▼
+                                    </span>
+                                  </Arrow>
                                 </PopoverArrow>
-                              </div>
-                            </Popper>
-                          </PopoverContent>
+                              </PopoverArrow>
+                            </div>
+                          </Popper>
                         </PopoverContent>
-                        <EventListener
-                          listeners={
-                            Array [
-                              Object {
-                                "event": "click",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                              Object {
-                                "event": "keydown",
-                                "handler": [Function],
-                                "options": true,
-                                "target": "document",
-                              },
-                            ]
-                          }
-                        />
-                      </div>
+                      </PopoverContent>
+                      <EventListener
+                        listeners={
+                          Array [
+                            Object {
+                              "event": "click",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                            Object {
+                              "event": "keydown",
+                              "handler": [Function],
+                              "options": true,
+                              "target": "document",
+                            },
+                          ]
+                        }
+                      />
                     </Manager>
                   </Popover>
                 </Popover>
