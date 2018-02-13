@@ -15,35 +15,49 @@
  */
 
 /* @flow */
-import React, { cloneElement, Component } from 'react';
+import React, { Children, cloneElement, Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Manager } from 'react-popper';
 import { createStyledComponent } from '../styles';
-import { generateId } from '../utils';
+import { generateId, composeEventHandlers } from '../utils';
 import EventListener from '../EventListener';
 import Portal from '../Portal';
 import PopoverTrigger from './PopoverTrigger';
-import PopoverContent from './PopoverContent';
+import PopoverContent, {
+  componentTheme as popoverContentComponentTheme
+} from './PopoverContent';
+import { componentTheme as popoverArrowComponentTheme } from './PopoverArrow';
 
 type Props = {
   /** Trigger for the Popover */
   children: React$Node,
   /** Content of the Popover */
   content: $FlowFixMe,
+  /** For use with uncontrolled components, in which the Popover is immediately open upon initialization */
+  defaultIsOpen?: boolean,
   /** Disables the Popover */
   disabled?: boolean,
+  /**
+   * Determines whether focus will be set to the trigger when the Popover is
+   * closed.
+   */
+  focusTriggerOnClose?: boolean,
   /** Include an arrow on the Popover content pointing to the trigger */
   hasArrow?: boolean,
   /** For use with controlled components, in which the app manages Popover state */
   isOpen?: boolean,
-  /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options.*/
+  /**
+   * Plugins that are used to alter behavior. See
+   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
+   * for options.
+   */
   modifiers?: Object,
   /** Called when Popover is closed */
   onClose?: (event: SyntheticEvent<>) => void,
   /** Called when Popover is opened */
   onOpen?: (event: SyntheticEvent<>) => void,
-  /** Open the Popover immediately upon initialization */
-  defaultIsOpen?: boolean,
+  /** Function that returns props to be applied to the PopoverContent */
+  getContentProps?: (props: Object, scope?: Object) => Object,
   /** Function that returns props to be applied to the trigger */
   getTriggerProps?: (props: Object, scope?: Object) => Object,
   /** Placement of the Popover */
@@ -79,6 +93,12 @@ type State = {
   isOpen?: boolean
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  ...popoverArrowComponentTheme(baseTheme),
+  ...popoverContentComponentTheme(baseTheme),
+  ...baseTheme
+});
+
 const Root = createStyledComponent(
   Manager,
   {
@@ -86,24 +106,20 @@ const Root = createStyledComponent(
   },
   {
     displayName: 'Popover',
-    rootEl: 'div'
+    forwardProps: ['tag']
   }
 );
 
 /**
- * Popovers hold supporting information or user controls.
- * Popovers float over page content.
- * You can control placement, scroll behavior, and focus management to customize your implementation.
- * Popovers can be toggled on a user action or a state change.
+ * Popovers float over page content and hold supporting information or user controls.
  */
 export default class Popover extends Component<Props, State> {
   static defaultProps = {
+    focusTriggerOnClose: true,
     hasArrow: true,
     placement: 'bottom',
     wrapContent: true
   };
-
-  props: Props;
 
   state: State = {
     isOpen: Boolean(this.props.defaultIsOpen)
@@ -120,6 +136,7 @@ export default class Popover extends Component<Props, State> {
       children,
       content,
       disabled,
+      getContentProps,
       getTriggerProps,
       hasArrow,
       modifiers,
@@ -135,16 +152,21 @@ export default class Popover extends Component<Props, State> {
     const { isOpen } = this.isControlled() ? this.props : this.state;
 
     const rootProps = {
-      ...restProps
+      ...restProps,
+      tag: false
     };
     const contentId = `${this.id}-popoverContent`;
 
+    const child = Children.only(children);
+
     let popoverTriggerProps = {
       contentId,
-      children,
+      children: child,
       disabled,
-      isOpen,
-      onClick: !disabled ? this.toggleOpenState : undefined,
+      isOpen: Boolean(isOpen),
+      onClick: !disabled
+        ? composeEventHandlers(this.toggleOpenState, child.props.onClick)
+        : undefined,
       ref: node => {
         this.popoverTrigger = node;
         triggerRef && triggerRef(node);
@@ -159,7 +181,7 @@ export default class Popover extends Component<Props, State> {
     let popoverContent;
     if (isOpen) {
       if (wrapContent) {
-        const popoverContentProps = {
+        let popoverContentProps = {
           hasArrow,
           id: contentId,
           modifiers,
@@ -168,7 +190,13 @@ export default class Popover extends Component<Props, State> {
             this.popoverContent = node;
           },
           subtitle,
+          tabIndex: 0,
           title
+        };
+
+        popoverContentProps = {
+          ...popoverContentProps,
+          ...(getContentProps && getContentProps(popoverContentProps))
         };
 
         popoverContent = (
@@ -227,9 +255,10 @@ export default class Popover extends Component<Props, State> {
   };
 
   closeActions = (event: SyntheticEvent<>) => {
-    this.props.onClose && this.props.onClose(event);
+    const { focusTriggerOnClose, onClose } = this.props;
+    onClose && onClose(event);
     const { isOpen } = this.isControlled() ? this.props : this.state;
-    !isOpen && this.focusTrigger();
+    !isOpen && focusTriggerOnClose && this.focusTrigger();
   };
 
   focusTrigger = () => {

@@ -167,6 +167,14 @@ describe('Popover', () => {
 
       expect(content.exists()).toEqual(false);
     });
+
+    it('passes disabled attribute to trigger', () => {
+      const [, popover] = mountPopover({ disabled: true });
+      const trigger = popover.find(PopoverTrigger);
+      const button = trigger.find('button');
+
+      expect(button.prop('disabled')).toEqual(true);
+    });
   });
 
   testDemoExamples(examples);
