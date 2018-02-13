@@ -28,27 +28,34 @@ type Props = {
 
 const Root = createStyledComponent(
   Target,
-  {},
+  {
+    display: 'inline-block'
+  },
   {
     displayName: 'PopoverTrigger'
   }
 );
 
 export default class PopoverTrigger extends Component<Props> {
-  props: Props;
-
   render() {
     const { children, disabled, isOpen, contentId, ...restProps } = this.props;
+    const child = Children.only(children);
+
+    const rootProps = {
+      component: 'span'
+    };
+
     const triggerProps = {
       'aria-owns': contentId,
       'aria-describedby': contentId,
       'aria-disabled': disabled,
       'aria-expanded': isOpen,
-      disabled,
+      disabled:
+        child.props.disabled !== undefined ? child.props.disabled : disabled,
       role: 'button',
       ...restProps
     };
 
-    return <Root>{cloneElement(Children.only(children), triggerProps)}</Root>;
+    return <Root {...rootProps}>{cloneElement(child, triggerProps)}</Root>;
   }
 }

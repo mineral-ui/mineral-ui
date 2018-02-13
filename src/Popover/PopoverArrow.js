@@ -18,7 +18,6 @@
 import React from 'react';
 import { Arrow } from 'react-popper';
 import { createStyledComponent } from '../styles';
-import { componentTheme as popoverContentComponentTheme } from './PopoverContent';
 
 type Props = {
   /** Size of arrow */
@@ -42,13 +41,19 @@ type Props = {
     | 'top-start'
 };
 
+export const componentTheme = (baseTheme: Object) => ({
+  PopoverArrow_backgroundColor: baseTheme.color_white,
+  PopoverArrow_borderColor: baseTheme.color_gray_20,
+  ...baseTheme
+});
+
 const Root = createStyledComponent(
   Arrow,
   ({ placement, size, theme: baseTheme }) => {
-    const theme = popoverContentComponentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
     let arrowShadow = ', 0 3px 1px rgba(0, 0, 0, 0.3)';
+    const horizontalOffset = `-${parseFloat(size) - 4}px`;
     let directionalStyles;
-    let offset = `-${parseFloat(size) - 2}px`;
     let rotation = 0;
 
     switch (true) {
@@ -56,7 +61,7 @@ const Root = createStyledComponent(
         // Magic numbers to optically match theme.boxShadow_2
         arrowShadow = ', 0 4px 2px rgba(0, 0, 0, 0.3)';
         directionalStyles = {
-          bottom: offset,
+          bottom: `-${parseFloat(size) - 2}px`,
           left: `calc(50% - ${size})`,
           marginBottom: 0,
           marginTop: 0
@@ -65,7 +70,7 @@ const Root = createStyledComponent(
       case placement && placement.startsWith('bottom'):
         arrowShadow = '';
         directionalStyles = {
-          top: offset,
+          top: `-${parseFloat(size) - 3}px`,
           left: `calc(50% - ${size})`,
           marginBottom: 0,
           marginTop: 0
@@ -73,9 +78,8 @@ const Root = createStyledComponent(
         rotation = 180;
         break;
       case placement && placement.startsWith('left'):
-        offset = `-${parseFloat(size) - 3}px`;
         directionalStyles = {
-          right: offset,
+          right: horizontalOffset,
           top: `calc(50% - ${size})`,
           marginLeft: 0,
           marginRight: 0
@@ -83,9 +87,8 @@ const Root = createStyledComponent(
         rotation = -90;
         break;
       case placement && placement.startsWith('right'):
-        offset = `-${parseFloat(size) - 3}px`;
         directionalStyles = {
-          left: offset,
+          left: horizontalOffset,
           top: `calc(50% - ${size})`,
           marginLeft: 0,
           marginRight: 0
@@ -99,12 +102,12 @@ const Root = createStyledComponent(
     }
 
     return {
-      color: theme.PopoverContent_backgroundColor,
+      color: theme.PopoverArrow_backgroundColor,
       display: 'inline-block',
       fontSize: size,
       margin: size,
       position: 'absolute',
-      textShadow: `0 2px 0 ${theme.PopoverContent_borderColor}${arrowShadow}`,
+      textShadow: `0 2px 0 ${theme.PopoverArrow_borderColor}${arrowShadow}`,
       transform: `rotate(${rotation}deg) scaleX(2)`,
       ...directionalStyles
     };

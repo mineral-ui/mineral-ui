@@ -25,7 +25,11 @@ import PopoverArrow from './PopoverArrow';
 type Props = {
   /** Content of the Popover */
   children: React$Node,
-  /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
+  /**
+   * Plugins that are used to alter behavior. See
+   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
+   * for options.
+   */
   modifiers?: Object,
   /** Include an arrow on the Popover content pointing to the trigger */
   hasArrow?: boolean,
@@ -59,8 +63,14 @@ export const componentTheme = (baseTheme: Object) => ({
   PopoverContent_borderColor: baseTheme.color_gray_20,
   PopoverContent_borderRadius: baseTheme.borderRadius_1,
   PopoverContent_boxShadow: baseTheme.shadow_2,
+  PopoverContent_color: baseTheme.color_text,
   PopoverContent_paddingVertical: baseTheme.space_inset_sm,
+  PopoverContent_maxWidth: 'none',
   PopoverContent_zIndex: baseTheme.zIndex_100,
+
+  PopoverContentBlock_marginVertical: baseTheme.space_stack_sm,
+  PopoverContentBlock_paddingHorizontal: baseTheme.space_inset_md,
+
   ...baseTheme
 });
 
@@ -74,7 +84,9 @@ const Root = createStyledComponent(
       border: `1px solid ${theme.PopoverContent_borderColor}`,
       borderRadius: theme.PopoverContent_borderRadius,
       boxShadow: theme.PopoverContent_boxShadow,
+      color: theme.PopoverContent_color,
       padding: `${theme.PopoverContent_paddingVertical} 0`,
+      maxWidth: theme.PopoverContent_maxWidth,
       zIndex: theme.PopoverContent_zIndex,
 
       '&[data-placement^="top"]': {
@@ -100,9 +112,14 @@ const Root = createStyledComponent(
   }
 );
 
-const cardOverrides = ({ theme }) => ({
-  CardRow_marginVertical: theme.space_stack_sm
-});
+const cardOverrides = ({ theme: baseTheme }) => {
+  const theme = componentTheme(baseTheme);
+  return {
+    CardRow_marginVertical: theme.PopoverContentBlock_marginVertical,
+    CardRow_marginVerticalLast: theme.PopoverContentBlock_marginVertical,
+    CardRow_paddingHorizontal: theme.PopoverContentBlock_paddingHorizontal
+  };
+};
 
 const PopoverBlock = createThemedComponent(CardBlock, cardOverrides);
 const PopoverTitle = createThemedComponent(CardTitle, cardOverrides);
@@ -125,7 +142,6 @@ export default class PopoverContent extends Component<Props> {
 
     const rootProps = {
       placement,
-      tabIndex: 0,
       ...restProps
     };
     const popoverArrowProps = {
