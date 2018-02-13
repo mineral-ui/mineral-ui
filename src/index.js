@@ -34,6 +34,7 @@ export { default as Popover } from './Popover';
 export { default as Radio, RadioGroup } from './Radio';
 export { default as TextArea } from './TextArea';
 export { default as TextInput } from './TextInput';
+export { default as Tooltip } from './Tooltip';
 export * from './colors';
 export { createStyledComponent } from './styles';
 export {
