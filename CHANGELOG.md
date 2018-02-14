@@ -1,3 +1,14 @@
+<a name="0.20.0"></a>
+# [0.20.0](https://github.com/mineral-ui/mineral-ui/compare/v0.19.0...v0.20.0) (2018-02-14)
+
+
+### Features
+
+* **box,flex,start-end:** New Box, Flex, FlexItem, & StartEnd components ([edf3ea0](https://github.com/mineral-ui/mineral-ui/commit/edf3ea0))
+* **themes:** Add breakpoint theme variables ([615cba2](https://github.com/mineral-ui/mineral-ui/commit/615cba2))
+
+
+
 <a name="0.19.0"></a>
 # [0.19.0](https://github.com/mineral-ui/mineral-ui/compare/v0.18.0...v0.19.0) (2018-02-13)
 
