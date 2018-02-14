@@ -19,7 +19,7 @@ export default {
   id: 'import-syntax',
   title: 'Import Syntax',
   description: `\`\`\`
-import { Box } from 'mineral-ui/Box';
+import Box from 'mineral-ui/Box';
 \`\`\`
 
 <Callout title="Note">

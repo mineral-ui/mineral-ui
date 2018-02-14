@@ -19,7 +19,7 @@ export default {
   id: 'import-syntax',
   title: 'Import Syntax',
   description: `\`\`\`
-import { StartEnd } from 'mineral-ui/StartEnd';
+import StartEnd from 'mineral-ui/StartEnd';
 \`\`\`
 
 <Callout title="Note">
