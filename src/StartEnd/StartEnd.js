@@ -33,11 +33,8 @@ type Props = {
   direction?: 'column' | 'row' | Array<'column' | 'row'>,
   /** @Private From Flex; filtered out */
   justifyContent?: any,
-  /**
-   * Displays the second, rather than the first, child with a majority of the
-   * available width
-   */
-  priority?: 'start' | 'end' | 'both' | false,
+  /** Determines which side stretches to fill the available width */
+  priority?: 'start' | 'end' | 'both',
   /** @Private From Flex; filtered out */
   wrap?: any
 };
