@@ -23,6 +23,7 @@ import {
 } from '../../styles';
 import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
+import ErrorBoundary from './ErrorBoundary';
 import Heading from './SiteHeading';
 import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
@@ -66,7 +67,9 @@ const styles = {
     // Specificity hack
     // Sometimes Page's intro styling needs undone
     '& > p[class][class]': {
+      color: 'inherit',
       fontSize: theme.fontSize_prose,
+      fontWeight: 'inherit',
       maxWidth: theme.maxTextWidth
     }
   }),
@@ -159,7 +162,7 @@ export default function ComponentDocExample({
         {!standalone ? <Link to={id}>{title}</Link> : title}
       </Title>
       <Description scope={{ Callout }}>{description || ''}</Description>
-      {liveCode}
+      <ErrorBoundary buttonLabel="Reload example">{liveCode}</ErrorBoundary>
     </Root>
   );
 }
