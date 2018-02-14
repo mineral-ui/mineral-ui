@@ -44,7 +44,12 @@ const styles = {
       : {
           backgroundColor,
           border: `1px solid ${rgba(siteColors.slate, 0.3)}`,
-          padding: theme.space_inset_md
+          fontFamily: 'comic sans ms',
+          padding: theme.space_inset_md,
+
+          '& ::selection': {
+            backgroundColor: 'highlight'
+          }
         };
   },
   liveEditor: ({ theme }) => ({
