@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link demo examples basic 1`] = `
+.glamor-8,
+[data-glamor-8] {
+  font-family: Open Sans;
+}
+
 .glamor-1,
 [data-glamor-1] {
   font-size: 1.5em;
@@ -60,6 +65,7 @@ exports[`Link demo examples basic 1`] = `
           Object {
             "Big": [Function],
             "Bold": [Function],
+            "DemoLayout": [Function],
             "Link": [Function],
             "Serif": [Function],
             "Small": [Function],
@@ -70,128 +76,132 @@ exports[`Link demo examples basic 1`] = `
           <div
             className="react-live-preview"
           >
-            <div>
-              <glamorous(p)>
-                <p
-                  className="glamor-1"
-                >
-                  Lorem ipsum dolor sit amet, 
-                  <Link
-                    href="http://example.com"
+            <glamorous(div)>
+              <div
+                className="glamor-8"
+              >
+                <glamorous(p)>
+                  <p
+                    className="glamor-1"
                   >
+                    Lorem ipsum dolor sit amet, 
                     <Link
                       href="http://example.com"
-                      target="_blank"
                     >
                       <Link
                         href="http://example.com"
                         target="_blank"
-                        variant="regular"
                       >
-                        <a
-                          className="glamor-0"
+                        <Link
                           href="http://example.com"
                           target="_blank"
+                          variant="regular"
                         >
-                          consectetur
-                        </a>
+                          <a
+                            className="glamor-0"
+                            href="http://example.com"
+                            target="_blank"
+                          >
+                            consectetur
+                          </a>
+                        </Link>
                       </Link>
                     </Link>
-                  </Link>
-                   adipiscing elit,
-                </p>
-              </glamorous(p)>
-              <glamorous(p)>
-                <p
-                  className="glamor-3"
-                >
-                  sed do eiusmod tempor 
-                  <Link
-                    href="http://example.com"
+                     adipiscing elit,
+                  </p>
+                </glamorous(p)>
+                <glamorous(p)>
+                  <p
+                    className="glamor-3"
                   >
+                    sed do eiusmod tempor 
                     <Link
                       href="http://example.com"
-                      target="_blank"
                     >
                       <Link
                         href="http://example.com"
                         target="_blank"
-                        variant="regular"
                       >
-                        <a
-                          className="glamor-0"
+                        <Link
                           href="http://example.com"
                           target="_blank"
+                          variant="regular"
                         >
-                          incididunt
-                        </a>
+                          <a
+                            className="glamor-0"
+                            href="http://example.com"
+                            target="_blank"
+                          >
+                            incididunt
+                          </a>
+                        </Link>
                       </Link>
                     </Link>
-                  </Link>
-                   ut labore et dolore magna aliqua.
-                </p>
-              </glamorous(p)>
-              <glamorous(p)>
-                <p
-                  className="glamor-5"
-                >
-                  Ut enim 
-                  <Link
-                    href="http://example.com"
+                     ut labore et dolore magna aliqua.
+                  </p>
+                </glamorous(p)>
+                <glamorous(p)>
+                  <p
+                    className="glamor-5"
                   >
+                    Ut enim 
                     <Link
                       href="http://example.com"
-                      target="_blank"
                     >
                       <Link
                         href="http://example.com"
                         target="_blank"
-                        variant="regular"
                       >
-                        <a
-                          className="glamor-0"
+                        <Link
                           href="http://example.com"
                           target="_blank"
+                          variant="regular"
                         >
-                          ad minim veniam
-                        </a>
+                          <a
+                            className="glamor-0"
+                            href="http://example.com"
+                            target="_blank"
+                          >
+                            ad minim veniam
+                          </a>
+                        </Link>
                       </Link>
                     </Link>
-                  </Link>
-                   quis nostrud exercitation
-                </p>
-              </glamorous(p)>
-              <glamorous(p)>
-                <p
-                  className="glamor-7"
-                >
-                  ullamco laboris 
-                  <Link
-                    href="http://example.com"
+                     quis nostrud exercitation
+                  </p>
+                </glamorous(p)>
+                <glamorous(p)>
+                  <p
+                    className="glamor-7"
                   >
+                    ullamco laboris 
                     <Link
                       href="http://example.com"
-                      target="_blank"
                     >
                       <Link
                         href="http://example.com"
                         target="_blank"
-                        variant="regular"
                       >
-                        <a
-                          className="glamor-0"
+                        <Link
                           href="http://example.com"
                           target="_blank"
+                          variant="regular"
                         >
-                          nisi ut
-                        </a>
+                          <a
+                            className="glamor-0"
+                            href="http://example.com"
+                            target="_blank"
+                          >
+                            nisi ut
+                          </a>
+                        </Link>
                       </Link>
                     </Link>
-                  </Link>
-                   aliquip ex ea commodo consequat.
-                </p>
-              </glamorous(p)>
-            </div>
+                     aliquip ex ea commodo consequat.
+                  </p>
+                </glamorous(p)>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
@@ -473,6 +483,11 @@ exports[`Link demo examples children 1`] = `
 `;
 
 exports[`Link demo examples other 1`] = `
+.glamor-2,
+[data-glamor-2] {
+  font-family: Open Sans;
+}
+
 .glamor-0,
 [data-glamor-0] {
   color: #2e6fd9;
@@ -511,6 +526,7 @@ exports[`Link demo examples other 1`] = `
         scope={
           Object {
             "BrowserRouter": [Function],
+            "DemoLayout": [Function],
             "Link": [Function],
             "ReactRouterLink": [Function],
           }
@@ -520,54 +536,60 @@ exports[`Link demo examples other 1`] = `
           <div
             className="react-live-preview"
           >
-            <BrowserRouter>
-              <Router
-                history={
-                  Object {
-                    "action": "POP",
-                    "block": [Function],
-                    "createHref": [Function],
-                    "go": [Function],
-                    "goBack": [Function],
-                    "goForward": [Function],
-                    "length": 1,
-                    "listen": [Function],
-                    "location": Object {
-                      "hash": "",
-                      "pathname": "blank",
-                      "search": "",
-                      "state": undefined,
-                    },
-                    "push": [Function],
-                    "replace": [Function],
-                  }
-                }
+            <glamorous(div)>
+              <div
+                className="glamor-2"
               >
-                <Link
-                  element={[Function]}
-                  to="/components/link"
-                >
-                  <Link
-                    to="/components/link"
-                    variant="regular"
+                <BrowserRouter>
+                  <Router
+                    history={
+                      Object {
+                        "action": "POP",
+                        "block": [Function],
+                        "createHref": [Function],
+                        "go": [Function],
+                        "goBack": [Function],
+                        "goForward": [Function],
+                        "length": 1,
+                        "listen": [Function],
+                        "location": Object {
+                          "hash": "",
+                          "pathname": "blank",
+                          "search": "",
+                          "state": undefined,
+                        },
+                        "push": [Function],
+                        "replace": [Function],
+                      }
+                    }
                   >
                     <Link
-                      className="glamor-0"
-                      replace={false}
+                      element={[Function]}
                       to="/components/link"
                     >
-                      <a
-                        className="glamor-0"
-                        href="/components/link"
-                        onClick={[Function]}
+                      <Link
+                        to="/components/link"
+                        variant="regular"
                       >
-                        ReactRouter Link
-                      </a>
+                        <Link
+                          className="glamor-0"
+                          replace={false}
+                          to="/components/link"
+                        >
+                          <a
+                            className="glamor-0"
+                            href="/components/link"
+                            onClick={[Function]}
+                          >
+                            ReactRouter Link
+                          </a>
+                        </Link>
+                      </Link>
                     </Link>
-                  </Link>
-                </Link>
-              </Router>
-            </BrowserRouter>
+                  </Router>
+                </BrowserRouter>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
@@ -605,6 +627,11 @@ exports[`Link demo examples states 1`] = `
 .glamor-0[data-simulate-active],
 [data-glamor-0][data-simulate-active] {
   color: #1f5dc2;
+}
+
+.glamor-24,
+[data-glamor-24] {
+  font-family: Open Sans;
 }
 
 .glamor-24 > a,
@@ -719,7 +746,7 @@ exports[`Link demo examples states 1`] = `
           <div
             className="react-live-preview"
           >
-            <glamorous(div)>
+            <glamorous(glamorous(div))>
               <div
                 className="glamor-24"
               >
@@ -1406,7 +1433,7 @@ exports[`Link demo examples states 1`] = `
                   </Link>
                 </Link>
               </div>
-            </glamorous(div)>
+            </glamorous(glamorous(div))>
           </div>
         </LivePreview>
       </div>
@@ -1444,6 +1471,11 @@ exports[`Link demo examples variants 1`] = `
 .glamor-0[data-simulate-active],
 [data-glamor-0][data-simulate-active] {
   color: #1f5dc2;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  font-family: Open Sans;
 }
 
 .glamor-4 > a,
@@ -1557,7 +1589,7 @@ exports[`Link demo examples variants 1`] = `
           <div
             className="react-live-preview"
           >
-            <glamorous(div)>
+            <glamorous(glamorous(div))>
               <div
                 className="glamor-4"
               >
@@ -1656,7 +1688,7 @@ exports[`Link demo examples variants 1`] = `
                   </Link>
                 </Link>
               </div>
-            </glamorous(div)>
+            </glamorous(glamorous(div))>
           </div>
         </LivePreview>
       </div>

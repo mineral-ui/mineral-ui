@@ -2732,6 +2732,11 @@ exports[`Tooltip demo examples prose 1`] = `
   display: inline-block;
 }
 
+.glamor-4,
+[data-glamor-4] {
+  font-family: Open Sans;
+}
+
 .glamor-0,
 [data-glamor-0] {
   border-bottom-style: dashed;
@@ -2746,6 +2751,7 @@ exports[`Tooltip demo examples prose 1`] = `
         className="react-live"
         scope={
           Object {
+            "DemoLayout": [Function],
             "Tooltip": [Function],
           }
         }
@@ -2754,149 +2760,155 @@ exports[`Tooltip demo examples prose 1`] = `
           <div
             className="react-live-preview"
           >
-            <p>
-              Here's some prose with a 
-              <Tooltip
-                content="Light years star stuff"
-                isOpen={true}
-                usePortal={true}
+            <glamorous(div)>
+              <div
+                className="glamor-4"
               >
-                <ThemedComponent
-                  content="Light years star stuff"
-                  focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
-                  isOpen={true}
-                  onClose={[Function]}
-                  onOpen={[Function]}
-                  usePortal={true}
-                >
-                  <Themed(Popover)
+                <p>
+                  Here's some prose with a 
+                  <Tooltip
                     content="Light years star stuff"
-                    focusTriggerOnClose={false}
-                    getContentProps={[Function]}
-                    getTriggerProps={[Function]}
                     isOpen={true}
-                    onClose={[Function]}
-                    onOpen={[Function]}
                     usePortal={true}
                   >
-                    <ThemeProvider>
-                      <ThemeProvider>
-                        <Popover
-                          content="Light years star stuff"
-                          focusTriggerOnClose={false}
-                          getContentProps={[Function]}
-                          getTriggerProps={[Function]}
-                          hasArrow={true}
-                          isOpen={true}
-                          onClose={[Function]}
-                          onOpen={[Function]}
-                          placement="bottom"
-                          usePortal={true}
-                          wrapContent={true}
-                        >
-                          <Popover
-                            focusTriggerOnClose={false}
-                            isOpen={true}
-                            onClose={[Function]}
-                            onOpen={[Function]}
-                            tag={false}
-                          >
-                            <Manager
-                              className="glamor-1"
+                    <ThemedComponent
+                      content="Light years star stuff"
+                      focusTriggerOnClose={false}
+                      getContentProps={[Function]}
+                      getTriggerProps={[Function]}
+                      isOpen={true}
+                      onClose={[Function]}
+                      onOpen={[Function]}
+                      usePortal={true}
+                    >
+                      <Themed(Popover)
+                        content="Light years star stuff"
+                        focusTriggerOnClose={false}
+                        getContentProps={[Function]}
+                        getTriggerProps={[Function]}
+                        isOpen={true}
+                        onClose={[Function]}
+                        onOpen={[Function]}
+                        usePortal={true}
+                      >
+                        <ThemeProvider>
+                          <ThemeProvider>
+                            <Popover
+                              content="Light years star stuff"
                               focusTriggerOnClose={false}
+                              getContentProps={[Function]}
+                              getTriggerProps={[Function]}
+                              hasArrow={true}
                               isOpen={true}
                               onClose={[Function]}
                               onOpen={[Function]}
-                              tag={false}
+                              placement="bottom"
+                              usePortal={true}
+                              wrapContent={true}
                             >
-                              <PopoverTrigger
-                                aria-expanded={undefined}
-                                contentId="popover-17-popoverContent"
-                                disabled={undefined}
+                              <Popover
+                                focusTriggerOnClose={false}
                                 isOpen={true}
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
-                                tabIndex={0}
+                                onClose={[Function]}
+                                onOpen={[Function]}
+                                tag={false}
                               >
-                                <PopoverTrigger
-                                  component="span"
+                                <Manager
+                                  className="glamor-1"
+                                  focusTriggerOnClose={false}
+                                  isOpen={true}
+                                  onClose={[Function]}
+                                  onOpen={[Function]}
+                                  tag={false}
                                 >
-                                  <Target
-                                    className="glamor-1"
-                                    component="span"
+                                  <PopoverTrigger
+                                    aria-expanded={undefined}
+                                    contentId="popover-17-popoverContent"
+                                    disabled={undefined}
+                                    isOpen={true}
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
+                                    tabIndex={0}
                                   >
-                                    <span
-                                      className="glamor-1"
+                                    <PopoverTrigger
+                                      component="span"
                                     >
-                                      <glamorous(span)
-                                        aria-describedby="popover-17-popoverContent"
-                                        aria-disabled={undefined}
-                                        aria-expanded={undefined}
-                                        aria-owns="popover-17-popoverContent"
-                                        disabled={undefined}
-                                        onBlur={[Function]}
-                                        onClick={[Function]}
-                                        onFocus={[Function]}
-                                        onMouseEnter={[Function]}
-                                        onMouseLeave={[Function]}
-                                        role="button"
-                                        tabIndex={0}
+                                      <Target
+                                        className="glamor-1"
+                                        component="span"
                                       >
                                         <span
-                                          aria-describedby="popover-17-popoverContent"
-                                          aria-disabled={undefined}
-                                          aria-expanded={undefined}
-                                          aria-owns="popover-17-popoverContent"
-                                          className="glamor-0"
-                                          onBlur={[Function]}
-                                          onClick={[Function]}
-                                          onFocus={[Function]}
-                                          onMouseEnter={[Function]}
-                                          onMouseLeave={[Function]}
-                                          role="button"
-                                          tabIndex={0}
+                                          className="glamor-1"
                                         >
-                                          Tooltip
+                                          <glamorous(span)
+                                            aria-describedby="popover-17-popoverContent"
+                                            aria-disabled={undefined}
+                                            aria-expanded={undefined}
+                                            aria-owns="popover-17-popoverContent"
+                                            disabled={undefined}
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                            tabIndex={0}
+                                          >
+                                            <span
+                                              aria-describedby="popover-17-popoverContent"
+                                              aria-disabled={undefined}
+                                              aria-expanded={undefined}
+                                              aria-owns="popover-17-popoverContent"
+                                              className="glamor-0"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              role="button"
+                                              tabIndex={0}
+                                            >
+                                              Tooltip
+                                            </span>
+                                          </glamorous(span)>
                                         </span>
-                                      </glamorous(span)>
-                                    </span>
-                                  </Target>
-                                </PopoverTrigger>
-                              </PopoverTrigger>
-                              <Portal />
-                              <EventListener
-                                listeners={
-                                  Array [
-                                    Object {
-                                      "event": "click",
-                                      "handler": [Function],
-                                      "options": true,
-                                      "target": "document",
-                                    },
-                                    Object {
-                                      "event": "keydown",
-                                      "handler": [Function],
-                                      "options": true,
-                                      "target": "document",
-                                    },
-                                  ]
-                                }
-                              />
-                            </Manager>
-                          </Popover>
-                        </Popover>
-                      </ThemeProvider>
-                    </ThemeProvider>
-                  </Themed(Popover)>
-                </ThemedComponent>
-              </Tooltip>
-               in the middle of it.
-            </p>
+                                      </Target>
+                                    </PopoverTrigger>
+                                  </PopoverTrigger>
+                                  <Portal />
+                                  <EventListener
+                                    listeners={
+                                      Array [
+                                        Object {
+                                          "event": "click",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                        Object {
+                                          "event": "keydown",
+                                          "handler": [Function],
+                                          "options": true,
+                                          "target": "document",
+                                        },
+                                      ]
+                                    }
+                                  />
+                                </Manager>
+                              </Popover>
+                            </Popover>
+                          </ThemeProvider>
+                        </ThemeProvider>
+                      </Themed(Popover)>
+                    </ThemedComponent>
+                  </Tooltip>
+                   in the middle of it.
+                </p>
+              </div>
+            </glamorous(div)>
           </div>
         </LivePreview>
       </div>
