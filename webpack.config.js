@@ -20,6 +20,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const compactLicenseHeader = require('./utils/license').compactLicenseHeader;
+const FlowWebpackPlugin = require('flow-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const ANALYZE = process.env.ANALYZE;
 const isProduction = NODE_ENV === 'production';
@@ -69,6 +70,9 @@ module.exports = {
   devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   plugins: (() => {
     let plugins = [
+      new FlowWebpackPlugin({
+        failOnError: false
+      }),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
         GOOGLE_TRACKING_ID: JSON.stringify(GOOGLE_TRACKING_ID)
