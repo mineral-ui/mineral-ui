@@ -38,6 +38,7 @@
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
     "start": "webpack-dev-server --progress",
+    "start:flow": "FLOW=true npm start",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
   "config": {
