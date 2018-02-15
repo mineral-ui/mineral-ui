@@ -18,10 +18,11 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../../styles';
 import _Link from '../../../../../Link';
+import _DemoLayout from '../components/DemoLayout';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
-const DemoLayout = createStyledComponent('div', {
+const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > a': {
     marginRight: '0.5rem'
   }

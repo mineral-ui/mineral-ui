@@ -18,6 +18,7 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../../styles';
 import _Link from '../../../../../Link';
+import DemoLayout from '../components/DemoLayout';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
@@ -31,9 +32,9 @@ export default {
   title: 'Basic Usage',
   description: `Use the Link component to ensure that anchors are consistently styled with the rest of your app.
 Links inherit font size, weight, and family from context; colors are inherited from the theme.`,
-  scope: { Big, Bold, Link, Serif, Small },
+  scope: { Big, Bold, DemoLayout, Link, Serif, Small },
   source: `
-    <div>
+    <DemoLayout>
       <Big>
         Lorem ipsum dolor sit amet, <Link href="http://example.com">consectetur</Link> adipiscing elit,
       </Big>
@@ -49,5 +50,5 @@ Links inherit font size, weight, and family from context; colors are inherited f
       <Serif>
         ullamco laboris <Link href="http://example.com">nisi ut</Link> aliquip ex ea commodo consequat.
       </Serif>
-    </div>`
+    </DemoLayout>`
 };

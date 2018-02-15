@@ -16,21 +16,7 @@
 
 /* @flow */
 import { createStyledComponent } from '../../../../../styles';
-import Tooltip from '../../../../../Tooltip';
 
-const DemoLayout = createStyledComponent('div', ({ theme }) => ({
+export default createStyledComponent('div', ({ theme }) => ({
   fontFamily: theme.fontFamily
 }));
-
-export default {
-  id: 'prose',
-  title: 'In Prose',
-  description: `Tooltips can add information to prose.`,
-  scope: { DemoLayout, Tooltip },
-  source: `
-    <DemoLayout>
-      <p>
-        Here's some prose with a <Tooltip content="Light years star stuff" isOpen usePortal>Tooltip</Tooltip> in the middle of it.
-      </p>
-    </DemoLayout>`
-};
