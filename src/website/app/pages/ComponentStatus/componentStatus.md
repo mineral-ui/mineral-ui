@@ -20,17 +20,19 @@ Statuses:
 | Component                                   | Status           |
 |---------------------------------------------|------------------|
 | [Avatar](/components/avatar)                | [available]      |
+| [Box](/components/box) ~ new                | [available]      |
 | [Button](/components/button)                | [available]      |
 | [Card](/components/card)                    | [available]      |
 | [Checkbox](/components/checkbox)            | [available]      |
 | [Dropdown](/components/dropdown)            | [available]      |
+| [Flex](/components/flex) ~ new              | [available]      |
 | [Form](/components/form-field)              | [available]      |
 | [Icon](/components/icon)                    | [available]      |
-| [Layout](/components/layout) ~ new          | [available]      |
 | [Link](/components/link)                    | [available]      |
 | [Menu](/components/menu)                    | [available]      |
 | [Popover](/components/popover)              | [available]      |
 | [Radio](/components/radio)                  | [available]      |
+| [StartEnd](/components/start-end) ~ new     | [available]      |
 | [TextArea](/components/text-area)           | [available]      |
 | [TextInput](/components/text-input)         | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
