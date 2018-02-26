@@ -68,13 +68,13 @@ run-happo "$CURRENT_SHA"
 
 # Compare reports from the two SHAs.
 COMMIT_SUBJECT="$(git show -s --format=%s)"
-SUMMARY=$(npm run --silent happo compare "$PREVIOUS_SHA" "$CURRENT_SHA" \
-  --link "$PR_URL" --message "$COMMIT_SUBJECT" || true)
+if ! SUMMARY=$(npm run --silent happo compare "$PREVIOUS_SHA" "$CURRENT_SHA" \
+  --link "$PR_URL" --message "$COMMIT_SUBJECT"); then
+  MESSAGE="Message from Happo:
 
-MESSAGE="Message from Happo:
+  $SUMMARY"
 
-$SUMMARY"
+  echo "Attempting to post comment on ${PR_URL}: ${MESSAGE}"
 
-echo "Attempting to post comment on ${PR_URL}: ${MESSAGE}"
-
-node scripts/postCommentOnPR.js "$MESSAGE"
+  node scripts/postCommentOnPR.js "$MESSAGE"
+fi
