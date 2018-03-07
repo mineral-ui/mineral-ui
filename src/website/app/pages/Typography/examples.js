@@ -29,6 +29,7 @@ type TypeExamples = Array<TypeExample>;
 
 const styles = {
   list: ({ theme }) => ({
+    fontSize: theme.fontSize_ui,
     listStyle: 'square',
     paddingLeft: theme.space_inline_lg
   })
@@ -45,10 +46,10 @@ content sections. **Caption Text** is used to highlight or offset content, such
 as inline help or when captioning dashboard content.`,
     examples: [
       {
-        content: <Paragraph type="ui">Paragraph UI</Paragraph>,
+        content: <Paragraph>Paragraph UI</Paragraph>,
         value: '<p>, <li>',
         color: 'color_gray_100',
-        font: 'Bold (14/0.875)'
+        font: 'Regular (14/0.875)'
       },
       {
         content: (
@@ -62,7 +63,7 @@ as inline help or when captioning dashboard content.`,
         // but list-style will override any numbers shown on <ol> list items
         value: '<ul>, <ol>',
         color: 'color_gray_100',
-        font: 'Bold (14)'
+        font: 'Regular (14/0.875)'
       },
       {
         content: <Paragraph variant="prose">Paragraph (Long Form)</Paragraph>,
@@ -107,19 +108,19 @@ section divisions—it’s not for long-form content.`,
         content: <Heading level={2}>Large Section Header</Heading>,
         value: '<h2>',
         color: 'color_gray_80',
-        font: 'SemiBold (28/1.75)'
+        font: 'Bold (28/1.75)'
       },
       {
         content: <Heading level={3}>Medium Section Header</Heading>,
         value: '<h3>',
         color: 'color_gray_80',
-        font: 'SemiBold (22/1.375)'
+        font: 'Bold (22/1.375)'
       },
       {
         content: <Heading level={4}>Small Section Header</Heading>,
         value: '<h4>',
         color: 'color_gray_80',
-        font: 'Bold (14/0.875)'
+        font: 'Bold (18/1.125)'
       }
     ]
   }
