@@ -15,6 +15,13 @@
  */
 
 /* @flow */
-export { generateId, resetId } from './generateId';
-export { default as composeEventHandlers } from './composeEventHandlers';
-export { default as composePropsWithGetter } from './composePropsWithGetter';
+export default function composePropsWithGetter(
+  props: Object,
+  getter: ?(props: Object, scope?: Object) => Object,
+  scope?: Object
+) {
+  return {
+    ...props,
+    ...(getter && getter(props, scope))
+  };
+}
