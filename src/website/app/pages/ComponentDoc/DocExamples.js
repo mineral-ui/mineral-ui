@@ -16,18 +16,23 @@ type Example = {
 };
 
 type Props = {
-  examples: Array<Example>
+  examples: Array<Example>,
+  slug: string
 };
 
-export default function DocExamples({ examples }: Props) {
+export default function DocExamples({ examples, slug }: Props) {
   if (process.env.NODE_ENV === 'production') {
     examples = examples.filter(example => !example.hideFromProd);
   }
   return (
     <Section>
-      {examples.map((example, index) => (
-        <ComponentDocExample key={index} {...example} />
-      ))}
+      {examples.map((example, index) => {
+        const exampleProps = {
+          slug,
+          ...example
+        };
+        return <ComponentDocExample {...exampleProps} key={index} />;
+      })}
     </Section>
   );
 }
