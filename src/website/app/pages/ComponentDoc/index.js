@@ -28,6 +28,7 @@ type Props = {
     canonicalLink: string
   },
   propsComment?: string | React$Element<*>,
+  slug: string,
   title: string,
   whenHowToUse?: string
 };
@@ -78,8 +79,8 @@ export default function ComponentDoc({
   componentTheme,
   doc,
   examples,
-
   propsComment,
+  slug,
   title,
   whenHowToUse,
   ...restProps
@@ -96,6 +97,7 @@ export default function ComponentDoc({
   };
   delete rootProps.subcomponent;
   delete rootProps.slug;
+  const examplesProps = { examples, slug };
   const propProps = { propDoc, propsComment, title };
   const themeVariablesProps = {
     baseTheme: mineralTheme,
@@ -108,7 +110,7 @@ export default function ComponentDoc({
       {doc.description && <DocIntro>{doc.description}</DocIntro>}
       <DocSubNav {...subNavProps} />
       {examples && <DocHeading id="examples">Examples</DocHeading>}
-      {examples && <DocExamples examples={examples} />}
+      {examples && <DocExamples {...examplesProps} />}
       <DocHeading id="api-and-theme">API & Theme</DocHeading>
       <DocProps {...propProps} />
       {componentTheme && <DocThemeVariables {...themeVariablesProps} />}

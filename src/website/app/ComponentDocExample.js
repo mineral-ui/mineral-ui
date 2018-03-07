@@ -22,6 +22,7 @@ type Props = {
   hideSource?: boolean,
   id: string,
   scope?: Object,
+  slug: string,
   source?: string,
   standalone?: boolean,
   title?: React$Node
@@ -107,12 +108,17 @@ export default function ComponentDocExample({
   hideSource,
   id,
   scope,
+  slug,
   source,
   standalone,
   title: propsTitle,
   ...restProps
 }: Props) {
   const rootProps = { ...restProps };
+  const descriptionProps = {
+    scope: { Callout },
+    standalone
+  };
   const liveProviderProps = {
     backgroundColor,
     hideSource: chromeless || hideSource,
@@ -138,14 +144,18 @@ export default function ComponentDocExample({
   ) : (
     <Root {...rootProps}>
       {standalone && (
-        <BackLink to="../">
+        <BackLink to={`/components/${slug}`}>
           <IconArrowBack color="currentColor" size="small" /> {componentName}
         </BackLink>
       )}
       <Title id={!standalone ? id : undefined}>
-        {!standalone ? <Link to={id}>{title}</Link> : title}
+        {!standalone ? (
+          <Link to={`/components/${slug}/${id}`}>{title}</Link>
+        ) : (
+          title
+        )}
       </Title>
-      <Description scope={{ Callout }}>{description || ''}</Description>
+      <Description {...descriptionProps}>{description || ''}</Description>
       <ErrorBoundary buttonLabel="Reload example">{liveCode}</ErrorBoundary>
     </Root>
   );

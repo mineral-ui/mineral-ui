@@ -24,7 +24,8 @@ type Props = {
   className?: string,
   scope?: {
     [string]: React$ComponentType<*>
-  }
+  },
+  standalone?: boolean
 };
 
 type mdCodeProps = {
@@ -306,6 +307,7 @@ export default function Markdown({
   children,
   className,
   scope,
+  standalone,
   ...restProps
 }: Props) {
   const rootProps = {
@@ -317,7 +319,16 @@ export default function Markdown({
     createElement,
     elements: {
       a({ href, children }: mdLinkProps) {
-        const linkProps = isNormalLink(href) ? { href } : { to: href };
+        let linkProps = { to: href };
+        if (isNormalLink(href)) {
+          if (standalone && href.startsWith('#')) {
+            // When viewing a standalone example, convert any same-page anchor
+            // links to routed ones
+            linkProps = { to: href.replace('#', '') };
+          } else {
+            linkProps = { href };
+          }
+        }
         return <Link {...linkProps}>{children}</Link>;
       },
       code({ language = 'jsx', code, children }: mdCodeProps) {

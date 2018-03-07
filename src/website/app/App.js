@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
-import { Redirect, Route, Switch } from 'react-router-dom';
 import { canUseDOM } from 'exenv';
 import lighten from 'polished/lib/color/lighten';
 import { pxToEm } from '../../styles';
@@ -119,27 +118,13 @@ class App extends Component<Props> {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if (canUseDOM && this.props.location !== prevProps.location) {
-      global.window.scrollTo(0, 0);
-    }
-  }
-
   render() {
     const { demoRoutes } = this.props;
 
     return (
       <ThemeProvider theme={siteTheme}>
         <div>
-          <Switch>
-            <Route
-              exact
-              strict
-              path="/:url*"
-              render={props => <Redirect to={`${props.location.pathname}/`} />}
-            />
-            <Route render={() => <Router demoRoutes={demoRoutes} />} />
-          </Switch>
+          <Router demoRoutes={demoRoutes} />
           <BaselineGrid />
         </div>
       </ThemeProvider>

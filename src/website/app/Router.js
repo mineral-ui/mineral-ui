@@ -8,6 +8,7 @@ import Page from './Page';
 import sections from './pages';
 import ComponentDoc from './pages/ComponentDoc';
 import Loadable from './Loadable';
+import ScrollToIdOnMount from './ScrollToIdOnMount';
 
 type Props = {
   demoRoutes: Array<DemoRoute>
@@ -30,7 +31,9 @@ const getPageHeader = (heading: string, title: string) => {
 };
 
 export default function Router({ demoRoutes }: Props) {
-  const flatDemoRoutes = createKeyMap(flatten(demoRoutes), 'slug');
+  const flatDemoRoutes = flatten(demoRoutes);
+  const keyedDemoRoutes = createKeyMap(flatDemoRoutes, 'slug');
+  const firstDemoSlug = flatDemoRoutes[0].slug;
 
   const routes = sections
     .map((section, sectionIndex) => {
@@ -38,7 +41,7 @@ export default function Router({ demoRoutes }: Props) {
         <Route
           key={`page-${sectionIndex}-${pageIndex}`}
           path={page.path}
-          render={() => {
+          render={({ location }) => {
             const pageMeta = {
               canonicalLink: `https://mineral-ui.com${page.path}`,
               description: page.description,
@@ -50,9 +53,20 @@ export default function Router({ demoRoutes }: Props) {
               pageMeta,
               type: sectionIndex
             };
+
+            const AsyncPage = Loadable({
+              loader: () => import(`./pages/${page.component}`),
+              // eslint-disable-next-line react/display-name
+              render: ({ default: Component }: Object) => (
+                <ScrollToIdOnMount id={location.hash.replace('#', '')}>
+                  <Component />
+                </ScrollToIdOnMount>
+              )
+            });
+
             return (
               <Page {...pageProps}>
-                <page.component />
+                <AsyncPage />
               </Page>
             );
           }}
@@ -73,7 +87,7 @@ export default function Router({ demoRoutes }: Props) {
         render={route => {
           const { componentId, exampleId } = route.match.params;
           // $FlowFixMe
-          const selectedDemo = flatDemoRoutes[componentId || 'button'];
+          const selectedDemo = keyedDemoRoutes[componentId || firstDemoSlug];
           const chromeless = route.location.search === '?chromeless';
           const pageProps = {
             chromeless,
@@ -96,6 +110,7 @@ export default function Router({ demoRoutes }: Props) {
               const exampleProps = {
                 chromeless,
                 componentName: selectedFullDemo.title,
+                slug: selectedDemo.slug,
                 standalone: true,
                 ...selectedExample
               };
@@ -113,10 +128,10 @@ export default function Router({ demoRoutes }: Props) {
       />
       <Route
         path="/components/:componentId"
-        render={route => {
-          const componentId = route.match.params.componentId || 'button';
+        render={({ location, match }) => {
+          const componentId = match.params.componentId || firstDemoSlug;
           // $FlowFixMe
-          const selectedDemo = flatDemoRoutes[componentId];
+          const selectedDemo = keyedDemoRoutes[componentId];
 
           if (selectedDemo.redirect) {
             return <Redirect to={`/components/${selectedDemo.redirect}`} />;
@@ -137,7 +152,15 @@ export default function Router({ demoRoutes }: Props) {
           const AsyncComponentDoc = Loadable({
             loader: () => import('./demos/index'),
             render({ default: fullDemos }: Object) {
-              return <ComponentDoc {...fullDemos[componentId]} />;
+              const docProps = {
+                slug: selectedDemo.slug,
+                ...fullDemos[componentId]
+              };
+              return (
+                <ScrollToIdOnMount id={location.hash.replace('#', '')}>
+                  <ComponentDoc {...docProps} />
+                </ScrollToIdOnMount>
+              );
             }
           });
 
@@ -147,6 +170,10 @@ export default function Router({ demoRoutes }: Props) {
             </Page>
           );
         }}
+      />
+      <Route
+        path="/components"
+        render={() => <Redirect to={`/components/${firstDemoSlug}`} />}
       />
     </Switch>
   );
