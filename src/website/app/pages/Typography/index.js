@@ -17,7 +17,11 @@
 /* @flow */
 import React from 'react';
 import colorable from 'colorable';
-import { createStyledComponent, pxToEm } from '../../../../styles';
+import {
+  createStyledComponent,
+  getNormalizedValue,
+  pxToEm
+} from '../../../../styles';
 import Markdown from '../../Markdown';
 import {
   Table as _Table,
@@ -70,6 +74,9 @@ const styles = {
   table: {
     fontFamily: 'Open Sans'
   },
+  exampleCell: ({ theme }) => ({
+    fontSize: getNormalizedValue('1em', theme.fontSize_ui)
+  }),
   valueCell: ({ theme }) => ({
     fontFamily: theme.fontFamily_monospace,
     verticalAlign: 'middle'
@@ -83,6 +90,7 @@ const OverflowContainer = createStyledComponent(
 );
 const Section = createStyledComponent('section', styles.section);
 const Table = createStyledComponent(_Table, styles.table);
+const ExampleCell = createStyledComponent(TableCell, styles.exampleCell);
 const ValueCell = createStyledComponent(TableCell, styles.valueCell);
 
 export default function Typography(props: Props) {
@@ -110,7 +118,7 @@ export default function Typography(props: Props) {
                 <tbody>
                   {section.examples.map(({ content, value, color, font }) => (
                     <TableRow key={value}>
-                      <TableCell>{content}</TableCell>
+                      <ExampleCell>{content}</ExampleCell>
                       <ValueCell>{value}</ValueCell>
                       <ValueCell>
                         <ColorValue color={color}>
