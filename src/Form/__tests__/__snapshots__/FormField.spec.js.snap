@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormField demo examples basic 1`] = `
-.glamor-3,
-[data-glamor-3] {
+.glamor-6,
+[data-glamor-6] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -11,12 +11,12 @@ exports[`FormField demo examples basic 1`] = `
   outline: 0;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.glamor-6 *,
+[data-glamor-6] *,
+.glamor-6 *::before,
+[data-glamor-6] *::before,
+.glamor-6 *::after,
+[data-glamor-6] *::after {
   box-sizing: inherit;
 }
 
@@ -43,14 +43,8 @@ exports[`FormField demo examples basic 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-4,
+[data-glamor-4] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -58,23 +52,13 @@ exports[`FormField demo examples basic 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2 [role="img"],
-[data-glamor-2] [role="img"] {
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -82,8 +66,76 @@ exports[`FormField demo examples basic 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-2 [role="img"]:last-of-type,
-[data-glamor-2] [role="img"]:last-of-type {
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover > div:last-child,
+[data-glamor-3]:hover > div:last-child,
+.glamor-3[data-simulate-hover] > div:last-child,
+[data-glamor-3][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-3:focus > div:last-child,
+[data-glamor-3]:focus > div:last-child,
+.glamor-3[data-simulate-focus] > div:last-child,
+[data-glamor-3][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3:active > div:last-child,
+[data-glamor-3]:active > div:last-child,
+.glamor-3[data-simulate-active] > div:last-child,
+[data-glamor-3][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3 [role="img"],
+[data-glamor-3] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-3 [role="img"]:last-of-type,
+[data-glamor-3] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -92,16 +144,16 @@ exports[`FormField demo examples basic 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -136,31 +188,16 @@ exports[`FormField demo examples basic 1`] = `
   display: none;
 }
 
-.glamor-1:hover ~ div,
-[data-glamor-1]:hover ~ div,
-.glamor-1[data-simulate-hover] ~ div,
-[data-glamor-1][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-1:focus ~ div,
-[data-glamor-1]:focus ~ div,
-.glamor-1[data-simulate-focus] ~ div,
-[data-glamor-1][data-simulate-focus] ~ div {
+.glamor-1:focus ~ div:last-child,
+[data-glamor-1]:focus ~ div:last-child,
+.glamor-1[data-simulate-focus] ~ div:last-child,
+[data-glamor-1][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-1:active ~ div,
-[data-glamor-1]:active ~ div,
-.glamor-1[data-simulate-active] ~ div,
-[data-glamor-1][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-1 ~ div,
-[data-glamor-1] ~ div {
+.glamor-2,
+[data-glamor-2] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -174,8 +211,8 @@ exports[`FormField demo examples basic 1`] = `
   z-index: -1;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.glamor-9,
+[data-glamor-9] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -195,17 +232,17 @@ exports[`FormField demo examples basic 1`] = `
   -webkit-align-items: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.glamor-9 *,
+[data-glamor-9] *,
+.glamor-9 *::before,
+[data-glamor-9] *::before,
+.glamor-9 *::after,
+[data-glamor-9] *::after {
   box-sizing: inherit;
 }
 
-.glamor-5,
-[data-glamor-5] {
+.glamor-8,
+[data-glamor-8] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -224,62 +261,62 @@ exports[`FormField demo examples basic 1`] = `
   -webkit-flex: 1 1 auto;
 }
 
-.glamor-5::placeholder,
-[data-glamor-5]::placeholder,
-.glamor-5[data-simulate-placeholder],
-[data-glamor-5][data-simulate-placeholder] {
+.glamor-8::placeholder,
+[data-glamor-8]::placeholder,
+.glamor-8[data-simulate-placeholder],
+[data-glamor-8][data-simulate-placeholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-5::-ms-input-placeholder,
-[data-glamor-5]::-ms-input-placeholder,
-.glamor-5[data-simulate-msinputplaceholder],
-[data-glamor-5][data-simulate-msinputplaceholder] {
+.glamor-8::-ms-input-placeholder,
+[data-glamor-8]::-ms-input-placeholder,
+.glamor-8[data-simulate-msinputplaceholder],
+[data-glamor-8][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-5:-ms-input-placeholder,
-[data-glamor-5]:-ms-input-placeholder,
-.glamor-5[data-simulate-msinputplaceholder],
-[data-glamor-5][data-simulate-msinputplaceholder] {
+.glamor-8:-ms-input-placeholder,
+[data-glamor-8]:-ms-input-placeholder,
+.glamor-8[data-simulate-msinputplaceholder],
+[data-glamor-8][data-simulate-msinputplaceholder] {
   color: #8e99ab;
   font-style: italic;
 }
 
-.glamor-5::-ms-clear,
-[data-glamor-5]::-ms-clear,
-.glamor-5[data-simulate-msclear],
-[data-glamor-5][data-simulate-msclear] {
+.glamor-8::-ms-clear,
+[data-glamor-8]::-ms-clear,
+.glamor-8[data-simulate-msclear],
+[data-glamor-8][data-simulate-msclear] {
   display: none;
 }
 
-.glamor-5:hover ~ div,
-[data-glamor-5]:hover ~ div,
-.glamor-5[data-simulate-hover] ~ div,
-[data-glamor-5][data-simulate-hover] ~ div {
+.glamor-8:hover ~ div,
+[data-glamor-8]:hover ~ div,
+.glamor-8[data-simulate-hover] ~ div,
+[data-glamor-8][data-simulate-hover] ~ div {
   border-color: #2e6fd9;
 }
 
-.glamor-5:focus ~ div,
-[data-glamor-5]:focus ~ div,
-.glamor-5[data-simulate-focus] ~ div,
-[data-glamor-5][data-simulate-focus] ~ div {
+.glamor-8:focus ~ div,
+[data-glamor-8]:focus ~ div,
+.glamor-8[data-simulate-focus] ~ div,
+[data-glamor-8][data-simulate-focus] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-5:active ~ div,
-[data-glamor-5]:active ~ div,
-.glamor-5[data-simulate-active] ~ div,
-[data-glamor-5][data-simulate-active] ~ div {
+.glamor-8:active ~ div,
+[data-glamor-8]:active ~ div,
+.glamor-8[data-simulate-active] ~ div,
+[data-glamor-8][data-simulate-active] ~ div {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-5 ~ div,
-[data-glamor-5] ~ div {
+.glamor-8 ~ div,
+[data-glamor-8] ~ div {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -313,7 +350,7 @@ exports[`FormField demo examples basic 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-8"
+                className="glamor-11"
               >
                 <FormField
                   input={[Function]}
@@ -324,7 +361,7 @@ exports[`FormField demo examples basic 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -350,42 +387,117 @@ exports[`FormField demo examples basic 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -400,7 +512,7 @@ exports[`FormField demo examples basic 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -429,7 +541,7 @@ exports[`FormField demo examples basic 1`] = `
                             variant={undefined}
                           >
                             <div
-                              className="glamor-6"
+                              className="glamor-9"
                             >
                               <glamorous(textarea)
                                 aria-describedby={undefined}
@@ -450,7 +562,7 @@ exports[`FormField demo examples basic 1`] = `
                                   aria-describedby={undefined}
                                   aria-invalid={undefined}
                                   aria-required={undefined}
-                                  className="glamor-5"
+                                  className="glamor-8"
                                   disabled={undefined}
                                   onInput={[Function]}
                                   readOnly={undefined}
@@ -477,8 +589,8 @@ exports[`FormField demo examples basic 1`] = `
 `;
 
 exports[`FormField demo examples caption 1`] = `
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -487,12 +599,12 @@ exports[`FormField demo examples caption 1`] = `
   outline: 0;
 }
 
-.glamor-4 *,
-[data-glamor-4] *,
-.glamor-4 *::before,
-[data-glamor-4] *::before,
-.glamor-4 *::after,
-[data-glamor-4] *::after {
+.glamor-7 *,
+[data-glamor-7] *,
+.glamor-7 *::before,
+[data-glamor-7] *::before,
+.glamor-7 *::after,
+[data-glamor-7] *::after {
   box-sizing: inherit;
 }
 
@@ -519,14 +631,8 @@ exports[`FormField demo examples caption 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-4,
+[data-glamor-4] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -534,23 +640,13 @@ exports[`FormField demo examples caption 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2 [role="img"],
-[data-glamor-2] [role="img"] {
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -558,8 +654,76 @@ exports[`FormField demo examples caption 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-2 [role="img"]:last-of-type,
-[data-glamor-2] [role="img"]:last-of-type {
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover > div:last-child,
+[data-glamor-3]:hover > div:last-child,
+.glamor-3[data-simulate-hover] > div:last-child,
+[data-glamor-3][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-3:focus > div:last-child,
+[data-glamor-3]:focus > div:last-child,
+.glamor-3[data-simulate-focus] > div:last-child,
+[data-glamor-3][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3:active > div:last-child,
+[data-glamor-3]:active > div:last-child,
+.glamor-3[data-simulate-active] > div:last-child,
+[data-glamor-3][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3 [role="img"],
+[data-glamor-3] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-3 [role="img"]:last-of-type,
+[data-glamor-3] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -568,16 +732,16 @@ exports[`FormField demo examples caption 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -612,31 +776,16 @@ exports[`FormField demo examples caption 1`] = `
   display: none;
 }
 
-.glamor-1:hover ~ div,
-[data-glamor-1]:hover ~ div,
-.glamor-1[data-simulate-hover] ~ div,
-[data-glamor-1][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-1:focus ~ div,
-[data-glamor-1]:focus ~ div,
-.glamor-1[data-simulate-focus] ~ div,
-[data-glamor-1][data-simulate-focus] ~ div {
+.glamor-1:focus ~ div:last-child,
+[data-glamor-1]:focus ~ div:last-child,
+.glamor-1[data-simulate-focus] ~ div:last-child,
+[data-glamor-1][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-1:active ~ div,
-[data-glamor-1]:active ~ div,
-.glamor-1[data-simulate-active] ~ div,
-[data-glamor-1][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-1 ~ div,
-[data-glamor-1] ~ div {
+.glamor-2,
+[data-glamor-2] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -650,8 +799,8 @@ exports[`FormField demo examples caption 1`] = `
   z-index: -1;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.glamor-6,
+[data-glamor-6] {
   color: #58606e;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
@@ -683,7 +832,7 @@ exports[`FormField demo examples caption 1`] = `
                 className={undefined}
               >
                 <div
-                  className="glamor-4"
+                  className="glamor-7"
                 >
                   <label>
                     <glamorous(div)
@@ -709,42 +858,117 @@ exports[`FormField demo examples caption 1`] = `
                     >
                       <TextInput
                         className={undefined}
+                        control={[Function]}
+                        controlProps={
+                          Object {
+                            "aria-describedby": "formField-7-caption",
+                            "aria-invalid": undefined,
+                            "aria-required": undefined,
+                            "controlRef": undefined,
+                            "disabled": undefined,
+                            "readOnly": undefined,
+                            "required": undefined,
+                            "type": "text",
+                          }
+                        }
+                        disabled={undefined}
+                        iconEnd={undefined}
+                        iconStart={undefined}
+                        prefix={undefined}
+                        readOnly={undefined}
+                        size="large"
+                        suffix={undefined}
                         variant={undefined}
                       >
-                        <div
-                          className="glamor-2"
+                        <FauxControl
+                          className="glamor-4"
+                          control={[Function]}
+                          controlProps={
+                            Object {
+                              "aria-describedby": "formField-7-caption",
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          disabled={undefined}
+                          iconEnd={undefined}
+                          iconStart={undefined}
+                          prefix={undefined}
+                          readOnly={undefined}
+                          size="large"
+                          suffix={undefined}
+                          variant={undefined}
                         >
-                          <glamorous(input)
-                            aria-describedby="formField-7-caption"
-                            aria-invalid={undefined}
-                            aria-required={undefined}
+                          <FauxControl
+                            className="glamor-4"
                             disabled={undefined}
-                            iconEnd={undefined}
-                            iconStart={undefined}
-                            innerRef={[Function]}
-                            prefix={undefined}
-                            readOnly={undefined}
-                            required={undefined}
-                            size="large"
-                            suffix={undefined}
-                            type="text"
+                            innerRef={undefined}
                             variant={undefined}
                           >
-                            <input
-                              aria-describedby="formField-7-caption"
-                              aria-invalid={undefined}
-                              aria-required={undefined}
-                              className="glamor-1"
-                              disabled={undefined}
-                              prefix={undefined}
-                              readOnly={undefined}
-                              required={undefined}
-                              size="large"
-                              type="text"
-                            />
-                          </glamorous(input)>
-                          <div />
-                        </div>
+                            <div
+                              className="glamor-3"
+                            >
+                              <glamorous(glamorous(input))
+                                aria-describedby="formField-7-caption"
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                controlPropsIn={
+                                  Object {
+                                    "aria-describedby": "formField-7-caption",
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
+                                controlRef={undefined}
+                                disabled={undefined}
+                                iconEnd={undefined}
+                                iconStart={undefined}
+                                innerRef={undefined}
+                                key="control"
+                                prefix={undefined}
+                                readOnly={undefined}
+                                required={undefined}
+                                size="large"
+                                suffix={undefined}
+                                type="text"
+                                variant={undefined}
+                              >
+                                <input
+                                  aria-describedby="formField-7-caption"
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  className="glamor-1"
+                                  disabled={undefined}
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="text"
+                                />
+                              </glamorous(glamorous(input))>
+                              <Underlay
+                                disabled={undefined}
+                                readOnly={undefined}
+                                variant={undefined}
+                              >
+                                <div
+                                  className="glamor-2"
+                                  readOnly={undefined}
+                                />
+                              </Underlay>
+                            </div>
+                          </FauxControl>
+                        </FauxControl>
                       </TextInput>
                     </TextInput>
                   </label>
@@ -755,7 +979,7 @@ exports[`FormField demo examples caption 1`] = `
                     variant={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                       id="formField-7-caption"
                     >
                       This is help text
@@ -773,8 +997,8 @@ exports[`FormField demo examples caption 1`] = `
 `;
 
 exports[`FormField demo examples hide-label 1`] = `
-.glamor-3,
-[data-glamor-3] {
+.glamor-6,
+[data-glamor-6] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -783,12 +1007,12 @@ exports[`FormField demo examples hide-label 1`] = `
   outline: 0;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.glamor-6 *,
+[data-glamor-6] *,
+.glamor-6 *::before,
+[data-glamor-6] *::before,
+.glamor-6 *::after,
+[data-glamor-6] *::after {
   box-sizing: inherit;
 }
 
@@ -815,14 +1039,8 @@ exports[`FormField demo examples hide-label 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-4,
+[data-glamor-4] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -830,23 +1048,13 @@ exports[`FormField demo examples hide-label 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2 [role="img"],
-[data-glamor-2] [role="img"] {
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -854,8 +1062,76 @@ exports[`FormField demo examples hide-label 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-2 [role="img"]:last-of-type,
-[data-glamor-2] [role="img"]:last-of-type {
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover > div:last-child,
+[data-glamor-3]:hover > div:last-child,
+.glamor-3[data-simulate-hover] > div:last-child,
+[data-glamor-3][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-3:focus > div:last-child,
+[data-glamor-3]:focus > div:last-child,
+.glamor-3[data-simulate-focus] > div:last-child,
+[data-glamor-3][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3:active > div:last-child,
+[data-glamor-3]:active > div:last-child,
+.glamor-3[data-simulate-active] > div:last-child,
+[data-glamor-3][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3 [role="img"],
+[data-glamor-3] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-3 [role="img"]:last-of-type,
+[data-glamor-3] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -864,16 +1140,16 @@ exports[`FormField demo examples hide-label 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -908,31 +1184,16 @@ exports[`FormField demo examples hide-label 1`] = `
   display: none;
 }
 
-.glamor-1:hover ~ div,
-[data-glamor-1]:hover ~ div,
-.glamor-1[data-simulate-hover] ~ div,
-[data-glamor-1][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-1:focus ~ div,
-[data-glamor-1]:focus ~ div,
-.glamor-1[data-simulate-focus] ~ div,
-[data-glamor-1][data-simulate-focus] ~ div {
+.glamor-1:focus ~ div:last-child,
+[data-glamor-1]:focus ~ div:last-child,
+.glamor-1[data-simulate-focus] ~ div:last-child,
+[data-glamor-1][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-1:active ~ div,
-[data-glamor-1]:active ~ div,
-.glamor-1[data-simulate-active] ~ div,
-[data-glamor-1][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-1 ~ div,
-[data-glamor-1] ~ div {
+.glamor-2,
+[data-glamor-2] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -946,8 +1207,8 @@ exports[`FormField demo examples hide-label 1`] = `
   z-index: -1;
 }
 
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   color: #58606e;
   display: -webkit-box;
   display: -moz-box;
@@ -973,8 +1234,8 @@ exports[`FormField demo examples hide-label 1`] = `
   -webkit-clip-path: inset(50%);
 }
 
-.glamor-4 > *,
-[data-glamor-4] > * {
+.glamor-7 > *,
+[data-glamor-7] > * {
   align-self: flex-end;
   display: inline-block;
   -webkit-align-self: flex-end;
@@ -999,7 +1260,7 @@ exports[`FormField demo examples hide-label 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-8"
+                className="glamor-14"
               >
                 <FormField
                   input={[Function]}
@@ -1011,7 +1272,7 @@ exports[`FormField demo examples hide-label 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -1038,44 +1299,122 @@ exports[`FormField demo examples hide-label 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "placeholder": "1234 Main St",
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "placeholder": "1234 Main St",
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                placeholder="1234 Main St"
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  placeholder="1234 Main St"
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "placeholder": "1234 Main St",
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    placeholder="1234 Main St"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      placeholder="1234 Main St"
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -1093,7 +1432,7 @@ exports[`FormField demo examples hide-label 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -1101,7 +1440,7 @@ exports[`FormField demo examples hide-label 1`] = `
                           key="formField-15-textWrapper"
                         >
                           <div
-                            className="glamor-4"
+                            className="glamor-7"
                           >
                             <span
                               id="formField-15-labelText"
@@ -1120,44 +1459,122 @@ exports[`FormField demo examples hide-label 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "placeholder": "Apt 101",
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "placeholder": "Apt 101",
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                placeholder="Apt 101"
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  placeholder="Apt 101"
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "placeholder": "Apt 101",
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    placeholder="Apt 101"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      placeholder="Apt 101"
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -1175,8 +1592,8 @@ exports[`FormField demo examples hide-label 1`] = `
 `;
 
 exports[`FormField demo examples required 1`] = `
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1185,12 +1602,12 @@ exports[`FormField demo examples required 1`] = `
   outline: 0;
 }
 
-.glamor-4 *,
-[data-glamor-4] *,
-.glamor-4 *::before,
-[data-glamor-4] *::before,
-.glamor-4 *::after,
-[data-glamor-4] *::after {
+.glamor-7 *,
+[data-glamor-7] *,
+.glamor-7 *::before,
+[data-glamor-7] *::before,
+.glamor-7 *::after,
+[data-glamor-7] *::after {
   box-sizing: inherit;
 }
 
@@ -1217,14 +1634,8 @@ exports[`FormField demo examples required 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-5,
+[data-glamor-5] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -1232,23 +1643,13 @@ exports[`FormField demo examples required 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-3 [role="img"],
-[data-glamor-3] [role="img"] {
+.glamor-5 [role="img"],
+[data-glamor-5] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -1256,8 +1657,76 @@ exports[`FormField demo examples required 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-3 [role="img"]:last-of-type,
-[data-glamor-3] [role="img"]:last-of-type {
+.glamor-5 [role="img"]:last-of-type,
+[data-glamor-5] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-4 *,
+[data-glamor-4] *,
+.glamor-4 *::before,
+[data-glamor-4] *::before,
+.glamor-4 *::after,
+[data-glamor-4] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-4:hover > div:last-child,
+[data-glamor-4]:hover > div:last-child,
+.glamor-4[data-simulate-hover] > div:last-child,
+[data-glamor-4][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-4:focus > div:last-child,
+[data-glamor-4]:focus > div:last-child,
+.glamor-4[data-simulate-focus] > div:last-child,
+[data-glamor-4][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4:active > div:last-child,
+[data-glamor-4]:active > div:last-child,
+.glamor-4[data-simulate-active] > div:last-child,
+[data-glamor-4][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -1266,16 +1735,16 @@ exports[`FormField demo examples required 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -1310,31 +1779,16 @@ exports[`FormField demo examples required 1`] = `
   display: none;
 }
 
-.glamor-2:hover ~ div,
-[data-glamor-2]:hover ~ div,
-.glamor-2[data-simulate-hover] ~ div,
-[data-glamor-2][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-2:focus ~ div,
-[data-glamor-2]:focus ~ div,
-.glamor-2[data-simulate-focus] ~ div,
-[data-glamor-2][data-simulate-focus] ~ div {
+.glamor-2:focus ~ div:last-child,
+[data-glamor-2]:focus ~ div:last-child,
+.glamor-2[data-simulate-focus] ~ div:last-child,
+[data-glamor-2][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-2:active ~ div,
-[data-glamor-2]:active ~ div,
-.glamor-2[data-simulate-active] ~ div,
-[data-glamor-2][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-2 ~ div,
-[data-glamor-2] ~ div {
+.glamor-3,
+[data-glamor-3] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -1373,7 +1827,7 @@ exports[`FormField demo examples required 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-10"
+                className="glamor-16"
               >
                 <FormField
                   input={[Function]}
@@ -1385,7 +1839,7 @@ exports[`FormField demo examples required 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-4"
+                      className="glamor-7"
                     >
                       <label>
                         <glamorous(div)
@@ -1420,42 +1874,117 @@ exports[`FormField demo examples required 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": true,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": true,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-3"
+                            <FauxControl
+                              className="glamor-5"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": true,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": true,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={true}
+                              <FauxControl
+                                className="glamor-5"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={true}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={true}
-                                  className="glamor-2"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={true}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-4"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={true}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": true,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": true,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={true}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={true}
+                                      className="glamor-2"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={true}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-3"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -1472,7 +2001,7 @@ exports[`FormField demo examples required 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-4"
+                      className="glamor-7"
                     >
                       <label>
                         <glamorous(div)
@@ -1507,42 +2036,117 @@ exports[`FormField demo examples required 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": true,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": true,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-3"
+                            <FauxControl
+                              className="glamor-5"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": true,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": true,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={true}
+                              <FauxControl
+                                className="glamor-5"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={true}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={true}
-                                  className="glamor-2"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={true}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-4"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={true}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": true,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": true,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={true}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={true}
+                                      className="glamor-2"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={true}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-3"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -1560,8 +2164,8 @@ exports[`FormField demo examples required 1`] = `
 `;
 
 exports[`FormField demo examples rtl 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-8,
+[data-glamor-8] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1570,12 +2174,12 @@ exports[`FormField demo examples rtl 1`] = `
   outline: 0;
 }
 
-.glamor-5 *,
-[data-glamor-5] *,
-.glamor-5 *::before,
-[data-glamor-5] *::before,
-.glamor-5 *::after,
-[data-glamor-5] *::after {
+.glamor-8 *,
+[data-glamor-8] *,
+.glamor-8 *::before,
+[data-glamor-8] *::before,
+.glamor-8 *::after,
+[data-glamor-8] *::after {
   box-sizing: inherit;
 }
 
@@ -1602,14 +2206,8 @@ exports[`FormField demo examples rtl 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-4,
-[data-glamor-4] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-6,
+[data-glamor-6] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -1617,23 +2215,13 @@ exports[`FormField demo examples rtl 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-4 *,
-[data-glamor-4] *,
-.glamor-4 *::before,
-[data-glamor-4] *::before,
-.glamor-4 *::after,
-[data-glamor-4] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-4 [role="img"],
-[data-glamor-4] [role="img"] {
+.glamor-6 [role="img"],
+[data-glamor-6] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -1641,9 +2229,92 @@ exports[`FormField demo examples rtl 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-4 [role="img"]:last-of-type,
-[data-glamor-4] [role="img"]:last-of-type {
+.glamor-6 [role="img"]:last-of-type,
+[data-glamor-6] [role="img"]:last-of-type {
   fill: #c8d1e0;
+}
+
+.glamor-5,
+[data-glamor-5] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-5 *,
+[data-glamor-5] *,
+.glamor-5 *::before,
+[data-glamor-5] *::before,
+.glamor-5 *::after,
+[data-glamor-5] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-5:hover > div:last-child,
+[data-glamor-5]:hover > div:last-child,
+.glamor-5[data-simulate-hover] > div:last-child,
+[data-glamor-5][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-5:focus > div:last-child,
+[data-glamor-5]:focus > div:last-child,
+.glamor-5[data-simulate-focus] > div:last-child,
+[data-glamor-5][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-5:active > div:last-child,
+[data-glamor-5]:active > div:last-child,
+.glamor-5[data-simulate-active] > div:last-child,
+[data-glamor-5][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-5 [role="img"],
+[data-glamor-5] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-5 [role="img"]:last-of-type,
+[data-glamor-5] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  background-color: #fff;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .glamor-0,
@@ -1667,16 +2338,16 @@ exports[`FormField demo examples rtl 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -1711,42 +2382,12 @@ exports[`FormField demo examples rtl 1`] = `
   display: none;
 }
 
-.glamor-3:hover ~ div,
-[data-glamor-3]:hover ~ div,
-.glamor-3[data-simulate-hover] ~ div,
-[data-glamor-3][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-3:focus ~ div,
-[data-glamor-3]:focus ~ div,
-.glamor-3[data-simulate-focus] ~ div,
-[data-glamor-3][data-simulate-focus] ~ div {
+.glamor-3:focus ~ div:last-child,
+[data-glamor-3]:focus ~ div:last-child,
+.glamor-3[data-simulate-focus] ~ div:last-child,
+[data-glamor-3][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-3:active ~ div,
-[data-glamor-3]:active ~ div,
-.glamor-3[data-simulate-active] ~ div,
-[data-glamor-3][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-3 ~ div,
-[data-glamor-3] ~ div {
-  background-color: #fff;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
 }
 
 <ThemeProvider>
@@ -1784,7 +2425,7 @@ exports[`FormField demo examples rtl 1`] = `
                       className={undefined}
                     >
                       <div
-                        className="glamor-5"
+                        className="glamor-8"
                       >
                         <label>
                           <glamorous(div)
@@ -1821,76 +2462,154 @@ exports[`FormField demo examples rtl 1`] = `
                           >
                             <TextInput
                               className={undefined}
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": true,
+                                  "controlRef": undefined,
+                                  "defaultValue": "مرحبا بالعالم",
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": true,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={<IconBackspace />}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
                               variant={undefined}
                             >
-                              <div
-                                className="glamor-4"
+                              <FauxControl
+                                className="glamor-6"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": true,
+                                    "controlRef": undefined,
+                                    "defaultValue": "مرحبا بالعالم",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": true,
+                                    "type": "text",
+                                  }
+                                }
+                                disabled={undefined}
+                                iconEnd={undefined}
+                                iconStart={<IconBackspace />}
+                                prefix={undefined}
+                                readOnly={undefined}
+                                size="large"
+                                suffix={undefined}
+                                variant={undefined}
                               >
-                                <IconBackspace
-                                  key="iconStart"
-                                  size="1.5em"
-                                >
-                                  <Icon
-                                    rtl={true}
-                                    size="1.5em"
-                                  >
-                                    <glamorous(svg)
-                                      aria-hidden={true}
-                                      aria-labelledby={undefined}
-                                      role="img"
-                                      rtl={true}
-                                      size="1.5em"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <svg
-                                        aria-hidden={true}
-                                        aria-labelledby={undefined}
-                                        className="glamor-2"
-                                        role="img"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <g>
-                                          <path
-                                            d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
-                                          />
-                                        </g>
-                                      </svg>
-                                    </glamorous(svg)>
-                                  </Icon>
-                                </IconBackspace>
-                                <glamorous(input)
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={true}
-                                  defaultValue="مرحبا بالعالم"
+                                <FauxControl
+                                  className="glamor-6"
                                   disabled={undefined}
-                                  iconEnd={undefined}
-                                  iconStart={<IconBackspace />}
-                                  innerRef={[Function]}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={true}
-                                  size="large"
-                                  suffix={undefined}
-                                  type="text"
+                                  innerRef={undefined}
                                   variant={undefined}
                                 >
-                                  <input
-                                    aria-describedby={undefined}
-                                    aria-invalid={undefined}
-                                    aria-required={true}
-                                    className="glamor-3"
-                                    defaultValue="مرحبا بالعالم"
-                                    disabled={undefined}
-                                    prefix={undefined}
-                                    readOnly={undefined}
-                                    required={true}
-                                    size="large"
-                                    type="text"
-                                  />
-                                </glamorous(input)>
-                                <div />
-                              </div>
+                                  <div
+                                    className="glamor-5"
+                                  >
+                                    <IconBackspace
+                                      key="iconStart"
+                                      size="1.5em"
+                                    >
+                                      <Icon
+                                        rtl={true}
+                                        size="1.5em"
+                                      >
+                                        <glamorous(svg)
+                                          aria-hidden={true}
+                                          aria-labelledby={undefined}
+                                          role="img"
+                                          rtl={true}
+                                          size="1.5em"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <svg
+                                            aria-hidden={true}
+                                            aria-labelledby={undefined}
+                                            className="glamor-2"
+                                            role="img"
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <g>
+                                              <path
+                                                d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
+                                              />
+                                            </g>
+                                          </svg>
+                                        </glamorous(svg)>
+                                      </Icon>
+                                    </IconBackspace>
+                                    <glamorous(glamorous(input))
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={true}
+                                      controlPropsIn={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": true,
+                                          "controlRef": undefined,
+                                          "defaultValue": "مرحبا بالعالم",
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": true,
+                                          "type": "text",
+                                        }
+                                      }
+                                      controlRef={undefined}
+                                      defaultValue="مرحبا بالعالم"
+                                      disabled={undefined}
+                                      iconEnd={undefined}
+                                      iconStart={<IconBackspace />}
+                                      innerRef={undefined}
+                                      key="control"
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={true}
+                                      size="large"
+                                      suffix={undefined}
+                                      type="text"
+                                      variant={undefined}
+                                    >
+                                      <input
+                                        aria-describedby={undefined}
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        className="glamor-3"
+                                        defaultValue="مرحبا بالعالم"
+                                        disabled={undefined}
+                                        prefix={undefined}
+                                        readOnly={undefined}
+                                        required={true}
+                                        size="large"
+                                        type="text"
+                                      />
+                                    </glamorous(glamorous(input))>
+                                    <Underlay
+                                      disabled={undefined}
+                                      readOnly={undefined}
+                                      variant={undefined}
+                                    >
+                                      <div
+                                        className="glamor-4"
+                                        readOnly={undefined}
+                                      />
+                                    </Underlay>
+                                  </div>
+                                </FauxControl>
+                              </FauxControl>
                             </TextInput>
                           </TextInput>
                         </label>
@@ -1909,8 +2628,8 @@ exports[`FormField demo examples rtl 1`] = `
 `;
 
 exports[`FormField demo examples secondaryText 1`] = `
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1919,12 +2638,12 @@ exports[`FormField demo examples secondaryText 1`] = `
   outline: 0;
 }
 
-.glamor-4 *,
-[data-glamor-4] *,
-.glamor-4 *::before,
-[data-glamor-4] *::before,
-.glamor-4 *::after,
-[data-glamor-4] *::after {
+.glamor-7 *,
+[data-glamor-7] *,
+.glamor-7 *::before,
+[data-glamor-7] *::before,
+.glamor-7 *::after,
+[data-glamor-7] *::after {
   box-sizing: inherit;
 }
 
@@ -1951,14 +2670,8 @@ exports[`FormField demo examples secondaryText 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-5,
+[data-glamor-5] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -1966,23 +2679,13 @@ exports[`FormField demo examples secondaryText 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-3 [role="img"],
-[data-glamor-3] [role="img"] {
+.glamor-5 [role="img"],
+[data-glamor-5] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -1990,8 +2693,76 @@ exports[`FormField demo examples secondaryText 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-3 [role="img"]:last-of-type,
-[data-glamor-3] [role="img"]:last-of-type {
+.glamor-5 [role="img"]:last-of-type,
+[data-glamor-5] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-4 *,
+[data-glamor-4] *,
+.glamor-4 *::before,
+[data-glamor-4] *::before,
+.glamor-4 *::after,
+[data-glamor-4] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-4:hover > div:last-child,
+[data-glamor-4]:hover > div:last-child,
+.glamor-4[data-simulate-hover] > div:last-child,
+[data-glamor-4][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-4:focus > div:last-child,
+[data-glamor-4]:focus > div:last-child,
+.glamor-4[data-simulate-focus] > div:last-child,
+[data-glamor-4][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4:active > div:last-child,
+[data-glamor-4]:active > div:last-child,
+.glamor-4[data-simulate-active] > div:last-child,
+[data-glamor-4][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -2000,16 +2771,16 @@ exports[`FormField demo examples secondaryText 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -2044,31 +2815,16 @@ exports[`FormField demo examples secondaryText 1`] = `
   display: none;
 }
 
-.glamor-2:hover ~ div,
-[data-glamor-2]:hover ~ div,
-.glamor-2[data-simulate-hover] ~ div,
-[data-glamor-2][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-2:focus ~ div,
-[data-glamor-2]:focus ~ div,
-.glamor-2[data-simulate-focus] ~ div,
-[data-glamor-2][data-simulate-focus] ~ div {
+.glamor-2:focus ~ div:last-child,
+[data-glamor-2]:focus ~ div:last-child,
+.glamor-2[data-simulate-focus] ~ div:last-child,
+[data-glamor-2][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-2:active ~ div,
-[data-glamor-2]:active ~ div,
-.glamor-2[data-simulate-active] ~ div,
-[data-glamor-2][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-2 ~ div,
-[data-glamor-2] ~ div {
+.glamor-3,
+[data-glamor-3] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -2114,7 +2870,7 @@ exports[`FormField demo examples secondaryText 1`] = `
                 className={undefined}
               >
                 <div
-                  className="glamor-4"
+                  className="glamor-7"
                 >
                   <label>
                     <glamorous(div)
@@ -2149,42 +2905,117 @@ exports[`FormField demo examples secondaryText 1`] = `
                     >
                       <TextInput
                         className={undefined}
+                        control={[Function]}
+                        controlProps={
+                          Object {
+                            "aria-describedby": undefined,
+                            "aria-invalid": undefined,
+                            "aria-required": undefined,
+                            "controlRef": undefined,
+                            "disabled": undefined,
+                            "readOnly": undefined,
+                            "required": undefined,
+                            "type": "text",
+                          }
+                        }
+                        disabled={undefined}
+                        iconEnd={undefined}
+                        iconStart={undefined}
+                        prefix={undefined}
+                        readOnly={undefined}
+                        size="large"
+                        suffix={undefined}
                         variant={undefined}
                       >
-                        <div
-                          className="glamor-3"
+                        <FauxControl
+                          className="glamor-5"
+                          control={[Function]}
+                          controlProps={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          disabled={undefined}
+                          iconEnd={undefined}
+                          iconStart={undefined}
+                          prefix={undefined}
+                          readOnly={undefined}
+                          size="large"
+                          suffix={undefined}
+                          variant={undefined}
                         >
-                          <glamorous(input)
-                            aria-describedby={undefined}
-                            aria-invalid={undefined}
-                            aria-required={undefined}
+                          <FauxControl
+                            className="glamor-5"
                             disabled={undefined}
-                            iconEnd={undefined}
-                            iconStart={undefined}
-                            innerRef={[Function]}
-                            prefix={undefined}
-                            readOnly={undefined}
-                            required={undefined}
-                            size="large"
-                            suffix={undefined}
-                            type="text"
+                            innerRef={undefined}
                             variant={undefined}
                           >
-                            <input
-                              aria-describedby={undefined}
-                              aria-invalid={undefined}
-                              aria-required={undefined}
-                              className="glamor-2"
-                              disabled={undefined}
-                              prefix={undefined}
-                              readOnly={undefined}
-                              required={undefined}
-                              size="large"
-                              type="text"
-                            />
-                          </glamorous(input)>
-                          <div />
-                        </div>
+                            <div
+                              className="glamor-4"
+                            >
+                              <glamorous(glamorous(input))
+                                aria-describedby={undefined}
+                                aria-invalid={undefined}
+                                aria-required={undefined}
+                                controlPropsIn={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
+                                  }
+                                }
+                                controlRef={undefined}
+                                disabled={undefined}
+                                iconEnd={undefined}
+                                iconStart={undefined}
+                                innerRef={undefined}
+                                key="control"
+                                prefix={undefined}
+                                readOnly={undefined}
+                                required={undefined}
+                                size="large"
+                                suffix={undefined}
+                                type="text"
+                                variant={undefined}
+                              >
+                                <input
+                                  aria-describedby={undefined}
+                                  aria-invalid={undefined}
+                                  aria-required={undefined}
+                                  className="glamor-2"
+                                  disabled={undefined}
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  required={undefined}
+                                  size="large"
+                                  type="text"
+                                />
+                              </glamorous(glamorous(input))>
+                              <Underlay
+                                disabled={undefined}
+                                readOnly={undefined}
+                                variant={undefined}
+                              >
+                                <div
+                                  className="glamor-3"
+                                  readOnly={undefined}
+                                />
+                              </Underlay>
+                            </div>
+                          </FauxControl>
+                        </FauxControl>
                       </TextInput>
                     </TextInput>
                   </label>
@@ -2200,8 +3031,8 @@ exports[`FormField demo examples secondaryText 1`] = `
 `;
 
 exports[`FormField demo examples validation 1`] = `
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2210,12 +3041,12 @@ exports[`FormField demo examples validation 1`] = `
   outline: 0;
 }
 
-.glamor-4 *,
-[data-glamor-4] *,
-.glamor-4 *::before,
-[data-glamor-4] *::before,
-.glamor-4 *::after,
-[data-glamor-4] *::after {
+.glamor-7 *,
+[data-glamor-7] *,
+.glamor-7 *::before,
+[data-glamor-7] *::before,
+.glamor-7 *::after,
+[data-glamor-7] *::after {
   box-sizing: inherit;
 }
 
@@ -2242,14 +3073,8 @@ exports[`FormField demo examples validation 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-5,
+[data-glamor-5] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -2257,23 +3082,13 @@ exports[`FormField demo examples validation 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-3 [role="img"],
-[data-glamor-3] [role="img"] {
+.glamor-5 [role="img"],
+[data-glamor-5] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -2281,8 +3096,76 @@ exports[`FormField demo examples validation 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-3 [role="img"]:last-of-type,
-[data-glamor-3] [role="img"]:last-of-type {
+.glamor-5 [role="img"]:last-of-type,
+[data-glamor-5] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-4 *,
+[data-glamor-4] *,
+.glamor-4 *::before,
+[data-glamor-4] *::before,
+.glamor-4 *::after,
+[data-glamor-4] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-4:hover > div:last-child,
+[data-glamor-4]:hover > div:last-child,
+.glamor-4[data-simulate-hover] > div:last-child,
+[data-glamor-4][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-4:focus > div:last-child,
+[data-glamor-4]:focus > div:last-child,
+.glamor-4[data-simulate-focus] > div:last-child,
+[data-glamor-4][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4:active > div:last-child,
+[data-glamor-4]:active > div:last-child,
+.glamor-4[data-simulate-active] > div:last-child,
+[data-glamor-4][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -2291,16 +3174,16 @@ exports[`FormField demo examples validation 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -2335,31 +3218,16 @@ exports[`FormField demo examples validation 1`] = `
   display: none;
 }
 
-.glamor-2:hover ~ div,
-[data-glamor-2]:hover ~ div,
-.glamor-2[data-simulate-hover] ~ div,
-[data-glamor-2][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-2:focus ~ div,
-[data-glamor-2]:focus ~ div,
-.glamor-2[data-simulate-focus] ~ div,
-[data-glamor-2][data-simulate-focus] ~ div {
+.glamor-2:focus ~ div:last-child,
+[data-glamor-2]:focus ~ div:last-child,
+.glamor-2[data-simulate-focus] ~ div:last-child,
+[data-glamor-2][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-2:active ~ div,
-[data-glamor-2]:active ~ div,
-.glamor-2[data-simulate-active] ~ div,
-[data-glamor-2][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-2 ~ div,
-[data-glamor-2] ~ div {
+.glamor-3,
+[data-glamor-3] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -2379,8 +3247,8 @@ exports[`FormField demo examples validation 1`] = `
   font-size: 0.6875em;
 }
 
-.glamor-7,
-[data-glamor-7] {
+.glamor-10,
+[data-glamor-10] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2402,19 +3270,19 @@ exports[`FormField demo examples validation 1`] = `
   vertical-align: middle;
 }
 
-.glamor-7 *,
-[data-glamor-7] *,
-.glamor-7 *::before,
-[data-glamor-7] *::before,
-.glamor-7 *::after,
-[data-glamor-7] *::after {
+.glamor-10 *,
+[data-glamor-10] *,
+.glamor-10 *::before,
+[data-glamor-10] *::before,
+.glamor-10 *::after,
+[data-glamor-10] *::after {
   box-sizing: inherit;
 }
 
-.glamor-7:focus,
-[data-glamor-7]:focus,
-.glamor-7[data-simulate-focus],
-[data-glamor-7][data-simulate-focus] {
+.glamor-10:focus,
+[data-glamor-10]:focus,
+.glamor-10[data-simulate-focus],
+[data-glamor-10][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -2422,54 +3290,54 @@ exports[`FormField demo examples validation 1`] = `
   text-decoration: none;
 }
 
-.glamor-7:hover,
-[data-glamor-7]:hover,
-.glamor-7[data-simulate-hover],
-[data-glamor-7][data-simulate-hover] {
+.glamor-10:hover,
+[data-glamor-10]:hover,
+.glamor-10[data-simulate-hover],
+[data-glamor-10][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #333840;
   text-decoration: none;
 }
 
-.glamor-7:active,
-[data-glamor-7]:active,
-.glamor-7[data-simulate-active],
-[data-glamor-7][data-simulate-active] {
+.glamor-10:active,
+[data-glamor-10]:active,
+.glamor-10[data-simulate-active],
+[data-glamor-10][data-simulate-active] {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.glamor-7::-moz-focus-inner,
-[data-glamor-7]::-moz-focus-inner,
-.glamor-7[data-simulate-mozfocusinner],
-[data-glamor-7][data-simulate-mozfocusinner] {
+.glamor-10::-moz-focus-inner,
+[data-glamor-10]::-moz-focus-inner,
+.glamor-10[data-simulate-mozfocusinner],
+[data-glamor-10][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-7 [role="img"],
-[data-glamor-7] [role="img"] {
+.glamor-10 [role="img"],
+[data-glamor-10] [role="img"] {
   box-sizing: content-box;
   fill: #2e6fd9;
   display: block;
 }
 
-.glamor-7 [role="img"]:first-child,
-[data-glamor-7] [role="img"]:first-child {
+.glamor-10 [role="img"]:first-child,
+[data-glamor-10] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.glamor-7 [role="img"]:last-child,
-[data-glamor-7] [role="img"]:last-child {
+.glamor-10 [role="img"]:last-child,
+[data-glamor-10] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.glamor-7 [role="img"]:only-child,
-[data-glamor-7] [role="img"]:only-child {
+.glamor-10 [role="img"]:only-child,
+[data-glamor-10] [role="img"]:only-child {
   margin: 0;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.glamor-9,
+[data-glamor-9] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -2485,8 +3353,8 @@ exports[`FormField demo examples validation 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-5,
-[data-glamor-5] {
+.glamor-8,
+[data-glamor-8] {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2497,17 +3365,17 @@ exports[`FormField demo examples validation 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.glamor-5:first-child,
-[data-glamor-5]:first-child,
-.glamor-5[data-simulate-firstchild],
-[data-glamor-5][data-simulate-firstchild] {
+.glamor-8:first-child,
+[data-glamor-8]:first-child,
+.glamor-8[data-simulate-firstchild],
+[data-glamor-8][data-simulate-firstchild] {
   padding-left: 0.5714285714285714em;
 }
 
-.glamor-5:last-child,
-[data-glamor-5]:last-child,
-.glamor-5[data-simulate-lastchild],
-[data-glamor-5][data-simulate-lastchild] {
+.glamor-8:last-child,
+[data-glamor-8]:last-child,
+.glamor-8[data-simulate-lastchild],
+[data-glamor-8][data-simulate-lastchild] {
   padding-right: 0.5714285714285714em;
 }
 
@@ -2534,7 +3402,7 @@ exports[`FormField demo examples validation 1`] = `
               <MyForm>
                 <glamorous(div)>
                   <div
-                    className="glamor-8"
+                    className="glamor-11"
                   >
                     <FormField
                       caption={undefined}
@@ -2552,7 +3420,7 @@ exports[`FormField demo examples validation 1`] = `
                         className={undefined}
                       >
                         <div
-                          className="glamor-4"
+                          className="glamor-7"
                         >
                           <label>
                             <glamorous(div)
@@ -2591,46 +3459,127 @@ exports[`FormField demo examples validation 1`] = `
                             >
                               <TextInput
                                 className={undefined}
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": true,
+                                    "controlRef": [Function],
+                                    "disabled": undefined,
+                                    "onChange": [Function],
+                                    "readOnly": undefined,
+                                    "required": true,
+                                    "type": "text",
+                                    "value": "",
+                                  }
+                                }
+                                disabled={undefined}
+                                iconEnd={undefined}
+                                iconStart={undefined}
+                                prefix={undefined}
+                                readOnly={undefined}
+                                size="large"
+                                suffix={undefined}
                                 variant={undefined}
                               >
-                                <div
-                                  className="glamor-3"
+                                <FauxControl
+                                  className="glamor-5"
+                                  control={[Function]}
+                                  controlProps={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": true,
+                                      "controlRef": [Function],
+                                      "disabled": undefined,
+                                      "onChange": [Function],
+                                      "readOnly": undefined,
+                                      "required": true,
+                                      "type": "text",
+                                      "value": "",
+                                    }
+                                  }
+                                  disabled={undefined}
+                                  iconEnd={undefined}
+                                  iconStart={undefined}
+                                  prefix={undefined}
+                                  readOnly={undefined}
+                                  size="large"
+                                  suffix={undefined}
+                                  variant={undefined}
                                 >
-                                  <glamorous(input)
-                                    aria-describedby={undefined}
-                                    aria-invalid={undefined}
-                                    aria-required={true}
+                                  <FauxControl
+                                    className="glamor-5"
                                     disabled={undefined}
-                                    iconEnd={undefined}
-                                    iconStart={undefined}
-                                    innerRef={[Function]}
-                                    onChange={[Function]}
-                                    prefix={undefined}
-                                    readOnly={undefined}
-                                    required={true}
-                                    size="large"
-                                    suffix={undefined}
-                                    type="text"
-                                    value=""
+                                    innerRef={undefined}
                                     variant={undefined}
                                   >
-                                    <input
-                                      aria-describedby={undefined}
-                                      aria-invalid={undefined}
-                                      aria-required={true}
-                                      className="glamor-2"
-                                      disabled={undefined}
-                                      onChange={[Function]}
-                                      prefix={undefined}
-                                      readOnly={undefined}
-                                      required={true}
-                                      size="large"
-                                      type="text"
-                                      value=""
-                                    />
-                                  </glamorous(input)>
-                                  <div />
-                                </div>
+                                    <div
+                                      className="glamor-4"
+                                    >
+                                      <glamorous(glamorous(input))
+                                        aria-describedby={undefined}
+                                        aria-invalid={undefined}
+                                        aria-required={true}
+                                        controlPropsIn={
+                                          Object {
+                                            "aria-describedby": undefined,
+                                            "aria-invalid": undefined,
+                                            "aria-required": true,
+                                            "controlRef": [Function],
+                                            "disabled": undefined,
+                                            "onChange": [Function],
+                                            "readOnly": undefined,
+                                            "required": true,
+                                            "type": "text",
+                                            "value": "",
+                                          }
+                                        }
+                                        controlRef={[Function]}
+                                        disabled={undefined}
+                                        iconEnd={undefined}
+                                        iconStart={undefined}
+                                        innerRef={[Function]}
+                                        key="control"
+                                        onChange={[Function]}
+                                        prefix={undefined}
+                                        readOnly={undefined}
+                                        required={true}
+                                        size="large"
+                                        suffix={undefined}
+                                        type="text"
+                                        value=""
+                                        variant={undefined}
+                                      >
+                                        <input
+                                          aria-describedby={undefined}
+                                          aria-invalid={undefined}
+                                          aria-required={true}
+                                          className="glamor-2"
+                                          disabled={undefined}
+                                          onChange={[Function]}
+                                          prefix={undefined}
+                                          readOnly={undefined}
+                                          required={true}
+                                          size="large"
+                                          type="text"
+                                          value=""
+                                        />
+                                      </glamorous(glamorous(input))>
+                                      <Underlay
+                                        disabled={undefined}
+                                        readOnly={undefined}
+                                        variant={undefined}
+                                      >
+                                        <div
+                                          className="glamor-3"
+                                          readOnly={undefined}
+                                        />
+                                      </Underlay>
+                                    </div>
+                                  </FauxControl>
+                                </FauxControl>
                               </TextInput>
                             </TextInput>
                           </label>
@@ -2653,19 +3602,19 @@ exports[`FormField demo examples validation 1`] = `
                         variant="regular"
                       >
                         <button
-                          className="glamor-7"
+                          className="glamor-10"
                           onClick={[Function]}
                           type="button"
                         >
                           <glamorous(span)>
                             <span
-                              className="glamor-6"
+                              className="glamor-9"
                             >
                               <glamorous(span)
                                 size="large"
                               >
                                 <span
-                                  className="glamor-5"
+                                  className="glamor-8"
                                 >
                                   Validate
                                 </span>
@@ -2688,8 +3637,8 @@ exports[`FormField demo examples validation 1`] = `
 `;
 
 exports[`FormField demo examples variants 1`] = `
-.glamor-5,
-[data-glamor-5] {
+.glamor-8,
+[data-glamor-8] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2698,12 +3647,12 @@ exports[`FormField demo examples variants 1`] = `
   outline: 0;
 }
 
-.glamor-5 *,
-[data-glamor-5] *,
-.glamor-5 *::before,
-[data-glamor-5] *::before,
-.glamor-5 *::after,
-[data-glamor-5] *::after {
+.glamor-8 *,
+[data-glamor-8] *,
+.glamor-8 *::before,
+[data-glamor-8] *::before,
+.glamor-8 *::after,
+[data-glamor-8] *::after {
   box-sizing: inherit;
 }
 
@@ -2730,14 +3679,8 @@ exports[`FormField demo examples variants 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-3,
-[data-glamor-3] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-5,
+[data-glamor-5] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -2745,23 +3688,13 @@ exports[`FormField demo examples variants 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-3 [role="img"],
-[data-glamor-3] [role="img"] {
+.glamor-5 [role="img"],
+[data-glamor-5] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -2769,8 +3702,76 @@ exports[`FormField demo examples variants 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-3 [role="img"]:last-of-type,
-[data-glamor-3] [role="img"]:last-of-type {
+.glamor-5 [role="img"]:last-of-type,
+[data-glamor-5] [role="img"]:last-of-type {
+  fill: #06783f;
+}
+
+.glamor-4,
+[data-glamor-4] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-4 *,
+[data-glamor-4] *,
+.glamor-4 *::before,
+[data-glamor-4] *::before,
+.glamor-4 *::after,
+[data-glamor-4] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-4:hover > div:last-child,
+[data-glamor-4]:hover > div:last-child,
+.glamor-4[data-simulate-hover] > div:last-child,
+[data-glamor-4][data-simulate-hover] > div:last-child {
+  border-color: #0a8f4c;
+}
+
+.glamor-4:focus > div:last-child,
+[data-glamor-4]:focus > div:last-child,
+.glamor-4[data-simulate-focus] > div:last-child,
+[data-glamor-4][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
+}
+
+.glamor-4:active > div:last-child,
+[data-glamor-4]:active > div:last-child,
+.glamor-4[data-simulate-active] > div:last-child,
+[data-glamor-4][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
+}
+
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
   fill: #06783f;
 }
 
@@ -2779,16 +3780,16 @@ exports[`FormField demo examples variants 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -2823,31 +3824,24 @@ exports[`FormField demo examples variants 1`] = `
   display: none;
 }
 
-.glamor-1:hover ~ div,
-[data-glamor-1]:hover ~ div,
-.glamor-1[data-simulate-hover] ~ div,
-[data-glamor-1][data-simulate-hover] ~ div {
-  border-color: #0a8f4c;
-}
-
-.glamor-1:focus ~ div,
-[data-glamor-1]:focus ~ div,
-.glamor-1[data-simulate-focus] ~ div,
-[data-glamor-1][data-simulate-focus] ~ div {
+.glamor-1:focus ~ div:last-child,
+[data-glamor-1]:focus ~ div:last-child,
+.glamor-1[data-simulate-focus] ~ div:last-child,
+[data-glamor-1][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
 }
 
-.glamor-1:active ~ div,
-[data-glamor-1]:active ~ div,
-.glamor-1[data-simulate-active] ~ div,
-[data-glamor-1][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #10a35a;
+.glamor-2,
+[data-glamor-2] {
+  fill: #8e99ab;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
 }
 
-.glamor-1 ~ div,
-[data-glamor-1] ~ div {
+.glamor-3,
+[data-glamor-3] {
   background-color: #fff;
   border-color: #10a35a;
   border-radius: 0.1875em;
@@ -2861,29 +3855,15 @@ exports[`FormField demo examples variants 1`] = `
   z-index: -1;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  fill: #8e99ab;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
-}
-
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   color: #06783f;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.glamor-9,
-[data-glamor-9] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-14,
+[data-glamor-14] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -2891,23 +3871,13 @@ exports[`FormField demo examples variants 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-9 *,
-[data-glamor-9] *,
-.glamor-9 *::before,
-[data-glamor-9] *::before,
-.glamor-9 *::after,
-[data-glamor-9] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-9 [role="img"],
-[data-glamor-9] [role="img"] {
+.glamor-14 [role="img"],
+[data-glamor-14] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -2915,85 +3885,138 @@ exports[`FormField demo examples variants 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-9 [role="img"]:last-of-type,
-[data-glamor-9] [role="img"]:last-of-type {
+.glamor-14 [role="img"]:last-of-type,
+[data-glamor-14] [role="img"]:last-of-type {
   fill: #cf4615;
 }
 
-.glamor-7,
-[data-glamor-7] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
+.glamor-13,
+[data-glamor-13] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
   outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   width: 100%;
-  -webkit-flex: 1 1 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
 }
 
-.glamor-7::placeholder,
-[data-glamor-7]::placeholder,
-.glamor-7[data-simulate-placeholder],
-[data-glamor-7][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
+.glamor-13 *,
+[data-glamor-13] *,
+.glamor-13 *::before,
+[data-glamor-13] *::before,
+.glamor-13 *::after,
+[data-glamor-13] *::after {
+  box-sizing: inherit;
 }
 
-.glamor-7::-ms-input-placeholder,
-[data-glamor-7]::-ms-input-placeholder,
-.glamor-7[data-simulate-msinputplaceholder],
-[data-glamor-7][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-7:-ms-input-placeholder,
-[data-glamor-7]:-ms-input-placeholder,
-.glamor-7[data-simulate-msinputplaceholder],
-[data-glamor-7][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-7::-ms-clear,
-[data-glamor-7]::-ms-clear,
-.glamor-7[data-simulate-msclear],
-[data-glamor-7][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-7:hover ~ div,
-[data-glamor-7]:hover ~ div,
-.glamor-7[data-simulate-hover] ~ div,
-[data-glamor-7][data-simulate-hover] ~ div {
+.glamor-13:hover > div:last-child,
+[data-glamor-13]:hover > div:last-child,
+.glamor-13[data-simulate-hover] > div:last-child,
+[data-glamor-13][data-simulate-hover] > div:last-child {
   border-color: #cf4615;
 }
 
-.glamor-7:focus ~ div,
-[data-glamor-7]:focus ~ div,
-.glamor-7[data-simulate-focus] ~ div,
-[data-glamor-7][data-simulate-focus] ~ div {
+.glamor-13:focus > div:last-child,
+[data-glamor-13]:focus > div:last-child,
+.glamor-13[data-simulate-focus] > div:last-child,
+[data-glamor-13][data-simulate-focus] > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-7:active ~ div,
-[data-glamor-7]:active ~ div,
-.glamor-7[data-simulate-active] ~ div,
-[data-glamor-7][data-simulate-active] ~ div {
+.glamor-13:active > div:last-child,
+[data-glamor-13]:active > div:last-child,
+.glamor-13[data-simulate-active] > div:last-child,
+[data-glamor-13][data-simulate-active] > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
 }
 
-.glamor-7 ~ div,
-[data-glamor-7] ~ div {
+.glamor-13 [role="img"],
+[data-glamor-13] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-13 [role="img"]:last-of-type,
+[data-glamor-13] [role="img"]:last-of-type {
+  fill: #cf4615;
+}
+
+.glamor-10,
+[data-glamor-10] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  flex: 1 1 auto;
+  font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 0;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-10::placeholder,
+[data-glamor-10]::placeholder,
+.glamor-10[data-simulate-placeholder],
+[data-glamor-10][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-10::-ms-input-placeholder,
+[data-glamor-10]::-ms-input-placeholder,
+.glamor-10[data-simulate-msinputplaceholder],
+[data-glamor-10][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-10:-ms-input-placeholder,
+[data-glamor-10]:-ms-input-placeholder,
+.glamor-10[data-simulate-msinputplaceholder],
+[data-glamor-10][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-10::-ms-clear,
+[data-glamor-10]::-ms-clear,
+.glamor-10[data-simulate-msclear],
+[data-glamor-10][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-10:focus ~ div:last-child,
+[data-glamor-10]:focus ~ div:last-child,
+.glamor-10[data-simulate-focus] ~ div:last-child,
+[data-glamor-10][data-simulate-focus] ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e05b2b;
+}
+
+.glamor-12,
+[data-glamor-12] {
   background-color: #fff;
   border-color: #e05b2b;
   border-radius: 0.1875em;
@@ -3007,21 +4030,15 @@ exports[`FormField demo examples variants 1`] = `
   z-index: -1;
 }
 
-.glamor-10,
-[data-glamor-10] {
+.glamor-16,
+[data-glamor-16] {
   color: #cf4615;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.glamor-15,
-[data-glamor-15] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-23,
+[data-glamor-23] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -3029,23 +4046,13 @@ exports[`FormField demo examples variants 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-15 *,
-[data-glamor-15] *,
-.glamor-15 *::before,
-[data-glamor-15] *::before,
-.glamor-15 *::after,
-[data-glamor-15] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-15 [role="img"],
-[data-glamor-15] [role="img"] {
+.glamor-23 [role="img"],
+[data-glamor-23] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -3053,85 +4060,138 @@ exports[`FormField demo examples variants 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-15 [role="img"]:last-of-type,
-[data-glamor-15] [role="img"]:last-of-type {
+.glamor-23 [role="img"]:last-of-type,
+[data-glamor-23] [role="img"]:last-of-type {
   fill: #db2929;
 }
 
-.glamor-13,
-[data-glamor-13] {
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  color: #58606e;
-  flex: 1 1 auto;
-  font-family: inherit;
-  font-size: 0.875em;
-  height: 2.857142857142857em;
-  min-width: 0;
+.glamor-22,
+[data-glamor-22] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
   outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   width: 100%;
-  -webkit-flex: 1 1 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
 }
 
-.glamor-13::placeholder,
-[data-glamor-13]::placeholder,
-.glamor-13[data-simulate-placeholder],
-[data-glamor-13][data-simulate-placeholder] {
-  color: #8e99ab;
-  font-style: italic;
+.glamor-22 *,
+[data-glamor-22] *,
+.glamor-22 *::before,
+[data-glamor-22] *::before,
+.glamor-22 *::after,
+[data-glamor-22] *::after {
+  box-sizing: inherit;
 }
 
-.glamor-13::-ms-input-placeholder,
-[data-glamor-13]::-ms-input-placeholder,
-.glamor-13[data-simulate-msinputplaceholder],
-[data-glamor-13][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-13:-ms-input-placeholder,
-[data-glamor-13]:-ms-input-placeholder,
-.glamor-13[data-simulate-msinputplaceholder],
-[data-glamor-13][data-simulate-msinputplaceholder] {
-  color: #8e99ab;
-  font-style: italic;
-}
-
-.glamor-13::-ms-clear,
-[data-glamor-13]::-ms-clear,
-.glamor-13[data-simulate-msclear],
-[data-glamor-13][data-simulate-msclear] {
-  display: none;
-}
-
-.glamor-13:hover ~ div,
-[data-glamor-13]:hover ~ div,
-.glamor-13[data-simulate-hover] ~ div,
-[data-glamor-13][data-simulate-hover] ~ div {
+.glamor-22:hover > div:last-child,
+[data-glamor-22]:hover > div:last-child,
+.glamor-22[data-simulate-hover] > div:last-child,
+[data-glamor-22][data-simulate-hover] > div:last-child {
   border-color: #c71818;
 }
 
-.glamor-13:focus ~ div,
-[data-glamor-13]:focus ~ div,
-.glamor-13[data-simulate-focus] ~ div,
-[data-glamor-13][data-simulate-focus] ~ div {
+.glamor-22:focus > div:last-child,
+[data-glamor-22]:focus > div:last-child,
+.glamor-22[data-simulate-focus] > div:last-child,
+[data-glamor-22][data-simulate-focus] > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-13:active ~ div,
-[data-glamor-13]:active ~ div,
-.glamor-13[data-simulate-active] ~ div,
-[data-glamor-13][data-simulate-active] ~ div {
+.glamor-22:active > div:last-child,
+[data-glamor-22]:active > div:last-child,
+.glamor-22[data-simulate-active] > div:last-child,
+[data-glamor-22][data-simulate-active] > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
 }
 
-.glamor-13 ~ div,
-[data-glamor-13] ~ div {
+.glamor-22 [role="img"],
+[data-glamor-22] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-22 [role="img"]:last-of-type,
+[data-glamor-22] [role="img"]:last-of-type {
+  fill: #db2929;
+}
+
+.glamor-19,
+[data-glamor-19] {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  flex: 1 1 auto;
+  font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
+  font-size: 0.875em;
+  height: 2.857142857142857em;
+  outline: 0;
+  padding-left: 1.1428571428571428em;
+  padding-right: 0;
+  -webkit-flex: 1 1 auto;
+}
+
+.glamor-19::placeholder,
+[data-glamor-19]::placeholder,
+.glamor-19[data-simulate-placeholder],
+[data-glamor-19][data-simulate-placeholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-19::-ms-input-placeholder,
+[data-glamor-19]::-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-19:-ms-input-placeholder,
+[data-glamor-19]:-ms-input-placeholder,
+.glamor-19[data-simulate-msinputplaceholder],
+[data-glamor-19][data-simulate-msinputplaceholder] {
+  color: #8e99ab;
+  font-style: italic;
+}
+
+.glamor-19::-ms-clear,
+[data-glamor-19]::-ms-clear,
+.glamor-19[data-simulate-msclear],
+[data-glamor-19][data-simulate-msclear] {
+  display: none;
+}
+
+.glamor-19:focus ~ div:last-child,
+[data-glamor-19]:focus ~ div:last-child,
+.glamor-19[data-simulate-focus] ~ div:last-child,
+[data-glamor-19][data-simulate-focus] ~ div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #db2929;
+}
+
+.glamor-21,
+[data-glamor-21] {
   background-color: #fff;
   border-color: #db2929;
   border-radius: 0.1875em;
@@ -3145,8 +4205,8 @@ exports[`FormField demo examples variants 1`] = `
   z-index: -1;
 }
 
-.glamor-16,
-[data-glamor-16] {
+.glamor-25,
+[data-glamor-25] {
   color: #db2929;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
@@ -3171,7 +4231,7 @@ exports[`FormField demo examples variants 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-18"
+                className="glamor-27"
               >
                 <FormField
                   caption="This is help text"
@@ -3184,7 +4244,7 @@ exports[`FormField demo examples variants 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-5"
+                      className="glamor-8"
                     >
                       <label>
                         <glamorous(div)
@@ -3210,74 +4270,149 @@ exports[`FormField demo examples variants 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-8-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant="success"
                           >
-                            <div
-                              className="glamor-3"
+                            <FauxControl
+                              className="glamor-5"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": "formField-8-caption",
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant="success"
                             >
-                              <glamorous(input)
-                                aria-describedby="formField-8-caption"
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-5"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant="success"
                               >
-                                <input
-                                  aria-describedby="formField-8-caption"
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <IconSuccess
-                                key="iconEnd"
-                                size="1.5em"
-                              >
-                                <Icon
-                                  rtl={false}
-                                  size="1.5em"
+                                <div
+                                  className="glamor-4"
                                 >
-                                  <glamorous(svg)
-                                    aria-hidden={true}
-                                    aria-labelledby={undefined}
-                                    role="img"
-                                    rtl={false}
-                                    size="1.5em"
-                                    viewBox="0 0 24 24"
+                                  <glamorous(glamorous(input))
+                                    aria-describedby="formField-8-caption"
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": "formField-8-caption",
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant="success"
                                   >
-                                    <svg
-                                      aria-hidden={true}
-                                      aria-labelledby={undefined}
-                                      className="glamor-2"
-                                      role="img"
-                                      viewBox="0 0 24 24"
+                                    <input
+                                      aria-describedby="formField-8-caption"
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <IconSuccess
+                                    key="iconEnd"
+                                    size="1.5em"
+                                  >
+                                    <Icon
+                                      rtl={false}
+                                      size="1.5em"
                                     >
-                                      <g>
-                                        <path
-                                          d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
-                                        />
-                                      </g>
-                                    </svg>
-                                  </glamorous(svg)>
-                                </Icon>
-                              </IconSuccess>
-                              <div />
-                            </div>
+                                      <glamorous(svg)
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        role="img"
+                                        rtl={false}
+                                        size="1.5em"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <svg
+                                          aria-hidden={true}
+                                          aria-labelledby={undefined}
+                                          className="glamor-2"
+                                          role="img"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <g>
+                                            <path
+                                              d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </glamorous(svg)>
+                                    </Icon>
+                                  </IconSuccess>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant="success"
+                                  >
+                                    <div
+                                      className="glamor-3"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -3288,7 +4423,7 @@ exports[`FormField demo examples variants 1`] = `
                         variant="success"
                       >
                         <div
-                          className="glamor-4"
+                          className="glamor-7"
                           id="formField-8-caption"
                         >
                           This is help text
@@ -3308,7 +4443,7 @@ exports[`FormField demo examples variants 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-5"
+                      className="glamor-8"
                     >
                       <label>
                         <glamorous(div)
@@ -3334,74 +4469,149 @@ exports[`FormField demo examples variants 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-10-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant="warning"
                           >
-                            <div
-                              className="glamor-9"
+                            <FauxControl
+                              className="glamor-14"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": "formField-10-caption",
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant="warning"
                             >
-                              <glamorous(input)
-                                aria-describedby="formField-10-caption"
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-14"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant="warning"
                               >
-                                <input
-                                  aria-describedby="formField-10-caption"
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-7"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <IconWarning
-                                key="iconEnd"
-                                size="1.5em"
-                              >
-                                <Icon
-                                  rtl={false}
-                                  size="1.5em"
+                                <div
+                                  className="glamor-13"
                                 >
-                                  <glamorous(svg)
-                                    aria-hidden={true}
-                                    aria-labelledby={undefined}
-                                    role="img"
-                                    rtl={false}
-                                    size="1.5em"
-                                    viewBox="0 0 24 24"
+                                  <glamorous(glamorous(input))
+                                    aria-describedby="formField-10-caption"
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": "formField-10-caption",
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant="warning"
                                   >
-                                    <svg
-                                      aria-hidden={true}
-                                      aria-labelledby={undefined}
-                                      className="glamor-2"
-                                      role="img"
-                                      viewBox="0 0 24 24"
+                                    <input
+                                      aria-describedby="formField-10-caption"
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-10"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <IconWarning
+                                    key="iconEnd"
+                                    size="1.5em"
+                                  >
+                                    <Icon
+                                      rtl={false}
+                                      size="1.5em"
                                     >
-                                      <g>
-                                        <path
-                                          d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
-                                        />
-                                      </g>
-                                    </svg>
-                                  </glamorous(svg)>
-                                </Icon>
-                              </IconWarning>
-                              <div />
-                            </div>
+                                      <glamorous(svg)
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        role="img"
+                                        rtl={false}
+                                        size="1.5em"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <svg
+                                          aria-hidden={true}
+                                          aria-labelledby={undefined}
+                                          className="glamor-2"
+                                          role="img"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <g>
+                                            <path
+                                              d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </glamorous(svg)>
+                                    </Icon>
+                                  </IconWarning>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant="warning"
+                                  >
+                                    <div
+                                      className="glamor-12"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -3412,7 +4622,7 @@ exports[`FormField demo examples variants 1`] = `
                         variant="warning"
                       >
                         <div
-                          className="glamor-10"
+                          className="glamor-16"
                           id="formField-10-caption"
                         >
                           This is help text
@@ -3432,7 +4642,7 @@ exports[`FormField demo examples variants 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-5"
+                      className="glamor-8"
                     >
                       <label>
                         <glamorous(div)
@@ -3458,74 +4668,149 @@ exports[`FormField demo examples variants 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-12-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant="danger"
                           >
-                            <div
-                              className="glamor-15"
+                            <FauxControl
+                              className="glamor-23"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": "formField-12-caption",
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant="danger"
                             >
-                              <glamorous(input)
-                                aria-describedby="formField-12-caption"
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-23"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="text"
+                                innerRef={undefined}
                                 variant="danger"
                               >
-                                <input
-                                  aria-describedby="formField-12-caption"
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-13"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="text"
-                                />
-                              </glamorous(input)>
-                              <IconDanger
-                                key="iconEnd"
-                                size="1.5em"
-                              >
-                                <Icon
-                                  rtl={false}
-                                  size="1.5em"
+                                <div
+                                  className="glamor-22"
                                 >
-                                  <glamorous(svg)
-                                    aria-hidden={true}
-                                    aria-labelledby={undefined}
-                                    role="img"
-                                    rtl={false}
-                                    size="1.5em"
-                                    viewBox="0 0 24 24"
+                                  <glamorous(glamorous(input))
+                                    aria-describedby="formField-12-caption"
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": "formField-12-caption",
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "text",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="text"
+                                    variant="danger"
                                   >
-                                    <svg
-                                      aria-hidden={true}
-                                      aria-labelledby={undefined}
-                                      className="glamor-2"
-                                      role="img"
-                                      viewBox="0 0 24 24"
+                                    <input
+                                      aria-describedby="formField-12-caption"
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-19"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="text"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <IconDanger
+                                    key="iconEnd"
+                                    size="1.5em"
+                                  >
+                                    <Icon
+                                      rtl={false}
+                                      size="1.5em"
                                     >
-                                      <g>
-                                        <path
-                                          d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
-                                        />
-                                      </g>
-                                    </svg>
-                                  </glamorous(svg)>
-                                </Icon>
-                              </IconDanger>
-                              <div />
-                            </div>
+                                      <glamorous(svg)
+                                        aria-hidden={true}
+                                        aria-labelledby={undefined}
+                                        role="img"
+                                        rtl={false}
+                                        size="1.5em"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <svg
+                                          aria-hidden={true}
+                                          aria-labelledby={undefined}
+                                          className="glamor-2"
+                                          role="img"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <g>
+                                            <path
+                                              d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                            />
+                                          </g>
+                                        </svg>
+                                      </glamorous(svg)>
+                                    </Icon>
+                                  </IconDanger>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant="danger"
+                                  >
+                                    <div
+                                      className="glamor-21"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -3536,7 +4821,7 @@ exports[`FormField demo examples variants 1`] = `
                         variant="danger"
                       >
                         <div
-                          className="glamor-16"
+                          className="glamor-25"
                           id="formField-12-caption"
                         >
                           This is help text
