@@ -35,7 +35,10 @@ type Props = {
   rootProps?: Object,
   /** Indicates that the value of the element is invalid */
   invalid?: boolean,
-  /** @Private Used internally in conjunction with autoSize prop. Must also support a custom function. */
+  /**
+   * @Private Used internally in conjunction with autoSize prop. Must also
+   * support a custom function.
+   */
   onInput?: (event: SyntheticEvent<>) => void,
   /** Function called when input value changes */
   onChange?: (event: SyntheticEvent<>) => void,
@@ -49,7 +52,11 @@ type Props = {
   rows?: number,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
-  /** The initial value of the input. Primarily for use with controlled components.  If this prop is specified, an onChange handler must also be specified.  Also see `defaultValue`. */
+  /**
+   * The initial value of the input. Primarily for use with controlled
+   * components.  If this prop is specified, an onChange handler must also be
+   * specified.  Also see `defaultValue`.
+   */
   value?: string,
   /** Available variants */
   variant?: 'success' | 'warning' | 'danger'
@@ -70,6 +77,7 @@ export const componentTheme = (baseTheme: Object) => ({
   TextArea_fontSize: baseTheme.fontSize_ui,
   TextArea_fontSize_small: pxToEm(12),
   TextArea_paddingHorizontal: baseTheme.space_inset_md,
+  TextArea_paddingHorizontal_small: baseTheme.space_inset_sm,
   // The following padding values make appearances equivalent to TextInputs of same size when rows=1.
   // This enables usage of a TextArea as a single line input that can accept multiple lines of text.
   TextArea_paddingVertical_jumbo: pxToEm(14.5),
@@ -108,6 +116,10 @@ const styles = {
       theme[`TextArea_paddingVertical_${size}`],
       fontSize
     );
+    const sizeAppropriatePadding =
+      size === 'small' || size === 'medium'
+        ? theme.TextArea_paddingHorizontal_small
+        : theme.TextArea_paddingHorizontal;
     const placeholderStyles = {
       color: theme.TextArea_color_placeholder,
       fontStyle: 'italic'
@@ -132,7 +144,7 @@ const styles = {
       minWidth: 0,
       outline: 0,
       padding: `${paddingVerticalNormalized} ${getNormalizedValue(
-        theme.TextArea_paddingHorizontal,
+        sizeAppropriatePadding,
         fontSize
       )}`,
       resize: resizeable ? 'vertical' : 'none',
