@@ -68,6 +68,8 @@ export { default as IconArrowDownward } from './IconArrowDownward';
 export { default as IconArrowDropDown } from './IconArrowDropDown';
 export { default as IconArrowDropDownCircle } from './IconArrowDropDownCircle';
 export { default as IconArrowDropUp } from './IconArrowDropUp';
+export { default as IconArrowDropdownDown } from './IconArrowDropdownDown';
+export { default as IconArrowDropdownUp } from './IconArrowDropdownUp';
 export { default as IconArrowForward } from './IconArrowForward';
 export { default as IconArrowUpward } from './IconArrowUpward';
 export { default as IconArtTrack } from './IconArtTrack';
