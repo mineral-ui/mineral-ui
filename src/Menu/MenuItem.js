@@ -44,10 +44,10 @@ type Props = {
   /** Determines if the item can be focused */
   tabIndex?: number,
   /** Available variants */
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
+  variant?: 'danger' | 'success' | 'warning'
 };
 
-type Item = {
+export type Item = {
   iconEnd?: React$Element<*>,
   iconStart?: React$Element<*>,
   disabled?: boolean,
@@ -56,17 +56,22 @@ type Item = {
   render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
   secondaryText?: React$Node,
   text?: React$Node,
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
+  value?: string,
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 // Some of these values (all of the margins & paddings and the content fontSize)
 // come from Button (large)
 export const componentTheme = (baseTheme: Object) => ({
-  MenuItem_backgroundColor_active: baseTheme.color_gray_40,
-  MenuItem_backgroundColor_focus: baseTheme.color_gray_20,
-  MenuItem_backgroundColor_hover: baseTheme.color_gray_20,
+  MenuItem_backgroundColor_active: baseTheme.color_gray_20,
+  MenuItem_backgroundColor_focus: baseTheme.color_gray_10,
+  MenuItem_backgroundColor_hover: baseTheme.color_gray_10,
+  MenuItem_backgroundColor_selected: baseTheme.color_theme_10,
+  MenuItem_backgroundColor_selectedActive: baseTheme.color_theme_30,
+  MenuItem_backgroundColor_selectedHover: baseTheme.color_theme_20,
   MenuItem_color_text: baseTheme.color_text,
   MenuItem_fontWeight: baseTheme.fontWeight_regular,
+  MenuItem_fontWeight_selected: baseTheme.fontWeight_bold,
   MenuItem_paddingHorizontal: baseTheme.space_inset_md,
   MenuItem_paddingVertical: baseTheme.space_inset_sm,
 
@@ -83,8 +88,8 @@ export const componentTheme = (baseTheme: Object) => ({
 
 // These styles are based off of Button, with significant changes
 const styles = {
-  content: props => {
-    let theme = componentTheme(props.theme);
+  content: ({ theme: baseTheme }) => {
+    let theme = componentTheme(baseTheme);
 
     const fontSize = theme.MenuItemContent_fontSize;
     const paddingBottom = getNormalizedValue(pxToEm(4), fontSize);
@@ -105,11 +110,10 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between'
   },
-  menuItem: props => {
-    const { disabled, isHighlighted, variant } = props;
-    let theme = componentTheme(props.theme);
+  menuItem: ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
+    let theme = componentTheme(baseTheme);
 
-    if (variant !== 'regular') {
+    if (variant) {
       // prettier-ignore
       theme = {
         ...theme,
@@ -138,13 +142,22 @@ const styles = {
         backgroundColor: !disabled && theme.MenuItem_backgroundColor_active
       },
 
+      '[aria-selected="true"]': {
+        backgroundColor: isHighlighted
+          ? theme.MenuItem_backgroundColor_selectedHover
+          : theme.MenuItem_backgroundColor_selected,
+        fontWeight: theme.MenuItem_fontWeight_selected,
+
+        '&:active': {
+          backgroundColor:
+            !disabled && theme.MenuItem_backgroundColor_selectedActive
+        }
+      },
+
       '& [role="img"]': {
         boxSizing: 'content-box',
         display: 'block',
-        fill:
-          disabled || variant !== 'regular'
-            ? 'currentColor'
-            : theme.MenuItemIcon_fill,
+        fill: disabled || variant ? 'currentColor' : theme.MenuItemIcon_fill,
         flex: '0 0 auto',
 
         '&:first-child': {
@@ -246,8 +259,7 @@ const defaultRender = ({
     ...restProps
   };
 
-  let startIcon =
-    variant !== undefined && variant !== 'regular' && variantIcons[variant];
+  let startIcon = variant !== undefined && variant && variantIcons[variant];
   if (iconStart) {
     startIcon = cloneElement(iconStart, { size: pxToEm(24), key: 'iconStart' });
   }
@@ -293,14 +305,9 @@ const customRender = ({ render, item, ...restProps }: Props) => {
  *
  * A custom rendering hook is exposed to enable any extra functionality your app requires.
  */
-export default function MenuItem({
-  tabIndex = 0,
-  variant = 'regular',
-  ...restProps
-}: Props) {
+export default function MenuItem({ tabIndex = 0, ...restProps }: Props) {
   const rootProps = {
     tabIndex,
-    variant,
     ...restProps
   };
 
