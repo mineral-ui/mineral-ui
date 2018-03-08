@@ -20,10 +20,7 @@ import { Target } from 'react-popper';
 import { createStyledComponent } from '../styles';
 
 type Props = {
-  contentId: string,
-  children: React$Node,
-  disabled?: boolean,
-  isOpen: boolean
+  children: React$Node
 };
 
 const Root = createStyledComponent(
@@ -38,24 +35,15 @@ const Root = createStyledComponent(
 
 export default class PopoverTrigger extends Component<Props> {
   render() {
-    const { children, disabled, isOpen, contentId, ...restProps } = this.props;
-    const child = Children.only(children);
-
+    const { children, ...restProps } = this.props;
     const rootProps = {
       component: 'span'
     };
 
-    const triggerProps = {
-      'aria-owns': contentId,
-      'aria-describedby': contentId,
-      'aria-disabled': disabled,
-      'aria-expanded': isOpen,
-      disabled:
-        child.props.disabled !== undefined ? child.props.disabled : disabled,
-      role: 'button',
-      ...restProps
-    };
-
-    return <Root {...rootProps}>{cloneElement(child, triggerProps)}</Root>;
+    return (
+      <Root {...rootProps}>
+        {cloneElement(Children.only(children), restProps)}
+      </Root>
+    );
   }
 }
