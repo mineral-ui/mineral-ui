@@ -16,10 +16,10 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import { Popper } from 'react-popper';
 import { createStyledComponent } from '../styles';
 import { createThemedComponent } from '../themes';
 import { CardBlock, CardTitle } from '../Card';
+import RtlPopper from './RtlPopper';
 import PopoverArrow from './PopoverArrow';
 
 type Props = {
@@ -75,7 +75,7 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const Root = createStyledComponent(
-  Popper,
+  RtlPopper,
   ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
