@@ -41,7 +41,11 @@ const ScrollArea = createStyledComponent('div', ({ height }: Object) => ({
 const ScrollContent = createStyledComponent(
   'div',
   ({ scrollAreaHeight }: Object) => ({
-    padding: `${parseInt(scrollAreaHeight) + 200}px 200vw`
+    height: `${parseInt(scrollAreaHeight) + 500}px`,
+    width: '300vw',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
   })
 );
 

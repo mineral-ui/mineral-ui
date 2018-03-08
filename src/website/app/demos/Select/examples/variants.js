@@ -15,25 +15,22 @@
  */
 
 /* @flow */
-import { CheckboxGroup } from '../../../../../../Checkbox';
-import DemoForm from '../../components/DemoForm';
+import DemoLayout from '../components/DemoLayout';
+import Select from '../../../../../Select';
+import { basicData as data } from '../components/selectData';
 
 export default {
-  id: 'uncontrolled',
-  title: 'Uncontrolled',
-  description: `Create an uncontrolled CheckboxGroup by using the
-\`defaultChecked\` prop rather than the \`checked\` prop.`,
-  scope: { CheckboxGroup, DemoForm },
+  id: 'variants',
+  title: 'Variants',
+  description: `is available in a few variants, mostly for use with
+[validation](../form-field/#validation). Be sure to use the
+[appropriate variant](/color#guidelines-variants) for your intent.`,
+  scope: { data, DemoLayout, Select },
   source: `
-    <DemoForm>
-      <CheckboxGroup
-        name="minerals"
-        defaultChecked={['magnetite', 'quartz']}
-        data={[
-          { label: 'Fluorite', value: 'fluorite' },
-          { label: 'Magnetite', value: 'magnetite' },
-          { label: 'Quartz', value: 'quartz' }
-        ]} />
-    </DemoForm>
+    <DemoLayout>
+      <Select data={data} variant="danger" />
+      <Select data={data} variant="success" />
+      <Select data={data} variant="warning" />
+    </DemoLayout>
   `
 };

@@ -16,15 +16,16 @@
 
 /* @flow */
 import { Component } from 'react';
-import { RadioGroup } from '../../../../../../Radio';
-import DemoForm from '../../components/DemoForm';
+import Select from '../../../../../Select';
+import { basicData as data } from '../components/selectData';
 
 export default {
   id: 'controlled',
+  description: `Select controls its own state by default, and can optionally be
+managed by the application as a controlled component via the control props,
+\`isOpen\`, \`selectedItem\`, and \`highlightedIndex\`.`,
   title: 'Controlled',
-  description: `Provide the \`checked\` prop and an \`onChange\` handler to
-create a controlled component.`,
-  scope: { Component, DemoForm, RadioGroup },
+  scope: { Component, data, Select },
   source: `
   () => {
     class MyForm extends Component {
@@ -32,31 +33,24 @@ create a controlled component.`,
         super(props);
 
         this.state = {
-          value: 'quartz'
+          selectedItem: undefined
         };
 
         this.handleChange = this.handleChange.bind(this);
       }
 
-      handleChange(event) {
+      handleChange(item) {
         this.setState({
-          value: event.target.value
+          selectedItem: item
         });
       }
 
       render() {
         return (
-          <DemoForm>
-            <RadioGroup
-              name="mineral"
-              onChange={this.handleChange}
-              checked={this.state.value}
-              data={[
-                { label: 'Fluorite', value: 'fluorite' },
-                { label: 'Magnetite', value: 'magnetite' },
-                { label: 'Quartz', value: 'quartz' }
-              ]} />
-          </DemoForm>
+          <Select
+            data={data}
+            selectedItem={this.state.selectedItem}
+            onChange={this.handleChange} />
         );
       }
     }

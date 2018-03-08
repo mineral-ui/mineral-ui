@@ -18,21 +18,21 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../../styles';
 import DemoLayout from '../components/DemoLayout';
-import { FormFieldset } from '../../../../../Form';
+import { FormFieldset as _FormFieldset } from '../../../../../Form';
 import TextInput from '../../../../../TextInput';
 import { simulate } from 'glamor';
 
-const FieldSetRoot = createStyledComponent(FormFieldset, {
+const FormFieldset = createStyledComponent(_FormFieldset, {
   '& > *': {
     marginBottom: '0.5rem',
     marginRight: '0.5rem'
   }
 });
 
-function FieldSet(props: {
+const Fieldset = (props: {
   legend: string,
   variant?: 'success' | 'warning' | 'danger'
-}) {
+}) => {
   const { legend, variant } = props;
   const textInputProps = {
     label: 'Example',
@@ -40,8 +40,7 @@ function FieldSet(props: {
   };
 
   return (
-    <FieldSetRoot>
-      <legend>{legend}</legend>
+    <FormFieldset legend={legend}>
       <TextInput defaultValue="Regular" {...textInputProps} />
       <TextInput
         {...simulate('hover')}
@@ -70,22 +69,22 @@ function FieldSet(props: {
       />
       <TextInput readOnly defaultValue="Read Only" {...textInputProps} />
       <TextInput disabled defaultValue="Disabled" {...textInputProps} />
-    </FieldSetRoot>
+    </FormFieldset>
   );
-}
+};
 
 export default {
   id: 'states',
   title: 'States',
   hideFromProd: true,
   hideSource: true,
-  scope: { DemoLayout, FieldSet },
+  scope: { DemoLayout, Fieldset },
   source: `
     <DemoLayout>
-      <FieldSet legend="Regular" />
-      <FieldSet legend="Success" variant="success" />
-      <FieldSet legend="Warning" variant="warning" />
-      <FieldSet legend="Danger" variant="danger" />
+      <Fieldset legend="Regular" />
+      <Fieldset legend="Success" variant="success" />
+      <Fieldset legend="Warning" variant="warning" />
+      <Fieldset legend="Danger" variant="danger" />
     </DemoLayout>
   `
 };

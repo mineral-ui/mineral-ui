@@ -70,7 +70,7 @@ const styles = {
     padding: theme.space_inset_md,
 
     [theme.bp_interior_bestPracticesMultiColumn]: {
-      flex: `1 1 ${7 / 12 * 100}%`
+      width: `${7 / 12 * 100}%`
     },
 
     // Specificity hack
@@ -86,7 +86,7 @@ const styles = {
     [theme.bp_interior_bestPracticesMultiColumn]: {
       borderLeft: `3px solid ${rgba(theme.borderColor, 0.6)}`,
       borderTop: 0,
-      flex: `1 1 ${5 / 12 * 100}%`
+      width: `${5 / 12 * 100}%`
     },
 
     '& ::selection': {

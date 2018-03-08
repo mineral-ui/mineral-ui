@@ -34,11 +34,13 @@ import Markdown from '../../Markdown';
 import Paragraph from '../../Paragraph';
 import content from './gallery.md';
 
+import type { ItemGroups } from '../../../../Menu/Menu';
+
 type Props = {
   theme: { [string]: any }
 };
 
-const menuData = [
+const menuData: ItemGroups = [
   {
     title: 'Menu Title',
     items: [

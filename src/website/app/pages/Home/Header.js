@@ -72,7 +72,7 @@ const styles = {
       paddingTop: pxToEm(30), // matches horizontal padding
       transition: `margin ${transitionProperties}`,
 
-      '& div[id$="popoverContent"]': {
+      '& div[id$="content"]': {
         // Matches nav link padding + menuButton optical adjustment
         marginTop: `${parseFloat(theme.space_stack_sm) + 0.45}em`,
         opacity: isMenuOpen ? 1 : 0,

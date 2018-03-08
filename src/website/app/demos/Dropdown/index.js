@@ -15,7 +15,7 @@
  */
 
 /* @flow */
-import { componentTheme } from '../../../../Dropdown/DropdownContent';
+import { componentTheme } from '../../../../Dropdown/Dropdown';
 import examples from './examples';
 import bestPractices from './bestPractices';
 const doc = require('!!react-docgen-loader!../../../../Dropdown/Dropdown');

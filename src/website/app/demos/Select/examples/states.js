@@ -16,11 +16,12 @@
 
 /* @flow */
 import React from 'react';
+import { simulate } from 'glamor';
 import { createStyledComponent } from '../../../../../styles';
 import DemoLayout from '../components/DemoLayout';
 import { FormFieldset as _FormFieldset } from '../../../../../Form';
-import TextArea from '../../../../../TextArea';
-import { simulate } from 'glamor';
+import Select from '../../../../../Select';
+import { basicData as data } from '../components/selectData';
 
 const FormFieldset = createStyledComponent(_FormFieldset, {
   '& > *': {
@@ -34,41 +35,29 @@ const Fieldset = (props: {
   variant?: 'success' | 'warning' | 'danger'
 }) => {
   const { legend, variant } = props;
-  const textAreaProps = {
-    label: 'Example',
+  const selectProps = {
+    data,
     variant
   };
 
   return (
     <FormFieldset legend={legend}>
-      <TextArea defaultValue="Regular" {...textAreaProps} />
-      <TextArea
-        {...simulate('hover')}
-        defaultValue="Hover"
-        {...textAreaProps}
-      />
-      <TextArea
-        {...simulate('focus')}
-        defaultValue="Focus"
-        {...textAreaProps}
-      />
-      <TextArea
+      <Select placeholder="Regular" {...selectProps} />
+      <Select {...simulate('hover')} placeholder="Hover" {...selectProps} />
+      <Select {...simulate('focus')} placeholder="Focus" {...selectProps} />
+      <Select
         {...simulate('focus', 'hover')}
-        defaultValue="Focus & Hover"
-        {...textAreaProps}
+        placeholder="Focus & Hover"
+        {...selectProps}
       />
-      <TextArea
+      <Select
         {...simulate('focus', 'active')}
-        defaultValue="Focus & Active"
-        {...textAreaProps}
+        placeholder="Focus & Active"
+        {...selectProps}
       />
-      <TextArea
-        {...simulate('active')}
-        defaultValue="Active"
-        {...textAreaProps}
-      />
-      <TextArea readOnly defaultValue="Read Only" {...textAreaProps} />
-      <TextArea disabled defaultValue="Disabled" {...textAreaProps} />
+      <Select {...simulate('active')} placeholder="Active" {...selectProps} />
+      <Select readOnly placeholder="Read Only" {...selectProps} />
+      <Select disabled placeholder="Disabled" {...selectProps} />
     </FormFieldset>
   );
 };
@@ -76,6 +65,14 @@ const Fieldset = (props: {
 export default {
   id: 'states',
   title: 'States',
+  description: `<Callout title="Note">
+  <p key={0}>
+    Much of this example is currently broken, due to
+    the <code key={0}>simulate()</code> prop not being passed down to the
+    ultimate element with styles dependent on state. We hope the switch to
+    render props will enable a fix.
+  </p>
+</Callout>`,
   hideFromProd: true,
   hideSource: true,
   scope: { DemoLayout, Fieldset },

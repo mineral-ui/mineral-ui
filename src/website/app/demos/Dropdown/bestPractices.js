@@ -20,24 +20,24 @@ import Button from '../../../../Button';
 import IconMenu from 'mineral-ui-icons/IconMenu';
 import Dropdown from '../../../../Dropdown';
 
-const data = [
-  { items: [{ text: 'Settings' }, { text: 'Help' }, { text: 'Log out' }] }
+import type { Items } from '../../../../Menu/Menu';
+
+const data: Items = [
+  { text: 'Settings' },
+  { text: 'Help' },
+  { text: 'Log out' }
 ];
 
-const shortData = [{ items: [{ text: 'Reload' }] }];
+const shortData: Items = [{ text: 'Reload' }];
 
-const navData = [
-  {
-    items: [
-      { text: 'Preferences' },
-      { text: 'Account' },
-      { text: 'About us' },
-      { text: 'Pricing' },
-      { text: 'Community' },
-      { text: 'Help' },
-      { text: 'Log in' }
-    ]
-  }
+const navData: Items = [
+  { text: 'Preferences' },
+  { text: 'Account' },
+  { text: 'About us' },
+  { text: 'Pricing' },
+  { text: 'Community' },
+  { text: 'Help' },
+  { text: 'Log in' }
 ];
 
 export default [

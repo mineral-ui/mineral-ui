@@ -31,7 +31,7 @@ group of related controls.`,
         name="mineral-1"
         defaultChecked="quartz"
         data={[
-          { label: 'Flourite', value: 'flourite' },
+          { label: 'Fluorite', value: 'fluorite' },
           { label: 'Magnetite', value: 'magnetite' },
           { label: 'Quartz', value: 'quartz' }
         ]} />
