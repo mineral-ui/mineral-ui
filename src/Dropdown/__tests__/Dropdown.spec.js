@@ -23,22 +23,20 @@ import { MenuItem } from '../../Menu';
 import examples from '../../website/app/demos/Dropdown/examples';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
-const data = [
+import type { Items } from '../../Menu/Menu';
+
+const data: Items = [
   {
-    items: [
-      {
-        text: 'item 1',
-        onClick: jest.fn()
-      },
-      {
-        text: 'item 2',
-        onClick: jest.fn()
-      }
-    ]
+    text: 'item 1',
+    onClick: jest.fn()
+  },
+  {
+    text: 'item 2',
+    onClick: jest.fn()
   }
 ];
 
-function shallowDropdown(props = {}) {
+const shallowDropdown = (props = {}) => {
   const dropdownProps = {
     children: <button>trigger</button>,
     data,
@@ -46,9 +44,9 @@ function shallowDropdown(props = {}) {
   };
 
   return shallow(<Dropdown {...dropdownProps} />);
-}
+};
 
-function mountDropdown(props = {}) {
+const mountDropdown = (props = {}) => {
   const dropdownProps = {
     children: <button>trigger</button>,
     data,
@@ -56,13 +54,32 @@ function mountDropdown(props = {}) {
   };
 
   return mountInThemeProvider(<Dropdown {...dropdownProps} />);
-}
+};
 
-function assertTriggerHasFocus(trigger) {
+const assertTriggerHasFocus = trigger => {
   expect(
     trigger.find('button').getDOMNode() === document.activeElement
   ).toEqual(true);
-}
+};
+
+const assertContentExists = themeProvider => {
+  expect(themeProvider.find(DropdownContent).exists()).toEqual(true);
+};
+
+const assertItemAtIndexIsHighlighted = (themeProvider, index) => {
+  expect(
+    themeProvider
+      .find(MenuItem)
+      .at(index)
+      .props().isHighlighted
+  ).toEqual(true);
+};
+
+const assertNoItemsHighlighted = themeProvider => {
+  themeProvider.find(MenuItem).forEach(menuItem => {
+    expect(menuItem.props().isHighlighted).toEqual(false);
+  });
+};
 
 describe('Dropdown', () => {
   describe('renders', () => {
@@ -73,49 +90,110 @@ describe('Dropdown', () => {
     });
   });
 
-  describe('opens', () => {
-    let button, dropdown, themeProvider, trigger;
+  describe('when closed', () => {
+    describe('opens', () => {
+      let button, dropdown, themeProvider, trigger;
 
-    beforeEach(() => {
-      [themeProvider, dropdown] = mountDropdown({ onOpen: jest.fn() });
-      trigger = dropdown.find(DropdownTrigger);
-      button = trigger.find('button');
+      beforeEach(() => {
+        [themeProvider, dropdown] = mountDropdown({ onOpen: jest.fn() });
+        trigger = dropdown.find(DropdownTrigger);
+        button = trigger.find('button');
+      });
+
+      it('when trigger is clicked', () => {
+        button.simulate('click');
+
+        assertContentExists(themeProvider);
+        assertTriggerHasFocus(trigger);
+      });
+
+      it('when down arrow is pressed', () => {
+        button.simulate('keydown', { key: 'ArrowDown' });
+
+        assertContentExists(themeProvider);
+      });
+
+      it('when up arrow is pressed', () => {
+        button.simulate('keydown', { key: 'ArrowUp' });
+
+        assertContentExists(themeProvider);
+      });
+
+      it('when Space is pressed', () => {
+        button.simulate('keydown', { key: ' ' });
+
+        assertContentExists(themeProvider);
+      });
+
+      it('when Enter is pressed', () => {
+        button.simulate('keydown', { key: 'Enter' });
+
+        assertContentExists(themeProvider);
+      });
+
+      it('calls onOpen', () => {
+        button.simulate('click');
+
+        expect(dropdown.props().onOpen).toHaveBeenCalled();
+      });
     });
 
-    it('when trigger is clicked', () => {
-      button.simulate('click');
-      const content = themeProvider.find(DropdownContent);
+    describe('item highlighting', () => {
+      let button, dropdown, themeProvider, trigger;
 
-      expect(content.exists()).toEqual(true);
-      assertTriggerHasFocus(trigger);
-    });
+      beforeEach(() => {
+        [themeProvider, dropdown] = mountDropdown();
+        trigger = dropdown.find(DropdownTrigger);
+        button = trigger.find('button');
+      });
 
-    it('when down arrow is pressed', () => {
-      button.simulate('keydown', { key: 'ArrowDown' });
-      const content = themeProvider.find(DropdownContent);
+      describe('when Space is pressed', () => {
+        it('highlight no items', () => {
+          button.simulate('keydown', { key: ' ' });
 
-      expect(content.exists()).toEqual(true);
-    });
+          assertNoItemsHighlighted(themeProvider);
+        });
+      });
 
-    it('when up arrow is pressed', () => {
-      button.simulate('keydown', { key: 'ArrowUp' });
-      const content = themeProvider.find(DropdownContent);
+      describe('when Enter is pressed', () => {
+        it('highlight no items', () => {
+          button.simulate('keydown', { key: 'Enter' });
 
-      expect(content.exists()).toEqual(true);
-    });
+          assertNoItemsHighlighted(themeProvider);
+        });
+      });
 
-    it('calls onOpen', () => {
-      button.simulate('click');
+      describe('when trigger is clicked', () => {
+        it('highlight no items', () => {
+          button.simulate('click');
 
-      expect(dropdown.props().onOpen).toHaveBeenCalled();
+          assertNoItemsHighlighted(themeProvider);
+        });
+      });
+
+      describe('when down arrow is pressed', () => {
+        it('highlights first item', () => {
+          button.simulate('keydown', { key: 'ArrowDown' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 0);
+        });
+      });
+
+      describe('when up arrow is pressed', () => {
+        it('highlights last item', () => {
+          button.simulate('keydown', { key: 'ArrowUp' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 1);
+        });
+      });
     });
   });
 
-  describe('closes', () => {
-    let button, dropdown, trigger;
+  describe('when open', () => {
+    let button, dropdown, themeProvider, trigger;
 
     beforeEach(() => {
-      [, dropdown] = mountDropdown({
+      [themeProvider, dropdown] = mountDropdown({
         onClose: jest.fn(),
         defaultIsOpen: true
       });
@@ -123,118 +201,135 @@ describe('Dropdown', () => {
       button = trigger.find('button');
     });
 
-    it('calls onClose', () => {
-      button.simulate('click');
-
-      expect(dropdown.props().onClose).toHaveBeenCalled();
-    });
-  });
-
-  describe('item highlighting', () => {
-    let button, dropdown, themeProvider, trigger;
-
-    beforeEach(() => {
-      [themeProvider, dropdown] = mountDropdown();
-      trigger = dropdown.find(DropdownTrigger);
-      button = trigger.find('button');
-    });
-
-    describe('when down arrow is pressed', () => {
-      it('highlights first item upon opening', () => {
-        button.simulate('keydown', { key: 'ArrowDown' });
-
-        const menuItem = themeProvider.find(MenuItem).first();
-
-        expect(menuItem.props().isHighlighted).toEqual(true);
+    describe('closes', () => {
+      it('calls onClose', () => {
+        button.simulate('click');
+        expect(dropdown.props().onClose).toHaveBeenCalledTimes(1);
       });
 
-      it('highlights next item', () => {
-        button.simulate('keydown', { key: 'ArrowDown' });
-        button.simulate('keydown', { key: 'ArrowDown' });
-        const menuItem = themeProvider.find(MenuItem).last();
-
-        expect(menuItem.props().isHighlighted).toEqual(true);
+      it('when clicked', () => {
+        button.simulate('click');
+        expect(dropdown.props().onClose).toHaveBeenCalledTimes(1);
       });
 
-      it('highlights first item when end of items is reached', () => {
-        button.simulate('keydown', { key: 'ArrowDown' });
-        button.simulate('keydown', { key: 'ArrowDown' });
-        button.simulate('keydown', { key: 'ArrowDown' });
-        const menuItem = themeProvider.find(MenuItem).first();
+      it('when Space is pressed', () => {
+        button.simulate('keydown', { key: ' ' });
+        expect(dropdown.props().onClose).toHaveBeenCalledTimes(1);
+      });
 
-        expect(menuItem.props().isHighlighted).toEqual(true);
+      it('when Enter is pressed', () => {
+        button.simulate('keydown', { key: 'Enter' });
+        expect(dropdown.props().onClose).toHaveBeenCalledTimes(1);
       });
     });
 
-    describe('when up arrow is pressed', () => {
-      it('highlights last item upon opening', () => {
-        button.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = themeProvider.find(MenuItem).last();
+    describe('item navigation', () => {
+      describe('when down arrow is pressed', () => {
+        it('highlights next item', () => {
+          button.simulate('keydown', { key: 'ArrowDown' });
+          button.simulate('keydown', { key: 'ArrowDown' });
 
-        expect(menuItem.props().isHighlighted).toEqual(true);
+          assertItemAtIndexIsHighlighted(themeProvider, 1);
+        });
+
+        it('highlights first item when end of items is reached', () => {
+          button.simulate('keydown', { key: 'ArrowDown' });
+          button.simulate('keydown', { key: 'ArrowDown' });
+          button.simulate('keydown', { key: 'ArrowDown' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 0);
+        });
       });
 
-      it('highlights previous item', () => {
-        button.simulate('keydown', { key: 'ArrowUp' });
-        button.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = themeProvider.find(MenuItem).first();
+      describe('when up arrow is pressed', () => {
+        it('highlights previous item', () => {
+          button.simulate('keydown', { key: 'ArrowUp' });
+          button.simulate('keydown', { key: 'ArrowUp' });
 
-        expect(menuItem.props().isHighlighted).toEqual(true);
+          assertItemAtIndexIsHighlighted(themeProvider, 0);
+        });
+
+        it('highlights last item when start of items is reached', () => {
+          button.simulate('keydown', { key: 'ArrowUp' });
+          button.simulate('keydown', { key: 'ArrowUp' });
+          button.simulate('keydown', { key: 'ArrowUp' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 1);
+        });
       });
 
-      it('highlights last item when start of items is reached', () => {
-        button.simulate('keydown', { key: 'ArrowUp' });
-        button.simulate('keydown', { key: 'ArrowUp' });
-        button.simulate('keydown', { key: 'ArrowUp' });
-        const menuItem = themeProvider.find(MenuItem).last();
+      describe('when Home is pressed', () => {
+        it('highlights first item', () => {
+          button.simulate('keydown', { key: 'Home' });
 
-        expect(menuItem.props().isHighlighted).toEqual(true);
+          assertItemAtIndexIsHighlighted(themeProvider, 0);
+        });
+      });
+
+      describe('when End is pressed', () => {
+        it('highlights last item', () => {
+          button.simulate('keydown', { key: 'End' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 1);
+        });
+      });
+
+      describe('when a letter is pressed', () => {
+        it('highlights matching item', () => {
+          button.simulate('keydown', { key: 'i' });
+
+          assertItemAtIndexIsHighlighted(themeProvider, 0);
+        });
       });
     });
-  });
 
-  describe('item selection', () => {
-    let dropdown, item;
+    describe('item selection', () => {
+      let dropdown, item;
 
-    const itemSelectionAssertions = ({ simulateArgs }) => {
-      it('calls item onClick', () => {
-        item.simulate(...simulateArgs);
-        const { onClick } = data[0].items[0];
+      const itemSelectionAssertions = ({ simulateArgs }) => {
+        it('calls item onClick', () => {
+          item.simulate(...simulateArgs);
+          const { onClick } = data[0];
 
-        expect(onClick).toHaveBeenCalled();
+          expect(onClick).toHaveBeenCalled();
+        });
+
+        it('closes dropdown', () => {
+          item.simulate(...simulateArgs);
+          expect(dropdown.instance().state.isOpen).toBe(false);
+        });
+
+        it('restores focus to the trigger', () => {
+          item.simulate(...simulateArgs);
+          const trigger = dropdown.find(DropdownTrigger);
+
+          assertTriggerHasFocus(trigger);
+        });
+      };
+
+      beforeEach(() => {
+        [, dropdown] = mountDropdown({
+          defaultIsOpen: true
+        });
+        item = dropdown.find(MenuItem).first();
+        data[0].onClick && data[0].onClick.mockReset();
       });
 
-      it('closes dropdown', () => {
-        item.simulate(...simulateArgs);
-        expect(dropdown.instance().state.isOpen).toBe(false);
+      describe('when mouse click', () => {
+        itemSelectionAssertions({ simulateArgs: ['click'] });
       });
 
-      it('restores focus to the trigger', () => {
-        item.simulate(...simulateArgs);
-        const trigger = dropdown.find(DropdownTrigger);
-
-        assertTriggerHasFocus(trigger);
+      describe('when press enter key', () => {
+        itemSelectionAssertions({
+          simulateArgs: ['keydown', { key: 'Enter' }]
+        });
       });
-    };
 
-    beforeEach(() => {
-      [, dropdown] = mountDropdown({
-        defaultIsOpen: true
+      describe('when press space key', () => {
+        itemSelectionAssertions({
+          simulateArgs: ['keydown', { key: ' ' }]
+        });
       });
-      item = dropdown.find(MenuItem).first();
-      data[0].items[0].onClick.mockReset();
-    });
-
-    describe('when mouse click', () => {
-      itemSelectionAssertions({ simulateArgs: ['click'] });
-    });
-
-    describe('when press enter key', () => {
-      itemSelectionAssertions({ simulateArgs: ['keydown', { key: 'Enter' }] });
-    });
-
-    describe('when press space key', () => {
-      itemSelectionAssertions({ simulateArgs: ['keydown', { key: 'Enter' }] });
     });
   });
 

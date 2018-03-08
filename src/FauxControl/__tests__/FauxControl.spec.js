@@ -17,22 +17,23 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import TextInput from '../TextInput';
-import examples from '../../website/app/demos/TextInput/examples';
-import testDemoExamples from '../../../utils/testDemoExamples';
+import FauxControl from '../FauxControl';
 
-function shallowTextInput() {
-  return shallow(<TextInput />);
+const Control = props => <input {...props} />;
+
+function shallowFauxControl(props = {}) {
+  const fauxControlProps = {
+    control: Control,
+    ...props
+  };
+
+  return shallow(<FauxControl {...fauxControlProps} />);
 }
 
-describe('TextInput', () => {
+describe('FauxControl', () => {
   it('renders', () => {
-    const textInput = shallowTextInput();
+    const textInput = shallowFauxControl();
 
     expect(textInput.exists()).toEqual(true);
-  });
-
-  testDemoExamples(examples, {
-    exclude: ['states']
   });
 });

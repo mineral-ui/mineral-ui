@@ -151,6 +151,8 @@ describe('Popover', () => {
       assertTriggerHasFocus(trigger);
     });
 
+    it('when focus is moved outside of component');
+
     it('calls onClose', () => {
       button.simulate('click');
 
