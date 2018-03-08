@@ -19,26 +19,20 @@ import React from 'react';
 import { createStyledComponent } from '../styles';
 import { MenuDivider, MenuGroup, MenuItem } from './index';
 
+import type { Item } from './MenuItem';
+
 type Props = {
   /** [MenuDivider](../menu-divider), [MenuGroup](../menu-group), or [MenuItem](../menu-item) */
   children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
-  data?: Array<{ items: Array<Item>, title?: React$Node }>,
+  data?: Items | ItemGroups,
   /** @Private Function that returns props to be applied to each item */
   getItemProps?: (props: Object, scope: Object) => Object
 };
 
-type Item = {
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
-  disabled?: boolean,
-  divider?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
-  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: React$Node,
-  text?: React$Node,
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
-};
+export type ItemGroup = { items: Array<Item>, title?: React$Node };
+export type Items = Array<Item>;
+export type ItemGroups = Array<ItemGroup>;
 
 const Root = createStyledComponent(
   'div',
@@ -72,8 +66,28 @@ export default function Menu({
   );
 }
 
+const isGroupedData = (data: Items | ItemGroups) => {
+  return data[0].hasOwnProperty('items');
+};
+
+const groupifyData = (data: Items | ItemGroups) => {
+  return isGroupedData(data) ? data : [{ items: data }];
+};
+
+export const getItems = (data: Items | ItemGroups) => {
+  // $FlowFixMe https://github.com/facebook/flow/issues/5885
+  const itemGroups: ItemGroups = groupifyData(data);
+  return itemGroups.reduce((acc, group) => {
+    return group.items && group.items.length
+      ? acc.concat(group.items.filter(item => !item.divider))
+      : acc;
+  }, []);
+};
+
 function renderFromData(data, getItemProps) {
-  return data.reduce(
+  // $FlowFixMe https://github.com/facebook/flow/issues/5885
+  const itemGroups: ItemGroups = groupifyData(data);
+  return itemGroups.reduce(
     (acc, group, groupIndex) => {
       acc.groups.push(renderMenuGroup(group, groupIndex, getItemProps, acc));
       return acc;
@@ -82,7 +96,7 @@ function renderFromData(data, getItemProps) {
   ).groups;
 }
 
-function renderMenuGroup(group, groupIndex, getItemProps, acc) {
+function renderMenuGroup(group: ItemGroup, groupIndex, getItemProps, acc) {
   return group.items && group.items.length ? (
     <MenuGroup key={groupIndex} title={group.title}>
       {group.items.map((item, itemIndex) => {
