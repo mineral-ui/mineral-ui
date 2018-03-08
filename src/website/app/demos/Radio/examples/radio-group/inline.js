@@ -31,7 +31,7 @@ rather than stacked vertically.`,
         name="mineral"
         defaultChecked="quartz"
         data={[
-          { label: 'Flourite', value: 'flourite' },
+          { label: 'Fluorite', value: 'fluorite' },
           { label: 'Magnetite', value: 'magnetite' },
           { label: 'Quartz', value: 'quartz' }
         ]} />

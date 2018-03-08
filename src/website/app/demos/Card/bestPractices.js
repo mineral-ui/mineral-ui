@@ -32,21 +32,19 @@ import Card, {
 import _Link from '../../../../Link';
 import loremIpsum from './components/loremIpsum';
 
+import type { Items } from '../../../../Menu/Menu';
+
 const CardList = createStyledComponent('div', ({ theme }) => ({
   '& > div': {
     marginBottom: theme.space_stack_sm
   }
 }));
 
-const actionMenuData = [
-  {
-    items: [
-      { text: 'Rename' },
-      { text: 'Copy' },
-      { divider: true },
-      { text: 'Delete', variant: 'danger' }
-    ]
-  }
+const actionMenuData: Items = [
+  { text: 'Rename' },
+  { text: 'Copy' },
+  { divider: true },
+  { text: 'Delete', variant: 'danger' }
 ];
 
 const Link = props => <_Link {...props} target="_blank" />;

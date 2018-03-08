@@ -64,7 +64,7 @@ create a controlled component.`,
               onChange={this.handleChange}
               checked={this.state.values}
               data={[
-                { label: 'Flourite', value: 'flourite' },
+                { label: 'Fluorite', value: 'fluorite' },
                 { label: 'Magnetite', value: 'magnetite' },
                 { label: 'Quartz', value: 'quartz' }
               ]} />

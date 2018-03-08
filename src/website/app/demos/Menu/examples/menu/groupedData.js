@@ -22,15 +22,16 @@ import CustomRender from '../../components/CustomRender';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
-  id: 'data',
-  title: 'Data-Driven',
+  id: 'grouped-data',
+  title: 'Grouped Data',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Menu content can also be defined by an array of data, with the structure shown in the code example below.
-Object properties in the \`items\` array(s) will be passed on to the [MenuItem](../menu-item).
+  description: `Menu items can be grouped by using the structure shown in the
+code example below. Object properties in the \`items\` array(s) will be passed
+on to the [MenuItem](../menu-item).
 
-A new [MenuGroup](../menu-group) will be created for each array object that has an \`items\` property defined.
-[MenuDividers](../menu-divider) are created simply by passing \`{divider: true}\` as an item.`,
+A new [MenuGroup](../menu-group) will be created for each array object that has
+an \`items\` property defined.`,
   scope: { CustomRender, DemoLayout, IconCloud, Menu },
   source: `
     () => {

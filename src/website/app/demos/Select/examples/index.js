@@ -15,28 +15,44 @@
  */
 
 /* @flow */
-import scrolling from './scrolling';
 import controlled from './controlled';
+import data from './data';
 import disabled from './disabled';
+import formField from './formField';
 import importSyntax from './importSyntax';
-import onOpenClose from './onOpenClose';
+import invalid from './invalid';
 import overflow from './overflow';
+import placeholder from './placeholder';
 import placement from './placement';
-import popover from './popover';
 import portal from './portal';
+import readOnly from './readOnly';
+import required from './required';
 import rtl from './rtl';
-import title from './title';
+import scrolling from './scrolling';
+import sizes from './sizes';
+import states from './states';
+import triggerRef from './triggerRef';
+import uncontrolled from './uncontrolled';
+import variants from './variants';
 
 export default [
   importSyntax,
-  popover,
-  title,
+  uncontrolled,
+  controlled,
+  data,
+  placeholder,
+  disabled,
+  readOnly,
+  required,
+  invalid,
+  sizes,
+  variants,
   placement,
   overflow,
   scrolling,
   portal,
-  onOpenClose,
-  disabled,
-  controlled,
-  rtl
+  triggerRef,
+  rtl,
+  formField,
+  states
 ];

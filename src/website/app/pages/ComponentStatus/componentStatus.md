@@ -20,27 +20,26 @@ Statuses:
 | Component                                   | Status           |
 |---------------------------------------------|------------------|
 | [Avatar](/components/avatar)                | [available]      |
-| [Box](/components/box) ~ new                | [available]      |
+| [Box](/components/box)                      | [available]      |
 | [Button](/components/button)                | [available]      |
 | [Card](/components/card)                    | [available]      |
 | [Checkbox](/components/checkbox)            | [available]      |
 | [Dropdown](/components/dropdown)            | [available]      |
-| [Flex](/components/flex) ~ new              | [available]      |
+| [Flex](/components/flex)                    | [available]      |
 | [Form](/components/form-field)              | [available]      |
 | [Icon](/components/icon)                    | [available]      |
 | [Link](/components/link)                    | [available]      |
 | [Menu](/components/menu)                    | [available]      |
 | [Popover](/components/popover)              | [available]      |
 | [Radio](/components/radio)                  | [available]      |
-| [StartEnd](/components/start-end) ~ new     | [available]      |
+| [Select](/components/select) ~ new          | [available]      |
+| [StartEnd](/components/start-end)           | [available]      |
 | [TextArea](/components/text-area)           | [available]      |
 | [TextInput](/components/text-input)         | [available]      |
 | [ThemeProvider](/components/theme-provider) | [available]      |
-| [Tooltip](/components/tooltip) ~ new        | [available]      |
-| Select                                      | [in development] |
+| [Tooltip](/components/tooltip)              | [available]      |
 | Grid                                        | [planned]        |
 | Toggle                                      | [planned]        |
 | DataTable                                   |                  |
 | DatePicker                                  |                  |
-| Grid                                        |                  |
 | Navigation                                  |                  |

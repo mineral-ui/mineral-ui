@@ -17,63 +17,60 @@
 /* @flow */
 import Button from '../../../../../Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import Dropdown from '../../../../../Dropdown';
+import Select from '../../../../../Select';
 import CustomRender from '../../Menu/components/CustomRender';
 
 export default {
   id: 'data',
   title: 'Data-Driven',
-  description: `Dropdown content is defined by an array of data, with the
+  description: `Select options are defined by an array of data, with the
 structure shown in the code example below. Object properties will be passed on
 to the [MenuItem](../menu-item).
 
 [MenuDividers](../menu-divider) are created simply by passing
 \`{divider: true}\` as an item. Menu data can also be
 [grouped](../menu/grouped-data).`,
-  scope: { Button, CustomRender, Dropdown, IconCloud },
+  scope: { Button, CustomRender, Select, IconCloud },
   source: `
     () => {
       const data = [
         {
-          text: 'Menu item with onClick',
-          onClick: event => { console.log(event); }
-        },
-        {
           text: 'Menu item',
-          secondaryText: 'Secondary text'
+          secondaryText: 'Secondary text',
+          value: 'basic'
         },
         {
           text: 'Icon at start',
-          iconStart: <IconCloud />
+          iconStart: <IconCloud />,
+          value: 'iconStart'
         },
         {
           text: 'Icon at end',
-          iconEnd: <IconCloud />
+          iconEnd: <IconCloud />,
+          value: 'iconEnd'
         },
         {
           divider: true
         },
         {
           text: 'Danger variant',
-          variant: 'danger' // 'danger' | 'success' | 'warning'
+          variant: 'danger', // 'danger' | 'success' | 'warning'
+          value: 'variant'
         },
         {
           text: 'Disabled menu item',
           onClick: () => { console.log('onClick is not triggered for disabled MenuItems'); },
-          disabled: true
+          disabled: true,
+          value: 'disabled'
         },
         {
-          text: 'Custom render',
+          text: 'Custom render', // See Custom Render example in MenuItem
           avatar: '/images/avatar.svg',
-          href: '/components/menu-item#custom-render', // <-- Details here
-          render: CustomRender
+          render: CustomRender,
+          value: 'custom'
         }
       ];
 
-      return (
-        <Dropdown data={data}>
-          <Button>Menu</Button>
-        </Dropdown>
-      );
+      return <Select data={data} />;
     }`
 };

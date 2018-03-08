@@ -62,9 +62,9 @@ component. Set the checked state with the \`checked\` prop and provide an
           <DemoForm>
             <Checkbox
               name="minerals"
-              label="Flourite"
-              value="flourite"
-              checked={this.state.values.indexOf('flourite') !== -1}
+              label="Fluorite"
+              value="fluorite"
+              checked={this.state.values.indexOf('fluorite') !== -1}
               onChange={this.handleChange} />
             <Checkbox
               name="minerals"

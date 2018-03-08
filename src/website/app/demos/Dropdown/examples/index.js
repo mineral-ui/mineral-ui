@@ -24,6 +24,7 @@ import onOpenClose from './onOpenClose';
 import overflow from './overflow';
 import placement from './placement';
 import portal from './portal';
+import rtl from './rtl';
 import scrolling from './scrolling';
 import wide from './wide';
 
@@ -38,5 +39,6 @@ export default [
   portal,
   onOpenClose,
   disabled,
-  controlled
+  controlled,
+  rtl
 ];

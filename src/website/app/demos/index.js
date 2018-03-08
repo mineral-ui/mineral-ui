@@ -30,6 +30,7 @@ import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
 import radio from './Radio';
+import select from './Select';
 import startEnd from './StartEnd';
 import textArea from './TextArea';
 import textInput from './TextInput';
@@ -50,6 +51,7 @@ const demos = flatten([
   menu,
   popover,
   radio,
+  select,
   startEnd,
   textArea,
   textInput,
