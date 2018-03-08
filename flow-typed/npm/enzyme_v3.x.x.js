@@ -81,7 +81,8 @@ declare module "enzyme" {
     constructor(nodes: NodeOrNodes, root: any, options?: ?Object): ReactWrapper,
     mount(): this,
     ref(refName: string): this,
-    detach(): void
+    detach(): void,
+    destroy(): void // Custom destroy function to make test cleanup easier
   }
 
   declare class ShallowWrapper extends Wrapper {
