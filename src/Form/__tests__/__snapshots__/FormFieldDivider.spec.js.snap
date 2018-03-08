@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormFieldDivider demo examples basic 1`] = `
-.glamor-3,
-[data-glamor-3] {
+.glamor-6,
+[data-glamor-6] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -11,12 +11,12 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   outline: 0;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.glamor-6 *,
+[data-glamor-6] *,
+.glamor-6 *::before,
+[data-glamor-6] *::before,
+.glamor-6 *::after,
+[data-glamor-6] *::after {
   box-sizing: inherit;
 }
 
@@ -43,14 +43,8 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   -webkit-align-self: flex-end;
 }
 
-.glamor-2,
-[data-glamor-2] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
+.glamor-4,
+[data-glamor-4] {
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -58,23 +52,13 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
-  box-sizing: inherit;
-}
-
-.glamor-2 [role="img"],
-[data-glamor-2] [role="img"] {
+.glamor-4 [role="img"],
+[data-glamor-4] [role="img"] {
   display: block;
   fill: #c8d1e0;
   flex: 0 0 auto;
@@ -82,8 +66,76 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.glamor-2 [role="img"]:last-of-type,
-[data-glamor-2] [role="img"]:last-of-type {
+.glamor-4 [role="img"]:last-of-type,
+[data-glamor-4] [role="img"]:last-of-type {
+  fill: #c8d1e0;
+}
+
+.glamor-3,
+[data-glamor-3] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.glamor-3 *,
+[data-glamor-3] *,
+.glamor-3 *::before,
+[data-glamor-3] *::before,
+.glamor-3 *::after,
+[data-glamor-3] *::after {
+  box-sizing: inherit;
+}
+
+.glamor-3:hover > div:last-child,
+[data-glamor-3]:hover > div:last-child,
+.glamor-3[data-simulate-hover] > div:last-child,
+[data-glamor-3][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.glamor-3:focus > div:last-child,
+[data-glamor-3]:focus > div:last-child,
+.glamor-3[data-simulate-focus] > div:last-child,
+[data-glamor-3][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3:active > div:last-child,
+[data-glamor-3]:active > div:last-child,
+.glamor-3[data-simulate-active] > div:last-child,
+[data-glamor-3][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.glamor-3 [role="img"],
+[data-glamor-3] [role="img"] {
+  display: block;
+  fill: #c8d1e0;
+  flex: 0 0 auto;
+  margin: 0 0.5em;
+  -webkit-flex: 0 0 auto;
+}
+
+.glamor-3 [role="img"]:last-of-type,
+[data-glamor-3] [role="img"]:last-of-type {
   fill: #c8d1e0;
 }
 
@@ -92,16 +144,16 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
+  min-width: 0;
+  width: 100%;
+  color: #58606e;
   font-size: 0.875em;
   height: 2.857142857142857em;
-  min-width: 0;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  width: 100%;
   -webkit-flex: 1 1 auto;
 }
 
@@ -136,31 +188,16 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   display: none;
 }
 
-.glamor-1:hover ~ div,
-[data-glamor-1]:hover ~ div,
-.glamor-1[data-simulate-hover] ~ div,
-[data-glamor-1][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.glamor-1:focus ~ div,
-[data-glamor-1]:focus ~ div,
-.glamor-1[data-simulate-focus] ~ div,
-[data-glamor-1][data-simulate-focus] ~ div {
+.glamor-1:focus ~ div:last-child,
+[data-glamor-1]:focus ~ div:last-child,
+.glamor-1[data-simulate-focus] ~ div:last-child,
+[data-glamor-1][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
 }
 
-.glamor-1:active ~ div,
-[data-glamor-1]:active ~ div,
-.glamor-1[data-simulate-active] ~ div,
-[data-glamor-1][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.glamor-1 ~ div,
-[data-glamor-1] ~ div {
+.glamor-2,
+[data-glamor-2] {
   background-color: #fff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -174,8 +211,8 @@ exports[`FormFieldDivider demo examples basic 1`] = `
   z-index: -1;
 }
 
-.glamor-4,
-[data-glamor-4] {
+.glamor-7,
+[data-glamor-7] {
   background-color: #c8d1e0;
   height: 1px;
   margin: 0.5em 0;
@@ -201,7 +238,7 @@ exports[`FormFieldDivider demo examples basic 1`] = `
           >
             <glamorous(div)>
               <div
-                className="glamor-13"
+                className="glamor-22"
               >
                 <FormField
                   label="Old Password"
@@ -211,7 +248,7 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -238,42 +275,117 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "password",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="password"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="password"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="password"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -285,7 +397,7 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                     role="separator"
                   >
                     <div
-                      className="glamor-4"
+                      className="glamor-7"
                       role="separator"
                     />
                   </FormFieldDivider>
@@ -298,7 +410,7 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -325,42 +437,117 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "password",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="password"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="password"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="password"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
@@ -375,7 +562,7 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                     className={undefined}
                   >
                     <div
-                      className="glamor-3"
+                      className="glamor-6"
                     >
                       <label>
                         <glamorous(div)
@@ -402,42 +589,117 @@ exports[`FormFieldDivider demo examples basic 1`] = `
                         >
                           <TextInput
                             className={undefined}
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
+                            }
+                            disabled={undefined}
+                            iconEnd={undefined}
+                            iconStart={undefined}
+                            prefix={undefined}
+                            readOnly={undefined}
+                            size="large"
+                            suffix={undefined}
                             variant={undefined}
                           >
-                            <div
-                              className="glamor-2"
+                            <FauxControl
+                              className="glamor-4"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "password",
+                                }
+                              }
+                              disabled={undefined}
+                              iconEnd={undefined}
+                              iconStart={undefined}
+                              prefix={undefined}
+                              readOnly={undefined}
+                              size="large"
+                              suffix={undefined}
+                              variant={undefined}
                             >
-                              <glamorous(input)
-                                aria-describedby={undefined}
-                                aria-invalid={undefined}
-                                aria-required={undefined}
+                              <FauxControl
+                                className="glamor-4"
                                 disabled={undefined}
-                                iconEnd={undefined}
-                                iconStart={undefined}
-                                innerRef={[Function]}
-                                prefix={undefined}
-                                readOnly={undefined}
-                                required={undefined}
-                                size="large"
-                                suffix={undefined}
-                                type="password"
+                                innerRef={undefined}
                                 variant={undefined}
                               >
-                                <input
-                                  aria-describedby={undefined}
-                                  aria-invalid={undefined}
-                                  aria-required={undefined}
-                                  className="glamor-1"
-                                  disabled={undefined}
-                                  prefix={undefined}
-                                  readOnly={undefined}
-                                  required={undefined}
-                                  size="large"
-                                  type="password"
-                                />
-                              </glamorous(input)>
-                              <div />
-                            </div>
+                                <div
+                                  className="glamor-3"
+                                >
+                                  <glamorous(glamorous(input))
+                                    aria-describedby={undefined}
+                                    aria-invalid={undefined}
+                                    aria-required={undefined}
+                                    controlPropsIn={
+                                      Object {
+                                        "aria-describedby": undefined,
+                                        "aria-invalid": undefined,
+                                        "aria-required": undefined,
+                                        "controlRef": undefined,
+                                        "disabled": undefined,
+                                        "readOnly": undefined,
+                                        "required": undefined,
+                                        "type": "password",
+                                      }
+                                    }
+                                    controlRef={undefined}
+                                    disabled={undefined}
+                                    iconEnd={undefined}
+                                    iconStart={undefined}
+                                    innerRef={undefined}
+                                    key="control"
+                                    prefix={undefined}
+                                    readOnly={undefined}
+                                    required={undefined}
+                                    size="large"
+                                    suffix={undefined}
+                                    type="password"
+                                    variant={undefined}
+                                  >
+                                    <input
+                                      aria-describedby={undefined}
+                                      aria-invalid={undefined}
+                                      aria-required={undefined}
+                                      className="glamor-1"
+                                      disabled={undefined}
+                                      prefix={undefined}
+                                      readOnly={undefined}
+                                      required={undefined}
+                                      size="large"
+                                      type="password"
+                                    />
+                                  </glamorous(glamorous(input))>
+                                  <Underlay
+                                    disabled={undefined}
+                                    readOnly={undefined}
+                                    variant={undefined}
+                                  >
+                                    <div
+                                      className="glamor-2"
+                                      readOnly={undefined}
+                                    />
+                                  </Underlay>
+                                </div>
+                              </FauxControl>
+                            </FauxControl>
                           </TextInput>
                         </TextInput>
                       </label>
