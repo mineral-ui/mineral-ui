@@ -21,23 +21,13 @@ import Button from '../Button';
 import Dropdown from '../Dropdown';
 import IconMoreHoriz from '../Icon/IconMoreHoriz';
 
+import type { Items, ItemGroups } from '../Menu/Menu';
+
 type Props = {
   /** See the [Actions Menu](#actions-menu) example */
-  data?: Array<{ items: Array<Item>, title?: React$Node }>,
+  data?: Items | ItemGroups,
   /** Title for the actions menu [Icon](../Icon) */
   triggerTitle?: string
-};
-
-type Item = {
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
-  disabled?: boolean,
-  divider?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
-  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: React$Node,
-  text?: React$Node,
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
 /*

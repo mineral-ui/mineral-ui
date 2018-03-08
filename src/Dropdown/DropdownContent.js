@@ -16,13 +16,16 @@
 
 /* @flow */
 import React, { Component } from 'react';
-import { Popper } from 'react-popper';
+import { composePropsWithGetter } from '../utils';
 import { createStyledComponent, pxToEm } from '../styles';
 import Menu from '../Menu';
+import RtlPopper from '../Popover/RtlPopper';
 
 type Props = {
-  /** Function that returns props to be applied to each item */
+  /** @Private Function that returns props to be applied to each item */
   getItemProps?: (props: Object, scope: Object) => Object,
+  /** @Private Function that returns props to be applied to the menu */
+  getMenuProps?: (props: Object, scope?: Object) => Object,
   /** Data from which the [Menu](../menu#data) will be constructed */
   data: Array<Object>,
   /** Id of the Dropdown content */
@@ -54,7 +57,7 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const Root = createStyledComponent(
-  Popper,
+  RtlPopper,
   ({ theme: baseTheme, wide }) => {
     const theme = componentTheme(baseTheme);
 
@@ -97,12 +100,11 @@ const Root = createStyledComponent(
  * DropdownContent component
  */
 export default class DropdownContent extends Component<Props> {
-  props: Props;
-
   render() {
     const {
       data,
       getItemProps,
+      getMenuProps,
       id,
       placement,
       wide,
@@ -116,12 +118,16 @@ export default class DropdownContent extends Component<Props> {
       ...restProps
     };
 
-    const menuProps = {
-      id: `${id}-menu`,
-      data,
-      getItemProps,
-      role: 'menu'
-    };
+    const menuProps = composePropsWithGetter(
+      {
+        // Props set by this component
+        id: `${id}-menu`,
+        data,
+        getItemProps
+      },
+      // Custom prop getter can override all values
+      getMenuProps
+    );
 
     return (
       <Root {...rootProps}>
