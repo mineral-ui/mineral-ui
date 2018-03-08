@@ -138,6 +138,7 @@ const Root = createStyledComponent(
   },
   {
     displayName: 'Avatar',
+    filterProps: ['icon'],
     includeStyleReset: true
   }
 );
