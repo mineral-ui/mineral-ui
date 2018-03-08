@@ -17,34 +17,55 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { generateId } from '../utils';
+import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
+import { composePropsWithGetter, generateId } from '../utils';
 import Root from '../Popover';
-import DropdownContent from './DropdownContent';
+import DropdownContent, {
+  componentTheme as dropdownContentComponentTheme
+} from './DropdownContent';
+import ItemMatcher from './ItemMatcher';
+import { getItems } from '../Menu/Menu';
 
-type Item = {
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
-  disabled?: boolean,
-  divider?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
-  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: React$Node,
-  text?: React$Node,
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
-};
+import type { Items, ItemGroups } from '../Menu/Menu';
+import type { Item } from '../Menu/MenuItem';
 
 type Props = {
   /** Trigger for the Dropdown */
   children: React$Node,
-  /** Open the Dropdown immediately upon initialization */
+  /**
+   * Open the Dropdown upon initialization. Primarily for use with uncontrolled
+   * components.
+   */
   defaultIsOpen?: boolean,
+  /**
+   * Index of item to be highlighted upon initialization. Primarily for
+   * use with uncontrolled components.
+   */
+  defaultHighlightedIndex?: number,
   /** Disable the Dropdown */
   disabled?: boolean,
-  /** Data from which the [Menu](../menu#data) will be constructed (see [example](#data)) */
-  data: Array<{ items: Array<Item>, title?: React$Node }>,
-  /** For use with controlled components, in which the app manages Dropdown state */
+  /**
+   * Data from which the [Menu](../menu#data) will be constructed
+   * (see [example](#data))
+   */
+  data: Items | ItemGroups,
+  /** @Private Function that returns props to be applied to each item */
+  getItemProps?: (props: Object, scope?: Object) => Object,
+  /** @Private Function that returns props to be applied to the menu */
+  getMenuProps?: (props: Object) => Object,
+  /** @Private Function that returns props to be applied to the trigger */
+  getTriggerProps?: (props: Object) => Object,
+  /** Index of the highlighted item. For use with controlled components. */
+  highlightedIndex?: number,
+  /** Id of the Dropdown */
+  id?: string,
+  /** Determines whether the Dropdown is open. For use with controlled components. */
   isOpen?: boolean,
-  /** Plugins that are used to alter behavior. See [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers) for options. */
+  /**
+   * Plugins that are used to alter behavior. See
+   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
+   * for options.
+   */
   modifiers?: Object,
   /** Called when Dropdown is closed */
   onClose?: (event: SyntheticEvent<>) => void,
@@ -60,16 +81,24 @@ type Props = {
     | 'right-start'
     | 'top-end'
     | 'top-start',
-  /** Use a Portal to render the Dropdown menu to the body rather than as a sibling to the trigger */
+  /**
+   * Use a Portal to render the Dropdown menu to the body rather than as a sibling
+   * to the trigger
+   */
   usePortal?: boolean,
   /** Display a wider Dropdown menu */
   wide?: boolean
 };
 
 type State = {
-  highlightedIndex: null | number,
+  highlightedIndex: ?number,
   isOpen?: boolean
 };
+
+export const componentTheme = (baseTheme: Object) => ({
+  ...dropdownContentComponentTheme(baseTheme),
+  ...baseTheme
+});
 
 /**
  * Dropdown presents a list of actions after a user interacts with a trigger.
@@ -79,28 +108,18 @@ export default class Dropdown extends Component<Props, State> {
     placement: 'bottom-start'
   };
 
-  props: Props;
-
   state: State = {
-    highlightedIndex: null,
+    highlightedIndex: this.props.defaultHighlightedIndex,
     isOpen: Boolean(this.props.defaultIsOpen)
   };
 
-  _isMounted: boolean = false;
-
   dropdownTrigger: ?React$Component<*, *>;
 
-  id: string = `dropdown-${generateId()}`;
+  id: string = this.props.id || `dropdown-${generateId()}`;
 
-  selectedItemId: ?string;
+  highlightedItemId: ?string;
 
-  componentDidMount() {
-    this._isMounted = true;
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false;
-  }
+  itemMatcher: any;
 
   render() {
     const {
@@ -111,20 +130,13 @@ export default class Dropdown extends Component<Props, State> {
       wide,
       ...restProps
     } = this.props;
-
-    const { isOpen } = this.isControlled() ? this.props : this.state;
-
-    if (isOpen) {
-      this.selectedItemId =
-        this.state.highlightedIndex === null
-          ? undefined
-          : `${this.id}-menuItem-${this.state.highlightedIndex}`;
-    }
+    const isOpen = this.getControllableValue('isOpen');
 
     const dropdownContentProps = {
       data,
-      id: `${this.id}-dropdownContent`,
+      id: this.getContentId(),
       getItemProps: this.getItemProps,
+      getMenuProps: this.getMenuProps,
       modifiers,
       placement,
       wide
@@ -147,67 +159,206 @@ export default class Dropdown extends Component<Props, State> {
     return <Root {...rootProps}>{children}</Root>;
   }
 
-  getTriggerProps = (props: Object) => {
-    const contentId = `${this.id}-dropdownContent`;
-    const { isOpen } = props;
+  getContentId = () => {
+    return `${this.id}-content`;
+  };
 
-    return {
-      ...props,
-      'aria-activedescendant': isOpen
-        ? this.selectedItemId || `${contentId}-menu`
-        : undefined,
-      'aria-haspopup': true,
-      contentId,
-      onKeyDown: this.onTriggerKeyDown
-    };
+  getMenuId = () => {
+    return `${this.id}-menu`;
+  };
+
+  getMenuItemId = (index: string) => {
+    return `${this.id}-item-${index}`;
+  };
+
+  getTriggerProps = (props: Object = {}) => {
+    const contentId = this.getContentId();
+    const isOpen = this.getControllableValue('isOpen');
+
+    return composePropsWithGetter(
+      {
+        // Props set by caller, e.g. Popover
+        ...props,
+
+        // Props set by this component
+        'aria-activedescendant': isOpen
+          ? this.getHighlightedItemId() || this.getMenuId()
+          : undefined,
+        'aria-describedby': contentId,
+        'aria-haspopup': true,
+        'aria-owns': contentId,
+        onKeyDown: this.onTriggerKeyDown,
+        onKeyUp: (event: SyntheticKeyboardEvent<>) => {
+          // Prevent Firefox from triggering Popover's onClick handler when
+          // space key is used to activate trigger.
+          // See: https://bugzilla.mozilla.org/show_bug.cgi?id=501496
+          event.key === ' ' && event.preventDefault();
+        }
+      },
+      // Custom prop getter can override all values
+      this.props.getTriggerProps
+    );
+  };
+
+  getMenuProps = (props: Object = {}) => {
+    return composePropsWithGetter(
+      {
+        // Props set by caller, e.g. DropdownContent
+        ...props,
+
+        // Props set by this component
+        id: this.getMenuId(),
+        role: 'menu'
+      },
+      // Custom prop getter can override all values
+      this.props.getMenuProps
+    );
+  };
+
+  getItemProps = (props: Object = {}, scope: Object) => {
+    const { index, item } = scope;
+    const highlightedIndex = this.getControllableValue('highlightedIndex');
+
+    return composePropsWithGetter(
+      {
+        // Props set by caller, e.g. Menu
+        ...props,
+
+        // Props set by this component
+        'aria-disabled': props.disabled,
+        id: this.getMenuItemId(index),
+        isHighlighted: highlightedIndex === index,
+        onClick: this.onItemClick.bind(null, item),
+        role: 'menuitem',
+        tabIndex: null // Unset tabIndex because we use arrow keys to navigate instead
+      },
+      // Custom prop getter can override all values
+      this.props.getItemProps,
+      scope
+    );
   };
 
   getItems = () => {
-    return this.props.data.reduce((acc, group) => {
-      return group.items && group.items.length
-        ? acc.concat(group.items.filter(item => !item.divider))
-        : acc;
-    }, []);
+    return getItems(this.props.data);
   };
 
-  onTriggerKeyDown = (event: SyntheticEvent<>) => {
-    if (event.key === 'ArrowDown') {
-      event.preventDefault();
-      this.setState(prevState => ({
-        highlightedIndex:
-          prevState.highlightedIndex === null ||
-          prevState.highlightedIndex === this.getItems().length - 1
-            ? 0
-            : prevState.highlightedIndex + 1
-      }));
-      this.open(event);
-    } else if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      this.setState(prevState => ({
-        highlightedIndex:
-          prevState.highlightedIndex === null ||
-          prevState.highlightedIndex === 0
-            ? this.getItems().length - 1
-            : prevState.highlightedIndex - 1
-      }));
-      this.open(event);
-    } else if (event.key === 'Enter' || event.key === ' ') {
-      const { isOpen } = this.isControlled() ? this.props : this.state;
-      if (!isOpen || !this._isMounted || !this.selectedItemId) {
-        return;
-      }
+  getItemIndex = (item: Item) => {
+    return this.getItems().indexOf(item);
+  };
 
-      event.preventDefault(); // Prevent from reopening due to event on trigger
+  getHighlightedItemId = () => {
+    const highlightedIndex = this.getControllableValue('highlightedIndex');
+    return highlightedIndex !== undefined && highlightedIndex !== null
+      ? this.getMenuItemId(highlightedIndex)
+      : undefined;
+  };
 
-      const selectedItemNode = global.document.getElementById(
-        this.selectedItemId
-      );
-      selectedItemNode && selectedItemNode.click();
+  hasHighlightedIndex = () => {
+    return this.getControllableValue('highlightedIndex') != undefined;
+  };
+
+  onTriggerKeyDown = (event: SyntheticKeyboardEvent<>) => {
+    const { key } = event;
+    const isOpen = this.getControllableValue('isOpen');
+
+    if (key === 'ArrowUp') {
+      event.preventDefault();
+      this.highlightPreviousItem();
+      !isOpen && this.open(event);
+    } else if (key === 'ArrowDown') {
+      event.preventDefault();
+      this.highlightNextItem();
+      !isOpen && this.open(event);
+    } else if (key === 'Home' && isOpen) {
+      event.preventDefault();
+      this.highlightItemAtIndex(0);
+    } else if (key === 'End' && isOpen) {
+      event.preventDefault();
+      this.highlightItemAtIndex(this.getItems().length - 1);
+    } else if (key === 'Enter' || key === ' ') {
+      event.preventDefault();
+      isOpen
+        ? this.hasHighlightedIndex()
+          ? this.clickHighlightedItem()
+          : this.close(event)
+        : this.open(event);
+    } else if (isOpen) {
+      this.highlightItemMatchingKey(key);
     }
   };
 
+  findItemMatchingKey = (key: string) => {
+    this.itemMatcher = this.itemMatcher || new ItemMatcher();
+    return this.itemMatcher.findMatchingItem(
+      this.getItems(),
+      this.getControllableValue('highlightedIndex'),
+      key
+    );
+  };
+
+  highlightItemMatchingKey = (key: string) => {
+    const matchingItem = this.findItemMatchingKey(key);
+    matchingItem && this.highlightItemAtIndex(this.getItemIndex(matchingItem));
+  };
+
+  highlightItemAtIndex = (index: number) => {
+    if (!this.isControlled('highlightedIndex')) {
+      this.setState(
+        { highlightedIndex: index },
+        this.scrollHighlightedItemIntoViewIfNeeded
+      );
+    }
+  };
+
+  highlightNextItem = () => {
+    if (!this.isControlled('highlightedIndex')) {
+      this.setState(
+        prevState => ({
+          highlightedIndex:
+            prevState.highlightedIndex === null ||
+            prevState.highlightedIndex === undefined ||
+            prevState.highlightedIndex === this.getItems().length - 1
+              ? 0
+              : prevState.highlightedIndex + 1
+        }),
+        this.scrollHighlightedItemIntoViewIfNeeded
+      );
+    }
+  };
+
+  highlightPreviousItem = () => {
+    if (!this.isControlled('highlightedIndex')) {
+      this.setState(
+        prevState => ({
+          highlightedIndex: !prevState.highlightedIndex
+            ? this.getItems().length - 1
+            : prevState.highlightedIndex - 1
+        }),
+        this.scrollHighlightedItemIntoViewIfNeeded
+      );
+    }
+  };
+
+  scrollHighlightedItemIntoViewIfNeeded = () => {
+    const highlightedItemNode = global.document.getElementById(
+      this.getHighlightedItemId()
+    );
+    const boundary = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
+
+    if (highlightedItemNode && boundary) {
+      scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
+    }
+  };
+
+  clickHighlightedItem = () => {
+    const highlightedItemNode = global.document.getElementById(
+      this.getHighlightedItemId()
+    );
+    highlightedItemNode && highlightedItemNode.click();
+  };
+
   open = (event: SyntheticEvent<>) => {
-    if (this.isControlled()) {
+    if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
       this.setState(
@@ -220,13 +371,16 @@ export default class Dropdown extends Component<Props, State> {
   };
 
   openActions = (event: SyntheticEvent<>) => {
+    this.scrollHighlightedItemIntoViewIfNeeded();
     this.props.onOpen && this.props.onOpen(event);
   };
 
   close = (event: SyntheticEvent<>) => {
-    this.setState({ highlightedIndex: null });
+    if (!this.isControlled('highlightedIndex')) {
+      this.setState({ highlightedIndex: null });
+    }
 
-    if (this.isControlled()) {
+    if (this.isControlled('isOpen')) {
       this.closeActions(event);
     } else {
       this.setState(
@@ -242,25 +396,7 @@ export default class Dropdown extends Component<Props, State> {
     this.props.onClose && this.props.onClose(event);
   };
 
-  isControlled = () => {
-    return this.props.isOpen !== undefined;
-  };
-
-  getItemProps = (props: Object, scope: Object) => {
-    const { index, item } = scope;
-
-    return {
-      ...props,
-      'aria-disabled': props.disabled,
-      id: `${this.id}-menuItem-${index}`,
-      isHighlighted: this.state.highlightedIndex === index,
-      onClick: this.itemOnClick.bind(null, item),
-      role: 'menuitem',
-      tabIndex: null // Unset tabIndex because we use arrow keys to navigate instead
-    };
-  };
-
-  itemOnClick = (item: Item, event: SyntheticEvent<>) => {
+  onItemClick = (item: Item, event: SyntheticEvent<>) => {
     const { onClick } = item;
 
     onClick && onClick(event);
@@ -273,5 +409,13 @@ export default class Dropdown extends Component<Props, State> {
     if (node && node.firstChild && node.firstChild instanceof HTMLElement) {
       node.firstChild.focus();
     }
+  };
+
+  isControlled = (prop: string) => {
+    return this.props.hasOwnProperty(prop);
+  };
+
+  getControllableValue = (key: string) => {
+    return this.isControlled(key) ? this.props[key] : this.state[key];
   };
 }

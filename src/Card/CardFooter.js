@@ -186,8 +186,7 @@ export default class CardFooter extends Component<Props, State> {
       ...restProps
     } = this.props;
 
-    let { isOpen } = this.isControlled() ? this.props : this.state;
-    isOpen = Boolean(isOpen);
+    const isOpen = Boolean(this.getControllableValue('isOpen'));
 
     const ExpandCollapseIcon = isOpen ? IconExpandLess : IconExpandMore;
 
@@ -211,7 +210,7 @@ export default class CardFooter extends Component<Props, State> {
   }
 
   close = (event: SyntheticEvent<>) => {
-    if (this.isControlled()) {
+    if (this.isControlled('isOpen')) {
       this.closeActions(event);
     } else {
       this.setState(
@@ -227,12 +226,8 @@ export default class CardFooter extends Component<Props, State> {
     this.props.onClose && this.props.onClose(event);
   };
 
-  isControlled = () => {
-    return this.props.isOpen !== undefined;
-  };
-
   open = (event: SyntheticEvent<>) => {
-    if (this.isControlled()) {
+    if (this.isControlled('isOpen')) {
       this.openActions(event);
     } else {
       this.setState(
@@ -249,11 +244,19 @@ export default class CardFooter extends Component<Props, State> {
   };
 
   toggleOpenState = (event: SyntheticEvent<>) => {
-    const { isOpen } = this.isControlled() ? this.props : this.state;
+    const isOpen = this.getControllableValue('isOpen');
     if (isOpen) {
       this.close(event);
     } else {
       this.open(event);
     }
+  };
+
+  isControlled = (prop: string) => {
+    return this.props.hasOwnProperty(prop);
+  };
+
+  getControllableValue = (key: string) => {
+    return this.isControlled(key) ? this.props[key] : this.state[key];
   };
 }
