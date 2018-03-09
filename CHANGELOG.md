@@ -1,3 +1,20 @@
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/mineral-ui/mineral-ui/compare/v0.20.0...v0.21.0) (2018-03-09)
+
+
+### Features
+
+* **dropdown,cardtitlemenu:** Misc updates, see full commit message for details ([1a44231](https://github.com/mineral-ui/mineral-ui/commit/1a44231))
+* **menu:** Allow data prop to accept flat array of items ([cf2409b](https://github.com/mineral-ui/mineral-ui/commit/cf2409b))
+* **menuitem:** Add selected styles, adjust colors ([af5d0a7](https://github.com/mineral-ui/mineral-ui/commit/af5d0a7))
+* **popover:** Misc updates, see full commit message for details ([335d8f0](https://github.com/mineral-ui/mineral-ui/commit/335d8f0))
+* **select:** Add new component ([ca6dd29](https://github.com/mineral-ui/mineral-ui/commit/ca6dd29))
+* **textarea:** Add size appropriate horizontal padding ([7d045b2](https://github.com/mineral-ui/mineral-ui/commit/7d045b2))
+* **textinput:** Add size appropriate horizontal padding ([0f14db8](https://github.com/mineral-ui/mineral-ui/commit/0f14db8))
+* **tooltip:** Misc updates, see full commit message for details ([7ee3742](https://github.com/mineral-ui/mineral-ui/commit/7ee3742))
+
+
+
 <a name="0.20.0"></a>
 # [0.20.0](https://github.com/mineral-ui/mineral-ui/compare/v0.19.0...v0.20.0) (2018-02-14)
 
