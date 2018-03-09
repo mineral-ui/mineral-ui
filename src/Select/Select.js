@@ -18,6 +18,7 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
+import deepEqual from 'fast-deep-equal';
 import { composeEventHandlers, generateId } from '../utils';
 import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
@@ -192,6 +193,14 @@ export default class Select extends Component<Props, State> {
 
   itemMatcher: any;
 
+  items: Items = getItems(this.props.data);
+
+  componentWillReceiveProps(nextProps: Props) {
+    if (!deepEqual(this.props.data, nextProps.data)) {
+      this.items = getItems(nextProps.data);
+    }
+  }
+
   render() {
     const {
       data,
@@ -298,14 +307,6 @@ export default class Select extends Component<Props, State> {
     };
   };
 
-  getItems = () => {
-    return getItems(this.props.data);
-  };
-
-  getItemIndex = (item: Item) => {
-    return this.getItems().indexOf(item);
-  };
-
   getHighlightedOrSelectedIndex = () => {
     const isOpen = this.getControllableValue('isOpen');
     const selectedItem = this.getControllableValue('selectedItem');
@@ -316,7 +317,7 @@ export default class Select extends Component<Props, State> {
       selectedItem &&
       (highlightedIndex === null || highlightedIndex === undefined)
     ) {
-      return this.getItemIndex(selectedItem);
+      return this.items.indexOf(selectedItem);
     }
 
     return highlightedIndex;
@@ -346,7 +347,7 @@ export default class Select extends Component<Props, State> {
       this.highlightItemAtIndex(0);
     } else if (key === 'End' && isOpen) {
       event.preventDefault();
-      this.highlightItemAtIndex(this.getItems().length - 1);
+      this.highlightItemAtIndex(this.items.length - 1);
     } else if (key === 'Enter' || key === ' ') {
       event.preventDefault();
       isOpen ? this.clickHighlightedItem() : this.open(event);
@@ -358,7 +359,7 @@ export default class Select extends Component<Props, State> {
   findItemMatchingKey = (key: string) => {
     this.itemMatcher = this.itemMatcher || new ItemMatcher();
     return this.itemMatcher.findMatchingItem(
-      this.getItems(),
+      this.items,
       this.getControllableValue('highlightedIndex'),
       key
     );
@@ -366,7 +367,7 @@ export default class Select extends Component<Props, State> {
 
   highlightItemMatchingKey = (key: string) => {
     const matchingItem = this.findItemMatchingKey(key);
-    matchingItem && this.highlightItemAtIndex(this.getItemIndex(matchingItem));
+    matchingItem && this.highlightItemAtIndex(this.items.indexOf(matchingItem));
   };
 
   highlightItemAtIndex = (index: number) => {
@@ -386,9 +387,9 @@ export default class Select extends Component<Props, State> {
             prevState.highlightedIndex === null ||
             prevState.highlightedIndex === undefined
               ? prevState.selectedItem
-                ? this.getItemIndex(prevState.selectedItem)
+                ? this.items.indexOf(prevState.selectedItem)
                 : 0
-              : prevState.highlightedIndex === this.getItems().length - 1
+              : prevState.highlightedIndex === this.items.length - 1
                 ? 0
                 : prevState.highlightedIndex + 1
         }),
@@ -405,10 +406,10 @@ export default class Select extends Component<Props, State> {
             prevState.highlightedIndex === null ||
             prevState.highlightedIndex === undefined
               ? prevState.selectedItem
-                ? this.getItemIndex(prevState.selectedItem)
-                : this.getItems().length - 1
+                ? this.items.indexOf(prevState.selectedItem)
+                : this.items.length - 1
               : prevState.highlightedIndex === 0
-                ? this.getItems().length - 1
+                ? this.items.length - 1
                 : prevState.highlightedIndex - 1
         }),
         this.scrollHighlightedItemIntoViewIfNeeded
@@ -424,7 +425,7 @@ export default class Select extends Component<Props, State> {
           : prevState.selectedItem;
         return {
           highlightedIndex: selectedItem
-            ? this.getItemIndex(selectedItem)
+            ? this.items.indexOf(selectedItem)
             : prevState.highlightedIndex ? prevState.highlightedIndex : 0
         };
       }, this.scrollHighlightedItemIntoViewIfNeeded);
@@ -459,7 +460,7 @@ export default class Select extends Component<Props, State> {
     if (!this.isControlled('highlightedIndex')) {
       stateToSet = {
         ...stateToSet,
-        highlightedIndex: this.getItemIndex(item)
+        highlightedIndex: this.items.indexOf(item)
       };
     }
 
