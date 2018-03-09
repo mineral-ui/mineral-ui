@@ -65,4 +65,5 @@ render(<App />, document.getElementById('app'));
 1. `npm run build:icons`
 2. `npm version minor` (or major, prerelease, etc)
 3. `npm run build`
-4. `cd dist && npm publish`
+4.  Commit changes and push to GitHub
+5. `cd dist && npm publish`
