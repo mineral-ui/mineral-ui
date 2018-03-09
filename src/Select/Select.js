@@ -168,7 +168,10 @@ const contentWidthModifier = {
 };
 
 /**
- * Select is a form control that provides a list of options.
+ * Select is a form control that provides users with a list of options.
+ * The selected option is always visible and the others become visible upon user
+ * interaction. Once open, users can scroll or type to cycle through matching
+ * options.
  */
 export default class Select extends Component<Props, State> {
   static defaultProps = {
