@@ -1,9 +1,9 @@
 
 [![build status](https://travis-ci.org/mineral-ui/mineral-ui.svg?branch=master)](https://travis-ci.org/mineral-ui/mineral-ui)
-[![dependency status](https://www.versioneye.com/user/projects/59149f47a78614006150527c/badge.svg)](https://www.versioneye.com/user/projects/59149f47a78614006150527c)
-[![managed with Waffle](https://img.shields.io/badge/managed_with-waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
-[![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](http://commitizen.github.io/cz-cli/)
-[![formatted with Prettier](https://img.shields.io/badge/formatted_with-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![dependency status](https://david-dm.org/mineral-ui/mineral-ui.svg)](https://david-dm.org/mineral-ui/mineral-ui)
+[![managed with Waffle](https://img.shields.io/badge/managed_with-Waffle-72b2e4.svg)](https://waffle.io/mineral-ui/mineral-ui)
+[![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](https://github.com/commitizen/cz-cli)
+[![code style Prettier](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
 
