@@ -1,15 +1,13 @@
 /* @flow */
 export default {
-  blue_10: '#e6eefc',
-  blue_20: '#c2dbfc',
-  blue_30: '#9dc2fa',
-  blue_40: '#72a5f2',
-  blue_50: '#4a89e8',
-  blue_60: '#2e6fd9',
-  blue_70: '#1f5dc2',
-  blue_80: '#164ea8',
-  blue_90: '#114091',
-  blue_100: '#0f397d',
-
-  a11y_text_light: [60, 70, 80, 90, 100]
+  blue_10: '#f0f5fc',
+  blue_20: '#cfe0fc',
+  blue_30: '#accbfc',
+  blue_40: '#84b1fa',
+  blue_50: '#5691f0',
+  blue_60: '#3272d9',
+  blue_70: '#1d5bbf',
+  blue_80: '#114599',
+  blue_90: '#103570',
+  blue_100: '#15233b'
 };
