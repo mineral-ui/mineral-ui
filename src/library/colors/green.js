@@ -1,15 +1,13 @@
 /* @flow */
 export default {
-  green_10: '#e8fcf2',
-  green_20: '#c0fadc',
-  green_30: '#95f5c3',
-  green_40: '#67eba7',
-  green_50: '#40db8d',
-  green_60: '#1fc06f',
-  green_70: '#10a35a',
-  green_80: '#0a8f4c',
-  green_90: '#06783f',
-  green_100: '#046132',
-
-  a11y_text_light: [90, 100]
+  green_10: '#e1faeb',
+  green_20: '#abedc5',
+  green_30: '#7ddba3',
+  green_40: '#57c282',
+  green_50: '#3ba164',
+  green_60: '#2a854e',
+  green_70: '#20693d',
+  green_80: '#1a5230',
+  green_90: '#153d25',
+  green_100: '#112b1b'
 };

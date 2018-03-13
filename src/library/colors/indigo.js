@@ -1,15 +1,13 @@
 /* @flow */
 export default {
-  indigo_10: '#e3e3fa',
-  indigo_20: '#cacafa',
-  indigo_30: '#adadf7',
-  indigo_40: '#8d8df2',
-  indigo_50: '#6c6ceb',
-  indigo_60: '#4c4ce0',
-  indigo_70: '#3737d3',
-  indigo_80: '#2c2abd',
-  indigo_90: '#2621a6',
-  indigo_100: '#201d8f',
-
-  a11y_text_light: [60, 70, 80, 90, 100]
+  indigo_10: '#f2f2fc',
+  indigo_20: '#dcdcfc',
+  indigo_30: '#c2c2fc',
+  indigo_40: '#a7a7fa',
+  indigo_50: '#8585f2',
+  indigo_60: '#6767e6',
+  indigo_70: '#4d4dd1',
+  indigo_80: '#3737b3',
+  indigo_90: '#28288a',
+  indigo_100: '#202057'
 };

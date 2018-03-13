@@ -1,15 +1,13 @@
 /* @flow */
 export default {
-  red_10: '#fce3e3',
-  red_20: '#fabebe',
-  red_30: '#f79999',
-  red_40: '#f27474',
-  red_50: '#eb4d4d',
-  red_60: '#db2929',
-  red_70: '#c71818',
-  red_80: '#ad0e0e',
-  red_90: '#940909',
-  red_100: '#7d0606',
-
-  a11y_text_light: [60, 70, 80, 90, 100]
+  red_10: '#faf0f0',
+  red_20: '#fad4d4',
+  red_30: '#fab6b6',
+  red_40: '#fa8e8e',
+  red_50: '#f55353',
+  red_60: '#de1b1b',
+  red_70: '#b80d0d',
+  red_80: '#8f0e0e',
+  red_90: '#661414',
+  red_100: '#451717'
 };
