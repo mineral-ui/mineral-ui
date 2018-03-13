@@ -6,9 +6,6 @@
 const fs = require('fs');
 const glob = require('glob');
 const prependFile = require('prepend-file');
-let license = require('../utils/license').licenseHeader;
-
-license = `${license}\n`;
 
 const files = glob.sync('**/*.js', {
   ignore: [
@@ -17,7 +14,8 @@ const files = glob.sync('**/*.js', {
     '**/flow-typed/**',
     '**/lib/**',
     '**/reports/**',
-    '**/scripts/**'
+    '**/scripts/**',
+    'utils/setupTestFrameworkScript.js'
   ]
 });
 
@@ -27,12 +25,8 @@ files.forEach(file => {
       throw err;
     }
 
-    if (!data.includes(license)) {
-      const pre = data.includes('@flow')
-        ? `${license}\n`
-        : `${license}\n/* @flow */\n`;
-
-      prependFile(file, pre, err => {
+    if (!data.includes('@flow')) {
+      prependFile(file, '/* @flow */\n', err => {
         if (err) {
           throw err;
         }
