@@ -7,6 +7,7 @@ import ComponentDocExample from './ComponentDocExample';
 import Page from './Page';
 import sections from './pages';
 import ComponentDoc from './pages/ComponentDoc';
+import NotFound from './pages/NotFound';
 import Loadable from './Loadable';
 import ScrollToIdOnMount from './ScrollToIdOnMount';
 
@@ -107,6 +108,10 @@ export default function Router({ demoRoutes }: Props) {
                 example => example.id === exampleId
               );
 
+              if (!selectedExample) {
+                return <Redirect to={`/components/${selectedDemo.slug}`} />;
+              }
+
               const exampleProps = {
                 chromeless,
                 componentName: selectedFullDemo.title,
@@ -129,7 +134,15 @@ export default function Router({ demoRoutes }: Props) {
       <Route
         path="/components/:componentId"
         render={({ location, match }) => {
-          const componentId = match.params.componentId || firstDemoSlug;
+          const componentId =
+            flatDemoRoutes.find(
+              route => route.slug === match.params.componentId
+            ) && match.params.componentId;
+
+          if (!componentId) {
+            return <Redirect to={`/components/${firstDemoSlug}`} />;
+          }
+
           // $FlowFixMe
           const selectedDemo = keyedDemoRoutes[componentId];
 
@@ -174,6 +187,26 @@ export default function Router({ demoRoutes }: Props) {
       <Route
         path="/components"
         render={() => <Redirect to={`/components/${firstDemoSlug}`} />}
+      />
+      <Route
+        path="*"
+        render={() => {
+          const pageMeta = {
+            description: 'Page not found.',
+            title: 'Page not found | Mineral UI'
+          };
+          const pageProps = {
+            headerContent: getPageHeader('Error', '404'),
+            demoRoutes,
+            glitched: true,
+            pageMeta
+          };
+          return (
+            <Page {...pageProps}>
+              <NotFound />
+            </Page>
+          );
+        }}
       />
     </Switch>
   );

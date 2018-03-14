@@ -26,7 +26,8 @@ import { heroTheme } from './pages/Home/index';
 type Props = {
   children: React$Node,
   chromeless?: boolean,
-  demoRoutes?: Array<DemoRoute>,
+  demoRoutes: Array<DemoRoute>,
+  glitched?: boolean,
   headerContent?: React$Node,
   pageMeta?: {
     canonicalLink?: string,
@@ -319,8 +320,11 @@ const styles = {
           padding: `${pxToEm(30)} ${pxToEm(80)} ${pxToEm(30)} ${pxToEm(30)}`
         };
   },
-  root: ({ theme }) => ({
+  root: ({ theme, glitched }) => ({
+    backgroundColor: glitched ? 'white' : null,
+    filter: glitched ? 'invert(100%) contrast(120%)' : null,
     fontFamily: theme.fontFamily_system,
+    transform: glitched ? 'rotate(-1deg) scale(1.05)' : null,
 
     '& ::selection': {
       backgroundColor: rgba(theme.color_text_primary, 0.2)
@@ -355,7 +359,9 @@ const Header = createStyledComponent(Section, styles.header).withProps({
 const MenuButton = createStyledComponent(Button, styles.menuButton).withProps({
   circular: true
 });
-const Nav = createStyledComponent(_Nav, styles.nav);
+const Nav = createStyledComponent(_Nav, styles.nav, {
+  filterProps: ['glitched']
+});
 const Wrap = createStyledComponent('div', styles.wrap);
 const WrapInner = createStyledComponent('div', styles.wrapInner);
 
@@ -373,6 +379,7 @@ export default class Page extends Component<Props, State> {
       children,
       chromeless,
       demoRoutes,
+      glitched,
       headerContent,
       pageMeta,
       slug,
@@ -381,7 +388,7 @@ export default class Page extends Component<Props, State> {
     } = this.props;
     const { isNavOpen } = this.state;
 
-    const rootProps = { ...restProps };
+    const rootProps = { glitched, ...restProps };
     const wrapProps = {
       isNavOpen,
       tabIndex: isNavOpen ? '-1' : undefined
@@ -446,9 +453,9 @@ export default class Page extends Component<Props, State> {
       <ThemeProvider theme={type !== undefined ? pageThemes[type] : {}}>
         <Media query="(min-width: 48em)">
           {moreSpacious => (
-            <Root {...rootProps}>
+            <Root {...rootProps} wide={moreSpacious}>
               {helmetItems}
-              {navNarrow(moreSpacious)}
+              {!glitched && navNarrow(moreSpacious)}
               <Wrap {...wrapProps}>
                 <WrapInner>
                   {headerContent && (
