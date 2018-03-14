@@ -1,3 +1,19 @@
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/mineral-ui/mineral-ui/compare/v0.21.0...v0.22.0) (2018-03-14)
+
+
+### Bug Fixes
+
+* **avatar:** Remove icon prop from rendering on DOM element ([eb9268a](https://github.com/mineral-ui/mineral-ui/commit/eb9268a))
+* **textinput:** Fix [#609](https://github.com/mineral-ui/mineral-ui/issues/609) lose focus after typing ([2ff0e28](https://github.com/mineral-ui/mineral-ui/commit/2ff0e28))
+
+
+### Performance Improvements
+
+* **select,dropdown:** Use items instance var ([993c442](https://github.com/mineral-ui/mineral-ui/commit/993c442))
+
+
+
 <a name="0.21.0"></a>
 # [0.21.0](https://github.com/mineral-ui/mineral-ui/compare/v0.20.0...v0.21.0) (2018-03-09)
 
