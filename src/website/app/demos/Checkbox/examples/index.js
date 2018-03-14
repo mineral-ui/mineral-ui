@@ -1,5 +1,5 @@
 /* @flow */
-import checkboxExamples from './checkbox';
-import checkboxGroupExamples from './checkbox-group';
+import checkboxExamples from './Checkbox';
+import checkboxGroupExamples from './CheckboxGroup';
 
 export default [].concat(checkboxExamples, checkboxGroupExamples);

@@ -1,5 +1,5 @@
 /* @flow */
-import radioExamples from './radio';
-import radioGroupExamples from './radio-group';
+import radioExamples from './Radio';
+import radioGroupExamples from './RadioGroup';
 
 export default [].concat(radioExamples, radioGroupExamples);

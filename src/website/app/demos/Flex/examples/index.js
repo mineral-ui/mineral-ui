@@ -1,6 +1,6 @@
 /* @flow */
-import flexExamples from './flex';
-import flexItemExamples from './flex-item';
+import flexExamples from './Flex';
+import flexItemExamples from './FlexItem';
 
 const examples = [].concat(flexExamples, flexItemExamples);
 

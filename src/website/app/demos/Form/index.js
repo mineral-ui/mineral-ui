@@ -4,9 +4,9 @@ import { componentTheme as formFieldComponentTheme } from '../../../../Form/Form
 import { componentTheme as formFieldsetComponentTheme } from '../../../../Form/FormFieldset';
 import { componentTheme as formFieldDividerComponentTheme } from '../../../../Form/FormFieldDivider';
 
-import formFieldExamples from './examples/form-field';
-import formFieldsetExamples from './examples/form-fieldset';
-import formFieldDividerExamples from './examples/form-field-divider';
+import formFieldExamples from './examples/FormField';
+import formFieldsetExamples from './examples/FormFieldset';
+import formFieldDividerExamples from './examples/FormFieldDivider';
 
 const formFieldDoc = require('!!react-docgen-loader!../../../../Form/FormField');
 const formFieldsetDoc = require('!!react-docgen-loader!../../../../Form/FormFieldset');

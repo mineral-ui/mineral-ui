@@ -7,14 +7,14 @@ import { componentTheme as cardFooterComponentTheme } from '../../../../Card/Car
 import { componentTheme as cardStatusComponentTheme } from '../../../../Card/CardStatus';
 import { componentTheme as cardTitleComponentTheme } from '../../../../Card/CardTitle';
 
-import cardExamples from './examples/card';
-import cardActionsExamples from './examples/card-actions';
-import cardBlockExamples from './examples/card-block';
-import cardDividerExamples from './examples/card-divider';
-import cardFooterExamples from './examples/card-footer';
-import cardImageExamples from './examples/card-image';
-import cardStatusExamples from './examples/card-status';
-import cardTitleExamples from './examples/card-title';
+import cardExamples from './examples/Card';
+import cardActionsExamples from './examples/CardActions';
+import cardBlockExamples from './examples/CardBlock';
+import cardDividerExamples from './examples/CardDivider';
+import cardFooterExamples from './examples/CardFooter';
+import cardImageExamples from './examples/CardImage';
+import cardStatusExamples from './examples/CardStatus';
+import cardTitleExamples from './examples/CardTitle';
 
 const cardDoc = require('!!react-docgen-loader!../../../../Card/Card');
 const cardActionsDoc = require('!!react-docgen-loader!../../../../Card/CardActions');

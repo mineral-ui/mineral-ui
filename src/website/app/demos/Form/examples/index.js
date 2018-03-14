@@ -1,7 +1,7 @@
 /* @flow */
-import formFieldExamples from './form-field';
-import formFieldDividerExamples from './form-field-divider';
-import formFieldsetExamples from './form-fieldset';
+import formFieldExamples from './FormField';
+import formFieldDividerExamples from './FormFieldDivider';
+import formFieldsetExamples from './FormFieldset';
 
 const examples = [].concat(
   formFieldExamples,
