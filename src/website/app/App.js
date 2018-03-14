@@ -119,27 +119,13 @@ class App extends Component<Props> {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    if (canUseDOM && this.props.location !== prevProps.location) {
-      global.window.scrollTo(0, 0);
-    }
-  }
-
   render() {
     const { demoRoutes } = this.props;
 
     return (
       <ThemeProvider theme={siteTheme}>
         <div>
-          <Switch>
-            <Route
-              exact
-              strict
-              path="/:url*"
-              render={props => <Redirect to={`${props.location.pathname}/`} />}
-            />
-            <Route render={() => <Router demoRoutes={demoRoutes} />} />
-          </Switch>
+          <Router demoRoutes={demoRoutes} />
           <BaselineGrid />
         </div>
       </ThemeProvider>

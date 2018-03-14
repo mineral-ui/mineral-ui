@@ -118,10 +118,6 @@ export default function Router({ demoRoutes }: Props) {
           // $FlowFixMe
           const selectedDemo = flatDemoRoutes[componentId];
 
-          if (selectedDemo.redirect) {
-            return <Redirect to={`/components/${selectedDemo.redirect}`} />;
-          }
-
           const pageMeta = {
             canonicalLink: `https://mineral-ui.com/components/${selectedDemo.title.toLowerCase()}`,
             description: selectedDemo.description,
@@ -134,6 +130,7 @@ export default function Router({ demoRoutes }: Props) {
             slug: selectedDemo.slug
           };
 
+          // TODO: pass the componentId down to the doc for better links?
           const AsyncComponentDoc = Loadable({
             loader: () => import('./demos/index'),
             render({ default: fullDemos }: Object) {
