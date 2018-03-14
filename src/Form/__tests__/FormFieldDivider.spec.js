@@ -2,7 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import FormFieldDivider from '../FormFieldDivider';
-import examples from '../../website/app/demos/Form/examples/form-field-divider';
+import examples from '../../website/app/demos/Form/examples/FormFieldDivider';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function shallowFormFieldDivider(props = {}) {

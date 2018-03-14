@@ -2,7 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import MenuDivider from '../MenuDivider';
-import examples from '../../website/app/demos/Menu/examples/menu-divider';
+import examples from '../../website/app/demos/Menu/examples/MenuDivider';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function shallowMenuDivider(props = {}) {

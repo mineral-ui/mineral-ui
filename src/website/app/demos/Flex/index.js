@@ -2,8 +2,8 @@
 import React from 'react';
 import bestPractices from './bestPractices';
 
-import flexExamples from './examples/flex';
-import flexItemExamples from './examples/flex-item';
+import flexExamples from './examples/Flex';
+import flexItemExamples from './examples/FlexItem';
 
 const flexDoc = require('!!react-docgen-loader!../../../../Flex/Flex');
 const flexItemDoc = require('!!react-docgen-loader!../../../../Flex/FlexItem');

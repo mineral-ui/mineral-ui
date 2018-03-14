@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../utils/enzymeUtils';
 import MenuItem from '../MenuItem';
-import examples from '../../website/app/demos/Menu/examples/menu-item';
+import examples from '../../website/app/demos/Menu/examples/MenuItem';
 import testDemoExamples from '../../../utils/testDemoExamples';
 
 function shallowMenuItem(props = {}) {

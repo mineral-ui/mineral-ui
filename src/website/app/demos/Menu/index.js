@@ -3,10 +3,10 @@ import { componentTheme as menuDividerComponentTheme } from '../../../../Menu/Me
 import { componentTheme as menuGroupComponentTheme } from '../../../../Menu/MenuGroup';
 import { componentTheme as menuGroupTitleComponentTheme } from '../../../../Menu/MenuGroupTitle';
 import { componentTheme as menuItemComponentTheme } from '../../../../Menu/MenuItem';
-import menuExamples from './examples/menu';
-import menuDividerExamples from './examples/menu-divider';
-import menuGroupExamples from './examples/menu-group';
-import menuItemExamples from './examples/menu-item';
+import menuExamples from './examples/Menu';
+import menuDividerExamples from './examples/MenuDivider';
+import menuGroupExamples from './examples/MenuGroup';
+import menuItemExamples from './examples/MenuItem';
 
 const menuDoc = require('!!react-docgen-loader!../../../../Menu/Menu');
 const menuDividerDoc = require('!!react-docgen-loader!../../../../Menu/MenuDivider');

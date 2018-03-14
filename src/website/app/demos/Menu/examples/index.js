@@ -1,8 +1,8 @@
 /* @flow */
-import menuExamples from './menu';
-import menuDividerExamples from './menu-divider';
-import menuGroupExamples from './menu-group';
-import menuItemExamples from './menu-item';
+import menuExamples from './Menu';
+import menuDividerExamples from './MenuDivider';
+import menuGroupExamples from './MenuGroup';
+import menuItemExamples from './MenuItem';
 
 const examples = [].concat(
   menuExamples,
