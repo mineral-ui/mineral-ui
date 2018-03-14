@@ -321,16 +321,29 @@ function getIcons({
   return [startIcon, endIcon];
 }
 
+// The control node must be created outside of render, so that the entire DOM
+// element is replaced only when the control prop is changed.
+const createControlNode = (props: Props) => {
+  return createStyledComponent(props.control, styles.control);
+};
+
 /**
  * FauxControl
  */
 export default class FauxControl extends Component<Props> {
+  componentWillUpdate(nextProps: Props) {
+    if (this.props.control !== nextProps.control) {
+      this.controlNode = createControlNode(nextProps);
+    }
+  }
+
+  controlNode: React$ComponentType<*> = createControlNode(this.props);
+
   render() {
     const {
       afterItems,
       beforeItems,
       children,
-      control,
       controlProps: controlPropsIn,
       disabled,
       fauxControlRef,
@@ -394,7 +407,7 @@ export default class FauxControl extends Component<Props> {
       variant
     };
 
-    const Control = createStyledComponent(control, styles.control);
+    const Control = this.controlNode;
 
     const underlayProps = { disabled, readOnly, variant };
 
