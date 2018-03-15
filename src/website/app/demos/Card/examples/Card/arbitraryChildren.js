@@ -30,7 +30,7 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `A Card will render any children.
 
-For best results, please ensure content matches the top/bottom margin and left/right padding of the other \`<Card*/>\` components, or use [CardBlock](../card-block).`,
+For best results, please ensure content matches the top/bottom margin and left/right padding of the other \`<Card*/>\` components, or use [CardBlock](/components/card-block).`,
   scope: { Button, Card, CardTitle, customContent, DemoLayout },
   source: `
     <DemoLayout>

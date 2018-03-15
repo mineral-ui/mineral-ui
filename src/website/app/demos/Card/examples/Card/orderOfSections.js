@@ -25,7 +25,7 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `There is no "one true way" to lay out children in Card; it is
 flexible enough to accept different component arrangements. The one exception is
-[CardFooter](../card-footer), which must be last in Card.`,
+[CardFooter](/components/card-footer), which must be last in Card.`,
   scope: {
     Button,
     Card,

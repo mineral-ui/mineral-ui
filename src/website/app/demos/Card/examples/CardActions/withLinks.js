@@ -13,7 +13,7 @@ export default {
   title: 'With Links',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Place [Links](../links) in CardActions when your Card needs to
+  description: `Place [Links](/components/links) in CardActions when your Card needs to
 point the users to another location.`,
   scope: { Link, Card, CardActions, CardBlock, loremIpsum, DemoLayout },
   source: `

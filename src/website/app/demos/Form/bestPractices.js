@@ -38,7 +38,7 @@ export default {
     },
     {
       type: 'do',
-      description: `Use the [appropriate variant](/color/#guidelines-variants)
+      description: `Use the [appropriate variant](/color#guidelines-variants)
 to match your intent.`,
       example: (
         <FormField input={TextInput} label="Promo Code" variant="success" />
@@ -111,7 +111,7 @@ accessible manner when the design requires it.`,
       type: 'do',
       description: `Wrap multiple, related inputs in a FormFieldset and provide
 a brief, descriptive \`legend\`. Note that the labels for the individual fields
-are provided, but [hidden](../form-field/#hide-label) to reduce noise.`,
+are provided, but [hidden](/components/form-field#hide-label) to reduce noise.`,
       example: (
         <FormFieldset legend="Address">
           <DemoLayout>
@@ -153,7 +153,7 @@ are provided, but [hidden](../form-field/#hide-label) to reduce noise.`,
   formFieldDivider: [
     {
       type: 'dont',
-      description: `Don't separate every [FormField](../form-field) with a
+      description: `Don't separate every [FormField](/components/form-field) with a
 FormFieldDivider.`,
       example: (
         <DemoLayout>

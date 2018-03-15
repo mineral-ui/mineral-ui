@@ -73,7 +73,7 @@ is a single sentence, word, or fragment.`,
     {
       type: 'dont',
       description: `Don't use when the user should only select a single option.
-Use a [Radio](../radio) instead.`,
+Use a [Radio](/components/radio) instead.`,
       example: (
         <DemoForm>
           <FormField

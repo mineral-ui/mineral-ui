@@ -42,7 +42,7 @@ ThemeProviders may be nested in order to apply a custom theme to a portion of yo
 
 ### Theme a component
 
-Each component has a set of component-level theme variables that may be overridden to adjust styles on a per component basis.  These are documented on the individual component pages,  e.g. [Button theme variables](/components/button/#theme-variables).
+Each component has a set of component-level theme variables that may be overridden to adjust styles on a per component basis.  These are documented on the individual component pages,  e.g. [Button theme variables](/components/button#theme-variables).
 
 To theme a component, use [createThemedComponent](#common-scenarios-api) as shown below.  It is effectively the same as wrapping your component with a ThemeProvider.
 
@@ -118,7 +118,7 @@ This function is useful when you want to create a new theme that uses a differen
 
 **Parameters**
 
-* `baseColor`: Optional.  Default: 'blue'.  Color used to generate theme color scheme.  Value must be a valid [Mineral UI color](/color/#guidelines-ramps).
+* `baseColor`: Optional.  Default: 'blue'.  Color used to generate theme color scheme.  Value must be a valid [Mineral UI color](/color#guidelines-ramps).
 * `overrides`: Optional.  A shallow object of variables to be spread on to the default theme.  Useful to override default values.
 
 **Returns**

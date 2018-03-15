@@ -7,7 +7,7 @@ import DemoLayout from './components/DemoLayout';
 export default [
   {
     type: 'do',
-    description: `Wrap TextInput in a [FormField](../form-field) and provide a
+    description: `Wrap TextInput in a [FormField](/components/form-field) and provide a
 brief, descriptive label.`,
     example: <FormField input={TextInput} label="Name" />
   },

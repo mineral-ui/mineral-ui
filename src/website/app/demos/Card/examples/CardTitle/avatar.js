@@ -11,7 +11,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `To help communicate ownership or categorization of a Card, add
-an \`avatar\` to CardTitle. The [Avatar](../avatar) will automatically size
+an \`avatar\` to CardTitle. The [Avatar](/components/avatar) will automatically size
 itself correctly whether a \`subtitle\` is also provided or not.`,
   scope: { Avatar, Card, CardBlock, CardTitle, loremIpsum, DemoLayout },
   source: `

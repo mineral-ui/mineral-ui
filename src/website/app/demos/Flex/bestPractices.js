@@ -9,7 +9,7 @@ export default {
   flex: [
     {
       type: 'do',
-      description: `Use Flex and [FlexItem](../flex-item) to arrange components
+      description: `Use Flex and [FlexItem](/components/flex-item) to arrange components
 next to one another, with a consistent gutter.`,
       example: (
         <Flex justifyContent="end">
@@ -28,7 +28,7 @@ next to one another, with a consistent gutter.`,
     {
       type: 'dont',
       description: `Don't use Flex to align content to the left & right.
-[StartEnd](../start-end) is a more appropriate choice.`,
+[StartEnd](/components/start-end) is a more appropriate choice.`,
       example: (
         <Flex justifyContent="between">
           <FlexItem>
@@ -67,7 +67,7 @@ next to one another, with a consistent gutter.`,
   flexItem: [
     {
       type: 'do',
-      description: `Use FlexItem within [Flex](../flex) to align components
+      description: `Use FlexItem within [Flex](/components/flex) to align components
 relative to one another.`,
       example: (
         <Flex justifyContent="end">

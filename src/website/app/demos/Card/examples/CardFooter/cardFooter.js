@@ -15,8 +15,8 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardFooter is used to add an extension to a Card. It can
-contain any children, but is best used with [CardActions](../card-actions) and
-[CardBlock](../card-block).`,
+contain any children, but is best used with [CardActions](/components/card-actions) and
+[CardBlock](/components/card-block).`,
   scope: {
     Button,
     Card,

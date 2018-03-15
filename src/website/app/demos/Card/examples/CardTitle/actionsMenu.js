@@ -14,7 +14,7 @@ export default {
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `To display a menu of actions in CardTitle, pass a CardTitleMenu
-or [Dropdown](../dropdown) to the \`actions\` prop.
+or [Dropdown](/components/dropdown) to the \`actions\` prop.
 
 <Callout title="Note">
   To help with styling and using the correct <a href="../icon" key="0">Icon</a>,

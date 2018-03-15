@@ -7,8 +7,8 @@ export default {
   id: 'basic',
   title: 'Basic Usage',
   description: `Use a FormFieldDivider to create implicit groups of
-[FormFields](../form-field). For more semantic grouping, use a
-[FormFieldset](../form-fieldset).`,
+[FormFields](/components/form-field). For more semantic grouping, use a
+[FormFieldset](/components/form-fieldset).`,
   scope: { DemoLayout, FormField, FormFieldDivider, TextInput },
   source: `
     <DemoLayout>

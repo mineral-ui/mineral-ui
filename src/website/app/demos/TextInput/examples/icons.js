@@ -6,7 +6,7 @@ import DemoLayout from '../components/DemoLayout';
 export default {
   id: 'icons',
   title: 'With Icons',
-  description: `TextInputs can contain [Icons](../icon) at their start, end, or both.`,
+  description: `TextInputs can contain [Icons](/components/icon) at their start, end, or both.`,
   scope: { DemoLayout, IconCloud, TextInput },
   source: `
   () => {

@@ -6,7 +6,7 @@ import DemoLayout from '../components/DemoLayout';
 export default {
   id: 'form-field',
   title: 'FormField',
-  description: `Use a [FormField](../form-field) to provide an accessible label
+  description: `Use a [FormField](/components/form-field) to provide an accessible label
 and other features as well as a more streamlined API.`,
   scope: { DemoLayout, FormField, TextArea },
   source: `

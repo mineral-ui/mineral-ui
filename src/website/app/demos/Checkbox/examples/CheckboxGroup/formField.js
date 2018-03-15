@@ -6,7 +6,7 @@ import DemoForm from '../../components/DemoForm';
 export default {
   id: 'form-field',
   title: 'FormField',
-  description: `Use a [FormField](../form-field) to provide an accessible label
+  description: `Use a [FormField](/components/form-field) to provide an accessible label
 and other features as well as a more streamlined API.
 
 _Note: The \`invalid\` and \`required\` props are not automatically forwarded

@@ -8,11 +8,11 @@ export default {
   title: 'Grouping MenuItems',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `To group [MenuItems](../menu-item) together, wrap them in a MenuGroup.
+  description: `To group [MenuItems](/components/menu-item) together, wrap them in a MenuGroup.
 Optionally, provide a title to provide context if the grouping is large or not immediately obvious.
 
-Your [Menu](../menu) may not need a MenuGroup title.
-If your Menu is simple, instead consider using a [MenuDivider](../menu-divider), which is quicker to scan for your users.`,
+Your [Menu](/components/menu) may not need a MenuGroup title.
+If your Menu is simple, instead consider using a [MenuDivider](/components/menu-divider), which is quicker to scan for your users.`,
   scope: { DemoLayout, Menu, MenuGroup, MenuItem },
   source: `
     <DemoLayout>

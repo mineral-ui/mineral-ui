@@ -7,7 +7,7 @@ export default {
   id: 'basic',
   title: 'Basic Usage',
   description: `Avatar can display an image, a text character, or an
-[Icon](../icon). For accessibility, please provide an \`alt\`/\`title\`
+[Icon](/components/icon). For accessibility, please provide an \`alt\`/\`title\`
 attribute for standalone Avatars.`,
   scope: { Avatar, DemoLayout, IconCloud },
   source: `

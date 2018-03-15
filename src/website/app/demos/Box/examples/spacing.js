@@ -6,7 +6,7 @@ export default {
   id: 'spacing',
   title: 'Spacing',
   description: `Values for margin & padding
-can be a [spacing theme variable](/theming/#common-scenarios-theme-structure)
+can be a [spacing theme variable](/theming#common-scenarios-theme-structure)
 or a custom string or number.
 
 In _order of precedence_, Box accepts the following spacing props:

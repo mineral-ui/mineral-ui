@@ -25,6 +25,6 @@ export default [
 from a user.
 
 TextAreas should always have an associated label for accessibility and so the
-user knows what information to provide. See [FormField](../form-field).`
+user knows what information to provide. See [FormField](/components/form-field).`
   }
 ];

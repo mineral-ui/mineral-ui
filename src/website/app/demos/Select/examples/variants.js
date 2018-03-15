@@ -7,7 +7,7 @@ export default {
   id: 'variants',
   title: 'Variants',
   description: `is available in a few variants, mostly for use with
-[validation](../form-field/#validation). Be sure to use the
+[validation](/components/form-field#validation). Be sure to use the
 [appropriate variant](/color#guidelines-variants) for your intent.`,
   scope: { data, DemoLayout, Select },
   source: `

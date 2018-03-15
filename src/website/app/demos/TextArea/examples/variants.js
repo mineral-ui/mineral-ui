@@ -6,7 +6,7 @@ export default {
   id: 'variants',
   title: 'Variants',
   description: `TextArea is available in a few variants, mostly for use with
-[validation](../form-field/#validation). Be sure to use the
+[validation](/components/form-field#validation). Be sure to use the
 [appropriate variant](/color#guidelines-variants) for your intent.`,
   scope: { DemoLayout, TextArea },
   source: `

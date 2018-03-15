@@ -53,7 +53,7 @@ representing one data object.`,
     {
       type: 'do',
       backgroundColor,
-      description: `Use the [CardTitle](../card-title) component to add titles
+      description: `Use the [CardTitle](/components/card-title) component to add titles
 to your Cards. Your Card titles and subtitles should use "Title Case".`,
       example: (
         <Card>
@@ -67,7 +67,7 @@ to your Cards. Your Card titles and subtitles should use "Title Case".`,
       backgroundColor,
       description: `Don't use custom heading elements. Regular \`<h1>\`,
 \`<h2>\`, etc. will not be formatted automatically. Use a
-[CardTitle](../card-title) instead.`,
+[CardTitle](/components/card-title) instead.`,
       example: (
         <Card>
           <h1>Heading Element</h1>
@@ -78,7 +78,7 @@ to your Cards. Your Card titles and subtitles should use "Title Case".`,
     {
       type: 'dont',
       backgroundColor,
-      description: `Don't forget to use a [CardBlock](../card-block). Content
+      description: `Don't forget to use a [CardBlock](/components/card-block). Content
 placed into a Card outside the CardBlock will not have formatting or spacing
 applied.`,
       example: (
@@ -97,7 +97,7 @@ applied.`,
       type: 'dont',
       backgroundColor,
       description: `Don't use regular \`<img />\` tags directly inside a Card,
-which will result in unformatted content. Use [CardImage](../card-image)
+which will result in unformatted content. Use [CardImage](/components/card-image)
 instead.`,
       example: (
         <Card>
@@ -149,7 +149,7 @@ single pieces of information is a more efficent design.`,
       type: 'dont',
       backgroundColor,
       description: `Don't use CardActions with a single, obvious action. Use
-[Card's \`onClick\` prop](../card/#clickable) instead.`,
+[Card's \`onClick\` prop](/components/card#clickable) instead.`,
       example: (
         <Card>
           <CardTitle>Card Title</CardTitle>
@@ -164,7 +164,7 @@ single pieces of information is a more efficent design.`,
       type: 'dont',
       backgroundColor,
       description: `Don't place too many actions in CardActions. If you must
-have more than 2–3 actions, use [icon-only Buttons](../button/#icon-only).`,
+have more than 2–3 actions, use [icon-only Buttons](/components/button#icon-only).`,
       example: (
         <Card>
           <CardTitle>Card Title</CardTitle>
@@ -181,7 +181,7 @@ have more than 2–3 actions, use [icon-only Buttons](../button/#icon-only).`,
     {
       type: 'dont',
       backgroundColor,
-      description: `Don't mix [Buttons](../button) and [Links](../link) in
+      description: `Don't mix [Buttons](/components/button) and [Links](/components/link) in
 CardActions. Doing so is confusing for the user.`,
       example: (
         <Card>
@@ -199,7 +199,7 @@ CardActions. Doing so is confusing for the user.`,
     {
       type: 'dont',
       backgroundColor,
-      description: `Don't use CardBlock outside of [Card](../card), for which it
+      description: `Don't use CardBlock outside of [Card](/components/card), for which it
 was designed.`,
       example: <CardBlock>{loremIpsum}</CardBlock>
     }
@@ -208,7 +208,7 @@ was designed.`,
     {
       type: 'dont',
       backgroundColor,
-      description: `Don't use CardDivider to separate [CardTitle](../card-title)
+      description: `Don't use CardDivider to separate [CardTitle](/components/card-title)
 from other content.`,
       example: (
         <Card>
@@ -222,7 +222,7 @@ from other content.`,
       type: 'dont',
       backgroundColor,
       description: `Don't use CardDivider between every section of
-[Card](../card) content, which makes the Card unnecessarily busy. Dividers are
+[Card](/components/card) content, which makes the Card unnecessarily busy. Dividers are
 best used when the Card contains complex content that would be hard to discern
 without the visual separation.`,
       example: (
@@ -373,7 +373,7 @@ if the \`secondaryText\` information is not brief, consider using the
       type: 'do',
       backgroundColor,
       description: `Use \`actions\` to provide non-primary actions for a Card.
-If you need to provide 2–3 primary actions, use [CardActions](../card-actions).`,
+If you need to provide 2–3 primary actions, use [CardActions](/components/card-actions).`,
       example: (
         <Card>
           <CardTitle actions={<CardTitleMenu data={actionMenuData} />}>
@@ -386,7 +386,7 @@ If you need to provide 2–3 primary actions, use [CardActions](../card-actions)
     {
       type: 'dont',
       backgroundColor,
-      description: `Don't use CardTitle outside of [Card](../card), for which it
+      description: `Don't use CardTitle outside of [Card](/components/card), for which it
 was designed.`,
       example: <CardTitle>Out of Place Title</CardTitle>
     }

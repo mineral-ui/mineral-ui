@@ -50,7 +50,7 @@ special case.`,
     type: 'dont',
     description: `Don't use Dropdown for navigation, even on mobile devices.
 Either reduce the amount of navigation in your application, or consider building
-a drawer with the [Menu](../menu).`,
+a drawer with the [Menu](/components/menu).`,
     example: (
       <Dropdown data={navData}>
         <Button iconStart={<IconMenu />} />

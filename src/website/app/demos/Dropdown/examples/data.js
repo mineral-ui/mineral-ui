@@ -9,11 +9,11 @@ export default {
   title: 'Data-Driven',
   description: `Dropdown content is defined by an array of data, with the
 structure shown in the code example below. Object properties will be passed on
-to the [MenuItem](../menu-item).
+to the [MenuItem](/components/menu-item).
 
-[MenuDividers](../menu-divider) are created simply by passing
+[MenuDividers](/components/menu-divider) are created simply by passing
 \`{divider: true}\` as an item. Menu data can also be
-[grouped](../menu/grouped-data).`,
+[grouped](/components/menu#grouped-data).`,
   scope: { Button, CustomRender, Dropdown, IconCloud },
   source: `
     () => {

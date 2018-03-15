@@ -6,7 +6,7 @@ export default [
   {
     type: 'do',
     description:
-      'Use the [appropriate variant](/color/#guidelines-variants) for your intent.',
+      'Use the [appropriate variant](/color#guidelines-variants) for your intent.',
     example: (
       <Button variant="success" primary>
         Proceed to Checkout

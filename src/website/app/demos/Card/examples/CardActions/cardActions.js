@@ -11,8 +11,8 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Use CardActions to add actions, [Buttons](../button) or
-[Links](../link), to your [Card](../card). Buttons will automatically size
+  description: `Use CardActions to add actions, [Buttons](/components/button) or
+[Links](/components/link), to your [Card](/components/card). Buttons will automatically size
 themselves appropriately, and can be any variety (primary, minimal, icon-only,
 etc.)`,
   scope: {

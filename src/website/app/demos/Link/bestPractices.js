@@ -38,7 +38,7 @@ export default [
   {
     type: 'dont',
     description: `Don't use a Link to perform a page action. To represent an
-action, use a [Button](../button).`,
+action, use a [Button](/components/button).`,
     example: <Link>Scroll to bottom</Link>
   }
 ];
