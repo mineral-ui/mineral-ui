@@ -6,7 +6,7 @@ import { FormField, FormFieldset } from '../../../../../../Form';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  description: `Wrap any number of [FormFields](../form-field) in a FormFieldset
+  description: `Wrap any number of [FormFields](/components/form-field) in a FormFieldset
 to semantically group them. A brief, descriptive legend is especially useful for
 users of Assistive Technology (AT), such as a screen reader.`,
   scope: { DemoLayout, FormField, FormFieldset, TextInput },

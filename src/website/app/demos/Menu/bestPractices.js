@@ -184,7 +184,7 @@ overwhelming to users and your feature will get buried.`,
     {
       type: 'do',
       backgroundColor,
-      description: `Use the [appropriate variant](/color/#guidelines-variants)
+      description: `Use the [appropriate variant](/color#guidelines-variants)
 to give your users hints about what the potential outcome of an action will be.`,
       example: (
         <DemoLayout>
@@ -214,7 +214,7 @@ to give your users hints about what the potential outcome of an action will be.`
     {
       type: 'do',
       backgroundColor,
-      description: `Clearly label [MenuItem](../menu-item) actions to be
+      description: `Clearly label [MenuItem](/components/menu-item) actions to be
 predictable for frictionless interaction. Labels should be structured:
 \`<verb> <noun>\`.`,
       example: (
@@ -278,7 +278,7 @@ it probably belongs somewhere else.`,
       type: 'dont',
       backgroundColor,
       description: `Don't use disabled MenuItems as section titles. Instead, use
-the \`title\` prop of a [MenuGroup](../menu-group) to show meta information for
+the \`title\` prop of a [MenuGroup](/components/menu-group) to show meta information for
 a group, or place this information elsewhere in the interface.`,
       example: (
         <DemoLayout>

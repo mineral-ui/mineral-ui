@@ -105,7 +105,7 @@ a neutral option.`,
     {
       type: 'dont',
       description: `Don't use when the user should be able to select multiple
-options. Use a [Checkbox](../checkbox) instead.`,
+options. Use a [Checkbox](/components/checkbox) instead.`,
       example: (
         <DemoForm>
           <FormField

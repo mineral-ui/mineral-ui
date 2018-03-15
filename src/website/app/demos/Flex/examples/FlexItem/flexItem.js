@@ -5,7 +5,7 @@ import Flex from '../../components/Flex';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  description: `Use [Flex](../flex) and FlexItem to lay out components
+  description: `Use [Flex](/components/flex) and FlexItem to lay out components
 throughout your app. They can be arranged side-by-side, stacked on top of one
 another, sized proportionally, and lots more as illustrated in the further
 examples below.`,

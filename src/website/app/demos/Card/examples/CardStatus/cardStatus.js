@@ -9,7 +9,7 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `CardStatus conveys the current status of [Card](../card). It is
+  description: `CardStatus conveys the current status of [Card](/components/card). It is
 available in a few variants.`,
   scope: { Card, CardBlock, CardStatus, CardTitle, loremIpsum, DemoLayout },
   source: `

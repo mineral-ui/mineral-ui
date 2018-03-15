@@ -12,9 +12,9 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menu items can be grouped by using the structure shown in the
 code example below. Object properties in the \`items\` array(s) will be passed
-on to the [MenuItem](../menu-item).
+on to the [MenuItem](/components/menu-item).
 
-A new [MenuGroup](../menu-group) will be created for each array object that has
+A new [MenuGroup](/components/menu-group) will be created for each array object that has
 an \`items\` property defined.`,
   scope: { CustomRender, DemoLayout, IconCloud, Menu },
   source: `

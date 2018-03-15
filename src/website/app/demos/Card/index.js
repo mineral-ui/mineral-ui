@@ -60,11 +60,11 @@ actions, which may or may not be the same for each Card in the set.`
     slug: 'card-block',
     title: 'CardBlock',
     whenHowToUse: `CardBlock is used to help lay out content that's not a
-[title](../card-title) or an [image](../card-image) in the body of the
-[Card](../card).
+[title](/components/card-title) or an [image](/components/card-image) in the body of the
+[Card](/components/card).
 
 Try not to put inline links in your content. Create purposeful calls to action
-with [Buttons](../button) using [CardActions](../card-actions).`
+with [Buttons](/components/button) using [CardActions](/components/card-actions).`
   },
   {
     bestPractices: bestPractices.cardDivider,
@@ -74,7 +74,7 @@ with [Buttons](../button) using [CardActions](../card-actions).`
     slug: 'card-divider',
     title: 'CardDivider',
     whenHowToUse: `CardDivider is used to provide visual separation between
-sections of a [Card](../card) with complex content. It should be used sparingly.`
+sections of a [Card](/components/card) with complex content. It should be used sparingly.`
   },
   {
     bestPractices: bestPractices.cardFooter,
@@ -84,7 +84,7 @@ sections of a [Card](../card) with complex content. It should be used sparingly.
     slug: 'card-footer',
     title: 'CardFooter',
     whenHowToUse: `Use CardFooter to add a visually differentiated section to
-your [Card](../card). It is best used for stateful information or functionality,
+your [Card](/components/card). It is best used for stateful information or functionality,
 particularly when paired with a [\`variant\`](#variants). CardFooter must always
 be the last thing in a Card.`
   },
@@ -95,7 +95,7 @@ be the last thing in a Card.`
     slug: 'card-image',
     title: 'CardImage',
     whenHowToUse: `CardImage is used when you want to reinforce the intent of the Card.
-Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](../card-title).
+Images shouldn't be used alone in a Card, but should be paired with a call to action and/or a [CardTitle](/components/card-title).
 
 If you are putting text over top of the CardImage, use a solid color or an image with sufficient contrast to the text.`
   },
@@ -107,7 +107,7 @@ If you are putting text over top of the CardImage, use a solid color or an image
     slug: 'card-status',
     title: 'CardStatus',
     whenHowToUse: `CardStatus is used to display a Card's current status. If
-the status information is not likely to change, use [CardTitle's](../card-title)
+the status information is not likely to change, use [CardTitle's](/components/card-title)
 \`secondaryText\` or \`subtitle\` prop, instead.`
   },
   {
@@ -117,7 +117,7 @@ the status information is not likely to change, use [CardTitle's](../card-title)
     examples: cardTitleExamples,
     slug: 'card-title',
     title: 'CardTitle',
-    whenHowToUse: `Use a CardTitle when you need a consistently styled headings for your [Card](../card).
+    whenHowToUse: `Use a CardTitle when you need a consistently styled headings for your [Card](/components/card).
 Use a subtitle to provide supporting information for the data displayed in the Card.`
   }
 ];

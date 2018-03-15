@@ -12,7 +12,7 @@ export default {
   slug: 'select',
   title: 'Select',
   whenHowToUse: `Select boxes are best used in forms to allow users to choose
-from a set of 4 to 9 options, where using a [RadioGroup](../radio-group) would
+from a set of 4 to 9 options, where using a [RadioGroup](/components/radio-group) would
 take up too much space.
 
 Select can be used with more than 9 options when the entire set is well
@@ -20,9 +20,9 @@ known to the user. When the user may not know all the options in the set,
 consider allowing the user to type in the option they want.
 
 With fewer than 4 options, consider using a
-[RadioGroup](../radio-group) instead so that users can see all the options at
+[RadioGroup](/components/radio-group) instead so that users can see all the options at
 once.
 
 Don’t use Select to present the user with a list of actions.
-Use a [Dropdown](../dropdown) instead.`
+Use a [Dropdown](/components/dropdown) instead.`
 };

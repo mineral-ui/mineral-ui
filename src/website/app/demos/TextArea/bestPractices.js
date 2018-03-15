@@ -6,7 +6,7 @@ import TextArea from '../../../../TextArea';
 export default [
   {
     type: 'do',
-    description: `Wrap TextArea in a [FormField](../form-field) and provide a
+    description: `Wrap TextArea in a [FormField](/components/form-field) and provide a
 brief, descriptive label.`,
     example: <FormField input={TextArea} label="Name" />
   },

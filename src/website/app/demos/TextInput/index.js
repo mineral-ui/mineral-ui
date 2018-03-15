@@ -24,7 +24,7 @@ export default [
     whenHowToUse: `Use a TextInput to accept brief, free-form input from a user.
 
 TextInputs should always have an associated label for accessibility and so the
-user knows what information to provide. See [FormField](../form-field).
+user knows what information to provide. See [FormField](/components/form-field).
 
 Be specific when choosing the \`type\` for your TextInput. Mobile devices will
 display different keyboards depending on the input type.

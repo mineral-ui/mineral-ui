@@ -26,7 +26,7 @@ export default [
     title: 'Radio',
     whenHowToUse: `Use Radios to change settings rather than initiate actions.
 
-Radios are usually created in [groups](../radio-group) or two or more.`
+Radios are usually created in [groups](/components/radio-group) or two or more.`
   },
   {
     bestPractices: bestPractices.radioGroup,
@@ -43,7 +43,7 @@ Radios are usually created in [groups](../radio-group) or two or more.`
     slug: 'radio-group',
     title: 'RadioGroup',
     whenHowToUse: `RadioGroup is used to provide a simpler API for creating a
-group of [Radios](../radio).  It also provides proper row spacing and an
+group of [Radios](/components/radio).  It also provides proper row spacing and an
 inline layout option.
 
 Use a RadioGroup to allow users to select a single option from a list.
@@ -62,7 +62,7 @@ users cannot return to once a selection is made.
 * Both of these case can generally be addressed by providing a neutral option.
 If this is insufficient, consider an alternate form control.
 
-RadioGroups should be wrapped in a [FormField](../form-field) to provide an
+RadioGroups should be wrapped in a [FormField](/components/form-field) to provide an
 accessible label and other features.  See the [FormField example](#form-field)
 for details.`
   }

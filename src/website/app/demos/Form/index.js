@@ -50,7 +50,7 @@ Error text should be short and concise, telling the user how to fix the problem.
     slug: 'form-fieldset',
     title: 'FormFieldset',
     whenHowToUse: `Wrap groups of related inputs (which themselves should be wrapped
-in [FormFields](../form-field)) in a FormFieldset with a useful legend.
+in [FormFields](/components/form-field)) in a FormFieldset with a useful legend.
 
 Consider using FormFieldset instead of a heading element to improve accessibility.`
   },

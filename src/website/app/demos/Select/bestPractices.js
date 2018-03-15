@@ -19,7 +19,7 @@ export default [
     type: 'dont',
     description: `Don't rely on placeholder text alone to communicate purpose as
 it will disappear once a value is selected. You can easily add a label to Select
-using a [FormField](../FormField).`,
+using a [FormField](/components/form-field).`,
     example: (
       <Select data={foodData} placeholder="Choose your favorite food..." />
     )
@@ -74,7 +74,7 @@ text to prompt the user to make a choice.`,
     type: 'dont',
     description: `Don't use the \`onSelect\` or \`onChange\` handlers to
 initiate actions when an option is selected. Users often change their choices
-multiple times when interacting with Select. Offer a "submit" [Button](../button)
+multiple times when interacting with Select. Offer a "submit" [Button](/components/button)
 at the end of the form instead.`,
     example: (
       <div>

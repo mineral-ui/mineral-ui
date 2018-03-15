@@ -13,7 +13,7 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Use CardDivider to separate sections of your [Card](../card).`,
+  description: `Use CardDivider to separate sections of your [Card](/components/card).`,
   scope: { Card, CardBlock, CardDivider, CardTitle, loremIpsum, DemoLayout },
   source: `
     <DemoLayout>

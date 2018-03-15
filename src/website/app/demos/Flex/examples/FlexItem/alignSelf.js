@@ -11,7 +11,7 @@ const Flex = createStyledComponent(_Flex, ({ direction }) => ({
 export default {
   id: 'align-self',
   title: 'Align Self',
-  description: `[Flex's](../flex) [\`alignItems\`](../flex/#align-items) prop
+  description: `[Flex's](/components/flex) [\`alignItems\`](/components/flex#align-items) prop
 will align its items along the cross axis. The \`alignSelf\` prop allows an
 override of that value for specific items.`,
   scope: { DemoLayout, Flex, FlexItem },

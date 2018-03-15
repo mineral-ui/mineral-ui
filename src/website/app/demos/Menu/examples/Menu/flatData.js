@@ -12,9 +12,9 @@ export default {
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menu content can also be defined by an array of data, with the
 structure shown in the code example below. Object properties will be passed on
-to the [MenuItem](../menu-item).
+to the [MenuItem](/components/menu-item).
 
-[MenuDividers](../menu-divider) are created simply by passing
+[MenuDividers](/components/menu-divider) are created simply by passing
 \`{divider: true}\` as an item.`,
   scope: { CustomRender, DemoLayout, IconCloud, Menu },
   source: `

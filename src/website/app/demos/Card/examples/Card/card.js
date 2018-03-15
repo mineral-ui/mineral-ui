@@ -13,9 +13,9 @@ export default {
   description: `Card content should be neither too simple nor too complex. Cards
 are used as a gateway to more detailed content, not merely as a widget container.
 Cards can contain any children, but are best used with
-[CardActions](../card-actions), [CardBlock](../card-block),
-[CardDivider](../card-divider), [CardFooter](../card-footer),
-[CardImage](../card-image), and [CardTitle](../card-title).`,
+[CardActions](/components/card-actions), [CardBlock](/components/card-block),
+[CardDivider](/components/card-divider), [CardFooter](/components/card-footer),
+[CardImage](/components/card-image), and [CardTitle](/components/card-title).`,
   scope: {
     Button,
     Card,

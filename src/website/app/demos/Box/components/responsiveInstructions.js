@@ -4,7 +4,7 @@ const instructions = `
 media queries used for responsive properties.
 1. Those breakpoint values can either be a number (converted to px) or a key
 from the theme (e.g. the default
-[mineralTheme](/theming/#common-scenarios-theme-structure) has 'narrow',
+[mineralTheme](/theming#common-scenarios-theme-structure) has 'narrow',
 'medium', and 'wide').
 1. For each responsive property, instead of passing a single value, _pass an
 array of values that is one longer than the \`breakpoints\` array_. The first

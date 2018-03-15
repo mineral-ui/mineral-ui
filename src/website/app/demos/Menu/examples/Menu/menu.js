@@ -9,7 +9,7 @@ export default {
   title: 'Basic Usage',
   // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
-  description: `Menus are composed of [MenuDivider](../menu-divider), [MenuGroup](../menu-group), and [MenuItem](../menu-item).
+  description: `Menus are composed of [MenuDivider](/components/menu-divider), [MenuGroup](/components/menu-group), and [MenuItem](/components/menu-item).
 Menus display a list of actions or navigation options.
 
 <Callout title="Note">
