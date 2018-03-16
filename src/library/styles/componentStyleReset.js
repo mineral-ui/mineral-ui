@@ -11,6 +11,8 @@ export default ({ theme }: Object) => {
     outline: 0,
     '& *,& *::before,& *::after': {
       boxSizing: 'inherit'
-    }
+    },
+    MozOsxFontSmoothing: 'auto',
+    WebkitFontSmoothing: 'antialiased'
   };
 };
