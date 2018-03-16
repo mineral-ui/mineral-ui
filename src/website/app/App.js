@@ -62,6 +62,7 @@ const siteTheme = {
   color_text_primary: siteColors.jade,
   fontFamily: null,
   fontFamily_headline: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
+  fontWeight_medium: 500,
 
   SectionPaddingHorizontal: pxToEm(30),
   SectionPaddingHorizontalWide: pxToEm(100),

@@ -15,7 +15,6 @@ import {
 import {
   createTheme,
   createThemedComponent,
-  mineralTheme,
   ThemeProvider
 } from '../../../../library/themes';
 import _Button from '../../../../library/Button';
@@ -114,12 +113,12 @@ const gettingStartedTheme = {
   SiteLink_color_focus: siteColors.yellow_focus,
   SiteLink_color_hover: siteColors.yellow_hover
 };
-const buttonTheme = {
-  Button_fontWeight: mineralTheme.fontWeight_regular,
+const buttonTheme = ({ theme: baseTheme }) => ({
+  Button_fontWeight: baseTheme.fontWeight_medium,
   Button_height_jumbo: pxToEm(36),
   Button_paddingHorizontal: pxToEm(12), // For a total of 24
   ButtonContent_fontSize: pxToEm(18)
-};
+});
 const CTALinkTheme = {
   Link_borderColor_focus: siteColors.orangePunch_focus,
   Link_color: siteColors.orangePunch,
@@ -562,7 +561,6 @@ const Root = createStyledComponent('div', styles.home, {
 const Markdown = createStyledComponent(_Markdown, styles.markdown).withProps({
   anchors: false
 });
-// SiteButton must come before LinkButton
 const SiteButton = createThemedComponent(_SiteButton, buttonTheme);
 const BlogLink = createStyledComponent(Link, styles.blogLink);
 const Button = createThemedComponent(_Button, buttonTheme);

@@ -161,19 +161,6 @@ const styles = {
       '&:active': {
         color: theme.color_text_primary_active
       }
-    },
-
-    '& button': {
-      '@media(max-width: 22.999em)': {
-        padding: `0 ${theme.space_inline_xxs}`,
-        width: '100%',
-
-        // Content, with a specificity hack
-        '& > span > span[class]': {
-          paddingLeft: theme.space_inline_xxs,
-          paddingRight: theme.space_inline_xxs
-        }
-      }
     }
   })
 };
