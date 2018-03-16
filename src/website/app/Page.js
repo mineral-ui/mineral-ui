@@ -250,7 +250,6 @@ const styles = {
     // Specificity hack
     '& p[class]': {
       fontFamily: theme.fontFamily_headline,
-      fontWeight: '300',
       margin: 0,
       textShadow: theme.textShadow,
 

@@ -77,7 +77,7 @@ const styles = {
   },
   link: ({ theme }) => ({
     fontFamily: theme.fontFamily_headline,
-    fontWeight: theme.fontWeight_regular,
+    fontWeight: theme.fontWeight_medium,
     fontSize: '1em',
     textDecoration: 'none',
     textShadow: theme.textShadow,
@@ -105,6 +105,7 @@ const styles = {
   }),
   menuButton: ({ theme }) => ({
     border: 0,
+    fontWeight: theme.fontWeight_medium,
     position: 'relative',
     textShadow: theme.textShadow,
     top: '0.45em', // Optical adjustment for baseline alignment with Logotype

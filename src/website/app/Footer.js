@@ -27,6 +27,7 @@ const Root = createStyledComponent(
   ({ theme }) => ({
     backgroundColor: theme.color_black,
     color: theme.color_gray_40,
+    fontWeight: theme.fontWeight_medium,
 
     '& ::selection': {
       backgroundColor: 'rgba(255,255,255,0.2)'
