@@ -1,8 +1,8 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
-import Button from '../../../../../../Button';
-import Radio from '../../../../../../Radio';
-import TextInput from '../../../../../../TextInput';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Radio from '../../../../../../library/Radio';
+import TextInput from '../../../../../../library/TextInput';
 import _DemoForm from '../../components/DemoForm';
 
 const DemoForm = createStyledComponent(_DemoForm, {

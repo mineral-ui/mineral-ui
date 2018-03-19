@@ -1,7 +1,11 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, pxToEm } from '../../../../styles';
-import { createTheme, mineralTheme, ThemeProvider } from '../../../../themes';
+import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import {
+  createTheme,
+  mineralTheme,
+  ThemeProvider
+} from '../../../../library/themes';
 import _Intro from '../../Intro';
 import ControlPanel from './ControlPanel';
 import Demo from './Demo';

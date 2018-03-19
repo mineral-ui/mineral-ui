@@ -1,9 +1,9 @@
 /* @flow */
 import { Component } from 'react';
 import DemoLayout from '../../components/DemoLayout';
-import Button from '../../../../../../Button';
-import TextInput from '../../../../../../TextInput';
-import FormField from '../../../../../../Form/FormField';
+import Button from '../../../../../../library/Button';
+import TextInput from '../../../../../../library/TextInput';
+import FormField from '../../../../../../library/Form/FormField';
 
 export default {
   id: 'validation',

@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import { ThemeProvider } from '../../../../themes';
-import Box from '../../../../Box';
-import Button from '../../../../Button';
+import { createStyledComponent } from '../../../../library/styles';
+import { ThemeProvider } from '../../../../library/themes';
+import Box from '../../../../library/Box';
+import Button from '../../../../library/Button';
 
 const Container = createStyledComponent('div', ({ theme }) => ({
   backgroundColor: theme.color_gray_10,

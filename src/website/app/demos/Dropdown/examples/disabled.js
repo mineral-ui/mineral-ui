@@ -1,6 +1,6 @@
 /* @flow */
-import Button from '../../../../../Button';
-import Dropdown from '../../../../../Dropdown';
+import Button from '../../../../../library/Button';
+import Dropdown from '../../../../../library/Dropdown';
 import data from '../../Menu/components/menuData';
 
 export default {

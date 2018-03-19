@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import { mineralTheme } from '../../../../themes';
-import Button from '../../../../Button';
+import { createStyledComponent } from '../../../../library/styles';
+import { mineralTheme } from '../../../../library/themes';
+import Button from '../../../../library/Button';
 import Card, {
   CardActions,
   CardBlock,
@@ -12,11 +12,11 @@ import Card, {
   CardStatus,
   CardTitle,
   CardTitleMenu
-} from '../../../../Card';
-import _Link from '../../../../Link';
+} from '../../../../library/Card';
+import _Link from '../../../../library/Link';
 import loremIpsum from './components/loremIpsum';
 
-import type { Items } from '../../../../Menu/Menu';
+import type { Items } from '../../../../library/Menu/Menu';
 
 const CardList = createStyledComponent('div', ({ theme }) => ({
   '& > div': {

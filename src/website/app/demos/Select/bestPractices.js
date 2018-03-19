@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import Box from '../../../../Box';
-import Flex, { FlexItem } from '../../../../Flex';
-import Select from '../../../../Select';
-import TextInput from '../../../../TextInput';
-import { FormField } from '../../../../Form';
+import Box from '../../../../library/Box';
+import Flex, { FlexItem } from '../../../../library/Flex';
+import Select from '../../../../library/Select';
+import TextInput from '../../../../library/TextInput/';
+import { FormField } from '../../../../library/Form';
 import {
   basicData,
   currencyData,

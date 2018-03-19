@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { ThemeProvider } from '../../../../../themes';
-import TextInput from '../../../../../TextInput';
+import { ThemeProvider } from '../../../../../library/themes';
+import TextInput from '../../../../../library/TextInput/';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
 import DemoLayout from '../components/DemoLayout';

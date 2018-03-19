@@ -1,6 +1,6 @@
 /* @flow */
 import clearFix from 'polished/lib/mixins/clearFix';
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 
 export default createStyledComponent('div', ({ theme }) => {
   const rtl = theme.direction === 'rtl';

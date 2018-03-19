@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import Button from '../../../../Button';
+import Button from '../../../../library/Button';
 import IconRefresh from 'mineral-ui-icons/IconRefresh';
 import IconLocalPlay from 'mineral-ui-icons/IconLocalPlay';
 import IconLocalOffer from 'mineral-ui-icons/IconLocalOffer';

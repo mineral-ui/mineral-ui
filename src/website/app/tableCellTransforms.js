@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../styles';
-import color from '../../colors';
+import { createStyledComponent } from '../../library/styles';
+import color from '../../library/colors';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';

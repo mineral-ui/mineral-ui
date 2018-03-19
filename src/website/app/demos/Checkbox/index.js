@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import { componentTheme as checkboxComponentTheme } from '../../../../Checkbox/Checkbox';
-import { componentTheme as checkboxGroupComponentTheme } from '../../../../Checkbox/CheckboxGroup';
+import { componentTheme as checkboxComponentTheme } from '../../../../library/Checkbox/Checkbox';
+import { componentTheme as checkboxGroupComponentTheme } from '../../../../library/Checkbox/CheckboxGroup';
 import checkboxExamples from './examples/Checkbox';
 import checkboxGroupExamples from './examples/CheckboxGroup';
 import bestPractices from './bestPractices';
 
-const checkboxDoc = require('!!react-docgen-loader!../../../../Checkbox/Checkbox');
-const checkboxGroupDoc = require('!!react-docgen-loader!../../../../Checkbox/CheckboxGroup');
+const checkboxDoc = require('!!react-docgen-loader!../../../../library/Checkbox/Checkbox');
+const checkboxGroupDoc = require('!!react-docgen-loader!../../../../library/Checkbox/CheckboxGroup');
 
 export default [
   {

@@ -3,7 +3,7 @@ import React from 'react';
 import { css } from 'glamor';
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 
 type Props = {
   error?: string,

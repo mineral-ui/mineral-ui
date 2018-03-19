@@ -1,5 +1,5 @@
 /* @flow */
-import Avatar from '../../../../../Avatar';
+import Avatar from '../../../../../library/Avatar';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

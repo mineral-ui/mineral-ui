@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
 import DemoForm from '../../components/DemoForm';
-import Checkbox from '../../../../../../Checkbox';
+import Checkbox from '../../../../../../library/Checkbox';
 
 export default {
   id: 'controlled',

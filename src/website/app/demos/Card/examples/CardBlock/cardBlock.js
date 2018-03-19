@@ -1,10 +1,10 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
+import { createStyledComponent } from '../../../../../../library/styles';
+import { mineralTheme } from '../../../../../../library/themes';
 import Card, {
   CardBlock as _CardBlock,
   CardTitle
-} from '../../../../../../Card';
+} from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

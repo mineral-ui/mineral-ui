@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent } from '../../../../library/styles';
 import Markdown from '../../Markdown';
 import Legend from './Legend';
 import content from './componentStatus.md';

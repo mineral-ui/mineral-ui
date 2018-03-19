@@ -3,7 +3,7 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../styles';
+} from '../../../../library/styles';
 import Heading from '../../SiteHeading';
 
 export default createStyledComponent(Heading, ({ theme }) => ({

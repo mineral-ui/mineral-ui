@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../styles';
+import { createStyledComponent, pxToEm } from '../../../../../library/styles';
 
 export default createStyledComponent('div', ({ theme, width }) => ({
   overflow: 'hidden',

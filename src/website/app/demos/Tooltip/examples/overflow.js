@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../Button';
-import { createStyledComponent } from '../../../../../styles';
-import Tooltip from '../../../../../Tooltip';
+import Button from '../../../../../library/Button';
+import { createStyledComponent } from '../../../../../library/styles';
+import Tooltip from '../../../../../library/Tooltip';
 
 const OverflowContainer = createStyledComponent('div', {
   backgroundColor: 'aliceblue',

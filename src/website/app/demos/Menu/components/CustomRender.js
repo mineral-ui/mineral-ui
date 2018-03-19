@@ -4,7 +4,7 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../../styles';
+} from '../../../../../library/styles';
 
 export default function customRender(
   item: Object,

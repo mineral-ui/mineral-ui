@@ -1,9 +1,9 @@
 /* @flow */
-import { componentTheme } from '../../../../Avatar/Avatar';
+import { componentTheme } from '../../../../library/Avatar/Avatar';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../Avatar/Avatar');
+const doc = require('!!react-docgen-loader!../../../../library/Avatar/Avatar');
 
 export default {
   bestPractices,

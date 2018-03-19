@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent } from '../../styles';
-import { createThemedComponent } from '../../themes';
+import { createStyledComponent } from '../../library/styles';
+import { createThemedComponent } from '../../library/themes';
 import IconLaunch from 'mineral-ui-icons/IconLaunch';
-import Link from '../../Link';
+import Link from '../../library/Link';
 
 type Props = {
   children?: React$Node,

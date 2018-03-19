@@ -4,7 +4,7 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../styles';
+} from '../../library/styles';
 import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
 import ErrorBoundary from './ErrorBoundary';

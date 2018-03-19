@@ -1,7 +1,7 @@
 /* @flow */
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
-import { ThemeProvider } from '../../../../../themes';
-import TextInput from '../../../../../TextInput';
+import { ThemeProvider } from '../../../../../library/themes';
+import TextInput from '../../../../../library/TextInput/';
 import DemoLayout from '../components/DemoLayout';
 
 /*

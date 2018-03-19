@@ -1,5 +1,5 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../themes';
+import { ThemeProvider } from '../../../../../library/themes';
 import IconHelp from 'mineral-ui-icons/IconHelp';
 
 export default {

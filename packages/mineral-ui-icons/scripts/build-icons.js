@@ -17,7 +17,7 @@ const MATERIAL_ICONS_SVG_DIR = path.join(
 );
 const MINERAL_ICONS_SVG_DIR = path.join(__dirname, '../svg');
 
-const ICON_COMPONENTS_DIR = path.join(__dirname, '../../../src/Icon');
+const ICON_COMPONENTS_DIR = path.join(__dirname, '../../../src/library/Icon');
 const COMPONENTS_DIR = path.join(__dirname, '../src');
 const TEMPLATES_DIR = path.join(__dirname, '../templates');
 const COMPONENT_TEMPLATE_PATH = path.join(TEMPLATES_DIR, 'Icon.template.js');

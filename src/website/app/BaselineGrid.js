@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { withRouter } from 'react-router';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 
 type Props = {
   fontSize?: number, // px

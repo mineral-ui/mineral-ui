@@ -1,11 +1,11 @@
 /* @flow */
-import { componentTheme as cardComponentTheme } from '../../../../Card/Card';
-import { componentTheme as cardActionsComponentTheme } from '../../../../Card/CardActions';
-import { componentTheme as cardBlockComponentTheme } from '../../../../Card/CardBlock';
-import { componentTheme as cardDividerComponentTheme } from '../../../../Card/CardDivider';
-import { componentTheme as cardFooterComponentTheme } from '../../../../Card/CardFooter';
-import { componentTheme as cardStatusComponentTheme } from '../../../../Card/CardStatus';
-import { componentTheme as cardTitleComponentTheme } from '../../../../Card/CardTitle';
+import { componentTheme as cardComponentTheme } from '../../../../library/Card/Card';
+import { componentTheme as cardActionsComponentTheme } from '../../../../library/Card/CardActions';
+import { componentTheme as cardBlockComponentTheme } from '../../../../library/Card/CardBlock';
+import { componentTheme as cardDividerComponentTheme } from '../../../../library/Card/CardDivider';
+import { componentTheme as cardFooterComponentTheme } from '../../../../library/Card/CardFooter';
+import { componentTheme as cardStatusComponentTheme } from '../../../../library/Card/CardStatus';
+import { componentTheme as cardTitleComponentTheme } from '../../../../library/Card/CardTitle';
 
 import cardExamples from './examples/Card';
 import cardActionsExamples from './examples/CardActions';
@@ -16,14 +16,14 @@ import cardImageExamples from './examples/CardImage';
 import cardStatusExamples from './examples/CardStatus';
 import cardTitleExamples from './examples/CardTitle';
 
-const cardDoc = require('!!react-docgen-loader!../../../../Card/Card');
-const cardActionsDoc = require('!!react-docgen-loader!../../../../Card/CardActions');
-const cardBlockDoc = require('!!react-docgen-loader!../../../../Card/CardBlock');
-const cardDividerDoc = require('!!react-docgen-loader!../../../../Card/CardDivider');
-const cardFooterDoc = require('!!react-docgen-loader!../../../../Card/CardFooter');
-const cardImageDoc = require('!!react-docgen-loader!../../../../Card/CardImage');
-const cardStatusDoc = require('!!react-docgen-loader!../../../../Card/CardStatus');
-const cardTitleDoc = require('!!react-docgen-loader!../../../../Card/CardTitle');
+const cardDoc = require('!!react-docgen-loader!../../../../library/Card/Card');
+const cardActionsDoc = require('!!react-docgen-loader!../../../../library/Card/CardActions');
+const cardBlockDoc = require('!!react-docgen-loader!../../../../library/Card/CardBlock');
+const cardDividerDoc = require('!!react-docgen-loader!../../../../library/Card/CardDivider');
+const cardFooterDoc = require('!!react-docgen-loader!../../../../library/Card/CardFooter');
+const cardImageDoc = require('!!react-docgen-loader!../../../../library/Card/CardImage');
+const cardStatusDoc = require('!!react-docgen-loader!../../../../library/Card/CardStatus');
+const cardTitleDoc = require('!!react-docgen-loader!../../../../library/Card/CardTitle');
 
 import bestPractices from './bestPractices';
 

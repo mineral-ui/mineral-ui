@@ -1,6 +1,6 @@
 /* @flow */
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 import siteColors from './siteColors';
 
 const styles = {

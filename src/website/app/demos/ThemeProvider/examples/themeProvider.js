@@ -1,6 +1,6 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
-import { ThemeProvider } from '../../../../../themes';
+import { createStyledComponent } from '../../../../../library/styles';
+import { ThemeProvider } from '../../../../../library/themes';
 import Sample from '../components/Sample';
 
 const DemoLayout = createStyledComponent('div', ({ theme }) => ({

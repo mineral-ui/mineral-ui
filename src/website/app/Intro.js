@@ -4,7 +4,7 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../styles';
+} from '../../library/styles';
 import _Markdown from './Markdown';
 
 const Markdown = createStyledComponent(_Markdown, ({ theme }) => ({

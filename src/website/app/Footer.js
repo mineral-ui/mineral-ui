@@ -1,7 +1,10 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../../styles';
-import { createThemedComponent, mineralTheme } from '../../themes';
+import {
+  createStyledComponent,
+  getNormalizedValue
+} from '../../library/styles';
+import { createThemedComponent, mineralTheme } from '../../library/themes';
 import Markdown from './Markdown';
 import Section from './Section';
 import siteColors from './siteColors';

@@ -1,6 +1,6 @@
 /* @flow */
-import TextArea from '../../../../../TextArea';
-import { FormField } from '../../../../../Form';
+import TextArea from '../../../../../library/TextArea';
+import { FormField } from '../../../../../library/Form';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

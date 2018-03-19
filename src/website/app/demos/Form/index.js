@@ -1,16 +1,16 @@
 /* @flow */
 import React from 'react';
-import { componentTheme as formFieldComponentTheme } from '../../../../Form/FormField';
-import { componentTheme as formFieldsetComponentTheme } from '../../../../Form/FormFieldset';
-import { componentTheme as formFieldDividerComponentTheme } from '../../../../Form/FormFieldDivider';
+import { componentTheme as formFieldComponentTheme } from '../../../../library/Form/FormField';
+import { componentTheme as formFieldsetComponentTheme } from '../../../../library/Form/FormFieldset';
+import { componentTheme as formFieldDividerComponentTheme } from '../../../../library/Form/FormFieldDivider';
 
 import formFieldExamples from './examples/FormField';
 import formFieldsetExamples from './examples/FormFieldset';
 import formFieldDividerExamples from './examples/FormFieldDivider';
 
-const formFieldDoc = require('!!react-docgen-loader!../../../../Form/FormField');
-const formFieldsetDoc = require('!!react-docgen-loader!../../../../Form/FormFieldset');
-const formFieldDividerDoc = require('!!react-docgen-loader!../../../../Form/FormFieldDivider');
+const formFieldDoc = require('!!react-docgen-loader!../../../../library/Form/FormField');
+const formFieldsetDoc = require('!!react-docgen-loader!../../../../library/Form/FormFieldset');
+const formFieldDividerDoc = require('!!react-docgen-loader!../../../../library/Form/FormFieldDivider');
 
 import bestPractices from './bestPractices';
 

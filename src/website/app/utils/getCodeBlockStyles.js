@@ -1,6 +1,6 @@
 /* @flow */
-import colors from '../../../colors';
-import getNormalizedValue from '../../../styles/getNormalizedValue';
+import colors from '../../../library/colors';
+import getNormalizedValue from '../../../library/styles/getNormalizedValue';
 
 /**
  * Many of these styles, especially colors, are modified from atom-dark theme for `prism.js`:

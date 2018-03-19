@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import Button from '../../../../Button';
+import { createStyledComponent } from '../../../../library/styles';
+import Button from '../../../../library/Button';
 
 const Root = createStyledComponent('div', ({ theme }) => ({
   '& > button': {

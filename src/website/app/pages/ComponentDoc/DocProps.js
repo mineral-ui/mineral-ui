@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent } from '../../../../library/styles';
 import _Callout from '../../Callout';
 import PropTable from '../../PropTable';
 import Section from './DocSection';

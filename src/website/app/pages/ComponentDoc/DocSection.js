@@ -3,8 +3,8 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../styles';
-import { createThemedComponent } from '../../../../themes';
+} from '../../../../library/styles';
+import { createThemedComponent } from '../../../../library/themes';
 import Section from '../../Section';
 
 const ThemedSection = createThemedComponent(Section, ({ theme }) => ({

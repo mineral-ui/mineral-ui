@@ -1,6 +1,6 @@
 /* @flow */
 import { Component } from 'react';
-import TextInput from '../../../../../TextInput';
+import TextInput from '../../../../../library/TextInput/';
 
 export default {
   id: 'controlled',

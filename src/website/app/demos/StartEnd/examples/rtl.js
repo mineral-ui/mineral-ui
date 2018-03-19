@@ -1,5 +1,5 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../themes';
+import { ThemeProvider } from '../../../../../library/themes';
 import Box from '../../Box/components/Box';
 import StartEnd from '../components/StartEnd';
 

@@ -1,5 +1,5 @@
 /* @flow */
-import TextInput from '../../../../../TextInput';
+import TextInput from '../../../../../library/TextInput/';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import DemoLayout from '../components/DemoLayout';
 

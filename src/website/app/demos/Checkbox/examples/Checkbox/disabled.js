@@ -1,5 +1,5 @@
 /* @flow */
-import Checkbox from '../../../../../../Checkbox';
+import Checkbox from '../../../../../../library/Checkbox';
 import DemoForm from '../../components/DemoForm';
 
 export default {

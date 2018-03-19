@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { mineralTheme } from '../../../../themes';
-import Flex, { FlexItem } from '../../../../Flex';
-import Button from '../../../../Button';
-import Link from '../../../../Link';
+import { mineralTheme } from '../../../../library/themes';
+import Flex, { FlexItem } from '../../../../library/Flex';
+import Button from '../../../../library/Button';
+import Link from '../../../../library/Link';
 
 export default {
   flex: [

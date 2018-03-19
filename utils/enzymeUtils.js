@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { mount } from 'enzyme';
-import ThemeProvider from '../src/themes/ThemeProvider';
+import ThemeProvider from '../src/library/themes/ThemeProvider';
 
 export const mountInThemeProvider = (
   Component: React$Element<*>,

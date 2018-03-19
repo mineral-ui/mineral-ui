@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import StartEnd from '../../../../StartEnd';
-import Button from '../../../../Button';
+import StartEnd from '../../../../library/StartEnd';
+import Button from '../../../../library/Button';
 
 export default [
   {

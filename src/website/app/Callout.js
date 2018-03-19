@@ -3,7 +3,7 @@ import React from 'react';
 import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 
 type Props = {
   children: React$Node,

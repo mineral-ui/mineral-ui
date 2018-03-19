@@ -1,6 +1,6 @@
 /* @flow */
-import { RadioGroup } from '../../../../../../Radio';
-import { FormField } from '../../../../../../Form';
+import { RadioGroup } from '../../../../../../library/Radio';
+import { FormField } from '../../../../../../library/Form';
 import DemoForm from '../../components/DemoForm';
 
 export default {

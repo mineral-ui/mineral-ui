@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../Button';
-import { createStyledComponent } from '../../../../../styles';
-import Dropdown from '../../../../../Dropdown';
+import Button from '../../../../../library/Button';
+import { createStyledComponent } from '../../../../../library/styles';
+import Dropdown from '../../../../../library/Dropdown';
 import data from '../../Menu/components/menuData';
 
 const OverflowContainer = createStyledComponent('div', {

@@ -1,7 +1,7 @@
 /* @flow */
 import { simulate } from 'glamor';
-import { mineralTheme } from '../../../../../../themes';
-import Menu, { MenuItem } from '../../../../../../Menu';
+import { mineralTheme } from '../../../../../../library/themes';
+import Menu, { MenuItem } from '../../../../../../library/Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
-import Checkbox from '../../../../../../Checkbox';
-import Button from '../../../../../../Button';
+import Checkbox from '../../../../../../library/Checkbox';
+import Button from '../../../../../../library/Button';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

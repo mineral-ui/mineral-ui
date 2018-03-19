@@ -1,6 +1,6 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../styles';
-import _Flex from '../../../../../Flex';
+import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import _Flex from '../../../../../library/Flex';
 
 type Props = {
   gutterWidth?: number | string,

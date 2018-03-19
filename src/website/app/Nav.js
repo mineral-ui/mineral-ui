@@ -6,8 +6,8 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../styles';
-import { mineralTheme, ThemeProvider } from '../../themes';
+} from '../../library/styles';
+import { mineralTheme, ThemeProvider } from '../../library/themes';
 import _Logo from './Logo';
 import Heading from './SiteHeading';
 import _Link from './SiteLink';

@@ -1,7 +1,11 @@
 /* @flow */
 import React from 'react';
-import { FormField, FormFieldset, FormFieldDivider } from '../../../../Form';
-import TextInput from '../../../../TextInput';
+import {
+  FormField,
+  FormFieldset,
+  FormFieldDivider
+} from '../../../../library/Form';
+import TextInput from '../../../../library/TextInput/';
 import DemoLayout from './components/DemoLayout';
 
 const forgotPassword = (

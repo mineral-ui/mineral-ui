@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import { createColorRamp, ThemeProvider } from '../../../../themes';
+import { createStyledComponent } from '../../../../library/styles';
+import { createColorRamp, ThemeProvider } from '../../../../library/themes';
 import Paragraph from '../../Paragraph';
 import ColorRamp from './ColorRamp';
 import Picker from './Picker';

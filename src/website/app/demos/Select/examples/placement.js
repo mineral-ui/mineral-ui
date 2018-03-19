@@ -1,6 +1,6 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
-import Select from '../../../../../Select';
+import { createStyledComponent } from '../../../../../library/styles';
+import Select from '../../../../../library/Select';
 import { basicData as data } from '../components/selectData';
 
 const DemoLayout = createStyledComponent('div', {

@@ -1,7 +1,7 @@
 /* @flow */
-import { mineralTheme, ThemeProvider } from '../../../../../../themes';
-import Avatar from '../../../../../../Avatar';
-import Card, { CardBlock, CardTitle } from '../../../../../../Card';
+import { mineralTheme, ThemeProvider } from '../../../../../../library/themes';
+import Avatar from '../../../../../../library/Avatar';
+import Card, { CardBlock, CardTitle } from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsumRtl';
 

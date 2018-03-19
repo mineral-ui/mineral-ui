@@ -1,7 +1,7 @@
 /* @flow */
 import darken from 'polished/lib/color/darken';
 import lighten from 'polished/lib/color/lighten';
-import colors from '../../colors';
+import colors from '../../library/colors';
 
 export default {
   orange: colors.orange_50,

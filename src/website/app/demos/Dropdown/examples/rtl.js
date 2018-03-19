@@ -1,8 +1,8 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../styles';
-import Button from '../../../../../Button';
-import Dropdown from '../../../../../Dropdown';
-import { ThemeProvider } from '../../../../../themes';
+import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
+import Dropdown from '../../../../../library/Dropdown';
+import { ThemeProvider } from '../../../../../library/themes';
 import data from '../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {

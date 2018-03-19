@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import Button from '../../../../Button';
+import Button from '../../../../library/Button';
 import IconMenu from 'mineral-ui-icons/IconMenu';
-import Dropdown from '../../../../Dropdown';
+import Dropdown from '../../../../library/Dropdown';
 
-import type { Items } from '../../../../Menu/Menu';
+import type { Items } from '../../../../library/Menu/Menu';
 
 const data: Items = [
   { text: 'Settings' },

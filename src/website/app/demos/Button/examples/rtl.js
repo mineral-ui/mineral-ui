@@ -1,6 +1,6 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../themes';
-import Button from '../../../../../Button';
+import { ThemeProvider } from '../../../../../library/themes';
+import Button from '../../../../../library/Button';
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
 
 export default {

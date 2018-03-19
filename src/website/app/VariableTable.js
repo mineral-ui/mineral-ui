@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
 

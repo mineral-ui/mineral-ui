@@ -1,6 +1,6 @@
 /* @flow */
 import { clearFix } from 'polished';
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 
 export default createStyledComponent('div', ({ lastRowStartsAt }) => {
   const condition = lastRowStartsAt

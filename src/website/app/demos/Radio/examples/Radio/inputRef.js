@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
-import Radio from '../../../../../../Radio';
-import Button from '../../../../../../Button';
+import Radio from '../../../../../../library/Radio';
+import Button from '../../../../../../library/Button';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

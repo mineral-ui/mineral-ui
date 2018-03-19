@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 import ScrollParent from '../../Popover/components/ScrollBox';
-import Tooltip from '../../../../../Tooltip';
+import Tooltip from '../../../../../library/Tooltip';
 
 export default {
   id: 'scrolling-container',

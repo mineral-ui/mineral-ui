@@ -14,7 +14,7 @@ const exec = (command, env) =>
 // components es modules
 console.log('\n\nBuilding ES modules...');
 exec(
-  'babel ./src --out-dir ./dist/es --ignore website,*.spec.js,*.template.js',
+  'babel ./src/library --out-dir ./dist/es --ignore *.spec.js,*.template.js',
   {
     NODE_ENV
   }
@@ -22,7 +22,7 @@ exec(
 
 // components cjs modules
 console.log('\n\nBuilding CommonJS modules...');
-exec('babel ./src --out-dir ./dist --ignore website,*.spec.js,*.template.js', {
+exec('babel ./src/library --out-dir ./dist --ignore *.spec.js,*.template.js', {
   BABEL_ENV: 'cjs',
   NODE_ENV
 });
@@ -30,5 +30,5 @@ exec('babel ./src --out-dir ./dist --ignore website,*.spec.js,*.template.js', {
 // flow definitions - not yet ready for public consumption
 // console.log('\n\nCopying Flow Definitions...');
 // exec(
-//   'flow-copy-source -v -i "**/__tests__/**" -i "**/dist/**" -i "**/lib/**" -i "**/templates/**"  -i "**/website/**" ./src ./dist'
+//   'flow-copy-source -v -i "**/__tests__/**" -i "**/dist/**" -i "**/lib/**" -i "**/templates/**" ./src/library ./dist'
 // );

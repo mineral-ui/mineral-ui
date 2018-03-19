@@ -1,9 +1,9 @@
 /* @flow */
 import { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../../styles';
-import Button from '../../../../../../Button';
-import Card, { CardBlock, CardFooter } from '../../../../../../Card';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Card, { CardBlock, CardFooter } from '../../../../../../library/Card';
 import _DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

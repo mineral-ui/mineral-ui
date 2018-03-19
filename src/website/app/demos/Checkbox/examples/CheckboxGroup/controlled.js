@@ -1,6 +1,6 @@
 /* @flow */
 import { Component } from 'react';
-import { CheckboxGroup } from '../../../../../../Checkbox';
+import { CheckboxGroup } from '../../../../../../library/Checkbox';
 import DemoForm from '../../components/DemoForm';
 
 export default {

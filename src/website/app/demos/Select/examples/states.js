@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
 import { simulate } from 'glamor';
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 import DemoLayout from '../components/DemoLayout';
-import { FormFieldset as _FormFieldset } from '../../../../../Form';
-import Select from '../../../../../Select';
+import { FormFieldset as _FormFieldset } from '../../../../../library/Form';
+import Select from '../../../../../library/Select';
 import { basicData as data } from '../components/selectData';
 
 const FormFieldset = createStyledComponent(_FormFieldset, {

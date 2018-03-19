@@ -3,9 +3,9 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
-import Menu, { MenuItem } from '../../../../../../Menu';
+} from '../../../../../../library/styles';
+import { mineralTheme } from '../../../../../../library/themes';
+import Menu, { MenuItem } from '../../../../../../library/Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

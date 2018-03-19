@@ -1,6 +1,6 @@
 /* @flow */
 import DemoLayout from '../components/DemoLayout';
-import TextArea from '../../../../../TextArea';
+import TextArea from '../../../../../library/TextArea';
 
 export default {
   id: 'size',

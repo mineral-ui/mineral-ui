@@ -1,6 +1,6 @@
 /* @flow */
 import DemoLayout from '../components/DemoLayout';
-import Select from '../../../../../Select';
+import Select from '../../../../../library/Select';
 import { basicData as data } from '../components/selectData';
 
 export default {

@@ -1,6 +1,6 @@
 /* @flow */
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
+import Radio from '../../../../../../library/Radio';
 
 export default {
   id: 'uncontrolled',
