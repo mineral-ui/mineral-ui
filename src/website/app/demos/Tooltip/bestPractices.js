@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import Button from '../../../../Button';
-import Card, { CardBlock, CardTitle } from '../../../../Card';
-import Tooltip from '../../../../Tooltip';
+import { createStyledComponent } from '../../../../library/styles';
+import Button from '../../../../library/Button';
+import Card, { CardBlock, CardTitle } from '../../../../library/Card';
+import Tooltip from '../../../../library/Tooltip';
 import IconHelp from 'mineral-ui-icons/IconHelp';
 import IconFormatBold from 'mineral-ui-icons/IconFormatBold';
 import IconFormatItalic from 'mineral-ui-icons/IconFormatItalic';
@@ -15,8 +15,8 @@ import IconFormatAlignRight from 'mineral-ui-icons/IconFormatAlignRight';
 import IconKeyboardArrowDown from 'mineral-ui-icons/IconKeyboardArrowDown';
 import IconKeyboardArrowUp from 'mineral-ui-icons/IconKeyboardArrowUp';
 import IconCheck from 'mineral-ui-icons/IconCheck';
-import FormField from '../../../../Form/FormField';
-import TextInput from '../../../../TextInput';
+import FormField from '../../../../library/Form/FormField';
+import TextInput from '../../../../library/TextInput/';
 
 const DemoCardLayout = createStyledComponent('div', {
   width: '250px'

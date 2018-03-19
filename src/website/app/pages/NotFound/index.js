@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { css } from 'glamor';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent } from '../../../../library/styles';
 import Button from '../../SiteButton';
 import Link from '../../SiteLink';
 import Markdown from '../../Markdown';

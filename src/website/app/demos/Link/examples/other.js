@@ -1,5 +1,5 @@
 /* @flow */
-import Link from '../../../../../Link';
+import Link from '../../../../../library/Link';
 import { BrowserRouter, Link as ReactRouterLink } from 'react-router-dom';
 import DemoLayout from '../components/DemoLayout';
 

@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
+import { createStyledComponent } from '../../../../library/styles';
 import Markdown from '../../Markdown';
 import Callout from '../../Callout';
 import ColorRamp from './ColorRamp';

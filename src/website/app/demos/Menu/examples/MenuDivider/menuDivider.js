@@ -1,6 +1,10 @@
 /* @flow */
-import { mineralTheme } from '../../../../../../themes';
-import Menu, { MenuDivider, MenuGroup, MenuItem } from '../../../../../../Menu';
+import { mineralTheme } from '../../../../../../library/themes';
+import Menu, {
+  MenuDivider,
+  MenuGroup,
+  MenuItem
+} from '../../../../../../library/Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

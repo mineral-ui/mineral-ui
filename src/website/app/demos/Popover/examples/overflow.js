@@ -1,8 +1,8 @@
 /* @flow */
-import Button from '../../../../../Button';
-import { createStyledComponent } from '../../../../../styles';
+import Button from '../../../../../library/Button';
+import { createStyledComponent } from '../../../../../library/styles';
 import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../Popover';
+import Popover from '../../../../../library/Popover';
 
 const OverflowContainer = createStyledComponent('div', {
   backgroundColor: 'aliceblue',

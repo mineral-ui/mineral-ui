@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import { componentTheme } from '../../../../TextInput/TextInput';
+import { componentTheme } from '../../../../library/TextInput/TextInput';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../TextInput/TextInput');
+const doc = require('!!react-docgen-loader!../../../../library/TextInput/TextInput');
 
 export default [
   {

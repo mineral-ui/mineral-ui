@@ -2,8 +2,8 @@
 import React from 'react';
 import colorable from 'colorable';
 import readableColor from 'polished/lib/color/readableColor';
-import { createStyledComponent } from '../../../../styles';
-import color from '../../../../colors';
+import { createStyledComponent } from '../../../../library/styles';
+import color from '../../../../library/colors';
 
 type Props = {
   name: string

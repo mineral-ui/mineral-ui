@@ -1,6 +1,6 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../themes';
-import TextArea from '../../../../../TextArea';
+import { ThemeProvider } from '../../../../../library/themes';
+import TextArea from '../../../../../library/TextArea';
 
 /*
  * Note: The sample text used in the example is Arabic.

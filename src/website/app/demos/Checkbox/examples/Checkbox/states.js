@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import DemoForm from '../../components/DemoForm';
-import Checkbox from '../../../../../../Checkbox';
+import Checkbox from '../../../../../../library/Checkbox';
 import { simulate } from 'glamor';
 
 const Demo = (

@@ -2,7 +2,7 @@
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../themes/ThemeProvider');
+const doc = require('!!react-docgen-loader!../../../../library/themes/ThemeProvider');
 
 export default {
   bestPractices,

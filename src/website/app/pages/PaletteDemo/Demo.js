@@ -1,24 +1,24 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import { ThemeProvider } from '../../../../themes';
-import Button from '../../../../Button';
-import _Card, { CardBlock, CardTitle } from '../../../../Card';
-import Dropdown from '../../../../Dropdown';
-import FormField from '../../../../Form/FormField';
-import TextInput from '../../../../TextInput';
+import { createStyledComponent } from '../../../../library/styles';
+import { ThemeProvider } from '../../../../library/themes';
+import Button from '../../../../library/Button';
+import _Card, { CardBlock, CardTitle } from '../../../../library/Card';
+import Dropdown from '../../../../library/Dropdown';
+import FormField from '../../../../library/Form/FormField';
+import TextInput from '../../../../library/TextInput/';
 import IconBatteryCharging50 from 'mineral-ui-icons/IconBatteryCharging50';
 import IconQuestionAnswer from 'mineral-ui-icons/IconQuestionAnswer';
 import IconDirectionsBoat from 'mineral-ui-icons/IconDirectionsBoat';
 import IconSpa from 'mineral-ui-icons/IconSpa';
 import IconShoppingCart from 'mineral-ui-icons/IconShoppingCart';
-import _Link from '../../../../Link';
-import Menu from '../../../../Menu';
+import _Link from '../../../../library/Link';
+import Menu from '../../../../library/Menu';
 import Markdown from '../../Markdown';
 import Paragraph from '../../Paragraph';
 import content from './gallery.md';
 
-import type { ItemGroups } from '../../../../Menu/Menu';
+import type { ItemGroups } from '../../../../library/Menu/Menu';
 
 type Props = {
   theme: { [string]: any }

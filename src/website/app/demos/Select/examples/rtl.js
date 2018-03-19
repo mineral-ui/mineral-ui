@@ -1,6 +1,6 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../themes';
-import Select from '../../../../../Select';
+import { ThemeProvider } from '../../../../../library/themes';
+import Select from '../../../../../library/Select';
 import DemoLayout from '../components/DemoLayout';
 import { rtlData as data } from '../components/selectData';
 

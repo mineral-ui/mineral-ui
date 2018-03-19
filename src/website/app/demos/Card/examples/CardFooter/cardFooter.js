@@ -1,11 +1,11 @@
 /* @flow */
-import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
+import { mineralTheme } from '../../../../../../library/themes';
+import Button from '../../../../../../library/Button';
 import Card, {
   CardActions,
   CardBlock,
   CardFooter
-} from '../../../../../../Card';
+} from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

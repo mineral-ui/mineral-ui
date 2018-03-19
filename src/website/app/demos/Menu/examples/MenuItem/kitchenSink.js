@@ -1,8 +1,11 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
+import {
+  createStyledComponent,
+  pxToEm
+} from '../../../../../../library/styles';
+import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import Menu, { MenuItem } from '../../../../../../Menu';
+import Menu, { MenuItem } from '../../../../../../library/Menu';
 import _DemoLayout from '../../components/DemoLayout';
 
 const DemoLayout = createStyledComponent(_DemoLayout, {

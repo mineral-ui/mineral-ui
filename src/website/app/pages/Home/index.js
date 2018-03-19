@@ -6,19 +6,19 @@ import { canUseDOM } from 'exenv';
 import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
-import colors from '../../../../colors';
+import colors from '../../../../library/colors';
 import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../styles';
+} from '../../../../library/styles';
 import {
   createTheme,
   createThemedComponent,
   mineralTheme,
   ThemeProvider
-} from '../../../../themes';
-import _Button from '../../../../Button';
+} from '../../../../library/themes';
+import _Button from '../../../../library/Button';
 import IconChevronRight from 'mineral-ui-icons/IconChevronRight';
 import IconFavorite from 'mineral-ui-icons/IconFavorite';
 import Canvas from '../../Canvas';

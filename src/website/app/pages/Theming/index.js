@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { mineralTheme } from '../../../../themes';
+import { mineralTheme } from '../../../../library/themes';
 import Button from '../../SiteButton';
 import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';

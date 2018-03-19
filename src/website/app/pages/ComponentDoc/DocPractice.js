@@ -2,8 +2,8 @@
 import React from 'react';
 import darken from 'polished/lib/color/darken';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent, pxToEm } from '../../../../styles';
-import { mineralTheme, ThemeProvider } from '../../../../themes';
+import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import { mineralTheme, ThemeProvider } from '../../../../library/themes';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconClose from 'mineral-ui-icons/IconClose';
 import Markdown from '../../Markdown';

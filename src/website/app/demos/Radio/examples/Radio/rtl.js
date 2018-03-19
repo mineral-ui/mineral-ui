@@ -1,7 +1,7 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../../themes';
-import { FormFieldDivider } from '../../../../../../Form';
-import Radio from '../../../../../../Radio';
+import { ThemeProvider } from '../../../../../../library/themes';
+import { FormFieldDivider } from '../../../../../../library/Form';
+import Radio from '../../../../../../library/Radio';
 import DemoForm from '../../components/DemoForm';
 
 /*

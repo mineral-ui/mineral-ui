@@ -1,6 +1,6 @@
 /* @flow */
-import TextInput from '../../../../../../TextInput';
-import FormField from '../../../../../../Form/FormField';
+import TextInput from '../../../../../../library/TextInput';
+import FormField from '../../../../../../library/Form/FormField';
 
 export default {
   id: 'caption',

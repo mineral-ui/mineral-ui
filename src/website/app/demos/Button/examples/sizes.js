@@ -1,5 +1,5 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

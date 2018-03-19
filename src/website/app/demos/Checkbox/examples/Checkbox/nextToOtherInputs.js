@@ -1,8 +1,8 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
-import Button from '../../../../../../Button';
-import Checkbox from '../../../../../../Checkbox';
-import TextInput from '../../../../../../TextInput';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Checkbox from '../../../../../../library/Checkbox';
+import TextInput from '../../../../../../library/TextInput';
 import _DemoForm from '../../components/DemoForm';
 
 const DemoForm = createStyledComponent(_DemoForm, {

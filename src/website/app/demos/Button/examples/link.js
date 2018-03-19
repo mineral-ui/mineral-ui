@@ -1,5 +1,5 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 
 export default {
   id: 'link',

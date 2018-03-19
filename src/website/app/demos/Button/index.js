@@ -1,9 +1,9 @@
 /* @flow */
-import { componentTheme } from '../../../../Button/Button';
+import { componentTheme } from '../../../../library/Button/Button';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../Button/Button');
+const doc = require('!!react-docgen-loader!../../../../library/Button/Button');
 
 export default {
   bestPractices,

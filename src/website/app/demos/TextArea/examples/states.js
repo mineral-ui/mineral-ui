@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 import DemoLayout from '../components/DemoLayout';
-import { FormFieldset as _FormFieldset } from '../../../../../Form';
-import TextArea from '../../../../../TextArea';
+import { FormFieldset as _FormFieldset } from '../../../../../library/Form';
+import TextArea from '../../../../../library/TextArea';
 import { simulate } from 'glamor';
 
 const FormFieldset = createStyledComponent(_FormFieldset, {

@@ -1,8 +1,8 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 import DemoContent from '../../Popover/components/DemoContent';
 import ScrollParent from '../../Popover/components/ScrollBox';
-import Dropdown from '../../../../../Dropdown';
+import Dropdown from '../../../../../library/Dropdown';
 import data from '../../Menu/components/menuData';
 
 export default {

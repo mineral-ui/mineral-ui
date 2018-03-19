@@ -1,6 +1,6 @@
 /* @flow */
-import { mineralTheme, ThemeProvider } from '../../../../../../themes';
-import Card, { CardBlock, CardStatus } from '../../../../../../Card';
+import { mineralTheme, ThemeProvider } from '../../../../../../library/themes';
+import Card, { CardBlock, CardStatus } from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsumRtl';
 

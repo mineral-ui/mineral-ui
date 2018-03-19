@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../styles';
-import Avatar from '../../../../Avatar';
+import { createStyledComponent } from '../../../../library/styles';
+import Avatar from '../../../../library/Avatar';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import DemoLayout from './components/DemoLayout';
 

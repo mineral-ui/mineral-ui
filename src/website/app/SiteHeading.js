@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../styles';
-import { createThemedComponent } from '../../themes';
+import { createStyledComponent } from '../../library/styles';
+import { createThemedComponent } from '../../library/themes';
 import Heading from './Heading';
 import Link from './SiteLink';
 

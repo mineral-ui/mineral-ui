@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import Select from '../../../../../Select';
+import Select from '../../../../../library/Select';
 import CustomRender from '../../Menu/components/CustomRender';
 
 export default {

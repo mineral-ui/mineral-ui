@@ -7,7 +7,7 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../styles';
+} from '../../library/styles';
 import Heading from './SiteHeading';
 import Paragraph from './Paragraph';
 import Link from './SiteLink';

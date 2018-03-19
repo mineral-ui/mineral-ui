@@ -1,7 +1,7 @@
 /* @flow */
-import { mineralTheme, ThemeProvider } from '../../../../../../themes';
+import { mineralTheme, ThemeProvider } from '../../../../../../library/themes';
 import IconHelp from 'mineral-ui-icons/IconHelp';
-import Menu, { MenuItem } from '../../../../../../Menu';
+import Menu, { MenuItem } from '../../../../../../library/Menu';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {

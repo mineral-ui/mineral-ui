@@ -1,6 +1,6 @@
 /* @flow */
-import Button from '../../../../../Button';
-import Tooltip from '../../../../../Tooltip';
+import Button from '../../../../../library/Button';
+import Tooltip from '../../../../../library/Tooltip';
 import IconPerson from 'mineral-ui-icons/IconPerson';
 
 export default {

@@ -4,7 +4,7 @@ import bestPractices from './bestPractices';
 
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../StartEnd/StartEnd');
+const doc = require('!!react-docgen-loader!../../../../library/StartEnd/StartEnd');
 
 export default {
   bestPractices,

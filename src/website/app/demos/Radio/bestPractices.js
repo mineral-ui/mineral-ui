@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
 import DemoForm from './components/DemoForm';
-import { FormField } from '../../../../Form';
-import { RadioGroup } from '../../../../Radio';
+import { FormField } from '../../../../library/Form';
+import { RadioGroup } from '../../../../library/Radio';
 
 export default {
   radio: [

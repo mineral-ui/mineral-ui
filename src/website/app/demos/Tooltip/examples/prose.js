@@ -1,6 +1,6 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
-import Tooltip from '../../../../../Tooltip';
+import { createStyledComponent } from '../../../../../library/styles';
+import Tooltip from '../../../../../library/Tooltip';
 
 const DemoLayout = createStyledComponent('div', ({ theme }) => ({
   fontFamily: theme.fontFamily

@@ -1,7 +1,7 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../../themes';
-import Checkbox from '../../../../../../Checkbox';
-import { FormFieldDivider } from '../../../../../../Form';
+import { ThemeProvider } from '../../../../../../library/themes';
+import Checkbox from '../../../../../../library/Checkbox';
+import { FormFieldDivider } from '../../../../../../library/Form';
 import DemoForm from '../../components/DemoForm';
 
 /*

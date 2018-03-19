@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import FormField from '../../../../Form/FormField';
-import TextArea from '../../../../TextArea';
+import FormField from '../../../../library/Form/FormField';
+import TextArea from '../../../../library/TextArea';
 
 export default [
   {

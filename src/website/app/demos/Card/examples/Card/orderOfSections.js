@@ -1,14 +1,14 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
+import { createStyledComponent } from '../../../../../../library/styles';
+import { mineralTheme } from '../../../../../../library/themes';
+import Button from '../../../../../../library/Button';
 import Card, {
   CardActions,
   CardBlock,
   CardFooter,
   CardImage,
   CardTitle
-} from '../../../../../../Card';
+} from '../../../../../../library/Card';
 import _DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

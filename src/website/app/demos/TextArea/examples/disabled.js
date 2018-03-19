@@ -1,5 +1,5 @@
 /* @flow */
-import TextArea from '../../../../../TextArea';
+import TextArea from '../../../../../library/TextArea';
 
 export default {
   id: 'disabled',

@@ -1,5 +1,5 @@
 /* @flow */
-import Icon from '../../../../../Icon';
+import Icon from '../../../../../library/Icon';
 
 export default {
   id: 'custom',

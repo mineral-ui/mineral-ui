@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
+import Radio from '../../../../../../library/Radio';
 import { simulate } from 'glamor';
 
 const Demo = (

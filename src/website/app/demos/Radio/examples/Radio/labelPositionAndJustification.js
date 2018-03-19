@@ -1,7 +1,7 @@
 /* @flow */
 import DemoForm from '../../components/DemoForm';
-import Radio from '../../../../../../Radio';
-import { FormFieldDivider } from '../../../../../../Form';
+import Radio from '../../../../../../library/Radio';
+import { FormFieldDivider } from '../../../../../../library/Form';
 
 export default {
   id: 'label-position-and-justification',

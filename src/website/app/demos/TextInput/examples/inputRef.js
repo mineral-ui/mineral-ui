@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
-import TextInput from '../../../../../TextInput';
-import Button from '../../../../../Button';
+import TextInput from '../../../../../library/TextInput/';
+import Button from '../../../../../library/Button';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

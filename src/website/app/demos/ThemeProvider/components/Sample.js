@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 
 const Root = createStyledComponent('span', ({ theme }) => ({
   backgroundColor: theme.Sample_backgroundColor || 'lavender',

@@ -1,5 +1,5 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../../themes';
+import { ThemeProvider } from '../../../../../../library/themes';
 import FlexItem from '../../components/FlexItem';
 import Flex from '../../components/Flex';
 

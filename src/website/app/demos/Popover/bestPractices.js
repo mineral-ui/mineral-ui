@@ -1,10 +1,10 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../styles';
-import Button from '../../../../Button';
+import { createStyledComponent } from '../../../../library/styles';
+import Button from '../../../../library/Button';
 import Heading from '../../SiteHeading';
-import Popover from '../../../../Popover';
+import Popover from '../../../../library/Popover';
 
 const styles = {
   badContentLayout: {

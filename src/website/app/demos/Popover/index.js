@@ -1,9 +1,9 @@
 /* @flow */
-import { componentTheme } from '../../../../Popover/Popover';
+import { componentTheme } from '../../../../library/Popover/Popover';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../Popover/Popover');
+const doc = require('!!react-docgen-loader!../../../../library/Popover/Popover');
 
 export default {
   bestPractices,

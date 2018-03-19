@@ -1,10 +1,10 @@
 /* @flow */
 import { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../styles';
-import Button from '../../../../../Button';
+import { createStyledComponent } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
 import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../Popover';
+import Popover from '../../../../../library/Popover';
 
 const DemoLayout = createStyledComponent('div', {
   display: 'flex',

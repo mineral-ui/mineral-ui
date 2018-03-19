@@ -1,8 +1,8 @@
 /* @flow */
 import { Component } from 'react';
-import { createStyledComponent } from '../../../../../styles';
-import Button from '../../../../../Button';
-import Tooltip from '../../../../../Tooltip';
+import { createStyledComponent } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
+import Tooltip from '../../../../../library/Tooltip';
 
 const DemoLayout = createStyledComponent('div', {
   display: 'flex',

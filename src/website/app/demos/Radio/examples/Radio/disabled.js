@@ -1,5 +1,5 @@
 /* @flow */
-import Radio from '../../../../../../Radio';
+import Radio from '../../../../../../library/Radio';
 import DemoForm from '../../components/DemoForm';
 
 export default {

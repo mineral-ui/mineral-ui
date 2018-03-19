@@ -1,8 +1,8 @@
 /* @flow */
-import Button from '../../../../../Button';
+import Button from '../../../../../library/Button';
 import DemoContent from '../components/DemoContent';
 import ScrollParent from '../components/ScrollBox';
-import Popover from '../../../../../Popover';
+import Popover from '../../../../../library/Popover';
 
 export default {
   id: 'portal',

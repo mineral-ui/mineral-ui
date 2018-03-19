@@ -1,7 +1,7 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
-import Button from '../../../../../Button';
-import TextInput from '../../../../../TextInput';
+import { createStyledComponent } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
+import TextInput from '../../../../../library/TextInput/';
 import _DemoLayout from '../components/DemoLayout';
 
 const DemoLayout = createStyledComponent(_DemoLayout, {

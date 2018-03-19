@@ -1,7 +1,7 @@
 /* @flow */
 import DemoForm from '../../components/DemoForm';
-import Checkbox from '../../../../../../Checkbox';
-import { FormFieldDivider } from '../../../../../../Form';
+import Checkbox from '../../../../../../library/Checkbox';
+import { FormFieldDivider } from '../../../../../../library/Form';
 
 export default {
   id: 'justify',

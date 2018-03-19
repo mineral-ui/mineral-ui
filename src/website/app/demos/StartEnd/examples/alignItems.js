@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 import Box from '../../Box/components/Box';
 import DemoLayout from '../components/DemoLayout';
 import _StartEnd from '../components/StartEnd';

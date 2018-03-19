@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../styles';
+import { createStyledComponent } from '../../library/styles';
 import IconInfo from 'mineral-ui-icons/IconInfo';
-import Button from '../../Button';
-import Popover from '../../Popover';
+import Button from '../../library/Button';
+import Popover from '../../library/Popover';
 import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 

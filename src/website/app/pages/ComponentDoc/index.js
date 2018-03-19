@@ -4,8 +4,8 @@ import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
-} from '../../../../styles';
-import { mineralTheme } from '../../../../themes';
+} from '../../../../library/styles';
+import { mineralTheme } from '../../../../library/themes';
 import Heading from '../../SiteHeading';
 import Intro from '../../Intro';
 import DocBestPractices from './DocBestPractices';

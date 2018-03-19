@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../styles';
+import { createStyledComponent } from '../../../../../library/styles';
 
 export default createStyledComponent('div', {
   '&[class] > *:not(:last-child)': {

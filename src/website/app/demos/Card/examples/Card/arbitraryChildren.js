@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../../styles';
-import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
-import Card, { CardTitle } from '../../../../../../Card';
+import { createStyledComponent } from '../../../../../../library/styles';
+import { mineralTheme } from '../../../../../../library/themes';
+import Button from '../../../../../../library/Button';
+import Card, { CardTitle } from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 
 const CustomContent = createStyledComponent('div', ({ theme }) => ({

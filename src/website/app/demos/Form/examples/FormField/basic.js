@@ -1,8 +1,8 @@
 /* @flow */
 import DemoLayout from '../../components/DemoLayout';
-import TextArea from '../../../../../../TextArea';
-import TextInput from '../../../../../../TextInput';
-import FormField from '../../../../../../Form/FormField';
+import TextArea from '../../../../../../library/TextArea';
+import TextInput from '../../../../../../library/TextInput';
+import FormField from '../../../../../../library/Form/FormField';
 
 export default {
   id: 'basic',

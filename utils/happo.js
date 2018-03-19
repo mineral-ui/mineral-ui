@@ -1,7 +1,7 @@
 /* @flow */
 const React = require('react');
 const { LiveProvider, LivePreview } = require('react-live');
-const { ThemeProvider } = require('../src/themes');
+const { ThemeProvider } = require('../src/library/themes');
 const demos = require('../src/website/app/demos').default;
 
 const excludedComponents = ['Dropdown', 'Form', 'Popover', 'Select', 'Tooltip'];

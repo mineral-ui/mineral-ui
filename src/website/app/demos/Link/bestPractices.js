@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import _Link from '../../../../Link';
+import _Link from '../../../../library/Link';
 
 const Link = ({ href, ...restProps }: { href?: string }) => (
   <_Link

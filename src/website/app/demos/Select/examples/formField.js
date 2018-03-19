@@ -1,6 +1,6 @@
 /* @flow */
-import { FormField } from '../../../../../Form';
-import Select from '../../../../../Select';
+import { FormField } from '../../../../../library/Form';
+import Select from '../../../../../library/Select';
 import DemoLayout from '../components/DemoLayout';
 import { statesData as data } from '../components/selectData';
 

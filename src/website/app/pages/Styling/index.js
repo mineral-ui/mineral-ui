@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import Button from '../../../../Button';
+import Button from '../../../../library/Button';
 import Markdown from '../../Markdown';
 import content from './styling.md';
 

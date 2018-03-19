@@ -1,7 +1,7 @@
 /* @flow */
 import { rgba } from 'polished';
-import { createStyledComponent } from '../../../../../styles';
-import _Box from '../../../../../Box';
+import { createStyledComponent } from '../../../../../library/styles';
+import _Box from '../../../../../library/Box';
 
 type Props = {
   inline?: boolean,

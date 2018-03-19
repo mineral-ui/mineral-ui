@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
-import { mineralTheme } from '../../../../../../themes';
-import _Link from '../../../../../../Link';
-import Card, { CardBlock, CardActions } from '../../../../../../Card';
+import { mineralTheme } from '../../../../../../library/themes';
+import _Link from '../../../../../../library/Link';
+import Card, { CardBlock, CardActions } from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

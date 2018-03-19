@@ -1,9 +1,9 @@
 /* @flow */
-import { componentTheme } from '../../../../Tooltip/Tooltip';
+import { componentTheme } from '../../../../library/Tooltip/Tooltip';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../Tooltip/Tooltip');
+const doc = require('!!react-docgen-loader!../../../../library/Tooltip/Tooltip');
 
 export default {
   bestPractices,

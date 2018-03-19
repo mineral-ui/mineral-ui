@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import { componentTheme } from '../../../../TextArea/TextArea';
+import { componentTheme } from '../../../../library/TextArea/TextArea';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-const doc = require('!!react-docgen-loader!../../../../TextArea/TextArea');
+const doc = require('!!react-docgen-loader!../../../../library/TextArea/TextArea');
 
 export default [
   {

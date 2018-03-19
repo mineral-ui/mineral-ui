@@ -1,5 +1,5 @@
 /* @flow */
-import Avatar from '../../../../../Avatar';
+import Avatar from '../../../../../library/Avatar';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import DemoLayout from '../components/DemoLayout';
 

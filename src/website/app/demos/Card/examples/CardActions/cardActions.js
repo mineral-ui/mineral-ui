@@ -1,7 +1,7 @@
 /* @flow */
-import { mineralTheme } from '../../../../../../themes';
-import Button from '../../../../../../Button';
-import Card, { CardBlock, CardActions } from '../../../../../../Card';
+import { mineralTheme } from '../../../../../../library/themes';
+import Button from '../../../../../../library/Button';
+import Card, { CardBlock, CardActions } from '../../../../../../library/Card';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';

@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../../styles';
+import { createStyledComponent } from '../../../../../../library/styles';
 import _DemoLayout from '../../components/DemoLayout';
 import FlexItem from '../../components/FlexItem';
 import _Flex from '../../components/Flex';

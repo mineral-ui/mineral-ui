@@ -1,10 +1,10 @@
 /* @flow */
-import { mineralTheme } from '../../../../../../themes';
+import { mineralTheme } from '../../../../../../library/themes';
 import Card, {
   CardBlock,
   CardTitle,
   CardTitleMenu
-} from '../../../../../../Card';
+} from '../../../../../../library/Card';
 import DemoLayout from '../../components/DemoLayout';
 import loremIpsum from '../../components/loremIpsum';
 

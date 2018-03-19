@@ -1,6 +1,6 @@
 /* @flow */
-import Checkbox, { CheckboxGroup } from '../../../../../../Checkbox';
-import { FormFieldDivider } from '../../../../../../Form';
+import Checkbox, { CheckboxGroup } from '../../../../../../library/Checkbox';
+import { FormFieldDivider } from '../../../../../../library/Form';
 import DemoForm from '../../components/DemoForm';
 
 export default {

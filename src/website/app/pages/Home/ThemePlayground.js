@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
 import rgba from 'polished/lib/color/rgba';
-import { createStyledComponent, pxToEm } from '../../../../styles';
+import { createStyledComponent, pxToEm } from '../../../../library/styles';
 import IconCheck from 'mineral-ui-icons/IconCheck';
-import { ThemeProvider } from '../../../../themes';
+import { ThemeProvider } from '../../../../library/themes';
 
 type Props = {
   children: React$Node,

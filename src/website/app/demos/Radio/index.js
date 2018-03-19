@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
-import { componentTheme as radioComponentTheme } from '../../../../Radio/Radio';
-import { componentTheme as radioGroupComponentTheme } from '../../../../Radio/RadioGroup';
+import { componentTheme as radioComponentTheme } from '../../../../library/Radio/Radio';
+import { componentTheme as radioGroupComponentTheme } from '../../../../library/Radio/RadioGroup';
 import radioExamples from './examples/Radio';
 import radioGroupExamples from './examples/RadioGroup';
 import bestPractices from './bestPractices';
 
-const radioDoc = require('!!react-docgen-loader!../../../../Radio/Radio');
-const radioGroupDoc = require('!!react-docgen-loader!../../../../Radio/RadioGroup');
+const radioDoc = require('!!react-docgen-loader!../../../../library/Radio/Radio');
+const radioGroupDoc = require('!!react-docgen-loader!../../../../library/Radio/RadioGroup');
 
 export default [
   {

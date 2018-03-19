@@ -1,6 +1,6 @@
 /* @flow */
 import DemoLayout from '../components/DemoLayout';
-import TextInput from '../../../../../TextInput';
+import TextInput from '../../../../../library/TextInput/';
 
 export default {
   id: 'size',

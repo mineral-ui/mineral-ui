@@ -1,6 +1,6 @@
 /* @flow */
 import { Component } from 'react';
-import TextArea from '../../../../../TextArea';
+import TextArea from '../../../../../library/TextArea';
 
 export default {
   id: 'controlled',

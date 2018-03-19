@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
 import { simulate } from 'glamor';
-import { createStyledComponent } from '../../../../../styles';
-import _Link from '../../../../../Link';
+import { createStyledComponent } from '../../../../../library/styles';
+import _Link from '../../../../../library/Link';
 import _DemoLayout from '../components/DemoLayout';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
