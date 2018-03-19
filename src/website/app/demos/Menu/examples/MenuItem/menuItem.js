@@ -12,8 +12,10 @@ export default {
 MenuItems are used to trigger an action or navigate to a new location.
 
 <Callout title="Note">
-  MenuItems normally occupy the full available width of their container.
-  The MenuItems here are width-constrained for illustration purposes.
+  <p key={0}>
+    MenuItems normally occupy the full available width of their container.
+    The MenuItems here are width-constrained for illustration purposes.
+  </p>
 </Callout>`,
   scope: { DemoLayout, Menu, MenuItem },
   source: `

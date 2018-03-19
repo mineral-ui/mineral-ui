@@ -6,7 +6,7 @@ import mineralTheme from './mineralTheme';
 type Props = {
   /** Components to which the theme will be applied */
   children?: React$Node,
-  /** A shallow object of [theme variables](/theming/#common-scenarios-theme-structure) and their values */
+  /** A shallow object of [theme variables](/theming#common-scenarios-theme-structure) and their values */
   theme?: Object
 };
 

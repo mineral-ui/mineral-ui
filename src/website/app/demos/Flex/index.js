@@ -14,17 +14,19 @@ export default [
     doc: flexDoc,
     examples: flexExamples,
     propsComment: (
-      <p>
-        In addition to the props above, Flex also accepts all props for{' '}
-        <a href="../box" key={0}>
-          Box
-        </a>.
-        <br key={1} />
-        <br key={2} />
-        <em key={3}>
-          Undocumented properties will be applied to the root element.
-        </em>
-      </p>
+      <div>
+        <p>
+          In addition to the props above, FlexItem also accepts all props for{' '}
+          <a href="/components/box" key={0}>
+            Box
+          </a>.
+        </p>
+        <p>
+          <em key={1}>
+            Undocumented properties will be applied to the root element.
+          </em>
+        </p>
+      </div>
     ),
     slug: 'flex',
     title: 'Flex',
@@ -38,17 +40,19 @@ powerful and flexible enough to be the foundation of your app's layout.`
     doc: flexItemDoc,
     examples: flexItemExamples,
     propsComment: (
-      <p>
-        In addition to the props above, FlexItem also accepts all props for{' '}
-        <a href="../box" key={0}>
-          Box
-        </a>.
-        <br key={1} />
-        <br key={2} />
-        <em key={3}>
-          Undocumented properties will be applied to the root element.
-        </em>
-      </p>
+      <div>
+        <p>
+          In addition to the props above, FlexItem also accepts all props for{' '}
+          <a href="/components/box" key={0}>
+            Box
+          </a>.
+        </p>
+        <p>
+          <em key={1}>
+            Undocumented properties will be applied to the root element.
+          </em>
+        </p>
+      </div>
     ),
     slug: 'flex-item',
     title: 'FlexItem',

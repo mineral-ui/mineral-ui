@@ -373,8 +373,8 @@ function createRootNode(props: Props) {
  * Box component provides an easy way to apply standardized size & space to your
  * layout.
  *
- * Box is the basis of the other layout components: [Flex](../flex),
- * [FlexItem](../flex-item), and [StartEnd](../start-end).
+ * Box is the basis of the other layout components: [Flex](/components/flex),
+ * [FlexItem](/components/flex-item), and [StartEnd](/components/start-end).
  */
 export default class Box extends Component<Props> {
   static defaultProps = {

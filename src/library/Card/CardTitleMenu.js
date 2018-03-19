@@ -10,7 +10,7 @@ import type { Items, ItemGroups } from '../Menu/Menu';
 type Props = {
   /** See the [Actions Menu](#actions-menu) example */
   data?: Items | ItemGroups,
-  /** Title for the actions menu [Icon](../Icon) */
+  /** Title for the actions menu [Icon](/components/Icon) */
   triggerTitle?: string
 };
 

@@ -86,7 +86,7 @@ const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
 
 /**
 * Checkbox is an interactive control that can be turned on or off. Checkboxes
-* are often used in [groups](../checkbox-group), wherein multiple options may be
+* are often used in [groups](/components/checkbox-group), wherein multiple options may be
 * selected.
 */
 export default function Checkbox({

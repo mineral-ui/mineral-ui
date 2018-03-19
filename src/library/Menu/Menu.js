@@ -6,7 +6,7 @@ import { MenuDivider, MenuGroup, MenuItem } from './index';
 import type { Item } from './MenuItem';
 
 type Props = {
-  /** [MenuDivider](../menu-divider), [MenuGroup](../menu-group), or [MenuItem](../menu-item) */
+  /** [MenuDivider](/components/menu-divider), [MenuGroup](/components/menu-group), or [MenuItem](/components/menu-item) */
   children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
   data?: Items | ItemGroups,
@@ -29,7 +29,7 @@ const Root = createStyledComponent(
 
 /**
  * A Menu presents a list of options representing actions or navigation.
- * Composed of [MenuItems](../menu-item), Menu is usually combined with [Popover](../popover) to create a [Dropdown](../dropdown).
+ * Composed of [MenuItems](/components/menu-item), Menu is usually combined with [Popover](/components/popover) to create a [Dropdown](/components/dropdown).
  *
  * Menus are great for collecting actions in one place so your users don't need to scan the entire document to find a feature.
  */

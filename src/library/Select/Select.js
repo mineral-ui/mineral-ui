@@ -21,7 +21,7 @@ import type { Item } from '../Menu/MenuItem';
 
 type Props = {
   /**
-   * Data from which the [Menu](../menu#data) will be constructed
+   * Data from which the [Menu](/components/menu#data) will be constructed
    * (see [example](#data))
    */
   data: Items | ItemGroups,

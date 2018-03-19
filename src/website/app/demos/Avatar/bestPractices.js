@@ -39,8 +39,8 @@ export default [
   },
   {
     type: 'dont',
-    description: `To prevent duplicate information, hide Avatar from Assistive
-Technology (AT) with \`ariaHidden="true"\` when the associated text is
+    description: `To prevent duplicate information, hide Avatar from assistive
+technologies with \`aria-hidden="true"\` when the associated text is
 sufficiently descriptive.`,
     example: (
       <Name>

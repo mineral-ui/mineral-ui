@@ -57,7 +57,7 @@ const statusIcons = {
 };
 
 /**
- * CardStatus provides a standard way of displaying a [Card's](../card) current status.
+ * CardStatus provides a standard way of displaying a [Card's](/components/card) current status.
  */
 export default function CardStatus({ children, variant, ...restProps }: Props) {
   const rootProps = {
