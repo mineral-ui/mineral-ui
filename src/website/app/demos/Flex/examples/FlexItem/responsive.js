@@ -20,7 +20,7 @@ the left edge of the container.
 <Callout title="Heads Up">
   <p key={0}>
     Notice there is no <code key={0}>breakpoints</code> prop defined for each
-    FlexItem below. <a href="../flex" key={1}>Flex</a> will automatically pass
+    FlexItem below. <a href="/components/flex" key={1}>Flex</a> will automatically pass
     along any breakpoints defined to its FlexItem children. If a FlexItem has
     its own <code key={2}>breakpoints</code>, those will take precedence.
   </p>

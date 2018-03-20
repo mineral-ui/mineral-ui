@@ -10,7 +10,7 @@ type Props = {
   getItemProps?: (props: Object, scope: Object) => Object,
   /** @Private Function that returns props to be applied to the menu */
   getMenuProps?: (props: Object, scope?: Object) => Object,
-  /** Data from which the [Menu](../menu#data) will be constructed */
+  /** Data from which the [Menu](/components/menu#data) will be constructed */
   data: Array<Object>,
   /** Id of the Dropdown content */
   id: string,

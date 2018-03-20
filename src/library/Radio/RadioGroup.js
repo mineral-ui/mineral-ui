@@ -8,17 +8,17 @@ import Radio from './Radio';
 
 type Props = {
   /**
-   * Value of the selected [Radio](../radio); primarily for use with controlled
+   * Value of the selected [Radio](/components/radio); primarily for use with controlled
    * components. If this prop is specified, an `onChange` handler must also be
    * specified. See also: `defaultChecked`.
    */
   checked?: string,
-  /** Mineral [Radio](../radio) components */
+  /** Mineral [Radio](/components/radio) components */
   children?: React$Node,
-  /** Data used to contruct [Radio](../radio), see [example](#data) */
+  /** Data used to contruct [Radio](/components/radio), see [example](#data) */
   data?: Array<{ label: string | React$Element<*>, value: string }>,
   /**
-   * Value of the selected [Radio](../radio); primarily for use with
+   * Value of the selected [Radio](/components/radio); primarily for use with
    * uncontrolled components.
    */
   defaultChecked?: string,
@@ -65,7 +65,7 @@ const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) => {
 });
 
 /**
- * RadioGroup allows authors to construct a group of [Radios](../radio)
+ * RadioGroup allows authors to construct a group of [Radios](/components/radio)
  * and provides a simpler API than working with Radio directly.
  *
  * RadioGroup allows users to select a single option from a list.

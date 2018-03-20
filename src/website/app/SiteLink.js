@@ -34,7 +34,6 @@ const Root = createStyledComponent(ThemedLink, ({ href, theme }) => {
     fontWeight: theme.fontWeight_semiBold,
     textDecoration: 'underline',
     textDecorationColor: rgba(theme.color_text_primary, 0.5),
-    textDecorationSkip: 'ink',
 
     '&:focus': {
       textDecoration: 'none'

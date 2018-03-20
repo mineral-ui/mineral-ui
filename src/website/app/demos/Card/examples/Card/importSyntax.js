@@ -7,7 +7,9 @@ import Card, { CardActions, CardBlock, CardDivider, CardFooter, CardImage, CardT
 \`\`\`
 
 <Callout title="Note">
-  Cards normally occupy the full available width of their container. The Cards
-  here are width-constrained for illustration purposes.
+  <p key={0}>
+    Cards normally occupy the full available width of their container. The Cards
+    here are width-constrained for illustration purposes.
+  </p>
 </Callout>`
 };

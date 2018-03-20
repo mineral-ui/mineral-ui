@@ -153,7 +153,7 @@ const variantIcons = {
 /**
  * CardTitle displays a Card title and an optional subtitle.
  * You can put CardTitle in any order in relation to other root components of
- * [Card](../card).
+ * [Card](/components/card).
  */
 export default function CardTitle({
   actions,

@@ -17,8 +17,10 @@ export default {
 Menus display a list of actions or navigation options.
 
 <Callout title="Note">
-  Menus normally occupy the full available width of their container.
-  The Menus here are width-constrained for illustration purposes.
+  <p key={0}>
+    Menus normally occupy the full available width of their container.
+    The Menus here are width-constrained for illustration purposes.
+  </p>
 </Callout>`,
   scope: { DemoLayout, IconCloud, Menu, MenuDivider, MenuGroup, MenuItem },
   source: `

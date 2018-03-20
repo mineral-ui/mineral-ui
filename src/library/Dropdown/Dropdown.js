@@ -30,7 +30,7 @@ type Props = {
   /** Disable the Dropdown */
   disabled?: boolean,
   /**
-   * Data from which the [Menu](../menu#data) will be constructed
+   * Data from which the [Menu](/components/menu#data) will be constructed
    * (see [example](#data))
    */
   data: Items | ItemGroups,

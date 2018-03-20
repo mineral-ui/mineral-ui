@@ -24,7 +24,7 @@ type Props = {
     | 'yellow'
     | string,
   /**
-   * `img` (with an `alt` attribute), [Icon](../icon) (with a `title`), or a
+   * `img` (with an `alt` attribute), [Icon](/components/icon) (with a `title`), or a
    * string
    */
   children: React$Node,
@@ -129,7 +129,7 @@ const Root = createStyledComponent(
 
 /**
  * Avatar provides a graphic representation of an identity. It can display an
- * image, text, or an [Icon](../icon).
+ * image, text, or an [Icon](/components/icon).
  */
 export default function Avatar({
   abbr,

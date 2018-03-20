@@ -14,7 +14,7 @@ type Props = {
   children?: React$Node,
   /** @Private CSS className */
   className?: string,
-  /** Visually hide label, but keep available for assistive technologies */
+  /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideLabel?: boolean,
   /** Form input class; alternative to `children` */
   input?: React$ComponentType<*>,

@@ -13,12 +13,12 @@ type Props = {
    * must also be specified. See also: `defaultChecked`.
    */
   checked?: Array<string>,
-  /** Mineral [Checkbox](../checkbox) components */
+  /** Mineral [Checkbox](/components/checkbox) components */
   children?: React$Node,
-  /** Data used to contruct [Checkboxes](../checkbox), see [example](#data) */
+  /** Data used to contruct [Checkboxes](/components/checkbox), see [example](#data) */
   data?: Array<{ label: string | React$Element<*>, value: string }>,
   /**
-   * Array of values of the selected [Checkboxes](../checkbox); primarily for
+   * Array of values of the selected [Checkboxes](/components/checkbox); primarily for
    * use with uncontrolled components.
    */
   defaultChecked?: Array<string>,
@@ -66,7 +66,7 @@ const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) => {
 
 /**
  * CheckboxGroup allows authors to construct a group of
- * [Checkboxes](../checkbox) and provides a simpler API than working with
+ * [Checkboxes](/components/checkbox) and provides a simpler API than working with
  * Checkbox directly.
  *
  * CheckboxGroup allows users to select multiple options from a list.

@@ -31,8 +31,8 @@ Additionally, their flow can be reversed.
     Exercise caution when using the "reverse" directions; they will flip
     the <em key={0}>visual</em> order while maintaining
     the <em key={1}>semantic</em> order. This can affect keyboard users because
-    of a non-intuitive tab order as well as the order of content as announced by
-    assistive technology (AT).
+    of a non-intuitive tab order as well as the order of content as recognized
+    by <a href="https://webaccess.berkeley.edu/resources/assistive-technology" key={2}>assistive technologies</a>.
   </p>
 </Callout>`,
   scope: { DemoLayout, Flex, FlexItem },

@@ -3,7 +3,7 @@ import React from 'react';
 import { createStyledComponent } from '../styles';
 
 type Props = {
-  /** Rendered content of the component, most likely [FormField](../form-field) */
+  /** Rendered content of the component, most likely [FormField](/components/form-field) */
   children?: React$Node,
   /** Disable (visually) the fieldset */
   disabled?: boolean,
@@ -52,7 +52,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * FormFieldsets group related [FormFields](../form-field) and provide a legend.
+ * FormFieldsets group related [FormFields](/components/form-field) and provide a legend.
  * Grouping FormFields provides contextual clues to users and enhances
  * accessibility.
  */

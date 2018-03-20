@@ -7,7 +7,7 @@ import { componentTheme as cardBlockComponentTheme } from './CardBlock';
 import CardRow from './CardRow';
 
 type Props = {
-  /** Actions associated with Card; see [Button](../button), [Link](../link) */
+  /** Actions associated with Card; see [Button](/components/button), [Link](/components/link) */
   children: React$Node
 };
 
@@ -63,7 +63,7 @@ const Root = createStyledComponent(CardRow, styles.root, {
 const Action = createStyledComponent('span', styles.action);
 
 /**
- * The CardActions component allows you to lay out actions inside your [Card](../card).
+ * The CardActions component allows you to lay out actions inside your [Card](/components/card).
  */
 export default function CardActions({ children, ...restProps }: Props) {
   const actions = Children.map(children, (child, index) => {

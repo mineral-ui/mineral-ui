@@ -150,7 +150,7 @@ const TitleContent = createStyledComponent('h4', styles.titleContent);
 const ToggleButton = createStyledComponent(Button, styles.toggleButton);
 
 /**
- * CardFooter is used to append a visually distinct section to [Card](../card).
+ * CardFooter is used to append a visually distinct section to [Card](/components/card).
  */
 export default class CardFooter extends Component<Props, State> {
   static defaultProps = {

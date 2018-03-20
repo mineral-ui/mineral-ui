@@ -2,7 +2,6 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../library/styles';
 import Markdown from '../../Markdown';
-import Callout from '../../Callout';
 import ColorRamp from './ColorRamp';
 import RampLegend from './RampLegend';
 import Variants from './Variants';
@@ -36,7 +35,7 @@ const RampHolder = createStyledComponent('div', {
 export default function Color(props: Props) {
   return (
     <div {...props}>
-      <Markdown scope={{ Callout, Variants }}>{content}</Markdown>
+      <Markdown scope={{ Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
         {baseColors.map(baseColor => (

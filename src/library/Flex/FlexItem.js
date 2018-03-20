@@ -68,7 +68,7 @@ const Root = createStyledComponent(Box, styles.root, {
 });
 
 /**
- * FlexItem is used within [Flex](../flex) to lay out other components in
+ * FlexItem is used within [Flex](/components/flex) to lay out other components in
  * your app.
  */
 const FlexItem = (props: Props) => <Root {...props} />;

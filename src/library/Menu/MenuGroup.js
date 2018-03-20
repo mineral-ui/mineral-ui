@@ -4,7 +4,7 @@ import { createStyledComponent } from '../styles';
 import MenuGroupTitle from './MenuGroupTitle';
 
 type Props = {
-  /** [MenuItems](../menu-item) */
+  /** [MenuItems](/components/menu-item) */
   children?: React$Node,
   /** Title for the group */
   title?: React$Node
@@ -38,7 +38,7 @@ const Root = createStyledComponent(
 );
 
 /**
- * MenuGroups assemble [MenuItems](../menu-item) and can display a title.
+ * MenuGroups assemble [MenuItems](/components/menu-item) and can display a title.
  * Grouping Menu options provides context clues to users about related actions.
  * An optional title can be added to reinforce the intent of the grouping.
  */

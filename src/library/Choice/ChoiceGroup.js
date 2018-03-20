@@ -90,7 +90,7 @@ const isChecked = (checked: string | Array<string>, value) => {
 
 /**
  * ChoiceGroup allows users to construct a group
- * of [Radios](../radio) or [Checkboxes](../checkbox) and
+ * of [Radios](/components/radio) or [Checkboxes](/components/checkbox) and
  * provides a simpler API than working with Radio or Checkbox directly.
  */
 export default function ChoiceGroup({
