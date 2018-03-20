@@ -27,7 +27,10 @@ Currently the site is hosted on Netlify. In order to publish the website, one of
 * __How do I publish a prerelease version?__
 
   ```sh
-  npm run release -- --canary
+  npm run clean
+  npm run build:library
+  npm run build:package -- --label=alpha
+  npm run release:dist -- --npm-tag=alpha
   ```
 
 * __Is it okay to publish from a branch?__
@@ -37,6 +40,7 @@ Currently the site is hosted on Netlify. In order to publish the website, one of
 * __This publishing stuff is scary.  Is there any way to experiment without fear of breaking things?__
 
     * There is a confirmation prompt at the end of the `release` script.  You can abort prior to taking any remote actions, then inspect the local changes.
+    * There are also `--skip-git` and `--skip-npm` options.
     * As mentioned above, check the `release` command usage for options.
 
     ```sh
