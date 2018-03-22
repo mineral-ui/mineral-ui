@@ -39,6 +39,8 @@
     "pack-ls": "cd dist && tar -tvf $(npm pack) && rm *.tgz",
     "release": "npm run build && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
+    "sketch": "html-sketchapp --url http://0.0.0.0:8080/kitchen-sink --out-dir dist",
+    "sketch:install": "html-sketchapp install",
     "start": "webpack-dev-server --progress",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
   },
@@ -101,6 +103,7 @@
     "glamorous": "4.9.7",
     "glob": "7.1.2",
     "happo.io": "1.0.0-rc1",
+    "html-sketchapp-cli": "0.3.0",
     "html-webpack-plugin": "2.30.1",
     "husky": "0.14.3",
     "inquirer": "3.3.0",
