@@ -17,7 +17,7 @@
   "module": "./dist/es/index.js",
   "scripts": {
     "build": "npm run clean && npm run build:library && npm run build:website",
-    "build:analyze": "ANALYZE=true npm run start",
+    "build:analyze": "ANALYZE=true npm start",
     "build:icons": "npm i --prefix ./packages/mineral-ui-icons && npm run build:icons --prefix ./packages/mineral-ui-icons",
     "build:library": "./scripts/build-library.js",
     "build:package": "./scripts/build-package.js",
@@ -37,7 +37,7 @@
     "jest:react": "./scripts/jest-react.js",
     "lint": "npm run eslint",
     "pack-ls": "cd dist && tar -tvf $(npm pack) && rm *.tgz",
-    "release": "npm run build && npm test && ./scripts/release.js",
+    "release": "npm run build && npm run build:package && npm test && ./scripts/release.js",
     "release:dist": "./scripts/release.js",
     "start": "webpack-dev-server --progress",
     "test": "npm run lint && npm run flow:restart && npm run jest -- --coverage"
