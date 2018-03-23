@@ -8,9 +8,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const ANALYZE = process.env.ANALYZE;
 const isProduction = NODE_ENV === 'production';
-const isDevServer = process.argv.find(arg =>
-  arg.includes('webpack-dev-server')
-);
 const GOOGLE_TRACKING_ID = isProduction ? 'UA-107538931-1' : null;
 const licenseHeader = `/**!
  * Mineral UI
@@ -27,6 +24,7 @@ module.exports = {
     path: path.resolve('./dist/website'),
     publicPath: '/'
   },
+  mode: isProduction ? 'production' : 'development',
   module: {
     rules: [
       {
@@ -57,6 +55,12 @@ module.exports = {
     }
   },
   devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+  optimization: {
+    runtimeChunk: true,
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: (() => {
     let plugins = [
       new webpack.DefinePlugin({
@@ -77,37 +81,8 @@ module.exports = {
           context: './src/website/public',
           from: '**/*'
         }
-      ]),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        minChunks: module => {
-          return (
-            module.context && module.context.indexOf('node_modules') !== -1
-          );
-        }
-      })
+      ])
     ];
-
-    if (isProduction && !isDevServer) {
-      plugins = plugins.concat([
-        new webpack.LoaderOptionsPlugin({
-          minimize: true,
-          debug: false
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-          beautify: false,
-          mangle: {
-            screw_ie8: true,
-            keep_fnames: true
-          },
-          compress: {
-            screw_ie8: true,
-            warnings: false
-          },
-          sourceMap: true
-        })
-      ]);
-    }
 
     if (ANALYZE) {
       plugins.push(
