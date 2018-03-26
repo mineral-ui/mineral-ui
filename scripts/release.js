@@ -51,7 +51,7 @@ const npmVersionsFile = path.resolve(os.tmpdir(), '.npm-versions');
 exec(`echo "$(npm show mineral-ui versions)" > ${npmVersionsFile}`);
 const versionPreviouslyPublished = fs
   .readFileSync(npmVersionsFile, { encoding: 'utf8' })
-  .includes(version);
+  .includes(`'${version}'`);
 fs.removeSync(npmVersionsFile);
 if (versionPreviouslyPublished) {
   console.log(
