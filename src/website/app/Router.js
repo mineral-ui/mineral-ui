@@ -25,6 +25,10 @@ const AsyncHome = Loadable({
   loader: () => import('./pages/Home')
 });
 
+const AsyncKitchenSink = Loadable({
+  loader: () => import('./pages/KitchenSink')
+});
+
 const getPageHeader = (heading: string, title: string) => {
   return `${heading}
 
@@ -83,6 +87,7 @@ export default function Router({ demoRoutes }: Props) {
     <Switch>
       <Route path="/" exact component={AsyncHome} />
       {routes}
+      <Route path="/kitchen-sink" component={AsyncKitchenSink} />
       <Route
         path="/components/:componentId/:exampleId"
         render={route => {
