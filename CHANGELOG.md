@@ -1,3 +1,18 @@
+<a name="0.23.0"></a>
+# [0.23.0](https://github.com/mineral-ui/mineral-ui/compare/v0.22.0...v0.23.0) (2018-03-26)
+
+
+### Bug Fixes
+
+* **select:** Select calls onChange handler ([c49b5cd](https://github.com/mineral-ui/mineral-ui/commit/c49b5cd))
+
+
+### Features
+
+* **styles:** Add font-smoothing to componentStyleReset ([bd299b1](https://github.com/mineral-ui/mineral-ui/commit/bd299b1))
+
+
+
 <a name="0.22.0"></a>
 # [0.22.0](https://github.com/mineral-ui/mineral-ui/compare/v0.21.0...v0.22.0) (2018-03-14)
 
