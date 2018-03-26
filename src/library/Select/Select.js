@@ -435,6 +435,8 @@ export default class Select extends Component<Props, State> {
   };
 
   onSelect = (item: Item, event: SyntheticEvent<>) => {
+    const prevSelectedItem = this.getControllableValue('selectedItem');
+
     let stateToSet;
     if (!this.isControlled('selectedItem')) {
       stateToSet = {
@@ -450,18 +452,21 @@ export default class Select extends Component<Props, State> {
 
     if (stateToSet) {
       this.setState(stateToSet, () => {
-        this.onSelectActions(item, event);
+        this.onSelectActions(item, prevSelectedItem, event);
       });
     } else {
-      this.onSelectActions(item, event);
+      this.onSelectActions(item, prevSelectedItem, event);
     }
   };
 
-  onSelectActions = (item: Item, event: SyntheticEvent<>) => {
-    const selectedItem = this.getControllableValue('selectedItem');
+  onSelectActions = (
+    item: Item,
+    prevSelectedItem: Item,
+    event: SyntheticEvent<>
+  ) => {
     this.props.onSelect && this.props.onSelect(item, event);
 
-    if (selectedItem !== item) {
+    if (prevSelectedItem !== item) {
       this.onChange(item, event);
     }
 

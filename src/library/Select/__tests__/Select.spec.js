@@ -13,15 +13,18 @@ import type { Items } from '../../Menu/Menu';
 const data: Items = [
   {
     text: 'A item',
-    value: 'A'
+    value: 'A',
+    onClick: jest.fn()
   },
   {
     text: 'B item',
-    value: 'B'
+    value: 'B',
+    onClick: jest.fn()
   },
   {
     text: 'C item',
-    value: 'C'
+    value: 'C',
+    onClick: jest.fn()
   }
 ];
 
@@ -246,7 +249,9 @@ describe('Select', () => {
         [themeProvider, select] = mountSelect({
           onClose: jest.fn(),
           defaultIsOpen: true,
-          defaultHighlightedIndex: 0
+          defaultHighlightedIndex: 0,
+          onChange: jest.fn(),
+          onSelect: jest.fn()
         });
         trigger = select.find(SelectTrigger);
         triggerRoot = trigger.find('div').first();
@@ -331,6 +336,43 @@ describe('Select', () => {
             triggerRoot.simulate('keydown', { key: 'b' });
 
             assertItemAtIndexIsHighlighted(themeProvider, 1);
+          });
+        });
+      });
+
+      describe('item selection', () => {
+        beforeEach(() => {
+          [themeProvider, select] = mountSelect({
+            defaultIsOpen: true,
+            defaultSelectedItem: data[0],
+            onChange: jest.fn(),
+            onSelect: jest.fn()
+          });
+          trigger = select.find(SelectTrigger);
+          triggerRoot = trigger.find('div').first();
+        });
+
+        describe('when item is same as previous', () => {
+          it('calls appropriate event handlers', () => {
+            const item = themeProvider.find(MenuItem).at(0);
+
+            item.simulate('click');
+
+            expect(data[0].onClick).toHaveBeenCalled();
+            expect(select.props().onSelect).toHaveBeenCalled();
+            expect(select.props().onChange).not.toHaveBeenCalled();
+          });
+        });
+
+        describe('when item is different than previous', () => {
+          it('calls appropriate event handlers', () => {
+            const item = themeProvider.find(MenuItem).at(1);
+
+            item.simulate('click');
+
+            expect(data[1].onClick).toHaveBeenCalled();
+            expect(select.props().onSelect).toHaveBeenCalled();
+            expect(select.props().onChange).toHaveBeenCalled();
           });
         });
       });
