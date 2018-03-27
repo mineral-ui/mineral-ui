@@ -52,9 +52,8 @@ const pageMeta = {
 };
 
 const latestPost = {
-  title: 'Deleting 2000 Lines of JavaScript with SVG',
-  url:
-    'https://medium.com/@coldpour/deleting-2000-lines-of-javascript-with-svg-424b89c6e466'
+  title: 'Designing Systematic Colors',
+  url: 'https://uxplanet.org/designing-systematic-colors-b5d2605b15c'
 };
 
 const playgroundThemes = [
