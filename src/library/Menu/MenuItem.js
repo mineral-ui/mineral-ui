@@ -53,31 +53,22 @@ export const componentTheme = (baseTheme: Object) => ({
   MenuItemIcon_fill: baseTheme.color_theme_60,
   MenuItemIcon_margin: baseTheme.space_inset_sm,
 
-  MenuItemSecondaryText_color_text: baseTheme.color_caption,
-  MenuItemSecondaryText_fontSize: pxToEm(12),
+  MenuItemSecondaryText_color_text: baseTheme.color_mouse,
+  MenuItemSecondaryText_fontSize: baseTheme.fontSize_mouse,
 
   ...baseTheme
 });
 
 // These styles are based off of Button, with significant changes
 const styles = {
-  content: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
-
-    const fontSize = theme.MenuItemContent_fontSize;
-    const paddingBottom = getNormalizedValue(pxToEm(4), fontSize);
-    const paddingTop = getNormalizedValue(pxToEm(3), fontSize);
-
-    return {
-      display: 'flex',
-      flex: '1 1 auto',
-      flexWrap: 'wrap',
-      fontSize,
-      justifyContent: 'space-between',
-      padding: `${paddingTop} 0 ${paddingBottom}`,
-      whiteSpace: 'normal',
-      wordBreak: 'break-all'
-    };
+  content: {
+    display: 'flex',
+    flex: '1 1 auto',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    padding: `${pxToEm(3)} 0 ${pxToEm(4)}`,
+    whiteSpace: 'normal',
+    wordBreak: 'break-all'
   },
   inner: {
     display: 'flex',
@@ -154,27 +145,25 @@ const styles = {
   secondaryText: (props) => {
     let theme = componentTheme(props.theme);
 
+    const fontSize = theme.MenuItemSecondaryText_fontSize;
+
     return {
       color: theme.MenuItemSecondaryText_color_text,
-      fontSize: theme.MenuItemSecondaryText_fontSize,
+      fontSize,
       // The regular text fontSize is larger than that of the secondary text.
       // This magic number (optically) re-aligns both sets of text vertically.
-      paddingTop: getNormalizedValue(
-        pxToEm(3),
-        theme.MenuItemSecondaryText_fontSize
-      ),
+      paddingTop: getNormalizedValue(pxToEm(2), fontSize),
       wordBreak: 'break-word'
     };
   },
   text: (props) => {
     let theme = componentTheme(props.theme);
 
-    const margin = getNormalizedValue(
-      theme.space_inline_sm,
-      theme.MenuItemContent_fontSize
-    );
+    const fontSize = theme.MenuItemContent_fontSize;
+    const margin = getNormalizedValue(theme.space_inline_sm, fontSize);
 
     return {
+      fontSize,
       marginLeft: theme.direction === 'rtl' && margin,
       marginRight: theme.direction === 'ltr' && margin,
       wordBreak: 'break-word'

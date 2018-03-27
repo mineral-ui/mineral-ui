@@ -23,9 +23,9 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  CardTitle_color: baseTheme.color_gray_80,
+  CardTitle_color: baseTheme.color_h4,
   CardTitle_fontSize: baseTheme.fontSize_h4,
-  CardTitle_fontWeight: baseTheme.fontWeight_bold,
+  CardTitle_fontWeight: baseTheme.fontWeight_h4,
 
   CardTitleAvatar_margin: baseTheme.space_inline_sm,
   CardTitleAvatarSize: baseTheme.size_small,
@@ -33,10 +33,11 @@ export const componentTheme = (baseTheme: Object) => ({
 
   CardTitleIcon_margin: baseTheme.space_inline_sm,
 
+  CardTitleSecondaryText_color: baseTheme.color_mouse,
   CardTitleSecondaryText_fontSize: baseTheme.fontSize_mouse,
   CardTitleSecondaryText_fontWeight: baseTheme.fontWeight_regular,
 
-  CardSubtitle_color: baseTheme.color_gray_80,
+  CardSubtitle_color: baseTheme.color_mouse,
   CardSubtitle_fontSize: baseTheme.fontSize_mouse,
   CardSubtitle_fontWeight: baseTheme.fontWeight_regular,
   CardSubtitle_marginTop: baseTheme.space_stack_sm,
@@ -72,6 +73,7 @@ const styles = {
     const fontSize = theme.CardTitleSecondaryText_fontSize;
 
     return {
+      color: theme.CardTitleSecondaryText_color,
       flex: '0 0 auto',
       fontSize,
       fontWeight: theme.CardTitleSecondaryText_fontWeight,

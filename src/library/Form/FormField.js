@@ -37,20 +37,23 @@ type Props = {
 
 const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 
+// [1] This deviates from h6 because it must look right when used both within
+//     and without a FormFieldset
 export const componentTheme = (baseTheme: Object) => ({
-  FormFieldCaption_color_text: baseTheme.color_gray_80,
+  FormFieldCaption_color_text: baseTheme.color_mouse,
   FormFieldCaption_fontSize: baseTheme.fontSize_mouse,
   FormFieldCaption_marginTop: baseTheme.space_stack_xxs,
   FormFieldCaption_marginTop_isGroup: baseTheme.space_stack_sm,
 
-  FormFieldLabel_color_text: baseTheme.color_gray_80,
-  FormFieldLabel_fontSize: baseTheme.fontSize_ui,
-  FormFieldLabel_fontWeight: baseTheme.fontWeight_semiBold,
+  FormFieldLabel_color_text: baseTheme.color_h6,
+  FormFieldLabel_fontSize: baseTheme.fontSize_h6,
+  FormFieldLabel_fontWeight: baseTheme.fontWeight_semiBold, // [1]
   FormFieldLabel_marginBottom: baseTheme.space_stack_sm,
 
   FormFieldSecondaryText_fontSize: baseTheme.fontSize_mouse,
-  FormFieldSecondaryText_color_text: baseTheme.color_gray_80,
+  FormFieldSecondaryText_color_text: baseTheme.color_mouse,
   FormFieldSecondaryText_color_text_required: baseTheme.color_text_danger,
+  FormFieldSecondaryText_fontWeight: baseTheme.fontWeight_regular,
 
   ...baseTheme
 });
@@ -100,7 +103,8 @@ const styles = {
       color: secondaryText
         ? theme.FormFieldSecondaryText_color_text
         : theme.FormFieldSecondaryText_color_text_required,
-      fontSize: theme.FormFieldSecondaryText_fontSize
+      fontSize: theme.FormFieldSecondaryText_fontSize,
+      fontWeight: theme.FormFieldSecondaryText_fontWeight
     };
   }
 };
