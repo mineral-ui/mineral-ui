@@ -147,10 +147,8 @@ const svgo = new SVGO({
 });
 
 function optimizeSvg(componentName, fileContent) {
-  return new Promise((resolve, reject) => {
-    svgo.optimize(fileContent, ({ data: optimizedContent, error: err }) => {
-      if (err) return reject(`${componentName}: ${err}`);
-
+  return svgo.optimize(fileContent).then(
+    ({ data: optimizedContent }) => {
       if (DEBUG) {
         // Gather optimization metrics for logging
         const bytesSaved = fileContent.length - optimizedContent.length;
@@ -163,9 +161,12 @@ function optimizeSvg(componentName, fileContent) {
         );
       }
 
-      resolve(optimizedContent);
-    });
-  });
+      return optimizedContent;
+    },
+    err => {
+      console.error(`${componentName}: ${err}`);
+    }
+  );
 }
 
 async function buildIcons() {
