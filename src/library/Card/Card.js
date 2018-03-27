@@ -48,7 +48,7 @@ const Root = createStyledComponent(
   }
 );
 
-const onKeyDown = (props: Props, event: SyntheticEvent<>) => {
+const onKeyDown = (props: Props, event: SyntheticKeyboardEvent<>) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();
     props.onClick && props.onClick(event);

@@ -209,7 +209,7 @@ const Text = createStyledComponent('span', styles.text);
 
 const onKeyDown = (
   onClick: (event: SyntheticEvent<>) => void,
-  event: SyntheticEvent<>
+  event: SyntheticKeyboardEvent<>
 ) => {
   if (event.key === 'Enter' || event.key === ' ') {
     event.preventDefault();

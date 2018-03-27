@@ -154,7 +154,8 @@ const ToggleButton = createStyledComponent(Button, styles.toggleButton);
  */
 export default class CardFooter extends Component<Props, State> {
   static defaultProps = {
-    triggerTitle: isOpen => (isOpen ? 'Collapse contents' : 'Expand contents')
+    triggerTitle: (isOpen: boolean) =>
+      isOpen ? 'Collapse contents' : 'Expand contents'
   };
 
   state = {
