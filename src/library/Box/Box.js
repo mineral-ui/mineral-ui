@@ -11,9 +11,9 @@ type Props = {
   /** Rendered root HTML element */
   element?: string,
   /** Sets the box height. [[Responsive-capable]](#responsive) */
-  height?: number | string | Array<number | string>,
+  height?: number | string | Array<number | string | null>,
   /** Renders Box as an inline-block [[Responsive-capable]](#responsive) */
-  inline?: boolean | Array<boolean>,
+  inline?: boolean | Array<boolean | null>,
   /** Applies a margin on all sides [[Responsive-capable]](#responsive) */
   margin?:
     | 'xxs'
@@ -25,7 +25,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies a bottom margin [[Responsive-capable]](#responsive) */
   marginBottom?:
     | 'xxs'
@@ -37,7 +48,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /**
    * Applies a right margin when the language is left-to-right and left margin
    * [for RTL languages](#rtl) [[Responsive-capable]](#responsive)
@@ -52,7 +74,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies left & right margins [[Responsive-capable]](#responsive) */
   marginHorizontal?:
     | 'xxs'
@@ -64,7 +97,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies a left margin [[Responsive-capable]](#responsive) */
   marginLeft?:
     | 'xxs'
@@ -76,7 +120,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies a right margin [[Responsive-capable]](#responsive) */
   marginRight?:
     | 'xxs'
@@ -88,7 +143,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /**
    * Applies a left margin when the language is left-to-right and right margin
    * [for RTL languages](#rtl) [[Responsive-capable]](#responsive)
@@ -103,7 +169,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies a top margin [[Responsive-capable]](#responsive) */
   marginTop?:
     | 'xxs'
@@ -115,7 +192,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /**
    * Applies top & bottom margins [[Responsive-capable]](#responsive)
    */
@@ -129,7 +217,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies padding to all sides [[Responsive-capable]](#responsive) */
   padding?:
     | 'sm'
@@ -137,7 +236,7 @@ type Props = {
     | 'lg'
     | number
     | string
-    | Array<'sm' | 'md' | 'lg' | number | string>,
+    | Array<'sm' | 'md' | 'lg' | number | string | null>,
   /** Applies bottom padding [[Responsive-capable]](#responsive) */
   paddingBottom?:
     | 'xxs'
@@ -149,7 +248,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /**
    * Applies right padding when the language is left-to-right and left padding
    * [for RTL languages](#rtl) [[Responsive-capable]](#responsive)
@@ -164,7 +274,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies left & right padding [[Responsive-capable]](#responsive) */
   paddingHorizontal?:
     | 'xxs'
@@ -176,7 +297,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies left padding [[Responsive-capable]](#responsive) */
   paddingLeft?:
     | 'xxs'
@@ -188,7 +320,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies right padding [[Responsive-capable]](#responsive) */
   paddingRight?:
     | 'xxs'
@@ -200,7 +343,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /**
    * Applies left padding when the language is left-to-right and right padding
    * [for RTL languages](#rtl) [[Responsive-capable]](#responsive)
@@ -215,7 +369,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies bottom padding [[Responsive-capable]](#responsive) */
   paddingTop?:
     | 'xxs'
@@ -227,7 +392,18 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Applies top & bottom margins [[Responsive-capable]](#responsive) */
   paddingVertical?:
     | 'xxs'
@@ -239,9 +415,20 @@ type Props = {
     | 'xxl'
     | number
     | string
-    | Array<'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | number | string>,
+    | Array<
+        | 'xxs'
+        | 'xs'
+        | 'sm'
+        | 'md'
+        | 'lg'
+        | 'xl'
+        | 'xxl'
+        | number
+        | string
+        | null
+      >,
   /** Sets the box width [[Responsive-capable]](#responsive) */
-  width?: number | string | Array<number | string>
+  width?: number | string | Array<number | string | null>
 };
 
 type SpacingStyles = {

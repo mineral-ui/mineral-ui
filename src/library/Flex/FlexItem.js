@@ -10,7 +10,7 @@ type Props = {
     | 'end'
     | 'center'
     | 'stretch'
-    | Array<'start' | 'end' | 'center' | 'stretch'>,
+    | Array<'start' | 'end' | 'center' | 'stretch' | null>,
   /**
    * Media query (min-width) breakpoints along which to apply props marked
    * "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;"
@@ -20,12 +20,12 @@ type Props = {
    * Grow factor along the main axis ([see example](#grow))
    * [[Responsive-capable]](#responsive)
    */
-  grow?: number | Array<number>,
+  grow?: number | Array<number | null>,
   /**
    * Shrink factor along the main axis ([see example](#shrink))
    * [[Responsive-capable]](#responsive)
    */
-  shrink?: number | Array<number>
+  shrink?: number | Array<number | null>
 };
 
 type Values = boolean | null | number | string;

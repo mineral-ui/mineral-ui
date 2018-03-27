@@ -14,7 +14,7 @@ type Props = {
    * Direction of flow of items along the main axis
    * [[Responsive-capable]](#responsive)
    */
-  direction?: 'column' | 'row' | Array<'column' | 'row'>,
+  direction?: 'column' | 'row' | Array<'column' | 'row' | null>,
   /** @Private From Flex; filtered out */
   justifyContent?: any,
   /** Determines which side stretches to fill the available width */

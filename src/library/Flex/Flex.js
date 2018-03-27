@@ -11,7 +11,7 @@ type Props = {
     | 'end'
     | 'center'
     | 'stretch'
-    | Array<'start' | 'end' | 'center' | 'stretch'>,
+    | Array<'start' | 'end' | 'center' | 'stretch' | null>,
   /**
    * Media query (min-width) breakpoints along which to apply props marked
    * "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;"
@@ -28,7 +28,7 @@ type Props = {
     | 'column-reverse'
     | 'row'
     | 'row-reverse'
-    | Array<'column' | 'column-reverse' | 'row' | 'row-reverse'>,
+    | Array<'column' | 'column-reverse' | 'row' | 'row-reverse' | null>,
   /** Size of gap between children */
   gutterWidth?:
     | 'xxs'
@@ -48,12 +48,14 @@ type Props = {
     | 'around'
     | 'between'
     | 'evenly'
-    | Array<'start' | 'end' | 'center' | 'around' | 'between' | 'evenly'>,
+    | Array<
+        'start' | 'end' | 'center' | 'around' | 'between' | 'evenly' | null
+      >,
   /**
    * Determines if items can wrap along main axis
    * [[Responsive-capable]](#responsive)
    */
-  wrap?: boolean | Array<boolean>
+  wrap?: boolean | Array<boolean | null>
 };
 
 type Values = boolean | null | number | string;
