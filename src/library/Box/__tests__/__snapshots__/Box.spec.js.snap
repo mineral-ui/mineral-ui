@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box demo examples basic 1`] = `
-.glamor-12::after,
-[data-glamor-12]::after,
-.glamor-12[data-simulate-after],
-[data-glamor-12][data-simulate-after] {
+.css-0,
+[data-css-1]::after,
+.css-1[data-simulate-after],
+[data-css-1][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-12 > *:not(:last-child),
-[data-glamor-12] > *:not(:last-child) {
+.css-1 > *:not(:last-child),
+[data-css-1] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-4,
+[data-css-4] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -34,8 +34,8 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -59,17 +59,17 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-4,
-[data-glamor-4] {
+.css-6,
+[data-css-6] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -87,10 +87,10 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-4::before,
-[data-glamor-4]::before,
-.glamor-4[data-simulate-before],
-[data-glamor-4][data-simulate-before] {
+.css-6::before,
+[data-css-6]::before,
+.css-6[data-simulate-before],
+[data-css-6][data-simulate-before] {
   border-color: rgba(194,219,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -102,8 +102,8 @@ exports[`Box demo examples basic 1`] = `
   top: 0;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-10,
+[data-css-10] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -131,19 +131,19 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-10 *,
+[data-css-10] *,
+.css-10 *::before,
+[data-css-10] *::before,
+.css-10 *::after,
+[data-css-10] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3::before,
-[data-glamor-3]::before,
-.glamor-3[data-simulate-before],
-[data-glamor-3][data-simulate-before] {
+.css-10::before,
+[data-css-10]::before,
+.css-10[data-simulate-before],
+[data-css-10][data-simulate-before] {
   border-color: rgba(194,219,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -155,8 +155,8 @@ exports[`Box demo examples basic 1`] = `
   top: 0;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-14,
+[data-css-14] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -181,17 +181,17 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.css-14 *,
+[data-css-14] *,
+.css-14 *::before,
+[data-css-14] *::before,
+.css-14 *::after,
+[data-css-14] *::after {
   box-sizing: inherit;
 }
 
-.glamor-9,
-[data-glamor-9] {
+.css-15,
+[data-css-15] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -218,131 +218,109 @@ exports[`Box demo examples basic 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-9 *,
-[data-glamor-9] *,
-.glamor-9 *::before,
-[data-glamor-9] *::before,
-.glamor-9 *::after,
-[data-glamor-9] *::after {
+.css-15 *,
+[data-css-15] *,
+.css-15 *::before,
+[data-css-15] *::before,
+.css-15 *::after,
+[data-css-15] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-          }
-        }
+<glamorous(div)>
+  <div
+    className="css-1"
+  >
+    <glamorous(Box)>
+      <Box
+        className="css-4"
+        element="div"
       >
-        <LivePreview>
+        <glamorous(div)
+          className="css-4"
+          element="div"
+        >
           <div
-            className="react-live-preview"
+            className="css-5"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-12"
-              >
-                <glamorous(Box)>
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        A
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  padding="lg"
-                >
-                  <Box
-                    className="glamor-4"
-                    element="div"
-                    padding="lg"
-                  >
-                    <glamorous(div)
-                      className="glamor-4"
-                      element="div"
-                      padding="lg"
-                    >
-                      <div
-                        className="glamor-3"
-                      >
-                        B
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginRight="50%"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginRight="50%"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginRight="50%"
-                    >
-                      <div
-                        className="glamor-6"
-                      >
-                        C
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginHorizontal="auto"
-                  width="10em"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginHorizontal="auto"
-                    width="10em"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginHorizontal="auto"
-                      width="10em"
-                    >
-                      <div
-                        className="glamor-9"
-                      >
-                        D
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-              </div>
-            </glamorous(div)>
+            A
           </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      padding="lg"
+    >
+      <Box
+        className="css-6"
+        element="div"
+        padding="lg"
+      >
+        <glamorous(div)
+          className="css-6"
+          element="div"
+          padding="lg"
+        >
+          <div
+            className="css-10"
+          >
+            B
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginRight="50%"
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginRight="50%"
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginRight="50%"
+        >
+          <div
+            className="css-14"
+          >
+            C
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginHorizontal="auto"
+      width="10em"
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginHorizontal="auto"
+        width="10em"
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginHorizontal="auto"
+          width="10em"
+        >
+          <div
+            className="css-15"
+          >
+            D
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+  </div>
+</glamorous(div)>
 `;
 
 exports[`Box demo examples height 1`] = `
-.glamor-1,
-[data-glamor-1] {
+.css-0,
+[data-css-0] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -360,34 +338,34 @@ exports[`Box demo examples height 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-9::after,
-[data-glamor-9]::after,
-.glamor-9[data-simulate-after],
-[data-glamor-9][data-simulate-after] {
+.css-1,
+[data-css-2]::after,
+.css-2[data-simulate-after],
+[data-css-2][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-9 > *:not(:last-child),
-[data-glamor-9] > *:not(:last-child) {
+.css-2 > *:not(:last-child),
+[data-css-2] > *:not(:last-child) {
   margin-bottom: 1rem;
   margin-right: 5%;
 }
 
-.glamor-9 > *,
-[data-glamor-9] > * {
+.css-2 > *,
+[data-css-2] > * {
   float: left;
   width: 30%;
 }
 
-.glamor-9 > *[class],
-[data-glamor-9] > *[class] {
+.css-2 > *[class],
+[data-css-2] > *[class] {
   margin-bottom: 0;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -412,17 +390,17 @@ exports[`Box demo examples height 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-7,
+[data-css-7] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -447,17 +425,17 @@ exports[`Box demo examples height 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-7 *,
+[data-css-7] *,
+.css-7 *::before,
+[data-css-7] *::before,
+.css-7 *::after,
+[data-css-7] *::after {
   box-sizing: inherit;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-8,
+[data-css-8] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -482,130 +460,108 @@ exports[`Box demo examples height 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.css-8 *,
+[data-css-8] *,
+.css-8 *::before,
+[data-css-8] *::before,
+.css-8 *::after,
+[data-css-8] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-          }
-        }
+<glamorous(glamorous(div))>
+  <div
+    className="css-2"
+  >
+    <glamorous(Box)
+      height="10em"
+    >
+      <Box
+        className="css-0"
+        element="div"
+        height="10em"
       >
-        <LivePreview>
+        <glamorous(div)
+          className="css-0"
+          element="div"
+          height="10em"
+        >
           <div
-            className="react-live-preview"
+            className="css-6"
           >
-            <glamorous(glamorous(div))>
-              <div
-                className="glamor-9"
-              >
-                <glamorous(Box)
-                  height="10em"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    height="10em"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      height="10em"
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        A
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  height={100}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    height={100}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      height={100}
-                    >
-                      <div
-                        className="glamor-3"
-                      >
-                        B
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  height={0.3333333333333333}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    height={0.3333333333333333}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      height={0.3333333333333333}
-                    >
-                      <div
-                        className="glamor-6"
-                      >
-                        C
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-              </div>
-            </glamorous(glamorous(div))>
+            A
           </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      height={100}
+    >
+      <Box
+        className="css-0"
+        element="div"
+        height={100}
+      >
+        <glamorous(div)
+          className="css-0"
+          element="div"
+          height={100}
+        >
+          <div
+            className="css-7"
+          >
+            B
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      height={0.3333333333333333}
+    >
+      <Box
+        className="css-0"
+        element="div"
+        height={0.3333333333333333}
+      >
+        <glamorous(div)
+          className="css-0"
+          element="div"
+          height={0.3333333333333333}
+        >
+          <div
+            className="css-8"
+          >
+            C
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+  </div>
+</glamorous(glamorous(div))>
 `;
 
 exports[`Box demo examples inline 1`] = `
-.glamor-9::after,
-[data-glamor-9]::after,
-.glamor-9[data-simulate-after],
-[data-glamor-9][data-simulate-after] {
+.css-0,
+[data-css-1]::after,
+.css-1[data-simulate-after],
+[data-css-1][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-9 > *:not(:last-child),
-[data-glamor-9] > *:not(:last-child) {
+.css-1 > *:not(:last-child),
+[data-css-1] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-9 > *[class],
-[data-glamor-9] > *[class] {
+.css-1 > *[class],
+[data-css-1] > *[class] {
   margin-bottom: 0;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-5,
+[data-css-5] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -623,8 +579,8 @@ exports[`Box demo examples inline 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -648,17 +604,17 @@ exports[`Box demo examples inline 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-7,
+[data-css-7] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -683,114 +639,92 @@ exports[`Box demo examples inline 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-7 *,
+[data-css-7] *,
+.css-7 *::before,
+[data-css-7] *::before,
+.css-7 *::after,
+[data-css-7] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-          }
-        }
+<glamorous(glamorous(div))>
+  <div
+    className="css-1"
+  >
+    <glamorous(Box)
+      inline={true}
+    >
+      <Box
+        className="css-5"
+        element="div"
+        inline={true}
       >
-        <LivePreview>
+        <glamorous(div)
+          className="css-5"
+          element="div"
+          inline={true}
+        >
           <div
-            className="react-live-preview"
+            className="css-6"
           >
-            <glamorous(glamorous(div))>
-              <div
-                className="glamor-9"
-              >
-                <glamorous(Box)
-                  inline={true}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    inline={true}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      inline={true}
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        A
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  inline={true}
-                  width={100}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    inline={true}
-                    width={100}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      inline={true}
-                      width={100}
-                    >
-                      <div
-                        className="glamor-3"
-                      >
-                        B
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  inline={true}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    inline={true}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      inline={true}
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        C
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-              </div>
-            </glamorous(glamorous(div))>
+            A
           </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      inline={true}
+      width={100}
+    >
+      <Box
+        className="css-5"
+        element="div"
+        inline={true}
+        width={100}
+      >
+        <glamorous(div)
+          className="css-5"
+          element="div"
+          inline={true}
+          width={100}
+        >
+          <div
+            className="css-7"
+          >
+            B
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      inline={true}
+    >
+      <Box
+        className="css-5"
+        element="div"
+        inline={true}
+      >
+        <glamorous(div)
+          className="css-5"
+          element="div"
+          inline={true}
+        >
+          <div
+            className="css-6"
+          >
+            C
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+  </div>
+</glamorous(glamorous(div))>
 `;
 
 exports[`Box demo examples precedence 1`] = `
-.glamor-1,
-[data-glamor-1] {
+.css-0,
+[data-css-0] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -808,8 +742,8 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-1,
+[data-css-1] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -837,17 +771,17 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-2,
+[data-css-2] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -875,17 +809,17 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-2 *,
+[data-css-2] *,
+.css-2 *::before,
+[data-css-2] *::before,
+.css-2 *::after,
+[data-css-2] *::after {
   box-sizing: inherit;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-3,
+[data-css-3] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -913,17 +847,17 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.css-3 *,
+[data-css-3] *,
+.css-3 *::before,
+[data-css-3] *::before,
+.css-3 *::after,
+[data-css-3] *::after {
   box-sizing: inherit;
 }
 
-.glamor-9,
-[data-glamor-9] {
+.css-4,
+[data-css-4] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -951,17 +885,17 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-9 *,
-[data-glamor-9] *,
-.glamor-9 *::before,
-[data-glamor-9] *::before,
-.glamor-9 *::after,
-[data-glamor-9] *::after {
+.css-4 *,
+[data-css-4] *,
+.css-4 *::before,
+[data-css-4] *::before,
+.css-4 *::after,
+[data-css-4] *::after {
   box-sizing: inherit;
 }
 
-.glamor-12,
-[data-glamor-12] {
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -989,17 +923,17 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-12 *,
-[data-glamor-12] *,
-.glamor-12 *::before,
-[data-glamor-12] *::before,
-.glamor-12 *::after,
-[data-glamor-12] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-15,
-[data-glamor-15] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1027,211 +961,190 @@ exports[`Box demo examples precedence 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-15 *,
-[data-glamor-15] *,
-.glamor-15 *::before,
-[data-glamor-15] *::before,
-.glamor-15 *::after,
-[data-glamor-15] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-          }
-        }
+<div>
+  <glamorous(Box)
+    margin={10}
+    marginHorizontal={20}
+    marginStart={30}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginHorizontal={20}
+      marginStart={30}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginHorizontal={20}
+        marginStart={30}
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <div>
-              <glamorous(Box)
-                margin={10}
-                marginHorizontal={20}
-                marginStart={30}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginHorizontal={20}
-                  marginStart={30}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginHorizontal={20}
-                    marginStart={30}
-                  >
-                    <div
-                      className="glamor-0"
-                    >
-                      10 20 10 30
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-              <glamorous(Box)
-                margin={10}
-                marginEnd={30}
-                marginHorizontal={20}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginEnd={30}
-                  marginHorizontal={20}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginEnd={30}
-                    marginHorizontal={20}
-                  >
-                    <div
-                      className="glamor-3"
-                    >
-                      10 30 10 20
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-              <glamorous(Box)
-                margin={10}
-                marginHorizontal={20}
-                marginLeft={40}
-                marginStart={30}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginHorizontal={20}
-                  marginLeft={40}
-                  marginStart={30}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginHorizontal={20}
-                    marginLeft={40}
-                    marginStart={30}
-                  >
-                    <div
-                      className="glamor-6"
-                    >
-                      10 20 10 40
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-              <glamorous(Box)
-                margin={10}
-                marginEnd={30}
-                marginHorizontal={20}
-                marginRight={40}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginEnd={30}
-                  marginHorizontal={20}
-                  marginRight={40}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginEnd={30}
-                    marginHorizontal={20}
-                    marginRight={40}
-                  >
-                    <div
-                      className="glamor-9"
-                    >
-                      10 40 10 20
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-              <glamorous(Box)
-                margin={10}
-                marginTop={40}
-                marginVertical={20}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginTop={40}
-                  marginVertical={20}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginTop={40}
-                    marginVertical={20}
-                  >
-                    <div
-                      className="glamor-12"
-                    >
-                      40 10 20 10
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-              <glamorous(Box)
-                margin={10}
-                marginBottom={40}
-                marginVertical={20}
-              >
-                <Box
-                  className="glamor-1"
-                  element="div"
-                  margin={10}
-                  marginBottom={40}
-                  marginVertical={20}
-                >
-                  <glamorous(div)
-                    className="glamor-1"
-                    element="div"
-                    margin={10}
-                    marginBottom={40}
-                    marginVertical={20}
-                  >
-                    <div
-                      className="glamor-15"
-                    >
-                      20 10 40 10
-                    </div>
-                  </glamorous(div)>
-                </Box>
-              </glamorous(Box)>
-            </div>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <div
+          className="css-1"
+        >
+          10 20 10 30
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+  <glamorous(Box)
+    margin={10}
+    marginEnd={30}
+    marginHorizontal={20}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginEnd={30}
+      marginHorizontal={20}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginEnd={30}
+        marginHorizontal={20}
+      >
+        <div
+          className="css-2"
+        >
+          10 30 10 20
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+  <glamorous(Box)
+    margin={10}
+    marginHorizontal={20}
+    marginLeft={40}
+    marginStart={30}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginHorizontal={20}
+      marginLeft={40}
+      marginStart={30}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginHorizontal={20}
+        marginLeft={40}
+        marginStart={30}
+      >
+        <div
+          className="css-3"
+        >
+          10 20 10 40
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+  <glamorous(Box)
+    margin={10}
+    marginEnd={30}
+    marginHorizontal={20}
+    marginRight={40}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginEnd={30}
+      marginHorizontal={20}
+      marginRight={40}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginEnd={30}
+        marginHorizontal={20}
+        marginRight={40}
+      >
+        <div
+          className="css-4"
+        >
+          10 40 10 20
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+  <glamorous(Box)
+    margin={10}
+    marginTop={40}
+    marginVertical={20}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginTop={40}
+      marginVertical={20}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginTop={40}
+        marginVertical={20}
+      >
+        <div
+          className="css-5"
+        >
+          40 10 20 10
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+  <glamorous(Box)
+    margin={10}
+    marginBottom={40}
+    marginVertical={20}
+  >
+    <Box
+      className="css-0"
+      element="div"
+      margin={10}
+      marginBottom={40}
+      marginVertical={20}
+    >
+      <glamorous(div)
+        className="css-0"
+        element="div"
+        margin={10}
+        marginBottom={40}
+        marginVertical={20}
+      >
+        <div
+          className="css-6"
+        >
+          20 10 40 10
+        </div>
+      </glamorous(div)>
+    </Box>
+  </glamorous(Box)>
+</div>
 `;
 
 exports[`Box demo examples responsive 1`] = `
-.glamor-1,
-[data-glamor-1] {
+.css-0,
+[data-css-0] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -1249,8 +1162,8 @@ exports[`Box demo examples responsive 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-1,
+[data-css-1] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1275,126 +1188,105 @@ exports[`Box demo examples responsive 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
   box-sizing: inherit;
 }
 
 @media (min-width: 800px) and (max-width: 1023px) {
-  .glamor-0,
-  [data-glamor-0] {
+  .css-1,
+  [data-css-1] {
     margin-right: 100px;
   }
 }
 
 @media (min-width: 1024px) {
-  .glamor-0,
-  [data-glamor-0] {
+  .css-1,
+  [data-css-1] {
     margin-right: 150px;
   }
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
+<glamorous(Box)
+  breakpoints={
+    Array [
+      800,
+      "wide",
+    ]
+  }
+  marginRight={
+    Array [
+      50,
+      100,
+      150,
+    ]
+  }
+>
+  <Box
+    breakpoints={
+      Array [
+        800,
+        "wide",
+      ]
+    }
+    className="css-0"
+    element="div"
+    marginRight={
+      Array [
+        50,
+        100,
+        150,
+      ]
+    }
+  >
+    <glamorous(div)
+      breakpoints={
+        Array [
+          800,
+          "wide",
+        ]
+      }
+      className="css-0"
+      element="div"
+      marginRight={
+        Array [
+          50,
+          100,
+          150,
+        ]
+      }
+    >
       <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-          }
-        }
+        className="css-1"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <glamorous(Box)
-              breakpoints={
-                Array [
-                  800,
-                  "wide",
-                ]
-              }
-              marginRight={
-                Array [
-                  50,
-                  100,
-                  150,
-                ]
-              }
-            >
-              <Box
-                breakpoints={
-                  Array [
-                    800,
-                    "wide",
-                  ]
-                }
-                className="glamor-1"
-                element="div"
-                marginRight={
-                  Array [
-                    50,
-                    100,
-                    150,
-                  ]
-                }
-              >
-                <glamorous(div)
-                  breakpoints={
-                    Array [
-                      800,
-                      "wide",
-                    ]
-                  }
-                  className="glamor-1"
-                  element="div"
-                  marginRight={
-                    Array [
-                      50,
-                      100,
-                      150,
-                    ]
-                  }
-                >
-                  <div
-                    className="glamor-0"
-                  >
-                    A
-                  </div>
-                </glamorous(div)>
-              </Box>
-            </glamorous(Box)>
-          </div>
-        </LivePreview>
+        A
       </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+    </glamorous(div)>
+  </Box>
+</glamorous(Box)>
 `;
 
 exports[`Box demo examples rtl 1`] = `
-.glamor-9::after,
-[data-glamor-9]::after,
-.glamor-9[data-simulate-after],
-[data-glamor-9][data-simulate-after] {
+.css-0,
+[data-css-1]::after,
+.css-1[data-simulate-after],
+[data-css-1][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-9 > *:not(:last-child),
-[data-glamor-9] > *:not(:last-child) {
+.css-1 > *:not(:last-child),
+[data-css-1] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-4,
+[data-css-4] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -1412,8 +1304,8 @@ exports[`Box demo examples rtl 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1438,17 +1330,17 @@ exports[`Box demo examples rtl 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1473,134 +1365,111 @@ exports[`Box demo examples rtl 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
+<div
+  dir="rtl"
+>
   <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-            "ThemeProvider": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+    <ThemeProvider>
+      <glamorous(div)>
+        <div
+          className="css-1"
+        >
+          <glamorous(Box)
+            marginLeft="lg"
           >
-            <div
-              dir="rtl"
+            <Box
+              className="css-4"
+              element="div"
+              marginLeft="lg"
             >
-              <ThemeProvider>
-                <ThemeProvider>
-                  <glamorous(div)>
-                    <div
-                      className="glamor-9"
-                    >
-                      <glamorous(Box)
-                        marginLeft="lg"
-                      >
-                        <Box
-                          className="glamor-1"
-                          element="div"
-                          marginLeft="lg"
-                        >
-                          <glamorous(div)
-                            className="glamor-1"
-                            element="div"
-                            marginLeft="lg"
-                          >
-                            <div
-                              className="glamor-0"
-                            >
-                              اليسار
-                            </div>
-                          </glamorous(div)>
-                        </Box>
-                      </glamorous(Box)>
-                      <glamorous(Box)
-                        marginStart="lg"
-                      >
-                        <Box
-                          className="glamor-1"
-                          element="div"
-                          marginStart="lg"
-                        >
-                          <glamorous(div)
-                            className="glamor-1"
-                            element="div"
-                            marginStart="lg"
-                          >
-                            <div
-                              className="glamor-3"
-                            >
-                              بداية
-                            </div>
-                          </glamorous(div)>
-                        </Box>
-                      </glamorous(Box)>
-                      <glamorous(Box)
-                        marginEnd="lg"
-                      >
-                        <Box
-                          className="glamor-1"
-                          element="div"
-                          marginEnd="lg"
-                        >
-                          <glamorous(div)
-                            className="glamor-1"
-                            element="div"
-                            marginEnd="lg"
-                          >
-                            <div
-                              className="glamor-0"
-                            >
-                              النهاية
-                            </div>
-                          </glamorous(div)>
-                        </Box>
-                      </glamorous(Box)>
-                    </div>
-                  </glamorous(div)>
-                </ThemeProvider>
-              </ThemeProvider>
-            </div>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
+              <glamorous(div)
+                className="css-4"
+                element="div"
+                marginLeft="lg"
+              >
+                <div
+                  className="css-5"
+                >
+                  اليسار
+                </div>
+              </glamorous(div)>
+            </Box>
+          </glamorous(Box)>
+          <glamorous(Box)
+            marginStart="lg"
+          >
+            <Box
+              className="css-4"
+              element="div"
+              marginStart="lg"
+            >
+              <glamorous(div)
+                className="css-4"
+                element="div"
+                marginStart="lg"
+              >
+                <div
+                  className="css-6"
+                >
+                  بداية
+                </div>
+              </glamorous(div)>
+            </Box>
+          </glamorous(Box)>
+          <glamorous(Box)
+            marginEnd="lg"
+          >
+            <Box
+              className="css-4"
+              element="div"
+              marginEnd="lg"
+            >
+              <glamorous(div)
+                className="css-4"
+                element="div"
+                marginEnd="lg"
+              >
+                <div
+                  className="css-5"
+                >
+                  النهاية
+                </div>
+              </glamorous(div)>
+            </Box>
+          </glamorous(Box)>
+        </div>
+      </glamorous(div)>
+    </ThemeProvider>
   </ThemeProvider>
-</ThemeProvider>
+</div>
 `;
 
 exports[`Box demo examples spacing 1`] = `
-.glamor-15::after,
-[data-glamor-15]::after,
-.glamor-15[data-simulate-after],
-[data-glamor-15][data-simulate-after] {
+.css-0,
+[data-css-1]::after,
+.css-1[data-simulate-after],
+[data-css-1][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-15 > *:not(:last-child),
-[data-glamor-15] > *:not(:last-child) {
+.css-1 > *:not(:last-child),
+[data-css-1] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-4,
+[data-css-4] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -1618,8 +1487,8 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1643,17 +1512,17 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1678,17 +1547,17 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-7,
+[data-css-7] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1713,17 +1582,17 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.css-7 *,
+[data-css-7] *,
+.css-7 *::before,
+[data-css-7] *::before,
+.css-7 *::after,
+[data-css-7] *::after {
   box-sizing: inherit;
 }
 
-.glamor-9,
-[data-glamor-9] {
+.css-8,
+[data-css-8] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1748,17 +1617,17 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-9 *,
-[data-glamor-9] *,
-.glamor-9 *::before,
-[data-glamor-9] *::before,
-.glamor-9 *::after,
-[data-glamor-9] *::after {
+.css-8 *,
+[data-css-8] *,
+.css-8 *::before,
+[data-css-8] *::before,
+.css-8 *::after,
+[data-css-8] *::after {
   box-sizing: inherit;
 }
 
-.glamor-12,
-[data-glamor-12] {
+.css-9,
+[data-css-9] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1783,163 +1652,141 @@ exports[`Box demo examples spacing 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-12 *,
-[data-glamor-12] *,
-.glamor-12 *::before,
-[data-glamor-12] *::before,
-.glamor-12 *::after,
-[data-glamor-12] *::after {
+.css-9 *,
+[data-css-9] *,
+.css-9 *::before,
+[data-css-9] *::before,
+.css-9 *::after,
+[data-css-9] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-          }
-        }
+<glamorous(div)>
+  <div
+    className="css-1"
+  >
+    <glamorous(Box)>
+      <Box
+        className="css-4"
+        element="div"
       >
-        <LivePreview>
+        <glamorous(div)
+          className="css-4"
+          element="div"
+        >
           <div
-            className="react-live-preview"
+            className="css-5"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-15"
-              >
-                <glamorous(Box)>
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        none
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginRight="xl"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginRight="xl"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginRight="xl"
-                    >
-                      <div
-                        className="glamor-3"
-                      >
-                        xl
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginRight="6em"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginRight="6em"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginRight="6em"
-                    >
-                      <div
-                        className="glamor-6"
-                      >
-                        6em
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginRight={120}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginRight={120}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginRight={120}
-                    >
-                      <div
-                        className="glamor-9"
-                      >
-                        120
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  marginRight={0.3333333333333333}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    marginRight={0.3333333333333333}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      marginRight={0.3333333333333333}
-                    >
-                      <div
-                        className="glamor-12"
-                      >
-                        1/3
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-              </div>
-            </glamorous(div)>
+            none
           </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginRight="xl"
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginRight="xl"
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginRight="xl"
+        >
+          <div
+            className="css-6"
+          >
+            xl
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginRight="6em"
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginRight="6em"
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginRight="6em"
+        >
+          <div
+            className="css-7"
+          >
+            6em
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginRight={120}
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginRight={120}
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginRight={120}
+        >
+          <div
+            className="css-8"
+          >
+            120
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      marginRight={0.3333333333333333}
+    >
+      <Box
+        className="css-4"
+        element="div"
+        marginRight={0.3333333333333333}
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          marginRight={0.3333333333333333}
+        >
+          <div
+            className="css-9"
+          >
+            1/3
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+  </div>
+</glamorous(div)>
 `;
 
 exports[`Box demo examples width 1`] = `
-.glamor-9::after,
-[data-glamor-9]::after,
-.glamor-9[data-simulate-after],
-[data-glamor-9][data-simulate-after] {
+.css-0,
+[data-css-1]::after,
+.css-1[data-simulate-after],
+[data-css-1][data-simulate-after] {
   clear: both;
   content: "";
   display: table;
 }
 
-.glamor-9 > *:not(:last-child),
-[data-glamor-9] > *:not(:last-child) {
+.css-1 > *:not(:last-child),
+[data-css-1] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-4,
+[data-css-4] {
   align-items: center;
   background-color: #e6eefc;
   color: #1f5dc2;
@@ -1957,8 +1804,8 @@ exports[`Box demo examples width 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1983,17 +1830,17 @@ exports[`Box demo examples width 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0 *,
-[data-glamor-0] *,
-.glamor-0 *::before,
-[data-glamor-0] *::before,
-.glamor-0 *::after,
-[data-glamor-0] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-6,
+[data-css-6] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2018,17 +1865,17 @@ exports[`Box demo examples width 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-3 *,
-[data-glamor-3] *,
-.glamor-3 *::before,
-[data-glamor-3] *::before,
-.glamor-3 *::after,
-[data-glamor-3] *::after {
+.css-6 *,
+[data-css-6] *,
+.css-6 *::before,
+[data-css-6] *::before,
+.css-6 *::after,
+[data-css-6] *::after {
   box-sizing: inherit;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-7,
+[data-css-7] {
   box-sizing: border-box;
   color: #1f5dc2;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2053,104 +1900,82 @@ exports[`Box demo examples width 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-6 *,
-[data-glamor-6] *,
-.glamor-6 *::before,
-[data-glamor-6] *::before,
-.glamor-6 *::after,
-[data-glamor-6] *::after {
+.css-7 *,
+[data-css-7] *,
+.css-7 *::before,
+[data-css-7] *::before,
+.css-7 *::after,
+[data-css-7] *::after {
   box-sizing: inherit;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Box": [Function],
-            "DemoLayout": [Function],
-          }
-        }
+<glamorous(div)>
+  <div
+    className="css-1"
+  >
+    <glamorous(Box)
+      width="10em"
+    >
+      <Box
+        className="css-4"
+        element="div"
+        width="10em"
       >
-        <LivePreview>
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          width="10em"
+        >
           <div
-            className="react-live-preview"
+            className="css-5"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-9"
-              >
-                <glamorous(Box)
-                  width="10em"
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    width="10em"
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      width="10em"
-                    >
-                      <div
-                        className="glamor-0"
-                      >
-                        A
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  width={100}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    width={100}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      width={100}
-                    >
-                      <div
-                        className="glamor-3"
-                      >
-                        B
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-                <glamorous(Box)
-                  width={0.3333333333333333}
-                >
-                  <Box
-                    className="glamor-1"
-                    element="div"
-                    width={0.3333333333333333}
-                  >
-                    <glamorous(div)
-                      className="glamor-1"
-                      element="div"
-                      width={0.3333333333333333}
-                    >
-                      <div
-                        className="glamor-6"
-                      >
-                        C
-                      </div>
-                    </glamorous(div)>
-                  </Box>
-                </glamorous(Box)>
-              </div>
-            </glamorous(div)>
+            A
           </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      width={100}
+    >
+      <Box
+        className="css-4"
+        element="div"
+        width={100}
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          width={100}
+        >
+          <div
+            className="css-6"
+          >
+            B
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+    <glamorous(Box)
+      width={0.3333333333333333}
+    >
+      <Box
+        className="css-4"
+        element="div"
+        width={0.3333333333333333}
+      >
+        <glamorous(div)
+          className="css-4"
+          element="div"
+          width={0.3333333333333333}
+        >
+          <div
+            className="css-7"
+          >
+            C
+          </div>
+        </glamorous(div)>
+      </Box>
+    </glamorous(Box)>
+  </div>
+</glamorous(div)>
 `;

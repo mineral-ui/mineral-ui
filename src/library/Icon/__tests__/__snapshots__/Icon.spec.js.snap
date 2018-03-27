@@ -1,271 +1,204 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon demo examples color 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   fill: coral;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "IconSentimentSatisfied": [Function],
-          }
-        }
+<IconSentimentSatisfied
+  color="coral"
+>
+  <Icon
+    color="coral"
+    rtl={false}
+    size="medium"
+  >
+    <glamorous(svg)
+      aria-hidden={true}
+      color="coral"
+      role="img"
+      rtl={false}
+      size="medium"
+      viewBox="0 0 24 24"
+    >
+      <svg
+        aria-hidden={true}
+        className="css-0"
+        color="coral"
+        role="img"
+        viewBox="0 0 24 24"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <IconSentimentSatisfied
-              color="coral"
-            >
-              <Icon
-                color="coral"
-                rtl={false}
-                size="medium"
-              >
-                <glamorous(svg)
-                  aria-hidden={true}
-                  aria-labelledby={undefined}
-                  color="coral"
-                  role="img"
-                  rtl={false}
-                  size="medium"
-                  viewBox="0 0 24 24"
-                >
-                  <svg
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    className="glamor-0"
-                    color="coral"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <g>
-                      <circle
-                        cx="15.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <circle
-                        cx="8.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <path
-                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                      />
-                    </g>
-                  </svg>
-                </glamorous(svg)>
-              </Icon>
-            </IconSentimentSatisfied>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <g>
+          <circle
+            cx="15.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="8.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+          />
+        </g>
+      </svg>
+    </glamorous(svg)>
+  </Icon>
+</IconSentimentSatisfied>
 `;
 
 exports[`Icon demo examples custom 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 7em;
   width: 7em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Icon": [Function],
-          }
-        }
+<Icon
+  size="7em"
+  title="CA Technologies"
+>
+  <glamorous(svg)
+    aria-hidden={null}
+    aria-labelledby="icon-title-icon-10"
+    role="img"
+    size="7em"
+    viewBox="0 0 24 24"
+  >
+    <svg
+      aria-hidden={null}
+      aria-labelledby="icon-title-icon-10"
+      className="css-0"
+      role="img"
+      viewBox="0 0 24 24"
+    >
+      <title
+        id="icon-title-icon-10"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <Icon
-              size="7em"
-              title="CA Technologies"
-            >
-              <glamorous(svg)
-                aria-hidden={null}
-                aria-labelledby="icon-title-icon-10"
-                role="img"
-                size="7em"
-                viewBox="0 0 24 24"
-              >
-                <svg
-                  aria-hidden={null}
-                  aria-labelledby="icon-title-icon-10"
-                  className="glamor-0"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <title
-                    id="icon-title-icon-10"
-                  >
-                    CA Technologies
-                  </title>
-                  <svg
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      className="trademark"
-                      d="M14.514 10.187c-0.256 0-0.419-0.186-0.419-0.442s0.186-0.442 0.419-0.442c0.256 0 0.419 0.186 0.419 0.442 0 0.279-0.163 0.442-0.419 0.442zM14.514 9.373c-0.209 0-0.372 0.14-0.372 0.395s0.163 0.372 0.372 0.372c0.209 0 0.372-0.14 0.372-0.372 0-0.256-0.163-0.395-0.372-0.395zM14.653 9.977l-0.14-0.209h-0.070v0.209h-0.093v-0.489h0.14c0.093 0 0.163 0.047 0.163 0.14 0 0.070-0.047 0.116-0.093 0.14l0.14 0.186-0.047 0.023zM14.514 9.582h-0.070v0.14h0.070c0.047 0 0.093-0.023 0.093-0.070s-0.023-0.070-0.093-0.070z"
-                    />
-                    <g
-                      className="technologies"
-                    >
-                      <path
-                        d="M0.788 12.187v-0.465h0.349v0.465h0.279v0.279h-0.279v0.814c0 0.070 0.047 0.093 0.116 0.093 0.047 0 0.116-0.023 0.163-0.023v0.279c-0.093 0-0.186 0.023-0.279 0.023-0.256 0-0.349-0.116-0.349-0.326v-0.861h-0.186v-0.279h0.186z"
-                      />
-                      <path
-                        d="M1.905 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.861zM2.44 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z"
-                      />
-                      <path
-                        d="M3.859 12.653c-0.047-0.116-0.116-0.209-0.279-0.209-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.14 0 0.233-0.093 0.302-0.233l0.256 0.14c-0.14 0.256-0.302 0.349-0.558 0.349-0.395 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.279 0 0.489 0.14 0.558 0.372l-0.279 0.14z"
-                      />
-                      <path
-                        d="M4.394 13.607v-1.977h0.349v0.698c0.093-0.093 0.233-0.186 0.419-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.326z"
-                      />
-                      <path
-                        d="M5.906 13.607v-1.442h0.302v0.163c0.116-0.093 0.279-0.186 0.442-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.302z"
-                      />
-                      <path
-                        d="M7.953 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM7.953 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z"
-                      />
-                      <path
-                        d="M8.837 13.607v-1.977h0.349v1.977z"
-                      />
-                      <path
-                        d="M10.070 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM10.070 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z"
-                      />
-                      <path
-                        d="M12.094 12.397c-0.070 0-0.163 0-0.209 0.023 0.047 0.070 0.070 0.14 0.070 0.256 0 0.279-0.186 0.465-0.535 0.465-0.14 0-0.256 0-0.256 0.093 0 0.233 0.931-0.093 0.931 0.489 0 0.209-0.209 0.419-0.651 0.419-0.372 0-0.628-0.116-0.628-0.349 0-0.186 0.14-0.256 0.256-0.256v0c-0.070-0.047-0.209-0.070-0.209-0.233 0-0.14 0.163-0.233 0.209-0.256-0.116-0.093-0.209-0.209-0.209-0.372 0-0.256 0.186-0.489 0.558-0.489 0.116 0 0.256 0.047 0.349 0.116 0.070-0.093 0.163-0.14 0.326-0.116v0.209zM11.094 13.746c0 0.116 0.093 0.163 0.372 0.163 0.209 0 0.302-0.116 0.302-0.163 0-0.070-0.093-0.163-0.419-0.163-0.209 0-0.256 0.116-0.256 0.163zM11.396 12.42c-0.14 0-0.256 0.093-0.256 0.233s0.093 0.233 0.256 0.233c0.14 0 0.233-0.116 0.233-0.233 0-0.14-0.093-0.233-0.233-0.233z"
-                      />
-                      <path
-                        d="M12.327 11.932v-0.326h0.349v0.326h-0.349zM12.676 13.188v0.419h-0.349v-1.442h0.349v1.024z"
-                      />
-                      <path
-                        d="M13.281 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.628-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.884zM13.816 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z"
-                      />
-                      <path
-                        d="M15.119 12.56c-0.070-0.070-0.163-0.14-0.256-0.14-0.14 0-0.186 0.047-0.186 0.14 0 0.256 0.721 0.14 0.721 0.675 0 0.302-0.233 0.419-0.512 0.419-0.233 0-0.419-0.093-0.535-0.279l0.233-0.163c0.070 0.116 0.186 0.209 0.326 0.209 0.116 0 0.209-0.070 0.209-0.163 0-0.233-0.721-0.163-0.721-0.651 0-0.256 0.233-0.419 0.465-0.419 0.186 0 0.372 0.070 0.512 0.209l-0.256 0.163z"
-                      />
-                    </g>
-                    <g
-                      className="ca"
-                    >
-                      <path
-                        d="M10.838 8.14c-0.279 0.419-0.698 0.675-1.186 0.675-0.651 0-1.21-0.302-1.21-1.024 0-1.047 1.535-1.419 2.722-1.489v0.302c0 0.698 0 1.047-0.326 1.535zM8.651 4.348c0.186-0.489 0.651-0.675 1.303-0.675 0.931 0 1.186 0.651 1.21 1.186v0.256c-2.559 0.116-4.955 0.605-4.909 2.931 0.023 1.628 1.512 2.303 2.536 2.303 1.186 0 1.838-0.326 2.489-1.117 0 0.349 0.047 0.698 0.116 0.954h2.28c-0.116-0.395-0.163-0.814-0.163-1.21v-4.257c0-1.024-0.186-1.605-0.744-2.117-0.535-0.489-1.373-0.744-2.536-0.744-1.070 0-1.977 0.233-2.652 0.698v0c0.558 0.465 0.931 1.070 1.070 1.791v0z"
-                      />
-                      <path
-                        d="M6.116 7.953c0 0.047 0 0.093 0 0.14 0 0.023 0 0.047 0 0.070 0.047 0.837 0.442 1.349 0.814 1.652-0.628 0.372-1.396 0.512-2.070 0.512-2.443 0.023-3.908-1.721-3.908-4.141 0-2.512 1.512-4.327 4.071-4.327 1.861 0 3.396 1 3.559 2.931h-2.233c0-0.744-0.512-1.117-1.233-1.117-1.163 0-1.512 0.814-1.512 2.326 0 1.535 0.326 2.419 1.512 2.419 0.442 0 0.791-0.14 1-0.465v0z"
-                      />
-                    </g>
-                  </svg>
-                </svg>
-              </glamorous(svg)>
-            </Icon>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        CA Technologies
+      </title>
+      <svg
+        viewBox="0 0 16 16"
+      >
+        <path
+          className="trademark"
+          d="M14.514 10.187c-0.256 0-0.419-0.186-0.419-0.442s0.186-0.442 0.419-0.442c0.256 0 0.419 0.186 0.419 0.442 0 0.279-0.163 0.442-0.419 0.442zM14.514 9.373c-0.209 0-0.372 0.14-0.372 0.395s0.163 0.372 0.372 0.372c0.209 0 0.372-0.14 0.372-0.372 0-0.256-0.163-0.395-0.372-0.395zM14.653 9.977l-0.14-0.209h-0.070v0.209h-0.093v-0.489h0.14c0.093 0 0.163 0.047 0.163 0.14 0 0.070-0.047 0.116-0.093 0.14l0.14 0.186-0.047 0.023zM14.514 9.582h-0.070v0.14h0.070c0.047 0 0.093-0.023 0.093-0.070s-0.023-0.070-0.093-0.070z"
+        />
+        <g
+          className="technologies"
+        >
+          <path
+            d="M0.788 12.187v-0.465h0.349v0.465h0.279v0.279h-0.279v0.814c0 0.070 0.047 0.093 0.116 0.093 0.047 0 0.116-0.023 0.163-0.023v0.279c-0.093 0-0.186 0.023-0.279 0.023-0.256 0-0.349-0.116-0.349-0.326v-0.861h-0.186v-0.279h0.186z"
+          />
+          <path
+            d="M1.905 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.861zM2.44 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z"
+          />
+          <path
+            d="M3.859 12.653c-0.047-0.116-0.116-0.209-0.279-0.209-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.14 0 0.233-0.093 0.302-0.233l0.256 0.14c-0.14 0.256-0.302 0.349-0.558 0.349-0.395 0-0.605-0.279-0.605-0.744s0.233-0.744 0.605-0.744c0.279 0 0.489 0.14 0.558 0.372l-0.279 0.14z"
+          />
+          <path
+            d="M4.394 13.607v-1.977h0.349v0.698c0.093-0.093 0.233-0.186 0.419-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.326z"
+          />
+          <path
+            d="M5.906 13.607v-1.442h0.302v0.163c0.116-0.093 0.279-0.186 0.442-0.186 0.279 0 0.419 0.186 0.419 0.489v0.977h-0.349v-0.931c0-0.186-0.070-0.256-0.186-0.256-0.14 0-0.256 0.093-0.326 0.163v1.024h-0.302z"
+          />
+          <path
+            d="M7.953 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM7.953 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z"
+          />
+          <path
+            d="M8.837 13.607v-1.977h0.349v1.977z"
+          />
+          <path
+            d="M10.070 12.164c0.395 0 0.628 0.279 0.628 0.744s-0.233 0.744-0.628 0.744c-0.395 0-0.628-0.279-0.628-0.744s0.233-0.744 0.628-0.744zM10.070 12.443c-0.186 0-0.279 0.14-0.279 0.465s0.093 0.465 0.279 0.465c0.186 0 0.279-0.14 0.279-0.465s-0.093-0.465-0.279-0.465z"
+          />
+          <path
+            d="M12.094 12.397c-0.070 0-0.163 0-0.209 0.023 0.047 0.070 0.070 0.14 0.070 0.256 0 0.279-0.186 0.465-0.535 0.465-0.14 0-0.256 0-0.256 0.093 0 0.233 0.931-0.093 0.931 0.489 0 0.209-0.209 0.419-0.651 0.419-0.372 0-0.628-0.116-0.628-0.349 0-0.186 0.14-0.256 0.256-0.256v0c-0.070-0.047-0.209-0.070-0.209-0.233 0-0.14 0.163-0.233 0.209-0.256-0.116-0.093-0.209-0.209-0.209-0.372 0-0.256 0.186-0.489 0.558-0.489 0.116 0 0.256 0.047 0.349 0.116 0.070-0.093 0.163-0.14 0.326-0.116v0.209zM11.094 13.746c0 0.116 0.093 0.163 0.372 0.163 0.209 0 0.302-0.116 0.302-0.163 0-0.070-0.093-0.163-0.419-0.163-0.209 0-0.256 0.116-0.256 0.163zM11.396 12.42c-0.14 0-0.256 0.093-0.256 0.233s0.093 0.233 0.256 0.233c0.14 0 0.233-0.116 0.233-0.233 0-0.14-0.093-0.233-0.233-0.233z"
+          />
+          <path
+            d="M12.327 11.932v-0.326h0.349v0.326h-0.349zM12.676 13.188v0.419h-0.349v-1.442h0.349v1.024z"
+          />
+          <path
+            d="M13.281 12.955c0 0.302 0.14 0.419 0.302 0.419s0.233-0.070 0.326-0.163l0.256 0.163c-0.14 0.209-0.326 0.302-0.605 0.302-0.372 0-0.605-0.279-0.605-0.744s0.233-0.744 0.628-0.744c0.372 0 0.582 0.326 0.582 0.651v0.116h-0.884zM13.816 12.722c0-0.209-0.116-0.302-0.279-0.302s-0.279 0.116-0.279 0.302h0.558z"
+          />
+          <path
+            d="M15.119 12.56c-0.070-0.070-0.163-0.14-0.256-0.14-0.14 0-0.186 0.047-0.186 0.14 0 0.256 0.721 0.14 0.721 0.675 0 0.302-0.233 0.419-0.512 0.419-0.233 0-0.419-0.093-0.535-0.279l0.233-0.163c0.070 0.116 0.186 0.209 0.326 0.209 0.116 0 0.209-0.070 0.209-0.163 0-0.233-0.721-0.163-0.721-0.651 0-0.256 0.233-0.419 0.465-0.419 0.186 0 0.372 0.070 0.512 0.209l-0.256 0.163z"
+          />
+        </g>
+        <g
+          className="ca"
+        >
+          <path
+            d="M10.838 8.14c-0.279 0.419-0.698 0.675-1.186 0.675-0.651 0-1.21-0.302-1.21-1.024 0-1.047 1.535-1.419 2.722-1.489v0.302c0 0.698 0 1.047-0.326 1.535zM8.651 4.348c0.186-0.489 0.651-0.675 1.303-0.675 0.931 0 1.186 0.651 1.21 1.186v0.256c-2.559 0.116-4.955 0.605-4.909 2.931 0.023 1.628 1.512 2.303 2.536 2.303 1.186 0 1.838-0.326 2.489-1.117 0 0.349 0.047 0.698 0.116 0.954h2.28c-0.116-0.395-0.163-0.814-0.163-1.21v-4.257c0-1.024-0.186-1.605-0.744-2.117-0.535-0.489-1.373-0.744-2.536-0.744-1.070 0-1.977 0.233-2.652 0.698v0c0.558 0.465 0.931 1.070 1.070 1.791v0z"
+          />
+          <path
+            d="M6.116 7.953c0 0.047 0 0.093 0 0.14 0 0.023 0 0.047 0 0.070 0.047 0.837 0.442 1.349 0.814 1.652-0.628 0.372-1.396 0.512-2.070 0.512-2.443 0.023-3.908-1.721-3.908-4.141 0-2.512 1.512-4.327 4.071-4.327 1.861 0 3.396 1 3.559 2.931h-2.233c0-0.744-0.512-1.117-1.233-1.117-1.163 0-1.512 0.814-1.512 2.326 0 1.535 0.326 2.419 1.512 2.419 0.442 0 0.791-0.14 1-0.465v0z"
+          />
+        </g>
+      </svg>
+    </svg>
+  </glamorous(svg)>
+</Icon>
 `;
 
 exports[`Icon demo examples icon 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "IconSentimentSatisfied": [Function],
-          }
-        }
+<IconSentimentSatisfied>
+  <Icon
+    rtl={false}
+    size="medium"
+  >
+    <glamorous(svg)
+      aria-hidden={true}
+      role="img"
+      rtl={false}
+      size="medium"
+      viewBox="0 0 24 24"
+    >
+      <svg
+        aria-hidden={true}
+        className="css-0"
+        role="img"
+        viewBox="0 0 24 24"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <IconSentimentSatisfied>
-              <Icon
-                rtl={false}
-                size="medium"
-              >
-                <glamorous(svg)
-                  aria-hidden={true}
-                  aria-labelledby={undefined}
-                  role="img"
-                  rtl={false}
-                  size="medium"
-                  viewBox="0 0 24 24"
-                >
-                  <svg
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    className="glamor-0"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <g>
-                      <circle
-                        cx="15.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <circle
-                        cx="8.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <path
-                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                      />
-                    </g>
-                  </svg>
-                </glamorous(svg)>
-              </Icon>
-            </IconSentimentSatisfied>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <g>
+          <circle
+            cx="15.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="8.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+          />
+        </g>
+      </svg>
+    </glamorous(svg)>
+  </Icon>
+</IconSentimentSatisfied>
 `;
 
 exports[`Icon demo examples rtl 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
@@ -276,356 +209,282 @@ exports[`Icon demo examples rtl 1`] = `
 
 <ThemeProvider>
   <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "IconHelp": [Function],
-            "ThemeProvider": [Function],
-          }
-        }
+    <IconHelp>
+      <Icon
+        rtl={true}
+        size="medium"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+        <glamorous(svg)
+          aria-hidden={true}
+          role="img"
+          rtl={true}
+          size="medium"
+          viewBox="0 0 24 24"
+        >
+          <svg
+            aria-hidden={true}
+            className="css-0"
+            role="img"
+            viewBox="0 0 24 24"
           >
-            <ThemeProvider>
-              <ThemeProvider>
-                <IconHelp>
-                  <Icon
-                    rtl={true}
-                    size="medium"
-                  >
-                    <glamorous(svg)
-                      aria-hidden={true}
-                      aria-labelledby={undefined}
-                      role="img"
-                      rtl={true}
-                      size="medium"
-                      viewBox="0 0 24 24"
-                    >
-                      <svg
-                        aria-hidden={true}
-                        aria-labelledby={undefined}
-                        className="glamor-0"
-                        role="img"
-                        viewBox="0 0 24 24"
-                      >
-                        <g>
-                          <path
-                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
-                          />
-                        </g>
-                      </svg>
-                    </glamorous(svg)>
-                  </Icon>
-                </IconHelp>
-              </ThemeProvider>
-            </ThemeProvider>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
+            <g>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+              />
+            </g>
+          </svg>
+        </glamorous(svg)>
+      </Icon>
+    </IconHelp>
   </ThemeProvider>
 </ThemeProvider>
 `;
 
 exports[`Icon demo examples sizes 1`] = `
-.glamor-1,
-[data-glamor-1] {
+.css-0,
+[data-css-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-1,
+[data-css-1] {
   fill: #8e99ab;
   font-size: 16px;
   height: 0.75em;
   width: 0.75em;
 }
 
-.glamor-2,
-[data-glamor-2] {
+.css-2,
+[data-css-2] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1.25em;
   width: 1.25em;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-3,
+[data-css-3] {
   fill: #8e99ab;
   font-size: 16px;
   height: 7em;
   width: 7em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "IconSentimentSatisfied": [Function],
-          }
-        }
+<div>
+  <IconSentimentSatisfied
+    size="small"
+  >
+    <Icon
+      rtl={false}
+      size="small"
+    >
+      <glamorous(svg)
+        aria-hidden={true}
+        role="img"
+        rtl={false}
+        size="small"
+        viewBox="0 0 24 24"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <div>
-              <IconSentimentSatisfied
-                size="small"
-              >
-                <Icon
-                  rtl={false}
-                  size="small"
-                >
-                  <glamorous(svg)
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    role="img"
-                    rtl={false}
-                    size="small"
-                    viewBox="0 0 24 24"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      aria-labelledby={undefined}
-                      className="glamor-0"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <g>
-                        <circle
-                          cx="15.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <circle
-                          cx="8.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <path
-                          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                        />
-                      </g>
-                    </svg>
-                  </glamorous(svg)>
-                </Icon>
-              </IconSentimentSatisfied>
-              <IconSentimentSatisfied>
-                <Icon
-                  rtl={false}
-                  size="medium"
-                >
-                  <glamorous(svg)
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    role="img"
-                    rtl={false}
-                    size="medium"
-                    viewBox="0 0 24 24"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      aria-labelledby={undefined}
-                      className="glamor-1"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <g>
-                        <circle
-                          cx="15.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <circle
-                          cx="8.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <path
-                          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                        />
-                      </g>
-                    </svg>
-                  </glamorous(svg)>
-                </Icon>
-              </IconSentimentSatisfied>
-              <IconSentimentSatisfied
-                size="large"
-              >
-                <Icon
-                  rtl={false}
-                  size="large"
-                >
-                  <glamorous(svg)
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    role="img"
-                    rtl={false}
-                    size="large"
-                    viewBox="0 0 24 24"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      aria-labelledby={undefined}
-                      className="glamor-2"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <g>
-                        <circle
-                          cx="15.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <circle
-                          cx="8.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <path
-                          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                        />
-                      </g>
-                    </svg>
-                  </glamorous(svg)>
-                </Icon>
-              </IconSentimentSatisfied>
-              <IconSentimentSatisfied
-                size="7em"
-              >
-                <Icon
-                  rtl={false}
-                  size="7em"
-                >
-                  <glamorous(svg)
-                    aria-hidden={true}
-                    aria-labelledby={undefined}
-                    role="img"
-                    rtl={false}
-                    size="7em"
-                    viewBox="0 0 24 24"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      aria-labelledby={undefined}
-                      className="glamor-3"
-                      role="img"
-                      viewBox="0 0 24 24"
-                    >
-                      <g>
-                        <circle
-                          cx="15.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <circle
-                          cx="8.5"
-                          cy="9.5"
-                          r="1.5"
-                        />
-                        <path
-                          d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                        />
-                      </g>
-                    </svg>
-                  </glamorous(svg)>
-                </Icon>
-              </IconSentimentSatisfied>
-            </div>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <svg
+          aria-hidden={true}
+          className="css-1"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+            />
+          </g>
+        </svg>
+      </glamorous(svg)>
+    </Icon>
+  </IconSentimentSatisfied>
+  <IconSentimentSatisfied>
+    <Icon
+      rtl={false}
+      size="medium"
+    >
+      <glamorous(svg)
+        aria-hidden={true}
+        role="img"
+        rtl={false}
+        size="medium"
+        viewBox="0 0 24 24"
+      >
+        <svg
+          aria-hidden={true}
+          className="css-0"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+            />
+          </g>
+        </svg>
+      </glamorous(svg)>
+    </Icon>
+  </IconSentimentSatisfied>
+  <IconSentimentSatisfied
+    size="large"
+  >
+    <Icon
+      rtl={false}
+      size="large"
+    >
+      <glamorous(svg)
+        aria-hidden={true}
+        role="img"
+        rtl={false}
+        size="large"
+        viewBox="0 0 24 24"
+      >
+        <svg
+          aria-hidden={true}
+          className="css-2"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+            />
+          </g>
+        </svg>
+      </glamorous(svg)>
+    </Icon>
+  </IconSentimentSatisfied>
+  <IconSentimentSatisfied
+    size="7em"
+  >
+    <Icon
+      rtl={false}
+      size="7em"
+    >
+      <glamorous(svg)
+        aria-hidden={true}
+        role="img"
+        rtl={false}
+        size="7em"
+        viewBox="0 0 24 24"
+      >
+        <svg
+          aria-hidden={true}
+          className="css-3"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <g>
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+            />
+          </g>
+        </svg>
+      </glamorous(svg)>
+    </Icon>
+  </IconSentimentSatisfied>
+</div>
 `;
 
 exports[`Icon demo examples title 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   fill: #8e99ab;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "IconSentimentSatisfied": [Function],
-          }
-        }
+<IconSentimentSatisfied
+  title="smiley-face"
+>
+  <Icon
+    rtl={false}
+    size="medium"
+    title="smiley-face"
+  >
+    <glamorous(svg)
+      aria-hidden={null}
+      aria-labelledby="icon-title-icon-8"
+      role="img"
+      rtl={false}
+      size="medium"
+      viewBox="0 0 24 24"
+    >
+      <svg
+        aria-hidden={null}
+        aria-labelledby="icon-title-icon-8"
+        className="css-0"
+        role="img"
+        viewBox="0 0 24 24"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <IconSentimentSatisfied
-              title="smiley-face"
-            >
-              <Icon
-                rtl={false}
-                size="medium"
-                title="smiley-face"
-              >
-                <glamorous(svg)
-                  aria-hidden={null}
-                  aria-labelledby="icon-title-icon-8"
-                  role="img"
-                  rtl={false}
-                  size="medium"
-                  viewBox="0 0 24 24"
-                >
-                  <svg
-                    aria-hidden={null}
-                    aria-labelledby="icon-title-icon-8"
-                    className="glamor-0"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <title
-                      id="icon-title-icon-8"
-                    >
-                      smiley-face
-                    </title>
-                    <g>
-                      <circle
-                        cx="15.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <circle
-                        cx="8.5"
-                        cy="9.5"
-                        r="1.5"
-                      />
-                      <path
-                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
-                      />
-                    </g>
-                  </svg>
-                </glamorous(svg)>
-              </Icon>
-            </IconSentimentSatisfied>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <title
+          id="icon-title-icon-8"
+        >
+          smiley-face
+        </title>
+        <g>
+          <circle
+            cx="15.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="8.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-4c-1.48 0-2.75-.81-3.45-2H6.88a5.495 5.495 0 0 0 10.24 0h-1.67c-.7 1.19-1.97 2-3.45 2z"
+          />
+        </g>
+      </svg>
+    </glamorous(svg)>
+  </Icon>
+</IconSentimentSatisfied>
 `;
