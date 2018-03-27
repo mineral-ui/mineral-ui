@@ -7,7 +7,6 @@ import {
 } from '../../library/styles';
 import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
-import ErrorBoundary from './ErrorBoundary';
 import Heading from './SiteHeading';
 import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
@@ -156,7 +155,7 @@ export default function ComponentDocExample({
         )}
       </Title>
       <Description {...descriptionProps}>{description || ''}</Description>
-      <ErrorBoundary buttonLabel="Reload example">{liveCode}</ErrorBoundary>
+      {liveCode}
     </Root>
   );
 }

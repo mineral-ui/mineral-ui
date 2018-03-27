@@ -39,5 +39,7 @@ describe('TextArea', () => {
     expect(textArea.props().onInput).toHaveBeenCalled();
   });
 
-  testDemoExamples(examples);
+  testDemoExamples(examples, {
+    exclude: ['states']
+  });
 });
