@@ -39,9 +39,9 @@ export const componentTheme = (baseTheme: Object) => ({
   CardFooterRow_marginVertical: baseTheme.space_stack_sm,
   CardFooterRow_marginVerticalLast: baseTheme.space_stack_md,
 
-  CardFooterTitle_color: baseTheme.color_text,
+  CardFooterTitle_color: baseTheme.color_h5,
   CardFooterTitle_fontSize: baseTheme.fontSize_h5,
-  CardFooterTitle_fontWeight: baseTheme.fontWeight_bold,
+  CardFooterTitle_fontWeight: baseTheme.fontWeight_h5,
 
   ...baseTheme
 });

@@ -1,13 +1,14 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, getNormalizedValue } from '../styles';
 import { componentTheme as menuItemComponentTheme } from '../Menu/MenuItem';
 
 type Props = Object;
 
+// [1] Deviation from h5 for optics relative to a MenuItem
 export const componentTheme = (baseTheme: Object) => ({
-  MenuGroupTitle_fontSize: pxToEm(12),
-  MenuGroupTitle_fontWeight: baseTheme.fontWeight_bold,
+  MenuGroupTitle_fontSize: baseTheme.fontSize_mouse, // [1]
+  MenuGroupTitle_fontWeight: baseTheme.fontWeight_h5,
   MenuGroupTitle_paddingTop: baseTheme.space_stack_md,
   MenuGroupTitle_paddingBottom: baseTheme.space_stack_sm,
 

@@ -14,9 +14,9 @@ type Props = {
 export const componentTheme = (baseTheme: Object) => ({
   FormFieldset_borderColor: baseTheme.borderColor,
 
-  FormFieldsetLegend_color_text: baseTheme.color_text,
-  FormFieldsetLegend_fontSize: baseTheme.fontSize_ui,
-  FormFieldsetLegend_fontWeight: baseTheme.fontWeight_bold,
+  FormFieldsetLegend_color_text: baseTheme.color_h5,
+  FormFieldsetLegend_fontSize: baseTheme.fontSize_h5,
+  FormFieldsetLegend_fontWeight: baseTheme.fontWeight_h5,
 
   ...baseTheme
 });
