@@ -1,218 +1,192 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link demo examples basic 1`] = `
-.glamor-8,
-[data-glamor-8] {
+.css-0,
+[data-css-0] {
   font-family: Open Sans;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-1,
+[data-css-1] {
   font-size: 1.5em;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-2,
+[data-css-2] {
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   color: #1f5dc2;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-12,
+[data-css-12] {
   font-size: 0.75em;
 }
 
-.glamor-5,
-[data-glamor-5] {
+.css-13,
+[data-css-13] {
   font-weight: 700;
 }
 
-.glamor-7,
-[data-glamor-7] {
+.css-14,
+[data-css-14] {
   font-family: serif;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Big": [Function],
-            "Bold": [Function],
-            "DemoLayout": [Function],
-            "Link": [Function],
-            "Serif": [Function],
-            "Small": [Function],
-          }
-        }
+<glamorous(div)>
+  <div
+    className="css-0"
+  >
+    <glamorous(p)>
+      <p
+        className="css-1"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+        Lorem ipsum dolor sit amet, 
+        <Link
+          href="http://example.com"
+        >
+          <Link
+            href="http://example.com"
+            target="_blank"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-8"
+            <Link
+              href="http://example.com"
+              target="_blank"
+              variant="regular"
+            >
+              <a
+                className="css-2"
+                href="http://example.com"
+                target="_blank"
               >
-                <glamorous(p)>
-                  <p
-                    className="glamor-1"
-                  >
-                    Lorem ipsum dolor sit amet, 
-                    <Link
-                      href="http://example.com"
-                    >
-                      <Link
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        <Link
-                          href="http://example.com"
-                          target="_blank"
-                          variant="regular"
-                        >
-                          <a
-                            className="glamor-0"
-                            href="http://example.com"
-                            target="_blank"
-                          >
-                            consectetur
-                          </a>
-                        </Link>
-                      </Link>
-                    </Link>
-                     adipiscing elit,
-                  </p>
-                </glamorous(p)>
-                <glamorous(p)>
-                  <p
-                    className="glamor-3"
-                  >
-                    sed do eiusmod tempor 
-                    <Link
-                      href="http://example.com"
-                    >
-                      <Link
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        <Link
-                          href="http://example.com"
-                          target="_blank"
-                          variant="regular"
-                        >
-                          <a
-                            className="glamor-0"
-                            href="http://example.com"
-                            target="_blank"
-                          >
-                            incididunt
-                          </a>
-                        </Link>
-                      </Link>
-                    </Link>
-                     ut labore et dolore magna aliqua.
-                  </p>
-                </glamorous(p)>
-                <glamorous(p)>
-                  <p
-                    className="glamor-5"
-                  >
-                    Ut enim 
-                    <Link
-                      href="http://example.com"
-                    >
-                      <Link
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        <Link
-                          href="http://example.com"
-                          target="_blank"
-                          variant="regular"
-                        >
-                          <a
-                            className="glamor-0"
-                            href="http://example.com"
-                            target="_blank"
-                          >
-                            ad minim veniam
-                          </a>
-                        </Link>
-                      </Link>
-                    </Link>
-                     quis nostrud exercitation
-                  </p>
-                </glamorous(p)>
-                <glamorous(p)>
-                  <p
-                    className="glamor-7"
-                  >
-                    ullamco laboris 
-                    <Link
-                      href="http://example.com"
-                    >
-                      <Link
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        <Link
-                          href="http://example.com"
-                          target="_blank"
-                          variant="regular"
-                        >
-                          <a
-                            className="glamor-0"
-                            href="http://example.com"
-                            target="_blank"
-                          >
-                            nisi ut
-                          </a>
-                        </Link>
-                      </Link>
-                    </Link>
-                     aliquip ex ea commodo consequat.
-                  </p>
-                </glamorous(p)>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+                consectetur
+              </a>
+            </Link>
+          </Link>
+        </Link>
+         adipiscing elit,
+      </p>
+    </glamorous(p)>
+    <glamorous(p)>
+      <p
+        className="css-12"
+      >
+        sed do eiusmod tempor 
+        <Link
+          href="http://example.com"
+        >
+          <Link
+            href="http://example.com"
+            target="_blank"
+          >
+            <Link
+              href="http://example.com"
+              target="_blank"
+              variant="regular"
+            >
+              <a
+                className="css-2"
+                href="http://example.com"
+                target="_blank"
+              >
+                incididunt
+              </a>
+            </Link>
+          </Link>
+        </Link>
+         ut labore et dolore magna aliqua.
+      </p>
+    </glamorous(p)>
+    <glamorous(p)>
+      <p
+        className="css-13"
+      >
+        Ut enim 
+        <Link
+          href="http://example.com"
+        >
+          <Link
+            href="http://example.com"
+            target="_blank"
+          >
+            <Link
+              href="http://example.com"
+              target="_blank"
+              variant="regular"
+            >
+              <a
+                className="css-2"
+                href="http://example.com"
+                target="_blank"
+              >
+                ad minim veniam
+              </a>
+            </Link>
+          </Link>
+        </Link>
+         quis nostrud exercitation
+      </p>
+    </glamorous(p)>
+    <glamorous(p)>
+      <p
+        className="css-14"
+      >
+        ullamco laboris 
+        <Link
+          href="http://example.com"
+        >
+          <Link
+            href="http://example.com"
+            target="_blank"
+          >
+            <Link
+              href="http://example.com"
+              target="_blank"
+              variant="regular"
+            >
+              <a
+                className="css-2"
+                href="http://example.com"
+                target="_blank"
+              >
+                nisi ut
+              </a>
+            </Link>
+          </Link>
+        </Link>
+         aliquip ex ea commodo consequat.
+      </p>
+    </glamorous(p)>
+  </div>
+</glamorous(div)>
 `;
 
 exports[`Link demo examples button 1`] = `
-.glamor-2,
-[data-glamor-2] {
+.css-0,
+[data-css-0] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -236,19 +210,19 @@ exports[`Link demo examples button 1`] = `
   vertical-align: middle;
 }
 
-.glamor-2 *,
-[data-glamor-2] *,
-.glamor-2 *::before,
-[data-glamor-2] *::before,
-.glamor-2 *::after,
-[data-glamor-2] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -256,54 +230,54 @@ exports[`Link demo examples button 1`] = `
   text-decoration: none;
 }
 
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #333840;
   text-decoration: none;
 }
 
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.glamor-2::-moz-focus-inner,
-[data-glamor-2]::-moz-focus-inner,
-.glamor-2[data-simulate-mozfocusinner],
-[data-glamor-2][data-simulate-mozfocusinner] {
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.glamor-2 [role="img"],
-[data-glamor-2] [role="img"] {
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
   box-sizing: content-box;
   fill: #2e6fd9;
   display: block;
 }
 
-.glamor-2 [role="img"]:first-child,
-[data-glamor-2] [role="img"]:first-child {
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.glamor-2 [role="img"]:last-child,
-[data-glamor-2] [role="img"]:last-child {
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.glamor-2 [role="img"]:only-child,
-[data-glamor-2] [role="img"]:only-child {
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
   margin: 0;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-14,
+[data-css-14] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -319,8 +293,8 @@ exports[`Link demo examples button 1`] = `
   -webkit-justify-content: center;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-15,
+[data-css-15] {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -331,1370 +305,1259 @@ exports[`Link demo examples button 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.glamor-0:first-child,
-[data-glamor-0]:first-child,
-.glamor-0[data-simulate-firstchild],
-[data-glamor-0][data-simulate-firstchild] {
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
   padding-left: 0.5714285714285714em;
 }
 
-.glamor-0:last-child,
-[data-glamor-0]:last-child,
-.glamor-0[data-simulate-lastchild],
-[data-glamor-0][data-simulate-lastchild] {
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
   padding-right: 0.5714285714285714em;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Button": [Function],
-          }
-        }
-      >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+<Button
+  element="a"
+  href="#button"
+  size="large"
+  type="button"
+  variant="regular"
+>
+  <glamorous(a)
+    element="a"
+    href="#button"
+    size="large"
+    text="Link"
+    type="button"
+    variant="regular"
+  >
+    <a
+      className="css-0"
+      href="#button"
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
           >
-            <Button
-              element="a"
-              href="#button"
-              size="large"
-              type="button"
-              variant="regular"
+            <span
+              className="css-15"
             >
-              <glamorous(a)
-                element="a"
-                href="#button"
-                size="large"
-                text="Link"
-                type="button"
-                variant="regular"
-              >
-                <a
-                  className="glamor-2"
-                  href="#button"
-                >
-                  <glamorous(span)>
-                    <span
-                      className="glamor-1"
-                    >
-                      <glamorous(span)
-                        size="large"
-                      >
-                        <span
-                          className="glamor-0"
-                        >
-                          Link
-                        </span>
-                      </glamorous(span)>
-                    </span>
-                  </glamorous(span)>
-                </a>
-              </glamorous(a)>
-            </Button>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+              Link
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </a>
+  </glamorous(a)>
+</Button>
 `;
 
 exports[`Link demo examples children 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   color: #1f5dc2;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "Link": [Function],
-          }
-        }
+<Link
+  href="http://example.com"
+>
+  <Link
+    href="http://example.com"
+    target="_blank"
+  >
+    <Link
+      href="http://example.com"
+      target="_blank"
+      variant="regular"
+    >
+      <a
+        className="css-0"
+        href="http://example.com"
+        target="_blank"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
-          >
-            <Link
-              href="http://example.com"
-            >
-              <Link
-                href="http://example.com"
-                target="_blank"
-              >
-                <Link
-                  href="http://example.com"
-                  target="_blank"
-                  variant="regular"
-                >
-                  <a
-                    className="glamor-0"
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <img
-                      alt="gradient placeholder"
-                      src="/images/125x125.png"
-                    />
-                  </a>
-                </Link>
-              </Link>
-            </Link>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+        <img
+          alt="gradient placeholder"
+          src="/images/125x125.png"
+        />
+      </a>
+    </Link>
+  </Link>
+</Link>
 `;
 
 exports[`Link demo examples other 1`] = `
-.glamor-2,
-[data-glamor-2] {
+.css-0,
+[data-css-0] {
   font-family: Open Sans;
 }
 
-.glamor-0,
-[data-glamor-0] {
+.css-1,
+[data-css-1] {
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-1:hover,
+[data-css-1]:hover,
+.css-1[data-simulate-hover],
+[data-css-1][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-1:focus,
+[data-css-1]:focus,
+.css-1[data-simulate-focus],
+[data-css-1][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-1:active,
+[data-css-1]:active,
+.css-1[data-simulate-active],
+[data-css-1][data-simulate-active] {
   color: #1f5dc2;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
+<glamorous(div)>
+  <div
+    className="css-0"
+  >
+    <BrowserRouter>
+      <Router
+        history={
           Object {
-            "BrowserRouter": [Function],
-            "DemoLayout": [Function],
-            "Link": [Function],
-            "ReactRouterLink": [Function],
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "blank",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
           }
         }
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+        <Link
+          element={[Function]}
+          to="/components/link"
+        >
+          <Link
+            to="/components/link"
+            variant="regular"
           >
-            <glamorous(div)>
-              <div
-                className="glamor-2"
+            <Link
+              className="css-1"
+              replace={false}
+              to="/components/link"
+            >
+              <a
+                className="css-1"
+                href="/components/link"
+                onClick={[Function]}
               >
-                <BrowserRouter>
-                  <Router
-                    history={
-                      Object {
-                        "action": "POP",
-                        "block": [Function],
-                        "createHref": [Function],
-                        "go": [Function],
-                        "goBack": [Function],
-                        "goForward": [Function],
-                        "length": 1,
-                        "listen": [Function],
-                        "location": Object {
-                          "hash": "",
-                          "pathname": "blank",
-                          "search": "",
-                          "state": undefined,
-                        },
-                        "push": [Function],
-                        "replace": [Function],
-                      }
-                    }
-                  >
-                    <Link
-                      element={[Function]}
-                      to="/components/link"
-                    >
-                      <Link
-                        to="/components/link"
-                        variant="regular"
-                      >
-                        <Link
-                          className="glamor-0"
-                          replace={false}
-                          to="/components/link"
-                        >
-                          <a
-                            className="glamor-0"
-                            href="/components/link"
-                            onClick={[Function]}
-                          >
-                            ReactRouter Link
-                          </a>
-                        </Link>
-                      </Link>
-                    </Link>
-                  </Router>
-                </BrowserRouter>
-              </div>
-            </glamorous(div)>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+                ReactRouter Link
+              </a>
+            </Link>
+          </Link>
+        </Link>
+      </Router>
+    </BrowserRouter>
+  </div>
+</glamorous(div)>
 `;
 
 exports[`Link demo examples states 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   color: #1f5dc2;
 }
 
-.glamor-24,
-[data-glamor-24] {
+.css-10,
+[data-css-10] {
   font-family: Open Sans;
 }
 
-.glamor-24 > a,
-[data-glamor-24] > a {
+.css-10 > a,
+[data-css-10] > a {
   margin-right: 0.5rem;
 }
 
-.glamor-6,
-[data-glamor-6] {
+.css-11,
+[data-css-11] {
   color: #db2929;
   text-decoration: none;
 }
 
-.glamor-6:hover,
-[data-glamor-6]:hover,
-.glamor-6[data-simulate-hover],
-[data-glamor-6][data-simulate-hover] {
+.css-11:hover,
+[data-css-11]:hover,
+.css-11[data-simulate-hover],
+[data-css-11][data-simulate-hover] {
   color: #eb4d4d;
   text-decoration: underline;
 }
 
-.glamor-6:focus,
-[data-glamor-6]:focus,
-.glamor-6[data-simulate-focus],
-[data-glamor-6][data-simulate-focus] {
+.css-11:focus,
+[data-css-11]:focus,
+.css-11[data-simulate-focus],
+[data-css-11][data-simulate-focus] {
   color: #db2929;
   outline: 1px solid #c71818;
   outline-offset: 2px;
 }
 
-.glamor-6:active,
-[data-glamor-6]:active,
-.glamor-6[data-simulate-active],
-[data-glamor-6][data-simulate-active] {
+.css-11:active,
+[data-css-11]:active,
+.css-11[data-simulate-active],
+[data-css-11][data-simulate-active] {
   color: #c71818;
 }
 
-.glamor-12,
-[data-glamor-12] {
+.css-21,
+[data-css-21] {
   color: #06783f;
   text-decoration: none;
 }
 
-.glamor-12:hover,
-[data-glamor-12]:hover,
-.glamor-12[data-simulate-hover],
-[data-glamor-12][data-simulate-hover] {
+.css-21:hover,
+[data-css-21]:hover,
+.css-21[data-simulate-hover],
+[data-css-21][data-simulate-hover] {
   color: #0a8f4c;
   text-decoration: underline;
 }
 
-.glamor-12:focus,
-[data-glamor-12]:focus,
-.glamor-12[data-simulate-focus],
-[data-glamor-12][data-simulate-focus] {
+.css-21:focus,
+[data-css-21]:focus,
+.css-21[data-simulate-focus],
+[data-css-21][data-simulate-focus] {
   color: #06783f;
   outline: 1px solid #0a8f4c;
   outline-offset: 2px;
 }
 
-.glamor-12:active,
-[data-glamor-12]:active,
-.glamor-12[data-simulate-active],
-[data-glamor-12][data-simulate-active] {
+.css-21:active,
+[data-css-21]:active,
+.css-21[data-simulate-active],
+[data-css-21][data-simulate-active] {
   color: #046132;
 }
 
-.glamor-18,
-[data-glamor-18] {
+.css-31,
+[data-css-31] {
   color: #cf4615;
   text-decoration: none;
 }
 
-.glamor-18:hover,
-[data-glamor-18]:hover,
-.glamor-18[data-simulate-hover],
-[data-glamor-18][data-simulate-hover] {
+.css-31:hover,
+[data-css-31]:hover,
+.css-31[data-simulate-hover],
+[data-css-31][data-simulate-hover] {
   color: #e05b2b;
   text-decoration: underline;
 }
 
-.glamor-18:focus,
-[data-glamor-18]:focus,
-.glamor-18[data-simulate-focus],
-[data-glamor-18][data-simulate-focus] {
+.css-31:focus,
+[data-css-31]:focus,
+.css-31[data-simulate-focus],
+[data-css-31][data-simulate-focus] {
   color: #cf4615;
   outline: 1px solid #cf4615;
   outline-offset: 2px;
 }
 
-.glamor-18:active,
-[data-glamor-18]:active,
-.glamor-18[data-simulate-active],
-[data-glamor-18][data-simulate-active] {
+.css-31:active,
+[data-css-31]:active,
+.css-31[data-simulate-active],
+[data-css-31][data-simulate-active] {
   color: #bd3909;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "DemoLayout": [Function],
-            "Link": [Function],
-            "simulate": [Function],
-          }
-        }
+<glamorous(glamorous(div))>
+  <div
+    className="css-10"
+  >
+    <Link
+      href="http://example.com"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            href="http://example.com"
+            target="_blank"
           >
-            <glamorous(glamorous(div))>
-              <div
-                className="glamor-24"
-              >
-                <Link
-                  href="http://example.com"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Regular
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-hover=""
-                  href="http://example.com"
-                >
-                  <Link
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  href="http://example.com"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  data-simulate-hover=""
-                  href="http://example.com"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        data-simulate-focus=""
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  data-simulate-focus=""
-                  href="http://example.com"
-                >
-                  <Link
-                    data-simulate-active=""
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        data-simulate-active=""
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  href="http://example.com"
-                >
-                  <Link
-                    data-simulate-active=""
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        data-simulate-active=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <br />
-                <br />
-                <Link
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Danger
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        data-simulate-focus=""
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    data-simulate-active=""
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        data-simulate-active=""
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    data-simulate-active=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-6"
-                        data-simulate-active=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <br />
-                <br />
-                <Link
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Success
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        data-simulate-focus=""
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    data-simulate-active=""
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        data-simulate-active=""
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    data-simulate-active=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-12"
-                        data-simulate-active=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <br />
-                <br />
-                <Link
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Warning
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-focus=""
-                  data-simulate-hover=""
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    data-simulate-focus=""
-                    data-simulate-hover=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      data-simulate-focus=""
-                      data-simulate-hover=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        data-simulate-focus=""
-                        data-simulate-hover=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Hover
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  data-simulate-focus=""
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    data-simulate-active=""
-                    data-simulate-focus=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      data-simulate-focus=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        data-simulate-active=""
-                        data-simulate-focus=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Focus & Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  data-simulate-active=""
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    data-simulate-active=""
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      data-simulate-active=""
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-18"
-                        data-simulate-active=""
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Active
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-              </div>
-            </glamorous(glamorous(div))>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+            Regular
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-hover=""
+      href="http://example.com"
+    >
+      <Link
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+      >
+        <Link
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      href="http://example.com"
+    >
+      <Link
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+      >
+        <Link
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      data-simulate-hover=""
+      href="http://example.com"
+    >
+      <Link
+        data-simulate-focus=""
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+      >
+        <Link
+          data-simulate-focus=""
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            data-simulate-focus=""
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      data-simulate-focus=""
+      href="http://example.com"
+    >
+      <Link
+        data-simulate-active=""
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+      >
+        <Link
+          data-simulate-active=""
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            data-simulate-active=""
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      href="http://example.com"
+    >
+      <Link
+        data-simulate-active=""
+        href="http://example.com"
+        target="_blank"
+      >
+        <Link
+          data-simulate-active=""
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            data-simulate-active=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <br />
+    <br />
+    <Link
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            href="http://example.com"
+            target="_blank"
+          >
+            Danger
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        data-simulate-focus=""
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          data-simulate-focus=""
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            data-simulate-focus=""
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        data-simulate-active=""
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          data-simulate-active=""
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            data-simulate-active=""
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        data-simulate-active=""
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          data-simulate-active=""
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            data-simulate-active=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <br />
+    <br />
+    <Link
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            href="http://example.com"
+            target="_blank"
+          >
+            Success
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        data-simulate-focus=""
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          data-simulate-focus=""
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            data-simulate-focus=""
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        data-simulate-active=""
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          data-simulate-active=""
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            data-simulate-active=""
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        data-simulate-active=""
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          data-simulate-active=""
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            data-simulate-active=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <br />
+    <br />
+    <Link
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            href="http://example.com"
+            target="_blank"
+          >
+            Warning
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-focus=""
+      data-simulate-hover=""
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        data-simulate-focus=""
+        data-simulate-hover=""
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          data-simulate-focus=""
+          data-simulate-hover=""
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            data-simulate-focus=""
+            data-simulate-hover=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Hover
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      data-simulate-focus=""
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        data-simulate-active=""
+        data-simulate-focus=""
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          data-simulate-active=""
+          data-simulate-focus=""
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            data-simulate-active=""
+            data-simulate-focus=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Focus & Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      data-simulate-active=""
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        data-simulate-active=""
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          data-simulate-active=""
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            data-simulate-active=""
+            href="http://example.com"
+            target="_blank"
+          >
+            Active
+          </a>
+        </Link>
+      </Link>
+    </Link>
+  </div>
+</glamorous(glamorous(div))>
 `;
 
 exports[`Link demo examples variants 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   color: #2e6fd9;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   color: #1f5dc2;
 }
 
-.glamor-4,
-[data-glamor-4] {
+.css-10,
+[data-css-10] {
   font-family: Open Sans;
 }
 
-.glamor-4 > a,
-[data-glamor-4] > a {
+.css-10 > a,
+[data-css-10] > a {
   margin-right: 0.5rem;
 }
 
-.glamor-1,
-[data-glamor-1] {
+.css-11,
+[data-css-11] {
   color: #db2929;
   text-decoration: none;
 }
 
-.glamor-1:hover,
-[data-glamor-1]:hover,
-.glamor-1[data-simulate-hover],
-[data-glamor-1][data-simulate-hover] {
+.css-11:hover,
+[data-css-11]:hover,
+.css-11[data-simulate-hover],
+[data-css-11][data-simulate-hover] {
   color: #eb4d4d;
   text-decoration: underline;
 }
 
-.glamor-1:focus,
-[data-glamor-1]:focus,
-.glamor-1[data-simulate-focus],
-[data-glamor-1][data-simulate-focus] {
+.css-11:focus,
+[data-css-11]:focus,
+.css-11[data-simulate-focus],
+[data-css-11][data-simulate-focus] {
   color: #db2929;
   outline: 1px solid #c71818;
   outline-offset: 2px;
 }
 
-.glamor-1:active,
-[data-glamor-1]:active,
-.glamor-1[data-simulate-active],
-[data-glamor-1][data-simulate-active] {
+.css-11:active,
+[data-css-11]:active,
+.css-11[data-simulate-active],
+[data-css-11][data-simulate-active] {
   color: #c71818;
 }
 
-.glamor-2,
-[data-glamor-2] {
+.css-21,
+[data-css-21] {
   color: #06783f;
   text-decoration: none;
 }
 
-.glamor-2:hover,
-[data-glamor-2]:hover,
-.glamor-2[data-simulate-hover],
-[data-glamor-2][data-simulate-hover] {
+.css-21:hover,
+[data-css-21]:hover,
+.css-21[data-simulate-hover],
+[data-css-21][data-simulate-hover] {
   color: #0a8f4c;
   text-decoration: underline;
 }
 
-.glamor-2:focus,
-[data-glamor-2]:focus,
-.glamor-2[data-simulate-focus],
-[data-glamor-2][data-simulate-focus] {
+.css-21:focus,
+[data-css-21]:focus,
+.css-21[data-simulate-focus],
+[data-css-21][data-simulate-focus] {
   color: #06783f;
   outline: 1px solid #0a8f4c;
   outline-offset: 2px;
 }
 
-.glamor-2:active,
-[data-glamor-2]:active,
-.glamor-2[data-simulate-active],
-[data-glamor-2][data-simulate-active] {
+.css-21:active,
+[data-css-21]:active,
+.css-21[data-simulate-active],
+[data-css-21][data-simulate-active] {
   color: #046132;
 }
 
-.glamor-3,
-[data-glamor-3] {
+.css-31,
+[data-css-31] {
   color: #cf4615;
   text-decoration: none;
 }
 
-.glamor-3:hover,
-[data-glamor-3]:hover,
-.glamor-3[data-simulate-hover],
-[data-glamor-3][data-simulate-hover] {
+.css-31:hover,
+[data-css-31]:hover,
+.css-31[data-simulate-hover],
+[data-css-31][data-simulate-hover] {
   color: #e05b2b;
   text-decoration: underline;
 }
 
-.glamor-3:focus,
-[data-glamor-3]:focus,
-.glamor-3[data-simulate-focus],
-[data-glamor-3][data-simulate-focus] {
+.css-31:focus,
+[data-css-31]:focus,
+.css-31[data-simulate-focus],
+[data-css-31][data-simulate-focus] {
   color: #cf4615;
   outline: 1px solid #cf4615;
   outline-offset: 2px;
 }
 
-.glamor-3:active,
-[data-glamor-3]:active,
-.glamor-3[data-simulate-active],
-[data-glamor-3][data-simulate-active] {
+.css-31:active,
+[data-css-31]:active,
+.css-31[data-simulate-active],
+[data-css-31][data-simulate-active] {
   color: #bd3909;
 }
 
-<ThemeProvider>
-  <ThemeProvider>
-    <LiveProvider>
-      <div
-        className="react-live"
-        scope={
-          Object {
-            "DemoLayout": [Function],
-            "Link": [Function],
-          }
-        }
+<glamorous(glamorous(div))>
+  <div
+    className="css-10"
+  >
+    <Link
+      href="http://example.com"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
       >
-        <LivePreview>
-          <div
-            className="react-live-preview"
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="regular"
+        >
+          <a
+            className="css-0"
+            href="http://example.com"
+            target="_blank"
           >
-            <glamorous(glamorous(div))>
-              <div
-                className="glamor-4"
-              >
-                <Link
-                  href="http://example.com"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="regular"
-                    >
-                      <a
-                        className="glamor-0"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Regular
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  href="http://example.com"
-                  variant="danger"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="danger"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="danger"
-                    >
-                      <a
-                        className="glamor-1"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Danger
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  href="http://example.com"
-                  variant="success"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="success"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="success"
-                    >
-                      <a
-                        className="glamor-2"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Success
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-                <Link
-                  href="http://example.com"
-                  variant="warning"
-                >
-                  <Link
-                    href="http://example.com"
-                    target="_blank"
-                    variant="warning"
-                  >
-                    <Link
-                      href="http://example.com"
-                      target="_blank"
-                      variant="warning"
-                    >
-                      <a
-                        className="glamor-3"
-                        href="http://example.com"
-                        target="_blank"
-                      >
-                        Warning
-                      </a>
-                    </Link>
-                  </Link>
-                </Link>
-              </div>
-            </glamorous(glamorous(div))>
-          </div>
-        </LivePreview>
-      </div>
-    </LiveProvider>
-  </ThemeProvider>
-</ThemeProvider>
+            Regular
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      href="http://example.com"
+      variant="danger"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="danger"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="danger"
+        >
+          <a
+            className="css-11"
+            href="http://example.com"
+            target="_blank"
+          >
+            Danger
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      href="http://example.com"
+      variant="success"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="success"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="success"
+        >
+          <a
+            className="css-21"
+            href="http://example.com"
+            target="_blank"
+          >
+            Success
+          </a>
+        </Link>
+      </Link>
+    </Link>
+    <Link
+      href="http://example.com"
+      variant="warning"
+    >
+      <Link
+        href="http://example.com"
+        target="_blank"
+        variant="warning"
+      >
+        <Link
+          href="http://example.com"
+          target="_blank"
+          variant="warning"
+        >
+          <a
+            className="css-31"
+            href="http://example.com"
+            target="_blank"
+          >
+            Warning
+          </a>
+        </Link>
+      </Link>
+    </Link>
+  </div>
+</glamorous(glamorous(div))>
 `;

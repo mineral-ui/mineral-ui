@@ -1,33 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`createThemedComponent renders a Link correctly with a custom theme function 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   color: #db2929;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   color: #1f5dc2;
 }
 
@@ -346,7 +346,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
                 variant="regular"
               >
                 <a
-                  className="glamor-0"
+                  className="css-0"
                 />
               </Link>
             </Link>
@@ -359,33 +359,33 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
 `;
 
 exports[`createThemedComponent renders a Link correctly with a custom theme object 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   color: mediumvioletred;
   text-decoration: none;
 }
 
-.glamor-0:hover,
-[data-glamor-0]:hover,
-.glamor-0[data-simulate-hover],
-[data-glamor-0][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   color: #4a89e8;
   text-decoration: underline;
 }
 
-.glamor-0:focus,
-[data-glamor-0]:focus,
-.glamor-0[data-simulate-focus],
-[data-glamor-0][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   color: #2e6fd9;
   outline: 1px solid #2e6fd9;
   outline-offset: 2px;
 }
 
-.glamor-0:active,
-[data-glamor-0]:active,
-.glamor-0[data-simulate-active],
-[data-glamor-0][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   color: #1f5dc2;
 }
 
@@ -704,7 +704,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
                 variant="regular"
               >
                 <a
-                  className="glamor-0"
+                  className="css-0"
                 />
               </Link>
             </Link>
@@ -717,8 +717,8 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
 `;
 
 exports[`createThemedComponent renders correctly 1`] = `
-.glamor-0,
-[data-glamor-0] {
+.css-0,
+[data-css-0] {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -1039,7 +1039,7 @@ exports[`createThemedComponent renders correctly 1`] = `
             <Sample>
               <glamorous(span)>
                 <span
-                  className="glamor-0"
+                  className="css-0"
                 >
                   Sample
                 </span>
