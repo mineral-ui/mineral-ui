@@ -11,8 +11,7 @@ import DropdownContent, {
 import ItemMatcher from './ItemMatcher';
 import { getItems } from '../Menu/Menu';
 
-import type { Items, ItemGroups } from '../Menu/Menu';
-import type { Item } from '../Menu/MenuItem';
+import type { Item, Items, ItemGroups } from '../Menu/Menu';
 
 type Props = {
   /** Trigger for the Dropdown */

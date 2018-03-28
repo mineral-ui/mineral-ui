@@ -11,7 +11,7 @@ import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import FauxControl from '../FauxControl';
 import { componentTheme as textInputComponentTheme } from '../TextInput/TextInput';
 
-import type { Item } from '../Menu/MenuItem';
+import type { Item } from '../Menu/Menu';
 
 type Props = {
   /** Disables the control */

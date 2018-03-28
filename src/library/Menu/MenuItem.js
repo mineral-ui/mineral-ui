@@ -6,6 +6,8 @@ import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
 
+import type { Item } from './Menu';
+
 type Props = {
   /** Rendered content of the component */
   children?: React$Node,
@@ -28,19 +30,6 @@ type Props = {
   /** Determines if the item can be focused */
   tabIndex?: number,
   /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
-};
-
-export type Item = {
-  iconEnd?: React$Element<*>,
-  iconStart?: React$Element<*>,
-  disabled?: boolean,
-  divider?: boolean,
-  onClick?: (event: SyntheticEvent<>) => void,
-  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
-  secondaryText?: React$Node,
-  text?: React$Node,
-  value?: string,
   variant?: 'danger' | 'success' | 'warning'
 };
 
