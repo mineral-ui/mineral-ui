@@ -3,8 +3,6 @@ import React from 'react';
 import { createStyledComponent } from '../styles';
 import { MenuDivider, MenuGroup, MenuItem } from './index';
 
-import type { Item } from './MenuItem';
-
 type Props = {
   /** [MenuDivider](/components/menu-divider), [MenuGroup](/components/menu-group), or [MenuItem](/components/menu-item) */
   children?: React$Node,
@@ -12,6 +10,19 @@ type Props = {
   data?: Items | ItemGroups,
   /** @Private Function that returns props to be applied to each item */
   getItemProps?: (props: Object, scope: Object) => Object
+};
+
+export type Item = {
+  iconEnd?: React$Element<*>,
+  iconStart?: React$Element<*>,
+  disabled?: boolean,
+  divider?: boolean,
+  onClick?: (event: SyntheticEvent<>) => void,
+  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
+  secondaryText?: React$Node,
+  text?: React$Node,
+  value?: string,
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 export type ItemGroup = { items: Array<Item>, title?: React$Node };

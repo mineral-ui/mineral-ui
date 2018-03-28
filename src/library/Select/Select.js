@@ -16,8 +16,7 @@ import SelectTrigger, {
 } from './SelectTrigger';
 import { pxToEm } from '../styles';
 
-import type { Items, ItemGroups } from '../Menu/Menu';
-import type { Item } from '../Menu/MenuItem';
+import type { Item, Items, ItemGroups } from '../Menu/Menu';
 
 type Props = {
   /**
