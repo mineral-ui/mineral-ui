@@ -42,7 +42,7 @@ export default function ComponentsByCategory() {
                 return (
                   <Figure tabIndex={0} key={index}>
                     <IconComponent size="32" />
-                    <FigCaption>{IconComponent.name}</FigCaption>
+                    <FigCaption>{IconComponent.displayName}</FigCaption>
                   </Figure>
                 );
               })}
