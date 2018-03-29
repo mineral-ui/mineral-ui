@@ -25,4 +25,5 @@ export default function IconUnfoldMore(props: Props) {
   );
 }
 
+IconUnfoldMore.displayName = 'IconUnfoldMore';
 IconUnfoldMore.category = 'navigation';

@@ -25,4 +25,5 @@ export default function IconArchive(props: Props) {
   );
 }
 
+IconArchive.displayName = 'IconArchive';
 IconArchive.category = 'content';

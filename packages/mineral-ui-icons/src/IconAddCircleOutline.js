@@ -25,4 +25,5 @@ export default function IconAddCircleOutline(props: Props) {
   );
 }
 
+IconAddCircleOutline.displayName = 'IconAddCircleOutline';
 IconAddCircleOutline.category = 'content';

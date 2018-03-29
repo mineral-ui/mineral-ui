@@ -25,4 +25,5 @@ export default function IconLocalCafe(props: Props) {
   );
 }
 
+IconLocalCafe.displayName = 'IconLocalCafe';
 IconLocalCafe.category = 'maps';

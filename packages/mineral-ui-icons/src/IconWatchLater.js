@@ -25,4 +25,5 @@ export default function IconWatchLater(props: Props) {
   );
 }
 
+IconWatchLater.displayName = 'IconWatchLater';
 IconWatchLater.category = 'action';

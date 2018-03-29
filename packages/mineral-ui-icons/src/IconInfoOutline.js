@@ -25,4 +25,5 @@ export default function IconInfoOutline(props: Props) {
   );
 }
 
+IconInfoOutline.displayName = 'IconInfoOutline';
 IconInfoOutline.category = 'action';

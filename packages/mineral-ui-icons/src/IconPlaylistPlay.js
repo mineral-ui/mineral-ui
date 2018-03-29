@@ -25,4 +25,5 @@ export default function IconPlaylistPlay(props: Props) {
   );
 }
 
+IconPlaylistPlay.displayName = 'IconPlaylistPlay';
 IconPlaylistPlay.category = 'av';

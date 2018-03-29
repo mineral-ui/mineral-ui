@@ -25,4 +25,5 @@ export default function IconNetworkCell(props: Props) {
   );
 }
 
+IconNetworkCell.displayName = 'IconNetworkCell';
 IconNetworkCell.category = 'device';

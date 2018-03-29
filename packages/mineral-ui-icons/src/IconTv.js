@@ -25,4 +25,5 @@ export default function IconTv(props: Props) {
   );
 }
 
+IconTv.displayName = 'IconTv';
 IconTv.category = 'hardware';

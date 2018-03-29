@@ -25,4 +25,5 @@ export default function IconLocalHospital(props: Props) {
   );
 }
 
+IconLocalHospital.displayName = 'IconLocalHospital';
 IconLocalHospital.category = 'maps';

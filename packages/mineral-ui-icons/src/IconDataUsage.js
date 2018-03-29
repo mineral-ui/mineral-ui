@@ -25,4 +25,5 @@ export default function IconDataUsage(props: Props) {
   );
 }
 
+IconDataUsage.displayName = 'IconDataUsage';
 IconDataUsage.category = 'device';

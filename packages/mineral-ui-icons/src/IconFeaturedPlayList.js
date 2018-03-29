@@ -25,4 +25,5 @@ export default function IconFeaturedPlayList(props: Props) {
   );
 }
 
+IconFeaturedPlayList.displayName = 'IconFeaturedPlayList';
 IconFeaturedPlayList.category = 'av';

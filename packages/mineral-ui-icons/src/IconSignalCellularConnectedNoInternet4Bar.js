@@ -25,4 +25,5 @@ export default function IconSignalCellularConnectedNoInternet4Bar(props: Props) 
   );
 }
 
+IconSignalCellularConnectedNoInternet4Bar.displayName = 'IconSignalCellularConnectedNoInternet4Bar';
 IconSignalCellularConnectedNoInternet4Bar.category = 'device';

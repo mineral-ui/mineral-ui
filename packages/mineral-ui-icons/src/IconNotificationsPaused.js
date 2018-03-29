@@ -25,4 +25,5 @@ export default function IconNotificationsPaused(props: Props) {
   );
 }
 
+IconNotificationsPaused.displayName = 'IconNotificationsPaused';
 IconNotificationsPaused.category = 'social';

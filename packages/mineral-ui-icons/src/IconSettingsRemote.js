@@ -25,4 +25,5 @@ export default function IconSettingsRemote(props: Props) {
   );
 }
 
+IconSettingsRemote.displayName = 'IconSettingsRemote';
 IconSettingsRemote.category = 'action';

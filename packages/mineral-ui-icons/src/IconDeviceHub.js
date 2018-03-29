@@ -25,4 +25,5 @@ export default function IconDeviceHub(props: Props) {
   );
 }
 
+IconDeviceHub.displayName = 'IconDeviceHub';
 IconDeviceHub.category = 'hardware';

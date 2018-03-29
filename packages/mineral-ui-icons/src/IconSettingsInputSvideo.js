@@ -25,4 +25,5 @@ export default function IconSettingsInputSvideo(props: Props) {
   );
 }
 
+IconSettingsInputSvideo.displayName = 'IconSettingsInputSvideo';
 IconSettingsInputSvideo.category = 'action';

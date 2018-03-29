@@ -25,4 +25,5 @@ export default function IconFlashOn(props: Props) {
   );
 }
 
+IconFlashOn.displayName = 'IconFlashOn';
 IconFlashOn.category = 'image';

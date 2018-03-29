@@ -25,4 +25,5 @@ export default function IconTextFields(props: Props) {
   );
 }
 
+IconTextFields.displayName = 'IconTextFields';
 IconTextFields.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconMood(props: Props) {
   );
 }
 
+IconMood.displayName = 'IconMood';
 IconMood.category = 'social';

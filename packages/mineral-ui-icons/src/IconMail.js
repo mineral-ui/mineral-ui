@@ -25,4 +25,5 @@ export default function IconMail(props: Props) {
   );
 }
 
+IconMail.displayName = 'IconMail';
 IconMail.category = 'content';

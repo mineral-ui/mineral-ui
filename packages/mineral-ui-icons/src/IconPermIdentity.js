@@ -25,4 +25,5 @@ export default function IconPermIdentity(props: Props) {
   );
 }
 
+IconPermIdentity.displayName = 'IconPermIdentity';
 IconPermIdentity.category = 'action';

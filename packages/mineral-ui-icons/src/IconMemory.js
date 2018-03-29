@@ -25,4 +25,5 @@ export default function IconMemory(props: Props) {
   );
 }
 
+IconMemory.displayName = 'IconMemory';
 IconMemory.category = 'hardware';

@@ -25,4 +25,5 @@ export default function IconMoreVert(props: Props) {
   );
 }
 
+IconMoreVert.displayName = 'IconMoreVert';
 IconMoreVert.category = 'navigation';

@@ -25,4 +25,5 @@ export default function IconLaptopChromebook(props: Props) {
   );
 }
 
+IconLaptopChromebook.displayName = 'IconLaptopChromebook';
 IconLaptopChromebook.category = 'hardware';

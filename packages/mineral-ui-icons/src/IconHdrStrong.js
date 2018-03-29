@@ -25,4 +25,5 @@ export default function IconHdrStrong(props: Props) {
   );
 }
 
+IconHdrStrong.displayName = 'IconHdrStrong';
 IconHdrStrong.category = 'image';

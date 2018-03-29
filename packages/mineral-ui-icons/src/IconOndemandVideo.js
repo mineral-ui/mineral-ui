@@ -25,4 +25,5 @@ export default function IconOndemandVideo(props: Props) {
   );
 }
 
+IconOndemandVideo.displayName = 'IconOndemandVideo';
 IconOndemandVideo.category = 'notification';

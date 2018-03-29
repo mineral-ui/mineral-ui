@@ -25,4 +25,5 @@ export default function IconBusiness(props: Props) {
   );
 }
 
+IconBusiness.displayName = 'IconBusiness';
 IconBusiness.category = 'communication';

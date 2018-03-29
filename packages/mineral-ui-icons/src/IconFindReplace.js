@@ -25,4 +25,5 @@ export default function IconFindReplace(props: Props) {
   );
 }
 
+IconFindReplace.displayName = 'IconFindReplace';
 IconFindReplace.category = 'action';

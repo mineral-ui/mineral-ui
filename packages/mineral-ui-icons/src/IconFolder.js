@@ -25,4 +25,5 @@ export default function IconFolder(props: Props) {
   );
 }
 
+IconFolder.displayName = 'IconFolder';
 IconFolder.category = 'file';

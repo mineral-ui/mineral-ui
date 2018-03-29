@@ -25,4 +25,5 @@ export default function IconLowPriority(props: Props) {
   );
 }
 
+IconLowPriority.displayName = 'IconLowPriority';
 IconLowPriority.category = 'content';

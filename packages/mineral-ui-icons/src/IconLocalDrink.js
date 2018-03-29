@@ -25,4 +25,5 @@ export default function IconLocalDrink(props: Props) {
   );
 }
 
+IconLocalDrink.displayName = 'IconLocalDrink';
 IconLocalDrink.category = 'maps';

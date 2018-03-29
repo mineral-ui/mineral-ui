@@ -25,4 +25,5 @@ export default function IconDashboard(props: Props) {
   );
 }
 
+IconDashboard.displayName = 'IconDashboard';
 IconDashboard.category = 'action';

@@ -25,4 +25,5 @@ export default function IconGpsFixed(props: Props) {
   );
 }
 
+IconGpsFixed.displayName = 'IconGpsFixed';
 IconGpsFixed.category = 'device';

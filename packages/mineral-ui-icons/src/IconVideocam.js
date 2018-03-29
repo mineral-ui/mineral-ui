@@ -25,4 +25,5 @@ export default function IconVideocam(props: Props) {
   );
 }
 
+IconVideocam.displayName = 'IconVideocam';
 IconVideocam.category = 'av';

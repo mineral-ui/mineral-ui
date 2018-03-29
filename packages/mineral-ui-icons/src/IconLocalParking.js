@@ -25,4 +25,5 @@ export default function IconLocalParking(props: Props) {
   );
 }
 
+IconLocalParking.displayName = 'IconLocalParking';
 IconLocalParking.category = 'maps';

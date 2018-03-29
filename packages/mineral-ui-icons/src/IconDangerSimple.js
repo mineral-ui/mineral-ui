@@ -25,4 +25,5 @@ export default function IconDangerSimple(props: Props) {
   );
 }
 
+IconDangerSimple.displayName = 'IconDangerSimple';
 IconDangerSimple.category = 'alert';

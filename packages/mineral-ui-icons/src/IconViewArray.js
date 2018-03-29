@@ -25,4 +25,5 @@ export default function IconViewArray(props: Props) {
   );
 }
 
+IconViewArray.displayName = 'IconViewArray';
 IconViewArray.category = 'action';

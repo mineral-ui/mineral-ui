@@ -25,4 +25,5 @@ export default function IconVerticalAlignBottom(props: Props) {
   );
 }
 
+IconVerticalAlignBottom.displayName = 'IconVerticalAlignBottom';
 IconVerticalAlignBottom.category = 'editor';

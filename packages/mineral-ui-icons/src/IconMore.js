@@ -25,4 +25,5 @@ export default function IconMore(props: Props) {
   );
 }
 
+IconMore.displayName = 'IconMore';
 IconMore.category = 'notification';

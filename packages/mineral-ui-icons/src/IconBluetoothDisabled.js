@@ -25,4 +25,5 @@ export default function IconBluetoothDisabled(props: Props) {
   );
 }
 
+IconBluetoothDisabled.displayName = 'IconBluetoothDisabled';
 IconBluetoothDisabled.category = 'device';

@@ -25,4 +25,5 @@ export default function IconBrightnessHigh(props: Props) {
   );
 }
 
+IconBrightnessHigh.displayName = 'IconBrightnessHigh';
 IconBrightnessHigh.category = 'device';

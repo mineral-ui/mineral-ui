@@ -25,4 +25,5 @@ export default function IconSettingsInputComposite(props: Props) {
   );
 }
 
+IconSettingsInputComposite.displayName = 'IconSettingsInputComposite';
 IconSettingsInputComposite.category = 'action';

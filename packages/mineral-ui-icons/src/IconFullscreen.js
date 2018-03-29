@@ -25,4 +25,5 @@ export default function IconFullscreen(props: Props) {
   );
 }
 
+IconFullscreen.displayName = 'IconFullscreen';
 IconFullscreen.category = 'navigation';

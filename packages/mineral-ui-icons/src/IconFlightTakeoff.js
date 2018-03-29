@@ -25,4 +25,5 @@ export default function IconFlightTakeoff(props: Props) {
   );
 }
 
+IconFlightTakeoff.displayName = 'IconFlightTakeoff';
 IconFlightTakeoff.category = 'action';

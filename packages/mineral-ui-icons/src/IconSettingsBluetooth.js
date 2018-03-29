@@ -25,4 +25,5 @@ export default function IconSettingsBluetooth(props: Props) {
   );
 }
 
+IconSettingsBluetooth.displayName = 'IconSettingsBluetooth';
 IconSettingsBluetooth.category = 'action';

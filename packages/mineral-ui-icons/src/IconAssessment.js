@@ -25,4 +25,5 @@ export default function IconAssessment(props: Props) {
   );
 }
 
+IconAssessment.displayName = 'IconAssessment';
 IconAssessment.category = 'action';

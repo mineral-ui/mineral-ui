@@ -25,4 +25,5 @@ export default function IconDehaze(props: Props) {
   );
 }
 
+IconDehaze.displayName = 'IconDehaze';
 IconDehaze.category = 'image';

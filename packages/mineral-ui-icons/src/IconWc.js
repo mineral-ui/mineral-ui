@@ -25,4 +25,5 @@ export default function IconWc(props: Props) {
   );
 }
 
+IconWc.displayName = 'IconWc';
 IconWc.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconLooks4(props: Props) {
   );
 }
 
+IconLooks4.displayName = 'IconLooks4';
 IconLooks4.category = 'image';

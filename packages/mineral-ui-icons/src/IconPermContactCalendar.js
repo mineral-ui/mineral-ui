@@ -25,4 +25,5 @@ export default function IconPermContactCalendar(props: Props) {
   );
 }
 
+IconPermContactCalendar.displayName = 'IconPermContactCalendar';
 IconPermContactCalendar.category = 'action';

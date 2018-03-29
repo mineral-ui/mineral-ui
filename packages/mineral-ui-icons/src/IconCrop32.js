@@ -25,4 +25,5 @@ export default function IconCrop32(props: Props) {
   );
 }
 
+IconCrop32.displayName = 'IconCrop32';
 IconCrop32.category = 'image';

@@ -25,4 +25,5 @@ export default function IconAutorenew(props: Props) {
   );
 }
 
+IconAutorenew.displayName = 'IconAutorenew';
 IconAutorenew.category = 'action';

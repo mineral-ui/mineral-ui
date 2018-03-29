@@ -25,4 +25,5 @@ export default function IconWallpaper(props: Props) {
   );
 }
 
+IconWallpaper.displayName = 'IconWallpaper';
 IconWallpaper.category = 'device';

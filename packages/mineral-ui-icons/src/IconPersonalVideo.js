@@ -25,4 +25,5 @@ export default function IconPersonalVideo(props: Props) {
   );
 }
 
+IconPersonalVideo.displayName = 'IconPersonalVideo';
 IconPersonalVideo.category = 'notification';

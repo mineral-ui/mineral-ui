@@ -25,4 +25,5 @@ export default function IconAirplay(props: Props) {
   );
 }
 
+IconAirplay.displayName = 'IconAirplay';
 IconAirplay.category = 'av';

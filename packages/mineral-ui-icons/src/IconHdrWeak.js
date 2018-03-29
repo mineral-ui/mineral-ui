@@ -25,4 +25,5 @@ export default function IconHdrWeak(props: Props) {
   );
 }
 
+IconHdrWeak.displayName = 'IconHdrWeak';
 IconHdrWeak.category = 'image';

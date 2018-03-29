@@ -25,4 +25,5 @@ export default function IconImportExport(props: Props) {
   );
 }
 
+IconImportExport.displayName = 'IconImportExport';
 IconImportExport.category = 'communication';

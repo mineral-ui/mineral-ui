@@ -25,4 +25,5 @@ export default function IconYoutubeSearchedFor(props: Props) {
   );
 }
 
+IconYoutubeSearchedFor.displayName = 'IconYoutubeSearchedFor';
 IconYoutubeSearchedFor.category = 'action';

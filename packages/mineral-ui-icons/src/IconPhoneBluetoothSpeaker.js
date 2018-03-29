@@ -25,4 +25,5 @@ export default function IconPhoneBluetoothSpeaker(props: Props) {
   );
 }
 
+IconPhoneBluetoothSpeaker.displayName = 'IconPhoneBluetoothSpeaker';
 IconPhoneBluetoothSpeaker.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconDomain(props: Props) {
   );
 }
 
+IconDomain.displayName = 'IconDomain';
 IconDomain.category = 'social';

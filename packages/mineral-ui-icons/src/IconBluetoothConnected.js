@@ -25,4 +25,5 @@ export default function IconBluetoothConnected(props: Props) {
   );
 }
 
+IconBluetoothConnected.displayName = 'IconBluetoothConnected';
 IconBluetoothConnected.category = 'device';

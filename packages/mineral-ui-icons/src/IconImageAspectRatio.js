@@ -25,4 +25,5 @@ export default function IconImageAspectRatio(props: Props) {
   );
 }
 
+IconImageAspectRatio.displayName = 'IconImageAspectRatio';
 IconImageAspectRatio.category = 'image';

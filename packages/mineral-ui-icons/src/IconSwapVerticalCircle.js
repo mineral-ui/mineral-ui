@@ -25,4 +25,5 @@ export default function IconSwapVerticalCircle(props: Props) {
   );
 }
 
+IconSwapVerticalCircle.displayName = 'IconSwapVerticalCircle';
 IconSwapVerticalCircle.category = 'action';

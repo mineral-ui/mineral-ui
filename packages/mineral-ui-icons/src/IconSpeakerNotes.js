@@ -25,4 +25,5 @@ export default function IconSpeakerNotes(props: Props) {
   );
 }
 
+IconSpeakerNotes.displayName = 'IconSpeakerNotes';
 IconSpeakerNotes.category = 'action';

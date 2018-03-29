@@ -25,4 +25,5 @@ export default function IconMonetizationOn(props: Props) {
   );
 }
 
+IconMonetizationOn.displayName = 'IconMonetizationOn';
 IconMonetizationOn.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconTitle(props: Props) {
   );
 }
 
+IconTitle.displayName = 'IconTitle';
 IconTitle.category = 'editor';

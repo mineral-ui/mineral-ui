@@ -25,4 +25,5 @@ export default function IconTimer(props: Props) {
   );
 }
 
+IconTimer.displayName = 'IconTimer';
 IconTimer.category = 'image';

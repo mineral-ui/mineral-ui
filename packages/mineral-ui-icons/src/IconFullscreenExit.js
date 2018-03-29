@@ -25,4 +25,5 @@ export default function IconFullscreenExit(props: Props) {
   );
 }
 
+IconFullscreenExit.displayName = 'IconFullscreenExit';
 IconFullscreenExit.category = 'navigation';

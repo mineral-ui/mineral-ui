@@ -25,4 +25,5 @@ export default function IconHighQuality(props: Props) {
   );
 }
 
+IconHighQuality.displayName = 'IconHighQuality';
 IconHighQuality.category = 'av';

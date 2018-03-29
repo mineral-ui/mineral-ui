@@ -25,4 +25,5 @@ export default function IconCameraRear(props: Props) {
   );
 }
 
+IconCameraRear.displayName = 'IconCameraRear';
 IconCameraRear.category = 'image';

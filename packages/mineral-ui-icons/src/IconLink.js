@@ -25,4 +25,5 @@ export default function IconLink(props: Props) {
   );
 }
 
+IconLink.displayName = 'IconLink';
 IconLink.category = 'content';

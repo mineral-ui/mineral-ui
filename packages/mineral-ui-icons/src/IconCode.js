@@ -25,4 +25,5 @@ export default function IconCode(props: Props) {
   );
 }
 
+IconCode.displayName = 'IconCode';
 IconCode.category = 'action';

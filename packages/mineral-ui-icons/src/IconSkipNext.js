@@ -25,4 +25,5 @@ export default function IconSkipNext(props: Props) {
   );
 }
 
+IconSkipNext.displayName = 'IconSkipNext';
 IconSkipNext.category = 'av';

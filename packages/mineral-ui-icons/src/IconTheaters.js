@@ -25,4 +25,5 @@ export default function IconTheaters(props: Props) {
   );
 }
 
+IconTheaters.displayName = 'IconTheaters';
 IconTheaters.category = 'action';

@@ -25,4 +25,5 @@ export default function IconMms(props: Props) {
   );
 }
 
+IconMms.displayName = 'IconMms';
 IconMms.category = 'notification';

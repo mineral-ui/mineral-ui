@@ -25,4 +25,5 @@ export default function IconSettingsBackupRestore(props: Props) {
   );
 }
 
+IconSettingsBackupRestore.displayName = 'IconSettingsBackupRestore';
 IconSettingsBackupRestore.category = 'action';

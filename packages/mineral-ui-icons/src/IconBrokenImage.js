@@ -25,4 +25,5 @@ export default function IconBrokenImage(props: Props) {
   );
 }
 
+IconBrokenImage.displayName = 'IconBrokenImage';
 IconBrokenImage.category = 'image';

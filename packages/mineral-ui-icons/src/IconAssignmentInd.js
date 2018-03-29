@@ -25,4 +25,5 @@ export default function IconAssignmentInd(props: Props) {
   );
 }
 
+IconAssignmentInd.displayName = 'IconAssignmentInd';
 IconAssignmentInd.category = 'action';

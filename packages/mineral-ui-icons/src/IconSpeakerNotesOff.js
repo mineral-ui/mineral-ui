@@ -25,4 +25,5 @@ export default function IconSpeakerNotesOff(props: Props) {
   );
 }
 
+IconSpeakerNotesOff.displayName = 'IconSpeakerNotesOff';
 IconSpeakerNotesOff.category = 'action';

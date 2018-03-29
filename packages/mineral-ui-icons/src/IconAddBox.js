@@ -25,4 +25,5 @@ export default function IconAddBox(props: Props) {
   );
 }
 
+IconAddBox.displayName = 'IconAddBox';
 IconAddBox.category = 'content';

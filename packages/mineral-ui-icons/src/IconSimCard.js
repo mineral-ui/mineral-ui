@@ -25,4 +25,5 @@ export default function IconSimCard(props: Props) {
   );
 }
 
+IconSimCard.displayName = 'IconSimCard';
 IconSimCard.category = 'hardware';

@@ -25,4 +25,5 @@ export default function IconLocalFlorist(props: Props) {
   );
 }
 
+IconLocalFlorist.displayName = 'IconLocalFlorist';
 IconLocalFlorist.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconSort(props: Props) {
   );
 }
 
+IconSort.displayName = 'IconSort';
 IconSort.category = 'content';

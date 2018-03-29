@@ -25,4 +25,5 @@ export default function IconHighlightOff(props: Props) {
   );
 }
 
+IconHighlightOff.displayName = 'IconHighlightOff';
 IconHighlightOff.category = 'action';

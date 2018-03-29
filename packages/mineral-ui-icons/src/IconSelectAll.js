@@ -25,4 +25,5 @@ export default function IconSelectAll(props: Props) {
   );
 }
 
+IconSelectAll.displayName = 'IconSelectAll';
 IconSelectAll.category = 'content';

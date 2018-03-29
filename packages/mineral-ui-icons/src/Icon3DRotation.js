@@ -25,4 +25,5 @@ export default function Icon3DRotation(props: Props) {
   );
 }
 
+Icon3DRotation.displayName = 'Icon3DRotation';
 Icon3DRotation.category = 'action';

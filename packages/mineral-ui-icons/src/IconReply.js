@@ -25,4 +25,5 @@ export default function IconReply(props: Props) {
   );
 }
 
+IconReply.displayName = 'IconReply';
 IconReply.category = 'content';

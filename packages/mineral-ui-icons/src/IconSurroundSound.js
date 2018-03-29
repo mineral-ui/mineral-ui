@@ -25,4 +25,5 @@ export default function IconSurroundSound(props: Props) {
   );
 }
 
+IconSurroundSound.displayName = 'IconSurroundSound';
 IconSurroundSound.category = 'av';

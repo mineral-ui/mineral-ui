@@ -25,4 +25,5 @@ export default function IconScreenRotation(props: Props) {
   );
 }
 
+IconScreenRotation.displayName = 'IconScreenRotation';
 IconScreenRotation.category = 'device';

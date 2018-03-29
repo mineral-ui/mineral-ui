@@ -25,4 +25,5 @@ export default function IconZoomOutMap(props: Props) {
   );
 }
 
+IconZoomOutMap.displayName = 'IconZoomOutMap';
 IconZoomOutMap.category = 'maps';

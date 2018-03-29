@@ -25,4 +25,5 @@ export default function IconDeleteSweep(props: Props) {
   );
 }
 
+IconDeleteSweep.displayName = 'IconDeleteSweep';
 IconDeleteSweep.category = 'content';

@@ -25,4 +25,5 @@ export default function IconLabelOutline(props: Props) {
   );
 }
 
+IconLabelOutline.displayName = 'IconLabelOutline';
 IconLabelOutline.category = 'action';

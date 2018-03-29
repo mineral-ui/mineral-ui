@@ -25,4 +25,5 @@ export default function IconPanoramaFishEye(props: Props) {
   );
 }
 
+IconPanoramaFishEye.displayName = 'IconPanoramaFishEye';
 IconPanoramaFishEye.category = 'image';

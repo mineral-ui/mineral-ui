@@ -25,4 +25,5 @@ export default function IconPersonAdd(props: Props) {
   );
 }
 
+IconPersonAdd.displayName = 'IconPersonAdd';
 IconPersonAdd.category = 'social';

@@ -25,4 +25,5 @@ export default function IconPower(props: Props) {
   );
 }
 
+IconPower.displayName = 'IconPower';
 IconPower.category = 'notification';

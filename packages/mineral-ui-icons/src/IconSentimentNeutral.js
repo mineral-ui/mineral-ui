@@ -25,4 +25,5 @@ export default function IconSentimentNeutral(props: Props) {
   );
 }
 
+IconSentimentNeutral.displayName = 'IconSentimentNeutral';
 IconSentimentNeutral.category = 'social';

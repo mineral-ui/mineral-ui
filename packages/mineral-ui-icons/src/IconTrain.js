@@ -25,4 +25,5 @@ export default function IconTrain(props: Props) {
   );
 }
 
+IconTrain.displayName = 'IconTrain';
 IconTrain.category = 'maps';

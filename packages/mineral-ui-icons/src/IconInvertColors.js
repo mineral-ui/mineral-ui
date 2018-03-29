@@ -25,4 +25,5 @@ export default function IconInvertColors(props: Props) {
   );
 }
 
+IconInvertColors.displayName = 'IconInvertColors';
 IconInvertColors.category = 'action';

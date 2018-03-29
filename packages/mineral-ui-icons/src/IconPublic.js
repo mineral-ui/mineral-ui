@@ -25,4 +25,5 @@ export default function IconPublic(props: Props) {
   );
 }
 
+IconPublic.displayName = 'IconPublic';
 IconPublic.category = 'social';

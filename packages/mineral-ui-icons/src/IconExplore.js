@@ -25,4 +25,5 @@ export default function IconExplore(props: Props) {
   );
 }
 
+IconExplore.displayName = 'IconExplore';
 IconExplore.category = 'action';

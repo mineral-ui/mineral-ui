@@ -25,4 +25,5 @@ export default function IconPublish(props: Props) {
   );
 }
 
+IconPublish.displayName = 'IconPublish';
 IconPublish.category = 'editor';

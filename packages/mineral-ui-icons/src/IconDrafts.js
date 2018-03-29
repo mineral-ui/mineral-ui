@@ -25,4 +25,5 @@ export default function IconDrafts(props: Props) {
   );
 }
 
+IconDrafts.displayName = 'IconDrafts';
 IconDrafts.category = 'content';

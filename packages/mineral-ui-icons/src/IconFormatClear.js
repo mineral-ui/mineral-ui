@@ -25,4 +25,5 @@ export default function IconFormatClear(props: Props) {
   );
 }
 
+IconFormatClear.displayName = 'IconFormatClear';
 IconFormatClear.category = 'editor';

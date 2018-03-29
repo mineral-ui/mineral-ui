@@ -25,4 +25,5 @@ export default function IconFormatColorText(props: Props) {
   );
 }
 
+IconFormatColorText.displayName = 'IconFormatColorText';
 IconFormatColorText.category = 'editor';

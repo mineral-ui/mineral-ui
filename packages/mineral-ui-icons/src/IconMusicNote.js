@@ -25,4 +25,5 @@ export default function IconMusicNote(props: Props) {
   );
 }
 
+IconMusicNote.displayName = 'IconMusicNote';
 IconMusicNote.category = 'image';

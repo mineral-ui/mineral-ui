@@ -25,4 +25,5 @@ export default function IconTrendingUp(props: Props) {
   );
 }
 
+IconTrendingUp.displayName = 'IconTrendingUp';
 IconTrendingUp.category = 'action';

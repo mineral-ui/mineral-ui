@@ -25,4 +25,5 @@ export default function IconRedeem(props: Props) {
   );
 }
 
+IconRedeem.displayName = 'IconRedeem';
 IconRedeem.category = 'action';

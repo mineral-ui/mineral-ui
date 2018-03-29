@@ -25,4 +25,5 @@ export default function IconForward(props: Props) {
   );
 }
 
+IconForward.displayName = 'IconForward';
 IconForward.category = 'content';

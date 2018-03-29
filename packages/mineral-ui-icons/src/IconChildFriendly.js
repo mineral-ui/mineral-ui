@@ -25,4 +25,5 @@ export default function IconChildFriendly(props: Props) {
   );
 }
 
+IconChildFriendly.displayName = 'IconChildFriendly';
 IconChildFriendly.category = 'places';

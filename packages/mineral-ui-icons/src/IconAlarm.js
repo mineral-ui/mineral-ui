@@ -25,4 +25,5 @@ export default function IconAlarm(props: Props) {
   );
 }
 
+IconAlarm.displayName = 'IconAlarm';
 IconAlarm.category = 'action';

@@ -25,4 +25,5 @@ export default function IconRssFeed(props: Props) {
   );
 }
 
+IconRssFeed.displayName = 'IconRssFeed';
 IconRssFeed.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconBeachAccess(props: Props) {
   );
 }
 
+IconBeachAccess.displayName = 'IconBeachAccess';
 IconBeachAccess.category = 'places';

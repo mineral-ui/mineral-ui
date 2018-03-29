@@ -25,4 +25,5 @@ export default function IconSettingsPhone(props: Props) {
   );
 }
 
+IconSettingsPhone.displayName = 'IconSettingsPhone';
 IconSettingsPhone.category = 'action';

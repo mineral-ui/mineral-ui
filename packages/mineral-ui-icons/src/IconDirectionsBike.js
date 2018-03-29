@@ -25,4 +25,5 @@ export default function IconDirectionsBike(props: Props) {
   );
 }
 
+IconDirectionsBike.displayName = 'IconDirectionsBike';
 IconDirectionsBike.category = 'maps';

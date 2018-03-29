@@ -25,4 +25,5 @@ export default function IconCardGiftcard(props: Props) {
   );
 }
 
+IconCardGiftcard.displayName = 'IconCardGiftcard';
 IconCardGiftcard.category = 'action';

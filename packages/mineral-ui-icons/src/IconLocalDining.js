@@ -25,4 +25,5 @@ export default function IconLocalDining(props: Props) {
   );
 }
 
+IconLocalDining.displayName = 'IconLocalDining';
 IconLocalDining.category = 'maps';

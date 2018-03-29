@@ -25,4 +25,5 @@ export default function IconTabUnselected(props: Props) {
   );
 }
 
+IconTabUnselected.displayName = 'IconTabUnselected';
 IconTabUnselected.category = 'action';

@@ -25,4 +25,5 @@ export default function IconBattery20(props: Props) {
   );
 }
 
+IconBattery20.displayName = 'IconBattery20';
 IconBattery20.category = 'device';

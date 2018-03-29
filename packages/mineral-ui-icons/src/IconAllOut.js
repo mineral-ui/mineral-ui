@@ -25,4 +25,5 @@ export default function IconAllOut(props: Props) {
   );
 }
 
+IconAllOut.displayName = 'IconAllOut';
 IconAllOut.category = 'action';

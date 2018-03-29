@@ -25,4 +25,5 @@ export default function IconPhotoCamera(props: Props) {
   );
 }
 
+IconPhotoCamera.displayName = 'IconPhotoCamera';
 IconPhotoCamera.category = 'image';

@@ -25,4 +25,5 @@ export default function IconSyncDisabled(props: Props) {
   );
 }
 
+IconSyncDisabled.displayName = 'IconSyncDisabled';
 IconSyncDisabled.category = 'notification';

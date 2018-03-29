@@ -25,4 +25,5 @@ export default function IconHealing(props: Props) {
   );
 }
 
+IconHealing.displayName = 'IconHealing';
 IconHealing.category = 'image';

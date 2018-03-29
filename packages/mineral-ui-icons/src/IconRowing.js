@@ -25,4 +25,5 @@ export default function IconRowing(props: Props) {
   );
 }
 
+IconRowing.displayName = 'IconRowing';
 IconRowing.category = 'action';

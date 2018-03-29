@@ -25,4 +25,5 @@ export default function IconInvertColorsOff(props: Props) {
   );
 }
 
+IconInvertColorsOff.displayName = 'IconInvertColorsOff';
 IconInvertColorsOff.category = 'communication';

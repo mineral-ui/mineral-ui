@@ -25,4 +25,5 @@ export default function IconCastConnected(props: Props) {
   );
 }
 
+IconCastConnected.displayName = 'IconCastConnected';
 IconCastConnected.category = 'hardware';

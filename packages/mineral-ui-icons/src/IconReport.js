@@ -25,4 +25,5 @@ export default function IconReport(props: Props) {
   );
 }
 
+IconReport.displayName = 'IconReport';
 IconReport.category = 'content';

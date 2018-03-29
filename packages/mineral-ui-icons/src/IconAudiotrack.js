@@ -25,4 +25,5 @@ export default function IconAudiotrack(props: Props) {
   );
 }
 
+IconAudiotrack.displayName = 'IconAudiotrack';
 IconAudiotrack.category = 'image';

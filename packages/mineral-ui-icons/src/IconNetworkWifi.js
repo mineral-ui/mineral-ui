@@ -25,4 +25,5 @@ export default function IconNetworkWifi(props: Props) {
   );
 }
 
+IconNetworkWifi.displayName = 'IconNetworkWifi';
 IconNetworkWifi.category = 'device';

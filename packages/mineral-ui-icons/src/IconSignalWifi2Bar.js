@@ -25,4 +25,5 @@ export default function IconSignalWifi2Bar(props: Props) {
   );
 }
 
+IconSignalWifi2Bar.displayName = 'IconSignalWifi2Bar';
 IconSignalWifi2Bar.category = 'device';

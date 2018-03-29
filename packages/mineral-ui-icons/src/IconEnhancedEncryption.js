@@ -25,4 +25,5 @@ export default function IconEnhancedEncryption(props: Props) {
   );
 }
 
+IconEnhancedEncryption.displayName = 'IconEnhancedEncryption';
 IconEnhancedEncryption.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconExplicit(props: Props) {
   );
 }
 
+IconExplicit.displayName = 'IconExplicit';
 IconExplicit.category = 'av';

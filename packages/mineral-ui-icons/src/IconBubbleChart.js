@@ -25,4 +25,5 @@ export default function IconBubbleChart(props: Props) {
   );
 }
 
+IconBubbleChart.displayName = 'IconBubbleChart';
 IconBubbleChart.category = 'editor';

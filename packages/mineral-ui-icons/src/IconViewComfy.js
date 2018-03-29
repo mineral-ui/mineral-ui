@@ -25,4 +25,5 @@ export default function IconViewComfy(props: Props) {
   );
 }
 
+IconViewComfy.displayName = 'IconViewComfy';
 IconViewComfy.category = 'image';

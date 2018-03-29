@@ -25,4 +25,5 @@ export default function IconCheck(props: Props) {
   );
 }
 
+IconCheck.displayName = 'IconCheck';
 IconCheck.category = 'navigation';

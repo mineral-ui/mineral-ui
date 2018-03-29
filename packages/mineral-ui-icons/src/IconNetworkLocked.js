@@ -25,4 +25,5 @@ export default function IconNetworkLocked(props: Props) {
   );
 }
 
+IconNetworkLocked.displayName = 'IconNetworkLocked';
 IconNetworkLocked.category = 'notification';

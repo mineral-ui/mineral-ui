@@ -25,4 +25,5 @@ export default function IconMovie(props: Props) {
   );
 }
 
+IconMovie.displayName = 'IconMovie';
 IconMovie.category = 'av';

@@ -25,4 +25,5 @@ export default function IconStrikethroughS(props: Props) {
   );
 }
 
+IconStrikethroughS.displayName = 'IconStrikethroughS';
 IconStrikethroughS.category = 'editor';

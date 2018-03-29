@@ -25,4 +25,5 @@ export default function IconRadio(props: Props) {
   );
 }
 
+IconRadio.displayName = 'IconRadio';
 IconRadio.category = 'av';

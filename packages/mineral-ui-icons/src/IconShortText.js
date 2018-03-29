@@ -25,4 +25,5 @@ export default function IconShortText(props: Props) {
   );
 }
 
+IconShortText.displayName = 'IconShortText';
 IconShortText.category = 'editor';

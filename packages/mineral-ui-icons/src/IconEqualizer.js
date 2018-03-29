@@ -25,4 +25,5 @@ export default function IconEqualizer(props: Props) {
   );
 }
 
+IconEqualizer.displayName = 'IconEqualizer';
 IconEqualizer.category = 'av';

@@ -25,4 +25,5 @@ export default function IconStreetview(props: Props) {
   );
 }
 
+IconStreetview.displayName = 'IconStreetview';
 IconStreetview.category = 'maps';

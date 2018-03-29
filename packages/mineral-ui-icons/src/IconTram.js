@@ -25,4 +25,5 @@ export default function IconTram(props: Props) {
   );
 }
 
+IconTram.displayName = 'IconTram';
 IconTram.category = 'maps';

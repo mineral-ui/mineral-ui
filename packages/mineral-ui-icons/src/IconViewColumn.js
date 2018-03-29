@@ -25,4 +25,5 @@ export default function IconViewColumn(props: Props) {
   );
 }
 
+IconViewColumn.displayName = 'IconViewColumn';
 IconViewColumn.category = 'action';

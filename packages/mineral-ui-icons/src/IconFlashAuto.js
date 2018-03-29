@@ -25,4 +25,5 @@ export default function IconFlashAuto(props: Props) {
   );
 }
 
+IconFlashAuto.displayName = 'IconFlashAuto';
 IconFlashAuto.category = 'image';

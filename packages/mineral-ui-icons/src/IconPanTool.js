@@ -25,4 +25,5 @@ export default function IconPanTool(props: Props) {
   );
 }
 
+IconPanTool.displayName = 'IconPanTool';
 IconPanTool.category = 'action';

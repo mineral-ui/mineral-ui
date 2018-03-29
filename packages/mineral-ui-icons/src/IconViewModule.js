@@ -25,4 +25,5 @@ export default function IconViewModule(props: Props) {
   );
 }
 
+IconViewModule.displayName = 'IconViewModule';
 IconViewModule.category = 'action';

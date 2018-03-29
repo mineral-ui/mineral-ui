@@ -25,4 +25,5 @@ export default function IconPortrait(props: Props) {
   );
 }
 
+IconPortrait.displayName = 'IconPortrait';
 IconPortrait.category = 'image';

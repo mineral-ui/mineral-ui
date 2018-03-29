@@ -25,4 +25,5 @@ export default function IconReceipt(props: Props) {
   );
 }
 
+IconReceipt.displayName = 'IconReceipt';
 IconReceipt.category = 'action';

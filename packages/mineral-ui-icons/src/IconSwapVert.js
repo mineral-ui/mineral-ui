@@ -25,4 +25,5 @@ export default function IconSwapVert(props: Props) {
   );
 }
 
+IconSwapVert.displayName = 'IconSwapVert';
 IconSwapVert.category = 'action';

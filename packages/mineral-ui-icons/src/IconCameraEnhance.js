@@ -25,4 +25,5 @@ export default function IconCameraEnhance(props: Props) {
   );
 }
 
+IconCameraEnhance.displayName = 'IconCameraEnhance';
 IconCameraEnhance.category = 'action';

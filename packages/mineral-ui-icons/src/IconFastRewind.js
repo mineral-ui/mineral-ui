@@ -25,4 +25,5 @@ export default function IconFastRewind(props: Props) {
   );
 }
 
+IconFastRewind.displayName = 'IconFastRewind';
 IconFastRewind.category = 'av';

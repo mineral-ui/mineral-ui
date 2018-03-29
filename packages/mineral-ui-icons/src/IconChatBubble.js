@@ -25,4 +25,5 @@ export default function IconChatBubble(props: Props) {
   );
 }
 
+IconChatBubble.displayName = 'IconChatBubble';
 IconChatBubble.category = 'communication';

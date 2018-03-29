@@ -25,4 +25,5 @@ export default function IconHd(props: Props) {
   );
 }
 
+IconHd.displayName = 'IconHd';
 IconHd.category = 'av';

@@ -25,4 +25,5 @@ export default function IconKeyboardTab(props: Props) {
   );
 }
 
+IconKeyboardTab.displayName = 'IconKeyboardTab';
 IconKeyboardTab.category = 'hardware';

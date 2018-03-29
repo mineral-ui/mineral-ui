@@ -25,4 +25,5 @@ export default function IconWifiTethering(props: Props) {
   );
 }
 
+IconWifiTethering.displayName = 'IconWifiTethering';
 IconWifiTethering.category = 'device';

@@ -25,4 +25,5 @@ export default function IconViewQuilt(props: Props) {
   );
 }
 
+IconViewQuilt.displayName = 'IconViewQuilt';
 IconViewQuilt.category = 'action';

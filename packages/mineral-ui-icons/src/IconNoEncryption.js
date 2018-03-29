@@ -25,4 +25,5 @@ export default function IconNoEncryption(props: Props) {
   );
 }
 
+IconNoEncryption.displayName = 'IconNoEncryption';
 IconNoEncryption.category = 'notification';

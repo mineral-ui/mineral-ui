@@ -25,4 +25,5 @@ export default function IconPlace(props: Props) {
   );
 }
 
+IconPlace.displayName = 'IconPlace';
 IconPlace.category = 'maps';

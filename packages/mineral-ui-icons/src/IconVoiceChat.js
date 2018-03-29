@@ -25,4 +25,5 @@ export default function IconVoiceChat(props: Props) {
   );
 }
 
+IconVoiceChat.displayName = 'IconVoiceChat';
 IconVoiceChat.category = 'notification';

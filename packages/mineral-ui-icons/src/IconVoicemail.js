@@ -25,4 +25,5 @@ export default function IconVoicemail(props: Props) {
   );
 }
 
+IconVoicemail.displayName = 'IconVoicemail';
 IconVoicemail.category = 'communication';

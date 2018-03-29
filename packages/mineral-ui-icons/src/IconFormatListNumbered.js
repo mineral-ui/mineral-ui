@@ -25,4 +25,5 @@ export default function IconFormatListNumbered(props: Props) {
   );
 }
 
+IconFormatListNumbered.displayName = 'IconFormatListNumbered';
 IconFormatListNumbered.category = 'editor';

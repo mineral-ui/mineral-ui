@@ -25,4 +25,5 @@ export default function IconWatch(props: Props) {
   );
 }
 
+IconWatch.displayName = 'IconWatch';
 IconWatch.category = 'hardware';

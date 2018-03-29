@@ -25,4 +25,5 @@ export default function IconCompare(props: Props) {
   );
 }
 
+IconCompare.displayName = 'IconCompare';
 IconCompare.category = 'image';

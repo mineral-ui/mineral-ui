@@ -25,4 +25,5 @@ export default function IconPregnantWoman(props: Props) {
   );
 }
 
+IconPregnantWoman.displayName = 'IconPregnantWoman';
 IconPregnantWoman.category = 'action';

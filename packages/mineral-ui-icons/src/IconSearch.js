@@ -25,4 +25,5 @@ export default function IconSearch(props: Props) {
   );
 }
 
+IconSearch.displayName = 'IconSearch';
 IconSearch.category = 'action';

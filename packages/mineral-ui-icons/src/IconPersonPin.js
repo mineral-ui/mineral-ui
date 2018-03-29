@@ -25,4 +25,5 @@ export default function IconPersonPin(props: Props) {
   );
 }
 
+IconPersonPin.displayName = 'IconPersonPin';
 IconPersonPin.category = 'maps';

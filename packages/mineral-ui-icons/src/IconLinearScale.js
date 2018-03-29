@@ -25,4 +25,5 @@ export default function IconLinearScale(props: Props) {
   );
 }
 
+IconLinearScale.displayName = 'IconLinearScale';
 IconLinearScale.category = 'editor';

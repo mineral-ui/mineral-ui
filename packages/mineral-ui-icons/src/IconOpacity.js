@@ -25,4 +25,5 @@ export default function IconOpacity(props: Props) {
   );
 }
 
+IconOpacity.displayName = 'IconOpacity';
 IconOpacity.category = 'action';

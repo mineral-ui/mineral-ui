@@ -25,4 +25,5 @@ export default function IconAddAPhoto(props: Props) {
   );
 }
 
+IconAddAPhoto.displayName = 'IconAddAPhoto';
 IconAddAPhoto.category = 'image';

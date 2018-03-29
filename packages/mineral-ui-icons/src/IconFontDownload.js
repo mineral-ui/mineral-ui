@@ -25,4 +25,5 @@ export default function IconFontDownload(props: Props) {
   );
 }
 
+IconFontDownload.displayName = 'IconFontDownload';
 IconFontDownload.category = 'content';

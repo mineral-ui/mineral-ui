@@ -25,4 +25,5 @@ export default function IconPlusOne(props: Props) {
   );
 }
 
+IconPlusOne.displayName = 'IconPlusOne';
 IconPlusOne.category = 'social';

@@ -25,4 +25,5 @@ export default function IconContentCut(props: Props) {
   );
 }
 
+IconContentCut.displayName = 'IconContentCut';
 IconContentCut.category = 'content';

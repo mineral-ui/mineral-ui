@@ -25,4 +25,5 @@ export default function IconLaunch(props: Props) {
   );
 }
 
+IconLaunch.displayName = 'IconLaunch';
 IconLaunch.category = 'action';

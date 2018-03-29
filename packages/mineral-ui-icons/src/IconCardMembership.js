@@ -25,4 +25,5 @@ export default function IconCardMembership(props: Props) {
   );
 }
 
+IconCardMembership.displayName = 'IconCardMembership';
 IconCardMembership.category = 'action';

@@ -25,4 +25,5 @@ export default function IconPhonelinkRing(props: Props) {
   );
 }
 
+IconPhonelinkRing.displayName = 'IconPhonelinkRing';
 IconPhonelinkRing.category = 'communication';

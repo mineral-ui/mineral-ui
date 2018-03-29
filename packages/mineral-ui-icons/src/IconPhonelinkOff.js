@@ -25,4 +25,5 @@ export default function IconPhonelinkOff(props: Props) {
   );
 }
 
+IconPhonelinkOff.displayName = 'IconPhonelinkOff';
 IconPhonelinkOff.category = 'hardware';

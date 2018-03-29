@@ -25,4 +25,5 @@ export default function IconGetApp(props: Props) {
   );
 }
 
+IconGetApp.displayName = 'IconGetApp';
 IconGetApp.category = 'action';

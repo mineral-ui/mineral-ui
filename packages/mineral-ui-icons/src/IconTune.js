@@ -25,4 +25,5 @@ export default function IconTune(props: Props) {
   );
 }
 
+IconTune.displayName = 'IconTune';
 IconTune.category = 'image';

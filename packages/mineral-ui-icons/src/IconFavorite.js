@@ -25,4 +25,5 @@ export default function IconFavorite(props: Props) {
   );
 }
 
+IconFavorite.displayName = 'IconFavorite';
 IconFavorite.category = 'action';

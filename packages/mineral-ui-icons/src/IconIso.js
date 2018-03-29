@@ -25,4 +25,5 @@ export default function IconIso(props: Props) {
   );
 }
 
+IconIso.displayName = 'IconIso';
 IconIso.category = 'image';

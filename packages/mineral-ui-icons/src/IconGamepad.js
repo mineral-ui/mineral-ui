@@ -25,4 +25,5 @@ export default function IconGamepad(props: Props) {
   );
 }
 
+IconGamepad.displayName = 'IconGamepad';
 IconGamepad.category = 'hardware';

@@ -25,4 +25,5 @@ export default function IconDirections(props: Props) {
   );
 }
 
+IconDirections.displayName = 'IconDirections';
 IconDirections.category = 'maps';

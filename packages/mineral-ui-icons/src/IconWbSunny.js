@@ -25,4 +25,5 @@ export default function IconWbSunny(props: Props) {
   );
 }
 
+IconWbSunny.displayName = 'IconWbSunny';
 IconWbSunny.category = 'image';

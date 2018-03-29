@@ -25,4 +25,5 @@ export default function IconSettings(props: Props) {
   );
 }
 
+IconSettings.displayName = 'IconSettings';
 IconSettings.category = 'action';

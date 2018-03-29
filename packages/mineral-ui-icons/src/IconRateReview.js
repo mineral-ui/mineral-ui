@@ -25,4 +25,5 @@ export default function IconRateReview(props: Props) {
   );
 }
 
+IconRateReview.displayName = 'IconRateReview';
 IconRateReview.category = 'maps';

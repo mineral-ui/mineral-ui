@@ -25,4 +25,5 @@ export default function IconMailOutline(props: Props) {
   );
 }
 
+IconMailOutline.displayName = 'IconMailOutline';
 IconMailOutline.category = 'communication';

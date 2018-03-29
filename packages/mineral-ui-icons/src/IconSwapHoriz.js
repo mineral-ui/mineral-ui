@@ -25,4 +25,5 @@ export default function IconSwapHoriz(props: Props) {
   );
 }
 
+IconSwapHoriz.displayName = 'IconSwapHoriz';
 IconSwapHoriz.category = 'action';

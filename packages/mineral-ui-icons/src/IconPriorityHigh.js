@@ -25,4 +25,5 @@ export default function IconPriorityHigh(props: Props) {
   );
 }
 
+IconPriorityHigh.displayName = 'IconPriorityHigh';
 IconPriorityHigh.category = 'notification';

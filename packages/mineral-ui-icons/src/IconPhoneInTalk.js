@@ -25,4 +25,5 @@ export default function IconPhoneInTalk(props: Props) {
   );
 }
 
+IconPhoneInTalk.displayName = 'IconPhoneInTalk';
 IconPhoneInTalk.category = 'notification';

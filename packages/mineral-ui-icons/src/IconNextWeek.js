@@ -25,4 +25,5 @@ export default function IconNextWeek(props: Props) {
   );
 }
 
+IconNextWeek.displayName = 'IconNextWeek';
 IconNextWeek.category = 'content';

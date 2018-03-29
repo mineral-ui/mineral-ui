@@ -25,4 +25,5 @@ export default function IconDragHandle(props: Props) {
   );
 }
 
+IconDragHandle.displayName = 'IconDragHandle';
 IconDragHandle.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconAndroid(props: Props) {
   );
 }
 
+IconAndroid.displayName = 'IconAndroid';
 IconAndroid.category = 'action';

@@ -25,4 +25,5 @@ export default function IconCameraAlt(props: Props) {
   );
 }
 
+IconCameraAlt.displayName = 'IconCameraAlt';
 IconCameraAlt.category = 'image';

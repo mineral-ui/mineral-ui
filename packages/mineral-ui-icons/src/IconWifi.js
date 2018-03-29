@@ -25,4 +25,5 @@ export default function IconWifi(props: Props) {
   );
 }
 
+IconWifi.displayName = 'IconWifi';
 IconWifi.category = 'notification';

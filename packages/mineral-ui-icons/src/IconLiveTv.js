@@ -25,4 +25,5 @@ export default function IconLiveTv(props: Props) {
   );
 }
 
+IconLiveTv.displayName = 'IconLiveTv';
 IconLiveTv.category = 'notification';

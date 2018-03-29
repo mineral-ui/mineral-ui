@@ -25,4 +25,5 @@ export default function IconViewWeek(props: Props) {
   );
 }
 
+IconViewWeek.displayName = 'IconViewWeek';
 IconViewWeek.category = 'action';

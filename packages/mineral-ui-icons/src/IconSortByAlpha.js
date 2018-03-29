@@ -25,4 +25,5 @@ export default function IconSortByAlpha(props: Props) {
   );
 }
 
+IconSortByAlpha.displayName = 'IconSortByAlpha';
 IconSortByAlpha.category = 'av';

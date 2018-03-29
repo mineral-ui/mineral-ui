@@ -25,4 +25,5 @@ export default function IconVolumeDown(props: Props) {
   );
 }
 
+IconVolumeDown.displayName = 'IconVolumeDown';
 IconVolumeDown.category = 'av';

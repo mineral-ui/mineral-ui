@@ -25,4 +25,5 @@ export default function IconAlbum(props: Props) {
   );
 }
 
+IconAlbum.displayName = 'IconAlbum';
 IconAlbum.category = 'av';

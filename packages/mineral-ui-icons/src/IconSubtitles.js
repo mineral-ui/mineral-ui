@@ -25,4 +25,5 @@ export default function IconSubtitles(props: Props) {
   );
 }
 
+IconSubtitles.displayName = 'IconSubtitles';
 IconSubtitles.category = 'av';

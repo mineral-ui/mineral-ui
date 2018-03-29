@@ -25,4 +25,5 @@ export default function IconQueryBuilder(props: Props) {
   );
 }
 
+IconQueryBuilder.displayName = 'IconQueryBuilder';
 IconQueryBuilder.category = 'action';

@@ -25,4 +25,5 @@ export default function IconLocalLaundryService(props: Props) {
   );
 }
 
+IconLocalLaundryService.displayName = 'IconLocalLaundryService';
 IconLocalLaundryService.category = 'maps';

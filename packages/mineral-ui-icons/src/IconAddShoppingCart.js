@@ -25,4 +25,5 @@ export default function IconAddShoppingCart(props: Props) {
   );
 }
 
+IconAddShoppingCart.displayName = 'IconAddShoppingCart';
 IconAddShoppingCart.category = 'action';

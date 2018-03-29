@@ -25,4 +25,5 @@ export default function IconLocalLibrary(props: Props) {
   );
 }
 
+IconLocalLibrary.displayName = 'IconLocalLibrary';
 IconLocalLibrary.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconClear(props: Props) {
   );
 }
 
+IconClear.displayName = 'IconClear';
 IconClear.category = 'content';

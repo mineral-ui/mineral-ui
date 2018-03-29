@@ -25,4 +25,5 @@ export default function IconHelp(props: Props) {
   );
 }
 
+IconHelp.displayName = 'IconHelp';
 IconHelp.category = 'action';

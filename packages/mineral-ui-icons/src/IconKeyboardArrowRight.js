@@ -25,4 +25,5 @@ export default function IconKeyboardArrowRight(props: Props) {
   );
 }
 
+IconKeyboardArrowRight.displayName = 'IconKeyboardArrowRight';
 IconKeyboardArrowRight.category = 'hardware';

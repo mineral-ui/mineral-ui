@@ -25,4 +25,5 @@ export default function IconMotorcycle(props: Props) {
   );
 }
 
+IconMotorcycle.displayName = 'IconMotorcycle';
 IconMotorcycle.category = 'action';

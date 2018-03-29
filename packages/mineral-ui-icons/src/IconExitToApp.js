@@ -25,4 +25,5 @@ export default function IconExitToApp(props: Props) {
   );
 }
 
+IconExitToApp.displayName = 'IconExitToApp';
 IconExitToApp.category = 'action';

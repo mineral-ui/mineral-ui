@@ -25,4 +25,5 @@ export default function IconStoreMallDirectory(props: Props) {
   );
 }
 
+IconStoreMallDirectory.displayName = 'IconStoreMallDirectory';
 IconStoreMallDirectory.category = 'maps';

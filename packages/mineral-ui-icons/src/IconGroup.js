@@ -25,4 +25,5 @@ export default function IconGroup(props: Props) {
   );
 }
 
+IconGroup.displayName = 'IconGroup';
 IconGroup.category = 'social';

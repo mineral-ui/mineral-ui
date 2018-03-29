@@ -25,4 +25,5 @@ export default function IconSlideshow(props: Props) {
   );
 }
 
+IconSlideshow.displayName = 'IconSlideshow';
 IconSlideshow.category = 'image';

@@ -25,4 +25,5 @@ export default function IconImportContacts(props: Props) {
   );
 }
 
+IconImportContacts.displayName = 'IconImportContacts';
 IconImportContacts.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconBrandingWatermark(props: Props) {
   );
 }
 
+IconBrandingWatermark.displayName = 'IconBrandingWatermark';
 IconBrandingWatermark.category = 'av';

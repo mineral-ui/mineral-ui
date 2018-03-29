@@ -25,4 +25,5 @@ export default function IconPlayCircleFilled(props: Props) {
   );
 }
 
+IconPlayCircleFilled.displayName = 'IconPlayCircleFilled';
 IconPlayCircleFilled.category = 'av';

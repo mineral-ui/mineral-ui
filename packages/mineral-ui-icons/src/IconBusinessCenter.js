@@ -25,4 +25,5 @@ export default function IconBusinessCenter(props: Props) {
   );
 }
 
+IconBusinessCenter.displayName = 'IconBusinessCenter';
 IconBusinessCenter.category = 'places';

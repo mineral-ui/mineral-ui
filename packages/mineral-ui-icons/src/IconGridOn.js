@@ -25,4 +25,5 @@ export default function IconGridOn(props: Props) {
   );
 }
 
+IconGridOn.displayName = 'IconGridOn';
 IconGridOn.category = 'image';

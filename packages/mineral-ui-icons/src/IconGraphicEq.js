@@ -25,4 +25,5 @@ export default function IconGraphicEq(props: Props) {
   );
 }
 
+IconGraphicEq.displayName = 'IconGraphicEq';
 IconGraphicEq.category = 'device';

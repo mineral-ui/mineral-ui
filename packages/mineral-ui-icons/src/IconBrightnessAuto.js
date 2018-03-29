@@ -25,4 +25,5 @@ export default function IconBrightnessAuto(props: Props) {
   );
 }
 
+IconBrightnessAuto.displayName = 'IconBrightnessAuto';
 IconBrightnessAuto.category = 'device';

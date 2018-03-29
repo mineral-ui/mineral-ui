@@ -25,4 +25,5 @@ export default function IconMoodBad(props: Props) {
   );
 }
 
+IconMoodBad.displayName = 'IconMoodBad';
 IconMoodBad.category = 'social';

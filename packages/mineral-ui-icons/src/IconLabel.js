@@ -25,4 +25,5 @@ export default function IconLabel(props: Props) {
   );
 }
 
+IconLabel.displayName = 'IconLabel';
 IconLabel.category = 'action';

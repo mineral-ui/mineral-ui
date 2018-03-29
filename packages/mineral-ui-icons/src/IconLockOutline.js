@@ -25,4 +25,5 @@ export default function IconLockOutline(props: Props) {
   );
 }
 
+IconLockOutline.displayName = 'IconLockOutline';
 IconLockOutline.category = 'action';

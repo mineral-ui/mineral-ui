@@ -25,4 +25,5 @@ export default function IconCollectionsBookmark(props: Props) {
   );
 }
 
+IconCollectionsBookmark.displayName = 'IconCollectionsBookmark';
 IconCollectionsBookmark.category = 'image';

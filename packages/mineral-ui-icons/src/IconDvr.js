@@ -25,4 +25,5 @@ export default function IconDvr(props: Props) {
   );
 }
 
+IconDvr.displayName = 'IconDvr';
 IconDvr.category = 'device';

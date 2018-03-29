@@ -25,4 +25,5 @@ export default function IconLocationSearching(props: Props) {
   );
 }
 
+IconLocationSearching.displayName = 'IconLocationSearching';
 IconLocationSearching.category = 'device';

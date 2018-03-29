@@ -25,4 +25,5 @@ export default function IconPlaylistAddCheck(props: Props) {
   );
 }
 
+IconPlaylistAddCheck.displayName = 'IconPlaylistAddCheck';
 IconPlaylistAddCheck.category = 'av';

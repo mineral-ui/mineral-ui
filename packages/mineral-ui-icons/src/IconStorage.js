@@ -25,4 +25,5 @@ export default function IconStorage(props: Props) {
   );
 }
 
+IconStorage.displayName = 'IconStorage';
 IconStorage.category = 'device';

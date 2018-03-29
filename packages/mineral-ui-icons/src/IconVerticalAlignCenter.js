@@ -25,4 +25,5 @@ export default function IconVerticalAlignCenter(props: Props) {
   );
 }
 
+IconVerticalAlignCenter.displayName = 'IconVerticalAlignCenter';
 IconVerticalAlignCenter.category = 'editor';

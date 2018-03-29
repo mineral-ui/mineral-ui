@@ -25,4 +25,5 @@ export default function IconAirlineSeatFlatAngled(props: Props) {
   );
 }
 
+IconAirlineSeatFlatAngled.displayName = 'IconAirlineSeatFlatAngled';
 IconAirlineSeatFlatAngled.category = 'notification';

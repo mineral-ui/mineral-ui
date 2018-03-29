@@ -25,4 +25,5 @@ export default function IconMarkunread(props: Props) {
   );
 }
 
+IconMarkunread.displayName = 'IconMarkunread';
 IconMarkunread.category = 'content';

@@ -25,4 +25,5 @@ export default function IconReorder(props: Props) {
   );
 }
 
+IconReorder.displayName = 'IconReorder';
 IconReorder.category = 'action';

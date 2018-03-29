@@ -25,4 +25,5 @@ export default function IconNavigation(props: Props) {
   );
 }
 
+IconNavigation.displayName = 'IconNavigation';
 IconNavigation.category = 'maps';

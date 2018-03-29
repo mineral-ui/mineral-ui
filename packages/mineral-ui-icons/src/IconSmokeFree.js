@@ -25,4 +25,5 @@ export default function IconSmokeFree(props: Props) {
   );
 }
 
+IconSmokeFree.displayName = 'IconSmokeFree';
 IconSmokeFree.category = 'places';

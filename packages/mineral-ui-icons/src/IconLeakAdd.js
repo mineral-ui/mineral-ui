@@ -25,4 +25,5 @@ export default function IconLeakAdd(props: Props) {
   );
 }
 
+IconLeakAdd.displayName = 'IconLeakAdd';
 IconLeakAdd.category = 'image';

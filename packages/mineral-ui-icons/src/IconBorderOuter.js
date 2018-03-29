@@ -25,4 +25,5 @@ export default function IconBorderOuter(props: Props) {
   );
 }
 
+IconBorderOuter.displayName = 'IconBorderOuter';
 IconBorderOuter.category = 'editor';

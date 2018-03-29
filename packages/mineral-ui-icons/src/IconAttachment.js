@@ -25,4 +25,5 @@ export default function IconAttachment(props: Props) {
   );
 }
 
+IconAttachment.displayName = 'IconAttachment';
 IconAttachment.category = 'file';

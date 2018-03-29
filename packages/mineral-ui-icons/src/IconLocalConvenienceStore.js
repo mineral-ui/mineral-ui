@@ -25,4 +25,5 @@ export default function IconLocalConvenienceStore(props: Props) {
   );
 }
 
+IconLocalConvenienceStore.displayName = 'IconLocalConvenienceStore';
 IconLocalConvenienceStore.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconArrowBack(props: Props) {
   );
 }
 
+IconArrowBack.displayName = 'IconArrowBack';
 IconArrowBack.category = 'navigation';

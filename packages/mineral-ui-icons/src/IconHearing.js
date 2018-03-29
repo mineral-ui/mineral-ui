@@ -25,4 +25,5 @@ export default function IconHearing(props: Props) {
   );
 }
 
+IconHearing.displayName = 'IconHearing';
 IconHearing.category = 'av';

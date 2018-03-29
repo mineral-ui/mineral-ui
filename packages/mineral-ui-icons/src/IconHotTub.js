@@ -25,4 +25,5 @@ export default function IconHotTub(props: Props) {
   );
 }
 
+IconHotTub.displayName = 'IconHotTub';
 IconHotTub.category = 'places';

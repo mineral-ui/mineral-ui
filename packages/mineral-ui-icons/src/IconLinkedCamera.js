@@ -25,4 +25,5 @@ export default function IconLinkedCamera(props: Props) {
   );
 }
 
+IconLinkedCamera.displayName = 'IconLinkedCamera';
 IconLinkedCamera.category = 'image';

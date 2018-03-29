@@ -25,4 +25,5 @@ export default function IconCake(props: Props) {
   );
 }
 
+IconCake.displayName = 'IconCake';
 IconCake.category = 'social';

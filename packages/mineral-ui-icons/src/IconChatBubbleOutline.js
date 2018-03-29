@@ -25,4 +25,5 @@ export default function IconChatBubbleOutline(props: Props) {
   );
 }
 
+IconChatBubbleOutline.displayName = 'IconChatBubbleOutline';
 IconChatBubbleOutline.category = 'communication';

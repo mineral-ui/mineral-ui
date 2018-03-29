@@ -25,4 +25,5 @@ export default function IconFiberNew(props: Props) {
   );
 }
 
+IconFiberNew.displayName = 'IconFiberNew';
 IconFiberNew.category = 'av';

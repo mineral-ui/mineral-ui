@@ -25,4 +25,5 @@ export default function IconChromeReaderMode(props: Props) {
   );
 }
 
+IconChromeReaderMode.displayName = 'IconChromeReaderMode';
 IconChromeReaderMode.category = 'action';

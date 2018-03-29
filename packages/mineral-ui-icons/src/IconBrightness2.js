@@ -25,4 +25,5 @@ export default function IconBrightness2(props: Props) {
   );
 }
 
+IconBrightness2.displayName = 'IconBrightness2';
 IconBrightness2.category = 'image';

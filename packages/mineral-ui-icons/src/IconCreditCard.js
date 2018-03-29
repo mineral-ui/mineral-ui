@@ -25,4 +25,5 @@ export default function IconCreditCard(props: Props) {
   );
 }
 
+IconCreditCard.displayName = 'IconCreditCard';
 IconCreditCard.category = 'action';

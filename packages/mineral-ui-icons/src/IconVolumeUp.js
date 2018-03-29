@@ -25,4 +25,5 @@ export default function IconVolumeUp(props: Props) {
   );
 }
 
+IconVolumeUp.displayName = 'IconVolumeUp';
 IconVolumeUp.category = 'av';

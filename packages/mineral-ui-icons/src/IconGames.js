@@ -25,4 +25,5 @@ export default function IconGames(props: Props) {
   );
 }
 
+IconGames.displayName = 'IconGames';
 IconGames.category = 'av';

@@ -25,4 +25,5 @@ export default function IconPrint(props: Props) {
   );
 }
 
+IconPrint.displayName = 'IconPrint';
 IconPrint.category = 'action';

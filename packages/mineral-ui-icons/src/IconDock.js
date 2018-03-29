@@ -25,4 +25,5 @@ export default function IconDock(props: Props) {
   );
 }
 
+IconDock.displayName = 'IconDock';
 IconDock.category = 'hardware';

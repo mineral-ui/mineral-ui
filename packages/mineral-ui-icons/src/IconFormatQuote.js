@@ -25,4 +25,5 @@ export default function IconFormatQuote(props: Props) {
   );
 }
 
+IconFormatQuote.displayName = 'IconFormatQuote';
 IconFormatQuote.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconFiberSmartRecord(props: Props) {
   );
 }
 
+IconFiberSmartRecord.displayName = 'IconFiberSmartRecord';
 IconFiberSmartRecord.category = 'av';

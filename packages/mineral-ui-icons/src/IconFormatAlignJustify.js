@@ -25,4 +25,5 @@ export default function IconFormatAlignJustify(props: Props) {
   );
 }
 
+IconFormatAlignJustify.displayName = 'IconFormatAlignJustify';
 IconFormatAlignJustify.category = 'editor';

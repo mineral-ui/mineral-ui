@@ -25,4 +25,5 @@ export default function IconNfc(props: Props) {
   );
 }
 
+IconNfc.displayName = 'IconNfc';
 IconNfc.category = 'device';

@@ -25,4 +25,5 @@ export default function IconNetworkCheck(props: Props) {
   );
 }
 
+IconNetworkCheck.displayName = 'IconNetworkCheck';
 IconNetworkCheck.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconDns(props: Props) {
   );
 }
 
+IconDns.displayName = 'IconDns';
 IconDns.category = 'action';

@@ -25,4 +25,5 @@ export default function IconFormatIndentIncrease(props: Props) {
   );
 }
 
+IconFormatIndentIncrease.displayName = 'IconFormatIndentIncrease';
 IconFormatIndentIncrease.category = 'editor';

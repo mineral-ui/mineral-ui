@@ -25,4 +25,5 @@ export default function IconThumbsUpDown(props: Props) {
   );
 }
 
+IconThumbsUpDown.displayName = 'IconThumbsUpDown';
 IconThumbsUpDown.category = 'action';

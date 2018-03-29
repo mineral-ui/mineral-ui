@@ -25,4 +25,5 @@ export default function IconTrendingFlat(props: Props) {
   );
 }
 
+IconTrendingFlat.displayName = 'IconTrendingFlat';
 IconTrendingFlat.category = 'action';

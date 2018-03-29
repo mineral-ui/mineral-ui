@@ -25,4 +25,5 @@ export default function IconPauseCircleOutline(props: Props) {
   );
 }
 
+IconPauseCircleOutline.displayName = 'IconPauseCircleOutline';
 IconPauseCircleOutline.category = 'av';

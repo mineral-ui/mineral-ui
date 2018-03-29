@@ -25,4 +25,5 @@ export default function IconMenu(props: Props) {
   );
 }
 
+IconMenu.displayName = 'IconMenu';
 IconMenu.category = 'navigation';

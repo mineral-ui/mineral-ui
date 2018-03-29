@@ -25,4 +25,5 @@ export default function IconArrowDownward(props: Props) {
   );
 }
 
+IconArrowDownward.displayName = 'IconArrowDownward';
 IconArrowDownward.category = 'navigation';

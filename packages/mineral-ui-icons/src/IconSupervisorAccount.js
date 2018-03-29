@@ -25,4 +25,5 @@ export default function IconSupervisorAccount(props: Props) {
   );
 }
 
+IconSupervisorAccount.displayName = 'IconSupervisorAccount';
 IconSupervisorAccount.category = 'action';

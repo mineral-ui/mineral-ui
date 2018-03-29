@@ -25,4 +25,5 @@ export default function IconPages(props: Props) {
   );
 }
 
+IconPages.displayName = 'IconPages';
 IconPages.category = 'social';

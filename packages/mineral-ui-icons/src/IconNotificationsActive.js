@@ -25,4 +25,5 @@ export default function IconNotificationsActive(props: Props) {
   );
 }
 
+IconNotificationsActive.displayName = 'IconNotificationsActive';
 IconNotificationsActive.category = 'social';

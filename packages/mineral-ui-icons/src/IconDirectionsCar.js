@@ -25,4 +25,5 @@ export default function IconDirectionsCar(props: Props) {
   );
 }
 
+IconDirectionsCar.displayName = 'IconDirectionsCar';
 IconDirectionsCar.category = 'maps';

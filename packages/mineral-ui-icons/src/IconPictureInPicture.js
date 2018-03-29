@@ -25,4 +25,5 @@ export default function IconPictureInPicture(props: Props) {
   );
 }
 
+IconPictureInPicture.displayName = 'IconPictureInPicture';
 IconPictureInPicture.category = 'action';

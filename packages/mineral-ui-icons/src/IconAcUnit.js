@@ -25,4 +25,5 @@ export default function IconAcUnit(props: Props) {
   );
 }
 
+IconAcUnit.displayName = 'IconAcUnit';
 IconAcUnit.category = 'places';

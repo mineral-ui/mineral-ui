@@ -25,4 +25,5 @@ export default function IconBackup(props: Props) {
   );
 }
 
+IconBackup.displayName = 'IconBackup';
 IconBackup.category = 'action';

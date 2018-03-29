@@ -25,4 +25,5 @@ export default function IconWbIridescent(props: Props) {
   );
 }
 
+IconWbIridescent.displayName = 'IconWbIridescent';
 IconWbIridescent.category = 'image';

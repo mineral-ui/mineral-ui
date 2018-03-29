@@ -25,4 +25,5 @@ export default function IconLooksOne(props: Props) {
   );
 }
 
+IconLooksOne.displayName = 'IconLooksOne';
 IconLooksOne.category = 'image';

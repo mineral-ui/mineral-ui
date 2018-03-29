@@ -25,4 +25,5 @@ export default function IconLocalPrintshop(props: Props) {
   );
 }
 
+IconLocalPrintshop.displayName = 'IconLocalPrintshop';
 IconLocalPrintshop.category = 'maps';

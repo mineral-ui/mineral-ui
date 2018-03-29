@@ -25,4 +25,5 @@ export default function IconSignalCellularNull(props: Props) {
   );
 }
 
+IconSignalCellularNull.displayName = 'IconSignalCellularNull';
 IconSignalCellularNull.category = 'device';

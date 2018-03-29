@@ -25,4 +25,5 @@ export default function IconCallToAction(props: Props) {
   );
 }
 
+IconCallToAction.displayName = 'IconCallToAction';
 IconCallToAction.category = 'av';

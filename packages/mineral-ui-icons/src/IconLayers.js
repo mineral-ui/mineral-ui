@@ -25,4 +25,5 @@ export default function IconLayers(props: Props) {
   );
 }
 
+IconLayers.displayName = 'IconLayers';
 IconLayers.category = 'maps';

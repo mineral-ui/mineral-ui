@@ -25,4 +25,5 @@ export default function IconNearMe(props: Props) {
   );
 }
 
+IconNearMe.displayName = 'IconNearMe';
 IconNearMe.category = 'maps';

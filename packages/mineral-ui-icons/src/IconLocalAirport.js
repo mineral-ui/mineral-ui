@@ -25,4 +25,5 @@ export default function IconLocalAirport(props: Props) {
   );
 }
 
+IconLocalAirport.displayName = 'IconLocalAirport';
 IconLocalAirport.category = 'maps';

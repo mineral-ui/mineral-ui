@@ -25,4 +25,5 @@ export default function IconDoNotDisturbAlt(props: Props) {
   );
 }
 
+IconDoNotDisturbAlt.displayName = 'IconDoNotDisturbAlt';
 IconDoNotDisturbAlt.category = 'notification';

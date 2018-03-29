@@ -25,4 +25,5 @@ export default function IconLineStyle(props: Props) {
   );
 }
 
+IconLineStyle.displayName = 'IconLineStyle';
 IconLineStyle.category = 'action';

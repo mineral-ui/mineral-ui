@@ -25,4 +25,5 @@ export default function IconTabletAndroid(props: Props) {
   );
 }
 
+IconTabletAndroid.displayName = 'IconTabletAndroid';
 IconTabletAndroid.category = 'hardware';

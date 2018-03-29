@@ -25,4 +25,5 @@ export default function IconCallReceived(props: Props) {
   );
 }
 
+IconCallReceived.displayName = 'IconCallReceived';
 IconCallReceived.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconAccountBox(props: Props) {
   );
 }
 
+IconAccountBox.displayName = 'IconAccountBox';
 IconAccountBox.category = 'action';

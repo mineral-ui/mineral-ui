@@ -25,4 +25,5 @@ export default function IconSimCardAlert(props: Props) {
   );
 }
 
+IconSimCardAlert.displayName = 'IconSimCardAlert';
 IconSimCardAlert.category = 'notification';

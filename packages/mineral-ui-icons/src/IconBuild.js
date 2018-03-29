@@ -25,4 +25,5 @@ export default function IconBuild(props: Props) {
   );
 }
 
+IconBuild.displayName = 'IconBuild';
 IconBuild.category = 'action';

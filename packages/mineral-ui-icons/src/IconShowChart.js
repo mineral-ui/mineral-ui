@@ -25,4 +25,5 @@ export default function IconShowChart(props: Props) {
   );
 }
 
+IconShowChart.displayName = 'IconShowChart';
 IconShowChart.category = 'editor';

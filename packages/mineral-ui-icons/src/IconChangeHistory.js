@@ -25,4 +25,5 @@ export default function IconChangeHistory(props: Props) {
   );
 }
 
+IconChangeHistory.displayName = 'IconChangeHistory';
 IconChangeHistory.category = 'action';

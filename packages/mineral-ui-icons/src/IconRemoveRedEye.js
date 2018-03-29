@@ -25,4 +25,5 @@ export default function IconRemoveRedEye(props: Props) {
   );
 }
 
+IconRemoveRedEye.displayName = 'IconRemoveRedEye';
 IconRemoveRedEye.category = 'image';

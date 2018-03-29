@@ -25,4 +25,5 @@ export default function IconVideoLabel(props: Props) {
   );
 }
 
+IconVideoLabel.displayName = 'IconVideoLabel';
 IconVideoLabel.category = 'av';

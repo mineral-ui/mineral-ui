@@ -25,4 +25,5 @@ export default function IconCloudCircle(props: Props) {
   );
 }
 
+IconCloudCircle.displayName = 'IconCloudCircle';
 IconCloudCircle.category = 'file';

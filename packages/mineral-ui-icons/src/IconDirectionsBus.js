@@ -25,4 +25,5 @@ export default function IconDirectionsBus(props: Props) {
   );
 }
 
+IconDirectionsBus.displayName = 'IconDirectionsBus';
 IconDirectionsBus.category = 'maps';

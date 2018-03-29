@@ -25,4 +25,5 @@ export default function IconUnfoldLess(props: Props) {
   );
 }
 
+IconUnfoldLess.displayName = 'IconUnfoldLess';
 IconUnfoldLess.category = 'navigation';

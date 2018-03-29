@@ -25,4 +25,5 @@ export default function IconGTranslate(props: Props) {
   );
 }
 
+IconGTranslate.displayName = 'IconGTranslate';
 IconGTranslate.category = 'action';

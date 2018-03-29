@@ -25,4 +25,5 @@ export default function IconModeComment(props: Props) {
   );
 }
 
+IconModeComment.displayName = 'IconModeComment';
 IconModeComment.category = 'editor';

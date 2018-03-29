@@ -25,4 +25,5 @@ export default function IconDevices(props: Props) {
   );
 }
 
+IconDevices.displayName = 'IconDevices';
 IconDevices.category = 'device';

@@ -25,4 +25,5 @@ export default function IconTimeline(props: Props) {
   );
 }
 
+IconTimeline.displayName = 'IconTimeline';
 IconTimeline.category = 'action';

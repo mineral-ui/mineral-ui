@@ -25,4 +25,5 @@ export default function IconRoomService(props: Props) {
   );
 }
 
+IconRoomService.displayName = 'IconRoomService';
 IconRoomService.category = 'places';

@@ -25,4 +25,5 @@ export default function IconTransform(props: Props) {
   );
 }
 
+IconTransform.displayName = 'IconTransform';
 IconTransform.category = 'image';

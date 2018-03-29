@@ -25,4 +25,5 @@ export default function IconMouse(props: Props) {
   );
 }
 
+IconMouse.displayName = 'IconMouse';
 IconMouse.category = 'hardware';

@@ -25,4 +25,5 @@ export default function IconDriveEta(props: Props) {
   );
 }
 
+IconDriveEta.displayName = 'IconDriveEta';
 IconDriveEta.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconFilterHdr(props: Props) {
   );
 }
 
+IconFilterHdr.displayName = 'IconFilterHdr';
 IconFilterHdr.category = 'image';

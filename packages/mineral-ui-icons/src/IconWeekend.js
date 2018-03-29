@@ -25,4 +25,5 @@ export default function IconWeekend(props: Props) {
   );
 }
 
+IconWeekend.displayName = 'IconWeekend';
 IconWeekend.category = 'content';

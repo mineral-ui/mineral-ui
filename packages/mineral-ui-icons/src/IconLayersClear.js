@@ -25,4 +25,5 @@ export default function IconLayersClear(props: Props) {
   );
 }
 
+IconLayersClear.displayName = 'IconLayersClear';
 IconLayersClear.category = 'maps';

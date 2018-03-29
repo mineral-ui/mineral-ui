@@ -25,4 +25,5 @@ export default function IconPauseCircleFilled(props: Props) {
   );
 }
 
+IconPauseCircleFilled.displayName = 'IconPauseCircleFilled';
 IconPauseCircleFilled.category = 'av';

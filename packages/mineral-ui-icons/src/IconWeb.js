@@ -25,4 +25,5 @@ export default function IconWeb(props: Props) {
   );
 }
 
+IconWeb.displayName = 'IconWeb';
 IconWeb.category = 'av';

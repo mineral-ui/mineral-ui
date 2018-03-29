@@ -25,4 +25,5 @@ export default function IconEventNote(props: Props) {
   );
 }
 
+IconEventNote.displayName = 'IconEventNote';
 IconEventNote.category = 'notification';

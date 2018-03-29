@@ -25,4 +25,5 @@ export default function IconUnarchive(props: Props) {
   );
 }
 
+IconUnarchive.displayName = 'IconUnarchive';
 IconUnarchive.category = 'content';

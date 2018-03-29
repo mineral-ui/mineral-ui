@@ -25,4 +25,5 @@ export default function IconPlayArrow(props: Props) {
   );
 }
 
+IconPlayArrow.displayName = 'IconPlayArrow';
 IconPlayArrow.category = 'av';

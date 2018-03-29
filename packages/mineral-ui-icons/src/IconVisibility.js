@@ -25,4 +25,5 @@ export default function IconVisibility(props: Props) {
   );
 }
 
+IconVisibility.displayName = 'IconVisibility';
 IconVisibility.category = 'action';

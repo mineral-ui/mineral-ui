@@ -25,4 +25,5 @@ export default function IconLocalGasStation(props: Props) {
   );
 }
 
+IconLocalGasStation.displayName = 'IconLocalGasStation';
 IconLocalGasStation.category = 'maps';

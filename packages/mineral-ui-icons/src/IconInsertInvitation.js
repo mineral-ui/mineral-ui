@@ -25,4 +25,5 @@ export default function IconInsertInvitation(props: Props) {
   );
 }
 
+IconInsertInvitation.displayName = 'IconInsertInvitation';
 IconInsertInvitation.category = 'editor';

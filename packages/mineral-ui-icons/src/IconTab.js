@@ -25,4 +25,5 @@ export default function IconTab(props: Props) {
   );
 }
 
+IconTab.displayName = 'IconTab';
 IconTab.category = 'action';

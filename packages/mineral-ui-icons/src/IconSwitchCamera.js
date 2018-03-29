@@ -25,4 +25,5 @@ export default function IconSwitchCamera(props: Props) {
   );
 }
 
+IconSwitchCamera.displayName = 'IconSwitchCamera';
 IconSwitchCamera.category = 'image';

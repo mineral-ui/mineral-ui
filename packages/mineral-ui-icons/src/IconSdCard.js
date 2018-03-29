@@ -25,4 +25,5 @@ export default function IconSdCard(props: Props) {
   );
 }
 
+IconSdCard.displayName = 'IconSdCard';
 IconSdCard.category = 'notification';

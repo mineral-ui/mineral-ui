@@ -25,4 +25,5 @@ export default function IconAirlineSeatReclineExtra(props: Props) {
   );
 }
 
+IconAirlineSeatReclineExtra.displayName = 'IconAirlineSeatReclineExtra';
 IconAirlineSeatReclineExtra.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconBurstMode(props: Props) {
   );
 }
 
+IconBurstMode.displayName = 'IconBurstMode';
 IconBurstMode.category = 'image';

@@ -25,4 +25,5 @@ export default function IconLocalHotel(props: Props) {
   );
 }
 
+IconLocalHotel.displayName = 'IconLocalHotel';
 IconLocalHotel.category = 'maps';

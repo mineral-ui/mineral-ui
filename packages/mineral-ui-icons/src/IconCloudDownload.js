@@ -25,4 +25,5 @@ export default function IconCloudDownload(props: Props) {
   );
 }
 
+IconCloudDownload.displayName = 'IconCloudDownload';
 IconCloudDownload.category = 'file';

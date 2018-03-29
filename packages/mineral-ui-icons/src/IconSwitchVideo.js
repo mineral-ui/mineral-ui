@@ -25,4 +25,5 @@ export default function IconSwitchVideo(props: Props) {
   );
 }
 
+IconSwitchVideo.displayName = 'IconSwitchVideo';
 IconSwitchVideo.category = 'image';

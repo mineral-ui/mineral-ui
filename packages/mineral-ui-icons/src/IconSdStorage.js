@@ -25,4 +25,5 @@ export default function IconSdStorage(props: Props) {
   );
 }
 
+IconSdStorage.displayName = 'IconSdStorage';
 IconSdStorage.category = 'device';

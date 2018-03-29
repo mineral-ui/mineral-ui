@@ -25,4 +25,5 @@ export default function IconSettingsInputAntenna(props: Props) {
   );
 }
 
+IconSettingsInputAntenna.displayName = 'IconSettingsInputAntenna';
 IconSettingsInputAntenna.category = 'action';

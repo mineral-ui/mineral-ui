@@ -25,4 +25,5 @@ export default function IconFilter8(props: Props) {
   );
 }
 
+IconFilter8.displayName = 'IconFilter8';
 IconFilter8.category = 'image';

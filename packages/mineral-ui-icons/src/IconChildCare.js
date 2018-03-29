@@ -25,4 +25,5 @@ export default function IconChildCare(props: Props) {
   );
 }
 
+IconChildCare.displayName = 'IconChildCare';
 IconChildCare.category = 'places';

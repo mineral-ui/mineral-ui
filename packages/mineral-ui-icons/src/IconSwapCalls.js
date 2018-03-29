@@ -25,4 +25,5 @@ export default function IconSwapCalls(props: Props) {
   );
 }
 
+IconSwapCalls.displayName = 'IconSwapCalls';
 IconSwapCalls.category = 'communication';

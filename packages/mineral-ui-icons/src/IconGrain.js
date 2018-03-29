@@ -25,4 +25,5 @@ export default function IconGrain(props: Props) {
   );
 }
 
+IconGrain.displayName = 'IconGrain';
 IconGrain.category = 'image';

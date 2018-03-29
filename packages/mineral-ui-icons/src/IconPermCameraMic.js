@@ -25,4 +25,5 @@ export default function IconPermCameraMic(props: Props) {
   );
 }
 
+IconPermCameraMic.displayName = 'IconPermCameraMic';
 IconPermCameraMic.category = 'action';

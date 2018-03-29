@@ -25,4 +25,5 @@ export default function IconMusicVideo(props: Props) {
   );
 }
 
+IconMusicVideo.displayName = 'IconMusicVideo';
 IconMusicVideo.category = 'av';

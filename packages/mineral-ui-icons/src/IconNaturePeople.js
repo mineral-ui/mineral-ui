@@ -25,4 +25,5 @@ export default function IconNaturePeople(props: Props) {
   );
 }
 
+IconNaturePeople.displayName = 'IconNaturePeople';
 IconNaturePeople.category = 'image';

@@ -25,4 +25,5 @@ export default function IconExtension(props: Props) {
   );
 }
 
+IconExtension.displayName = 'IconExtension';
 IconExtension.category = 'action';

@@ -25,4 +25,5 @@ export default function IconBookmarkBorder(props: Props) {
   );
 }
 
+IconBookmarkBorder.displayName = 'IconBookmarkBorder';
 IconBookmarkBorder.category = 'action';

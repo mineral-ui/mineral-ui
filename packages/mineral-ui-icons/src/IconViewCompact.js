@@ -25,4 +25,5 @@ export default function IconViewCompact(props: Props) {
   );
 }
 
+IconViewCompact.displayName = 'IconViewCompact';
 IconViewCompact.category = 'image';

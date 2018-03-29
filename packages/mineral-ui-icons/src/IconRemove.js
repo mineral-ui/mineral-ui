@@ -25,4 +25,5 @@ export default function IconRemove(props: Props) {
   );
 }
 
+IconRemove.displayName = 'IconRemove';
 IconRemove.category = 'content';

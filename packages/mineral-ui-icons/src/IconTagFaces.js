@@ -25,4 +25,5 @@ export default function IconTagFaces(props: Props) {
   );
 }
 
+IconTagFaces.displayName = 'IconTagFaces';
 IconTagFaces.category = 'image';

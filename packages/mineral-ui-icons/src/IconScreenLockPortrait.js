@@ -25,4 +25,5 @@ export default function IconScreenLockPortrait(props: Props) {
   );
 }
 
+IconScreenLockPortrait.displayName = 'IconScreenLockPortrait';
 IconScreenLockPortrait.category = 'device';

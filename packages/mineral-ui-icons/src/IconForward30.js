@@ -25,4 +25,5 @@ export default function IconForward30(props: Props) {
   );
 }
 
+IconForward30.displayName = 'IconForward30';
 IconForward30.category = 'av';

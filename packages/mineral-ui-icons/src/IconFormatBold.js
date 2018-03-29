@@ -25,4 +25,5 @@ export default function IconFormatBold(props: Props) {
   );
 }
 
+IconFormatBold.displayName = 'IconFormatBold';
 IconFormatBold.category = 'editor';

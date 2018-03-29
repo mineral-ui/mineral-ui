@@ -25,4 +25,5 @@ export default function IconPermScanWifi(props: Props) {
   );
 }
 
+IconPermScanWifi.displayName = 'IconPermScanWifi';
 IconPermScanWifi.category = 'action';

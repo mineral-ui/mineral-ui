@@ -25,4 +25,5 @@ export default function IconPermDataSetting(props: Props) {
   );
 }
 
+IconPermDataSetting.displayName = 'IconPermDataSetting';
 IconPermDataSetting.category = 'action';

@@ -25,4 +25,5 @@ export default function IconGpsOff(props: Props) {
   );
 }
 
+IconGpsOff.displayName = 'IconGpsOff';
 IconGpsOff.category = 'device';

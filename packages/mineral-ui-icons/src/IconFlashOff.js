@@ -25,4 +25,5 @@ export default function IconFlashOff(props: Props) {
   );
 }
 
+IconFlashOff.displayName = 'IconFlashOff';
 IconFlashOff.category = 'image';

@@ -25,4 +25,5 @@ export default function IconAdjust(props: Props) {
   );
 }
 
+IconAdjust.displayName = 'IconAdjust';
 IconAdjust.category = 'image';

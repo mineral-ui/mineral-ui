@@ -25,4 +25,5 @@ export default function IconExposureNeg2(props: Props) {
   );
 }
 
+IconExposureNeg2.displayName = 'IconExposureNeg2';
 IconExposureNeg2.category = 'image';

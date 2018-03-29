@@ -25,4 +25,5 @@ export default function IconMovieCreation(props: Props) {
   );
 }
 
+IconMovieCreation.displayName = 'IconMovieCreation';
 IconMovieCreation.category = 'image';

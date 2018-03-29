@@ -25,4 +25,5 @@ export default function IconBrush(props: Props) {
   );
 }
 
+IconBrush.displayName = 'IconBrush';
 IconBrush.category = 'image';

@@ -25,4 +25,5 @@ export default function IconDeleteForever(props: Props) {
   );
 }
 
+IconDeleteForever.displayName = 'IconDeleteForever';
 IconDeleteForever.category = 'action';

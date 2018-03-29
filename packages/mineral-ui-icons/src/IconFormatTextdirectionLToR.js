@@ -25,4 +25,5 @@ export default function IconFormatTextdirectionLToR(props: Props) {
   );
 }
 
+IconFormatTextdirectionLToR.displayName = 'IconFormatTextdirectionLToR';
 IconFormatTextdirectionLToR.category = 'editor';

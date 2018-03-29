@@ -25,4 +25,5 @@ export default function IconLocalShipping(props: Props) {
   );
 }
 
+IconLocalShipping.displayName = 'IconLocalShipping';
 IconLocalShipping.category = 'maps';

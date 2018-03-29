@@ -25,4 +25,5 @@ export default function IconPayment(props: Props) {
   );
 }
 
+IconPayment.displayName = 'IconPayment';
 IconPayment.category = 'action';

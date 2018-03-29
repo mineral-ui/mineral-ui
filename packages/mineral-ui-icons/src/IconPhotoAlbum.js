@@ -25,4 +25,5 @@ export default function IconPhotoAlbum(props: Props) {
   );
 }
 
+IconPhotoAlbum.displayName = 'IconPhotoAlbum';
 IconPhotoAlbum.category = 'image';

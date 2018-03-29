@@ -25,4 +25,5 @@ export default function IconCallMade(props: Props) {
   );
 }
 
+IconCallMade.displayName = 'IconCallMade';
 IconCallMade.category = 'communication';

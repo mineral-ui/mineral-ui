@@ -25,4 +25,5 @@ export default function IconFlipToBack(props: Props) {
   );
 }
 
+IconFlipToBack.displayName = 'IconFlipToBack';
 IconFlipToBack.category = 'action';

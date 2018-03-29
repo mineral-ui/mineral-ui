@@ -25,4 +25,5 @@ export default function IconRestore(props: Props) {
   );
 }
 
+IconRestore.displayName = 'IconRestore';
 IconRestore.category = 'action';

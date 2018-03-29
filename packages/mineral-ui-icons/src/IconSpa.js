@@ -25,4 +25,5 @@ export default function IconSpa(props: Props) {
   );
 }
 
+IconSpa.displayName = 'IconSpa';
 IconSpa.category = 'places';

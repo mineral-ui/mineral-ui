@@ -25,4 +25,5 @@ export default function IconHome(props: Props) {
   );
 }
 
+IconHome.displayName = 'IconHome';
 IconHome.category = 'action';

@@ -25,4 +25,5 @@ export default function IconColorLens(props: Props) {
   );
 }
 
+IconColorLens.displayName = 'IconColorLens';
 IconColorLens.category = 'image';

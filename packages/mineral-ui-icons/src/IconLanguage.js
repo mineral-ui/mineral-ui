@@ -25,4 +25,5 @@ export default function IconLanguage(props: Props) {
   );
 }
 
+IconLanguage.displayName = 'IconLanguage';
 IconLanguage.category = 'action';

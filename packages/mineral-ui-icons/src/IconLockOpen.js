@@ -25,4 +25,5 @@ export default function IconLockOpen(props: Props) {
   );
 }
 
+IconLockOpen.displayName = 'IconLockOpen';
 IconLockOpen.category = 'action';

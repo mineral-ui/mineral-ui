@@ -25,4 +25,5 @@ export default function IconCompareArrows(props: Props) {
   );
 }
 
+IconCompareArrows.displayName = 'IconCompareArrows';
 IconCompareArrows.category = 'action';

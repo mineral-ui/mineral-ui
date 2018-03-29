@@ -25,4 +25,5 @@ export default function IconFeedback(props: Props) {
   );
 }
 
+IconFeedback.displayName = 'IconFeedback';
 IconFeedback.category = 'action';

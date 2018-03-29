@@ -25,4 +25,5 @@ export default function IconSuccessSimple(props: Props) {
   );
 }
 
+IconSuccessSimple.displayName = 'IconSuccessSimple';
 IconSuccessSimple.category = 'alert';

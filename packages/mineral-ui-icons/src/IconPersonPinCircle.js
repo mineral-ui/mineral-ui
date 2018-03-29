@@ -25,4 +25,5 @@ export default function IconPersonPinCircle(props: Props) {
   );
 }
 
+IconPersonPinCircle.displayName = 'IconPersonPinCircle';
 IconPersonPinCircle.category = 'maps';

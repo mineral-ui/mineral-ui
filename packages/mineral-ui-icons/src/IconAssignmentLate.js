@@ -25,4 +25,5 @@ export default function IconAssignmentLate(props: Props) {
   );
 }
 
+IconAssignmentLate.displayName = 'IconAssignmentLate';
 IconAssignmentLate.category = 'action';

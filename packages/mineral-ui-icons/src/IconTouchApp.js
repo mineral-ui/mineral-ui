@@ -25,4 +25,5 @@ export default function IconTouchApp(props: Props) {
   );
 }
 
+IconTouchApp.displayName = 'IconTouchApp';
 IconTouchApp.category = 'action';

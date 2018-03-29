@@ -25,4 +25,5 @@ export default function IconDialerSip(props: Props) {
   );
 }
 
+IconDialerSip.displayName = 'IconDialerSip';
 IconDialerSip.category = 'communication';

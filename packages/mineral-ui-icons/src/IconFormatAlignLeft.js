@@ -25,4 +25,5 @@ export default function IconFormatAlignLeft(props: Props) {
   );
 }
 
+IconFormatAlignLeft.displayName = 'IconFormatAlignLeft';
 IconFormatAlignLeft.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconFormatSize(props: Props) {
   );
 }
 
+IconFormatSize.displayName = 'IconFormatSize';
 IconFormatSize.category = 'editor';

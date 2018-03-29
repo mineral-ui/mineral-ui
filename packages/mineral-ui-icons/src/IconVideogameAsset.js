@@ -25,4 +25,5 @@ export default function IconVideogameAsset(props: Props) {
   );
 }
 
+IconVideogameAsset.displayName = 'IconVideogameAsset';
 IconVideogameAsset.category = 'hardware';

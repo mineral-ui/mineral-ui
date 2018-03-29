@@ -25,4 +25,5 @@ export default function IconSentimentDissatisfied(props: Props) {
   );
 }
 
+IconSentimentDissatisfied.displayName = 'IconSentimentDissatisfied';
 IconSentimentDissatisfied.category = 'social';

@@ -25,4 +25,5 @@ export default function IconSystemUpdate(props: Props) {
   );
 }
 
+IconSystemUpdate.displayName = 'IconSystemUpdate';
 IconSystemUpdate.category = 'notification';

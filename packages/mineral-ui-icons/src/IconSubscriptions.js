@@ -25,4 +25,5 @@ export default function IconSubscriptions(props: Props) {
   );
 }
 
+IconSubscriptions.displayName = 'IconSubscriptions';
 IconSubscriptions.category = 'av';

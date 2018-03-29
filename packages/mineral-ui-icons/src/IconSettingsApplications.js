@@ -25,4 +25,5 @@ export default function IconSettingsApplications(props: Props) {
   );
 }
 
+IconSettingsApplications.displayName = 'IconSettingsApplications';
 IconSettingsApplications.category = 'action';

@@ -25,4 +25,5 @@ export default function IconArrowDropUp(props: Props) {
   );
 }
 
+IconArrowDropUp.displayName = 'IconArrowDropUp';
 IconArrowDropUp.category = 'navigation';

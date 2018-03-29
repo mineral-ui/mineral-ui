@@ -25,4 +25,5 @@ export default function IconFlightLand(props: Props) {
   );
 }
 
+IconFlightLand.displayName = 'IconFlightLand';
 IconFlightLand.category = 'action';

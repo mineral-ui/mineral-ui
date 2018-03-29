@@ -25,4 +25,5 @@ export default function IconCallMerge(props: Props) {
   );
 }
 
+IconCallMerge.displayName = 'IconCallMerge';
 IconCallMerge.category = 'communication';

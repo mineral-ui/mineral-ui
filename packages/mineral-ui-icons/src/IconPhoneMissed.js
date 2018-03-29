@@ -25,4 +25,5 @@ export default function IconPhoneMissed(props: Props) {
   );
 }
 
+IconPhoneMissed.displayName = 'IconPhoneMissed';
 IconPhoneMissed.category = 'notification';

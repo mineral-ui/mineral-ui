@@ -25,4 +25,5 @@ export default function IconArtTrack(props: Props) {
   );
 }
 
+IconArtTrack.displayName = 'IconArtTrack';
 IconArtTrack.category = 'av';

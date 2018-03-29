@@ -25,4 +25,5 @@ export default function IconError(props: Props) {
   );
 }
 
+IconError.displayName = 'IconError';
 IconError.category = 'alert';

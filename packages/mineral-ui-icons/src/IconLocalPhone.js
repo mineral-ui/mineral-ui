@@ -25,4 +25,5 @@ export default function IconLocalPhone(props: Props) {
   );
 }
 
+IconLocalPhone.displayName = 'IconLocalPhone';
 IconLocalPhone.category = 'maps';

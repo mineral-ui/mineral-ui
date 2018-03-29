@@ -25,4 +25,5 @@ export default function IconBlurOn(props: Props) {
   );
 }
 
+IconBlurOn.displayName = 'IconBlurOn';
 IconBlurOn.category = 'image';

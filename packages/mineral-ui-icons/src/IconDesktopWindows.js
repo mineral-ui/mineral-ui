@@ -25,4 +25,5 @@ export default function IconDesktopWindows(props: Props) {
   );
 }
 
+IconDesktopWindows.displayName = 'IconDesktopWindows';
 IconDesktopWindows.category = 'hardware';

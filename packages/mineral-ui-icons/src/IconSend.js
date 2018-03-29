@@ -25,4 +25,5 @@ export default function IconSend(props: Props) {
   );
 }
 
+IconSend.displayName = 'IconSend';
 IconSend.category = 'content';

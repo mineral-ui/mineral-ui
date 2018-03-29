@@ -25,4 +25,5 @@ export default function IconWebAsset(props: Props) {
   );
 }
 
+IconWebAsset.displayName = 'IconWebAsset';
 IconWebAsset.category = 'av';

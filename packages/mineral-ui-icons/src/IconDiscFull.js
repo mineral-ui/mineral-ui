@@ -25,4 +25,5 @@ export default function IconDiscFull(props: Props) {
   );
 }
 
+IconDiscFull.displayName = 'IconDiscFull';
 IconDiscFull.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconLocationOn(props: Props) {
   );
 }
 
+IconLocationOn.displayName = 'IconLocationOn';
 IconLocationOn.category = 'communication';

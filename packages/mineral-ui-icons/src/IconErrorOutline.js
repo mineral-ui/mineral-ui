@@ -25,4 +25,5 @@ export default function IconErrorOutline(props: Props) {
   );
 }
 
+IconErrorOutline.displayName = 'IconErrorOutline';
 IconErrorOutline.category = 'alert';

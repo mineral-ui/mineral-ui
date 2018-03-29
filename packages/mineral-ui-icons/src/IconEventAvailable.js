@@ -25,4 +25,5 @@ export default function IconEventAvailable(props: Props) {
   );
 }
 
+IconEventAvailable.displayName = 'IconEventAvailable';
 IconEventAvailable.category = 'notification';

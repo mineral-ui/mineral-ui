@@ -25,4 +25,5 @@ export default function IconViewDay(props: Props) {
   );
 }
 
+IconViewDay.displayName = 'IconViewDay';
 IconViewDay.category = 'action';

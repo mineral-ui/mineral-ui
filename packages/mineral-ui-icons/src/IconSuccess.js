@@ -25,4 +25,5 @@ export default function IconSuccess(props: Props) {
   );
 }
 
+IconSuccess.displayName = 'IconSuccess';
 IconSuccess.category = 'alert';

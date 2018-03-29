@@ -25,4 +25,5 @@ export default function IconPlayCircleOutline(props: Props) {
   );
 }
 
+IconPlayCircleOutline.displayName = 'IconPlayCircleOutline';
 IconPlayCircleOutline.category = 'av';

@@ -25,4 +25,5 @@ export default function IconArrowDropdownDown(props: Props) {
   );
 }
 
+IconArrowDropdownDown.displayName = 'IconArrowDropdownDown';
 IconArrowDropdownDown.category = 'navigation';

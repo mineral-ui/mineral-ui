@@ -25,4 +25,5 @@ export default function IconPermMedia(props: Props) {
   );
 }
 
+IconPermMedia.displayName = 'IconPermMedia';
 IconPermMedia.category = 'action';

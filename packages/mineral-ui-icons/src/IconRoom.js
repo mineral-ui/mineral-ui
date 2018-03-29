@@ -25,4 +25,5 @@ export default function IconRoom(props: Props) {
   );
 }
 
+IconRoom.displayName = 'IconRoom';
 IconRoom.category = 'action';

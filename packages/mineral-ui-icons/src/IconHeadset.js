@@ -25,4 +25,5 @@ export default function IconHeadset(props: Props) {
   );
 }
 
+IconHeadset.displayName = 'IconHeadset';
 IconHeadset.category = 'hardware';
