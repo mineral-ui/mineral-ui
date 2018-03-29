@@ -25,4 +25,5 @@ export default function IconBlurOff(props: Props) {
   );
 }
 
+IconBlurOff.displayName = 'IconBlurOff';
 IconBlurOff.category = 'image';

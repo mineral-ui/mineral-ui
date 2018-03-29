@@ -25,4 +25,5 @@ export default function IconTonality(props: Props) {
   );
 }
 
+IconTonality.displayName = 'IconTonality';
 IconTonality.category = 'image';

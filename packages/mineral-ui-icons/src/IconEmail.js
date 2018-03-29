@@ -25,4 +25,5 @@ export default function IconEmail(props: Props) {
   );
 }
 
+IconEmail.displayName = 'IconEmail';
 IconEmail.category = 'communication';

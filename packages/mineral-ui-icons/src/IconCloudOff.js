@@ -25,4 +25,5 @@ export default function IconCloudOff(props: Props) {
   );
 }
 
+IconCloudOff.displayName = 'IconCloudOff';
 IconCloudOff.category = 'file';

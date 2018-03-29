@@ -25,4 +25,5 @@ export default function {{componentName}}(props: Props) {
   );
 }
 
+{{componentName}}.displayName = '{{componentName}}';
 {{componentName}}.category = '{{componentCategory}}';

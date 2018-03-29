@@ -25,4 +25,5 @@ export default function IconCrop54(props: Props) {
   );
 }
 
+IconCrop54.displayName = 'IconCrop54';
 IconCrop54.category = 'image';

@@ -25,4 +25,5 @@ export default function IconQueue(props: Props) {
   );
 }
 
+IconQueue.displayName = 'IconQueue';
 IconQueue.category = 'av';

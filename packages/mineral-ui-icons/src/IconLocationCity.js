@@ -25,4 +25,5 @@ export default function IconLocationCity(props: Props) {
   );
 }
 
+IconLocationCity.displayName = 'IconLocationCity';
 IconLocationCity.category = 'social';

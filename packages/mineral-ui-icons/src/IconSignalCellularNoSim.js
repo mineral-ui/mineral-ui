@@ -25,4 +25,5 @@ export default function IconSignalCellularNoSim(props: Props) {
   );
 }
 
+IconSignalCellularNoSim.displayName = 'IconSignalCellularNoSim';
 IconSignalCellularNoSim.category = 'device';

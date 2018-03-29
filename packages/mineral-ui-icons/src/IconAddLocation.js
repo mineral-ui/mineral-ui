@@ -25,4 +25,5 @@ export default function IconAddLocation(props: Props) {
   );
 }
 
+IconAddLocation.displayName = 'IconAddLocation';
 IconAddLocation.category = 'maps';

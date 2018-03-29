@@ -25,4 +25,5 @@ export default function IconImportantDevices(props: Props) {
   );
 }
 
+IconImportantDevices.displayName = 'IconImportantDevices';
 IconImportantDevices.category = 'action';

@@ -25,4 +25,5 @@ export default function IconAlarmOff(props: Props) {
   );
 }
 
+IconAlarmOff.displayName = 'IconAlarmOff';
 IconAlarmOff.category = 'action';

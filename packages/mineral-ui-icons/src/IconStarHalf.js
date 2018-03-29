@@ -25,4 +25,5 @@ export default function IconStarHalf(props: Props) {
   );
 }
 
+IconStarHalf.displayName = 'IconStarHalf';
 IconStarHalf.category = 'toggle';

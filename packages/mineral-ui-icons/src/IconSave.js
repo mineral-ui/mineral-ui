@@ -25,4 +25,5 @@ export default function IconSave(props: Props) {
   );
 }
 
+IconSave.displayName = 'IconSave';
 IconSave.category = 'content';

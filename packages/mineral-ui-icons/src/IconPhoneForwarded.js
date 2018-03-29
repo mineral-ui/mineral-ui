@@ -25,4 +25,5 @@ export default function IconPhoneForwarded(props: Props) {
   );
 }
 
+IconPhoneForwarded.displayName = 'IconPhoneForwarded';
 IconPhoneForwarded.category = 'notification';

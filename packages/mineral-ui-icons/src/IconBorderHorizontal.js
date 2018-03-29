@@ -25,4 +25,5 @@ export default function IconBorderHorizontal(props: Props) {
   );
 }
 
+IconBorderHorizontal.displayName = 'IconBorderHorizontal';
 IconBorderHorizontal.category = 'editor';

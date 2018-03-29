@@ -25,4 +25,5 @@ export default function IconKeyboardReturn(props: Props) {
   );
 }
 
+IconKeyboardReturn.displayName = 'IconKeyboardReturn';
 IconKeyboardReturn.category = 'hardware';

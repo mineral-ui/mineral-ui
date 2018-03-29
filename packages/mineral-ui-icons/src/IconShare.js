@@ -25,4 +25,5 @@ export default function IconShare(props: Props) {
   );
 }
 
+IconShare.displayName = 'IconShare';
 IconShare.category = 'social';

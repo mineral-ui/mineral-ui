@@ -25,4 +25,5 @@ export default function IconKeyboardCapslock(props: Props) {
   );
 }
 
+IconKeyboardCapslock.displayName = 'IconKeyboardCapslock';
 IconKeyboardCapslock.category = 'hardware';

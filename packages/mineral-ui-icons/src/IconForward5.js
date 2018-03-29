@@ -25,4 +25,5 @@ export default function IconForward5(props: Props) {
   );
 }
 
+IconForward5.displayName = 'IconForward5';
 IconForward5.category = 'av';

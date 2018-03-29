@@ -25,4 +25,5 @@ export default function IconCropSquare(props: Props) {
   );
 }
 
+IconCropSquare.displayName = 'IconCropSquare';
 IconCropSquare.category = 'image';

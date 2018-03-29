@@ -25,4 +25,5 @@ export default function IconCheckBoxOutlineBlank(props: Props) {
   );
 }
 
+IconCheckBoxOutlineBlank.displayName = 'IconCheckBoxOutlineBlank';
 IconCheckBoxOutlineBlank.category = 'toggle';

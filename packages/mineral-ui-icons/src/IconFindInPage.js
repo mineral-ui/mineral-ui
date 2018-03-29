@@ -25,4 +25,5 @@ export default function IconFindInPage(props: Props) {
   );
 }
 
+IconFindInPage.displayName = 'IconFindInPage';
 IconFindInPage.category = 'action';

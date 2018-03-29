@@ -25,4 +25,5 @@ export default function IconSmartphone(props: Props) {
   );
 }
 
+IconSmartphone.displayName = 'IconSmartphone';
 IconSmartphone.category = 'hardware';

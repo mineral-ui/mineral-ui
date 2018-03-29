@@ -25,4 +25,5 @@ export default function IconEvStation(props: Props) {
   );
 }
 
+IconEvStation.displayName = 'IconEvStation';
 IconEvStation.category = 'maps';

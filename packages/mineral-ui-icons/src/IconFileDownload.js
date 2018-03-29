@@ -25,4 +25,5 @@ export default function IconFileDownload(props: Props) {
   );
 }
 
+IconFileDownload.displayName = 'IconFileDownload';
 IconFileDownload.category = 'file';

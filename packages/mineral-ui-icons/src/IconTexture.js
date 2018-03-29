@@ -25,4 +25,5 @@ export default function IconTexture(props: Props) {
   );
 }
 
+IconTexture.displayName = 'IconTexture';
 IconTexture.category = 'image';

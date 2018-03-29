@@ -25,4 +25,5 @@ export default function IconCropRotate(props: Props) {
   );
 }
 
+IconCropRotate.displayName = 'IconCropRotate';
 IconCropRotate.category = 'image';

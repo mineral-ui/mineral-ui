@@ -25,4 +25,5 @@ export default function IconNewReleases(props: Props) {
   );
 }
 
+IconNewReleases.displayName = 'IconNewReleases';
 IconNewReleases.category = 'av';

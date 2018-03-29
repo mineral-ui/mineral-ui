@@ -25,4 +25,5 @@ export default function IconStarBorder(props: Props) {
   );
 }
 
+IconStarBorder.displayName = 'IconStarBorder';
 IconStarBorder.category = 'toggle';

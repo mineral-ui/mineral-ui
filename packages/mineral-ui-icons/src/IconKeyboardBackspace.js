@@ -25,4 +25,5 @@ export default function IconKeyboardBackspace(props: Props) {
   );
 }
 
+IconKeyboardBackspace.displayName = 'IconKeyboardBackspace';
 IconKeyboardBackspace.category = 'hardware';

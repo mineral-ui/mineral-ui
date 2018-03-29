@@ -25,4 +25,5 @@ export default function IconWbAuto(props: Props) {
   );
 }
 
+IconWbAuto.displayName = 'IconWbAuto';
 IconWbAuto.category = 'image';

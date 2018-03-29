@@ -25,4 +25,5 @@ export default function IconChevronLeft(props: Props) {
   );
 }
 
+IconChevronLeft.displayName = 'IconChevronLeft';
 IconChevronLeft.category = 'navigation';

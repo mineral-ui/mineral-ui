@@ -25,4 +25,5 @@ export default function IconPermDeviceInformation(props: Props) {
   );
 }
 
+IconPermDeviceInformation.displayName = 'IconPermDeviceInformation';
 IconPermDeviceInformation.category = 'action';

@@ -25,4 +25,5 @@ export default function IconAttachFile(props: Props) {
   );
 }
 
+IconAttachFile.displayName = 'IconAttachFile';
 IconAttachFile.category = 'editor';

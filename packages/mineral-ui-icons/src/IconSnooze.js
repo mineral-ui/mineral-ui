@@ -25,4 +25,5 @@ export default function IconSnooze(props: Props) {
   );
 }
 
+IconSnooze.displayName = 'IconSnooze';
 IconSnooze.category = 'av';

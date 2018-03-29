@@ -25,4 +25,5 @@ export default function IconVerifiedUser(props: Props) {
   );
 }
 
+IconVerifiedUser.displayName = 'IconVerifiedUser';
 IconVerifiedUser.category = 'action';

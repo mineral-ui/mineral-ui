@@ -25,4 +25,5 @@ export default function IconFormatLineSpacing(props: Props) {
   );
 }
 
+IconFormatLineSpacing.displayName = 'IconFormatLineSpacing';
 IconFormatLineSpacing.category = 'editor';

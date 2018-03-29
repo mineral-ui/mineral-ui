@@ -25,4 +25,5 @@ export default function IconAccountCircle(props: Props) {
   );
 }
 
+IconAccountCircle.displayName = 'IconAccountCircle';
 IconAccountCircle.category = 'action';

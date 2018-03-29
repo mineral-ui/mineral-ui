@@ -25,4 +25,5 @@ export default function IconSignalWifiOff(props: Props) {
   );
 }
 
+IconSignalWifiOff.displayName = 'IconSignalWifiOff';
 IconSignalWifiOff.category = 'device';

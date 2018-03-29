@@ -25,4 +25,5 @@ export default function IconPieChartOutlined(props: Props) {
   );
 }
 
+IconPieChartOutlined.displayName = 'IconPieChartOutlined';
 IconPieChartOutlined.category = 'editor';

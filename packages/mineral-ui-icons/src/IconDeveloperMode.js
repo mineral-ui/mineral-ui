@@ -25,4 +25,5 @@ export default function IconDeveloperMode(props: Props) {
   );
 }
 
+IconDeveloperMode.displayName = 'IconDeveloperMode';
 IconDeveloperMode.category = 'device';

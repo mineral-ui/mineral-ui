@@ -25,4 +25,5 @@ export default function IconToys(props: Props) {
   );
 }
 
+IconToys.displayName = 'IconToys';
 IconToys.category = 'hardware';

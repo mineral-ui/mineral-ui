@@ -25,4 +25,5 @@ export default function IconZoomIn(props: Props) {
   );
 }
 
+IconZoomIn.displayName = 'IconZoomIn';
 IconZoomIn.category = 'action';

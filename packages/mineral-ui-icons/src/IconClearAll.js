@@ -25,4 +25,5 @@ export default function IconClearAll(props: Props) {
   );
 }
 
+IconClearAll.displayName = 'IconClearAll';
 IconClearAll.category = 'communication';

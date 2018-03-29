@@ -25,4 +25,5 @@ export default function IconLocalOffer(props: Props) {
   );
 }
 
+IconLocalOffer.displayName = 'IconLocalOffer';
 IconLocalOffer.category = 'maps';

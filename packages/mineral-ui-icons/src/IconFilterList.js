@@ -25,4 +25,5 @@ export default function IconFilterList(props: Props) {
   );
 }
 
+IconFilterList.displayName = 'IconFilterList';
 IconFilterList.category = 'content';

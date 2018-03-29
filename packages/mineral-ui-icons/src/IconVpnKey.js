@@ -25,4 +25,5 @@ export default function IconVpnKey(props: Props) {
   );
 }
 
+IconVpnKey.displayName = 'IconVpnKey';
 IconVpnKey.category = 'communication';

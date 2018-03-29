@@ -25,4 +25,5 @@ export default function IconGradient(props: Props) {
   );
 }
 
+IconGradient.displayName = 'IconGradient';
 IconGradient.category = 'image';

@@ -25,4 +25,5 @@ export default function IconChat(props: Props) {
   );
 }
 
+IconChat.displayName = 'IconChat';
 IconChat.category = 'communication';

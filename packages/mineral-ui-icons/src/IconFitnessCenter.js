@@ -25,4 +25,5 @@ export default function IconFitnessCenter(props: Props) {
   );
 }
 
+IconFitnessCenter.displayName = 'IconFitnessCenter';
 IconFitnessCenter.category = 'places';

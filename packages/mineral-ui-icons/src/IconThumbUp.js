@@ -25,4 +25,5 @@ export default function IconThumbUp(props: Props) {
   );
 }
 
+IconThumbUp.displayName = 'IconThumbUp';
 IconThumbUp.category = 'action';

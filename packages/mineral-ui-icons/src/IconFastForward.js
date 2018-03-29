@@ -25,4 +25,5 @@ export default function IconFastForward(props: Props) {
   );
 }
 
+IconFastForward.displayName = 'IconFastForward';
 IconFastForward.category = 'av';

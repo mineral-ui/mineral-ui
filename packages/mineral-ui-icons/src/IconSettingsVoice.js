@@ -25,4 +25,5 @@ export default function IconSettingsVoice(props: Props) {
   );
 }
 
+IconSettingsVoice.displayName = 'IconSettingsVoice';
 IconSettingsVoice.category = 'action';

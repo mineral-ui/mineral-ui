@@ -25,4 +25,5 @@ export default function IconLaptop(props: Props) {
   );
 }
 
+IconLaptop.displayName = 'IconLaptop';
 IconLaptop.category = 'hardware';

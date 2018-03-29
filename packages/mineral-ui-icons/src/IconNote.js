@@ -25,4 +25,5 @@ export default function IconNote(props: Props) {
   );
 }
 
+IconNote.displayName = 'IconNote';
 IconNote.category = 'av';

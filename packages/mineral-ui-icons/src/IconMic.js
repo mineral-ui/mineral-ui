@@ -25,4 +25,5 @@ export default function IconMic(props: Props) {
   );
 }
 
+IconMic.displayName = 'IconMic';
 IconMic.category = 'av';

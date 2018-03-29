@@ -25,4 +25,5 @@ export default function IconCardTravel(props: Props) {
   );
 }
 
+IconCardTravel.displayName = 'IconCardTravel';
 IconCardTravel.category = 'action';

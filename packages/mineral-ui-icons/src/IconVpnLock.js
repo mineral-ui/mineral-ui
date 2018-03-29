@@ -25,4 +25,5 @@ export default function IconVpnLock(props: Props) {
   );
 }
 
+IconVpnLock.displayName = 'IconVpnLock';
 IconVpnLock.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconTimerOff(props: Props) {
   );
 }
 
+IconTimerOff.displayName = 'IconTimerOff';
 IconTimerOff.category = 'image';

@@ -25,4 +25,5 @@ export default function IconLoupe(props: Props) {
   );
 }
 
+IconLoupe.displayName = 'IconLoupe';
 IconLoupe.category = 'image';

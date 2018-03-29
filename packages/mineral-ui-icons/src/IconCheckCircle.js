@@ -25,4 +25,5 @@ export default function IconCheckCircle(props: Props) {
   );
 }
 
+IconCheckCircle.displayName = 'IconCheckCircle';
 IconCheckCircle.category = 'action';

@@ -25,4 +25,5 @@ export default function IconPhotoSizeSelectSmall(props: Props) {
   );
 }
 
+IconPhotoSizeSelectSmall.displayName = 'IconPhotoSizeSelectSmall';
 IconPhotoSizeSelectSmall.category = 'image';

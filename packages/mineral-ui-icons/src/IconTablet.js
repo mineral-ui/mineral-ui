@@ -25,4 +25,5 @@ export default function IconTablet(props: Props) {
   );
 }
 
+IconTablet.displayName = 'IconTablet';
 IconTablet.category = 'hardware';

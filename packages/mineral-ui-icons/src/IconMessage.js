@@ -25,4 +25,5 @@ export default function IconMessage(props: Props) {
   );
 }
 
+IconMessage.displayName = 'IconMessage';
 IconMessage.category = 'communication';

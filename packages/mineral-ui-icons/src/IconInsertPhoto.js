@@ -25,4 +25,5 @@ export default function IconInsertPhoto(props: Props) {
   );
 }
 
+IconInsertPhoto.displayName = 'IconInsertPhoto';
 IconInsertPhoto.category = 'editor';

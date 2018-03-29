@@ -25,4 +25,5 @@ export default function IconBatteryCharging90(props: Props) {
   );
 }
 
+IconBatteryCharging90.displayName = 'IconBatteryCharging90';
 IconBatteryCharging90.category = 'device';

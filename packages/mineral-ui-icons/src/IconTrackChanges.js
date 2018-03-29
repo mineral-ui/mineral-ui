@@ -25,4 +25,5 @@ export default function IconTrackChanges(props: Props) {
   );
 }
 
+IconTrackChanges.displayName = 'IconTrackChanges';
 IconTrackChanges.category = 'action';

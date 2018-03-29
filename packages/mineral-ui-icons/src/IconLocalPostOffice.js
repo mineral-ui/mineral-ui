@@ -25,4 +25,5 @@ export default function IconLocalPostOffice(props: Props) {
   );
 }
 
+IconLocalPostOffice.displayName = 'IconLocalPostOffice';
 IconLocalPostOffice.category = 'maps';

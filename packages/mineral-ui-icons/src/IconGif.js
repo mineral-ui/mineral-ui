@@ -25,4 +25,5 @@ export default function IconGif(props: Props) {
   );
 }
 
+IconGif.displayName = 'IconGif';
 IconGif.category = 'action';

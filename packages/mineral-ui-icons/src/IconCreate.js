@@ -25,4 +25,5 @@ export default function IconCreate(props: Props) {
   );
 }
 
+IconCreate.displayName = 'IconCreate';
 IconCreate.category = 'content';

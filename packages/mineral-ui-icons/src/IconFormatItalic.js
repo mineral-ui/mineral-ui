@@ -25,4 +25,5 @@ export default function IconFormatItalic(props: Props) {
   );
 }
 
+IconFormatItalic.displayName = 'IconFormatItalic';
 IconFormatItalic.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconLiveHelp(props: Props) {
   );
 }
 
+IconLiveHelp.displayName = 'IconLiveHelp';
 IconLiveHelp.category = 'communication';

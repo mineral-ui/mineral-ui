@@ -25,4 +25,5 @@ export default function IconGridOff(props: Props) {
   );
 }
 
+IconGridOff.displayName = 'IconGridOff';
 IconGridOff.category = 'image';

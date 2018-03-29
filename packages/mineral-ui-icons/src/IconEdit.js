@@ -25,4 +25,5 @@ export default function IconEdit(props: Props) {
   );
 }
 
+IconEdit.displayName = 'IconEdit';
 IconEdit.category = 'image';

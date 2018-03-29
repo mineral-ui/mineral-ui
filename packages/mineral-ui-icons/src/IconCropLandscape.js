@@ -25,4 +25,5 @@ export default function IconCropLandscape(props: Props) {
   );
 }
 
+IconCropLandscape.displayName = 'IconCropLandscape';
 IconCropLandscape.category = 'image';

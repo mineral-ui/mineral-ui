@@ -25,4 +25,5 @@ export default function IconBackspace(props: Props) {
   );
 }
 
+IconBackspace.displayName = 'IconBackspace';
 IconBackspace.category = 'content';

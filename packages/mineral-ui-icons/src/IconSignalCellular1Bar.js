@@ -25,4 +25,5 @@ export default function IconSignalCellular1Bar(props: Props) {
   );
 }
 
+IconSignalCellular1Bar.displayName = 'IconSignalCellular1Bar';
 IconSignalCellular1Bar.category = 'device';

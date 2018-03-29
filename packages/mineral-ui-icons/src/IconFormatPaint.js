@@ -25,4 +25,5 @@ export default function IconFormatPaint(props: Props) {
   );
 }
 
+IconFormatPaint.displayName = 'IconFormatPaint';
 IconFormatPaint.category = 'editor';

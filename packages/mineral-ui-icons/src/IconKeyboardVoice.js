@@ -25,4 +25,5 @@ export default function IconKeyboardVoice(props: Props) {
   );
 }
 
+IconKeyboardVoice.displayName = 'IconKeyboardVoice';
 IconKeyboardVoice.category = 'hardware';

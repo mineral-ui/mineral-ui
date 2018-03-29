@@ -25,4 +25,5 @@ export default function IconFace(props: Props) {
   );
 }
 
+IconFace.displayName = 'IconFace';
 IconFace.category = 'action';

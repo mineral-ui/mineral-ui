@@ -25,4 +25,5 @@ export default function IconFormatShapes(props: Props) {
   );
 }
 
+IconFormatShapes.displayName = 'IconFormatShapes';
 IconFormatShapes.category = 'editor';

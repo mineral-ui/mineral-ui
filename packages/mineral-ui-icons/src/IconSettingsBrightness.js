@@ -25,4 +25,5 @@ export default function IconSettingsBrightness(props: Props) {
   );
 }
 
+IconSettingsBrightness.displayName = 'IconSettingsBrightness';
 IconSettingsBrightness.category = 'action';

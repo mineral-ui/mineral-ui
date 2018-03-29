@@ -25,4 +25,5 @@ export default function IconGesture(props: Props) {
   );
 }
 
+IconGesture.displayName = 'IconGesture';
 IconGesture.category = 'content';

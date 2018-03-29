@@ -25,4 +25,5 @@ export default function IconAccessTime(props: Props) {
   );
 }
 
+IconAccessTime.displayName = 'IconAccessTime';
 IconAccessTime.category = 'device';

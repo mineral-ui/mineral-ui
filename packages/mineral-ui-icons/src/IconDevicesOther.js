@@ -25,4 +25,5 @@ export default function IconDevicesOther(props: Props) {
   );
 }
 
+IconDevicesOther.displayName = 'IconDevicesOther';
 IconDevicesOther.category = 'hardware';

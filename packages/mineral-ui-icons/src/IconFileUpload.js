@@ -25,4 +25,5 @@ export default function IconFileUpload(props: Props) {
   );
 }
 
+IconFileUpload.displayName = 'IconFileUpload';
 IconFileUpload.category = 'file';

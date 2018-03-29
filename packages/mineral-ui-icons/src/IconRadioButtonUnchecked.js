@@ -25,4 +25,5 @@ export default function IconRadioButtonUnchecked(props: Props) {
   );
 }
 
+IconRadioButtonUnchecked.displayName = 'IconRadioButtonUnchecked';
 IconRadioButtonUnchecked.category = 'toggle';

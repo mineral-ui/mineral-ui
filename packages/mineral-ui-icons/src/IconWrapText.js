@@ -25,4 +25,5 @@ export default function IconWrapText(props: Props) {
   );
 }
 
+IconWrapText.displayName = 'IconWrapText';
 IconWrapText.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconLibraryBooks(props: Props) {
   );
 }
 
+IconLibraryBooks.displayName = 'IconLibraryBooks';
 IconLibraryBooks.category = 'av';

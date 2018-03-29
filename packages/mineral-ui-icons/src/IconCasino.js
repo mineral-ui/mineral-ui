@@ -25,4 +25,5 @@ export default function IconCasino(props: Props) {
   );
 }
 
+IconCasino.displayName = 'IconCasino';
 IconCasino.category = 'places';

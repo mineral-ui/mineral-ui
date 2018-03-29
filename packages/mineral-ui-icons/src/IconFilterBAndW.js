@@ -25,4 +25,5 @@ export default function IconFilterBAndW(props: Props) {
   );
 }
 
+IconFilterBAndW.displayName = 'IconFilterBAndW';
 IconFilterBAndW.category = 'image';

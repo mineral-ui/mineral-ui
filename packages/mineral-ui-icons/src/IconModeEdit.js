@@ -25,4 +25,5 @@ export default function IconModeEdit(props: Props) {
   );
 }
 
+IconModeEdit.displayName = 'IconModeEdit';
 IconModeEdit.category = 'editor';

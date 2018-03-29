@@ -25,4 +25,5 @@ export default function IconTextsms(props: Props) {
   );
 }
 
+IconTextsms.displayName = 'IconTextsms';
 IconTextsms.category = 'communication';

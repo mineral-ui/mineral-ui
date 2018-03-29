@@ -25,4 +25,5 @@ export default function IconPartyMode(props: Props) {
   );
 }
 
+IconPartyMode.displayName = 'IconPartyMode';
 IconPartyMode.category = 'social';

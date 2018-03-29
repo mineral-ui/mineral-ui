@@ -25,4 +25,5 @@ export default function IconFormatListBulleted(props: Props) {
   );
 }
 
+IconFormatListBulleted.displayName = 'IconFormatListBulleted';
 IconFormatListBulleted.category = 'editor';

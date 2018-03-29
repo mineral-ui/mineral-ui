@@ -25,4 +25,5 @@ export default function IconSmsFailed(props: Props) {
   );
 }
 
+IconSmsFailed.displayName = 'IconSmsFailed';
 IconSmsFailed.category = 'notification';

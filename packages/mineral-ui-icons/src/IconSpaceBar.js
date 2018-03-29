@@ -25,4 +25,5 @@ export default function IconSpaceBar(props: Props) {
   );
 }
 
+IconSpaceBar.displayName = 'IconSpaceBar';
 IconSpaceBar.category = 'editor';

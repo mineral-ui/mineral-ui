@@ -25,4 +25,5 @@ export default function IconSignalCellularOff(props: Props) {
   );
 }
 
+IconSignalCellularOff.displayName = 'IconSignalCellularOff';
 IconSignalCellularOff.category = 'device';

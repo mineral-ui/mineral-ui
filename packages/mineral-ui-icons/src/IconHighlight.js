@@ -25,4 +25,5 @@ export default function IconHighlight(props: Props) {
   );
 }
 
+IconHighlight.displayName = 'IconHighlight';
 IconHighlight.category = 'editor';

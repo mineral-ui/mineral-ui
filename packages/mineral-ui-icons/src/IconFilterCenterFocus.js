@@ -25,4 +25,5 @@ export default function IconFilterCenterFocus(props: Props) {
   );
 }
 
+IconFilterCenterFocus.displayName = 'IconFilterCenterFocus';
 IconFilterCenterFocus.category = 'image';

@@ -25,4 +25,5 @@ export default function IconCallMissed(props: Props) {
   );
 }
 
+IconCallMissed.displayName = 'IconCallMissed';
 IconCallMissed.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconAddAlert(props: Props) {
   );
 }
 
+IconAddAlert.displayName = 'IconAddAlert';
 IconAddAlert.category = 'alert';

@@ -25,4 +25,5 @@ export default function IconPermPhoneMsg(props: Props) {
   );
 }
 
+IconPermPhoneMsg.displayName = 'IconPermPhoneMsg';
 IconPermPhoneMsg.category = 'action';

@@ -25,4 +25,5 @@ export default function IconZoomOut(props: Props) {
   );
 }
 
+IconZoomOut.displayName = 'IconZoomOut';
 IconZoomOut.category = 'action';

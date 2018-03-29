@@ -25,4 +25,5 @@ export default function IconMicNone(props: Props) {
   );
 }
 
+IconMicNone.displayName = 'IconMicNone';
 IconMicNone.category = 'av';

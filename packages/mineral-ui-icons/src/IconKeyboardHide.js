@@ -25,4 +25,5 @@ export default function IconKeyboardHide(props: Props) {
   );
 }
 
+IconKeyboardHide.displayName = 'IconKeyboardHide';
 IconKeyboardHide.category = 'hardware';

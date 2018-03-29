@@ -25,4 +25,5 @@ export default function IconTerrain(props: Props) {
   );
 }
 
+IconTerrain.displayName = 'IconTerrain';
 IconTerrain.category = 'maps';

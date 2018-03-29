@@ -25,4 +25,5 @@ export default function IconPictureInPictureAlt(props: Props) {
   );
 }
 
+IconPictureInPictureAlt.displayName = 'IconPictureInPictureAlt';
 IconPictureInPictureAlt.category = 'action';

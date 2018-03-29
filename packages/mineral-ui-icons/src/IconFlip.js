@@ -25,4 +25,5 @@ export default function IconFlip(props: Props) {
   );
 }
 
+IconFlip.displayName = 'IconFlip';
 IconFlip.category = 'image';

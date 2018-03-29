@@ -25,4 +25,5 @@ export default function IconContentPaste(props: Props) {
   );
 }
 
+IconContentPaste.displayName = 'IconContentPaste';
 IconContentPaste.category = 'content';

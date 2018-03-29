@@ -25,4 +25,5 @@ export default function IconSlowMotionVideo(props: Props) {
   );
 }
 
+IconSlowMotionVideo.displayName = 'IconSlowMotionVideo';
 IconSlowMotionVideo.category = 'av';

@@ -25,4 +25,5 @@ export default function IconPhotoLibrary(props: Props) {
   );
 }
 
+IconPhotoLibrary.displayName = 'IconPhotoLibrary';
 IconPhotoLibrary.category = 'image';

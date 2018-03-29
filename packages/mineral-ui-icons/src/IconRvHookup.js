@@ -25,4 +25,5 @@ export default function IconRvHookup(props: Props) {
   );
 }
 
+IconRvHookup.displayName = 'IconRvHookup';
 IconRvHookup.category = 'places';

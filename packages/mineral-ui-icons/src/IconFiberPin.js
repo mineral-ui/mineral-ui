@@ -25,4 +25,5 @@ export default function IconFiberPin(props: Props) {
   );
 }
 
+IconFiberPin.displayName = 'IconFiberPin';
 IconFiberPin.category = 'av';

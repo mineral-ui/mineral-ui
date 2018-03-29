@@ -25,4 +25,5 @@ export default function IconRestaurant(props: Props) {
   );
 }
 
+IconRestaurant.displayName = 'IconRestaurant';
 IconRestaurant.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconPool(props: Props) {
   );
 }
 
+IconPool.displayName = 'IconPool';
 IconPool.category = 'places';

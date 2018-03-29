@@ -25,4 +25,5 @@ export default function IconCreateNewFolder(props: Props) {
   );
 }
 
+IconCreateNewFolder.displayName = 'IconCreateNewFolder';
 IconCreateNewFolder.category = 'file';

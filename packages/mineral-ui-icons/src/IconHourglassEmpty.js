@@ -25,4 +25,5 @@ export default function IconHourglassEmpty(props: Props) {
   );
 }
 
+IconHourglassEmpty.displayName = 'IconHourglassEmpty';
 IconHourglassEmpty.category = 'action';

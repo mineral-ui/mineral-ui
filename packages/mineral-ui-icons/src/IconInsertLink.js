@@ -25,4 +25,5 @@ export default function IconInsertLink(props: Props) {
   );
 }
 
+IconInsertLink.displayName = 'IconInsertLink';
 IconInsertLink.category = 'editor';

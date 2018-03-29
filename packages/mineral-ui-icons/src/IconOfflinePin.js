@@ -25,4 +25,5 @@ export default function IconOfflinePin(props: Props) {
   );
 }
 
+IconOfflinePin.displayName = 'IconOfflinePin';
 IconOfflinePin.category = 'action';

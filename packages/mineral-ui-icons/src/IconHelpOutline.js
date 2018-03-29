@@ -25,4 +25,5 @@ export default function IconHelpOutline(props: Props) {
   );
 }
 
+IconHelpOutline.displayName = 'IconHelpOutline';
 IconHelpOutline.category = 'action';

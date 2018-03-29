@@ -25,4 +25,5 @@ export default function IconSettingsOverscan(props: Props) {
   );
 }
 
+IconSettingsOverscan.displayName = 'IconSettingsOverscan';
 IconSettingsOverscan.category = 'action';

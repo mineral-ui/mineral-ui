@@ -25,4 +25,5 @@ export default function IconNoteAdd(props: Props) {
   );
 }
 
+IconNoteAdd.displayName = 'IconNoteAdd';
 IconNoteAdd.category = 'action';

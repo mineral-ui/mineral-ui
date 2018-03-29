@@ -25,4 +25,5 @@ export default function IconCloudDone(props: Props) {
   );
 }
 
+IconCloudDone.displayName = 'IconCloudDone';
 IconCloudDone.category = 'file';

@@ -25,4 +25,5 @@ export default function IconBeenhere(props: Props) {
   );
 }
 
+IconBeenhere.displayName = 'IconBeenhere';
 IconBeenhere.category = 'maps';

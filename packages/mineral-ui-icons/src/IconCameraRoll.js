@@ -25,4 +25,5 @@ export default function IconCameraRoll(props: Props) {
   );
 }
 
+IconCameraRoll.displayName = 'IconCameraRoll';
 IconCameraRoll.category = 'image';

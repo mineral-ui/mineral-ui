@@ -25,4 +25,5 @@ export default function IconFormatStrikethrough(props: Props) {
   );
 }
 
+IconFormatStrikethrough.displayName = 'IconFormatStrikethrough';
 IconFormatStrikethrough.category = 'editor';

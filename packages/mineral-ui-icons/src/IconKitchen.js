@@ -25,4 +25,5 @@ export default function IconKitchen(props: Props) {
   );
 }
 
+IconKitchen.displayName = 'IconKitchen';
 IconKitchen.category = 'places';

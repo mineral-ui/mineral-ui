@@ -25,4 +25,5 @@ export default function IconDirectionsSubway(props: Props) {
   );
 }
 
+IconDirectionsSubway.displayName = 'IconDirectionsSubway';
 IconDirectionsSubway.category = 'maps';

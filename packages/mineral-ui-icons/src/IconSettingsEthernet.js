@@ -25,4 +25,5 @@ export default function IconSettingsEthernet(props: Props) {
   );
 }
 
+IconSettingsEthernet.displayName = 'IconSettingsEthernet';
 IconSettingsEthernet.category = 'action';

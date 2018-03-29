@@ -25,4 +25,5 @@ export default function IconViewAgenda(props: Props) {
   );
 }
 
+IconViewAgenda.displayName = 'IconViewAgenda';
 IconViewAgenda.category = 'action';

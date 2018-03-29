@@ -25,4 +25,5 @@ export default function IconArrowDropDownCircle(props: Props) {
   );
 }
 
+IconArrowDropDownCircle.displayName = 'IconArrowDropDownCircle';
 IconArrowDropDownCircle.category = 'navigation';

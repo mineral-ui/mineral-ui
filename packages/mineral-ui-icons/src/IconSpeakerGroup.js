@@ -25,4 +25,5 @@ export default function IconSpeakerGroup(props: Props) {
   );
 }
 
+IconSpeakerGroup.displayName = 'IconSpeakerGroup';
 IconSpeakerGroup.category = 'hardware';

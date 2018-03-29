@@ -25,4 +25,5 @@ export default function IconVignette(props: Props) {
   );
 }
 
+IconVignette.displayName = 'IconVignette';
 IconVignette.category = 'image';

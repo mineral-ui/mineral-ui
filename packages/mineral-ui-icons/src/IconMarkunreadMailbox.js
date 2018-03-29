@@ -25,4 +25,5 @@ export default function IconMarkunreadMailbox(props: Props) {
   );
 }
 
+IconMarkunreadMailbox.displayName = 'IconMarkunreadMailbox';
 IconMarkunreadMailbox.category = 'action';

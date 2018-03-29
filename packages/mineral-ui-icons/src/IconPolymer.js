@@ -25,4 +25,5 @@ export default function IconPolymer(props: Props) {
   );
 }
 
+IconPolymer.displayName = 'IconPolymer';
 IconPolymer.category = 'action';

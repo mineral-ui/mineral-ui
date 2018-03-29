@@ -25,4 +25,5 @@ export default function IconLocalSee(props: Props) {
   );
 }
 
+IconLocalSee.displayName = 'IconLocalSee';
 IconLocalSee.category = 'maps';

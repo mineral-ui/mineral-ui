@@ -25,4 +25,5 @@ export default function IconScanner(props: Props) {
   );
 }
 
+IconScanner.displayName = 'IconScanner';
 IconScanner.category = 'hardware';

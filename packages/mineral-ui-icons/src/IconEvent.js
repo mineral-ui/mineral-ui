@@ -25,4 +25,5 @@ export default function IconEvent(props: Props) {
   );
 }
 
+IconEvent.displayName = 'IconEvent';
 IconEvent.category = 'action';

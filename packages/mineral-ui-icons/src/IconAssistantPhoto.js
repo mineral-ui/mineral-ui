@@ -25,4 +25,5 @@ export default function IconAssistantPhoto(props: Props) {
   );
 }
 
+IconAssistantPhoto.displayName = 'IconAssistantPhoto';
 IconAssistantPhoto.category = 'image';

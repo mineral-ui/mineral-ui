@@ -25,4 +25,5 @@ export default function IconStraighten(props: Props) {
   );
 }
 
+IconStraighten.displayName = 'IconStraighten';
 IconStraighten.category = 'image';

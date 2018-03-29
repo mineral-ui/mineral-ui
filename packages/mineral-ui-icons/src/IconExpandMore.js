@@ -25,4 +25,5 @@ export default function IconExpandMore(props: Props) {
   );
 }
 
+IconExpandMore.displayName = 'IconExpandMore';
 IconExpandMore.category = 'navigation';

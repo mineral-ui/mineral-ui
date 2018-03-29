@@ -25,4 +25,5 @@ export default function IconPhone(props: Props) {
   );
 }
 
+IconPhone.displayName = 'IconPhone';
 IconPhone.category = 'communication';

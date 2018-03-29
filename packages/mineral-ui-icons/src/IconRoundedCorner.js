@@ -25,4 +25,5 @@ export default function IconRoundedCorner(props: Props) {
   );
 }
 
+IconRoundedCorner.displayName = 'IconRoundedCorner';
 IconRoundedCorner.category = 'action';

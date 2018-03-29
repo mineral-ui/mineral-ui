@@ -25,4 +25,5 @@ export default function IconMoreHoriz(props: Props) {
   );
 }
 
+IconMoreHoriz.displayName = 'IconMoreHoriz';
 IconMoreHoriz.category = 'navigation';

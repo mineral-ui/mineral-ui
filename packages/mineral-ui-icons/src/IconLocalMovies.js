@@ -25,4 +25,5 @@ export default function IconLocalMovies(props: Props) {
   );
 }
 
+IconLocalMovies.displayName = 'IconLocalMovies';
 IconLocalMovies.category = 'maps';

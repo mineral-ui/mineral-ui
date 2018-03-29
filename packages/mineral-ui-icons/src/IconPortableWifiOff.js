@@ -25,4 +25,5 @@ export default function IconPortableWifiOff(props: Props) {
   );
 }
 
+IconPortableWifiOff.displayName = 'IconPortableWifiOff';
 IconPortableWifiOff.category = 'communication';

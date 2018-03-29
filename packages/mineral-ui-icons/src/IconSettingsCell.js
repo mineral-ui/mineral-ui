@@ -25,4 +25,5 @@ export default function IconSettingsCell(props: Props) {
   );
 }
 
+IconSettingsCell.displayName = 'IconSettingsCell';
 IconSettingsCell.category = 'action';

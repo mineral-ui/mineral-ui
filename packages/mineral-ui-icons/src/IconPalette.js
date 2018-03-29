@@ -25,4 +25,5 @@ export default function IconPalette(props: Props) {
   );
 }
 
+IconPalette.displayName = 'IconPalette';
 IconPalette.category = 'image';

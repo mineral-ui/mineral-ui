@@ -25,4 +25,5 @@ export default function IconAirlineSeatLegroomNormal(props: Props) {
   );
 }
 
+IconAirlineSeatLegroomNormal.displayName = 'IconAirlineSeatLegroomNormal';
 IconAirlineSeatLegroomNormal.category = 'notification';

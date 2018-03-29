@@ -25,4 +25,5 @@ export default function IconFormatUnderlined(props: Props) {
   );
 }
 
+IconFormatUnderlined.displayName = 'IconFormatUnderlined';
 IconFormatUnderlined.category = 'editor';

@@ -25,4 +25,5 @@ export default function IconFlight(props: Props) {
   );
 }
 
+IconFlight.displayName = 'IconFlight';
 IconFlight.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconUsb(props: Props) {
   );
 }
 
+IconUsb.displayName = 'IconUsb';
 IconUsb.category = 'device';

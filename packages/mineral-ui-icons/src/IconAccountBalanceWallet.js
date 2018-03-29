@@ -25,4 +25,5 @@ export default function IconAccountBalanceWallet(props: Props) {
   );
 }
 
+IconAccountBalanceWallet.displayName = 'IconAccountBalanceWallet';
 IconAccountBalanceWallet.category = 'action';

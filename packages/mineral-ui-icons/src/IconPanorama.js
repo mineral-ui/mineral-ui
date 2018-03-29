@@ -25,4 +25,5 @@ export default function IconPanorama(props: Props) {
   );
 }
 
+IconPanorama.displayName = 'IconPanorama';
 IconPanorama.category = 'image';

@@ -25,4 +25,5 @@ export default function IconFolderSpecial(props: Props) {
   );
 }
 
+IconFolderSpecial.displayName = 'IconFolderSpecial';
 IconFolderSpecial.category = 'notification';

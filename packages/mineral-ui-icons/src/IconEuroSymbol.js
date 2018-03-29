@@ -25,4 +25,5 @@ export default function IconEuroSymbol(props: Props) {
   );
 }
 
+IconEuroSymbol.displayName = 'IconEuroSymbol';
 IconEuroSymbol.category = 'action';

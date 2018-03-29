@@ -25,4 +25,5 @@ export default function IconCancel(props: Props) {
   );
 }
 
+IconCancel.displayName = 'IconCancel';
 IconCancel.category = 'navigation';

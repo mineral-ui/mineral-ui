@@ -25,4 +25,5 @@ export default function IconPinDrop(props: Props) {
   );
 }
 
+IconPinDrop.displayName = 'IconPinDrop';
 IconPinDrop.category = 'maps';

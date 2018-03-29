@@ -25,4 +25,5 @@ export default function IconTurnedInNot(props: Props) {
   );
 }
 
+IconTurnedInNot.displayName = 'IconTurnedInNot';
 IconTurnedInNot.category = 'action';

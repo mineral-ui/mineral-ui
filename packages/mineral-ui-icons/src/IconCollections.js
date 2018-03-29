@@ -25,4 +25,5 @@ export default function IconCollections(props: Props) {
   );
 }
 
+IconCollections.displayName = 'IconCollections';
 IconCollections.category = 'image';

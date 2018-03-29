@@ -25,4 +25,5 @@ export default function IconRouter(props: Props) {
   );
 }
 
+IconRouter.displayName = 'IconRouter';
 IconRouter.category = 'hardware';

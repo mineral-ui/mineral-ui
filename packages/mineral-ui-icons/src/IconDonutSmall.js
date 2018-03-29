@@ -25,4 +25,5 @@ export default function IconDonutSmall(props: Props) {
   );
 }
 
+IconDonutSmall.displayName = 'IconDonutSmall';
 IconDonutSmall.category = 'action';

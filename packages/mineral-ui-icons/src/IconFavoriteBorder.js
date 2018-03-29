@@ -25,4 +25,5 @@ export default function IconFavoriteBorder(props: Props) {
   );
 }
 
+IconFavoriteBorder.displayName = 'IconFavoriteBorder';
 IconFavoriteBorder.category = 'action';

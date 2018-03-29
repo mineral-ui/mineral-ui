@@ -25,4 +25,5 @@ export default function IconVideoLibrary(props: Props) {
   );
 }
 
+IconVideoLibrary.displayName = 'IconVideoLibrary';
 IconVideoLibrary.category = 'av';

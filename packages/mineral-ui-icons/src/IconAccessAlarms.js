@@ -25,4 +25,5 @@ export default function IconAccessAlarms(props: Props) {
   );
 }
 
+IconAccessAlarms.displayName = 'IconAccessAlarms';
 IconAccessAlarms.category = 'device';

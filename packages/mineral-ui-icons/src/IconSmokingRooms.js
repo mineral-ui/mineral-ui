@@ -25,4 +25,5 @@ export default function IconSmokingRooms(props: Props) {
   );
 }
 
+IconSmokingRooms.displayName = 'IconSmokingRooms';
 IconSmokingRooms.category = 'places';

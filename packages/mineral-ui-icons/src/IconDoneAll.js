@@ -25,4 +25,5 @@ export default function IconDoneAll(props: Props) {
   );
 }
 
+IconDoneAll.displayName = 'IconDoneAll';
 IconDoneAll.category = 'action';

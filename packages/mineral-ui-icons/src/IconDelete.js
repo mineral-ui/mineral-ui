@@ -25,4 +25,5 @@ export default function IconDelete(props: Props) {
   );
 }
 
+IconDelete.displayName = 'IconDelete';
 IconDelete.category = 'action';

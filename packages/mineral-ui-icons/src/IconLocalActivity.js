@@ -25,4 +25,5 @@ export default function IconLocalActivity(props: Props) {
   );
 }
 
+IconLocalActivity.displayName = 'IconLocalActivity';
 IconLocalActivity.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconComment(props: Props) {
   );
 }
 
+IconComment.displayName = 'IconComment';
 IconComment.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconLocalAtm(props: Props) {
   );
 }
 
+IconLocalAtm.displayName = 'IconLocalAtm';
 IconLocalAtm.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconBrightness5(props: Props) {
   );
 }
 
+IconBrightness5.displayName = 'IconBrightness5';
 IconBrightness5.category = 'image';

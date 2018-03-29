@@ -25,4 +25,5 @@ export default function IconAttachMoney(props: Props) {
   );
 }
 
+IconAttachMoney.displayName = 'IconAttachMoney';
 IconAttachMoney.category = 'editor';

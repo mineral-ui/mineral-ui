@@ -25,4 +25,5 @@ export default function IconTransferWithinAStation(props: Props) {
   );
 }
 
+IconTransferWithinAStation.displayName = 'IconTransferWithinAStation';
 IconTransferWithinAStation.category = 'maps';

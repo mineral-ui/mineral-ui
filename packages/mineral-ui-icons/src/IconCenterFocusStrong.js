@@ -25,4 +25,5 @@ export default function IconCenterFocusStrong(props: Props) {
   );
 }
 
+IconCenterFocusStrong.displayName = 'IconCenterFocusStrong';
 IconCenterFocusStrong.category = 'image';

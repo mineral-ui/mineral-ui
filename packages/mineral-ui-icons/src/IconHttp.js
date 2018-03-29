@@ -25,4 +25,5 @@ export default function IconHttp(props: Props) {
   );
 }
 
+IconHttp.displayName = 'IconHttp';
 IconHttp.category = 'action';

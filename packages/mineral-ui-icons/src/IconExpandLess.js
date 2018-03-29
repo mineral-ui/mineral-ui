@@ -25,4 +25,5 @@ export default function IconExpandLess(props: Props) {
   );
 }
 
+IconExpandLess.displayName = 'IconExpandLess';
 IconExpandLess.category = 'navigation';

@@ -25,4 +25,5 @@ export default function IconEject(props: Props) {
   );
 }
 
+IconEject.displayName = 'IconEject';
 IconEject.category = 'action';

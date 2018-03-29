@@ -25,4 +25,5 @@ export default function IconRedo(props: Props) {
   );
 }
 
+IconRedo.displayName = 'IconRedo';
 IconRedo.category = 'content';

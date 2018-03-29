@@ -25,4 +25,5 @@ export default function IconBorderClear(props: Props) {
   );
 }
 
+IconBorderClear.displayName = 'IconBorderClear';
 IconBorderClear.category = 'editor';

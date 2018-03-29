@@ -25,4 +25,5 @@ export default function IconLocalCarWash(props: Props) {
   );
 }
 
+IconLocalCarWash.displayName = 'IconLocalCarWash';
 IconLocalCarWash.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconBookmark(props: Props) {
   );
 }
 
+IconBookmark.displayName = 'IconBookmark';
 IconBookmark.category = 'action';

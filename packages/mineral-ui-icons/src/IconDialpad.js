@@ -25,4 +25,5 @@ export default function IconDialpad(props: Props) {
   );
 }
 
+IconDialpad.displayName = 'IconDialpad';
 IconDialpad.category = 'communication';

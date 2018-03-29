@@ -25,4 +25,5 @@ export default function IconTimelapse(props: Props) {
   );
 }
 
+IconTimelapse.displayName = 'IconTimelapse';
 IconTimelapse.category = 'image';

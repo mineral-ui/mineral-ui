@@ -25,4 +25,5 @@ export default function IconQueuePlayNext(props: Props) {
   );
 }
 
+IconQueuePlayNext.displayName = 'IconQueuePlayNext';
 IconQueuePlayNext.category = 'av';

@@ -25,4 +25,5 @@ export default function IconSyncProblem(props: Props) {
   );
 }
 
+IconSyncProblem.displayName = 'IconSyncProblem';
 IconSyncProblem.category = 'notification';

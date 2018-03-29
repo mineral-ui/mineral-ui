@@ -25,4 +25,5 @@ export default function IconFiberDvr(props: Props) {
   );
 }
 
+IconFiberDvr.displayName = 'IconFiberDvr';
 IconFiberDvr.category = 'av';

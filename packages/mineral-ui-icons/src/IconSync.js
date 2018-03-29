@@ -25,4 +25,5 @@ export default function IconSync(props: Props) {
   );
 }
 
+IconSync.displayName = 'IconSync';
 IconSync.category = 'notification';

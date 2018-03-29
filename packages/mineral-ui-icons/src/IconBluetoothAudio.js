@@ -25,4 +25,5 @@ export default function IconBluetoothAudio(props: Props) {
   );
 }
 
+IconBluetoothAudio.displayName = 'IconBluetoothAudio';
 IconBluetoothAudio.category = 'notification';

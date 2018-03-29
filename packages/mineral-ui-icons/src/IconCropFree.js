@@ -25,4 +25,5 @@ export default function IconCropFree(props: Props) {
   );
 }
 
+IconCropFree.displayName = 'IconCropFree';
 IconCropFree.category = 'image';

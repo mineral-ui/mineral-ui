@@ -25,4 +25,5 @@ export default function IconInsertEmoticon(props: Props) {
   );
 }
 
+IconInsertEmoticon.displayName = 'IconInsertEmoticon';
 IconInsertEmoticon.category = 'editor';

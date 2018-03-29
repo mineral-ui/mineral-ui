@@ -25,4 +25,5 @@ export default function IconNature(props: Props) {
   );
 }
 
+IconNature.displayName = 'IconNature';
 IconNature.category = 'image';

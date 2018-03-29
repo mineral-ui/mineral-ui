@@ -25,4 +25,5 @@ export default function IconViewList(props: Props) {
   );
 }
 
+IconViewList.displayName = 'IconViewList';
 IconViewList.category = 'action';

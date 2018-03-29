@@ -25,4 +25,5 @@ export default function IconWbIncandescent(props: Props) {
   );
 }
 
+IconWbIncandescent.displayName = 'IconWbIncandescent';
 IconWbIncandescent.category = 'image';

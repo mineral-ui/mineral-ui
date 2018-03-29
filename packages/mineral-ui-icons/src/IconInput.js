@@ -25,4 +25,5 @@ export default function IconInput(props: Props) {
   );
 }
 
+IconInput.displayName = 'IconInput';
 IconInput.category = 'action';

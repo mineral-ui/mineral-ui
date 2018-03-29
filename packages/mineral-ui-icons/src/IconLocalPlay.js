@@ -25,4 +25,5 @@ export default function IconLocalPlay(props: Props) {
   );
 }
 
+IconLocalPlay.displayName = 'IconLocalPlay';
 IconLocalPlay.category = 'maps';

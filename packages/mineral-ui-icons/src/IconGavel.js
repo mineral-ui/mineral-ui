@@ -25,4 +25,5 @@ export default function IconGavel(props: Props) {
   );
 }
 
+IconGavel.displayName = 'IconGavel';
 IconGavel.category = 'action';

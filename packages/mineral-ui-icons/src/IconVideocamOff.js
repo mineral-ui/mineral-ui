@@ -25,4 +25,5 @@ export default function IconVideocamOff(props: Props) {
   );
 }
 
+IconVideocamOff.displayName = 'IconVideocamOff';
 IconVideocamOff.category = 'av';

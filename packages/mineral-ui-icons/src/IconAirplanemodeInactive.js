@@ -25,4 +25,5 @@ export default function IconAirplanemodeInactive(props: Props) {
   );
 }
 
+IconAirplanemodeInactive.displayName = 'IconAirplanemodeInactive';
 IconAirplanemodeInactive.category = 'device';

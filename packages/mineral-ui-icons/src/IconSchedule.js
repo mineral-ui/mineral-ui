@@ -25,4 +25,5 @@ export default function IconSchedule(props: Props) {
   );
 }
 
+IconSchedule.displayName = 'IconSchedule';
 IconSchedule.category = 'action';

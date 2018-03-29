@@ -25,4 +25,5 @@ export default function IconVolumeMute(props: Props) {
   );
 }
 
+IconVolumeMute.displayName = 'IconVolumeMute';
 IconVolumeMute.category = 'av';

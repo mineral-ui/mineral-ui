@@ -25,4 +25,5 @@ export default function IconControlPointDuplicate(props: Props) {
   );
 }
 
+IconControlPointDuplicate.displayName = 'IconControlPointDuplicate';
 IconControlPointDuplicate.category = 'image';

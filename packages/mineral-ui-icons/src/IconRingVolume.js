@@ -25,4 +25,5 @@ export default function IconRingVolume(props: Props) {
   );
 }
 
+IconRingVolume.displayName = 'IconRingVolume';
 IconRingVolume.category = 'communication';

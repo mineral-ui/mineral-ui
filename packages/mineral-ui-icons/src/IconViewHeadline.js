@@ -25,4 +25,5 @@ export default function IconViewHeadline(props: Props) {
   );
 }
 
+IconViewHeadline.displayName = 'IconViewHeadline';
 IconViewHeadline.category = 'action';

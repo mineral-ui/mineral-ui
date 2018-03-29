@@ -25,4 +25,5 @@ export default function IconFilterTiltShift(props: Props) {
   );
 }
 
+IconFilterTiltShift.displayName = 'IconFilterTiltShift';
 IconFilterTiltShift.category = 'image';

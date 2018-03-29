@@ -25,4 +25,5 @@ export default function IconRemoveCircleOutline(props: Props) {
   );
 }
 
+IconRemoveCircleOutline.displayName = 'IconRemoveCircleOutline';
 IconRemoveCircleOutline.category = 'content';

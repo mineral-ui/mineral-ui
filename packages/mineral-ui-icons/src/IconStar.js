@@ -25,4 +25,5 @@ export default function IconStar(props: Props) {
   );
 }
 
+IconStar.displayName = 'IconStar';
 IconStar.category = 'toggle';

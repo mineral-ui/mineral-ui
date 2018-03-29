@@ -25,4 +25,5 @@ export default function IconRotateLeft(props: Props) {
   );
 }
 
+IconRotateLeft.displayName = 'IconRotateLeft';
 IconRotateLeft.category = 'image';

@@ -25,4 +25,5 @@ export default function IconPlayForWork(props: Props) {
   );
 }
 
+IconPlayForWork.displayName = 'IconPlayForWork';
 IconPlayForWork.category = 'action';

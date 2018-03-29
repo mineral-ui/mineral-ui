@@ -25,4 +25,5 @@ export default function IconExposure(props: Props) {
   );
 }
 
+IconExposure.displayName = 'IconExposure';
 IconExposure.category = 'image';

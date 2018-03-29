@@ -25,4 +25,5 @@ export default function IconLocalMall(props: Props) {
   );
 }
 
+IconLocalMall.displayName = 'IconLocalMall';
 IconLocalMall.category = 'maps';

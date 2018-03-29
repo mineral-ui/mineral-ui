@@ -25,4 +25,5 @@ export default function IconCameraFront(props: Props) {
   );
 }
 
+IconCameraFront.displayName = 'IconCameraFront';
 IconCameraFront.category = 'image';

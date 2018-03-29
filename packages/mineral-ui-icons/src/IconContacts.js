@@ -25,4 +25,5 @@ export default function IconContacts(props: Props) {
   );
 }
 
+IconContacts.displayName = 'IconContacts';
 IconContacts.category = 'communication';

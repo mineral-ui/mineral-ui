@@ -25,4 +25,5 @@ export default function IconLineWeight(props: Props) {
   );
 }
 
+IconLineWeight.displayName = 'IconLineWeight';
 IconLineWeight.category = 'action';

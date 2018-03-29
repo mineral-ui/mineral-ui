@@ -25,4 +25,5 @@ export default function IconRemoveCircle(props: Props) {
   );
 }
 
+IconRemoveCircle.displayName = 'IconRemoveCircle';
 IconRemoveCircle.category = 'content';

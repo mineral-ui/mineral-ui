@@ -25,4 +25,5 @@ export default function IconLocalPizza(props: Props) {
   );
 }
 
+IconLocalPizza.displayName = 'IconLocalPizza';
 IconLocalPizza.category = 'maps';

@@ -25,4 +25,5 @@ export default function IconPeopleOutline(props: Props) {
   );
 }
 
+IconPeopleOutline.displayName = 'IconPeopleOutline';
 IconPeopleOutline.category = 'social';

@@ -25,4 +25,5 @@ export default function IconRecordVoiceOver(props: Props) {
   );
 }
 
+IconRecordVoiceOver.displayName = 'IconRecordVoiceOver';
 IconRecordVoiceOver.category = 'action';

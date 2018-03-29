@@ -25,4 +25,5 @@ export default function IconAddToQueue(props: Props) {
   );
 }
 
+IconAddToQueue.displayName = 'IconAddToQueue';
 IconAddToQueue.category = 'av';

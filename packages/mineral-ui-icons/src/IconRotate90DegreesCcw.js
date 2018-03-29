@@ -25,4 +25,5 @@ export default function IconRotate90DegreesCcw(props: Props) {
   );
 }
 
+IconRotate90DegreesCcw.displayName = 'IconRotate90DegreesCcw';
 IconRotate90DegreesCcw.category = 'image';

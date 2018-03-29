@@ -25,4 +25,5 @@ export default function IconFiberManualRecord(props: Props) {
   );
 }
 
+IconFiberManualRecord.displayName = 'IconFiberManualRecord';
 IconFiberManualRecord.category = 'av';

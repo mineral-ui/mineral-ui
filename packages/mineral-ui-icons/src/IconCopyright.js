@@ -25,4 +25,5 @@ export default function IconCopyright(props: Props) {
   );
 }
 
+IconCopyright.displayName = 'IconCopyright';
 IconCopyright.category = 'action';

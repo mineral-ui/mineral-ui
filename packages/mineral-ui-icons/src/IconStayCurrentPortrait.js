@@ -25,4 +25,5 @@ export default function IconStayCurrentPortrait(props: Props) {
   );
 }
 
+IconStayCurrentPortrait.displayName = 'IconStayCurrentPortrait';
 IconStayCurrentPortrait.category = 'communication';

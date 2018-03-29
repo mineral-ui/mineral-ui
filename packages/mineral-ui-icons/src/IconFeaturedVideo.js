@@ -25,4 +25,5 @@ export default function IconFeaturedVideo(props: Props) {
   );
 }
 
+IconFeaturedVideo.displayName = 'IconFeaturedVideo';
 IconFeaturedVideo.category = 'av';

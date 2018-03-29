@@ -25,4 +25,5 @@ export default function IconLibraryAdd(props: Props) {
   );
 }
 
+IconLibraryAdd.displayName = 'IconLibraryAdd';
 IconLibraryAdd.category = 'av';

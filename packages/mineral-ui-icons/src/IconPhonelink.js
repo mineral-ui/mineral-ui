@@ -25,4 +25,5 @@ export default function IconPhonelink(props: Props) {
   );
 }
 
+IconPhonelink.displayName = 'IconPhonelink';
 IconPhonelink.category = 'hardware';

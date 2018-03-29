@@ -25,4 +25,5 @@ export default function IconNoSim(props: Props) {
   );
 }
 
+IconNoSim.displayName = 'IconNoSim';
 IconNoSim.category = 'communication';

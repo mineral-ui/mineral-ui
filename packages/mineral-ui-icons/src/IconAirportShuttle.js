@@ -25,4 +25,5 @@ export default function IconAirportShuttle(props: Props) {
   );
 }
 
+IconAirportShuttle.displayName = 'IconAirportShuttle';
 IconAirportShuttle.category = 'places';

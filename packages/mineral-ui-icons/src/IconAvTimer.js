@@ -25,4 +25,5 @@ export default function IconAvTimer(props: Props) {
   );
 }
 
+IconAvTimer.displayName = 'IconAvTimer';
 IconAvTimer.category = 'av';

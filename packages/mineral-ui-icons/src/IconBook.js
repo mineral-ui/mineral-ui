@@ -25,4 +25,5 @@ export default function IconBook(props: Props) {
   );
 }
 
+IconBook.displayName = 'IconBook';
 IconBook.category = 'action';

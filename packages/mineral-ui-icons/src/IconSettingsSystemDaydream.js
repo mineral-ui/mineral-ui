@@ -25,4 +25,5 @@ export default function IconSettingsSystemDaydream(props: Props) {
   );
 }
 
+IconSettingsSystemDaydream.displayName = 'IconSettingsSystemDaydream';
 IconSettingsSystemDaydream.category = 'device';

@@ -25,4 +25,5 @@ export default function IconScreenLockLandscape(props: Props) {
   );
 }
 
+IconScreenLockLandscape.displayName = 'IconScreenLockLandscape';
 IconScreenLockLandscape.category = 'device';

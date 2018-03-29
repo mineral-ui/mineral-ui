@@ -25,4 +25,5 @@ export default function IconEventBusy(props: Props) {
   );
 }
 
+IconEventBusy.displayName = 'IconEventBusy';
 IconEventBusy.category = 'notification';

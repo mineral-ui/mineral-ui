@@ -25,4 +25,5 @@ export default function IconMap(props: Props) {
   );
 }
 
+IconMap.displayName = 'IconMap';
 IconMap.category = 'maps';

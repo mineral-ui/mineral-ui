@@ -25,4 +25,5 @@ export default function IconInsertDriveFile(props: Props) {
   );
 }
 
+IconInsertDriveFile.displayName = 'IconInsertDriveFile';
 IconInsertDriveFile.category = 'editor';

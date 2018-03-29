@@ -25,4 +25,5 @@ export default function IconAnnouncement(props: Props) {
   );
 }
 
+IconAnnouncement.displayName = 'IconAnnouncement';
 IconAnnouncement.category = 'action';

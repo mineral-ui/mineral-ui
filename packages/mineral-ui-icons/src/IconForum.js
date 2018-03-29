@@ -25,4 +25,5 @@ export default function IconForum(props: Props) {
   );
 }
 
+IconForum.displayName = 'IconForum';
 IconForum.category = 'communication';

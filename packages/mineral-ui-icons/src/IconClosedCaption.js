@@ -25,4 +25,5 @@ export default function IconClosedCaption(props: Props) {
   );
 }
 
+IconClosedCaption.displayName = 'IconClosedCaption';
 IconClosedCaption.category = 'av';

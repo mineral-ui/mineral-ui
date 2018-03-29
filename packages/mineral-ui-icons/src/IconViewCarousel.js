@@ -25,4 +25,5 @@ export default function IconViewCarousel(props: Props) {
   );
 }
 
+IconViewCarousel.displayName = 'IconViewCarousel';
 IconViewCarousel.category = 'action';

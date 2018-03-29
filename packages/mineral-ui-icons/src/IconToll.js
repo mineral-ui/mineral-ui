@@ -25,4 +25,5 @@ export default function IconToll(props: Props) {
   );
 }
 
+IconToll.displayName = 'IconToll';
 IconToll.category = 'action';

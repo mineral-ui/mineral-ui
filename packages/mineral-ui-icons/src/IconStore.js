@@ -25,4 +25,5 @@ export default function IconStore(props: Props) {
   );
 }
 
+IconStore.displayName = 'IconStore';
 IconStore.category = 'action';

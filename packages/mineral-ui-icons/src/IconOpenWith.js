@@ -25,4 +25,5 @@ export default function IconOpenWith(props: Props) {
   );
 }
 
+IconOpenWith.displayName = 'IconOpenWith';
 IconOpenWith.category = 'action';

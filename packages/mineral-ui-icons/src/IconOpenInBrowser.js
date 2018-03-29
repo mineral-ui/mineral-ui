@@ -25,4 +25,5 @@ export default function IconOpenInBrowser(props: Props) {
   );
 }
 
+IconOpenInBrowser.displayName = 'IconOpenInBrowser';
 IconOpenInBrowser.category = 'action';

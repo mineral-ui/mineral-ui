@@ -25,4 +25,5 @@ export default function IconSystemUpdateAlt(props: Props) {
   );
 }
 
+IconSystemUpdateAlt.displayName = 'IconSystemUpdateAlt';
 IconSystemUpdateAlt.category = 'action';

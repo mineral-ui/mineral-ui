@@ -25,4 +25,5 @@ export default function IconInsertChart(props: Props) {
   );
 }
 
+IconInsertChart.displayName = 'IconInsertChart';
 IconInsertChart.category = 'editor';

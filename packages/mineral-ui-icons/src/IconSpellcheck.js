@@ -25,4 +25,5 @@ export default function IconSpellcheck(props: Props) {
   );
 }
 
+IconSpellcheck.displayName = 'IconSpellcheck';
 IconSpellcheck.category = 'action';

@@ -25,4 +25,5 @@ export default function IconVibration(props: Props) {
   );
 }
 
+IconVibration.displayName = 'IconVibration';
 IconVibration.category = 'notification';

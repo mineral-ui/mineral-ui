@@ -25,4 +25,5 @@ export default function IconStopScreenShare(props: Props) {
   );
 }
 
+IconStopScreenShare.displayName = 'IconStopScreenShare';
 IconStopScreenShare.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconPause(props: Props) {
   );
 }
 
+IconPause.displayName = 'IconPause';
 IconPause.category = 'av';

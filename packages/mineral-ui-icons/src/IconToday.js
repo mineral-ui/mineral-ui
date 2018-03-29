@@ -25,4 +25,5 @@ export default function IconToday(props: Props) {
   );
 }
 
+IconToday.displayName = 'IconToday';
 IconToday.category = 'action';

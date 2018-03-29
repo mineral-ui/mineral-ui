@@ -25,4 +25,5 @@ export default function IconInbox(props: Props) {
   );
 }
 
+IconInbox.displayName = 'IconInbox';
 IconInbox.category = 'content';

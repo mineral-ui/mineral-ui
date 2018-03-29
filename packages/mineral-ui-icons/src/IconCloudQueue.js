@@ -25,4 +25,5 @@ export default function IconCloudQueue(props: Props) {
   );
 }
 
+IconCloudQueue.displayName = 'IconCloudQueue';
 IconCloudQueue.category = 'file';

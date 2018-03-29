@@ -25,4 +25,5 @@ export default function IconContentCopy(props: Props) {
   );
 }
 
+IconContentCopy.displayName = 'IconContentCopy';
 IconContentCopy.category = 'content';

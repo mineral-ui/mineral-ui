@@ -25,4 +25,5 @@ export default function IconPhonelinkLock(props: Props) {
   );
 }
 
+IconPhonelinkLock.displayName = 'IconPhonelinkLock';
 IconPhonelinkLock.category = 'communication';

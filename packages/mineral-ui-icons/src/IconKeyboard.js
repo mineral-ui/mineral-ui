@@ -25,4 +25,5 @@ export default function IconKeyboard(props: Props) {
   );
 }
 
+IconKeyboard.displayName = 'IconKeyboard';
 IconKeyboard.category = 'hardware';

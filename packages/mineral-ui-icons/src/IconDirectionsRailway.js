@@ -25,4 +25,5 @@ export default function IconDirectionsRailway(props: Props) {
   );
 }
 
+IconDirectionsRailway.displayName = 'IconDirectionsRailway';
 IconDirectionsRailway.category = 'maps';

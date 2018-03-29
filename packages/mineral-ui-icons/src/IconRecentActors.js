@@ -25,4 +25,5 @@ export default function IconRecentActors(props: Props) {
   );
 }
 
+IconRecentActors.displayName = 'IconRecentActors';
 IconRecentActors.category = 'av';

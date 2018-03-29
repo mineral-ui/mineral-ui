@@ -25,4 +25,5 @@ export default function IconSchool(props: Props) {
   );
 }
 
+IconSchool.displayName = 'IconSchool';
 IconSchool.category = 'social';

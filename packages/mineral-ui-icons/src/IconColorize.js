@@ -25,4 +25,5 @@ export default function IconColorize(props: Props) {
   );
 }
 
+IconColorize.displayName = 'IconColorize';
 IconColorize.category = 'image';

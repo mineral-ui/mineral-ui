@@ -25,4 +25,5 @@ export default function IconConfirmationNumber(props: Props) {
   );
 }
 
+IconConfirmationNumber.displayName = 'IconConfirmationNumber';
 IconConfirmationNumber.category = 'notification';

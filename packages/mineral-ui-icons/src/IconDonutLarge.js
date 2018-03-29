@@ -25,4 +25,5 @@ export default function IconDonutLarge(props: Props) {
   );
 }
 
+IconDonutLarge.displayName = 'IconDonutLarge';
 IconDonutLarge.category = 'action';

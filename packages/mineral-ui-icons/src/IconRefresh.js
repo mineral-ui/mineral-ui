@@ -25,4 +25,5 @@ export default function IconRefresh(props: Props) {
   );
 }
 
+IconRefresh.displayName = 'IconRefresh';
 IconRefresh.category = 'navigation';

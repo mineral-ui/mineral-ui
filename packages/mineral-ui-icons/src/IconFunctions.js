@@ -25,4 +25,5 @@ export default function IconFunctions(props: Props) {
   );
 }
 
+IconFunctions.displayName = 'IconFunctions';
 IconFunctions.category = 'editor';

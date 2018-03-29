@@ -25,4 +25,5 @@ export default function IconSatellite(props: Props) {
   );
 }
 
+IconSatellite.displayName = 'IconSatellite';
 IconSatellite.category = 'maps';

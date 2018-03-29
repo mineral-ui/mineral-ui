@@ -25,4 +25,5 @@ export default function IconFormatAlignCenter(props: Props) {
   );
 }
 
+IconFormatAlignCenter.displayName = 'IconFormatAlignCenter';
 IconFormatAlignCenter.category = 'editor';

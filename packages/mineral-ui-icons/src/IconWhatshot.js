@@ -25,4 +25,5 @@ export default function IconWhatshot(props: Props) {
   );
 }
 
+IconWhatshot.displayName = 'IconWhatshot';
 IconWhatshot.category = 'social';

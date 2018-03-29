@@ -25,4 +25,5 @@ export default function IconLightbulbOutline(props: Props) {
   );
 }
 
+IconLightbulbOutline.displayName = 'IconLightbulbOutline';
 IconLightbulbOutline.category = 'action';

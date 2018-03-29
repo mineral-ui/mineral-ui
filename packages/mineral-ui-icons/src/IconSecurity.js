@@ -25,4 +25,5 @@ export default function IconSecurity(props: Props) {
   );
 }
 
+IconSecurity.displayName = 'IconSecurity';
 IconSecurity.category = 'hardware';

@@ -25,4 +25,5 @@ export default function IconPieChart(props: Props) {
   );
 }
 
+IconPieChart.displayName = 'IconPieChart';
 IconPieChart.category = 'editor';

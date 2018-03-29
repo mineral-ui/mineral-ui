@@ -25,4 +25,5 @@ export default function IconKeyboardArrowDown(props: Props) {
   );
 }
 
+IconKeyboardArrowDown.displayName = 'IconKeyboardArrowDown';
 IconKeyboardArrowDown.category = 'hardware';

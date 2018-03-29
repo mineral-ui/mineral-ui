@@ -25,4 +25,5 @@ export default function IconViewStream(props: Props) {
   );
 }
 
+IconViewStream.displayName = 'IconViewStream';
 IconViewStream.category = 'action';

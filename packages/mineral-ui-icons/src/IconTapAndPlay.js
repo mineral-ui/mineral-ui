@@ -25,4 +25,5 @@ export default function IconTapAndPlay(props: Props) {
   );
 }
 
+IconTapAndPlay.displayName = 'IconTapAndPlay';
 IconTapAndPlay.category = 'notification';

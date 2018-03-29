@@ -25,4 +25,5 @@ export default function IconQuestionAnswer(props: Props) {
   );
 }
 
+IconQuestionAnswer.displayName = 'IconQuestionAnswer';
 IconQuestionAnswer.category = 'action';

@@ -25,4 +25,5 @@ export default function IconMultilineChart(props: Props) {
   );
 }
 
+IconMultilineChart.displayName = 'IconMultilineChart';
 IconMultilineChart.category = 'editor';

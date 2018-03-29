@@ -25,4 +25,5 @@ export default function IconLocationDisabled(props: Props) {
   );
 }
 
+IconLocationDisabled.displayName = 'IconLocationDisabled';
 IconLocationDisabled.category = 'device';

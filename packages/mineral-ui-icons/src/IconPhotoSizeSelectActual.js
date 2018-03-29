@@ -25,4 +25,5 @@ export default function IconPhotoSizeSelectActual(props: Props) {
   );
 }
 
+IconPhotoSizeSelectActual.displayName = 'IconPhotoSizeSelectActual';
 IconPhotoSizeSelectActual.category = 'image';

@@ -25,4 +25,5 @@ export default function IconAccessibility(props: Props) {
   );
 }
 
+IconAccessibility.displayName = 'IconAccessibility';
 IconAccessibility.category = 'action';

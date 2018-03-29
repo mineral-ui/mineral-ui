@@ -25,4 +25,5 @@ export default function IconComputer(props: Props) {
   );
 }
 
+IconComputer.displayName = 'IconComputer';
 IconComputer.category = 'hardware';

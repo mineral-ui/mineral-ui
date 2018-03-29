@@ -25,4 +25,5 @@ export default function IconFingerprint(props: Props) {
   );
 }
 
+IconFingerprint.displayName = 'IconFingerprint';
 IconFingerprint.category = 'action';

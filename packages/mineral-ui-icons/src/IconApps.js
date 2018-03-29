@@ -25,4 +25,5 @@ export default function IconApps(props: Props) {
   );
 }
 
+IconApps.displayName = 'IconApps';
 IconApps.category = 'navigation';

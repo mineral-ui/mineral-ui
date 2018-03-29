@@ -25,4 +25,5 @@ export default function IconPowerInput(props: Props) {
   );
 }
 
+IconPowerInput.displayName = 'IconPowerInput';
 IconPowerInput.category = 'hardware';

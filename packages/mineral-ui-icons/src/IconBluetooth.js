@@ -25,4 +25,5 @@ export default function IconBluetooth(props: Props) {
   );
 }
 
+IconBluetooth.displayName = 'IconBluetooth';
 IconBluetooth.category = 'device';

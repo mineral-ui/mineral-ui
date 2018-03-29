@@ -25,4 +25,5 @@ export default function IconPhonelinkSetup(props: Props) {
   );
 }
 
+IconPhonelinkSetup.displayName = 'IconPhonelinkSetup';
 IconPhonelinkSetup.category = 'communication';

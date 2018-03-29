@@ -25,4 +25,5 @@ export default function IconPictureAsPdf(props: Props) {
   );
 }
 
+IconPictureAsPdf.displayName = 'IconPictureAsPdf';
 IconPictureAsPdf.category = 'image';

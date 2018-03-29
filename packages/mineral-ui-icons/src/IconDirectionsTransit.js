@@ -25,4 +25,5 @@ export default function IconDirectionsTransit(props: Props) {
   );
 }
 
+IconDirectionsTransit.displayName = 'IconDirectionsTransit';
 IconDirectionsTransit.category = 'maps';

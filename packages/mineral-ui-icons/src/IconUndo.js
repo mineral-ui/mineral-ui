@@ -25,4 +25,5 @@ export default function IconUndo(props: Props) {
   );
 }
 
+IconUndo.displayName = 'IconUndo';
 IconUndo.category = 'content';

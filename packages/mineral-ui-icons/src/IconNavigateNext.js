@@ -25,4 +25,5 @@ export default function IconNavigateNext(props: Props) {
   );
 }
 
+IconNavigateNext.displayName = 'IconNavigateNext';
 IconNavigateNext.category = 'image';

@@ -25,4 +25,5 @@ export default function IconHeadsetMic(props: Props) {
   );
 }
 
+IconHeadsetMic.displayName = 'IconHeadsetMic';
 IconHeadsetMic.category = 'hardware';

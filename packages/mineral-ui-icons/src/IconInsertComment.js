@@ -25,4 +25,5 @@ export default function IconInsertComment(props: Props) {
   );
 }
 
+IconInsertComment.displayName = 'IconInsertComment';
 IconInsertComment.category = 'editor';

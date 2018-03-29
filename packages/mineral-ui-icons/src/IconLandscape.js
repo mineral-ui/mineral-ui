@@ -25,4 +25,5 @@ export default function IconLandscape(props: Props) {
   );
 }
 
+IconLandscape.displayName = 'IconLandscape';
 IconLandscape.category = 'image';

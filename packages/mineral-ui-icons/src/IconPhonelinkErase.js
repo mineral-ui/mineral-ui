@@ -25,4 +25,5 @@ export default function IconPhonelinkErase(props: Props) {
   );
 }
 
+IconPhonelinkErase.displayName = 'IconPhonelinkErase';
 IconPhonelinkErase.category = 'communication';

@@ -25,4 +25,5 @@ export default function IconDeveloperBoard(props: Props) {
   );
 }
 
+IconDeveloperBoard.displayName = 'IconDeveloperBoard';
 IconDeveloperBoard.category = 'hardware';

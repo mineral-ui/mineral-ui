@@ -25,4 +25,5 @@ export default function IconCenterFocusWeak(props: Props) {
   );
 }
 
+IconCenterFocusWeak.displayName = 'IconCenterFocusWeak';
 IconCenterFocusWeak.category = 'image';

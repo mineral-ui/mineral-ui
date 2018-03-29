@@ -25,4 +25,5 @@ export default function IconHdrOff(props: Props) {
   );
 }
 
+IconHdrOff.displayName = 'IconHdrOff';
 IconHdrOff.category = 'image';

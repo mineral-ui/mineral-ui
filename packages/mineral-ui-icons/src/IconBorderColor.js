@@ -25,4 +25,5 @@ export default function IconBorderColor(props: Props) {
   );
 }
 
+IconBorderColor.displayName = 'IconBorderColor';
 IconBorderColor.category = 'editor';

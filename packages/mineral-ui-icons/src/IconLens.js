@@ -25,4 +25,5 @@ export default function IconLens(props: Props) {
   );
 }
 
+IconLens.displayName = 'IconLens';
 IconLens.category = 'image';

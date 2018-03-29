@@ -25,4 +25,5 @@ export default function IconWifiLock(props: Props) {
   );
 }
 
+IconWifiLock.displayName = 'IconWifiLock';
 IconWifiLock.category = 'device';

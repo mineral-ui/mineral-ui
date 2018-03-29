@@ -25,4 +25,5 @@ export default function IconLoop(props: Props) {
   );
 }
 
+IconLoop.displayName = 'IconLoop';
 IconLoop.category = 'av';

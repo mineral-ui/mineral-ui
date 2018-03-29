@@ -25,4 +25,5 @@ export default function IconLooksTwo(props: Props) {
   );
 }
 
+IconLooksTwo.displayName = 'IconLooksTwo';
 IconLooksTwo.category = 'image';

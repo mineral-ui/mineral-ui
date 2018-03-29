@@ -25,4 +25,5 @@ export default function IconFlag(props: Props) {
   );
 }
 
+IconFlag.displayName = 'IconFlag';
 IconFlag.category = 'content';

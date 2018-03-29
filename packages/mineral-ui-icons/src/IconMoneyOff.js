@@ -25,4 +25,5 @@ export default function IconMoneyOff(props: Props) {
   );
 }
 
+IconMoneyOff.displayName = 'IconMoneyOff';
 IconMoneyOff.category = 'editor';

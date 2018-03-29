@@ -25,4 +25,5 @@ export default function IconBlurLinear(props: Props) {
   );
 }
 
+IconBlurLinear.displayName = 'IconBlurLinear';
 IconBlurLinear.category = 'image';

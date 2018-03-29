@@ -25,4 +25,5 @@ export default function IconFormatColorReset(props: Props) {
   );
 }
 
+IconFormatColorReset.displayName = 'IconFormatColorReset';
 IconFormatColorReset.category = 'editor';

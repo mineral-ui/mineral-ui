@@ -25,4 +25,5 @@ export default function IconNotInterested(props: Props) {
   );
 }
 
+IconNotInterested.displayName = 'IconNotInterested';
 IconNotInterested.category = 'av';

@@ -25,4 +25,5 @@ export default function IconAirlineSeatIndividualSuite(props: Props) {
   );
 }
 
+IconAirlineSeatIndividualSuite.displayName = 'IconAirlineSeatIndividualSuite';
 IconAirlineSeatIndividualSuite.category = 'notification';

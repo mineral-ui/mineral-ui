@@ -25,4 +25,5 @@ export default function IconSettingsInputHdmi(props: Props) {
   );
 }
 
+IconSettingsInputHdmi.displayName = 'IconSettingsInputHdmi';
 IconSettingsInputHdmi.category = 'action';

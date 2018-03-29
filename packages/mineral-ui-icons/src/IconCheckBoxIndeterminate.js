@@ -25,4 +25,5 @@ export default function IconCheckBoxIndeterminate(props: Props) {
   );
 }
 
+IconCheckBoxIndeterminate.displayName = 'IconCheckBoxIndeterminate';
 IconCheckBoxIndeterminate.category = 'toggle';

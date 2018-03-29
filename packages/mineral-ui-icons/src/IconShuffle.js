@@ -25,4 +25,5 @@ export default function IconShuffle(props: Props) {
   );
 }
 
+IconShuffle.displayName = 'IconShuffle';
 IconShuffle.category = 'av';

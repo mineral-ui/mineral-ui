@@ -25,4 +25,5 @@ export default function IconCropDin(props: Props) {
   );
 }
 
+IconCropDin.displayName = 'IconCropDin';
 IconCropDin.category = 'image';

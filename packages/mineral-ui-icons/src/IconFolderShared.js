@@ -25,4 +25,5 @@ export default function IconFolderShared(props: Props) {
   );
 }
 
+IconFolderShared.displayName = 'IconFolderShared';
 IconFolderShared.category = 'file';

@@ -25,4 +25,5 @@ export default function IconNotificationsOff(props: Props) {
   );
 }
 
+IconNotificationsOff.displayName = 'IconNotificationsOff';
 IconNotificationsOff.category = 'social';

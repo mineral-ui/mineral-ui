@@ -25,4 +25,5 @@ export default function IconFreeBreakfast(props: Props) {
   );
 }
 
+IconFreeBreakfast.displayName = 'IconFreeBreakfast';
 IconFreeBreakfast.category = 'places';

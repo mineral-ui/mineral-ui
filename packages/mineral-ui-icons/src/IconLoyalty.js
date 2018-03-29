@@ -25,4 +25,5 @@ export default function IconLoyalty(props: Props) {
   );
 }
 
+IconLoyalty.displayName = 'IconLoyalty';
 IconLoyalty.category = 'action';

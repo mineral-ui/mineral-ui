@@ -25,4 +25,5 @@ export default function IconStars(props: Props) {
   );
 }
 
+IconStars.displayName = 'IconStars';
 IconStars.category = 'action';

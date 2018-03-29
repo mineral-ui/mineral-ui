@@ -25,4 +25,5 @@ export default function IconMonochromePhotos(props: Props) {
   );
 }
 
+IconMonochromePhotos.displayName = 'IconMonochromePhotos';
 IconMonochromePhotos.category = 'image';

@@ -25,4 +25,5 @@ export default function IconTimeToLeave(props: Props) {
   );
 }
 
+IconTimeToLeave.displayName = 'IconTimeToLeave';
 IconTimeToLeave.category = 'notification';

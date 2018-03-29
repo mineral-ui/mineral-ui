@@ -25,4 +25,5 @@ export default function IconTabletMac(props: Props) {
   );
 }
 
+IconTabletMac.displayName = 'IconTabletMac';
 IconTabletMac.category = 'hardware';

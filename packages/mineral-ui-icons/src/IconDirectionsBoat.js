@@ -25,4 +25,5 @@ export default function IconDirectionsBoat(props: Props) {
   );
 }
 
+IconDirectionsBoat.displayName = 'IconDirectionsBoat';
 IconDirectionsBoat.category = 'maps';

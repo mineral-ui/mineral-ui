@@ -25,4 +25,5 @@ export default function IconToc(props: Props) {
   );
 }
 
+IconToc.displayName = 'IconToc';
 IconToc.category = 'action';

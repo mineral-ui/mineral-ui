@@ -25,4 +25,5 @@ export default function IconDateRange(props: Props) {
   );
 }
 
+IconDateRange.displayName = 'IconDateRange';
 IconDateRange.category = 'action';

@@ -25,4 +25,5 @@ export default function IconLocalGroceryStore(props: Props) {
   );
 }
 
+IconLocalGroceryStore.displayName = 'IconLocalGroceryStore';
 IconLocalGroceryStore.category = 'maps';

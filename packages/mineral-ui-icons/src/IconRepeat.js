@@ -25,4 +25,5 @@ export default function IconRepeat(props: Props) {
   );
 }
 
+IconRepeat.displayName = 'IconRepeat';
 IconRepeat.category = 'av';

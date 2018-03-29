@@ -25,4 +25,5 @@ export default function IconTraffic(props: Props) {
   );
 }
 
+IconTraffic.displayName = 'IconTraffic';
 IconTraffic.category = 'maps';

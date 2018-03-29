@@ -25,4 +25,5 @@ export default function IconVideoCall(props: Props) {
   );
 }
 
+IconVideoCall.displayName = 'IconVideoCall';
 IconVideoCall.category = 'av';

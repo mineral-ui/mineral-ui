@@ -25,4 +25,5 @@ export default function IconRemoveFromQueue(props: Props) {
   );
 }
 
+IconRemoveFromQueue.displayName = 'IconRemoveFromQueue';
 IconRemoveFromQueue.category = 'av';

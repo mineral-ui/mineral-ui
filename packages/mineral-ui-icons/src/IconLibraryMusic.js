@@ -25,4 +25,5 @@ export default function IconLibraryMusic(props: Props) {
   );
 }
 
+IconLibraryMusic.displayName = 'IconLibraryMusic';
 IconLibraryMusic.category = 'av';

@@ -25,4 +25,5 @@ export default function IconBlurCircular(props: Props) {
   );
 }
 
+IconBlurCircular.displayName = 'IconBlurCircular';
 IconBlurCircular.category = 'image';

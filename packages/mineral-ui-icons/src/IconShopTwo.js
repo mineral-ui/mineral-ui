@@ -25,4 +25,5 @@ export default function IconShopTwo(props: Props) {
   );
 }
 
+IconShopTwo.displayName = 'IconShopTwo';
 IconShopTwo.category = 'action';

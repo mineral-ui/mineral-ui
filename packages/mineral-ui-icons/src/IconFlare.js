@@ -25,4 +25,5 @@ export default function IconFlare(props: Props) {
   );
 }
 
+IconFlare.displayName = 'IconFlare';
 IconFlare.category = 'image';

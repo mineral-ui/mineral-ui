@@ -25,4 +25,5 @@ export default function IconStop(props: Props) {
   );
 }
 
+IconStop.displayName = 'IconStop';
 IconStop.category = 'av';

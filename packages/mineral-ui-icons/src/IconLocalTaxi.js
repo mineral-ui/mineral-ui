@@ -25,4 +25,5 @@ export default function IconLocalTaxi(props: Props) {
   );
 }
 
+IconLocalTaxi.displayName = 'IconLocalTaxi';
 IconLocalTaxi.category = 'maps';

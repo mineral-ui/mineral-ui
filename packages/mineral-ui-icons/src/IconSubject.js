@@ -25,4 +25,5 @@ export default function IconSubject(props: Props) {
   );
 }
 
+IconSubject.displayName = 'IconSubject';
 IconSubject.category = 'action';

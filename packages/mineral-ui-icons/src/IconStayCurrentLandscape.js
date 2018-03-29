@@ -25,4 +25,5 @@ export default function IconStayCurrentLandscape(props: Props) {
   );
 }
 
+IconStayCurrentLandscape.displayName = 'IconStayCurrentLandscape';
 IconStayCurrentLandscape.category = 'communication';

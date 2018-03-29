@@ -25,4 +25,5 @@ export default function IconGolfCourse(props: Props) {
   );
 }
 
+IconGolfCourse.displayName = 'IconGolfCourse';
 IconGolfCourse.category = 'places';

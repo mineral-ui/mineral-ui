@@ -25,4 +25,5 @@ export default function IconPowerSettingsNew(props: Props) {
   );
 }
 
+IconPowerSettingsNew.displayName = 'IconPowerSettingsNew';
 IconPowerSettingsNew.category = 'action';

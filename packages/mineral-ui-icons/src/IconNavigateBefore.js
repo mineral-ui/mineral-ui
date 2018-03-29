@@ -25,4 +25,5 @@ export default function IconNavigateBefore(props: Props) {
   );
 }
 
+IconNavigateBefore.displayName = 'IconNavigateBefore';
 IconNavigateBefore.category = 'image';

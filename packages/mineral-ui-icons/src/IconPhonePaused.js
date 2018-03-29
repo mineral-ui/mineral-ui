@@ -25,4 +25,5 @@ export default function IconPhonePaused(props: Props) {
   );
 }
 
+IconPhonePaused.displayName = 'IconPhonePaused';
 IconPhonePaused.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconAdb(props: Props) {
   );
 }
 
+IconAdb.displayName = 'IconAdb';
 IconAdb.category = 'notification';

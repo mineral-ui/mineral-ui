@@ -25,4 +25,5 @@ export default function IconHdrOn(props: Props) {
   );
 }
 
+IconHdrOn.displayName = 'IconHdrOn';
 IconHdrOn.category = 'image';

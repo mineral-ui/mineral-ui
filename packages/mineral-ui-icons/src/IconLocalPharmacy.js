@@ -25,4 +25,5 @@ export default function IconLocalPharmacy(props: Props) {
   );
 }
 
+IconLocalPharmacy.displayName = 'IconLocalPharmacy';
 IconLocalPharmacy.category = 'maps';

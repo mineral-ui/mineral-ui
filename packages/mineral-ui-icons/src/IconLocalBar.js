@@ -25,4 +25,5 @@ export default function IconLocalBar(props: Props) {
   );
 }
 
+IconLocalBar.displayName = 'IconLocalBar';
 IconLocalBar.category = 'maps';

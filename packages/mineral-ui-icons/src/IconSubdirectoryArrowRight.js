@@ -25,4 +25,5 @@ export default function IconSubdirectoryArrowRight(props: Props) {
   );
 }
 
+IconSubdirectoryArrowRight.displayName = 'IconSubdirectoryArrowRight';
 IconSubdirectoryArrowRight.category = 'navigation';

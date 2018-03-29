@@ -25,4 +25,5 @@ export default function IconGrade(props: Props) {
   );
 }
 
+IconGrade.displayName = 'IconGrade';
 IconGrade.category = 'action';

@@ -25,4 +25,5 @@ export default function IconCallSplit(props: Props) {
   );
 }
 
+IconCallSplit.displayName = 'IconCallSplit';
 IconCallSplit.category = 'communication';

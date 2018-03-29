@@ -25,4 +25,5 @@ export default function IconTextFormat(props: Props) {
   );
 }
 
+IconTextFormat.displayName = 'IconTextFormat';
 IconTextFormat.category = 'content';

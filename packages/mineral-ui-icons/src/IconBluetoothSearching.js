@@ -25,4 +25,5 @@ export default function IconBluetoothSearching(props: Props) {
   );
 }
 
+IconBluetoothSearching.displayName = 'IconBluetoothSearching';
 IconBluetoothSearching.category = 'device';

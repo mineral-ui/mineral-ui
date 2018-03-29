@@ -25,4 +25,5 @@ export default function IconPanoramaWideAngle(props: Props) {
   );
 }
 
+IconPanoramaWideAngle.displayName = 'IconPanoramaWideAngle';
 IconPanoramaWideAngle.category = 'image';

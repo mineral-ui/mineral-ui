@@ -25,4 +25,5 @@ export default function IconClose(props: Props) {
   );
 }
 
+IconClose.displayName = 'IconClose';
 IconClose.category = 'navigation';

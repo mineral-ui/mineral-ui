@@ -25,4 +25,5 @@ export default function IconMergeType(props: Props) {
   );
 }
 
+IconMergeType.displayName = 'IconMergeType';
 IconMergeType.category = 'editor';

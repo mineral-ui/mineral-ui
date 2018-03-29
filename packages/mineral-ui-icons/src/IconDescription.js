@@ -25,4 +25,5 @@ export default function IconDescription(props: Props) {
   );
 }
 
+IconDescription.displayName = 'IconDescription';
 IconDescription.category = 'action';

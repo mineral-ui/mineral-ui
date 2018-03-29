@@ -25,4 +25,5 @@ export default function IconCached(props: Props) {
   );
 }
 
+IconCached.displayName = 'IconCached';
 IconCached.category = 'action';

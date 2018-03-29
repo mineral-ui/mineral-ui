@@ -25,4 +25,5 @@ export default function IconPoll(props: Props) {
   );
 }
 
+IconPoll.displayName = 'IconPoll';
 IconPoll.category = 'social';

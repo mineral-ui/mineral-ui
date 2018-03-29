@@ -25,4 +25,5 @@ export default function IconPhoneAndroid(props: Props) {
   );
 }
 
+IconPhoneAndroid.displayName = 'IconPhoneAndroid';
 IconPhoneAndroid.category = 'hardware';

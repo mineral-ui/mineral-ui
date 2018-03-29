@@ -25,4 +25,5 @@ export default function IconAdd(props: Props) {
   );
 }
 
+IconAdd.displayName = 'IconAdd';
 IconAdd.category = 'content';

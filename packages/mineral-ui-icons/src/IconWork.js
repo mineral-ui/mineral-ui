@@ -25,4 +25,5 @@ export default function IconWork(props: Props) {
   );
 }
 
+IconWork.displayName = 'IconWork';
 IconWork.category = 'action';

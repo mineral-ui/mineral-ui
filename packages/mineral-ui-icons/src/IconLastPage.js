@@ -25,4 +25,5 @@ export default function IconLastPage(props: Props) {
   );
 }
 
+IconLastPage.displayName = 'IconLastPage';
 IconLastPage.category = 'navigation';

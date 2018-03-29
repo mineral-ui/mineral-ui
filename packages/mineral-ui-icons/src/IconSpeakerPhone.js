@@ -25,4 +25,5 @@ export default function IconSpeakerPhone(props: Props) {
   );
 }
 
+IconSpeakerPhone.displayName = 'IconSpeakerPhone';
 IconSpeakerPhone.category = 'communication';

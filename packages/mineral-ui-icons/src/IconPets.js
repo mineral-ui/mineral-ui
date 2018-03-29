@@ -25,4 +25,5 @@ export default function IconPets(props: Props) {
   );
 }
 
+IconPets.displayName = 'IconPets';
 IconPets.category = 'action';

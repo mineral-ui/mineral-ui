@@ -25,4 +25,5 @@ export default function IconPresentToAll(props: Props) {
   );
 }
 
+IconPresentToAll.displayName = 'IconPresentToAll';
 IconPresentToAll.category = 'communication';

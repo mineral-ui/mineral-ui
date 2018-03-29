@@ -25,4 +25,5 @@ export default function IconAllInclusive(props: Props) {
   );
 }
 
+IconAllInclusive.displayName = 'IconAllInclusive';
 IconAllInclusive.category = 'places';

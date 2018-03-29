@@ -25,4 +25,5 @@ export default function IconFilterDrama(props: Props) {
   );
 }
 
+IconFilterDrama.displayName = 'IconFilterDrama';
 IconFilterDrama.category = 'image';

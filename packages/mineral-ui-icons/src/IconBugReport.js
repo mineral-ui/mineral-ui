@@ -25,4 +25,5 @@ export default function IconBugReport(props: Props) {
   );
 }
 
+IconBugReport.displayName = 'IconBugReport';
 IconBugReport.category = 'action';

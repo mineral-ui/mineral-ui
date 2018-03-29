@@ -25,4 +25,5 @@ export default function IconWbCloudy(props: Props) {
   );
 }
 
+IconWbCloudy.displayName = 'IconWbCloudy';
 IconWbCloudy.category = 'image';

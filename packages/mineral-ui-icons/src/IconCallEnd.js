@@ -25,4 +25,5 @@ export default function IconCallEnd(props: Props) {
   );
 }
 
+IconCallEnd.displayName = 'IconCallEnd';
 IconCallEnd.category = 'communication';

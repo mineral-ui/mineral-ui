@@ -25,4 +25,5 @@ export default function IconPageview(props: Props) {
   );
 }
 
+IconPageview.displayName = 'IconPageview';
 IconPageview.category = 'action';

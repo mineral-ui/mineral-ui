@@ -25,4 +25,5 @@ export default function IconPhoneLocked(props: Props) {
   );
 }
 
+IconPhoneLocked.displayName = 'IconPhoneLocked';
 IconPhoneLocked.category = 'notification';

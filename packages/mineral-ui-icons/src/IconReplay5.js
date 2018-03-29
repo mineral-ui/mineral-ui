@@ -25,4 +25,5 @@ export default function IconReplay5(props: Props) {
   );
 }
 
+IconReplay5.displayName = 'IconReplay5';
 IconReplay5.category = 'av';

@@ -25,4 +25,5 @@ export default function IconDoNotDisturbOn(props: Props) {
   );
 }
 
+IconDoNotDisturbOn.displayName = 'IconDoNotDisturbOn';
 IconDoNotDisturbOn.category = 'notification';

@@ -25,4 +25,5 @@ export default function IconControlPoint(props: Props) {
   );
 }
 
+IconControlPoint.displayName = 'IconControlPoint';
 IconControlPoint.category = 'image';

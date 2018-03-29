@@ -25,4 +25,5 @@ export default function IconMicOff(props: Props) {
   );
 }
 
+IconMicOff.displayName = 'IconMicOff';
 IconMicOff.category = 'av';

@@ -25,4 +25,5 @@ export default function IconBlock(props: Props) {
   );
 }
 
+IconBlock.displayName = 'IconBlock';
 IconBlock.category = 'content';
