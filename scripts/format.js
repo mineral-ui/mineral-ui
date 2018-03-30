@@ -19,14 +19,14 @@ const files = glob.sync('**/*.js', {
   ]
 });
 
-files.forEach(file => {
+files.forEach((file) => {
   fs.readFile(file, 'utf8', (err, data) => {
     if (err) {
       throw err;
     }
 
     if (!data.includes('@flow')) {
-      prependFile(file, '/* @flow */\n', err => {
+      prependFile(file, '/* @flow */\n', (err) => {
         if (err) {
           throw err;
         }

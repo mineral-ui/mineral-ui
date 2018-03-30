@@ -298,7 +298,7 @@ export default class Dropdown extends Component<Props, State> {
   highlightNextItem = () => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState(
-        prevState => ({
+        (prevState) => ({
           highlightedIndex:
             prevState.highlightedIndex === null ||
             prevState.highlightedIndex === undefined ||
@@ -314,7 +314,7 @@ export default class Dropdown extends Component<Props, State> {
   highlightPreviousItem = () => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState(
-        prevState => ({
+        (prevState) => ({
           highlightedIndex: !prevState.highlightedIndex
             ? this.items.length - 1
             : prevState.highlightedIndex - 1

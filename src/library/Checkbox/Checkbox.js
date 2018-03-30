@@ -26,9 +26,9 @@ type Props = {
   /** Maximize the distance between the label and the control */
   justify?: boolean,
   /**
-  * Indicates a state in which it cannot be determined if the input is checked
-  * or not
-  */
+   * Indicates a state in which it cannot be determined if the input is checked
+   * or not
+   */
   indeterminate?: boolean,
   /** Ref for the checkbox */
   inputRef?: (node: ?React$Component<*, *>) => void,
@@ -85,10 +85,10 @@ const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
 });
 
 /**
-* Checkbox is an interactive control that can be turned on or off. Checkboxes
-* are often used in [groups](/components/checkbox-group), wherein multiple options may be
-* selected.
-*/
+ * Checkbox is an interactive control that can be turned on or off. Checkboxes
+ * are often used in [groups](/components/checkbox-group), wherein multiple options may be
+ * selected.
+ */
 export default function Checkbox({
   className,
   indeterminate,
@@ -101,7 +101,7 @@ export default function Checkbox({
   const rootProps = {
     labelPosition,
     iconChecked: indeterminate ? <IconIndeterminate /> : <IconChecked />,
-    inputRef: ref => {
+    inputRef: (ref) => {
       if (ref) {
         ref.indeterminate = indeterminate;
       }

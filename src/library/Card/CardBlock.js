@@ -17,7 +17,7 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  inner: props => {
+  inner: (props) => {
     const theme = componentTheme(props.theme);
 
     return {
@@ -25,7 +25,7 @@ const styles = {
       lineHeight: theme.CardBlock_lineHeight
     };
   },
-  root: props => {
+  root: (props) => {
     const theme = cardComponentTheme(props.theme);
 
     return {

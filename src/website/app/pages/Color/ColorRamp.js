@@ -26,7 +26,7 @@ export default function ColorRamp({ baseColor }: Props) {
       {baseColor === 'black' ? (
         <ColorRampRow key={baseColor} name={baseColor} />
       ) : (
-        range(10, 110, 10).map(step => (
+        range(10, 110, 10).map((step) => (
           <ColorRampRow key={step} name={`${baseColor}_${step}`} />
         ))
       )}

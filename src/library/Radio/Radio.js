@@ -96,7 +96,7 @@ export default function Radio({
   const rootProps = {
     labelPosition,
     iconChecked: <IconChecked />,
-    inputRef: ref => {
+    inputRef: (ref) => {
       if (inputRef) {
         inputRef(ref);
       }

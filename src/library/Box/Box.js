@@ -481,7 +481,7 @@ const getSpacingStyles = (
     key: string,
     styles: SpacingStyles
   ) => {
-    directions.forEach(direction => {
+    directions.forEach((direction) => {
       styles[`${property}${direction}`] = restProps[key];
     });
   };
@@ -513,15 +513,15 @@ const styles = {
       value: Values
     ): number | string => {
       const map = {
-        display: value => (value ? 'inline-block' : 'block'),
+        display: (value) => (value ? 'inline-block' : 'block'),
         height: getMeasurement,
         width: getMeasurement,
         ...['margin', 'padding'].reduce((acc, property) => {
-          Object.keys(
-            getSpacingStyles(property, restProps, rtl)
-          ).forEach(style => {
-            acc[style] = value => getSpaceValue(property, theme, value);
-          });
+          Object.keys(getSpacingStyles(property, restProps, rtl)).forEach(
+            (style) => {
+              acc[style] = (value) => getSpaceValue(property, theme, value);
+            }
+          );
           return acc;
         }, {})
       };

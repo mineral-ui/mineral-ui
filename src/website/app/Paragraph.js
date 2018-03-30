@@ -9,7 +9,7 @@ type Props = {
   variant?: 'ui' | 'prose' | 'mouse'
 };
 
-const componentTheme = baseTheme => ({
+const componentTheme = (baseTheme) => ({
   Paragraph_color: baseTheme.color_text,
   Paragraph_fontSize_mouse: baseTheme.fontSize_mouse,
   Paragraph_fontSize_prose: baseTheme.fontSize_prose,

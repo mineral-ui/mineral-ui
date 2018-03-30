@@ -85,7 +85,7 @@ const styles = {
       paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
     };
   },
-  title: props => {
+  title: (props) => {
     const theme = {
       ...componentTheme(props.theme),
       ...cardComponentTheme(props.theme)
@@ -99,7 +99,7 @@ const styles = {
       paddingRight: theme.CardRow_paddingHorizontal
     };
   },
-  titleContent: props => {
+  titleContent: (props) => {
     const theme = componentTheme(props.theme);
 
     return {
@@ -144,7 +144,10 @@ const Root = createStyledComponent('div', styles.root, {
  * createThemedComponent. So, we theme a simple functional component that
  * returns a 'div' instead.
  */
-const Content = createThemedComponent(props => <div {...props} />, footerTheme);
+const Content = createThemedComponent(
+  (props) => <div {...props} />,
+  footerTheme
+);
 const Title = createStyledComponent('div', styles.title);
 const TitleContent = createStyledComponent('h4', styles.titleContent);
 const ToggleButton = createStyledComponent(Button, styles.toggleButton);

@@ -60,7 +60,7 @@ export default class ScrollBox extends Component<Props> {
   render() {
     const { children, height } = this.props;
     const scrollTarget = cloneElement(Children.only(children), {
-      ref: node => {
+      ref: (node) => {
         this.scrollTarget = node;
       }
     });
@@ -68,7 +68,7 @@ export default class ScrollBox extends Component<Props> {
     return (
       <Root>
         <ScrollArea
-          ref={node => {
+          ref={(node) => {
             this.scrollArea = node;
           }}
           height={height}>

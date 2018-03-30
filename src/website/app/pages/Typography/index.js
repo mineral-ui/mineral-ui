@@ -19,7 +19,7 @@ import examples from './examples';
 
 type Props = {};
 
-const a11yColor = color => {
+const a11yColor = (color) => {
   const a11y = colorable({
     main: color,
     white: '#fff',
@@ -39,8 +39,9 @@ const styles = {
       backgroundColor: theme[color],
       borderRadius: theme.borderRadius_1,
       color: a11yColor(theme[color]),
-      padding: `${parseFloat(theme.space_inset_sm) /
-        2}em ${theme.space_inset_sm}`
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em ${
+        theme.space_inset_sm
+      }`
     };
   },
   overflowContainer: {

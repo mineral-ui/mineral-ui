@@ -22,7 +22,7 @@ type Props = {
 
 export default function DocExamples({ examples, slug }: Props) {
   if (process.env.NODE_ENV === 'production') {
-    examples = examples.filter(example => !example.hideFromProd);
+    examples = examples.filter((example) => !example.hideFromProd);
   }
   return (
     <Section>

@@ -145,7 +145,7 @@ const Root = createStyledComponent(
 
 const contentWidthModifier = {
   enabled: true,
-  fn: data => {
+  fn: (data) => {
     data.styles.minWidth = pxToEm(224);
     data.styles.width = pxToEm(data.offsets.reference.width);
     return data;
@@ -366,7 +366,7 @@ export default class Select extends Component<Props, State> {
   highlightNextItem = () => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState(
-        prevState => ({
+        (prevState) => ({
           highlightedIndex:
             prevState.highlightedIndex === null ||
             prevState.highlightedIndex === undefined
@@ -385,7 +385,7 @@ export default class Select extends Component<Props, State> {
   highlightPreviousItem = () => {
     if (!this.isControlled('highlightedIndex')) {
       this.setState(
-        prevState => ({
+        (prevState) => ({
           highlightedIndex:
             prevState.highlightedIndex === null ||
             prevState.highlightedIndex === undefined
@@ -403,7 +403,7 @@ export default class Select extends Component<Props, State> {
 
   highlightDefaultItem = () => {
     if (!this.isControlled('highlightedIndex')) {
-      this.setState(prevState => {
+      this.setState((prevState) => {
         const selectedItem = this.isControlled('selectedItem')
           ? this.props.selectedItem
           : prevState.selectedItem;

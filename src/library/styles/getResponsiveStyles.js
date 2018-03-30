@@ -39,7 +39,7 @@ const getMediaQueries = (
 ): MediaQueries => {
   let queries = [];
 
-  const getQueryWidth = value =>
+  const getQueryWidth = (value) =>
     typeof value === 'number' ? value : theme[`breakpoint_${value}`];
 
   for (let i = 0; i <= breakpoints.length; i++) {
@@ -115,7 +115,7 @@ export default function getResponsiveStyles({
   if (breakpoints) {
     const breakpointsLength = breakpoints.length;
     const mediaQueries = getMediaQueries(breakpoints, theme);
-    const responsiveStyleKeys = styleKeys.filter(key => {
+    const responsiveStyleKeys = styleKeys.filter((key) => {
       const value = styles[key];
       if (value && Array.isArray(value)) {
         /*
@@ -132,7 +132,7 @@ export default function getResponsiveStyles({
       }
     });
     const nonResponsiveStyleKeys = styleKeys.filter(
-      key => !Array.isArray(styles[key])
+      (key) => !Array.isArray(styles[key])
     );
 
     // Start with the non-responsive style properties and the first value of the

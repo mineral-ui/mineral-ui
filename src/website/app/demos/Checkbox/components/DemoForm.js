@@ -10,7 +10,7 @@ const Form = createStyledComponent('form', {
 
 const DemoForm = (props: Object) => {
   const formProps = {
-    onSubmit: event => event.preventDefault(),
+    onSubmit: (event) => event.preventDefault(),
     ...props
   };
 

@@ -111,7 +111,9 @@ const styles = {
       color: disabled ? theme.color_text_disabled : theme.MenuItem_color_text,
       cursor: disabled ? 'default' : 'pointer',
       fontWeight: theme.MenuItem_fontWeight,
-      padding: `${theme.MenuItem_paddingVertical} ${theme.MenuItem_paddingHorizontal}`,
+      padding: `${theme.MenuItem_paddingVertical} ${
+        theme.MenuItem_paddingHorizontal
+      }`,
 
       '&:focus': {
         backgroundColor: !disabled && theme.MenuItem_backgroundColor_focus,
@@ -160,7 +162,7 @@ const styles = {
       }
     };
   },
-  secondaryText: props => {
+  secondaryText: (props) => {
     let theme = componentTheme(props.theme);
 
     return {
@@ -175,7 +177,7 @@ const styles = {
       wordBreak: 'break-word'
     };
   },
-  text: props => {
+  text: (props) => {
     let theme = componentTheme(props.theme);
 
     const margin = getNormalizedValue(

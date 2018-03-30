@@ -31,7 +31,7 @@ const actionMenuData: Items = [
   { text: 'Delete', variant: 'danger' }
 ];
 
-const Link = props => <_Link {...props} target="_blank" />;
+const Link = (props) => <_Link {...props} target="_blank" />;
 
 const backgroundColor = mineralTheme.color_gray_10;
 

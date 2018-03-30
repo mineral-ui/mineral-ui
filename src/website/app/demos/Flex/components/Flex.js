@@ -35,6 +35,6 @@ export const containerStyles = ({
   };
 };
 
-export default createStyledComponent(_Flex, props => ({
+export default createStyledComponent(_Flex, (props) => ({
   ...containerStyles(props)
 }));

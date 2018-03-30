@@ -67,7 +67,7 @@ const styles = {
   inner: {
     flex: '1 1 auto'
   },
-  secondaryText: props => {
+  secondaryText: (props) => {
     const theme = componentTheme(props.theme);
     const fontSize = theme.CardTitleSecondaryText_fontSize;
 

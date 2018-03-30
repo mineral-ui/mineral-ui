@@ -167,7 +167,8 @@ const Nav = ({
       <Media
         query="(max-width: 38.999em)"
         render={() =>
-          latestPost && <Link href={latestPost.url}>Latest Blog Post</Link>}
+          latestPost && <Link href={latestPost.url}>Latest Blog Post</Link>
+        }
       />
       <Media
         query="(max-width: 38.999em)"
@@ -212,7 +213,7 @@ export default class Header extends Component<Props, State> {
           <LogotypeHorizontal />
         </Logotype>
         <Media query="(min-width: 39em)">
-          {matches =>
+          {(matches) =>
             matches ? (
               <Nav />
             ) : (
@@ -223,7 +224,8 @@ export default class Header extends Component<Props, State> {
                   Menu
                 </MenuButton>
               </Popover>
-            )}
+            )
+          }
         </Media>
       </Root>
     );

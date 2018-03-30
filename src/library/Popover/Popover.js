@@ -171,7 +171,7 @@ export default class Popover extends Component<Props, State> {
       );
     } else {
       popoverContent = cloneElement(content, {
-        ref: node => {
+        ref: (node) => {
           this.popoverContent = node;
         }
       });
@@ -211,7 +211,7 @@ export default class Popover extends Component<Props, State> {
         onClick: !disabled
           ? composeEventHandlers(child.props.onClick, this.toggleOpenState)
           : undefined,
-        ref: node => {
+        ref: (node) => {
           this.popoverTrigger = node;
           triggerRef && triggerRef(node);
         },
@@ -244,7 +244,7 @@ export default class Popover extends Component<Props, State> {
         modifiers,
         onBlur: this.onBlur,
         placement,
-        ref: node => {
+        ref: (node) => {
           this.popoverContent = node;
         },
         subtitle,

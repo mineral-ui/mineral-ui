@@ -85,7 +85,7 @@ export default function Router({ demoRoutes }: Props) {
       {routes}
       <Route
         path="/components/:componentId/:exampleId"
-        render={route => {
+        render={(route) => {
           const { componentId, exampleId } = route.match.params;
           // $FlowFixMe
           const selectedDemo = keyedDemoRoutes[componentId || firstDemoSlug];
@@ -105,7 +105,7 @@ export default function Router({ demoRoutes }: Props) {
             render({ default: fullDemos }: Object) {
               const selectedFullDemo = fullDemos[componentId];
               const selectedExample = selectedFullDemo.examples.find(
-                example => example.id === exampleId
+                (example) => example.id === exampleId
               );
 
               if (!selectedExample) {
@@ -136,7 +136,7 @@ export default function Router({ demoRoutes }: Props) {
         render={({ location, match }) => {
           const componentId =
             flatDemoRoutes.find(
-              route => route.slug === match.params.componentId
+              (route) => route.slug === match.params.componentId
             ) && match.params.componentId;
 
           if (!componentId) {

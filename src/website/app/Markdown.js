@@ -252,7 +252,7 @@ type ListItemProps = {
 };
 
 function ListItem({ children }: ListItemProps) {
-  const newChildren = children.map(child => {
+  const newChildren = children.map((child) => {
     if (child && child.split) {
       const [preLabelText, labelText] = child.split(REGEX_LABEL_DELIMITER);
 

@@ -12,7 +12,7 @@ import Paragraph from '../../Paragraph';
 type Props = {
   activeColor: Colors,
   availableThemes: { [Colors]: string },
-  changeTheme: Colors => void
+  changeTheme: (Colors) => void
 };
 
 type State = {
@@ -23,7 +23,7 @@ type State = {
 type FlipProps = {
   activeColor: Colors,
   colorName: Colors,
-  handleColorChange: Colors => void,
+  handleColorChange: (Colors) => void,
   in: boolean,
   readable: string
 };
@@ -178,7 +178,7 @@ const Grow = ({ in: inProp, children }: GrowProps) => (
   <Transition
     in={inProp}
     timeout={{ enter: duration - 50, exit: duration / 2 }}>
-    {state => (
+    {(state) => (
       <div
         style={{
           ...styles.grow,
@@ -199,7 +199,7 @@ const Flip = ({
   in: inProp
 }: FlipProps) => (
   <Transition in={inProp} timeout={duration}>
-    {state => {
+    {(state) => {
       return (
         <Option
           style={{ ...styles.flip, ...styles.flip[state] }}

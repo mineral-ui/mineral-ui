@@ -65,7 +65,9 @@ export const componentTheme = (baseTheme: Object) => {
     ChoiceControl_borderColor_checked: colors.checked,
     ChoiceControl_borderColor_checkedHover: colors.hover,
     ChoiceControl_borderRadius: baseTheme.borderRadius_1,
-    ChoiceControl_boxShadow_focus: `0 0 0 1px ${colors.background}, 0 0 0 2px ${colors.focus}`,
+    ChoiceControl_boxShadow_focus: `0 0 0 1px ${colors.background}, 0 0 0 2px ${
+      colors.focus
+    }`,
     ChoiceControl_marginHorizontal: baseTheme.space_inline_md,
     ChoiceControl_size: pxToEm(16),
     ChoiceControl_size_jumbo: pxToEm(24),
@@ -256,7 +258,7 @@ export default function Choice({
     checked,
     defaultChecked,
     disabled,
-    innerRef: ref => {
+    innerRef: (ref) => {
       if (inputRef) {
         inputRef(ref);
       }

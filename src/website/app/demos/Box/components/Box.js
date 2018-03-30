@@ -43,4 +43,4 @@ export const boxStyles = ({ inline, padding, theme }: Props) => {
   return styles;
 };
 
-export default createStyledComponent(_Box, props => boxStyles(props));
+export default createStyledComponent(_Box, (props) => boxStyles(props));

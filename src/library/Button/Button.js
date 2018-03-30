@@ -83,7 +83,7 @@ function chooseColor({ disabled, primary, minimal }: Props, theme) {
 }
 
 const styles = {
-  button: props => {
+  button: (props) => {
     let theme = componentTheme(props.theme);
     const {
       circular,
@@ -225,7 +225,7 @@ const styles = {
       }
     };
   },
-  content: props => {
+  content: (props) => {
     const theme = componentTheme(props.theme);
     const { size } = props;
 
