@@ -86,3 +86,5 @@ export default function CheckboxGroup({
 
   return <Root {...rootProps} />;
 }
+
+CheckboxGroup.displayName = 'CheckboxGroup';

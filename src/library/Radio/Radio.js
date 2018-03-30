@@ -112,3 +112,5 @@ export default function Radio({
 
   return <Root {...rootProps} />;
 }
+
+Radio.displayName = 'Radio';

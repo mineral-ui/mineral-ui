@@ -150,8 +150,8 @@ export default function Avatar({
         );
     } else if (
       child.type &&
-      child.type.name &&
-      child.type.name.indexOf('Icon') != -1
+      child.type.displayName &&
+      child.type.displayName.indexOf('Icon') != -1
     ) {
       icon = cloneElement(child, { size: iconSize[size] });
     } else {
