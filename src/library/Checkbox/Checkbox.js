@@ -121,3 +121,5 @@ export default function Checkbox({
 
   return <Root {...rootProps} />;
 }
+
+Checkbox.displayName = 'Checkbox';

@@ -218,12 +218,12 @@ export default class FormField extends Component<Props> {
     const { children, input } = this.props;
     let controlName;
 
-    if (input && input.name) {
-      controlName = input.name;
+    if (input && input.displayName) {
+      controlName = input.displayName;
     } else if (children) {
       const child = Children.only(children);
-      if (child.type && child.type.name) {
-        controlName = child.type.name;
+      if (child.type && child.type.displayName) {
+        controlName = child.type.displayName;
       }
     }
 

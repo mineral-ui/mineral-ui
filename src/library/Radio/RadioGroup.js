@@ -86,3 +86,5 @@ export default function RadioGroup({
 
   return <Root {...rootProps} />;
 }
+
+RadioGroup.displayName = 'RadioGroup';
