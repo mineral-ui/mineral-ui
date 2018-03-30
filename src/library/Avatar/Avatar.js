@@ -140,7 +140,7 @@ export default function Avatar({
 }: Props) {
   let icon, noBackground, text;
 
-  Children.map(children, child => {
+  Children.map(children, (child) => {
     if (typeof child === 'string') {
       text =
         abbr || child.length > 1 ? (

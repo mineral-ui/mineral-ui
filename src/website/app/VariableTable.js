@@ -27,8 +27,9 @@ const Value = createStyledComponent('span', ({ color, theme }) => {
       color: a11yColor(color),
       display: 'inline-block',
       fontFamily: theme.fontFamily_monospace,
-      padding: `${parseFloat(theme.space_inset_sm) /
-        2}em ${theme.space_inset_sm}`
+      padding: `${parseFloat(theme.space_inset_sm) / 2}em ${
+        theme.space_inset_sm
+      }`
     };
   } else {
     return {
@@ -37,7 +38,7 @@ const Value = createStyledComponent('span', ({ color, theme }) => {
   }
 });
 
-const a11yColor = color => {
+const a11yColor = (color) => {
   const a11y = colorable({
     main: color,
     white: '#fff',
@@ -52,7 +53,7 @@ const a11yColor = color => {
 };
 
 const getTableRows = (theme, value, valueColor, baseTheme) => {
-  return Object.keys(theme).map(variable => {
+  return Object.keys(theme).map((variable) => {
     if (variable !== theme[variable]) {
       return (
         <TableRow key={variable}>

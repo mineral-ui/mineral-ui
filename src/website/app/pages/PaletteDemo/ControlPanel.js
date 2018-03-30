@@ -9,7 +9,7 @@ import Picker from './Picker';
 type Props = {
   activeColor: Colors,
   availableThemes: { [Colors]: string },
-  changeTheme: Colors => void,
+  changeTheme: (Colors) => void,
   theme: { [string]: any }
 };
 

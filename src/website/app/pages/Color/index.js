@@ -38,7 +38,7 @@ export default function Color(props: Props) {
       <Markdown scope={{ Variants }}>{content}</Markdown>
       <RampLegend />
       <RampHolder>
-        {baseColors.map(baseColor => (
+        {baseColors.map((baseColor) => (
           <ColorRamp key={baseColor} baseColor={baseColor} />
         ))}
       </RampHolder>

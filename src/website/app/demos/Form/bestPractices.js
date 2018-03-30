@@ -11,7 +11,7 @@ import DemoLayout from './components/DemoLayout';
 const forgotPassword = (
   <a
     href="/forgotPassword"
-    onClick={e => {
+    onClick={(e) => {
       e.preventDefault();
     }}>
     Forgot Password?

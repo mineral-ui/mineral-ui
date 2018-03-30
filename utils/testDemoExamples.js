@@ -21,11 +21,11 @@ export default function testDemoExamples(
 ) {
   if (options.exclude) {
     const exclusions = options.exclude || [];
-    examples = examples.filter(example => !exclusions.includes(example.id));
+    examples = examples.filter((example) => !exclusions.includes(example.id));
   }
 
   return describe('demo examples', () => {
-    examples.filter(({ scope, source }) => scope && source).map(example => {
+    examples.filter(({ scope, source }) => scope && source).map((example) => {
       it(example.id, () => {
         const wrapper = mount(
           <ThemeProvider>
@@ -41,8 +41,9 @@ export default function testDemoExamples(
         // NOTE: Find the "SUT" component inside the react-live ErrorBoundary
         const component = wrapper
           .findWhere(
-            // $FlowFixMe
-            node => node && node.type() && node.type().name === 'ErrorBoundary'
+            (node) =>
+              // $FlowFixMe
+              node && node.type() && node.type().name === 'ErrorBoundary'
           )
           .childAt(0);
 

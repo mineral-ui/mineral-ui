@@ -144,7 +144,7 @@ function getFlowType(propDescription: Object): any {
 function getPropTableRows(propDoc) {
   return Object.keys(propDoc)
     .sort()
-    .map(name => {
+    .map((name) => {
       const propDescription = propDoc[name];
 
       // Filter out private props

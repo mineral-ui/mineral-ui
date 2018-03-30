@@ -35,12 +35,12 @@ const mapValueToProperty = (
   value: Values
 ): number | string => {
   const map = {
-    alignSelf: value =>
+    alignSelf: (value) =>
       value === 'start' || value === 'end' ? `flex-${value}` : value,
-    flexBasis: value =>
+    flexBasis: (value) =>
       typeof value === 'number' && value < 1 ? `${value * 100}%` : value,
-    flexGrow: value => value,
-    flexShrink: value => value
+    flexGrow: (value) => value,
+    flexShrink: (value) => value
   };
 
   return map[property](value);

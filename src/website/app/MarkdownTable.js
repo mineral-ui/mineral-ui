@@ -24,20 +24,20 @@ export default function MarkdownTable({ children }: Props) {
 
   // a bunch of the elements returned by marksy are null,
   // so there's a lot of filtering and finding with the identity
-  const headNode = head.find(element => element);
-  const headRow = headNode && headNode.props.children.find(row => row);
+  const headNode = head.find((element) => element);
+  const headRow = headNode && headNode.props.children.find((row) => row);
   const headCells =
     headRow &&
     headRow.props.children
-      .filter(cell => cell)
+      .filter((cell) => cell)
       .map((cell, index) => (
         <TableHeaderCell key={index}>{cell.props.children}</TableHeaderCell>
       ));
-  const bodyNode = body.find(element => element);
+  const bodyNode = body.find((element) => element);
   const bodyRows =
     bodyNode &&
-    bodyNode.props.children.filter(row => row).map(row => {
-      const rowCells = row.props.children.filter(cell => cell).map(cell => {
+    bodyNode.props.children.filter((row) => row).map((row) => {
+      const rowCells = row.props.children.filter((cell) => cell).map((cell) => {
         let { children: cellReactChildren } = cell.props;
         if (cellReactChildren == null) {
           return <TableCell key={cell.key} />;
@@ -52,10 +52,10 @@ export default function MarkdownTable({ children }: Props) {
         ];
 
         const enhancedChildren = cellReactChildren
-          .filter(child => child)
+          .filter((child) => child)
           // all the transforms return a (possibly modified) node,
           // which is passed to the next transform
-          .map(child =>
+          .map((child) =>
             transforms.reduce((node, transform) => transform(node), child)
           );
 

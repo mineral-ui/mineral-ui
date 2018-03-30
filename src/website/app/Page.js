@@ -409,7 +409,7 @@ export default class Page extends Component<Props, State> {
       </Helmet>
     );
 
-    const navNarrow = moreSpacious => {
+    const navNarrow = (moreSpacious) => {
       if (moreSpacious) {
         noScroll.off();
       } else {
@@ -451,7 +451,7 @@ export default class Page extends Component<Props, State> {
     ) : (
       <ThemeProvider theme={type !== undefined ? pageThemes[type] : {}}>
         <Media query="(min-width: 48em)">
-          {moreSpacious => (
+          {(moreSpacious) => (
             <Root {...rootProps} wide={moreSpacious}>
               {helmetItems}
               {!glitched && navNarrow(moreSpacious)}

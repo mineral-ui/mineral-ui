@@ -51,7 +51,7 @@ const mountSelect = (props = {}) => {
   });
 };
 
-const assertTriggerHasFocus = trigger => {
+const assertTriggerHasFocus = (trigger) => {
   expect(
     trigger
       .find('div')
@@ -60,7 +60,7 @@ const assertTriggerHasFocus = trigger => {
   ).toEqual(true);
 };
 
-const assertContentExists = themeProvider => {
+const assertContentExists = (themeProvider) => {
   expect(themeProvider.find(DropdownContent).exists()).toEqual(true);
 };
 

@@ -16,7 +16,7 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'h3',
-  props => {
+  (props) => {
     const theme = {
       ...componentTheme(props.theme),
       ...menuItemComponentTheme(props.theme)

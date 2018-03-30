@@ -123,13 +123,13 @@ const styles = {
     ): number | string => {
       const map = {
         alignItems: getAlignment,
-        display: value =>
+        display: (value) =>
           value === undefined || value === false ? 'flex' : 'inline-flex',
-        flexDirection: value => value,
-        flexWrap: value =>
+        flexDirection: (value) => value,
+        flexWrap: (value) =>
           value ? 'wrap' : value === false ? 'nowrap' : value,
-        marginLeft: value => getMargin(gutter, theme, value),
-        marginRight: value => getMargin(gutter, theme, value),
+        marginLeft: (value) => getMargin(gutter, theme, value),
+        marginRight: (value) => getMargin(gutter, theme, value),
         justifyContent: getJustification
       };
 
@@ -167,7 +167,7 @@ const ThemedRoot = withTheme(
     };
 
     let flexItems;
-    flexItems = Children.map(children, child => {
+    flexItems = Children.map(children, (child) => {
       const {
         breakpoints: propBreakpoints,
         margin: propMargin,

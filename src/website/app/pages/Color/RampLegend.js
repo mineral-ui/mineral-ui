@@ -4,7 +4,7 @@ import ColorRampRow from './ColorRampRow';
 import { createStyledComponent, pxToEm } from '../../../../library/styles';
 
 const getBadges = () => {
-  return [1, 2, 3, 4].map(num => {
+  return [1, 2, 3, 4].map((num) => {
     const Badge = createStyledComponent('span', ({ theme }) => ({
       backgroundColor: theme.color_gray_30,
       borderRadius: theme.size_small,

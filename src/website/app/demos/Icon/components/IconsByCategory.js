@@ -28,28 +28,28 @@ const componentsByCategory: {
 export default function ComponentsByCategory() {
   return (
     <div>
-      {Object.entries(
-        componentsByCategory
-      ).map(([category, components], index) => {
-        return (
-          <div key={index}>
-            <CategoryHeading id={`category-${category}`}>
-              {category}
-            </CategoryHeading>
-            <FigContainer>
-              {// $FlowFixMe - Flow bug: https://github.com/facebook/flow/issues/2221
-              components.map((IconComponent, index) => {
-                return (
-                  <Figure tabIndex={0} key={index}>
-                    <IconComponent size="32" />
-                    <FigCaption>{IconComponent.displayName}</FigCaption>
-                  </Figure>
-                );
-              })}
-            </FigContainer>
-          </div>
-        );
-      })}
+      {Object.entries(componentsByCategory).map(
+        ([category, components], index) => {
+          return (
+            <div key={index}>
+              <CategoryHeading id={`category-${category}`}>
+                {category}
+              </CategoryHeading>
+              <FigContainer>
+                {// $FlowFixMe - Flow bug: https://github.com/facebook/flow/issues/2221
+                components.map((IconComponent, index) => {
+                  return (
+                    <Figure tabIndex={0} key={index}>
+                      <IconComponent size="32" />
+                      <FigCaption>{IconComponent.displayName}</FigCaption>
+                    </Figure>
+                  );
+                })}
+              </FigContainer>
+            </div>
+          );
+        }
+      )}
     </div>
   );
 }

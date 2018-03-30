@@ -84,13 +84,13 @@ export default function ColorRampRow({ name }: Props) {
     white: '#fff'
   });
 
-  const hsl = accessibility.find(result => result.name === 'main').values.hsl;
+  const hsl = accessibility.find((result) => result.name === 'main').values.hsl;
   const blackonBackground = accessibility
-    .find(result => result.name === 'black')
-    .combinations.find(combo => combo.name === 'main');
+    .find((result) => result.name === 'black')
+    .combinations.find((combo) => combo.name === 'main');
   const whiteOnBackground = accessibility
-    .find(result => result.name === 'white')
-    .combinations.find(combo => combo.name === 'main');
+    .find((result) => result.name === 'white')
+    .combinations.find((combo) => combo.name === 'main');
 
   return (
     <Row color={main}>

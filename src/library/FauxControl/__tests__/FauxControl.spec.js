@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import FauxControl from '../FauxControl';
 
-const Control = props => <input {...props} />;
+const Control = (props) => <input {...props} />;
 
 function shallowFauxControl(props = {}) {
   const fauxControlProps = {

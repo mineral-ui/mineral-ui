@@ -20,7 +20,7 @@ const argv = require('yargs')
   .help('h')
   .alias('h', 'help').argv;
 
-const exec = command => {
+const exec = (command) => {
   execSync(command, {
     stdio: 'inherit'
   });
@@ -32,7 +32,7 @@ const getCurrentVersion = () => {
   ).version;
 };
 
-const installDependencies = version => {
+const installDependencies = (version) => {
   let dependencies;
 
   if (semver.satisfies(version, '15.0.0 - 15.4.x')) {
@@ -77,7 +77,7 @@ process.on('exit', restoreOriginalDependencies);
 
 console.log(`Running tests for React versions: ${targetVersions.join(' ')}`);
 
-targetVersions.forEach(targetVersion => {
+targetVersions.forEach((targetVersion) => {
   if (!semver.valid(targetVersion)) {
     console.log('Invalid semver version:', targetVersion);
     process.exit(0);

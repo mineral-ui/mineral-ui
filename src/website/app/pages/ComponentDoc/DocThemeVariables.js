@@ -15,7 +15,7 @@ type Theme = (theme: Object) => Object;
 
 const createKeyMirror = (obj: Object) => {
   let mirror = {};
-  Object.keys(obj).forEach(key => {
+  Object.keys(obj).forEach((key) => {
     mirror[key] = `${key}`;
   });
   return mirror;

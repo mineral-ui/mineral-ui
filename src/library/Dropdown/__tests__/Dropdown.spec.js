@@ -40,13 +40,13 @@ const mountDropdown = (props = {}) => {
   return mountInThemeProvider(<Dropdown {...dropdownProps} />);
 };
 
-const assertTriggerHasFocus = trigger => {
+const assertTriggerHasFocus = (trigger) => {
   expect(
     trigger.find('button').getDOMNode() === document.activeElement
   ).toEqual(true);
 };
 
-const assertContentExists = themeProvider => {
+const assertContentExists = (themeProvider) => {
   expect(themeProvider.find(DropdownContent).exists()).toEqual(true);
 };
 
@@ -59,8 +59,8 @@ const assertItemAtIndexIsHighlighted = (themeProvider, index) => {
   ).toEqual(true);
 };
 
-const assertNoItemsHighlighted = themeProvider => {
-  themeProvider.find(MenuItem).forEach(menuItem => {
+const assertNoItemsHighlighted = (themeProvider) => {
+  themeProvider.find(MenuItem).forEach((menuItem) => {
     expect(menuItem.props().isHighlighted).toEqual(false);
   });
 };

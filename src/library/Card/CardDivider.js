@@ -14,7 +14,7 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'div',
-  props => {
+  (props) => {
     const theme = {
       ...componentTheme(props.theme),
       ...cardComponentTheme(props.theme)

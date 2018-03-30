@@ -86,7 +86,7 @@ class PopOverDo extends Component<{}, State> {
 
     return (
       <DemoLayout
-        ref={node => {
+        ref={(node) => {
           this.demoLayout = node;
         }}>
         <Button primary onClick={this.togglePopover}>

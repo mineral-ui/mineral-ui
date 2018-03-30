@@ -640,7 +640,7 @@ export default class Home extends Component<Props, State> {
     return (
       <ThemeProvider theme={homeTheme}>
         <Media query="(min-width: 39em)">
-          {navExpanded => (
+          {(navExpanded) => (
             <Root>
               <Helmet>
                 <link rel="canonical" href={pageMeta.canonicalLink} />
@@ -650,7 +650,7 @@ export default class Home extends Component<Props, State> {
 
               <ThemeProvider theme={heroTheme}>
                 <Media query="(min-width: 48em)">
-                  {moreSpacious => {
+                  {(moreSpacious) => {
                     /*
                      * [1] These values are dependent on the width of the first
                      *     Hero Button
@@ -714,12 +714,12 @@ export default class Home extends Component<Props, State> {
                 <PlaygroundCanvas index={themeIndex} />
                 <ThemePlayground
                   index={themeIndex}
-                  setIndex={index => {
+                  setIndex={(index) => {
                     this.setThemeIndex(index, true);
                   }}
                   themes={playgroundThemes}>
                   <Media query="(min-width: 23em)">
-                    {navExpanded => {
+                    {(navExpanded) => {
                       const PlaygroundButton = createStyledComponent(Button, {
                         ...styles.button,
                         fontFamily: 'inherit'

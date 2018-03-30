@@ -33,7 +33,7 @@ describe('ItemMatcher', () => {
 
       jest.useFakeTimers();
       // Start on Connecticut
-      'conn'.split('').forEach(key => {
+      'conn'.split('').forEach((key) => {
         item = itemMatcher.findMatchingItem(items, undefined, key);
       });
       itemIndex = item ? items.indexOf(item) : undefined;
@@ -51,7 +51,7 @@ describe('ItemMatcher', () => {
       let item;
 
       jest.useFakeTimers();
-      'colo'.split('').forEach(key => {
+      'colo'.split('').forEach((key) => {
         item = itemMatcher.findMatchingItem(items, undefined, key);
       });
       jest.runAllTimers();

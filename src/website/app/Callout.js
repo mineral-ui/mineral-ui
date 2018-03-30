@@ -21,7 +21,7 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
     visited: desaturate(0.2, theme.SiteLink_color)
   };
 
-  const getIcon = color => {
+  const getIcon = (color) => {
     // `#` not valid in data URIs: https://www.chromestatus.com/features/5656049583390720
     const escapedColor = color.replace('#', '%23');
 
@@ -34,9 +34,9 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
       variant === 'danger'
         ? theme.backgroundColor_input_danger
         : rgba(theme.color_text_primary, 0.1),
-    borderLeft: `3px solid ${variant === 'danger'
-      ? theme.color_text_danger
-      : theme.color_text_primary}`,
+    borderLeft: `3px solid ${
+      variant === 'danger' ? theme.color_text_danger : theme.color_text_primary
+    }`,
     padding: theme.baseline_2,
 
     '& p': {

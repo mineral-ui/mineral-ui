@@ -54,8 +54,12 @@ export const componentTheme = (baseTheme: Object) => ({
   TextArea_borderColor_hover: baseTheme.borderColor_hover,
   TextArea_borderRadius: baseTheme.borderRadius_1,
   TextArea_borderWidth: '1px',
-  TextArea_boxShadow_active: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${baseTheme.borderColor_active}`,
-  TextArea_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${baseTheme.borderColor_focus}`,
+  TextArea_boxShadow_active: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
+    baseTheme.borderColor_active
+  }`,
+  TextArea_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
+    baseTheme.borderColor_focus
+  }`,
   TextArea_color_text: baseTheme.color_gray_80,
   TextArea_color_placeholder: baseTheme.color_gray_60,
   TextArea_fontSize: baseTheme.fontSize_ui,
@@ -282,7 +286,7 @@ export default class TextArea extends Component<Props> {
       'aria-required': required,
       autoSize,
       disabled,
-      innerRef: ref => {
+      innerRef: (ref) => {
         this.textArea = ref;
         if (inputRef) {
           inputRef(ref);

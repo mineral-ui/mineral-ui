@@ -63,7 +63,7 @@ export const getItems = (data: Items | ItemGroups) => {
   const itemGroups: ItemGroups = groupifyData(data);
   return itemGroups.reduce((acc, group) => {
     return group.items && group.items.length
-      ? acc.concat(group.items.filter(item => !item.divider))
+      ? acc.concat(group.items.filter((item) => !item.divider))
       : acc;
   }, []);
 };

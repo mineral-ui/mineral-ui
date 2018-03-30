@@ -136,9 +136,9 @@ const svgo = new SVGO({
         name: 'camelCaseAttributes',
         params: {},
         type: 'perItem',
-        fn: item => {
+        fn: (item) => {
           if (item.isElem()) {
-            item.eachAttr(attr => (attr.name = camelCase(attr.name)));
+            item.eachAttr((attr) => (attr.name = camelCase(attr.name)));
           }
         }
       }
@@ -163,7 +163,7 @@ function optimizeSvg(componentName, fileContent) {
 
       return optimizedContent;
     },
-    err => {
+    (err) => {
       console.error(`${componentName}: ${err}`);
     }
   );
@@ -187,7 +187,7 @@ async function buildIcons() {
   const template = await fs.readFile(COMPONENT_TEMPLATE_PATH, 'utf8');
   Mustache.parse(template);
 
-  const componentPromises = svgFiles.map(svgFile =>
+  const componentPromises = svgFiles.map((svgFile) =>
     generateComponent(template, svgFile)
   );
 
@@ -277,9 +277,9 @@ async function generateIndex(components) {
 }
 
 function copyInternalMineralIcons(components) {
-  const promises = internalMineralIcons.map(icon => {
+  const promises = internalMineralIcons.map((icon) => {
     const { componentFilePath: src } = components.find(
-      component => component.componentName === icon
+      (component) => component.componentName === icon
     );
     const dest = src.replace(COMPONENTS_DIR, ICON_COMPONENTS_DIR);
     return fs.copy(src, dest);

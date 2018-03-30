@@ -4,7 +4,7 @@ import { componentTheme as cardComponentTheme } from './Card';
 
 export default createStyledComponent(
   'div',
-  props => {
+  (props) => {
     const theme = cardComponentTheme(props.theme);
 
     return {

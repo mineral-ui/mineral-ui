@@ -28,7 +28,7 @@ const argv = require('yargs')
   .help('h')
   .alias('h', 'help').argv;
 
-const exec = command =>
+const exec = (command) =>
   execSync(command, {
     stdio: 'inherit'
   });

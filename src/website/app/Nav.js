@@ -182,13 +182,12 @@ const Link = createStyledComponent(_Link, styles.link, {
 });
 const List = createStyledComponent('ol', styles.list);
 const ListItem = createStyledComponent('li', styles.listItem);
-const SectionHeading = createStyledComponent(
-  Heading,
-  styles.heading
-).withProps({
-  as: 'h2',
-  level: 4
-});
+const SectionHeading = createStyledComponent(Heading, styles.heading).withProps(
+  {
+    as: 'h2',
+    level: 4
+  }
+);
 const SubList = createStyledComponent('ol', styles.subList);
 const LogoHeading = createStyledComponent(
   Heading,
@@ -197,7 +196,7 @@ const LogoHeading = createStyledComponent(
   level: 1
 });
 
-const Logo = wide => (
+const Logo = (wide) => (
   <LogoHeading wide={wide}>
     <Link exact to="/">
       <_Logo />
@@ -205,13 +204,13 @@ const Logo = wide => (
   </LogoHeading>
 );
 
-const pages = wide => {
+const pages = (wide) => {
   return sections.map((section, index) => {
     return (
       <div key={index}>
         <SectionHeading wide={wide}>{section.heading}</SectionHeading>
         <List>
-          {section.pages.map(page => {
+          {section.pages.map((page) => {
             return (
               !page.hiddenInNav && (
                 <ListItem key={page.title}>
@@ -244,9 +243,9 @@ export default function Nav({
 }: Props) {
   const rootProps = { ...restProps };
 
-  const demoLinks = demoRoutes.map(route => {
+  const demoLinks = demoRoutes.map((route) => {
     if (Array.isArray(route)) {
-      const open = route.filter(subRoute => subRoute.slug === currentDemo)
+      const open = route.filter((subRoute) => subRoute.slug === currentDemo)
         .length;
       const subListProps = {
         key: route[0].slug,

@@ -18,7 +18,7 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  action: props => {
+  action: (props) => {
     const theme = {
       ...componentTheme(props.theme),
       ...cardBlockComponentTheme(props.theme)
@@ -40,7 +40,7 @@ const styles = {
       marginRight: rtl ? actionsGap : null
     };
   },
-  root: props => {
+  root: (props) => {
     const theme = {
       ...componentTheme(props.theme),
       ...cardComponentTheme(props.theme)

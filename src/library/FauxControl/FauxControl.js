@@ -45,8 +45,12 @@ export const componentTheme = (baseTheme: Object) => ({
   FauxControl_borderColor_hover: baseTheme.borderColor_hover,
   FauxControl_borderRadius: baseTheme.borderRadius_1,
   FauxControl_borderWidth: '1px',
-  FauxControl_boxShadow_active: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${baseTheme.borderColor_active}`,
-  FauxControl_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${baseTheme.borderColor_focus}`,
+  FauxControl_boxShadow_active: `0 0 0 1px ${
+    baseTheme.color_white
+  }, 0 0 0 2px ${baseTheme.borderColor_active}`,
+  FauxControl_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
+    baseTheme.borderColor_focus
+  }`,
   FauxControl_color_placeholder: baseTheme.color_gray_60,
   FauxControl_color_text: baseTheme.color_gray_80,
   FauxControl_fontSize: baseTheme.fontSize_ui,
