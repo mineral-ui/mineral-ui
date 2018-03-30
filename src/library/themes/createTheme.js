@@ -106,6 +106,13 @@ export default function createTheme(
 
     ...grays,
 
+    color_h1: color.gray_100,
+    color_h2: color.gray_80,
+    color_h3: color.gray_80,
+    color_h4: color.gray_80,
+    color_h5: color.gray_100,
+    color_h6: color.gray_80,
+    color_mouse: color.gray_80,
     color_placeholder: color.gray_60,
 
     ...primaries,
@@ -156,8 +163,16 @@ export default function createTheme(
     fontWeight_semiBold: 600,
     fontWeight_bold: 700,
     fontWeight_extraBold: 800,
+    fontWeight_h1: 800,
+    fontWeight_h2: 700,
+    fontWeight_h3: 700,
+    fontWeight_h4: 700,
+    fontWeight_h5: 700,
+    fontWeight_h6: 400,
 
     lineHeight: 1.25,
+    lineHeight_heading: 1.25,
+    lineHeight_heading_small: 1.5,
     lineHeight_prose: 1.5,
 
     shadow_1: '0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)',
