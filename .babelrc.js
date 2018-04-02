@@ -27,8 +27,8 @@ module.exports = {
   plugins: (() => {
     let plugins = [
       'transform-object-rest-spread',
-      'transform-class-properties',
       'flow-react-proptypes',
+      'transform-class-properties',
       'syntax-dynamic-import'
     ];
 
