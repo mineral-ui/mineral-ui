@@ -1,3 +1,19 @@
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/mineral-ui/mineral-ui/compare/v0.23.0...v0.24.0) (2018-04-03)
+
+
+### Bug Fixes
+
+* **avatar,form-field:** Compare using displayName to avoid minification issues ([8732080](https://github.com/mineral-ui/mineral-ui/commit/8732080))
+
+
+### Features
+
+* **text:** New component ([9cc63d9](https://github.com/mineral-ui/mineral-ui/commit/9cc63d9))
+* **themes:** Add more text theme variables ([43d62bb](https://github.com/mineral-ui/mineral-ui/commit/43d62bb))
+
+
+
 <a name="0.23.0"></a>
 # [0.23.0](https://github.com/mineral-ui/mineral-ui/compare/v0.22.0...v0.23.0) (2018-03-26)
 
