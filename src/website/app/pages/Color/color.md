@@ -35,9 +35,9 @@ The color system features three variants to represent intention:
 
 <Variants />
 
-## Accessibility (a11y)
+## Accessibility
 
-Always consider customers who are color blind or visually impaired when choosing colors.
+Always consider customers who have different accessibility (a11y) needs, e.g. those who are color blind or visually impaired, when choosing colors.
 Color ramp values have similar accessibility values even when themes are switched out.
 
 Most themes are [WCAG AA+](https://www.w3.org/TR/WCAG20/) accessible. If a higher level of accessibility is required, allow the user to activate an accessible theme as a user preference.

@@ -8,8 +8,8 @@ import {
   getNormalizedValue,
   pxToEm
 } from '../../library/styles';
+import Text from '../../library/Text';
 import Heading from './SiteHeading';
-import Paragraph from './Paragraph';
 import Link from './SiteLink';
 import MarkdownTable from './MarkdownTable';
 import getCodeBlockStyles from './utils/getCodeBlockStyles';
@@ -366,7 +366,7 @@ export default function Markdown({
         return replaceHeading(6, children, { id }, anchors);
       },
       p({ children }) {
-        return <Paragraph variant="prose">{children}</Paragraph>;
+        return <Text appearance="prose">{children}</Text>;
       },
       table(props) {
         return <MarkdownTable {...props} />;
