@@ -32,9 +32,10 @@ Statuses:
 | [Menu](/components/menu)                    | [available] |
 | [Popover](/components/popover)              | [available] |
 | [Radio](/components/radio)                  | [available] |
-| [Select](/components/select) ~ new          | [available] |
+| [Select](/components/select)                | [available] |
 | [StartEnd](/components/start-end)           | [available] |
 | [TextArea](/components/text-area)           | [available] |
+| [Text](/components/text) ~ new              | [available] |
 | [TextInput](/components/text-input)         | [available] |
 | [ThemeProvider](/components/theme-provider) | [available] |
 | [Tooltip](/components/tooltip)              | [available] |
@@ -46,7 +47,6 @@ Statuses:
 | Pagination                                  |             |
 | Tabs                                        |             |
 | Notification                                |             |
-| Text                                        |             |
 | Heading                                     |             |
 | Progress                                    |             |
 | TimePicker                                  |             |
@@ -80,4 +80,3 @@ Statuses:
 | Fix                                         |             |
 | DataTable                                   |             |
 | LogIn                                       |             |
-

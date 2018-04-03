@@ -196,6 +196,12 @@ export default [
   },
   {
     description:
+      'The Text component provides styles and semantic meaning for text and headings in a manner consistent with other components.',
+    slug: 'text',
+    title: 'Text'
+  },
+  {
+    description:
       'TextAreas accept data from the user.  Use a TextArea to accept potentially lengthy, free-form input from a user',
     slug: 'text-area',
     title: 'TextArea'
