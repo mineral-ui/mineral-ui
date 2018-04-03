@@ -9,7 +9,7 @@ export default {
 [palette's base colors](/color#guidelines-ramps). By default, it will use your
 theme's base color. You may also pass in a custom \`background\` and \`color\`,
 but be sure to use a color combination with an
-[adequate contrast ratio](/color#guidelines-accessibility-(a11y\)).`, // eslint-disable-line no-useless-escape
+[adequate contrast ratio](/color#guidelines-accessibility).`,
   scope: { Avatar, DemoLayout },
   source: `
     <DemoLayout>

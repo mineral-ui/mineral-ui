@@ -1,8 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../library/styles';
-import Heading from '../../Heading';
-import Paragraph from '../../Paragraph';
+import Text from '../../../../library/Text';
 
 type TypeExample = {
   description: string,
@@ -30,10 +29,22 @@ content sections. **Caption Text** is used to highlight or offset content, such
 as inline help or when captioning dashboard content.`,
     examples: [
       {
-        content: <Paragraph>Paragraph UI</Paragraph>,
+        content: <Text>Paragraph</Text>,
         value: '<p>, <li>',
         color: 'color_gray_100',
         font: 'Regular (14/0.875)'
+      },
+      {
+        content: <Text appearance="prose">Paragraph (Prose)</Text>,
+        value: '<p.prose>',
+        color: 'color_gray_100',
+        font: 'Regular (16/1)'
+      },
+      {
+        content: <Text appearance="mouse">Paragraph (Mouse)</Text>,
+        value: '<p.mouse>',
+        color: 'color_gray_100',
+        font: 'Regular (11/0.6875)'
       },
       {
         content: (
@@ -50,25 +61,13 @@ as inline help or when captioning dashboard content.`,
         font: 'Regular (14/0.875)'
       },
       {
-        content: <Paragraph variant="prose">Paragraph (Long Form)</Paragraph>,
-        value: '<p.long>',
-        color: 'color_gray_100',
-        font: 'Regular (16/1)'
-      },
-      {
-        content: <Paragraph variant="mouse">Paragraph (Mousetype)</Paragraph>,
-        value: '<p.mouse>',
-        color: 'color_gray_100',
-        font: 'Regular (11/0.6875)'
-      },
-      {
-        content: <Heading level={5}>Caption - Strong</Heading>,
+        content: <Text element="h5">Caption - Strong</Text>,
         value: '<h5>',
         color: 'color_gray_100',
         font: 'Bold (14/0.875)'
       },
       {
-        content: <Heading level={6}>Caption - Light</Heading>,
+        content: <Text element="h6">Caption - Light</Text>,
         value: '<h6>',
         color: 'color_gray_80',
         font: 'Regular (14/0.875)'
@@ -83,25 +82,25 @@ different sections in an application view. Display text is for short titles and
 section divisions—it’s not for long-form content.`,
     examples: [
       {
-        content: <Heading level={1}>Page Title</Heading>,
+        content: <Text element="h1">Page Title</Text>,
         value: '<h1>',
         color: 'color_gray_100',
         font: 'ExtraBold (34/2.125)'
       },
       {
-        content: <Heading level={2}>Large Section Header</Heading>,
+        content: <Text element="h2">Large Section Header</Text>,
         value: '<h2>',
         color: 'color_gray_80',
         font: 'Bold (28/1.75)'
       },
       {
-        content: <Heading level={3}>Medium Section Header</Heading>,
+        content: <Text element="h3">Medium Section Header</Text>,
         value: '<h3>',
         color: 'color_gray_80',
         font: 'Bold (22/1.375)'
       },
       {
-        content: <Heading level={4}>Small Section Header</Heading>,
+        content: <Text element="h4">Small Section Header</Text>,
         value: '<h4>',
         color: 'color_gray_80',
         font: 'Bold (18/1.125)'
