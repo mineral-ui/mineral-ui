@@ -4,10 +4,14 @@ export { default as Box } from './Box';
 export { default as Button } from './Button';
 export {
   default as Card,
+  CardActions,
   CardBlock,
+  CardDivider,
+  CardFooter,
   CardImage,
   CardStatus,
-  CardTitle
+  CardTitle,
+  CardTitleMenu
 } from './Card';
 export { default as Checkbox, CheckboxGroup } from './Checkbox';
 export { default as Dropdown } from './Dropdown';
