@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, getNormalizedValue } from '../styles';
 import { mapComponentThemes } from '../themes';
 import FauxControl, {
   componentTheme as fauxControlComponentTheme
@@ -67,7 +67,10 @@ export const componentTheme = (baseTheme: Object) => ({
     {
       name: 'TextInput',
       theme: {
-        TextInput_color_placeholder: baseTheme.color_gray_60,
+        TextInput_height_small: baseTheme.size_small,
+        TextInput_height_medium: baseTheme.size_medium,
+        TextInput_height_large: baseTheme.size_large,
+        TextInput_height_jumbo: baseTheme.size_jumbo,
 
         TextInputIcon_fill: baseTheme.color_gray_40
       }
@@ -77,14 +80,24 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  input: {
-    backgroundColor: 'transparent',
-    border: 0,
-    boxShadow: 'none',
-    flex: '1 1 auto',
-    fontFamily: 'inherit',
-    minWidth: 0,
-    width: '100%'
+  input: ({ size, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+
+    const fontSize =
+      size === 'small'
+        ? theme.TextInput_fontSize_small
+        : theme.TextInput_fontSize;
+
+    return {
+      backgroundColor: 'transparent',
+      border: 0,
+      boxShadow: 'none',
+      flex: '1 1 auto',
+      fontFamily: 'inherit',
+      height: getNormalizedValue(theme[`TextInput_height_${size}`], fontSize),
+      minWidth: 0,
+      width: '100%'
+    };
   },
   root: ({ theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);

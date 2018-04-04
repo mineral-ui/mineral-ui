@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import { canUseDOM } from 'exenv';
 import FontFaceObserver from 'fontfaceobserver';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { mapComponentThemes } from '../themes';
+import FauxControl, {
+  componentTheme as fauxControlComponentTheme
+} from '../FauxControl/FauxControl';
 
 type Props = {
   /** Automatically adjust the height of the input to fit the content */
@@ -47,44 +51,28 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  TextArea_backgroundColor: baseTheme.backgroundColor_input,
-  TextArea_borderColor: baseTheme.borderColor,
-  TextArea_borderColor_active: baseTheme.borderColor,
-  TextArea_borderColor_focus: baseTheme.borderColor,
-  TextArea_borderColor_hover: baseTheme.borderColor_hover,
-  TextArea_borderRadius: baseTheme.borderRadius_1,
-  TextArea_borderWidth: '1px',
-  TextArea_boxShadow_active: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
-    baseTheme.borderColor_active
-  }`,
-  TextArea_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
-    baseTheme.borderColor_focus
-  }`,
-  TextArea_color_text: baseTheme.color_gray_80,
-  TextArea_color_placeholder: baseTheme.color_gray_60,
-  TextArea_fontSize: baseTheme.fontSize_ui,
-  TextArea_fontSize_small: pxToEm(12),
-  TextArea_paddingHorizontal: baseTheme.space_inset_md,
-  TextArea_paddingHorizontal_small: baseTheme.space_inset_sm,
-  // The following padding values make appearances equivalent to TextInputs of same size when rows=1.
-  // This enables usage of a TextArea as a single line input that can accept multiple lines of text.
-  TextArea_paddingVertical_jumbo: pxToEm(14.5),
-  TextArea_paddingVertical_large: pxToEm(8.5),
-  TextArea_paddingVertical_medium: pxToEm(4.5),
-  TextArea_paddingVertical_small: pxToEm(2),
-
-  ...baseTheme
+  ...mapComponentThemes(
+    {
+      name: 'FauxControl',
+      theme: fauxControlComponentTheme(baseTheme)
+    },
+    {
+      name: 'TextArea',
+      theme: {
+        // The following padding values make appearances equivalent to TextInputs of same size when rows=1.
+        // This enables usage of a TextArea as a single line input that can accept multiple lines of text.
+        TextArea_paddingVertical_jumbo: pxToEm(14.5),
+        TextArea_paddingVertical_large: pxToEm(8.5),
+        TextArea_paddingVertical_medium: pxToEm(4.5),
+        TextArea_paddingVertical_small: pxToEm(2)
+      }
+    },
+    baseTheme
+  )
 });
 
 const styles = {
-  textArea: ({
-    disabled,
-    readOnly,
-    resizeable,
-    size,
-    theme: baseTheme,
-    variant
-  }) => {
+  textArea: ({ resizeable, size, theme: baseTheme, variant }) => {
     let theme = componentTheme(baseTheme);
     if (variant) {
       // prettier-ignore
@@ -104,23 +92,13 @@ const styles = {
       theme[`TextArea_paddingVertical_${size}`],
       fontSize
     );
-    const sizeAppropriatePadding =
-      size === 'small' || size === 'medium'
-        ? theme.TextArea_paddingHorizontal_small
-        : theme.TextArea_paddingHorizontal;
-    const placeholderStyles = {
-      color: theme.TextArea_color_placeholder,
-      fontStyle: 'italic'
-    };
 
     return {
       backgroundColor: 'transparent',
       border: 0,
       boxShadow: 'none',
-      color: disabled ? theme.color_text_disabled : theme.TextArea_color_text,
       flex: '1 1 auto',
       fontFamily: 'inherit',
-      fontSize,
       lineHeight: theme.lineHeight_prose,
       margin: theme.TextArea_borderWidth,
       // minHeight value is an attempt to display a single line of text.
@@ -131,74 +109,22 @@ const styles = {
         parseFloat(pxToEm(2))}em`,
       minWidth: 0,
       outline: 0,
-      padding: `${paddingVerticalNormalized} ${getNormalizedValue(
-        sizeAppropriatePadding,
-        fontSize
-      )}`,
+      paddingBottom: paddingVerticalNormalized,
+      paddingTop: paddingVerticalNormalized,
       resize: resizeable ? 'vertical' : 'none',
-      width: '100%',
-
-      '&::placeholder': placeholderStyles,
-      '&::-ms-input-placeholder': placeholderStyles, // Edge
-      '&:-ms-input-placeholder': placeholderStyles, // IE 11
-
-      '&::-ms-clear': {
-        display: 'none'
-      },
-
-      '&:hover,&[data-simulate-hover]': {
-        '& ~ div': {
-          borderColor: !disabled ? theme.TextArea_borderColor_hover : null
-        }
-      },
-
-      '&:focus,&[data-simulate-focus]': {
-        '& ~ div': {
-          borderColor: theme.TextArea_borderColor_focus,
-          boxShadow: theme.TextArea_boxShadow_focus
-        }
-      },
-
-      '&:active,&[data-simulate-active]': {
-        '& ~ div': {
-          borderColor: theme.TextArea_borderColor_active,
-          boxShadow: disabled ? 'none' : theme.TextArea_boxShadow_active
-        }
-      },
-
-      '& ~ div': {
-        backgroundColor:
-          disabled || readOnly
-            ? theme.backgroundColor_disabled
-            : theme.TextArea_backgroundColor,
-        borderColor:
-          variant && !disabled && !readOnly
-            ? theme[`borderColor_${variant}`]
-            : theme.TextArea_borderColor,
-        borderRadius: theme.TextArea_borderRadius,
-        borderStyle: 'solid',
-        borderWidth: theme.TextArea_borderWidth,
-        bottom: 0,
-        left: 0,
-        position: 'absolute',
-        right: 0,
-        top: 0,
-        zIndex: -1
-      }
+      width: '100%'
     };
   },
   root: {
     alignItems: 'center',
     cursor: 'text',
     display: 'flex',
-    position: 'relative',
     width: '100%'
   }
 };
 
-const Root = createStyledComponent('div', styles.root, {
-  displayName: 'TextArea',
-  includeStyleReset: true
+const Root = createStyledComponent(FauxControl, styles.root, {
+  displayName: 'TextArea'
 });
 const _TextArea = createStyledComponent('textarea', styles.textArea, {
   rootEl: 'textarea'
@@ -275,39 +201,39 @@ export default class TextArea extends Component<Props> {
       ...restProps
     } = this.props;
 
-    const rootProps = {
-      className,
-      variant,
-      ...otherRootProps
-    };
-
     const textAreaProps = {
       'aria-invalid': invalid,
       'aria-required': required,
       autoSize,
-      disabled,
-      innerRef: (ref) => {
+      controlRef: (ref) => {
         this.textArea = ref;
         if (inputRef) {
           inputRef(ref);
         }
       },
+      disabled,
       onInput: this.handleInput,
       readOnly,
       required,
       resizeable: autoSize ? false : resizeable,
       rows: rows || (size && sizeToRows[size]) || undefined,
       size,
-      variant,
       ...restProps // Note: Props are spread to TextArea rather than Root
     };
 
-    return (
-      <Root {...rootProps}>
-        <_TextArea {...textAreaProps} />
-        <div />
-      </Root>
-    );
+    const rootProps = {
+      className,
+      control: _TextArea,
+      controlProps: textAreaProps,
+      disabled,
+      iconEnd: null, // Opt out of the variant icon
+      readOnly,
+      size,
+      variant,
+      ...otherRootProps
+    };
+
+    return <Root {...rootProps} />;
   }
 
   handleInput = (event: SyntheticEvent<>) => {
