@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import { ellipsis } from 'polished';
+import { string } from 'prop-types';
 import { createStyledComponent } from '../styles';
 import TextProvider from './TextProvider';
 
@@ -34,24 +34,6 @@ type Props = {
   parentElement?: string,
   /** Force display to one line and truncate with ellipsis at given max-width */
   truncate?: boolean | number | string
-};
-
-const customStringType = (
-  props: {},
-  propName: string,
-  componentName: ?string
-) => {
-  componentName = componentName || 'ANONYMOUS';
-
-  if (props[propName]) {
-    let value = props[propName];
-    return typeof value === 'string'
-      ? null
-      : new Error(propName + ' in ' + componentName + ' must be a string');
-  }
-
-  // assume all ok
-  return null;
 };
 
 export const componentTheme = (baseTheme: Object) => ({
@@ -99,8 +81,14 @@ const commonStyles = (element, theme, truncate) => {
   if (truncate) {
     styles = {
       ...styles,
-      ...ellipsis(truncate === true ? '100%' : truncate),
-      display: null
+      // These styles from polished's ellipsis, which we cannot use here
+      // because the dynamic width means the output can't be extracted at
+      // build time.
+      maxWidth: truncate === true ? '100%' : truncate,
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+      wordWrap: 'normal'
     };
   }
 
@@ -227,7 +215,7 @@ export default class Text extends Component<Props> {
   };
 
   static contextTypes = {
-    parentElement: customStringType
+    parentElement: string
   };
 
   render() {

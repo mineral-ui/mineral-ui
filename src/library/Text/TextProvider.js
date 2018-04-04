@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
+import { string } from 'prop-types';
 import { createRootNode } from './Text';
 
 type Props = {
@@ -34,27 +35,9 @@ type Props = {
   truncate?: boolean | number | string
 };
 
-const customStringType = (
-  props: {},
-  propName: string,
-  componentName: ?string
-) => {
-  componentName = componentName || 'ANONYMOUS';
-
-  if (props[propName]) {
-    let value = props[propName];
-    return typeof value === 'string'
-      ? null
-      : new Error(propName + ' in ' + componentName + ' must be a string');
-  }
-
-  // assume all ok
-  return null;
-};
-
 export default class TextProvider extends Component<Props> {
   static childContextTypes = {
-    parentElement: customStringType
+    parentElement: string
   };
 
   getChildContext() {
