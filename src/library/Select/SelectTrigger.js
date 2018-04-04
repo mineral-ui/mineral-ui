@@ -4,7 +4,7 @@ import { ellipsis } from 'polished';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { mapComponentThemes } from '../themes';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
@@ -45,7 +45,10 @@ export const componentTheme = (baseTheme: Object) => ({
     {
       name: 'Select',
       theme: {
-        Select_color_placeholder: baseTheme.color_gray_60,
+        Select_height_small: baseTheme.size_small,
+        Select_height_medium: baseTheme.size_medium,
+        Select_height_large: baseTheme.size_large,
+        Select_height_jumbo: baseTheme.size_jumbo,
 
         SelectIcon_fill: baseTheme.color_theme_60
       }
@@ -107,12 +110,20 @@ const styles = {
       }
     };
   },
-  trigger: {
-    alignItems: 'center',
-    color: 'teal',
-    display: 'flex',
-    flex: '1 1 auto',
-    minWidth: 0
+  trigger: ({ size, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+
+    const fontSize =
+      size === 'small' ? theme.Select_fontSize_small : theme.Select_fontSize;
+
+    return {
+      alignItems: 'center',
+      color: 'teal',
+      display: 'flex',
+      flex: '1 1 auto',
+      height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),
+      minWidth: 0
+    };
   },
   triggerContent: {
     ...ellipsis(null),

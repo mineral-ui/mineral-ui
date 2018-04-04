@@ -55,10 +55,6 @@ export const componentTheme = (baseTheme: Object) => ({
   FauxControl_color_text: baseTheme.color_gray_80,
   FauxControl_fontSize: baseTheme.fontSize_ui,
   FauxControl_fontSize_small: pxToEm(12),
-  FauxControl_height_small: baseTheme.size_small,
-  FauxControl_height_medium: baseTheme.size_medium,
-  FauxControl_height_large: baseTheme.size_large,
-  FauxControl_height_jumbo: baseTheme.size_jumbo,
   FauxControl_paddingHorizontal: baseTheme.space_inset_md,
   FauxControl_paddingHorizontal_small: baseTheme.space_inset_sm,
 
@@ -126,6 +122,11 @@ const styles = {
     }
 
     const rtl = theme.direction === 'rtl';
+    const color = disabled
+      ? theme.color_text_disabled
+      : hasPlaceholder || readOnly
+        ? theme.FauxControl_color_placeholder
+        : theme.FauxControl_color_text;
     const fontSize =
       size === 'small'
         ? theme.FauxControl_fontSize_small
@@ -140,20 +141,20 @@ const styles = {
       fontSize
     );
 
+    // [1] - Safari and many Android browsers need this to apply the correct
+    //       color to disabled controls
+
     const placeholderStyles = {
       color: theme.FauxControl_color_placeholder,
+      WebkitTextFillColor: theme.FauxControl_color_placeholder, // [1]
       fontStyle: 'italic'
     };
 
     return {
-      color: disabled
-        ? theme.color_text_disabled
-        : hasPlaceholder || readOnly
-          ? theme.FauxControl_color_placeholder
-          : theme.FauxControl_color_text,
+      color,
+      WebkitTextFillColor: color, // [1]
       fontSize,
       fontStyle: hasPlaceholder ? 'italic' : null,
-      height: getNormalizedValue(theme[`FauxControl_height_${size}`], fontSize),
       outline: 0,
       paddingLeft:
         ((iconStart || prefix) && !rtl) ||
@@ -311,9 +312,10 @@ function getIcons({
       key: 'iconStart'
     });
 
-  const endIconSource = variant
-    ? variantIcons[variant]
-    : iconEnd ? iconEnd : null;
+  const endIconSource =
+    iconEnd !== null && variant
+      ? variantIcons[variant]
+      : iconEnd ? iconEnd : null;
 
   const endIcon =
     endIconSource &&
