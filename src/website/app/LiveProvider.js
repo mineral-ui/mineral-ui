@@ -26,7 +26,7 @@ const styles = {
     return chromeless
       ? { padding: '1rem' }
       : {
-          backgroundColor,
+          backgroundColor: backgroundColor || theme.color_white,
           border: `1px solid ${rgba(siteColors.slate, 0.3)}`,
           fontFamily: 'comic sans ms',
           padding: theme.space_inset_md,
