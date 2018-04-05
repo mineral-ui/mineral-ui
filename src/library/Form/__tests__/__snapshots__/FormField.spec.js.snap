@@ -150,11 +150,12 @@ exports[`FormField demo examples basic 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -166,6 +167,7 @@ exports[`FormField demo examples basic 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -174,6 +176,7 @@ exports[`FormField demo examples basic 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -182,6 +185,7 @@ exports[`FormField demo examples basic 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -217,6 +221,20 @@ exports[`FormField demo examples basic 1`] = `
 
 .css-30,
 [data-css-30] {
+  align-items: center;
+  cursor: text;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+.css-31,
+[data-css-31] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -225,6 +243,8 @@ exports[`FormField demo examples basic 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  z-index: 1;
   align-items: center;
   cursor: text;
   display: -webkit-box;
@@ -232,108 +252,107 @@ exports[`FormField demo examples basic 1`] = `
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  position: relative;
   width: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
 }
 
-.css-30 *,
-[data-css-30] *,
-.css-30 *::before,
-[data-css-30] *::before,
-.css-30 *::after,
-[data-css-30] *::after {
+.css-31 *,
+[data-css-31] *,
+.css-31 *::before,
+[data-css-31] *::before,
+.css-31 *::after,
+[data-css-31] *::after {
   box-sizing: inherit;
 }
 
-.css-31,
-[data-css-31] {
+.css-31:hover > div:last-child,
+[data-css-31]:hover > div:last-child,
+.css-31[data-simulate-hover] > div:last-child,
+[data-css-31][data-simulate-hover] > div:last-child {
+  border-color: #2e6fd9;
+}
+
+.css-31:focus > div:last-child,
+[data-css-31]:focus > div:last-child,
+.css-31[data-simulate-focus] > div:last-child,
+[data-css-31][data-simulate-focus] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.css-31:active > div:last-child,
+[data-css-31]:active > div:last-child,
+.css-31[data-simulate-active] > div:last-child,
+[data-css-31][data-simulate-active] > div:last-child {
+  border-color: #c8d1e0;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
+}
+
+.css-41,
+[data-css-41] {
   background-color: transparent;
   border: 0;
   box-shadow: none;
-  color: #58606e;
   flex: 1 1 auto;
   font-family: inherit;
-  font-size: 0.875em;
   line-height: 1.5;
   margin: 1px;
   min-height: 2.5580357142857144em;
   min-width: 0;
   outline: 0;
-  padding: 0.6071428571428571em 1.1428571428571428em;
+  padding-bottom: 0.6071428571428571em;
+  padding-top: 0.6071428571428571em;
   resize: vertical;
   width: 100%;
+  color: #58606e;
+  -webkit-text-fill-color: #58606e;
+  font-size: 0.875em;
+  padding-left: 1.1428571428571428em;
+  padding-right: 1.1428571428571428em;
   -webkit-flex: 1 1 auto;
 }
 
-.css-31::placeholder,
-[data-css-31]::placeholder,
-.css-31[data-simulate-placeholder],
-[data-css-31][data-simulate-placeholder] {
+.css-41::placeholder,
+[data-css-41]::placeholder,
+.css-41[data-simulate-placeholder],
+[data-css-41][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-31::-ms-input-placeholder,
-[data-css-31]::-ms-input-placeholder,
-.css-31[data-simulate-msinputplaceholder],
-[data-css-31][data-simulate-msinputplaceholder] {
+.css-41::-ms-input-placeholder,
+[data-css-41]::-ms-input-placeholder,
+.css-41[data-simulate-msinputplaceholder],
+[data-css-41][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-31:-ms-input-placeholder,
-[data-css-31]:-ms-input-placeholder,
-.css-31[data-simulate-msinputplaceholder],
-[data-css-31][data-simulate-msinputplaceholder] {
+.css-41:-ms-input-placeholder,
+[data-css-41]:-ms-input-placeholder,
+.css-41[data-simulate-msinputplaceholder],
+[data-css-41][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-31::-ms-clear,
-[data-css-31]::-ms-clear,
-.css-31[data-simulate-msclear],
-[data-css-31][data-simulate-msclear] {
+.css-41::-ms-clear,
+[data-css-41]::-ms-clear,
+.css-41[data-simulate-msclear],
+[data-css-41][data-simulate-msclear] {
   display: none;
 }
 
-.css-31:hover ~ div,
-[data-css-31]:hover ~ div,
-.css-31[data-simulate-hover] ~ div,
-[data-css-31][data-simulate-hover] ~ div {
-  border-color: #2e6fd9;
-}
-
-.css-31:focus ~ div,
-[data-css-31]:focus ~ div,
-.css-31[data-simulate-focus] ~ div,
-[data-css-31][data-simulate-focus] ~ div {
+.css-41:focus ~ div:last-child,
+[data-css-41]:focus ~ div:last-child,
+.css-41[data-simulate-focus] ~ div:last-child,
+[data-css-41][data-simulate-focus] ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.css-31:active ~ div,
-[data-css-31]:active ~ div,
-.css-31[data-simulate-active] ~ div,
-[data-css-31][data-simulate-active] ~ div {
-  border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #2e6fd9;
-}
-
-.css-31 ~ div,
-[data-css-31] ~ div {
-  background-color: #fff;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
 }
 
 <glamorous(div)>
@@ -468,25 +487,96 @@ exports[`FormField demo examples basic 1`] = `
             <TextArea
               key="formField-3-control"
             >
-              <TextArea>
-                <div
+              <TextArea
+                control={[Function]}
+                controlProps={
+                  Object {
+                    "aria-describedby": undefined,
+                    "aria-invalid": undefined,
+                    "aria-required": undefined,
+                    "autoSize": undefined,
+                    "controlRef": [Function],
+                    "disabled": undefined,
+                    "onInput": [Function],
+                    "readOnly": undefined,
+                    "required": undefined,
+                    "resizeable": true,
+                    "rows": 8,
+                    "size": "large",
+                  }
+                }
+                iconEnd={null}
+                size="large"
+              >
+                <FauxControl
                   className="css-30"
+                  control={[Function]}
+                  controlProps={
+                    Object {
+                      "aria-describedby": undefined,
+                      "aria-invalid": undefined,
+                      "aria-required": undefined,
+                      "autoSize": undefined,
+                      "controlRef": [Function],
+                      "disabled": undefined,
+                      "onInput": [Function],
+                      "readOnly": undefined,
+                      "required": undefined,
+                      "resizeable": true,
+                      "rows": 8,
+                      "size": "large",
+                    }
+                  }
+                  iconEnd={null}
+                  size="large"
                 >
-                  <glamorous(textarea)
-                    innerRef={[Function]}
-                    onInput={[Function]}
-                    resizeable={true}
-                    rows={8}
-                    size="large"
+                  <FauxControl
+                    className="css-30"
+                    control={[Function]}
                   >
-                    <textarea
+                    <div
                       className="css-31"
-                      onInput={[Function]}
-                      rows={8}
-                    />
-                  </glamorous(textarea)>
-                  <div />
-                </div>
+                    >
+                      <glamorous(glamorous(textarea))
+                        controlPropsIn={
+                          Object {
+                            "aria-describedby": undefined,
+                            "aria-invalid": undefined,
+                            "aria-required": undefined,
+                            "autoSize": undefined,
+                            "controlRef": [Function],
+                            "disabled": undefined,
+                            "onInput": [Function],
+                            "readOnly": undefined,
+                            "required": undefined,
+                            "resizeable": true,
+                            "rows": 8,
+                            "size": "large",
+                          }
+                        }
+                        controlRef={[Function]}
+                        iconEnd={null}
+                        innerRef={[Function]}
+                        key="control"
+                        onInput={[Function]}
+                        resizeable={true}
+                        rows={8}
+                        size="large"
+                      >
+                        <textarea
+                          className="css-41"
+                          onInput={[Function]}
+                          rows={8}
+                        />
+                      </glamorous(glamorous(textarea))>
+                      <Underlay>
+                        <div
+                          className="css-29"
+                        />
+                      </Underlay>
+                    </div>
+                  </FauxControl>
+                </FauxControl>
               </TextArea>
             </TextArea>
           </label>
@@ -647,11 +737,12 @@ exports[`FormField demo examples caption 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -663,6 +754,7 @@ exports[`FormField demo examples caption 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -671,6 +763,7 @@ exports[`FormField demo examples caption 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -679,6 +772,7 @@ exports[`FormField demo examples caption 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -989,11 +1083,12 @@ exports[`FormField demo examples hide-label 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -1005,6 +1100,7 @@ exports[`FormField demo examples hide-label 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1013,6 +1109,7 @@ exports[`FormField demo examples hide-label 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1021,6 +1118,7 @@ exports[`FormField demo examples hide-label 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1468,11 +1566,12 @@ exports[`FormField demo examples required 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -1484,6 +1583,7 @@ exports[`FormField demo examples required 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1492,6 +1592,7 @@ exports[`FormField demo examples required 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1500,6 +1601,7 @@ exports[`FormField demo examples required 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1962,11 +2064,12 @@ exports[`FormField demo examples rtl 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
@@ -1978,6 +2081,7 @@ exports[`FormField demo examples rtl 1`] = `
 .css-18[data-simulate-placeholder],
 [data-css-18][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1986,6 +2090,7 @@ exports[`FormField demo examples rtl 1`] = `
 .css-18[data-simulate-msinputplaceholder],
 [data-css-18][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -1994,6 +2099,7 @@ exports[`FormField demo examples rtl 1`] = `
 .css-18[data-simulate-msinputplaceholder],
 [data-css-18][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2330,11 +2436,12 @@ exports[`FormField demo examples secondaryText 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -2346,6 +2453,7 @@ exports[`FormField demo examples secondaryText 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2354,6 +2462,7 @@ exports[`FormField demo examples secondaryText 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2362,6 +2471,7 @@ exports[`FormField demo examples secondaryText 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2667,11 +2777,12 @@ exports[`FormField demo examples validation 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
@@ -2683,6 +2794,7 @@ exports[`FormField demo examples validation 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2691,6 +2803,7 @@ exports[`FormField demo examples validation 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -2699,6 +2812,7 @@ exports[`FormField demo examples validation 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3207,11 +3321,12 @@ exports[`FormField demo examples variants 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
@@ -3223,6 +3338,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-15[data-simulate-placeholder],
 [data-css-15][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3231,6 +3347,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3239,6 +3356,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-15[data-simulate-msinputplaceholder],
 [data-css-15][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3392,11 +3510,12 @@ exports[`FormField demo examples variants 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
@@ -3408,6 +3527,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-45[data-simulate-placeholder],
 [data-css-45][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3416,6 +3536,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-45[data-simulate-msinputplaceholder],
 [data-css-45][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3424,6 +3545,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-45[data-simulate-msinputplaceholder],
 [data-css-45][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3569,11 +3691,12 @@ exports[`FormField demo examples variants 1`] = `
   box-shadow: none;
   flex: 1 1 auto;
   font-family: inherit;
+  height: 2.857142857142857em;
   min-width: 0;
   width: 100%;
   color: #58606e;
+  -webkit-text-fill-color: #58606e;
   font-size: 0.875em;
-  height: 2.857142857142857em;
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
@@ -3585,6 +3708,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-74[data-simulate-placeholder],
 [data-css-74][data-simulate-placeholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3593,6 +3717,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-74[data-simulate-msinputplaceholder],
 [data-css-74][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
@@ -3601,6 +3726,7 @@ exports[`FormField demo examples variants 1`] = `
 .css-74[data-simulate-msinputplaceholder],
 [data-css-74][data-simulate-msinputplaceholder] {
   color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
