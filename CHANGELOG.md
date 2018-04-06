@@ -1,3 +1,8 @@
+<a name="0.26.0"></a>
+# [0.26.0](https://github.com/mineral-ui/mineral-ui/compare/v0.25.0...v0.26.0) (2018-04-06)
+
+
+
 <a name="0.25.0"></a>
 # [0.25.0](https://github.com/mineral-ui/mineral-ui/compare/v0.24.0...v0.25.0) (2018-04-04)
 
