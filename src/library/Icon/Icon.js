@@ -8,7 +8,7 @@ type Props = {
   size?: 'small' | 'medium' | 'large' | string,
   /** SVG content, required for the generic Icon component */
   children?: React$Node,
-  /** Fill color, defaults to theme.color_gray_60 */
+  /** Fill color */
   color?: string,
   /** Flip the Icon horizontally when used with RTL languages */
   rtl?: boolean,
@@ -17,7 +17,7 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  Icon_fill: baseTheme.color_gray_60,
+  Icon_fill: 'currentcolor',
   Icon_size_small: pxToEm(12),
   Icon_size_medium: pxToEm(16),
   Icon_size_large: pxToEm(20),
@@ -28,7 +28,8 @@ const iconStyles = ({ color, rtl, size, theme: baseTheme }) => {
   let theme = componentTheme(baseTheme);
 
   return {
-    fill: color || theme.Icon_fill,
+    color,
+    fill: theme.Icon_fill,
     fontSize: theme.fontSize_base,
     height: theme[`Icon_size_${size}`] || size,
     transform: theme.direction === 'rtl' && rtl && 'scaleX(-1)',
