@@ -14,9 +14,9 @@ type Props = {
 export const componentTheme = (baseTheme: Object) => ({
   FormFieldset_borderColor: baseTheme.borderColor,
 
-  FormFieldsetLegend_color_text: baseTheme.color_h5,
-  FormFieldsetLegend_fontSize: baseTheme.fontSize_h5,
-  FormFieldsetLegend_fontWeight: baseTheme.fontWeight_h5,
+  FormFieldsetLegend_color: baseTheme.h5_color,
+  FormFieldsetLegend_fontSize: baseTheme.h5_fontSize,
+  FormFieldsetLegend_fontWeight: baseTheme.h5_fontWeight,
 
   ...baseTheme
 });
@@ -32,9 +32,7 @@ const Root = createStyledComponent(
       padding: 0,
 
       '& > legend': {
-        color: disabled
-          ? theme.color_text_disabled
-          : theme.FormFieldsetLegend_color_text,
+        color: disabled ? theme.color_disabled : theme.FormFieldsetLegend_color,
         fontSize: theme.FormFieldsetLegend_fontSize,
         fontWeight: theme.FormFieldsetLegend_fontWeight,
         lineHeight: theme.size_medium,
