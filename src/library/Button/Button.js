@@ -32,25 +32,25 @@ type Props = {
   variant?: 'regular' | 'danger' | 'success' | 'warning'
 };
 
+// prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
   Button_backgroundColor: baseTheme.color_gray_20,
   Button_backgroundColor_active: baseTheme.color_gray_30,
   Button_backgroundColor_focus: baseTheme.color_gray_20,
-  Button_backgroundColor_hover: baseTheme.color_gray_10,
-  Button_backgroundColor_minimal_active: baseTheme.color_gray_20,
-  Button_backgroundColor_minimal_hover: baseTheme.color_gray_10,
-  Button_backgroundColor_primary: baseTheme.color_theme_60,
-  Button_backgroundColor_primary_active: baseTheme.color_theme_70,
-  Button_backgroundColor_primary_focus: baseTheme.color_theme_60,
-  Button_backgroundColor_primary_hover: baseTheme.color_theme_50,
+  Button_backgroundColor_hover: baseTheme.backgroundColor_hover,
+  Button_backgroundColor_minimal_active: baseTheme.backgroundColor_active,
+  Button_backgroundColor_minimal_hover: baseTheme.backgroundColor_hover,
+  Button_backgroundColor_primary: baseTheme.backgroundColor_themePrimary,
+  Button_backgroundColor_primary_active: baseTheme.backgroundColor_themePrimary_active,
+  Button_backgroundColor_primary_focus: baseTheme.backgroundColor_themePrimary_focus,
+  Button_backgroundColor_primary_hover: baseTheme.backgroundColor_themePrimary_hover,
   Button_borderColor: baseTheme.borderColor,
-  Button_borderColor_focus: baseTheme.color_white,
   Button_borderRadius: baseTheme.borderRadius_1,
   Button_borderWidth: 1, // px
-  Button_boxShadow_focus: `0 0 0 1px ${baseTheme.borderColor_focus}`,
-  Button_color_text: baseTheme.color_gray_100,
-  Button_color_text_minimal: baseTheme.color_text_primary,
-  Button_color_text_primary: baseTheme.color_text_onprimary,
+  Button_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_focus}`,
+  Button_color: baseTheme.color,
+  Button_color_minimal: baseTheme.color_theme,
+  Button_color_primary: baseTheme.color_primary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
   Button_paddingHorizontal: baseTheme.space_inset_sm,
   Button_paddingIconOnly_small: pxToEm(3),
@@ -65,6 +65,7 @@ export const componentTheme = (baseTheme: Object) => ({
   ButtonContent_fontSize: baseTheme.fontSize_ui,
   ButtonContent_fontSize_small: pxToEm(12),
 
+  ButtonIcon_color: baseTheme.icon_color_theme,
   ButtonIcon_margin: baseTheme.space_inset_sm,
 
   ...baseTheme
@@ -72,13 +73,13 @@ export const componentTheme = (baseTheme: Object) => ({
 
 function chooseColor({ disabled, primary, minimal }: Props, theme) {
   if (disabled) {
-    return theme.color_text_disabled;
+    return theme.color_disabled;
   } else if (primary) {
-    return theme.Button_color_text_primary;
+    return theme.Button_color_primary;
   } else if (minimal) {
-    return theme.Button_color_text_minimal;
+    return theme.Button_color_minimal;
   } else {
-    return theme.Button_color_text;
+    return theme.Button_color;
   }
 }
 
@@ -100,14 +101,14 @@ const styles = {
       // prettier-ignore
       theme = {
         ...theme,
-        Button_backgroundColor_primary: theme[`backgroundColor_${variant}`],
-        Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}_active`],
-        Button_backgroundColor_primary_focus: theme[`backgroundColor_${variant}_focus`],
-        Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}_hover`],
-        Button_boxShadow_focus: `0 0 0 1px ${theme[`borderColor_${variant}_focus`]}`,
-        Button_color_text: theme[`color_text_${variant}`],
-        Button_color_text_minimal: theme[`color_text_${variant}`],
-        Button_color_text_primary: theme[`color_text_on${variant}`]
+        Button_backgroundColor_primary: theme[`backgroundColor_${variant}Primary`],
+        Button_backgroundColor_primary_active: theme[`backgroundColor_${variant}Primary_active`],
+        Button_backgroundColor_primary_focus: theme[`backgroundColor_${variant}Primary_focus`],
+        Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}Primary_hover`],
+        Button_boxShadow_focus: `0 0 0 1px ${theme.boxShadow_focusInner}, 0 0 0 2px ${theme[`borderColor_${variant}_focus`]}`,
+        Button_color: theme[`color_${variant}`],
+        Button_color_minimal: theme[`color_${variant}`],
+        ButtonIcon_color: theme[`icon_color_${variant}`]
       };
     }
 
@@ -115,7 +116,7 @@ const styles = {
     return {
       backgroundColor: (() => {
         if (disabled && !minimal) {
-          return theme.color_gray_30;
+          return theme.backgroundColor_disabled;
         } else if (primary) {
           return theme.Button_backgroundColor_primary;
         } else if (minimal) {
@@ -159,7 +160,6 @@ const styles = {
             return theme.Button_backgroundColor_focus;
           }
         })(),
-        borderColor: theme.Button_borderColor_focus,
         boxShadow: theme.Button_boxShadow_focus,
         color,
         textDecoration: 'none'
@@ -199,10 +199,7 @@ const styles = {
 
       '& [role="img"]': {
         boxSizing: 'content-box',
-        fill:
-          disabled || primary || minimal || variant !== 'regular'
-            ? 'currentColor'
-            : theme.Button_backgroundColor_primary,
+        color: disabled || primary ? null : theme.ButtonIcon_color,
         display: 'block',
 
         '&:first-child': {
