@@ -37,13 +37,13 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  Text_color: baseTheme.color_text,
-  Text_color_h1: baseTheme.color_h1,
-  Text_color_h2: baseTheme.color_h2,
-  Text_color_h3: baseTheme.color_h3,
-  Text_color_h4: baseTheme.color_h4,
-  Text_color_h5: baseTheme.color_h5,
-  Text_color_h6: baseTheme.color_h6,
+  Text_color: baseTheme.color,
+  Text_color_h1: baseTheme.h1_color,
+  Text_color_h2: baseTheme.h2_color,
+  Text_color_h3: baseTheme.h3_color,
+  Text_color_h4: baseTheme.h4_color,
+  Text_color_h5: baseTheme.h5_color,
+  Text_color_h6: baseTheme.h6_color,
   Text_color_mouse: baseTheme.color_mouse,
   Text_fontSize: baseTheme.fontSize_ui,
   Text_fontSize_h1: baseTheme.fontSize_h1,

@@ -37,22 +37,20 @@ type Props = {
   variant?: 'success' | 'warning' | 'danger'
 };
 
+// prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
-  FauxControl_backgroundColor: baseTheme.backgroundColor_input,
+  FauxControl_backgroundColor: baseTheme.input_backgroundColor,
   FauxControl_borderColor: baseTheme.borderColor,
   FauxControl_borderColor_active: baseTheme.borderColor,
   FauxControl_borderColor_focus: baseTheme.borderColor,
-  FauxControl_borderColor_hover: baseTheme.borderColor_hover,
+  FauxControl_borderColor_hover: baseTheme.borderColor_theme_hover,
   FauxControl_borderRadius: baseTheme.borderRadius_1,
   FauxControl_borderWidth: '1px',
-  FauxControl_boxShadow_active: `0 0 0 1px ${
-    baseTheme.color_white
-  }, 0 0 0 2px ${baseTheme.borderColor_active}`,
-  FauxControl_boxShadow_focus: `0 0 0 1px ${baseTheme.color_white}, 0 0 0 2px ${
-    baseTheme.borderColor_focus
-  }`,
-  FauxControl_color_placeholder: baseTheme.color_gray_60,
-  FauxControl_color_text: baseTheme.color_gray_80,
+  FauxControl_boxShadow_active: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_active}`,
+  FauxControl_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_focus}`,
+  FauxControl_color: baseTheme.color,
+  FauxControl_color_placeholder: baseTheme.placeholder_color,
+  FauxControl_color_readOnly: baseTheme.color_readOnly,
   FauxControl_fontSize: baseTheme.fontSize_ui,
   FauxControl_fontSize_small: pxToEm(12),
   FauxControl_paddingHorizontal: baseTheme.space_inset_md,
@@ -109,7 +107,7 @@ const styles = {
       // prettier-ignore
       theme = {
         ...theme,
-        FauxControl_boxShadow_focus: `0 0 0 1px ${theme.color_white}, 0 0 0 2px ${theme[`borderColor_${variant}`]}`,
+        FauxControl_boxShadow_focus: `0 0 0 1px ${theme.boxShadow_focusInner}, 0 0 0 2px ${theme[`borderColor_${variant}_focus`]}`,
       };
     }
 
@@ -117,16 +115,11 @@ const styles = {
       // prettier-ignore
       theme = {
         ...theme,
-        FauxControl_color_text: theme[`color_text_${controlPropsIn.variant}`]
+        FauxControl_color: theme[`color_${controlPropsIn.variant}`]
       };
     }
 
     const rtl = theme.direction === 'rtl';
-    const color = disabled
-      ? theme.color_text_disabled
-      : hasPlaceholder || readOnly
-        ? theme.FauxControl_color_placeholder
-        : theme.FauxControl_color_text;
     const fontSize =
       size === 'small'
         ? theme.FauxControl_fontSize_small
@@ -140,6 +133,15 @@ const styles = {
       sizeAppropriateHorizontalPadding,
       fontSize
     );
+
+    let color = theme.FauxControl_color;
+    if (disabled) {
+      color = theme.color_disabled;
+    } else if (hasPlaceholder) {
+      color = theme.FauxControl_color_placeholder;
+    } else if (readOnly) {
+      color = theme.FauxControl_color_readOnly;
+    }
 
     // [1] - Safari and many Android browsers need this to apply the correct
     //       color to disabled controls
@@ -190,8 +192,8 @@ const styles = {
       theme = {
         ...theme,
         FauxControl_borderColor_hover: theme[`borderColor_${variant}_hover`],
-        FauxControl_boxShadow_active: `0 0 0 1px ${theme.color_white}, 0 0 0 2px ${theme[`borderColor_${variant}`]}`,
-        FauxControl_boxShadow_focus: `0 0 0 1px ${theme.color_white}, 0 0 0 2px ${theme[`borderColor_${variant}`]}`,
+        FauxControl_boxShadow_active: `0 0 0 1px ${theme.boxShadow_focusInner}, 0 0 0 2px ${theme[`borderColor_${variant}_active`]}`,
+        FauxControl_boxShadow_focus: `0 0 0 1px ${theme.boxShadow_focusInner}, 0 0 0 2px ${theme[`borderColor_${variant}_focus`]}`,
       };
     }
 
@@ -256,7 +258,7 @@ const styles = {
     return {
       backgroundColor:
         disabled || readOnly
-          ? theme.backgroundColor_disabled
+          ? theme.input_backgroundColor_disabled
           : theme.FauxControl_backgroundColor,
       borderColor:
         variant && !disabled && !readOnly

@@ -72,7 +72,7 @@ export const componentTheme = (baseTheme: Object) => ({
         TextInput_height_large: baseTheme.size_large,
         TextInput_height_jumbo: baseTheme.size_jumbo,
 
-        TextInputIcon_fill: baseTheme.color_gray_40
+        TextInputIcon_color: baseTheme.color_gray_40
       }
     },
     baseTheme
@@ -100,7 +100,14 @@ const styles = {
     };
   },
   root: ({ theme: baseTheme, variant }) => {
-    const theme = componentTheme(baseTheme);
+    let theme = componentTheme(baseTheme);
+
+    if (variant) {
+      theme = {
+        ...theme,
+        TextInputIcon_color: theme[`icon_color_${variant}`]
+      };
+    }
 
     return {
       alignItems: 'center',
@@ -109,15 +116,13 @@ const styles = {
       width: '100%',
 
       '& [role="img"]': {
+        color: theme.TextInputIcon_color,
         display: 'block',
-        fill: theme.TextInputIcon_fill,
         flex: '0 0 auto',
         margin: `0 ${theme.TextInputIcon_marginHorizontal}`,
 
         '&:last-of-type': {
-          fill: variant
-            ? theme[`color_text_${variant}`]
-            : theme.TextInputIcon_fill
+          color: theme.TextInputIcon_color
         }
       }
     };

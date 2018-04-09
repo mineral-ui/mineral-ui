@@ -82,9 +82,10 @@ export const componentTheme = (baseTheme: Object) => {
           TooltipArrow_backgroundColor: baseTheme.color_gray_90,
           TooltipArrow_borderColor: baseTheme.color_gray_90,
 
-          TooltipContent_backgroundColor: baseTheme.color_gray_90,
-          TooltipContent_borderColor: baseTheme.color_gray_90,
-          TooltipContent_color: baseTheme.color_white,
+          TooltipContent_backgroundColor:
+            baseTheme.panel_backgroundColor_inverted,
+          TooltipContent_borderColor: baseTheme.panel_borderColor_inverted,
+          TooltipContent_color: baseTheme.color_inverted,
           TooltipContent_maxWidth: '18em',
 
           TooltipContentBlock_marginVertical: '0',
