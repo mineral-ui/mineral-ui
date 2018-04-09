@@ -1,28 +1,12 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
-import { getColor, getReadableTextColor } from '../colors';
 import { createStyledComponent, pxToEm } from '../styles';
 
 type Props = {
   /** When `children` is a string, this will be the rendered text */
   abbr?: string,
   /** Background color */
-  background?:
-    | 'blue'
-    | 'dusk'
-    | 'gray'
-    | 'green'
-    | 'indigo'
-    | 'lime'
-    | 'magenta'
-    | 'orange'
-    | 'purple'
-    | 'red'
-    | 'sky'
-    | 'slate'
-    | 'teal'
-    | 'yellow'
-    | string,
+  background?: string,
   /**
    * `img` (with an `alt` attribute), [Icon](/components/icon) (with a `title`), or a
    * string
@@ -46,8 +30,8 @@ const iconSize = {
 export const componentTheme = (baseTheme: Object) => ({
   Avatar_fontSize_small: baseTheme.fontSize_mouse,
   Avatar_fontSize_medium: baseTheme.fontSize_ui,
-  Avatar_fontSize_large: baseTheme.fontSize_h4,
-  Avatar_fontSize_jumbo: baseTheme.fontSize_h4,
+  Avatar_fontSize_large: baseTheme.h4_fontSize,
+  Avatar_fontSize_jumbo: baseTheme.h4_fontSize,
   Avatar_fontWeight: baseTheme.fontWeight_bold,
   Avatar_size_small: baseTheme.size_small,
   Avatar_size_medium: baseTheme.size_medium,
@@ -70,24 +54,12 @@ const Root = createStyledComponent(
   }) => {
     const theme = componentTheme(baseTheme);
 
-    const color =
-      propColor ||
-      (background
-        ? getReadableTextColor(background, 60)
-        : theme.color_text_onprimary);
+    const color = propColor || theme.color_primary;
     const size = theme[`Avatar_size_${propSize}`];
 
     return {
       alignItems: 'center',
-      backgroundColor: (() => {
-        if (noBackground) {
-          return null;
-        } else if (background) {
-          return getColor(background, 60) || background;
-        } else {
-          return theme.color_theme_60;
-        }
-      })(),
+      backgroundColor: noBackground ? null : background || theme.color_theme_60,
       color,
       borderRadius:
         shape === 'square'
@@ -116,7 +88,7 @@ const Root = createStyledComponent(
       },
 
       '& > [role="img"]': {
-        fill: color
+        color
       }
     };
   },
