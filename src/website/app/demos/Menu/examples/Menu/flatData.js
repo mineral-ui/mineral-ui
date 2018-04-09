@@ -8,7 +8,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'data',
   title: 'Flat Data',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menu content can also be defined by an array of data, with the
 structure shown in the code example below. Object properties will be passed on

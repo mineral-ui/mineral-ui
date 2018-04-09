@@ -7,7 +7,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'expandable',
   title: 'Expandable Footer',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Set \`expandable\` to true to allow the user to expand/collapse
 CardFooter. Note that a \`title\` must be provided to expandable CardFooters.`,

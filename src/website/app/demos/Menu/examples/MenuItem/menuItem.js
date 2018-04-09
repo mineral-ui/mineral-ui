@@ -6,7 +6,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `
 MenuItems are used to trigger an action or navigate to a new location.

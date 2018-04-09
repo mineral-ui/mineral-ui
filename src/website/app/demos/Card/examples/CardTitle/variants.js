@@ -7,7 +7,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'variants',
   title: 'Variants',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardTitle is available in a few variants. Be sure to use the
 [appropriate variant](/color#guidelines-variants) for your intent.`,

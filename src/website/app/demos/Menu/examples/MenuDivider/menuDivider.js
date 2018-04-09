@@ -10,7 +10,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'separating-items',
   title: 'Separating MenuItems',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `[MenuItems](/components/menu-item) and [MenuGroups](/components/menu-group) can be separated with a MenuDivider.
 MenuDividers are used to create hierarchy by setting some options apart from others.`,

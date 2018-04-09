@@ -7,7 +7,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'titles',
   title: 'Displaying Titles',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: 'In addition to a title, a Card can display a subtitle.',
   scope: { Card, CardBlock, CardTitle, loremIpsum, DemoLayout },

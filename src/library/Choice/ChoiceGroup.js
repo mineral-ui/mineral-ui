@@ -139,7 +139,6 @@ export default function ChoiceGroup({
   if (data && input) {
     inputs = data.map((inputData, index) => {
       return createElement(
-        // $FlowFixMe
         input,
         inputProps(inputData.value, index, inputData)
       );

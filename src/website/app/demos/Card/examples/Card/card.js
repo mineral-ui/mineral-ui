@@ -12,7 +12,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Card content should be neither too simple nor too complex. Cards
 are used as a gateway to more detailed content, not merely as a widget container.

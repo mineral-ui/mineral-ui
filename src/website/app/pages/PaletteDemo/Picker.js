@@ -250,7 +250,6 @@ export default class Picker extends Component<Props, State> {
               return (
                 <Flip
                   activeColor={activeColor}
-                  /* $FlowFixMe colorName is a string, but should be Colors */
                   colorName={colorName}
                   handleColorChange={this.handleColorChange}
                   in={index < visibleThemeCount}

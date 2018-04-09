@@ -7,7 +7,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'states',
   title: 'States',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   hideFromProd: true,
   hideSource: true,

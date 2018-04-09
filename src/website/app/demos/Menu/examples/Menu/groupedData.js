@@ -8,7 +8,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'grouped-data',
   title: 'Grouped Data',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Menu items can be grouped by using the structure shown in the
 code example below. Object properties in the \`items\` array(s) will be passed

@@ -9,7 +9,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Use CardActions to add actions, [Buttons](/components/button) or
 [Links](/components/link), to your [Card](/components/card). Buttons will automatically size

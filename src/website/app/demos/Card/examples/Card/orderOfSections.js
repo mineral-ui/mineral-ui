@@ -21,7 +21,6 @@ const DemoLayout = createStyledComponent(_DemoLayout, {
 export default {
   id: 'order',
   title: 'Order of Sections',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `There is no "one true way" to lay out children in Card; it is
 flexible enough to accept different component arrangements. The one exception is

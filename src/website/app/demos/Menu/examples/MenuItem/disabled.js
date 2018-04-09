@@ -6,7 +6,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'disabled',
   title: 'Disabled',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `MenuItems can be disabled.
 Render a disabled MenuItem to let your user know that the option is available under the right conditions.

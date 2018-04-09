@@ -12,7 +12,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardFooter is used to add an extension to a Card. It can
 contain any children, but is best used with [CardActions](/components/card-actions) and

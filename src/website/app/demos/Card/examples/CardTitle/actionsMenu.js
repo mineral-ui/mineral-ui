@@ -11,7 +11,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'actions-menu',
   title: 'With an Actions Menu',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `To display a menu of actions in CardTitle, pass a CardTitleMenu
 or [Dropdown](/components/dropdown) to the \`actions\` prop.

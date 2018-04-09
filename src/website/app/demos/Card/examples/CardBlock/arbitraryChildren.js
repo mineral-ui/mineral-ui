@@ -20,7 +20,6 @@ const customContent = (
 export default {
   id: 'children',
   title: 'Arbitrary Children',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `A CardBlock will render any children.`,
   scope: { Button, Card, CardBlock, CardTitle, customContent, DemoLayout },

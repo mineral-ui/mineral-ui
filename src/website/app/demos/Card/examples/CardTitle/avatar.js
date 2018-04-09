@@ -8,7 +8,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'avatar',
   title: 'With an Avatar',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `To help communicate ownership or categorization of a Card, add
 an \`avatar\` to CardTitle. The [Avatar](/components/avatar) will automatically size

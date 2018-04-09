@@ -11,7 +11,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardStatus conveys the current status of [Card](/components/card). It is
 available in a few variants.`,
