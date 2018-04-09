@@ -40,19 +40,19 @@ const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 // [1] This deviates from h6 because it must look right when used both within
 //     and without a FormFieldset
 export const componentTheme = (baseTheme: Object) => ({
-  FormFieldCaption_color_text: baseTheme.color_mouse,
+  FormFieldCaption_color: baseTheme.color_mouse,
   FormFieldCaption_fontSize: baseTheme.fontSize_mouse,
   FormFieldCaption_marginTop: baseTheme.space_stack_xxs,
   FormFieldCaption_marginTop_isGroup: baseTheme.space_stack_sm,
 
-  FormFieldLabel_color_text: baseTheme.color_h6,
-  FormFieldLabel_fontSize: baseTheme.fontSize_h6,
+  FormFieldLabel_color: baseTheme.h6_color,
+  FormFieldLabel_fontSize: baseTheme.h6_fontSize,
   FormFieldLabel_fontWeight: baseTheme.fontWeight_semiBold, // [1]
   FormFieldLabel_marginBottom: baseTheme.space_stack_sm,
 
   FormFieldSecondaryText_fontSize: baseTheme.fontSize_mouse,
-  FormFieldSecondaryText_color_text: baseTheme.color_mouse,
-  FormFieldSecondaryText_color_text_required: baseTheme.color_text_danger,
+  FormFieldSecondaryText_color: baseTheme.color_mouse,
+  FormFieldSecondaryText_color_required: baseTheme.color_required,
   FormFieldSecondaryText_fontWeight: baseTheme.fontWeight_regular,
 
   ...baseTheme
@@ -65,14 +65,14 @@ const styles = {
       // prettier-ignore
       theme = {
         ...theme,
-        FormFieldCaption_color_text: baseTheme[`color_text_${variant}`]
+        FormFieldCaption_color: baseTheme[`color_${variant}`]
       };
     }
 
     const fontSize = theme.FormFieldCaption_fontSize;
 
     return {
-      color: theme.FormFieldCaption_color_text,
+      color: theme.FormFieldCaption_color,
       fontSize,
       marginTop: isGroup
         ? getNormalizedValue(theme.FormFieldCaption_marginTop_isGroup, fontSize)
@@ -83,7 +83,7 @@ const styles = {
     const theme = componentTheme(baseTheme);
 
     return {
-      color: theme.FormFieldLabel_color_text,
+      color: theme.FormFieldLabel_color,
       display: 'flex',
       fontSize: theme.FormFieldLabel_fontSize,
       fontWeight: theme.FormFieldLabel_fontWeight,
@@ -101,8 +101,8 @@ const styles = {
 
     return {
       color: secondaryText
-        ? theme.FormFieldSecondaryText_color_text
-        : theme.FormFieldSecondaryText_color_text_required,
+        ? theme.FormFieldSecondaryText_color
+        : theme.FormFieldSecondaryText_color_required,
       fontSize: theme.FormFieldSecondaryText_fontSize,
       fontWeight: theme.FormFieldSecondaryText_fontWeight
     };
