@@ -50,7 +50,7 @@ export const componentTheme = (baseTheme: Object) => ({
         Select_height_large: baseTheme.size_large,
         Select_height_jumbo: baseTheme.size_jumbo,
 
-        SelectIcon_fill: baseTheme.color_theme_60
+        SelectIcon_color: baseTheme.icon_color_theme
       }
     },
     baseTheme
@@ -75,36 +75,36 @@ const styles = {
 
       '& [role="img"]': {
         display: 'block',
-        fill: theme.SelectIcon_fill,
+        color: theme.SelectIcon_color,
         flex: '0 0 auto',
 
         '&:first-child': {
-          fill:
+          color:
             disabled || readOnly
-              ? theme.color_text_disabled
+              ? theme.color_disabled
               : selectedItemVariant
-                ? theme[`color_text_${selectedItemVariant}`]
-                : theme.SelectIcon_fill,
+                ? theme[`color_${selectedItemVariant}`]
+                : theme.SelectIcon_color,
           margin: `0 ${theme.SelectIcon_marginHorizontal}`
         }
       },
 
       '& :not([role="img"]) ~ [role="img"]': {
-        fill:
+        color:
           disabled || readOnly
-            ? theme.color_text_disabled
-            : variant ? theme[`color_text_${variant}`] : theme.SelectIcon_fill
+            ? theme.color_disabled
+            : variant ? theme[`icon_color_${variant}`] : theme.SelectIcon_color
       },
 
       '& :not([role="img"]) + [role="img"]:not(:last-of-type)': {
-        fill:
+        color:
           disabled || readOnly
-            ? theme.color_text_disabled
+            ? theme.color_disabled
             : variant
-              ? theme[`color_text_${variant}`]
+              ? theme[`color_${variant}`]
               : selectedItemVariant
-                ? theme[`color_text_${selectedItemVariant}`]
-                : theme.SelectIcon_fill,
+                ? theme[`color_${selectedItemVariant}`]
+                : theme.SelectIcon_color,
         marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
         marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
       }
