@@ -11,7 +11,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'custom-render',
   title: 'Custom Rendering',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `MenuItem can use a custom function for its rendering. This
 allows you to render any item data you might need (like an avatar, below). To

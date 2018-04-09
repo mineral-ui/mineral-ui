@@ -7,7 +7,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'rtl',
   title: 'Bidirectionality',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `MenuItems with Icons are reversed when the \`direction\` theme variable is set to \`rtl\` (right-to-left).
 A subset of Icons that [convey directionality](/components/icon#rtl) will be reversed.`,

@@ -87,7 +87,6 @@ export default function Router({ demoRoutes }: Props) {
         path="/components/:componentId/:exampleId"
         render={(route) => {
           const { componentId, exampleId } = route.match.params;
-          // $FlowFixMe
           const selectedDemo = keyedDemoRoutes[componentId || firstDemoSlug];
           const chromeless = route.location.search === '?chromeless';
           const pageProps = {
@@ -143,7 +142,6 @@ export default function Router({ demoRoutes }: Props) {
             return <Redirect to={`/components/${firstDemoSlug}`} />;
           }
 
-          // $FlowFixMe
           const selectedDemo = keyedDemoRoutes[componentId];
 
           if (selectedDemo.redirect) {

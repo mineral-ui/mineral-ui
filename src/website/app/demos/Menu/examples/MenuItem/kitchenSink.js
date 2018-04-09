@@ -19,7 +19,6 @@ export default {
   id: 'kitchen-sink',
   description: `MenuItems are flexible enough to accommodate many different use cases.`,
   title: 'Kitchen Sink',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   hideFromProd: true,
   scope: { DemoLayout, IconCloud, Menu, MenuItem },

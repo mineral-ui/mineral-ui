@@ -7,7 +7,6 @@ import loremIpsum from '../../components/loremIpsumRtl';
 export default {
   id: 'rtl',
   title: 'Bidirectionality',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardStatus reverses its alignment when the \`direction\` theme
 variable is set to \`rtl\` (right-to-left).`,

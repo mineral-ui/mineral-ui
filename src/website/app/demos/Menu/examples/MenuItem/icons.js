@@ -7,7 +7,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'icons',
   title: 'Menu Items with Icons',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `A MenuItem can display an [Icon](/components/icon) at its start, end, or both.
 If both \`startIcon\` and \`variant\` props are provided, \`startIcon\` will be used.`,

@@ -29,7 +29,6 @@ const CardBlock = createStyledComponent(_CardBlock, ({ theme }) => ({
 export default {
   id: 'consistent-spacing',
   title: 'Provide Consistent Spacing',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `CardBlock provides uniform spacing (highlighted here in light
 blue), relative to the other Card components, around its content.`,

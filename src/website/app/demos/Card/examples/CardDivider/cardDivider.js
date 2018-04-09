@@ -11,7 +11,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'basic',
   title: 'Basic Usage',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Use CardDivider to separate sections of your [Card](/components/card).`,
   scope: { Card, CardBlock, CardDivider, CardTitle, loremIpsum, DemoLayout },

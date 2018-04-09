@@ -11,7 +11,6 @@ const Link = (props: {}) => <_Link target="_blank" {...props} />;
 export default {
   id: 'with-links',
   title: 'With Links',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `Place [Links](/components/links) in CardActions when your Card needs to
 point the users to another location.`,

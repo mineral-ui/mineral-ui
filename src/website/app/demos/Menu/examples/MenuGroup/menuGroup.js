@@ -6,7 +6,6 @@ import DemoLayout from '../../components/DemoLayout';
 export default {
   id: 'menu-group',
   title: 'Grouping MenuItems',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `To group [MenuItems](/components/menu-item) together, wrap them in a MenuGroup.
 Optionally, provide a title to provide context if the grouping is large or not immediately obvious.

@@ -7,7 +7,6 @@ import loremIpsum from '../../components/loremIpsum';
 export default {
   id: 'clickable',
   title: 'Clickable',
-  // $FlowFixMe
   backgroundColor: mineralTheme.color_gray_10,
   description: `If an \`onClick\` callback is provided, the entire Card becomes clickable and keyboard actionable.
 Use this feature when only one action can be taken per Card.
