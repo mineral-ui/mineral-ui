@@ -35,14 +35,15 @@ type Props = {
 
 // Some of these values (all of the margins & paddings and the content fontSize)
 // come from Button (large)
+// prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
-  MenuItem_backgroundColor_active: baseTheme.color_gray_20,
-  MenuItem_backgroundColor_focus: baseTheme.color_gray_10,
-  MenuItem_backgroundColor_hover: baseTheme.color_gray_10,
-  MenuItem_backgroundColor_selected: baseTheme.color_theme_10,
-  MenuItem_backgroundColor_selectedActive: baseTheme.color_theme_30,
-  MenuItem_backgroundColor_selectedHover: baseTheme.color_theme_20,
-  MenuItem_color_text: baseTheme.color_text,
+  MenuItem_backgroundColor_active: baseTheme.backgroundColor_active,
+  MenuItem_backgroundColor_focus: baseTheme.backgroundColor_focus,
+  MenuItem_backgroundColor_hover: baseTheme.backgroundColor_hover,
+  MenuItem_backgroundColor_selected: baseTheme.backgroundColor_theme_selected,
+  MenuItem_backgroundColor_selectedActive: baseTheme.backgroundColor_theme_selectedActive,
+  MenuItem_backgroundColor_selectedHover: baseTheme.backgroundColor_theme_selectedHover,
+  MenuItem_color: baseTheme.color,
   MenuItem_fontWeight: baseTheme.fontWeight_regular,
   MenuItem_fontWeight_selected: baseTheme.fontWeight_bold,
   MenuItem_paddingHorizontal: baseTheme.space_inset_md,
@@ -50,10 +51,10 @@ export const componentTheme = (baseTheme: Object) => ({
 
   MenuItemContent_fontSize: baseTheme.fontSize_ui,
 
-  MenuItemIcon_fill: baseTheme.color_theme_60,
+  MenuItemIcon_color: baseTheme.icon_color_theme,
   MenuItemIcon_margin: baseTheme.space_inset_sm,
 
-  MenuItemSecondaryText_color_text: baseTheme.color_mouse,
+  MenuItemSecondaryText_color: baseTheme.color_mouse,
   MenuItemSecondaryText_fontSize: baseTheme.fontSize_mouse,
 
   ...baseTheme
@@ -81,14 +82,16 @@ const styles = {
       // prettier-ignore
       theme = {
         ...theme,
-        MenuItem_backgroundColor_active: theme[`backgroundColor_${variant}_activeMuted`],
-        MenuItem_color_text: theme[`color_text_${variant}`]
+        MenuItem_backgroundColor_active: theme[`backgroundColor_${variant}_active`],
+        MenuItem_backgroundColor_hover: theme[`backgroundColor_${variant}_hover`],
+        MenuItem_color: theme[`color_${variant}`],
+        MenuItemIcon_color: theme[`icon_color_${variant}`]
       };
     }
 
     return {
       backgroundColor: isHighlighted && theme.MenuItem_backgroundColor_hover,
-      color: disabled ? theme.color_text_disabled : theme.MenuItem_color_text,
+      color: disabled ? theme.color_disabled : theme.MenuItem_color,
       cursor: disabled ? 'default' : 'pointer',
       fontWeight: theme.MenuItem_fontWeight,
       padding: `${theme.MenuItem_paddingVertical} ${
@@ -108,7 +111,7 @@ const styles = {
         backgroundColor: !disabled && theme.MenuItem_backgroundColor_active
       },
 
-      '[aria-selected="true"]': {
+      '&[aria-selected="true"]': {
         backgroundColor: isHighlighted
           ? theme.MenuItem_backgroundColor_selectedHover
           : theme.MenuItem_backgroundColor_selected,
@@ -122,8 +125,8 @@ const styles = {
 
       '& [role="img"]': {
         boxSizing: 'content-box',
+        color: disabled ? null : theme.MenuItemIcon_color,
         display: 'block',
-        fill: disabled || variant ? 'currentColor' : theme.MenuItemIcon_fill,
         flex: '0 0 auto',
 
         '&:first-child': {
@@ -148,7 +151,7 @@ const styles = {
     const fontSize = theme.MenuItemSecondaryText_fontSize;
 
     return {
-      color: theme.MenuItemSecondaryText_color_text,
+      color: theme.MenuItemSecondaryText_color,
       fontSize,
       // The regular text fontSize is larger than that of the secondary text.
       // This magic number (optically) re-aligns both sets of text vertically.
