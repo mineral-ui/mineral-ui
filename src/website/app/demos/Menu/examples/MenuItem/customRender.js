@@ -63,7 +63,7 @@ might be a helpful template. Some things to keep in mind:
           }
         );
         const Work = createStyledComponent('span', {
-          color: theme.color_text_caption,
+          color: theme.color_mouse,
           display: 'block',
           fontSize: theme.fontSize_mouse,
           marginTop: theme.space_stack_xs

@@ -1,6 +1,5 @@
 /* @flow */
 import React, { Component } from 'react';
-import { readableColor } from 'polished';
 import { Transition } from 'react-transition-group';
 import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../../../../library/styles';
@@ -11,7 +10,7 @@ import Paragraph from '../../Paragraph';
 
 type Props = {
   activeColor: Colors,
-  availableThemes: { [Colors]: string },
+  availableThemes: Array<Colors>,
   changeTheme: (Colors) => void
 };
 
@@ -24,8 +23,7 @@ type FlipProps = {
   activeColor: Colors,
   colorName: Colors,
   handleColorChange: (Colors) => void,
-  in: boolean,
-  readable: string
+  in: boolean
 };
 
 type GrowProps = {
@@ -37,7 +35,7 @@ type Colors =
   | 'blue'
   | 'dusk'
   | 'indigo'
-  | 'lime'
+  | 'magenta'
   | 'purple'
   | 'sky'
   | 'slate'
@@ -89,11 +87,11 @@ const styles = {
     }
   },
 
-  option: ({ theme, active, readableColor, name }) => {
+  option: ({ theme, active, name }) => {
     const css = {
       backgroundColor: color[`${name}_60`],
       borderRadius: theme.borderRadius_1,
-      color: readableColor,
+      color: theme.color_primary,
       cursor: 'pointer',
       display: 'inline-block',
       marginTop: 0,
@@ -140,16 +138,16 @@ const styles = {
   swatch: ({ theme, activeColor, isOpen }) => {
     const hue = color[`${activeColor}_60`];
     return {
-      color: readableColor(hue),
+      color: theme.color_primary,
       backgroundColor: hue,
       borderRadius: theme.borderRadius_1,
       cursor: 'pointer',
       display: isOpen ? 'none' : 'block',
-      fontSize: theme.fontSize_h3,
+      fontSize: theme.h3_fontSize,
       padding: theme.space_inset_md,
       textTransform: 'capitalize',
       [theme.bp_mobile]: {
-        fontSize: theme.fontSize_h5
+        fontSize: theme.h5_fontSize
       }
     };
   },
@@ -195,7 +193,6 @@ const Flip = ({
   activeColor,
   colorName,
   handleColorChange,
-  readable,
   in: inProp
 }: FlipProps) => (
   <Transition in={inProp} timeout={duration}>
@@ -206,7 +203,6 @@ const Flip = ({
           variant="mouse"
           active={activeColor === colorName}
           name={colorName}
-          readableColor={readable}
           onClick={() => handleColorChange(colorName)}>
           {colorName}
           <br />
@@ -244,9 +240,7 @@ export default class Picker extends Component<Props, State> {
             {activeColor}
           </Swatch>
           <OptionList isOpen={isOpen}>
-            {Object.keys(availableThemes).map((colorName, index) => {
-              const readable = readableColor(color[`${colorName}_60`]);
-
+            {availableThemes.map((colorName, index) => {
               return (
                 <Flip
                   activeColor={activeColor}
@@ -254,7 +248,6 @@ export default class Picker extends Component<Props, State> {
                   handleColorChange={this.handleColorChange}
                   in={index < visibleThemeCount}
                   key={`flip_${index}`}
-                  readable={readable}
                 />
               );
             })}
@@ -270,7 +263,7 @@ export default class Picker extends Component<Props, State> {
 
   open = () => {
     const { availableThemes } = this.props;
-    const availableThemesCount = Object.keys(availableThemes).length;
+    const availableThemesCount = availableThemes.length;
 
     // Reset visibleThemeCount array so we can animate them in.
     this.setState({ isOpen: true, visibleThemeCount: 0 });

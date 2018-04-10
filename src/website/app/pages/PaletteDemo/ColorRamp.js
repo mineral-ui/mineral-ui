@@ -4,7 +4,6 @@ import { createStyledComponent } from '../../../../library/styles';
 import Paragraph from '../../Paragraph';
 
 type Props = {
-  isGray?: boolean,
   ramp: { [string]: string }
 };
 
@@ -54,27 +53,21 @@ const styles = {
 const Hue = createStyledComponent(Paragraph, styles.hue);
 const Swatch = createStyledComponent('span', styles.swatch);
 
-const REGEX_KEY_COLOR = /^.*_/;
-
-export default function ColorRamp({ ramp, isGray }: Props) {
+export default function ColorRamp({ ramp }: Props) {
   return (
     <div>
-      {Object.entries(ramp).map(([key, color]) => {
-        key = isGray ? key : key.replace(REGEX_KEY_COLOR, 'theme_');
-
-        return (
-          <Hue key={key}>
-            <Swatch color={color} />
-            <span>{key}</span>
-            {/*
-              $FlowFixMe
-              Needed to avoid Flow bug: https://github.com/facebook/flow/issues/2221
-              Alternative is to use a refinement, e.g. color = typeof color === 'string' ? '' + color : '';
-            */}
-            <span>{color}</span>
-          </Hue>
-        );
-      })}
+      {Object.entries(ramp).map(([key, color]) => (
+        <Hue key={key}>
+          <Swatch color={color} />
+          <span>{key.replace('color_', '')}</span>
+          {/*
+            $FlowFixMe
+            Needed to avoid Flow bug: https://github.com/facebook/flow/issues/2221
+            Alternative is to use a refinement, e.g. color = typeof color === 'string' ? '' + color : '';
+          */}
+          <span>{color}</span>
+        </Hue>
+      ))}
     </div>
   );
 }

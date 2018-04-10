@@ -16,7 +16,7 @@ const styles = {
   openSans: ({ theme }) => ({
     fontFamily: 'Open Sans',
     '& p': {
-      fontSize: theme.fontSize_h1,
+      fontSize: theme.h1_fontSize,
       margin: `0 0 ${theme.space_stack_xs}`
     }
   }),

@@ -21,7 +21,7 @@ color/background-color combination with an
   scope: { DemoPanel, colors, Text, theme },
   source: `
     <div>
-      <Text color={theme.color_text_success}>Success Text</Text>
+      <Text color={theme.color_success}>Success Text</Text>
       <Text color={colors.magenta_60}>Magenta Text</Text>
       <DemoPanel backgroundColor="#421429">
         <Text color="#bfe7d4" noMargins>Custom Text</Text>

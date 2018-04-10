@@ -57,9 +57,9 @@ const siteTheme = {
   textShadow: '2px 2px 2px rgba(0,0,0,0.2)',
 
   borderColor: siteColors.slate,
-  borderColor_focus: siteColors.jade,
-  color_text: mineralTheme.color_gray_80,
-  color_text_primary: siteColors.jade,
+  borderColor_theme_focus: siteColors.jade,
+  color: mineralTheme.color_gray_80,
+  color_theme: siteColors.jade,
   fontFamily: null,
   fontFamily_headline: `franklin-gothic-urw, ${mineralTheme.fontFamily_system}`,
   fontWeight_medium: 500,

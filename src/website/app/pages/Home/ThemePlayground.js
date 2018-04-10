@@ -27,7 +27,7 @@ const styles = {
     zIndex: 2,
 
     '& ::selection': {
-      backgroundColor: rgba(themes[index].color_text_primary, 0.2)
+      backgroundColor: rgba(themes[index].color_theme, 0.2)
     },
 
     '@media(min-width: 23em)': {
@@ -58,7 +58,9 @@ const styles = {
       : theme.color_white,
     border: `1px solid ${isActive ? theme.color_white : 'transparent'}`,
     borderRadius: theme.borderRadius_1,
-    boxShadow: isActive ? `0 0 0 1px ${theme[`borderColor_focus`]}` : null,
+    boxShadow: isActive
+      ? `0 0 0 1px ${theme[`borderColor_theme_focus`]}`
+      : null,
     cursor: 'pointer',
     display: 'flex',
     marginBottom: theme.space_stack_sm,
@@ -146,20 +148,20 @@ const styles = {
     // All styles copied from Link (except fontWeight) to negate the SiteLink
     // theme variables despite using the SiteLink component (via Markdown)
     '& p > a': {
-      color: theme.color_text_primary,
+      color: theme.color_theme,
       fontWeight: theme.fontWeight_semiBold,
 
       '&:hover': {
-        color: theme.color_text_primary_hover
+        color: theme.color_theme_hover
       },
       '&:focus': {
-        color: theme.color_text_primary_focus,
-        outlineColor: theme.borderColor_focus
+        color: theme.color_theme_focus,
+        outlineColor: theme.borderColor_theme_focus
       },
       // `:active` must be last, to follow LVHFA order:
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
       '&:active': {
-        color: theme.color_text_primary_active
+        color: theme.color_theme_active
       }
     }
   })

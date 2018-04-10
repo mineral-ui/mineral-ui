@@ -139,6 +139,6 @@ const myTheme = createTheme('dusk', {
 ## Theme Structure
 
 Mineral UI themes are shallow objects of variables that are shared across components. The values in the table below are from the default mineralTheme.
-Note the naming convention: `[property]_[target]_[variant]_[state]`.
+Note the naming convention: `[target]_[property]_[variation]_[state]`.
 
 <!-- Table of theme variables here -->

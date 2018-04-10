@@ -12,7 +12,7 @@ import siteColors from './siteColors';
 type Props = {};
 
 const ThemedSection = createThemedComponent(Section, {
-  color_text: mineralTheme.color_white,
+  color: mineralTheme.color_white,
 
   Heading_color_4: mineralTheme.color_white,
 

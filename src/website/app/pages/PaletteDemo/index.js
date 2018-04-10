@@ -22,7 +22,7 @@ type Colors =
   | 'blue'
   | 'dusk'
   | 'indigo'
-  | 'lime'
+  | 'magenta'
   | 'purple'
   | 'sky'
   | 'slate'
@@ -32,16 +32,16 @@ const breakpoints = {
   bp_mobile: '@media(max-width: 45em)',
   bp_tablet: '@media(max-width: 70em)'
 };
-const availableThemes: { [Colors]: string } = {
-  purple: mineralTheme.color_white,
-  indigo: mineralTheme.color_white,
-  blue: mineralTheme.color_white,
-  sky: mineralTheme.color_black,
-  teal: mineralTheme.color_black,
-  lime: mineralTheme.color_black,
-  slate: mineralTheme.color_black,
-  dusk: mineralTheme.color_white
-};
+const availableThemes = [
+  'magenta',
+  'purple',
+  'indigo',
+  'blue',
+  'sky',
+  'teal',
+  'slate',
+  'dusk'
+];
 
 const styles = {
   intro: ({ theme }) => ({
@@ -98,8 +98,7 @@ const RightColumn = createStyledComponent('div', styles.rightColumn);
 
 const mineralColor = 'blue';
 const defaultTheme = createTheme(mineralColor, {
-  ...breakpoints,
-  color_text_onprimary: availableThemes[mineralColor]
+  ...breakpoints
 });
 
 export default class PaletteDemo extends Component<Props, State> {
@@ -136,9 +135,7 @@ export default class PaletteDemo extends Component<Props, State> {
   }
 
   handleThemeChange = (color: Colors) => {
-    const newTheme = createTheme(color, {
-      color_text_onprimary: availableThemes[color]
-    });
+    const newTheme = createTheme(color);
     this.setState({ activeColor: color, theme: newTheme });
   };
 }

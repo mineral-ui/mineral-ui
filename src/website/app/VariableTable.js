@@ -6,7 +6,7 @@ import colorable from 'colorable';
 
 type Props = {
   baseTheme?: Object,
-  theme: Object,
+  themeToDisplay: Object,
   value: (theme: Object, variable: string, baseTheme?: Object) => string,
   valueColor: (theme: Object, variable: string, baseTheme?: Object) => any
 };
@@ -52,17 +52,17 @@ const a11yColor = (color) => {
   return whiteContrast > blackContrast ? 'white' : 'black';
 };
 
-const getTableRows = (theme, value, valueColor, baseTheme) => {
-  return Object.keys(theme).map((variable) => {
-    if (variable !== theme[variable]) {
+const getTableRows = (themeToDisplay, value, valueColor, baseTheme) => {
+  return Object.keys(themeToDisplay).map((variable) => {
+    if (variable !== themeToDisplay[variable]) {
       return (
         <TableRow key={variable}>
           <TableCell>
             <Name>{variable}</Name>
           </TableCell>
           <TableCell>
-            <Value color={valueColor(theme, variable, baseTheme)}>
-              {value(theme, variable, baseTheme)}
+            <Value color={valueColor(themeToDisplay, variable, baseTheme)}>
+              {value(themeToDisplay, variable, baseTheme)}
             </Value>
           </TableCell>
         </TableRow>
@@ -73,12 +73,13 @@ const getTableRows = (theme, value, valueColor, baseTheme) => {
 
 export default function VariableTable({
   baseTheme,
-  theme,
+  themeToDisplay,
   value,
-  valueColor
+  valueColor,
+  ...restProps
 }: Props) {
   return (
-    <Root>
+    <Root {...restProps}>
       <Table>
         <thead>
           <tr>
@@ -86,7 +87,9 @@ export default function VariableTable({
             <TableHeaderCell scope="col">Value</TableHeaderCell>
           </tr>
         </thead>
-        <tbody>{getTableRows(theme, value, valueColor, baseTheme)}</tbody>
+        <tbody>
+          {getTableRows(themeToDisplay, value, valueColor, baseTheme)}
+        </tbody>
       </Table>
     </Root>
   );

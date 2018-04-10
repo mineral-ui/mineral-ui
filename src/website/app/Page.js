@@ -50,8 +50,8 @@ type State = {
 
 const pageThemes = [
   {
-    borderColor_focus: siteColors.cranberry,
-    color_text_primary: siteColors.cranberry,
+    borderColor_theme_focus: siteColors.cranberry,
+    color_theme: siteColors.cranberry,
 
     navLink_color_active_narrow: lighten(0.19, siteColors.cranberry),
 
@@ -69,8 +69,8 @@ const pageThemes = [
     SiteLink_color_hover: siteColors.cranberry_hover
   },
   {
-    borderColor_focus: siteColors.grape,
-    color_text_primary: siteColors.grape,
+    borderColor_theme_focus: siteColors.grape,
+    color_theme: siteColors.grape,
 
     navLink_color_active_narrow: lighten(0.18, siteColors.grape),
 
@@ -88,8 +88,8 @@ const pageThemes = [
     SiteLink_color_hover: siteColors.grape_hover
   },
   {
-    borderColor_focus: siteColors.orangePunch,
-    color_text_primary: siteColors.orangePunch,
+    borderColor_theme_focus: siteColors.orangePunch,
+    color_theme: siteColors.orangePunch,
 
     navLink_color_active_narrow: lighten(0.23, siteColors.orangePunch),
 
@@ -121,8 +121,7 @@ const magic = 18;
 
 const styles = {
   canvas: ({ theme }) => ({
-    backgroundColor:
-      theme.PageHeader_backgroundColor || theme.color_text_primary,
+    backgroundColor: theme.PageHeader_backgroundColor || theme.color_theme,
 
     [theme.bp_moreSpacious]: {
       left: `calc(-50vw + 50% - ${parseFloat(theme.sidebarWidth) / 2}em)`, // [1]
@@ -259,6 +258,7 @@ const styles = {
     },
 
     '& h1': {
+      color: theme.color,
       fontSize: theme.SiteHeading_fontSize_2,
       margin: 0,
       textShadow: theme.textShadow,
@@ -326,7 +326,7 @@ const styles = {
     transform: glitched ? 'rotate(-1deg) scale(1.05)' : null,
 
     '& ::selection': {
-      backgroundColor: rgba(theme.color_text_primary, 0.2)
+      backgroundColor: rgba(theme.color_theme, 0.2)
     }
   }),
   wrap: ({ isNavOpen, theme }) => {

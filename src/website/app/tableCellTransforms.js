@@ -84,7 +84,7 @@ export const isInDevelopment = (child: React$Node, index: number) => {
   return (
     <InDevelopment key={`icon-${index}`}>
       <IconSlowMotionVideo
-        color={color.yellow_60}
+        color={color.bronze_60}
         size="large"
         title="in development"
       />
