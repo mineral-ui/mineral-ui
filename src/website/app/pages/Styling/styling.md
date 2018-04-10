@@ -83,7 +83,7 @@ _With a style function.  Use a style function when you need access to the theme 
 ```jsx
 const StyledSample = createStyledComponent(Sample, ({ theme }) => ({
   outline: '3px dashed tomato',
-  fontSize: theme.fontSize_h1
+  fontSize: theme.h1_fontSize
 }));
 ```
 

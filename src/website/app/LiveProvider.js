@@ -40,12 +40,12 @@ const styles = {
     ...getCodeBlockStyles(theme),
 
     '&:focus': {
-      outline: `6px solid ${rgba(theme.color_text_primary, 0.3)}`
+      outline: `6px solid ${rgba(theme.color_theme, 0.3)}`
     }
   }),
   liveError: ({ theme }) => ({
     backgroundColor: '#fce3e3', // color.red_10
-    color: theme.color_text_danger,
+    color: theme.color_danger,
     fontFamily: theme.fontFamily_monospace,
     fontSize: theme.fontSize_mouse,
     lineHeight: theme.lineHeight_prose,

@@ -18,7 +18,7 @@ export default {
   scope: { DemoLayout, ThemeProvider, Sample },
   source: `
     <DemoLayout>
-      <ThemeProvider theme={{ color_text: 'tomato' }}>
+      <ThemeProvider theme={{ color: 'tomato' }}>
         <Sample />
       </ThemeProvider>
     </DemoLayout>

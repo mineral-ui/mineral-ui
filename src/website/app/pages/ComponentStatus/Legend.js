@@ -38,7 +38,7 @@ export default function Legend() {
         <Available color={color.green_60} size="large" /> Available
       </li>
       <li>
-        <InDevelopment color={color.yellow_60} size="large" /> In Development
+        <InDevelopment color={color.bronze_60} size="large" /> In Development
       </li>
       <li>
         <Planned color={color.blue_60} size="large" /> Planned

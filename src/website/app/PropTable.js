@@ -32,7 +32,7 @@ const styles = {
     }
   },
   propRequired: ({ theme }) => ({
-    backgroundColor: theme.backgroundColor_danger,
+    backgroundColor: theme.backgroundColor_dangerPrimary,
     borderRadius: theme.borderRadius_1,
     color: theme.color_white,
     display: 'inline-block',

@@ -18,7 +18,7 @@ const Message = createStyledComponent('div', ({ fancy, theme }) => {
   });
 
   let styles = {
-    color: theme.color_text_primary,
+    color: theme.color_theme,
     fontSize: '1.5em',
     margin: `${theme.baseline_2} auto`,
     width: 'min-content'
@@ -30,10 +30,10 @@ const Message = createStyledComponent('div', ({ fancy, theme }) => {
       animation: `${loading} 2s`,
       animationIterationCount: 'infinite',
       background: `linear-gradient(90deg,
-        ${lighten(0.1, theme.color_text_primary)},
-        ${darken(0.2, theme.color_text_primary)},
-        ${lighten(0.1, theme.color_text_primary)},
-        ${darken(0.2, theme.color_text_primary)}
+        ${lighten(0.1, theme.color_theme)},
+        ${darken(0.2, theme.color_theme)},
+        ${lighten(0.1, theme.color_theme)},
+        ${darken(0.2, theme.color_theme)}
       )`,
       backgroundPosition: '0 0',
       backgroundSize: '300% 100%',

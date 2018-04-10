@@ -10,7 +10,7 @@ type Props = {
 };
 
 const componentTheme = (baseTheme) => ({
-  Paragraph_color: baseTheme.color_text,
+  Paragraph_color: baseTheme.color,
   Paragraph_fontSize_mouse: baseTheme.fontSize_mouse,
   Paragraph_fontSize_prose: baseTheme.fontSize_prose,
   Paragraph_fontSize_ui: baseTheme.fontSize_ui,

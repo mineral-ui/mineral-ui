@@ -7,7 +7,7 @@ will be easier to change later.`,
     example: `
 \`\`\`
 const myTheme = createTheme('blue', {
-  color_text: 'rebeccapurple'
+  color: 'rebeccapurple'
 });
 
 <ThemeProvider theme={myTheme}>
@@ -25,7 +25,7 @@ create a visual separation.`,
 \`\`\`
 <ThemeProvider>
   <ThemeProvider theme={{
-    color_text: 'darkgray'
+    color: 'darkgray'
   }}>
     <nav>Navigation<nav>
   </ThemeProvider>
@@ -41,7 +41,7 @@ the default Mineral UI theme as-is. We've designed the colors, typography and
 layout as a system to provide turn-key consistency for your app.`,
     example: `
 \`\`\`
-<ThemeProvider theme={{ color_text: '#f00' }}>
+<ThemeProvider theme={{ color: '#f00' }}>
   <div>Awesome custom app</div>
 </ThemeProvider>
 \`\`\`

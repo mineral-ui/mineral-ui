@@ -48,7 +48,7 @@ const navThemeWide = {
 const styles = {
   heading: ({ theme, wide }) => ({
     margin: 0,
-    paddingRight: wide ? getNormalizedValue(pxToEm(8), theme.fontSize_h4) : null
+    paddingRight: wide ? getNormalizedValue(pxToEm(8), theme.h4_fontSize) : null
   }),
   link: ({ theme, wide }) => {
     const fontSize = theme.fontSize_ui;
@@ -70,12 +70,12 @@ const styles = {
             paddingRight: getNormalizedValue(pxToEm(8), fontSize),
 
             '&.active': {
-              backgroundColor: rgba(theme.color_text_primary, 0.15),
-              color: darken(0.1, theme.color_text_primary),
+              backgroundColor: rgba(theme.color_theme, 0.15),
+              color: darken(0.1, theme.color_theme),
               position: 'relative',
 
               '&::before': {
-                backgroundColor: theme.color_text_primary,
+                backgroundColor: theme.color_theme,
                 bottom: 0,
                 content: '""',
                 position: 'absolute',
@@ -122,7 +122,7 @@ const styles = {
     fontSize: '1em',
     margin: `0 0 ${pxToEm(9)}`, // [1]
     paddingRight: wide
-      ? getNormalizedValue(pxToEm(8), theme.fontSize_h4)
+      ? getNormalizedValue(pxToEm(8), theme.h4_fontSize)
       : null,
 
     '& svg': {
@@ -148,7 +148,7 @@ const styles = {
         wide
           ? {
               '&::before': {
-                backgroundColor: rgba(theme.color_text_primary, 0.25),
+                backgroundColor: rgba(theme.color_theme, 0.25),
                 bottom: 0,
                 content: '""',
                 position: 'absolute',
@@ -159,7 +159,7 @@ const styles = {
             }
           : {
               '&::before': {
-                backgroundColor: rgba(theme.color_text_primary, 0.5),
+                backgroundColor: rgba(theme.color_theme, 0.5),
                 bottom: 0,
                 content: '""',
                 left: `-${pxToEm(18)}`,

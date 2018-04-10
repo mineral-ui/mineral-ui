@@ -1,23 +1,19 @@
 /* @flow */
 import darken from 'polished/lib/color/darken';
 import lighten from 'polished/lib/color/lighten';
-import colors from '../../library/colors';
 
 export default {
-  orange: colors.orange_50,
-  // orange_active: darken(0.025, colors.orange_50),
-  // orange_focus: colors.orange_50,
-  // orange_hover: lighten(0.025, colors.orange_50),
+  orange: '#ed774c',
 
-  slate: colors.slate_60,
-  slate_active: colors.slate_70,
-  slate_focus: colors.slate_60,
-  slate_hover: colors.slate_50,
+  slate: '#598296',
+  slate_active: '#47697a',
+  slate_focus: '#598296',
+  slate_hover: '#709cb3',
 
-  yellow: colors.yellow_50,
-  yellow_active: colors.yellow_60,
-  yellow_focus: colors.yellow_50,
-  yellow_hover: colors.yellow_40,
+  yellow: '#f0b241',
+  yellow_active: '#e3a322',
+  yellow_focus: '#f0b241',
+  yellow_hover: '#f7c868',
 
   cranberry: '#d1454a',
   cranberry_active: darken(0.05, '#d1454a'),

@@ -47,7 +47,7 @@ const styles = {
     marginBottom: `${parseFloat(theme.space_stack_sm) * 32}em`
   }),
   icon: ({ theme }) => ({
-    fill: theme.color_text_primary
+    fill: theme.color_theme
   }),
   menuContainer: ({ theme }) => ({
     backgroundColor: theme.color_gray_50,

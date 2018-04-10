@@ -63,7 +63,7 @@ const playgroundThemes = [
 ];
 
 const homeTheme = {
-  color_text_primary: siteColors.orangePunch,
+  color_theme: siteColors.orangePunch,
 
   SiteButton_backgroundColor_primary: siteColors.orangePunch,
   SiteButton_backgroundColor_primary_active: siteColors.orangePunch_active,
@@ -79,9 +79,9 @@ const homeTheme = {
   SiteLink_color_hover: siteColors.orangePunch_hover
 };
 export const heroTheme = {
-  color_text: colors.white,
+  color: colors.white,
 
-  SiteButton_color_text: darken(0.04, siteColors.slateDarker),
+  SiteButton_color: darken(0.04, siteColors.slateDarker),
 
   SiteHeading_color_2: colors.white,
 
@@ -92,16 +92,16 @@ export const heroTheme = {
   SiteLink_color_hover: colors.white
 };
 const gettingStartedTheme = {
-  color_text: colors.white,
-  color_text_primary: siteColors.yellow,
+  color: colors.white,
+  color_theme: siteColors.yellow,
 
   SiteButton_backgroundColor_primary: siteColors.yellow,
   SiteButton_backgroundColor_primary_active: siteColors.yellow_active,
   SiteButton_backgroundColor_primary_focus: siteColors.yellow_focus,
   SiteButton_backgroundColor_primary_hover: siteColors.yellow_hover,
 
-  SiteButton_color_text: colors.gray_100,
-  SiteButton_color_text_primary: colors.gray_100,
+  SiteButton_color: colors.gray_100,
+  SiteButton_color_primary: colors.gray_100,
 
   SiteHeading_color_3: colors.white,
   SiteHeading_color_4: colors.white,
@@ -145,7 +145,7 @@ const styles = {
     },
 
     '&::before': {
-      backgroundColor: theme.color_text_primary,
+      backgroundColor: theme.color_theme,
       borderRadius: theme.borderRadius_1,
       content: 'New',
       fontSize: '0.8em',
@@ -282,7 +282,7 @@ const styles = {
       },
 
       '&::before': {
-        backgroundColor: theme.color_text_primary,
+        backgroundColor: theme.color_theme,
         borderRadius: '0.75em',
         content: 'counter(getStarted)',
         color: theme.color_gray_100,
@@ -316,7 +316,7 @@ const styles = {
 
     '& :not(pre) > code': {
       backgroundColor: 'rgba(0, 0, 0, 0.15)',
-      color: theme.color_text
+      color: theme.color
     },
 
     // Specificity hack
@@ -434,7 +434,7 @@ const styles = {
   }),
   home: ({ theme }) => ({
     '& ::selection': {
-      backgroundColor: rgba(theme.color_text_primary, 0.2)
+      backgroundColor: rgba(theme.color_theme, 0.2)
     }
   }),
   intro: ({ theme }) => ({

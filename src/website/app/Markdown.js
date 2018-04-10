@@ -179,19 +179,19 @@ const styles = {
     // container
     '& h2,& h3,& h4,& h5,& h6': {
       '& > a:link': {
-        color: theme.color_caption,
+        color: theme.color_mouse,
         fontWeight: 'inherit'
       },
       '& > a:hover': {
-        color: theme.SiteLink_color_hover || theme.color_text_primary_hover
+        color: theme.SiteLink_color_hover || theme.color_theme_hover
       },
       '& > a:focus': {
-        color: theme.SiteLink_color_focus || theme.color_text_primary_focus
+        color: theme.SiteLink_color_focus || theme.color_theme_focus
       },
       // `:active` must be last, to follow LVHFA order:
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:active
       '& > a:active': {
-        color: theme.SiteLink_color_active || theme.color_text_primary_active
+        color: theme.SiteLink_color_active || theme.color_theme_active
       },
 
       '& code': {
@@ -207,8 +207,8 @@ const styles = {
     },
 
     '& :not(pre) > code': {
-      backgroundColor: rgba(theme.color_text_primary, 0.15),
-      color: darken(0.1, theme.color_text_primary),
+      backgroundColor: rgba(theme.color_theme, 0.15),
+      color: darken(0.1, theme.color_theme),
       direction: 'ltr',
       fontFamily: theme.fontFamily_monospace,
       fontSize: '0.8em',

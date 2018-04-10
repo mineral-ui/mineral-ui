@@ -59,11 +59,11 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.property, & .token.keyword, & .token.tag': {
-      color: colors.yellow_40 // deviation, originally "function"
+      color: '#f7c868' // deviation, originally "function"
     },
 
     '& .token.className': {
-      color: colors.yellow_20,
+      color: '#fce4b6',
       textDecoration: 'underline'
     },
 
@@ -92,7 +92,7 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.entity': {
-      color: colors.yellow_20,
+      color: '#fce4b6',
       cursor: 'help'
       // text-decoration: 'underline'
     },
@@ -106,7 +106,7 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.atrule, & .token.attrValue': {
-      color: colors.yellow_30
+      color: '#fad48e'
     },
 
     '& .token.function': {
@@ -114,11 +114,11 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.regex': {
-      color: colors.yellow_50
+      color: '#f0b241'
     },
 
     '& .token.important': {
-      color: colors.orange_70
+      color: '#cf4615'
     },
 
     '& .token.important, & .token.bold': {

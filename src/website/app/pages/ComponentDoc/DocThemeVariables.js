@@ -74,7 +74,7 @@ export default function DocThemeVariables({
       </Markdown>
       <VariableTable
         baseTheme={baseTheme}
-        theme={theme}
+        themeToDisplay={theme}
         value={getValue}
         valueColor={getColor}
       />

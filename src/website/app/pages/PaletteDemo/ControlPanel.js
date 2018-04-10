@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import colors from '../../../../library/colors';
 import { createStyledComponent } from '../../../../library/styles';
 import { createColorRamp, ThemeProvider } from '../../../../library/themes';
 import Paragraph from '../../Paragraph';
@@ -8,7 +9,7 @@ import Picker from './Picker';
 
 type Props = {
   activeColor: Colors,
-  availableThemes: { [Colors]: string },
+  availableThemes: Array<Colors>,
   changeTheme: (Colors) => void,
   theme: { [string]: any }
 };
@@ -17,7 +18,7 @@ type Colors =
   | 'blue'
   | 'dusk'
   | 'indigo'
-  | 'lime'
+  | 'magenta'
   | 'purple'
   | 'sky'
   | 'slate'
@@ -61,8 +62,8 @@ export default function ControlPanel({
   changeTheme,
   theme
 }: Props) {
-  const primaries = createColorRamp('color_theme', activeColor, theme);
-  const grays = createColorRamp('color_gray', 'gray', theme);
+  const themeRamp = createColorRamp(activeColor, 'color_theme', colors);
+  const grayRamp = createColorRamp('gray', 'gray', colors);
 
   return (
     <Root>
@@ -78,8 +79,8 @@ export default function ControlPanel({
             Every theme uses the base gray ramp.
           </Description>
           <ThemeSwatches>
-            <ColorRamp ramp={primaries} />
-            <ColorRamp ramp={grays} isGray={true} />
+            <ColorRamp ramp={themeRamp} />
+            <ColorRamp ramp={grayRamp} />
           </ThemeSwatches>
         </div>
       </ThemeProvider>

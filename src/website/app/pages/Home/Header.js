@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
 import Media from 'react-media';
-import colors from '../../../../library/colors';
 import { createStyledComponent, pxToEm } from '../../../../library/styles';
 import { createThemedComponent } from '../../../../library/themes';
 import Button from '../../../../library/Button';
@@ -24,7 +23,7 @@ type State = {
 
 const menuButtonTheme = ({ theme }) => ({
   fontFamily: theme.fontFamily_headline,
-  Button_color_text_minimal: theme.color_white,
+  Button_color_minimal: theme.color_white,
   Button_backgroundColor_minimal_hover: 'transparent',
   Button_backgroundColor_minimal_active: 'transparent',
   Button_fontWeight: theme.fontWeight_regular,
@@ -87,6 +86,7 @@ const styles = {
     }
   }),
   logotype: ({ theme }) => ({
+    color: theme.color,
     lineHeight: 1,
     margin: 0,
 
@@ -111,8 +111,12 @@ const styles = {
     top: '0.45em', // Optical adjustment for baseline alignment with Logotype
 
     '&:focus': {
-      color: colors.orange_50,
+      color: '#ed774c',
       boxShadow: 'none'
+    },
+
+    '& [role="img"]': {
+      color: 'inherit'
     }
   }),
   nav: ({ theme }) => ({

@@ -32,10 +32,10 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
   return {
     backgroundColor:
       variant === 'danger'
-        ? theme.backgroundColor_input_danger
-        : rgba(theme.color_text_primary, 0.1),
+        ? theme.well_backgroundColor_danger
+        : rgba(theme.color_theme, 0.1),
     borderLeft: `3px solid ${
-      variant === 'danger' ? theme.color_text_danger : theme.color_text_primary
+      variant === 'danger' ? theme.color_danger : theme.color_theme
     }`,
     padding: theme.baseline_2,
 
@@ -54,7 +54,7 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
         color: linkColors.idle,
         fontWeight: theme.fontWeight_semiBold,
         textDecoration: 'underline',
-        textDecorationColor: rgba(theme.color_text_primary, 0.5)
+        textDecorationColor: rgba(theme.color_theme, 0.5)
       },
       '&:visited': {
         color: linkColors.visited
@@ -77,7 +77,7 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
 
       '&[href^="http"]': {
         '&:link::after': {
-          borderBottom: `1px solid ${rgba(theme.color_text_primary, 0.5)}`,
+          borderBottom: `1px solid ${rgba(theme.color_theme, 0.5)}`,
           backgroundImage: getIcon(linkColors.idle),
           backgroundPosition: 'top right',
           backgroundRepeat: 'no-repeat',
@@ -115,8 +115,8 @@ const Root = createStyledComponent('div', ({ theme, variant }) => {
 const Title = createStyledComponent('h4', ({ variant, theme }) => ({
   color:
     variant === 'danger'
-      ? darken(0.1, theme.color_text_danger)
-      : darken(0.1, theme.color_text_primary),
+      ? darken(0.1, theme.color_danger)
+      : darken(0.1, theme.color_theme),
   fontSize: '1em',
   fontWeight: theme.fontWeight_semiBold,
   margin: 0

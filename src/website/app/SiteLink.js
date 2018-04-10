@@ -16,11 +16,11 @@ type Props = {
 
 // prettier-ignore
 const componentTheme = baseTheme => ({
-  Link_borderColor_focus: baseTheme.SiteLink_borderColor_focus || baseTheme.borderColor_focus,
-  Link_color: baseTheme.SiteLink_color || baseTheme.color_text_primary,
-  Link_color_active: baseTheme.SiteLink_color_active || baseTheme.color_text_primary_active,
-  Link_color_hover: baseTheme.SiteLink_color_hover || baseTheme.color_text_primary_hover,
-  Link_color_focus: baseTheme.SiteLink_color_focus || baseTheme.color_text_primary_focus,
+  Link_borderColor_focus: baseTheme.SiteLink_borderColor_focus || baseTheme.borderColor_theme_focus,
+  Link_color: baseTheme.SiteLink_color || baseTheme.color_theme,
+  Link_color_active: baseTheme.SiteLink_color_active || baseTheme.color_theme_active,
+  Link_color_hover: baseTheme.SiteLink_color_hover || baseTheme.color_theme_hover,
+  Link_color_focus: baseTheme.SiteLink_color_focus || baseTheme.color_theme_focus,
 
   ...baseTheme
 });
@@ -33,7 +33,7 @@ const Root = createStyledComponent(ThemedLink, ({ href, theme }) => {
   let styles = {
     fontWeight: theme.fontWeight_semiBold,
     textDecoration: 'underline',
-    textDecorationColor: rgba(theme.color_text_primary, 0.5),
+    textDecorationColor: rgba(theme.color_theme, 0.5),
 
     '&:focus': {
       textDecoration: 'none'
@@ -45,7 +45,7 @@ const Root = createStyledComponent(ThemedLink, ({ href, theme }) => {
       ...styles,
 
       '& > [role="img"]': {
-        borderBottom: `1px solid ${rgba(theme.color_text_primary, 0.5)}`,
+        borderBottom: `1px solid ${rgba(theme.color_theme, 0.5)}`,
         boxSizing: 'content-box',
         fill: 'currentColor',
         paddingLeft: theme.space_inline_xs,

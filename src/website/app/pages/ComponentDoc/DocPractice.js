@@ -20,23 +20,23 @@ type Props = {
 const themes = {
   do: {
     borderColor: darken(0.1, mineralTheme.borderColor_success),
-    color_text_primary: mineralTheme.color_text_success,
+    color_theme: mineralTheme.color_success,
 
-    SiteLink_borderColor_focus: mineralTheme.color_text_success,
-    SiteLink_color: mineralTheme.color_text_success,
-    SiteLink_color_active: mineralTheme.color_text_success,
-    SiteLink_color_hover: mineralTheme.color_text_success,
-    SiteLink_color_focus: mineralTheme.color_text_success
+    SiteLink_borderColor_focus: mineralTheme.color_success,
+    SiteLink_color: mineralTheme.color_success,
+    SiteLink_color_active: mineralTheme.color_success,
+    SiteLink_color_hover: mineralTheme.color_success,
+    SiteLink_color_focus: mineralTheme.color_success
   },
   dont: {
     borderColor: mineralTheme.borderColor_danger,
-    color_text_primary: darken(0.1, mineralTheme.color_text_danger),
+    color_theme: darken(0.1, mineralTheme.color_danger),
 
-    SiteLink_borderColor_focus: darken(0.1, mineralTheme.color_text_danger),
-    SiteLink_color: darken(0.1, mineralTheme.color_text_danger),
-    SiteLink_color_active: darken(0.1, mineralTheme.color_text_danger),
-    SiteLink_color_hover: darken(0.1, mineralTheme.color_text_danger),
-    SiteLink_color_focus: darken(0.1, mineralTheme.color_text_danger)
+    SiteLink_borderColor_focus: darken(0.1, mineralTheme.color_danger),
+    SiteLink_color: darken(0.1, mineralTheme.color_danger),
+    SiteLink_color_active: darken(0.1, mineralTheme.color_danger),
+    SiteLink_color_hover: darken(0.1, mineralTheme.color_danger),
+    SiteLink_color_focus: darken(0.1, mineralTheme.color_danger)
   }
 };
 
@@ -74,7 +74,7 @@ const styles = {
     },
 
     '& ::selection': {
-      backgroundColor: rgba(theme.color_text_primary, 0.2)
+      backgroundColor: rgba(theme.color_theme, 0.2)
     },
 
     '& > [role="img"]': {
