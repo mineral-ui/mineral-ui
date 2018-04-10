@@ -30,8 +30,8 @@ describe('ThemeProvider', () => {
 
   it('merges nested theme variables', () => {
     const themedSample = mount(
-      <ThemeProvider theme={{ color_text: 'black' }}>
-        <ThemeProvider theme={{ color_text: 'tomato' }}>
+      <ThemeProvider theme={{ color: 'black' }}>
+        <ThemeProvider theme={{ color: 'tomato' }}>
           <Sample />
         </ThemeProvider>
       </ThemeProvider>
@@ -42,8 +42,8 @@ describe('ThemeProvider', () => {
 
   it('merges themes instead of overriding', () => {
     const themedSample = mount(
-      <ThemeProvider theme={{ color_text: 'black' }}>
-        <ThemeProvider theme={{ color_text_warning: 'tomato' }}>
+      <ThemeProvider theme={{ color: 'black' }}>
+        <ThemeProvider theme={{ color_warning: 'tomato' }}>
           <Sample />
         </ThemeProvider>
       </ThemeProvider>
