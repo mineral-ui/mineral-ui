@@ -31,8 +31,9 @@ const MenuButton = createStyledComponent(Button, ({ theme }) => ({
     margin: `-${pxToEm(2)}`
   },
 
+  // Icon
   '& [role="img"]': {
-    fill: theme.color_text
+    color: theme.icon_color
   }
 }));
 

@@ -43,8 +43,8 @@ type Props = {
 const arrowSize = '8px';
 
 export const componentTheme = (baseTheme: Object) => ({
-  PopoverContent_backgroundColor: baseTheme.color_white,
-  PopoverContent_borderColor: baseTheme.color_gray_20,
+  PopoverContent_backgroundColor: baseTheme.panel_backgroundColor,
+  PopoverContent_borderColor: baseTheme.panel_borderColor,
   PopoverContent_borderRadius: baseTheme.borderRadius_1,
   PopoverContent_boxShadow: baseTheme.boxShadow_2,
   PopoverContent_color: baseTheme.color,

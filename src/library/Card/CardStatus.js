@@ -31,13 +31,12 @@ const Root = createStyledComponent(
 
     return {
       alignItems: 'center',
-      color: theme[`color_text_${variant}`],
+      color: theme[`color_${variant}`],
       display: 'flex',
       fontSize: theme.CardStatus_fontSize,
       fontWeight: theme.CardStatus_fontWeight,
 
       '& > [role="img"]': {
-        fill: 'currentcolor',
         height: theme.CardStatusIcon_size,
         marginRight: rtl ? null : theme.CardStatusIcon_margin,
         marginLeft: rtl ? theme.CardStatusIcon_margin : null,

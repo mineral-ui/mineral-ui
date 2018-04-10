@@ -72,17 +72,8 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  textArea: ({ resizeable, size, theme: baseTheme, variant }) => {
-    let theme = componentTheme(baseTheme);
-    if (variant) {
-      // prettier-ignore
-      theme = {
-        ...theme,
-        TextArea_borderColor_hover: theme[`borderColor_${variant}_hover`],
-        TextArea_boxShadow_active: `0 0 0 1px ${theme.color_white}, 0 0 0 2px ${theme[`borderColor_${variant}`]}`,
-        TextArea_boxShadow_focus: `0 0 0 1px ${theme.color_white}, 0 0 0 2px ${theme[`borderColor_${variant}`]}`
-      };
-    }
+  textArea: ({ resizeable, size, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     const fontSize =
       size === 'small'

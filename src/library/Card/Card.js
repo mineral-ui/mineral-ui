@@ -9,14 +9,13 @@ type Props = {
   onClick?: (event: SyntheticEvent<>) => void
 };
 
+// prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
-  Card_backgroundColor: baseTheme.color_white,
-  Card_borderColor: baseTheme.color_gray_20,
+  Card_backgroundColor: baseTheme.panel_backgroundColor,
+  Card_borderColor: baseTheme.panel_borderColor,
   Card_borderRadius: baseTheme.borderRadius_1,
-  Card_boxShadow: baseTheme.shadow_2,
-  Card_boxShadow_focus: `0 0 0 2px ${baseTheme.color_theme_100}, ${
-    baseTheme.shadow_1
-  }`,
+  Card_boxShadow: baseTheme.boxShadow_2,
+  Card_boxShadow_focus: `0 0 0 2px ${baseTheme.borderColor_theme_focus}, ${baseTheme.boxShadow_1}`,
 
   CardRow_marginVertical: baseTheme.space_stack_md,
   CardRow_marginVerticalLast: baseTheme.space_stack_lg,

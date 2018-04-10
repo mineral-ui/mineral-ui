@@ -95,6 +95,7 @@ export const componentTheme = (baseTheme: Object) => ({
 const Root = createStyledComponent(
   Manager,
   {
+    color: null,
     display: 'inline-block'
   },
   {

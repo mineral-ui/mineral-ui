@@ -83,6 +83,7 @@ const styles = {
       theme = {
         ...theme,
         MenuItem_backgroundColor_active: theme[`backgroundColor_${variant}_active`],
+        MenuItem_backgroundColor_focus: theme[`backgroundColor_${variant}_focus`],
         MenuItem_backgroundColor_hover: theme[`backgroundColor_${variant}_hover`],
         MenuItem_color: theme[`color_${variant}`],
         MenuItemIcon_color: theme[`icon_color_${variant}`]
