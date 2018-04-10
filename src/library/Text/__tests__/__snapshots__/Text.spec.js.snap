@@ -307,7 +307,7 @@ exports[`Text demo examples basic 1`] = `
 
 .css-1,
 [data-css-1] {
-  fill: #8e99ab;
+  fill: currentcolor;
   font-size: 16px;
   height: 1.25em;
   width: 1.25em;
@@ -369,7 +369,7 @@ exports[`Text demo examples color 1`] = `
 .css-0,
 [data-css-0] {
   box-sizing: border-box;
-  color: #06783f;
+  color: #2a854e;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   line-height: 1.5;
@@ -392,7 +392,7 @@ exports[`Text demo examples color 1`] = `
 .css-1,
 [data-css-1] {
   box-sizing: border-box;
-  color: #d92762;
+  color: #d6246e;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
   line-height: 1.5;
@@ -444,17 +444,17 @@ exports[`Text demo examples color 1`] = `
 <div>
   <Text
     appearance="p"
-    color="#06783f"
+    color="#2a854e"
     element="p"
   >
     <TextProvider
       appearance="p"
-      color="#06783f"
+      color="#2a854e"
       element="p"
     >
       <glamorous(p)
         appearance="p"
-        color="#06783f"
+        color="#2a854e"
         element="p"
       >
         <p
@@ -467,17 +467,17 @@ exports[`Text demo examples color 1`] = `
   </Text>
   <Text
     appearance="p"
-    color="#d92762"
+    color="#d6246e"
     element="p"
   >
     <TextProvider
       appearance="p"
-      color="#d92762"
+      color="#d6246e"
       element="p"
     >
       <glamorous(p)
         appearance="p"
-        color="#d92762"
+        color="#d6246e"
         element="p"
       >
         <p
@@ -1064,8 +1064,8 @@ exports[`Text demo examples nested 1`] = `
 
 .css-1,
 [data-css-1] {
-  background-color: #e1f3fc;
-  color: #0f75b0;
+  background-color: #e8f4fa;
+  color: #064d70;
   font-family: serif;
   font-size: 1.25rem;
   padding: 0.5em;
@@ -1073,7 +1073,7 @@ exports[`Text demo examples nested 1`] = `
 
 .css-2,
 [data-css-2] {
-  background-color: #cacafa;
+  background-color: #dcdcfc;
   padding: 0.5em;
 }
 
@@ -1081,7 +1081,7 @@ exports[`Text demo examples nested 1`] = `
 [data-css-3] {
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #cacafa;
+  background-color: #dcdcfc;
   padding: 0.5em;
 }
 
@@ -1097,7 +1097,7 @@ exports[`Text demo examples nested 1`] = `
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #cacafa;
+  background-color: #dcdcfc;
   padding: 0.5em;
 }
 
@@ -1279,7 +1279,7 @@ exports[`Text demo examples nested-elements 1`] = `
 
 .css-3,
 [data-css-3] {
-  color: #2e6fd9;
+  color: #3272d9;
   text-decoration: none;
 }
 
@@ -1287,7 +1287,7 @@ exports[`Text demo examples nested-elements 1`] = `
 [data-css-3]:hover,
 .css-3[data-simulate-hover],
 [data-css-3][data-simulate-hover] {
-  color: #4a89e8;
+  color: #5691f0;
   text-decoration: underline;
 }
 
@@ -1295,8 +1295,8 @@ exports[`Text demo examples nested-elements 1`] = `
 [data-css-3]:focus,
 .css-3[data-simulate-focus],
 [data-css-3][data-simulate-focus] {
-  color: #2e6fd9;
-  outline: 1px solid #2e6fd9;
+  color: #3272d9;
+  outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
@@ -1304,7 +1304,7 @@ exports[`Text demo examples nested-elements 1`] = `
 [data-css-3]:active,
 .css-3[data-simulate-active],
 [data-css-3][data-simulate-active] {
-  color: #1f5dc2;
+  color: #1d5bbf;
 }
 
 <div>
