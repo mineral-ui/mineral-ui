@@ -27,7 +27,7 @@ function mountThemedSample(theme) {
 describe('createThemedComponent', () => {
   it('renders correctly', () => {
     const [themedSample] = mountThemedSample({
-      color_text: 'mediumvioletred'
+      color: 'mediumvioletred'
     });
 
     expect(themedSample).toMatchSnapshot();
@@ -43,7 +43,7 @@ describe('createThemedComponent', () => {
 
   it('renders a Link correctly with a custom theme function', () => {
     const [themedLink] = mountThemedLink(({ theme }) => ({
-      Link_color: theme.color_text_danger
+      Link_color: theme.color_danger
     }));
 
     expect(themedLink).toMatchSnapshot();
