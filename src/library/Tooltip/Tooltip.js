@@ -69,6 +69,7 @@ type State = {
 
 const DELAY_OPEN = 250; // ms
 
+// prettier-ignore
 export const componentTheme = (baseTheme: Object) => {
   return {
     ...mapComponentThemes(
@@ -79,8 +80,8 @@ export const componentTheme = (baseTheme: Object) => {
       {
         name: 'Tooltip',
         theme: {
-          TooltipArrow_backgroundColor: baseTheme.color_gray_90,
-          TooltipArrow_borderColor: baseTheme.color_gray_90,
+          TooltipArrow_backgroundColor: baseTheme.panel_backgroundColor_inverted,
+          TooltipArrow_borderColor: baseTheme.panel_borderColor_inverted,
 
           TooltipContent_backgroundColor:
             baseTheme.panel_backgroundColor_inverted,
@@ -92,7 +93,7 @@ export const componentTheme = (baseTheme: Object) => {
           TooltipContentBlock_paddingHorizontal: baseTheme.space_inset_md,
 
           TooltipTriggerText_borderStyle: 'dashed',
-          TooltipTriggerText_borderColor: baseTheme.color_text,
+          TooltipTriggerText_borderColor: 'currentcolor',
           TooltipTriggerText_borderWidth: '1px'
         }
       },

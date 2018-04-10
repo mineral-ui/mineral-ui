@@ -26,8 +26,8 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  PopoverArrow_backgroundColor: baseTheme.color_white,
-  PopoverArrow_borderColor: baseTheme.color_gray_20,
+  PopoverArrow_backgroundColor: baseTheme.panel_backgroundColor,
+  PopoverArrow_borderColor: baseTheme.panel_borderColor,
   ...baseTheme
 });
 

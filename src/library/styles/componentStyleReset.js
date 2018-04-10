@@ -2,7 +2,7 @@
 export default ({ theme }: Object) => {
   return {
     boxSizing: 'border-box',
-    color: theme.color_text,
+    color: theme.color,
     fontFamily: theme.fontFamily
       ? `${theme.fontFamily}, ${theme.fontFamily_system}`
       : `${theme.fontFamily_system}`,

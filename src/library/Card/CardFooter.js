@@ -33,15 +33,15 @@ type State = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  CardFooter_backgroundColor: baseTheme.color_gray_20,
-  CardFooter_borderColor: baseTheme.color_gray_40,
+  CardFooter_backgroundColor: baseTheme.well_backgroundColor,
+  CardFooter_borderColor: baseTheme.borderColor,
 
   CardFooterRow_marginVertical: baseTheme.space_stack_sm,
   CardFooterRow_marginVerticalLast: baseTheme.space_stack_md,
 
-  CardFooterTitle_color: baseTheme.color_h5,
-  CardFooterTitle_fontSize: baseTheme.fontSize_h5,
-  CardFooterTitle_fontWeight: baseTheme.fontWeight_h5,
+  CardFooterTitle_color: baseTheme.h5_color,
+  CardFooterTitle_fontSize: baseTheme.h5_fontSize,
+  CardFooterTitle_fontWeight: baseTheme.h5_fontWeight,
 
   ...baseTheme
 });
@@ -69,8 +69,8 @@ const styles = {
     if (variant) {
       theme = {
         ...theme,
-        CardFooter_backgroundColor: theme[`backgroundColor_${variant}_muted`],
-        CardFooter_borderColor: theme[`borderColor_${variant}_muted`]
+        CardFooter_backgroundColor: theme[`well_backgroundColor_${variant}`],
+        CardFooter_borderColor: theme[`well_borderColor_${variant}`]
       };
     }
 
@@ -129,8 +129,9 @@ const styles = {
       margin: `-${pxToEm(4)}`
     },
 
+    // Icon
     '& [role="img"]': {
-      fill: theme.color_text
+      color: theme.icon_color
     }
   })
 };

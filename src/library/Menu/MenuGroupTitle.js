@@ -8,7 +8,7 @@ type Props = Object;
 // [1] Deviation from h5 for optics relative to a MenuItem
 export const componentTheme = (baseTheme: Object) => ({
   MenuGroupTitle_fontSize: baseTheme.fontSize_mouse, // [1]
-  MenuGroupTitle_fontWeight: baseTheme.fontWeight_h5,
+  MenuGroupTitle_fontWeight: baseTheme.h5_fontWeight,
   MenuGroupTitle_paddingTop: baseTheme.space_stack_md,
   MenuGroupTitle_paddingBottom: baseTheme.space_stack_sm,
 

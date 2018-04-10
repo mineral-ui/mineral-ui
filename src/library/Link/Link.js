@@ -14,11 +14,11 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  Link_borderColor_focus: baseTheme.borderColor_focus,
-  Link_color: baseTheme.color_text_primary,
-  Link_color_active: baseTheme.color_text_primary_active,
-  Link_color_hover: baseTheme.color_text_primary_hover,
-  Link_color_focus: baseTheme.color_text_primary_focus,
+  Link_borderColor_focus: baseTheme.borderColor_theme_focus,
+  Link_color: baseTheme.color_theme,
+  Link_color_active: baseTheme.color_theme_active,
+  Link_color_hover: baseTheme.color_theme_hover,
+  Link_color_focus: baseTheme.color_theme_focus,
 
   ...baseTheme
 });
@@ -31,10 +31,10 @@ const linkStyles = ({ variant, theme: baseTheme }) => {
     theme = {
       ...theme,
       Link_borderColor_focus: baseTheme[`borderColor_${variant}_focus`],
-      Link_color: baseTheme[`color_text_${variant}`],
-      Link_color_hover: baseTheme[`color_text_${variant}_hover`],
-      Link_color_focus: baseTheme[`color_text_${variant}_focus`],
-      Link_color_active: baseTheme[`color_text_${variant}_active`],
+      Link_color: baseTheme[`color_${variant}`],
+      Link_color_hover: baseTheme[`color_${variant}_hover`],
+      Link_color_focus: baseTheme[`color_${variant}_focus`],
+      Link_color_active: baseTheme[`color_${variant}_active`],
     };
   }
 
