@@ -49,13 +49,14 @@ type Props = {
 
 export const componentTheme = (baseTheme: Object) => {
   const colors = {
-    background: baseTheme.color_white,
+    background: baseTheme.input_backgroundColor,
     regular: baseTheme.borderColor,
-    checked: baseTheme.color_theme_60,
-    focus: baseTheme.color_theme_60,
-    hover: baseTheme.color_theme_70
+    checked: baseTheme.borderColor_theme,
+    focus: baseTheme.borderColor_theme_focus,
+    hover: baseTheme.borderColor_theme_hover
   };
 
+  // prettier-ignore
   return {
     ChoiceControl_backgroundColor: colors.background,
     ChoiceControl_backgroundColor_checked: colors.checked,
@@ -65,14 +66,12 @@ export const componentTheme = (baseTheme: Object) => {
     ChoiceControl_borderColor_checked: colors.checked,
     ChoiceControl_borderColor_checkedHover: colors.hover,
     ChoiceControl_borderRadius: baseTheme.borderRadius_1,
-    ChoiceControl_boxShadow_focus: `0 0 0 1px ${colors.background}, 0 0 0 2px ${
-      colors.focus
-    }`,
+    ChoiceControl_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${colors.focus}`,
     ChoiceControl_marginHorizontal: baseTheme.space_inline_md,
     ChoiceControl_size: pxToEm(16),
     ChoiceControl_size_jumbo: pxToEm(24),
 
-    ChoiceText_color_text: baseTheme.color_text_80,
+    ChoiceText_color: baseTheme.color,
     ChoiceText_fontSize: baseTheme.fontSize_ui,
     ChoiceText_fontSize_small: pxToEm(12),
 
@@ -85,7 +84,7 @@ const styles = {
     const theme = componentTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
     const backgroundColor = disabled
-      ? theme.backgroundColor_disabled
+      ? theme.input_backgroundColor_disabled
       : theme.ChoiceControl_backgroundColor;
     const controlDimensions =
       size === 'jumbo'
@@ -192,7 +191,7 @@ const styles = {
     const labelPositionStart = labelPosition === 'start';
 
     return {
-      color: disabled ? theme.color_text_disabled : theme.ChoiceText_color_text,
+      color: disabled ? theme.color_disabled : theme.ChoiceText_color,
       fontSize:
         size === 'small'
           ? theme.ChoiceText_fontSize_small
