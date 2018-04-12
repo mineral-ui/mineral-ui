@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button demo examples circular 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
+.css-0,
+[data-css-0] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -22,6 +16,12 @@ exports[`Button demo examples circular 1`] = `
   -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+}
+
+.css-1 > *,
+[data-css-1] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .css-2,
@@ -588,7 +588,7 @@ exports[`Button demo examples circular 1`] = `
 <Component>
   <glamorous(div)>
     <div
-      className="css-0"
+      className="css-1"
     >
       <Button
         aria-label="Cloud"
@@ -614,7 +614,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -677,7 +677,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -740,7 +740,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -801,7 +801,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -862,7 +862,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -923,7 +923,7 @@ exports[`Button demo examples circular 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -966,57 +966,8 @@ exports[`Button demo examples circular 1`] = `
 `;
 
 exports[`Button demo examples default 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-2,
-[data-css-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-2:first-child,
-[data-css-2]:first-child,
-.css-2[data-simulate-firstchild],
-[data-css-2][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-2:last-child,
-[data-css-2]:last-child,
-.css-2[data-simulate-lastchild],
-[data-css-2][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
-}
-
-.css-9,
-[data-css-9] {
+.css-0,
+[data-css-0] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1040,19 +991,19 @@ exports[`Button demo examples default 1`] = `
   vertical-align: middle;
 }
 
-.css-9 *,
-[data-css-9] *,
-.css-9 *::before,
-[data-css-9] *::before,
-.css-9 *::after,
-[data-css-9] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-9:focus,
-[data-css-9]:focus,
-.css-9[data-simulate-focus],
-[data-css-9][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -1060,50 +1011,99 @@ exports[`Button demo examples default 1`] = `
   text-decoration: none;
 }
 
-.css-9:hover,
-[data-css-9]:hover,
-.css-9[data-simulate-hover],
-[data-css-9][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #333840;
   text-decoration: none;
 }
 
-.css-9:active,
-[data-css-9]:active,
-.css-9[data-simulate-active],
-[data-css-9][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-9::-moz-focus-inner,
-[data-css-9]::-moz-focus-inner,
-.css-9[data-simulate-mozfocusinner],
-[data-css-9][data-simulate-mozfocusinner] {
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.css-9 [role="img"],
-[data-css-9] [role="img"] {
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
   box-sizing: content-box;
   fill: #2e6fd9;
   display: block;
 }
 
-.css-9 [role="img"]:first-child,
-[data-css-9] [role="img"]:first-child {
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-9 [role="img"]:last-child,
-[data-css-9] [role="img"]:last-child {
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-9 [role="img"]:only-child,
-[data-css-9] [role="img"]:only-child {
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
   margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.css-22 > *,
+[data-css-22] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .css-23,
@@ -1470,7 +1470,7 @@ exports[`Button demo examples default 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-0"
+    className="css-22"
   >
     <Button
       element="button"
@@ -1486,18 +1486,18 @@ exports[`Button demo examples default 1`] = `
         variant="regular"
       >
         <button
-          className="css-9"
+          className="css-0"
           type="button"
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Default
                 </span>
@@ -1526,13 +1526,13 @@ exports[`Button demo examples default 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Success
                 </span>
@@ -1561,13 +1561,13 @@ exports[`Button demo examples default 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Warning
                 </span>
@@ -1596,13 +1596,13 @@ exports[`Button demo examples default 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Danger
                 </span>
@@ -1634,13 +1634,13 @@ exports[`Button demo examples default 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Disabled
                 </span>
@@ -1654,417 +1654,9 @@ exports[`Button demo examples default 1`] = `
 </glamorous(div)>
 `;
 
-exports[`Button demo examples element 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-2,
-[data-css-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-2:first-child,
-[data-css-2]:first-child,
-.css-2[data-simulate-firstchild],
-[data-css-2][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-2:last-child,
-[data-css-2]:last-child,
-.css-2[data-simulate-lastchild],
-[data-css-2][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
-}
-
-.css-9,
-[data-css-9] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.5em;
-  min-width: 2.5em;
-  padding: 0 0.5em;
-  text-decoration: none;
-  vertical-align: middle;
-}
-
-.css-9 *,
-[data-css-9] *,
-.css-9 *::before,
-[data-css-9] *::before,
-.css-9 *::after,
-[data-css-9] *::after {
-  box-sizing: inherit;
-}
-
-.css-9:focus,
-[data-css-9]:focus,
-.css-9[data-simulate-focus],
-[data-css-9][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #2e6fd9;
-  color: #333840;
-  text-decoration: none;
-}
-
-.css-9:hover,
-[data-css-9]:hover,
-.css-9[data-simulate-hover],
-[data-css-9][data-simulate-hover] {
-  background-color: #f5f7fa;
-  color: #333840;
-  text-decoration: none;
-}
-
-.css-9:active,
-[data-css-9]:active,
-.css-9[data-simulate-active],
-[data-css-9][data-simulate-active] {
-  background-color: #dde3ed;
-  color: #333840;
-}
-
-.css-9::-moz-focus-inner,
-[data-css-9]::-moz-focus-inner,
-.css-9[data-simulate-mozfocusinner],
-[data-css-9][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.css-9 [role="img"],
-[data-css-9] [role="img"] {
-  box-sizing: content-box;
-  fill: #2e6fd9;
-  display: block;
-}
-
-.css-9 [role="img"]:first-child,
-[data-css-9] [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.css-9 [role="img"]:last-child,
-[data-css-9] [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.css-9 [role="img"]:only-child,
-[data-css-9] [role="img"]:only-child {
-  margin: 0;
-}
-
-.css-23,
-[data-css-23] {
-  color: #333840;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.5em;
-  min-width: 2.5em;
-  padding: 0 0.5em;
-  vertical-align: middle;
-}
-
-.css-23:hover,
-[data-css-23]:hover,
-.css-23[data-simulate-hover],
-[data-css-23][data-simulate-hover] {
-  color: #333840;
-  text-decoration: none;
-  background-color: #f5f7fa;
-}
-
-.css-23:focus,
-[data-css-23]:focus,
-.css-23[data-simulate-focus],
-[data-css-23][data-simulate-focus] {
-  color: #333840;
-  outline: 1px solid #2e6fd9;
-  outline-offset: 2px;
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #2e6fd9;
-  text-decoration: none;
-}
-
-.css-23:active,
-[data-css-23]:active,
-.css-23[data-simulate-active],
-[data-css-23][data-simulate-active] {
-  color: #333840;
-  background-color: #dde3ed;
-}
-
-.css-23 *,
-[data-css-23] *,
-.css-23 *::before,
-[data-css-23] *::before,
-.css-23 *::after,
-[data-css-23] *::after {
-  box-sizing: inherit;
-}
-
-.css-23::-moz-focus-inner,
-[data-css-23]::-moz-focus-inner,
-.css-23[data-simulate-mozfocusinner],
-[data-css-23][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.css-23 [role="img"],
-[data-css-23] [role="img"] {
-  box-sizing: content-box;
-  fill: #2e6fd9;
-  display: block;
-}
-
-.css-23 [role="img"]:first-child,
-[data-css-23] [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.css-23 [role="img"]:last-child,
-[data-css-23] [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.css-23 [role="img"]:only-child,
-[data-css-23] [role="img"]:only-child {
-  margin: 0;
-}
-
-<glamorous(div)>
-  <div
-    className="css-0"
-  >
-    <Button
-      element="a"
-      size="large"
-      type="button"
-      variant="regular"
-    >
-      <glamorous(a)
-        element="a"
-        size="large"
-        text="Anchor"
-        type="button"
-        variant="regular"
-      >
-        <a
-          className="css-9"
-        >
-          <glamorous(span)>
-            <span
-              className="css-1"
-            >
-              <glamorous(span)
-                size="large"
-              >
-                <span
-                  className="css-2"
-                >
-                  Anchor
-                </span>
-              </glamorous(span)>
-            </span>
-          </glamorous(span)>
-        </a>
-      </glamorous(a)>
-    </Button>
-    <Button
-      element={[Function]}
-      href="https://mineral-ui.com"
-      size="large"
-      type="button"
-      variant="regular"
-    >
-      <glamorous(Link)
-        element={[Function]}
-        href="https://mineral-ui.com"
-        size="large"
-        text="Mineral Link"
-        type="button"
-        variant="regular"
-      >
-        <Link
-          className="css-9"
-          href="https://mineral-ui.com"
-          size="large"
-          type="button"
-        >
-          <Link
-            className="css-9"
-            href="https://mineral-ui.com"
-            size="large"
-            type="button"
-            variant="regular"
-          >
-            <a
-              className="css-23"
-              href="https://mineral-ui.com"
-              type="button"
-            >
-              <glamorous(span)>
-                <span
-                  className="css-1"
-                >
-                  <glamorous(span)
-                    size="large"
-                  >
-                    <span
-                      className="css-2"
-                    >
-                      Mineral Link
-                    </span>
-                  </glamorous(span)>
-                </span>
-              </glamorous(span)>
-            </a>
-          </Link>
-        </Link>
-      </glamorous(Link)>
-    </Button>
-    <BrowserRouter>
-      <Router
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "blank",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
-      >
-        <Button
-          element={[Function]}
-          size="large"
-          to="/"
-          type="button"
-          variant="regular"
-        >
-          <glamorous(Link)
-            element={[Function]}
-            size="large"
-            text="React Router Link"
-            to="/"
-            type="button"
-            variant="regular"
-          >
-            <Link
-              className="css-9"
-              replace={false}
-              size="large"
-              to="/"
-              type="button"
-            >
-              <a
-                className="css-9"
-                href="/"
-                onClick={[Function]}
-                size="large"
-                type="button"
-              >
-                <glamorous(span)>
-                  <span
-                    className="css-1"
-                  >
-                    <glamorous(span)
-                      size="large"
-                    >
-                      <span
-                        className="css-2"
-                      >
-                        React Router Link
-                      </span>
-                    </glamorous(span)>
-                  </span>
-                </glamorous(span)>
-              </a>
-            </Link>
-          </glamorous(Link)>
-        </Button>
-      </Router>
-    </BrowserRouter>
-  </div>
-</glamorous(div)>
-`;
-
 exports[`Button demo examples icon-only 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
+.css-0,
+[data-css-0] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -2078,6 +1670,12 @@ exports[`Button demo examples icon-only 1`] = `
   -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+}
+
+.css-1 > *,
+[data-css-1] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .css-2,
@@ -2644,7 +2242,7 @@ exports[`Button demo examples icon-only 1`] = `
 <Component>
   <glamorous(div)>
     <div
-      className="css-0"
+      className="css-1"
     >
       <Button
         aria-label="Cloud"
@@ -2668,7 +2266,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -2729,7 +2327,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -2790,7 +2388,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -2849,7 +2447,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -2908,7 +2506,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -2967,7 +2565,7 @@ exports[`Button demo examples icon-only 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-1"
+                className="css-0"
               >
                 <IconCloud
                   key="iconStart"
@@ -3010,24 +2608,18 @@ exports[`Button demo examples icon-only 1`] = `
 `;
 
 exports[`Button demo examples icons 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
+.css-0,
+[data-css-0] {
   box-sizing: border-box;
-  color: #fff;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #2e6fd9;
-  border-color: transparent;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
@@ -3041,74 +2633,74 @@ exports[`Button demo examples icons 1`] = `
   vertical-align: middle;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-1:focus,
-[data-css-1]:focus,
-.css-1[data-simulate-focus],
-[data-css-1][data-simulate-focus] {
-  background-color: #2e6fd9;
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
-  color: #fff;
+  color: #333840;
   text-decoration: none;
 }
 
-.css-1:hover,
-[data-css-1]:hover,
-.css-1[data-simulate-hover],
-[data-css-1][data-simulate-hover] {
-  background-color: #4a89e8;
-  color: #fff;
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
   text-decoration: none;
 }
 
-.css-1:active,
-[data-css-1]:active,
-.css-1[data-simulate-active],
-[data-css-1][data-simulate-active] {
-  background-color: #1f5dc2;
-  color: #fff;
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
 }
 
-.css-1::-moz-focus-inner,
-[data-css-1]::-moz-focus-inner,
-.css-1[data-simulate-mozfocusinner],
-[data-css-1][data-simulate-mozfocusinner] {
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.css-1 [role="img"],
-[data-css-1] [role="img"] {
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
   box-sizing: content-box;
-  fill: currentColor;
+  fill: #2e6fd9;
   display: block;
 }
 
-.css-1 [role="img"]:first-child,
-[data-css-1] [role="img"]:first-child {
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-1 [role="img"]:last-child,
-[data-css-1] [role="img"]:last-child {
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-1 [role="img"]:only-child,
-[data-css-1] [role="img"]:only-child {
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
   margin: 0;
 }
 
-.css-15,
-[data-css-15] {
+.css-14,
+[data-css-14] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -3124,8 +2716,8 @@ exports[`Button demo examples icons 1`] = `
   -webkit-justify-content: center;
 }
 
-.css-16,
-[data-css-16] {
+.css-15,
+[data-css-15] {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3136,32 +2728,38 @@ exports[`Button demo examples icons 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-16:first-child,
-[data-css-16]:first-child,
-.css-16[data-simulate-firstchild],
-[data-css-16][data-simulate-firstchild] {
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
   padding-left: 0.5714285714285714em;
 }
 
-.css-16:last-child,
-[data-css-16]:last-child,
-.css-16[data-simulate-lastchild],
-[data-css-16][data-simulate-lastchild] {
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
   padding-right: 0.5714285714285714em;
+}
+
+.css-22 > *,
+[data-css-22] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .css-23,
 [data-css-23] {
   box-sizing: border-box;
-  color: #333840;
+  color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
+  background-color: #2e6fd9;
+  border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
@@ -3188,10 +2786,10 @@ exports[`Button demo examples icons 1`] = `
 [data-css-23]:focus,
 .css-23[data-simulate-focus],
 [data-css-23][data-simulate-focus] {
-  background-color: #ebeff5;
+  background-color: #2e6fd9;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
-  color: #333840;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -3199,8 +2797,8 @@ exports[`Button demo examples icons 1`] = `
 [data-css-23]:hover,
 .css-23[data-simulate-hover],
 [data-css-23][data-simulate-hover] {
-  background-color: #f5f7fa;
-  color: #333840;
+  background-color: #4a89e8;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -3208,8 +2806,8 @@ exports[`Button demo examples icons 1`] = `
 [data-css-23]:active,
 .css-23[data-simulate-active],
 [data-css-23][data-simulate-active] {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #1f5dc2;
+  color: #fff;
 }
 
 .css-23::-moz-focus-inner,
@@ -3222,7 +2820,7 @@ exports[`Button demo examples icons 1`] = `
 .css-23 [role="img"],
 [data-css-23] [role="img"] {
   box-sizing: content-box;
-  fill: #2e6fd9;
+  fill: currentColor;
   display: block;
 }
 
@@ -4035,7 +3633,7 @@ exports[`Button demo examples icons 1`] = `
 <Component>
   <glamorous(div)>
     <div
-      className="css-0"
+      className="css-22"
     >
       <Button
         element="button"
@@ -4052,12 +3650,12 @@ exports[`Button demo examples icons 1`] = `
           variant="regular"
         >
           <button
-            className="css-23"
+            className="css-0"
             type="button"
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4093,7 +3691,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Start icon
                   </span>
@@ -4118,18 +3716,18 @@ exports[`Button demo examples icons 1`] = `
           variant="regular"
         >
           <button
-            className="css-23"
+            className="css-0"
             type="button"
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <glamorous(span)
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     End icon
                   </span>
@@ -4185,12 +3783,12 @@ exports[`Button demo examples icons 1`] = `
           variant="regular"
         >
           <button
-            className="css-23"
+            className="css-0"
             type="button"
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4226,7 +3824,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Both icons
                   </span>
@@ -4285,12 +3883,12 @@ exports[`Button demo examples icons 1`] = `
           variant="regular"
         >
           <button
-            className="css-1"
+            className="css-23"
             type="button"
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4326,7 +3924,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Primary
                   </span>
@@ -4358,7 +3956,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4394,7 +3992,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Minimal
                   </span>
@@ -4424,7 +4022,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4460,7 +4058,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Danger
                   </span>
@@ -4490,7 +4088,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4526,7 +4124,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Success
                   </span>
@@ -4556,7 +4154,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4592,7 +4190,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Warning
                   </span>
@@ -4625,7 +4223,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4661,7 +4259,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Disabled
                   </span>
@@ -4693,7 +4291,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4759,7 +4357,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4820,12 +4418,12 @@ exports[`Button demo examples icons 1`] = `
           variant="regular"
         >
           <button
-            className="css-23"
+            className="css-0"
             type="button"
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4861,7 +4459,7 @@ exports[`Button demo examples icons 1`] = `
                   size="large"
                 >
                   <span
-                    className="css-16"
+                    className="css-15"
                   >
                     Large
                   </span>
@@ -4891,7 +4489,7 @@ exports[`Button demo examples icons 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-15"
+                className="css-14"
               >
                 <IconCloud
                   key="iconStart"
@@ -4945,6 +4543,180 @@ exports[`Button demo examples icons 1`] = `
 exports[`Button demo examples link 1`] = `
 .css-0,
 [data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Button
+  element="a"
+  href="#link"
+  size="large"
+  type="button"
+  variant="regular"
+>
+  <glamorous(a)
+    element="a"
+    href="#link"
+    size="large"
+    text="Link"
+    type="button"
+    variant="regular"
+  >
+    <a
+      className="css-0"
+      href="#link"
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
+          >
+            <span
+              className="css-15"
+            >
+              Link
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </a>
+  </glamorous(a)>
+</Button>
+`;
+
+exports[`Button demo examples minimal 1`] = `
+.css-0,
+[data-css-0] {
   align-items: center;
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -4986,184 +4758,10 @@ exports[`Button demo examples link 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.css-8,
-[data-css-8] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.5em;
-  min-width: 2.5em;
-  padding: 0 0.5em;
-  text-decoration: none;
-  vertical-align: middle;
-}
-
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
-  box-sizing: inherit;
-}
-
-.css-8:focus,
-[data-css-8]:focus,
-.css-8[data-simulate-focus],
-[data-css-8][data-simulate-focus] {
-  background-color: #ebeff5;
-  border-color: #fff;
-  box-shadow: 0 0 0 1px #2e6fd9;
-  color: #333840;
-  text-decoration: none;
-}
-
-.css-8:hover,
-[data-css-8]:hover,
-.css-8[data-simulate-hover],
-[data-css-8][data-simulate-hover] {
-  background-color: #f5f7fa;
-  color: #333840;
-  text-decoration: none;
-}
-
-.css-8:active,
-[data-css-8]:active,
-.css-8[data-simulate-active],
-[data-css-8][data-simulate-active] {
-  background-color: #dde3ed;
-  color: #333840;
-}
-
-.css-8::-moz-focus-inner,
-[data-css-8]::-moz-focus-inner,
-.css-8[data-simulate-mozfocusinner],
-[data-css-8][data-simulate-mozfocusinner] {
-  border: 0;
-}
-
-.css-8 [role="img"],
-[data-css-8] [role="img"] {
-  box-sizing: content-box;
-  fill: #2e6fd9;
-  display: block;
-}
-
-.css-8 [role="img"]:first-child,
-[data-css-8] [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.css-8 [role="img"]:last-child,
-[data-css-8] [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.css-8 [role="img"]:only-child,
-[data-css-8] [role="img"]:only-child {
-  margin: 0;
-}
-
-<Button
-  element="a"
-  href="#link"
-  size="large"
-  type="button"
-  variant="regular"
->
-  <glamorous(a)
-    element="a"
-    href="#link"
-    size="large"
-    text="Link"
-    type="button"
-    variant="regular"
-  >
-    <a
-      className="css-8"
-      href="#link"
-    >
-      <glamorous(span)>
-        <span
-          className="css-0"
-        >
-          <glamorous(span)
-            size="large"
-          >
-            <span
-              className="css-1"
-            >
-              Link
-            </span>
-          </glamorous(span)>
-        </span>
-      </glamorous(span)>
-    </a>
-  </glamorous(a)>
-</Button>
-`;
-
-exports[`Button demo examples minimal 1`] = `
-.css-0 > *,
-[data-css-0] > * {
+.css-8 > *,
+[data-css-8] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-2,
-[data-css-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-2:first-child,
-[data-css-2]:first-child,
-.css-2[data-simulate-firstchild],
-[data-css-2][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-2:last-child,
-[data-css-2]:last-child,
-.css-2[data-simulate-lastchild],
-[data-css-2][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
 }
 
 .css-9,
@@ -5616,7 +5214,7 @@ exports[`Button demo examples minimal 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-0"
+    className="css-8"
   >
     <Button
       element="button"
@@ -5639,13 +5237,13 @@ exports[`Button demo examples minimal 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-1"
                 >
                   Default
                 </span>
@@ -5676,13 +5274,13 @@ exports[`Button demo examples minimal 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-1"
                 >
                   Success
                 </span>
@@ -5713,13 +5311,13 @@ exports[`Button demo examples minimal 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-1"
                 >
                   Warning
                 </span>
@@ -5750,13 +5348,13 @@ exports[`Button demo examples minimal 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-1"
                 >
                   Danger
                 </span>
@@ -5790,13 +5388,13 @@ exports[`Button demo examples minimal 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-1"
                 >
                   Disabled
                 </span>
@@ -5811,14 +5409,57 @@ exports[`Button demo examples minimal 1`] = `
 `;
 
 exports[`Button demo examples primary 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+.css-0,
+[data-css-0] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
 }
 
 .css-1,
 [data-css-1] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1[data-simulate-firstchild],
+[data-css-1][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.css-8 > *,
+[data-css-8] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.css-9,
+[data-css-9] {
   box-sizing: border-box;
   color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -5842,19 +5483,19 @@ exports[`Button demo examples primary 1`] = `
   vertical-align: middle;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.css-9 *,
+[data-css-9] *,
+.css-9 *::before,
+[data-css-9] *::before,
+.css-9 *::after,
+[data-css-9] *::after {
   box-sizing: inherit;
 }
 
-.css-1:focus,
-[data-css-1]:focus,
-.css-1[data-simulate-focus],
-[data-css-1][data-simulate-focus] {
+.css-9:focus,
+[data-css-9]:focus,
+.css-9[data-simulate-focus],
+[data-css-9][data-simulate-focus] {
   background-color: #2e6fd9;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -5862,93 +5503,50 @@ exports[`Button demo examples primary 1`] = `
   text-decoration: none;
 }
 
-.css-1:hover,
-[data-css-1]:hover,
-.css-1[data-simulate-hover],
-[data-css-1][data-simulate-hover] {
+.css-9:hover,
+[data-css-9]:hover,
+.css-9[data-simulate-hover],
+[data-css-9][data-simulate-hover] {
   background-color: #4a89e8;
   color: #fff;
   text-decoration: none;
 }
 
-.css-1:active,
-[data-css-1]:active,
-.css-1[data-simulate-active],
-[data-css-1][data-simulate-active] {
+.css-9:active,
+[data-css-9]:active,
+.css-9[data-simulate-active],
+[data-css-9][data-simulate-active] {
   background-color: #1f5dc2;
   color: #fff;
 }
 
-.css-1::-moz-focus-inner,
-[data-css-1]::-moz-focus-inner,
-.css-1[data-simulate-mozfocusinner],
-[data-css-1][data-simulate-mozfocusinner] {
+.css-9::-moz-focus-inner,
+[data-css-9]::-moz-focus-inner,
+.css-9[data-simulate-mozfocusinner],
+[data-css-9][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.css-1 [role="img"],
-[data-css-1] [role="img"] {
+.css-9 [role="img"],
+[data-css-9] [role="img"] {
   box-sizing: content-box;
   fill: currentColor;
   display: block;
 }
 
-.css-1 [role="img"]:first-child,
-[data-css-1] [role="img"]:first-child {
+.css-9 [role="img"]:first-child,
+[data-css-9] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-1 [role="img"]:last-child,
-[data-css-1] [role="img"]:last-child {
+.css-9 [role="img"]:last-child,
+[data-css-9] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-1 [role="img"]:only-child,
-[data-css-1] [role="img"]:only-child {
+.css-9 [role="img"]:only-child,
+[data-css-9] [role="img"]:only-child {
   margin: 0;
-}
-
-.css-15,
-[data-css-15] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-16,
-[data-css-16] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-16:first-child,
-[data-css-16]:first-child,
-.css-16[data-simulate-firstchild],
-[data-css-16][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-16:last-child,
-[data-css-16]:last-child,
-.css-16[data-simulate-lastchild],
-[data-css-16][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
 }
 
 .css-23,
@@ -6315,7 +5913,7 @@ exports[`Button demo examples primary 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-0"
+    className="css-8"
   >
     <Button
       element="button"
@@ -6333,18 +5931,18 @@ exports[`Button demo examples primary 1`] = `
         variant="regular"
       >
         <button
-          className="css-1"
+          className="css-9"
           type="button"
         >
           <glamorous(span)>
             <span
-              className="css-15"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-16"
+                  className="css-1"
                 >
                   Default
                 </span>
@@ -6375,13 +5973,13 @@ exports[`Button demo examples primary 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-15"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-16"
+                  className="css-1"
                 >
                   Success
                 </span>
@@ -6412,13 +6010,13 @@ exports[`Button demo examples primary 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-15"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-16"
+                  className="css-1"
                 >
                   Warning
                 </span>
@@ -6449,13 +6047,13 @@ exports[`Button demo examples primary 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-15"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-16"
+                  className="css-1"
                 >
                   Danger
                 </span>
@@ -6489,13 +6087,13 @@ exports[`Button demo examples primary 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-15"
+              className="css-0"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-16"
+                  className="css-1"
                 >
                   Disabled
                 </span>
@@ -6731,57 +6329,8 @@ exports[`Button demo examples rtl 1`] = `
 `;
 
 exports[`Button demo examples sizes 1`] = `
-.css-0 > *,
-[data-css-0] > * {
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.css-1,
-[data-css-1] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-2,
-[data-css-2] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-2:first-child,
-[data-css-2]:first-child,
-.css-2[data-simulate-firstchild],
-[data-css-2][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-2:last-child,
-[data-css-2]:last-child,
-.css-2[data-simulate-lastchild],
-[data-css-2][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
-}
-
-.css-9,
-[data-css-9] {
+.css-0,
+[data-css-0] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -6805,19 +6354,19 @@ exports[`Button demo examples sizes 1`] = `
   vertical-align: middle;
 }
 
-.css-9 *,
-[data-css-9] *,
-.css-9 *::before,
-[data-css-9] *::before,
-.css-9 *::after,
-[data-css-9] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-9:focus,
-[data-css-9]:focus,
-.css-9[data-simulate-focus],
-[data-css-9][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -6825,50 +6374,99 @@ exports[`Button demo examples sizes 1`] = `
   text-decoration: none;
 }
 
-.css-9:hover,
-[data-css-9]:hover,
-.css-9[data-simulate-hover],
-[data-css-9][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #333840;
   text-decoration: none;
 }
 
-.css-9:active,
-[data-css-9]:active,
-.css-9[data-simulate-active],
-[data-css-9][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-9::-moz-focus-inner,
-[data-css-9]::-moz-focus-inner,
-.css-9[data-simulate-mozfocusinner],
-[data-css-9][data-simulate-mozfocusinner] {
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.css-9 [role="img"],
-[data-css-9] [role="img"] {
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
   box-sizing: content-box;
   fill: #2e6fd9;
   display: block;
 }
 
-.css-9 [role="img"]:first-child,
-[data-css-9] [role="img"]:first-child {
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-9 [role="img"]:last-child,
-[data-css-9] [role="img"]:last-child {
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-9 [role="img"]:only-child,
-[data-css-9] [role="img"]:only-child {
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
   margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.css-22 > *,
+[data-css-22] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .css-23,
@@ -7288,7 +6886,7 @@ exports[`Button demo examples sizes 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-0"
+    className="css-22"
   >
     <Button
       element="button"
@@ -7309,7 +6907,7 @@ exports[`Button demo examples sizes 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="small"
@@ -7344,7 +6942,7 @@ exports[`Button demo examples sizes 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="medium"
@@ -7374,18 +6972,18 @@ exports[`Button demo examples sizes 1`] = `
         variant="regular"
       >
         <button
-          className="css-9"
+          className="css-0"
           type="button"
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Large
                 </span>
@@ -7414,7 +7012,7 @@ exports[`Button demo examples sizes 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="jumbo"
@@ -7451,13 +7049,13 @@ exports[`Button demo examples sizes 1`] = `
         >
           <glamorous(span)>
             <span
-              className="css-1"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-2"
+                  className="css-15"
                 >
                   Full Width
                 </span>
@@ -7475,15 +7073,15 @@ exports[`Button demo examples states 1`] = `
 .css-0,
 [data-css-0] {
   box-sizing: border-box;
-  color: #fff;
+  color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #2e6fd9;
-  border-color: transparent;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
@@ -7510,10 +7108,10 @@ exports[`Button demo examples states 1`] = `
 [data-css-0]:focus,
 .css-0[data-simulate-focus],
 [data-css-0][data-simulate-focus] {
-  background-color: #2e6fd9;
+  background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
-  color: #fff;
+  color: #333840;
   text-decoration: none;
 }
 
@@ -7521,8 +7119,8 @@ exports[`Button demo examples states 1`] = `
 [data-css-0]:hover,
 .css-0[data-simulate-hover],
 [data-css-0][data-simulate-hover] {
-  background-color: #4a89e8;
-  color: #fff;
+  background-color: #f5f7fa;
+  color: #333840;
   text-decoration: none;
 }
 
@@ -7530,8 +7128,8 @@ exports[`Button demo examples states 1`] = `
 [data-css-0]:active,
 .css-0[data-simulate-active],
 [data-css-0][data-simulate-active] {
-  background-color: #1f5dc2;
-  color: #fff;
+  background-color: #dde3ed;
+  color: #333840;
 }
 
 .css-0::-moz-focus-inner,
@@ -7544,7 +7142,7 @@ exports[`Button demo examples states 1`] = `
 .css-0 [role="img"],
 [data-css-0] [role="img"] {
   box-sizing: content-box;
-  fill: currentColor;
+  fill: #2e6fd9;
   display: block;
 }
 
@@ -7616,7 +7214,7 @@ exports[`Button demo examples states 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #0a8f4c;
+  background-color: #2e6fd9;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7644,9 +7242,9 @@ exports[`Button demo examples states 1`] = `
 [data-css-22]:focus,
 .css-22[data-simulate-focus],
 [data-css-22][data-simulate-focus] {
-  background-color: #0a8f4c;
+  background-color: #2e6fd9;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #0a8f4c;
+  box-shadow: 0 0 0 1px #2e6fd9;
   color: #fff;
   text-decoration: none;
 }
@@ -7655,7 +7253,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-22]:hover,
 .css-22[data-simulate-hover],
 [data-css-22][data-simulate-hover] {
-  background-color: #10a35a;
+  background-color: #4a89e8;
   color: #fff;
   text-decoration: none;
 }
@@ -7664,7 +7262,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-22]:active,
 .css-22[data-simulate-active],
 [data-css-22][data-simulate-active] {
-  background-color: #06783f;
+  background-color: #1f5dc2;
   color: #fff;
 }
 
@@ -7707,7 +7305,7 @@ exports[`Button demo examples states 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #e05b2b;
+  background-color: #0a8f4c;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7735,9 +7333,9 @@ exports[`Button demo examples states 1`] = `
 [data-css-36]:focus,
 .css-36[data-simulate-focus],
 [data-css-36][data-simulate-focus] {
-  background-color: #e05b2b;
+  background-color: #0a8f4c;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #cf4615;
+  box-shadow: 0 0 0 1px #0a8f4c;
   color: #fff;
   text-decoration: none;
 }
@@ -7746,7 +7344,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-36]:hover,
 .css-36[data-simulate-hover],
 [data-css-36][data-simulate-hover] {
-  background-color: #ed774c;
+  background-color: #10a35a;
   color: #fff;
   text-decoration: none;
 }
@@ -7755,7 +7353,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-36]:active,
 .css-36[data-simulate-active],
 [data-css-36][data-simulate-active] {
-  background-color: #cf4615;
+  background-color: #06783f;
   color: #fff;
 }
 
@@ -7798,7 +7396,7 @@ exports[`Button demo examples states 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #db2929;
+  background-color: #e05b2b;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7826,9 +7424,9 @@ exports[`Button demo examples states 1`] = `
 [data-css-50]:focus,
 .css-50[data-simulate-focus],
 [data-css-50][data-simulate-focus] {
-  background-color: #db2929;
+  background-color: #e05b2b;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #c71818;
+  box-shadow: 0 0 0 1px #cf4615;
   color: #fff;
   text-decoration: none;
 }
@@ -7837,7 +7435,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-50]:hover,
 .css-50[data-simulate-hover],
 [data-css-50][data-simulate-hover] {
-  background-color: #eb4d4d;
+  background-color: #ed774c;
   color: #fff;
   text-decoration: none;
 }
@@ -7846,7 +7444,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-50]:active,
 .css-50[data-simulate-active],
 [data-css-50][data-simulate-active] {
-  background-color: #c71818;
+  background-color: #cf4615;
   color: #fff;
 }
 
@@ -7882,19 +7480,19 @@ exports[`Button demo examples states 1`] = `
 .css-64,
 [data-css-64] {
   box-sizing: border-box;
-  color: #afbacc;
+  color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #db2929;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
-  cursor: default;
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
@@ -7917,10 +7515,10 @@ exports[`Button demo examples states 1`] = `
 [data-css-64]:focus,
 .css-64[data-simulate-focus],
 [data-css-64][data-simulate-focus] {
-  background-color: #2e6fd9;
+  background-color: #db2929;
   border-color: #fff;
-  box-shadow: 0 0 0 1px #2e6fd9;
-  color: #afbacc;
+  box-shadow: 0 0 0 1px #c71818;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -7928,7 +7526,8 @@ exports[`Button demo examples states 1`] = `
 [data-css-64]:hover,
 .css-64[data-simulate-hover],
 [data-css-64][data-simulate-hover] {
-  color: #afbacc;
+  background-color: #eb4d4d;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -7936,7 +7535,8 @@ exports[`Button demo examples states 1`] = `
 [data-css-64]:active,
 .css-64[data-simulate-active],
 [data-css-64][data-simulate-active] {
-  color: #afbacc;
+  background-color: #c71818;
+  color: #fff;
 }
 
 .css-64::-moz-focus-inner,
@@ -7971,19 +7571,19 @@ exports[`Button demo examples states 1`] = `
 .css-78,
 [data-css-78] {
   box-sizing: border-box;
-  color: #333840;
+  color: #afbacc;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
+  background-color: #dde3ed;
+  border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+  cursor: default;
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
@@ -8006,10 +7606,10 @@ exports[`Button demo examples states 1`] = `
 [data-css-78]:focus,
 .css-78[data-simulate-focus],
 [data-css-78][data-simulate-focus] {
-  background-color: #ebeff5;
+  background-color: #2e6fd9;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
-  color: #333840;
+  color: #afbacc;
   text-decoration: none;
 }
 
@@ -8017,8 +7617,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-78]:hover,
 .css-78[data-simulate-hover],
 [data-css-78][data-simulate-hover] {
-  background-color: #f5f7fa;
-  color: #333840;
+  color: #afbacc;
   text-decoration: none;
 }
 
@@ -8026,8 +7625,7 @@ exports[`Button demo examples states 1`] = `
 [data-css-78]:active,
 .css-78[data-simulate-active],
 [data-css-78][data-simulate-active] {
-  background-color: #dde3ed;
-  color: #333840;
+  color: #afbacc;
 }
 
 .css-78::-moz-focus-inner,
@@ -8040,7 +7638,7 @@ exports[`Button demo examples states 1`] = `
 .css-78 [role="img"],
 [data-css-78] [role="img"] {
   box-sizing: content-box;
-  fill: #2e6fd9;
+  fill: currentColor;
   display: block;
 }
 
@@ -9159,7 +8757,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           type="button"
         >
           <glamorous(span)>
@@ -9196,7 +8794,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           type="button"
         >
           <glamorous(span)>
@@ -9272,7 +8870,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           data-simulate-hover=""
           type="button"
         >
@@ -9312,7 +8910,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           data-simulate-hover=""
           type="button"
         >
@@ -9392,7 +8990,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           data-simulate-focus=""
           type="button"
         >
@@ -9432,7 +9030,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           data-simulate-focus=""
           type="button"
         >
@@ -9514,7 +9112,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           data-simulate-focus=""
           data-simulate-hover=""
           type="button"
@@ -9557,7 +9155,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           data-simulate-focus=""
           data-simulate-hover=""
           type="button"
@@ -9643,7 +9241,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           data-simulate-active=""
           data-simulate-focus=""
           type="button"
@@ -9686,7 +9284,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           data-simulate-active=""
           data-simulate-focus=""
           type="button"
@@ -9770,7 +9368,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-78"
+          className="css-0"
           data-simulate-active=""
           type="button"
         >
@@ -9810,7 +9408,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-0"
+          className="css-22"
           data-simulate-active=""
           type="button"
         >
@@ -9930,7 +9528,7 @@ exports[`Button demo examples states 1`] = `
         variant="regular"
       >
         <button
-          className="css-64"
+          className="css-78"
           disabled={true}
           type="button"
         >
@@ -10046,7 +9644,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           type="button"
         >
           <glamorous(span)>
@@ -10162,7 +9760,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           data-simulate-hover=""
           type="button"
         >
@@ -10282,7 +9880,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           data-simulate-focus=""
           type="button"
         >
@@ -10407,7 +10005,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           data-simulate-focus=""
           data-simulate-hover=""
           type="button"
@@ -10536,7 +10134,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           data-simulate-active=""
           data-simulate-focus=""
           type="button"
@@ -10660,7 +10258,7 @@ exports[`Button demo examples states 1`] = `
         variant="danger"
       >
         <button
-          className="css-50"
+          className="css-64"
           data-simulate-active=""
           type="button"
         >
@@ -10896,7 +10494,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           type="button"
         >
           <glamorous(span)>
@@ -11012,7 +10610,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           data-simulate-hover=""
           type="button"
         >
@@ -11132,7 +10730,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           data-simulate-focus=""
           type="button"
         >
@@ -11257,7 +10855,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           data-simulate-focus=""
           data-simulate-hover=""
           type="button"
@@ -11386,7 +10984,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           data-simulate-active=""
           data-simulate-focus=""
           type="button"
@@ -11510,7 +11108,7 @@ exports[`Button demo examples states 1`] = `
         variant="success"
       >
         <button
-          className="css-22"
+          className="css-36"
           data-simulate-active=""
           type="button"
         >
@@ -11746,7 +11344,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           type="button"
         >
           <glamorous(span)>
@@ -11862,7 +11460,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           data-simulate-hover=""
           type="button"
         >
@@ -11982,7 +11580,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           data-simulate-focus=""
           type="button"
         >
@@ -12107,7 +11705,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           data-simulate-focus=""
           data-simulate-hover=""
           type="button"
@@ -12236,7 +11834,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           data-simulate-active=""
           data-simulate-focus=""
           type="button"
@@ -12360,7 +11958,7 @@ exports[`Button demo examples states 1`] = `
         variant="warning"
       >
         <button
-          className="css-36"
+          className="css-50"
           data-simulate-active=""
           type="button"
         >
@@ -12551,49 +12149,6 @@ exports[`Button demo examples states 1`] = `
 exports[`Button demo examples truncation 1`] = `
 .css-0,
 [data-css-0] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-1,
-[data-css-1] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.css-1:first-child,
-[data-css-1]:first-child,
-.css-1[data-simulate-firstchild],
-[data-css-1][data-simulate-firstchild] {
-  padding-left: 0.5714285714285714em;
-}
-
-.css-1:last-child,
-[data-css-1]:last-child,
-.css-1[data-simulate-lastchild],
-[data-css-1][data-simulate-lastchild] {
-  padding-right: 0.5714285714285714em;
-}
-
-.css-8,
-[data-css-8] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -12617,19 +12172,19 @@ exports[`Button demo examples truncation 1`] = `
   vertical-align: middle;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-8:focus,
-[data-css-8]:focus,
-.css-8[data-simulate-focus],
-[data-css-8][data-simulate-focus] {
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
   background-color: #ebeff5;
   border-color: #fff;
   box-shadow: 0 0 0 1px #2e6fd9;
@@ -12637,50 +12192,93 @@ exports[`Button demo examples truncation 1`] = `
   text-decoration: none;
 }
 
-.css-8:hover,
-[data-css-8]:hover,
-.css-8[data-simulate-hover],
-[data-css-8][data-simulate-hover] {
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
   background-color: #f5f7fa;
   color: #333840;
   text-decoration: none;
 }
 
-.css-8:active,
-[data-css-8]:active,
-.css-8[data-simulate-active],
-[data-css-8][data-simulate-active] {
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-8::-moz-focus-inner,
-[data-css-8]::-moz-focus-inner,
-.css-8[data-simulate-mozfocusinner],
-[data-css-8][data-simulate-mozfocusinner] {
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
   border: 0;
 }
 
-.css-8 [role="img"],
-[data-css-8] [role="img"] {
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
   box-sizing: content-box;
   fill: #2e6fd9;
   display: block;
 }
 
-.css-8 [role="img"]:first-child,
-[data-css-8] [role="img"]:first-child {
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-8 [role="img"]:last-child,
-[data-css-8] [role="img"]:last-child {
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-8 [role="img"]:only-child,
-[data-css-8] [role="img"]:only-child {
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
   margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
 }
 
 .css-22 > button,
@@ -12706,18 +12304,18 @@ exports[`Button demo examples truncation 1`] = `
         variant="regular"
       >
         <button
-          className="css-8"
+          className="css-0"
           type="button"
         >
           <glamorous(span)>
             <span
-              className="css-0"
+              className="css-14"
             >
               <glamorous(span)
                 size="large"
               >
                 <span
-                  className="css-1"
+                  className="css-15"
                 >
                   Supercalifragilisticexpialidocious
                 </span>
@@ -12729,4 +12327,952 @@ exports[`Button demo examples truncation 1`] = `
     </Button>
   </div>
 </glamorous(div)>
+`;
+
+exports[`Button type prop is filtered when type=[button type] when element=NonFilteringLink 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+<Button
+  element={[Function]}
+  onClick={[MockFunction]}
+  size="large"
+  type="button"
+  variant="regular"
+>
+  <glamorous(NonFilteringLink)
+    element={[Function]}
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="button"
+    variant="regular"
+  >
+    <NonFilteringLink
+      className="css-0"
+      onClick={[MockFunction]}
+      size="large"
+    >
+      <a
+        className="css-0"
+        onClick={[MockFunction]}
+        size="large"
+      >
+        Do Something
+      </a>
+    </NonFilteringLink>
+  </glamorous(NonFilteringLink)>
+</Button>
+`;
+
+exports[`Button type prop is filtered when type=[button type] when element=a 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Button
+  element="a"
+  onClick={[MockFunction]}
+  size="large"
+  type="button"
+  variant="regular"
+>
+  <glamorous(a)
+    element="a"
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="button"
+    variant="regular"
+  >
+    <a
+      className="css-0"
+      onClick={[MockFunction]}
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
+          >
+            <span
+              className="css-15"
+            >
+              Do Something
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </a>
+  </glamorous(a)>
+</Button>
+`;
+
+exports[`Button type prop is filtered when type=[not a button type] when element=button 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Button
+  element="button"
+  onClick={[MockFunction]}
+  size="large"
+  type="foo"
+  variant="regular"
+>
+  <glamorous(button)
+    element="button"
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="foo"
+    variant="regular"
+  >
+    <button
+      className="css-0"
+      onClick={[MockFunction]}
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
+          >
+            <span
+              className="css-15"
+            >
+              Do Something
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </button>
+  </glamorous(button)>
+</Button>
+`;
+
+exports[`Button type prop is not filtered when type=[MIME type] when element=NonFilteringLink 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+<Button
+  element={[Function]}
+  onClick={[MockFunction]}
+  size="large"
+  type="video"
+  variant="regular"
+>
+  <glamorous(NonFilteringLink)
+    element={[Function]}
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="video"
+    variant="regular"
+  >
+    <NonFilteringLink
+      className="css-0"
+      onClick={[MockFunction]}
+      size="large"
+      type="video"
+    >
+      <a
+        className="css-0"
+        onClick={[MockFunction]}
+        size="large"
+        type="video"
+      >
+        Do Something
+      </a>
+    </NonFilteringLink>
+  </glamorous(NonFilteringLink)>
+</Button>
+`;
+
+exports[`Button type prop is not filtered when type=[MIME type] when element=a 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Button
+  element="a"
+  onClick={[MockFunction]}
+  size="large"
+  type="video"
+  variant="regular"
+>
+  <glamorous(a)
+    element="a"
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="video"
+    variant="regular"
+  >
+    <a
+      className="css-0"
+      onClick={[MockFunction]}
+      type="video"
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
+          >
+            <span
+              className="css-15"
+            >
+              Do Something
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </a>
+  </glamorous(a)>
+</Button>
+`;
+
+exports[`Button type prop is not filtered when type=[button type] when element=button 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-0:focus,
+[data-css-0]:focus,
+.css-0[data-simulate-focus],
+[data-css-0][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:hover,
+[data-css-0]:hover,
+.css-0[data-simulate-hover],
+[data-css-0][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-0:active,
+[data-css-0]:active,
+.css-0[data-simulate-active],
+[data-css-0][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-0::-moz-focus-inner,
+[data-css-0]::-moz-focus-inner,
+.css-0[data-simulate-mozfocusinner],
+[data-css-0][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-0 [role="img"],
+[data-css-0] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-0 [role="img"]:first-child,
+[data-css-0] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-0 [role="img"]:last-child,
+[data-css-0] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-0 [role="img"]:only-child,
+[data-css-0] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-14,
+[data-css-14] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-15,
+[data-css-15] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-15:first-child,
+[data-css-15]:first-child,
+.css-15[data-simulate-firstchild],
+[data-css-15][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-15:last-child,
+[data-css-15]:last-child,
+.css-15[data-simulate-lastchild],
+[data-css-15][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Button
+  element="button"
+  onClick={[MockFunction]}
+  size="large"
+  type="button"
+  variant="regular"
+>
+  <glamorous(button)
+    element="button"
+    onClick={[MockFunction]}
+    size="large"
+    text="Do Something"
+    type="button"
+    variant="regular"
+  >
+    <button
+      className="css-0"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      <glamorous(span)>
+        <span
+          className="css-14"
+        >
+          <glamorous(span)
+            size="large"
+          >
+            <span
+              className="css-15"
+            >
+              Do Something
+            </span>
+          </glamorous(span)>
+        </span>
+      </glamorous(span)>
+    </button>
+  </glamorous(button)>
+</Button>
 `;
