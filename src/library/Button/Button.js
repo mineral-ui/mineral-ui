@@ -291,7 +291,7 @@ function filterProps({ element, type }: Props) {
   // these are not filtered automatically by rootEl
   const invalidComponentProps = ['primary', 'text', 'variant'];
   const invalidLinkProps =
-    element === 'a' && isTypeButton(type) ? ['type'] : [];
+    element === 'a' && isTypeButton(type) ? ['type'] : ['element'];
   return Array.prototype.concat(invalidComponentProps, invalidLinkProps);
 }
 
