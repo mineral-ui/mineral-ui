@@ -289,10 +289,13 @@ function isTypeButton(type: ?string) {
 function filterProps({ element, type }: Props) {
   // When element is a component, e.g. ReactRouterLink,
   // these are not filtered automatically by rootEl
-  const invalidComponentProps = ['primary', 'text', 'variant'];
-  const invalidLinkProps =
-    element === 'a' && isTypeButton(type) ? ['type'] : ['element'];
-  return Array.prototype.concat(invalidComponentProps, invalidLinkProps);
+  const invalidComponentProps = ['primary', 'text', 'variant', 'element'];
+  const shouldFilterType =
+    (element === 'button' && !isTypeButton(type)) ||
+    (element !== 'button' && isTypeButton(type));
+  const invalidLinkProps = shouldFilterType ? ['type'] : [];
+
+  return invalidComponentProps.concat(invalidLinkProps);
 }
 
 // Button's root node must be created outside of render, so that the entire DOM
