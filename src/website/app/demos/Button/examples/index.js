@@ -1,5 +1,6 @@
 /* @flow */
 import importSyntax from './importSyntax';
+import element from './element';
 import regular from './regular';
 import circular from './circular';
 import icons from './icons';
@@ -22,6 +23,7 @@ export default [
   iconOnly,
   circular,
   link,
+  element,
   truncation,
   rtl,
   states

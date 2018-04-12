@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button demo examples circular 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -966,8 +966,8 @@ exports[`Button demo examples circular 1`] = `
 `;
 
 exports[`Button demo examples default 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -1654,9 +1654,411 @@ exports[`Button demo examples default 1`] = `
 </glamorous(div)>
 `;
 
+exports[`Button demo examples element 1`] = `
+.css-0 > *,
+[data-css-0] > * {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.css-1,
+[data-css-1] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-2,
+[data-css-2] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-2:first-child,
+[data-css-2]:first-child,
+.css-2[data-simulate-firstchild],
+[data-css-2][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-2:last-child,
+[data-css-2]:last-child,
+.css-2[data-simulate-lastchild],
+[data-css-2][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+.css-9,
+[data-css-9] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-9 *,
+[data-css-9] *,
+.css-9 *::before,
+[data-css-9] *::before,
+.css-9 *::after,
+[data-css-9] *::after {
+  box-sizing: inherit;
+}
+
+.css-9:focus,
+[data-css-9]:focus,
+.css-9[data-simulate-focus],
+[data-css-9][data-simulate-focus] {
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-9:hover,
+[data-css-9]:hover,
+.css-9[data-simulate-hover],
+[data-css-9][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-9:active,
+[data-css-9]:active,
+.css-9[data-simulate-active],
+[data-css-9][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-9::-moz-focus-inner,
+[data-css-9]::-moz-focus-inner,
+.css-9[data-simulate-mozfocusinner],
+[data-css-9][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-9 [role="img"],
+[data-css-9] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-9 [role="img"]:first-child,
+[data-css-9] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-9 [role="img"]:last-child,
+[data-css-9] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-9 [role="img"]:only-child,
+[data-css-9] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-23,
+[data-css-23] {
+  color: #333840;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  vertical-align: middle;
+}
+
+.css-23:hover,
+[data-css-23]:hover,
+.css-23[data-simulate-hover],
+[data-css-23][data-simulate-hover] {
+  color: #333840;
+  text-decoration: none;
+  background-color: #f5f7fa;
+}
+
+.css-23:focus,
+[data-css-23]:focus,
+.css-23[data-simulate-focus],
+[data-css-23][data-simulate-focus] {
+  color: #333840;
+  outline: 1px solid #2e6fd9;
+  outline-offset: 2px;
+  background-color: #ebeff5;
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #2e6fd9;
+  text-decoration: none;
+}
+
+.css-23:active,
+[data-css-23]:active,
+.css-23[data-simulate-active],
+[data-css-23][data-simulate-active] {
+  color: #333840;
+  background-color: #dde3ed;
+}
+
+.css-23 *,
+[data-css-23] *,
+.css-23 *::before,
+[data-css-23] *::before,
+.css-23 *::after,
+[data-css-23] *::after {
+  box-sizing: inherit;
+}
+
+.css-23::-moz-focus-inner,
+[data-css-23]::-moz-focus-inner,
+.css-23[data-simulate-mozfocusinner],
+[data-css-23][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-23 [role="img"],
+[data-css-23] [role="img"] {
+  box-sizing: content-box;
+  fill: #2e6fd9;
+  display: block;
+}
+
+.css-23 [role="img"]:first-child,
+[data-css-23] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-23 [role="img"]:last-child,
+[data-css-23] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-23 [role="img"]:only-child,
+[data-css-23] [role="img"]:only-child {
+  margin: 0;
+}
+
+<glamorous(div)>
+  <div
+    className="css-0"
+  >
+    <Button
+      element="a"
+      size="large"
+      type="button"
+      variant="regular"
+    >
+      <glamorous(a)
+        element="a"
+        size="large"
+        text="Anchor"
+        type="button"
+        variant="regular"
+      >
+        <a
+          className="css-9"
+        >
+          <glamorous(span)>
+            <span
+              className="css-1"
+            >
+              <glamorous(span)
+                size="large"
+              >
+                <span
+                  className="css-2"
+                >
+                  Anchor
+                </span>
+              </glamorous(span)>
+            </span>
+          </glamorous(span)>
+        </a>
+      </glamorous(a)>
+    </Button>
+    <Button
+      element={[Function]}
+      href="https://mineral-ui.com"
+      size="large"
+      type="button"
+      variant="regular"
+    >
+      <glamorous(Link)
+        element={[Function]}
+        href="https://mineral-ui.com"
+        size="large"
+        text="Mineral Link"
+        type="button"
+        variant="regular"
+      >
+        <Link
+          className="css-9"
+          href="https://mineral-ui.com"
+          size="large"
+          type="button"
+        >
+          <Link
+            className="css-9"
+            href="https://mineral-ui.com"
+            size="large"
+            type="button"
+            variant="regular"
+          >
+            <a
+              className="css-23"
+              href="https://mineral-ui.com"
+              type="button"
+            >
+              <glamorous(span)>
+                <span
+                  className="css-1"
+                >
+                  <glamorous(span)
+                    size="large"
+                  >
+                    <span
+                      className="css-2"
+                    >
+                      Mineral Link
+                    </span>
+                  </glamorous(span)>
+                </span>
+              </glamorous(span)>
+            </a>
+          </Link>
+        </Link>
+      </glamorous(Link)>
+    </Button>
+    <BrowserRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "blank",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Button
+          element={[Function]}
+          size="large"
+          to="/"
+          type="button"
+          variant="regular"
+        >
+          <glamorous(Link)
+            element={[Function]}
+            size="large"
+            text="React Router Link"
+            to="/"
+            type="button"
+            variant="regular"
+          >
+            <Link
+              className="css-9"
+              replace={false}
+              size="large"
+              to="/"
+              type="button"
+            >
+              <a
+                className="css-9"
+                href="/"
+                onClick={[Function]}
+                size="large"
+                type="button"
+              >
+                <glamorous(span)>
+                  <span
+                    className="css-1"
+                  >
+                    <glamorous(span)
+                      size="large"
+                    >
+                      <span
+                        className="css-2"
+                      >
+                        React Router Link
+                      </span>
+                    </glamorous(span)>
+                  </span>
+                </glamorous(span)>
+              </a>
+            </Link>
+          </glamorous(Link)>
+        </Button>
+      </Router>
+    </BrowserRouter>
+  </div>
+</glamorous(div)>
+`;
+
 exports[`Button demo examples icon-only 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -2608,8 +3010,8 @@ exports[`Button demo examples icon-only 1`] = `
 `;
 
 exports[`Button demo examples icons 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -4715,8 +5117,8 @@ exports[`Button demo examples link 1`] = `
 `;
 
 exports[`Button demo examples minimal 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -5409,8 +5811,8 @@ exports[`Button demo examples minimal 1`] = `
 `;
 
 exports[`Button demo examples primary 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -6329,8 +6731,8 @@ exports[`Button demo examples rtl 1`] = `
 `;
 
 exports[`Button demo examples sizes 1`] = `
-.css-0 > button,
-[data-css-0] > button {
+.css-0 > *,
+[data-css-0] > * {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
