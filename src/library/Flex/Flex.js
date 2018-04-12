@@ -58,7 +58,7 @@ type Props = {
   wrap?: boolean | Array<boolean | null>
 };
 
-type Values = boolean | null | number | string;
+export type Values = boolean | null | number | string;
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
