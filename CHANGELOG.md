@@ -1,3 +1,39 @@
+<a name="0.27.0"></a>
+# [0.27.0](https://github.com/mineral-ui/mineral-ui/compare/v0.26.0...v0.27.0) (2018-04-13)
+
+
+### Bug Fixes
+
+* **button:** filter the `element` prop from being passed down ([74a3869](https://github.com/mineral-ui/mineral-ui/commit/74a3869))
+
+
+### Code Refactoring
+
+* **avatar:** Remove palette colors from `background` & `color` props ([98f06ef](https://github.com/mineral-ui/mineral-ui/commit/98f06ef))
+* **button:** Update base theme variables; add & rename theme variables ([f372cd3](https://github.com/mineral-ui/mineral-ui/commit/f372cd3))
+* **checkbox,radio:** Update base theme vars; rename theme variables ([17cf051](https://github.com/mineral-ui/mineral-ui/commit/17cf051))
+* **colors:** Update palette to ensure a11y contrast; add bronze ([063a7d6](https://github.com/mineral-ui/mineral-ui/commit/063a7d6))
+* **form:** Update base theme variables; rename theme variables ([d7ab5d6](https://github.com/mineral-ui/mineral-ui/commit/d7ab5d6))
+* **icon:** Change from predetermined fill color to 'currentcolor' ([c025815](https://github.com/mineral-ui/mineral-ui/commit/c025815))
+* **menu:** Update base theme variables; rename theme variables ([3d264bf](https://github.com/mineral-ui/mineral-ui/commit/3d264bf))
+* **select,text-area,text-input:** Update base theme vars; rename some ([f4dfdff](https://github.com/mineral-ui/mineral-ui/commit/f4dfdff))
+* **themes:** Update theme variables ([884c458](https://github.com/mineral-ui/mineral-ui/commit/884c458))
+
+
+### BREAKING CHANGES
+
+* **select,text-area,text-input:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8#select)) Rename theme variables: `Select_color_text` to `Select_color` (also applies to TextArea & TextInput), `SelectIcon_fill` to `SelectIcon_color` (also applies to TextInput)
+* **menu:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8#menuitem)) Rename theme variables: `MenuItem_color_text` to `MenuItem_color`, `MenuItemIcon_fill` to `MenuItemIcon_color`, `MenuItemSecondaryText_color_text` to `MenuItemSecondaryText_color`
+* **form:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8#formfield)) Rename theme variables: `FormFieldCaption_color_text` to `FormFieldCaption_color`, `FormFieldLabel_color_text` to `FormFieldLabel_color`, `FormFieldSecondaryText_color_text` to `FormFieldSecondaryText_color`, `FormFieldSecondaryText_color_text_required` to `FormFieldSecondaryText_color_required`, `FormFieldsetLegend_color_text` to `FormFieldsetLegend_color`
+* **checkbox,radio:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8#checkbox)) Rename theme variable `CheckboxText_color_text` to `CheckboxText_color` (same applies to Radio)
+* **button:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8#button)) Remove theme variable `Button_borderColor_focus`; rename theme variables: `Button_color_text` to `Button_color`, `Button_color_text_minimal` to `Button_color_minimal`, `Button_color_text_primary` to `Button_color_primary`
+* **avatar:** Remove palette colors (e.g. 'red', 'purple') from `background` and `color` prop types. Instead, import `colors` and reference from there (e.g. `colors.red_60`).
+* **icon:** Icon now uses 'currentcolor' for its default fill color, rather than `theme.color_gray_60`
+* **themes:** ([Detailed here](https://gist.github.com/kylegach/3f1300c071c8b47952eb12729e5a90e8)) Remove `color_caption`, `backgroundColor_link_focus`; rename: `backgroundColor_disabled` to `backgroundColor_input_disabled`, `backgroundColor_input` to `input_backgroundColor`, `backgroundColor_[variant]_muted` to `well_backgroundColor_[variant]`, `backgroundColor_[variant]_activeMuted` to `backgroundColor_[variant]_active`, `backgroundColor_[variant]_[state]` to `backgroundColor_[variant]Primary_[state]`, `borderColor_[state]` to `borderColor_theme_[state]`, `borderColor_[variant]_muted` to `well_borderColor_[variant]`, `color_h[#]` to `h[#]_color`, `color_placeholder` to `placeholder_color`, `color_text` to `color`, `color_text_disabled` to `color_disabled`, `color_text_primary_[state]` to `color_theme_[state]`, `color_text_onprimary` to `color_primary`, `color_text_[variant]_[state]` to `color_[variant]_[state]`, `fontSize_h[#]` to `h[#]_fontSize`, `fontWeight_h[#]` to `h[#]_fontWeight`, `shadow_[#]` to `boxShadow_[#]`
+* **colors:** Remove `lime`, `orange`, and `yellow`
+
+
+
 <a name="0.26.0"></a>
 # [0.26.0](https://github.com/mineral-ui/mineral-ui/compare/v0.25.0...v0.26.0) (2018-04-06)
 
