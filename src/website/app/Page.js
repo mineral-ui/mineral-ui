@@ -53,6 +53,8 @@ const pageThemes = [
     borderColor_theme_focus: siteColors.cranberry,
     color_theme: siteColors.cranberry,
 
+    icon_color_theme: siteColors.cranberry,
+
     navLink_color_active_narrow: lighten(0.19, siteColors.cranberry),
 
     SiteButton_backgroundColor_primary: siteColors.cranberry,
@@ -72,6 +74,8 @@ const pageThemes = [
     borderColor_theme_focus: siteColors.grape,
     color_theme: siteColors.grape,
 
+    icon_color_theme: siteColors.grape,
+
     navLink_color_active_narrow: lighten(0.18, siteColors.grape),
 
     SiteButton_backgroundColor_primary: siteColors.grape,
@@ -90,6 +94,8 @@ const pageThemes = [
   {
     borderColor_theme_focus: siteColors.orangePunch,
     color_theme: siteColors.orangePunch,
+
+    icon_color_theme: siteColors.orangePunch,
 
     navLink_color_active_narrow: lighten(0.23, siteColors.orangePunch),
 
