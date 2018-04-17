@@ -17,6 +17,7 @@ export { default as Checkbox, CheckboxGroup } from './Checkbox';
 export { default as Dropdown } from './Dropdown';
 export { default as Flex, FlexItem } from './Flex';
 export { FormField, FormFieldset, FormFieldDivider } from './Form';
+export { default as Grid, GridItem } from './Grid';
 export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
