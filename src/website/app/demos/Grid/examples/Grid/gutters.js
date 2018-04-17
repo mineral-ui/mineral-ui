@@ -1,17 +1,17 @@
 /* @flow */
-import FlexItem from '../../components/FlexItem';
+import GridItem from '../../components/GridItem';
 import DemoLayout from '../../components/DemoLayout';
-import Flex from '../../components/Flex';
+import Grid from '../../components/Grid';
 
 export default {
   id: 'gutters',
   title: 'Gutters',
-  description: `Flex will add a default horizontal gap between items. Use the
+  description: `Grid will add a default horizontal gap between items. Use the
 \`gutterWidth\` prop to define a different value, including \`0\` to disable
 gutters altogether.
 
 _Numbers will be appended with \`px\`. String values will be passed directly._`,
-  scope: { DemoLayout, Flex, FlexItem },
+  scope: { DemoLayout, Grid, GridItem },
   source: `
     () => {
       const propValues = [
@@ -22,15 +22,15 @@ _Numbers will be appended with \`px\`. String values will be passed directly._`,
         0
       ];
 
-      const renderFlexes = () =>
+      const renderGrids = () =>
         propValues.map((value, index) => (
-          <Flex gutterWidth={value} key={index}>
-            <FlexItem>A</FlexItem>
-            <FlexItem>B</FlexItem>
-            <FlexItem>C</FlexItem>
-          </Flex>
+          <Grid gutterWidth={value} key={index}>
+            <GridItem>A</GridItem>
+            <GridItem>B</GridItem>
+            <GridItem>C</GridItem>
+          </Grid>
         ));
 
-      return <DemoLayout>{renderFlexes()}</DemoLayout>;
+      return <DemoLayout>{renderGrids()}</DemoLayout>;
     }`
 };

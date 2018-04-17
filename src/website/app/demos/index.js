@@ -10,6 +10,7 @@ import dropdown from './Dropdown';
 import form from './Form';
 import icon from './Icon';
 import flex from './Flex';
+import grid from './Grid';
 import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
@@ -31,6 +32,7 @@ const demos = flatten([
   dropdown,
   flex,
   form,
+  grid,
   icon,
   link,
   menu,
