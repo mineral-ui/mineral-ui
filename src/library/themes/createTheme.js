@@ -27,7 +27,7 @@ export default function createTheme(
 
   return {
     ...tokens.reduce((acc, token) => {
-      const values = Object.values(token)[0];
+      const values = Object.keys(token).map((key) => token[key])[0];
       const returnedValues =
         typeof values === 'function' ? values(themeRamp) : values;
       return Object.assign(acc, returnedValues);
