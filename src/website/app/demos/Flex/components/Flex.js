@@ -21,6 +21,7 @@ export const containerStyles = ({
 
   return {
     position: 'relative',
+    zIndex: 1,
 
     '&::before': {
       border: `1px dotted ${theme.color_theme_30}`,
