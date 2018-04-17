@@ -133,6 +133,18 @@ export default [
     },
     {
       description:
+        'Grid component is used together with GridItem to lay out other components in a columnar, and optionally responsive, manner.',
+      slug: 'grid',
+      title: 'Grid'
+    },
+    {
+      description:
+        'GridItem is used within Grid to lay out other components in your app.',
+      slug: 'grid-item',
+      title: 'GridItem'
+    },
+    {
+      description:
         'StartEnd provides a simple way to align components to the start or end of a container.',
       slug: 'start-end',
       title: 'StartEnd'

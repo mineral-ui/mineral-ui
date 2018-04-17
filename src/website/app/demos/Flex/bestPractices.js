@@ -9,8 +9,8 @@ export default {
   flex: [
     {
       type: 'do',
-      description: `Use Flex and [FlexItem](/components/flex-item) to arrange components
-next to one another, with a consistent gutter.`,
+      description: `Use Flex and [FlexItem](/components/flex-item) to arrange
+components next to one another, with a consistent gutter.`,
       example: (
         <Flex justifyContent="end">
           <FlexItem>
@@ -21,6 +21,31 @@ next to one another, with a consistent gutter.`,
           </FlexItem>
           <FlexItem>
             <Button size="small">Paste</Button>
+          </FlexItem>
+        </Flex>
+      )
+    },
+    {
+      type: 'dont',
+      description: `Don't use Flex and [FlexItem](/components/flex-item) to
+align components to a columnar layout. Use [Grid](/components/grid) and
+[GridItem](/components/grid-item), instead.`,
+      example: (
+        <Flex>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Cut
+            </Button>
+          </FlexItem>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Copy
+            </Button>
+          </FlexItem>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Paste
+            </Button>
           </FlexItem>
         </Flex>
       )
@@ -79,6 +104,31 @@ relative to one another.`,
           </FlexItem>
           <FlexItem>
             <Link href="https://example.com">Contact</Link>
+          </FlexItem>
+        </Flex>
+      )
+    },
+    {
+      type: 'dont',
+      description: `Don't use FlexItem within [Flex](/components/flex) to align
+components to a columnar layout. Use [GridItem](/components/grid-item) within
+[Grid](/components/grid), instead.`,
+      example: (
+        <Flex>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Cut
+            </Button>
+          </FlexItem>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Copy
+            </Button>
+          </FlexItem>
+          <FlexItem grow={1}>
+            <Button size="small" fullWidth>
+              Paste
+            </Button>
           </FlexItem>
         </Flex>
       )

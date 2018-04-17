@@ -561,7 +561,8 @@ function createRootNode(props: Props) {
  * layout.
  *
  * Box is the basis of the other layout components: [Flex](/components/flex),
- * [FlexItem](/components/flex-item), and [StartEnd](/components/start-end).
+ * [FlexItem](/components/flex-item), [Grid](/components/grid),
+ * [GridItem](/components/grid-item), and [StartEnd](/components/start-end).
  */
 export default class Box extends Component<Props> {
   static defaultProps = {
