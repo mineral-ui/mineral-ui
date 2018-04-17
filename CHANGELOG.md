@@ -1,3 +1,13 @@
+<a name="0.28.0"></a>
+# [0.28.0](https://github.com/mineral-ui/mineral-ui/compare/v0.27.0...v0.28.0) (2018-04-17)
+
+
+### Bug Fixes
+
+* **themes:** Fix IE11 issue ([401981b](https://github.com/mineral-ui/mineral-ui/commit/401981b))
+
+
+
 <a name="0.27.0"></a>
 # [0.27.0](https://github.com/mineral-ui/mineral-ui/compare/v0.26.0...v0.27.0) (2018-04-13)
 
