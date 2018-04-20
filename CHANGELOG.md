@@ -1,3 +1,13 @@
+<a name="0.29.0"></a>
+# [0.29.0](https://github.com/mineral-ui/mineral-ui/compare/v0.28.0...v0.29.0) (2018-04-20)
+
+
+### Features
+
+* **grid:** Add Grid & GridItem components ([1df8d6d](https://github.com/mineral-ui/mineral-ui/commit/1df8d6d))
+
+
+
 <a name="0.28.0"></a>
 # [0.28.0](https://github.com/mineral-ui/mineral-ui/compare/v0.27.0...v0.28.0) (2018-04-17)
 
