@@ -1,0 +1,36 @@
+{
+  "global": {
+    "type": "pixel",
+    "category": "space"
+  },
+  "aliases": {
+    "spacing_quarter": "2px",
+    "spacing_half":    "4px",
+    "spacing_1x":      "8px",
+    "spacing_2x":      "16px",
+    "spacing_3x":      "24px",
+    "spacing_4x":      "32px",
+    "spacing_8x":      "64px"
+  },
+  "props": [
+    { "name": "space_inline_xxs", "value": "{!spacing_quarter}" },
+    { "name": "space_inline_xs",  "value": "{!spacing_half}" },
+    { "name": "space_inline_sm",  "value": "{!spacing_1x}" },
+    { "name": "space_inline_md",  "value": "{!spacing_2x}" },
+    { "name": "space_inline_lg",  "value": "{!spacing_3x}" },
+    { "name": "space_inline_xl",  "value": "{!spacing_4x}" },
+    { "name": "space_inline_xxl", "value": "{!spacing_8x}" },
+
+    { "name": "space_inset_sm",   "value": "{!spacing_1x}" },
+    { "name": "space_inset_md",   "value": "{!spacing_2x}" },
+    { "name": "space_inset_lg",   "value": "{!spacing_3x}" },
+
+    { "name": "space_stack_xxs",  "value": "{!spacing_quarter}" },
+    { "name": "space_stack_xs",   "value": "{!spacing_half}" },
+    { "name": "space_stack_sm",   "value": "{!spacing_1x}" },
+    { "name": "space_stack_md",   "value": "{!spacing_2x}" },
+    { "name": "space_stack_lg",   "value": "{!spacing_3x}" },
+    { "name": "space_stack_xl",   "value": "{!spacing_4x}" },
+    { "name": "space_stack_xxl",  "value": "{!spacing_8x}" }
+  ]
+}

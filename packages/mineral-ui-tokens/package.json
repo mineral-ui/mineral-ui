@@ -1,0 +1,30 @@
+{
+  "name": "mineral-ui-tokens",
+  "author": "CA Technologies",
+  "description": "Mineral UI Design Tokens",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineral-ui/mineral-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mineral-ui/mineral-ui/issues"
+  },
+  "homepage": "http://mineral-ui.com",
+  "main": "./dist/index.js",
+  "module": "./dist/es/index.js",
+  "scripts": {
+    "build": "npm run clean && ./scripts/build.js",
+    "build:tokens": "./scripts/build-tokens.js",
+    "build:tokens:debug": "npm run build:tokens -- --debug",
+    "clean": "rm -rf dist",
+    "pack-ls": "cd dist && tar -tvf $(npm pack)"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "fs-extra": "5.0.0",
+    "theo": "7.0.1"
+  }
+}
