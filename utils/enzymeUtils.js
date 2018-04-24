@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import { mount } from 'enzyme';
+import type { ReactWrapper } from 'enzyme';
 import ThemeProvider from '../src/library/themes/ThemeProvider';
 
 export const mountInThemeProvider = (
@@ -34,4 +35,11 @@ export const mountInThemeProvider = (
   const component = themeProvider.find(Component.type);
 
   return [themeProvider, component];
+};
+
+export const spyOn = (wrapper: ReactWrapper, method: string) => {
+  const spy = jest.spyOn(wrapper.instance(), method);
+  // https://github.com/airbnb/enzyme/issues/365#issuecomment-362166762
+  wrapper.instance().forceUpdate();
+  return spy;
 };

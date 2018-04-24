@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
+import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
 import Tooltip from '../Tooltip';
 import PopoverContent from '../../Popover/PopoverContent';
 import PopoverTrigger from '../../Popover/PopoverTrigger';
@@ -95,6 +95,62 @@ describe('Tooltip', () => {
       const tooltip = shallowTooltip();
 
       expect(tooltip.exists()).toEqual(true);
+    });
+  });
+
+  describe('event handler composition', () => {
+    let button, tooltip, trigger;
+
+    let onBlur = jest.fn();
+    let onFocus = jest.fn();
+    let onMouseEnter = jest.fn();
+    let onMouseLeave = jest.fn();
+
+    beforeEach(() => {
+      [, tooltip] = mountTooltip({
+        children: (
+          <button
+            onBlur={onBlur}
+            onFocus={onFocus}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}>
+            Trigger
+          </button>
+        )
+      });
+      trigger = tooltip.find(PopoverTrigger);
+      button = trigger.find('button');
+
+      onBlur.mockReset();
+      onFocus.mockReset();
+      onMouseEnter.mockReset();
+      onMouseLeave.mockReset();
+    });
+
+    describe('trigger', () => {
+      it('composes event handlers', () => {
+        const tooltipOnBlur = spyOn(tooltip, 'close');
+        const tooltipOnFocus = spyOn(tooltip, 'handleDelayedOpen');
+        const tooltipOnMouseEnter = spyOn(tooltip, 'handleDelayedOpen');
+        const tooltipOnMouseLeave = spyOn(tooltip, 'close');
+
+        button.simulate('blur');
+        button.simulate('focus');
+        button.simulate('mouseenter');
+        button.simulate('mouseleave');
+
+        expect(onBlur).toHaveBeenCalled();
+        expect(tooltipOnBlur).toHaveBeenCalled();
+
+        expect(onFocus).toHaveBeenCalled();
+        expect(tooltipOnFocus).toHaveBeenCalled();
+
+        expect(onMouseEnter).toHaveBeenCalled();
+        expect(tooltipOnMouseEnter).toHaveBeenCalled();
+
+        expect(onMouseLeave).toHaveBeenCalled();
+        expect(tooltipOnMouseLeave).toHaveBeenCalled();
+      });
     });
   });
 
