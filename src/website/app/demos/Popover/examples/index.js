@@ -8,6 +8,8 @@ import overflow from './overflow';
 import placement from './placement';
 import popover from './popover';
 import portal from './portal';
+import renderContent from './renderContent';
+import renderTrigger from './renderTrigger';
 import rtl from './rtl';
 import title from './title';
 
@@ -22,5 +24,7 @@ export default [
   onOpenClose,
   disabled,
   controlled,
-  rtl
+  rtl,
+  renderContent,
+  renderTrigger
 ];

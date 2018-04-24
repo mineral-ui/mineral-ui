@@ -3,5 +3,6 @@ import flatData from './flatData';
 import groupedData from './groupedData';
 import importSyntax from './importSyntax';
 import menu from './menu';
+import renderItem from './renderItem';
 
-export default [importSyntax, menu, flatData, groupedData];
+export default [importSyntax, menu, flatData, groupedData, renderItem];

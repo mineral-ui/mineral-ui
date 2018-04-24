@@ -10,6 +10,9 @@ import placeholder from './placeholder';
 import placement from './placement';
 import portal from './portal';
 import readOnly from './readOnly';
+import renderItem from './renderItem';
+import renderMenu from './renderMenu';
+import renderTrigger from './renderTrigger';
 import required from './required';
 import rtl from './rtl';
 import scrolling from './scrolling';
@@ -37,6 +40,9 @@ export default [
   portal,
   triggerRef,
   rtl,
+  renderItem,
+  renderMenu,
+  renderTrigger,
   formField,
   states
 ];

@@ -8,6 +8,9 @@ import onOpenClose from './onOpenClose';
 import overflow from './overflow';
 import placement from './placement';
 import portal from './portal';
+import renderTrigger from './renderTrigger';
+import renderItem from './renderItem';
+import renderMenu from './renderMenu';
 import rtl from './rtl';
 import scrolling from './scrolling';
 import wide from './wide';
@@ -24,5 +27,8 @@ export default [
   onOpenClose,
   disabled,
   controlled,
-  rtl
+  rtl,
+  renderItem,
+  renderMenu,
+  renderTrigger
 ];

@@ -2,7 +2,6 @@
 import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu from '../../../../../../library/Menu';
-import CustomRender from '../../components/CustomRender';
 import DemoLayout from '../../components/DemoLayout';
 
 export default {
@@ -15,7 +14,7 @@ on to the [MenuItem](/components/menu-item).
 
 A new [MenuGroup](/components/menu-group) will be created for each array object that has
 an \`items\` property defined.`,
-  scope: { CustomRender, DemoLayout, IconCloud, Menu },
+  scope: { DemoLayout, IconCloud, Menu },
   source: `
     () => {
       const data = [
@@ -53,12 +52,6 @@ an \`items\` property defined.`,
               text: 'Disabled menu item',
               disabled: true,
               onClick: () => { console.log('onClick is not triggered for disabled items'); }
-            },
-            {
-              text: 'Custom render',
-              avatar: '/images/125x125.png',
-              href: '/components/menu-item#custom-render', // <-- Details here
-              render: CustomRender
             }
           ]
         }
@@ -66,7 +59,7 @@ an \`items\` property defined.`,
 
       return (
         <DemoLayout>
-          <Menu data={data} />
+          <Menu data={data} itemKey="text" />
         </DemoLayout>
       );
     }`

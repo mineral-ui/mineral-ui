@@ -2,7 +2,6 @@
 import Button from '../../../../../library/Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Dropdown from '../../../../../library/Dropdown';
-import CustomRender from '../../Menu/components/CustomRender';
 
 export default {
   id: 'data',
@@ -14,7 +13,7 @@ to the [MenuItem](/components/menu-item).
 [MenuDividers](/components/menu-divider) are created simply by passing
 \`{divider: true}\` as an item. Menu data can also be
 [grouped](/components/menu#grouped-data).`,
-  scope: { Button, CustomRender, Dropdown, IconCloud },
+  scope: { Button, Dropdown, IconCloud },
   source: `
     () => {
       const data = [
@@ -45,12 +44,6 @@ to the [MenuItem](/components/menu-item).
           text: 'Disabled menu item',
           onClick: () => { console.log('onClick is not triggered for disabled MenuItems'); },
           disabled: true
-        },
-        {
-          text: 'Custom render',
-          avatar: '/images/avatar.svg',
-          href: '/components/menu-item#custom-render', // <-- Details here
-          render: CustomRender
         }
       ];
 
