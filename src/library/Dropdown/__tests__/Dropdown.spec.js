@@ -1,13 +1,19 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
+import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
 import Dropdown, { DropdownContent, DropdownTrigger } from '../../Dropdown';
+import PopoverTrigger from '../../Popover/PopoverTrigger';
 import { MenuItem } from '../../Menu';
 import examples from '../../../website/app/demos/Dropdown/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
+import type { RenderFn } from '../Dropdown';
 import type { Items } from '../../Menu/Menu';
+
+const REGEX_DROPDOWN_CONTENT_ID = /^dropdown-\d+-content$/;
+const REGEX_DROPDOWN_MENU_ID = /^dropdown-\d+-menu$/;
+const REGEX_DROPDOWN_ITEM_ID = /^dropdown-\d+-item-\d+$/;
 
 const data: Items = [
   {
@@ -15,15 +21,22 @@ const data: Items = [
     onClick: jest.fn()
   },
   {
+    divider: true
+  },
+  {
     text: 'item 2',
     onClick: jest.fn()
   }
 ];
 
+const defaultProps = {
+  children: <button>trigger</button>,
+  data
+};
+
 const shallowDropdown = (props = {}) => {
   const dropdownProps = {
-    children: <button>trigger</button>,
-    data,
+    ...defaultProps,
     ...props
   };
 
@@ -32,12 +45,17 @@ const shallowDropdown = (props = {}) => {
 
 const mountDropdown = (props = {}) => {
   const dropdownProps = {
-    children: <button>trigger</button>,
-    data,
+    ...defaultProps,
     ...props
   };
 
   return mountInThemeProvider(<Dropdown {...dropdownProps} />);
+};
+
+const findMenuItems = (wrapper) => {
+  return wrapper.find(MenuItem).filterWhere((menuItem) => {
+    return menuItem.props().id !== undefined;
+  });
 };
 
 const assertTriggerHasFocus = (trigger) => {
@@ -52,15 +70,14 @@ const assertContentExists = (themeProvider) => {
 
 const assertItemAtIndexIsHighlighted = (themeProvider, index) => {
   expect(
-    themeProvider
-      .find(MenuItem)
+    findMenuItems(themeProvider)
       .at(index)
       .props().isHighlighted
   ).toEqual(true);
 };
 
 const assertNoItemsHighlighted = (themeProvider) => {
-  themeProvider.find(MenuItem).forEach((menuItem) => {
+  findMenuItems(themeProvider).forEach((menuItem) => {
     expect(menuItem.props().isHighlighted).toEqual(false);
   });
 };
@@ -73,6 +90,217 @@ describe('Dropdown', () => {
       const dropdown = shallowDropdown();
 
       expect(dropdown.exists()).toEqual(true);
+    });
+  });
+
+  describe('render props', () => {
+    describe('children', () => {
+      let dropdown, children: RenderFn;
+
+      beforeEach(() => {
+        // $FlowFixMe
+        children = jest
+          .fn()
+          .mockImplementation(({ props }) => <div {...props}>Trigger</div>);
+
+        [, dropdown] = mountDropdown({
+          children
+        });
+      });
+
+      it('calls children prop with expected arguments', () => {
+        expect(children).toBeCalledWith(
+          expect.objectContaining({
+            state: expect.objectContaining({
+              highlightedIndex: undefined,
+              isOpen: false
+            }),
+            helpers: expect.objectContaining({
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function)
+            }),
+            props: expect.objectContaining({
+              'aria-describedby': expect.stringMatching(
+                REGEX_DROPDOWN_CONTENT_ID
+              ),
+              'aria-disabled': undefined,
+              'aria-expanded': false,
+              'aria-haspopup': true,
+              'aria-owns': expect.stringMatching(REGEX_DROPDOWN_CONTENT_ID),
+              children: undefined,
+              disabled: undefined,
+              onBlur: expect.any(Function),
+              onClick: expect.any(Function),
+              onKeyDown: expect.any(Function),
+              onKeyUp: expect.any(Function),
+              ref: expect.any(Function),
+              role: 'button'
+            })
+          })
+        );
+      });
+
+      it('renders expected content', () => {
+        expect(dropdown).toMatchSnapshot();
+      });
+    });
+
+    describe('menu', () => {
+      let dropdown, menu;
+
+      beforeEach(() => {
+        menu = jest.fn().mockImplementation(({ props }) => {
+          const {
+            item: ignoreRenderItem,
+            itemKey: ignoreItemKey,
+            ...restProps
+          } = props;
+
+          return <div {...restProps}>Menu</div>;
+        });
+
+        [, dropdown] = mountDropdown({ menu, isOpen: true });
+      });
+
+      it('calls menu prop with expected arguments', () => {
+        expect(menu).toBeCalledWith(
+          expect.objectContaining({
+            state: expect.objectContaining({
+              highlightedIndex: undefined,
+              isOpen: true
+            }),
+            helpers: expect.objectContaining({
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function)
+            }),
+            props: expect.objectContaining({
+              data: defaultProps.data,
+              id: expect.stringMatching(REGEX_DROPDOWN_MENU_ID),
+              itemKey: 'text',
+              role: 'menu'
+            })
+          })
+        );
+      });
+
+      it('renders expected content', () => {
+        expect(dropdown).toMatchSnapshot();
+      });
+    });
+
+    describe('item', () => {
+      let dropdown, item;
+
+      beforeEach(() => {
+        item = jest.fn().mockImplementation(({ props }) => {
+          const {
+            render: ignoreRender,
+            text: ignoreText,
+            index: ignoreIndex,
+            item,
+            isHighlighted: ignoreIsHighlighted,
+            variant: ignoreVariant,
+            ...restProps
+          } = props;
+
+          return <div {...restProps}>{item.text}</div>;
+        });
+
+        [, dropdown] = mountDropdown({ item, isOpen: true });
+      });
+
+      it('calls item prop with expected arguments', () => {
+        expect(item).toBeCalledWith(
+          expect.objectContaining({
+            state: expect.objectContaining({
+              highlightedIndex: undefined,
+              isOpen: true
+            }),
+            helpers: expect.objectContaining({
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function)
+            }),
+            props: expect.objectContaining({
+              'aria-disabled': undefined,
+              children: expect.any(String),
+              disabled: undefined,
+              id: expect.stringMatching(REGEX_DROPDOWN_ITEM_ID),
+              index: expect.any(Number),
+              isHighlighted: false,
+              item: expect.any(Object),
+              onClick: expect.any(Function),
+              onKeyDown: expect.any(Function),
+              role: 'menuitem',
+              tabIndex: null,
+              text: expect.any(String)
+            })
+          })
+        );
+      });
+
+      it('renders expected content', () => {
+        expect(dropdown).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe('event handler composition', () => {
+    let button, dropdown, trigger;
+    let onKeyDown = jest.fn();
+    let onKeyUp = jest.fn();
+
+    beforeEach(() => {
+      [, dropdown] = mountDropdown({
+        data,
+        defaultIsOpen: true,
+        children: (
+          <button onKeyDown={onKeyDown} onKeyUp={onKeyUp}>
+            Trigger
+          </button>
+        )
+      });
+      trigger = dropdown.find(PopoverTrigger);
+      button = trigger.find('button');
+
+      data[0].onClick && data[0].onClick.mockReset();
+      onKeyDown.mockReset();
+      onKeyUp.mockReset();
+    });
+
+    describe('trigger', () => {
+      it('composes onKeyDown event', () => {
+        const dropdownOnTriggerKeyDown = spyOn(dropdown, 'onTriggerKeyDown');
+
+        button.simulate('keydown', { key: 'i' });
+
+        expect(onKeyDown).toHaveBeenCalled();
+        expect(dropdownOnTriggerKeyDown).toHaveBeenCalled();
+      });
+
+      it('composes onKeyUp event', () => {
+        const dropdownOnTriggerKeyUp = spyOn(dropdown, 'onTriggerKeyUp');
+
+        button.simulate('keyup', { key: 'i' });
+
+        expect(onKeyUp).toHaveBeenCalled();
+        expect(dropdownOnTriggerKeyUp).toHaveBeenCalled();
+      });
+    });
+
+    describe('items', () => {
+      it('composes onClick event', () => {
+        const dropdownOnItemClick = spyOn(dropdown, 'onItemClick');
+
+        findMenuItems(dropdown)
+          .first()
+          .simulate('click');
+
+        expect(data[0].onClick).toHaveBeenCalled();
+        expect(dropdownOnItemClick).toHaveBeenCalled();
+      });
     });
   });
 
@@ -282,6 +510,7 @@ describe('Dropdown', () => {
 
         it('closes dropdown', () => {
           item.simulate(...simulateArgs);
+
           expect(dropdown.instance().state.isOpen).toBe(false);
         });
 
@@ -297,7 +526,8 @@ describe('Dropdown', () => {
         [, dropdown] = mountDropdown({
           defaultIsOpen: true
         });
-        item = dropdown.find(MenuItem).first();
+        item = findMenuItems(dropdown).first();
+
         data[0].onClick && data[0].onClick.mockReset();
       });
 
