@@ -16,9 +16,6 @@ module.exports = {
   targets: {
     'chrome': new RemoteBrowserTarget('chrome', {
       viewport: '800x600'
-    }),
-    'internet explorer': new RemoteBrowserTarget('internet explorer', {
-      viewport: '800x600'
     })
   },
 
