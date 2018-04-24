@@ -20,7 +20,7 @@ export default {
 
       return (
         <Popover content={<DemoContent />} onOpen={onOpen} onClose={onClose}>
-          <Button>Menu</Button>
+          <Button>Open Popover</Button>
         </Popover>
       );
     }`

@@ -6,7 +6,9 @@ import DemoLayout from '../components/DemoLayout';
 export default {
   id: 'other',
   title: 'Other Components',
-  description: `Any component that generate an \`<a />\` element may be styled using the \`element\` prop, such as a [ReactRouter Link](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md).`,
+  description: `Any component that generate an \`<a />\` element may be styled
+using the \`element\` prop, such as a
+[ReactRouter Link](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md).`,
   scope: { BrowserRouter, DemoLayout, Link, ReactRouterLink },
   source: `
     <DemoLayout>
