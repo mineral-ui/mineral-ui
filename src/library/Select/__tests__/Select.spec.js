@@ -10,6 +10,11 @@ import testDemoExamples from '../../../../utils/testDemoExamples';
 
 import type { Items } from '../../Menu/Menu';
 
+const REGEX_SELECT_CONTENT_ID = /^select-\d+-content$/;
+const REGEX_SELECT_ID = /^select-\d+$/;
+const REGEX_SELECT_MENU_ID = /^select-\d+-menu$/;
+const REGEX_SELECT_ITEM_ID = /^select-\d+-item-\d+$/;
+
 const data: Items = [
   {
     text: 'A item',
@@ -51,6 +56,12 @@ const mountSelect = (props = {}) => {
   });
 };
 
+const findMenuItems = (wrapper) => {
+  return wrapper.find(MenuItem).filterWhere((menuItem) => {
+    return menuItem.props().id !== undefined;
+  });
+};
+
 const assertTriggerHasFocus = (trigger) => {
   expect(
     trigger
@@ -66,8 +77,7 @@ const assertContentExists = (themeProvider) => {
 
 const assertItemAtIndexIsHighlighted = (themeProvider, index) => {
   expect(
-    themeProvider
-      .find(MenuItem)
+    findMenuItems(themeProvider)
       .at(index)
       .props().isHighlighted
   ).toEqual(true);
@@ -87,6 +97,198 @@ describe('Select', () => {
 
     afterEach(() => {
       themeProvider.destroy();
+    });
+
+    describe('render props', () => {
+      describe('renderTrigger', () => {
+        let select, renderTrigger;
+
+        beforeEach(() => {
+          renderTrigger = jest
+            .fn()
+            .mockImplementation(({ triggerProps: _triggerProps }) => {
+              const {
+                isOpen: ignoreIsOpen,
+                item: ignoreItem,
+                triggerRef: ignoreTriggerRef,
+                variant: ignoreVariant,
+                ...triggerProps
+              } = _triggerProps;
+
+              return <div {...triggerProps}>Trigger</div>;
+            });
+
+          [themeProvider, select] = mountSelect({
+            renderTrigger
+          });
+        });
+
+        it('calls renderTrigger prop with expected arguments', () => {
+          expect(renderTrigger).toBeCalledWith(
+            expect.objectContaining({
+              // Derived
+              id: expect.stringMatching(REGEX_SELECT_ID),
+              // State
+              highlightedIndex: undefined,
+              isOpen: false,
+              selectedItem: undefined,
+              // Helpers
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function),
+              // Prop objects
+              triggerProps: expect.objectContaining({
+                'aria-activedescendant': undefined,
+                'aria-describedby': expect.stringMatching(
+                  REGEX_SELECT_CONTENT_ID
+                ),
+                'aria-disabled': undefined,
+                'aria-expanded': false,
+                'aria-haspopup': 'listbox',
+                'aria-invalid': undefined,
+                'aria-owns': expect.stringMatching(REGEX_SELECT_CONTENT_ID),
+                'aria-readonly': undefined,
+                'aria-required': undefined,
+                children: undefined,
+                disabled: undefined,
+                isOpen: false,
+                item: undefined,
+                name: undefined,
+                onBlur: expect.any(Function),
+                onClick: expect.any(Function),
+                onKeyDown: expect.any(Function),
+                onKeyUp: expect.any(Function),
+                placeholder: expect.any(String),
+                readOnly: undefined,
+                ref: expect.any(Function),
+                role: 'button',
+                size: 'large',
+                tabIndex: 0,
+                variant: undefined
+              })
+            })
+          );
+        });
+
+        it('renders expected content', () => {
+          expect(select).toMatchSnapshot();
+        });
+      });
+
+      describe('renderMenu', () => {
+        let select, renderMenu;
+
+        beforeEach(() => {
+          renderMenu = jest
+            .fn()
+            .mockImplementation(({ menuProps: _menuProps }) => {
+              const {
+                renderItem: ignoreRenderItem,
+                itemKey: ignoreItemKey,
+                ...menuProps
+              } = _menuProps;
+              return <div {...menuProps}>Menu</div>;
+            });
+
+          [themeProvider, select] = mountSelect({ renderMenu, isOpen: true });
+        });
+
+        it('calls renderMenu prop with expected arguments', () => {
+          expect(renderMenu).toBeCalledWith(
+            expect.objectContaining({
+              // Derived
+              id: expect.any(String),
+              // State
+              highlightedIndex: undefined,
+              isOpen: true,
+              selectedItem: undefined,
+              // Helpers
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function),
+              // Prop objects
+              menuProps: expect.objectContaining({
+                data,
+                id: expect.stringMatching(REGEX_SELECT_MENU_ID),
+                itemKey: 'value',
+                renderItem: expect.any(Function),
+                role: 'listbox'
+              })
+            })
+          );
+        });
+
+        it('renders expected content', () => {
+          expect(select).toMatchSnapshot();
+        });
+      });
+
+      describe('renderItem', () => {
+        let select, renderItem;
+
+        beforeEach(() => {
+          renderItem = jest
+            .fn()
+            .mockImplementation(({ item, itemProps: _itemProps }) => {
+              const {
+                render: ignoreRender,
+                text: ignoreText,
+                index: ignoreIndex,
+                item: ignoreItem,
+                variant: ignoreVariant,
+                isHighlighted: ignoreIsHighlighted,
+                ...itemProps
+              } = _itemProps;
+
+              return <div {...itemProps}>{item.text}</div>;
+            });
+
+          [themeProvider, select] = mountSelect({ renderItem, isOpen: true });
+        });
+
+        it('calls renderItem prop with expected arguments', () => {
+          expect(renderItem).toBeCalledWith(
+            expect.objectContaining({
+              // Derived
+              id: expect.any(String),
+              // State
+              highlightedIndex: undefined,
+              isOpen: true,
+              selectedItem: undefined,
+              // Helpers
+              close: expect.any(Function),
+              focusTrigger: expect.any(Function),
+              open: expect.any(Function),
+              // Prop objects
+              itemProps: expect.objectContaining({
+                'aria-disabled': undefined,
+                'aria-selected': false,
+                children: 'A item',
+                disabled: undefined,
+                id: expect.stringMatching(REGEX_SELECT_ITEM_ID),
+                index: expect.any(Number),
+                isHighlighted: false,
+                item: expect.any(Object),
+                onClick: expect.any(Function),
+                onKeyDown: expect.any(Function),
+                render: undefined,
+                role: 'option',
+                tabIndex: null,
+                text: expect.any(String),
+                value: expect.any(String),
+                variant: undefined
+              }),
+              // Other
+              index: expect.any(Number),
+              item: expect.any(Object)
+            })
+          );
+        });
+
+        it('renders expected content', () => {
+          expect(select).toMatchSnapshot();
+        });
+      });
     });
 
     describe('when closed', () => {
@@ -366,7 +568,7 @@ describe('Select', () => {
 
         describe('when item is different than previous', () => {
           it('calls appropriate event handlers', () => {
-            const item = themeProvider.find(MenuItem).at(1);
+            const item = findMenuItems(themeProvider).at(1);
 
             item.simulate('click');
 

@@ -73,5 +73,42 @@ describe('MenuItem', () => {
     });
   });
 
+  describe('render prop', () => {
+    let menuItem, render;
+
+    beforeEach(() => {
+      render = jest.fn().mockImplementation(({ itemProps: _itemProps }) => {
+        const {
+          render: ignore,
+          variant: ignoreVariant,
+          ...itemProps
+        } = _itemProps;
+        return <div {...itemProps}>Hello World</div>;
+      });
+
+      [, menuItem] = mountMenuItem({ render });
+    });
+
+    it('calls render prop with expected arguments', () => {
+      expect(render).toBeCalledWith(
+        expect.objectContaining({
+          itemProps: expect.objectContaining({
+            children: expect.any(String),
+            disabled: undefined,
+            onClick: expect.any(Function),
+            onKeyDown: expect.any(Function),
+            render: expect.any(Function),
+            tabIndex: 0,
+            variant: undefined
+          })
+        })
+      );
+    });
+
+    it('renders expected content', () => {
+      expect(menuItem).toMatchSnapshot();
+    });
+  });
+
   testDemoExamples(examples);
 });

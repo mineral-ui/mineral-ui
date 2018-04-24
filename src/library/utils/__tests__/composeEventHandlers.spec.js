@@ -2,6 +2,7 @@
 import { composeEventHandlers } from '../index';
 
 describe('composeEventHandlers', () => {
+  const event = { nativeEvent: {} };
   let handler;
 
   describe('when no truthy functions provided', () => {
@@ -41,22 +42,33 @@ describe('composeEventHandlers', () => {
 
     describe('when composed handler is invoked', () => {
       it('calls each function', () => {
-        handler && handler({});
+        handler && handler(event);
 
         expect(fn1).toHaveBeenCalled();
         expect(fn2).toHaveBeenCalled();
       });
 
       it('passes args to each function', () => {
-        const args = [{}, 'foo', 'bar'];
+        const args = [event, 'foo', 'bar'];
         handler && handler(...args);
 
         expect(fn1).toHaveBeenLastCalledWith(...args);
         expect(fn2).toHaveBeenLastCalledWith(...args);
       });
 
-      describe('when a handler calls event.preventDefault()', () => {
-        xit('does not call subsequent handlers');
+      describe('when a handler sets preventMineralDefault on event.nativeEvent', () => {
+        it('does not call subsequent handlers', () => {
+          fn1 = jest.fn().mockImplementation((event) => {
+            event.nativeEvent.preventMineralDefault = true;
+          });
+          fn2 = jest.fn();
+          handler = composeEventHandlers(fn1, fn2);
+
+          handler && handler(event);
+
+          expect(fn1).toHaveBeenCalled();
+          expect(fn2).not.toHaveBeenCalled();
+        });
       });
     });
   });
