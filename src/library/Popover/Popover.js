@@ -1,13 +1,9 @@
 /* @flow */
-import React, { Children, cloneElement, Component } from 'react';
+import React, { Children, Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Manager } from 'react-popper';
 import { createStyledComponent } from '../styles';
-import {
-  composeEventHandlers,
-  composePropsWithGetter,
-  generateId
-} from '../utils';
+import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import EventListener from '../EventListener';
 import Portal from '../Portal';
 import PopoverTrigger from './PopoverTrigger';
@@ -17,10 +13,18 @@ import PopoverContent, {
 import { componentTheme as popoverArrowComponentTheme } from './PopoverArrow';
 
 type Props = {
-  /** Trigger for the Popover */
-  children: React$Node,
-  /** Content of the Popover */
-  content: $FlowFixMe,
+  /**
+   * Trigger for the Popover. Optionally provides custom rendering control.
+   * See the [custom trigger example](/components/popover#custom-trigger)
+   * and [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  children: React$Node | RenderFn,
+  /**
+   * Content of the Popover. Optionally provides custom rendering control.
+   * See the [custom content example](/components/popover#custom-content)
+   * and [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  content: $FlowFixMe | RenderFn,
   /**
    * Open the Popover upon initialization. Primarily for use with uncontrolled
    * components.
@@ -37,7 +41,9 @@ type Props = {
   hasArrow?: boolean,
   /** Id of the Popover */
   id?: string,
-  /** Determines whether the Popover is open. For use with controlled components. */
+  /**
+   * Determines whether the Popover is open. For use with controlled components.
+   */
   isOpen?: boolean,
   /**
    * Plugins that are used to alter behavior. See
@@ -49,10 +55,6 @@ type Props = {
   onClose?: (event: SyntheticEvent<>) => void,
   /** Called when Popover is opened */
   onOpen?: (event: SyntheticEvent<>) => void,
-  /** @Private Function that returns props to be applied to the content */
-  getContentProps?: (props: Object) => Object,
-  /** @Private Function that returns props to be applied to the trigger */
-  getTriggerProps?: (props: Object) => Object,
   /** Placement of the Popover */
   placement?:
     | 'auto'
@@ -76,15 +78,34 @@ type Props = {
   title?: React$Node,
   /** @Private ref for the Popover trigger */
   triggerRef?: (node: ?React$Component<*, *>) => void,
-  /** Use a Portal to render the Popover to the body rather than as a sibling to the trigger */
-  usePortal?: boolean,
-  /** Display the content with default styles */
-  wrapContent?: boolean
+  /**
+   * Use a Portal to render the Popover to the body rather than as a sibling to
+   * the trigger
+   */
+  usePortal?: boolean
 };
 
 type State = {
-  isOpen?: boolean
+  highlightedIndex?: ?number, // Appease Dropdown
+  isOpen: boolean
 };
+
+type Helpers = {
+  close: (event: SyntheticEvent<>) => void,
+  focusTrigger: () => void,
+  open: (event: SyntheticEvent<>) => void
+};
+
+type StateAndHelpers = {
+  state: State,
+  helpers: Helpers
+};
+
+type PropGetter = (props?: Object) => Object;
+export type RenderFn = (props?: RenderProps) => React$Node;
+type RenderProps = {
+  props: Object
+} & StateAndHelpers;
 
 export const componentTheme = (baseTheme: Object) => ({
   ...popoverArrowComponentTheme(baseTheme),
@@ -113,8 +134,7 @@ export default class Popover extends Component<Props, State> {
   static defaultProps = {
     focusTriggerOnClose: true,
     hasArrow: true,
-    placement: 'bottom',
-    wrapContent: true
+    placement: 'bottom'
   };
 
   state: State = {
@@ -128,18 +148,17 @@ export default class Popover extends Component<Props, State> {
   popoverTrigger: ?React$Component<*, *>;
 
   render() {
-    const { ...restProps } = this.props;
     const isOpen = this.getControllableValue('isOpen');
 
     const rootProps = {
-      ...restProps,
+      ...this.props,
       tag: 'span'
     };
 
     return (
       <Root {...rootProps}>
-        <PopoverTrigger {...this.getTriggerProps()} />
-        {isOpen && this.renderPopoverContent()}
+        {this.renderTrigger()}
+        {isOpen && this.renderContent()}
         {isOpen && (
           <EventListener
             listeners={[
@@ -162,20 +181,74 @@ export default class Popover extends Component<Props, State> {
     );
   }
 
-  renderPopoverContent = () => {
-    const { content, usePortal, wrapContent } = this.props;
+  getStateAndHelpers = (): StateAndHelpers => {
+    return {
+      state: {
+        isOpen: this.getControllableValue('isOpen')
+      },
+      helpers: {
+        close: this.close,
+        focusTrigger: this.focusTrigger,
+        open: this.open,
+        toggleOpen: this.toggleOpen
+      }
+    };
+  };
+
+  setTriggerRef = (node: ?React$Component<*, *>) => {
+    const { triggerRef } = this.props;
+
+    this.popoverTrigger = node;
+    triggerRef && triggerRef(node);
+  };
+
+  setContentRef = (node: ?React$Component<*, *>) => {
+    this.popoverContent = node;
+  };
+
+  getContentProps: PropGetter = (props = {}) => {
+    const contentId = this.getContentId();
+    const {
+      content,
+      hasArrow,
+      modifiers,
+      placement,
+      subtitle,
+      title
+    } = this.props;
+
+    return {
+      ...props,
+      hasArrow,
+      id: contentId,
+      modifiers,
+      placement,
+      ref: this.setContentRef,
+      subtitle,
+      tabIndex: 0,
+      title,
+      onBlur: composeEventHandlers(
+        content && content.props && content.props.onBlur,
+        this.onBlur
+      )
+    };
+  };
+
+  renderContent: RenderFn = (props = {}) => {
+    const { content, usePortal } = this.props;
     let popoverContent;
 
-    if (wrapContent) {
-      popoverContent = (
-        <PopoverContent {...this.getContentProps()}>{content}</PopoverContent>
-      );
-    } else {
-      popoverContent = cloneElement(content, {
-        ref: (node) => {
-          this.popoverContent = node;
-        }
+    if (isRenderProp(content)) {
+      popoverContent = content({
+        ...this.getStateAndHelpers(),
+        props: this.getContentProps(props)
       });
+    } else {
+      popoverContent = (
+        <PopoverContent {...this.getContentProps(props)}>
+          {content}
+        </PopoverContent>
+      );
     }
 
     if (usePortal) {
@@ -189,71 +262,50 @@ export default class Popover extends Component<Props, State> {
     return `${this.id}-content`;
   };
 
-  getTriggerProps = (props: Object = {}) => {
-    const contentId = this.getContentId();
+  getTriggerProps: PropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
-    const { children, disabled, getTriggerProps, triggerRef } = this.props;
-    const child = Children.only(children);
+    const contentId = this.getContentId();
+    const { children, disabled } = this.props;
 
-    return composePropsWithGetter(
-      {
-        // Props set by caller
-        ...props,
+    let child, childDisabled;
+    if (!isRenderProp(children)) {
+      child = children ? Children.only(children) : undefined;
+      childDisabled = child && child.props.disabled !== undefined;
+    }
 
-        // Props set by this component
-        'aria-describedby': contentId,
-        'aria-disabled': disabled,
-        'aria-expanded': isOpen,
-        'aria-owns': contentId,
-        children: child,
-        disabled:
-          child.props.disabled !== undefined ? child.props.disabled : disabled,
-        onBlur: this.onBlur,
-        onClick: !disabled
-          ? composeEventHandlers(child.props.onClick, this.toggleOpenState)
-          : undefined,
-        ref: (node) => {
-          this.popoverTrigger = node;
-          triggerRef && triggerRef(node);
-        },
-        role: 'button'
-      },
-      // Custom prop getter can override all values
-      getTriggerProps
-    );
+    return {
+      ...(isRenderProp(children) ? props : {}),
+      'aria-describedby': contentId,
+      'aria-disabled': disabled,
+      'aria-expanded': isOpen,
+      'aria-owns': contentId,
+      children: child,
+      disabled: child && childDisabled ? childDisabled : disabled,
+      ref: this.setTriggerRef,
+      role: 'button',
+      ...(!isRenderProp(children) ? props : {}),
+      onBlur: composeEventHandlers(props.onBlur, this.onBlur),
+      onClick: !disabled
+        ? composeEventHandlers(props.onClick, this.toggleOpen)
+        : undefined
+    };
   };
 
-  getContentProps = (props: Object = {}) => {
-    const contentId = this.getContentId();
-    const {
-      getContentProps,
-      hasArrow,
-      modifiers,
-      placement,
-      subtitle,
-      title
-    } = this.props;
+  renderTrigger: RenderFn = (props = {}) => {
+    const { children } = this.props;
 
-    return composePropsWithGetter(
-      {
-        // Props set by caller, e.g. PopoverContent
-        ...props,
+    if (isRenderProp(children)) {
+      return children({
+        ...this.getStateAndHelpers(),
+        props: this.getTriggerProps(props)
+      });
+    }
 
-        // Props set by this component
-        hasArrow,
-        id: contentId,
-        modifiers,
-        onBlur: this.onBlur,
-        placement,
-        ref: (node) => {
-          this.popoverContent = node;
-        },
-        subtitle,
-        tabIndex: 0,
-        title
-      },
-      // Custom prop getter can override all values
-      getContentProps
+    const child = Children.only(children);
+    return (
+      <PopoverTrigger
+        {...this.getTriggerProps({ ...child.props, children: child })}
+      />
     );
   };
 
@@ -355,7 +407,7 @@ export default class Popover extends Component<Props, State> {
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  toggleOpenState = (event: SyntheticEvent<>) => {
+  toggleOpen = (event: SyntheticEvent<>) => {
     const isOpen = this.getControllableValue('isOpen');
     if (isOpen) {
       this.close(event);

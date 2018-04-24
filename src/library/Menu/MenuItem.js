@@ -1,6 +1,5 @@
 /* @flow */
-import React, { cloneElement } from 'react';
-import { withTheme } from 'glamorous';
+import React, { Component, cloneElement } from 'react';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
@@ -17,20 +16,30 @@ type Props = {
   iconEnd?: React$Element<*>,
   /** Icon that goes before the children */
   iconStart?: React$Element<*>,
+  /** Item index - provided to render callback */
+  index?: number,
   /** Display the item in an active style */
   isHighlighted?: boolean,
-  /** Item data (see [example](/components/menu#data)) */
+  /** Item data - provided to render callback */
   item?: Item,
   /** Called with the click event */
   onClick?: (event: SyntheticEvent<>) => void,
-  /** Custom render function */
-  render?: (item: Item, props: Object, theme: Object) => React$Element<*>,
+  /**
+   * Provides custom rendering control. See the
+   * [custom item example](/components/menu#custom-item) and
+   * [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  render?: RenderFn,
   /** Secondary text */
   secondaryText?: React$Node,
-  /** Determines if the item can be focused */
-  tabIndex?: number,
   /** Available variants */
   variant?: 'danger' | 'success' | 'warning'
+};
+
+type PropGetter = (props?: Object) => Object;
+type RenderFn = (props?: RenderProps) => React$Node;
+type RenderProps = {
+  props: Object
 };
 
 // Some of these values (all of the margins & paddings and the content fontSize)
@@ -179,27 +188,10 @@ const Root = createStyledComponent('div', styles.menuItem, {
   displayName: 'MenuItem'
 });
 
-const CustomRoot = withTheme(
-  ({ item, itemProps, render, theme: baseTheme }: Object) => {
-    const theme = componentTheme(baseTheme);
-    return render(item, itemProps, theme);
-  }
-);
-
 const Content = createStyledComponent('span', styles.content);
 const Inner = createStyledComponent('span', styles.inner);
 const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Text = createStyledComponent('span', styles.text);
-
-const onKeyDown = (
-  onClick: (event: SyntheticEvent<>) => void,
-  event: SyntheticKeyboardEvent<>
-) => {
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    onClick && onClick(event);
-  }
-};
 
 const variantIcons = {
   danger: <IconDanger size={pxToEm(24)} />,
@@ -207,81 +199,77 @@ const variantIcons = {
   warning: <IconWarning size={pxToEm(24)} />
 };
 
-const defaultRender = ({
-  children,
-  disabled,
-  iconEnd,
-  iconStart,
-  onClick,
-  secondaryText,
-  variant,
-  tabIndex,
-  ...restProps
-}: Props) => {
-  const rootProps = {
-    disabled,
-    onClick: disabled ? undefined : onClick,
-    onKeyDown: onClick ? onKeyDown.bind(null, onClick) : undefined,
-    tabIndex: disabled ? '-1' : tabIndex,
-    variant,
-    ...restProps
-  };
-
-  let startIcon = variant !== undefined && variant && variantIcons[variant];
-  if (iconStart) {
-    startIcon = cloneElement(iconStart, { size: pxToEm(24), key: 'iconStart' });
-  }
-
-  const endIcon =
-    iconEnd && cloneElement(iconEnd, { size: pxToEm(24), key: 'iconEnd' });
-
-  // This structure is based on Button
-  return (
-    <Root {...rootProps}>
-      <Inner>
-        {startIcon}
-        {(children || secondaryText) && (
-          <Content>
-            <Text>{children}</Text>
-            {SecondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
-          </Content>
-        )}
-        {endIcon}
-      </Inner>
-    </Root>
-  );
-};
-
-const customRender = ({ render, item, ...restProps }: Props) => {
-  const customRootProps = {
-    item,
-    itemProps: {
-      onKeyDown:
-        item && item.onClick ? onKeyDown.bind(null, item.onClick) : undefined,
-      tabIndex: item && item.disabled && '-1',
-      ...restProps
-    },
-    render
-  };
-  return <CustomRoot {...customRootProps} />;
-};
-
 /**
- * A MenuItem represents an option in a [Menu](/components/menu).
- * They can be used to trigger actions or navigate to a new location.
- * MenuItems provide context through optional variants, secondary text, or [Icons](/components/icon).
+ * A MenuItem represents an option in a [Menu](/components/menu). They can be
+ * used to trigger actions or navigate to a new location. MenuItems provide
+ * context through optional variants, secondary text, or
+ * [Icons](/components/icon).
  *
- * A custom rendering hook is exposed to enable any extra functionality your app requires.
+ * A custom rendering hook is exposed to enable any extra functionality your app
+ * requires.
  */
-export default function MenuItem({ tabIndex = 0, ...restProps }: Props) {
-  const rootProps = {
-    tabIndex,
-    ...restProps
+export default class MenuItem extends Component<Props> {
+  render() {
+    const {
+      children,
+      iconEnd,
+      iconStart,
+      render,
+      secondaryText,
+      variant
+    } = this.props;
+
+    if (render) {
+      return render({
+        props: this.getItemProps(this.props)
+      });
+    }
+
+    const rootProps = this.getItemProps(this.props);
+
+    let startIcon = variant !== undefined && variant && variantIcons[variant];
+    if (iconStart) {
+      startIcon = cloneElement(iconStart, {
+        size: pxToEm(24),
+        key: 'iconStart'
+      });
+    }
+    const endIcon =
+      iconEnd && cloneElement(iconEnd, { size: pxToEm(24), key: 'iconEnd' });
+
+    return (
+      <Root {...rootProps}>
+        <Inner>
+          {startIcon}
+          {(children || secondaryText) && (
+            <Content>
+              <Text>{children}</Text>
+              {SecondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
+            </Content>
+          )}
+          {endIcon}
+        </Inner>
+      </Root>
+    );
+  }
+
+  getItemProps: PropGetter = (props = {}) => {
+    const { disabled, onClick, render, ...restProps } = props;
+
+    return {
+      ...(render ? restProps : {}),
+      disabled,
+      tabIndex: disabled ? '-1' : 0,
+      ...(!render ? restProps : {}),
+      ...(!disabled ? { onClick, onKeyDown: this.onKeyDown } : {})
+    };
   };
 
-  if (rootProps.render) {
-    return customRender(rootProps);
-  } else {
-    return defaultRender(rootProps);
-  }
+  onKeyDown = (event: SyntheticKeyboardEvent<>) => {
+    const { onClick } = this.props;
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onClick && onClick(event);
+    }
+  };
 }
