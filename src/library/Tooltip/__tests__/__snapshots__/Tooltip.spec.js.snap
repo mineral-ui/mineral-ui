@@ -149,53 +149,47 @@ exports[`Tooltip demo examples basic 1`] = `
   <ThemedComponent
     content="Edit your account settings"
     focusTriggerOnClose={false}
-    getContentProps={[Function]}
-    getTriggerProps={[Function]}
     hasArrow={true}
     id="tooltip-18"
     isOpen={false}
     onClose={[Function]}
     onOpen={[Function]}
+    renderContent={[Function]}
   >
     <Themed(Popover)
       content="Edit your account settings"
       focusTriggerOnClose={false}
-      getContentProps={[Function]}
-      getTriggerProps={[Function]}
       hasArrow={true}
       id="tooltip-18"
       isOpen={false}
       onClose={[Function]}
       onOpen={[Function]}
+      renderContent={[Function]}
     >
       <ThemeProvider>
         <ThemeProvider>
           <Popover
             content="Edit your account settings"
             focusTriggerOnClose={false}
-            getContentProps={[Function]}
-            getTriggerProps={[Function]}
             hasArrow={true}
             id="tooltip-18"
             isOpen={false}
             onClose={[Function]}
             onOpen={[Function]}
             placement="bottom"
-            wrapContent={true}
+            renderContent={[Function]}
           >
             <Popover
               content="Edit your account settings"
               focusTriggerOnClose={false}
-              getContentProps={[Function]}
-              getTriggerProps={[Function]}
               hasArrow={true}
               id="tooltip-18"
               isOpen={false}
               onClose={[Function]}
               onOpen={[Function]}
               placement="bottom"
+              renderContent={[Function]}
               tag="span"
-              wrapContent={true}
             >
               <Manager
                 className="css-0"
@@ -208,14 +202,24 @@ exports[`Tooltip demo examples basic 1`] = `
                 >
                   <PopoverTrigger
                     aria-describedby="tooltip-18-content"
+                    aria-expanded={false}
                     aria-owns="tooltip-18-content"
+                    element="button"
+                    iconStart={
+                      <IconPerson
+                        title="account settings"
+                      />
+                    }
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
                     role="button"
+                    size="large"
                     tabIndex={0}
+                    type="button"
+                    variant="regular"
                   >
                     <PopoverTrigger
                       component="span"
@@ -229,6 +233,7 @@ exports[`Tooltip demo examples basic 1`] = `
                         >
                           <Button
                             aria-describedby="tooltip-18-content"
+                            aria-expanded={false}
                             aria-owns="tooltip-18-content"
                             element="button"
                             iconStart={
@@ -249,6 +254,7 @@ exports[`Tooltip demo examples basic 1`] = `
                           >
                             <glamorous(button)
                               aria-describedby="tooltip-18-content"
+                              aria-expanded={false}
                               aria-owns="tooltip-18-content"
                               element="button"
                               onBlur={[Function]}
@@ -264,6 +270,7 @@ exports[`Tooltip demo examples basic 1`] = `
                             >
                               <button
                                 aria-describedby="tooltip-18-content"
+                                aria-expanded={false}
                                 aria-owns="tooltip-18-content"
                                 className="css-2"
                                 onBlur={[Function]}
@@ -588,55 +595,49 @@ exports[`Tooltip demo examples controlled 1`] = `
         <ThemedComponent
           content="This tooltip is controlled"
           focusTriggerOnClose={false}
-          getContentProps={[Function]}
-          getTriggerProps={[Function]}
           hasArrow={true}
           id="tooltip-28"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
           placement="top"
+          renderContent={[Function]}
         >
           <Themed(Popover)
             content="This tooltip is controlled"
             focusTriggerOnClose={false}
-            getContentProps={[Function]}
-            getTriggerProps={[Function]}
             hasArrow={true}
             id="tooltip-28"
             isOpen={true}
             onClose={[Function]}
             onOpen={[Function]}
             placement="top"
+            renderContent={[Function]}
           >
             <ThemeProvider>
               <ThemeProvider>
                 <Popover
                   content="This tooltip is controlled"
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-28"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="top"
-                  wrapContent={true}
+                  renderContent={[Function]}
                 >
                   <Popover
                     content="This tooltip is controlled"
                     focusTriggerOnClose={false}
-                    getContentProps={[Function]}
-                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="tooltip-28"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="top"
+                    renderContent={[Function]}
                     tag="span"
-                    wrapContent={true}
                   >
                     <Manager
                       className="css-0"
@@ -649,14 +650,19 @@ exports[`Tooltip demo examples controlled 1`] = `
                       >
                         <PopoverTrigger
                           aria-describedby="tooltip-28-content"
+                          aria-expanded={true}
                           aria-owns="tooltip-28-content"
+                          element="button"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
                           role="button"
+                          size="large"
                           tabIndex={0}
+                          type="button"
+                          variant="regular"
                         >
                           <PopoverTrigger
                             component="span"
@@ -670,6 +676,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                               >
                                 <Button
                                   aria-describedby="tooltip-28-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-28-content"
                                   element="button"
                                   onBlur={[Function]}
@@ -685,6 +692,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                                 >
                                   <glamorous(button)
                                     aria-describedby="tooltip-28-content"
+                                    aria-expanded={true}
                                     aria-owns="tooltip-28-content"
                                     element="button"
                                     onBlur={[Function]}
@@ -701,6 +709,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                                   >
                                     <button
                                       aria-describedby="tooltip-28-content"
+                                      aria-expanded={true}
                                       aria-owns="tooltip-28-content"
                                       className="css-10"
                                       onBlur={[Function]}
@@ -741,6 +750,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                           onBlur={[Function]}
                           placement="top"
                           role="tooltip"
+                          tabIndex={0}
                         >
                           <PopoverContent
                             aria-live="polite"
@@ -748,6 +758,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                             onBlur={[Function]}
                             placement="top"
                             role="tooltip"
+                            tabIndex={0}
                           >
                             <ThemedComponent
                               aria-live="polite"
@@ -756,6 +767,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                               onBlur={[Function]}
                               placement="top"
                               role="tooltip"
+                              tabIndex={0}
                             >
                               <RtlPopper
                                 aria-live="polite"
@@ -764,6 +776,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                                 onBlur={[Function]}
                                 placement="top"
                                 role="tooltip"
+                                tabIndex={0}
                                 theme={
                                   Object {
                                     "PopoverArrow_backgroundColor": "#434a54",
@@ -976,7 +989,9 @@ exports[`Tooltip demo examples controlled 1`] = `
                                   modifiers={Object {}}
                                   onBlur={[Function]}
                                   placement="top"
+                                  positionFixed={false}
                                   role="tooltip"
+                                  tabIndex={0}
                                 >
                                   <div
                                     aria-live="polite"
@@ -991,6 +1006,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                                         "position": "absolute",
                                       }
                                     }
+                                    tabIndex={0}
                                   >
                                     <ThemedComponent>
                                       <Themed(CardBlock)>
@@ -1546,55 +1562,49 @@ exports[`Tooltip demo examples overflow 1`] = `
       <ThemedComponent
         content="Light years star stuff"
         focusTriggerOnClose={false}
-        getContentProps={[Function]}
-        getTriggerProps={[Function]}
         hasArrow={true}
         id="tooltip-23"
         isOpen={true}
         onClose={[Function]}
         onOpen={[Function]}
         placement="top"
+        renderContent={[Function]}
       >
         <Themed(Popover)
           content="Light years star stuff"
           focusTriggerOnClose={false}
-          getContentProps={[Function]}
-          getTriggerProps={[Function]}
           hasArrow={true}
           id="tooltip-23"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
           placement="top"
+          renderContent={[Function]}
         >
           <ThemeProvider>
             <ThemeProvider>
               <Popover
                 content="Light years star stuff"
                 focusTriggerOnClose={false}
-                getContentProps={[Function]}
-                getTriggerProps={[Function]}
                 hasArrow={true}
                 id="tooltip-23"
                 isOpen={true}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="top"
-                wrapContent={true}
+                renderContent={[Function]}
               >
                 <Popover
                   content="Light years star stuff"
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-23"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="top"
+                  renderContent={[Function]}
                   tag="span"
-                  wrapContent={true}
                 >
                   <Manager
                     className="css-0"
@@ -1607,14 +1617,19 @@ exports[`Tooltip demo examples overflow 1`] = `
                     >
                       <PopoverTrigger
                         aria-describedby="tooltip-23-content"
+                        aria-expanded={true}
                         aria-owns="tooltip-23-content"
+                        element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         onMouseLeave={[Function]}
                         role="button"
+                        size="large"
                         tabIndex={0}
+                        type="button"
+                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -1628,6 +1643,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                             >
                               <Button
                                 aria-describedby="tooltip-23-content"
+                                aria-expanded={true}
                                 aria-owns="tooltip-23-content"
                                 element="button"
                                 onBlur={[Function]}
@@ -1643,6 +1659,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                               >
                                 <glamorous(button)
                                   aria-describedby="tooltip-23-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-23-content"
                                   element="button"
                                   onBlur={[Function]}
@@ -1659,6 +1676,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                                 >
                                   <button
                                     aria-describedby="tooltip-23-content"
+                                    aria-expanded={true}
                                     aria-owns="tooltip-23-content"
                                     className="css-11"
                                     onBlur={[Function]}
@@ -1699,6 +1717,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                         onBlur={[Function]}
                         placement="top"
                         role="tooltip"
+                        tabIndex={0}
                       >
                         <PopoverContent
                           aria-live="polite"
@@ -1706,6 +1725,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                           onBlur={[Function]}
                           placement="top"
                           role="tooltip"
+                          tabIndex={0}
                         >
                           <ThemedComponent
                             aria-live="polite"
@@ -1714,6 +1734,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                             onBlur={[Function]}
                             placement="top"
                             role="tooltip"
+                            tabIndex={0}
                           >
                             <RtlPopper
                               aria-live="polite"
@@ -1722,6 +1743,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                               onBlur={[Function]}
                               placement="top"
                               role="tooltip"
+                              tabIndex={0}
                               theme={
                                 Object {
                                   "PopoverArrow_backgroundColor": "#434a54",
@@ -1934,7 +1956,9 @@ exports[`Tooltip demo examples overflow 1`] = `
                                 modifiers={Object {}}
                                 onBlur={[Function]}
                                 placement="top"
+                                positionFixed={false}
                                 role="tooltip"
+                                tabIndex={0}
                               >
                                 <div
                                   aria-live="polite"
@@ -1949,6 +1973,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                                       "position": "absolute",
                                     }
                                   }
+                                  tabIndex={0}
                                 >
                                   <ThemedComponent>
                                     <Themed(CardBlock)>
@@ -2263,55 +2288,49 @@ exports[`Tooltip demo examples placement 1`] = `
       <ThemedComponent
         content="Light years star stuff harvesting star light citizens of distant epochs."
         focusTriggerOnClose={false}
-        getContentProps={[Function]}
-        getTriggerProps={[Function]}
         hasArrow={true}
         id="tooltip-21"
         isOpen={true}
         onClose={[Function]}
         onOpen={[Function]}
         placement="bottom"
+        renderContent={[Function]}
       >
         <Themed(Popover)
           content="Light years star stuff harvesting star light citizens of distant epochs."
           focusTriggerOnClose={false}
-          getContentProps={[Function]}
-          getTriggerProps={[Function]}
           hasArrow={true}
           id="tooltip-21"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
           placement="bottom"
+          renderContent={[Function]}
         >
           <ThemeProvider>
             <ThemeProvider>
               <Popover
                 content="Light years star stuff harvesting star light citizens of distant epochs."
                 focusTriggerOnClose={false}
-                getContentProps={[Function]}
-                getTriggerProps={[Function]}
                 hasArrow={true}
                 id="tooltip-21"
                 isOpen={true}
                 onClose={[Function]}
                 onOpen={[Function]}
                 placement="bottom"
-                wrapContent={true}
+                renderContent={[Function]}
               >
                 <Popover
                   content="Light years star stuff harvesting star light citizens of distant epochs."
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-21"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
+                  renderContent={[Function]}
                   tag="span"
-                  wrapContent={true}
                 >
                   <Manager
                     className="css-0"
@@ -2324,14 +2343,24 @@ exports[`Tooltip demo examples placement 1`] = `
                     >
                       <PopoverTrigger
                         aria-describedby="tooltip-21-content"
+                        aria-expanded={true}
                         aria-owns="tooltip-21-content"
+                        element="button"
+                        iconStart={
+                          <IconDelete
+                            title="delete"
+                          />
+                        }
                         onBlur={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         onMouseLeave={[Function]}
                         role="button"
+                        size="large"
                         tabIndex={0}
+                        type="button"
+                        variant="danger"
                       >
                         <PopoverTrigger
                           component="span"
@@ -2345,6 +2374,7 @@ exports[`Tooltip demo examples placement 1`] = `
                             >
                               <Button
                                 aria-describedby="tooltip-21-content"
+                                aria-expanded={true}
                                 aria-owns="tooltip-21-content"
                                 element="button"
                                 iconStart={
@@ -2365,6 +2395,7 @@ exports[`Tooltip demo examples placement 1`] = `
                               >
                                 <glamorous(button)
                                   aria-describedby="tooltip-21-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-21-content"
                                   element="button"
                                   onBlur={[Function]}
@@ -2380,6 +2411,7 @@ exports[`Tooltip demo examples placement 1`] = `
                                 >
                                   <button
                                     aria-describedby="tooltip-21-content"
+                                    aria-expanded={true}
                                     aria-owns="tooltip-21-content"
                                     className="css-12"
                                     onBlur={[Function]}
@@ -2450,6 +2482,7 @@ exports[`Tooltip demo examples placement 1`] = `
                         onBlur={[Function]}
                         placement="bottom"
                         role="tooltip"
+                        tabIndex={0}
                       >
                         <PopoverContent
                           aria-live="polite"
@@ -2457,6 +2490,7 @@ exports[`Tooltip demo examples placement 1`] = `
                           onBlur={[Function]}
                           placement="bottom"
                           role="tooltip"
+                          tabIndex={0}
                         >
                           <ThemedComponent
                             aria-live="polite"
@@ -2465,6 +2499,7 @@ exports[`Tooltip demo examples placement 1`] = `
                             onBlur={[Function]}
                             placement="bottom"
                             role="tooltip"
+                            tabIndex={0}
                           >
                             <RtlPopper
                               aria-live="polite"
@@ -2473,6 +2508,7 @@ exports[`Tooltip demo examples placement 1`] = `
                               onBlur={[Function]}
                               placement="bottom"
                               role="tooltip"
+                              tabIndex={0}
                               theme={
                                 Object {
                                   "PopoverArrow_backgroundColor": "#434a54",
@@ -2685,7 +2721,9 @@ exports[`Tooltip demo examples placement 1`] = `
                                 modifiers={Object {}}
                                 onBlur={[Function]}
                                 placement="bottom"
+                                positionFixed={false}
                                 role="tooltip"
+                                tabIndex={0}
                               >
                                 <div
                                   aria-live="polite"
@@ -2700,6 +2738,7 @@ exports[`Tooltip demo examples placement 1`] = `
                                       "position": "absolute",
                                     }
                                   }
+                                  tabIndex={0}
                                 >
                                   <ThemedComponent>
                                     <Themed(CardBlock)>
@@ -3120,8 +3159,6 @@ exports[`Tooltip demo examples portal 1`] = `
                 <ThemedComponent
                   content="Light years star stuff"
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-25"
                   isOpen={true}
@@ -3135,13 +3172,12 @@ exports[`Tooltip demo examples portal 1`] = `
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
+                  renderContent={[Function]}
                   usePortal={true}
                 >
                   <Themed(Popover)
                     content="Light years star stuff"
                     focusTriggerOnClose={false}
-                    getContentProps={[Function]}
-                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="tooltip-25"
                     isOpen={true}
@@ -3155,6 +3191,7 @@ exports[`Tooltip demo examples portal 1`] = `
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
+                    renderContent={[Function]}
                     usePortal={true}
                   >
                     <ThemeProvider>
@@ -3162,8 +3199,6 @@ exports[`Tooltip demo examples portal 1`] = `
                         <Popover
                           content="Light years star stuff"
                           focusTriggerOnClose={false}
-                          getContentProps={[Function]}
-                          getTriggerProps={[Function]}
                           hasArrow={true}
                           id="tooltip-25"
                           isOpen={true}
@@ -3177,14 +3212,12 @@ exports[`Tooltip demo examples portal 1`] = `
                           onClose={[Function]}
                           onOpen={[Function]}
                           placement="bottom"
+                          renderContent={[Function]}
                           usePortal={true}
-                          wrapContent={true}
                         >
                           <Popover
                             content="Light years star stuff"
                             focusTriggerOnClose={false}
-                            getContentProps={[Function]}
-                            getTriggerProps={[Function]}
                             hasArrow={true}
                             id="tooltip-25"
                             isOpen={true}
@@ -3198,9 +3231,9 @@ exports[`Tooltip demo examples portal 1`] = `
                             onClose={[Function]}
                             onOpen={[Function]}
                             placement="bottom"
+                            renderContent={[Function]}
                             tag="span"
                             usePortal={true}
-                            wrapContent={true}
                           >
                             <Manager
                               className="css-0"
@@ -3213,14 +3246,19 @@ exports[`Tooltip demo examples portal 1`] = `
                               >
                                 <PopoverTrigger
                                   aria-describedby="tooltip-25-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-25-content"
+                                  element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onMouseEnter={[Function]}
                                   onMouseLeave={[Function]}
                                   role="button"
+                                  size="large"
                                   tabIndex={0}
+                                  type="button"
+                                  variant="regular"
                                 >
                                   <PopoverTrigger
                                     component="span"
@@ -3234,6 +3272,7 @@ exports[`Tooltip demo examples portal 1`] = `
                                       >
                                         <Button
                                           aria-describedby="tooltip-25-content"
+                                          aria-expanded={true}
                                           aria-owns="tooltip-25-content"
                                           element="button"
                                           onBlur={[Function]}
@@ -3249,6 +3288,7 @@ exports[`Tooltip demo examples portal 1`] = `
                                         >
                                           <glamorous(button)
                                             aria-describedby="tooltip-25-content"
+                                            aria-expanded={true}
                                             aria-owns="tooltip-25-content"
                                             element="button"
                                             onBlur={[Function]}
@@ -3265,6 +3305,7 @@ exports[`Tooltip demo examples portal 1`] = `
                                           >
                                             <button
                                               aria-describedby="tooltip-25-content"
+                                              aria-expanded={true}
                                               aria-owns="tooltip-25-content"
                                               className="css-3"
                                               onBlur={[Function]}
@@ -3437,25 +3478,23 @@ exports[`Tooltip demo examples prose 1`] = `
         <ThemedComponent
           content="Light years star stuff"
           focusTriggerOnClose={false}
-          getContentProps={[Function]}
-          getTriggerProps={[Function]}
           hasArrow={true}
           id="tooltip-20"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
+          renderContent={[Function]}
           usePortal={true}
         >
           <Themed(Popover)
             content="Light years star stuff"
             focusTriggerOnClose={false}
-            getContentProps={[Function]}
-            getTriggerProps={[Function]}
             hasArrow={true}
             id="tooltip-20"
             isOpen={true}
             onClose={[Function]}
             onOpen={[Function]}
+            renderContent={[Function]}
             usePortal={true}
           >
             <ThemeProvider>
@@ -3463,31 +3502,27 @@ exports[`Tooltip demo examples prose 1`] = `
                 <Popover
                   content="Light years star stuff"
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-20"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="bottom"
+                  renderContent={[Function]}
                   usePortal={true}
-                  wrapContent={true}
                 >
                   <Popover
                     content="Light years star stuff"
                     focusTriggerOnClose={false}
-                    getContentProps={[Function]}
-                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="tooltip-20"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="bottom"
+                    renderContent={[Function]}
                     tag="span"
                     usePortal={true}
-                    wrapContent={true}
                   >
                     <Manager
                       className="css-0"
@@ -3500,6 +3535,7 @@ exports[`Tooltip demo examples prose 1`] = `
                       >
                         <PopoverTrigger
                           aria-describedby="tooltip-20-content"
+                          aria-expanded={true}
                           aria-owns="tooltip-20-content"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -3521,6 +3557,7 @@ exports[`Tooltip demo examples prose 1`] = `
                               >
                                 <glamorous(span)
                                   aria-describedby="tooltip-20-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-20-content"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -3532,6 +3569,7 @@ exports[`Tooltip demo examples prose 1`] = `
                                 >
                                   <span
                                     aria-describedby="tooltip-20-content"
+                                    aria-expanded={true}
                                     aria-owns="tooltip-20-content"
                                     className="css-3"
                                     onBlur={[Function]}
@@ -3974,55 +4012,49 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                 <ThemedComponent
                   content="Light years star stuff"
                   focusTriggerOnClose={false}
-                  getContentProps={[Function]}
-                  getTriggerProps={[Function]}
                   hasArrow={true}
                   id="tooltip-24"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
                   placement="left"
+                  renderContent={[Function]}
                 >
                   <Themed(Popover)
                     content="Light years star stuff"
                     focusTriggerOnClose={false}
-                    getContentProps={[Function]}
-                    getTriggerProps={[Function]}
                     hasArrow={true}
                     id="tooltip-24"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
                     placement="left"
+                    renderContent={[Function]}
                   >
                     <ThemeProvider>
                       <ThemeProvider>
                         <Popover
                           content="Light years star stuff"
                           focusTriggerOnClose={false}
-                          getContentProps={[Function]}
-                          getTriggerProps={[Function]}
                           hasArrow={true}
                           id="tooltip-24"
                           isOpen={true}
                           onClose={[Function]}
                           onOpen={[Function]}
                           placement="left"
-                          wrapContent={true}
+                          renderContent={[Function]}
                         >
                           <Popover
                             content="Light years star stuff"
                             focusTriggerOnClose={false}
-                            getContentProps={[Function]}
-                            getTriggerProps={[Function]}
                             hasArrow={true}
                             id="tooltip-24"
                             isOpen={true}
                             onClose={[Function]}
                             onOpen={[Function]}
                             placement="left"
+                            renderContent={[Function]}
                             tag="span"
-                            wrapContent={true}
                           >
                             <Manager
                               className="css-0"
@@ -4035,14 +4067,19 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                               >
                                 <PopoverTrigger
                                   aria-describedby="tooltip-24-content"
+                                  aria-expanded={true}
                                   aria-owns="tooltip-24-content"
+                                  element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onMouseEnter={[Function]}
                                   onMouseLeave={[Function]}
                                   role="button"
+                                  size="large"
                                   tabIndex={0}
+                                  type="button"
+                                  variant="regular"
                                 >
                                   <PopoverTrigger
                                     component="span"
@@ -4056,6 +4093,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                       >
                                         <Button
                                           aria-describedby="tooltip-24-content"
+                                          aria-expanded={true}
                                           aria-owns="tooltip-24-content"
                                           element="button"
                                           onBlur={[Function]}
@@ -4071,6 +4109,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                         >
                                           <glamorous(button)
                                             aria-describedby="tooltip-24-content"
+                                            aria-expanded={true}
                                             aria-owns="tooltip-24-content"
                                             element="button"
                                             onBlur={[Function]}
@@ -4087,6 +4126,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                           >
                                             <button
                                               aria-describedby="tooltip-24-content"
+                                              aria-expanded={true}
                                               aria-owns="tooltip-24-content"
                                               className="css-10"
                                               onBlur={[Function]}
@@ -4127,6 +4167,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                   onBlur={[Function]}
                                   placement="left"
                                   role="tooltip"
+                                  tabIndex={0}
                                 >
                                   <PopoverContent
                                     aria-live="polite"
@@ -4134,6 +4175,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                     onBlur={[Function]}
                                     placement="left"
                                     role="tooltip"
+                                    tabIndex={0}
                                   >
                                     <ThemedComponent
                                       aria-live="polite"
@@ -4142,6 +4184,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                       onBlur={[Function]}
                                       placement="left"
                                       role="tooltip"
+                                      tabIndex={0}
                                     >
                                       <RtlPopper
                                         aria-live="polite"
@@ -4150,6 +4193,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                         onBlur={[Function]}
                                         placement="left"
                                         role="tooltip"
+                                        tabIndex={0}
                                         theme={
                                           Object {
                                             "PopoverArrow_backgroundColor": "#434a54",
@@ -4362,7 +4406,9 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                           modifiers={Object {}}
                                           onBlur={[Function]}
                                           placement="left"
+                                          positionFixed={false}
                                           role="tooltip"
+                                          tabIndex={0}
                                         >
                                           <div
                                             aria-live="polite"
@@ -4377,6 +4423,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                                 "position": "absolute",
                                               }
                                             }
+                                            tabIndex={0}
                                           >
                                             <ThemedComponent>
                                               <Themed(CardBlock)>

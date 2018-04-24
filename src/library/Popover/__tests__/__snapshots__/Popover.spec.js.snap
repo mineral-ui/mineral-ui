@@ -165,7 +165,6 @@ exports[`Popover demo examples basic 1`] = `
   focusTriggerOnClose={true}
   hasArrow={true}
   placement="bottom"
-  wrapContent={true}
 >
   <Popover
     content={<DemoContent />}
@@ -173,7 +172,6 @@ exports[`Popover demo examples basic 1`] = `
     hasArrow={true}
     placement="bottom"
     tag="span"
-    wrapContent={true}
   >
     <Manager
       className="css-0"
@@ -183,12 +181,16 @@ exports[`Popover demo examples basic 1`] = `
         className="css-0"
       >
         <PopoverTrigger
-          aria-describedby="popover-12-content"
+          aria-describedby="popover-19-content"
           aria-expanded={false}
-          aria-owns="popover-12-content"
+          aria-owns="popover-19-content"
+          element="button"
           onBlur={[Function]}
           onClick={[Function]}
           role="button"
+          size="large"
+          type="button"
+          variant="regular"
         >
           <PopoverTrigger
             component="span"
@@ -201,9 +203,9 @@ exports[`Popover demo examples basic 1`] = `
                 className="css-1"
               >
                 <Button
-                  aria-describedby="popover-12-content"
+                  aria-describedby="popover-19-content"
                   aria-expanded={false}
-                  aria-owns="popover-12-content"
+                  aria-owns="popover-19-content"
                   element="button"
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -213,9 +215,9 @@ exports[`Popover demo examples basic 1`] = `
                   variant="regular"
                 >
                   <glamorous(button)
-                    aria-describedby="popover-12-content"
+                    aria-describedby="popover-19-content"
                     aria-expanded={false}
-                    aria-owns="popover-12-content"
+                    aria-owns="popover-19-content"
                     element="button"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -226,9 +228,9 @@ exports[`Popover demo examples basic 1`] = `
                     variant="regular"
                   >
                     <button
-                      aria-describedby="popover-12-content"
+                      aria-describedby="popover-19-content"
                       aria-expanded={false}
-                      aria-owns="popover-12-content"
+                      aria-owns="popover-19-content"
                       className="css-2"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -451,7 +453,6 @@ exports[`Popover demo examples controlled 1`] = `
         onClose={[Function]}
         onOpen={[Function]}
         placement="bottom"
-        wrapContent={true}
       >
         <Popover
           content={<DemoContent />}
@@ -462,7 +463,6 @@ exports[`Popover demo examples controlled 1`] = `
           onOpen={[Function]}
           placement="bottom"
           tag="span"
-          wrapContent={true}
         >
           <Manager
             className="css-0"
@@ -472,12 +472,16 @@ exports[`Popover demo examples controlled 1`] = `
               className="css-0"
             >
               <PopoverTrigger
-                aria-describedby="popover-20-content"
+                aria-describedby="popover-27-content"
                 aria-expanded={false}
-                aria-owns="popover-20-content"
+                aria-owns="popover-27-content"
+                element="button"
                 onBlur={[Function]}
                 onClick={[Function]}
                 role="button"
+                size="large"
+                type="button"
+                variant="regular"
               >
                 <PopoverTrigger
                   component="span"
@@ -490,9 +494,9 @@ exports[`Popover demo examples controlled 1`] = `
                       className="css-1"
                     >
                       <Button
-                        aria-describedby="popover-20-content"
+                        aria-describedby="popover-27-content"
                         aria-expanded={false}
-                        aria-owns="popover-20-content"
+                        aria-owns="popover-27-content"
                         element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
@@ -502,9 +506,9 @@ exports[`Popover demo examples controlled 1`] = `
                         variant="regular"
                       >
                         <glamorous(button)
-                          aria-describedby="popover-20-content"
+                          aria-describedby="popover-27-content"
                           aria-expanded={false}
-                          aria-owns="popover-20-content"
+                          aria-owns="popover-27-content"
                           element="button"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -515,9 +519,9 @@ exports[`Popover demo examples controlled 1`] = `
                           variant="regular"
                         >
                           <button
-                            aria-describedby="popover-20-content"
+                            aria-describedby="popover-27-content"
                             aria-expanded={false}
-                            aria-owns="popover-20-content"
+                            aria-owns="popover-27-content"
                             className="css-2"
                             onBlur={[Function]}
                             onClick={[Function]}
@@ -756,7 +760,6 @@ exports[`Popover demo examples disabled 1`] = `
   focusTriggerOnClose={true}
   hasArrow={true}
   placement="bottom"
-  wrapContent={true}
 >
   <Popover
     content={<DemoContent />}
@@ -765,7 +768,6 @@ exports[`Popover demo examples disabled 1`] = `
     hasArrow={true}
     placement="bottom"
     tag="span"
-    wrapContent={true}
   >
     <Manager
       className="css-0"
@@ -775,13 +777,17 @@ exports[`Popover demo examples disabled 1`] = `
         className="css-0"
       >
         <PopoverTrigger
-          aria-describedby="popover-19-content"
+          aria-describedby="popover-26-content"
           aria-disabled={true}
           aria-expanded={false}
-          aria-owns="popover-19-content"
+          aria-owns="popover-26-content"
           disabled={true}
+          element="button"
           onBlur={[Function]}
           role="button"
+          size="large"
+          type="button"
+          variant="regular"
         >
           <PopoverTrigger
             component="span"
@@ -794,10 +800,10 @@ exports[`Popover demo examples disabled 1`] = `
                 className="css-1"
               >
                 <Button
-                  aria-describedby="popover-19-content"
+                  aria-describedby="popover-26-content"
                   aria-disabled={true}
                   aria-expanded={false}
-                  aria-owns="popover-19-content"
+                  aria-owns="popover-26-content"
                   disabled={true}
                   element="button"
                   onBlur={[Function]}
@@ -807,10 +813,10 @@ exports[`Popover demo examples disabled 1`] = `
                   variant="regular"
                 >
                   <glamorous(button)
-                    aria-describedby="popover-19-content"
+                    aria-describedby="popover-26-content"
                     aria-disabled={true}
                     aria-expanded={false}
-                    aria-owns="popover-19-content"
+                    aria-owns="popover-26-content"
                     disabled={true}
                     element="button"
                     onBlur={[Function]}
@@ -821,10 +827,10 @@ exports[`Popover demo examples disabled 1`] = `
                     variant="regular"
                   >
                     <button
-                      aria-describedby="popover-19-content"
+                      aria-describedby="popover-26-content"
                       aria-disabled={true}
                       aria-expanded={false}
-                      aria-owns="popover-19-content"
+                      aria-owns="popover-26-content"
                       className="css-10"
                       disabled={true}
                       onBlur={[Function]}
@@ -1027,7 +1033,6 @@ exports[`Popover demo examples on-open-close 1`] = `
     onClose={[Function]}
     onOpen={[Function]}
     placement="bottom"
-    wrapContent={true}
   >
     <Popover
       content={<DemoContent />}
@@ -1037,7 +1042,6 @@ exports[`Popover demo examples on-open-close 1`] = `
       onOpen={[Function]}
       placement="bottom"
       tag="span"
-      wrapContent={true}
     >
       <Manager
         className="css-0"
@@ -1047,12 +1051,16 @@ exports[`Popover demo examples on-open-close 1`] = `
           className="css-0"
         >
           <PopoverTrigger
-            aria-describedby="popover-18-content"
+            aria-describedby="popover-25-content"
             aria-expanded={false}
-            aria-owns="popover-18-content"
+            aria-owns="popover-25-content"
+            element="button"
             onBlur={[Function]}
             onClick={[Function]}
             role="button"
+            size="large"
+            type="button"
+            variant="regular"
           >
             <PopoverTrigger
               component="span"
@@ -1065,9 +1073,9 @@ exports[`Popover demo examples on-open-close 1`] = `
                   className="css-1"
                 >
                   <Button
-                    aria-describedby="popover-18-content"
+                    aria-describedby="popover-25-content"
                     aria-expanded={false}
-                    aria-owns="popover-18-content"
+                    aria-owns="popover-25-content"
                     element="button"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -1077,22 +1085,22 @@ exports[`Popover demo examples on-open-close 1`] = `
                     variant="regular"
                   >
                     <glamorous(button)
-                      aria-describedby="popover-18-content"
+                      aria-describedby="popover-25-content"
                       aria-expanded={false}
-                      aria-owns="popover-18-content"
+                      aria-owns="popover-25-content"
                       element="button"
                       onBlur={[Function]}
                       onClick={[Function]}
                       role="button"
                       size="large"
-                      text="Menu"
+                      text="Open Popover"
                       type="button"
                       variant="regular"
                     >
                       <button
-                        aria-describedby="popover-18-content"
+                        aria-describedby="popover-25-content"
                         aria-expanded={false}
-                        aria-owns="popover-18-content"
+                        aria-owns="popover-25-content"
                         className="css-2"
                         onBlur={[Function]}
                         onClick={[Function]}
@@ -1109,7 +1117,7 @@ exports[`Popover demo examples on-open-close 1`] = `
                               <span
                                 className="css-17"
                               >
-                                Menu
+                                Open Popover
                               </span>
                             </glamorous(span)>
                           </span>
@@ -1371,7 +1379,6 @@ exports[`Popover demo examples overflow 1`] = `
       hasArrow={true}
       isOpen={true}
       placement="right"
-      wrapContent={true}
     >
       <Popover
         content={<DemoContent />}
@@ -1380,7 +1387,6 @@ exports[`Popover demo examples overflow 1`] = `
         isOpen={true}
         placement="right"
         tag="span"
-        wrapContent={true}
       >
         <Manager
           className="css-0"
@@ -1390,12 +1396,16 @@ exports[`Popover demo examples overflow 1`] = `
             className="css-0"
           >
             <PopoverTrigger
-              aria-describedby="popover-15-content"
+              aria-describedby="popover-22-content"
               aria-expanded={true}
-              aria-owns="popover-15-content"
+              aria-owns="popover-22-content"
+              element="button"
               onBlur={[Function]}
               onClick={[Function]}
               role="button"
+              size="large"
+              type="button"
+              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -1408,9 +1418,9 @@ exports[`Popover demo examples overflow 1`] = `
                     className="css-1"
                   >
                     <Button
-                      aria-describedby="popover-15-content"
+                      aria-describedby="popover-22-content"
                       aria-expanded={true}
-                      aria-owns="popover-15-content"
+                      aria-owns="popover-22-content"
                       element="button"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -1420,9 +1430,9 @@ exports[`Popover demo examples overflow 1`] = `
                       variant="regular"
                     >
                       <glamorous(button)
-                        aria-describedby="popover-15-content"
+                        aria-describedby="popover-22-content"
                         aria-expanded={true}
-                        aria-owns="popover-15-content"
+                        aria-owns="popover-22-content"
                         element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
@@ -1433,9 +1443,9 @@ exports[`Popover demo examples overflow 1`] = `
                         variant="regular"
                       >
                         <button
-                          aria-describedby="popover-15-content"
+                          aria-describedby="popover-22-content"
                           aria-expanded={true}
-                          aria-owns="popover-15-content"
+                          aria-owns="popover-22-content"
                           className="css-9"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -1466,27 +1476,27 @@ exports[`Popover demo examples overflow 1`] = `
             </PopoverTrigger>
             <PopoverContent
               hasArrow={true}
-              id="popover-15-content"
+              id="popover-22-content"
               onBlur={[Function]}
               placement="right"
               tabIndex={0}
             >
               <PopoverContent
-                id="popover-15-content"
+                id="popover-22-content"
                 onBlur={[Function]}
                 placement="right"
                 tabIndex={0}
               >
                 <ThemedComponent
                   className="css-2"
-                  id="popover-15-content"
+                  id="popover-22-content"
                   onBlur={[Function]}
                   placement="right"
                   tabIndex={0}
                 >
                   <RtlPopper
                     className="css-2"
-                    id="popover-15-content"
+                    id="popover-22-content"
                     onBlur={[Function]}
                     placement="right"
                     tabIndex={0}
@@ -1682,15 +1692,16 @@ exports[`Popover demo examples overflow 1`] = `
                       className="css-2"
                       component="div"
                       eventsEnabled={true}
-                      id="popover-15-content"
+                      id="popover-22-content"
                       modifiers={Object {}}
                       onBlur={[Function]}
                       placement="right"
+                      positionFixed={false}
                       tabIndex={0}
                     >
                       <div
                         className="css-2"
-                        id="popover-15-content"
+                        id="popover-22-content"
                         onBlur={[Function]}
                         style={
                           Object {
@@ -2037,7 +2048,6 @@ exports[`Popover demo examples placement 1`] = `
       hasArrow={true}
       isOpen={true}
       placement="bottom"
-      wrapContent={true}
     >
       <Popover
         content={<DemoContent />}
@@ -2046,7 +2056,6 @@ exports[`Popover demo examples placement 1`] = `
         isOpen={true}
         placement="bottom"
         tag="span"
-        wrapContent={true}
       >
         <Manager
           className="css-0"
@@ -2056,12 +2065,16 @@ exports[`Popover demo examples placement 1`] = `
             className="css-0"
           >
             <PopoverTrigger
-              aria-describedby="popover-14-content"
+              aria-describedby="popover-21-content"
               aria-expanded={true}
-              aria-owns="popover-14-content"
+              aria-owns="popover-21-content"
+              element="button"
               onBlur={[Function]}
               onClick={[Function]}
               role="button"
+              size="large"
+              type="button"
+              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -2074,9 +2087,9 @@ exports[`Popover demo examples placement 1`] = `
                     className="css-1"
                   >
                     <Button
-                      aria-describedby="popover-14-content"
+                      aria-describedby="popover-21-content"
                       aria-expanded={true}
-                      aria-owns="popover-14-content"
+                      aria-owns="popover-21-content"
                       element="button"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -2086,9 +2099,9 @@ exports[`Popover demo examples placement 1`] = `
                       variant="regular"
                     >
                       <glamorous(button)
-                        aria-describedby="popover-14-content"
+                        aria-describedby="popover-21-content"
                         aria-expanded={true}
-                        aria-owns="popover-14-content"
+                        aria-owns="popover-21-content"
                         element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
@@ -2099,9 +2112,9 @@ exports[`Popover demo examples placement 1`] = `
                         variant="regular"
                       >
                         <button
-                          aria-describedby="popover-14-content"
+                          aria-describedby="popover-21-content"
                           aria-expanded={true}
-                          aria-owns="popover-14-content"
+                          aria-owns="popover-21-content"
                           className="css-9"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -2132,27 +2145,27 @@ exports[`Popover demo examples placement 1`] = `
             </PopoverTrigger>
             <PopoverContent
               hasArrow={true}
-              id="popover-14-content"
+              id="popover-21-content"
               onBlur={[Function]}
               placement="bottom"
               tabIndex={0}
             >
               <PopoverContent
-                id="popover-14-content"
+                id="popover-21-content"
                 onBlur={[Function]}
                 placement="bottom"
                 tabIndex={0}
               >
                 <ThemedComponent
                   className="css-2"
-                  id="popover-14-content"
+                  id="popover-21-content"
                   onBlur={[Function]}
                   placement="bottom"
                   tabIndex={0}
                 >
                   <RtlPopper
                     className="css-2"
-                    id="popover-14-content"
+                    id="popover-21-content"
                     onBlur={[Function]}
                     placement="bottom"
                     tabIndex={0}
@@ -2348,15 +2361,16 @@ exports[`Popover demo examples placement 1`] = `
                       className="css-2"
                       component="div"
                       eventsEnabled={true}
-                      id="popover-14-content"
+                      id="popover-21-content"
                       modifiers={Object {}}
                       onBlur={[Function]}
                       placement="bottom"
+                      positionFixed={false}
                       tabIndex={0}
                     >
                       <div
                         className="css-2"
-                        id="popover-14-content"
+                        id="popover-21-content"
                         onBlur={[Function]}
                         style={
                           Object {
@@ -2786,7 +2800,6 @@ exports[`Popover demo examples portal 1`] = `
                 }
                 placement="bottom"
                 usePortal={true}
-                wrapContent={true}
               >
                 <Popover
                   content={<DemoContent />}
@@ -2803,7 +2816,6 @@ exports[`Popover demo examples portal 1`] = `
                   placement="bottom"
                   tag="span"
                   usePortal={true}
-                  wrapContent={true}
                 >
                   <Manager
                     className="css-0"
@@ -2813,12 +2825,16 @@ exports[`Popover demo examples portal 1`] = `
                       className="css-0"
                     >
                       <PopoverTrigger
-                        aria-describedby="popover-17-content"
+                        aria-describedby="popover-24-content"
                         aria-expanded={true}
-                        aria-owns="popover-17-content"
+                        aria-owns="popover-24-content"
+                        element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
                         role="button"
+                        size="large"
+                        type="button"
+                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -2831,9 +2847,9 @@ exports[`Popover demo examples portal 1`] = `
                               className="css-1"
                             >
                               <Button
-                                aria-describedby="popover-17-content"
+                                aria-describedby="popover-24-content"
                                 aria-expanded={true}
-                                aria-owns="popover-17-content"
+                                aria-owns="popover-24-content"
                                 element="button"
                                 onBlur={[Function]}
                                 onClick={[Function]}
@@ -2843,9 +2859,9 @@ exports[`Popover demo examples portal 1`] = `
                                 variant="regular"
                               >
                                 <glamorous(button)
-                                  aria-describedby="popover-17-content"
+                                  aria-describedby="popover-24-content"
                                   aria-expanded={true}
-                                  aria-owns="popover-17-content"
+                                  aria-owns="popover-24-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -2856,9 +2872,9 @@ exports[`Popover demo examples portal 1`] = `
                                   variant="regular"
                                 >
                                   <button
-                                    aria-describedby="popover-17-content"
+                                    aria-describedby="popover-24-content"
                                     aria-expanded={true}
-                                    aria-owns="popover-17-content"
+                                    aria-owns="popover-24-content"
                                     className="css-2"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -2965,6 +2981,355 @@ exports[`Popover demo examples portal 1`] = `
     </div>
   </glamorous(div)>
 </ScrollBox>
+`;
+
+exports[`Popover demo examples render-content 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-1,
+[data-css-1] {
+  display: inline-block;
+}
+
+.css-2,
+[data-css-2] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.css-2 *,
+[data-css-2] *,
+.css-2 *::before,
+[data-css-2] *::before,
+.css-2 *::after,
+[data-css-2] *::after {
+  box-sizing: inherit;
+}
+
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
+  background-color: #ebeff5;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #1d5bbf;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
+  background-color: #f5f7fa;
+  color: #333840;
+  text-decoration: none;
+}
+
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.css-2::-moz-focus-inner,
+[data-css-2]::-moz-focus-inner,
+.css-2[data-simulate-mozfocusinner],
+[data-css-2][data-simulate-mozfocusinner] {
+  border: 0;
+}
+
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+}
+
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-2 [role="img"]:only-child,
+[data-css-2] [role="img"]:only-child {
+  margin: 0;
+}
+
+.css-16,
+[data-css-16] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-17,
+[data-css-17] {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.css-17:first-child,
+[data-css-17]:first-child,
+.css-17[data-simulate-firstchild],
+[data-css-17][data-simulate-firstchild] {
+  padding-left: 0.5714285714285714em;
+}
+
+.css-17:last-child,
+[data-css-17]:last-child,
+.css-17[data-simulate-lastchild],
+[data-css-17][data-simulate-lastchild] {
+  padding-right: 0.5714285714285714em;
+}
+
+<Component>
+  <Popover
+    focusTriggerOnClose={true}
+    hasArrow={true}
+    placement="bottom"
+    renderContent={[Function]}
+  >
+    <Popover
+      focusTriggerOnClose={true}
+      hasArrow={true}
+      placement="bottom"
+      renderContent={[Function]}
+      tag="span"
+    >
+      <Manager
+        className="css-0"
+        tag="span"
+      >
+        <span
+          className="css-0"
+        >
+          <PopoverTrigger
+            aria-describedby="popover-29-content"
+            aria-expanded={false}
+            aria-owns="popover-29-content"
+            element="button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            role="button"
+            size="large"
+            type="button"
+            variant="regular"
+          >
+            <PopoverTrigger
+              component="span"
+            >
+              <Target
+                className="css-1"
+                component="span"
+              >
+                <span
+                  className="css-1"
+                >
+                  <Button
+                    aria-describedby="popover-29-content"
+                    aria-expanded={false}
+                    aria-owns="popover-29-content"
+                    element="button"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    role="button"
+                    size="large"
+                    type="button"
+                    variant="regular"
+                  >
+                    <glamorous(button)
+                      aria-describedby="popover-29-content"
+                      aria-expanded={false}
+                      aria-owns="popover-29-content"
+                      element="button"
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      role="button"
+                      size="large"
+                      text="Open Popover"
+                      type="button"
+                      variant="regular"
+                    >
+                      <button
+                        aria-describedby="popover-29-content"
+                        aria-expanded={false}
+                        aria-owns="popover-29-content"
+                        className="css-2"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        role="button"
+                        type="button"
+                      >
+                        <glamorous(span)>
+                          <span
+                            className="css-16"
+                          >
+                            <glamorous(span)
+                              size="large"
+                            >
+                              <span
+                                className="css-17"
+                              >
+                                Open Popover
+                              </span>
+                            </glamorous(span)>
+                          </span>
+                        </glamorous(span)>
+                      </button>
+                    </glamorous(button)>
+                  </Button>
+                </span>
+              </Target>
+            </PopoverTrigger>
+          </PopoverTrigger>
+        </span>
+      </Manager>
+    </Popover>
+  </Popover>
+</Component>
+`;
+
+exports[`Popover demo examples render-trigger 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+<Component>
+  <Popover
+    content={<DemoContent />}
+    focusTriggerOnClose={true}
+    hasArrow={true}
+    placement="bottom"
+    renderTrigger={[Function]}
+  >
+    <Popover
+      content={<DemoContent />}
+      focusTriggerOnClose={true}
+      hasArrow={true}
+      placement="bottom"
+      renderTrigger={[Function]}
+      tag="span"
+    >
+      <Manager
+        className="css-0"
+        tag="span"
+      >
+        <span
+          className="css-0"
+        >
+          <glamorous(Target)
+            aria-describedby="popover-30-content"
+            aria-expanded={false}
+            aria-owns="popover-30-content"
+            component="button"
+            onBlur={[Function]}
+            onClick={[Function]}
+          >
+            <Target
+              aria-describedby="popover-30-content"
+              aria-expanded={false}
+              aria-owns="popover-30-content"
+              className="css-nil"
+              component="button"
+              onBlur={[Function]}
+              onClick={[Function]}
+            >
+              <button
+                aria-describedby="popover-30-content"
+                aria-expanded={false}
+                aria-owns="popover-30-content"
+                className="css-nil"
+                onBlur={[Function]}
+                onClick={[Function]}
+              >
+                Popover 
+                ▼
+              </button>
+            </Target>
+          </glamorous(Target)>
+        </span>
+      </Manager>
+    </Popover>
+  </Popover>
+</Component>
 `;
 
 exports[`Popover demo examples rtl 1`] = `
@@ -3213,7 +3578,6 @@ exports[`Popover demo examples rtl 1`] = `
           hasArrow={true}
           isOpen={true}
           placement="bottom-start"
-          wrapContent={true}
         >
           <Popover
             content={<DemoContent />}
@@ -3222,7 +3586,6 @@ exports[`Popover demo examples rtl 1`] = `
             isOpen={true}
             placement="bottom-start"
             tag="span"
-            wrapContent={true}
           >
             <Manager
               className="css-0"
@@ -3232,12 +3595,16 @@ exports[`Popover demo examples rtl 1`] = `
                 className="css-0"
               >
                 <PopoverTrigger
-                  aria-describedby="popover-21-content"
+                  aria-describedby="popover-28-content"
                   aria-expanded={true}
-                  aria-owns="popover-21-content"
+                  aria-owns="popover-28-content"
+                  element="button"
                   onBlur={[Function]}
                   onClick={[Function]}
                   role="button"
+                  size="large"
+                  type="button"
+                  variant="regular"
                 >
                   <PopoverTrigger
                     component="span"
@@ -3250,9 +3617,9 @@ exports[`Popover demo examples rtl 1`] = `
                         className="css-1"
                       >
                         <Button
-                          aria-describedby="popover-21-content"
+                          aria-describedby="popover-28-content"
                           aria-expanded={true}
-                          aria-owns="popover-21-content"
+                          aria-owns="popover-28-content"
                           element="button"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -3262,9 +3629,9 @@ exports[`Popover demo examples rtl 1`] = `
                           variant="regular"
                         >
                           <glamorous(button)
-                            aria-describedby="popover-21-content"
+                            aria-describedby="popover-28-content"
                             aria-expanded={true}
-                            aria-owns="popover-21-content"
+                            aria-owns="popover-28-content"
                             element="button"
                             onBlur={[Function]}
                             onClick={[Function]}
@@ -3275,9 +3642,9 @@ exports[`Popover demo examples rtl 1`] = `
                             variant="regular"
                           >
                             <button
-                              aria-describedby="popover-21-content"
+                              aria-describedby="popover-28-content"
                               aria-expanded={true}
-                              aria-owns="popover-21-content"
+                              aria-owns="popover-28-content"
                               className="css-12"
                               onBlur={[Function]}
                               onClick={[Function]}
@@ -3308,27 +3675,27 @@ exports[`Popover demo examples rtl 1`] = `
                 </PopoverTrigger>
                 <PopoverContent
                   hasArrow={true}
-                  id="popover-21-content"
+                  id="popover-28-content"
                   onBlur={[Function]}
                   placement="bottom-start"
                   tabIndex={0}
                 >
                   <PopoverContent
-                    id="popover-21-content"
+                    id="popover-28-content"
                     onBlur={[Function]}
                     placement="bottom-start"
                     tabIndex={0}
                   >
                     <ThemedComponent
                       className="css-2"
-                      id="popover-21-content"
+                      id="popover-28-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                       tabIndex={0}
                     >
                       <RtlPopper
                         className="css-2"
-                        id="popover-21-content"
+                        id="popover-28-content"
                         onBlur={[Function]}
                         placement="bottom-start"
                         tabIndex={0}
@@ -3524,15 +3891,16 @@ exports[`Popover demo examples rtl 1`] = `
                           className="css-2"
                           component="div"
                           eventsEnabled={true}
-                          id="popover-21-content"
+                          id="popover-28-content"
                           modifiers={Object {}}
                           onBlur={[Function]}
                           placement="bottom-end"
+                          positionFixed={false}
                           tabIndex={0}
                         >
                           <div
                             className="css-2"
-                            id="popover-21-content"
+                            id="popover-28-content"
                             onBlur={[Function]}
                             style={
                               Object {
@@ -4022,7 +4390,6 @@ exports[`Popover demo examples scrolling-container 1`] = `
                 hasArrow={true}
                 isOpen={true}
                 placement="left"
-                wrapContent={true}
               >
                 <Popover
                   content={<DemoContent />}
@@ -4031,7 +4398,6 @@ exports[`Popover demo examples scrolling-container 1`] = `
                   isOpen={true}
                   placement="left"
                   tag="span"
-                  wrapContent={true}
                 >
                   <Manager
                     className="css-0"
@@ -4041,12 +4407,16 @@ exports[`Popover demo examples scrolling-container 1`] = `
                       className="css-0"
                     >
                       <PopoverTrigger
-                        aria-describedby="popover-16-content"
+                        aria-describedby="popover-23-content"
                         aria-expanded={true}
-                        aria-owns="popover-16-content"
+                        aria-owns="popover-23-content"
+                        element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
                         role="button"
+                        size="large"
+                        type="button"
+                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -4059,9 +4429,9 @@ exports[`Popover demo examples scrolling-container 1`] = `
                               className="css-1"
                             >
                               <Button
-                                aria-describedby="popover-16-content"
+                                aria-describedby="popover-23-content"
                                 aria-expanded={true}
-                                aria-owns="popover-16-content"
+                                aria-owns="popover-23-content"
                                 element="button"
                                 onBlur={[Function]}
                                 onClick={[Function]}
@@ -4071,9 +4441,9 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                 variant="regular"
                               >
                                 <glamorous(button)
-                                  aria-describedby="popover-16-content"
+                                  aria-describedby="popover-23-content"
                                   aria-expanded={true}
-                                  aria-owns="popover-16-content"
+                                  aria-owns="popover-23-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -4084,9 +4454,9 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                   variant="regular"
                                 >
                                   <button
-                                    aria-describedby="popover-16-content"
+                                    aria-describedby="popover-23-content"
                                     aria-expanded={true}
-                                    aria-owns="popover-16-content"
+                                    aria-owns="popover-23-content"
                                     className="css-9"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -4117,27 +4487,27 @@ exports[`Popover demo examples scrolling-container 1`] = `
                       </PopoverTrigger>
                       <PopoverContent
                         hasArrow={true}
-                        id="popover-16-content"
+                        id="popover-23-content"
                         onBlur={[Function]}
                         placement="left"
                         tabIndex={0}
                       >
                         <PopoverContent
-                          id="popover-16-content"
+                          id="popover-23-content"
                           onBlur={[Function]}
                           placement="left"
                           tabIndex={0}
                         >
                           <ThemedComponent
                             className="css-2"
-                            id="popover-16-content"
+                            id="popover-23-content"
                             onBlur={[Function]}
                             placement="left"
                             tabIndex={0}
                           >
                             <RtlPopper
                               className="css-2"
-                              id="popover-16-content"
+                              id="popover-23-content"
                               onBlur={[Function]}
                               placement="left"
                               tabIndex={0}
@@ -4333,15 +4703,16 @@ exports[`Popover demo examples scrolling-container 1`] = `
                                 className="css-2"
                                 component="div"
                                 eventsEnabled={true}
-                                id="popover-16-content"
+                                id="popover-23-content"
                                 modifiers={Object {}}
                                 onBlur={[Function]}
                                 placement="left"
+                                positionFixed={false}
                                 tabIndex={0}
                               >
                                 <div
                                   className="css-2"
-                                  id="popover-16-content"
+                                  id="popover-23-content"
                                   onBlur={[Function]}
                                   style={
                                     Object {
@@ -4789,7 +5160,6 @@ exports[`Popover demo examples title 1`] = `
       placement="right"
       subtitle="Subtitle"
       title="Title"
-      wrapContent={true}
     >
       <Popover
         content={<DemoContent />}
@@ -4800,7 +5170,6 @@ exports[`Popover demo examples title 1`] = `
         subtitle="Subtitle"
         tag="span"
         title="Title"
-        wrapContent={true}
       >
         <Manager
           className="css-0"
@@ -4812,12 +5181,16 @@ exports[`Popover demo examples title 1`] = `
             title="Title"
           >
             <PopoverTrigger
-              aria-describedby="popover-13-content"
+              aria-describedby="popover-20-content"
               aria-expanded={true}
-              aria-owns="popover-13-content"
+              aria-owns="popover-20-content"
+              element="button"
               onBlur={[Function]}
               onClick={[Function]}
               role="button"
+              size="large"
+              type="button"
+              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -4830,9 +5203,9 @@ exports[`Popover demo examples title 1`] = `
                     className="css-1"
                   >
                     <Button
-                      aria-describedby="popover-13-content"
+                      aria-describedby="popover-20-content"
                       aria-expanded={true}
-                      aria-owns="popover-13-content"
+                      aria-owns="popover-20-content"
                       element="button"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -4842,9 +5215,9 @@ exports[`Popover demo examples title 1`] = `
                       variant="regular"
                     >
                       <glamorous(button)
-                        aria-describedby="popover-13-content"
+                        aria-describedby="popover-20-content"
                         aria-expanded={true}
-                        aria-owns="popover-13-content"
+                        aria-owns="popover-20-content"
                         element="button"
                         onBlur={[Function]}
                         onClick={[Function]}
@@ -4855,9 +5228,9 @@ exports[`Popover demo examples title 1`] = `
                         variant="regular"
                       >
                         <button
-                          aria-describedby="popover-13-content"
+                          aria-describedby="popover-20-content"
                           aria-expanded={true}
-                          aria-owns="popover-13-content"
+                          aria-owns="popover-20-content"
                           className="css-9"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -4888,7 +5261,7 @@ exports[`Popover demo examples title 1`] = `
             </PopoverTrigger>
             <PopoverContent
               hasArrow={true}
-              id="popover-13-content"
+              id="popover-20-content"
               onBlur={[Function]}
               placement="right"
               subtitle="Subtitle"
@@ -4896,21 +5269,21 @@ exports[`Popover demo examples title 1`] = `
               title="Title"
             >
               <PopoverContent
-                id="popover-13-content"
+                id="popover-20-content"
                 onBlur={[Function]}
                 placement="right"
                 tabIndex={0}
               >
                 <ThemedComponent
                   className="css-2"
-                  id="popover-13-content"
+                  id="popover-20-content"
                   onBlur={[Function]}
                   placement="right"
                   tabIndex={0}
                 >
                   <RtlPopper
                     className="css-2"
-                    id="popover-13-content"
+                    id="popover-20-content"
                     onBlur={[Function]}
                     placement="right"
                     tabIndex={0}
@@ -5106,15 +5479,16 @@ exports[`Popover demo examples title 1`] = `
                       className="css-2"
                       component="div"
                       eventsEnabled={true}
-                      id="popover-13-content"
+                      id="popover-20-content"
                       modifiers={Object {}}
                       onBlur={[Function]}
                       placement="right"
+                      positionFixed={false}
                       tabIndex={0}
                     >
                       <div
                         className="css-2"
-                        id="popover-13-content"
+                        id="popover-20-content"
                         onBlur={[Function]}
                         style={
                           Object {
@@ -5255,4 +5629,294 @@ exports[`Popover demo examples title 1`] = `
     </Popover>
   </div>
 </glamorous(div)>
+`;
+
+exports[`Popover render props renderContent renders expected content 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-1,
+[data-css-1] {
+  display: inline-block;
+}
+
+<Popover
+  focusTriggerOnClose={true}
+  hasArrow={true}
+  isOpen={true}
+  placement="bottom"
+  renderContent={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "close": [Function],
+            "contentProps": Object {
+              "hasArrow": true,
+              "id": "popover-9-content",
+              "modifiers": undefined,
+              "onBlur": [Function],
+              "placement": "bottom",
+              "ref": [Function],
+              "subtitle": undefined,
+              "tabIndex": 0,
+              "title": undefined,
+            },
+            "focusTrigger": [Function],
+            "id": "popover-9",
+            "isOpen": true,
+            "open": [Function],
+            "toggleOpen": [Function],
+          },
+        ],
+      ],
+    }
+  }
+>
+  <Popover
+    focusTriggerOnClose={true}
+    hasArrow={true}
+    isOpen={true}
+    placement="bottom"
+    renderContent={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "close": [Function],
+              "contentProps": Object {
+                "hasArrow": true,
+                "id": "popover-9-content",
+                "modifiers": undefined,
+                "onBlur": [Function],
+                "placement": "bottom",
+                "ref": [Function],
+                "subtitle": undefined,
+                "tabIndex": 0,
+                "title": undefined,
+              },
+              "focusTrigger": [Function],
+              "id": "popover-9",
+              "isOpen": true,
+              "open": [Function],
+              "toggleOpen": [Function],
+            },
+          ],
+        ],
+      }
+    }
+    tag="span"
+  >
+    <Manager
+      className="css-0"
+      tag="span"
+    >
+      <span
+        className="css-0"
+      >
+        <PopoverTrigger
+          aria-describedby="popover-9-content"
+          aria-expanded={true}
+          aria-owns="popover-9-content"
+          onBlur={[Function]}
+          onClick={[Function]}
+          role="button"
+        >
+          <PopoverTrigger
+            component="span"
+          >
+            <Target
+              className="css-1"
+              component="span"
+            >
+              <span
+                className="css-1"
+              >
+                <button
+                  aria-describedby="popover-9-content"
+                  aria-expanded={true}
+                  aria-owns="popover-9-content"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  role="button"
+                >
+                  trigger
+                </button>
+              </span>
+            </Target>
+          </PopoverTrigger>
+        </PopoverTrigger>
+        <div
+          id="popover-9-content"
+          onBlur={[Function]}
+          tabIndex={0}
+        >
+          Content
+        </div>
+        <EventListener
+          listeners={
+            Array [
+              Object {
+                "event": "click",
+                "handler": [Function],
+                "options": true,
+                "target": "document",
+              },
+              Object {
+                "event": "keydown",
+                "handler": [Function],
+                "options": true,
+                "target": "document",
+              },
+            ]
+          }
+        />
+      </span>
+    </Manager>
+  </Popover>
+</Popover>
+`;
+
+exports[`Popover render props renderTrigger renders expected content 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+<Popover
+  content={
+    <div>
+      content
+    </div>
+  }
+  focusTriggerOnClose={true}
+  hasArrow={true}
+  placement="bottom"
+  renderTrigger={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "close": [Function],
+            "focusTrigger": [Function],
+            "id": "popover-7",
+            "isOpen": false,
+            "open": [Function],
+            "toggleOpen": [Function],
+            "triggerProps": Object {
+              "aria-describedby": "popover-7-content",
+              "aria-disabled": undefined,
+              "aria-expanded": false,
+              "aria-owns": "popover-7-content",
+              "children": <button>
+                trigger
+              </button>,
+              "disabled": undefined,
+              "onBlur": [Function],
+              "onClick": [Function],
+              "ref": [Function],
+              "role": "button",
+            },
+          },
+        ],
+      ],
+    }
+  }
+>
+  <Popover
+    content={
+      <div>
+        content
+      </div>
+    }
+    focusTriggerOnClose={true}
+    hasArrow={true}
+    placement="bottom"
+    renderTrigger={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "close": [Function],
+              "focusTrigger": [Function],
+              "id": "popover-7",
+              "isOpen": false,
+              "open": [Function],
+              "toggleOpen": [Function],
+              "triggerProps": Object {
+                "aria-describedby": "popover-7-content",
+                "aria-disabled": undefined,
+                "aria-expanded": false,
+                "aria-owns": "popover-7-content",
+                "children": <button>
+                  trigger
+                </button>,
+                "disabled": undefined,
+                "onBlur": [Function],
+                "onClick": [Function],
+                "ref": [Function],
+                "role": "button",
+              },
+            },
+          ],
+        ],
+      }
+    }
+    tag="span"
+  >
+    <Manager
+      className="css-0"
+      tag="span"
+    >
+      <span
+        className="css-0"
+      >
+        <div
+          aria-describedby="popover-7-content"
+          aria-expanded={false}
+          aria-owns="popover-7-content"
+          onBlur={[Function]}
+          onClick={[Function]}
+          role="button"
+        >
+          Trigger
+        </div>
+      </span>
+    </Manager>
+  </Popover>
+</Popover>
 `;

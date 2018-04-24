@@ -3,19 +3,6 @@
 exports[`Menu demo examples basic 1`] = `
 .css-0,
 [data-css-0] {
-  overflow: hidden;
-}
-
-.css-0 > div,
-[data-css-0] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-1,
-[data-css-1] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -26,47 +13,79 @@ exports[`Menu demo examples basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-2,
-[data-css-2] {
+.css-1,
+[data-css-1] {
+  margin: 0.5em 0;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1 + .css-1,
+[data-css-1] + [data-css-1] {
+  margin-top: 0;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  margin-bottom: 0;
+}
+
+.css-7,
+[data-css-7] {
+  overflow: hidden;
+}
+
+.css-7 > div,
+[data-css-7] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-8,
+[data-css-8] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.css-8:focus,
+[data-css-8]:focus,
+.css-8[data-simulate-focus],
+[data-css-8][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.css-8:hover,
+[data-css-8]:hover,
+.css-8[data-simulate-hover],
+[data-css-8][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.css-8:active,
+[data-css-8]:active,
+.css-8[data-simulate-active],
+[data-css-8][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.css-8 [role="img"],
+[data-css-8] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -74,18 +93,18 @@ exports[`Menu demo examples basic 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.css-8 [role="img"]:first-child,
+[data-css-8] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.css-8 [role="img"]:last-child,
+[data-css-8] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-13,
-[data-css-13] {
+.css-19,
+[data-css-19] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -96,8 +115,8 @@ exports[`Menu demo examples basic 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-14,
-[data-css-14] {
+.css-20,
+[data-css-20] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -116,38 +135,19 @@ exports[`Menu demo examples basic 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-15,
-[data-css-15] {
+.css-21,
+[data-css-21] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-16,
-[data-css-16] {
+.css-22,
+[data-css-22] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-17,
-[data-css-17] {
-  margin: 0.5em 0;
-}
-
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17 + .css-17,
-[data-css-17] + [data-css-17] {
-  margin-top: 0;
-}
-
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
-  margin-bottom: 0;
 }
 
 .css-23,
@@ -257,12 +257,12 @@ exports[`Menu demo examples basic 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-0"
+    className="css-7"
   >
     <Menu>
       <Menu>
         <div
-          className="css-1"
+          className="css-0"
         >
           <MenuItem
             onClick={[Function]}
@@ -273,29 +273,29 @@ exports[`Menu demo examples basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-2"
+                className="css-8"
                 onClick={[Function]}
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-13"
+                    className="css-19"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-14"
+                        className="css-20"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-15"
+                            className="css-21"
                           >
                             Menu item with onClick
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-16"
+                            className="css-22"
                           />
                         </glamorous(span)>
                       </span>
@@ -309,30 +309,33 @@ exports[`Menu demo examples basic 1`] = `
             secondaryText="Secondary text"
           >
             <MenuItem
+              onKeyDown={[Function]}
+              secondaryText="Secondary text"
               tabIndex={0}
             >
               <div
-                className="css-2"
+                className="css-8"
+                onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-13"
+                    className="css-19"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-14"
+                        className="css-20"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-15"
+                            className="css-21"
                           >
                             Menu item
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-16"
+                            className="css-22"
                           >
                             Secondary text
                           </span>
@@ -349,7 +352,7 @@ exports[`Menu demo examples basic 1`] = `
           >
             <MenuGroup>
               <div
-                className="css-17"
+                className="css-1"
               >
                 <MenuGroupTitle>
                   <MenuGroupTitle>
@@ -364,15 +367,18 @@ exports[`Menu demo examples basic 1`] = `
                   iconStart={<IconCloud />}
                 >
                   <MenuItem
+                    iconStart={<IconCloud />}
+                    onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="css-8"
+                      onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <glamorous(span)>
                         <span
-                          className="css-13"
+                          className="css-19"
                         >
                           <IconCloud
                             key="iconStart"
@@ -406,18 +412,18 @@ exports[`Menu demo examples basic 1`] = `
                           </IconCloud>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-20"
                             >
                               <glamorous(span)>
                                 <span
-                                  className="css-15"
+                                  className="css-21"
                                 >
                                   Icon at start
                                 </span>
                               </glamorous(span)>
                               <glamorous(span)>
                                 <span
-                                  className="css-16"
+                                  className="css-22"
                                 />
                               </glamorous(span)>
                             </span>
@@ -431,30 +437,33 @@ exports[`Menu demo examples basic 1`] = `
                   iconEnd={<IconCloud />}
                 >
                   <MenuItem
+                    iconEnd={<IconCloud />}
+                    onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="css-8"
+                      onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <glamorous(span)>
                         <span
-                          className="css-13"
+                          className="css-19"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-20"
                             >
                               <glamorous(span)>
                                 <span
-                                  className="css-15"
+                                  className="css-21"
                                 >
                                   Icon at end
                                 </span>
                               </glamorous(span)>
                               <glamorous(span)>
                                 <span
-                                  className="css-16"
+                                  className="css-22"
                                 />
                               </glamorous(span)>
                             </span>
@@ -508,16 +517,18 @@ exports[`Menu demo examples basic 1`] = `
                   variant="danger"
                 >
                   <MenuItem
+                    onKeyDown={[Function]}
                     tabIndex={0}
                     variant="danger"
                   >
                     <div
                       className="css-26"
+                      onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <glamorous(span)>
                         <span
-                          className="css-13"
+                          className="css-19"
                         >
                           <IconDanger
                             size="1.5em"
@@ -550,18 +561,18 @@ exports[`Menu demo examples basic 1`] = `
                           </IconDanger>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-20"
                             >
                               <glamorous(span)>
                                 <span
-                                  className="css-15"
+                                  className="css-21"
                                 >
                                   Danger variant
                                 </span>
                               </glamorous(span)>
                               <glamorous(span)>
                                 <span
-                                  className="css-16"
+                                  className="css-22"
                                 />
                               </glamorous(span)>
                             </span>
@@ -577,32 +588,30 @@ exports[`Menu demo examples basic 1`] = `
                 >
                   <MenuItem
                     disabled={true}
-                    onKeyDown={[Function]}
                     tabIndex="-1"
                   >
                     <div
                       className="css-37"
-                      onKeyDown={[Function]}
                       tabIndex="-1"
                     >
                       <glamorous(span)>
                         <span
-                          className="css-13"
+                          className="css-19"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-20"
                             >
                               <glamorous(span)>
                                 <span
-                                  className="css-15"
+                                  className="css-21"
                                 >
                                   Disabled menu item
                                 </span>
                               </glamorous(span)>
                               <glamorous(span)>
                                 <span
-                                  className="css-16"
+                                  className="css-22"
                                 />
                               </glamorous(span)>
                             </span>
@@ -625,19 +634,6 @@ exports[`Menu demo examples basic 1`] = `
 exports[`Menu demo examples data 1`] = `
 .css-0,
 [data-css-0] {
-  overflow: hidden;
-}
-
-.css-0 > div,
-[data-css-0] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-1,
-[data-css-1] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -648,47 +644,79 @@ exports[`Menu demo examples data 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-2,
-[data-css-2] {
+.css-1,
+[data-css-1] {
+  margin: 0.5em 0;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1 + .css-1,
+[data-css-1] + [data-css-1] {
+  margin-top: 0;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  margin-bottom: 0;
+}
+
+.css-7,
+[data-css-7] {
+  overflow: hidden;
+}
+
+.css-7 > div,
+[data-css-7] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-8,
+[data-css-8] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.css-8:focus,
+[data-css-8]:focus,
+.css-8[data-simulate-focus],
+[data-css-8][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.css-8:hover,
+[data-css-8]:hover,
+.css-8[data-simulate-hover],
+[data-css-8][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.css-8:active,
+[data-css-8]:active,
+.css-8[data-simulate-active],
+[data-css-8][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.css-8 [role="img"],
+[data-css-8] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -696,18 +724,18 @@ exports[`Menu demo examples data 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.css-8 [role="img"]:first-child,
+[data-css-8] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.css-8 [role="img"]:last-child,
+[data-css-8] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-13,
-[data-css-13] {
+.css-19,
+[data-css-19] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -718,8 +746,8 @@ exports[`Menu demo examples data 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-14,
-[data-css-14] {
+.css-20,
+[data-css-20] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -738,38 +766,19 @@ exports[`Menu demo examples data 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-15,
-[data-css-15] {
+.css-21,
+[data-css-21] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-16,
-[data-css-16] {
+.css-22,
+[data-css-22] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-17,
-[data-css-17] {
-  margin: 0.5em 0;
-}
-
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17 + .css-17,
-[data-css-17] + [data-css-17] {
-  margin-top: 0;
-}
-
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
-  margin-bottom: 0;
 }
 
 .css-23,
@@ -869,81 +878,10 @@ exports[`Menu demo examples data 1`] = `
   margin-left: 0.5em;
 }
 
-.css-41,
-[data-css-41] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-
-.css-41 *,
-[data-css-41] *,
-.css-41 *::before,
-[data-css-41] *::before,
-.css-41 *::after,
-[data-css-41] *::after {
-  box-sizing: inherit;
-}
-
-.css-41:focus,
-[data-css-41]:focus,
-.css-41[data-simulate-focus],
-[data-css-41][data-simulate-focus] {
-  background-color: #cfe0fc;
-  outline: 0;
-}
-
-.css-41:hover,
-[data-css-41]:hover,
-.css-41[data-simulate-hover],
-[data-css-41][data-simulate-hover] {
-  background-color: #cfe0fc;
-}
-
-.css-41:active,
-[data-css-41]:active,
-.css-41[data-simulate-active],
-[data-css-41][data-simulate-active] {
-  background-color: #84b1fa;
-}
-
-.css-51,
-[data-css-51] {
-  border-radius: 1em;
-  display: block;
-  flex: 0 0 auto;
-  height: 2em;
-  margin-right: 0.5em;
-  width: 2em;
-  -webkit-flex: 0 0 auto;
-}
-
-.css-52,
-[data-css-52] {
-  flex: 1 1 auto;
-  font-size: 0.875em;
-  padding: 0.5em 0;
-  white-space: normal;
-  word-break: break-all;
-  -webkit-flex: 1 1 auto;
-}
-
 <Component>
   <glamorous(div)>
     <div
-      className="css-0"
+      className="css-7"
     >
       <Menu
         data={
@@ -976,37 +914,37 @@ exports[`Menu demo examples data 1`] = `
               "onClick": [Function],
               "text": "Disabled menu item",
             },
-            Object {
-              "avatar": "/images/125x125.png",
-              "href": "/components/menu-item#custom-render",
-              "render": [Function],
-              "text": "Custom render",
-            },
           ]
         }
+        itemKey="text"
       >
-        <Menu>
+        <Menu
+          itemKey="text"
+        >
           <div
-            className="css-1"
+            className="css-0"
           >
             <MenuGroup
               key="0"
             >
               <MenuGroup>
                 <div
-                  className="css-17"
+                  className="css-1"
                 >
                   <MenuItem
+                    index={0}
                     item={
                       Object {
                         "onClick": [Function],
                         "text": "Menu item with onClick",
                       }
                     }
-                    key="0"
+                    key="Menu item with onClick"
                     onClick={[Function]}
+                    text="Menu item with onClick"
                   >
                     <MenuItem
+                      index={0}
                       item={
                         Object {
                           "onClick": [Function],
@@ -1016,31 +954,32 @@ exports[`Menu demo examples data 1`] = `
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Menu item with onClick"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
                         onClick={[Function]}
                         onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Menu item with onClick
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -1051,46 +990,53 @@ exports[`Menu demo examples data 1`] = `
                     </MenuItem>
                   </MenuItem>
                   <MenuItem
+                    index={1}
                     item={
                       Object {
                         "secondaryText": "Secondary text",
                         "text": "Menu item",
                       }
                     }
-                    key="1"
+                    key="Menu item"
                     secondaryText="Secondary text"
+                    text="Menu item"
                   >
                     <MenuItem
+                      index={1}
                       item={
                         Object {
                           "secondaryText": "Secondary text",
                           "text": "Menu item",
                         }
                       }
+                      onKeyDown={[Function]}
+                      secondaryText="Secondary text"
                       tabIndex={0}
+                      text="Menu item"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Menu item
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   >
                                     Secondary text
                                   </span>
@@ -1104,30 +1050,37 @@ exports[`Menu demo examples data 1`] = `
                   </MenuItem>
                   <MenuItem
                     iconStart={<IconCloud />}
+                    index={2}
                     item={
                       Object {
                         "iconStart": <IconCloud />,
                         "text": "Icon at start",
                       }
                     }
-                    key="2"
+                    key="Icon at start"
+                    text="Icon at start"
                   >
                     <MenuItem
+                      iconStart={<IconCloud />}
+                      index={2}
                       item={
                         Object {
                           "iconStart": <IconCloud />,
                           "text": "Icon at start",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Icon at start"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <IconCloud
                               key="iconStart"
@@ -1161,18 +1114,18 @@ exports[`Menu demo examples data 1`] = `
                             </IconCloud>
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Icon at start
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -1184,45 +1137,52 @@ exports[`Menu demo examples data 1`] = `
                   </MenuItem>
                   <MenuItem
                     iconEnd={<IconCloud />}
+                    index={3}
                     item={
                       Object {
                         "iconEnd": <IconCloud />,
                         "text": "Icon at end",
                       }
                     }
-                    key="3"
+                    key="Icon at end"
+                    text="Icon at end"
                   >
                     <MenuItem
+                      iconEnd={<IconCloud />}
+                      index={3}
                       item={
                         Object {
                           "iconEnd": <IconCloud />,
                           "text": "Icon at end",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Icon at end"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Icon at end
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -1275,32 +1235,38 @@ exports[`Menu demo examples data 1`] = `
                     </MenuDivider>
                   </MenuDivider>
                   <MenuItem
+                    index={4}
                     item={
                       Object {
                         "text": "Danger variant",
                         "variant": "danger",
                       }
                     }
-                    key="5"
+                    key="Danger variant"
+                    text="Danger variant"
                     variant="danger"
                   >
                     <MenuItem
+                      index={4}
                       item={
                         Object {
                           "text": "Danger variant",
                           "variant": "danger",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Danger variant"
                       variant="danger"
                     >
                       <div
                         className="css-25"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <IconDanger
                               size="1.5em"
@@ -1333,18 +1299,18 @@ exports[`Menu demo examples data 1`] = `
                             </IconDanger>
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Danger variant
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -1356,6 +1322,7 @@ exports[`Menu demo examples data 1`] = `
                   </MenuItem>
                   <MenuItem
                     disabled={true}
+                    index={5}
                     item={
                       Object {
                         "disabled": true,
@@ -1363,11 +1330,13 @@ exports[`Menu demo examples data 1`] = `
                         "text": "Disabled menu item",
                       }
                     }
-                    key="6"
+                    key="Disabled menu item"
                     onClick={[Function]}
+                    text="Disabled menu item"
                   >
                     <MenuItem
                       disabled={true}
+                      index={5}
                       item={
                         Object {
                           "disabled": true,
@@ -1375,32 +1344,31 @@ exports[`Menu demo examples data 1`] = `
                           "text": "Disabled menu item",
                         }
                       }
-                      onKeyDown={[Function]}
                       tabIndex="-1"
+                      text="Disabled menu item"
                     >
                       <div
                         className="css-36"
-                        onKeyDown={[Function]}
                         tabIndex="-1"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Disabled menu item
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -1409,279 +1377,6 @@ exports[`Menu demo examples data 1`] = `
                         </glamorous(span)>
                       </div>
                     </MenuItem>
-                  </MenuItem>
-                  <MenuItem
-                    avatar="/images/125x125.png"
-                    href="/components/menu-item#custom-render"
-                    item={
-                      Object {
-                        "avatar": "/images/125x125.png",
-                        "href": "/components/menu-item#custom-render",
-                        "render": [Function],
-                        "text": "Custom render",
-                      }
-                    }
-                    key="7"
-                    render={[Function]}
-                  >
-                    <ThemedComponent
-                      item={
-                        Object {
-                          "avatar": "/images/125x125.png",
-                          "href": "/components/menu-item#custom-render",
-                          "render": [Function],
-                          "text": "Custom render",
-                        }
-                      }
-                      itemProps={
-                        Object {
-                          "avatar": "/images/125x125.png",
-                          "children": "Custom render",
-                          "href": "/components/menu-item#custom-render",
-                          "onKeyDown": undefined,
-                          "tabIndex": 0,
-                        }
-                      }
-                      render={[Function]}
-                    >
-                      <Component
-                        item={
-                          Object {
-                            "avatar": "/images/125x125.png",
-                            "href": "/components/menu-item#custom-render",
-                            "render": [Function],
-                            "text": "Custom render",
-                          }
-                        }
-                        itemProps={
-                          Object {
-                            "avatar": "/images/125x125.png",
-                            "children": "Custom render",
-                            "href": "/components/menu-item#custom-render",
-                            "onKeyDown": undefined,
-                            "tabIndex": 0,
-                          }
-                        }
-                        render={[Function]}
-                        theme={
-                          Object {
-                            "backgroundColor_active": "#ebeff5",
-                            "backgroundColor_dangerPrimary": "#de1b1b",
-                            "backgroundColor_dangerPrimary_active": "#b80d0d",
-                            "backgroundColor_dangerPrimary_focus": "#de1b1b",
-                            "backgroundColor_dangerPrimary_hover": "#f55353",
-                            "backgroundColor_danger_active": "#fad4d4",
-                            "backgroundColor_danger_focus": "#faf0f0",
-                            "backgroundColor_danger_hover": "#faf0f0",
-                            "backgroundColor_disabled": "#dde3ed",
-                            "backgroundColor_focus": "#f5f7fa",
-                            "backgroundColor_hover": "#f5f7fa",
-                            "backgroundColor_successPrimary": "#2a854e",
-                            "backgroundColor_successPrimary_active": "#20693d",
-                            "backgroundColor_successPrimary_focus": "#2a854e",
-                            "backgroundColor_successPrimary_hover": "#3ba164",
-                            "backgroundColor_success_active": "#abedc5",
-                            "backgroundColor_success_focus": "#e1faeb",
-                            "backgroundColor_success_hover": "#e1faeb",
-                            "backgroundColor_themePrimary": "#3272d9",
-                            "backgroundColor_themePrimary_active": "#1d5bbf",
-                            "backgroundColor_themePrimary_focus": "#3272d9",
-                            "backgroundColor_themePrimary_hover": "#5691f0",
-                            "backgroundColor_theme_selected": "#f0f5fc",
-                            "backgroundColor_theme_selectedActive": "#accbfc",
-                            "backgroundColor_theme_selectedHover": "#cfe0fc",
-                            "backgroundColor_warningPrimary": "#ad5f00",
-                            "backgroundColor_warningPrimary_active": "#8a4d03",
-                            "backgroundColor_warningPrimary_focus": "#ad5f00",
-                            "backgroundColor_warningPrimary_hover": "#cf7911",
-                            "backgroundColor_warning_active": "#fad8af",
-                            "backgroundColor_warning_focus": "#fcf2e6",
-                            "backgroundColor_warning_hover": "#fcf2e6",
-                            "borderColor": "#c8d1e0",
-                            "borderColor_danger": "#de1b1b",
-                            "borderColor_danger_active": "#b80d0d",
-                            "borderColor_danger_focus": "#b80d0d",
-                            "borderColor_danger_hover": "#f55353",
-                            "borderColor_success": "#2a854e",
-                            "borderColor_success_active": "#20693d",
-                            "borderColor_success_focus": "#20693d",
-                            "borderColor_success_hover": "#3ba164",
-                            "borderColor_theme": "#3272d9",
-                            "borderColor_theme_active": "#1d5bbf",
-                            "borderColor_theme_focus": "#1d5bbf",
-                            "borderColor_theme_hover": "#5691f0",
-                            "borderColor_warning": "#ad5f00",
-                            "borderColor_warning_active": "#8a4d03",
-                            "borderColor_warning_focus": "#8a4d03",
-                            "borderColor_warning_hover": "#cf7911",
-                            "borderRadius_1": "0.1875em",
-                            "boxShadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
-                            "boxShadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
-                            "boxShadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
-                            "boxShadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
-                            "boxShadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
-                            "boxShadow_focusInner": "#fff",
-                            "breakpoint_medium": 768,
-                            "breakpoint_narrow": 512,
-                            "breakpoint_wide": 1024,
-                            "color": "#333840",
-                            "color_black": "#1d1f24",
-                            "color_danger": "#de1b1b",
-                            "color_danger_active": "#b80d0d",
-                            "color_danger_focus": "#de1b1b",
-                            "color_danger_hover": "#f55353",
-                            "color_disabled": "#afbacc",
-                            "color_gray_10": "#f5f7fa",
-                            "color_gray_100": "#333840",
-                            "color_gray_20": "#ebeff5",
-                            "color_gray_30": "#dde3ed",
-                            "color_gray_40": "#c8d1e0",
-                            "color_gray_50": "#afbacc",
-                            "color_gray_60": "#8e99ab",
-                            "color_gray_70": "#707a8a",
-                            "color_gray_80": "#58606e",
-                            "color_gray_90": "#434a54",
-                            "color_inverted": "#fff",
-                            "color_mouse": "#58606e",
-                            "color_primary": "#fff",
-                            "color_readOnly": "#58606e",
-                            "color_required": "#de1b1b",
-                            "color_success": "#2a854e",
-                            "color_success_active": "#20693d",
-                            "color_success_focus": "#2a854e",
-                            "color_success_hover": "#3ba164",
-                            "color_theme": "#3272d9",
-                            "color_theme_10": "#f0f5fc",
-                            "color_theme_100": "#15233b",
-                            "color_theme_20": "#cfe0fc",
-                            "color_theme_30": "#accbfc",
-                            "color_theme_40": "#84b1fa",
-                            "color_theme_50": "#5691f0",
-                            "color_theme_60": "#3272d9",
-                            "color_theme_70": "#1d5bbf",
-                            "color_theme_80": "#114599",
-                            "color_theme_90": "#103570",
-                            "color_theme_active": "#1d5bbf",
-                            "color_theme_focus": "#3272d9",
-                            "color_theme_hover": "#5691f0",
-                            "color_warning": "#ad5f00",
-                            "color_warning_active": "#8a4d03",
-                            "color_warning_focus": "#ad5f00",
-                            "color_warning_hover": "#cf7911",
-                            "color_white": "#fff",
-                            "direction": "ltr",
-                            "fontFamily": "Open Sans",
-                            "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
-                            "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
-                            "fontSize_base": 16,
-                            "fontSize_mouse": "0.6875em",
-                            "fontSize_prose": "1em",
-                            "fontSize_ui": "0.875em",
-                            "fontWeight_bold": 700,
-                            "fontWeight_extraBold": 800,
-                            "fontWeight_regular": 400,
-                            "fontWeight_semiBold": 600,
-                            "h1_color": "#333840",
-                            "h1_fontSize": "2.125em",
-                            "h1_fontWeight": 800,
-                            "h2_color": "#58606e",
-                            "h2_fontSize": "1.75em",
-                            "h2_fontWeight": 700,
-                            "h3_color": "#58606e",
-                            "h3_fontSize": "1.375em",
-                            "h3_fontWeight": 700,
-                            "h4_color": "#58606e",
-                            "h4_fontSize": "1.125em",
-                            "h4_fontWeight": 700,
-                            "h5_color": "#333840",
-                            "h5_fontSize": "0.875em",
-                            "h5_fontWeight": 700,
-                            "h6_color": "#58606e",
-                            "h6_fontSize": "0.875em",
-                            "h6_fontWeight": 400,
-                            "icon_color": "#58606e",
-                            "icon_color_danger": "#de1b1b",
-                            "icon_color_success": "#2a854e",
-                            "icon_color_theme": "#3272d9",
-                            "icon_color_warning": "#ad5f00",
-                            "input_backgroundColor": "#fff",
-                            "input_backgroundColor_disabled": "#ebeff5",
-                            "lineHeight": 1.25,
-                            "lineHeight_heading": 1.25,
-                            "lineHeight_heading_small": 1.5,
-                            "lineHeight_prose": 1.5,
-                            "panel_backgroundColor": "#fff",
-                            "panel_backgroundColor_inverted": "#434a54",
-                            "panel_borderColor": "#ebeff5",
-                            "panel_borderColor_inverted": "#434a54",
-                            "placeholder_color": "#8e99ab",
-                            "size_jumbo": "3.25em",
-                            "size_large": "2.5em",
-                            "size_medium": "2em",
-                            "size_small": "1.5em",
-                            "space_inline_lg": "1.5em",
-                            "space_inline_md": "1em",
-                            "space_inline_sm": "0.5em",
-                            "space_inline_xl": "2em",
-                            "space_inline_xs": "0.25em",
-                            "space_inline_xxl": "4em",
-                            "space_inline_xxs": "0.125em",
-                            "space_inset_lg": "1.5em",
-                            "space_inset_md": "1em",
-                            "space_inset_sm": "0.5em",
-                            "space_stack_lg": "1.5em",
-                            "space_stack_md": "1em",
-                            "space_stack_sm": "0.5em",
-                            "space_stack_xl": "2em",
-                            "space_stack_xs": "0.25em",
-                            "space_stack_xxl": "4em",
-                            "space_stack_xxs": "0.125em",
-                            "well_backgroundColor": "#ebeff5",
-                            "well_backgroundColor_danger": "#fad4d4",
-                            "well_backgroundColor_success": "#abedc5",
-                            "well_backgroundColor_warning": "#fad8af",
-                            "well_borderColor_danger": "#fa8e8e",
-                            "well_borderColor_success": "#57c282",
-                            "well_borderColor_warning": "#e89c3f",
-                            "zIndex_100": 100,
-                            "zIndex_1600": 1600,
-                            "zIndex_200": 200,
-                            "zIndex_400": 400,
-                            "zIndex_800": 800,
-                          }
-                        }
-                      >
-                        <glamorous(a)
-                          avatar="/images/125x125.png"
-                          href="/components/menu-item#custom-render"
-                          tabIndex={0}
-                        >
-                          <a
-                            className="css-41"
-                            href="/components/menu-item#custom-render"
-                            tabIndex={0}
-                          >
-                            <glamorous(img)
-                              alt="Photo of Custom render"
-                              src="/images/125x125.png"
-                            >
-                              <img
-                                alt="Photo of Custom render"
-                                className="css-51"
-                                src="/images/125x125.png"
-                              />
-                            </glamorous(img)>
-                            <glamorous(span)>
-                              <span
-                                className="css-52"
-                              >
-                                Custom render
-                              </span>
-                            </glamorous(span)>
-                          </a>
-                        </glamorous(a)>
-                      </Component>
-                    </ThemedComponent>
                   </MenuItem>
                 </div>
               </MenuGroup>
@@ -1697,19 +1392,6 @@ exports[`Menu demo examples data 1`] = `
 exports[`Menu demo examples grouped-data 1`] = `
 .css-0,
 [data-css-0] {
-  overflow: hidden;
-}
-
-.css-0 > div,
-[data-css-0] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-1,
-[data-css-1] {
   box-sizing: border-box;
   color: #333840;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1720,47 +1402,79 @@ exports[`Menu demo examples grouped-data 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
   box-sizing: inherit;
 }
 
-.css-2,
-[data-css-2] {
+.css-1,
+[data-css-1] {
+  margin: 0.5em 0;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1 + .css-1,
+[data-css-1] + [data-css-1] {
+  margin-top: 0;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  margin-bottom: 0;
+}
+
+.css-7,
+[data-css-7] {
+  overflow: hidden;
+}
+
+.css-7 > div,
+[data-css-7] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-8,
+[data-css-8] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.css-8:focus,
+[data-css-8]:focus,
+.css-8[data-simulate-focus],
+[data-css-8][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.css-8:hover,
+[data-css-8]:hover,
+.css-8[data-simulate-hover],
+[data-css-8][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.css-8:active,
+[data-css-8]:active,
+.css-8[data-simulate-active],
+[data-css-8][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.css-8 [role="img"],
+[data-css-8] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -1768,18 +1482,18 @@ exports[`Menu demo examples grouped-data 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.css-8 [role="img"]:first-child,
+[data-css-8] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.css-8 [role="img"]:last-child,
+[data-css-8] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-13,
-[data-css-13] {
+.css-19,
+[data-css-19] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1790,8 +1504,8 @@ exports[`Menu demo examples grouped-data 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-14,
-[data-css-14] {
+.css-20,
+[data-css-20] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1810,38 +1524,19 @@ exports[`Menu demo examples grouped-data 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-15,
-[data-css-15] {
+.css-21,
+[data-css-21] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-16,
-[data-css-16] {
+.css-22,
+[data-css-22] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-17,
-[data-css-17] {
-  margin: 0.5em 0;
-}
-
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17 + .css-17,
-[data-css-17] + [data-css-17] {
-  margin-top: 0;
-}
-
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
-  margin-bottom: 0;
 }
 
 .css-23,
@@ -1949,81 +1644,10 @@ exports[`Menu demo examples grouped-data 1`] = `
   margin-left: 0.5em;
 }
 
-.css-42,
-[data-css-42] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-
-.css-42 *,
-[data-css-42] *,
-.css-42 *::before,
-[data-css-42] *::before,
-.css-42 *::after,
-[data-css-42] *::after {
-  box-sizing: inherit;
-}
-
-.css-42:focus,
-[data-css-42]:focus,
-.css-42[data-simulate-focus],
-[data-css-42][data-simulate-focus] {
-  background-color: #cfe0fc;
-  outline: 0;
-}
-
-.css-42:hover,
-[data-css-42]:hover,
-.css-42[data-simulate-hover],
-[data-css-42][data-simulate-hover] {
-  background-color: #cfe0fc;
-}
-
-.css-42:active,
-[data-css-42]:active,
-.css-42[data-simulate-active],
-[data-css-42][data-simulate-active] {
-  background-color: #84b1fa;
-}
-
-.css-52,
-[data-css-52] {
-  border-radius: 1em;
-  display: block;
-  flex: 0 0 auto;
-  height: 2em;
-  margin-right: 0.5em;
-  width: 2em;
-  -webkit-flex: 0 0 auto;
-}
-
-.css-53,
-[data-css-53] {
-  flex: 1 1 auto;
-  font-size: 0.875em;
-  padding: 0.5em 0;
-  white-space: normal;
-  word-break: break-all;
-  -webkit-flex: 1 1 auto;
-}
-
 <Component>
   <glamorous(div)>
     <div
-      className="css-0"
+      className="css-7"
     >
       <Menu
         data={
@@ -2062,40 +1686,40 @@ exports[`Menu demo examples grouped-data 1`] = `
                   "onClick": [Function],
                   "text": "Disabled menu item",
                 },
-                Object {
-                  "avatar": "/images/125x125.png",
-                  "href": "/components/menu-item#custom-render",
-                  "render": [Function],
-                  "text": "Custom render",
-                },
               ],
               "title": "Group Title",
             },
           ]
         }
+        itemKey="text"
       >
-        <Menu>
+        <Menu
+          itemKey="text"
+        >
           <div
-            className="css-1"
+            className="css-0"
           >
             <MenuGroup
               key="0"
             >
               <MenuGroup>
                 <div
-                  className="css-17"
+                  className="css-1"
                 >
                   <MenuItem
+                    index={0}
                     item={
                       Object {
                         "onClick": [Function],
                         "text": "Menu item with onClick",
                       }
                     }
-                    key="0"
+                    key="Menu item with onClick"
                     onClick={[Function]}
+                    text="Menu item with onClick"
                   >
                     <MenuItem
+                      index={0}
                       item={
                         Object {
                           "onClick": [Function],
@@ -2105,31 +1729,32 @@ exports[`Menu demo examples grouped-data 1`] = `
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Menu item with onClick"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
                         onClick={[Function]}
                         onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Menu item with onClick
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -2140,46 +1765,53 @@ exports[`Menu demo examples grouped-data 1`] = `
                     </MenuItem>
                   </MenuItem>
                   <MenuItem
+                    index={1}
                     item={
                       Object {
                         "secondaryText": "Secondary text",
                         "text": "Menu item",
                       }
                     }
-                    key="1"
+                    key="Menu item"
                     secondaryText="Secondary text"
+                    text="Menu item"
                   >
                     <MenuItem
+                      index={1}
                       item={
                         Object {
                           "secondaryText": "Secondary text",
                           "text": "Menu item",
                         }
                       }
+                      onKeyDown={[Function]}
+                      secondaryText="Secondary text"
                       tabIndex={0}
+                      text="Menu item"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Menu item
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   >
                                     Secondary text
                                   </span>
@@ -2200,7 +1832,7 @@ exports[`Menu demo examples grouped-data 1`] = `
             >
               <MenuGroup>
                 <div
-                  className="css-17"
+                  className="css-1"
                 >
                   <MenuGroupTitle>
                     <MenuGroupTitle>
@@ -2213,30 +1845,37 @@ exports[`Menu demo examples grouped-data 1`] = `
                   </MenuGroupTitle>
                   <MenuItem
                     iconStart={<IconCloud />}
+                    index={0}
                     item={
                       Object {
                         "iconStart": <IconCloud />,
                         "text": "Icon at start",
                       }
                     }
-                    key="0"
+                    key="Icon at start"
+                    text="Icon at start"
                   >
                     <MenuItem
+                      iconStart={<IconCloud />}
+                      index={0}
                       item={
                         Object {
                           "iconStart": <IconCloud />,
                           "text": "Icon at start",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Icon at start"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <IconCloud
                               key="iconStart"
@@ -2270,18 +1909,18 @@ exports[`Menu demo examples grouped-data 1`] = `
                             </IconCloud>
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Icon at start
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -2293,45 +1932,52 @@ exports[`Menu demo examples grouped-data 1`] = `
                   </MenuItem>
                   <MenuItem
                     iconEnd={<IconCloud />}
+                    index={1}
                     item={
                       Object {
                         "iconEnd": <IconCloud />,
                         "text": "Icon at end",
                       }
                     }
-                    key="1"
+                    key="Icon at end"
+                    text="Icon at end"
                   >
                     <MenuItem
+                      iconEnd={<IconCloud />}
+                      index={1}
                       item={
                         Object {
                           "iconEnd": <IconCloud />,
                           "text": "Icon at end",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Icon at end"
                     >
                       <div
-                        className="css-2"
+                        className="css-8"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Icon at end
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -2384,32 +2030,38 @@ exports[`Menu demo examples grouped-data 1`] = `
                     </MenuDivider>
                   </MenuDivider>
                   <MenuItem
+                    index={2}
                     item={
                       Object {
                         "text": "Danger variant",
                         "variant": "danger",
                       }
                     }
-                    key="3"
+                    key="Danger variant"
+                    text="Danger variant"
                     variant="danger"
                   >
                     <MenuItem
+                      index={2}
                       item={
                         Object {
                           "text": "Danger variant",
                           "variant": "danger",
                         }
                       }
+                      onKeyDown={[Function]}
                       tabIndex={0}
+                      text="Danger variant"
                       variant="danger"
                     >
                       <div
                         className="css-26"
+                        onKeyDown={[Function]}
                         tabIndex={0}
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <IconDanger
                               size="1.5em"
@@ -2442,18 +2094,18 @@ exports[`Menu demo examples grouped-data 1`] = `
                             </IconDanger>
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Danger variant
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -2465,6 +2117,7 @@ exports[`Menu demo examples grouped-data 1`] = `
                   </MenuItem>
                   <MenuItem
                     disabled={true}
+                    index={3}
                     item={
                       Object {
                         "disabled": true,
@@ -2472,11 +2125,13 @@ exports[`Menu demo examples grouped-data 1`] = `
                         "text": "Disabled menu item",
                       }
                     }
-                    key="4"
+                    key="Disabled menu item"
                     onClick={[Function]}
+                    text="Disabled menu item"
                   >
                     <MenuItem
                       disabled={true}
+                      index={3}
                       item={
                         Object {
                           "disabled": true,
@@ -2484,32 +2139,31 @@ exports[`Menu demo examples grouped-data 1`] = `
                           "text": "Disabled menu item",
                         }
                       }
-                      onKeyDown={[Function]}
                       tabIndex="-1"
+                      text="Disabled menu item"
                     >
                       <div
                         className="css-37"
-                        onKeyDown={[Function]}
                         tabIndex="-1"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-19"
                           >
                             <glamorous(span)>
                               <span
-                                className="css-14"
+                                className="css-20"
                               >
                                 <glamorous(span)>
                                   <span
-                                    className="css-15"
+                                    className="css-21"
                                   >
                                     Disabled menu item
                                   </span>
                                 </glamorous(span)>
                                 <glamorous(span)>
                                   <span
-                                    className="css-16"
+                                    className="css-22"
                                   />
                                 </glamorous(span)>
                               </span>
@@ -2519,59 +2173,262 @@ exports[`Menu demo examples grouped-data 1`] = `
                       </div>
                     </MenuItem>
                   </MenuItem>
+                </div>
+              </MenuGroup>
+            </MenuGroup>
+          </div>
+        </Menu>
+      </Menu>
+    </div>
+  </glamorous(div)>
+</Component>
+`;
+
+exports[`Menu demo examples render-item 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-1,
+[data-css-1] {
+  margin: 0.5em 0;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1 + .css-1,
+[data-css-1] + [data-css-1] {
+  margin-top: 0;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  margin-bottom: 0;
+}
+
+.css-7,
+[data-css-7] {
+  overflow: hidden;
+}
+
+.css-7 > div,
+[data-css-7] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-8,
+[data-css-8] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.css-8 *,
+[data-css-8] *,
+.css-8 *::before,
+[data-css-8] *::before,
+.css-8 *::after,
+[data-css-8] *::after {
+  box-sizing: inherit;
+}
+
+.css-8:focus,
+[data-css-8]:focus,
+.css-8[data-simulate-focus],
+[data-css-8][data-simulate-focus] {
+  background-color: #cfe0fc;
+  outline: 0;
+}
+
+.css-8:hover,
+[data-css-8]:hover,
+.css-8[data-simulate-hover],
+[data-css-8][data-simulate-hover] {
+  background-color: #cfe0fc;
+}
+
+.css-8:active,
+[data-css-8]:active,
+.css-8[data-simulate-active],
+[data-css-8][data-simulate-active] {
+  background-color: #84b1fa;
+}
+
+.css-18,
+[data-css-18] {
+  display: block;
+  flex: 0 0 auto;
+  height: 2em;
+  margin-right: 0.5em;
+  width: 2em;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-19,
+[data-css-19] {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 2.5em;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  border-radius: 100%;
+  display: block;
+  font-weight: 700;
+  height: 2em;
+  justify-content: center;
+  vertical-align: middle;
+  width: 2em;
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-19 *,
+[data-css-19] *,
+.css-19 *::before,
+[data-css-19] *::before,
+.css-19 *::after,
+[data-css-19] *::after {
+  box-sizing: inherit;
+}
+
+.css-19 > abbr,
+[data-css-19] > abbr,
+.css-19 > span,
+[data-css-19] > span {
+  font-size: 1.125em;
+}
+
+.css-19 > abbr,
+[data-css-19] > abbr {
+  text-decoration: none;
+}
+
+.css-19 > img,
+[data-css-19] > img {
+  border-radius: 100%;
+  display: block;
+  width: 100%;
+}
+
+.css-19 > [role="img"],
+[data-css-19] > [role="img"] {
+  color: #fff;
+}
+
+.css-21,
+[data-css-21] {
+  flex: 1 1 auto;
+  font-size: 0.875em;
+  padding: 0.5em 0;
+  white-space: normal;
+  word-break: break-all;
+  -webkit-flex: 1 1 auto;
+}
+
+<Component>
+  <glamorous(div)>
+    <div
+      className="css-7"
+    >
+      <Menu
+        data={
+          Array [
+            Object {
+              "avatar": "/images/avatar.svg",
+              "href": "#newton",
+              "text": "Newton",
+            },
+            Object {
+              "avatar": "/images/avatar.svg",
+              "href": "#descartes",
+              "text": "Descartes",
+            },
+            Object {
+              "avatar": "/images/avatar.svg",
+              "href": "#euclid",
+              "text": "Euclid",
+            },
+          ]
+        }
+        itemKey="text"
+        renderItem={[Function]}
+      >
+        <Menu
+          itemKey="text"
+          renderItem={[Function]}
+        >
+          <div
+            className="css-0"
+          >
+            <MenuGroup
+              key="0"
+            >
+              <MenuGroup>
+                <div
+                  className="css-1"
+                >
                   <MenuItem
-                    avatar="/images/125x125.png"
-                    href="/components/menu-item#custom-render"
+                    avatar="/images/avatar.svg"
+                    href="#newton"
+                    index={0}
                     item={
                       Object {
-                        "avatar": "/images/125x125.png",
-                        "href": "/components/menu-item#custom-render",
-                        "render": [Function],
-                        "text": "Custom render",
+                        "avatar": "/images/avatar.svg",
+                        "href": "#newton",
+                        "text": "Newton",
                       }
                     }
-                    key="5"
+                    key="Newton"
                     render={[Function]}
+                    text="Newton"
                   >
                     <ThemedComponent
-                      item={
-                        Object {
-                          "avatar": "/images/125x125.png",
-                          "href": "/components/menu-item#custom-render",
-                          "render": [Function],
-                          "text": "Custom render",
-                        }
-                      }
-                      itemProps={
-                        Object {
-                          "avatar": "/images/125x125.png",
-                          "children": "Custom render",
-                          "href": "/components/menu-item#custom-render",
-                          "onKeyDown": undefined,
-                          "tabIndex": 0,
-                        }
-                      }
-                      render={[Function]}
+                      key="0"
                     >
                       <Component
-                        item={
-                          Object {
-                            "avatar": "/images/125x125.png",
-                            "href": "/components/menu-item#custom-render",
-                            "render": [Function],
-                            "text": "Custom render",
-                          }
-                        }
-                        itemProps={
-                          Object {
-                            "avatar": "/images/125x125.png",
-                            "children": "Custom render",
-                            "href": "/components/menu-item#custom-render",
-                            "onKeyDown": undefined,
-                            "tabIndex": 0,
-                          }
-                        }
-                        render={[Function]}
                         theme={
                           Object {
                             "backgroundColor_active": "#ebeff5",
@@ -2761,30 +2618,577 @@ exports[`Menu demo examples grouped-data 1`] = `
                         }
                       >
                         <glamorous(a)
-                          avatar="/images/125x125.png"
-                          href="/components/menu-item#custom-render"
+                          avatar="/images/avatar.svg"
+                          href="#newton"
+                          index={0}
+                          item={
+                            Object {
+                              "avatar": "/images/avatar.svg",
+                              "href": "#newton",
+                              "text": "Newton",
+                            }
+                          }
+                          onKeyDown={[Function]}
+                          render={[Function]}
                           tabIndex={0}
+                          text="Newton"
                         >
                           <a
-                            className="css-42"
-                            href="/components/menu-item#custom-render"
+                            className="css-8"
+                            href="#newton"
+                            onKeyDown={[Function]}
                             tabIndex={0}
                           >
-                            <glamorous(img)
-                              alt="Photo of Custom render"
-                              src="/images/125x125.png"
-                            >
-                              <img
-                                alt="Photo of Custom render"
-                                className="css-52"
-                                src="/images/125x125.png"
-                              />
-                            </glamorous(img)>
+                            <glamorous(Avatar)>
+                              <Avatar
+                                className="css-18"
+                              >
+                                <Avatar
+                                  className="css-18"
+                                  noBackground={true}
+                                  shape="circle"
+                                  size="large"
+                                >
+                                  <span
+                                    className="css-19"
+                                  >
+                                    <img
+                                      alt="Newton"
+                                      src="/images/avatar.svg"
+                                    />
+                                  </span>
+                                </Avatar>
+                              </Avatar>
+                            </glamorous(Avatar)>
                             <glamorous(span)>
                               <span
-                                className="css-53"
+                                className="css-21"
                               >
-                                Custom render
+                                Newton
+                              </span>
+                            </glamorous(span)>
+                          </a>
+                        </glamorous(a)>
+                      </Component>
+                    </ThemedComponent>
+                  </MenuItem>
+                  <MenuItem
+                    avatar="/images/avatar.svg"
+                    href="#descartes"
+                    index={1}
+                    item={
+                      Object {
+                        "avatar": "/images/avatar.svg",
+                        "href": "#descartes",
+                        "text": "Descartes",
+                      }
+                    }
+                    key="Descartes"
+                    render={[Function]}
+                    text="Descartes"
+                  >
+                    <ThemedComponent
+                      key="1"
+                    >
+                      <Component
+                        theme={
+                          Object {
+                            "backgroundColor_active": "#ebeff5",
+                            "backgroundColor_dangerPrimary": "#de1b1b",
+                            "backgroundColor_dangerPrimary_active": "#b80d0d",
+                            "backgroundColor_dangerPrimary_focus": "#de1b1b",
+                            "backgroundColor_dangerPrimary_hover": "#f55353",
+                            "backgroundColor_danger_active": "#fad4d4",
+                            "backgroundColor_danger_focus": "#faf0f0",
+                            "backgroundColor_danger_hover": "#faf0f0",
+                            "backgroundColor_disabled": "#dde3ed",
+                            "backgroundColor_focus": "#f5f7fa",
+                            "backgroundColor_hover": "#f5f7fa",
+                            "backgroundColor_successPrimary": "#2a854e",
+                            "backgroundColor_successPrimary_active": "#20693d",
+                            "backgroundColor_successPrimary_focus": "#2a854e",
+                            "backgroundColor_successPrimary_hover": "#3ba164",
+                            "backgroundColor_success_active": "#abedc5",
+                            "backgroundColor_success_focus": "#e1faeb",
+                            "backgroundColor_success_hover": "#e1faeb",
+                            "backgroundColor_themePrimary": "#3272d9",
+                            "backgroundColor_themePrimary_active": "#1d5bbf",
+                            "backgroundColor_themePrimary_focus": "#3272d9",
+                            "backgroundColor_themePrimary_hover": "#5691f0",
+                            "backgroundColor_theme_selected": "#f0f5fc",
+                            "backgroundColor_theme_selectedActive": "#accbfc",
+                            "backgroundColor_theme_selectedHover": "#cfe0fc",
+                            "backgroundColor_warningPrimary": "#ad5f00",
+                            "backgroundColor_warningPrimary_active": "#8a4d03",
+                            "backgroundColor_warningPrimary_focus": "#ad5f00",
+                            "backgroundColor_warningPrimary_hover": "#cf7911",
+                            "backgroundColor_warning_active": "#fad8af",
+                            "backgroundColor_warning_focus": "#fcf2e6",
+                            "backgroundColor_warning_hover": "#fcf2e6",
+                            "borderColor": "#c8d1e0",
+                            "borderColor_danger": "#de1b1b",
+                            "borderColor_danger_active": "#b80d0d",
+                            "borderColor_danger_focus": "#b80d0d",
+                            "borderColor_danger_hover": "#f55353",
+                            "borderColor_success": "#2a854e",
+                            "borderColor_success_active": "#20693d",
+                            "borderColor_success_focus": "#20693d",
+                            "borderColor_success_hover": "#3ba164",
+                            "borderColor_theme": "#3272d9",
+                            "borderColor_theme_active": "#1d5bbf",
+                            "borderColor_theme_focus": "#1d5bbf",
+                            "borderColor_theme_hover": "#5691f0",
+                            "borderColor_warning": "#ad5f00",
+                            "borderColor_warning_active": "#8a4d03",
+                            "borderColor_warning_focus": "#8a4d03",
+                            "borderColor_warning_hover": "#cf7911",
+                            "borderRadius_1": "0.1875em",
+                            "boxShadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+                            "boxShadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+                            "boxShadow_focusInner": "#fff",
+                            "breakpoint_medium": 768,
+                            "breakpoint_narrow": 512,
+                            "breakpoint_wide": 1024,
+                            "color": "#333840",
+                            "color_black": "#1d1f24",
+                            "color_danger": "#de1b1b",
+                            "color_danger_active": "#b80d0d",
+                            "color_danger_focus": "#de1b1b",
+                            "color_danger_hover": "#f55353",
+                            "color_disabled": "#afbacc",
+                            "color_gray_10": "#f5f7fa",
+                            "color_gray_100": "#333840",
+                            "color_gray_20": "#ebeff5",
+                            "color_gray_30": "#dde3ed",
+                            "color_gray_40": "#c8d1e0",
+                            "color_gray_50": "#afbacc",
+                            "color_gray_60": "#8e99ab",
+                            "color_gray_70": "#707a8a",
+                            "color_gray_80": "#58606e",
+                            "color_gray_90": "#434a54",
+                            "color_inverted": "#fff",
+                            "color_mouse": "#58606e",
+                            "color_primary": "#fff",
+                            "color_readOnly": "#58606e",
+                            "color_required": "#de1b1b",
+                            "color_success": "#2a854e",
+                            "color_success_active": "#20693d",
+                            "color_success_focus": "#2a854e",
+                            "color_success_hover": "#3ba164",
+                            "color_theme": "#3272d9",
+                            "color_theme_10": "#f0f5fc",
+                            "color_theme_100": "#15233b",
+                            "color_theme_20": "#cfe0fc",
+                            "color_theme_30": "#accbfc",
+                            "color_theme_40": "#84b1fa",
+                            "color_theme_50": "#5691f0",
+                            "color_theme_60": "#3272d9",
+                            "color_theme_70": "#1d5bbf",
+                            "color_theme_80": "#114599",
+                            "color_theme_90": "#103570",
+                            "color_theme_active": "#1d5bbf",
+                            "color_theme_focus": "#3272d9",
+                            "color_theme_hover": "#5691f0",
+                            "color_warning": "#ad5f00",
+                            "color_warning_active": "#8a4d03",
+                            "color_warning_focus": "#ad5f00",
+                            "color_warning_hover": "#cf7911",
+                            "color_white": "#fff",
+                            "direction": "ltr",
+                            "fontFamily": "Open Sans",
+                            "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+                            "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+                            "fontSize_base": 16,
+                            "fontSize_mouse": "0.6875em",
+                            "fontSize_prose": "1em",
+                            "fontSize_ui": "0.875em",
+                            "fontWeight_bold": 700,
+                            "fontWeight_extraBold": 800,
+                            "fontWeight_regular": 400,
+                            "fontWeight_semiBold": 600,
+                            "h1_color": "#333840",
+                            "h1_fontSize": "2.125em",
+                            "h1_fontWeight": 800,
+                            "h2_color": "#58606e",
+                            "h2_fontSize": "1.75em",
+                            "h2_fontWeight": 700,
+                            "h3_color": "#58606e",
+                            "h3_fontSize": "1.375em",
+                            "h3_fontWeight": 700,
+                            "h4_color": "#58606e",
+                            "h4_fontSize": "1.125em",
+                            "h4_fontWeight": 700,
+                            "h5_color": "#333840",
+                            "h5_fontSize": "0.875em",
+                            "h5_fontWeight": 700,
+                            "h6_color": "#58606e",
+                            "h6_fontSize": "0.875em",
+                            "h6_fontWeight": 400,
+                            "icon_color": "#58606e",
+                            "icon_color_danger": "#de1b1b",
+                            "icon_color_success": "#2a854e",
+                            "icon_color_theme": "#3272d9",
+                            "icon_color_warning": "#ad5f00",
+                            "input_backgroundColor": "#fff",
+                            "input_backgroundColor_disabled": "#ebeff5",
+                            "lineHeight": 1.25,
+                            "lineHeight_heading": 1.25,
+                            "lineHeight_heading_small": 1.5,
+                            "lineHeight_prose": 1.5,
+                            "panel_backgroundColor": "#fff",
+                            "panel_backgroundColor_inverted": "#434a54",
+                            "panel_borderColor": "#ebeff5",
+                            "panel_borderColor_inverted": "#434a54",
+                            "placeholder_color": "#8e99ab",
+                            "size_jumbo": "3.25em",
+                            "size_large": "2.5em",
+                            "size_medium": "2em",
+                            "size_small": "1.5em",
+                            "space_inline_lg": "1.5em",
+                            "space_inline_md": "1em",
+                            "space_inline_sm": "0.5em",
+                            "space_inline_xl": "2em",
+                            "space_inline_xs": "0.25em",
+                            "space_inline_xxl": "4em",
+                            "space_inline_xxs": "0.125em",
+                            "space_inset_lg": "1.5em",
+                            "space_inset_md": "1em",
+                            "space_inset_sm": "0.5em",
+                            "space_stack_lg": "1.5em",
+                            "space_stack_md": "1em",
+                            "space_stack_sm": "0.5em",
+                            "space_stack_xl": "2em",
+                            "space_stack_xs": "0.25em",
+                            "space_stack_xxl": "4em",
+                            "space_stack_xxs": "0.125em",
+                            "well_backgroundColor": "#ebeff5",
+                            "well_backgroundColor_danger": "#fad4d4",
+                            "well_backgroundColor_success": "#abedc5",
+                            "well_backgroundColor_warning": "#fad8af",
+                            "well_borderColor_danger": "#fa8e8e",
+                            "well_borderColor_success": "#57c282",
+                            "well_borderColor_warning": "#e89c3f",
+                            "zIndex_100": 100,
+                            "zIndex_1600": 1600,
+                            "zIndex_200": 200,
+                            "zIndex_400": 400,
+                            "zIndex_800": 800,
+                          }
+                        }
+                      >
+                        <glamorous(a)
+                          avatar="/images/avatar.svg"
+                          href="#descartes"
+                          index={1}
+                          item={
+                            Object {
+                              "avatar": "/images/avatar.svg",
+                              "href": "#descartes",
+                              "text": "Descartes",
+                            }
+                          }
+                          onKeyDown={[Function]}
+                          render={[Function]}
+                          tabIndex={0}
+                          text="Descartes"
+                        >
+                          <a
+                            className="css-8"
+                            href="#descartes"
+                            onKeyDown={[Function]}
+                            tabIndex={0}
+                          >
+                            <glamorous(Avatar)>
+                              <Avatar
+                                className="css-18"
+                              >
+                                <Avatar
+                                  className="css-18"
+                                  noBackground={true}
+                                  shape="circle"
+                                  size="large"
+                                >
+                                  <span
+                                    className="css-19"
+                                  >
+                                    <img
+                                      alt="Descartes"
+                                      src="/images/avatar.svg"
+                                    />
+                                  </span>
+                                </Avatar>
+                              </Avatar>
+                            </glamorous(Avatar)>
+                            <glamorous(span)>
+                              <span
+                                className="css-21"
+                              >
+                                Descartes
+                              </span>
+                            </glamorous(span)>
+                          </a>
+                        </glamorous(a)>
+                      </Component>
+                    </ThemedComponent>
+                  </MenuItem>
+                  <MenuItem
+                    avatar="/images/avatar.svg"
+                    href="#euclid"
+                    index={2}
+                    item={
+                      Object {
+                        "avatar": "/images/avatar.svg",
+                        "href": "#euclid",
+                        "text": "Euclid",
+                      }
+                    }
+                    key="Euclid"
+                    render={[Function]}
+                    text="Euclid"
+                  >
+                    <ThemedComponent
+                      key="2"
+                    >
+                      <Component
+                        theme={
+                          Object {
+                            "backgroundColor_active": "#ebeff5",
+                            "backgroundColor_dangerPrimary": "#de1b1b",
+                            "backgroundColor_dangerPrimary_active": "#b80d0d",
+                            "backgroundColor_dangerPrimary_focus": "#de1b1b",
+                            "backgroundColor_dangerPrimary_hover": "#f55353",
+                            "backgroundColor_danger_active": "#fad4d4",
+                            "backgroundColor_danger_focus": "#faf0f0",
+                            "backgroundColor_danger_hover": "#faf0f0",
+                            "backgroundColor_disabled": "#dde3ed",
+                            "backgroundColor_focus": "#f5f7fa",
+                            "backgroundColor_hover": "#f5f7fa",
+                            "backgroundColor_successPrimary": "#2a854e",
+                            "backgroundColor_successPrimary_active": "#20693d",
+                            "backgroundColor_successPrimary_focus": "#2a854e",
+                            "backgroundColor_successPrimary_hover": "#3ba164",
+                            "backgroundColor_success_active": "#abedc5",
+                            "backgroundColor_success_focus": "#e1faeb",
+                            "backgroundColor_success_hover": "#e1faeb",
+                            "backgroundColor_themePrimary": "#3272d9",
+                            "backgroundColor_themePrimary_active": "#1d5bbf",
+                            "backgroundColor_themePrimary_focus": "#3272d9",
+                            "backgroundColor_themePrimary_hover": "#5691f0",
+                            "backgroundColor_theme_selected": "#f0f5fc",
+                            "backgroundColor_theme_selectedActive": "#accbfc",
+                            "backgroundColor_theme_selectedHover": "#cfe0fc",
+                            "backgroundColor_warningPrimary": "#ad5f00",
+                            "backgroundColor_warningPrimary_active": "#8a4d03",
+                            "backgroundColor_warningPrimary_focus": "#ad5f00",
+                            "backgroundColor_warningPrimary_hover": "#cf7911",
+                            "backgroundColor_warning_active": "#fad8af",
+                            "backgroundColor_warning_focus": "#fcf2e6",
+                            "backgroundColor_warning_hover": "#fcf2e6",
+                            "borderColor": "#c8d1e0",
+                            "borderColor_danger": "#de1b1b",
+                            "borderColor_danger_active": "#b80d0d",
+                            "borderColor_danger_focus": "#b80d0d",
+                            "borderColor_danger_hover": "#f55353",
+                            "borderColor_success": "#2a854e",
+                            "borderColor_success_active": "#20693d",
+                            "borderColor_success_focus": "#20693d",
+                            "borderColor_success_hover": "#3ba164",
+                            "borderColor_theme": "#3272d9",
+                            "borderColor_theme_active": "#1d5bbf",
+                            "borderColor_theme_focus": "#1d5bbf",
+                            "borderColor_theme_hover": "#5691f0",
+                            "borderColor_warning": "#ad5f00",
+                            "borderColor_warning_active": "#8a4d03",
+                            "borderColor_warning_focus": "#8a4d03",
+                            "borderColor_warning_hover": "#cf7911",
+                            "borderRadius_1": "0.1875em",
+                            "boxShadow_1": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_2": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_3": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)",
+                            "boxShadow_4": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)",
+                            "boxShadow_5": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)",
+                            "boxShadow_focusInner": "#fff",
+                            "breakpoint_medium": 768,
+                            "breakpoint_narrow": 512,
+                            "breakpoint_wide": 1024,
+                            "color": "#333840",
+                            "color_black": "#1d1f24",
+                            "color_danger": "#de1b1b",
+                            "color_danger_active": "#b80d0d",
+                            "color_danger_focus": "#de1b1b",
+                            "color_danger_hover": "#f55353",
+                            "color_disabled": "#afbacc",
+                            "color_gray_10": "#f5f7fa",
+                            "color_gray_100": "#333840",
+                            "color_gray_20": "#ebeff5",
+                            "color_gray_30": "#dde3ed",
+                            "color_gray_40": "#c8d1e0",
+                            "color_gray_50": "#afbacc",
+                            "color_gray_60": "#8e99ab",
+                            "color_gray_70": "#707a8a",
+                            "color_gray_80": "#58606e",
+                            "color_gray_90": "#434a54",
+                            "color_inverted": "#fff",
+                            "color_mouse": "#58606e",
+                            "color_primary": "#fff",
+                            "color_readOnly": "#58606e",
+                            "color_required": "#de1b1b",
+                            "color_success": "#2a854e",
+                            "color_success_active": "#20693d",
+                            "color_success_focus": "#2a854e",
+                            "color_success_hover": "#3ba164",
+                            "color_theme": "#3272d9",
+                            "color_theme_10": "#f0f5fc",
+                            "color_theme_100": "#15233b",
+                            "color_theme_20": "#cfe0fc",
+                            "color_theme_30": "#accbfc",
+                            "color_theme_40": "#84b1fa",
+                            "color_theme_50": "#5691f0",
+                            "color_theme_60": "#3272d9",
+                            "color_theme_70": "#1d5bbf",
+                            "color_theme_80": "#114599",
+                            "color_theme_90": "#103570",
+                            "color_theme_active": "#1d5bbf",
+                            "color_theme_focus": "#3272d9",
+                            "color_theme_hover": "#5691f0",
+                            "color_warning": "#ad5f00",
+                            "color_warning_active": "#8a4d03",
+                            "color_warning_focus": "#ad5f00",
+                            "color_warning_hover": "#cf7911",
+                            "color_white": "#fff",
+                            "direction": "ltr",
+                            "fontFamily": "Open Sans",
+                            "fontFamily_monospace": "\\"SF Mono\\", \\"Droid Sans Mono\\", \\"Source Code Pro\\", Monaco, Consolas, \\"Courier New\\", Courier, monospace",
+                            "fontFamily_system": "-apple-system, system-ui, BlinkMacSystemFont, \\"Segoe UI\\", Roboto, Helvetica, Arial, sans-serif, \\"Apple Color Emoji\\", \\"Segoe UI Emoji\\", \\"Segoe UI Symbol\\"",
+                            "fontSize_base": 16,
+                            "fontSize_mouse": "0.6875em",
+                            "fontSize_prose": "1em",
+                            "fontSize_ui": "0.875em",
+                            "fontWeight_bold": 700,
+                            "fontWeight_extraBold": 800,
+                            "fontWeight_regular": 400,
+                            "fontWeight_semiBold": 600,
+                            "h1_color": "#333840",
+                            "h1_fontSize": "2.125em",
+                            "h1_fontWeight": 800,
+                            "h2_color": "#58606e",
+                            "h2_fontSize": "1.75em",
+                            "h2_fontWeight": 700,
+                            "h3_color": "#58606e",
+                            "h3_fontSize": "1.375em",
+                            "h3_fontWeight": 700,
+                            "h4_color": "#58606e",
+                            "h4_fontSize": "1.125em",
+                            "h4_fontWeight": 700,
+                            "h5_color": "#333840",
+                            "h5_fontSize": "0.875em",
+                            "h5_fontWeight": 700,
+                            "h6_color": "#58606e",
+                            "h6_fontSize": "0.875em",
+                            "h6_fontWeight": 400,
+                            "icon_color": "#58606e",
+                            "icon_color_danger": "#de1b1b",
+                            "icon_color_success": "#2a854e",
+                            "icon_color_theme": "#3272d9",
+                            "icon_color_warning": "#ad5f00",
+                            "input_backgroundColor": "#fff",
+                            "input_backgroundColor_disabled": "#ebeff5",
+                            "lineHeight": 1.25,
+                            "lineHeight_heading": 1.25,
+                            "lineHeight_heading_small": 1.5,
+                            "lineHeight_prose": 1.5,
+                            "panel_backgroundColor": "#fff",
+                            "panel_backgroundColor_inverted": "#434a54",
+                            "panel_borderColor": "#ebeff5",
+                            "panel_borderColor_inverted": "#434a54",
+                            "placeholder_color": "#8e99ab",
+                            "size_jumbo": "3.25em",
+                            "size_large": "2.5em",
+                            "size_medium": "2em",
+                            "size_small": "1.5em",
+                            "space_inline_lg": "1.5em",
+                            "space_inline_md": "1em",
+                            "space_inline_sm": "0.5em",
+                            "space_inline_xl": "2em",
+                            "space_inline_xs": "0.25em",
+                            "space_inline_xxl": "4em",
+                            "space_inline_xxs": "0.125em",
+                            "space_inset_lg": "1.5em",
+                            "space_inset_md": "1em",
+                            "space_inset_sm": "0.5em",
+                            "space_stack_lg": "1.5em",
+                            "space_stack_md": "1em",
+                            "space_stack_sm": "0.5em",
+                            "space_stack_xl": "2em",
+                            "space_stack_xs": "0.25em",
+                            "space_stack_xxl": "4em",
+                            "space_stack_xxs": "0.125em",
+                            "well_backgroundColor": "#ebeff5",
+                            "well_backgroundColor_danger": "#fad4d4",
+                            "well_backgroundColor_success": "#abedc5",
+                            "well_backgroundColor_warning": "#fad8af",
+                            "well_borderColor_danger": "#fa8e8e",
+                            "well_borderColor_success": "#57c282",
+                            "well_borderColor_warning": "#e89c3f",
+                            "zIndex_100": 100,
+                            "zIndex_1600": 1600,
+                            "zIndex_200": 200,
+                            "zIndex_400": 400,
+                            "zIndex_800": 800,
+                          }
+                        }
+                      >
+                        <glamorous(a)
+                          avatar="/images/avatar.svg"
+                          href="#euclid"
+                          index={2}
+                          item={
+                            Object {
+                              "avatar": "/images/avatar.svg",
+                              "href": "#euclid",
+                              "text": "Euclid",
+                            }
+                          }
+                          onKeyDown={[Function]}
+                          render={[Function]}
+                          tabIndex={0}
+                          text="Euclid"
+                        >
+                          <a
+                            className="css-8"
+                            href="#euclid"
+                            onKeyDown={[Function]}
+                            tabIndex={0}
+                          >
+                            <glamorous(Avatar)>
+                              <Avatar
+                                className="css-18"
+                              >
+                                <Avatar
+                                  className="css-18"
+                                  noBackground={true}
+                                  shape="circle"
+                                  size="large"
+                                >
+                                  <span
+                                    className="css-19"
+                                  >
+                                    <img
+                                      alt="Euclid"
+                                      src="/images/avatar.svg"
+                                    />
+                                  </span>
+                                </Avatar>
+                              </Avatar>
+                            </glamorous(Avatar)>
+                            <glamorous(span)>
+                              <span
+                                className="css-21"
+                              >
+                                Euclid
                               </span>
                             </glamorous(span)>
                           </a>
@@ -2801,4 +3205,327 @@ exports[`Menu demo examples grouped-data 1`] = `
     </div>
   </glamorous(div)>
 </Component>
+`;
+
+exports[`Menu renderItem prop renders expected content 1`] = `
+.css-0,
+[data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-1,
+[data-css-1] {
+  margin: 0.5em 0;
+}
+
+.css-1:first-child,
+[data-css-1]:first-child,
+.css-1 + .css-1,
+[data-css-1] + [data-css-1] {
+  margin-top: 0;
+}
+
+.css-1:last-child,
+[data-css-1]:last-child,
+.css-1[data-simulate-lastchild],
+[data-css-1][data-simulate-lastchild] {
+  margin-bottom: 0;
+}
+
+<Menu
+  data={
+    Array [
+      Object {
+        "text": "Item 1",
+      },
+      Object {
+        "text": "Item 2",
+      },
+    ]
+  }
+  renderItem={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "index": 0,
+            "item": Object {
+              "text": "Item 1",
+            },
+            "itemProps": Object {
+              "children": "Item 1",
+              "disabled": undefined,
+              "index": 0,
+              "item": Object {
+                "text": "Item 1",
+              },
+              "onClick": undefined,
+              "onKeyDown": [Function],
+              "render": [MockFunction] {
+                "calls": [Circular],
+              },
+              "tabIndex": 0,
+              "text": "Item 1",
+              "variant": undefined,
+            },
+          },
+        ],
+        Array [
+          Object {
+            "index": 1,
+            "item": Object {
+              "text": "Item 2",
+            },
+            "itemProps": Object {
+              "children": "Item 2",
+              "disabled": undefined,
+              "index": 1,
+              "item": Object {
+                "text": "Item 2",
+              },
+              "onClick": undefined,
+              "onKeyDown": [Function],
+              "render": [MockFunction] {
+                "calls": [Circular],
+              },
+              "tabIndex": 0,
+              "text": "Item 2",
+              "variant": undefined,
+            },
+          },
+        ],
+      ],
+    }
+  }
+>
+  <Menu
+    renderItem={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "index": 0,
+              "item": Object {
+                "text": "Item 1",
+              },
+              "itemProps": Object {
+                "children": "Item 1",
+                "disabled": undefined,
+                "index": 0,
+                "item": Object {
+                  "text": "Item 1",
+                },
+                "onClick": undefined,
+                "onKeyDown": [Function],
+                "render": [MockFunction] {
+                  "calls": [Circular],
+                },
+                "tabIndex": 0,
+                "text": "Item 1",
+                "variant": undefined,
+              },
+            },
+          ],
+          Array [
+            Object {
+              "index": 1,
+              "item": Object {
+                "text": "Item 2",
+              },
+              "itemProps": Object {
+                "children": "Item 2",
+                "disabled": undefined,
+                "index": 1,
+                "item": Object {
+                  "text": "Item 2",
+                },
+                "onClick": undefined,
+                "onKeyDown": [Function],
+                "render": [MockFunction] {
+                  "calls": [Circular],
+                },
+                "tabIndex": 0,
+                "text": "Item 2",
+                "variant": undefined,
+              },
+            },
+          ],
+        ],
+      }
+    }
+  >
+    <div
+      className="css-0"
+    >
+      <MenuGroup
+        key="0"
+      >
+        <MenuGroup>
+          <div
+            className="css-1"
+          >
+            <MenuItem
+              index={0}
+              item={
+                Object {
+                  "text": "Item 1",
+                }
+              }
+              key="0"
+              render={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "index": 0,
+                        "item": Object {
+                          "text": "Item 1",
+                        },
+                        "itemProps": Object {
+                          "children": "Item 1",
+                          "disabled": undefined,
+                          "index": 0,
+                          "item": Object {
+                            "text": "Item 1",
+                          },
+                          "onClick": undefined,
+                          "onKeyDown": [Function],
+                          "render": [MockFunction] {
+                            "calls": [Circular],
+                          },
+                          "tabIndex": 0,
+                          "text": "Item 1",
+                          "variant": undefined,
+                        },
+                      },
+                    ],
+                    Array [
+                      Object {
+                        "index": 1,
+                        "item": Object {
+                          "text": "Item 2",
+                        },
+                        "itemProps": Object {
+                          "children": "Item 2",
+                          "disabled": undefined,
+                          "index": 1,
+                          "item": Object {
+                            "text": "Item 2",
+                          },
+                          "onClick": undefined,
+                          "onKeyDown": [Function],
+                          "render": [MockFunction] {
+                            "calls": [Circular],
+                          },
+                          "tabIndex": 0,
+                          "text": "Item 2",
+                          "variant": undefined,
+                        },
+                      },
+                    ],
+                  ],
+                }
+              }
+              text="Item 1"
+            >
+              <div
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                Item 1
+              </div>
+            </MenuItem>
+            <MenuItem
+              index={1}
+              item={
+                Object {
+                  "text": "Item 2",
+                }
+              }
+              key="1"
+              render={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "index": 0,
+                        "item": Object {
+                          "text": "Item 1",
+                        },
+                        "itemProps": Object {
+                          "children": "Item 1",
+                          "disabled": undefined,
+                          "index": 0,
+                          "item": Object {
+                            "text": "Item 1",
+                          },
+                          "onClick": undefined,
+                          "onKeyDown": [Function],
+                          "render": [MockFunction] {
+                            "calls": [Circular],
+                          },
+                          "tabIndex": 0,
+                          "text": "Item 1",
+                          "variant": undefined,
+                        },
+                      },
+                    ],
+                    Array [
+                      Object {
+                        "index": 1,
+                        "item": Object {
+                          "text": "Item 2",
+                        },
+                        "itemProps": Object {
+                          "children": "Item 2",
+                          "disabled": undefined,
+                          "index": 1,
+                          "item": Object {
+                            "text": "Item 2",
+                          },
+                          "onClick": undefined,
+                          "onKeyDown": [Function],
+                          "render": [MockFunction] {
+                            "calls": [Circular],
+                          },
+                          "tabIndex": 0,
+                          "text": "Item 2",
+                          "variant": undefined,
+                        },
+                      },
+                    ],
+                  ],
+                }
+              }
+              text="Item 2"
+            >
+              <div
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                Item 2
+              </div>
+            </MenuItem>
+          </div>
+        </MenuGroup>
+      </MenuGroup>
+    </div>
+  </Menu>
+</Menu>
 `;
