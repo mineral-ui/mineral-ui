@@ -1,5 +1,8 @@
 /* @flow */
 import controlled from './controlled';
+import customItem from './customItem';
+import customMenu from './customMenu';
+import customTrigger from './customTrigger';
 import data from './data';
 import disabled from './disabled';
 import dropdown from './dropdown';
@@ -24,5 +27,8 @@ export default [
   onOpenClose,
   disabled,
   controlled,
-  rtl
+  rtl,
+  customItem,
+  customMenu,
+  customTrigger
 ];

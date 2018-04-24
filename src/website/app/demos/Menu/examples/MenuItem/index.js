@@ -1,5 +1,4 @@
 /* @flow */
-import customRender from './customRender';
 import disabled from './disabled';
 import icons from './icons';
 import importSyntax from './importSyntax';
@@ -17,7 +16,6 @@ export default [
   variants,
   icons,
   disabled,
-  customRender,
   rtl,
   kitchenSink,
   states

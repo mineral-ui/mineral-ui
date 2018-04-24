@@ -1,5 +1,8 @@
 /* @flow */
 import controlled from './controlled';
+import customItem from './customItem';
+import customMenu from './customMenu';
+import customTrigger from './customTrigger';
 import data from './data';
 import disabled from './disabled';
 import formField from './formField';
@@ -37,6 +40,9 @@ export default [
   portal,
   triggerRef,
   rtl,
+  customItem,
+  customMenu,
+  customTrigger,
   formField,
   states
 ];
