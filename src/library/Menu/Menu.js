@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
 import { createStyledComponent } from '../styles';
 import { MenuDivider, MenuGroup, MenuItem } from './index';
 
@@ -8,8 +8,13 @@ type Props = {
   children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
   data?: Items | ItemGroups,
-  /** @Private Function that returns props to be applied to each item */
-  getItemProps?: (props: Object, scope: Object) => Object
+  /**
+   * Specifies a key in the item data that gives an item its unique identity. See
+   * the [React docs](https://reactjs.org/docs/lists-and-keys.html#keys).
+   */
+  itemKey?: string,
+  /** Provides custom rendering control for the items. See the [render item example](/components/menu#render-item) and [React docs](https://reactjs.org/docs/render-props.html). */
+  renderItem?: RenderItem
 };
 
 export type Item = {
@@ -18,11 +23,25 @@ export type Item = {
   disabled?: boolean,
   divider?: boolean,
   onClick?: (event: SyntheticEvent<>) => void,
-  render?: (item: Object, props: Object, theme: Object) => React$Element<*>,
+  render?: RenderItem,
   secondaryText?: React$Node,
   text?: React$Node,
   value?: string,
   variant?: 'danger' | 'success' | 'warning'
+};
+
+type PropGetter = (props?: Object) => Object;
+
+export type RenderMenu = (props: RenderMenuProps) => React$Node;
+export type RenderMenuProps = {
+  menuProps: Object
+};
+
+export type RenderItem = (props: RenderItemProps) => React$Node;
+export type RenderItemProps = {
+  index: number,
+  item: Item,
+  itemProps: Object
 };
 
 export type ItemGroup = { items: Array<Item>, title?: React$Node };
@@ -37,29 +56,6 @@ const Root = createStyledComponent(
     includeStyleReset: true
   }
 );
-
-/**
- * A Menu presents a list of options representing actions or navigation.
- * Composed of [MenuItems](/components/menu-item), Menu is usually combined with [Popover](/components/popover) to create a [Dropdown](/components/dropdown).
- *
- * Menus are great for collecting actions in one place so your users don't need to scan the entire document to find a feature.
- */
-export default function Menu({
-  children,
-  data,
-  getItemProps,
-  ...restProps
-}: Props) {
-  const rootProps = {
-    ...restProps
-  };
-
-  return (
-    <Root {...rootProps}>
-      {data ? renderFromData(data, getItemProps) : children}
-    </Root>
-  );
-}
 
 const isGroupedData = (data: Items | ItemGroups) => {
   return data[0].hasOwnProperty('items');
@@ -79,51 +75,72 @@ export const getItems = (data: Items | ItemGroups) => {
   }, []);
 };
 
-function renderFromData(data, getItemProps) {
-  // $FlowFixMe https://github.com/facebook/flow/issues/5885
-  const itemGroups: ItemGroups = groupifyData(data);
-  return itemGroups.reduce(
-    (acc, group, groupIndex) => {
-      acc.groups.push(renderMenuGroup(group, groupIndex, getItemProps, acc));
-      return acc;
-    },
-    { groups: [], itemIndex: 0 }
-  ).groups;
-}
-
-function renderMenuGroup(group: ItemGroup, groupIndex, getItemProps, acc) {
-  return group.items && group.items.length ? (
-    <MenuGroup key={groupIndex} title={group.title}>
-      {group.items.map((item, itemIndex) => {
-        return renderMenuItem(item, itemIndex, getItemProps, acc);
-      })}
-    </MenuGroup>
-  ) : null;
-}
-
-function renderMenuItem(item, itemIndex, getItemProps, acc) {
-  if (item.divider) {
-    return <MenuDivider key={itemIndex} />;
-  } else {
-    const index = acc.itemIndex++; // Excludes MenuDividers
-    const { text, ...restItemProps } = item;
-    const itemProps = getItemProps
-      ? getItemProps(
-          {
-            ...restItemProps,
-            item
-          },
-          { index, item }
-        )
-      : {
-          ...restItemProps,
-          item
-        };
+/**
+ * A Menu presents a list of options representing actions or navigation.
+ * Composed of [MenuItems](/components/menu-item), Menu is usually combined with [Popover](/components/popover) to create a [Dropdown](/components/dropdown).
+ *
+ * Menus are great for collecting actions in one place so your users don't need to scan the entire document to find a feature.
+ */
+export default class Menu extends Component<Props> {
+  render() {
+    const { children, data, ...rootProps } = this.props;
 
     return (
-      <MenuItem key={itemIndex} {...itemProps}>
-        {text}
-      </MenuItem>
+      <Root {...rootProps}>{data ? this.renderFromData(data) : children}</Root>
     );
   }
+
+  renderFromData = (data: Items | ItemGroups) => {
+    // $FlowFixMe https://github.com/facebook/flow/issues/5885
+    const itemGroups: ItemGroups = groupifyData(data);
+    return itemGroups.map(this.renderMenuGroup);
+  };
+
+  renderMenuGroup = (group: ItemGroup, groupIndex: number) => {
+    const getItemProps = (props) => ({ ...props });
+    return group.items && group.items.length ? (
+      <MenuGroup key={groupIndex} title={group.title}>
+        {
+          group.items.reduce(
+            ({ items, index }, item) => ({
+              items: items.concat(
+                this.renderItem({
+                  getItemProps,
+                  index,
+                  item
+                })
+              ),
+              index: item.divider ? index : index + 1
+            }),
+            { items: [], index: 0 }
+          ).items
+        }
+      </MenuGroup>
+    ) : null;
+  };
+
+  getItemProps: PropGetter = (props = {}) => {
+    const { item, itemProps, index } = props;
+    const { renderItem, itemKey } = this.props;
+
+    return {
+      ...item,
+      ...itemProps,
+      children: item.text,
+      index,
+      item,
+      key: item[itemKey] || index,
+      render: renderItem
+    };
+  };
+
+  renderItem = (props: Object = {}) => {
+    const { item, index } = props;
+
+    if (item.divider) {
+      return <MenuDivider key={index} />;
+    } else {
+      return <MenuItem {...this.getItemProps(props)} />;
+    }
+  };
 }

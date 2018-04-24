@@ -186,7 +186,7 @@ export default class CardFooter extends Component<Props, State> {
             <TitleContent>{title}</TitleContent>
             {expandable && (
               <ToggleButton
-                onClick={this.toggleOpenState}
+                onClick={this.toggleOpen}
                 minimal
                 iconStart={<ExpandCollapseIcon title={triggerTitle(isOpen)} />}
               />
@@ -232,7 +232,7 @@ export default class CardFooter extends Component<Props, State> {
     this.props.onOpen && this.props.onOpen(event);
   };
 
-  toggleOpenState = (event: SyntheticEvent<>) => {
+  toggleOpen = (event: SyntheticEvent<>) => {
     const isOpen = this.getControllableValue('isOpen');
     if (isOpen) {
       this.close(event);
