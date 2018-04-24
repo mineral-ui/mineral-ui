@@ -1,17 +1,11 @@
 /* @flow */
 import React, { Component } from 'react';
-import { composePropsWithGetter } from '../utils';
 import { createStyledComponent, pxToEm } from '../styles';
-import Menu from '../Menu';
 import RtlPopper from '../Popover/RtlPopper';
 
 type Props = {
-  /** @Private Function that returns props to be applied to each item */
-  getItemProps?: (props: Object, scope: Object) => Object,
-  /** @Private Function that returns props to be applied to the menu */
-  getMenuProps?: (props: Object, scope?: Object) => Object,
-  /** Data from which the [Menu](/components/menu#data) will be constructed */
-  data: Array<Object>,
+  /** Content of the Dropdown */
+  children: React$Node,
   /** Id of the Dropdown content */
   id: string,
   /** Plugins that are used to alter behavior. See https://popper.js.org/popper-documentation.html#modifiers */
@@ -76,7 +70,7 @@ const Root = createStyledComponent(
   {
     displayName: 'DropdownContent',
     includeStyleReset: true,
-    filterProps: ['wide']
+    filterProps: ['hasArrow', 'wide']
   }
 );
 
@@ -85,33 +79,7 @@ const Root = createStyledComponent(
  */
 export default class DropdownContent extends Component<Props> {
   render() {
-    const {
-      data,
-      getItemProps,
-      getMenuProps,
-      id,
-      placement,
-      wide,
-      ...restProps
-    } = this.props;
-
-    const rootProps = {
-      id,
-      placement,
-      wide,
-      ...restProps
-    };
-
-    const menuProps = composePropsWithGetter(
-      {
-        // Props set by this component
-        id: `${id}-menu`,
-        data,
-        getItemProps
-      },
-      // Custom prop getter can override all values
-      getMenuProps
-    );
+    const { children, ...rootProps } = this.props;
 
     return (
       <Root {...rootProps}>
@@ -121,11 +89,7 @@ export default class DropdownContent extends Component<Props> {
             ...restProps
           };
 
-          return (
-            <div {...wrapperProps}>
-              <Menu {...menuProps} />
-            </div>
-          );
+          return <div {...wrapperProps}>{children}</div>;
         }}
       </Root>
     );

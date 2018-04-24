@@ -1,11 +1,12 @@
 /* @flow */
-import React, { Children, Component } from 'react';
+import React, { Children, cloneElement, Component } from 'react';
 import { createStyledComponent } from '../styles';
-import { generateId } from '../utils';
 import { createThemedComponent, mapComponentThemes } from '../themes';
+import { composeEventHandlers, generateId } from '../utils';
 import Popover, {
   componentTheme as popoverComponentTheme
 } from '../Popover/Popover';
+import PopoverContent from '../Popover/PopoverContent';
 
 type Props = {
   /** Trigger for the Tooltip */
@@ -23,7 +24,9 @@ type Props = {
   hasArrow?: boolean,
   /** Id of the Tooltip */
   id?: string,
-  /** Determines whether the Tooltip is open. For use with controlled components. */
+  /**
+   * Determines whether the Tooltip is open. For use with controlled components.
+   */
   isOpen?: boolean,
   /**
    * Plugins that are used to alter behavior. See
@@ -64,7 +67,13 @@ type Props = {
 };
 
 type State = {
-  isOpen?: boolean
+  isOpen: boolean
+};
+
+type PropGetter = (props?: Object) => Object;
+type RenderFn = (props?: RenderProps) => React$Node;
+type RenderProps = {
+  props: Object
 };
 
 const DELAY_OPEN = 250; // ms
@@ -142,11 +151,11 @@ export default class Tooltip extends Component<Props, State> {
 
   id: string = this.props.id || `tooltip-${generateId()}`;
 
+  openTimer: ?number;
+
   componentWillUnmount() {
     this.clearOpenTimer();
   }
-
-  openTimer: ?number;
 
   render() {
     const {
@@ -166,14 +175,35 @@ export default class Tooltip extends Component<Props, State> {
 
     const popoverProps = {
       ...restProps,
+      children: this.renderTrigger(),
       focusTriggerOnClose: false,
-      getContentProps: this.getContentProps,
-      getTriggerProps: this.getTriggerProps,
       id: this.id,
       isOpen: this.getControllableValue('isOpen'),
       onClose: this.close,
-      onOpen: this.open
+      onOpen: this.open,
+      content: this.renderContent
     };
+
+    return <Root {...popoverProps} />;
+  }
+
+  getTriggerProps: PropGetter = (props = {}) => {
+    return {
+      ...props,
+      'aria-expanded': undefined,
+      onBlur: composeEventHandlers(props.onBlur, this.close),
+      onFocus: composeEventHandlers(props.onFocus, this.handleDelayedOpen),
+      onMouseEnter: composeEventHandlers(
+        props.onMouseEnter,
+        this.handleDelayedOpen
+      ),
+      onMouseLeave: composeEventHandlers(props.onMouseLeave, this.close),
+      tabIndex: 0
+    };
+  };
+
+  renderTrigger = () => {
+    const { children } = this.props;
 
     const trigger =
       typeof children === 'string' ? (
@@ -184,31 +214,24 @@ export default class Tooltip extends Component<Props, State> {
 
     const child = Children.only(trigger);
 
-    return <Root {...popoverProps}>{child}</Root>;
-  }
+    return cloneElement(child, this.getTriggerProps(child.props));
+  };
 
-  getContentProps = (props: Object = {}) => ({
-    // Props set by caller, e.g. Popover
-    ...props,
+  getContentProps: PropGetter = (props = {}) => {
+    const { content } = this.props;
+    const { tabIndex: ignoreTabIndex, ...restProps } = props;
 
-    // Props set by this component
-    'aria-live': 'polite',
-    role: 'tooltip',
-    tabIndex: undefined
-  });
+    return {
+      ...restProps,
+      'aria-live': 'polite',
+      children: content,
+      role: 'tooltip'
+    };
+  };
 
-  getTriggerProps = (props: Object = {}) => ({
-    // Props set by caller, e.g. Popover
-    ...props,
-
-    // Props set by this component
-    'aria-expanded': undefined,
-    onBlur: this.close,
-    onFocus: this.handleDelayedOpen,
-    onMouseEnter: this.handleDelayedOpen,
-    onMouseLeave: this.close,
-    tabIndex: 0
-  });
+  renderContent: RenderFn = ({ props } = {}) => {
+    return <PopoverContent {...this.getContentProps(props)} />;
+  };
 
   handleDelayedOpen = (event: SyntheticEvent<>) => {
     this.clearOpenTimer();

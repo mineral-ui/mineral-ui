@@ -1,20 +1,20 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import deepEqual from 'fast-deep-equal';
-import { composeEventHandlers, generateId } from '../utils';
-import { createStyledComponent } from '../styles';
+import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
+import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
+import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import Dropdown, {
   componentTheme as dropdownComponentTheme
 } from '../Dropdown/Dropdown';
 import ItemMatcher from '../Dropdown/ItemMatcher';
-import { getItems } from '../Menu/Menu';
+import Menu, { getItems } from '../Menu/Menu';
+import MenuItem from '../Menu/MenuItem';
 import SelectTrigger, {
   componentTheme as selectTriggerComponentTheme
 } from './SelectTrigger';
-import { pxToEm } from '../styles';
 
 import type { Item, Items, ItemGroups } from '../Menu/Menu';
 
@@ -50,6 +50,23 @@ type Props = {
   /** Determines whether the Select is open. For use with controlled components. */
   isOpen?: boolean,
   /**
+   * Provides custom rendering control for the items. See the
+   * [custom item example](/components/select#custom-item) and
+   * [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  item?: RenderFn,
+  /**
+   * Specifies a key in the item data that gives an item its unique identity. See
+   * the [React docs](https://reactjs.org/docs/lists-and-keys.html#keys).
+   */
+  itemKey?: string,
+  /**
+   * Provides custom rendering control for the menu. See the
+   * [custom menu example](/components/select#custom-menu) and
+   * [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  menu?: RenderFn,
+  /**
    * Plugins that are used to alter behavior. See
    * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
    * for options.
@@ -70,7 +87,7 @@ type Props = {
   onSelect?: (item: Item, event: SyntheticEvent<>) => void,
   /** Text displayed when there is no item selected */
   placeholder?: string,
-  /** Placement of the Select */
+  /** Placement of the Select menu */
   placement?: 'bottom-end' | 'bottom-start' | 'top-end' | 'top-start',
   /** Indicates that the user cannot modify the value of the control */
   readOnly?: boolean,
@@ -80,6 +97,12 @@ type Props = {
   selectedItem?: Item,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
+  /**
+   * Provides custom rendering control for the trigger. See the
+   * [custom trigger example](/components/select#custom-trigger) and
+   * [React docs](https://reactjs.org/docs/render-props.html).
+   */
+  trigger?: RenderFn,
   /** Ref for the trigger */
   triggerRef?: (node: ?React$Component<*, *>) => void,
   /**
@@ -93,9 +116,26 @@ type Props = {
 
 type State = {
   highlightedIndex: ?number,
-  isOpen?: boolean,
+  isOpen: boolean,
   selectedItem: ?Item
 };
+
+type Helpers = {
+  close: (event: SyntheticEvent<>) => void,
+  focusTrigger: () => void,
+  open: (event: SyntheticEvent<>) => void
+};
+
+type StateAndHelpers = {
+  state: State,
+  helpers: Helpers
+};
+
+type PropGetter = (props?: Object) => Object;
+type RenderFn = (props?: RenderProps) => React$Node;
+type RenderProps = {
+  props: Object
+} & StateAndHelpers;
 
 export const componentTheme = (baseTheme: Object) => ({
   ...mapComponentThemes(
@@ -114,22 +154,25 @@ export const componentTheme = (baseTheme: Object) => ({
   )
 });
 
-const _Root = createThemedComponent(Dropdown, ({ theme: baseTheme }) => ({
-  ...mapComponentThemes(
-    {
-      name: 'Select',
-      theme: componentTheme(baseTheme)
-    },
-    {
-      name: 'Dropdown',
-      theme: {}
-    },
-    baseTheme
-  )
-}));
+const ThemedDropdown = createThemedComponent(
+  Dropdown,
+  ({ theme: baseTheme }) => ({
+    ...mapComponentThemes(
+      {
+        name: 'Select',
+        theme: componentTheme(baseTheme)
+      },
+      {
+        name: 'Dropdown',
+        theme: {}
+      },
+      baseTheme
+    )
+  })
+);
 
 const Root = createStyledComponent(
-  _Root,
+  ThemedDropdown,
   {
     width: '100%',
 
@@ -159,6 +202,7 @@ const contentWidthModifier = {
  */
 export default class Select extends Component<Props, State> {
   static defaultProps = {
+    itemKey: 'value',
     placeholder: 'Select...',
     placement: 'bottom-start',
     size: 'large'
@@ -172,11 +216,11 @@ export default class Select extends Component<Props, State> {
 
   id: string = this.props.id || `select-${generateId()}`;
 
-  selectTrigger: ?React$Component<*, *>;
-
   itemMatcher: any;
 
   items: Items = getItems(this.props.data);
+
+  selectTrigger: ?React$Component<*, *>;
 
   componentWillReceiveProps(nextProps: Props) {
     if (!deepEqual(this.props.data, nextProps.data)) {
@@ -185,109 +229,167 @@ export default class Select extends Component<Props, State> {
   }
 
   render() {
-    const {
-      data,
-      disabled,
-      modifiers,
-      name,
-      placeholder,
-      readOnly,
-      size,
-      variant,
-      triggerRef,
-      ...restProps
-    } = this.props;
+    const { disabled, modifiers, readOnly, trigger, ...restProps } = this.props;
     const isOpen = this.getControllableValue('isOpen');
-    const selectedItem = this.getControllableValue('selectedItem');
 
     const rootProps = {
-      id: this.id,
       ...restProps,
-      data,
+      id: this.id,
       disabled: disabled || readOnly,
       highlightedIndex: this.getHighlightedOrSelectedIndex(),
-      getMenuProps: this.getMenuProps,
-      getItemProps: this.getItemProps,
-      getTriggerProps: this.getTriggerProps,
       isOpen,
       modifiers: {
         contentWidth: contentWidthModifier,
         ...modifiers
       },
       onClose: this.close,
-      onOpen: this.open
-    };
-
-    const selectTriggerProps = {
-      disabled,
-      isOpen,
-      name,
-      placeholder,
-      readOnly,
-      size,
-      triggerRef: (node: ?React$Component<*, *>) => {
-        this.selectTrigger = node;
-        triggerRef && triggerRef(node);
-      },
-      item: selectedItem,
-      variant
+      onOpen: this.open,
+      menu: this.renderMenu
     };
 
     return (
       <Root {...rootProps}>
-        <SelectTrigger {...selectTriggerProps} />
+        {isRenderProp(trigger) ? this.renderTrigger : this.renderTrigger()}
       </Root>
     );
   }
 
-  getMenuItemId = (index: string) => {
+  getStateAndHelpers = (): StateAndHelpers => {
+    return {
+      state: {
+        highlightedIndex: this.getControllableValue('highlightedIndex'),
+        isOpen: this.getControllableValue('isOpen'),
+        selectedItem: this.getControllableValue('selectedItem')
+      },
+      helpers: {
+        close: this.close,
+        focusTrigger: this.focusTrigger,
+        open: this.open
+      }
+    };
+  };
+
+  setTriggerRef = (node: ?React$Component<*, *>) => {
+    const { triggerRef } = this.props;
+
+    this.selectTrigger = node;
+    triggerRef && triggerRef(node);
+  };
+
+  getMenuItemId = (index: string | number) => {
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps = (props: Object = {}) => {
-    const { disabled, invalid, readOnly, required } = this.props;
+  getTriggerProps: PropGetter = (props = {}) => {
+    const isOpen = this.getControllableValue('isOpen');
+    const selectedItem = this.getControllableValue('selectedItem');
+    const {
+      disabled,
+      invalid,
+      name,
+      placeholder,
+      readOnly,
+      trigger,
+      required,
+      size,
+      variant
+    } = this.props;
+
+    const refKey = trigger ? 'ref' : 'triggerRef';
 
     return {
-      // Props set by caller, e.g. Dropdown
-      ...props,
-
-      // Props set by this component
+      ...(isRenderProp(trigger) ? props : {}),
       'aria-haspopup': 'listbox',
       'aria-invalid': invalid,
       'aria-readonly': readOnly,
       'aria-required': required,
       disabled,
-      onKeyDown: !readOnly ? this.onTriggerKeyDown : undefined,
-      tabIndex: !disabled ? 0 : undefined
+      isOpen,
+      item: selectedItem,
+      name,
+      placeholder,
+      readOnly,
+      size,
+      tabIndex: !disabled ? 0 : undefined,
+      [refKey]: this.setTriggerRef,
+      variant,
+      ...(!isRenderProp(trigger) ? props : {}),
+      ...(!readOnly ? { onKeyDown: this.onTriggerKeyDown } : {})
     };
   };
 
-  getMenuProps = (props: Object = {}) => {
+  renderTrigger: RenderFn = ({ props } = {}) => {
+    const { trigger } = this.props;
+
+    if (isRenderProp(trigger)) {
+      return trigger({
+        ...this.getStateAndHelpers(),
+        props: this.getTriggerProps(props)
+      });
+    }
+
+    return <SelectTrigger {...this.getTriggerProps(props)} />;
+  };
+
+  getMenuProps: PropGetter = (props = {}) => {
+    const { itemKey } = this.props;
+
     return {
-      // Props set by caller, e.g. Dropdown
       ...props,
-
-      // Props set by this component
-      role: 'listbox'
+      itemKey,
+      role: 'listbox',
+      item: this.renderItem
     };
   };
 
-  getItemProps = (props: Object = {}, scope: Object) => {
-    const { item } = scope;
+  renderMenu: RenderFn = ({ props } = {}) => {
+    const { menu } = this.props;
+
+    if (isRenderProp(menu)) {
+      return menu({
+        ...this.getStateAndHelpers(),
+        props: this.getMenuProps(props)
+      });
+    }
+
+    return <Menu {...this.getMenuProps(props)} />;
+  };
+
+  getItemProps: PropGetter = (props = {}) => {
+    const highlightedIndex = this.getControllableValue('highlightedIndex');
     const selectedItem = this.getControllableValue('selectedItem');
+    const { props: itemProps } = props;
+    const { index, item } = itemProps;
 
     return {
-      // Props set by caller, e.g. Dropdown
-      ...props,
-
-      // Props set by this component
+      ...itemProps,
+      ...item,
       'aria-selected': selectedItem ? selectedItem.value === item.value : false,
+      'aria-disabled': this.props.disabled || item.disabled,
+      children: item.text,
+      id: this.getMenuItemId(index),
+      isHighlighted: highlightedIndex === index,
+      role: 'option',
+      tabIndex: null, // Unset tabIndex because we use arrow keys to navigate instead
       onClick: composeEventHandlers(
         item.onClick,
         this.onSelect.bind(null, item)
-      ),
-      role: 'option'
+      )
     };
+  };
+
+  renderItem: RenderFn = (props = {}) => {
+    const { item } = this.props;
+
+    if (isRenderProp(item)) {
+      return item({
+        ...props,
+        ...this.getStateAndHelpers(),
+        props: this.getItemProps(props)
+      });
+    }
+
+    return <MenuItem {...this.getItemProps(props)} />;
   };
 
   getHighlightedOrSelectedIndex = () => {
@@ -314,6 +416,9 @@ export default class Select extends Component<Props, State> {
   };
 
   onTriggerKeyDown = (event: SyntheticKeyboardEvent<>) => {
+    // $FlowFixMe
+    event.nativeEvent.preventMineralDefault = true;
+
     const { key } = event;
     const isOpen = this.getControllableValue('isOpen');
 

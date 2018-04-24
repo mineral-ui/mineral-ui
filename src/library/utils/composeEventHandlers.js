@@ -7,10 +7,11 @@ export default function composeEventHandlers(...handlers: Array<any>) {
   } else if (fns.length === 1) {
     return fns[0];
   } else {
-    return (event: Object, ...args: Array<any>) =>
-      fns.some((fn) => {
+    return (event: Object, ...args: Array<any>) => {
+      return fns.some((fn) => {
         fn(event, ...args);
-        return event.defaultPrevented;
+        return event.nativeEvent.preventMineralDefault;
       });
+    };
   }
 }
