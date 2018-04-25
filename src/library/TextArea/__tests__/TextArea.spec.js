@@ -23,6 +23,10 @@ function mountTextArea(props = {}) {
 }
 
 describe('TextArea', () => {
+  testDemoExamples(examples, {
+    exclude: ['states']
+  });
+
   it('renders', () => {
     const textArea = shallowTextArea();
 
@@ -37,9 +41,5 @@ describe('TextArea', () => {
       .simulate('input', { target: { value: 'Hello World' } });
 
     expect(textArea.props().onInput).toHaveBeenCalled();
-  });
-
-  testDemoExamples(examples, {
-    exclude: ['states']
   });
 });

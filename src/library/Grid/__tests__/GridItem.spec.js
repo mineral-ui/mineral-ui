@@ -10,11 +10,11 @@ function shallowGridItem(props) {
 }
 
 describe('GridItem', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const gridItem = shallowGridItem({});
 
     expect(gridItem.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

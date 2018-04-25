@@ -10,11 +10,11 @@ function shallowRadioGroup() {
 }
 
 describe('RadioGroup', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const radioGroup = shallowRadioGroup();
 
     expect(radioGroup.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

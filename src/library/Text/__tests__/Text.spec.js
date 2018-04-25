@@ -10,11 +10,11 @@ function shallowText(props) {
 }
 
 describe('Text', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const text = shallowText({});
 
     expect(text.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

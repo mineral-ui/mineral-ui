@@ -14,6 +14,8 @@ function shallowFormFieldset(props = {}) {
 }
 
 describe('FormFieldset', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const formFieldset = shallowFormFieldset();
@@ -21,6 +23,4 @@ describe('FormFieldset', () => {
       expect(formFieldset.exists()).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

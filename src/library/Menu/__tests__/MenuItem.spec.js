@@ -27,6 +27,8 @@ function mountMenuItem(props = {}) {
 }
 
 describe('MenuItem', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const menuItem = shallowMenuItem();
@@ -72,6 +74,4 @@ describe('MenuItem', () => {
       expect(menuItem.props().onClick).not.toHaveBeenCalled();
     });
   });
-
-  testDemoExamples(examples);
 });

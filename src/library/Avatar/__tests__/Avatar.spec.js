@@ -10,11 +10,11 @@ function shallowAvatar(props) {
 }
 
 describe('Avatar', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const avatar = shallowAvatar({});
 
     expect(avatar.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

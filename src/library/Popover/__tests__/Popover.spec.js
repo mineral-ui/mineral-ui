@@ -35,6 +35,8 @@ function assertTriggerHasFocus(trigger) {
 }
 
 describe('Popover', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const popover = shallowPopover();
@@ -162,6 +164,4 @@ describe('Popover', () => {
       expect(button.prop('disabled')).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

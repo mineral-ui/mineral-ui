@@ -13,11 +13,11 @@ function shallowIcon(props = {}) {
 }
 
 describe('Icon', () => {
+  testDemoExamples(examples, { exclude: ['categories'] });
+
   it('renders', () => {
     const icon = shallowIcon();
 
     expect(icon.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples, { exclude: ['categories'] });
 });

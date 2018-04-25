@@ -3,36 +3,70 @@
 exports[`MenuItem demo examples basic 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -40,18 +74,18 @@ exports[`MenuItem demo examples basic 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -62,8 +96,8 @@ exports[`MenuItem demo examples basic 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-14,
+[data-css-14] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -82,90 +116,56 @@ exports[`MenuItem demo examples basic 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-15,
+[data-css-15] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-16,
+[data-css-16] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-15,
-[data-css-15] {
-  overflow: hidden;
-}
-
-.css-15 > div,
-[data-css-15] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-16,
-[data-css-16] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-16 *,
-[data-css-16] *,
-.css-16 *::before,
-[data-css-16] *::before,
-.css-16 *::after,
-[data-css-16] *::after {
-  box-sizing: inherit;
-}
-
 <glamorous(div)>
   <div
-    className="css-15"
+    className="css-0"
   >
     <Menu>
       <Menu>
         <div
-          className="css-16"
+          className="css-1"
         >
           <MenuItem>
             <MenuItem
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Light years
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -180,27 +180,27 @@ exports[`MenuItem demo examples basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Star stuff
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -215,27 +215,27 @@ exports[`MenuItem demo examples basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Encyclopaedia galactica
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -1291,36 +1291,70 @@ exports[`MenuItem demo examples custom-render 1`] = `
 exports[`MenuItem demo examples disabled 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -1328,18 +1362,18 @@ exports[`MenuItem demo examples disabled 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1350,8 +1384,8 @@ exports[`MenuItem demo examples disabled 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-14,
+[data-css-14] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1370,123 +1404,89 @@ exports[`MenuItem demo examples disabled 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-15,
+[data-css-15] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-16,
+[data-css-16] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-15,
-[data-css-15] {
+.css-17,
+[data-css-17] {
   color: #afbacc;
   cursor: default;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-15:focus,
-[data-css-15]:focus,
-.css-15[data-simulate-focus],
-[data-css-15][data-simulate-focus] {
+.css-17:focus,
+[data-css-17]:focus,
+.css-17[data-simulate-focus],
+[data-css-17][data-simulate-focus] {
   outline: 0;
 }
 
-.css-15 [role="img"],
-[data-css-15] [role="img"] {
+.css-17 [role="img"],
+[data-css-17] [role="img"] {
   box-sizing: content-box;
   display: block;
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
 }
 
-.css-15 [role="img"]:first-child,
-[data-css-15] [role="img"]:first-child {
+.css-17 [role="img"]:first-child,
+[data-css-17] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-15 [role="img"]:last-child,
-[data-css-15] [role="img"]:last-child {
+.css-17 [role="img"]:last-child,
+[data-css-17] [role="img"]:last-child {
   margin-left: 0.5em;
-}
-
-.css-20,
-[data-css-20] {
-  overflow: hidden;
-}
-
-.css-20 > div,
-[data-css-20] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-21,
-[data-css-21] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-21 *,
-[data-css-21] *,
-.css-21 *::before,
-[data-css-21] *::before,
-.css-21 *::after,
-[data-css-21] *::after {
-  box-sizing: inherit;
 }
 
 <glamorous(div)>
   <div
-    className="css-20"
+    className="css-0"
   >
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem>
             <MenuItem
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             New File
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -1501,27 +1501,27 @@ exports[`MenuItem demo examples disabled 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Open
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -1541,28 +1541,28 @@ exports[`MenuItem demo examples disabled 1`] = `
               tabIndex="-1"
             >
               <div
-                className="css-15"
+                className="css-17"
                 onKeyDown={[Function]}
                 tabIndex="-1"
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Open Recent
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -1577,27 +1577,27 @@ exports[`MenuItem demo examples disabled 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Save
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -1617,36 +1617,70 @@ exports[`MenuItem demo examples disabled 1`] = `
 exports[`MenuItem demo examples icons 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -1654,18 +1688,18 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1676,8 +1710,8 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-14,
+[data-css-14] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1696,120 +1730,53 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-15,
+[data-css-15] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-16,
+[data-css-16] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-15,
-[data-css-15] {
-  color: #afbacc;
-  cursor: default;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.css-15:focus,
-[data-css-15]:focus,
-.css-15[data-simulate-focus],
-[data-css-15][data-simulate-focus] {
-  outline: 0;
-}
-
-.css-15 [role="img"],
-[data-css-15] [role="img"] {
-  box-sizing: content-box;
-  display: block;
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.css-15 [role="img"]:first-child,
-[data-css-15] [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.css-15 [role="img"]:last-child,
-[data-css-15] [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.css-20,
-[data-css-20] {
-  overflow: hidden;
-}
-
-.css-20 > div,
-[data-css-20] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-21,
-[data-css-21] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-21 *,
-[data-css-21] *,
-.css-21 *::before,
-[data-css-21] *::before,
-.css-21 *::after,
-[data-css-21] *::after {
-  box-sizing: inherit;
-}
-
-.css-22,
-[data-css-22] {
+.css-17,
+[data-css-17] {
   color: #de1b1b;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-22:focus,
-[data-css-22]:focus,
-.css-22[data-simulate-focus],
-[data-css-22][data-simulate-focus] {
+.css-17:focus,
+[data-css-17]:focus,
+.css-17[data-simulate-focus],
+[data-css-17][data-simulate-focus] {
   background-color: #faf0f0;
   outline: 0;
 }
 
-.css-22:hover,
-[data-css-22]:hover,
-.css-22[data-simulate-hover],
-[data-css-22][data-simulate-hover] {
+.css-17:hover,
+[data-css-17]:hover,
+.css-17[data-simulate-hover],
+[data-css-17][data-simulate-hover] {
   background-color: #faf0f0;
 }
 
-.css-22:active,
-[data-css-22]:active,
-.css-22[data-simulate-active],
-[data-css-22][data-simulate-active] {
+.css-17:active,
+[data-css-17]:active,
+.css-17[data-simulate-active],
+[data-css-17][data-simulate-active] {
   background-color: #fad4d4;
 }
 
-.css-22 [role="img"],
-[data-css-22] [role="img"] {
+.css-17 [role="img"],
+[data-css-17] [role="img"] {
   box-sizing: content-box;
   color: #de1b1b;
   display: block;
@@ -1817,56 +1784,56 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-22 [role="img"]:first-child,
-[data-css-22] [role="img"]:first-child {
+.css-17 [role="img"]:first-child,
+[data-css-17] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-22 [role="img"]:last-child,
-[data-css-22] [role="img"]:last-child {
+.css-17 [role="img"]:last-child,
+[data-css-17] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-33,
-[data-css-33] {
+.css-28,
+[data-css-28] {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
 }
 
-.css-34,
-[data-css-34] {
+.css-29,
+[data-css-29] {
   color: #2a854e;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-34:focus,
-[data-css-34]:focus,
-.css-34[data-simulate-focus],
-[data-css-34][data-simulate-focus] {
+.css-29:focus,
+[data-css-29]:focus,
+.css-29[data-simulate-focus],
+[data-css-29][data-simulate-focus] {
   background-color: #e1faeb;
   outline: 0;
 }
 
-.css-34:hover,
-[data-css-34]:hover,
-.css-34[data-simulate-hover],
-[data-css-34][data-simulate-hover] {
+.css-29:hover,
+[data-css-29]:hover,
+.css-29[data-simulate-hover],
+[data-css-29][data-simulate-hover] {
   background-color: #e1faeb;
 }
 
-.css-34:active,
-[data-css-34]:active,
-.css-34[data-simulate-active],
-[data-css-34][data-simulate-active] {
+.css-29:active,
+[data-css-29]:active,
+.css-29[data-simulate-active],
+[data-css-29][data-simulate-active] {
   background-color: #abedc5;
 }
 
-.css-34 [role="img"],
-[data-css-34] [role="img"] {
+.css-29 [role="img"],
+[data-css-29] [role="img"] {
   box-sizing: content-box;
   color: #2a854e;
   display: block;
@@ -1874,48 +1841,48 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-34 [role="img"]:first-child,
-[data-css-34] [role="img"]:first-child {
+.css-29 [role="img"]:first-child,
+[data-css-29] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-34 [role="img"]:last-child,
-[data-css-34] [role="img"]:last-child {
+.css-29 [role="img"]:last-child,
+[data-css-29] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-45,
-[data-css-45] {
+.css-40,
+[data-css-40] {
   color: #ad5f00;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-45:focus,
-[data-css-45]:focus,
-.css-45[data-simulate-focus],
-[data-css-45][data-simulate-focus] {
+.css-40:focus,
+[data-css-40]:focus,
+.css-40[data-simulate-focus],
+[data-css-40][data-simulate-focus] {
   background-color: #fcf2e6;
   outline: 0;
 }
 
-.css-45:hover,
-[data-css-45]:hover,
-.css-45[data-simulate-hover],
-[data-css-45][data-simulate-hover] {
+.css-40:hover,
+[data-css-40]:hover,
+.css-40[data-simulate-hover],
+[data-css-40][data-simulate-hover] {
   background-color: #fcf2e6;
 }
 
-.css-45:active,
-[data-css-45]:active,
-.css-45[data-simulate-active],
-[data-css-45][data-simulate-active] {
+.css-40:active,
+[data-css-40]:active,
+.css-40[data-simulate-active],
+[data-css-40][data-simulate-active] {
   background-color: #fad8af;
 }
 
-.css-45 [role="img"],
-[data-css-45] [role="img"] {
+.css-40 [role="img"],
+[data-css-40] [role="img"] {
   box-sizing: content-box;
   color: #ad5f00;
   display: block;
@@ -1923,25 +1890,58 @@ exports[`MenuItem demo examples icons 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-45 [role="img"]:first-child,
-[data-css-45] [role="img"]:first-child {
+.css-40 [role="img"]:first-child,
+[data-css-40] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-45 [role="img"]:last-child,
-[data-css-45] [role="img"]:last-child {
+.css-40 [role="img"]:last-child,
+[data-css-40] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-51,
+[data-css-51] {
+  color: #afbacc;
+  cursor: default;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.css-51:focus,
+[data-css-51]:focus,
+.css-51[data-simulate-focus],
+[data-css-51][data-simulate-focus] {
+  outline: 0;
+}
+
+.css-51 [role="img"],
+[data-css-51] [role="img"] {
+  box-sizing: content-box;
+  display: block;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-51 [role="img"]:first-child,
+[data-css-51] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-51 [role="img"]:last-child,
+[data-css-51] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
 <Component>
   <glamorous(div)>
     <div
-      className="css-20"
+      className="css-0"
     >
       <Menu>
         <Menu>
           <div
-            className="css-21"
+            className="css-1"
           >
             <MenuItem
               iconStart={<IconCloud />}
@@ -1950,12 +1950,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 tabIndex={0}
               >
                 <div
-                  className="css-0"
+                  className="css-2"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -1974,7 +1974,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -1989,18 +1989,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Start icon
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2017,27 +2017,27 @@ exports[`MenuItem demo examples icons 1`] = `
                 tabIndex={0}
               >
                 <div
-                  className="css-0"
+                  className="css-2"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               End icon
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2059,7 +2059,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2085,12 +2085,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 tabIndex={0}
               >
                 <div
-                  className="css-0"
+                  className="css-2"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -2109,7 +2109,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2124,18 +2124,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Both icons
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2157,7 +2157,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2181,7 +2181,7 @@ exports[`MenuItem demo examples icons 1`] = `
       <Menu>
         <Menu>
           <div
-            className="css-21"
+            className="css-1"
           >
             <MenuItem
               iconStart={<IconCloud />}
@@ -2192,12 +2192,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 variant="danger"
               >
                 <div
-                  className="css-22"
+                  className="css-17"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -2216,7 +2216,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2231,18 +2231,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Danger
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2261,12 +2261,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 variant="success"
               >
                 <div
-                  className="css-34"
+                  className="css-29"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -2285,7 +2285,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2300,18 +2300,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Success
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2330,12 +2330,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 variant="warning"
               >
                 <div
-                  className="css-45"
+                  className="css-40"
                   tabIndex={0}
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -2354,7 +2354,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2369,18 +2369,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Warning
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2399,12 +2399,12 @@ exports[`MenuItem demo examples icons 1`] = `
                 tabIndex="-1"
               >
                 <div
-                  className="css-15"
+                  className="css-51"
                   tabIndex="-1"
                 >
                   <glamorous(span)>
                     <span
-                      className="css-11"
+                      className="css-13"
                     >
                       <IconCloud
                         key="iconStart"
@@ -2423,7 +2423,7 @@ exports[`MenuItem demo examples icons 1`] = `
                           >
                             <svg
                               aria-hidden={true}
-                              className="css-33"
+                              className="css-28"
                               role="img"
                               viewBox="0 0 24 24"
                             >
@@ -2438,18 +2438,18 @@ exports[`MenuItem demo examples icons 1`] = `
                       </IconCloud>
                       <glamorous(span)>
                         <span
-                          className="css-12"
+                          className="css-14"
                         >
                           <glamorous(span)>
                             <span
-                              className="css-13"
+                              className="css-15"
                             >
                               Disabled
                             </span>
                           </glamorous(span)>
                           <glamorous(span)>
                             <span
-                              className="css-14"
+                              className="css-16"
                             />
                           </glamorous(span)>
                         </span>
@@ -2470,36 +2470,57 @@ exports[`MenuItem demo examples icons 1`] = `
 exports[`MenuItem demo examples kitchen-sink 1`] = `
 .css-0,
 [data-css-0] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-0 *,
+[data-css-0] *,
+.css-0 *::before,
+[data-css-0] *::before,
+.css-0 *::after,
+[data-css-0] *::after {
+  box-sizing: inherit;
+}
+
+.css-1,
+[data-css-1] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-1:focus,
+[data-css-1]:focus,
+.css-1[data-simulate-focus],
+[data-css-1][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-1:hover,
+[data-css-1]:hover,
+.css-1[data-simulate-hover],
+[data-css-1][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-1:active,
+[data-css-1]:active,
+.css-1[data-simulate-active],
+[data-css-1][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-1 [role="img"],
+[data-css-1] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -2507,18 +2528,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-1 [role="img"]:first-child,
+[data-css-1] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-1 [role="img"]:last-child,
+[data-css-1] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-12,
+[data-css-12] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2529,8 +2550,8 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2549,40 +2570,19 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-14,
+[data-css-14] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-15,
+[data-css-15] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-15,
-[data-css-15] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-15 *,
-[data-css-15] *,
-.css-15 *::before,
-[data-css-15] *::before,
-.css-15 *::after,
-[data-css-15] *::after {
-  box-sizing: inherit;
 }
 
 .css-16,
@@ -2618,7 +2618,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-15"
+          className="css-0"
         >
           <MenuItem
             iconEnd={<IconCloud />}
@@ -2628,12 +2628,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2667,18 +2667,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           />
                         </glamorous(span)>
                       </span>
@@ -2726,12 +2726,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2765,18 +2765,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           />
                         </glamorous(span)>
                       </span>
@@ -2824,12 +2824,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2863,18 +2863,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           />
                         </glamorous(span)>
                       </span>
@@ -2923,12 +2923,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2962,16 +2962,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           />
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink
                           </span>
@@ -3022,12 +3022,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3061,16 +3061,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           />
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
                           </span>
@@ -3121,12 +3121,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3160,16 +3160,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           />
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3220,12 +3220,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3259,18 +3259,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen sink
                           </span>
@@ -3321,12 +3321,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3360,18 +3360,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen sink
                           </span>
@@ -3422,12 +3422,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3461,18 +3461,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3523,12 +3523,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3562,18 +3562,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3621,7 +3621,7 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-15"
+          className="css-0"
         >
           <MenuItem
             iconEnd={<IconCloud />}
@@ -3631,12 +3631,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3670,18 +3670,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           />
                         </glamorous(span)>
                       </span>
@@ -3729,12 +3729,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3768,18 +3768,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           />
                         </glamorous(span)>
                       </span>
@@ -3828,12 +3828,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3867,16 +3867,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           />
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink
                           </span>
@@ -3927,12 +3927,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3966,16 +3966,16 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           />
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -4026,12 +4026,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -4065,18 +4065,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen sink
                           </span>
@@ -4127,12 +4127,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -4166,18 +4166,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen sink
                           </span>
@@ -4228,12 +4228,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -4267,18 +4267,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -4329,12 +4329,12 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-1"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-12"
                   >
                     <IconCloud
                       key="iconStart"
@@ -4368,18 +4368,18 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
                     </IconCloud>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-13"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-14"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-15"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -4431,6 +4431,40 @@ exports[`MenuItem demo examples kitchen-sink 1`] = `
 exports[`MenuItem demo examples rtl 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4441,8 +4475,8 @@ exports[`MenuItem demo examples rtl 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-1,
-[data-css-1] {
+.css-3,
+[data-css-3] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4461,46 +4495,12 @@ exports[`MenuItem demo examples rtl 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-2,
-[data-css-2] {
+.css-4,
+[data-css-4] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-3,
-[data-css-3] {
-  overflow: hidden;
-}
-
-.css-3 > div,
-[data-css-3] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-4,
-[data-css-4] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
-  box-sizing: inherit;
 }
 
 .css-5,
@@ -4573,7 +4573,7 @@ exports[`MenuItem demo examples rtl 1`] = `
   dir="rtl"
 >
   <div
-    className="css-3"
+    className="css-0"
     dir="rtl"
   >
     <ThemeProvider>
@@ -4581,7 +4581,7 @@ exports[`MenuItem demo examples rtl 1`] = `
         <Menu>
           <Menu>
             <div
-              className="css-4"
+              className="css-1"
             >
               <MenuItem>
                 <MenuItem
@@ -4593,11 +4593,11 @@ exports[`MenuItem demo examples rtl 1`] = `
                   >
                     <glamorous(span)>
                       <span
-                        className="css-0"
+                        className="css-2"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-1"
+                            className="css-3"
                           >
                             <glamorous(span)>
                               <span
@@ -4608,7 +4608,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                             </glamorous(span)>
                             <glamorous(span)>
                               <span
-                                className="css-2"
+                                className="css-4"
                               />
                             </glamorous(span)>
                           </span>
@@ -4630,11 +4630,11 @@ exports[`MenuItem demo examples rtl 1`] = `
                   >
                     <glamorous(span)>
                       <span
-                        className="css-0"
+                        className="css-2"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-1"
+                            className="css-3"
                           >
                             <glamorous(span)>
                               <span
@@ -4645,7 +4645,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                             </glamorous(span)>
                             <glamorous(span)>
                               <span
-                                className="css-2"
+                                className="css-4"
                               >
                                 نص ثانوي
                               </span>
@@ -4669,7 +4669,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                   >
                     <glamorous(span)>
                       <span
-                        className="css-0"
+                        className="css-2"
                       >
                         <IconHelp
                           key="iconStart"
@@ -4703,7 +4703,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                         </IconHelp>
                         <glamorous(span)>
                           <span
-                            className="css-1"
+                            className="css-3"
                           >
                             <glamorous(span)>
                               <span
@@ -4714,7 +4714,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                             </glamorous(span)>
                             <glamorous(span)>
                               <span
-                                className="css-2"
+                                className="css-4"
                               />
                             </glamorous(span)>
                           </span>
@@ -4736,11 +4736,11 @@ exports[`MenuItem demo examples rtl 1`] = `
                   >
                     <glamorous(span)>
                       <span
-                        className="css-0"
+                        className="css-2"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-1"
+                            className="css-3"
                           >
                             <glamorous(span)>
                               <span
@@ -4751,7 +4751,7 @@ exports[`MenuItem demo examples rtl 1`] = `
                             </glamorous(span)>
                             <glamorous(span)>
                               <span
-                                className="css-2"
+                                className="css-4"
                               />
                             </glamorous(span)>
                           </span>
@@ -4803,36 +4803,70 @@ exports[`MenuItem demo examples rtl 1`] = `
 exports[`MenuItem demo examples secondary-text 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4840,18 +4874,18 @@ exports[`MenuItem demo examples secondary-text 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4862,8 +4896,8 @@ exports[`MenuItem demo examples secondary-text 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-14,
+[data-css-14] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -4882,63 +4916,29 @@ exports[`MenuItem demo examples secondary-text 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-15,
+[data-css-15] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-16,
+[data-css-16] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-15,
-[data-css-15] {
-  overflow: hidden;
-}
-
-.css-15 > div,
-[data-css-15] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-16,
-[data-css-16] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-16 *,
-[data-css-16] *,
-.css-16 *::before,
-[data-css-16] *::before,
-.css-16 *::after,
-[data-css-16] *::after {
-  box-sizing: inherit;
-}
-
 <glamorous(div)>
   <div
-    className="css-15"
+    className="css-0"
   >
     <Menu>
       <Menu>
         <div
-          className="css-16"
+          className="css-1"
         >
           <MenuItem
             secondaryText="Star stuff"
@@ -4947,27 +4947,27 @@ exports[`MenuItem demo examples secondary-text 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Light years
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           >
                             Star stuff
                           </span>
@@ -4986,27 +4986,27 @@ exports[`MenuItem demo examples secondary-text 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Harvesting only
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           >
                             Distant epochs
                           </span>
@@ -5025,27 +5025,27 @@ exports[`MenuItem demo examples secondary-text 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Encyclopaedia galactica
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           >
                             Cosmic ocean
                           </span>
@@ -5067,36 +5067,70 @@ exports[`MenuItem demo examples secondary-text 1`] = `
 exports[`MenuItem demo examples states 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.css-2:focus,
+[data-css-2]:focus,
+.css-2[data-simulate-focus],
+[data-css-2][data-simulate-focus] {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.css-2:hover,
+[data-css-2]:hover,
+.css-2[data-simulate-hover],
+[data-css-2][data-simulate-hover] {
   background-color: #f5f7fa;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.css-2:active,
+[data-css-2]:active,
+.css-2[data-simulate-active],
+[data-css-2][data-simulate-active] {
   background-color: #ebeff5;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.css-2 [role="img"],
+[data-css-2] [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -5104,18 +5138,18 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.css-2 [role="img"]:first-child,
+[data-css-2] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.css-2 [role="img"]:last-child,
+[data-css-2] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11,
-[data-css-11] {
+.css-13,
+[data-css-13] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -5126,8 +5160,8 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-12,
-[data-css-12] {
+.css-14,
+[data-css-14] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -5146,120 +5180,53 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-13,
-[data-css-13] {
+.css-15,
+[data-css-15] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-14,
-[data-css-14] {
+.css-16,
+[data-css-16] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-15,
-[data-css-15] {
-  color: #afbacc;
-  cursor: default;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.css-15:focus,
-[data-css-15]:focus,
-.css-15[data-simulate-focus],
-[data-css-15][data-simulate-focus] {
-  outline: 0;
-}
-
-.css-15 [role="img"],
-[data-css-15] [role="img"] {
-  box-sizing: content-box;
-  display: block;
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-
-.css-15 [role="img"]:first-child,
-[data-css-15] [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.css-15 [role="img"]:last-child,
-[data-css-15] [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.css-20,
-[data-css-20] {
-  overflow: hidden;
-}
-
-.css-20 > div,
-[data-css-20] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-21,
-[data-css-21] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-21 *,
-[data-css-21] *,
-.css-21 *::before,
-[data-css-21] *::before,
-.css-21 *::after,
-[data-css-21] *::after {
-  box-sizing: inherit;
-}
-
-.css-22,
-[data-css-22] {
+.css-17,
+[data-css-17] {
   color: #de1b1b;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-22:focus,
-[data-css-22]:focus,
-.css-22[data-simulate-focus],
-[data-css-22][data-simulate-focus] {
+.css-17:focus,
+[data-css-17]:focus,
+.css-17[data-simulate-focus],
+[data-css-17][data-simulate-focus] {
   background-color: #faf0f0;
   outline: 0;
 }
 
-.css-22:hover,
-[data-css-22]:hover,
-.css-22[data-simulate-hover],
-[data-css-22][data-simulate-hover] {
+.css-17:hover,
+[data-css-17]:hover,
+.css-17[data-simulate-hover],
+[data-css-17][data-simulate-hover] {
   background-color: #faf0f0;
 }
 
-.css-22:active,
-[data-css-22]:active,
-.css-22[data-simulate-active],
-[data-css-22][data-simulate-active] {
+.css-17:active,
+[data-css-17]:active,
+.css-17[data-simulate-active],
+[data-css-17][data-simulate-active] {
   background-color: #fad4d4;
 }
 
-.css-22 [role="img"],
-[data-css-22] [role="img"] {
+.css-17 [role="img"],
+[data-css-17] [role="img"] {
   box-sizing: content-box;
   color: #de1b1b;
   display: block;
@@ -5267,56 +5234,56 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-22 [role="img"]:first-child,
-[data-css-22] [role="img"]:first-child {
+.css-17 [role="img"]:first-child,
+[data-css-17] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-22 [role="img"]:last-child,
-[data-css-22] [role="img"]:last-child {
+.css-17 [role="img"]:last-child,
+[data-css-17] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-33,
-[data-css-33] {
+.css-28,
+[data-css-28] {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
 }
 
-.css-34,
-[data-css-34] {
+.css-29,
+[data-css-29] {
   color: #2a854e;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-34:focus,
-[data-css-34]:focus,
-.css-34[data-simulate-focus],
-[data-css-34][data-simulate-focus] {
+.css-29:focus,
+[data-css-29]:focus,
+.css-29[data-simulate-focus],
+[data-css-29][data-simulate-focus] {
   background-color: #e1faeb;
   outline: 0;
 }
 
-.css-34:hover,
-[data-css-34]:hover,
-.css-34[data-simulate-hover],
-[data-css-34][data-simulate-hover] {
+.css-29:hover,
+[data-css-29]:hover,
+.css-29[data-simulate-hover],
+[data-css-29][data-simulate-hover] {
   background-color: #e1faeb;
 }
 
-.css-34:active,
-[data-css-34]:active,
-.css-34[data-simulate-active],
-[data-css-34][data-simulate-active] {
+.css-29:active,
+[data-css-29]:active,
+.css-29[data-simulate-active],
+[data-css-29][data-simulate-active] {
   background-color: #abedc5;
 }
 
-.css-34 [role="img"],
-[data-css-34] [role="img"] {
+.css-29 [role="img"],
+[data-css-29] [role="img"] {
   box-sizing: content-box;
   color: #2a854e;
   display: block;
@@ -5324,48 +5291,48 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-34 [role="img"]:first-child,
-[data-css-34] [role="img"]:first-child {
+.css-29 [role="img"]:first-child,
+[data-css-29] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-34 [role="img"]:last-child,
-[data-css-34] [role="img"]:last-child {
+.css-29 [role="img"]:last-child,
+[data-css-29] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-45,
-[data-css-45] {
+.css-40,
+[data-css-40] {
   color: #ad5f00;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-45:focus,
-[data-css-45]:focus,
-.css-45[data-simulate-focus],
-[data-css-45][data-simulate-focus] {
+.css-40:focus,
+[data-css-40]:focus,
+.css-40[data-simulate-focus],
+[data-css-40][data-simulate-focus] {
   background-color: #fcf2e6;
   outline: 0;
 }
 
-.css-45:hover,
-[data-css-45]:hover,
-.css-45[data-simulate-hover],
-[data-css-45][data-simulate-hover] {
+.css-40:hover,
+[data-css-40]:hover,
+.css-40[data-simulate-hover],
+[data-css-40][data-simulate-hover] {
   background-color: #fcf2e6;
 }
 
-.css-45:active,
-[data-css-45]:active,
-.css-45[data-simulate-active],
-[data-css-45][data-simulate-active] {
+.css-40:active,
+[data-css-40]:active,
+.css-40[data-simulate-active],
+[data-css-40][data-simulate-active] {
   background-color: #fad8af;
 }
 
-.css-45 [role="img"],
-[data-css-45] [role="img"] {
+.css-40 [role="img"],
+[data-css-40] [role="img"] {
   box-sizing: content-box;
   color: #ad5f00;
   display: block;
@@ -5373,51 +5340,84 @@ exports[`MenuItem demo examples states 1`] = `
   -webkit-flex: 0 0 auto;
 }
 
-.css-45 [role="img"]:first-child,
-[data-css-45] [role="img"]:first-child {
+.css-40 [role="img"]:first-child,
+[data-css-40] [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-45 [role="img"]:last-child,
-[data-css-45] [role="img"]:last-child {
+.css-40 [role="img"]:last-child,
+[data-css-40] [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.css-51,
+[data-css-51] {
+  color: #afbacc;
+  cursor: default;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.css-51:focus,
+[data-css-51]:focus,
+.css-51[data-simulate-focus],
+[data-css-51][data-simulate-focus] {
+  outline: 0;
+}
+
+.css-51 [role="img"],
+[data-css-51] [role="img"] {
+  box-sizing: content-box;
+  display: block;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.css-51 [role="img"]:first-child,
+[data-css-51] [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.css-51 [role="img"]:last-child,
+[data-css-51] [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
 <glamorous(div)>
   <div
-    className="css-20"
+    className="css-0"
   >
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem>
             <MenuItem
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Regular
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5435,12 +5435,12 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -5458,7 +5458,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5473,18 +5473,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Danger
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5502,12 +5502,12 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -5525,7 +5525,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5540,18 +5540,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Success
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5569,12 +5569,12 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -5592,7 +5592,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5607,18 +5607,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Warning
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5634,7 +5634,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             data-simulate-hover=""
@@ -5644,28 +5644,28 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5685,13 +5685,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -5709,7 +5709,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5724,18 +5724,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5755,13 +5755,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -5779,7 +5779,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5794,18 +5794,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5825,13 +5825,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -5849,7 +5849,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5864,18 +5864,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5891,7 +5891,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             data-simulate-focus=""
@@ -5901,28 +5901,28 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -5942,13 +5942,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -5966,7 +5966,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -5981,18 +5981,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6012,13 +6012,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -6036,7 +6036,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6051,18 +6051,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6082,13 +6082,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -6106,7 +6106,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6121,18 +6121,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6148,7 +6148,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             data-simulate-focus=""
@@ -6160,29 +6160,29 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 data-simulate-focus=""
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6204,14 +6204,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 data-simulate-focus=""
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -6229,7 +6229,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6244,18 +6244,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6277,14 +6277,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 data-simulate-focus=""
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -6302,7 +6302,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6317,18 +6317,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6350,14 +6350,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 data-simulate-focus=""
                 data-simulate-hover=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -6375,7 +6375,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6390,18 +6390,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Hover
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6417,7 +6417,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             data-simulate-active=""
@@ -6429,29 +6429,29 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 data-simulate-active=""
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6473,14 +6473,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 data-simulate-active=""
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -6498,7 +6498,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6513,18 +6513,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6546,14 +6546,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 data-simulate-active=""
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -6571,7 +6571,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6586,18 +6586,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6619,14 +6619,14 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 data-simulate-active=""
                 data-simulate-focus=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -6644,7 +6644,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6659,18 +6659,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Focus & Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6686,7 +6686,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             data-simulate-active=""
@@ -6696,28 +6696,28 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-0"
+                className="css-2"
                 data-simulate-active=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6737,13 +6737,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="danger"
             >
               <div
-                className="css-22"
+                className="css-17"
                 data-simulate-active=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconDanger
                       size="1.5em"
@@ -6761,7 +6761,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6776,18 +6776,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6807,13 +6807,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-34"
+                className="css-29"
                 data-simulate-active=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -6831,7 +6831,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6846,18 +6846,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6877,13 +6877,13 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-45"
+                className="css-40"
                 data-simulate-active=""
                 tabIndex={0}
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -6901,7 +6901,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -6916,18 +6916,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Active
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -6943,7 +6943,7 @@ exports[`MenuItem demo examples states 1`] = `
     <Menu>
       <Menu>
         <div
-          className="css-21"
+          className="css-1"
         >
           <MenuItem
             disabled={true}
@@ -6953,96 +6953,27 @@ exports[`MenuItem demo examples states 1`] = `
               tabIndex="-1"
             >
               <div
-                className="css-15"
+                className="css-51"
                 tabIndex="-1"
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Disabled
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
-                          />
-                        </glamorous(span)>
-                      </span>
-                    </glamorous(span)>
-                  </span>
-                </glamorous(span)>
-              </div>
-            </MenuItem>
-          </MenuItem>
-          <MenuItem
-            disabled={true}
-            variant="danger"
-          >
-            <MenuItem
-              disabled={true}
-              tabIndex="-1"
-              variant="danger"
-            >
-              <div
-                className="css-15"
-                tabIndex="-1"
-              >
-                <glamorous(span)>
-                  <span
-                    className="css-11"
-                  >
-                    <IconDanger
-                      size="1.5em"
-                    >
-                      <Icon
-                        rtl={false}
-                        size="1.5em"
-                      >
-                        <glamorous(svg)
-                          aria-hidden={true}
-                          role="img"
-                          rtl={false}
-                          size="1.5em"
-                          viewBox="0 0 24 24"
-                        >
-                          <svg
-                            aria-hidden={true}
-                            className="css-33"
-                            role="img"
-                            viewBox="0 0 24 24"
-                          >
-                            <g>
-                              <path
-                                d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
-                              />
-                            </g>
-                          </svg>
-                        </glamorous(svg)>
-                      </Icon>
-                    </IconDanger>
-                    <glamorous(span)>
-                      <span
-                        className="css-12"
-                      >
-                        <glamorous(span)>
-                          <span
-                            className="css-13"
-                          >
-                            Disabled
-                          </span>
-                        </glamorous(span)>
-                        <glamorous(span)>
-                          <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -7054,6 +6985,75 @@ exports[`MenuItem demo examples states 1`] = `
           </MenuItem>
           <MenuItem
             disabled={true}
+            variant="danger"
+          >
+            <MenuItem
+              disabled={true}
+              tabIndex="-1"
+              variant="danger"
+            >
+              <div
+                className="css-51"
+                tabIndex="-1"
+              >
+                <glamorous(span)>
+                  <span
+                    className="css-13"
+                  >
+                    <IconDanger
+                      size="1.5em"
+                    >
+                      <Icon
+                        rtl={false}
+                        size="1.5em"
+                      >
+                        <glamorous(svg)
+                          aria-hidden={true}
+                          role="img"
+                          rtl={false}
+                          size="1.5em"
+                          viewBox="0 0 24 24"
+                        >
+                          <svg
+                            aria-hidden={true}
+                            className="css-28"
+                            role="img"
+                            viewBox="0 0 24 24"
+                          >
+                            <g>
+                              <path
+                                d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                              />
+                            </g>
+                          </svg>
+                        </glamorous(svg)>
+                      </Icon>
+                    </IconDanger>
+                    <glamorous(span)>
+                      <span
+                        className="css-14"
+                      >
+                        <glamorous(span)>
+                          <span
+                            className="css-15"
+                          >
+                            Disabled
+                          </span>
+                        </glamorous(span)>
+                        <glamorous(span)>
+                          <span
+                            className="css-16"
+                          />
+                        </glamorous(span)>
+                      </span>
+                    </glamorous(span)>
+                  </span>
+                </glamorous(span)>
+              </div>
+            </MenuItem>
+          </MenuItem>
+          <MenuItem
+            disabled={true}
             variant="success"
           >
             <MenuItem
@@ -7062,12 +7062,12 @@ exports[`MenuItem demo examples states 1`] = `
               variant="success"
             >
               <div
-                className="css-15"
+                className="css-51"
                 tabIndex="-1"
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -7085,7 +7085,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -7100,18 +7100,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Disabled
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -7131,12 +7131,12 @@ exports[`MenuItem demo examples states 1`] = `
               variant="warning"
             >
               <div
-                className="css-15"
+                className="css-51"
                 tabIndex="-1"
               >
                 <glamorous(span)>
                   <span
-                    className="css-11"
+                    className="css-13"
                   >
                     <IconWarning
                       size="1.5em"
@@ -7154,7 +7154,7 @@ exports[`MenuItem demo examples states 1`] = `
                         >
                           <svg
                             aria-hidden={true}
-                            className="css-33"
+                            className="css-28"
                             role="img"
                             viewBox="0 0 24 24"
                           >
@@ -7169,18 +7169,18 @@ exports[`MenuItem demo examples states 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-12"
+                        className="css-14"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-13"
+                            className="css-15"
                           >
                             Disabled
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-14"
+                            className="css-16"
                           />
                         </glamorous(span)>
                       </span>
@@ -7200,6 +7200,40 @@ exports[`MenuItem demo examples states 1`] = `
 exports[`MenuItem demo examples variants 1`] = `
 .css-0,
 [data-css-0] {
+  overflow: hidden;
+}
+
+.css-0 > div,
+[data-css-0] > div {
+  background-color: #fff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -7210,8 +7244,8 @@ exports[`MenuItem demo examples variants 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-1,
-[data-css-1] {
+.css-3,
+[data-css-3] {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -7230,53 +7264,19 @@ exports[`MenuItem demo examples variants 1`] = `
   -webkit-justify-content: space-between;
 }
 
-.css-2,
-[data-css-2] {
+.css-4,
+[data-css-4] {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-3,
-[data-css-3] {
+.css-5,
+[data-css-5] {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
-}
-
-.css-4,
-[data-css-4] {
-  overflow: hidden;
-}
-
-.css-4 > div,
-[data-css-4] > div {
-  background-color: #fff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.css-5,
-[data-css-5] {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
-  box-sizing: inherit;
 }
 
 .css-6,
@@ -7436,12 +7436,12 @@ exports[`MenuItem demo examples variants 1`] = `
 
 <glamorous(div)>
   <div
-    className="css-4"
+    className="css-0"
   >
     <Menu>
       <Menu>
         <div
-          className="css-5"
+          className="css-1"
         >
           <MenuItem
             variant="danger"
@@ -7456,7 +7456,7 @@ exports[`MenuItem demo examples variants 1`] = `
               >
                 <glamorous(span)>
                   <span
-                    className="css-0"
+                    className="css-2"
                   >
                     <IconDanger
                       size="1.5em"
@@ -7489,18 +7489,18 @@ exports[`MenuItem demo examples variants 1`] = `
                     </IconDanger>
                     <glamorous(span)>
                       <span
-                        className="css-1"
+                        className="css-3"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-2"
+                            className="css-4"
                           >
                             Danger
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-3"
+                            className="css-5"
                           />
                         </glamorous(span)>
                       </span>
@@ -7523,7 +7523,7 @@ exports[`MenuItem demo examples variants 1`] = `
               >
                 <glamorous(span)>
                   <span
-                    className="css-0"
+                    className="css-2"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -7556,18 +7556,18 @@ exports[`MenuItem demo examples variants 1`] = `
                     </IconSuccess>
                     <glamorous(span)>
                       <span
-                        className="css-1"
+                        className="css-3"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-2"
+                            className="css-4"
                           >
                             Success
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-3"
+                            className="css-5"
                           />
                         </glamorous(span)>
                       </span>
@@ -7590,7 +7590,7 @@ exports[`MenuItem demo examples variants 1`] = `
               >
                 <glamorous(span)>
                   <span
-                    className="css-0"
+                    className="css-2"
                   >
                     <IconWarning
                       size="1.5em"
@@ -7623,18 +7623,18 @@ exports[`MenuItem demo examples variants 1`] = `
                     </IconWarning>
                     <glamorous(span)>
                       <span
-                        className="css-1"
+                        className="css-3"
                       >
                         <glamorous(span)>
                           <span
-                            className="css-2"
+                            className="css-4"
                           >
                             Warning
                           </span>
                         </glamorous(span)>
                         <glamorous(span)>
                           <span
-                            className="css-3"
+                            className="css-5"
                           />
                         </glamorous(span)>
                       </span>

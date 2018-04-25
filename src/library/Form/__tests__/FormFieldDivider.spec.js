@@ -14,6 +14,8 @@ function shallowFormFieldDivider(props = {}) {
 }
 
 describe('FormFieldDivider', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const formFieldDivider = shallowFormFieldDivider();
@@ -21,6 +23,4 @@ describe('FormFieldDivider', () => {
       expect(formFieldDivider.exists()).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

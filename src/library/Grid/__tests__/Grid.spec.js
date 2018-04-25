@@ -14,11 +14,11 @@ function shallowGrid(gridProps, gridItemProps) {
 }
 
 describe('Grid', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const grid = shallowGrid({}, {});
 
     expect(grid.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

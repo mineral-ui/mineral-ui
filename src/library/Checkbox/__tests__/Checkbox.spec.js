@@ -10,11 +10,11 @@ function shallowCheckbox() {
 }
 
 describe('Checkbox', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const checkbox = shallowCheckbox();
 
     expect(checkbox.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

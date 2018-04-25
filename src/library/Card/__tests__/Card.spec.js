@@ -10,6 +10,8 @@ function shallowCard(props, children) {
 }
 
 describe('Card', () => {
+  testDemoExamples(examples);
+
   let card;
   it('renders', () => {
     card = shallowCard({}, 'Children');
@@ -43,6 +45,4 @@ describe('Card', () => {
       expect(card.props().onClick).toHaveBeenCalled();
     });
   });
-
-  testDemoExamples(examples);
 });

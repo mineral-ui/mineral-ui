@@ -30,6 +30,8 @@ const mountButton = (props = {}) => {
 };
 
 describe('Button', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const button = shallowButton();
 
@@ -94,6 +96,4 @@ describe('Button', () => {
       });
     });
   });
-
-  testDemoExamples(examples);
 });

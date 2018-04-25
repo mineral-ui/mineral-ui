@@ -10,6 +10,8 @@ function shallowLink(props) {
 }
 
 describe('Link', () => {
+  testDemoExamples(examples, { exclude: ['react-router'] });
+
   it('renders', () => {
     const link = shallowLink({
       href: 'http://example.com',
@@ -18,6 +20,4 @@ describe('Link', () => {
 
     expect(link.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples, { exclude: ['react-router'] });
 });
