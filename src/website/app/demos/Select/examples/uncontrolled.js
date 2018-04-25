@@ -10,6 +10,6 @@ The value is handled by the DOM. The main differences are that you must use
 \`defaultSelectedItem\` to set the initially selected item.`,
   scope: { data, Select },
   source: `
-    <Select data={data} name="state" defaultSelectedItem={data[5]} />
+    <Select onKeyDown={() => console.log('YO')}data={data} name="state" defaultSelectedItem={data[5]} />
   `
 };

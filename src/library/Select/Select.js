@@ -294,8 +294,11 @@ export default class Select extends Component<Props, State> {
 
     const refKey = renderTrigger ? 'ref' : 'triggerRef';
 
-    return {
-      ...props,
+    /* console.log('Select.getTriggerProps props', props); */
+
+    /* console.log('Select.getTriggerProps props.onKeyDown', props.onKeyDown); */
+
+    const triggerProps = {
       'aria-haspopup': 'listbox',
       'aria-invalid': invalid,
       'aria-readonly': readOnly,
@@ -304,7 +307,6 @@ export default class Select extends Component<Props, State> {
       isOpen,
       item: selectedItem,
       name,
-      onKeyDown: !readOnly ? this.onTriggerKeyDown : undefined,
       placeholder,
       readOnly,
       size,
@@ -312,18 +314,38 @@ export default class Select extends Component<Props, State> {
       [refKey]: this.setTriggerRef,
       variant
     };
+
+    const mergedProps = renderTrigger
+      ? {
+          ...props,
+          ...triggerProps
+        }
+      : {
+          ...triggerProps,
+          ...props
+        };
+
+    const ret = {
+      ...mergedProps,
+      onKeyDown: !readOnly ? this.onTriggerKeyDown : undefined
+    };
+
+    /* console.log('Select.getTriggerProps', ret); */
+    return ret;
   };
 
   renderTrigger = ({ triggerProps }: Object = {}) => {
     const { renderTrigger } = this.props;
 
     if (renderTrigger) {
+      /* console.log('Select.renderTrigger - CUSTOM'); */
       return renderTrigger({
         ...this.getStateAndHelpers(),
         triggerProps: this.getTriggerProps(triggerProps)
       });
     }
 
+    /* console.log('Select.renderTrigger - DEFAULT'); */
     return <SelectTrigger {...this.getTriggerProps(triggerProps)} />;
   };
 
@@ -417,6 +439,7 @@ export default class Select extends Component<Props, State> {
 
     const { key } = event;
     const isOpen = this.getControllableValue('isOpen');
+    /* console.log('Select.onTriggerKeyDown', key); */
 
     if (key === 'ArrowUp') {
       event.preventDefault();

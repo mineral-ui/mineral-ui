@@ -265,11 +265,21 @@ export default class Popover extends Component<Props, State> {
     const contentId = this.getContentId();
     const { children, disabled } = this.props;
 
+    /* console.log('Popover.getTriggerProps props', props); */
+
     const child = children ? Children.only(children) : undefined;
     const childDisabled = child && child.props.disabled !== undefined;
 
-    return {
-      ...props,
+    /* console.log(
+     *   'Popover.getTriggerProps child.props.onBlur',
+     *   child && child.props.onBlur
+     * );
+     * console.log(
+     *   'Popover.getTriggerProps child.props.onClick',
+     *   child && child.props.onClick
+     * );
+     */
+    const triggerProps = {
       'aria-describedby': contentId,
       'aria-disabled': disabled,
       'aria-expanded': isOpen,
@@ -277,28 +287,49 @@ export default class Popover extends Component<Props, State> {
       children: child,
       disabled: child && childDisabled ? childDisabled : disabled,
       ref: this.setTriggerRef,
-      role: 'button',
+      role: 'button'
+    };
+
+    const mergedProps = this.props.renderTrigger
+      ? {
+          ...props,
+          ...triggerProps
+        }
+      : {
+          ...triggerProps,
+          ...props
+        };
+
+    const ret = {
+      ...mergedProps,
       onBlur: composeEventHandlers(child && child.props.onBlur, this.onBlur),
       onClick: !disabled
         ? composeEventHandlers(child && child.props.onClick, this.toggleOpen)
         : undefined
     };
+    /* console.log('Popover.getTriggerProps', ret); */
+    return ret;
   };
 
   renderTrigger = (props: Object = {}) => {
     const { children, renderTrigger } = this.props;
 
     if (renderTrigger) {
+      /* console.log('Popover.renderTrigger - CUSTOM'); */
       return renderTrigger({
         ...this.getStateAndHelpers(),
         triggerProps: this.getTriggerProps(props)
       });
     }
 
+    /* console.log('Popover.renderTrigger - DEFAULT'); */
     const child = Children.only(children);
     return (
       <PopoverTrigger
-        {...this.getTriggerProps({ ...child.props, children: child })}
+        {...this.getTriggerProps({
+          ...child.props,
+          children: child
+        })}
       />
     );
   };
