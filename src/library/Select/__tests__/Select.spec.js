@@ -74,6 +74,10 @@ const assertItemAtIndexIsHighlighted = (themeProvider, index) => {
 };
 
 describe('Select', () => {
+  testDemoExamples(examples, {
+    exclude: ['states']
+  });
+
   describe('renders', () => {
     it('root', () => {
       const select = shallowSelect();
@@ -377,9 +381,5 @@ describe('Select', () => {
         });
       });
     });
-  });
-
-  testDemoExamples(examples, {
-    exclude: ['states']
   });
 });

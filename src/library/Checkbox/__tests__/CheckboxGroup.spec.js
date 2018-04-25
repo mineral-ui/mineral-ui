@@ -10,11 +10,11 @@ function shallowCheckboxGroup() {
 }
 
 describe('CheckboxGroup', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const checkboxGroup = shallowCheckboxGroup();
 
     expect(checkboxGroup.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

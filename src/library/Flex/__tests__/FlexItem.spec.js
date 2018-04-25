@@ -10,11 +10,11 @@ function shallowFlexItem(props) {
 }
 
 describe('FlexItem', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const flexItem = shallowFlexItem({});
 
     expect(flexItem.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

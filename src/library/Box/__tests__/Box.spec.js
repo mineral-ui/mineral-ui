@@ -10,11 +10,11 @@ function shallowBox(props) {
 }
 
 describe('Box', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const box = shallowBox({});
 
     expect(box.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

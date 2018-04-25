@@ -14,6 +14,8 @@ function shallowMenuDivider(props = {}) {
 }
 
 describe('MenuDivider', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const menuDivider = shallowMenuDivider();
@@ -21,6 +23,4 @@ describe('MenuDivider', () => {
       expect(menuDivider.exists()).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

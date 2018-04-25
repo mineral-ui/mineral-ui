@@ -22,6 +22,8 @@ function mountThemedSample(theme) {
 }
 
 describe('ThemeProvider', () => {
+  testDemoExamples(examples);
+
   it('renders correctly with default theme', () => {
     const themedSample = mountThemedSample();
 
@@ -51,6 +53,4 @@ describe('ThemeProvider', () => {
 
     expect(themedSample).toMatchSnapshot();
   });
-
-  testDemoExamples(examples);
 });

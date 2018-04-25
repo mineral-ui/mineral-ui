@@ -14,11 +14,11 @@ function shallowFlex([flexProps, flexItemProps]) {
 }
 
 describe('Flex', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const flex = shallowFlex([{}, {}]);
 
     expect(flex.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

@@ -16,6 +16,8 @@ function shallowFormField(props = {}) {
 }
 
 describe('FormField', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const formField = shallowFormField();
@@ -23,6 +25,4 @@ describe('FormField', () => {
       expect(formField.exists()).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

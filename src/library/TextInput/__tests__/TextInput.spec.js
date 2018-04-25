@@ -10,13 +10,13 @@ function shallowTextInput() {
 }
 
 describe('TextInput', () => {
+  testDemoExamples(examples, {
+    exclude: ['states']
+  });
+
   it('renders', () => {
     const textInput = shallowTextInput();
 
     expect(textInput.exists()).toEqual(true);
-  });
-
-  testDemoExamples(examples, {
-    exclude: ['states']
   });
 });

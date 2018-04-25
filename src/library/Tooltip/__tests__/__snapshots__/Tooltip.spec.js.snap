@@ -152,7 +152,7 @@ exports[`Tooltip demo examples basic 1`] = `
     getContentProps={[Function]}
     getTriggerProps={[Function]}
     hasArrow={true}
-    id="tooltip-18"
+    id="tooltip-1"
     isOpen={false}
     onClose={[Function]}
     onOpen={[Function]}
@@ -163,7 +163,7 @@ exports[`Tooltip demo examples basic 1`] = `
       getContentProps={[Function]}
       getTriggerProps={[Function]}
       hasArrow={true}
-      id="tooltip-18"
+      id="tooltip-1"
       isOpen={false}
       onClose={[Function]}
       onOpen={[Function]}
@@ -176,7 +176,7 @@ exports[`Tooltip demo examples basic 1`] = `
             getContentProps={[Function]}
             getTriggerProps={[Function]}
             hasArrow={true}
-            id="tooltip-18"
+            id="tooltip-1"
             isOpen={false}
             onClose={[Function]}
             onOpen={[Function]}
@@ -189,7 +189,7 @@ exports[`Tooltip demo examples basic 1`] = `
               getContentProps={[Function]}
               getTriggerProps={[Function]}
               hasArrow={true}
-              id="tooltip-18"
+              id="tooltip-1"
               isOpen={false}
               onClose={[Function]}
               onOpen={[Function]}
@@ -199,16 +199,16 @@ exports[`Tooltip demo examples basic 1`] = `
             >
               <Manager
                 className="css-0"
-                id="tooltip-18"
+                id="tooltip-1"
                 tag="span"
               >
                 <span
                   className="css-0"
-                  id="tooltip-18"
+                  id="tooltip-1"
                 >
                   <PopoverTrigger
-                    aria-describedby="tooltip-18-content"
-                    aria-owns="tooltip-18-content"
+                    aria-describedby="tooltip-1-content"
+                    aria-owns="tooltip-1-content"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -228,8 +228,8 @@ exports[`Tooltip demo examples basic 1`] = `
                           className="css-1"
                         >
                           <Button
-                            aria-describedby="tooltip-18-content"
-                            aria-owns="tooltip-18-content"
+                            aria-describedby="tooltip-1-content"
+                            aria-owns="tooltip-1-content"
                             element="button"
                             iconStart={
                               <IconPerson
@@ -248,8 +248,8 @@ exports[`Tooltip demo examples basic 1`] = `
                             variant="regular"
                           >
                             <glamorous(button)
-                              aria-describedby="tooltip-18-content"
-                              aria-owns="tooltip-18-content"
+                              aria-describedby="tooltip-1-content"
+                              aria-owns="tooltip-1-content"
                               element="button"
                               onBlur={[Function]}
                               onClick={[Function]}
@@ -263,8 +263,8 @@ exports[`Tooltip demo examples basic 1`] = `
                               variant="regular"
                             >
                               <button
-                                aria-describedby="tooltip-18-content"
-                                aria-owns="tooltip-18-content"
+                                aria-describedby="tooltip-1-content"
+                                aria-owns="tooltip-1-content"
                                 className="css-2"
                                 onBlur={[Function]}
                                 onClick={[Function]}
@@ -291,7 +291,7 @@ exports[`Tooltip demo examples basic 1`] = `
                                       >
                                         <glamorous(svg)
                                           aria-hidden={null}
-                                          aria-labelledby="icon-title-icon-19"
+                                          aria-labelledby="icon-title-icon-2"
                                           role="img"
                                           rtl={false}
                                           size="1.5em"
@@ -299,13 +299,13 @@ exports[`Tooltip demo examples basic 1`] = `
                                         >
                                           <svg
                                             aria-hidden={null}
-                                            aria-labelledby="icon-title-icon-19"
+                                            aria-labelledby="icon-title-icon-2"
                                             className="css-17"
                                             role="img"
                                             viewBox="0 0 24 24"
                                           >
                                             <title
-                                              id="icon-title-icon-19"
+                                              id="icon-title-icon-2"
                                             >
                                               account settings
                                             </title>
@@ -367,6 +367,23 @@ exports[`Tooltip demo examples controlled 1`] = `
 
 .css-2,
 [data-css-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-3,
+[data-css-3] {
   box-sizing: border-box;
   color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -384,38 +401,38 @@ exports[`Tooltip demo examples controlled 1`] = `
   z-index: 100;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.css-3 *,
+[data-css-3] *,
+.css-3 *::before,
+[data-css-3] *::before,
+.css-3 *::after,
+[data-css-3] *::after {
   box-sizing: inherit;
 }
 
-.css-3,
-[data-css-3] {
+.css-4,
+[data-css-4] {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-3:last-child,
-[data-css-3]:last-child,
-.css-3[data-simulate-lastchild],
-[data-css-3][data-simulate-lastchild] {
+.css-4:last-child,
+[data-css-4]:last-child,
+.css-4[data-simulate-lastchild],
+[data-css-4][data-simulate-lastchild] {
   margin-bottom: 0px;
-}
-
-.css-7,
-[data-css-7] {
-  font-size: 0.875em;
-  line-height: 1.5;
 }
 
 .css-8,
 [data-css-8] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.css-9,
+[data-css-9] {
   color: #434a54;
   display: none;
   font-size: 8px;
@@ -424,23 +441,6 @@ exports[`Tooltip demo examples controlled 1`] = `
   text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
   transform: rotate(0deg) scaleX(2);
   -webkit-transform: rotate(0deg) scaleX(2);
-}
-
-.css-9,
-[data-css-9] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
 .css-10,
@@ -591,7 +591,7 @@ exports[`Tooltip demo examples controlled 1`] = `
           getContentProps={[Function]}
           getTriggerProps={[Function]}
           hasArrow={true}
-          id="tooltip-28"
+          id="tooltip-11"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
@@ -603,7 +603,7 @@ exports[`Tooltip demo examples controlled 1`] = `
             getContentProps={[Function]}
             getTriggerProps={[Function]}
             hasArrow={true}
-            id="tooltip-28"
+            id="tooltip-11"
             isOpen={true}
             onClose={[Function]}
             onOpen={[Function]}
@@ -617,7 +617,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-28"
+                  id="tooltip-11"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -630,7 +630,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                     getContentProps={[Function]}
                     getTriggerProps={[Function]}
                     hasArrow={true}
-                    id="tooltip-28"
+                    id="tooltip-11"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
@@ -640,16 +640,16 @@ exports[`Tooltip demo examples controlled 1`] = `
                   >
                     <Manager
                       className="css-0"
-                      id="tooltip-28"
+                      id="tooltip-11"
                       tag="span"
                     >
                       <span
                         className="css-0"
-                        id="tooltip-28"
+                        id="tooltip-11"
                       >
                         <PopoverTrigger
-                          aria-describedby="tooltip-28-content"
-                          aria-owns="tooltip-28-content"
+                          aria-describedby="tooltip-11-content"
+                          aria-owns="tooltip-11-content"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -669,8 +669,8 @@ exports[`Tooltip demo examples controlled 1`] = `
                                 className="css-1"
                               >
                                 <Button
-                                  aria-describedby="tooltip-28-content"
-                                  aria-owns="tooltip-28-content"
+                                  aria-describedby="tooltip-11-content"
+                                  aria-owns="tooltip-11-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -684,8 +684,8 @@ exports[`Tooltip demo examples controlled 1`] = `
                                   variant="regular"
                                 >
                                   <glamorous(button)
-                                    aria-describedby="tooltip-28-content"
-                                    aria-owns="tooltip-28-content"
+                                    aria-describedby="tooltip-11-content"
+                                    aria-owns="tooltip-11-content"
                                     element="button"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -700,8 +700,8 @@ exports[`Tooltip demo examples controlled 1`] = `
                                     variant="regular"
                                   >
                                     <button
-                                      aria-describedby="tooltip-28-content"
-                                      aria-owns="tooltip-28-content"
+                                      aria-describedby="tooltip-11-content"
+                                      aria-owns="tooltip-11-content"
                                       className="css-10"
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -714,7 +714,7 @@ exports[`Tooltip demo examples controlled 1`] = `
                                     >
                                       <glamorous(span)>
                                         <span
-                                          className="css-9"
+                                          className="css-2"
                                         >
                                           <glamorous(span)
                                             size="large"
@@ -737,30 +737,30 @@ exports[`Tooltip demo examples controlled 1`] = `
                         <PopoverContent
                           aria-live="polite"
                           hasArrow={true}
-                          id="tooltip-28-content"
+                          id="tooltip-11-content"
                           onBlur={[Function]}
                           placement="top"
                           role="tooltip"
                         >
                           <PopoverContent
                             aria-live="polite"
-                            id="tooltip-28-content"
+                            id="tooltip-11-content"
                             onBlur={[Function]}
                             placement="top"
                             role="tooltip"
                           >
                             <ThemedComponent
                               aria-live="polite"
-                              className="css-2"
-                              id="tooltip-28-content"
+                              className="css-3"
+                              id="tooltip-11-content"
                               onBlur={[Function]}
                               placement="top"
                               role="tooltip"
                             >
                               <RtlPopper
                                 aria-live="polite"
-                                className="css-2"
-                                id="tooltip-28-content"
+                                className="css-3"
+                                id="tooltip-11-content"
                                 onBlur={[Function]}
                                 placement="top"
                                 role="tooltip"
@@ -969,10 +969,10 @@ exports[`Tooltip demo examples controlled 1`] = `
                               >
                                 <Popper
                                   aria-live="polite"
-                                  className="css-2"
+                                  className="css-3"
                                   component="div"
                                   eventsEnabled={true}
-                                  id="tooltip-28-content"
+                                  id="tooltip-11-content"
                                   modifiers={Object {}}
                                   onBlur={[Function]}
                                   placement="top"
@@ -980,8 +980,8 @@ exports[`Tooltip demo examples controlled 1`] = `
                                 >
                                   <div
                                     aria-live="polite"
-                                    className="css-2"
-                                    id="tooltip-28-content"
+                                    className="css-3"
+                                    id="tooltip-11-content"
                                     onBlur={[Function]}
                                     role="tooltip"
                                     style={
@@ -999,11 +999,11 @@ exports[`Tooltip demo examples controlled 1`] = `
                                             <CardBlock>
                                               <CardBlock>
                                                 <div
-                                                  className="css-3"
+                                                  className="css-4"
                                                 >
                                                   <glamorous(div)>
                                                     <div
-                                                      className="css-7"
+                                                      className="css-8"
                                                     >
                                                       This tooltip is controlled
                                                     </div>
@@ -1024,11 +1024,11 @@ exports[`Tooltip demo examples controlled 1`] = `
                                       >
                                         <Arrow
                                           aria-hidden={true}
-                                          className="css-8"
+                                          className="css-9"
                                         >
                                           <span
                                             aria-hidden={true}
-                                            className="css-8"
+                                            className="css-9"
                                             style={Object {}}
                                           >
                                             ▼
@@ -1091,7 +1091,7 @@ exports[`Tooltip demo examples controlled 1`] = `
           >
             <glamorous(span)>
               <span
-                className="css-9"
+                className="css-2"
               >
                 <glamorous(span)
                   size="large"
@@ -1270,7 +1270,7 @@ exports[`Tooltip demo examples disabled 1`] = `
               >
                 <glamorous(svg)
                   aria-hidden={null}
-                  aria-labelledby="icon-title-icon-27"
+                  aria-labelledby="icon-title-icon-10"
                   role="img"
                   rtl={false}
                   size="1.5em"
@@ -1278,13 +1278,13 @@ exports[`Tooltip demo examples disabled 1`] = `
                 >
                   <svg
                     aria-hidden={null}
-                    aria-labelledby="icon-title-icon-27"
+                    aria-labelledby="icon-title-icon-10"
                     className="css-15"
                     role="img"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="icon-title-icon-27"
+                      id="icon-title-icon-10"
                     >
                       account settings
                     </title>
@@ -1334,6 +1334,23 @@ exports[`Tooltip demo examples overflow 1`] = `
 
 .css-2,
 [data-css-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-3,
+[data-css-3] {
   box-sizing: border-box;
   color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1351,38 +1368,38 @@ exports[`Tooltip demo examples overflow 1`] = `
   z-index: 100;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.css-3 *,
+[data-css-3] *,
+.css-3 *::before,
+[data-css-3] *::before,
+.css-3 *::after,
+[data-css-3] *::after {
   box-sizing: inherit;
 }
 
-.css-3,
-[data-css-3] {
+.css-4,
+[data-css-4] {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-3:last-child,
-[data-css-3]:last-child,
-.css-3[data-simulate-lastchild],
-[data-css-3][data-simulate-lastchild] {
+.css-4:last-child,
+[data-css-4]:last-child,
+.css-4[data-simulate-lastchild],
+[data-css-4][data-simulate-lastchild] {
   margin-bottom: 0px;
-}
-
-.css-7,
-[data-css-7] {
-  font-size: 0.875em;
-  line-height: 1.5;
 }
 
 .css-8,
 [data-css-8] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.css-9,
+[data-css-9] {
   color: #434a54;
   display: none;
   font-size: 8px;
@@ -1391,23 +1408,6 @@ exports[`Tooltip demo examples overflow 1`] = `
   text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
   transform: rotate(0deg) scaleX(2);
   -webkit-transform: rotate(0deg) scaleX(2);
-}
-
-.css-9,
-[data-css-9] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
 .css-10,
@@ -1549,7 +1549,7 @@ exports[`Tooltip demo examples overflow 1`] = `
         getContentProps={[Function]}
         getTriggerProps={[Function]}
         hasArrow={true}
-        id="tooltip-23"
+        id="tooltip-6"
         isOpen={true}
         onClose={[Function]}
         onOpen={[Function]}
@@ -1561,7 +1561,7 @@ exports[`Tooltip demo examples overflow 1`] = `
           getContentProps={[Function]}
           getTriggerProps={[Function]}
           hasArrow={true}
-          id="tooltip-23"
+          id="tooltip-6"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
@@ -1575,7 +1575,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                 getContentProps={[Function]}
                 getTriggerProps={[Function]}
                 hasArrow={true}
-                id="tooltip-23"
+                id="tooltip-6"
                 isOpen={true}
                 onClose={[Function]}
                 onOpen={[Function]}
@@ -1588,7 +1588,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-23"
+                  id="tooltip-6"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -1598,16 +1598,16 @@ exports[`Tooltip demo examples overflow 1`] = `
                 >
                   <Manager
                     className="css-0"
-                    id="tooltip-23"
+                    id="tooltip-6"
                     tag="span"
                   >
                     <span
                       className="css-0"
-                      id="tooltip-23"
+                      id="tooltip-6"
                     >
                       <PopoverTrigger
-                        aria-describedby="tooltip-23-content"
-                        aria-owns="tooltip-23-content"
+                        aria-describedby="tooltip-6-content"
+                        aria-owns="tooltip-6-content"
                         onBlur={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
@@ -1627,8 +1627,8 @@ exports[`Tooltip demo examples overflow 1`] = `
                               className="css-1"
                             >
                               <Button
-                                aria-describedby="tooltip-23-content"
-                                aria-owns="tooltip-23-content"
+                                aria-describedby="tooltip-6-content"
+                                aria-owns="tooltip-6-content"
                                 element="button"
                                 onBlur={[Function]}
                                 onClick={[Function]}
@@ -1642,8 +1642,8 @@ exports[`Tooltip demo examples overflow 1`] = `
                                 variant="regular"
                               >
                                 <glamorous(button)
-                                  aria-describedby="tooltip-23-content"
-                                  aria-owns="tooltip-23-content"
+                                  aria-describedby="tooltip-6-content"
+                                  aria-owns="tooltip-6-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -1658,8 +1658,8 @@ exports[`Tooltip demo examples overflow 1`] = `
                                   variant="regular"
                                 >
                                   <button
-                                    aria-describedby="tooltip-23-content"
-                                    aria-owns="tooltip-23-content"
+                                    aria-describedby="tooltip-6-content"
+                                    aria-owns="tooltip-6-content"
                                     className="css-11"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -1672,7 +1672,7 @@ exports[`Tooltip demo examples overflow 1`] = `
                                   >
                                     <glamorous(span)>
                                       <span
-                                        className="css-9"
+                                        className="css-2"
                                       >
                                         <glamorous(span)
                                           size="large"
@@ -1695,30 +1695,30 @@ exports[`Tooltip demo examples overflow 1`] = `
                       <PopoverContent
                         aria-live="polite"
                         hasArrow={true}
-                        id="tooltip-23-content"
+                        id="tooltip-6-content"
                         onBlur={[Function]}
                         placement="top"
                         role="tooltip"
                       >
                         <PopoverContent
                           aria-live="polite"
-                          id="tooltip-23-content"
+                          id="tooltip-6-content"
                           onBlur={[Function]}
                           placement="top"
                           role="tooltip"
                         >
                           <ThemedComponent
                             aria-live="polite"
-                            className="css-2"
-                            id="tooltip-23-content"
+                            className="css-3"
+                            id="tooltip-6-content"
                             onBlur={[Function]}
                             placement="top"
                             role="tooltip"
                           >
                             <RtlPopper
                               aria-live="polite"
-                              className="css-2"
-                              id="tooltip-23-content"
+                              className="css-3"
+                              id="tooltip-6-content"
                               onBlur={[Function]}
                               placement="top"
                               role="tooltip"
@@ -1927,10 +1927,10 @@ exports[`Tooltip demo examples overflow 1`] = `
                             >
                               <Popper
                                 aria-live="polite"
-                                className="css-2"
+                                className="css-3"
                                 component="div"
                                 eventsEnabled={true}
-                                id="tooltip-23-content"
+                                id="tooltip-6-content"
                                 modifiers={Object {}}
                                 onBlur={[Function]}
                                 placement="top"
@@ -1938,8 +1938,8 @@ exports[`Tooltip demo examples overflow 1`] = `
                               >
                                 <div
                                   aria-live="polite"
-                                  className="css-2"
-                                  id="tooltip-23-content"
+                                  className="css-3"
+                                  id="tooltip-6-content"
                                   onBlur={[Function]}
                                   role="tooltip"
                                   style={
@@ -1957,11 +1957,11 @@ exports[`Tooltip demo examples overflow 1`] = `
                                           <CardBlock>
                                             <CardBlock>
                                               <div
-                                                className="css-3"
+                                                className="css-4"
                                               >
                                                 <glamorous(div)>
                                                   <div
-                                                    className="css-7"
+                                                    className="css-8"
                                                   >
                                                     Light years star stuff
                                                   </div>
@@ -1982,11 +1982,11 @@ exports[`Tooltip demo examples overflow 1`] = `
                                     >
                                       <Arrow
                                         aria-hidden={true}
-                                        className="css-8"
+                                        className="css-9"
                                       >
                                         <span
                                           aria-hidden={true}
-                                          className="css-8"
+                                          className="css-9"
                                           style={Object {}}
                                         >
                                           ▼
@@ -2060,6 +2060,31 @@ exports[`Tooltip demo examples placement 1`] = `
 
 .css-2,
 [data-css-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-3,
+[data-css-3] {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.css-4,
+[data-css-4] {
   box-sizing: border-box;
   color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2077,38 +2102,38 @@ exports[`Tooltip demo examples placement 1`] = `
   z-index: 100;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.css-4 *,
+[data-css-4] *,
+.css-4 *::before,
+[data-css-4] *::before,
+.css-4 *::after,
+[data-css-4] *::after {
   box-sizing: inherit;
 }
 
-.css-3,
-[data-css-3] {
+.css-5,
+[data-css-5] {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-3:last-child,
-[data-css-3]:last-child,
-.css-3[data-simulate-lastchild],
-[data-css-3][data-simulate-lastchild] {
+.css-5:last-child,
+[data-css-5]:last-child,
+.css-5[data-simulate-lastchild],
+[data-css-5][data-simulate-lastchild] {
   margin-bottom: 0px;
 }
 
-.css-7,
-[data-css-7] {
+.css-9,
+[data-css-9] {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-8,
-[data-css-8] {
+.css-10,
+[data-css-10] {
   color: #434a54;
   display: none;
   font-size: 8px;
@@ -2117,31 +2142,6 @@ exports[`Tooltip demo examples placement 1`] = `
   text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
   transform: rotate(0deg) scaleX(2);
   -webkit-transform: rotate(0deg) scaleX(2);
-}
-
-.css-9,
-[data-css-9] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-10,
-[data-css-10] {
-  fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
 }
 
 .css-11,
@@ -2266,7 +2266,7 @@ exports[`Tooltip demo examples placement 1`] = `
         getContentProps={[Function]}
         getTriggerProps={[Function]}
         hasArrow={true}
-        id="tooltip-21"
+        id="tooltip-4"
         isOpen={true}
         onClose={[Function]}
         onOpen={[Function]}
@@ -2278,7 +2278,7 @@ exports[`Tooltip demo examples placement 1`] = `
           getContentProps={[Function]}
           getTriggerProps={[Function]}
           hasArrow={true}
-          id="tooltip-21"
+          id="tooltip-4"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
@@ -2292,7 +2292,7 @@ exports[`Tooltip demo examples placement 1`] = `
                 getContentProps={[Function]}
                 getTriggerProps={[Function]}
                 hasArrow={true}
-                id="tooltip-21"
+                id="tooltip-4"
                 isOpen={true}
                 onClose={[Function]}
                 onOpen={[Function]}
@@ -2305,7 +2305,7 @@ exports[`Tooltip demo examples placement 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-21"
+                  id="tooltip-4"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -2315,16 +2315,16 @@ exports[`Tooltip demo examples placement 1`] = `
                 >
                   <Manager
                     className="css-0"
-                    id="tooltip-21"
+                    id="tooltip-4"
                     tag="span"
                   >
                     <span
                       className="css-0"
-                      id="tooltip-21"
+                      id="tooltip-4"
                     >
                       <PopoverTrigger
-                        aria-describedby="tooltip-21-content"
-                        aria-owns="tooltip-21-content"
+                        aria-describedby="tooltip-4-content"
+                        aria-owns="tooltip-4-content"
                         onBlur={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
@@ -2344,8 +2344,8 @@ exports[`Tooltip demo examples placement 1`] = `
                               className="css-1"
                             >
                               <Button
-                                aria-describedby="tooltip-21-content"
-                                aria-owns="tooltip-21-content"
+                                aria-describedby="tooltip-4-content"
+                                aria-owns="tooltip-4-content"
                                 element="button"
                                 iconStart={
                                   <IconDelete
@@ -2364,8 +2364,8 @@ exports[`Tooltip demo examples placement 1`] = `
                                 variant="danger"
                               >
                                 <glamorous(button)
-                                  aria-describedby="tooltip-21-content"
-                                  aria-owns="tooltip-21-content"
+                                  aria-describedby="tooltip-4-content"
+                                  aria-owns="tooltip-4-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -2379,8 +2379,8 @@ exports[`Tooltip demo examples placement 1`] = `
                                   variant="danger"
                                 >
                                   <button
-                                    aria-describedby="tooltip-21-content"
-                                    aria-owns="tooltip-21-content"
+                                    aria-describedby="tooltip-4-content"
+                                    aria-owns="tooltip-4-content"
                                     className="css-12"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -2393,7 +2393,7 @@ exports[`Tooltip demo examples placement 1`] = `
                                   >
                                     <glamorous(span)>
                                       <span
-                                        className="css-9"
+                                        className="css-2"
                                       >
                                         <IconDelete
                                           key="iconStart"
@@ -2407,7 +2407,7 @@ exports[`Tooltip demo examples placement 1`] = `
                                           >
                                             <glamorous(svg)
                                               aria-hidden={null}
-                                              aria-labelledby="icon-title-icon-22"
+                                              aria-labelledby="icon-title-icon-5"
                                               role="img"
                                               rtl={false}
                                               size="1.5em"
@@ -2415,13 +2415,13 @@ exports[`Tooltip demo examples placement 1`] = `
                                             >
                                               <svg
                                                 aria-hidden={null}
-                                                aria-labelledby="icon-title-icon-22"
-                                                className="css-10"
+                                                aria-labelledby="icon-title-icon-5"
+                                                className="css-3"
                                                 role="img"
                                                 viewBox="0 0 24 24"
                                               >
                                                 <title
-                                                  id="icon-title-icon-22"
+                                                  id="icon-title-icon-5"
                                                 >
                                                   delete
                                                 </title>
@@ -2446,30 +2446,30 @@ exports[`Tooltip demo examples placement 1`] = `
                       <PopoverContent
                         aria-live="polite"
                         hasArrow={true}
-                        id="tooltip-21-content"
+                        id="tooltip-4-content"
                         onBlur={[Function]}
                         placement="bottom"
                         role="tooltip"
                       >
                         <PopoverContent
                           aria-live="polite"
-                          id="tooltip-21-content"
+                          id="tooltip-4-content"
                           onBlur={[Function]}
                           placement="bottom"
                           role="tooltip"
                         >
                           <ThemedComponent
                             aria-live="polite"
-                            className="css-2"
-                            id="tooltip-21-content"
+                            className="css-4"
+                            id="tooltip-4-content"
                             onBlur={[Function]}
                             placement="bottom"
                             role="tooltip"
                           >
                             <RtlPopper
                               aria-live="polite"
-                              className="css-2"
-                              id="tooltip-21-content"
+                              className="css-4"
+                              id="tooltip-4-content"
                               onBlur={[Function]}
                               placement="bottom"
                               role="tooltip"
@@ -2678,10 +2678,10 @@ exports[`Tooltip demo examples placement 1`] = `
                             >
                               <Popper
                                 aria-live="polite"
-                                className="css-2"
+                                className="css-4"
                                 component="div"
                                 eventsEnabled={true}
-                                id="tooltip-21-content"
+                                id="tooltip-4-content"
                                 modifiers={Object {}}
                                 onBlur={[Function]}
                                 placement="bottom"
@@ -2689,8 +2689,8 @@ exports[`Tooltip demo examples placement 1`] = `
                               >
                                 <div
                                   aria-live="polite"
-                                  className="css-2"
-                                  id="tooltip-21-content"
+                                  className="css-4"
+                                  id="tooltip-4-content"
                                   onBlur={[Function]}
                                   role="tooltip"
                                   style={
@@ -2708,11 +2708,11 @@ exports[`Tooltip demo examples placement 1`] = `
                                           <CardBlock>
                                             <CardBlock>
                                               <div
-                                                className="css-3"
+                                                className="css-5"
                                               >
                                                 <glamorous(div)>
                                                   <div
-                                                    className="css-7"
+                                                    className="css-9"
                                                   >
                                                     Light years star stuff harvesting star light citizens of distant epochs.
                                                   </div>
@@ -2733,11 +2733,11 @@ exports[`Tooltip demo examples placement 1`] = `
                                     >
                                       <Arrow
                                         aria-hidden={true}
-                                        className="css-8"
+                                        className="css-10"
                                       >
                                         <span
                                           aria-hidden={true}
-                                          className="css-8"
+                                          className="css-10"
                                           style={Object {}}
                                         >
                                           ▼
@@ -3123,7 +3123,7 @@ exports[`Tooltip demo examples portal 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-25"
+                  id="tooltip-8"
                   isOpen={true}
                   modifiers={
                     Object {
@@ -3143,7 +3143,7 @@ exports[`Tooltip demo examples portal 1`] = `
                     getContentProps={[Function]}
                     getTriggerProps={[Function]}
                     hasArrow={true}
-                    id="tooltip-25"
+                    id="tooltip-8"
                     isOpen={true}
                     modifiers={
                       Object {
@@ -3165,7 +3165,7 @@ exports[`Tooltip demo examples portal 1`] = `
                           getContentProps={[Function]}
                           getTriggerProps={[Function]}
                           hasArrow={true}
-                          id="tooltip-25"
+                          id="tooltip-8"
                           isOpen={true}
                           modifiers={
                             Object {
@@ -3186,7 +3186,7 @@ exports[`Tooltip demo examples portal 1`] = `
                             getContentProps={[Function]}
                             getTriggerProps={[Function]}
                             hasArrow={true}
-                            id="tooltip-25"
+                            id="tooltip-8"
                             isOpen={true}
                             modifiers={
                               Object {
@@ -3204,16 +3204,16 @@ exports[`Tooltip demo examples portal 1`] = `
                           >
                             <Manager
                               className="css-0"
-                              id="tooltip-25"
+                              id="tooltip-8"
                               tag="span"
                             >
                               <span
                                 className="css-0"
-                                id="tooltip-25"
+                                id="tooltip-8"
                               >
                                 <PopoverTrigger
-                                  aria-describedby="tooltip-25-content"
-                                  aria-owns="tooltip-25-content"
+                                  aria-describedby="tooltip-8-content"
+                                  aria-owns="tooltip-8-content"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
@@ -3233,8 +3233,8 @@ exports[`Tooltip demo examples portal 1`] = `
                                         className="css-1"
                                       >
                                         <Button
-                                          aria-describedby="tooltip-25-content"
-                                          aria-owns="tooltip-25-content"
+                                          aria-describedby="tooltip-8-content"
+                                          aria-owns="tooltip-8-content"
                                           element="button"
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -3248,8 +3248,8 @@ exports[`Tooltip demo examples portal 1`] = `
                                           variant="regular"
                                         >
                                           <glamorous(button)
-                                            aria-describedby="tooltip-25-content"
-                                            aria-owns="tooltip-25-content"
+                                            aria-describedby="tooltip-8-content"
+                                            aria-owns="tooltip-8-content"
                                             element="button"
                                             onBlur={[Function]}
                                             onClick={[Function]}
@@ -3264,8 +3264,8 @@ exports[`Tooltip demo examples portal 1`] = `
                                             variant="regular"
                                           >
                                             <button
-                                              aria-describedby="tooltip-25-content"
-                                              aria-owns="tooltip-25-content"
+                                              aria-describedby="tooltip-8-content"
+                                              aria-owns="tooltip-8-content"
                                               className="css-3"
                                               onBlur={[Function]}
                                               onClick={[Function]}
@@ -3440,7 +3440,7 @@ exports[`Tooltip demo examples prose 1`] = `
           getContentProps={[Function]}
           getTriggerProps={[Function]}
           hasArrow={true}
-          id="tooltip-20"
+          id="tooltip-3"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
@@ -3452,7 +3452,7 @@ exports[`Tooltip demo examples prose 1`] = `
             getContentProps={[Function]}
             getTriggerProps={[Function]}
             hasArrow={true}
-            id="tooltip-20"
+            id="tooltip-3"
             isOpen={true}
             onClose={[Function]}
             onOpen={[Function]}
@@ -3466,7 +3466,7 @@ exports[`Tooltip demo examples prose 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-20"
+                  id="tooltip-3"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -3480,7 +3480,7 @@ exports[`Tooltip demo examples prose 1`] = `
                     getContentProps={[Function]}
                     getTriggerProps={[Function]}
                     hasArrow={true}
-                    id="tooltip-20"
+                    id="tooltip-3"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
@@ -3491,16 +3491,16 @@ exports[`Tooltip demo examples prose 1`] = `
                   >
                     <Manager
                       className="css-0"
-                      id="tooltip-20"
+                      id="tooltip-3"
                       tag="span"
                     >
                       <span
                         className="css-0"
-                        id="tooltip-20"
+                        id="tooltip-3"
                       >
                         <PopoverTrigger
-                          aria-describedby="tooltip-20-content"
-                          aria-owns="tooltip-20-content"
+                          aria-describedby="tooltip-3-content"
+                          aria-owns="tooltip-3-content"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -3520,8 +3520,8 @@ exports[`Tooltip demo examples prose 1`] = `
                                 className="css-1"
                               >
                                 <glamorous(span)
-                                  aria-describedby="tooltip-20-content"
-                                  aria-owns="tooltip-20-content"
+                                  aria-describedby="tooltip-3-content"
+                                  aria-owns="tooltip-3-content"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
@@ -3531,8 +3531,8 @@ exports[`Tooltip demo examples prose 1`] = `
                                   tabIndex={0}
                                 >
                                   <span
-                                    aria-describedby="tooltip-20-content"
-                                    aria-owns="tooltip-20-content"
+                                    aria-describedby="tooltip-3-content"
+                                    aria-owns="tooltip-3-content"
                                     className="css-3"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -3612,6 +3612,23 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
 
 .css-2,
 [data-css-2] {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+}
+
+.css-3,
+[data-css-3] {
   box-sizing: border-box;
   color: #fff;
   font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -3629,38 +3646,38 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
   z-index: 100;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.css-3 *,
+[data-css-3] *,
+.css-3 *::before,
+[data-css-3] *::before,
+.css-3 *::after,
+[data-css-3] *::after {
   box-sizing: inherit;
 }
 
-.css-3,
-[data-css-3] {
+.css-4,
+[data-css-4] {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-3:last-child,
-[data-css-3]:last-child,
-.css-3[data-simulate-lastchild],
-[data-css-3][data-simulate-lastchild] {
+.css-4:last-child,
+[data-css-4]:last-child,
+.css-4[data-simulate-lastchild],
+[data-css-4][data-simulate-lastchild] {
   margin-bottom: 0px;
-}
-
-.css-7,
-[data-css-7] {
-  font-size: 0.875em;
-  line-height: 1.5;
 }
 
 .css-8,
 [data-css-8] {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.css-9,
+[data-css-9] {
   color: #434a54;
   display: none;
   font-size: 8px;
@@ -3669,23 +3686,6 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
   text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
   transform: rotate(0deg) scaleX(2);
   -webkit-transform: rotate(0deg) scaleX(2);
-}
-
-.css-9,
-[data-css-9] {
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  justify-content: center;
-  max-height: 100%;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
 .css-10,
@@ -3977,7 +3977,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                   getContentProps={[Function]}
                   getTriggerProps={[Function]}
                   hasArrow={true}
-                  id="tooltip-24"
+                  id="tooltip-7"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -3989,7 +3989,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                     getContentProps={[Function]}
                     getTriggerProps={[Function]}
                     hasArrow={true}
-                    id="tooltip-24"
+                    id="tooltip-7"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
@@ -4003,7 +4003,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                           getContentProps={[Function]}
                           getTriggerProps={[Function]}
                           hasArrow={true}
-                          id="tooltip-24"
+                          id="tooltip-7"
                           isOpen={true}
                           onClose={[Function]}
                           onOpen={[Function]}
@@ -4016,7 +4016,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                             getContentProps={[Function]}
                             getTriggerProps={[Function]}
                             hasArrow={true}
-                            id="tooltip-24"
+                            id="tooltip-7"
                             isOpen={true}
                             onClose={[Function]}
                             onOpen={[Function]}
@@ -4026,16 +4026,16 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                           >
                             <Manager
                               className="css-0"
-                              id="tooltip-24"
+                              id="tooltip-7"
                               tag="span"
                             >
                               <span
                                 className="css-0"
-                                id="tooltip-24"
+                                id="tooltip-7"
                               >
                                 <PopoverTrigger
-                                  aria-describedby="tooltip-24-content"
-                                  aria-owns="tooltip-24-content"
+                                  aria-describedby="tooltip-7-content"
+                                  aria-owns="tooltip-7-content"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
@@ -4055,8 +4055,8 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                         className="css-1"
                                       >
                                         <Button
-                                          aria-describedby="tooltip-24-content"
-                                          aria-owns="tooltip-24-content"
+                                          aria-describedby="tooltip-7-content"
+                                          aria-owns="tooltip-7-content"
                                           element="button"
                                           onBlur={[Function]}
                                           onClick={[Function]}
@@ -4070,8 +4070,8 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                           variant="regular"
                                         >
                                           <glamorous(button)
-                                            aria-describedby="tooltip-24-content"
-                                            aria-owns="tooltip-24-content"
+                                            aria-describedby="tooltip-7-content"
+                                            aria-owns="tooltip-7-content"
                                             element="button"
                                             onBlur={[Function]}
                                             onClick={[Function]}
@@ -4086,8 +4086,8 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                             variant="regular"
                                           >
                                             <button
-                                              aria-describedby="tooltip-24-content"
-                                              aria-owns="tooltip-24-content"
+                                              aria-describedby="tooltip-7-content"
+                                              aria-owns="tooltip-7-content"
                                               className="css-10"
                                               onBlur={[Function]}
                                               onClick={[Function]}
@@ -4100,7 +4100,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                             >
                                               <glamorous(span)>
                                                 <span
-                                                  className="css-9"
+                                                  className="css-2"
                                                 >
                                                   <glamorous(span)
                                                     size="large"
@@ -4123,30 +4123,30 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                 <PopoverContent
                                   aria-live="polite"
                                   hasArrow={true}
-                                  id="tooltip-24-content"
+                                  id="tooltip-7-content"
                                   onBlur={[Function]}
                                   placement="left"
                                   role="tooltip"
                                 >
                                   <PopoverContent
                                     aria-live="polite"
-                                    id="tooltip-24-content"
+                                    id="tooltip-7-content"
                                     onBlur={[Function]}
                                     placement="left"
                                     role="tooltip"
                                   >
                                     <ThemedComponent
                                       aria-live="polite"
-                                      className="css-2"
-                                      id="tooltip-24-content"
+                                      className="css-3"
+                                      id="tooltip-7-content"
                                       onBlur={[Function]}
                                       placement="left"
                                       role="tooltip"
                                     >
                                       <RtlPopper
                                         aria-live="polite"
-                                        className="css-2"
-                                        id="tooltip-24-content"
+                                        className="css-3"
+                                        id="tooltip-7-content"
                                         onBlur={[Function]}
                                         placement="left"
                                         role="tooltip"
@@ -4355,10 +4355,10 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                       >
                                         <Popper
                                           aria-live="polite"
-                                          className="css-2"
+                                          className="css-3"
                                           component="div"
                                           eventsEnabled={true}
-                                          id="tooltip-24-content"
+                                          id="tooltip-7-content"
                                           modifiers={Object {}}
                                           onBlur={[Function]}
                                           placement="left"
@@ -4366,8 +4366,8 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                         >
                                           <div
                                             aria-live="polite"
-                                            className="css-2"
-                                            id="tooltip-24-content"
+                                            className="css-3"
+                                            id="tooltip-7-content"
                                             onBlur={[Function]}
                                             role="tooltip"
                                             style={
@@ -4385,11 +4385,11 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                                     <CardBlock>
                                                       <CardBlock>
                                                         <div
-                                                          className="css-3"
+                                                          className="css-4"
                                                         >
                                                           <glamorous(div)>
                                                             <div
-                                                              className="css-7"
+                                                              className="css-8"
                                                             >
                                                               Light years star stuff
                                                             </div>
@@ -4410,11 +4410,11 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
                                               >
                                                 <Arrow
                                                   aria-hidden={true}
-                                                  className="css-8"
+                                                  className="css-9"
                                                 >
                                                   <span
                                                     aria-hidden={true}
-                                                    className="css-8"
+                                                    className="css-9"
                                                     style={Object {}}
                                                   >
                                                     ▼
@@ -4490,7 +4490,7 @@ exports[`Tooltip demo examples scrolling-container 1`] = `
             >
               <glamorous(span)>
                 <span
-                  className="css-9"
+                  className="css-2"
                 >
                   <glamorous(span)
                     size="small"

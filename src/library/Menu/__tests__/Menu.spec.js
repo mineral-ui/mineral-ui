@@ -10,12 +10,12 @@ function renderMenu(props, children) {
 }
 
 describe('Menu', () => {
+  testDemoExamples(examples);
+
   let menu;
   it('renders', () => {
     menu = renderMenu({}, 'Children');
 
     expect(menu.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

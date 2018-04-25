@@ -16,11 +16,11 @@ function shallowStartEnd([startEndProps, boxProps]) {
 }
 
 describe('StartEnd', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const startEnd = shallowStartEnd([{}, {}]);
 
     expect(startEnd.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });

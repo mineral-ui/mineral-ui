@@ -14,6 +14,8 @@ function shallowMenuGroup(props = {}) {
 }
 
 describe('MenuGroup', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const menuGroup = shallowMenuGroup();
@@ -21,6 +23,4 @@ describe('MenuGroup', () => {
       expect(menuGroup.exists()).toEqual(true);
     });
   });
-
-  testDemoExamples(examples);
 });

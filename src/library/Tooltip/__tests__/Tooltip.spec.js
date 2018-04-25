@@ -88,6 +88,8 @@ function testClosingOnEvent(eventType) {
 }
 
 describe('Tooltip', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const tooltip = shallowTooltip();
@@ -178,6 +180,4 @@ describe('Tooltip', () => {
       expect(button.prop('disabled')).toBeUndefined();
     });
   });
-
-  testDemoExamples(examples);
 });

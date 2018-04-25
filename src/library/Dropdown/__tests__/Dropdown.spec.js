@@ -66,6 +66,8 @@ const assertNoItemsHighlighted = (themeProvider) => {
 };
 
 describe('Dropdown', () => {
+  testDemoExamples(examples);
+
   describe('renders', () => {
     it('root', () => {
       const dropdown = shallowDropdown();
@@ -316,6 +318,4 @@ describe('Dropdown', () => {
       });
     });
   });
-
-  testDemoExamples(examples);
 });

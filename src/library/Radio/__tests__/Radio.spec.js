@@ -10,11 +10,11 @@ function shallowRadio() {
 }
 
 describe('Radio', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const radio = shallowRadio();
 
     expect(radio.exists()).toEqual(true);
   });
-
-  testDemoExamples(examples);
 });
