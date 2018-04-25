@@ -39,7 +39,11 @@ Mineral's robust [styling](/styling) and/or [theming](/theming) capabilities._`,
         const customTriggerProps = {
           ...triggerProps,
           component: 'button',
-          role: undefined
+          role: undefined,
+          onKeyDown: (e) => {
+            console.log('YO');
+            triggerProps.onKeyDown(e);
+          }
         };
 
         return (

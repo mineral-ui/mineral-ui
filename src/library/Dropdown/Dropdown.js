@@ -215,29 +215,52 @@ export default class Dropdown extends Component<Props, State> {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
 
-    return {
-      ...props,
+    /* console.log('Dropdown.getTriggerProps props', props); */
+
+    /* console.log('Dropdown.getTriggerProps props.onKeyDown', props.onKeyDown);
+     * console.log('Dropdown.getTriggerProps props.onKeyUp', props.onKeyUp);
+     */
+    const triggerProps = {
       'aria-activedescendant': isOpen
         ? this.getHighlightedItemId() || this.getMenuId()
         : undefined,
       'aria-describedby': contentId,
       'aria-haspopup': true,
-      'aria-owns': contentId,
+      'aria-owns': contentId
+    };
+
+    const mergedProps = this.props.renderTrigger
+      ? {
+          ...props,
+          ...triggerProps
+        }
+      : {
+          ...triggerProps,
+          ...props
+        };
+
+    const ret = {
+      ...mergedProps,
       onKeyDown: composeEventHandlers(props.onKeyDown, this.onTriggerKeyDown),
       onKeyUp: composeEventHandlers(props.onKeyUp, this.onTriggerKeyUp)
     };
+
+    /* console.log('Dropdown.getTriggerProps', ret); */
+    return ret;
   };
 
   renderTrigger = ({ triggerProps }: Object = {}) => {
     const { children, renderTrigger } = this.props;
 
     if (renderTrigger) {
+      /* console.log('Dropdown.renderTrigger - CUSTOM'); */
       return renderTrigger({
         ...this.getStateAndHelpers(),
         triggerProps: this.getTriggerProps(triggerProps)
       });
     }
 
+    /* console.log('Dropdown.renderTrigger - DEFAULT'); */
     const child = Children.only(children);
     return cloneElement(child, this.getTriggerProps(child.props));
   };
@@ -321,6 +344,7 @@ export default class Dropdown extends Component<Props, State> {
   onTriggerKeyDown = (event: SyntheticKeyboardEvent<>) => {
     const { key } = event;
     const isOpen = this.getControllableValue('isOpen');
+    /* console.log('Dropdown.onTriggerKeyDown', key); */
 
     if (key === 'ArrowUp') {
       event.preventDefault();

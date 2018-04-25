@@ -11,6 +11,6 @@ Dropdowns will automatically change position relative to the trigger depending o
   scope: { Button, data, Dropdown },
   source: `
     <Dropdown data={data}>
-      <Button>Menu</Button>
+      <Button onClick={(e) => {console.log('Yo')}}>Menu</Button>
     </Dropdown>`
 };

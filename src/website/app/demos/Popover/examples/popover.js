@@ -12,6 +12,6 @@ Popovers will change position relative to the trigger automatically depending on
   scope: { Button, DemoContent, Popover },
   source: `
     <Popover content={<DemoContent />}>
-      <Button>Open Popover</Button>
+      <Button onClick={(e) => {console.log('Yo')}}>Open Popover</Button>
     </Popover>`
 };
