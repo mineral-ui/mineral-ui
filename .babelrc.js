@@ -40,7 +40,8 @@ module.exports = {
         ['module-resolver', {
           alias: {
             'mineral-ui': './src/library', // Used inside mineral-ui-icons components
-            'mineral-ui-icons': './packages/mineral-ui-icons/src' // Used inside mineral-ui website
+            'mineral-ui-icons': './packages/mineral-ui-icons/src', // Used inside mineral-ui website,
+            'mineral-ui-tokens': './packages/mineral-ui-tokens/src' // Used inside mineral-ui website
           }
         }]
       );
