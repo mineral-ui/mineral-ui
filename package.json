@@ -18,7 +18,6 @@
   "scripts": {
     "build": "npm run clean && npm run build:library && npm run build:website",
     "build:analyze": "ANALYZE=true npm start",
-    "build:icons": "npm i --prefix ./packages/mineral-ui-icons && npm run build:icons --prefix ./packages/mineral-ui-icons",
     "build:library": "./scripts/build-library.js",
     "build:package": "./scripts/build-package.js",
     "build:website": "./scripts/build-website.js",
