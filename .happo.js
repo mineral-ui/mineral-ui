@@ -1,8 +1,6 @@
 const path = require('path');
 const { RemoteBrowserTarget } = require('happo.io');
 
-const babelLoader = require.resolve('babel-loader');
-
 const { HAPPO_KEY, HAPPO_SECRET } = process.env;
 
 module.exports = {
@@ -37,18 +35,4 @@ module.exports = {
   getRootElement(document) {
     return document.querySelector('.react-live-preview');
   },
-
-  // We need to tell happo how to load certain modules.
-  customizeWebpackConfig: (config) => {
-    config.module = {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: babelLoader
-        }
-      ]
-    };
-    return config;
-  }
 };
