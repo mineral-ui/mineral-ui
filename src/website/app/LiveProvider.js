@@ -44,7 +44,7 @@ const styles = {
     }
   }),
   liveError: ({ theme }) => ({
-    backgroundColor: '#fce3e3', // color.red_10
+    backgroundColor: '#fce3e3', // palette.red_10
     color: theme.color_danger,
     fontFamily: theme.fontFamily_monospace,
     fontSize: theme.fontSize_mouse,

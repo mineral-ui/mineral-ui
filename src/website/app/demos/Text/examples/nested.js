@@ -1,5 +1,5 @@
 /* @flow */
-import colors from '../../../../../library/colors';
+import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../../library/styles';
 import { mineralTheme as theme } from '../../../../../library/themes';
 import _Text from '../../../../../library/Text';
@@ -17,7 +17,7 @@ const DemoLayout = createStyledComponent(
 );
 
 const Text = createStyledComponent(_Text, ({ theme }) => ({
-  backgroundColor: colors.indigo_20,
+  backgroundColor: palette.indigo_20,
   padding: theme.space_inset_sm
 })).withProps({ noMargins: true });
 
@@ -35,12 +35,12 @@ toggle inheritance in either case with the \`inherit\` prop.
     applied to the Text components below.
   </p>
 </Callout>`,
-  scope: { createStyledComponent, DemoLayout, colors, Text, theme },
+  scope: { createStyledComponent, DemoLayout, palette, Text, theme },
   source: `
     () => {
       const CustomDiv = createStyledComponent('div', {
-        backgroundColor: colors.sky_10,
-        color: colors.sky_80,
+        backgroundColor: palette.sky_10,
+        color: palette.sky_80,
         fontFamily: 'serif',
         fontSize: '1.25rem',
         padding: theme.space_inset_sm

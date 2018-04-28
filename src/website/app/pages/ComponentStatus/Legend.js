@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
+import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../library/styles';
-import color from '../../../../library/colors';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
@@ -35,13 +35,13 @@ export default function Legend() {
   return (
     <List aria-hidden="true">
       <li>
-        <Available color={color.green_60} size="large" /> Available
+        <Available color={palette.green_60} size="large" /> Available
       </li>
       <li>
-        <InDevelopment color={color.bronze_60} size="large" /> In Development
+        <InDevelopment color={palette.bronze_60} size="large" /> In Development
       </li>
       <li>
-        <Planned color={color.blue_60} size="large" /> Planned
+        <Planned color={palette.blue_60} size="large" /> Planned
       </li>
     </List>
   );

@@ -1,5 +1,5 @@
 /* @flow */
-import colors from '../../../library/colors';
+import { palette } from 'mineral-ui-tokens';
 import getNormalizedValue from '../../../library/styles/getNormalizedValue';
 
 /**
@@ -68,23 +68,23 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.boolean, & .token.constant': {
-      color: colors.green_20
+      color: palette.green_20
     },
 
     '& .token.symbol, & .token.deleted': {
-      color: colors.red_60 // deviation
+      color: palette.red_60 // deviation
     },
 
     '& .token.number': {
-      color: colors.magenta_40 // slight deviation
+      color: palette.magenta_40 // slight deviation
     },
 
     '& .token.selector, & .token.attr-name, & .token.string, & .token.char, & .token.builtin, & .token.inserted': {
-      color: colors.sky_40 // deviation, originally "property, et al"
+      color: palette.sky_40 // deviation, originally "property, et al"
     },
 
     '& .token.variable': {
-      color: colors.purple_30
+      color: palette.purple_30
     },
 
     '& .token.operator': {
@@ -98,11 +98,11 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.url': {
-      color: colors.sky_40 // slight deviation
+      color: palette.sky_40 // slight deviation
     },
 
     '&.languageCss .token.string, &.style .token.string': {
-      color: colors.green_30
+      color: palette.green_30
     },
 
     '& .token.atrule, & .token.attrValue': {
@@ -110,7 +110,7 @@ export default function getCodeBlockStyles(theme: { [string]: any }) {
     },
 
     '& .token.function': {
-      color: colors.green_50 // deviation, originally "selector, et al"
+      color: palette.green_50 // deviation, originally "selector, et al"
     },
 
     '& .token.regex': {

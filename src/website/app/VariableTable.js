@@ -3,6 +3,7 @@ import React from 'react';
 import { createStyledComponent } from '../../library/styles';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
+import { darken, getLuminance } from 'polished';
 
 type Props = {
   baseTheme?: Object,
@@ -21,7 +22,11 @@ const Name = createStyledComponent('span', ({ theme }) => ({
 const Value = createStyledComponent('span', ({ color, theme }) => {
   if (color) {
     return {
-      border: color === '#fff' ? `1px solid ${theme.color_gray_50}` : 'none',
+      border: `1px solid ${
+        getLuminance(color) > getLuminance('#ccc')
+          ? darken(0.3, color)
+          : darken(0.1, color)
+      }`,
       backgroundColor: color,
       borderRadius: theme.borderRadius_1,
       color: a11yColor(color),

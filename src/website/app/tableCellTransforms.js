@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
+import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../library/styles';
-import color from '../../library/colors';
 import IconCheck from 'mineral-ui-icons/IconCheck';
 import IconAssignment from 'mineral-ui-icons/IconAssignment';
 import IconSlowMotionVideo from 'mineral-ui-icons/IconSlowMotionVideo';
@@ -70,7 +70,7 @@ export const isAvailable = (child: React$Node, index: number) => {
 
   return (
     <Available key={`icon-${index}`}>
-      <IconCheck color={color.green_60} size="large" title="available" />
+      <IconCheck color={palette.green_60} size="large" title="available" />
       <span>available</span>
     </Available>
   );
@@ -84,7 +84,7 @@ export const isInDevelopment = (child: React$Node, index: number) => {
   return (
     <InDevelopment key={`icon-${index}`}>
       <IconSlowMotionVideo
-        color={color.bronze_60}
+        color={palette.bronze_60}
         size="large"
         title="in development"
       />
@@ -100,7 +100,7 @@ export const isPlanned = (child: React$Node, index: number) => {
 
   return (
     <Planned key={`icon-${index}`}>
-      <IconAssignment size="large" color={color.blue_60} title="planned" />
+      <IconAssignment size="large" color={palette.blue_60} title="planned" />
       <span>planned</span>
     </Planned>
   );
@@ -113,7 +113,7 @@ export const isDeprecated = (child: React$Node, index: number) => {
 
   return (
     <Deprecated key={`icon-${index}`}>
-      <IconWarning color={color.red_60} size="large" title="deprecated" />
+      <IconWarning color={palette.red_60} size="large" title="deprecated" />
       <span>deprecated</span>
     </Deprecated>
   );
