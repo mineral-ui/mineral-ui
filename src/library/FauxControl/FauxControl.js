@@ -49,7 +49,7 @@ export const componentTheme = (baseTheme: Object) => ({
   FauxControl_boxShadow_active: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_active}`,
   FauxControl_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_focus}`,
   FauxControl_color: baseTheme.color,
-  FauxControl_color_placeholder: baseTheme.placeholder_color,
+  FauxControl_color_placeholder: baseTheme.input_color_placeholder,
   FauxControl_color_readOnly: baseTheme.color_readOnly,
   FauxControl_fontSize: baseTheme.fontSize_ui,
   FauxControl_fontSize_small: pxToEm(12),
