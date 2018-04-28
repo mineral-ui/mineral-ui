@@ -40,18 +40,18 @@ const getMediaQueries = (
   let queries = [];
 
   const getQueryWidth = (value) =>
-    typeof value === 'number' ? value : theme[`breakpoint_${value}`];
+    typeof value === 'number'
+      ? `${value}px`
+      : theme[`breakpoint_${value}`] || value;
 
   for (let i = 0; i <= breakpoints.length; i++) {
     if (i === breakpoints.length) {
-      queries.push(
-        `@media (min-width: ${getQueryWidth(breakpoints[i - 1])}px)`
-      );
+      queries.push(`@media (min-width: ${getQueryWidth(breakpoints[i - 1])})`);
     } else if (i > 0) {
       queries.push(
         `@media (min-width: ${getQueryWidth(
           breakpoints[i - 1]
-        )}px) and (max-width: ${getQueryWidth(breakpoints[i]) - 1}px)`
+        )}) and (max-width: ${parseInt(getQueryWidth(breakpoints[i])) - 1}px)`
       );
     }
   }
