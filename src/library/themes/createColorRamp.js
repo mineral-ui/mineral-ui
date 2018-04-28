@@ -3,8 +3,11 @@
  * Generates an object of colors with renamed keys from a color palette.
  * This is primarily used to translate plain color objects into theme variables.
  *
+ * Note that `inKey` is optional. If not provided, all keys in `colors` will be
+ * renamed.
+ *
  * e.g.
- *    createColorRamp('blue', 'color_theme', color);
+ *    createColorRamp(color, 'color_theme', 'blue');
  *
  *    returns
  *      {
@@ -21,18 +24,23 @@
  *      }
  */
 export default function createColorRamp(
-  inKey: string, // The key of the color in the color palette, excluding the index
+  colors: { [string]: any }, // The palette of colors
   outKey: string, // The key of the color in the returned object, excluding the index
-  colors: { [string]: any } // The palette of colors
+  inKey?: string // The key of the color in the color palette, excluding the index
 ): {
   [string]: any
 } {
-  const REGEX_IN_KEY = new RegExp(`^${inKey}`);
-  return Object.keys(colors)
-    .filter((key) => REGEX_IN_KEY.test(key))
-    .reduce((acc, key) => {
-      const newKey = key.replace(REGEX_IN_KEY, outKey);
-      acc[newKey] = colors[key];
-      return acc;
-    }, {});
+  let keys = Object.keys(colors);
+  let newKey = (key) => `${outKey}${key}`;
+
+  if (inKey) {
+    const REGEX_IN_KEY = new RegExp(`^${inKey}`);
+    keys = keys.filter((key) => REGEX_IN_KEY.test(key));
+    newKey = (key) => key.replace(REGEX_IN_KEY, outKey);
+  }
+
+  return keys.reduce((acc, key) => {
+    acc[newKey(key)] = colors[key];
+    return acc;
+  }, {});
 }
