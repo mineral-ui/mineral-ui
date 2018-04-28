@@ -93,7 +93,7 @@ const breakpoints = [100, 'test'];
 const otherParameters = {
   mapValueToProperty,
   theme: {
-    breakpoint_test: 200
+    breakpoint_test: '200px'
   }
 };
 
