@@ -1,18 +1,15 @@
 /* @flow */
 import React from 'react';
-import colors from '../../../../library/colors';
 import {
   createStyledComponent,
   getNormalizedValue,
   pxToEm
 } from '../../../../library/styles';
-import createColorRamp from '../../../../library/themes/createColorRamp';
-import { defaultBaseColor } from '../../../../library/themes/createTheme';
-import tokens from '../../../../library/themes/tokens';
 import Button from '../../SiteButton';
 import Heading from '../../SiteHeading';
 import Markdown from '../../Markdown';
 import VariableTable from '../../VariableTable';
+import groupedMineralTheme from './groupedMineralTheme';
 import content from './theming.md';
 
 type Props = {};
@@ -53,29 +50,25 @@ const Title = createStyledComponent(Heading, styles.title).withProps({
   level: 3
 });
 
-const REGEX_IS_COLOR = /color|fill/i;
+const REGEX_IS_COLOR = /^#/;
 
 const getColor = (theme, variable) =>
-  REGEX_IS_COLOR.test(variable) && theme[variable];
+  REGEX_IS_COLOR.test(theme[variable]) && theme[variable];
 
 const getValue = (theme, variable) => theme[variable];
-
-const themeRamp = createColorRamp(defaultBaseColor, 'color_theme', colors);
 
 export default function Theming(props: Props) {
   return (
     <div {...props}>
       <Markdown scope={{ Button }}>{content}</Markdown>
-      {tokens.map((token, index) => {
-        const title = Object.keys(token)[0];
-        const values = Object.values(token)[0];
-        const returnedValues =
-          typeof values === 'function' ? values(themeRamp) : values;
+      {groupedMineralTheme.map((group, index) => {
+        const [title, values] = group;
+        const themeGroup = typeof values === 'function' ? values() : values;
         return (
           <div key={title}>
             {index > 0 && <Title id={title}>{title}</Title>}
             <Table
-              themeToDisplay={returnedValues}
+              themeToDisplay={themeGroup}
               value={getValue}
               valueColor={getColor}
             />

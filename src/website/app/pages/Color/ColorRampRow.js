@@ -2,8 +2,8 @@
 import React from 'react';
 import colorable from 'colorable';
 import readableColor from 'polished/lib/color/readableColor';
+import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../library/styles';
-import color from '../../../../library/colors';
 
 type Props = {
   name: string
@@ -35,7 +35,7 @@ const styles = {
     display: 'block',
     marginBottom: theme.space_stack_sm
   }),
-  blackonBackground: { color: color.black, display: 'block' },
+  blackonBackground: { color: palette.black, display: 'block' },
   accessibilityInfo: {
     display: 'block',
     textAlign: 'right',
@@ -76,11 +76,11 @@ function getBestAccessibility(access) {
 
 export default function ColorRampRow({ name }: Props) {
   // the black here is the color from our theme.
-  const main = color[name];
+  const main = palette[name];
   const readable = readableColor(main);
   const accessibility = colorable({
     main,
-    black: color.black,
+    black: palette.black,
     white: '#fff'
   });
 

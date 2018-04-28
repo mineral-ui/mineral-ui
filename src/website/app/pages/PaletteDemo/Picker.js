@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import { Transition } from 'react-transition-group';
 import { canUseDOM } from 'exenv';
+import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../library/styles';
-import color from '../../../../library/colors';
 import IconKeyboardArrowDown from 'mineral-ui-icons/IconKeyboardArrowDown';
 import Heading from '../../SiteHeading';
 import Paragraph from '../../Paragraph';
@@ -89,7 +89,7 @@ const styles = {
 
   option: ({ theme, active, name }) => {
     const css = {
-      backgroundColor: color[`${name}_60`],
+      backgroundColor: palette[`${name}_60`],
       borderRadius: theme.borderRadius_1,
       color: theme.color_primary,
       cursor: 'pointer',
@@ -136,7 +136,7 @@ const styles = {
   },
 
   swatch: ({ theme, activeColor, isOpen }) => {
-    const hue = color[`${activeColor}_60`];
+    const hue = palette[`${activeColor}_60`];
     return {
       color: theme.color_primary,
       backgroundColor: hue,
@@ -206,7 +206,7 @@ const Flip = ({
           onClick={() => handleColorChange(colorName)}>
           {colorName}
           <br />
-          {color[`${colorName}_60`]}
+          {palette[`${colorName}_60`]}
         </Option>
       );
     }}

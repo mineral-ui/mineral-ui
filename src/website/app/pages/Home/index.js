@@ -6,7 +6,7 @@ import { canUseDOM } from 'exenv';
 import darken from 'polished/lib/color/darken';
 import desaturate from 'polished/lib/color/desaturate';
 import rgba from 'polished/lib/color/rgba';
-import colors from '../../../../library/colors';
+import { palette } from 'mineral-ui-tokens';
 import {
   createStyledComponent,
   getNormalizedValue,
@@ -79,20 +79,20 @@ const homeTheme = {
   SiteLink_color_hover: siteColors.orangePunch_hover
 };
 export const heroTheme = {
-  color: colors.white,
+  color: palette.white,
 
   SiteButton_color: darken(0.04, siteColors.slateDarker),
 
-  SiteHeading_color_2: colors.white,
+  SiteHeading_color_2: palette.white,
 
   SiteLink_borderColor_focus: siteColors.orangePunch,
-  SiteLink_color: colors.white,
-  SiteLink_color_active: colors.gray_10,
-  SiteLink_color_focus: colors.white,
-  SiteLink_color_hover: colors.white
+  SiteLink_color: palette.white,
+  SiteLink_color_active: palette.gray_10,
+  SiteLink_color_focus: palette.white,
+  SiteLink_color_hover: palette.white
 };
 const gettingStartedTheme = {
-  color: colors.white,
+  color: palette.white,
   color_theme: siteColors.yellow,
 
   SiteButton_backgroundColor_primary: siteColors.yellow,
@@ -100,11 +100,11 @@ const gettingStartedTheme = {
   SiteButton_backgroundColor_primary_focus: siteColors.yellow_focus,
   SiteButton_backgroundColor_primary_hover: siteColors.yellow_hover,
 
-  SiteButton_color: colors.gray_100,
-  SiteButton_color_primary: colors.gray_100,
+  SiteButton_color: palette.gray_100,
+  SiteButton_color_primary: palette.gray_100,
 
-  SiteHeading_color_3: colors.white,
-  SiteHeading_color_4: colors.white,
+  SiteHeading_color_3: palette.white,
+  SiteHeading_color_4: palette.white,
 
   SiteLink_borderColor_focus: siteColors.yellow,
   SiteLink_color: siteColors.yellow,
@@ -765,7 +765,7 @@ export default class Home extends Component<Props, State> {
 
               <GetStartedSection
                 angles={[-5, -5]}
-                clipColor={colors.white}
+                clipColor={palette.white}
                 point="50%">
                 <GetStartedBackground index={themeIndex} />
                 <ThemeProvider theme={gettingStartedTheme}>
