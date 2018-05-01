@@ -1,3 +1,30 @@
+<a name="0.30.0"></a>
+# [0.30.0](https://github.com/mineral-ui/mineral-ui/compare/v0.29.0...v0.30.0) (2018-05-01)
+
+
+### Code Refactoring
+
+* **colors:** Remove export and source files ([f2d0ec3](https://github.com/mineral-ui/mineral-ui/commit/f2d0ec3))
+* **themes:** Consume tokens ([a466dfa](https://github.com/mineral-ui/mineral-ui/commit/a466dfa))
+
+
+### Features
+
+* **mineral-ui-tokens:** Add source tokens, build scripts, and generated files ([31c8949](https://github.com/mineral-ui/mineral-ui/commit/31c8949))
+* **select,dropdown,popover,menu,menuitem:** Add support for render props ([48ea509](https://github.com/mineral-ui/mineral-ui/commit/48ea509))
+
+
+### BREAKING CHANGES
+
+* **select,dropdown,popover,menu,menuitem:** Select, Dropdown, Menu - no longer support ‘item.render’ in data.  Use ‘item’ prop instead.
+* **themes:** Rename `placeholder_color` theme variable to
+`input_color_placeholder`; append `px` to `breakpoint_[width]` and
+`fontSize_base` values (change type from number to string) to clarify
+units
+* **colors:** Remove all `colors` exports from `mineral-ui`. Instead, consumers can [`import { palette } from 'mineral-ui-tokens'`](https://github.com/mineral-ui/mineral-ui/tree/master/packages/mineral-ui-tokens). Additionally, color ramps available from that package are sparse arrays, rather than objects, e.g. what was `blue.blue_60` is now accessed as `blue[60]`.
+
+
+
 <a name="0.29.0"></a>
 # [0.29.0](https://github.com/mineral-ui/mineral-ui/compare/v0.28.0...v0.29.0) (2018-04-20)
 
