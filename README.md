@@ -24,19 +24,19 @@ A design system and [React](https://reactjs.org/) component library for the web 
 
 ### Installation
 
-Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui).
+Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
+its dependencies.
 
-```sh
-npm install --save mineral-ui
+```bash
+npm install --save mineral-ui mineral-ui-tokens glamor glamorous react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui
+yarn add mineral-ui mineral-ui-tokens glamor glamorous react react-dom
 ```
 
-Then install any missing peer dependencies reported by `npm` or `yarn`.
 
 ### Usage
 

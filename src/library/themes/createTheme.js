@@ -1,11 +1,5 @@
 /* @flow */
-import tokens, {
-  black,
-  brand,
-  gray,
-  palette,
-  white
-} from '../../../packages/mineral-ui-tokens/src';
+import tokens, { black, brand, gray, palette, white } from 'mineral-ui-tokens';
 import createColorRamp from './createColorRamp';
 import fontSize_base from './fontSizeBase';
 import themeFromTokens from './themeFromTokens';

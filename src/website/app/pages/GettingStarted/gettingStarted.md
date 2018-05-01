@@ -7,19 +7,18 @@ Mineral UI is an open source project and welcomes all contributions.
 
 ## Installation
 
-Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui):
+Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
+its dependencies.
 
 ```bash
-npm install --save mineral-ui
+npm install --save mineral-ui mineral-ui-tokens glamor glamorous react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui
+yarn add mineral-ui mineral-ui-tokens glamor glamorous react react-dom
 ```
-
-Then install any missing peer dependencies reported by `npm` or `yarn`.
 
 ## Usage
 
