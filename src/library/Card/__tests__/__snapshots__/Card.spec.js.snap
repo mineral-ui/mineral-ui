@@ -439,98 +439,33 @@ exports[`Card demo examples actions-menu 1`] = `
                                   },
                                 ]
                               }
+                              itemKey="text"
                               placement="bottom-end"
                             >
                               <Popover
-                                content={
-                                  <DropdownContent
-                                    data={
-                                      Array [
-                                        Object {
-                                          "items": Array [
-                                            Object {
-                                              "onClick": [Function],
-                                              "text": "MenuItem 1",
-                                            },
-                                            Object {
-                                              "onClick": [Function],
-                                              "text": "MenuItem 2",
-                                            },
-                                            Object {
-                                              "divider": true,
-                                            },
-                                            Object {
-                                              "onClick": [Function],
-                                              "text": "MenuItem 3",
-                                            },
-                                          ],
-                                        },
-                                      ]
-                                    }
-                                    getItemProps={[Function]}
-                                    getMenuProps={[Function]}
-                                    id="dropdown-10-content"
-                                    modifiers={undefined}
-                                    placement="bottom-end"
-                                    wide={undefined}
-                                  />
-                                }
+                                content={[Function]}
                                 focusTriggerOnClose={true}
-                                getTriggerProps={[Function]}
                                 hasArrow={true}
                                 id="dropdown-10"
                                 isOpen={false}
+                                itemKey="text"
                                 onClose={[Function]}
                                 onOpen={[Function]}
-                                placement="bottom"
+                                placement="bottom-end"
                                 triggerRef={[Function]}
-                                wrapContent={false}
                               >
                                 <Popover
-                                  content={
-                                    <DropdownContent
-                                      data={
-                                        Array [
-                                          Object {
-                                            "items": Array [
-                                              Object {
-                                                "onClick": [Function],
-                                                "text": "MenuItem 1",
-                                              },
-                                              Object {
-                                                "onClick": [Function],
-                                                "text": "MenuItem 2",
-                                              },
-                                              Object {
-                                                "divider": true,
-                                              },
-                                              Object {
-                                                "onClick": [Function],
-                                                "text": "MenuItem 3",
-                                              },
-                                            ],
-                                          },
-                                        ]
-                                      }
-                                      getItemProps={[Function]}
-                                      getMenuProps={[Function]}
-                                      id="dropdown-10-content"
-                                      modifiers={undefined}
-                                      placement="bottom-end"
-                                      wide={undefined}
-                                    />
-                                  }
+                                  content={[Function]}
                                   focusTriggerOnClose={true}
-                                  getTriggerProps={[Function]}
                                   hasArrow={true}
                                   id="dropdown-10"
                                   isOpen={false}
+                                  itemKey="text"
                                   onClose={[Function]}
                                   onOpen={[Function]}
-                                  placement="bottom"
+                                  placement="bottom-end"
                                   tag="span"
                                   triggerRef={[Function]}
-                                  wrapContent={false}
                                 >
                                   <Manager
                                     className="css-19"
@@ -546,6 +481,12 @@ exports[`Card demo examples actions-menu 1`] = `
                                         aria-expanded={false}
                                         aria-haspopup={true}
                                         aria-owns="dropdown-10-content"
+                                        iconStart={
+                                          <IconMoreHoriz
+                                            title="Card actions"
+                                          />
+                                        }
+                                        minimal={true}
                                         onBlur={[Function]}
                                         onClick={[Function]}
                                         onKeyDown={[Function]}
