@@ -1,76 +1,108 @@
 const keys = require('./keys');
 
-const keyValueOutput = (k, v) => `  ${k}: ${v},`;
-
 const REGEX_ALIAS_VALUE = /{!(.*)}/g;
 
-const defaultExport = (output) => ['export default {', output, '};'].join('\n');
+const categories = (input) =>
+  Array.from(new Set(input.get('props').map((prop) => prop.get('category'))))
+    .filter((category) => category !== 'palette')
+    .sort()
+    .concat(['palette']);
+
+const convertKeyToSass = (k) => k.replace(/_/g, '-');
+
+const removeTheoValueQuotes = (value) =>
+  typeof value === 'string' ? value.replace(/'/g, '') : value;
+
+const defaultExport = (result) => `export default ${result}`;
+
+// JSON.stringify() adds double quotes to properties and values. The following
+// formats that object to remove double-quote-wrapping and escapes, e.g.:
+// * "backgroundColor_active": "#ebeff5" => backgroundColor_active: '#ebeff5'
+// * "fontWeight_regular": 400 => fontWeight_regular: 400
+// * "fontFamily": "\"Open Sans\"" => fontFamily: '"Open Sans"'
+const formatQuotes = (result) =>
+  prettifyJson(result)
+    .replace(/"(.*)": /g, '$1: ')
+    .replace(/: "(.*)"/g, ": '$1'")
+    .replace(/\\"/g, '"');
+
+const prettifyJson = (result) => JSON.stringify(result, null, 2);
+
+const namedExports = (tokens, exportFormat) =>
+  Object.entries(tokens)
+    .map(exportFormat)
+    .join('\n');
+
+const formatCategories = (input, keyTemplate = (k) => k) =>
+  categories(input).reduce((acc, category) => {
+    acc[category] = formatProperties({
+      filter: (prop) => prop.get('category') === category,
+      input,
+      keyTemplate
+    });
+    return acc;
+  }, {});
 
 const formatProperties = ({
   filter = (prop) => !!prop,
   getValue = (prop) => prop.get('value'),
   input,
-  valueTemplate = (k, v) => keyValueOutput(k, v)
+  keyTemplate = (k) => k
 }) =>
   input
     .get('props')
-    .filter((prop) => filter(prop))
-    .map((prop) => {
-      let result = [];
-      if (prop.has('comment')) {
-        result.push(`// ${prop.get('comment')}`);
-      }
-      const k = prop.get('name');
-      const v = getValue(prop);
-      result.push(valueTemplate(k, v));
-      return result;
-    })
-    .flatten(1)
-    .toArray()
-    .join('\n');
+    .filter(filter)
+    .reduce((acc, prop) => {
+      const key = keyTemplate(prop.get('name'));
+      const value = removeTheoValueQuotes(getValue(prop));
+      acc[key] = value;
+      return acc;
+    }, {});
 
 module.exports = {
-  colorAliases: (input) =>
-    defaultExport(
-      formatProperties({
-        filter: (prop) => prop.get('type') === 'color',
-        getValue: (prop) =>
-          `'${prop.get('originalValue')}'`.replace(REGEX_ALIAS_VALUE, '$1'),
-        input
-      })
-    ),
-  colorExport: (input) =>
-    defaultExport(
-      formatProperties({
-        input,
-        valueTemplate: (k, v) => {
-          k = k.split('_')[1];
-          return keyValueOutput(k, v);
-        }
-      })
-    ),
-  defaultExport: (input) => defaultExport(formatProperties({ input })),
-  groupedNamedExports: (input) =>
-    keys.tokenGroups
-      .map((group) => {
-        const filteredInput = input.merge({
-          props: input.get('props').filter((prop) => {
-            if (group === 'generic') {
-              return keys.tokenGroups.indexOf(prop.get('category')) === -1;
-            } else {
-              return prop.get('category') === group;
-            }
-          })
-        });
-        return [
-          `export const ${group} = {`,
-          formatProperties({
-            input: filteredInput
-          }),
-          '};'
-        ].join('\n');
-      })
-      .join('\n'),
+  categorizedJsExports: (input) => {
+    return defaultExport(prettifyJson(formatCategories(input)));
+  },
+
+  categorizedSassExports: (input) => {
+    return defaultExport(
+      prettifyJson(
+        formatCategories(input, (k) => `$mnrl-${convertKeyToSass(k)}`)
+      )
+    );
+  },
+
+  colorAliases: (input) => {
+    return defaultExport(
+      formatQuotes(
+        formatProperties({
+          filter: (prop) => prop.get('type') === 'color',
+          getValue: (prop) =>
+            `'${prop.get('originalValue')}'`.replace(REGEX_ALIAS_VALUE, '$1'),
+          input
+        })
+      )
+    );
+  },
+
+  colorExport: (input) => {
+    return defaultExport(
+      formatQuotes(
+        formatProperties({
+          input,
+          // Additional brackets are because flow does not support non-string
+          // literal property keys.
+          // https://github.com/facebook/flow/issues/380#issuecomment-224380551
+          keyTemplate: (k) => `[${k.split('_')[1]}]`
+        })
+      )
+    );
+  },
+
+  defaultExport: (input) => {
+    return defaultExport(formatQuotes(formatProperties({ input })));
+  },
+
   index: (input) => {
     const _ignoreInput = input;
     const colorExports = keys.colors.map(
@@ -86,17 +118,21 @@ module.exports = {
       .join('\n')
       .concat('\n');
   },
-  mnrlScss: (input) =>
-    formatProperties({
-      input,
-      valueTemplate: (k, v) => {
-        k = k.replace('_', '-');
-        return `$mnrl-${k}: ${v};`;
-      }
-    }),
-  namedExports: (input) =>
-    formatProperties({
-      input,
-      valueTemplate: (k, v) => `export const ${k} = ${v};`
-    })
+
+  mnrlScss: (input) => {
+    return namedExports(
+      formatProperties({
+        input,
+        keyTemplate: (k) => `$mnrl-${convertKeyToSass(k)}`
+      }),
+      (token) => `${token[0]}: ${token[1]};`
+    );
+  },
+
+  namedExports: (input) => {
+    return namedExports(formatProperties({ input }), (token) => {
+      const value = typeof token[1] === 'string' ? `'${token[1]}'` : token[1];
+      return `export const ${token[0]} = ${value};`;
+    });
+  }
 };

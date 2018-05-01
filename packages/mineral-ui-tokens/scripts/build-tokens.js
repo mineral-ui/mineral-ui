@@ -11,6 +11,7 @@ const colorIndex = require('../tokens/palette');
 const MINERAL_TOKENS_DIR = path.join(__dirname, '../tokens');
 const MINERAL_TOKENS_COLORS_DIR = path.join(MINERAL_TOKENS_DIR, '/palette');
 const SRC_DIR = path.join(__dirname, '../src');
+const WEBSITE_DIR = path.join(__dirname, '../../../src/website/app');
 
 const args = process.argv.slice(2);
 
@@ -21,7 +22,11 @@ if (!fs.existsSync(SRC_DIR)) {
 theo.registerFormat('colorAliases.js', formats.colorAliases);
 theo.registerFormat('colorExport.js', formats.colorExport);
 theo.registerFormat('defaultExport.js', formats.defaultExport);
-theo.registerFormat('groupedNamedExports.js', formats.groupedNamedExports);
+theo.registerFormat('categorizedJsExports.js', formats.categorizedJsExports);
+theo.registerFormat(
+  'categorizedSassExports.js',
+  formats.categorizedSassExports
+);
 theo.registerFormat('index.js', formats.index);
 theo.registerFormat('mnrlScss', formats.mnrlScss);
 theo.registerFormat('namedExports.js', formats.namedExports);
@@ -50,15 +55,6 @@ const configurations = [
     },
     format: { type: 'defaultExport.js' },
     fileName: 'tokens.js'
-  },
-  {
-    // Grouped tokens
-    transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokens.json'),
-      type: 'js'
-    },
-    format: { type: 'groupedNamedExports.js' },
-    fileName: 'groupedTokens.js'
   },
   {
     // Just the color palette
@@ -93,6 +89,26 @@ const configurations = [
     },
     format: { type: 'index.js' },
     fileName: 'index.js'
+  },
+  {
+    // Grouped JS tokens by category
+    transform: {
+      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'js'
+    },
+    format: { type: 'categorizedJsExports.js' },
+    fileName: 'categorizedJsTokens.js',
+    writeDir: WEBSITE_DIR
+  },
+  {
+    // Grouped Sass tokens by category
+    transform: {
+      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'js'
+    },
+    format: { type: 'categorizedSassExports.js' },
+    fileName: 'categorizedSassTokens.js',
+    writeDir: WEBSITE_DIR
   },
   {
     // All tokens with color values
@@ -135,15 +151,19 @@ if (args.includes('--debug')) {
   });
 }
 
-configurations.forEach(({ transform, format, fileName }) => {
-  theo
-    .convert({ transform, format })
-    .then((result) => {
-      fs.writeFile(
-        path.join(SRC_DIR, fileName),
-        result,
-        (error) => error && console.log('Error writing file: ', error)
+configurations.forEach(
+  ({ transform, format, fileName, writeDir = SRC_DIR }) => {
+    theo
+      .convert({ transform, format })
+      .then((result) => {
+        fs.writeFile(
+          path.join(writeDir, fileName),
+          result,
+          (error) => error && console.log('Error writing file: ', error)
+        );
+      })
+      .catch(
+        (error) => error && console.log('Error converting tokens: ', error)
       );
-    })
-    .catch((error) => error && console.log('Error converting tokens: ', error));
-});
+  }
+);

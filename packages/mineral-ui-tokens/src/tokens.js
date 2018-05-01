@@ -1,3 +1,4 @@
+/* @flow */
 export default {
   backgroundColor_active: '#ebeff5',
   backgroundColor_disabled: '#dde3ed',
@@ -53,7 +54,8 @@ export default {
   boxShadow_2: '0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)',
   boxShadow_3: '0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)',
   boxShadow_4: '0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)',
-  boxShadow_5: '0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)',
+  boxShadow_5:
+    '0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)',
   breakpoint_narrow: '512px',
   breakpoint_medium: '768px',
   breakpoint_wide: '1024px',
@@ -81,8 +83,10 @@ export default {
   color_warning_focus: '#ad5f00',
   color_warning_hover: '#cf7911',
   fontFamily: '"Open Sans"',
-  fontFamily_system: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  fontFamily_monospace: '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
+  fontFamily_system:
+    '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+  fontFamily_monospace:
+    '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace',
   fontSize_base: '1rem',
   fontSize_mouse: '0.6875rem',
   fontSize_prose: '1rem',
@@ -157,5 +161,5 @@ export default {
   well_backgroundColor_warning: '#fad8af',
   well_borderColor_danger: '#fa8e8e',
   well_borderColor_success: '#57c282',
-  well_borderColor_warning: '#e89c3f',
+  well_borderColor_warning: '#e89c3f'
 };

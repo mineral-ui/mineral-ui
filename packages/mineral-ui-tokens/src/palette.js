@@ -1,3 +1,4 @@
+/* @flow */
 export default {
   black: '#1d1f24',
   white: '#ffffff',
@@ -130,5 +131,5 @@ export default {
   teal_70: '#116963',
   teal_80: '#0d524d',
   teal_90: '#0b3d3a',
-  teal_100: '#092b29',
+  teal_100: '#092b29'
 };

@@ -1,3 +1,4 @@
+/* @flow */
 export const backgroundColor_active = '#ebeff5';
 export const backgroundColor_disabled = '#dde3ed';
 export const backgroundColor_focus = '#f5f7fa';
@@ -48,11 +49,16 @@ export const borderColor_warning_active = '#8a4d03';
 export const borderColor_warning_focus = '#8a4d03';
 export const borderColor_warning_hover = '#cf7911';
 export const borderRadius_1 = '3px';
-export const boxShadow_1 = '0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)';
-export const boxShadow_2 = '0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)';
-export const boxShadow_3 = '0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)';
-export const boxShadow_4 = '0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)';
-export const boxShadow_5 = '0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)';
+export const boxShadow_1 =
+  '0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)';
+export const boxShadow_2 =
+  '0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)';
+export const boxShadow_3 =
+  '0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)';
+export const boxShadow_4 =
+  '0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)';
+export const boxShadow_5 =
+  '0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)';
 export const breakpoint_narrow = '512px';
 export const breakpoint_medium = '768px';
 export const breakpoint_wide = '1024px';
@@ -80,8 +86,10 @@ export const color_warning_active = '#8a4d03';
 export const color_warning_focus = '#ad5f00';
 export const color_warning_hover = '#cf7911';
 export const fontFamily = '"Open Sans"';
-export const fontFamily_system = '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
-export const fontFamily_monospace = '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace';
+export const fontFamily_system =
+  '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+export const fontFamily_monospace =
+  '"SF Mono", "Droid Sans Mono", "Source Code Pro", Monaco, Consolas, "Courier New", Courier, monospace';
 export const fontSize_base = '1rem';
 export const fontSize_mouse = '0.6875rem';
 export const fontSize_prose = '1rem';
