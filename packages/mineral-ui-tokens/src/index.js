@@ -1,3 +1,4 @@
+/* @flow */
 export { default } from './tokens';
 export { default as palette } from './palette';
 export * from './all';

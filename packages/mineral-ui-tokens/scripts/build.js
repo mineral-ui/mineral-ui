@@ -46,4 +46,4 @@ fse.writeJsonSync(minimalPackageJsonFile, minimalPackageJsonData, {
   spaces: 2
 });
 
-exec('cp {README.md,LICENSE.md} dist');
+exec('cp {README.md,LICENSE.md,src/index.scss} dist');

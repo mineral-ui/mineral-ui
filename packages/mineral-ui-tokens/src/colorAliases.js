@@ -1,3 +1,4 @@
+/* @flow */
 export default {
   backgroundColor_active: 'gray_20',
   backgroundColor_disabled: 'gray_30',
@@ -95,5 +96,5 @@ export default {
   well_backgroundColor_warning: 'bronze_20',
   well_borderColor_danger: 'red_40',
   well_borderColor_success: 'green_40',
-  well_borderColor_warning: 'bronze_40',
+  well_borderColor_warning: 'bronze_40'
 };
