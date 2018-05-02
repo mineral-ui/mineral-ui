@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import { renderToString } from 'react-dom/server';
 import { mount } from 'enzyme';
 import type { ReactWrapper } from 'enzyme';
 import ThemeProvider from '../src/library/themes/ThemeProvider';
@@ -35,6 +36,10 @@ export const mountInThemeProvider = (
   const component = themeProvider.find(Component.type);
 
   return [themeProvider, component];
+};
+
+export const ssrInThemeProvider = (Component: React$Element<*>) => {
+  return renderToString(<ThemeProvider>{Component}</ThemeProvider>);
 };
 
 export const spyOn = (wrapper: ReactWrapper, method: string) => {
