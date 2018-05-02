@@ -6,7 +6,7 @@ import Box from '../../Box';
 import StartEnd from '../StartEnd';
 import examples from '../../../website/app/demos/StartEnd/examples';
 
-function shallowStartEnd([startEndProps, boxProps]) {
+function shallowStartEnd(startEndProps = {}, boxProps = {}) {
   return shallow(
     <StartEnd {...startEndProps}>
       <Box {...boxProps} />
@@ -19,7 +19,7 @@ describe('StartEnd', () => {
   testDemoExamples(examples);
 
   it('renders', () => {
-    const startEnd = shallowStartEnd([{}, {}]);
+    const startEnd = shallowStartEnd();
 
     expect(startEnd.exists()).toEqual(true);
   });

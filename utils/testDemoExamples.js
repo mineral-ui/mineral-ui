@@ -1,11 +1,10 @@
 /* @flow */
 import React from 'react';
-import { mount } from 'enzyme';
 import { LiveProvider, LivePreview } from 'react-live';
-import ThemeProvider from '../src/library/themes/ThemeProvider';
+import { mountInThemeProvider, ssrInThemeProvider } from '../utils/enzymeUtils';
 
 type Example = {
-  title: React$Node,
+  title: string,
   scope?: Object,
   id: string,
   source?: string
@@ -13,6 +12,39 @@ type Example = {
 type Examples = Array<Example>;
 type Options = {
   exclude?: Array<string> // Example id
+};
+
+const mountExample = (example: Example) => {
+  const [, wrapper] = mountInThemeProvider(
+    <LiveProvider
+      code={example.source}
+      scope={example.scope}
+      mountStylesheet={false}>
+      <LivePreview />
+    </LiveProvider>
+  );
+
+  // NOTE: Find the "SUT" component inside the react-live ErrorBoundary
+  const component = wrapper
+    .findWhere(
+      (node) =>
+        // $FlowFixMe
+        node && node.type() && node.type().name === 'ErrorBoundary'
+    )
+    .childAt(0);
+
+  return component;
+};
+
+const ssrExample = (example: Example) => {
+  return ssrInThemeProvider(
+    <LiveProvider
+      code={example.source}
+      scope={example.scope}
+      mountStylesheet={false}>
+      <LivePreview />
+    </LiveProvider>
+  );
 };
 
 export default function testDemoExamples(
@@ -26,28 +58,17 @@ export default function testDemoExamples(
 
   return describe('demo examples', () => {
     examples.filter(({ scope, source }) => scope && source).map((example) => {
-      it(example.id, () => {
-        const wrapper = mount(
-          <ThemeProvider>
-            <LiveProvider
-              code={example.source}
-              scope={example.scope}
-              mountStylesheet={false}>
-              <LivePreview />
-            </LiveProvider>
-          </ThemeProvider>
-        );
+      describe('Snapshots:', () => {
+        it(example.id, () => {
+          const component = mountExample(example);
+          expect(component).toMatchSnapshot();
+        });
+      });
 
-        // NOTE: Find the "SUT" component inside the react-live ErrorBoundary
-        const component = wrapper
-          .findWhere(
-            (node) =>
-              // $FlowFixMe
-              node && node.type() && node.type().name === 'ErrorBoundary'
-          )
-          .childAt(0);
-
-        expect(component).toMatchSnapshot();
+      describe('Server Side Rendering (SSR):', () => {
+        it(example.id, () => {
+          expect(() => ssrExample(example)).not.toThrow();
+        });
       });
     });
   });

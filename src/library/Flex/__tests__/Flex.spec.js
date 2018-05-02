@@ -5,7 +5,7 @@ import testDemoExamples from '../../../../utils/testDemoExamples';
 import Flex, { FlexItem } from '../../Flex';
 import examples from '../../../website/app/demos/Flex/examples/Flex';
 
-function shallowFlex([flexProps, flexItemProps]) {
+function shallowFlex(flexProps = {}, flexItemProps = {}) {
   return shallow(
     <Flex {...flexProps}>
       <FlexItem {...flexItemProps} />
@@ -17,7 +17,7 @@ describe('Flex', () => {
   testDemoExamples(examples);
 
   it('renders', () => {
-    const flex = shallowFlex([{}, {}]);
+    const flex = shallowFlex();
 
     expect(flex.exists()).toEqual(true);
   });
