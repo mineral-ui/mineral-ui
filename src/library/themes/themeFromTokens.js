@@ -1,5 +1,5 @@
 /* @flow */
-import colorAliases from 'mineral-ui-tokens';
+import colorAliases from 'mineral-ui-tokens/colorAliases';
 import pxToEm from '../styles/pxToEm';
 
 type Args = { themeRamp?: Ramp, tokens: Tokens };

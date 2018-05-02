@@ -11,13 +11,13 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui mineral-ui-tokens glamor glamorous react react-dom
+npm install --save mineral-ui glamor glamorous react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui mineral-ui-tokens glamor glamorous react react-dom
+yarn add mineral-ui glamor glamorous react react-dom
 ```
 
 ## Usage
