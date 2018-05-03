@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { withTheme } from 'glamorous';
+import withTheme from './withTheme';
 import ThemeProvider from './ThemeProvider';
 
 function getComponentDisplayName(Component: React$ComponentType<*>): string {

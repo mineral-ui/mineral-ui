@@ -7,3 +7,4 @@ export { default as mapComponentThemes } from './mapComponentThemes';
 export { default as mineralTheme } from './mineralTheme';
 export { default as themeFromTokens } from './themeFromTokens';
 export { default as ThemeProvider } from './ThemeProvider';
+export { default as withTheme } from './withTheme';

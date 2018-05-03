@@ -34,5 +34,6 @@ export {
   createTheme,
   createThemedComponent,
   mineralTheme,
-  ThemeProvider
+  ThemeProvider,
+  withTheme
 } from './themes';
