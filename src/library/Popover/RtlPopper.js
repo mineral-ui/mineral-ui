@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { Popper } from 'react-popper';
-import { withTheme } from 'glamorous';
+import { withTheme } from '../themes';
 
 type Props = {
   /** Placement of the Popover */

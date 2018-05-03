@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
-import { withTheme } from 'glamorous';
+import { withTheme } from '../themes';
 import { createStyledComponent, getResponsiveStyles, pxToEm } from '../styles';
 import Box from '../Box';
 
