@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CheckboxGroup demo examples controlled 1`] = `
+exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -758,7 +758,7 @@ exports[`CheckboxGroup demo examples controlled 1`] = `
 </Component>
 `;
 
-exports[`CheckboxGroup demo examples data-vs-children 1`] = `
+exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -1975,7 +1975,7 @@ exports[`CheckboxGroup demo examples data-vs-children 1`] = `
 </DemoForm>
 `;
 
-exports[`CheckboxGroup demo examples form-field 1`] = `
+exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -2267,13 +2267,13 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
           >
             <div>
               <glamorous(div)
-                key="formField-16-textWrapper"
+                key="formField-31-textWrapper"
               >
                 <div
                   className="css-26"
                 >
                   <span
-                    id="formField-16-labelText"
+                    id="formField-31-labelText"
                   >
                     What are the primary characteristics of a mineral?
                   </span>
@@ -2287,7 +2287,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                 </div>
               </glamorous(div)>
               <CheckboxGroup
-                aria-describedby="formField-16-caption"
+                aria-describedby="formField-31-caption"
                 data={
                   Array [
                     Object {
@@ -2312,19 +2312,19 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                     },
                   ]
                 }
-                key="formField-16-control"
+                key="formField-31-control"
                 name="contact"
                 required={true}
                 rootProps={
                   Object {
-                    "aria-describedby": "formField-16-caption",
-                    "aria-labelledby": "formField-16-labelText",
+                    "aria-describedby": "formField-31-caption",
+                    "aria-labelledby": "formField-31-labelText",
                   }
                 }
                 variant="success"
               >
                 <ThemedComponent
-                  aria-describedby="formField-16-caption"
+                  aria-describedby="formField-31-caption"
                   data={
                     Array [
                       Object {
@@ -2354,15 +2354,15 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                   required={true}
                   rootProps={
                     Object {
-                      "aria-describedby": "formField-16-caption",
-                      "aria-labelledby": "formField-16-labelText",
+                      "aria-describedby": "formField-31-caption",
+                      "aria-labelledby": "formField-31-labelText",
                     }
                   }
                   type="checkbox"
                   variant="success"
                 >
                   <Themed(ChoiceGroup)
-                    aria-describedby="formField-16-caption"
+                    aria-describedby="formField-31-caption"
                     data={
                       Array [
                         Object {
@@ -2392,8 +2392,8 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                     required={true}
                     rootProps={
                       Object {
-                        "aria-describedby": "formField-16-caption",
-                        "aria-labelledby": "formField-16-labelText",
+                        "aria-describedby": "formField-31-caption",
+                        "aria-labelledby": "formField-31-labelText",
                       }
                     }
                     type="checkbox"
@@ -2402,7 +2402,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                     <ThemeProvider>
                       <ThemeProvider>
                         <ChoiceGroup
-                          aria-describedby="formField-16-caption"
+                          aria-describedby="formField-31-caption"
                           data={
                             Array [
                               Object {
@@ -2432,27 +2432,27 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                           required={true}
                           rootProps={
                             Object {
-                              "aria-describedby": "formField-16-caption",
-                              "aria-labelledby": "formField-16-labelText",
+                              "aria-describedby": "formField-31-caption",
+                              "aria-labelledby": "formField-31-labelText",
                             }
                           }
                           type="checkbox"
                           variant="success"
                         >
                           <ChoiceGroup
-                            aria-describedby="formField-16-caption"
-                            aria-labelledby="formField-16-labelText"
+                            aria-describedby="formField-31-caption"
+                            aria-labelledby="formField-31-labelText"
                             role="group"
                             size="large"
                           >
                             <div
-                              aria-describedby="formField-16-caption"
-                              aria-labelledby="formField-16-labelText"
+                              aria-describedby="formField-31-caption"
+                              aria-labelledby="formField-31-labelText"
                               className="css-1"
                               role="group"
                             >
                               <Checkbox
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 key="0"
                                 label="Naturally occurring"
                                 name="contact"
@@ -2461,7 +2461,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 variant="success"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Naturally occurring"
@@ -2478,7 +2478,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Naturally occurring"
@@ -2497,7 +2497,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Naturally occurring"
@@ -2520,7 +2520,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 size="large"
@@ -2529,7 +2529,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   className="css-4"
                                                   name="contact"
                                                   size="large"
@@ -2592,7 +2592,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 key="1"
                                 label="Inorganic"
                                 name="contact"
@@ -2601,7 +2601,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 variant="success"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Inorganic"
@@ -2618,7 +2618,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Inorganic"
@@ -2637,7 +2637,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Inorganic"
@@ -2660,7 +2660,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 size="large"
@@ -2669,7 +2669,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   className="css-4"
                                                   name="contact"
                                                   size="large"
@@ -2732,7 +2732,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 key="2"
                                 label="Solid"
                                 name="contact"
@@ -2741,7 +2741,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 variant="success"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Solid"
@@ -2758,7 +2758,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Solid"
@@ -2777,7 +2777,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Solid"
@@ -2800,7 +2800,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 size="large"
@@ -2809,7 +2809,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   className="css-4"
                                                   name="contact"
                                                   size="large"
@@ -2872,7 +2872,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 key="3"
                                 label="Definite chemical composition"
                                 name="contact"
@@ -2881,7 +2881,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 variant="success"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Definite chemical composition"
@@ -2898,7 +2898,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Definite chemical composition"
@@ -2917,7 +2917,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Definite chemical composition"
@@ -2940,7 +2940,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 size="large"
@@ -2949,7 +2949,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   className="css-4"
                                                   name="contact"
                                                   size="large"
@@ -3012,7 +3012,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 key="4"
                                 label="Crystalline structure"
                                 name="contact"
@@ -3021,7 +3021,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                 variant="success"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Crystalline structure"
@@ -3038,7 +3038,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Crystalline structure"
@@ -3057,7 +3057,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Crystalline structure"
@@ -3080,7 +3080,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 size="large"
@@ -3089,7 +3089,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   className="css-4"
                                                   name="contact"
                                                   size="large"
@@ -3162,13 +3162,13 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
             </div>
             <glamorous(div)
               caption="Hint: All of the above"
-              id="formField-16-caption"
+              id="formField-31-caption"
               isGroup={true}
               variant="success"
             >
               <div
                 className="css-28"
-                id="formField-16-caption"
+                id="formField-31-caption"
               >
                 Hint: All of the above
               </div>
@@ -3181,7 +3181,7 @@ exports[`CheckboxGroup demo examples form-field 1`] = `
 </DemoForm>
 `;
 
-exports[`CheckboxGroup demo examples inline 1`] = `
+exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -3919,7 +3919,7 @@ exports[`CheckboxGroup demo examples inline 1`] = `
 </DemoForm>
 `;
 
-exports[`CheckboxGroup demo examples uncontrolled 1`] = `
+exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;

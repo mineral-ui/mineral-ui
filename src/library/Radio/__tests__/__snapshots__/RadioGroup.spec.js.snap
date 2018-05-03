@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadioGroup demo examples controlled 1`] = `
+exports[`RadioGroup demo examples Snapshots: controlled 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -756,7 +756,7 @@ exports[`RadioGroup demo examples controlled 1`] = `
 </Component>
 `;
 
-exports[`RadioGroup demo examples data-vs-children 1`] = `
+exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -1969,7 +1969,7 @@ exports[`RadioGroup demo examples data-vs-children 1`] = `
 </DemoForm>
 `;
 
-exports[`RadioGroup demo examples form-field 1`] = `
+exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -2257,13 +2257,13 @@ exports[`RadioGroup demo examples form-field 1`] = `
           >
             <div>
               <glamorous(div)
-                key="formField-16-textWrapper"
+                key="formField-31-textWrapper"
               >
                 <div
                   className="css-26"
                 >
                   <span
-                    id="formField-16-labelText"
+                    id="formField-31-labelText"
                   >
                     What is your preferred contact method?
                   </span>
@@ -2277,7 +2277,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                 </div>
               </glamorous(div)>
               <RadioGroup
-                aria-describedby="formField-16-caption"
+                aria-describedby="formField-31-caption"
                 data={
                   Array [
                     Object {
@@ -2299,18 +2299,18 @@ exports[`RadioGroup demo examples form-field 1`] = `
                   ]
                 }
                 defaultChecked="none"
-                key="formField-16-control"
+                key="formField-31-control"
                 name="contact"
                 required={true}
                 rootProps={
                   Object {
-                    "aria-describedby": "formField-16-caption",
-                    "aria-labelledby": "formField-16-labelText",
+                    "aria-describedby": "formField-31-caption",
+                    "aria-labelledby": "formField-31-labelText",
                   }
                 }
               >
                 <ThemedComponent
-                  aria-describedby="formField-16-caption"
+                  aria-describedby="formField-31-caption"
                   data={
                     Array [
                       Object {
@@ -2337,15 +2337,15 @@ exports[`RadioGroup demo examples form-field 1`] = `
                   required={true}
                   rootProps={
                     Object {
-                      "aria-describedby": "formField-16-caption",
-                      "aria-labelledby": "formField-16-labelText",
+                      "aria-describedby": "formField-31-caption",
+                      "aria-labelledby": "formField-31-labelText",
                       "role": "radiogroup",
                     }
                   }
                   type="radio"
                 >
                   <Themed(ChoiceGroup)
-                    aria-describedby="formField-16-caption"
+                    aria-describedby="formField-31-caption"
                     data={
                       Array [
                         Object {
@@ -2372,8 +2372,8 @@ exports[`RadioGroup demo examples form-field 1`] = `
                     required={true}
                     rootProps={
                       Object {
-                        "aria-describedby": "formField-16-caption",
-                        "aria-labelledby": "formField-16-labelText",
+                        "aria-describedby": "formField-31-caption",
+                        "aria-labelledby": "formField-31-labelText",
                         "role": "radiogroup",
                       }
                     }
@@ -2382,7 +2382,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                     <ThemeProvider>
                       <ThemeProvider>
                         <ChoiceGroup
-                          aria-describedby="formField-16-caption"
+                          aria-describedby="formField-31-caption"
                           data={
                             Array [
                               Object {
@@ -2409,27 +2409,27 @@ exports[`RadioGroup demo examples form-field 1`] = `
                           required={true}
                           rootProps={
                             Object {
-                              "aria-describedby": "formField-16-caption",
-                              "aria-labelledby": "formField-16-labelText",
+                              "aria-describedby": "formField-31-caption",
+                              "aria-labelledby": "formField-31-labelText",
                               "role": "radiogroup",
                             }
                           }
                           type="radio"
                         >
                           <ChoiceGroup
-                            aria-describedby="formField-16-caption"
-                            aria-labelledby="formField-16-labelText"
+                            aria-describedby="formField-31-caption"
+                            aria-labelledby="formField-31-labelText"
                             role="radiogroup"
                             size="large"
                           >
                             <div
-                              aria-describedby="formField-16-caption"
-                              aria-labelledby="formField-16-labelText"
+                              aria-describedby="formField-31-caption"
+                              aria-labelledby="formField-31-labelText"
                               className="css-1"
                               role="radiogroup"
                             >
                               <Radio
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 defaultChecked={false}
                                 key="0"
                                 label="Email"
@@ -2439,7 +2439,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 value="email"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   defaultChecked={false}
                                   iconChecked={<IconRadioButtonCheck />}
                                   inputRef={[Function]}
@@ -2457,7 +2457,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                   value="email"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     defaultChecked={false}
                                     iconChecked={<IconRadioButtonCheck />}
                                     inputRef={[Function]}
@@ -2477,7 +2477,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           defaultChecked={false}
                                           iconChecked={<IconRadioButtonCheck />}
                                           inputRef={[Function]}
@@ -2501,7 +2501,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 aria-required={true}
                                                 defaultChecked={false}
                                                 innerRef={[Function]}
@@ -2512,7 +2512,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                                 value="email"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   aria-required={true}
                                                   className="css-4"
                                                   defaultChecked={false}
@@ -2580,7 +2580,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Radio>
                               <Radio
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 defaultChecked={false}
                                 key="1"
                                 label="Telephone"
@@ -2590,7 +2590,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 value="telephone"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   defaultChecked={false}
                                   iconChecked={<IconRadioButtonCheck />}
                                   inputRef={[Function]}
@@ -2608,7 +2608,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                   value="telephone"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     defaultChecked={false}
                                     iconChecked={<IconRadioButtonCheck />}
                                     inputRef={[Function]}
@@ -2628,7 +2628,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           defaultChecked={false}
                                           iconChecked={<IconRadioButtonCheck />}
                                           inputRef={[Function]}
@@ -2652,7 +2652,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 aria-required={true}
                                                 defaultChecked={false}
                                                 innerRef={[Function]}
@@ -2663,7 +2663,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                                 value="telephone"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   aria-required={true}
                                                   className="css-4"
                                                   defaultChecked={false}
@@ -2731,7 +2731,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Radio>
                               <Radio
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 defaultChecked={false}
                                 key="2"
                                 label="Text message"
@@ -2741,7 +2741,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 value="text"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   defaultChecked={false}
                                   iconChecked={<IconRadioButtonCheck />}
                                   inputRef={[Function]}
@@ -2759,7 +2759,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                   value="text"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     defaultChecked={false}
                                     iconChecked={<IconRadioButtonCheck />}
                                     inputRef={[Function]}
@@ -2779,7 +2779,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           defaultChecked={false}
                                           iconChecked={<IconRadioButtonCheck />}
                                           inputRef={[Function]}
@@ -2803,7 +2803,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 aria-required={true}
                                                 defaultChecked={false}
                                                 innerRef={[Function]}
@@ -2814,7 +2814,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                                 value="text"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   aria-required={true}
                                                   className="css-4"
                                                   defaultChecked={false}
@@ -2882,7 +2882,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 </ThemedComponent>
                               </Radio>
                               <Radio
-                                aria-describedby="formField-16-caption"
+                                aria-describedby="formField-31-caption"
                                 defaultChecked={true}
                                 key="3"
                                 label="None"
@@ -2892,7 +2892,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                 value="none"
                               >
                                 <ThemedComponent
-                                  aria-describedby="formField-16-caption"
+                                  aria-describedby="formField-31-caption"
                                   defaultChecked={true}
                                   iconChecked={<IconRadioButtonCheck />}
                                   inputRef={[Function]}
@@ -2910,7 +2910,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                   value="none"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-16-caption"
+                                    aria-describedby="formField-31-caption"
                                     defaultChecked={true}
                                     iconChecked={<IconRadioButtonCheck />}
                                     inputRef={[Function]}
@@ -2930,7 +2930,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-16-caption"
+                                          aria-describedby="formField-31-caption"
                                           defaultChecked={true}
                                           iconChecked={<IconRadioButtonCheck />}
                                           inputRef={[Function]}
@@ -2954,7 +2954,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                               className="css-2"
                                             >
                                               <glamorous(input)
-                                                aria-describedby="formField-16-caption"
+                                                aria-describedby="formField-31-caption"
                                                 aria-required={true}
                                                 defaultChecked={true}
                                                 innerRef={[Function]}
@@ -2965,7 +2965,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
                                                 value="none"
                                               >
                                                 <input
-                                                  aria-describedby="formField-16-caption"
+                                                  aria-describedby="formField-31-caption"
                                                   aria-required={true}
                                                   className="css-4"
                                                   defaultChecked={true}
@@ -3043,12 +3043,12 @@ exports[`RadioGroup demo examples form-field 1`] = `
             </div>
             <glamorous(div)
               caption="We promise not to spam you."
-              id="formField-16-caption"
+              id="formField-31-caption"
               isGroup={true}
             >
               <div
                 className="css-28"
-                id="formField-16-caption"
+                id="formField-31-caption"
               >
                 We promise not to spam you.
               </div>
@@ -3061,7 +3061,7 @@ exports[`RadioGroup demo examples form-field 1`] = `
 </DemoForm>
 `;
 
-exports[`RadioGroup demo examples inline 1`] = `
+exports[`RadioGroup demo examples Snapshots: inline 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -3797,7 +3797,7 @@ exports[`RadioGroup demo examples inline 1`] = `
 </DemoForm>
 `;
 
-exports[`RadioGroup demo examples uncontrolled 1`] = `
+exports[`RadioGroup demo examples Snapshots: uncontrolled 1`] = `
 .css-0 > *:not(:last-child),
 [data-css-0] > *:not(:last-child) {
   margin-bottom: 1rem;
