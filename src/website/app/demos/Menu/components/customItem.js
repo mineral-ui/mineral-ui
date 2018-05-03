@@ -1,5 +1,5 @@
 import React from 'react';
-import { withTheme } from 'glamorous';
+import { withTheme } from '../../../../../library/themes';
 import { createStyledComponent, pxToEm } from '../../../../../library/styles';
 import Avatar from '../../../../../library/Avatar';
 import { componentTheme as menuItemTheme } from '../../../../../library/Menu/MenuItem';

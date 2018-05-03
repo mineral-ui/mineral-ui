@@ -1,10 +1,9 @@
 /* @flow */
-import { withTheme } from 'glamorous';
 import {
   createStyledComponent,
   pxToEm
 } from '../../../../../../library/styles';
-import { mineralTheme } from '../../../../../../library/themes';
+import { mineralTheme, withTheme } from '../../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
 import Avatar from '../../../../../../library/Avatar';
 import DemoLayout from '../../components/DemoLayout';
@@ -63,7 +62,7 @@ Some things to keep in mind:
        * If you wish to use theme variables in your function, you must either use
        * createStyledComponent or the withTheme HOC, (higher order component),
        * which provides the base theme as a prop.
-       *   import { withTheme } from 'glamorous';
+       *   import { withTheme } from 'mineral-ui/themes';
        *
        * If you wish to access a component specific theme, you'll need to import
        * it and compose it with the base theme as shown below.
