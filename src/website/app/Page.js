@@ -50,7 +50,9 @@ type State = {
 
 const pageThemes = [
   {
-    borderColor_theme_focus: siteColors.cranberry,
+    borderColor_theme: siteColors.cranberry,
+    borderColor_theme_focus: siteColors.cranberry_focus,
+    borderColor_theme_hover: siteColors.cranberry_hover,
     color_theme: siteColors.cranberry,
 
     icon_color_theme: siteColors.cranberry,
@@ -71,7 +73,9 @@ const pageThemes = [
     SiteLink_color_hover: siteColors.cranberry_hover
   },
   {
-    borderColor_theme_focus: siteColors.grape,
+    borderColor_theme: siteColors.grape,
+    borderColor_theme_focus: siteColors.grape_focus,
+    borderColor_theme_hover: siteColors.grape_hover,
     color_theme: siteColors.grape,
 
     icon_color_theme: siteColors.grape,
@@ -92,7 +96,9 @@ const pageThemes = [
     SiteLink_color_hover: siteColors.grape_hover
   },
   {
-    borderColor_theme_focus: siteColors.orangePunch,
+    borderColor_theme: siteColors.orangePunch,
+    borderColor_theme_focus: siteColors.orangePunch_focus,
+    borderColor_theme_hover: siteColors.orangePunch_hover,
     color_theme: siteColors.orangePunch,
 
     icon_color_theme: siteColors.orangePunch,

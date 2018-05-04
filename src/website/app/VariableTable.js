@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../library/styles';
-import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
+import { Table as _Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
 import { darken, getLuminance } from 'polished';
 
@@ -16,6 +16,9 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   margin: `${theme.space_stack_xl} 0 0`,
   overflowX: 'auto'
 }));
+const Table = createStyledComponent(_Table, {
+  tableLayout: 'fixed'
+});
 const Name = createStyledComponent('span', ({ theme }) => ({
   fontWeight: theme.fontWeight_semiBold
 }));

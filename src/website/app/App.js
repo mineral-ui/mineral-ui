@@ -57,7 +57,9 @@ const siteTheme = {
   textShadow: '2px 2px 2px rgba(0,0,0,0.2)',
 
   borderColor: siteColors.slate,
-  borderColor_theme_focus: siteColors.jade,
+  borderColor_theme: siteColors.jade,
+  borderColor_theme_focus: siteColors.jade_focus,
+  borderColor_theme_hover: siteColors.jade_hover,
   color: mineralTheme.color_gray_80,
   color_theme: siteColors.jade,
   fontFamily: null,

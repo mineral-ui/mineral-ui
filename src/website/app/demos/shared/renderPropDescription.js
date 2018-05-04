@@ -1,3 +1,4 @@
+/* @flow */
 /* eslint-disable no-irregular-whitespace */
 export default `The callback function will be invoked with an object parameter
 containing the following information and utilities to help customize your
