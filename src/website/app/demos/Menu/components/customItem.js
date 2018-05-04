@@ -1,3 +1,4 @@
+/* @flow */
 import React from 'react';
 import { withTheme } from '../../../../../library/themes';
 import { createStyledComponent, pxToEm } from '../../../../../library/styles';

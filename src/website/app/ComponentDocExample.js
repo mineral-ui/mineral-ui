@@ -1,13 +1,9 @@
 /* @flow */
 import React from 'react';
-import {
-  createStyledComponent,
-  getNormalizedValue,
-  pxToEm
-} from '../../library/styles';
+import { createStyledComponent, pxToEm } from '../../library/styles';
 import IconArrowBack from 'mineral-ui-icons/IconArrowBack';
 import Callout from './Callout';
-import Heading from './SiteHeading';
+import SubHeading from './SiteSubHeading';
 import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
 import Markdown from './Markdown';
@@ -56,46 +52,11 @@ const styles = {
       fontWeight: 'inherit',
       maxWidth: theme.maxTextWidth
     }
-  }),
-  title: ({ theme }) => ({
-    margin: `0 0 ${getNormalizedValue(
-      pxToEm(21 - 12), // to mid-baseline
-      theme.SiteHeading_fontSize_3
-    )}`,
-    paddingTop: getNormalizedValue(
-      pxToEm(68), // to baseline
-      theme.SiteHeading_fontSize_3
-    ),
-
-    [theme.bp_moreSpacious]: {
-      fontSize: theme.SiteHeading_fontSize_3_wide,
-      margin: `0 0 ${getNormalizedValue(
-        pxToEm(19 - 12), // to mid-baseline
-        theme.SiteHeading_fontSize_3_wide
-      )}`,
-      paddingTop: getNormalizedValue(
-        pxToEm(80), // to baseline
-        theme.SiteHeading_fontSize_3_wide
-      )
-    },
-
-    '& > a:link': {
-      color: 'inherit',
-      fontWeight: 'inherit',
-      textDecoration: 'none',
-
-      '&:hover': {
-        textDecoration: 'underline'
-      }
-    }
   })
 };
 
 const Root = createStyledComponent('div', styles.componentDocExample);
 const Description = createStyledComponent(Markdown, styles.description);
-const Title = createStyledComponent(Heading, styles.title).withProps({
-  level: 3
-});
 const BackLink = createStyledComponent(Link, styles.backLink);
 
 export default function ComponentDocExample({
@@ -147,13 +108,13 @@ export default function ComponentDocExample({
           <IconArrowBack color="currentColor" size="small" /> {componentName}
         </BackLink>
       )}
-      <Title id={!standalone ? id : undefined}>
+      <SubHeading id={!standalone ? id : undefined}>
         {!standalone ? (
           <Link to={`/components/${slug}/${id}`}>{title}</Link>
         ) : (
           title
         )}
-      </Title>
+      </SubHeading>
       <Description {...descriptionProps}>{description || ''}</Description>
       {liveCode}
     </Root>

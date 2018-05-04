@@ -34,6 +34,13 @@ const sections: Array<Section> = [
         title: 'Color'
       },
       {
+        component: 'Tokens',
+        description:
+          'Tokens act as the source of truth for atomic design attributes.',
+        path: '/tokens',
+        title: 'Tokens'
+      },
+      {
         component: 'Typography',
         description:
           'Mineral UI provides a simple set of typographic elements to easily apply structure to your interface.',
@@ -61,6 +68,7 @@ const sections: Array<Section> = [
       }
     ]
   },
+
   {
     heading: 'Customization',
     pages: [
