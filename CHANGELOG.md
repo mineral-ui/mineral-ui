@@ -1,3 +1,30 @@
+<a name="0.32.0"></a>
+# [0.32.0](https://github.com/mineral-ui/mineral-ui/compare/v0.31.0...v0.32.0) (2018-05-07)
+
+
+### Bug Fixes
+
+* **styles:** add tests and fix behavior of pxToEm ([19d6988](https://github.com/mineral-ui/mineral-ui/commit/19d6988))
+
+
+### Code Refactoring
+
+* **mineral-ui-tokens:** Misc updates ([bd85bbe](https://github.com/mineral-ui/mineral-ui/commit/bd85bbe))
+
+
+### Features
+
+* **themes:** Expose withTheme higher order component ([b6ec40a](https://github.com/mineral-ui/mineral-ui/commit/b6ec40a))
+
+
+### BREAKING CHANGES
+
+* **styles:** Only transform numbers or strings in px units.
+All other input errors.
+* **mineral-ui-tokens:** Fix incorrect sass variable name format
+
+
+
 <a name="0.31.0"></a>
 # [0.31.0](https://github.com/mineral-ui/mineral-ui/compare/v0.30.0...v0.31.0) (2018-05-02)
 
