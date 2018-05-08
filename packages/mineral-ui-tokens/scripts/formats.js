@@ -10,38 +10,61 @@ const categories = (input) =>
 
 const convertKeyToSass = (k) => k.replace(/_/g, '-');
 
-const removeTheoValueQuotes = (value) =>
-  typeof value === 'string' ? value.replace(/'/g, '') : value;
-
 const defaultExport = (result) => `export default ${result}`;
+
+const formatBlackAndWhite = (input) =>
+  formatProperties({
+    filter: (prop) => ['black', 'white'].includes(prop.get('name')),
+    input
+  });
+
+const formatCategories = (input, keyTemplate) =>
+  formatGroups(
+    (prop, category) => prop.get('category') === category,
+    input,
+    categories(input),
+    keyTemplate
+  );
+
+const formatColors = (input) =>
+  formatGroups(
+    (prop, color) => prop.get('name').includes(color),
+    input,
+    keys.colors,
+    (name) => `[${name.split('_')[1]}]`
+  );
+
+const formatGroups = (filter, input, source, keyTemplate) =>
+  source.reduce((acc, sourceItem) => {
+    acc[sourceItem] = formatProperties({
+      filter: (prop) => filter(prop, sourceItem),
+      input,
+      keyTemplate
+    });
+    return acc;
+  }, {});
 
 // JSON.stringify() adds double quotes to properties and values. The following
 // formats that object to remove double-quote-wrapping and escapes, e.g.:
 // * "backgroundColor_active": "#ebeff5" => backgroundColor_active: '#ebeff5'
 // * "fontWeight_regular": 400 => fontWeight_regular: 400
 // * "fontFamily": "\"Open Sans\"" => fontFamily: '"Open Sans"'
-const formatQuotes = (result) =>
-  prettifyJson(result)
+const formatOutput = (result) =>
+  JSON.stringify(result, null, 2)
     .replace(/"(.*)": /g, '$1: ')
     .replace(/: "(.*)"/g, ": '$1'")
     .replace(/\\"/g, '"');
 
-const prettifyJson = (result) => JSON.stringify(result, null, 2);
-
-const namedExports = (tokens, exportFormat) =>
-  Object.entries(tokens)
-    .map(exportFormat)
-    .join('\n');
-
-const formatCategories = (input, keyTemplate = (k) => k) =>
-  categories(input).reduce((acc, category) => {
-    acc[category] = formatProperties({
-      filter: (prop) => prop.get('category') === category,
-      input,
-      keyTemplate
-    });
-    return acc;
-  }, {});
+const formatRampGroups = (input) =>
+  formatGroups(
+    (prop, rampGroup) =>
+      prop.get('type') === 'color' &&
+      (rampGroup === 'theme'
+        ? prop.get(rampGroupFilters[rampGroup]).includes('brand')
+        : prop.get(rampGroupFilters[rampGroup]).includes(rampGroup)),
+    input,
+    Object.keys(rampGroupFilters)
+  );
 
 const formatProperties = ({
   filter = (prop) => !!prop,
@@ -59,22 +82,40 @@ const formatProperties = ({
       return acc;
     }, {});
 
+const namedExports = (tokens, exportFormat) =>
+  Object.entries(tokens)
+    .map(exportFormat)
+    .join('\n');
+
+const rampGroupFilters = {
+  black: 'originalValue',
+  danger: 'name',
+  gray: 'originalValue',
+  success: 'name',
+  theme: 'name',
+  warning: 'name',
+  white: 'originalValue'
+};
+
+const removeTheoValueQuotes = (value) =>
+  typeof value === 'string' ? value.replace(/'/g, '') : value;
+
 module.exports = {
   categorizedJsExports: (input) => {
-    return defaultExport(prettifyJson(formatCategories(input)));
+    return defaultExport(formatOutput(formatCategories(input)));
   },
 
   categorizedSassExports: (input) => {
     return defaultExport(
-      prettifyJson(
-        formatCategories(input, (k) => `$mnrl-${convertKeyToSass(k)}`)
+      formatOutput(
+        formatCategories(input, (k) => `'$mnrl-${convertKeyToSass(k)}'`)
       )
     );
   },
 
   colorAliases: (input) => {
     return defaultExport(
-      formatQuotes(
+      formatOutput(
         formatProperties({
           filter: (prop) => prop.get('type') === 'color',
           getValue: (prop) =>
@@ -87,7 +128,7 @@ module.exports = {
 
   colorExport: (input) => {
     return defaultExport(
-      formatQuotes(
+      formatOutput(
         formatProperties({
           input,
           // Additional brackets are because flow does not support non-string
@@ -100,7 +141,11 @@ module.exports = {
   },
 
   defaultExport: (input) => {
-    return defaultExport(formatQuotes(formatProperties({ input })));
+    return defaultExport(formatOutput(formatProperties({ input })));
+  },
+
+  groupedByRampJsExports: (input) => {
+    return defaultExport(formatOutput(formatRampGroups(input)));
   },
 
   index: (input) => {
@@ -134,5 +179,17 @@ module.exports = {
       const value = typeof token[1] === 'string' ? `'${token[1]}'` : token[1];
       return `export const ${token[0]} = ${value};`;
     });
+  },
+
+  paletteWithKeysAndType: (input) => {
+    return defaultExport(
+      formatOutput({
+        ...formatColors(input),
+        ...formatBlackAndWhite(input)
+      })
+    ).concat(`;
+
+export type Color =
+${keys.colors.map((color) => `  | '${color}'`).join('\n')};\n`);
   }
 };
