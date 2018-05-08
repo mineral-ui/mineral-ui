@@ -57,9 +57,27 @@ const latestPost = {
 };
 
 const playgroundThemes = [
-  { name: 'Magenta', ...createTheme('magenta', { fontFamily: null }) },
-  { name: 'Purple', ...createTheme('purple', { fontFamily: null }) },
-  { name: 'Indigo', ...createTheme('indigo', { fontFamily: null }) }
+  {
+    name: 'Magenta',
+    ...createTheme({
+      colors: { theme: 'magenta' },
+      overrides: { fontFamily: null }
+    })
+  },
+  {
+    name: 'Purple',
+    ...createTheme({
+      colors: { theme: 'purple' },
+      overrides: { fontFamily: null }
+    })
+  },
+  {
+    name: 'Indigo',
+    ...createTheme({
+      colors: { theme: 'indigo' },
+      overrides: { fontFamily: null }
+    })
+  }
 ];
 
 const homeTheme = {

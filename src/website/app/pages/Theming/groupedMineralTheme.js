@@ -1,10 +1,10 @@
 /* @flow */
-import categorizedJsTokens from '../../categorizedJsTokens';
 import { black, brand, gray, white } from 'mineral-ui-tokens';
 import { createColorRamp, themeFromTokens } from '../../../../library/themes';
 import { nonTokenVariables } from '../../../../library/themes/createTheme';
+import categorizedJsTokens from '../../generated/categorizedJsTokens';
 
-const { boxShadow_focusInner, direction, fontSize_base } = nonTokenVariables;
+const { boxShadow_focusInner, direction, fontSize_base } = nonTokenVariables();
 
 const grayRamp = createColorRamp(gray, 'color_gray_');
 const themeRamp = createColorRamp(brand, 'color_theme_');
@@ -26,7 +26,7 @@ export default Object.keys(categorizedJsTokens)
       tokens = { ...tokens, fontSize_base };
     }
 
-    return [category, themeFromTokens({ tokens })];
+    return [category, themeFromTokens(tokens)];
   })
   .concat([
     ['Other', { direction }],

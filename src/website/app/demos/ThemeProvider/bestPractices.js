@@ -6,8 +6,10 @@ export default [
 will be easier to change later.`,
     example: `
 \`\`\`
-const myTheme = createTheme('blue', {
-  color: 'rebeccapurple'
+const myTheme = createTheme({
+  overrides: {
+    color_required: 'rebeccapurple'
+  }
 });
 
 <ThemeProvider theme={myTheme}>

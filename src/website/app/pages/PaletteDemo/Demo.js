@@ -28,10 +28,15 @@ const menuData: ItemGroups = [
   {
     title: 'Menu Title',
     items: [
-      { text: 'Menu Item', iconEnd: <IconSpa /> },
-      { text: 'Menu Item', variant: 'success' },
-      { text: 'With icon', iconStart: <IconSpa />, variant: 'warning' },
-      { text: 'Menu Item', variant: 'danger' }
+      { id: 'item-1', text: 'Menu Item', iconEnd: <IconSpa /> },
+      { id: 'item-2', text: 'Menu Item', variant: 'success' },
+      {
+        id: 'item-3',
+        text: 'With icon',
+        iconStart: <IconSpa />,
+        variant: 'warning'
+      },
+      { id: 'item-4', text: 'Menu Item', variant: 'danger' }
     ]
   }
 ];
@@ -120,6 +125,7 @@ export default function Demo({ theme }: Props) {
             <Dropdown
               data={menuData}
               isOpen
+              itemKey="id"
               modifiers={{ flip: { enabled: false } }}>
               <Button>Always Open Dropdown</Button>
             </Dropdown>
