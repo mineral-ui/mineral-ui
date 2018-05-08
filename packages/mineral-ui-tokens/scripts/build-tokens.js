@@ -8,15 +8,22 @@ const formats = require('./formats');
 const keys = require('./keys');
 const colorIndex = require('../tokens/palette');
 
-const MINERAL_TOKENS_DIR = path.join(__dirname, '../tokens');
-const MINERAL_TOKENS_COLORS_DIR = path.join(MINERAL_TOKENS_DIR, '/palette');
-const SRC_DIR = path.join(__dirname, '../src');
-const WEBSITE_DIR = path.join(__dirname, '../../../src/website/app');
+const TOKENS_DIR = path.join(__dirname, '../tokens');
+const TOKENS_COLORS_DIR = path.join(TOKENS_DIR, '/palette');
+const TOKENS_SRC_DIR = path.join(__dirname, '../src');
+const LIBRARY_THEMES_GENERATED_DIR = path.join(
+  __dirname,
+  '../../../src/library/themes/generated'
+);
+const WEBSITE_GENERATED_DIR = path.join(
+  __dirname,
+  '../../../src/website/app/generated'
+);
 
 const args = process.argv.slice(2);
 
-if (!fs.existsSync(SRC_DIR)) {
-  fs.mkdirSync(SRC_DIR);
+if (!fs.existsSync(TOKENS_SRC_DIR)) {
+  fs.mkdirSync(TOKENS_SRC_DIR);
 }
 
 theo.registerFormat('colorAliases.js', formats.colorAliases);
@@ -28,8 +35,16 @@ theo.registerFormat(
   formats.categorizedSassExports
 );
 theo.registerFormat('index.js', formats.index);
+theo.registerFormat(
+  'groupedByRampJsExports.js',
+  formats.groupedByRampJsExports
+);
 theo.registerFormat('mnrlScss', formats.mnrlScss);
 theo.registerFormat('namedExports.js', formats.namedExports);
+theo.registerFormat(
+  'paletteWithKeysAndType.js',
+  formats.paletteWithKeysAndType
+);
 
 theo.registerValueTransform(
   'addQuotes',
@@ -50,25 +65,45 @@ const configurations = [
   {
     // Tokens
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokens.json'),
+      file: path.join(TOKENS_DIR, 'tokens.json'),
       type: 'js'
     },
     format: { type: 'defaultExport.js' },
     fileName: 'tokens.js'
   },
   {
+    // Grouped JS tokens by color ramp
+    transform: {
+      file: path.join(TOKENS_DIR, 'tokens.json'),
+      type: 'js'
+    },
+    format: { type: 'groupedByRampJsExports.js' },
+    fileName: 'groupedByRampJsTokens.js',
+    writeDir: LIBRARY_THEMES_GENERATED_DIR
+  },
+  {
     // Just the color palette
     transform: {
-      file: path.join(MINERAL_TOKENS_COLORS_DIR, 'index.json'),
+      file: path.join(TOKENS_COLORS_DIR, 'index.json'),
       type: 'js'
     },
     format: { type: 'defaultExport.js' },
     fileName: 'palette.js'
   },
   {
+    // Grouped palette
+    transform: {
+      file: path.join(TOKENS_COLORS_DIR, 'index.json'),
+      type: 'js'
+    },
+    format: { type: 'paletteWithKeysAndType.js' },
+    fileName: 'palette.js',
+    writeDir: LIBRARY_THEMES_GENERATED_DIR
+  },
+  {
     // Tokens and palette
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json'),
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
       type: 'js'
     },
     format: { type: 'namedExports.js' },
@@ -77,7 +112,7 @@ const configurations = [
   {
     // Tokens and palette, in Sass
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json')
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json')
     },
     format: { type: 'mnrlScss' },
     fileName: 'index.scss'
@@ -85,7 +120,7 @@ const configurations = [
   {
     // Index
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json')
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json')
     },
     format: { type: 'index.js' },
     fileName: 'index.js'
@@ -93,30 +128,31 @@ const configurations = [
   {
     // Grouped JS tokens by category
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json'),
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
       type: 'js'
     },
     format: { type: 'categorizedJsExports.js' },
     fileName: 'categorizedJsTokens.js',
-    writeDir: WEBSITE_DIR
+    writeDir: WEBSITE_GENERATED_DIR
   },
   {
     // Grouped Sass tokens by category
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json'),
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
       type: 'js'
     },
     format: { type: 'categorizedSassExports.js' },
     fileName: 'categorizedSassTokens.js',
-    writeDir: WEBSITE_DIR
+    writeDir: WEBSITE_GENERATED_DIR
   },
   {
     // All tokens with color values
     transform: {
-      file: path.join(MINERAL_TOKENS_DIR, 'tokens.json')
+      file: path.join(TOKENS_DIR, 'tokens.json')
     },
     format: { type: 'colorAliases.js' },
-    fileName: 'colorAliases.js'
+    fileName: 'colorAliases.js',
+    writeDir: LIBRARY_THEMES_GENERATED_DIR
   }
 ];
 
@@ -130,7 +166,7 @@ keys.colors.forEach((color) => {
   configurations.push({
     transform: {
       data: JSON.stringify(data),
-      file: path.join(MINERAL_TOKENS_COLORS_DIR, `${color}.json`),
+      file: path.join(TOKENS_COLORS_DIR, `${color}.json`),
       type: 'js'
     },
     format: { type: 'colorExport.js' },
@@ -142,7 +178,7 @@ if (args.includes('--debug')) {
   configurations.push({
     transform: {
       type: 'web',
-      file: path.join(MINERAL_TOKENS_DIR, 'tokensAndPalette.json')
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json')
     },
     format: {
       type: 'raw.json'
@@ -152,7 +188,7 @@ if (args.includes('--debug')) {
 }
 
 configurations.forEach(
-  ({ transform, format, fileName, writeDir = SRC_DIR }) => {
+  ({ transform, format, fileName, writeDir = TOKENS_SRC_DIR }) => {
     theo
       .convert({ transform, format })
       .then((result) => {
