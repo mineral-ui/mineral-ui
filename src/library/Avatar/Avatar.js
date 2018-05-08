@@ -54,7 +54,7 @@ const Root = createStyledComponent(
   }) => {
     const theme = componentTheme(baseTheme);
 
-    const color = propColor || theme.color_primary;
+    const color = propColor || theme.color_themePrimary;
     const size = theme[`Avatar_size_${propSize}`];
 
     return {
