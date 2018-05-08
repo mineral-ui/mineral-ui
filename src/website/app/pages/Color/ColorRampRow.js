@@ -81,7 +81,7 @@ export default function ColorRampRow({ name }: Props) {
   const accessibility = colorable({
     main,
     black: palette.black,
-    white: '#fff'
+    white: palette.white
   });
 
   const hsl = accessibility.find((result) => result.name === 'main').values.hsl;

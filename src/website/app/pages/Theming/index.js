@@ -1,6 +1,8 @@
 /* @flow */
 import React, { Fragment } from 'react';
 import Button from '../../SiteButton';
+import Callout from '../../Callout';
+import Link from '../../SiteLink';
 import Markdown from '../../Markdown';
 import SubHeading from '../../SiteSubHeading';
 import VariableTable from '../../VariableTable';
@@ -13,15 +15,14 @@ type Props = {};
 export default function Theming(props: Props) {
   return (
     <div {...props}>
-      <Markdown scope={{ Button }}>{content}</Markdown>
+      <Markdown scope={{ Button, Callout, Link }}>{content}</Markdown>
       {groupedMineralTheme.map((group) => {
         const [title, values] = group;
-        const themeGroup = typeof values === 'function' ? values() : values;
         return (
           <Fragment key={title}>
             <SubHeading id={title}>{title}</SubHeading>
             <VariableTable
-              themeToDisplay={themeGroup}
+              themeToDisplay={values}
               value={getValue}
               valueColor={getColor}
             />

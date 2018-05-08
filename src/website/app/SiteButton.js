@@ -22,7 +22,7 @@ const componentTheme = baseTheme => ({
   Button_boxShadow_focus: baseTheme.SiteButton_boxShadow_focus || `0 0 0 1px ${baseTheme.borderColor_theme_focus}`,
   Button_color: baseTheme.SiteButton_color || baseTheme.color_gray_100,
   Button_color_minimal: baseTheme.SiteButton_color_minimal || baseTheme.color_theme,
-  Button_color_primary: baseTheme.SiteButton_color_primary || baseTheme.color_primary,
+  Button_color_primary: baseTheme.SiteButton_color_primary || baseTheme.color_themePrimary,
   Button_fontWeight: baseTheme.SiteButton_fontWeight || baseTheme.fontWeight_semiBold,
   Button_paddingHorizontal: baseTheme.SiteButton_paddingHorizontal || baseTheme.space_inset_sm,
   Button_paddingIconOnly_small: baseTheme.SiteButton_paddingIconOnly_small || pxToEm(3),

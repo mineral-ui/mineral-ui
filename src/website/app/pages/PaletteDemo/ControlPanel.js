@@ -1,28 +1,20 @@
 /* @flow */
 import React from 'react';
-import { gray, palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../library/styles';
 import { createColorRamp, ThemeProvider } from '../../../../library/themes';
+import palette, {
+  type Color
+} from '../../../../library/themes/generated/palette';
 import Paragraph from '../../Paragraph';
 import ColorRamp from './ColorRamp';
 import Picker from './Picker';
 
 type Props = {
-  activeColor: Colors,
-  availableThemes: Array<Colors>,
-  changeTheme: (Colors) => void,
+  activeColor: Color,
+  availableThemes: Array<Color>,
+  changeTheme: (Color) => void,
   theme: { [string]: any }
 };
-
-type Colors =
-  | 'blue'
-  | 'dusk'
-  | 'indigo'
-  | 'magenta'
-  | 'purple'
-  | 'sky'
-  | 'slate'
-  | 'teal';
 
 const styles = {
   description: ({ theme }) => ({
@@ -62,8 +54,8 @@ export default function ControlPanel({
   changeTheme,
   theme
 }: Props) {
-  const themeRamp = createColorRamp(palette, 'color_theme', activeColor);
-  const grayRamp = createColorRamp(gray, 'gray_');
+  const themeRamp = createColorRamp(palette[activeColor], 'color_theme_');
+  const grayRamp = createColorRamp(palette.gray, 'gray_');
 
   return (
     <Root>

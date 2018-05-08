@@ -6,6 +6,7 @@ import {
   mineralTheme,
   ThemeProvider
 } from '../../../../library/themes';
+import { type Color } from '../../../../library/themes/generated/palette';
 import _Intro from '../../Intro';
 import ControlPanel from './ControlPanel';
 import Demo from './Demo';
@@ -14,19 +15,9 @@ import content from './paletteDemo.md';
 type Props = {};
 
 type State = {
-  activeColor: Colors,
+  activeColor: Color,
   theme: { [string]: any }
 };
-
-type Colors =
-  | 'blue'
-  | 'dusk'
-  | 'indigo'
-  | 'magenta'
-  | 'purple'
-  | 'sky'
-  | 'slate'
-  | 'teal';
 
 const breakpoints = {
   bp_mobile: '@media(max-width: 45em)',
@@ -97,8 +88,11 @@ const LeftColumn = createStyledComponent('div', styles.leftColumn);
 const RightColumn = createStyledComponent('div', styles.rightColumn);
 
 const mineralColor = 'blue';
-const defaultTheme = createTheme(mineralColor, {
-  ...breakpoints
+const defaultTheme = createTheme({
+  colors: { theme: mineralColor },
+  overrides: {
+    ...breakpoints
+  }
 });
 
 export default class PaletteDemo extends Component<Props, State> {
@@ -134,8 +128,8 @@ export default class PaletteDemo extends Component<Props, State> {
     );
   }
 
-  handleThemeChange = (color: Colors) => {
-    const newTheme = createTheme(color);
+  handleThemeChange = (color: Color) => {
+    const newTheme = createTheme({ colors: { theme: color } });
     this.setState({ activeColor: color, theme: newTheme });
   };
 }

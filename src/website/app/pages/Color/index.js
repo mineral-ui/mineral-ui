@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../library/styles';
+import { type Color as ColorType } from '../../../../library/themes/generated/palette';
 import Markdown from '../../Markdown';
 import ColorRamp from './ColorRamp';
 import RampLegend from './RampLegend';
@@ -9,7 +10,8 @@ import content from './color.md';
 
 type Props = {};
 
-const baseColors = [
+// Not generated from palette because of the opinionated order.
+const baseColors: Array<ColorType | 'black'> = [
   'red',
   'magenta',
   'purple',

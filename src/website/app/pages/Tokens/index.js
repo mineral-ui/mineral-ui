@@ -1,11 +1,11 @@
 /* @flow */
 import React, { Component, Fragment } from 'react';
-import categorizedJsTokens from '../../categorizedJsTokens';
-import categorizedSassTokens from '../../categorizedSassTokens';
 import { createStyledComponent } from '../../../../library/styles';
 import Box from '../../../../library/Box';
 import { FormField } from '../../../../library/Form';
 import { RadioGroup } from '../../../../library/Radio';
+import categorizedJsTokens from '../../generated/categorizedJsTokens';
+import categorizedSassTokens from '../../generated/categorizedSassTokens';
 import _Callout from '../../Callout';
 import Button from '../../SiteButton';
 import Markdown from '../../Markdown';

@@ -17,7 +17,7 @@ const Root = createStyledComponent('span', ({ theme, variant }) => {
     backgroundColor,
     borderRadius: theme.borderRadius_1,
     bottom: '0.15em', // optical adjustment for middle vertical alignment
-    color: theme.color_primary,
+    color: theme.color_themePrimary,
     fontSize: theme.fontSize_mouse,
     padding: `${theme.space_stack_xs} ${theme.space_inset_sm}`,
     position: 'relative', // optical adjustment for middle vertical alignment

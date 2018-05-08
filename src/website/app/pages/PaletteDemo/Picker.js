@@ -2,16 +2,18 @@
 import React, { Component } from 'react';
 import { Transition } from 'react-transition-group';
 import { canUseDOM } from 'exenv';
-import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../library/styles';
+import palette, {
+  type Color
+} from '../../../../library/themes/generated/palette';
 import IconKeyboardArrowDown from 'mineral-ui-icons/IconKeyboardArrowDown';
 import Heading from '../../SiteHeading';
 import Paragraph from '../../Paragraph';
 
 type Props = {
-  activeColor: Colors,
-  availableThemes: Array<Colors>,
-  changeTheme: (Colors) => void
+  activeColor: Color,
+  availableThemes: Array<Color>,
+  changeTheme: (Color) => void
 };
 
 type State = {
@@ -20,9 +22,9 @@ type State = {
 };
 
 type FlipProps = {
-  activeColor: Colors,
-  colorName: Colors,
-  handleColorChange: (Colors) => void,
+  activeColor: Color,
+  colorName: Color,
+  handleColorChange: (Color) => void,
   in: boolean
 };
 
@@ -30,16 +32,6 @@ type GrowProps = {
   in: boolean,
   children: React$Node
 };
-
-type Colors =
-  | 'blue'
-  | 'dusk'
-  | 'indigo'
-  | 'magenta'
-  | 'purple'
-  | 'sky'
-  | 'slate'
-  | 'teal';
 
 const duration = 350;
 const quintOut = 'cubic-bezier(0.23, 1, 0.32, 1)';
@@ -89,9 +81,9 @@ const styles = {
 
   option: ({ theme, active, name }) => {
     const css = {
-      backgroundColor: palette[`${name}_60`],
+      backgroundColor: palette[name][60],
       borderRadius: theme.borderRadius_1,
-      color: theme.color_primary,
+      color: theme.color_themePrimary,
       cursor: 'pointer',
       display: 'inline-block',
       marginTop: 0,
@@ -136,9 +128,9 @@ const styles = {
   },
 
   swatch: ({ theme, activeColor, isOpen }) => {
-    const hue = palette[`${activeColor}_60`];
+    const hue = palette[activeColor][60];
     return {
-      color: theme.color_primary,
+      color: theme.color_themePrimary,
       backgroundColor: hue,
       borderRadius: theme.borderRadius_1,
       cursor: 'pointer',
@@ -206,7 +198,7 @@ const Flip = ({
           onClick={() => handleColorChange(colorName)}>
           {colorName}
           <br />
-          {palette[`${colorName}_60`]}
+          {palette[colorName][60]}
         </Option>
       );
     }}
@@ -257,7 +249,7 @@ export default class Picker extends Component<Props, State> {
     );
   }
 
-  handleColorChange = (color: Colors) => {
+  handleColorChange = (color: Color) => {
     this.props.changeTheme(color);
   };
 
