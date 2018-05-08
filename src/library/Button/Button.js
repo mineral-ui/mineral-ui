@@ -50,7 +50,7 @@ export const componentTheme = (baseTheme: Object) => ({
   Button_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${baseTheme.borderColor_theme_focus}`,
   Button_color: baseTheme.color,
   Button_color_minimal: baseTheme.color_theme,
-  Button_color_primary: baseTheme.color_primary,
+  Button_color_primary: baseTheme.color_themePrimary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
   Button_paddingHorizontal: baseTheme.space_inset_sm,
   Button_paddingIconOnly_small: pxToEm(3),
@@ -107,6 +107,7 @@ const styles = {
         Button_backgroundColor_primary_hover: theme[`backgroundColor_${variant}Primary_hover`],
         Button_boxShadow_focus: `0 0 0 1px ${theme.boxShadow_focusInner}, 0 0 0 2px ${theme[`borderColor_${variant}_focus`]}`,
         Button_color: theme[`color_${variant}`],
+        Button_color_primary: theme[`color_${variant}Primary`],
         Button_color_minimal: theme[`color_${variant}`],
         ButtonIcon_color: theme[`icon_color_${variant}`]
       };
