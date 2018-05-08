@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`themeFromTokens converts 'brand' to 'theme' in the key 1`] = `"blue"`;
+
+exports[`themeFromTokens converts leaves some stuff alone 1`] = `"1px 1px 1px rgba(0,0,0,0.1)"`;
+
+exports[`themeFromTokens converts leaves some stuff alone 2`] = `100`;
+
+exports[`themeFromTokens converts px to ems except when key contains 'breakpoint' 1`] = `"16px"`;
+
+exports[`themeFromTokens converts px to ems when not a breakpoint 1`] = `"1em"`;
+
+exports[`themeFromTokens converts rems to ems 1`] = `"1em"`;
+
+exports[`themeFromTokens with colors with black overrides black value 1`] = `"custom_black"`;
+
+exports[`themeFromTokens with colors with gray overrides gray value 1`] = `"custom_gray"`;
+
+exports[`themeFromTokens with colors with intent overrides intent value 1`] = `"custom_danger"`;
+
+exports[`themeFromTokens with colors with theme overrides theme value 1`] = `"custom_brand"`;
+
+exports[`themeFromTokens with colors with white overrides white value 1`] = `"custom_white"`;
