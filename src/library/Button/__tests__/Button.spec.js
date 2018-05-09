@@ -56,6 +56,7 @@ describe('Button', () => {
           expect(button).toMatchSnapshot();
         });
       });
+
       describe('when type=[button type]', () => {
         it('when element=a', () => {
           const [, anchor] = mountButton({
@@ -63,6 +64,7 @@ describe('Button', () => {
           });
           expect(anchor).toMatchSnapshot();
         });
+
         it('when element=NonFilteringLink', () => {
           const [, link] = mountButton({
             element: NonFilteringLink
@@ -71,6 +73,7 @@ describe('Button', () => {
         });
       });
     });
+
     describe('is not filtered', () => {
       describe('when type=[button type]', () => {
         it('when element=button', () => {
@@ -78,6 +81,7 @@ describe('Button', () => {
           expect(button).toMatchSnapshot();
         });
       });
+
       describe('when type=[MIME type]', () => {
         it('when element=a', () => {
           const [, anchor] = mountButton({
@@ -86,6 +90,7 @@ describe('Button', () => {
           });
           expect(anchor).toMatchSnapshot();
         });
+
         it('when element=NonFilteringLink', () => {
           const [, link] = mountButton({
             element: NonFilteringLink,

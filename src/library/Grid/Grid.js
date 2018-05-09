@@ -41,9 +41,10 @@ const Root = createStyledComponent(
   { display: 'flex' },
   {
     displayName: 'Grid',
-    filterProps: ['direction', 'inline', 'justifyContent']
+    filterProps: ['direction', 'inline', 'justifyContent'],
+    withProps: { wrap: true }
   }
-).withProps({ wrap: true });
+);
 
 const getGridItems = ({ breakpoints, children, columns, gutterWidth }) =>
   Children.map(children, (child) =>
