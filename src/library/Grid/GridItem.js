@@ -59,8 +59,9 @@ const styles = {
 
 const Root = createStyledComponent(FlexItem, styles.root, {
   displayName: 'GridItem',
-  filterProps: ['alignSelf', 'grow', 'inline', 'width']
-}).withProps({ shrink: 0 });
+  filterProps: ['alignSelf', 'grow', 'inline', 'width'],
+  withProps: { shrink: 0 }
+});
 
 /**
  * GridItem is used within [Grid](/components/grid) to lay out other components

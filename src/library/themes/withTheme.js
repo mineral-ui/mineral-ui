@@ -1,2 +1,2 @@
 /* @flow */
-export { withTheme as default } from 'glamorous';
+export { withTheme as default } from 'emotion-theming';

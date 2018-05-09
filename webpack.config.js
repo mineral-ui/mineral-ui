@@ -64,7 +64,6 @@ module.exports = {
   plugins: (() => {
     let plugins = [
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(NODE_ENV),
         GOOGLE_TRACKING_ID: JSON.stringify(GOOGLE_TRACKING_ID)
       }),
       new webpack.BannerPlugin({

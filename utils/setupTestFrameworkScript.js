@@ -1,7 +1,11 @@
 import React from 'react';
 import Enzyme from 'enzyme';
-import { simulations } from 'glamor';
+import * as emotion from 'emotion';
+import { createMatchers, createSerializer } from 'jest-emotion';
 import semver from 'semver';
+
+expect.addSnapshotSerializer(createSerializer(emotion));
+expect.extend(createMatchers(emotion));
 
 // Configure Enzyme for appropriate React version
 let Adapter;
@@ -13,6 +17,3 @@ if (semver.satisfies(React.version, '15.0.0 - 15.4.x')) {
   Adapter = require('enzyme-adapter-react-16');
 }
 Enzyme.configure({ adapter: new Adapter() });
-
-// Enable Glamor simulate helper
-simulations(true);

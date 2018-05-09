@@ -50,10 +50,13 @@
   "dependencies": {
     "exenv": "1.2.2",
     "fast-deep-equal": "1.1.0",
+    "fast-memoize": "2.3.2",
     "fontfaceobserver": "2.0.13",
     "mineral-ui-tokens": "0.3.0",
     "prop-types": "^15.5.7",
+    "react-html-attributes": "1.4.2",
     "react-popper": "0.10.1",
+    "recompose": "0.27.0",
     "scroll-into-view-if-needed": "1.5.0"
   },
   "devDependencies": {
@@ -85,11 +88,14 @@
     "css-loader": "0.28.11",
     "cz-conventional-changelog": "2.1.0",
     "dedent": "0.7.0",
+    "emotion": "9.2.1",
+    "emotion-theming": "9.2.1",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.3",
     "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-emotion": "9.1.0",
     "eslint-plugin-flowtype": "2.46.1",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-prettier": "2.6.0",
@@ -98,15 +104,13 @@
     "flow-copy-source": "1.3.0",
     "flow-typed": "2.4.0",
     "fs-extra": "5.0.0",
-    "glamor": "2.20.40",
-    "glamorous": "4.12.1",
     "glob": "7.1.2",
     "happo.io": "1.2.0",
     "html-webpack-plugin": "3.1.0",
     "husky": "0.14.3",
     "inquirer": "5.2.0",
     "jest": "22.4.3",
-    "jest-glamor-react": "4.2.1",
+    "jest-emotion": "9.2.0",
     "lodash.camelcase": "4.3.0",
     "lodash.flatten": "4.4.0",
     "lodash.startcase": "4.4.0",
@@ -125,6 +129,7 @@
     "react-docgen": "3.0.0-beta11",
     "react-docgen-loader": "2.9.1",
     "react-dom": "16.3.0",
+    "react-emotion": "9.2.1",
     "react-helmet": "5.2.0",
     "react-live": "1.10.1",
     "react-loadable": "5.3.1",
@@ -142,9 +147,10 @@
     "webpack-dev-server": "3.1.3"
   },
   "peerDependencies": {
-    "glamor": "^2.0.0",
-    "glamorous": "^4.8.0",
+    "emotion": "^9.2.1",
+    "emotion-theming": "^9.2.1",
     "react": "^15.3.0 || ^16.0.0",
-    "react-dom": "^15.3.0 || ^16.0.0"
+    "react-dom": "^15.3.0 || ^16.0.0",
+    "react-emotion": "^9.2.1"
   }
 }

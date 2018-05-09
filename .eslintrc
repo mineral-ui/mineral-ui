@@ -19,6 +19,7 @@
     "ecmaVersion": 2017
   },
   "plugins": [
+    "emotion",
     "flowtype",
     "jsx-a11y",
     "prettier",
@@ -26,6 +27,7 @@
   ],
   "rules": {
     "curly": ["error", "all"],
+    "emotion/syntax-preference": ["error", "object"],
     // Temporarily disable rule until issue is resolved.
     // https://github.com/gajus/eslint-plugin-flowtype/issues/224
     "flowtype/no-types-missing-file-annotation": 0,

@@ -303,6 +303,7 @@ function createRootNode(props: Props) {
   const { element = Button.defaultProps.element } = props;
 
   return createStyledComponent(element, styles.button, {
+    displayName: 'Button',
     filterProps: filterProps(props),
     includeStyleReset: true,
     rootEl: element
@@ -327,8 +328,6 @@ export default class Button extends Component<Props> {
       this.rootNode = createRootNode(nextProps);
     }
   }
-
-  props: Props;
 
   rootNode: React$ComponentType<*> = createRootNode(this.props);
 

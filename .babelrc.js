@@ -1,4 +1,6 @@
 const { DEBUG, BABEL_ENV, NODE_ENV, TARGET } = process.env;
+const isProduction = NODE_ENV === 'production';
+const isTest = NODE_ENV === 'test';
 
 /**
  * Plugins run before presets.
@@ -42,7 +44,7 @@ module.exports = {
             'mineral-ui': './src/library', // Used inside mineral-ui-icons components
             'mineral-ui-icons': './packages/mineral-ui-icons/src', // Used inside mineral-ui website,
             'mineral-ui-tokens':
-              NODE_ENV === 'production'
+              isProduction
                 ? 'mineral-ui-tokens'
                 : './packages/mineral-ui-tokens/src' // Used inside mineral-ui website and library
           }
@@ -50,14 +52,14 @@ module.exports = {
       );
     }
 
-    if (NODE_ENV === 'test') {
+    if (isTest) {
       plugins.push('dynamic-import-node');
     } else {
       // This plugin breaks Jest code coverage on CI
       plugins.push('polished');
     }
 
-    if (NODE_ENV === 'production') {
+    if (isProduction) {
       plugins.push(
         'babel-plugin-transform-react-constant-elements',
         'babel-plugin-transform-react-inline-elements'

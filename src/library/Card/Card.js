@@ -38,7 +38,7 @@ const Root = createStyledComponent(
       paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
       paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
 
-      '&:focus, &[data-simulate-focus]': {
+      '&:focus': {
         boxShadow: theme.Card_boxShadow_focus
       }
     };

@@ -128,15 +128,7 @@ const styles = {
     return {
       ...hideVisually(),
 
-      // NOTE: These hover styles are only needed for the "states" demo.
-      // Otherwise they are applied from styles.root
-      '&:hover,&[data-simulate-hover]': {
-        '&:not(:disabled) + span': {
-          borderColor: theme.ChoiceControl_borderColor_hover
-        }
-      },
-
-      '&:focus,&[data-simulate-focus]': {
+      '&:focus': {
         '& + span': {
           boxShadow: theme.ChoiceControl_boxShadow_focus
         }
@@ -148,7 +140,7 @@ const styles = {
           borderColor: theme.ChoiceControl_borderColor_checked
         },
 
-        '&:hover,&[data-simulate-hover]': {
+        '&:hover': {
           '& + span': {
             backgroundColor: theme.ChoiceControl_backgroundColor_checkedHover,
             borderColor: theme.ChoiceControl_borderColor_checkedHover

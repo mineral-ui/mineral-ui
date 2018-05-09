@@ -143,7 +143,7 @@ const Root = createStyledComponent(FauxControl, styles.root, {
   displayName: 'TextInput'
 });
 const Input = createStyledComponent('input', styles.input, {
-  dispayName: 'Input',
+  displayName: 'Input',
   rootEl: 'input'
 });
 
