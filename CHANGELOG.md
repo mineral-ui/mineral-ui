@@ -1,3 +1,21 @@
+<a name="0.33.0"></a>
+# [0.33.0](https://github.com/mineral-ui/mineral-ui/compare/v0.32.0...v0.33.0) (2018-05-10)
+
+
+### Features
+
+* **mineral-ui-tokens:** Generate files useful to themes ([fe6a8b3](https://github.com/mineral-ui/mineral-ui/commit/fe6a8b3))
+* **themes:** Generate values from color options ([37555c9](https://github.com/mineral-ui/mineral-ui/commit/37555c9))
+
+
+### BREAKING CHANGES
+
+* **themes:** Change `createTheme` signature. Replace `baseColor` and `overrides` parameters with an options object, containing `colors` (baseColor is now colors.theme) and `overrides`. See the [new documentation](http://mineral-ui.com/theming#common-scenarios-api-{{47}}) for details. Rename `color_primary` theme variable to `color_themePrimary` for consistency with other variable names
+* **mineral-ui-tokens:** `color_primary` (`$mnrl-color-primary`, in Sass) token
+renamed to `color_themePrimary` ($mnrl-color-themePrimary)
+
+
+
 <a name="0.32.0"></a>
 # [0.32.0](https://github.com/mineral-ui/mineral-ui/compare/v0.31.0...v0.32.0) (2018-05-07)
 
