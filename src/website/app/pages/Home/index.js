@@ -52,8 +52,9 @@ const pageMeta = {
 };
 
 const latestPost = {
-  title: 'Designing Systematic Colors',
-  url: 'https://uxplanet.org/designing-systematic-colors-b5d2605b15c'
+  title: 'The Themes are Always Changing, but the Tokens Stay the Same',
+  url:
+    'https://medium.com/@kylegach/the-themes-are-always-changing-but-the-tokens-stay-the-same-258d57b18f31'
 };
 
 const playgroundThemes = [
