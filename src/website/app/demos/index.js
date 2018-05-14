@@ -6,6 +6,7 @@ import button from './Button';
 import box from './Box';
 import card from './Card';
 import checkbox from './Checkbox';
+import dialog from './Dialog';
 import dropdown from './Dropdown';
 import form from './Form';
 import icon from './Icon';
@@ -29,6 +30,7 @@ const demos = flatten([
   box,
   card,
   checkbox,
+  dialog,
   dropdown,
   flex,
   form,

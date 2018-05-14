@@ -76,6 +76,11 @@ export default [
     }
   ],
   {
+    description: 'TODO: Dialog',
+    slug: 'dialog',
+    title: 'Dialog'
+  },
+  {
     description:
       'Dropdowns display a hidden Menu, available upon user interaction. Use Dropdowns for non-primary actions only.',
     slug: 'dropdown',
