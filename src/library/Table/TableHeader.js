@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import { hideVisually } from 'polished';
 import { createStyledComponent } from '../styles';
-import { TableContext } from './Table';
+import { TableContext } from './TableBase';
 
 type Props = {
   /** Rendered content must be TR */

@@ -1,13 +1,7 @@
 /* @flow */
-import React from 'react';
 import { createStyledComponent } from '../styles';
 
-type Props = {
-  /** Rendered content must be TableRow */
-  children: React$Node
-};
-
-const Root = createStyledComponent(
+export default createStyledComponent(
   'tbody',
   {},
   {
@@ -15,10 +9,3 @@ const Root = createStyledComponent(
     rootEl: 'tbody'
   }
 );
-
-/**
- * TableBody
- */
-export default function TableBody(props: Props) {
-  return <Root {...props} />;
-}

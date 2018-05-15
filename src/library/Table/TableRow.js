@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import { createStyledComponent } from '../styles';
-import { TableContext } from './Table';
+import { TableContext } from './TableBase';
 
 type Props = {
   /** Rendered content can be TD or TH */
@@ -12,7 +12,11 @@ type Props = {
 
 // prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
+  TableRow_backgroundColor_highContrast_selected: baseTheme.color_theme_20,
+  TableRow_backgroundColor_highContrast_selectedHover: baseTheme.color_theme_30,
   TableRow_backgroundColor_hover: baseTheme.color_gray_20,
+  TableRow_backgroundColor_selected: baseTheme.color_theme_10,
+  TableRow_backgroundColor_selectedHover: baseTheme.color_theme_20,
   TableRow_backgroundColor_striped: baseTheme.color_gray_10,
   TableRow_borderHorizontal: `1px solid ${baseTheme.color_white}`,
   TableRow_borderHorizontal_highContrast: `1px solid ${baseTheme.color_gray_60}`,
