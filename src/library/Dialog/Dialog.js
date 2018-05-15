@@ -33,7 +33,9 @@ type Props = {
   /** TODO */
   size?: 'small' | 'medium' | 'large',
   /** @Private TODO */
-  usePortal?: boolean
+  usePortal?: boolean,
+  /** Available variants */
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 type State = {
@@ -61,7 +63,7 @@ const ANIMATION_DURATION_MS = 250; // TODO: Make prop or theme variable?
 
 const styles = {
   overlay: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
 
     return {
       backgroundColor: theme.DialogOverlay_backgroundColor,
@@ -75,7 +77,7 @@ const styles = {
     };
   },
   content: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
 
     return {
       backgroundColor: theme.DialogContent_backgroundColor,
@@ -91,7 +93,7 @@ const styles = {
     };
   },
   root: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
 
     return {
       alignItems: 'flex-start',
@@ -178,6 +180,7 @@ export default class Dialog extends Component<Props, State> {
       isOpen,
       hideOverlay,
       usePortal,
+      variant,
       ...restProps
     } = this.props;
     const { isExited, isExiting } = this.state;
@@ -190,7 +193,8 @@ export default class Dialog extends Component<Props, State> {
 
     const header = cloneElement(_header, {
       id: this.getHeaderId(),
-      tabIndex: '-1'
+      tabIndex: '-1',
+      variant
     });
 
     const rootProps = {

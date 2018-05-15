@@ -8,25 +8,30 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  DialogFooter_padding: baseTheme.space_inset_lg,
-  DialogFooterItem_marginRight: baseTheme.space_stack_md,
+  DialogFooter_paddingHorizontal: baseTheme.space_inset_lg,
+  DialogFooter_marginVertical: baseTheme.space_inset_lg,
+
+  DialogFooterItem_margin: baseTheme.space_stack_md,
 
   ...baseTheme
 });
 
 const styles = {
   root: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
 
     return {
       alignItems: 'center',
       display: 'flex',
       flex: '0 0 auto',
       justifyContent: 'flex-end',
-      padding: theme.DialogFooter_padding,
+      margin: `${theme.DialogFooter_marginVertical} 0`,
+      padding: `0 ${theme.DialogFooter_paddingHorizontal}`,
 
       '& > *:not(:last-child)': {
-        marginRight: theme.DialogFooterItem_marginRight
+        marginLeft: rtl ? theme.DialogFooterItem_margin : null,
+        marginRight: rtl ? null : theme.DialogFooterItem_margin
       }
     };
   }

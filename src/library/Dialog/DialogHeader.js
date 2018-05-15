@@ -8,18 +8,21 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  DialogHeader_padding: baseTheme.space_inset_lg,
+  DialogHeader_paddingHorizontal: baseTheme.space_inset_lg,
+  DialogHeader_marginVertical: baseTheme.space_inset_lg,
 
   ...baseTheme
 });
 
 const styles = {
   root: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
 
     return {
       flex: '0 0 auto',
-      padding: theme.DialogHeader_padding
+      margin: `${theme.DialogHeader_marginVertical} 0`,
+      outline: 0,
+      padding: `0 ${theme.DialogHeader_paddingHorizontal}`
     };
   }
 };

@@ -1,9 +1,10 @@
 /* @flow */
 import Button from '../../../../../library/Button';
 import {
-  DialogHeader,
   DialogBody,
-  DialogFooter
+  DialogFooter,
+  DialogHeader,
+  DialogTitle
 } from '../../../../../library/Dialog';
 import DemoLayout from '../components/DemoLayout';
 import Dialog from '../components/DemoDialog';
@@ -12,11 +13,23 @@ export default {
   id: 'basic',
   title: 'Basic Usage',
   description: `TODO`,
-  scope: { Button, DemoLayout, Dialog, DialogBody, DialogFooter, DialogHeader },
+  scope: {
+    Button,
+    DemoLayout,
+    Dialog,
+    DialogBody,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle
+  },
   source: `
     <DemoLayout>
       <Dialog>
-        <DialogHeader>Lorem Ipsum</DialogHeader>
+        <DialogHeader>
+          <DialogTitle>
+            Lorem ipsum dolor sit amet
+          </DialogTitle>
+        </DialogHeader>
         <DialogBody>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

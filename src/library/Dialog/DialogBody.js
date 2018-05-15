@@ -15,7 +15,7 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const styles = {
   root: ({ theme: baseTheme }) => {
-    let theme = componentTheme(baseTheme);
+    const theme = componentTheme(baseTheme);
 
     return {
       flex: '1 1 auto',
