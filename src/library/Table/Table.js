@@ -1,33 +1,46 @@
 /* @flow */
 import React, { Component } from 'react';
-import createReactContext, { type Context } from 'create-react-context';
-import { createStyledComponent } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
-import { generateId } from '../utils';
-import DataRow from './DataRow';
-import HeaderRow from './HeaderRow';
-import _OverflowContainer, {
-  componentTheme as overflowContainerComponentTheme
-} from './OverflowContainer';
-import TableBody from './TableBody';
-import TableHeader from './TableHeader';
-import TableTitle from './TableTitle';
+import deepEqual from 'react-fast-compare';
+import Selectable from './Selectable';
+import Sortable from './Sortable';
+import TableBase from './TableBase';
+
+import type { Comparators } from './Sortable';
 
 type Props = {
   /** Column definitions ([see Column type for details](#Column-type)) */
   columns?: Columns,
   /** Row data ([see example for more details](#basic)) */
   data: Array<Object>,
+  /** Initially selected rows when `selectable = true`. Primarily for use with uncontrolled components. */
+  defaultSelectedRows?: Array<Object>,
+  /** Initially sorted column & direction. Primarily for use with uncontrolled components. */
+  defaultSort?: {
+    key: string,
+    descending?: boolean
+  },
   /** Amount of vertical space in Table's cells */
-  density: 'default' | 'spacious',
+  density: 'compact' | 'spacious',
   /** Visually hide Table's header, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideHeader?: boolean,
   /** Visually hide Table's title, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideTitle?: boolean,
   /** Render Table with high-contrast styles */
   highContrast?: boolean,
-  /** @Private Id of the Table */
-  id?: string,
+  /**
+   * Various messages and labels used by Table
+   * ([see example for more details](#rtl))
+   */
+  messages: Messages,
+  /** Called when data is sorted */
+  onSort?: (sort: {
+    key: string,
+    descending?: boolean
+  }) => void,
+  /** Called when all rows are selected/deselected */
+  onToggleAllRows?: (rows: Array<Object>, selected: boolean) => void,
+  /** Called when a single row is selected/deselected */
+  onToggleRow?: (row: Object, selected: boolean) => void,
   /**
    * Specifies a key in the row data that gives a row its unique identity.
    * See the [React docs](https://reactjs.org/docs/lists-and-keys.html#keys).
@@ -38,6 +51,30 @@ type Props = {
    * container
    */
   scrollable?: boolean,
+  /**
+   * Enable the user to select rows. Prepends a column for checkboxes to your
+   * Table.
+   */
+  selectable?: boolean,
+  /**
+   * Selected rows when `selectable = true`. Primarily for use with controlled
+   * components.
+   */
+  selectedRows?: Array<Object>,
+  /**
+   * Sorted column & direction
+   */
+  sort?: {
+    key: string,
+    descending?: boolean
+  },
+  /** Enable the user to sort all columns */
+  sortable?: boolean,
+  /**
+   * The [sort comparator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description)
+   * used by sortable columns
+   */
+  sortComparator?: (a: Object, b: Object, key: string) => -1 | 0 | 1,
   /** Renders Table with alternating row stripes */
   striped?: boolean,
   /** Title for Table */
@@ -48,18 +85,9 @@ type Props = {
   titleElement?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 };
 
-type State = {
-  scrollable: boolean
-};
-
-type Appearance = {
-  density?: 'default' | 'spacious',
-  highContrast?: boolean,
-  striped?: boolean
-};
-
 export type Columns = Array<Column>;
-// See columnDef example for descriptions
+
+// See demos/Table/index.js additionalTypes for descriptions
 type Column = {
   content: React$Node,
   key: string,
@@ -67,149 +95,171 @@ type Column = {
   maxWidth?: number | string,
   minWidth?: number | string,
   primary?: boolean,
+  sortable?: boolean,
+  sortComparator?: (a: Object, b: Object, key: string) => -1 | 1 | 0,
   textAlign?: 'start' | 'end' | 'center' | 'justify',
   width?: number | string
+};
+
+export type Messages = {
+  deselectAllRows: string,
+  deselectRow: string,
+  selectAllRows: string,
+  selectRow: string,
+  selectedRows: string,
+  sortColumnAscending: string,
+  sortColumnDescending: string
 };
 
 export type Row = Object;
 export type Rows = Array<Row>;
 
-export const componentTheme = (baseTheme: Object) =>
-  mapComponentThemes(
-    {
-      name: 'OverflowContainer',
-      theme: overflowContainerComponentTheme(baseTheme)
-    },
-    {
-      name: 'Table',
-      theme: {}
-    },
-    baseTheme
-  );
-
-const OverflowContainer = createThemedComponent(
-  _OverflowContainer,
-  ({ theme: baseTheme }) =>
-    mapComponentThemes(
-      {
-        name: 'Table',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'OverflowContainer',
-        theme: {}
-      },
-      baseTheme
-    )
-);
-
-const Root = createStyledComponent(
-  'table',
-  {
-    borderCollapse: 'collapse',
-    borderSpacing: 0,
-    width: '100%'
-  },
-  {
-    displayName: 'Table',
-    rootEl: 'table',
-    includeStyleReset: true
-  }
-);
-
 const generateColumns = (data: Rows) =>
-  Object.keys(data[0]).reduce((acc, cell) => {
-    acc.push({ content: cell, key: cell });
-    return acc;
-  }, []);
+  data[0]
+    ? Object.keys(data[0]).reduce((acc, cell) => {
+        acc.push({ content: cell, key: cell });
+        return acc;
+      }, [])
+    : [];
 
-const getColumnDefs = ({ columns, data }: Props) =>
+const getColumns = ({ columns, data }: Props) =>
   columns || generateColumns(data);
 
-export const TableContext: Context<Appearance> = createReactContext({});
+const getComparators = ({ columns }: Props) => {
+  const comparators =
+    columns &&
+    columns.reduce((acc, column) => {
+      const { key, sortComparator } = column;
+      if (sortComparator) {
+        acc[key] = sortComparator;
+      }
+      return acc;
+    }, {});
+
+  return comparators && Object.keys(comparators).length
+    ? comparators
+    : undefined;
+};
+
+const getSelectableRows = (rows: Rows) => rows.filter((row) => !row.disabled);
+
+const getSortable = ({ columns, defaultSort, sort, sortable }: Props) =>
+  Boolean(
+    defaultSort ||
+      sort ||
+      sortable ||
+      (columns && columns.some((column) => column.sortable))
+  );
 
 /**
- * Table displays structured data with columns and rows.
+ * Table displays structured data with sortable columns and selectable rows.
  */
-export default class Table extends Component<Props, State> {
+class Table extends Component<Props> {
   static defaultProps = {
-    titleElement: 'h4',
-    density: 'default',
-    scrollable: true
+    density: 'compact',
+    messages: {
+      deselectAllRows: 'Deselect all rows',
+      deselectRow: 'Deselect row',
+      selectAllRows: 'Select all rows',
+      selectedRows: 'Selected rows',
+      selectRow: 'Select row',
+      sortColumnAscending: 'Sort column in ascending order',
+      sortColumnDescending: 'Sort column in descending order'
+    },
+    titleElement: 'h4'
   };
 
-  columns: Columns = getColumnDefs(this.props);
+  columns: Columns = getColumns(this.props);
 
-  id: string = this.props.id || `table-${generateId()}`;
+  comparators: Comparators | typeof undefined = getComparators(this.props);
 
-  titleId: string = `${this.id}-title`;
+  selectableRows: Rows = getSelectableRows(this.props.data);
+
+  sortable: boolean = getSortable(this.props);
 
   componentWillUpdate(nextProps: Props) {
-    if (
-      this.props.columns !== nextProps.columns ||
-      (!this.props.columns && this.props.data !== nextProps.data)
-    ) {
-      this.columns = getColumnDefs(nextProps);
+    const columnsChanged = !deepEqual(this.props.columns, nextProps.columns);
+    const dataChanged = !deepEqual(this.props.data, nextProps.data);
+
+    if (columnsChanged || (!this.props.columns && dataChanged)) {
+      this.columns = getColumns(nextProps);
+    }
+
+    if (columnsChanged) {
+      this.sortable = getSortable(nextProps);
+      this.comparators = getComparators(nextProps);
+    }
+
+    if (dataChanged) {
+      this.selectableRows = getSelectableRows(nextProps.data);
     }
   }
 
   render() {
     const {
-      data,
-      density,
-      hideHeader,
-      hideTitle,
-      highContrast,
-      rowKey,
-      scrollable,
-      striped,
-      title,
-      titleAppearance,
-      titleElement,
-      ...rootProps
+      defaultSelectedRows,
+      onToggleRow,
+      onToggleAllRows,
+      selectable,
+      selectedRows,
+      sortable,
+      ...restProps
     } = this.props;
-    const appearanceProps = {
-      density,
-      highContrast,
-      striped
+
+    const rootProps = {
+      ...restProps,
+      columns: this.columns,
+      comparators: this.comparators,
+      ...(defaultSelectedRows
+        ? { defaultSelected: getSelectableRows(defaultSelectedRows) }
+        : undefined),
+      ...(onToggleRow ? { onToggle: onToggleRow } : undefined),
+      ...(onToggleAllRows ? { onToggleAll: onToggleAllRows } : undefined),
+      ...(selectedRows ? { selected: selectedRows } : undefined),
+      ...(selectable ? { selectableRows: this.selectableRows } : undefined),
+      ...(this.sortable ? { sortable } : undefined)
     };
 
-    let table = (
-      <TableContext.Provider value={appearanceProps}>
-        <Root {...rootProps}>
-          <TableTitle
-            appearance={titleAppearance}
-            element={titleElement}
-            hide={hideTitle}
-            id={this.titleId}>
-            {title}
-          </TableTitle>
-          <TableHeader hide={hideHeader}>
-            <HeaderRow columns={this.columns} />
-          </TableHeader>
-          <TableBody>
-            {data.map((rowData, index) => (
-              <DataRow
-                columns={this.columns}
-                data={rowData}
-                key={rowData[rowKey] || index}
-              />
-            ))}
-          </TableBody>
-        </Root>
-      </TableContext.Provider>
-    );
-
-    if (scrollable) {
-      const containerProps = {
-        'aria-labelledby': this.titleId,
-        role: 'group'
-      };
-      table = (
-        <OverflowContainer {...containerProps}>{table}</OverflowContainer>
-      );
+    if (selectable && this.sortable) {
+      return <SelectableSortableTable {...rootProps} />;
+    } else if (selectable) {
+      return <SelectableTable {...rootProps} />;
+    } else if (this.sortable) {
+      return <SortableTable {...rootProps} />;
+    } else {
+      const {
+        sortable: ignoreSortable,
+        ...rootPropsWithoutSortable
+      } = rootProps;
+      return <TableBase {...rootPropsWithoutSortable} />;
     }
-
-    return table;
   }
 }
+
+/* eslint-disable react/prop-types */
+const SelectableTable = (props) => {
+  const { data, selectableRows } = props;
+  return (
+    <Selectable {...props} data={selectableRows}>
+      {(props) => <TableBase {...props} data={data} />}
+    </Selectable>
+  );
+};
+
+const SortableTable = (props) => (
+  <Sortable {...props} isSortable={props.sortable}>
+    {({ ...props }) => <TableBase {...props} data={props.sortable.data} />}
+  </Sortable>
+);
+
+const SelectableSortableTable = (props) => {
+  const { data, selectableRows } = props;
+  return (
+    <Selectable {...props} data={selectableRows}>
+      {(props) => <SortableTable {...props} data={data} />}
+    </Selectable>
+  );
+};
+/* eslint-enable */
+
+export default Table;

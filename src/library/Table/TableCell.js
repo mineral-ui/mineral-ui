@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { rtlTextAlign } from '../utils';
-import { TableContext } from './Table';
+import { TableContext } from './TableBase';
 
 type Props = {
   /** Rendered content */
@@ -18,6 +18,8 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
+  TableCell_borderVertical: null,
+  TableCell_borderVertical_highContrast: null,
   TableCell_fontSize: baseTheme.fontSize_ui,
   TableCell_paddingHorizontal: baseTheme.space_inline_md,
   TableCell_paddingVertical: baseTheme.space_stack_sm,
@@ -27,9 +29,16 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const styles = ({ noPadding, textAlign, theme: baseTheme, density }) => {
+const styles = ({
+  density,
+  highContrast,
+  noPadding,
+  textAlign,
+  theme: baseTheme
+}) => {
   const theme = componentTheme(baseTheme);
   const fontSize = theme.TableCell_fontSize;
+  const rtl = theme.direction === 'rtl';
   const paddingHorizontal = getNormalizedValue(
     theme.TableCell_paddingHorizontal,
     fontSize
@@ -40,13 +49,21 @@ const styles = ({ noPadding, textAlign, theme: baseTheme, density }) => {
       : theme.TableCell_paddingVertical,
     fontSize
   );
+  const borderVertical = highContrast
+    ? theme.TableCell_borderVertical_highContrast
+    : theme.TableCell_borderVertical;
 
   return {
     fontSize,
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
     textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
-    verticalAlign: theme.TableCell_verticalAlign
+    verticalAlign: theme.TableCell_verticalAlign,
+
+    '&:not(:first-child)': {
+      borderLeft: rtl ? null : borderVertical,
+      borderRight: !rtl ? null : borderVertical
+    }
   };
 };
 
@@ -92,10 +109,11 @@ export default class TableCell extends PureComponent<Props> {
 
     return (
       <TableContext.Consumer>
-        {({ density }) => {
+        {({ density, highContrast }) => {
           const rootProps = {
-            scope: primary ? 'row' : undefined,
             density,
+            highContrast,
+            ...(primary ? { scope: 'row' } : undefined),
             ...restProps
           };
           return <Root {...rootProps}>{children}</Root>;
