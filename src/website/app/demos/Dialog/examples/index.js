@@ -1,6 +1,6 @@
 /* @flow */
 import basic from './basic';
-import demo from './demo';
 import importSyntax from './importSyntax';
+import trigger from './trigger';
 
-export default [importSyntax, basic, demo];
+export default [importSyntax, basic, trigger];

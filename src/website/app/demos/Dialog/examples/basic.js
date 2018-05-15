@@ -1,64 +1,41 @@
 /* @flow */
-import { Component } from 'react';
 import Button from '../../../../../library/Button';
-import Dialog from '../../../../../library/Dialog';
+import {
+  DialogHeader,
+  DialogBody,
+  DialogFooter
+} from '../../../../../library/Dialog';
+import DemoLayout from '../components/DemoLayout';
+import Dialog from '../components/DemoDialog';
 
 export default {
   id: 'basic',
   title: 'Basic Usage',
   description: `TODO`,
-  scope: { Button, Component, Dialog },
-  source: `() => {
-    class Demo extends Component {
-      constructor(props) {
-        super(props);
-
-        this.state = {
-          isOpen: false
-        };
-
-        this.handleClick = this.handleClick.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-        this.handleOpen = this.handleOpen.bind(this);
-      }
-
-      handleClick() {
-        this.setState(prevState => ({
-          isOpen: !prevState.isOpen
-        }));
-      }
-
-      handleOpen() {
-        this.setState({
-          isOpen: true
-        })
-      }
-
-      handleClose() {
-        this.setState({
-          isOpen: false
-        })
-      }
-
-      render() {
-        const { isOpen } = this.state;
-
-        return (
-          <div>
-            <Button onClick={this.handleClick}>{isOpen ? 'Close' : 'Open' } Dialog</Button>
-            <Dialog
-              isOpen={isOpen}
-              onOpen={this.handleOpen}
-              onClose={this.handleClose}
-              // closeOnClickOutside={false}
-              // closeOnEscape={false}
-              // showOverlay={false}
-            />
-          </div>
-        )
-      }
-    }
-
-    return <Demo />;
-  }`
+  scope: { Button, DemoLayout, Dialog, DialogBody, DialogFooter, DialogHeader },
+  source: `
+    <DemoLayout>
+      <Dialog>
+        <DialogHeader>Lorem Ipsum</DialogHeader>
+        <DialogBody>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Viverra nam libero justo laoreet sit amet. Vitae sapien
+            pellentesque habitant morbi tristique. Posuere lorem ipsum dolor
+            sit. Vel risus commodo viverra maecenas accumsan. Id cursus
+            metus aliquam eleifend mi in nulla posuere sollicitudin. Lectus
+            mauris ultrices eros in cursus turpis. Natoque penatibus et
+            magnis dis. Eget aliquet nibh praesent tristique magna sit amet.
+            Pellentesque elit eget gravida cum sociis natoque penatibus.
+            Luctus accumsan tortor posuere ac ut consequat semper viverra.
+            Sed vulputate odio ut enim. Vivamus at augue eget arcu.
+          </p>
+        </DialogBody>
+        <DialogFooter>
+          <Button minimal size="medium">Cancel</Button>
+          <Button primary size="medium">Action</Button>
+        </DialogFooter>
+      </Dialog>
+    </DemoLayout>`
 };
