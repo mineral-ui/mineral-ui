@@ -19,9 +19,17 @@ const styles = {
 
     return {
       flex: '1 1 auto',
-      overflowx: 'hidden',
+      overflowX: 'hidden',
       overflowY: 'auto',
-      padding: `0 ${theme.DialogBody_paddingHorizontal}`
+      padding: `1px ${theme.DialogBody_paddingHorizontal}`, // 1px to avoid unwanted vertical scrollbar
+
+      '& > :first-child': {
+        marginTop: 0
+      },
+
+      '& > :last-child': {
+        marginBottom: 0
+      }
     };
   }
 };

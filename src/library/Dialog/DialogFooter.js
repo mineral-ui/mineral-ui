@@ -24,7 +24,6 @@ const styles = {
     return {
       alignItems: 'center',
       display: 'flex',
-      flex: '0 0 auto',
       justifyContent: 'flex-end',
       margin: `${theme.DialogFooter_marginVertical} 0`,
       padding: `0 ${theme.DialogFooter_paddingHorizontal}`,

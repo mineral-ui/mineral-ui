@@ -1,7 +1,7 @@
 /* @flow */
 import React, { cloneElement, Component } from 'react';
 import Transition from 'react-transition-group/Transition';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, pxToEm } from '../styles';
 import { generateId, findByType } from '../utils';
 import Portal from '../Portal';
 import EventListener from '../EventListener';
@@ -52,7 +52,21 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogContent_boxShadow: baseTheme.boxShadow_5,
   DialogContent_zIndex: baseTheme.zIndex_200,
   DialogContent_margin: baseTheme.space_inset_lg,
-  DialogContent_maxWidth: '80%',
+
+  DialogContent_maxHeight: '80vh',
+  DialogContent_minWidth: pxToEm(360),
+
+  DialogContent_maxHeight_small: pxToEm(560),
+  DialogContent_maxHeight_medium: pxToEm(560),
+  DialogContent_maxHeight_large: pxToEm(720),
+
+  DialogContent_maxWidth_small: pxToEm(400),
+  DialogContent_maxWidth_medium: pxToEm(640),
+  DialogContent_maxWidth_large: pxToEm(1200),
+
+  DialogContent_width_small: '35vw',
+  DialogContent_width_medium: '50vw',
+  DialogContent_width_large: '80vw',
 
   DialogOverlay_backgroundColor: 'rgba(0, 0, 0, 0.6)',
 
@@ -76,8 +90,22 @@ const styles = {
       zIndex: -1
     };
   },
-  content: ({ theme: baseTheme }) => {
+  content: ({ size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
+
+    const getSizeStyles = (size: string) => {
+      const maxWidth = theme[`DialogContent_maxWidth_${size}`];
+      const maxHeight = theme[`DialogContent_maxHeight_${size}`];
+      const width = theme[`DialogContent_width_${size}`];
+
+      return {
+        maxWidth,
+        width,
+        [`@media(min-height: ${maxHeight})`]: {
+          maxHeight
+        }
+      };
+    };
 
     return {
       backgroundColor: theme.DialogContent_backgroundColor,
@@ -88,8 +116,9 @@ const styles = {
       flex: '0 1 auto',
       flexDirection: 'column',
       margin: theme.DialogContent_margin,
-      maxHeight: '90vh',
-      maxWidth: theme.DialogContent_maxWidth
+      maxHeight: theme.DialogContent_maxHeight,
+      minWidth: theme.DialogContent_minWidth,
+      ...getSizeStyles(size)
     };
   },
   root: ({ theme: baseTheme }) => {
@@ -152,6 +181,7 @@ export default class Dialog extends Component<Props, State> {
     closeOnClickOutside: true,
     closeOnEscape: true,
     hideOverlay: false,
+    size: 'medium', // TODO: What is the default size?
     usePortal: true
   };
 
@@ -179,6 +209,7 @@ export default class Dialog extends Component<Props, State> {
       closeOnEscape,
       isOpen,
       hideOverlay,
+      size,
       usePortal,
       variant,
       ...restProps
@@ -208,7 +239,8 @@ export default class Dialog extends Component<Props, State> {
 
     const contentProps = {
       innerRef: this.setContentRef,
-      role: 'document'
+      role: 'document',
+      size
     };
 
     const animationProps = {

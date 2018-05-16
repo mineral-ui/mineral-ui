@@ -19,7 +19,6 @@ const styles = {
     const theme = componentTheme(baseTheme);
 
     return {
-      flex: '0 0 auto',
       margin: `${theme.DialogHeader_marginVertical} 0`,
       outline: 0,
       padding: `0 ${theme.DialogHeader_paddingHorizontal}`
