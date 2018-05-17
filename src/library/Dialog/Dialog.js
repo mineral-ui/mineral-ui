@@ -51,7 +51,7 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogContent_borderRadius: baseTheme.borderRadius_1,
   DialogContent_boxShadow: baseTheme.boxShadow_5,
   DialogContent_zIndex: baseTheme.zIndex_200,
-  DialogContent_margin: baseTheme.space_inset_lg,
+  DialogContent_translateY: baseTheme.space_stack_xxl,
 
   DialogContent_maxHeight: '80vh',
   DialogContent_minWidth: pxToEm(360),
@@ -97,12 +97,13 @@ const styles = {
       const maxWidth = theme[`DialogContent_maxWidth_${size}`];
       const maxHeight = theme[`DialogContent_maxHeight_${size}`];
       const width = theme[`DialogContent_width_${size}`];
+      const heightOffset = theme.DialogContent_translateY;
 
       return {
         maxWidth,
         width,
         [`@media(min-height: ${maxHeight})`]: {
-          maxHeight
+          maxHeight: `calc(${maxHeight} - ${heightOffset})`
         }
       };
     };
@@ -113,11 +114,10 @@ const styles = {
       borderRadius: theme.DialogContent_borderRadius,
       boxShadow: theme.DialogContent_boxShadow,
       display: 'flex',
-      flex: '0 1 auto',
       flexDirection: 'column',
-      margin: theme.DialogContent_margin,
       maxHeight: theme.DialogContent_maxHeight,
       minWidth: theme.DialogContent_minWidth,
+      transform: `translateY(${theme.DialogContent_translateY})`,
       ...getSizeStyles(size)
     };
   },

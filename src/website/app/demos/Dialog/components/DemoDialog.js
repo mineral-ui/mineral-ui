@@ -1,10 +1,15 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../../../../library/styles';
+import { createThemedComponent } from '../../../../../library/themes';
 import Dialog from '../../../../../library/Dialog';
 
+const ThemedDialog = createThemedComponent(Dialog, {
+  DialogContent_translateY: null
+});
+
 const Root = createStyledComponent(
-  Dialog,
+  ThemedDialog,
   {
     position: 'static'
   },
