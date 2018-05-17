@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../styles';
+import DialogRow from './DialogRow';
 
 type Props = {
   /** TODO */
@@ -8,9 +9,6 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  DialogFooter_paddingHorizontal: baseTheme.space_inset_lg,
-  DialogFooter_marginVertical: baseTheme.space_inset_lg,
-
   DialogFooterItem_margin: baseTheme.space_stack_md,
 
   ...baseTheme
@@ -25,8 +23,6 @@ const styles = {
       alignItems: 'center',
       display: 'flex',
       justifyContent: 'flex-end',
-      margin: `${theme.DialogFooter_marginVertical} 0`,
-      padding: `0 ${theme.DialogFooter_paddingHorizontal}`,
 
       '& > *:not(:last-child)': {
         marginLeft: rtl ? theme.DialogFooterItem_margin : null,
@@ -36,9 +32,9 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent('footer', styles.root, {
+const Root = createStyledComponent(DialogRow, styles.root, {
   displayName: 'DialogFooter'
-});
+}).withProps({ element: 'footer' });
 
 /**
  * DialogFooter - TODO

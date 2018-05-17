@@ -8,6 +8,7 @@ import EventListener from '../EventListener';
 import DialogBody from './DialogBody';
 import DialogFooter from './DialogFooter';
 import DialogHeader from './DialogHeader';
+import { componentTheme as dialogRowComponentTheme } from './DialogRow';
 
 type Props = {
   /** TODO */
@@ -50,26 +51,23 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogContent_borderColor: baseTheme.panel_borderColor,
   DialogContent_borderRadius: baseTheme.borderRadius_1,
   DialogContent_boxShadow: baseTheme.boxShadow_5,
-  DialogContent_zIndex: baseTheme.zIndex_200,
-  DialogContent_translateY: baseTheme.space_stack_xxl,
-
   DialogContent_maxHeight: '80vh',
-  DialogContent_minWidth: pxToEm(360),
-
   DialogContent_maxHeight_small: pxToEm(560),
   DialogContent_maxHeight_medium: pxToEm(560),
   DialogContent_maxHeight_large: pxToEm(720),
-
   DialogContent_maxWidth_small: pxToEm(400),
   DialogContent_maxWidth_medium: pxToEm(640),
   DialogContent_maxWidth_large: pxToEm(1200),
-
+  DialogContent_minWidth: pxToEm(360),
+  DialogContent_translateY: baseTheme.space_stack_xxl,
   DialogContent_width_small: '35vw',
   DialogContent_width_medium: '50vw',
   DialogContent_width_large: '80vw',
+  DialogContent_zIndex: baseTheme.zIndex_200,
 
   DialogOverlay_backgroundColor: 'rgba(0, 0, 0, 0.6)',
 
+  ...dialogRowComponentTheme(baseTheme),
   ...baseTheme
 });
 
@@ -99,11 +97,15 @@ const styles = {
       const width = theme[`DialogContent_width_${size}`];
       const heightOffset = theme.DialogContent_translateY;
 
+      const maxHeightNumber = parseFloat(maxHeight);
+      const heightOffsetNumber = parseFloat(heightOffset);
+      const minHeight = `${maxHeightNumber + heightOffsetNumber}em`;
+
       return {
         maxWidth,
         width,
-        [`@media(min-height: ${maxHeight})`]: {
-          maxHeight: `calc(${maxHeight} - ${heightOffset})`
+        [`@media(min-height: ${minHeight})`]: {
+          maxHeight
         }
       };
     };

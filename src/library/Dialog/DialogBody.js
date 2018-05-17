@@ -1,6 +1,8 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createThemedComponent } from '../themes';
+import DialogRow from './DialogRow';
 
 type Props = {
   /** TODO */
@@ -8,6 +10,7 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
+  DialogBody_fontSize: baseTheme.fontSize_ui,
   DialogBody_paddingHorizontal: baseTheme.space_inset_lg,
 
   ...baseTheme
@@ -16,12 +19,17 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   root: ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
+    const fontSize = theme.DialogBody_fontSize;
 
     return {
       flex: '1 1 auto',
+      fontSize,
       overflowX: 'hidden',
       overflowY: 'auto',
-      padding: `1px ${theme.DialogBody_paddingHorizontal}`, // 1px to avoid unwanted vertical scrollbar
+      padding: `1px ${getNormalizedValue(
+        theme.DialogBody_paddingHorizontal,
+        fontSize
+      )}`, // 1px to avoid unwanted vertical scrollbar
 
       '& > :first-child': {
         marginTop: 0
@@ -34,7 +42,11 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent('div', styles.root, {
+const ThemedDialogRow = createThemedComponent(DialogRow, {
+  DialogRow_marginVertical: 0
+});
+
+const Root = createStyledComponent(ThemedDialogRow, styles.root, {
   displayName: 'DialogBody'
 });
 

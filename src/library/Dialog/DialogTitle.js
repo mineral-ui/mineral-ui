@@ -13,9 +13,9 @@ type Props = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  DialogTitle_color: baseTheme.h3_color,
-  DialogTitle_fontSize: baseTheme.h3_fontSize,
-  DialogTitle_fontWeight: baseTheme.h3_fontWeight,
+  DialogTitle_color: baseTheme.h4_color,
+  DialogTitle_fontSize: baseTheme.h4_fontSize,
+  DialogTitle_fontWeight: baseTheme.h4_fontWeight,
 
   DialogTitleIcon_fontSize: pxToEm(24),
   DialogTitleIcon_margin: baseTheme.space_inline_sm,
