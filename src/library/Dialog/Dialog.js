@@ -60,7 +60,7 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogContent_maxWidth_medium: pxToEm(640),
   DialogContent_maxWidth_large: pxToEm(1200),
   DialogContent_minWidth: pxToEm(360),
-  DialogContent_translateY: baseTheme.space_stack_xxl,
+  DialogContent_offsetVertical: baseTheme.space_stack_xxl,
   DialogContent_width_small: '35vw',
   DialogContent_width_medium: '50vw',
   DialogContent_width_large: '80vw',
@@ -96,11 +96,11 @@ const styles = {
       const maxWidth = theme[`DialogContent_maxWidth_${size}`];
       const maxHeight = theme[`DialogContent_maxHeight_${size}`];
       const width = theme[`DialogContent_width_${size}`];
-      const heightOffset = theme.DialogContent_translateY;
+      const offsetVertical = theme.DialogContent_offsetVertical;
 
       const maxHeightNumber = parseFloat(maxHeight);
-      const heightOffsetNumber = parseFloat(heightOffset);
-      const minHeight = `${maxHeightNumber + heightOffsetNumber}em`;
+      const offsetVerticalNumber = parseFloat(offsetVertical);
+      const minHeight = `${maxHeightNumber + 2 * offsetVerticalNumber}em`;
 
       return {
         maxWidth,
@@ -120,7 +120,6 @@ const styles = {
       flexDirection: 'column',
       maxHeight: theme.DialogContent_maxHeight,
       minWidth: theme.DialogContent_minWidth,
-      transform: `translateY(${theme.DialogContent_translateY})`,
       ...getSizeStyles(size)
     };
   },
@@ -128,7 +127,7 @@ const styles = {
     const theme = componentTheme(baseTheme);
 
     return {
-      alignItems: 'flex-start',
+      alignItems: 'center',
       bottom: 0,
       display: 'flex',
       justifyContent: 'center',
