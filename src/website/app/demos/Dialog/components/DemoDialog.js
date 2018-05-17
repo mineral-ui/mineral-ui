@@ -14,6 +14,7 @@ const Root = createStyledComponent(
 ).withProps({
   closeOnClickOutside: false,
   closeOnEscape: false,
+  disableFocusTrap: true,
   isOpen: true,
   usePortal: false
 });

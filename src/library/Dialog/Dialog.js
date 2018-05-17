@@ -19,6 +19,8 @@ type Props = {
   /** TODO */
   closeOnClickOutside?: boolean,
   /** TODO */
+  disableFocusTrap?: boolean,
+  /** TODO */
   hideOverlay?: boolean,
   /** Id of the Dialog */
   id?: string,
@@ -209,6 +211,7 @@ export default class Dialog extends Component<Props, State> {
       children,
       closeOnClickOutside,
       closeOnEscape,
+      disableFocusTrap,
       isOpen,
       hideOverlay,
       size,
@@ -224,14 +227,16 @@ export default class Dialog extends Component<Props, State> {
 
     let [_header, body, footer] = this.extractComponentsFromChildren(children);
 
+    const headerId = this.getHeaderId();
+
     const header = cloneElement(_header, {
-      id: this.getHeaderId(),
+      id: headerId,
       tabIndex: '-1',
       variant
     });
 
     const rootProps = {
-      'aria-labelledby': this.getHeaderId(),
+      'aria-labelledby': headerId,
       'aria-modal': true,
       id: this.id,
       role: 'dialog',
@@ -253,8 +258,9 @@ export default class Dialog extends Component<Props, State> {
     };
 
     const focusTrapProps = {
+      active: !disableFocusTrap,
       focusTrapOptions: {
-        initialFocus: `#${this.getHeaderId()}`
+        initialFocus: `#${headerId}`
       }
     };
 
