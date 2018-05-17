@@ -1,5 +1,6 @@
 /* @flow */
 import React, { cloneElement, Component } from 'react';
+import FocusTrap from 'focus-trap-react';
 import Transition from 'react-transition-group/Transition';
 import { createStyledComponent, pxToEm } from '../styles';
 import { generateId, findByType } from '../utils';
@@ -252,28 +253,36 @@ export default class Dialog extends Component<Props, State> {
       onEntered: this.handleEntered
     };
 
+    const focusTrapProps = {
+      focusTrapOptions: {
+        initialFocus: `#${this.getHeaderId()}`
+      }
+    };
+
     const output = (
       <Animation {...animationProps}>
-        <Root {...rootProps}>
-          {!hideOverlay && <Overlay />}
-          <DialogContent {...contentProps}>
-            {header}
-            {body}
-            {footer}
-          </DialogContent>
-          {closeOnEscape && (
-            <EventListener
-              listeners={[
-                {
-                  target: 'document',
-                  event: 'keydown',
-                  handler: this.handleDocumentKeydown,
-                  options: true
-                }
-              ]}
-            />
-          )}
-        </Root>
+        <FocusTrap {...focusTrapProps}>
+          <Root {...rootProps}>
+            {!hideOverlay && <Overlay />}
+            <DialogContent {...contentProps}>
+              {header}
+              {body}
+              {footer}
+            </DialogContent>
+            {closeOnEscape && (
+              <EventListener
+                listeners={[
+                  {
+                    target: 'document',
+                    event: 'keydown',
+                    handler: this.handleDocumentKeydown,
+                    options: true
+                  }
+                ]}
+              />
+            )}
+          </Root>
+        </FocusTrap>
       </Animation>
     );
 
