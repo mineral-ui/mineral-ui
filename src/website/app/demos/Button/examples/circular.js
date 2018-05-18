@@ -1,6 +1,6 @@
 /* @flow */
-import Button from '../../../../../library/Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
+import Button from '../../../../../library/Button';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

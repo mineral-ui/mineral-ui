@@ -1,16 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
 import _Link from '../../../../../library/Link';
-import _DemoLayout from '../components/DemoLayout';
+import { DemoLayout } from './states';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
-
-const DemoLayout = createStyledComponent(_DemoLayout, {
-  '& > a': {
-    marginRight: '0.5rem'
-  }
-});
 
 export default {
   id: 'variants',

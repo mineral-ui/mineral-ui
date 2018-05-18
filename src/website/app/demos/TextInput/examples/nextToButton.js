@@ -2,7 +2,7 @@
 import { createStyledComponent } from '../../../../../library/styles';
 import Button from '../../../../../library/Button';
 import TextInput from '../../../../../library/TextInput/';
-import _DemoLayout from '../components/DemoLayout';
+import _DemoLayout from '../../shared/DemoLayout';
 
 const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > *': {

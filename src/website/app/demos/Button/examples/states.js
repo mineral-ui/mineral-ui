@@ -1,11 +1,11 @@
 /* @flow */
 import { simulate } from 'glamor';
-import { createStyledComponent } from '../../../../../library/styles';
 import Button from '../../../../../library/Button';
+import { createStyledComponent } from '../../../../../library/styles';
+import _DemoLayout from '../../shared/DemoLayout';
 
-const DemoLayout = createStyledComponent('div', {
+const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > button': {
-    marginRight: '0.5rem',
     width: '8rem'
   }
 });
@@ -17,7 +17,7 @@ export default {
   hideSource: true,
   scope: { Button, DemoLayout, simulate },
   source: `
-    <DemoLayout>
+    <DemoLayout includeLastChild marginBottom={null} marginRight="0.5rem">
       <Button>Regular</Button>
       <Button primary>Primary</Button>
       <Button minimal>Minimal</Button>

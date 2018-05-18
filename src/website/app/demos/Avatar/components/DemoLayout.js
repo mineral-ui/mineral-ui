@@ -1,9 +1,11 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
+import React from 'react';
+import _DemoLayout from '../../shared/DemoLayout';
 
-export default createStyledComponent('div', {
-  '& > *': {
-    marginRight: '1rem',
-    marginBottom: '1rem'
-  }
-});
+type Props = {
+  children: React$Node
+};
+
+export default function DemoLayout(props: Props) {
+  return <_DemoLayout includeLastChild marginRight="1rem" {...props} />;
+}

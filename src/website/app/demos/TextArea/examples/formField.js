@@ -1,7 +1,7 @@
 /* @flow */
-import TextArea from '../../../../../library/TextArea';
 import { FormField } from '../../../../../library/Form';
-import DemoLayout from '../components/DemoLayout';
+import TextArea from '../../../../../library/TextArea';
+import DemoLayout from '../../shared/DemoLayout';
 
 export default {
   id: 'form-field',

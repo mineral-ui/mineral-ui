@@ -1,7 +1,7 @@
 /* @flow */
-import TextInput from '../../../../../../library/TextInput';
 import FormField from '../../../../../../library/Form/FormField';
-import DemoLayout from '../../components/DemoLayout';
+import TextInput from '../../../../../../library/TextInput';
+import DemoLayout from '../../../shared/DemoLayout';
 
 export default {
   id: 'hide-label',

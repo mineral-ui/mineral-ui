@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import { ThemeProvider } from '../../../../../library/themes';
-import TextInput from '../../../../../library/TextInput/';
-import IconCloud from 'mineral-ui-icons/IconCloud';
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
-import DemoLayout from '../components/DemoLayout';
+import IconCloud from 'mineral-ui-icons/IconCloud';
+import TextInput from '../../../../../library/TextInput';
+import { ThemeProvider } from '../../../../../library/themes';
+import DemoLayout from '../../shared/DemoLayout';
 
 const iconStart = <IconCloud />;
 const iconEnd = <IconBackspace />;

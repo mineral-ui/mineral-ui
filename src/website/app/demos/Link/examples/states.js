@@ -1,17 +1,17 @@
 /* @flow */
 import React from 'react';
 import { simulate } from 'glamor';
-import { createStyledComponent } from '../../../../../library/styles';
 import _Link from '../../../../../library/Link';
+import { createStyledComponent } from '../../../../../library/styles';
 import _DemoLayout from '../components/DemoLayout';
 
-const Link = (props: {}) => <_Link target="_blank" {...props} />;
-
-const DemoLayout = createStyledComponent(_DemoLayout, {
+export const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > a': {
     marginRight: '0.5rem'
   }
 });
+
+const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
 export default {
   id: 'states',
