@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
-import Avatar from '../../../../library/Avatar';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import DemoLayout from './components/DemoLayout';
+import Avatar from '../../../../library/Avatar';
+import { createStyledComponent } from '../../../../library/styles';
+import DemoLayout from '../shared/DemoLayout';
 
 const Name = createStyledComponent('div', ({ theme }) => ({
   alignItems: 'center',

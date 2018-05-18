@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
 import _Link from '../../../../../library/Link';
+import { createStyledComponent } from '../../../../../library/styles';
 import DemoLayout from '../components/DemoLayout';
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;

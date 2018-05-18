@@ -1,6 +1,6 @@
 /* @flow */
-import Avatar from '../../../../../library/Avatar';
 import IconCloud from 'mineral-ui-icons/IconCloud';
+import Avatar from '../../../../../library/Avatar';
 import DemoLayout from '../components/DemoLayout';
 
 export default {

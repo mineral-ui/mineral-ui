@@ -6,7 +6,7 @@ import {
   FormFieldDivider
 } from '../../../../library/Form';
 import TextInput from '../../../../library/TextInput/';
-import DemoLayout from './components/DemoLayout';
+import DemoLayout from '../shared/DemoLayout';
 
 const forgotPassword = (
   <a

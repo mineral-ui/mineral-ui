@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../../library/styles';
-import DemoLayout from '../components/DemoLayout';
-import { FormFieldset as _FormFieldset } from '../../../../../library/Form';
-import TextInput from '../../../../../library/TextInput/';
 import { simulate } from 'glamor';
+import { FormFieldset as _FormFieldset } from '../../../../../library/Form';
+import { createStyledComponent } from '../../../../../library/styles';
+import TextInput from '../../../../../library/TextInput/';
+import DemoLayout from '../../shared/DemoLayout';
 
 const FormFieldset = createStyledComponent(_FormFieldset, {
   '& > *': {

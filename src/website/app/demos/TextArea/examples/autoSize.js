@@ -1,6 +1,6 @@
 /* @flow */
-import DemoLayout from '../components/DemoLayout';
 import TextArea from '../../../../../library/TextArea';
+import DemoLayout from '../../shared/DemoLayout';
 
 const loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis. Fusce hendrerit, nunc vitae tempor tempor, urna dolor fringilla eros, non condimentum urna dui id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tempor metus eget ipsum volutpat, venenatis imperdiet lacus commodo. Morbi quis dictum urna, vel facilisis magna. Phasellus nec vehicula lectus. Nulla laoreet nisi nec varius rhoncus. Integer at risus blandit, commodo urna sed, viverra dui.
 

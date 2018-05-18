@@ -2,7 +2,7 @@
 import React from 'react';
 import FormField from '../../../../library/Form/FormField';
 import TextInput from '../../../../library/TextInput/';
-import DemoLayout from './components/DemoLayout';
+import DemoLayout from '../shared/DemoLayout';
 
 export default [
   {

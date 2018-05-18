@@ -1,8 +1,8 @@
 /* @flow */
 import { Component } from 'react';
-import Radio from '../../../../../../library/Radio';
 import Button from '../../../../../../library/Button';
-import DemoLayout from '../../components/DemoLayout';
+import Radio from '../../../../../../library/Radio';
+import DemoLayout from '../../../shared/DemoLayout';
 
 export default {
   id: 'input-ref',

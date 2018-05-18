@@ -1,8 +1,8 @@
 /* @flow */
 import { Component } from 'react';
-import Checkbox from '../../../../../../library/Checkbox';
 import Button from '../../../../../../library/Button';
-import DemoLayout from '../../components/DemoLayout';
+import Checkbox from '../../../../../../library/Checkbox';
+import DemoLayout from '../../../shared/DemoLayout';
 
 export default {
   id: 'input-ref',

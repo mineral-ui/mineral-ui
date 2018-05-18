@@ -1,16 +1,18 @@
 /* @flow */
+import React from 'react';
 import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../../../../library/styles';
-import { mineralTheme as theme } from '../../../../../library/themes';
 import _Text from '../../../../../library/Text';
+import { mineralTheme as theme } from '../../../../../library/themes';
+import { createStyledComponent } from '../../../../../library/styles';
+import _DemoLayout from '../../shared/DemoLayout';
+
+const StyledDemoLayout = (props) => (
+  <_DemoLayout includeLastChild marginBottom="1em" {...props} />
+);
 
 const DemoLayout = createStyledComponent(
-  'div',
-  {
-    '& > *': {
-      marginBottom: '1em'
-    }
-  },
+  StyledDemoLayout,
+  {},
   {
     includeStyleReset: true
   }

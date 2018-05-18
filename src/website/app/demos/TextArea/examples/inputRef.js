@@ -1,8 +1,8 @@
 /* @flow */
 import { Component } from 'react';
-import TextArea from '../../../../../library/TextArea';
 import Button from '../../../../../library/Button';
-import DemoLayout from '../components/DemoLayout';
+import TextArea from '../../../../../library/TextArea';
+import DemoLayout from '../../shared/DemoLayout';
 
 export default {
   id: 'input-ref',
