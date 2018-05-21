@@ -65,7 +65,8 @@ const Action = createStyledComponent('span', styles.action);
 /**
  * The CardActions component allows you to lay out actions inside your [Card](/components/card).
  */
-export default function CardActions({ children, ...restProps }: Props) {
+export default function CardActions(props: Props) {
+  const { children, ...restProps } = props;
   const actions = Children.map(children, (child, index) => {
     if (child.type === Button) {
       child = cloneElement(child, { size: 'medium' });

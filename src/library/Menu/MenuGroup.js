@@ -42,7 +42,8 @@ const Root = createStyledComponent(
  * Grouping Menu options provides context clues to users about related actions.
  * An optional title can be added to reinforce the intent of the grouping.
  */
-export default function MenuGroup({ children, title, ...restProps }: Props) {
+export default function MenuGroup(props: Props) {
+  const { children, title, ...restProps } = props;
   return (
     <Root {...restProps}>
       {title && <MenuGroupTitle>{title}</MenuGroupTitle>}

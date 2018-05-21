@@ -85,16 +85,14 @@ const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
  * often used in [groups](/components/radio-group), wherein only a single option may be
  * selected.
  */
-export default function Radio({
-  className,
-  labelPosition = 'end',
-  inputRef,
-  rootProps: otherRootProps,
-  size = 'large',
-  ...restProps
-}: Props) {
+const Radio = (props: Props) => {
+  const {
+    className,
+    inputRef,
+    rootProps: otherRootProps,
+    ...restProps
+  } = props;
   const rootProps = {
-    labelPosition,
     iconChecked: <IconChecked />,
     inputRef: (ref) => {
       if (inputRef) {
@@ -105,12 +103,17 @@ export default function Radio({
       className,
       ...otherRootProps
     },
-    size,
     type: 'radio',
     ...restProps // Note: Props are spread to input rather than Root
   };
 
   return <Root {...rootProps} />;
-}
+};
 
+Radio.defaultProps = {
+  labelPosition: 'end',
+  size: 'large'
+};
 Radio.displayName = 'Radio';
+
+export default Radio;

@@ -45,7 +45,8 @@ const Inner = createStyledComponent('div', styles.inner);
  * CardBlock is used to normalize font sizes for content and to provide
  * consistent margins and padding.
  */
-export default function CardBlock({ children, ...restProps }: Props) {
+export default function CardBlock(props: Props) {
+  const { children, ...restProps } = props;
   return (
     <Root {...restProps}>
       <Inner>{children}</Inner>

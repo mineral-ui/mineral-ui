@@ -54,11 +54,8 @@ const Root = createStyledComponent(
  * Grouping FormFields provides contextual clues to users and enhances
  * accessibility.
  */
-export default function FormFieldset({
-  children,
-  legend,
-  ...restProps
-}: Props) {
+export default function FormFieldset(props: Props) {
+  const { children, legend, ...restProps } = props;
   return (
     <Root {...restProps}>
       {legend && <legend>{legend}</legend>}
