@@ -46,7 +46,8 @@ const Message = createStyledComponent('div', ({ fancy, theme }) => {
   return styles;
 });
 
-export default function Loading({ error, pastDelay, timedOut }: Props) {
+export default function Loading(props: Props) {
+  const { error, pastDelay, timedOut } = props;
   if (pastDelay) {
     return <Message fancy>Loading...</Message>;
   } else if (timedOut || error) {

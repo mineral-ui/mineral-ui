@@ -31,7 +31,8 @@ const getPageHeader = (heading: string, title: string) => {
 # ${title}`;
 };
 
-export default function Router({ demoRoutes }: Props) {
+export default function Router(props: Props) {
+  const { demoRoutes } = props;
   const flatDemoRoutes = flatten(demoRoutes);
   const keyedDemoRoutes = createKeyMap(flatDemoRoutes, 'slug');
   const firstDemoSlug = flatDemoRoutes[0].slug;

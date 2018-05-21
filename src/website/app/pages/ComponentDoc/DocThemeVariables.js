@@ -40,11 +40,8 @@ const getValue = (theme, variable, baseTheme) => {
   }
 };
 
-export default function DocThemeVariables({
-  baseTheme,
-  componentTheme,
-  title
-}: Props) {
+export default function DocThemeVariables(props: Props) {
+  const { baseTheme, componentTheme, title } = props;
   const baseThemeKeys = createKeyMirror(baseTheme);
 
   let theme;

@@ -19,7 +19,8 @@ const PropsComment = createStyledComponent('p', {
   fontStyle: 'italic'
 });
 
-export default function DocProps({ propDoc, propsComment, title }: Props) {
+export default function DocProps(props: Props) {
+  const { propDoc, propsComment, title } = props;
   return (
     <Section>
       <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>

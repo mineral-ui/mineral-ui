@@ -8,7 +8,8 @@ type Props = {
   content: string
 };
 
-export default function DocWhenHowToUse({ content }: Props) {
+export default function DocWhenHowToUse(props: Props) {
+  const { content } = props;
   return (
     <Section>
       <DocSectionTitle id="when-how-to-use">When/How to Use</DocSectionTitle>

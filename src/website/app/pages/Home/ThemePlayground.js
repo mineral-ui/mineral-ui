@@ -208,13 +208,8 @@ const Option = ({
   );
 };
 
-export default function ThemePlaygound({
-  children,
-  index,
-  setIndex,
-  themes,
-  ...restProps
-}: Props) {
+export default function ThemePlaygound(props: Props) {
+  const { children, index, setIndex, themes, ...restProps } = props;
   const rootProps = {
     index,
     themes,

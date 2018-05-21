@@ -21,7 +21,8 @@ const styles = {
 const Grid = createStyledComponent('div', styles.grid);
 const Practice = createStyledComponent(DocPractice, styles.practice);
 
-export default function DocBestPractices({ practices }: Props) {
+export default function DocBestPractices(props: Props) {
+  const { practices } = props;
   return (
     <Section>
       <DocSectionTitle id="best-practices">Best Practices</DocSectionTitle>

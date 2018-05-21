@@ -17,7 +17,8 @@ type Props = {
   children: [Array<TableTreeItem>, Array<TableTreeItem>]
 };
 
-export default function MarkdownTable({ children }: Props) {
+export default function MarkdownTable(props: Props) {
+  const { children } = props;
   // we're going to assume there's a table header here
   // since marked (marksy's parser) requires a header
   let [head, body] = children;

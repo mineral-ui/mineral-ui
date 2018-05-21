@@ -45,12 +45,8 @@ const Root = createStyledComponent(Section, styles.subnav).withProps({
 });
 const NavElement = createStyledComponent(Link, styles.navElement);
 
-export default function DocSubNav({
-  bestPractices,
-  examples,
-  whenHowToUse,
-  ...restProps
-}: Props) {
+export default function DocSubNav(props: Props) {
+  const { bestPractices, examples, whenHowToUse, ...restProps } = props;
   // there is no Examples h2, so we just link to the first example.
   let firstExampleId = 'examples';
   if (examples && examples.length > 0) {

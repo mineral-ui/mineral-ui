@@ -59,21 +59,22 @@ const Root = createStyledComponent('div', styles.componentDocExample);
 const Description = createStyledComponent(Markdown, styles.description);
 const BackLink = createStyledComponent(Link, styles.backLink);
 
-export default function ComponentDocExample({
-  backgroundColor,
-  chromeless,
-  componentName,
-  description,
-  hideFromProd,
-  hideSource,
-  id,
-  scope,
-  slug,
-  source,
-  standalone,
-  title: propsTitle,
-  ...restProps
-}: Props) {
+export default function ComponentDocExample(props: Props) {
+  const {
+    backgroundColor,
+    chromeless,
+    componentName,
+    description,
+    hideFromProd,
+    hideSource,
+    id,
+    scope,
+    slug,
+    source,
+    standalone,
+    title: propsTitle,
+    ...restProps
+  } = props;
   const rootProps = { ...restProps };
   const descriptionProps = {
     scope: { Callout },

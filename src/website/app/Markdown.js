@@ -302,14 +302,15 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-export default function Markdown({
-  anchors = true,
-  children,
-  className,
-  scope,
-  standalone,
-  ...restProps
-}: Props) {
+const Markdown = (props: Props) => {
+  const {
+    anchors,
+    children,
+    className,
+    scope,
+    standalone,
+    ...restProps
+  } = props;
   const rootProps = {
     className: className ? `markdown ${className}` : 'markdown',
     ...restProps
@@ -383,4 +384,10 @@ export default function Markdown({
   const compiled = compile(children, { smartypants: false });
 
   return <Root {...rootProps}>{compiled.tree}</Root>;
-}
+};
+
+Markdown.defaultProps = {
+  anchors: true
+};
+
+export default Markdown;

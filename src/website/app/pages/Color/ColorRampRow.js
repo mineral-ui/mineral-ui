@@ -74,7 +74,8 @@ function getBestAccessibility(access) {
   return ' '; // should this be an explicit DNP?
 }
 
-export default function ColorRampRow({ name }: Props) {
+export default function ColorRampRow(props: Props) {
+  const { name } = props;
   // the black here is the color from our theme.
   const main = palette[name];
   const readable = readableColor(main);

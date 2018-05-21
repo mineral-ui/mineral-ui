@@ -48,12 +48,8 @@ const Root = createStyledComponent('div', styles.root);
 const Description = createStyledComponent(Paragraph, styles.description);
 const ThemeSwatches = createStyledComponent('div', styles.themeSwatches);
 
-export default function ControlPanel({
-  activeColor,
-  availableThemes,
-  changeTheme,
-  theme
-}: Props) {
+export default function ControlPanel(props: Props) {
+  const { activeColor, availableThemes, changeTheme, theme } = props;
   const themeRamp = createColorRamp(palette[activeColor], 'color_theme_');
   const grayRamp = createColorRamp(palette.gray, 'gray_');
 

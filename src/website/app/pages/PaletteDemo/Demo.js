@@ -93,7 +93,8 @@ const MenuContainer = createStyledComponent('div', styles.menuContainer);
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 
-export default function Demo({ theme }: Props) {
+export default function Demo(props: Props) {
+  const { theme } = props;
   return (
     <Root>
       <ThemeProvider theme={theme}>

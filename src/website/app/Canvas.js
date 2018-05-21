@@ -25,7 +25,8 @@ const Triangles = createStyledComponent('div', {
   top: 0
 });
 
-export default function Canvas({ ...restProps }: Props) {
+export default function Canvas(props: Props) {
+  const { ...restProps } = props;
   return (
     <Root {...restProps}>
       <Triangles />

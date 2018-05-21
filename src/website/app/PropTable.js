@@ -190,7 +190,8 @@ function PropTableRow({
   );
 }
 
-export default function PropTable({ propDoc = {} }: Props) {
+const PropTable = (props: Props) => {
+  const { propDoc } = props;
   return (
     <Root>
       <Table>
@@ -212,4 +213,10 @@ export default function PropTable({ propDoc = {} }: Props) {
       </Table>
     </Root>
   );
-}
+};
+
+PropTable.defaultProps = {
+  propDoc: {}
+};
+
+export default PropTable;
