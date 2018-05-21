@@ -93,23 +93,22 @@ const isChecked = (checked: string | Array<string>, value) => {
  * of [Radios](/components/radio) or [Checkboxes](/components/checkbox) and
  * provides a simpler API than working with Radio or Checkbox directly.
  */
-export default function ChoiceGroup({
-  checked,
-  children,
-  data,
-  defaultChecked,
-  inline,
-  input,
-  invalid,
-  name,
-  onChange,
-  required,
-  role = 'group',
-  rootProps: otherRootProps,
-  size = 'large',
-  type,
-  ...restProps
-}: Props) {
+const ChoiceGroup = (props: Props) => {
+  const {
+    checked,
+    children,
+    data,
+    defaultChecked,
+    inline,
+    input,
+    invalid,
+    required,
+    role,
+    rootProps: otherRootProps,
+    size,
+    type,
+    ...restProps
+  } = props;
   const rootProps = {
     inline,
     role,
@@ -126,8 +125,6 @@ export default function ChoiceGroup({
           : undefined,
       invalid: type === 'checkbox' ? undefined : invalid,
       key: index,
-      name,
-      onChange,
       required: type === 'checkbox' ? undefined : required,
       size,
       ...restProps, // Note: Props are spread to input rather than Root
@@ -150,4 +147,11 @@ export default function ChoiceGroup({
   }
 
   return <Root {...rootProps}>{inputs}</Root>;
-}
+};
+
+ChoiceGroup.defaultProps = {
+  role: 'group',
+  size: 'large'
+};
+
+export default ChoiceGroup;

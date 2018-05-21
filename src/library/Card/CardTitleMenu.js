@@ -40,13 +40,9 @@ const MenuButton = createStyledComponent(Button, ({ theme }) => ({
 /**
  * CardTitleMenu
  */
-export default function CardTitleMenu({
-  data,
-  triggerTitle = 'Card actions',
-  ...restProps
-}: Props) {
+const CardTitleMenu = (props: Props) => {
+  const { triggerTitle, ...restProps } = props;
   const rootProps = {
-    data,
     placement: 'bottom-end',
     ...restProps
   };
@@ -60,4 +56,10 @@ export default function CardTitleMenu({
       <MenuButton {...buttonProps} />
     </Dropdown>
   );
-}
+};
+
+CardTitleMenu.defaultProps = {
+  triggerTitle: 'Card actions'
+};
+
+export default CardTitleMenu;

@@ -157,15 +157,16 @@ const variantIcons = {
  * You can put CardTitle in any order in relation to other root components of
  * [Card](/components/card).
  */
-export default function CardTitle({
-  actions,
-  avatar,
-  children,
-  secondaryText,
-  subtitle,
-  variant,
-  ...restProps
-}: Props) {
+export default function CardTitle(props: Props) {
+  const {
+    actions,
+    avatar,
+    children,
+    secondaryText,
+    subtitle,
+    variant,
+    ...restProps
+  } = props;
   const rootProps = {
     ...restProps
   };
