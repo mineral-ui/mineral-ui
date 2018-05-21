@@ -79,13 +79,8 @@ const getTableRows = (themeToDisplay, value, valueColor, baseTheme) => {
   });
 };
 
-export default function VariableTable({
-  baseTheme,
-  themeToDisplay,
-  value,
-  valueColor,
-  ...restProps
-}: Props) {
+export default function VariableTable(props: Props) {
+  const { baseTheme, themeToDisplay, value, valueColor, ...restProps } = props;
   return (
     <Root {...restProps}>
       <Table>

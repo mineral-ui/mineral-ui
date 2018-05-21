@@ -8,13 +8,11 @@ const Form = createStyledComponent('form', {
   }
 });
 
-const DemoForm = (props: Object) => {
+export default function DemoForm(props: Object) {
   const formProps = {
     onSubmit: (event) => event.preventDefault(),
     ...props
   };
 
   return <Form {...formProps} />;
-};
-
-export default DemoForm;
+}

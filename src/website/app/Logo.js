@@ -6,7 +6,8 @@ type Props = {
   title?: string
 };
 
-export default function Logo({ fill, title = 'Mineral', ...restProps }: Props) {
+const Logo = (props: Props) => {
+  const { fill, title, ...restProps } = props;
   const fillColor = fill || 'currentColor';
   return (
     <svg
@@ -41,4 +42,10 @@ export default function Logo({ fill, title = 'Mineral', ...restProps }: Props) {
       />
     </svg>
   );
-}
+};
+
+Logo.defaultProps = {
+  title: 'Mineral'
+};
+
+export default Logo;

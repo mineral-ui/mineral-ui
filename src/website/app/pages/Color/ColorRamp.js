@@ -20,7 +20,8 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-export default function ColorRamp({ baseColor }: Props) {
+export default function ColorRamp(props: Props) {
+  const { baseColor } = props;
   return (
     <Root>
       {baseColor === 'black' ? (

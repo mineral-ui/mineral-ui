@@ -23,10 +23,6 @@ type Props = {
   description?: React$Node,
   doc: Object,
   examples?: Array<any>,
-  pageMeta: {
-    title: string,
-    canonicalLink: string
-  },
   propsComment?: string | React$Element<*>,
   slug: string,
   title: string,
@@ -74,17 +70,18 @@ const DocIntro = ({ children }: { children: string }) => (
   </DocSection>
 );
 
-export default function ComponentDoc({
-  bestPractices,
-  componentTheme,
-  doc,
-  examples,
-  propsComment,
-  slug,
-  title,
-  whenHowToUse,
-  ...restProps
-}: Props) {
+export default function ComponentDoc(props: Props) {
+  const {
+    bestPractices,
+    componentTheme,
+    doc,
+    examples,
+    propsComment,
+    slug,
+    title,
+    whenHowToUse,
+    ...restProps
+  } = props;
   const { props: propDoc } = doc;
   const subNavProps = {
     bestPractices,

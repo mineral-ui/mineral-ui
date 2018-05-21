@@ -20,7 +20,8 @@ type Props = {
   slug: string
 };
 
-export default function DocExamples({ examples, slug }: Props) {
+export default function DocExamples(props: Props) {
+  let { examples, slug } = props;
   if (process.env.NODE_ENV === 'production') {
     examples = examples.filter((example) => !example.hideFromProd);
   }

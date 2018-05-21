@@ -71,13 +71,8 @@ const Root = createStyledComponent(ThemedLink, ({ href, theme }) => {
   return styles;
 });
 
-export default function SiteLink({
-  children,
-  element,
-  href,
-  to,
-  ...restProps
-}: Props) {
+export default function SiteLink(props: Props) {
+  const { children, element, href, to, ...restProps } = props;
   const isExternal = href && !href.startsWith('#');
 
   const rootProps = {

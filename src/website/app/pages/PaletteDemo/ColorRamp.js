@@ -53,7 +53,8 @@ const styles = {
 const Hue = createStyledComponent(Paragraph, styles.hue);
 const Swatch = createStyledComponent('span', styles.swatch);
 
-export default function ColorRamp({ ramp }: Props) {
+export default function ColorRamp(props: Props) {
+  const { ramp } = props;
   return (
     <div>
       {Object.entries(ramp).map(([key, color]) => (

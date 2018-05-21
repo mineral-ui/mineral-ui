@@ -105,13 +105,8 @@ const Root = createStyledComponent('div', styles.root);
 const Example = createStyledComponent('div', styles.example);
 const Header = createStyledComponent('div', styles.header);
 
-export default function DocPractice({
-  backgroundColor,
-  children,
-  className,
-  example,
-  type
-}: Props) {
+export default function DocPractice(props: Props) {
+  const { backgroundColor, children, className, example, type } = props;
   const iconProps = {
     size: pxToEm(50)
   };

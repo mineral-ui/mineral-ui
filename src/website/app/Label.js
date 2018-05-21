@@ -26,12 +26,15 @@ const Root = createStyledComponent('span', ({ theme, variant }) => {
   };
 });
 
-export default function Label({
-  children,
-  variant = 'regular',
-  ...restProps
-}: Props) {
-  const rootProps = { variant, ...restProps };
+const Label = (props: Props) => {
+  const { children, ...restProps } = props;
+  const rootProps = { ...restProps };
 
   return <Root {...rootProps}>{children}</Root>;
-}
+};
+
+Label.defaultProps = {
+  variant: 'regular'
+};
+
+export default Label;

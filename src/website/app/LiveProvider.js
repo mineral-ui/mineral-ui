@@ -69,14 +69,15 @@ const MyLivePreview = createStyledComponent(LivePreview, styles.livePreview, {
 const MyLiveEditor = createStyledComponent(LiveEditor, styles.liveEditor);
 const MyLiveError = createStyledComponent(LiveError, styles.liveError);
 
-export default function LiveProvider({
-  backgroundColor,
-  chromeless,
-  hideSource,
-  scope,
-  source,
-  ...restProps
-}: Props) {
+export default function LiveProvider(props: Props) {
+  const {
+    backgroundColor,
+    chromeless,
+    hideSource,
+    scope,
+    source,
+    ...restProps
+  } = props;
   const liveProviderProps = {
     code: dedent(source),
     scope,

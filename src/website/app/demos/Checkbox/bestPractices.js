@@ -51,7 +51,6 @@ is a single sentence, word, or fragment.`,
             input={CheckboxGroup}
             name="wants"
             label="What do you want in a component library?"
-            defaultChecked="none"
             data={[
               { label: 'Simplicity', value: 'simplicity' },
               { label: 'Quality', value: 'quality' },
@@ -80,7 +79,6 @@ Use a [Radio](/components/radio) instead.`,
             input={CheckboxGroup}
             name="contact"
             label="Choose your preferred contact method."
-            defaultChecked="none"
             data={[
               { label: 'Email', value: 'email' },
               { label: 'Telephone', value: 'telephone' },

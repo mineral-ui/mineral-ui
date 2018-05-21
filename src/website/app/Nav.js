@@ -17,7 +17,7 @@ import sections from './pages';
 type Props = {
   currentDemo?: string,
   demoRoutes: Array<DemoRoute>,
-  wide?: Boolean
+  wide?: boolean
 };
 
 type DemoRoute = {
@@ -235,12 +235,8 @@ const renderItem = (slug, title, wide) => (
   </ListItem>
 );
 
-export default function Nav({
-  currentDemo,
-  demoRoutes,
-  wide,
-  ...restProps
-}: Props) {
+export default function Nav(props: Props) {
+  const { currentDemo, demoRoutes, wide, ...restProps } = props;
   const rootProps = { ...restProps };
 
   const demoLinks = demoRoutes.map((route) => {

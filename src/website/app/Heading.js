@@ -60,7 +60,8 @@ const headingStyles = ({ level, theme: baseTheme }) => {
   };
 };
 
-export default function Heading({ as, children, level, ...restProps }: Props) {
+export default function Heading(props: Props) {
+  const { as, children, level, ...restProps } = props;
   const rootProps = {
     level,
     ...restProps
