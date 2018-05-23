@@ -165,8 +165,10 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
           <Checkbox
             checked={false}
             label="Fluorite"
+            labelPosition="end"
             name="minerals"
             onChange={[Function]}
+            size="large"
             value="fluorite"
           >
             <ThemedComponent
@@ -304,8 +306,10 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
           <Checkbox
             checked={true}
             label="Quartz"
+            labelPosition="end"
             name="minerals"
             onChange={[Function]}
+            size="large"
             value="quartz"
           >
             <ThemedComponent
@@ -443,8 +447,10 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
           <Checkbox
             checked={true}
             label="Magnetite"
+            labelPosition="end"
             name="minerals"
             onChange={[Function]}
+            size="large"
             value="magnetite"
           >
             <ThemedComponent
@@ -895,7 +901,9 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
                       input={[Function]}
                       name="minerals"
                       onChange={[Function]}
+                      role="group"
                       rootProps={Object {}}
+                      size="large"
                       type="checkbox"
                     >
                       <ChoiceGroup
@@ -910,6 +918,7 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
                             checked={false}
                             key="0"
                             label="Fluorite"
+                            labelPosition="end"
                             name="minerals"
                             onChange={[Function]}
                             size="large"
@@ -1051,6 +1060,7 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
                             checked={true}
                             key="1"
                             label="Magnetite"
+                            labelPosition="end"
                             name="minerals"
                             onChange={[Function]}
                             size="large"
@@ -1192,6 +1202,7 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
                             checked={true}
                             key="2"
                             label="Quartz"
+                            labelPosition="end"
                             name="minerals"
                             onChange={[Function]}
                             size="large"
@@ -1654,7 +1665,9 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                   }
                   input={[Function]}
                   name="minerals-1"
+                  role="group"
                   rootProps={Object {}}
+                  size="large"
                   type="checkbox"
                 >
                   <ChoiceGroup
@@ -1669,6 +1682,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="minerals-1"
                         size="large"
                         value="fluorite"
@@ -1804,6 +1818,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="minerals-1"
                         size="large"
                         value="magnetite"
@@ -1939,6 +1954,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="minerals-1"
                         size="large"
                         value="quartz"
@@ -2132,7 +2148,9 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                   }
                   input={[Function]}
                   name="minerals-2"
+                  role="group"
                   rootProps={Object {}}
+                  size="large"
                   type="checkbox"
                 >
                   <ChoiceGroup
@@ -2147,6 +2165,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="0/.0"
                         label="Azurite"
+                        labelPosition="end"
                         name="minerals-2"
                         size="large"
                         value="azurite"
@@ -2282,6 +2301,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="1/.1"
                         label="Hematite"
+                        labelPosition="end"
                         name="minerals-2"
                         size="large"
                         value="hematite"
@@ -2417,6 +2437,7 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="2/.2"
                         label="Pyrite"
+                        labelPosition="end"
                         name="minerals-2"
                         size="large"
                         value="pyrite"
@@ -2718,6 +2739,8 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
       <Checkbox
         disabled={true}
         label="Quartz"
+        labelPosition="end"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -2849,6 +2872,8 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
         defaultChecked={true}
         disabled={true}
         label="Magnetite"
+        labelPosition="end"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -3441,12 +3466,14 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                           input={[Function]}
                           name="contact"
                           required={true}
+                          role="group"
                           rootProps={
                             Object {
                               "aria-describedby": "formField-137-caption",
                               "aria-labelledby": "formField-137-labelText",
                             }
                           }
+                          size="large"
                           type="checkbox"
                           variant="success"
                         >
@@ -3466,6 +3493,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 aria-describedby="formField-137-caption"
                                 key="0"
                                 label="Naturally occurring"
+                                labelPosition="end"
                                 name="contact"
                                 size="large"
                                 value="natural"
@@ -3606,6 +3634,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 aria-describedby="formField-137-caption"
                                 key="1"
                                 label="Inorganic"
+                                labelPosition="end"
                                 name="contact"
                                 size="large"
                                 value="inorganic"
@@ -3746,6 +3775,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 aria-describedby="formField-137-caption"
                                 key="2"
                                 label="Solid"
+                                labelPosition="end"
                                 name="contact"
                                 size="large"
                                 value="solid"
@@ -3886,6 +3916,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 aria-describedby="formField-137-caption"
                                 key="3"
                                 label="Definite chemical composition"
+                                labelPosition="end"
                                 name="contact"
                                 size="large"
                                 value="composition"
@@ -4026,6 +4057,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 aria-describedby="formField-137-caption"
                                 key="4"
                                 label="Crystalline structure"
+                                labelPosition="end"
                                 name="contact"
                                 size="large"
                                 value="crystalline"
@@ -4500,7 +4532,9 @@ exports[`Checkbox demo examples Snapshots: inline 1`] = `
                   inline={true}
                   input={[Function]}
                   name="minerals"
+                  role="group"
                   rootProps={Object {}}
+                  size="large"
                   type="checkbox"
                 >
                   <ChoiceGroup
@@ -4516,6 +4550,7 @@ exports[`Checkbox demo examples Snapshots: inline 1`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="fluorite"
@@ -4651,6 +4686,7 @@ exports[`Checkbox demo examples Snapshots: inline 1`] = `
                         defaultChecked={true}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="magnetite"
@@ -4786,6 +4822,7 @@ exports[`Checkbox demo examples Snapshots: inline 1`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="quartz"
@@ -5219,6 +5256,8 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
         <Checkbox
           inputRef={[Function]}
           label="Option 1"
+          labelPosition="end"
+          size="large"
           value="1"
         >
           <ThemedComponent
@@ -5546,7 +5585,9 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
         defaultChecked={true}
         invalid={true}
         label="Quartz"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -5684,7 +5725,9 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
       <Checkbox
         invalid={true}
         label="Magnetite"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -6158,7 +6201,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
     >
       <Checkbox
         label="Quartz"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -6297,6 +6342,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
         label="Magnetite"
         labelPosition="start"
         name="minerals"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -6434,7 +6480,9 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
       <Checkbox
         justify={true}
         label="Azurite"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="azurite"
       >
         <ThemedComponent
@@ -6579,6 +6627,7 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
         label="Hematite"
         labelPosition="start"
         name="minerals"
+        size="large"
         value="hematite"
       >
         <ThemedComponent
@@ -6876,7 +6925,9 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis."
+        labelPosition="end"
         name="example"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -8061,6 +8112,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Checkbox
             label="Small"
+            labelPosition="end"
             name="size"
             size="small"
           >
@@ -8184,6 +8236,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Small"
             size="small"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -8299,6 +8352,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Checkbox
             label="Medium"
+            labelPosition="end"
             name="size"
             size="medium"
           >
@@ -8422,6 +8476,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Medium"
             size="medium"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -8537,7 +8592,9 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Checkbox
             label="Large"
+            labelPosition="end"
             name="size"
+            size="large"
           >
             <ThemedComponent
               iconChecked={<IconCheckBoxCheck />}
@@ -8658,6 +8715,8 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
           </Checkbox>
           <TextInput
             defaultValue="Large"
+            size="large"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -8773,6 +8832,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Checkbox
             label="Jumbo"
+            labelPosition="end"
             name="size"
             size="jumbo"
           >
@@ -8896,6 +8956,7 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Jumbo"
             size="jumbo"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -9177,8 +9238,10 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Quartz"
+        labelPosition="end"
         name="minerals"
         required={true}
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -9317,8 +9380,10 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
       </Checkbox>
       <Checkbox
         label="Magnetite"
+        labelPosition="end"
         name="minerals"
         required={true}
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -9799,7 +9864,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
           >
             <Checkbox
               label="مرحبا بالعالم"
+              labelPosition="end"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconCheckBoxCheck />}
@@ -9922,6 +9989,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
               label="مرحبا بالعالم"
               labelPosition="start"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconCheckBoxCheck />}
@@ -10053,7 +10121,9 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
             <Checkbox
               justify={true}
               label="مرحبا بالعالم"
+              labelPosition="end"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconCheckBoxCheck />}
@@ -10182,6 +10252,7 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
               label="مرحبا بالعالم"
               labelPosition="start"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconCheckBoxCheck />}
@@ -10516,6 +10587,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
     >
       <Checkbox
         label="Small"
+        labelPosition="end"
         name="size"
         size="small"
         value="small"
@@ -10644,6 +10716,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
       </Checkbox>
       <Checkbox
         label="Medium"
+        labelPosition="end"
         name="size"
         size="medium"
         value="medium"
@@ -10773,7 +10846,9 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Large"
+        labelPosition="end"
         name="size"
+        size="large"
         value="large"
       >
         <ThemedComponent
@@ -10905,6 +10980,7 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
       </Checkbox>
       <Checkbox
         label="Jumbo"
+        labelPosition="end"
         name="size"
         size="jumbo"
         value="jumbo"
@@ -11272,6 +11348,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
     >
       <Checkbox
         label="Regular"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           iconChecked={<IconCheckBoxCheck />}
@@ -11388,6 +11466,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
       <Checkbox
         data-simulate-hover=""
         label="Hover"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-hover=""
@@ -11509,6 +11589,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
       <Checkbox
         data-simulate-focus=""
         label="Focus"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -11631,6 +11713,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         data-simulate-hover=""
         label="Focus & Hover"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -11758,6 +11842,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-active=""
         data-simulate-focus=""
         label="Focus & Active"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -11884,6 +11970,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
       <Checkbox
         data-simulate-active=""
         label="Active"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -12005,6 +12093,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
       <Checkbox
         disabled={true}
         label="Disabled"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           disabled={true}
@@ -12129,6 +12219,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Regular (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -12251,6 +12343,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-hover=""
         defaultChecked={true}
         label="Hover (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-hover=""
@@ -12378,6 +12472,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         defaultChecked={true}
         label="Focus (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -12506,6 +12602,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-hover=""
         defaultChecked={true}
         label="Focus & Hover (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -12639,6 +12737,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         defaultChecked={true}
         label="Focus & Active (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -12771,6 +12871,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         data-simulate-active=""
         defaultChecked={true}
         label="Active (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -12898,6 +13000,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         disabled={true}
         label="Disabled (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -13028,6 +13132,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Regular (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -13151,6 +13257,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Hover (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-hover=""
@@ -13279,6 +13387,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Focus (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -13408,6 +13518,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Focus & Hover (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -13542,6 +13654,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Focus & Active (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -13675,6 +13789,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Active (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -13803,6 +13919,8 @@ exports[`Checkbox demo examples Snapshots: states 1`] = `
         disabled={true}
         indeterminate={true}
         label="Disabled (indeterminate)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -14096,7 +14214,9 @@ exports[`Checkbox demo examples Snapshots: tri-state 1`] = `
     >
       <Checkbox
         label="Unchecked"
+        labelPosition="end"
         name="states"
+        size="large"
         value="unchecked"
       >
         <ThemedComponent
@@ -14224,7 +14344,9 @@ exports[`Checkbox demo examples Snapshots: tri-state 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Checked"
+        labelPosition="end"
         name="states"
+        size="large"
         value="checked"
       >
         <ThemedComponent
@@ -14358,7 +14480,9 @@ exports[`Checkbox demo examples Snapshots: tri-state 1`] = `
         defaultChecked={true}
         indeterminate={true}
         label="Indeterminate"
+        labelPosition="end"
         name="states"
+        size="large"
         value="indeterminate"
       >
         <ThemedComponent
@@ -14656,7 +14780,9 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
       <Checkbox
         defaultChecked={true}
         label="Quartz"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -14788,7 +14914,9 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
       </Checkbox>
       <Checkbox
         label="Magnetite"
+        labelPosition="end"
         name="minerals"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -15221,7 +15349,9 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
                   }
                   input={[Function]}
                   name="minerals"
+                  role="group"
                   rootProps={Object {}}
+                  size="large"
                   type="checkbox"
                 >
                   <ChoiceGroup
@@ -15236,6 +15366,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="fluorite"
@@ -15371,6 +15502,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
                         defaultChecked={true}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="magnetite"
@@ -15506,6 +15638,7 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="minerals"
                         size="large"
                         value="quartz"

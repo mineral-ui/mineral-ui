@@ -297,11 +297,13 @@ exports[`RadioGroup demo examples Snapshots: controlled 1`] = `
                       input={[Function]}
                       name="mineral"
                       onChange={[Function]}
+                      role="group"
                       rootProps={
                         Object {
                           "role": "radiogroup",
                         }
                       }
+                      size="large"
                       type="radio"
                     >
                       <ChoiceGroup
@@ -316,6 +318,7 @@ exports[`RadioGroup demo examples Snapshots: controlled 1`] = `
                             checked={false}
                             key="0"
                             label="Fluorite"
+                            labelPosition="end"
                             name="mineral"
                             onChange={[Function]}
                             size="large"
@@ -459,6 +462,7 @@ exports[`RadioGroup demo examples Snapshots: controlled 1`] = `
                             checked={false}
                             key="1"
                             label="Magnetite"
+                            labelPosition="end"
                             name="mineral"
                             onChange={[Function]}
                             size="large"
@@ -602,6 +606,7 @@ exports[`RadioGroup demo examples Snapshots: controlled 1`] = `
                             checked={true}
                             key="2"
                             label="Quartz"
+                            labelPosition="end"
                             name="mineral"
                             onChange={[Function]}
                             size="large"
@@ -1054,11 +1059,13 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                   defaultChecked="quartz"
                   input={[Function]}
                   name="mineral-1"
+                  role="group"
                   rootProps={
                     Object {
                       "role": "radiogroup",
                     }
                   }
+                  size="large"
                   type="radio"
                 >
                   <ChoiceGroup
@@ -1073,6 +1080,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="mineral-1"
                         size="large"
                         value="fluorite"
@@ -1210,6 +1218,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="mineral-1"
                         size="large"
                         value="magnetite"
@@ -1347,6 +1356,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="mineral-1"
                         size="large"
                         value="quartz"
@@ -1530,11 +1540,13 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                   defaultChecked="pyrite"
                   input={[Function]}
                   name="mineral-2"
+                  role="group"
                   rootProps={
                     Object {
                       "role": "radiogroup",
                     }
                   }
+                  size="large"
                   type="radio"
                 >
                   <ChoiceGroup
@@ -1549,6 +1561,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="0/.0"
                         label="Azurite"
+                        labelPosition="end"
                         name="mineral-2"
                         size="large"
                         value="azurite"
@@ -1686,6 +1699,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={false}
                         key="1/.1"
                         label="Hematite"
+                        labelPosition="end"
                         name="mineral-2"
                         size="large"
                         value="hematite"
@@ -1823,6 +1837,7 @@ exports[`RadioGroup demo examples Snapshots: data-vs-children 1`] = `
                         defaultChecked={true}
                         key="2/.2"
                         label="Pyrite"
+                        labelPosition="end"
                         name="mineral-2"
                         size="large"
                         value="pyrite"
@@ -2407,6 +2422,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                           input={[Function]}
                           name="contact"
                           required={true}
+                          role="group"
                           rootProps={
                             Object {
                               "aria-describedby": "formField-31-caption",
@@ -2414,6 +2430,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                               "role": "radiogroup",
                             }
                           }
+                          size="large"
                           type="radio"
                         >
                           <ChoiceGroup
@@ -2433,6 +2450,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                                 defaultChecked={false}
                                 key="0"
                                 label="Email"
+                                labelPosition="end"
                                 name="contact"
                                 required={true}
                                 size="large"
@@ -2584,6 +2602,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                                 defaultChecked={false}
                                 key="1"
                                 label="Telephone"
+                                labelPosition="end"
                                 name="contact"
                                 required={true}
                                 size="large"
@@ -2735,6 +2754,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                                 defaultChecked={false}
                                 key="2"
                                 label="Text message"
+                                labelPosition="end"
                                 name="contact"
                                 required={true}
                                 size="large"
@@ -2886,6 +2906,7 @@ exports[`RadioGroup demo examples Snapshots: form-field 1`] = `
                                 defaultChecked={true}
                                 key="3"
                                 label="None"
+                                labelPosition="end"
                                 name="contact"
                                 required={true}
                                 size="large"
@@ -3357,11 +3378,13 @@ exports[`RadioGroup demo examples Snapshots: inline 1`] = `
                   inline={true}
                   input={[Function]}
                   name="mineral"
+                  role="group"
                   rootProps={
                     Object {
                       "role": "radiogroup",
                     }
                   }
+                  size="large"
                   type="radio"
                 >
                   <ChoiceGroup
@@ -3377,6 +3400,7 @@ exports[`RadioGroup demo examples Snapshots: inline 1`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="fluorite"
@@ -3514,6 +3538,7 @@ exports[`RadioGroup demo examples Snapshots: inline 1`] = `
                         defaultChecked={false}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="magnetite"
@@ -3651,6 +3676,7 @@ exports[`RadioGroup demo examples Snapshots: inline 1`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="quartz"
@@ -4088,11 +4114,13 @@ exports[`RadioGroup demo examples Snapshots: uncontrolled 1`] = `
                   defaultChecked="quartz"
                   input={[Function]}
                   name="mineral"
+                  role="group"
                   rootProps={
                     Object {
                       "role": "radiogroup",
                     }
                   }
+                  size="large"
                   type="radio"
                 >
                   <ChoiceGroup
@@ -4107,6 +4135,7 @@ exports[`RadioGroup demo examples Snapshots: uncontrolled 1`] = `
                         defaultChecked={false}
                         key="0"
                         label="Fluorite"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="fluorite"
@@ -4244,6 +4273,7 @@ exports[`RadioGroup demo examples Snapshots: uncontrolled 1`] = `
                         defaultChecked={false}
                         key="1"
                         label="Magnetite"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="magnetite"
@@ -4381,6 +4411,7 @@ exports[`RadioGroup demo examples Snapshots: uncontrolled 1`] = `
                         defaultChecked={true}
                         key="2"
                         label="Quartz"
+                        labelPosition="end"
                         name="mineral"
                         size="large"
                         value="quartz"

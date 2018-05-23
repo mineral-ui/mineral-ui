@@ -179,6 +179,8 @@ exports[`TextInput demo examples Snapshots: controlled 1`] = `
   <MyForm>
     <TextInput
       onChange={[Function]}
+      size="large"
+      type="text"
       value="Hello World"
     >
       <TextInput
@@ -428,6 +430,8 @@ exports[`TextInput demo examples Snapshots: disabled 1`] = `
 <TextInput
   defaultValue="Hello World"
   disabled={true}
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -801,6 +805,8 @@ exports[`TextInput demo examples Snapshots: form-field 1`] = `
               iconStart={<IconAccountBox />}
               key="formField-21-control"
               required={true}
+              size="large"
+              type="text"
             >
               <TextInput
                 control={[Function]}
@@ -1250,6 +1256,8 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
     >
       <TextInput
         iconStart={<IconCloud />}
+        size="large"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -1356,6 +1364,8 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
       </TextInput>
       <TextInput
         iconEnd={<IconCloud />}
+        size="large"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -1463,6 +1473,8 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
       <TextInput
         iconEnd={<IconCloud />}
         iconStart={<IconCloud />}
+        size="large"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -1926,6 +1938,8 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
       >
         <TextInput
           inputRef={[Function]}
+          size="large"
+          type="text"
         >
           <TextInput
             control={[Function]}
@@ -2220,6 +2234,8 @@ exports[`TextInput demo examples Snapshots: invalid 1`] = `
 
 <TextInput
   invalid={true}
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -3088,6 +3104,8 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
       >
         <TextInput
           defaultValue="000"
+          size="large"
+          type="text"
         >
           <TextInput
             control={[Function]}
@@ -3167,6 +3185,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
         <TextInput
           defaultValue="000"
           prefix="$"
+          size="large"
           type="number"
         >
           <TextInput
@@ -3260,6 +3279,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
         </TextInput>
         <TextInput
           defaultValue="000"
+          size="large"
           suffix="cm"
           type="number"
         >
@@ -3354,6 +3374,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
         <TextInput
           defaultValue="000"
           prefix="$"
+          size="large"
           suffix="cm"
           type="number"
         >
@@ -3463,6 +3484,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
           defaultValue="000"
           iconStart={<IconCloud />}
           prefix="$"
+          size="large"
           type="number"
         >
           <TextInput
@@ -3591,6 +3613,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
         <TextInput
           defaultValue="000"
           iconEnd={<IconBackspace />}
+          size="large"
           suffix="cm"
           type="number"
         >
@@ -3721,6 +3744,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
           iconEnd={<IconBackspace />}
           iconStart={<IconCloud />}
           prefix="$"
+          size="large"
           suffix="cm"
           type="number"
         >
@@ -3898,6 +3922,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
         </TextInput>
         <TextInput
           defaultValue="000"
+          size="large"
           suffix="cm"
           type="number"
           variant="danger"
@@ -4224,6 +4249,8 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
             >
               <TextInput
                 defaultValue="000"
+                size="large"
+                type="text"
               >
                 <TextInput
                   control={[Function]}
@@ -4303,6 +4330,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               <TextInput
                 defaultValue="000"
                 prefix="$"
+                size="large"
                 type="number"
               >
                 <TextInput
@@ -4396,6 +4424,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               </TextInput>
               <TextInput
                 defaultValue="000"
+                size="large"
                 suffix="cm"
                 type="number"
               >
@@ -4490,6 +4519,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               <TextInput
                 defaultValue="000"
                 prefix="$"
+                size="large"
                 suffix="cm"
                 type="number"
               >
@@ -4599,6 +4629,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                 defaultValue="000"
                 iconStart={<IconCloud />}
                 prefix="$"
+                size="large"
                 type="number"
               >
                 <TextInput
@@ -4727,6 +4758,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               <TextInput
                 defaultValue="000"
                 iconEnd={<IconBackspace />}
+                size="large"
                 suffix="cm"
                 type="number"
               >
@@ -4857,6 +4889,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                 iconEnd={<IconBackspace />}
                 iconStart={<IconCloud />}
                 prefix="$"
+                size="large"
                 suffix="cm"
                 type="number"
               >
@@ -5034,6 +5067,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               </TextInput>
               <TextInput
                 defaultValue="000"
+                size="large"
                 suffix="cm"
                 type="number"
                 variant="danger"
@@ -6196,6 +6230,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
       <TextInput
         defaultValue="Small"
         size="small"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -6312,6 +6347,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
       <TextInput
         defaultValue="Medium"
         size="medium"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -6427,6 +6463,8 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
     <div>
       <TextInput
         defaultValue="Large"
+        size="large"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -6543,6 +6581,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
       <TextInput
         defaultValue="Jumbo"
         size="jumbo"
+        type="text"
       >
         <TextInput
           control={[Function]}
@@ -6836,6 +6875,8 @@ exports[`TextInput demo examples Snapshots: placeholder 1`] = `
 
 <TextInput
   placeholder="12345-123"
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -7192,6 +7233,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
     >
       <TextInput
         prefix="$"
+        size="large"
         type="number"
       >
         <TextInput
@@ -7279,6 +7321,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
         </TextInput>
       </TextInput>
       <TextInput
+        size="large"
         suffix="cm"
         type="number"
       >
@@ -7548,6 +7591,8 @@ exports[`TextInput demo examples Snapshots: read-only 1`] = `
 <TextInput
   defaultValue="Hello World"
   readOnly={true}
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -7810,6 +7855,8 @@ exports[`TextInput demo examples Snapshots: required 1`] = `
 
 <TextInput
   required={true}
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -8332,6 +8379,8 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
           <TextInput
             defaultValue="مرحبا بالعالم"
             iconStart={<IconBackspace />}
+            size="large"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -8444,6 +8493,8 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
           <TextInput
             defaultValue="مرحبا بالعالم"
             iconEnd={<IconBackspace />}
+            size="large"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -8555,6 +8606,8 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
           </TextInput>
           <TextInput
             defaultValue="مرحبا بالعالم"
+            size="large"
+            type="text"
             variant="success"
           >
             <TextInput
@@ -9045,6 +9098,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
     <TextInput
       defaultValue="Small"
       size="small"
+      type="text"
     >
       <TextInput
         control={[Function]}
@@ -9124,6 +9178,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
     <TextInput
       defaultValue="Medium"
       size="medium"
+      type="text"
     >
       <TextInput
         control={[Function]}
@@ -9202,6 +9257,8 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
     </TextInput>
     <TextInput
       defaultValue="Large"
+      size="large"
+      type="text"
     >
       <TextInput
         control={[Function]}
@@ -9281,6 +9338,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
     <TextInput
       defaultValue="Jumbo"
       size="jumbo"
+      type="text"
     >
       <TextInput
         control={[Function]}
@@ -9538,6 +9596,8 @@ exports[`TextInput demo examples Snapshots: uncontrolled 1`] = `
 
 <TextInput
   defaultValue="Hello World"
+  size="large"
+  type="text"
 >
   <TextInput
     control={[Function]}
@@ -10158,6 +10218,8 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
   >
     <TextInput
       defaultValue="Success"
+      size="large"
+      type="text"
       variant="success"
     >
       <TextInput
@@ -10273,6 +10335,8 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
     </TextInput>
     <TextInput
       defaultValue="Warning"
+      size="large"
+      type="text"
       variant="warning"
     >
       <TextInput
@@ -10388,6 +10452,8 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
     </TextInput>
     <TextInput
       defaultValue="Danger"
+      size="large"
+      type="text"
       variant="danger"
     >
       <TextInput

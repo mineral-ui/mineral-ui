@@ -339,6 +339,7 @@ exports[`Card demo examples Snapshots: actions-menu 1`] = `
                       },
                     ]
                   }
+                  triggerTitle="Card actions"
                 />
               }
             >
@@ -380,6 +381,7 @@ exports[`Card demo examples Snapshots: actions-menu 1`] = `
                                     },
                                   ]
                                 }
+                                triggerTitle="Card actions"
                               />
                             }
                           >
@@ -414,6 +416,7 @@ exports[`Card demo examples Snapshots: actions-menu 1`] = `
                               ]
                             }
                             key="0/.0"
+                            triggerTitle="Card actions"
                           >
                             <Dropdown
                               data={
@@ -897,7 +900,10 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
           >
             <CardTitle
               avatar={
-                <Avatar>
+                <Avatar
+                  shape="circle"
+                  size="large"
+                >
                   <img
                     alt="Alt text"
                     src="/images/avatar.svg"
@@ -913,7 +919,10 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
                     <span
                       className="css-18"
                     >
-                      <Avatar>
+                      <Avatar
+                        shape="circle"
+                        size="large"
+                      >
                         <Avatar
                           noBackground={true}
                           shape="circle"
@@ -981,7 +990,10 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
           >
             <CardTitle
               avatar={
-                <Avatar>
+                <Avatar
+                  shape="circle"
+                  size="large"
+                >
                   <img
                     alt="Alt text"
                     src="/images/avatar.svg"
@@ -1000,7 +1012,10 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
                     <span
                       className="css-21"
                     >
-                      <Avatar>
+                      <Avatar
+                        shape="circle"
+                        size="large"
+                      >
                         <Avatar
                           noBackground={true}
                           shape="circle"
@@ -1037,7 +1052,10 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
                       </glamorous(div)>
                       <glamorous(h4)
                         avatar={
-                          <Avatar>
+                          <Avatar
+                            shape="circle"
+                            size="large"
+                          >
                             <img
                               alt="Alt text"
                               src="/images/avatar.svg"
@@ -6171,7 +6189,10 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
               >
                 <CardTitle
                   avatar={
-                    <Avatar>
+                    <Avatar
+                      shape="circle"
+                      size="large"
+                    >
                       <img
                         alt="نص بديل"
                         src="/images/avatar.svg"
@@ -6190,7 +6211,10 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
                         <span
                           className="css-20"
                         >
-                          <Avatar>
+                          <Avatar
+                            shape="circle"
+                            size="large"
+                          >
                             <Avatar
                               noBackground={true}
                               shape="circle"
@@ -6227,7 +6251,10 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
                           </glamorous(div)>
                           <glamorous(h4)
                             avatar={
-                              <Avatar>
+                              <Avatar
+                                shape="circle"
+                                size="large"
+                              >
                                 <img
                                   alt="نص بديل"
                                   src="/images/avatar.svg"
@@ -7734,8 +7761,10 @@ exports[`Card demo examples Snapshots: with-links 1`] = `
                       href="https://example.com"
                     >
                       <Link
+                        element="a"
                         href="https://example.com"
                         target="_blank"
+                        variant="regular"
                       >
                         <Link
                           href="https://example.com"
@@ -7764,8 +7793,10 @@ exports[`Card demo examples Snapshots: with-links 1`] = `
                       href="https://example.com"
                     >
                       <Link
+                        element="a"
                         href="https://example.com"
                         target="_blank"
+                        variant="regular"
                       >
                         <Link
                           href="https://example.com"
