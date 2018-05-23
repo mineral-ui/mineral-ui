@@ -291,6 +291,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
                   </glamorous(div)>
                   <TextInput
                     key="formField-1-control"
+                    size="large"
                     type="email"
                   >
                     <TextInput
@@ -394,6 +395,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
                   </glamorous(div)>
                   <TextInput
                     key="formField-2-control"
+                    size="large"
                     type="password"
                   >
                     <TextInput
@@ -761,6 +763,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
                   <TextInput
                     disabled={true}
                     key="formField-5-control"
+                    size="large"
                     type="email"
                   >
                     <TextInput
@@ -872,6 +875,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
                   <TextInput
                     disabled={true}
                     key="formField-6-control"
+                    size="large"
                     type="password"
                   >
                     <TextInput
@@ -1269,6 +1273,8 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
                       defaultValue="مرحبا بالعالم"
                       iconStart={<IconBackspace />}
                       key="formField-9-control"
+                      size="large"
+                      type="text"
                     >
                       <TextInput
                         control={[Function]}

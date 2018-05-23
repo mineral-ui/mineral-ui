@@ -165,8 +165,10 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
           <Radio
             checked={true}
             label="Quartz"
+            labelPosition="end"
             name="mineral"
             onChange={[Function]}
+            size="large"
             value="quartz"
           >
             <ThemedComponent
@@ -306,8 +308,10 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
           <Radio
             checked={false}
             label="Magnetite"
+            labelPosition="end"
             name="mineral"
             onChange={[Function]}
+            size="large"
             value="magnetite"
           >
             <ThemedComponent
@@ -608,6 +612,8 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
       <Radio
         disabled={true}
         label="Quartz"
+        labelPosition="end"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -741,6 +747,8 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
         defaultChecked={true}
         disabled={true}
         label="Magnetite"
+        labelPosition="end"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -1169,6 +1177,8 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
         <Radio
           inputRef={[Function]}
           label="Option 1"
+          labelPosition="end"
+          size="large"
           value="1"
         >
           <ThemedComponent
@@ -1498,7 +1508,9 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
         defaultChecked={true}
         invalid={true}
         label="Quartz"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -1638,7 +1650,9 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
       <Radio
         invalid={true}
         label="Magnetite"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -2114,7 +2128,9 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
     >
       <Radio
         label="Quartz"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -2255,6 +2271,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
         label="Magnetite"
         labelPosition="start"
         name="mineral"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -2394,7 +2411,9 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
       <Radio
         justify={true}
         label="Azurite"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="azurite"
       >
         <ThemedComponent
@@ -2541,6 +2560,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
         label="Hematite"
         labelPosition="start"
         name="mineral"
+        size="large"
         value="hematite"
       >
         <ThemedComponent
@@ -2840,7 +2860,9 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
       <Radio
         defaultChecked={true}
         label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis."
+        labelPosition="end"
         name="example"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -4027,6 +4049,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Radio
             label="Small"
+            labelPosition="end"
             name="size"
             size="small"
           >
@@ -4152,6 +4175,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Small"
             size="small"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -4267,6 +4291,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Radio
             label="Medium"
+            labelPosition="end"
             name="size"
             size="medium"
           >
@@ -4392,6 +4417,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Medium"
             size="medium"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -4507,7 +4533,9 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Radio
             label="Large"
+            labelPosition="end"
             name="size"
+            size="large"
           >
             <ThemedComponent
               iconChecked={<IconRadioButtonCheck />}
@@ -4630,6 +4658,8 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
           </Radio>
           <TextInput
             defaultValue="Large"
+            size="large"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -4745,6 +4775,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
         <div>
           <Radio
             label="Jumbo"
+            labelPosition="end"
             name="size"
             size="jumbo"
           >
@@ -4870,6 +4901,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextInput
             defaultValue="Jumbo"
             size="jumbo"
+            type="text"
           >
             <TextInput
               control={[Function]}
@@ -5151,8 +5183,10 @@ exports[`Radio demo examples Snapshots: required 1`] = `
       <Radio
         defaultChecked={true}
         label="Quartz"
+        labelPosition="end"
         name="mineral"
         required={true}
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -5293,8 +5327,10 @@ exports[`Radio demo examples Snapshots: required 1`] = `
       </Radio>
       <Radio
         label="Magnetite"
+        labelPosition="end"
         name="mineral"
         required={true}
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
@@ -5777,7 +5813,9 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
           >
             <Radio
               label="مرحبا بالعالم"
+              labelPosition="end"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconRadioButtonCheck />}
@@ -5902,6 +5940,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
               label="مرحبا بالعالم"
               labelPosition="start"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconRadioButtonCheck />}
@@ -6035,7 +6074,9 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
             <Radio
               justify={true}
               label="مرحبا بالعالم"
+              labelPosition="end"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconRadioButtonCheck />}
@@ -6166,6 +6207,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
               label="مرحبا بالعالم"
               labelPosition="start"
               name="example"
+              size="large"
             >
               <ThemedComponent
                 iconChecked={<IconRadioButtonCheck />}
@@ -6502,6 +6544,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
     >
       <Radio
         label="Small"
+        labelPosition="end"
         name="size"
         size="small"
         value="small"
@@ -6632,6 +6675,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
       </Radio>
       <Radio
         label="Medium"
+        labelPosition="end"
         name="size"
         size="medium"
         value="medium"
@@ -6763,7 +6807,9 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
       <Radio
         defaultChecked={true}
         label="Large"
+        labelPosition="end"
         name="size"
+        size="large"
         value="large"
       >
         <ThemedComponent
@@ -6897,6 +6943,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
       </Radio>
       <Radio
         label="Jumbo"
+        labelPosition="end"
         name="size"
         size="jumbo"
         value="jumbo"
@@ -7266,6 +7313,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
     >
       <Radio
         label="Regular"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           iconChecked={<IconRadioButtonCheck />}
@@ -7384,6 +7433,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
       <Radio
         data-simulate-hover=""
         label="Hover"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-hover=""
@@ -7507,6 +7558,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
       <Radio
         data-simulate-focus=""
         label="Focus"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -7631,6 +7684,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         data-simulate-hover=""
         label="Focus & Hover"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -7760,6 +7815,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-active=""
         data-simulate-focus=""
         label="Focus & Active"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -7888,6 +7945,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
       <Radio
         data-simulate-active=""
         label="Active"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -8011,6 +8070,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
       <Radio
         disabled={true}
         label="Disabled"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           disabled={true}
@@ -8137,6 +8198,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
       <Radio
         defaultChecked={true}
         label="Regular (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -8261,6 +8324,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-hover=""
         defaultChecked={true}
         label="Hover (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-hover=""
@@ -8390,6 +8455,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         defaultChecked={true}
         label="Focus"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -8520,6 +8587,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-hover=""
         defaultChecked={true}
         label="Focus & Hover (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-focus=""
@@ -8655,6 +8724,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-focus=""
         defaultChecked={true}
         label="Focus & Active (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -8789,6 +8860,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         data-simulate-active=""
         defaultChecked={true}
         label="Active (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           data-simulate-active=""
@@ -8918,6 +8991,8 @@ exports[`Radio demo examples Snapshots: states 1`] = `
         defaultChecked={true}
         disabled={true}
         label="Disabled (checked)"
+        labelPosition="end"
+        size="large"
       >
         <ThemedComponent
           defaultChecked={true}
@@ -9214,7 +9289,9 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
       <Radio
         defaultChecked={true}
         label="Quartz"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="quartz"
       >
         <ThemedComponent
@@ -9348,7 +9425,9 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
       </Radio>
       <Radio
         label="Magnetite"
+        labelPosition="end"
         name="mineral"
+        size="large"
         value="magnetite"
       >
         <ThemedComponent
