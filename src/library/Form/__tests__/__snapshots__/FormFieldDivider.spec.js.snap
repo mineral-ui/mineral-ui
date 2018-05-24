@@ -226,169 +226,155 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   margin: 0.5em 0;
 }
 
-<glamorous(div)>
-  <div
-    className="css-1p1xtzc"
+<DemoLayout>
+  <glamorous(div)
+    marginBottom="1rem"
   >
-    <FormField
-      label="Old Password"
-      requiredText="Required"
+    <div
+      className="css-1p1xtzc"
     >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-1-textWrapper"
-            >
-              <div
-                className="css-1"
-              >
-                <span
-                  id="formField-1-labelText"
-                >
-                  Old Password
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-1-control"
-              size="large"
-              type="password"
-            >
-              <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "password",
-                  }
-                }
-                size="large"
-              >
-                <FauxControl
-                  className="css-2"
-                  control={[Function]}
-                  controlProps={
-                    Object {
-                      "aria-describedby": undefined,
-                      "aria-invalid": undefined,
-                      "aria-required": undefined,
-                      "controlRef": undefined,
-                      "disabled": undefined,
-                      "readOnly": undefined,
-                      "required": undefined,
-                      "type": "password",
-                    }
-                  }
-                  size="large"
-                >
-                  <FauxControl
-                    className="css-2"
-                    control={[Function]}
-                  >
-                    <div
-                      className="css-4"
-                    >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "password",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="password"
-                      >
-                        <input
-                          className="css-15"
-                          size="large"
-                          type="password"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
-                  </FauxControl>
-                </FauxControl>
-              </TextInput>
-            </TextInput>
-          </label>
-        </div>
-      </FormField>
-    </FormField>
-    <FormFieldDivider>
-      <FormFieldDivider
-        role="separator"
+      <FormField
+        label="Old Password"
+        requiredText="Required"
       >
-        <div
-          className="css-30"
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-1-textWrapper"
+              >
+                <div
+                  className="css-1"
+                >
+                  <span
+                    id="formField-1-labelText"
+                  >
+                    Old Password
+                  </span>
+                </div>
+              </glamorous(div)>
+              <TextInput
+                key="formField-1-control"
+                size="large"
+                type="password"
+              >
+                <TextInput
+                  control={[Function]}
+                  controlProps={
+                    Object {
+                      "aria-describedby": undefined,
+                      "aria-invalid": undefined,
+                      "aria-required": undefined,
+                      "controlRef": undefined,
+                      "disabled": undefined,
+                      "readOnly": undefined,
+                      "required": undefined,
+                      "type": "password",
+                    }
+                  }
+                  size="large"
+                >
+                  <FauxControl
+                    className="css-2"
+                    control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "password",
+                      }
+                    }
+                    size="large"
+                  >
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
+                    >
+                      <div
+                        className="css-4"
+                      >
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "password",
+                            }
+                          }
+                          key="control"
+                          size="large"
+                          type="password"
+                        >
+                          <input
+                            className="css-15"
+                            size="large"
+                            type="password"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
+                  </FauxControl>
+                </TextInput>
+              </TextInput>
+            </label>
+          </div>
+        </FormField>
+      </FormField>
+      <FormFieldDivider>
+        <FormFieldDivider
           role="separator"
-        />
+        >
+          <div
+            className="css-30"
+            role="separator"
+          />
+        </FormFieldDivider>
       </FormFieldDivider>
-    </FormFieldDivider>
-    <FormField
-      label="New Password"
-      requiredText="Required"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-2-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        label="New Password"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-2-textWrapper"
               >
-                <span
-                  id="formField-2-labelText"
+                <div
+                  className="css-1"
                 >
-                  New Password
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-2-control"
-              size="large"
-              type="password"
-            >
+                  <span
+                    id="formField-2-labelText"
+                  >
+                    New Password
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "password",
-                  }
-                }
+                key="formField-2-control"
                 size="large"
+                type="password"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -407,92 +393,92 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "password",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "password",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="password"
+                      <div
+                        className="css-4"
                       >
-                        <input
-                          className="css-15"
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "password",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="password"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            className="css-15"
+                            size="large"
+                            type="password"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-    <FormField
-      label="Repeat New Password"
-      requiredText="Required"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-3-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        label="Repeat New Password"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-3-textWrapper"
               >
-                <span
-                  id="formField-3-labelText"
+                <div
+                  className="css-1"
                 >
-                  Repeat New Password
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-3-control"
-              size="large"
-              type="password"
-            >
+                  <span
+                    id="formField-3-labelText"
+                  >
+                    Repeat New Password
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "password",
-                  }
-                }
+                key="formField-3-control"
                 size="large"
+                type="password"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -511,47 +497,65 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "password",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "password",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="password"
+                      <div
+                        className="css-4"
                       >
-                        <input
-                          className="css-15"
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "password",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="password"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            className="css-15"
+                            size="large"
+                            type="password"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-  </div>
-</glamorous(div)>
+    </div>
+  </glamorous(div)>
+</DemoLayout>
 `;
