@@ -23,8 +23,8 @@ export default function mapComponentThemes(
   );
 
   return {
-    ...baseTheme,
     ...sourceThemeWithRenamedKeys,
-    ...override.theme
+    ...override.theme,
+    ...baseTheme
   };
 }
