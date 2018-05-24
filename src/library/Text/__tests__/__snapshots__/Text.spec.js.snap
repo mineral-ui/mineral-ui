@@ -1057,13 +1057,34 @@ exports[`Text demo examples Snapshots: nested 1`] = `
   box-sizing: inherit;
 }
 
-.css-0 > *,
-[data-css-0] > * {
+.css-1,
+[data-css-1] {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.css-1 > *,
+[data-css-1] > * {
   margin-bottom: 1em;
 }
 
-.css-1,
-[data-css-1] {
+.css-1 *,
+[data-css-1] *,
+.css-1 *::before,
+[data-css-1] *::before,
+.css-1 *::after,
+[data-css-1] *::after {
+  box-sizing: inherit;
+}
+
+.css-2,
+[data-css-2] {
   background-color: #e8f4fa;
   color: #064d70;
   font-family: serif;
@@ -1071,22 +1092,22 @@ exports[`Text demo examples Snapshots: nested 1`] = `
   padding: 0.5em;
 }
 
-.css-2,
-[data-css-2] {
-  background-color: #dcdcfc;
-  padding: 0.5em;
-}
-
 .css-3,
 [data-css-3] {
-  margin-bottom: 0;
-  margin-top: 0;
   background-color: #dcdcfc;
   padding: 0.5em;
 }
 
 .css-4,
 [data-css-4] {
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #dcdcfc;
+  padding: 0.5em;
+}
+
+.css-5,
+[data-css-5] {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1101,142 +1122,158 @@ exports[`Text demo examples Snapshots: nested 1`] = `
   padding: 0.5em;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.css-5 *,
+[data-css-5] *,
+.css-5 *::before,
+[data-css-5] *::before,
+.css-5 *::after,
+[data-css-5] *::after {
   box-sizing: inherit;
 }
 
 <Component>
-  <glamorous(div)>
-    <div
+  <glamorous(StyledDemoLayout)>
+    <StyledDemoLayout
       className="css-0"
     >
-      For non-nested Text components, you can opt 
-      <em>
-        in
-      </em>
-       to style inheritance by passing true to the inherit prop. 
-      <glamorous(div)>
-        <div
-          className="css-1"
-        >
-          This is a non-nested div with custom styles. 
-          <glamorous(glamorous(Text))
-            inherit={true}
-          >
-            <Text
-              appearance="p"
-              className="css-2"
-              element="p"
-              inherit={true}
-              noMargins={true}
-            >
-              <TextProvider
-                appearance="p"
-                className="css-2"
-                element="p"
-                inherit={true}
-                noMargins={true}
-              >
-                <glamorous(p)
-                  appearance="p"
-                  className="css-2"
-                  element="p"
-                  inherit={true}
-                  noMargins={true}
-                >
-                  <p
-                    className="css-3"
-                  >
-                    This non-nested Text has opted in to inheriting those custom styles.
-                  </p>
-                </glamorous(p)>
-              </TextProvider>
-            </Text>
-          </glamorous(glamorous(Text))>
-        </div>
-      </glamorous(div)>
-      <glamorous(glamorous(Text))
-        element="div"
+      <DemoLayout
+        className="css-0"
+        includeLastChild={true}
+        marginBottom="1em"
       >
-        <Text
-          appearance="p"
-          className="css-2"
-          element="div"
-          noMargins={true}
+        <glamorous(div)
+          className="css-0"
+          includeLastChild={true}
+          marginBottom="1em"
         >
-          <TextProvider
-            appearance="p"
-            className="css-2"
-            element="div"
-            noMargins={true}
+          <div
+            className="css-1"
           >
-            <glamorous(div)
-              appearance="p"
-              className="css-2"
-              element="div"
-              noMargins={true}
-            >
+            For non-nested Text components, you can opt 
+            <em>
+              in
+            </em>
+             to style inheritance by passing true to the inherit prop. 
+            <glamorous(div)>
               <div
-                className="css-4"
+                className="css-2"
               >
-                For nested Text components (inside another Text), you can opt 
-                <em>
-                  out
-                </em>
-                 of style inheritance by passing false to the inherit prop. 
-                <glamorous(div)>
-                  <div
-                    className="css-1"
+                This is a non-nested div with custom styles. 
+                <glamorous(glamorous(Text))
+                  inherit={true}
+                >
+                  <Text
+                    appearance="p"
+                    className="css-3"
+                    element="p"
+                    inherit={true}
+                    noMargins={true}
                   >
-                    This is a nested div with custom styles. 
-                    <glamorous(glamorous(Text))
-                      inherit={false}
+                    <TextProvider
+                      appearance="p"
+                      className="css-3"
+                      element="p"
+                      inherit={true}
+                      noMargins={true}
                     >
-                      <Text
+                      <glamorous(p)
                         appearance="p"
-                        className="css-2"
+                        className="css-3"
                         element="p"
-                        inherit={false}
+                        inherit={true}
                         noMargins={true}
                       >
-                        <TextProvider
-                          appearance="p"
-                          className="css-2"
-                          element="p"
-                          inherit={false}
-                          noMargins={true}
-                          parentElement="div"
+                        <p
+                          className="css-4"
                         >
-                          <glamorous(p)
-                            appearance="p"
-                            className="css-2"
-                            element="p"
-                            inherit={false}
-                            noMargins={true}
-                          >
-                            <p
-                              className="css-4"
-                            >
-                              This nested Text has opted out of inheriting those custom styles.
-                            </p>
-                          </glamorous(p)>
-                        </TextProvider>
-                      </Text>
-                    </glamorous(glamorous(Text))>
-                  </div>
-                </glamorous(div)>
+                          This non-nested Text has opted in to inheriting those custom styles.
+                        </p>
+                      </glamorous(p)>
+                    </TextProvider>
+                  </Text>
+                </glamorous(glamorous(Text))>
               </div>
             </glamorous(div)>
-          </TextProvider>
-        </Text>
-      </glamorous(glamorous(Text))>
-    </div>
-  </glamorous(div)>
+            <glamorous(glamorous(Text))
+              element="div"
+            >
+              <Text
+                appearance="p"
+                className="css-3"
+                element="div"
+                noMargins={true}
+              >
+                <TextProvider
+                  appearance="p"
+                  className="css-3"
+                  element="div"
+                  noMargins={true}
+                >
+                  <glamorous(div)
+                    appearance="p"
+                    className="css-3"
+                    element="div"
+                    noMargins={true}
+                  >
+                    <div
+                      className="css-5"
+                    >
+                      For nested Text components (inside another Text), you can opt 
+                      <em>
+                        out
+                      </em>
+                       of style inheritance by passing false to the inherit prop. 
+                      <glamorous(div)>
+                        <div
+                          className="css-2"
+                        >
+                          This is a nested div with custom styles. 
+                          <glamorous(glamorous(Text))
+                            inherit={false}
+                          >
+                            <Text
+                              appearance="p"
+                              className="css-3"
+                              element="p"
+                              inherit={false}
+                              noMargins={true}
+                            >
+                              <TextProvider
+                                appearance="p"
+                                className="css-3"
+                                element="p"
+                                inherit={false}
+                                noMargins={true}
+                                parentElement="div"
+                              >
+                                <glamorous(p)
+                                  appearance="p"
+                                  className="css-3"
+                                  element="p"
+                                  inherit={false}
+                                  noMargins={true}
+                                >
+                                  <p
+                                    className="css-5"
+                                  >
+                                    This nested Text has opted out of inheriting those custom styles.
+                                  </p>
+                                </glamorous(p)>
+                              </TextProvider>
+                            </Text>
+                          </glamorous(glamorous(Text))>
+                        </div>
+                      </glamorous(div)>
+                    </div>
+                  </glamorous(div)>
+                </TextProvider>
+              </Text>
+            </glamorous(glamorous(Text))>
+          </div>
+        </glamorous(div)>
+      </DemoLayout>
+    </StyledDemoLayout>
+  </glamorous(StyledDemoLayout)>
 </Component>
 `;
 

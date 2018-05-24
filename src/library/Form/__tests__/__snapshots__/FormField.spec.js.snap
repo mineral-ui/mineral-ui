@@ -355,56 +355,42 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
 }
 
-<glamorous(div)>
-  <div
-    className="css-1p1xtzc"
+<DemoLayout>
+  <glamorous(div)
+    marginBottom="1rem"
   >
-    <FormField
-      input={[Function]}
-      label="Name"
-      requiredText="Required"
+    <div
+      className="css-1p1xtzc"
     >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-1-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        input={[Function]}
+        label="Name"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-1-textWrapper"
               >
-                <span
-                  id="formField-1-labelText"
+                <div
+                  className="css-1"
                 >
-                  Name
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-1-control"
-              size="large"
-              type="text"
-            >
+                  <span
+                    id="formField-1-labelText"
+                  >
+                    Name
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                key="formField-1-control"
                 size="large"
+                type="text"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -423,95 +409,90 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="text"
+                      <div
+                        className="css-4"
                       >
-                        <input
-                          className="css-15"
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            className="css-15"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-    <FormField
-      label="Description"
-      requiredText="Required"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-2-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        label="Description"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-2-textWrapper"
               >
-                <span
-                  id="formField-2-labelText"
+                <div
+                  className="css-1"
                 >
-                  Description
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextArea
-              key="formField-2-control"
-            >
+                  <span
+                    id="formField-2-labelText"
+                  >
+                    Description
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextArea
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "autoSize": undefined,
-                    "controlRef": [Function],
-                    "disabled": undefined,
-                    "onInput": [Function],
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "resizeable": true,
-                    "rows": 8,
-                    "size": "large",
-                  }
-                }
-                iconEnd={null}
-                size="large"
+                key="formField-2-control"
               >
-                <FauxControl
-                  className="css-30"
+                <TextArea
                   control={[Function]}
                   controlProps={
                     Object {
@@ -535,58 +516,81 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   <FauxControl
                     className="css-30"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "autoSize": undefined,
+                        "controlRef": [Function],
+                        "disabled": undefined,
+                        "onInput": [Function],
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "resizeable": true,
+                        "rows": 8,
+                        "size": "large",
+                      }
+                    }
+                    iconEnd={null}
+                    size="large"
                   >
-                    <div
-                      className="css-31"
+                    <FauxControl
+                      className="css-30"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(textarea))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "autoSize": undefined,
-                            "controlRef": [Function],
-                            "disabled": undefined,
-                            "onInput": [Function],
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "resizeable": true,
-                            "rows": 8,
-                            "size": "large",
-                          }
-                        }
-                        controlRef={[Function]}
-                        iconEnd={null}
-                        innerRef={[Function]}
-                        key="control"
-                        onInput={[Function]}
-                        resizeable={true}
-                        rows={8}
-                        size="large"
+                      <div
+                        className="css-31"
                       >
-                        <textarea
-                          className="css-41"
+                        <glamorous(glamorous(textarea))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "autoSize": undefined,
+                              "controlRef": [Function],
+                              "disabled": undefined,
+                              "onInput": [Function],
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "resizeable": true,
+                              "rows": 8,
+                              "size": "large",
+                            }
+                          }
+                          controlRef={[Function]}
+                          iconEnd={null}
+                          innerRef={[Function]}
+                          key="control"
                           onInput={[Function]}
+                          resizeable={true}
                           rows={8}
-                        />
-                      </glamorous(glamorous(textarea))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                          size="large"
+                        >
+                          <textarea
+                            className="css-41"
+                            onInput={[Function]}
+                            rows={8}
+                          />
+                        </glamorous(glamorous(textarea))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextArea>
               </TextArea>
-            </TextArea>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-  </div>
-</glamorous(div)>
+    </div>
+  </glamorous(div)>
+</DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: caption 1`] = `
@@ -1190,59 +1194,44 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   -webkit-align-self: flex-end;
 }
 
-<glamorous(div)>
-  <div
-    className="css-1p1xtzc"
+<DemoLayout>
+  <glamorous(div)
+    marginBottom="1rem"
   >
-    <FormField
-      input={[Function]}
-      label="Address"
-      placeholder="1234 Main St"
-      requiredText="Required"
+    <div
+      className="css-1p1xtzc"
     >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-25-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        input={[Function]}
+        label="Address"
+        placeholder="1234 Main St"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-25-textWrapper"
               >
-                <span
-                  id="formField-25-labelText"
+                <div
+                  className="css-1"
                 >
-                  Address
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-25-control"
-              placeholder="1234 Main St"
-              size="large"
-              type="text"
-            >
+                  <span
+                    id="formField-25-labelText"
+                  >
+                    Address
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "placeholder": "1234 Main St",
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                key="formField-25-control"
+                placeholder="1234 Main St"
                 size="large"
+                type="text"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -1262,101 +1251,101 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "placeholder": "1234 Main St",
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "placeholder": "1234 Main St",
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        placeholder="1234 Main St"
-                        size="large"
-                        type="text"
+                      <div
+                        className="css-4"
                       >
-                        <input
-                          className="css-15"
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "placeholder": "1234 Main St",
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           placeholder="1234 Main St"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            className="css-15"
+                            placeholder="1234 Main St"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-    <FormField
-      hideLabel={true}
-      input={[Function]}
-      label="Address Line 2"
-      placeholder="Apt 101"
-      requiredText="Required"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              hideLabel={true}
-              key="formField-26-textWrapper"
-            >
-              <div
-                className="css-30"
+      <FormField
+        hideLabel={true}
+        input={[Function]}
+        label="Address Line 2"
+        placeholder="Apt 101"
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                hideLabel={true}
+                key="formField-26-textWrapper"
               >
-                <span
-                  id="formField-26-labelText"
+                <div
+                  className="css-30"
                 >
-                  Address Line 2
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-26-control"
-              placeholder="Apt 101"
-              size="large"
-              type="text"
-            >
+                  <span
+                    id="formField-26-labelText"
+                  >
+                    Address Line 2
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "placeholder": "Apt 101",
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                key="formField-26-control"
+                placeholder="Apt 101"
                 size="large"
+                type="text"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -1376,52 +1365,71 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "placeholder": "Apt 101",
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "placeholder": "Apt 101",
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        placeholder="Apt 101"
-                        size="large"
-                        type="text"
+                      <div
+                        className="css-4"
                       >
-                        <input
-                          className="css-15"
+                        <glamorous(glamorous(input))
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "placeholder": "Apt 101",
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           placeholder="Apt 101"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            className="css-15"
+                            placeholder="Apt 101"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-  </div>
-</glamorous(div)>
+    </div>
+  </glamorous(div)>
+</DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: required 1`] = `
@@ -1650,65 +1658,51 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   font-weight: 400;
 }
 
-<glamorous(div)>
-  <div
-    className="css-1p1xtzc"
+<DemoLayout>
+  <glamorous(div)
+    marginBottom="1rem"
   >
-    <FormField
-      input={[Function]}
-      label="Name"
-      required={true}
-      requiredText="Required"
+    <div
+      className="css-1p1xtzc"
     >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-5-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        input={[Function]}
+        label="Name"
+        required={true}
+        requiredText="Required"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-5-textWrapper"
               >
-                <span
-                  id="formField-5-labelText"
+                <div
+                  className="css-1"
                 >
-                  Name
-                </span>
-                <glamorous(span)>
                   <span
-                    className="css-30"
+                    id="formField-5-labelText"
                   >
-                    Required
+                    Name
                   </span>
-                </glamorous(span)>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-5-control"
-              required={true}
-              size="large"
-              type="text"
-            >
+                  <glamorous(span)>
+                    <span
+                      className="css-30"
+                    >
+                      Required
+                    </span>
+                  </glamorous(span)>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": true,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": true,
-                    "type": "text",
-                  }
-                }
+                key="formField-5-control"
+                required={true}
                 size="large"
+                type="text"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -1727,106 +1721,106 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": true,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": true,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        aria-required={true}
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": true,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": true,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        required={true}
-                        size="large"
-                        type="text"
+                      <div
+                        className="css-4"
                       >
-                        <input
+                        <glamorous(glamorous(input))
                           aria-required={true}
-                          className="css-15"
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": true,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": true,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           required={true}
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            aria-required={true}
+                            className="css-15"
+                            required={true}
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-    <FormField
-      input={[Function]}
-      label="Nombre"
-      required={true}
-      requiredText="Necesario"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-6-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        input={[Function]}
+        label="Nombre"
+        required={true}
+        requiredText="Necesario"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-6-textWrapper"
               >
-                <span
-                  id="formField-6-labelText"
+                <div
+                  className="css-1"
                 >
-                  Nombre
-                </span>
-                <glamorous(span)>
                   <span
-                    className="css-30"
+                    id="formField-6-labelText"
                   >
-                    Necesario
+                    Nombre
                   </span>
-                </glamorous(span)>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              key="formField-6-control"
-              required={true}
-              size="large"
-              type="text"
-            >
+                  <glamorous(span)>
+                    <span
+                      className="css-30"
+                    >
+                      Necesario
+                    </span>
+                  </glamorous(span)>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": undefined,
-                    "aria-invalid": undefined,
-                    "aria-required": true,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": true,
-                    "type": "text",
-                  }
-                }
+                key="formField-6-control"
+                required={true}
                 size="large"
+                type="text"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -1845,53 +1839,71 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": undefined,
+                        "aria-invalid": undefined,
+                        "aria-required": true,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": true,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
                     >
-                      <glamorous(glamorous(input))
-                        aria-required={true}
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": true,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": true,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        required={true}
-                        size="large"
-                        type="text"
+                      <div
+                        className="css-4"
                       >
-                        <input
+                        <glamorous(glamorous(input))
                           aria-required={true}
-                          className="css-15"
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": true,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": true,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           required={true}
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <Underlay>
-                        <div
-                          className="css-29"
-                        />
-                      </Underlay>
-                    </div>
+                        >
+                          <input
+                            aria-required={true}
+                            className="css-15"
+                            required={true}
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <Underlay>
+                          <div
+                            className="css-29"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-        </div>
+            </label>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-  </div>
-</glamorous(div)>
+    </div>
+  </glamorous(div)>
+</DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: rtl 1`] = `
@@ -3004,73 +3016,57 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
 
 <Component>
   <MyForm>
-    <glamorous(div)>
-      <div
-        className="css-1p1xtzc"
+    <DemoLayout>
+      <glamorous(div)
+        marginBottom="1rem"
       >
-        <FormField
-          input={[Function]}
-          inputRef={[Function]}
-          label="Example"
-          onChange={[Function]}
-          required={true}
-          requiredText="Required"
-          value=""
+        <div
+          className="css-1p1xtzc"
         >
-          <FormField>
-            <div
-              className="css-0"
-            >
-              <label>
-                <glamorous(div)
-                  key="formField-29-textWrapper"
-                >
-                  <div
-                    className="css-1"
+          <FormField
+            input={[Function]}
+            inputRef={[Function]}
+            label="Example"
+            onChange={[Function]}
+            required={true}
+            requiredText="Required"
+            value=""
+          >
+            <FormField>
+              <div
+                className="css-0"
+              >
+                <label>
+                  <glamorous(div)
+                    key="formField-29-textWrapper"
                   >
-                    <span
-                      id="formField-29-labelText"
+                    <div
+                      className="css-1"
                     >
-                      Example
-                    </span>
-                    <glamorous(span)>
                       <span
-                        className="css-30"
+                        id="formField-29-labelText"
                       >
-                        Required
+                        Example
                       </span>
-                    </glamorous(span)>
-                  </div>
-                </glamorous(div)>
-                <TextInput
-                  inputRef={[Function]}
-                  key="formField-29-control"
-                  onChange={[Function]}
-                  required={true}
-                  size="large"
-                  type="text"
-                  value=""
-                >
+                      <glamorous(span)>
+                        <span
+                          className="css-30"
+                        >
+                          Required
+                        </span>
+                      </glamorous(span)>
+                    </div>
+                  </glamorous(div)>
                   <TextInput
-                    control={[Function]}
-                    controlProps={
-                      Object {
-                        "aria-describedby": undefined,
-                        "aria-invalid": undefined,
-                        "aria-required": true,
-                        "controlRef": [Function],
-                        "disabled": undefined,
-                        "onChange": [Function],
-                        "readOnly": undefined,
-                        "required": true,
-                        "type": "text",
-                        "value": "",
-                      }
-                    }
+                    inputRef={[Function]}
+                    key="formField-29-control"
+                    onChange={[Function]}
+                    required={true}
                     size="large"
+                    type="text"
+                    value=""
                   >
-                    <FauxControl
-                      className="css-2"
+                    <TextInput
                       control={[Function]}
                       controlProps={
                         Object {
@@ -3091,99 +3087,119 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                       <FauxControl
                         className="css-2"
                         control={[Function]}
+                        controlProps={
+                          Object {
+                            "aria-describedby": undefined,
+                            "aria-invalid": undefined,
+                            "aria-required": true,
+                            "controlRef": [Function],
+                            "disabled": undefined,
+                            "onChange": [Function],
+                            "readOnly": undefined,
+                            "required": true,
+                            "type": "text",
+                            "value": "",
+                          }
+                        }
+                        size="large"
                       >
-                        <div
-                          className="css-4"
+                        <FauxControl
+                          className="css-2"
+                          control={[Function]}
                         >
-                          <glamorous(glamorous(input))
-                            aria-required={true}
-                            controlPropsIn={
-                              Object {
-                                "aria-describedby": undefined,
-                                "aria-invalid": undefined,
-                                "aria-required": true,
-                                "controlRef": [Function],
-                                "disabled": undefined,
-                                "onChange": [Function],
-                                "readOnly": undefined,
-                                "required": true,
-                                "type": "text",
-                                "value": "",
-                              }
-                            }
-                            controlRef={[Function]}
-                            innerRef={[Function]}
-                            key="control"
-                            onChange={[Function]}
-                            required={true}
-                            size="large"
-                            type="text"
-                            value=""
+                          <div
+                            className="css-4"
                           >
-                            <input
+                            <glamorous(glamorous(input))
                               aria-required={true}
-                              className="css-15"
+                              controlPropsIn={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": true,
+                                  "controlRef": [Function],
+                                  "disabled": undefined,
+                                  "onChange": [Function],
+                                  "readOnly": undefined,
+                                  "required": true,
+                                  "type": "text",
+                                  "value": "",
+                                }
+                              }
+                              controlRef={[Function]}
+                              innerRef={[Function]}
+                              key="control"
                               onChange={[Function]}
                               required={true}
                               size="large"
                               type="text"
                               value=""
-                            />
-                          </glamorous(glamorous(input))>
-                          <Underlay>
-                            <div
-                              className="css-29"
-                            />
-                          </Underlay>
-                        </div>
+                            >
+                              <input
+                                aria-required={true}
+                                className="css-15"
+                                onChange={[Function]}
+                                required={true}
+                                size="large"
+                                type="text"
+                                value=""
+                              />
+                            </glamorous(glamorous(input))>
+                            <Underlay>
+                              <div
+                                className="css-29"
+                              />
+                            </Underlay>
+                          </div>
+                        </FauxControl>
                       </FauxControl>
-                    </FauxControl>
+                    </TextInput>
                   </TextInput>
-                </TextInput>
-              </label>
-            </div>
+                </label>
+              </div>
+            </FormField>
           </FormField>
-        </FormField>
-        <Button
-          element="button"
-          onClick={[Function]}
-          size="large"
-          type="button"
-          variant="regular"
-        >
-          <glamorous(button)
+          <Button
             element="button"
             onClick={[Function]}
             size="large"
-            text="Validate"
             type="button"
             variant="regular"
           >
-            <button
-              className="css-31"
+            <glamorous(button)
+              element="button"
               onClick={[Function]}
+              size="large"
+              text="Validate"
               type="button"
+              variant="regular"
             >
-              <glamorous(span)>
-                <span
-                  className="css-45"
-                >
-                  <glamorous(span)
-                    size="large"
+              <button
+                className="css-31"
+                onClick={[Function]}
+                type="button"
+              >
+                <glamorous(span)>
+                  <span
+                    className="css-45"
                   >
-                    <span
-                      className="css-46"
+                    <glamorous(span)
+                      size="large"
                     >
-                      Validate
-                    </span>
-                  </glamorous(span)>
-                </span>
-              </glamorous(span)>
-            </button>
-          </glamorous(button)>
-        </Button>
-      </div>
-    </glamorous(div)>
+                      <span
+                        className="css-46"
+                      >
+                        Validate
+                      </span>
+                    </glamorous(span)>
+                  </span>
+                </glamorous(span)>
+              </button>
+            </glamorous(button)>
+          </Button>
+        </div>
+      </glamorous(div)>
+    </DemoLayout>
   </MyForm>
 </Component>
 `;
@@ -3784,61 +3800,46 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   margin-top: 0.18181818181818182em;
 }
 
-<glamorous(div)>
-  <div
-    className="css-1p1xtzc"
+<DemoLayout>
+  <glamorous(div)
+    marginBottom="1rem"
   >
-    <FormField
-      caption="This is help text"
-      input={[Function]}
-      label="Success"
-      requiredText="Required"
-      variant="success"
+    <div
+      className="css-1p1xtzc"
     >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
-            <glamorous(div)
-              key="formField-13-textWrapper"
-            >
-              <div
-                className="css-1"
+      <FormField
+        caption="This is help text"
+        input={[Function]}
+        label="Success"
+        requiredText="Required"
+        variant="success"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-13-textWrapper"
               >
-                <span
-                  id="formField-13-labelText"
+                <div
+                  className="css-1"
                 >
-                  Success
-                </span>
-              </div>
-            </glamorous(div)>
-            <TextInput
-              aria-describedby="formField-13-caption"
-              key="formField-13-control"
-              size="large"
-              type="text"
-              variant="success"
-            >
+                  <span
+                    id="formField-13-labelText"
+                  >
+                    Success
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": "formField-13-caption",
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                aria-describedby="formField-13-caption"
+                key="formField-13-control"
                 size="large"
+                type="text"
                 variant="success"
               >
-                <FauxControl
-                  className="css-2"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -3858,146 +3859,146 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   <FauxControl
                     className="css-2"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": "formField-13-caption",
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                     variant="success"
                   >
-                    <div
-                      className="css-4"
+                    <FauxControl
+                      className="css-2"
+                      control={[Function]}
+                      variant="success"
                     >
-                      <glamorous(glamorous(input))
-                        aria-describedby="formField-13-caption"
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": "formField-13-caption",
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="text"
-                        variant="success"
+                      <div
+                        className="css-4"
                       >
-                        <input
+                        <glamorous(glamorous(input))
                           aria-describedby="formField-13-caption"
-                          className="css-15"
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": "formField-13-caption",
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <IconSuccess
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
+                          variant="success"
+                        >
+                          <input
+                            aria-describedby="formField-13-caption"
+                            className="css-15"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <IconSuccess
+                          key="iconEnd"
                           size="1.5em"
                         >
-                          <glamorous(svg)
-                            aria-hidden={true}
-                            role="img"
+                          <Icon
                             rtl={false}
                             size="1.5em"
-                            viewBox="0 0 24 24"
                           >
-                            <svg
+                            <glamorous(svg)
                               aria-hidden={true}
-                              className="css-29"
                               role="img"
+                              rtl={false}
+                              size="1.5em"
                               viewBox="0 0 24 24"
                             >
-                              <g>
-                                <path
-                                  d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
-                                />
-                              </g>
-                            </svg>
-                          </glamorous(svg)>
-                        </Icon>
-                      </IconSuccess>
-                      <Underlay
-                        variant="success"
-                      >
-                        <div
-                          className="css-30"
-                        />
-                      </Underlay>
-                    </div>
+                              <svg
+                                aria-hidden={true}
+                                className="css-29"
+                                role="img"
+                                viewBox="0 0 24 24"
+                              >
+                                <g>
+                                  <path
+                                    d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                  />
+                                </g>
+                              </svg>
+                            </glamorous(svg)>
+                          </Icon>
+                        </IconSuccess>
+                        <Underlay
+                          variant="success"
+                        >
+                          <div
+                            className="css-30"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-          <glamorous(div)
-            caption="This is help text"
-            id="formField-13-caption"
-            variant="success"
-          >
-            <div
-              className="css-31"
-              id="formField-13-caption"
-            >
-              This is help text
-            </div>
-          </glamorous(div)>
-        </div>
-      </FormField>
-    </FormField>
-    <FormField
-      caption="This is help text"
-      input={[Function]}
-      label="Warning"
-      requiredText="Required"
-      variant="warning"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
+            </label>
             <glamorous(div)
-              key="formField-15-textWrapper"
+              caption="This is help text"
+              id="formField-13-caption"
+              variant="success"
             >
               <div
-                className="css-1"
+                className="css-31"
+                id="formField-13-caption"
               >
-                <span
-                  id="formField-15-labelText"
-                >
-                  Warning
-                </span>
+                This is help text
               </div>
             </glamorous(div)>
-            <TextInput
-              aria-describedby="formField-15-caption"
-              key="formField-15-control"
-              size="large"
-              type="text"
-              variant="warning"
-            >
+          </div>
+        </FormField>
+      </FormField>
+      <FormField
+        caption="This is help text"
+        input={[Function]}
+        label="Warning"
+        requiredText="Required"
+        variant="warning"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-15-textWrapper"
+              >
+                <div
+                  className="css-1"
+                >
+                  <span
+                    id="formField-15-labelText"
+                  >
+                    Warning
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": "formField-15-caption",
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                aria-describedby="formField-15-caption"
+                key="formField-15-control"
                 size="large"
+                type="text"
                 variant="warning"
               >
-                <FauxControl
-                  className="css-32"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -4017,146 +4018,146 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   <FauxControl
                     className="css-32"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": "formField-15-caption",
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                     variant="warning"
                   >
-                    <div
-                      className="css-34"
+                    <FauxControl
+                      className="css-32"
+                      control={[Function]}
+                      variant="warning"
                     >
-                      <glamorous(glamorous(input))
-                        aria-describedby="formField-15-caption"
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": "formField-15-caption",
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="text"
-                        variant="warning"
+                      <div
+                        className="css-34"
                       >
-                        <input
+                        <glamorous(glamorous(input))
                           aria-describedby="formField-15-caption"
-                          className="css-45"
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": "formField-15-caption",
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <IconWarning
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
+                          variant="warning"
+                        >
+                          <input
+                            aria-describedby="formField-15-caption"
+                            className="css-45"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <IconWarning
+                          key="iconEnd"
                           size="1.5em"
                         >
-                          <glamorous(svg)
-                            aria-hidden={true}
-                            role="img"
+                          <Icon
                             rtl={false}
                             size="1.5em"
-                            viewBox="0 0 24 24"
                           >
-                            <svg
+                            <glamorous(svg)
                               aria-hidden={true}
-                              className="css-29"
                               role="img"
+                              rtl={false}
+                              size="1.5em"
                               viewBox="0 0 24 24"
                             >
-                              <g>
-                                <path
-                                  d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
-                                />
-                              </g>
-                            </svg>
-                          </glamorous(svg)>
-                        </Icon>
-                      </IconWarning>
-                      <Underlay
-                        variant="warning"
-                      >
-                        <div
-                          className="css-59"
-                        />
-                      </Underlay>
-                    </div>
+                              <svg
+                                aria-hidden={true}
+                                className="css-29"
+                                role="img"
+                                viewBox="0 0 24 24"
+                              >
+                                <g>
+                                  <path
+                                    d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                  />
+                                </g>
+                              </svg>
+                            </glamorous(svg)>
+                          </Icon>
+                        </IconWarning>
+                        <Underlay
+                          variant="warning"
+                        >
+                          <div
+                            className="css-59"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-          <glamorous(div)
-            caption="This is help text"
-            id="formField-15-caption"
-            variant="warning"
-          >
-            <div
-              className="css-60"
-              id="formField-15-caption"
-            >
-              This is help text
-            </div>
-          </glamorous(div)>
-        </div>
-      </FormField>
-    </FormField>
-    <FormField
-      caption="This is help text"
-      input={[Function]}
-      label="Danger"
-      requiredText="Required"
-      variant="danger"
-    >
-      <FormField>
-        <div
-          className="css-0"
-        >
-          <label>
+            </label>
             <glamorous(div)
-              key="formField-17-textWrapper"
+              caption="This is help text"
+              id="formField-15-caption"
+              variant="warning"
             >
               <div
-                className="css-1"
+                className="css-60"
+                id="formField-15-caption"
               >
-                <span
-                  id="formField-17-labelText"
-                >
-                  Danger
-                </span>
+                This is help text
               </div>
             </glamorous(div)>
-            <TextInput
-              aria-describedby="formField-17-caption"
-              key="formField-17-control"
-              size="large"
-              type="text"
-              variant="danger"
-            >
+          </div>
+        </FormField>
+      </FormField>
+      <FormField
+        caption="This is help text"
+        input={[Function]}
+        label="Danger"
+        requiredText="Required"
+        variant="danger"
+      >
+        <FormField>
+          <div
+            className="css-0"
+          >
+            <label>
+              <glamorous(div)
+                key="formField-17-textWrapper"
+              >
+                <div
+                  className="css-1"
+                >
+                  <span
+                    id="formField-17-labelText"
+                  >
+                    Danger
+                  </span>
+                </div>
+              </glamorous(div)>
               <TextInput
-                control={[Function]}
-                controlProps={
-                  Object {
-                    "aria-describedby": "formField-17-caption",
-                    "aria-invalid": undefined,
-                    "aria-required": undefined,
-                    "controlRef": undefined,
-                    "disabled": undefined,
-                    "readOnly": undefined,
-                    "required": undefined,
-                    "type": "text",
-                  }
-                }
+                aria-describedby="formField-17-caption"
+                key="formField-17-control"
                 size="large"
+                type="text"
                 variant="danger"
               >
-                <FauxControl
-                  className="css-61"
+                <TextInput
                   control={[Function]}
                   controlProps={
                     Object {
@@ -4176,95 +4177,114 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   <FauxControl
                     className="css-61"
                     control={[Function]}
+                    controlProps={
+                      Object {
+                        "aria-describedby": "formField-17-caption",
+                        "aria-invalid": undefined,
+                        "aria-required": undefined,
+                        "controlRef": undefined,
+                        "disabled": undefined,
+                        "readOnly": undefined,
+                        "required": undefined,
+                        "type": "text",
+                      }
+                    }
+                    size="large"
                     variant="danger"
                   >
-                    <div
-                      className="css-63"
+                    <FauxControl
+                      className="css-61"
+                      control={[Function]}
+                      variant="danger"
                     >
-                      <glamorous(glamorous(input))
-                        aria-describedby="formField-17-caption"
-                        controlPropsIn={
-                          Object {
-                            "aria-describedby": "formField-17-caption",
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        key="control"
-                        size="large"
-                        type="text"
-                        variant="danger"
+                      <div
+                        className="css-63"
                       >
-                        <input
+                        <glamorous(glamorous(input))
                           aria-describedby="formField-17-caption"
-                          className="css-74"
+                          controlPropsIn={
+                            Object {
+                              "aria-describedby": "formField-17-caption",
+                              "aria-invalid": undefined,
+                              "aria-required": undefined,
+                              "controlRef": undefined,
+                              "disabled": undefined,
+                              "readOnly": undefined,
+                              "required": undefined,
+                              "type": "text",
+                            }
+                          }
+                          key="control"
                           size="large"
                           type="text"
-                        />
-                      </glamorous(glamorous(input))>
-                      <IconDanger
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
+                          variant="danger"
+                        >
+                          <input
+                            aria-describedby="formField-17-caption"
+                            className="css-74"
+                            size="large"
+                            type="text"
+                          />
+                        </glamorous(glamorous(input))>
+                        <IconDanger
+                          key="iconEnd"
                           size="1.5em"
                         >
-                          <glamorous(svg)
-                            aria-hidden={true}
-                            role="img"
+                          <Icon
                             rtl={false}
                             size="1.5em"
-                            viewBox="0 0 24 24"
                           >
-                            <svg
+                            <glamorous(svg)
                               aria-hidden={true}
-                              className="css-29"
                               role="img"
+                              rtl={false}
+                              size="1.5em"
                               viewBox="0 0 24 24"
                             >
-                              <g>
-                                <path
-                                  d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
-                                />
-                              </g>
-                            </svg>
-                          </glamorous(svg)>
-                        </Icon>
-                      </IconDanger>
-                      <Underlay
-                        variant="danger"
-                      >
-                        <div
-                          className="css-88"
-                        />
-                      </Underlay>
-                    </div>
+                              <svg
+                                aria-hidden={true}
+                                className="css-29"
+                                role="img"
+                                viewBox="0 0 24 24"
+                              >
+                                <g>
+                                  <path
+                                    d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                  />
+                                </g>
+                              </svg>
+                            </glamorous(svg)>
+                          </Icon>
+                        </IconDanger>
+                        <Underlay
+                          variant="danger"
+                        >
+                          <div
+                            className="css-88"
+                          />
+                        </Underlay>
+                      </div>
+                    </FauxControl>
                   </FauxControl>
-                </FauxControl>
+                </TextInput>
               </TextInput>
-            </TextInput>
-          </label>
-          <glamorous(div)
-            caption="This is help text"
-            id="formField-17-caption"
-            variant="danger"
-          >
-            <div
-              className="css-89"
+            </label>
+            <glamorous(div)
+              caption="This is help text"
               id="formField-17-caption"
+              variant="danger"
             >
-              This is help text
-            </div>
-          </glamorous(div)>
-        </div>
+              <div
+                className="css-89"
+                id="formField-17-caption"
+              >
+                This is help text
+              </div>
+            </glamorous(div)>
+          </div>
+        </FormField>
       </FormField>
-    </FormField>
-  </div>
-</glamorous(div)>
+    </div>
+  </glamorous(div)>
+</DemoLayout>
 `;

@@ -5249,32 +5249,21 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
 
 <Component>
   <MyForm>
-    <glamorous(div)>
-      <div
-        className="css-1p1xtzc"
+    <DemoLayout>
+      <glamorous(div)
+        marginBottom="1rem"
       >
-        <Checkbox
-          inputRef={[Function]}
-          label="Option 1"
-          labelPosition="end"
-          size="large"
-          value="1"
+        <div
+          className="css-1p1xtzc"
         >
-          <ThemedComponent
-            iconChecked={<IconCheckBoxCheck />}
+          <Checkbox
             inputRef={[Function]}
             label="Option 1"
             labelPosition="end"
-            rootProps={
-              Object {
-                "className": undefined,
-              }
-            }
             size="large"
-            type="checkbox"
             value="1"
           >
-            <Themed(Choice)
+            <ThemedComponent
               iconChecked={<IconCheckBoxCheck />}
               inputRef={[Function]}
               label="Option 1"
@@ -5288,135 +5277,150 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
               type="checkbox"
               value="1"
             >
-              <ThemeProvider>
+              <Themed(Choice)
+                iconChecked={<IconCheckBoxCheck />}
+                inputRef={[Function]}
+                label="Option 1"
+                labelPosition="end"
+                rootProps={
+                  Object {
+                    "className": undefined,
+                  }
+                }
+                size="large"
+                type="checkbox"
+                value="1"
+              >
                 <ThemeProvider>
-                  <Choice
-                    iconChecked={<IconCheckBoxCheck />}
-                    inputRef={[Function]}
-                    label="Option 1"
-                    labelPosition="end"
-                    rootProps={
-                      Object {
-                        "className": undefined,
-                      }
-                    }
-                    size="large"
-                    type="checkbox"
-                    value="1"
-                  >
+                  <ThemeProvider>
                     <Choice
+                      iconChecked={<IconCheckBoxCheck />}
+                      inputRef={[Function]}
+                      label="Option 1"
                       labelPosition="end"
+                      rootProps={
+                        Object {
+                          "className": undefined,
+                        }
+                      }
+                      size="large"
+                      type="checkbox"
+                      value="1"
                     >
-                      <label
-                        className="css-0"
+                      <Choice
+                        labelPosition="end"
                       >
-                        <glamorous(input)
-                          innerRef={[Function]}
-                          size="large"
-                          type="checkbox"
-                          value="1"
+                        <label
+                          className="css-0"
                         >
-                          <input
-                            className="css-2"
+                          <glamorous(input)
+                            innerRef={[Function]}
                             size="large"
                             type="checkbox"
                             value="1"
-                          />
-                        </glamorous(input)>
-                        <glamorous(span)
-                          labelPosition="end"
-                          size="large"
-                        >
-                          <span
-                            className="css-20"
                           >
-                            <IconCheckBoxCheck>
-                              <Icon
-                                rtl={false}
-                                size="medium"
-                              >
-                                <glamorous(svg)
-                                  aria-hidden={true}
-                                  role="img"
+                            <input
+                              className="css-2"
+                              size="large"
+                              type="checkbox"
+                              value="1"
+                            />
+                          </glamorous(input)>
+                          <glamorous(span)
+                            labelPosition="end"
+                            size="large"
+                          >
+                            <span
+                              className="css-20"
+                            >
+                              <IconCheckBoxCheck>
+                                <Icon
                                   rtl={false}
                                   size="medium"
-                                  viewBox="0 0 24 24"
                                 >
-                                  <svg
+                                  <glamorous(svg)
                                     aria-hidden={true}
-                                    className="css-21"
                                     role="img"
+                                    rtl={false}
+                                    size="medium"
                                     viewBox="0 0 24 24"
                                   >
-                                    <g>
-                                      <path
-                                        d="M8.8 14.8l-4.2-4.1L2.1 13l6.7 6.7 13-13-2.4-2.6L8.8 14.8z"
-                                      />
-                                    </g>
-                                  </svg>
-                                </glamorous(svg)>
-                              </Icon>
-                            </IconCheckBoxCheck>
-                          </span>
-                        </glamorous(span)>
-                        <glamorous(span)
-                          labelPosition="end"
-                          size="large"
-                        >
-                          <span
-                            className="css-22"
+                                    <svg
+                                      aria-hidden={true}
+                                      className="css-21"
+                                      role="img"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <g>
+                                        <path
+                                          d="M8.8 14.8l-4.2-4.1L2.1 13l6.7 6.7 13-13-2.4-2.6L8.8 14.8z"
+                                        />
+                                      </g>
+                                    </svg>
+                                  </glamorous(svg)>
+                                </Icon>
+                              </IconCheckBoxCheck>
+                            </span>
+                          </glamorous(span)>
+                          <glamorous(span)
+                            labelPosition="end"
+                            size="large"
                           >
-                            Option 1
-                          </span>
-                        </glamorous(span)>
-                      </label>
+                            <span
+                              className="css-22"
+                            >
+                              Option 1
+                            </span>
+                          </glamorous(span)>
+                        </label>
+                      </Choice>
                     </Choice>
-                  </Choice>
+                  </ThemeProvider>
                 </ThemeProvider>
-              </ThemeProvider>
-            </Themed(Choice)>
-          </ThemedComponent>
-        </Checkbox>
-        <Button
-          element="button"
-          onClick={[Function]}
-          size="large"
-          type="button"
-          variant="regular"
-        >
-          <glamorous(button)
+              </Themed(Choice)>
+            </ThemedComponent>
+          </Checkbox>
+          <Button
             element="button"
             onClick={[Function]}
             size="large"
-            text="Focus the input"
             type="button"
             variant="regular"
           >
-            <button
-              className="css-23"
+            <glamorous(button)
+              element="button"
               onClick={[Function]}
+              size="large"
+              text="Focus the input"
               type="button"
+              variant="regular"
             >
-              <glamorous(span)>
-                <span
-                  className="css-37"
-                >
-                  <glamorous(span)
-                    size="large"
+              <button
+                className="css-23"
+                onClick={[Function]}
+                type="button"
+              >
+                <glamorous(span)>
+                  <span
+                    className="css-37"
                   >
-                    <span
-                      className="css-38"
+                    <glamorous(span)
+                      size="large"
                     >
-                      Focus the input
-                    </span>
-                  </glamorous(span)>
-                </span>
-              </glamorous(span)>
-            </button>
-          </glamorous(button)>
-        </Button>
-      </div>
-    </glamorous(div)>
+                      <span
+                        className="css-38"
+                      >
+                        Focus the input
+                      </span>
+                    </glamorous(span)>
+                  </span>
+                </glamorous(span)>
+              </button>
+            </glamorous(button)>
+          </Button>
+        </div>
+      </glamorous(div)>
+    </DemoLayout>
   </MyForm>
 </Component>
 `;
