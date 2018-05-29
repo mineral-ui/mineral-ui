@@ -1,7 +1,8 @@
 /* @flow */
+export const backgroundColor = '#ffffff';
 export const backgroundColor_active = '#ebeff5';
-export const backgroundColor_disabled = '#dde3ed';
-export const backgroundColor_focus = '#f5f7fa';
+export const backgroundColor_disabled = '#ebeff5';
+export const backgroundColor_focus = '#ffffff';
 export const backgroundColor_hover = '#f5f7fa';
 export const backgroundColor_brand_selected = '#f0f5fc';
 export const backgroundColor_brand_selectedActive = '#accbfc';
