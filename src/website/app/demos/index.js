@@ -3,6 +3,7 @@ import flatten from 'lodash/flatten';
 import createKeyMap from '../utils/createKeyMap';
 import avatar from './Avatar';
 import button from './Button';
+import buttonGroup from './ButtonGroup';
 import box from './Box';
 import card from './Card';
 import checkbox from './Checkbox';
@@ -26,6 +27,7 @@ import tooltip from './Tooltip';
 const demos = flatten([
   avatar,
   button,
+  buttonGroup,
   box,
   card,
   checkbox,
