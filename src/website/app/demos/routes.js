@@ -12,6 +12,12 @@ export default [
     slug: 'button',
     title: 'Button'
   },
+  {
+    description:
+      'ButtonGroup stylistically groups related buttons and provides the capability to select buttons like radios or checkboxes.',
+    slug: 'button-group',
+    title: 'ButtonGroup'
+  },
   [
     {
       description:
