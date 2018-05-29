@@ -1,9 +1,10 @@
 /* @flow */
 export default {
   background: {
+    '$mnrl-backgroundColor': '#ffffff',
     '$mnrl-backgroundColor-active': '#ebeff5',
-    '$mnrl-backgroundColor-disabled': '#dde3ed',
-    '$mnrl-backgroundColor-focus': '#f5f7fa',
+    '$mnrl-backgroundColor-disabled': '#ebeff5',
+    '$mnrl-backgroundColor-focus': '#ffffff',
     '$mnrl-backgroundColor-hover': '#f5f7fa',
     '$mnrl-backgroundColor-brand-selected': '#f0f5fc',
     '$mnrl-backgroundColor-brand-selectedActive': '#accbfc',

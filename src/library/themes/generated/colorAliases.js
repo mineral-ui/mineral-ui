@@ -1,8 +1,9 @@
 /* @flow */
 export default {
+  backgroundColor: 'white',
   backgroundColor_active: 'gray_20',
-  backgroundColor_disabled: 'gray_30',
-  backgroundColor_focus: 'gray_10',
+  backgroundColor_disabled: 'gray_20',
+  backgroundColor_focus: 'white',
   backgroundColor_hover: 'gray_10',
   backgroundColor_brand_selected: 'brand_10',
   backgroundColor_brand_selectedActive: 'brand_30',

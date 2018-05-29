@@ -24,8 +24,7 @@ export default {
   },
   gray: {
     backgroundColor_active: '#ebeff5',
-    backgroundColor_disabled: '#dde3ed',
-    backgroundColor_focus: '#f5f7fa',
+    backgroundColor_disabled: '#ebeff5',
     backgroundColor_hover: '#f5f7fa',
     borderColor: '#c8d1e0',
     color: '#333840',
@@ -108,6 +107,8 @@ export default {
     well_borderColor_warning: '#e89c3f'
   },
   white: {
+    backgroundColor: '#ffffff',
+    backgroundColor_focus: '#ffffff',
     color_inverted: '#ffffff',
     color_brandPrimary: '#ffffff',
     color_dangerPrimary: '#ffffff',

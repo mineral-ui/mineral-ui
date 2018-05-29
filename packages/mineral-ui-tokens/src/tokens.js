@@ -1,8 +1,9 @@
 /* @flow */
 export default {
+  backgroundColor: '#ffffff',
   backgroundColor_active: '#ebeff5',
-  backgroundColor_disabled: '#dde3ed',
-  backgroundColor_focus: '#f5f7fa',
+  backgroundColor_disabled: '#ebeff5',
+  backgroundColor_focus: '#ffffff',
   backgroundColor_hover: '#f5f7fa',
   backgroundColor_brand_selected: '#f0f5fc',
   backgroundColor_brand_selectedActive: '#accbfc',
