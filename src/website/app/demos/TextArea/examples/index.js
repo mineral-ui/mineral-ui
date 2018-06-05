@@ -13,7 +13,6 @@ import required from './required';
 import rows from './rows';
 import rtl from './rtl';
 import sizes from './sizes';
-import states from './states';
 import uncontrolled from './uncontrolled';
 import variants from './variants';
 
@@ -33,6 +32,5 @@ export default [
   inputRef,
   rtl,
   formField,
-  nextToOtherInputs,
-  states
+  nextToOtherInputs
 ];

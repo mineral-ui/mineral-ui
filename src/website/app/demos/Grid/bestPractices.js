@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import { css } from 'react-emotion';
 import { mineralTheme } from '../../../../library/themes';
 import Grid, { GridItem } from '../../../../library/Grid';
 import Button from '../../../../library/Button';
@@ -36,16 +37,16 @@ components to a columnar layout.`,
       description: `Don't use Grid if the content being laid out should _not_
 [respond to language direction](#rtl).`,
       example: (
-        <Grid css={{ height: 200 }}>
+        <Grid height={200}>
           <GridItem
             span={3}
             padding="sm"
-            css={{ backgroundColor: mineralTheme.color_theme_20 }}>
+            className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
             Sidebar
           </GridItem>
           <GridItem
             padding="sm"
-            css={{ backgroundColor: mineralTheme.color_theme_10 }}>
+            className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
             Main Content
           </GridItem>
         </Grid>

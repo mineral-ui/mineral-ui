@@ -11,13 +11,13 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui glamor glamorous react react-dom
+npm install --save mineral-ui emotion emotion-theming react-emotion react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui glamor glamorous react react-dom
+yarn add mineral-ui emotion emotion-theming react-emotion react react-dom
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ but we’ll leave that to you.
 
 ### Styling
 
-This project uses CSS-in-JS and [Glamorous](https://glamorous.rocks) for styling components. Refer to the [styling page](/styling/) for details.
+This project uses CSS-in-JS and [Emotion](https://emotion.sh/) for component styling. Refer to the [styling page](/styling/) for details.
 
 ### Theming
 

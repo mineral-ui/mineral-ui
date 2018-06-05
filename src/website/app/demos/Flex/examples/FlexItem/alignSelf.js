@@ -5,7 +5,7 @@ import DemoLayout from '../../components/DemoLayout';
 import _Flex from '../../components/Flex';
 
 const Flex = createStyledComponent(_Flex, ({ direction }) => ({
-  height: direction ? null : '5rem'
+  height: direction === 'column' ? null : '5rem'
 }));
 
 export default {

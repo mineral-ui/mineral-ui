@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import { css } from 'react-emotion';
 import { mineralTheme } from '../../../../library/themes';
 import Flex, { FlexItem } from '../../../../library/Flex';
 import Button from '../../../../library/Button';
@@ -72,17 +73,17 @@ align components to a columnar layout. Use [Grid](/components/grid) and
       description: `Don't use Flex if the content being laid out should _not_
 [respond to language direction](#rtl).`,
       example: (
-        <Flex css={{ height: 200 }}>
+        <Flex height={200}>
           <FlexItem
             width={50}
             padding="sm"
-            css={{ backgroundColor: mineralTheme.color_theme_20 }}>
+            className={css({ backgroundColor: mineralTheme.color_theme_20 })}>
             Sidebar
           </FlexItem>
           <FlexItem
             grow={1}
             padding="sm"
-            css={{ backgroundColor: mineralTheme.color_theme_10 }}>
+            className={css({ backgroundColor: mineralTheme.color_theme_10 })}>
             Main Content
           </FlexItem>
         </Flex>

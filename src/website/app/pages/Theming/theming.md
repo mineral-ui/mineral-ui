@@ -252,8 +252,6 @@ that enables theme access inside any component.
 **Parameters**
 
 * `component`: A React component
-* `options`: Optional. An object containing [Glamorous](https://github.com/paypal/glamorous/blob/master/src/with-theme.js)
-options.
 
 **Returns**
 

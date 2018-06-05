@@ -17,7 +17,6 @@ import required from './required';
 import rtl from './rtl';
 import scrolling from './scrolling';
 import sizes from './sizes';
-import states from './states';
 import triggerRef from './triggerRef';
 import uncontrolled from './uncontrolled';
 import variants from './variants';
@@ -43,6 +42,5 @@ export default [
   customItem,
   customMenu,
   customTrigger,
-  formField,
-  states
+  formField
 ];

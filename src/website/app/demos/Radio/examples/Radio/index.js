@@ -10,7 +10,6 @@ import nextToOtherInputs from './nextToOtherInputs';
 import required from './required';
 import rtl from './rtl';
 import sizes from './sizes';
-import states from './states';
 import uncontrolled from './uncontrolled';
 
 export default [
@@ -25,6 +24,5 @@ export default [
   labelWrapping,
   inputRef,
   rtl,
-  nextToOtherInputs,
-  states
+  nextToOtherInputs
 ];

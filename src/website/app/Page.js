@@ -364,11 +364,15 @@ const Canvas = createStyledComponent(_Canvas, styles.canvas);
 const Content = createStyledComponent('main', styles.content);
 const Dialog = createStyledComponent('div', styles.dialog);
 const Footer = createStyledComponent(_Footer, styles.footer);
-const Header = createStyledComponent(Section, styles.header).withProps({
-  element: 'header'
+const Header = createStyledComponent(Section, styles.header, {
+  withProps: {
+    element: 'header'
+  }
 });
-const MenuButton = createStyledComponent(Button, styles.menuButton).withProps({
-  circular: true
+const MenuButton = createStyledComponent(Button, styles.menuButton, {
+  withProps: {
+    circular: true
+  }
 });
 const Nav = createStyledComponent(_Nav, styles.nav, {
   filterProps: ['glitched']

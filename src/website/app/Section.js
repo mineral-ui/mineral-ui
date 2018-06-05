@@ -34,24 +34,22 @@ const styles = {
         ? paddingWithClipWide
         : theme.SectionPaddingVerticalWide;
 
-    const styles = [
-      {
-        margin: '0 auto',
-        maxWidth: '80em',
-        paddingBottom,
-        paddingLeft: theme.SectionPaddingHorizontal,
-        paddingRight: theme.SectionPaddingHorizontal,
-        paddingTop,
-        position: 'relative',
+    const styles = {
+      margin: '0 auto',
+      maxWidth: '80em',
+      paddingBottom,
+      paddingLeft: theme.SectionPaddingHorizontal,
+      paddingRight: theme.SectionPaddingHorizontal,
+      paddingTop,
+      position: 'relative',
 
-        [theme.bp_moreSpacious]: {
-          paddingBottom: paddingBottomWide,
-          paddingLeft: theme.SectionPaddingHorizontalWide,
-          paddingRight: theme.SectionPaddingHorizontalWide,
-          paddingTop: paddingTopWide
-        }
+      [theme.bp_moreSpacious]: {
+        paddingBottom: paddingBottomWide,
+        paddingLeft: theme.SectionPaddingHorizontalWide,
+        paddingRight: theme.SectionPaddingHorizontalWide,
+        paddingTop: paddingTopWide
       }
-    ];
+    };
 
     const pseudoStyles = {
       backgroundColor: clipColor,
@@ -78,29 +76,21 @@ const styles = {
      * [2] This calc takes the distance from [1] and adds the proportional width
      *     of each clipping shape
      */
-
-    const beforeStyles = {
-      '&::before': {
+    if (point) {
+      styles['&::before'] = {
         ...pseudoStyles,
         left: 'calc(-50vw + 50%)', // [1]
         transform: `skewY(${angles[0]}deg) ${transformProperties}`,
         transformOrigin: `${clipBottomEdge ? 'top' : 'bottom'} right`,
         width: `calc(50vw - 50% + ${beforeWidth})` // [2]
-      }
-    };
-
-    const afterStyles = {
-      '&::after': {
+      };
+      styles['&::after'] = {
         ...pseudoStyles,
         right: 'calc(-50vw + 50%)', // [1]
         transform: `skewY(${-1 * angles[1]}deg) ${transformProperties}`,
         transformOrigin: `${clipBottomEdge ? 'top' : 'bottom'} left`,
         width: `calc(50vw - 50% + ${afterWidth})` // [2]
-      }
-    };
-
-    if (point) {
-      styles.push(beforeStyles, afterStyles);
+      };
     }
 
     return styles;

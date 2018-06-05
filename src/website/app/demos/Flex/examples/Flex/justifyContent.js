@@ -4,7 +4,11 @@ import FlexItem from '../../components/FlexItem';
 import _DemoLayout from '../../components/DemoLayout';
 import _Flex from '../../components/Flex';
 
-const DemoLayout = _DemoLayout.withProps({ lastRowStartsAt: 10 });
+const DemoLayout = createStyledComponent(
+  _DemoLayout,
+  {},
+  { withProps: { lastRowStartsAt: 10 } }
+);
 
 const Flex = createStyledComponent(_Flex, ({ direction }) => {
   return direction === 'column'

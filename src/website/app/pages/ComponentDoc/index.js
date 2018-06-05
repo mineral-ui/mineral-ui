@@ -38,18 +38,24 @@ type BestPractice = {
 
 type Theme = (theme: Object) => Object;
 
-const StyledDocHeading = createStyledComponent(Heading, ({ theme }) => ({
-  marginBottom: 0,
-  paddingTop: getNormalizedValue(pxToEm(62), theme.SiteHeading_fontSize_2),
+const StyledDocHeading = createStyledComponent(
+  Heading,
+  ({ theme }) => ({
+    marginBottom: 0,
+    paddingTop: getNormalizedValue(pxToEm(62), theme.SiteHeading_fontSize_2),
 
-  [theme.bp_moreSpacious]: {
-    fontSize: theme.SiteHeading_fontSize_2_wide,
-    paddingTop: getNormalizedValue(
-      pxToEm(80),
-      theme.SiteHeading_fontSize_2_wide
-    )
+    [theme.bp_moreSpacious]: {
+      fontSize: theme.SiteHeading_fontSize_2_wide,
+      paddingTop: getNormalizedValue(
+        pxToEm(80),
+        theme.SiteHeading_fontSize_2_wide
+      )
+    }
+  }),
+  {
+    withProps: { level: 2 }
   }
-})).withProps({ level: 2 });
+);
 
 const DocHeading = ({
   children,

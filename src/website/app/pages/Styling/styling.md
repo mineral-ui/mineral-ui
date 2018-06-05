@@ -8,7 +8,7 @@ Theming is a core concept in Mineral UI.  It is powerful feature capable of prov
 
 ### createStyledComponent
 
-This function is used to create a new styled component based on another component or DOM element.
+This function creates a new styled component based on another component or DOM element.
 
 ```jsx
 import { createStyledComponent } from 'mineral-ui/styles';
@@ -21,14 +21,6 @@ const MyButton = createStyledComponent(Button, {
 
 See the [API documentation](#styling-api) and more examples below.
 
-### Glamorous API
-
-Mineral UI uses [Glamorous](https://glamorous.rocks) for styling components.  Glamorous provides an additional styling mechanism, the `css` prop.  The `css` prop functions similar to the standard React `style` prop, except that styles are applied via a generated CSS class rather than via inline styles.
-
-```jsx
-<Button css={{ outline: '3px dashed tomato' }} />
-```
-
 ### CSS classes
 
 Additional CSS classes can be applied to components using the standard React `className` prop.
@@ -37,7 +29,24 @@ Additional CSS classes can be applied to components using the standard React `cl
 <Button className="myButton" />
 ```
 
-These CSS class names can be defined using standard CSS or via [Glamor](https://github.com/threepointone/glamor).
+Mineral UI uses [Emotion](https://emotion.sh/) for component styling.  Emotion
+provides an additional styling utility, the
+[css function](https://emotion.sh/docs/css), which generates a CSS class that
+can be passed to a component using the standard React `className` prop.
+
+```jsx
+import { css } from 'react-emotion';
+
+<Button className={css({ outline: '3px dashed tomato' })} />
+```
+
+<Callout title="Note">
+  <p key={0}>
+    Mineral UI does not currently
+    support <a key={0} href="https://emotion.sh/docs/css#css-prop">Emotion's css prop</a> but
+    intends to in the future when it is no longer reliant on a babel plugin.
+  </p>
+</Callout>
 
 ### Inline styles
 
@@ -57,14 +66,18 @@ This function is used to create a new styled component based on another componen
 **Parameters**
 
  * `element`: A React component or a DOM element tag name
- * `styles`: An [object of style rules](https://github.com/threepointone/glamor/blob/master/docs/howto.md)
- or a function that accepts props and context and returns an object of style
- rules
- * `options`: Optional. An object containing a mix of Mineral UI and
- [Glamorous options](https://glamorous.rocks/api).  Common uses include
-    * setting a display name on your component: `{ displayName: 'MyComponent' }`,
-    * declaring which props to forward to the DOM element: `{ forwardProps: [href, customProp] }`,
-    * and including a style reset: `{ includeStyleReset: true }`
+ * `styles`: A [style rule object](https://emotion.sh/docs/css), an array of style rule objects, or a function that accepts props and context and returns either a style
+ rule object or an array of style rule objects.
+ * `options`: Optional. An object with the following shape. All properties are optional.
+
+| Option              | Type          | Description                                                                                        |
+|---------------------|---------------|----------------------------------------------------------------------------------------------------|
+| `displayName`       | String        | Sets component displayName and CSS className label during development                              |
+| `filterProps`       | Array<String> | Props that should not be passed to child components                                                |
+| `forwardProps`      | Array<String> | Props that should be passed to child components. Takes precedence over `filterProps` and `rootEl`. |
+| `includeStyleReset` | boolean       | Includes a minimal CSS style reset                                                                 |
+| `rootEl`            | String        | HTML tag name of the rendered DOM node. Helps ensure that only valid attributes reach the DOM.     |
+| `withProps`         | Object        | <key, value> pairs of props to apply to a component                                                |
 
 **Returns**
 

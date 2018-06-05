@@ -60,9 +60,10 @@ const Root = createStyledComponent(
     }
   }),
   {
-    includeStyleReset: true
+    includeStyleReset: true,
+    withProps: { element: 'footer' }
   }
-).withProps({ element: 'footer' });
+);
 
 export default function Footer(props: Props) {
   return (
