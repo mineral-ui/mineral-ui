@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { css } from 'glamor';
+import { keyframes } from 'react-emotion';
 import { createStyledComponent } from '../../../../library/styles';
 import Button from '../../SiteButton';
 import Link from '../../SiteLink';
@@ -22,8 +22,8 @@ const getAnimation = (offset1, offset2) => {
   return frames;
 };
 
-const glitch1 = css.keyframes('glitch1', getAnimation(0, 40));
-const glitch2 = css.keyframes('glitch2', getAnimation(40, 5));
+const glitch1 = keyframes('glitch1', getAnimation(0, 40));
+const glitch2 = keyframes('glitch2', getAnimation(40, 5));
 
 const mineralCopyStyles = {
   backgroundColor: 'white',

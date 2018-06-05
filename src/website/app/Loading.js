@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { css } from 'glamor';
+import { keyframes } from 'react-emotion';
 import lighten from 'polished/lib/color/lighten';
 import darken from 'polished/lib/color/darken';
 import { createStyledComponent } from '../../library/styles';
@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Message = createStyledComponent('div', ({ fancy, theme }) => {
-  const loading = css.keyframes({
+  const loading = keyframes({
     '0%': { backgroundPosition: '0 0' },
     '100%': { backgroundPosition: '100% 0' }
   });

@@ -28,13 +28,13 @@ Install the [Mineral UI package](https://www.npmjs.com/package/mineral-ui) and
 its dependencies.
 
 ```bash
-npm install --save mineral-ui glamor glamorous react react-dom
+npm install --save mineral-ui emotion emotion-theming react-emotion react react-dom
 ```
 
 or
 
 ```bash
-yarn add mineral-ui glamor glamorous react react-dom
+yarn add mineral-ui emotion emotion-theming react-emotion react react-dom
 ```
 
 
@@ -72,12 +72,12 @@ Mineral UI was designed around [Open Sans](https://fonts.google.com/specimen/Ope
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 ```
 
-For more options loading this font from Google, check out the Seleted Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
+For more options loading this font from Google, check out the Selected Family popup, in the [specimen](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans). You can also download the font file and serve it yourself if you'd like, but we'll leave that to you.
 
 
 ### Styling
 
-This project uses CSS-in-JS and [Glamorous](https://glamorous.rocks) for styling components. Refer to the [styling page](https://mineral-ui.com/styling/) for details.
+This project uses CSS-in-JS and [Emotion](https://emotion.sh/) for component styling. Refer to the [styling page](https://mineral-ui.com/styling/) for details.
 
 
 ## Contributing

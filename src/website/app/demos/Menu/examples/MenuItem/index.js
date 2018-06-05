@@ -6,7 +6,6 @@ import kitchenSink from './kitchenSink';
 import menuItem from './menuItem';
 import rtl from './rtl';
 import secondaryText from './secondaryText';
-import states from './states';
 import variants from './variants';
 
 export default [
@@ -17,6 +16,5 @@ export default [
   icons,
   disabled,
   rtl,
-  kitchenSink,
-  states
+  kitchenSink
 ];

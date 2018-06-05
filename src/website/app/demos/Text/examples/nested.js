@@ -18,10 +18,14 @@ const DemoLayout = createStyledComponent(
   }
 );
 
-const Text = createStyledComponent(_Text, ({ theme }) => ({
-  backgroundColor: palette.indigo_20,
-  padding: theme.space_inset_sm
-})).withProps({ noMargins: true });
+const Text = createStyledComponent(
+  _Text,
+  ({ theme }) => ({
+    backgroundColor: palette.indigo_20,
+    padding: theme.space_inset_sm
+  }),
+  { withProps: { noMargins: true } }
+);
 
 export default {
   id: 'nested',

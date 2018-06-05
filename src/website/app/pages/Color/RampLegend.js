@@ -66,7 +66,7 @@ const styles = {
     },
     '& > *::after': {
       borderBottom: `1px solid ${theme.borderColor_danger_hover}`,
-      content: `''`,
+      content: '""',
       position: 'absolute',
       width: theme.space_inline_lg
     },

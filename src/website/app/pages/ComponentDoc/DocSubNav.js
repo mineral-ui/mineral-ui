@@ -40,8 +40,10 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent(Section, styles.subnav).withProps({
-  element: 'nav'
+const Root = createStyledComponent(Section, styles.subnav, {
+  withProps: {
+    element: 'nav'
+  }
 });
 const NavElement = createStyledComponent(Link, styles.navElement);
 

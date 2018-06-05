@@ -7,12 +7,18 @@ import FigCaption from '../components/FigCaption';
 import FigContainer from '../components/FigContainer';
 import Heading from '../../../SiteHeading';
 
-const CategoryHeading = createStyledComponent(Heading, ({ theme }) => ({
-  borderTop: `1px solid ${theme.borderColor}`,
-  paddingTop: theme.space_stack_lg,
-  position: 'relative',
-  textTransform: 'capitalize'
-})).withProps({ as: 'h5', level: 4 });
+const CategoryHeading = createStyledComponent(
+  Heading,
+  ({ theme }) => ({
+    borderTop: `1px solid ${theme.borderColor}`,
+    paddingTop: theme.space_stack_lg,
+    position: 'relative',
+    textTransform: 'capitalize'
+  }),
+  {
+    withProps: { as: 'h5', level: 4 }
+  }
+);
 
 const componentsByCategory: {
   [string]: Array<React$Component<*, *, *>>

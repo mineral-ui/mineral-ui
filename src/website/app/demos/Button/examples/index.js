@@ -9,7 +9,6 @@ import minimal from './minimal';
 import primary from './primary';
 import rtl from './rtl';
 import sizes from './sizes';
-import states from './states';
 import truncation from './truncation';
 
 export default [
@@ -23,6 +22,5 @@ export default [
   circular,
   link,
   truncation,
-  rtl,
-  states
+  rtl
 ];

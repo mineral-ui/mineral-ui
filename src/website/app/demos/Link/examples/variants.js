@@ -1,7 +1,17 @@
 /* @flow */
 import React from 'react';
+import { createStyledComponent } from '../../../../../library/styles';
 import _Link from '../../../../../library/Link';
-import { DemoLayout } from './states';
+import _DemoLayout from '../../shared/DemoLayout';
+
+const DemoLayout = createStyledComponent(
+  _DemoLayout,
+  {},
+  {
+    includeStyleReset: true,
+    withProps: { marginRight: '1em' }
+  }
+);
 
 const Link = (props: {}) => <_Link target="_blank" {...props} />;
 

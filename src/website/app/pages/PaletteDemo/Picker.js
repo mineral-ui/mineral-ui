@@ -47,7 +47,7 @@ const styles = {
     pointerEvents: 'none'
   }),
 
-  // This object isn't consumed by glamorous,
+  // This object isn't consumed by emotion,
   // so we inline the border color as a literal
   grow: {
     position: 'relative',
@@ -56,7 +56,8 @@ const styles = {
     entering: { height: 80 },
     entered: { height: 230 },
     exiting: { height: 230 },
-    exited: { height: 80 }
+    exited: { height: 80 },
+    unmounted: null
   },
 
   flip: {
@@ -76,7 +77,8 @@ const styles = {
     exited: {
       opacity: 0.01,
       transform: 'scale(1.1) rotateX(-40deg) translate3d(0, 20px, 50px)'
-    }
+    },
+    unmounted: null
   },
 
   option: ({ theme, active, name }) => {
