@@ -1,12 +1,12 @@
-// flow-typed signature: aad2151aafb250a7bce85c55144caa7a
-// flow-typed version: 34fcf12a99/react-loadable_v5.x.x/flow_>=v0.56.0
+// flow-typed signature: 776d74ca2897b439956e4dcb2fdc23ee
+// flow-typed version: cc7eb8d020/react-loadable_v5.x.x/flow_>=v0.56.0
 
 declare module 'react-loadable' {
   declare type LoadingProps = {
     isLoading: boolean,
     pastDelay: boolean,
     timedOut: boolean,
-    error: boolean
+    error: ?Error
   };
 
   declare type CommonOptions = {
