@@ -1,9 +1,10 @@
 /* @flow */
 export default {
   background: {
+    '$mnrl-backgroundColor': '#ffffff',
     '$mnrl-backgroundColor-active': '#ebeff5',
-    '$mnrl-backgroundColor-disabled': '#dde3ed',
-    '$mnrl-backgroundColor-focus': '#f5f7fa',
+    '$mnrl-backgroundColor-disabled': '#ebeff5',
+    '$mnrl-backgroundColor-focus': '#ffffff',
     '$mnrl-backgroundColor-hover': '#f5f7fa',
     '$mnrl-backgroundColor-brand-selected': '#f0f5fc',
     '$mnrl-backgroundColor-brand-selectedActive': '#accbfc',
@@ -37,19 +38,19 @@ export default {
   border: {
     '$mnrl-borderColor': '#c8d1e0',
     '$mnrl-borderColor-brand': '#3272d9',
-    '$mnrl-borderColor-brand-active': '#1d5bbf',
+    '$mnrl-borderColor-brand-active': '#5691f0',
     '$mnrl-borderColor-brand-focus': '#1d5bbf',
     '$mnrl-borderColor-brand-hover': '#5691f0',
     '$mnrl-borderColor-danger': '#de1b1b',
-    '$mnrl-borderColor-danger-active': '#b80d0d',
+    '$mnrl-borderColor-danger-active': '#f55353',
     '$mnrl-borderColor-danger-focus': '#b80d0d',
     '$mnrl-borderColor-danger-hover': '#f55353',
     '$mnrl-borderColor-success': '#2a854e',
-    '$mnrl-borderColor-success-active': '#20693d',
+    '$mnrl-borderColor-success-active': '#3ba164',
     '$mnrl-borderColor-success-focus': '#20693d',
     '$mnrl-borderColor-success-hover': '#3ba164',
     '$mnrl-borderColor-warning': '#ad5f00',
-    '$mnrl-borderColor-warning-active': '#8a4d03',
+    '$mnrl-borderColor-warning-active': '#cf7911',
     '$mnrl-borderColor-warning-focus': '#8a4d03',
     '$mnrl-borderColor-warning-hover': '#cf7911',
     '$mnrl-borderRadius-1': '3px'
@@ -110,6 +111,9 @@ export default {
   },
   panel: {
     '$mnrl-panel-backgroundColor': '#ffffff',
+    '$mnrl-panel-backgroundColor-active': '#ebeff5',
+    '$mnrl-panel-backgroundColor-focus': '#f5f7fa',
+    '$mnrl-panel-backgroundColor-hover': '#f5f7fa',
     '$mnrl-panel-backgroundColor-inverted': '#434a54',
     '$mnrl-panel-borderColor': '#ebeff5',
     '$mnrl-panel-borderColor-inverted': '#434a54'
@@ -142,7 +146,7 @@ export default {
   typography: {
     '$mnrl-color': '#333840',
     '$mnrl-color-inverted': '#ffffff',
-    '$mnrl-color-disabled': '#afbacc',
+    '$mnrl-color-disabled': '#c8d1e0',
     '$mnrl-color-mouse': '#58606e',
     '$mnrl-color-readOnly': '#58606e',
     '$mnrl-color-required': '#de1b1b',

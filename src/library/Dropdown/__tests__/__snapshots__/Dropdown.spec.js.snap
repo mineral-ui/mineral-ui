@@ -1869,14 +1869,14 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
 .css-10,
 [data-css-10] {
   box-sizing: border-box;
-  color: #afbacc;
+  color: #c8d1e0;
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1906,7 +1906,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
 [data-css-10][data-simulate-focus] {
   background-color: #ebeff5;
   box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-  color: #afbacc;
+  color: #c8d1e0;
   text-decoration: none;
 }
 
@@ -1914,7 +1914,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
 [data-css-10]:hover,
 .css-10[data-simulate-hover],
 [data-css-10][data-simulate-hover] {
-  color: #afbacc;
+  color: #c8d1e0;
   text-decoration: none;
 }
 
@@ -1922,7 +1922,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
 [data-css-10]:active,
 .css-10[data-simulate-active],
 [data-css-10][data-simulate-active] {
-  color: #afbacc;
+  color: #c8d1e0;
 }
 
 .css-10::-moz-focus-inner,
@@ -2977,7 +2977,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
 [data-css-31]:focus,
 .css-31[data-simulate-focus],
 [data-css-31][data-simulate-focus] {
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   outline: 0;
 }
 
@@ -3293,6 +3293,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                       placement="bottom-start"
                       theme={
                         Object {
+                          "backgroundColor": "#ffffff",
                           "backgroundColor_active": "#ebeff5",
                           "backgroundColor_dangerPrimary": "#de1b1b",
                           "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -3301,8 +3302,8 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                           "backgroundColor_danger_active": "#fad4d4",
                           "backgroundColor_danger_focus": "#faf0f0",
                           "backgroundColor_danger_hover": "#faf0f0",
-                          "backgroundColor_disabled": "#dde3ed",
-                          "backgroundColor_focus": "#f5f7fa",
+                          "backgroundColor_disabled": "#ebeff5",
+                          "backgroundColor_focus": "#ffffff",
                           "backgroundColor_hover": "#f5f7fa",
                           "backgroundColor_successPrimary": "#2a854e",
                           "backgroundColor_successPrimary_active": "#20693d",
@@ -3327,19 +3328,19 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                           "backgroundColor_warning_hover": "#fcf2e6",
                           "borderColor": "#c8d1e0",
                           "borderColor_danger": "#de1b1b",
-                          "borderColor_danger_active": "#b80d0d",
+                          "borderColor_danger_active": "#f55353",
                           "borderColor_danger_focus": "#b80d0d",
                           "borderColor_danger_hover": "#f55353",
                           "borderColor_success": "#2a854e",
-                          "borderColor_success_active": "#20693d",
+                          "borderColor_success_active": "#3ba164",
                           "borderColor_success_focus": "#20693d",
                           "borderColor_success_hover": "#3ba164",
                           "borderColor_theme": "#3272d9",
-                          "borderColor_theme_active": "#1d5bbf",
+                          "borderColor_theme_active": "#5691f0",
                           "borderColor_theme_focus": "#1d5bbf",
                           "borderColor_theme_hover": "#5691f0",
                           "borderColor_warning": "#ad5f00",
-                          "borderColor_warning_active": "#8a4d03",
+                          "borderColor_warning_active": "#cf7911",
                           "borderColor_warning_focus": "#8a4d03",
                           "borderColor_warning_hover": "#cf7911",
                           "borderRadius_1": "0.1875em",
@@ -3359,7 +3360,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                           "color_danger_active": "#b80d0d",
                           "color_danger_focus": "#de1b1b",
                           "color_danger_hover": "#f55353",
-                          "color_disabled": "#afbacc",
+                          "color_disabled": "#c8d1e0",
                           "color_gray_10": "#f5f7fa",
                           "color_gray_100": "#333840",
                           "color_gray_20": "#ebeff5",
@@ -3443,6 +3444,9 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                           "lineHeight_heading_small": 1.5,
                           "lineHeight_prose": 1.5,
                           "panel_backgroundColor": "#ffffff",
+                          "panel_backgroundColor_active": "#ebeff5",
+                          "panel_backgroundColor_focus": "#f5f7fa",
+                          "panel_backgroundColor_hover": "#f5f7fa",
                           "panel_backgroundColor_inverted": "#434a54",
                           "panel_borderColor": "#ebeff5",
                           "panel_borderColor_inverted": "#434a54",
@@ -4765,7 +4769,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
 [data-css-36]:focus,
 .css-36[data-simulate-focus],
 [data-css-36][data-simulate-focus] {
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   outline: 0;
 }
 
@@ -4997,6 +5001,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                           placement="bottom-start"
                           theme={
                             Object {
+                              "backgroundColor": "#ffffff",
                               "backgroundColor_active": "#ebeff5",
                               "backgroundColor_dangerPrimary": "#de1b1b",
                               "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -5005,8 +5010,8 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                               "backgroundColor_danger_active": "#fad4d4",
                               "backgroundColor_danger_focus": "#faf0f0",
                               "backgroundColor_danger_hover": "#faf0f0",
-                              "backgroundColor_disabled": "#dde3ed",
-                              "backgroundColor_focus": "#f5f7fa",
+                              "backgroundColor_disabled": "#ebeff5",
+                              "backgroundColor_focus": "#ffffff",
                               "backgroundColor_hover": "#f5f7fa",
                               "backgroundColor_successPrimary": "#2a854e",
                               "backgroundColor_successPrimary_active": "#20693d",
@@ -5031,19 +5036,19 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                               "backgroundColor_warning_hover": "#fcf2e6",
                               "borderColor": "#c8d1e0",
                               "borderColor_danger": "#de1b1b",
-                              "borderColor_danger_active": "#b80d0d",
+                              "borderColor_danger_active": "#f55353",
                               "borderColor_danger_focus": "#b80d0d",
                               "borderColor_danger_hover": "#f55353",
                               "borderColor_success": "#2a854e",
-                              "borderColor_success_active": "#20693d",
+                              "borderColor_success_active": "#3ba164",
                               "borderColor_success_focus": "#20693d",
                               "borderColor_success_hover": "#3ba164",
                               "borderColor_theme": "#3272d9",
-                              "borderColor_theme_active": "#1d5bbf",
+                              "borderColor_theme_active": "#5691f0",
                               "borderColor_theme_focus": "#1d5bbf",
                               "borderColor_theme_hover": "#5691f0",
                               "borderColor_warning": "#ad5f00",
-                              "borderColor_warning_active": "#8a4d03",
+                              "borderColor_warning_active": "#cf7911",
                               "borderColor_warning_focus": "#8a4d03",
                               "borderColor_warning_hover": "#cf7911",
                               "borderRadius_1": "0.1875em",
@@ -5063,7 +5068,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                               "color_danger_active": "#b80d0d",
                               "color_danger_focus": "#de1b1b",
                               "color_danger_hover": "#f55353",
-                              "color_disabled": "#afbacc",
+                              "color_disabled": "#c8d1e0",
                               "color_gray_10": "#f5f7fa",
                               "color_gray_100": "#333840",
                               "color_gray_20": "#ebeff5",
@@ -5147,6 +5152,9 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                               "lineHeight_heading_small": 1.5,
                               "lineHeight_prose": 1.5,
                               "panel_backgroundColor": "#ffffff",
+                              "panel_backgroundColor_active": "#ebeff5",
+                              "panel_backgroundColor_focus": "#f5f7fa",
+                              "panel_backgroundColor_hover": "#f5f7fa",
                               "panel_backgroundColor_inverted": "#434a54",
                               "panel_borderColor": "#ebeff5",
                               "panel_borderColor_inverted": "#434a54",
@@ -5813,7 +5821,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 [data-css-31]:focus,
 .css-31[data-simulate-focus],
 [data-css-31][data-simulate-focus] {
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   outline: 0;
 }
 
@@ -6270,6 +6278,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                 placement="bottom-start"
                                 theme={
                                   Object {
+                                    "backgroundColor": "#ffffff",
                                     "backgroundColor_active": "#ebeff5",
                                     "backgroundColor_dangerPrimary": "#de1b1b",
                                     "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -6278,8 +6287,8 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                     "backgroundColor_danger_active": "#fad4d4",
                                     "backgroundColor_danger_focus": "#faf0f0",
                                     "backgroundColor_danger_hover": "#faf0f0",
-                                    "backgroundColor_disabled": "#dde3ed",
-                                    "backgroundColor_focus": "#f5f7fa",
+                                    "backgroundColor_disabled": "#ebeff5",
+                                    "backgroundColor_focus": "#ffffff",
                                     "backgroundColor_hover": "#f5f7fa",
                                     "backgroundColor_successPrimary": "#2a854e",
                                     "backgroundColor_successPrimary_active": "#20693d",
@@ -6304,19 +6313,19 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                     "backgroundColor_warning_hover": "#fcf2e6",
                                     "borderColor": "#c8d1e0",
                                     "borderColor_danger": "#de1b1b",
-                                    "borderColor_danger_active": "#b80d0d",
+                                    "borderColor_danger_active": "#f55353",
                                     "borderColor_danger_focus": "#b80d0d",
                                     "borderColor_danger_hover": "#f55353",
                                     "borderColor_success": "#2a854e",
-                                    "borderColor_success_active": "#20693d",
+                                    "borderColor_success_active": "#3ba164",
                                     "borderColor_success_focus": "#20693d",
                                     "borderColor_success_hover": "#3ba164",
                                     "borderColor_theme": "#3272d9",
-                                    "borderColor_theme_active": "#1d5bbf",
+                                    "borderColor_theme_active": "#5691f0",
                                     "borderColor_theme_focus": "#1d5bbf",
                                     "borderColor_theme_hover": "#5691f0",
                                     "borderColor_warning": "#ad5f00",
-                                    "borderColor_warning_active": "#8a4d03",
+                                    "borderColor_warning_active": "#cf7911",
                                     "borderColor_warning_focus": "#8a4d03",
                                     "borderColor_warning_hover": "#cf7911",
                                     "borderRadius_1": "0.1875em",
@@ -6336,7 +6345,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                     "color_danger_active": "#b80d0d",
                                     "color_danger_focus": "#de1b1b",
                                     "color_danger_hover": "#f55353",
-                                    "color_disabled": "#afbacc",
+                                    "color_disabled": "#c8d1e0",
                                     "color_gray_10": "#f5f7fa",
                                     "color_gray_100": "#333840",
                                     "color_gray_20": "#ebeff5",
@@ -6420,6 +6429,9 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                     "lineHeight_heading_small": 1.5,
                                     "lineHeight_prose": 1.5,
                                     "panel_backgroundColor": "#ffffff",
+                                    "panel_backgroundColor_active": "#ebeff5",
+                                    "panel_backgroundColor_focus": "#f5f7fa",
+                                    "panel_backgroundColor_hover": "#f5f7fa",
                                     "panel_backgroundColor_inverted": "#434a54",
                                     "panel_borderColor": "#ebeff5",
                                     "panel_borderColor_inverted": "#434a54",
@@ -7175,7 +7187,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
 [data-css-33]:focus,
 .css-33[data-simulate-focus],
 [data-css-33][data-simulate-focus] {
-  background-color: #f5f7fa;
+  background-color: #ffffff;
   outline: 0;
 }
 
@@ -7447,6 +7459,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                       placement="bottom-start"
                       theme={
                         Object {
+                          "backgroundColor": "#ffffff",
                           "backgroundColor_active": "#ebeff5",
                           "backgroundColor_dangerPrimary": "#de1b1b",
                           "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -7455,8 +7468,8 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                           "backgroundColor_danger_active": "#fad4d4",
                           "backgroundColor_danger_focus": "#faf0f0",
                           "backgroundColor_danger_hover": "#faf0f0",
-                          "backgroundColor_disabled": "#dde3ed",
-                          "backgroundColor_focus": "#f5f7fa",
+                          "backgroundColor_disabled": "#ebeff5",
+                          "backgroundColor_focus": "#ffffff",
                           "backgroundColor_hover": "#f5f7fa",
                           "backgroundColor_successPrimary": "#2a854e",
                           "backgroundColor_successPrimary_active": "#20693d",
@@ -7481,19 +7494,19 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                           "backgroundColor_warning_hover": "#fcf2e6",
                           "borderColor": "#c8d1e0",
                           "borderColor_danger": "#de1b1b",
-                          "borderColor_danger_active": "#b80d0d",
+                          "borderColor_danger_active": "#f55353",
                           "borderColor_danger_focus": "#b80d0d",
                           "borderColor_danger_hover": "#f55353",
                           "borderColor_success": "#2a854e",
-                          "borderColor_success_active": "#20693d",
+                          "borderColor_success_active": "#3ba164",
                           "borderColor_success_focus": "#20693d",
                           "borderColor_success_hover": "#3ba164",
                           "borderColor_theme": "#3272d9",
-                          "borderColor_theme_active": "#1d5bbf",
+                          "borderColor_theme_active": "#5691f0",
                           "borderColor_theme_focus": "#1d5bbf",
                           "borderColor_theme_hover": "#5691f0",
                           "borderColor_warning": "#ad5f00",
-                          "borderColor_warning_active": "#8a4d03",
+                          "borderColor_warning_active": "#cf7911",
                           "borderColor_warning_focus": "#8a4d03",
                           "borderColor_warning_hover": "#cf7911",
                           "borderRadius_1": "0.1875em",
@@ -7513,7 +7526,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                           "color_danger_active": "#b80d0d",
                           "color_danger_focus": "#de1b1b",
                           "color_danger_hover": "#f55353",
-                          "color_disabled": "#afbacc",
+                          "color_disabled": "#c8d1e0",
                           "color_gray_10": "#f5f7fa",
                           "color_gray_100": "#333840",
                           "color_gray_20": "#ebeff5",
@@ -7597,6 +7610,9 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                           "lineHeight_heading_small": 1.5,
                           "lineHeight_prose": 1.5,
                           "panel_backgroundColor": "#ffffff",
+                          "panel_backgroundColor_active": "#ebeff5",
+                          "panel_backgroundColor_focus": "#f5f7fa",
+                          "panel_backgroundColor_hover": "#f5f7fa",
                           "panel_backgroundColor_inverted": "#434a54",
                           "panel_borderColor": "#ebeff5",
                           "panel_borderColor_inverted": "#434a54",
@@ -8436,6 +8452,7 @@ exports[`Dropdown render props item renders expected content 1`] = `
                   placement="bottom-start"
                   theme={
                     Object {
+                      "backgroundColor": "#ffffff",
                       "backgroundColor_active": "#ebeff5",
                       "backgroundColor_dangerPrimary": "#de1b1b",
                       "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -8444,8 +8461,8 @@ exports[`Dropdown render props item renders expected content 1`] = `
                       "backgroundColor_danger_active": "#fad4d4",
                       "backgroundColor_danger_focus": "#faf0f0",
                       "backgroundColor_danger_hover": "#faf0f0",
-                      "backgroundColor_disabled": "#dde3ed",
-                      "backgroundColor_focus": "#f5f7fa",
+                      "backgroundColor_disabled": "#ebeff5",
+                      "backgroundColor_focus": "#ffffff",
                       "backgroundColor_hover": "#f5f7fa",
                       "backgroundColor_successPrimary": "#2a854e",
                       "backgroundColor_successPrimary_active": "#20693d",
@@ -8470,19 +8487,19 @@ exports[`Dropdown render props item renders expected content 1`] = `
                       "backgroundColor_warning_hover": "#fcf2e6",
                       "borderColor": "#c8d1e0",
                       "borderColor_danger": "#de1b1b",
-                      "borderColor_danger_active": "#b80d0d",
+                      "borderColor_danger_active": "#f55353",
                       "borderColor_danger_focus": "#b80d0d",
                       "borderColor_danger_hover": "#f55353",
                       "borderColor_success": "#2a854e",
-                      "borderColor_success_active": "#20693d",
+                      "borderColor_success_active": "#3ba164",
                       "borderColor_success_focus": "#20693d",
                       "borderColor_success_hover": "#3ba164",
                       "borderColor_theme": "#3272d9",
-                      "borderColor_theme_active": "#1d5bbf",
+                      "borderColor_theme_active": "#5691f0",
                       "borderColor_theme_focus": "#1d5bbf",
                       "borderColor_theme_hover": "#5691f0",
                       "borderColor_warning": "#ad5f00",
-                      "borderColor_warning_active": "#8a4d03",
+                      "borderColor_warning_active": "#cf7911",
                       "borderColor_warning_focus": "#8a4d03",
                       "borderColor_warning_hover": "#cf7911",
                       "borderRadius_1": "0.1875em",
@@ -8502,7 +8519,7 @@ exports[`Dropdown render props item renders expected content 1`] = `
                       "color_danger_active": "#b80d0d",
                       "color_danger_focus": "#de1b1b",
                       "color_danger_hover": "#f55353",
-                      "color_disabled": "#afbacc",
+                      "color_disabled": "#c8d1e0",
                       "color_gray_10": "#f5f7fa",
                       "color_gray_100": "#333840",
                       "color_gray_20": "#ebeff5",
@@ -8586,6 +8603,9 @@ exports[`Dropdown render props item renders expected content 1`] = `
                       "lineHeight_heading_small": 1.5,
                       "lineHeight_prose": 1.5,
                       "panel_backgroundColor": "#ffffff",
+                      "panel_backgroundColor_active": "#ebeff5",
+                      "panel_backgroundColor_focus": "#f5f7fa",
+                      "panel_backgroundColor_hover": "#f5f7fa",
                       "panel_backgroundColor_inverted": "#434a54",
                       "panel_borderColor": "#ebeff5",
                       "panel_borderColor_inverted": "#434a54",
@@ -8998,6 +9018,7 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                   placement="bottom-start"
                   theme={
                     Object {
+                      "backgroundColor": "#ffffff",
                       "backgroundColor_active": "#ebeff5",
                       "backgroundColor_dangerPrimary": "#de1b1b",
                       "backgroundColor_dangerPrimary_active": "#b80d0d",
@@ -9006,8 +9027,8 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                       "backgroundColor_danger_active": "#fad4d4",
                       "backgroundColor_danger_focus": "#faf0f0",
                       "backgroundColor_danger_hover": "#faf0f0",
-                      "backgroundColor_disabled": "#dde3ed",
-                      "backgroundColor_focus": "#f5f7fa",
+                      "backgroundColor_disabled": "#ebeff5",
+                      "backgroundColor_focus": "#ffffff",
                       "backgroundColor_hover": "#f5f7fa",
                       "backgroundColor_successPrimary": "#2a854e",
                       "backgroundColor_successPrimary_active": "#20693d",
@@ -9032,19 +9053,19 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                       "backgroundColor_warning_hover": "#fcf2e6",
                       "borderColor": "#c8d1e0",
                       "borderColor_danger": "#de1b1b",
-                      "borderColor_danger_active": "#b80d0d",
+                      "borderColor_danger_active": "#f55353",
                       "borderColor_danger_focus": "#b80d0d",
                       "borderColor_danger_hover": "#f55353",
                       "borderColor_success": "#2a854e",
-                      "borderColor_success_active": "#20693d",
+                      "borderColor_success_active": "#3ba164",
                       "borderColor_success_focus": "#20693d",
                       "borderColor_success_hover": "#3ba164",
                       "borderColor_theme": "#3272d9",
-                      "borderColor_theme_active": "#1d5bbf",
+                      "borderColor_theme_active": "#5691f0",
                       "borderColor_theme_focus": "#1d5bbf",
                       "borderColor_theme_hover": "#5691f0",
                       "borderColor_warning": "#ad5f00",
-                      "borderColor_warning_active": "#8a4d03",
+                      "borderColor_warning_active": "#cf7911",
                       "borderColor_warning_focus": "#8a4d03",
                       "borderColor_warning_hover": "#cf7911",
                       "borderRadius_1": "0.1875em",
@@ -9064,7 +9085,7 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                       "color_danger_active": "#b80d0d",
                       "color_danger_focus": "#de1b1b",
                       "color_danger_hover": "#f55353",
-                      "color_disabled": "#afbacc",
+                      "color_disabled": "#c8d1e0",
                       "color_gray_10": "#f5f7fa",
                       "color_gray_100": "#333840",
                       "color_gray_20": "#ebeff5",
@@ -9148,6 +9169,9 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                       "lineHeight_heading_small": 1.5,
                       "lineHeight_prose": 1.5,
                       "panel_backgroundColor": "#ffffff",
+                      "panel_backgroundColor_active": "#ebeff5",
+                      "panel_backgroundColor_focus": "#f5f7fa",
+                      "panel_backgroundColor_hover": "#f5f7fa",
                       "panel_backgroundColor_inverted": "#434a54",
                       "panel_borderColor": "#ebeff5",
                       "panel_borderColor_inverted": "#434a54",
