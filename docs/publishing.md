@@ -29,8 +29,8 @@ Currently the site is hosted on Netlify. In order to publish the website, one of
   ```sh
   npm run clean
   npm run build:library
-  npm run build:package -- --label=alpha
-  npm run release:dist -- --npm-tag=alpha
+  npm run build:package -- --label=alpha --skip-git
+  npm run release:dist -- --npm-tag=alpha --skip-git
   ```
 
 * __Is it okay to publish from a branch?__
