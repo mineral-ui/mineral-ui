@@ -11,7 +11,7 @@ function shallowTextInput() {
 
 describe('TextInput', () => {
   testDemoExamples(examples, {
-    exclude: ['states']
+    exclude: ['states', 'types']
   });
 
   it('renders', () => {

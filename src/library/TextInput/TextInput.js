@@ -43,6 +43,7 @@ type Props = {
     | 'month'
     | 'number'
     | 'password'
+    | 'search'
     | 'tel'
     | 'text'
     | 'time'
@@ -96,7 +97,16 @@ const styles = {
       fontFamily: 'inherit',
       height: getNormalizedValue(theme[`TextInput_height_${size}`], fontSize),
       minWidth: 0,
-      width: '100%'
+      width: '100%',
+
+      // Normalize Safari search inputs
+      '&[type="search"]': {
+        WebkitAppearance: 'none',
+
+        '&::-webkit-search-decoration': {
+          WebkitAppearance: 'none'
+        }
+      }
     };
   },
   root: ({ theme: baseTheme, variant }) => {
