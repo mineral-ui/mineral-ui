@@ -84,7 +84,8 @@ const Root = createStyledComponent(
       '& > img': {
         borderRadius: '100%',
         display: 'block',
-        width: '100%'
+        flex: '0 0 auto',
+        maxWidth: '100%'
       },
 
       '& > [role="img"]': {
