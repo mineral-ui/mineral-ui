@@ -846,7 +846,9 @@ exports[`Card demo examples Snapshots: avatar 1`] = `
 [data-css-19] > img {
   border-radius: 100%;
   display: block;
-  width: 100%;
+  flex: 0 0 auto;
+  max-width: 100%;
+  -webkit-flex: 0 0 auto;
 }
 
 .css-19 > [role="img"],
@@ -6081,7 +6083,9 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
 [data-css-12] > img {
   border-radius: 100%;
   display: block;
-  width: 100%;
+  flex: 0 0 auto;
+  max-width: 100%;
+  -webkit-flex: 0 0 auto;
 }
 
 .css-12 > [role="img"],
