@@ -33,8 +33,9 @@ const styles = {
 };
 
 const Root = createStyledComponent(DialogRow, styles.root, {
-  displayName: 'DialogFooter'
-}).withProps({ element: 'footer' });
+  displayName: 'DialogFooter',
+  withProps: { element: 'footer' }
+});
 
 /**
  * DialogFooter - TODO

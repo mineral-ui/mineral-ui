@@ -14,9 +14,10 @@ const Root = createStyledComponent(
     position: 'static' // Inert style to avoid glamor "unexpected rule cache miss"
   },
   {
-    displayName: 'DialogHeader'
+    displayName: 'DialogHeader',
+    withProps: { element: 'header' }
   }
-).withProps({ element: 'header' });
+);
 
 /**
  * DialogHeader - TODO

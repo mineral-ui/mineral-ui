@@ -9,15 +9,16 @@ const Root = createStyledComponent(
     position: 'static'
   },
   {
-    displayName: 'DemoDialog'
+    displayName: 'DemoDialog',
+    withProps: {
+      closeOnClickOutside: false,
+      closeOnEscape: false,
+      disableFocusTrap: true,
+      isOpen: true,
+      usePortal: false
+    }
   }
-).withProps({
-  closeOnClickOutside: false,
-  closeOnEscape: false,
-  disableFocusTrap: true,
-  isOpen: true,
-  usePortal: false
-});
+);
 
 export default function DemoDialog(props: Object) {
   return <Root {...props} />;

@@ -6,11 +6,11 @@ export default [
   {
     type: 'do',
     description: `TODO: this`,
-    example: null //<Dialog />
+    example: '' //<Dialog />
   },
   {
     type: 'dont',
     description: `TODO: not this`,
-    example: null //<Dialog />
+    example: '' //<Dialog />
   }
 ];
