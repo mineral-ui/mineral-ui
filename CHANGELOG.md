@@ -1,3 +1,27 @@
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/mineral-ui/mineral-ui/compare/v0.33.0...v0.34.0) (2018-06-11)
+
+
+### Bug Fixes
+
+* **all:** Refactor functional components for flow-to-proptypes ([a961fa1](https://github.com/mineral-ui/mineral-ui/commit/a961fa1))
+* **avatar:** Fix display of svg images in IE11 ([c0616a4](https://github.com/mineral-ui/mineral-ui/commit/c0616a4))
+* **text-input:** Fix Safari display of search inputs ([e979e78](https://github.com/mineral-ui/mineral-ui/commit/e979e78))
+* **themes:** Ensure base theme overrides component theme ([c2221e1](https://github.com/mineral-ui/mineral-ui/commit/c2221e1))
+
+
+### Features
+
+* **mineral-ui:** Migrate from Glamorous (deprecated) to Emotion ([928da16](https://github.com/mineral-ui/mineral-ui/commit/928da16))
+
+
+### BREAKING CHANGES
+
+* **mineral-ui:** See our Emotion migration guide for details.
+https://github.com/mineral-ui/mineral-ui/blob/master/docs/emotion-migration.md
+
+
+
 <a name="0.33.0"></a>
 # [0.33.0](https://github.com/mineral-ui/mineral-ui/compare/v0.32.0...v0.33.0) (2018-05-10)
 
