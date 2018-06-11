@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -13,25 +12,20 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -48,94 +42,77 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -146,17 +123,11 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -173,12 +144,12 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Manager
-      className="css-0"
+    <Popover
+      className="emotion-5"
       tag="span"
     >
       <span
-        className="css-0"
+        className="emotion-5"
       >
         <PopoverTrigger
           aria-describedby="popover-1-content"
@@ -195,12 +166,12 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
           <PopoverTrigger
             component="span"
           >
-            <Target
-              className="css-1"
+            <PopoverTrigger
+              className="emotion-3"
               component="span"
             >
               <span
-                className="css-1"
+                className="emotion-3"
               >
                 <Button
                   aria-describedby="popover-1-content"
@@ -214,7 +185,7 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
                   type="button"
                   variant="regular"
                 >
-                  <glamorous(button)
+                  <Button
                     aria-describedby="popover-1-content"
                     aria-expanded={false}
                     aria-owns="popover-1-content"
@@ -231,45 +202,44 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
                       aria-describedby="popover-1-content"
                       aria-expanded={false}
                       aria-owns="popover-1-content"
-                      className="css-2"
+                      className="emotion-2"
                       onBlur={[Function]}
                       onClick={[Function]}
                       role="button"
                       type="button"
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-16"
+                          className="emotion-1"
                         >
-                          <glamorous(span)
+                          <Styled(span)
                             size="large"
                           >
                             <span
-                              className="css-17"
+                              className="emotion-0"
                             >
                               Open Popover
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </button>
-                  </glamorous(button)>
+                  </Button>
                 </Button>
               </span>
-            </Target>
+            </PopoverTrigger>
           </PopoverTrigger>
         </PopoverTrigger>
       </span>
-    </Manager>
+    </Popover>
   </Popover>
 </Popover>
 `;
 
 exports[`Popover demo examples Snapshots: controlled 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -278,25 +248,20 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -313,94 +278,77 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -411,39 +359,32 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-10 {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -webkit-box-lines: multiple;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <App>
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-24"
+      className="emotion-10"
     >
       <Popover
         content={<DemoContent />}
@@ -464,12 +405,12 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
           placement="bottom"
           tag="span"
         >
-          <Manager
-            className="css-0"
+          <Popover
+            className="emotion-5"
             tag="span"
           >
             <span
-              className="css-0"
+              className="emotion-5"
             >
               <PopoverTrigger
                 aria-describedby="popover-17-content"
@@ -486,12 +427,12 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                 <PopoverTrigger
                   component="span"
                 >
-                  <Target
-                    className="css-1"
+                  <PopoverTrigger
+                    className="emotion-3"
                     component="span"
                   >
                     <span
-                      className="css-1"
+                      className="emotion-3"
                     >
                       <Button
                         aria-describedby="popover-17-content"
@@ -505,7 +446,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                         type="button"
                         variant="regular"
                       >
-                        <glamorous(button)
+                        <Button
                           aria-describedby="popover-17-content"
                           aria-expanded={false}
                           aria-owns="popover-17-content"
@@ -522,36 +463,36 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                             aria-describedby="popover-17-content"
                             aria-expanded={false}
                             aria-owns="popover-17-content"
-                            className="css-2"
+                            className="emotion-2"
                             onBlur={[Function]}
                             onClick={[Function]}
                             role="button"
                             type="button"
                           >
-                            <glamorous(span)>
+                            <Styled(span)>
                               <span
-                                className="css-16"
+                                className="emotion-1"
                               >
-                                <glamorous(span)
+                                <Styled(span)
                                   size="large"
                                 >
                                   <span
-                                    className="css-17"
+                                    className="emotion-0"
                                   >
                                     Open Popover
                                   </span>
-                                </glamorous(span)>
+                                </Styled(span)>
                               </span>
-                            </glamorous(span)>
+                            </Styled(span)>
                           </button>
-                        </glamorous(button)>
+                        </Button>
                       </Button>
                     </span>
-                  </Target>
+                  </PopoverTrigger>
                 </PopoverTrigger>
               </PopoverTrigger>
             </span>
-          </Manager>
+          </Popover>
         </Popover>
       </Popover>
       <Button
@@ -561,7 +502,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
         type="button"
         variant="regular"
       >
-        <glamorous(button)
+        <Button
           element="button"
           onClick={[Function]}
           size="large"
@@ -570,38 +511,37 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
           variant="regular"
         >
           <button
-            className="css-2"
+            className="emotion-2"
             onClick={[Function]}
             type="button"
           >
-            <glamorous(span)>
+            <Styled(span)>
               <span
-                className="css-16"
+                className="emotion-1"
               >
-                <glamorous(span)
+                <Styled(span)
                   size="large"
                 >
                   <span
-                    className="css-17"
+                    className="emotion-0"
                   >
                     Open Popover
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </span>
-            </glamorous(span)>
+            </Styled(span)>
           </button>
-        </glamorous(button)>
+        </Button>
       </Button>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </App>
 `;
 
 exports[`Popover demo examples Snapshots: custom-content 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -610,25 +550,20 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -645,94 +580,77 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -743,17 +661,11 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -771,12 +683,12 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Manager
-        className="css-0"
+      <Popover
+        className="emotion-5"
         tag="span"
       >
         <span
-          className="css-0"
+          className="emotion-5"
         >
           <PopoverTrigger
             aria-describedby="popover-21-content"
@@ -793,12 +705,12 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
             <PopoverTrigger
               component="span"
             >
-              <Target
-                className="css-1"
+              <PopoverTrigger
+                className="emotion-3"
                 component="span"
               >
                 <span
-                  className="css-1"
+                  className="emotion-3"
                 >
                   <Button
                     aria-describedby="popover-21-content"
@@ -812,7 +724,7 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
                     type="button"
                     variant="regular"
                   >
-                    <glamorous(button)
+                    <Button
                       aria-describedby="popover-21-content"
                       aria-expanded={false}
                       aria-owns="popover-21-content"
@@ -829,46 +741,45 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
                         aria-describedby="popover-21-content"
                         aria-expanded={false}
                         aria-owns="popover-21-content"
-                        className="css-2"
+                        className="emotion-2"
                         onBlur={[Function]}
                         onClick={[Function]}
                         role="button"
                         type="button"
                       >
-                        <glamorous(span)>
+                        <Styled(span)>
                           <span
-                            className="css-16"
+                            className="emotion-1"
                           >
-                            <glamorous(span)
+                            <Styled(span)
                               size="large"
                             >
                               <span
-                                className="css-17"
+                                className="emotion-0"
                               >
                                 Open Popover
                               </span>
-                            </glamorous(span)>
+                            </Styled(span)>
                           </span>
-                        </glamorous(span)>
+                        </Styled(span)>
                       </button>
-                    </glamorous(button)>
+                    </Button>
                   </Button>
                 </span>
-              </Target>
+              </PopoverTrigger>
             </PopoverTrigger>
           </PopoverTrigger>
         </span>
-      </Manager>
+      </Popover>
     </Popover>
   </Popover>
 </Component>
 `;
 
 exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -877,12 +788,9 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
@@ -900,14 +808,14 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Manager
-        className="css-0"
+      <Popover
+        className="emotion-2"
         tag="span"
       >
         <span
-          className="css-0"
+          className="emotion-2"
         >
-          <glamorous(Target)
+          <Styled(PopoverTrigger)
             aria-describedby="popover-23-content"
             aria-expanded={false}
             aria-owns="popover-23-content"
@@ -915,11 +823,11 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
             onBlur={[Function]}
             onClick={[Function]}
           >
-            <Target
+            <PopoverTrigger
               aria-describedby="popover-23-content"
               aria-expanded={false}
               aria-owns="popover-23-content"
-              className="css-nil"
+              className="emotion-0"
               component="button"
               onBlur={[Function]}
               onClick={[Function]}
@@ -928,7 +836,7 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
                 aria-describedby="popover-23-content"
                 aria-expanded={false}
                 aria-owns="popover-23-content"
-                className="css-nil"
+                className="emotion-0"
                 onBlur={[Function]}
                 onClick={[Function]}
               >
@@ -940,20 +848,19 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
                   ▼
                 </span>
               </button>
-            </Target>
-          </glamorous(Target)>
+            </PopoverTrigger>
+          </Styled(PopoverTrigger)>
         </span>
-      </Manager>
+      </Popover>
     </Popover>
   </Popover>
 </Component>
 `;
 
 exports[`Popover demo examples Snapshots: disabled 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -962,39 +869,34 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -1005,25 +907,18 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-3:first-child,
-[data-css-3]:first-child,
-.css-3[data-simulate-firstchild],
-[data-css-3][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-3:last-child,
-[data-css-3]:last-child,
-.css-3[data-simulate-lastchild],
-[data-css-3][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-10,
-[data-css-10] {
+.emotion-2 {
   box-sizing: border-box;
   color: #afbacc;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1040,69 +935,53 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-10 *,
-[data-css-10] *,
-.css-10 *::before,
-[data-css-10] *::before,
-.css-10 *::after,
-[data-css-10] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-10:focus,
-[data-css-10]:focus,
-.css-10[data-simulate-focus],
-[data-css-10][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #afbacc;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:hover,
-[data-css-10]:hover,
-.css-10[data-simulate-hover],
-[data-css-10][data-simulate-hover] {
+.emotion-2:hover {
   color: #afbacc;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:active,
-[data-css-10]:active,
-.css-10[data-simulate-active],
-[data-css-10][data-simulate-active] {
+.emotion-2:active {
   color: #afbacc;
 }
 
-.css-10::-moz-focus-inner,
-[data-css-10]::-moz-focus-inner,
-.css-10[data-simulate-mozfocusinner],
-[data-css-10][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-10 [role="img"],
-[data-css-10] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   display: block;
 }
 
-.css-10 [role="img"]:first-child,
-[data-css-10] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-10 [role="img"]:last-child,
-[data-css-10] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-10 [role="img"]:only-child,
-[data-css-10] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
@@ -1121,12 +1000,12 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Manager
-      className="css-0"
+    <Popover
+      className="emotion-5"
       tag="span"
     >
       <span
-        className="css-0"
+        className="emotion-5"
       >
         <PopoverTrigger
           aria-describedby="popover-15-content"
@@ -1144,12 +1023,12 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
           <PopoverTrigger
             component="span"
           >
-            <Target
-              className="css-1"
+            <PopoverTrigger
+              className="emotion-3"
               component="span"
             >
               <span
-                className="css-1"
+                className="emotion-3"
               >
                 <Button
                   aria-describedby="popover-15-content"
@@ -1164,7 +1043,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                   type="button"
                   variant="regular"
                 >
-                  <glamorous(button)
+                  <Button
                     aria-describedby="popover-15-content"
                     aria-disabled={true}
                     aria-expanded={false}
@@ -1183,45 +1062,44 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                       aria-disabled={true}
                       aria-expanded={false}
                       aria-owns="popover-15-content"
-                      className="css-10"
+                      className="emotion-2"
                       disabled={true}
                       onBlur={[Function]}
                       role="button"
                       type="button"
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-2"
+                          className="emotion-1"
                         >
-                          <glamorous(span)
+                          <Styled(span)
                             size="large"
                           >
                             <span
-                              className="css-3"
+                              className="emotion-0"
                             >
                               Open Popover
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </button>
-                  </glamorous(button)>
+                  </Button>
                 </Button>
               </span>
-            </Target>
+            </PopoverTrigger>
           </PopoverTrigger>
         </PopoverTrigger>
       </span>
-    </Manager>
+    </Popover>
   </Popover>
 </Popover>
 `;
 
 exports[`Popover demo examples Snapshots: on-open-close 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1230,25 +1108,20 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1265,94 +1138,77 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -1363,17 +1219,11 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -1395,12 +1245,12 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Manager
-        className="css-0"
+      <Popover
+        className="emotion-5"
         tag="span"
       >
         <span
-          className="css-0"
+          className="emotion-5"
         >
           <PopoverTrigger
             aria-describedby="popover-13-content"
@@ -1417,12 +1267,12 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
             <PopoverTrigger
               component="span"
             >
-              <Target
-                className="css-1"
+              <PopoverTrigger
+                className="emotion-3"
                 component="span"
               >
                 <span
-                  className="css-1"
+                  className="emotion-3"
                 >
                   <Button
                     aria-describedby="popover-13-content"
@@ -1436,7 +1286,7 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
                     type="button"
                     variant="regular"
                   >
-                    <glamorous(button)
+                    <Button
                       aria-describedby="popover-13-content"
                       aria-expanded={false}
                       aria-owns="popover-13-content"
@@ -1453,46 +1303,45 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
                         aria-describedby="popover-13-content"
                         aria-expanded={false}
                         aria-owns="popover-13-content"
-                        className="css-2"
+                        className="emotion-2"
                         onBlur={[Function]}
                         onClick={[Function]}
                         role="button"
                         type="button"
                       >
-                        <glamorous(span)>
+                        <Styled(span)>
                           <span
-                            className="css-16"
+                            className="emotion-1"
                           >
-                            <glamorous(span)
+                            <Styled(span)
                               size="large"
                             >
                               <span
-                                className="css-17"
+                                className="emotion-0"
                               >
                                 Open Popover
                               </span>
-                            </glamorous(span)>
+                            </Styled(span)>
                           </span>
-                        </glamorous(span)>
+                        </Styled(span)>
                       </button>
-                    </glamorous(button)>
+                    </Button>
                   </Button>
                 </span>
-              </Target>
+              </PopoverTrigger>
             </PopoverTrigger>
           </PopoverTrigger>
         </span>
-      </Manager>
+      </Popover>
     </Popover>
   </Popover>
 </Component>
 `;
 
 exports[`Popover demo examples Snapshots: overflow 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1501,25 +1350,20 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-14 *,
+.emotion-14 *::before,
+.emotion-14 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1536,94 +1380,77 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -1634,25 +1461,18 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1661,69 +1481,79 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   background-color: #ffffff;
   border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: none;
   z-index: 100;
 }
 
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-10[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-10[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-10[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-10[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-10[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-7 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-25:last-child,
-[data-css-25]:last-child,
-.css-25[data-simulate-lastchild],
-[data-css-25][data-simulate-lastchild] {
+.emotion-7:last-child {
   margin-bottom: 0.5em;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-6 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-5 {
   width: 13.75em;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-8 {
   color: #ffffff;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #ebeff5,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-32,
-[data-css-32] {
+.emotion-16 {
   background-color: aliceblue;
   overflow: hidden;
   padding: 25px;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-32"
+    className="emotion-16"
   >
     <Popover
       content={<DemoContent />}
@@ -1740,12 +1570,12 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
         placement="right"
         tag="span"
       >
-        <Manager
-          className="css-0"
+        <Popover
+          className="emotion-14"
           tag="span"
         >
           <span
-            className="css-0"
+            className="emotion-14"
           >
             <PopoverTrigger
               aria-describedby="popover-7-content"
@@ -1762,12 +1592,12 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <Target
-                  className="css-1"
+                <PopoverTrigger
+                  className="emotion-3"
                   component="span"
                 >
                   <span
-                    className="css-1"
+                    className="emotion-3"
                   >
                     <Button
                       aria-describedby="popover-7-content"
@@ -1781,7 +1611,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                       type="button"
                       variant="regular"
                     >
-                      <glamorous(button)
+                      <Button
                         aria-describedby="popover-7-content"
                         aria-expanded={true}
                         aria-owns="popover-7-content"
@@ -1798,32 +1628,32 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                           aria-describedby="popover-7-content"
                           aria-expanded={true}
                           aria-owns="popover-7-content"
-                          className="css-2"
+                          className="emotion-2"
                           onBlur={[Function]}
                           onClick={[Function]}
                           role="button"
                           type="button"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-16"
+                              className="emotion-1"
                             >
-                              <glamorous(span)
+                              <Styled(span)
                                 size="large"
                               >
                                 <span
-                                  className="css-17"
+                                  className="emotion-0"
                                 >
                                   Open Popover
                                 </span>
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </button>
-                      </glamorous(button)>
+                      </Button>
                     </Button>
                   </span>
-                </Target>
+                </PopoverTrigger>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -1839,15 +1669,15 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                 placement="right"
                 tabIndex={0}
               >
-                <ThemedComponent
-                  className="css-24"
+                <PopoverContent
+                  className="emotion-10"
                   id="popover-7-content"
                   onBlur={[Function]}
                   placement="right"
                   tabIndex={0}
                 >
                   <RtlPopper
-                    className="css-24"
+                    className="emotion-10"
                     id="popover-7-content"
                     onBlur={[Function]}
                     placement="right"
@@ -2044,7 +1874,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                     }
                   >
                     <Popper
-                      className="css-24"
+                      className="emotion-10"
                       component="div"
                       eventsEnabled={true}
                       id="popover-7-content"
@@ -2055,7 +1885,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                       tabIndex={0}
                     >
                       <div
-                        className="css-24"
+                        className="emotion-10"
                         id="popover-7-content"
                         onBlur={[Function]}
                         style={
@@ -2067,37 +1897,37 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                         }
                         tabIndex={0}
                       >
-                        <ThemedComponent>
+                        <WithTheme(Themed(CardBlock))>
                           <Themed(CardBlock)>
                             <ThemeProvider>
                               <ThemeProvider>
                                 <CardBlock>
                                   <CardBlock>
                                     <div
-                                      className="css-25"
+                                      className="emotion-7"
                                     >
-                                      <glamorous(div)>
+                                      <Styled(div)>
                                         <div
-                                          className="css-29"
+                                          className="emotion-6"
                                         >
                                           <DemoContent>
-                                            <glamorous(div)>
+                                            <Styled(div)>
                                               <div
-                                                className="css-30"
+                                                className="emotion-5"
                                               >
                                                 Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                               </div>
-                                            </glamorous(div)>
+                                            </Styled(div)>
                                           </DemoContent>
                                         </div>
-                                      </glamorous(div)>
+                                      </Styled(div)>
                                     </div>
                                   </CardBlock>
                                 </CardBlock>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(CardBlock)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(CardBlock))>
                         <PopoverArrow
                           size="8px"
                         >
@@ -2105,24 +1935,24 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <Arrow
+                            <PopoverArrow
                               aria-hidden={true}
-                              className="css-31"
+                              className="emotion-8"
                             >
                               <span
                                 aria-hidden={true}
-                                className="css-31"
+                                className="emotion-8"
                                 style={Object {}}
                               >
                                 ▼
                               </span>
-                            </Arrow>
+                            </PopoverArrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </ThemedComponent>
+                </PopoverContent>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -2144,18 +1974,17 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
               }
             />
           </span>
-        </Manager>
+        </Popover>
       </Popover>
     </Popover>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Popover demo examples Snapshots: placement 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2164,25 +1993,20 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-14 *,
+.emotion-14 *::before,
+.emotion-14 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2199,94 +2023,77 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2297,25 +2104,18 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2324,78 +2124,89 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   background-color: #ffffff;
   border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: none;
   z-index: 100;
 }
 
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-10[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-10[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-10[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-10[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-10[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-7 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-25:last-child,
-[data-css-25]:last-child,
-.css-25[data-simulate-lastchild],
-[data-css-25][data-simulate-lastchild] {
+.emotion-7:last-child {
   margin-bottom: 0.5em;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-6 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-5 {
   width: 13.75em;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-8 {
   color: #ffffff;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #ebeff5,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-32,
-[data-css-32] {
+.emotion-16 {
   height: 350px;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-32"
+    className="emotion-16"
   >
     <Popover
       content={<DemoContent />}
@@ -2412,12 +2223,12 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
         placement="bottom"
         tag="span"
       >
-        <Manager
-          className="css-0"
+        <Popover
+          className="emotion-14"
           tag="span"
         >
           <span
-            className="css-0"
+            className="emotion-14"
           >
             <PopoverTrigger
               aria-describedby="popover-5-content"
@@ -2434,12 +2245,12 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <Target
-                  className="css-1"
+                <PopoverTrigger
+                  className="emotion-3"
                   component="span"
                 >
                   <span
-                    className="css-1"
+                    className="emotion-3"
                   >
                     <Button
                       aria-describedby="popover-5-content"
@@ -2453,7 +2264,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                       type="button"
                       variant="regular"
                     >
-                      <glamorous(button)
+                      <Button
                         aria-describedby="popover-5-content"
                         aria-expanded={true}
                         aria-owns="popover-5-content"
@@ -2470,32 +2281,32 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                           aria-describedby="popover-5-content"
                           aria-expanded={true}
                           aria-owns="popover-5-content"
-                          className="css-2"
+                          className="emotion-2"
                           onBlur={[Function]}
                           onClick={[Function]}
                           role="button"
                           type="button"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-16"
+                              className="emotion-1"
                             >
-                              <glamorous(span)
+                              <Styled(span)
                                 size="large"
                               >
                                 <span
-                                  className="css-17"
+                                  className="emotion-0"
                                 >
                                   Open Popover
                                 </span>
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </button>
-                      </glamorous(button)>
+                      </Button>
                     </Button>
                   </span>
-                </Target>
+                </PopoverTrigger>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -2511,15 +2322,15 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                 placement="bottom"
                 tabIndex={0}
               >
-                <ThemedComponent
-                  className="css-24"
+                <PopoverContent
+                  className="emotion-10"
                   id="popover-5-content"
                   onBlur={[Function]}
                   placement="bottom"
                   tabIndex={0}
                 >
                   <RtlPopper
-                    className="css-24"
+                    className="emotion-10"
                     id="popover-5-content"
                     onBlur={[Function]}
                     placement="bottom"
@@ -2716,7 +2527,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                     }
                   >
                     <Popper
-                      className="css-24"
+                      className="emotion-10"
                       component="div"
                       eventsEnabled={true}
                       id="popover-5-content"
@@ -2727,7 +2538,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                       tabIndex={0}
                     >
                       <div
-                        className="css-24"
+                        className="emotion-10"
                         id="popover-5-content"
                         onBlur={[Function]}
                         style={
@@ -2739,37 +2550,37 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                         }
                         tabIndex={0}
                       >
-                        <ThemedComponent>
+                        <WithTheme(Themed(CardBlock))>
                           <Themed(CardBlock)>
                             <ThemeProvider>
                               <ThemeProvider>
                                 <CardBlock>
                                   <CardBlock>
                                     <div
-                                      className="css-25"
+                                      className="emotion-7"
                                     >
-                                      <glamorous(div)>
+                                      <Styled(div)>
                                         <div
-                                          className="css-29"
+                                          className="emotion-6"
                                         >
                                           <DemoContent>
-                                            <glamorous(div)>
+                                            <Styled(div)>
                                               <div
-                                                className="css-30"
+                                                className="emotion-5"
                                               >
                                                 Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                               </div>
-                                            </glamorous(div)>
+                                            </Styled(div)>
                                           </DemoContent>
                                         </div>
-                                      </glamorous(div)>
+                                      </Styled(div)>
                                     </div>
                                   </CardBlock>
                                 </CardBlock>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(CardBlock)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(CardBlock))>
                         <PopoverArrow
                           size="8px"
                         >
@@ -2777,24 +2588,24 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <Arrow
+                            <PopoverArrow
                               aria-hidden={true}
-                              className="css-31"
+                              className="emotion-8"
                             >
                               <span
                                 aria-hidden={true}
-                                className="css-31"
+                                className="emotion-8"
                                 style={Object {}}
                               >
                                 ▼
                               </span>
-                            </Arrow>
+                            </PopoverArrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </ThemedComponent>
+                </PopoverContent>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -2816,18 +2627,17 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
               }
             />
           </span>
-        </Manager>
+        </Popover>
       </Popover>
     </Popover>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Popover demo examples Snapshots: portal 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2836,25 +2646,20 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2871,94 +2676,77 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2969,62 +2757,52 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-14 {
   position: relative;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-8 {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.css-26,
-[data-css-26] {
+.emotion-7 {
   height: 860px;
   width: 300vw;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.css-27,
-[data-css-27] {
+.emotion-12 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.css-28,
-[data-css-28] {
+.emotion-11 {
   box-sizing: border-box;
   color: #3272d9;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3041,6 +2819,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   height: 1.5em;
   min-width: 1.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
   left: 0;
@@ -3048,72 +2827,54 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   top: 0;
 }
 
-.css-28 *,
-[data-css-28] *,
-.css-28 *::before,
-[data-css-28] *::before,
-.css-28 *::after,
-[data-css-28] *::after {
+.emotion-11 *,
+.emotion-11 *::before,
+.emotion-11 *::after {
   box-sizing: inherit;
 }
 
-.css-28:focus,
-[data-css-28]:focus,
-.css-28[data-simulate-focus],
-[data-css-28][data-simulate-focus] {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+.emotion-11:focus {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-28:hover,
-[data-css-28]:hover,
-.css-28[data-simulate-hover],
-[data-css-28][data-simulate-hover] {
+.emotion-11:hover {
   background-color: #f5f7fa;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-28:active,
-[data-css-28]:active,
-.css-28[data-simulate-active],
-[data-css-28][data-simulate-active] {
+.emotion-11:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.css-28::-moz-focus-inner,
-[data-css-28]::-moz-focus-inner,
-.css-28[data-simulate-mozfocusinner],
-[data-css-28][data-simulate-mozfocusinner] {
+.emotion-11::-moz-focus-inner {
   border: 0;
 }
 
-.css-28 [role="img"],
-[data-css-28] [role="img"] {
+.emotion-11 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-28 [role="img"]:first-child,
-[data-css-28] [role="img"]:first-child {
+.emotion-11 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-28 [role="img"]:last-child,
-[data-css-28] [role="img"]:last-child {
+.emotion-11 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-28 [role="img"]:only-child,
-[data-css-28] [role="img"]:only-child {
+.emotion-11 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-42,
-[data-css-42] {
+.emotion-9 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3128,21 +2889,21 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   autoCenter={true}
   height={360}
 >
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-24"
+      className="emotion-14"
     >
-      <glamorous(div)
+      <Styled(div)
         height={360}
       >
         <div
-          className="css-25"
+          className="emotion-8"
         >
-          <glamorous(div)
+          <Styled(div)
             scrollAreaHeight={360}
           >
             <div
-              className="css-26"
+              className="emotion-7"
             >
               <Popover
                 content={<DemoContent />}
@@ -3175,12 +2936,12 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                   tag="span"
                   usePortal={true}
                 >
-                  <Manager
-                    className="css-0"
+                  <Popover
+                    className="emotion-5"
                     tag="span"
                   >
                     <span
-                      className="css-0"
+                      className="emotion-5"
                     >
                       <PopoverTrigger
                         aria-describedby="popover-11-content"
@@ -3197,12 +2958,12 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <Target
-                            className="css-1"
+                          <PopoverTrigger
+                            className="emotion-3"
                             component="span"
                           >
                             <span
-                              className="css-1"
+                              className="emotion-3"
                             >
                               <Button
                                 aria-describedby="popover-11-content"
@@ -3216,7 +2977,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                                 type="button"
                                 variant="regular"
                               >
-                                <glamorous(button)
+                                <Button
                                   aria-describedby="popover-11-content"
                                   aria-expanded={true}
                                   aria-owns="popover-11-content"
@@ -3233,32 +2994,32 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                                     aria-describedby="popover-11-content"
                                     aria-expanded={true}
                                     aria-owns="popover-11-content"
-                                    className="css-2"
+                                    className="emotion-2"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     role="button"
                                     type="button"
                                   >
-                                    <glamorous(span)>
+                                    <Styled(span)>
                                       <span
-                                        className="css-16"
+                                        className="emotion-1"
                                       >
-                                        <glamorous(span)
+                                        <Styled(span)
                                           size="large"
                                         >
                                           <span
-                                            className="css-17"
+                                            className="emotion-0"
                                           >
                                             Open Popover
                                           </span>
-                                        </glamorous(span)>
+                                        </Styled(span)>
                                       </span>
-                                    </glamorous(span)>
+                                    </Styled(span)>
                                   </button>
-                                </glamorous(button)>
+                                </Button>
                               </Button>
                             </span>
-                          </Target>
+                          </PopoverTrigger>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <Portal />
@@ -3281,20 +3042,23 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                         }
                       />
                     </span>
-                  </Manager>
+                  </Popover>
                 </Popover>
               </Popover>
             </div>
-          </glamorous(div)>
+          </Styled(div)>
         </div>
-      </glamorous(div)>
-      <glamorous(Button)
+      </Styled(div)>
+      <Styled(Button)
+        element="button"
         minimal={true}
         onClick={[Function]}
         size="small"
+        type="button"
+        variant="regular"
       >
         <Button
-          className="css-27"
+          className="emotion-12"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -3302,8 +3066,8 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
           type="button"
           variant="regular"
         >
-          <glamorous(button)
-            className="css-27"
+          <Button
+            className="emotion-12"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -3313,39 +3077,38 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
             variant="regular"
           >
             <button
-              className="css-28"
+              className="emotion-11"
               onClick={[Function]}
               type="button"
             >
-              <glamorous(span)>
+              <Styled(span)>
                 <span
-                  className="css-16"
+                  className="emotion-1"
                 >
-                  <glamorous(span)
+                  <Styled(span)
                     size="small"
                   >
                     <span
-                      className="css-42"
+                      className="emotion-9"
                     >
                       Re-center
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </button>
-          </glamorous(button)>
+          </Button>
         </Button>
-      </glamorous(Button)>
+      </Styled(Button)>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </ScrollBox>
 `;
 
 exports[`Popover demo examples Snapshots: rtl 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3354,42 +3117,37 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-14 *,
+.emotion-14 *::before,
+.emotion-14 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3398,69 +3156,78 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   background-color: #ffffff;
   border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: none;
   z-index: 100;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-10[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-10[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-10[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-10[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-10[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-7 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-4:last-child,
-[data-css-4]:last-child,
-.css-4[data-simulate-lastchild],
-[data-css-4][data-simulate-lastchild] {
+.emotion-7:last-child {
   margin-bottom: 0.5em;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-6 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-5 {
   width: 13.75em;
 }
 
-.css-10,
-[data-css-10] {
+.emotion-8 {
   color: #ffffff;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #ebeff5,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-11,
-[data-css-11] {
+.emotion-16 {
   padding-bottom: 8.125em;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3477,77 +3244,60 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-12 *,
-[data-css-12] *,
-.css-12 *::before,
-[data-css-12] *::before,
-.css-12 *::after,
-[data-css-12] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-12:focus,
-[data-css-12]:focus,
-.css-12[data-simulate-focus],
-[data-css-12][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-12:hover,
-[data-css-12]:hover,
-.css-12[data-simulate-hover],
-[data-css-12][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-12:active,
-[data-css-12]:active,
-.css-12[data-simulate-active],
-[data-css-12][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-12::-moz-focus-inner,
-[data-css-12]::-moz-focus-inner,
-.css-12[data-simulate-mozfocusinner],
-[data-css-12][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-12 [role="img"],
-[data-css-12] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-12 [role="img"]:first-child,
-[data-css-12] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-left: 0.5em;
 }
 
-.css-12 [role="img"]:last-child,
-[data-css-12] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-right: 0.5em;
 }
 
-.css-12 [role="img"]:only-child,
-[data-css-12] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-26,
-[data-css-26] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3558,25 +3308,19 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-26:first-child,
-[data-css-26]:first-child,
-.css-26[data-simulate-firstchild],
-[data-css-26][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-26:last-child,
-[data-css-26]:last-child,
-.css-26[data-simulate-lastchild],
-[data-css-26][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-left: 0.5714285714285714em;
 }
 
-<glamorous(div)
+<Styled(div)
   dir="rtl"
 >
   <div
-    className="css-11"
+    className="emotion-16"
     dir="rtl"
   >
     <ThemeProvider>
@@ -3596,12 +3340,12 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
             placement="bottom-start"
             tag="span"
           >
-            <Manager
-              className="css-0"
+            <Popover
+              className="emotion-14"
               tag="span"
             >
               <span
-                className="css-0"
+                className="emotion-14"
               >
                 <PopoverTrigger
                   aria-describedby="popover-19-content"
@@ -3618,12 +3362,12 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                   <PopoverTrigger
                     component="span"
                   >
-                    <Target
-                      className="css-1"
+                    <PopoverTrigger
+                      className="emotion-3"
                       component="span"
                     >
                       <span
-                        className="css-1"
+                        className="emotion-3"
                       >
                         <Button
                           aria-describedby="popover-19-content"
@@ -3637,7 +3381,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                           type="button"
                           variant="regular"
                         >
-                          <glamorous(button)
+                          <Button
                             aria-describedby="popover-19-content"
                             aria-expanded={true}
                             aria-owns="popover-19-content"
@@ -3654,32 +3398,32 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                               aria-describedby="popover-19-content"
                               aria-expanded={true}
                               aria-owns="popover-19-content"
-                              className="css-12"
+                              className="emotion-2"
                               onBlur={[Function]}
                               onClick={[Function]}
                               role="button"
                               type="button"
                             >
-                              <glamorous(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-2"
+                                  className="emotion-1"
                                 >
-                                  <glamorous(span)
+                                  <Styled(span)
                                     size="large"
                                   >
                                     <span
-                                      className="css-26"
+                                      className="emotion-0"
                                     >
                                       Open Popover
                                     </span>
-                                  </glamorous(span)>
+                                  </Styled(span)>
                                 </span>
-                              </glamorous(span)>
+                              </Styled(span)>
                             </button>
-                          </glamorous(button)>
+                          </Button>
                         </Button>
                       </span>
-                    </Target>
+                    </PopoverTrigger>
                   </PopoverTrigger>
                 </PopoverTrigger>
                 <PopoverContent
@@ -3695,15 +3439,15 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                     placement="bottom-start"
                     tabIndex={0}
                   >
-                    <ThemedComponent
-                      className="css-3"
+                    <PopoverContent
+                      className="emotion-10"
                       id="popover-19-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                       tabIndex={0}
                     >
                       <RtlPopper
-                        className="css-3"
+                        className="emotion-10"
                         id="popover-19-content"
                         onBlur={[Function]}
                         placement="bottom-start"
@@ -3900,7 +3644,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                         }
                       >
                         <Popper
-                          className="css-3"
+                          className="emotion-10"
                           component="div"
                           eventsEnabled={true}
                           id="popover-19-content"
@@ -3911,7 +3655,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                           tabIndex={0}
                         >
                           <div
-                            className="css-3"
+                            className="emotion-10"
                             id="popover-19-content"
                             onBlur={[Function]}
                             style={
@@ -3923,37 +3667,37 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                             }
                             tabIndex={0}
                           >
-                            <ThemedComponent>
+                            <WithTheme(Themed(CardBlock))>
                               <Themed(CardBlock)>
                                 <ThemeProvider>
                                   <ThemeProvider>
                                     <CardBlock>
                                       <CardBlock>
                                         <div
-                                          className="css-4"
+                                          className="emotion-7"
                                         >
-                                          <glamorous(div)>
+                                          <Styled(div)>
                                             <div
-                                              className="css-8"
+                                              className="emotion-6"
                                             >
                                               <DemoContent>
-                                                <glamorous(div)>
+                                                <Styled(div)>
                                                   <div
-                                                    className="css-9"
+                                                    className="emotion-5"
                                                   >
                                                     Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                                   </div>
-                                                </glamorous(div)>
+                                                </Styled(div)>
                                               </DemoContent>
                                             </div>
-                                          </glamorous(div)>
+                                          </Styled(div)>
                                         </div>
                                       </CardBlock>
                                     </CardBlock>
                                   </ThemeProvider>
                                 </ThemeProvider>
                               </Themed(CardBlock)>
-                            </ThemedComponent>
+                            </WithTheme(Themed(CardBlock))>
                             <PopoverArrow
                               size="8px"
                             >
@@ -3961,24 +3705,24 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                                 aria-hidden={true}
                                 size="8px"
                               >
-                                <Arrow
+                                <PopoverArrow
                                   aria-hidden={true}
-                                  className="css-10"
+                                  className="emotion-8"
                                 >
                                   <span
                                     aria-hidden={true}
-                                    className="css-10"
+                                    className="emotion-8"
                                     style={Object {}}
                                   >
                                     ▼
                                   </span>
-                                </Arrow>
+                                </PopoverArrow>
                               </PopoverArrow>
                             </PopoverArrow>
                           </div>
                         </Popper>
                       </RtlPopper>
-                    </ThemedComponent>
+                    </PopoverContent>
                   </PopoverContent>
                 </PopoverContent>
                 <EventListener
@@ -4000,20 +3744,19 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                   }
                 />
               </span>
-            </Manager>
+            </Popover>
           </Popover>
         </Popover>
       </ThemeProvider>
     </ThemeProvider>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4022,25 +3765,20 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-14 *,
+.emotion-14 *::before,
+.emotion-14 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4057,94 +3795,77 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4155,25 +3876,18 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4182,101 +3896,108 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   background-color: #ffffff;
   border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: none;
   z-index: 100;
 }
 
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-10[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-10[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-10[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-10[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-10[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-7 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-25:last-child,
-[data-css-25]:last-child,
-.css-25[data-simulate-lastchild],
-[data-css-25][data-simulate-lastchild] {
+.emotion-7:last-child {
   margin-bottom: 0.5em;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-6 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-5 {
   width: 13.75em;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-8 {
   color: #ffffff;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #ebeff5,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-32,
-[data-css-32] {
+.emotion-23 {
   position: relative;
 }
 
-.css-33,
-[data-css-33] {
+.emotion-17 {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.css-34,
-[data-css-34] {
+.emotion-16 {
   height: 860px;
   width: 300vw;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.css-35,
-[data-css-35] {
+.emotion-21 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.css-36,
-[data-css-36] {
+.emotion-20 {
   box-sizing: border-box;
   color: #3272d9;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4293,6 +4014,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   height: 1.5em;
   min-width: 1.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
   left: 0;
@@ -4300,72 +4022,54 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   top: 0;
 }
 
-.css-36 *,
-[data-css-36] *,
-.css-36 *::before,
-[data-css-36] *::before,
-.css-36 *::after,
-[data-css-36] *::after {
+.emotion-20 *,
+.emotion-20 *::before,
+.emotion-20 *::after {
   box-sizing: inherit;
 }
 
-.css-36:focus,
-[data-css-36]:focus,
-.css-36[data-simulate-focus],
-[data-css-36][data-simulate-focus] {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+.emotion-20:focus {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-36:hover,
-[data-css-36]:hover,
-.css-36[data-simulate-hover],
-[data-css-36][data-simulate-hover] {
+.emotion-20:hover {
   background-color: #f5f7fa;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-36:active,
-[data-css-36]:active,
-.css-36[data-simulate-active],
-[data-css-36][data-simulate-active] {
+.emotion-20:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.css-36::-moz-focus-inner,
-[data-css-36]::-moz-focus-inner,
-.css-36[data-simulate-mozfocusinner],
-[data-css-36][data-simulate-mozfocusinner] {
+.emotion-20::-moz-focus-inner {
   border: 0;
 }
 
-.css-36 [role="img"],
-[data-css-36] [role="img"] {
+.emotion-20 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-36 [role="img"]:first-child,
-[data-css-36] [role="img"]:first-child {
+.emotion-20 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-36 [role="img"]:last-child,
-[data-css-36] [role="img"]:last-child {
+.emotion-20 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-36 [role="img"]:only-child,
-[data-css-36] [role="img"]:only-child {
+.emotion-20 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-50,
-[data-css-50] {
+.emotion-18 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -4380,21 +4084,21 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   autoCenter={true}
   height={360}
 >
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-32"
+      className="emotion-23"
     >
-      <glamorous(div)
+      <Styled(div)
         height={360}
       >
         <div
-          className="css-33"
+          className="emotion-17"
         >
-          <glamorous(div)
+          <Styled(div)
             scrollAreaHeight={360}
           >
             <div
-              className="css-34"
+              className="emotion-16"
             >
               <Popover
                 content={<DemoContent />}
@@ -4411,12 +4115,12 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                   placement="left"
                   tag="span"
                 >
-                  <Manager
-                    className="css-0"
+                  <Popover
+                    className="emotion-14"
                     tag="span"
                   >
                     <span
-                      className="css-0"
+                      className="emotion-14"
                     >
                       <PopoverTrigger
                         aria-describedby="popover-9-content"
@@ -4433,12 +4137,12 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <Target
-                            className="css-1"
+                          <PopoverTrigger
+                            className="emotion-3"
                             component="span"
                           >
                             <span
-                              className="css-1"
+                              className="emotion-3"
                             >
                               <Button
                                 aria-describedby="popover-9-content"
@@ -4452,7 +4156,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                 type="button"
                                 variant="regular"
                               >
-                                <glamorous(button)
+                                <Button
                                   aria-describedby="popover-9-content"
                                   aria-expanded={true}
                                   aria-owns="popover-9-content"
@@ -4469,32 +4173,32 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                     aria-describedby="popover-9-content"
                                     aria-expanded={true}
                                     aria-owns="popover-9-content"
-                                    className="css-2"
+                                    className="emotion-2"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     role="button"
                                     type="button"
                                   >
-                                    <glamorous(span)>
+                                    <Styled(span)>
                                       <span
-                                        className="css-16"
+                                        className="emotion-1"
                                       >
-                                        <glamorous(span)
+                                        <Styled(span)
                                           size="large"
                                         >
                                           <span
-                                            className="css-17"
+                                            className="emotion-0"
                                           >
                                             Open Popover
                                           </span>
-                                        </glamorous(span)>
+                                        </Styled(span)>
                                       </span>
-                                    </glamorous(span)>
+                                    </Styled(span)>
                                   </button>
-                                </glamorous(button)>
+                                </Button>
                               </Button>
                             </span>
-                          </Target>
+                          </PopoverTrigger>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <PopoverContent
@@ -4510,15 +4214,15 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                           placement="left"
                           tabIndex={0}
                         >
-                          <ThemedComponent
-                            className="css-24"
+                          <PopoverContent
+                            className="emotion-10"
                             id="popover-9-content"
                             onBlur={[Function]}
                             placement="left"
                             tabIndex={0}
                           >
                             <RtlPopper
-                              className="css-24"
+                              className="emotion-10"
                               id="popover-9-content"
                               onBlur={[Function]}
                               placement="left"
@@ -4715,7 +4419,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                               }
                             >
                               <Popper
-                                className="css-24"
+                                className="emotion-10"
                                 component="div"
                                 eventsEnabled={true}
                                 id="popover-9-content"
@@ -4726,7 +4430,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                 tabIndex={0}
                               >
                                 <div
-                                  className="css-24"
+                                  className="emotion-10"
                                   id="popover-9-content"
                                   onBlur={[Function]}
                                   style={
@@ -4738,37 +4442,37 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                   }
                                   tabIndex={0}
                                 >
-                                  <ThemedComponent>
+                                  <WithTheme(Themed(CardBlock))>
                                     <Themed(CardBlock)>
                                       <ThemeProvider>
                                         <ThemeProvider>
                                           <CardBlock>
                                             <CardBlock>
                                               <div
-                                                className="css-25"
+                                                className="emotion-7"
                                               >
-                                                <glamorous(div)>
+                                                <Styled(div)>
                                                   <div
-                                                    className="css-29"
+                                                    className="emotion-6"
                                                   >
                                                     <DemoContent>
-                                                      <glamorous(div)>
+                                                      <Styled(div)>
                                                         <div
-                                                          className="css-30"
+                                                          className="emotion-5"
                                                         >
                                                           Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                                         </div>
-                                                      </glamorous(div)>
+                                                      </Styled(div)>
                                                     </DemoContent>
                                                   </div>
-                                                </glamorous(div)>
+                                                </Styled(div)>
                                               </div>
                                             </CardBlock>
                                           </CardBlock>
                                         </ThemeProvider>
                                       </ThemeProvider>
                                     </Themed(CardBlock)>
-                                  </ThemedComponent>
+                                  </WithTheme(Themed(CardBlock))>
                                   <PopoverArrow
                                     size="8px"
                                   >
@@ -4776,24 +4480,24 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                       aria-hidden={true}
                                       size="8px"
                                     >
-                                      <Arrow
+                                      <PopoverArrow
                                         aria-hidden={true}
-                                        className="css-31"
+                                        className="emotion-8"
                                       >
                                         <span
                                           aria-hidden={true}
-                                          className="css-31"
+                                          className="emotion-8"
                                           style={Object {}}
                                         >
                                           ▼
                                         </span>
-                                      </Arrow>
+                                      </PopoverArrow>
                                     </PopoverArrow>
                                   </PopoverArrow>
                                 </div>
                               </Popper>
                             </RtlPopper>
-                          </ThemedComponent>
+                          </PopoverContent>
                         </PopoverContent>
                       </PopoverContent>
                       <EventListener
@@ -4815,20 +4519,23 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                         }
                       />
                     </span>
-                  </Manager>
+                  </Popover>
                 </Popover>
               </Popover>
             </div>
-          </glamorous(div)>
+          </Styled(div)>
         </div>
-      </glamorous(div)>
-      <glamorous(Button)
+      </Styled(div)>
+      <Styled(Button)
+        element="button"
         minimal={true}
         onClick={[Function]}
         size="small"
+        type="button"
+        variant="regular"
       >
         <Button
-          className="css-35"
+          className="emotion-21"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -4836,8 +4543,8 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
           type="button"
           variant="regular"
         >
-          <glamorous(button)
-            className="css-35"
+          <Button
+            className="emotion-21"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -4847,39 +4554,38 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
             variant="regular"
           >
             <button
-              className="css-36"
+              className="emotion-20"
               onClick={[Function]}
               type="button"
             >
-              <glamorous(span)>
+              <Styled(span)>
                 <span
-                  className="css-16"
+                  className="emotion-1"
                 >
-                  <glamorous(span)
+                  <Styled(span)
                     size="small"
                   >
                     <span
-                      className="css-50"
+                      className="emotion-18"
                     >
                       Re-center
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </button>
-          </glamorous(button)>
+          </Button>
         </Button>
-      </glamorous(Button)>
+      </Styled(Button)>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </ScrollBox>
 `;
 
 exports[`Popover demo examples Snapshots: title 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-19 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4888,25 +4594,20 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-19 *,
+.emotion-19 *::before,
+.emotion-19 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -4923,94 +4624,77 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -5021,30 +4705,22 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-21 {
   padding: 5em 0;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -5053,71 +4729,83 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   background-color: #ffffff;
   border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: none;
   z-index: 100;
 }
 
-.css-25 *,
-[data-css-25] *,
-.css-25 *::before,
-[data-css-25] *::before,
-.css-25 *::after,
-[data-css-25] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-26,
-[data-css-26] {
+.emotion-15[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-15[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-15[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-15[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-15[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-9 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.css-27,
-[data-css-27] {
-  flex: 1 1 auto;
+.emotion-8 {
   -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
-.css-28,
-[data-css-28] {
+.emotion-6 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
   align-items: flex-start;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
 }
 
-.css-28 > [role="img"],
-[data-css-28] > [role="img"] {
+.emotion-6 > [role="img"] {
   margin-right: 0.5em;
   position: relative;
   top: 0.25em;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-5 {
   color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-size: 1.125em;
   font-weight: 700;
   margin: 0;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-7 {
   color: #58606e;
   font-size: 0.6875em;
   font-weight: 400;
@@ -5125,47 +4813,41 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   margin-top: 0.7272727272727273em;
 }
 
-.css-32,
-[data-css-32] {
+.emotion-12 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-32:last-child,
-[data-css-32]:last-child,
-.css-32[data-simulate-lastchild],
-[data-css-32][data-simulate-lastchild] {
+.emotion-12:last-child {
   margin-bottom: 0.5em;
 }
 
-.css-36,
-[data-css-36] {
+.emotion-11 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-37,
-[data-css-37] {
+.emotion-10 {
   width: 13.75em;
 }
 
-.css-38,
-[data-css-38] {
+.emotion-13 {
   color: #ffffff;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #ebeff5, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #ebeff5,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-24"
+    className="emotion-21"
   >
     <Popover
       content={<DemoContent />}
@@ -5186,13 +4868,13 @@ exports[`Popover demo examples Snapshots: title 1`] = `
         tag="span"
         title="Title"
       >
-        <Manager
-          className="css-0"
+        <Popover
+          className="emotion-19"
           tag="span"
           title="Title"
         >
           <span
-            className="css-0"
+            className="emotion-19"
             title="Title"
           >
             <PopoverTrigger
@@ -5210,12 +4892,12 @@ exports[`Popover demo examples Snapshots: title 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <Target
-                  className="css-1"
+                <PopoverTrigger
+                  className="emotion-3"
                   component="span"
                 >
                   <span
-                    className="css-1"
+                    className="emotion-3"
                   >
                     <Button
                       aria-describedby="popover-3-content"
@@ -5229,7 +4911,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                       type="button"
                       variant="regular"
                     >
-                      <glamorous(button)
+                      <Button
                         aria-describedby="popover-3-content"
                         aria-expanded={true}
                         aria-owns="popover-3-content"
@@ -5246,32 +4928,32 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                           aria-describedby="popover-3-content"
                           aria-expanded={true}
                           aria-owns="popover-3-content"
-                          className="css-2"
+                          className="emotion-2"
                           onBlur={[Function]}
                           onClick={[Function]}
                           role="button"
                           type="button"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-16"
+                              className="emotion-1"
                             >
-                              <glamorous(span)
+                              <Styled(span)
                                 size="large"
                               >
                                 <span
-                                  className="css-17"
+                                  className="emotion-0"
                                 >
                                   Open Popover
                                 </span>
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </button>
-                      </glamorous(button)>
+                      </Button>
                     </Button>
                   </span>
-                </Target>
+                </PopoverTrigger>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -5289,15 +4971,15 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                 placement="right"
                 tabIndex={0}
               >
-                <ThemedComponent
-                  className="css-25"
+                <PopoverContent
+                  className="emotion-15"
                   id="popover-3-content"
                   onBlur={[Function]}
                   placement="right"
                   tabIndex={0}
                 >
                   <RtlPopper
-                    className="css-25"
+                    className="emotion-15"
                     id="popover-3-content"
                     onBlur={[Function]}
                     placement="right"
@@ -5494,7 +5176,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                     }
                   >
                     <Popper
-                      className="css-25"
+                      className="emotion-15"
                       component="div"
                       eventsEnabled={true}
                       id="popover-3-content"
@@ -5505,7 +5187,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                       tabIndex={0}
                     >
                       <div
-                        className="css-25"
+                        className="emotion-15"
                         id="popover-3-content"
                         onBlur={[Function]}
                         style={
@@ -5517,7 +5199,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                         }
                         tabIndex={0}
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(CardTitle))
                           subtitle="Subtitle"
                         >
                           <Themed(CardTitle)
@@ -5530,72 +5212,72 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                                 >
                                   <CardTitle>
                                     <div
-                                      className="css-26"
+                                      className="emotion-9"
                                     >
-                                      <glamorous(div)>
+                                      <Styled(div)>
                                         <div
-                                          className="css-27"
+                                          className="emotion-8"
                                         >
-                                          <glamorous(div)>
+                                          <Styled(div)>
                                             <div
-                                              className="css-28"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(h3)>
+                                              <Styled(h3)>
                                                 <h3
-                                                  className="css-30"
+                                                  className="emotion-5"
                                                 >
                                                   Title
                                                 </h3>
-                                              </glamorous(h3)>
+                                              </Styled(h3)>
                                             </div>
-                                          </glamorous(div)>
-                                          <glamorous(h4)>
+                                          </Styled(div)>
+                                          <Styled(h4)>
                                             <h4
-                                              className="css-31"
+                                              className="emotion-7"
                                             >
                                               Subtitle
                                             </h4>
-                                          </glamorous(h4)>
+                                          </Styled(h4)>
                                         </div>
-                                      </glamorous(div)>
+                                      </Styled(div)>
                                     </div>
                                   </CardTitle>
                                 </CardTitle>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(CardTitle)>
-                        </ThemedComponent>
-                        <ThemedComponent>
+                        </WithTheme(Themed(CardTitle))>
+                        <WithTheme(Themed(CardBlock))>
                           <Themed(CardBlock)>
                             <ThemeProvider>
                               <ThemeProvider>
                                 <CardBlock>
                                   <CardBlock>
                                     <div
-                                      className="css-32"
+                                      className="emotion-12"
                                     >
-                                      <glamorous(div)>
+                                      <Styled(div)>
                                         <div
-                                          className="css-36"
+                                          className="emotion-11"
                                         >
                                           <DemoContent>
-                                            <glamorous(div)>
+                                            <Styled(div)>
                                               <div
-                                                className="css-37"
+                                                className="emotion-10"
                                               >
                                                 Light years star stuff harvesting star light citizens of distant epochs encyclopaedia galactica.
                                               </div>
-                                            </glamorous(div)>
+                                            </Styled(div)>
                                           </DemoContent>
                                         </div>
-                                      </glamorous(div)>
+                                      </Styled(div)>
                                     </div>
                                   </CardBlock>
                                 </CardBlock>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(CardBlock)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(CardBlock))>
                         <PopoverArrow
                           size="8px"
                         >
@@ -5603,24 +5285,24 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <Arrow
+                            <PopoverArrow
                               aria-hidden={true}
-                              className="css-38"
+                              className="emotion-13"
                             >
                               <span
                                 aria-hidden={true}
-                                className="css-38"
+                                className="emotion-13"
                                 style={Object {}}
                               >
                                 ▼
                               </span>
-                            </Arrow>
+                            </PopoverArrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </ThemedComponent>
+                </PopoverContent>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -5642,18 +5324,17 @@ exports[`Popover demo examples Snapshots: title 1`] = `
               }
             />
           </span>
-        </Manager>
+        </Popover>
       </Popover>
     </Popover>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Popover render props children renders expected content 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -5662,12 +5343,9 @@ exports[`Popover render props children renders expected content 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
@@ -5692,12 +5370,12 @@ exports[`Popover render props children renders expected content 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Manager
-      className="css-0"
+    <Popover
+      className="emotion-0"
       tag="span"
     >
       <span
-        className="css-0"
+        className="emotion-0"
       >
         <div
           aria-describedby="popover-31-content"
@@ -5710,16 +5388,15 @@ exports[`Popover render props children renders expected content 1`] = `
           Trigger
         </div>
       </span>
-    </Manager>
+    </Popover>
   </Popover>
 </Popover>
 `;
 
 exports[`Popover render props content renders expected content 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -5728,17 +5405,13 @@ exports[`Popover render props content renders expected content 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   display: inline-block;
 }
 
@@ -5815,12 +5488,12 @@ exports[`Popover render props content renders expected content 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Manager
-      className="css-0"
+    <Popover
+      className="emotion-2"
       tag="span"
     >
       <span
-        className="css-0"
+        className="emotion-2"
       >
         <PopoverTrigger
           aria-describedby="popover-33-content"
@@ -5833,12 +5506,12 @@ exports[`Popover render props content renders expected content 1`] = `
           <PopoverTrigger
             component="span"
           >
-            <Target
-              className="css-1"
+            <PopoverTrigger
+              className="emotion-0"
               component="span"
             >
               <span
-                className="css-1"
+                className="emotion-0"
               >
                 <button
                   aria-describedby="popover-33-content"
@@ -5851,7 +5524,7 @@ exports[`Popover render props content renders expected content 1`] = `
                   trigger
                 </button>
               </span>
-            </Target>
+            </PopoverTrigger>
           </PopoverTrigger>
         </PopoverTrigger>
         <div
@@ -5880,7 +5553,7 @@ exports[`Popover render props content renders expected content 1`] = `
           }
         />
       </span>
-    </Manager>
+    </Popover>
   </Popover>
 </Popover>
 `;

@@ -1,89 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
-.css-0 > *:not(:last-child),
-[data-css-0] > *:not(:last-child) {
+.emotion-16 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-2:hover span:first-of-type,
-[data-css-2]:hover span:first-of-type {
+.emotion-4:hover span:first-of-type {
   border-color: #5691f0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-0 {
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -92,54 +81,35 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-4:hover:not(:disabled) + span,
-[data-css-4]:hover:not(:disabled) + span,
-.css-4[data-simulate-hover]:not(:disabled) + span,
-[data-css-4][data-simulate-hover]:not(:disabled) + span {
-  border-color: #5691f0;
+.emotion-0:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:focus + span,
-[data-css-4]:focus + span,
-.css-4[data-simulate-focus] + span,
-[data-css-4][data-simulate-focus] + span {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-}
-
-.css-4:checked + span,
-[data-css-4]:checked + span,
-.css-4[type="checkbox"]:indeterminate + span,
-[data-css-4][type="checkbox"]:indeterminate + span {
+.emotion-0:checked + span,
+.emotion-0 [type="checkbox"]:indeterminate + span {
   background-color: #3272d9;
   border-color: #3272d9;
 }
 
-.css-4:checked:hover + span,
-[data-css-4]:checked:hover + span,
-.css-4[type="checkbox"]:indeterminate:hover + span,
-[data-css-4][type="checkbox"]:indeterminate:hover + span,
-.css-4:checked[data-simulate-hover] + span,
-[data-css-4]:checked[data-simulate-hover] + span,
-.css-4[type="checkbox"]:indeterminate[data-simulate-hover] + span,
-[data-css-4][type="checkbox"]:indeterminate[data-simulate-hover] + span {
+.emotion-0:checked:hover + span,
+.emotion-0 [type="checkbox"]:indeterminate:hover + span {
   background-color: #5691f0;
   border-color: #5691f0;
 }
 
-.css-4:checked:disabled + span,
-[data-css-4]:checked:disabled + span,
-.css-4[type="checkbox"]:indeterminate:disabled + span,
-[data-css-4][type="checkbox"]:indeterminate:disabled + span {
+.emotion-0:checked:disabled + span,
+.emotion-0 [type="checkbox"]:indeterminate:disabled + span {
   background-color: #c8d1e0;
   border-color: #c8d1e0;
   color: #ffffff;
 }
 
-.css-22,
-[data-css-22] {
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   border-color: #c8d1e0;
@@ -149,40 +119,36 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
   color: #ffffff;
   content: "";
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 0;
   margin-right: 1em;
   width: 1em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-22 svg,
-[data-css-22] svg {
+.emotion-2 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-1 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-3 {
   color: #333840;
   font-size: 0.875em;
 }
@@ -190,11 +156,11 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
 <Component>
   <MyForm>
     <DemoForm>
-      <glamorous(form)
+      <Styled(form)
         onSubmit={[Function]}
       >
         <form
-          className="css-0"
+          className="emotion-16"
           onSubmit={[Function]}
         >
           <CheckboxGroup
@@ -223,7 +189,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
             name="minerals"
             onChange={[Function]}
           >
-            <ThemedComponent
+            <WithTheme(Themed(ChoiceGroup))
               checked={
                 Array [
                   "magnetite",
@@ -319,7 +285,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                         size="large"
                       >
                         <div
-                          className="css-1"
+                          className="emotion-15"
                           role="group"
                         >
                           <Checkbox
@@ -332,7 +298,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                             size="large"
                             value="fluorite"
                           >
-                            <ThemedComponent
+                            <WithTheme(Themed(Choice))
                               checked={false}
                               iconChecked={<IconCheckBoxCheck />}
                               inputRef={[Function]}
@@ -389,9 +355,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         labelPosition="end"
                                       >
                                         <label
-                                          className="css-2"
+                                          className="emotion-4"
                                         >
-                                          <glamorous(input)
+                                          <Styled(input)
                                             checked={false}
                                             innerRef={[Function]}
                                             name="minerals"
@@ -402,27 +368,27 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                           >
                                             <input
                                               checked={false}
-                                              className="css-4"
+                                              className="emotion-0"
                                               name="minerals"
                                               onChange={[Function]}
                                               size="large"
                                               type="checkbox"
                                               value="fluorite"
                                             />
-                                          </glamorous(input)>
-                                          <glamorous(span)
+                                          </Styled(input)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-22"
+                                              className="emotion-2"
                                             >
                                               <IconCheckBoxCheck>
                                                 <Icon
                                                   rtl={false}
                                                   size="medium"
                                                 >
-                                                  <glamorous(svg)
+                                                  <Styled(svg)
                                                     aria-hidden={true}
                                                     role="img"
                                                     rtl={false}
@@ -431,7 +397,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden={true}
-                                                      className="css-23"
+                                                      className="emotion-1"
                                                       role="img"
                                                       viewBox="0 0 24 24"
                                                     >
@@ -441,28 +407,28 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                         />
                                                       </g>
                                                     </svg>
-                                                  </glamorous(svg)>
+                                                  </Styled(svg)>
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </glamorous(span)>
-                                          <glamorous(span)
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-24"
+                                              className="emotion-3"
                                             >
                                               Fluorite
                                             </span>
-                                          </glamorous(span)>
+                                          </Styled(span)>
                                         </label>
                                       </Choice>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
                               </Themed(Choice)>
-                            </ThemedComponent>
+                            </WithTheme(Themed(Choice))>
                           </Checkbox>
                           <Checkbox
                             checked={true}
@@ -474,7 +440,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                             size="large"
                             value="magnetite"
                           >
-                            <ThemedComponent
+                            <WithTheme(Themed(Choice))
                               checked={true}
                               iconChecked={<IconCheckBoxCheck />}
                               inputRef={[Function]}
@@ -531,9 +497,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         labelPosition="end"
                                       >
                                         <label
-                                          className="css-2"
+                                          className="emotion-4"
                                         >
-                                          <glamorous(input)
+                                          <Styled(input)
                                             checked={true}
                                             innerRef={[Function]}
                                             name="minerals"
@@ -544,27 +510,27 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                           >
                                             <input
                                               checked={true}
-                                              className="css-4"
+                                              className="emotion-0"
                                               name="minerals"
                                               onChange={[Function]}
                                               size="large"
                                               type="checkbox"
                                               value="magnetite"
                                             />
-                                          </glamorous(input)>
-                                          <glamorous(span)
+                                          </Styled(input)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-22"
+                                              className="emotion-2"
                                             >
                                               <IconCheckBoxCheck>
                                                 <Icon
                                                   rtl={false}
                                                   size="medium"
                                                 >
-                                                  <glamorous(svg)
+                                                  <Styled(svg)
                                                     aria-hidden={true}
                                                     role="img"
                                                     rtl={false}
@@ -573,7 +539,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden={true}
-                                                      className="css-23"
+                                                      className="emotion-1"
                                                       role="img"
                                                       viewBox="0 0 24 24"
                                                     >
@@ -583,28 +549,28 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                         />
                                                       </g>
                                                     </svg>
-                                                  </glamorous(svg)>
+                                                  </Styled(svg)>
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </glamorous(span)>
-                                          <glamorous(span)
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-24"
+                                              className="emotion-3"
                                             >
                                               Magnetite
                                             </span>
-                                          </glamorous(span)>
+                                          </Styled(span)>
                                         </label>
                                       </Choice>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
                               </Themed(Choice)>
-                            </ThemedComponent>
+                            </WithTheme(Themed(Choice))>
                           </Checkbox>
                           <Checkbox
                             checked={true}
@@ -616,7 +582,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                             size="large"
                             value="quartz"
                           >
-                            <ThemedComponent
+                            <WithTheme(Themed(Choice))
                               checked={true}
                               iconChecked={<IconCheckBoxCheck />}
                               inputRef={[Function]}
@@ -673,9 +639,9 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                         labelPosition="end"
                                       >
                                         <label
-                                          className="css-2"
+                                          className="emotion-4"
                                         >
-                                          <glamorous(input)
+                                          <Styled(input)
                                             checked={true}
                                             innerRef={[Function]}
                                             name="minerals"
@@ -686,27 +652,27 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                           >
                                             <input
                                               checked={true}
-                                              className="css-4"
+                                              className="emotion-0"
                                               name="minerals"
                                               onChange={[Function]}
                                               size="large"
                                               type="checkbox"
                                               value="quartz"
                                             />
-                                          </glamorous(input)>
-                                          <glamorous(span)
+                                          </Styled(input)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-22"
+                                              className="emotion-2"
                                             >
                                               <IconCheckBoxCheck>
                                                 <Icon
                                                   rtl={false}
                                                   size="medium"
                                                 >
-                                                  <glamorous(svg)
+                                                  <Styled(svg)
                                                     aria-hidden={true}
                                                     role="img"
                                                     rtl={false}
@@ -715,7 +681,7 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                   >
                                                     <svg
                                                       aria-hidden={true}
-                                                      className="css-23"
+                                                      className="emotion-1"
                                                       role="img"
                                                       viewBox="0 0 24 24"
                                                     >
@@ -725,28 +691,28 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                                                         />
                                                       </g>
                                                     </svg>
-                                                  </glamorous(svg)>
+                                                  </Styled(svg)>
                                                 </Icon>
                                               </IconCheckBoxCheck>
                                             </span>
-                                          </glamorous(span)>
-                                          <glamorous(span)
+                                          </Styled(span)>
+                                          <Styled(span)
                                             labelPosition="end"
                                             size="large"
                                           >
                                             <span
-                                              className="css-24"
+                                              className="emotion-3"
                                             >
                                               Quartz
                                             </span>
-                                          </glamorous(span)>
+                                          </Styled(span)>
                                         </label>
                                       </Choice>
                                     </Choice>
                                   </ThemeProvider>
                                 </ThemeProvider>
                               </Themed(Choice)>
-                            </ThemedComponent>
+                            </WithTheme(Themed(Choice))>
                           </Checkbox>
                         </div>
                       </ChoiceGroup>
@@ -754,99 +720,88 @@ exports[`CheckboxGroup demo examples Snapshots: controlled 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(ChoiceGroup)>
-            </ThemedComponent>
+            </WithTheme(Themed(ChoiceGroup))>
           </CheckboxGroup>
         </form>
-      </glamorous(form)>
+      </Styled(form)>
     </DemoForm>
   </MyForm>
 </Component>
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
-.css-0 > *:not(:last-child),
-[data-css-0] > *:not(:last-child) {
+.emotion-33 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-2:hover span:first-of-type,
-[data-css-2]:hover span:first-of-type {
+.emotion-4:hover span:first-of-type {
   border-color: #5691f0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-0 {
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -855,54 +810,35 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-4:hover:not(:disabled) + span,
-[data-css-4]:hover:not(:disabled) + span,
-.css-4[data-simulate-hover]:not(:disabled) + span,
-[data-css-4][data-simulate-hover]:not(:disabled) + span {
-  border-color: #5691f0;
+.emotion-0:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:focus + span,
-[data-css-4]:focus + span,
-.css-4[data-simulate-focus] + span,
-[data-css-4][data-simulate-focus] + span {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-}
-
-.css-4:checked + span,
-[data-css-4]:checked + span,
-.css-4[type="checkbox"]:indeterminate + span,
-[data-css-4][type="checkbox"]:indeterminate + span {
+.emotion-0:checked + span,
+.emotion-0 [type="checkbox"]:indeterminate + span {
   background-color: #3272d9;
   border-color: #3272d9;
 }
 
-.css-4:checked:hover + span,
-[data-css-4]:checked:hover + span,
-.css-4[type="checkbox"]:indeterminate:hover + span,
-[data-css-4][type="checkbox"]:indeterminate:hover + span,
-.css-4:checked[data-simulate-hover] + span,
-[data-css-4]:checked[data-simulate-hover] + span,
-.css-4[type="checkbox"]:indeterminate[data-simulate-hover] + span,
-[data-css-4][type="checkbox"]:indeterminate[data-simulate-hover] + span {
+.emotion-0:checked:hover + span,
+.emotion-0 [type="checkbox"]:indeterminate:hover + span {
   background-color: #5691f0;
   border-color: #5691f0;
 }
 
-.css-4:checked:disabled + span,
-[data-css-4]:checked:disabled + span,
-.css-4[type="checkbox"]:indeterminate:disabled + span,
-[data-css-4][type="checkbox"]:indeterminate:disabled + span {
+.emotion-0:checked:disabled + span,
+.emotion-0 [type="checkbox"]:indeterminate:disabled + span {
   background-color: #c8d1e0;
   border-color: #c8d1e0;
   color: #ffffff;
 }
 
-.css-22,
-[data-css-22] {
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   border-color: #c8d1e0;
@@ -912,57 +848,52 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
   color: #ffffff;
   content: "";
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 0;
   margin-right: 1em;
   width: 1em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-22 svg,
-[data-css-22] svg {
+.emotion-2 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-1 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-3 {
   color: #333840;
   font-size: 0.875em;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-16 {
   background-color: #c8d1e0;
   height: 1px;
   margin: 0.5em 0;
 }
 
 <DemoForm>
-  <glamorous(form)
+  <Styled(form)
     onSubmit={[Function]}
   >
     <form
-      className="css-0"
+      className="emotion-33"
       onSubmit={[Function]}
     >
       <CheckboxGroup
@@ -990,7 +921,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
         }
         name="minerals-1"
       >
-        <ThemedComponent
+        <WithTheme(Themed(ChoiceGroup))
           data={
             Array [
               Object {
@@ -1083,7 +1014,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                     size="large"
                   >
                     <div
-                      className="css-1"
+                      className="emotion-15"
                       role="group"
                     >
                       <Checkbox
@@ -1095,7 +1026,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="fluorite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={false}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1149,9 +1080,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={false}
                                         innerRef={[Function]}
                                         name="minerals-1"
@@ -1160,27 +1091,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="fluorite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={false}
                                           name="minerals-1"
                                           size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1189,7 +1120,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1199,28 +1130,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Fluorite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -1231,7 +1162,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="magnetite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1285,9 +1216,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals-1"
@@ -1296,27 +1227,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="magnetite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals-1"
                                           size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1325,7 +1256,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1335,28 +1266,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Magnetite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -1367,7 +1298,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="quartz"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1421,9 +1352,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals-1"
@@ -1432,27 +1363,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="quartz"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals-1"
                                           size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1461,7 +1392,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1471,28 +1402,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Quartz
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
                   </ChoiceGroup>
@@ -1500,14 +1431,14 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(ChoiceGroup)>
-        </ThemedComponent>
+        </WithTheme(Themed(ChoiceGroup))>
       </CheckboxGroup>
       <FormFieldDivider>
         <FormFieldDivider
           role="separator"
         >
           <div
-            className="css-25"
+            className="emotion-16"
             role="separator"
           />
         </FormFieldDivider>
@@ -1521,7 +1452,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
         }
         name="minerals-2"
       >
-        <ThemedComponent
+        <WithTheme(Themed(ChoiceGroup))
           defaultChecked={
             Array [
               "hematite",
@@ -1566,7 +1497,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                     size="large"
                   >
                     <div
-                      className="css-1"
+                      className="emotion-15"
                       role="group"
                     >
                       <Checkbox
@@ -1578,7 +1509,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="azurite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={false}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1632,9 +1563,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={false}
                                         innerRef={[Function]}
                                         name="minerals-2"
@@ -1643,27 +1574,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="azurite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={false}
                                           name="minerals-2"
                                           size="large"
                                           type="checkbox"
                                           value="azurite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1672,7 +1603,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1682,28 +1613,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Azurite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -1714,7 +1645,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="hematite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1768,9 +1699,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals-2"
@@ -1779,27 +1710,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="hematite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals-2"
                                           size="large"
                                           type="checkbox"
                                           value="hematite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1808,7 +1739,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1818,28 +1749,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Hematite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -1850,7 +1781,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                         size="large"
                         value="pyrite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -1904,9 +1835,9 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals-2"
@@ -1915,27 +1846,27 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                         value="pyrite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals-2"
                                           size="large"
                                           type="checkbox"
                                           value="pyrite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -1944,7 +1875,7 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -1954,28 +1885,28 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Pyrite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
                   </ChoiceGroup>
@@ -1983,97 +1914,86 @@ exports[`CheckboxGroup demo examples Snapshots: data-vs-children 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(ChoiceGroup)>
-        </ThemedComponent>
+        </WithTheme(Themed(ChoiceGroup))>
       </CheckboxGroup>
     </form>
-  </glamorous(form)>
+  </Styled(form)>
 </DemoForm>
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
-.css-0 > *:not(:last-child),
-[data-css-0] > *:not(:last-child) {
+.emotion-30 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-27 > *:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-6 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-2:hover span:first-of-type,
-[data-css-2]:hover span:first-of-type {
+.emotion-6:hover span:first-of-type {
   border-color: #5691f0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-2 {
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -2082,54 +2002,35 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-4:hover:not(:disabled) + span,
-[data-css-4]:hover:not(:disabled) + span,
-.css-4[data-simulate-hover]:not(:disabled) + span,
-[data-css-4][data-simulate-hover]:not(:disabled) + span {
-  border-color: #5691f0;
+.emotion-2:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:focus + span,
-[data-css-4]:focus + span,
-.css-4[data-simulate-focus] + span,
-[data-css-4][data-simulate-focus] + span {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-}
-
-.css-4:checked + span,
-[data-css-4]:checked + span,
-.css-4[type="checkbox"]:indeterminate + span,
-[data-css-4][type="checkbox"]:indeterminate + span {
+.emotion-2:checked + span,
+.emotion-2 [type="checkbox"]:indeterminate + span {
   background-color: #3272d9;
   border-color: #3272d9;
 }
 
-.css-4:checked:hover + span,
-[data-css-4]:checked:hover + span,
-.css-4[type="checkbox"]:indeterminate:hover + span,
-[data-css-4][type="checkbox"]:indeterminate:hover + span,
-.css-4:checked[data-simulate-hover] + span,
-[data-css-4]:checked[data-simulate-hover] + span,
-.css-4[type="checkbox"]:indeterminate[data-simulate-hover] + span,
-[data-css-4][type="checkbox"]:indeterminate[data-simulate-hover] + span {
+.emotion-2:checked:hover + span,
+.emotion-2 [type="checkbox"]:indeterminate:hover + span {
   background-color: #5691f0;
   border-color: #5691f0;
 }
 
-.css-4:checked:disabled + span,
-[data-css-4]:checked:disabled + span,
-.css-4[type="checkbox"]:indeterminate:disabled + span,
-[data-css-4][type="checkbox"]:indeterminate:disabled + span {
+.emotion-2:checked:disabled + span,
+.emotion-2 [type="checkbox"]:indeterminate:disabled + span {
   background-color: #c8d1e0;
   border-color: #c8d1e0;
   color: #ffffff;
 }
 
-.css-22,
-[data-css-22] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   border-color: #c8d1e0;
@@ -2139,49 +2040,44 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
   color: #ffffff;
   content: "";
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 0;
   margin-right: 1em;
   width: 1em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-22 svg,
-[data-css-22] svg {
+.emotion-4 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-3 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-5 {
   color: #333840;
   font-size: 0.875em;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-29 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2189,58 +2085,52 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-25 *,
-[data-css-25] *,
-.css-25 *::before,
-[data-css-25] *::before,
-.css-25 *::after,
-[data-css-25] *::after {
+.emotion-29 *,
+.emotion-29 *::before,
+.emotion-29 *::after {
   box-sizing: inherit;
 }
 
-.css-26,
-[data-css-26] {
+.emotion-1 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-26 > *,
-[data-css-26] > * {
+.emotion-1 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-27,
-[data-css-27] {
+.emotion-0 {
   color: #de1b1b;
   font-size: 0.6875em;
   font-weight: 400;
 }
 
-.css-28,
-[data-css-28] {
+.emotion-28 {
   color: #2a854e;
   font-size: 0.6875em;
   margin-top: 0.7272727272727273em;
 }
 
 <DemoForm>
-  <glamorous(form)
+  <Styled(form)
     onSubmit={[Function]}
   >
     <form
-      className="css-0"
+      className="emotion-30"
       onSubmit={[Function]}
     >
       <FormField
@@ -2278,29 +2168,29 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
       >
         <FormField>
           <div
-            className="css-25"
+            className="emotion-29"
           >
             <div>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-31-textWrapper"
               >
                 <div
-                  className="css-26"
+                  className="emotion-1"
                 >
                   <span
                     id="formField-31-labelText"
                   >
                     What are the primary characteristics of a mineral?
                   </span>
-                  <glamorous(span)>
+                  <Styled(span)>
                     <span
-                      className="css-27"
+                      className="emotion-0"
                     >
                       Required
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <CheckboxGroup
                 aria-describedby="formField-31-caption"
                 data={
@@ -2338,7 +2228,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                 }
                 variant="success"
               >
-                <ThemedComponent
+                <WithTheme(Themed(ChoiceGroup))
                   aria-describedby="formField-31-caption"
                   data={
                     Array [
@@ -2465,7 +2355,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                             <div
                               aria-describedby="formField-31-caption"
                               aria-labelledby="formField-31-labelText"
-                              className="css-1"
+                              className="emotion-27"
                               role="group"
                             >
                               <Checkbox
@@ -2478,7 +2368,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 value="natural"
                                 variant="success"
                               >
-                                <ThemedComponent
+                                <WithTheme(Themed(Choice))
                                   aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
@@ -2535,9 +2425,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                             labelPosition="end"
                                           >
                                             <label
-                                              className="css-2"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(input)
+                                              <Styled(input)
                                                 aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
@@ -2548,26 +2438,26 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               >
                                                 <input
                                                   aria-describedby="formField-31-caption"
-                                                  className="css-4"
+                                                  className="emotion-2"
                                                   name="contact"
                                                   size="large"
                                                   type="checkbox"
                                                   value="natural"
                                                 />
-                                              </glamorous(input)>
-                                              <glamorous(span)
+                                              </Styled(input)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-22"
+                                                  className="emotion-4"
                                                 >
                                                   <IconCheckBoxCheck>
                                                     <Icon
                                                       rtl={false}
                                                       size="medium"
                                                     >
-                                                      <glamorous(svg)
+                                                      <Styled(svg)
                                                         aria-hidden={true}
                                                         role="img"
                                                         rtl={false}
@@ -2576,7 +2466,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                       >
                                                         <svg
                                                           aria-hidden={true}
-                                                          className="css-23"
+                                                          className="emotion-3"
                                                           role="img"
                                                           viewBox="0 0 24 24"
                                                         >
@@ -2586,28 +2476,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                             />
                                                           </g>
                                                         </svg>
-                                                      </glamorous(svg)>
+                                                      </Styled(svg)>
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </glamorous(span)>
-                                              <glamorous(span)
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-24"
+                                                  className="emotion-5"
                                                 >
                                                   Naturally occurring
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </label>
                                           </Choice>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
                                   </Themed(Choice)>
-                                </ThemedComponent>
+                                </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
                                 aria-describedby="formField-31-caption"
@@ -2619,7 +2509,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 value="inorganic"
                                 variant="success"
                               >
-                                <ThemedComponent
+                                <WithTheme(Themed(Choice))
                                   aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
@@ -2676,9 +2566,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                             labelPosition="end"
                                           >
                                             <label
-                                              className="css-2"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(input)
+                                              <Styled(input)
                                                 aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
@@ -2689,26 +2579,26 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               >
                                                 <input
                                                   aria-describedby="formField-31-caption"
-                                                  className="css-4"
+                                                  className="emotion-2"
                                                   name="contact"
                                                   size="large"
                                                   type="checkbox"
                                                   value="inorganic"
                                                 />
-                                              </glamorous(input)>
-                                              <glamorous(span)
+                                              </Styled(input)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-22"
+                                                  className="emotion-4"
                                                 >
                                                   <IconCheckBoxCheck>
                                                     <Icon
                                                       rtl={false}
                                                       size="medium"
                                                     >
-                                                      <glamorous(svg)
+                                                      <Styled(svg)
                                                         aria-hidden={true}
                                                         role="img"
                                                         rtl={false}
@@ -2717,7 +2607,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                       >
                                                         <svg
                                                           aria-hidden={true}
-                                                          className="css-23"
+                                                          className="emotion-3"
                                                           role="img"
                                                           viewBox="0 0 24 24"
                                                         >
@@ -2727,28 +2617,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                             />
                                                           </g>
                                                         </svg>
-                                                      </glamorous(svg)>
+                                                      </Styled(svg)>
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </glamorous(span)>
-                                              <glamorous(span)
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-24"
+                                                  className="emotion-5"
                                                 >
                                                   Inorganic
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </label>
                                           </Choice>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
                                   </Themed(Choice)>
-                                </ThemedComponent>
+                                </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
                                 aria-describedby="formField-31-caption"
@@ -2760,7 +2650,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 value="solid"
                                 variant="success"
                               >
-                                <ThemedComponent
+                                <WithTheme(Themed(Choice))
                                   aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
@@ -2817,9 +2707,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                             labelPosition="end"
                                           >
                                             <label
-                                              className="css-2"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(input)
+                                              <Styled(input)
                                                 aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
@@ -2830,26 +2720,26 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               >
                                                 <input
                                                   aria-describedby="formField-31-caption"
-                                                  className="css-4"
+                                                  className="emotion-2"
                                                   name="contact"
                                                   size="large"
                                                   type="checkbox"
                                                   value="solid"
                                                 />
-                                              </glamorous(input)>
-                                              <glamorous(span)
+                                              </Styled(input)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-22"
+                                                  className="emotion-4"
                                                 >
                                                   <IconCheckBoxCheck>
                                                     <Icon
                                                       rtl={false}
                                                       size="medium"
                                                     >
-                                                      <glamorous(svg)
+                                                      <Styled(svg)
                                                         aria-hidden={true}
                                                         role="img"
                                                         rtl={false}
@@ -2858,7 +2748,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                       >
                                                         <svg
                                                           aria-hidden={true}
-                                                          className="css-23"
+                                                          className="emotion-3"
                                                           role="img"
                                                           viewBox="0 0 24 24"
                                                         >
@@ -2868,28 +2758,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                             />
                                                           </g>
                                                         </svg>
-                                                      </glamorous(svg)>
+                                                      </Styled(svg)>
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </glamorous(span)>
-                                              <glamorous(span)
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-24"
+                                                  className="emotion-5"
                                                 >
                                                   Solid
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </label>
                                           </Choice>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
                                   </Themed(Choice)>
-                                </ThemedComponent>
+                                </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
                                 aria-describedby="formField-31-caption"
@@ -2901,7 +2791,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 value="composition"
                                 variant="success"
                               >
-                                <ThemedComponent
+                                <WithTheme(Themed(Choice))
                                   aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
@@ -2958,9 +2848,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                             labelPosition="end"
                                           >
                                             <label
-                                              className="css-2"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(input)
+                                              <Styled(input)
                                                 aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
@@ -2971,26 +2861,26 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               >
                                                 <input
                                                   aria-describedby="formField-31-caption"
-                                                  className="css-4"
+                                                  className="emotion-2"
                                                   name="contact"
                                                   size="large"
                                                   type="checkbox"
                                                   value="composition"
                                                 />
-                                              </glamorous(input)>
-                                              <glamorous(span)
+                                              </Styled(input)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-22"
+                                                  className="emotion-4"
                                                 >
                                                   <IconCheckBoxCheck>
                                                     <Icon
                                                       rtl={false}
                                                       size="medium"
                                                     >
-                                                      <glamorous(svg)
+                                                      <Styled(svg)
                                                         aria-hidden={true}
                                                         role="img"
                                                         rtl={false}
@@ -2999,7 +2889,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                       >
                                                         <svg
                                                           aria-hidden={true}
-                                                          className="css-23"
+                                                          className="emotion-3"
                                                           role="img"
                                                           viewBox="0 0 24 24"
                                                         >
@@ -3009,28 +2899,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                             />
                                                           </g>
                                                         </svg>
-                                                      </glamorous(svg)>
+                                                      </Styled(svg)>
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </glamorous(span)>
-                                              <glamorous(span)
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-24"
+                                                  className="emotion-5"
                                                 >
                                                   Definite chemical composition
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </label>
                                           </Choice>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
                                   </Themed(Choice)>
-                                </ThemedComponent>
+                                </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
                                 aria-describedby="formField-31-caption"
@@ -3042,7 +2932,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                 value="crystalline"
                                 variant="success"
                               >
-                                <ThemedComponent
+                                <WithTheme(Themed(Choice))
                                   aria-describedby="formField-31-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
@@ -3099,9 +2989,9 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                             labelPosition="end"
                                           >
                                             <label
-                                              className="css-2"
+                                              className="emotion-6"
                                             >
-                                              <glamorous(input)
+                                              <Styled(input)
                                                 aria-describedby="formField-31-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
@@ -3112,26 +3002,26 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                               >
                                                 <input
                                                   aria-describedby="formField-31-caption"
-                                                  className="css-4"
+                                                  className="emotion-2"
                                                   name="contact"
                                                   size="large"
                                                   type="checkbox"
                                                   value="crystalline"
                                                 />
-                                              </glamorous(input)>
-                                              <glamorous(span)
+                                              </Styled(input)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-22"
+                                                  className="emotion-4"
                                                 >
                                                   <IconCheckBoxCheck>
                                                     <Icon
                                                       rtl={false}
                                                       size="medium"
                                                     >
-                                                      <glamorous(svg)
+                                                      <Styled(svg)
                                                         aria-hidden={true}
                                                         role="img"
                                                         rtl={false}
@@ -3140,7 +3030,7 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                       >
                                                         <svg
                                                           aria-hidden={true}
-                                                          className="css-23"
+                                                          className="emotion-3"
                                                           role="img"
                                                           viewBox="0 0 24 24"
                                                         >
@@ -3150,28 +3040,28 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                                                             />
                                                           </g>
                                                         </svg>
-                                                      </glamorous(svg)>
+                                                      </Styled(svg)>
                                                     </Icon>
                                                   </IconCheckBoxCheck>
                                                 </span>
-                                              </glamorous(span)>
-                                              <glamorous(span)
+                                              </Styled(span)>
+                                              <Styled(span)
                                                 labelPosition="end"
                                                 size="large"
                                               >
                                                 <span
-                                                  className="css-24"
+                                                  className="emotion-5"
                                                 >
                                                   Crystalline structure
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </label>
                                           </Choice>
                                         </Choice>
                                       </ThemeProvider>
                                     </ThemeProvider>
                                   </Themed(Choice)>
-                                </ThemedComponent>
+                                </WithTheme(Themed(Choice))>
                               </Checkbox>
                             </div>
                           </ChoiceGroup>
@@ -3179,79 +3069,75 @@ exports[`CheckboxGroup demo examples Snapshots: form-field 1`] = `
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(ChoiceGroup)>
-                </ThemedComponent>
+                </WithTheme(Themed(ChoiceGroup))>
               </CheckboxGroup>
             </div>
-            <glamorous(div)
+            <Styled(div)
               caption="Hint: All of the above"
               id="formField-31-caption"
               isGroup={true}
               variant="success"
             >
               <div
-                className="css-28"
+                className="emotion-28"
                 id="formField-31-caption"
               >
                 Hint: All of the above
               </div>
-            </glamorous(div)>
+            </Styled(div)>
           </div>
         </FormField>
       </FormField>
     </form>
-  </glamorous(form)>
+  </Styled(form)>
 </DemoForm>
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
-.css-0 > *:not(:last-child),
-[data-css-0] > *:not(:last-child) {
+.emotion-16 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-1:hover span:first-of-type,
-[data-css-1]:hover span:first-of-type {
+.emotion-4:hover span:first-of-type {
   border-color: #5691f0;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-0 {
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -3260,54 +3146,35 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-3:hover:not(:disabled) + span,
-[data-css-3]:hover:not(:disabled) + span,
-.css-3[data-simulate-hover]:not(:disabled) + span,
-[data-css-3][data-simulate-hover]:not(:disabled) + span {
-  border-color: #5691f0;
+.emotion-0:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-3:focus + span,
-[data-css-3]:focus + span,
-.css-3[data-simulate-focus] + span,
-[data-css-3][data-simulate-focus] + span {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-}
-
-.css-3:checked + span,
-[data-css-3]:checked + span,
-.css-3[type="checkbox"]:indeterminate + span,
-[data-css-3][type="checkbox"]:indeterminate + span {
+.emotion-0:checked + span,
+.emotion-0 [type="checkbox"]:indeterminate + span {
   background-color: #3272d9;
   border-color: #3272d9;
 }
 
-.css-3:checked:hover + span,
-[data-css-3]:checked:hover + span,
-.css-3[type="checkbox"]:indeterminate:hover + span,
-[data-css-3][type="checkbox"]:indeterminate:hover + span,
-.css-3:checked[data-simulate-hover] + span,
-[data-css-3]:checked[data-simulate-hover] + span,
-.css-3[type="checkbox"]:indeterminate[data-simulate-hover] + span,
-[data-css-3][type="checkbox"]:indeterminate[data-simulate-hover] + span {
+.emotion-0:checked:hover + span,
+.emotion-0 [type="checkbox"]:indeterminate:hover + span {
   background-color: #5691f0;
   border-color: #5691f0;
 }
 
-.css-3:checked:disabled + span,
-[data-css-3]:checked:disabled + span,
-.css-3[type="checkbox"]:indeterminate:disabled + span,
-[data-css-3][type="checkbox"]:indeterminate:disabled + span {
+.emotion-0:checked:disabled + span,
+.emotion-0 [type="checkbox"]:indeterminate:disabled + span {
   background-color: #c8d1e0;
   border-color: #c8d1e0;
   color: #ffffff;
 }
 
-.css-21,
-[data-css-21] {
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   border-color: #c8d1e0;
@@ -3317,86 +3184,75 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
   color: #ffffff;
   content: "";
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 0;
   margin-right: 1em;
   width: 1em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-21 svg,
-[data-css-21] svg {
+.emotion-2 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.css-22,
-[data-css-22] {
+.emotion-1 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-3 {
   color: #333840;
   font-size: 0.875em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-24 > *:not(:last-child),
-[data-css-24] > *:not(:last-child) {
+.emotion-15 > *:not(:last-child) {
   margin-bottom: 0;
   margin-right: 2em;
 }
 
 <DemoForm>
-  <glamorous(form)
+  <Styled(form)
     onSubmit={[Function]}
   >
     <form
-      className="css-0"
+      className="emotion-16"
       onSubmit={[Function]}
     >
       <CheckboxGroup
@@ -3425,7 +3281,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
         inline={true}
         name="minerals"
       >
-        <ThemedComponent
+        <WithTheme(Themed(ChoiceGroup))
           data={
             Array [
               Object {
@@ -3522,7 +3378,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                     size="large"
                   >
                     <div
-                      className="css-24"
+                      className="emotion-15"
                       role="group"
                     >
                       <Checkbox
@@ -3534,7 +3390,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                         size="large"
                         value="fluorite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={false}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -3588,9 +3444,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-1"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={false}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -3599,27 +3455,27 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         value="fluorite"
                                       >
                                         <input
-                                          className="css-3"
+                                          className="emotion-0"
                                           defaultChecked={false}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-21"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -3628,7 +3484,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-22"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -3638,28 +3494,28 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-23"
+                                          className="emotion-3"
                                         >
                                           Fluorite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -3670,7 +3526,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                         size="large"
                         value="magnetite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -3724,9 +3580,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-1"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -3735,27 +3591,27 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         value="magnetite"
                                       >
                                         <input
-                                          className="css-3"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-21"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -3764,7 +3620,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-22"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -3774,28 +3630,28 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-23"
+                                          className="emotion-3"
                                         >
                                           Magnetite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -3806,7 +3662,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                         size="large"
                         value="quartz"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -3860,9 +3716,9 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-1"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -3871,27 +3727,27 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                         value="quartz"
                                       >
                                         <input
-                                          className="css-3"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-21"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -3900,7 +3756,7 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-22"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -3910,28 +3766,28 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-23"
+                                          className="emotion-3"
                                         >
                                           Quartz
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
                   </ChoiceGroup>
@@ -3939,97 +3795,86 @@ exports[`CheckboxGroup demo examples Snapshots: inline 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(ChoiceGroup)>
-        </ThemedComponent>
+        </WithTheme(Themed(ChoiceGroup))>
       </CheckboxGroup>
     </form>
-  </glamorous(form)>
+  </Styled(form)>
 </DemoForm>
 `;
 
 exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
-.css-0 > *:not(:last-child),
-[data-css-0] > *:not(:last-child) {
+.emotion-16 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-15 > *:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-2:hover span:first-of-type,
-[data-css-2]:hover span:first-of-type {
+.emotion-4:hover span:first-of-type {
   border-color: #5691f0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-0 {
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -4038,54 +3883,35 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-4:hover:not(:disabled) + span,
-[data-css-4]:hover:not(:disabled) + span,
-.css-4[data-simulate-hover]:not(:disabled) + span,
-[data-css-4][data-simulate-hover]:not(:disabled) + span {
-  border-color: #5691f0;
+.emotion-0:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:focus + span,
-[data-css-4]:focus + span,
-.css-4[data-simulate-focus] + span,
-[data-css-4][data-simulate-focus] + span {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
-}
-
-.css-4:checked + span,
-[data-css-4]:checked + span,
-.css-4[type="checkbox"]:indeterminate + span,
-[data-css-4][type="checkbox"]:indeterminate + span {
+.emotion-0:checked + span,
+.emotion-0 [type="checkbox"]:indeterminate + span {
   background-color: #3272d9;
   border-color: #3272d9;
 }
 
-.css-4:checked:hover + span,
-[data-css-4]:checked:hover + span,
-.css-4[type="checkbox"]:indeterminate:hover + span,
-[data-css-4][type="checkbox"]:indeterminate:hover + span,
-.css-4:checked[data-simulate-hover] + span,
-[data-css-4]:checked[data-simulate-hover] + span,
-.css-4[type="checkbox"]:indeterminate[data-simulate-hover] + span,
-[data-css-4][type="checkbox"]:indeterminate[data-simulate-hover] + span {
+.emotion-0:checked:hover + span,
+.emotion-0 [type="checkbox"]:indeterminate:hover + span {
   background-color: #5691f0;
   border-color: #5691f0;
 }
 
-.css-4:checked:disabled + span,
-[data-css-4]:checked:disabled + span,
-.css-4[type="checkbox"]:indeterminate:disabled + span,
-[data-css-4][type="checkbox"]:indeterminate:disabled + span {
+.emotion-0:checked:disabled + span,
+.emotion-0 [type="checkbox"]:indeterminate:disabled + span {
   background-color: #c8d1e0;
   border-color: #c8d1e0;
   color: #ffffff;
 }
 
-.css-22,
-[data-css-22] {
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   border-color: #c8d1e0;
@@ -4095,50 +3921,46 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
   color: #ffffff;
   content: "";
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
   flex: none;
   height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 0;
   margin-right: 1em;
   width: 1em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-22 svg,
-[data-css-22] svg {
+.emotion-2 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-1 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-3 {
   color: #333840;
   font-size: 0.875em;
 }
 
 <DemoForm>
-  <glamorous(form)
+  <Styled(form)
     onSubmit={[Function]}
   >
     <form
-      className="css-0"
+      className="emotion-16"
       onSubmit={[Function]}
     >
       <CheckboxGroup
@@ -4166,7 +3988,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
         }
         name="minerals"
       >
-        <ThemedComponent
+        <WithTheme(Themed(ChoiceGroup))
           data={
             Array [
               Object {
@@ -4259,7 +4081,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                     size="large"
                   >
                     <div
-                      className="css-1"
+                      className="emotion-15"
                       role="group"
                     >
                       <Checkbox
@@ -4271,7 +4093,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                         size="large"
                         value="fluorite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={false}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -4325,9 +4147,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={false}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -4336,27 +4158,27 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         value="fluorite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={false}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="fluorite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -4365,7 +4187,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -4375,28 +4197,28 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Fluorite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -4407,7 +4229,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                         size="large"
                         value="magnetite"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -4461,9 +4283,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -4472,27 +4294,27 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         value="magnetite"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="magnetite"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -4501,7 +4323,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -4511,28 +4333,28 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Magnetite
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                       <Checkbox
                         defaultChecked={true}
@@ -4543,7 +4365,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                         size="large"
                         value="quartz"
                       >
-                        <ThemedComponent
+                        <WithTheme(Themed(Choice))
                           defaultChecked={true}
                           iconChecked={<IconCheckBoxCheck />}
                           inputRef={[Function]}
@@ -4597,9 +4419,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                     labelPosition="end"
                                   >
                                     <label
-                                      className="css-2"
+                                      className="emotion-4"
                                     >
-                                      <glamorous(input)
+                                      <Styled(input)
                                         defaultChecked={true}
                                         innerRef={[Function]}
                                         name="minerals"
@@ -4608,27 +4430,27 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                         value="quartz"
                                       >
                                         <input
-                                          className="css-4"
+                                          className="emotion-0"
                                           defaultChecked={true}
                                           name="minerals"
                                           size="large"
                                           type="checkbox"
                                           value="quartz"
                                         />
-                                      </glamorous(input)>
-                                      <glamorous(span)
+                                      </Styled(input)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-22"
+                                          className="emotion-2"
                                         >
                                           <IconCheckBoxCheck>
                                             <Icon
                                               rtl={false}
                                               size="medium"
                                             >
-                                              <glamorous(svg)
+                                              <Styled(svg)
                                                 aria-hidden={true}
                                                 role="img"
                                                 rtl={false}
@@ -4637,7 +4459,7 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                               >
                                                 <svg
                                                   aria-hidden={true}
-                                                  className="css-23"
+                                                  className="emotion-1"
                                                   role="img"
                                                   viewBox="0 0 24 24"
                                                 >
@@ -4647,28 +4469,28 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
                                                     />
                                                   </g>
                                                 </svg>
-                                              </glamorous(svg)>
+                                              </Styled(svg)>
                                             </Icon>
                                           </IconCheckBoxCheck>
                                         </span>
-                                      </glamorous(span)>
-                                      <glamorous(span)
+                                      </Styled(span)>
+                                      <Styled(span)
                                         labelPosition="end"
                                         size="large"
                                       >
                                         <span
-                                          className="css-24"
+                                          className="emotion-3"
                                         >
                                           Quartz
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </label>
                                   </Choice>
                                 </Choice>
                               </ThemeProvider>
                             </ThemeProvider>
                           </Themed(Choice)>
-                        </ThemedComponent>
+                        </WithTheme(Themed(Choice))>
                       </Checkbox>
                     </div>
                   </ChoiceGroup>
@@ -4676,9 +4498,9 @@ exports[`CheckboxGroup demo examples Snapshots: uncontrolled 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(ChoiceGroup)>
-        </ThemedComponent>
+        </WithTheme(Themed(ChoiceGroup))>
       </CheckboxGroup>
     </form>
-  </glamorous(form)>
+  </Styled(form)>
 </DemoForm>
 `;

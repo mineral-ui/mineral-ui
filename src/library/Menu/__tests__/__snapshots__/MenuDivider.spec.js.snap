@@ -1,24 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-41 {
   overflow: hidden;
 }
 
-.css-0 > div,
-[data-css-0] > div {
+.emotion-41 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-40 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -26,153 +23,136 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-40 *,
+.emotion-40 *::before,
+.emotion-40 *::after {
   box-sizing: inherit;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-4:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-4:hover {
   background-color: #f5f7fa;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-4:active {
   background-color: #ebeff5;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-4[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-4[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-4 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
-  flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-4 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-4 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-13,
-[data-css-13] {
+.emotion-3 {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-2 {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.1875em 0 0.25em;
   white-space: normal;
   word-break: break-all;
-  -webkit-flex: 1 1 auto;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-0 {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
   word-break: break-word;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-5 {
   background-color: #c8d1e0;
   height: 1px;
   margin: 0.5em 0;
 }
 
-.css-18,
-[data-css-18] {
+.emotion-27 {
   margin: 0.5em 0;
 }
 
-.css-18:first-child,
-[data-css-18]:first-child,
-.css-18 + .css-18,
-[data-css-18] + [data-css-18] {
+.emotion-27:first-child,
+.emotion-27 + .emotion-27 {
   margin-top: 0;
 }
 
-.css-18:last-child,
-[data-css-18]:last-child,
-.css-18[data-simulate-lastchild],
-[data-css-18][data-simulate-lastchild] {
+.emotion-27:last-child {
   margin-bottom: 0;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-16 {
   font-size: 0.6875em;
   font-weight: 700;
   margin: 0;
   padding: 1.4545454545454546em 1.4545454545454546em 0.7272727272727273em;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-0"
+    className="emotion-41"
   >
     <Menu>
       <Menu>
         <div
-          className="css-1"
+          className="emotion-40"
         >
           <MenuItem>
             <MenuItem
@@ -180,34 +160,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-2"
+                className="emotion-4"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
-                <glamorous(span)>
+                <Styled(span)>
                   <span
-                    className="css-13"
+                    className="emotion-3"
                   >
-                    <glamorous(span)>
+                    <Styled(span)>
                       <span
-                        className="css-14"
+                        className="emotion-2"
                       >
-                        <glamorous(span)>
+                        <Styled(span)>
                           <span
-                            className="css-15"
+                            className="emotion-0"
                           >
                             Menu item
                           </span>
-                        </glamorous(span)>
-                        <glamorous(span)>
+                        </Styled(span)>
+                        <Styled(span)>
                           <span
-                            className="css-16"
+                            className="emotion-1"
                           />
-                        </glamorous(span)>
+                        </Styled(span)>
                       </span>
-                    </glamorous(span)>
+                    </Styled(span)>
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </div>
             </MenuItem>
           </MenuItem>
@@ -216,7 +196,7 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
               role="separator"
             >
               <div
-                className="css-17"
+                className="emotion-5"
                 role="separator"
               />
             </MenuDivider>
@@ -227,34 +207,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-2"
+                className="emotion-4"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
-                <glamorous(span)>
+                <Styled(span)>
                   <span
-                    className="css-13"
+                    className="emotion-3"
                   >
-                    <glamorous(span)>
+                    <Styled(span)>
                       <span
-                        className="css-14"
+                        className="emotion-2"
                       >
-                        <glamorous(span)>
+                        <Styled(span)>
                           <span
-                            className="css-15"
+                            className="emotion-0"
                           >
                             Menu item
                           </span>
-                        </glamorous(span)>
-                        <glamorous(span)>
+                        </Styled(span)>
+                        <Styled(span)>
                           <span
-                            className="css-16"
+                            className="emotion-1"
                           />
-                        </glamorous(span)>
+                        </Styled(span)>
                       </span>
-                    </glamorous(span)>
+                    </Styled(span)>
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </div>
             </MenuItem>
           </MenuItem>
@@ -264,34 +244,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
               tabIndex={0}
             >
               <div
-                className="css-2"
+                className="emotion-4"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
-                <glamorous(span)>
+                <Styled(span)>
                   <span
-                    className="css-13"
+                    className="emotion-3"
                   >
-                    <glamorous(span)>
+                    <Styled(span)>
                       <span
-                        className="css-14"
+                        className="emotion-2"
                       >
-                        <glamorous(span)>
+                        <Styled(span)>
                           <span
-                            className="css-15"
+                            className="emotion-0"
                           >
                             Menu item
                           </span>
-                        </glamorous(span)>
-                        <glamorous(span)>
+                        </Styled(span)>
+                        <Styled(span)>
                           <span
-                            className="css-16"
+                            className="emotion-1"
                           />
-                        </glamorous(span)>
+                        </Styled(span)>
                       </span>
-                    </glamorous(span)>
+                    </Styled(span)>
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </div>
             </MenuItem>
           </MenuItem>
@@ -300,12 +280,12 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
           >
             <MenuGroup>
               <div
-                className="css-18"
+                className="emotion-27"
               >
                 <MenuGroupTitle>
                   <MenuGroupTitle>
                     <h3
-                      className="css-24"
+                      className="emotion-16"
                     >
                       Menu Group Title
                     </h3>
@@ -317,34 +297,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-13"
+                          className="emotion-3"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-14"
+                              className="emotion-2"
                             >
-                              <glamorous(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-15"
+                                  className="emotion-0"
                                 >
                                   Menu item
                                 </span>
-                              </glamorous(span)>
-                              <glamorous(span)>
+                              </Styled(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-16"
+                                  className="emotion-1"
                                 />
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </div>
                   </MenuItem>
                 </MenuItem>
@@ -354,34 +334,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-13"
+                          className="emotion-3"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-14"
+                              className="emotion-2"
                             >
-                              <glamorous(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-15"
+                                  className="emotion-0"
                                 >
                                   Menu item
                                 </span>
-                              </glamorous(span)>
-                              <glamorous(span)>
+                              </Styled(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-16"
+                                  className="emotion-1"
                                 />
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </div>
                   </MenuItem>
                 </MenuItem>
@@ -393,7 +373,7 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
               role="separator"
             >
               <div
-                className="css-17"
+                className="emotion-5"
                 role="separator"
               />
             </MenuDivider>
@@ -401,7 +381,7 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
           <MenuGroup>
             <MenuGroup>
               <div
-                className="css-18"
+                className="emotion-27"
               >
                 <MenuItem>
                   <MenuItem
@@ -409,34 +389,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-13"
+                          className="emotion-3"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-14"
+                              className="emotion-2"
                             >
-                              <glamorous(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-15"
+                                  className="emotion-0"
                                 >
                                   Menu item
                                 </span>
-                              </glamorous(span)>
-                              <glamorous(span)>
+                              </Styled(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-16"
+                                  className="emotion-1"
                                 />
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </div>
                   </MenuItem>
                 </MenuItem>
@@ -446,34 +426,34 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="css-2"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-13"
+                          className="emotion-3"
                         >
-                          <glamorous(span)>
+                          <Styled(span)>
                             <span
-                              className="css-14"
+                              className="emotion-2"
                             >
-                              <glamorous(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-15"
+                                  className="emotion-0"
                                 >
                                   Menu item
                                 </span>
-                              </glamorous(span)>
-                              <glamorous(span)>
+                              </Styled(span)>
+                              <Styled(span)>
                                 <span
-                                  className="css-16"
+                                  className="emotion-1"
                                 />
-                              </glamorous(span)>
+                              </Styled(span)>
                             </span>
-                          </glamorous(span)>
+                          </Styled(span)>
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </div>
                   </MenuItem>
                 </MenuItem>
@@ -484,5 +464,5 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
       </Menu>
     </Menu>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;

@@ -1,70 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FlexItem demo examples Snapshots: align-self 1`] = `
-.css-0,
-[data-css-0] {
-  position: relative;
-  z-index: 1;
-}
-
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
-  border: 1px dotted #accbfc;
-  bottom: -4px;
-  content: "";
-  left: calc(0.5em - 4px);
-  position: absolute;
-  right: calc(0.5em - 4px);
-  top: -4px;
-  z-index: -1;
-}
-
-.css-4,
-[data-css-4] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-5,
-[data-css-6]::after,
-.css-6[data-simulate-after],
-[data-css-6][data-simulate-after] {
+.emotion-54::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-6 > *:not(:last-child),
-[data-css-6] > *:not(:last-child) {
+.emotion-54 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-23 {
   position: relative;
   z-index: 1;
   height: 5rem;
 }
 
-.css-9::before,
-[data-css-9]::before,
-.css-9[data-simulate-before],
-[data-css-9][data-simulate-before] {
+.emotion-23::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -75,34 +47,30 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
   z-index: -1;
 }
 
-.css-13,
-[data-css-13] {
+.emotion-21 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
   height: 5rem;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-13::before,
-[data-css-13]::before,
-.css-13[data-simulate-before],
-[data-css-13][data-simulate-before] {
+.emotion-21::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -113,51 +81,45 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
   z-index: -1;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-20 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
   height: 5rem;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-17 *,
-[data-css-17] *,
-.css-17 *::before,
-[data-css-17] *::before,
-.css-17 *::after,
-[data-css-17] *::after {
+.emotion-20 *,
+.emotion-20 *::before,
+.emotion-20 *::after {
   box-sizing: inherit;
 }
 
-.css-17::before,
-[data-css-17]::before,
-.css-17[data-simulate-before],
-[data-css-17][data-simulate-before] {
+.emotion-20::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -168,371 +130,417 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
   z-index: -1;
 }
 
-.css-21,
-[data-css-21] {
-  align-self: stretch;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
+.emotion-1 {
   -webkit-align-self: stretch;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-22,
-[data-css-22] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-align-self: stretch;
   -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-22 *,
-[data-css-22] *,
-.css-22 *::before,
-[data-css-22] *::before,
-.css-22 *::after,
-[data-css-22] *::after {
-  box-sizing: inherit;
-}
-
-.css-23,
-[data-css-23] {
-  align-self: flex-start;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-align-self: flex-start;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-24,
-[data-css-24] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  align-self: flex-start;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-align-self: flex-start;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
-  box-sizing: inherit;
-}
-
-.css-25,
-[data-css-25] {
-  align-self: center;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-align-self: center;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-26,
-[data-css-26] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  align-self: center;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-align-self: center;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-26 *,
-[data-css-26] *,
-.css-26 *::before,
-[data-css-26] *::before,
-.css-26 *::after,
-[data-css-26] *::after {
-  box-sizing: inherit;
-}
-
-.css-27,
-[data-css-27] {
-  align-self: flex-end;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-align-self: flex-end;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-28,
-[data-css-28] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  align-self: flex-end;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-align-self: flex-end;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-28 *,
-[data-css-28] *,
-.css-28 *::before,
-[data-css-28] *::before,
-.css-28 *::after,
-[data-css-28] *::after {
-  box-sizing: inherit;
-}
-
-.css-29,
-[data-css-29] {
-  align-items: stretch;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-  justify-content: flex-start;
-  position: relative;
-  z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-}
-
-.css-29::before,
-[data-css-29]::before,
-.css-29[data-simulate-before],
-[data-css-29][data-simulate-before] {
-  border: 1px dotted #accbfc;
-  bottom: -4px;
-  content: "";
-  left: calc(0.5em - 4px);
-  position: absolute;
-  right: calc(0.5em - 4px);
-  top: -4px;
-  z-index: -1;
-}
-
-.css-33,
-[data-css-33] {
+.emotion-0 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-  justify-content: flex-start;
-  position: relative;
-  z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-33 *,
-[data-css-33] *,
-.css-33 *::before,
-[data-css-33] *::before,
-.css-33 *::after,
-[data-css-33] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-33::before,
-[data-css-33]::before,
-.css-33[data-simulate-before],
-[data-css-33][data-simulate-before] {
+.emotion-6 {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-11 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-16 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-50 {
+  position: relative;
+  z-index: 1;
+}
+
+.emotion-50::before {
+  border: 1px dotted #accbfc;
+  bottom: -4px;
+  content: "";
+  left: calc(0.5em - 4px);
+  position: absolute;
+  right: calc(0.5em - 4px);
+  top: -4px;
+  z-index: -1;
+}
+
+.emotion-48 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.emotion-48::before {
+  border: 1px dotted #accbfc;
+  bottom: -4px;
+  content: "";
+  left: calc(0.5em - 4px);
+  position: absolute;
+  right: calc(0.5em - 4px);
+  top: -4px;
+  z-index: -1;
+}
+
+.emotion-47 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.emotion-47 *,
+.emotion-47 *::before,
+.emotion-47 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-47::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -544,28 +552,33 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
 }
 
 <Component>
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-6"
+      className="emotion-54"
     >
-      <glamorous(glamorous(Flex))>
+      <Styled(Flex)
+        alignItems="stretch"
+        direction="row"
+        gutterWidth="md"
+        justifyContent="start"
+      >
         <Flex
           alignItems="stretch"
-          className="css-9"
+          className="emotion-23"
           direction="row"
           gutterWidth="md"
           justifyContent="start"
         >
-          <ThemedComponent
+          <WithTheme(Component)
             alignItems="stretch"
-            className="css-9"
+            className="emotion-23"
             direction="row"
             gutterWidth="md"
             justifyContent="start"
           >
             <Component
               alignItems="stretch"
-              className="css-9"
+              className="emotion-23"
               direction="row"
               gutterWidth="md"
               justifyContent="start"
@@ -762,39 +775,42 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
             >
               <Flex
                 alignItems="stretch"
-                className="css-9"
+                className="emotion-23"
                 direction="row"
+                element="div"
                 gutterWidth="md"
                 justifyContent="start"
               >
-                <Box
+                <FlexItem
                   alignItems="stretch"
-                  className="css-13"
+                  className="emotion-21"
                   direction="row"
                   element="div"
                   gutterWidth="md"
                   justifyContent="start"
                 >
-                  <glamorous(div)
+                  <Styled(div)
                     alignItems="stretch"
-                    className="css-13"
+                    className="emotion-21"
                     direction="row"
                     element="div"
                     gutterWidth="md"
                     justifyContent="start"
                   >
                     <div
-                      className="css-17"
+                      className="emotion-20"
                     >
-                      <glamorous(FlexItem)
+                      <Styled(FlexItem)
                         alignSelf="stretch"
+                        grow={0}
                         key=".$0"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="stretch"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -802,24 +818,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="stretch"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="stretch"
-                              className="css-21"
+                              className="emotion-1"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="stretch"
-                                className="css-21"
+                                className="emotion-1"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -827,24 +844,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-22"
+                                  className="emotion-0"
                                 >
                                   stretch
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="start"
+                        grow={0}
                         key=".$1"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="start"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -852,24 +871,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="start"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="start"
-                              className="css-23"
+                              className="emotion-6"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="start"
-                                className="css-23"
+                                className="emotion-6"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -877,24 +897,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-24"
+                                  className="emotion-5"
                                 >
                                   start
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="center"
+                        grow={0}
                         key=".$2"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="center"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -902,24 +924,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="center"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="center"
-                              className="css-25"
+                              className="emotion-11"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="center"
-                                className="css-25"
+                                className="emotion-11"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -927,24 +950,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-26"
+                                  className="emotion-10"
                                 >
                                   center
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="end"
+                        grow={0}
                         key=".$3"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="end"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -952,24 +977,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="end"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="end"
-                              className="css-27"
+                              className="emotion-16"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="end"
-                                className="css-27"
+                                className="emotion-16"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -977,43 +1003,46 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-28"
+                                  className="emotion-15"
                                 >
                                   end
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
+                      </Styled(FlexItem)>
                     </div>
-                  </glamorous(div)>
-                </Box>
+                  </Styled(div)>
+                </FlexItem>
               </Flex>
             </Component>
-          </ThemedComponent>
+          </WithTheme(Component)>
         </Flex>
-      </glamorous(glamorous(Flex))>
-      <glamorous(glamorous(Flex))
+      </Styled(Flex)>
+      <Styled(Flex)
+        alignItems="stretch"
         direction="column"
+        gutterWidth="md"
+        justifyContent="start"
       >
         <Flex
           alignItems="stretch"
-          className="css-0"
+          className="emotion-50"
           direction="column"
           gutterWidth="md"
           justifyContent="start"
         >
-          <ThemedComponent
+          <WithTheme(Component)
             alignItems="stretch"
-            className="css-0"
+            className="emotion-50"
             direction="column"
             gutterWidth="md"
             justifyContent="start"
           >
             <Component
               alignItems="stretch"
-              className="css-0"
+              className="emotion-50"
               direction="column"
               gutterWidth="md"
               justifyContent="start"
@@ -1210,39 +1239,42 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
             >
               <Flex
                 alignItems="stretch"
-                className="css-0"
+                className="emotion-50"
                 direction="column"
+                element="div"
                 gutterWidth="md"
                 justifyContent="start"
               >
-                <Box
+                <FlexItem
                   alignItems="stretch"
-                  className="css-29"
+                  className="emotion-48"
                   direction="column"
                   element="div"
                   gutterWidth="md"
                   justifyContent="start"
                 >
-                  <glamorous(div)
+                  <Styled(div)
                     alignItems="stretch"
-                    className="css-29"
+                    className="emotion-48"
                     direction="column"
                     element="div"
                     gutterWidth="md"
                     justifyContent="start"
                   >
                     <div
-                      className="css-33"
+                      className="emotion-47"
                     >
-                      <glamorous(FlexItem)
+                      <Styled(FlexItem)
                         alignSelf="stretch"
+                        grow={0}
                         key=".$0"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="stretch"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -1250,24 +1282,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="stretch"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="stretch"
-                              className="css-21"
+                              className="emotion-1"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="stretch"
-                                className="css-21"
+                                className="emotion-1"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -1275,24 +1308,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-22"
+                                  className="emotion-0"
                                 >
                                   stretch
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="start"
+                        grow={0}
                         key=".$1"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="start"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -1300,24 +1335,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="start"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="start"
-                              className="css-23"
+                              className="emotion-6"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="start"
-                                className="css-23"
+                                className="emotion-6"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -1325,24 +1361,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-24"
+                                  className="emotion-5"
                                 >
                                   start
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="center"
+                        grow={0}
                         key=".$2"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="center"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -1350,24 +1388,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="center"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="center"
-                              className="css-25"
+                              className="emotion-11"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="center"
-                                className="css-25"
+                                className="emotion-11"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -1375,24 +1414,26 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-26"
+                                  className="emotion-10"
                                 >
                                   center
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
-                      <glamorous(FlexItem)
+                      </Styled(FlexItem)>
+                      <Styled(FlexItem)
                         alignSelf="end"
+                        grow={0}
                         key=".$3"
                         marginLeft="0.5em"
                         marginRight="0.5em"
+                        shrink={1}
                       >
                         <FlexItem
                           alignSelf="end"
-                          className="css-4"
+                          className="emotion-3"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
@@ -1400,24 +1441,25 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                         >
                           <FlexItem
                             alignSelf="end"
-                            className="css-4"
+                            className="emotion-3"
+                            element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <Box
+                            <FlexItem
                               alignSelf="end"
-                              className="css-27"
+                              className="emotion-16"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
                               marginRight="0.5em"
                               shrink={1}
                             >
-                              <glamorous(div)
+                              <Styled(div)
                                 alignSelf="end"
-                                className="css-27"
+                                className="emotion-16"
                                 element="div"
                                 grow={0}
                                 marginLeft="0.5em"
@@ -1425,39 +1467,35 @@ exports[`FlexItem demo examples Snapshots: align-self 1`] = `
                                 shrink={1}
                               >
                                 <div
-                                  className="css-28"
+                                  className="emotion-15"
                                 >
                                   end
                                 </div>
-                              </glamorous(div)>
-                            </Box>
+                              </Styled(div)>
+                            </FlexItem>
                           </FlexItem>
                         </FlexItem>
-                      </glamorous(FlexItem)>
+                      </Styled(FlexItem)>
                     </div>
-                  </glamorous(div)>
-                </Box>
+                  </Styled(div)>
+                </FlexItem>
               </Flex>
             </Component>
-          </ThemedComponent>
+          </WithTheme(Component)>
         </Flex>
-      </glamorous(glamorous(Flex))>
+      </Styled(Flex)>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </Component>
 `;
 
 exports[`FlexItem demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-18 {
   position: relative;
   z-index: 1;
 }
 
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
+.emotion-18::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -1468,33 +1506,29 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-16 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-4::before,
-[data-css-4]::before,
-.css-4[data-simulate-before],
-[data-css-4][data-simulate-before] {
+.emotion-16::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -1505,50 +1539,44 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-8::before,
-[data-css-8]::before,
-.css-8[data-simulate-before],
-[data-css-8][data-simulate-before] {
+.emotion-15::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -1559,110 +1587,123 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-}
-
-.css-13,
-[data-css-13] {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-1 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(Flex)>
+<Styled(Flex)
+  alignItems="stretch"
+  direction="row"
+  gutterWidth="md"
+  justifyContent="start"
+>
   <Flex
     alignItems="stretch"
-    className="css-0"
+    className="emotion-18"
     direction="row"
     gutterWidth="md"
     justifyContent="start"
   >
-    <ThemedComponent
+    <WithTheme(Component)
       alignItems="stretch"
-      className="css-0"
+      className="emotion-18"
       direction="row"
       gutterWidth="md"
       justifyContent="start"
     >
       <Component
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
@@ -1859,59 +1900,63 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
       >
         <Flex
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
+          element="div"
           gutterWidth="md"
           justifyContent="start"
         >
-          <Box
+          <FlexItem
             alignItems="stretch"
-            className="css-4"
+            className="emotion-16"
             direction="row"
             element="div"
             gutterWidth="md"
             justifyContent="start"
           >
-            <glamorous(div)
+            <Styled(div)
               alignItems="stretch"
-              className="css-4"
+              className="emotion-16"
               direction="row"
               element="div"
               gutterWidth="md"
               justifyContent="start"
             >
               <div
-                className="css-8"
+                className="emotion-15"
               >
-                <glamorous(FlexItem)
+                <Styled(FlexItem)
+                  grow={0}
                   key=".0"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -1919,44 +1964,47 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             A
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".1"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -1964,44 +2012,47 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             B
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".2"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -2009,36 +2060,32 @@ exports[`FlexItem demo examples Snapshots: basic 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             C
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
+                </Styled(FlexItem)>
               </div>
-            </glamorous(div)>
-          </Box>
+            </Styled(div)>
+          </FlexItem>
         </Flex>
       </Component>
-    </ThemedComponent>
+    </WithTheme(Component)>
   </Flex>
-</glamorous(Flex)>
+</Styled(Flex)>
 `;
 
 exports[`FlexItem demo examples Snapshots: box-props 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-18 {
   position: relative;
   z-index: 1;
 }
 
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
+.emotion-18::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2049,33 +2096,29 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   z-index: -1;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-16 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-4::before,
-[data-css-4]::before,
-.css-4[data-simulate-before],
-[data-css-4][data-simulate-before] {
+.emotion-16::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2086,50 +2129,44 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   z-index: -1;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-8::before,
-[data-css-8]::before,
-.css-8[data-simulate-before],
-[data-css-8][data-simulate-before] {
+.emotion-15::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2140,115 +2177,120 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   z-index: -1;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-}
-
-.css-13,
-[data-css-13] {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-1 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   position: relative;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-15::before,
-[data-css-15]::before,
-.css-15[data-simulate-before],
-[data-css-15][data-simulate-before] {
+.emotion-8::before {
   border-color: rgba(207,224,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -2260,35 +2302,36 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   top: 0;
 }
 
-.css-19,
-[data-css-19] {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  position: relative;
+.emotion-6 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  position: relative;
 }
 
-.css-19::before,
-[data-css-19]::before,
-.css-19[data-simulate-before],
-[data-css-19][data-simulate-before] {
+.emotion-6::before {
   border-color: rgba(207,224,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -2300,56 +2343,57 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   top: 0;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-5 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: auto;
   padding-bottom: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  position: relative;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  position: relative;
 }
 
-.css-23 *,
-[data-css-23] *,
-.css-23 *::before,
-[data-css-23] *::before,
-.css-23 *::after,
-[data-css-23] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-23::before,
-[data-css-23]::before,
-.css-23[data-simulate-before],
-[data-css-23][data-simulate-before] {
+.emotion-5::before {
   border-color: rgba(207,224,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -2361,24 +2405,29 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
   top: 0;
 }
 
-<glamorous(Flex)>
+<Styled(Flex)
+  alignItems="stretch"
+  direction="row"
+  gutterWidth="md"
+  justifyContent="start"
+>
   <Flex
     alignItems="stretch"
-    className="css-0"
+    className="emotion-18"
     direction="row"
     gutterWidth="md"
     justifyContent="start"
   >
-    <ThemedComponent
+    <WithTheme(Component)
       alignItems="stretch"
-      className="css-0"
+      className="emotion-18"
       direction="row"
       gutterWidth="md"
       justifyContent="start"
     >
       <Component
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
@@ -2575,59 +2624,63 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
       >
         <Flex
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
+          element="div"
           gutterWidth="md"
           justifyContent="start"
         >
-          <Box
+          <FlexItem
             alignItems="stretch"
-            className="css-4"
+            className="emotion-16"
             direction="row"
             element="div"
             gutterWidth="md"
             justifyContent="start"
           >
-            <glamorous(div)
+            <Styled(div)
               alignItems="stretch"
-              className="css-4"
+              className="emotion-16"
               direction="row"
               element="div"
               gutterWidth="md"
               justifyContent="start"
             >
               <div
-                className="css-8"
+                className="emotion-15"
               >
-                <glamorous(FlexItem)
+                <Styled(FlexItem)
+                  grow={0}
                   key=".0"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -2635,23 +2688,25 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             A
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".1"
                   marginLeft="0.5em"
                   marginRight="auto"
                   padding="lg"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-15"
+                    className="emotion-8"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="auto"
@@ -2659,15 +2714,16 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-15"
+                      className="emotion-8"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="auto"
                       padding="lg"
                       shrink={1}
                     >
-                      <Box
-                        className="css-19"
+                      <FlexItem
+                        className="emotion-6"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
@@ -2675,8 +2731,8 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
                         padding="lg"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-19"
+                        <Styled(div)
+                          className="emotion-6"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -2685,44 +2741,47 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-23"
+                            className="emotion-5"
                           >
                             B
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".2"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
                     shrink={1}
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -2730,36 +2789,32 @@ exports[`FlexItem demo examples Snapshots: box-props 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             C
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
+                </Styled(FlexItem)>
               </div>
-            </glamorous(div)>
-          </Box>
+            </Styled(div)>
+          </FlexItem>
         </Flex>
       </Component>
-    </ThemedComponent>
+    </WithTheme(Component)>
   </Flex>
-</glamorous(Flex)>
+</Styled(Flex)>
 `;
 
 exports[`FlexItem demo examples Snapshots: grow 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-18 {
   position: relative;
   z-index: 1;
 }
 
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
+.emotion-18::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2770,33 +2825,29 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
   z-index: -1;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-16 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-4::before,
-[data-css-4]::before,
-.css-4[data-simulate-before],
-[data-css-4][data-simulate-before] {
+.emotion-16::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2807,50 +2858,44 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
   z-index: -1;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-8::before,
-[data-css-8]::before,
-.css-8[data-simulate-before],
-[data-css-8][data-simulate-before] {
+.emotion-15::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -2861,329 +2906,362 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
   z-index: -1;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-}
-
-.css-13,
-[data-css-13] {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-28 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-27 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.css-15,
-[data-css-16]::after,
-.css-16[data-simulate-after],
-[data-css-16][data-simulate-after] {
+.emotion-66::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-16 > *:not(:last-child),
-[data-css-16] > *:not(:last-child) {
+.emotion-66 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-19,
-[data-css-19] {
-  flex-basis: auto;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
+.emotion-1 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-20,
-[data-css-20] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  flex-basis: auto;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-20 *,
-[data-css-20] *,
-.css-20 *::before,
-[data-css-20] *::before,
-.css-20 *::after,
-[data-css-20] *::after {
-  box-sizing: inherit;
-}
-
-.css-21,
-[data-css-21] {
-  flex-basis: auto;
-  flex-grow: 3;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 3;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-22,
-[data-css-22] {
-  box-sizing: border-box;
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-45 {
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
   color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-44 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+  -ms-flex-positive: 3;
   flex-grow: 3;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 3;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-22 *,
-[data-css-22] *,
-.css-22 *::before,
-[data-css-22] *::before,
-.css-22 *::after,
-[data-css-22] *::after {
+.emotion-44 *,
+.emotion-44 *::before,
+.emotion-44 *::after {
   box-sizing: inherit;
 }
 
-.css-23,
-[data-css-23] {
+.emotion-50 {
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
   flex-grow: 2;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 2;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-49 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
   flex-grow: 2;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 2;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-24 *,
-[data-css-24] *,
-.css-24 *::before,
-[data-css-24] *::before,
-.css-24 *::after,
-[data-css-24] *::after {
+.emotion-49 *,
+.emotion-49 *::before,
+.emotion-49 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-16"
+    className="emotion-66"
   >
-    <glamorous(Flex)>
+    <Styled(Flex)
+      alignItems="stretch"
+      direction="row"
+      gutterWidth="md"
+      justifyContent="start"
+    >
       <Flex
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
       >
-        <ThemedComponent
+        <WithTheme(Component)
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
           gutterWidth="md"
           justifyContent="start"
         >
           <Component
             alignItems="stretch"
-            className="css-0"
+            className="emotion-18"
             direction="row"
             gutterWidth="md"
             justifyContent="start"
@@ -3380,60 +3458,63 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
           >
             <Flex
               alignItems="stretch"
-              className="css-0"
+              className="emotion-18"
               direction="row"
+              element="div"
               gutterWidth="md"
               justifyContent="start"
             >
-              <Box
+              <FlexItem
                 alignItems="stretch"
-                className="css-4"
+                className="emotion-16"
                 direction="row"
                 element="div"
                 gutterWidth="md"
                 justifyContent="start"
               >
-                <glamorous(div)
+                <Styled(div)
                   alignItems="stretch"
-                  className="css-4"
+                  className="emotion-16"
                   direction="row"
                   element="div"
                   gutterWidth="md"
                   justifyContent="start"
                 >
                   <div
-                    className="css-8"
+                    className="emotion-15"
                   >
-                    <glamorous(FlexItem)
+                    <Styled(FlexItem)
                       grow={1}
                       key=".0"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={1}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={1}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-19"
+                          <FlexItem
+                            className="emotion-1"
                             element="div"
                             grow={1}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-19"
+                            <Styled(div)
+                              className="emotion-1"
                               element="div"
                               grow={1}
                               marginLeft="0.5em"
@@ -3441,45 +3522,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-20"
+                                className="emotion-0"
                               >
                                 1
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={1}
                       key=".1"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={1}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={1}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-19"
+                          <FlexItem
+                            className="emotion-1"
                             element="div"
                             grow={1}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-19"
+                            <Styled(div)
+                              className="emotion-1"
                               element="div"
                               grow={1}
                               marginLeft="0.5em"
@@ -3487,45 +3570,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-20"
+                                className="emotion-0"
                               >
                                 1
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={1}
                       key=".2"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={1}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={1}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-19"
+                          <FlexItem
+                            className="emotion-1"
                             element="div"
                             grow={1}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-19"
+                            <Styled(div)
+                              className="emotion-1"
                               element="div"
                               grow={1}
                               marginLeft="0.5em"
@@ -3533,41 +3618,46 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-20"
+                                className="emotion-0"
                               >
                                 1
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
+                    </Styled(FlexItem)>
                   </div>
-                </glamorous(div)>
-              </Box>
+                </Styled(div)>
+              </FlexItem>
             </Flex>
           </Component>
-        </ThemedComponent>
+        </WithTheme(Component)>
       </Flex>
-    </glamorous(Flex)>
-    <glamorous(Flex)>
+    </Styled(Flex)>
+    <Styled(Flex)
+      alignItems="stretch"
+      direction="row"
+      gutterWidth="md"
+      justifyContent="start"
+    >
       <Flex
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
       >
-        <ThemedComponent
+        <WithTheme(Component)
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
           gutterWidth="md"
           justifyContent="start"
         >
           <Component
             alignItems="stretch"
-            className="css-0"
+            className="emotion-18"
             direction="row"
             gutterWidth="md"
             justifyContent="start"
@@ -3764,60 +3854,63 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
           >
             <Flex
               alignItems="stretch"
-              className="css-0"
+              className="emotion-18"
               direction="row"
+              element="div"
               gutterWidth="md"
               justifyContent="start"
             >
-              <Box
+              <FlexItem
                 alignItems="stretch"
-                className="css-4"
+                className="emotion-16"
                 direction="row"
                 element="div"
                 gutterWidth="md"
                 justifyContent="start"
               >
-                <glamorous(div)
+                <Styled(div)
                   alignItems="stretch"
-                  className="css-4"
+                  className="emotion-16"
                   direction="row"
                   element="div"
                   gutterWidth="md"
                   justifyContent="start"
                 >
                   <div
-                    className="css-8"
+                    className="emotion-15"
                   >
-                    <glamorous(FlexItem)
+                    <Styled(FlexItem)
                       grow={1}
                       key=".0"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={1}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={1}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-19"
+                          <FlexItem
+                            className="emotion-1"
                             element="div"
                             grow={1}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-19"
+                            <Styled(div)
+                              className="emotion-1"
                               element="div"
                               grow={1}
                               marginLeft="0.5em"
@@ -3825,45 +3918,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-20"
+                                className="emotion-0"
                               >
                                 1
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={0}
                       key=".1"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-13"
+                          <FlexItem
+                            className="emotion-28"
                             element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-13"
+                            <Styled(div)
+                              className="emotion-28"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
@@ -3871,45 +3966,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-14"
+                                className="emotion-27"
                               >
                                 0
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={0}
                       key=".2"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={0}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-13"
+                          <FlexItem
+                            className="emotion-28"
                             element="div"
                             grow={0}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-13"
+                            <Styled(div)
+                              className="emotion-28"
                               element="div"
                               grow={0}
                               marginLeft="0.5em"
@@ -3917,41 +4014,46 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-14"
+                                className="emotion-27"
                               >
                                 0
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
+                    </Styled(FlexItem)>
                   </div>
-                </glamorous(div)>
-              </Box>
+                </Styled(div)>
+              </FlexItem>
             </Flex>
           </Component>
-        </ThemedComponent>
+        </WithTheme(Component)>
       </Flex>
-    </glamorous(Flex)>
-    <glamorous(Flex)>
+    </Styled(Flex)>
+    <Styled(Flex)
+      alignItems="stretch"
+      direction="row"
+      gutterWidth="md"
+      justifyContent="start"
+    >
       <Flex
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
       >
-        <ThemedComponent
+        <WithTheme(Component)
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
           gutterWidth="md"
           justifyContent="start"
         >
           <Component
             alignItems="stretch"
-            className="css-0"
+            className="emotion-18"
             direction="row"
             gutterWidth="md"
             justifyContent="start"
@@ -4148,60 +4250,63 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
           >
             <Flex
               alignItems="stretch"
-              className="css-0"
+              className="emotion-18"
               direction="row"
+              element="div"
               gutterWidth="md"
               justifyContent="start"
             >
-              <Box
+              <FlexItem
                 alignItems="stretch"
-                className="css-4"
+                className="emotion-16"
                 direction="row"
                 element="div"
                 gutterWidth="md"
                 justifyContent="start"
               >
-                <glamorous(div)
+                <Styled(div)
                   alignItems="stretch"
-                  className="css-4"
+                  className="emotion-16"
                   direction="row"
                   element="div"
                   gutterWidth="md"
                   justifyContent="start"
                 >
                   <div
-                    className="css-8"
+                    className="emotion-15"
                   >
-                    <glamorous(FlexItem)
+                    <Styled(FlexItem)
                       grow={3}
                       key=".0"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={3}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={3}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-21"
+                          <FlexItem
+                            className="emotion-45"
                             element="div"
                             grow={3}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-21"
+                            <Styled(div)
+                              className="emotion-45"
                               element="div"
                               grow={3}
                               marginLeft="0.5em"
@@ -4209,45 +4314,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-22"
+                                className="emotion-44"
                               >
                                 3
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={2}
                       key=".1"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={2}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={2}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-23"
+                          <FlexItem
+                            className="emotion-50"
                             element="div"
                             grow={2}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-23"
+                            <Styled(div)
+                              className="emotion-50"
                               element="div"
                               grow={2}
                               marginLeft="0.5em"
@@ -4255,45 +4362,47 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-24"
+                                className="emotion-49"
                               >
                                 2
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
-                    <glamorous(FlexItem)
+                    </Styled(FlexItem)>
+                    <Styled(FlexItem)
                       grow={1}
                       key=".2"
                       marginLeft="0.5em"
                       marginRight="0.5em"
+                      shrink={1}
                     >
                       <FlexItem
-                        className="css-12"
+                        className="emotion-3"
                         grow={1}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
                         <FlexItem
-                          className="css-12"
+                          className="emotion-3"
+                          element="div"
                           grow={1}
                           marginLeft="0.5em"
                           marginRight="0.5em"
                           shrink={1}
                         >
-                          <Box
-                            className="css-19"
+                          <FlexItem
+                            className="emotion-1"
                             element="div"
                             grow={1}
                             marginLeft="0.5em"
                             marginRight="0.5em"
                             shrink={1}
                           >
-                            <glamorous(div)
-                              className="css-19"
+                            <Styled(div)
+                              className="emotion-1"
                               element="div"
                               grow={1}
                               marginLeft="0.5em"
@@ -4301,38 +4410,34 @@ exports[`FlexItem demo examples Snapshots: grow 1`] = `
                               shrink={1}
                             >
                               <div
-                                className="css-20"
+                                className="emotion-0"
                               >
                                 1
                               </div>
-                            </glamorous(div)>
-                          </Box>
+                            </Styled(div)>
+                          </FlexItem>
                         </FlexItem>
                       </FlexItem>
-                    </glamorous(FlexItem)>
+                    </Styled(FlexItem)>
                   </div>
-                </glamorous(div)>
-              </Box>
+                </Styled(div)>
+              </FlexItem>
             </Flex>
           </Component>
-        </ThemedComponent>
+        </WithTheme(Component)>
       </Flex>
-    </glamorous(Flex)>
+    </Styled(Flex)>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`FlexItem demo examples Snapshots: responsive 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-18 {
   position: relative;
   z-index: 1;
 }
 
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
+.emotion-18::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -4343,33 +4448,52 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
   z-index: -1;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-16 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-4::before,
-[data-css-4]::before,
-.css-4[data-simulate-before],
-[data-css-4][data-simulate-before] {
+@media (min-width:800px) {
+
+}
+
+.emotion-16::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -4380,50 +4504,52 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
   z-index: -1;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-8::before,
-[data-css-8]::before,
-.css-8[data-simulate-before],
-[data-css-8][data-simulate-before] {
+@media (min-width:800px) {
+
+}
+
+@media (min-width:800px) {
+
+}
+
+.emotion-15::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -4434,147 +4560,159 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
   z-index: -1;
 }
 
-.css-12,
-[data-css-12] {
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-13,
-[data-css-13] {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
+.emotion-1 {
   -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14,
-[data-css-14] {
+@media (min-width:800px) {
+
+}
+
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-15,
-[data-css-15] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  align-items: center;
-  background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: auto;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
+@media (min-width:800px) {
+
 }
 
-.css-15 *,
-[data-css-15] *,
-.css-15 *::before,
-[data-css-15] *::before,
-.css-15 *::after,
-[data-css-15] *::after {
+@media (min-width:800px) {
+
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-@media (min-width: 800px) {
-  .css-15,
-  [data-css-15] {
+@media (min-width:800px) {
+  .emotion-10 {
     margin-left: auto;
   }
 }
 
-<glamorous(Flex)
+@media (min-width:800px) {
+
+}
+
+<Styled(Flex)
+  alignItems="stretch"
   breakpoints={
     Array [
       800,
     ]
   }
+  direction="row"
+  gutterWidth="md"
+  justifyContent="start"
 >
   <Flex
     alignItems="stretch"
@@ -4583,19 +4721,19 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
         800,
       ]
     }
-    className="css-0"
+    className="emotion-18"
     direction="row"
     gutterWidth="md"
     justifyContent="start"
   >
-    <ThemedComponent
+    <WithTheme(Component)
       alignItems="stretch"
       breakpoints={
         Array [
           800,
         ]
       }
-      className="css-0"
+      className="emotion-18"
       direction="row"
       gutterWidth="md"
       justifyContent="start"
@@ -4607,7 +4745,7 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
             800,
           ]
         }
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
@@ -4809,49 +4947,52 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
               800,
             ]
           }
-          className="css-0"
+          className="emotion-18"
           direction="row"
+          element="div"
           gutterWidth="md"
           justifyContent="start"
         >
-          <Box
+          <FlexItem
             alignItems="stretch"
             breakpoints={
               Array [
                 800,
               ]
             }
-            className="css-4"
+            className="emotion-16"
             direction="row"
             element="div"
             gutterWidth="md"
             justifyContent="start"
           >
-            <glamorous(div)
+            <Styled(div)
               alignItems="stretch"
               breakpoints={
                 Array [
                   800,
                 ]
               }
-              className="css-4"
+              className="emotion-16"
               direction="row"
               element="div"
               gutterWidth="md"
               justifyContent="start"
             >
               <div
-                className="css-8"
+                className="emotion-15"
               >
-                <glamorous(FlexItem)
+                <Styled(FlexItem)
                   breakpoints={
                     Array [
                       800,
                     ]
                   }
+                  grow={0}
                   key=".0"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
                     breakpoints={
@@ -4859,7 +5000,7 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                         800,
                       ]
                     }
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
@@ -4871,32 +5012,33 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           800,
                         ]
                       }
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
+                      <FlexItem
                         breakpoints={
                           Array [
                             800,
                           ]
                         }
-                        className="css-13"
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
+                        <Styled(div)
                           breakpoints={
                             Array [
                               800,
                             ]
                           }
-                          className="css-13"
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -4904,24 +5046,26 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             A
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
                   breakpoints={
                     Array [
                       800,
                     ]
                   }
+                  grow={0}
                   key=".1"
                   marginLeft="0.5em"
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
                     breakpoints={
@@ -4929,7 +5073,7 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                         800,
                       ]
                     }
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
@@ -4941,32 +5085,33 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           800,
                         ]
                       }
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
+                      <FlexItem
                         breakpoints={
                           Array [
                             800,
                           ]
                         }
-                        className="css-13"
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
+                        <Styled(div)
                           breakpoints={
                             Array [
                               800,
                             ]
                           }
-                          className="css-13"
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -4974,21 +5119,22 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             B
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
                   breakpoints={
                     Array [
                       800,
                     ]
                   }
+                  grow={0}
                   key=".2"
                   marginLeft={
                     Array [
@@ -4997,6 +5143,7 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                     ]
                   }
                   marginRight="0.5em"
+                  shrink={1}
                 >
                   <FlexItem
                     breakpoints={
@@ -5004,7 +5151,7 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                         800,
                       ]
                     }
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft={
                       Array [
@@ -5021,7 +5168,8 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           800,
                         ]
                       }
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft={
                         Array [
@@ -5032,13 +5180,13 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                       marginRight="0.5em"
                       shrink={1}
                     >
-                      <Box
+                      <FlexItem
                         breakpoints={
                           Array [
                             800,
                           ]
                         }
-                        className="css-13"
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft={
@@ -5050,13 +5198,13 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
+                        <Styled(div)
                           breakpoints={
                             Array [
                               800,
                             ]
                           }
-                          className="css-13"
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft={
@@ -5069,36 +5217,32 @@ exports[`FlexItem demo examples Snapshots: responsive 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-15"
+                            className="emotion-10"
                           >
                             C
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
+                </Styled(FlexItem)>
               </div>
-            </glamorous(div)>
-          </Box>
+            </Styled(div)>
+          </FlexItem>
         </Flex>
       </Component>
-    </ThemedComponent>
+    </WithTheme(Component)>
   </Flex>
-</glamorous(Flex)>
+</Styled(Flex)>
 `;
 
 exports[`FlexItem demo examples Snapshots: shrink 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-18 {
   position: relative;
   z-index: 1;
 }
 
-.css-0::before,
-[data-css-0]::before,
-.css-0[data-simulate-before],
-[data-css-0][data-simulate-before] {
+.emotion-18::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -5109,33 +5253,29 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
   z-index: -1;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-16 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-4::before,
-[data-css-4]::before,
-.css-4[data-simulate-before],
-[data-css-4][data-simulate-before] {
+.emotion-16::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -5146,50 +5286,44 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
   z-index: -1;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-left: -0.5em;
   margin-right: -0.5em;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.css-8::before,
-[data-css-8]::before,
-.css-8[data-simulate-before],
-[data-css-8][data-simulate-before] {
+.emotion-15::before {
   border: 1px dotted #accbfc;
   bottom: -4px;
   content: "";
@@ -5200,244 +5334,273 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
   z-index: -1;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  outline: 1px solid #cfe0fc;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-}
-
-.css-13,
-[data-css-13] {
-  flex-basis: 100%;
-  flex-grow: 0;
-  flex-shrink: 3;
-  align-items: center;
-  background-color: #f0f5fc;
-  color: #1d5bbf;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-1 {
   -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 3;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-14,
-[data-css-14] {
-  box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 1px solid #cfe0fc;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  flex-basis: 100%;
-  flex-grow: 0;
+  -ms-flex-negative: 3;
   flex-shrink: 3;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  outline: 1px solid #cfe0fc;
   padding: 0.5em;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 3;
-  -webkit-box-align: center;
+  -ms-flex-negative: 3;
+  flex-shrink: 3;
   -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-}
-
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
-  box-sizing: inherit;
-}
-
-.css-15,
-[data-css-15] {
-  flex-basis: 100%;
-  flex-grow: 0;
-  flex-shrink: 2;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 2;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-16,
-[data-css-16] {
-  box-sizing: border-box;
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-6 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 2;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f5fc;
   color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 2;
+  -ms-flex-negative: 2;
   flex-shrink: 2;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 2;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-16 *,
-[data-css-16] *,
-.css-16 *::before,
-[data-css-16] *::before,
-.css-16 *::after,
-[data-css-16] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-11 {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-18,
-[data-css-18] {
+.emotion-10 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-flex-basis: 100%;
-  -webkit-flex-grow: 0;
-  -webkit-flex-shrink: 1;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-18 *,
-[data-css-18] *,
-.css-18 *::before,
-[data-css-18] *::before,
-.css-18 *::after,
-[data-css-18] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(Flex)>
+<Styled(Flex)
+  alignItems="stretch"
+  direction="row"
+  gutterWidth="md"
+  justifyContent="start"
+>
   <Flex
     alignItems="stretch"
-    className="css-0"
+    className="emotion-18"
     direction="row"
     gutterWidth="md"
     justifyContent="start"
   >
-    <ThemedComponent
+    <WithTheme(Component)
       alignItems="stretch"
-      className="css-0"
+      className="emotion-18"
       direction="row"
       gutterWidth="md"
       justifyContent="start"
     >
       <Component
         alignItems="stretch"
-        className="css-0"
+        className="emotion-18"
         direction="row"
         gutterWidth="md"
         justifyContent="start"
@@ -5634,31 +5797,33 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
       >
         <Flex
           alignItems="stretch"
-          className="css-0"
+          className="emotion-18"
           direction="row"
+          element="div"
           gutterWidth="md"
           justifyContent="start"
         >
-          <Box
+          <FlexItem
             alignItems="stretch"
-            className="css-4"
+            className="emotion-16"
             direction="row"
             element="div"
             gutterWidth="md"
             justifyContent="start"
           >
-            <glamorous(div)
+            <Styled(div)
               alignItems="stretch"
-              className="css-4"
+              className="emotion-16"
               direction="row"
               element="div"
               gutterWidth="md"
               justifyContent="start"
             >
               <div
-                className="css-8"
+                className="emotion-15"
               >
-                <glamorous(FlexItem)
+                <Styled(FlexItem)
+                  grow={0}
                   key=".0"
                   marginLeft="0.5em"
                   marginRight="0.5em"
@@ -5666,7 +5831,7 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                   width="100%"
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
@@ -5674,23 +5839,24 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                     width="100%"
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={3}
                       width="100%"
                     >
-                      <Box
-                        className="css-13"
+                      <FlexItem
+                        className="emotion-1"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={3}
                       >
-                        <glamorous(div)
-                          className="css-13"
+                        <Styled(div)
+                          className="emotion-1"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -5698,16 +5864,17 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                           shrink={3}
                         >
                           <div
-                            className="css-14"
+                            className="emotion-0"
                           >
                             3
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".1"
                   marginLeft="0.5em"
                   marginRight="0.5em"
@@ -5715,7 +5882,7 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                   width="100%"
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
@@ -5723,23 +5890,24 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                     width="100%"
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={2}
                       width="100%"
                     >
-                      <Box
-                        className="css-15"
+                      <FlexItem
+                        className="emotion-6"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={2}
                       >
-                        <glamorous(div)
-                          className="css-15"
+                        <Styled(div)
+                          className="emotion-6"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -5747,16 +5915,17 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                           shrink={2}
                         >
                           <div
-                            className="css-16"
+                            className="emotion-5"
                           >
                             2
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
-                <glamorous(FlexItem)
+                </Styled(FlexItem)>
+                <Styled(FlexItem)
+                  grow={0}
                   key=".2"
                   marginLeft="0.5em"
                   marginRight="0.5em"
@@ -5764,7 +5933,7 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                   width="100%"
                 >
                   <FlexItem
-                    className="css-12"
+                    className="emotion-3"
                     grow={0}
                     marginLeft="0.5em"
                     marginRight="0.5em"
@@ -5772,23 +5941,24 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                     width="100%"
                   >
                     <FlexItem
-                      className="css-12"
+                      className="emotion-3"
+                      element="div"
                       grow={0}
                       marginLeft="0.5em"
                       marginRight="0.5em"
                       shrink={1}
                       width="100%"
                     >
-                      <Box
-                        className="css-17"
+                      <FlexItem
+                        className="emotion-11"
                         element="div"
                         grow={0}
                         marginLeft="0.5em"
                         marginRight="0.5em"
                         shrink={1}
                       >
-                        <glamorous(div)
-                          className="css-17"
+                        <Styled(div)
+                          className="emotion-11"
                           element="div"
                           grow={0}
                           marginLeft="0.5em"
@@ -5796,21 +5966,21 @@ exports[`FlexItem demo examples Snapshots: shrink 1`] = `
                           shrink={1}
                         >
                           <div
-                            className="css-18"
+                            className="emotion-10"
                           >
                             1
                           </div>
-                        </glamorous(div)>
-                      </Box>
+                        </Styled(div)>
+                      </FlexItem>
                     </FlexItem>
                   </FlexItem>
-                </glamorous(FlexItem)>
+                </Styled(FlexItem)>
               </div>
-            </glamorous(div)>
-          </Box>
+            </Styled(div)>
+          </FlexItem>
         </Flex>
       </Component>
-    </ThemedComponent>
+    </WithTheme(Component)>
   </Flex>
-</glamorous(Flex)>
+</Styled(Flex)>
 `;

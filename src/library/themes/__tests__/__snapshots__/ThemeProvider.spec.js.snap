@@ -1,18 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider demo examples Snapshots: theme-provider 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-1 {
   font-family: "Open Sans";
 }
 
-.css-0 > *,
-[data-css-0] > * {
+.emotion-1 > * {
   margin-right: 0.5rem;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   background-color: lavender;
   color: tomato;
   display: inline-block;
@@ -20,9 +17,9 @@ exports[`ThemeProvider demo examples Snapshots: theme-provider 1`] = `
   padding: 0.5em;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-0"
+    className="emotion-1"
   >
     <ThemeProvider
       theme={
@@ -39,23 +36,22 @@ exports[`ThemeProvider demo examples Snapshots: theme-provider 1`] = `
         }
       >
         <Sample>
-          <glamorous(span)>
+          <Styled(span)>
             <span
-              className="css-1"
+              className="emotion-0"
             >
               Sample
             </span>
-          </glamorous(span)>
+          </Styled(span)>
         </Sample>
       </ThemeProvider>
     </ThemeProvider>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`ThemeProvider merges nested theme variables 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   background-color: lavender;
   color: tomato;
   display: inline-block;
@@ -91,13 +87,13 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
         }
       >
         <Sample>
-          <glamorous(span)>
+          <Styled(span)>
             <span
-              className="css-0"
+              className="emotion-0"
             >
               Sample
             </span>
-          </glamorous(span)>
+          </Styled(span)>
         </Sample>
       </ThemeProvider>
     </ThemeProvider>
@@ -106,8 +102,7 @@ exports[`ThemeProvider merges nested theme variables 1`] = `
 `;
 
 exports[`ThemeProvider merges themes instead of overriding 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   background-color: lavender;
   color: black;
   display: inline-block;
@@ -143,13 +138,13 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
         }
       >
         <Sample>
-          <glamorous(span)>
+          <Styled(span)>
             <span
-              className="css-0"
+              className="emotion-0"
             >
               Sample
             </span>
-          </glamorous(span)>
+          </Styled(span)>
         </Sample>
       </ThemeProvider>
     </ThemeProvider>
@@ -158,8 +153,7 @@ exports[`ThemeProvider merges themes instead of overriding 1`] = `
 `;
 
 exports[`ThemeProvider renders correctly with default theme 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   background-color: lavender;
   color: #333840;
   display: inline-block;
@@ -552,13 +546,13 @@ exports[`ThemeProvider renders correctly with default theme 1`] = `
     }
   >
     <Sample>
-      <glamorous(span)>
+      <Styled(span)>
         <span
-          className="css-0"
+          className="emotion-0"
         >
           Sample
         </span>
-      </glamorous(span)>
+      </Styled(span)>
     </Sample>
   </ThemeProvider>
 </ThemeProvider>

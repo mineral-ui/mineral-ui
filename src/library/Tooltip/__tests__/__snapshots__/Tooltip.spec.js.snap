@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -13,25 +12,20 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -48,94 +42,77 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0.4375em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-2::-moz-focus-inner,
-[data-css-2]::-moz-focus-inner,
-.css-2[data-simulate-mozfocusinner],
-[data-css-2][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-2 [role="img"]:first-child,
-[data-css-2] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-2 [role="img"]:last-child,
-[data-css-2] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-2 [role="img"]:only-child,
-[data-css-2] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
@@ -146,7 +123,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
   content="Edit your account settings"
   hasArrow={true}
 >
-  <ThemedComponent
+  <WithTheme(Themed(Popover))
     content={[Function]}
     focusTriggerOnClose={false}
     hasArrow={true}
@@ -187,13 +164,13 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
               placement="bottom"
               tag="span"
             >
-              <Manager
-                className="css-0"
+              <Popover
+                className="emotion-5"
                 id="tooltip-1"
                 tag="span"
               >
                 <span
-                  className="css-0"
+                  className="emotion-5"
                   id="tooltip-1"
                 >
                   <PopoverTrigger
@@ -219,12 +196,12 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                     <PopoverTrigger
                       component="span"
                     >
-                      <Target
-                        className="css-1"
+                      <PopoverTrigger
+                        className="emotion-3"
                         component="span"
                       >
                         <span
-                          className="css-1"
+                          className="emotion-3"
                         >
                           <Button
                             aria-describedby="tooltip-1-content"
@@ -246,7 +223,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                             type="button"
                             variant="regular"
                           >
-                            <glamorous(button)
+                            <Button
                               aria-describedby="tooltip-1-content"
                               aria-owns="tooltip-1-content"
                               element="button"
@@ -264,7 +241,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                               <button
                                 aria-describedby="tooltip-1-content"
                                 aria-owns="tooltip-1-content"
-                                className="css-2"
+                                className="emotion-2"
                                 onBlur={[Function]}
                                 onClick={[Function]}
                                 onFocus={[Function]}
@@ -274,9 +251,9 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                                 tabIndex={0}
                                 type="button"
                               >
-                                <glamorous(span)>
+                                <Styled(span)>
                                   <span
-                                    className="css-16"
+                                    className="emotion-1"
                                   >
                                     <IconPerson
                                       key="iconStart"
@@ -288,7 +265,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                                         size="1.5em"
                                         title="account settings"
                                       >
-                                        <glamorous(svg)
+                                        <Styled(svg)
                                           aria-hidden={null}
                                           aria-labelledby="icon-title-icon-2"
                                           role="img"
@@ -299,7 +276,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                                           <svg
                                             aria-hidden={null}
                                             aria-labelledby="icon-title-icon-2"
-                                            className="css-17"
+                                            className="emotion-0"
                                             role="img"
                                             viewBox="0 0 24 24"
                                           >
@@ -314,34 +291,33 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                                               />
                                             </g>
                                           </svg>
-                                        </glamorous(svg)>
+                                        </Styled(svg)>
                                       </Icon>
                                     </IconPerson>
                                   </span>
-                                </glamorous(span)>
+                                </Styled(span)>
                               </button>
-                            </glamorous(button)>
+                            </Button>
                           </Button>
                         </span>
-                      </Target>
+                      </PopoverTrigger>
                     </PopoverTrigger>
                   </PopoverTrigger>
                 </span>
-              </Manager>
+              </Popover>
             </Popover>
           </Popover>
         </ThemeProvider>
       </ThemeProvider>
     </Themed(Popover)>
-  </ThemedComponent>
+  </WithTheme(Themed(Popover))>
 </Tooltip>
 `;
 
 exports[`Tooltip demo examples Snapshots: controlled 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-13 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -350,42 +326,37 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-9 {
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -394,59 +365,70 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   background-color: #434a54;
   border: 1px solid #434a54;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: 18em;
   z-index: 100;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-9[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-9[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-9[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-9[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-9[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-6 {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-4:last-child,
-[data-css-4]:last-child,
-.css-4[data-simulate-lastchild],
-[data-css-4][data-simulate-lastchild] {
+.emotion-6:last-child {
   margin-bottom: 0px;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-5 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-7 {
   color: #434a54;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #434a54,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-10,
-[data-css-10] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -463,77 +445,60 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-10 *,
-[data-css-10] *,
-.css-10 *::before,
-[data-css-10] *::before,
-.css-10 *::after,
-[data-css-10] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-10:focus,
-[data-css-10]:focus,
-.css-10[data-simulate-focus],
-[data-css-10][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:hover,
-[data-css-10]:hover,
-.css-10[data-simulate-hover],
-[data-css-10][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:active,
-[data-css-10]:active,
-.css-10[data-simulate-active],
-[data-css-10][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-10::-moz-focus-inner,
-[data-css-10]::-moz-focus-inner,
-.css-10[data-simulate-mozfocusinner],
-[data-css-10][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-10 [role="img"],
-[data-css-10] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-10 [role="img"]:first-child,
-[data-css-10] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-10 [role="img"]:last-child,
-[data-css-10] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-10 [role="img"]:only-child,
-[data-css-10] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -544,39 +509,32 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-24:first-child,
-[data-css-24]:first-child,
-.css-24[data-simulate-firstchild],
-[data-css-24][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-24:last-child,
-[data-css-24]:last-child,
-.css-24[data-simulate-lastchild],
-[data-css-24][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-18 {
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -webkit-box-lines: multiple;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 <App>
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-31"
+      className="emotion-18"
     >
       <Tooltip
         content="This tooltip is controlled"
@@ -584,7 +542,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
         isOpen={true}
         placement="top"
       >
-        <ThemedComponent
+        <WithTheme(Themed(Popover))
           content={[Function]}
           focusTriggerOnClose={false}
           hasArrow={true}
@@ -627,13 +585,13 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                     placement="top"
                     tag="span"
                   >
-                    <Manager
-                      className="css-0"
+                    <Popover
+                      className="emotion-13"
                       id="tooltip-21"
                       tag="span"
                     >
                       <span
-                        className="css-0"
+                        className="emotion-13"
                         id="tooltip-21"
                       >
                         <PopoverTrigger
@@ -654,12 +612,12 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                           <PopoverTrigger
                             component="span"
                           >
-                            <Target
-                              className="css-1"
+                            <PopoverTrigger
+                              className="emotion-3"
                               component="span"
                             >
                               <span
-                                className="css-1"
+                                className="emotion-3"
                               >
                                 <Button
                                   aria-describedby="tooltip-21-content"
@@ -676,7 +634,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                   type="button"
                                   variant="regular"
                                 >
-                                  <glamorous(button)
+                                  <Button
                                     aria-describedby="tooltip-21-content"
                                     aria-owns="tooltip-21-content"
                                     element="button"
@@ -695,7 +653,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                     <button
                                       aria-describedby="tooltip-21-content"
                                       aria-owns="tooltip-21-content"
-                                      className="css-10"
+                                      className="emotion-2"
                                       onBlur={[Function]}
                                       onClick={[Function]}
                                       onFocus={[Function]}
@@ -705,26 +663,26 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                       tabIndex={0}
                                       type="button"
                                     >
-                                      <glamorous(span)>
+                                      <Styled(span)>
                                         <span
-                                          className="css-2"
+                                          className="emotion-1"
                                         >
-                                          <glamorous(span)
+                                          <Styled(span)
                                             size="large"
                                           >
                                             <span
-                                              className="css-24"
+                                              className="emotion-0"
                                             >
                                               Button
                                             </span>
-                                          </glamorous(span)>
+                                          </Styled(span)>
                                         </span>
-                                      </glamorous(span)>
+                                      </Styled(span)>
                                     </button>
-                                  </glamorous(button)>
+                                  </Button>
                                 </Button>
                               </span>
-                            </Target>
+                            </PopoverTrigger>
                           </PopoverTrigger>
                         </PopoverTrigger>
                         <PopoverContent
@@ -742,9 +700,9 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                             placement="top"
                             role="tooltip"
                           >
-                            <ThemedComponent
+                            <PopoverContent
                               aria-live="polite"
-                              className="css-3"
+                              className="emotion-9"
                               id="tooltip-21-content"
                               onBlur={[Function]}
                               placement="top"
@@ -752,7 +710,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                             >
                               <RtlPopper
                                 aria-live="polite"
-                                className="css-3"
+                                className="emotion-9"
                                 id="tooltip-21-content"
                                 onBlur={[Function]}
                                 placement="top"
@@ -965,7 +923,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                               >
                                 <Popper
                                   aria-live="polite"
-                                  className="css-3"
+                                  className="emotion-9"
                                   component="div"
                                   eventsEnabled={true}
                                   id="tooltip-21-content"
@@ -977,7 +935,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                 >
                                   <div
                                     aria-live="polite"
-                                    className="css-3"
+                                    className="emotion-9"
                                     id="tooltip-21-content"
                                     onBlur={[Function]}
                                     role="tooltip"
@@ -989,29 +947,29 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                       }
                                     }
                                   >
-                                    <ThemedComponent>
+                                    <WithTheme(Themed(CardBlock))>
                                       <Themed(CardBlock)>
                                         <ThemeProvider>
                                           <ThemeProvider>
                                             <CardBlock>
                                               <CardBlock>
                                                 <div
-                                                  className="css-4"
+                                                  className="emotion-6"
                                                 >
-                                                  <glamorous(div)>
+                                                  <Styled(div)>
                                                     <div
-                                                      className="css-8"
+                                                      className="emotion-5"
                                                     >
                                                       This tooltip is controlled
                                                     </div>
-                                                  </glamorous(div)>
+                                                  </Styled(div)>
                                                 </div>
                                               </CardBlock>
                                             </CardBlock>
                                           </ThemeProvider>
                                         </ThemeProvider>
                                       </Themed(CardBlock)>
-                                    </ThemedComponent>
+                                    </WithTheme(Themed(CardBlock))>
                                     <PopoverArrow
                                       size="8px"
                                     >
@@ -1019,24 +977,24 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                         aria-hidden={true}
                                         size="8px"
                                       >
-                                        <Arrow
+                                        <PopoverArrow
                                           aria-hidden={true}
-                                          className="css-9"
+                                          className="emotion-7"
                                         >
                                           <span
                                             aria-hidden={true}
-                                            className="css-9"
+                                            className="emotion-7"
                                             style={Object {}}
                                           >
                                             ▼
                                           </span>
-                                        </Arrow>
+                                        </PopoverArrow>
                                       </PopoverArrow>
                                     </PopoverArrow>
                                   </div>
                                 </Popper>
                               </RtlPopper>
-                            </ThemedComponent>
+                            </PopoverContent>
                           </PopoverContent>
                         </PopoverContent>
                         <EventListener
@@ -1058,13 +1016,13 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                           }
                         />
                       </span>
-                    </Manager>
+                    </Popover>
                   </Popover>
                 </Popover>
               </ThemeProvider>
             </ThemeProvider>
           </Themed(Popover)>
-        </ThemedComponent>
+        </WithTheme(Themed(Popover))>
       </Tooltip>
       <Button
         element="button"
@@ -1073,7 +1031,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
         type="button"
         variant="regular"
       >
-        <glamorous(button)
+        <Button
           element="button"
           onClick={[Function]}
           size="large"
@@ -1082,39 +1040,38 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
           variant="regular"
         >
           <button
-            className="css-10"
+            className="emotion-2"
             onClick={[Function]}
             type="button"
           >
-            <glamorous(span)>
+            <Styled(span)>
               <span
-                className="css-2"
+                className="emotion-1"
               >
-                <glamorous(span)
+                <Styled(span)
                   size="large"
                 >
                   <span
-                    className="css-24"
+                    className="emotion-0"
                   >
                     Close Tooltip
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </span>
-            </glamorous(span)>
+            </Styled(span)>
           </button>
-        </glamorous(button)>
+        </Button>
       </Button>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </App>
 `;
 
 exports[`Tooltip demo examples Snapshots: disabled 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1131,94 +1088,77 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0.4375em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-0::-moz-focus-inner,
-[data-css-0]::-moz-focus-inner,
-.css-0[data-simulate-mozfocusinner],
-[data-css-0][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-0 [role="img"]:only-child,
-[data-css-0] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
@@ -1241,19 +1181,19 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
     type="button"
     variant="regular"
   >
-    <glamorous(button)
+    <Button
       element="button"
       size="large"
       type="button"
       variant="regular"
     >
       <button
-        className="css-0"
+        className="emotion-2"
         type="button"
       >
-        <glamorous(span)>
+        <Styled(span)>
           <span
-            className="css-14"
+            className="emotion-1"
           >
             <IconPerson
               key="iconStart"
@@ -1265,7 +1205,7 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
                 size="1.5em"
                 title="account settings"
               >
-                <glamorous(svg)
+                <Styled(svg)
                   aria-hidden={null}
                   aria-labelledby="icon-title-icon-18"
                   role="img"
@@ -1276,7 +1216,7 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
                   <svg
                     aria-hidden={null}
                     aria-labelledby="icon-title-icon-18"
-                    className="css-15"
+                    className="emotion-0"
                     role="img"
                     viewBox="0 0 24 24"
                   >
@@ -1291,22 +1231,21 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
                       />
                     </g>
                   </svg>
-                </glamorous(svg)>
+                </Styled(svg)>
               </Icon>
             </IconPerson>
           </span>
-        </glamorous(span)>
+        </Styled(span)>
       </button>
-    </glamorous(button)>
+    </Button>
   </Button>
 </Tooltip>
 `;
 
 exports[`Tooltip demo examples Snapshots: overflow 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-13 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1315,42 +1254,37 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-9 {
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1359,66 +1293,76 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   background-color: #434a54;
   border: 1px solid #434a54;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: 18em;
   z-index: 100;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-9[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-9[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-9[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-9[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-9[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-6 {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-4:last-child,
-[data-css-4]:last-child,
-.css-4[data-simulate-lastchild],
-[data-css-4][data-simulate-lastchild] {
+.emotion-6:last-child {
   margin-bottom: 0px;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-5 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-7 {
   color: #434a54;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #434a54,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-10,
-[data-css-10] {
+.emotion-15 {
   background-color: aliceblue;
   overflow: hidden;
   padding: 10px;
 }
 
-.css-11,
-[data-css-11] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1435,77 +1379,60 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-11 *,
-[data-css-11] *,
-.css-11 *::before,
-[data-css-11] *::before,
-.css-11 *::after,
-[data-css-11] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-11:focus,
-[data-css-11]:focus,
-.css-11[data-simulate-focus],
-[data-css-11][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-11:hover,
-[data-css-11]:hover,
-.css-11[data-simulate-hover],
-[data-css-11][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-11:active,
-[data-css-11]:active,
-.css-11[data-simulate-active],
-[data-css-11][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-11::-moz-focus-inner,
-[data-css-11]::-moz-focus-inner,
-.css-11[data-simulate-mozfocusinner],
-[data-css-11][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-11 [role="img"],
-[data-css-11] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-11 [role="img"]:first-child,
-[data-css-11] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-11 [role="img"]:last-child,
-[data-css-11] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-11 [role="img"]:only-child,
-[data-css-11] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -1516,23 +1443,17 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-25:first-child,
-[data-css-25]:first-child,
-.css-25[data-simulate-firstchild],
-[data-css-25][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-25:last-child,
-[data-css-25]:last-child,
-.css-25[data-simulate-lastchild],
-[data-css-25][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-10"
+    className="emotion-15"
   >
     <Tooltip
       content="Light years star stuff"
@@ -1540,7 +1461,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
       isOpen={true}
       placement="top"
     >
-      <ThemedComponent
+      <WithTheme(Themed(Popover))
         content={[Function]}
         focusTriggerOnClose={false}
         hasArrow={true}
@@ -1583,13 +1504,13 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                   placement="top"
                   tag="span"
                 >
-                  <Manager
-                    className="css-0"
+                  <Popover
+                    className="emotion-13"
                     id="tooltip-11"
                     tag="span"
                   >
                     <span
-                      className="css-0"
+                      className="emotion-13"
                       id="tooltip-11"
                     >
                       <PopoverTrigger
@@ -1610,12 +1531,12 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <Target
-                            className="css-1"
+                          <PopoverTrigger
+                            className="emotion-3"
                             component="span"
                           >
                             <span
-                              className="css-1"
+                              className="emotion-3"
                             >
                               <Button
                                 aria-describedby="tooltip-11-content"
@@ -1632,7 +1553,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                 type="button"
                                 variant="regular"
                               >
-                                <glamorous(button)
+                                <Button
                                   aria-describedby="tooltip-11-content"
                                   aria-owns="tooltip-11-content"
                                   element="button"
@@ -1651,7 +1572,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                   <button
                                     aria-describedby="tooltip-11-content"
                                     aria-owns="tooltip-11-content"
-                                    className="css-11"
+                                    className="emotion-2"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
@@ -1661,26 +1582,26 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                     tabIndex={0}
                                     type="button"
                                   >
-                                    <glamorous(span)>
+                                    <Styled(span)>
                                       <span
-                                        className="css-2"
+                                        className="emotion-1"
                                       >
-                                        <glamorous(span)
+                                        <Styled(span)
                                           size="large"
                                         >
                                           <span
-                                            className="css-25"
+                                            className="emotion-0"
                                           >
                                             Button
                                           </span>
-                                        </glamorous(span)>
+                                        </Styled(span)>
                                       </span>
-                                    </glamorous(span)>
+                                    </Styled(span)>
                                   </button>
-                                </glamorous(button)>
+                                </Button>
                               </Button>
                             </span>
-                          </Target>
+                          </PopoverTrigger>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <PopoverContent
@@ -1698,9 +1619,9 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                           placement="top"
                           role="tooltip"
                         >
-                          <ThemedComponent
+                          <PopoverContent
                             aria-live="polite"
-                            className="css-3"
+                            className="emotion-9"
                             id="tooltip-11-content"
                             onBlur={[Function]}
                             placement="top"
@@ -1708,7 +1629,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                           >
                             <RtlPopper
                               aria-live="polite"
-                              className="css-3"
+                              className="emotion-9"
                               id="tooltip-11-content"
                               onBlur={[Function]}
                               placement="top"
@@ -1921,7 +1842,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                             >
                               <Popper
                                 aria-live="polite"
-                                className="css-3"
+                                className="emotion-9"
                                 component="div"
                                 eventsEnabled={true}
                                 id="tooltip-11-content"
@@ -1933,7 +1854,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                               >
                                 <div
                                   aria-live="polite"
-                                  className="css-3"
+                                  className="emotion-9"
                                   id="tooltip-11-content"
                                   onBlur={[Function]}
                                   role="tooltip"
@@ -1945,29 +1866,29 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                     }
                                   }
                                 >
-                                  <ThemedComponent>
+                                  <WithTheme(Themed(CardBlock))>
                                     <Themed(CardBlock)>
                                       <ThemeProvider>
                                         <ThemeProvider>
                                           <CardBlock>
                                             <CardBlock>
                                               <div
-                                                className="css-4"
+                                                className="emotion-6"
                                               >
-                                                <glamorous(div)>
+                                                <Styled(div)>
                                                   <div
-                                                    className="css-8"
+                                                    className="emotion-5"
                                                   >
                                                     Light years star stuff
                                                   </div>
-                                                </glamorous(div)>
+                                                </Styled(div)>
                                               </div>
                                             </CardBlock>
                                           </CardBlock>
                                         </ThemeProvider>
                                       </ThemeProvider>
                                     </Themed(CardBlock)>
-                                  </ThemedComponent>
+                                  </WithTheme(Themed(CardBlock))>
                                   <PopoverArrow
                                     size="8px"
                                   >
@@ -1975,24 +1896,24 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                       aria-hidden={true}
                                       size="8px"
                                     >
-                                      <Arrow
+                                      <PopoverArrow
                                         aria-hidden={true}
-                                        className="css-9"
+                                        className="emotion-7"
                                       >
                                         <span
                                           aria-hidden={true}
-                                          className="css-9"
+                                          className="emotion-7"
                                           style={Object {}}
                                         >
                                           ▼
                                         </span>
-                                      </Arrow>
+                                      </PopoverArrow>
                                     </PopoverArrow>
                                   </PopoverArrow>
                                 </div>
                               </Popper>
                             </RtlPopper>
-                          </ThemedComponent>
+                          </PopoverContent>
                         </PopoverContent>
                       </PopoverContent>
                       <EventListener
@@ -2014,23 +1935,22 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                         }
                       />
                     </span>
-                  </Manager>
+                  </Popover>
                 </Popover>
               </Popover>
             </ThemeProvider>
           </ThemeProvider>
         </Themed(Popover)>
-      </ThemedComponent>
+      </WithTheme(Themed(Popover))>
     </Tooltip>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Tooltip demo examples Snapshots: placement 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-13 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2039,50 +1959,44 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-9 {
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2091,75 +2005,86 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
   background-color: #434a54;
   border: 1px solid #434a54;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: 18em;
   z-index: 100;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-9[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-9[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-9[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-9[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-9[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-6 {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-5:last-child,
-[data-css-5]:last-child,
-.css-5[data-simulate-lastchild],
-[data-css-5][data-simulate-lastchild] {
+.emotion-6:last-child {
   margin-bottom: 0px;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-5 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-10,
-[data-css-10] {
+.emotion-7 {
   color: #434a54;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #434a54,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-11,
-[data-css-11] {
+.emotion-15 {
   height: 200px;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-2 {
   box-sizing: border-box;
   color: #de1b1b;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2176,78 +2101,62 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0.4375em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-12 *,
-[data-css-12] *,
-.css-12 *::before,
-[data-css-12] *::before,
-.css-12 *::after,
-[data-css-12] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-12:focus,
-[data-css-12]:focus,
-.css-12[data-simulate-focus],
-[data-css-12][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #b80d0d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
   color: #de1b1b;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-12:hover,
-[data-css-12]:hover,
-.css-12[data-simulate-hover],
-[data-css-12][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #de1b1b;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-12:active,
-[data-css-12]:active,
-.css-12[data-simulate-active],
-[data-css-12][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #de1b1b;
 }
 
-.css-12::-moz-focus-inner,
-[data-css-12]::-moz-focus-inner,
-.css-12[data-simulate-mozfocusinner],
-[data-css-12][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-12 [role="img"],
-[data-css-12] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #de1b1b;
   display: block;
 }
 
-.css-12 [role="img"]:first-child,
-[data-css-12] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-12 [role="img"]:last-child,
-[data-css-12] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-12 [role="img"]:only-child,
-[data-css-12] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-11"
+    className="emotion-15"
   >
     <Tooltip
       content="Light years star stuff harvesting star light citizens of distant epochs."
@@ -2255,7 +2164,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
       isOpen={true}
       placement="bottom"
     >
-      <ThemedComponent
+      <WithTheme(Themed(Popover))
         content={[Function]}
         focusTriggerOnClose={false}
         hasArrow={true}
@@ -2298,13 +2207,13 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                   placement="bottom"
                   tag="span"
                 >
-                  <Manager
-                    className="css-0"
+                  <Popover
+                    className="emotion-13"
                     id="tooltip-7"
                     tag="span"
                   >
                     <span
-                      className="css-0"
+                      className="emotion-13"
                       id="tooltip-7"
                     >
                       <PopoverTrigger
@@ -2330,12 +2239,12 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <Target
-                            className="css-1"
+                          <PopoverTrigger
+                            className="emotion-3"
                             component="span"
                           >
                             <span
-                              className="css-1"
+                              className="emotion-3"
                             >
                               <Button
                                 aria-describedby="tooltip-7-content"
@@ -2357,7 +2266,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                 type="button"
                                 variant="danger"
                               >
-                                <glamorous(button)
+                                <Button
                                   aria-describedby="tooltip-7-content"
                                   aria-owns="tooltip-7-content"
                                   element="button"
@@ -2375,7 +2284,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                   <button
                                     aria-describedby="tooltip-7-content"
                                     aria-owns="tooltip-7-content"
-                                    className="css-12"
+                                    className="emotion-2"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
@@ -2385,9 +2294,9 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                     tabIndex={0}
                                     type="button"
                                   >
-                                    <glamorous(span)>
+                                    <Styled(span)>
                                       <span
-                                        className="css-2"
+                                        className="emotion-1"
                                       >
                                         <IconDelete
                                           key="iconStart"
@@ -2399,7 +2308,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                             size="1.5em"
                                             title="delete"
                                           >
-                                            <glamorous(svg)
+                                            <Styled(svg)
                                               aria-hidden={null}
                                               aria-labelledby="icon-title-icon-8"
                                               role="img"
@@ -2410,7 +2319,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                               <svg
                                                 aria-hidden={null}
                                                 aria-labelledby="icon-title-icon-8"
-                                                className="css-3"
+                                                className="emotion-0"
                                                 role="img"
                                                 viewBox="0 0 24 24"
                                               >
@@ -2425,16 +2334,16 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                                   />
                                                 </g>
                                               </svg>
-                                            </glamorous(svg)>
+                                            </Styled(svg)>
                                           </Icon>
                                         </IconDelete>
                                       </span>
-                                    </glamorous(span)>
+                                    </Styled(span)>
                                   </button>
-                                </glamorous(button)>
+                                </Button>
                               </Button>
                             </span>
-                          </Target>
+                          </PopoverTrigger>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <PopoverContent
@@ -2452,9 +2361,9 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                           placement="bottom"
                           role="tooltip"
                         >
-                          <ThemedComponent
+                          <PopoverContent
                             aria-live="polite"
-                            className="css-4"
+                            className="emotion-9"
                             id="tooltip-7-content"
                             onBlur={[Function]}
                             placement="bottom"
@@ -2462,7 +2371,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                           >
                             <RtlPopper
                               aria-live="polite"
-                              className="css-4"
+                              className="emotion-9"
                               id="tooltip-7-content"
                               onBlur={[Function]}
                               placement="bottom"
@@ -2675,7 +2584,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                             >
                               <Popper
                                 aria-live="polite"
-                                className="css-4"
+                                className="emotion-9"
                                 component="div"
                                 eventsEnabled={true}
                                 id="tooltip-7-content"
@@ -2687,7 +2596,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                               >
                                 <div
                                   aria-live="polite"
-                                  className="css-4"
+                                  className="emotion-9"
                                   id="tooltip-7-content"
                                   onBlur={[Function]}
                                   role="tooltip"
@@ -2699,29 +2608,29 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                     }
                                   }
                                 >
-                                  <ThemedComponent>
+                                  <WithTheme(Themed(CardBlock))>
                                     <Themed(CardBlock)>
                                       <ThemeProvider>
                                         <ThemeProvider>
                                           <CardBlock>
                                             <CardBlock>
                                               <div
-                                                className="css-5"
+                                                className="emotion-6"
                                               >
-                                                <glamorous(div)>
+                                                <Styled(div)>
                                                   <div
-                                                    className="css-9"
+                                                    className="emotion-5"
                                                   >
                                                     Light years star stuff harvesting star light citizens of distant epochs.
                                                   </div>
-                                                </glamorous(div)>
+                                                </Styled(div)>
                                               </div>
                                             </CardBlock>
                                           </CardBlock>
                                         </ThemeProvider>
                                       </ThemeProvider>
                                     </Themed(CardBlock)>
-                                  </ThemedComponent>
+                                  </WithTheme(Themed(CardBlock))>
                                   <PopoverArrow
                                     size="8px"
                                   >
@@ -2729,24 +2638,24 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                                       aria-hidden={true}
                                       size="8px"
                                     >
-                                      <Arrow
+                                      <PopoverArrow
                                         aria-hidden={true}
-                                        className="css-10"
+                                        className="emotion-7"
                                       >
                                         <span
                                           aria-hidden={true}
-                                          className="css-10"
+                                          className="emotion-7"
                                           style={Object {}}
                                         >
                                           ▼
                                         </span>
-                                      </Arrow>
+                                      </PopoverArrow>
                                     </PopoverArrow>
                                   </PopoverArrow>
                                 </div>
                               </Popper>
                             </RtlPopper>
-                          </ThemedComponent>
+                          </PopoverContent>
                         </PopoverContent>
                       </PopoverContent>
                       <EventListener
@@ -2768,23 +2677,22 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
                         }
                       />
                     </span>
-                  </Manager>
+                  </Popover>
                 </Popover>
               </Popover>
             </ThemeProvider>
           </ThemeProvider>
         </Themed(Popover)>
-      </ThemedComponent>
+      </WithTheme(Themed(Popover))>
     </Tooltip>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Tooltip demo examples Snapshots: portal 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-5 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2793,42 +2701,37 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2845,77 +2748,60 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-3:focus,
-[data-css-3]:focus,
-.css-3[data-simulate-focus],
-[data-css-3][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-3:hover,
-[data-css-3]:hover,
-.css-3[data-simulate-hover],
-[data-css-3][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-3:active,
-[data-css-3]:active,
-.css-3[data-simulate-active],
-[data-css-3][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-3::-moz-focus-inner,
-[data-css-3]::-moz-focus-inner,
-.css-3[data-simulate-mozfocusinner],
-[data-css-3][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-3 [role="img"],
-[data-css-3] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-3 [role="img"]:first-child,
-[data-css-3] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-3 [role="img"]:last-child,
-[data-css-3] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-3 [role="img"]:only-child,
-[data-css-3] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2926,62 +2812,52 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-17:first-child,
-[data-css-17]:first-child,
-.css-17[data-simulate-firstchild],
-[data-css-17][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-17:last-child,
-[data-css-17]:last-child,
-.css-17[data-simulate-lastchild],
-[data-css-17][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-14 {
   position: relative;
 }
 
-.css-25,
-[data-css-25] {
+.emotion-8 {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.css-26,
-[data-css-26] {
+.emotion-7 {
   height: 860px;
   width: 300vw;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.css-27,
-[data-css-27] {
+.emotion-12 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.css-28,
-[data-css-28] {
+.emotion-11 {
   box-sizing: border-box;
   color: #3272d9;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2998,6 +2874,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   height: 1.5em;
   min-width: 1.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
   left: 0;
@@ -3005,72 +2882,54 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   top: 0;
 }
 
-.css-28 *,
-[data-css-28] *,
-.css-28 *::before,
-[data-css-28] *::before,
-.css-28 *::after,
-[data-css-28] *::after {
+.emotion-11 *,
+.emotion-11 *::before,
+.emotion-11 *::after {
   box-sizing: inherit;
 }
 
-.css-28:focus,
-[data-css-28]:focus,
-.css-28[data-simulate-focus],
-[data-css-28][data-simulate-focus] {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+.emotion-11:focus {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-28:hover,
-[data-css-28]:hover,
-.css-28[data-simulate-hover],
-[data-css-28][data-simulate-hover] {
+.emotion-11:hover {
   background-color: #f5f7fa;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-28:active,
-[data-css-28]:active,
-.css-28[data-simulate-active],
-[data-css-28][data-simulate-active] {
+.emotion-11:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.css-28::-moz-focus-inner,
-[data-css-28]::-moz-focus-inner,
-.css-28[data-simulate-mozfocusinner],
-[data-css-28][data-simulate-mozfocusinner] {
+.emotion-11::-moz-focus-inner {
   border: 0;
 }
 
-.css-28 [role="img"],
-[data-css-28] [role="img"] {
+.emotion-11 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-28 [role="img"]:first-child,
-[data-css-28] [role="img"]:first-child {
+.emotion-11 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-28 [role="img"]:last-child,
-[data-css-28] [role="img"]:last-child {
+.emotion-11 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-28 [role="img"]:only-child,
-[data-css-28] [role="img"]:only-child {
+.emotion-11 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-42,
-[data-css-42] {
+.emotion-9 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3085,21 +2944,21 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   autoCenter={true}
   height={360}
 >
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-24"
+      className="emotion-14"
     >
-      <glamorous(div)
+      <Styled(div)
         height={360}
       >
         <div
-          className="css-25"
+          className="emotion-8"
         >
-          <glamorous(div)
+          <Styled(div)
             scrollAreaHeight={360}
           >
             <div
-              className="css-26"
+              className="emotion-7"
             >
               <Tooltip
                 content="Light years star stuff"
@@ -3115,7 +2974,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                 placement="bottom"
                 usePortal={true}
               >
-                <ThemedComponent
+                <WithTheme(Themed(Popover))
                   content={[Function]}
                   focusTriggerOnClose={false}
                   hasArrow={true}
@@ -3190,13 +3049,13 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                             tag="span"
                             usePortal={true}
                           >
-                            <Manager
-                              className="css-0"
+                            <Popover
+                              className="emotion-5"
                               id="tooltip-15"
                               tag="span"
                             >
                               <span
-                                className="css-0"
+                                className="emotion-5"
                                 id="tooltip-15"
                               >
                                 <PopoverTrigger
@@ -3217,12 +3076,12 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                   <PopoverTrigger
                                     component="span"
                                   >
-                                    <Target
-                                      className="css-1"
+                                    <PopoverTrigger
+                                      className="emotion-3"
                                       component="span"
                                     >
                                       <span
-                                        className="css-1"
+                                        className="emotion-3"
                                       >
                                         <Button
                                           aria-describedby="tooltip-15-content"
@@ -3239,7 +3098,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                           type="button"
                                           variant="regular"
                                         >
-                                          <glamorous(button)
+                                          <Button
                                             aria-describedby="tooltip-15-content"
                                             aria-owns="tooltip-15-content"
                                             element="button"
@@ -3258,7 +3117,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                             <button
                                               aria-describedby="tooltip-15-content"
                                               aria-owns="tooltip-15-content"
-                                              className="css-3"
+                                              className="emotion-2"
                                               onBlur={[Function]}
                                               onClick={[Function]}
                                               onFocus={[Function]}
@@ -3268,26 +3127,26 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                               tabIndex={0}
                                               type="button"
                                             >
-                                              <glamorous(span)>
+                                              <Styled(span)>
                                                 <span
-                                                  className="css-2"
+                                                  className="emotion-1"
                                                 >
-                                                  <glamorous(span)
+                                                  <Styled(span)
                                                     size="large"
                                                   >
                                                     <span
-                                                      className="css-17"
+                                                      className="emotion-0"
                                                     >
                                                       Button
                                                     </span>
-                                                  </glamorous(span)>
+                                                  </Styled(span)>
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </button>
-                                          </glamorous(button)>
+                                          </Button>
                                         </Button>
                                       </span>
-                                    </Target>
+                                    </PopoverTrigger>
                                   </PopoverTrigger>
                                 </PopoverTrigger>
                                 <Portal />
@@ -3310,25 +3169,28 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                   }
                                 />
                               </span>
-                            </Manager>
+                            </Popover>
                           </Popover>
                         </Popover>
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(Popover)>
-                </ThemedComponent>
+                </WithTheme(Themed(Popover))>
               </Tooltip>
             </div>
-          </glamorous(div)>
+          </Styled(div)>
         </div>
-      </glamorous(div)>
-      <glamorous(Button)
+      </Styled(div)>
+      <Styled(Button)
+        element="button"
         minimal={true}
         onClick={[Function]}
         size="small"
+        type="button"
+        variant="regular"
       >
         <Button
-          className="css-27"
+          className="emotion-12"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -3336,8 +3198,8 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
           type="button"
           variant="regular"
         >
-          <glamorous(button)
-            className="css-27"
+          <Button
+            className="emotion-12"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -3347,39 +3209,38 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
             variant="regular"
           >
             <button
-              className="css-28"
+              className="emotion-11"
               onClick={[Function]}
               type="button"
             >
-              <glamorous(span)>
+              <Styled(span)>
                 <span
-                  className="css-2"
+                  className="emotion-1"
                 >
-                  <glamorous(span)
+                  <Styled(span)
                     size="small"
                   >
                     <span
-                      className="css-42"
+                      className="emotion-9"
                     >
                       Re-center
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </button>
-          </glamorous(button)>
+          </Button>
         </Button>
-      </glamorous(Button)>
+      </Styled(Button)>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </ScrollBox>
 `;
 
 exports[`Tooltip demo examples Snapshots: prose 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-3 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3388,35 +3249,29 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-5 {
   font-family: "Open Sans";
 }
 
-.css-3,
-[data-css-3] {
+.emotion-0 {
   border-bottom-style: dashed;
   border-bottom-color: currentcolor;
   border-bottom-width: 1px;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-2"
+    className="emotion-5"
   >
     <p>
       Here's some prose with a 
@@ -3426,7 +3281,7 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
         isOpen={true}
         usePortal={true}
       >
-        <ThemedComponent
+        <WithTheme(Themed(Popover))
           content={[Function]}
           focusTriggerOnClose={false}
           hasArrow={true}
@@ -3471,13 +3326,13 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
                     tag="span"
                     usePortal={true}
                   >
-                    <Manager
-                      className="css-0"
+                    <Popover
+                      className="emotion-3"
                       id="tooltip-5"
                       tag="span"
                     >
                       <span
-                        className="css-0"
+                        className="emotion-3"
                         id="tooltip-5"
                       >
                         <PopoverTrigger
@@ -3494,14 +3349,14 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
                           <PopoverTrigger
                             component="span"
                           >
-                            <Target
-                              className="css-1"
+                            <PopoverTrigger
+                              className="emotion-1"
                               component="span"
                             >
                               <span
-                                className="css-1"
+                                className="emotion-1"
                               >
-                                <glamorous(span)
+                                <Styled(span)
                                   aria-describedby="tooltip-5-content"
                                   aria-owns="tooltip-5-content"
                                   onBlur={[Function]}
@@ -3515,7 +3370,7 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
                                   <span
                                     aria-describedby="tooltip-5-content"
                                     aria-owns="tooltip-5-content"
-                                    className="css-3"
+                                    className="emotion-0"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
@@ -3526,9 +3381,9 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
                                   >
                                     Tooltip
                                   </span>
-                                </glamorous(span)>
+                                </Styled(span)>
                               </span>
-                            </Target>
+                            </PopoverTrigger>
                           </PopoverTrigger>
                         </PopoverTrigger>
                         <Portal />
@@ -3551,25 +3406,24 @@ exports[`Tooltip demo examples Snapshots: prose 1`] = `
                           }
                         />
                       </span>
-                    </Manager>
+                    </Popover>
                   </Popover>
                 </Popover>
               </ThemeProvider>
             </ThemeProvider>
           </Themed(Popover)>
-        </ThemedComponent>
+        </WithTheme(Themed(Popover))>
       </Tooltip>
        in the middle of it.
     </p>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-13 {
   box-sizing: border-box;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3578,42 +3432,37 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-3 {
   display: inline-block;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-9 {
   box-sizing: border-box;
   color: #ffffff;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3622,59 +3471,70 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   background-color: #434a54;
   border: 1px solid #434a54;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 0.5em 0;
   max-width: 18em;
   z-index: 100;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-9[data-placement^="top"] {
+  margin-bottom: 8px;
+}
+
+.emotion-9[data-placement^="bottom"] {
+  margin-top: 8px;
+}
+
+.emotion-9[data-placement^="left"] {
+  margin-right: 8px;
+}
+
+.emotion-9[data-placement^="right"] {
+  margin-left: 8px;
+}
+
+.emotion-9[data-x-out-of-boundaries] {
+  visibility: hidden;
+}
+
+.emotion-6 {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.css-4:last-child,
-[data-css-4]:last-child,
-.css-4[data-simulate-lastchild],
-[data-css-4][data-simulate-lastchild] {
+.emotion-6:last-child {
   margin-bottom: 0px;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-5 {
   font-size: 0.875em;
   line-height: 1.5;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-7 {
   color: #434a54;
   display: none;
   font-size: 8px;
   margin: 8px;
   position: absolute;
-  text-shadow: 0 2px 0 #434a54, 0 3px 1px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg) scaleX(2);
+  text-shadow: 0 2px 0 #434a54,0 3px 1px rgba(0,0,0,0.3);
   -webkit-transform: rotate(0deg) scaleX(2);
+  -ms-transform: rotate(0deg) scaleX(2);
+  transform: rotate(0deg) scaleX(2);
 }
 
-.css-10,
-[data-css-10] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3691,77 +3551,60 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-10 *,
-[data-css-10] *,
-.css-10 *::before,
-[data-css-10] *::before,
-.css-10 *::after,
-[data-css-10] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-10:focus,
-[data-css-10]:focus,
-.css-10[data-simulate-focus],
-[data-css-10][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:hover,
-[data-css-10]:hover,
-.css-10[data-simulate-hover],
-[data-css-10][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-10:active,
-[data-css-10]:active,
-.css-10[data-simulate-active],
-[data-css-10][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-10::-moz-focus-inner,
-[data-css-10]::-moz-focus-inner,
-.css-10[data-simulate-mozfocusinner],
-[data-css-10][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-10 [role="img"],
-[data-css-10] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-10 [role="img"]:first-child,
-[data-css-10] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-10 [role="img"]:last-child,
-[data-css-10] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-10 [role="img"]:only-child,
-[data-css-10] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-24,
-[data-css-24] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3772,62 +3615,52 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-24:first-child,
-[data-css-24]:first-child,
-.css-24[data-simulate-firstchild],
-[data-css-24][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-24:last-child,
-[data-css-24]:last-child,
-.css-24[data-simulate-lastchild],
-[data-css-24][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-22 {
   position: relative;
 }
 
-.css-32,
-[data-css-32] {
+.emotion-16 {
   background-color: aliceblue;
   height: 360px;
   overflow: auto;
   position: relative;
 }
 
-.css-33,
-[data-css-33] {
+.emotion-15 {
   height: 860px;
   width: 300vw;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.css-34,
-[data-css-34] {
+.emotion-20 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.css-35,
-[data-css-35] {
+.emotion-19 {
   box-sizing: border-box;
   color: #3272d9;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3844,6 +3677,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   height: 1.5em;
   min-width: 1.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
   left: 0;
@@ -3851,72 +3685,54 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   top: 0;
 }
 
-.css-35 *,
-[data-css-35] *,
-.css-35 *::before,
-[data-css-35] *::before,
-.css-35 *::after,
-[data-css-35] *::after {
+.emotion-19 *,
+.emotion-19 *::before,
+.emotion-19 *::after {
   box-sizing: inherit;
 }
 
-.css-35:focus,
-[data-css-35]:focus,
-.css-35[data-simulate-focus],
-[data-css-35][data-simulate-focus] {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+.emotion-19:focus {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-35:hover,
-[data-css-35]:hover,
-.css-35[data-simulate-hover],
-[data-css-35][data-simulate-hover] {
+.emotion-19:hover {
   background-color: #f5f7fa;
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-35:active,
-[data-css-35]:active,
-.css-35[data-simulate-active],
-[data-css-35][data-simulate-active] {
+.emotion-19:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.css-35::-moz-focus-inner,
-[data-css-35]::-moz-focus-inner,
-.css-35[data-simulate-mozfocusinner],
-[data-css-35][data-simulate-mozfocusinner] {
+.emotion-19::-moz-focus-inner {
   border: 0;
 }
 
-.css-35 [role="img"],
-[data-css-35] [role="img"] {
+.emotion-19 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-35 [role="img"]:first-child,
-[data-css-35] [role="img"]:first-child {
+.emotion-19 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-35 [role="img"]:last-child,
-[data-css-35] [role="img"]:last-child {
+.emotion-19 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-35 [role="img"]:only-child,
-[data-css-35] [role="img"]:only-child {
+.emotion-19 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-49,
-[data-css-49] {
+.emotion-17 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3931,21 +3747,21 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   autoCenter={true}
   height={360}
 >
-  <glamorous(div)>
+  <Styled(div)>
     <div
-      className="css-31"
+      className="emotion-22"
     >
-      <glamorous(div)
+      <Styled(div)
         height={360}
       >
         <div
-          className="css-32"
+          className="emotion-16"
         >
-          <glamorous(div)
+          <Styled(div)
             scrollAreaHeight={360}
           >
             <div
-              className="css-33"
+              className="emotion-15"
             >
               <Tooltip
                 content="Light years star stuff"
@@ -3953,7 +3769,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                 isOpen={true}
                 placement="left"
               >
-                <ThemedComponent
+                <WithTheme(Themed(Popover))
                   content={[Function]}
                   focusTriggerOnClose={false}
                   hasArrow={true}
@@ -3996,13 +3812,13 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                             placement="left"
                             tag="span"
                           >
-                            <Manager
-                              className="css-0"
+                            <Popover
+                              className="emotion-13"
                               id="tooltip-13"
                               tag="span"
                             >
                               <span
-                                className="css-0"
+                                className="emotion-13"
                                 id="tooltip-13"
                               >
                                 <PopoverTrigger
@@ -4023,12 +3839,12 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                   <PopoverTrigger
                                     component="span"
                                   >
-                                    <Target
-                                      className="css-1"
+                                    <PopoverTrigger
+                                      className="emotion-3"
                                       component="span"
                                     >
                                       <span
-                                        className="css-1"
+                                        className="emotion-3"
                                       >
                                         <Button
                                           aria-describedby="tooltip-13-content"
@@ -4045,7 +3861,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                           type="button"
                                           variant="regular"
                                         >
-                                          <glamorous(button)
+                                          <Button
                                             aria-describedby="tooltip-13-content"
                                             aria-owns="tooltip-13-content"
                                             element="button"
@@ -4064,7 +3880,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                             <button
                                               aria-describedby="tooltip-13-content"
                                               aria-owns="tooltip-13-content"
-                                              className="css-10"
+                                              className="emotion-2"
                                               onBlur={[Function]}
                                               onClick={[Function]}
                                               onFocus={[Function]}
@@ -4074,26 +3890,26 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                               tabIndex={0}
                                               type="button"
                                             >
-                                              <glamorous(span)>
+                                              <Styled(span)>
                                                 <span
-                                                  className="css-2"
+                                                  className="emotion-1"
                                                 >
-                                                  <glamorous(span)
+                                                  <Styled(span)
                                                     size="large"
                                                   >
                                                     <span
-                                                      className="css-24"
+                                                      className="emotion-0"
                                                     >
                                                       Button
                                                     </span>
-                                                  </glamorous(span)>
+                                                  </Styled(span)>
                                                 </span>
-                                              </glamorous(span)>
+                                              </Styled(span)>
                                             </button>
-                                          </glamorous(button)>
+                                          </Button>
                                         </Button>
                                       </span>
-                                    </Target>
+                                    </PopoverTrigger>
                                   </PopoverTrigger>
                                 </PopoverTrigger>
                                 <PopoverContent
@@ -4111,9 +3927,9 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                     placement="left"
                                     role="tooltip"
                                   >
-                                    <ThemedComponent
+                                    <PopoverContent
                                       aria-live="polite"
-                                      className="css-3"
+                                      className="emotion-9"
                                       id="tooltip-13-content"
                                       onBlur={[Function]}
                                       placement="left"
@@ -4121,7 +3937,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                     >
                                       <RtlPopper
                                         aria-live="polite"
-                                        className="css-3"
+                                        className="emotion-9"
                                         id="tooltip-13-content"
                                         onBlur={[Function]}
                                         placement="left"
@@ -4334,7 +4150,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                       >
                                         <Popper
                                           aria-live="polite"
-                                          className="css-3"
+                                          className="emotion-9"
                                           component="div"
                                           eventsEnabled={true}
                                           id="tooltip-13-content"
@@ -4346,7 +4162,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                         >
                                           <div
                                             aria-live="polite"
-                                            className="css-3"
+                                            className="emotion-9"
                                             id="tooltip-13-content"
                                             onBlur={[Function]}
                                             role="tooltip"
@@ -4358,29 +4174,29 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                               }
                                             }
                                           >
-                                            <ThemedComponent>
+                                            <WithTheme(Themed(CardBlock))>
                                               <Themed(CardBlock)>
                                                 <ThemeProvider>
                                                   <ThemeProvider>
                                                     <CardBlock>
                                                       <CardBlock>
                                                         <div
-                                                          className="css-4"
+                                                          className="emotion-6"
                                                         >
-                                                          <glamorous(div)>
+                                                          <Styled(div)>
                                                             <div
-                                                              className="css-8"
+                                                              className="emotion-5"
                                                             >
                                                               Light years star stuff
                                                             </div>
-                                                          </glamorous(div)>
+                                                          </Styled(div)>
                                                         </div>
                                                       </CardBlock>
                                                     </CardBlock>
                                                   </ThemeProvider>
                                                 </ThemeProvider>
                                               </Themed(CardBlock)>
-                                            </ThemedComponent>
+                                            </WithTheme(Themed(CardBlock))>
                                             <PopoverArrow
                                               size="8px"
                                             >
@@ -4388,24 +4204,24 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                                 aria-hidden={true}
                                                 size="8px"
                                               >
-                                                <Arrow
+                                                <PopoverArrow
                                                   aria-hidden={true}
-                                                  className="css-9"
+                                                  className="emotion-7"
                                                 >
                                                   <span
                                                     aria-hidden={true}
-                                                    className="css-9"
+                                                    className="emotion-7"
                                                     style={Object {}}
                                                   >
                                                     ▼
                                                   </span>
-                                                </Arrow>
+                                                </PopoverArrow>
                                               </PopoverArrow>
                                             </PopoverArrow>
                                           </div>
                                         </Popper>
                                       </RtlPopper>
-                                    </ThemedComponent>
+                                    </PopoverContent>
                                   </PopoverContent>
                                 </PopoverContent>
                                 <EventListener
@@ -4427,25 +4243,28 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                   }
                                 />
                               </span>
-                            </Manager>
+                            </Popover>
                           </Popover>
                         </Popover>
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(Popover)>
-                </ThemedComponent>
+                </WithTheme(Themed(Popover))>
               </Tooltip>
             </div>
-          </glamorous(div)>
+          </Styled(div)>
         </div>
-      </glamorous(div)>
-      <glamorous(Button)
+      </Styled(div)>
+      <Styled(Button)
+        element="button"
         minimal={true}
         onClick={[Function]}
         size="small"
+        type="button"
+        variant="regular"
       >
         <Button
-          className="css-34"
+          className="emotion-20"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -4453,8 +4272,8 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
           type="button"
           variant="regular"
         >
-          <glamorous(button)
-            className="css-34"
+          <Button
+            className="emotion-20"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -4464,30 +4283,30 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
             variant="regular"
           >
             <button
-              className="css-35"
+              className="emotion-19"
               onClick={[Function]}
               type="button"
             >
-              <glamorous(span)>
+              <Styled(span)>
                 <span
-                  className="css-2"
+                  className="emotion-1"
                 >
-                  <glamorous(span)
+                  <Styled(span)
                     size="small"
                   >
                     <span
-                      className="css-49"
+                      className="emotion-17"
                     >
                       Re-center
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </button>
-          </glamorous(button)>
+          </Button>
         </Button>
-      </glamorous(Button)>
+      </Styled(Button)>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </ScrollBox>
 `;
