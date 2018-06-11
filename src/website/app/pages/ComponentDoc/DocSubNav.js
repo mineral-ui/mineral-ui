@@ -26,7 +26,7 @@ const styles = {
     marginTop: pxToEm(89), // to baseline
     position: 'sticky',
     top: -1,
-    zIndex: theme.zIndex_800,
+    // zIndex: theme.zIndex_100, // FIXME
 
     [theme.bp_moreSpacious]: {
       marginTop: pxToEm(108) // to baseline
