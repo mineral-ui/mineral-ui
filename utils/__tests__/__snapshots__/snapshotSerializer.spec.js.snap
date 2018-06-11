@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -22,94 +21,77 @@ exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-0::-moz-focus-inner,
-[data-css-0]::-moz-focus-inner,
-.css-0[data-simulate-mozfocusinner],
-[data-css-0][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-0 [role="img"]:only-child,
-[data-css-0] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -120,17 +102,11 @@ exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1
   line-height: 2.857142857142857em;
 }
 
-.css-15:first-child,
-[data-css-15]:first-child,
-.css-15[data-simulate-firstchild],
-[data-css-15][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-15:last-child,
-[data-css-15]:last-child,
-.css-15[data-simulate-lastchild],
-[data-css-15][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -142,7 +118,7 @@ exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1
       type="button"
       variant="regular"
     >
-      <glamorous(button)
+      <Button
         element="button"
         size="large"
         text="Submit"
@@ -150,26 +126,26 @@ exports[`snapshotSerializer Excludes verbose ThemeProvider props from snapshot 1
         variant="regular"
       >
         <button
-          className="css-0"
+          className="emotion-2"
           type="button"
         >
-          <glamorous(span)>
+          <Styled(span)>
             <span
-              className="css-14"
+              className="emotion-1"
             >
-              <glamorous(span)
+              <Styled(span)
                 size="large"
               >
                 <span
-                  className="css-15"
+                  className="emotion-0"
                 >
                   Submit
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </span>
-          </glamorous(span)>
+          </Styled(span)>
         </button>
-      </glamorous(button)>
+      </Button>
     </Button>
   </ThemeProvider>
 </ThemeProvider>

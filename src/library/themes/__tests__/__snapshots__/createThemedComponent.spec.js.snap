@@ -1,33 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`createThemedComponent renders a Link correctly with a custom theme function 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   color: #de1b1b;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
@@ -415,7 +407,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
       }
     }
   >
-    <ThemedComponent>
+    <WithTheme(Themed(Link))>
       <Themed(Link)
         theme={
           Object {
@@ -630,46 +622,38 @@ exports[`createThemedComponent renders a Link correctly with a custom theme func
                 variant="regular"
               >
                 <a
-                  className="css-0"
+                  className="emotion-0"
                 />
               </Link>
             </Link>
           </ThemeProvider>
         </ThemeProvider>
       </Themed(Link)>
-    </ThemedComponent>
+    </WithTheme(Themed(Link))>
   </ThemeProvider>
 </ThemeProvider>
 `;
 
 exports[`createThemedComponent renders a Link correctly with a custom theme object 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   color: mediumvioletred;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
@@ -1057,7 +1041,7 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
       }
     }
   >
-    <ThemedComponent>
+    <WithTheme(Themed(Link))>
       <Themed(Link)
         theme={
           Object {
@@ -1272,21 +1256,20 @@ exports[`createThemedComponent renders a Link correctly with a custom theme obje
                 variant="regular"
               >
                 <a
-                  className="css-0"
+                  className="emotion-0"
                 />
               </Link>
             </Link>
           </ThemeProvider>
         </ThemeProvider>
       </Themed(Link)>
-    </ThemedComponent>
+    </WithTheme(Themed(Link))>
   </ThemeProvider>
 </ThemeProvider>
 `;
 
 exports[`createThemedComponent renders correctly 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   background-color: lavender;
   color: mediumvioletred;
   display: inline-block;
@@ -1678,7 +1661,7 @@ exports[`createThemedComponent renders correctly 1`] = `
       }
     }
   >
-    <ThemedComponent>
+    <WithTheme(Themed(Sample))>
       <Themed(Sample)
         theme={
           Object {
@@ -1886,18 +1869,18 @@ exports[`createThemedComponent renders correctly 1`] = `
             }
           >
             <Sample>
-              <glamorous(span)>
+              <Styled(span)>
                 <span
-                  className="css-0"
+                  className="emotion-0"
                 >
                   Sample
                 </span>
-              </glamorous(span)>
+              </Styled(span)>
             </Sample>
           </ThemeProvider>
         </ThemeProvider>
       </Themed(Sample)>
-    </ThemedComponent>
+    </WithTheme(Themed(Sample))>
   </ThemeProvider>
 </ThemeProvider>
 `;

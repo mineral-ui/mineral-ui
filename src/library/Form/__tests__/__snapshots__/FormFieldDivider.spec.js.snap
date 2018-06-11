@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-22[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -13,71 +16,64 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-0 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-3 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -85,69 +81,57 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-3:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-3:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-3:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-3 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-3 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-1 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -159,53 +143,62 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-1[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-1[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-1::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-1::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-1:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -219,19 +212,18 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-7 {
   background-color: #c8d1e0;
   height: 1px;
   margin: 0.5em 0;
 }
 
 <DemoLayout>
-  <glamorous(div)
+  <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="css-1p1xtzc"
+      className="emotion-22"
     >
       <FormField
         label="Old Password"
@@ -239,14 +231,14 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-1-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-1-labelText"
@@ -254,7 +246,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     Old Password
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-1-control"
                 size="large"
@@ -276,8 +268,8 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -294,13 +286,13 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -318,19 +310,19 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                           type="password"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             size="large"
                             type="password"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -342,7 +334,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
           role="separator"
         >
           <div
-            className="css-30"
+            className="emotion-7"
             role="separator"
           />
         </FormFieldDivider>
@@ -353,14 +345,14 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-2-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-2-labelText"
@@ -368,7 +360,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     New Password
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-2-control"
                 size="large"
@@ -390,8 +382,8 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -408,13 +400,13 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -432,19 +424,19 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                           type="password"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             size="large"
                             type="password"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -457,14 +449,14 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-3-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-3-labelText"
@@ -472,7 +464,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     Repeat New Password
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-3-control"
                 size="large"
@@ -494,8 +486,8 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -512,13 +504,13 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -536,19 +528,19 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                           type="password"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             size="large"
                             type="password"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -556,6 +548,6 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
         </FormField>
       </FormField>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </DemoLayout>
 `;

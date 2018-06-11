@@ -1,96 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-1]::after,
-.css-1[data-simulate-after],
-[data-css-1][data-simulate-after] {
+.emotion-12::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-12 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   position: relative;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-6::before,
-[data-css-6]::before,
-.css-6[data-simulate-before],
-[data-css-6][data-simulate-before] {
+.emotion-4::before {
   border-color: rgba(207,224,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -102,48 +95,45 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   top: 0;
 }
 
-.css-10,
-[data-css-10] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   padding-bottom: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-top: 1.5em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  position: relative;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  position: relative;
 }
 
-.css-10 *,
-[data-css-10] *,
-.css-10 *::before,
-[data-css-10] *::before,
-.css-10 *::after,
-[data-css-10] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-10::before,
-[data-css-10]::before,
-.css-10[data-simulate-before],
-[data-css-10][data-simulate-before] {
+.emotion-3::before {
   border-color: rgba(207,224,252,0.5);
   border-style: solid;
   border-width: 1.5em;
@@ -155,892 +145,898 @@ exports[`Box demo examples Snapshots: basic 1`] = `
   top: 0;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-6 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-14 *,
-[data-css-14] *,
-.css-14 *::before,
-[data-css-14] *::before,
-.css-14 *::after,
-[data-css-14] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-9 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-15 *,
-[data-css-15] *,
-.css-15 *::before,
-[data-css-15] *::before,
-.css-15 *::after,
-[data-css-15] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-1"
+    className="emotion-12"
   >
-    <glamorous(Box)>
+    <Styled(Box)
+      element="div"
+    >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
         >
           <div
-            className="css-5"
+            className="emotion-0"
           >
             A
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       padding="lg"
     >
       <Box
-        className="css-6"
+        className="emotion-4"
         element="div"
         padding="lg"
       >
-        <glamorous(div)
-          className="css-6"
+        <Styled(div)
+          className="emotion-4"
           element="div"
           padding="lg"
         >
           <div
-            className="css-10"
+            className="emotion-3"
           >
             B
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginRight="50%"
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginRight="50%"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginRight="50%"
         >
           <div
-            className="css-14"
+            className="emotion-6"
           >
             C
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginHorizontal="auto"
       width="10em"
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginHorizontal="auto"
         width="10em"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginHorizontal="auto"
           width="10em"
         >
           <div
-            className="css-15"
+            className="emotion-9"
           >
             D
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
+    </Styled(Box)>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Box demo examples Snapshots: height 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-1,
-[data-css-2]::after,
-.css-2[data-simulate-after],
-[data-css-2][data-simulate-after] {
+.emotion-9::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-2 > *:not(:last-child),
-[data-css-2] > *:not(:last-child) {
+.emotion-9 > *:not(:last-child) {
   margin-bottom: 1rem;
-  margin-right: 5%;
 }
 
-.css-2 > *,
-[data-css-2] > * {
+.emotion-9 > * {
   float: left;
   width: 30%;
 }
 
-.css-2 > *[class],
-[data-css-2] > *[class] {
+.emotion-9 > *[class] {
   margin-bottom: 0;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-9 > *:not(:last-child) {
+  margin-right: 5%;
+}
+
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   height: 10em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-7,
-[data-css-7] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   height: 100px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-7 *,
-[data-css-7] *,
-.css-7 *::before,
-[data-css-7] *::before,
-.css-7 *::after,
-[data-css-7] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-6 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   height: 33.33333333333333%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(glamorous(div))>
+<Styled(div)>
   <div
-    className="css-2"
+    className="emotion-9"
   >
-    <glamorous(Box)
+    <Styled(Box)
+      element="div"
       height="10em"
     >
       <Box
-        className="css-0"
+        className="emotion-1"
         element="div"
         height="10em"
       >
-        <glamorous(div)
-          className="css-0"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           height="10em"
         >
           <div
-            className="css-6"
+            className="emotion-0"
           >
             A
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       height={100}
     >
       <Box
-        className="css-0"
+        className="emotion-1"
         element="div"
         height={100}
       >
-        <glamorous(div)
-          className="css-0"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           height={100}
         >
           <div
-            className="css-7"
+            className="emotion-3"
           >
             B
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       height={0.3333333333333333}
     >
       <Box
-        className="css-0"
+        className="emotion-1"
         element="div"
         height={0.3333333333333333}
       >
-        <glamorous(div)
-          className="css-0"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           height={0.3333333333333333}
         >
           <div
-            className="css-8"
+            className="emotion-6"
           >
             C
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
+    </Styled(Box)>
   </div>
-</glamorous(glamorous(div))>
+</Styled(div)>
 `;
 
 exports[`Box demo examples Snapshots: inline 1`] = `
-.css-0,
-[data-css-1]::after,
-.css-1[data-simulate-after],
-[data-css-1][data-simulate-after] {
+.emotion-9::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-9 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-1 > *[class],
-[data-css-1] > *[class] {
+.emotion-9 > *[class] {
   margin-bottom: 0;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  display: inline-block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-7,
-[data-css-7] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  display: inline-block;
   width: 100px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-7 *,
-[data-css-7] *,
-.css-7 *::before,
-[data-css-7] *::before,
-.css-7 *::after,
-[data-css-7] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(glamorous(div))>
+<Styled(div)>
   <div
-    className="css-1"
+    className="emotion-9"
   >
-    <glamorous(Box)
+    <Styled(Box)
+      element="div"
       inline={true}
     >
       <Box
-        className="css-5"
+        className="emotion-1"
         element="div"
         inline={true}
       >
-        <glamorous(div)
-          className="css-5"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           inline={true}
         >
           <div
-            className="css-6"
+            className="emotion-0"
           >
             A
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       inline={true}
       width={100}
     >
       <Box
-        className="css-5"
+        className="emotion-1"
         element="div"
         inline={true}
         width={100}
       >
-        <glamorous(div)
-          className="css-5"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           inline={true}
           width={100}
         >
           <div
-            className="css-7"
+            className="emotion-3"
           >
             B
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       inline={true}
     >
       <Box
-        className="css-5"
+        className="emotion-1"
         element="div"
         inline={true}
       >
-        <glamorous(div)
-          className="css-5"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           inline={true}
         >
           <div
-            className="css-6"
+            className="emotion-0"
           >
             C
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
+    </Styled(Box)>
   </div>
-</glamorous(glamorous(div))>
+</Styled(div)>
 `;
 
 exports[`Box demo examples Snapshots: precedence 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 10px;
   margin-left: 30px;
   margin-right: 20px;
   margin-top: 10px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 30px;
   margin-top: 10px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-2 *,
-[data-css-2] *,
-.css-2 *::before,
-[data-css-2] *::before,
-.css-2 *::after,
-[data-css-2] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-6 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 10px;
   margin-left: 40px;
   margin-right: 20px;
   margin-top: 10px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-3 *,
-[data-css-3] *,
-.css-3 *::before,
-[data-css-3] *::before,
-.css-3 *::after,
-[data-css-3] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-9 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 40px;
   margin-top: 10px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-12 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 40px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
   box-sizing: inherit;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-15 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
 <div>
-  <glamorous(Box)
+  <Styled(Box)
+    element="div"
     margin={10}
     marginHorizontal={20}
     marginStart={30}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginHorizontal={20}
       marginStart={30}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginHorizontal={20}
         marginStart={30}
       >
         <div
-          className="css-1"
+          className="emotion-0"
         >
           10 20 10 30
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
-  <glamorous(Box)
+  </Styled(Box)>
+  <Styled(Box)
+    element="div"
     margin={10}
     marginEnd={30}
     marginHorizontal={20}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginEnd={30}
       marginHorizontal={20}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginEnd={30}
         marginHorizontal={20}
       >
         <div
-          className="css-2"
+          className="emotion-3"
         >
           10 30 10 20
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
-  <glamorous(Box)
+  </Styled(Box)>
+  <Styled(Box)
+    element="div"
     margin={10}
     marginHorizontal={20}
     marginLeft={40}
     marginStart={30}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginHorizontal={20}
       marginLeft={40}
       marginStart={30}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginHorizontal={20}
@@ -1048,29 +1044,30 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
         marginStart={30}
       >
         <div
-          className="css-3"
+          className="emotion-6"
         >
           10 20 10 40
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
-  <glamorous(Box)
+  </Styled(Box)>
+  <Styled(Box)
+    element="div"
     margin={10}
     marginEnd={30}
     marginHorizontal={20}
     marginRight={40}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginEnd={30}
       marginHorizontal={20}
       marginRight={40}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginEnd={30}
@@ -1078,146 +1075,147 @@ exports[`Box demo examples Snapshots: precedence 1`] = `
         marginRight={40}
       >
         <div
-          className="css-4"
+          className="emotion-9"
         >
           10 40 10 20
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
-  <glamorous(Box)
+  </Styled(Box)>
+  <Styled(Box)
+    element="div"
     margin={10}
     marginTop={40}
     marginVertical={20}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginTop={40}
       marginVertical={20}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginTop={40}
         marginVertical={20}
       >
         <div
-          className="css-5"
+          className="emotion-12"
         >
           40 10 20 10
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
-  <glamorous(Box)
+  </Styled(Box)>
+  <Styled(Box)
+    element="div"
     margin={10}
     marginBottom={40}
     marginVertical={20}
   >
     <Box
-      className="css-0"
+      className="emotion-1"
       element="div"
       margin={10}
       marginBottom={40}
       marginVertical={20}
     >
-      <glamorous(div)
-        className="css-0"
+      <Styled(div)
+        className="emotion-1"
         element="div"
         margin={10}
         marginBottom={40}
         marginVertical={20}
       >
         <div
-          className="css-6"
+          className="emotion-15"
         >
           20 10 40 10
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </Box>
-  </glamorous(Box)>
+  </Styled(Box)>
 </div>
 `;
 
 exports[`Box demo examples Snapshots: responsive 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 50px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-1 *,
-[data-css-1] *,
-.css-1 *::before,
-[data-css-1] *::before,
-.css-1 *::after,
-[data-css-1] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-@media (min-width: 800px) and (max-width: 1023px) {
-  .css-1,
-  [data-css-1] {
+@media (min-width:800px) and (max-width:1023px) {
+  .emotion-0 {
     margin-right: 100px;
   }
 }
 
-@media (min-width: 1024px) {
-  .css-1,
-  [data-css-1] {
+@media (min-width:1024px) {
+  .emotion-0 {
     margin-right: 150px;
   }
 }
 
-<glamorous(Box)
+<Styled(Box)
   breakpoints={
     Array [
       800,
       "wide",
     ]
   }
+  element="div"
   marginRight={
     Array [
       50,
@@ -1233,7 +1231,7 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
         "wide",
       ]
     }
-    className="css-0"
+    className="emotion-1"
     element="div"
     marginRight={
       Array [
@@ -1243,14 +1241,14 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
       ]
     }
   >
-    <glamorous(div)
+    <Styled(div)
       breakpoints={
         Array [
           800,
           "wide",
         ]
       }
-      className="css-0"
+      className="emotion-1"
       element="div"
       marginRight={
         Array [
@@ -1261,116 +1259,112 @@ exports[`Box demo examples Snapshots: responsive 1`] = `
       }
     >
       <div
-        className="css-1"
+        className="emotion-0"
       >
         A
       </div>
-    </glamorous(div)>
+    </Styled(div)>
   </Box>
-</glamorous(Box)>
+</Styled(Box)>
 `;
 
 exports[`Box demo examples Snapshots: rtl 1`] = `
-.css-0,
-[data-css-1]::after,
-.css-1[data-simulate-after],
-[data-css-1][data-simulate-after] {
+.emotion-9::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-9 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-left: 1.5em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 1.5em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
@@ -1379,603 +1373,607 @@ exports[`Box demo examples Snapshots: rtl 1`] = `
 >
   <ThemeProvider>
     <ThemeProvider>
-      <glamorous(div)>
+      <Styled(div)>
         <div
-          className="css-1"
+          className="emotion-9"
         >
-          <glamorous(Box)
+          <Styled(Box)
+            element="div"
             marginLeft="lg"
           >
             <Box
-              className="css-4"
+              className="emotion-1"
               element="div"
               marginLeft="lg"
             >
-              <glamorous(div)
-                className="css-4"
+              <Styled(div)
+                className="emotion-1"
                 element="div"
                 marginLeft="lg"
               >
                 <div
-                  className="css-5"
+                  className="emotion-0"
                 >
                   اليسار
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
             </Box>
-          </glamorous(Box)>
-          <glamorous(Box)
+          </Styled(Box)>
+          <Styled(Box)
+            element="div"
             marginStart="lg"
           >
             <Box
-              className="css-4"
+              className="emotion-1"
               element="div"
               marginStart="lg"
             >
-              <glamorous(div)
-                className="css-4"
+              <Styled(div)
+                className="emotion-1"
                 element="div"
                 marginStart="lg"
               >
                 <div
-                  className="css-6"
+                  className="emotion-3"
                 >
                   بداية
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
             </Box>
-          </glamorous(Box)>
-          <glamorous(Box)
+          </Styled(Box)>
+          <Styled(Box)
+            element="div"
             marginEnd="lg"
           >
             <Box
-              className="css-4"
+              className="emotion-1"
               element="div"
               marginEnd="lg"
             >
-              <glamorous(div)
-                className="css-4"
+              <Styled(div)
+                className="emotion-1"
                 element="div"
                 marginEnd="lg"
               >
                 <div
-                  className="css-5"
+                  className="emotion-0"
                 >
                   النهاية
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
             </Box>
-          </glamorous(Box)>
+          </Styled(Box)>
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </ThemeProvider>
   </ThemeProvider>
 </div>
 `;
 
 exports[`Box demo examples Snapshots: spacing 1`] = `
-.css-0,
-[data-css-1]::after,
-.css-1[data-simulate-after],
-[data-css-1][data-simulate-after] {
+.emotion-15::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-15 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 2em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-7,
-[data-css-7] {
+.emotion-6 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 6em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-7 *,
-[data-css-7] *,
-.css-7 *::before,
-[data-css-7] *::before,
-.css-7 *::after,
-[data-css-7] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-8,
-[data-css-8] {
+.emotion-9 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 120px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-8 *,
-[data-css-8] *,
-.css-8 *::before,
-[data-css-8] *::before,
-.css-8 *::after,
-[data-css-8] *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
-.css-9,
-[data-css-9] {
+.emotion-12 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   margin-right: 33.33333333333333%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-9 *,
-[data-css-9] *,
-.css-9 *::before,
-[data-css-9] *::before,
-.css-9 *::after,
-[data-css-9] *::after {
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-1"
+    className="emotion-15"
   >
-    <glamorous(Box)>
+    <Styled(Box)
+      element="div"
+    >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
         >
           <div
-            className="css-5"
+            className="emotion-0"
           >
             none
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginRight="xl"
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginRight="xl"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginRight="xl"
         >
           <div
-            className="css-6"
+            className="emotion-3"
           >
             xl
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginRight="6em"
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginRight="6em"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginRight="6em"
         >
           <div
-            className="css-7"
+            className="emotion-6"
           >
             6em
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginRight={120}
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginRight={120}
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginRight={120}
         >
           <div
-            className="css-8"
+            className="emotion-9"
           >
             120
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       marginRight={0.3333333333333333}
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         marginRight={0.3333333333333333}
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           marginRight={0.3333333333333333}
         >
           <div
-            className="css-9"
+            className="emotion-12"
           >
             1/3
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
+    </Styled(Box)>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Box demo examples Snapshots: width 1`] = `
-.css-0,
-[data-css-1]::after,
-.css-1[data-simulate-after],
-[data-css-1][data-simulate-after] {
+.emotion-9::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.css-1 > *:not(:last-child),
-[data-css-1] > *:not(:last-child) {
+.emotion-9 > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
   color: #1d5bbf;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   outline: 1px solid #cfe0fc;
   padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-5,
-[data-css-5] {
+.emotion-0 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   width: 10em;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-5 *,
-[data-css-5] *,
-.css-5 *::before,
-[data-css-5] *::before,
-.css-5 *::after,
-[data-css-5] *::after {
+.emotion-0 *,
+.emotion-0 *::before,
+.emotion-0 *::after {
   box-sizing: inherit;
 }
 
-.css-6,
-[data-css-6] {
+.emotion-3 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   width: 100px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-6 *,
-[data-css-6] *,
-.css-6 *::before,
-[data-css-6] *::before,
-.css-6 *::after,
-[data-css-6] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-7,
-[data-css-7] {
+.emotion-6 {
   box-sizing: border-box;
-  color: #1d5bbf;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
-  outline: 1px solid #cfe0fc;
+  outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: block;
   width: 33.33333333333333%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #f0f5fc;
-  justify-content: center;
-  padding: 0.5em;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+  color: #1d5bbf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  outline: 1px solid #cfe0fc;
+  padding: 0.5em;
 }
 
-.css-7 *,
-[data-css-7] *,
-.css-7 *::before,
-[data-css-7] *::before,
-.css-7 *::after,
-[data-css-7] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-1"
+    className="emotion-9"
   >
-    <glamorous(Box)
+    <Styled(Box)
+      element="div"
       width="10em"
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         width="10em"
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           width="10em"
         >
           <div
-            className="css-5"
+            className="emotion-0"
           >
             A
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       width={100}
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         width={100}
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           width={100}
         >
           <div
-            className="css-6"
+            className="emotion-3"
           >
             B
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
-    <glamorous(Box)
+    </Styled(Box)>
+    <Styled(Box)
+      element="div"
       width={0.3333333333333333}
     >
       <Box
-        className="css-4"
+        className="emotion-1"
         element="div"
         width={0.3333333333333333}
       >
-        <glamorous(div)
-          className="css-4"
+        <Styled(div)
+          className="emotion-1"
           element="div"
           width={0.3333333333333333}
         >
           <div
-            className="css-7"
+            className="emotion-6"
           >
             C
           </div>
-        </glamorous(div)>
+        </Styled(div)>
       </Box>
-    </glamorous(Box)>
+    </Styled(Box)>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;

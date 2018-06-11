@@ -1,11 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormField demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -13,71 +16,64 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-0 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-3 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -85,69 +81,57 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-3:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-3:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-3:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-3 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-3 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-1 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -159,53 +143,62 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-1[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-1[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-1::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-1::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-1:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -219,25 +212,23 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -245,55 +236,44 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-31 *,
-[data-css-31] *,
-.css-31 *::before,
-[data-css-31] *::before,
-.css-31 *::after,
-[data-css-31] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-31:hover > div:last-child,
-[data-css-31]:hover > div:last-child,
-.css-31[data-simulate-hover] > div:last-child,
-[data-css-31][data-simulate-hover] > div:last-child {
+.emotion-10:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-31:focus > div:last-child,
-[data-css-31]:focus > div:last-child,
-.css-31[data-simulate-focus] > div:last-child,
-[data-css-31][data-simulate-focus] > div:last-child {
+.emotion-10:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-31:active > div:last-child,
-[data-css-31]:active > div:last-child,
-.css-31[data-simulate-active] > div:last-child,
-[data-css-31][data-simulate-active] > div:last-child {
+.emotion-10:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-41,
-[data-css-41] {
+.emotion-8 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   line-height: 1.5;
@@ -308,59 +288,62 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   color: #333840;
   -webkit-text-fill-color: #333840;
   font-size: 0.875em;
+  outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-41::placeholder,
-[data-css-41]::placeholder,
-.css-41[data-simulate-placeholder],
-[data-css-41][data-simulate-placeholder] {
+.emotion-8::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-41::-ms-input-placeholder,
-[data-css-41]::-ms-input-placeholder,
-.css-41[data-simulate-msinputplaceholder],
-[data-css-41][data-simulate-msinputplaceholder] {
+.emotion-8::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-41:-ms-input-placeholder,
-[data-css-41]:-ms-input-placeholder,
-.css-41[data-simulate-msinputplaceholder],
-[data-css-41][data-simulate-msinputplaceholder] {
+.emotion-8:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-41::-ms-clear,
-[data-css-41]::-ms-clear,
-.css-41[data-simulate-msclear],
-[data-css-41][data-simulate-msclear] {
+.emotion-8::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-8::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-8:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-8::-ms-clear {
   display: none;
 }
 
-.css-41:focus ~ div:last-child,
-[data-css-41]:focus ~ div:last-child,
-.css-41[data-simulate-focus] ~ div:last-child,
-[data-css-41][data-simulate-focus] ~ div:last-child {
+.emotion-8:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
 <DemoLayout>
-  <glamorous(div)
+  <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="css-1p1xtzc"
+      className="emotion-14"
     >
       <FormField
         input={[Function]}
@@ -369,14 +352,14 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-1-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-1-labelText"
@@ -384,7 +367,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     Name
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-1-control"
                 size="large"
@@ -406,8 +389,8 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -424,13 +407,13 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -448,19 +431,19 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                           type="text"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -473,14 +456,14 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-2-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-2-labelText"
@@ -488,7 +471,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     Description
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextArea
                 key="formField-2-control"
               >
@@ -513,8 +496,8 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   iconEnd={null}
                   size="large"
                 >
-                  <FauxControl
-                    className="css-30"
+                  <TextInput
+                    className="emotion-11"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -536,13 +519,13 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-30"
+                      className="emotion-11"
                       control={[Function]}
                     >
                       <div
-                        className="css-31"
+                        className="emotion-10"
                       >
-                        <glamorous(glamorous(textarea))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -569,19 +552,19 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                           size="large"
                         >
                           <textarea
-                            className="css-41"
+                            className="emotion-8"
                             onInput={[Function]}
                             rows={8}
                           />
-                        </glamorous(glamorous(textarea))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextArea>
               </TextArea>
             </label>
@@ -589,16 +572,15 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
         </FormField>
       </FormField>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: caption 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-7 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -606,71 +588,64 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-7 *,
+.emotion-7 *::before,
+.emotion-7 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-0 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-3 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -678,69 +653,57 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-3:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-3:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-3:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-3 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-3 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-1 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -752,53 +715,62 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-1[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-1[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-1::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-1::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-1:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -812,8 +784,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-6 {
   color: #58606e;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
@@ -827,14 +798,14 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
 >
   <FormField>
     <div
-      className="css-0"
+      className="emotion-7"
     >
       <label>
-        <glamorous(div)
+        <Styled(div)
           key="formField-11-textWrapper"
         >
           <div
-            className="css-1"
+            className="emotion-0"
           >
             <span
               id="formField-11-labelText"
@@ -842,7 +813,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
               Name
             </span>
           </div>
-        </glamorous(div)>
+        </Styled(div)>
         <TextInput
           aria-describedby="formField-11-caption"
           key="formField-11-control"
@@ -865,8 +836,8 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
             }
             size="large"
           >
-            <FauxControl
-              className="css-2"
+            <TextInput
+              className="emotion-4"
               control={[Function]}
               controlProps={
                 Object {
@@ -883,13 +854,13 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
               size="large"
             >
               <FauxControl
-                className="css-2"
+                className="emotion-4"
                 control={[Function]}
               >
                 <div
-                  className="css-4"
+                  className="emotion-3"
                 >
-                  <glamorous(glamorous(input))
+                  <Control
                     aria-describedby="formField-11-caption"
                     controlPropsIn={
                       Object {
@@ -909,44 +880,47 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
                   >
                     <input
                       aria-describedby="formField-11-caption"
-                      className="css-15"
+                      className="emotion-1"
                       size="large"
                       type="text"
                     />
-                  </glamorous(glamorous(input))>
+                  </Control>
                   <Underlay>
                     <div
-                      className="css-29"
+                      className="emotion-2"
                     />
                   </Underlay>
                 </div>
               </FauxControl>
-            </FauxControl>
+            </TextInput>
           </TextInput>
         </TextInput>
       </label>
-      <glamorous(div)
+      <Styled(div)
         caption="This is help text"
         id="formField-11-caption"
       >
         <div
-          className="css-30"
+          className="emotion-6"
           id="formField-11-caption"
         >
           This is help text
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </div>
   </FormField>
 </FormField>
 `;
 
 exports[`FormField demo examples Snapshots: hide-label 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-14[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -954,71 +928,64 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-0 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-3 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1026,69 +993,57 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-3 *,
+.emotion-3 *::before,
+.emotion-3 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-3:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-3:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-3:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-3 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-3 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-1 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -1100,53 +1055,62 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-1[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-1[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-1::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-1::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-1:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -1160,20 +1124,23 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-7 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0.5em;
   border: 0px;
+  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -1182,24 +1149,21 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -webkit-clip-path: inset(50%);
 }
 
-.css-30 > *,
-[data-css-30] > * {
+.emotion-7 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
 <DemoLayout>
-  <glamorous(div)
+  <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="css-1p1xtzc"
+      className="emotion-14"
     >
       <FormField
         input={[Function]}
@@ -1209,14 +1173,14 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-25-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-25-labelText"
@@ -1224,7 +1188,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     Address
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-25-control"
                 placeholder="1234 Main St"
@@ -1248,8 +1212,8 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -1267,13 +1231,13 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -1293,20 +1257,20 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                           type="text"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             placeholder="1234 Main St"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -1322,15 +1286,15 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-6"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 hideLabel={true}
                 key="formField-26-textWrapper"
               >
                 <div
-                  className="css-30"
+                  className="emotion-7"
                 >
                   <span
                     id="formField-26-labelText"
@@ -1338,7 +1302,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     Address Line 2
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-26-control"
                 placeholder="Apt 101"
@@ -1362,8 +1326,8 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-4"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -1381,13 +1345,13 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-4"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-3"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           controlPropsIn={
                             Object {
                               "aria-describedby": undefined,
@@ -1407,20 +1371,20 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                           type="text"
                         >
                           <input
-                            className="css-15"
+                            className="emotion-1"
                             placeholder="Apt 101"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-2"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -1428,16 +1392,19 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
         </FormField>
       </FormField>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: required 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-16[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-7 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1445,71 +1412,64 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-7 *,
+.emotion-7 *::before,
+.emotion-7 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-1 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-5 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1517,69 +1477,57 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-4:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-4:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-4:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-2 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -1591,53 +1539,62 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-2[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-2[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-2::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-2::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-2:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-3 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -1651,19 +1608,18 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-0 {
   color: #de1b1b;
   font-size: 0.6875em;
   font-weight: 400;
 }
 
 <DemoLayout>
-  <glamorous(div)
+  <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="css-1p1xtzc"
+      className="emotion-16"
     >
       <FormField
         input={[Function]}
@@ -1673,29 +1629,29 @@ exports[`FormField demo examples Snapshots: required 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-7"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-5-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-1"
                 >
                   <span
                     id="formField-5-labelText"
                   >
                     Name
                   </span>
-                  <glamorous(span)>
+                  <Styled(span)>
                     <span
-                      className="css-30"
+                      className="emotion-0"
                     >
                       Required
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-5-control"
                 required={true}
@@ -1718,8 +1674,8 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-5"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -1736,13 +1692,13 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-5"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-4"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-required={true}
                           controlPropsIn={
                             Object {
@@ -1763,20 +1719,20 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                         >
                           <input
                             aria-required={true}
-                            className="css-15"
+                            className="emotion-2"
                             required={true}
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-3"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -1791,29 +1747,29 @@ exports[`FormField demo examples Snapshots: required 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-7"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-6-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-1"
                 >
                   <span
                     id="formField-6-labelText"
                   >
                     Nombre
                   </span>
-                  <glamorous(span)>
+                  <Styled(span)>
                     <span
-                      className="css-30"
+                      className="emotion-0"
                     >
                       Necesario
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 key="formField-6-control"
                 required={true}
@@ -1836,8 +1792,8 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   }
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-5"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -1854,13 +1810,13 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-5"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-4"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-required={true}
                           controlPropsIn={
                             Object {
@@ -1881,20 +1837,20 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                         >
                           <input
                             aria-required={true}
-                            className="css-15"
+                            className="emotion-2"
                             required={true}
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-29"
+                            className="emotion-3"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -1902,16 +1858,15 @@ exports[`FormField demo examples Snapshots: required 1`] = `
         </FormField>
       </FormField>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </DemoLayout>
 `;
 
 exports[`FormField demo examples Snapshots: rtl 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1919,71 +1874,64 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-1 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-6 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-6 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-5 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -1991,66 +1939,52 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-5:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-5:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-5:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-5 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-4 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -2064,28 +1998,28 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
   z-index: -1;
 }
 
-.css-16,
-[data-css-16] {
+.emotion-0 {
   color: #de1b1b;
   font-size: 0.6875em;
   font-weight: 400;
 }
 
-.css-17,
-[data-css-17] {
+.emotion-2 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 1.5em;
-  -webkit-transform: scaleX(-1);
 }
 
-.css-18,
-[data-css-18] {
+.emotion-3 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -2097,49 +2031,59 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-18::placeholder,
-[data-css-18]::placeholder,
-.css-18[data-simulate-placeholder],
-[data-css-18][data-simulate-placeholder] {
+.emotion-3[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-3[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-3::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-18::-ms-input-placeholder,
-[data-css-18]::-ms-input-placeholder,
-.css-18[data-simulate-msinputplaceholder],
-[data-css-18][data-simulate-msinputplaceholder] {
+.emotion-3::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-18:-ms-input-placeholder,
-[data-css-18]:-ms-input-placeholder,
-.css-18[data-simulate-msinputplaceholder],
-[data-css-18][data-simulate-msinputplaceholder] {
+.emotion-3:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-18::-ms-clear,
-[data-css-18]::-ms-clear,
-.css-18[data-simulate-msclear],
-[data-css-18][data-simulate-msclear] {
+.emotion-3::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-3::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-3:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-3::-ms-clear {
   display: none;
 }
 
-.css-18:focus ~ div:last-child,
-[data-css-18]:focus ~ div:last-child,
-.css-18[data-simulate-focus] ~ div:last-child,
-[data-css-18][data-simulate-focus] ~ div:last-child {
+.emotion-3:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
 <div
@@ -2157,29 +2101,29 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-8"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-31-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-1"
                 >
                   <span
                     id="formField-31-labelText"
                   >
                     نموذج
                   </span>
-                  <glamorous(span)>
+                  <Styled(span)>
                     <span
-                      className="css-16"
+                      className="emotion-0"
                     >
                       مطلوب
                     </span>
-                  </glamorous(span)>
+                  </Styled(span)>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 defaultValue="مرحبا بالعالم"
                 iconStart={<IconBackspace />}
@@ -2206,8 +2150,8 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                   iconStart={<IconBackspace />}
                   size="large"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-6"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -2226,11 +2170,11 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                     size="large"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-6"
                       control={[Function]}
                     >
                       <div
-                        className="css-4"
+                        className="emotion-5"
                       >
                         <IconBackspace
                           key="iconStart"
@@ -2240,7 +2184,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                             rtl={true}
                             size="1.5em"
                           >
-                            <glamorous(svg)
+                            <Styled(svg)
                               aria-hidden={true}
                               role="img"
                               rtl={true}
@@ -2249,7 +2193,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="css-17"
+                                className="emotion-2"
                                 role="img"
                                 viewBox="0 0 24 24"
                               >
@@ -2259,10 +2203,10 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                                   />
                                 </g>
                               </svg>
-                            </glamorous(svg)>
+                            </Styled(svg)>
                           </Icon>
                         </IconBackspace>
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-required={true}
                           controlPropsIn={
                             Object {
@@ -2286,21 +2230,21 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                         >
                           <input
                             aria-required={true}
-                            className="css-18"
+                            className="emotion-3"
                             defaultValue="مرحبا بالعالم"
                             required={true}
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <Underlay>
                           <div
-                            className="css-15"
+                            className="emotion-4"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
@@ -2313,11 +2257,10 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: secondaryText 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-7 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2325,71 +2268,64 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-7 *,
+.emotion-7 *::before,
+.emotion-7 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-1 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-5 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2397,69 +2333,57 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-4:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-4:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-4:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-2 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -2471,53 +2395,62 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-2[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-2[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-2::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-2::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-2:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-3 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -2531,8 +2464,7 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-0 {
   color: #58606e;
   font-size: 0.6875em;
   font-weight: 400;
@@ -2546,31 +2478,31 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
 >
   <FormField>
     <div
-      className="css-0"
+      className="emotion-7"
     >
       <label>
-        <glamorous(div)
+        <Styled(div)
           key="formField-9-textWrapper"
         >
           <div
-            className="css-1"
+            className="emotion-1"
           >
             <span
               id="formField-9-labelText"
             >
               Name
             </span>
-            <glamorous(span)
+            <Styled(span)
               secondaryText="Optional"
             >
               <span
-                className="css-30"
+                className="emotion-0"
               >
                 Optional
               </span>
-            </glamorous(span)>
+            </Styled(span)>
           </div>
-        </glamorous(div)>
+        </Styled(div)>
         <TextInput
           key="formField-9-control"
           size="large"
@@ -2592,8 +2524,8 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
             }
             size="large"
           >
-            <FauxControl
-              className="css-2"
+            <TextInput
+              className="emotion-5"
               control={[Function]}
               controlProps={
                 Object {
@@ -2610,13 +2542,13 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
               size="large"
             >
               <FauxControl
-                className="css-2"
+                className="emotion-5"
                 control={[Function]}
               >
                 <div
-                  className="css-4"
+                  className="emotion-4"
                 >
-                  <glamorous(glamorous(input))
+                  <Control
                     controlPropsIn={
                       Object {
                         "aria-describedby": undefined,
@@ -2634,19 +2566,19 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
                     type="text"
                   >
                     <input
-                      className="css-15"
+                      className="emotion-2"
                       size="large"
                       type="text"
                     />
-                  </glamorous(glamorous(input))>
+                  </Control>
                   <Underlay>
                     <div
-                      className="css-29"
+                      className="emotion-3"
                     />
                   </Underlay>
                 </div>
               </FauxControl>
-            </FauxControl>
+            </TextInput>
           </TextInput>
         </TextInput>
       </label>
@@ -2656,11 +2588,14 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: validation 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-11[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-7 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2668,71 +2603,64 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-7 *,
+.emotion-7 *::before,
+.emotion-7 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-1 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-5 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2740,69 +2668,57 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-4:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-4:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-4:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-4 [role="img"] {
   color: #c8d1e0;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #c8d1e0;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-2 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -2814,53 +2730,62 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 1.1428571428571428em;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-2[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-2[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-2::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-2:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-2::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-2::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-2:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-3 {
   background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
@@ -2874,18 +2799,16 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   z-index: -1;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-0 {
   color: #de1b1b;
   font-size: 0.6875em;
   font-weight: 400;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -2902,94 +2825,77 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-31 *,
-[data-css-31] *,
-.css-31 *::before,
-[data-css-31] *::before,
-.css-31 *::after,
-[data-css-31] *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
-.css-31:focus,
-[data-css-31]:focus,
-.css-31[data-simulate-focus],
-[data-css-31][data-simulate-focus] {
+.emotion-10:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-31:hover,
-[data-css-31]:hover,
-.css-31[data-simulate-hover],
-[data-css-31][data-simulate-hover] {
+.emotion-10:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-31:active,
-[data-css-31]:active,
-.css-31[data-simulate-active],
-[data-css-31][data-simulate-active] {
+.emotion-10:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-31::-moz-focus-inner,
-[data-css-31]::-moz-focus-inner,
-.css-31[data-simulate-mozfocusinner],
-[data-css-31][data-simulate-mozfocusinner] {
+.emotion-10::-moz-focus-inner {
   border: 0;
 }
 
-.css-31 [role="img"],
-[data-css-31] [role="img"] {
+.emotion-10 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-31 [role="img"]:first-child,
-[data-css-31] [role="img"]:first-child {
+.emotion-10 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-31 [role="img"]:last-child,
-[data-css-31] [role="img"]:last-child {
+.emotion-10 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-31 [role="img"]:only-child,
-[data-css-31] [role="img"]:only-child {
+.emotion-10 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-45,
-[data-css-45] {
+.emotion-9 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-46,
-[data-css-46] {
+.emotion-8 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -3000,28 +2906,22 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-46:first-child,
-[data-css-46]:first-child,
-.css-46[data-simulate-firstchild],
-[data-css-46][data-simulate-firstchild] {
+.emotion-8:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-46:last-child,
-[data-css-46]:last-child,
-.css-46[data-simulate-lastchild],
-[data-css-46][data-simulate-lastchild] {
+.emotion-8:last-child {
   padding-right: 0.5714285714285714em;
 }
 
 <Component>
   <MyForm>
     <DemoLayout>
-      <glamorous(div)
+      <Styled(div)
         marginBottom="1rem"
       >
         <div
-          className="css-1p1xtzc"
+          className="emotion-11"
         >
           <FormField
             input={[Function]}
@@ -3034,29 +2934,29 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
           >
             <FormField>
               <div
-                className="css-0"
+                className="emotion-7"
               >
                 <label>
-                  <glamorous(div)
+                  <Styled(div)
                     key="formField-29-textWrapper"
                   >
                     <div
-                      className="css-1"
+                      className="emotion-1"
                     >
                       <span
                         id="formField-29-labelText"
                       >
                         Example
                       </span>
-                      <glamorous(span)>
+                      <Styled(span)>
                         <span
-                          className="css-30"
+                          className="emotion-0"
                         >
                           Required
                         </span>
-                      </glamorous(span)>
+                      </Styled(span)>
                     </div>
-                  </glamorous(div)>
+                  </Styled(div)>
                   <TextInput
                     inputRef={[Function]}
                     key="formField-29-control"
@@ -3084,8 +2984,8 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                       }
                       size="large"
                     >
-                      <FauxControl
-                        className="css-2"
+                      <TextInput
+                        className="emotion-5"
                         control={[Function]}
                         controlProps={
                           Object {
@@ -3104,13 +3004,13 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                         size="large"
                       >
                         <FauxControl
-                          className="css-2"
+                          className="emotion-5"
                           control={[Function]}
                         >
                           <div
-                            className="css-4"
+                            className="emotion-4"
                           >
-                            <glamorous(glamorous(input))
+                            <Control
                               aria-required={true}
                               controlPropsIn={
                                 Object {
@@ -3137,22 +3037,22 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                             >
                               <input
                                 aria-required={true}
-                                className="css-15"
+                                className="emotion-2"
                                 onChange={[Function]}
                                 required={true}
                                 size="large"
                                 type="text"
                                 value=""
                               />
-                            </glamorous(glamorous(input))>
+                            </Control>
                             <Underlay>
                               <div
-                                className="css-29"
+                                className="emotion-3"
                               />
                             </Underlay>
                           </div>
                         </FauxControl>
-                      </FauxControl>
+                      </TextInput>
                     </TextInput>
                   </TextInput>
                 </label>
@@ -3166,7 +3066,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
             type="button"
             variant="regular"
           >
-            <glamorous(button)
+            <Button
               element="button"
               onClick={[Function]}
               size="large"
@@ -3175,41 +3075,44 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
               variant="regular"
             >
               <button
-                className="css-31"
+                className="emotion-10"
                 onClick={[Function]}
                 type="button"
               >
-                <glamorous(span)>
+                <Styled(span)>
                   <span
-                    className="css-45"
+                    className="emotion-9"
                   >
-                    <glamorous(span)
+                    <Styled(span)
                       size="large"
                     >
                       <span
-                        className="css-46"
+                        className="emotion-8"
                       >
                         Validate
                       </span>
-                    </glamorous(span)>
+                    </Styled(span)>
                   </span>
-                </glamorous(span)>
+                </Styled(span)>
               </button>
-            </glamorous(button)>
+            </Button>
           </Button>
         </div>
-      </glamorous(div)>
+      </Styled(div)>
     </DemoLayout>
   </MyForm>
 </Component>
 `;
 
 exports[`FormField demo examples Snapshots: variants 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-27[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3217,71 +3120,64 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #58606e;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   font-size: 0.875em;
   font-weight: 600;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
 }
 
-.css-1 > *,
-[data-css-1] > * {
+.emotion-0 > * {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   display: inline-block;
-  -webkit-align-self: flex-end;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-2 [role="img"],
-[data-css-2] [role="img"] {
+.emotion-5 [role="img"] {
   color: #2a854e;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-2 [role="img"]:last-of-type,
-[data-css-2] [role="img"]:last-of-type {
+.emotion-5 [role="img"]:last-of-type {
   color: #2a854e;
 }
 
-.css-4,
-[data-css-4] {
+.emotion-4 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3289,69 +3185,57 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-4 *,
-[data-css-4] *,
-.css-4 *::before,
-[data-css-4] *::before,
-.css-4 *::after,
-[data-css-4] *::after {
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
   box-sizing: inherit;
 }
 
-.css-4:hover > div:last-child,
-[data-css-4]:hover > div:last-child,
-.css-4[data-simulate-hover] > div:last-child,
-[data-css-4][data-simulate-hover] > div:last-child {
+.emotion-4:hover > div:last-child {
   border-color: #3ba164;
 }
 
-.css-4:focus > div:last-child,
-[data-css-4]:focus > div:last-child,
-.css-4[data-simulate-focus] > div:last-child,
-[data-css-4][data-simulate-focus] > div:last-child {
+.emotion-4:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #20693d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
 }
 
-.css-4:active > div:last-child,
-[data-css-4]:active > div:last-child,
-.css-4[data-simulate-active] > div:last-child,
-[data-css-4][data-simulate-active] > div:last-child {
+.emotion-4:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #20693d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
 }
 
-.css-4 [role="img"],
-[data-css-4] [role="img"] {
+.emotion-4 [role="img"] {
   color: #2a854e;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-4 [role="img"]:last-of-type,
-[data-css-4] [role="img"]:last-of-type {
+.emotion-4 [role="img"]:last-of-type {
   color: #2a854e;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-1 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -3363,61 +3247,69 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-15::placeholder,
-[data-css-15]::placeholder,
-.css-15[data-simulate-placeholder],
-[data-css-15][data-simulate-placeholder] {
+.emotion-1[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-1[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-1::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-input-placeholder,
-[data-css-15]::-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15:-ms-input-placeholder,
-[data-css-15]:-ms-input-placeholder,
-.css-15[data-simulate-msinputplaceholder],
-[data-css-15][data-simulate-msinputplaceholder] {
+.emotion-1:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-15::-ms-clear,
-[data-css-15]::-ms-clear,
-.css-15[data-simulate-msclear],
-[data-css-15][data-simulate-msclear] {
+.emotion-1::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-1::-ms-clear {
   display: none;
 }
 
-.css-15:focus ~ div:last-child,
-[data-css-15]:focus ~ div:last-child,
-.css-15[data-simulate-focus] ~ div:last-child,
-[data-css-15][data-simulate-focus] ~ div:last-child {
+.emotion-1:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #20693d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
 }
 
-.css-29,
-[data-css-29] {
+.emotion-2 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
 }
 
-.css-30,
-[data-css-30] {
+.emotion-3 {
   background-color: #ffffff;
   border-color: #2a854e;
   border-radius: 0.1875em;
@@ -3431,46 +3323,42 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-7 {
   color: #2a854e;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.css-32,
-[data-css-32] {
+.emotion-14 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-32 [role="img"],
-[data-css-32] [role="img"] {
+.emotion-14 [role="img"] {
   color: #ad5f00;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-32 [role="img"]:last-of-type,
-[data-css-32] [role="img"]:last-of-type {
+.emotion-14 [role="img"]:last-of-type {
   color: #ad5f00;
 }
 
-.css-34,
-[data-css-34] {
+.emotion-13 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3478,69 +3366,57 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-34 *,
-[data-css-34] *,
-.css-34 *::before,
-[data-css-34] *::before,
-.css-34 *::after,
-[data-css-34] *::after {
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
   box-sizing: inherit;
 }
 
-.css-34:hover > div:last-child,
-[data-css-34]:hover > div:last-child,
-.css-34[data-simulate-hover] > div:last-child,
-[data-css-34][data-simulate-hover] > div:last-child {
+.emotion-13:hover > div:last-child {
   border-color: #cf7911;
 }
 
-.css-34:focus > div:last-child,
-[data-css-34]:focus > div:last-child,
-.css-34[data-simulate-focus] > div:last-child,
-[data-css-34][data-simulate-focus] > div:last-child {
+.emotion-13:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #8a4d03;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.css-34:active > div:last-child,
-[data-css-34]:active > div:last-child,
-.css-34[data-simulate-active] > div:last-child,
-[data-css-34][data-simulate-active] > div:last-child {
+.emotion-13:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #8a4d03;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.css-34 [role="img"],
-[data-css-34] [role="img"] {
+.emotion-13 [role="img"] {
   color: #ad5f00;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-34 [role="img"]:last-of-type,
-[data-css-34] [role="img"]:last-of-type {
+.emotion-13 [role="img"]:last-of-type {
   color: #ad5f00;
 }
 
-.css-45,
-[data-css-45] {
+.emotion-10 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -3552,53 +3428,62 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-45::placeholder,
-[data-css-45]::placeholder,
-.css-45[data-simulate-placeholder],
-[data-css-45][data-simulate-placeholder] {
+.emotion-10[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-10[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-10::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-45::-ms-input-placeholder,
-[data-css-45]::-ms-input-placeholder,
-.css-45[data-simulate-msinputplaceholder],
-[data-css-45][data-simulate-msinputplaceholder] {
+.emotion-10::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-45:-ms-input-placeholder,
-[data-css-45]:-ms-input-placeholder,
-.css-45[data-simulate-msinputplaceholder],
-[data-css-45][data-simulate-msinputplaceholder] {
+.emotion-10:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-45::-ms-clear,
-[data-css-45]::-ms-clear,
-.css-45[data-simulate-msclear],
-[data-css-45][data-simulate-msclear] {
+.emotion-10::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-10::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-10:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-10::-ms-clear {
   display: none;
 }
 
-.css-45:focus ~ div:last-child,
-[data-css-45]:focus ~ div:last-child,
-.css-45[data-simulate-focus] ~ div:last-child,
-[data-css-45][data-simulate-focus] ~ div:last-child {
+.emotion-10:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #8a4d03;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.css-59,
-[data-css-59] {
+.emotion-12 {
   background-color: #ffffff;
   border-color: #ad5f00;
   border-radius: 0.1875em;
@@ -3612,46 +3497,42 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.css-60,
-[data-css-60] {
+.emotion-16 {
   color: #ad5f00;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.css-61,
-[data-css-61] {
+.emotion-23 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-61 [role="img"],
-[data-css-61] [role="img"] {
+.emotion-23 [role="img"] {
   color: #de1b1b;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-61 [role="img"]:last-of-type,
-[data-css-61] [role="img"]:last-of-type {
+.emotion-23 [role="img"]:last-of-type {
   color: #de1b1b;
 }
 
-.css-63,
-[data-css-63] {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -3659,69 +3540,57 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
   position: relative;
   z-index: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: text;
   display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 
-.css-63 *,
-[data-css-63] *,
-.css-63 *::before,
-[data-css-63] *::before,
-.css-63 *::after,
-[data-css-63] *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.css-63:hover > div:last-child,
-[data-css-63]:hover > div:last-child,
-.css-63[data-simulate-hover] > div:last-child,
-[data-css-63][data-simulate-hover] > div:last-child {
+.emotion-22:hover > div:last-child {
   border-color: #f55353;
 }
 
-.css-63:focus > div:last-child,
-[data-css-63]:focus > div:last-child,
-.css-63[data-simulate-focus] > div:last-child,
-[data-css-63][data-simulate-focus] > div:last-child {
+.emotion-22:focus > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #b80d0d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.css-63:active > div:last-child,
-[data-css-63]:active > div:last-child,
-.css-63[data-simulate-active] > div:last-child,
-[data-css-63][data-simulate-active] > div:last-child {
+.emotion-22:active > div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #b80d0d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.css-63 [role="img"],
-[data-css-63] [role="img"] {
+.emotion-22 [role="img"] {
   color: #de1b1b;
   display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 0.5em;
-  -webkit-flex: 0 0 auto;
 }
 
-.css-63 [role="img"]:last-of-type,
-[data-css-63] [role="img"]:last-of-type {
+.emotion-22 [role="img"]:last-of-type {
   color: #de1b1b;
 }
 
-.css-74,
-[data-css-74] {
+.emotion-19 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
   height: 2.857142857142857em;
@@ -3733,53 +3602,62 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   outline: 0;
   padding-left: 1.1428571428571428em;
   padding-right: 0;
-  -webkit-flex: 1 1 auto;
 }
 
-.css-74::placeholder,
-[data-css-74]::placeholder,
-.css-74[data-simulate-placeholder],
-[data-css-74][data-simulate-placeholder] {
+.emotion-19[type="search"] {
+  -webkit-appearance: none;
+}
+
+.emotion-19[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-19::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-74::-ms-input-placeholder,
-[data-css-74]::-ms-input-placeholder,
-.css-74[data-simulate-msinputplaceholder],
-[data-css-74][data-simulate-msinputplaceholder] {
+.emotion-19::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-74:-ms-input-placeholder,
-[data-css-74]:-ms-input-placeholder,
-.css-74[data-simulate-msinputplaceholder],
-[data-css-74][data-simulate-msinputplaceholder] {
+.emotion-19:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.css-74::-ms-clear,
-[data-css-74]::-ms-clear,
-.css-74[data-simulate-msclear],
-[data-css-74][data-simulate-msclear] {
+.emotion-19::placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-19::-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-19:-ms-input-placeholder {
+  color: #8e99ab;
+  -webkit-text-fill-color: #8e99ab;
+  font-style: italic;
+}
+
+.emotion-19::-ms-clear {
   display: none;
 }
 
-.css-74:focus ~ div:last-child,
-[data-css-74]:focus ~ div:last-child,
-.css-74[data-simulate-focus] ~ div:last-child,
-[data-css-74][data-simulate-focus] ~ div:last-child {
+.emotion-19:focus ~ div:last-child {
   border-color: #c8d1e0;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #b80d0d;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.css-88,
-[data-css-88] {
+.emotion-21 {
   background-color: #ffffff;
   border-color: #de1b1b;
   border-radius: 0.1875em;
@@ -3793,19 +3671,18 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.css-89,
-[data-css-89] {
+.emotion-25 {
   color: #de1b1b;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
 <DemoLayout>
-  <glamorous(div)
+  <Styled(div)
     marginBottom="1rem"
   >
     <div
-      className="css-1p1xtzc"
+      className="emotion-27"
     >
       <FormField
         caption="This is help text"
@@ -3816,14 +3693,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-8"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-13-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-13-labelText"
@@ -3831,7 +3708,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     Success
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 aria-describedby="formField-13-caption"
                 key="formField-13-control"
@@ -3856,8 +3733,8 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="success"
                 >
-                  <FauxControl
-                    className="css-2"
+                  <TextInput
+                    className="emotion-5"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -3875,14 +3752,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     variant="success"
                   >
                     <FauxControl
-                      className="css-2"
+                      className="emotion-5"
                       control={[Function]}
                       variant="success"
                     >
                       <div
-                        className="css-4"
+                        className="emotion-4"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-describedby="formField-13-caption"
                           controlPropsIn={
                             Object {
@@ -3903,11 +3780,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         >
                           <input
                             aria-describedby="formField-13-caption"
-                            className="css-15"
+                            className="emotion-1"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <IconSuccess
                           key="iconEnd"
                           size="1.5em"
@@ -3916,7 +3793,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             rtl={false}
                             size="1.5em"
                           >
-                            <glamorous(svg)
+                            <Styled(svg)
                               aria-hidden={true}
                               role="img"
                               rtl={false}
@@ -3925,7 +3802,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="css-29"
+                                className="emotion-2"
                                 role="img"
                                 viewBox="0 0 24 24"
                               >
@@ -3935,34 +3812,34 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                                   />
                                 </g>
                               </svg>
-                            </glamorous(svg)>
+                            </Styled(svg)>
                           </Icon>
                         </IconSuccess>
                         <Underlay
                           variant="success"
                         >
                           <div
-                            className="css-30"
+                            className="emotion-3"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
-            <glamorous(div)
+            <Styled(div)
               caption="This is help text"
               id="formField-13-caption"
               variant="success"
             >
               <div
-                className="css-31"
+                className="emotion-7"
                 id="formField-13-caption"
               >
                 This is help text
               </div>
-            </glamorous(div)>
+            </Styled(div)>
           </div>
         </FormField>
       </FormField>
@@ -3975,14 +3852,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-8"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-15-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-15-labelText"
@@ -3990,7 +3867,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     Warning
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 aria-describedby="formField-15-caption"
                 key="formField-15-control"
@@ -4015,8 +3892,8 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="warning"
                 >
-                  <FauxControl
-                    className="css-32"
+                  <TextInput
+                    className="emotion-14"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -4034,14 +3911,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     variant="warning"
                   >
                     <FauxControl
-                      className="css-32"
+                      className="emotion-14"
                       control={[Function]}
                       variant="warning"
                     >
                       <div
-                        className="css-34"
+                        className="emotion-13"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-describedby="formField-15-caption"
                           controlPropsIn={
                             Object {
@@ -4062,11 +3939,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         >
                           <input
                             aria-describedby="formField-15-caption"
-                            className="css-45"
+                            className="emotion-10"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <IconWarning
                           key="iconEnd"
                           size="1.5em"
@@ -4075,7 +3952,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             rtl={false}
                             size="1.5em"
                           >
-                            <glamorous(svg)
+                            <Styled(svg)
                               aria-hidden={true}
                               role="img"
                               rtl={false}
@@ -4084,7 +3961,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="css-29"
+                                className="emotion-2"
                                 role="img"
                                 viewBox="0 0 24 24"
                               >
@@ -4094,34 +3971,34 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                                   />
                                 </g>
                               </svg>
-                            </glamorous(svg)>
+                            </Styled(svg)>
                           </Icon>
                         </IconWarning>
                         <Underlay
                           variant="warning"
                         >
                           <div
-                            className="css-59"
+                            className="emotion-12"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
-            <glamorous(div)
+            <Styled(div)
               caption="This is help text"
               id="formField-15-caption"
               variant="warning"
             >
               <div
-                className="css-60"
+                className="emotion-16"
                 id="formField-15-caption"
               >
                 This is help text
               </div>
-            </glamorous(div)>
+            </Styled(div)>
           </div>
         </FormField>
       </FormField>
@@ -4134,14 +4011,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="css-0"
+            className="emotion-8"
           >
             <label>
-              <glamorous(div)
+              <Styled(div)
                 key="formField-17-textWrapper"
               >
                 <div
-                  className="css-1"
+                  className="emotion-0"
                 >
                   <span
                     id="formField-17-labelText"
@@ -4149,7 +4026,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     Danger
                   </span>
                 </div>
-              </glamorous(div)>
+              </Styled(div)>
               <TextInput
                 aria-describedby="formField-17-caption"
                 key="formField-17-control"
@@ -4174,8 +4051,8 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="danger"
                 >
-                  <FauxControl
-                    className="css-61"
+                  <TextInput
+                    className="emotion-23"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -4193,14 +4070,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     variant="danger"
                   >
                     <FauxControl
-                      className="css-61"
+                      className="emotion-23"
                       control={[Function]}
                       variant="danger"
                     >
                       <div
-                        className="css-63"
+                        className="emotion-22"
                       >
-                        <glamorous(glamorous(input))
+                        <Control
                           aria-describedby="formField-17-caption"
                           controlPropsIn={
                             Object {
@@ -4221,11 +4098,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         >
                           <input
                             aria-describedby="formField-17-caption"
-                            className="css-74"
+                            className="emotion-19"
                             size="large"
                             type="text"
                           />
-                        </glamorous(glamorous(input))>
+                        </Control>
                         <IconDanger
                           key="iconEnd"
                           size="1.5em"
@@ -4234,7 +4111,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             rtl={false}
                             size="1.5em"
                           >
-                            <glamorous(svg)
+                            <Styled(svg)
                               aria-hidden={true}
                               role="img"
                               rtl={false}
@@ -4243,7 +4120,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="css-29"
+                                className="emotion-2"
                                 role="img"
                                 viewBox="0 0 24 24"
                               >
@@ -4253,38 +4130,38 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                                   />
                                 </g>
                               </svg>
-                            </glamorous(svg)>
+                            </Styled(svg)>
                           </Icon>
                         </IconDanger>
                         <Underlay
                           variant="danger"
                         >
                           <div
-                            className="css-88"
+                            className="emotion-21"
                           />
                         </Underlay>
                       </div>
                     </FauxControl>
-                  </FauxControl>
+                  </TextInput>
                 </TextInput>
               </TextInput>
             </label>
-            <glamorous(div)
+            <Styled(div)
               caption="This is help text"
               id="formField-17-caption"
               variant="danger"
             >
               <div
-                className="css-89"
+                className="emotion-25"
                 id="formField-17-caption"
               >
                 This is help text
               </div>
-            </glamorous(div)>
+            </Styled(div)>
           </div>
         </FormField>
       </FormField>
     </div>
-  </glamorous(div)>
+  </Styled(div)>
 </DemoLayout>
 `;

@@ -1,68 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link demo examples Snapshots: basic 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-8 {
   font-family: "Open Sans";
 }
 
-.css-1,
-[data-css-1] {
+.emotion-1 {
   font-size: 1.5em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-0 {
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-2:hover,
-[data-css-2]:hover,
-.css-2[data-simulate-hover],
-[data-css-2][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-2:focus,
-[data-css-2]:focus,
-.css-2[data-simulate-focus],
-[data-css-2][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-2:active,
-[data-css-2]:active,
-.css-2[data-simulate-active],
-[data-css-2][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
-.css-12,
-[data-css-12] {
+.emotion-3 {
   font-size: 0.75em;
 }
 
-.css-13,
-[data-css-13] {
+.emotion-5 {
   font-weight: 700;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-7 {
   font-family: serif;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-0"
+    className="emotion-8"
   >
-    <glamorous(p)>
+    <Styled(p)>
       <p
-        className="css-1"
+        className="emotion-1"
       >
         Lorem ipsum dolor sit amet, 
         <Link
@@ -80,7 +67,7 @@ exports[`Link demo examples Snapshots: basic 1`] = `
               variant="regular"
             >
               <a
-                className="css-2"
+                className="emotion-0"
                 href="http://example.com"
                 target="_blank"
               >
@@ -91,10 +78,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
         </Link>
          adipiscing elit,
       </p>
-    </glamorous(p)>
-    <glamorous(p)>
+    </Styled(p)>
+    <Styled(p)>
       <p
-        className="css-12"
+        className="emotion-3"
       >
         sed do eiusmod tempor 
         <Link
@@ -112,7 +99,7 @@ exports[`Link demo examples Snapshots: basic 1`] = `
               variant="regular"
             >
               <a
-                className="css-2"
+                className="emotion-0"
                 href="http://example.com"
                 target="_blank"
               >
@@ -123,10 +110,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
         </Link>
          ut labore et dolore magna aliqua.
       </p>
-    </glamorous(p)>
-    <glamorous(p)>
+    </Styled(p)>
+    <Styled(p)>
       <p
-        className="css-13"
+        className="emotion-5"
       >
         Ut enim 
         <Link
@@ -144,7 +131,7 @@ exports[`Link demo examples Snapshots: basic 1`] = `
               variant="regular"
             >
               <a
-                className="css-2"
+                className="emotion-0"
                 href="http://example.com"
                 target="_blank"
               >
@@ -155,10 +142,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
         </Link>
          quis nostrud exercitation
       </p>
-    </glamorous(p)>
-    <glamorous(p)>
+    </Styled(p)>
+    <Styled(p)>
       <p
-        className="css-14"
+        className="emotion-7"
       >
         ullamco laboris 
         <Link
@@ -176,7 +163,7 @@ exports[`Link demo examples Snapshots: basic 1`] = `
               variant="regular"
             >
               <a
-                className="css-2"
+                className="emotion-0"
                 href="http://example.com"
                 target="_blank"
               >
@@ -187,17 +174,16 @@ exports[`Link demo examples Snapshots: basic 1`] = `
         </Link>
          aliquip ex ea commodo consequat.
       </p>
-    </glamorous(p)>
+    </Styled(p)>
   </div>
-</glamorous(div)>
+</Styled(div)>
 `;
 
 exports[`Link demo examples Snapshots: button 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
-  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
@@ -214,94 +200,77 @@ exports[`Link demo examples Snapshots: button 1`] = `
   height: 2.5em;
   min-width: 2.5em;
   padding: 0 0.5em;
+  -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
 }
 
-.css-0 *,
-[data-css-0] *,
-.css-0 *::before,
-[data-css-0] *::before,
-.css-0 *::after,
-[data-css-0] *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-2:focus {
   background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #1d5bbf;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-2:hover {
   background-color: #f5f7fa;
   color: #333840;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-2:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.css-0::-moz-focus-inner,
-[data-css-0]::-moz-focus-inner,
-.css-0[data-simulate-mozfocusinner],
-[data-css-0][data-simulate-mozfocusinner] {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.css-0 [role="img"],
-[data-css-0] [role="img"] {
+.emotion-2 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.css-0 [role="img"]:first-child,
-[data-css-0] [role="img"]:first-child {
+.emotion-2 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.css-0 [role="img"]:last-child,
-[data-css-0] [role="img"]:last-child {
+.emotion-2 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.css-0 [role="img"]:only-child,
-[data-css-0] [role="img"]:only-child {
+.emotion-2 [role="img"]:only-child {
   margin: 0;
 }
 
-.css-14,
-[data-css-14] {
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
 }
 
-.css-15,
-[data-css-15] {
+.emotion-0 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -312,17 +281,11 @@ exports[`Link demo examples Snapshots: button 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.css-15:first-child,
-[data-css-15]:first-child,
-.css-15[data-simulate-firstchild],
-[data-css-15][data-simulate-firstchild] {
+.emotion-0:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.css-15:last-child,
-[data-css-15]:last-child,
-.css-15[data-simulate-lastchild],
-[data-css-15][data-simulate-lastchild] {
+.emotion-0:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -333,7 +296,7 @@ exports[`Link demo examples Snapshots: button 1`] = `
   type="button"
   variant="regular"
 >
-  <glamorous(a)
+  <Button
     element="a"
     href="#button"
     size="large"
@@ -342,57 +305,49 @@ exports[`Link demo examples Snapshots: button 1`] = `
     variant="regular"
   >
     <a
-      className="css-0"
+      className="emotion-2"
       href="#button"
     >
-      <glamorous(span)>
+      <Styled(span)>
         <span
-          className="css-14"
+          className="emotion-1"
         >
-          <glamorous(span)
+          <Styled(span)
             size="large"
           >
             <span
-              className="css-15"
+              className="emotion-0"
             >
               Link
             </span>
-          </glamorous(span)>
+          </Styled(span)>
         </span>
-      </glamorous(span)>
+      </Styled(span)>
     </a>
-  </glamorous(a)>
+  </Button>
 </Button>
 `;
 
 exports[`Link demo examples Snapshots: children 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
@@ -411,7 +366,7 @@ exports[`Link demo examples Snapshots: children 1`] = `
       variant="regular"
     >
       <a
-        className="css-0"
+        className="emotion-0"
         href="http://example.com"
         target="_blank"
       >
@@ -426,44 +381,35 @@ exports[`Link demo examples Snapshots: children 1`] = `
 `;
 
 exports[`Link demo examples Snapshots: other 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-2 {
   font-family: "Open Sans";
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-1:hover,
-[data-css-1]:hover,
-.css-1[data-simulate-hover],
-[data-css-1][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-1:focus,
-[data-css-1]:focus,
-.css-1[data-simulate-focus],
-[data-css-1][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-1:active,
-[data-css-1]:active,
-.css-1[data-simulate-active],
-[data-css-1][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
-<glamorous(div)>
+<Styled(div)>
   <div
-    className="css-0"
+    className="emotion-2"
   >
     <BrowserRouter>
       <Router
@@ -494,16 +440,17 @@ exports[`Link demo examples Snapshots: other 1`] = `
           variant="regular"
         >
           <Link
+            replace={false}
             to="/components/link"
             variant="regular"
           >
             <Link
-              className="css-1"
+              className="emotion-0"
               replace={false}
               to="/components/link"
             >
               <a
-                className="css-1"
+                className="emotion-0"
                 href="/components/link"
                 onClick={[Function]}
               >
@@ -515,1094 +462,255 @@ exports[`Link demo examples Snapshots: other 1`] = `
       </Router>
     </BrowserRouter>
   </div>
-</glamorous(div)>
-`;
-
-exports[`Link demo examples Snapshots: states 1`] = `
-.css-0,
-[data-css-0] {
-  color: #3272d9;
-  text-decoration: none;
-}
-
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
-  color: #5691f0;
-  text-decoration: underline;
-}
-
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
-  color: #3272d9;
-  outline: 1px solid #1d5bbf;
-  outline-offset: 2px;
-}
-
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
-  color: #1d5bbf;
-}
-
-.css-10,
-[data-css-10] {
-  font-family: "Open Sans";
-}
-
-.css-10 > a,
-[data-css-10] > a {
-  margin-right: 0.5rem;
-}
-
-.css-11,
-[data-css-11] {
-  color: #de1b1b;
-  text-decoration: none;
-}
-
-.css-11:hover,
-[data-css-11]:hover,
-.css-11[data-simulate-hover],
-[data-css-11][data-simulate-hover] {
-  color: #f55353;
-  text-decoration: underline;
-}
-
-.css-11:focus,
-[data-css-11]:focus,
-.css-11[data-simulate-focus],
-[data-css-11][data-simulate-focus] {
-  color: #de1b1b;
-  outline: 1px solid #b80d0d;
-  outline-offset: 2px;
-}
-
-.css-11:active,
-[data-css-11]:active,
-.css-11[data-simulate-active],
-[data-css-11][data-simulate-active] {
-  color: #b80d0d;
-}
-
-.css-21,
-[data-css-21] {
-  color: #2a854e;
-  text-decoration: none;
-}
-
-.css-21:hover,
-[data-css-21]:hover,
-.css-21[data-simulate-hover],
-[data-css-21][data-simulate-hover] {
-  color: #3ba164;
-  text-decoration: underline;
-}
-
-.css-21:focus,
-[data-css-21]:focus,
-.css-21[data-simulate-focus],
-[data-css-21][data-simulate-focus] {
-  color: #2a854e;
-  outline: 1px solid #20693d;
-  outline-offset: 2px;
-}
-
-.css-21:active,
-[data-css-21]:active,
-.css-21[data-simulate-active],
-[data-css-21][data-simulate-active] {
-  color: #20693d;
-}
-
-.css-31,
-[data-css-31] {
-  color: #ad5f00;
-  text-decoration: none;
-}
-
-.css-31:hover,
-[data-css-31]:hover,
-.css-31[data-simulate-hover],
-[data-css-31][data-simulate-hover] {
-  color: #cf7911;
-  text-decoration: underline;
-}
-
-.css-31:focus,
-[data-css-31]:focus,
-.css-31[data-simulate-focus],
-[data-css-31][data-simulate-focus] {
-  color: #ad5f00;
-  outline: 1px solid #8a4d03;
-  outline-offset: 2px;
-}
-
-.css-31:active,
-[data-css-31]:active,
-.css-31[data-simulate-active],
-[data-css-31][data-simulate-active] {
-  color: #8a4d03;
-}
-
-<glamorous(glamorous(div))>
-  <div
-    className="css-10"
-  >
-    <Link
-      href="http://example.com"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            href="http://example.com"
-            target="_blank"
-          >
-            Regular
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-hover=""
-      href="http://example.com"
-    >
-      <Link
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      href="http://example.com"
-    >
-      <Link
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      data-simulate-hover=""
-      href="http://example.com"
-    >
-      <Link
-        data-simulate-focus=""
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          data-simulate-focus=""
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            data-simulate-focus=""
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      data-simulate-focus=""
-      href="http://example.com"
-    >
-      <Link
-        data-simulate-active=""
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          data-simulate-active=""
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            data-simulate-active=""
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      href="http://example.com"
-    >
-      <Link
-        data-simulate-active=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
-      >
-        <Link
-          data-simulate-active=""
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
-        >
-          <a
-            className="css-0"
-            data-simulate-active=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <br />
-    <br />
-    <Link
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            href="http://example.com"
-            target="_blank"
-          >
-            Danger
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        data-simulate-focus=""
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          data-simulate-focus=""
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            data-simulate-focus=""
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        data-simulate-active=""
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          data-simulate-active=""
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            data-simulate-active=""
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        data-simulate-active=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          data-simulate-active=""
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
-            data-simulate-active=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <br />
-    <br />
-    <Link
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            href="http://example.com"
-            target="_blank"
-          >
-            Success
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        data-simulate-focus=""
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          data-simulate-focus=""
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            data-simulate-focus=""
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        data-simulate-active=""
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          data-simulate-active=""
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            data-simulate-active=""
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        data-simulate-active=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          data-simulate-active=""
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
-            data-simulate-active=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <br />
-    <br />
-    <Link
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            href="http://example.com"
-            target="_blank"
-          >
-            Warning
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-focus=""
-      data-simulate-hover=""
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        data-simulate-focus=""
-        data-simulate-hover=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          data-simulate-focus=""
-          data-simulate-hover=""
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            data-simulate-focus=""
-            data-simulate-hover=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Hover
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      data-simulate-focus=""
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        data-simulate-active=""
-        data-simulate-focus=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          data-simulate-active=""
-          data-simulate-focus=""
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            data-simulate-active=""
-            data-simulate-focus=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Focus & Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      data-simulate-active=""
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        data-simulate-active=""
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          data-simulate-active=""
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
-            data-simulate-active=""
-            href="http://example.com"
-            target="_blank"
-          >
-            Active
-          </a>
-        </Link>
-      </Link>
-    </Link>
-  </div>
-</glamorous(glamorous(div))>
+</Styled(div)>
 `;
 
 exports[`Link demo examples Snapshots: variants 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   color: #3272d9;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-0:hover,
-[data-css-0]:hover,
-.css-0[data-simulate-hover],
-[data-css-0][data-simulate-hover] {
+.emotion-0:hover {
   color: #5691f0;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-0:focus,
-[data-css-0]:focus,
-.css-0[data-simulate-focus],
-[data-css-0][data-simulate-focus] {
+.emotion-0:focus {
   color: #3272d9;
   outline: 1px solid #1d5bbf;
   outline-offset: 2px;
 }
 
-.css-0:active,
-[data-css-0]:active,
-.css-0[data-simulate-active],
-[data-css-0][data-simulate-active] {
+.emotion-0:active {
   color: #1d5bbf;
 }
 
-.css-10,
-[data-css-10] {
-  font-family: "Open Sans";
+.emotion-5 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-.css-10 > a,
-[data-css-10] > a {
-  margin-right: 0.5rem;
+.emotion-5 *,
+.emotion-5 *::before,
+.emotion-5 *::after {
+  box-sizing: inherit;
 }
 
-.css-11,
-[data-css-11] {
+.emotion-4 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.emotion-4[class] > *:not(:last-child) {
+  margin-right: 1em;
+  margin-bottom: 1rem;
+}
+
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-1 {
   color: #de1b1b;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-11:hover,
-[data-css-11]:hover,
-.css-11[data-simulate-hover],
-[data-css-11][data-simulate-hover] {
+.emotion-1:hover {
   color: #f55353;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-11:focus,
-[data-css-11]:focus,
-.css-11[data-simulate-focus],
-[data-css-11][data-simulate-focus] {
+.emotion-1:focus {
   color: #de1b1b;
   outline: 1px solid #b80d0d;
   outline-offset: 2px;
 }
 
-.css-11:active,
-[data-css-11]:active,
-.css-11[data-simulate-active],
-[data-css-11][data-simulate-active] {
+.emotion-1:active {
   color: #b80d0d;
 }
 
-.css-21,
-[data-css-21] {
+.emotion-2 {
   color: #2a854e;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-21:hover,
-[data-css-21]:hover,
-.css-21[data-simulate-hover],
-[data-css-21][data-simulate-hover] {
+.emotion-2:hover {
   color: #3ba164;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-21:focus,
-[data-css-21]:focus,
-.css-21[data-simulate-focus],
-[data-css-21][data-simulate-focus] {
+.emotion-2:focus {
   color: #2a854e;
   outline: 1px solid #20693d;
   outline-offset: 2px;
 }
 
-.css-21:active,
-[data-css-21]:active,
-.css-21[data-simulate-active],
-[data-css-21][data-simulate-active] {
+.emotion-2:active {
   color: #20693d;
 }
 
-.css-31,
-[data-css-31] {
+.emotion-3 {
   color: #ad5f00;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.css-31:hover,
-[data-css-31]:hover,
-.css-31[data-simulate-hover],
-[data-css-31][data-simulate-hover] {
+.emotion-3:hover {
   color: #cf7911;
+  -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.css-31:focus,
-[data-css-31]:focus,
-.css-31[data-simulate-focus],
-[data-css-31][data-simulate-focus] {
+.emotion-3:focus {
   color: #ad5f00;
   outline: 1px solid #8a4d03;
   outline-offset: 2px;
 }
 
-.css-31:active,
-[data-css-31]:active,
-.css-31[data-simulate-active],
-[data-css-31][data-simulate-active] {
+.emotion-3:active {
   color: #8a4d03;
 }
 
-<glamorous(glamorous(div))>
-  <div
-    className="css-10"
+<withProps(Styled(DemoLayout))>
+  <Styled(DemoLayout)
+    marginRight="1em"
   >
-    <Link
-      href="http://example.com"
+    <DemoLayout
+      className="emotion-5"
+      marginRight="1em"
     >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="regular"
+      <Styled(div)
+        className="emotion-5"
+        marginBottom="1rem"
+        marginRight="1em"
       >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="regular"
+        <div
+          className="emotion-4"
         >
-          <a
-            className="css-0"
+          <Link
             href="http://example.com"
-            target="_blank"
           >
-            Regular
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      href="http://example.com"
-      variant="danger"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="danger"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="danger"
-        >
-          <a
-            className="css-11"
+            <Link
+              element="a"
+              href="http://example.com"
+              target="_blank"
+              variant="regular"
+            >
+              <Link
+                href="http://example.com"
+                target="_blank"
+                variant="regular"
+              >
+                <a
+                  className="emotion-0"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  Regular
+                </a>
+              </Link>
+            </Link>
+          </Link>
+          <Link
             href="http://example.com"
-            target="_blank"
+            variant="danger"
           >
-            Danger
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      href="http://example.com"
-      variant="success"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="success"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="success"
-        >
-          <a
-            className="css-21"
+            <Link
+              element="a"
+              href="http://example.com"
+              target="_blank"
+              variant="danger"
+            >
+              <Link
+                href="http://example.com"
+                target="_blank"
+                variant="danger"
+              >
+                <a
+                  className="emotion-1"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  Danger
+                </a>
+              </Link>
+            </Link>
+          </Link>
+          <Link
             href="http://example.com"
-            target="_blank"
+            variant="success"
           >
-            Success
-          </a>
-        </Link>
-      </Link>
-    </Link>
-    <Link
-      href="http://example.com"
-      variant="warning"
-    >
-      <Link
-        element="a"
-        href="http://example.com"
-        target="_blank"
-        variant="warning"
-      >
-        <Link
-          href="http://example.com"
-          target="_blank"
-          variant="warning"
-        >
-          <a
-            className="css-31"
+            <Link
+              element="a"
+              href="http://example.com"
+              target="_blank"
+              variant="success"
+            >
+              <Link
+                href="http://example.com"
+                target="_blank"
+                variant="success"
+              >
+                <a
+                  className="emotion-2"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  Success
+                </a>
+              </Link>
+            </Link>
+          </Link>
+          <Link
             href="http://example.com"
-            target="_blank"
+            variant="warning"
           >
-            Warning
-          </a>
-        </Link>
-      </Link>
-    </Link>
-  </div>
-</glamorous(glamorous(div))>
+            <Link
+              element="a"
+              href="http://example.com"
+              target="_blank"
+              variant="warning"
+            >
+              <Link
+                href="http://example.com"
+                target="_blank"
+                variant="warning"
+              >
+                <a
+                  className="emotion-3"
+                  href="http://example.com"
+                  target="_blank"
+                >
+                  Warning
+                </a>
+              </Link>
+            </Link>
+          </Link>
+        </div>
+      </Styled(div)>
+    </DemoLayout>
+  </Styled(DemoLayout)>
+</withProps(Styled(DemoLayout))>
 `;

@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon demo examples Snapshots: color 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   color: coral;
   fill: currentcolor;
   font-size: 16px;
@@ -18,7 +17,7 @@ exports[`Icon demo examples Snapshots: color 1`] = `
     rtl={false}
     size="medium"
   >
-    <glamorous(svg)
+    <Styled(svg)
       aria-hidden={true}
       color="coral"
       role="img"
@@ -28,7 +27,7 @@ exports[`Icon demo examples Snapshots: color 1`] = `
     >
       <svg
         aria-hidden={true}
-        className="css-0"
+        className="emotion-0"
         color="coral"
         role="img"
         viewBox="0 0 24 24"
@@ -49,14 +48,13 @@ exports[`Icon demo examples Snapshots: color 1`] = `
           />
         </g>
       </svg>
-    </glamorous(svg)>
+    </Styled(svg)>
   </Icon>
 </IconSentimentSatisfied>
 `;
 
 exports[`Icon demo examples Snapshots: custom 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 7em;
@@ -67,7 +65,7 @@ exports[`Icon demo examples Snapshots: custom 1`] = `
   size="7em"
   title="CA Technologies"
 >
-  <glamorous(svg)
+  <Styled(svg)
     aria-hidden={null}
     aria-labelledby="icon-title-icon-17"
     role="img"
@@ -77,7 +75,7 @@ exports[`Icon demo examples Snapshots: custom 1`] = `
     <svg
       aria-hidden={null}
       aria-labelledby="icon-title-icon-17"
-      className="css-0"
+      className="emotion-0"
       role="img"
       viewBox="0 0 24 24"
     >
@@ -145,13 +143,12 @@ exports[`Icon demo examples Snapshots: custom 1`] = `
         </g>
       </svg>
     </svg>
-  </glamorous(svg)>
+  </Styled(svg)>
 </Icon>
 `;
 
 exports[`Icon demo examples Snapshots: icon 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
@@ -163,7 +160,7 @@ exports[`Icon demo examples Snapshots: icon 1`] = `
     rtl={false}
     size="medium"
   >
-    <glamorous(svg)
+    <Styled(svg)
       aria-hidden={true}
       role="img"
       rtl={false}
@@ -172,7 +169,7 @@ exports[`Icon demo examples Snapshots: icon 1`] = `
     >
       <svg
         aria-hidden={true}
-        className="css-0"
+        className="emotion-0"
         role="img"
         viewBox="0 0 24 24"
       >
@@ -192,20 +189,20 @@ exports[`Icon demo examples Snapshots: icon 1`] = `
           />
         </g>
       </svg>
-    </glamorous(svg)>
+    </Styled(svg)>
   </Icon>
 </IconSentimentSatisfied>
 `;
 
 exports[`Icon demo examples Snapshots: rtl 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 1em;
-  -webkit-transform: scaleX(-1);
 }
 
 <ThemeProvider>
@@ -215,7 +212,7 @@ exports[`Icon demo examples Snapshots: rtl 1`] = `
         rtl={true}
         size="medium"
       >
-        <glamorous(svg)
+        <Styled(svg)
           aria-hidden={true}
           role="img"
           rtl={true}
@@ -224,7 +221,7 @@ exports[`Icon demo examples Snapshots: rtl 1`] = `
         >
           <svg
             aria-hidden={true}
-            className="css-0"
+            className="emotion-0"
             role="img"
             viewBox="0 0 24 24"
           >
@@ -234,7 +231,7 @@ exports[`Icon demo examples Snapshots: rtl 1`] = `
               />
             </g>
           </svg>
-        </glamorous(svg)>
+        </Styled(svg)>
       </Icon>
     </IconHelp>
   </ThemeProvider>
@@ -242,32 +239,28 @@ exports[`Icon demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Icon demo examples Snapshots: sizes 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-1 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
   width: 1em;
 }
 
-.css-1,
-[data-css-1] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 0.75em;
   width: 0.75em;
 }
 
-.css-2,
-[data-css-2] {
+.emotion-2 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.25em;
   width: 1.25em;
 }
 
-.css-3,
-[data-css-3] {
+.emotion-3 {
   fill: currentcolor;
   font-size: 16px;
   height: 7em;
@@ -282,7 +275,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       rtl={false}
       size="small"
     >
-      <glamorous(svg)
+      <Styled(svg)
         aria-hidden={true}
         role="img"
         rtl={false}
@@ -291,7 +284,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="css-1"
+          className="emotion-0"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -311,7 +304,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
             />
           </g>
         </svg>
-      </glamorous(svg)>
+      </Styled(svg)>
     </Icon>
   </IconSentimentSatisfied>
   <IconSentimentSatisfied>
@@ -319,7 +312,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       rtl={false}
       size="medium"
     >
-      <glamorous(svg)
+      <Styled(svg)
         aria-hidden={true}
         role="img"
         rtl={false}
@@ -328,7 +321,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="css-0"
+          className="emotion-1"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -348,7 +341,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
             />
           </g>
         </svg>
-      </glamorous(svg)>
+      </Styled(svg)>
     </Icon>
   </IconSentimentSatisfied>
   <IconSentimentSatisfied
@@ -358,7 +351,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       rtl={false}
       size="large"
     >
-      <glamorous(svg)
+      <Styled(svg)
         aria-hidden={true}
         role="img"
         rtl={false}
@@ -367,7 +360,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="css-2"
+          className="emotion-2"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -387,7 +380,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
             />
           </g>
         </svg>
-      </glamorous(svg)>
+      </Styled(svg)>
     </Icon>
   </IconSentimentSatisfied>
   <IconSentimentSatisfied
@@ -397,7 +390,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       rtl={false}
       size="7em"
     >
-      <glamorous(svg)
+      <Styled(svg)
         aria-hidden={true}
         role="img"
         rtl={false}
@@ -406,7 +399,7 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
       >
         <svg
           aria-hidden={true}
-          className="css-3"
+          className="emotion-3"
           role="img"
           viewBox="0 0 24 24"
         >
@@ -426,15 +419,14 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
             />
           </g>
         </svg>
-      </glamorous(svg)>
+      </Styled(svg)>
     </Icon>
   </IconSentimentSatisfied>
 </div>
 `;
 
 exports[`Icon demo examples Snapshots: title 1`] = `
-.css-0,
-[data-css-0] {
+.emotion-0 {
   fill: currentcolor;
   font-size: 16px;
   height: 1em;
@@ -449,7 +441,7 @@ exports[`Icon demo examples Snapshots: title 1`] = `
     size="medium"
     title="smiley-face"
   >
-    <glamorous(svg)
+    <Styled(svg)
       aria-hidden={null}
       aria-labelledby="icon-title-icon-13"
       role="img"
@@ -460,7 +452,7 @@ exports[`Icon demo examples Snapshots: title 1`] = `
       <svg
         aria-hidden={null}
         aria-labelledby="icon-title-icon-13"
-        className="css-0"
+        className="emotion-0"
         role="img"
         viewBox="0 0 24 24"
       >
@@ -485,7 +477,7 @@ exports[`Icon demo examples Snapshots: title 1`] = `
           />
         </g>
       </svg>
-    </glamorous(svg)>
+    </Styled(svg)>
   </Icon>
 </IconSentimentSatisfied>
 `;
