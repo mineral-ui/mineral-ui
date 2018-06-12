@@ -134,7 +134,7 @@ const styles = {
         }
       },
 
-      '&:checked,[type="checkbox"]:indeterminate': {
+      '&:checked,&[type="checkbox"]:indeterminate': {
         '& + span': {
           backgroundColor: theme.ChoiceControl_backgroundColor_checked,
           borderColor: theme.ChoiceControl_borderColor_checked
