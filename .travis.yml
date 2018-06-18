@@ -3,7 +3,7 @@ before_script:
 - npm run build
 script:
 - if [[ "$TEST_SUITE" == "unit" ]]; then npm test; fi
-- if [[ "$TEST_SUITE" == "happo" ]]; then bash scripts/happo-ci.sh; fi
+- if [[ "$TEST_SUITE" == "happo" ]]; then npm run --silent happo-ci-travis; fi
 notifications:
   flowdock:
     secure: nDmveWk8FxW7X27JTblJs+UoDLUPp74dN1BW2klZUcGgolzvTRPn7T7oNuMgcFKK4/14SBYOwNuDoK4I2z3cUzT6BdU9xwzWuNnMtsSUGrvgJzbJornbP2vpAHAWA4Fk2FX7+RtdIRSEdctxis4R0sVei19uDJw6DaJNfRfUHzwKuJPbIwHx9smTVJ5IqkTZE9BE1ZEYZgunSrxq7OJAVYC/m1R7dA/6NqbAiYZpoQQdrDZb8p1NNpislg3RDj5DpT1Ax/0orBe/DqUX5PN9ELGQ7LbWVdYdEOhzTUDCN2NFvpNC13wgUCWGIbLtR8jpQNcfaaQqovFmnd++K7Ay6Em8z4/+zyy26DKRPS3nxoMQTGjdCWj3ESvOT2vuxAmJG/6F5BW7mOFwrDe4uMAYHuawEIRUtuFW0+qC7dTOJ+hEeZ49wvpqDTRx8l1+uXmRTcjiWKp0Wm/88Rrl0+JcDkrzR6RfLhf8aFKAMbayax13E/0HSdTpy4fdP2WDrHpW2xCv+hB9K7NuQA9fYz+aMFuG4X6R1vZ0SjLPWICnGa1FSShWv6ss104KumW1j01Iqth+H7ZVXnQCAsciRAir2zDNSkW2awzGn5dpvW5dKfWcAYJgk8UoINu+yAcQCiGUcqAeX3NCz4xv6n3Sz7x2jORZM93tNMNGIC7DfhKMqb4=
