@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button demo examples Snapshots: circular 1`] = `
-.emotion-18 > * {
+.emotion-18[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -20,6 +20,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -55,6 +56,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -128,6 +130,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -200,6 +203,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -272,6 +276,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0.1875em;
   -webkit-text-decoration: none;
@@ -345,6 +350,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2em;
+  margin: 0;
   min-width: 2em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -418,6 +424,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 3.25em;
+  margin: 0;
   min-width: 3.25em;
   padding: 0.8125em;
   -webkit-text-decoration: none;
@@ -495,7 +502,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -503,7 +509,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               element="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -557,7 +562,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             primary={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -566,7 +570,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               primary={true}
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -620,7 +623,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             minimal={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -629,7 +631,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               minimal={true}
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -682,7 +683,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             iconStart={<IconCloud />}
             size="small"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -690,7 +690,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               element="button"
               size="small"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -743,7 +742,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             iconStart={<IconCloud />}
             size="medium"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -751,7 +749,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               element="button"
               size="medium"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -804,7 +801,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
             iconStart={<IconCloud />}
             size="jumbo"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -812,7 +808,6 @@ exports[`Button demo examples Snapshots: circular 1`] = `
               element="button"
               size="jumbo"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -866,7 +861,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: default 1`] = `
-.emotion-15 > * {
+.emotion-15[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -885,6 +880,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -925,6 +921,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -998,6 +995,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1071,6 +1069,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1144,6 +1143,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1217,6 +1217,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1287,14 +1288,12 @@ exports[`Button demo examples Snapshots: default 1`] = `
           element="button"
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
             size="large"
             text="Default"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-2"
@@ -1428,7 +1427,6 @@ exports[`Button demo examples Snapshots: default 1`] = `
           element="button"
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             disabled={true}
@@ -1436,7 +1434,6 @@ exports[`Button demo examples Snapshots: default 1`] = `
             size="large"
             text="Disabled"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-14"
@@ -1468,7 +1465,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: icon-only 1`] = `
-.emotion-18 > * {
+.emotion-18[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -1487,6 +1484,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1522,6 +1520,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -1595,6 +1594,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -1667,6 +1667,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -1739,6 +1740,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0.1875em;
   -webkit-text-decoration: none;
@@ -1812,6 +1814,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2em;
+  margin: 0;
   min-width: 2em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -1885,6 +1888,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 3.25em;
+  margin: 0;
   min-width: 3.25em;
   padding: 0.8125em;
   -webkit-text-decoration: none;
@@ -1961,14 +1965,12 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
               element="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2021,7 +2023,6 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             primary={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -2029,7 +2030,6 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
               primary={true}
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2082,7 +2082,6 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             minimal={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
@@ -2090,7 +2089,6 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
               minimal={true}
               size="large"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2142,14 +2140,12 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             iconStart={<IconCloud />}
             size="small"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
               element="button"
               size="small"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2201,14 +2197,12 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             iconStart={<IconCloud />}
             size="medium"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
               element="button"
               size="medium"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2260,14 +2254,12 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
             iconStart={<IconCloud />}
             size="jumbo"
             type="button"
-            variant="regular"
           >
             <Button
               aria-label="Cloud"
               element="button"
               size="jumbo"
               type="button"
-              variant="regular"
             >
               <button
                 aria-label="Cloud"
@@ -2321,7 +2313,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: icons 1`] = `
-.emotion-53 > * {
+.emotion-53[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -2344,6 +2336,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2412,6 +2405,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2452,6 +2446,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2525,6 +2520,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2598,6 +2594,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2671,6 +2668,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2744,6 +2742,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2814,6 +2813,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2886,6 +2886,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2970,6 +2971,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2em;
+  margin: 0;
   min-width: 2em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3054,6 +3056,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 3.25em;
+  margin: 0;
   min-width: 3.25em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3162,14 +3165,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="Start icon"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-3"
@@ -3228,14 +3229,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconEnd={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="End icon"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-3"
@@ -3295,14 +3294,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="Both icons"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-3"
@@ -3394,7 +3391,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             primary={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
@@ -3402,7 +3398,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
               size="large"
               text="Primary"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-16"
@@ -3462,7 +3457,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             minimal={true}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
@@ -3470,7 +3464,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
               size="large"
               text="Minimal"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-20"
@@ -3728,7 +3721,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               disabled={true}
@@ -3736,7 +3728,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
               size="large"
               text="Disabled"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-36"
@@ -3798,14 +3789,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="small"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="small"
               text="Small"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-40"
@@ -3864,14 +3853,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="medium"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="medium"
               text="Medium"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-44"
@@ -3930,14 +3917,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="Large"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-3"
@@ -3996,14 +3981,12 @@ exports[`Button demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="jumbo"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="jumbo"
               text="Jumbo"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-52"
@@ -4079,6 +4062,7 @@ exports[`Button demo examples Snapshots: link 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4119,6 +4103,7 @@ exports[`Button demo examples Snapshots: link 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4179,7 +4164,6 @@ exports[`Button demo examples Snapshots: link 1`] = `
   href="#link"
   size="large"
   type="button"
-  variant="regular"
 >
   <Button
     element="a"
@@ -4187,7 +4171,6 @@ exports[`Button demo examples Snapshots: link 1`] = `
     size="large"
     text="Link"
     type="button"
-    variant="regular"
   >
     <a
       className="emotion-2"
@@ -4214,7 +4197,7 @@ exports[`Button demo examples Snapshots: link 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: minimal 1`] = `
-.emotion-15 > * {
+.emotion-15[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -4233,6 +4216,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4273,6 +4257,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4345,6 +4330,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4417,6 +4403,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4489,6 +4476,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4561,6 +4549,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4631,7 +4620,6 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
           minimal={true}
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
@@ -4639,7 +4627,6 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
             size="large"
             text="Default"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-2"
@@ -4780,7 +4767,6 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
           minimal={true}
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             disabled={true}
@@ -4789,7 +4775,6 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
             size="large"
             text="Disabled"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-14"
@@ -4821,7 +4806,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: primary 1`] = `
-.emotion-15 > * {
+.emotion-15[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -4844,6 +4829,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4912,6 +4898,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4952,6 +4939,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5024,6 +5012,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5096,6 +5085,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5168,6 +5158,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5239,7 +5230,6 @@ exports[`Button demo examples Snapshots: primary 1`] = `
           primary={true}
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
@@ -5247,7 +5237,6 @@ exports[`Button demo examples Snapshots: primary 1`] = `
             size="large"
             text="Default"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-2"
@@ -5388,7 +5377,6 @@ exports[`Button demo examples Snapshots: primary 1`] = `
           primary={true}
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             disabled={true}
@@ -5397,7 +5385,6 @@ exports[`Button demo examples Snapshots: primary 1`] = `
             size="large"
             text="Disabled"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-14"
@@ -5443,6 +5430,7 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -5464,6 +5452,7 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5558,14 +5547,12 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
         iconStart={<IconBackspace />}
         size="large"
         type="button"
-        variant="regular"
       >
         <Button
           element="button"
           size="large"
           text="قم بعمل ما"
           type="button"
-          variant="regular"
         >
           <button
             className="emotion-3"
@@ -5625,7 +5612,7 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Button demo examples Snapshots: sizes 1`] = `
-.emotion-15 > * {
+.emotion-15[class] > * {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -5644,6 +5631,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -5684,6 +5672,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5757,6 +5746,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5841,6 +5831,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2em;
+  margin: 0;
   min-width: 2em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5925,6 +5916,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 3.25em;
+  margin: 0;
   min-width: 3.25em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6017,6 +6009,7 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6091,14 +6084,12 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
           element="button"
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
             size="small"
             text="Small"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-2"
@@ -6126,14 +6117,12 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
           element="button"
           size="medium"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
             size="medium"
             text="Medium"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-5"
@@ -6161,14 +6150,12 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
           element="button"
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
             size="large"
             text="Large"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-8"
@@ -6196,14 +6183,12 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
           element="button"
           size="jumbo"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
             size="jumbo"
             text="Jumbo"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-11"
@@ -6232,7 +6217,6 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
           fullWidth={true}
           size="large"
           type="button"
-          variant="regular"
         >
           <Button
             element="button"
@@ -6240,7 +6224,6 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
             size="large"
             text="Full Width"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-14"
@@ -6285,6 +6268,7 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -6325,6 +6309,7 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6392,14 +6377,12 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
       element="button"
       size="large"
       type="button"
-      variant="regular"
     >
       <Button
         element="button"
         size="large"
         text="Supercalifragilisticexpialidocious"
         type="button"
-        variant="regular"
       >
         <button
           className="emotion-2"
@@ -6446,6 +6429,7 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6506,7 +6490,6 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
   onClick={[MockFunction]}
   size="large"
   type="button"
-  variant="regular"
 >
   <Button
     element={[Function]}
@@ -6514,7 +6497,6 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
     size="large"
     text="Do Something"
     type="button"
-    variant="regular"
   >
     <Button
       className="emotion-0"
@@ -6548,6 +6530,7 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -6588,6 +6571,7 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6648,7 +6632,6 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
   onClick={[MockFunction]}
   size="large"
   type="button"
-  variant="regular"
 >
   <Button
     element="a"
@@ -6656,7 +6639,6 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
     size="large"
     text="Do Something"
     type="button"
-    variant="regular"
   >
     <a
       className="emotion-2"
@@ -6697,6 +6679,7 @@ exports[`Button type prop is filtered when type=[not a button type] when element
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -6737,6 +6720,7 @@ exports[`Button type prop is filtered when type=[not a button type] when element
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6797,7 +6781,6 @@ exports[`Button type prop is filtered when type=[not a button type] when element
   onClick={[MockFunction]}
   size="large"
   type="foo"
-  variant="regular"
 >
   <Button
     element="button"
@@ -6805,7 +6788,6 @@ exports[`Button type prop is filtered when type=[not a button type] when element
     size="large"
     text="Do Something"
     type="foo"
-    variant="regular"
   >
     <button
       className="emotion-2"
@@ -6850,6 +6832,7 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6910,7 +6893,6 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
   onClick={[MockFunction]}
   size="large"
   type="video"
-  variant="regular"
 >
   <Button
     element={[Function]}
@@ -6918,7 +6900,6 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
     size="large"
     text="Do Something"
     type="video"
-    variant="regular"
   >
     <Button
       className="emotion-0"
@@ -6954,6 +6935,7 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -6994,6 +6976,7 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -7054,7 +7037,6 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
   onClick={[MockFunction]}
   size="large"
   type="video"
-  variant="regular"
 >
   <Button
     element="a"
@@ -7062,7 +7044,6 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
     size="large"
     text="Do Something"
     type="video"
-    variant="regular"
   >
     <a
       className="emotion-2"
@@ -7104,6 +7085,7 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -7144,6 +7126,7 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -7204,7 +7187,6 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
   onClick={[MockFunction]}
   size="large"
   type="button"
-  variant="regular"
 >
   <Button
     element="button"
@@ -7212,7 +7194,6 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
     size="large"
     text="Do Something"
     type="button"
-    variant="regular"
   >
     <button
       className="emotion-2"

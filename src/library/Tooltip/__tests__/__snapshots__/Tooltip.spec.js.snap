@@ -40,6 +40,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -109,6 +110,7 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -191,7 +193,6 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                     size="large"
                     tabIndex={0}
                     type="button"
-                    variant="regular"
                   >
                     <PopoverTrigger
                       component="span"
@@ -221,7 +222,6 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                             size="large"
                             tabIndex={0}
                             type="button"
-                            variant="regular"
                           >
                             <Button
                               aria-describedby="tooltip-1-content"
@@ -236,7 +236,6 @@ exports[`Tooltip demo examples Snapshots: basic 1`] = `
                               size="large"
                               tabIndex={0}
                               type="button"
-                              variant="regular"
                             >
                               <button
                                 aria-describedby="tooltip-1-content"
@@ -350,6 +349,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -443,6 +443,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -607,7 +608,6 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                           size="large"
                           tabIndex={0}
                           type="button"
-                          variant="regular"
                         >
                           <PopoverTrigger
                             component="span"
@@ -632,7 +632,6 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                   size="large"
                                   tabIndex={0}
                                   type="button"
-                                  variant="regular"
                                 >
                                   <Button
                                     aria-describedby="tooltip-21-content"
@@ -648,7 +647,6 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                     tabIndex={0}
                                     text="Button"
                                     type="button"
-                                    variant="regular"
                                   >
                                     <button
                                       aria-describedby="tooltip-21-content"
@@ -1029,7 +1027,6 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
         onClick={[Function]}
         size="large"
         type="button"
-        variant="regular"
       >
         <Button
           element="button"
@@ -1037,7 +1034,6 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
           size="large"
           text="Close Tooltip"
           type="button"
-          variant="regular"
         >
           <button
             className="emotion-2"
@@ -1086,6 +1082,7 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -1155,6 +1152,7 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1179,13 +1177,11 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
     }
     size="large"
     type="button"
-    variant="regular"
   >
     <Button
       element="button"
       size="large"
       type="button"
-      variant="regular"
     >
       <button
         className="emotion-2"
@@ -1278,6 +1274,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1377,6 +1374,7 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1526,7 +1524,6 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                         size="large"
                         tabIndex={0}
                         type="button"
-                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -1551,7 +1548,6 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                 size="large"
                                 tabIndex={0}
                                 type="button"
-                                variant="regular"
                               >
                                 <Button
                                   aria-describedby="tooltip-11-content"
@@ -1567,7 +1563,6 @@ exports[`Tooltip demo examples Snapshots: overflow 1`] = `
                                   tabIndex={0}
                                   text="Button"
                                   type="button"
-                                  variant="regular"
                                 >
                                   <button
                                     aria-describedby="tooltip-11-content"
@@ -1983,6 +1978,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2099,6 +2095,7 @@ exports[`Tooltip demo examples Snapshots: placement 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0.4375em;
   -webkit-text-decoration: none;
@@ -2725,6 +2722,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2746,6 +2744,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2872,6 +2871,7 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3071,7 +3071,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                   size="large"
                                   tabIndex={0}
                                   type="button"
-                                  variant="regular"
                                 >
                                   <PopoverTrigger
                                     component="span"
@@ -3096,7 +3095,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                           size="large"
                                           tabIndex={0}
                                           type="button"
-                                          variant="regular"
                                         >
                                           <Button
                                             aria-describedby="tooltip-15-content"
@@ -3112,7 +3110,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
                                             tabIndex={0}
                                             text="Button"
                                             type="button"
-                                            variant="regular"
                                           >
                                             <button
                                               aria-describedby="tooltip-15-content"
@@ -3187,7 +3184,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-12"
@@ -3196,7 +3192,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-12"
@@ -3206,7 +3201,6 @@ exports[`Tooltip demo examples Snapshots: portal 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-11"
@@ -3456,6 +3450,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -3549,6 +3544,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3675,6 +3671,7 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3834,7 +3831,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                   size="large"
                                   tabIndex={0}
                                   type="button"
-                                  variant="regular"
                                 >
                                   <PopoverTrigger
                                     component="span"
@@ -3859,7 +3855,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                           size="large"
                                           tabIndex={0}
                                           type="button"
-                                          variant="regular"
                                         >
                                           <Button
                                             aria-describedby="tooltip-13-content"
@@ -3875,7 +3870,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
                                             tabIndex={0}
                                             text="Button"
                                             type="button"
-                                            variant="regular"
                                           >
                                             <button
                                               aria-describedby="tooltip-13-content"
@@ -4261,7 +4255,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-20"
@@ -4270,7 +4263,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-20"
@@ -4280,7 +4272,6 @@ exports[`Tooltip demo examples Snapshots: scrolling-container 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-19"

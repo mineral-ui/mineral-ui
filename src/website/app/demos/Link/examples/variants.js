@@ -22,7 +22,7 @@ export default {
   scope: { DemoLayout, Link },
   source: `
     <DemoLayout>
-      <Link href="http://example.com">Regular</Link>
+      <Link href="http://example.com">Default</Link>
       <Link variant="danger" href="http://example.com">Danger</Link>
       <Link variant="success" href="http://example.com">Success</Link>
       <Link variant="warning" href="http://example.com">Warning</Link>

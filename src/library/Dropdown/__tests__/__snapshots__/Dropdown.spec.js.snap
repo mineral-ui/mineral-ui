@@ -40,6 +40,7 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -109,6 +110,7 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -202,7 +204,6 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
             role="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <PopoverTrigger
               component="span"
@@ -227,7 +228,6 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
                     role="button"
                     size="large"
                     type="button"
-                    variant="regular"
                   >
                     <Button
                       aria-describedby="dropdown-1-content"
@@ -243,7 +243,6 @@ exports[`Dropdown demo examples Snapshots: basic 1`] = `
                       size="large"
                       text="Menu"
                       type="button"
-                      variant="regular"
                     >
                       <button
                         aria-describedby="dropdown-1-content"
@@ -327,6 +326,7 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -396,6 +396,7 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -511,7 +512,6 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
                   role="button"
                   size="large"
                   type="button"
-                  variant="regular"
                 >
                   <PopoverTrigger
                     component="span"
@@ -536,7 +536,6 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
                           role="button"
                           size="large"
                           type="button"
-                          variant="regular"
                         >
                           <Button
                             aria-describedby="dropdown-19-content"
@@ -552,7 +551,6 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
                             size="large"
                             text="Open Dropdown"
                             type="button"
-                            variant="regular"
                           >
                             <button
                               aria-describedby="dropdown-19-content"
@@ -599,7 +597,6 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
         onClick={[Function]}
         size="large"
         type="button"
-        variant="regular"
       >
         <Button
           element="button"
@@ -607,7 +604,6 @@ exports[`Dropdown demo examples Snapshots: controlled 1`] = `
           size="large"
           text="Open Dropdown"
           type="button"
-          variant="regular"
         >
           <button
             className="emotion-2"
@@ -677,6 +673,7 @@ exports[`Dropdown demo examples Snapshots: custom-item 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -746,6 +743,7 @@ exports[`Dropdown demo examples Snapshots: custom-item 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -840,7 +838,6 @@ exports[`Dropdown demo examples Snapshots: custom-item 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -865,7 +862,6 @@ exports[`Dropdown demo examples Snapshots: custom-item 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="dropdown-23-content"
@@ -881,7 +877,6 @@ exports[`Dropdown demo examples Snapshots: custom-item 1`] = `
                         size="large"
                         text="Menu"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="dropdown-23-content"
@@ -966,6 +961,7 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1035,6 +1031,7 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1130,7 +1127,6 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -1155,7 +1151,6 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="dropdown-25-content"
@@ -1171,7 +1166,6 @@ exports[`Dropdown demo examples Snapshots: custom-menu 1`] = `
                         size="large"
                         text="Menu"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="dropdown-25-content"
@@ -1385,6 +1379,7 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1454,6 +1449,7 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1560,7 +1556,6 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -1585,7 +1580,6 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="dropdown-3-content"
@@ -1601,7 +1595,6 @@ exports[`Dropdown demo examples Snapshots: data 1`] = `
                         size="large"
                         text="Menu"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="dropdown-3-content"
@@ -1682,6 +1675,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1722,6 +1716,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1849,7 +1844,6 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
             role="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <PopoverTrigger
               component="span"
@@ -1875,7 +1869,6 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
                     role="button"
                     size="large"
                     type="button"
-                    variant="regular"
                   >
                     <Button
                       aria-describedby="dropdown-17-content"
@@ -1892,7 +1885,6 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
                       size="large"
                       text="Menu"
                       type="button"
-                      variant="regular"
                     >
                       <button
                         aria-describedby="dropdown-17-content"
@@ -1977,6 +1969,7 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2046,6 +2039,7 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2142,7 +2136,6 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -2167,7 +2160,6 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="dropdown-15-content"
@@ -2183,7 +2175,6 @@ exports[`Dropdown demo examples Snapshots: on-open-close 1`] = `
                         size="large"
                         text="Menu"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="dropdown-15-content"
@@ -2268,6 +2259,7 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2337,6 +2329,7 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2440,7 +2433,6 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
                 role="button"
                 size="large"
                 type="button"
-                variant="regular"
               >
                 <PopoverTrigger
                   component="span"
@@ -2465,7 +2457,6 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <Button
                           aria-describedby="dropdown-9-content"
@@ -2481,7 +2472,6 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
                           size="large"
                           text="Menu"
                           type="button"
-                          variant="regular"
                         >
                           <button
                             aria-describedby="dropdown-9-content"
@@ -2567,6 +2557,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2636,6 +2627,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2920,7 +2912,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                 role="button"
                 size="large"
                 type="button"
-                variant="regular"
               >
                 <PopoverTrigger
                   component="span"
@@ -2946,7 +2937,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <Button
                           aria-activedescendant="dropdown-7-menu"
@@ -2963,7 +2953,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                           size="large"
                           text="Menu"
                           type="button"
-                          variant="regular"
                         >
                           <button
                             aria-activedescendant="dropdown-7-menu"
@@ -3668,6 +3657,7 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3737,6 +3727,7 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -3787,6 +3778,7 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3996,7 +3988,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
                           role="button"
                           size="large"
                           type="button"
-                          variant="regular"
                         >
                           <PopoverTrigger
                             component="span"
@@ -4022,7 +4013,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
                                   role="button"
                                   size="large"
                                   type="button"
-                                  variant="regular"
                                 >
                                   <Button
                                     aria-activedescendant="dropdown-13-menu"
@@ -4039,7 +4029,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
                                     size="large"
                                     text="Menu"
                                     type="button"
-                                    variant="regular"
                                   >
                                     <button
                                       aria-activedescendant="dropdown-13-menu"
@@ -4111,7 +4100,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-12"
@@ -4120,7 +4108,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-12"
@@ -4130,7 +4117,6 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-11"
@@ -4197,6 +4183,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4339,6 +4326,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4547,7 +4535,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                     role="button"
                     size="large"
                     type="button"
-                    variant="regular"
                   >
                     <PopoverTrigger
                       component="span"
@@ -4573,7 +4560,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                             role="button"
                             size="large"
                             type="button"
-                            variant="regular"
                           >
                             <Button
                               aria-activedescendant="dropdown-21-menu"
@@ -4590,7 +4576,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                               size="large"
                               text="Menu"
                               type="button"
-                              variant="regular"
                             >
                               <button
                                 aria-activedescendant="dropdown-21-menu"
@@ -5297,6 +5282,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5366,6 +5352,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -5609,6 +5596,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5770,7 +5758,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                           role="button"
                           size="large"
                           type="button"
-                          variant="regular"
                         >
                           <PopoverTrigger
                             component="span"
@@ -5796,7 +5783,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                   role="button"
                                   size="large"
                                   type="button"
-                                  variant="regular"
                                 >
                                   <Button
                                     aria-activedescendant="dropdown-11-menu"
@@ -5813,7 +5799,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                     size="large"
                                     text="Menu"
                                     type="button"
-                                    variant="regular"
                                   >
                                     <button
                                       aria-activedescendant="dropdown-11-menu"
@@ -6484,7 +6469,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-38"
@@ -6493,7 +6477,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-38"
@@ -6503,7 +6486,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-37"
@@ -6574,6 +6556,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6643,6 +6626,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -6918,7 +6902,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                 role="button"
                 size="large"
                 type="button"
-                variant="regular"
               >
                 <PopoverTrigger
                   component="span"
@@ -6944,7 +6927,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <Button
                           aria-activedescendant="dropdown-5-menu"
@@ -6961,7 +6943,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                           size="large"
                           text="Menu"
                           type="button"
-                          variant="regular"
                         >
                           <button
                             aria-activedescendant="dropdown-5-menu"

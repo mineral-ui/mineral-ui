@@ -14,7 +14,7 @@ const Root = createStyledComponent(
   ({ includeLastChild, marginRight, marginBottom }) => {
     if (includeLastChild) {
       return {
-        '& > *': {
+        '&[class] > *': {
           marginRight,
           marginBottom
         }
