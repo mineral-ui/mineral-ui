@@ -1809,6 +1809,7 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1878,6 +1879,7 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1991,7 +1993,6 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
             onClick={[Function]}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
@@ -1999,7 +2000,6 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
               size="large"
               text="Focus the input"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-7"
@@ -5806,6 +5806,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -5875,6 +5876,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -5955,6 +5957,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6039,6 +6042,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2em;
+  margin: 0;
   min-width: 2em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6123,6 +6127,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 3.25em;
+  margin: 0;
   min-width: 3.25em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -6293,14 +6298,12 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
             element="button"
             size="small"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="small"
               text="Small"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-7"
@@ -6410,14 +6413,12 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
             element="button"
             size="medium"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="medium"
               text="Medium"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-15"
@@ -6527,14 +6528,12 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
             element="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="Large"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-23"
@@ -6644,14 +6643,12 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
             element="button"
             size="jumbo"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="jumbo"
               text="Jumbo"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-31"

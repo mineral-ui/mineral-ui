@@ -978,7 +978,7 @@ exports[`Text demo examples Snapshots: nested 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-14 > * {
+.emotion-14[class] > * {
   margin-bottom: 1em;
 }
 
@@ -1364,11 +1364,9 @@ exports[`Text demo examples Snapshots: nested-elements 1`] = `
           <Link
             element="a"
             href="http://example.com"
-            variant="regular"
           >
             <Link
               href="http://example.com"
-              variant="regular"
             >
               <a
                 className="emotion-5"

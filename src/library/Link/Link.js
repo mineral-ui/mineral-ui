@@ -10,7 +10,7 @@ type Props = {
   /** Element to be used as the root node - e.g. `a` or `ReactRouterLink` */
   element?: $FlowFixMe, // Should allow string | React class
   /** Available variants */
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 export const componentTheme = (baseTheme: Object) => ({
@@ -26,7 +26,7 @@ export const componentTheme = (baseTheme: Object) => ({
 const linkStyles = ({ variant, theme: baseTheme }) => {
   let theme = componentTheme(baseTheme);
 
-  if (variant !== 'regular') {
+  if (variant) {
     // prettier-ignore
     theme = {
       ...theme,
@@ -80,8 +80,7 @@ const Link = (props: Props) => {
 };
 
 Link.defaultProps = {
-  element: 'a',
-  variant: 'regular'
+  element: 'a'
 };
 
 export default Link;

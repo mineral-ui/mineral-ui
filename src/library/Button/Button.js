@@ -29,7 +29,7 @@ type Props = {
   /** Available types */
   type?: string,
   /** Available variants */
-  variant?: 'regular' | 'danger' | 'success' | 'warning'
+  variant?: 'danger' | 'success' | 'warning'
 };
 
 // prettier-ignore
@@ -84,20 +84,20 @@ function chooseColor({ disabled, primary, minimal }: Props, theme) {
 }
 
 const styles = {
-  button: (props) => {
-    let theme = componentTheme(props.theme);
-    const {
-      circular,
-      disabled,
-      fullWidth,
-      minimal,
-      primary,
-      size,
-      text,
-      variant
-    } = props;
+  button: ({
+    circular,
+    disabled,
+    fullWidth,
+    minimal,
+    primary,
+    size,
+    text,
+    theme: baseTheme,
+    variant
+  }) => {
+    let theme = componentTheme(baseTheme);
 
-    if (variant !== 'regular') {
+    if (variant) {
       // prettier-ignore
       theme = {
         ...theme,
@@ -113,7 +113,7 @@ const styles = {
       };
     }
 
-    const color = chooseColor(props, theme);
+    const color = chooseColor({ disabled, primary, minimal }, theme);
     return {
       backgroundColor: (() => {
         if (disabled && !minimal) {
@@ -140,6 +140,7 @@ const styles = {
       display: 'inline-block',
       fontWeight: theme.Button_fontWeight,
       height: theme[`Button_height_${size}`],
+      margin: 0,
       // if the user puts in a small icon in a large button
       // we want to force the button to be round/square
       // (really just pertinent on icon-only buttons)
@@ -223,9 +224,8 @@ const styles = {
       }
     };
   },
-  content: (props) => {
-    const theme = componentTheme(props.theme);
-    const { size } = props;
+  content: ({ size, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     let paddings;
 
@@ -266,6 +266,7 @@ const styles = {
     display: 'inline-flex',
     justifyContent: 'center',
     maxHeight: '100%',
+    pointerEvents: 'none',
     width: '100%'
   }
 };
@@ -319,8 +320,7 @@ export default class Button extends Component<Props> {
   static defaultProps = {
     element: 'button',
     size: 'large',
-    type: 'button',
-    variant: 'regular'
+    type: 'button'
   };
 
   componentWillUpdate(nextProps: Props) {
@@ -338,7 +338,7 @@ export default class Button extends Component<Props> {
       iconEnd,
       size = Button.defaultProps.size,
       type = Button.defaultProps.type,
-      variant = Button.defaultProps.variant,
+      variant,
       ...restProps
     } = this.props;
 

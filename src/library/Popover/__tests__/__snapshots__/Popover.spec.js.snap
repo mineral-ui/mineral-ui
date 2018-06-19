@@ -40,6 +40,7 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -109,6 +110,7 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -161,7 +163,6 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
           role="button"
           size="large"
           type="button"
-          variant="regular"
         >
           <PopoverTrigger
             component="span"
@@ -183,7 +184,6 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
                   role="button"
                   size="large"
                   type="button"
-                  variant="regular"
                 >
                   <Button
                     aria-describedby="popover-1-content"
@@ -196,7 +196,6 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
                     size="large"
                     text="Open Popover"
                     type="button"
-                    variant="regular"
                   >
                     <button
                       aria-describedby="popover-1-content"
@@ -276,6 +275,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -345,6 +345,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -422,7 +423,6 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                 role="button"
                 size="large"
                 type="button"
-                variant="regular"
               >
                 <PopoverTrigger
                   component="span"
@@ -444,7 +444,6 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <Button
                           aria-describedby="popover-17-content"
@@ -457,7 +456,6 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                           size="large"
                           text="Open Popover"
                           type="button"
-                          variant="regular"
                         >
                           <button
                             aria-describedby="popover-17-content"
@@ -500,7 +498,6 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
         onClick={[Function]}
         size="large"
         type="button"
-        variant="regular"
       >
         <Button
           element="button"
@@ -508,7 +505,6 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
           size="large"
           text="Open Popover"
           type="button"
-          variant="regular"
         >
           <button
             className="emotion-2"
@@ -578,6 +574,7 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -647,6 +644,7 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -700,7 +698,6 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
             role="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <PopoverTrigger
               component="span"
@@ -722,7 +719,6 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
                     role="button"
                     size="large"
                     type="button"
-                    variant="regular"
                   >
                     <Button
                       aria-describedby="popover-21-content"
@@ -735,7 +731,6 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
                       size="large"
                       text="Open Popover"
                       type="button"
-                      variant="regular"
                     >
                       <button
                         aria-describedby="popover-21-content"
@@ -893,6 +888,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -933,6 +929,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1018,7 +1015,6 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
           role="button"
           size="large"
           type="button"
-          variant="regular"
         >
           <PopoverTrigger
             component="span"
@@ -1041,7 +1037,6 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                   role="button"
                   size="large"
                   type="button"
-                  variant="regular"
                 >
                   <Button
                     aria-describedby="popover-15-content"
@@ -1055,7 +1050,6 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                     size="large"
                     text="Open Popover"
                     type="button"
-                    variant="regular"
                   >
                     <button
                       aria-describedby="popover-15-content"
@@ -1136,6 +1130,7 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1205,6 +1200,7 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1262,7 +1258,6 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
             role="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <PopoverTrigger
               component="span"
@@ -1284,7 +1279,6 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
                     role="button"
                     size="large"
                     type="button"
-                    variant="regular"
                   >
                     <Button
                       aria-describedby="popover-13-content"
@@ -1297,7 +1291,6 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
                       size="large"
                       text="Open Popover"
                       type="button"
-                      variant="regular"
                     >
                       <button
                         aria-describedby="popover-13-content"
@@ -1378,6 +1371,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -1447,6 +1441,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1587,7 +1582,6 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -1609,7 +1603,6 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="popover-7-content"
@@ -1622,7 +1615,6 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                         size="large"
                         text="Open Popover"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="popover-7-content"
@@ -2021,6 +2013,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2090,6 +2083,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2240,7 +2234,6 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -2262,7 +2255,6 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="popover-5-content"
@@ -2275,7 +2267,6 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                         size="large"
                         text="Open Popover"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="popover-5-content"
@@ -2674,6 +2665,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2743,6 +2735,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -2817,6 +2810,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -2953,7 +2947,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -2975,7 +2968,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                                 role="button"
                                 size="large"
                                 type="button"
-                                variant="regular"
                               >
                                 <Button
                                   aria-describedby="popover-11-content"
@@ -2988,7 +2980,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                                   size="large"
                                   text="Open Popover"
                                   type="button"
-                                  variant="regular"
                                 >
                                   <button
                                     aria-describedby="popover-11-content"
@@ -3055,7 +3046,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-12"
@@ -3064,7 +3054,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-12"
@@ -3074,7 +3063,6 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-11"
@@ -3141,6 +3129,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -3242,6 +3231,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3357,7 +3347,6 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                   role="button"
                   size="large"
                   type="button"
-                  variant="regular"
                 >
                   <PopoverTrigger
                     component="span"
@@ -3379,7 +3368,6 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                           role="button"
                           size="large"
                           type="button"
-                          variant="regular"
                         >
                           <Button
                             aria-describedby="popover-19-content"
@@ -3392,7 +3380,6 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                             size="large"
                             text="Open Popover"
                             type="button"
-                            variant="regular"
                           >
                             <button
                               aria-describedby="popover-19-content"
@@ -3793,6 +3780,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -3862,6 +3850,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4012,6 +4001,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 1.5em;
+  margin: 0;
   min-width: 1.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4132,7 +4122,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                         role="button"
                         size="large"
                         type="button"
-                        variant="regular"
                       >
                         <PopoverTrigger
                           component="span"
@@ -4154,7 +4143,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                 role="button"
                                 size="large"
                                 type="button"
-                                variant="regular"
                               >
                                 <Button
                                   aria-describedby="popover-9-content"
@@ -4167,7 +4155,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                   size="large"
                                   text="Open Popover"
                                   type="button"
-                                  variant="regular"
                                 >
                                   <button
                                     aria-describedby="popover-9-content"
@@ -4532,7 +4519,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
         onClick={[Function]}
         size="small"
         type="button"
-        variant="regular"
       >
         <Button
           className="emotion-21"
@@ -4541,7 +4527,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
           onClick={[Function]}
           size="small"
           type="button"
-          variant="regular"
         >
           <Button
             className="emotion-21"
@@ -4551,7 +4536,6 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
             size="small"
             text="Re-center"
             type="button"
-            variant="regular"
           >
             <button
               className="emotion-20"
@@ -4622,6 +4606,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -4691,6 +4676,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -4887,7 +4873,6 @@ exports[`Popover demo examples Snapshots: title 1`] = `
               role="button"
               size="large"
               type="button"
-              variant="regular"
             >
               <PopoverTrigger
                 component="span"
@@ -4909,7 +4894,6 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                       role="button"
                       size="large"
                       type="button"
-                      variant="regular"
                     >
                       <Button
                         aria-describedby="popover-3-content"
@@ -4922,7 +4906,6 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                         size="large"
                         text="Open Popover"
                         type="button"
-                        variant="regular"
                       >
                         <button
                           aria-describedby="popover-3-content"

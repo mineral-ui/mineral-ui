@@ -59,12 +59,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
             element="a"
             href="http://example.com"
             target="_blank"
-            variant="regular"
           >
             <Link
               href="http://example.com"
               target="_blank"
-              variant="regular"
             >
               <a
                 className="emotion-0"
@@ -91,12 +89,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
             element="a"
             href="http://example.com"
             target="_blank"
-            variant="regular"
           >
             <Link
               href="http://example.com"
               target="_blank"
-              variant="regular"
             >
               <a
                 className="emotion-0"
@@ -123,12 +119,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
             element="a"
             href="http://example.com"
             target="_blank"
-            variant="regular"
           >
             <Link
               href="http://example.com"
               target="_blank"
-              variant="regular"
             >
               <a
                 className="emotion-0"
@@ -155,12 +149,10 @@ exports[`Link demo examples Snapshots: basic 1`] = `
             element="a"
             href="http://example.com"
             target="_blank"
-            variant="regular"
           >
             <Link
               href="http://example.com"
               target="_blank"
-              variant="regular"
             >
               <a
                 className="emotion-0"
@@ -198,6 +190,7 @@ exports[`Link demo examples Snapshots: button 1`] = `
   display: inline-block;
   font-weight: 600;
   height: 2.5em;
+  margin: 0;
   min-width: 2.5em;
   padding: 0 0.5em;
   -webkit-text-decoration: none;
@@ -267,6 +260,7 @@ exports[`Link demo examples Snapshots: button 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -294,7 +288,6 @@ exports[`Link demo examples Snapshots: button 1`] = `
   href="#button"
   size="large"
   type="button"
-  variant="regular"
 >
   <Button
     element="a"
@@ -302,7 +295,6 @@ exports[`Link demo examples Snapshots: button 1`] = `
     size="large"
     text="Link"
     type="button"
-    variant="regular"
   >
     <a
       className="emotion-2"
@@ -358,12 +350,10 @@ exports[`Link demo examples Snapshots: children 1`] = `
     element="a"
     href="http://example.com"
     target="_blank"
-    variant="regular"
   >
     <Link
       href="http://example.com"
       target="_blank"
-      variant="regular"
     >
       <a
         className="emotion-0"
@@ -437,12 +427,10 @@ exports[`Link demo examples Snapshots: other 1`] = `
         <Link
           element={[Function]}
           to="/components/link"
-          variant="regular"
         >
           <Link
             replace={false}
             to="/components/link"
-            variant="regular"
           >
             <Link
               className="emotion-0"
@@ -616,19 +604,17 @@ exports[`Link demo examples Snapshots: variants 1`] = `
               element="a"
               href="http://example.com"
               target="_blank"
-              variant="regular"
             >
               <Link
                 href="http://example.com"
                 target="_blank"
-                variant="regular"
               >
                 <a
                   className="emotion-0"
                   href="http://example.com"
                   target="_blank"
                 >
-                  Regular
+                  Default
                 </a>
               </Link>
             </Link>
