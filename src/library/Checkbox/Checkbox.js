@@ -43,7 +43,7 @@ type Props = {
   /** Used to uniquely define a group of checkboxes */
   name?: string,
   /** Function called when a checkbox is selected */
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: SyntheticInputEvent<>) => void,
   /** Indicates that the user must select an option before submitting a form */
   required?: boolean,
   /** Available sizes */

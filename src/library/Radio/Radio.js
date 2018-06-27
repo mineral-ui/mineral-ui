@@ -37,7 +37,7 @@ type Props = {
   /** Used to uniquely define a group of radio buttons */
   name?: string,
   /** Function called when a radio button is selected */
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: SyntheticInputEvent<>) => void,
   /** Indicates that the user must select an option before submitting a form */
   required?: boolean,
   /** Available sizes */

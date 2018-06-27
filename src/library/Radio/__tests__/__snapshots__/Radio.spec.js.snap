@@ -222,7 +222,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                               value="quartz"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="large"
                           >
@@ -259,8 +259,8 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="large"
                           >
@@ -269,7 +269,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                             >
                               Quartz
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -365,7 +365,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                               value="magnetite"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="large"
                           >
@@ -402,8 +402,8 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="large"
                           >
@@ -412,7 +412,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                             >
                               Magnetite
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -632,7 +632,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -670,8 +670,8 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -681,7 +681,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                         >
                           Quartz
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -772,7 +772,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -810,8 +810,8 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         disabled={true}
                         labelPosition="end"
                         size="large"
@@ -821,7 +821,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -1048,6 +1048,7 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -1149,7 +1150,7 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
                               value="1"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="large"
                           >
@@ -1186,8 +1187,8 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="large"
                           >
@@ -1196,7 +1197,7 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
                             >
                               Option 1
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -1210,7 +1211,6 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
             onClick={[Function]}
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
@@ -1218,7 +1218,6 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
               size="large"
               text="Focus the input"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-7"
@@ -1470,7 +1469,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -1507,8 +1506,8 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -1517,7 +1516,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                         >
                           Quartz
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -1607,7 +1606,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -1644,8 +1643,8 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -1654,7 +1653,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -2034,7 +2033,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -2071,8 +2070,8 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -2081,7 +2080,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         >
                           Quartz
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -2175,7 +2174,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="start"
                         size="large"
                       >
@@ -2212,8 +2211,8 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="start"
                         size="large"
                       >
@@ -2222,7 +2221,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -2321,7 +2320,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                           value="azurite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -2358,8 +2357,8 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         justify={true}
                         labelPosition="end"
                         size="large"
@@ -2369,7 +2368,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         >
                           Azurite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -2468,7 +2467,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                           value="hematite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="start"
                         size="large"
                       >
@@ -2505,8 +2504,8 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         justify={true}
                         labelPosition="start"
                         size="large"
@@ -2516,7 +2515,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         >
                           Hematite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -2738,7 +2737,7 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
                           type="radio"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -2775,8 +2774,8 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -2785,7 +2784,7 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis.
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -3048,6 +3047,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 100%;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -3839,7 +3839,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                               type="radio"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="small"
                           >
@@ -3876,8 +3876,8 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="small"
                           >
@@ -3886,7 +3886,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             >
                               Small
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -3979,14 +3979,12 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
             element="button"
             size="small"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="small"
               text="Small"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-12"
@@ -4081,7 +4079,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                               type="radio"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="medium"
                           >
@@ -4118,8 +4116,8 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="medium"
                           >
@@ -4128,7 +4126,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             >
                               Medium
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -4221,14 +4219,12 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
             element="button"
             size="medium"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="medium"
               text="Medium"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-25"
@@ -4323,7 +4319,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                               type="radio"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="large"
                           >
@@ -4360,8 +4356,8 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="large"
                           >
@@ -4370,7 +4366,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             >
                               Large
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -4463,14 +4459,12 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
             element="button"
             size="large"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="large"
               text="Large"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-38"
@@ -4565,7 +4559,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                               type="radio"
                             />
                           </Styled(input)>
-                          <Styled(span)
+                          <Control
                             labelPosition="end"
                             size="jumbo"
                           >
@@ -4602,8 +4596,8 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                                 </Icon>
                               </IconRadioButtonCheck>
                             </span>
-                          </Styled(span)>
-                          <Styled(span)
+                          </Control>
+                          <Text
                             labelPosition="end"
                             size="jumbo"
                           >
@@ -4612,7 +4606,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             >
                               Jumbo
                             </span>
-                          </Styled(span)>
+                          </Text>
                         </label>
                       </Choice>
                     </Choice>
@@ -4705,14 +4699,12 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
             element="button"
             size="jumbo"
             type="button"
-            variant="regular"
           >
             <Button
               element="button"
               size="jumbo"
               text="Jumbo"
               type="button"
-              variant="regular"
             >
               <button
                 className="emotion-51"
@@ -4965,7 +4957,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -5002,8 +4994,8 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -5012,7 +5004,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                         >
                           Quartz
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -5104,7 +5096,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -5141,8 +5133,8 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -5151,7 +5143,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -5530,7 +5522,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                 type="radio"
                               />
                             </Styled(input)>
-                            <Styled(span)
+                            <Control
                               labelPosition="end"
                               size="large"
                             >
@@ -5567,8 +5559,8 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconRadioButtonCheck>
                               </span>
-                            </Styled(span)>
-                            <Styled(span)
+                            </Control>
+                            <Text
                               labelPosition="end"
                               size="large"
                             >
@@ -5577,7 +5569,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Styled(span)>
+                            </Text>
                           </label>
                         </Choice>
                       </Choice>
@@ -5655,7 +5647,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                 type="radio"
                               />
                             </Styled(input)>
-                            <Styled(span)
+                            <Control
                               labelPosition="start"
                               size="large"
                             >
@@ -5692,8 +5684,8 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconRadioButtonCheck>
                               </span>
-                            </Styled(span)>
-                            <Styled(span)
+                            </Control>
+                            <Text
                               labelPosition="start"
                               size="large"
                             >
@@ -5702,7 +5694,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Styled(span)>
+                            </Text>
                           </label>
                         </Choice>
                       </Choice>
@@ -5795,7 +5787,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                 type="radio"
                               />
                             </Styled(input)>
-                            <Styled(span)
+                            <Control
                               labelPosition="end"
                               size="large"
                             >
@@ -5832,8 +5824,8 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconRadioButtonCheck>
                               </span>
-                            </Styled(span)>
-                            <Styled(span)
+                            </Control>
+                            <Text
                               justify={true}
                               labelPosition="end"
                               size="large"
@@ -5843,7 +5835,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Styled(span)>
+                            </Text>
                           </label>
                         </Choice>
                       </Choice>
@@ -5926,7 +5918,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                 type="radio"
                               />
                             </Styled(input)>
-                            <Styled(span)
+                            <Control
                               labelPosition="start"
                               size="large"
                             >
@@ -5963,8 +5955,8 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                                   </Icon>
                                 </IconRadioButtonCheck>
                               </span>
-                            </Styled(span)>
-                            <Styled(span)
+                            </Control>
+                            <Text
                               justify={true}
                               labelPosition="start"
                               size="large"
@@ -5974,7 +5966,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               >
                                 مرحبا بالعالم
                               </span>
-                            </Styled(span)>
+                            </Text>
                           </label>
                         </Choice>
                       </Choice>
@@ -6239,7 +6231,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                           value="small"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="small"
                       >
@@ -6276,8 +6268,8 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="small"
                       >
@@ -6286,7 +6278,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         >
                           Small
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -6370,7 +6362,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                           value="medium"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="medium"
                       >
@@ -6407,8 +6399,8 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="medium"
                       >
@@ -6417,7 +6409,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         >
                           Medium
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -6507,7 +6499,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                           value="large"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -6544,8 +6536,8 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -6554,7 +6546,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         >
                           Large
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -6638,7 +6630,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                           value="jumbo"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="jumbo"
                       >
@@ -6675,8 +6667,8 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="jumbo"
                       >
@@ -6685,7 +6677,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         >
                           Jumbo
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -6913,7 +6905,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                           value="quartz"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -6950,8 +6942,8 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -6960,7 +6952,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                         >
                           Quartz
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
@@ -7044,7 +7036,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                           value="magnetite"
                         />
                       </Styled(input)>
-                      <Styled(span)
+                      <Control
                         labelPosition="end"
                         size="large"
                       >
@@ -7081,8 +7073,8 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                             </Icon>
                           </IconRadioButtonCheck>
                         </span>
-                      </Styled(span)>
-                      <Styled(span)
+                      </Control>
+                      <Text
                         labelPosition="end"
                         size="large"
                       >
@@ -7091,7 +7083,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                         >
                           Magnetite
                         </span>
-                      </Styled(span)>
+                      </Text>
                     </label>
                   </Choice>
                 </Choice>
