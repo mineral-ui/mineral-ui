@@ -36,7 +36,7 @@ type Props = {
   /** Used to uniquely define a group of inputs */
   name?: string,
   /** Function called when a input is selected */
-  onChange?: (event: SyntheticEvent<>) => void,
+  onChange?: (event: SyntheticInputEvent<>) => void,
   /** Indicates that the user must select an option before submitting a form */
   required?: boolean,
   /** Available sizes */
@@ -212,8 +212,12 @@ const Root = createStyledComponent('label', styles.root, {
 const Input = createStyledComponent('input', styles.input, {
   rootEl: 'input'
 });
-const Text = createStyledComponent('span', styles.text);
-const Control = createStyledComponent('span', styles.control);
+const Text = createStyledComponent('span', styles.text, {
+  displayName: 'Text'
+});
+const Control = createStyledComponent('span', styles.control, {
+  displayName: 'Control'
+});
 
 /**
  * Choice is base renderer for Checkbox and Radio.
