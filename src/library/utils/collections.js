@@ -1,6 +1,6 @@
 /* @flow */
 
-export const fromArray = <T>(array: Array<T>): Set<T> =>
+export const setFromArray = <T>(array: Array<T>): Set<T> =>
   array.reduce((acc, value) => {
     acc.add(value);
     return acc;
@@ -11,7 +11,7 @@ export const fromArray = <T>(array: Array<T>): Set<T> =>
 export const settify = (input: any) =>
   Object.keys(input).reduce((acc, key) => {
     const value = input[key];
-    acc[key] = Array.isArray(value) ? fromArray(value) : settify(value);
+    acc[key] = Array.isArray(value) ? setFromArray(value) : settify(value);
     return acc;
   }, {});
 
