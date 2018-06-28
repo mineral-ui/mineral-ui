@@ -140,6 +140,7 @@ const styles = {
       display: 'inline-block',
       fontWeight: theme.Button_fontWeight,
       height: theme[`Button_height_${size}`],
+      margin: 0,
       // if the user puts in a small icon in a large button
       // we want to force the button to be round/square
       // (really just pertinent on icon-only buttons)
