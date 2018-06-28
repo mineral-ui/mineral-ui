@@ -1,3 +1,28 @@
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/mineral-ui/mineral-ui/compare/v0.34.0...v0.35.0) (2018-06-28)
+
+
+### Bug Fixes
+
+* **checkbox,checkbox-group:** Apply correct background to indeterminate ([fd57905](https://github.com/mineral-ui/mineral-ui/commit/fd57905))
+
+
+### Code Refactoring
+
+* **button,link:** Remove regular variant, see commit message for additional changes ([2445a8a](https://github.com/mineral-ui/mineral-ui/commit/2445a8a)), closes [#707](https://github.com/mineral-ui/mineral-ui/issues/707)
+
+
+### Features
+
+* **buttongroup:** Add new component ([5d72edb](https://github.com/mineral-ui/mineral-ui/commit/5d72edb))
+
+
+### BREAKING CHANGES
+
+* **button,link:** Remove ‘regular’ variant
+
+
+
 <a name="0.34.0"></a>
 # [0.34.0](https://github.com/mineral-ui/mineral-ui/compare/v0.33.0...v0.34.0) (2018-06-11)
 
