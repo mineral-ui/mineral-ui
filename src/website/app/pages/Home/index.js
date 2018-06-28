@@ -191,7 +191,7 @@ const styles = {
   buttons: ({ theme }) => ({
     marginTop: theme.baseline_2,
 
-    '& > * + *': {
+    '& > [class] + [class]': {
       marginLeft: theme.space_inline_lg
     }
   }),
