@@ -2,11 +2,13 @@
 import React from 'react';
 import { createStyledComponent } from '../../../../library/styles';
 import _Callout from '../../Callout';
+import Markdown from '../../Markdown';
 import PropTable from '../../PropTable';
 import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
 
 type Props = {
+  additionalTypes?: Array<Object>,
   propDoc?: Object,
   propsComment?: string | React$Element<*>,
   title: string
@@ -20,7 +22,7 @@ const PropsComment = createStyledComponent('p', {
 });
 
 export default function DocProps(props: Props) {
-  const { propDoc, propsComment, title } = props;
+  const { additionalTypes, propDoc, propsComment, title } = props;
   return (
     <Section>
       <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>
@@ -41,6 +43,16 @@ export default function DocProps(props: Props) {
           {`${title} does not have properties of its own. Undocumented properties will be applied to the root element.`}
         </Callout>
       )}
+      {additionalTypes &&
+        additionalTypes.map(({ title, description, content }) => (
+          <div key={title}>
+            <DocSectionTitle
+              id={`${title}-type`}
+              level={4}>{`${title} Type`}</DocSectionTitle>
+            <Markdown>{description}</Markdown>
+            <PropTable propDoc={content} />
+          </div>
+        ))}
     </Section>
   );
 }

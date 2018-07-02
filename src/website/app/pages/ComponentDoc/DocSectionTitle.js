@@ -1,4 +1,5 @@
 /* @flow */
+import React from 'react';
 import {
   createStyledComponent,
   getNormalizedValue,
@@ -6,31 +7,28 @@ import {
 } from '../../../../library/styles';
 import Heading from '../../SiteHeading';
 
-export default createStyledComponent(
-  Heading,
-  ({ theme }) => ({
-    margin: `0 0 ${getNormalizedValue(
-      pxToEm(21 - 12), // to mid-baseline
-      theme.SiteHeading_fontSize_3
-    )}`,
-    paddingTop: getNormalizedValue(
-      pxToEm(50), // to baseline
-      theme.SiteHeading_fontSize_3
-    ),
+const Root = createStyledComponent(Heading, ({ level, theme }) => {
+  const fontSize = theme[`SiteHeading_fontSize_${level}`];
+  const fontSizeWide = theme[`SiteHeading_fontSize_${level}_wide`];
+
+  return {
+    margin: `0 0 ${getNormalizedValue(pxToEm(21 - 12), fontSize)}`, // to mid-baseline
+    paddingTop: getNormalizedValue(pxToEm(50), fontSize), // to baseline
 
     [theme.bp_moreSpacious]: {
-      fontSize: theme.SiteHeading_fontSize_3_wide,
-      margin: `0 0 ${getNormalizedValue(
-        pxToEm(19 - 12), // to mid-baseline
-        theme.SiteHeading_fontSize_3_wide
-      )}`,
-      paddingTop: getNormalizedValue(
-        pxToEm(55), // to baseline
-        theme.SiteHeading_fontSize_3_wide
-      )
+      fontSize: fontSizeWide,
+      margin: `0 0 ${getNormalizedValue(pxToEm(19 - 12), fontSizeWide)}`, // to mid-baseline
+      paddingTop: getNormalizedValue(pxToEm(55), fontSizeWide) // to baseline
     }
-  }),
-  {
-    withProps: { level: 3 }
-  }
-);
+  };
+});
+
+function DocSectionTitle(props: {}) {
+  return <Root {...props} />;
+}
+
+DocSectionTitle.defaultProps = {
+  level: 3
+};
+
+export default DocSectionTitle;
