@@ -22,7 +22,7 @@ Statuses:
 | [Avatar](/components/avatar)                  | [available]      |
 | [Box](/components/box)                        | [available]      |
 | [Button](/components/button)                  | [available]      |
-| [ButtonGroup](/components/button-group) ~ new | [available]      |
+| [ButtonGroup](/components/button-group)       | [available]      |
 | [Card](/components/card)                      | [available]      |
 | [Checkbox](/components/checkbox)              | [available]      |
 | [Dropdown](/components/dropdown)              | [available]      |
@@ -36,13 +36,13 @@ Statuses:
 | [Radio](/components/radio)                    | [available]      |
 | [Select](/components/select)                  | [available]      |
 | [StartEnd](/components/start-end)             | [available]      |
+| [Table](/components/table) ~ new              | [available]      |
 | [TextArea](/components/text-area)             | [available]      |
 | [Text](/components/text)                      | [available]      |
 | [TextInput](/components/text-input)           | [available]      |
 | [ThemeProvider](/components/theme-provider)   | [available]      |
 | [Tooltip](/components/tooltip)                | [available]      |
 | Dialog                                        | [in development] |
-| Table                                         | [in development] |
 | Alert                                         |                  |
 | Badge                                         |                  |
 | BreadCrumbs                                   |                  |

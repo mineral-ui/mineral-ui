@@ -7,6 +7,7 @@ import SubHeading from './SiteSubHeading';
 import Link from './SiteLink';
 import LiveProvider from './LiveProvider';
 import Markdown from './Markdown';
+import PropTable from './PropTable';
 
 type Props = {
   backgroundColor?: string,
@@ -77,7 +78,7 @@ export default function ComponentDocExample(props: Props) {
   } = props;
   const rootProps = { ...restProps };
   const descriptionProps = {
-    scope: { Callout },
+    scope: { Callout, PropTable },
     standalone
   };
   const liveProviderProps = {
