@@ -18,6 +18,7 @@ import popover from './Popover';
 import radio from './Radio';
 import select from './Select';
 import startEnd from './StartEnd';
+import table from './Table';
 import text from './Text';
 import textArea from './TextArea';
 import textInput from './TextInput';
@@ -42,6 +43,7 @@ const demos = flatten([
   radio,
   select,
   startEnd,
+  table,
   text,
   textArea,
   textInput,
