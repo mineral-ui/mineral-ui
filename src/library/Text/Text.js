@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { string } from 'prop-types';
 import { createStyledComponent } from '../styles';
+import { rtlTextAlign } from '../utils';
 import TextProvider from './TextProvider';
 
 type Props = {
@@ -123,7 +124,6 @@ const styles = {
         : isHeadingElement ? element : undefined;
     const headingAppearance =
       headingElements.indexOf(appearance) !== -1 && appearance;
-    const rtl = theme.direction === 'rtl';
 
     if (headingAppearance) {
       theme = {
@@ -166,15 +166,7 @@ const styles = {
         }
       })(),
       lineHeight: theme.Text_lineHeight,
-      textAlign: (() => {
-        if ((rtl && align == 'start') || (!rtl && align == 'end')) {
-          return 'right';
-        } else if ((rtl && align == 'end') || align == 'start') {
-          return 'left';
-        } else {
-          return align;
-        }
-      })(),
+      textAlign: rtlTextAlign(align, theme.direction),
       ...commonStyles(element, theme, truncate),
       // 1 - Not normalized because we actually want `##em` as applied value
       // 2 - Must come after commonStyles
