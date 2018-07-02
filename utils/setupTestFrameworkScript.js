@@ -14,6 +14,6 @@ if (semver.satisfies(React.version, '15.0.0 - 15.4.x')) {
 } else if (semver.satisfies(React.version, '^15.5.0')) {
   Adapter = require('enzyme-adapter-react-15');
 } else if (semver.satisfies(React.version, '^16.0.0')) {
-  Adapter = require('enzyme-adapter-react-16');
+  Adapter = require('enzyme-react-adapter-future');
 }
 Enzyme.configure({ adapter: new Adapter() });
