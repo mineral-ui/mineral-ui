@@ -17,6 +17,7 @@ import DocThemeVariables from './DocThemeVariables';
 import DocWhenHowToUse from './DocWhenHowToUse';
 
 type Props = {
+  additionalTypes?: Array<Object>,
   bestPractices?: Array<BestPractice>,
   className?: string,
   componentTheme?: Theme | Array<Theme>,
@@ -78,6 +79,7 @@ const DocIntro = ({ children }: { children: string }) => (
 
 export default function ComponentDoc(props: Props) {
   const {
+    additionalTypes,
     bestPractices,
     componentTheme,
     doc,
@@ -101,7 +103,7 @@ export default function ComponentDoc(props: Props) {
   delete rootProps.subcomponent;
   delete rootProps.slug;
   const examplesProps = { examples, slug };
-  const propProps = { propDoc, propsComment, title };
+  const propProps = { additionalTypes, propDoc, propsComment, title };
   const themeVariablesProps = {
     baseTheme: mineralTheme,
     componentTheme,
