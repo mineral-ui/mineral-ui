@@ -40,7 +40,7 @@ const installDependencies = (version) => {
   } else if (semver.satisfies(version, '^15.5.0')) {
     dependencies = `react@${version} react-dom@${version} react-test-renderer@${version} enzyme-adapter-react-15`;
   } else if (semver.satisfies(version, '^16.0.0')) {
-    dependencies = `react@${version} react-dom@${version} react-test-renderer@${version} enzyme-adapter-react-16`;
+    dependencies = `react@${version} react-dom@${version} react-test-renderer@${version} enzyme-react-adapter-future`;
   }
 
   if (dependencies) {
