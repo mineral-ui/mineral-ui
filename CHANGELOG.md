@@ -1,3 +1,13 @@
+<a name="0.36.0"></a>
+# [0.36.0](https://github.com/mineral-ui/mineral-ui/compare/v0.35.0...v0.36.0) (2018-07-03)
+
+
+### Features
+
+* **table:** Add Table component ([9beafcf](https://github.com/mineral-ui/mineral-ui/commit/9beafcf))
+
+
+
 <a name="0.35.0"></a>
 # [0.35.0](https://github.com/mineral-ui/mineral-ui/compare/v0.34.0...v0.35.0) (2018-06-28)
 
