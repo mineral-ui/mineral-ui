@@ -1,5 +1,6 @@
 /* @flow */
 import React from 'react';
+import semver from 'semver';
 import { LiveProvider, LivePreview } from 'react-live';
 import { mountInThemeProvider, ssrInThemeProvider } from '../utils/enzymeUtils';
 
@@ -11,7 +12,8 @@ type Example = {
 };
 type Examples = Array<Example>;
 type Options = {
-  exclude?: Array<string> // Example id
+  exclude?: Array<string>, // Example id
+  contextPolyfill?: boolean
 };
 
 const mountExample = (example: Example) => {
@@ -51,15 +53,25 @@ export default function testDemoExamples(
   examples: Examples,
   options: Options = {}
 ) {
-  if (options.exclude) {
-    const exclusions = options.exclude || [];
+  const { exclude, contextPolyfill } = options;
+
+  if (exclude) {
+    const exclusions = exclude || [];
     examples = examples.filter((example) => !exclusions.includes(example.id));
   }
 
   return describe('demo examples', () => {
     examples.filter(({ scope, source }) => scope && source).map((example) => {
+      /*
+       * Skip snapshot testing of components that use the create-react-context
+       * polyfill as these components render differently when the polyfill is
+       * used vs. when it is supported natively by React.
+       */
+      const itFn =
+        contextPolyfill && semver.lt(React.version, '16.3.0') ? xit : it;
+
       describe('Snapshots:', () => {
-        it(example.id, () => {
+        itFn(example.id, () => {
           const component = mountExample(example);
           expect(component).toMatchSnapshot();
         });
