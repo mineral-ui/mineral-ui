@@ -16,7 +16,10 @@ function shallowTable(props = {}) {
 }
 
 describe('Table', () => {
-  testDemoExamples(examples, { exclude: ['large-data-sets'] });
+  testDemoExamples(examples, {
+    exclude: ['large-data-sets'],
+    contextPolyfill: true
+  });
 
   it('renders', () => {
     const table = shallowTable();
