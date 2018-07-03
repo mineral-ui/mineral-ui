@@ -197,13 +197,13 @@ const PropTable = (props: Props) => {
       <Table>
         <thead>
           <tr>
-            <TableHeaderCell key="prop" width={10}>
+            <TableHeaderCell key="prop" width="10rem">
               Name
             </TableHeaderCell>
-            <TableHeaderCell key="type" width={15}>
+            <TableHeaderCell key="type" width="15rem">
               Type
             </TableHeaderCell>
-            <TableHeaderCell key="default" width={10}>
+            <TableHeaderCell key="default" width="10rem">
               Default
             </TableHeaderCell>
             <TableHeaderCell key="description">Description</TableHeaderCell>

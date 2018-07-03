@@ -90,10 +90,10 @@ export default function Typography(props: Props) {
               <Table>
                 <thead>
                   <tr>
-                    <TableHeaderCell width={20} scope="col">
+                    <TableHeaderCell width="20rem" scope="col">
                       Example
                     </TableHeaderCell>
-                    <TableHeaderCell width={8} scope="col">
+                    <TableHeaderCell width="8rem" scope="col">
                       Value
                     </TableHeaderCell>
                     <TableHeaderCell scope="col">Color Value</TableHeaderCell>

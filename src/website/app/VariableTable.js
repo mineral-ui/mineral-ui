@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../../library/styles';
-import { Table as _Table, TableCell, TableHeaderCell, TableRow } from './Table';
+import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 import colorable from 'colorable';
 import { darken, getLuminance } from 'polished';
 
@@ -16,9 +16,6 @@ const Root = createStyledComponent('div', ({ theme }) => ({
   margin: `${theme.space_stack_xl} 0 0`,
   overflowX: 'auto'
 }));
-const Table = createStyledComponent(_Table, {
-  tableLayout: 'fixed'
-});
 const Name = createStyledComponent('span', ({ theme }) => ({
   fontWeight: theme.fontWeight_semiBold
 }));
@@ -86,7 +83,9 @@ export default function VariableTable(props: Props) {
       <Table>
         <thead>
           <tr>
-            <TableHeaderCell scope="col">Variable</TableHeaderCell>
+            <TableHeaderCell scope="col" width="50%">
+              Variable
+            </TableHeaderCell>
             <TableHeaderCell scope="col">Value</TableHeaderCell>
           </tr>
         </thead>
