@@ -21,7 +21,7 @@ const styles = {
     fontWeight: theme.fontWeight_bold,
     padding: `0 ${theme.space_inset_sm} ${theme.space_inset_sm}`,
     textAlign: 'left',
-    width: width && `${width}rem`,
+    width: width && width,
 
     '&:first-child': {
       paddingLeft: 0
