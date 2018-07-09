@@ -102,8 +102,6 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -123,6 +121,8 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <Component>
@@ -199,6 +199,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="large"
                       >
                         <label
                           className="emotion-4"
@@ -223,7 +224,6 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="large"
                           >
                             <span
@@ -342,6 +342,7 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="large"
                       >
                         <label
                           className="emotion-4"
@@ -366,7 +367,6 @@ exports[`Radio demo examples Snapshots: controlled 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="large"
                           >
                             <span
@@ -532,8 +532,6 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -546,6 +544,8 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
 .emotion-3 {
   color: #afbacc;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <DemoForm>
@@ -613,6 +613,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                   <Choice
                     disabled={true}
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -634,7 +635,6 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                       </Styled(input)>
                       <Control
                         disabled={true}
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -751,6 +751,7 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                   <Choice
                     disabled={true}
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -774,7 +775,6 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                       </Styled(input)>
                       <Control
                         disabled={true}
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -820,6 +820,288 @@ exports[`Radio demo examples Snapshots: disabled 1`] = `
                           className="emotion-3"
                         >
                           Magnetite
+                        </span>
+                      </Text>
+                    </label>
+                  </Choice>
+                </Choice>
+              </ThemeProvider>
+            </ThemeProvider>
+          </Themed(Choice)>
+        </WithTheme(Themed(Choice))>
+      </Radio>
+    </form>
+  </Styled(form)>
+</DemoForm>
+`;
+
+exports[`Radio demo examples Snapshots: hide-label 1`] = `
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  border: 0px;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-0:focus + span {
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+}
+
+.emotion-0:checked + span,
+.emotion-0[type="checkbox"]:indeterminate + span {
+  background-color: #3272d9;
+  border-color: #3272d9;
+}
+
+.emotion-0:checked:hover + span,
+.emotion-0[type="checkbox"]:indeterminate:hover + span {
+  background-color: #5691f0;
+  border-color: #5691f0;
+}
+
+.emotion-0:checked:disabled + span,
+.emotion-0[type="checkbox"]:indeterminate:disabled + span {
+  background-color: #c8d1e0;
+  border-color: #c8d1e0;
+  color: #ffffff;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-color: #c8d1e0;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  content: "";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 1em;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1em;
+}
+
+.emotion-2 svg {
+  fill: currentColor;
+  height: auto;
+  width: 100%;
+}
+
+.emotion-1 {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-4:hover span:first-of-type {
+  border-color: #5691f0;
+}
+
+.emotion-4::after {
+  content: '.';
+  font-size: 0.875em;
+  visibility: hidden;
+  width: 0.1px;
+}
+
+.emotion-3 {
+  color: #333840;
+  font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
+  border: 0px;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<DemoForm>
+  <Styled(form)
+    onSubmit={[Function]}
+  >
+    <form
+      className="emotion-5"
+      onSubmit={[Function]}
+    >
+      <Radio
+        hideLabel={true}
+        label="Select All"
+        labelPosition="end"
+        size="large"
+      >
+        <WithTheme(Themed(Choice))
+          hideLabel={true}
+          iconChecked={<IconRadioButtonCheck />}
+          inputRef={[Function]}
+          label="Select All"
+          labelPosition="end"
+          rootProps={
+            Object {
+              "className": undefined,
+            }
+          }
+          size="large"
+          type="radio"
+        >
+          <Themed(Choice)
+            hideLabel={true}
+            iconChecked={<IconRadioButtonCheck />}
+            inputRef={[Function]}
+            label="Select All"
+            labelPosition="end"
+            rootProps={
+              Object {
+                "className": undefined,
+              }
+            }
+            size="large"
+            type="radio"
+          >
+            <ThemeProvider>
+              <ThemeProvider>
+                <Choice
+                  hideLabel={true}
+                  iconChecked={<IconRadioButtonCheck />}
+                  inputRef={[Function]}
+                  label="Select All"
+                  labelPosition="end"
+                  rootProps={
+                    Object {
+                      "className": undefined,
+                    }
+                  }
+                  size="large"
+                  type="radio"
+                >
+                  <Choice
+                    hideLabel={true}
+                    labelPosition="end"
+                    size="large"
+                  >
+                    <label
+                      className="emotion-4"
+                    >
+                      <Styled(input)
+                        innerRef={[Function]}
+                        size="large"
+                        type="radio"
+                      >
+                        <input
+                          className="emotion-0"
+                          size="large"
+                          type="radio"
+                        />
+                      </Styled(input)>
+                      <Control
+                        size="large"
+                      >
+                        <span
+                          className="emotion-2"
+                        >
+                          <IconRadioButtonCheck>
+                            <Icon
+                              rtl={false}
+                              size="medium"
+                            >
+                              <Styled(svg)
+                                aria-hidden={true}
+                                role="img"
+                                rtl={false}
+                                size="medium"
+                                viewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-1"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <circle
+                                      cx="12"
+                                      cy="12"
+                                      r="3.43"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconRadioButtonCheck>
+                        </span>
+                      </Control>
+                      <Text
+                        hideLabel={true}
+                        labelPosition="end"
+                        size="large"
+                      >
+                        <span
+                          className="emotion-3"
+                        >
+                          Select All
                         </span>
                       </Text>
                     </label>
@@ -933,8 +1215,6 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -954,6 +1234,8 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 .emotion-8[class] > *:not(:last-child) {
@@ -1133,6 +1415,7 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="large"
                       >
                         <label
                           className="emotion-4"
@@ -1151,7 +1434,6 @@ exports[`Radio demo examples Snapshots: input-ref 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="large"
                           >
                             <span
@@ -1351,8 +1633,6 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -1372,6 +1652,8 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <DemoForm>
@@ -1446,6 +1728,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -1470,7 +1753,6 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -1585,6 +1867,7 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -1607,7 +1890,6 @@ exports[`Radio demo examples Snapshots: invalid 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -1769,8 +2051,6 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -1790,6 +2070,8 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 .emotion-5 {
@@ -1836,39 +2118,11 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
   border-color: #5691f0;
 }
 
-.emotion-8 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #ffffff;
-  border-color: #c8d1e0;
-  border-radius: 100%;
-  border-style: solid;
-  border-width: 1px;
-  color: #ffffff;
-  content: "";
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  height: 1em;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 1em;
-  margin-right: 0;
-  width: 1em;
-}
-
-.emotion-8 svg {
-  fill: currentColor;
-  height: auto;
-  width: 100%;
+.emotion-9 {
+  color: #333840;
+  font-size: 0.875em;
+  margin-left: 0;
+  margin-right: 1.1428571428571428em;
 }
 
 .emotion-16 {
@@ -2014,6 +2268,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -2034,7 +2289,6 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -2155,6 +2409,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                 >
                   <Choice
                     labelPosition="start"
+                    size="large"
                   >
                     <label
                       className="emotion-10"
@@ -2175,11 +2430,10 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="start"
                         size="large"
                       >
                         <span
-                          className="emotion-8"
+                          className="emotion-2"
                         >
                           <IconRadioButtonCheck>
                             <Icon
@@ -2217,7 +2471,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         size="large"
                       >
                         <span
-                          className="emotion-3"
+                          className="emotion-9"
                         >
                           Magnetite
                         </span>
@@ -2301,6 +2555,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                   <Choice
                     justify={true}
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-16"
@@ -2321,7 +2576,6 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -2448,6 +2702,7 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                   <Choice
                     justify={true}
                     labelPosition="start"
+                    size="large"
                   >
                     <label
                       className="emotion-22"
@@ -2468,11 +2723,10 @@ exports[`Radio demo examples Snapshots: label-position-and-justification 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="start"
                         size="large"
                       >
                         <span
-                          className="emotion-8"
+                          className="emotion-2"
                         >
                           <IconRadioButtonCheck>
                             <Icon
@@ -2631,8 +2885,6 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -2652,6 +2904,8 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <DemoForm>
@@ -2718,6 +2972,7 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -2738,7 +2993,6 @@ exports[`Radio demo examples Snapshots: label-wrapping 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -2896,8 +3150,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -2917,11 +3169,15 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
 .emotion-16 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 .emotion-3 {
   color: #333840;
   font-size: 0.75em;
+  margin-left: 1.3333333333333333em;
+  margin-right: 0;
 }
 
 .emotion-41 {
@@ -2948,8 +3204,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1.5em;
 }
 
@@ -3822,6 +4076,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="small"
                       >
                         <label
                           className="emotion-4"
@@ -3840,7 +4095,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="small"
                           >
                             <span
@@ -4062,6 +4316,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="medium"
                       >
                         <label
                           className="emotion-4"
@@ -4080,7 +4335,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="medium"
                           >
                             <span
@@ -4302,6 +4556,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="large"
                       >
                         <label
                           className="emotion-4"
@@ -4320,7 +4575,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="large"
                           >
                             <span
@@ -4542,6 +4796,7 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                     >
                       <Choice
                         labelPosition="end"
+                        size="jumbo"
                       >
                         <label
                           className="emotion-4"
@@ -4560,7 +4815,6 @@ exports[`Radio demo examples Snapshots: next-to-other-inputs 1`] = `
                             />
                           </Styled(input)>
                           <Control
-                            labelPosition="end"
                             size="jumbo"
                           >
                             <span
@@ -4837,8 +5091,6 @@ exports[`Radio demo examples Snapshots: required 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -4858,6 +5110,8 @@ exports[`Radio demo examples Snapshots: required 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <DemoForm>
@@ -4932,6 +5186,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -4958,7 +5213,6 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -5073,6 +5327,7 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -5097,7 +5352,6 @@ exports[`Radio demo examples Snapshots: required 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -5235,7 +5489,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
   color: #ffffff;
 }
 
-.emotion-7 {
+.emotion-2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -5259,12 +5513,10 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
-.emotion-7 svg {
+.emotion-2 svg {
   fill: currentColor;
   height: auto;
   width: 100%;
@@ -5277,9 +5529,11 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
   width: 1em;
 }
 
-.emotion-3 {
+.emotion-8 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 .emotion-10 {
@@ -5326,39 +5580,11 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
   border-color: #5691f0;
 }
 
-.emotion-2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #ffffff;
-  border-color: #c8d1e0;
-  border-radius: 100%;
-  border-style: solid;
-  border-width: 1px;
-  color: #ffffff;
-  content: "";
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  height: 1em;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 1em;
-  margin-right: 0;
-  width: 1em;
-}
-
-.emotion-2 svg {
-  fill: currentColor;
-  height: auto;
-  width: 100%;
+.emotion-3 {
+  color: #333840;
+  font-size: 0.875em;
+  margin-left: 0;
+  margin-right: 1.1428571428571428em;
 }
 
 .emotion-15 {
@@ -5505,6 +5731,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                       >
                         <Choice
                           labelPosition="end"
+                          size="large"
                         >
                           <label
                             className="emotion-4"
@@ -5523,7 +5750,6 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               />
                             </Styled(input)>
                             <Control
-                              labelPosition="end"
                               size="large"
                             >
                               <span
@@ -5630,6 +5856,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                       >
                         <Choice
                           labelPosition="start"
+                          size="large"
                         >
                           <label
                             className="emotion-9"
@@ -5648,11 +5875,10 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               />
                             </Styled(input)>
                             <Control
-                              labelPosition="start"
                               size="large"
                             >
                               <span
-                                className="emotion-7"
+                                className="emotion-2"
                               >
                                 <IconRadioButtonCheck>
                                   <Icon
@@ -5690,7 +5916,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               size="large"
                             >
                               <span
-                                className="emotion-3"
+                                className="emotion-8"
                               >
                                 مرحبا بالعالم
                               </span>
@@ -5770,6 +5996,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                         <Choice
                           justify={true}
                           labelPosition="end"
+                          size="large"
                         >
                           <label
                             className="emotion-15"
@@ -5788,7 +6015,6 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               />
                             </Styled(input)>
                             <Control
-                              labelPosition="end"
                               size="large"
                             >
                               <span
@@ -5901,6 +6127,7 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                         <Choice
                           justify={true}
                           labelPosition="start"
+                          size="large"
                         >
                           <label
                             className="emotion-20"
@@ -5919,11 +6146,10 @@ exports[`Radio demo examples Snapshots: rtl 1`] = `
                               />
                             </Styled(input)>
                             <Control
-                              labelPosition="start"
                               size="large"
                             >
                               <span
-                                className="emotion-7"
+                                className="emotion-2"
                               >
                                 <IconRadioButtonCheck>
                                   <Icon
@@ -6085,8 +6311,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -6106,11 +6330,15 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
 .emotion-8 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 .emotion-3 {
   color: #333840;
   font-size: 0.75em;
+  margin-left: 1.3333333333333333em;
+  margin-right: 0;
 }
 
 .emotion-17 {
@@ -6137,8 +6365,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1.5em;
 }
 
@@ -6212,6 +6438,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="small"
                   >
                     <label
                       className="emotion-4"
@@ -6232,7 +6459,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="small"
                       >
                         <span
@@ -6343,6 +6569,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="medium"
                   >
                     <label
                       className="emotion-4"
@@ -6363,7 +6590,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="medium"
                       >
                         <span
@@ -6478,6 +6704,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -6500,7 +6727,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -6611,6 +6837,7 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="jumbo"
                   >
                     <label
                       className="emotion-4"
@@ -6631,7 +6858,6 @@ exports[`Radio demo examples Snapshots: sizes 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="jumbo"
                       >
                         <span
@@ -6793,8 +7019,6 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 0;
-  margin-right: 1em;
   width: 1em;
 }
 
@@ -6814,6 +7038,8 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
 .emotion-3 {
   color: #333840;
   font-size: 0.875em;
+  margin-left: 1.1428571428571428em;
+  margin-right: 0;
 }
 
 <DemoForm>
@@ -6884,6 +7110,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -6906,7 +7133,6 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
@@ -7017,6 +7243,7 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                 >
                   <Choice
                     labelPosition="end"
+                    size="large"
                   >
                     <label
                       className="emotion-4"
@@ -7037,7 +7264,6 @@ exports[`Radio demo examples Snapshots: uncontrolled 1`] = `
                         />
                       </Styled(input)>
                       <Control
-                        labelPosition="end"
                         size="large"
                       >
                         <span
