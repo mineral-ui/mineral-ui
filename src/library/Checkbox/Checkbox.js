@@ -23,8 +23,8 @@ type Props = {
   defaultChecked?: boolean,
   /** Disables the checkbox */
   disabled?: boolean,
-  /** Maximize the distance between the label and the control */
-  justify?: boolean,
+  /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
+  hideLabel?: boolean,
   /**
    * Indicates a state in which it cannot be determined if the input is checked
    * or not
@@ -32,10 +32,10 @@ type Props = {
   indeterminate?: boolean,
   /** Ref for the checkbox */
   inputRef?: (node: ?React$Component<*, *>) => void,
-  /** Props to be applied directly to the root element rather than the input */
-  rootProps?: Object,
   /** Indicates that the value of the input is invalid */
   invalid?: boolean,
+  /** Maximize the distance between the label and the control */
+  justify?: boolean,
   /** Label associated with the input element */
   label: string | React$Element<*>,
   /** Determines the position of the label relative to the control */
@@ -46,6 +46,8 @@ type Props = {
   onChange?: (event: SyntheticInputEvent<>) => void,
   /** Indicates that the user must select an option before submitting a form */
   required?: boolean,
+  /** Props to be applied directly to the root element rather than the input */
+  rootProps?: Object,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
   /** The value of the checkbox */

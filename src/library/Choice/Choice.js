@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { hideVisually } from 'polished';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 
 type Props = {
   /**
@@ -29,6 +29,8 @@ type Props = {
   inputRef?: (node: ?React$Component<*, *>) => void,
   /** Props to be applied directly to the root element rather than the input */
   rootProps?: Object,
+  /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
+  hideLabel?: boolean,
   /** Indicates that the value of the input is invalid */
   invalid?: boolean,
   /** Label associated with the input element */
@@ -67,22 +69,21 @@ export const componentTheme = (baseTheme: Object) => {
     ChoiceControl_borderColor_checkedHover: colors.hover,
     ChoiceControl_borderRadius: baseTheme.borderRadius_1,
     ChoiceControl_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${colors.focus}`,
-    ChoiceControl_marginHorizontal: baseTheme.space_inline_md,
     ChoiceControl_size: pxToEm(16),
     ChoiceControl_size_jumbo: pxToEm(24),
 
     ChoiceText_color: baseTheme.color,
     ChoiceText_fontSize: baseTheme.fontSize_ui,
     ChoiceText_fontSize_small: pxToEm(12),
+    ChoiceText_marginHorizontal: baseTheme.space_inline_md,
 
     ...baseTheme
   };
 };
 
 const styles = {
-  control: ({ disabled, labelPosition, size, theme: baseTheme }) => {
+  control: ({ disabled, size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
     const backgroundColor = disabled
       ? theme.input_backgroundColor_disabled
       : theme.ChoiceControl_backgroundColor;
@@ -90,7 +91,6 @@ const styles = {
       size === 'jumbo'
         ? theme.ChoiceControl_size_jumbo
         : theme.ChoiceControl_size;
-    const labelPositionStart = labelPosition === 'start';
 
     return {
       alignItems: 'center',
@@ -105,14 +105,6 @@ const styles = {
       flex: 'none',
       height: controlDimensions,
       justifyContent: 'center',
-      marginLeft:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? theme.ChoiceControl_marginHorizontal
-          : 0,
-      marginRight:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? 0
-          : theme.ChoiceControl_marginHorizontal,
       width: controlDimensions,
 
       '& svg': {
@@ -157,7 +149,14 @@ const styles = {
       }
     };
   },
-  root: ({ disabled, justify, labelPosition, theme: baseTheme }) => {
+  root: ({
+    disabled,
+    justify,
+    hideLabel,
+    labelPosition,
+    size,
+    theme: baseTheme
+  }) => {
     const theme = componentTheme(baseTheme);
     const labelPositionStart = labelPosition === 'start';
 
@@ -174,33 +173,56 @@ const styles = {
         '& span:first-of-type': {
           borderColor: !disabled && theme.ChoiceControl_borderColor_hover
         }
-      }
+      },
+
+      // Preserve layout when hideLabel
+      ...(hideLabel
+        ? {
+            '&::after': {
+              content: "'.'",
+              fontSize:
+                size === 'small'
+                  ? theme.ChoiceText_fontSize_small
+                  : theme.ChoiceText_fontSize,
+              visibility: 'hidden',
+              width: '0.1px'
+            }
+          }
+        : undefined)
     };
   },
-  text: ({ disabled, justify, labelPosition, size, theme: baseTheme }) => {
+  text: ({
+    disabled,
+    hideLabel,
+    justify,
+    labelPosition,
+    size,
+    theme: baseTheme
+  }) => {
     const theme = componentTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
     const labelPositionStart = labelPosition === 'start';
+    const fontSize =
+      size === 'small'
+        ? theme.ChoiceText_fontSize_small
+        : theme.ChoiceText_fontSize;
+    const marginHorizontal = justify
+      ? 'auto'
+      : getNormalizedValue(theme.ChoiceText_marginHorizontal, fontSize);
 
     return {
       color: disabled ? theme.color_disabled : theme.ChoiceText_color,
-      fontSize:
-        size === 'small'
-          ? theme.ChoiceText_fontSize_small
-          : theme.ChoiceText_fontSize,
+      fontSize,
+      marginLeft:
+        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
+          ? 0
+          : marginHorizontal,
+      marginRight:
+        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
+          ? marginHorizontal
+          : 0,
 
-      ...(justify
-        ? {
-            marginLeft:
-              (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-                ? 0
-                : 'auto',
-            marginRight:
-              (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-                ? 'auto'
-                : 0
-          }
-        : {})
+      ...(hideLabel ? hideVisually() : undefined)
     };
   }
 };
@@ -226,10 +248,11 @@ const Choice = (props: Props) => {
   const {
     className,
     disabled,
-    justify,
+    hideLabel,
     iconChecked,
     inputRef,
     invalid,
+    justify,
     label,
     labelPosition,
     required,
@@ -241,7 +264,9 @@ const Choice = (props: Props) => {
     className,
     disabled,
     justify,
+    hideLabel,
     labelPosition,
+    size,
     ...otherRootProps
   };
 
@@ -261,12 +286,12 @@ const Choice = (props: Props) => {
 
   const controlProps = {
     disabled,
-    labelPosition,
     size
   };
 
   const textProps = {
     disabled,
+    hideLabel,
     justify,
     labelPosition,
     size
