@@ -1,6 +1,7 @@
 /* @flow */
 import controlled from './controlled';
 import disabled from './disabled';
+import hideLabel from './hideLabel';
 import importSyntax from './importSyntax';
 import inputRef from './inputRef';
 import invalid from './invalid';
@@ -22,6 +23,7 @@ export default [
   sizes,
   labelPositionAndJustification,
   labelWrapping,
+  hideLabel,
   inputRef,
   rtl,
   nextToOtherInputs
