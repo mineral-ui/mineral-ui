@@ -1,3 +1,20 @@
+<a name="0.37.0"></a>
+# [0.37.0](https://github.com/mineral-ui/mineral-ui/compare/v0.36.0...v0.37.0) (2018-07-10)
+
+
+### Features
+
+* **radio,checkbox:** Add hideLabel prop to accessibly hide the label ([2c081a1](https://github.com/mineral-ui/mineral-ui/commit/2c081a1))
+
+
+### BREAKING CHANGES
+
+* **radio,checkbox:** Rename theme variables RadioControl_marginHorizontal
+to RadioText_marginHorizontal and CheckboxControl_marginHorizontal to
+CheckboxText_marginHorizontal
+
+
+
 <a name="0.36.0"></a>
 # [0.36.0](https://github.com/mineral-ui/mineral-ui/compare/v0.35.0...v0.36.0) (2018-07-03)
 
