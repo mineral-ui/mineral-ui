@@ -35,7 +35,9 @@ type Props = {
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
   /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
+  variant?: 'danger' | 'success' | 'warning',
+  /** Align Buttons vertically */
+  vertical?: boolean
 };
 
 type State = {
@@ -52,13 +54,14 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const styles = ({ fullWidth, theme: baseTheme }) => {
+const styles = ({ fullWidth, theme: baseTheme, vertical }) => {
   let theme = componentTheme(baseTheme);
   const { direction } = theme;
   const rtl = direction === 'rtl';
 
   return {
     display: 'flex',
+    flexDirection: vertical ? 'column' : 'row',
 
     '& button': {
       flexGrow: fullWidth && 1,
@@ -82,56 +85,88 @@ const styles = ({ fullWidth, theme: baseTheme }) => {
       }
     },
 
-    '& > button:not(:first-child), & > *:not(:first-child) button': rtl
-      ? {
-          borderRightColor: 'transparent',
-          borderBottomRightRadius: 0,
-          borderTopRightRadius: 0
-        }
-      : {
-          borderLeftColor: 'transparent',
-          borderBottomLeftRadius: 0,
-          borderTopLeftRadius: 0
-        },
+    '& > button:not(:first-child), & > *:not(:first-child) button':
+      rtl && !vertical
+        ? {
+            borderRightColor: 'transparent',
+            borderBottomRightRadius: 0,
+            borderTopRightRadius: 0
+          }
+        : !rtl && !vertical
+          ? {
+              borderLeftColor: 'transparent',
+              borderBottomLeftRadius: 0,
+              borderTopLeftRadius: 0
+            }
+          : {
+              borderTopColor: 'transparent',
+              borderTopLeftRadius: 0,
+              borderTopRightRadius: 0
+            },
 
-    '& > button:not(:last-child), & > *:not(:last-child) button': rtl
-      ? {
-          borderBottomLeftRadius: 0,
-          borderTopLeftRadius: 0
-        }
-      : {
-          borderBottomRightRadius: 0,
-          borderTopRightRadius: 0
-        },
+    '& > button:not(:last-child), & > *:not(:last-child) button':
+      rtl && !vertical
+        ? {
+            borderBottomLeftRadius: 0,
+            borderTopLeftRadius: 0
+          }
+        : !rtl && !vertical
+          ? {
+              borderBottomRightRadius: 0,
+              borderTopRightRadius: 0
+            }
+          : {
+              borderBottomLeftRadius: 0,
+              borderBottomRightRadius: 0
+            },
 
-    '& > [aria-checked]:not(:last-child)': rtl
-      ? { borderLeftColor: 'transparent' }
-      : { borderRightColor: 'transparent' },
+    '& > [aria-checked]:not(:last-child)':
+      rtl && !vertical
+        ? { borderLeftColor: 'transparent' }
+        : !rtl && !vertical
+          ? { borderRightColor: 'transparent' }
+          : { borderBottomColor: 'transparent' },
 
-    '& > [aria-checked=false] + *:not(button) button': rtl
-      ? { borderRightColor: theme.ButtonGroupButton_borderStartColor }
-      : { borderLeftColor: theme.ButtonGroupButton_borderStartColor },
+    '& > [aria-checked=false] + *:not(button) button':
+      rtl && !vertical
+        ? { borderRightColor: theme.ButtonGroupButton_borderStartColor }
+        : !rtl && !vertical
+          ? { borderLeftColor: theme.ButtonGroupButton_borderStartColor }
+          : { borderTopColor: theme.ButtonGroupButton_borderStartColor },
 
     '& > [aria-checked=true] + [aria-checked=true]': {
-      '&:not(:focus), & button:not(:focus)': {
-        borderLeftColor:
-          !rtl && theme.ButtonGroupButton_borderStartColor_checked,
-        borderRightColor:
-          rtl && theme.ButtonGroupButton_borderStartColor_checked
-      }
+      '&:not(:focus), & button:not(:focus)': vertical
+        ? {
+            borderTopColor: theme.ButtonGroupButton_borderStartColor_checked
+          }
+        : {
+            borderLeftColor:
+              !rtl && theme.ButtonGroupButton_borderStartColor_checked,
+            borderRightColor:
+              rtl && theme.ButtonGroupButton_borderStartColor_checked
+          }
     },
 
     '& > [aria-checked=false], & > *:not([aria-checked])': {
-      '&:focus, & button:focus': {
-        borderLeftColor: theme.ButtonGroupButton_borderStartColor,
-        borderRightColor: theme.ButtonGroupButton_borderStartColor
-      }
+      '&:focus, & button:focus': vertical
+        ? {
+            borderTopColor: theme.ButtonGroupButton_borderStartColor,
+            borderBottomColor: theme.ButtonGroupButton_borderStartColor
+          }
+        : {
+            borderLeftColor: theme.ButtonGroupButton_borderStartColor,
+            borderRightColor: theme.ButtonGroupButton_borderStartColor
+          }
     },
     '& > [aria-checked=false] + [aria-checked=false]': {
-      '&:not(:focus)': {
-        borderLeftColor: !rtl && theme.ButtonGroupButton_borderStartColor,
-        borderRightColor: rtl && theme.ButtonGroupButton_borderStartColor
-      }
+      '&:not(:focus)': vertical
+        ? {
+            borderTopColor: theme.ButtonGroupButton_borderStartColor
+          }
+        : {
+            borderLeftColor: !rtl && theme.ButtonGroupButton_borderStartColor,
+            borderRightColor: rtl && theme.ButtonGroupButton_borderStartColor
+          }
     }
   };
 };
@@ -201,6 +236,7 @@ export default class ButtonGroup extends Component<Props, State> {
       onClick: ignoreOnClick,
       size,
       variant,
+      vertical,
       ...restProps
     } = this.props;
     const rootProps = {
@@ -208,6 +244,7 @@ export default class ButtonGroup extends Component<Props, State> {
       fullWidth,
       mode,
       role: mode === 'radio' ? 'radiogroup' : 'group',
+      vertical,
       ...restProps
     };
     const checked = this.getControllableValue('checked');
