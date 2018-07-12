@@ -10,6 +10,7 @@ import rtl from './rtl';
 import sizes from './sizes';
 import uncontrolled from './uncontrolled';
 import variants from './variants';
+import vertical from './vertical';
 
 export default [
   importSyntax,
@@ -18,6 +19,7 @@ export default [
   uncontrolled,
   controlled,
   sizes,
+  vertical,
   variants,
   disabled,
   icons,
