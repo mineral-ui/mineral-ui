@@ -1,10 +1,10 @@
 <!--
-NOTE: We're just getting started. While we appreciate any feedback, we're not yet ready to accept public contributions.
-
 Thank you for your contribution! Here's a template to help you format your PR.
 
-Your title should look like: [ComponentName] Clear, brief title using imperative tense
-For example: [Button] Add support for type=submit
+Your title should look like: "[ComponentName] Clear, brief title using imperative tense" ~or~ "type-of-change(what-is-changed): Clear, brief title using imperative tense" (the latter should follow type convention from Commitizen: https://github.com/commitizen/cz-cli)
+Examples:
+* [Button] Add support for type=submit
+* test(happo): Update to happo v1.0
 
 For a PR to be considered, each item in the checklist must be checked.
 -->
@@ -16,7 +16,11 @@ For a PR to be considered, each item in the checklist must be checked.
 <!-- Why is this change required? What problem does it solve? If it fixes an open issue, please link to the issue here and auto-close them via commit messages: https://help.github.com/articles/closing-issues-via-commit-messages. -->
 
 ### Screenshots, videos, or demo, if appropriate
-<!-- To record and share a video: http://recordit.co/ -->
+<!-- Please share either a reproduction of your work on CodeSandbox (our Mineral UI Starter https://codesandbox.io/s/v410y75m0 may be useful for setup) or a deploy preview. To record and share a video: http://recordit.co/ -->
+
+https://codesandbox.io/s/<your-sandbox-id>
+
+<!-- or -->
 
 https://<your-branch-name>--mineral-ui.netlify.com/
 

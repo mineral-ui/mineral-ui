@@ -5,8 +5,6 @@
 [![Commitizen friendly](https://img.shields.io/badge/Commitizen-friendly-brightgreen.svg?style=flat)](https://github.com/commitizen/cz-cli)
 [![code style Prettier](https://img.shields.io/badge/code_style-Prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-> **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
-
 # [Mineral UI](https://mineral-ui.com/)
 
 A design system and [React](https://reactjs.org/) component library for the web that lets you quickly build high-quality, accessible apps. Created by [CA Technologies](http://ca.com).
@@ -79,6 +77,9 @@ For more options loading this font from Google, check out the Selected Family po
 
 This project uses CSS-in-JS and [Emotion](https://emotion.sh/) for component styling. Refer to the [styling page](https://mineral-ui.com/styling/) for details.
 
+## Questions
+
+If you have read through the documentation but are still facing difficulties, we are happy to help. Please reproduce your error by forking our [Mineral UI Starter](https://codesandbox.io/s/v410y75m0) and adding the relevant code there. Then, send us a message on the Flowdock "Mineral & Styleguide" Flow or open an issue including the relevant link.
 
 ## Contributing
 
