@@ -1,7 +1,5 @@
 # Contributing Guide
 
-> **_NOTE:_** _We’re just getting started. While we appreciate any feedback, we’re not yet ready to accept public contributions._
-
 Thank you for your help making this project and community as good as it can be. We strive to maintain a welcoming, inclusive space for all. All contributors, including commenters on issues, are expected to abide by our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 Here are a few things to help your contribution be fun and trouble-free.
@@ -9,7 +7,9 @@ Here are a few things to help your contribution be fun and trouble-free.
 
 ## Submitting a Pull Request
 
-We welcome pull requests from anyone, but before working on a large change, it is best to open an issue first to discuss it with the maintainers. You can also get a good overview of our current and planned work from our [Waffle board](https://waffle.io/mineral-ui/mineral-ui), from which we manage this project.
+We welcome pull requests from anyone but before working on a large change, it is best to first to discuss it with the maintainers. Please reproduce your error by forking our [Mineral UI Starter](https://codesandbox.io/s/v410y75m0) and adding the relevant code there. Then, send us a message on the Flowdock "Mineral & Styleguide" Flow or open an issue including the relevant link.
+
+You can also get a good overview of our current and planned work from our [Waffle board](https://waffle.io/mineral-ui/mineral-ui), from which we manage this project.
 
 Please try to keep your PR as small and focused as possible, and don’t include more than one feature or bug fix per PR. Big PRs are hard to review and are less likely to be accepted.
 

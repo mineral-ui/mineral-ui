@@ -16,7 +16,7 @@ For example: [Button] Does not support id attribute
 <!-- Not required, but suggest a fix/reason for the bug, or ideas how to implement the change/improvement/feature. If you really want to make sure your idea is understood, provide a screenshots, videos (http://recordit.co/), or a prototype of the desired functionality. -->
 
 ### Steps to reproduce (for bugs)
-<!-- Provide a link to a simplified test case or repo, or a clear set of steps to reproduce this bug. Include code to reproduce, if relevant. Screenshots or videos (http://recordit.co/) can also be helpful here. -->
+<!-- Provide a link to the relevant code included in your forked [Mineral UI Starter](https://codesandbox.io/s/v410y75m0) or to an otherwise simplified test case or repo. Alternately, provide a clear set of steps to reproduce this bug (along with relevant code) below. Screenshots or videos (http://recordit.co/) can also be helpful here. -->
 1.
 2.
 3.
