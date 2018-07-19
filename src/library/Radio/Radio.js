@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import Choice, {
   componentTheme as choiceComponentTheme
@@ -87,35 +87,35 @@ const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
  * often used in [groups](/components/radio-group), wherein only a single option may be
  * selected.
  */
-const Radio = (props: Props) => {
-  const {
-    className,
-    inputRef,
-    rootProps: otherRootProps,
-    ...restProps
-  } = props;
-  const rootProps = {
-    iconChecked: <IconChecked />,
-    inputRef: (ref) => {
-      if (inputRef) {
-        inputRef(ref);
-      }
-    },
-    rootProps: {
-      className,
-      ...otherRootProps
-    },
-    type: 'radio',
-    ...restProps // Note: Props are spread to input rather than Root
+export default class Radio extends PureComponent<Props> {
+  static defaultProps = {
+    labelPosition: 'end',
+    size: 'large'
   };
+  static displayName = 'Radio';
 
-  return <Root {...rootProps} />;
-};
+  render() {
+    const {
+      className,
+      inputRef,
+      rootProps: otherRootProps,
+      ...restProps
+    } = this.props;
+    const rootProps = {
+      iconChecked: <IconChecked />,
+      inputRef: (ref) => {
+        if (inputRef) {
+          inputRef(ref);
+        }
+      },
+      rootProps: {
+        className,
+        ...otherRootProps
+      },
+      type: 'radio',
+      ...restProps // Note: Props are spread to input rather than Root
+    };
 
-Radio.defaultProps = {
-  labelPosition: 'end',
-  size: 'large'
-};
-Radio.displayName = 'Radio';
-
-export default Radio;
+    return <Root {...rootProps} />;
+  }
+}
