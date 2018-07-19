@@ -12,6 +12,6 @@ export default {
       striped
       data={data}
       rowKey="Fruits"
-      title="Delicious Foods"
+      title="Foods of the World"
       hideTitle />`
 };

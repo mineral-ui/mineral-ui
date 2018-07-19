@@ -33,7 +33,7 @@ width is greater than that of its container. You can disable this behavior with
         columns={columns}
         data={data}
         rowKey="Fruits"
-        title="Delicious Foods"
+        title="Foods of the World"
         hideTitle />
     </Box>`
 };

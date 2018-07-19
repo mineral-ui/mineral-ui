@@ -24,7 +24,7 @@ definition objects, [detailed in the API](/components/table/#Column-type).
           columns={columns}
           data={data}
           rowKey="Fruits"
-          title="Delicious Foods"
+          title="Foods of the World"
           hideTitle />
       );
     }`

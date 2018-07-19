@@ -213,7 +213,8 @@ export default [
     title: 'Select'
   },
   {
-    description: 'Table displays structured data with columns and rows.',
+    description:
+      'Table displays structured data with sortable columns and selectable rows.',
     slug: 'table',
     title: 'Table'
   },

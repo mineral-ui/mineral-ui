@@ -15,13 +15,13 @@ maintaining accessibility.`,
     <Grid alignItems="end" breakpoints={['57em']}>
       <GridItem span={[12, 6]} marginBottom={['lg', 0]}>
         <Table
-          title="Delicious Foods"
+          title="Foods of the World"
           data={data}
           rowKey="Fruits"/>
       </GridItem>
       <GridItem span={[12, 6]}>
         <Table
-          title="Delicious Foods"
+          title="Foods of the World"
           titleAppearance="h2"
           titleElement="h3"
           data={data}
