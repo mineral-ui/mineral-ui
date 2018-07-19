@@ -22,7 +22,7 @@ with the \`textAlign\` column definition property.`,
         <Table
           columns={columns}
           data={data}
-          title="Delicious Foods"
+          title="Foods of the World"
           hideTitle />
       );
     }`

@@ -1,23 +1,22 @@
 /* @flow */
-import { componentTheme as tableComponentTheme } from '../../../../library/Table/Table';
+import { componentTheme as tableComponentTheme } from '../../../../library/Table/TableBase';
 import { componentTheme as tableCellComponentTheme } from '../../../../library/Table/TableCell';
-import { componentTheme as tableColumnHeaderComponentTheme } from '../../../../library/Table/TableColumnHeader';
+import { componentTheme as tableHeaderCellComponentTheme } from '../../../../library/Table/TableHeaderCell';
 import { componentTheme as tableHeaderComponentTheme } from '../../../../library/Table/TableHeader';
 import { componentTheme as tableRowComponentTheme } from '../../../../library/Table/TableRow';
 import { componentTheme as tableTitleComponentTheme } from '../../../../library/Table/TableTitle';
 
 import examples from './examples';
+import bestPractices from './bestPractices';
 
 const doc = require('!!react-docgen-loader!../../../../library/Table/Table');
-
-import bestPractices from './bestPractices';
 
 export default {
   bestPractices,
   componentTheme: [
     tableComponentTheme,
     tableCellComponentTheme,
-    tableColumnHeaderComponentTheme,
+    tableHeaderCellComponentTheme,
     tableHeaderComponentTheme,
     tableRowComponentTheme,
     tableTitleComponentTheme
@@ -63,8 +62,24 @@ export default {
           description:
             'Render cells in the column as `<th scope="row" />` ([see example](#primary-column))'
         },
-        textAlign: {
+        sortable: {
           flowType: { name: 'boolean' },
+          required: false,
+          description:
+            'Enable user to sort the column ([see example](#sortable))'
+        },
+        sortComparator: {
+          flowType: {
+            name: 'signature',
+            raw: '(a: Object, b: Object, key: string) => -1 | 0 | 1',
+            type: 'function'
+          },
+          required: false,
+          description:
+            'Define a custom [comparator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Description) for the column ([see example](#sortable))'
+        },
+        textAlign: {
+          flowType: { name: `'start', 'end', 'center', 'justify'` },
           required: false,
           description:
             'Align the text of both the column header and the cells ([see example](#column-align))'
@@ -81,10 +96,12 @@ export default {
   examples,
   slug: 'table',
   title: 'Table',
-  whenHowToUse: `Table is best suited to data which a user will need to compare
-data points or investigate relationships. For simpler data, consider a list
-structure; for more complex data or user needs, consider data visualization,
-possibly in addition to Table.
+  whenHowToUse: `Table is best suited to data in which a user will need to
+compare data points or investigate relationships. For simpler data, consider a
+list structure; for more complex data or user needs, consider data
+visualization, possibly in addition to Table. Don't use Table for data sets with
+a blend of text, images, and data visualizations, or content with mixed
+formatting; use [Card](/components/card) instead.
 
 For Tables with many columns, [striped](#striped) rows can enhance readability.
 Tables that do not have enough columns to fill the width can be hard to read and

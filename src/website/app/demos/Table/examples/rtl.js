@@ -9,15 +9,17 @@ export default {
   id: 'rtl',
   title: 'Bidirectionality',
   description: `Table reverses its alignment when the \`direction\` theme
-variable is set to \`rtl\` (right-to-left).`,
+variable is set to \`rtl\` (right-to-left). You can use the \`messages\` prop,
+as in the example below, to set the various messages used by Assistive
+Technology (AT) within the component.`,
   scope: { Table, ThemeProvider, columnContent, direction },
   source: `
     () => {
       const columns = [
-        { content: 'ثمار', key: 'Fruits' },
-        { content: 'خضروات', key: 'Vegetables', textAlign: 'end' },
-        { content: 'بقوليات', key: 'Grains', textAlign: 'center' },
-        { content: 'الألبان', key: 'Dairy', textAlign: 'justify' },
+        { content: 'ثمار', key: 'Fruits', sortable: true },
+        { content: 'خضروات', key: 'Vegetables', textAlign: 'center' },
+        { content: 'بقوليات', key: 'Grains' },
+        { content: 'الألبان', key: 'Dairy', sortable: true, textAlign: 'end' },
         { content: 'بروتين', key: 'Protein' }
       ];
 
@@ -45,6 +47,16 @@ variable is set to \`rtl\` (right-to-left).`,
         }
       ];
 
+      const messages = {
+        deselectAllRows: 'قم بإلغاء تحديد جميع الصفوف',
+        deselectRow: 'إلغاء الصف',
+        selectAllRows: 'حدد جميع الصفوف',
+        selectedRows: 'الصفوف المختارة',
+        selectRow: 'حدد الصف',
+        sortColumnAscending: 'ترتيب العمود في تصاعدي الطلب',
+        sortColumnDescending: 'ترتيب العمود في تنازلي الطلب'
+      };
+
       return (
         <div dir="rtl">
           <ThemeProvider theme={{ direction: 'rtl' }}>
@@ -52,7 +64,8 @@ variable is set to \`rtl\` (right-to-left).`,
               columns={columns}
               data={data}
               rowKey="Fruits"
-              title="الأطعمة اللذيذة" />
+              title="الأطعمة اللذيذة"
+              messages={messages} />
           </ThemeProvider>
         </div>
       )

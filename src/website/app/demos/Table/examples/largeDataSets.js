@@ -3,7 +3,12 @@ import { Component } from 'react';
 import Button from '../../../../../library/Button';
 import Flex, { FlexItem } from '../../../../../library/Flex';
 import Table from '../../../../../library/Table';
-import { columns4, columns104, rows100, rows1000 } from '../shared/largeData';
+import {
+  columns4,
+  columns104,
+  rows100x104,
+  rows100x4
+} from '../shared/largeData';
 
 export default {
   id: 'large-data-sets',
@@ -20,8 +25,8 @@ before clicking those buttons. 😬`,
     FlexItem,
     columns4,
     columns104,
-    rows100,
-    rows1000
+    rows100x104,
+    rows100x4
   },
   source: `
     () => {
@@ -31,7 +36,7 @@ before clicking those buttons. 😬`,
 
           this.state = {
             columns: [
-              { content: 'AA', key: 'aa', enableSort: true },
+              { content: 'AA', key: 'aa', sortable: true },
               { content: 'AB', key: 'ab' }
             ],
             data: [
@@ -47,14 +52,14 @@ before clicking those buttons. 😬`,
         populate4x1000() {
           this.setState({
             columns: columns4,
-            data: rows1000
+            data: rows100x4
           })
         }
 
         populate104x100() {
           this.setState({
             columns: columns104,
-            data: rows100
+            data: rows100x104
           })
         }
 
@@ -63,7 +68,7 @@ before clicking those buttons. 😬`,
             <div>
               <Flex marginBottom="md">
                 <FlexItem>
-                  <Button onClick={this.populate4x1000} size="medium">4 &times; 1000</Button>
+                  <Button onClick={this.populate4x1000} size="medium">4 &times; 100</Button>
                 </FlexItem>
                 <FlexItem>
                   <Button onClick={this.populate104x100} size="medium">104 &times; 100</Button>
@@ -73,7 +78,7 @@ before clicking those buttons. 😬`,
                 columns={this.state.columns}
                 data={this.state.data}
                 rowKey="aa"
-                enableRowSelection
+                selectable
                 title="Example data"
                 hideTitle />
             </div>

@@ -44,7 +44,7 @@ which is the row property key used to uniquely identify each row.`,
       return <Table
                data={data}
                rowKey="Fruits"
-               title="Delicious Foods"
+               title="Foods of the World"
                hideTitle />;
     }
     `
