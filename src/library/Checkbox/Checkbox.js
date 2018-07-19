@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import Choice, {
   componentTheme as choiceComponentTheme
@@ -91,40 +91,40 @@ const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
  * are often used in [groups](/components/checkbox-group), wherein multiple options may be
  * selected.
  */
-const Checkbox = (props: Props) => {
-  const {
-    className,
-    indeterminate,
-    inputRef,
-    rootProps: otherRootProps,
-    ...restProps
-  } = props;
-  const rootProps = {
-    iconChecked: indeterminate ? <IconIndeterminate /> : <IconChecked />,
-    inputRef: (ref) => {
-      if (ref) {
-        ref.indeterminate = indeterminate;
-      }
-
-      if (inputRef) {
-        inputRef(ref);
-      }
-    },
-    rootProps: {
-      className,
-      ...otherRootProps
-    },
-    type: 'checkbox',
-    ...restProps // Note: Props are spread to input rather than Root
+export default class Checkbox extends PureComponent<Props> {
+  static defaultProps = {
+    labelPosition: 'end',
+    size: 'large'
   };
+  static displayName = 'Checkbox';
 
-  return <Root {...rootProps} />;
-};
+  render() {
+    const {
+      className,
+      indeterminate,
+      inputRef,
+      rootProps: otherRootProps,
+      ...restProps
+    } = this.props;
+    const rootProps = {
+      iconChecked: indeterminate ? <IconIndeterminate /> : <IconChecked />,
+      inputRef: (ref) => {
+        if (ref) {
+          ref.indeterminate = indeterminate;
+        }
 
-Checkbox.defaultProps = {
-  labelPosition: 'end',
-  size: 'large'
-};
-Checkbox.displayName = 'Checkbox';
+        if (inputRef) {
+          inputRef(ref);
+        }
+      },
+      rootProps: {
+        className,
+        ...otherRootProps
+      },
+      type: 'checkbox',
+      ...restProps // Note: Props are spread to input rather than Root
+    };
 
-export default Checkbox;
+    return <Root {...rootProps} />;
+  }
+}

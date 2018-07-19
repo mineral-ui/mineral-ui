@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { PureComponent } from 'react';
 import { hideVisually } from 'polished';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 
@@ -244,71 +244,71 @@ const Control = createStyledComponent('span', styles.control, {
 /**
  * Choice is base renderer for Checkbox and Radio.
  */
-const Choice = (props: Props) => {
-  const {
-    className,
-    disabled,
-    hideLabel,
-    iconChecked,
-    inputRef,
-    invalid,
-    justify,
-    label,
-    labelPosition,
-    required,
-    rootProps: otherRootProps,
-    size,
-    ...restProps
-  } = props;
-  const rootProps = {
-    className,
-    disabled,
-    justify,
-    hideLabel,
-    labelPosition,
-    size,
-    ...otherRootProps
+export default class Choice extends PureComponent<Props> {
+  static defaultProps = {
+    labelPosition: 'end',
+    size: 'large'
   };
 
-  const inputProps = {
-    'aria-invalid': invalid,
-    'aria-required': required,
-    disabled,
-    innerRef: (ref) => {
-      if (inputRef) {
-        inputRef(ref);
-      }
-    },
-    required,
-    size,
-    ...restProps // Note: Props are spread to input rather than Root
-  };
+  render() {
+    const {
+      className,
+      disabled,
+      hideLabel,
+      iconChecked,
+      inputRef,
+      invalid,
+      justify,
+      label,
+      labelPosition,
+      required,
+      rootProps: otherRootProps,
+      size,
+      ...restProps
+    } = this.props;
+    const rootProps = {
+      className,
+      disabled,
+      justify,
+      hideLabel,
+      labelPosition,
+      size,
+      ...otherRootProps
+    };
 
-  const controlProps = {
-    disabled,
-    size
-  };
+    const inputProps = {
+      'aria-invalid': invalid,
+      'aria-required': required,
+      disabled,
+      innerRef: (ref) => {
+        if (inputRef) {
+          inputRef(ref);
+        }
+      },
+      required,
+      size,
+      ...restProps // Note: Props are spread to input rather than Root
+    };
 
-  const textProps = {
-    disabled,
-    hideLabel,
-    justify,
-    labelPosition,
-    size
-  };
+    const controlProps = {
+      disabled,
+      size
+    };
 
-  return (
-    <Root {...rootProps}>
-      <Input {...inputProps} />
-      <Control {...controlProps}>{iconChecked}</Control>
-      <Text {...textProps}>{label}</Text>
-    </Root>
-  );
-};
+    const textProps = {
+      disabled,
+      hideLabel,
+      justify,
+      labelPosition,
+      size
+    };
 
-Choice.defaultProps = {
-  labelPosition: 'end',
-  size: 'large'
-};
-
-export default Choice;
+    return (
+      <Root {...rootProps}>
+        <Input {...inputProps} />
+        <Control {...controlProps}>{iconChecked}</Control>
+        <Text {...textProps}>{label}</Text>
+      </Root>
+    );
+  }
+}
