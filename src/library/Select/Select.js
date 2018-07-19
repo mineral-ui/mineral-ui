@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import deepEqual from 'fast-deep-equal';
+import deepEqual from 'react-fast-compare';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';

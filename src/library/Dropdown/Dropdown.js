@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, Component, cloneElement } from 'react';
 import { findDOMNode } from 'react-dom';
-import deepEqual from 'fast-deep-equal';
+import deepEqual from 'react-fast-compare';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import Menu, { getItems } from '../Menu/Menu';
