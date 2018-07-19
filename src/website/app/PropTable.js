@@ -85,6 +85,14 @@ const PropTypePopoverContent = createStyledComponent(
   styles.propTypePopoverContent
 );
 
+const PropTypePopover = ({ content, trigger }: Object) => (
+  <Popover content={<PropTypePopoverContent>{content}</PropTypePopoverContent>}>
+    <PropTypeButton iconEnd={<IconInfo />} minimal size="medium">
+      {trigger}
+    </PropTypeButton>
+  </Popover>
+);
+
 function DefaultValue({
   defaultValue,
   required
@@ -100,8 +108,29 @@ function DefaultValue({
 }
 
 function getDefaultValue(propDescription: Object): any {
-  const { defaultValue: { value } = {} } = propDescription;
-  return value;
+  let { defaultValue: { value } = {} } = propDescription;
+
+  if (value === undefined) {
+    return;
+  }
+
+  const { flowType } = propDescription;
+  let { name, type } = flowType;
+  let usePopover = ['Array', 'signature'].includes(name) && value.length > 25;
+
+  if (name === 'Array') {
+    type = 'Array';
+  } else if (name === 'signature' && type === 'function') {
+    type = 'Function';
+  } else if (name === 'signature' && type === 'object') {
+    type = 'Object';
+  }
+
+  return usePopover ? (
+    <PropTypePopover trigger={type} content={value} />
+  ) : (
+    value
+  );
 }
 
 function getFlowType(propDescription: Object): any {
@@ -130,15 +159,7 @@ function getFlowType(propDescription: Object): any {
     raw = name;
   }
 
-  return usePopover ? (
-    <Popover content={<PropTypePopoverContent>{raw}</PropTypePopoverContent>}>
-      <PropTypeButton iconEnd={<IconInfo />} minimal size="medium">
-        {type}
-      </PropTypeButton>
-    </Popover>
-  ) : (
-    raw
-  );
+  return usePopover ? <PropTypePopover trigger={type} content={raw} /> : raw;
 }
 
 function getPropTableRows(propDoc) {
