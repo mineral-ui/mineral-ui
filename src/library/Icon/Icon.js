@@ -65,6 +65,7 @@ export default class Icon extends Component<Props> {
     const rootProps = {
       'aria-hidden': title ? null : true,
       'aria-labelledby': title && titleElementId,
+      focusable: 'false',
       role: 'img',
       viewBox: '0 0 24 24',
       ...restProps
