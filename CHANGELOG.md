@@ -1,3 +1,24 @@
+<a name="0.38.0"></a>
+# [0.38.0](https://github.com/mineral-ui/mineral-ui/compare/v0.37.0...v0.38.0) (2018-07-23)
+
+
+### Features
+
+* **table:** Add column sorting and row selection ([c987616](https://github.com/mineral-ui/mineral-ui/commit/c987616))
+
+
+### Performance Improvements
+
+* **checkbox,radio:** Convert to PureComponents ([d76adfe](https://github.com/mineral-ui/mineral-ui/commit/d76adfe))
+
+
+### BREAKING CHANGES
+
+* **table:** Rename theme variables TableColumnHeader_* to
+TableHeaderCell_*
+
+
+
 <a name="0.37.0"></a>
 # [0.37.0](https://github.com/mineral-ui/mineral-ui/compare/v0.36.0...v0.37.0) (2018-07-10)
 
