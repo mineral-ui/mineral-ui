@@ -20,7 +20,7 @@ type Props = {
     descending?: boolean
   },
   /** Amount of vertical space in Table's cells */
-  density: 'compact' | 'spacious',
+  density?: 'compact' | 'spacious',
   /** Visually hide Table's header, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideHeader?: boolean,
   /** Visually hide Table's title, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
@@ -31,7 +31,7 @@ type Props = {
    * Various messages and labels used by Table
    * ([see example for more details](#rtl))
    */
-  messages: Messages,
+  messages?: Messages,
   /** Called when data is sorted */
   onSort?: (sort: {
     key: string,
