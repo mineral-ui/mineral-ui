@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
-.emotion-22[class] > *:not(:last-child) {
+.emotion-28[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -16,9 +16,9 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
@@ -212,7 +212,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.emotion-7 {
+.emotion-9 {
   background-color: #c8d1e0;
   height: 1px;
   margin: 0.5em 0;
@@ -223,7 +223,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
     marginBottom="1rem"
   >
     <div
-      className="emotion-22"
+      className="emotion-28"
     >
       <FormField
         label="Old Password"
@@ -231,7 +231,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -285,43 +285,83 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "password",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "password",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="password"
-                        >
-                          <input
-                            className="emotion-1"
                             size="large"
-                            type="password"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "password",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="password"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    size="large"
+                                    type="password"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -334,7 +374,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
           role="separator"
         >
           <div
-            className="emotion-7"
+            className="emotion-9"
             role="separator"
           />
         </FormFieldDivider>
@@ -345,7 +385,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -399,43 +439,83 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "password",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "password",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="password"
-                        >
-                          <input
-                            className="emotion-1"
                             size="large"
-                            type="password"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "password",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="password"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    size="large"
+                                    type="password"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -449,7 +529,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -503,43 +583,83 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "password",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "password",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "password",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="password"
-                        >
-                          <input
-                            className="emotion-1"
                             size="large"
-                            type="password"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "password",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="password"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    size="large"
+                                    type="password"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
