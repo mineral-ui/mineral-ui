@@ -26,7 +26,7 @@ type Props = {
   /** The checked icon */
   iconChecked: React$Element<*>,
   /** Ref for the input */
-  inputRef?: (node: ?React$Component<*, *>) => void,
+  inputRef?: (node: ?HTMLInputElement) => void,
   /** Props to be applied directly to the root element rather than the input */
   rootProps?: Object,
   /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
