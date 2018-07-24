@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { canUseDOM } from 'exenv';
 import FontFaceObserver from 'fontfaceobserver';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { mapComponentThemes } from '../themes';
+import { createThemedComponent, mapComponentThemes } from '../themes';
 import FauxControl, {
   componentTheme as fauxControlComponentTheme
 } from '../FauxControl/FauxControl';
@@ -50,8 +50,8 @@ type Props = {
   variant?: 'success' | 'warning' | 'danger'
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  ...mapComponentThemes(
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
     {
       name: 'FauxControl',
       theme: fauxControlComponentTheme(baseTheme)
@@ -68,8 +68,23 @@ export const componentTheme = (baseTheme: Object) => ({
       }
     },
     baseTheme
-  )
-});
+  );
+
+const ThemedFauxControl = createThemedComponent(
+  FauxControl,
+  ({ theme: baseTheme }) =>
+    mapComponentThemes(
+      {
+        name: 'TextArea',
+        theme: componentTheme(baseTheme)
+      },
+      {
+        name: 'FauxControl',
+        theme: {}
+      },
+      baseTheme
+    )
+);
 
 const styles = {
   textArea: ({ resizeable, size, theme: baseTheme }) => {
@@ -114,7 +129,7 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent(FauxControl, styles.root, {
+const Root = createStyledComponent(ThemedFauxControl, styles.root, {
   displayName: 'TextArea'
 });
 const _TextArea = createStyledComponent('textarea', styles.textArea, {
