@@ -32,37 +32,32 @@ type Props = {
   rootProps?: Object
 };
 
-export const componentTheme = (baseTheme: Object) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'ChoiceGroup',
-        theme: choiceGroupComponentTheme(baseTheme)
-      },
-      {
-        name: 'RadioGroup',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-};
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
+    {
+      name: 'ChoiceGroup',
+      theme: choiceGroupComponentTheme(baseTheme)
+    },
+    {
+      name: 'RadioGroup',
+      theme: {}
+    },
+    baseTheme
+  );
 
-const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'RadioGroup',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'ChoiceGroup',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-});
+const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'RadioGroup',
+      theme: componentTheme(baseTheme)
+    },
+    {
+      name: 'ChoiceGroup',
+      theme: {}
+    },
+    baseTheme
+  )
+);
 
 /**
  * RadioGroup allows authors to construct a group of [Radios](/components/radio)

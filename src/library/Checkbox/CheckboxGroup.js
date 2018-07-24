@@ -32,37 +32,32 @@ type Props = {
   rootProps?: Object
 };
 
-export const componentTheme = (baseTheme: Object) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'ChoiceGroup',
-        theme: choiceGroupComponentTheme(baseTheme)
-      },
-      {
-        name: 'CheckboxGroup',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-};
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
+    {
+      name: 'ChoiceGroup',
+      theme: choiceGroupComponentTheme(baseTheme)
+    },
+    {
+      name: 'CheckboxGroup',
+      theme: {}
+    },
+    baseTheme
+  );
 
-const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'CheckboxGroup',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'ChoiceGroup',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-});
+const Root = createThemedComponent(ChoiceGroup, ({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'CheckboxGroup',
+      theme: componentTheme(baseTheme)
+    },
+    {
+      name: 'ChoiceGroup',
+      theme: {}
+    },
+    baseTheme
+  )
+);
 
 /**
  * CheckboxGroup allows authors to construct a group of
