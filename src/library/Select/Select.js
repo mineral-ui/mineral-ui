@@ -137,8 +137,8 @@ type RenderProps = {
   props: Object
 } & StateAndHelpers;
 
-export const componentTheme = (baseTheme: Object) => ({
-  ...mapComponentThemes(
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
     {
       name: 'Dropdown',
       theme: dropdownComponentTheme(baseTheme)
@@ -151,24 +151,20 @@ export const componentTheme = (baseTheme: Object) => ({
       ...selectTriggerComponentTheme(baseTheme),
       ...baseTheme
     }
-  )
-});
+  );
 
-const ThemedDropdown = createThemedComponent(
-  Dropdown,
-  ({ theme: baseTheme }) => ({
-    ...mapComponentThemes(
-      {
-        name: 'Select',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'Dropdown',
-        theme: {}
-      },
-      baseTheme
-    )
-  })
+const ThemedDropdown = createThemedComponent(Dropdown, ({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'Select',
+      theme: componentTheme(baseTheme)
+    },
+    {
+      name: 'Dropdown',
+      theme: {}
+    },
+    baseTheme
+  )
 );
 
 const Root = createStyledComponent(

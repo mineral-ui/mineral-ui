@@ -78,54 +78,48 @@ type RenderProps = {
 
 const DELAY_OPEN = 250; // ms
 
-// prettier-ignore
-export const componentTheme = (baseTheme: Object) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'Popover',
-        theme: popoverComponentTheme(baseTheme)
-      },
-      {
-        name: 'Tooltip',
-        theme: {
-          TooltipArrow_backgroundColor: baseTheme.panel_backgroundColor_inverted,
-          TooltipArrow_borderColor: baseTheme.panel_borderColor_inverted,
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
+    {
+      name: 'Popover',
+      theme: popoverComponentTheme(baseTheme)
+    },
+    {
+      name: 'Tooltip',
+      theme: {
+        TooltipArrow_backgroundColor: baseTheme.panel_backgroundColor_inverted,
+        TooltipArrow_borderColor: baseTheme.panel_borderColor_inverted,
 
-          TooltipContent_backgroundColor:
-            baseTheme.panel_backgroundColor_inverted,
-          TooltipContent_borderColor: baseTheme.panel_borderColor_inverted,
-          TooltipContent_color: baseTheme.color_inverted,
-          TooltipContent_maxWidth: '18em',
+        TooltipContent_backgroundColor:
+          baseTheme.panel_backgroundColor_inverted,
+        TooltipContent_borderColor: baseTheme.panel_borderColor_inverted,
+        TooltipContent_color: baseTheme.color_inverted,
+        TooltipContent_maxWidth: '18em',
 
-          TooltipContentBlock_marginVertical: '0',
-          TooltipContentBlock_paddingHorizontal: baseTheme.space_inset_md,
+        TooltipContentBlock_marginVertical: '0',
+        TooltipContentBlock_paddingHorizontal: baseTheme.space_inset_md,
 
-          TooltipTriggerText_borderStyle: 'dashed',
-          TooltipTriggerText_borderColor: 'currentcolor',
-          TooltipTriggerText_borderWidth: '1px'
-        }
-      },
-      baseTheme
-    )
-  };
-};
+        TooltipTriggerText_borderStyle: 'dashed',
+        TooltipTriggerText_borderColor: 'currentcolor',
+        TooltipTriggerText_borderWidth: '1px'
+      }
+    },
+    baseTheme
+  );
 
-const Root = createThemedComponent(Popover, ({ theme: baseTheme }) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'Tooltip',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'Popover',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-});
+const Root = createThemedComponent(Popover, ({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'Tooltip',
+      theme: componentTheme(baseTheme)
+    },
+    {
+      name: 'Popover',
+      theme: {}
+    },
+    baseTheme
+  )
+);
 
 const TriggerText = createStyledComponent('span', ({ theme: baseTheme }) => {
   const theme = componentTheme(baseTheme);

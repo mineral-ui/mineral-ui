@@ -48,39 +48,34 @@ type Props = {
   value?: string
 };
 
-export const componentTheme = (baseTheme: Object) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'Choice',
-        theme: choiceComponentTheme(baseTheme)
-      },
-      {
-        name: 'Radio',
-        theme: {
-          RadioControl_borderRadius: '100%'
-        }
-      },
-      baseTheme
-    )
-  };
-};
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
+    {
+      name: 'Choice',
+      theme: choiceComponentTheme(baseTheme)
+    },
+    {
+      name: 'Radio',
+      theme: {
+        RadioControl_borderRadius: '100%'
+      }
+    },
+    baseTheme
+  );
 
-const Root = createThemedComponent(Choice, ({ theme: baseTheme }) => {
-  return {
-    ...mapComponentThemes(
-      {
-        name: 'Radio',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'Choice',
-        theme: {}
-      },
-      baseTheme
-    )
-  };
-});
+const Root = createThemedComponent(Choice, ({ theme: baseTheme }) =>
+  mapComponentThemes(
+    {
+      name: 'Radio',
+      theme: componentTheme(baseTheme)
+    },
+    {
+      name: 'Choice',
+      theme: {}
+    },
+    baseTheme
+  )
+);
 
 /**
  * Radio is an interactive control that can be turned on or off. Radios are most
