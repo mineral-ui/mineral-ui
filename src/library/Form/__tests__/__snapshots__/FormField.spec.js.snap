@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormField demo examples Snapshots: basic 1`] = `
-.emotion-14[class] > *:not(:last-child) {
+.emotion-18[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -16,9 +16,9 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
@@ -212,7 +212,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   z-index: -1;
 }
 
-.emotion-11 {
+.emotion-13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -225,7 +225,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   width: 100%;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -248,27 +248,27 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   width: 100%;
 }
 
-.emotion-10 *,
-.emotion-10 *::before,
-.emotion-10 *::after {
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
   box-sizing: inherit;
 }
 
-.emotion-10:hover > div:last-child {
+.emotion-12:hover > div:last-child {
   border-color: #5691f0;
 }
 
-.emotion-10:focus > div:last-child {
+.emotion-12:focus > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-10:active > div:last-child {
+.emotion-12:active > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-8 {
+.emotion-10 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -293,47 +293,47 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
   padding-right: 1.1428571428571428em;
 }
 
-.emotion-8::-webkit-input-placeholder {
+.emotion-10::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8::-moz-placeholder {
+.emotion-10::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8:-ms-input-placeholder {
+.emotion-10:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8::placeholder {
+.emotion-10::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8::-ms-input-placeholder {
+.emotion-10::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8:-ms-input-placeholder {
+.emotion-10:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-8::-ms-clear {
+.emotion-10::-ms-clear {
   display: none;
 }
 
-.emotion-8:focus ~ div:last-child {
+.emotion-10:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
@@ -343,7 +343,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
     marginBottom="1rem"
   >
     <div
-      className="emotion-14"
+      className="emotion-18"
     >
       <FormField
         input={[Function]}
@@ -352,7 +352,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -406,43 +406,83 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            className="emotion-1"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -456,7 +496,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -496,8 +536,8 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   iconEnd={null}
                   size="large"
                 >
-                  <TextInput
-                    className="emotion-11"
+                  <TextArea
+                    className="emotion-13"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -518,53 +558,103 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                     iconEnd={null}
                     size="large"
                   >
-                    <FauxControl
-                      className="emotion-11"
+                    <Themed(FauxControl)
+                      className="emotion-13"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "autoSize": undefined,
+                          "controlRef": [Function],
+                          "disabled": undefined,
+                          "onInput": [Function],
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "resizeable": true,
+                          "rows": 8,
+                          "size": "large",
+                        }
+                      }
+                      iconEnd={null}
+                      size="large"
                     >
-                      <div
-                        className="emotion-10"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "autoSize": undefined,
-                              "controlRef": [Function],
-                              "disabled": undefined,
-                              "onInput": [Function],
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "resizeable": true,
-                              "rows": 8,
-                              "size": "large",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-13"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "autoSize": undefined,
+                                "controlRef": [Function],
+                                "disabled": undefined,
+                                "onInput": [Function],
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "resizeable": true,
+                                "rows": 8,
+                                "size": "large",
+                              }
                             }
-                          }
-                          controlRef={[Function]}
-                          iconEnd={null}
-                          innerRef={[Function]}
-                          key="control"
-                          onInput={[Function]}
-                          resizeable={true}
-                          rows={8}
-                          size="large"
-                        >
-                          <textarea
-                            className="emotion-8"
-                            onInput={[Function]}
-                            rows={8}
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
-                  </TextInput>
+                            iconEnd={null}
+                            size="large"
+                          >
+                            <FauxControl
+                              className="emotion-13"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-12"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "autoSize": undefined,
+                                      "controlRef": [Function],
+                                      "disabled": undefined,
+                                      "onInput": [Function],
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "resizeable": true,
+                                      "rows": 8,
+                                      "size": "large",
+                                    }
+                                  }
+                                  controlRef={[Function]}
+                                  iconEnd={null}
+                                  innerRef={[Function]}
+                                  key="control"
+                                  onInput={[Function]}
+                                  resizeable={true}
+                                  rows={8}
+                                  size="large"
+                                >
+                                  <textarea
+                                    className="emotion-10"
+                                    onInput={[Function]}
+                                    rows={8}
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
+                  </TextArea>
                 </TextArea>
               </TextArea>
             </label>
@@ -577,7 +667,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: caption 1`] = `
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -588,9 +678,9 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
@@ -784,7 +874,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
   z-index: -1;
 }
 
-.emotion-6 {
+.emotion-8 {
   color: #58606e;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
@@ -798,7 +888,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
 >
   <FormField>
     <div
-      className="emotion-7"
+      className="emotion-9"
     >
       <label>
         <Styled(div)
@@ -853,45 +943,85 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
               }
               size="large"
             >
-              <FauxControl
+              <Themed(FauxControl)
                 className="emotion-4"
                 control={[Function]}
+                controlProps={
+                  Object {
+                    "aria-describedby": "formField-11-caption",
+                    "aria-invalid": undefined,
+                    "aria-required": undefined,
+                    "controlRef": undefined,
+                    "disabled": undefined,
+                    "readOnly": undefined,
+                    "required": undefined,
+                    "type": "text",
+                  }
+                }
+                size="large"
               >
-                <div
-                  className="emotion-3"
-                >
-                  <Control
-                    aria-describedby="formField-11-caption"
-                    controlPropsIn={
-                      Object {
-                        "aria-describedby": "formField-11-caption",
-                        "aria-invalid": undefined,
-                        "aria-required": undefined,
-                        "controlRef": undefined,
-                        "disabled": undefined,
-                        "readOnly": undefined,
-                        "required": undefined,
-                        "type": "text",
+                <ThemeProvider>
+                  <ThemeProvider>
+                    <FauxControl
+                      className="emotion-4"
+                      control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": "formField-11-caption",
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
                       }
-                    }
-                    key="control"
-                    size="large"
-                    type="text"
-                  >
-                    <input
-                      aria-describedby="formField-11-caption"
-                      className="emotion-1"
                       size="large"
-                      type="text"
-                    />
-                  </Control>
-                  <Underlay>
-                    <div
-                      className="emotion-2"
-                    />
-                  </Underlay>
-                </div>
-              </FauxControl>
+                    >
+                      <FauxControl
+                        className="emotion-4"
+                        control={[Function]}
+                      >
+                        <div
+                          className="emotion-3"
+                        >
+                          <Control
+                            aria-describedby="formField-11-caption"
+                            controlPropsIn={
+                              Object {
+                                "aria-describedby": "formField-11-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            key="control"
+                            size="large"
+                            type="text"
+                          >
+                            <input
+                              aria-describedby="formField-11-caption"
+                              className="emotion-1"
+                              size="large"
+                              type="text"
+                            />
+                          </Control>
+                          <Underlay>
+                            <div
+                              className="emotion-2"
+                            />
+                          </Underlay>
+                        </div>
+                      </FauxControl>
+                    </FauxControl>
+                  </ThemeProvider>
+                </ThemeProvider>
+              </Themed(FauxControl)>
             </TextInput>
           </TextInput>
         </TextInput>
@@ -901,7 +1031,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
         id="formField-11-caption"
       >
         <div
-          className="emotion-6"
+          className="emotion-8"
           id="formField-11-caption"
         >
           This is help text
@@ -913,11 +1043,11 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: hide-label 1`] = `
-.emotion-14[class] > *:not(:last-child) {
+.emotion-18[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -928,9 +1058,9 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
   box-sizing: inherit;
 }
 
@@ -1124,7 +1254,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   z-index: -1;
 }
 
-.emotion-7 {
+.emotion-9 {
   color: #58606e;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1151,7 +1281,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
   width: 1px;
 }
 
-.emotion-7 > * {
+.emotion-9 > * {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1163,7 +1293,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
     marginBottom="1rem"
   >
     <div
-      className="emotion-14"
+      className="emotion-18"
     >
       <FormField
         input={[Function]}
@@ -1173,7 +1303,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -1230,46 +1360,88 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "placeholder": "1234 Main St",
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "placeholder": "1234 Main St",
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "placeholder": "1234 Main St",
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          placeholder="1234 Main St"
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            className="emotion-1"
-                            placeholder="1234 Main St"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "placeholder": "1234 Main St",
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  placeholder="1234 Main St"
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    placeholder="1234 Main St"
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -1286,7 +1458,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
       >
         <FormField>
           <div
-            className="emotion-6"
+            className="emotion-8"
           >
             <label>
               <Styled(div)
@@ -1294,7 +1466,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                 key="formField-26-textWrapper"
               >
                 <div
-                  className="emotion-7"
+                  className="emotion-9"
                 >
                   <span
                     id="formField-26-labelText"
@@ -1344,46 +1516,88 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-4"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "placeholder": "Apt 101",
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-3"
-                      >
-                        <Control
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "placeholder": "Apt 101",
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-4"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "placeholder": "Apt 101",
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          placeholder="Apt 101"
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            className="emotion-1"
-                            placeholder="Apt 101"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-2"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-4"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-3"
+                              >
+                                <Control
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "placeholder": "Apt 101",
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  placeholder="Apt 101"
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    className="emotion-1"
+                                    placeholder="Apt 101"
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-2"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -1397,11 +1611,11 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: required 1`] = `
-.emotion-16[class] > *:not(:last-child) {
+.emotion-20[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -1412,9 +1626,9 @@ exports[`FormField demo examples Snapshots: required 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
@@ -1619,7 +1833,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
     marginBottom="1rem"
   >
     <div
-      className="emotion-16"
+      className="emotion-20"
     >
       <FormField
         input={[Function]}
@@ -1629,7 +1843,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
       >
         <FormField>
           <div
-            className="emotion-7"
+            className="emotion-9"
           >
             <label>
               <Styled(div)
@@ -1691,47 +1905,87 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-5"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": true,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": true,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-4"
-                      >
-                        <Control
-                          aria-required={true}
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": true,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": true,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-5"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": true,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": true,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          required={true}
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            aria-required={true}
-                            className="emotion-2"
-                            required={true}
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-3"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-5"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-4"
+                              >
+                                <Control
+                                  aria-required={true}
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": true,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": true,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  required={true}
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    aria-required={true}
+                                    className="emotion-2"
+                                    required={true}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-3"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -1747,7 +2001,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
       >
         <FormField>
           <div
-            className="emotion-7"
+            className="emotion-9"
           >
             <label>
               <Styled(div)
@@ -1809,47 +2063,87 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                     }
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-5"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": true,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": true,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                     >
-                      <div
-                        className="emotion-4"
-                      >
-                        <Control
-                          aria-required={true}
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": true,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": true,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-5"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": true,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": true,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          required={true}
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            aria-required={true}
-                            className="emotion-2"
-                            required={true}
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-3"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-5"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-4"
+                              >
+                                <Control
+                                  aria-required={true}
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": true,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": true,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  required={true}
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    aria-required={true}
+                                    className="emotion-2"
+                                    required={true}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-3"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -1863,7 +2157,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: rtl 1`] = `
-.emotion-8 {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -1874,9 +2168,9 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-8 *,
-.emotion-8 *::before,
-.emotion-8 *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
@@ -2101,7 +2395,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
       >
         <FormField>
           <div
-            className="emotion-8"
+            className="emotion-10"
           >
             <label>
               <Styled(div)
@@ -2169,83 +2463,127 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                     iconStart={<IconBackspace />}
                     size="large"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-6"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": true,
+                          "controlRef": undefined,
+                          "defaultValue": "مرحبا بالعالم",
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": true,
+                          "type": "text",
+                        }
+                      }
+                      iconStart={<IconBackspace />}
+                      size="large"
                     >
-                      <div
-                        className="emotion-5"
-                      >
-                        <IconBackspace
-                          key="iconStart"
-                          size="1.5em"
-                        >
-                          <Icon
-                            rtl={true}
-                            size="1.5em"
-                          >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
-                              rtl={true}
-                              size="1.5em"
-                              viewBox="0 0 24 24"
-                            >
-                              <svg
-                                aria-hidden={true}
-                                className="emotion-2"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 24 24"
-                              >
-                                <g>
-                                  <path
-                                    d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
-                                  />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconBackspace>
-                        <Control
-                          aria-required={true}
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": true,
-                              "controlRef": undefined,
-                              "defaultValue": "مرحبا بالعالم",
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": true,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-6"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": true,
+                                "controlRef": undefined,
+                                "defaultValue": "مرحبا بالعالم",
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": true,
+                                "type": "text",
+                              }
                             }
-                          }
-                          defaultValue="مرحبا بالعالم"
-                          iconStart={<IconBackspace />}
-                          key="control"
-                          required={true}
-                          size="large"
-                          type="text"
-                        >
-                          <input
-                            aria-required={true}
-                            className="emotion-3"
-                            defaultValue="مرحبا بالعالم"
-                            required={true}
+                            iconStart={<IconBackspace />}
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <Underlay>
-                          <div
-                            className="emotion-4"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                          >
+                            <FauxControl
+                              className="emotion-6"
+                              control={[Function]}
+                            >
+                              <div
+                                className="emotion-5"
+                              >
+                                <IconBackspace
+                                  key="iconStart"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={true}
+                                    size="1.5em"
+                                  >
+                                    <Styled(svg)
+                                      aria-hidden={true}
+                                      focusable="false"
+                                      role="img"
+                                      rtl={true}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="emotion-2"
+                                        focusable="false"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </Styled(svg)>
+                                  </Icon>
+                                </IconBackspace>
+                                <Control
+                                  aria-required={true}
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": undefined,
+                                      "aria-invalid": undefined,
+                                      "aria-required": true,
+                                      "controlRef": undefined,
+                                      "defaultValue": "مرحبا بالعالم",
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": true,
+                                      "type": "text",
+                                    }
+                                  }
+                                  defaultValue="مرحبا بالعالم"
+                                  iconStart={<IconBackspace />}
+                                  key="control"
+                                  required={true}
+                                  size="large"
+                                  type="text"
+                                >
+                                  <input
+                                    aria-required={true}
+                                    className="emotion-3"
+                                    defaultValue="مرحبا بالعالم"
+                                    required={true}
+                                    size="large"
+                                    type="text"
+                                  />
+                                </Control>
+                                <Underlay>
+                                  <div
+                                    className="emotion-4"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -2259,7 +2597,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: secondaryText 1`] = `
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2270,9 +2608,9 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
@@ -2480,7 +2818,7 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
 >
   <FormField>
     <div
-      className="emotion-7"
+      className="emotion-9"
     >
       <label>
         <Styled(div)
@@ -2543,43 +2881,83 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
               }
               size="large"
             >
-              <FauxControl
+              <Themed(FauxControl)
                 className="emotion-5"
                 control={[Function]}
+                controlProps={
+                  Object {
+                    "aria-describedby": undefined,
+                    "aria-invalid": undefined,
+                    "aria-required": undefined,
+                    "controlRef": undefined,
+                    "disabled": undefined,
+                    "readOnly": undefined,
+                    "required": undefined,
+                    "type": "text",
+                  }
+                }
+                size="large"
               >
-                <div
-                  className="emotion-4"
-                >
-                  <Control
-                    controlPropsIn={
-                      Object {
-                        "aria-describedby": undefined,
-                        "aria-invalid": undefined,
-                        "aria-required": undefined,
-                        "controlRef": undefined,
-                        "disabled": undefined,
-                        "readOnly": undefined,
-                        "required": undefined,
-                        "type": "text",
+                <ThemeProvider>
+                  <ThemeProvider>
+                    <FauxControl
+                      className="emotion-5"
+                      control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": undefined,
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
                       }
-                    }
-                    key="control"
-                    size="large"
-                    type="text"
-                  >
-                    <input
-                      className="emotion-2"
                       size="large"
-                      type="text"
-                    />
-                  </Control>
-                  <Underlay>
-                    <div
-                      className="emotion-3"
-                    />
-                  </Underlay>
-                </div>
-              </FauxControl>
+                    >
+                      <FauxControl
+                        className="emotion-5"
+                        control={[Function]}
+                      >
+                        <div
+                          className="emotion-4"
+                        >
+                          <Control
+                            controlPropsIn={
+                              Object {
+                                "aria-describedby": undefined,
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
+                            }
+                            key="control"
+                            size="large"
+                            type="text"
+                          >
+                            <input
+                              className="emotion-2"
+                              size="large"
+                              type="text"
+                            />
+                          </Control>
+                          <Underlay>
+                            <div
+                              className="emotion-3"
+                            />
+                          </Underlay>
+                        </div>
+                      </FauxControl>
+                    </FauxControl>
+                  </ThemeProvider>
+                </ThemeProvider>
+              </Themed(FauxControl)>
             </TextInput>
           </TextInput>
         </TextInput>
@@ -2590,11 +2968,11 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: validation 1`] = `
-.emotion-11[class] > *:not(:last-child) {
+.emotion-13[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-7 {
+.emotion-9 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2605,9 +2983,9 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-7 *,
-.emotion-7 *::before,
-.emotion-7 *::after {
+.emotion-9 *,
+.emotion-9 *::before,
+.emotion-9 *::after {
   box-sizing: inherit;
 }
 
@@ -2807,7 +3185,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   font-weight: 400;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2833,13 +3211,13 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   vertical-align: middle;
 }
 
-.emotion-10 *,
-.emotion-10 *::before,
-.emotion-10 *::after {
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
   box-sizing: inherit;
 }
 
-.emotion-10:focus {
+.emotion-12:focus {
   background-color: #ebeff5;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #333840;
@@ -2847,41 +3225,41 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   text-decoration: none;
 }
 
-.emotion-10:hover {
+.emotion-12:hover {
   background-color: #f5f7fa;
   color: #333840;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-10:active {
+.emotion-12:active {
   background-color: #dde3ed;
   color: #333840;
 }
 
-.emotion-10::-moz-focus-inner {
+.emotion-12::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-10 [role="img"] {
+.emotion-12 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
 }
 
-.emotion-10 [role="img"]:first-child {
+.emotion-12 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-10 [role="img"]:last-child {
+.emotion-12 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-10 [role="img"]:only-child {
+.emotion-12 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-9 {
+.emotion-11 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2899,7 +3277,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   width: 100%;
 }
 
-.emotion-8 {
+.emotion-10 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -2910,11 +3288,11 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
   line-height: 2.857142857142857em;
 }
 
-.emotion-8:first-child {
+.emotion-10:first-child {
   padding-left: 0.5714285714285714em;
 }
 
-.emotion-8:last-child {
+.emotion-10:last-child {
   padding-right: 0.5714285714285714em;
 }
 
@@ -2925,7 +3303,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
         marginBottom="1rem"
       >
         <div
-          className="emotion-11"
+          className="emotion-13"
         >
           <FormField
             input={[Function]}
@@ -2938,7 +3316,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
           >
             <FormField>
               <div
-                className="emotion-7"
+                className="emotion-9"
               >
                 <label>
                   <Styled(div)
@@ -3007,55 +3385,99 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                         }
                         size="large"
                       >
-                        <FauxControl
+                        <Themed(FauxControl)
                           className="emotion-5"
                           control={[Function]}
+                          controlProps={
+                            Object {
+                              "aria-describedby": undefined,
+                              "aria-invalid": undefined,
+                              "aria-required": true,
+                              "controlRef": [Function],
+                              "disabled": undefined,
+                              "onChange": [Function],
+                              "readOnly": undefined,
+                              "required": true,
+                              "type": "text",
+                              "value": "",
+                            }
+                          }
+                          size="large"
                         >
-                          <div
-                            className="emotion-4"
-                          >
-                            <Control
-                              aria-required={true}
-                              controlPropsIn={
-                                Object {
-                                  "aria-describedby": undefined,
-                                  "aria-invalid": undefined,
-                                  "aria-required": true,
-                                  "controlRef": [Function],
-                                  "disabled": undefined,
-                                  "onChange": [Function],
-                                  "readOnly": undefined,
-                                  "required": true,
-                                  "type": "text",
-                                  "value": "",
+                          <ThemeProvider>
+                            <ThemeProvider>
+                              <FauxControl
+                                className="emotion-5"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": true,
+                                    "controlRef": [Function],
+                                    "disabled": undefined,
+                                    "onChange": [Function],
+                                    "readOnly": undefined,
+                                    "required": true,
+                                    "type": "text",
+                                    "value": "",
+                                  }
                                 }
-                              }
-                              controlRef={[Function]}
-                              innerRef={[Function]}
-                              key="control"
-                              onChange={[Function]}
-                              required={true}
-                              size="large"
-                              type="text"
-                              value=""
-                            >
-                              <input
-                                aria-required={true}
-                                className="emotion-2"
-                                onChange={[Function]}
-                                required={true}
                                 size="large"
-                                type="text"
-                                value=""
-                              />
-                            </Control>
-                            <Underlay>
-                              <div
-                                className="emotion-3"
-                              />
-                            </Underlay>
-                          </div>
-                        </FauxControl>
+                              >
+                                <FauxControl
+                                  className="emotion-5"
+                                  control={[Function]}
+                                >
+                                  <div
+                                    className="emotion-4"
+                                  >
+                                    <Control
+                                      aria-required={true}
+                                      controlPropsIn={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": true,
+                                          "controlRef": [Function],
+                                          "disabled": undefined,
+                                          "onChange": [Function],
+                                          "readOnly": undefined,
+                                          "required": true,
+                                          "type": "text",
+                                          "value": "",
+                                        }
+                                      }
+                                      controlRef={[Function]}
+                                      innerRef={[Function]}
+                                      key="control"
+                                      onChange={[Function]}
+                                      required={true}
+                                      size="large"
+                                      type="text"
+                                      value=""
+                                    >
+                                      <input
+                                        aria-required={true}
+                                        className="emotion-2"
+                                        onChange={[Function]}
+                                        required={true}
+                                        size="large"
+                                        type="text"
+                                        value=""
+                                      />
+                                    </Control>
+                                    <Underlay>
+                                      <div
+                                        className="emotion-3"
+                                      />
+                                    </Underlay>
+                                  </div>
+                                </FauxControl>
+                              </FauxControl>
+                            </ThemeProvider>
+                          </ThemeProvider>
+                        </Themed(FauxControl)>
                       </TextInput>
                     </TextInput>
                   </TextInput>
@@ -3077,19 +3499,19 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
               type="button"
             >
               <button
-                className="emotion-10"
+                className="emotion-12"
                 onClick={[Function]}
                 type="button"
               >
                 <Styled(span)>
                   <span
-                    className="emotion-9"
+                    className="emotion-11"
                   >
                     <Styled(span)
                       size="large"
                     >
                       <span
-                        className="emotion-8"
+                        className="emotion-10"
                       >
                         Validate
                       </span>
@@ -3107,11 +3529,11 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
 `;
 
 exports[`FormField demo examples Snapshots: variants 1`] = `
-.emotion-27[class] > *:not(:last-child) {
+.emotion-33[class] > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.emotion-8 {
+.emotion-10 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3122,9 +3544,9 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-8 *,
-.emotion-8 *::before,
-.emotion-8 *::after {
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
   box-sizing: inherit;
 }
 
@@ -3325,13 +3747,13 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.emotion-7 {
+.emotion-9 {
   color: #2a854e;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.emotion-14 {
+.emotion-16 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3344,7 +3766,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   width: 100%;
 }
 
-.emotion-14 [role="img"] {
+.emotion-16 [role="img"] {
   color: #ad5f00;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3353,11 +3775,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-14 [role="img"]:last-of-type {
+.emotion-16 [role="img"]:last-of-type {
   color: #ad5f00;
 }
 
-.emotion-13 {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3380,27 +3802,27 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   width: 100%;
 }
 
-.emotion-13 *,
-.emotion-13 *::before,
-.emotion-13 *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.emotion-13:hover > div:last-child {
+.emotion-15:hover > div:last-child {
   border-color: #cf7911;
 }
 
-.emotion-13:focus > div:last-child {
+.emotion-15:focus > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.emotion-13:active > div:last-child {
+.emotion-15:active > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.emotion-13 [role="img"] {
+.emotion-15 [role="img"] {
   color: #ad5f00;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3409,11 +3831,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-13 [role="img"]:last-of-type {
+.emotion-15 [role="img"]:last-of-type {
   color: #ad5f00;
 }
 
-.emotion-10 {
+.emotion-12 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -3432,60 +3854,60 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   padding-right: 0;
 }
 
-.emotion-10[type="search"] {
+.emotion-12[type="search"] {
   -webkit-appearance: none;
 }
 
-.emotion-10[type="search"]::-webkit-search-decoration {
+.emotion-12[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.emotion-10::-webkit-input-placeholder {
+.emotion-12::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10::-moz-placeholder {
+.emotion-12::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10:-ms-input-placeholder {
+.emotion-12:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10::placeholder {
+.emotion-12::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10::-ms-input-placeholder {
+.emotion-12::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10:-ms-input-placeholder {
+.emotion-12:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-10::-ms-clear {
+.emotion-12::-ms-clear {
   display: none;
 }
 
-.emotion-10:focus ~ div:last-child {
+.emotion-12:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
 }
 
-.emotion-12 {
+.emotion-14 {
   background-color: #ffffff;
   border-color: #ad5f00;
   border-radius: 0.1875em;
@@ -3499,13 +3921,13 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.emotion-16 {
+.emotion-20 {
   color: #ad5f00;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
 }
 
-.emotion-23 {
+.emotion-27 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3518,7 +3940,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   width: 100%;
 }
 
-.emotion-23 [role="img"] {
+.emotion-27 [role="img"] {
   color: #de1b1b;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3527,11 +3949,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-23 [role="img"]:last-of-type {
+.emotion-27 [role="img"]:last-of-type {
   color: #de1b1b;
 }
 
-.emotion-22 {
+.emotion-26 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3554,27 +3976,27 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   width: 100%;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-26 *,
+.emotion-26 *::before,
+.emotion-26 *::after {
   box-sizing: inherit;
 }
 
-.emotion-22:hover > div:last-child {
+.emotion-26:hover > div:last-child {
   border-color: #f55353;
 }
 
-.emotion-22:focus > div:last-child {
+.emotion-26:focus > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.emotion-22:active > div:last-child {
+.emotion-26:active > div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.emotion-22 [role="img"] {
+.emotion-26 [role="img"] {
   color: #de1b1b;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -3583,11 +4005,11 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   margin: 0 0.5em;
 }
 
-.emotion-22 [role="img"]:last-of-type {
+.emotion-26 [role="img"]:last-of-type {
   color: #de1b1b;
 }
 
-.emotion-19 {
+.emotion-23 {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -3606,60 +4028,60 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   padding-right: 0;
 }
 
-.emotion-19[type="search"] {
+.emotion-23[type="search"] {
   -webkit-appearance: none;
 }
 
-.emotion-19[type="search"]::-webkit-search-decoration {
+.emotion-23[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.emotion-19::-webkit-input-placeholder {
+.emotion-23::-webkit-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19::-moz-placeholder {
+.emotion-23::-moz-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19:-ms-input-placeholder {
+.emotion-23:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19::placeholder {
+.emotion-23::placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19::-ms-input-placeholder {
+.emotion-23::-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19:-ms-input-placeholder {
+.emotion-23:-ms-input-placeholder {
   color: #8e99ab;
   -webkit-text-fill-color: #8e99ab;
   font-style: italic;
 }
 
-.emotion-19::-ms-clear {
+.emotion-23::-ms-clear {
   display: none;
 }
 
-.emotion-19:focus ~ div:last-child {
+.emotion-23:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
 }
 
-.emotion-21 {
+.emotion-25 {
   background-color: #ffffff;
   border-color: #de1b1b;
   border-radius: 0.1875em;
@@ -3673,7 +4095,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
   z-index: -1;
 }
 
-.emotion-25 {
+.emotion-31 {
   color: #de1b1b;
   font-size: 0.6875em;
   margin-top: 0.18181818181818182em;
@@ -3684,7 +4106,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
     marginBottom="1rem"
   >
     <div
-      className="emotion-27"
+      className="emotion-33"
     >
       <FormField
         caption="This is help text"
@@ -3695,7 +4117,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="emotion-8"
+            className="emotion-10"
           >
             <label>
               <Styled(div)
@@ -3753,81 +4175,123 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     size="large"
                     variant="success"
                   >
-                    <FauxControl
+                    <Themed(FauxControl)
                       className="emotion-5"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": "formField-13-caption",
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                       variant="success"
                     >
-                      <div
-                        className="emotion-4"
-                      >
-                        <Control
-                          aria-describedby="formField-13-caption"
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": "formField-13-caption",
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-5"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-13-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="text"
-                          variant="success"
-                        >
-                          <input
-                            aria-describedby="formField-13-caption"
-                            className="emotion-1"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <IconSuccess
-                          key="iconEnd"
-                          size="1.5em"
-                        >
-                          <Icon
-                            rtl={false}
-                            size="1.5em"
+                            variant="success"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
-                              rtl={false}
-                              size="1.5em"
-                              viewBox="0 0 24 24"
+                            <FauxControl
+                              className="emotion-5"
+                              control={[Function]}
+                              variant="success"
                             >
-                              <svg
-                                aria-hidden={true}
-                                className="emotion-2"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 24 24"
+                              <div
+                                className="emotion-4"
                               >
-                                <g>
-                                  <path
-                                    d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                <Control
+                                  aria-describedby="formField-13-caption"
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": "formField-13-caption",
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="text"
+                                  variant="success"
+                                >
+                                  <input
+                                    aria-describedby="formField-13-caption"
+                                    className="emotion-1"
+                                    size="large"
+                                    type="text"
                                   />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconSuccess>
-                        <Underlay
-                          variant="success"
-                        >
-                          <div
-                            className="emotion-3"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                                </Control>
+                                <IconSuccess
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <Styled(svg)
+                                      aria-hidden={true}
+                                      focusable="false"
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="emotion-2"
+                                        focusable="false"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M12 3c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm-4.247 8.445L6.5 12.698l3.838 3.838 7.198-7.198-1.253-1.254-5.945 5.945-2.585-2.585z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </Styled(svg)>
+                                  </Icon>
+                                </IconSuccess>
+                                <Underlay
+                                  variant="success"
+                                >
+                                  <div
+                                    className="emotion-3"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -3838,7 +4302,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
               variant="success"
             >
               <div
-                className="emotion-7"
+                className="emotion-9"
                 id="formField-13-caption"
               >
                 This is help text
@@ -3856,7 +4320,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="emotion-8"
+            className="emotion-10"
           >
             <label>
               <Styled(div)
@@ -3897,7 +4361,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   variant="warning"
                 >
                   <TextInput
-                    className="emotion-14"
+                    className="emotion-16"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -3914,81 +4378,123 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     size="large"
                     variant="warning"
                   >
-                    <FauxControl
-                      className="emotion-14"
+                    <Themed(FauxControl)
+                      className="emotion-16"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": "formField-15-caption",
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                       variant="warning"
                     >
-                      <div
-                        className="emotion-13"
-                      >
-                        <Control
-                          aria-describedby="formField-15-caption"
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": "formField-15-caption",
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-16"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-15-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="text"
-                          variant="warning"
-                        >
-                          <input
-                            aria-describedby="formField-15-caption"
-                            className="emotion-10"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <IconWarning
-                          key="iconEnd"
-                          size="1.5em"
-                        >
-                          <Icon
-                            rtl={false}
-                            size="1.5em"
+                            variant="warning"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
-                              rtl={false}
-                              size="1.5em"
-                              viewBox="0 0 24 24"
+                            <FauxControl
+                              className="emotion-16"
+                              control={[Function]}
+                              variant="warning"
                             >
-                              <svg
-                                aria-hidden={true}
-                                className="emotion-2"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 24 24"
+                              <div
+                                className="emotion-15"
                               >
-                                <g>
-                                  <path
-                                    d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                <Control
+                                  aria-describedby="formField-15-caption"
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": "formField-15-caption",
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="text"
+                                  variant="warning"
+                                >
+                                  <input
+                                    aria-describedby="formField-15-caption"
+                                    className="emotion-12"
+                                    size="large"
+                                    type="text"
                                   />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconWarning>
-                        <Underlay
-                          variant="warning"
-                        >
-                          <div
-                            className="emotion-12"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                                </Control>
+                                <IconWarning
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <Styled(svg)
+                                      aria-hidden={true}
+                                      focusable="false"
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="emotion-2"
+                                        focusable="false"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M13.414 2.718l7.868 7.868c.78.78.78 2.047 0 2.828l-7.868 7.868c-.78.78-2.047.78-2.828 0l-7.868-7.868a2.001 2.001 0 0 1 0-2.828l7.868-7.868c.78-.78 2.047-.78 2.828 0zM12 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm1-3.958V8h-2v5.042h2z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </Styled(svg)>
+                                  </Icon>
+                                </IconWarning>
+                                <Underlay
+                                  variant="warning"
+                                >
+                                  <div
+                                    className="emotion-14"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -3999,7 +4505,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
               variant="warning"
             >
               <div
-                className="emotion-16"
+                className="emotion-20"
                 id="formField-15-caption"
               >
                 This is help text
@@ -4017,7 +4523,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
       >
         <FormField>
           <div
-            className="emotion-8"
+            className="emotion-10"
           >
             <label>
               <Styled(div)
@@ -4058,7 +4564,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   variant="danger"
                 >
                   <TextInput
-                    className="emotion-23"
+                    className="emotion-27"
                     control={[Function]}
                     controlProps={
                       Object {
@@ -4075,81 +4581,123 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                     size="large"
                     variant="danger"
                   >
-                    <FauxControl
-                      className="emotion-23"
+                    <Themed(FauxControl)
+                      className="emotion-27"
                       control={[Function]}
+                      controlProps={
+                        Object {
+                          "aria-describedby": "formField-17-caption",
+                          "aria-invalid": undefined,
+                          "aria-required": undefined,
+                          "controlRef": undefined,
+                          "disabled": undefined,
+                          "readOnly": undefined,
+                          "required": undefined,
+                          "type": "text",
+                        }
+                      }
+                      size="large"
                       variant="danger"
                     >
-                      <div
-                        className="emotion-22"
-                      >
-                        <Control
-                          aria-describedby="formField-17-caption"
-                          controlPropsIn={
-                            Object {
-                              "aria-describedby": "formField-17-caption",
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
+                      <ThemeProvider>
+                        <ThemeProvider>
+                          <FauxControl
+                            className="emotion-27"
+                            control={[Function]}
+                            controlProps={
+                              Object {
+                                "aria-describedby": "formField-17-caption",
+                                "aria-invalid": undefined,
+                                "aria-required": undefined,
+                                "controlRef": undefined,
+                                "disabled": undefined,
+                                "readOnly": undefined,
+                                "required": undefined,
+                                "type": "text",
+                              }
                             }
-                          }
-                          key="control"
-                          size="large"
-                          type="text"
-                          variant="danger"
-                        >
-                          <input
-                            aria-describedby="formField-17-caption"
-                            className="emotion-19"
                             size="large"
-                            type="text"
-                          />
-                        </Control>
-                        <IconDanger
-                          key="iconEnd"
-                          size="1.5em"
-                        >
-                          <Icon
-                            rtl={false}
-                            size="1.5em"
+                            variant="danger"
                           >
-                            <Styled(svg)
-                              aria-hidden={true}
-                              focusable="false"
-                              role="img"
-                              rtl={false}
-                              size="1.5em"
-                              viewBox="0 0 24 24"
+                            <FauxControl
+                              className="emotion-27"
+                              control={[Function]}
+                              variant="danger"
                             >
-                              <svg
-                                aria-hidden={true}
-                                className="emotion-2"
-                                focusable="false"
-                                role="img"
-                                viewBox="0 0 24 24"
+                              <div
+                                className="emotion-26"
                               >
-                                <g>
-                                  <path
-                                    d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                <Control
+                                  aria-describedby="formField-17-caption"
+                                  controlPropsIn={
+                                    Object {
+                                      "aria-describedby": "formField-17-caption",
+                                      "aria-invalid": undefined,
+                                      "aria-required": undefined,
+                                      "controlRef": undefined,
+                                      "disabled": undefined,
+                                      "readOnly": undefined,
+                                      "required": undefined,
+                                      "type": "text",
+                                    }
+                                  }
+                                  key="control"
+                                  size="large"
+                                  type="text"
+                                  variant="danger"
+                                >
+                                  <input
+                                    aria-describedby="formField-17-caption"
+                                    className="emotion-23"
+                                    size="large"
+                                    type="text"
                                   />
-                                </g>
-                              </svg>
-                            </Styled(svg)>
-                          </Icon>
-                        </IconDanger>
-                        <Underlay
-                          variant="danger"
-                        >
-                          <div
-                            className="emotion-21"
-                          />
-                        </Underlay>
-                      </div>
-                    </FauxControl>
+                                </Control>
+                                <IconDanger
+                                  key="iconEnd"
+                                  size="1.5em"
+                                >
+                                  <Icon
+                                    rtl={false}
+                                    size="1.5em"
+                                  >
+                                    <Styled(svg)
+                                      aria-hidden={true}
+                                      focusable="false"
+                                      role="img"
+                                      rtl={false}
+                                      size="1.5em"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="emotion-2"
+                                        focusable="false"
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <g>
+                                          <path
+                                            d="M3.94 19.49h16.118a1 1 0 0 0 .866-1.498l-8.06-13.99a.996.996 0 0 0-1.732-.001L3.074 17.993a.998.998 0 0 0 .867 1.499zM12 17a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1-3.503h-2v-5h2v5z"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </Styled(svg)>
+                                  </Icon>
+                                </IconDanger>
+                                <Underlay
+                                  variant="danger"
+                                >
+                                  <div
+                                    className="emotion-25"
+                                  />
+                                </Underlay>
+                              </div>
+                            </FauxControl>
+                          </FauxControl>
+                        </ThemeProvider>
+                      </ThemeProvider>
+                    </Themed(FauxControl)>
                   </TextInput>
                 </TextInput>
               </TextInput>
@@ -4160,7 +4708,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
               variant="danger"
             >
               <div
-                className="emotion-25"
+                className="emotion-31"
                 id="formField-17-caption"
               >
                 This is help text
