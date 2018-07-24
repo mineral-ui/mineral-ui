@@ -25,7 +25,7 @@ type Props = {
   /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideLabel?: boolean,
   /** Ref for the radio button */
-  inputRef?: (node: ?React$Component<*, *>) => void,
+  inputRef?: (node: ?HTMLInputElement) => void,
   /** Indicates that the value of the input is invalid */
   invalid?: boolean,
   /** Maximize the distance between the label and the control */
