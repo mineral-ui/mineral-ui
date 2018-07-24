@@ -115,13 +115,21 @@ const styles = {
    * context. These styles allow the Button to shrink, but the Icon remains the
    * same size.
    */
-  toggleButton: ({ theme }) => ({
+  toggleButton: ({ theme, variant }) => ({
     flex: '0 0 auto',
     height: 'auto',
     minWidth: 0,
     overflow: 'hidden',
     padding: 0,
     transform: `translateY(-${pxToEm(1)})`, // Optical alignment
+
+    ...(variant
+      ? {
+          '&:hover': {
+            backgroundColor: theme[`backgroundColor_${variant}_hover`]
+          }
+        }
+      : undefined),
 
     // Inner
     '& > span': {
@@ -172,23 +180,30 @@ export default class CardFooter extends Component<Props, State> {
       expandable,
       title,
       triggerTitle = CardFooter.defaultProps.triggerTitle,
+      variant,
       ...restProps
     } = this.props;
+
+    const rootProps = {
+      variant,
+      ...restProps
+    };
 
     const isOpen = Boolean(this.getControllableValue('isOpen'));
 
     const ExpandCollapseIcon = isOpen ? IconExpandLess : IconExpandMore;
 
     return (
-      <Root {...restProps}>
+      <Root {...rootProps}>
         {title && (
           <Title>
             <TitleContent>{title}</TitleContent>
             {expandable && (
               <ToggleButton
-                onClick={this.toggleOpen}
-                minimal
                 iconStart={<ExpandCollapseIcon title={triggerTitle(isOpen)} />}
+                minimal
+                onClick={this.toggleOpen}
+                variant={variant}
               />
             )}
           </Title>
