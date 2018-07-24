@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../styles';
-import { mapComponentThemes } from '../themes';
+import { createThemedComponent, mapComponentThemes } from '../themes';
 import FauxControl, {
   componentTheme as fauxControlComponentTheme
 } from '../FauxControl/FauxControl';
@@ -59,8 +59,8 @@ type Props = {
   variant?: 'success' | 'warning' | 'danger'
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  ...mapComponentThemes(
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
     {
       name: 'FauxControl',
       theme: fauxControlComponentTheme(baseTheme)
@@ -77,8 +77,23 @@ export const componentTheme = (baseTheme: Object) => ({
       }
     },
     baseTheme
-  )
-});
+  );
+
+const ThemedFauxControl = createThemedComponent(
+  FauxControl,
+  ({ theme: baseTheme }) =>
+    mapComponentThemes(
+      {
+        name: 'TextInput',
+        theme: componentTheme(baseTheme)
+      },
+      {
+        name: 'FauxControl',
+        theme: {}
+      },
+      baseTheme
+    )
+);
 
 const styles = {
   input: ({ size, theme: baseTheme }) => {
@@ -139,7 +154,7 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent(FauxControl, styles.root, {
+const Root = createStyledComponent(ThemedFauxControl, styles.root, {
   displayName: 'TextInput'
 });
 const Input = createStyledComponent('input', styles.input, {

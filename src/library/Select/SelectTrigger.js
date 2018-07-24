@@ -5,7 +5,7 @@ import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { mapComponentThemes } from '../themes';
+import { createThemedComponent, mapComponentThemes } from '../themes';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import FauxControl from '../FauxControl';
@@ -36,8 +36,8 @@ type Props = {
   variant?: 'success' | 'warning' | 'danger'
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  ...mapComponentThemes(
+export const componentTheme = (baseTheme: Object) =>
+  mapComponentThemes(
     {
       name: 'TextInput',
       theme: textInputComponentTheme(baseTheme)
@@ -54,8 +54,23 @@ export const componentTheme = (baseTheme: Object) => ({
       }
     },
     baseTheme
-  )
-});
+  );
+
+const ThemedFauxControl = createThemedComponent(
+  FauxControl,
+  ({ theme: baseTheme }) =>
+    mapComponentThemes(
+      {
+        name: 'Select',
+        theme: componentTheme(baseTheme)
+      },
+      {
+        name: 'FauxControl',
+        theme: {}
+      },
+      baseTheme
+    )
+);
 
 const styles = {
   root: ({
@@ -135,7 +150,7 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent(FauxControl, styles.root, {
+const Root = createStyledComponent(ThemedFauxControl, styles.root, {
   displayName: 'SelectTrigger'
 });
 const Trigger = createStyledComponent('div', styles.trigger, {
