@@ -3,6 +3,7 @@ import controlled from './controlled';
 import disabled from './disabled';
 import hideLabel from './hideLabel';
 import importSyntax from './importSyntax';
+import indeterminate from './indeterminate';
 import inputRef from './inputRef';
 import invalid from './invalid';
 import labelPositionAndJustification from './labelPositionAndJustification';
@@ -11,14 +12,13 @@ import nextToOtherInputs from './nextToOtherInputs';
 import required from './required';
 import rtl from './rtl';
 import sizes from './sizes';
-import triState from './triState';
 import uncontrolled from './uncontrolled';
 
 export default [
   importSyntax,
   uncontrolled,
   controlled,
-  triState,
+  indeterminate,
   disabled,
   required,
   invalid,
