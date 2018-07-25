@@ -4,9 +4,10 @@ import { shallow } from 'enzyme';
 import CheckboxGroup from '../CheckboxGroup';
 import examples from '../../../website/app/demos/Checkbox/examples/CheckboxGroup';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowCheckboxGroup() {
-  return shallow(<CheckboxGroup name="example" />);
+  return shallow(<CheckboxGroup name="test" />);
 }
 
 describe('CheckboxGroup', () => {
@@ -16,5 +17,11 @@ describe('CheckboxGroup', () => {
     const checkboxGroup = shallowCheckboxGroup();
 
     expect(checkboxGroup.exists()).toEqual(true);
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(<CheckboxGroup name="test" />, [
+      'CheckboxGroupControl_marginVertical_stacked'
+    ]);
   });
 });

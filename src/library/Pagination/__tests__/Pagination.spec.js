@@ -6,10 +6,12 @@ import Button from '../../Button';
 import { MenuItem } from '../../Menu';
 import Select from '../../Select';
 import SelectTrigger from '../../Select/SelectTrigger';
-import Pagination from '../Pagination';
+import Pagination, { componentTheme } from '../Pagination';
 import examples from '../../../website/app/demos/Pagination/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
+import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 const defaultProps = {
   currentPage: 1,
@@ -93,6 +95,19 @@ describe('Pagination', () => {
     const [, pagination] = mountPagination();
 
     expect(pagination.exists()).toEqual(true);
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(
+      <Pagination
+        currentPage={1}
+        onPageChange={jest.fn()}
+        pageSize={10}
+        totalCount={100}
+        showPageJumper
+      />,
+      getProcessedComponentThemeKeys(componentTheme)
+    );
   });
 
   describe('Page Jumper', () => {

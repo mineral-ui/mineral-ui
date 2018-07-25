@@ -136,7 +136,6 @@ const styles = {
 
     return {
       alignItems: 'center',
-      color: 'teal',
       display: 'flex',
       flex: '1 1 auto',
       height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),

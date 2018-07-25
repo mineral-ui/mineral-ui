@@ -12,6 +12,7 @@ import TableRow from '../TableRow';
 import TableSortableHeaderCell from '../TableSortableHeaderCell';
 import examples from '../../../website/app/demos/Table/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 const defaultProps = {
   data: [
@@ -109,6 +110,13 @@ describe('Table', () => {
     const table = shallowTable();
 
     expect(table.exists()).toEqual(true);
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(
+      <Table id="test" data={defaultProps.data} title="test" />,
+      ['Table_boxShadow_focus']
+    );
   });
 
   describe('selectable', () => {

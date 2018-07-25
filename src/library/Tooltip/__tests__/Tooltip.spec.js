@@ -2,11 +2,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Tooltip from '../Tooltip';
+import Tooltip, { componentTheme } from '../Tooltip';
 import PopoverContent from '../../Popover/PopoverContent';
 import PopoverTrigger from '../../Popover/PopoverTrigger';
 import examples from '../../../website/app/demos/Tooltip/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
+import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 function shallowTooltip(props = {}) {
   const tooltipProps = {
@@ -96,6 +98,15 @@ describe('Tooltip', () => {
 
       expect(tooltip.exists()).toEqual(true);
     });
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(
+      <Tooltip id="test" content="content" isOpen>
+        trigger
+      </Tooltip>,
+      getProcessedComponentThemeKeys(componentTheme)
+    );
   });
 
   describe('event handler composition', () => {

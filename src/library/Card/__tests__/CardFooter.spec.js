@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import Button from '../../Button';
 import { CardFooter } from '../../Card';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowCardFooter(props = {}) {
   const cardFooterProps = {
@@ -30,6 +31,12 @@ describe('CardFooter', () => {
     const cardFooter = shallowCardFooter();
 
     expect(cardFooter.exists()).toEqual(true);
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(<CardFooter>children</CardFooter>, [
+      'CardFooter_backgroundColor'
+    ]);
   });
 
   describe('opens', () => {
