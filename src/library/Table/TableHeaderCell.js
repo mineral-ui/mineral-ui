@@ -46,29 +46,27 @@ export const componentTheme = (baseTheme: Object) =>
     baseTheme
   );
 
-export const ThemedTD = createThemedComponent(
+export const ThemedTableCell = createThemedComponent(
   TableCell,
-  ({ theme: baseTheme }) => {
-    // Prevent these theme variables from clobbering the placeholder variables
-    // in TableCell
-    const {
-      TableHeaderCell_borderVertical: ignoreTableHeaderCell_borderVertical,
-      TableHeaderCell_borderVertical_highContrast: ignoreTableHeaderCell_borderVertical_highContrast,
-      ...theme
-    } = componentTheme(baseTheme);
-
-    return mapComponentThemes(
+  ({ theme: baseTheme }) =>
+    mapComponentThemes(
       {
         name: 'TableHeaderCell',
-        theme
+        theme: componentTheme(baseTheme)
       },
       {
         name: 'TableCell',
         theme: {}
       },
-      baseTheme
-    );
-  }
+      baseTheme,
+      [
+        'TableHeaderCell_borderVertical',
+        'TableHeaderCell_fontSize',
+        'TableHeaderCell_paddingHorizontal',
+        'TableHeaderCell_paddingVertical',
+        'TableHeaderCell_verticalAlign'
+      ]
+    )
 );
 
 const REGEX_IS_EM_VALUE = /\d+em$/;
@@ -85,9 +83,11 @@ const styles = ({
   const theme = componentTheme(baseTheme);
   const fontSize = theme.TableHeaderCell_fontSize;
   const rtl = theme.direction === 'rtl';
+  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
   const borderVertical = highContrast
     ? theme.TableHeaderCell_borderVertical_highContrast
     : theme.TableHeaderCell_borderVertical;
+  const positionProperty = rtl ? 'right' : 'left';
 
   return {
     fontWeight: theme.TableHeaderCell_fontWeight,
@@ -99,15 +99,16 @@ const styles = ({
     // Using this "border" to appease Firefox, which extends TableHeaderCell's
     // real border down the entire column after clicking a TableSortableHeaderCell.
     '&:not(:first-child)': {
+      [borderProperty]: 0,
+
       '&::before': {
         bottom: 0,
         content: '""',
-        left: rtl ? null : 0,
+        [positionProperty]: 0,
         position: 'absolute',
-        right: rtl ? 0 : null,
         top: 0,
         width: 0,
-        borderLeft: borderVertical
+        [borderProperty]: borderVertical
       }
     }
   };
@@ -119,7 +120,7 @@ const styles = ({
 function createRootNode(props: Props) {
   const { element = TableHeaderCell.defaultProps.element } = props;
 
-  return createStyledComponent(ThemedTD, styles, {
+  return createStyledComponent(ThemedTableCell, styles, {
     displayName: 'TableHeaderCell',
     filterProps: ['width'],
     forwardProps: ['element', 'noPadding', 'textAlign'],

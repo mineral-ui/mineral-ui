@@ -39,6 +39,10 @@ const styles = ({
   const theme = componentTheme(baseTheme);
   const fontSize = theme.TableCell_fontSize;
   const rtl = theme.direction === 'rtl';
+  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
+  const borderVertical = highContrast
+    ? theme.TableCell_borderVertical_highContrast
+    : theme.TableCell_borderVertical;
   const paddingHorizontal = getNormalizedValue(
     theme.TableCell_paddingHorizontal,
     fontSize
@@ -49,9 +53,6 @@ const styles = ({
       : theme.TableCell_paddingVertical,
     fontSize
   );
-  const borderVertical = highContrast
-    ? theme.TableCell_borderVertical_highContrast
-    : theme.TableCell_borderVertical;
 
   return {
     fontSize,
@@ -61,8 +62,7 @@ const styles = ({
     verticalAlign: theme.TableCell_verticalAlign,
 
     '&:not(:first-child)': {
-      borderLeft: rtl ? null : borderVertical,
-      borderRight: !rtl ? null : borderVertical
+      [borderProperty]: borderVertical
     }
   };
 };
