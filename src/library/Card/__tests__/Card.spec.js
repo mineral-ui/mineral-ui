@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import Card from '../Card';
 import examples from '../../../website/app/demos/Card/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowCard(props = {}) {
   const cardProps = {
@@ -21,6 +22,10 @@ describe('Card', () => {
     card = shallowCard();
 
     expect(card.exists()).toEqual(true);
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(<Card>children</Card>, ['Card_backgroundColor']);
   });
 
   describe('onClick', () => {

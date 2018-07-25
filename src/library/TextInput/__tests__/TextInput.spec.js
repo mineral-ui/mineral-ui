@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
+import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import TextInput from '../TextInput';
 import examples from '../../../website/app/demos/TextInput/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
@@ -37,5 +38,9 @@ describe('TextInput', () => {
     });
 
     expect(textInput.html()).toMatchSnapshot();
+  });
+
+  describe('theme overrides', () => {
+    testThemeOverrides(<TextInput />, ['TextInput_backgroundColor']);
   });
 });

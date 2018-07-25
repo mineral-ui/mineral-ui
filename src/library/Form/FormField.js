@@ -16,6 +16,8 @@ type Props = {
   className?: string,
   /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
   hideLabel?: boolean,
+  /** Id of the FormField */
+  id?: string,
   /** Form input class; alternative to `children` */
   input?: React$ComponentType<*>,
   /** Props to be applied directly to the root element, rather than the input */
@@ -130,7 +132,7 @@ export default class FormField extends Component<Props> {
     requiredText: 'Required'
   };
 
-  id: string = `formField-${generateId()}`;
+  id: string = this.props.id || `formField-${generateId()}`;
 
   render() {
     const {
