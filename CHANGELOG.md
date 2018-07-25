@@ -1,3 +1,16 @@
+<a name="0.39.0"></a>
+# [0.39.0](https://github.com/mineral-ui/mineral-ui/compare/v0.38.0...v0.39.0) (2018-07-25)
+
+
+### Bug Fixes
+
+* **checkbox:** IE/Edge toggle indeterminate state on single click ([c3f1c41](https://github.com/mineral-ui/mineral-ui/commit/c3f1c41))
+* **select,textarea,textinput:** Support component-level theme variables ([9a0de8f](https://github.com/mineral-ui/mineral-ui/commit/9a0de8f))
+* **table:** Fix theme overrides ([48f132e](https://github.com/mineral-ui/mineral-ui/commit/48f132e))
+* **table:** Make density and messages props optional ([9bb5639](https://github.com/mineral-ui/mineral-ui/commit/9bb5639))
+
+
+
 <a name="0.38.0"></a>
 # [0.38.0](https://github.com/mineral-ui/mineral-ui/compare/v0.37.0...v0.38.0) (2018-07-23)
 
