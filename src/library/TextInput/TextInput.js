@@ -13,6 +13,8 @@ type Props = {
   defaultValue?: string,
   /** Disables the input */
   disabled?: boolean,
+  /** HTML `size` attribute */
+  htmlSize?: number | string,
   /** Icon located at the start of the input */
   iconStart?: React$Element<*>,
   /** Icon located at the end of the input */
@@ -96,9 +98,10 @@ const ThemedFauxControl = createThemedComponent(
 );
 
 const styles = {
-  input: ({ size, theme: baseTheme }) => {
+  input: ({ controlSize, size: nonHtmlSize, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
+    const size = controlSize || nonHtmlSize;
     const fontSize =
       size === 'small'
         ? theme.TextInput_fontSize_small
@@ -159,7 +162,8 @@ const Root = createStyledComponent(ThemedFauxControl, styles.root, {
 });
 const Input = createStyledComponent('input', styles.input, {
   displayName: 'Input',
-  rootEl: 'input'
+  rootEl: 'input',
+  forwardProps: ['size']
 });
 
 /**
