@@ -4,9 +4,20 @@ import { shallow } from 'enzyme';
 import TextInput from '../TextInput';
 import examples from '../../../website/app/demos/TextInput/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
+import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 
-function shallowTextInput() {
-  return shallow(<TextInput />);
+function shallowTextInput(props = {}) {
+  const textInputProps = {
+    ...props
+  };
+  return shallow(<TextInput {...textInputProps} />);
+}
+
+function mountTextInput(props = {}) {
+  const textInputProps = {
+    ...props
+  };
+  return mountInThemeProvider(<TextInput {...textInputProps} />);
 }
 
 describe('TextInput', () => {
@@ -18,5 +29,13 @@ describe('TextInput', () => {
     const textInput = shallowTextInput();
 
     expect(textInput.exists()).toEqual(true);
+  });
+
+  it('renders an html size attribute when provided', () => {
+    const [, textInput] = mountTextInput({
+      htmlSize: 1
+    });
+
+    expect(textInput.html()).toMatchSnapshot();
   });
 });
