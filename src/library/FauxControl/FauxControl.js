@@ -90,18 +90,21 @@ const styles = {
   },
   control: ({
     controlPropsIn,
+    controlSize,
     disabled,
     hasPlaceholder,
     iconEnd,
     iconStart,
     prefix,
     readOnly,
-    size,
+    size: nonHtmlSize,
     suffix,
     theme: baseTheme,
     variant
   }) => {
     let theme = componentTheme(baseTheme);
+
+    const size = controlSize || nonHtmlSize;
 
     if (variant) {
       // prettier-ignore
@@ -412,7 +415,9 @@ export default class FauxControl extends Component<Props> {
       prefix: prefixIn,
       innerRef: controlPropsIn && controlPropsIn.controlRef,
       readOnly,
-      size,
+      ...(controlPropsIn && controlPropsIn.htmlSize
+        ? { controlSize: size, size: controlPropsIn.htmlSize }
+        : { size }),
       suffix: suffixIn,
       variant
     };
