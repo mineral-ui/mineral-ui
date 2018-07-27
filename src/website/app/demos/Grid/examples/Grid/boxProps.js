@@ -6,8 +6,8 @@ import Grid from '../../components/Grid';
 export default {
   id: 'box-props',
   title: 'Box Props',
-  description: `Because Grid styles the [Box](/components/box) component, it accepts any
-of [Box's props](/components/box#props).`,
+  description: `Because Grid composes the [Box](/components/box) component, it
+accepts any of [Box's props](/components/box#props).`,
   scope: { Box, Grid, GridItem },
   source: `
     <div>

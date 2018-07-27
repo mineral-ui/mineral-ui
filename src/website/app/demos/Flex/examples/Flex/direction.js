@@ -15,7 +15,7 @@ const Flex = createStyledComponent(_Flex, ({ direction }) => {
     ? {
         float: 'left',
         height: '12rem',
-        width: '49%',
+        width: '48%',
 
         '&:not(:last-child)': {
           marginRight: '4%'

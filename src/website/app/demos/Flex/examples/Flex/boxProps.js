@@ -6,8 +6,8 @@ import Flex from '../../components/Flex';
 export default {
   id: 'box-props',
   title: 'Box Props',
-  description: `Because Flex styles the [Box](/components/box) component, it accepts any
-of [Box's props](/components/box#props).`,
+  description: `Because Flex composes the [Box](/components/box) component, it
+accepts any of [Box's props](/components/box#props).`,
   scope: { Box, Flex, FlexItem },
   source: `
     <div>

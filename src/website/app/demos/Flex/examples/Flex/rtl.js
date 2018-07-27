@@ -15,7 +15,7 @@ variable is set to \`rtl\` (right-to-left).`,
         <Flex>
           <FlexItem>ا</FlexItem>
           <FlexItem>ب</FlexItem>
-          <FlexItem>د</FlexItem>
+          <FlexItem marginStart="auto">د</FlexItem>
         </Flex>
       </ThemeProvider>
     </div>`
