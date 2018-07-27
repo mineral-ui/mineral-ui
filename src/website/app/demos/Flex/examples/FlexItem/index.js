@@ -2,6 +2,7 @@
 import alignSelf from './alignSelf';
 import boxProps from './boxProps';
 import flexItem from './flexItem';
+import flexProps from './flexProps';
 import importSyntax from './importSyntax';
 import grow from './grow';
 import responsive from './responsive';
@@ -13,6 +14,7 @@ export default [
   grow,
   shrink,
   alignSelf,
+  flexProps,
   boxProps,
   responsive
 ];

@@ -5,8 +5,8 @@ import Grid from '../../components/Grid';
 export default {
   id: 'box-props',
   title: 'Box Props',
-  description: `Because GridItem styles the [Box](/components/box) component, it accepts
-any of [Box's props](/components/box#props), **except** \`width\` (use
+  description: `Because GridItem composes the [Box](/components/box) component,
+it accepts any of [Box's props](/components/box#props), **except** \`width\` (use
 [\`span\`](#span), instead).`,
   scope: { Grid, GridItem },
   source: `
