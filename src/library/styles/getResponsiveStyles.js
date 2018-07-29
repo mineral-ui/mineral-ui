@@ -64,7 +64,10 @@ const getMediaQueries = (
  * is null. If it is, then it returns the next-most-previous non-null value in
  * the array until it gets to array[0], which it returns regardless.
  */
-const getPrevNonNull = (values: Array<Values>, index: number): Values => {
+export const getPrevNonNull = (
+  values: Array<Values>,
+  index: number
+): Values => {
   const value = Array.isArray(values) && values[index];
   if (index > 0) {
     return value === null ? getPrevNonNull(values, index - 1) : value;
