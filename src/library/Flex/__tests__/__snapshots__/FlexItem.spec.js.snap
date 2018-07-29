@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`FlexItem composition composes Box by default 1`] = `
+<FlexItem
+  element="div"
+  grow={0}
+  shrink={1}
+/>
+`;
+
+exports[`FlexItem composition composes Flex when flex={true} 1`] = `
+<FlexItem
+  alignItems="stretch"
+  direction="row"
+  flex={true}
+  grow={0}
+  gutterWidth="md"
+  justifyContent="start"
+  shrink={1}
+/>
+`;
+
 exports[`FlexItem demo examples Snapshots: align-self 1`] = `
 .emotion-3 {
   -webkit-align-items: center;

@@ -17,4 +17,20 @@ describe('FlexItem', () => {
 
     expect(flexItem.exists()).toEqual(true);
   });
+
+  describe('composition', () => {
+    it('composes Box by default', () => {
+      const flexItem = shallowFlexItem();
+
+      expect(flexItem).toMatchSnapshot();
+    });
+
+    it('composes Flex when flex={true}', () => {
+      const flexItem = shallowFlexItem({
+        flex: true
+      });
+
+      expect(flexItem).toMatchSnapshot();
+    });
+  });
 });

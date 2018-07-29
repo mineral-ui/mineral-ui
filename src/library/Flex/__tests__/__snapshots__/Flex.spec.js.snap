@@ -18225,3 +18225,338 @@ exports[`Flex demo examples Snapshots: wrap 1`] = `
   </Flex>
 </Styled(Flex)>
 `;
+
+exports[`Flex gutter applies correctly with default direction: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": "row",
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with default direction: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginEnd": "DEFAULT",
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with default direction: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with override: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      marginEnd="OVERRIDE"
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": "row",
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with override: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginEnd": "OVERRIDE",
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with override: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction and override: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      marginEnd={
+        Array [
+          "OVERRIDE1",
+          "OVERRIDE2",
+        ]
+      }
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": Array [
+    "row",
+    "row-reverse",
+  ],
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction and override: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginEnd": Array [
+    "OVERRIDE1",
+    "OVERRIDE2",
+  ],
+  "marginStart": Array [
+    0,
+    "DEFAULT",
+  ],
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction and override: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": Array [
+    "row",
+    "row-reverse",
+    "column",
+    "column-reverse",
+  ],
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginEnd": Array [
+    "DEFAULT",
+    0,
+    0,
+    0,
+  ],
+  "marginStart": Array [
+    0,
+    "DEFAULT",
+    0,
+    0,
+  ],
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive direction: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive override: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      marginEnd={
+        Array [
+          "OVERRIDE1",
+          "OVERRIDE2",
+        ]
+      }
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": "row",
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive override: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginEnd": Array [
+    "OVERRIDE1",
+    "OVERRIDE2",
+  ],
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with responsive override: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with reverse direction: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": "row-reverse",
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter applies correctly with reverse direction: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "marginStart": "DEFAULT",
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter applies correctly with reverse direction: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter does not apply with column direction: Flex 1`] = `
+Object {
+  "alignItems": "stretch",
+  "children": Array [
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      A
+    </FlexItem>,
+    <FlexItem
+      grow={0}
+      shrink={1}
+    >
+      B
+    </FlexItem>,
+  ],
+  "direction": "column",
+  "gutterWidth": "DEFAULT",
+  "justifyContent": "start",
+}
+`;
+
+exports[`Flex gutter does not apply with column direction: FlexItem A 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "A",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
+
+exports[`Flex gutter does not apply with column direction: FlexItem B 1`] = `
+Object {
+  "breakpoints": undefined,
+  "children": "B",
+  "grow": 0,
+  "shrink": 1,
+}
+`;
