@@ -458,7 +458,9 @@ const spacingTypes = {
 };
 
 const getMeasurement = (value: number | string) =>
-  typeof value === 'number' && value < 1 ? `${value * 100}%` : value;
+  typeof value === 'number' && value < 1 && value !== 0
+    ? `${value * 100}%`
+    : value;
 
 const getSpaceValue = (
   property: string,

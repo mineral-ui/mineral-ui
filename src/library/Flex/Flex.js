@@ -1,7 +1,10 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
 import { withTheme } from '../themes';
-import { createStyledComponent, getResponsiveStyles, pxToEm } from '../styles';
+import { createStyledComponent, pxToEm } from '../styles';
+import getResponsiveStyles, {
+  getPrevNonNull
+} from '../styles/getResponsiveStyles';
 import Box from '../Box';
 
 type Props = {
@@ -63,60 +66,123 @@ export type Values = boolean | null | number | string;
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
 
-const getGutterSize = (theme: Object, value: number | string): string =>
-  typeof value === 'number'
-    ? pxToEm(value / 2)
-    : `${parseFloat(theme[`space_inline_${value}`] || value) / 2}em`;
-
-const getMargin = (
-  gutter: string,
+const getGutterSize = (
   theme: Object,
   value: number | string
-): string =>
-  value ? `calc(${getMeasurement(theme, value)} - ${gutter})` : `-${gutter}`;
+): number | string =>
+  typeof value === 'number' && value !== 0
+    ? pxToEm(value)
+    : theme[`space_inline_${value}`] || value;
 
-const getMeasurement = (theme: Object, value: number | string): string => {
-  return (
-    theme[`space_inline_${value}`] ||
-    (typeof value === 'number' ? `${value}px` : value)
-  );
-};
+const getIndexedValue = (property, index) =>
+  property && Array.isArray(property) && index !== undefined
+    ? property[index]
+    : property;
 
 const getJustification = (value: string): string =>
   ['around', 'between', 'evenly'].indexOf(value) !== -1
     ? `space-${value}`
     : getAlignment(value);
 
+const getMarginOrGutter = ({
+  gutterWidth,
+  index,
+  margin,
+  marginEnd,
+  marginHorizontal,
+  marginStart,
+  start,
+  theme
+}) => {
+  return (
+    getIndexedValue(start ? marginStart : marginEnd, index) ||
+    getIndexedValue(marginHorizontal, index) ||
+    getIndexedValue(margin, index) ||
+    getGutterSize(theme, gutterWidth)
+  );
+};
+
+const getMarginProps = ({ direction, gutterWidth, theme, ...restProps }) => {
+  if (Array.isArray(direction)) {
+    return direction.reduce(
+      (acc, _, index) => {
+        const value = getPrevNonNull(direction, index);
+
+        if (value === 'row' || value === 'row-reverse') {
+          pushMarginProps({
+            direction: value,
+            index,
+            gutterWidth,
+            props: acc,
+            theme,
+            ...restProps
+          });
+        } else {
+          pushMarginProps({
+            index,
+            gutterWidth: 0,
+            props: acc,
+            theme,
+            ...restProps
+          });
+        }
+        return acc;
+      },
+      { marginStart: [], marginEnd: [] }
+    );
+  } else if (direction === 'row' || direction === 'row-reverse') {
+    const flip = direction === 'row-reverse';
+    const marginProperty = flip ? 'marginStart' : 'marginEnd';
+
+    return {
+      [marginProperty]: getMarginOrGutter({
+        ...restProps,
+        gutterWidth,
+        start: flip,
+        theme
+      })
+    };
+  }
+};
+
+const pushMarginProps = ({
+  direction,
+  index,
+  gutterWidth,
+  props,
+  theme,
+  ...restProps
+}) => {
+  const flip = direction === 'row-reverse';
+  props.marginEnd.push(
+    getMarginOrGutter({
+      ...restProps,
+      gutterWidth: flip ? 0 : gutterWidth,
+      index,
+      theme
+    })
+  );
+  props.marginStart.push(
+    getMarginOrGutter({
+      ...restProps,
+      gutterWidth: flip ? gutterWidth : 0,
+      index,
+      start: true,
+      theme
+    })
+  );
+};
+
 const styles = {
   root: ({
     breakpoints,
     alignItems,
     direction,
-    gutterWidth,
     inline,
-    margin,
-    marginEnd,
-    marginHorizontal,
-    marginLeft: propMarginLeft,
-    marginRight: propMarginRight,
-    marginStart,
     justifyContent,
     theme,
     wrap
   }) => {
-    const rtl = theme.direction === 'rtl';
-    const gutter = getGutterSize(theme, gutterWidth);
-    const marginLeft =
-      propMarginLeft ||
-      (rtl ? marginEnd : marginStart) ||
-      marginHorizontal ||
-      margin;
-    const marginRight =
-      propMarginRight ||
-      (rtl ? marginStart : marginEnd) ||
-      marginHorizontal ||
-      margin;
-
     const mapValueToProperty = (
       property: string,
       value: Values
@@ -128,8 +194,6 @@ const styles = {
         flexDirection: (value) => value,
         flexWrap: (value) =>
           value ? 'wrap' : value === false ? 'nowrap' : value,
-        marginLeft: (value) => getMargin(gutter, theme, value),
-        marginRight: (value) => getMargin(gutter, theme, value),
         justifyContent: getJustification
       };
 
@@ -144,8 +208,6 @@ const styles = {
         display: inline,
         flexDirection: direction,
         flexWrap: wrap,
-        marginLeft,
-        marginRight,
         justifyContent
       },
       theme
@@ -159,36 +221,37 @@ const Root = createStyledComponent(Box, styles.root, {
 });
 
 const ThemedRoot = withTheme(
-  ({ breakpoints, children, gutterWidth, theme, ...restProps }) => {
+  ({ breakpoints, children, direction, gutterWidth, theme, ...restProps }) => {
     const rootProps = {
       breakpoints,
+      direction,
       gutterWidth,
       ...restProps
     };
 
     let flexItems;
-    flexItems = Children.map(children, (child) => {
-      const {
-        breakpoints: propBreakpoints,
-        margin: propMargin,
-        marginHorizontal,
-        marginLeft,
-        marginRight
-      } = child.props;
-      let props = {
-        breakpoints: propBreakpoints || breakpoints
-      };
-
-      if (gutterWidth) {
-        const margin =
-          marginHorizontal || propMargin || getGutterSize(theme, gutterWidth);
-        props = {
-          ...props,
-          marginLeft: marginLeft || margin,
-          marginRight: marginRight || margin
+    flexItems = Children.map(children, (child, index) => {
+      if (child.props) {
+        const { breakpoints: propBreakpoints, ...restChildProps } = child.props;
+        let props = {
+          breakpoints: propBreakpoints || breakpoints
         };
+
+        const flexItemsCount = Children.count(children);
+        if (gutterWidth && index < flexItemsCount - 1) {
+          props = {
+            ...props,
+            ...getMarginProps({
+              direction,
+              gutterWidth,
+              theme,
+              ...restChildProps
+            })
+          };
+        }
+        return cloneElement(child, props);
       }
-      return cloneElement(child, props);
+      return child;
     });
 
     return <Root {...rootProps}>{flexItems}</Root>;

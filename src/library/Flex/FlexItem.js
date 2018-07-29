@@ -1,7 +1,8 @@
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
 import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Box from '../Box';
+import Flex from './Flex';
 
 type Props = {
   /** Align item along the cross axis [[Responsive-capable]](#responsive) */
@@ -16,6 +17,10 @@ type Props = {
    * "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;"
    */
   breakpoints?: Array<number | string>,
+  /**
+   * When `true`, FlexItem composes [Flex](/components/flex); when `false`, it
+   composes [Box](/components/box) */
+  flex?: boolean,
   /**
    * Grow factor along the main axis ([see example](#grow))
    * [[Responsive-capable]](#responsive)
@@ -38,7 +43,9 @@ const mapValueToProperty = (
     alignSelf: (value) =>
       value === 'start' || value === 'end' ? `flex-${value}` : value,
     flexBasis: (value) =>
-      typeof value === 'number' && value < 1 ? `${value * 100}%` : value,
+      typeof value === 'number' && value < 1 && value !== 0
+        ? `${value * 100}%`
+        : value,
     flexGrow: (value) => value,
     flexShrink: (value) => value
   };
@@ -46,36 +53,51 @@ const mapValueToProperty = (
   return map[property](value);
 };
 
-const styles = {
-  root: ({ alignSelf, breakpoints, grow, shrink, theme, width }) => ({
-    ...getResponsiveStyles({
-      breakpoints,
-      mapValueToProperty,
-      styles: {
-        alignSelf,
-        flexBasis: width || 'auto',
-        flexGrow: grow,
-        flexShrink: shrink
-      },
-      theme
-    })
-  })
-};
+const styles = ({ alignSelf, breakpoints, grow, shrink, theme, width }) =>
+  getResponsiveStyles({
+    breakpoints,
+    mapValueToProperty,
+    styles: {
+      alignSelf,
+      flexBasis: width || 'auto',
+      flexGrow: grow,
+      flexShrink: shrink
+    },
+    theme
+  });
 
-const Root = createStyledComponent(Box, styles.root, {
-  displayName: 'FlexItem',
-  filterProps: ['inline', 'width']
-});
+// FlexItem's root node must be created outside of render, so that the entire
+// DOM element is replaced only when the flex prop is changed, otherwise it is
+// updated in place
+function createRootNode(props: Props) {
+  const component = props.flex ? Flex : Box;
+
+  return createStyledComponent(component, styles, {
+    displayName: 'FlexItem',
+    filterProps: ['inline', 'width']
+  });
+}
 
 /**
  * FlexItem is used within [Flex](/components/flex) to lay out other components in
  * your app.
  */
-const FlexItem = (props: Props) => <Root {...props} />;
+export default class FlexItem extends Component<Props> {
+  static defaultProps = {
+    grow: 0,
+    shrink: 1
+  };
 
-FlexItem.defaultProps = {
-  grow: 0,
-  shrink: 1
-};
+  componentWillUpdate(nextProps: Props) {
+    if (this.props.flex !== nextProps.flex) {
+      this.rootNode = createRootNode(nextProps);
+    }
+  }
 
-export default FlexItem;
+  rootNode: React$ComponentType<*> = createRootNode(this.props);
+
+  render() {
+    const Root = this.rootNode;
+    return <Root {...this.props} />;
+  }
+}
