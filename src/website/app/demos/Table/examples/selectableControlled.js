@@ -7,7 +7,7 @@ import data from '../shared/data';
 
 export default {
   id: 'selectable-controlled',
-  title: 'Selectable Rows - Controlled',
+  title: 'Selectable Rows — Controlled',
   description: `Table controls its own selected rows state by default. It can
 optionally be managed by the application as a controlled component via the
 control prop, \`selectedRows\`.`,

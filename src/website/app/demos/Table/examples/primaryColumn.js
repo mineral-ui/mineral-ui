@@ -8,7 +8,7 @@ export default {
 (typically the first in the \`columns\` array) with the \`primary\` column
 definition property. This will render cells in that column as
 \`<th scope="row">\`, which can provide helpful context to users of some
-Assistive Technology (AT).`,
+assistive technologies.`,
   scope: { Table },
   source: `
     () => {

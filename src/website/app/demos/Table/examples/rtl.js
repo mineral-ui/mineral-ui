@@ -10,8 +10,8 @@ export default {
   title: 'Bidirectionality',
   description: `Table reverses its alignment when the \`direction\` theme
 variable is set to \`rtl\` (right-to-left). You can use the \`messages\` prop,
-as in the example below, to set the various messages used by Assistive
-Technology (AT) within the component.`,
+as in the example below, to set the various messages announced by assistive
+technologies within the component.`,
   scope: { Table, ThemeProvider, columnContent, direction },
   source: `
     () => {

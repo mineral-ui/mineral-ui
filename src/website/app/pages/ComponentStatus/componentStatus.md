@@ -42,6 +42,7 @@ Statuses:
 | [TextInput](/components/text-input)           | [available]      |
 | [ThemeProvider](/components/theme-provider)   | [available]      |
 | [Tooltip](/components/tooltip)                | [available]      |
+| Pagination                                    | [available]      |
 | Dialog                                        | [in development] |
 | Alert                                         |                  |
 | Badge                                         |                  |
@@ -63,7 +64,6 @@ Statuses:
 | Notification                                  |                  |
 | NumberInput                                   |                  |
 | PageTemplate                                  |                  |
-| Pagination                                    |                  |
 | Progress                                      |                  |
 | Scrollable                                    |                  |
 | Search                                        |                  |
