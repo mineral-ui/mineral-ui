@@ -2,10 +2,8 @@
 import React, { Component } from 'react';
 import deepEqual from 'react-fast-compare';
 import Selectable from './Selectable';
-import Sortable from './Sortable';
+import Sortable, { type Comparators } from './Sortable';
 import TableBase from './TableBase';
-
-import type { Comparators } from './Sortable';
 
 type Props = {
   /** Column definitions ([see Column type for details](#Column-type)) */

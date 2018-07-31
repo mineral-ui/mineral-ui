@@ -39,7 +39,7 @@ const normalizedValue = (value) =>
     ? ''
     : typeof value === 'string' ? value.toUpperCase() : value;
 
-const defaultSortComparator: SortComparator = (a, b, key) => {
+export const defaultSortComparator: SortComparator = (a, b, key) => {
   const valueA = normalizedValue(a[key]);
   const valueB = normalizedValue(b[key]);
 
