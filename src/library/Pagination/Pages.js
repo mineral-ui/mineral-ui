@@ -1,10 +1,10 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { IconChevronRight } from 'mineral-ui-icons';
-import { IconChevronLeft } from 'mineral-ui-icons';
 import { createStyledComponent } from '../styles';
 import { createThemedComponent } from '../themes';
 import Button from '../Button';
+import IconChevronLeft from '../Icon/IconChevronLeft';
+import IconChevronRight from '../Icon/IconChevronRight';
 import { FlexItem } from '../Flex';
 import { componentTheme } from './Pagination';
 

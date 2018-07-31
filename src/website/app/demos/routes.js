@@ -188,6 +188,11 @@ export default [
     }
   ],
   {
+    description: 'TODO',
+    slug: 'pagination',
+    title: 'Pagination'
+  },
+  {
     description:
       'Popovers display supporting content when your user interacts with an associated trigger. Use Popovers to implement other custom behaviors or widgets.',
     slug: 'popover',

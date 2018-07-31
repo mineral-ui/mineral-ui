@@ -7,6 +7,7 @@ import density from './density';
 import highContrast from './highContrast';
 import importSyntax from './importSyntax';
 import largeDataSets from './largeDataSets';
+import pagination from './pagination';
 import primaryColumn from './primaryColumn';
 import rtl from './rtl';
 import scrollable from './scrollable';
@@ -15,16 +16,21 @@ import selectableControlled from './selectableControlled';
 import sortable from './sortable';
 import sortableControlled from './sortableControlled';
 import striped from './striped';
+import selectablePaginated from './selectablePaginated';
+import sortablePaginated from './sortablePaginated';
 import title from './title';
 
 export default [
   importSyntax,
   basic,
   columnDef,
+  pagination,
   sortable,
   sortableControlled,
+  sortablePaginated,
   selectable,
   selectableControlled,
+  selectablePaginated,
   title,
   primaryColumn,
   columnAlign,

@@ -7,7 +7,7 @@ import data from '../shared/data';
 
 export default {
   id: 'sortable-controlled',
-  title: 'Sortable Columns - Controlled',
+  title: 'Sortable Columns — Controlled',
   description: `Table controls its own sort state by default. It can optionally
 be managed by the application as a controlled component via the control prop,
 \`sort\`.`,

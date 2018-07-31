@@ -15,6 +15,7 @@ import grid from './Grid';
 import link from './Link';
 import menu from './Menu';
 import popover from './Popover';
+import pagination from './Pagination';
 import radio from './Radio';
 import select from './Select';
 import startEnd from './StartEnd';
@@ -40,6 +41,7 @@ const demos = flatten([
   link,
   menu,
   popover,
+  pagination,
   radio,
   select,
   startEnd,

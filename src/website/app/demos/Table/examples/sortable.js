@@ -6,7 +6,7 @@ export default {
   id: 'sortable',
   title: 'Sortable Columns',
   description: `Users can sort the rows in Table by column, enabled via the
-\`sortable\` prop. If the default sorting function, below, is insufficient for
+\`sortable\` prop. If the default sort comparator, below, is insufficient for
 your needs, you can supply your own with the \`sortComparator\` prop. You can
 set the initially sorted column & direction with the \`defaultSort\` prop. An
 \`onSort\` callback is also available. Note that the \`sortable\` &
@@ -26,6 +26,12 @@ const defaultSortComparator: SortComparator = (a, b, key) => {
 
   return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
 };
+\`\`\`
+
+This is available as a named export from the component (\`defaultSortComparator\`):
+
+\`\`\`
+import Table, { defaultSortComparator } from 'mineral-ui/Table';
 \`\`\`
 
 In the example below, sorting is enabled for all columns except Protein, and the
