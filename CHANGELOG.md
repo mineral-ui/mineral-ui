@@ -1,3 +1,15 @@
+<a name="0.40.0"></a>
+# [0.40.0](https://github.com/mineral-ui/mineral-ui/compare/v0.39.0...v0.40.0) (2018-08-03)
+
+
+### Features
+
+* **pagination:** New component ([5837cbb](https://github.com/mineral-ui/mineral-ui/commit/5837cbb))
+* **table:** Export defaultSortComparator ([4be37b9](https://github.com/mineral-ui/mineral-ui/commit/4be37b9))
+* **text-input:** Add support for size html attribute with htmlSize prop ([3da3596](https://github.com/mineral-ui/mineral-ui/commit/3da3596))
+
+
+
 <a name="0.39.0"></a>
 # [0.39.0](https://github.com/mineral-ui/mineral-ui/compare/v0.38.0...v0.39.0) (2018-07-25)
 
