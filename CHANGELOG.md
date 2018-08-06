@@ -1,3 +1,21 @@
+<a name="0.41.0"></a>
+# [0.41.0](https://github.com/mineral-ui/mineral-ui/compare/v0.40.0...v0.41.0) (2018-08-06)
+
+
+### Bug Fixes
+
+* **flex:** Gutter margins respect rtl & responsive props; FlexItem can flex ([4794144](https://github.com/mineral-ui/mineral-ui/commit/4794144))
+* **pagination:** Fix IE11 layout issue ([5657281](https://github.com/mineral-ui/mineral-ui/commit/5657281))
+
+
+### BREAKING CHANGES
+
+* **flex:** Flex will now better respect its surrounding layout due
+to removing the negative left & right margins, but the change may
+require further layout adjustment in some cases.
+
+
+
 <a name="0.40.0"></a>
 # [0.40.0](https://github.com/mineral-ui/mineral-ui/compare/v0.39.0...v0.40.0) (2018-08-03)
 
