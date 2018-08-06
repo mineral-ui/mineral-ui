@@ -32,17 +32,17 @@ Statuses:
 | [Icon](/components/icon)                      | [available]      |
 | [Link](/components/link)                      | [available]      |
 | [Menu](/components/menu)                      | [available]      |
+| [Pagination](/components/pagination) ~ new    | [available]      |
 | [Popover](/components/popover)                | [available]      |
 | [Radio](/components/radio)                    | [available]      |
 | [Select](/components/select)                  | [available]      |
 | [StartEnd](/components/start-end)             | [available]      |
-| [Table](/components/table) ~ new              | [available]      |
+| [Table](/components/table)                    | [available]      |
 | [TextArea](/components/text-area)             | [available]      |
 | [Text](/components/text)                      | [available]      |
 | [TextInput](/components/text-input)           | [available]      |
 | [ThemeProvider](/components/theme-provider)   | [available]      |
 | [Tooltip](/components/tooltip)                | [available]      |
-| Pagination                                    | [available]      |
 | Dialog                                        | [in development] |
 | Alert                                         |                  |
 | Badge                                         |                  |
