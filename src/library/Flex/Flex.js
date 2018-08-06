@@ -231,7 +231,7 @@ const ThemedRoot = withTheme(
 
     let flexItems;
     flexItems = Children.map(children, (child, index) => {
-      if (child.props) {
+      if (child && child.props) {
         const { breakpoints: propBreakpoints, ...restChildProps } = child.props;
         let props = {
           breakpoints: propBreakpoints || breakpoints
