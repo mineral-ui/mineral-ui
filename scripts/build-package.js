@@ -89,9 +89,10 @@ exec('mv -f _package.json package.json');
 // Update version in package.json, commit and tag
 exec(`npm version ${nextVersion} --no-git-tag-version`);
 if (!skipGit) {
+  const message = `chore(release): ${nextVersion}`;
   exec(`git add package.json`);
-  exec(`git commit -m "chore(release): ${nextVersion}"`);
-  exec(`git tag -f v${nextVersion}`);
+  exec(`git commit -m "${message}"`);
+  exec(`git tag -a -f v${nextVersion} -m "${message}"`);
 }
 
 // Copy additional files to dist to be included in the npm package

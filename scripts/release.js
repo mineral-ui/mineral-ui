@@ -84,7 +84,7 @@ inquirer
         console.log('Skipped push to GitHub...');
       } else {
         console.log('Pushing to GitHub...');
-        exec('git push -f --follow-tags');
+        exec('git push --follow-tags');
       }
     } else {
       console.log('Release aborted.');
