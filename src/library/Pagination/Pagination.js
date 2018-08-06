@@ -2,10 +2,10 @@
 import React, { PureComponent } from 'react';
 import { createStyledComponent } from '../styles';
 import { withTheme } from '../themes';
-import Flex from '../Flex';
+import Flex, { FlexItem } from '../Flex';
 import Pages from './Pages';
 import PageJumper from './PageJumper';
-import _PageSizer from './PageSizer';
+import PageSizer from './PageSizer';
 
 type Props = {
   /** The currently displayed page */
@@ -94,24 +94,15 @@ const styles = {
         marginBottom: theme.Pagination_gutterWidth
       }
     };
-  },
-  pageSizer: ({ theme }) => {
-    const rtl = theme.direction === 'rtl';
-    const middleMargin = rtl ? 'marginLeft' : 'marginRight';
-    return {
-      [middleMargin]: 'auto'
-    };
   }
 };
 
 const Root = createStyledComponent(Flex, styles.root, {
   includeStyleReset: true,
   withProps: {
-    element: 'nav',
-    justifyContent: 'end'
+    element: 'nav'
   }
 });
-const PageSizer = createStyledComponent(_PageSizer, styles.pageSizer);
 
 /**
  * Pagination offers a means to control the space consumed by a large data set
@@ -186,10 +177,11 @@ class Pagination extends PureComponent<Props> {
       ...restProps
     };
 
-    const content = [<Pages key="Pages" {...pagesProps} />];
+    const showPageSizerOrJumper = showPageSizer || showPageJumper;
 
+    let pageJumperProps;
     if (showPageJumper) {
-      const pageJumperProps = {
+      pageJumperProps = {
         currentPage,
         inputRef: this.setPageJumperRef,
         key: 'Page Jumper',
@@ -199,11 +191,11 @@ class Pagination extends PureComponent<Props> {
         totalPages,
         width: theme.PaginationPageJumper_width
       };
-      content.unshift(<PageJumper {...pageJumperProps} />);
     }
 
+    let pageSizerProps;
     if (showPageSizer) {
-      const pageSizerProps = {
+      pageSizerProps = {
         currentPage,
         key: 'Page Sizer',
         messages: { category: messages.category, ...messages.pageSizer },
@@ -215,10 +207,29 @@ class Pagination extends PureComponent<Props> {
         totalCount,
         totalPages
       };
-      content.unshift(<PageSizer {...pageSizerProps} />);
     }
 
-    return <Root {...rootProps}>{content}</Root>;
+    return (
+      <Root justifyContent="end" {...rootProps}>
+        {showPageSizerOrJumper && (
+          <FlexItem flex grow={1}>
+            {showPageSizer && (
+              <FlexItem>
+                <PageSizer {...pageSizerProps} />
+              </FlexItem>
+            )}
+            {showPageJumper && (
+              <FlexItem marginStart="auto">
+                <PageJumper {...pageJumperProps} />
+              </FlexItem>
+            )}
+          </FlexItem>
+        )}
+        <FlexItem>
+          <Pages {...pagesProps} />
+        </FlexItem>
+      </Root>
+    );
   }
 
   setPageJumperRef = (node: ?HTMLInputElement) => {
