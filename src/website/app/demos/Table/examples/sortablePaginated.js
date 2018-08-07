@@ -38,7 +38,6 @@ active sort, current page, and page size. Note that the
         }
 
         handleSort(sort) {
-          console.log('pre-sort', data)
           const sortedData = data.slice(0).sort((a,b) => {
             const asc = defaultSortComparator(a,b,sort.key);
             const desc = asc * -1;
@@ -51,7 +50,6 @@ active sort, current page, and page size. Note that the
         }
 
         handlePageChange(currentPage) {
-          console.log('post-sort', this.state.data)
           this.setState({ currentPage })
         }
 
