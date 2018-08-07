@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link demo examples Snapshots: basic 1`] = `
-.emotion-8 {
-  font-family: "Open Sans";
-}
-
-.emotion-1 {
-  font-size: 1.5em;
-}
-
 .emotion-0 {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -29,6 +21,14 @@ exports[`Link demo examples Snapshots: basic 1`] = `
 
 .emotion-0:active {
   color: #1d5bbf;
+}
+
+.emotion-8 {
+  font-family: "Open Sans";
+}
+
+.emotion-1 {
+  font-size: 1.5em;
 }
 
 .emotion-3 {
@@ -371,10 +371,6 @@ exports[`Link demo examples Snapshots: children 1`] = `
 `;
 
 exports[`Link demo examples Snapshots: other 1`] = `
-.emotion-2 {
-  font-family: "Open Sans";
-}
-
 .emotion-0 {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -395,6 +391,10 @@ exports[`Link demo examples Snapshots: other 1`] = `
 
 .emotion-0:active {
   color: #1d5bbf;
+}
+
+.emotion-2 {
+  font-family: "Open Sans";
 }
 
 <Styled(div)>

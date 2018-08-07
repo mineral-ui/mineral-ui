@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox demo examples Snapshots: controlled 1`] = `
-.emotion-15 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -123,6 +119,10 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-15 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <Component>
@@ -587,10 +587,6 @@ exports[`Checkbox demo examples Snapshots: controlled 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: controlled 2`] = `
-.emotion-16 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -709,6 +705,10 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-15 {
@@ -1337,10 +1337,6 @@ exports[`Checkbox demo examples Snapshots: controlled 2`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
-.emotion-33 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -1459,6 +1455,10 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-33 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-16 {
@@ -2571,10 +2571,6 @@ exports[`Checkbox demo examples Snapshots: data-vs-children 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: disabled 1`] = `
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-0 {
   border: 0px;
   -webkit-clip: rect(0 0 0 0);
@@ -2618,6 +2614,10 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
   font-size: 16px;
   height: 1em;
   width: 1em;
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -2988,10 +2988,6 @@ exports[`Checkbox demo examples Snapshots: disabled 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: form-field 1`] = `
-.emotion-30 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-6 {
   box-sizing: border-box;
   color: #333840;
@@ -3110,6 +3106,10 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-30 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-27 {
@@ -3238,13 +3238,13 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
           >
             <div>
               <Styled(div)
-                key="formField-93-textWrapper"
+                key="formField-94-textWrapper"
               >
                 <div
                   className="emotion-1"
                 >
                   <span
-                    id="formField-93-labelText"
+                    id="formField-94-labelText"
                   >
                     What are the primary characteristics of a mineral?
                   </span>
@@ -3258,7 +3258,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                 </div>
               </Styled(div)>
               <CheckboxGroup
-                aria-describedby="formField-93-caption"
+                aria-describedby="formField-94-caption"
                 data={
                   Array [
                     Object {
@@ -3283,19 +3283,19 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                     },
                   ]
                 }
-                key="formField-93-control"
+                key="formField-94-control"
                 name="contact"
                 required={true}
                 rootProps={
                   Object {
-                    "aria-describedby": "formField-93-caption",
-                    "aria-labelledby": "formField-93-labelText",
+                    "aria-describedby": "formField-94-caption",
+                    "aria-labelledby": "formField-94-labelText",
                   }
                 }
                 variant="success"
               >
                 <WithTheme(Themed(ChoiceGroup))
-                  aria-describedby="formField-93-caption"
+                  aria-describedby="formField-94-caption"
                   data={
                     Array [
                       Object {
@@ -3325,15 +3325,15 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                   required={true}
                   rootProps={
                     Object {
-                      "aria-describedby": "formField-93-caption",
-                      "aria-labelledby": "formField-93-labelText",
+                      "aria-describedby": "formField-94-caption",
+                      "aria-labelledby": "formField-94-labelText",
                     }
                   }
                   type="checkbox"
                   variant="success"
                 >
                   <Themed(ChoiceGroup)
-                    aria-describedby="formField-93-caption"
+                    aria-describedby="formField-94-caption"
                     data={
                       Array [
                         Object {
@@ -3363,8 +3363,8 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                     required={true}
                     rootProps={
                       Object {
-                        "aria-describedby": "formField-93-caption",
-                        "aria-labelledby": "formField-93-labelText",
+                        "aria-describedby": "formField-94-caption",
+                        "aria-labelledby": "formField-94-labelText",
                       }
                     }
                     type="checkbox"
@@ -3373,7 +3373,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                     <ThemeProvider>
                       <ThemeProvider>
                         <ChoiceGroup
-                          aria-describedby="formField-93-caption"
+                          aria-describedby="formField-94-caption"
                           data={
                             Array [
                               Object {
@@ -3404,8 +3404,8 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                           role="group"
                           rootProps={
                             Object {
-                              "aria-describedby": "formField-93-caption",
-                              "aria-labelledby": "formField-93-labelText",
+                              "aria-describedby": "formField-94-caption",
+                              "aria-labelledby": "formField-94-labelText",
                             }
                           }
                           size="large"
@@ -3413,19 +3413,19 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                           variant="success"
                         >
                           <ChoiceGroup
-                            aria-describedby="formField-93-caption"
-                            aria-labelledby="formField-93-labelText"
+                            aria-describedby="formField-94-caption"
+                            aria-labelledby="formField-94-labelText"
                             role="group"
                             size="large"
                           >
                             <div
-                              aria-describedby="formField-93-caption"
-                              aria-labelledby="formField-93-labelText"
+                              aria-describedby="formField-94-caption"
+                              aria-labelledby="formField-94-labelText"
                               className="emotion-27"
                               role="group"
                             >
                               <Checkbox
-                                aria-describedby="formField-93-caption"
+                                aria-describedby="formField-94-caption"
                                 key="0"
                                 label="Naturally occurring"
                                 labelPosition="end"
@@ -3435,7 +3435,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-93-caption"
+                                  aria-describedby="formField-94-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Naturally occurring"
@@ -3453,7 +3453,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-93-caption"
+                                    aria-describedby="formField-94-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Naturally occurring"
@@ -3473,7 +3473,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-93-caption"
+                                          aria-describedby="formField-94-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Naturally occurring"
@@ -3498,7 +3498,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-93-caption"
+                                                aria-describedby="formField-94-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 onClick={[Function]}
@@ -3508,7 +3508,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-93-caption"
+                                                  aria-describedby="formField-94-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
@@ -3573,7 +3573,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-93-caption"
+                                aria-describedby="formField-94-caption"
                                 key="1"
                                 label="Inorganic"
                                 labelPosition="end"
@@ -3583,7 +3583,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-93-caption"
+                                  aria-describedby="formField-94-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Inorganic"
@@ -3601,7 +3601,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-93-caption"
+                                    aria-describedby="formField-94-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Inorganic"
@@ -3621,7 +3621,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-93-caption"
+                                          aria-describedby="formField-94-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Inorganic"
@@ -3646,7 +3646,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-93-caption"
+                                                aria-describedby="formField-94-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 onClick={[Function]}
@@ -3656,7 +3656,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-93-caption"
+                                                  aria-describedby="formField-94-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
@@ -3721,7 +3721,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-93-caption"
+                                aria-describedby="formField-94-caption"
                                 key="2"
                                 label="Solid"
                                 labelPosition="end"
@@ -3731,7 +3731,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-93-caption"
+                                  aria-describedby="formField-94-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Solid"
@@ -3749,7 +3749,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-93-caption"
+                                    aria-describedby="formField-94-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Solid"
@@ -3769,7 +3769,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-93-caption"
+                                          aria-describedby="formField-94-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Solid"
@@ -3794,7 +3794,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-93-caption"
+                                                aria-describedby="formField-94-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 onClick={[Function]}
@@ -3804,7 +3804,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-93-caption"
+                                                  aria-describedby="formField-94-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
@@ -3869,7 +3869,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-93-caption"
+                                aria-describedby="formField-94-caption"
                                 key="3"
                                 label="Definite chemical composition"
                                 labelPosition="end"
@@ -3879,7 +3879,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-93-caption"
+                                  aria-describedby="formField-94-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Definite chemical composition"
@@ -3897,7 +3897,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-93-caption"
+                                    aria-describedby="formField-94-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Definite chemical composition"
@@ -3917,7 +3917,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-93-caption"
+                                          aria-describedby="formField-94-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Definite chemical composition"
@@ -3942,7 +3942,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-93-caption"
+                                                aria-describedby="formField-94-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 onClick={[Function]}
@@ -3952,7 +3952,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-93-caption"
+                                                  aria-describedby="formField-94-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
@@ -4017,7 +4017,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 </WithTheme(Themed(Choice))>
                               </Checkbox>
                               <Checkbox
-                                aria-describedby="formField-93-caption"
+                                aria-describedby="formField-94-caption"
                                 key="4"
                                 label="Crystalline structure"
                                 labelPosition="end"
@@ -4027,7 +4027,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                 variant="success"
                               >
                                 <WithTheme(Themed(Choice))
-                                  aria-describedby="formField-93-caption"
+                                  aria-describedby="formField-94-caption"
                                   iconChecked={<IconCheckBoxCheck />}
                                   inputRef={[Function]}
                                   label="Crystalline structure"
@@ -4045,7 +4045,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                   variant="success"
                                 >
                                   <Themed(Choice)
-                                    aria-describedby="formField-93-caption"
+                                    aria-describedby="formField-94-caption"
                                     iconChecked={<IconCheckBoxCheck />}
                                     inputRef={[Function]}
                                     label="Crystalline structure"
@@ -4065,7 +4065,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                     <ThemeProvider>
                                       <ThemeProvider>
                                         <Choice
-                                          aria-describedby="formField-93-caption"
+                                          aria-describedby="formField-94-caption"
                                           iconChecked={<IconCheckBoxCheck />}
                                           inputRef={[Function]}
                                           label="Crystalline structure"
@@ -4090,7 +4090,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                               className="emotion-6"
                                             >
                                               <Styled(input)
-                                                aria-describedby="formField-93-caption"
+                                                aria-describedby="formField-94-caption"
                                                 innerRef={[Function]}
                                                 name="contact"
                                                 onClick={[Function]}
@@ -4100,7 +4100,7 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
                                                 variant="success"
                                               >
                                                 <input
-                                                  aria-describedby="formField-93-caption"
+                                                  aria-describedby="formField-94-caption"
                                                   className="emotion-2"
                                                   name="contact"
                                                   onClick={[Function]}
@@ -4175,13 +4175,13 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
             </div>
             <Styled(div)
               caption="Hint: All of the above"
-              id="formField-93-caption"
+              id="formField-94-caption"
               isGroup={true}
               variant="success"
             >
               <div
                 className="emotion-28"
-                id="formField-93-caption"
+                id="formField-94-caption"
               >
                 Hint: All of the above
               </div>
@@ -4195,10 +4195,6 @@ exports[`Checkbox demo examples Snapshots: form-field 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-0 {
   border: 0px;
   -webkit-clip: rect(0 0 0 0);
@@ -4275,6 +4271,10 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
   font-size: 16px;
   height: 1em;
   width: 1em;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-4 {
@@ -4482,10 +4482,6 @@ exports[`Checkbox demo examples Snapshots: hide-label 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -4604,6 +4600,10 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <Component>
@@ -4767,10 +4767,6 @@ exports[`Checkbox demo examples Snapshots: indeterminate 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: inline 1`] = `
-.emotion-16 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -4889,6 +4885,10 @@ exports[`Checkbox demo examples Snapshots: inline 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-15 {
@@ -5916,10 +5916,6 @@ exports[`Checkbox demo examples Snapshots: input-ref 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: invalid 1`] = `
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -6038,6 +6034,10 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -6344,10 +6344,6 @@ exports[`Checkbox demo examples Snapshots: invalid 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] = `
-.emotion-23 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -6466,6 +6462,10 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-23 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-5 {
@@ -7198,10 +7198,6 @@ exports[`Checkbox demo examples Snapshots: label-position-and-justification 1`] 
 `;
 
 exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
-.emotion-5 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -7320,6 +7316,10 @@ exports[`Checkbox demo examples Snapshots: label-wrapping 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-5 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -9589,10 +9589,6 @@ exports[`Checkbox demo examples Snapshots: next-to-other-inputs 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: required 1`] = `
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -9711,6 +9707,10 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -10021,10 +10021,6 @@ exports[`Checkbox demo examples Snapshots: required 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: rtl 1`] = `
-.emotion-21 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -10143,6 +10139,10 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-21 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-10 {
@@ -10839,10 +10839,6 @@ exports[`Checkbox demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: sizes 1`] = `
-.emotion-20 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -10961,6 +10957,10 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-20 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-3 {
@@ -11567,10 +11567,6 @@ exports[`Checkbox demo examples Snapshots: sizes 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
-.emotion-10 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -11689,6 +11685,10 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-10 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 <DemoForm>
@@ -11983,10 +11983,6 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 1`] = `
 `;
 
 exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
-.emotion-16 > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-4 {
   box-sizing: border-box;
   color: #333840;
@@ -12105,6 +12101,10 @@ exports[`Checkbox demo examples Snapshots: uncontrolled 2`] = `
   font-size: 0.875em;
   margin-left: 1.1428571428571428em;
   margin-right: 0;
+}
+
+.emotion-16 > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-15 {
