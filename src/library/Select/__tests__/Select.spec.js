@@ -105,7 +105,7 @@ describe('Select', () => {
       </Select>,
       getProcessedComponentThemeKeys(componentTheme, {
         excludeKeys: [
-          'Select_color', // FIXME: Override should affect styles
+          'Select_color',
           'Select_color_readOnly',
           'Select_fontSize_small',
           'Select_paddingHorizontal_small',
