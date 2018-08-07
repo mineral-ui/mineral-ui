@@ -2539,7 +2539,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   display: inline-block;
 }
 
-.emotion-2 {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2548,106 +2548,44 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.5em;
-  margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  vertical-align: middle;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  max-height: 23em;
+  overflow-y: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 14em;
+  z-index: 100;
 }
 
-.emotion-2 *,
-.emotion-2 *::before,
-.emotion-2 *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.emotion-2:focus {
-  background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+.emotion-27[data-placement^="top"] {
+  margin-bottom: 5px;
 }
 
-.emotion-2:hover {
-  background-color: #f5f7fa;
-  color: #333840;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+.emotion-27[data-placement^="bottom"] {
+  margin-top: 5px;
 }
 
-.emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+.emotion-27[data-placement^="left"] {
+  margin-right: 5px;
 }
 
-.emotion-2::-moz-focus-inner {
-  border: 0;
+.emotion-27[data-placement^="right"] {
+  margin-left: 5px;
 }
 
-.emotion-2 [role="img"] {
-  box-sizing: content-box;
-  color: #3272d9;
-  display: block;
-}
-
-.emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-2 [role="img"]:only-child {
-  margin: 0;
-}
-
-.emotion-1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-height: 100%;
-  pointer-events: none;
-  width: 100%;
-}
-
-.emotion-0 {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
-}
-
-.emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+.emotion-27[data-x-out-of-boundaries] {
+  visibility: hidden;
 }
 
 .emotion-26 {
@@ -2770,6 +2708,117 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   word-break: break-word;
 }
 
+.emotion-2 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  margin: 0;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-2:focus {
+  background-color: #ebeff5;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  color: #333840;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:hover {
+  background-color: #f5f7fa;
+  color: #333840;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:active {
+  background-color: #dde3ed;
+  color: #333840;
+}
+
+.emotion-2::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-2 [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+}
+
+.emotion-2 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-2 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-2 [role="img"]:only-child {
+  margin: 0;
+}
+
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  pointer-events: none;
+  width: 100%;
+}
+
+.emotion-0 {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.emotion-0:first-child {
+  padding-left: 0.5714285714285714em;
+}
+
+.emotion-0:last-child {
+  padding-right: 0.5714285714285714em;
+}
+
 .emotion-33 {
   height: 400px;
   display: -webkit-box;
@@ -2784,55 +2833,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.emotion-27 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  max-height: 23em;
-  overflow-y: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14em;
-  z-index: 100;
-}
-
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-27[data-placement^="top"] {
-  margin-bottom: 5px;
-}
-
-.emotion-27[data-placement^="bottom"] {
-  margin-top: 5px;
-}
-
-.emotion-27[data-placement^="left"] {
-  margin-right: 5px;
-}
-
-.emotion-27[data-placement^="right"] {
-  margin-left: 5px;
-}
-
-.emotion-27[data-x-out-of-boundaries] {
-  visibility: hidden;
 }
 
 <Styled(div)>
@@ -3002,7 +3002,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                   onBlur={[Function]}
                   placement="bottom-start"
                 >
-                  <DropdownContent
+                  <PopoverContent
                     className="emotion-27"
                     id="dropdown-7-content"
                     onBlur={[Function]}
@@ -3587,7 +3587,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                         </div>
                       </Popper>
                     </RtlPopper>
-                  </DropdownContent>
+                  </PopoverContent>
                 </DropdownContent>
               </DropdownContent>
               <EventListener
@@ -4169,22 +4169,53 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   display: inline-block;
 }
 
-.emotion-1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-height: 100%;
-  pointer-events: none;
-  width: 100%;
+.emotion-27 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  max-height: 23em;
+  overflow-y: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 14em;
+  z-index: 100;
+}
+
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-27[data-placement^="top"] {
+  margin-bottom: 5px;
+}
+
+.emotion-27[data-placement^="bottom"] {
+  margin-top: 5px;
+}
+
+.emotion-27[data-placement^="left"] {
+  margin-right: 5px;
+}
+
+.emotion-27[data-placement^="right"] {
+  margin-left: 5px;
+}
+
+.emotion-27[data-x-out-of-boundaries] {
+  visibility: hidden;
 }
 
 .emotion-26 {
@@ -4255,53 +4286,22 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   word-break: break-word;
 }
 
-.emotion-27 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  max-height: 23em;
-  overflow-y: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14em;
-  z-index: 100;
-}
-
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-27[data-placement^="top"] {
-  margin-bottom: 5px;
-}
-
-.emotion-27[data-placement^="bottom"] {
-  margin-top: 5px;
-}
-
-.emotion-27[data-placement^="left"] {
-  margin-right: 5px;
-}
-
-.emotion-27[data-placement^="right"] {
-  margin-left: 5px;
-}
-
-.emotion-27[data-x-out-of-boundaries] {
-  visibility: hidden;
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  pointer-events: none;
+  width: 100%;
 }
 
 .emotion-33 {
@@ -4625,7 +4625,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
-                      <DropdownContent
+                      <PopoverContent
                         className="emotion-27"
                         id="dropdown-21-content"
                         onBlur={[Function]}
@@ -5210,7 +5210,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                             </div>
                           </Popper>
                         </RtlPopper>
-                      </DropdownContent>
+                      </PopoverContent>
                     </DropdownContent>
                   </DropdownContent>
                   <EventListener
@@ -5264,7 +5264,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
 }
 
-.emotion-2 {
+.emotion-27 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5273,106 +5273,44 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
-  border-color: #c8d1e0;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
   border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.5em;
-  margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  vertical-align: middle;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  max-height: 23em;
+  overflow-y: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 14em;
+  z-index: 100;
 }
 
-.emotion-2 *,
-.emotion-2 *::before,
-.emotion-2 *::after {
+.emotion-27 *,
+.emotion-27 *::before,
+.emotion-27 *::after {
   box-sizing: inherit;
 }
 
-.emotion-2:focus {
-  background-color: #ebeff5;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+.emotion-27[data-placement^="top"] {
+  margin-bottom: 5px;
 }
 
-.emotion-2:hover {
-  background-color: #f5f7fa;
-  color: #333840;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+.emotion-27[data-placement^="bottom"] {
+  margin-top: 5px;
 }
 
-.emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+.emotion-27[data-placement^="left"] {
+  margin-right: 5px;
 }
 
-.emotion-2::-moz-focus-inner {
-  border: 0;
+.emotion-27[data-placement^="right"] {
+  margin-left: 5px;
 }
 
-.emotion-2 [role="img"] {
-  box-sizing: content-box;
-  color: #3272d9;
-  display: block;
-}
-
-.emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-2 [role="img"]:only-child {
-  margin: 0;
-}
-
-.emotion-1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-height: 100%;
-  pointer-events: none;
-  width: 100%;
-}
-
-.emotion-0 {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
-}
-
-.emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
-}
-
-.emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+.emotion-27[data-x-out-of-boundaries] {
+  visibility: hidden;
 }
 
 .emotion-26 {
@@ -5495,7 +5433,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   word-break: break-word;
 }
 
-.emotion-27 {
+.emotion-2 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5504,44 +5442,106 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
+  background-color: #ebeff5;
+  border-color: #c8d1e0;
   border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  max-height: 23em;
-  overflow-y: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14em;
-  z-index: 100;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  margin: 0;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
   box-sizing: inherit;
 }
 
-.emotion-27[data-placement^="top"] {
-  margin-bottom: 5px;
+.emotion-2:focus {
+  background-color: #ebeff5;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  color: #333840;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.emotion-27[data-placement^="bottom"] {
-  margin-top: 5px;
+.emotion-2:hover {
+  background-color: #f5f7fa;
+  color: #333840;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.emotion-27[data-placement^="left"] {
-  margin-right: 5px;
+.emotion-2:active {
+  background-color: #dde3ed;
+  color: #333840;
 }
 
-.emotion-27[data-placement^="right"] {
-  margin-left: 5px;
+.emotion-2::-moz-focus-inner {
+  border: 0;
 }
 
-.emotion-27[data-x-out-of-boundaries] {
-  visibility: hidden;
+.emotion-2 [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+}
+
+.emotion-2 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-2 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-2 [role="img"]:only-child {
+  margin: 0;
+}
+
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  pointer-events: none;
+  width: 100%;
+}
+
+.emotion-0 {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.emotion-0:first-child {
+  padding-left: 0.5714285714285714em;
+}
+
+.emotion-0:last-child {
+  padding-right: 0.5714285714285714em;
 }
 
 .emotion-40 {
@@ -5848,7 +5848,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                             onBlur={[Function]}
                             placement="bottom-start"
                           >
-                            <DropdownContent
+                            <PopoverContent
                               className="emotion-27"
                               id="dropdown-11-content"
                               onBlur={[Function]}
@@ -6433,7 +6433,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                   </div>
                                 </Popper>
                               </RtlPopper>
-                            </DropdownContent>
+                            </PopoverContent>
                           </DropdownContent>
                         </DropdownContent>
                         <EventListener
@@ -6536,6 +6536,126 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
 
 .emotion-3 {
   display: inline-block;
+}
+
+.emotion-26 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.emotion-26 *,
+.emotion-26 *::before,
+.emotion-26 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-25 {
+  margin: 0.5em 0;
+}
+
+.emotion-25:first-child,
+.emotion-25 + .emotion-25 {
+  margin-top: 0;
+}
+
+.emotion-25:last-child {
+  margin-bottom: 0;
+}
+
+.emotion-9 {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-9:focus {
+  background-color: #f5f7fa;
+  outline: 0;
+}
+
+.emotion-9:hover {
+  background-color: #f5f7fa;
+}
+
+.emotion-9:active {
+  background-color: #ebeff5;
+}
+
+.emotion-9[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-9[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-9 [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-9 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-9 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.1875em 0 0.25em;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.emotion-5 {
+  font-size: 0.875em;
+  margin-right: 0.5714285714285714em;
+  word-break: break-word;
+}
+
+.emotion-6 {
+  color: #58606e;
+  font-size: 0.6875em;
+  padding-top: 0.18181818181818182em;
+  word-break: break-word;
 }
 
 .emotion-2 {
@@ -6700,126 +6820,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
 
 .emotion-27[data-x-out-of-boundaries] {
   visibility: hidden;
-}
-
-.emotion-26 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.emotion-26 *,
-.emotion-26 *::before,
-.emotion-26 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-25 {
-  margin: 0.5em 0;
-}
-
-.emotion-25:first-child,
-.emotion-25 + .emotion-25 {
-  margin-top: 0;
-}
-
-.emotion-25:last-child {
-  margin-bottom: 0;
-}
-
-.emotion-9 {
-  color: #333840;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-9:focus {
-  background-color: #f5f7fa;
-  outline: 0;
-}
-
-.emotion-9:hover {
-  background-color: #f5f7fa;
-}
-
-.emotion-9:active {
-  background-color: #ebeff5;
-}
-
-.emotion-9[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-9[aria-selected="true"]:active {
-  background-color: #accbfc;
-}
-
-.emotion-9 [role="img"] {
-  box-sizing: content-box;
-  color: #3272d9;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-9 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-9 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.1875em 0 0.25em;
-  white-space: normal;
-  word-break: break-all;
-}
-
-.emotion-5 {
-  font-size: 0.875em;
-  margin-right: 0.5714285714285714em;
-  word-break: break-word;
-}
-
-.emotion-6 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
 }
 
 <Styled(div)>
@@ -6994,7 +6994,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                   placement="bottom-start"
                   wide={true}
                 >
-                  <DropdownContent
+                  <PopoverContent
                     className="emotion-27"
                     id="dropdown-5-content"
                     onBlur={[Function]}
@@ -7579,7 +7579,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                         </div>
                       </Popper>
                     </RtlPopper>
-                  </DropdownContent>
+                  </PopoverContent>
                 </DropdownContent>
               </DropdownContent>
               <EventListener
@@ -7722,36 +7722,6 @@ exports[`Dropdown render props item renders expected content 1`] = `
   display: inline-block;
 }
 
-.emotion-4 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.emotion-4 *,
-.emotion-4 *::before,
-.emotion-4 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-3 {
-  margin: 0.5em 0;
-}
-
-.emotion-3:first-child,
-.emotion-3 + .emotion-3 {
-  margin-top: 0;
-}
-
-.emotion-3:last-child {
-  margin-bottom: 0;
-}
-
 .emotion-5 {
   box-sizing: border-box;
   color: #333840;
@@ -7799,6 +7769,36 @@ exports[`Dropdown render props item renders expected content 1`] = `
 
 .emotion-5[data-x-out-of-boundaries] {
   visibility: hidden;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.emotion-4 *,
+.emotion-4 *::before,
+.emotion-4 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-3 {
+  margin: 0.5em 0;
+}
+
+.emotion-3:first-child,
+.emotion-3 + .emotion-3 {
+  margin-top: 0;
+}
+
+.emotion-3:last-child {
+  margin-bottom: 0;
 }
 
 .emotion-2 {
@@ -7979,7 +7979,7 @@ exports[`Dropdown render props item renders expected content 1`] = `
               onBlur={[Function]}
               placement="bottom-start"
             >
-              <DropdownContent
+              <PopoverContent
                 className="emotion-5"
                 id="dropdown-35-content"
                 onBlur={[Function]}
@@ -8309,7 +8309,7 @@ exports[`Dropdown render props item renders expected content 1`] = `
                     </div>
                   </Popper>
                 </RtlPopper>
-              </DropdownContent>
+              </PopoverContent>
             </DropdownContent>
           </DropdownContent>
           <EventListener
@@ -8552,7 +8552,7 @@ exports[`Dropdown render props menu renders expected content 1`] = `
               onBlur={[Function]}
               placement="bottom-start"
             >
-              <DropdownContent
+              <PopoverContent
                 className="emotion-2"
                 id="dropdown-33-content"
                 onBlur={[Function]}
@@ -8800,7 +8800,7 @@ exports[`Dropdown render props menu renders expected content 1`] = `
                     </div>
                   </Popper>
                 </RtlPopper>
-              </DropdownContent>
+              </PopoverContent>
             </DropdownContent>
           </DropdownContent>
           <EventListener

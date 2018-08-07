@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
+.emotion-11 {
+  margin: 0.5em 0;
+}
+
+.emotion-11:first-child,
+.emotion-11 + .emotion-11 {
+  margin-top: 0;
+}
+
+.emotion-11:last-child {
+  margin-bottom: 0;
+}
+
 .emotion-25 {
   overflow: hidden;
 }
@@ -27,19 +40,6 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
 .emotion-24 *::before,
 .emotion-24 *::after {
   box-sizing: inherit;
-}
-
-.emotion-11 {
-  margin: 0.5em 0;
-}
-
-.emotion-11:first-child,
-.emotion-11 + .emotion-11 {
-  margin-top: 0;
-}
-
-.emotion-11:last-child {
-  margin-bottom: 0;
 }
 
 .emotion-0 {
