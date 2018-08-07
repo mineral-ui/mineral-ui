@@ -27,11 +27,8 @@ export default class EventListener extends Component<Props> {
     this.addEventListeners();
   }
 
-  componentWillUpdate() {
-    this.removeEventListeners();
-  }
-
-  componentDidUpdate() {
+  componentDidUpdate(prevProps: Props) {
+    this.removeEventListeners(prevProps.listeners);
     this.addEventListeners();
   }
 
@@ -49,25 +46,21 @@ export default class EventListener extends Component<Props> {
     }
   }
 
-  addEventListeners() {
+  addEventListeners(listeners: Listeners = this.props.listeners) {
     if (canUseEventListeners) {
-      this.props.listeners.forEach(
-        ({ target, event, handler, options }: Listener) => {
-          const node = this.getTargetNode(target);
-          node && node.addEventListener(event, handler, options);
-        }
-      );
+      listeners.forEach(({ target, event, handler, options }: Listener) => {
+        const node = this.getTargetNode(target);
+        node && node.addEventListener(event, handler, options);
+      });
     }
   }
 
-  removeEventListeners() {
+  removeEventListeners(listeners: Listeners = this.props.listeners) {
     if (canUseEventListeners) {
-      this.props.listeners.forEach(
-        ({ target, event, handler, options }: Listener) => {
-          const node = this.getTargetNode(target);
-          node && node.removeEventListener(event, handler, options);
-        }
-      );
+      listeners.forEach(({ target, event, handler, options }: Listener) => {
+        const node = this.getTargetNode(target);
+        node && node.removeEventListener(event, handler, options);
+      });
     }
   }
 }

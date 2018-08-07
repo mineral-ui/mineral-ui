@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
 import deepEqual from 'react-fast-compare';
+import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
@@ -214,23 +215,30 @@ export default class Select extends Component<Props, State> {
 
   itemMatcher: any;
 
-  items: Items = getItems(this.props.data);
+  items: Items;
+
+  getItems = memoizeOne(getItems, deepEqual);
 
   selectTrigger: ?React$Component<*, *>;
 
-  componentWillReceiveProps(nextProps: Props) {
-    if (!deepEqual(this.props.data, nextProps.data)) {
-      this.items = getItems(nextProps.data);
-    }
-  }
-
   render() {
-    const { disabled, modifiers, readOnly, trigger, ...restProps } = this.props;
+    const {
+      data,
+      disabled,
+      modifiers,
+      readOnly,
+      trigger,
+      ...restProps
+    } = this.props;
+
     const isOpen = this.getControllableValue('isOpen');
+
+    this.items = this.getItems(data);
 
     const rootProps = {
       ...restProps,
       id: this.id,
+      data,
       disabled: disabled || readOnly,
       highlightedIndex: this.getHighlightedOrSelectedIndex(),
       isOpen,

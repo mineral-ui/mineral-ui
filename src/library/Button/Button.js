@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component, cloneElement } from 'react';
+import memoizeOne from 'memoize-one';
 import { ellipsis } from 'polished';
 import { createStyledComponent, pxToEm, getNormalizedValue } from '../styles';
 
@@ -297,10 +298,7 @@ function filterProps({ element, type }: Props) {
   return invalidComponentProps.concat(invalidLinkProps);
 }
 
-// Button's root node must be created outside of render, so that the entire DOM
-// element is replaced only when the element prop is changed, otherwise it is
-// updated in place
-function createRootNode(props: Props) {
+const createRootNode = (props: Props) => {
   const { element = Button.defaultProps.element } = props;
 
   return createStyledComponent(element, styles.button, {
@@ -309,7 +307,7 @@ function createRootNode(props: Props) {
     includeStyleReset: true,
     rootEl: element
   });
-}
+};
 
 /**
  * The Button component represents a clickable button.
@@ -323,13 +321,12 @@ export default class Button extends Component<Props> {
     type: 'button'
   };
 
-  componentWillUpdate(nextProps: Props) {
-    if (this.props.element !== nextProps.element) {
-      this.rootNode = createRootNode(nextProps);
-    }
-  }
-
-  rootNode: React$ComponentType<*> = createRootNode(this.props);
+  // Must be an instance method to avoid affecting other instances memoized keys
+  getRootNode = memoizeOne(
+    createRootNode,
+    (nextProps: Props, prevProps: Props) =>
+      nextProps.element === prevProps.element
+  );
 
   render() {
     const {
@@ -350,7 +347,7 @@ export default class Button extends Component<Props> {
       ...restProps
     };
 
-    const Root = this.rootNode;
+    const Root = this.getRootNode(this.props);
 
     const startIcon = iconStart
       ? cloneElement(iconStart, { size: iconSize[size], key: 'iconStart' })

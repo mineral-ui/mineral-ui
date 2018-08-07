@@ -57,7 +57,7 @@ const Root = createStyledComponent(
 );
 
 const isGroupedData = (data: Items | ItemGroups) => {
-  return data[0].hasOwnProperty('items');
+  return data.length && data[0].hasOwnProperty('items');
 };
 
 const groupifyData = (data: Items | ItemGroups) => {
