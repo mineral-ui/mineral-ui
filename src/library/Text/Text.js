@@ -177,15 +177,13 @@ const styles = {
   }
 };
 
-// Text's root node must be created outside of render, so that the entire DOM
-// element is replaced only when the element prop is changed, otherwise it is
-// updated in place
-export function createRootNode(props: Props) {
+export const createRootNode = (props: Props) => {
   let { parentElement, element = Text.defaultProps.element, inherit } = props;
   element =
     parentElement === 'p' && element === Text.defaultProps.element
       ? 'span'
       : element;
+
   return createStyledComponent(
     element,
     inherit ? styles.inherit : styles.noInherit,
@@ -194,7 +192,7 @@ export function createRootNode(props: Props) {
       includeStyleReset: !inherit
     }
   );
-}
+};
 
 /**
  * The Text component provides styles and semantic meaning for text and headings

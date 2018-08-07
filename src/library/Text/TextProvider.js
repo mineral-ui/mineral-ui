@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
+import memoizeOne from 'memoize-one';
 import { string } from 'prop-types';
 import { createRootNode } from './Text';
 
@@ -46,16 +47,15 @@ export default class TextProvider extends Component<Props> {
     };
   }
 
-  componentWillUpdate(nextProps: Props) {
-    if (this.props.element !== nextProps.element) {
-      this.rootNode = createRootNode(nextProps);
-    }
-  }
-
-  rootNode: React$ComponentType<*> = createRootNode(this.props);
+  // Must be an instance method to avoid affecting other instances memoized keys
+  getRootNode = memoizeOne(
+    createRootNode,
+    (nextProps: Props, prevProps: Props) =>
+      nextProps.element === prevProps.element
+  );
 
   render() {
-    const Root = this.rootNode;
+    const Root = this.getRootNode(this.props);
     const { parentElement: ignoreParentElement, ...restProps } = this.props;
     const rootProps = {
       ...restProps

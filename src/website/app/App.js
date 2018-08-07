@@ -129,11 +129,13 @@ class App extends Component<Props> {
     const { demoRoutes } = this.props;
 
     return (
-      <ThemeProvider theme={siteTheme}>
-        <div>
-          <Router demoRoutes={demoRoutes} />
-          <BaselineGrid />
-        </div>
+      <ThemeProvider>
+        <ThemeProvider theme={siteTheme}>
+          <div>
+            <Router demoRoutes={demoRoutes} />
+            <BaselineGrid />
+          </div>
+        </ThemeProvider>
       </ThemeProvider>
     );
   }

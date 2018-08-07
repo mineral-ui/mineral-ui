@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component, cloneElement } from 'react';
+import memoizeOne from 'memoize-one';
 import { ellipsis } from 'polished';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import IconDanger from '../Icon/IconDanger';
@@ -332,8 +333,6 @@ function getIcons({
   return [startIcon, endIcon];
 }
 
-// The control node must be created outside of render, so that the entire DOM
-// element is replaced only when the control prop is changed.
 const createControlNode = (props: Props) => {
   return createStyledComponent(props.control, styles.control, {
     displayName: 'Control'
@@ -344,13 +343,12 @@ const createControlNode = (props: Props) => {
  * FauxControl
  */
 export default class FauxControl extends Component<Props> {
-  componentWillUpdate(nextProps: Props) {
-    if (this.props.control !== nextProps.control) {
-      this.controlNode = createControlNode(nextProps);
-    }
-  }
-
-  controlNode: React$ComponentType<*> = createControlNode(this.props);
+  // Must be an instance method to avoid affecting other instances memoized keys
+  getControlNode = memoizeOne(
+    createControlNode,
+    (nextProps: Props, prevProps: Props) =>
+      nextProps.control === prevProps.control
+  );
 
   render() {
     const {
@@ -422,7 +420,7 @@ export default class FauxControl extends Component<Props> {
       variant
     };
 
-    const Control = this.controlNode;
+    const Control = this.getControlNode(this.props);
 
     const underlayProps = { disabled, readOnly, variant };
 

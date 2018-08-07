@@ -1,5 +1,6 @@
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
+import memoizeOne from 'memoize-one';
 import { createStyledComponent } from '../styles';
 
 type Props = {
@@ -23,7 +24,7 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const linkStyles = ({ variant, theme: baseTheme }) => {
+const styles = ({ variant, theme: baseTheme }) => {
   let theme = componentTheme(baseTheme);
 
   if (variant) {
@@ -59,28 +60,35 @@ const linkStyles = ({ variant, theme: baseTheme }) => {
   };
 };
 
+const createRootNode = (props: Props) => {
+  const { element = Link.defaultProps.element } = props;
+
+  return createStyledComponent(element, styles, {
+    displayName: 'Link',
+    filterProps: ['element', 'variant'],
+    rootEl: element
+  });
+};
+
 /**
- * The Link component creates a hyperlink to external pages, files, anchors on the same page, or another URL.
+ * The Link component creates a hyperlink to external pages, files, anchors on
+ * the same page, or another URL.
  */
-const Link = (props: Props) => {
-  const { children, element, ...restProps } = props;
-  const rootProps = {
-    ...restProps
+export default class Link extends Component<Props> {
+  static defaultProps = {
+    element: 'a'
   };
-  const Root = createStyledComponent(
-    element || Link.defaultProps.element,
-    linkStyles,
-    {
-      displayName: 'Link',
-      filterProps: ['variant']
-    }
+
+  // Must be an instance method to avoid affecting other instances memoized keys
+  getRootNode = memoizeOne(
+    createRootNode,
+    (nextProps: Props, prevProps: Props) =>
+      nextProps.element === prevProps.element
   );
 
-  return <Root {...rootProps}>{children}</Root>;
-};
+  render() {
+    const Root = this.getRootNode(this.props);
 
-Link.defaultProps = {
-  element: 'a'
-};
-
-export default Link;
+    return <Root {...this.props} />;
+  }
+}

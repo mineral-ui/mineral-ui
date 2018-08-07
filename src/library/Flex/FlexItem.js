@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
+import memoizeOne from 'memoize-one';
 import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Box from '../Box';
 import Flex from './Flex';
@@ -66,17 +67,14 @@ const styles = ({ alignSelf, breakpoints, grow, shrink, theme, width }) =>
     theme
   });
 
-// FlexItem's root node must be created outside of render, so that the entire
-// DOM element is replaced only when the flex prop is changed, otherwise it is
-// updated in place
-function createRootNode(props: Props) {
+const createRootNode = (props: Props) => {
   const component = props.flex ? Flex : Box;
 
   return createStyledComponent(component, styles, {
     displayName: 'FlexItem',
     filterProps: ['inline', 'width']
   });
-}
+};
 
 /**
  * FlexItem is used within [Flex](/components/flex) to lay out other components in
@@ -88,16 +86,15 @@ export default class FlexItem extends Component<Props> {
     shrink: 1
   };
 
-  componentWillUpdate(nextProps: Props) {
-    if (this.props.flex !== nextProps.flex) {
-      this.rootNode = createRootNode(nextProps);
-    }
-  }
-
-  rootNode: React$ComponentType<*> = createRootNode(this.props);
+  // Must be an instance method to avoid affecting other instances memoized keys
+  getRootNode = memoizeOne(
+    createRootNode,
+    (nextProps: Props, prevProps: Props) => nextProps.flex === prevProps.flex
+  );
 
   render() {
-    const Root = this.rootNode;
+    const Root = this.getRootNode(this.props);
+
     return <Root {...this.props} />;
   }
 }
