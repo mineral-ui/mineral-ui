@@ -95,6 +95,7 @@ const styles = ({
     minWidth: getWidth(minWidth, fontSize),
     position: 'relative',
     width: getWidth(width, fontSize),
+    zIndex: 1,
 
     // Using this "border" to appease Firefox, which extends TableHeaderCell's
     // real border down the entire column after clicking a TableSortableHeaderCell.
@@ -102,13 +103,14 @@ const styles = ({
       [borderProperty]: 0,
 
       '&::before': {
+        [borderProperty]: borderVertical,
         bottom: 0,
         content: '""',
         [positionProperty]: 0,
         position: 'absolute',
         top: 0,
         width: 0,
-        [borderProperty]: borderVertical
+        zIndex: -1
       }
     }
   };
