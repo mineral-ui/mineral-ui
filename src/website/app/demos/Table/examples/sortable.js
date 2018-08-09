@@ -2,6 +2,12 @@
 import Table from '../../../../../library/Table';
 import sharedData from '../shared/data';
 
+export const sortByLength = (a: Object, b: Object, key: string) => {
+  const lengthA = a[key].length;
+  const lengthB = b[key].length;
+  return lengthA < lengthB ? -1 : lengthA > lengthB ? 1 : 0;
+};
+
 export default {
   id: 'sortable',
   title: 'Sortable Columns',
@@ -28,7 +34,7 @@ const defaultSortComparator: SortComparator = (a, b, key) => {
 };
 \`\`\`
 
-This is available as a named export from the component (\`defaultSortComparator\`):
+This is available as a named export from the component:
 
 \`\`\`
 import Table, { defaultSortComparator } from 'mineral-ui/Table';
@@ -40,9 +46,9 @@ Dairy column sorts by length of the string rather than alphabetically.
   scope: { Table, sharedData },
   source: `
     () => {
-      const sortByLength = (a, b, column) => {
-        const lengthA =a[column].length;
-        const lengthB =b[column].length;
+      const sortByLength = (a, b, key) => {
+        const lengthA = a[key].length;
+        const lengthB = b[key].length;
         return lengthA < lengthB ? -1 : lengthA > lengthB ? 1 : 0;
       };
 
@@ -62,7 +68,8 @@ Dairy column sorts by length of the string rather than alphabetically.
           defaultSort={{ key: 'Fruits' }}
           sortable
           title="Foods of the World"
-          hideTitle />
+          hideTitle
+        />
       );
     }`
 };
