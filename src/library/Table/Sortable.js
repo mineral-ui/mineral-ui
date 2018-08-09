@@ -57,11 +57,12 @@ export default class Sortable extends Component<Props, State> {
 
   render() {
     const sort = this.getControllableValue('sort');
+    const isControlled = this.isControlled('sort');
 
     const props = {
       ...this.props,
       sortable: {
-        data: sort ? this.sortData() : this.props.data,
+        data: sort && !isControlled ? this.sortData() : this.props.data,
         sort,
         sortFn: this.sort
       }
