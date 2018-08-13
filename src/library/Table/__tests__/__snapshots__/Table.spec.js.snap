@@ -14448,237 +14448,220 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
                                                             </Button>
                                                           </Button>
                                                         </IncrementButton>
-                                                        <Buttons
-                                                          currentPage={1}
-                                                          handleClick={[Function]}
-                                                          handleIncrement={[Function]}
-                                                          messages={
-                                                            Object {
-                                                              "next": "Next",
-                                                              "pageLabel": [Function],
-                                                              "previous": "Previous",
-                                                            }
-                                                          }
-                                                          onPageChange={[Function]}
+                                                        <Button
+                                                          aria-current={true}
+                                                          aria-label="Current page, 1"
+                                                          element="button"
+                                                          key="1"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={true}
                                                           size="medium"
-                                                          totalPages={5}
-                                                          visibleRange={5}
+                                                          type="button"
                                                         >
                                                           <Button
                                                             aria-current={true}
                                                             aria-label="Current page, 1"
                                                             element="button"
-                                                            key="1"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={true}
                                                             size="medium"
+                                                            text={1}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-current={true}
                                                               aria-label="Current page, 1"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-56"
                                                               onClick={[Function]}
-                                                              primary={true}
-                                                              size="medium"
-                                                              text={1}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-current={true}
-                                                                aria-label="Current page, 1"
-                                                                className="emotion-56"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-52"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-52"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-51"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-51"
-                                                                      >
-                                                                        1
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      1
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="2"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="2"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={2}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-59"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={2}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-59"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-52"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-52"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-51"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-51"
-                                                                      >
-                                                                        2
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      2
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="3"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="3"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={3}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-59"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={3}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-59"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-52"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-52"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-51"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-51"
-                                                                      >
-                                                                        3
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      3
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="4"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="4"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={4}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-59"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={4}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-59"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-52"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-52"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-51"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-51"
-                                                                      >
-                                                                        4
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      4
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          aria-label="Last page, 5"
+                                                          element="button"
+                                                          key="5"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             aria-label="Last page, 5"
                                                             element="button"
-                                                            key="5"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={5}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-label="Last page, 5"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-59"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={5}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-label="Last page, 5"
-                                                                className="emotion-59"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-52"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-52"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-51"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-51"
-                                                                      >
-                                                                        5
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      5
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
-                                                        </Buttons>
+                                                        </Button>
                                                         <IncrementButton
                                                           currentPage={1}
                                                           direction="next"
@@ -32220,237 +32203,220 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
                                                             </Button>
                                                           </Button>
                                                         </IncrementButton>
-                                                        <Buttons
-                                                          currentPage={1}
-                                                          handleClick={[Function]}
-                                                          handleIncrement={[Function]}
-                                                          messages={
-                                                            Object {
-                                                              "next": "Next",
-                                                              "pageLabel": [Function],
-                                                              "previous": "Previous",
-                                                            }
-                                                          }
-                                                          onPageChange={[Function]}
+                                                        <Button
+                                                          aria-current={true}
+                                                          aria-label="Current page, 1"
+                                                          element="button"
+                                                          key="1"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={true}
                                                           size="medium"
-                                                          totalPages={5}
-                                                          visibleRange={5}
+                                                          type="button"
                                                         >
                                                           <Button
                                                             aria-current={true}
                                                             aria-label="Current page, 1"
                                                             element="button"
-                                                            key="1"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={true}
                                                             size="medium"
+                                                            text={1}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-current={true}
                                                               aria-label="Current page, 1"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-92"
                                                               onClick={[Function]}
-                                                              primary={true}
-                                                              size="medium"
-                                                              text={1}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-current={true}
-                                                                aria-label="Current page, 1"
-                                                                className="emotion-92"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-88"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-88"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-87"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-87"
-                                                                      >
-                                                                        1
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      1
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="2"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="2"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={2}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-95"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={2}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-95"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-88"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-88"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-87"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-87"
-                                                                      >
-                                                                        2
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      2
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="3"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="3"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={3}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-95"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={3}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-95"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-88"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-88"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-87"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-87"
-                                                                      >
-                                                                        3
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      3
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="4"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="4"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={4}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-95"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={4}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-95"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-88"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-88"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-87"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-87"
-                                                                      >
-                                                                        4
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      4
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          aria-label="Last page, 5"
+                                                          element="button"
+                                                          key="5"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             aria-label="Last page, 5"
                                                             element="button"
-                                                            key="5"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={5}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-label="Last page, 5"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-95"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={5}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-label="Last page, 5"
-                                                                className="emotion-95"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-88"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-88"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-87"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-87"
-                                                                      >
-                                                                        5
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      5
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
-                                                        </Buttons>
+                                                        </Button>
                                                         <IncrementButton
                                                           currentPage={1}
                                                           direction="next"
@@ -43604,237 +43570,220 @@ button:focus > .emotion-4 {
                                                             </Button>
                                                           </Button>
                                                         </IncrementButton>
-                                                        <Buttons
-                                                          currentPage={1}
-                                                          handleClick={[Function]}
-                                                          handleIncrement={[Function]}
-                                                          messages={
-                                                            Object {
-                                                              "next": "Next",
-                                                              "pageLabel": [Function],
-                                                              "previous": "Previous",
-                                                            }
-                                                          }
-                                                          onPageChange={[Function]}
+                                                        <Button
+                                                          aria-current={true}
+                                                          aria-label="Current page, 1"
+                                                          element="button"
+                                                          key="1"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={true}
                                                           size="medium"
-                                                          totalPages={5}
-                                                          visibleRange={5}
+                                                          type="button"
                                                         >
                                                           <Button
                                                             aria-current={true}
                                                             aria-label="Current page, 1"
                                                             element="button"
-                                                            key="1"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={true}
                                                             size="medium"
+                                                            text={1}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-current={true}
                                                               aria-label="Current page, 1"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-126"
                                                               onClick={[Function]}
-                                                              primary={true}
-                                                              size="medium"
-                                                              text={1}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-current={true}
-                                                                aria-label="Current page, 1"
-                                                                className="emotion-126"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-122"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-122"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-121"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-121"
-                                                                      >
-                                                                        1
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      1
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="2"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="2"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={2}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-129"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={2}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-129"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-122"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-122"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-121"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-121"
-                                                                      >
-                                                                        2
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      2
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="3"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="3"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={3}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-129"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={3}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-129"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-122"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-122"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-121"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-121"
-                                                                      >
-                                                                        3
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      3
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          element="button"
+                                                          key="4"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             element="button"
-                                                            key="4"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={4}
                                                             type="button"
                                                           >
-                                                            <Button
-                                                              element="button"
-                                                              minimal={true}
+                                                            <button
+                                                              className="emotion-129"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={4}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                className="emotion-129"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-122"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-122"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-121"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-121"
-                                                                      >
-                                                                        4
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      4
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
+                                                        </Button>
+                                                        <Button
+                                                          aria-label="Last page, 5"
+                                                          element="button"
+                                                          key="5"
+                                                          minimal={true}
+                                                          onClick={[Function]}
+                                                          primary={false}
+                                                          size="medium"
+                                                          type="button"
+                                                        >
                                                           <Button
                                                             aria-label="Last page, 5"
                                                             element="button"
-                                                            key="5"
                                                             minimal={true}
                                                             onClick={[Function]}
                                                             primary={false}
                                                             size="medium"
+                                                            text={5}
                                                             type="button"
                                                           >
-                                                            <Button
+                                                            <button
                                                               aria-label="Last page, 5"
-                                                              element="button"
-                                                              minimal={true}
+                                                              className="emotion-129"
                                                               onClick={[Function]}
-                                                              primary={false}
-                                                              size="medium"
-                                                              text={5}
                                                               type="button"
                                                             >
-                                                              <button
-                                                                aria-label="Last page, 5"
-                                                                className="emotion-129"
-                                                                onClick={[Function]}
-                                                                type="button"
-                                                              >
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-122"
+                                                              <Styled(span)>
+                                                                <span
+                                                                  className="emotion-122"
+                                                                >
+                                                                  <Styled(span)
+                                                                    size="medium"
                                                                   >
-                                                                    <Styled(span)
-                                                                      size="medium"
+                                                                    <span
+                                                                      className="emotion-121"
                                                                     >
-                                                                      <span
-                                                                        className="emotion-121"
-                                                                      >
-                                                                        5
-                                                                      </span>
-                                                                    </Styled(span)>
-                                                                  </span>
-                                                                </Styled(span)>
-                                                              </button>
-                                                            </Button>
+                                                                      5
+                                                                    </span>
+                                                                  </Styled(span)>
+                                                                </span>
+                                                              </Styled(span)>
+                                                            </button>
                                                           </Button>
-                                                        </Buttons>
+                                                        </Button>
                                                         <IncrementButton
                                                           currentPage={1}
                                                           direction="next"
