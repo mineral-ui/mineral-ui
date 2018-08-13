@@ -89,7 +89,9 @@ const findPageSizer = (pagination) => {
 };
 
 describe('Pagination', () => {
-  testDemoExamples(examples);
+  testDemoExamples(examples, {
+    contextPolyfill: true
+  });
 
   it('renders', () => {
     const [, pagination] = mountPagination();
