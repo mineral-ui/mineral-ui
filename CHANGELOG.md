@@ -1,3 +1,23 @@
+<a name="0.42.0"></a>
+# [0.42.0](https://github.com/mineral-ui/mineral-ui/compare/v0.41.0...v0.42.0) (2018-08-13)
+
+
+### Bug Fixes
+
+* **pagination:** Renders in all supported React versions ([ccf03e5](https://github.com/mineral-ui/mineral-ui/commit/ccf03e5))
+
+
+### Code Refactoring
+
+* **table:** Improve sortable tables ([61e7e70](https://github.com/mineral-ui/mineral-ui/commit/61e7e70))
+
+
+### BREAKING CHANGES
+
+* **table:** Tables with a controlled `sort` will now need to sort their own data and pass that sorted data to the Table
+
+
+
 <a name="0.41.0"></a>
 # [0.41.0](https://github.com/mineral-ui/mineral-ui/compare/v0.40.0...v0.41.0) (2018-08-06)
 
