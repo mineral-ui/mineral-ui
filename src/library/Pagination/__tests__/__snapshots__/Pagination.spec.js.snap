@@ -18207,6 +18207,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
 .emotion-3 {
   font-weight: 700;
   position: relative;
+  z-index: 1;
 }
 
 .emotion-3:not(:first-child) {
@@ -18214,13 +18215,14 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
 }
 
 .emotion-3:not(:first-child)::before {
+  border-left: 1px dotted #c8d1e0;
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   top: 0;
   width: 0;
-  border-left: 1px dotted #c8d1e0;
+  z-index: -1;
 }
 
 .emotion-2 {
@@ -18231,6 +18233,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
   vertical-align: bottom;
   font-weight: 700;
   position: relative;
+  z-index: 1;
 }
 
 .emotion-2:not(:first-child) {
@@ -18242,13 +18245,14 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
 }
 
 .emotion-2:not(:first-child)::before {
+  border-left: 1px dotted #c8d1e0;
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   top: 0;
   width: 0;
-  border-left: 1px dotted #c8d1e0;
+  z-index: -1;
 }
 
 .emotion-29 {
@@ -24160,6 +24164,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 .emotion-3 {
   font-weight: 700;
   position: relative;
+  z-index: 1;
 }
 
 .emotion-3:not(:first-child) {
@@ -24167,13 +24172,14 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-3:not(:first-child)::before {
+  border-right: 1px dotted #c8d1e0;
   bottom: 0;
   content: "";
   right: 0;
   position: absolute;
   top: 0;
   width: 0;
-  border-right: 1px dotted #c8d1e0;
+  z-index: -1;
 }
 
 .emotion-2 {
@@ -24184,6 +24190,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
   vertical-align: bottom;
   font-weight: 700;
   position: relative;
+  z-index: 1;
 }
 
 .emotion-2:not(:first-child) {
@@ -24195,13 +24202,14 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-2:not(:first-child)::before {
+  border-right: 1px dotted #c8d1e0;
   bottom: 0;
   content: "";
   right: 0;
   position: absolute;
   top: 0;
   width: 0;
-  border-right: 1px dotted #c8d1e0;
+  z-index: -1;
 }
 
 .emotion-29 {
