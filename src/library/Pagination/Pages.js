@@ -52,7 +52,7 @@ const EllipsisButton = createThemedComponent(Button, ({ theme }) => ({
   color_disabled: theme.color_theme
 }));
 
-const Buttons = ({
+const getPageButtons = ({
   currentPage,
   handleClick,
   messages,
@@ -164,11 +164,13 @@ const IncrementButton = ({
     size,
     ...restProps
   };
+
   return <Button {...buttonProps} />;
 };
 
 export default class Pages extends PureComponent<Props> {
   previousButton: ?HTMLButtonElement;
+
   nextButton: ?HTMLButtonElement;
 
   render() {
@@ -182,7 +184,7 @@ export default class Pages extends PureComponent<Props> {
           innerRef={this.setPreviousButtonRef}
           {...restProps}
         />
-        {showPageNumbers && <Buttons {...restProps} />}
+        {showPageNumbers && getPageButtons(this.props)}
         <IncrementButton
           direction="next"
           focusedNodeWhenDisabled={this.previousButton}
@@ -192,9 +194,11 @@ export default class Pages extends PureComponent<Props> {
       </Container>
     );
   }
+
   setPreviousButtonRef = (node: ?HTMLButtonElement) => {
     this.previousButton = node;
   };
+
   setNextButtonRef = (node: ?HTMLButtonElement) => {
     this.nextButton = node;
   };
