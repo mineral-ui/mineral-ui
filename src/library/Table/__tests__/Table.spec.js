@@ -1,8 +1,10 @@
 /* @flow */
-import React, { Component } from 'react';
-import { mount, shallow } from 'enzyme';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import { ThemeProvider } from '../../themes';
+import React from 'react';
+import { shallow } from 'enzyme';
+import {
+  mountInThemeProvider,
+  mountInWrapper
+} from '../../../../utils/enzymeUtils';
 import Checkbox from '../../Checkbox';
 import Table from '../Table';
 import TableBase from '../TableBase';
@@ -42,39 +44,6 @@ const mountTable = (props = {}) => {
 
   return mountInThemeProvider(<Table {...tableProps} />);
 };
-
-/* NOTE: The mountApp() function and App component are provided for such cases
-when one needs to call Enzyme functions, such as update(), setProps(),
-setState(), etc. on the ReactWrapper but those are not available on the
-ReactWrapper returned from mountTable() as it is not the root wrapper. */
-
-const mountApp = (props = {}) => {
-  const appProps = {
-    ...defaultProps,
-    ...props
-  };
-
-  return mount(<App {...appProps} />);
-};
-
-class App extends Component<*, *> {
-  state = {
-    data: this.props.data
-  };
-
-  render() {
-    const tableProps = {
-      ...this.props,
-      data: this.state.data
-    };
-
-    return (
-      <ThemeProvider>
-        <Table {...tableProps} />
-      </ThemeProvider>
-    );
-  }
-}
 
 const findHeaderCheckbox = (table) => {
   return table.find(TableHeader).find('input[type="checkbox"]');
@@ -163,16 +132,16 @@ describe('Table', () => {
     describe('on click', () => {
       describe('single row', () => {
         it('selects row', () => {
-          const app = mountApp({
-            selectable: true
-          });
-          let table = app.find(Table);
+          const wrapper = mountInWrapper(
+            <Table {...defaultProps} selectable />
+          );
+          let table = wrapper.find(Table);
           let firstRowCheckbox = findCheckboxAtRowIndex(table, 0);
 
           firstRowCheckbox.simulate('change');
-          app.update();
+          wrapper.update();
 
-          table = app.find(Table);
+          table = wrapper.find(Table);
           const headerCheckbox = findHeaderCheckbox(table);
           firstRowCheckbox = findCheckboxAtRowIndex(table, 0);
 
@@ -181,17 +150,20 @@ describe('Table', () => {
         });
 
         it('deselects row when initially selected', () => {
-          const app = mountApp({
-            defaultSelectedRows: [defaultProps.data[0]],
-            selectable: true
-          });
-          let table = app.find(Table);
+          const wrapper = mountInWrapper(
+            <Table
+              {...defaultProps}
+              selectable
+              defaultSelectedRows={[defaultProps.data[0]]}
+            />
+          );
+          let table = wrapper.find(Table);
           let firstRowCheckbox = findCheckboxAtRowIndex(table, 0);
 
           firstRowCheckbox.simulate('change');
-          app.update();
+          wrapper.update();
 
-          table = app.find(Table);
+          table = wrapper.find(Table);
           let headerCheckbox = findHeaderCheckbox(table);
           firstRowCheckbox = findCheckboxAtRowIndex(table, 0);
 
@@ -218,16 +190,16 @@ describe('Table', () => {
 
       describe('all rows', () => {
         it('selects all non-disabled rows when no rows initially selected', () => {
-          const app = mountApp({
-            selectable: true
-          });
-          let table = app.find(Table);
+          const wrapper = mountInWrapper(
+            <Table {...defaultProps} selectable />
+          );
+          let table = wrapper.find(Table);
           const headerCheckbox = findHeaderCheckbox(table);
 
           headerCheckbox.simulate('change');
-          app.update();
+          wrapper.update();
 
-          table = app.find(Table);
+          table = wrapper.find(Table);
           const checkedCheckboxes = findCheckedCheckboxes(table);
 
           expect(headerCheckbox.props().checked).toBeTrue;
@@ -235,17 +207,20 @@ describe('Table', () => {
         });
 
         it('deselects all rows when some rows initially selected', () => {
-          const app = mountApp({
-            defaultSelectedRows: [defaultProps.data[0]],
-            selectable: true
-          });
-          let table = app.find(Table);
+          const wrapper = mountInWrapper(
+            <Table
+              {...defaultProps}
+              selectable
+              defaultSelectedRows={[defaultProps.data[0]]}
+            />
+          );
+          let table = wrapper.find(Table);
           const headerCheckbox = findHeaderCheckbox(table);
 
           headerCheckbox.simulate('change');
-          app.update();
+          wrapper.update();
 
-          table = app.find(Table);
+          table = wrapper.find(Table);
           const checkedCheckboxes = findCheckedCheckboxes(table);
 
           expect(
@@ -256,17 +231,20 @@ describe('Table', () => {
         });
 
         it('deselects all rows when all rows initially selected', () => {
-          const app = mountApp({
-            defaultSelectedRows: defaultProps.data,
-            selectable: true
-          });
-          let table = app.find(Table);
+          const wrapper = mountInWrapper(
+            <Table
+              {...defaultProps}
+              selectable
+              defaultSelectedRows={defaultProps.data}
+            />
+          );
+          let table = wrapper.find(Table);
           const headerCheckbox = findHeaderCheckbox(table);
 
           headerCheckbox.simulate('change');
-          app.update();
+          wrapper.update();
 
-          table = app.find(Table);
+          table = wrapper.find(Table);
           const checkedCheckboxes = findCheckedCheckboxes(table);
 
           expect(
@@ -405,16 +383,14 @@ describe('Table', () => {
     });
 
     describe('on click', () => {
-      let app, table;
+      let wrapper, table;
       const onSort = jest.fn();
 
       beforeEach(() => {
-        app = mountApp({
-          onSort,
-          sortable: true
-        });
-
-        table = app.find(Table);
+        wrapper = mountInWrapper(
+          <Table {...defaultProps} sortable onSort={onSort} />
+        );
+        table = wrapper.find(Table);
         onSort.mockReset();
       });
 
@@ -424,8 +400,8 @@ describe('Table', () => {
 
         button.simulate('click');
 
-        app.update();
-        table = app.find(Table);
+        wrapper.update();
+        table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
         const headerCellHtml = stripReactTextTags(headerCell.html());
 
@@ -440,8 +416,8 @@ describe('Table', () => {
         button.simulate('click');
         button.simulate('click');
 
-        app.update();
-        table = app.find(Table);
+        wrapper.update();
+        table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
         const headerCellHtml = stripReactTextTags(headerCell.html());
 
@@ -458,8 +434,8 @@ describe('Table', () => {
         button.simulate('click');
         secondButton.simulate('click');
 
-        app.update();
-        table = app.find(Table);
+        wrapper.update();
+        table = wrapper.find(Table);
         const sortedData = table.find(TableBase).props().data;
         const headerCellHtml = stripReactTextTags(headerCell.html());
         const secondHeaderCellHtml = stripReactTextTags(
@@ -501,13 +477,13 @@ describe('Table', () => {
         sortable: true
       };
 
-      const app = mountApp(props);
+      const wrapper = mountInWrapper(<Table {...defaultProps} {...props} />);
 
-      app.setState({
+      wrapper.setState({
         data: [...props.data, { aa: 'aa4', ab: 'ab4', ac: 'ac4', ad: 'ad4' }]
       });
 
-      const sortedData = app.find(TableBase).props().data;
+      const sortedData = wrapper.find(TableBase).props().data;
 
       expect(sortedData).toMatchSnapshot();
     });

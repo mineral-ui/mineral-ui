@@ -8,9 +8,7 @@ function shallowEventListener(props = {}) {
     listeners: [],
     ...props
   };
-  return shallow(<EventListener {...eventListenerProps} />, {
-    lifecycleExperimental: true
-  });
+  return shallow(<EventListener {...eventListenerProps} />);
 }
 
 function runTargetAssertions(target: string) {

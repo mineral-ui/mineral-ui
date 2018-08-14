@@ -1,7 +1,7 @@
 /* @flow */
-import React, { Component } from 'react';
-import { mount, shallow } from 'enzyme';
-import { ThemeProvider } from '../../themes';
+import React from 'react';
+import { shallow } from 'enzyme';
+import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Checkbox from '../Checkbox';
 import examples from '../../../website/app/demos/Checkbox/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
@@ -17,34 +17,6 @@ function shallowCheckbox(props = {}) {
     ...props
   };
   return shallow(<Checkbox {...checkboxProps} />);
-}
-
-const mountApp = (props = {}) => {
-  const appProps = {
-    ...defaultProps,
-    ...props
-  };
-
-  return mount(<App {...appProps} />);
-};
-
-class App extends Component<*, *> {
-  state = {
-    indeterminate: this.props.indeterminate
-  };
-
-  render() {
-    const checkboxProps = {
-      ...this.props,
-      indeterminate: this.state.indeterminate
-    };
-
-    return (
-      <ThemeProvider>
-        <Checkbox {...checkboxProps} />
-      </ThemeProvider>
-    );
-  }
 }
 
 describe('Checkbox', () => {
@@ -63,7 +35,7 @@ describe('Checkbox', () => {
   });
 
   describe('indeterminate', () => {
-    let app, checkbox;
+    let wrapper, checkbox;
     const onClick = jest.fn();
     const onChange = jest.fn();
 
@@ -74,8 +46,15 @@ describe('Checkbox', () => {
 
     describe('when uncontrolled', () => {
       beforeEach(() => {
-        app = mountApp({ defaultIndeterminate: true, onClick, onChange });
-        checkbox = app.find('input');
+        wrapper = mountInWrapper(
+          <Checkbox
+            {...defaultProps}
+            defaultIndeterminate
+            onClick={onClick}
+            onChange={onChange}
+          />
+        );
+        checkbox = wrapper.find('input');
       });
 
       it('is initialized correctly', () => {
@@ -86,8 +65,8 @@ describe('Checkbox', () => {
       describe('when clicked', () => {
         it('toggles indeterminate and checked state', () => {
           checkbox.simulate('click');
-          app.update();
-          checkbox = app.find('input').instance();
+          wrapper.update();
+          checkbox = wrapper.find('input').instance();
 
           expect(checkbox.indeterminate).toEqual(false);
           expect(checkbox.checked).toEqual(false);
@@ -109,8 +88,15 @@ describe('Checkbox', () => {
 
     describe('controlled', () => {
       beforeEach(() => {
-        app = mountApp({ indeterminate: true, onClick, onChange });
-        checkbox = app.find('input');
+        wrapper = mountInWrapper(
+          <Checkbox
+            {...defaultProps}
+            indeterminate
+            onClick={onClick}
+            onChange={onChange}
+          />
+        );
+        checkbox = wrapper.find('input');
       });
 
       it('is initialized correctly', () => {
@@ -121,8 +107,8 @@ describe('Checkbox', () => {
       describe('when clicked', () => {
         it('does not toggle indeterminate or checked state', () => {
           checkbox.simulate('click');
-          app.update();
-          checkbox = app.find('input').instance();
+          wrapper.update();
+          checkbox = wrapper.find('input').instance();
 
           expect(checkbox.indeterminate).toEqual(true);
           expect(checkbox.checked).toEqual(true);
