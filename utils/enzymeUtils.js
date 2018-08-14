@@ -1,9 +1,23 @@
 /* @flow */
-import React from 'react';
+import React, { cloneElement } from 'react';
 import { renderToString } from 'react-dom/server';
 import { mount } from 'enzyme';
 import type { ReactWrapper } from 'enzyme';
 import ThemeProvider from '../src/library/themes/ThemeProvider';
+
+export const mountInWrapper = (component: React$Element<*>) => {
+  class Wrapper extends React.Component<*, *> {
+    render() {
+      return (
+        <ThemeProvider>
+          {cloneElement(component, { ...this.props, ...this.state })}
+        </ThemeProvider>
+      );
+    }
+  }
+
+  return mount(<Wrapper />);
+};
 
 export const mountInThemeProvider = (
   Component: React$Element<*>,
