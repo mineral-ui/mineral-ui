@@ -3,6 +3,10 @@ import alignment from './alignment';
 import basic from './basic';
 import columnAlign from './columnAlign';
 import columnDef from './columnDef';
+import customCell from './customCell';
+import customHeaderCell from './customHeaderCell';
+import customSortableHeaderCell from './customSortableHeaderCell';
+import customRow from './customRow';
 import density from './density';
 import highContrast from './highContrast';
 import importSyntax from './importSyntax';
@@ -39,6 +43,10 @@ export default [
   highContrast,
   scrollable,
   rtl,
+  customCell,
+  customHeaderCell,
+  customSortableHeaderCell,
+  customRow,
   alignment,
   largeDataSets
 ];

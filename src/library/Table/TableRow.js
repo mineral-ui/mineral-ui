@@ -1,13 +1,20 @@
 /* @flow */
 import React, { PureComponent } from 'react';
+import { isRenderProp } from '../utils';
 import { createStyledComponent } from '../styles';
 import { TableContext } from './TableBase';
+
+import { type RenderFn } from './Table';
 
 type Props = {
   /** Rendered content can be TD or TH */
   children: React$Node,
   /** Renders row with selected styles */
-  isSelected?: boolean
+  isSelected?: boolean,
+  /** @Private Provided to user in render prop callback */
+  isSelectable?: boolean,
+  /** Provides custom rendering control */
+  render?: RenderFn
 };
 
 // prettier-ignore
@@ -97,12 +104,19 @@ const Root = createStyledComponent(
  */
 export default class TableRow extends PureComponent<Props> {
   render() {
-    const { children, ...restProps } = this.props;
     return (
       <TableContext.Consumer>
-        {({ highContrast, striped }) => {
-          const rootProps = { highContrast, striped, ...restProps };
-          return <Root {...rootProps}>{children}</Root>;
+        {(tableContextProps) => {
+          const { render, ...restProps } = this.props;
+          const rootProps = { ...tableContextProps, ...restProps };
+
+          if (isRenderProp(render)) {
+            return render({
+              props: rootProps
+            });
+          }
+
+          return <Root {...rootProps} />;
         }}
       </TableContext.Consumer>
     );

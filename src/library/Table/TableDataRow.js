@@ -27,19 +27,29 @@ export default class TableDataRow extends Component<Props> {
   };
 
   render() {
-    const { checked, columns, data, messages, toggle } = this.props;
+    const {
+      checked,
+      columns,
+      data,
+      messages,
+      toggle,
+      ...restProps
+    } = this.props;
     const selectable = Boolean(toggle);
 
-    const children = columns.map(({ key, ...restColumn }) => {
+    const cells = columns.map(({ cell: render, key, ...restColumn }) => {
       const cellProps = {
         children: data[key],
+        key,
+        render,
         ...restColumn
       };
+
       return <TableCell key={key} {...cellProps} />;
     });
 
     if (selectable) {
-      children.unshift(
+      cells.unshift(
         <TableSelectableCell
           checked={checked}
           disabled={data.disabled}
@@ -50,6 +60,14 @@ export default class TableDataRow extends Component<Props> {
       );
     }
 
-    return <TableRow isSelected={checked}>{children}</TableRow>;
+    const rowProps = {
+      children: cells,
+      isSelected: checked,
+      isSelectable: selectable,
+      ...(data.row ? { render: data.row } : undefined),
+      ...restProps
+    };
+
+    return <TableRow {...rowProps} />;
   }
 }

@@ -2,8 +2,10 @@
 import React, { PureComponent } from 'react';
 import memoizeOne from 'memoize-one';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { rtlTextAlign } from '../utils';
+import { isRenderProp, rtlTextAlign } from '../utils';
 import { TableContext } from './TableBase';
+
+import { type RenderFn } from './Table';
 
 type Props = {
   /** Rendered content */
@@ -14,6 +16,8 @@ type Props = {
   noPadding?: boolean,
   /** See Table's Column type */
   primary?: boolean,
+  /** Provides custom rendering control */
+  render?: RenderFn,
   /** See Table's Column type */
   textAlign?: 'start' | 'end' | 'center' | 'justify'
 };
@@ -100,19 +104,24 @@ export default class TableCell extends PureComponent<Props> {
   );
 
   render() {
-    const { children, primary, ...restProps } = this.props;
-    const Root = this.getRootNode(this.props);
-
     return (
       <TableContext.Consumer>
-        {({ density, highContrast }) => {
+        {(tableContextProps) => {
+          const { primary, render, ...restProps } = this.props;
           const rootProps = {
-            density,
-            highContrast,
+            ...tableContextProps,
             ...(primary ? { scope: 'row' } : undefined),
             ...restProps
           };
-          return <Root {...rootProps}>{children}</Root>;
+
+          if (isRenderProp(render)) {
+            return render({
+              props: rootProps
+            });
+          }
+
+          const Root = this.getRootNode(this.props);
+          return <Root {...rootProps} />;
         }}
       </TableContext.Consumer>
     );

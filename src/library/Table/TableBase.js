@@ -129,7 +129,7 @@ export default class TableBase extends Component<Props, State> {
       highContrast,
       striped
     };
-    const headerProps = {
+    const tableHeaderRowProps = {
       checked: selectable && selectable.all,
       columns,
       indeterminate: selectable && selectable.some,
@@ -150,7 +150,7 @@ export default class TableBase extends Component<Props, State> {
             {title}
           </TableTitle>
           <TableHeader hide={hideHeader}>
-            <TableHeaderRow {...headerProps} />
+            <TableHeaderRow {...tableHeaderRowProps} />
           </TableHeader>
           <TableBody>
             {data.map((rowData, index) => {

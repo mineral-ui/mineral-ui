@@ -38,62 +38,72 @@ export default class TableHeaderRow extends Component<Props> {
       isSortable,
       sortable: tableSortable,
       messages,
-      toggle
+      toggle,
+      ...restProps
     } = this.props;
     const selectable = Boolean(toggle);
-    return (
-      <TableRow>
-        {selectable ? (
-          <TableSelectableCell
-            aria-label={messages.selectedRows}
-            isHeader={true}
-            label={
-              checked || indeterminate
-                ? messages.deselectAllRows
-                : messages.selectAllRows
-            }
-            checked={checked}
-            indeterminate={indeterminate}
-            onChange={this.toggle}
-          />
-        ) : null}
-        {columns.map(
-          ({
-            content,
-            sortable: columnSortable,
-            key,
-            label,
-            ...restColumn
-          }) => {
-            if (typeof content !== 'string' && !label) {
-              throw new Error(
-                'Columns with non-string content must define a `label` property.'
-              );
-            }
 
-            const cellProps = {
-              children: content,
-              key,
-              label:
-                label || (typeof content === 'string' ? content : undefined),
-              messages,
-              sortable:
-                columnSortable === false
-                  ? undefined
-                  : isSortable || columnSortable
-                    ? tableSortable
-                    : undefined,
-              ...restColumn
-            };
+    const cells = columns.map(
+      ({
+        headerCell: render,
+        content,
+        sortable: columnSortable,
+        key,
+        label,
+        ...restColumn
+      }) => {
+        if (typeof content !== 'string' && !label) {
+          throw new Error(
+            'Columns with non-string content must define a `label` property.'
+          );
+        }
 
-            return cellProps.sortable ? (
-              <TableSortableHeaderCell name={key} {...cellProps} />
-            ) : (
-              <TableHeaderCell {...cellProps} />
-            );
-          }
-        )}
-      </TableRow>
+        const cellProps = {
+          children: content,
+          key,
+          label: label || (typeof content === 'string' ? content : undefined),
+          messages,
+          render,
+          sortable:
+            columnSortable === false
+              ? undefined
+              : isSortable || columnSortable
+                ? tableSortable
+                : undefined,
+          ...restColumn
+        };
+
+        return cellProps.sortable ? (
+          <TableSortableHeaderCell name={key} {...cellProps} />
+        ) : (
+          <TableHeaderCell {...cellProps} />
+        );
+      }
     );
+
+    if (selectable) {
+      cells.unshift(
+        <TableSelectableCell
+          key={messages.selectedRows}
+          aria-label={messages.selectedRows}
+          isHeader={true}
+          label={
+            checked || indeterminate
+              ? messages.deselectAllRows
+              : messages.selectAllRows
+          }
+          checked={checked}
+          indeterminate={indeterminate}
+          onChange={this.toggle}
+        />
+      );
+    }
+
+    const tableRowProps = {
+      children: cells,
+      ...restProps
+    };
+
+    return <TableRow {...tableRowProps} />;
   }
 }
