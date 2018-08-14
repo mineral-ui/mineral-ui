@@ -49,40 +49,43 @@ export default class TableSelectableCell extends Component<Props> {
   }
 
   render() {
-    const {
-      checked,
-      disabled,
-      indeterminate,
-      isHeader,
-      label,
-      onChange,
-      ...restProps
-    } = this.props;
-
-    const Root = isHeader ? TableHeaderCell : TableCell;
-    const rootProps = {
-      noPadding: true,
-      width: isHeader ? 1 : undefined,
-      ...restProps
-    };
-    const checkboxProps = {
-      checked,
-      disabled,
-      hideLabel: true,
-      indeterminate,
-      isHeader,
-      label,
-      onChange
-    };
-
     return (
-      <Root {...rootProps}>
-        <TableContext.Consumer>
-          {({ density }) => (
-            <PaddedCheckbox density={density} {...checkboxProps} />
-          )}
-        </TableContext.Consumer>
-      </Root>
+      <TableContext.Consumer>
+        {({ density }) => {
+          const {
+            checked,
+            disabled,
+            indeterminate,
+            isHeader,
+            label,
+            onChange,
+            ...restProps
+          } = this.props;
+
+          const Root = isHeader ? TableHeaderCell : TableCell;
+          const rootProps = {
+            noPadding: true,
+            width: isHeader ? 1 : undefined,
+            ...restProps
+          };
+          const checkboxProps = {
+            checked,
+            disabled,
+            density,
+            hideLabel: true,
+            indeterminate,
+            isHeader,
+            label,
+            onChange
+          };
+
+          return (
+            <Root {...rootProps}>
+              <PaddedCheckbox {...checkboxProps} />
+            </Root>
+          );
+        }}
+      </TableContext.Consumer>
     );
   }
 }

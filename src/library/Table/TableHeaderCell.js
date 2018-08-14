@@ -1,12 +1,15 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import memoizeOne from 'memoize-one';
+import { isRenderProp } from '../utils';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import TableCell, {
   componentTheme as tableCellComponentTheme
 } from './TableCell';
 import { TableContext } from './TableBase';
+
+import { type RenderFn } from './Table';
 
 type Props = {
   /** Rendered content */
@@ -19,6 +22,8 @@ type Props = {
   minWidth?: number | string,
   /** See Table's Column type */
   maxWidth?: number | string,
+  /** Provides custom rendering control */
+  render?: RenderFn,
   /** See Table's Column type */
   textAlign?: 'start' | 'end' | 'center' | 'justify',
   /** See Table's Column type */
@@ -146,19 +151,27 @@ export default class TableHeaderCell extends PureComponent<Props> {
   );
 
   render() {
-    const { children, label, ...restProps } = this.props;
-    const Root = this.getRootNode(this.props);
-
     return (
       <TableContext.Consumer>
-        {({ density, highContrast }) => {
+        {(tableContextProps) => {
+          const { label, render, ...restProps } = this.props;
           const rootProps = {
+            ...tableContextProps,
             'aria-label': label,
-            density,
-            highContrast,
             ...restProps
           };
-          return <Root {...rootProps}>{children}</Root>;
+
+          if (isRenderProp(render)) {
+            return render({
+              props: {
+                ...rootProps,
+                label
+              }
+            });
+          }
+
+          const Root = this.getRootNode(this.props);
+          return <Root {...rootProps} />;
         }}
       </TableContext.Consumer>
     );

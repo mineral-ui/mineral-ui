@@ -46,10 +46,10 @@ const Root = createStyledComponent(
  */
 export default class TableHeader extends PureComponent<Props> {
   render() {
-    const { children, ...restProps } = this.props;
     return (
       <TableContext.Consumer>
         {({ highContrast }) => {
+          const { children, ...restProps } = this.props;
           const rootProps = { highContrast, ...restProps };
           return <Root {...rootProps}>{children}</Root>;
         }}

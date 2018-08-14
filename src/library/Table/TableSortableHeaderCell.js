@@ -1,39 +1,45 @@
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
+import { isRenderProp } from '../utils';
 import { createStyledComponent, pxToEm } from '../styles';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import TableHeaderCell from './TableHeaderCell';
+import { TableContext } from './TableBase';
 
 import type { SortableType } from './Sortable';
-import type { Messages } from './Table';
+import type { Messages, RenderFn } from './Table';
 
 type Props = {
   /** Rendered content */
   children: React$Node,
   /** Accessible label */
   label?: string,
+  /** See Table */
+  messages: Messages,
   /** Name of column */
   name: string,
+  /** Provides custom rendering control */
+  render?: RenderFn,
   /** See Table */
-  sortable: SortableType,
-  /** See Table */
-  messages: Messages
+  sortable: SortableType
 };
 
-const componentTheme = (baseTheme: Object) => ({
-  TableHeaderCell_border_focus: `1px solid ${
+export const componentTheme = (baseTheme: Object) => ({
+  TableSortableHeaderCell_border_focus: `1px solid ${
     baseTheme.borderColor_theme_focus
   }`,
-  TableHeaderCell_color_focus: baseTheme.color_theme,
+  TableSortableHeaderCell_color_focus: baseTheme.color_theme,
+  TableSortableHeaderCell_color_hover: baseTheme.icon_color_theme,
+  TableSortableHeaderCellIcon_size: pxToEm(14),
 
   ...baseTheme
 });
 
 const focusStyles = (theme) => ({
-  color: theme.TableHeaderCell_color_focus,
-  outline: theme.TableHeaderCell_border_focus,
-  outlineOffset: `-${theme.TableHeaderCell_border_focus.split(' ')[0]}`
+  color: theme.TableSortableHeaderCell_color_focus,
+  outline: theme.TableSortableHeaderCell_border_focus,
+  outlineOffset: `-${theme.TableSortableHeaderCell_border_focus.split(' ')[0]}`
 });
 
 // [1] Extends the clickable area of the Button to fill the entire cell
@@ -45,7 +51,7 @@ const styles = {
       overflow: 'hidden', // [1]
 
       '&:hover': {
-        color: theme.icon_color_theme
+        color: theme.TableSortableHeaderCell_color_hover
       },
 
       '&:focus-within': focusStyles(theme)
@@ -62,7 +68,6 @@ const styles = {
       fontSize: 'inherit',
       fontWeight: 'inherit',
       position: 'relative',
-      verticalAlign: theme.TableHeaderCell_verticalAlign,
       whiteSpace: 'nowrap',
       width: '100%',
 
@@ -91,21 +96,22 @@ const styles = {
     position: 'relative',
     whiteSpace: 'normal'
   },
-  iconHolder: ({ isActiveSort, direction, theme }) => {
+  iconHolder: ({ isSorted, direction, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
     const iconAdjustment = pxToEm(2);
-    const space = `${parseFloat(theme.space_inline_xxs) +
-      parseFloat(iconAdjustment)}em`;
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       color: theme.icon_color,
       display: 'inline-block',
-      height: '0.875em',
-      marginLeft: theme.direction === 'ltr' ? space : null,
-      marginRight: theme.direction === 'rtl' ? space : null,
-      opacity: isActiveSort ? null : 0,
+      height: theme.TableSortableHeaderCellIcon_size,
+      [marginProperty]: `${parseFloat(theme.space_inline_xxs) +
+        parseFloat(iconAdjustment)}em`,
+      opacity: isSorted ? null : 0,
       position: 'relative',
       top: direction === 'ascending' ? 2 : 1,
-      width: '0.875em',
+      width: theme.TableSortableHeaderCellIcon_size,
 
       '& > [role="img"]': {
         margin: `-${iconAdjustment}`
@@ -137,62 +143,92 @@ const sortIcon = {
   descending: <IconArrowDropdownDown {...iconProps} />
 };
 
-export default function TableSortableHeaderCell({
-  children,
-  label,
-  name,
-  messages,
-  sortable,
-  ...restProps
-}: Props) {
-  const { sort, sortFn } = sortable;
+/**
+ * TableSortableHeaderCell
+ */
+export default class TableSortableHeaderCell extends Component<Props> {
+  render() {
+    return (
+      <TableContext.Consumer>
+        {(tableContextProps) => {
+          const {
+            children,
+            label,
+            name,
+            messages,
+            render,
+            sortable,
+            ...restProps
+          } = this.props;
+          const { sort, sortFn } = sortable;
+          const sortColumn = sort && sort.key;
+          const descending = sort ? sort.descending : false;
+          const direction = descending ? 'descending' : 'ascending';
+          const isSorted = sortColumn === name;
+          const nextDirection =
+            isSorted && direction === 'ascending' ? 'descending' : 'ascending';
+          const toggle = isSorted || direction !== nextDirection;
+          const nextDescending = toggle ? !descending : descending;
+          const nextSort = { key: name, descending: nextDescending };
+          const handleSort = () => sortFn(nextSort);
 
-  const sortColumn = sort && sort.key;
-  const descending = sort ? sort.descending : false;
+          const rootProps = {
+            'aria-label': label || children,
+            'aria-sort': isSorted ? direction : 'none',
+            role: 'columnheader',
+            ...restProps
+          };
 
-  const isActiveSort = sortColumn === name;
-  const activeDirection = descending ? 'descending' : 'ascending';
-  const nextDirection =
-    isActiveSort && activeDirection === 'ascending'
-      ? 'descending'
-      : 'ascending';
+          const buttonProps = {
+            'aria-label':
+              nextDirection === 'ascending'
+                ? messages.sortColumnAscending
+                : messages.sortColumnDescending,
+            onClick: handleSort,
+            ...restProps
+          };
 
-  const toggle = isActiveSort || activeDirection !== nextDirection;
-  const nextDescending = toggle ? !descending : descending;
+          const iconHolderProps = {
+            direction: (isSorted && direction) || 'ascending',
+            isSorted
+          };
 
-  const a11yLabel = label || children;
+          if (isRenderProp(render)) {
+            const renderProps = {
+              props: {
+                ...tableContextProps,
+                ...rootProps,
+                children,
+                label,
+                name,
+                messages,
+                sortable
+              },
+              state: {
+                direction,
+                isSorted
+              },
+              helpers: {
+                handleSort
+              }
+            };
 
-  const rootProps = {
-    ...restProps,
-    'aria-label': a11yLabel,
-    'aria-sort': isActiveSort ? activeDirection : 'none',
-    role: 'columnheader'
-  };
+            return render(renderProps);
+          }
 
-  const buttonProps = {
-    ...restProps,
-    'aria-label':
-      nextDirection === 'ascending'
-        ? messages.sortColumnAscending
-        : messages.sortColumnDescending,
-    onClick: () => {
-      sortFn({ key: name, descending: nextDescending });
-    }
-  };
-  const iconHolderProps = {
-    direction: (isActiveSort && activeDirection) || 'ascending',
-    isActiveSort
-  };
-
-  return (
-    <Root {...rootProps}>
-      <Button {...buttonProps}>
-        <Content>{children}</Content>
-        &nbsp;
-        <IconHolder {...iconHolderProps}>
-          {sortIcon[iconHolderProps.direction]}
-        </IconHolder>
-      </Button>
-    </Root>
-  );
+          return (
+            <Root {...rootProps}>
+              <Button {...buttonProps}>
+                <Content>{children}</Content>
+                &nbsp;
+                <IconHolder {...iconHolderProps}>
+                  {sortIcon[iconHolderProps.direction]}
+                </IconHolder>
+              </Button>
+            </Root>
+          );
+        }}
+      </TableContext.Consumer>
+    );
+  }
 }
