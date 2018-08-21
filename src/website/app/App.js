@@ -7,6 +7,7 @@ import { pxToEm } from '../../library/styles';
 import { mineralTheme, ThemeProvider } from '../../library/themes';
 import BaselineGrid from './BaselineGrid';
 import Router from './Router';
+import RenderCounter from './RenderCounter';
 import siteColors from './siteColors';
 
 declare var GOOGLE_TRACKING_ID: string;
@@ -120,6 +121,13 @@ class App extends Component<Props> {
     }
   }
 
+  showRenderCounter = () => {
+    const { search } = this.props.location || '';
+    return (
+      process.env.NODE_ENV !== 'production' && search.includes('chromeless')
+    );
+  };
+
   render() {
     return (
       <ThemeProvider>
@@ -127,6 +135,7 @@ class App extends Component<Props> {
           <div>
             <Router />
             <BaselineGrid />
+            {this.showRenderCounter() && <RenderCounter />}
           </div>
         </ThemeProvider>
       </ThemeProvider>
