@@ -1,31 +1,22 @@
 /* @flow */
-const matcher = new RegExp('^[A-Z]');
+const REGEX_COMPONENT = new RegExp('^[A-Z]');
 
 module.exports = {
   test: (val: Object) => {
     return (
       val &&
       val.type &&
+      val.props &&
       typeof val.type === 'string' &&
-      matcher.test(val.type) &&
+      REGEX_COMPONENT.test(val.type) &&
       !val.processed
     );
   },
 
   print: (val: Object, serialize: Function) => {
-    // if (val.type.startsWith('Themed(')) {
-    //   delete val.props.theme;
-    // } else {
-    //   delete val.props;
-    // }
-
-    if (
-      ['ThemeProvider', 'LiveProvider'].includes(val.type) &&
-      val &&
-      val.props
-    ) {
+    if (['ThemeProvider', 'LiveProvider'].includes(val.type)) {
       delete val.props;
-    } else if (val && val.props && val.props.theme) {
+    } else {
       delete val.props.theme;
     }
 
