@@ -1,5 +1,5 @@
 /* @flow */
-const matcher = new RegExp('(ThemeProvider|LiveProvider|^Themed\\(.*)');
+const matcher = new RegExp('^[A-Z]');
 
 module.exports = {
   test: (val: Object) => {
@@ -13,10 +13,20 @@ module.exports = {
   },
 
   print: (val: Object, serialize: Function) => {
-    if (val.type.startsWith('Themed(')) {
-      delete val.props.theme;
-    } else {
+    // if (val.type.startsWith('Themed(')) {
+    //   delete val.props.theme;
+    // } else {
+    //   delete val.props;
+    // }
+
+    if (
+      ['ThemeProvider', 'LiveProvider'].includes(val.type) &&
+      val &&
+      val.props
+    ) {
       delete val.props;
+    } else if (val && val.props && val.props.theme) {
+      delete val.props.theme;
     }
 
     val.processed = true;
