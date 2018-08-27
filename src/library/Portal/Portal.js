@@ -12,8 +12,6 @@ type Props = {
 };
 
 export default class Portal extends Component<Props> {
-  props: Props;
-
   content: React$Element<*>;
 
   node: ?HTMLElement;
