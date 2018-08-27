@@ -44,7 +44,7 @@ const Root = createStyledComponent(
       border: `1px solid ${theme.DropdownContent_borderColor}`,
       borderRadius: theme.DropdownContent_borderRadius,
       boxShadow: theme.DropdownContent_boxShadow,
-      maxHeight: pxToEm(368),
+      maxHeight: '30vh',
       overflowY: 'auto',
       userSelect: 'none',
       width: wide ? pxToEm(344) : pxToEm(224),

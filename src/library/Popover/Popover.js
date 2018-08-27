@@ -351,6 +351,7 @@ export default class Popover extends Component<Props, State> {
 
   handleDocumentKeydown = (event: SyntheticKeyboardEvent<>) => {
     if (event.key === 'Escape') {
+      event.preventDefault();
       this.close(event);
     }
   };
@@ -362,8 +363,11 @@ export default class Popover extends Component<Props, State> {
     const { usePortal } = this.props;
     const node = findDOMNode(this);
     const popoverContentNode = findDOMNode(this.popoverContent);
+
     const target =
-      event.type === 'blur' && event.relatedTarget
+      event.type === 'blur' &&
+      event.relatedTarget &&
+      popoverContentNode === event.target
         ? event.relatedTarget
         : event.target;
 
