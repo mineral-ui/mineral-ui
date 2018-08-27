@@ -84,7 +84,7 @@ describe('Table', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <Table id="test" data={defaultProps.data} title="test" />,
-      ['Table_boxShadow_focus']
+      ['Table_outline_focus']
     );
   });
 
