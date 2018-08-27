@@ -14893,15 +14893,14 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
 }
 
 .emotion-43 {
+  outline: 0;
   overflow-x: auto;
-  box-shadow: 0;
-  -webkit-transition: box-shadow 0.1s 0.25s;
-  transition: box-shadow 0.1s 0.25s;
+  -webkit-transition: outline 0.1s 0.25s;
+  transition: outline 0.1s 0.25s;
 }
 
 .emotion-43:focus {
-  box-shadow: 0 0 0 1px #1d5bbf;
-  outline: 0;
+  outline: 1px solid #1d5bbf;
 }
 
 .emotion-42 {
@@ -15522,21 +15521,25 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
               <WithTheme(Themed(OverflowContainer))
                 aria-labelledby="table-38-title"
                 role="group"
+                scrollX={true}
               >
                 <Themed(OverflowContainer)
                   aria-labelledby="table-38-title"
                   role="group"
+                  scrollX={true}
                 >
                   <ThemeProvider>
                     <ThemeProvider>
                       <OverflowContainer
                         aria-labelledby="table-38-title"
                         role="group"
+                        scrollX={true}
                       >
-                        <Styled(div)
+                        <OverflowContainer
                           aria-labelledby="table-38-title"
                           innerRef={[Function]}
                           role="group"
+                          scrollX={true}
                         >
                           <div
                             aria-labelledby="table-38-title"
@@ -15558,41 +15561,47 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                     id="table-38-title"
                                   >
                                     <Caption
+                                      element="h4"
                                       hide={true}
                                     >
                                       <caption
                                         className="emotion-1"
                                       >
-                                        <Text
-                                          align="start"
-                                          appearance="p"
+                                        <TitleContent
                                           element="h4"
-                                          id="table-38-title"
                                           noMargins={true}
                                         >
-                                          <TextProvider
+                                          <Text
                                             align="start"
                                             appearance="p"
                                             element="h4"
                                             id="table-38-title"
                                             noMargins={true}
                                           >
-                                            <Styled(h4)
+                                            <TextProvider
                                               align="start"
                                               appearance="p"
                                               element="h4"
                                               id="table-38-title"
                                               noMargins={true}
                                             >
-                                              <h4
-                                                className="emotion-0"
+                                              <Styled(h4)
+                                                align="start"
+                                                appearance="p"
+                                                element="h4"
                                                 id="table-38-title"
+                                                noMargins={true}
                                               >
-                                                Minerals
-                                              </h4>
-                                            </Styled(h4)>
-                                          </TextProvider>
-                                        </Text>
+                                                <h4
+                                                  className="emotion-0"
+                                                  id="table-38-title"
+                                                >
+                                                  Minerals
+                                                </h4>
+                                              </Styled(h4)>
+                                            </TextProvider>
+                                          </Text>
+                                        </TitleContent>
                                       </caption>
                                     </Caption>
                                   </TableTitle>
@@ -16418,7 +16427,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                               }
                             />
                           </div>
-                        </Styled(div)>
+                        </OverflowContainer>
                       </OverflowContainer>
                     </ThemeProvider>
                   </ThemeProvider>
@@ -19583,15 +19592,14 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-49 {
+  outline: 0;
   overflow-x: auto;
-  box-shadow: 0;
-  -webkit-transition: box-shadow 0.1s 0.25s;
-  transition: box-shadow 0.1s 0.25s;
+  -webkit-transition: outline 0.1s 0.25s;
+  transition: outline 0.1s 0.25s;
 }
 
 .emotion-49:focus {
-  box-shadow: 0 0 0 1px #1d5bbf;
-  outline: 0;
+  outline: 1px solid #1d5bbf;
 }
 
 .emotion-48 {
@@ -20586,21 +20594,25 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                     <WithTheme(Themed(OverflowContainer))
                       aria-labelledby="table-50-title"
                       role="group"
+                      scrollX={true}
                     >
                       <Themed(OverflowContainer)
                         aria-labelledby="table-50-title"
                         role="group"
+                        scrollX={true}
                       >
                         <ThemeProvider>
                           <ThemeProvider>
                             <OverflowContainer
                               aria-labelledby="table-50-title"
                               role="group"
+                              scrollX={true}
                             >
-                              <Styled(div)
+                              <OverflowContainer
                                 aria-labelledby="table-50-title"
                                 innerRef={[Function]}
                                 role="group"
+                                scrollX={true}
                               >
                                 <div
                                   aria-labelledby="table-50-title"
@@ -20622,41 +20634,47 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                           id="table-50-title"
                                         >
                                           <Caption
+                                            element="h4"
                                             hide={true}
                                           >
                                             <caption
                                               className="emotion-1"
                                             >
-                                              <Text
-                                                align="start"
-                                                appearance="p"
+                                              <TitleContent
                                                 element="h4"
-                                                id="table-50-title"
                                                 noMargins={true}
                                               >
-                                                <TextProvider
+                                                <Text
                                                   align="start"
                                                   appearance="p"
                                                   element="h4"
                                                   id="table-50-title"
                                                   noMargins={true}
                                                 >
-                                                  <Styled(h4)
+                                                  <TextProvider
                                                     align="start"
                                                     appearance="p"
                                                     element="h4"
                                                     id="table-50-title"
                                                     noMargins={true}
                                                   >
-                                                    <h4
-                                                      className="emotion-0"
+                                                    <Styled(h4)
+                                                      align="start"
+                                                      appearance="p"
+                                                      element="h4"
                                                       id="table-50-title"
+                                                      noMargins={true}
                                                     >
-                                                      المعادن
-                                                    </h4>
-                                                  </Styled(h4)>
-                                                </TextProvider>
-                                              </Text>
+                                                      <h4
+                                                        className="emotion-0"
+                                                        id="table-50-title"
+                                                      >
+                                                        المعادن
+                                                      </h4>
+                                                    </Styled(h4)>
+                                                  </TextProvider>
+                                                </Text>
+                                              </TitleContent>
                                             </caption>
                                           </Caption>
                                         </TableTitle>
@@ -21623,7 +21641,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                     }
                                   />
                                 </div>
-                              </Styled(div)>
+                              </OverflowContainer>
                             </OverflowContainer>
                           </ThemeProvider>
                         </ThemeProvider>

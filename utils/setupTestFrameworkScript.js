@@ -17,3 +17,5 @@ if (semver.satisfies(React.version, '15.0.0 - 15.4.x')) {
   Adapter = require('enzyme-react-adapter-future');
 }
 Enzyme.configure({ adapter: new Adapter() });
+
+window.scroll = jest.fn();
