@@ -4,6 +4,7 @@ import { findDOMNode } from 'react-dom';
 import { Manager } from 'react-popper';
 import { createStyledComponent } from '../styles';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
+import ModifiersContext from '../Dialog/ModifiersContext';
 import EventListener from '../EventListener';
 import Portal from '../Portal';
 import PopoverTrigger from './PopoverTrigger';
@@ -148,36 +149,45 @@ export default class Popover extends Component<Props, State> {
   popoverTrigger: ?React$Component<*, *>;
 
   render() {
+    const { modifiers, ...restProps } = this.props;
     const isOpen = this.getControllableValue('isOpen');
 
     const rootProps = {
-      ...this.props,
+      ...restProps,
       tag: 'span'
     };
 
     return (
-      <Root {...rootProps}>
-        {this.renderTrigger()}
-        {isOpen && this.renderContent()}
-        {isOpen && (
-          <EventListener
-            listeners={[
-              {
-                target: 'document',
-                event: 'click',
-                handler: this.handleDocumentClick,
-                options: true
-              },
-              {
-                target: 'document',
-                event: 'keydown',
-                handler: this.handleDocumentKeydown,
-                options: true
-              }
-            ]}
-          />
-        )}
-      </Root>
+      <ModifiersContext.Consumer>
+        {(contextModifiers) => {
+          rootProps.modifiers = modifiers || contextModifiers;
+
+          return (
+            <Root {...rootProps}>
+              {this.renderTrigger()}
+              {isOpen && this.renderContent()}
+              {isOpen && (
+                <EventListener
+                  listeners={[
+                    {
+                      target: 'document',
+                      event: 'click',
+                      handler: this.handleDocumentClick,
+                      options: true
+                    },
+                    {
+                      target: 'document',
+                      event: 'keydown',
+                      handler: this.handleDocumentKeydown,
+                      options: true
+                    }
+                  ]}
+                />
+              )}
+            </Root>
+          );
+        }}
+      </ModifiersContext.Consumer>
     );
   }
 
