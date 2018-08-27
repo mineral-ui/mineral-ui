@@ -2,8 +2,8 @@
 import React from 'react';
 import { hideVisually } from 'polished';
 import { createStyledComponent } from '../styles';
-import { ThemeProvider, withTheme } from '../themes';
-import Text from '../Text';
+import { withTheme } from '../themes';
+import Text, { textWithThemeOverrides } from '../Text';
 
 type Props = {
   appearance?: TitleAppearance,
@@ -43,49 +43,20 @@ const Root = createStyledComponent(
 /**
  * TableTitle
  */
-const TableTitle = ({
-  appearance,
-  children,
-  element,
-  hide,
-  id,
-  theme,
-  ...restProps
-}: Props) => {
+const TableTitle = ({ hide, id, theme, ...restProps }: Props) => {
   const rootProps = {
     hide,
     ...restProps
   };
 
-  const textProps = {
-    align: 'start',
-    appearance,
-    element,
-    id,
-    noMargins: true
-  };
+  const TitleContent = (props) => <Text align="start" id={id} {...props} />;
 
-  let title = <Text {...textProps}>{children}</Text>;
-
-  if (
-    theme.TableTitle_color ||
-    theme.TableTitle_fontSize ||
-    theme.TableTitle_fontWeight
-  ) {
-    const appliedAppearance = appearance || element || 'h4';
-    // prettier-ignore
-    const getOverride = (variable) =>
-      theme[`TableTitle_${variable}`]
-        ? { [`Text_${variable}_${appliedAppearance}`]: theme[`TableTitle_${variable}`] }
-        : undefined;
-    const textTheme = {
-      ...getOverride('color'),
-      ...getOverride('fontSize'),
-      ...getOverride('fontWeight')
-    };
-
-    title = <ThemeProvider theme={textTheme}>{title}</ThemeProvider>;
-  }
+  const title = textWithThemeOverrides({
+    displayName: 'TableTitle',
+    textComponent: TitleContent,
+    theme,
+    ...restProps
+  });
 
   return <Root {...rootProps}>{title}</Root>;
 };
