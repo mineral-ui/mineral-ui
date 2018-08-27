@@ -6,7 +6,7 @@ import DemoLayout from '../../shared/DemoLayout';
 export default {
   id: 'variants',
   title: 'Variants',
-  description: `Use the \`variant\` prop to  to help communicate purpose. Note
+  description: `Use the \`variant\` prop to help communicate purpose. Note
 that the \`variant\` prop may be set on the root or on individual children.`,
   scope: { Button, ButtonGroup, DemoLayout },
   source: `

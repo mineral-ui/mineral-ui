@@ -81,6 +81,42 @@ export default [
       title: 'CheckboxGroup'
     }
   ],
+  [
+    {
+      description:
+        'Dialog displays content in a layer above the app and requires user interaction to dismiss it. It may appear contextually or as a modal.',
+      slug: 'dialog',
+      title: 'Dialog'
+    },
+    {
+      description:
+        'DialogActions renders primary and secondary actions inside Dialog.',
+      slug: 'dialog-actions',
+      title: 'DialogActions'
+    },
+    {
+      description: 'DialogBody contains the main content of Dialog.',
+      slug: 'dialog-body',
+      title: 'DialogBody'
+    },
+    {
+      description:
+        'DialogFooter displays actionable content at the bottom of Dialog.',
+      slug: 'dialog-footer',
+      title: 'DialogFooter'
+    },
+    {
+      description:
+        'DialogHeader displays title content and an optional close button at the top of Dialog.',
+      slug: 'dialog-header',
+      title: 'DialogHeader'
+    },
+    {
+      description: 'DialogTitle displays the title of Dialog.',
+      slug: 'dialog-title',
+      title: 'DialogTitle'
+    }
+  ],
   {
     description:
       'Dropdowns display a hidden Menu, available upon user interaction. Use Dropdowns for non-primary actions only.',
@@ -188,7 +224,8 @@ export default [
     }
   ],
   {
-    description: 'TODO',
+    description:
+      'Pagination offers a means to control the space consumed by a collection of items by limiting the page size and providing navigation for access to all pages.',
     slug: 'pagination',
     title: 'Pagination'
   },
