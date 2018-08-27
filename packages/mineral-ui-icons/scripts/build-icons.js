@@ -34,6 +34,7 @@ const internalMineralIcons = [
   'IconCheckBoxCheck',
   'IconCheckBoxIndeterminate',
   'IconChevronLeft',
+  'IconClose',
   'IconChevronRight',
   'IconDanger',
   'IconDangerSimple',
