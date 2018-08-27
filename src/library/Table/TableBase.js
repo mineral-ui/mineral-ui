@@ -4,11 +4,11 @@ import createReactContext, { type Context } from 'create-react-context';
 import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { generateId } from '../utils';
-import TableDataRow from './TableDataRow';
-import TableHeaderRow from './TableHeaderRow';
 import _OverflowContainer, {
   componentTheme as overflowContainerComponentTheme
-} from './OverflowContainer';
+} from '../OverflowContainer/OverflowContainer';
+import TableDataRow from './TableDataRow';
+import TableHeaderRow from './TableHeaderRow';
 import TableBody from './TableBody';
 import TableHeader from './TableHeader';
 import TableTitle from './TableTitle';
@@ -173,7 +173,8 @@ export default class TableBase extends Component<Props, State> {
     if (scrollable) {
       const containerProps = {
         'aria-labelledby': this.titleId,
-        role: 'group'
+        role: 'group',
+        scrollX: true
       };
       table = (
         <OverflowContainer {...containerProps}>{table}</OverflowContainer>
