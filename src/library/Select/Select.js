@@ -7,6 +7,7 @@ import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
+import ModifiersContext from '../Dialog/ModifiersContext';
 import Dropdown, {
   componentTheme as dropdownComponentTheme
 } from '../Dropdown/Dropdown';
@@ -242,19 +243,28 @@ export default class Select extends Component<Props, State> {
       disabled: disabled || readOnly,
       highlightedIndex: this.getHighlightedOrSelectedIndex(),
       isOpen,
-      modifiers: {
-        contentWidth: contentWidthModifier,
-        ...modifiers
-      },
       onClose: this.close,
       onOpen: this.open,
       menu: this.renderMenu
     };
 
     return (
-      <Root {...rootProps}>
-        {isRenderProp(trigger) ? this.renderTrigger : this.renderTrigger()}
-      </Root>
+      <ModifiersContext.Consumer>
+        {(contextModifiers) => {
+          rootProps.modifiers = {
+            contentWidth: contentWidthModifier,
+            ...(modifiers || contextModifiers)
+          };
+
+          return (
+            <Root {...rootProps}>
+              {isRenderProp(trigger)
+                ? this.renderTrigger
+                : this.renderTrigger()}
+            </Root>
+          );
+        }}
+      </ModifiersContext.Consumer>
     );
   }
 

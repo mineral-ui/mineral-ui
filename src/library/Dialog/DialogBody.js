@@ -5,6 +5,7 @@ import { createThemedComponent, mapComponentThemes } from '../themes';
 import DialogRow, {
   componentTheme as dialogRowComponentTheme
 } from './DialogRow';
+import ModifiersContext from './ModifiersContext';
 import _OverflowContainerWithShadows, {
   componentTheme as overflowContainerWithShadowsComponentTheme
 } from '../OverflowContainer/OverflowContainerWithShadows';
@@ -108,10 +109,22 @@ export default class DialogBody extends Component<Props> {
     const rootProps = {
       ...restProps
     };
+    const modifiers = {
+      flip: {
+        boundariesElement: 'window'
+      },
+      preventOverflow: {
+        escapeWithReference: true
+      }
+    };
 
     return (
       <Root {...rootProps}>
-        <OverflowContainerWithShadows>{children}</OverflowContainerWithShadows>
+        <OverflowContainerWithShadows>
+          <ModifiersContext.Provider value={modifiers}>
+            {children}
+          </ModifiersContext.Provider>
+        </OverflowContainerWithShadows>
       </Root>
     );
   }
