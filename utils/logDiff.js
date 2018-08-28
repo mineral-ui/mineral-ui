@@ -2,14 +2,12 @@
 const jsdiff = require('diff');
 require('colors');
 
-export default function logDiff(label: string, a: string, b: string) {
-  const { write } = process.stdout;
+export default function logDiff(label: any, a: string, b: string) {
   const diff = jsdiff.diffChars(a, b);
-  // $FlowFixMe
-  write(`${label['yellow']}\n`);
+  process.stdout.write(`${label['yellow']}\n`);
   diff.forEach(({ added, removed, value }) => {
     const color = added ? 'green' : removed ? 'red' : 'grey';
-    write(value[color]);
+    process.stdout.write(value[color]);
   });
-  write('\n\n');
+  process.stdout.write('\n\n');
 }
