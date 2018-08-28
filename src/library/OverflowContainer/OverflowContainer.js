@@ -6,8 +6,11 @@ import { createStyledComponent } from '../styles';
 
 type Props = {
   children?: React$Node,
+  containerRef?: (node: HTMLElement) => void,
+  hideScrollbars?: boolean,
   scrollX?: boolean,
-  scrollY?: boolean
+  scrollY?: boolean,
+  tabIndex?: number | string
 };
 
 type State = {
@@ -23,7 +26,7 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'div',
-  ({ scrollX, scrollY, theme: baseTheme }) => {
+  ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
     return {
@@ -35,7 +38,18 @@ const Root = createStyledComponent(
 
       '&:focus': {
         outline: theme.OverflowContainer_outline_focus
-      }
+      },
+
+      ...(hideScrollbars
+        ? {
+            overflow: '-moz-scrollbars-none',
+            '-ms-overflow-style': 'none',
+
+            '&::-webkit-scrollbar': {
+              display: 'none'
+            }
+          }
+        : undefined)
     };
   },
   {
@@ -62,31 +76,40 @@ export default class OverflowContainer extends Component<Props, State> {
   }
 
   setContainerRef = (node: HTMLElement) => {
+    const { containerRef } = this.props;
+
     this.container = node;
+    containerRef && containerRef(node);
   };
 
   updateScrollable = () => {
     const { scrollX, scrollY } = this.props;
     const node = this.container;
-    const scrollable = Boolean(
-      (scrollX && node && node.scrollWidth > node.clientWidth) ||
-        (scrollY && node && node.scrollHeight > node.clientHeight)
-    );
-    if (this.state.scrollable !== scrollable) {
-      this.setState({
-        scrollable
-      });
+    if (node) {
+      const scrollable = Boolean(
+        (scrollX && node.scrollWidth > node.clientWidth) ||
+          (scrollY && node.scrollHeight > node.clientHeight)
+      );
+      if (this.state.scrollable !== scrollable) {
+        this.setState({
+          scrollable
+        });
+      }
     }
   };
 
   handleWindowResize = debounce(this.updateScrollable, 500);
 
   render() {
-    const { children, ...restProps } = this.props;
+    const { children, tabIndex, ...restProps } = this.props;
 
     const rootProps = {
       innerRef: this.setContainerRef,
-      ...(this.state.scrollable ? { tabIndex: 0 } : undefined),
+      ...(tabIndex !== undefined
+        ? { tabIndex }
+        : this.state.scrollable
+          ? { tabIndex: 0 }
+          : undefined),
       ...restProps
     };
     return (

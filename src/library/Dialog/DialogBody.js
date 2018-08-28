@@ -58,6 +58,7 @@ const styles = {
       flex: '1 1 auto',
       fontSize,
       margin: 0,
+      minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
       padding: 0,
 
       // Margins when no header or footer
@@ -78,15 +79,20 @@ const styles = {
     )}`;
 
     return {
+      display: 'flex',
       flex: '1 1 auto',
-      paddingLeft: paddingHorizontal,
-      paddingRight: paddingHorizontal,
 
-      '& > :first-child': {
-        marginTop: 0
-      },
-      '& > :last-child': {
-        marginBottom: 0
+      // OverflowContainerWithShadows > Scroller
+      '& > div': {
+        paddingLeft: paddingHorizontal,
+        paddingRight: paddingHorizontal,
+
+        '& > :first-child': {
+          marginTop: 0
+        },
+        '& > :last-child': {
+          marginBottom: 0
+        }
       }
     };
   }
@@ -97,7 +103,8 @@ const Root = createStyledComponent(DialogRow, styles.root, {
 });
 const OverflowContainerWithShadows = createStyledComponent(
   ThemedOverflowContainerWithShadows,
-  styles.scrollShadowBox
+  styles.scrollShadowBox,
+  { withProps: { scrollY: true } }
 );
 
 /**

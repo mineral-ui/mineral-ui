@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OverflowContainerWithShadows applies shadow when scrollable 1`] = `
+.emotion-1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-0 {
+  outline: 0;
+  overflow-x: auto;
+  -webkit-transition: outline 0.1s 0.25s;
+  transition: outline 0.1s 0.25s;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #1d5bbf;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.emotion-5::before {
+  bottom: 0;
+  box-shadow: inset -8px 0 8px -8px #8e99ab,inset -1px 0 #c8d1e0;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+<OverflowContainerWithShadows
+  scrollX={true}
+>
+  <OverflowContainerWithShadows
+    hasShadowLeft={false}
+    hasShadowRight={true}
+  >
+    <div
+      className="emotion-5"
+    >
+      <Scroller
+        containerRef={[Function]}
+        onScroll={[Function]}
+        scrollX={true}
+        tabIndex={0}
+      >
+        <Scroller
+          className="emotion-1"
+          containerRef={[Function]}
+          onScroll={[Function]}
+          scrollX={true}
+          tabIndex={0}
+        >
+          <Themed(OverflowContainer)
+            className="emotion-1"
+            containerRef={[Function]}
+            onScroll={[Function]}
+            scrollX={true}
+            tabIndex={0}
+          >
+            <ThemeProvider>
+              <ThemeProvider>
+                <OverflowContainer
+                  className="emotion-1"
+                  containerRef={[Function]}
+                  onScroll={[Function]}
+                  scrollX={true}
+                  tabIndex={0}
+                >
+                  <OverflowContainer
+                    className="emotion-1"
+                    containerRef={[Function]}
+                    innerRef={[Function]}
+                    onScroll={[Function]}
+                    scrollX={true}
+                    tabIndex={0}
+                  >
+                    <div
+                      className="emotion-0"
+                      onScroll={[Function]}
+                      tabIndex={0}
+                    >
+                      <EventListener
+                        listeners={
+                          Array [
+                            Object {
+                              "event": "resize",
+                              "handler": [Function],
+                              "target": "window",
+                            },
+                          ]
+                        }
+                      />
+                    </div>
+                  </OverflowContainer>
+                </OverflowContainer>
+              </ThemeProvider>
+            </ThemeProvider>
+          </Themed(OverflowContainer)>
+        </Scroller>
+      </Scroller>
+    </div>
+  </OverflowContainerWithShadows>
+</OverflowContainerWithShadows>
+`;
+
+exports[`OverflowContainerWithShadows does not apply shadow when not scrollable 1`] = `
+.emotion-1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-0 {
+  outline: 0;
+  overflow-x: auto;
+  -webkit-transition: outline 0.1s 0.25s;
+  transition: outline 0.1s 0.25s;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #1d5bbf;
+}
+
+<OverflowContainerWithShadows
+  scrollX={true}
+>
+  <OverflowContainerWithShadows
+    hasShadowLeft={false}
+    hasShadowRight={false}
+  >
+    <div
+      className="emotion-5"
+    >
+      <Scroller
+        containerRef={[Function]}
+        onScroll={[Function]}
+        scrollX={true}
+      >
+        <Scroller
+          className="emotion-1"
+          containerRef={[Function]}
+          onScroll={[Function]}
+          scrollX={true}
+        >
+          <Themed(OverflowContainer)
+            className="emotion-1"
+            containerRef={[Function]}
+            onScroll={[Function]}
+            scrollX={true}
+          >
+            <ThemeProvider>
+              <ThemeProvider>
+                <OverflowContainer
+                  className="emotion-1"
+                  containerRef={[Function]}
+                  onScroll={[Function]}
+                  scrollX={true}
+                >
+                  <OverflowContainer
+                    className="emotion-1"
+                    containerRef={[Function]}
+                    innerRef={[Function]}
+                    onScroll={[Function]}
+                    scrollX={true}
+                  >
+                    <div
+                      className="emotion-0"
+                      onScroll={[Function]}
+                    >
+                      <EventListener
+                        listeners={
+                          Array [
+                            Object {
+                              "event": "resize",
+                              "handler": [Function],
+                              "target": "window",
+                            },
+                          ]
+                        }
+                      />
+                    </div>
+                  </OverflowContainer>
+                </OverflowContainer>
+              </ThemeProvider>
+            </ThemeProvider>
+          </Themed(OverflowContainer)>
+        </Scroller>
+      </Scroller>
+    </div>
+  </OverflowContainerWithShadows>
+</OverflowContainerWithShadows>
+`;

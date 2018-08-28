@@ -122,7 +122,6 @@ const Root = createStyledComponent(
   },
   {
     displayName: 'Popover',
-    includeStyleReset: true,
     forwardProps: ['tag'],
     rootEl: 'span'
   }
