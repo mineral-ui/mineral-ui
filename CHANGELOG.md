@@ -1,3 +1,23 @@
+<a name="0.43.0"></a>
+# [0.43.0](https://github.com/mineral-ui/mineral-ui/compare/v0.42.0...v0.43.0) (2018-08-28)
+
+
+### Code Refactoring
+
+* **overflow-container,table:** Extract shared OverflowContainer ([64ea73f](https://github.com/mineral-ui/mineral-ui/commit/64ea73f))
+
+
+### Features
+
+* **dialog:** Add components ([46fd1a6](https://github.com/mineral-ui/mineral-ui/commit/46fd1a6))
+
+
+### BREAKING CHANGES
+
+* **overflow-container,table:** Rename theme variable from `Table_boxShadow_focus` to `Table_outline_focus`
+
+
+
 <a name="0.42.0"></a>
 # [0.42.0](https://github.com/mineral-ui/mineral-ui/compare/v0.41.0...v0.42.0) (2018-08-13)
 
