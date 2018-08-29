@@ -66,13 +66,6 @@ const styles = {
       },
       '&:last-child': {
         marginBottom: marginVertical
-      },
-
-      '& > :first-child': {
-        marginTop: 0
-      },
-      '& > :last-child': {
-        marginBottom: 0
       }
     };
   },
@@ -87,7 +80,14 @@ const styles = {
     return {
       flex: '1 1 auto',
       paddingLeft: paddingHorizontal,
-      paddingRight: paddingHorizontal
+      paddingRight: paddingHorizontal,
+
+      '& > :first-child': {
+        marginTop: 0
+      },
+      '& > :last-child': {
+        marginBottom: 0
+      }
     };
   }
 };
