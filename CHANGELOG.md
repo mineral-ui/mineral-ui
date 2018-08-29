@@ -1,3 +1,13 @@
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/mineral-ui/mineral-ui/compare/v0.43.0...v0.44.0) (2018-08-29)
+
+
+### Bug Fixes
+
+* **dialog:** Remove top & bottom margins from first & last body children ([092e095](https://github.com/mineral-ui/mineral-ui/commit/092e095))
+
+
+
 <a name="0.43.0"></a>
 # [0.43.0](https://github.com/mineral-ui/mineral-ui/compare/v0.42.0...v0.43.0) (2018-08-28)
 
