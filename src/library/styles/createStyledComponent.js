@@ -4,7 +4,6 @@ import styled from 'react-emotion';
 import withPropsFn from 'recompose/withProps';
 import componentStyleReset from './componentStyleReset';
 import isValidProp from '../utils/isValidProp';
-import { isProduction } from '../utils/nodeEnv';
 
 type Element =
   | React$StatelessFunctionalComponent<*>
@@ -65,7 +64,9 @@ export default function createStyledComponent(
   }
 
   const styledComponent = styled(element, {
-    ...(!isProduction && displayName ? { label: displayName } : undefined),
+    ...(process.env.NODE_ENV !== 'production' && displayName
+      ? { label: displayName }
+      : undefined),
     shouldForwardProp: (prop) => {
       /*
        * These props are filtered in Emotion's default implementation of
