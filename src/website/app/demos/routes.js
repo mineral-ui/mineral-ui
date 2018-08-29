@@ -1,5 +1,15 @@
 /* @flow */
-export default [
+
+export type DemoRoutes = Array<DemoRoute>;
+export type DemoRoute = Array<Route> | Route;
+type Route = {
+  description: string,
+  redirect?: string,
+  slug: string,
+  title: string
+};
+
+const demoRoutes: DemoRoutes = [
   {
     description:
       'Avatar provides a graphic representation of an identity. It can display an image, text, or an icon.',
@@ -151,6 +161,7 @@ export default [
   },
   [
     {
+      description: 'Redirect layout to box',
       redirect: 'box',
       slug: 'layout',
       title: 'Layout'
@@ -291,3 +302,5 @@ export default [
     title: 'Tooltip'
   }
 ];
+
+export default demoRoutes;

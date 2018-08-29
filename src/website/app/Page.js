@@ -23,10 +23,12 @@ import _Nav from './Nav';
 import siteColors from './siteColors';
 import { heroTheme } from './pages/Home/index';
 
+import { type DemoRoutes } from './demos/routes';
+
 type Props = {
   children: React$Node,
   chromeless?: boolean,
-  demoRoutes: Array<DemoRoute>,
+  demoRoutes: DemoRoutes,
   glitched?: boolean,
   headerContent?: React$Node,
   pageMeta?: {
@@ -36,12 +38,6 @@ type Props = {
   },
   slug?: string,
   type?: number
-};
-
-type DemoRoute = {
-  description: string,
-  slug: string,
-  title: string
 };
 
 type State = {
