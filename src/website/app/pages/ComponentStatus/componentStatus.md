@@ -45,6 +45,7 @@ Statuses:
 | [ThemeProvider](/components/theme-provider) | [available]      |
 | [Tooltip](/components/tooltip)              | [available]      |
 | Tabs                                        | [in development] |
+| Navigation                                  | [planned]        |
 | Alert                                       |                  |
 | Badge                                       |                  |
 | BreadCrumbs                                 |                  |
@@ -60,7 +61,6 @@ Statuses:
 | List                                        |                  |
 | LogIn                                       |                  |
 | Maps                                        |                  |
-| Navigation                                  |                  |
 | Notification                                |                  |
 | NumberInput                                 |                  |
 | PageTemplate                                |                  |
