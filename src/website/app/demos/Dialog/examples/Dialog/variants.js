@@ -1,4 +1,5 @@
 /* @flow */
+import Text from '../../../../../../library/Text';
 import capitalize from '../../../../utils/capitalize';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
@@ -12,7 +13,8 @@ automatically applied to the title and primary action.`,
   scope: {
     capitalize,
     DemoLayout,
-    Dialog
+    Dialog,
+    Text
   },
   source: `() => {
     return ['success', 'warning', 'danger'].map(variant => {
@@ -25,9 +27,11 @@ automatically applied to the title and primary action.`,
               { text: 'Cancel' },
               { text: 'Action' }
             ]}>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </Dialog>
+            <Text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Text>
+          </Dialog>
         </DemoLayout>
       );
     });

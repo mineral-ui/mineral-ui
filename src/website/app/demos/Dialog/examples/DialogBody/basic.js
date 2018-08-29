@@ -6,17 +6,18 @@ import {
   DialogHeader,
   DialogTitle
 } from '../../../../../../library/Dialog';
+import Text from '../../../../../../library/Text';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
 
 const content = (
-  <p>
+  <Text>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Viverra nam libero justo
     laoreet sit amet. Vitae sapien pellentesque habitant morbi tristique.
     Posuere lorem ipsum dolor sit. Vel risus commodo viverra maecenas accumsan.
     Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin.
-  </p>
+  </Text>
 );
 
 export default {

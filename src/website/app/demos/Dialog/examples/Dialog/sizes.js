@@ -1,4 +1,5 @@
 /* @flow */
+import Text from '../../../../../../library/Text';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
 
@@ -9,7 +10,8 @@ export default {
 & width) with the \`size\` prop.`,
   scope: {
     DemoLayout,
-    Dialog
+    Dialog,
+    Text
   },
   source: `() =>
     ['small', 'medium', 'large'].map(size => (
@@ -21,9 +23,11 @@ export default {
             { text: 'Cancel' },
             { text: 'Action' }
           ]}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </Dialog>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Text>
+        </Dialog>
       </DemoLayout>
     ));`
 };

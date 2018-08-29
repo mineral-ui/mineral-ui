@@ -7,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle
 } from '../../../../../../library/Dialog';
+import Text from '../../../../../../library/Text';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
 
@@ -39,7 +40,8 @@ with [DialogHeader](/components/dialog-header),
     DialogBody,
     DialogFooter,
     DialogHeader,
-    DialogTitle
+    DialogTitle,
+    Text
   },
   source: `
     <DemoLayout>
@@ -50,8 +52,10 @@ with [DialogHeader](/components/dialog-header),
           </DialogTitle>
         </DialogHeader>
         <DialogBody>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Text>
         </DialogBody>
         <DialogFooter>
           <DialogActions>

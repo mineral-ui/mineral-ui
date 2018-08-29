@@ -2,6 +2,7 @@
 import { Component } from 'react';
 import Button from '../../../../../../library/Button';
 import Dialog from '../../../../../../library/Dialog';
+import Text from '../../../../../../library/Text';
 
 export default {
   id: 'trigger',
@@ -10,7 +11,8 @@ export default {
   scope: {
     Button,
     Component,
-    Dialog
+    Dialog,
+    Text
   },
   source: `() => {
     class Demo extends Component {
@@ -52,8 +54,10 @@ export default {
               ]}
               isOpen={isOpen}
               onClose={this.handleClose}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Text>
             </Dialog>
           </div>
         )

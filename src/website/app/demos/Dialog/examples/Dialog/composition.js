@@ -6,6 +6,7 @@ import Dropdown from '../../../../../../library/Dropdown';
 import Flex, { FlexItem } from '../../../../../../library/Flex';
 import Popover from '../../../../../../library/Popover';
 import Select from '../../../../../../library/Select';
+import Text from '../../../../../../library/Text';
 import Tooltip from '../../../../../../library/Tooltip';
 import { statesData as data } from '../../../Select/components/selectData';
 
@@ -23,6 +24,7 @@ export default {
     FlexItem,
     Popover,
     Select,
+    Text,
     Tooltip
   },
   source: `() => {
@@ -65,23 +67,25 @@ export default {
               ]}
               isOpen={isOpen}
               onClose={this.handleClose}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Text>
 
-                <Flex>
-                  <FlexItem>
-                    <Popover content="Popover"><Button>Popover</Button></Popover>
-                  </FlexItem>
-                  <FlexItem>
-                    <Tooltip content="Tooltip"><Button>Tooltip</Button></Tooltip>
-                  </FlexItem>
-                  <FlexItem>
-                    <Dropdown data={[{ text: 'Dropdown' }]}><Button>Dropdown</Button></Dropdown>
-                  </FlexItem>
-                  <FlexItem>
-                    <Select data={data} name="state" />
-                  </FlexItem>
-                </Flex>
+              <Flex>
+                <FlexItem>
+                  <Popover content="Popover"><Button>Popover</Button></Popover>
+                </FlexItem>
+                <FlexItem>
+                  <Tooltip content="Tooltip"><Button>Tooltip</Button></Tooltip>
+                </FlexItem>
+                <FlexItem>
+                  <Dropdown data={[{ text: 'Dropdown' }]}><Button>Dropdown</Button></Dropdown>
+                </FlexItem>
+                <FlexItem>
+                  <Select data={data} name="state" />
+                </FlexItem>
+              </Flex>
 
             </Dialog>
           </div>

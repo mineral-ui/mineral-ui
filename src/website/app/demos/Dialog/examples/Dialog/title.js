@@ -1,5 +1,6 @@
 /* @flow */
 import { DialogTitle } from '../../../../../../library/Dialog';
+import Text from '../../../../../../library/Text';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
 
@@ -13,7 +14,8 @@ some props, such as \`id\` & \`variant\`, to DialogTitle.`,
   scope: {
     DemoLayout,
     Dialog,
-    DialogTitle
+    DialogTitle,
+    Text
   },
   source: `
     <div>
@@ -24,8 +26,10 @@ some props, such as \`id\` & \`variant\`, to DialogTitle.`,
             { text: 'Cancel' },
             { text: 'Action' }
           ]}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </Text>
         </Dialog>
       </DemoLayout>
     </div>`

@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import Link from '../../../../library/Link';
+import Text from '../../../../library/Text';
 import DemoLayout from './components/DemoLayout';
 import Dialog from './components/DemoDialog';
 
@@ -77,10 +78,10 @@ long or too complex within a Dialog.`,
             <Dialog
               title="Team Policies"
               actions={[{ text: 'Disagree' }, { text: 'I agree' }]}>
-              <p>
+              <Text>
                 Click <Link href="javascript:void(0);">here</Link> to read the
                 entire team policy
-              </p>
+              </Text>
             </Dialog>
           </DemoLayout>
         </div>
@@ -95,12 +96,12 @@ contextual information; use [Tooltip](/components/tooltip) or
         <div>
           <DemoLayout>
             <Dialog aria-label="Info">
-              <p>
+              <Text>
                 Fluorite is the mineral form of calcium fluoride, CaF₂. It
                 belongs to the halide minerals. It crystallizes in isometric
                 cubic habit, although octahedral and more complex isometric
                 forms are not uncommon.
-              </p>
+              </Text>
             </Dialog>
           </DemoLayout>
         </div>

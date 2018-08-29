@@ -1,4 +1,5 @@
 /* @flow */
+import Text from '../../../../../../library/Text';
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
 
@@ -9,7 +10,8 @@ export default {
 [DialogHeader](/components/dialog-header) which closes the Dialog on click.`,
   scope: {
     DemoLayout,
-    Dialog
+    Dialog,
+    Text
   },
   source: `
     <DemoLayout>
@@ -20,8 +22,10 @@ export default {
           { text: 'Cancel' },
           { text: 'Action' }
         ]}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
       </Dialog>
     </DemoLayout>
   `

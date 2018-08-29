@@ -1,6 +1,7 @@
 /* @flow */
 import DemoLayout from '../../components/DemoLayout';
 import Dialog from '../../components/DemoDialog';
+import Text from '../../../../../../library/Text';
 
 export default {
   id: 'basic',
@@ -10,7 +11,8 @@ contextual information, and require a user decision or acknowledgment through
 \`actions\`.`,
   scope: {
     DemoLayout,
-    Dialog
+    Dialog,
+    Text
   },
   source: `
     <DemoLayout>
@@ -20,8 +22,10 @@ contextual information, and require a user decision or acknowledgment through
           { text: 'Cancel' },
           { text: 'Action' }
         ]}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
       </Dialog>
     </DemoLayout>`
 };
