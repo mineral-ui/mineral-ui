@@ -15,7 +15,7 @@ const getWidth = (
   columns: number,
   gutter: number | string
 ): number | string =>
-  value ? `calc(${value / columns * 100}% - ${gutter})` : 0;
+  value ? `calc(${(value / columns) * 100}% - ${gutter})` : 0;
 
 /*
  * [1] IE11 doesn't use the correct box-sizing model with the flex-basis

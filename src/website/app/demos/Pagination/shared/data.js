@@ -1,3 +1,4 @@
+/* @flow */
 export const columns = [
   { content: 'Mineral', key: 'name' },
   { content: 'Color', key: 'color' },

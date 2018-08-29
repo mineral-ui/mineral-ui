@@ -73,7 +73,9 @@ const createRootNode = (props: Props) => {
   const element =
     props.element && props.element !== defaultElement
       ? props.element
-      : props.primary ? 'th' : defaultElement;
+      : props.primary
+        ? 'th'
+        : defaultElement;
 
   return createStyledComponent(element, styles, {
     displayName: 'TableCell',

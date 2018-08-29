@@ -37,7 +37,9 @@ export type SortableType = {
 const normalizedValue = (value) =>
   value === null || value === undefined
     ? ''
-    : typeof value === 'string' ? value.toUpperCase() : value;
+    : typeof value === 'string'
+      ? value.toUpperCase()
+      : value;
 
 export const defaultSortComparator: SortComparator = (a, b, key) => {
   const valueA = normalizedValue(a[key]);

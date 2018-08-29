@@ -94,7 +94,9 @@ const getWhiteOrBlackTextColor = (color, colors, override) => {
   );
 
   return override && typeof override.inflection === 'number'
-    ? override.inflection > inflectionPoints[color] ? black : white
+    ? override.inflection > inflectionPoints[color]
+      ? black
+      : white
     : white;
 };
 

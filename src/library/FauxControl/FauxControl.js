@@ -247,11 +247,15 @@ const styles = {
       flex: '0 0 auto',
       fontSize,
       marginLeft: rtl
-        ? iconEnd || variant ? 0 : marginWithIcon
+        ? iconEnd || variant
+          ? 0
+          : marginWithIcon
         : marginWithoutIcon,
       marginRight: rtl
         ? marginWithoutIcon
-        : iconEnd || variant ? 0 : marginWithIcon,
+        : iconEnd || variant
+          ? 0
+          : marginWithIcon,
       whiteSpace: 'nowrap',
       ...ellipsis('8em')
     };
@@ -321,7 +325,9 @@ function getIcons({
   const endIconSource =
     iconEnd !== null && variant
       ? variantIcons[variant]
-      : iconEnd ? iconEnd : null;
+      : iconEnd
+        ? iconEnd
+        : null;
 
   const endIcon =
     endIconSource &&

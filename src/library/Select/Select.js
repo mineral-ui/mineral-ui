@@ -528,7 +528,9 @@ export default class Select extends Component<Props, State> {
         return {
           highlightedIndex: selectedItem
             ? this.items.indexOf(selectedItem)
-            : prevState.highlightedIndex ? prevState.highlightedIndex : 0
+            : prevState.highlightedIndex
+              ? prevState.highlightedIndex
+              : 0
         };
       }, this.scrollHighlightedItemIntoViewIfNeeded);
     }

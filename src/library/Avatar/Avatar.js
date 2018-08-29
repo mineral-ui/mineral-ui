@@ -64,7 +64,9 @@ const Root = createStyledComponent(
       borderRadius:
         shape === 'square'
           ? null
-          : shape === 'rounded' ? theme.borderRadius_1 : '100%',
+          : shape === 'rounded'
+            ? theme.borderRadius_1
+            : '100%',
       display: 'inline-flex',
       fontWeight: theme.Avatar_fontWeight,
       height: size,

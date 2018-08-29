@@ -59,7 +59,9 @@ export default function DialogActions(props: Props) {
       variant:
         props.variant !== undefined
           ? props.variant
-          : index === lastIndex ? variant : undefined
+          : index === lastIndex
+            ? variant
+            : undefined
     });
     /* eslint-enable react/prop-types */
   });

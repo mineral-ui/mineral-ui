@@ -156,7 +156,8 @@ hidden inside a Tooltip is much less likely to be discovered by the user.
             Friedrich Mohs
           </CardTitle>
           <CardBlock>
-            <b>Born</b>: January 29, 1773<br />
+            <b>Born</b>: January 29, 1773
+            <br />
             <b>Died</b>: September 29, 1839
           </CardBlock>
         </Card>

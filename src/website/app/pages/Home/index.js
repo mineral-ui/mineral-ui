@@ -213,7 +213,7 @@ const styles = {
     },
 
     [theme.bp_home_navExpanded]: {
-      flex: `0 0 ${5 / 12 * 100}%`,
+      flex: `0 0 ${(5 / 12) * 100}%`,
       textAlign: 'left',
 
       '& + &': {
@@ -392,8 +392,8 @@ const styles = {
 
     [theme.bp_home_guidelinesMultiColumn]: {
       flex: `1 1 auto`,
-      marginLeft: `${1 / 12 * 100}%`,
-      marginRight: `${1 / 12 * 100}%`,
+      marginLeft: `${(1 / 12) * 100}%`,
+      marginRight: `${(1 / 12) * 100}%`,
       order: 1,
       textAlign: 'right'
     },
@@ -429,7 +429,7 @@ const styles = {
     // Guidelines
     '& > div > :last-child': {
       [theme.bp_home_betweenMoreSpaciousAndGuidelinesMultiColumn]: {
-        margin: `0 ${1 / 12 * 100}%`
+        margin: `0 ${(1 / 12) * 100}%`
       }
     }
   }),
@@ -566,7 +566,7 @@ const styles = {
     // Playground
     '& > div > :last-child': {
       [theme.bp_home_guidelinesMultiColumn]: {
-        margin: `0 ${1 / 12 * 100}%`
+        margin: `0 ${(1 / 12) * 100}%`
       }
     }
   })

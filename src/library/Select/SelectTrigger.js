@@ -110,7 +110,9 @@ const styles = {
         color:
           disabled || readOnly
             ? theme.color_disabled
-            : variant ? theme[`icon_color_${variant}`] : theme.SelectIcon_color
+            : variant
+              ? theme[`icon_color_${variant}`]
+              : theme.SelectIcon_color
       },
 
       // the variant icon

@@ -187,7 +187,9 @@ export default function TableSortableHeaderCell({
   return (
     <Root {...rootProps}>
       <Button {...buttonProps}>
-        <Content>{children}</Content>&nbsp;<IconHolder {...iconHolderProps}>
+        <Content>{children}</Content>
+        &nbsp;
+        <IconHolder {...iconHolderProps}>
           {sortIcon[iconHolderProps.direction]}
         </IconHolder>
       </Button>

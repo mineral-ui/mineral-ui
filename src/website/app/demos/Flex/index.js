@@ -19,7 +19,8 @@ export default [
           In addition to the props above, FlexItem also accepts all props for{' '}
           <a href="/components/box" key={0}>
             Box
-          </a>.
+          </a>
+          .
         </p>
         <p>
           <em key={1}>
@@ -49,7 +50,9 @@ powerful and flexible enough to be the foundation of your app's layout.`
           (and for{' '}
           <a href="/components/flex" key={1}>
             Flex
-          </a>, if <code key={2}>flex</code> is <code key={3}>true</code>).
+          </a>
+          , if <code key={2}>flex</code> is <code key={3}>true</code>
+          ).
         </p>
         <p>
           <em key={1}>

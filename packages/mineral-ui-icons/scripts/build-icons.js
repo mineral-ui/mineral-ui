@@ -155,7 +155,7 @@ function optimizeSvg(componentName, fileContent) {
       if (DEBUG) {
         // Gather optimization metrics for logging
         const bytesSaved = fileContent.length - optimizedContent.length;
-        const percentSaved = bytesSaved / fileContent.length * 100;
+        const percentSaved = (bytesSaved / fileContent.length) * 100;
         totalBytesSaved += bytesSaved;
         console.log(
           `· ${componentName}: saved ${prettyBytes(bytesSaved)} [${Math.round(
@@ -199,7 +199,9 @@ async function buildIcons() {
     (a, b) =>
       a.componentName > b.componentName
         ? 1
-        : b.componentName > a.componentName ? -1 : 0
+        : b.componentName > a.componentName
+          ? -1
+          : 0
   );
 
   return Promise.all([

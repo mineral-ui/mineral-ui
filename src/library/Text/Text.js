@@ -121,7 +121,9 @@ const styles = {
     const appearance =
       propAppearance !== Text.defaultProps.appearance
         ? propAppearance
-        : isHeadingElement ? element : undefined;
+        : isHeadingElement
+          ? element
+          : undefined;
     const headingAppearance =
       headingElements.indexOf(appearance) !== -1 && appearance;
 

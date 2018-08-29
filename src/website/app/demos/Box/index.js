@@ -16,7 +16,8 @@ export default {
         All of the margin/padding props above are applied in a specific{' '}
         <a href="#spacing" key={0}>
           order of precedence
-        </a>.
+        </a>
+        .
       </p>
       <p>
         <em key={1}>
