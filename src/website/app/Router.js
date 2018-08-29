@@ -3,6 +3,7 @@ import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import flatten from 'lodash/flatten';
 import createKeyMap from './utils/createKeyMap';
+import demoRoutes from './demos/routes';
 import ComponentDocExample from './ComponentDocExample';
 import Page from './Page';
 import sections from './pages';
@@ -10,16 +11,6 @@ import ComponentDoc from './pages/ComponentDoc';
 import NotFound from './pages/NotFound';
 import Loadable from './Loadable';
 import ScrollToIdOnMount from './ScrollToIdOnMount';
-
-type Props = {
-  demoRoutes: Array<DemoRoute>
-};
-
-type DemoRoute = {
-  description: string,
-  slug: string,
-  title: string
-};
 
 const AsyncHome = Loadable({
   loader: () => import('./pages/Home')
@@ -31,8 +22,7 @@ const getPageHeader = (heading: string, title: string) => {
 # ${title}`;
 };
 
-export default function Router(props: Props) {
-  const { demoRoutes } = props;
+export default function Router() {
   const flatDemoRoutes = flatten(demoRoutes);
   const keyedDemoRoutes = createKeyMap(flatDemoRoutes, 'slug');
   const firstDemoSlug = flatDemoRoutes[0].slug;

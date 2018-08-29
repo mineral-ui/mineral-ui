@@ -14,15 +14,10 @@ declare var GOOGLE_TRACKING_ID: string;
 type Props = {
   children?: any,
   className?: string,
-  demoRoutes: Array<DemoRoute>,
   history: Object,
-  location?: any
-};
-
-type DemoRoute = {
-  description: string,
-  slug: string,
-  title: string
+  location?: {
+    search: string
+  }
 };
 
 const siteTheme = {
@@ -126,13 +121,11 @@ class App extends Component<Props> {
   }
 
   render() {
-    const { demoRoutes } = this.props;
-
     return (
       <ThemeProvider>
         <ThemeProvider theme={siteTheme}>
           <div>
-            <Router demoRoutes={demoRoutes} />
+            <Router />
             <BaselineGrid />
           </div>
         </ThemeProvider>
