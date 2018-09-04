@@ -1,13 +1,16 @@
 /* @flow */
 import { Component } from 'react';
 import Button from '../../../../../library/Button';
-import Flex, { FlexItem } from '../../../../../library/Flex';
+import ButtonGroup from '../../../../../library/ButtonGroup';
+import Box from '../../../../../library/Box';
 import Table from '../../../../../library/Table';
 import {
+  columns2,
   columns4,
-  columns104,
-  rows100x104,
-  rows100x4
+  columns100,
+  rows100x100,
+  rows100x4,
+  rows2x2
 } from '../shared/largeData';
 
 export default {
@@ -18,15 +21,17 @@ export default {
 before clicking those buttons. 😬`,
   hideFromProd: true,
   scope: {
+    Box,
     Button,
+    ButtonGroup,
     Component,
     Table,
-    Flex,
-    FlexItem,
+    columns2,
     columns4,
-    columns104,
-    rows100x104,
-    rows100x4
+    columns100,
+    rows100x100,
+    rows100x4,
+    rows2x2
   },
   source: `
     () => {
@@ -35,45 +40,49 @@ before clicking those buttons. 😬`,
           super(props);
 
           this.state = {
-            columns: [
-              { content: 'AA', key: 'aa', sortable: true },
-              { content: 'AB', key: 'ab' }
-            ],
-            data: [
-              { aa: 'aa0', ab: 'ab0' },
-              { aa: 'aa1', ab: 'ab1' }
-            ]
+            columns: columns2,
+            data: rows2x2
           };
 
-          this.populate4x1000 = this.populate4x1000.bind(this);
-          this.populate104x100 = this.populate104x100.bind(this);
+          this.populate2x2 = this.populate2x2.bind(this);
+          this.populate4x100 = this.populate4x100.bind(this);
+          this.populate100x100 = this.populate100x100.bind(this);
         }
 
-        populate4x1000() {
+        populate2x2() {
+          this.setState({
+            columns: columns2,
+            data: rows2x2
+          })
+        }
+
+        populate4x100() {
           this.setState({
             columns: columns4,
             data: rows100x4
           })
         }
 
-        populate104x100() {
+        populate100x100() {
           this.setState({
-            columns: columns104,
-            data: rows100x104
+            columns: columns100,
+            data: rows100x100
           })
         }
 
         render() {
           return (
             <div>
-              <Flex marginBottom="md">
-                <FlexItem>
-                  <Button onClick={this.populate4x1000} size="medium">4 &times; 100</Button>
-                </FlexItem>
-                <FlexItem>
-                  <Button onClick={this.populate104x100} size="medium">104 &times; 100</Button>
-                </FlexItem>
-              </Flex>
+              <Box marginBottom="md">
+                <ButtonGroup
+                  aria-label="Data options"
+                  mode="radio"
+                  size="medium">
+                  <Button onClick={this.populate2x2} defaultChecked>2 &times; 2</Button>
+                  <Button onClick={this.populate4x100}>4 &times; 100</Button>
+                  <Button onClick={this.populate100x100}>100 &times; 100</Button>
+                </ButtonGroup>
+              </Box>
               <Table
                 columns={this.state.columns}
                 data={this.state.data}

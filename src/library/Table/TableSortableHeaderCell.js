@@ -19,7 +19,11 @@ type Props = {
   messages: Messages,
   /** Name of column */
   name: string,
-  /** Provides custom rendering control */
+  /**
+   * Provides custom rendering control. See the
+   * [custom sortable header cell example](/components/table/#custom-sortable-header-cell)
+   * and our [render props guide](/render-props).
+   */
   render?: RenderFn,
   /** See Table */
   sortable: SortableType

@@ -1,101 +1,69 @@
 /* @flow */
+import React from 'react';
 import { palette } from 'mineral-ui-tokens';
 import { createStyledComponent } from '../../../../../library/styles';
-import { withTheme } from '../../../../../library/themes';
+import Flex from '../../../../../library/Flex';
 import Table from '../../../../../library/Table';
-import { componentTheme as tableCellTheme } from '../../../../../library/Table/TableCell';
-import renderPropDescription from '../../shared/renderPropDescription';
 import data from '../shared/data';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-cell',
   title: 'Custom Cell',
-  description: `Use the \`cell\`
-[render prop](https://reactjs.org/docs/render-props.html) in a column definiton
-to provide custom rendering control of all cells in that column.
-
-${renderPropDescription}
-
-Some things to keep in mind:
-
-1. Your custom renderer can build off of an existing component, e.g.
-   \`TableCell\`, or it can be all new, e.g. \`td\`.
-1. Because you are rendering a table cell, the rendered root element _must_ be a
-   \`td\`.
-1. Remember to accommodate the appearance-related Table props, like
-   [\`density\`](#density), [\`highContrast\`](#high-contrast), and
-   [\`striped\`](#striped), if appropriate for your app.
-1. If your app supports RTL languages, you can use \`theme.direction\` to
-   conditionally apply the necessary styles.`,
+  description: `Use the \`cell\` render prop in a column definiton to provide
+custom rendering control of all cells in that column.
+${renderPropsDescription}`,
   scope: {
     createStyledComponent,
-    Table,
-    palette,
     data,
-    tableCellTheme,
-    withTheme
+    Flex,
+    palette,
+    React,
+    Table
   },
   source: `
     () => {
-      /**
-       * If you wish to use theme variables in your function, you must either use
-       * createStyledComponent or the withTheme HOC, (higher order component),
-       * which provides the base theme as a prop.
-       *   import { withTheme } from 'mineral-ui/themes';
-       *
-       * If you wish to access a component specific theme, you'll need to import
-       * it and compose it with the base theme as shown below.
-       *   import { componentTheme as tableCellTheme } from 'mineral-ui/Table/TableCell';
-       */
-      const cell = ({ props }) => {
-        const { children } = props;
+       const Root = createStyledComponent('td', ({ theme }) => ({
+         padding: theme.space_stack_sm + ' ' + theme.space_inline_md,
 
-        const CustomCell = withTheme(({ theme: baseTheme }) => {
-          const theme = tableCellTheme(baseTheme);
+         'tr:hover > &': {
+           backgroundColor: palette.green_10
+         }
+       }));
 
-          const Root = createStyledComponent('td', {
-            padding:
-              theme.TableCell_paddingVertical +
-              ' ' +
-              theme.TableCell_paddingHorizontal,
+       const Emoji = createStyledComponent(
+         'span',
+         ({ theme }) => ({
+           display: 'inline-block',
+           marginRight: theme.space_inline_sm
+         }),
+         {
+           withProps: {
+             'aria-hidden': true,
+             role: 'img'
+           }
+         }
+       );
 
-            'tr:hover > &': {
-              backgroundColor: palette.green_10
-            }
-          });
+       const Content = createStyledComponent('span', ({ theme }) => ({
+         fontSize: theme.fontSize_ui,
+         textAlign: 'left'
+       }));
 
-          const Inner = createStyledComponent('span', {
-            display: 'flex'
-          });
+       class CustomCell extends React.PureComponent {
+         render() {
+           return (
+             <Root {...this.props}>
+               <Flex element="span">
+                 <Emoji>🌿</Emoji>
+                 <Content>{this.props.children}</Content>
+               </Flex>
+             </Root>
+           );
+         }
+       }
 
-
-          const Content = createStyledComponent('span', {
-            fontSize: theme.TableCell_fontSize,
-            textAlign: 'left'
-          });
-
-          const Emoji = createStyledComponent('span', {
-            display: 'inline-block',
-            marginRight: theme.space_inline_sm
-          }, {
-            withProps: {
-              'aria-hidden': true,
-              role: 'img'
-            }
-          });
-
-          return (
-            <Root {...props}>
-              <Inner>
-                <Emoji>🌿</Emoji>
-                <Content>{children}</Content>
-              </Inner>
-            </Root>
-          );
-        });
-
-        return <CustomCell />;
-      };
+      const cell = ({ props }) => <CustomCell {...props} />;
 
       const columns = [
         { content: 'Fruits', key: 'Fruits' },

@@ -8,16 +8,13 @@ import Menu from '../../../../../library/Menu';
 import TextInput from '../../../../../library/TextInput';
 import Text from '../../../../../library/Text';
 import { basicData as data } from '../components/selectData';
-import renderPropDescription from '../../shared/renderPropDescription';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-menu',
   title: 'Custom Menu',
-  description: `Use the \`menu\`
-[render prop](https://reactjs.org/docs/render-props.html) to provide custom
-rendering control of the [Menu](/components/menu).
-
-${renderPropDescription}
+  description: `Use the \`menu\` render prop to provide custom rendering control
+of the [Menu](/components/menu). ${renderPropsDescription}
 
 <Callout title="Note">
 The menu in the example below has been customized to include a search input.

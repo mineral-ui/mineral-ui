@@ -2,19 +2,17 @@
 
 import Select from '../../../../../library/Select';
 import item from '../../Menu/components/customItem';
-import renderPropDescription from '../../shared/renderPropDescription';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-item',
   title: 'Custom Item',
-  description: `Use the \`item\`
-[render prop](https://reactjs.org/docs/render-props.html) to provide custom
-rendering control of all [MenuItems](/components/menu-item) in the Menu.
+  description: `Use the \`item\` render prop to provide custom rendering control
+of all [MenuItems](/components/menu-item) in the Menu. ${renderPropsDescription}
 
 The implementation of \`item\` used in the following example can be seen
 in full in the [Menu](/components/menu/#custom-item) example.
-
-${renderPropDescription}`,
+`,
   scope: { item, Select },
   source: `
     () => {

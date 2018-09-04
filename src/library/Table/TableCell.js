@@ -16,7 +16,11 @@ type Props = {
   noPadding?: boolean,
   /** See Table's Column type */
   primary?: boolean,
-  /** Provides custom rendering control */
+  /**
+   * Provides custom rendering control. See the
+   * [custom cell example](/components/table/#custom-cell) and
+   * our [render props guide](/render-props).
+   */
   render?: RenderFn,
   /** See Table's Column type */
   textAlign?: 'start' | 'end' | 'center' | 'justify'
