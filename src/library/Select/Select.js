@@ -54,7 +54,7 @@ type Props = {
   /**
    * Provides custom rendering control for the items. See the
    * [custom item example](/components/select#custom-item) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   item?: RenderFn,
   /**
@@ -65,7 +65,7 @@ type Props = {
   /**
    * Provides custom rendering control for the menu. See the
    * [custom menu example](/components/select#custom-menu) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   menu?: RenderFn,
   /**
@@ -102,7 +102,7 @@ type Props = {
   /**
    * Provides custom rendering control for the trigger. See the
    * [custom trigger example](/components/select#custom-trigger) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   trigger?: RenderFn,
   /** Ref for the trigger */

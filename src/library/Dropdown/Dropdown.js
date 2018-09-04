@@ -19,7 +19,7 @@ type Props = {
   /**
    * Trigger for the Dropdown. Optionally provides custom rendering control.
    * See the [custom trigger example](/components/dropdown#custom-trigger)
-   * and [React docs](https://reactjs.org/docs/render-props.html).
+   * and our [render props guide](/render-props).
    */
   children: React$Node | RenderFn,
   /**
@@ -51,7 +51,7 @@ type Props = {
   /**
    * Provides custom rendering control for the items. See the
    * [custom item example](/components/dropdown#custom-item) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   item?: RenderFn,
   /**
@@ -62,7 +62,7 @@ type Props = {
   /**
    * Provides custom rendering control for the menu. See the
    * [custom menu example](/components/dropdown#custom-menu) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   menu?: RenderFn,
   /**

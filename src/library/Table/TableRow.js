@@ -13,7 +13,11 @@ type Props = {
   isSelected?: boolean,
   /** @Private Provided to user in render prop callback */
   isSelectable?: boolean,
-  /** Provides custom rendering control */
+  /**
+   * Provides custom rendering control. See the
+   * [custom row example](/components/table/#custom-row) and
+   * our [render props guide](/render-props).
+   */
   render?: RenderFn
 };
 

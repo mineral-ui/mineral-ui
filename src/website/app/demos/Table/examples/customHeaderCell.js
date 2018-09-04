@@ -1,100 +1,71 @@
 /* @flow */
-import { palette } from 'mineral-ui-tokens';
-import { createStyledComponent } from '../../../../../library/styles';
-import { withTheme } from '../../../../../library/themes';
+import React from 'react';
+import { createStyledComponent, pxToEm } from '../../../../../library/styles';
 import Table from '../../../../../library/Table';
-import TableHeaderCell, {
-  componentTheme as tableHeaderCellTheme
-} from '../../../../../library/Table/TableHeaderCell';
-import renderPropDescription from '../../shared/renderPropDescription';
 import data from '../shared/data';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-header-cell',
   title: 'Custom Header Cell',
-  description: `Use the \`headerCell\`
-[render prop](https://reactjs.org/docs/render-props.html) in a column definiton
-to provide custom rendering control of all table header cells in that
-column.
+  description: `Use the \`headerCell\` render prop in a column definiton to
+provide custom rendering control of all table header cells in that column.
+${renderPropsDescription}
 
-${renderPropDescription}
-
-Some things to keep in mind:
-
-1. Your custom renderer can build off of an existing component, e.g.
-   \`TableHeaderCell\`, or it can be all new, e.g. \`th\`.
-1. Because you are rendering a table column header, the rendered root element
-   _must_ be either a \`th\` (recommended) or a \`td\`.
-1. Refer to the [custom sortable header cell](#custom-sortable-header-cell) if
-  your data is sortable.
-1. Remember to accommodate the appearance-related Table props, like
-  [\`density\`](#density), [\`highContrast\`](#high-contrast), if appropriate
-  for your app.
-1. If your app supports RTL languages, you can use \`theme.direction\` to
-   conditionally apply the necessary styles.`,
+Refer to the [custom sortable header cell](#custom-sortable-header-cell) if
+your data is sortable.
+`,
   scope: {
     createStyledComponent,
-    Table,
-    palette,
     data,
-    TableHeaderCell,
-    tableHeaderCellTheme,
-    withTheme
+    pxToEm,
+    React,
+    Table
   },
   source: `
     () => {
-      /**
-       * If you wish to use theme variables in your function, you must either use
-       * createStyledComponent or the withTheme HOC, (higher order component),
-       * which provides the base theme as a prop.
-       *   import { withTheme } from 'mineral-ui/themes';
-       *
-       * If you wish to access a component specific theme, you'll need to import
-       * it and compose it with the base theme as shown below.
-       *   import { componentTheme as tableHeaderCellTheme } from 'mineral-ui/Table/TableHeaderCell';
-       */
-      const headerCell = ({ props }) => {
-        const { children, emoji } = props;
+      const Root = createStyledComponent('th', ({ theme }) => ({
+        padding: 0,
+        verticalAlign: 'bottom',
 
-        const CustomTableHeaderCell = withTheme(({ theme: baseTheme }) => {
-          const theme = tableHeaderCellTheme(baseTheme);
+        '&:not(:first-child)': {
+          borderLeft: '1px dotted ' + theme.borderColor
+        }
+      }));
 
-          const Root = createStyledComponent('th', {
-            padding: 0,
-            verticalAlign: 'bottom',
+      const Inner = createStyledComponent('span', ({theme}) => ({
+        alignItems: 'flex-end',
+        display: 'flex',
+        padding: pxToEm(12) + ' ' + theme.space_inline_md,
+        whiteSpace: 'nowrap'
+      }));
 
-            '&:not(:first-child)': {
-              borderLeft: theme.TableHeaderCell_borderVertical
-            }
-          });
+      const Content = createStyledComponent('span', ({ theme }) => ({
+        fontSize: theme.fontSize_ui,
+        fontWeight: theme.fontWeight_bold,
+        textAlign: 'left'
+      }));
 
-          const Inner = createStyledComponent('span', {
-            alignItems: 'flex-end',
-            display: 'flex',
-            padding:
-              theme.TableHeaderCell_paddingVertical +
-              ' ' +
-              theme.TableHeaderCell_paddingHorizontal
-          });
+      const Emoji = createStyledComponent(
+        'span',
+        ({ theme }) => ({
+          display: 'inline-block',
+          marginRight: theme.space_inline_sm
+        }),
+        {
+          withProps: {
+            'aria-hidden': true,
+            role: 'img'
+          }
+        }
+      );
 
-          const Content = createStyledComponent('span', {
-            fontSize: theme.TableHeaderCell_fontSize,
-            fontWeight: theme.TableHeaderCell_fontWeight,
-            textAlign: 'left'
-          });
-
-          const Emoji = createStyledComponent('span', {
-            display: 'inline-block',
-            marginRight: theme.space_inline_sm
-          }, {
-            withProps: {
-              'aria-hidden': true,
-              role: 'img'
-            }
-          });
+      class CustomHeaderCell extends React.PureComponent {
+        render() {
+          const { children, emoji } = this.props;
 
           return (
-            <Root {...props}>
+            <Root {...this.props}>
               <Inner>
                 <Content>
                   <Emoji>{emoji}</Emoji>
@@ -103,10 +74,10 @@ Some things to keep in mind:
               </Inner>
             </Root>
           );
-        });
+        }
+      }
 
-        return <CustomTableHeaderCell />;
-      };
+      const headerCell = ({ props }) => <CustomHeaderCell {...props} />;
 
       const columns = [
         { content: 'Fruits', key: 'Fruits', emoji: '🍎', headerCell },

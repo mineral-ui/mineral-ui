@@ -4,16 +4,13 @@ import { createStyledComponent } from '../../../../../library/styles';
 import { Target } from 'react-popper';
 import Dropdown from '../../../../../library/Dropdown';
 import data from '../../Menu/components/menuData';
-import renderPropDescription from '../../shared/renderPropDescription';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-trigger',
   title: 'Custom Trigger',
-  description: `Use the \`trigger\`
-[render prop](https://reactjs.org/docs/render-props.html) to provide custom
-rendering control of the trigger.
-
-${renderPropDescription}`,
+  description: `Use the \`trigger\` render prop to provide custom rendering
+control of the trigger. ${renderPropsDescription}`,
   scope: {
     createStyledComponent,
     data,

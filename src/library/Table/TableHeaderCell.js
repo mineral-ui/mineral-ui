@@ -22,7 +22,11 @@ type Props = {
   minWidth?: number | string,
   /** See Table's Column type */
   maxWidth?: number | string,
-  /** Provides custom rendering control */
+  /**
+   * Provides custom rendering control. See the
+   * [custom header cell example](/components/table/#custom-header-cell)
+   * and our [render props guide](/render-props).
+   */
   render?: RenderFn,
   /** See Table's Column type */
   textAlign?: 'start' | 'end' | 'center' | 'justify',

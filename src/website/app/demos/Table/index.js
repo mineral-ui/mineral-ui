@@ -28,10 +28,28 @@ export default {
       description:
         'Definition for each column in Table. [See example](#column-def).',
       content: {
+        cell: {
+          flowType: {
+            name: 'signature',
+            raw: '(props?: RenderProps) => React$Node',
+            type: 'function'
+          },
+          required: false,
+          description: `Provides custom rendering control. See the [custom cell example](#custom-cell) and our [render props guide](/render-props).`
+        },
         content: {
           flowType: { name: 'React$Node' },
           required: true,
           description: 'Rendered content of the column header'
+        },
+        headerCell: {
+          flowType: {
+            name: 'signature',
+            raw: '(props?: RenderProps) => React$Node',
+            type: 'function'
+          },
+          required: false,
+          description: `Provides custom rendering control. See the [custom header cell example](#custom-cell) and our [render props guide](/render-props).`
         },
         label: {
           flowType: { name: 'string' },

@@ -17,13 +17,13 @@ type Props = {
   /**
    * Trigger for the Popover. Optionally provides custom rendering control.
    * See the [custom trigger example](/components/popover#custom-trigger)
-   * and [React docs](https://reactjs.org/docs/render-props.html).
+   * and our [render props guide](/render-props).
    */
   children: React$Node | RenderFn,
   /**
    * Content of the Popover. Optionally provides custom rendering control.
    * See the [custom content example](/components/popover#custom-content)
-   * and [React docs](https://reactjs.org/docs/render-props.html).
+   * and our [render props guide](/render-props).
    */
   content: $FlowFixMe | RenderFn,
   /**

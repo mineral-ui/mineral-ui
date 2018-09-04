@@ -5,16 +5,13 @@ import Button from '../../../../../library/Button';
 import Popover from '../../../../../library/Popover';
 import Popper from '../../../../../library/Popover/RtlPopper';
 import DemoContent from '../components/DemoContent';
-import renderPropDescription from '../../shared/renderPropDescription';
+import renderPropsDescription from '../../shared/renderPropsDescription';
 
 export default {
   id: 'custom-content',
   title: 'Custom Content',
-  description: `Use the \`content\`
-[render prop](https://reactjs.org/docs/render-props.html) to provide custom
-rendering control of the content.
-
-${renderPropDescription}`,
+  description: `Use the \`content\` render prop to provide custom rendering
+control of the content. ${renderPropsDescription}`,
   scope: {
     Button,
     createStyledComponent,

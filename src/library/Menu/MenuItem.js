@@ -27,7 +27,7 @@ type Props = {
   /**
    * Provides custom rendering control. See the
    * [custom item example](/components/menu#custom-item) and
-   * [React docs](https://reactjs.org/docs/render-props.html).
+   * our [render props guide](/render-props).
    */
   render?: RenderFn,
   /** Secondary text */
