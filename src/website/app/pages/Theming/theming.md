@@ -8,7 +8,7 @@ implement and maintain theming across your app.
 
 Wrap your app in a [ThemeProvider](#common-scenarios-api) in order for styles to
 be properly applied. The ThemeProvider provides the theme to the tree of Mineral
-UI components, and any other Glamorous components contained within.
+UI components, and any other Emotion components contained within.
 
 ```jsx
 import React from 'react';

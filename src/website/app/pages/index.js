@@ -90,6 +90,12 @@ const sections: Array<Section> = [
         description: 'Import syntax guidelines',
         path: '/import-syntax',
         title: 'Import Syntax'
+      },
+      {
+        component: 'RenderProps',
+        description: 'Render props guidelines',
+        path: '/render-props',
+        title: 'Render Props'
       }
     ]
   }
