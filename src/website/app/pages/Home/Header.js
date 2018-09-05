@@ -165,7 +165,7 @@ const Nav = ({
 }) => {
   return (
     <StyledNav>
-      <Link to="/color">Guidelines</Link>
+      <Link to="/getting-started">Guidelines</Link>
       <Link to="/roadmap">What’s New</Link>
       <Link to="/component-status">Components</Link>
       <Media
