@@ -3,8 +3,8 @@
 For most applications, our recommendation is to use the following import syntax.
 
 ```js
-import Button from ‘mineral-ui/Button’;
-import Icon from ‘mineral-ui/Icon’;
+import Button from 'mineral-ui/Button';
+import Icon from 'mineral-ui/Icon';
 ```
 
 In this scenario, the public API is defined as the items available in the
