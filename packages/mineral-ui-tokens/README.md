@@ -96,7 +96,7 @@ generated files, for review.
 [changelog]: https://github.com/mineral-ui/mineral-ui/blob/master/CHANGELOG.md
 [color-page]: https://mineral-ui.com/color#guidelines-ramps
 [commitizen]: https://github.com/mineral-ui/mineral-ui/blob/master/CONTRIBUTING.md#developing
-[import-syntax]: https://github.com/mineral-ui/mineral-ui/blob/master/docs/import-syntax.md
+[import-syntax]: https://mineral-ui.com/import-syntax
 [pr]: https://github.com/mineral-ui/mineral-ui/blob/master/CONTRIBUTING.md#submitting-a-pull-request
 [theo]: https://github.com/salesforce-ux/theo
 [theospec]: https://github.com/salesforce-ux/theo#spec

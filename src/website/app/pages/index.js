@@ -17,15 +17,27 @@ type Section = {
 
 const sections: Array<Section> = [
   {
-    heading: 'Guidelines',
+    heading: 'What’s New',
     pages: [
       {
-        component: 'GettingStarted',
+        component: 'ComponentStatus',
         description:
-          'Mineral UI’s React component library helps you quickly build elegantly accessible apps. Use npm or yarn to install components and themes tested across modern browsers.',
-        path: '/getting-started',
-        title: 'Getting Started'
+          'Check back here anytime to see current component status information for Mineral UI. Check our GitHub for issues or to suggest a new feature!',
+        path: '/component-status',
+        title: 'Component Status'
       },
+      {
+        component: 'Roadmap',
+        description:
+          'Mineral UI is committed to stable and predictable releases. Learn more about our plans for the future.',
+        path: '/roadmap',
+        title: 'Roadmap'
+      }
+    ]
+  },
+  {
+    heading: 'Design',
+    pages: [
       {
         component: 'Color',
         description:
@@ -50,28 +62,15 @@ const sections: Array<Section> = [
     ]
   },
   {
-    heading: 'What’s New',
+    heading: 'Guidelines',
     pages: [
       {
-        component: 'ComponentStatus',
+        component: 'GettingStarted',
         description:
-          'Check back here anytime to see current component status information for Mineral UI. Check our GitHub for issues or to suggest a new feature!',
-        path: '/component-status',
-        title: 'Component Status'
+          'Mineral UI’s React component library helps you quickly build elegantly accessible apps. Use npm or yarn to install components and themes tested across modern browsers.',
+        path: '/getting-started',
+        title: 'Getting Started'
       },
-      {
-        component: 'Roadmap',
-        description:
-          'Mineral UI is committed to stable and predictable releases. Learn more about our plans for the future.',
-        path: '/roadmap',
-        title: 'Roadmap'
-      }
-    ]
-  },
-
-  {
-    heading: 'Customization',
-    pages: [
       {
         component: 'Styling',
         description:
@@ -87,11 +86,10 @@ const sections: Array<Section> = [
         title: 'Theming'
       },
       {
-        component: 'PaletteDemo',
-        description:
-          'Select from the main theme colors in the picker to see how components are affected. Mineral UI themes are composed of a main color ramp and the base gray ramp.',
-        path: '/palette-demo',
-        title: 'Palette Demo'
+        component: 'ImportSyntax',
+        description: 'Import syntax guidelines',
+        path: '/import-syntax',
+        title: 'Import Syntax'
       }
     ]
   }
