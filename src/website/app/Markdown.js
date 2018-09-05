@@ -51,6 +51,17 @@ type mdLinkProps = {
 };
 
 const styles = {
+  blockquote: ({ theme }) => {
+    return {
+      borderLeft: `${theme.space_inline_sm} solid ${rgba(
+        theme.color_theme,
+        0.15
+      )}`,
+      margin: 0,
+      marginLeft: theme.space_inline_md,
+      paddingLeft: theme.space_inset_md
+    };
+  },
   codeBlock: ({ theme }) => ({
     marginBottom: theme.space_stack_xl
   }),
@@ -226,6 +237,7 @@ const styles = {
   })
 };
 
+const Blockquote = createStyledComponent('blockquote', styles.blockquote);
 const CodeBlock = createStyledComponent('div', styles.codeBlock);
 const Image = createStyledComponent('img', styles.image);
 const Label = createStyledComponent(_Label, styles.label);
@@ -333,6 +345,9 @@ const Markdown = (props: Props) => {
           }
         }
         return <Link {...linkProps}>{children}</Link>;
+      },
+      blockquote(props) {
+        return <Blockquote {...props} />;
       },
       code({ language = 'jsx', code, children }: mdCodeProps) {
         return code ? (
