@@ -85,7 +85,7 @@ type State = {
 };
 
 export const componentTheme = (baseTheme: Object) => ({
-  Dialog_transitionDuration: 250,
+  Dialog_transitionDuration: '250ms',
   Dialog_zIndex: baseTheme.zIndex_1600,
 
   DialogCloseButton_margin: baseTheme.space_inline_sm,
@@ -119,7 +119,7 @@ const styles = {
     return {
       opacity: state === 'entered' ? 1 : 0,
       position: 'relative',
-      transition: `opacity ${theme.Dialog_transitionDuration}ms ease`,
+      transition: `opacity ${theme.Dialog_transitionDuration} ease`,
       willChange: 'opacity',
       zIndex: theme.Dialog_zIndex
     };
@@ -215,7 +215,7 @@ const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
     <Transition
       appear
       mountOnEnter
-      timeout={componentTheme(theme).Dialog_transitionDuration}
+      timeout={parseFloat(componentTheme(theme).Dialog_transitionDuration)}
       unmountOnExit
       {...restProps}>
       {(state) => <Animate state={state}>{children}</Animate>}
