@@ -13,8 +13,6 @@ import { getProcessedComponentThemeKeys } from '../../themes/processComponentThe
 
 import type { RenderFn } from '../Popover';
 
-const REGEX_POPOVER_CONTENT_ID = /^popover-\d+-content$/;
-
 const defaultProps = {
   children: <button>trigger</button>,
   content: <div>content</div>
@@ -130,106 +128,25 @@ describe('Popover', () => {
   });
 
   describe('render props', () => {
+    let renderer: RenderFn = jest.fn(() => <div />);
+
+    beforeEach(() => {
+      renderer.mockClear();
+    });
+
     describe('children', () => {
-      let popover, children: RenderFn;
-
-      beforeEach(() => {
-        // $FlowFixMe
-        children = jest
-          .fn()
-          .mockImplementation(({ props }) => <div {...props}>Trigger</div>);
-
-        [, popover] = mountPopover({
-          children
-        });
-      });
-
       it('calls children prop with expected arguments', () => {
-        expect(children).toBeCalledWith(
-          expect.objectContaining({
-            state: expect.objectContaining({
-              isOpen: false
-            }),
-            helpers: expect.objectContaining({
-              close: expect.any(Function),
-              focusTrigger: expect.any(Function),
-              open: expect.any(Function),
-              toggleOpen: expect.any(Function)
-            }),
-            props: expect.objectContaining({
-              'aria-describedby': expect.stringMatching(
-                REGEX_POPOVER_CONTENT_ID
-              ),
-              'aria-disabled': undefined,
-              'aria-expanded': false,
-              'aria-owns': expect.stringMatching(REGEX_POPOVER_CONTENT_ID),
-              children: undefined,
-              disabled: undefined,
-              onBlur: expect.any(Function),
-              onClick: expect.any(Function),
-              ref: expect.any(Function),
-              role: 'button'
-            })
-          })
-        );
-      });
+        mountPopover({ children: renderer });
 
-      it('renders expected content', () => {
-        expect(popover).toMatchSnapshot();
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
       });
     });
 
     describe('content', () => {
-      let popover, content;
-
-      beforeEach(() => {
-        content = jest.fn().mockImplementation(({ props }) => {
-          const {
-            hasArrow: ignoreHasArrow,
-            modifiers: ignoreModifiers,
-            placement: ignorePlacement,
-            subtitle: ignoreSubtitle,
-            ...restProps
-          } = props;
-
-          return <div {...restProps}>Content</div>;
-        });
-
-        [, popover] = mountPopover({
-          content,
-          isOpen: true
-        });
-      });
-
       it('calls content prop with expected arguments', () => {
-        expect(content).toBeCalledWith(
-          expect.objectContaining({
-            state: expect.objectContaining({
-              isOpen: true
-            }),
-            helpers: expect.objectContaining({
-              close: expect.any(Function),
-              focusTrigger: expect.any(Function),
-              open: expect.any(Function),
-              toggleOpen: expect.any(Function)
-            }),
-            props: expect.objectContaining({
-              hasArrow: true,
-              id: expect.stringMatching(REGEX_POPOVER_CONTENT_ID),
-              modifiers: undefined,
-              onBlur: expect.any(Function),
-              placement: 'bottom',
-              ref: expect.any(Function),
-              subtitle: undefined,
-              tabIndex: 0,
-              title: undefined
-            })
-          })
-        );
-      });
+        mountPopover({ content: renderer, isOpen: true });
 
-      it('renders expected content', () => {
-        expect(popover).toMatchSnapshot();
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
       });
     });
   });
@@ -316,7 +233,7 @@ describe('Popover', () => {
       assertTriggerHasFocus(trigger);
     });
 
-    it('when focus is moved outside of component');
+    xit('when focus is moved outside of component', () => {});
 
     it('calls onClose', () => {
       button.simulate('click');

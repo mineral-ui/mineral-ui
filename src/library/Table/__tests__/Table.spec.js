@@ -16,6 +16,8 @@ import examples from '../../../website/app/demos/Table/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
+import type { RenderFn } from '../Table';
+
 const defaultProps = {
   data: [
     { aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0' },
@@ -486,6 +488,66 @@ describe('Table', () => {
       const sortedData = wrapper.find(TableBase).props().data;
 
       expect(sortedData).toMatchSnapshot();
+    });
+  });
+
+  describe('render props', () => {
+    let renderer: RenderFn;
+
+    beforeEach(() => {
+      renderer.mockReset();
+    });
+
+    describe('"row"', () => {
+      renderer = jest.fn(() => <tr />);
+
+      it('calls render prop with expected arguments', () => {
+        mountTable({
+          columns: [{ content: 'AA', key: 'aa' }],
+          data: [{ aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0', row: renderer }]
+        });
+
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
+      });
+    });
+
+    describe('"cell"', () => {
+      renderer = jest.fn(() => <td />);
+
+      it('calls render prop with expected arguments', () => {
+        mountTable({
+          columns: [{ content: 'AA', key: 'aa', cell: renderer }],
+          data: [{ aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0' }]
+        });
+
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
+      });
+    });
+
+    describe('"headerCell"', () => {
+      renderer = jest.fn(() => <th />);
+
+      it('calls render prop with expected arguments', () => {
+        mountTable({
+          columns: [{ content: 'AA', key: 'aa', headerCell: renderer }],
+          data: [{ aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0' }]
+        });
+
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
+      });
+
+      describe('when sortable', () => {
+        it('calls render prop with expected arguments', () => {
+          mountTable({
+            columns: [{ content: 'AA', key: 'aa', headerCell: renderer }],
+            data: [{ aa: 'aa0', ab: 'ab0', ac: 'ac0', ad: 'ad0' }],
+            sortable: true,
+            defaultSort: { key: 'aa' }
+          });
+
+          expect(renderer.mock.calls[0]).toMatchSnapshot();
+        });
+      });
     });
   });
 });
