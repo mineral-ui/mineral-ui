@@ -14,10 +14,6 @@ import { getProcessedComponentThemeKeys } from '../../themes/processComponentThe
 import type { RenderFn } from '../Dropdown';
 import type { Items } from '../../Menu/Menu';
 
-const REGEX_DROPDOWN_CONTENT_ID = /^dropdown-\d+-content$/;
-const REGEX_DROPDOWN_MENU_ID = /^dropdown-\d+-menu$/;
-const REGEX_DROPDOWN_ITEM_ID = /^dropdown-\d+-item-\d+$/;
-
 const data: Items = [
   {
     text: 'item 1',
@@ -106,155 +102,33 @@ describe('Dropdown', () => {
   });
 
   describe('render props', () => {
+    let renderer: RenderFn = jest.fn(() => <div />);
+
+    beforeEach(() => {
+      renderer.mockClear();
+    });
+
     describe('children', () => {
-      let dropdown, children: RenderFn;
-
-      beforeEach(() => {
-        // $FlowFixMe
-        children = jest
-          .fn()
-          .mockImplementation(({ props }) => <div {...props}>Trigger</div>);
-
-        [, dropdown] = mountDropdown({
-          children
-        });
-      });
-
       it('calls children prop with expected arguments', () => {
-        expect(children).toBeCalledWith(
-          expect.objectContaining({
-            state: expect.objectContaining({
-              highlightedIndex: undefined,
-              isOpen: false
-            }),
-            helpers: expect.objectContaining({
-              close: expect.any(Function),
-              focusTrigger: expect.any(Function),
-              open: expect.any(Function)
-            }),
-            props: expect.objectContaining({
-              'aria-describedby': expect.stringMatching(
-                REGEX_DROPDOWN_CONTENT_ID
-              ),
-              'aria-disabled': undefined,
-              'aria-expanded': false,
-              'aria-haspopup': true,
-              'aria-owns': expect.stringMatching(REGEX_DROPDOWN_CONTENT_ID),
-              children: undefined,
-              disabled: undefined,
-              onBlur: expect.any(Function),
-              onClick: expect.any(Function),
-              onKeyDown: expect.any(Function),
-              onKeyUp: expect.any(Function),
-              ref: expect.any(Function),
-              role: 'button'
-            })
-          })
-        );
-      });
+        mountDropdown({ children: renderer });
 
-      it('renders expected content', () => {
-        expect(dropdown).toMatchSnapshot();
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
       });
     });
 
     describe('menu', () => {
-      let dropdown, menu;
-
-      beforeEach(() => {
-        menu = jest.fn().mockImplementation(({ props }) => {
-          const {
-            item: ignoreRenderItem,
-            itemKey: ignoreItemKey,
-            ...restProps
-          } = props;
-
-          return <div {...restProps}>Menu</div>;
-        });
-
-        [, dropdown] = mountDropdown({ menu, isOpen: true });
-      });
-
       it('calls menu prop with expected arguments', () => {
-        expect(menu).toBeCalledWith(
-          expect.objectContaining({
-            state: expect.objectContaining({
-              highlightedIndex: undefined,
-              isOpen: true
-            }),
-            helpers: expect.objectContaining({
-              close: expect.any(Function),
-              focusTrigger: expect.any(Function),
-              open: expect.any(Function)
-            }),
-            props: expect.objectContaining({
-              data: defaultProps.data,
-              id: expect.stringMatching(REGEX_DROPDOWN_MENU_ID),
-              itemKey: 'text',
-              role: 'menu'
-            })
-          })
-        );
-      });
+        mountDropdown({ menu: renderer, isOpen: true });
 
-      it('renders expected content', () => {
-        expect(dropdown).toMatchSnapshot();
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
       });
     });
 
     describe('item', () => {
-      let dropdown, item;
-
-      beforeEach(() => {
-        item = jest.fn().mockImplementation(({ props }) => {
-          const {
-            render: ignoreRender,
-            text: ignoreText,
-            index: ignoreIndex,
-            item,
-            isHighlighted: ignoreIsHighlighted,
-            variant: ignoreVariant,
-            ...restProps
-          } = props;
-
-          return <div {...restProps}>{item.text}</div>;
-        });
-
-        [, dropdown] = mountDropdown({ item, isOpen: true });
-      });
-
       it('calls item prop with expected arguments', () => {
-        expect(item).toBeCalledWith(
-          expect.objectContaining({
-            state: expect.objectContaining({
-              highlightedIndex: undefined,
-              isOpen: true
-            }),
-            helpers: expect.objectContaining({
-              close: expect.any(Function),
-              focusTrigger: expect.any(Function),
-              open: expect.any(Function)
-            }),
-            props: expect.objectContaining({
-              'aria-disabled': undefined,
-              children: expect.any(String),
-              disabled: undefined,
-              id: expect.stringMatching(REGEX_DROPDOWN_ITEM_ID),
-              index: expect.any(Number),
-              isHighlighted: false,
-              item: expect.any(Object),
-              onClick: expect.any(Function),
-              onKeyDown: expect.any(Function),
-              role: 'menuitem',
-              tabIndex: null,
-              text: expect.any(String)
-            })
-          })
-        );
-      });
+        mountDropdown({ item: renderer, isOpen: true });
 
-      it('renders expected content', () => {
-        expect(dropdown).toMatchSnapshot();
+        expect(renderer.mock.calls[0]).toMatchSnapshot();
       });
     });
   });

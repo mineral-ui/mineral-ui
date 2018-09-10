@@ -42,43 +42,12 @@ describe('Menu', () => {
   });
 
   describe('item prop', () => {
-    let menu, item;
-
-    beforeEach(() => {
-      item = jest.fn().mockImplementation(({ props }) => {
-        const {
-          render: ignoreRender,
-          text: ignoreText,
-          index: ignoreIndex,
-          item,
-          variant: ignoreVariant,
-          ...restProps
-        } = props;
-        return <div {...restProps}>{item.text}</div>;
-      });
-
-      [, menu] = mountMenu({ item });
-    });
-
     it('calls item prop with expected arguments', () => {
-      expect(item).toBeCalledWith(
-        expect.objectContaining({
-          props: expect.objectContaining({
-            children: expect.any(String),
-            disabled: undefined,
-            index: expect.any(Number),
-            item: expect.any(Object),
-            onClick: undefined,
-            onKeyDown: expect.any(Function),
-            tabIndex: 0,
-            text: expect.any(String)
-          })
-        })
-      );
-    });
+      const item = jest.fn(() => <div />);
 
-    it('renders expected content', () => {
-      expect(menu).toMatchSnapshot();
+      mountMenu({ item });
+
+      expect(item.mock.calls[0]).toMatchSnapshot();
     });
   });
 });
