@@ -4616,33 +4616,16 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
 </Styled(div)>
 `;
 
-exports[`MenuItem render prop renders expected content 1`] = `
-<MenuItem
-  onClick={[MockFunction]}
-  render={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "props": Object {
-              "children": "Item 1",
-              "disabled": undefined,
-              "onClick": [MockFunction],
-              "onKeyDown": [Function],
-              "tabIndex": 0,
-            },
-          },
-        ],
-      ],
-    }
-  }
->
-  <div
-    onClick={[MockFunction]}
-    onKeyDown={[Function]}
-    tabIndex={0}
-  >
-    Hello World
-  </div>
-</MenuItem>
+exports[`MenuItem render prop calls render prop with expected arguments 1`] = `
+Array [
+  Object {
+    "props": Object {
+      "children": "Item 1",
+      "disabled": undefined,
+      "onClick": [MockFunction],
+      "onKeyDown": [Function],
+      "tabIndex": 0,
+    },
+  },
+]
 `;

@@ -807,11 +807,11 @@ exports[`Menu demo examples Snapshots: custom-item 1`] = `
           ]
         }
         item={[Function]}
-        itemKey="username"
+        itemKey="text"
       >
         <Menu
           item={[Function]}
-          itemKey="username"
+          itemKey="text"
         >
           <div
             className="emotion-19"
@@ -833,77 +833,89 @@ exports[`Menu demo examples Snapshots: custom-item 1`] = `
                         "work": "Principia Mathematica",
                       }
                     }
-                    key="0"
+                    key="Newton"
                     render={[Function]}
                     text="Newton"
                     work="Principia Mathematica"
                   >
-                    <WithTheme(Component)>
-                      <Component>
-                        <Styled(div)
-                          avatar="/images/avatar.svg"
-                          index={0}
-                          item={
-                            Object {
-                              "avatar": "/images/avatar.svg",
-                              "text": "Newton",
-                              "work": "Principia Mathematica",
-                            }
+                    <CustomItem
+                      avatar="/images/avatar.svg"
+                      index={0}
+                      item={
+                        Object {
+                          "avatar": "/images/avatar.svg",
+                          "text": "Newton",
+                          "work": "Principia Mathematica",
+                        }
+                      }
+                      onKeyDown={[Function]}
+                      tabIndex={0}
+                      text="Newton"
+                      work="Principia Mathematica"
+                    >
+                      <Styled(div)
+                        avatar="/images/avatar.svg"
+                        index={0}
+                        item={
+                          Object {
+                            "avatar": "/images/avatar.svg",
+                            "text": "Newton",
+                            "work": "Principia Mathematica",
                           }
+                        }
+                        onKeyDown={[Function]}
+                        tabIndex={0}
+                        text="Newton"
+                        work="Principia Mathematica"
+                      >
+                        <div
+                          className="emotion-5"
                           onKeyDown={[Function]}
                           tabIndex={0}
-                          text="Newton"
-                          work="Principia Mathematica"
                         >
-                          <div
-                            className="emotion-5"
-                            onKeyDown={[Function]}
-                            tabIndex={0}
+                          <Styled(Avatar)
+                            shape="circle"
+                            size="large"
                           >
-                            <Styled(Avatar)
+                            <Avatar
+                              className="emotion-1"
                               shape="circle"
                               size="large"
                             >
                               <Avatar
                                 className="emotion-1"
+                                noBackground={true}
                                 shape="circle"
                                 size="large"
                               >
-                                <Avatar
-                                  className="emotion-1"
-                                  noBackground={true}
-                                  shape="circle"
-                                  size="large"
+                                <span
+                                  className="emotion-0"
                                 >
-                                  <span
-                                    className="emotion-0"
-                                  >
-                                    <img
-                                      alt="Newton"
-                                      src="/images/avatar.svg"
-                                    />
-                                  </span>
-                                </Avatar>
+                                  <img
+                                    alt="Newton"
+                                    src="/images/avatar.svg"
+                                  />
+                                </span>
                               </Avatar>
-                            </Styled(Avatar)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-4"
-                              >
-                                Newton
-                                <Styled(span)>
-                                  <span
-                                    className="emotion-3"
-                                  >
-                                    Principia Mathematica
-                                  </span>
-                                </Styled(span)>
-                              </span>
-                            </Styled(span)>
-                          </div>
-                        </Styled(div)>
-                      </Component>
-                    </WithTheme(Component)>
+                            </Avatar>
+                          </Styled(Avatar)>
+                          <Styled(span)>
+                            <span
+                              className="emotion-4"
+                            >
+                              Newton
+                              <Styled(span)>
+                                <span
+                                  className="emotion-3"
+                                >
+                                  Principia Mathematica
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </Styled(span)>
+                        </div>
+                      </Styled(div)>
+                    </CustomItem>
                   </MenuItem>
                   <MenuItem
                     avatar="/images/avatar.svg"
@@ -915,77 +927,89 @@ exports[`Menu demo examples Snapshots: custom-item 1`] = `
                         "work": "La Géométrie",
                       }
                     }
-                    key="1"
+                    key="Descartes"
                     render={[Function]}
                     text="Descartes"
                     work="La Géométrie"
                   >
-                    <WithTheme(Component)>
-                      <Component>
-                        <Styled(div)
-                          avatar="/images/avatar.svg"
-                          index={1}
-                          item={
-                            Object {
-                              "avatar": "/images/avatar.svg",
-                              "text": "Descartes",
-                              "work": "La Géométrie",
-                            }
+                    <CustomItem
+                      avatar="/images/avatar.svg"
+                      index={1}
+                      item={
+                        Object {
+                          "avatar": "/images/avatar.svg",
+                          "text": "Descartes",
+                          "work": "La Géométrie",
+                        }
+                      }
+                      onKeyDown={[Function]}
+                      tabIndex={0}
+                      text="Descartes"
+                      work="La Géométrie"
+                    >
+                      <Styled(div)
+                        avatar="/images/avatar.svg"
+                        index={1}
+                        item={
+                          Object {
+                            "avatar": "/images/avatar.svg",
+                            "text": "Descartes",
+                            "work": "La Géométrie",
                           }
+                        }
+                        onKeyDown={[Function]}
+                        tabIndex={0}
+                        text="Descartes"
+                        work="La Géométrie"
+                      >
+                        <div
+                          className="emotion-5"
                           onKeyDown={[Function]}
                           tabIndex={0}
-                          text="Descartes"
-                          work="La Géométrie"
                         >
-                          <div
-                            className="emotion-5"
-                            onKeyDown={[Function]}
-                            tabIndex={0}
+                          <Styled(Avatar)
+                            shape="circle"
+                            size="large"
                           >
-                            <Styled(Avatar)
+                            <Avatar
+                              className="emotion-1"
                               shape="circle"
                               size="large"
                             >
                               <Avatar
                                 className="emotion-1"
+                                noBackground={true}
                                 shape="circle"
                                 size="large"
                               >
-                                <Avatar
-                                  className="emotion-1"
-                                  noBackground={true}
-                                  shape="circle"
-                                  size="large"
+                                <span
+                                  className="emotion-0"
                                 >
-                                  <span
-                                    className="emotion-0"
-                                  >
-                                    <img
-                                      alt="Descartes"
-                                      src="/images/avatar.svg"
-                                    />
-                                  </span>
-                                </Avatar>
+                                  <img
+                                    alt="Descartes"
+                                    src="/images/avatar.svg"
+                                  />
+                                </span>
                               </Avatar>
-                            </Styled(Avatar)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-4"
-                              >
-                                Descartes
-                                <Styled(span)>
-                                  <span
-                                    className="emotion-3"
-                                  >
-                                    La Géométrie
-                                  </span>
-                                </Styled(span)>
-                              </span>
-                            </Styled(span)>
-                          </div>
-                        </Styled(div)>
-                      </Component>
-                    </WithTheme(Component)>
+                            </Avatar>
+                          </Styled(Avatar)>
+                          <Styled(span)>
+                            <span
+                              className="emotion-4"
+                            >
+                              Descartes
+                              <Styled(span)>
+                                <span
+                                  className="emotion-3"
+                                >
+                                  La Géométrie
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </Styled(span)>
+                        </div>
+                      </Styled(div)>
+                    </CustomItem>
                   </MenuItem>
                   <MenuItem
                     avatar="/images/avatar.svg"
@@ -997,77 +1021,89 @@ exports[`Menu demo examples Snapshots: custom-item 1`] = `
                         "work": "Elements",
                       }
                     }
-                    key="2"
+                    key="Euclid"
                     render={[Function]}
                     text="Euclid"
                     work="Elements"
                   >
-                    <WithTheme(Component)>
-                      <Component>
-                        <Styled(div)
-                          avatar="/images/avatar.svg"
-                          index={2}
-                          item={
-                            Object {
-                              "avatar": "/images/avatar.svg",
-                              "text": "Euclid",
-                              "work": "Elements",
-                            }
+                    <CustomItem
+                      avatar="/images/avatar.svg"
+                      index={2}
+                      item={
+                        Object {
+                          "avatar": "/images/avatar.svg",
+                          "text": "Euclid",
+                          "work": "Elements",
+                        }
+                      }
+                      onKeyDown={[Function]}
+                      tabIndex={0}
+                      text="Euclid"
+                      work="Elements"
+                    >
+                      <Styled(div)
+                        avatar="/images/avatar.svg"
+                        index={2}
+                        item={
+                          Object {
+                            "avatar": "/images/avatar.svg",
+                            "text": "Euclid",
+                            "work": "Elements",
                           }
+                        }
+                        onKeyDown={[Function]}
+                        tabIndex={0}
+                        text="Euclid"
+                        work="Elements"
+                      >
+                        <div
+                          className="emotion-5"
                           onKeyDown={[Function]}
                           tabIndex={0}
-                          text="Euclid"
-                          work="Elements"
                         >
-                          <div
-                            className="emotion-5"
-                            onKeyDown={[Function]}
-                            tabIndex={0}
+                          <Styled(Avatar)
+                            shape="circle"
+                            size="large"
                           >
-                            <Styled(Avatar)
+                            <Avatar
+                              className="emotion-1"
                               shape="circle"
                               size="large"
                             >
                               <Avatar
                                 className="emotion-1"
+                                noBackground={true}
                                 shape="circle"
                                 size="large"
                               >
-                                <Avatar
-                                  className="emotion-1"
-                                  noBackground={true}
-                                  shape="circle"
-                                  size="large"
+                                <span
+                                  className="emotion-0"
                                 >
-                                  <span
-                                    className="emotion-0"
-                                  >
-                                    <img
-                                      alt="Euclid"
-                                      src="/images/avatar.svg"
-                                    />
-                                  </span>
-                                </Avatar>
+                                  <img
+                                    alt="Euclid"
+                                    src="/images/avatar.svg"
+                                  />
+                                </span>
                               </Avatar>
-                            </Styled(Avatar)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-4"
-                              >
-                                Euclid
-                                <Styled(span)>
-                                  <span
-                                    className="emotion-3"
-                                  >
-                                    Elements
-                                  </span>
-                                </Styled(span)>
-                              </span>
-                            </Styled(span)>
-                          </div>
-                        </Styled(div)>
-                      </Component>
-                    </WithTheme(Component)>
+                            </Avatar>
+                          </Styled(Avatar)>
+                          <Styled(span)>
+                            <span
+                              className="emotion-4"
+                            >
+                              Euclid
+                              <Styled(span)>
+                                <span
+                                  className="emotion-3"
+                                >
+                                  Elements
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </Styled(span)>
+                        </div>
+                      </Styled(div)>
+                    </CustomItem>
                   </MenuItem>
                 </div>
               </MenuGroup>
@@ -2596,251 +2632,21 @@ exports[`Menu demo examples Snapshots: grouped-data 1`] = `
 </Component>
 `;
 
-exports[`Menu item prop renders expected content 1`] = `
-.emotion-1 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.emotion-1 *,
-.emotion-1 *::before,
-.emotion-1 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-0 {
-  margin: 0.5em 0;
-}
-
-.emotion-0:first-child,
-.emotion-0 + .emotion-0 {
-  margin-top: 0;
-}
-
-.emotion-0:last-child {
-  margin-bottom: 0;
-}
-
-<Menu
-  data={
-    Array [
-      Object {
+exports[`Menu item prop calls item prop with expected arguments 1`] = `
+Array [
+  Object {
+    "props": Object {
+      "children": "Item 1",
+      "disabled": undefined,
+      "index": 0,
+      "item": Object {
         "text": "Item 1",
       },
-      Object {
-        "text": "Item 2",
-      },
-    ]
-  }
-  item={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "props": Object {
-              "children": "Item 1",
-              "disabled": undefined,
-              "index": 0,
-              "item": Object {
-                "text": "Item 1",
-              },
-              "onClick": undefined,
-              "onKeyDown": [Function],
-              "tabIndex": 0,
-              "text": "Item 1",
-            },
-          },
-        ],
-        Array [
-          Object {
-            "props": Object {
-              "children": "Item 2",
-              "disabled": undefined,
-              "index": 1,
-              "item": Object {
-                "text": "Item 2",
-              },
-              "onClick": undefined,
-              "onKeyDown": [Function],
-              "tabIndex": 0,
-              "text": "Item 2",
-            },
-          },
-        ],
-      ],
-    }
-  }
->
-  <Menu
-    item={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "props": Object {
-                "children": "Item 1",
-                "disabled": undefined,
-                "index": 0,
-                "item": Object {
-                  "text": "Item 1",
-                },
-                "onClick": undefined,
-                "onKeyDown": [Function],
-                "tabIndex": 0,
-                "text": "Item 1",
-              },
-            },
-          ],
-          Array [
-            Object {
-              "props": Object {
-                "children": "Item 2",
-                "disabled": undefined,
-                "index": 1,
-                "item": Object {
-                  "text": "Item 2",
-                },
-                "onClick": undefined,
-                "onKeyDown": [Function],
-                "tabIndex": 0,
-                "text": "Item 2",
-              },
-            },
-          ],
-        ],
-      }
-    }
-  >
-    <div
-      className="emotion-1"
-    >
-      <MenuGroup
-        key="0"
-      >
-        <MenuGroup>
-          <div
-            className="emotion-0"
-          >
-            <MenuItem
-              index={0}
-              item={
-                Object {
-                  "text": "Item 1",
-                }
-              }
-              key="0"
-              render={
-                [MockFunction] {
-                  "calls": Array [
-                    Array [
-                      Object {
-                        "props": Object {
-                          "children": "Item 1",
-                          "disabled": undefined,
-                          "index": 0,
-                          "item": Object {
-                            "text": "Item 1",
-                          },
-                          "onClick": undefined,
-                          "onKeyDown": [Function],
-                          "tabIndex": 0,
-                          "text": "Item 1",
-                        },
-                      },
-                    ],
-                    Array [
-                      Object {
-                        "props": Object {
-                          "children": "Item 2",
-                          "disabled": undefined,
-                          "index": 1,
-                          "item": Object {
-                            "text": "Item 2",
-                          },
-                          "onClick": undefined,
-                          "onKeyDown": [Function],
-                          "tabIndex": 0,
-                          "text": "Item 2",
-                        },
-                      },
-                    ],
-                  ],
-                }
-              }
-              text="Item 1"
-            >
-              <div
-                onKeyDown={[Function]}
-                tabIndex={0}
-              >
-                Item 1
-              </div>
-            </MenuItem>
-            <MenuItem
-              index={1}
-              item={
-                Object {
-                  "text": "Item 2",
-                }
-              }
-              key="1"
-              render={
-                [MockFunction] {
-                  "calls": Array [
-                    Array [
-                      Object {
-                        "props": Object {
-                          "children": "Item 1",
-                          "disabled": undefined,
-                          "index": 0,
-                          "item": Object {
-                            "text": "Item 1",
-                          },
-                          "onClick": undefined,
-                          "onKeyDown": [Function],
-                          "tabIndex": 0,
-                          "text": "Item 1",
-                        },
-                      },
-                    ],
-                    Array [
-                      Object {
-                        "props": Object {
-                          "children": "Item 2",
-                          "disabled": undefined,
-                          "index": 1,
-                          "item": Object {
-                            "text": "Item 2",
-                          },
-                          "onClick": undefined,
-                          "onKeyDown": [Function],
-                          "tabIndex": 0,
-                          "text": "Item 2",
-                        },
-                      },
-                    ],
-                  ],
-                }
-              }
-              text="Item 2"
-            >
-              <div
-                onKeyDown={[Function]}
-                tabIndex={0}
-              >
-                Item 2
-              </div>
-            </MenuItem>
-          </div>
-        </MenuGroup>
-      </MenuGroup>
-    </div>
-  </Menu>
-</Menu>
+      "onClick": undefined,
+      "onKeyDown": [Function],
+      "tabIndex": 0,
+      "text": "Item 1",
+    },
+  },
+]
 `;

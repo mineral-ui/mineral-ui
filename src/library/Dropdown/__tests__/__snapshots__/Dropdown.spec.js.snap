@@ -6849,841 +6849,101 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
 </Styled(div)>
 `;
 
-exports[`Dropdown render props children renders expected content 1`] = `
-.emotion-0 {
-  box-sizing: border-box;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-}
-
-.emotion-0 *,
-.emotion-0 *::before,
-.emotion-0 *::after {
-  box-sizing: inherit;
-}
-
-<Dropdown
-  data={
-    Array [
-      Object {
-        "onClick": [MockFunction],
-        "text": "item 1",
-      },
-      Object {
-        "divider": true,
-      },
-      Object {
-        "onClick": [MockFunction],
-        "text": "item 2",
-      },
-    ]
-  }
-  itemKey="text"
-  placement="bottom-start"
->
-  <Popover
-    content={[Function]}
-    focusTriggerOnClose={true}
-    hasArrow={true}
-    id="dropdown-31"
-    isOpen={false}
-    itemKey="text"
-    onClose={[Function]}
-    onOpen={[Function]}
-    placement="bottom-start"
-    triggerRef={[Function]}
-  >
-    <Popover
-      content={[Function]}
-      focusTriggerOnClose={true}
-      hasArrow={true}
-      id="dropdown-31"
-      isOpen={false}
-      itemKey="text"
-      onClose={[Function]}
-      onOpen={[Function]}
-      placement="bottom-start"
-      tag="span"
-      triggerRef={[Function]}
-    >
-      <Popover
-        className="emotion-0"
-        id="dropdown-31"
-        tag="span"
-      >
-        <span
-          className="emotion-0"
-          id="dropdown-31"
-        >
-          <div
-            aria-describedby="dropdown-31-content"
-            aria-expanded={false}
-            aria-haspopup={true}
-            aria-owns="dropdown-31-content"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            role="button"
-          >
-            Trigger
-          </div>
-        </span>
-      </Popover>
-    </Popover>
-  </Popover>
-</Dropdown>
+exports[`Dropdown render props children calls children prop with expected arguments 1`] = `
+Array [
+  Object {
+    "helpers": Object {
+      "close": [Function],
+      "focusTrigger": [Function],
+      "open": [Function],
+    },
+    "props": Object {
+      "aria-describedby": "dropdown-30-content",
+      "aria-disabled": undefined,
+      "aria-expanded": false,
+      "aria-haspopup": true,
+      "aria-owns": "dropdown-30-content",
+      "children": undefined,
+      "disabled": undefined,
+      "onBlur": [Function],
+      "onClick": [Function],
+      "onKeyDown": [Function],
+      "onKeyUp": [Function],
+      "ref": [Function],
+      "role": "button",
+    },
+    "state": Object {
+      "highlightedIndex": undefined,
+      "isOpen": false,
+    },
+  },
+]
 `;
 
-exports[`Dropdown render props item renders expected content 1`] = `
-.emotion-9 {
-  box-sizing: border-box;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-}
-
-.emotion-9 *,
-.emotion-9 *::before,
-.emotion-9 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-0 {
-  display: inline-block;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  max-height: 30vh;
-  overflow-y: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14em;
-  z-index: 100;
-}
-
-.emotion-5 *,
-.emotion-5 *::before,
-.emotion-5 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-5[data-placement^="top"] {
-  margin-bottom: 5px;
-}
-
-.emotion-5[data-placement^="bottom"] {
-  margin-top: 5px;
-}
-
-.emotion-5[data-placement^="left"] {
-  margin-right: 5px;
-}
-
-.emotion-5[data-placement^="right"] {
-  margin-left: 5px;
-}
-
-.emotion-5[data-x-out-of-boundaries] {
-  visibility: hidden;
-}
-
-.emotion-4 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.emotion-4 *,
-.emotion-4 *::before,
-.emotion-4 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-3 {
-  margin: 0.5em 0;
-}
-
-.emotion-3:first-child,
-.emotion-3 + .emotion-3 {
-  margin-top: 0;
-}
-
-.emotion-3:last-child {
-  margin-bottom: 0;
-}
-
-.emotion-2 {
-  background-color: #c8d1e0;
-  height: 1px;
-  margin: 0.5em 0;
-}
-
-<Dropdown
-  data={
-    Array [
-      Object {
+exports[`Dropdown render props item calls item prop with expected arguments 1`] = `
+Array [
+  Object {
+    "helpers": Object {
+      "close": [Function],
+      "focusTrigger": [Function],
+      "open": [Function],
+    },
+    "props": Object {
+      "aria-disabled": undefined,
+      "children": "item 1",
+      "disabled": undefined,
+      "id": "dropdown-32-item-0",
+      "index": 0,
+      "isHighlighted": false,
+      "item": Object {
         "onClick": [MockFunction],
         "text": "item 1",
       },
-      Object {
-        "divider": true,
-      },
-      Object {
-        "onClick": [MockFunction],
-        "text": "item 2",
-      },
-    ]
-  }
-  isOpen={true}
-  item={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "helpers": Object {
-              "close": [Function],
-              "focusTrigger": [Function],
-              "open": [Function],
-            },
-            "props": Object {
-              "aria-disabled": undefined,
-              "children": "item 1",
-              "disabled": undefined,
-              "id": "dropdown-35-item-0",
-              "index": 0,
-              "isHighlighted": false,
-              "item": Object {
-                "onClick": [MockFunction],
-                "text": "item 1",
-              },
-              "onClick": [Function],
-              "onKeyDown": [Function],
-              "role": "menuitem",
-              "tabIndex": null,
-              "text": "item 1",
-            },
-            "state": Object {
-              "highlightedIndex": undefined,
-              "isOpen": true,
-            },
-          },
-        ],
-        Array [
-          Object {
-            "helpers": Object {
-              "close": [Function],
-              "focusTrigger": [Function],
-              "open": [Function],
-            },
-            "props": Object {
-              "aria-disabled": undefined,
-              "children": "item 2",
-              "disabled": undefined,
-              "id": "dropdown-35-item-1",
-              "index": 1,
-              "isHighlighted": false,
-              "item": Object {
-                "onClick": [MockFunction],
-                "text": "item 2",
-              },
-              "onClick": [Function],
-              "onKeyDown": [Function],
-              "role": "menuitem",
-              "tabIndex": null,
-              "text": "item 2",
-            },
-            "state": Object {
-              "highlightedIndex": undefined,
-              "isOpen": true,
-            },
-          },
-        ],
-      ],
-    }
-  }
-  itemKey="text"
-  placement="bottom-start"
->
-  <Popover
-    content={[Function]}
-    focusTriggerOnClose={true}
-    hasArrow={true}
-    id="dropdown-35"
-    isOpen={true}
-    itemKey="text"
-    onClose={[Function]}
-    onOpen={[Function]}
-    placement="bottom-start"
-    triggerRef={[Function]}
-  >
-    <Popover
-      content={[Function]}
-      focusTriggerOnClose={true}
-      hasArrow={true}
-      id="dropdown-35"
-      isOpen={true}
-      itemKey="text"
-      onClose={[Function]}
-      onOpen={[Function]}
-      placement="bottom-start"
-      tag="span"
-      triggerRef={[Function]}
-    >
-      <Popover
-        className="emotion-9"
-        id="dropdown-35"
-        tag="span"
-      >
-        <span
-          className="emotion-9"
-          id="dropdown-35"
-        >
-          <PopoverTrigger
-            aria-activedescendant="dropdown-35-menu"
-            aria-describedby="dropdown-35-content"
-            aria-expanded={true}
-            aria-haspopup={true}
-            aria-owns="dropdown-35-content"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            role="button"
-          >
-            <PopoverTrigger
-              component="span"
-            >
-              <PopoverTrigger
-                className="emotion-0"
-                component="span"
-              >
-                <span
-                  className="emotion-0"
-                >
-                  <button
-                    aria-activedescendant="dropdown-35-menu"
-                    aria-describedby="dropdown-35-content"
-                    aria-expanded={true}
-                    aria-haspopup={true}
-                    aria-owns="dropdown-35-content"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    role="button"
-                  >
-                    trigger
-                  </button>
-                </span>
-              </PopoverTrigger>
-            </PopoverTrigger>
-          </PopoverTrigger>
-          <DropdownContent
-            hasArrow={true}
-            id="dropdown-35-content"
-            onBlur={[Function]}
-            placement="bottom-start"
-          >
-            <DropdownContent
-              hasArrow={true}
-              id="dropdown-35-content"
-              onBlur={[Function]}
-              placement="bottom-start"
-            >
-              <PopoverContent
-                className="emotion-5"
-                id="dropdown-35-content"
-                onBlur={[Function]}
-                placement="bottom-start"
-              >
-                <RtlPopper
-                  className="emotion-5"
-                  id="dropdown-35-content"
-                  onBlur={[Function]}
-                  placement="bottom-start"
-                >
-                  <Popper
-                    className="emotion-5"
-                    component="div"
-                    eventsEnabled={true}
-                    id="dropdown-35-content"
-                    modifiers={Object {}}
-                    onBlur={[Function]}
-                    placement="bottom-start"
-                    positionFixed={false}
-                  >
-                    <div
-                      className="emotion-5"
-                      id="dropdown-35-content"
-                      onBlur={[Function]}
-                      style={
-                        Object {
-                          "opacity": 0,
-                          "pointerEvents": "none",
-                          "position": "absolute",
-                        }
-                      }
-                    >
-                      <Menu
-                        data={
-                          Array [
-                            Object {
-                              "onClick": [MockFunction],
-                              "text": "item 1",
-                            },
-                            Object {
-                              "divider": true,
-                            },
-                            Object {
-                              "onClick": [MockFunction],
-                              "text": "item 2",
-                            },
-                          ]
-                        }
-                        id="dropdown-35-menu"
-                        item={[Function]}
-                        itemKey="text"
-                        role="menu"
-                      >
-                        <Menu
-                          id="dropdown-35-menu"
-                          item={[Function]}
-                          itemKey="text"
-                          role="menu"
-                        >
-                          <div
-                            className="emotion-4"
-                            id="dropdown-35-menu"
-                            role="menu"
-                          >
-                            <MenuGroup
-                              key="0"
-                            >
-                              <MenuGroup>
-                                <div
-                                  className="emotion-3"
-                                >
-                                  <MenuItem
-                                    index={0}
-                                    item={
-                                      Object {
-                                        "onClick": [MockFunction],
-                                        "text": "item 1",
-                                      }
-                                    }
-                                    key="item 1"
-                                    onClick={[MockFunction]}
-                                    render={[Function]}
-                                    text="item 1"
-                                  >
-                                    <div
-                                      id="dropdown-35-item-0"
-                                      onClick={[Function]}
-                                      onKeyDown={[Function]}
-                                      role="menuitem"
-                                      tabIndex={null}
-                                    >
-                                      item 1
-                                    </div>
-                                  </MenuItem>
-                                  <MenuDivider
-                                    key="1"
-                                  >
-                                    <MenuDivider
-                                      role="separator"
-                                    >
-                                      <div
-                                        className="emotion-2"
-                                        role="separator"
-                                      />
-                                    </MenuDivider>
-                                  </MenuDivider>
-                                  <MenuItem
-                                    index={1}
-                                    item={
-                                      Object {
-                                        "onClick": [MockFunction],
-                                        "text": "item 2",
-                                      }
-                                    }
-                                    key="item 2"
-                                    onClick={[MockFunction]}
-                                    render={[Function]}
-                                    text="item 2"
-                                  >
-                                    <div
-                                      id="dropdown-35-item-1"
-                                      onClick={[Function]}
-                                      onKeyDown={[Function]}
-                                      role="menuitem"
-                                      tabIndex={null}
-                                    >
-                                      item 2
-                                    </div>
-                                  </MenuItem>
-                                </div>
-                              </MenuGroup>
-                            </MenuGroup>
-                          </div>
-                        </Menu>
-                      </Menu>
-                    </div>
-                  </Popper>
-                </RtlPopper>
-              </PopoverContent>
-            </DropdownContent>
-          </DropdownContent>
-          <EventListener
-            listeners={
-              Array [
-                Object {
-                  "event": "click",
-                  "handler": [Function],
-                  "options": true,
-                  "target": "document",
-                },
-                Object {
-                  "event": "keydown",
-                  "handler": [Function],
-                  "options": true,
-                  "target": "document",
-                },
-              ]
-            }
-          />
-        </span>
-      </Popover>
-    </Popover>
-  </Popover>
-</Dropdown>
+      "onClick": [Function],
+      "onKeyDown": [Function],
+      "role": "menuitem",
+      "tabIndex": null,
+      "text": "item 1",
+    },
+    "state": Object {
+      "highlightedIndex": undefined,
+      "isOpen": true,
+    },
+  },
+]
 `;
 
-exports[`Dropdown render props menu renders expected content 1`] = `
-.emotion-6 {
-  box-sizing: border-box;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-}
-
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-0 {
-  display: inline-block;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  border: 1px solid #ebeff5;
-  border-radius: 0.1875em;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
-  max-height: 30vh;
-  overflow-y: auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 14em;
-  z-index: 100;
-}
-
-.emotion-2 *,
-.emotion-2 *::before,
-.emotion-2 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-2[data-placement^="top"] {
-  margin-bottom: 5px;
-}
-
-.emotion-2[data-placement^="bottom"] {
-  margin-top: 5px;
-}
-
-.emotion-2[data-placement^="left"] {
-  margin-right: 5px;
-}
-
-.emotion-2[data-placement^="right"] {
-  margin-left: 5px;
-}
-
-.emotion-2[data-x-out-of-boundaries] {
-  visibility: hidden;
-}
-
-<Dropdown
-  data={
-    Array [
-      Object {
-        "onClick": [MockFunction],
-        "text": "item 1",
-      },
-      Object {
-        "divider": true,
-      },
-      Object {
-        "onClick": [MockFunction],
-        "text": "item 2",
-      },
-    ]
-  }
-  isOpen={true}
-  itemKey="text"
-  menu={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "helpers": Object {
-              "close": [Function],
-              "focusTrigger": [Function],
-              "open": [Function],
-            },
-            "props": Object {
-              "data": Array [
-                Object {
-                  "onClick": [MockFunction],
-                  "text": "item 1",
-                },
-                Object {
-                  "divider": true,
-                },
-                Object {
-                  "onClick": [MockFunction],
-                  "text": "item 2",
-                },
-              ],
-              "id": "dropdown-33-menu",
-              "item": [Function],
-              "itemKey": "text",
-              "role": "menu",
-            },
-            "state": Object {
-              "highlightedIndex": undefined,
-              "isOpen": true,
-            },
-          },
-        ],
+exports[`Dropdown render props menu calls menu prop with expected arguments 1`] = `
+Array [
+  Object {
+    "helpers": Object {
+      "close": [Function],
+      "focusTrigger": [Function],
+      "open": [Function],
+    },
+    "props": Object {
+      "data": Array [
+        Object {
+          "onClick": [MockFunction],
+          "text": "item 1",
+        },
+        Object {
+          "divider": true,
+        },
+        Object {
+          "onClick": [MockFunction],
+          "text": "item 2",
+        },
       ],
-    }
-  }
-  placement="bottom-start"
->
-  <Popover
-    content={[Function]}
-    focusTriggerOnClose={true}
-    hasArrow={true}
-    id="dropdown-33"
-    isOpen={true}
-    itemKey="text"
-    onClose={[Function]}
-    onOpen={[Function]}
-    placement="bottom-start"
-    triggerRef={[Function]}
-  >
-    <Popover
-      content={[Function]}
-      focusTriggerOnClose={true}
-      hasArrow={true}
-      id="dropdown-33"
-      isOpen={true}
-      itemKey="text"
-      onClose={[Function]}
-      onOpen={[Function]}
-      placement="bottom-start"
-      tag="span"
-      triggerRef={[Function]}
-    >
-      <Popover
-        className="emotion-6"
-        id="dropdown-33"
-        tag="span"
-      >
-        <span
-          className="emotion-6"
-          id="dropdown-33"
-        >
-          <PopoverTrigger
-            aria-activedescendant="dropdown-33-menu"
-            aria-describedby="dropdown-33-content"
-            aria-expanded={true}
-            aria-haspopup={true}
-            aria-owns="dropdown-33-content"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            role="button"
-          >
-            <PopoverTrigger
-              component="span"
-            >
-              <PopoverTrigger
-                className="emotion-0"
-                component="span"
-              >
-                <span
-                  className="emotion-0"
-                >
-                  <button
-                    aria-activedescendant="dropdown-33-menu"
-                    aria-describedby="dropdown-33-content"
-                    aria-expanded={true}
-                    aria-haspopup={true}
-                    aria-owns="dropdown-33-content"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                    onKeyUp={[Function]}
-                    role="button"
-                  >
-                    trigger
-                  </button>
-                </span>
-              </PopoverTrigger>
-            </PopoverTrigger>
-          </PopoverTrigger>
-          <DropdownContent
-            hasArrow={true}
-            id="dropdown-33-content"
-            onBlur={[Function]}
-            placement="bottom-start"
-          >
-            <DropdownContent
-              hasArrow={true}
-              id="dropdown-33-content"
-              onBlur={[Function]}
-              placement="bottom-start"
-            >
-              <PopoverContent
-                className="emotion-2"
-                id="dropdown-33-content"
-                onBlur={[Function]}
-                placement="bottom-start"
-              >
-                <RtlPopper
-                  className="emotion-2"
-                  id="dropdown-33-content"
-                  onBlur={[Function]}
-                  placement="bottom-start"
-                >
-                  <Popper
-                    className="emotion-2"
-                    component="div"
-                    eventsEnabled={true}
-                    id="dropdown-33-content"
-                    modifiers={Object {}}
-                    onBlur={[Function]}
-                    placement="bottom-start"
-                    positionFixed={false}
-                  >
-                    <div
-                      className="emotion-2"
-                      id="dropdown-33-content"
-                      onBlur={[Function]}
-                      style={
-                        Object {
-                          "opacity": 0,
-                          "pointerEvents": "none",
-                          "position": "absolute",
-                        }
-                      }
-                    >
-                      <div
-                        data={
-                          Array [
-                            Object {
-                              "onClick": [MockFunction],
-                              "text": "item 1",
-                            },
-                            Object {
-                              "divider": true,
-                            },
-                            Object {
-                              "onClick": [MockFunction],
-                              "text": "item 2",
-                            },
-                          ]
-                        }
-                        id="dropdown-33-menu"
-                        role="menu"
-                      >
-                        Menu
-                      </div>
-                    </div>
-                  </Popper>
-                </RtlPopper>
-              </PopoverContent>
-            </DropdownContent>
-          </DropdownContent>
-          <EventListener
-            listeners={
-              Array [
-                Object {
-                  "event": "click",
-                  "handler": [Function],
-                  "options": true,
-                  "target": "document",
-                },
-                Object {
-                  "event": "keydown",
-                  "handler": [Function],
-                  "options": true,
-                  "target": "document",
-                },
-              ]
-            }
-          />
-        </span>
-      </Popover>
-    </Popover>
-  </Popover>
-</Dropdown>
+      "id": "dropdown-31-menu",
+      "item": [Function],
+      "itemKey": "text",
+      "role": "menu",
+    },
+    "state": Object {
+      "highlightedIndex": undefined,
+      "isOpen": true,
+    },
+  },
+]
 `;
