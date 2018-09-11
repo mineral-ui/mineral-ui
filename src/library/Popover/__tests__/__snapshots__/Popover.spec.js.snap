@@ -4364,229 +4364,57 @@ exports[`Popover demo examples Snapshots: title 1`] = `
 </Styled(div)>
 `;
 
-exports[`Popover render props children renders expected content 1`] = `
-.emotion-0 {
-  box-sizing: border-box;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-}
-
-.emotion-0 *,
-.emotion-0 *::before,
-.emotion-0 *::after {
-  box-sizing: inherit;
-}
-
-<Popover
-  content={
-    <div>
-      content
-    </div>
-  }
-  focusTriggerOnClose={true}
-  hasArrow={true}
-  placement="bottom"
->
-  <Popover
-    content={
-      <div>
-        content
-      </div>
-    }
-    focusTriggerOnClose={true}
-    hasArrow={true}
-    placement="bottom"
-    tag="span"
-  >
-    <Popover
-      className="emotion-0"
-      tag="span"
-    >
-      <span
-        className="emotion-0"
-      >
-        <div
-          aria-describedby="popover-44-content"
-          aria-expanded={false}
-          aria-owns="popover-44-content"
-          onBlur={[Function]}
-          onClick={[Function]}
-          role="button"
-        >
-          Trigger
-        </div>
-      </span>
-    </Popover>
-  </Popover>
-</Popover>
+exports[`Popover render props children calls children prop with expected arguments 1`] = `
+Array [
+  Object {
+    "helpers": Object {
+      "close": [Function],
+      "focusTrigger": [Function],
+      "open": [Function],
+      "toggleOpen": [Function],
+    },
+    "props": Object {
+      "aria-describedby": "popover-43-content",
+      "aria-disabled": undefined,
+      "aria-expanded": false,
+      "aria-owns": "popover-43-content",
+      "children": undefined,
+      "disabled": undefined,
+      "onBlur": [Function],
+      "onClick": [Function],
+      "ref": [Function],
+      "role": "button",
+    },
+    "state": Object {
+      "isOpen": false,
+    },
+  },
+]
 `;
 
-exports[`Popover render props content renders expected content 1`] = `
-.emotion-2 {
-  box-sizing: border-box;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-}
-
-.emotion-2 *,
-.emotion-2 *::before,
-.emotion-2 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-0 {
-  display: inline-block;
-}
-
-<Popover
-  content={
-    [MockFunction] {
-      "calls": Array [
-        Array [
-          Object {
-            "helpers": Object {
-              "close": [Function],
-              "focusTrigger": [Function],
-              "open": [Function],
-              "toggleOpen": [Function],
-            },
-            "props": Object {
-              "hasArrow": true,
-              "id": "popover-46-content",
-              "modifiers": undefined,
-              "onBlur": [Function],
-              "placement": "bottom",
-              "ref": [Function],
-              "subtitle": undefined,
-              "tabIndex": 0,
-              "title": undefined,
-            },
-            "state": Object {
-              "isOpen": true,
-            },
-          },
-        ],
-      ],
-    }
-  }
-  focusTriggerOnClose={true}
-  hasArrow={true}
-  isOpen={true}
-  placement="bottom"
->
-  <Popover
-    content={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "helpers": Object {
-                "close": [Function],
-                "focusTrigger": [Function],
-                "open": [Function],
-                "toggleOpen": [Function],
-              },
-              "props": Object {
-                "hasArrow": true,
-                "id": "popover-46-content",
-                "modifiers": undefined,
-                "onBlur": [Function],
-                "placement": "bottom",
-                "ref": [Function],
-                "subtitle": undefined,
-                "tabIndex": 0,
-                "title": undefined,
-              },
-              "state": Object {
-                "isOpen": true,
-              },
-            },
-          ],
-        ],
-      }
-    }
-    focusTriggerOnClose={true}
-    hasArrow={true}
-    isOpen={true}
-    placement="bottom"
-    tag="span"
-  >
-    <Popover
-      className="emotion-2"
-      tag="span"
-    >
-      <span
-        className="emotion-2"
-      >
-        <PopoverTrigger
-          aria-describedby="popover-46-content"
-          aria-expanded={true}
-          aria-owns="popover-46-content"
-          onBlur={[Function]}
-          onClick={[Function]}
-          role="button"
-        >
-          <PopoverTrigger
-            component="span"
-          >
-            <PopoverTrigger
-              className="emotion-0"
-              component="span"
-            >
-              <span
-                className="emotion-0"
-              >
-                <button
-                  aria-describedby="popover-46-content"
-                  aria-expanded={true}
-                  aria-owns="popover-46-content"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  role="button"
-                >
-                  trigger
-                </button>
-              </span>
-            </PopoverTrigger>
-          </PopoverTrigger>
-        </PopoverTrigger>
-        <div
-          id="popover-46-content"
-          onBlur={[Function]}
-          tabIndex={0}
-        >
-          Content
-        </div>
-        <EventListener
-          listeners={
-            Array [
-              Object {
-                "event": "click",
-                "handler": [Function],
-                "options": true,
-                "target": "document",
-              },
-              Object {
-                "event": "keydown",
-                "handler": [Function],
-                "options": true,
-                "target": "document",
-              },
-            ]
-          }
-        />
-      </span>
-    </Popover>
-  </Popover>
-</Popover>
+exports[`Popover render props content calls content prop with expected arguments 1`] = `
+Array [
+  Object {
+    "helpers": Object {
+      "close": [Function],
+      "focusTrigger": [Function],
+      "open": [Function],
+      "toggleOpen": [Function],
+    },
+    "props": Object {
+      "hasArrow": true,
+      "id": "popover-44-content",
+      "modifiers": undefined,
+      "onBlur": [Function],
+      "placement": "bottom",
+      "ref": [Function],
+      "subtitle": undefined,
+      "tabIndex": 0,
+      "title": undefined,
+    },
+    "state": Object {
+      "isOpen": true,
+    },
+  },
+]
 `;
