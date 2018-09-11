@@ -204,6 +204,7 @@ const styles = {
         boxSizing: 'content-box',
         color: disabled || primary ? null : theme.ButtonIcon_color,
         display: 'block',
+        flexShrink: 0,
 
         '&:first-child': {
           marginLeft:
