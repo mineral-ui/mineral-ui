@@ -62,7 +62,7 @@ const sections: Array<Section> = [
     ]
   },
   {
-    heading: 'Guidelines',
+    heading: 'Guides',
     pages: [
       {
         component: 'GettingStarted',
@@ -72,13 +72,6 @@ const sections: Array<Section> = [
         title: 'Getting Started'
       },
       {
-        component: 'Styling',
-        description:
-          'Mineral UI is built on a design system with styles ready to go out of the box. Learn the techniques for customizing styles in your application.',
-        path: '/styling',
-        title: 'Styling'
-      },
-      {
         component: 'Theming',
         description:
           'Theming is a core concept in Mineral UI. Mineral UI makes it simple to implement and maintain theming across your app.',
@@ -86,14 +79,22 @@ const sections: Array<Section> = [
         title: 'Theming'
       },
       {
+        component: 'Styling',
+        description:
+          'Mineral UI is built on a design system with styles ready to go out of the box. Learn the techniques for customizing styles in your application.',
+        path: '/styling',
+        title: 'Styling'
+      },
+      {
         component: 'ImportSyntax',
-        description: 'Import syntax guidelines',
+        description: 'Import syntax guide',
         path: '/import-syntax',
         title: 'Import Syntax'
       },
       {
         component: 'RenderProps',
-        description: 'Render props guidelines',
+        description:
+          'Render props allow for deep customization of select Mineral components.',
         path: '/render-props',
         title: 'Render Props'
       }

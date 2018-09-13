@@ -59,7 +59,7 @@ render(<App />, document.getElementById('app'));
 
 > Your app must be wrapped in a [ThemeProvider](https://mineral-ui.com/components/theme-provider/) at its root in order for the styles to apply correctly.
 
-> Also, please see our [import syntax guidelines](https://mineral-ui.com/import-syntax).
+> Also, please see our [import syntax guide](https://mineral-ui.com/import-syntax).
 
 
 ### Open Sans Font

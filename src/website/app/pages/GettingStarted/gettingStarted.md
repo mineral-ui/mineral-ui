@@ -45,7 +45,7 @@ render(<App />, document.getElementById('app'));
   <p key={0}>Your app must be wrapped in a <code key={1}>ThemeProvider</code> at its root
   in order for the styles to apply correctly.</p>
 
-  <p key={2}>Also, please see our <a key={3} href="/import-syntax">import syntax guidelines</a>.</p>
+  <p key={2}>Also, please see our <a key={3} href="/import-syntax">import syntax guide</a>.</p>
 </Callout>
 
 ### Open Sans Font
