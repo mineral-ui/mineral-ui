@@ -1,3 +1,18 @@
+<a name="0.45.0"></a>
+# [0.45.0](https://github.com/mineral-ui/mineral-ui/compare/v0.44.0...v0.45.0) (2018-09-13)
+
+
+### Features
+
+* **table:** Add render prop support ([79ac277](https://github.com/mineral-ui/mineral-ui/commit/79ac277))
+
+
+### BREAKING CHANGES
+
+* **table:** Rename theme variables that are used in sortable header cells. TableSortableHeaderCell_border_focus, TableSortableHeaderCell_color_focus
+
+
+
 <a name="0.44.0"></a>
 # [0.44.0](https://github.com/mineral-ui/mineral-ui/compare/v0.43.0...v0.44.0) (2018-08-29)
 
