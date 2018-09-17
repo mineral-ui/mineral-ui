@@ -1,5 +1,5 @@
 /* @flow */
-import React, { Component, cloneElement } from 'react';
+import React, { cloneElement, PureComponent } from 'react';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
@@ -208,7 +208,7 @@ const variantIcons = {
  * A custom rendering hook is exposed to enable any extra functionality your app
  * requires.
  */
-export default class MenuItem extends Component<Props> {
+export default class MenuItem extends PureComponent<Props> {
   render() {
     const {
       children,

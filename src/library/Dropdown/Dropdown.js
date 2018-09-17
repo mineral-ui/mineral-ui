@@ -273,6 +273,7 @@ export default class Dropdown extends Component<Props, State> {
       id: this.getMenuId(),
       itemKey,
       data,
+      highlightedIndex: this.getControllableValue('highlightedIndex'),
       item: this.renderItem,
       role: 'menu'
     };

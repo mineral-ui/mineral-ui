@@ -1,5 +1,5 @@
 /* @flow */
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { createStyledComponent } from '../styles';
 import { MenuDivider, MenuGroup, MenuItem } from './index';
 
@@ -12,6 +12,8 @@ type Props = {
   children?: React$Node,
   /** Data used to contruct Menu. See [example](#data) */
   data?: Items | ItemGroups,
+  /** @Private Index of the highlighted item. Used by Dropdown and Select. */
+  highlightedIndex?: number,
   /**
    * Provides custom rendering control for the items. See the
    * [custom item example](/components/menu#custom-item) and
@@ -76,11 +78,13 @@ export const getItems = (data: Items | ItemGroups) => {
 
 /**
  * A Menu presents a list of options representing actions or navigation.
- * Composed of [MenuItems](/components/menu-item), Menu is usually combined with [Popover](/components/popover) to create a [Dropdown](/components/dropdown).
+ * Composed of [MenuItems](/components/menu-item), Menu is usually combined with
+ * [Popover](/components/popover) to create a [Dropdown](/components/dropdown).
  *
- * Menus are great for collecting actions in one place so your users don't need to scan the entire document to find a feature.
+ * Menus are great for collecting actions in one place so your users don't need
+ * to scan the entire document to find a feature.
  */
-export default class Menu extends Component<Props> {
+export default class Menu extends PureComponent<Props> {
   render() {
     const { children, data, ...rootProps } = this.props;
 
@@ -104,6 +108,7 @@ export default class Menu extends Component<Props> {
               items: items.concat(
                 this.renderItem({
                   props: {
+                    isHighlighted: this.props.highlightedIndex === index,
                     index,
                     item
                   }
