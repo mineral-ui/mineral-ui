@@ -94,33 +94,36 @@ export default class Menu extends PureComponent<Props> {
   }
 
   renderFromData = (data: Items | ItemGroups) => {
+    const { highlightedIndex } = this.props;
     // $FlowFixMe https://github.com/facebook/flow/issues/5885
     const itemGroups: ItemGroups = groupifyData(data);
-    return itemGroups.map(this.renderMenuGroup);
-  };
 
-  renderMenuGroup = (group: ItemGroup, groupIndex: number) => {
-    return group.items && group.items.length ? (
-      <MenuGroup key={groupIndex} title={group.title}>
-        {
-          group.items.reduce(
-            ({ items, index }, item) => ({
-              items: items.concat(
-                this.renderItem({
-                  props: {
-                    isHighlighted: this.props.highlightedIndex === index,
-                    index,
-                    item
-                  }
-                })
-              ),
-              index: item.divider ? index : index + 1
-            }),
-            { items: [], index: 0 }
-          ).items
+    return itemGroups.reduce(
+      (acc, group: ItemGroup, groupIndex: number) => {
+        if (!group.items || !group.items.length) {
+          return acc;
         }
-      </MenuGroup>
-    ) : null;
+
+        const menuGroup = (
+          <MenuGroup key={groupIndex} title={group.title}>
+            {group.items.map((item) =>
+              this.renderItem({
+                props: {
+                  isHighlighted: highlightedIndex === acc.index,
+                  index: item.divider ? acc.index : acc.index++,
+                  item
+                }
+              })
+            )}
+          </MenuGroup>
+        );
+
+        acc.groups.push(menuGroup);
+
+        return acc;
+      },
+      { groups: [], index: 0 }
+    ).groups;
   };
 
   getItemProps: PropGetter = (props = {}) => {
