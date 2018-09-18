@@ -104,26 +104,23 @@ export default class Menu extends PureComponent<Props> {
           return acc;
         }
 
-        const menuGroup = (
-          <MenuGroup key={groupIndex} title={group.title}>
-            {group.items.map((item) =>
-              this.renderItem({
-                props: {
-                  isHighlighted: highlightedIndex === acc.index,
-                  index: item.divider ? acc.index : acc.index++,
-                  item
-                }
-              })
-            )}
-          </MenuGroup>
+        const menuGroup = <MenuGroup key={groupIndex} title={group.title} />;
+        const items = group.items.map((item) =>
+          this.renderItem({
+            props: {
+              isHighlighted: highlightedIndex === acc.index,
+              index: item.divider ? acc.index : acc.index++,
+              item
+            }
+          })
         );
 
-        acc.groups.push(menuGroup);
+        acc.items.push(menuGroup, ...items);
 
         return acc;
       },
-      { groups: [], index: 0 }
-    ).groups;
+      { items: [], index: 0 }
+    ).items;
   };
 
   getItemProps: PropGetter = (props = {}) => {

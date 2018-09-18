@@ -1,6 +1,5 @@
 /* @flow */
 import { componentTheme as menuDividerComponentTheme } from '../../../../library/Menu/MenuDivider';
-import { componentTheme as menuGroupComponentTheme } from '../../../../library/Menu/MenuGroup';
 import { componentTheme as menuGroupTitleComponentTheme } from '../../../../library/Menu/MenuGroupTitle';
 import { componentTheme as menuItemComponentTheme } from '../../../../library/Menu/MenuItem';
 import menuExamples from './examples/Menu';
@@ -43,7 +42,7 @@ Do not use MenuDividers to simply separate options as a decoration, or to provid
   },
   {
     bestPractices: bestPractices.menuGroup,
-    componentTheme: [menuGroupComponentTheme, menuGroupTitleComponentTheme],
+    componentTheme: menuGroupTitleComponentTheme,
     doc: menuGroupDoc,
     examples: menuGroupExamples,
     slug: 'menu-group',
