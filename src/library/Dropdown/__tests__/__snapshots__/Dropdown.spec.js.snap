@@ -3082,6 +3082,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                     >
                                       <MenuItem
                                         index={0}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Light years",
@@ -3159,6 +3160,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={1}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Star stuff",
@@ -3236,6 +3238,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={2}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Encyclopaedia galactica",
@@ -3313,6 +3316,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={3}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Cosmic ocean",
@@ -4515,6 +4519,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                         >
                                           <MenuItem
                                             index={0}
+                                            isHighlighted={false}
                                             item={
                                               Object {
                                                 "text": "Light years",
@@ -4592,6 +4597,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                           </MenuItem>
                                           <MenuItem
                                             index={1}
+                                            isHighlighted={false}
                                             item={
                                               Object {
                                                 "text": "Star stuff",
@@ -4669,6 +4675,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                           </MenuItem>
                                           <MenuItem
                                             index={2}
+                                            isHighlighted={false}
                                             item={
                                               Object {
                                                 "text": "Encyclopaedia galactica",
@@ -4746,6 +4753,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                           </MenuItem>
                                           <MenuItem
                                             index={3}
+                                            isHighlighted={false}
                                             item={
                                               Object {
                                                 "text": "Cosmic ocean",
@@ -5548,6 +5556,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                               >
                                                 <MenuItem
                                                   index={0}
+                                                  isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Light years",
@@ -5625,6 +5634,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                 </MenuItem>
                                                 <MenuItem
                                                   index={1}
+                                                  isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Star stuff",
@@ -5702,6 +5712,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                 </MenuItem>
                                                 <MenuItem
                                                   index={2}
+                                                  isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Encyclopaedia galactica",
@@ -5779,6 +5790,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                 </MenuItem>
                                                 <MenuItem
                                                   index={3}
+                                                  isHighlighted={false}
                                                   item={
                                                     Object {
                                                       "text": "Cosmic ocean",
@@ -6504,6 +6516,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                     >
                                       <MenuItem
                                         index={0}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Light years star stuff",
@@ -6581,6 +6594,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={1}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Harvesting star light citizens of distant epochs",
@@ -6658,6 +6672,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={2}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Encyclopaedia galactica vastness is bearable",
@@ -6735,6 +6750,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                       </MenuItem>
                                       <MenuItem
                                         index={3}
+                                        isHighlighted={false}
                                         item={
                                           Object {
                                             "text": "Shores of the cosmic ocean",
@@ -6935,6 +6951,7 @@ Array [
           "text": "item 2",
         },
       ],
+      "highlightedIndex": undefined,
       "id": "dropdown-31-menu",
       "item": [Function],
       "itemKey": "text",
@@ -6945,5 +6962,14 @@ Array [
       "isOpen": true,
     },
   },
+]
+`;
+
+exports[`Dropdown when open when data is grouped item ids increment across groups 1`] = `
+Array [
+  "dropdown-76-item-0",
+  "dropdown-76-item-1",
+  "dropdown-76-item-2",
+  "dropdown-76-item-3",
 ]
 `;
