@@ -21,6 +21,7 @@ import radio from './Radio';
 import select from './Select';
 import startEnd from './StartEnd';
 import table from './Table';
+import tabs from './Tabs';
 import text from './Text';
 import textArea from './TextArea';
 import textInput from './TextInput';
@@ -48,6 +49,7 @@ const demos = flatten([
   select,
   startEnd,
   table,
+  tabs,
   text,
   textArea,
   textInput,
