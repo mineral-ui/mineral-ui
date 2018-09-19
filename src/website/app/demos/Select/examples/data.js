@@ -2,6 +2,8 @@
 import Button from '../../../../../library/Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Select from '../../../../../library/Select';
+// import { largeData as data } from '../components/selectData';
+import { largeGroupedData as data } from '../components/selectData';
 
 export default {
   id: 'data',
@@ -13,41 +15,8 @@ to the [MenuItem](/components/menu-item).
 [MenuDividers](/components/menu-divider) are created simply by passing
 \`{divider: true}\` as an item. Menu data can also be
 [grouped](/components/menu#grouped-data).`,
-  scope: { Button, Select, IconCloud },
+  scope: { Button, data, Select, IconCloud },
   source: `
-    () => {
-      const data = [
-        {
-          text: 'Menu item',
-          secondaryText: 'Secondary text',
-          value: 'basic'
-        },
-        {
-          text: 'Icon at start',
-          iconStart: <IconCloud />,
-          value: 'iconStart'
-        },
-        {
-          text: 'Icon at end',
-          iconEnd: <IconCloud />,
-          value: 'iconEnd'
-        },
-        {
-          divider: true
-        },
-        {
-          text: 'Danger variant',
-          variant: 'danger', // 'danger' | 'success' | 'warning'
-          value: 'variant'
-        },
-        {
-          text: 'Disabled menu item',
-          onClick: () => { console.log('onClick is not triggered for disabled MenuItems'); },
-          disabled: true,
-          value: 'disabled'
-        }
-      ];
-
-      return <Select data={data} />;
-    }`
+    <Select data={data} />;
+  `
 };

@@ -222,6 +222,8 @@ export default class Select extends Component<Props, State> {
 
   selectTrigger: ?React$Component<*, *>;
 
+  menu: ?React$Component<*, *>;
+
   render() {
     const {
       data,
@@ -290,6 +292,10 @@ export default class Select extends Component<Props, State> {
     triggerRef && triggerRef(node);
   };
 
+  setMenuRef = (node: ?React$Component<*, *>) => {
+    this.menu = node;
+  };
+
   getMenuItemId = (index: string | number) => {
     return `${this.id}-item-${index}`;
   };
@@ -351,6 +357,7 @@ export default class Select extends Component<Props, State> {
     return {
       ...props,
       itemKey,
+      ref: this.setMenuRef,
       role: 'listbox',
       item: this.renderItem
     };
@@ -537,13 +544,20 @@ export default class Select extends Component<Props, State> {
   };
 
   scrollHighlightedItemIntoViewIfNeeded = () => {
-    const highlightedItemNode = global.document.getElementById(
-      this.getHighlightedItemId()
-    );
-    const boundary = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
+    if (this.menu) {
+      // Virtualized list - item must be rendered before it can be scrolled to
+      const highlightedIndex = this.getControllableValue('highlightedIndex');
+      // $FlowFixMe
+      this.menu.scrollToIndex(highlightedIndex); // pass item id instead?
+    } else {
+      const boundary = findDOMNode(this); // eslint-disable-line react/no-find-dom-node
+      const highlightedItemNode = global.document.getElementById(
+        this.getHighlightedItemId()
+      );
 
-    if (highlightedItemNode && boundary) {
-      scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
+      if (highlightedItemNode && boundary) {
+        scrollIntoViewIfNeeded(highlightedItemNode, { boundary });
+      }
     }
   };
 

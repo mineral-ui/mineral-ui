@@ -4,6 +4,31 @@ import IconCloud from 'mineral-ui-icons/IconCloud';
 
 import type { Items } from '../../../../../library/Menu/Menu';
 
+const generateItems = (count: number) => {
+  return [...Array(count).keys()].map((index) => ({
+    text: `Item ${index}`,
+    value: `${index}`
+  }));
+};
+
+const generateGroupedItems = (groupCount: number, groupSize: number) => {
+  const groupCountArray = [...Array(groupCount).keys()];
+  const groupSizeArray = [...Array(groupSize).keys()];
+
+  return groupCountArray.map((groupIndex) => ({
+    title: `Group ${groupIndex}`,
+    items: groupSizeArray.map((itemIndex) => {
+      return {
+        text: `Item ${groupIndex}-${itemIndex}`,
+        value: `${groupIndex}-${itemIndex}`
+      };
+    })
+  }));
+};
+
+export const largeData = generateItems(5000);
+export const largeGroupedData = generateGroupedItems(500, 10);
+
 export const basicData: Items = [
   {
     text: 'Alpha',
