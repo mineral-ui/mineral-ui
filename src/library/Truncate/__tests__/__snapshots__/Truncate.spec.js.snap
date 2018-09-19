@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Truncate does not render tooltip when not truncated 1`] = `
+.emotion-0 {
+  pointer-events: all;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #3272d9;
+  outline-offset: -1px;
+}
+
+<Truncate>
+  <Truncate
+    innerRef={[Function]}
+  >
+    <span
+      className="emotion-0"
+    >
+      Long text string that hopefully truncates
+    </span>
+  </Truncate>
+</Truncate>
+`;
+
+exports[`Truncate renders a tooltip when truncated 1`] = `
+.emotion-0 {
+  pointer-events: all;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #3272d9;
+  outline-offset: -1px;
+}
+
+.emotion-5 {
+  white-space: normal;
+}
+
+.emotion-3 {
+  display: inline-block;
+  white-space: normal;
+}
+
+.emotion-1 {
+  display: inline-block;
+}
+
+<Truncate>
+  <Styled(Tooltip)
+    content="Long text string that hopefully truncates"
+    hasArrow={true}
+  >
+    <Tooltip
+      className="emotion-5"
+      content="Long text string that hopefully truncates"
+      hasArrow={true}
+    >
+      <WithTheme(Themed(Popover))
+        className="emotion-5"
+        content={[Function]}
+        focusTriggerOnClose={false}
+        hasArrow={true}
+        id="tooltip-1"
+        isOpen={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+      >
+        <Themed(Popover)
+          className="emotion-5"
+          content={[Function]}
+          focusTriggerOnClose={false}
+          hasArrow={true}
+          id="tooltip-1"
+          isOpen={false}
+          onClose={[Function]}
+          onOpen={[Function]}
+        >
+          <ThemeProvider>
+            <ThemeProvider>
+              <Popover
+                className="emotion-5"
+                content={[Function]}
+                focusTriggerOnClose={false}
+                hasArrow={true}
+                id="tooltip-1"
+                isOpen={false}
+                onClose={[Function]}
+                onOpen={[Function]}
+                placement="bottom"
+              >
+                <Popover
+                  className="emotion-5"
+                  content={[Function]}
+                  focusTriggerOnClose={false}
+                  hasArrow={true}
+                  id="tooltip-1"
+                  isOpen={false}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  placement="bottom"
+                  tag="span"
+                >
+                  <Popover
+                    className="emotion-3"
+                    id="tooltip-1"
+                    tag="span"
+                  >
+                    <span
+                      className="emotion-3"
+                      id="tooltip-1"
+                    >
+                      <PopoverTrigger
+                        aria-describedby="tooltip-1-content"
+                        aria-owns="tooltip-1-content"
+                        innerRef={[Function]}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <PopoverTrigger
+                          component="span"
+                        >
+                          <PopoverTrigger
+                            className="emotion-1"
+                            component="span"
+                          >
+                            <span
+                              className="emotion-1"
+                            >
+                              <Truncate
+                                aria-describedby="tooltip-1-content"
+                                aria-owns="tooltip-1-content"
+                                innerRef={[Function]}
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                role="button"
+                                tabIndex={0}
+                              >
+                                <span
+                                  aria-describedby="tooltip-1-content"
+                                  aria-owns="tooltip-1-content"
+                                  className="emotion-0"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  role="button"
+                                  tabIndex={0}
+                                >
+                                  Long text string that hopefully truncates
+                                </span>
+                              </Truncate>
+                            </span>
+                          </PopoverTrigger>
+                        </PopoverTrigger>
+                      </PopoverTrigger>
+                    </span>
+                  </Popover>
+                </Popover>
+              </Popover>
+            </ThemeProvider>
+          </ThemeProvider>
+        </Themed(Popover)>
+      </WithTheme(Themed(Popover))>
+    </Tooltip>
+  </Styled(Tooltip)>
+</Truncate>
+`;
