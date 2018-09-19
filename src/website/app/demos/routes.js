@@ -271,6 +271,20 @@ const demoRoutes: DemoRoutes = [
     slug: 'table',
     title: 'Table'
   },
+  [
+    {
+      description:
+        'Tabs provide easy management for viewing related content in the same layout region.',
+      slug: 'tabs',
+      title: 'Tabs'
+    },
+    {
+      description:
+        'Tab displays the tab title and associated panel content (when selected).',
+      slug: 'tab',
+      title: 'Tab'
+    }
+  ],
   {
     description:
       'The Text component provides styles and semantic meaning for text and headings in a manner consistent with other components.',
