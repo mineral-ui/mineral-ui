@@ -1,5 +1,6 @@
 /* @flow */
 import basic from './basic';
+import cursor from './cursor';
 import controlled from './controlled';
 import disabled from './disabled';
 import importSyntax from './importSyntax';
@@ -17,6 +18,7 @@ export default [
   overflow,
   scrolling,
   portal,
+  cursor,
   disabled,
   controlled
 ];
