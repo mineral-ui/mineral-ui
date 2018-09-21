@@ -11,6 +11,11 @@ import PopoverContent from '../Popover/PopoverContent';
 type Props = {
   /** Trigger for the Tooltip */
   children: React$Node,
+  /**
+   * Cursor applied when hovering the tooltip trigger; accepts any
+   * [valid CSS value](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+   */
+  cursor?: string,
   /** Content of the Tooltip */
   content: string,
   /**

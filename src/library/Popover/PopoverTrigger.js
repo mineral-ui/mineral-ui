@@ -4,14 +4,20 @@ import { Target } from 'react-popper';
 import { createStyledComponent } from '../styles';
 
 type Props = {
-  children: React$Node
+  children: React$Node,
+  /**
+   * Cursor applied when hovering the popover trigger; accepts any
+   * [valid CSS value](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+   */
+  cursor?: string
 };
 
 const Root = createStyledComponent(
   Target,
-  {
+  ({ cursor }) => ({
+    cursor,
     display: 'inline-block'
-  },
+  }),
   {
     displayName: 'PopoverTrigger'
   }
@@ -19,9 +25,10 @@ const Root = createStyledComponent(
 
 export default class PopoverTrigger extends Component<Props> {
   render() {
-    const { children, ...restProps } = this.props;
+    const { children, cursor, ...restProps } = this.props;
     const rootProps = {
-      component: 'span'
+      component: 'span',
+      cursor
     };
 
     return (
