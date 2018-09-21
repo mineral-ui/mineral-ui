@@ -27,6 +27,11 @@ type Props = {
    */
   content: $FlowFixMe | RenderFn,
   /**
+   * @Private Cursor applied when hovering the popover trigger; accepts any
+   * [valid CSS value](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+   */
+  cursor?: string,
+  /**
    * Open the Popover upon initialization. Primarily for use with uncontrolled
    * components.
    */
@@ -274,7 +279,7 @@ export default class Popover extends Component<Props, State> {
   getTriggerProps: PropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
-    const { children, disabled } = this.props;
+    const { children, cursor, disabled } = this.props;
 
     let child, childDisabled;
     if (!isRenderProp(children)) {
@@ -289,6 +294,7 @@ export default class Popover extends Component<Props, State> {
       'aria-expanded': isOpen,
       'aria-owns': contentId,
       children: child,
+      cursor,
       disabled: child && childDisabled ? childDisabled : disabled,
       ref: this.setTriggerRef,
       role: 'button',
