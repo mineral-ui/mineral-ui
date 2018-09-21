@@ -529,7 +529,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
           content={[Function]}
           focusTriggerOnClose={false}
           hasArrow={true}
-          id="tooltip-21"
+          id="tooltip-27"
           isOpen={true}
           onClose={[Function]}
           onOpen={[Function]}
@@ -539,7 +539,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
             content={[Function]}
             focusTriggerOnClose={false}
             hasArrow={true}
-            id="tooltip-21"
+            id="tooltip-27"
             isOpen={true}
             onClose={[Function]}
             onOpen={[Function]}
@@ -551,7 +551,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                   content={[Function]}
                   focusTriggerOnClose={false}
                   hasArrow={true}
-                  id="tooltip-21"
+                  id="tooltip-27"
                   isOpen={true}
                   onClose={[Function]}
                   onOpen={[Function]}
@@ -561,7 +561,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                     content={[Function]}
                     focusTriggerOnClose={false}
                     hasArrow={true}
-                    id="tooltip-21"
+                    id="tooltip-27"
                     isOpen={true}
                     onClose={[Function]}
                     onOpen={[Function]}
@@ -570,16 +570,16 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                   >
                     <Popover
                       className="emotion-13"
-                      id="tooltip-21"
+                      id="tooltip-27"
                       tag="span"
                     >
                       <span
                         className="emotion-13"
-                        id="tooltip-21"
+                        id="tooltip-27"
                       >
                         <PopoverTrigger
-                          aria-describedby="tooltip-21-content"
-                          aria-owns="tooltip-21-content"
+                          aria-describedby="tooltip-27-content"
+                          aria-owns="tooltip-27-content"
                           element="button"
                           onBlur={[Function]}
                           onClick={[Function]}
@@ -602,8 +602,8 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                 className="emotion-3"
                               >
                                 <Button
-                                  aria-describedby="tooltip-21-content"
-                                  aria-owns="tooltip-21-content"
+                                  aria-describedby="tooltip-27-content"
+                                  aria-owns="tooltip-27-content"
                                   element="button"
                                   onBlur={[Function]}
                                   onClick={[Function]}
@@ -616,8 +616,8 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                   type="button"
                                 >
                                   <Button
-                                    aria-describedby="tooltip-21-content"
-                                    aria-owns="tooltip-21-content"
+                                    aria-describedby="tooltip-27-content"
+                                    aria-owns="tooltip-27-content"
                                     element="button"
                                     onBlur={[Function]}
                                     onClick={[Function]}
@@ -631,8 +631,8 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                     type="button"
                                   >
                                     <button
-                                      aria-describedby="tooltip-21-content"
-                                      aria-owns="tooltip-21-content"
+                                      aria-describedby="tooltip-27-content"
+                                      aria-owns="tooltip-27-content"
                                       className="emotion-2"
                                       onBlur={[Function]}
                                       onClick={[Function]}
@@ -668,14 +668,14 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                         <PopoverContent
                           aria-live="polite"
                           hasArrow={true}
-                          id="tooltip-21-content"
+                          id="tooltip-27-content"
                           onBlur={[Function]}
                           placement="top"
                           role="tooltip"
                         >
                           <PopoverContent
                             aria-live="polite"
-                            id="tooltip-21-content"
+                            id="tooltip-27-content"
                             onBlur={[Function]}
                             placement="top"
                             role="tooltip"
@@ -683,7 +683,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                             <PopoverContent
                               aria-live="polite"
                               className="emotion-9"
-                              id="tooltip-21-content"
+                              id="tooltip-27-content"
                               onBlur={[Function]}
                               placement="top"
                               role="tooltip"
@@ -691,7 +691,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                               <RtlPopper
                                 aria-live="polite"
                                 className="emotion-9"
-                                id="tooltip-21-content"
+                                id="tooltip-27-content"
                                 onBlur={[Function]}
                                 placement="top"
                                 role="tooltip"
@@ -701,7 +701,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                   className="emotion-9"
                                   component="div"
                                   eventsEnabled={true}
-                                  id="tooltip-21-content"
+                                  id="tooltip-27-content"
                                   modifiers={Object {}}
                                   onBlur={[Function]}
                                   placement="top"
@@ -711,7 +711,7 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
                                   <div
                                     aria-live="polite"
                                     className="emotion-9"
-                                    id="tooltip-21-content"
+                                    id="tooltip-27-content"
                                     onBlur={[Function]}
                                     role="tooltip"
                                     style={
@@ -838,6 +838,417 @@ exports[`Tooltip demo examples Snapshots: controlled 1`] = `
     </div>
   </Styled(div)>
 </App>
+`;
+
+exports[`Tooltip demo examples Snapshots: cursor 1`] = `
+.emotion-3 {
+  display: inline-block;
+}
+
+.emotion-0 {
+  border-bottom-style: dashed;
+  border-bottom-color: currentcolor;
+  border-bottom-width: 1px;
+}
+
+.emotion-15 {
+  font-family: "Open Sans";
+}
+
+.emotion-15 > * {
+  margin-right: 1.5em;
+}
+
+.emotion-1 {
+  cursor: help;
+  display: inline-block;
+}
+
+.emotion-6 {
+  cursor: not-allowed;
+  display: inline-block;
+}
+
+.emotion-11 {
+  cursor: move;
+  display: inline-block;
+}
+
+<Styled(div)>
+  <div
+    className="emotion-15"
+  >
+    <Tooltip
+      content="Help"
+      cursor="help"
+      hasArrow={true}
+    >
+      <WithTheme(Themed(Popover))
+        content={[Function]}
+        cursor="help"
+        focusTriggerOnClose={false}
+        hasArrow={true}
+        id="tooltip-17"
+        isOpen={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+      >
+        <Themed(Popover)
+          content={[Function]}
+          cursor="help"
+          focusTriggerOnClose={false}
+          hasArrow={true}
+          id="tooltip-17"
+          isOpen={false}
+          onClose={[Function]}
+          onOpen={[Function]}
+        >
+          <ThemeProvider>
+            <ThemeProvider>
+              <Popover
+                content={[Function]}
+                cursor="help"
+                focusTriggerOnClose={false}
+                hasArrow={true}
+                id="tooltip-17"
+                isOpen={false}
+                onClose={[Function]}
+                onOpen={[Function]}
+                placement="bottom"
+              >
+                <Popover
+                  content={[Function]}
+                  cursor="help"
+                  focusTriggerOnClose={false}
+                  hasArrow={true}
+                  id="tooltip-17"
+                  isOpen={false}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  placement="bottom"
+                  tag="span"
+                >
+                  <Popover
+                    className="emotion-3"
+                    id="tooltip-17"
+                    tag="span"
+                  >
+                    <span
+                      className="emotion-3"
+                      id="tooltip-17"
+                    >
+                      <PopoverTrigger
+                        aria-describedby="tooltip-17-content"
+                        aria-owns="tooltip-17-content"
+                        cursor="help"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <PopoverTrigger
+                          component="span"
+                          cursor="help"
+                        >
+                          <PopoverTrigger
+                            className="emotion-1"
+                            component="span"
+                            cursor="help"
+                          >
+                            <span
+                              className="emotion-1"
+                              cursor="help"
+                            >
+                              <Styled(span)
+                                aria-describedby="tooltip-17-content"
+                                aria-owns="tooltip-17-content"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                role="button"
+                                tabIndex={0}
+                              >
+                                <span
+                                  aria-describedby="tooltip-17-content"
+                                  aria-owns="tooltip-17-content"
+                                  className="emotion-0"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  role="button"
+                                  tabIndex={0}
+                                >
+                                  Help
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </PopoverTrigger>
+                        </PopoverTrigger>
+                      </PopoverTrigger>
+                    </span>
+                  </Popover>
+                </Popover>
+              </Popover>
+            </ThemeProvider>
+          </ThemeProvider>
+        </Themed(Popover)>
+      </WithTheme(Themed(Popover))>
+    </Tooltip>
+    <Tooltip
+      content="Not Allowed"
+      cursor="not-allowed"
+      hasArrow={true}
+    >
+      <WithTheme(Themed(Popover))
+        content={[Function]}
+        cursor="not-allowed"
+        focusTriggerOnClose={false}
+        hasArrow={true}
+        id="tooltip-18"
+        isOpen={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+      >
+        <Themed(Popover)
+          content={[Function]}
+          cursor="not-allowed"
+          focusTriggerOnClose={false}
+          hasArrow={true}
+          id="tooltip-18"
+          isOpen={false}
+          onClose={[Function]}
+          onOpen={[Function]}
+        >
+          <ThemeProvider>
+            <ThemeProvider>
+              <Popover
+                content={[Function]}
+                cursor="not-allowed"
+                focusTriggerOnClose={false}
+                hasArrow={true}
+                id="tooltip-18"
+                isOpen={false}
+                onClose={[Function]}
+                onOpen={[Function]}
+                placement="bottom"
+              >
+                <Popover
+                  content={[Function]}
+                  cursor="not-allowed"
+                  focusTriggerOnClose={false}
+                  hasArrow={true}
+                  id="tooltip-18"
+                  isOpen={false}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  placement="bottom"
+                  tag="span"
+                >
+                  <Popover
+                    className="emotion-3"
+                    id="tooltip-18"
+                    tag="span"
+                  >
+                    <span
+                      className="emotion-3"
+                      id="tooltip-18"
+                    >
+                      <PopoverTrigger
+                        aria-describedby="tooltip-18-content"
+                        aria-owns="tooltip-18-content"
+                        cursor="not-allowed"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <PopoverTrigger
+                          component="span"
+                          cursor="not-allowed"
+                        >
+                          <PopoverTrigger
+                            className="emotion-6"
+                            component="span"
+                            cursor="not-allowed"
+                          >
+                            <span
+                              className="emotion-6"
+                              cursor="not-allowed"
+                            >
+                              <Styled(span)
+                                aria-describedby="tooltip-18-content"
+                                aria-owns="tooltip-18-content"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                role="button"
+                                tabIndex={0}
+                              >
+                                <span
+                                  aria-describedby="tooltip-18-content"
+                                  aria-owns="tooltip-18-content"
+                                  className="emotion-0"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  role="button"
+                                  tabIndex={0}
+                                >
+                                  Not Allowed
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </PopoverTrigger>
+                        </PopoverTrigger>
+                      </PopoverTrigger>
+                    </span>
+                  </Popover>
+                </Popover>
+              </Popover>
+            </ThemeProvider>
+          </ThemeProvider>
+        </Themed(Popover)>
+      </WithTheme(Themed(Popover))>
+    </Tooltip>
+    <Tooltip
+      content="Move"
+      cursor="move"
+      hasArrow={true}
+    >
+      <WithTheme(Themed(Popover))
+        content={[Function]}
+        cursor="move"
+        focusTriggerOnClose={false}
+        hasArrow={true}
+        id="tooltip-19"
+        isOpen={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+      >
+        <Themed(Popover)
+          content={[Function]}
+          cursor="move"
+          focusTriggerOnClose={false}
+          hasArrow={true}
+          id="tooltip-19"
+          isOpen={false}
+          onClose={[Function]}
+          onOpen={[Function]}
+        >
+          <ThemeProvider>
+            <ThemeProvider>
+              <Popover
+                content={[Function]}
+                cursor="move"
+                focusTriggerOnClose={false}
+                hasArrow={true}
+                id="tooltip-19"
+                isOpen={false}
+                onClose={[Function]}
+                onOpen={[Function]}
+                placement="bottom"
+              >
+                <Popover
+                  content={[Function]}
+                  cursor="move"
+                  focusTriggerOnClose={false}
+                  hasArrow={true}
+                  id="tooltip-19"
+                  isOpen={false}
+                  onClose={[Function]}
+                  onOpen={[Function]}
+                  placement="bottom"
+                  tag="span"
+                >
+                  <Popover
+                    className="emotion-3"
+                    id="tooltip-19"
+                    tag="span"
+                  >
+                    <span
+                      className="emotion-3"
+                      id="tooltip-19"
+                    >
+                      <PopoverTrigger
+                        aria-describedby="tooltip-19-content"
+                        aria-owns="tooltip-19-content"
+                        cursor="move"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <PopoverTrigger
+                          component="span"
+                          cursor="move"
+                        >
+                          <PopoverTrigger
+                            className="emotion-11"
+                            component="span"
+                            cursor="move"
+                          >
+                            <span
+                              className="emotion-11"
+                              cursor="move"
+                            >
+                              <Styled(span)
+                                aria-describedby="tooltip-19-content"
+                                aria-owns="tooltip-19-content"
+                                onBlur={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                role="button"
+                                tabIndex={0}
+                              >
+                                <span
+                                  aria-describedby="tooltip-19-content"
+                                  aria-owns="tooltip-19-content"
+                                  className="emotion-0"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  role="button"
+                                  tabIndex={0}
+                                >
+                                  Move
+                                </span>
+                              </Styled(span)>
+                            </span>
+                          </PopoverTrigger>
+                        </PopoverTrigger>
+                      </PopoverTrigger>
+                    </span>
+                  </Popover>
+                </Popover>
+              </Popover>
+            </ThemeProvider>
+          </ThemeProvider>
+        </Themed(Popover)>
+      </WithTheme(Themed(Popover))>
+    </Tooltip>
+  </div>
+</Styled(div)>
 `;
 
 exports[`Tooltip demo examples Snapshots: disabled 1`] = `
@@ -983,7 +1394,7 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
               >
                 <Styled(svg)
                   aria-hidden={null}
-                  aria-labelledby="icon-title-icon-18"
+                  aria-labelledby="icon-title-icon-24"
                   focusable="false"
                   role="img"
                   rtl={false}
@@ -992,14 +1403,14 @@ exports[`Tooltip demo examples Snapshots: disabled 1`] = `
                 >
                   <svg
                     aria-hidden={null}
-                    aria-labelledby="icon-title-icon-18"
+                    aria-labelledby="icon-title-icon-24"
                     className="emotion-0"
                     focusable="false"
                     role="img"
                     viewBox="0 0 24 24"
                   >
                     <title
-                      id="icon-title-icon-18"
+                      id="icon-title-icon-24"
                     >
                       account settings
                     </title>
