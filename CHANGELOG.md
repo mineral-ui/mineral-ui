@@ -1,3 +1,26 @@
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/mineral-ui/mineral-ui/compare/v0.45.0...v0.46.0) (2018-09-24)
+
+
+### Bug Fixes
+
+* **button:** Prevent icon from shrinking with long content ([54a24e1](https://github.com/mineral-ui/mineral-ui/commit/54a24e1))
+* **dialog:** DialogBody content overflows correctly ([cf0716b](https://github.com/mineral-ui/mineral-ui/commit/cf0716b))
+* **dropdown,select:** Increment MenuItem ids across MenuGroups ([49d73cf](https://github.com/mineral-ui/mineral-ui/commit/49d73cf))
+
+
+### Features
+
+* **tabs:** New component ([5cbd2bd](https://github.com/mineral-ui/mineral-ui/commit/5cbd2bd))
+* **tooltip:** Add support for `cursor` prop ([b32d773](https://github.com/mineral-ui/mineral-ui/commit/b32d773))
+
+
+### Performance Improvements
+
+* **dropdown,select,menu,menuitem:** Decrease Menu and MenuItem re-renders ([a648de5](https://github.com/mineral-ui/mineral-ui/commit/a648de5))
+
+
+
 <a name="0.45.0"></a>
 # [0.45.0](https://github.com/mineral-ui/mineral-ui/compare/v0.44.0...v0.45.0) (2018-09-13)
 
