@@ -7296,16 +7296,7 @@ exports[`Select demo examples Snapshots: overflow 1`] = `
 }
 
 .emotion-18:focus {
-  background-color: #f5f7fa;
   outline: 0;
-}
-
-.emotion-18:hover {
-  background-color: #f5f7fa;
-}
-
-.emotion-18:active {
-  background-color: #ebeff5;
 }
 
 .emotion-18[aria-selected="true"] {
@@ -10335,16 +10326,7 @@ exports[`Select demo examples Snapshots: placement 1`] = `
 }
 
 .emotion-18:focus {
-  background-color: #f5f7fa;
   outline: 0;
-}
-
-.emotion-18:hover {
-  background-color: #f5f7fa;
-}
-
-.emotion-18:active {
-  background-color: #ebeff5;
 }
 
 .emotion-18[aria-selected="true"] {
@@ -11680,7 +11662,7 @@ exports[`Select demo examples Snapshots: portal 1`] = `
 }
 
 .emotion-25:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11691,6 +11673,11 @@ exports[`Select demo examples Snapshots: portal 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-25:focus:active,
+.emotion-25:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-25:active {
@@ -15889,16 +15876,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
 }
 
 .emotion-18:focus {
-  background-color: #f5f7fa;
   outline: 0;
-}
-
-.emotion-18:hover {
-  background-color: #f5f7fa;
-}
-
-.emotion-18:active {
-  background-color: #ebeff5;
 }
 
 .emotion-18[aria-selected="true"] {
@@ -16041,7 +16019,7 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
 }
 
 .emotion-46:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -16052,6 +16030,11 @@ exports[`Select demo examples Snapshots: scrolling-container 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-46:focus:active,
+.emotion-46:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-46:active {
@@ -19954,14 +19937,14 @@ exports[`Select demo examples Snapshots: trigger-ref 1`] = `
 
 .emotion-23 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -19985,23 +19968,30 @@ exports[`Select demo examples Snapshots: trigger-ref 1`] = `
 }
 
 .emotion-23:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-23:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-23:focus:active,
+.emotion-23:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-23:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-23::-moz-focus-inner {

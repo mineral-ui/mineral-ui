@@ -27,6 +27,38 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -42,7 +74,6 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -51,25 +82,15 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -78,16 +99,30 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -111,23 +146,30 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -356,6 +398,38 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
   position: relative;
 }
 
+.emotion-25 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-25 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-25 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-25 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-25 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-25 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-25 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-25 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-25 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -371,7 +445,6 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
 
 .emotion-25 > button:not(:first-child),
 .emotion-25 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -380,25 +453,15 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
 .emotion-25 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-25 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-25 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-25 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-25 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-25 > [aria-checked=false]:focus,
-.emotion-25 > *:not([aria-checked]):focus,
+.emotion-25 > button:not([aria-checked]):focus,
+.emotion-25 > *:not([aria-checked]) button:focus,
 .emotion-25 > [aria-checked=false] button:focus,
-.emotion-25 > *:not([aria-checked]) button:focus {
+.emotion-25 > button:not([aria-checked]) button:focus,
+.emotion-25 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -407,16 +470,30 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-25 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-25 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-25 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-25 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-25 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -440,23 +517,30 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -1109,6 +1193,38 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -1124,7 +1240,6 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -1133,25 +1248,15 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -1160,16 +1265,30 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-5 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1193,23 +1312,30 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-5:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-5:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-5:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-5::-moz-focus-inner {
@@ -1325,8 +1451,14 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-2:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -1387,7 +1519,7 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-12:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1398,6 +1530,11 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-12:focus:active,
+.emotion-12:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-12:active {
@@ -1684,6 +1821,38 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -1699,7 +1868,6 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -1708,25 +1876,15 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -1735,16 +1893,30 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-15 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1768,23 +1940,30 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-15:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-15:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-15:focus:active,
+.emotion-15:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-15:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-15::-moz-focus-inner {
@@ -1900,8 +2079,14 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   text-decoration: none;
 }
 
+.emotion-32:focus:active,
+.emotion-32:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-32:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -1938,7 +2123,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1962,7 +2147,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1973,6 +2158,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
 }
 
 .emotion-2:active {
@@ -2012,7 +2202,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2047,6 +2237,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-22:focus:active,
+.emotion-22:focus:hover {
+  border-color: transparent;
 }
 
 .emotion-22:active {
@@ -2734,6 +2929,38 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   position: relative;
 }
 
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-12 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -2749,7 +2976,6 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-12 > button:not(:first-child),
 .emotion-12 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -2758,25 +2984,15 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 .emotion-12 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-12 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-12 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-12 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-12 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-12 > [aria-checked=false]:focus,
-.emotion-12 > *:not([aria-checked]):focus,
+.emotion-12 > button:not([aria-checked]):focus,
+.emotion-12 > *:not([aria-checked]) button:focus,
 .emotion-12 > [aria-checked=false] button:focus,
-.emotion-12 > *:not([aria-checked]) button:focus {
+.emotion-12 > button:not([aria-checked]) button:focus,
+.emotion-12 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -2785,16 +3001,30 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-12 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-12 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-12 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-12 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-12 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-7 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2818,23 +3048,30 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-7:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-7:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-7:focus:active,
+.emotion-7:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-7:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-7::-moz-focus-inner {
@@ -2950,8 +3187,14 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   text-decoration: none;
 }
 
+.emotion-3:focus:active,
+.emotion-3:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-3:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -2988,14 +3231,14 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-15 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3019,23 +3262,30 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-15:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-15:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-15:focus:active,
+.emotion-15:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-15:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-15::-moz-focus-inner {
@@ -3072,7 +3322,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3096,7 +3346,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-25:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
   color: #2a854e;
   -webkit-text-decoration: none;
@@ -3105,13 +3355,20 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-25:hover {
   background-color: #f5f7fa;
+  border-color: #3ba164;
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-25:focus:active,
+.emotion-25:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-25:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #20693d;
   color: #2a854e;
 }
 
@@ -3149,7 +3406,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3173,7 +3430,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-28:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
   color: #ad5f00;
   -webkit-text-decoration: none;
@@ -3182,13 +3439,20 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-28:hover {
   background-color: #f5f7fa;
+  border-color: #cf7911;
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-28:focus:active,
+.emotion-28:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-28:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #8a4d03;
   color: #ad5f00;
 }
 
@@ -3226,7 +3490,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3250,7 +3514,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-31:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
   color: #de1b1b;
   -webkit-text-decoration: none;
@@ -3259,13 +3523,20 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-31:hover {
   background-color: #f5f7fa;
+  border-color: #f55353;
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-31:focus:active,
+.emotion-31:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-31:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #b80d0d;
   color: #de1b1b;
 }
 
@@ -3811,6 +4082,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
               aria-checked={false}
               aria-label="Satisfied"
               data-index={0}
+              data-variant="success"
               element="button"
               iconEnd={<IconSentimentSatisfied />}
               key="0/.0"
@@ -3824,6 +4096,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                 aria-checked={false}
                 aria-label="Satisfied"
                 data-index={0}
+                data-variant="success"
                 element="button"
                 onClick={[Function]}
                 role="radio"
@@ -3836,6 +4109,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                   aria-label="Satisfied"
                   className="emotion-25"
                   data-index={0}
+                  data-variant="success"
                   onClick={[Function]}
                   role="radio"
                   type="button"
@@ -3895,6 +4169,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
               aria-checked={false}
               aria-label="Neutral"
               data-index={1}
+              data-variant="warning"
               element="button"
               iconEnd={<IconSentimentNeutral />}
               key="1/.1"
@@ -3908,6 +4183,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                 aria-checked={false}
                 aria-label="Neutral"
                 data-index={1}
+                data-variant="warning"
                 element="button"
                 onClick={[Function]}
                 role="radio"
@@ -3920,6 +4196,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                   aria-label="Neutral"
                   className="emotion-28"
                   data-index={1}
+                  data-variant="warning"
                   onClick={[Function]}
                   role="radio"
                   type="button"
@@ -3982,6 +4259,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
               aria-checked={false}
               aria-label="Unsatisfied"
               data-index={2}
+              data-variant="danger"
               element="button"
               iconEnd={<IconSentimentDissatisfied />}
               key="2/.2"
@@ -3995,6 +4273,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                 aria-checked={false}
                 aria-label="Unsatisfied"
                 data-index={2}
+                data-variant="danger"
                 element="button"
                 onClick={[Function]}
                 role="radio"
@@ -4007,6 +4286,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                   aria-label="Unsatisfied"
                   className="emotion-31"
                   data-index={2}
+                  data-variant="danger"
                   onClick={[Function]}
                   role="radio"
                   type="button"
@@ -4097,6 +4377,38 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -4112,7 +4424,6 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4121,25 +4432,15 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -4148,16 +4449,30 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-5 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -4181,23 +4496,30 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
 }
 
 .emotion-5:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-5:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-5:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-5::-moz-focus-inner {
@@ -4313,8 +4635,14 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-2:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -4743,6 +5071,38 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
   position: relative;
 }
 
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-12 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-12 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-12 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -4758,7 +5118,6 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
 
 .emotion-12 > button:not(:first-child),
 .emotion-12 > *:not(:first-child) button {
-  border-right-color: transparent;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4767,25 +5126,15 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
 .emotion-12 > *:not(:last-child) button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-}
-
-.emotion-12 > [aria-checked]:not(:last-child) {
   border-left-color: transparent;
 }
 
-.emotion-12 > [aria-checked=false] + *:not(button) button {
-  border-right-color: #c8d1e0;
-}
-
-.emotion-12 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-12 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-right-color: currentcolor;
-}
-
 .emotion-12 > [aria-checked=false]:focus,
-.emotion-12 > *:not([aria-checked]):focus,
+.emotion-12 > button:not([aria-checked]):focus,
+.emotion-12 > *:not([aria-checked]) button:focus,
 .emotion-12 > [aria-checked=false] button:focus,
-.emotion-12 > *:not([aria-checked]) button:focus {
+.emotion-12 > button:not([aria-checked]) button:focus,
+.emotion-12 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -4794,16 +5143,30 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
   border-right-color: #c8d1e0;
 }
 
+.emotion-12 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-12 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-12 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-right-color: transparent;
+}
+
+.emotion-12 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-right-color: transparent;
+}
+
+.emotion-12 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-right-color: currentcolor;
+}
+
 .emotion-3 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -4827,23 +5190,30 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-3:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-3:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-3:focus:active,
+.emotion-3:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-3:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-3::-moz-focus-inner {
@@ -5181,6 +5551,38 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -5196,7 +5598,6 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -5205,25 +5606,15 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -5232,16 +5623,30 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-22 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5265,23 +5670,30 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-22:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-22:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-22:focus:active,
+.emotion-22:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-22:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-22::-moz-focus-inner {
@@ -5363,14 +5775,14 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5394,23 +5806,30 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -5440,14 +5859,14 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5471,23 +5890,30 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-12:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-12:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-12:focus:active,
+.emotion-12:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-12:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-12::-moz-focus-inner {
@@ -5528,14 +5954,14 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 
 .emotion-32 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5559,23 +5985,30 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-32:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-32:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-32:focus:active,
+.emotion-32:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-32:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-32::-moz-focus-inner {
@@ -5655,6 +6088,38 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   position: relative;
 }
 
+.emotion-49 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-49 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-49 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-49 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-49 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-49 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-49 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-49 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-49 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -5670,7 +6135,6 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 
 .emotion-49 > button:not(:first-child),
 .emotion-49 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -5679,31 +6143,35 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 .emotion-49 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-49 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-49 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-49 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-49 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-49 > [aria-checked=false]:focus,
-.emotion-49 > *:not([aria-checked]):focus,
+.emotion-49 > button:not([aria-checked]):focus,
+.emotion-49 > *:not([aria-checked]) button:focus,
 .emotion-49 > [aria-checked=false] button:focus,
-.emotion-49 > *:not([aria-checked]) button:focus {
+.emotion-49 > button:not([aria-checked]) button:focus,
+.emotion-49 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
 
 .emotion-49 > [aria-checked=false] + [aria-checked=false]:not(:focus) {
   border-left-color: #c8d1e0;
+}
+
+.emotion-49 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-49 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-49 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-49 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-49 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
 }
 
 <Component>
@@ -6432,6 +6900,38 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   position: relative;
 }
 
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #5691f0;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-9 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #1d5bbf;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-9 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
 .emotion-9 button[disabled] {
   border: solid 1px #c8d1e0;
 }
@@ -6447,7 +6947,6 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 
 .emotion-9 > button:not(:first-child),
 .emotion-9 > *:not(:first-child) button {
-  border-left-color: transparent;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -6456,25 +6955,15 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 .emotion-9 > *:not(:last-child) button {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-}
-
-.emotion-9 > [aria-checked]:not(:last-child) {
   border-right-color: transparent;
 }
 
-.emotion-9 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-9 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
 .emotion-9 > [aria-checked=false]:focus,
-.emotion-9 > *:not([aria-checked]):focus,
+.emotion-9 > button:not([aria-checked]):focus,
+.emotion-9 > *:not([aria-checked]) button:focus,
 .emotion-9 > [aria-checked=false] button:focus,
-.emotion-9 > *:not([aria-checked]) button:focus {
+.emotion-9 > button:not([aria-checked]) button:focus,
+.emotion-9 > *:not([aria-checked]) button button:focus {
   border-left-color: #c8d1e0;
   border-right-color: #c8d1e0;
 }
@@ -6483,16 +6972,30 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   border-left-color: #c8d1e0;
 }
 
+.emotion-9 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-9 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-9 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-5 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6516,23 +7019,30 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 }
 
 .emotion-5:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-5:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-5:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-5::-moz-focus-inner {
@@ -6644,8 +7154,14 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-2:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -6836,83 +7352,6 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 `;
 
 exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
-.emotion-6 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-6 *,
-.emotion-6 *::before,
-.emotion-6 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-6 button:focus,
-.emotion-6 button:active {
-  position: relative;
-}
-
-.emotion-6 button[disabled] {
-  border: solid 1px #c8d1e0;
-}
-
-.emotion-6 button[disabled][aria-checked=true] {
-  background-color: #c8d1e0;
-  color: #8e99ab;
-}
-
-.emotion-6 button[disabled][aria-checked=true]:hover {
-  color: #8e99ab;
-}
-
-.emotion-6 > button:not(:first-child),
-.emotion-6 > *:not(:first-child) button {
-  border-left-color: transparent;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.emotion-6 > button:not(:last-child),
-.emotion-6 > *:not(:last-child) button {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.emotion-6 > [aria-checked]:not(:last-child) {
-  border-right-color: transparent;
-}
-
-.emotion-6 > [aria-checked=false] + *:not(button) button {
-  border-left-color: #c8d1e0;
-}
-
-.emotion-6 > [aria-checked=true] + [aria-checked=true]:not(:focus),
-.emotion-6 > [aria-checked=true] + [aria-checked=true] button:not(:focus) {
-  border-left-color: currentcolor;
-}
-
-.emotion-6 > [aria-checked=false]:focus,
-.emotion-6 > *:not([aria-checked]):focus,
-.emotion-6 > [aria-checked=false] button:focus,
-.emotion-6 > *:not([aria-checked]) button:focus {
-  border-left-color: #c8d1e0;
-  border-right-color: #c8d1e0;
-}
-
-.emotion-6 > [aria-checked=false] + [aria-checked=false]:not(:focus) {
-  border-left-color: #c8d1e0;
-}
-
 .emotion-1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6954,6 +7393,118 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   margin-bottom: 1rem;
 }
 
+.emotion-6 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-6 button:focus,
+.emotion-6 button:active {
+  position: relative;
+}
+
+.emotion-6 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #3ba164;
+}
+
+.emotion-6 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-6 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-6 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-6 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #20693d;
+}
+
+.emotion-6 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-6 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-6 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
+.emotion-6 button[disabled] {
+  border: solid 1px #c8d1e0;
+}
+
+.emotion-6 button[disabled][aria-checked=true] {
+  background-color: #c8d1e0;
+  color: #8e99ab;
+}
+
+.emotion-6 button[disabled][aria-checked=true]:hover {
+  color: #8e99ab;
+}
+
+.emotion-6 > button:not(:first-child),
+.emotion-6 > *:not(:first-child) button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.emotion-6 > button:not(:last-child),
+.emotion-6 > *:not(:last-child) button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-color: transparent;
+}
+
+.emotion-6 > [aria-checked=false]:focus,
+.emotion-6 > button:not([aria-checked]):focus,
+.emotion-6 > *:not([aria-checked]) button:focus,
+.emotion-6 > [aria-checked=false] button:focus,
+.emotion-6 > button:not([aria-checked]) button:focus,
+.emotion-6 > *:not([aria-checked]) button button:focus {
+  border-left-color: #c8d1e0;
+  border-right-color: #c8d1e0;
+}
+
+.emotion-6 > [aria-checked=false] + [aria-checked=false]:not(:focus) {
+  border-left-color: #c8d1e0;
+}
+
+.emotion-6 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-6 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-6 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-6 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-6 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-2 {
   box-sizing: border-box;
   color: #2a854e;
@@ -6963,7 +7514,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6987,7 +7538,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
   color: #2a854e;
   -webkit-text-decoration: none;
@@ -6996,13 +7547,20 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 
 .emotion-2:hover {
   background-color: #f5f7fa;
+  border-color: #3ba164;
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #20693d;
   color: #2a854e;
 }
 
@@ -7031,6 +7589,118 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   margin: 0;
 }
 
+.emotion-13 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-13 *,
+.emotion-13 *::before,
+.emotion-13 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-13 button:focus,
+.emotion-13 button:active {
+  position: relative;
+}
+
+.emotion-13 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #cf7911;
+}
+
+.emotion-13 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-13 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-13 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-13 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #8a4d03;
+}
+
+.emotion-13 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-13 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-13 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
+.emotion-13 button[disabled] {
+  border: solid 1px #c8d1e0;
+}
+
+.emotion-13 button[disabled][aria-checked=true] {
+  background-color: #c8d1e0;
+  color: #8e99ab;
+}
+
+.emotion-13 button[disabled][aria-checked=true]:hover {
+  color: #8e99ab;
+}
+
+.emotion-13 > button:not(:first-child),
+.emotion-13 > *:not(:first-child) button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.emotion-13 > button:not(:last-child),
+.emotion-13 > *:not(:last-child) button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-color: transparent;
+}
+
+.emotion-13 > [aria-checked=false]:focus,
+.emotion-13 > button:not([aria-checked]):focus,
+.emotion-13 > *:not([aria-checked]) button:focus,
+.emotion-13 > [aria-checked=false] button:focus,
+.emotion-13 > button:not([aria-checked]) button:focus,
+.emotion-13 > *:not([aria-checked]) button button:focus {
+  border-left-color: #c8d1e0;
+  border-right-color: #c8d1e0;
+}
+
+.emotion-13 > [aria-checked=false] + [aria-checked=false]:not(:focus) {
+  border-left-color: #c8d1e0;
+}
+
+.emotion-13 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-13 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-13 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-13 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-13 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-9 {
   box-sizing: border-box;
   color: #ad5f00;
@@ -7040,7 +7710,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7064,7 +7734,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-9:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
   color: #ad5f00;
   -webkit-text-decoration: none;
@@ -7073,13 +7743,20 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 
 .emotion-9:hover {
   background-color: #f5f7fa;
+  border-color: #cf7911;
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-9:focus:active,
+.emotion-9:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-9:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #8a4d03;
   color: #ad5f00;
 }
 
@@ -7108,6 +7785,118 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   margin: 0;
 }
 
+.emotion-20 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-20 *,
+.emotion-20 *::before,
+.emotion-20 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-20 button:focus,
+.emotion-20 button:active {
+  position: relative;
+}
+
+.emotion-20 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled]) {
+  border-color: #f55353;
+}
+
+.emotion-20 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #f55353;
+}
+
+.emotion-20 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #3ba164;
+}
+
+.emotion-20 button:hover:not(:focus):not(:active):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #cf7911;
+}
+
+.emotion-20 button:active:not(:focus):not([aria-checked=true]):not([disabled]) {
+  border-color: #b80d0d;
+}
+
+.emotion-20 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="danger"] {
+  border-color: #b80d0d;
+}
+
+.emotion-20 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="success"] {
+  border-color: #20693d;
+}
+
+.emotion-20 button:active:not(:focus):not([aria-checked=true]):not([disabled])[data-variant="warning"] {
+  border-color: #8a4d03;
+}
+
+.emotion-20 button[disabled] {
+  border: solid 1px #c8d1e0;
+}
+
+.emotion-20 button[disabled][aria-checked=true] {
+  background-color: #c8d1e0;
+  color: #8e99ab;
+}
+
+.emotion-20 button[disabled][aria-checked=true]:hover {
+  color: #8e99ab;
+}
+
+.emotion-20 > button:not(:first-child),
+.emotion-20 > *:not(:first-child) button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.emotion-20 > button:not(:last-child),
+.emotion-20 > *:not(:last-child) button {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-color: transparent;
+}
+
+.emotion-20 > [aria-checked=false]:focus,
+.emotion-20 > button:not([aria-checked]):focus,
+.emotion-20 > *:not([aria-checked]) button:focus,
+.emotion-20 > [aria-checked=false] button:focus,
+.emotion-20 > button:not([aria-checked]) button:focus,
+.emotion-20 > *:not([aria-checked]) button button:focus {
+  border-left-color: #c8d1e0;
+  border-right-color: #c8d1e0;
+}
+
+.emotion-20 > [aria-checked=false] + [aria-checked=false]:not(:focus) {
+  border-left-color: #c8d1e0;
+}
+
+.emotion-20 > [aria-checked=false]:not([disabled]):hover + [aria-checked=false]:not(:focus),
+.emotion-20 > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]):not(:focus),
+.emotion-20 > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-20 > [aria-checked=true] + [aria-checked=false]:not(:focus) {
+  border-left-color: transparent;
+}
+
+.emotion-20 > [aria-checked=true] + [aria-checked=true]:not(:focus) {
+  border-left-color: currentcolor;
+}
+
 .emotion-16 {
   box-sizing: border-box;
   color: #de1b1b;
@@ -7117,7 +7906,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7141,7 +7930,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-16:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
   color: #de1b1b;
   -webkit-text-decoration: none;
@@ -7150,13 +7939,20 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 
 .emotion-16:hover {
   background-color: #f5f7fa;
+  border-color: #f55353;
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-16:focus:active,
+.emotion-16:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-16:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #b80d0d;
   color: #de1b1b;
 }
 
@@ -7199,6 +7995,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
         <ButtonGroup
           aria-label="Shopping options"
           role="group"
+          variant="success"
         >
           <div
             aria-label="Shopping options"
@@ -7299,10 +8096,11 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
         <ButtonGroup
           aria-label="Shopping options"
           role="group"
+          variant="warning"
         >
           <div
             aria-label="Shopping options"
-            className="emotion-6"
+            className="emotion-13"
             role="group"
           >
             <Button
@@ -7399,10 +8197,11 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
         <ButtonGroup
           aria-label="Shopping options"
           role="group"
+          variant="danger"
         >
           <div
             aria-label="Shopping options"
-            className="emotion-6"
+            className="emotion-20"
             role="group"
           >
             <Button

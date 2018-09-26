@@ -21451,7 +21451,7 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
 }
 
 .emotion-53:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -21461,6 +21461,11 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-53:focus:active,
+.emotion-53:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-53:active {
@@ -21561,7 +21566,7 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
 
 .emotion-56:focus {
   background-color: #3272d9;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -21572,6 +21577,11 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-56:focus:active,
+.emotion-56:focus:hover {
+  border-color: transparent;
 }
 
 .emotion-56:active {
@@ -21636,7 +21646,7 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
 }
 
 .emotion-59:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -21647,6 +21657,11 @@ exports[`Table demo examples Snapshots: pagination 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-59:focus:active,
+.emotion-59:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-59:active {
@@ -32616,14 +32631,14 @@ exports[`Table demo examples Snapshots: selectable-controlled 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -32647,23 +32662,30 @@ exports[`Table demo examples Snapshots: selectable-controlled 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -36360,7 +36382,7 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
 }
 
 .emotion-89:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -36370,6 +36392,11 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-89:focus:active,
+.emotion-89:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-89:active {
@@ -36470,7 +36497,7 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
 
 .emotion-92:focus {
   background-color: #3272d9;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -36481,6 +36508,11 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-92:focus:active,
+.emotion-92:focus:hover {
+  border-color: transparent;
 }
 
 .emotion-92:active {
@@ -36545,7 +36577,7 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
 }
 
 .emotion-95:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -36556,6 +36588,11 @@ exports[`Table demo examples Snapshots: selectable-paginated 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-95:focus:active,
+.emotion-95:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-95:active {
@@ -43387,14 +43424,14 @@ button:focus > .emotion-44 {
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -43418,23 +43455,30 @@ button:focus > .emotion-44 {
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -46757,7 +46801,7 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
 }
 
 .emotion-123:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -46767,6 +46811,11 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-123:focus:active,
+.emotion-123:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-123:active {
@@ -46867,7 +46916,7 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
 
 .emotion-126:focus {
   background-color: #3272d9;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -46878,6 +46927,11 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-126:focus:active,
+.emotion-126:focus:hover {
+  border-color: transparent;
 }
 
 .emotion-126:active {
@@ -46942,7 +46996,7 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
 }
 
 .emotion-129:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -46953,6 +47007,11 @@ exports[`Table demo examples Snapshots: sortable-paginated 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-129:focus:active,
+.emotion-129:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-129:active {
