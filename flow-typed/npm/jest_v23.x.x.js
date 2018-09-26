@@ -1,5 +1,5 @@
-// flow-typed signature: ad251f3a3446f6ab4e6691a94e701cad
-// flow-typed version: caa120caaa/jest_v23.x.x/flow_>=v0.39.x
+// flow-typed signature: 691597c4a5aab83a3b2e6d9ccd01a97d
+// flow-typed version: 71534a866d/jest_v23.x.x/flow_>=v0.39.x
 
 type JestMockFn<TArguments: $ReadOnlyArray<*>, TReturn> = {
   (...args: TArguments): TReturn,
@@ -17,7 +17,12 @@ type JestMockFn<TArguments: $ReadOnlyArray<*>, TReturn> = {
      * An array that contains all the object instances that have been
      * instantiated from this mock function.
      */
-    instances: Array<TReturn>
+    instances: Array<TReturn>,
+    /**
+     * An array that contains all the object results that have been
+     * returned by this mock function call
+     */
+    results: Array<{ isThrow: boolean, value: TReturn }>
   },
   /**
    * Resets all information stored in the mockFn.mock.calls and
@@ -119,7 +124,9 @@ type JestMatcherResult = {
   pass: boolean
 };
 
-type JestMatcher = (actual: any, expected: any) => JestMatcherResult;
+type JestMatcher = (actual: any, expected: any) =>
+  | JestMatcherResult
+  | Promise<JestMatcherResult>;
 
 type JestPromiseType = {
   /**
@@ -168,11 +175,16 @@ type JestStyledComponentsMatchersType = {
  *  Plugin: jest-enzyme
  */
 type EnzymeMatchersType = {
+  // 5.x
+  toBeEmpty(): void,
+  toBePresent(): void,
+  // 6.x
   toBeChecked(): void,
   toBeDisabled(): void,
-  toBeEmpty(): void,
   toBeEmptyRender(): void,
-  toBePresent(): void,
+  toContainMatchingElement(selector: string): void;
+  toContainMatchingElements(n: number, selector: string): void;
+  toContainExactlyOneMatchingElement(selector: string): void;
   toContainReact(element: React$Element<any>): void,
   toExist(): void,
   toHaveClassName(className: string): void,
@@ -183,12 +195,15 @@ type EnzymeMatchersType = {
   toHaveStyle: ((styleKey: string, styleValue?: any) => void) & ((style: Object) => void),
   toHaveTagName(tagName: string): void,
   toHaveText(text: string): void,
-  toIncludeText(text: string): void,
   toHaveValue(value: any): void,
-  toMatchElement(element: React$Element<any>): void,
-  toMatchSelector(selector: string): void,
   // jest-emotion matcher
-  toHaveStyleRule: (styleKey: string, styleValue?: any) => void
+  toHaveStyleRule: (styleKey: string, styleValue?: any) => void,
+  toIncludeText(text: string): void,
+  toMatchElement(
+    element: React$Element<any>,
+    options?: {| ignoreProps?: boolean |},
+  ): void,
+  toMatchSelector(selector: string): void
 };
 
 // DOM testing library extensions https://github.com/kentcdodds/dom-testing-library#custom-jest-matchers
@@ -691,11 +706,14 @@ interface JestExpectType {
   /**
    * This ensures that an Object matches the most recent snapshot.
    */
-  toMatchSnapshot(propertyMatchers?: {[key: string]: JestAsymmetricEqualityType}, name?: string): void,
+  toMatchSnapshot(propertyMatchers?: any, name?: string): void,
   /**
    * This ensures that an Object matches the most recent snapshot.
    */
   toMatchSnapshot(name: string): void,
+
+  toMatchInlineSnapshot(snapshot?: string): void,
+  toMatchInlineSnapshot(propertyMatchers?: any, snapshot?: string): void,
   /**
    * Use .toThrow to test that a function throws when it is called.
    * If you want to test that a specific error gets thrown, you can provide an
@@ -710,7 +728,8 @@ interface JestExpectType {
    * Use .toThrowErrorMatchingSnapshot to test that a function throws a error
    * matching the most recent snapshot when it is called.
    */
-  toThrowErrorMatchingSnapshot(): void
+  toThrowErrorMatchingSnapshot(): void,
+  toThrowErrorMatchingInlineSnapshot(snapshot?: string): void,
 }
 
 type JestObjectType = {
@@ -912,7 +931,19 @@ declare var describe: {
   /**
    * Skip running this describe block
    */
-  skip(name: JestTestName, fn: () => void): void
+  skip(name: JestTestName, fn: () => void): void,
+
+  /**
+   * each runs this test against array of argument arrays per each run
+   *
+   * @param {table} table of Test
+   */
+  each(
+    table: Array<Array<mixed> | mixed>
+  ): (
+    name: JestTestName,
+    fn?: (...args: Array<any>) => ?Promise<mixed>
+  ) => void,
 };
 
 /** An individual test unit */
@@ -935,7 +966,7 @@ declare var it: {
    * @param {table} table of Test
    */
   each(
-    table: Array<Array<mixed>>
+    table: Array<Array<mixed> | mixed>
   ): (
     name: JestTestName,
     fn?: (...args: Array<any>) => ?Promise<mixed>
@@ -953,7 +984,7 @@ declare var it: {
     timeout?: number
   ): {
     each(
-      table: Array<Array<mixed>>
+      table: Array<Array<mixed> | mixed>
     ): (
       name: JestTestName,
       fn?: (...args: Array<any>) => ?Promise<mixed>
@@ -982,7 +1013,18 @@ declare var it: {
     name: JestTestName,
     fn?: (done: () => void) => ?Promise<mixed>,
     timeout?: number
-  ): void
+  ): void,
+  /**
+   * each runs this test against array of argument arrays per each run
+   *
+   * @param {table} table of Test
+   */
+  each(
+    table: Array<Array<mixed> | mixed>
+  ): (
+    name: JestTestName,
+    fn?: (...args: Array<any>) => ?Promise<mixed>
+  ) => void,
 };
 declare function fit(
   name: JestTestName,
