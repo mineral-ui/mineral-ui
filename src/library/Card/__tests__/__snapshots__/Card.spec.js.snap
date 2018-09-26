@@ -193,7 +193,7 @@ exports[`Card demo examples Snapshots: actions-menu 1`] = `
 }
 
 .emotion-3:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -204,6 +204,11 @@ exports[`Card demo examples Snapshots: actions-menu 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-3:focus:active,
+.emotion-3:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-3:active {
@@ -1399,7 +1404,7 @@ exports[`Card demo examples Snapshots: basic 2`] = `
 }
 
 .emotion-17:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1410,6 +1415,11 @@ exports[`Card demo examples Snapshots: basic 2`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-17:focus:active,
+.emotion-17:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-17:active {
@@ -1500,8 +1510,14 @@ exports[`Card demo examples Snapshots: basic 2`] = `
   text-decoration: none;
 }
 
+.emotion-22:focus:active,
+.emotion-22:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-22:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -1531,14 +1547,14 @@ exports[`Card demo examples Snapshots: basic 2`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1562,23 +1578,30 @@ exports[`Card demo examples Snapshots: basic 2`] = `
 }
 
 .emotion-4:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-4:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-4:focus:active,
+.emotion-4:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-4:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-4::-moz-focus-inner {
@@ -1646,7 +1669,7 @@ exports[`Card demo examples Snapshots: basic 2`] = `
 }
 
 .emotion-30:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1657,6 +1680,11 @@ exports[`Card demo examples Snapshots: basic 2`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-30:focus:active,
+.emotion-30:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-30:active {
@@ -3022,14 +3050,14 @@ exports[`Card demo examples Snapshots: children 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3054,23 +3082,30 @@ exports[`Card demo examples Snapshots: children 1`] = `
 }
 
 .emotion-6:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-6:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-6:focus:active,
+.emotion-6:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-6:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-6::-moz-focus-inner {
@@ -3334,14 +3369,14 @@ exports[`Card demo examples Snapshots: children 2`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3366,23 +3401,30 @@ exports[`Card demo examples Snapshots: children 2`] = `
 }
 
 .emotion-6:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-6:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-6:focus:active,
+.emotion-6:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-6:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-6::-moz-focus-inner {
@@ -4166,7 +4208,7 @@ exports[`Card demo examples Snapshots: order 1`] = `
 }
 
 .emotion-9:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4177,6 +4219,11 @@ exports[`Card demo examples Snapshots: order 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-9:focus:active,
+.emotion-9:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-9:active {
@@ -4267,8 +4314,14 @@ exports[`Card demo examples Snapshots: order 1`] = `
   text-decoration: none;
 }
 
+.emotion-13:focus:active,
+.emotion-13:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-13:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -5039,14 +5092,14 @@ exports[`Card demo examples Snapshots: rtl 1`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5070,23 +5123,30 @@ exports[`Card demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-4:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-4:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-4:focus:active,
+.emotion-4:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-4:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-4::-moz-focus-inner {

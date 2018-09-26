@@ -81,6 +81,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
 }
 
 .emotion-2:focus {
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -90,6 +91,11 @@ exports[`TabList applies shadow when scrollable 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-2:active {

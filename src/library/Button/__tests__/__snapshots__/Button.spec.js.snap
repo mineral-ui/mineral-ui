@@ -40,14 +40,14 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 1.25em;
   border-style: solid;
@@ -71,23 +71,30 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -162,8 +169,14 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-5:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -224,7 +237,7 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -235,6 +248,11 @@ exports[`Button demo examples Snapshots: circular 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-8:active {
@@ -269,14 +287,14 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.75em;
   border-style: solid;
@@ -300,23 +318,30 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 }
 
 .emotion-11:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-11:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-11:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-11::-moz-focus-inner {
@@ -346,14 +371,14 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 
 .emotion-14 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 1em;
   border-style: solid;
@@ -377,23 +402,30 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 }
 
 .emotion-14:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-14:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-14:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-14::-moz-focus-inner {
@@ -423,14 +455,14 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 
 .emotion-17 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 1.625em;
   border-style: solid;
@@ -454,23 +486,30 @@ exports[`Button demo examples Snapshots: circular 1`] = `
 }
 
 .emotion-17:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-17:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-17:focus:active,
+.emotion-17:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-17:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-17::-moz-focus-inner {
@@ -935,14 +974,14 @@ exports[`Button demo examples Snapshots: default 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -966,23 +1005,30 @@ exports[`Button demo examples Snapshots: default 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -1019,7 +1065,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1043,7 +1089,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
 }
 
 .emotion-5:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
   color: #2a854e;
   -webkit-text-decoration: none;
@@ -1052,13 +1098,20 @@ exports[`Button demo examples Snapshots: default 1`] = `
 
 .emotion-5:hover {
   background-color: #f5f7fa;
+  border-color: #3ba164;
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-5:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #20693d;
   color: #2a854e;
 }
 
@@ -1096,7 +1149,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1120,7 +1173,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
 }
 
 .emotion-8:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
   color: #ad5f00;
   -webkit-text-decoration: none;
@@ -1129,13 +1182,20 @@ exports[`Button demo examples Snapshots: default 1`] = `
 
 .emotion-8:hover {
   background-color: #f5f7fa;
+  border-color: #cf7911;
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-8:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #8a4d03;
   color: #ad5f00;
 }
 
@@ -1173,7 +1233,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1197,7 +1257,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
 }
 
 .emotion-11:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
   color: #de1b1b;
   -webkit-text-decoration: none;
@@ -1206,13 +1266,20 @@ exports[`Button demo examples Snapshots: default 1`] = `
 
 .emotion-11:hover {
   background-color: #f5f7fa;
+  border-color: #f55353;
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-11:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #b80d0d;
   color: #de1b1b;
 }
 
@@ -1250,7 +1317,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1274,7 +1341,7 @@ exports[`Button demo examples Snapshots: default 1`] = `
 }
 
 .emotion-14:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1285,6 +1352,11 @@ exports[`Button demo examples Snapshots: default 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: #c8d1e0;
 }
 
 .emotion-14:active {
@@ -1512,14 +1584,14 @@ exports[`Button demo examples Snapshots: default 1`] = `
 exports[`Button demo examples Snapshots: icon-only 1`] = `
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1543,23 +1615,30 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -1652,8 +1731,14 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-5:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -1733,7 +1818,7 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1744,6 +1829,11 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-8:active {
@@ -1778,14 +1868,14 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1809,23 +1899,30 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 }
 
 .emotion-11:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-11:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-11:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-11::-moz-focus-inner {
@@ -1855,14 +1952,14 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 
 .emotion-14 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1886,23 +1983,30 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 }
 
 .emotion-14:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-14:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-14:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-14::-moz-focus-inner {
@@ -1932,14 +2036,14 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 
 .emotion-17 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -1963,23 +2067,30 @@ exports[`Button demo examples Snapshots: icon-only 1`] = `
 }
 
 .emotion-17:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-17:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-17:focus:active,
+.emotion-17:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-17:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-17::-moz-focus-inner {
@@ -2458,8 +2569,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   text-decoration: none;
 }
 
+.emotion-16:focus:active,
+.emotion-16:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-16:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -2508,14 +2625,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2539,23 +2656,30 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-3:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-3:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-3:focus:active,
+.emotion-3:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-3:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-3::-moz-focus-inner {
@@ -2592,7 +2716,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2616,7 +2740,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-28:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
   color: #2a854e;
   -webkit-text-decoration: none;
@@ -2625,13 +2749,20 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-28:hover {
   background-color: #f5f7fa;
+  border-color: #3ba164;
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-28:focus:active,
+.emotion-28:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-28:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #20693d;
   color: #2a854e;
 }
 
@@ -2669,7 +2800,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2693,7 +2824,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-32:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
   color: #ad5f00;
   -webkit-text-decoration: none;
@@ -2702,13 +2833,20 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-32:hover {
   background-color: #f5f7fa;
+  border-color: #cf7911;
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-32:focus:active,
+.emotion-32:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-32:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #8a4d03;
   color: #ad5f00;
 }
 
@@ -2746,7 +2884,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2770,7 +2908,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-24:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
   color: #de1b1b;
   -webkit-text-decoration: none;
@@ -2779,13 +2917,20 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-24:hover {
   background-color: #f5f7fa;
+  border-color: #f55353;
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-24:focus:active,
+.emotion-24:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-24:active {
-  background-color: #dde3ed;
+  background-color: #ebeff5;
+  border-color: #b80d0d;
   color: #de1b1b;
 }
 
@@ -2823,7 +2968,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2847,7 +2992,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-36:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -2858,6 +3003,11 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-36:focus:active,
+.emotion-36:focus:hover {
+  border-color: #c8d1e0;
 }
 
 .emotion-36:active {
@@ -2921,7 +3071,7 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-20:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2932,6 +3082,11 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-20:focus:active,
+.emotion-20:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-20:active {
@@ -2966,14 +3121,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-40 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -2997,23 +3152,30 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-40:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-40:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-40:focus:active,
+.emotion-40:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-40:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-40::-moz-focus-inner {
@@ -3054,14 +3216,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-44 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3085,23 +3247,30 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-44:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-44:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-44:focus:active,
+.emotion-44:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-44:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-44::-moz-focus-inner {
@@ -3142,14 +3311,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 
 .emotion-52 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -3173,23 +3342,30 @@ exports[`Button demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-52:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-52:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-52:focus:active,
+.emotion-52:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-52:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-52::-moz-focus-inner {
@@ -4220,14 +4396,14 @@ exports[`Button demo examples Snapshots: link 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -4251,23 +4427,30 @@ exports[`Button demo examples Snapshots: link 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -4408,7 +4591,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 }
 
 .emotion-2:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4419,6 +4602,11 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-2:active {
@@ -4484,7 +4672,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 }
 
 .emotion-5:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
+  border-color: #20693d;
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4495,6 +4683,11 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   color: #2a854e;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #20693d;
 }
 
 .emotion-5:active {
@@ -4560,7 +4753,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #8a4d03;
+  border-color: #8a4d03;
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4571,6 +4764,11 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   color: #ad5f00;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: #8a4d03;
 }
 
 .emotion-8:active {
@@ -4636,7 +4834,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 }
 
 .emotion-11:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
+  border-color: #b80d0d;
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4647,6 +4845,11 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   color: #de1b1b;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: #b80d0d;
 }
 
 .emotion-11:active {
@@ -4712,7 +4915,7 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
 }
 
 .emotion-14:focus {
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  border-color: #1d5bbf;
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4722,6 +4925,11 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: #1d5bbf;
 }
 
 .emotion-14:active {
@@ -5027,8 +5235,14 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-2:active {
   background-color: #1d5bbf;
+  border-color: #1d5bbf;
   color: #ffffff;
 }
 
@@ -5122,8 +5336,14 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-5:active {
   background-color: #20693d;
+  border-color: #20693d;
   color: #ffffff;
 }
 
@@ -5198,8 +5418,14 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   text-decoration: none;
 }
 
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-8:active {
   background-color: #8a4d03;
+  border-color: #8a4d03;
   color: #ffffff;
 }
 
@@ -5274,8 +5500,14 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   text-decoration: none;
 }
 
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: transparent;
+}
+
 .emotion-11:active {
   background-color: #b80d0d;
+  border-color: #b80d0d;
   color: #ffffff;
 }
 
@@ -5312,7 +5544,7 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #dde3ed;
+  background-color: #ebeff5;
   border-color: transparent;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5347,6 +5579,11 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   color: #afbacc;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: transparent;
 }
 
 .emotion-14:active {
@@ -5602,14 +5839,14 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
 
 .emotion-3 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5633,23 +5870,30 @@ exports[`Button demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-3:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-3:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-3:focus:active,
+.emotion-3:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-3:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-3::-moz-focus-inner {
@@ -5827,14 +6071,14 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 
 .emotion-8 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5858,23 +6102,30 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-8:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-8:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-8:focus:active,
+.emotion-8:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-8:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-8::-moz-focus-inner {
@@ -5904,14 +6155,14 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -5935,23 +6186,30 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -5992,14 +6250,14 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6023,23 +6281,30 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-5:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-5:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-5:focus:active,
+.emotion-5:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-5:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-5::-moz-focus-inner {
@@ -6080,14 +6345,14 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6111,23 +6376,30 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-11:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-11:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-11:focus:active,
+.emotion-11:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-11:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-11::-moz-focus-inner {
@@ -6176,14 +6448,14 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 
 .emotion-14 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6208,23 +6480,30 @@ exports[`Button demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-14:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-14:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-14:focus:active,
+.emotion-14:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-14:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-14::-moz-focus-inner {
@@ -6479,14 +6758,14 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6510,23 +6789,30 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -6869,14 +7155,14 @@ exports[`Button demo examples Snapshots: truncation 1`] = `
 exports[`Button type prop is filtered when type=[button type] when element=NonFilteringLink 1`] = `
 .emotion-0 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -6900,23 +7186,30 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
 }
 
 .emotion-0:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-0:focus:active,
+.emotion-0:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-0:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-0::-moz-focus-inner {
@@ -7014,14 +7307,14 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7045,23 +7338,30 @@ exports[`Button type prop is filtered when type=[button type] when element=a 1`]
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -7166,14 +7466,14 @@ exports[`Button type prop is filtered when type=[not a button type] when element
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7197,23 +7497,30 @@ exports[`Button type prop is filtered when type=[not a button type] when element
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -7281,14 +7588,14 @@ exports[`Button type prop is filtered when type=[not a button type] when element
 exports[`Button type prop is not filtered when type=[MIME type] when element=NonFilteringLink 1`] = `
 .emotion-0 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7312,23 +7619,30 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
 }
 
 .emotion-0:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-0:focus:active,
+.emotion-0:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-0:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-0::-moz-focus-inner {
@@ -7428,14 +7742,14 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7459,23 +7773,30 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=a 1
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
@@ -7581,14 +7902,14 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
 
 .emotion-2 {
   box-sizing: border-box;
-  color: #333840;
+  color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
-  background-color: #ebeff5;
+  background-color: #ffffff;
   border-color: #c8d1e0;
   border-radius: 0.1875em;
   border-style: solid;
@@ -7612,23 +7933,30 @@ exports[`Button type prop is not filtered when type=[button type] when element=b
 }
 
 .emotion-2:focus {
-  background-color: #ebeff5;
+  background-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #333840;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-2:hover {
   background-color: #f5f7fa;
-  color: #333840;
+  border-color: #5691f0;
+  color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #c8d1e0;
+}
+
 .emotion-2:active {
-  background-color: #dde3ed;
-  color: #333840;
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
 }
 
 .emotion-2::-moz-focus-inner {
