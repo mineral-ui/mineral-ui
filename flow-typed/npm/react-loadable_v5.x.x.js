@@ -1,11 +1,12 @@
-// flow-typed signature: 776d74ca2897b439956e4dcb2fdc23ee
-// flow-typed version: cc7eb8d020/react-loadable_v5.x.x/flow_>=v0.56.0
+// flow-typed signature: 1b34e99bd1d0fc26555aaa615f1459b6
+// flow-typed version: 3a79d57475/react-loadable_v5.x.x/flow_>=v0.56.0
 
 declare module 'react-loadable' {
   declare type LoadingProps = {
     isLoading: boolean,
     pastDelay: boolean,
     timedOut: boolean,
+    retry: () => void,
     error: ?Error
   };
 
