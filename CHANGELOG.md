@@ -1,3 +1,13 @@
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/mineral-ui/mineral-ui/compare/v0.46.0...v0.47.0) (2018-09-27)
+
+
+### Features
+
+* **button,buttongroup,menuitem:** Update per new styles ([a08f8f3](https://github.com/mineral-ui/mineral-ui/commit/a08f8f3))
+
+
+
 <a name="0.46.0"></a>
 # [0.46.0](https://github.com/mineral-ui/mineral-ui/compare/v0.45.0...v0.46.0) (2018-09-24)
 
