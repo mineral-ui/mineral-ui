@@ -1,5 +1,6 @@
 /* @flow */
-import pxToEm from '../styles/pxToEm';
+import normalizeToDocument from '../styles/normalizeToDocument';
+import pxToRem from '../styles/pxToRem';
 import colorAliases from './generated/colorAliases';
 
 type Aliases = { [string]: string };
@@ -21,16 +22,20 @@ const contains = (string: string, subString: string) =>
 
 const newKey = (key) => key.replace('brand', 'theme');
 
-const remToEm = (value: string) => value.replace('rem', 'em');
-
-export default function(tokens: Tokens): Theme {
+export default function({
+  tokens,
+  documentFontSize
+}: {
+  tokens: Tokens,
+  documentFontSize?: number | string
+}): Theme {
   return Object.keys(tokens).reduce((acc, key) => {
     let value = tokens[key];
     if (typeof value === 'string') {
       if (value.split('px').length === 2 && !contains(key, 'breakpoint')) {
-        value = pxToEm(value);
-      } else if (contains(key, 'fontSize')) {
-        value = remToEm(value);
+        value = pxToRem(value, { documentFontSize });
+      } else if (value.split('rem').length === 2) {
+        value = normalizeToDocument(value, { documentFontSize });
       }
     }
 

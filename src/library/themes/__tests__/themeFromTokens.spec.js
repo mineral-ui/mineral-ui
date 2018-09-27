@@ -57,7 +57,7 @@ const themeFromColorTokensWithAliases = (color, tokens) =>
 
 describe('themeFromTokens', () => {
   describe('converts', () => {
-    const theme = themeFromTokens(TOKENS_DEFAULT);
+    const theme = themeFromTokens({ tokens: TOKENS_DEFAULT });
     it('rems to ems', () => {
       expect(theme.fontSize_test).toMatchSnapshot();
     });

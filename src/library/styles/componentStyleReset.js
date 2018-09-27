@@ -1,4 +1,6 @@
 /* @flow */
+import normalizeToDocument from './normalizeToDocument';
+
 export default ({ theme }: Object) => {
   return {
     boxSizing: 'border-box',
@@ -6,7 +8,7 @@ export default ({ theme }: Object) => {
     fontFamily: theme.fontFamily
       ? `${theme.fontFamily}, ${theme.fontFamily_system}`
       : `${theme.fontFamily_system}`,
-    fontSize: theme.fontSize_base,
+    fontSize: normalizeToDocument(1, theme),
     lineHeight: theme.lineHeight,
     outline: 0,
     '& *,& *::before,& *::after': {
