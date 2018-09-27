@@ -1,7 +1,6 @@
 /* @flow */
 import tokens from 'mineral-ui-tokens';
 import createColorRamp from './createColorRamp';
-import fontSize_base from './fontSizeBase';
 import colorAliases from './generated/colorAliases';
 import rampTokens from './generated/groupedByRampJsTokens';
 import palette, { type Color } from './generated/palette';
@@ -20,8 +19,9 @@ type Colors = {
   warning?: Color | RampWithInflection,
   white?: string
 };
-type Options = ?{
+type Options = {
   colors?: Colors,
+  documentFontSize?: number | string,
   overrides?: Object
 };
 type PrimaryColor = 'theme' | 'danger' | 'success' | 'warning';
@@ -35,8 +35,7 @@ const primaryColors: Array<PrimaryColor> = [
 
 export const nonTokenVariables = (colors: ?Colors) => ({
   boxShadow_focusInner: (colors && colors.white) || palette.white,
-  direction: 'ltr',
-  fontSize_base
+  direction: 'ltr'
 });
 
 const colorOverrides = (colors) =>
@@ -112,8 +111,8 @@ const primaryColorsByVariation = (colors?: Colors = {}) => {
   }, {});
 };
 
-export default function createTheme(options: Options): Object {
-  const colors = options && options.colors;
+export default function createTheme(options: Options = {}): Object {
+  const { colors, documentFontSize, overrides } = options;
 
   const grayRamp =
     colors && colors.gray
@@ -125,8 +124,9 @@ export default function createTheme(options: Options): Object {
       : createColorRamp(palette.brand, 'color_theme_');
 
   return {
-    ...themeFromTokens(tokens),
+    ...themeFromTokens({ tokens, documentFontSize }),
     ...nonTokenVariables(colors),
+    documentFontSize,
 
     ...(colors ? colorOverrides(colors) : undefined),
     ...(colors ? primaryColorsByVariation(colors) : undefined),
@@ -136,6 +136,7 @@ export default function createTheme(options: Options): Object {
     color_black: (colors && colors.black) || palette.black,
     color_white: (colors && colors.white) || palette.white,
 
-    ...(options && options.overrides)
+    // TODO: Overrides need normalized, too...
+    ...overrides
   };
 }
