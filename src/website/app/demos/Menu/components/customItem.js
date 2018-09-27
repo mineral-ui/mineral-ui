@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { withTheme } from '../../../../../library/themes';
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../../library/styles';
 import Avatar from '../../../../../library/Avatar';
 import { componentTheme as menuItemTheme } from '../../../../../library/Menu/MenuItem';
 
@@ -49,10 +49,10 @@ export default function customItem({ props }: Object) {
     const UserAvatar = createStyledComponent(Avatar, {
       display: 'block',
       flex: '0 0 auto',
-      height: pxToEm(36),
+      height: pxToRem(36),
       marginLeft: theme.direction === 'rtl' && theme.MenuItemIcon_margin,
       marginRight: theme.direction === 'ltr' && theme.MenuItemIcon_margin,
-      width: pxToEm(36)
+      width: pxToRem(36)
     });
 
     const Content = createStyledComponent('span', {

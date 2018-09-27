@@ -29,10 +29,11 @@ const Root = createStyledComponent(
   ({ hide, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
-    return {
-      marginBottom: theme.TableTitle_marginBottom,
-      ...(hide ? hideVisually() : undefined)
-    };
+    return hide
+      ? hideVisually()
+      : {
+          marginBottom: theme.TableTitle_marginBottom
+        };
   },
   {
     displayName: 'Caption',

@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
 import { withTheme } from '../themes';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import getResponsiveStyles, {
   getPrevNonNull
 } from '../styles/getResponsiveStyles';
@@ -71,7 +71,7 @@ const getGutterSize = (
   value: number | string
 ): number | string =>
   typeof value === 'number' && value !== 0
-    ? pxToEm(value)
+    ? pxToRem(value, theme)
     : theme[`space_inline_${value}`] || value;
 
 const getIndexedValue = (property, index) =>

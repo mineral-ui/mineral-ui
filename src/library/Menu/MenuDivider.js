@@ -14,8 +14,8 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'div',
-  (props) => {
-    const theme = componentTheme(props.theme);
+  ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       backgroundColor: theme.MenuDivider_borderColor,

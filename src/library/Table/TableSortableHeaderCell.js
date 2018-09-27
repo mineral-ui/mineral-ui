@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Component } from 'react';
+import { createStyledComponent, normalizeToDocument, pxToRem } from '../styles';
 import { isRenderProp } from '../utils';
-import { createStyledComponent, pxToEm } from '../styles';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import TableHeaderCell from './TableHeaderCell';
@@ -35,7 +35,7 @@ export const componentTheme = (baseTheme: Object) => ({
   }`,
   TableSortableHeaderCell_color_focus: baseTheme.color_theme,
   TableSortableHeaderCell_color_hover: baseTheme.icon_color_theme,
-  TableSortableHeaderCellIcon_size: pxToEm(14),
+  TableSortableHeaderCellIcon_size: pxToRem(12, baseTheme),
 
   ...baseTheme
 });
@@ -48,19 +48,6 @@ const focusStyles = (theme) => ({
 
 // [1] Extends the clickable area of the Button to fill the entire cell
 const styles = {
-  root: ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    return {
-      overflow: 'hidden', // [1]
-
-      '&:hover': {
-        color: theme.TableSortableHeaderCell_color_hover
-      },
-
-      '&:focus-within': focusStyles(theme)
-    };
-  },
   button: ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
@@ -89,7 +76,7 @@ const styles = {
       '&::after': {
         bottom: '100%',
         content: '""',
-        height: '10em',
+        height: normalizeToDocument(10, theme),
         left: 0,
         position: 'absolute',
         right: 0
@@ -102,7 +89,7 @@ const styles = {
   },
   iconHolder: ({ isSorted, direction, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const iconAdjustment = pxToEm(2);
+    const iconAdjustment = pxToRem(2, theme);
     const marginProperty =
       theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
@@ -110,8 +97,8 @@ const styles = {
       color: theme.icon_color,
       display: 'inline-block',
       height: theme.TableSortableHeaderCellIcon_size,
-      [marginProperty]: `${parseFloat(theme.space_inline_xxs) +
-        parseFloat(iconAdjustment)}em`,
+      // prettier-ignore
+      [marginProperty]: `${parseFloat(theme.space_inline_xxs) + parseFloat(iconAdjustment)}rem`,
       opacity: isSorted ? null : 0,
       position: 'relative',
       top: direction === 'ascending' ? 2 : 1,
@@ -125,18 +112,31 @@ const styles = {
         color: 'inherit'
       }
     };
+  },
+  root: ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+
+    return {
+      overflow: 'hidden', // [1]
+
+      '&:hover': {
+        color: theme.TableSortableHeaderCell_color_hover
+      },
+
+      '&:focus-within': focusStyles(theme)
+    };
   }
 };
 
-const Root = createStyledComponent(TableHeaderCell, styles.root, {
-  displayName: 'TableSortableHeaderCell',
-  withProps: { noPadding: true }
-});
 const Button = createStyledComponent(TableHeaderCell, styles.button, {
   withProps: { element: 'button' }
 });
 const Content = createStyledComponent('span', styles.content);
 const IconHolder = createStyledComponent('span', styles.iconHolder);
+const Root = createStyledComponent(TableHeaderCell, styles.root, {
+  displayName: 'TableSortableHeaderCell',
+  withProps: { noPadding: true }
+});
 
 const iconProps = {
   'aria-hidden': true,

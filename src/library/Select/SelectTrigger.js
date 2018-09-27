@@ -4,7 +4,7 @@ import { ellipsis } from 'polished';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
@@ -81,7 +81,8 @@ const styles = {
     variant
   }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       alignItems: 'center',
@@ -125,22 +126,18 @@ const styles = {
               : selectedItemVariant
                 ? theme[`color_${selectedItemVariant}`]
                 : theme.SelectIcon_color,
-        marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
-        marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
+        [marginProperty]: theme.SelectIcon_marginHorizontal
       }
     };
   },
   trigger: ({ size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
-    const fontSize =
-      size === 'small' ? theme.Select_fontSize_small : theme.Select_fontSize;
-
     return {
       alignItems: 'center',
       display: 'flex',
       flex: '1 1 auto',
-      height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),
+      height: theme[`Select_height_${size}`],
       minWidth: 0
     };
   },
@@ -196,11 +193,11 @@ export default class SelectTrigger extends Component<Props> {
     const Arrow = createStyledComponent(
       ArrowIcon,
       {
-        margin: pxToEm(iconMarginMap[size])
+        margin: pxToRem(iconMarginMap[size])
       },
       {
         withProps: {
-          size: size === 'small' || size === 'medium' ? 'medium' : pxToEm(24)
+          size: size === 'small' || size === 'medium' ? 'medium' : pxToRem(24)
         }
       }
     );

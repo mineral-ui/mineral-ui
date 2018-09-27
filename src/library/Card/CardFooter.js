@@ -1,11 +1,12 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent } from '../themes';
 import Button from '../Button';
 import IconExpandLess from '../Icon/IconExpandLess';
 import IconExpandMore from '../Icon/IconExpandMore';
 import { componentTheme as cardComponentTheme } from './Card';
+import { componentTheme as cardRowComponentTheme } from './CardRow';
 
 type Props = {
   /** Content of CardFooter */
@@ -53,11 +54,13 @@ export const componentTheme = (baseTheme: Object) => ({
  * top/bottom margin. This technique accomplishes that without writing a bunch
  * of descendant selectors.
  */
-const footerTheme = ({ theme }) => ({
-  CardRow_marginVertical: componentTheme(theme).CardFooterRow_marginVertical,
-  CardRow_marginVerticalLast: componentTheme(theme)
-    .CardFooterRow_marginVerticalLast
-});
+const footerTheme = ({ theme: baseTheme }) => {
+  const theme = componentTheme(baseTheme);
+  return {
+    CardRow_marginVertical: theme.CardFooterRow_marginVertical,
+    CardRow_marginVerticalLast: theme.CardFooterRow_marginVerticalLast
+  };
+};
 
 const styles = {
   root: ({ variant, theme: baseTheme }) => {
@@ -76,19 +79,20 @@ const styles = {
 
     // [1] Making the footer overlap the Card border. The `calc` bit accounts
     //     for the paddingBottom on Card to prevent margin collapse.
+    // [2] Necessary to prevent margin collapse of last-child (bottom) or first-child (top)
     return {
       backgroundColor: theme.CardFooter_backgroundColor,
       border: `1px solid ${theme.CardFooter_borderColor}`,
       borderRadius: `0 0 ${theme.Card_borderRadius} ${theme.Card_borderRadius}`,
-      margin: '0 -1px calc(-1px - 0.01em) -1px', // [1]
-      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em' // Necessary to prevent margin collapse of first-child
+      margin: '0 -1px calc(-1px - 0.01rem) -1px', // [1]
+      paddingBottom: '0.01rem', // [2]
+      paddingTop: '0.01rem' // [2]
     };
   },
-  title: (props) => {
+  title: ({ theme: baseTheme }) => {
     const theme = {
-      ...componentTheme(props.theme),
-      ...cardComponentTheme(props.theme)
+      ...componentTheme(baseTheme),
+      ...cardRowComponentTheme(baseTheme)
     };
     return {
       alignItems: 'flex-start',
@@ -99,8 +103,8 @@ const styles = {
       paddingRight: theme.CardRow_paddingHorizontal
     };
   },
-  titleContent: (props) => {
-    const theme = componentTheme(props.theme);
+  titleContent: ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       color: theme.CardFooterTitle_color,
@@ -121,7 +125,7 @@ const styles = {
     minWidth: 0,
     overflow: 'hidden',
     padding: 0,
-    transform: `translateY(-${pxToEm(1)})`, // Optical alignment
+    transform: `translateY(-${pxToRem(1, theme)})`, // Optical alignment
 
     ...(variant
       ? {
@@ -134,7 +138,7 @@ const styles = {
     // Inner
     '& > span': {
       display: 'block',
-      margin: `-${pxToEm(4)}`
+      margin: `-${pxToRem(4, theme)}`
     },
 
     // Icon
@@ -144,9 +148,6 @@ const styles = {
   })
 };
 
-const Root = createStyledComponent('div', styles.root, {
-  displayName: 'CardFooter'
-});
 /*
  * We shouldn't just create a themed 'div', because it won't be able to apply
  * the provided theme to itself, which breaks the expectation of
@@ -157,6 +158,9 @@ const Content = createThemedComponent(
   (props) => <div {...props} />,
   footerTheme
 );
+const Root = createStyledComponent('div', styles.root, {
+  displayName: 'CardFooter'
+});
 const Title = createStyledComponent('div', styles.title);
 const TitleContent = createStyledComponent('h4', styles.titleContent);
 const ToggleButton = createStyledComponent(Button, styles.toggleButton);

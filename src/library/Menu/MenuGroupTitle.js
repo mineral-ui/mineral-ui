@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import { componentTheme as menuItemComponentTheme } from '../Menu/MenuItem';
 
 type Props = Object;
@@ -17,27 +17,16 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'h3',
-  (props) => {
+  ({ theme: baseTheme }) => {
     const theme = {
-      ...componentTheme(props.theme),
-      ...menuItemComponentTheme(props.theme)
+      ...componentTheme(baseTheme),
+      ...menuItemComponentTheme(baseTheme)
     };
 
-    const paddingBottom = getNormalizedValue(
-      theme.MenuGroupTitle_paddingBottom,
-      theme.MenuGroupTitle_fontSize
-    );
-
-    const paddingTop = getNormalizedValue(
-      theme.MenuGroupTitle_paddingTop,
-      theme.MenuGroupTitle_fontSize
-    );
-
+    const paddingBottom = theme.MenuGroupTitle_paddingBottom;
+    const paddingTop = theme.MenuGroupTitle_paddingTop;
     // We need to use MenuItem's padding, to match
-    const paddingHorizontal = getNormalizedValue(
-      theme.MenuItem_paddingHorizontal,
-      theme.MenuGroupTitle_fontSize
-    );
+    const paddingHorizontal = theme.MenuItem_paddingHorizontal;
 
     return {
       fontSize: theme.MenuGroupTitle_fontSize,

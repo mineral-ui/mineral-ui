@@ -2,7 +2,7 @@
 import React, { Component, cloneElement } from 'react';
 import memoizeOne from 'memoize-one';
 import { ellipsis } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, normalizeToDocument, pxToRem } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -53,7 +53,7 @@ export const componentTheme = (baseTheme: Object) => ({
   FauxControl_color_placeholder: baseTheme.input_color_placeholder,
   FauxControl_color_readOnly: baseTheme.color_readOnly,
   FauxControl_fontSize: baseTheme.fontSize_ui,
-  FauxControl_fontSize_small: pxToEm(12),
+  FauxControl_fontSize_small: pxToRem(12, baseTheme),
   FauxControl_paddingHorizontal: baseTheme.space_inset_md,
   FauxControl_paddingHorizontal_small: baseTheme.space_inset_sm,
 
@@ -62,33 +62,21 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const styles = {
-  prefix: ({ iconStart, size, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+const prefixAndSuffixStyles = ({ size, theme: baseTheme }) => {
+  const theme = componentTheme(baseTheme);
 
-    const fontSize =
+  return {
+    flex: '0 0 auto',
+    fontSize:
       size === 'small'
         ? theme.FauxControl_fontSize_small
-        : theme.FauxControl_fontSize;
-    const marginWithIcon = getNormalizedValue(
-      theme.FauxControl_paddingHorizontal,
-      fontSize
-    );
-    const marginWithoutIcon = getNormalizedValue(
-      `${parseFloat(theme.FauxControlIcon_marginHorizontal) / 2}em`,
-      fontSize
-    );
+        : theme.FauxControl_fontSize,
+    whiteSpace: 'nowrap',
+    ...ellipsis(normalizeToDocument(8, theme))
+  };
+};
 
-    return {
-      flex: '0 0 auto',
-      fontSize,
-      marginLeft: rtl ? marginWithoutIcon : iconStart ? 0 : marginWithIcon,
-      marginRight: rtl ? (iconStart ? 0 : marginWithIcon) : marginWithoutIcon,
-      whiteSpace: 'nowrap',
-      ...ellipsis('8em')
-    };
-  },
+const styles = {
   control: ({
     controlPropsIn,
     controlSize,
@@ -104,8 +92,13 @@ const styles = {
     variant
   }) => {
     let theme = componentTheme(baseTheme);
-
+    const rtl = theme.direction === 'rtl';
     const size = controlSize || nonHtmlSize;
+    const paddingWithoutIcon =
+      size === 'small' || size === 'medium'
+        ? theme.FauxControl_paddingHorizontal_small ||
+          theme.FauxControl_paddingHorizontal
+        : theme.FauxControl_paddingHorizontal;
 
     if (variant) {
       // prettier-ignore
@@ -122,21 +115,6 @@ const styles = {
         FauxControl_color: theme[`color_${controlPropsIn.variant}`]
       };
     }
-
-    const rtl = theme.direction === 'rtl';
-    const fontSize =
-      size === 'small'
-        ? theme.FauxControl_fontSize_small
-        : theme.FauxControl_fontSize;
-    const sizeAppropriateHorizontalPadding =
-      size === 'small' || size === 'medium'
-        ? theme.FauxControl_paddingHorizontal_small ||
-          theme.FauxControl_paddingHorizontal
-        : theme.FauxControl_paddingHorizontal;
-    const paddingWithoutIcon = getNormalizedValue(
-      sizeAppropriateHorizontalPadding,
-      fontSize
-    );
 
     let color = theme.FauxControl_color;
     if (disabled) {
@@ -159,7 +137,10 @@ const styles = {
     return {
       color,
       WebkitTextFillColor: color, // [1]
-      fontSize,
+      fontSize:
+        size === 'small'
+          ? theme.FauxControl_fontSize_small
+          : theme.FauxControl_fontSize,
       fontStyle: hasPlaceholder ? 'italic' : null,
       outline: 0,
       paddingLeft:
@@ -187,6 +168,21 @@ const styles = {
           boxShadow: theme.FauxControl_boxShadow_focus
         }
       }
+    };
+  },
+  prefix: (props) => {
+    const { iconStart, theme: baseTheme } = props;
+    const theme = componentTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
+    const marginWithIcon = theme.FauxControl_paddingHorizontal;
+    const marginWithoutIcon = `${parseFloat(
+      theme.FauxControlIcon_marginHorizontal
+    ) / 2}rem`;
+
+    return {
+      ...prefixAndSuffixStyles(props),
+      marginLeft: rtl ? marginWithoutIcon : iconStart ? 0 : marginWithIcon,
+      marginRight: rtl ? (iconStart ? 0 : marginWithIcon) : marginWithoutIcon
     };
   },
   root: ({ disabled, theme: baseTheme, variant }) => {
@@ -226,26 +222,17 @@ const styles = {
       }
     };
   },
-  suffix: ({ iconEnd, size, theme: baseTheme, variant }) => {
+  suffix: (props) => {
+    const { iconEnd, theme: baseTheme, variant } = props;
     const theme = componentTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
-
-    const fontSize =
-      size === 'small'
-        ? theme.FauxControl_fontSize_small
-        : theme.FauxControl_fontSize;
-    const marginWithIcon = getNormalizedValue(
-      theme.FauxControl_paddingHorizontal,
-      fontSize
-    );
-    const marginWithoutIcon = getNormalizedValue(
-      `${parseFloat(theme.FauxControlIcon_marginHorizontal) / 2}em`,
-      fontSize
-    );
+    const marginWithIcon = theme.FauxControl_paddingHorizontal;
+    const marginWithoutIcon = `${parseFloat(
+      theme.FauxControlIcon_marginHorizontal
+    ) / 2}rem`;
 
     return {
-      flex: '0 0 auto',
-      fontSize,
+      ...prefixAndSuffixStyles(props),
       marginLeft: rtl
         ? iconEnd || variant
           ? 0
@@ -255,9 +242,7 @@ const styles = {
         ? marginWithoutIcon
         : iconEnd || variant
           ? 0
-          : marginWithIcon,
-      whiteSpace: 'nowrap',
-      ...ellipsis('8em')
+          : marginWithIcon
     };
   },
   underlay: ({ disabled, readOnly, theme: baseTheme, variant }) => {
@@ -314,7 +299,7 @@ function getIcons({
     return [];
   }
 
-  const iconSize = size === 'small' ? 'medium' : pxToEm(24);
+  const iconSize = size === 'small' ? 'medium' : pxToRem(24);
   const startIcon =
     iconStart &&
     cloneElement(iconStart, {

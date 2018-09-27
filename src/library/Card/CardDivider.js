@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../styles';
-import { componentTheme as cardComponentTheme } from './Card';
+import { componentTheme as cardRowComponentTheme } from './CardRow';
 
 type Props = Object;
 
@@ -14,10 +14,10 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'div',
-  (props) => {
+  ({ theme: baseTheme }) => {
     const theme = {
-      ...componentTheme(props.theme),
-      ...cardComponentTheme(props.theme)
+      ...componentTheme(baseTheme),
+      ...cardRowComponentTheme(baseTheme)
     };
 
     return {

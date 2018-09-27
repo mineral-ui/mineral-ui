@@ -39,16 +39,14 @@ const Root = createStyledComponent(
   'tr',
   ({ highContrast, isSelected, theme: baseTheme, striped }) => {
     const theme = componentTheme(baseTheme);
+    const indicatorEdge = theme.direction !== 'rtl' ? 'right' : 'left';
 
     return {
-      backgroundColor: (() => {
-        if (isSelected) {
-          if (highContrast) {
-            return theme.TableRow_backgroundColor_highContrast_selected;
-          }
-          return theme.TableRow_backgroundColor_selected;
-        }
-      })(),
+      backgroundColor: isSelected
+        ? highContrast
+          ? theme.TableRow_backgroundColor_highContrast_selected
+          : theme.TableRow_backgroundColor_selected
+        : null,
 
       ...(highContrast
         ? {
@@ -61,15 +59,11 @@ const Root = createStyledComponent(
           }),
 
       '*:not(thead) > &:hover': {
-        backgroundColor: (() => {
-          if (isSelected) {
-            if (highContrast) {
-              return theme.TableRow_backgroundColor_highContrast_selectedHover;
-            }
-            return theme.TableRow_backgroundColor_selectedHover;
-          }
-          return theme.TableRow_backgroundColor_hover;
-        })()
+        backgroundColor: isSelected
+          ? highContrast
+            ? theme.TableRow_backgroundColor_highContrast_selected
+            : theme.TableRow_backgroundColor_selected
+          : theme.TableRow_backgroundColor_hover
       },
 
       '&:nth-child(even):not(:hover)': {
@@ -86,8 +80,7 @@ const Root = createStyledComponent(
                 backgroundColor: theme.color_theme_60,
                 bottom: 0,
                 content: '""',
-                left: theme.direction !== 'rtl' ? 0 : null,
-                right: theme.direction === 'rtl' ? 0 : null,
+                [indicatorEdge]: 0,
                 position: 'absolute',
                 top: 0,
                 width: '4px'

@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import Button from '../Button';
 import Dropdown from '../Dropdown';
 import IconMoreHoriz from '../Icon/IconMoreHoriz';
@@ -28,7 +28,7 @@ const MenuButton = createStyledComponent(Button, ({ theme }) => ({
   // Inner
   '& > span': {
     display: 'block',
-    margin: `-${pxToEm(2)}`
+    margin: `-${pxToRem(2, theme)}`
   },
 
   // Icon

@@ -1,12 +1,13 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, normalizeToDocument } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { composeEventHandlers, generateId } from '../utils';
-import Popover, {
-  componentTheme as popoverComponentTheme
-} from '../Popover/Popover';
-import PopoverContent from '../Popover/PopoverContent';
+import Popover from '../Popover/Popover';
+import { componentTheme as popoverArrowComponentTheme } from '../Popover/PopoverArrow';
+import PopoverContent, {
+  componentTheme as popoverContentComponentTheme
+} from '../Popover/PopoverContent';
 
 type Props = {
   /** Trigger for the Tooltip */
@@ -87,7 +88,10 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'Popover',
-      theme: popoverComponentTheme(baseTheme)
+      theme: {
+        ...popoverArrowComponentTheme(baseTheme),
+        ...popoverContentComponentTheme(baseTheme)
+      }
     },
     {
       name: 'Tooltip',
@@ -99,7 +103,7 @@ export const componentTheme = (baseTheme: Object) =>
           baseTheme.panel_backgroundColor_inverted,
         TooltipContent_borderColor: baseTheme.panel_borderColor_inverted,
         TooltipContent_color: baseTheme.color_inverted,
-        TooltipContent_maxWidth: '18em',
+        TooltipContent_maxWidth: normalizeToDocument(18, baseTheme),
 
         TooltipContentBlock_marginVertical: '0',
         TooltipContentBlock_paddingHorizontal: baseTheme.space_inset_md,

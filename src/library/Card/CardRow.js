@@ -1,11 +1,18 @@
 /* @flow */
 import { createStyledComponent } from '../styles';
-import { componentTheme as cardComponentTheme } from './Card';
+
+export const componentTheme = (baseTheme: Object) => ({
+  CardRow_marginVertical: baseTheme.space_stack_md,
+  CardRow_marginVerticalLast: baseTheme.space_stack_lg,
+  CardRow_paddingHorizontal: baseTheme.space_inset_md,
+
+  ...baseTheme
+});
 
 export default createStyledComponent(
   'div',
-  (props) => {
-    const theme = cardComponentTheme(props.theme);
+  ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       marginBottom: theme.CardRow_marginVertical,

@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import FauxControl, {
   componentTheme as fauxControlComponentTheme
@@ -102,10 +102,6 @@ const styles = {
     const theme = componentTheme(baseTheme);
 
     const size = controlSize || nonHtmlSize;
-    const fontSize =
-      size === 'small'
-        ? theme.TextInput_fontSize_small
-        : theme.TextInput_fontSize;
 
     return {
       backgroundColor: 'transparent',
@@ -113,7 +109,7 @@ const styles = {
       boxShadow: 'none',
       flex: '1 1 auto',
       fontFamily: 'inherit',
-      height: getNormalizedValue(theme[`TextInput_height_${size}`], fontSize),
+      height: theme[`TextInput_height_${size}`],
       minWidth: 0,
       width: '100%',
 
@@ -157,13 +153,13 @@ const styles = {
   }
 };
 
-const Root = createStyledComponent(ThemedFauxControl, styles.root, {
-  displayName: 'TextInput'
-});
 const Input = createStyledComponent('input', styles.input, {
   displayName: 'Input',
   rootEl: 'input',
   forwardProps: ['size']
+});
+const Root = createStyledComponent(ThemedFauxControl, styles.root, {
+  displayName: 'TextInput'
 });
 
 /**

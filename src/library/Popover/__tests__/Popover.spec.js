@@ -2,9 +2,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Popover, { componentTheme } from '../Popover';
-import PopoverArrow from '../PopoverArrow';
-import PopoverContent from '../PopoverContent';
+import Popover from '../Popover';
+import PopoverArrow, {
+  componentTheme as popoverArrowComponentTheme
+} from '../PopoverArrow';
+import PopoverContent, {
+  componentTheme as popoverContentComponentTheme
+} from '../PopoverContent';
 import PopoverTrigger from '../PopoverTrigger';
 import examples from '../../../website/app/demos/Popover/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
@@ -67,7 +71,10 @@ describe('Popover', () => {
       <Popover content={<div>content</div>}>
         <button>trigger</button>
       </Popover>,
-      getProcessedComponentThemeKeys(componentTheme)
+      [].concat(
+        getProcessedComponentThemeKeys(popoverArrowComponentTheme),
+        getProcessedComponentThemeKeys(popoverContentComponentTheme)
+      )
     );
   });
 

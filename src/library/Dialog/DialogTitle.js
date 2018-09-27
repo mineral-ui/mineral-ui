@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { withTheme } from '../themes';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
@@ -28,7 +28,7 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogTitle_fontWeight: baseTheme.h4_fontWeight,
 
   DialogTitleIcon_margin: baseTheme.space_inline_sm,
-  DialogTitleIcon_size: pxToEm(24),
+  DialogTitleIcon_size: pxToRem(24, baseTheme),
 
   ...baseTheme
 });

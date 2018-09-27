@@ -2,7 +2,7 @@
 import React, { Children, Component } from 'react';
 import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent } from '../themes';
 import { onlyIEAndEdge } from '../utils/cssSelectors';
 import Button from '../Button';
@@ -175,7 +175,7 @@ const ThemedButton = createThemedComponent(Button, ({ theme: baseTheme }) => {
     Button_paddingIconOnly_medium: 0,
     ButtonIcon_color: theme.TabListArrow_color,
 
-    Icon_size_medium: pxToEm(20)
+    Icon_size_medium: pxToRem(20, theme)
   };
 });
 

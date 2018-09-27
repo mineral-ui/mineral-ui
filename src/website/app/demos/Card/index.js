@@ -4,6 +4,7 @@ import { componentTheme as cardActionsComponentTheme } from '../../../../library
 import { componentTheme as cardBlockComponentTheme } from '../../../../library/Card/CardBlock';
 import { componentTheme as cardDividerComponentTheme } from '../../../../library/Card/CardDivider';
 import { componentTheme as cardFooterComponentTheme } from '../../../../library/Card/CardFooter';
+import { componentTheme as cardRowComponentTheme } from '../../../../library/Card/CardRow';
 import { componentTheme as cardStatusComponentTheme } from '../../../../library/Card/CardStatus';
 import { componentTheme as cardTitleComponentTheme } from '../../../../library/Card/CardTitle';
 
@@ -30,7 +31,7 @@ import bestPractices from './bestPractices';
 export default [
   {
     bestPractices: bestPractices.card,
-    componentTheme: cardComponentTheme,
+    componentTheme: [cardComponentTheme, cardRowComponentTheme],
     doc: cardDoc,
     examples: cardExamples,
     slug: 'card',

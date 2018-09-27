@@ -4,7 +4,7 @@ import { findDOMNode } from 'react-dom';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
@@ -186,8 +186,8 @@ const Root = createStyledComponent(
 const contentWidthModifier = {
   enabled: true,
   fn: (data) => {
-    data.styles.minWidth = pxToEm(224);
-    data.styles.width = pxToEm(data.offsets.reference.width);
+    data.styles.minWidth = pxToRem(224);
+    data.styles.width = pxToRem(data.offsets.reference.width);
     return data;
   }
 };

@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, normalizeToDocument } from '../styles';
 import { withTheme } from '../themes';
 import Flex, { FlexItem } from '../Flex';
 import Pages from './Pages';
@@ -78,13 +78,14 @@ export type Messages = {|
 |};
 
 export const componentTheme = (baseTheme: Object) => ({
-  PaginationPageJumper_width: '4.65em',
+  PaginationPageJumper_width: normalizeToDocument(4.65, baseTheme),
   Pagination_gutterWidth: baseTheme.space_inline_sm,
   ...baseTheme
 });
 
-const styles = {
-  root: ({ theme: baseTheme }) => {
+const Root = createStyledComponent(
+  Flex,
+  ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
     return {
       flexWrap: 'wrap-reverse',
@@ -94,15 +95,14 @@ const styles = {
         marginBottom: theme.Pagination_gutterWidth
       }
     };
+  },
+  {
+    includeStyleReset: true,
+    withProps: {
+      element: 'nav'
+    }
   }
-};
-
-const Root = createStyledComponent(Flex, styles.root, {
-  includeStyleReset: true,
-  withProps: {
-    element: 'nav'
-  }
-});
+);
 
 /**
  * Pagination offers a means to control the space consumed by a large data set

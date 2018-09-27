@@ -7,7 +7,9 @@ import _Tooltip from '../Tooltip';
 
 type Props = {
   /** Content of Truncate */
-  children?: React$Node
+  children?: React$Node,
+  /** Maximum width of truncated content */
+  maxWidth?: number | string
 };
 
 type State = {
@@ -15,9 +17,10 @@ type State = {
 };
 
 const styles = {
-  root: ({ theme: baseTheme }) => ({
+  root: ({ maxWidth, theme: baseTheme }) => ({
     pointerEvents: 'all', // Necessary because of Button Inner's pointerEvents: none
-    ...ellipsis('100%'),
+    ...ellipsis(null),
+    maxWidth,
 
     '&:focus': {
       outline: `1px solid ${baseTheme.color_theme}`,
@@ -36,6 +39,10 @@ const Root = createStyledComponent('span', styles.root, {
 const Tooltip = createStyledComponent(_Tooltip, styles.tooltip);
 
 export default class Truncate extends PureComponent<Props, State> {
+  static defaultProps = {
+    maxWidth: '100%'
+  };
+
   state = {
     showTooltip: false
   };
