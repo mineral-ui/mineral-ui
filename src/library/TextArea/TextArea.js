@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { canUseDOM } from 'exenv';
 import FontFaceObserver from 'fontfaceobserver';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import FauxControl, {
   componentTheme as fauxControlComponentTheme
@@ -61,10 +61,10 @@ export const componentTheme = (baseTheme: Object) =>
       theme: {
         // The following padding values make appearances equivalent to TextInputs of same size when rows=1.
         // This enables usage of a TextArea as a single line input that can accept multiple lines of text.
-        TextArea_paddingVertical_jumbo: pxToEm(14.5),
-        TextArea_paddingVertical_large: pxToEm(8.5),
-        TextArea_paddingVertical_medium: pxToEm(4.5),
-        TextArea_paddingVertical_small: pxToEm(2)
+        TextArea_paddingVertical_jumbo: pxToRem(14.5, baseTheme),
+        TextArea_paddingVertical_large: pxToRem(8.5, baseTheme),
+        TextArea_paddingVertical_medium: pxToRem(4.5, baseTheme),
+        TextArea_paddingVertical_small: pxToRem(2, baseTheme)
       }
     },
     baseTheme
@@ -90,14 +90,14 @@ const styles = {
   textArea: ({ resizeable, size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
-    const fontSize =
-      size === 'small'
-        ? theme.TextArea_fontSize_small
-        : theme.TextArea_fontSize;
-    const paddingVerticalNormalized = getNormalizedValue(
-      theme[`TextArea_paddingVertical_${size}`],
-      fontSize
-    );
+    const paddingVertical = theme[`TextArea_paddingVertical_${size}`];
+
+    // minHeight value is an attempt to display a single line of text.
+    // It is needed when a user manually resizes a textarea.
+    const minHeight = `${parseFloat(paddingVertical) * 2 +
+      parseFloat(pxToRem(theme.TextArea_borderWidth, theme)) * 2 +
+      parseFloat(theme.TextArea_fontSize) * theme.lineHeight -
+      parseFloat(pxToRem(2, theme))}rem`;
 
     return {
       backgroundColor: 'transparent',
@@ -107,16 +107,11 @@ const styles = {
       fontFamily: 'inherit',
       lineHeight: theme.lineHeight_prose,
       margin: theme.TextArea_borderWidth,
-      // minHeight value is an attempt to display a single line of text.
-      // It is needed when a user manually resizes a textarea.
-      minHeight: `${parseFloat(paddingVerticalNormalized) * 2 +
-        parseFloat(theme.TextArea_fontSize) * theme.lineHeight +
-        parseFloat(pxToEm(parseFloat(theme.TextArea_borderWidth) * 2)) +
-        parseFloat(pxToEm(2))}em`,
+      minHeight,
       minWidth: 0,
       outline: 0,
-      paddingBottom: paddingVerticalNormalized,
-      paddingTop: paddingVerticalNormalized,
+      paddingBottom: paddingVertical,
+      paddingTop: paddingVertical,
       resize: resizeable ? 'vertical' : 'none',
       width: '100%'
     };

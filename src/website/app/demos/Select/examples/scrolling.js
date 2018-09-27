@@ -1,19 +1,23 @@
 /* @flow */
 import React, { Component } from 'react';
-import { pxToEm } from '../../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../../library/styles';
 import ScrollParent from '../../Popover/components/ScrollBox';
 import _Select from '../../../../../library/Select';
 import { basicData as data } from '../components/selectData';
 
 type Props = any;
 
+const Wrapper = createStyledComponent('div', ({ theme }) => ({
+  width: pxToRem(224, theme)
+}));
+
 // Not a functional component because ScrollParent throws a ref on it
 class Select extends Component<Props> {
   render() {
     return (
-      <div style={{ width: pxToEm(224) }}>
+      <Wrapper>
         <_Select {...this.props} />
-      </div>
+      </Wrapper>
     );
   }
 }

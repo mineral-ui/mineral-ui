@@ -188,6 +188,11 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
   };
 };
 
+const Root = createStyledComponent('div', styles, {
+  displayName: 'ButtonGroup',
+  includeStyleReset: true
+});
+
 const isChecked = (checked: number | Array<number> | Set<number>, index) => {
   const isSet = checked instanceof Set;
   const checkedSet = isSet ? checked : setFromArray(toArray(checked));
@@ -226,11 +231,6 @@ const getDefaultCheckedState = (props: Props) => {
 
   return checked;
 };
-
-const Root = createStyledComponent('div', styles, {
-  displayName: 'ButtonGroup',
-  includeStyleReset: true
-});
 
 /**
  * ButtonGroup allows authors to stylistically group a set of related

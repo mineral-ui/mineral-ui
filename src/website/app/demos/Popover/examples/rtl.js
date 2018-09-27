@@ -1,13 +1,13 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../../library/styles';
 import Button from '../../../../../library/Button';
 import DemoContent from '../components/DemoContent';
 import Popover from '../../../../../library/Popover';
 import { ThemeProvider } from '../../../../../library/themes';
 
-const DemoLayout = createStyledComponent('div', {
-  paddingBottom: pxToEm(130)
-});
+const DemoLayout = createStyledComponent('div', ({ theme }) => ({
+  paddingBottom: pxToRem(130, theme)
+}));
 
 export default {
   id: 'rtl',

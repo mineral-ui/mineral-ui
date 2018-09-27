@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
 import { canUseDOM } from 'exenv';
-import { createStyledComponent } from '../styles';
+import { createStyledComponent, normalizeToDocument } from '../styles';
 import { withTheme } from '../themes';
 import { generateId } from '../utils';
 import TabList from './TabList';
@@ -78,7 +78,7 @@ const Root = createStyledComponent(
 class Tabs extends Component<Props, State> {
   static defaultProps = {
     align: 'start',
-    maxTabWidth: '8.5em',
+    maxTabWidth: normalizeToDocument(8.5), // TODO: Can this be used here?
     position: 'top'
   };
 

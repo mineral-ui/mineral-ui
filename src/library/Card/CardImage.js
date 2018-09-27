@@ -2,13 +2,17 @@
 import React from 'react';
 import { createStyledComponent } from '../styles';
 import { componentTheme as cardComponentTheme } from './Card';
+import { componentTheme as cardRowComponentTheme } from './CardRow';
 
 type Props = Object;
 
 const Root = createStyledComponent(
   'img',
-  (props) => {
-    const theme = cardComponentTheme(props.theme);
+  ({ theme: baseTheme }) => {
+    const theme = {
+      ...cardComponentTheme(baseTheme),
+      ...cardRowComponentTheme(baseTheme)
+    };
 
     return {
       display: 'block',

@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import DialogRow, {
   componentTheme as dialogRowComponentTheme
@@ -45,38 +45,9 @@ const ThemedOverflowContainerWithShadows = createThemedComponent(
 );
 
 const styles = {
-  root: ({ theme: baseTheme }) => {
-    const theme = dialogRowComponentTheme(baseTheme);
-    const fontSize = theme.DialogRow_fontSize;
-    const marginVertical = `${getNormalizedValue(
-      theme.DialogRow_marginVertical,
-      fontSize
-    )}`;
-
-    return {
-      display: 'flex',
-      flex: '1 1 auto',
-      fontSize,
-      margin: 0,
-      minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
-      padding: 0,
-
-      // Margins when no header or footer
-      '&:first-child': {
-        marginTop: marginVertical
-      },
-      '&:last-child': {
-        marginBottom: marginVertical
-      }
-    };
-  },
   scrollShadowBox: ({ theme: baseTheme }) => {
     const theme = dialogRowComponentTheme(baseTheme);
-    const fontSize = theme.DialogRow_fontSize;
-    const paddingHorizontal = `${getNormalizedValue(
-      theme.DialogRow_paddingHorizontal,
-      fontSize
-    )}`;
+    const paddingHorizontal = theme.DialogRow_paddingHorizontal;
 
     return {
       display: 'flex',
@@ -95,17 +66,38 @@ const styles = {
         }
       }
     };
+  },
+  root: ({ theme: baseTheme }) => {
+    const theme = dialogRowComponentTheme(baseTheme);
+    const marginVertical = theme.DialogRow_marginVertical;
+
+    return {
+      display: 'flex',
+      flex: '1 1 auto',
+      fontSize: theme.DialogRow_fontSize,
+      margin: 0,
+      minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
+      padding: 0,
+
+      // Margins when no header or footer
+      '&:first-child': {
+        marginTop: marginVertical
+      },
+      '&:last-child': {
+        marginBottom: marginVertical
+      }
+    };
   }
 };
 
-const Root = createStyledComponent(DialogRow, styles.root, {
-  displayName: 'DialogBody'
-});
 const OverflowContainerWithShadows = createStyledComponent(
   ThemedOverflowContainerWithShadows,
   styles.scrollShadowBox,
   { withProps: { scrollY: true } }
 );
+const Root = createStyledComponent(DialogRow, styles.root, {
+  displayName: 'DialogBody'
+});
 
 /**
  * DialogBody contains the main content of [Dialog](/components/dialog).

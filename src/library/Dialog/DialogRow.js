@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import memoizeOne from 'memoize-one';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 
 type Props = {
   children?: React$Node,
@@ -19,19 +19,12 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   root: ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const fontSize = theme.DialogRow_fontSize;
 
     return {
-      fontSize,
-      margin: `${getNormalizedValue(
-        theme.DialogRow_marginVertical,
-        fontSize
-      )} 0`,
+      fontSize: theme.DialogRow_fontSize,
+      margin: `${theme.DialogRow_marginVertical} 0`,
       outline: 0,
-      padding: `0 ${getNormalizedValue(
-        theme.DialogRow_paddingHorizontal,
-        fontSize
-      )}`
+      padding: `0 ${theme.DialogRow_paddingHorizontal}`
     };
   }
 };

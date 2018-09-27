@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 
 type Props = {
   /** When `children` is a string, this will be the rendered text */
@@ -23,8 +23,8 @@ type Props = {
 const iconSize = {
   small: 'medium',
   medium: 'medium',
-  large: pxToEm(24),
-  jumbo: pxToEm(24)
+  large: pxToRem(24),
+  jumbo: pxToRem(24)
 };
 
 export const componentTheme = (baseTheme: Object) => ({
@@ -75,7 +75,7 @@ const Root = createStyledComponent(
       verticalAlign: 'middle',
       width: size,
 
-      '& > abbr,& > span': {
+      '& > abbr, & > span': {
         fontSize: icon ? null : theme[`Avatar_fontSize_${propSize}`]
       },
 

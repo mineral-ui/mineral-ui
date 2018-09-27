@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../library/styles';
 import { mineralTheme } from '../../../../library/themes';
 import Menu, {
   MenuDivider,
@@ -8,12 +8,12 @@ import Menu, {
   MenuItem
 } from '../../../../library/Menu';
 
-const DemoLayout = createStyledComponent('div', {
+const DemoLayout = createStyledComponent('div', ({ theme }) => ({
   '& > div': {
     backgroundColor: 'white',
-    width: pxToEm(224)
+    width: pxToRem(224, theme)
   }
-});
+}));
 
 const backgroundColor = mineralTheme.color_gray_10;
 

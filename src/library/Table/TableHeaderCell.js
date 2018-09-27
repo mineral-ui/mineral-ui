@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import memoizeOne from 'memoize-one';
 import { isRenderProp } from '../utils';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import TableCell, {
   componentTheme as tableCellComponentTheme
@@ -48,7 +48,7 @@ export const componentTheme = (baseTheme: Object) =>
         TableHeaderCell_borderVertical_highContrast: `1px dotted ${baseTheme.color_gray_80}`,
         TableHeaderCell_fontWeight: baseTheme.fontWeight_bold,
         TableHeaderCell_paddingHorizontal: baseTheme.space_inline_md,
-        TableHeaderCell_paddingVertical: pxToEm(12),
+        TableHeaderCell_paddingVertical: pxToRem(12, baseTheme),
         TableHeaderCell_paddingVertical_spacious: baseTheme.space_stack_md,
         TableHeaderCell_verticalAlign: 'bottom'
       }
@@ -71,17 +71,13 @@ export const ThemedTableCell = createThemedComponent(
       baseTheme,
       [
         'TableHeaderCell_borderVertical',
-        'TableHeaderCell_fontSize',
+        'TableHeaderCell_fontSize', // TODO: Still necessary?
         'TableHeaderCell_paddingHorizontal',
         'TableHeaderCell_paddingVertical',
         'TableHeaderCell_verticalAlign'
       ]
     )
 );
-
-const REGEX_IS_EM_VALUE = /\d+em$/;
-const getWidth = (value, fontSize) =>
-  REGEX_IS_EM_VALUE.test(value) ? getNormalizedValue(value, fontSize) : value;
 
 const styles = ({
   highContrast,
@@ -91,20 +87,19 @@ const styles = ({
   width
 }) => {
   const theme = componentTheme(baseTheme);
-  const fontSize = theme.TableHeaderCell_fontSize;
   const rtl = theme.direction === 'rtl';
   const borderProperty = rtl ? 'borderRight' : 'borderLeft';
+  const positionProperty = rtl ? 'right' : 'left';
   const borderVertical = highContrast
     ? theme.TableHeaderCell_borderVertical_highContrast
     : theme.TableHeaderCell_borderVertical;
-  const positionProperty = rtl ? 'right' : 'left';
 
   return {
     fontWeight: theme.TableHeaderCell_fontWeight,
-    maxWidth: getWidth(maxWidth, fontSize),
-    minWidth: getWidth(minWidth, fontSize),
+    maxWidth,
+    minWidth,
     position: 'relative',
-    width: getWidth(width, fontSize),
+    width,
     zIndex: 1,
 
     // Using this "border" to appease Firefox, which extends TableHeaderCell's

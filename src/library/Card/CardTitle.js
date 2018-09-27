@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
 import { ellipsis } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -48,15 +48,15 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   avatar: ({ subtitle, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
     const width = subtitle
       ? theme.CardTitleAvatarSize_large
       : theme.CardTitleAvatarSize;
 
     return {
       flex: '0 0 auto',
-      marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
-      marginRight: rtl ? null : theme.CardTitleAvatar_margin,
+      [marginProperty]: theme.CardTitleAvatar_margin,
       width,
 
       '&[class] > *': {
@@ -68,16 +68,15 @@ const styles = {
   inner: {
     flex: '1 1 auto'
   },
-  secondaryText: (props) => {
-    const theme = componentTheme(props.theme);
-    const fontSize = theme.CardTitleSecondaryText_fontSize;
+  secondaryText: ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       color: theme.CardTitleSecondaryText_color,
       flex: '0 0 auto',
-      fontSize,
+      fontSize: theme.CardTitleSecondaryText_fontSize,
       fontWeight: theme.CardTitleSecondaryText_fontWeight,
-      transform: `translateY(${getNormalizedValue(pxToEm(5), fontSize)})`, // Optical alignment
+      transform: `translateY(${pxToRem(5, theme)})`, // Optical alignment
       ...ellipsis('33%')
     };
   },
@@ -86,21 +85,19 @@ const styles = {
   },
   subtitle: ({ avatar, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const fontSize = theme.CardSubtitle_fontSize;
 
     return {
       color: theme.CardSubtitle_color,
-      fontSize,
+      fontSize: theme.CardSubtitle_fontSize,
       fontWeight: theme.CardSubtitle_fontWeight,
       margin: 0,
-      marginTop: avatar
-        ? null
-        : getNormalizedValue(theme.CardSubtitle_marginTop, fontSize)
+      marginTop: avatar ? null : theme.CardSubtitle_marginTop
     };
   },
   title: ({ theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
       alignItems: 'flex-start',
@@ -108,39 +105,33 @@ const styles = {
 
       '& > [role="img"]': {
         color: variant ? theme[`icon_color_${variant}`] : null,
-        marginLeft: rtl ? theme.CardTitleIcon_margin : null,
-        marginRight: rtl ? null : theme.CardTitleIcon_margin,
+        [marginProperty]: theme.CardTitleIcon_margin,
         position: 'relative',
-        top: pxToEm(4) // optical alignment
+        top: pxToRem(4, theme) // optical alignment
       }
     };
   },
   titleContent: ({ actions, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const fontSize = theme.CardTitle_fontSize;
-    const actionsMargin = getNormalizedValue(
-      theme.CardTitleIcon_margin,
-      fontSize
-    );
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
       color: theme.CardTitle_color,
       flex: '1 1 auto',
-      fontSize,
+      fontSize: theme.CardTitle_fontSize,
       fontWeight: theme.CardTitle_fontWeight,
       margin: 0,
-      marginLeft: actions && rtl ? actionsMargin : null,
-      marginRight: actions && !rtl ? actionsMargin : null
+      [marginProperty]: actions && theme.CardTitleIcon_margin
     };
   }
 };
 
+const Avatar = createStyledComponent('span', styles.avatar);
+const Inner = createStyledComponent('div', styles.inner);
 const Root = createStyledComponent(CardRow, styles.root, {
   displayName: 'CardTitle'
 });
-const Avatar = createStyledComponent('span', styles.avatar);
-const Inner = createStyledComponent('div', styles.inner);
 const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Subtitle = createStyledComponent('h4', styles.subtitle);
 const Title = createStyledComponent('div', styles.title);

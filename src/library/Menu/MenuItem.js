@@ -1,6 +1,6 @@
 /* @flow */
 import React, { cloneElement, PureComponent } from 'react';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
@@ -71,20 +71,20 @@ export const componentTheme = (baseTheme: Object) => ({
 
 // These styles are based off of Button, with significant changes
 const styles = {
-  content: {
+  content: ({ theme }) => ({
     display: 'flex',
     flex: '1 1 auto',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    padding: `${pxToEm(3)} 0 ${pxToEm(4)}`,
+    padding: `${pxToRem(3, theme)} 0 ${pxToRem(4, theme)}`,
     whiteSpace: 'normal',
     wordBreak: 'break-all'
-  },
+  }),
   inner: {
     display: 'flex',
     justifyContent: 'space-between'
   },
-  menuItem: ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
+  root: ({ disabled, isHighlighted, theme: baseTheme, variant }) => {
     let theme = componentTheme(baseTheme);
 
     if (variant) {
@@ -155,48 +155,43 @@ const styles = {
       }
     };
   },
-  secondaryText: (props) => {
-    let theme = componentTheme(props.theme);
-
-    const fontSize = theme.MenuItemSecondaryText_fontSize;
+  secondaryText: ({ theme: baseTheme }) => {
+    let theme = componentTheme(baseTheme);
 
     return {
       color: theme.MenuItemSecondaryText_color,
-      fontSize,
+      fontSize: theme.MenuItemSecondaryText_fontSize,
       // The regular text fontSize is larger than that of the secondary text.
       // This magic number (optically) re-aligns both sets of text vertically.
-      paddingTop: getNormalizedValue(pxToEm(2), fontSize),
+      paddingTop: pxToRem(2, theme),
       wordBreak: 'break-word'
     };
   },
-  text: (props) => {
-    let theme = componentTheme(props.theme);
-
-    const fontSize = theme.MenuItemContent_fontSize;
-    const margin = getNormalizedValue(theme.space_inline_sm, fontSize);
+  text: ({ theme: baseTheme }) => {
+    let theme = componentTheme(baseTheme);
+    const marginProperty =
+      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
-      fontSize,
-      marginLeft: theme.direction === 'rtl' && margin,
-      marginRight: theme.direction === 'ltr' && margin,
+      fontSize: theme.MenuItemContent_fontSize,
+      [marginProperty]: theme.space_inline_sm,
       wordBreak: 'break-word'
     };
   }
 };
 
-const Root = createStyledComponent('div', styles.menuItem, {
-  displayName: 'MenuItem'
-});
-
 const Content = createStyledComponent('span', styles.content);
 const Inner = createStyledComponent('span', styles.inner);
+const Root = createStyledComponent('div', styles.root, {
+  displayName: 'MenuItem'
+});
 const SecondaryText = createStyledComponent('span', styles.secondaryText);
 const Text = createStyledComponent('span', styles.text);
 
 const variantIcons = {
-  danger: <IconDanger size={pxToEm(24)} />,
-  success: <IconSuccess size={pxToEm(24)} />,
-  warning: <IconWarning size={pxToEm(24)} />
+  danger: <IconDanger size={pxToRem(24)} />,
+  success: <IconSuccess size={pxToRem(24)} />,
+  warning: <IconWarning size={pxToRem(24)} />
 };
 
 /**
@@ -230,12 +225,12 @@ export default class MenuItem extends PureComponent<Props> {
     let startIcon = variant !== undefined && variant && variantIcons[variant];
     if (iconStart) {
       startIcon = cloneElement(iconStart, {
-        size: pxToEm(24),
+        size: pxToRem(24),
         key: 'iconStart'
       });
     }
     const endIcon =
-      iconEnd && cloneElement(iconEnd, { size: pxToEm(24), key: 'iconEnd' });
+      iconEnd && cloneElement(iconEnd, { size: pxToRem(24), key: 'iconEnd' });
 
     return (
       <Root {...rootProps}>

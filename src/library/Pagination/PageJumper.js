@@ -19,7 +19,6 @@ type Props = {
 };
 
 const styles = {
-  root: ({ width }) => ({ width }),
   input: {
     '& > input': {
       MozAppearance: 'textfield',
@@ -29,7 +28,8 @@ const styles = {
         margin: 0
       }
     }
-  }
+  },
+  root: ({ width }) => ({ width })
 };
 
 const NumberInput = createStyledComponent(TextInput, styles.input);

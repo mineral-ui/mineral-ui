@@ -2,7 +2,7 @@
 import React, { Component, cloneElement } from 'react';
 import memoizeOne from 'memoize-one';
 import { ellipsis } from 'polished';
-import { createStyledComponent, pxToEm, getNormalizedValue } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 
 type Props = {
   /** Rendered content of the component */
@@ -57,17 +57,17 @@ export const componentTheme = (baseTheme: Object) => ({
   Button_color_primary: baseTheme.color_themePrimary,
   Button_fontWeight: baseTheme.fontWeight_semiBold,
   Button_paddingHorizontal: baseTheme.space_inset_sm,
-  Button_paddingIconOnly_small: pxToEm(3),
-  Button_paddingIconOnly_medium: pxToEm(7),
-  Button_paddingIconOnly_large: pxToEm(7),
-  Button_paddingIconOnly_jumbo: pxToEm(13),
+  Button_paddingIconOnly_small: pxToRem(3, baseTheme),
+  Button_paddingIconOnly_medium: pxToRem(7, baseTheme),
+  Button_paddingIconOnly_large: pxToRem(7, baseTheme),
+  Button_paddingIconOnly_jumbo: pxToRem(13, baseTheme),
   Button_height_small: baseTheme.size_small,
   Button_height_medium: baseTheme.size_medium,
   Button_height_large: baseTheme.size_large,
   Button_height_jumbo: baseTheme.size_jumbo,
 
   ButtonContent_fontSize: baseTheme.fontSize_ui,
-  ButtonContent_fontSize_small: pxToEm(12),
+  ButtonContent_fontSize_small: pxToRem(12, baseTheme),
 
   ButtonIcon_color: baseTheme.icon_color_theme,
   ButtonIcon_margin: baseTheme.space_inset_sm,
@@ -88,7 +88,44 @@ function chooseColor({ disabled, primary, minimal }: Props, theme) {
 }
 
 const styles = {
-  button: ({
+  content: ({ size, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
+    const rtl = theme.direction === 'rtl';
+    const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
+    const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
+
+    return {
+      ...ellipsis('100%'),
+
+      display: 'block',
+      fontSize:
+        size === 'small'
+          ? theme.ButtonContent_fontSize_small
+          : theme.ButtonContent_fontSize,
+      lineHeight: theme[`Button_height_${size}`],
+
+      ...(size === undefined || size === 'large' || size === 'jumbo'
+        ? {
+            '&:first-child': {
+              [firstChildPaddingProperty]: theme.Button_paddingHorizontal
+            },
+
+            '&:last-child': {
+              [lastChildPaddingProperty]: theme.Button_paddingHorizontal
+            }
+          }
+        : undefined)
+    };
+  },
+  inner: {
+    alignItems: 'center',
+    display: 'inline-flex',
+    justifyContent: 'center',
+    maxHeight: '100%',
+    pointerEvents: 'none',
+    width: '100%'
+  },
+  root: ({
     circular,
     disabled,
     fullWidth,
@@ -141,7 +178,7 @@ const styles = {
           ? 'transparent'
           : theme.Button_borderColor,
       borderRadius: circular
-        ? `${parseFloat(theme[`Button_height_${size}`]) / 2}em`
+        ? `${parseFloat(theme[`Button_height_${size}`]) / 2}rem`
         : theme.Button_borderRadius,
       borderStyle: 'solid',
       borderWidth: `${theme.Button_borderWidth}px`,
@@ -246,60 +283,14 @@ const styles = {
         }
       }
     };
-  },
-  content: ({ size, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
-    const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
-
-    let paddings;
-
-    const fontSize =
-      size === 'small'
-        ? theme.ButtonContent_fontSize_small
-        : theme.ButtonContent_fontSize;
-
-    if (size === undefined || size === 'large' || size === 'jumbo') {
-      const padding = getNormalizedValue(
-        theme.Button_paddingHorizontal,
-        fontSize
-      );
-      paddings = {
-        '&:first-child': {
-          [firstChildPaddingProperty]: padding
-        },
-
-        '&:last-child': {
-          [lastChildPaddingProperty]: padding
-        }
-      };
-    }
-
-    return {
-      ...ellipsis('100%'),
-
-      display: 'block',
-      fontSize,
-      lineHeight: getNormalizedValue(theme[`Button_height_${size}`], fontSize),
-      ...paddings
-    };
-  },
-  inner: {
-    alignItems: 'center',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    maxHeight: '100%',
-    pointerEvents: 'none',
-    width: '100%'
   }
 };
 
 const iconSize = {
   small: 'medium',
   medium: 'medium',
-  large: pxToEm(24),
-  jumbo: pxToEm(24)
+  large: pxToRem(24),
+  jumbo: pxToRem(24)
 };
 
 const Content = createStyledComponent('span', styles.content);
@@ -324,7 +315,7 @@ function filterProps({ element, type }: Props) {
 const createRootNode = (props: Props) => {
   const { element = Button.defaultProps.element } = props;
 
-  return createStyledComponent(element, styles.button, {
+  return createStyledComponent(element, styles.root, {
     displayName: 'Button',
     filterProps: filterProps(props),
     includeStyleReset: true,

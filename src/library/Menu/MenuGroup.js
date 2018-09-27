@@ -18,12 +18,12 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const Root = createStyledComponent(
   'div',
-  (props) => {
-    const theme = componentTheme(props.theme);
+  ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       margin: `${theme.MenuGroup_margin} 0`,
-      '&:first-child,& + &': {
+      '&:first-child, & + &': {
         marginTop: 0
       },
 

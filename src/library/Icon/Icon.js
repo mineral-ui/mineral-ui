@@ -1,10 +1,10 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { generateId } from '../utils';
 
 type Props = {
-  /** Available sizes, including custom - e.g. '5em' or '20px' */
+  /** Available sizes, including custom - e.g. '5rem' or '20px' */
   size?: 'small' | 'medium' | 'large' | string,
   /** SVG content, required for the generic Icon component */
   children?: React$Node,
@@ -18,9 +18,9 @@ type Props = {
 
 export const componentTheme = (baseTheme: Object) => ({
   Icon_fill: 'currentcolor',
-  Icon_size_small: pxToEm(12),
-  Icon_size_medium: pxToEm(16),
-  Icon_size_large: pxToEm(20),
+  Icon_size_small: pxToRem(12, baseTheme),
+  Icon_size_medium: pxToRem(16, baseTheme),
+  Icon_size_large: pxToRem(20, baseTheme),
   ...baseTheme
 });
 
