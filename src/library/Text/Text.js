@@ -1,11 +1,11 @@
 /* @flow */
 import React, { Component } from 'react';
-import { string } from 'prop-types';
 import { createStyledComponent } from '../styles';
 import { rtlTextAlign } from '../utils';
+import ElementContext from './ElementContext';
 import TextProvider from './TextProvider';
 
-type Props = {
+export type Props = {
   /** Available horizontal alignments */
   align?: 'start' | 'end' | 'center' | 'justify',
   /** Available styles */
@@ -206,19 +206,20 @@ export default class Text extends Component<Props> {
     element: 'p'
   };
 
-  static contextTypes = {
-    parentElement: string
-  };
-
   render() {
     const { inherit, ...restProps } = this.props;
-    const parentElement = this.context.parentElement;
-    const rootProps = {
-      inherit: inherit === false || !parentElement ? inherit : true,
-      parentElement,
-      ...restProps
-    };
 
-    return <TextProvider {...rootProps} />;
+    return (
+      <ElementContext.Consumer>
+        {(parentElement) => {
+          const rootProps = {
+            inherit: inherit === false || !parentElement ? inherit : true,
+            parentElement,
+            ...restProps
+          };
+          return <TextProvider {...rootProps} />;
+        }}
+      </ElementContext.Consumer>
+    );
   }
 }
