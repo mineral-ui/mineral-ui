@@ -45,9 +45,8 @@ const styles = ({
   textAlign,
   theme: baseTheme
 }) => {
-  const theme = componentTheme(baseTheme);
-  const borderProperty =
-    theme.direction === 'rtl' ? 'borderRight' : 'borderLeft';
+  const { direction, ...theme } = componentTheme(baseTheme);
+
   const borderVertical = highContrast
     ? theme.TableCell_borderVertical_highContrast
     : theme.TableCell_borderVertical;
@@ -61,11 +60,11 @@ const styles = ({
     fontSize: theme.TableCell_fontSize,
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
-    textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
+    textAlign: rtlTextAlign({ align: textAlign || 'start', direction }),
     verticalAlign: theme.TableCell_verticalAlign,
 
     '&:not(:first-child)': {
-      [borderProperty]: borderVertical
+      [`border${theme.rtlStart}`]: borderVertical
     }
   };
 };

@@ -201,10 +201,12 @@ const styles = {
   }) => {
     const theme = componentTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
-    const marginProperty =
-      (labelPosition === 'start' && !rtl) || (!labelPosition === 'start' && rtl)
-        ? 'marginRight'
-        : 'marginLeft';
+    const labelAtStart =
+      (labelPosition === 'start' && !rtl) ||
+      (!(labelPosition === 'start') && rtl);
+    const marginHorizontal = justify
+      ? 'auto'
+      : theme.ChoiceText_marginHorizontal;
 
     return {
       color: disabled ? theme.color_disabled : theme.ChoiceText_color,
@@ -212,7 +214,8 @@ const styles = {
         size === 'small'
           ? theme.ChoiceText_fontSize_small
           : theme.ChoiceText_fontSize,
-      [marginProperty]: justify ? 'auto' : theme.ChoiceText_marginHorizontal,
+      marginLeft: labelAtStart ? 0 : marginHorizontal,
+      marginRight: labelAtStart ? marginHorizontal : 0,
 
       ...(hideLabel ? hideVisually() : undefined)
     };

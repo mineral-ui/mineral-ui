@@ -472,7 +472,7 @@ const getSpaceValue = (
 const getSpacingStyles = (
   property: string,
   restProps: Object,
-  rtl: boolean
+  theme: Object
 ): SpacingStyles => {
   // prettier-ignore
   const spacingPropKeys = ['', 'Horizontal', 'Vertical', 'Start', 'End', 'Bottom', 'Left', 'Right', 'Top']
@@ -497,9 +497,9 @@ const getSpacingStyles = (
     } else if (key.indexOf('Vertical') !== -1) {
       setStyles(['Bottom', 'Top'], key, acc);
     } else if (key.indexOf('Start') !== -1) {
-      setStyles([`${rtl ? 'Right' : 'Left'}`], key, acc);
+      setStyles([theme.rtlStart], key, acc);
     } else if (key.indexOf('End') !== -1) {
-      setStyles([`${rtl ? 'Left' : 'Right'}`], key, acc);
+      setStyles([theme.rtlEnd], key, acc);
     } else {
       acc[key] = restProps[key];
     }
@@ -509,8 +509,6 @@ const getSpacingStyles = (
 
 const styles = {
   root: ({ breakpoints, height, inline, theme, width, ...restProps }) => {
-    const rtl = theme.direction === 'rtl';
-
     const mapValueToProperty = (
       property: string,
       value: Values
@@ -520,7 +518,7 @@ const styles = {
         height: getMeasurement,
         width: getMeasurement,
         ...['margin', 'padding'].reduce((acc, property) => {
-          Object.keys(getSpacingStyles(property, restProps, rtl)).forEach(
+          Object.keys(getSpacingStyles(property, restProps, theme)).forEach(
             (style) => {
               acc[style] = (value) => getSpaceValue(property, theme, value);
             }
@@ -538,8 +536,8 @@ const styles = {
       styles: {
         display: inline,
         height,
-        ...getSpacingStyles('margin', restProps, rtl),
-        ...getSpacingStyles('padding', restProps, rtl),
+        ...getSpacingStyles('margin', restProps, theme),
+        ...getSpacingStyles('padding', restProps, theme),
         width
       },
       theme

@@ -1,14 +1,14 @@
 /* @flow */
 import React, { Component } from 'react';
 import { ellipsis } from 'polished';
+import { createStyledComponent, pxToRem } from '../styles';
+import { createThemedComponent, mapComponentThemes } from '../themes';
+import FauxControl from '../FauxControl';
+import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
+import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
-import { createStyledComponent, pxToRem } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
-import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
-import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
-import FauxControl from '../FauxControl';
 import { componentTheme as textInputComponentTheme } from '../TextInput/TextInput';
 
 import type { Item } from '../Menu/Menu';
@@ -81,8 +81,6 @@ const styles = {
     variant
   }) => {
     const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       alignItems: 'center',
@@ -126,7 +124,7 @@ const styles = {
               : selectedItemVariant
                 ? theme[`color_${selectedItemVariant}`]
                 : theme.SelectIcon_color,
-        [marginProperty]: theme.SelectIcon_marginHorizontal
+        [`margin${theme.rtlStart}`]: theme.SelectIcon_marginHorizontal
       }
     };
   },

@@ -23,8 +23,6 @@ const styles = {
       ...componentTheme(baseTheme),
       ...cardBlockComponentTheme(baseTheme)
     };
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       alignItems: 'center',
@@ -32,7 +30,7 @@ const styles = {
       flex: '0 0 auto',
       fontSize: theme.CardBlock_fontSize,
       marginBottom: theme.CardActionsAction_spaceInline,
-      [marginProperty]: theme.CardActionsAction_spaceInline
+      [`margin${theme.rtlStart}`]: theme.CardActionsAction_spaceInline
     };
   },
   root: ({ theme: baseTheme }) => {

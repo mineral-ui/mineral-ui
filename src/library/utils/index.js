@@ -6,4 +6,4 @@ export { default as getDocumentFontSize } from './getDocumentFontSize';
 export { default as isRenderProp } from './isRenderProp';
 export { default as isValidProp } from './isValidProp';
 export { default as reactProps } from './reactProps';
-export { default as rtlTextAlign } from './rtlTextAlign';
+export { rtlAlign, rtlTextAlign } from './rtl';

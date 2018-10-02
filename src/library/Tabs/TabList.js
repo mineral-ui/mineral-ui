@@ -74,11 +74,10 @@ const styles = {
       ...componentTheme(baseTheme),
       ...tabPanelComponentTheme(baseTheme)
     };
-    const rtl = theme.direction === 'rtl';
     const edge = {
       bottom: 'top',
-      end: rtl ? 'right' : 'left',
-      start: rtl ? 'left' : 'right',
+      end: theme.rtlStart,
+      start: theme.rtlEnd,
       top: 'bottom'
     };
     const edgeProperty = edge[position];
@@ -101,13 +100,10 @@ const styles = {
   },
   list: ({ align, count, theme: baseTheme, vertical }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const childMarginProperty = vertical
       ? 'marginBottom'
-      : rtl
-        ? 'marginLeft'
-        : 'marginRight';
+      : `margin${theme.rtlEnd}`;
 
     return {
       display: 'flex',

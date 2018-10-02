@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { isRenderProp } from '../utils';
+import { isRenderProp, rtlAlign } from '../utils';
 import { createStyledComponent } from '../styles';
 import { TableContext } from './TableBase';
 
@@ -38,8 +38,8 @@ export const componentTheme = (baseTheme: Object) => ({
 const Root = createStyledComponent(
   'tr',
   ({ highContrast, isSelected, theme: baseTheme, striped }) => {
-    const theme = componentTheme(baseTheme);
-    const indicatorEdge = theme.direction !== 'rtl' ? 'right' : 'left';
+    const { direction, ...theme } = componentTheme(baseTheme);
+    const start = rtlAlign({ align: 'start', direction });
 
     return {
       backgroundColor: isSelected
@@ -80,7 +80,7 @@ const Root = createStyledComponent(
                 backgroundColor: theme.color_theme_60,
                 bottom: 0,
                 content: '""',
-                [indicatorEdge]: 0,
+                [start]: 0,
                 position: 'absolute',
                 top: 0,
                 width: '4px'

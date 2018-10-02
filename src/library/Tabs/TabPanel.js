@@ -36,26 +36,23 @@ const styles = {
   },
   root: ({ position, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
-    const orientation = {
+    const orientationMap = {
       bottom: 'Bottom',
-      end: rtl ? 'Left' : 'Right',
-      start: rtl ? 'Right' : 'Left',
+      end: theme.rtlEnd,
+      start: theme.rtlStart,
       top: 'Top'
     };
-    const borderProperty = `border${orientation[position]}`;
-    const marginProperty = `margin${orientation[position]}`;
-    const paddingProperty = `padding${orientation[position]}`;
+    const orientation = orientationMap[position];
 
     return {
-      [borderProperty]: theme.TabList_border,
+      [`border${orientation}`]: theme.TabList_border,
       display: 'flex',
       flex: '1 1 auto',
-      [marginProperty]:
+      [`margin${orientation}`]:
         theme.TabList_border && -theme.TabList_border.split('px')[0],
       minHeight: '0%', // See: https://css-tricks.com/flexbox-truncated-text/#comment-1611744
-      [paddingProperty]: theme.TabPanel_gap
+      [`padding${orientation}`]: theme.TabPanel_gap
     };
   }
 };
