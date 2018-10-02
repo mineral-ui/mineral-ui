@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import memoizeOne from 'memoize-one';
-import { isRenderProp } from '../utils';
+import { isRenderProp, rtlAlign } from '../utils';
 import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import TableCell, {
@@ -86,10 +86,8 @@ const styles = ({
   theme: baseTheme,
   width
 }) => {
-  const theme = componentTheme(baseTheme);
-  const rtl = theme.direction === 'rtl';
-  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
-  const positionProperty = rtl ? 'right' : 'left';
+  const { direction, ...theme } = componentTheme(baseTheme);
+  const start = rtlAlign({ align: 'start', direction });
   const borderVertical = highContrast
     ? theme.TableHeaderCell_borderVertical_highContrast
     : theme.TableHeaderCell_borderVertical;
@@ -105,13 +103,13 @@ const styles = ({
     // Using this "border" to appease Firefox, which extends TableHeaderCell's
     // real border down the entire column after clicking a TableSortableHeaderCell.
     '&:not(:first-child)': {
-      [borderProperty]: 0,
+      [`border${theme.rtlStart}`]: 0,
 
       '&::before': {
-        [borderProperty]: borderVertical,
+        [`border${theme.rtlStart}`]: borderVertical,
         bottom: 0,
         content: '""',
-        [positionProperty]: 0,
+        [start]: 0,
         position: 'absolute',
         top: 0,
         width: 0,

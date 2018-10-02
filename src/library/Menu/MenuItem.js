@@ -140,17 +140,11 @@ const styles = {
         flex: '0 0 auto',
 
         '&:first-child': {
-          marginLeft:
-            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null,
-          marginRight:
-            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null
+          [`margin${theme.rtlEnd}`]: theme.MenuItemIcon_margin
         },
 
         '&:last-child': {
-          marginLeft:
-            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null,
-          marginRight:
-            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null
+          [`margin${theme.rtlStart}`]: theme.MenuItemIcon_margin
         }
       }
     };
@@ -169,12 +163,10 @@ const styles = {
   },
   text: ({ theme: baseTheme }) => {
     let theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
       fontSize: theme.MenuItemContent_fontSize,
-      [marginProperty]: theme.space_inline_sm,
+      [`margin${theme.rtlEnd}`]: theme.space_inline_sm,
       wordBreak: 'break-word'
     };
   }

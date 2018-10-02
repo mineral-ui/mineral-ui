@@ -116,7 +116,7 @@ const styles = {
     theme: baseTheme,
     truncate
   }) => {
-    let theme = componentTheme(baseTheme);
+    let { direction, ...theme } = componentTheme(baseTheme);
     const isHeadingElement = headingElements.indexOf(element) !== -1;
     const appearance =
       propAppearance !== Text.defaultProps.appearance
@@ -167,7 +167,7 @@ const styles = {
         }
       })(),
       lineHeight: theme.Text_lineHeight,
-      textAlign: rtlTextAlign(align, theme.direction),
+      textAlign: rtlTextAlign({ align, direction }),
       ...commonStyles(element, theme, truncate),
       // 1 - Must come after commonStyles
       // TODO: I think we have to un-normalize this theme variable if we're using it with em units

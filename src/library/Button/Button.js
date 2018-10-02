@@ -90,9 +90,6 @@ function chooseColor({ disabled, primary, minimal }: Props, theme) {
 const styles = {
   content: ({ size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
-    const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
 
     return {
       ...ellipsis('100%'),
@@ -107,11 +104,11 @@ const styles = {
       ...(size === undefined || size === 'large' || size === 'jumbo'
         ? {
             '&:first-child': {
-              [firstChildPaddingProperty]: theme.Button_paddingHorizontal
+              [`padding${theme.rtlStart}`]: theme.Button_paddingHorizontal
             },
 
             '&:last-child': {
-              [lastChildPaddingProperty]: theme.Button_paddingHorizontal
+              [`padding${theme.rtlEnd}`]: theme.Button_paddingHorizontal
             }
           }
         : undefined)
@@ -137,9 +134,6 @@ const styles = {
     variant
   }) => {
     let theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildMarginProperty = rtl ? 'marginLeft' : 'marginRight';
-    const lastChildMarginProperty = rtl ? 'marginRight' : 'marginLeft';
 
     if (variant) {
       // prettier-ignore
@@ -271,11 +265,11 @@ const styles = {
         flexShrink: 0,
 
         '&:first-child': {
-          [firstChildMarginProperty]: theme.ButtonIcon_margin
+          [`margin${theme.rtlEnd}`]: theme.ButtonIcon_margin
         },
 
         '&:last-child': {
-          [lastChildMarginProperty]: theme.ButtonIcon_margin
+          [`margin${theme.rtlStart}`]: theme.ButtonIcon_margin
         },
 
         '&:only-child': {

@@ -25,8 +25,6 @@ const Root = createStyledComponent(
   'fieldset',
   ({ disabled, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const paddingProperty =
-      theme.direction === 'rtl' ? 'paddingLeft' : 'paddingRight';
 
     return {
       border: '1px solid transparent',
@@ -39,7 +37,7 @@ const Root = createStyledComponent(
         fontWeight: theme.FormFieldsetLegend_fontWeight,
         lineHeight: theme.size_medium,
         padding: 0,
-        [paddingProperty]: theme.space_inline_sm
+        [`padding${theme.rtlEnd}`]: theme.space_inline_sm
       }
     };
   },

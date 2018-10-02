@@ -56,12 +56,21 @@ const manipulateTheme = (
   parentDocumentFontSize?: number | string
 ) => {
   let outTheme = typeof theme === 'function' ? theme(baseTheme) : theme;
+  const { direction } = outTheme;
 
   if (domLoaded && theme) {
     const { documentFontSize } = outTheme;
     documentFontSizeCheck(
       documentFontSize !== undefined ? documentFontSize : parentDocumentFontSize
     );
+  }
+
+  if (direction && direction !== baseTheme.direction) {
+    outTheme = {
+      ...outTheme,
+      rtlEnd: rtlAlign({ align: 'end', direction, capitalize: true }),
+      rtlStart: rtlAlign({ align: 'start', direction, capitalize: true })
+    };
   }
 
   return {

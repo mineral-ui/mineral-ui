@@ -89,16 +89,16 @@ const styles = {
   },
   iconHolder: ({ isSorted, direction, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
+
     const iconAdjustment = pxToRem(2, theme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       color: theme.icon_color,
       display: 'inline-block',
       height: theme.TableSortableHeaderCellIcon_size,
       // prettier-ignore
-      [marginProperty]: `${parseFloat(theme.space_inline_xxs) + parseFloat(iconAdjustment)}rem`,
+      [`margin${theme.rtlStart}`]:
+        `${parseFloat(theme.space_inline_xxs) + parseFloat(iconAdjustment)}rem`,
       opacity: isSorted ? null : 0,
       position: 'relative',
       top: direction === 'ascending' ? 2 : 1,
