@@ -4,9 +4,9 @@ exports[`Icon demo examples Snapshots: color 1`] = `
 .emotion-0 {
   color: coral;
   fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 <IconSentimentSatisfied
@@ -58,7 +58,7 @@ exports[`Icon demo examples Snapshots: color 1`] = `
 exports[`Icon demo examples Snapshots: custom 1`] = `
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
+  font-size: 1rem;
   height: 7em;
   width: 7em;
 }
@@ -154,9 +154,9 @@ exports[`Icon demo examples Snapshots: custom 1`] = `
 exports[`Icon demo examples Snapshots: icon 1`] = `
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 <IconSentimentSatisfied>
@@ -203,74 +203,89 @@ exports[`Icon demo examples Snapshots: icon 1`] = `
 exports[`Icon demo examples Snapshots: rtl 1`] = `
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
+  font-size: 1rem;
+  height: 1rem;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
-  width: 1em;
+  width: 1rem;
 }
 
 <ThemeProvider>
-  <ThemeProvider>
-    <IconHelp>
-      <Icon
-        rtl={true}
-        size="medium"
-      >
-        <Styled(svg)
-          aria-hidden={true}
-          focusable="false"
-          role="img"
-          rtl={true}
-          size="medium"
-          viewBox="0 0 24 24"
-        >
-          <svg
-            aria-hidden={true}
-            className="emotion-0"
-            focusable="false"
-            role="img"
-            viewBox="0 0 24 24"
+  <Fragment>
+    <DocumentFontSizeProvider>
+      <ThemeProvider>
+        <IconHelp>
+          <Icon
+            rtl={true}
+            size="medium"
           >
-            <g>
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
-              />
-            </g>
-          </svg>
-        </Styled(svg)>
-      </Icon>
-    </IconHelp>
-  </ThemeProvider>
+            <Styled(svg)
+              aria-hidden={true}
+              focusable="false"
+              role="img"
+              rtl={true}
+              size="medium"
+              viewBox="0 0 24 24"
+            >
+              <svg
+                aria-hidden={true}
+                className="emotion-0"
+                focusable="false"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                  />
+                </g>
+              </svg>
+            </Styled(svg)>
+          </Icon>
+        </IconHelp>
+      </ThemeProvider>
+    </DocumentFontSizeProvider>
+    <EventListener
+      listeners={
+        Array [
+          Object {
+            "event": "DOMContentLoaded",
+            "handler": [Function],
+            "target": "document",
+          },
+        ]
+      }
+    />
+  </Fragment>
 </ThemeProvider>
 `;
 
 exports[`Icon demo examples Snapshots: sizes 1`] = `
 .emotion-1 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 0.75em;
-  width: 0.75em;
+  font-size: 1rem;
+  height: 0.75rem;
+  width: 0.75rem;
 }
 
 .emotion-2 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1.25em;
-  width: 1.25em;
+  font-size: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .emotion-3 {
   fill: currentcolor;
-  font-size: 16px;
+  font-size: 1rem;
   height: 7em;
   width: 7em;
 }
@@ -444,9 +459,9 @@ exports[`Icon demo examples Snapshots: sizes 1`] = `
 exports[`Icon demo examples Snapshots: title 1`] = `
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 <IconSentimentSatisfied

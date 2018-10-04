@@ -5,7 +5,7 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -117,23 +117,23 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -186,11 +186,11 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -222,16 +222,16 @@ exports[`ButtonGroup demo examples Snapshots: basic 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 <ButtonGroup
@@ -376,7 +376,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -488,23 +488,23 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -557,11 +557,11 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -593,23 +593,23 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-18 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 @media only screen and (max-width:450px) {
@@ -718,138 +718,153 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                 onOpen={[Function]}
               >
                 <ThemeProvider>
-                  <ThemeProvider>
-                    <Popover
-                      content={[Function]}
-                      data-index={1}
-                      focusTriggerOnClose={false}
-                      hasArrow={true}
-                      id="tooltip-19"
-                      isOpen={false}
-                      onClick={[Function]}
-                      onClose={[Function]}
-                      onOpen={[Function]}
-                      placement="bottom"
-                    >
-                      <Popover
-                        content={[Function]}
-                        data-index={1}
-                        focusTriggerOnClose={false}
-                        hasArrow={true}
-                        id="tooltip-19"
-                        isOpen={false}
-                        onClick={[Function]}
-                        onClose={[Function]}
-                        onOpen={[Function]}
-                        placement="bottom"
-                        tag="span"
-                      >
+                  <Fragment>
+                    <DocumentFontSizeProvider>
+                      <ThemeProvider>
                         <Popover
-                          className="emotion-8"
+                          content={[Function]}
                           data-index={1}
+                          focusTriggerOnClose={false}
+                          hasArrow={true}
                           id="tooltip-19"
+                          isOpen={false}
                           onClick={[Function]}
-                          tag="span"
+                          onClose={[Function]}
+                          onOpen={[Function]}
+                          placement="bottom"
                         >
-                          <span
-                            className="emotion-8"
+                          <Popover
+                            content={[Function]}
                             data-index={1}
+                            focusTriggerOnClose={false}
+                            hasArrow={true}
                             id="tooltip-19"
+                            isOpen={false}
                             onClick={[Function]}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            placement="bottom"
+                            tag="span"
                           >
-                            <PopoverTrigger
-                              aria-describedby="tooltip-19-content"
-                              aria-owns="tooltip-19-content"
-                              element="button"
-                              onBlur={[Function]}
+                            <Popover
+                              className="emotion-8"
+                              data-index={1}
+                              id="tooltip-19"
                               onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              role="button"
-                              size="large"
-                              tabIndex={0}
-                              type="button"
+                              tag="span"
                             >
-                              <PopoverTrigger
-                                component="span"
+                              <span
+                                className="emotion-8"
+                                data-index={1}
+                                id="tooltip-19"
+                                onClick={[Function]}
                               >
                                 <PopoverTrigger
-                                  className="emotion-6"
-                                  component="span"
+                                  aria-describedby="tooltip-19-content"
+                                  aria-owns="tooltip-19-content"
+                                  element="button"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  role="button"
+                                  size="large"
+                                  tabIndex={0}
+                                  type="button"
                                 >
-                                  <span
-                                    className="emotion-6"
+                                  <PopoverTrigger
+                                    component="span"
                                   >
-                                    <Button
-                                      aria-describedby="tooltip-19-content"
-                                      aria-owns="tooltip-19-content"
-                                      element="button"
-                                      onBlur={[Function]}
-                                      onClick={[Function]}
-                                      onFocus={[Function]}
-                                      onMouseEnter={[Function]}
-                                      onMouseLeave={[Function]}
-                                      role="button"
-                                      size="large"
-                                      tabIndex={0}
-                                      type="button"
+                                    <PopoverTrigger
+                                      className="emotion-6"
+                                      component="span"
                                     >
-                                      <Button
-                                        aria-describedby="tooltip-19-content"
-                                        aria-owns="tooltip-19-content"
-                                        element="button"
-                                        onBlur={[Function]}
-                                        onClick={[Function]}
-                                        onFocus={[Function]}
-                                        onMouseEnter={[Function]}
-                                        onMouseLeave={[Function]}
-                                        role="button"
-                                        size="large"
-                                        tabIndex={0}
-                                        text="Tooltip"
-                                        type="button"
+                                      <span
+                                        className="emotion-6"
                                       >
-                                        <button
+                                        <Button
                                           aria-describedby="tooltip-19-content"
                                           aria-owns="tooltip-19-content"
-                                          className="emotion-2"
+                                          element="button"
                                           onBlur={[Function]}
                                           onClick={[Function]}
                                           onFocus={[Function]}
                                           onMouseEnter={[Function]}
                                           onMouseLeave={[Function]}
                                           role="button"
+                                          size="large"
                                           tabIndex={0}
                                           type="button"
                                         >
-                                          <Styled(span)>
-                                            <span
-                                              className="emotion-1"
+                                          <Button
+                                            aria-describedby="tooltip-19-content"
+                                            aria-owns="tooltip-19-content"
+                                            element="button"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                            size="large"
+                                            tabIndex={0}
+                                            text="Tooltip"
+                                            type="button"
+                                          >
+                                            <button
+                                              aria-describedby="tooltip-19-content"
+                                              aria-owns="tooltip-19-content"
+                                              className="emotion-2"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onMouseEnter={[Function]}
+                                              onMouseLeave={[Function]}
+                                              role="button"
+                                              tabIndex={0}
+                                              type="button"
                                             >
-                                              <Styled(span)
-                                                size="large"
-                                              >
+                                              <Styled(span)>
                                                 <span
-                                                  className="emotion-0"
+                                                  className="emotion-1"
                                                 >
-                                                  Tooltip
+                                                  <Styled(span)
+                                                    size="large"
+                                                  >
+                                                    <span
+                                                      className="emotion-0"
+                                                    >
+                                                      Tooltip
+                                                    </span>
+                                                  </Styled(span)>
                                                 </span>
                                               </Styled(span)>
-                                            </span>
-                                          </Styled(span)>
-                                        </button>
-                                      </Button>
-                                    </Button>
-                                  </span>
+                                            </button>
+                                          </Button>
+                                        </Button>
+                                      </span>
+                                    </PopoverTrigger>
+                                  </PopoverTrigger>
                                 </PopoverTrigger>
-                              </PopoverTrigger>
-                            </PopoverTrigger>
-                          </span>
+                              </span>
+                            </Popover>
+                          </Popover>
                         </Popover>
-                      </Popover>
-                    </Popover>
-                  </ThemeProvider>
+                      </ThemeProvider>
+                    </DocumentFontSizeProvider>
+                    <EventListener
+                      listeners={
+                        Array [
+                          Object {
+                            "event": "DOMContentLoaded",
+                            "handler": [Function],
+                            "target": "document",
+                          },
+                        ]
+                      }
+                    />
+                  </Fragment>
                 </ThemeProvider>
               </Themed(Popover)>
             </WithTheme(Themed(Popover))>
@@ -1115,18 +1130,18 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                                       </Styled(span)>
                                       <IconArrowDropDown
                                         key="iconEnd"
-                                        size="1.5em"
+                                        size="1.5rem"
                                       >
                                         <Icon
                                           rtl={false}
-                                          size="1.5em"
+                                          size="1.5rem"
                                         >
                                           <Styled(svg)
                                             aria-hidden={true}
                                             focusable="false"
                                             role="img"
                                             rtl={false}
-                                            size="1.5em"
+                                            size="1.5rem"
                                             viewBox="0 0 24 24"
                                           >
                                             <svg
@@ -1171,7 +1186,7 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -1283,23 +1298,23 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -1352,11 +1367,11 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-5 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-5 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-5 [role="img"]:only-child {
@@ -1388,16 +1403,16 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-13[class] > *:not(:last-child) {
@@ -1408,23 +1423,23 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #3272d9;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -1475,11 +1490,11 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -1490,23 +1505,23 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: transparent;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 1.5em;
+  height: 1.5rem;
   margin: 0;
-  min-width: 1.5em;
-  padding: 0 0.5em;
+  min-width: 1.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -1556,11 +1571,11 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
 }
 
 .emotion-12 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-12 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-12 [role="img"]:only-child {
@@ -1574,8 +1589,8 @@ exports[`ButtonGroup demo examples Snapshots: controlled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.75em;
-  line-height: 2em;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
 
 <Component>
@@ -1799,7 +1814,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -1911,23 +1926,23 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -1980,11 +1995,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-15 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-15 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-15 [role="img"]:only-child {
@@ -2016,16 +2031,16 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-40[class] > *:not(:last-child) {
@@ -2036,23 +2051,23 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #3272d9;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -2103,11 +2118,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-32 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-32 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-32 [role="img"]:only-child {
@@ -2118,23 +2133,23 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #afbacc;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ebeff5;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: default;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -2182,11 +2197,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -2197,23 +2212,23 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #afbacc;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ebeff5;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: default;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -2261,11 +2276,11 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 }
 
 .emotion-22 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-22 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-22 [role="img"]:only-child {
@@ -2907,7 +2922,7 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -3019,23 +3034,23 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3088,11 +3103,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-7 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-7 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-7 [role="img"]:only-child {
@@ -3124,16 +3139,16 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-1:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-1:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-33[class] > *:not(:last-child) {
@@ -3144,23 +3159,23 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #3272d9;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3211,11 +3226,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-3 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-3 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-3 [role="img"]:only-child {
@@ -3224,32 +3239,32 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 
 .emotion-0 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .emotion-15 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0.4375em;
+  min-width: 2.5rem;
+  padding: 0.4375rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3302,11 +3317,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-15 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-15 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-15 [role="img"]:only-child {
@@ -3317,23 +3332,23 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #2a854e;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0.4375em;
+  min-width: 2.5rem;
+  padding: 0.4375rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3386,11 +3401,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-25 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-25 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-25 [role="img"]:only-child {
@@ -3401,23 +3416,23 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #ad5f00;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0.4375em;
+  min-width: 2.5rem;
+  padding: 0.4375rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3470,11 +3485,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-28 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-28 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-28 [role="img"]:only-child {
@@ -3485,23 +3500,23 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
   box-sizing: border-box;
   color: #de1b1b;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0.4375em;
+  min-width: 2.5rem;
+  padding: 0.4375rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -3554,11 +3569,11 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
 }
 
 .emotion-31 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-31 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-31 [role="img"]:only-child {
@@ -3626,18 +3641,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatAlignLeft
                         key="iconStart"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -3705,18 +3720,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatAlignCenter
                         key="iconStart"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -3784,18 +3799,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatAlignRight
                         key="iconStart"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -3882,18 +3897,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatBold
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -3954,18 +3969,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatItalic
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -4026,18 +4041,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconFormatUnderlined
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -4120,18 +4135,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconSentimentSatisfied
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -4207,18 +4222,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconSentimentNeutral
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -4297,18 +4312,18 @@ exports[`ButtonGroup demo examples Snapshots: icons 1`] = `
                     >
                       <IconSentimentDissatisfied
                         key="iconEnd"
-                        size="1.5em"
+                        size="1.5rem"
                       >
                         <Icon
                           rtl={false}
-                          size="1.5em"
+                          size="1.5rem"
                         >
                           <Styled(svg)
                             aria-hidden={true}
                             focusable="false"
                             role="img"
                             rtl={false}
-                            size="1.5em"
+                            size="1.5rem"
                             viewBox="0 0 24 24"
                           >
                             <svg
@@ -4355,7 +4370,7 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -4467,23 +4482,23 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -4536,11 +4551,11 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
 }
 
 .emotion-5 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-5 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-5 [role="img"]:only-child {
@@ -4572,16 +4587,16 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-20[class] > *:not(:last-child) {
@@ -4592,23 +4607,23 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #3272d9;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -4659,11 +4674,11 @@ exports[`ButtonGroup demo examples Snapshots: mode 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -5040,16 +5055,16 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
 
 .emotion-1 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .emotion-12 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -5161,23 +5176,23 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -5230,11 +5245,11 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
 }
 
 .emotion-3 [role="img"]:first-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-3 [role="img"]:last-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-3 [role="img"]:only-child {
@@ -5248,278 +5263,293 @@ exports[`ButtonGroup demo examples Snapshots: rtl 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 <div
   dir="rtl"
 >
   <ThemeProvider>
-    <ThemeProvider>
-      <ButtonGroup
-        aria-label="Format text"
-        mode="checkbox"
-      >
-        <ButtonGroup
-          aria-label="Format text"
-          mode="checkbox"
-          role="group"
-        >
-          <div
+    <Fragment>
+      <DocumentFontSizeProvider>
+        <ThemeProvider>
+          <ButtonGroup
             aria-label="Format text"
-            className="emotion-12"
-            role="group"
+            mode="checkbox"
           >
-            <Button
-              aria-checked={false}
-              data-index={0}
-              element="button"
-              iconEnd={<IconFormatBold />}
-              key="0/.0"
-              onClick={[Function]}
-              role="checkbox"
-              size="large"
-              type="button"
+            <ButtonGroup
+              aria-label="Format text"
+              mode="checkbox"
+              role="group"
             >
-              <Button
-                aria-checked={false}
-                data-index={0}
-                element="button"
-                onClick={[Function]}
-                role="checkbox"
-                size="large"
-                text="بالخط العريض"
-                type="button"
+              <div
+                aria-label="Format text"
+                className="emotion-12"
+                role="group"
               >
-                <button
+                <Button
                   aria-checked={false}
-                  className="emotion-3"
                   data-index={0}
+                  element="button"
+                  iconEnd={<IconFormatBold />}
+                  key="0/.0"
                   onClick={[Function]}
                   role="checkbox"
+                  size="large"
                   type="button"
                 >
-                  <Styled(span)>
-                    <span
-                      className="emotion-2"
+                  <Button
+                    aria-checked={false}
+                    data-index={0}
+                    element="button"
+                    onClick={[Function]}
+                    role="checkbox"
+                    size="large"
+                    text="بالخط العريض"
+                    type="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      className="emotion-3"
+                      data-index={0}
+                      onClick={[Function]}
+                      role="checkbox"
+                      type="button"
                     >
-                      <Styled(span)
-                        size="large"
-                      >
+                      <Styled(span)>
                         <span
-                          className="emotion-0"
+                          className="emotion-2"
                         >
-                          بالخط العريض
+                          <Styled(span)
+                            size="large"
+                          >
+                            <span
+                              className="emotion-0"
+                            >
+                              بالخط العريض
+                            </span>
+                          </Styled(span)>
+                          <IconFormatBold
+                            key="iconEnd"
+                            size="1.5rem"
+                          >
+                            <Icon
+                              rtl={false}
+                              size="1.5rem"
+                            >
+                              <Styled(svg)
+                                aria-hidden={true}
+                                focusable="false"
+                                role="img"
+                                rtl={false}
+                                size="1.5rem"
+                                viewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-1"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconFormatBold>
                         </span>
                       </Styled(span)>
-                      <IconFormatBold
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-1"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconFormatBold>
-                    </span>
-                  </Styled(span)>
-                </button>
-              </Button>
-            </Button>
-            <Button
-              aria-checked={false}
-              data-index={1}
-              element="button"
-              iconEnd={<IconFormatItalic />}
-              key="1/.1"
-              onClick={[Function]}
-              role="checkbox"
-              size="large"
-              type="button"
-            >
-              <Button
-                aria-checked={false}
-                data-index={1}
-                element="button"
-                onClick={[Function]}
-                role="checkbox"
-                size="large"
-                text="مائل"
-                type="button"
-              >
-                <button
+                    </button>
+                  </Button>
+                </Button>
+                <Button
                   aria-checked={false}
-                  className="emotion-3"
                   data-index={1}
+                  element="button"
+                  iconEnd={<IconFormatItalic />}
+                  key="1/.1"
                   onClick={[Function]}
                   role="checkbox"
+                  size="large"
                   type="button"
                 >
-                  <Styled(span)>
-                    <span
-                      className="emotion-2"
+                  <Button
+                    aria-checked={false}
+                    data-index={1}
+                    element="button"
+                    onClick={[Function]}
+                    role="checkbox"
+                    size="large"
+                    text="مائل"
+                    type="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      className="emotion-3"
+                      data-index={1}
+                      onClick={[Function]}
+                      role="checkbox"
+                      type="button"
                     >
-                      <Styled(span)
-                        size="large"
-                      >
+                      <Styled(span)>
                         <span
-                          className="emotion-0"
+                          className="emotion-2"
                         >
-                          مائل
+                          <Styled(span)
+                            size="large"
+                          >
+                            <span
+                              className="emotion-0"
+                            >
+                              مائل
+                            </span>
+                          </Styled(span)>
+                          <IconFormatItalic
+                            key="iconEnd"
+                            size="1.5rem"
+                          >
+                            <Icon
+                              rtl={false}
+                              size="1.5rem"
+                            >
+                              <Styled(svg)
+                                aria-hidden={true}
+                                focusable="false"
+                                role="img"
+                                rtl={false}
+                                size="1.5rem"
+                                viewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-1"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconFormatItalic>
                         </span>
                       </Styled(span)>
-                      <IconFormatItalic
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-1"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconFormatItalic>
-                    </span>
-                  </Styled(span)>
-                </button>
-              </Button>
-            </Button>
-            <Button
-              aria-checked={false}
-              data-index={2}
-              element="button"
-              iconEnd={<IconFormatUnderlined />}
-              key="2/.2"
-              onClick={[Function]}
-              role="checkbox"
-              size="large"
-              type="button"
-            >
-              <Button
-                aria-checked={false}
-                data-index={2}
-                element="button"
-                onClick={[Function]}
-                role="checkbox"
-                size="large"
-                text="أكد"
-                type="button"
-              >
-                <button
+                    </button>
+                  </Button>
+                </Button>
+                <Button
                   aria-checked={false}
-                  className="emotion-3"
                   data-index={2}
+                  element="button"
+                  iconEnd={<IconFormatUnderlined />}
+                  key="2/.2"
                   onClick={[Function]}
                   role="checkbox"
+                  size="large"
                   type="button"
                 >
-                  <Styled(span)>
-                    <span
-                      className="emotion-2"
+                  <Button
+                    aria-checked={false}
+                    data-index={2}
+                    element="button"
+                    onClick={[Function]}
+                    role="checkbox"
+                    size="large"
+                    text="أكد"
+                    type="button"
+                  >
+                    <button
+                      aria-checked={false}
+                      className="emotion-3"
+                      data-index={2}
+                      onClick={[Function]}
+                      role="checkbox"
+                      type="button"
                     >
-                      <Styled(span)
-                        size="large"
-                      >
+                      <Styled(span)>
                         <span
-                          className="emotion-0"
+                          className="emotion-2"
                         >
-                          أكد
+                          <Styled(span)
+                            size="large"
+                          >
+                            <span
+                              className="emotion-0"
+                            >
+                              أكد
+                            </span>
+                          </Styled(span)>
+                          <IconFormatUnderlined
+                            key="iconEnd"
+                            size="1.5rem"
+                          >
+                            <Icon
+                              rtl={false}
+                              size="1.5rem"
+                            >
+                              <Styled(svg)
+                                aria-hidden={true}
+                                focusable="false"
+                                role="img"
+                                rtl={false}
+                                size="1.5rem"
+                                viewBox="0 0 24 24"
+                              >
+                                <svg
+                                  aria-hidden={true}
+                                  className="emotion-1"
+                                  focusable="false"
+                                  role="img"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <g>
+                                    <path
+                                      d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z"
+                                    />
+                                  </g>
+                                </svg>
+                              </Styled(svg)>
+                            </Icon>
+                          </IconFormatUnderlined>
                         </span>
                       </Styled(span)>
-                      <IconFormatUnderlined
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-1"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconFormatUnderlined>
-                    </span>
-                  </Styled(span)>
-                </button>
-              </Button>
-            </Button>
-          </div>
-        </ButtonGroup>
-      </ButtonGroup>
-    </ThemeProvider>
+                    </button>
+                  </Button>
+                </Button>
+              </div>
+            </ButtonGroup>
+          </ButtonGroup>
+        </ThemeProvider>
+      </DocumentFontSizeProvider>
+      <EventListener
+        listeners={
+          Array [
+            Object {
+              "event": "DOMContentLoaded",
+              "handler": [Function],
+              "target": "document",
+            },
+          ]
+        }
+      />
+    </Fragment>
   </ThemeProvider>
 </div>
 `;
@@ -5529,7 +5559,7 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -5641,23 +5671,23 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -5710,11 +5740,11 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-22 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-22 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-22 [role="img"]:only-child {
@@ -5746,16 +5776,16 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-20:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-20:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-50[class] > *:not(:last-child) {
@@ -5769,31 +5799,31 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.75em;
-  line-height: 2em;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 1.5em;
+  height: 1.5rem;
   margin: 0;
-  min-width: 1.5em;
-  padding: 0 0.5em;
+  min-width: 1.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -5846,11 +5876,11 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -5861,23 +5891,23 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2em;
+  height: 2rem;
   margin: 0;
-  min-width: 2em;
-  padding: 0 0.5em;
+  min-width: 2rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -5930,11 +5960,11 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-12 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-12 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-12 [role="img"]:only-child {
@@ -5948,31 +5978,31 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.2857142857142856em;
+  font-size: 0.875rem;
+  line-height: 2rem;
 }
 
 .emotion-32 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 3.25em;
+  height: 3.25rem;
   margin: 0;
-  min-width: 3.25em;
-  padding: 0 0.5em;
+  min-width: 3.25rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -6025,11 +6055,11 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
 }
 
 .emotion-32 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-32 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-32 [role="img"]:only-child {
@@ -6043,23 +6073,23 @@ exports[`ButtonGroup demo examples Snapshots: sizes 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 3.7142857142857144em;
+  font-size: 0.875rem;
+  line-height: 3.25rem;
 }
 
 .emotion-30:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-30:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-49 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -6878,7 +6908,7 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -6990,23 +7020,23 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -7059,11 +7089,11 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 }
 
 .emotion-5 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-5 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-5 [role="img"]:only-child {
@@ -7095,39 +7125,39 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-2 {
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #3272d9;
   border-color: transparent;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -7178,11 +7208,11 @@ exports[`ButtonGroup demo examples Snapshots: uncontrolled 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -7377,16 +7407,16 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
-  font-size: 0.875em;
-  line-height: 2.857142857142857em;
+  font-size: 0.875rem;
+  line-height: 2.5rem;
 }
 
 .emotion-0:first-child {
-  padding-left: 0.5714285714285714em;
+  padding-left: 0.5rem;
 }
 
 .emotion-0:last-child {
-  padding-right: 0.5714285714285714em;
+  padding-right: 0.5rem;
 }
 
 .emotion-21[class] > *:not(:last-child) {
@@ -7397,7 +7427,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -7509,23 +7539,23 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #2a854e;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -7578,11 +7608,11 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-2 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-2 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-2 [role="img"]:only-child {
@@ -7593,7 +7623,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -7705,23 +7735,23 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #ad5f00;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -7774,11 +7804,11 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-9 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-9 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-9 [role="img"]:only-child {
@@ -7789,7 +7819,7 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -7901,23 +7931,23 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
   box-sizing: border-box;
   color: #de1b1b;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  height: 2.5em;
+  height: 2.5rem;
   margin: 0;
-  min-width: 2.5em;
-  padding: 0 0.5em;
+  min-width: 2.5rem;
+  padding: 0 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   vertical-align: middle;
@@ -7970,11 +8000,11 @@ exports[`ButtonGroup demo examples Snapshots: variants 1`] = `
 }
 
 .emotion-16 [role="img"]:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 
 .emotion-16 [role="img"]:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
 }
 
 .emotion-16 [role="img"]:only-child {

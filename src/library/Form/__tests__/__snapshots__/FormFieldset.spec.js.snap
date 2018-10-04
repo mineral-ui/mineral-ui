@@ -5,7 +5,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -23,11 +23,11 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
 
 .emotion-19 > legend {
   color: #333840;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 2rem;
   padding: 0;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 .emotion-18[class] > *:not(:last-child) {
@@ -38,7 +38,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -57,13 +57,13 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 600;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .emotion-0 > * {
@@ -92,7 +92,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-4 [role="img"]:last-of-type {
@@ -103,7 +103,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -148,7 +148,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-3 [role="img"]:last-of-type {
@@ -163,15 +163,15 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
-  height: 2.857142857142857em;
+  height: 2.5rem;
   min-width: 0;
   width: 100%;
   color: #333840;
   -webkit-text-fill-color: #333840;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 1.1428571428571428em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .emotion-1[type="search"] {
@@ -230,7 +230,7 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
 .emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   bottom: 0;
@@ -336,63 +336,78 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
                             size="large"
                           >
                             <ThemeProvider>
-                              <ThemeProvider>
-                                <FauxControl
-                                  className="emotion-4"
-                                  control={[Function]}
-                                  controlProps={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "email",
-                                    }
-                                  }
-                                  size="large"
-                                >
-                                  <FauxControl
-                                    className="emotion-4"
-                                    control={[Function]}
-                                  >
-                                    <div
-                                      className="emotion-3"
-                                    >
-                                      <Control
-                                        controlPropsIn={
-                                          Object {
-                                            "aria-describedby": undefined,
-                                            "aria-invalid": undefined,
-                                            "aria-required": undefined,
-                                            "controlRef": undefined,
-                                            "disabled": undefined,
-                                            "readOnly": undefined,
-                                            "required": undefined,
-                                            "type": "email",
-                                          }
+                              <Fragment>
+                                <DocumentFontSizeProvider>
+                                  <ThemeProvider>
+                                    <FauxControl
+                                      className="emotion-4"
+                                      control={[Function]}
+                                      controlProps={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "email",
                                         }
-                                        key="control"
-                                        size="large"
-                                        type="email"
+                                      }
+                                      size="large"
+                                    >
+                                      <FauxControl
+                                        className="emotion-4"
+                                        control={[Function]}
                                       >
-                                        <input
-                                          className="emotion-1"
-                                          size="large"
-                                          type="email"
-                                        />
-                                      </Control>
-                                      <Underlay>
                                         <div
-                                          className="emotion-2"
-                                        />
-                                      </Underlay>
-                                    </div>
-                                  </FauxControl>
-                                </FauxControl>
-                              </ThemeProvider>
+                                          className="emotion-3"
+                                        >
+                                          <Control
+                                            controlPropsIn={
+                                              Object {
+                                                "aria-describedby": undefined,
+                                                "aria-invalid": undefined,
+                                                "aria-required": undefined,
+                                                "controlRef": undefined,
+                                                "disabled": undefined,
+                                                "readOnly": undefined,
+                                                "required": undefined,
+                                                "type": "email",
+                                              }
+                                            }
+                                            key="control"
+                                            size="large"
+                                            type="email"
+                                          >
+                                            <input
+                                              className="emotion-1"
+                                              size="large"
+                                              type="email"
+                                            />
+                                          </Control>
+                                          <Underlay>
+                                            <div
+                                              className="emotion-2"
+                                            />
+                                          </Underlay>
+                                        </div>
+                                      </FauxControl>
+                                    </FauxControl>
+                                  </ThemeProvider>
+                                </DocumentFontSizeProvider>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "DOMContentLoaded",
+                                        "handler": [Function],
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Fragment>
                             </ThemeProvider>
                           </Themed(FauxControl)>
                         </TextInput>
@@ -480,63 +495,78 @@ exports[`FormFieldset demo examples Snapshots: basic 1`] = `
                             size="large"
                           >
                             <ThemeProvider>
-                              <ThemeProvider>
-                                <FauxControl
-                                  className="emotion-4"
-                                  control={[Function]}
-                                  controlProps={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "password",
-                                    }
-                                  }
-                                  size="large"
-                                >
-                                  <FauxControl
-                                    className="emotion-4"
-                                    control={[Function]}
-                                  >
-                                    <div
-                                      className="emotion-3"
-                                    >
-                                      <Control
-                                        controlPropsIn={
-                                          Object {
-                                            "aria-describedby": undefined,
-                                            "aria-invalid": undefined,
-                                            "aria-required": undefined,
-                                            "controlRef": undefined,
-                                            "disabled": undefined,
-                                            "readOnly": undefined,
-                                            "required": undefined,
-                                            "type": "password",
-                                          }
+                              <Fragment>
+                                <DocumentFontSizeProvider>
+                                  <ThemeProvider>
+                                    <FauxControl
+                                      className="emotion-4"
+                                      control={[Function]}
+                                      controlProps={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "password",
                                         }
-                                        key="control"
-                                        size="large"
-                                        type="password"
+                                      }
+                                      size="large"
+                                    >
+                                      <FauxControl
+                                        className="emotion-4"
+                                        control={[Function]}
                                       >
-                                        <input
-                                          className="emotion-1"
-                                          size="large"
-                                          type="password"
-                                        />
-                                      </Control>
-                                      <Underlay>
                                         <div
-                                          className="emotion-2"
-                                        />
-                                      </Underlay>
-                                    </div>
-                                  </FauxControl>
-                                </FauxControl>
-                              </ThemeProvider>
+                                          className="emotion-3"
+                                        >
+                                          <Control
+                                            controlPropsIn={
+                                              Object {
+                                                "aria-describedby": undefined,
+                                                "aria-invalid": undefined,
+                                                "aria-required": undefined,
+                                                "controlRef": undefined,
+                                                "disabled": undefined,
+                                                "readOnly": undefined,
+                                                "required": undefined,
+                                                "type": "password",
+                                              }
+                                            }
+                                            key="control"
+                                            size="large"
+                                            type="password"
+                                          >
+                                            <input
+                                              className="emotion-1"
+                                              size="large"
+                                              type="password"
+                                            />
+                                          </Control>
+                                          <Underlay>
+                                            <div
+                                              className="emotion-2"
+                                            />
+                                          </Underlay>
+                                        </div>
+                                      </FauxControl>
+                                    </FauxControl>
+                                  </ThemeProvider>
+                                </DocumentFontSizeProvider>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "DOMContentLoaded",
+                                        "handler": [Function],
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Fragment>
                             </ThemeProvider>
                           </Themed(FauxControl)>
                         </TextInput>
@@ -563,7 +593,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -582,13 +612,13 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 600;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .emotion-0 > * {
@@ -617,7 +647,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-4 [role="img"]:last-of-type {
@@ -628,7 +658,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -646,18 +676,18 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
 
 .emotion-19 > legend {
   color: #afbacc;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 2rem;
   padding: 0;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 .emotion-3 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -693,7 +723,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-3 [role="img"]:last-of-type {
@@ -708,15 +738,15 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
-  height: 2.857142857142857em;
+  height: 2.5rem;
   min-width: 0;
   width: 100%;
   color: #afbacc;
   -webkit-text-fill-color: #afbacc;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 1.1428571428571428em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .emotion-1[type="search"] {
@@ -775,7 +805,7 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
 .emotion-2 {
   background-color: #ebeff5;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   bottom: 0;
@@ -889,69 +919,84 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
                             size="large"
                           >
                             <ThemeProvider>
-                              <ThemeProvider>
-                                <FauxControl
-                                  className="emotion-4"
-                                  control={[Function]}
-                                  controlProps={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": true,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "email",
-                                    }
-                                  }
-                                  disabled={true}
-                                  size="large"
-                                >
-                                  <FauxControl
-                                    className="emotion-4"
-                                    control={[Function]}
-                                    disabled={true}
-                                  >
-                                    <div
-                                      className="emotion-3"
-                                    >
-                                      <Control
-                                        controlPropsIn={
-                                          Object {
-                                            "aria-describedby": undefined,
-                                            "aria-invalid": undefined,
-                                            "aria-required": undefined,
-                                            "controlRef": undefined,
-                                            "disabled": true,
-                                            "readOnly": undefined,
-                                            "required": undefined,
-                                            "type": "email",
-                                          }
+                              <Fragment>
+                                <DocumentFontSizeProvider>
+                                  <ThemeProvider>
+                                    <FauxControl
+                                      className="emotion-4"
+                                      control={[Function]}
+                                      controlProps={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": true,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "email",
                                         }
-                                        disabled={true}
-                                        key="control"
-                                        size="large"
-                                        type="email"
-                                      >
-                                        <input
-                                          className="emotion-1"
-                                          disabled={true}
-                                          size="large"
-                                          type="email"
-                                        />
-                                      </Control>
-                                      <Underlay
+                                      }
+                                      disabled={true}
+                                      size="large"
+                                    >
+                                      <FauxControl
+                                        className="emotion-4"
+                                        control={[Function]}
                                         disabled={true}
                                       >
                                         <div
-                                          className="emotion-2"
-                                        />
-                                      </Underlay>
-                                    </div>
-                                  </FauxControl>
-                                </FauxControl>
-                              </ThemeProvider>
+                                          className="emotion-3"
+                                        >
+                                          <Control
+                                            controlPropsIn={
+                                              Object {
+                                                "aria-describedby": undefined,
+                                                "aria-invalid": undefined,
+                                                "aria-required": undefined,
+                                                "controlRef": undefined,
+                                                "disabled": true,
+                                                "readOnly": undefined,
+                                                "required": undefined,
+                                                "type": "email",
+                                              }
+                                            }
+                                            disabled={true}
+                                            key="control"
+                                            size="large"
+                                            type="email"
+                                          >
+                                            <input
+                                              className="emotion-1"
+                                              disabled={true}
+                                              size="large"
+                                              type="email"
+                                            />
+                                          </Control>
+                                          <Underlay
+                                            disabled={true}
+                                          >
+                                            <div
+                                              className="emotion-2"
+                                            />
+                                          </Underlay>
+                                        </div>
+                                      </FauxControl>
+                                    </FauxControl>
+                                  </ThemeProvider>
+                                </DocumentFontSizeProvider>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "DOMContentLoaded",
+                                        "handler": [Function],
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Fragment>
                             </ThemeProvider>
                           </Themed(FauxControl)>
                         </TextInput>
@@ -1043,69 +1088,84 @@ exports[`FormFieldset demo examples Snapshots: disabled 1`] = `
                             size="large"
                           >
                             <ThemeProvider>
-                              <ThemeProvider>
-                                <FauxControl
-                                  className="emotion-4"
-                                  control={[Function]}
-                                  controlProps={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": true,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "password",
-                                    }
-                                  }
-                                  disabled={true}
-                                  size="large"
-                                >
-                                  <FauxControl
-                                    className="emotion-4"
-                                    control={[Function]}
-                                    disabled={true}
-                                  >
-                                    <div
-                                      className="emotion-3"
-                                    >
-                                      <Control
-                                        controlPropsIn={
-                                          Object {
-                                            "aria-describedby": undefined,
-                                            "aria-invalid": undefined,
-                                            "aria-required": undefined,
-                                            "controlRef": undefined,
-                                            "disabled": true,
-                                            "readOnly": undefined,
-                                            "required": undefined,
-                                            "type": "password",
-                                          }
+                              <Fragment>
+                                <DocumentFontSizeProvider>
+                                  <ThemeProvider>
+                                    <FauxControl
+                                      className="emotion-4"
+                                      control={[Function]}
+                                      controlProps={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": true,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "password",
                                         }
-                                        disabled={true}
-                                        key="control"
-                                        size="large"
-                                        type="password"
-                                      >
-                                        <input
-                                          className="emotion-1"
-                                          disabled={true}
-                                          size="large"
-                                          type="password"
-                                        />
-                                      </Control>
-                                      <Underlay
+                                      }
+                                      disabled={true}
+                                      size="large"
+                                    >
+                                      <FauxControl
+                                        className="emotion-4"
+                                        control={[Function]}
                                         disabled={true}
                                       >
                                         <div
-                                          className="emotion-2"
-                                        />
-                                      </Underlay>
-                                    </div>
-                                  </FauxControl>
-                                </FauxControl>
-                              </ThemeProvider>
+                                          className="emotion-3"
+                                        >
+                                          <Control
+                                            controlPropsIn={
+                                              Object {
+                                                "aria-describedby": undefined,
+                                                "aria-invalid": undefined,
+                                                "aria-required": undefined,
+                                                "controlRef": undefined,
+                                                "disabled": true,
+                                                "readOnly": undefined,
+                                                "required": undefined,
+                                                "type": "password",
+                                              }
+                                            }
+                                            disabled={true}
+                                            key="control"
+                                            size="large"
+                                            type="password"
+                                          >
+                                            <input
+                                              className="emotion-1"
+                                              disabled={true}
+                                              size="large"
+                                              type="password"
+                                            />
+                                          </Control>
+                                          <Underlay
+                                            disabled={true}
+                                          >
+                                            <div
+                                              className="emotion-2"
+                                            />
+                                          </Underlay>
+                                        </div>
+                                      </FauxControl>
+                                    </FauxControl>
+                                  </ThemeProvider>
+                                </DocumentFontSizeProvider>
+                                <EventListener
+                                  listeners={
+                                    Array [
+                                      Object {
+                                        "event": "DOMContentLoaded",
+                                        "handler": [Function],
+                                        "target": "document",
+                                      },
+                                    ]
+                                  }
+                                />
+                              </Fragment>
                             </ThemeProvider>
                           </Themed(FauxControl)>
                         </TextInput>
@@ -1128,7 +1188,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -1147,13 +1207,13 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 600;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .emotion-0 > * {
@@ -1182,7 +1242,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-5 [role="img"]:last-of-type {
@@ -1193,7 +1253,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -1238,7 +1298,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-4 [role="img"]:last-of-type {
@@ -1248,7 +1308,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
 .emotion-3 {
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   bottom: 0;
@@ -1263,7 +1323,7 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -1281,21 +1341,21 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
 
 .emotion-10 > legend {
   color: #333840;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 2rem;
   padding: 0;
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
 }
 
 .emotion-1 {
   fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
+  font-size: 1rem;
+  height: 1.5rem;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
-  width: 1.5em;
+  width: 1.5rem;
 }
 
 .emotion-2 {
@@ -1306,14 +1366,14 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
-  height: 2.857142857142857em;
+  height: 2.5rem;
   min-width: 0;
   width: 100%;
   color: #333840;
   -webkit-text-fill-color: #333840;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   outline: 0;
-  padding-left: 1.1428571428571428em;
+  padding-left: 1rem;
   padding-right: 0;
 }
 
@@ -1374,85 +1434,49 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
   dir="rtl"
 >
   <ThemeProvider>
-    <ThemeProvider>
-      <FormFieldset
-        legend="أسطورة"
-      >
-        <FormFieldset>
-          <fieldset
-            className="emotion-10"
+    <Fragment>
+      <DocumentFontSizeProvider>
+        <ThemeProvider>
+          <FormFieldset
+            legend="أسطورة"
           >
-            <legend>
-              أسطورة
-            </legend>
-            <FormField
-              label="مرحبا بالعالم"
-              requiredText="Required"
-            >
-              <FormField>
-                <div
-                  className="emotion-9"
+            <FormFieldset>
+              <fieldset
+                className="emotion-10"
+              >
+                <legend>
+                  أسطورة
+                </legend>
+                <FormField
+                  label="مرحبا بالعالم"
+                  requiredText="Required"
                 >
-                  <label>
-                    <Styled(div)
-                      key="formField-9-textWrapper"
+                  <FormField>
+                    <div
+                      className="emotion-9"
                     >
-                      <div
-                        className="emotion-0"
-                      >
-                        <span
-                          id="formField-9-labelText"
+                      <label>
+                        <Styled(div)
+                          key="formField-9-textWrapper"
                         >
-                          مرحبا بالعالم
-                        </span>
-                      </div>
-                    </Styled(div)>
-                    <TextInput
-                      defaultValue="مرحبا بالعالم"
-                      iconStart={<IconBackspace />}
-                      key="formField-9-control"
-                      size="large"
-                      type="text"
-                    >
-                      <TextInput
-                        control={[Function]}
-                        controlProps={
-                          Object {
-                            "aria-describedby": undefined,
-                            "aria-invalid": undefined,
-                            "aria-required": undefined,
-                            "controlRef": undefined,
-                            "defaultValue": "مرحبا بالعالم",
-                            "disabled": undefined,
-                            "readOnly": undefined,
-                            "required": undefined,
-                            "type": "text",
-                          }
-                        }
-                        iconStart={<IconBackspace />}
-                        size="large"
-                      >
+                          <div
+                            className="emotion-0"
+                          >
+                            <span
+                              id="formField-9-labelText"
+                            >
+                              مرحبا بالعالم
+                            </span>
+                          </div>
+                        </Styled(div)>
                         <TextInput
-                          className="emotion-5"
-                          control={[Function]}
-                          controlProps={
-                            Object {
-                              "aria-describedby": undefined,
-                              "aria-invalid": undefined,
-                              "aria-required": undefined,
-                              "controlRef": undefined,
-                              "defaultValue": "مرحبا بالعالم",
-                              "disabled": undefined,
-                              "readOnly": undefined,
-                              "required": undefined,
-                              "type": "text",
-                            }
-                          }
+                          defaultValue="مرحبا بالعالم"
                           iconStart={<IconBackspace />}
+                          key="formField-9-control"
                           size="large"
+                          type="text"
                         >
-                          <Themed(FauxControl)
-                            className="emotion-5"
+                          <TextInput
                             control={[Function]}
                             controlProps={
                               Object {
@@ -1470,115 +1494,181 @@ exports[`FormFieldset demo examples Snapshots: rtl 1`] = `
                             iconStart={<IconBackspace />}
                             size="large"
                           >
-                            <ThemeProvider>
-                              <ThemeProvider>
-                                <FauxControl
-                                  className="emotion-5"
-                                  control={[Function]}
-                                  controlProps={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "defaultValue": "مرحبا بالعالم",
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "text",
-                                    }
+                            <TextInput
+                              className="emotion-5"
+                              control={[Function]}
+                              controlProps={
+                                Object {
+                                  "aria-describedby": undefined,
+                                  "aria-invalid": undefined,
+                                  "aria-required": undefined,
+                                  "controlRef": undefined,
+                                  "defaultValue": "مرحبا بالعالم",
+                                  "disabled": undefined,
+                                  "readOnly": undefined,
+                                  "required": undefined,
+                                  "type": "text",
+                                }
+                              }
+                              iconStart={<IconBackspace />}
+                              size="large"
+                            >
+                              <Themed(FauxControl)
+                                className="emotion-5"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "defaultValue": "مرحبا بالعالم",
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "text",
                                   }
-                                  iconStart={<IconBackspace />}
-                                  size="large"
-                                >
-                                  <FauxControl
-                                    className="emotion-5"
-                                    control={[Function]}
-                                  >
-                                    <div
-                                      className="emotion-4"
-                                    >
-                                      <IconBackspace
-                                        key="iconStart"
-                                        size="1.5em"
-                                      >
-                                        <Icon
-                                          rtl={true}
-                                          size="1.5em"
-                                        >
-                                          <Styled(svg)
-                                            aria-hidden={true}
-                                            focusable="false"
-                                            role="img"
-                                            rtl={true}
-                                            size="1.5em"
-                                            viewBox="0 0 24 24"
-                                          >
-                                            <svg
-                                              aria-hidden={true}
-                                              className="emotion-1"
-                                              focusable="false"
-                                              role="img"
-                                              viewBox="0 0 24 24"
-                                            >
-                                              <g>
-                                                <path
-                                                  d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
-                                                />
-                                              </g>
-                                            </svg>
-                                          </Styled(svg)>
-                                        </Icon>
-                                      </IconBackspace>
-                                      <Control
-                                        controlPropsIn={
-                                          Object {
-                                            "aria-describedby": undefined,
-                                            "aria-invalid": undefined,
-                                            "aria-required": undefined,
-                                            "controlRef": undefined,
-                                            "defaultValue": "مرحبا بالعالم",
-                                            "disabled": undefined,
-                                            "readOnly": undefined,
-                                            "required": undefined,
-                                            "type": "text",
+                                }
+                                iconStart={<IconBackspace />}
+                                size="large"
+                              >
+                                <ThemeProvider>
+                                  <Fragment>
+                                    <DocumentFontSizeProvider>
+                                      <ThemeProvider>
+                                        <FauxControl
+                                          className="emotion-5"
+                                          control={[Function]}
+                                          controlProps={
+                                            Object {
+                                              "aria-describedby": undefined,
+                                              "aria-invalid": undefined,
+                                              "aria-required": undefined,
+                                              "controlRef": undefined,
+                                              "defaultValue": "مرحبا بالعالم",
+                                              "disabled": undefined,
+                                              "readOnly": undefined,
+                                              "required": undefined,
+                                              "type": "text",
+                                            }
                                           }
-                                        }
-                                        defaultValue="مرحبا بالعالم"
-                                        iconStart={<IconBackspace />}
-                                        key="control"
-                                        size="large"
-                                        type="text"
-                                      >
-                                        <input
-                                          className="emotion-2"
-                                          defaultValue="مرحبا بالعالم"
+                                          iconStart={<IconBackspace />}
                                           size="large"
-                                          type="text"
-                                        />
-                                      </Control>
-                                      <Underlay>
-                                        <div
-                                          className="emotion-3"
-                                        />
-                                      </Underlay>
-                                    </div>
-                                  </FauxControl>
-                                </FauxControl>
-                              </ThemeProvider>
-                            </ThemeProvider>
-                          </Themed(FauxControl)>
+                                        >
+                                          <FauxControl
+                                            className="emotion-5"
+                                            control={[Function]}
+                                          >
+                                            <div
+                                              className="emotion-4"
+                                            >
+                                              <IconBackspace
+                                                key="iconStart"
+                                                size="1.5rem"
+                                              >
+                                                <Icon
+                                                  rtl={true}
+                                                  size="1.5rem"
+                                                >
+                                                  <Styled(svg)
+                                                    aria-hidden={true}
+                                                    focusable="false"
+                                                    role="img"
+                                                    rtl={true}
+                                                    size="1.5rem"
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <svg
+                                                      aria-hidden={true}
+                                                      className="emotion-1"
+                                                      focusable="false"
+                                                      role="img"
+                                                      viewBox="0 0 24 24"
+                                                    >
+                                                      <g>
+                                                        <path
+                                                          d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"
+                                                        />
+                                                      </g>
+                                                    </svg>
+                                                  </Styled(svg)>
+                                                </Icon>
+                                              </IconBackspace>
+                                              <Control
+                                                controlPropsIn={
+                                                  Object {
+                                                    "aria-describedby": undefined,
+                                                    "aria-invalid": undefined,
+                                                    "aria-required": undefined,
+                                                    "controlRef": undefined,
+                                                    "defaultValue": "مرحبا بالعالم",
+                                                    "disabled": undefined,
+                                                    "readOnly": undefined,
+                                                    "required": undefined,
+                                                    "type": "text",
+                                                  }
+                                                }
+                                                defaultValue="مرحبا بالعالم"
+                                                iconStart={<IconBackspace />}
+                                                key="control"
+                                                size="large"
+                                                type="text"
+                                              >
+                                                <input
+                                                  className="emotion-2"
+                                                  defaultValue="مرحبا بالعالم"
+                                                  size="large"
+                                                  type="text"
+                                                />
+                                              </Control>
+                                              <Underlay>
+                                                <div
+                                                  className="emotion-3"
+                                                />
+                                              </Underlay>
+                                            </div>
+                                          </FauxControl>
+                                        </FauxControl>
+                                      </ThemeProvider>
+                                    </DocumentFontSizeProvider>
+                                    <EventListener
+                                      listeners={
+                                        Array [
+                                          Object {
+                                            "event": "DOMContentLoaded",
+                                            "handler": [Function],
+                                            "target": "document",
+                                          },
+                                        ]
+                                      }
+                                    />
+                                  </Fragment>
+                                </ThemeProvider>
+                              </Themed(FauxControl)>
+                            </TextInput>
+                          </TextInput>
                         </TextInput>
-                      </TextInput>
-                    </TextInput>
-                  </label>
-                </div>
-              </FormField>
-            </FormField>
-          </fieldset>
-        </FormFieldset>
-      </FormFieldset>
-    </ThemeProvider>
+                      </label>
+                    </div>
+                  </FormField>
+                </FormField>
+              </fieldset>
+            </FormFieldset>
+          </FormFieldset>
+        </ThemeProvider>
+      </DocumentFontSizeProvider>
+      <EventListener
+        listeners={
+          Array [
+            Object {
+              "event": "DOMContentLoaded",
+              "handler": [Function],
+              "target": "document",
+            },
+          ]
+        }
+      />
+    </Fragment>
   </ThemeProvider>
 </div>
 `;
