@@ -32,12 +32,11 @@ type Props = {
 
 const Container = createStyledComponent(FlexItem, ({ theme: baseTheme }) => {
   const theme = componentTheme(baseTheme);
-  const rtl = theme.direction === 'rtl';
-  const middleMargin = rtl ? 'marginLeft' : 'marginRight';
+
   return {
     '& > button, & > span': {
       '&:not(:last-child)': {
-        [middleMargin]: theme.Pagination_gutterWidth
+        [`margin${theme.rtlEnd}`]: theme.Pagination_gutterWidth
       }
     }
   };

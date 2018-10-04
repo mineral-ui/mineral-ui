@@ -1,19 +1,19 @@
 /* @flow */
 import {
   createStyledComponent,
-  pxToEm
+  pxToRem
 } from '../../../../../../library/styles';
 import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
 import _DemoLayout from '../../components/DemoLayout';
 
-const DemoLayout = createStyledComponent(_DemoLayout, {
+const DemoLayout = createStyledComponent(_DemoLayout, ({ theme }) => ({
   '& > div:last-child': {
     // For <DropdownContent wide={true} />
-    width: pxToEm(344)
+    width: pxToRem(344, theme)
   }
-});
+}));
 
 export default {
   id: 'kitchen-sink',

@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Children, cloneElement, createElement, Component } from 'react';
 import { hideVisually } from 'polished';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import { generateId } from '../utils';
 
 type Props = {
@@ -71,14 +71,12 @@ const styles = {
       };
     }
 
-    const fontSize = theme.FormFieldCaption_fontSize;
-
     return {
       color: theme.FormFieldCaption_color,
-      fontSize,
+      fontSize: theme.FormFieldCaption_fontSize,
       marginTop: isGroup
-        ? getNormalizedValue(theme.FormFieldCaption_marginTop_isGroup, fontSize)
-        : getNormalizedValue(theme.FormFieldCaption_marginTop, fontSize)
+        ? theme.FormFieldCaption_marginTop_isGroup
+        : theme.FormFieldCaption_marginTop
     };
   },
   textWrapper: ({ hideLabel, theme: baseTheme }) => {
@@ -111,6 +109,7 @@ const styles = {
   }
 };
 
+const Caption = createStyledComponent('div', styles.caption);
 const Root = createStyledComponent(
   'div',
   {},
@@ -119,9 +118,8 @@ const Root = createStyledComponent(
     includeStyleReset: true
   }
 );
-const TextWrapper = createStyledComponent('div', styles.textWrapper);
 const SecondaryText = createStyledComponent('span', styles.secondaryText);
-const Caption = createStyledComponent('div', styles.caption);
+const TextWrapper = createStyledComponent('div', styles.textWrapper);
 
 /**
  * The FormField component enhances form inputs with an accessible label and

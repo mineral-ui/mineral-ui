@@ -4,7 +4,7 @@ import { canUseDOM } from 'exenv';
 import FocusTrap from 'focus-trap-react';
 import noScroll from 'no-scroll';
 import Transition from 'react-transition-group/Transition';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, normalizeToDocument, pxToRem } from '../styles';
 import { createThemedComponent, withTheme } from '../themes';
 import { generateId } from '../utils';
 import { excludeByType, findByType } from '../utils/children';
@@ -95,13 +95,13 @@ export const componentTheme = (baseTheme: Object) => ({
   DialogContent_borderRadius: baseTheme.borderRadius_1,
   DialogContent_boxShadow: baseTheme.boxShadow_5,
   DialogContent_maxHeight: '80vh',
-  DialogContent_maxHeight_small: pxToEm(560),
-  DialogContent_maxHeight_medium: pxToEm(560),
-  DialogContent_maxHeight_large: pxToEm(720),
-  DialogContent_maxWidth_small: pxToEm(400),
-  DialogContent_maxWidth_medium: pxToEm(640),
-  DialogContent_maxWidth_large: pxToEm(1200),
-  DialogContent_minWidth: pxToEm(360),
+  DialogContent_maxHeight_small: pxToRem(560, baseTheme),
+  DialogContent_maxHeight_medium: pxToRem(560, baseTheme),
+  DialogContent_maxHeight_large: pxToRem(720, baseTheme),
+  DialogContent_maxWidth_small: pxToRem(400, baseTheme),
+  DialogContent_maxWidth_medium: pxToRem(640, baseTheme),
+  DialogContent_maxWidth_large: pxToRem(1200, baseTheme),
+  DialogContent_minWidth: pxToRem(360, baseTheme),
   DialogContent_offsetVertical: baseTheme.space_stack_xxl,
   DialogContent_width_small: '35vw',
   DialogContent_width_medium: '50vw',
@@ -135,7 +135,8 @@ const styles = {
 
       const maxHeightNumber = parseFloat(maxHeight);
       const offsetVerticalNumber = parseFloat(offsetVertical);
-      const minHeight = `${maxHeightNumber + 2 * offsetVerticalNumber}em`;
+      // prettier-ignore
+      const minHeight = `${maxHeightNumber + parseFloat(normalizeToDocument(2, theme)) * offsetVerticalNumber}rem`;
 
       return {
         maxWidth,
@@ -190,24 +191,20 @@ const styles = {
   })
 };
 
+const Animate = createStyledComponent('div', styles.animate, {
+  displayName: 'Animate'
+});
+const Content = createStyledComponent('div', styles.content, {
+  displayName: 'DialogContent'
+});
+const IEWrapper = createStyledComponent('div', styles.ieWrapper);
+const Overlay = createStyledComponent('div', styles.overlay, {
+  displayName: 'Overlay'
+});
 const Root = createStyledComponent('div', styles.root, {
   displayName: 'Dialog',
   filterProps: ['title'],
   includeStyleReset: true
-});
-
-const Overlay = createStyledComponent('div', styles.overlay, {
-  displayName: 'Overlay'
-});
-
-const IEWrapper = createStyledComponent('div', styles.ieWrapper);
-
-const Content = createStyledComponent('div', styles.content, {
-  displayName: 'DialogContent'
-});
-
-const Animate = createStyledComponent('div', styles.animate, {
-  displayName: 'Animate'
 });
 
 const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
@@ -231,11 +228,9 @@ const CloseButton = createStyledComponent(
   ThemedButton,
   ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
-      [marginProperty]: theme.DialogCloseButton_margin
+      [`margin${theme.rtlStart}`]: theme.DialogCloseButton_margin
     };
   },
   {

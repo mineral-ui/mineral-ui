@@ -2,7 +2,7 @@
 import React, { Children, Component } from 'react';
 import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { createThemedComponent } from '../themes';
 import { onlyIEAndEdge } from '../utils/cssSelectors';
 import Button from '../Button';
@@ -74,11 +74,10 @@ const styles = {
       ...componentTheme(baseTheme),
       ...tabPanelComponentTheme(baseTheme)
     };
-    const rtl = theme.direction === 'rtl';
     const edge = {
       bottom: 'top',
-      end: rtl ? 'right' : 'left',
-      start: rtl ? 'left' : 'right',
+      end: theme.rtlStart,
+      start: theme.rtlEnd,
       top: 'bottom'
     };
     const edgeProperty = edge[position];
@@ -101,13 +100,10 @@ const styles = {
   },
   list: ({ align, count, theme: baseTheme, vertical }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const childMarginProperty = vertical
       ? 'marginBottom'
-      : rtl
-        ? 'marginLeft'
-        : 'marginRight';
+      : `margin${theme.rtlEnd}`;
 
     return {
       display: 'flex',
@@ -175,7 +171,7 @@ const ThemedButton = createThemedComponent(Button, ({ theme: baseTheme }) => {
     Button_paddingIconOnly_medium: 0,
     ButtonIcon_color: theme.TabListArrow_color,
 
-    Icon_size_medium: pxToEm(20)
+    Icon_size_medium: pxToRem(20, theme)
   };
 });
 

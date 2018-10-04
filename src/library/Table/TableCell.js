@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import memoizeOne from 'memoize-one';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import { isRenderProp, rtlTextAlign } from '../utils';
 import { TableContext } from './TableBase';
 
@@ -32,7 +32,7 @@ export const componentTheme = (baseTheme: Object) => ({
   TableCell_fontSize: baseTheme.fontSize_ui,
   TableCell_paddingHorizontal: baseTheme.space_inline_md,
   TableCell_paddingVertical: baseTheme.space_stack_sm,
-  TableCell_paddingVertical_spacious: pxToEm(12),
+  TableCell_paddingVertical_spacious: pxToRem(12, baseTheme),
   TableCell_verticalAlign: 'top',
 
   ...baseTheme
@@ -45,33 +45,26 @@ const styles = ({
   textAlign,
   theme: baseTheme
 }) => {
-  const theme = componentTheme(baseTheme);
-  const fontSize = theme.TableCell_fontSize;
-  const rtl = theme.direction === 'rtl';
-  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
+  const { direction, ...theme } = componentTheme(baseTheme);
+
   const borderVertical = highContrast
     ? theme.TableCell_borderVertical_highContrast
     : theme.TableCell_borderVertical;
-  const paddingHorizontal = getNormalizedValue(
-    theme.TableCell_paddingHorizontal,
-    fontSize
-  );
-  const paddingVertical = getNormalizedValue(
+  const paddingHorizontal = theme.TableCell_paddingHorizontal;
+  const paddingVertical =
     density === 'spacious'
       ? theme.TableCell_paddingVertical_spacious
-      : theme.TableCell_paddingVertical,
-    fontSize
-  );
+      : theme.TableCell_paddingVertical;
 
   return {
-    fontSize,
+    fontSize: theme.TableCell_fontSize,
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
-    textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
+    textAlign: rtlTextAlign({ align: textAlign || 'start', direction }),
     verticalAlign: theme.TableCell_verticalAlign,
 
     '&:not(:first-child)': {
-      [borderProperty]: borderVertical
+      [`border${theme.rtlStart}`]: borderVertical
     }
   };
 };

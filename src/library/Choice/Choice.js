@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import { hideVisually } from 'polished';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 
 type Props = {
   /**
@@ -69,12 +69,12 @@ export const componentTheme = (baseTheme: Object) => {
     ChoiceControl_borderColor_checkedHover: colors.hover,
     ChoiceControl_borderRadius: baseTheme.borderRadius_1,
     ChoiceControl_boxShadow_focus: `0 0 0 1px ${baseTheme.boxShadow_focusInner}, 0 0 0 2px ${colors.focus}`,
-    ChoiceControl_size: pxToEm(16),
-    ChoiceControl_size_jumbo: pxToEm(24),
+    ChoiceControl_size: pxToRem(16, baseTheme),
+    ChoiceControl_size_jumbo: pxToRem(24, baseTheme),
 
     ChoiceText_color: baseTheme.color,
     ChoiceText_fontSize: baseTheme.fontSize_ui,
-    ChoiceText_fontSize_small: pxToEm(12),
+    ChoiceText_fontSize_small: pxToRem(12, baseTheme),
     ChoiceText_marginHorizontal: baseTheme.space_inline_md,
 
     ...baseTheme
@@ -201,44 +201,39 @@ const styles = {
   }) => {
     const theme = componentTheme(baseTheme);
     const rtl = theme.direction === 'rtl';
-    const labelPositionStart = labelPosition === 'start';
-    const fontSize =
-      size === 'small'
-        ? theme.ChoiceText_fontSize_small
-        : theme.ChoiceText_fontSize;
+    const labelAtStart =
+      (labelPosition === 'start' && !rtl) ||
+      (!(labelPosition === 'start') && rtl);
     const marginHorizontal = justify
       ? 'auto'
-      : getNormalizedValue(theme.ChoiceText_marginHorizontal, fontSize);
+      : theme.ChoiceText_marginHorizontal;
 
     return {
       color: disabled ? theme.color_disabled : theme.ChoiceText_color,
-      fontSize,
-      marginLeft:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? 0
-          : marginHorizontal,
-      marginRight:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? marginHorizontal
-          : 0,
+      fontSize:
+        size === 'small'
+          ? theme.ChoiceText_fontSize_small
+          : theme.ChoiceText_fontSize,
+      marginLeft: labelAtStart ? 0 : marginHorizontal,
+      marginRight: labelAtStart ? marginHorizontal : 0,
 
       ...(hideLabel ? hideVisually() : undefined)
     };
   }
 };
 
-const Root = createStyledComponent('label', styles.root, {
-  displayName: 'Choice',
-  includeStyleReset: true
+const Control = createStyledComponent('span', styles.control, {
+  displayName: 'Control'
 });
 const Input = createStyledComponent('input', styles.input, {
   rootEl: 'input'
 });
+const Root = createStyledComponent('label', styles.root, {
+  displayName: 'Choice',
+  includeStyleReset: true
+});
 const Text = createStyledComponent('span', styles.text, {
   displayName: 'Text'
-});
-const Control = createStyledComponent('span', styles.control, {
-  displayName: 'Control'
 });
 
 /**

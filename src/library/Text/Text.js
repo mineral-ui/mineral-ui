@@ -116,7 +116,7 @@ const styles = {
     theme: baseTheme,
     truncate
   }) => {
-    let theme = componentTheme(baseTheme);
+    let { direction, ...theme } = componentTheme(baseTheme);
     const isHeadingElement = headingElements.indexOf(element) !== -1;
     const appearance =
       propAppearance !== Text.defaultProps.appearance
@@ -152,10 +152,9 @@ const styles = {
       };
     }
 
-    let styles = {
+    return {
       color: color || theme.Text_color,
-      fontSize: `${parseFloat(theme.Text_fontSize) *
-        parseInt(theme.fontSize_base)}px`,
+      fontSize: theme.Text_fontSize,
       fontWeight: (() => {
         if (fontWeight && theme[`fontWeight_${fontWeight}`]) {
           return theme[`fontWeight_${fontWeight}`];
@@ -168,14 +167,12 @@ const styles = {
         }
       })(),
       lineHeight: theme.Text_lineHeight,
-      textAlign: rtlTextAlign(align, theme.direction),
+      textAlign: rtlTextAlign({ align, direction }),
       ...commonStyles(element, theme, truncate),
-      // 1 - Not normalized because we actually want `##em` as applied value
-      // 2 - Must come after commonStyles
-      marginBottom: noMargins ? 0 : theme.Text_marginBottom
+      // 1 - Must come after commonStyles
+      // TODO: I think we have to un-normalize this theme variable if we're using it with em units
+      marginBottom: noMargins ? 0 : `${parseFloat(theme.Text_marginBottom)}em`
     };
-
-    return styles;
   }
 };
 

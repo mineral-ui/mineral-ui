@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createStyledComponent } from '../styles';
-import { componentTheme as cardComponentTheme } from './Card';
+import { componentTheme as cardRowComponentTheme } from './CardRow';
 import CardRow from './CardRow';
 
 type Props = {
@@ -17,16 +17,16 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  inner: (props) => {
-    const theme = componentTheme(props.theme);
+  inner: ({ theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       fontSize: theme.CardBlock_fontSize,
       lineHeight: theme.CardBlock_lineHeight
     };
   },
-  root: (props) => {
-    const theme = cardComponentTheme(props.theme);
+  root: ({ theme: baseTheme }) => {
+    const theme = cardRowComponentTheme(baseTheme);
 
     return {
       '&:last-child': {
@@ -36,10 +36,10 @@ const styles = {
   }
 };
 
+const Inner = createStyledComponent('div', styles.inner);
 const Root = createStyledComponent(CardRow, styles.root, {
   displayName: 'CardBlock'
 });
-const Inner = createStyledComponent('div', styles.inner);
 
 /**
  * CardBlock is used to normalize font sizes for content and to provide

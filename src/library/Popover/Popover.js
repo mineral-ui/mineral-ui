@@ -6,12 +6,9 @@ import { createStyledComponent } from '../styles';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
 import EventListener from '../EventListener';
-import Portal from '../Portal';
+import PopoverContent from './PopoverContent';
 import PopoverTrigger from './PopoverTrigger';
-import PopoverContent, {
-  componentTheme as popoverContentComponentTheme
-} from './PopoverContent';
-import { componentTheme as popoverArrowComponentTheme } from './PopoverArrow';
+import Portal from '../Portal';
 
 type Props = {
   /**
@@ -112,12 +109,6 @@ export type RenderFn = (props?: RenderProps) => React$Node;
 type RenderProps = {
   props: Object
 } & StateAndHelpers;
-
-export const componentTheme = (baseTheme: Object) => ({
-  ...popoverArrowComponentTheme(baseTheme),
-  ...popoverContentComponentTheme(baseTheme),
-  ...baseTheme
-});
 
 const Root = createStyledComponent(
   Manager,

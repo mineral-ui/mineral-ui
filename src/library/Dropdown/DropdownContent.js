@@ -1,6 +1,6 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent, pxToRem } from '../styles';
 import RtlPopper from '../Popover/RtlPopper';
 
 type Props = {
@@ -47,7 +47,7 @@ const Root = createStyledComponent(
       maxHeight: '30vh',
       overflowY: 'auto',
       userSelect: 'none',
-      width: wide ? pxToEm(344) : pxToEm(224),
+      width: wide ? pxToRem(344, theme) : pxToRem(224, theme),
       zIndex: theme.DropdownContent_zIndex,
 
       '&[data-placement^="top"]': {

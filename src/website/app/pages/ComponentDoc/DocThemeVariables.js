@@ -13,13 +13,13 @@ type Props = {
 
 type Theme = (theme: Object) => Object;
 
-const createKeyMirror = (obj: Object) => {
-  let mirror = {};
-  Object.keys(obj).forEach((key) => {
-    mirror[key] = `${key}`;
-  });
-  return mirror;
-};
+const createKeyMirror = (obj: Object) =>
+  Object.keys(obj)
+    .filter((key) => key !== 'documentFontSize')
+    .reduce((acc, key) => {
+      acc[key] = `${key}`;
+      return acc;
+    }, {});
 
 const REGEX_IS_COLOR = /color|fill/i;
 

@@ -39,71 +39,68 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const styles = {
-  anchor: ({
-    disabled,
+const styles = ({
+  disabled,
+  maxWidth,
+  position = 'top',
+  selected,
+  theme: baseTheme
+}) => {
+  const theme = componentTheme(baseTheme);
+  const rtl = theme.direction === 'rtl';
+
+  const justifyContent = {
+    end: 'flex-start',
+    start: 'flex-end',
+    top: undefined
+  };
+  const boxShadow = (borderWidth) => ({
+    top: `0 ${-borderWidth}px`,
+    start: rtl ? `${borderWidth}px 0` : `${-borderWidth}px 0`,
+    bottom: `0 ${borderWidth}px`,
+    end: rtl ? `${-borderWidth}px 0` : `${borderWidth}px 0`
+  });
+
+  return {
     maxWidth,
-    position = 'top',
-    selected,
-    theme: baseTheme
-  }) => {
-    const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
-    const justifyContent = {
-      end: 'flex-start',
-      start: 'flex-end',
-      top: undefined
-    };
-    const boxShadow = (borderWidth) => ({
-      top: `0 ${-borderWidth}px`,
-      start: rtl ? `${borderWidth}px 0` : `${-borderWidth}px 0`,
-      bottom: `0 ${borderWidth}px`,
-      end: rtl ? `${-borderWidth}px 0` : `${borderWidth}px 0`
-    });
+    '&:hover': {
+      color: !disabled && theme.Tab_color_selectedHover
+    },
 
-    return {
-      maxWidth,
+    // Truncate
+    '&:active > span > span > span > span > span:focus': {
+      outline: 'none'
+    },
 
-      '&:hover': {
-        color: !disabled && theme.Tab_color_selectedHover
-      },
-
-      // Truncate
-      '&:active > span > span > span > span > span:focus': {
-        outline: 'none'
-      },
-
-      ...(selected && {
-        backgroundColor: theme.Tab_backgroundColor_selected,
-        color: theme.Tab_color_selected,
-        // prettier-ignore
-        boxShadow:
+    ...(selected && {
+      backgroundColor: theme.Tab_backgroundColor_selected,
+      color: theme.Tab_color_selected,
+      // prettier-ignore
+      boxShadow:
           `inset ${boxShadow(theme.TabIndicator_thickness)[position]} ${theme.Tab_borderColor_focus}`,
 
-        '&:focus, &:active': {
-          color: theme.Tab_color_selected,
-          outline: `${theme.Tab_borderWidth_focus}px solid ${
-            theme.Tab_borderColor_focus
-          }`,
-          outlineOffset: `-${theme.Tab_borderWidth_focus}px`
-        }
-      }),
+      '&:focus, &:active': {
+        color: theme.Tab_color_selected,
+        // prettier-ignore
+        outline: `${theme.Tab_borderWidth_focus}px solid ${theme.Tab_borderColor_focus}`,
+        outlineOffset: `-${theme.Tab_borderWidth_focus}px`
+      }
+    }),
 
-      // Button's Inner
+    // Button's Inner
+    '& > span': {
+      justifyContent: justifyContent[position],
+
+      // Content
       '& > span': {
-        justifyContent: justifyContent[position],
-
-        // Content
-        '& > span': {
-          // Tooltip & TooltipTrigger & Truncate
-          '& > span, & > span > span, & > span > span > span': {
-            display: 'block'
-          }
+        // Tooltip & TooltipTrigger & Truncate
+        '& > span, & > span > span, & > span > span > span': {
+          display: 'block'
         }
       }
-    };
-  }
+    }
+  };
 };
 
 const ThemedButton = createThemedComponent(Button, ({ theme: baseTheme }) => {
@@ -118,7 +115,7 @@ const ThemedButton = createThemedComponent(Button, ({ theme: baseTheme }) => {
   };
 });
 
-const Anchor = createStyledComponent(ThemedButton, styles.anchor, {
+const Anchor = createStyledComponent(ThemedButton, styles, {
   displayName: 'Tab',
   filterProps: ['title'],
   withProps: {

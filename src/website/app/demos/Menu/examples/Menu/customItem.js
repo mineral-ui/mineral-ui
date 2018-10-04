@@ -2,7 +2,7 @@
 import React from 'react';
 import {
   createStyledComponent,
-  pxToEm
+  pxToRem
 } from '../../../../../../library/styles';
 import { mineralTheme } from '../../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
@@ -23,7 +23,7 @@ ${renderPropsDescription}`,
     DemoLayout,
     Menu,
     MenuItem,
-    pxToEm,
+    pxToRem,
     React
   },
   source: `
@@ -64,10 +64,10 @@ ${renderPropsDescription}`,
       const UserAvatar = createStyledComponent(Avatar, ({ theme }) => ({
         display: 'block',
         flex: '0 0 auto',
-        height: pxToEm(36),
+        height: pxToRem(36),
         marginLeft: theme.direction === 'rtl' && theme.space_inset_sm,
         marginRight: theme.direction === 'ltr' && theme.space_inset_sm,
-        width: pxToEm(36)
+        width: pxToRem(36)
       }));
 
       const Content = createStyledComponent('span', ({ theme }) => ({

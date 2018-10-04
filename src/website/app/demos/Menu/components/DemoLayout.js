@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../../library/styles';
 
 export default createStyledComponent('div', ({ theme, width }) => ({
   overflow: 'hidden',
@@ -9,6 +9,6 @@ export default createStyledComponent('div', ({ theme, width }) => ({
     float: 'left',
     margin: '0 0.5rem 0.5rem 0',
     // Default width is width of DropdownContent
-    width: width || pxToEm(224)
+    width: width || pxToRem(224, theme)
   }
 }));

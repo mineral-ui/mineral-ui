@@ -77,42 +77,57 @@ exports[`OverflowContainerWithShadows applies shadow when scrollable 1`] = `
             tabIndex={0}
           >
             <ThemeProvider>
-              <ThemeProvider>
-                <OverflowContainer
-                  className="emotion-1"
-                  containerRef={[Function]}
-                  onScroll={[Function]}
-                  scrollX={true}
-                  tabIndex={0}
-                >
-                  <OverflowContainer
-                    className="emotion-1"
-                    containerRef={[Function]}
-                    innerRef={[Function]}
-                    onScroll={[Function]}
-                    scrollX={true}
-                    tabIndex={0}
-                  >
-                    <div
-                      className="emotion-0"
+              <Fragment>
+                <DocumentFontSizeProvider>
+                  <ThemeProvider>
+                    <OverflowContainer
+                      className="emotion-1"
+                      containerRef={[Function]}
                       onScroll={[Function]}
+                      scrollX={true}
                       tabIndex={0}
                     >
-                      <EventListener
-                        listeners={
-                          Array [
-                            Object {
-                              "event": "resize",
-                              "handler": [Function],
-                              "target": "window",
-                            },
-                          ]
-                        }
-                      />
-                    </div>
-                  </OverflowContainer>
-                </OverflowContainer>
-              </ThemeProvider>
+                      <OverflowContainer
+                        className="emotion-1"
+                        containerRef={[Function]}
+                        innerRef={[Function]}
+                        onScroll={[Function]}
+                        scrollX={true}
+                        tabIndex={0}
+                      >
+                        <div
+                          className="emotion-0"
+                          onScroll={[Function]}
+                          tabIndex={0}
+                        >
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "resize",
+                                  "handler": [Function],
+                                  "target": "window",
+                                },
+                              ]
+                            }
+                          />
+                        </div>
+                      </OverflowContainer>
+                    </OverflowContainer>
+                  </ThemeProvider>
+                </DocumentFontSizeProvider>
+                <EventListener
+                  listeners={
+                    Array [
+                      Object {
+                        "event": "DOMContentLoaded",
+                        "handler": [Function],
+                        "target": "document",
+                      },
+                    ]
+                  }
+                />
+              </Fragment>
             </ThemeProvider>
           </Themed(OverflowContainer)>
         </Scroller>
@@ -177,39 +192,54 @@ exports[`OverflowContainerWithShadows does not apply shadow when not scrollable 
             scrollX={true}
           >
             <ThemeProvider>
-              <ThemeProvider>
-                <OverflowContainer
-                  className="emotion-1"
-                  containerRef={[Function]}
-                  onScroll={[Function]}
-                  scrollX={true}
-                >
-                  <OverflowContainer
-                    className="emotion-1"
-                    containerRef={[Function]}
-                    innerRef={[Function]}
-                    onScroll={[Function]}
-                    scrollX={true}
-                  >
-                    <div
-                      className="emotion-0"
+              <Fragment>
+                <DocumentFontSizeProvider>
+                  <ThemeProvider>
+                    <OverflowContainer
+                      className="emotion-1"
+                      containerRef={[Function]}
                       onScroll={[Function]}
+                      scrollX={true}
                     >
-                      <EventListener
-                        listeners={
-                          Array [
-                            Object {
-                              "event": "resize",
-                              "handler": [Function],
-                              "target": "window",
-                            },
-                          ]
-                        }
-                      />
-                    </div>
-                  </OverflowContainer>
-                </OverflowContainer>
-              </ThemeProvider>
+                      <OverflowContainer
+                        className="emotion-1"
+                        containerRef={[Function]}
+                        innerRef={[Function]}
+                        onScroll={[Function]}
+                        scrollX={true}
+                      >
+                        <div
+                          className="emotion-0"
+                          onScroll={[Function]}
+                        >
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "resize",
+                                  "handler": [Function],
+                                  "target": "window",
+                                },
+                              ]
+                            }
+                          />
+                        </div>
+                      </OverflowContainer>
+                    </OverflowContainer>
+                  </ThemeProvider>
+                </DocumentFontSizeProvider>
+                <EventListener
+                  listeners={
+                    Array [
+                      Object {
+                        "event": "DOMContentLoaded",
+                        "handler": [Function],
+                        "target": "document",
+                      },
+                    ]
+                  }
+                />
+              </Fragment>
             </ThemeProvider>
           </Themed(OverflowContainer)>
         </Scroller>

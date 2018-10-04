@@ -4,7 +4,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
 .emotion-9 {
   background-color: #c8d1e0;
   height: 1px;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 .emotion-28[class] > *:not(:last-child) {
@@ -15,7 +15,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -34,13 +34,13 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   font-weight: 600;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .emotion-0 > * {
@@ -69,7 +69,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-4 [role="img"]:last-of-type {
@@ -80,7 +80,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25;
   outline: 0;
   -moz-osx-font-smoothing: auto;
@@ -125,7 +125,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 0.5em;
+  margin: 0 0.5rem;
 }
 
 .emotion-3 [role="img"]:last-of-type {
@@ -140,15 +140,15 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   font-family: inherit;
-  height: 2.857142857142857em;
+  height: 2.5rem;
   min-width: 0;
   width: 100%;
   color: #333840;
   -webkit-text-fill-color: #333840;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   outline: 0;
-  padding-left: 1.1428571428571428em;
-  padding-right: 1.1428571428571428em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .emotion-1[type="search"] {
@@ -207,7 +207,7 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
 .emotion-2 {
   background-color: #ffffff;
   border-color: #c8d1e0;
-  border-radius: 0.1875em;
+  border-radius: 0.1875rem;
   border-style: solid;
   border-width: 1px;
   bottom: 0;
@@ -303,63 +303,78 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       size="large"
                     >
                       <ThemeProvider>
-                        <ThemeProvider>
-                          <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
-                            controlProps={
-                              Object {
-                                "aria-describedby": undefined,
-                                "aria-invalid": undefined,
-                                "aria-required": undefined,
-                                "controlRef": undefined,
-                                "disabled": undefined,
-                                "readOnly": undefined,
-                                "required": undefined,
-                                "type": "password",
-                              }
-                            }
-                            size="large"
-                          >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
-                            >
-                              <div
-                                className="emotion-3"
-                              >
-                                <Control
-                                  controlPropsIn={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "password",
-                                    }
+                        <Fragment>
+                          <DocumentFontSizeProvider>
+                            <ThemeProvider>
+                              <FauxControl
+                                className="emotion-4"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "password",
                                   }
-                                  key="control"
-                                  size="large"
-                                  type="password"
+                                }
+                                size="large"
+                              >
+                                <FauxControl
+                                  className="emotion-4"
+                                  control={[Function]}
                                 >
-                                  <input
-                                    className="emotion-1"
-                                    size="large"
-                                    type="password"
-                                  />
-                                </Control>
-                                <Underlay>
                                   <div
-                                    className="emotion-2"
-                                  />
-                                </Underlay>
-                              </div>
-                            </FauxControl>
-                          </FauxControl>
-                        </ThemeProvider>
+                                    className="emotion-3"
+                                  >
+                                    <Control
+                                      controlPropsIn={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "password",
+                                        }
+                                      }
+                                      key="control"
+                                      size="large"
+                                      type="password"
+                                    >
+                                      <input
+                                        className="emotion-1"
+                                        size="large"
+                                        type="password"
+                                      />
+                                    </Control>
+                                    <Underlay>
+                                      <div
+                                        className="emotion-2"
+                                      />
+                                    </Underlay>
+                                  </div>
+                                </FauxControl>
+                              </FauxControl>
+                            </ThemeProvider>
+                          </DocumentFontSizeProvider>
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "DOMContentLoaded",
+                                  "handler": [Function],
+                                  "target": "document",
+                                },
+                              ]
+                            }
+                          />
+                        </Fragment>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </TextInput>
@@ -457,63 +472,78 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       size="large"
                     >
                       <ThemeProvider>
-                        <ThemeProvider>
-                          <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
-                            controlProps={
-                              Object {
-                                "aria-describedby": undefined,
-                                "aria-invalid": undefined,
-                                "aria-required": undefined,
-                                "controlRef": undefined,
-                                "disabled": undefined,
-                                "readOnly": undefined,
-                                "required": undefined,
-                                "type": "password",
-                              }
-                            }
-                            size="large"
-                          >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
-                            >
-                              <div
-                                className="emotion-3"
-                              >
-                                <Control
-                                  controlPropsIn={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "password",
-                                    }
+                        <Fragment>
+                          <DocumentFontSizeProvider>
+                            <ThemeProvider>
+                              <FauxControl
+                                className="emotion-4"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "password",
                                   }
-                                  key="control"
-                                  size="large"
-                                  type="password"
+                                }
+                                size="large"
+                              >
+                                <FauxControl
+                                  className="emotion-4"
+                                  control={[Function]}
                                 >
-                                  <input
-                                    className="emotion-1"
-                                    size="large"
-                                    type="password"
-                                  />
-                                </Control>
-                                <Underlay>
                                   <div
-                                    className="emotion-2"
-                                  />
-                                </Underlay>
-                              </div>
-                            </FauxControl>
-                          </FauxControl>
-                        </ThemeProvider>
+                                    className="emotion-3"
+                                  >
+                                    <Control
+                                      controlPropsIn={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "password",
+                                        }
+                                      }
+                                      key="control"
+                                      size="large"
+                                      type="password"
+                                    >
+                                      <input
+                                        className="emotion-1"
+                                        size="large"
+                                        type="password"
+                                      />
+                                    </Control>
+                                    <Underlay>
+                                      <div
+                                        className="emotion-2"
+                                      />
+                                    </Underlay>
+                                  </div>
+                                </FauxControl>
+                              </FauxControl>
+                            </ThemeProvider>
+                          </DocumentFontSizeProvider>
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "DOMContentLoaded",
+                                  "handler": [Function],
+                                  "target": "document",
+                                },
+                              ]
+                            }
+                          />
+                        </Fragment>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </TextInput>
@@ -601,63 +631,78 @@ exports[`FormFieldDivider demo examples Snapshots: basic 1`] = `
                       size="large"
                     >
                       <ThemeProvider>
-                        <ThemeProvider>
-                          <FauxControl
-                            className="emotion-4"
-                            control={[Function]}
-                            controlProps={
-                              Object {
-                                "aria-describedby": undefined,
-                                "aria-invalid": undefined,
-                                "aria-required": undefined,
-                                "controlRef": undefined,
-                                "disabled": undefined,
-                                "readOnly": undefined,
-                                "required": undefined,
-                                "type": "password",
-                              }
-                            }
-                            size="large"
-                          >
-                            <FauxControl
-                              className="emotion-4"
-                              control={[Function]}
-                            >
-                              <div
-                                className="emotion-3"
-                              >
-                                <Control
-                                  controlPropsIn={
-                                    Object {
-                                      "aria-describedby": undefined,
-                                      "aria-invalid": undefined,
-                                      "aria-required": undefined,
-                                      "controlRef": undefined,
-                                      "disabled": undefined,
-                                      "readOnly": undefined,
-                                      "required": undefined,
-                                      "type": "password",
-                                    }
+                        <Fragment>
+                          <DocumentFontSizeProvider>
+                            <ThemeProvider>
+                              <FauxControl
+                                className="emotion-4"
+                                control={[Function]}
+                                controlProps={
+                                  Object {
+                                    "aria-describedby": undefined,
+                                    "aria-invalid": undefined,
+                                    "aria-required": undefined,
+                                    "controlRef": undefined,
+                                    "disabled": undefined,
+                                    "readOnly": undefined,
+                                    "required": undefined,
+                                    "type": "password",
                                   }
-                                  key="control"
-                                  size="large"
-                                  type="password"
+                                }
+                                size="large"
+                              >
+                                <FauxControl
+                                  className="emotion-4"
+                                  control={[Function]}
                                 >
-                                  <input
-                                    className="emotion-1"
-                                    size="large"
-                                    type="password"
-                                  />
-                                </Control>
-                                <Underlay>
                                   <div
-                                    className="emotion-2"
-                                  />
-                                </Underlay>
-                              </div>
-                            </FauxControl>
-                          </FauxControl>
-                        </ThemeProvider>
+                                    className="emotion-3"
+                                  >
+                                    <Control
+                                      controlPropsIn={
+                                        Object {
+                                          "aria-describedby": undefined,
+                                          "aria-invalid": undefined,
+                                          "aria-required": undefined,
+                                          "controlRef": undefined,
+                                          "disabled": undefined,
+                                          "readOnly": undefined,
+                                          "required": undefined,
+                                          "type": "password",
+                                        }
+                                      }
+                                      key="control"
+                                      size="large"
+                                      type="password"
+                                    >
+                                      <input
+                                        className="emotion-1"
+                                        size="large"
+                                        type="password"
+                                      />
+                                    </Control>
+                                    <Underlay>
+                                      <div
+                                        className="emotion-2"
+                                      />
+                                    </Underlay>
+                                  </div>
+                                </FauxControl>
+                              </FauxControl>
+                            </ThemeProvider>
+                          </DocumentFontSizeProvider>
+                          <EventListener
+                            listeners={
+                              Array [
+                                Object {
+                                  "event": "DOMContentLoaded",
+                                  "handler": [Function],
+                                  "target": "document",
+                                },
+                              ]
+                            }
+                          />
+                        </Fragment>
                       </ThemeProvider>
                     </Themed(FauxControl)>
                   </TextInput>

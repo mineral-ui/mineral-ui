@@ -57,6 +57,7 @@ export const componentTheme = (baseTheme: Object) => ({
 
 const styles = ({ fullWidth, theme: baseTheme, variant }) => {
   let theme = componentTheme(baseTheme);
+
   if (variant) {
     // prettier-ignore
     theme = {
@@ -65,19 +66,15 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
       ButtonGroupButton_borderColor_hover: theme[`borderColor_${variant}_hover`]
     };
   }
-  const { direction } = theme;
-  const rtl = direction === 'rtl';
-  const start = rtl ? 'Right' : 'Left';
-  const end = rtl ? 'Left' : 'Right';
 
-  const borderStartColorProperty = `border${start}Color`;
-  const borderEndColorProperty = `border${end}Color`;
+  const borderStartColorProperty = `border${theme.rtlStart}Color`;
+  const borderEndColorProperty = `border${theme.rtlEnd}Color`;
 
-  const borderBottomStartRadiusProperty = `borderBottom${start}Radius`;
-  const borderBottomEndRadiusProperty = `borderBottom${end}Radius`;
+  const borderBottomStartRadiusProperty = `borderBottom${theme.rtlStart}Radius`;
+  const borderBottomEndRadiusProperty = `borderBottom${theme.rtlEnd}Radius`;
 
-  const borderTopStartRadiusProperty = `borderTop${start}Radius`;
-  const borderTopEndRadiusProperty = `borderTop${end}Radius`;
+  const borderTopStartRadiusProperty = `borderTop${theme.rtlStart}Radius`;
+  const borderTopEndRadiusProperty = `borderTop${theme.rtlEnd}Radius`;
 
   return {
     display: 'flex',
@@ -188,6 +185,11 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
   };
 };
 
+const Root = createStyledComponent('div', styles, {
+  displayName: 'ButtonGroup',
+  includeStyleReset: true
+});
+
 const isChecked = (checked: number | Array<number> | Set<number>, index) => {
   const isSet = checked instanceof Set;
   const checkedSet = isSet ? checked : setFromArray(toArray(checked));
@@ -226,11 +228,6 @@ const getDefaultCheckedState = (props: Props) => {
 
   return checked;
 };
-
-const Root = createStyledComponent('div', styles, {
-  displayName: 'ButtonGroup',
-  includeStyleReset: true
-});
 
 /**
  * ButtonGroup allows authors to stylistically group a set of related

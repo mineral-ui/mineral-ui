@@ -14,7 +14,7 @@ function shallowText(props = {}) {
 
 const theme = {
   TestComponent_color: 'red',
-  TestComponent_fontSize: '2em',
+  TestComponent_fontSize: '2rem',
   TestComponent_fontWeight: 800
 };
 
@@ -48,7 +48,7 @@ describe('Text', () => {
     const themedTextStyles = renderComponentStylesToString(themedText);
 
     expect(themedTextStyles.includes('color:red')).toEqual(true);
-    expect(themedTextStyles.includes('font-size:32px')).toEqual(true);
+    expect(themedTextStyles.includes('font-size:2rem')).toEqual(true);
     expect(themedTextStyles.includes('font-weight:800')).toEqual(true);
   });
 });

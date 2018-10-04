@@ -1,14 +1,14 @@
 /* @flow */
 import React, { Component } from 'react';
 import { ellipsis } from 'polished';
+import { createStyledComponent, pxToRem } from '../styles';
+import { createThemedComponent, mapComponentThemes } from '../themes';
+import FauxControl from '../FauxControl';
+import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
+import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import IconDanger from '../Icon/IconDanger';
 import IconSuccess from '../Icon/IconSuccess';
 import IconWarning from '../Icon/IconWarning';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
-import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
-import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
-import FauxControl from '../FauxControl';
 import { componentTheme as textInputComponentTheme } from '../TextInput/TextInput';
 
 import type { Item } from '../Menu/Menu';
@@ -81,7 +81,6 @@ const styles = {
     variant
   }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     return {
       alignItems: 'center',
@@ -125,22 +124,18 @@ const styles = {
               : selectedItemVariant
                 ? theme[`color_${selectedItemVariant}`]
                 : theme.SelectIcon_color,
-        marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
-        marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
+        [`margin${theme.rtlStart}`]: theme.SelectIcon_marginHorizontal
       }
     };
   },
   trigger: ({ size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
-    const fontSize =
-      size === 'small' ? theme.Select_fontSize_small : theme.Select_fontSize;
-
     return {
       alignItems: 'center',
       display: 'flex',
       flex: '1 1 auto',
-      height: getNormalizedValue(theme[`Select_height_${size}`], fontSize),
+      height: theme[`Select_height_${size}`],
       minWidth: 0
     };
   },
@@ -196,11 +191,11 @@ export default class SelectTrigger extends Component<Props> {
     const Arrow = createStyledComponent(
       ArrowIcon,
       {
-        margin: pxToEm(iconMarginMap[size])
+        margin: pxToRem(iconMarginMap[size])
       },
       {
         withProps: {
-          size: size === 'small' || size === 'medium' ? 'medium' : pxToEm(24)
+          size: size === 'small' || size === 'medium' ? 'medium' : pxToRem(24)
         }
       }
     );

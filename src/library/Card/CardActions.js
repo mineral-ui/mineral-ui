@@ -1,9 +1,9 @@
 /* @flow */
 import React, { Children, cloneElement } from 'react';
-import { createStyledComponent, getNormalizedValue } from '../styles';
+import { createStyledComponent } from '../styles';
 import Button from '../Button';
-import { componentTheme as cardComponentTheme } from './Card';
 import { componentTheme as cardBlockComponentTheme } from './CardBlock';
+import { componentTheme as cardRowComponentTheme } from './CardRow';
 import CardRow from './CardRow';
 
 type Props = {
@@ -18,32 +18,25 @@ export const componentTheme = (baseTheme: Object) => ({
 });
 
 const styles = {
-  action: (props) => {
+  action: ({ theme: baseTheme }) => {
     const theme = {
-      ...componentTheme(props.theme),
-      ...cardBlockComponentTheme(props.theme)
+      ...componentTheme(baseTheme),
+      ...cardBlockComponentTheme(baseTheme)
     };
-    const rtl = theme.direction === 'rtl';
-    const fontSize = theme.CardBlock_fontSize;
-    const actionsGap = getNormalizedValue(
-      theme.CardActionsAction_spaceInline,
-      fontSize
-    );
 
     return {
       alignItems: 'center',
       display: 'flex',
       flex: '0 0 auto',
-      fontSize,
-      marginBottom: actionsGap,
-      marginLeft: rtl ? null : actionsGap,
-      marginRight: rtl ? actionsGap : null
+      fontSize: theme.CardBlock_fontSize,
+      marginBottom: theme.CardActionsAction_spaceInline,
+      [`margin${theme.rtlStart}`]: theme.CardActionsAction_spaceInline
     };
   },
-  root: (props) => {
+  root: ({ theme: baseTheme }) => {
     const theme = {
-      ...componentTheme(props.theme),
-      ...cardComponentTheme(props.theme)
+      ...componentTheme(baseTheme),
+      ...cardRowComponentTheme(baseTheme)
     };
 
     return {
@@ -52,15 +45,15 @@ const styles = {
       justifyContent: 'flex-end',
       // We subtract `theme.CardActionsAction_spaceInline` because of the marginBottom on Action.
       marginBottom: `${parseFloat(theme.CardRow_marginVertical) -
-        parseFloat(theme.CardActionsAction_spaceInline)}em`
+        parseFloat(theme.CardActionsAction_spaceInline)}rem`
     };
   }
 };
 
+const Action = createStyledComponent('span', styles.action);
 const Root = createStyledComponent(CardRow, styles.root, {
   displayName: 'CardActions'
 });
-const Action = createStyledComponent('span', styles.action);
 
 /**
  * The CardActions component allows you to lay out actions inside your [Card](/components/card).

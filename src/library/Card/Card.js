@@ -17,26 +17,22 @@ export const componentTheme = (baseTheme: Object) => ({
   Card_boxShadow: baseTheme.boxShadow_2,
   Card_boxShadow_focus: `0 0 0 2px ${baseTheme.borderColor_theme_focus}, ${baseTheme.boxShadow_1}`,
 
-  CardRow_marginVertical: baseTheme.space_stack_md,
-  CardRow_marginVerticalLast: baseTheme.space_stack_lg,
-  CardRow_paddingHorizontal: baseTheme.space_inset_md,
-
   ...baseTheme
 });
 
 const Root = createStyledComponent(
   'div',
-  (props) => {
-    const theme = componentTheme(props.theme);
+  ({ onClick, theme: baseTheme }) => {
+    const theme = componentTheme(baseTheme);
 
     return {
       backgroundColor: theme.Card_backgroundColor,
       border: `1px solid ${theme.Card_borderColor}`,
       borderRadius: theme.Card_borderRadius,
       boxShadow: theme.Card_boxShadow,
-      cursor: props.onClick && 'pointer',
-      paddingBottom: '0.01em', // Necessary to prevent margin collapse of last-child
-      paddingTop: '0.01em', // Necessary to prevent margin collapse of first-child
+      cursor: onClick && 'pointer',
+      paddingBottom: '0.01rem', // Necessary to prevent margin collapse of last-child
+      paddingTop: '0.01rem', // Necessary to prevent margin collapse of first-child
 
       '&:focus': {
         boxShadow: theme.Card_boxShadow_focus

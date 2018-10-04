@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
+import { createStyledComponent, pxToRem } from '../../../../../library/styles';
 import Table from '../../../../../library/Table';
 import data from '../shared/data';
 import renderPropsDescription from '../../shared/renderPropsDescription';
@@ -18,7 +18,7 @@ your data is sortable.
   scope: {
     createStyledComponent,
     data,
-    pxToEm,
+    pxToRem,
     React,
     Table
   },
@@ -36,7 +36,7 @@ your data is sortable.
       const Inner = createStyledComponent('span', ({theme}) => ({
         alignItems: 'flex-end',
         display: 'flex',
-        padding: pxToEm(12) + ' ' + theme.space_inline_md,
+        padding: pxToRem(12) + ' ' + theme.space_inline_md,
         whiteSpace: 'nowrap'
       }));
 

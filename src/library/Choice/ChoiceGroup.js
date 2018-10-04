@@ -55,8 +55,9 @@ export const componentTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-const styles = {
-  root: ({ inline, size, theme: baseTheme }) => {
+const Root = createStyledComponent(
+  'div',
+  ({ inline, size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
 
     return {
@@ -74,13 +75,12 @@ const styles = {
           : undefined
       }
     };
+  },
+  {
+    displayName: 'ChoiceGroup',
+    includeStyleReset: true
   }
-};
-
-const Root = createStyledComponent('div', styles.root, {
-  displayName: 'ChoiceGroup',
-  includeStyleReset: true
-});
+);
 
 const isChecked = (checked: string | Array<string>, value) => {
   return Array.isArray(checked)
