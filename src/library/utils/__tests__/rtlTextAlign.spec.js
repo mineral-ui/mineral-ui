@@ -2,23 +2,19 @@
 import { rtlTextAlign } from '../index';
 
 const configs = [
-  { align: undefined, direction: undefined, expected: undefined },
-  { align: undefined, direction: 'ltr', expected: undefined },
-  { align: 'start', direction: 'ltr', expected: 'left' },
-  { align: 'end', direction: 'ltr', expected: 'right' },
-  { align: undefined, direction: 'rtl', expected: undefined },
-  { align: 'start', direction: 'rtl', expected: 'right' },
-  { align: 'end', direction: 'rtl', expected: 'left' }
+  { align: undefined, expected: undefined },
+  { align: 'start', expected: 'left' },
+  { align: 'end', expected: 'right' },
+  { align: 'center', expected: 'center' }
 ];
 
 describe('rtlTextAlign', () => {
   let result;
 
   describe('returns appropriate value', () => {
-    configs.forEach(({ align, direction, expected }) => {
-      it(`when align=${align || 'undefined'}, direction=${direction ||
-        'undefined'}`, () => {
-        result = rtlTextAlign(align, direction);
+    configs.forEach(({ align, expected }) => {
+      it(`when align=${align || 'undefined'}`, () => {
+        result = rtlTextAlign(align);
         expect(result).toBe(expected);
       });
     });

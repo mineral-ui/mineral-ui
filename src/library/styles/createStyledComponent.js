@@ -1,7 +1,7 @@
 /* @flow */
-
 import styled from 'react-emotion';
 import withPropsFn from 'recompose/withProps';
+import rtlCSSJS from 'rtl-css-js';
 import componentStyleReset from './componentStyleReset';
 import isValidProp from '../utils/isValidProp';
 
@@ -21,6 +21,7 @@ type Options = {
   forwardProps?: Array<string>,
   includeStyleReset?: boolean,
   rootEl?: string,
+  rtl?: boolean,
   withProps?: Object
 };
 
@@ -35,6 +36,7 @@ export default function createStyledComponent(
     forwardProps = [],
     includeStyleReset,
     rootEl,
+    rtl = true,
     withProps
   } = options;
   const outStyles = (
@@ -54,6 +56,15 @@ export default function createStyledComponent(
           ...componentStyles
         };
       }
+    }
+
+    if (
+      rtl &&
+      componentStyles &&
+      props.theme &&
+      props.theme.direction === 'rtl'
+    ) {
+      return rtlCSSJS(componentStyles);
     }
 
     return componentStyles;

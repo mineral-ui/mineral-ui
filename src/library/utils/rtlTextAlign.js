@@ -1,11 +1,10 @@
 /* @flow */
 
-export default function rtlTextAlign(align?: string, direction?: string) {
-  const rtl = direction === 'rtl';
-  if ((rtl && align === 'start') || (!rtl && align === 'end')) {
-    return 'right';
-  } else if ((rtl && align === 'end') || align === 'start') {
+export default function rtlTextAlign(align?: string) {
+  if (align === 'start') {
     return 'left';
+  } else if (align === 'end') {
+    return 'right';
   } else {
     return align;
   }
