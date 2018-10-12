@@ -3217,6 +3217,10 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
   word-wrap: normal;
 }
 
+.emotion-163[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-125 {
   fill: currentcolor;
   font-size: 16px;
@@ -3225,6 +3229,20 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 1.5em;
+}
+
+.emotion-83 {
+  background-color: #ffffff;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .emotion-33 {
@@ -3366,6 +3384,66 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
   word-wrap: normal;
 }
 
+.emotion-89 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.875em;
+  margin-right: 1.1428571428571428em;
+  margin-left: 0.2857142857142857em;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+.emotion-98 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.875em;
+  margin-right: 0.2857142857142857em;
+  margin-left: 1.1428571428571428em;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+.emotion-115 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.875em;
+  margin-right: 0;
+  margin-left: 0.2857142857142857em;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+.emotion-124 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.875em;
+  margin-right: 0.2857142857142857em;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
 .emotion-143 {
   background-color: transparent;
   border: 0;
@@ -3436,6 +3514,50 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
 .emotion-143:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #b80d0d;
+}
+
+.emotion-146 {
+  background-color: #ffffff;
+  border-color: #de1b1b;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.emotion-153 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.75em;
+  margin-right: 0;
+  margin-left: 0.3333333333333333em;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+
+.emotion-155 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  font-size: 0.75em;
+  margin-right: 0.3333333333333333em;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
 
 .emotion-156 {
@@ -5014,7 +5136,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               marginBottom="1rem"
             >
               <div
-                className="emotion-81"
+                className="emotion-163"
               >
                 <TextInput
                   defaultValue="000"
@@ -5124,7 +5246,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </Control>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -5227,7 +5349,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-16"
+                                      className="emotion-89"
                                     >
                                       $
                                     </span>
@@ -5261,7 +5383,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </Control>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -5390,14 +5512,14 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-7"
+                                      className="emotion-98"
                                     >
                                       cm
                                     </span>
                                   </Styled(span)>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -5505,7 +5627,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-16"
+                                      className="emotion-89"
                                     >
                                       $
                                     </span>
@@ -5543,14 +5665,14 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-7"
+                                      className="emotion-98"
                                     >
                                       cm
                                     </span>
                                   </Styled(span)>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -5691,7 +5813,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-42"
+                                      className="emotion-115"
                                     >
                                       $
                                     </span>
@@ -5726,7 +5848,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </Control>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -5862,7 +5984,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-33"
+                                      className="emotion-124"
                                     >
                                       cm
                                     </span>
@@ -5901,7 +6023,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </IconBackspace>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -6053,7 +6175,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-42"
+                                      className="emotion-115"
                                     >
                                       $
                                     </span>
@@ -6095,7 +6217,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="large"
                                   >
                                     <span
-                                      className="emotion-33"
+                                      className="emotion-124"
                                     >
                                       cm
                                     </span>
@@ -6134,7 +6256,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </IconBackspace>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -6271,7 +6393,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     variant="danger"
                                   >
                                     <span
-                                      className="emotion-33"
+                                      className="emotion-124"
                                     >
                                       cm
                                     </span>
@@ -6312,7 +6434,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     variant="danger"
                                   >
                                     <div
-                                      className="emotion-64"
+                                      className="emotion-146"
                                     />
                                   </Underlay>
                                 </div>
@@ -6464,7 +6586,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="small"
                                   >
                                     <span
-                                      className="emotion-73"
+                                      className="emotion-153"
                                     >
                                       $
                                     </span>
@@ -6506,7 +6628,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                     size="small"
                                   >
                                     <span
-                                      className="emotion-71"
+                                      className="emotion-155"
                                     >
                                       cm
                                     </span>
@@ -6545,7 +6667,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                                   </IconBackspace>
                                   <Underlay>
                                     <div
-                                      className="emotion-1"
+                                      className="emotion-83"
                                     />
                                   </Underlay>
                                 </div>
@@ -9552,24 +9674,6 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
   color: #c8d1e0;
 }
 
-.emotion-2 {
-  background-color: #ffffff;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.emotion-24[class] > *:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 .emotion-20 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -9657,20 +9761,6 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
   font-size: 16px;
   height: 1.5em;
   width: 1.5em;
-}
-
-.emotion-18 {
-  background-color: #ffffff;
-  border-color: #2a854e;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
 }
 
 .emotion-8 {
@@ -9817,6 +9907,10 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
+.emotion-24[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .emotion-0 {
   fill: currentcolor;
   font-size: 16px;
@@ -9825,6 +9919,20 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
   width: 1.5em;
+}
+
+.emotion-2 {
+  background-color: #ffffff;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .emotion-16 {
@@ -9897,6 +10005,20 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
 .emotion-16:focus ~ div:last-child {
   border-color: #c8d1e0;
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
+}
+
+.emotion-18 {
+  background-color: #ffffff;
+  border-color: #2a854e;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 <div

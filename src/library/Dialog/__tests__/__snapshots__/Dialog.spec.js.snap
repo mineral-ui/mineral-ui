@@ -10278,16 +10278,6 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
   z-index: 1600;
 }
 
-.emotion-0 {
-  background-color: rgba(0,0,0,0.6);
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .emotion-34 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10435,41 +10425,6 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
   position: static;
 }
 
-.emotion-35 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  position: static;
-}
-
-.emotion-35 *,
-.emotion-35 *::before,
-.emotion-35 *::after {
-  box-sizing: inherit;
-}
-
 .emotion-21 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10528,52 +10483,6 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
 
 .emotion-20:last-child {
   margin-bottom: 1.7142857142857142em;
-}
-
-.emotion-16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-16 > div {
-  padding-left: 1.7142857142857142em;
-  padding-right: 1.7142857142857142em;
-}
-
-.emotion-16 > div > :first-child {
-  margin-top: 0;
-}
-
-.emotion-16 > div > :last-child {
-  margin-bottom: 0;
-}
-
-.emotion-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-15 > div {
-  padding-left: 1.7142857142857142em;
-  padding-right: 1.7142857142857142em;
-}
-
-.emotion-15 > div > :first-child {
-  margin-top: 0;
-}
-
-.emotion-15 > div > :last-child {
-  margin-bottom: 0;
 }
 
 .emotion-11 {
@@ -10660,6 +10569,51 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
   line-height: 2.2857142857142856em;
 }
 
+.emotion-35 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  position: static;
+}
+
+.emotion-35 *,
+.emotion-35 *::before,
+.emotion-35 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-0 {
+  background-color: rgba(0,0,0,0.6);
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .emotion-5 {
   color: #58606e;
   display: -webkit-box;
@@ -10673,6 +10627,52 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   margin-left: 0.5em;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-16 > div {
+  padding-right: 1.7142857142857142em;
+  padding-left: 1.7142857142857142em;
+}
+
+.emotion-16 > div > :first-child {
+  margin-top: 0;
+}
+
+.emotion-16 > div > :last-child {
+  margin-bottom: 0;
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-15 > div {
+  padding-right: 1.7142857142857142em;
+  padding-left: 1.7142857142857142em;
+}
+
+.emotion-15 > div > :first-child {
+  margin-top: 0;
+}
+
+.emotion-15 > div > :last-child {
+  margin-bottom: 0;
 }
 
 .emotion-29 {

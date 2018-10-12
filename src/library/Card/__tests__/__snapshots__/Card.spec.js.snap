@@ -5002,17 +5002,6 @@ exports[`Card demo examples Snapshots: rtl 1`] = `
   }
 }
 
-.emotion-1 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.emotion-1:last-child {
-  margin-bottom: 1.5em;
-}
-
 .emotion-0 {
   font-size: 0.875em;
   line-height: 1.5;
@@ -5036,25 +5025,6 @@ exports[`Card demo examples Snapshots: rtl 1`] = `
   width: 100%;
 }
 
-.emotion-11 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 0.5em;
-}
-
 .emotion-2 {
   display: block;
   max-width: 100%;
@@ -5071,6 +5041,36 @@ exports[`Card demo examples Snapshots: rtl 1`] = `
   font-size: 16px;
   height: 1em;
   width: 1em;
+}
+
+.emotion-1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.emotion-1:last-child {
+  margin-bottom: 1.5em;
+}
+
+.emotion-11 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 0.5em;
 }
 
 .emotion-5 {
@@ -5390,17 +5390,6 @@ exports[`Card demo examples Snapshots: rtl 2`] = `
   }
 }
 
-.emotion-1 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.emotion-1:last-child {
-  margin-bottom: 1.5em;
-}
-
 .emotion-0 {
   font-size: 0.875em;
   line-height: 1.5;
@@ -5413,11 +5402,22 @@ exports[`Card demo examples Snapshots: rtl 2`] = `
   width: 1em;
 }
 
+.emotion-1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.emotion-1:last-child {
+  margin-bottom: 1.5em;
+}
+
 .emotion-3 {
   margin-bottom: 1em;
   margin-top: 1em;
-  padding-left: 1em;
   padding-right: 1em;
+  padding-left: 1em;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -5547,47 +5547,26 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
   box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.emotion-6 {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .emotion-5 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
 
-.emotion-2 {
-  color: #58606e;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  font-size: 1.125em;
-  font-weight: 700;
-  margin: 0;
+.emotion-7 {
+  font-size: 0.875em;
+  line-height: 1.5;
 }
 
 .emotion-8 {
   margin-bottom: 1em;
   margin-top: 1em;
-  padding-left: 1em;
   padding-right: 1em;
+  padding-left: 1em;
 }
 
 .emotion-8:last-child {
   margin-bottom: 1.5em;
-}
-
-.emotion-7 {
-  font-size: 0.875em;
-  line-height: 1.5;
 }
 
 .emotion-0 {
@@ -5697,6 +5676,17 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
   }
 }
 
+.emotion-6 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .emotion-1 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -5725,6 +5715,16 @@ exports[`Card demo examples Snapshots: rtl 3`] = `
   margin-left: 0.5em;
   position: relative;
   top: 0.25em;
+}
+
+.emotion-2 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
 }
 
 <div

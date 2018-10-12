@@ -25338,41 +25338,6 @@ exports[`Table demo examples Snapshots: rtl 1`] = `
   outline-offset: -1px;
 }
 
-.emotion-10 {
-  background: none;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  font-size: inherit;
-  font-weight: inherit;
-  position: relative;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.emotion-10:focus {
-  color: #3272d9;
-  outline: 1px solid #1d5bbf;
-  outline-offset: -1px;
-}
-
-*:focus-within > .emotion-10:focus {
-  outline: 0;
-}
-
-.emotion-10::-moz-focus-inner {
-  border: 0;
-}
-
-.emotion-10::after {
-  bottom: 100%;
-  content: "";
-  height: 10em;
-  left: 0;
-  position: absolute;
-  right: 0;
-}
-
 .emotion-2 {
   position: relative;
   white-space: normal;
@@ -25479,6 +25444,41 @@ exports[`Table demo examples Snapshots: rtl 1`] = `
   outline-offset: -1px;
 }
 
+.emotion-10 {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: inherit;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.emotion-10:focus {
+  color: #3272d9;
+  outline: 1px solid #1d5bbf;
+  outline-offset: -1px;
+}
+
+*:focus-within > .emotion-10:focus {
+  outline: 0;
+}
+
+.emotion-10::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-10::after {
+  bottom: 100%;
+  content: "";
+  height: 10em;
+  right: 0;
+  position: absolute;
+  left: 0;
+}
+
 .emotion-6 {
   font-weight: 700;
   position: relative;
@@ -25527,9 +25527,9 @@ exports[`Table demo examples Snapshots: rtl 1`] = `
   bottom: 100%;
   content: "";
   height: 10em;
-  left: 0;
-  position: absolute;
   right: 0;
+  position: absolute;
+  left: 0;
 }
 
 .emotion-5 {
@@ -25589,9 +25589,9 @@ exports[`Table demo examples Snapshots: rtl 1`] = `
   bottom: 100%;
   content: "";
   height: 10em;
-  left: 0;
-  position: absolute;
   right: 0;
+  position: absolute;
+  left: 0;
 }
 
 .emotion-4 {
@@ -25793,9 +25793,9 @@ button:focus > .emotion-4 {
   bottom: 100%;
   content: "";
   height: 10em;
-  left: 0;
-  position: absolute;
   right: 0;
+  position: absolute;
+  left: 0;
 }
 
 .emotion-57 {

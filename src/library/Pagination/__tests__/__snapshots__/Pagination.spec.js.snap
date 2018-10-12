@@ -19676,20 +19676,6 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
   box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
 }
 
-.emotion-57 {
-  background-color: #ffffff;
-  border-color: #c8d1e0;
-  border-radius: 0.1875em;
-  border-style: solid;
-  border-width: 1px;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
 .emotion-72 {
   color: #58606e;
   font-size: 0.6875em;
@@ -19751,10 +19737,6 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
   word-wrap: normal;
   font-size: 0.875em;
   line-height: 2.2857142857142856em;
-}
-
-.emotion-145[class] > *:not(:last-child) {
-  margin-bottom: 1rem;
 }
 
 .emotion-49 {
@@ -19928,6 +19910,10 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
   height: 1em;
   width: 1em;
   margin: 0.5em;
+}
+
+.emotion-145[class] > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .emotion-0 {
@@ -20179,6 +20165,20 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 .emotion-58 :not([role="img"]) + [role="img"]:not(:last-of-type) {
   color: #3272d9;
   margin-right: 0.5em;
+}
+
+.emotion-57 {
+  background-color: #ffffff;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .emotion-97 {
