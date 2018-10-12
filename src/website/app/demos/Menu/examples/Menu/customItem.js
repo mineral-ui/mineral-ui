@@ -65,8 +65,7 @@ ${renderPropsDescription}`,
         display: 'block',
         flex: '0 0 auto',
         height: pxToEm(36),
-        marginLeft: theme.direction === 'rtl' && theme.space_inset_sm,
-        marginRight: theme.direction === 'ltr' && theme.space_inset_sm,
+        marginRight: theme.space_inset_sm,
         width: pxToEm(36)
       }));
 

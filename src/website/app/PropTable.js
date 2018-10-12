@@ -50,8 +50,7 @@ const styles = {
 
     '& > span > span': {
       lineHeight: theme.lineHeight,
-      paddingLeft: theme.direction === 'ltr' ? 0 : null,
-      paddingRight: theme.direction === 'rtl' ? 0 : null
+      paddingLeft: 0
     }
   }),
   propTypePopoverContent: ({ theme }) => ({

@@ -50,8 +50,7 @@ export default function customItem({ props }: Object) {
       display: 'block',
       flex: '0 0 auto',
       height: pxToEm(36),
-      marginLeft: theme.direction === 'rtl' && theme.MenuItemIcon_margin,
-      marginRight: theme.direction === 'ltr' && theme.MenuItemIcon_margin,
+      marginRight: theme.MenuItemIcon_margin,
       width: pxToEm(36)
     });
 
