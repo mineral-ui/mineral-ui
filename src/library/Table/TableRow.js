@@ -86,8 +86,7 @@ const Root = createStyledComponent(
                 backgroundColor: theme.color_theme_60,
                 bottom: 0,
                 content: '""',
-                left: theme.direction !== 'rtl' ? 0 : null,
-                right: theme.direction === 'rtl' ? 0 : null,
+                left: 0,
                 position: 'absolute',
                 top: 0,
                 width: '4px'

@@ -552,6 +552,7 @@ const createRootNode = (props: Props) => {
 
   return createStyledComponent(element, styles.root, {
     includeStyleReset: true,
+    rtl: false,
     rootEl: element
   });
 };

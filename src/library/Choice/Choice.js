@@ -200,7 +200,6 @@ const styles = {
     theme: baseTheme
   }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
     const labelPositionStart = labelPosition === 'start';
     const fontSize =
       size === 'small'
@@ -213,14 +212,8 @@ const styles = {
     return {
       color: disabled ? theme.color_disabled : theme.ChoiceText_color,
       fontSize,
-      marginLeft:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? 0
-          : marginHorizontal,
-      marginRight:
-        (labelPositionStart && !rtl) || (!labelPositionStart && rtl)
-          ? marginHorizontal
-          : 0,
+      marginLeft: labelPositionStart ? 0 : marginHorizontal,
+      marginRight: labelPositionStart ? marginHorizontal : 0,
 
       ...(hideLabel ? hideVisually() : undefined)
     };

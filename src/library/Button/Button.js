@@ -100,9 +100,6 @@ const styles = {
     variant
   }) => {
     let theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildMarginProperty = rtl ? 'marginLeft' : 'marginRight';
-    const lastChildMarginProperty = rtl ? 'marginRight' : 'marginLeft';
 
     if (variant) {
       // prettier-ignore
@@ -234,11 +231,11 @@ const styles = {
         flexShrink: 0,
 
         '&:first-child': {
-          [firstChildMarginProperty]: theme.ButtonIcon_margin
+          marginRight: theme.ButtonIcon_margin
         },
 
         '&:last-child': {
-          [lastChildMarginProperty]: theme.ButtonIcon_margin
+          marginLeft: theme.ButtonIcon_margin
         },
 
         '&:only-child': {
@@ -249,9 +246,6 @@ const styles = {
   },
   content: ({ size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-    const firstChildPaddingProperty = rtl ? 'paddingRight' : 'paddingLeft';
-    const lastChildPaddingProperty = rtl ? 'paddingLeft' : 'paddingRight';
 
     let paddings;
 
@@ -267,11 +261,11 @@ const styles = {
       );
       paddings = {
         '&:first-child': {
-          [firstChildPaddingProperty]: padding
+          paddingLeft: padding
         },
 
         '&:last-child': {
-          [lastChildPaddingProperty]: padding
+          paddingRight: padding
         }
       };
     }

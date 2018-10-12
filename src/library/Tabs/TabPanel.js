@@ -36,12 +36,11 @@ const styles = {
   },
   root: ({ position, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const orientation = {
       bottom: 'Bottom',
-      end: rtl ? 'Left' : 'Right',
-      start: rtl ? 'Right' : 'Left',
+      end: 'Right',
+      start: 'Left',
       top: 'Top'
     };
     const borderProperty = `border${orientation[position]}`;

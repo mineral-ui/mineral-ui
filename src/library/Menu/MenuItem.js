@@ -140,17 +140,11 @@ const styles = {
         flex: '0 0 auto',
 
         '&:first-child': {
-          marginLeft:
-            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null,
-          marginRight:
-            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null
+          marginRight: theme.MenuItemIcon_margin
         },
 
         '&:last-child': {
-          marginLeft:
-            theme.direction === 'ltr' ? theme.MenuItemIcon_margin : null,
-          marginRight:
-            theme.direction === 'rtl' ? theme.MenuItemIcon_margin : null
+          marginLeft: theme.MenuItemIcon_margin
         }
       }
     };
@@ -177,8 +171,7 @@ const styles = {
 
     return {
       fontSize,
-      marginLeft: theme.direction === 'rtl' && margin,
-      marginRight: theme.direction === 'ltr' && margin,
+      marginRight: margin,
       wordBreak: 'break-word'
     };
   }

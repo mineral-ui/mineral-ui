@@ -65,19 +65,6 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
       ButtonGroupButton_borderColor_hover: theme[`borderColor_${variant}_hover`]
     };
   }
-  const { direction } = theme;
-  const rtl = direction === 'rtl';
-  const start = rtl ? 'Right' : 'Left';
-  const end = rtl ? 'Left' : 'Right';
-
-  const borderStartColorProperty = `border${start}Color`;
-  const borderEndColorProperty = `border${end}Color`;
-
-  const borderBottomStartRadiusProperty = `borderBottom${start}Radius`;
-  const borderBottomEndRadiusProperty = `borderBottom${end}Radius`;
-
-  const borderTopStartRadiusProperty = `borderTop${start}Radius`;
-  const borderTopEndRadiusProperty = `borderTop${end}Radius`;
 
   return {
     display: 'flex',
@@ -139,16 +126,16 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
     // 1 - Buttons except the first
     // 2 - "Anything" except the first with a nested button
     '& > button:not(:first-child), & > *:not(:first-child) button': {
-      [borderBottomStartRadiusProperty]: 0,
-      [borderTopStartRadiusProperty]: 0
+      borderBottomLeftRadius: 0,
+      borderTopLeftRadius: 0
     },
 
     // 1 - Buttons except the last
     // 2 - "Anything" except the last with a nested button
     '& > button:not(:last-child), & > *:not(:last-child) button': {
-      [borderBottomEndRadiusProperty]: 0,
-      [borderTopEndRadiusProperty]: 0,
-      [borderEndColorProperty]: 'transparent'
+      borderBottomRightRadius: 0,
+      borderTopRightRadius: 0,
+      borderRightColor: 'transparent'
     },
 
     // 1 - Mode'd, unchecked buttons
@@ -163,7 +150,7 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
 
     // Mode'd, unchecked, un-focused, un-hovered button immediately following a mode'd, unchecked button
     '& > [aria-checked=false] + [aria-checked=false]:not(:focus)': {
-      [borderStartColorProperty]: theme.ButtonGroupButton_borderStartColor
+      borderLeftColor: theme.ButtonGroupButton_borderStartColor
     },
 
     // 1 - Mode'd, unchecked, un-focused buttons immediately following a mode'd, unchecked, non-disabled, hovered button
@@ -171,19 +158,18 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
     // 3 - Non-mode'd "anything" with a nested, un-focused button immediately following a non-mode'd, non-disabled, hovered "anything"
     '& > [aria-checked=false]:not([disabled]):hover + [aria-checked=false], & > *:not([aria-checked]):not([disabled]):hover + button:not([aria-checked]), & > *:not([aria-checked]):not([disabled]):hover + *:not([aria-checked]) button': {
       '&:not(:focus)': {
-        [borderStartColorProperty]: 'transparent'
+        borderLeftColor: 'transparent'
       }
     },
 
     // Mode'd, unchecked, un-focused buttons immediately following a mode'd, checked button
     '& > [aria-checked=true] + [aria-checked=false]:not(:focus)': {
-      [borderStartColorProperty]: 'transparent'
+      borderLeftColor: 'transparent'
     },
 
     // Mode'd, checked, un-focused buttons immediately following a mode'd checked button
     '& > [aria-checked=true] + [aria-checked=true]:not(:focus)': {
-      [borderStartColorProperty]:
-        theme.ButtonGroupButton_borderStartColor_checked
+      borderLeftColor: theme.ButtonGroupButton_borderStartColor_checked
     }
   };
 };

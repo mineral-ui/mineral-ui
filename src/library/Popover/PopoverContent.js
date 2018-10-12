@@ -92,7 +92,8 @@ const Root = createStyledComponent(
   },
   {
     displayName: 'PopoverContent',
-    includeStyleReset: true
+    includeStyleReset: true,
+    rtl: false
   }
 );
 

@@ -47,8 +47,6 @@ const styles = ({
 }) => {
   const theme = componentTheme(baseTheme);
   const fontSize = theme.TableCell_fontSize;
-  const rtl = theme.direction === 'rtl';
-  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
   const borderVertical = highContrast
     ? theme.TableCell_borderVertical_highContrast
     : theme.TableCell_borderVertical;
@@ -67,11 +65,11 @@ const styles = ({
     fontSize,
     fontWeight: 'inherit',
     padding: noPadding ? 0 : `${paddingVertical} ${paddingHorizontal}`,
-    textAlign: rtlTextAlign(textAlign || 'start', theme.direction),
+    textAlign: rtlTextAlign(textAlign || 'start'),
     verticalAlign: theme.TableCell_verticalAlign,
 
     '&:not(:first-child)': {
-      [borderProperty]: borderVertical
+      borderLeft: borderVertical
     }
   };
 };

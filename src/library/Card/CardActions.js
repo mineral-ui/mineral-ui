@@ -23,7 +23,6 @@ const styles = {
       ...componentTheme(props.theme),
       ...cardBlockComponentTheme(props.theme)
     };
-    const rtl = theme.direction === 'rtl';
     const fontSize = theme.CardBlock_fontSize;
     const actionsGap = getNormalizedValue(
       theme.CardActionsAction_spaceInline,
@@ -36,8 +35,7 @@ const styles = {
       flex: '0 0 auto',
       fontSize,
       marginBottom: actionsGap,
-      marginLeft: rtl ? null : actionsGap,
-      marginRight: rtl ? actionsGap : null
+      marginLeft: actionsGap
     };
   },
   root: (props) => {

@@ -98,7 +98,8 @@ const Root = createStyledComponent(
   },
   {
     displayName: 'PopoverArrow',
-    rootEl: 'span'
+    rootEl: 'span',
+    rtl: false
   }
 );
 

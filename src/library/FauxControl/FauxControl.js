@@ -65,7 +65,6 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   prefix: ({ iconStart, size, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const fontSize =
       size === 'small'
@@ -83,8 +82,8 @@ const styles = {
     return {
       flex: '0 0 auto',
       fontSize,
-      marginLeft: rtl ? marginWithoutIcon : iconStart ? 0 : marginWithIcon,
-      marginRight: rtl ? (iconStart ? 0 : marginWithIcon) : marginWithoutIcon,
+      marginLeft: iconStart ? 0 : marginWithIcon,
+      marginRight: marginWithoutIcon,
       whiteSpace: 'nowrap',
       ...ellipsis('8em')
     };
@@ -228,7 +227,6 @@ const styles = {
   },
   suffix: ({ iconEnd, size, theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const fontSize =
       size === 'small'
@@ -246,16 +244,8 @@ const styles = {
     return {
       flex: '0 0 auto',
       fontSize,
-      marginLeft: rtl
-        ? iconEnd || variant
-          ? 0
-          : marginWithIcon
-        : marginWithoutIcon,
-      marginRight: rtl
-        ? marginWithoutIcon
-        : iconEnd || variant
-          ? 0
-          : marginWithIcon,
+      marginLeft: marginWithoutIcon,
+      marginRight: iconEnd || variant ? 0 : marginWithIcon,
       whiteSpace: 'nowrap',
       ...ellipsis('8em')
     };
@@ -341,7 +331,8 @@ function getIcons({
 
 const createControlNode = (props: Props) => {
   return createStyledComponent(props.control, styles.control, {
-    displayName: 'Control'
+    displayName: 'Control',
+    rtl: false
   });
 };
 

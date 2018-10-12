@@ -70,7 +70,8 @@ const Root = createStyledComponent(
   {
     displayName: 'DropdownContent',
     includeStyleReset: true,
-    filterProps: ['hasArrow', 'wide']
+    filterProps: ['hasArrow', 'wide'],
+    rtl: false
   }
 );
 

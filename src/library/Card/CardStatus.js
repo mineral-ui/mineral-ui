@@ -27,7 +27,6 @@ const Root = createStyledComponent(
   CardRow,
   ({ theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     return {
       alignItems: 'center',
@@ -38,8 +37,7 @@ const Root = createStyledComponent(
 
       '& > [role="img"]': {
         height: theme.CardStatusIcon_size,
-        marginRight: rtl ? null : theme.CardStatusIcon_margin,
-        marginLeft: rtl ? theme.CardStatusIcon_margin : null,
+        marginRight: theme.CardStatusIcon_margin,
         width: theme.CardStatusIcon_size
       }
     };

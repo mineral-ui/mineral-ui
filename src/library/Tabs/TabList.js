@@ -74,11 +74,10 @@ const styles = {
       ...componentTheme(baseTheme),
       ...tabPanelComponentTheme(baseTheme)
     };
-    const rtl = theme.direction === 'rtl';
     const edge = {
       bottom: 'top',
-      end: rtl ? 'right' : 'left',
-      start: rtl ? 'left' : 'right',
+      end: 'left',
+      start: 'right',
       top: 'bottom'
     };
     const edgeProperty = edge[position];
@@ -101,13 +100,6 @@ const styles = {
   },
   list: ({ align, count, theme: baseTheme, vertical }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-
-    const childMarginProperty = vertical
-      ? 'marginBottom'
-      : rtl
-        ? 'marginLeft'
-        : 'marginRight';
 
     return {
       display: 'flex',
@@ -141,9 +133,8 @@ const styles = {
           : undefined),
 
         '&:not(:last-child)': {
-          [childMarginProperty]: vertical
-            ? theme.TabList_gutterVertical
-            : theme.TabList_gutterHorizontal
+          marginBottom: vertical ? theme.TabList_gutterVertical : null,
+          marginRight: vertical ? null : theme.TabList_gutterHorizontal
         }
       }
     };

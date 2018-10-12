@@ -92,12 +92,9 @@ const styles = ({
 }) => {
   const theme = componentTheme(baseTheme);
   const fontSize = theme.TableHeaderCell_fontSize;
-  const rtl = theme.direction === 'rtl';
-  const borderProperty = rtl ? 'borderRight' : 'borderLeft';
   const borderVertical = highContrast
     ? theme.TableHeaderCell_borderVertical_highContrast
     : theme.TableHeaderCell_borderVertical;
-  const positionProperty = rtl ? 'right' : 'left';
 
   return {
     fontWeight: theme.TableHeaderCell_fontWeight,
@@ -110,13 +107,13 @@ const styles = ({
     // Using this "border" to appease Firefox, which extends TableHeaderCell's
     // real border down the entire column after clicking a TableSortableHeaderCell.
     '&:not(:first-child)': {
-      [borderProperty]: 0,
+      borderLeft: 0,
 
       '&::before': {
-        [borderProperty]: borderVertical,
+        borderLeft: borderVertical,
         bottom: 0,
         content: '""',
-        [positionProperty]: 0,
+        left: 0,
         position: 'absolute',
         top: 0,
         width: 0,

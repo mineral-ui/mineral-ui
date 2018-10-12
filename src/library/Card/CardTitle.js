@@ -48,15 +48,13 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   avatar: ({ subtitle, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
     const width = subtitle
       ? theme.CardTitleAvatarSize_large
       : theme.CardTitleAvatarSize;
 
     return {
       flex: '0 0 auto',
-      marginLeft: rtl ? theme.CardTitleAvatar_margin : null,
-      marginRight: rtl ? null : theme.CardTitleAvatar_margin,
+      marginRight: theme.CardTitleAvatar_margin,
       width,
 
       '&[class] > *': {
@@ -100,7 +98,6 @@ const styles = {
   },
   title: ({ theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     return {
       alignItems: 'flex-start',
@@ -108,8 +105,7 @@ const styles = {
 
       '& > [role="img"]': {
         color: variant ? theme[`icon_color_${variant}`] : null,
-        marginLeft: rtl ? theme.CardTitleIcon_margin : null,
-        marginRight: rtl ? null : theme.CardTitleIcon_margin,
+        marginRight: theme.CardTitleIcon_margin,
         position: 'relative',
         top: pxToEm(4) // optical alignment
       }
@@ -117,7 +113,6 @@ const styles = {
   },
   titleContent: ({ actions, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
     const fontSize = theme.CardTitle_fontSize;
     const actionsMargin = getNormalizedValue(
       theme.CardTitleIcon_margin,
@@ -130,8 +125,7 @@ const styles = {
       fontSize,
       fontWeight: theme.CardTitle_fontWeight,
       margin: 0,
-      marginLeft: actions && rtl ? actionsMargin : null,
-      marginRight: actions && !rtl ? actionsMargin : null
+      marginRight: actions && actionsMargin
     };
   }
 };

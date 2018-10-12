@@ -168,7 +168,7 @@ const styles = {
         }
       })(),
       lineHeight: theme.Text_lineHeight,
-      textAlign: rtlTextAlign(align, theme.direction),
+      textAlign: rtlTextAlign(align),
       ...commonStyles(element, theme, truncate),
       // 1 - Not normalized because we actually want `##em` as applied value
       // 2 - Must come after commonStyles

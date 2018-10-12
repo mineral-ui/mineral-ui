@@ -21,8 +21,6 @@ const Root = createStyledComponent(
   'div',
   ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
       alignItems: 'center',
@@ -30,7 +28,7 @@ const Root = createStyledComponent(
       justifyContent: 'flex-end',
 
       '& > *:not(:last-child)': {
-        [marginProperty]: theme.DialogActionsItem_margin
+        marginRight: theme.DialogActionsItem_margin
       }
     };
   },

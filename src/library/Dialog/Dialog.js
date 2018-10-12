@@ -231,11 +231,9 @@ const CloseButton = createStyledComponent(
   ThemedButton,
   ({ theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
-      [marginProperty]: theme.DialogCloseButton_margin
+      marginLeft: theme.DialogCloseButton_margin
     };
   },
   {

@@ -103,14 +103,12 @@ const styles = {
   iconHolder: ({ isSorted, direction, theme: baseTheme }) => {
     const theme = componentTheme(baseTheme);
     const iconAdjustment = pxToEm(2);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
 
     return {
       color: theme.icon_color,
       display: 'inline-block',
       height: theme.TableSortableHeaderCellIcon_size,
-      [marginProperty]: `${parseFloat(theme.space_inline_xxs) +
+      marginLeft: `${parseFloat(theme.space_inline_xxs) +
         parseFloat(iconAdjustment)}em`,
       opacity: isSorted ? null : 0,
       position: 'relative',

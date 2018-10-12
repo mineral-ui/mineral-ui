@@ -36,8 +36,6 @@ export const componentTheme = (baseTheme: Object) => ({
 const styles = {
   root: ({ theme: baseTheme, variant }) => {
     const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
 
     return {
       color: variant ? theme[`color_${variant}`] : theme.DialogTitle_color,
@@ -46,7 +44,7 @@ const styles = {
       '& > [role="img"]': {
         color: variant ? theme[`icon_color_${variant}`] : null,
         flex: '0 0 auto',
-        [marginProperty]: theme.DialogTitleIcon_margin
+        marginRight: theme.DialogTitleIcon_margin
       }
     };
   },

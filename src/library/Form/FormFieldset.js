@@ -37,8 +37,7 @@ const Root = createStyledComponent(
         fontWeight: theme.FormFieldsetLegend_fontWeight,
         lineHeight: theme.size_medium,
         padding: 0,
-        paddingLeft: theme.direction === 'rtl' ? theme.space_inline_sm : null,
-        paddingRight: theme.direction === 'ltr' ? theme.space_inline_sm : null
+        paddingRight: theme.space_inline_sm
       }
     };
   },

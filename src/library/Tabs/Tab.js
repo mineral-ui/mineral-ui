@@ -48,7 +48,6 @@ const styles = {
     theme: baseTheme
   }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     const justifyContent = {
       end: 'flex-start',
@@ -57,9 +56,9 @@ const styles = {
     };
     const boxShadow = (borderWidth) => ({
       top: `0 ${-borderWidth}px`,
-      start: rtl ? `${borderWidth}px 0` : `${-borderWidth}px 0`,
+      start: `${-borderWidth}px 0`,
       bottom: `0 ${borderWidth}px`,
-      end: rtl ? `${-borderWidth}px 0` : `${borderWidth}px 0`
+      end: `${borderWidth}px 0`
     });
 
     return {

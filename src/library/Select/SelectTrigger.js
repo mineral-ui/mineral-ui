@@ -81,7 +81,6 @@ const styles = {
     variant
   }) => {
     const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
 
     return {
       alignItems: 'center',
@@ -125,8 +124,7 @@ const styles = {
               : selectedItemVariant
                 ? theme[`color_${selectedItemVariant}`]
                 : theme.SelectIcon_color,
-        marginLeft: rtl ? null : theme.SelectIcon_marginHorizontal,
-        marginRight: rtl ? theme.SelectIcon_marginHorizontal : null
+        marginLeft: theme.SelectIcon_marginHorizontal
       }
     };
   },
