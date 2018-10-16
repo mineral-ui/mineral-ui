@@ -159,6 +159,7 @@ export default class TableBase extends Component<Props, State> {
                 columns,
                 data: rowData,
                 messages,
+                rowIndex: index,
                 toggle: selectable && selectable.toggle
               };
               return (

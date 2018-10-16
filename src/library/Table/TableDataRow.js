@@ -13,6 +13,7 @@ type Props = {
   columns: Columns,
   data: Row,
   messages: Messages,
+  rowIndex: number,
   toggle?: Toggle
 };
 
@@ -32,6 +33,7 @@ export default class TableDataRow extends Component<Props> {
       columns,
       data,
       messages,
+      rowIndex,
       toggle,
       ...restProps
     } = this.props;
@@ -40,6 +42,8 @@ export default class TableDataRow extends Component<Props> {
     const cells = columns.map(({ cell: render, key, ...restColumn }) => {
       const cellProps = {
         children: data[key],
+        columnKey: key,
+        rowIndex,
         key,
         render,
         ...restColumn
@@ -65,6 +69,7 @@ export default class TableDataRow extends Component<Props> {
       isSelected: checked,
       isSelectable: selectable,
       ...(data.row ? { render: data.row } : undefined),
+      rowIndex,
       ...restProps
     };
 
