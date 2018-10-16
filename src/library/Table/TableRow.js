@@ -18,7 +18,9 @@ type Props = {
    * [custom row example](/components/table/#custom-row) and
    * our [render props guide](/render-props).
    */
-  render?: RenderFn
+  render?: RenderFn,
+  /** Row index */
+  rowIndex?: number
 };
 
 // prettier-ignore
