@@ -1,3 +1,13 @@
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/mineral-ui/mineral-ui/compare/v0.47.0...v0.48.0) (2018-10-17)
+
+
+### Features
+
+* **table:** Provide rowIndex and columnKey to table rows and cells ([95c1e59](https://github.com/mineral-ui/mineral-ui/commit/95c1e59))
+
+
+
 <a name="0.47.0"></a>
 # [0.47.0](https://github.com/mineral-ui/mineral-ui/compare/v0.46.0...v0.47.0) (2018-09-27)
 
