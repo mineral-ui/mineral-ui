@@ -234,6 +234,24 @@ const demoRoutes: DemoRoutes = [
       title: 'MenuItem'
     }
   ],
+  [
+    {
+      description: 'Redirect navigation to horizontal-navigation',
+      redirect: 'horizontal-navigation',
+      slug: 'navigation',
+      title: 'Navigation'
+    },
+    {
+      description: 'TODO',
+      slug: 'horizontal-navigation',
+      title: 'HorizontalNavigation'
+    },
+    {
+      description: 'TODO',
+      slug: 'nav-link',
+      title: 'NavLink'
+    }
+  ],
   {
     description:
       'Pagination offers a means to control the space consumed by a collection of items by limiting the page size and providing navigation for access to all pages.',
