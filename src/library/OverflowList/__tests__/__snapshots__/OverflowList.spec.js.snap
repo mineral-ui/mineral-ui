@@ -1,0 +1,666 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabList applies shadow when scrollable 1`] = `
+.emotion-25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.emotion-7 > *:not(:last-child) {
+  margin-right: 1em;
+}
+
+.emotion-3 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-3:hover [role="img"] {
+  color: #3272d9;
+}
+
+.emotion-3 > span {
+  height: 100%;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  color: #3272d9;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2em;
+  margin: 0;
+  min-width: 2em;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-2 *,
+.emotion-2 *::before,
+.emotion-2 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-2:focus {
+  border-color: #1d5bbf;
+  color: #3272d9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:hover {
+  color: #3272d9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:focus:active,
+.emotion-2:focus:hover {
+  border-color: #1d5bbf;
+}
+
+.emotion-2:active {
+  color: #3272d9;
+}
+
+.emotion-2::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-2 [role="img"] {
+  box-sizing: content-box;
+  color: #58606e;
+  display: block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-2 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-2 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-2 [role="img"]:only-child {
+  margin: 0;
+}
+
+.emotion-2:hover [role="img"] {
+  color: #3272d9;
+}
+
+.emotion-2 > span {
+  height: 100%;
+}
+
+.emotion-1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  pointer-events: none;
+  width: 100%;
+}
+
+.emotion-0 {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0%;
+}
+
+.emotion-14::before {
+  bottom: 1px;
+}
+
+.emotion-9 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-8 {
+  outline: 0;
+  overflow-x: auto;
+  -webkit-transition: outline 0.1s 0.25s;
+  transition: outline 0.1s 0.25s;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.emotion-8:focus {
+  outline: 1px solid #1d5bbf;
+}
+
+.emotion-8::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0%;
+}
+
+.emotion-13::before {
+  bottom: 0;
+  box-shadow: inset -24px 0 22px -14px #ffffff;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.emotion-13::before {
+  bottom: 1px;
+}
+
+<TabList
+  position="top"
+>
+  <TabList
+    innerRef={[Function]}
+  >
+    <div
+      className="emotion-25"
+    >
+      <IncrementButton
+        icon={<IconChevronLeft />}
+        key="start"
+        onClick={[Function]}
+      >
+        <ArrowButton
+          aria-hidden={true}
+          iconStart={<IconChevronLeft />}
+          minimal={true}
+          onClick={[Function]}
+          size="medium"
+          tabIndex={-1}
+        >
+          <ArrowButton
+            aria-hidden={true}
+            className="emotion-3"
+            iconStart={<IconChevronLeft />}
+            minimal={true}
+            onClick={[Function]}
+            size="medium"
+            tabIndex={-1}
+          >
+            <Themed(Button)
+              aria-hidden={true}
+              className="emotion-3"
+              iconStart={<IconChevronLeft />}
+              minimal={true}
+              onClick={[Function]}
+              size="medium"
+              tabIndex={-1}
+            >
+              <ThemeProvider>
+                <ThemeProvider>
+                  <Button
+                    aria-hidden={true}
+                    className="emotion-3"
+                    element="button"
+                    iconStart={<IconChevronLeft />}
+                    minimal={true}
+                    onClick={[Function]}
+                    size="medium"
+                    tabIndex={-1}
+                    type="button"
+                  >
+                    <Button
+                      aria-hidden={true}
+                      className="emotion-3"
+                      element="button"
+                      minimal={true}
+                      onClick={[Function]}
+                      size="medium"
+                      tabIndex={-1}
+                      type="button"
+                    >
+                      <button
+                        aria-hidden={true}
+                        className="emotion-2"
+                        onClick={[Function]}
+                        tabIndex={-1}
+                        type="button"
+                      >
+                        <Styled(span)>
+                          <span
+                            className="emotion-1"
+                          >
+                            <IconChevronLeft
+                              key="iconStart"
+                              size="medium"
+                            >
+                              <Icon
+                                rtl={true}
+                                size="medium"
+                              >
+                                <Styled(svg)
+                                  aria-hidden={true}
+                                  focusable="false"
+                                  role="img"
+                                  rtl={true}
+                                  size="medium"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="emotion-0"
+                                    focusable="false"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <g>
+                                      <path
+                                        d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                                      />
+                                    </g>
+                                  </svg>
+                                </Styled(svg)>
+                              </Icon>
+                            </IconChevronLeft>
+                          </span>
+                        </Styled(span)>
+                      </button>
+                    </Button>
+                  </Button>
+                </ThemeProvider>
+              </ThemeProvider>
+            </Themed(Button)>
+          </ArrowButton>
+        </ArrowButton>
+      </IncrementButton>
+      <withProps(Inner)
+        key="inner"
+        position="top"
+        scrollX={true}
+      >
+        <Inner
+          hideScrollbars={true}
+          position="top"
+          scrollX={true}
+          tabIndex={null}
+        >
+          <Inner
+            className="emotion-14"
+            hideScrollbars={true}
+            position="top"
+            scrollX={true}
+            tabIndex={null}
+          >
+            <Themed(OverflowContainerWithShadows)
+              className="emotion-14"
+              hideScrollbars={true}
+              position="top"
+              scrollX={true}
+              tabIndex={null}
+            >
+              <ThemeProvider>
+                <ThemeProvider>
+                  <OverflowContainerWithShadows
+                    className="emotion-14"
+                    hideScrollbars={true}
+                    position="top"
+                    scrollX={true}
+                    tabIndex={null}
+                  >
+                    <OverflowContainerWithShadows
+                      className="emotion-14"
+                      hasShadowLeft={false}
+                      hasShadowRight={true}
+                      position="top"
+                      tabIndex={null}
+                    >
+                      <div
+                        className="emotion-13"
+                        tabIndex={null}
+                      >
+                        <Scroller
+                          containerRef={[Function]}
+                          hideScrollbars={true}
+                          onScroll={[Function]}
+                          scrollX={true}
+                          tabIndex={0}
+                        >
+                          <Scroller
+                            className="emotion-9"
+                            containerRef={[Function]}
+                            hideScrollbars={true}
+                            onScroll={[Function]}
+                            scrollX={true}
+                            tabIndex={0}
+                          >
+                            <Themed(OverflowContainer)
+                              className="emotion-9"
+                              containerRef={[Function]}
+                              hideScrollbars={true}
+                              onScroll={[Function]}
+                              scrollX={true}
+                              tabIndex={0}
+                            >
+                              <ThemeProvider>
+                                <ThemeProvider>
+                                  <OverflowContainer
+                                    className="emotion-9"
+                                    containerRef={[Function]}
+                                    hideScrollbars={true}
+                                    onScroll={[Function]}
+                                    scrollX={true}
+                                    tabIndex={0}
+                                  >
+                                    <OverflowContainer
+                                      className="emotion-9"
+                                      containerRef={[Function]}
+                                      hideScrollbars={true}
+                                      innerRef={[Function]}
+                                      onScroll={[Function]}
+                                      scrollX={true}
+                                      tabIndex={0}
+                                    >
+                                      <div
+                                        className="emotion-8"
+                                        onScroll={[Function]}
+                                        tabIndex={0}
+                                      >
+                                        <Styled(ul)
+                                          count={0}
+                                          innerRef={[Function]}
+                                        >
+                                          <ul
+                                            className="emotion-7"
+                                          />
+                                        </Styled(ul)>
+                                        <EventListener
+                                          listeners={
+                                            Array [
+                                              Object {
+                                                "event": "resize",
+                                                "handler": [Function],
+                                                "target": "window",
+                                              },
+                                            ]
+                                          }
+                                        />
+                                      </div>
+                                    </OverflowContainer>
+                                  </OverflowContainer>
+                                </ThemeProvider>
+                              </ThemeProvider>
+                            </Themed(OverflowContainer)>
+                          </Scroller>
+                        </Scroller>
+                      </div>
+                    </OverflowContainerWithShadows>
+                  </OverflowContainerWithShadows>
+                </ThemeProvider>
+              </ThemeProvider>
+            </Themed(OverflowContainerWithShadows)>
+          </Inner>
+        </Inner>
+      </withProps(Inner)>
+      <IncrementButton
+        icon={<IconChevronRight />}
+        key="end"
+        onClick={[Function]}
+      >
+        <ArrowButton
+          aria-hidden={true}
+          iconStart={<IconChevronRight />}
+          minimal={true}
+          onClick={[Function]}
+          size="medium"
+          tabIndex={-1}
+        >
+          <ArrowButton
+            aria-hidden={true}
+            className="emotion-3"
+            iconStart={<IconChevronRight />}
+            minimal={true}
+            onClick={[Function]}
+            size="medium"
+            tabIndex={-1}
+          >
+            <Themed(Button)
+              aria-hidden={true}
+              className="emotion-3"
+              iconStart={<IconChevronRight />}
+              minimal={true}
+              onClick={[Function]}
+              size="medium"
+              tabIndex={-1}
+            >
+              <ThemeProvider>
+                <ThemeProvider>
+                  <Button
+                    aria-hidden={true}
+                    className="emotion-3"
+                    element="button"
+                    iconStart={<IconChevronRight />}
+                    minimal={true}
+                    onClick={[Function]}
+                    size="medium"
+                    tabIndex={-1}
+                    type="button"
+                  >
+                    <Button
+                      aria-hidden={true}
+                      className="emotion-3"
+                      element="button"
+                      minimal={true}
+                      onClick={[Function]}
+                      size="medium"
+                      tabIndex={-1}
+                      type="button"
+                    >
+                      <button
+                        aria-hidden={true}
+                        className="emotion-2"
+                        onClick={[Function]}
+                        tabIndex={-1}
+                        type="button"
+                      >
+                        <Styled(span)>
+                          <span
+                            className="emotion-1"
+                          >
+                            <IconChevronRight
+                              key="iconStart"
+                              size="medium"
+                            >
+                              <Icon
+                                rtl={true}
+                                size="medium"
+                              >
+                                <Styled(svg)
+                                  aria-hidden={true}
+                                  focusable="false"
+                                  role="img"
+                                  rtl={true}
+                                  size="medium"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="emotion-0"
+                                    focusable="false"
+                                    role="img"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <g>
+                                      <path
+                                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                                      />
+                                    </g>
+                                  </svg>
+                                </Styled(svg)>
+                              </Icon>
+                            </IconChevronRight>
+                          </span>
+                        </Styled(span)>
+                      </button>
+                    </Button>
+                  </Button>
+                </ThemeProvider>
+              </ThemeProvider>
+            </Themed(Button)>
+          </ArrowButton>
+        </ArrowButton>
+      </IncrementButton>
+      <EventListener
+        listeners={
+          Array [
+            Object {
+              "event": "resize",
+              "handler": [Function],
+              "target": "window",
+            },
+          ]
+        }
+      />
+    </div>
+  </TabList>
+</TabList>
+`;
+
+exports[`TabList does not apply shadow when not scrollable 1`] = `
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.emotion-0 > *:not(:last-child) {
+  margin-right: 1em;
+}
+
+<TabList
+  position="top"
+>
+  <TabList
+    innerRef={[Function]}
+  >
+    <div
+      className="emotion-1"
+    >
+      <Styled(ul)
+        count={0}
+        innerRef={[Function]}
+      >
+        <ul
+          className="emotion-0"
+        />
+      </Styled(ul)>
+      <EventListener
+        listeners={
+          Array [
+            Object {
+              "event": "resize",
+              "handler": [Function],
+              "target": "window",
+            },
+          ]
+        }
+      />
+    </div>
+  </TabList>
+</TabList>
+`;

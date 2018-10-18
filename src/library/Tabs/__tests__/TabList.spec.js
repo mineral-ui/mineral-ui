@@ -3,7 +3,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import TabList, { componentTheme } from '../TabList';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
-import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 /*
@@ -36,36 +35,5 @@ describe('TabList', () => {
         ]
       })
     );
-  });
-
-  it('does not apply shadow when not scrollable', () => {
-    const [, tabList] = mountInThemeProvider(<TabList />);
-
-    expect(tabList).toMatchSnapshot();
-  });
-
-  it('applies shadow when scrollable', () => {
-    // [1]
-    // $FlowFixMe
-    Object.defineProperties(window.HTMLElement.prototype, {
-      scrollWidth: {
-        // Note that this mocked getter is designed to always trigger overflow
-        // because it's greater than offsetLeft + offsetWidth
-        get: () => 10,
-        configurable: true
-      }
-    });
-
-    const [, tabList] = mountInThemeProvider(<TabList />);
-
-    // [2]
-    // $FlowFixMe
-    Object.defineProperties(window.HTMLElement.prototype, {
-      scrollWidth: {
-        get: undefined
-      }
-    });
-
-    expect(tabList).toMatchSnapshot();
   });
 });
