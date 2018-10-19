@@ -1,7 +1,6 @@
 /* @flow */
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 import DemoLayout from '../../../shared/DemoLayout';
 
 const oneThruTwenty = [...Array(21).keys()];
@@ -32,7 +31,7 @@ next/previous arrow buttons to navigate.`,
   },
   source: `() => {
     const navLinks = oneThruTwenty.map((number) =>
-      <NavLink title={title(number)} key={number} />);
+      <NavLink href={'page-' + number} key={number}>title(number)</NavLink>);
 
     return (
       <HorizontalNavigation label="Minerals">

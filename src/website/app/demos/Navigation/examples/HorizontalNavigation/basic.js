@@ -1,7 +1,6 @@
 /* @flow */
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 
 export default {
   id: 'basic',
@@ -13,9 +12,9 @@ describe the related content for users of
   scope: { HorizontalNavigation, NavLink },
   source: `
     <HorizontalNavigation defaultSelectedNavLinkIndex={1} label="Minerals">
-      <NavLink title="Malachite" />
-      <NavLink title="Fluorite" />
-      <NavLink title="Magnetite" />
+      <NavLink href="/malachite">Malachite</NavLink>
+      <NavLink href="/fluorite">Fluorite</NavLink>
+      <NavLink href="/magnetite">Magnetite</NavLink>
     </HorizontalNavigation>
   `
 };

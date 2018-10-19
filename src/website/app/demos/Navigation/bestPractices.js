@@ -11,9 +11,9 @@ export default [
   "Title Case" in all other circumstances.`,
     example: (
       <HorizontalNavigation label="Minerals">
-        <NavLink title="Malachite Stalactites are Neat" />
-        <NavLink title="Fluorite" />
-        <NavLink title="Magnetite" />
+        <NavLink href="#">Malachite Stalactites are Neat</NavLink>
+        <NavLink href="#">Fluorite</NavLink>
+        <NavLink href="#">Magnetite</NavLink>
       </HorizontalNavigation>
     )
   },
@@ -23,9 +23,11 @@ export default [
   Be consistent with icon usage; either all or no HorizontalNavigation should contain an icon.`,
     example: (
       <HorizontalNavigation label="Minerals">
-        <NavLink title="Malachite" />
-        <NavLink title="Fluorite" icon={<IconBlurOn />} />
-        <NavLink title="Magnetite" />
+        <NavLink href="#">Malachite</NavLink>
+        <NavLink href="#" icon={<IconBlurOn />}>
+          Fluorite
+        </NavLink>
+        <NavLink href="#">Magnetite</NavLink>
       </HorizontalNavigation>
     )
   },
@@ -34,9 +36,9 @@ export default [
     description: `Don't use HorizontalNavigation for navigation.`,
     example: (
       <HorizontalNavigation label="Navigation">
-        <NavLink title="Home" />
-        <NavLink title="Mineral Info" />
-        <NavLink title="Maps" />
+        <NavLink href="#">Home</NavLink>
+        <NavLink href="#">Mineral Info</NavLink>
+        <NavLink href="#">Maps</NavLink>
       </HorizontalNavigation>
     )
   },
@@ -45,7 +47,7 @@ export default [
     description: `Don't use HorizontalNavigation when there is only one [NavLink](/components/tab).`,
     example: (
       <HorizontalNavigation label="Minerals">
-        <NavLink title="Malachite" />
+        <NavLink href="#">Malachite</NavLink>
       </HorizontalNavigation>
     )
   }

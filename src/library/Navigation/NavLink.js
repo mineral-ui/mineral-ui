@@ -21,9 +21,7 @@ type Props = {
   /** @Private Id of the navLink panel */
   panelId?: string,
   /** @Private Selected state of NavLink */
-  selected?: boolean,
-  /** NavLink title */
-  title: React$Node
+  selected?: boolean
 };
 
 export const componentTheme = (baseTheme: Object) => ({
@@ -120,7 +118,6 @@ const ThemedButton = createThemedComponent(Button, ({ theme: baseTheme }) => {
 
 const Anchor = createStyledComponent(ThemedButton, styles.anchor, {
   displayName: 'NavLink',
-  filterProps: ['title'],
   withProps: {
     element: 'a',
     fullWidth: true,

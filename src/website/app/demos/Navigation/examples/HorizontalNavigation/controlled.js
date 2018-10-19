@@ -1,9 +1,8 @@
 /* @flow */
 import { Component } from 'react';
 import Button from '../../../../../../library/Button';
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 import DemoLayout from '../../../shared/DemoLayout';
 
 export default {
@@ -53,9 +52,9 @@ managed by the application as a controlled component through the
               selectedNavLinkIndex={this.state.selectedNavLinkIndex}
               label="Minerals"
             >
-              <NavLink title="Malachite" />
-              <NavLink title="Fluorite" />
-              <NavLink title="Magnetite" />
+              <NavLink href="/malachite">Malachite</NavLink>
+              <NavLink href="/fluorite">Fluorite</NavLink>
+              <NavLink href="/magnetite">Magnetite</NavLink>
             </HorizontalNavigation>
           </DemoLayout>
         );

@@ -1,9 +1,8 @@
 /* @flow */
 import { Fragment } from 'react';
 import { CardDivider } from '../../../../../../library/Card';
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 import DemoLayout from '../../../shared/DemoLayout';
 
 export default {
@@ -19,9 +18,9 @@ to be equal width and [\`maxNavLinkWidth\`](#max-tab-width) will not apply.`,
     const navLinks = alignments.map((alignment, index) => (
       <Fragment key={index}>
         <HorizontalNavigation align={alignment} label="Minerals">
-          <NavLink title="Malachite" />
-          <NavLink title="Fluorite" />
-          <NavLink title="Magnetite" />
+          <NavLink href="/malachite">Malachite</NavLink>
+          <NavLink href="/fluorite">Fluorite</NavLink>
+          <NavLink href="/magnetite">Magnetite</NavLink>
         </HorizontalNavigation>
         {!(index === alignments.length - 1) && <CardDivider />}
       </Fragment>

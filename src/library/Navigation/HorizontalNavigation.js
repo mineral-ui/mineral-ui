@@ -94,7 +94,7 @@ class HorizontalNavigation extends Component<Props, State> {
     let navLinkItems = [];
 
     Children.forEach(children, (navLink, index) => {
-      const { disabled, icon, id, maxWidth, title } = navLink.props;
+      const { children, disabled, icon, id, maxWidth } = navLink.props;
       if (id && ids.indexOf(id) === -1) {
         ids.push(id);
       } else if (id) {
@@ -106,7 +106,7 @@ class HorizontalNavigation extends Component<Props, State> {
       const selected = index === selectedNavLinkIndex;
       const navLinkId = id || this.getNavLinkId(index);
       const navLinkProps = {
-        children: title,
+        children,
         disabled,
         icon,
         id: navLinkId,
@@ -165,7 +165,6 @@ class HorizontalNavigation extends Component<Props, State> {
   };
 
   handleClick = (event: AnchorEvent) => {
-    event.preventDefault();
     event.persist();
     const { currentTarget: target } = event;
     const selectedNavLinkIndex = parseInt(target.getAttribute('data-index'));

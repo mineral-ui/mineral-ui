@@ -1,7 +1,6 @@
 /* @flow */
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 
 export default {
   id: 'max-width',
@@ -14,9 +13,9 @@ will take precedence.`,
   scope: { HorizontalNavigation, NavLink },
   source: `
     <HorizontalNavigation label="Minerals">
-      <NavLink title="Malachite" />
-      <NavLink maxWidth="6em" title="Fluorite Will Truncate" />
-      <NavLink title="Magnetite" />
+      <NavLink href="/malachite">Malachite</NavLink>
+      <NavLink maxWidth="6em" href="/fluorite">Fluorite Will Truncate</NavLink>
+      <NavLink href="/magnetite">Magnetite</NavLink>
     </HorizontalNavigation>
   `
 };

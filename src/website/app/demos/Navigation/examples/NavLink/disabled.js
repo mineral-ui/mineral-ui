@@ -1,7 +1,6 @@
 /* @flow */
-import HorizontalNavigation, {
-  NavLink
-} from '../../../../../../library/Navigation';
+import HorizontalNavigation from '../../../../../../library/Navigation';
+import NavLink from '../../components/NavLink';
 
 export default {
   id: 'disabled',
@@ -11,11 +10,11 @@ available for interaction.`,
   scope: { HorizontalNavigation, NavLink },
   source: `
     <HorizontalNavigation label="Minerals">
-      <NavLink title="Malachite" />
-      <NavLink title="Fluorite" />
-      <NavLink disabled title="Magnetite" />
-      <NavLink title="Malachite" />
-      <NavLink disabled title="Fluorite" />
+      <NavLink href="/malachite">Malachite</NavLink>
+      <NavLink href="/fluorite">Fluorite</NavLink>
+      <NavLink disabled href="/magnetite">Magnetite</NavLink>
+      <NavLink href="/malachite">Malachite</NavLink>
+      <NavLink disabled href="/fluorite">Fluorite</NavLink>
     </HorizontalNavigation>
   `
 };
