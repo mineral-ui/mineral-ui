@@ -1,8 +1,7 @@
 /* @flow */
 import React from 'react';
 import { componentTheme as navLinkComponentTheme } from '../../../../library/Navigation/NavLink';
-// TODO: temp
-import { componentTheme as overflowListComponentTheme } from '../../../../library/OverflowList/OverflowList';
+import { componentTheme as navListComponentTheme } from '../../../../library/Navigation/NavList';
 import bestPractices from './bestPractices';
 
 import horizontalNavigationExamples from './examples/HorizontalNavigation';
@@ -14,7 +13,7 @@ const navLinkDoc = require('!!react-docgen-loader!../../../../library/Navigation
 export default [
   {
     bestPractices,
-    componentTheme: [overflowListComponentTheme],
+    componentTheme: [navListComponentTheme],
     doc: horizontalNavigationDoc,
     examples: horizontalNavigationExamples,
     slug: 'horizontal-navigation',

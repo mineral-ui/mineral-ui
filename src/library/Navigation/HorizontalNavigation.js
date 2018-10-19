@@ -4,8 +4,7 @@ import { canUseDOM } from 'exenv';
 import { createStyledComponent } from '../styles';
 import { withTheme } from '../themes';
 import { generateId } from '../utils';
-// TODO: temp
-import NavList from '../OverflowList';
+import NavList from './NavList';
 
 type Props = {
   /** TODO: Alignment of NavLink in the list */
