@@ -1,5 +1,5 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../styles';
+import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import OverflowList, {
   componentTheme as overflowListComponentTheme
