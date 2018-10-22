@@ -31,7 +31,7 @@ next/previous arrow buttons to navigate.`,
   },
   source: `() => {
     const navLinks = oneThruTwenty.map((number) =>
-      <NavLink href={'page-' + number} key={number}>title(number)</NavLink>);
+      <NavLink href={'page-' + number} key={number}>{title(number)}</NavLink>);
 
     return (
       <HorizontalNavigation label="Minerals">

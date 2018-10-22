@@ -19,7 +19,7 @@ type Props = {
   defaultSelectedNavLinkIndex?: number,
   /** Id of HorizontalNavigation */
   id?: string,
-  /** Accessible label for HorizontalNavigation */
+  /** TODO: Still required? Accessible label for HorizontalNavigation */
   label: string,
   /** Maximum width of each NavLink */
   maxNavLinkWidth?: number | string,
@@ -46,11 +46,8 @@ type AnchorEvent = SyntheticEvent<HTMLAnchorElement>;
 
 const Root = createStyledComponent(
   'div',
+  {},
   {
-    display: 'flex'
-  },
-  {
-    displayName: 'HorizontalNavigation',
     includeStyleReset: true
   }
 );
@@ -101,14 +98,11 @@ class HorizontalNavigation extends Component<Props, State> {
           `[mineral-ui/HorizontalNavigation] NavLink id ${id} is not unique`
         );
       }
-      const panelId = this.getPanelId(index);
       const selected = index === selectedNavLinkIndex;
-      const navLinkId = id || this.getNavLinkId(index);
       const navLinkProps = {
         children,
         disabled,
         icon,
-        id: navLinkId,
         index,
         key: index,
         maxWidth: align === 'justify' ? undefined : maxWidth || maxNavLinkWidth,
@@ -117,8 +111,6 @@ class HorizontalNavigation extends Component<Props, State> {
           : (event) => {
               event.preventDefault();
             },
-        onKeyDown: this.handleKeyDown,
-        panelId,
         selected
       };
       navLinkItems.push(cloneElement(navLink, navLinkProps));
@@ -136,28 +128,20 @@ class HorizontalNavigation extends Component<Props, State> {
       'aria-labelledby': undefined
     };
 
-    const tabListProps = {
+    const navListProps = {
       align,
       'aria-label': label,
       'aria-labelledby': this.props['aria-labelledby'],
       onIncrement: this.handleIncrement,
-      role: 'tablist'
+      role: 'navigation'
     };
 
     return (
       <Root {...rootProps}>
-        <NavList {...tabListProps}>{navLinkItems}</NavList>
+        <NavList {...navListProps}>{navLinkItems}</NavList>
       </Root>
     );
   }
-
-  getPanelId = (index: number) => {
-    return `${this.id}-panel-${index}`;
-  };
-
-  getNavLinkId = (index: number) => {
-    return `${this.id}-navLink-${index}`;
-  };
 
   setRootRef = (node: ?HTMLElement) => {
     this.root = node;
@@ -178,39 +162,11 @@ class HorizontalNavigation extends Component<Props, State> {
     }
   };
 
-  // TODO: Appropriate for a simple list of links? Or should they just be tabstops?
-  handleKeyDown = (event: SyntheticKeyboardEvent<HTMLAnchorElement>) => {
-    event.persist();
-    if (['ArrowLeft', 'ArrowRight'].indexOf(event.key) !== -1) {
-      event.preventDefault();
-      const rtl = this.props.theme.direction === 'rtl';
-      const flippedDirections = {
-        ArrowLeft: 'ArrowRight',
-        ArrowRight: 'ArrowLeft'
-      };
-      const key =
-        rtl && flippedDirections[event.key]
-          ? flippedDirections[event.key]
-          : event.key;
-      this.handleIncrement(key, event);
-    }
-  };
-
   handleIncrement = (direction: string, event: SyntheticEvent<*>) => {
-    const selectedNavLinkIndex = this.getControllableValue(
-      'selectedNavLinkIndex'
+    // TODO: This does not work
+    this.root.dispatchEvent(
+      new KeyboardEvent('keydown', { key: 'ArrowRight' })
     );
-    const nextIndex =
-      direction === 'ArrowRight' || direction === 'ArrowDown'
-        ? selectedNavLinkIndex === this.lastIndex
-          ? 0
-          : this.getNonDisabledIndex(selectedNavLinkIndex + 1)
-        : selectedNavLinkIndex === 0
-          ? this.lastIndex
-          : this.getNonDisabledIndex(selectedNavLinkIndex - 1, {
-              decrease: true
-            });
-    this.setSelectedNavLinkIndex(nextIndex, event);
   };
 
   getNonDisabledIndex = (

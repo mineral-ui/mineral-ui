@@ -18,8 +18,6 @@ type Props = {
   index?: number,
   /** Maximum width of NavLink */
   maxWidth?: number | string,
-  /** @Private Id of the navLink panel */
-  panelId?: string,
   /** @Private Selected state of NavLink */
   selected?: boolean
 };
@@ -67,6 +65,14 @@ const styles = {
         color: !disabled && theme.NavLink_color_selectedHover
       },
 
+      '&:focus, &:active': {
+        color: theme.NavLink_color_selected,
+        outline: `${theme.NavLink_borderWidth_focus}px solid ${
+          theme.NavLink_borderColor_focus
+        }`,
+        outlineOffset: `-${theme.NavLink_borderWidth_focus}px`
+      },
+
       // Truncate
       '&:active > span > span > span > span > span:focus': {
         outline: 'none'
@@ -77,15 +83,7 @@ const styles = {
         color: theme.NavLink_color_selected,
         // prettier-ignore
         boxShadow:
-          `inset ${boxShadow(theme.NavLinkIndicator_thickness)[position]} ${theme.NavLink_borderColor_focus}`,
-
-        '&:focus, &:active': {
-          color: theme.NavLink_color_selected,
-          outline: `${theme.NavLink_borderWidth_focus}px solid ${
-            theme.NavLink_borderColor_focus
-          }`,
-          outlineOffset: `-${theme.NavLink_borderWidth_focus}px`
-        }
+          `inset ${boxShadow(theme.NavLinkIndicator_thickness)[position]} ${theme.NavLink_borderColor_focus}`
       }),
 
       // Button's Inner
@@ -121,7 +119,6 @@ const Anchor = createStyledComponent(ThemedButton, styles.anchor, {
   withProps: {
     element: 'a',
     fullWidth: true,
-    role: 'navLink',
     size: 'medium'
   }
 });
@@ -136,26 +133,22 @@ export default class NavLink extends Component<Props> {
       disabled,
       icon,
       index,
-      panelId,
       selected,
       ...restProps
     } = this.props;
     const anchorProps = {
-      'aria-controls': panelId,
       'aria-disabled': disabled,
       'aria-selected': selected,
       'data-index': index,
       disabled,
-      href: panelId && `#${panelId}`,
       iconStart: icon,
       minimal: true,
       selected,
-      navLinkIndex: selected ? 0 : -1,
       ...restProps
     };
 
     return (
-      <li role="presentation">
+      <li>
         <Anchor {...anchorProps}>
           <Truncate>{children}</Truncate>
         </Anchor>
