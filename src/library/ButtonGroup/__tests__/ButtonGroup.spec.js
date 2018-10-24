@@ -33,7 +33,7 @@ function mountButtonGroup(props = {}) {
 }
 
 describe('ButtonGroup', () => {
-  testDemoExamples(examples);
+  testDemoExamples(examples, { exclude: ['children'] });
 
   it('renders', () => {
     const buttonGroup = shallowButtonGroup();
