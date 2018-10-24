@@ -2,8 +2,8 @@
 import React, { Children, Component, cloneElement } from 'react';
 import { createStyledComponent } from '../styles';
 import { setFromArray, toArray } from '../utils/collections';
+import { findDeep } from '../utils/children';
 import composeEventHandlers from '../utils/composeEventHandlers';
-import Button from '../Button';
 
 type Props = {
   /** Accessible label */
@@ -188,7 +188,20 @@ const styles = ({ fullWidth, theme: baseTheme, variant }) => {
   };
 };
 
-const isChecked = (checked: number | Array<number> | Set<number>, index) => {
+// This check is intentionally loose. We cannot do a direct type comparison as
+// we want to allow for styled buttons, themed buttons, and buttons inside of
+// wrappers like Dropdowns, Popovers, and Tooltips.
+// NOTE: We can rely on displayName, without fear of it being mangled, even in
+// production, as long as it is set statically on each component
+// https://github.com/facebook/react/issues/4915#issuecomment-335803765
+const isButtonComponent = (element: React$Element<*>) => {
+  return /Button/.test(element.type.displayName);
+};
+
+const isItemAtIndexChecked = (
+  checked: number | Array<number> | Set<number>,
+  index
+) => {
   const isSet = checked instanceof Set;
   const checkedSet = isSet ? checked : setFromArray(toArray(checked));
   // $FlowFixMe - Refinement to Set not working
@@ -265,13 +278,16 @@ export default class ButtonGroup extends Component<Props, State> {
     };
     const checked = this.getControllableValue('checked');
     const buttons = Children.map(children, (child, index) => {
-      const isChildToggleable = mode;
-      const isChildChecked = isChecked(checked, index);
-      const hasNestedButton = child.type !== Button;
-      const nestedButton = hasNestedButton && child.props.children;
+      const isToggleable = Boolean(mode);
+      const isChecked = isItemAtIndexChecked(checked, index);
+      const isButton = isButtonComponent(child);
+      const nestedButton = isButton
+        ? undefined
+        : // Must be able to find styled/themed buttons inside of triggers
+          findDeep(child.props.children, isButtonComponent);
 
       return cloneElement(child, {
-        ...(isChildToggleable ? { 'aria-checked': isChildChecked } : undefined),
+        ...(isToggleable ? { 'aria-checked': isChecked } : undefined),
         ...(nestedButton
           ? {
               children: cloneElement(nestedButton, {
@@ -281,21 +297,17 @@ export default class ButtonGroup extends Component<Props, State> {
             }
           : undefined),
         'data-index': index,
-        ...(!hasNestedButton
-          ? { 'data-variant': child.props.variant }
-          : undefined),
+        ...(isButton ? { 'data-variant': child.props.variant } : undefined),
         disabled: disabled || child.props.disabled,
         key: index,
-        ...(isChildToggleable && isChildChecked
-          ? { primary: true }
-          : undefined),
+        ...(isToggleable && isChecked ? { primary: true } : undefined),
         onClick: composeEventHandlers(
           child.props.onClick,
           this.handleClick.bind(null, index)
         ),
-        ...(isChildToggleable ? { role: mode } : undefined),
+        ...(isToggleable ? { role: mode } : undefined),
         size,
-        ...(variant && !hasNestedButton
+        ...(variant && isButton
           ? { variant: child.props.variant || variant }
           : undefined)
       });

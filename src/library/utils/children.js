@@ -2,6 +2,23 @@
 import { Children } from 'react';
 import { toArray } from './collections';
 
+const hasChildren = (child: React$Element<*>): boolean =>
+  Boolean(child && child.props && child.props.children);
+
+const hasComplexChildren = (child: React$Element<*>): boolean =>
+  hasChildren(child) && typeof child.props.children === 'object';
+
+export const findDeep = (
+  children: React$Node,
+  finder: (element: React$Element<*>) => boolean
+): ?React$Element<*> =>
+  Children.toArray(children).find(
+    (child) =>
+      hasComplexChildren(child)
+        ? findDeep(child.props.children, finder)
+        : finder(child)
+  );
+
 export function findByType(children: React$Node, type: React$ComponentType<*>) {
   let match;
 

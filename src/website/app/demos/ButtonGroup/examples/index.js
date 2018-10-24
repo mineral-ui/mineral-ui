@@ -1,5 +1,6 @@
 /* @flow */
 import basic from './basic';
+import children from './children';
 import composition from './composition';
 import controlled from './controlled';
 import disabled from './disabled';
@@ -22,5 +23,6 @@ export default [
   disabled,
   icons,
   composition,
-  rtl
+  rtl,
+  children
 ];

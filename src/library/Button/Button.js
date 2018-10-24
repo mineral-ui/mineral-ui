@@ -338,6 +338,8 @@ const createRootNode = (props: Props) => {
  * Buttons are used to trigger any sort of event.
  */
 export default class Button extends Component<Props> {
+  static displayName = 'Button';
+
   static defaultProps = {
     element: 'button',
     size: 'large',
