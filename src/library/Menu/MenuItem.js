@@ -46,10 +46,10 @@ type RenderProps = {
 // come from Button (large)
 // prettier-ignore
 export const componentTheme = (baseTheme: Object) => ({
-  MenuItem_backgroundColor_active: baseTheme.gray_20,
-  MenuItem_backgroundColor_focus: baseTheme.gray_10,
-  MenuItem_backgroundColor_hover: baseTheme.gray_10,
   MenuItem_backgroundColor_selected: baseTheme.backgroundColor_theme_selected,
+  MenuItem_backgroundColor_active: baseTheme.color_gray_20,
+  MenuItem_backgroundColor_focus: baseTheme.color_gray_10,
+  MenuItem_backgroundColor_hover: baseTheme.color_gray_10,
   MenuItem_backgroundColor_selectedActive: baseTheme.backgroundColor_theme_selectedActive,
   MenuItem_backgroundColor_selectedHover: baseTheme.backgroundColor_theme_selectedHover,
   MenuItem_color: baseTheme.color,
