@@ -62,19 +62,16 @@ module.exports = {
     if (isProduction) {
       plugins.push(
         'babel-plugin-transform-react-constant-elements',
-        'babel-plugin-transform-react-inline-elements'
+        'babel-plugin-transform-react-inline-elements',
+        ['transform-react-remove-prop-types', {
+          mode: 'wrap',
+          ignoreFilenames: ['node_modules'],
+          'plugins': [
+            ['babel-plugin-flow-react-proptypes', { 'omitRuntimeTypeExport': true }],
+            'babel-plugin-transform-flow-strip-types'
+          ]
+        }]
       );
-
-      if (TARGET === 'website') {
-        plugins.push(
-          ['transform-react-remove-prop-types', {
-            'plugins': [
-              ['babel-plugin-flow-react-proptypes', { 'omitRuntimeTypeExport': true }],
-              'babel-plugin-transform-flow-strip-types'
-            ]
-          }]
-        );
-      }
     }
 
     return plugins;
