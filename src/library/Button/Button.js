@@ -28,6 +28,7 @@ export default class Button extends Component<ButtonProps> {
   render() {
     const {
       children,
+      disabled,
       iconStart,
       iconEnd,
       size = Button.defaultProps.size,
@@ -37,7 +38,9 @@ export default class Button extends Component<ButtonProps> {
     } = this.props;
 
     const rootProps = {
+      disabled,
       size,
+      tabIndex: disabled ? -1 : undefined,
       text: children,
       type,
       variant,

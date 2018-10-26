@@ -169,7 +169,7 @@ export const createButtonRootNode: CreateRootNode<
         textDecoration: 'none',
         verticalAlign: 'middle',
         width: fullWidth && '100%',
-        '&:focus': {
+        '&:focus': !disabled && {
           backgroundColor: (() => {
             if (primary) {
               return theme.Button_backgroundColor_primary_focus;
