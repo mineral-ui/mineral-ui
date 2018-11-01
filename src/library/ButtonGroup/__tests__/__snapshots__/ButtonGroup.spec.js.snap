@@ -2148,14 +2148,6 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-2:focus {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-2:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -2225,14 +2217,6 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
 .emotion-22 *::before,
 .emotion-22 *::after {
   box-sizing: inherit;
-}
-
-.emotion-22:focus {
-  background-color: #3272d9;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-22:hover {
@@ -2310,6 +2294,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 element="button"
                 onClick={[Function]}
                 size="large"
+                tabIndex={-1}
                 text="Cut"
                 type="button"
               >
@@ -2318,6 +2303,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   data-index={0}
                   disabled={true}
                   onClick={[Function]}
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2353,6 +2339,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 element="button"
                 onClick={[Function]}
                 size="large"
+                tabIndex={-1}
                 text="Copy"
                 type="button"
               >
@@ -2361,6 +2348,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   data-index={1}
                   disabled={true}
                   onClick={[Function]}
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2396,6 +2384,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 element="button"
                 onClick={[Function]}
                 size="large"
+                tabIndex={-1}
                 text="Paste"
                 type="button"
               >
@@ -2404,6 +2393,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   data-index={2}
                   disabled={true}
                   onClick={[Function]}
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2454,6 +2444,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 element="button"
                 onClick={[Function]}
                 size="large"
+                tabIndex={-1}
                 text="Cut"
                 type="button"
               >
@@ -2462,6 +2453,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   data-index={0}
                   disabled={true}
                   onClick={[Function]}
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2605,6 +2597,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 primary={true}
                 role="radio"
                 size="large"
+                tabIndex={-1}
                 text="Left"
                 type="button"
               >
@@ -2615,6 +2608,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   disabled={true}
                   onClick={[Function]}
                   role="radio"
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2654,6 +2648,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 onClick={[Function]}
                 role="radio"
                 size="large"
+                tabIndex={-1}
                 text="Center"
                 type="button"
               >
@@ -2664,6 +2659,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   disabled={true}
                   onClick={[Function]}
                   role="radio"
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2703,6 +2699,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 onClick={[Function]}
                 role="radio"
                 size="large"
+                tabIndex={-1}
                 text="Right"
                 type="button"
               >
@@ -2713,6 +2710,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   disabled={true}
                   onClick={[Function]}
                   role="radio"
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>
@@ -2866,6 +2864,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                 onClick={[Function]}
                 role="radio"
                 size="large"
+                tabIndex={-1}
                 text="Right"
                 type="button"
               >
@@ -2876,6 +2875,7 @@ exports[`ButtonGroup demo examples Snapshots: disabled 1`] = `
                   disabled={true}
                   onClick={[Function]}
                   role="radio"
+                  tabIndex={-1}
                   type="button"
                 >
                   <Styled(span)>

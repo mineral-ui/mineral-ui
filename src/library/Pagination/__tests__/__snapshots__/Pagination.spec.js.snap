@@ -310,13 +310,6 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-3:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-3:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -584,13 +577,6 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
 .emotion-27 *::before,
 .emotion-27 *::after {
   box-sizing: inherit;
-}
-
-.emotion-27:focus {
-  border-color: #1d5bbf;
-  color: #3272d9;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-27:hover {
@@ -952,6 +938,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                                                         onClick={[Function]}
                                                         onPageChange={[Function]}
                                                         size="medium"
+                                                        tabIndex={-1}
                                                         text="Previous"
                                                         type="button"
                                                         visibleRange={5}
@@ -960,6 +947,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                                                           className="emotion-3"
                                                           disabled={true}
                                                           onClick={[Function]}
+                                                          tabIndex={-1}
                                                           type="button"
                                                         >
                                                           <Styled(span)>
@@ -1333,11 +1321,13 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                                                               element="span"
                                                               minimal={true}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="…"
                                                               type="button"
                                                             >
                                                               <span
                                                                 className="emotion-27"
+                                                                tabIndex={-1}
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -2199,13 +2189,6 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-161:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-161:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -2479,13 +2462,6 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-60:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-60:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -2728,13 +2704,6 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
 .emotion-262 *::before,
 .emotion-262 *::after {
   box-sizing: inherit;
-}
-
-.emotion-262:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-262:hover {
@@ -2994,13 +2963,6 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
 .emotion-363 *::before,
 .emotion-363 *::after {
   box-sizing: inherit;
-}
-
-.emotion-363:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-363:hover {
@@ -5475,6 +5437,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                               onPageChange={[Function]}
                                                               onPageSizeChange={[Function]}
                                                               size="small"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -5483,6 +5446,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                 className="emotion-60"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -7515,6 +7479,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                               onPageChange={[Function]}
                                                               onPageSizeChange={[Function]}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -7523,6 +7488,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                 className="emotion-161"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -9555,6 +9521,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                               onPageChange={[Function]}
                                                               onPageSizeChange={[Function]}
                                                               size="large"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -9563,6 +9530,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                 className="emotion-262"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -11595,6 +11563,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                               onPageChange={[Function]}
                                                               onPageSizeChange={[Function]}
                                                               size="jumbo"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -11603,6 +11572,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                 className="emotion-363"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -12752,13 +12722,6 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-30:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-30:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -13026,13 +12989,6 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
 .emotion-54 *::before,
 .emotion-54 *::after {
   box-sizing: inherit;
-}
-
-.emotion-54:focus {
-  border-color: #1d5bbf;
-  color: #3272d9;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-54:hover {
@@ -13816,6 +13772,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                         onClick={[Function]}
                                                         onPageChange={[Function]}
                                                         size="medium"
+                                                        tabIndex={-1}
                                                         text="Previous"
                                                         type="button"
                                                         visibleRange={5}
@@ -13824,6 +13781,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                           className="emotion-30"
                                                           disabled={true}
                                                           onClick={[Function]}
+                                                          tabIndex={-1}
                                                           type="button"
                                                         >
                                                           <Styled(span)>
@@ -14197,11 +14155,13 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                               element="span"
                                                               minimal={true}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="…"
                                                               type="button"
                                                             >
                                                               <span
                                                                 className="emotion-54"
+                                                                tabIndex={-1}
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -14801,13 +14761,6 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
 .emotion-84 *::before,
 .emotion-84 *::after {
   box-sizing: inherit;
-}
-
-.emotion-84:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-84:hover {
@@ -17856,6 +17809,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                               onPageChange={[Function]}
                                                               onPageSizeChange={[Function]}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -17864,6 +17818,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                 className="emotion-84"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -18597,13 +18552,6 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-3:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-3:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -19081,6 +19029,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                                                         onClick={[Function]}
                                                         onPageChange={[Function]}
                                                         size="medium"
+                                                        tabIndex={-1}
                                                         text="Previous"
                                                         type="button"
                                                         visibleRange={5}
@@ -19089,6 +19038,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                                                           className="emotion-3"
                                                           disabled={true}
                                                           onClick={[Function]}
+                                                          tabIndex={-1}
                                                           type="button"
                                                         >
                                                           <Styled(span)>
@@ -20347,13 +20297,6 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
 .emotion-110 *::before,
 .emotion-110 *::after {
   box-sizing: inherit;
-}
-
-.emotion-110:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-110:hover {
@@ -23551,6 +23494,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                     onPageSizeChange={[Function]}
                                                                     rtl={true}
                                                                     size="medium"
+                                                                    tabIndex={-1}
                                                                     text="سابق"
                                                                     type="button"
                                                                     visibleRange={5}
@@ -23559,6 +23503,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                       className="emotion-110"
                                                                       disabled={true}
                                                                       onClick={[Function]}
+                                                                      tabIndex={-1}
                                                                       type="button"
                                                                     >
                                                                       <Styled(span)>
@@ -24216,13 +24161,6 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-53:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-53:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -24492,13 +24430,6 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-27:focus {
-  border-color: #1d5bbf;
-  color: #3272d9;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-27:hover {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -24572,13 +24503,6 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
 .emotion-3 *::before,
 .emotion-3 *::after {
   box-sizing: inherit;
-}
-
-.emotion-3:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-3:hover {
@@ -24823,13 +24747,6 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
 .emotion-103 *::before,
 .emotion-103 *::after {
   box-sizing: inherit;
-}
-
-.emotion-103:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-103:hover {
@@ -25089,13 +25006,6 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
 .emotion-153 *::before,
 .emotion-153 *::after {
   box-sizing: inherit;
-}
-
-.emotion-153:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-153:hover {
@@ -25649,6 +25559,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                               onClick={[Function]}
                                                               onPageChange={[Function]}
                                                               size="small"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -25657,6 +25568,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                 className="emotion-3"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -26030,11 +25942,13 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                     element="span"
                                                                     minimal={true}
                                                                     size="medium"
+                                                                    tabIndex={-1}
                                                                     text="…"
                                                                     type="button"
                                                                   >
                                                                     <span
                                                                       className="emotion-27"
+                                                                      tabIndex={-1}
                                                                     >
                                                                       <Styled(span)>
                                                                         <span
@@ -26550,6 +26464,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                               onClick={[Function]}
                                                               onPageChange={[Function]}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -26558,6 +26473,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                 className="emotion-53"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -26931,11 +26847,13 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                     element="span"
                                                                     minimal={true}
                                                                     size="medium"
+                                                                    tabIndex={-1}
                                                                     text="…"
                                                                     type="button"
                                                                   >
                                                                     <span
                                                                       className="emotion-27"
+                                                                      tabIndex={-1}
                                                                     >
                                                                       <Styled(span)>
                                                                         <span
@@ -27451,6 +27369,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                               onClick={[Function]}
                                                               onPageChange={[Function]}
                                                               size="large"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -27459,6 +27378,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                 className="emotion-103"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -27832,11 +27752,13 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                     element="span"
                                                                     minimal={true}
                                                                     size="medium"
+                                                                    tabIndex={-1}
                                                                     text="…"
                                                                     type="button"
                                                                   >
                                                                     <span
                                                                       className="emotion-27"
+                                                                      tabIndex={-1}
                                                                     >
                                                                       <Styled(span)>
                                                                         <span
@@ -28352,6 +28274,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                               onClick={[Function]}
                                                               onPageChange={[Function]}
                                                               size="jumbo"
+                                                              tabIndex={-1}
                                                               text="Previous"
                                                               type="button"
                                                               visibleRange={5}
@@ -28360,6 +28283,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                 className="emotion-153"
                                                                 disabled={true}
                                                                 onClick={[Function]}
+                                                                tabIndex={-1}
                                                                 type="button"
                                                               >
                                                                 <Styled(span)>
@@ -28733,11 +28657,13 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                                     element="span"
                                                                     minimal={true}
                                                                     size="medium"
+                                                                    tabIndex={-1}
                                                                     text="…"
                                                                     type="button"
                                                                   >
                                                                     <span
                                                                       className="emotion-27"
+                                                                      tabIndex={-1}
                                                                     >
                                                                       <Styled(span)>
                                                                         <span
@@ -29384,13 +29310,6 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-9:focus {
-  border-color: #1d5bbf;
-  color: #3272d9;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-9:hover {
   color: #3272d9;
   -webkit-text-decoration: none;
@@ -29880,11 +29799,13 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                                                               element="span"
                                                               minimal={true}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="…"
                                                               type="button"
                                                             >
                                                               <span
                                                                 className="emotion-9"
+                                                                tabIndex={-1}
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -30064,11 +29985,13 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                                                               element="span"
                                                               minimal={true}
                                                               size="medium"
+                                                              tabIndex={-1}
                                                               text="…"
                                                               type="button"
                                                             >
                                                               <span
                                                                 className="emotion-9"
+                                                                tabIndex={-1}
                                                               >
                                                                 <Styled(span)>
                                                                   <span

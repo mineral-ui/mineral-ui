@@ -908,14 +908,6 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-2:focus {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-2:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1021,6 +1013,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                     onBlur={[Function]}
                     role="button"
                     size="large"
+                    tabIndex={-1}
                     text="Open Popover"
                     type="button"
                   >
@@ -1033,6 +1026,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                       disabled={true}
                       onBlur={[Function]}
                       role="button"
+                      tabIndex={-1}
                       type="button"
                     >
                       <Styled(span)>
