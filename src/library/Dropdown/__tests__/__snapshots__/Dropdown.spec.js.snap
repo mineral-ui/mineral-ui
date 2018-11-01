@@ -1685,14 +1685,6 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-2:focus {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-2:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1842,6 +1834,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
                       onKeyUp={[Function]}
                       role="button"
                       size="large"
+                      tabIndex={-1}
                       text="Menu"
                       type="button"
                     >
@@ -1857,6 +1850,7 @@ exports[`Dropdown demo examples Snapshots: disabled 1`] = `
                         onKeyDown={[Function]}
                         onKeyUp={[Function]}
                         role="button"
+                        tabIndex={-1}
                         type="button"
                       >
                         <Styled(span)>

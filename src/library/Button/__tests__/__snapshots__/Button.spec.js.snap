@@ -1340,14 +1340,6 @@ exports[`Button demo examples Snapshots: default 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-14:focus {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-14:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1549,12 +1541,14 @@ exports[`Button demo examples Snapshots: default 1`] = `
             disabled={true}
             element="button"
             size="large"
+            tabIndex={-1}
             text="Disabled"
             type="button"
           >
             <button
               className="emotion-14"
               disabled={true}
+              tabIndex={-1}
               type="button"
             >
               <Styled(span)>
@@ -2991,14 +2985,6 @@ exports[`Button demo examples Snapshots: icons 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-36:focus {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-36:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -4025,12 +4011,14 @@ exports[`Button demo examples Snapshots: icons 1`] = `
               disabled={true}
               element="button"
               size="large"
+              tabIndex={-1}
               text="Disabled"
               type="button"
             >
               <button
                 className="emotion-36"
                 disabled={true}
+                tabIndex={-1}
                 type="button"
               >
                 <Styled(span)>
@@ -4914,13 +4902,6 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-14:focus {
-  border-color: #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-14:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -5132,12 +5113,14 @@ exports[`Button demo examples Snapshots: minimal 1`] = `
             element="button"
             minimal={true}
             size="large"
+            tabIndex={-1}
             text="Disabled"
             type="button"
           >
             <button
               className="emotion-14"
               disabled={true}
+              tabIndex={-1}
               type="button"
             >
               <Styled(span)>
@@ -5567,14 +5550,6 @@ exports[`Button demo examples Snapshots: primary 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-14:focus {
-  background-color: #3272d9;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-14:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -5786,12 +5761,14 @@ exports[`Button demo examples Snapshots: primary 1`] = `
             element="button"
             primary={true}
             size="large"
+            tabIndex={-1}
             text="Disabled"
             type="button"
           >
             <button
               className="emotion-14"
               disabled={true}
+              tabIndex={-1}
               type="button"
             >
               <Styled(span)>

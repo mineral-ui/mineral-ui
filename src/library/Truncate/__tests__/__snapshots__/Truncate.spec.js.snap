@@ -12,7 +12,7 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
 }
 
 .emotion-0:focus {
-  outline: 1px solid #3272d9;
+  outline: 1px solid #1d5bbf;
   outline-offset: -1px;
 }
 
@@ -24,6 +24,17 @@ exports[`Truncate does not render tooltip when not truncated 1`] = `
       className="emotion-0"
     >
       Long text string that hopefully truncates
+      <EventListener
+        listeners={
+          Array [
+            Object {
+              "event": "resize",
+              "handler": [Function],
+              "target": "window",
+            },
+          ]
+        }
+      />
     </span>
   </Truncate>
 </Truncate>
@@ -41,7 +52,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
 }
 
 .emotion-0:focus {
-  outline: 1px solid #3272d9;
+  outline: 1px solid #1d5bbf;
   outline-offset: -1px;
 }
 
@@ -173,6 +184,17 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                                   tabIndex={0}
                                 >
                                   Long text string that hopefully truncates
+                                  <EventListener
+                                    listeners={
+                                      Array [
+                                        Object {
+                                          "event": "resize",
+                                          "handler": [Function],
+                                          "target": "window",
+                                        },
+                                      ]
+                                    }
+                                  />
                                 </span>
                               </Truncate>
                             </span>

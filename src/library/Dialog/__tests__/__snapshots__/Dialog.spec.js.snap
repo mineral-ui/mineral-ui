@@ -733,14 +733,6 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
   box-sizing: inherit;
 }
 
-.emotion-37:focus {
-  background-color: #2a854e;
-  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #20693d;
-  color: #afbacc;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .emotion-37:hover {
   color: #afbacc;
   -webkit-text-decoration: none;
@@ -1364,6 +1356,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                           minimal={false}
                                                           primary={true}
                                                           size="medium"
+                                                          tabIndex={-1}
                                                           text="Continue"
                                                           type="button"
                                                           variant="success"
@@ -1371,6 +1364,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                           <button
                                                             className="emotion-37"
                                                             disabled={true}
+                                                            tabIndex={-1}
                                                             type="button"
                                                           >
                                                             <Styled(span)>
