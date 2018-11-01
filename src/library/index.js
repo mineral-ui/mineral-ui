@@ -30,6 +30,7 @@ export { default as Grid, GridItem } from './Grid';
 export { default as Icon } from './Icon';
 export { default as Link } from './Link';
 export { default as Menu, MenuDivider, MenuGroup, MenuItem } from './Menu';
+export { NavItem, PrimaryNav, SecondaryNav } from './Navigation';
 export { default as Pagination } from './Pagination';
 export { default as Popover } from './Popover';
 export { default as Radio, RadioGroup } from './Radio';
