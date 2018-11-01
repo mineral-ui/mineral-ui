@@ -234,6 +234,32 @@ const demoRoutes: DemoRoutes = [
       title: 'MenuItem'
     }
   ],
+  [
+    {
+      description: 'Redirect navigation to primary-nav',
+      redirect: 'primary-nav',
+      slug: 'navigation',
+      title: 'Navigation'
+    },
+    {
+      description:
+        'NavItem, along with either PrimaryNav or SecondaryNav, provides navigation options for an app.',
+      slug: 'nav-item',
+      title: 'NavItem'
+    },
+    {
+      description:
+        'PrimaryNav provides the main, top-level navigation for an app, usually in the page header.',
+      slug: 'primary-nav',
+      title: 'PrimaryNav'
+    },
+    {
+      description:
+        'SecondaryNav serves additional navigation needs for your app.',
+      slug: 'secondary-nav',
+      title: 'SecondaryNav'
+    }
+  ],
   {
     description:
       'Pagination offers a means to control the space consumed by a collection of items by limiting the page size and providing navigation for access to all pages.',

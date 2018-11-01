@@ -16,13 +16,10 @@ const data: MenuItems = [
 const shortData: MenuItems = [{ text: 'Reload' }];
 
 const navData: MenuItems = [
-  { text: 'Preferences' },
-  { text: 'Account' },
-  { text: 'About us' },
-  { text: 'Pricing' },
-  { text: 'Community' },
-  { text: 'Help' },
-  { text: 'Log in' }
+  { text: 'Export Data' },
+  { text: 'Delete Data' },
+  { text: 'Dashboard' },
+  { text: 'Homepage' }
 ];
 
 const bestPractices: BestPractices = [
@@ -49,9 +46,9 @@ special case.`,
   },
   {
     type: 'dont',
-    description: `Don't use Dropdown for navigation, even on mobile devices.
-Either reduce the amount of navigation in your application, or consider building
-a drawer with the [Menu](/components/menu).`,
+    description: `Don't mix navigational and action items in Dropdown. If using 
+ Dropdown for navigational purposes, consider using a 
+ [navigation component](/components/navigation) instead.`,
     example: (
       <Dropdown data={navData}>
         <Button iconStart={<IconMenu />} />

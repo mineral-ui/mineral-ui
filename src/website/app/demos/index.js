@@ -16,6 +16,7 @@ import flex from './Flex';
 import grid from './Grid';
 import link from './Link';
 import menu from './Menu';
+import navigation from './Navigation';
 import popover from './Popover';
 import pagination from './Pagination';
 import radio from './Radio';
@@ -44,6 +45,7 @@ const demos = flatten([
   icon,
   link,
   menu,
+  navigation,
   popover,
   pagination,
   radio,
