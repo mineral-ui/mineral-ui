@@ -1,3 +1,20 @@
+<a name="0.49.0"></a>
+# [0.49.0](https://github.com/mineral-ui/mineral-ui/compare/v0.48.0...v0.49.0) (2018-11-05)
+
+
+### Bug Fixes
+
+* Fix error when importing from package index ([c121074](https://github.com/mineral-ui/mineral-ui/commit/c121074))
+* **button-group:** Allow for styled/themed buttons ([cfa9235](https://github.com/mineral-ui/mineral-ui/commit/cfa9235))
+* **Menu:** Assign correct colors to MenuItem backgroundColor theme vars ([6768ce9](https://github.com/mineral-ui/mineral-ui/commit/6768ce9))
+
+
+### Performance Improvements
+
+* Enable component prop-types to be removed in user apps during production mode minification ([00754c1](https://github.com/mineral-ui/mineral-ui/commit/00754c1))
+
+
+
 <a name="0.48.0"></a>
 # [0.48.0](https://github.com/mineral-ui/mineral-ui/compare/v0.47.0...v0.48.0) (2018-10-17)
 
