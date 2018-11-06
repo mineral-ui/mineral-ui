@@ -2,15 +2,10 @@
 import React from 'react';
 import Icon from 'mineral-ui/Icon';
 
-type Props = {
-  size?: string | 'small' | 'medium' | 'large',
-  color?: string,
-  rtl?: boolean,
-  title?: string
-};
+import type { IconProps } from 'mineral-ui/Icon/types';
 
 /* eslint-disable prettier/prettier */
-export default function IconAlarmOn(props: Props) {
+export default function IconAlarmOn(props: IconProps) {
   const iconProps = {
     rtl: false,
     ...props
