@@ -18,9 +18,9 @@ import _Label from './Label';
 
 const REGEX_LABEL_DELIMITER = /\s*~\s*/;
 
-type Props = {
+type MarkdownProps = {
   anchors?: boolean,
-  children: React$Node,
+  children: ?React$Node,
   className?: string,
   scope?: {
     [string]: React$ComponentType<*>
@@ -30,7 +30,7 @@ type Props = {
 
 type mdCodeProps = {
   language?: string,
-  children?: string,
+  children: ?string,
   code?: string
 };
 
@@ -316,7 +316,7 @@ function isNormalLink(url) {
   return REGEX_IS_NON_ROUTED_LINK.test(url);
 }
 
-const Markdown = (props: Props) => {
+const Markdown = (props: MarkdownProps) => {
   const {
     anchors,
     children,

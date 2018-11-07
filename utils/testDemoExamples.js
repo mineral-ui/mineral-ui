@@ -4,17 +4,10 @@ import semver from 'semver';
 import { LiveProvider, LivePreview } from 'react-live';
 import { mountInThemeProvider, ssrInThemeProvider } from '../utils/enzymeUtils';
 
-type Example = {
-  title: string,
-  scope?: Object,
-  id: string,
-  source?: string
-};
-type Examples = Array<Example>;
-type Options = {
-  exclude?: Array<string>, // Example id
-  contextPolyfill?: boolean
-};
+import type {
+  Example,
+  Examples
+} from '../src/website/app/pages/ComponentDoc/types';
 
 const mountExample = (example: Example) => {
   const [, wrapper] = mountInThemeProvider(
@@ -51,7 +44,10 @@ const ssrExample = (example: Example) => {
 
 export default function testDemoExamples(
   examples: Examples,
-  options: Options = {}
+  options: {
+    exclude?: Array<string>, // Example id
+    contextPolyfill?: boolean
+  } = {}
 ) {
   const { exclude, contextPolyfill } = options;
 

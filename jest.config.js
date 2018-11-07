@@ -7,7 +7,6 @@ module.exports = {
     '/website/'
   ],
   moduleNameMapper: {
-    '.*react-docgen-loader.*': '<rootDir>/utils/emptyObject.js',
     '.(md|svg)$': '<rootDir>/utils/emptyString.js'
   },
   setupFiles: ['raf/polyfill'],

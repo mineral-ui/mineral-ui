@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import LiveProvider from '../../../LiveProvider';
-import customSortableHeaderCell from '../../../demos/Table/examples/customSortableHeaderCell';
+import customSortableHeaderCell from '../../../demos/Table/Table/examples/customSortableHeaderCell';
 
 const { scope, source } = customSortableHeaderCell;
 

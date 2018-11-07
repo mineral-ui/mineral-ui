@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { canUseDOM } from 'exenv';
 
 type Props = {
-  children?: any,
+  children: React$Node,
   id?: string
 };
 

@@ -86,7 +86,8 @@ export default function SiteLink(props: Props) {
     size: 'medium'
   };
 
-  delete rootProps.context; // Ignore context prop injected from Marksy.compile()
+  // $FlowFixMe - Ignore context prop injected from Marksy.compile()
+  delete rootProps.context;
 
   return (
     <Root {...rootProps}>

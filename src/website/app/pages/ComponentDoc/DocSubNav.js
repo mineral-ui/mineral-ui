@@ -4,10 +4,10 @@ import { createStyledComponent, pxToEm } from '../../../../library/styles';
 import Link from '../../SiteLink';
 import Section from './DocSection';
 
-type Props = {
-  bestPractices?: Array<Object>,
-  examples?: Array<any>,
-  whenHowToUse?: string
+import type { ComponentDocType } from './types';
+
+type DocSubNavProps = {
+  componentDoc: ComponentDocType
 };
 
 const styles = {
@@ -47,8 +47,9 @@ const Root = createStyledComponent(Section, styles.subnav, {
 });
 const NavElement = createStyledComponent(Link, styles.navElement);
 
-export default function DocSubNav(props: Props) {
-  const { bestPractices, examples, whenHowToUse, ...restProps } = props;
+export default function DocSubNav(props: DocSubNavProps) {
+  const { componentDoc, ...rootProps } = props;
+  const { bestPractices, examples, whenHowToUse } = componentDoc;
   // there is no Examples h2, so we just link to the first example.
   let firstExampleId = 'examples';
   if (examples && examples.length > 0) {
@@ -78,5 +79,5 @@ export default function DocSubNav(props: Props) {
     );
   }
 
-  return navElements.length > 1 && <Root {...restProps}>{navElements}</Root>;
+  return navElements.length > 1 && <Root {...rootProps}>{navElements}</Root>;
 }

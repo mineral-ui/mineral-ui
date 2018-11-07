@@ -1,6 +1,7 @@
 /* @flow */
 const path = require('path');
 const webpack = require('webpack');
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
@@ -80,7 +81,13 @@ module.exports = {
           context: './src/website/public',
           from: '**/*'
         }
-      ])
+      ]),
+      new CircularDependencyPlugin({
+        exclude: /node_modules/,
+        failOnError: false, // TODO: Set to true once resolve all current issues
+        allowAsyncCycles: false,
+        cwd: process.cwd()
+      })
     ];
 
     if (ANALYZE) {

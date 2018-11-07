@@ -1,6 +1,7 @@
 /* @flow */
 import flatten from 'lodash/flatten';
 import createKeyMap from '../utils/createKeyMap';
+
 import avatar from './Avatar';
 import button from './Button';
 import buttonGroup from './ButtonGroup';
