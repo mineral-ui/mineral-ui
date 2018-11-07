@@ -17,6 +17,7 @@ describe('mapComponentThemes', () => {
         Source_four: 'D'
       }
     };
+
     override = {
       name: 'Override',
       theme: {

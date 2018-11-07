@@ -2,7 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Icon from '../Icon';
-import examples from '../../../website/app/demos/Icon/examples';
+import examples from '../../../website/app/demos/Icon/Icon/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 

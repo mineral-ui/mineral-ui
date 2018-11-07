@@ -1,8 +1,9 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import FormFieldDivider, { componentTheme } from '../FormFieldDivider';
-import examples from '../../../website/app/demos/Form/examples/FormFieldDivider';
+import { formFieldDividerTheme } from '../themes';
+import FormFieldDivider from '../FormFieldDivider';
+import examples from '../../../website/app/demos/Form/FormFieldDivider/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -29,7 +30,7 @@ describe('FormFieldDivider', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <FormFieldDivider />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(formFieldDividerTheme)
     );
   });
 });

@@ -3,7 +3,7 @@ import React from 'react';
 import Tabs from '../Tabs';
 import Tab from '../Tab';
 import TabPanel from '../TabPanel';
-import examples from '../../../website/app/demos/Tabs/examples';
+import examples from '../../../website/app/demos/Tabs/Tabs/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
 

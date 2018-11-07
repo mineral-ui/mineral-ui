@@ -1,8 +1,9 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import MenuDivider, { componentTheme } from '../MenuDivider';
-import examples from '../../../website/app/demos/Menu/examples/MenuDivider';
+import { menuDividerTheme } from '../themes';
+import MenuDivider from '../MenuDivider';
+import examples from '../../../website/app/demos/Menu/MenuDivider/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -29,7 +30,7 @@ describe('MenuDivider', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <MenuDivider />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(menuDividerTheme)
     );
   });
 });

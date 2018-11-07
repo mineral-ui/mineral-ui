@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import Box from '../../Box';
 import StartEnd from '../StartEnd';
-import examples from '../../../website/app/demos/StartEnd/examples';
+import examples from '../../../website/app/demos/StartEnd/StartEnd/examples';
 
 function shallowStartEnd(startEndProps = {}, boxProps = {}) {
   return shallow(

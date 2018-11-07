@@ -2,10 +2,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Tooltip, { componentTheme } from '../Tooltip';
+import Tooltip, { tooltipTheme } from '../';
 import PopoverContent from '../../Popover/PopoverContent';
 import PopoverTrigger from '../../Popover/PopoverTrigger';
-import examples from '../../../website/app/demos/Tooltip/examples';
+import examples from '../../../website/app/demos/Tooltip/Tooltip/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -105,7 +105,7 @@ describe('Tooltip', () => {
       <Tooltip id="test" content="content" isOpen>
         trigger
       </Tooltip>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(tooltipTheme)
     );
   });
 

@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import Tab, { componentTheme } from '../Tab';
+import { Tab, tabTheme } from '../';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -34,7 +34,7 @@ describe('Tab', () => {
     };
     testThemeOverrides(
       <Tab {...tabProps}>test</Tab>,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(tabTheme, {
         excludeKeys: ['Tab_color']
       })
     );

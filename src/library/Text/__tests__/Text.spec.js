@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Text from '../Text';
 import textWithThemeOverrides from '../textWithThemeOverrides';
-import examples from '../../../website/app/demos/Text/examples';
+import examples from '../../../website/app/demos/Text/Text/examples';
 import renderComponentStylesToString from '../../../../utils/renderComponentStylesToString';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';

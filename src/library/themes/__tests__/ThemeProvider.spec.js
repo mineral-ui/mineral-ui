@@ -2,8 +2,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import ThemeProvider from '../ThemeProvider';
-import Sample from '../../../website/app/demos/ThemeProvider/components/Sample';
-import examples from '../../../website/app/demos/ThemeProvider/examples';
+import Sample from '../../../website/app/demos/ThemeProvider/common/Sample';
+import examples from '../../../website/app/demos/ThemeProvider/ThemeProvider/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
 // Allow full theme values in snapshots for ThemeProvider

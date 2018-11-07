@@ -3,7 +3,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mineralTheme } from '../../themes';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
-import OverflowContainer, { componentTheme } from '../OverflowContainer';
+import { overflowContainerTheme } from '../themes';
+import OverflowContainer from '../OverflowContainer';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
@@ -36,7 +37,7 @@ describe('OverflowContainer', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <OverflowContainer />,
-      getProcessedComponentThemeKeys(componentTheme(mineralTheme))
+      getProcessedComponentThemeKeys(overflowContainerTheme(mineralTheme))
     );
   });
 

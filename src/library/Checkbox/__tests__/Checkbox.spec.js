@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Checkbox from '../Checkbox';
-import examples from '../../../website/app/demos/Checkbox/examples';
+import examples from '../../../website/app/demos/Checkbox/Checkbox/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 

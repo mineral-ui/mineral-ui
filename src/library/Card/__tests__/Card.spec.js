@@ -2,7 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Card from '../Card';
-import examples from '../../../website/app/demos/Card/examples';
+import examples from '../../../website/app/demos/Card/Card/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 

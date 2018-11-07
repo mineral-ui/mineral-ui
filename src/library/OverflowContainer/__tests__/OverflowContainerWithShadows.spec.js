@@ -2,9 +2,8 @@
 import React from 'react';
 import { mineralTheme } from '../../themes';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
-import OverflowContainerWithShadows, {
-  componentTheme
-} from '../OverflowContainerWithShadows';
+import { overflowContainerWithShadowsTheme } from '../themes';
+import OverflowContainerWithShadows from '../OverflowContainerWithShadows';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
@@ -39,14 +38,17 @@ describe('OverflowContainerWithShadows', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <OverflowContainerWithShadows {...defaultProps} />,
-      getProcessedComponentThemeKeys(componentTheme(mineralTheme), {
-        excludeKeys: [
-          'OverflowContainerWithShadows_boxShadowBottom',
-          'OverflowContainerWithShadows_boxShadowLeft',
-          'OverflowContainerWithShadows_boxShadowRight',
-          'OverflowContainerWithShadows_boxShadowTop'
-        ]
-      })
+      getProcessedComponentThemeKeys(
+        overflowContainerWithShadowsTheme(mineralTheme),
+        {
+          excludeKeys: [
+            'OverflowContainerWithShadows_boxShadowBottom',
+            'OverflowContainerWithShadows_boxShadowLeft',
+            'OverflowContainerWithShadows_boxShadowRight',
+            'OverflowContainerWithShadows_boxShadowTop'
+          ]
+        }
+      )
     );
   });
 
