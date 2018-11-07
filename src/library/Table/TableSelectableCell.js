@@ -1,47 +1,16 @@
 /* @flow */
 import React, { Component } from 'react';
-import { createStyledComponent } from '../styles';
-import Checkbox from '../Checkbox';
-import TableCell, {
-  componentTheme as tableCellComponentTheme
-} from './TableCell';
-import TableHeaderCell, {
-  componentTheme as tableHeaderCellComponentTheme
-} from './TableHeaderCell';
-import { TableContext } from './TableBase';
+import TableCell from './TableCell';
+import TableHeaderCell from './TableHeaderCell';
+import TableContext from './TableContext';
+import { PaddedCheckbox } from './styled';
 
-type Props = {
-  checked?: boolean,
-  disabled?: boolean,
-  indeterminate?: boolean,
-  isHeader?: boolean,
-  label: string,
-  onChange: () => void
-};
+import type { TableSelectableCellProps } from './types';
 
-const PaddedCheckbox = createStyledComponent(
-  Checkbox,
-  ({ density, isHeader, theme: baseTheme }) => {
-    const theme = isHeader
-      ? tableHeaderCellComponentTheme(baseTheme)
-      : tableCellComponentTheme(baseTheme);
-    const themePrefix = isHeader ? 'TableHeaderCell' : 'TableCell';
-    const paddingVertical =
-      density === 'spacious'
-        ? theme[`${themePrefix}_paddingVertical_spacious`]
-        : theme[`${themePrefix}_paddingVertical`];
-
-    return {
-      padding: `${paddingVertical} ${theme[`${themePrefix}_paddingHorizontal`]}`
-    };
-  },
-  {
-    withProps: { hideLabel: true }
-  }
-);
-
-export default class TableSelectableCell extends Component<Props> {
-  shouldComponentUpdate(nextProps: Props) {
+export default class TableSelectableCell extends Component<
+  TableSelectableCellProps
+> {
+  shouldComponentUpdate(nextProps: TableSelectableCellProps) {
     return (
       this.props.checked !== nextProps.checked ||
       this.props.indeterminate !== nextProps.indeterminate

@@ -8,3 +8,5 @@ export { default as CardImage } from './CardImage';
 export { default as CardStatus } from './CardStatus';
 export { default as CardTitle } from './CardTitle';
 export { default as CardTitleMenu } from './CardTitleMenu';
+
+export * from './themes';

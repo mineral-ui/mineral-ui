@@ -1,38 +1,13 @@
 /* @flow */
 import { Component } from 'react';
 
-type Props = {
-  children: (props: Object) => React$Node,
-  comparators?: Comparators,
-  data: Data,
-  defaultSort?: Sort,
-  onSort?: (sort: Sort) => void,
-  sort?: Sort,
-  sortComparator: SortComparator
-};
-
-type State = {
-  sort: ?Sort
-};
-
-type Data = Array<Object>;
-
-export type Sort = {
-  key: string,
-  descending?: boolean
-};
-
-export type SortComparator = (a: Object, b: Object, key: string) => -1 | 0 | 1;
-
-export type Comparators = { [string]: SortComparator };
-
-type SortFn = (Sort) => void;
-
-export type SortableType = {
-  data: Data,
-  sort: ?Sort,
-  sortFn: SortFn
-};
+import type {
+  Sort,
+  SortableProps,
+  SortableState,
+  SortComparator,
+  SortFn
+} from './types';
 
 const normalizedValue = (value) =>
   value === null || value === undefined
@@ -48,7 +23,7 @@ export const defaultSortComparator: SortComparator = (a, b, key) => {
   return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
 };
 
-export default class Sortable extends Component<Props, State> {
+export default class Sortable extends Component<SortableProps, SortableState> {
   static defaultProps = {
     sortComparator: defaultSortComparator
   };

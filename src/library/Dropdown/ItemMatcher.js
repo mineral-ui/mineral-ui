@@ -1,5 +1,5 @@
 /* @flow */
-import type { Item, Items } from '../Menu/Menu';
+import type { MenuItemType, MenuItems } from '../Menu/types';
 
 export default class ItemMatcher {
   keys: string = '';
@@ -8,7 +8,11 @@ export default class ItemMatcher {
 
   searchIndex: number;
 
-  findMatchingItem = (items: Items, highlightedIndex: ?number, key: string) => {
+  findMatchingItem = (
+    items: MenuItems,
+    highlightedIndex: ?number,
+    key: string
+  ) => {
     if (!this.isMatchableCharacter(key)) {
       return;
     }
@@ -27,7 +31,7 @@ export default class ItemMatcher {
   };
 
   findMatchingItemInRange = (
-    items: Array<Item>,
+    items: Array<MenuItemType>,
     start: number,
     end: number
   ) => {

@@ -1,23 +1,28 @@
 /* @flow */
 import React, { Component } from 'react';
 import memoizeOne from 'memoize-one';
-import { type Props, createRootNode } from './Text';
+import { createTextRootNode } from './styled';
 import ElementContext from './ElementContext';
+import { APPEARANCE } from './constants';
 
-export default class TextProvider extends Component<Props> {
+import type { TextProviderDefaultProps, TextProviderProps } from './types';
+
+export default class TextProvider extends Component<TextProviderProps> {
+  static defaultProps: TextProviderDefaultProps = {
+    appearance: APPEARANCE.p,
+    element: 'p'
+  };
+
   // Must be an instance method to avoid affecting other instances memoized keys
   getRootNode = memoizeOne(
-    createRootNode,
-    (nextProps: Props, prevProps: Props) =>
+    createTextRootNode,
+    (nextProps: TextProviderProps, prevProps: TextProviderProps) =>
       nextProps.element === prevProps.element
   );
 
   render() {
-    const Root = this.getRootNode(this.props);
-    const { parentElement: ignoreParentElement, ...restProps } = this.props;
-    const rootProps = {
-      ...restProps
-    };
+    const Root = this.getRootNode(this.props, TextProvider.defaultProps);
+    const { parentElement: ignoreParentElement, ...rootProps } = this.props;
 
     return (
       <ElementContext.Provider value={this.props.element}>

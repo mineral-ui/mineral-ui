@@ -2,152 +2,19 @@
 import React, { Component } from 'react';
 import { canUseDOM } from 'exenv';
 import FontFaceObserver from 'fontfaceobserver';
-import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
-import FauxControl, {
-  componentTheme as fauxControlComponentTheme
-} from '../FauxControl/FauxControl';
+import { TextAreaRoot as Root, Input } from './styled';
+import { SIZE, SIZE_TO_ROWS } from './constants';
 
-type Props = {
-  /** Automatically adjust the height of the input to fit the content */
-  autoSize?: boolean,
-  /** @Private CSS className */
-  className?: string,
-  /** Initial value of the input. Primarily for use with uncontrolled components */
-  defaultValue?: string,
-  /** Disables the input */
-  disabled?: boolean,
-  /** ref for the input */
-  inputRef?: (node: ?React$Component<*, *>) => void,
-  /** Props to be applied directly to the root element, rather than the input */
-  rootProps?: Object,
-  /** Indicates that the value of the element is invalid */
-  invalid?: boolean,
-  /**
-   * @Private Used internally in conjunction with autoSize prop. Must also
-   * support a custom function.
-   */
-  onInput?: (event: SyntheticEvent<>) => void,
-  /** Function called when input value changes */
-  onChange?: (event: SyntheticEvent<>) => void,
-  /** Indicates that the user cannot modify the value of the input */
-  readOnly?: boolean,
-  /** Indicates that the user must fill in a value before submitting a form */
-  required?: boolean,
-  /** Indicates whether input is resizable. _Not currently supported in IE/Edge._ */
-  resizeable?: boolean,
-  /** The number of visible text lines in the input */
-  rows?: number,
-  /** Available sizes */
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  /**
-   * The initial value of the input. Primarily for use with controlled
-   * components.  If this prop is specified, an onChange handler must also be
-   * specified.  Also see `defaultValue`.
-   */
-  value?: string,
-  /** Available variants */
-  variant?: 'success' | 'warning' | 'danger'
-};
+import { textAreaPropTypes } from './propTypes';
+import type { TextAreaDefaultProps, TextAreaProps } from './types';
 
-export const componentTheme = (baseTheme: Object) =>
-  mapComponentThemes(
-    {
-      name: 'FauxControl',
-      theme: fauxControlComponentTheme(baseTheme)
-    },
-    {
-      name: 'TextArea',
-      theme: {
-        // The following padding values make appearances equivalent to TextInputs of same size when rows=1.
-        // This enables usage of a TextArea as a single line input that can accept multiple lines of text.
-        TextArea_paddingVertical_jumbo: pxToEm(14.5),
-        TextArea_paddingVertical_large: pxToEm(8.5),
-        TextArea_paddingVertical_medium: pxToEm(4.5),
-        TextArea_paddingVertical_small: pxToEm(2)
-      }
-    },
-    baseTheme
-  );
+export default class TextArea extends Component<TextAreaProps> {
+  static defaultProps: TextAreaDefaultProps = {
+    size: SIZE.large
+  };
 
-const ThemedFauxControl = createThemedComponent(
-  FauxControl,
-  ({ theme: baseTheme }) =>
-    mapComponentThemes(
-      {
-        name: 'TextArea',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'FauxControl',
-        theme: {}
-      },
-      baseTheme
-    )
-);
+  static propTypes = textAreaPropTypes;
 
-const styles = {
-  textArea: ({ resizeable, size, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    const fontSize =
-      size === 'small'
-        ? theme.TextArea_fontSize_small
-        : theme.TextArea_fontSize;
-    const paddingVerticalNormalized = getNormalizedValue(
-      theme[`TextArea_paddingVertical_${size}`],
-      fontSize
-    );
-
-    return {
-      backgroundColor: 'transparent',
-      border: 0,
-      boxShadow: 'none',
-      flex: '1 1 auto',
-      fontFamily: 'inherit',
-      lineHeight: theme.lineHeight_prose,
-      margin: theme.TextArea_borderWidth,
-      // minHeight value is an attempt to display a single line of text.
-      // It is needed when a user manually resizes a textarea.
-      minHeight: `${parseFloat(paddingVerticalNormalized) * 2 +
-        parseFloat(theme.TextArea_fontSize) * theme.lineHeight +
-        parseFloat(pxToEm(parseFloat(theme.TextArea_borderWidth) * 2)) +
-        parseFloat(pxToEm(2))}em`,
-      minWidth: 0,
-      outline: 0,
-      paddingBottom: paddingVerticalNormalized,
-      paddingTop: paddingVerticalNormalized,
-      resize: resizeable ? 'vertical' : 'none',
-      width: '100%'
-    };
-  },
-  root: {
-    alignItems: 'center',
-    cursor: 'text',
-    display: 'flex',
-    width: '100%'
-  }
-};
-
-const Root = createStyledComponent(ThemedFauxControl, styles.root, {
-  displayName: 'TextArea'
-});
-const _TextArea = createStyledComponent('textarea', styles.textArea, {
-  rootEl: 'textarea'
-});
-
-const sizeToRows = {
-  small: 2,
-  medium: 6,
-  large: 8,
-  jumbo: 12
-};
-
-/**
- * TextArea allows your app to accept a potentially lengthy text value from the
- * user.
- */
-export default class TextArea extends Component<Props> {
   textArea: ?HTMLTextAreaElement;
 
   componentDidMount() {
@@ -166,7 +33,7 @@ export default class TextArea extends Component<Props> {
     }
   }
 
-  componentDidUpdate(prevProps: Props) {
+  componentDidUpdate(prevProps: TextAreaProps) {
     const { autoSize, rows, size, value } = this.props;
     const {
       autoSize: prevAutoSize,
@@ -202,7 +69,7 @@ export default class TextArea extends Component<Props> {
       resizeable = true,
       rootProps: otherRootProps,
       rows,
-      size = 'large',
+      size,
       variant,
       ...restProps
     } = this.props;
@@ -222,14 +89,14 @@ export default class TextArea extends Component<Props> {
       readOnly,
       required,
       resizeable: autoSize ? false : resizeable,
-      rows: rows || (size && sizeToRows[size]) || undefined,
+      rows: rows || (size && SIZE_TO_ROWS[size]) || undefined,
       size,
       ...restProps // Note: Props are spread to TextArea rather than Root
     };
 
     const rootProps = {
       className,
-      control: _TextArea,
+      control: Input,
       controlProps: textAreaProps,
       disabled,
       iconEnd: null, // Opt out of the variant icon

@@ -1,86 +1,24 @@
 /* @flow */
 import React, { Children, cloneElement, Component } from 'react';
 import { canUseDOM } from 'exenv';
-import { createStyledComponent } from '../styles';
 import { withTheme } from '../themes';
 import { generateId } from '../utils';
 import TabList from './TabList';
 import TabPanel from './TabPanel';
+import { TabsRoot as Root } from './styled';
+import { ALIGN, POSITION } from './constants';
 
-type Props = {
-  /**  Horizontal or vertical alignment of Tabs in the tab list */
-  align?: 'start' | 'center' | 'end' | 'justify',
-  /** @Private */
-  'aria-labelledby'?: string,
-  /** Content of Tabs; must be Tab components */
-  children?: React$Node,
-  /**
-   * Index of the selected Tab; primarily for use with uncontrolled components
-   */
-  defaultSelectedTabIndex?: number,
-  /** Id of Tabs */
-  id?: string,
-  /** Accessible label for Tabs */
-  label: string,
-  /** Height of Tabs */
-  height?: number | string,
-  /** Maximum width of each Tab */
-  maxTabWidth?: number | string,
-  /** Called when a Tab is selected */
-  onChange?: (
-    selectedTabIndex: number,
-    event: SyntheticEvent<HTMLAnchorElement>
-  ) => void,
-  /** Position of the tab list in relation to the tab panel */
-  position?: 'bottom' | 'end' | 'start' | 'top',
-  /**
-   * Index of the selected Tab; primarily for use with controlled components.
-   * If this prop is specified, an `onChange` handler must also be specified.
-   * See also: `defaultSelectedTabIndex`
-   */
-  selectedTabIndex?: number,
-  /** @Private Theme */
-  theme: Object
-};
+import { tabsPropTypes } from './propTypes';
+import type { TabsDefaultProps, TabsProps, TabsState } from './types';
 
-type State = {
-  selectedTabIndex: number
-};
-
-type AnchorEvent = SyntheticEvent<HTMLAnchorElement>;
-
-const Root = createStyledComponent(
-  'div',
-  ({ height, position }) => {
-    const flexDirection = {
-      bottom: 'column-reverse',
-      end: 'row-reverse',
-      start: 'row',
-      top: 'column'
-    };
-
-    return {
-      display: 'flex',
-      flexDirection: flexDirection[position],
-      height
-    };
-  },
-  {
-    displayName: 'Tabs',
-    includeStyleReset: true
-  }
-);
-
-/**
- * Tabs provide easy management for viewing related content in the same layout
- * region.
- */
-class Tabs extends Component<Props, State> {
-  static defaultProps = {
-    align: 'start',
+export class Tabs extends Component<TabsProps, TabsState> {
+  static defaultProps: TabsDefaultProps = {
+    align: ALIGN.start,
     maxTabWidth: '8.5em',
-    position: 'top'
+    position: POSITION.top
   };
+
+  static propTypes = tabsPropTypes;
 
   state = {
     selectedTabIndex: this.props.defaultSelectedTabIndex || 0
@@ -95,7 +33,8 @@ class Tabs extends Component<Props, State> {
   root: ?HTMLElement;
 
   vertical: boolean =
-    this.props.position === 'start' || this.props.position === 'end';
+    this.props.position === POSITION.start ||
+    this.props.position === POSITION.end;
 
   render() {
     const {
@@ -131,7 +70,7 @@ class Tabs extends Component<Props, State> {
         index,
         key: index,
         maxWidth:
-          !this.vertical && align === 'justify'
+          !this.vertical && align === ALIGN.justify
             ? undefined
             : maxWidth || maxTabWidth,
         onClick: !disabled
@@ -201,7 +140,7 @@ class Tabs extends Component<Props, State> {
     this.root = node;
   };
 
-  handleClick = (event: AnchorEvent) => {
+  handleClick = (event: SyntheticEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     event.persist();
     const { currentTarget: target } = event;
@@ -261,7 +200,10 @@ class Tabs extends Component<Props, State> {
       ? this.getNonDisabledIndex(decrease ? index - 1 : index + 1, { decrease })
       : index;
 
-  setSelectedTabIndex = (selectedTabIndex: number, event: AnchorEvent) => {
+  setSelectedTabIndex = (
+    selectedTabIndex: number,
+    event: SyntheticEvent<HTMLAnchorElement>
+  ) => {
     if (selectedTabIndex !== this.state.selectedTabIndex) {
       this.setState(
         {
@@ -280,7 +222,10 @@ class Tabs extends Component<Props, State> {
     }
   };
 
-  changeActions = (selectedTabIndex: number, event: AnchorEvent) => {
+  changeActions = (
+    selectedTabIndex: number,
+    event: SyntheticEvent<HTMLAnchorElement>
+  ) => {
     const { onChange } = this.props;
     onChange && onChange(selectedTabIndex, event);
   };

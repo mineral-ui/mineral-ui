@@ -4,28 +4,9 @@ import { FlexItem } from '../Flex';
 import { FormField } from '../Form';
 import Select from '../Select';
 
-type Props = {
-  'aria-label'?: string,
-  currentPage: number,
-  messages: {|
-    category: string,
-    status: (
-      category: string,
-      first: number,
-      last: number,
-      total: number
-    ) => string,
-    itemText: (pageSize: number) => string
-  |},
-  onPageSizeChange: (pageSize: number) => void,
-  pageSize: number,
-  pageSizes: Array<number>,
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  totalCount: number,
-  totalPages: number
-};
+import type { PageSizerProps } from './types';
 
-export default class PageSizer extends PureComponent<Props> {
+export default class PageSizer extends PureComponent<PageSizerProps> {
   render() {
     const {
       currentPage,

@@ -2,39 +2,17 @@
 import { Component } from 'react';
 import deepEqual from 'react-fast-compare';
 
-type Props = {
-  children: (props: Object) => React$Node,
-  data: Data,
-  defaultSelected?: Data,
-  onToggle?: (item: Item, selected: boolean) => void,
-  onToggleAll?: (items: Data, selected: boolean) => void,
-  selected?: Data
-};
+import type { SelectableItem, SelectableProps, SelectableState } from './types';
 
-type State = {
-  selected: Data
-};
-
-type Data = Array<Item>;
-type Item = {
-  disabled?: boolean
-};
-export type SelectableType = {
-  all: boolean,
-  some: boolean,
-  isSelected: (item: Item) => boolean,
-  toggle: Toggle,
-  toggleAll: ToggleAll
-};
-export type Toggle = (item: Item) => void;
-export type ToggleAll = () => void;
-
-export default class Selectable extends Component<Props, State> {
+export default class Selectable extends Component<
+  SelectableProps,
+  SelectableState
+> {
   state = {
     selected: this.props.defaultSelected || []
   };
 
-  componentWillReceiveProps(nextProps: Props) {
+  componentWillReceiveProps(nextProps: SelectableProps) {
     if (!deepEqual(this.props.selected, nextProps.selected)) {
       this.setState({
         selected: nextProps.selected
@@ -59,7 +37,7 @@ export default class Selectable extends Component<Props, State> {
     return this.props.children(props);
   }
 
-  toggle = (item: Item) => {
+  toggle = (item: SelectableItem) => {
     if (this.isControlled('selected')) {
       this.toggleActions(item);
     } else {
@@ -81,7 +59,7 @@ export default class Selectable extends Component<Props, State> {
     }
   };
 
-  toggleActions = (item: Item) => {
+  toggleActions = (item: SelectableItem) => {
     const { onToggle } = this.props;
     onToggle && onToggle(item, this.isSelected(item));
   };
@@ -123,7 +101,7 @@ export default class Selectable extends Component<Props, State> {
     return selected && selected.length > 0 && !all;
   };
 
-  isSelected = (item: Item) => {
+  isSelected = (item: SelectableItem) => {
     const selected = this.getControllableValue('selected');
     return selected && selected.indexOf(item) !== -1;
   };

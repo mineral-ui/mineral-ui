@@ -6,22 +6,10 @@ import TableHeaderCell from './TableHeaderCell';
 import TableSortableHeaderCell from './TableSortableHeaderCell';
 import TableRow from './TableRow';
 
-import type { ToggleAll } from './Selectable';
-import type { SortableType } from './Sortable';
-import type { Columns, Messages } from './Table';
+import type { TableHeaderRowProps } from './types';
 
-type Props = {
-  checked?: boolean,
-  columns: Columns,
-  indeterminate?: boolean,
-  isSortable?: boolean,
-  messages: Messages,
-  sortable?: SortableType,
-  toggle?: ToggleAll
-};
-
-export default class TableHeaderRow extends Component<Props> {
-  shouldComponentUpdate(nextProps: Props) {
+export default class TableHeaderRow extends Component<TableHeaderRowProps> {
+  shouldComponentUpdate(nextProps: TableHeaderRowProps) {
     return !deepEqual(this.props, nextProps);
   }
 

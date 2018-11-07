@@ -1,29 +1,12 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../styles';
-import DialogRow from './DialogRow';
+import { DialogFooterRoot as Root } from './styled';
 
-type Props = {
-  /** Rendered DialogFooter content */
-  children?: React$Node
-};
+import { dialogFooterPropTypes } from './propTypes';
+import type { DialogFooterProps } from './types';
 
-const Root = createStyledComponent(
-  DialogRow,
-  {
-    flex: '0 0 auto'
-  },
-  {
-    displayName: 'DialogFooter',
-    withProps: { element: 'footer' }
-  }
-);
+const DialogFooter = (props: DialogFooterProps) => <Root {...props} />;
 
-/**
- * DialogFooter displays actionable content at the bottom of the
- * [Dialog](/components/dialog). Use it to wrap children like
- * [DialogActions](/components/dialog-actions).
- */
-export default function DialogFooter(props: Props) {
-  return <Root {...props} />;
-}
+DialogFooter.propTypes = dialogFooterPropTypes;
+
+export default DialogFooter;

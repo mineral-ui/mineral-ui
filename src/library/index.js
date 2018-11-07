@@ -1,5 +1,4 @@
 /* @flow */
-export { default as Dropdown } from './Dropdown';
 export { default as Avatar } from './Avatar';
 export { default as Box } from './Box';
 export { default as Button } from './Button';
@@ -24,6 +23,7 @@ export {
   DialogHeader,
   DialogTitle
 } from './Dialog';
+export { default as Dropdown } from './Dropdown';
 export { default as Flex, FlexItem } from './Flex';
 export { FormField, FormFieldset, FormFieldDivider } from './Form';
 export { default as Grid, GridItem } from './Grid';

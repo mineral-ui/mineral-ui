@@ -1,41 +1,14 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../styles';
-import { FlexItem } from '../Flex';
 import { FormField } from '../Form';
-import TextInput from '../TextInput';
+import {
+  PageJumperRoot as Root,
+  PageJumperNumberInput as NumberInput
+} from './styled';
 
-type Props = {
-  'aria-label'?: string,
-  currentPage: number,
-  inputRef: (node: ?HTMLInputElement) => void,
-  messages: {|
-    label: string,
-    placeholder: string
-  |},
-  onPageChange: (currentPage: number) => void,
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  totalPages: number
-};
+import type { PageJumperProps } from './types';
 
-const styles = {
-  root: ({ width }) => ({ width }),
-  input: {
-    '& > input': {
-      MozAppearance: 'textfield',
-
-      '&::-webkit-inner-spin-button, &::-webkit-outer-spin-button': {
-        WebkitAppearance: 'none',
-        margin: 0
-      }
-    }
-  }
-};
-
-const NumberInput = createStyledComponent(TextInput, styles.input);
-const Root = createStyledComponent(FlexItem, styles.root);
-
-export default class PageJumper extends PureComponent<Props> {
+export default class PageJumper extends PureComponent<PageJumperProps> {
   render() {
     const { inputRef, messages, size, ...restProps } = this.props;
     const rootProps = {

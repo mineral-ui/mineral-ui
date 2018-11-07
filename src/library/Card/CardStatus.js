@@ -1,53 +1,12 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
 import IconDangerSimple from '../Icon/IconDangerSimple';
 import IconSuccessSimple from '../Icon/IconSuccessSimple';
 import IconWarningSimple from '../Icon/IconWarningSimple';
-import CardRow from './CardRow';
+import { CardStatusRoot as Root } from './styled';
 
-type Props = {
-  /** Status text */
-  children: string,
-  /** Available variants */
-  variant: 'danger' | 'success' | 'warning'
-};
-
-export const componentTheme = (baseTheme: Object) => ({
-  CardStatus_fontSize: baseTheme.fontSize_ui,
-  CardStatus_fontWeight: baseTheme.fontWeight_regular,
-
-  CardStatusIcon_margin: baseTheme.space_inline_sm,
-  CardStatusIcon_size: pxToEm(12),
-
-  ...baseTheme
-});
-
-const Root = createStyledComponent(
-  CardRow,
-  ({ theme: baseTheme, variant }) => {
-    const theme = componentTheme(baseTheme);
-    const rtl = theme.direction === 'rtl';
-
-    return {
-      alignItems: 'center',
-      color: theme[`color_${variant}`],
-      display: 'flex',
-      fontSize: theme.CardStatus_fontSize,
-      fontWeight: theme.CardStatus_fontWeight,
-
-      '& > [role="img"]': {
-        height: theme.CardStatusIcon_size,
-        marginRight: rtl ? null : theme.CardStatusIcon_margin,
-        marginLeft: rtl ? theme.CardStatusIcon_margin : null,
-        width: theme.CardStatusIcon_size
-      }
-    };
-  },
-  {
-    displayName: 'CardStatus'
-  }
-);
+import { cardStatusPropTypes } from './propTypes';
+import type { CardStatusProps } from './types';
 
 const statusIcons = {
   danger: <IconDangerSimple />,
@@ -55,10 +14,7 @@ const statusIcons = {
   warning: <IconWarningSimple />
 };
 
-/**
- * CardStatus provides a standard way of displaying a [Card's](/components/card) current status.
- */
-export default function CardStatus(props: Props) {
+export default function CardStatus(props: CardStatusProps) {
   const { children, variant, ...restProps } = props;
   const rootProps = {
     variant,
@@ -73,3 +29,5 @@ export default function CardStatus(props: Props) {
     </Root>
   );
 }
+
+CardStatus.propTypes = cardStatusPropTypes;

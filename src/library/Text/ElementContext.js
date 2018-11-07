@@ -1,7 +1,7 @@
 /* @flow */
 import createReactContext, { type Context } from 'create-react-context';
 
-type ElementContextType = string | void;
+import type { ElementContextType } from './types';
 
 const ElementContext: Context<ElementContextType> = createReactContext();
 

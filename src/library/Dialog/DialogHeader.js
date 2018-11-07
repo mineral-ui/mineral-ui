@@ -1,40 +1,13 @@
 /* @flow */
 import React, { cloneElement } from 'react';
-import { createStyledComponent } from '../styles';
 import { findByType } from '../utils/children';
-import DialogRow from './DialogRow';
+import { DialogHeaderRoot as Root } from './styled';
 import DialogTitle from './DialogTitle';
 
-type Props = {
-  /**
-   * Rendered Dialog title; use of [DialogTitle](/components/dialog-title) is
-   * recommended
-   */
-  children?: React$Node,
-  /** Rendered close button */
-  closeButton?: React$Node,
-  /** @Private */
-  titleProps?: Object
-};
+import { dialogHeaderPropTypes } from './propTypes';
+import type { DialogHeaderProps } from './types';
 
-const Root = createStyledComponent(
-  DialogRow,
-  {
-    display: 'flex',
-    flex: '0 0 auto',
-    justifyContent: 'space-between'
-  },
-  {
-    displayName: 'DialogHeader',
-    withProps: { element: 'header' }
-  }
-);
-
-/**
- * DialogHeader displays title content and an optional close button at the top
- * of the [Dialog](/components/dialog).
- */
-export default function DialogHeader(props: Props) {
+const DialogHeader = (props: DialogHeaderProps) => {
   const { children, closeButton, titleProps, ...rootProps } = props;
 
   let title = findByType(children, DialogTitle);
@@ -51,4 +24,8 @@ export default function DialogHeader(props: Props) {
       {closeButton}
     </Root>
   );
-}
+};
+
+DialogHeader.propTypes = dialogHeaderPropTypes;
+
+export default DialogHeader;

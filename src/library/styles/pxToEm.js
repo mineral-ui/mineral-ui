@@ -1,4 +1,6 @@
 /* @flow */
+import type { PxToEm } from './types';
+
 /**
  * Helper to convert a px value to ems, relative to the base font size
  */
@@ -14,7 +16,7 @@ const errorMsg = (actual) => {
   return `[mineral-ui/styles/pxToEm]: Expected a number or string in px units. Instead got: '${value}'.`;
 };
 
-export default function pxToEm(value: number | string) {
+const pxToEm: PxToEm = (value) => {
   if (typeof value === 'number') {
     return convert(value);
   }
@@ -22,4 +24,6 @@ export default function pxToEm(value: number | string) {
     return convert(parseFloat(value));
   }
   throw new Error(errorMsg(value));
-}
+};
+
+export default pxToEm;

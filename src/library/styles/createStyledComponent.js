@@ -5,30 +5,13 @@ import withPropsFn from 'recompose/withProps';
 import componentStyleReset from './componentStyleReset';
 import isValidProp from '../utils/isValidProp';
 
-type Element =
-  | React$StatelessFunctionalComponent<*>
-  | React$ComponentType<*>
-  | string;
+import type { CreateStyledComponent, StyleFn } from './types';
 
-type Styles =
-  | Object
-  | Array<Object>
-  | ((props: Object, context?: Object) => Object | Array<Object>);
-
-type Options = {
-  displayName?: string,
-  filterProps?: Array<string>,
-  forwardProps?: Array<string>,
-  includeStyleReset?: boolean,
-  rootEl?: string,
-  withProps?: Object
-};
-
-export default function createStyledComponent(
-  element: Element,
-  styles: Styles,
-  options?: Options = {}
-) {
+const createStyledComponent: CreateStyledComponent = (
+  element,
+  styles,
+  options = {}
+) => {
   const {
     displayName,
     filterProps = [],
@@ -37,10 +20,7 @@ export default function createStyledComponent(
     rootEl,
     withProps
   } = options;
-  const outStyles = (
-    props: Object,
-    context?: Object
-  ): Object | Array<Object> => {
+  const outStyles: StyleFn = (props, context) => {
     let componentStyles =
       typeof styles === 'function' ? styles(props, context) : styles;
 
@@ -82,4 +62,6 @@ export default function createStyledComponent(
   })(outStyles);
 
   return withProps ? withPropsFn(withProps)(styledComponent) : styledComponent;
-}
+};
+
+export default createStyledComponent;

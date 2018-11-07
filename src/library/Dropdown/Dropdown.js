@@ -8,129 +8,30 @@ import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import Menu, { getItems } from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
 import Root from '../Popover';
-import DropdownContent, {
-  componentTheme as dropdownContentComponentTheme
-} from './DropdownContent';
+import { PLACEMENT } from './constants';
+import DropdownContent from './DropdownContent';
 import ItemMatcher from './ItemMatcher';
 
-import type { Items, ItemGroups } from '../Menu/Menu';
+import type { MenuItems } from '../Menu/types';
+import { dropdownPropTypes } from './propTypes';
+import type {
+  DropdownDefaultProps,
+  DropdownPropGetter,
+  DropdownProps,
+  DropdownRenderFn,
+  DropdownStateAndHelpers,
+  DropdownState
+} from './types';
 
-type Props = {
-  /**
-   * Trigger for the Dropdown. Optionally provides custom rendering control.
-   * See the [custom trigger example](/components/dropdown#custom-trigger)
-   * and our [render props guide](/render-props).
-   */
-  children: React$Node | RenderFn,
-  /**
-   * Data from which the [Menu](/components/menu#data) will be constructed
-   * (see [example](#data))
-   */
-  data: Items | ItemGroups,
-  /**
-   * Index of item to be highlighted upon initialization. Primarily for
-   * use with uncontrolled components.
-   */
-  defaultHighlightedIndex?: number,
-  /**
-   * Open the Dropdown upon initialization. Primarily for use with uncontrolled
-   * components.
-   */
-  defaultIsOpen?: boolean,
-  /** Disable the Dropdown */
-  disabled?: boolean,
-  /** Index of the highlighted item. For use with controlled components. */
-  highlightedIndex?: number,
-  /** Id of the Dropdown */
-  id?: string,
-  /**
-   * Determines whether the Dropdown is open. For use with controlled
-   * components.
-   */
-  isOpen?: boolean,
-  /**
-   * Provides custom rendering control for the items. See the
-   * [custom item example](/components/dropdown#custom-item) and
-   * our [render props guide](/render-props).
-   */
-  item?: RenderFn,
-  /**
-   * Specifies a key in the item data that gives an item its unique identity.
-   * See the [React docs](https://reactjs.org/docs/lists-and-keys.html#keys).
-   */
-  itemKey?: string,
-  /**
-   * Provides custom rendering control for the menu. See the
-   * [custom menu example](/components/dropdown#custom-menu) and
-   * our [render props guide](/render-props).
-   */
-  menu?: RenderFn,
-  /**
-   * Plugins that are used to alter behavior. See
-   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
-   * for options.
-   */
-  modifiers?: Object,
-  /** Called when Dropdown is closed */
-  onClose?: (event: SyntheticEvent<>) => void,
-  /** Called when Dropdown is opened */
-  onOpen?: (event: SyntheticEvent<>) => void,
-  /** Placement of the Dropdown menu */
-  placement?:
-    | 'bottom-end'
-    | 'bottom-start'
-    | 'left-end'
-    | 'left-start'
-    | 'right-end'
-    | 'right-start'
-    | 'top-end'
-    | 'top-start',
-  /**
-   * Use a Portal to render the Dropdown menu to the body rather than as a
-   * sibling to the trigger
-   */
-  usePortal?: boolean,
-  /** Display a wider Dropdown menu */
-  wide?: boolean
-};
-
-type State = {
-  highlightedIndex: ?number,
-  isOpen: boolean
-};
-
-type Helpers = {
-  close: (event: SyntheticEvent<>) => void,
-  focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
-};
-
-type StateAndHelpers = {
-  state: State,
-  helpers: Helpers
-};
-
-type PropGetter = (props?: Object) => Object;
-export type RenderFn = (props?: RenderProps) => React$Node;
-type RenderProps = {
-  props: Object
-} & StateAndHelpers;
-
-export const componentTheme = (baseTheme: Object) => ({
-  ...dropdownContentComponentTheme(baseTheme),
-  ...baseTheme
-});
-
-/**
- * Dropdown presents a list of actions after a user interacts with a trigger.
- */
-export default class Dropdown extends Component<Props, State> {
-  static defaultProps = {
+export default class Dropdown extends Component<DropdownProps, DropdownState> {
+  static defaultProps: DropdownDefaultProps = {
     itemKey: 'text',
-    placement: 'bottom-start'
+    placement: PLACEMENT['bottom-start']
   };
 
-  state: State = {
+  static propTypes = dropdownPropTypes;
+
+  state = {
     highlightedIndex: this.props.defaultHighlightedIndex,
     isOpen: Boolean(this.props.defaultIsOpen)
   };
@@ -143,7 +44,7 @@ export default class Dropdown extends Component<Props, State> {
 
   itemMatcher: any;
 
-  items: Items;
+  items: MenuItems;
 
   getItems = memoizeOne(getItems, deepEqual);
 
@@ -176,7 +77,7 @@ export default class Dropdown extends Component<Props, State> {
     );
   }
 
-  getStateAndHelpers = (): StateAndHelpers => {
+  getStateAndHelpers = (): DropdownStateAndHelpers => {
     return {
       state: {
         highlightedIndex: this.getControllableValue('highlightedIndex'),
@@ -194,7 +95,7 @@ export default class Dropdown extends Component<Props, State> {
     this.dropdownTrigger = node;
   };
 
-  getContentProps: PropGetter = (props = {}) => {
+  getContentProps: DropdownPropGetter = (props = {}) => {
     const {
       subtitle: ignoreSubtitle,
       title: ignoreTitle,
@@ -213,7 +114,7 @@ export default class Dropdown extends Component<Props, State> {
     };
   };
 
-  renderContent: RenderFn = ({ props } = {}) => {
+  renderContent: DropdownRenderFn = ({ props } = {}) => {
     return <DropdownContent {...this.getContentProps(props)} />;
   };
 
@@ -229,7 +130,7 @@ export default class Dropdown extends Component<Props, State> {
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps: PropGetter = (props = {}) => {
+  getTriggerProps: DropdownPropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
     const { children } = this.props;
@@ -251,7 +152,7 @@ export default class Dropdown extends Component<Props, State> {
     };
   };
 
-  renderTrigger: RenderFn = ({ props } = {}) => {
+  renderTrigger: DropdownRenderFn = ({ props } = {}) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
@@ -265,7 +166,7 @@ export default class Dropdown extends Component<Props, State> {
     return cloneElement(child, this.getTriggerProps(child.props));
   };
 
-  getMenuProps: PropGetter = (props = {}) => {
+  getMenuProps: DropdownPropGetter = (props = {}) => {
     const { data, itemKey } = this.props;
 
     return {
@@ -279,7 +180,7 @@ export default class Dropdown extends Component<Props, State> {
     };
   };
 
-  renderMenu: RenderFn = ({ props } = {}) => {
+  renderMenu: DropdownRenderFn = ({ props } = {}) => {
     const { menu } = this.props;
 
     if (isRenderProp(menu)) {
@@ -292,7 +193,7 @@ export default class Dropdown extends Component<Props, State> {
     return <Menu {...this.getMenuProps(props)} />;
   };
 
-  getItemProps: PropGetter = (props = {}) => {
+  getItemProps: DropdownPropGetter = (props = {}) => {
     const highlightedIndex = this.getControllableValue('highlightedIndex');
     const { props: itemProps } = props;
     const { index, item } = itemProps;
@@ -310,7 +211,7 @@ export default class Dropdown extends Component<Props, State> {
     };
   };
 
-  renderItem: RenderFn = (props = {}) => {
+  renderItem: DropdownRenderFn = (props = {}) => {
     const { item } = this.props;
 
     if (isRenderProp(item)) {
