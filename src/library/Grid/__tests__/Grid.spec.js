@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import Grid, { GridItem } from '../../Grid';
-import examples from '../../../website/app/demos/Grid/examples/Grid';
+import examples from '../../../website/app/demos/Grid/Grid/examples';
 
 function shallowGrid(gridProps = {}, gridItemProps = {}) {
   return shallow(

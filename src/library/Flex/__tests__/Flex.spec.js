@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import testDemoExamples from '../../../../utils/testDemoExamples';
 import { ThemeProvider } from '../../themes';
 import Flex, { FlexItem } from '../../Flex';
-import examples from '../../../website/app/demos/Flex/examples/Flex';
+import testDemoExamples from '../../../../utils/testDemoExamples';
+import examples from '../../../website/app/demos/Flex/Flex/examples';
 
 function shallowFlex(flexProps = {}, flexItemProps = {}) {
   return shallow(

@@ -2,7 +2,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ThemeProvider } from '../../themes';
-import DialogTitle, { componentTheme } from '../DialogTitle';
+import { dialogTitleTheme } from '../themes';
+import DialogTitle from '../DialogTitle';
+import examples from '../../../website/app/demos/Dialog/DialogTitle/examples';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -25,10 +28,12 @@ describe('DialogTitle', () => {
     expect(dialogTitle.exists()).toEqual(true);
   });
 
+  testDemoExamples(examples);
+
   describe('theme overrides', () => {
     testThemeOverrides(
       <DialogTitle>children</DialogTitle>,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(dialogTitleTheme, {
         excludeKeys: ['DialogTitleIcon_margin', 'DialogTitleIcon_size']
       })
     );

@@ -3,8 +3,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInWrapper } from '../../../../utils/enzymeUtils';
 import Button from '../../Button';
-import Dialog, { componentTheme } from '../Dialog';
-import examples from '../../../website/app/demos/Dialog/examples';
+import Dialog from '../Dialog';
+import { dialogTheme } from '../themes';
+import examples from '../../../website/app/demos/Dialog/Dialog/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -45,7 +46,7 @@ describe('Dialog', () => {
     };
     testThemeOverrides(
       <Dialog {...props} />,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(dialogTheme, {
         excludeKeys: ['Dialog_transitionDuration', 'DialogCloseButton_margin']
       }).filter((key) => {
         const parts = key.split('_');

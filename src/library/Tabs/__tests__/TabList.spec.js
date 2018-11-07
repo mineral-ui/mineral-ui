@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import TabList, { componentTheme } from '../TabList';
+import { TabList, tabListTheme } from '../';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -27,7 +27,7 @@ describe('TabList', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <TabList />,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(tabListTheme, {
         excludeKeys: [
           'TabList_gutterVertical',
           'TabListArrow_color',

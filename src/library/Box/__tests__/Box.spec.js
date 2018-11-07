@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import Box from '../Box';
-import examples from '../../../website/app/demos/Box/examples';
+import examples from '../../../website/app/demos/Box/Box/examples';
 
 function shallowBox(props = {}) {
   return shallow(<Box {...props} />);

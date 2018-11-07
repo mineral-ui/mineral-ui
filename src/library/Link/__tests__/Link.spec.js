@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import Link, { componentTheme } from '../Link';
-import examples from '../../../website/app/demos/Link/examples';
+import Link, { linkTheme } from '../index';
+import examples from '../../../website/app/demos/Link/Link/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -28,7 +28,7 @@ describe('Link', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <Link href="http://example.com">test</Link>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(linkTheme)
     );
   });
 });

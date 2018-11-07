@@ -4,16 +4,16 @@ import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import { DropdownContent } from '../../Dropdown';
 import { MenuItem } from '../../Menu';
-import Select, { componentTheme } from '../../Select/Select';
+import Select, { selectTheme } from '../';
 import SelectTrigger from '../../Select/SelectTrigger';
-import examples from '../../../website/app/demos/Select/examples';
+import examples from '../../../website/app/demos/Select/Select/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
-import type { Items } from '../../Menu/Menu';
+import type { MenuItems } from '../../Menu/types';
 
-const data: Items = [
+const data: MenuItems = [
   {
     text: 'A item',
     value: 'A',
@@ -99,7 +99,7 @@ describe('Select', () => {
       <Select data={data} id="test" isOpen>
         <button>trigger</button>
       </Select>,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(selectTheme, {
         excludeKeys: [
           'Select_color',
           'Select_color_readOnly',

@@ -8,15 +8,15 @@ import {
 import Checkbox from '../../Checkbox';
 import Table from '../Table';
 import TableBase from '../TableBase';
-import TableBody from '../TableBody';
+import { TableBody } from '../styled';
 import TableHeader from '../TableHeader';
 import TableRow from '../TableRow';
 import TableSortableHeaderCell from '../TableSortableHeaderCell';
-import examples from '../../../website/app/demos/Table/examples';
+import examples from '../../../website/app/demos/Table/Table/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
-import type { RenderFn } from '../Table';
+import type { RenderFn } from '../types';
 
 const defaultProps = {
   data: [

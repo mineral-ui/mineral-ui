@@ -1,7 +1,10 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import CardDivider, { componentTheme } from '../../Card/CardDivider';
+import CardDivider from '../../Card/CardDivider';
+import examples from '../../../website/app/demos/Card/CardDivider/examples';
+import { cardDividerTheme } from '../themes';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -10,6 +13,8 @@ function shallowCardDivider(props = {}) {
 }
 
 describe('CardDivider', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const cardDivider = shallowCardDivider();
 
@@ -19,7 +24,7 @@ describe('CardDivider', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <CardDivider />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(cardDividerTheme)
     );
   });
 });

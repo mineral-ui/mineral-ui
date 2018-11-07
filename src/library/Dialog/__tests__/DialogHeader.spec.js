@@ -1,8 +1,10 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { componentTheme } from '../DialogRow';
+import { dialogRowTheme } from '../themes';
 import DialogHeader from '../DialogHeader';
+import examples from '../../../website/app/demos/Dialog/DialogHeader/examples';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -21,10 +23,12 @@ describe('DialogHeader', () => {
     expect(dialogHeader.exists()).toEqual(true);
   });
 
+  testDemoExamples(examples);
+
   describe('theme overrides', () => {
     testThemeOverrides(
       <DialogHeader />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(dialogRowTheme)
     );
   });
 });

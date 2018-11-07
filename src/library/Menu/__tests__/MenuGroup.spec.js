@@ -1,8 +1,9 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import MenuGroup, { componentTheme } from '../MenuGroup';
-import examples from '../../../website/app/demos/Menu/examples/MenuGroup';
+import { menuGroupTheme } from '../themes';
+import MenuGroup from '../MenuGroup';
+import examples from '../../../website/app/demos/Menu/MenuGroup/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -29,7 +30,7 @@ describe('MenuGroup', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <MenuGroup />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(menuGroupTheme)
     );
   });
 });

@@ -2,8 +2,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
-import MenuItem, { componentTheme } from '../MenuItem';
-import examples from '../../../website/app/demos/Menu/examples/MenuItem';
+import { menuItemTheme } from '../themes';
+import MenuItem from '../MenuItem';
+import examples from '../../../website/app/demos/Menu/MenuItem/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
@@ -41,8 +42,8 @@ describe('MenuItem', () => {
 
   describe('theme overrides', () => {
     testThemeOverrides(
-      <MenuItem>test</MenuItem>,
-      getProcessedComponentThemeKeys(componentTheme, {
+      <MenuItem secondaryText="test">test</MenuItem>,
+      getProcessedComponentThemeKeys(menuItemTheme, {
         excludeKeys: ['MenuItem_backgroundColor_selectedHover']
       })
     );

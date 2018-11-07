@@ -1,8 +1,10 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
+import { dialogRowTheme } from '../themes';
 import DialogFooter from '../DialogFooter';
-import { componentTheme } from '../DialogRow';
+import examples from '../../../website/app/demos/Dialog/DialogFooter/examples';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -21,10 +23,12 @@ describe('DialogFooter', () => {
     expect(dialogFooter.exists()).toEqual(true);
   });
 
+  testDemoExamples(examples);
+
   describe('theme overrides', () => {
     testThemeOverrides(
       <DialogFooter />,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(dialogRowTheme)
     );
   });
 });

@@ -2,16 +2,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Popover, { componentTheme } from '../Popover';
+import Popover, { popoverTheme } from '../';
 import PopoverArrow from '../PopoverArrow';
 import PopoverContent from '../PopoverContent';
 import PopoverTrigger from '../PopoverTrigger';
-import examples from '../../../website/app/demos/Popover/examples';
+import examples from '../../../website/app/demos/Popover/Popover/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
-import type { RenderFn } from '../Popover';
+import type { PopoverRenderFn } from '../types';
 
 const defaultProps = {
   children: <button>trigger</button>,
@@ -67,7 +67,7 @@ describe('Popover', () => {
       <Popover content={<div>content</div>}>
         <button>trigger</button>
       </Popover>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(popoverTheme)
     );
   });
 
@@ -128,7 +128,7 @@ describe('Popover', () => {
   });
 
   describe('render props', () => {
-    let renderer: RenderFn = jest.fn(() => <div />);
+    let renderer: PopoverRenderFn = jest.fn(() => <div />);
 
     beforeEach(() => {
       renderer.mockClear();

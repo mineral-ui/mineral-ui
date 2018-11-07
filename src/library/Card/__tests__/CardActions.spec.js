@@ -1,7 +1,10 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import CardActions, { componentTheme } from '../../Card/CardActions';
+import CardActions from '../../Card/CardActions';
+import examples from '../../../website/app/demos/Card/CardActions/examples';
+import { cardActionsTheme } from '../themes';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -14,6 +17,8 @@ function shallowCardActions(props = {}) {
 }
 
 describe('CardActions', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const cardActions = shallowCardActions();
 
@@ -23,7 +28,7 @@ describe('CardActions', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <CardActions>children</CardActions>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(cardActionsTheme)
     );
   });
 });

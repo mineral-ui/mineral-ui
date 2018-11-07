@@ -4,6 +4,8 @@ import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import Button from '../../Button';
 import { CardFooter } from '../../Card';
+import examples from '../../../website/app/demos/Card/CardFooter/examples';
+import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
 function shallowCardFooter(props = {}) {
@@ -27,6 +29,8 @@ function mountCardFooter(props = {}) {
 }
 
 describe('CardFooter', () => {
+  testDemoExamples(examples);
+
   it('renders', () => {
     const cardFooter = shallowCardFooter();
 

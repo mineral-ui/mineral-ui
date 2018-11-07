@@ -2,7 +2,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import RadioGroup from '../RadioGroup';
-import examples from '../../../website/app/demos/Radio/examples/RadioGroup';
+import examples from '../../../website/app/demos/Radio/RadioGroup/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 

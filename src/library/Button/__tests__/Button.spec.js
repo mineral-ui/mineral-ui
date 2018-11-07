@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import Button from '../Button';
-import examples from '../../../website/app/demos/Button/examples';
+import examples from '../../../website/app/demos/Button/Button/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 

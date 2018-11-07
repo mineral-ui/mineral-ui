@@ -3,12 +3,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import Menu from '../Menu';
-import examples from '../../../website/app/demos/Menu/examples/Menu';
+import examples from '../../../website/app/demos/Menu/Menu/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 
-import type { Items } from '../Menu';
+import type { MenuItems } from '../types';
 
-const data: Items = [{ text: 'Item 1' }, { text: 'Item 2' }];
+const data: MenuItems = [{ text: 'Item 1' }, { text: 'Item 2' }];
 
 function shallowMenu(props = {}) {
   const menuProps = {

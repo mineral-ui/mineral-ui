@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import { mountInThemeProvider } from '../../../../utils/enzymeUtils';
 import Button from '../../../library/Button';
 import ButtonGroup from '../ButtonGroup';
-import examples from '../../../website/app/demos/ButtonGroup/examples';
+import examples from '../../../website/app/demos/ButtonGroup/ButtonGroup/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 
