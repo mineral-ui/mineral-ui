@@ -1,125 +1,32 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../styles';
 import { withTheme } from '../themes';
-import Flex, { FlexItem } from '../Flex';
+import { FlexItem } from '../Flex';
 import Pages from './Pages';
 import PageJumper from './PageJumper';
 import PageSizer from './PageSizer';
+import { PaginationRoot as Root } from './styled';
+import { paginationTheme } from './themes';
+import { SIZE } from './constants';
 
-type Props = {
-  /** The currently displayed page */
-  currentPage: number,
-  /** Hide the page number buttons */
-  showPageNumbers?: boolean,
-  /**
-   * Various messages and labels used by Pagination
-   * ([see example for more details](#rtl))
-   */
-  messages: Messages,
-  /** Called when current page is changed */
-  onPageChange: (currentPage: number) => void,
-  /** Called when [page size](#page-sizer) is changed */
-  onPageSizeChange?: (pageSize: number) => void,
-  /**
-   * Render a [page jumper](#page-jumper)
-   * ([TextInput component](/components/text-input)); enables the user to change
-   * the current page on number entry
-   */
-  showPageJumper?: boolean,
-  /** The number of items or data to be rendered on each page */
-  pageSize: number,
-  /**
-   * Render a [page sizer](#page-sizer)
-   * ([Select component](/components/select)); enables the user to select the
-   * page size
-   */
-  showPageSizer?: boolean,
-  /**
-   * A collection of possible page sizes for a user to select from; implemented
-   * in [page sizer](#page-sizer). Be sure to provide unique values.
-   */
-  pageSizes?: Array<number>,
-  /** Available sizes */
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  /** @Private */
-  theme: Object,
-  /** The total number of items or data to be paginated */
-  totalCount: number,
-  /**
-   * The number of consecutive pages to be displayed when the paginated results
-   * are truncated ([see example for details](#visible-range))
-   */
-  visibleRange?: number
-};
+import { paginationPropTypes } from './propTypes';
+import type { PaginationDefaultProps, PaginationProps } from './types';
 
-export type Messages = {|
-  category?: string,
-  label: string,
-  pages?: {|
-    pageLabel: (
-      isCurrentPage: boolean,
-      isLastPage: boolean,
-      page: number
-    ) => string,
-    next: string,
-    previous: string
-  |},
-  pageJumper?: {| label: string, placeholder: string |},
-  pageSizer?: {|
-    status: (
-      category: string,
-      first: number,
-      last: number,
-      total: number
-    ) => string,
-    itemText: (pageSize: number) => string
-  |}
-|};
-
-export const componentTheme = (baseTheme: Object) => ({
-  PaginationPageJumper_width: '4.65em',
-  Pagination_gutterWidth: baseTheme.space_inline_sm,
-  ...baseTheme
-});
-
-const styles = {
-  root: ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    return {
-      flexWrap: 'wrap-reverse',
-      marginBottom: `-${theme.Pagination_gutterWidth}`,
-
-      '& > *': {
-        marginBottom: theme.Pagination_gutterWidth
-      }
-    };
-  }
-};
-
-const Root = createStyledComponent(Flex, styles.root, {
-  includeStyleReset: true,
-  withProps: {
-    element: 'nav'
-  }
-});
-
-/**
- * Pagination offers a means to control the space consumed by a large data set
- * or other collection of items by limiting the page size and providing
- * navigation for access to all pages.
- */
-class Pagination extends PureComponent<Props> {
+export class Pagination extends PureComponent<PaginationProps> {
   static displayName = 'Pagination';
-  static defaultProps = {
+
+  static propTypes = paginationPropTypes;
+
+  static defaultProps: PaginationDefaultProps = {
     messages: {
       category: 'rows',
       label: 'Pagination',
       pages: {
         next: 'Next',
-        // prettier-ignore
         pageLabel: (isCurrentPage, isLastPage, page) =>
-          (isCurrentPage ? 'Current page, ' : '') + (isLastPage ? 'Last page, ' : '') + page,
+          (isCurrentPage ? 'Current page, ' : '') +
+          (isLastPage ? 'Last page, ' : '') +
+          page,
         previous: 'Previous'
       },
       pageJumper: {
@@ -134,7 +41,7 @@ class Pagination extends PureComponent<Props> {
     },
     pageSizes: [10, 20, 50],
     showPageNumbers: true,
-    size: 'medium',
+    size: SIZE.medium,
     visibleRange: 5
   };
 
@@ -153,7 +60,7 @@ class Pagination extends PureComponent<Props> {
       totalCount,
       ...restProps
     } = this.props;
-    const theme = componentTheme(baseTheme);
+    const theme = paginationTheme(baseTheme);
     const messages = {
       ...Pagination.defaultProps.messages,
       ...propMessages
@@ -236,7 +143,8 @@ class Pagination extends PureComponent<Props> {
     this.pageJumperInput = node;
   };
 
-  getTotalPages = (pageSize) => Math.ceil(this.props.totalCount / pageSize);
+  getTotalPages = (pageSize: number) =>
+    Math.ceil(this.props.totalCount / pageSize);
 
   handleClick = (index: number) => {
     this.handlePageChange(index);

@@ -1,148 +1,35 @@
 /* @flow */
 import React, { Children, Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { Manager } from 'react-popper';
-import { createStyledComponent } from '../styles';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
 import EventListener from '../EventListener';
 import Portal from '../Portal';
 import PopoverTrigger from './PopoverTrigger';
-import PopoverContent, {
-  componentTheme as popoverContentComponentTheme
-} from './PopoverContent';
-import { componentTheme as popoverArrowComponentTheme } from './PopoverArrow';
+import PopoverContent from './PopoverContent';
+import { PopoverRoot as Root } from './styled';
+import { PLACEMENT } from './constants';
 
-type Props = {
-  /**
-   * Trigger for the Popover. Optionally provides custom rendering control.
-   * See the [custom trigger example](/components/popover#custom-trigger)
-   * and our [render props guide](/render-props).
-   */
-  children: React$Node | RenderFn,
-  /**
-   * Content of the Popover. Optionally provides custom rendering control.
-   * See the [custom content example](/components/popover#custom-content)
-   * and our [render props guide](/render-props).
-   */
-  content: $FlowFixMe | RenderFn,
-  /**
-   * @Private Cursor applied when hovering the popover trigger; accepts any
-   * [valid CSS value](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
-   */
-  cursor?: string,
-  /**
-   * Open the Popover upon initialization. Primarily for use with uncontrolled
-   * components.
-   */
-  defaultIsOpen?: boolean,
-  /** Disables the Popover */
-  disabled?: boolean,
-  /**
-   * Determines whether focus will be set to the trigger when the Popover is
-   * closed.
-   */
-  focusTriggerOnClose?: boolean,
-  /** Include an arrow on the Popover content pointing to the trigger */
-  hasArrow?: boolean,
-  /** Id of the Popover */
-  id?: string,
-  /**
-   * Determines whether the Popover is open. For use with controlled components.
-   */
-  isOpen?: boolean,
-  /**
-   * Plugins that are used to alter behavior. See
-   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
-   * for options.
-   */
-  modifiers?: Object,
-  /** Called when Popover is closed */
-  onClose?: (event: SyntheticEvent<>) => void,
-  /** Called when Popover is opened */
-  onOpen?: (event: SyntheticEvent<>) => void,
-  /** Placement of the Popover */
-  placement?:
-    | 'auto'
-    | 'auto-end'
-    | 'auto-start'
-    | 'bottom'
-    | 'bottom-end'
-    | 'bottom-start'
-    | 'left'
-    | 'left-end'
-    | 'left-start'
-    | 'right'
-    | 'right-end'
-    | 'right-start'
-    | 'top'
-    | 'top-end'
-    | 'top-start',
-  /** Subtitle displayed under the title */
-  subtitle?: React$Node,
-  /** Title of the Popover */
-  title?: React$Node,
-  /** @Private ref for the Popover trigger */
-  triggerRef?: (node: ?React$Component<*, *>) => void,
-  /**
-   * Use a Portal to render the Popover to the body rather than as a sibling to
-   * the trigger
-   */
-  usePortal?: boolean
-};
+import { popoverPropTypes } from './propTypes';
+import type {
+  PopoverDefaultProps,
+  PopoverProps,
+  PopoverPropGetter,
+  PopoverRenderFn,
+  PopoverState,
+  PopoverStateAndHelpers
+} from './types';
 
-type State = {
-  highlightedIndex?: ?number, // Appease Dropdown
-  isOpen: boolean
-};
-
-type Helpers = {
-  close: (event: SyntheticEvent<>) => void,
-  focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
-};
-
-type StateAndHelpers = {
-  state: State,
-  helpers: Helpers
-};
-
-type PropGetter = (props?: Object) => Object;
-export type RenderFn = (props?: RenderProps) => React$Node;
-type RenderProps = {
-  props: Object
-} & StateAndHelpers;
-
-export const componentTheme = (baseTheme: Object) => ({
-  ...popoverArrowComponentTheme(baseTheme),
-  ...popoverContentComponentTheme(baseTheme),
-  ...baseTheme
-});
-
-const Root = createStyledComponent(
-  Manager,
-  {
-    color: null,
-    display: 'inline-block'
-  },
-  {
-    displayName: 'Popover',
-    forwardProps: ['tag'],
-    rootEl: 'span'
-  }
-);
-
-/**
- * Popovers float over page content and hold supporting information or user controls.
- */
-export default class Popover extends Component<Props, State> {
-  static defaultProps = {
+export default class Popover extends Component<PopoverProps, PopoverState> {
+  static defaultProps: PopoverDefaultProps = {
     focusTriggerOnClose: true,
     hasArrow: true,
-    placement: 'bottom'
+    placement: PLACEMENT.bottom
   };
 
-  state: State = {
+  static propTypes = popoverPropTypes;
+
+  state = {
     isOpen: Boolean(this.props.defaultIsOpen)
   };
 
@@ -153,18 +40,17 @@ export default class Popover extends Component<Props, State> {
   popoverTrigger: ?React$Component<*, *>;
 
   render() {
-    const { modifiers, ...restProps } = this.props;
-    const isOpen = this.getControllableValue('isOpen');
-
-    const rootProps = {
-      ...restProps,
-      tag: 'span'
-    };
-
     return (
       <ModifiersContext.Consumer>
         {(contextModifiers) => {
-          rootProps.modifiers = modifiers || contextModifiers;
+          const { modifiers, ...restProps } = this.props;
+          const isOpen = this.getControllableValue('isOpen');
+
+          const rootProps = {
+            ...restProps,
+            modifiers: modifiers || contextModifiers,
+            tag: 'span'
+          };
 
           return (
             <Root {...rootProps}>
@@ -195,7 +81,7 @@ export default class Popover extends Component<Props, State> {
     );
   }
 
-  getStateAndHelpers = (): StateAndHelpers => {
+  getStateAndHelpers = (): PopoverStateAndHelpers => {
     return {
       state: {
         isOpen: this.getControllableValue('isOpen')
@@ -220,7 +106,7 @@ export default class Popover extends Component<Props, State> {
     this.popoverContent = node;
   };
 
-  getContentProps: PropGetter = (props = {}) => {
+  getContentProps: PopoverPropGetter = (props = {}) => {
     const contentId = this.getContentId();
     const {
       content,
@@ -248,7 +134,7 @@ export default class Popover extends Component<Props, State> {
     };
   };
 
-  renderContent: RenderFn = (props = {}) => {
+  renderContent: PopoverRenderFn = (props = {}) => {
     const { content, usePortal } = this.props;
     let popoverContent;
 
@@ -276,7 +162,7 @@ export default class Popover extends Component<Props, State> {
     return `${this.id}-content`;
   };
 
-  getTriggerProps: PropGetter = (props = {}) => {
+  getTriggerProps: PopoverPropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
     const { children, cursor, disabled } = this.props;
@@ -306,7 +192,7 @@ export default class Popover extends Component<Props, State> {
     };
   };
 
-  renderTrigger: RenderFn = (props = {}) => {
+  renderTrigger: PopoverRenderFn = (props = {}) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {

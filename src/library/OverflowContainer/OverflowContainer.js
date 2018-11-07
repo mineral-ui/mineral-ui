@@ -2,65 +2,14 @@
 import React, { Component } from 'react';
 import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
-import { createStyledComponent } from '../styles';
+import { OverflowContainerRoot as Root } from './styled';
 
-type Props = {
-  children?: React$Node,
-  containerRef?: (node: HTMLElement) => void,
-  hideScrollbars?: boolean,
-  scrollX?: boolean,
-  scrollY?: boolean,
-  tabIndex?: number | string
-};
+import type { OverflowContainerProps, OverflowContainerState } from './types';
 
-type State = {
-  scrollable: boolean
-};
-
-// prettier-ignore
-export const componentTheme = (baseTheme: Object) => ({
-  OverflowContainer_outline_focus: `1px solid ${baseTheme.borderColor_theme_focus}`,
-
-  ...baseTheme
-});
-
-const Root = createStyledComponent(
-  'div',
-  ({ hideScrollbars, scrollX, scrollY, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    return {
-      outline: 0,
-      overflowX: scrollX ? 'auto' : undefined,
-      overflowY: scrollY ? 'auto' : undefined,
-      // Prevent flash of focus style when interacting with children
-      transition: 'outline 0.1s 0.25s',
-
-      '&:focus': {
-        outline: theme.OverflowContainer_outline_focus
-      },
-
-      ...(hideScrollbars
-        ? {
-            overflow: '-moz-scrollbars-none',
-            '-ms-overflow-style': 'none',
-
-            '&::-webkit-scrollbar': {
-              display: 'none'
-            }
-          }
-        : undefined)
-    };
-  },
-  {
-    displayName: 'OverflowContainer'
-  }
-);
-
-/**
- * OverflowContainer
- */
-export default class OverflowContainer extends Component<Props, State> {
+export default class OverflowContainer extends Component<
+  OverflowContainerProps,
+  OverflowContainerState
+> {
   state = {
     scrollable: false
   };

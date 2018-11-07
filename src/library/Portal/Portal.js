@@ -6,12 +6,9 @@ import {
   unstable_renderSubtreeIntoContainer
 } from 'react-dom';
 
-type Props = {
-  children: React$Node,
-  callback?: () => void
-};
+import type { PortalProps } from './types';
 
-export default class Portal extends Component<Props> {
+export default class Portal extends Component<PortalProps> {
   content: React$Element<*>;
 
   node: ?HTMLElement;

@@ -9,29 +9,24 @@ import themeFromTokens, {
   themeFromColorTokens,
   type Ramp
 } from './themeFromTokens';
+import { PRIMARY_COLOR } from './constants';
 
-type RampWithInflection = { [number]: string, inflection?: number };
+import type { ThemeObj } from './types';
+
+type PrimaryColor = $Keys<typeof PRIMARY_COLOR>;
+type PrimaryColors = Array<PrimaryColor>;
+type ColorRampWithInflection = { [number]: string, inflection?: number };
 type Colors = {
   black?: string,
-  danger?: Color | RampWithInflection,
-  gray?: RampWithInflection,
-  success?: Color | RampWithInflection,
-  theme?: Color | RampWithInflection,
-  warning?: Color | RampWithInflection,
+  danger?: Color | ColorRampWithInflection,
+  gray?: ColorRampWithInflection,
+  success?: Color | ColorRampWithInflection,
+  theme?: Color | ColorRampWithInflection,
+  warning?: Color | ColorRampWithInflection,
   white?: string
 };
-type Options = ?{
-  colors?: Colors,
-  overrides?: Object
-};
-type PrimaryColor = 'theme' | 'danger' | 'success' | 'warning';
 
-const primaryColors: Array<PrimaryColor> = [
-  'theme',
-  'danger',
-  'success',
-  'warning'
-];
+const primaryColors: PrimaryColors = Object.keys(PRIMARY_COLOR);
 
 export const nonTokenVariables = (colors: ?Colors) => ({
   boxShadow_focusInner: (colors && colors.white) || palette.white,
@@ -54,7 +49,7 @@ const colorOverrides = (colors) =>
   }, {});
 
 const correctColorType = (
-  colorValue: string | RampWithInflection,
+  colorValue: string | ColorRampWithInflection,
   color: string
 ): string | Ramp => {
   const isStringColor = ['black', 'white'].indexOf(color) !== -1;
@@ -64,7 +59,10 @@ const correctColorType = (
     : getRamp(colorValue, color);
 };
 
-const getRamp = (color: string | RampWithInflection, keyName: string): Ramp => {
+const getRamp = (
+  color: string | ColorRampWithInflection,
+  keyName: string
+): Ramp => {
   if (typeof color === 'string') {
     if (palette[color]) {
       return palette[color];
@@ -112,7 +110,12 @@ const primaryColorsByVariation = (colors?: Colors = {}) => {
   }, {});
 };
 
-export default function createTheme(options: Options): Object {
+export default function createTheme(
+  options: ?{
+    colors?: Colors,
+    overrides?: ThemeObj
+  }
+): ThemeObj {
   const colors = options && options.colors;
 
   const grayRamp =

@@ -1,93 +1,21 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createThemedComponent, mapComponentThemes } from '../themes';
-import Choice, {
-  componentTheme as choiceComponentTheme
-} from '../Choice/Choice';
 import IconChecked from '../Icon/IconRadioButtonCheck';
+import { RadioRoot as Root } from './styled';
+import { LABEL_POSITION, SIZE } from './constants';
 
-type Props = {
-  /**
-   * Checked state of the radio button. Primarily for use with controlled
-   * components. If this prop is specified, an `onChange` handler must also be
-   * specified. See also: `defaultChecked`.
-   */
-  checked?: boolean,
-  /** @Private CSS className */
-  className?: string,
-  /**
-   * Initial checked state of the radio button; primarily for use with
-   * uncontrolled components
-   */
-  defaultChecked?: boolean,
-  /** Disables the radio button */
-  disabled?: boolean,
-  /** Visually hide label, but keep available for [assistive technologies](https://webaccess.berkeley.edu/resources/assistive-technology) */
-  hideLabel?: boolean,
-  /** Ref for the radio button */
-  inputRef?: (node: ?HTMLInputElement) => void,
-  /** Indicates that the value of the input is invalid */
-  invalid?: boolean,
-  /** Maximize the distance between the label and the control */
-  justify?: boolean,
-  /** Label associated with the input element */
-  label: string | React$Element<*>,
-  /** Determines the position of the label relative to the control */
-  labelPosition?: 'start' | 'end',
-  /** Used to uniquely define a group of radio buttons */
-  name?: string,
-  /** Function called when a radio button is selected */
-  onChange?: (event: SyntheticInputEvent<>) => void,
-  /** Indicates that the user must select an option before submitting a form */
-  required?: boolean,
-  /** Props to be applied directly to the root element rather than the input */
-  rootProps?: Object,
-  /** Available sizes */
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  /** The value of the radio button */
-  value?: string
-};
+import { radioPropTypes } from './propTypes';
+import type { RadioDefaultProps, RadioProps } from './types';
 
-export const componentTheme = (baseTheme: Object) =>
-  mapComponentThemes(
-    {
-      name: 'Choice',
-      theme: choiceComponentTheme(baseTheme)
-    },
-    {
-      name: 'Radio',
-      theme: {
-        RadioControl_borderRadius: '100%'
-      }
-    },
-    baseTheme
-  );
-
-const Root = createThemedComponent(Choice, ({ theme: baseTheme }) =>
-  mapComponentThemes(
-    {
-      name: 'Radio',
-      theme: componentTheme(baseTheme)
-    },
-    {
-      name: 'Choice',
-      theme: {}
-    },
-    baseTheme
-  )
-);
-
-/**
- * Radio is an interactive control that can be turned on or off. Radios are most
- * often used in [groups](/components/radio-group), wherein only a single option may be
- * selected.
- */
-export default class Radio extends PureComponent<Props> {
-  static defaultProps = {
-    labelPosition: 'end',
-    size: 'large'
-  };
+export default class Radio extends PureComponent<RadioProps> {
   static displayName = 'Radio';
+
+  static defaultProps: RadioDefaultProps = {
+    labelPosition: LABEL_POSITION.end,
+    size: SIZE.large
+  };
+
+  static propTypes = radioPropTypes;
 
   render() {
     const {

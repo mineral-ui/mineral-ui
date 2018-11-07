@@ -5,20 +5,10 @@ import TableSelectableCell from './TableSelectableCell';
 import TableCell from './TableCell';
 import TableRow from './TableRow';
 
-import type { Toggle } from './Selectable';
-import type { Columns, Messages, Row } from './Table';
+import type { TableDataRowProps } from './types';
 
-type Props = {
-  checked?: boolean,
-  columns: Columns,
-  data: Row,
-  messages: Messages,
-  rowIndex: number,
-  toggle?: Toggle
-};
-
-export default class TableDataRow extends Component<Props> {
-  shouldComponentUpdate(nextProps: Props) {
+export default class TableDataRow extends Component<TableDataRowProps> {
+  shouldComponentUpdate(nextProps: TableDataRowProps) {
     return !deepEqual(this.props, nextProps);
   }
 

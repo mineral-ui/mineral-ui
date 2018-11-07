@@ -1,56 +1,19 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import { createStyledComponent } from '../styles';
-import { createThemedComponent } from '../themes';
-import Button from '../Button';
 import IconChevronLeft from '../Icon/IconChevronLeft';
 import IconChevronRight from '../Icon/IconChevronRight';
-import { FlexItem } from '../Flex';
-import { componentTheme } from './Pagination';
+import Button from '../Button';
+import {
+  PagesRoot as Root,
+  PagesEllipsisButton as EllipsisButton
+} from './styled';
 
-type Props = {
-  currentPage: number,
-  handleClick: (currentPage: number) => void,
-  handleIncrement: (
-    next: boolean,
-    callback?: (nextPage: number) => void
-  ) => void,
-  showPageNumbers?: boolean,
-  messages: {|
-    pageLabel: (
-      isCurrentPage: boolean,
-      isLastPage: boolean,
-      page: number
-    ) => string,
-    next: string,
-    previous: string
-  |},
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  totalPages: number,
-  visibleRange: number
-};
-
-const Container = createStyledComponent(FlexItem, ({ theme: baseTheme }) => {
-  const theme = componentTheme(baseTheme);
-  const rtl = theme.direction === 'rtl';
-  const middleMargin = rtl ? 'marginLeft' : 'marginRight';
-  return {
-    '& > button, & > span': {
-      '&:not(:last-child)': {
-        [middleMargin]: theme.Pagination_gutterWidth
-      }
-    }
-  };
-});
+import type { PagesProps } from './types';
 
 const firstPage = (current) => current === 1;
 const lastPage = (current, total) => current === total;
 const isDisabled = (next, currentPage, totalPages) =>
   next ? lastPage(currentPage, totalPages) : firstPage(currentPage);
-
-const EllipsisButton = createThemedComponent(Button, ({ theme }) => ({
-  color_disabled: theme.color_theme
-}));
 
 const getPageButtons = ({
   currentPage,
@@ -59,7 +22,7 @@ const getPageButtons = ({
   size,
   totalPages,
   visibleRange
-}: Props) => {
+}: PagesProps) => {
   return [...Array(totalPages)]
     .map((_, i) => i)
     .map((_, index) => {
@@ -139,7 +102,7 @@ const IncrementButton = ({
   size,
   totalPages,
   ...restProps
-}: Props & {
+}: PagesProps & {
   direction: string,
   focusedNodeWhenDisabled: ?HTMLButtonElement
 }) => {
@@ -168,7 +131,7 @@ const IncrementButton = ({
   return <Button {...buttonProps} />;
 };
 
-export default class Pages extends PureComponent<Props> {
+export default class Pages extends PureComponent<PagesProps> {
   previousButton: ?HTMLButtonElement;
 
   nextButton: ?HTMLButtonElement;
@@ -177,7 +140,7 @@ export default class Pages extends PureComponent<Props> {
     const { showPageNumbers, ...restProps } = this.props;
 
     return (
-      <Container {...restProps}>
+      <Root {...restProps}>
         <IncrementButton
           direction="previous"
           focusedNodeWhenDisabled={this.nextButton}
@@ -191,7 +154,7 @@ export default class Pages extends PureComponent<Props> {
           innerRef={this.setNextButtonRef}
           {...restProps}
         />
-      </Container>
+      </Root>
     );
   }
 

@@ -1,7 +1,7 @@
 /* @flow */
 import createReactContext, { type Context } from 'create-react-context';
 
-type ModifiersContextType = Object | typeof undefined;
+import type { ModifiersContextType } from './types';
 
 const ModifiersContext: Context<ModifiersContextType> = createReactContext();
 

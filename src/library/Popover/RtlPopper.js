@@ -3,27 +3,7 @@ import React from 'react';
 import { Popper } from 'react-popper';
 import { withTheme } from '../themes';
 
-type Props = {
-  /** Placement of the Popover */
-  placement?:
-    | 'auto'
-    | 'auto-end'
-    | 'auto-start'
-    | 'bottom'
-    | 'bottom-end'
-    | 'bottom-start'
-    | 'left'
-    | 'left-end'
-    | 'left-start'
-    | 'right'
-    | 'right-end'
-    | 'right-start'
-    | 'top'
-    | 'top-end'
-    | 'top-start',
-  /** Theme */
-  theme: Object
-};
+import type { RtlPopperProps } from './types';
 
 const getRtlPlacement = (placement: string) => {
   const rtlPlacementMap = {
@@ -39,10 +19,7 @@ const getRtlPlacement = (placement: string) => {
   return placement;
 };
 
-/**
- * Wrapper around react-popper's Popper to respect RTL in placement
- */
-function RtlPopper({ placement, theme, ...restProps }: Props) {
+function RtlPopper({ placement, theme, ...restProps }: RtlPopperProps) {
   const rootProps = {
     placement:
       placement && theme.direction === 'rtl'

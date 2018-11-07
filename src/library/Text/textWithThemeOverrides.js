@@ -2,23 +2,16 @@
 import React from 'react';
 import { ThemeProvider } from '../themes';
 
-type Arg = {
-  appearance?: string,
-  children: React$Node,
-  displayName: string,
-  element?: string,
-  textComponent: React$ComponentType<*>,
-  theme: Object
-};
+import type { TextWithThemeOverrides } from './types';
 
-const textWithThemeOverrides = ({
+const textWithThemeOverrides: TextWithThemeOverrides = ({
   appearance,
   children,
   textComponent,
   element = 'h4',
   displayName,
   theme
-}: Arg) => {
+}) => {
   const Text = textComponent;
   const textProps = {
     appearance,

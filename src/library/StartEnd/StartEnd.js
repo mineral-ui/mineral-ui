@@ -1,33 +1,11 @@
 /* @flow */
 import React, { Children } from 'react';
 import Flex, { FlexItem } from '../Flex';
+import { JUSTIFY_CONTENT } from '../Flex/constants';
 
-type Props = {
-  /**
-   * Media query (min-width) breakpoints along which to apply props marked
-   * "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;"
-   */
-  breakpoints?: Array<number | string>,
-  /** Must be exactly two nodes */
-  children: React$Node,
-  /**
-   * Direction of flow of items along the main axis
-   * [[Responsive-capable]](#responsive)
-   */
-  direction?: 'column' | 'row' | Array<'column' | 'row' | null>,
-  /** @Private From Flex; filtered out */
-  justifyContent?: any,
-  /** Determines which side stretches to fill the available width */
-  priority?: 'start' | 'end' | 'both',
-  /** @Private From Flex; filtered out */
-  wrap?: any
-};
+import type { StartEndProps } from './types';
 
-/**
- * StartEnd provides a simple way to align components to the start and end of a
- * container.
- */
-export default function StartEnd(props: Props) {
+export default function StartEnd(props: StartEndProps) {
   const {
     children,
     justifyContent: ignoreJustifyContent,
@@ -36,7 +14,7 @@ export default function StartEnd(props: Props) {
     ...restProps
   } = props;
   const rootProps = {
-    justifyContent: 'between',
+    justifyContent: JUSTIFY_CONTENT.between,
     ...restProps
   };
   let flexItems;
@@ -58,6 +36,6 @@ export default function StartEnd(props: Props) {
     throw new Error('StartEnd must have exactly two children.');
   }
 
-  // $FlowFixMe - `direction` can't have the '-reverse' options from Flex
+  // $FlowFixMe - Reverse directions unsupported here but are supported on Flex
   return <Flex {...rootProps}>{flexItems}</Flex>;
 }

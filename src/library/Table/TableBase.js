@@ -1,103 +1,32 @@
 /* @flow */
 import React, { Component } from 'react';
-import createReactContext, { type Context } from 'create-react-context';
-import { createStyledComponent } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
 import { generateId } from '../utils';
-import _OverflowContainer, {
-  componentTheme as overflowContainerComponentTheme
-} from '../OverflowContainer/OverflowContainer';
+import TableContext from './TableContext';
 import TableDataRow from './TableDataRow';
 import TableHeaderRow from './TableHeaderRow';
-import TableBody from './TableBody';
 import TableHeader from './TableHeader';
 import TableTitle from './TableTitle';
+import {
+  TableRoot as Root,
+  TableBody,
+  TableOverflowContainer as OverflowContainer
+} from './styled';
+import { DENSITY, TITLE_ELEMENT } from './constants';
 
-import type { SelectableType } from './Selectable';
-import type { SortableType } from './Sortable';
-import type { Columns, Messages, Rows } from './Table';
+import type {
+  TableBaseDefaultProps,
+  TableBaseProps,
+  TableBaseState
+} from './types';
 
-// See Table
-type Props = {
-  columns: Columns,
-  data: Rows,
-  hideHeader?: boolean,
-  hideTitle?: boolean,
-  id?: string,
-  isSortable?: boolean,
-  messages: Messages,
-  rowKey?: string,
-  scrollable?: boolean,
-  selectable?: SelectableType,
-  sortable?: SortableType,
-  title: React$Node,
-  titleAppearance?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6',
-  titleElement?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-} & TableContextType;
-
-type State = {
-  scrollable: boolean
-};
-
-type TableContextType = {
-  density?: 'compact' | 'spacious',
-  highContrast?: boolean,
-  striped?: boolean
-};
-
-export const componentTheme = (baseTheme: Object) =>
-  mapComponentThemes(
-    {
-      name: 'OverflowContainer',
-      theme: overflowContainerComponentTheme(baseTheme)
-    },
-    {
-      name: 'Table',
-      theme: {}
-    },
-    baseTheme
-  );
-
-const OverflowContainer = createThemedComponent(
-  _OverflowContainer,
-  ({ theme: baseTheme }) =>
-    mapComponentThemes(
-      {
-        name: 'Table',
-        theme: componentTheme(baseTheme)
-      },
-      {
-        name: 'OverflowContainer',
-        theme: {}
-      },
-      baseTheme
-    )
-);
-
-const Root = createStyledComponent(
-  'table',
-  {
-    borderCollapse: 'collapse',
-    borderSpacing: 0,
-    width: '100%'
-  },
-  {
-    displayName: 'Table',
-    rootEl: 'table',
-    includeStyleReset: true
-  }
-);
-
-export const TableContext: Context<TableContextType> = createReactContext({});
-
-/**
- * Table displays structured data with columns and rows.
- */
-export default class TableBase extends Component<Props, State> {
-  static defaultProps = {
-    titleElement: 'h4',
-    density: 'compact',
-    scrollable: true
+export default class TableBase extends Component<
+  TableBaseProps,
+  TableBaseState
+> {
+  static defaultProps: TableBaseDefaultProps = {
+    density: DENSITY.compact,
+    scrollable: true,
+    titleElement: TITLE_ELEMENT.h4
   };
 
   id: string = this.props.id || `table-${generateId()}`;

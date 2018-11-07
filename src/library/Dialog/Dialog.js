@@ -4,264 +4,56 @@ import { canUseDOM } from 'exenv';
 import FocusTrap from 'focus-trap-react';
 import noScroll from 'no-scroll';
 import Transition from 'react-transition-group/Transition';
-import { createStyledComponent, pxToEm } from '../styles';
-import { createThemedComponent, withTheme } from '../themes';
+import { withTheme } from '../themes';
 import { generateId } from '../utils';
 import { excludeByType, findByType } from '../utils/children';
 import Button from '../Button';
-import IconClose from '../Icon/IconClose';
 import Portal from '../Portal';
 import EventListener from '../EventListener';
+import { ACTIONS_SIZE, SIZE } from './constants';
+import {
+  DialogRoot as Root,
+  DialogAnimate,
+  DialogCloseButton,
+  DialogContent,
+  DialogIEWrapper,
+  DialogOverlay
+} from './styled';
+import { dialogTheme } from './themes';
 import DialogActions from './DialogActions';
 import DialogBody from './DialogBody';
 import DialogFooter from './DialogFooter';
 import DialogHeader from './DialogHeader';
 import DialogTitle from './DialogTitle';
-import { componentTheme as dialogRowComponentTheme } from './DialogRow';
 
-type Props = {
-  /**
-   * Configuration for the [Buttons](/components/button) rendered at the bottom
-   * of Dialog; accepts all Button props
-   */
-  actions?: Array<{
-    text: string,
-    size?: 'small' | 'medium' | 'large' | 'jumbo'
-  }>,
-  /**
-   * CSS selector matching the node(s) which will be accessibly hidden (unless
-   * \`modeless\`)
-   */
-  appSelector?: string,
-  /** @Private Accessible label */
-  'aria-label'?: string,
-  /**
-   * Content of Dialog (see the [Basic](#basic) and
-   * [Alternate Syntax](#alternate) examples)
-   */
-  children?: React$Node,
-  /** Accessible label for the close button */
-  closeButtonLabel?: string,
-  /** Close Dialog with the 'Escape' key */
-  closeOnEscape?: boolean,
-  /** Close Dialog by clicking outside of its content */
-  closeOnClickOutside?: boolean,
-  /** Disable focus being placed on Dialog upon opening */
-  disableFocusOnOpen?: boolean,
-  /** Disable focus being trapped within the Dialog when open */
-  disableFocusTrap?: boolean,
-  /** Hide the overlay underneath Dialog */
-  hideOverlay?: boolean,
-  /** Id of the Dialog */
-  id?: string,
-  /** Dialog only renders its content when true */
-  isOpen?: boolean,
-  /** Renders Dialog without modal behavior ([see example](#modeless)) */
-  modeless?: boolean,
-  /** Called when Dialog is closed */
-  onClose?: () => void,
-  /** Called when Dialog is opened */
-  onOpen?: () => void,
-  /** @Private Prevent the dialog from closing when the close button is clicked */
-  preventCloseButtonClose?: boolean,
-  /** Render a close button for Dialog */
-  showCloseButton?: boolean,
-  /** Available sizes */
-  size?: 'small' | 'medium' | 'large',
-  /**
-   * Title of the dialog; must be a string or
-   * [DialogTitle](/components/dialog-title)
-   */
-  title?: string | React$Element<*>,
-  /** @Private Use a Portal to render Dialog to the body */
-  usePortal?: boolean,
-  /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
-};
-
-type State = {
-  isExited: boolean,
-  isExiting: boolean
-};
-
-export const componentTheme = (baseTheme: Object) => ({
-  Dialog_transitionDuration: '250ms',
-  Dialog_zIndex: baseTheme.zIndex_1600,
-
-  DialogCloseButton_margin: baseTheme.space_inline_sm,
-
-  DialogContent_backgroundColor: baseTheme.panel_backgroundColor,
-  DialogContent_borderColor: baseTheme.panel_borderColor,
-  DialogContent_borderRadius: baseTheme.borderRadius_1,
-  DialogContent_boxShadow: baseTheme.boxShadow_5,
-  DialogContent_maxHeight: '80vh',
-  DialogContent_maxHeight_small: pxToEm(560),
-  DialogContent_maxHeight_medium: pxToEm(560),
-  DialogContent_maxHeight_large: pxToEm(720),
-  DialogContent_maxWidth_small: pxToEm(400),
-  DialogContent_maxWidth_medium: pxToEm(640),
-  DialogContent_maxWidth_large: pxToEm(1200),
-  DialogContent_minWidth: pxToEm(360),
-  DialogContent_offsetVertical: baseTheme.space_stack_xxl,
-  DialogContent_width_small: '35vw',
-  DialogContent_width_medium: '50vw',
-  DialogContent_width_large: '80vw',
-
-  DialogOverlay_backgroundColor: 'rgba(0, 0, 0, 0.6)',
-
-  ...dialogRowComponentTheme(baseTheme),
-  ...baseTheme
-});
-
-const styles = {
-  animate: ({ state, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    return {
-      opacity: state === 'entered' ? 1 : 0,
-      position: 'relative',
-      transition: `opacity ${theme.Dialog_transitionDuration} ease`,
-      willChange: 'opacity',
-      zIndex: theme.Dialog_zIndex
-    };
-  },
-  content: ({ size, theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    const getSizeStyles = (size: string) => {
-      const maxWidth = theme[`DialogContent_maxWidth_${size}`];
-      const maxHeight = theme[`DialogContent_maxHeight_${size}`];
-      const width = theme[`DialogContent_width_${size}`];
-      const offsetVertical = theme.DialogContent_offsetVertical;
-
-      const maxHeightNumber = parseFloat(maxHeight);
-      const offsetVerticalNumber = parseFloat(offsetVertical);
-      const minHeight = `${maxHeightNumber + 2 * offsetVerticalNumber}em`;
-
-      return {
-        maxWidth,
-        width,
-
-        [`@media(min-height: ${minHeight})`]: {
-          maxHeight
-        }
-      };
-    };
-
-    return {
-      backgroundColor: theme.DialogContent_backgroundColor,
-      border: `1px solid ${theme.DialogContent_borderColor}`,
-      borderRadius: theme.DialogContent_borderRadius,
-      boxShadow: theme.DialogContent_boxShadow,
-      display: 'flex',
-      flexDirection: 'column',
-      maxHeight: theme.DialogContent_maxHeight,
-      minWidth: theme.DialogContent_minWidth,
-      pointerEvents: 'all',
-      position: 'relative',
-      ...getSizeStyles(size)
-    };
-  },
-  ieWrapper: {
-    display: 'flex'
-  },
-  overlay: ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-
-    return {
-      backgroundColor: theme.DialogOverlay_backgroundColor,
-      bottom: 0,
-      left: 0,
-      overflow: 'hidden',
-      position: 'absolute',
-      right: 0,
-      top: 0
-    };
-  },
-  root: ({ modeless }) => ({
-    alignItems: 'center',
-    bottom: 0,
-    display: 'flex',
-    justifyContent: 'center',
-    left: 0,
-    position: 'fixed',
-    pointerEvents: modeless ? 'none' : undefined,
-    right: 0,
-    top: 0
-  })
-};
-
-const Root = createStyledComponent('div', styles.root, {
-  displayName: 'Dialog',
-  filterProps: ['title'],
-  includeStyleReset: true
-});
-
-const Overlay = createStyledComponent('div', styles.overlay, {
-  displayName: 'Overlay'
-});
-
-const IEWrapper = createStyledComponent('div', styles.ieWrapper);
-
-const Content = createStyledComponent('div', styles.content, {
-  displayName: 'DialogContent'
-});
-
-const Animate = createStyledComponent('div', styles.animate, {
-  displayName: 'Animate'
-});
+import { dialogPropTypes } from './propTypes';
+import type { DialogDefaultProps, DialogProps, DialogState } from './types';
 
 const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
   return (
     <Transition
       appear
       mountOnEnter
-      timeout={parseFloat(componentTheme(theme).Dialog_transitionDuration)}
+      timeout={parseFloat(dialogTheme(theme).Dialog_transitionDuration)}
       unmountOnExit
       {...restProps}>
-      {(state) => <Animate state={state}>{children}</Animate>}
+      {(state) => <DialogAnimate state={state}>{children}</DialogAnimate>}
     </Transition>
   );
 });
 
-const ThemedButton = createThemedComponent(Button, ({ theme }) => ({
-  ButtonIcon_color: theme.color
-}));
-
-const CloseButton = createStyledComponent(
-  ThemedButton,
-  ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginRight' : 'marginLeft';
-
-    return {
-      [marginProperty]: theme.DialogCloseButton_margin
-    };
-  },
-  {
-    displayName: 'CloseButton',
-    withProps: {
-      iconStart: <IconClose />,
-      minimal: true,
-      size: 'small'
-    }
-  }
-);
-
-/**
- * Dialog displays content in a layer above the app and requires user
- * interaction to dismiss it. It may appear contextually or as a modal.
- */
-export default class Dialog extends Component<Props, State> {
-  static defaultProps: Props = {
+export default class Dialog extends Component<DialogProps, DialogState> {
+  static defaultProps: DialogDefaultProps = {
     closeButtonLabel: 'close',
     closeOnClickOutside: true,
     closeOnEscape: true,
-    size: 'medium',
+    size: SIZE.medium,
     usePortal: true
   };
 
-  state: State = {
+  static propTypes = dialogPropTypes;
+
+  state = {
     isExited: false,
     isExiting: false
   };
@@ -276,7 +68,7 @@ export default class Dialog extends Component<Props, State> {
 
   lastFocusedElement: ?HTMLElement;
 
-  componentDidUpdate(prevProps: Props) {
+  componentDidUpdate(prevProps: DialogProps) {
     if (!prevProps.isOpen && this.props.isOpen) {
       this.open();
     }
@@ -359,14 +151,14 @@ export default class Dialog extends Component<Props, State> {
       <Animation {...animationProps}>
         <FocusTrap {...focusTrapProps}>
           <Root {...rootProps}>
-            {!hideOverlay && !modeless && <Overlay />}
-            <IEWrapper>
-              <Content {...contentProps}>
+            {!hideOverlay && !modeless && <DialogOverlay />}
+            <DialogIEWrapper>
+              <DialogContent {...contentProps}>
                 {this.renderHeader()}
                 {this.renderBody()}
                 {this.renderFooter()}
-              </Content>
-            </IEWrapper>
+              </DialogContent>
+            </DialogIEWrapper>
             {closeOnEscape && (
               <EventListener
                 listeners={[
@@ -402,7 +194,7 @@ export default class Dialog extends Component<Props, State> {
     };
 
     // prettier-ignore
-    const closeButton = showCloseButton ? <CloseButton {...closeButtonProps} /> : undefined;
+    const closeButton = showCloseButton ? <DialogCloseButton {...closeButtonProps} /> : undefined;
 
     let header;
     const titleProps = {
@@ -462,7 +254,11 @@ export default class Dialog extends Component<Props, State> {
       const keyedActions = actions.map(
         ({ text, size: buttonSize, ...restProps }, index) => {
           const buttonProps = {
-            size: buttonSize || (size === 'large' ? 'large' : 'medium'),
+            size:
+              buttonSize ||
+              (size === ACTIONS_SIZE.large
+                ? ACTIONS_SIZE.large
+                : ACTIONS_SIZE.medium),
             ...restProps
           };
           return (
