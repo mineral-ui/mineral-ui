@@ -4,7 +4,7 @@ import LiveProvider from '../../../LiveProvider';
 import { createStyledComponent } from '../../../../../library/styles';
 import { withTheme } from '../../../../../library/themes';
 import Menu from '../../../../../library/Menu';
-import { componentTheme as menuItemTheme } from '../../../../../library/Menu/MenuItem';
+import { menuItemTheme } from '../../../../../library/Menu/themes';
 
 export default function ThemeAccess() {
   const liveProviderProps = {
@@ -17,7 +17,7 @@ export default function ThemeAccess() {
     },
     source: `
       () => {
-        // import { componentTheme as menuItemTheme } from 'mineral-ui/Menu/MenuItem';
+        // import { menuItemTheme } from 'mineral-ui/Menu';
 
         const StyledDiv = withTheme(
           createStyledComponent('div', ({ theme: baseTheme }) => {

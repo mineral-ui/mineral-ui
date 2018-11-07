@@ -99,7 +99,7 @@ export default function ComponentDocExample(props: Props) {
   const title =
     hideFromProd && typeof propsTitle === 'string'
       ? `${propsTitle} [Dev-only]`
-      : propsTitle;
+      : propsTitle || null;
 
   return standalone && chromeless ? (
     liveCode

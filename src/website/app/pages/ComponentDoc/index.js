@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   createStyledComponent,
   getNormalizedValue,
@@ -16,28 +16,11 @@ import DocSubNav from './DocSubNav';
 import DocThemeVariables from './DocThemeVariables';
 import DocWhenHowToUse from './DocWhenHowToUse';
 
-type Props = {
-  additionalTypes?: Array<Object>,
-  bestPractices?: Array<BestPractice>,
-  className?: string,
-  componentTheme?: Theme | Array<Theme>,
-  description?: React$Node,
-  doc: Object,
-  examples?: Array<any>,
-  propsComment?: string | React$Element<*>,
-  slug: string,
-  title: string,
-  whenHowToUse?: string
-};
+import type { ComponentDocType } from './types';
 
-type BestPractice = {
-  type: string,
-  title: string,
-  example: React$Node,
-  description: string
+type ComponentDocProps = {
+  componentDoc: ComponentDocType
 };
-
-type Theme = (theme: Object) => Object;
 
 const StyledDocHeading = createStyledComponent(
   Heading,
@@ -71,59 +54,54 @@ const DocHeading = ({
   </DocSection>
 );
 
-const DocIntro = ({ children }: { children: string }) => (
+const DocIntro = ({ children }: { children: React$Node }) => (
   <DocSection>
     <Intro>{children}</Intro>
   </DocSection>
 );
 
-export default function ComponentDoc(props: Props) {
+export default function ComponentDoc(props: ComponentDocProps) {
+  const { componentDoc, ...rootProps } = props;
   const {
-    additionalTypes,
     bestPractices,
-    componentTheme,
-    doc,
+    theme,
+    description,
     examples,
-    propsComment,
     slug,
     title,
-    whenHowToUse,
-    ...restProps
-  } = props;
-  const { props: propDoc } = doc;
-  const subNavProps = {
-    bestPractices,
-    componentTheme,
-    examples,
     whenHowToUse
-  };
-  const rootProps = {
-    ...restProps
-  };
-  delete rootProps.subcomponent;
-  delete rootProps.slug;
-  const examplesProps = { examples, slug };
-  const propProps = { additionalTypes, propDoc, propsComment, title };
-  const themeVariablesProps = {
-    baseTheme: mineralTheme,
-    componentTheme,
-    title
-  };
+  } = componentDoc;
 
   return (
     <div {...rootProps}>
-      {doc.description && <DocIntro>{doc.description}</DocIntro>}
-      <DocSubNav {...subNavProps} />
-      {examples && <DocHeading id="examples">Examples</DocHeading>}
-      {examples && <DocExamples {...examplesProps} />}
-      <DocHeading id="api-and-theme">API & Theme</DocHeading>
-      <DocProps {...propProps} />
-      {componentTheme && <DocThemeVariables {...themeVariablesProps} />}
-      {(whenHowToUse || bestPractices) && (
-        <DocHeading id="usage">Usage</DocHeading>
+      {description && <DocIntro>{description}</DocIntro>}
+
+      <DocSubNav componentDoc={componentDoc} />
+
+      {examples && (
+        <Fragment>
+          <DocHeading id="examples">Examples</DocHeading>
+          <DocExamples examples={examples} slug={slug} />
+        </Fragment>
       )}
-      {whenHowToUse && <DocWhenHowToUse content={whenHowToUse} />}
-      {bestPractices && <DocBestPractices practices={bestPractices} />}
+
+      <DocHeading id="api-and-theme">API & Theme</DocHeading>
+      <DocProps componentDoc={componentDoc} />
+      {theme && (
+        <DocThemeVariables
+          baseTheme={mineralTheme}
+          componentTheme={theme}
+          title={title}
+        />
+      )}
+
+      {(whenHowToUse || bestPractices) && (
+        <Fragment>
+          <DocHeading id="usage">Usage</DocHeading>
+          {whenHowToUse && <DocWhenHowToUse content={whenHowToUse} />}
+          {bestPractices && <DocBestPractices practices={bestPractices} />}
+        </Fragment>
+      )}
     </div>
   );
 }

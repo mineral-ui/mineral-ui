@@ -1,18 +1,8 @@
 /* @flow */
-import { componentTheme } from '../../../../library/Avatar/Avatar';
-import bestPractices from './bestPractices';
-import examples from './examples';
+import avatarDoc from './Avatar';
 
-const doc = require('!!react-docgen-loader!../../../../library/Avatar/Avatar');
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-export default {
-  bestPractices,
-  componentTheme,
-  doc,
-  examples,
-  slug: 'avatar',
-  title: 'Avatar',
-  whenHowToUse: `Avatar should be used to associate something to an identity.
-For example, add a user's Avatar to a [Card](/components/card) to connect that Card's
-content to that user.`
-};
+const componentDocs: ComponentDocs = [avatarDoc];
+
+export default componentDocs;

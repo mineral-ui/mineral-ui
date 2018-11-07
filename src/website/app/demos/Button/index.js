@@ -1,22 +1,8 @@
 /* @flow */
-import { componentTheme } from '../../../../library/Button/Button';
-import examples from './examples';
-import bestPractices from './bestPractices';
+import buttonDoc from './Button';
 
-const doc = require('!!react-docgen-loader!../../../../library/Button/Button');
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-export default [
-  {
-    bestPractices,
-    componentTheme,
-    doc,
-    examples,
-    slug: 'button',
-    title: 'Button',
-    whenHowToUse: `A Button should be used whenever you need to trigger an action in your app.
-  Buttons should have concise labeling indicating to your user what will happen when the Button is clicked.
-  The color of the button should be chosen according to the intent of the action.
+const componentDocs: ComponentDocs = [buttonDoc];
 
-  For example, if clicking a Button will make a potentially destructive action, use \`variant="danger"\` instead of \`"success"\`.`
-  }
-];
+export default componentDocs;

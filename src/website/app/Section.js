@@ -3,12 +3,20 @@ import React, { Component } from 'react';
 import memoizeOne from 'memoize-one';
 import { createStyledComponent } from '../../library/styles';
 
+import type { CreateRootNode } from '../../library/styles/types';
+
 type Props = {
   angles?: Array<number>,
-  element?: string,
   children: React$Node,
   clipColor?: string,
+  element?: string,
   point?: number | string
+};
+
+type DefaultProps = {
+  angles: Array<number>,
+  clipColor: string,
+  element: string
 };
 
 const styles = {
@@ -100,8 +108,11 @@ const styles = {
 
 const Inner = createStyledComponent('div', styles.inner);
 
-const createRootNode = (props: Props) => {
-  const { element = Section.defaultProps.element } = props;
+const createRootNode: CreateRootNode<Props, DefaultProps> = (
+  props,
+  defaultProps
+) => {
+  const { element = defaultProps.element } = props;
 
   return createStyledComponent(element, styles.root, {
     rootEl: element
@@ -109,7 +120,7 @@ const createRootNode = (props: Props) => {
 };
 
 export default class Section extends Component<Props> {
-  static defaultProps = {
+  static defaultProps: DefaultProps = {
     angles: [5, 5],
     clipColor: '#fff',
     element: 'section'
@@ -131,7 +142,7 @@ export default class Section extends Component<Props> {
       ...restProps
     } = this.props;
 
-    const Root = this.getRootNode(this.props);
+    const Root = this.getRootNode(this.props, Section.defaultProps);
 
     const rootProps = {
       point,

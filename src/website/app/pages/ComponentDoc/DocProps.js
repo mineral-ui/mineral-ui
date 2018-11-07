@@ -7,11 +7,10 @@ import PropTable from '../../PropTable';
 import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
 
-type Props = {
-  additionalTypes?: Array<Object>,
-  propDoc?: Object,
-  propsComment?: string | React$Element<*>,
-  title: string
+import type { ComponentDocType } from './types';
+
+type DocPropsProps = {
+  componentDoc: ComponentDocType
 };
 
 const Callout = createStyledComponent(_Callout, ({ theme }) => ({
@@ -21,15 +20,20 @@ const PropsComment = createStyledComponent('p', {
   fontStyle: 'italic'
 });
 
-export default function DocProps(props: Props) {
-  const { additionalTypes, propDoc, propsComment, title } = props;
+export default function DocProps(props: DocPropsProps) {
+  const {
+    additionalPropDocs,
+    propDocs,
+    propsComment,
+    title
+  } = props.componentDoc;
   return (
     <Section>
       <DocSectionTitle id="props">{`${title} Props`}</DocSectionTitle>
       <p>The {title} component takes the following React props.</p>
-      {propDoc ? (
+      {propDocs ? (
         <div>
-          <PropTable propDoc={propDoc} />
+          <PropTable propDocs={propDocs} />
           {propsComment ? (
             <Callout title="Note">{propsComment}</Callout>
           ) : (
@@ -43,14 +47,15 @@ export default function DocProps(props: Props) {
           {`${title} does not have properties of its own. Undocumented properties will be applied to the root element.`}
         </Callout>
       )}
-      {additionalTypes &&
-        additionalTypes.map(({ title, description, content }) => (
+
+      {additionalPropDocs &&
+        additionalPropDocs.map(({ title, description, propDocs }) => (
           <div key={title}>
             <DocSectionTitle
               id={`${title}-type`}
               level={4}>{`${title} Type`}</DocSectionTitle>
             <Markdown>{description}</Markdown>
-            <PropTable propDoc={content} />
+            <PropTable propDocs={propDocs} />
           </div>
         ))}
     </Section>

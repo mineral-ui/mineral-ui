@@ -4,12 +4,17 @@ import { createColorRamp, themeFromTokens } from '../../../../library/themes';
 import { nonTokenVariables } from '../../../../library/themes/createTheme';
 import categorizedJsTokens from '../../generated/categorizedJsTokens';
 
-const { boxShadow_focusInner, direction, fontSize_base } = nonTokenVariables();
+import type { ThemeObj } from '../../../../library/themes/types';
+type ThemeGroup = [string, ThemeObj];
+type GroupedMineralTheme = Array<ThemeGroup>;
 
+const { boxShadow_focusInner, direction, fontSize_base } = nonTokenVariables();
 const grayRamp = createColorRamp(gray, 'color_gray_');
 const themeRamp = createColorRamp(brand, 'color_theme_');
 
-export default Object.keys(categorizedJsTokens)
+const groupedMineralTheme: GroupedMineralTheme = Object.keys(
+  categorizedJsTokens
+)
   .filter((category) => category !== 'palette')
   .map((category) => {
     let tokens = categorizedJsTokens[category];
@@ -40,3 +45,5 @@ export default Object.keys(categorizedJsTokens)
       }
     ]
   ]);
+
+export default groupedMineralTheme;

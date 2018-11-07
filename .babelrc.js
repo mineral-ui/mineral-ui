@@ -29,7 +29,6 @@ module.exports = {
   plugins: (() => {
     let plugins = [
       'transform-object-rest-spread',
-      'flow-react-proptypes',
       'transform-class-properties',
       'syntax-dynamic-import'
     ];
@@ -67,7 +66,6 @@ module.exports = {
           mode: 'wrap',
           ignoreFilenames: ['node_modules'],
           'plugins': [
-            ['babel-plugin-flow-react-proptypes', { 'omitRuntimeTypeExport': true }],
             'babel-plugin-transform-flow-strip-types'
           ]
         }]

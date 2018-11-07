@@ -154,13 +154,15 @@ export default function Router() {
           const AsyncComponentDoc = Loadable({
             loader: () => import('./demos/index'),
             render({ default: fullDemos }: Object) {
-              const docProps = {
-                slug: selectedDemo.slug,
-                ...fullDemos[componentId]
+              const componentDocProps = {
+                componentDoc: {
+                  slug: selectedDemo.slug,
+                  ...fullDemos[componentId]
+                }
               };
               return (
                 <ScrollToIdOnMount id={location.hash.replace('#', '')}>
-                  <ComponentDoc {...docProps} />
+                  <ComponentDoc {...componentDocProps} />
                 </ScrollToIdOnMount>
               );
             }

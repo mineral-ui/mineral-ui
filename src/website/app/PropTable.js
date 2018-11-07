@@ -1,5 +1,5 @@
 /* @flow */
-import React from 'react';
+import React, { Component } from 'react';
 import { createStyledComponent } from '../../library/styles';
 import IconInfo from 'mineral-ui-icons/IconInfo';
 import Button from '../../library/Button';
@@ -7,16 +7,23 @@ import Popover from '../../library/Popover';
 import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 
-type Props = {
-  propDoc: Object
+import type {
+  ComponentPropDocs,
+  ComponentPropDoc
+} from './pages/ComponentDoc/types';
+
+type PropsTableProps = {
+  propDocs: ComponentPropDocs
 };
 
-type PropTableRowProps = {
-  defaultValue?: any,
-  description?: string,
-  name: string,
-  type: any,
+type DefaultValueProps = {
+  defaultValue?: React$Node,
   required?: boolean
+};
+
+type PropTypePopoverProps = {
+  children: React$Node,
+  content: React$Node
 };
 
 const styles = {
@@ -47,6 +54,7 @@ const styles = {
     fontFamily: 'inherit',
     height: 'auto',
     padding: 0,
+    textTransform: 'capitalize',
 
     '& > span > span': {
       lineHeight: theme.lineHeight,
@@ -85,159 +93,123 @@ const PropTypePopoverContent = createStyledComponent(
   styles.propTypePopoverContent
 );
 
-const PropTypePopover = ({ content, trigger }: Object) => (
+const PropTypePopover = ({ content, children }: PropTypePopoverProps) => (
   <Popover content={<PropTypePopoverContent>{content}</PropTypePopoverContent>}>
     <PropTypeButton iconEnd={<IconInfo />} minimal size="medium">
-      {trigger}
+      {children}
     </PropTypeButton>
   </Popover>
 );
 
-function DefaultValue({
-  defaultValue,
-  required
-}: {
-  defaultValue?: any,
-  required?: boolean
-}) {
+const DefaultValue = ({ defaultValue, required }: DefaultValueProps) => {
   return required ? (
     <PropRequired>required</PropRequired>
   ) : (
     <CodeValue>{defaultValue}</CodeValue>
   );
-}
-
-function getDefaultValue(propDescription: Object): any {
-  let { defaultValue: { value } = {} } = propDescription;
-
-  if (value === undefined) {
-    return;
-  }
-
-  const { flowType } = propDescription;
-  let { name, type } = flowType;
-  let usePopover = ['Array', 'signature'].includes(name) && value.length > 25;
-
-  if (name === 'Array') {
-    type = 'Array';
-  } else if (name === 'signature' && type === 'function') {
-    type = 'Function';
-  } else if (name === 'signature' && type === 'object') {
-    type = 'Object';
-  }
-
-  return usePopover ? (
-    <PropTypePopover trigger={type} content={value} />
-  ) : (
-    value
-  );
-}
-
-function getFlowType(propDescription: Object): any {
-  const { flowType } = propDescription;
-  let { name, raw, type } = flowType;
-  let usePopover = raw && raw.length > 25;
-
-  if (name === 'Array') {
-    type = 'Array';
-  } else if (name === 'signature' && type === 'function') {
-    type = 'Function';
-  } else if (name === 'signature' && type === 'object') {
-    type = 'Object';
-  } else if (name === 'union') {
-    type = 'Union';
-    usePopover = flowType.elements.length > 4 || raw.startsWith('|');
-    raw = raw.startsWith('|')
-      ? raw
-          .split('\n| ')
-          .join(',\n')
-          .replace('| ', '')
-      : raw.split(' | ').join(',\n');
-  } else if (name === 'undefined') {
-    return 'unknown';
-  } else {
-    raw = name;
-  }
-
-  return usePopover ? <PropTypePopover trigger={type} content={raw} /> : raw;
-}
-
-function getPropTableRows(propDoc) {
-  return Object.keys(propDoc)
-    .sort()
-    .map((name) => {
-      const propDescription = propDoc[name];
-
-      // Filter out private props
-      if (propDescription.description.startsWith('@Private')) {
-        return null;
-      }
-
-      return (
-        <PropTableRow
-          key={name}
-          defaultValue={getDefaultValue(propDescription)}
-          description={propDescription.description}
-          name={name}
-          required={propDescription.required}
-          type={getFlowType(propDescription)}
-        />
-      );
-    });
-}
-
-function PropTableRow({
-  defaultValue,
-  description,
-  name,
-  required,
-  type
-}: PropTableRowProps) {
-  return (
-    <TableRow>
-      <TableCell>
-        <PropName>{name}</PropName>
-      </TableCell>
-      <TableCell>
-        <PropType>{type}</PropType>
-      </TableCell>
-      <TableCell>
-        <DefaultValue defaultValue={defaultValue} required={required} />
-      </TableCell>
-      <TableCell>
-        <PropP>{description}</PropP>
-      </TableCell>
-    </TableRow>
-  );
-}
-
-const PropTable = (props: Props) => {
-  const { propDoc } = props;
-  return (
-    <Root>
-      <Table>
-        <thead>
-          <tr>
-            <TableHeaderCell key="prop" width="10rem">
-              Name
-            </TableHeaderCell>
-            <TableHeaderCell key="type" width="15rem">
-              Type
-            </TableHeaderCell>
-            <TableHeaderCell key="default" width="10rem">
-              Default
-            </TableHeaderCell>
-            <TableHeaderCell key="description">Description</TableHeaderCell>
-          </tr>
-        </thead>
-        <tbody>{getPropTableRows(propDoc)}</tbody>
-      </Table>
-    </Root>
-  );
 };
 
-PropTable.defaultProps = {
-  propDoc: {}
-};
+export default class PropTable extends Component<PropsTableProps> {
+  static defaultProps = {
+    propDocs: {}
+  };
 
-export default PropTable;
+  render() {
+    return (
+      <Root>
+        <Table>
+          <thead>
+            <tr>
+              <TableHeaderCell key="prop" width="10rem">
+                Name
+              </TableHeaderCell>
+              <TableHeaderCell key="type" width="15rem">
+                Type
+              </TableHeaderCell>
+              <TableHeaderCell key="default" width="10rem">
+                Default
+              </TableHeaderCell>
+              <TableHeaderCell key="description">Description</TableHeaderCell>
+            </tr>
+          </thead>
+          <tbody>{this.renderRows()}</tbody>
+        </Table>
+      </Root>
+    );
+  }
+
+  renderRows = (): Array<React$Element<*>> => {
+    const { propDocs } = this.props;
+
+    return Object.keys(propDocs)
+      .sort()
+      .map((key) => {
+        const propDoc = propDocs[key];
+
+        return (
+          <TableRow key={key}>
+            <TableCell>
+              <PropName>{key}</PropName>
+            </TableCell>
+            <TableCell>
+              <PropType>{this.getType(propDoc)}</PropType>
+            </TableCell>
+            <TableCell>
+              <DefaultValue
+                defaultValue={this.getDefaultValue(propDoc)}
+                required={propDoc.required}
+              />
+            </TableCell>
+            <TableCell>
+              <PropP>{propDoc.description}</PropP>
+            </TableCell>
+          </TableRow>
+        );
+      });
+  };
+
+  getDefaultValue = (propDoc: ComponentPropDoc): ?React$Node => {
+    const { defaultValue, type } = propDoc;
+
+    const name = typeof type === 'string' ? type : type.name;
+    const value = defaultValue || '';
+
+    const usePopover =
+      (name === 'object' && value.length) ||
+      (['array', 'function'].includes(name) && value.length > 25);
+
+    return usePopover ? (
+      <PropTypePopover content={value}>{name}</PropTypePopover>
+    ) : (
+      value
+    );
+  };
+
+  getType(propDoc: ComponentPropDoc): ?React$Node {
+    const { type } = propDoc;
+    const name = typeof type === 'string' ? type : type.name;
+    let value = typeof type === 'string' ? undefined : type.value;
+
+    if (!value) {
+      return name;
+    }
+
+    let usePopover = value.length > 25;
+
+    if (name === 'union') {
+      const values = value.replace(/\|\s/g, '|').split('|');
+      usePopover = values.length > 4;
+      value = usePopover ? `| ${values.join('\n| ')}` : value;
+    }
+
+    if (name === 'object') {
+      usePopover = true;
+    }
+
+    return usePopover ? (
+      <PropTypePopover content={value}>{name}</PropTypePopover>
+    ) : (
+      value
+    );
+  }
+}

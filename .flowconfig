@@ -17,7 +17,6 @@
 [options]
 suppress_type=$FlowFixMe
 suppress_type=$FlowTODO
-module.name_mapper='.*react-docgen-loader.*' -> '<PROJECT_ROOT>/utils/emptyObject'
 module.name_mapper='.*.\(:?md\|svg\)$' -> '<PROJECT_ROOT>/utils/emptyString'
 module.name_mapper='^mineral-ui-icons\/?\(.*\)$' -> '<PROJECT_ROOT>/packages/mineral-ui-icons/src/\1'
 module.name_mapper='^mineral-ui-tokens\/?\(.*\)$' -> '<PROJECT_ROOT>/packages/mineral-ui-tokens/src/\1'

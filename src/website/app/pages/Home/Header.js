@@ -21,25 +21,6 @@ type State = {
   isMenuOpen: boolean
 };
 
-const menuButtonTheme = ({ theme }) => ({
-  fontFamily: theme.fontFamily_headline,
-  Button_color_minimal: theme.color_white,
-  Button_backgroundColor_minimal_hover: 'transparent',
-  Button_backgroundColor_minimal_active: 'transparent',
-  Button_fontWeight: theme.fontWeight_regular,
-  Button_height_large: null,
-  Button_paddingHorizontal: 0,
-  ButtonContent_fontSize: '1em',
-  ButtonIcon_margin: null
-});
-const popoverTheme = {
-  PopoverContent_backgroundColor: null,
-  PopoverContent_borderColor: 'transparent',
-  PopoverContent_borderRadius: null,
-  PopoverContent_boxShadow: null,
-  PopoverContent_paddingVertical: null
-};
-
 const styles = {
   root: ({ isMenuOpen, theme }) => {
     const transitionProperties =
@@ -150,12 +131,30 @@ const styles = {
   })
 };
 
+const ThemedMenuButton = createThemedComponent(Button, ({ theme }) => ({
+  fontFamily: theme.fontFamily_headline,
+  Button_color_minimal: theme.color_white,
+  Button_backgroundColor_minimal_hover: 'transparent',
+  Button_backgroundColor_minimal_active: 'transparent',
+  Button_fontWeight: theme.fontWeight_regular,
+  Button_height_large: null,
+  Button_paddingHorizontal: 0,
+  ButtonContent_fontSize: '1em',
+  ButtonIcon_margin: null
+}));
+
+const Popover = createThemedComponent(_Popover, {
+  PopoverContent_backgroundColor: null,
+  PopoverContent_borderColor: 'transparent',
+  PopoverContent_borderRadius: null,
+  PopoverContent_boxShadow: null,
+  PopoverContent_paddingVertical: null
+});
+
 const Root = createStyledComponent('div', styles.root);
 const Link = createStyledComponent(_Link, styles.link);
 const Logotype = createStyledComponent(Heading, styles.logotype);
-const ThemedMenuButton = createThemedComponent(Button, menuButtonTheme);
 const MenuButton = createStyledComponent(ThemedMenuButton, styles.menuButton);
-const Popover = createThemedComponent(_Popover, popoverTheme);
 const StyledNav = createStyledComponent('nav', styles.nav);
 
 const Nav = ({
@@ -171,7 +170,9 @@ const Nav = ({
       <Media
         query="(max-width: 38.999em)"
         render={() =>
-          latestPost && <Link href={latestPost.url}>Latest Blog Post</Link>
+          latestPost ? (
+            <Link href={latestPost.url}>Latest Blog Post</Link>
+          ) : null
         }
       />
       <Media

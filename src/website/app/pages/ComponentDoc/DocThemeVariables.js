@@ -5,13 +5,13 @@ import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
 import VariableTable from '../../VariableTable';
 
+import type { ThemeFn, ThemeObj } from '../../../../library/themes/types';
+
 type Props = {
-  baseTheme: Object,
-  componentTheme: Theme | Array<Theme>,
+  baseTheme: ThemeObj,
+  componentTheme: ThemeFn<> | Array<ThemeFn<>>,
   title: string
 };
-
-type Theme = (theme: Object) => Object;
 
 const createKeyMirror = (obj: Object) => {
   let mirror = {};

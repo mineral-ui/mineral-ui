@@ -1,22 +1,8 @@
 /* @flow */
-import { componentTheme } from '../../../../library/Popover/Popover';
-import bestPractices from './bestPractices';
-import examples from './examples';
+import popoverDoc from './Popover';
 
-const doc = require('!!react-docgen-loader!../../../../library/Popover/Popover');
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-export default {
-  bestPractices,
-  componentTheme,
-  doc,
-  examples,
-  slug: 'popover',
-  title: 'Popover',
-  whenHowToUse: `Popovers contain content providing clarification for other interface elements.
-Since popovers are usually triggered with deliberate user actions, they can contain more complex information than a tooltip which appears upon hovering/focusing an element.
+const componentDocs: ComponentDocs = [popoverDoc];
 
-- Keep content short. Don't put so much content that the tooltip requires a scrollbar.
-- Popovers can be used to implement other custom behaviors or widgets such as color pickers, or other task-specific custom inputs.
-- Popovers could be chained together in application logic to create walkthroughs for onboarding.
-`
-};
+export default componentDocs;
