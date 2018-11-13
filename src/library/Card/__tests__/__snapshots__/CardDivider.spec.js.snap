@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDivider demo examples Snapshots: basic 1`] = `
+.emotion-6 {
+  background-color: #c8d1e0;
+  height: 1px;
+  margin: 1em 0;
+}
+
+.emotion-13::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.emotion-13 > * {
+  margin-bottom: 1em;
+}
+
+@media (min-width:40em) {
+  .emotion-13 > * {
+    float: left;
+    margin-right: 1em;
+    width: 47%;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-13 > *:nth-last-child(n+3),
+  .emotion-13 > *:nth-last-child(n+3) ~ * {
+    width: 30%;
+  }
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 0.01em;
+  padding-top: 0.01em;
+}
+
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-12:focus {
+  box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-3 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-1 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 > [role="img"] {
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-0 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emotion-5 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 1.5em;
+}
+
+.emotion-4 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+<Styled(div)>
+  <div
+    className="emotion-13"
+  >
+    <Card>
+      <Card>
+        <div
+          className="emotion-12"
+        >
+          <CardTitle>
+            <CardTitle>
+              <div
+                className="emotion-3"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-2"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-1"
+                      >
+                        <Styled(h3)>
+                          <h3
+                            className="emotion-0"
+                          >
+                            Card Title
+                          </h3>
+                        </Styled(h3)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardTitle>
+          </CardTitle>
+          <CardBlock>
+            <CardBlock>
+              <div
+                className="emotion-5"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-4"
+                  >
+                    
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardBlock>
+          </CardBlock>
+          <CardDivider>
+            <CardDivider
+              role="separator"
+            >
+              <div
+                className="emotion-6"
+                role="separator"
+              />
+            </CardDivider>
+          </CardDivider>
+          <CardBlock>
+            <CardBlock>
+              <div
+                className="emotion-5"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-4"
+                  >
+                    
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardBlock>
+          </CardBlock>
+          <CardDivider>
+            <CardDivider
+              role="separator"
+            >
+              <div
+                className="emotion-6"
+                role="separator"
+              />
+            </CardDivider>
+          </CardDivider>
+          <CardBlock>
+            <CardBlock>
+              <div
+                className="emotion-5"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-4"
+                  >
+                    
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardBlock>
+          </CardBlock>
+        </div>
+      </Card>
+    </Card>
+  </div>
+</Styled(div)>
+`;
