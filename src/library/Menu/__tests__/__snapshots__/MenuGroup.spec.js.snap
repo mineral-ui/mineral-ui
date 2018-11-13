@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
-.emotion-11 {
+.emotion-9 {
   margin: 0.5em 0;
 }
 
-.emotion-11:first-child,
-.emotion-11 + .emotion-11 {
+.emotion-9:first-child,
+.emotion-9 + .emotion-9 {
   margin-top: 0;
 }
 
-.emotion-11:last-child {
+.emotion-9:last-child {
   margin-bottom: 0;
 }
 
-.emotion-25 {
+.emotion-21 {
   overflow: hidden;
 }
 
-.emotion-25 > div {
+.emotion-21 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-24 {
+.emotion-20 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -36,9 +36,9 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-24 *,
-.emotion-24 *::before,
-.emotion-24 *::after {
+.emotion-20 *,
+.emotion-20 *::before,
+.emotion-20 *::after {
   box-sizing: inherit;
 }
 
@@ -49,36 +49,36 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
   padding: 1.4545454545454546em 1.4545454545454546em 0.7272727272727273em;
 }
 
-.emotion-5 {
+.emotion-4 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-5:focus {
+.emotion-4:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-5:hover {
+.emotion-4:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-5:active {
+.emotion-4:active {
   background-color: #ebeff5;
 }
 
-.emotion-5[aria-selected="true"] {
+.emotion-4[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-5[aria-selected="true"]:active {
+.emotion-4[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-5 [role="img"] {
+.emotion-4 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -87,15 +87,15 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-5 [role="img"]:first-child {
+.emotion-4 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-5 [role="img"]:last-child {
+.emotion-4 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -106,7 +106,7 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
   justify-content: space-between;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -132,28 +132,21 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
   word-break: break-word;
 }
 
-.emotion-2 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
-}
-
 <Styled(div)>
   <div
-    className="emotion-25"
+    className="emotion-21"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-24"
+          className="emotion-20"
         >
           <MenuGroup
             title="Menu Group Title"
           >
             <MenuGroup>
               <div
-                className="emotion-11"
+                className="emotion-9"
               >
                 <MenuGroupTitle>
                   <MenuGroupTitle>
@@ -170,17 +163,17 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="emotion-5"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-4"
+                          className="emotion-3"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-3"
+                              className="emotion-2"
                             >
                               <Styled(span)>
                                 <span
@@ -188,11 +181,6 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                                 >
                                   Menu item
                                 </span>
-                              </Styled(span)>
-                              <Styled(span)>
-                                <span
-                                  className="emotion-2"
-                                />
                               </Styled(span)>
                             </span>
                           </Styled(span)>
@@ -207,17 +195,17 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="emotion-5"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-4"
+                          className="emotion-3"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-3"
+                              className="emotion-2"
                             >
                               <Styled(span)>
                                 <span
@@ -225,11 +213,6 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                                 >
                                   Menu item
                                 </span>
-                              </Styled(span)>
-                              <Styled(span)>
-                                <span
-                                  className="emotion-2"
-                                />
                               </Styled(span)>
                             </span>
                           </Styled(span)>
@@ -246,7 +229,7 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
           >
             <MenuGroup>
               <div
-                className="emotion-11"
+                className="emotion-9"
               >
                 <MenuGroupTitle>
                   <MenuGroupTitle>
@@ -263,17 +246,17 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="emotion-5"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-4"
+                          className="emotion-3"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-3"
+                              className="emotion-2"
                             >
                               <Styled(span)>
                                 <span
@@ -281,11 +264,6 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                                 >
                                   Menu item
                                 </span>
-                              </Styled(span)>
-                              <Styled(span)>
-                                <span
-                                  className="emotion-2"
-                                />
                               </Styled(span)>
                             </span>
                           </Styled(span)>
@@ -300,17 +278,17 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                     tabIndex={0}
                   >
                     <div
-                      className="emotion-5"
+                      className="emotion-4"
                       onKeyDown={[Function]}
                       tabIndex={0}
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-4"
+                          className="emotion-3"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-3"
+                              className="emotion-2"
                             >
                               <Styled(span)>
                                 <span
@@ -318,11 +296,6 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                                 >
                                   Menu item
                                 </span>
-                              </Styled(span)>
-                              <Styled(span)>
-                                <span
-                                  className="emotion-2"
-                                />
                               </Styled(span)>
                             </span>
                           </Styled(span)>

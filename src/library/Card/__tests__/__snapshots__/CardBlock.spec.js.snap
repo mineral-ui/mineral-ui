@@ -1,0 +1,548 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardBlock demo examples Snapshots: children 1`] = `
+.emotion-9 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.emotion-9:last-child {
+  margin-bottom: 1.5em;
+}
+
+.emotion-8 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.emotion-11::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.emotion-11 > * {
+  margin-bottom: 1em;
+}
+
+@media (min-width:40em) {
+  .emotion-11 > * {
+    float: left;
+    margin-right: 1em;
+    width: 47%;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-11 > *:nth-last-child(n+3),
+  .emotion-11 > *:nth-last-child(n+3) ~ * {
+    width: 30%;
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 0.01em;
+  padding-top: 0.01em;
+}
+
+.emotion-10 *,
+.emotion-10 *::before,
+.emotion-10 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-10:focus {
+  box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-3 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-1 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 > [role="img"] {
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-0 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emotion-7 {
+  background-color: #ebeff5;
+  padding: 1em 0;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  color: #3272d9;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border-color: #c8d1e0;
+  border-radius: 0.1875em;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 2.5em;
+  margin: 0;
+  min-width: 2.5em;
+  padding: 0 0.5em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.emotion-6 *,
+.emotion-6 *::before,
+.emotion-6 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-6:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff,0 0 0 2px #1d5bbf;
+  color: #3272d9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:hover {
+  background-color: #f5f7fa;
+  border-color: #5691f0;
+  color: #3272d9;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:focus:active,
+.emotion-6:focus:hover {
+  border-color: #c8d1e0;
+}
+
+.emotion-6:active {
+  background-color: #ebeff5;
+  border-color: #1d5bbf;
+  color: #3272d9;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6 [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-6 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-6 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-6 [role="img"]:only-child {
+  margin: 0;
+}
+
+.emotion-5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  pointer-events: none;
+  width: 100%;
+}
+
+.emotion-4 {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 0.875em;
+  line-height: 2.857142857142857em;
+}
+
+.emotion-4:first-child {
+  padding-left: 0.5714285714285714em;
+}
+
+.emotion-4:last-child {
+  padding-right: 0.5714285714285714em;
+}
+
+<Styled(div)>
+  <div
+    className="emotion-11"
+  >
+    <Card>
+      <Card>
+        <div
+          className="emotion-10"
+        >
+          <CardTitle>
+            <CardTitle>
+              <div
+                className="emotion-3"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-2"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-1"
+                      >
+                        <Styled(h3)>
+                          <h3
+                            className="emotion-0"
+                          >
+                            Card Title
+                          </h3>
+                        </Styled(h3)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardTitle>
+          </CardTitle>
+          <CardBlock>
+            <CardBlock>
+              <div
+                className="emotion-9"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-8"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-7"
+                      >
+                        <Button
+                          element="button"
+                          fullWidth={true}
+                          size="large"
+                          type="button"
+                        >
+                          <Button
+                            element="button"
+                            fullWidth={true}
+                            size="large"
+                            text="Button"
+                            type="button"
+                          >
+                            <button
+                              className="emotion-6"
+                              type="button"
+                            >
+                              <Styled(span)>
+                                <span
+                                  className="emotion-5"
+                                >
+                                  <Styled(span)
+                                    size="large"
+                                  >
+                                    <span
+                                      className="emotion-4"
+                                    >
+                                      Button
+                                    </span>
+                                  </Styled(span)>
+                                </span>
+                              </Styled(span)>
+                            </button>
+                          </Button>
+                        </Button>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardBlock>
+          </CardBlock>
+        </div>
+      </Card>
+    </Card>
+  </div>
+</Styled(div)>
+`;
+
+exports[`CardBlock demo examples Snapshots: consistent-spacing 1`] = `
+.emotion-4 {
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.emotion-9::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.emotion-9 > * {
+  margin-bottom: 1em;
+}
+
+@media (min-width:40em) {
+  .emotion-9 > * {
+    float: left;
+    margin-right: 1em;
+    width: 47%;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-9 > *:nth-last-child(n+3),
+  .emotion-9 > *:nth-last-child(n+3) ~ * {
+    width: 30%;
+  }
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 0.1875em;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 4px 8px 0 rgba(0,0,0,0.2);
+  padding-bottom: 0.01em;
+  padding-top: 0.01em;
+}
+
+.emotion-8 *,
+.emotion-8 *::before,
+.emotion-8 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-8:focus {
+  box-shadow: 0 0 0 2px #1d5bbf,0 1px 2px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.emotion-3 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.emotion-1 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 > [role="img"] {
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.25em;
+}
+
+.emotion-0 {
+  color: #58606e;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.emotion-6 {
+  position: relative;
+}
+
+.emotion-6::before {
+  border-color: #f0f5fc;
+  border-style: solid;
+  border-width: 1em 1em 1.5em;
+  bottom: -1.5em;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -1em;
+}
+
+.emotion-5 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+}
+
+.emotion-5:last-child {
+  margin-bottom: 1.5em;
+}
+
+.emotion-5::before {
+  border-color: #f0f5fc;
+  border-style: solid;
+  border-width: 1em 1em 1.5em;
+  bottom: -1.5em;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -1em;
+}
+
+<Styled(div)>
+  <div
+    className="emotion-9"
+  >
+    <Card>
+      <Card>
+        <div
+          className="emotion-8"
+        >
+          <CardTitle>
+            <CardTitle>
+              <div
+                className="emotion-3"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-2"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-1"
+                      >
+                        <Styled(h3)>
+                          <h3
+                            className="emotion-0"
+                          >
+                            Card Title
+                          </h3>
+                        </Styled(h3)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </CardTitle>
+          </CardTitle>
+          <Styled(CardBlock)>
+            <CardBlock
+              className="emotion-6"
+            >
+              <CardBlock
+                className="emotion-6"
+              >
+                <div
+                  className="emotion-5"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4"
+                    >
+                      
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis
+  pretium massa. Aliquam erat volutpat. Nulla facilisi.
+
+                    </div>
+                  </Styled(div)>
+                </div>
+              </CardBlock>
+            </CardBlock>
+          </Styled(CardBlock)>
+        </div>
+      </Card>
+    </Card>
+  </div>
+</Styled(div)>
+`;

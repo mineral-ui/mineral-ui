@@ -227,6 +227,7 @@ exports[`TextArea demo examples Snapshots: autosize 1`] = `
         defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare velit nec dui molestie posuere. Nulla facilisi. Nulla tempor turpis vel aliquam viverra. In eu sagittis elit. Integer scelerisque purus nulla, sit amet dictum ipsum elementum finibus. Suspendisse et erat nisl. Sed aliquet finibus odio, ut volutpat metus dictum sed. Nullam nunc mi, consequat sit amet magna ut, faucibus placerat tortor. Duis porttitor tellus vitae condimentum convallis. Fusce hendrerit, nunc vitae tempor tempor, urna dolor fringilla eros, non condimentum urna dui id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tempor metus eget ipsum volutpat, venenatis imperdiet lacus commodo. Morbi quis dictum urna, vel facilisis magna. Phasellus nec vehicula lectus. Nulla laoreet nisi nec varius rhoncus. Integer at risus blandit, commodo urna sed, viverra dui.
 
 Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pellentesque, vestibulum odio sit amet, vehicula ante. Curabitur et turpis velit. Pellentesque in tincidunt nulla. Aenean malesuada ornare condimentum. Vivamus maximus efficitur sem, non consectetur arcu pretium in. Integer sodales quis quam nec iaculis. Donec accumsan tortor et magna tristique euismod. Nullam pellentesque, ligula nec condimentum rhoncus, arcu dui mollis lectus, ac porttitor purus nisi sed lacus."
+        size="large"
         spellCheck={false}
       >
         <TextArea
@@ -399,6 +400,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
         autoSize={true}
         defaultValue="Hello World"
         rows={1}
+        size="large"
       >
         <TextArea
           control={[Function]}
@@ -846,6 +848,7 @@ exports[`TextArea demo examples Snapshots: controlled 1`] = `
   <MyForm>
     <TextArea
       onChange={[Function]}
+      size="large"
       value="Hello World"
     >
       <TextArea
@@ -1138,6 +1141,7 @@ exports[`TextArea demo examples Snapshots: disabled 1`] = `
 <TextArea
   defaultValue="Hello World"
   disabled={true}
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -1537,6 +1541,7 @@ exports[`TextArea demo examples Snapshots: form-field 1`] = `
                 key="formField-1-control"
                 required={true}
                 rows={2}
+                size="large"
               >
                 <TextArea
                   control={[Function]}
@@ -1984,6 +1989,7 @@ exports[`TextArea demo examples Snapshots: input-ref 1`] = `
         >
           <TextArea
             inputRef={[Function]}
+            size="large"
           >
             <TextArea
               control={[Function]}
@@ -2308,6 +2314,7 @@ exports[`TextArea demo examples Snapshots: invalid 1`] = `
 
 <TextArea
   invalid={true}
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -4830,6 +4837,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
           <TextArea
             defaultValue="Large"
             rows={1}
+            size="large"
           >
             <TextArea
               control={[Function]}
@@ -4979,6 +4987,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
             autoSize={true}
             defaultValue="Large"
             rows={1}
+            size="large"
           >
             <TextArea
               control={[Function]}
@@ -5883,6 +5892,7 @@ exports[`TextArea demo examples Snapshots: placeholder 1`] = `
 
 <TextArea
   placeholder="Leave a comment"
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -6174,6 +6184,7 @@ exports[`TextArea demo examples Snapshots: read-only 1`] = `
 <TextArea
   defaultValue="Hello World"
   readOnly={true}
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -6473,6 +6484,7 @@ exports[`TextArea demo examples Snapshots: required 1`] = `
 
 <TextArea
   required={true}
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -7280,6 +7292,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
       <TextArea
         defaultValue="Large"
         rows={1}
+        size="large"
       >
         <TextArea
           control={[Function]}
@@ -7727,6 +7740,7 @@ exports[`TextArea demo examples Snapshots: rtl 1`] = `
     <ThemeProvider>
       <TextArea
         defaultValue="مرحبا بالعالم"
+        size="large"
       >
         <TextArea
           control={[Function]}
@@ -8537,6 +8551,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
       </TextArea>
       <TextArea
         defaultValue="Large"
+        size="large"
       >
         <TextArea
           control={[Function]}
@@ -8978,6 +8993,7 @@ exports[`TextArea demo examples Snapshots: uncontrolled 1`] = `
 
 <TextArea
   defaultValue="Hello World"
+  size="large"
 >
   <TextArea
     control={[Function]}
@@ -9533,6 +9549,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
     >
       <TextArea
         defaultValue="Success"
+        size="large"
         variant="success"
       >
         <TextArea
@@ -9689,6 +9706,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
       </TextArea>
       <TextArea
         defaultValue="Warning"
+        size="large"
         variant="warning"
       >
         <TextArea
@@ -9845,6 +9863,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
       </TextArea>
       <TextArea
         defaultValue="Danger"
+        size="large"
         variant="danger"
       >
         <TextArea

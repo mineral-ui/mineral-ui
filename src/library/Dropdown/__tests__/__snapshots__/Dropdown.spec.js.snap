@@ -2479,7 +2479,7 @@ exports[`Dropdown demo examples Snapshots: overflow 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: placement 1`] = `
-.emotion-31 {
+.emotion-27 {
   display: inline-block;
 }
 
@@ -2487,7 +2487,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   display: inline-block;
 }
 
-.emotion-27 {
+.emotion-23 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2510,33 +2510,33 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   z-index: 100;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-23 *,
+.emotion-23 *::before,
+.emotion-23 *::after {
   box-sizing: inherit;
 }
 
-.emotion-27[data-placement^="top"] {
+.emotion-23[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-27[data-placement^="bottom"] {
+.emotion-23[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-27[data-placement^="left"] {
+.emotion-23[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-27[data-placement^="right"] {
+.emotion-23[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-27[data-x-out-of-boundaries] {
+.emotion-23[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-26 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2547,55 +2547,55 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-26 *,
-.emotion-26 *::before,
-.emotion-26 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-25 {
+.emotion-21 {
   margin: 0.5em 0;
 }
 
-.emotion-25:first-child,
-.emotion-25 + .emotion-25 {
+.emotion-21:first-child,
+.emotion-21 + .emotion-21 {
   margin-top: 0;
 }
 
-.emotion-25:last-child {
+.emotion-21:last-child {
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-9:focus {
+.emotion-8:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-9:hover {
+.emotion-8:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-9:active {
+.emotion-8:active {
   background-color: #ebeff5;
 }
 
-.emotion-9[aria-selected="true"] {
+.emotion-8[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-9[aria-selected="true"]:active {
+.emotion-8[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-9 [role="img"] {
+.emotion-8 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -2604,15 +2604,15 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-9 [role="img"]:first-child {
+.emotion-8 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-9 [role="img"]:last-child {
+.emotion-8 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2623,7 +2623,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   justify-content: space-between;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2646,13 +2646,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
 .emotion-5 {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
-  word-break: break-word;
-}
-
-.emotion-6 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
@@ -2777,7 +2770,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-33 {
+.emotion-29 {
   height: 400px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2795,7 +2788,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
 
 <Styled(div)>
   <div
-    className="emotion-33"
+    className="emotion-29"
   >
     <Dropdown
       data={
@@ -2848,12 +2841,12 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
           triggerRef={[Function]}
         >
           <Popover
-            className="emotion-31"
+            className="emotion-27"
             id="dropdown-7"
             tag="span"
           >
             <span
-              className="emotion-31"
+              className="emotion-27"
               id="dropdown-7"
             >
               <PopoverTrigger
@@ -2960,20 +2953,20 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                   onBlur={[Function]}
                   placement="bottom-start"
                 >
-                  <PopoverContent
-                    className="emotion-27"
+                  <DropdownContent
+                    className="emotion-23"
                     id="dropdown-7-content"
                     onBlur={[Function]}
                     placement="bottom-start"
                   >
                     <RtlPopper
-                      className="emotion-27"
+                      className="emotion-23"
                       id="dropdown-7-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
                       <Popper
-                        className="emotion-27"
+                        className="emotion-23"
                         component="div"
                         eventsEnabled={true}
                         id="dropdown-7-content"
@@ -2983,7 +2976,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                         positionFixed={false}
                       >
                         <div
-                          className="emotion-27"
+                          className="emotion-23"
                           id="dropdown-7-content"
                           onBlur={[Function]}
                           style={
@@ -3027,7 +3020,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                               role="menu"
                             >
                               <div
-                                className="emotion-26"
+                                className="emotion-22"
                                 id="dropdown-7-menu"
                                 role="menu"
                               >
@@ -3036,7 +3029,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                 >
                                   <MenuGroup>
                                     <div
-                                      className="emotion-25"
+                                      className="emotion-21"
                                     >
                                       <MenuItem
                                         index={0}
@@ -3081,7 +3074,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             text="Light years"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-7-item-0"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -3090,11 +3083,11 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -3102,11 +3095,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                                         >
                                                           Light years
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -3159,7 +3147,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             text="Star stuff"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-7-item-1"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -3168,11 +3156,11 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -3180,11 +3168,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                                         >
                                                           Star stuff
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -3237,7 +3220,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             text="Encyclopaedia galactica"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-7-item-2"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -3246,11 +3229,11 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -3258,11 +3241,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                                         >
                                                           Encyclopaedia galactica
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -3315,7 +3293,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             text="Cosmic ocean"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-7-item-3"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -3324,11 +3302,11 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -3336,11 +3314,6 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                                                         >
                                                           Cosmic ocean
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -3359,7 +3332,7 @@ exports[`Dropdown demo examples Snapshots: placement 1`] = `
                         </div>
                       </Popper>
                     </RtlPopper>
-                  </PopoverContent>
+                  </DropdownContent>
                 </DropdownContent>
               </DropdownContent>
               <EventListener
@@ -3925,7 +3898,7 @@ exports[`Dropdown demo examples Snapshots: portal 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: rtl 1`] = `
-.emotion-31 {
+.emotion-27 {
   display: inline-block;
 }
 
@@ -3933,7 +3906,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   display: inline-block;
 }
 
-.emotion-27 {
+.emotion-23 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3956,33 +3929,33 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   z-index: 100;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-23 *,
+.emotion-23 *::before,
+.emotion-23 *::after {
   box-sizing: inherit;
 }
 
-.emotion-27[data-placement^="top"] {
+.emotion-23[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-27[data-placement^="bottom"] {
+.emotion-23[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-27[data-placement^="left"] {
+.emotion-23[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-27[data-placement^="right"] {
+.emotion-23[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-27[data-x-out-of-boundaries] {
+.emotion-23[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-26 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3993,26 +3966,26 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-26 *,
-.emotion-26 *::before,
-.emotion-26 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-25 {
+.emotion-21 {
   margin: 0.5em 0;
 }
 
-.emotion-25:first-child,
-.emotion-25 + .emotion-25 {
+.emotion-21:first-child,
+.emotion-21 + .emotion-21 {
   margin-top: 0;
 }
 
-.emotion-25:last-child {
+.emotion-21:last-child {
   margin-bottom: 0;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4023,7 +3996,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   justify-content: space-between;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4041,13 +4014,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   padding: 0.1875em 0 0.25em;
   white-space: normal;
   word-break: break-all;
-}
-
-.emotion-6 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
 }
 
 .emotion-1 {
@@ -4068,7 +4034,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   width: 100%;
 }
 
-.emotion-33 {
+.emotion-29 {
   padding-bottom: 8.125em;
 }
 
@@ -4175,36 +4141,36 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   padding-left: 0.5714285714285714em;
 }
 
-.emotion-9 {
+.emotion-8 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-9:focus {
+.emotion-8:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-9:hover {
+.emotion-8:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-9:active {
+.emotion-8:active {
   background-color: #ebeff5;
 }
 
-.emotion-9[aria-selected="true"] {
+.emotion-8[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-9[aria-selected="true"]:active {
+.emotion-8[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-9 [role="img"] {
+.emotion-8 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4213,11 +4179,11 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-9 [role="img"]:first-child {
+.emotion-8 [role="img"]:first-child {
   margin-left: 0.5em;
 }
 
-.emotion-9 [role="img"]:last-child {
+.emotion-8 [role="img"]:last-child {
   margin-right: 0.5em;
 }
 
@@ -4231,7 +4197,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
   dir="rtl"
 >
   <div
-    className="emotion-33"
+    className="emotion-29"
     dir="rtl"
   >
     <ThemeProvider>
@@ -4287,12 +4253,12 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
               triggerRef={[Function]}
             >
               <Popover
-                className="emotion-31"
+                className="emotion-27"
                 id="dropdown-21"
                 tag="span"
               >
                 <span
-                  className="emotion-31"
+                  className="emotion-27"
                   id="dropdown-21"
                 >
                   <PopoverTrigger
@@ -4399,20 +4365,20 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
-                      <PopoverContent
-                        className="emotion-27"
+                      <DropdownContent
+                        className="emotion-23"
                         id="dropdown-21-content"
                         onBlur={[Function]}
                         placement="bottom-start"
                       >
                         <RtlPopper
-                          className="emotion-27"
+                          className="emotion-23"
                           id="dropdown-21-content"
                           onBlur={[Function]}
                           placement="bottom-start"
                         >
                           <Popper
-                            className="emotion-27"
+                            className="emotion-23"
                             component="div"
                             eventsEnabled={true}
                             id="dropdown-21-content"
@@ -4422,7 +4388,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                             positionFixed={false}
                           >
                             <div
-                              className="emotion-27"
+                              className="emotion-23"
                               id="dropdown-21-content"
                               onBlur={[Function]}
                               style={
@@ -4466,7 +4432,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                   role="menu"
                                 >
                                   <div
-                                    className="emotion-26"
+                                    className="emotion-22"
                                     id="dropdown-21-menu"
                                     role="menu"
                                   >
@@ -4475,7 +4441,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                     >
                                       <MenuGroup>
                                         <div
-                                          className="emotion-25"
+                                          className="emotion-21"
                                         >
                                           <MenuItem
                                             index={0}
@@ -4520,7 +4486,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 text="Light years"
                                               >
                                                 <div
-                                                  className="emotion-9"
+                                                  className="emotion-8"
                                                   id="dropdown-21-item-0"
                                                   onClick={[Function]}
                                                   onKeyDown={[Function]}
@@ -4529,11 +4495,11 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-8"
+                                                      className="emotion-7"
                                                     >
                                                       <Styled(span)>
                                                         <span
-                                                          className="emotion-7"
+                                                          className="emotion-6"
                                                         >
                                                           <Styled(span)>
                                                             <span
@@ -4541,11 +4507,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                             >
                                                               Light years
                                                             </span>
-                                                          </Styled(span)>
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-6"
-                                                            />
                                                           </Styled(span)>
                                                         </span>
                                                       </Styled(span)>
@@ -4598,7 +4559,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 text="Star stuff"
                                               >
                                                 <div
-                                                  className="emotion-9"
+                                                  className="emotion-8"
                                                   id="dropdown-21-item-1"
                                                   onClick={[Function]}
                                                   onKeyDown={[Function]}
@@ -4607,11 +4568,11 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-8"
+                                                      className="emotion-7"
                                                     >
                                                       <Styled(span)>
                                                         <span
-                                                          className="emotion-7"
+                                                          className="emotion-6"
                                                         >
                                                           <Styled(span)>
                                                             <span
@@ -4619,11 +4580,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                             >
                                                               Star stuff
                                                             </span>
-                                                          </Styled(span)>
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-6"
-                                                            />
                                                           </Styled(span)>
                                                         </span>
                                                       </Styled(span)>
@@ -4676,7 +4632,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 text="Encyclopaedia galactica"
                                               >
                                                 <div
-                                                  className="emotion-9"
+                                                  className="emotion-8"
                                                   id="dropdown-21-item-2"
                                                   onClick={[Function]}
                                                   onKeyDown={[Function]}
@@ -4685,11 +4641,11 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-8"
+                                                      className="emotion-7"
                                                     >
                                                       <Styled(span)>
                                                         <span
-                                                          className="emotion-7"
+                                                          className="emotion-6"
                                                         >
                                                           <Styled(span)>
                                                             <span
@@ -4697,11 +4653,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                             >
                                                               Encyclopaedia galactica
                                                             </span>
-                                                          </Styled(span)>
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-6"
-                                                            />
                                                           </Styled(span)>
                                                         </span>
                                                       </Styled(span)>
@@ -4754,7 +4705,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 text="Cosmic ocean"
                                               >
                                                 <div
-                                                  className="emotion-9"
+                                                  className="emotion-8"
                                                   id="dropdown-21-item-3"
                                                   onClick={[Function]}
                                                   onKeyDown={[Function]}
@@ -4763,11 +4714,11 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-8"
+                                                      className="emotion-7"
                                                     >
                                                       <Styled(span)>
                                                         <span
-                                                          className="emotion-7"
+                                                          className="emotion-6"
                                                         >
                                                           <Styled(span)>
                                                             <span
@@ -4775,11 +4726,6 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                                                             >
                                                               Cosmic ocean
                                                             </span>
-                                                          </Styled(span)>
-                                                          <Styled(span)>
-                                                            <span
-                                                              className="emotion-6"
-                                                            />
                                                           </Styled(span)>
                                                         </span>
                                                       </Styled(span)>
@@ -4798,7 +4744,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
                             </div>
                           </Popper>
                         </RtlPopper>
-                      </PopoverContent>
+                      </DropdownContent>
                     </DropdownContent>
                   </DropdownContent>
                   <EventListener
@@ -4831,7 +4777,7 @@ exports[`Dropdown demo examples Snapshots: rtl 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
-.emotion-31 {
+.emotion-27 {
   display: inline-block;
 }
 
@@ -4839,7 +4785,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   display: inline-block;
 }
 
-.emotion-27 {
+.emotion-23 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4862,33 +4808,33 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   z-index: 100;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-23 *,
+.emotion-23 *::before,
+.emotion-23 *::after {
   box-sizing: inherit;
 }
 
-.emotion-27[data-placement^="top"] {
+.emotion-23[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-27[data-placement^="bottom"] {
+.emotion-23[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-27[data-placement^="left"] {
+.emotion-23[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-27[data-placement^="right"] {
+.emotion-23[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-27[data-x-out-of-boundaries] {
+.emotion-23[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
-.emotion-26 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4899,55 +4845,55 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-26 *,
-.emotion-26 *::before,
-.emotion-26 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-25 {
+.emotion-21 {
   margin: 0.5em 0;
 }
 
-.emotion-25:first-child,
-.emotion-25 + .emotion-25 {
+.emotion-21:first-child,
+.emotion-21 + .emotion-21 {
   margin-top: 0;
 }
 
-.emotion-25:last-child {
+.emotion-21:last-child {
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-9:focus {
+.emotion-8:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-9:hover {
+.emotion-8:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-9:active {
+.emotion-8:active {
   background-color: #ebeff5;
 }
 
-.emotion-9[aria-selected="true"] {
+.emotion-8[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-9[aria-selected="true"]:active {
+.emotion-8[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-9 [role="img"] {
+.emotion-8 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -4956,15 +4902,15 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-9 [role="img"]:first-child {
+.emotion-8 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-9 [role="img"]:last-child {
+.emotion-8 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4975,7 +4921,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   justify-content: space-between;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4998,13 +4944,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 .emotion-5 {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
-  word-break: break-word;
-}
-
-.emotion-6 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
@@ -5129,18 +5068,18 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-40 {
+.emotion-36 {
   position: relative;
 }
 
-.emotion-34 {
+.emotion-30 {
   background-color: aliceblue;
   height: 430px;
   overflow: auto;
   position: relative;
 }
 
-.emotion-33 {
+.emotion-29 {
   height: 930px;
   width: 300vw;
   display: -webkit-box;
@@ -5157,13 +5096,13 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   justify-content: center;
 }
 
-.emotion-38 {
+.emotion-34 {
   left: 0;
   position: absolute;
   top: 0;
 }
 
-.emotion-37 {
+.emotion-33 {
   box-sizing: border-box;
   color: #3272d9;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5192,41 +5131,41 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   top: 0;
 }
 
-.emotion-37 *,
-.emotion-37 *::before,
-.emotion-37 *::after {
+.emotion-33 *,
+.emotion-33 *::before,
+.emotion-33 *::after {
   box-sizing: inherit;
 }
 
-.emotion-37:focus {
+.emotion-33:focus {
   border-color: #1d5bbf;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-37:hover {
+.emotion-33:hover {
   background-color: #f5f7fa;
   color: #3272d9;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-37:focus:active,
-.emotion-37:focus:hover {
+.emotion-33:focus:active,
+.emotion-33:focus:hover {
   border-color: #1d5bbf;
 }
 
-.emotion-37:active {
+.emotion-33:active {
   background-color: #ebeff5;
   color: #3272d9;
 }
 
-.emotion-37::-moz-focus-inner {
+.emotion-33::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-37 [role="img"] {
+.emotion-33 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -5235,19 +5174,19 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
   flex-shrink: 0;
 }
 
-.emotion-37 [role="img"]:first-child {
+.emotion-33 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-37 [role="img"]:last-child {
+.emotion-33 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-37 [role="img"]:only-child {
+.emotion-33 [role="img"]:only-child {
   margin: 0;
 }
 
-.emotion-35 {
+.emotion-31 {
   display: block;
   max-width: 100%;
   overflow: hidden;
@@ -5264,19 +5203,19 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 >
   <Styled(div)>
     <div
-      className="emotion-40"
+      className="emotion-36"
     >
       <Styled(div)
         height={430}
       >
         <div
-          className="emotion-34"
+          className="emotion-30"
         >
           <Styled(div)
             scrollAreaHeight={430}
           >
             <div
-              className="emotion-33"
+              className="emotion-29"
             >
               <Dropdown
                 data={
@@ -5329,12 +5268,12 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                     triggerRef={[Function]}
                   >
                     <Popover
-                      className="emotion-31"
+                      className="emotion-27"
                       id="dropdown-11"
                       tag="span"
                     >
                       <span
-                        className="emotion-31"
+                        className="emotion-27"
                         id="dropdown-11"
                       >
                         <PopoverTrigger
@@ -5441,20 +5380,20 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                             onBlur={[Function]}
                             placement="bottom-start"
                           >
-                            <PopoverContent
-                              className="emotion-27"
+                            <DropdownContent
+                              className="emotion-23"
                               id="dropdown-11-content"
                               onBlur={[Function]}
                               placement="bottom-start"
                             >
                               <RtlPopper
-                                className="emotion-27"
+                                className="emotion-23"
                                 id="dropdown-11-content"
                                 onBlur={[Function]}
                                 placement="bottom-start"
                               >
                                 <Popper
-                                  className="emotion-27"
+                                  className="emotion-23"
                                   component="div"
                                   eventsEnabled={true}
                                   id="dropdown-11-content"
@@ -5464,7 +5403,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                   positionFixed={false}
                                 >
                                   <div
-                                    className="emotion-27"
+                                    className="emotion-23"
                                     id="dropdown-11-content"
                                     onBlur={[Function]}
                                     style={
@@ -5508,7 +5447,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                         role="menu"
                                       >
                                         <div
-                                          className="emotion-26"
+                                          className="emotion-22"
                                           id="dropdown-11-menu"
                                           role="menu"
                                         >
@@ -5517,7 +5456,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                           >
                                             <MenuGroup>
                                               <div
-                                                className="emotion-25"
+                                                className="emotion-21"
                                               >
                                                 <MenuItem
                                                   index={0}
@@ -5562,7 +5501,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       text="Light years"
                                                     >
                                                       <div
-                                                        className="emotion-9"
+                                                        className="emotion-8"
                                                         id="dropdown-11-item-0"
                                                         onClick={[Function]}
                                                         onKeyDown={[Function]}
@@ -5571,11 +5510,11 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       >
                                                         <Styled(span)>
                                                           <span
-                                                            className="emotion-8"
+                                                            className="emotion-7"
                                                           >
                                                             <Styled(span)>
                                                               <span
-                                                                className="emotion-7"
+                                                                className="emotion-6"
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -5583,11 +5522,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                                   >
                                                                     Light years
                                                                   </span>
-                                                                </Styled(span)>
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-6"
-                                                                  />
                                                                 </Styled(span)>
                                                               </span>
                                                             </Styled(span)>
@@ -5640,7 +5574,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       text="Star stuff"
                                                     >
                                                       <div
-                                                        className="emotion-9"
+                                                        className="emotion-8"
                                                         id="dropdown-11-item-1"
                                                         onClick={[Function]}
                                                         onKeyDown={[Function]}
@@ -5649,11 +5583,11 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       >
                                                         <Styled(span)>
                                                           <span
-                                                            className="emotion-8"
+                                                            className="emotion-7"
                                                           >
                                                             <Styled(span)>
                                                               <span
-                                                                className="emotion-7"
+                                                                className="emotion-6"
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -5661,11 +5595,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                                   >
                                                                     Star stuff
                                                                   </span>
-                                                                </Styled(span)>
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-6"
-                                                                  />
                                                                 </Styled(span)>
                                                               </span>
                                                             </Styled(span)>
@@ -5718,7 +5647,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       text="Encyclopaedia galactica"
                                                     >
                                                       <div
-                                                        className="emotion-9"
+                                                        className="emotion-8"
                                                         id="dropdown-11-item-2"
                                                         onClick={[Function]}
                                                         onKeyDown={[Function]}
@@ -5727,11 +5656,11 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       >
                                                         <Styled(span)>
                                                           <span
-                                                            className="emotion-8"
+                                                            className="emotion-7"
                                                           >
                                                             <Styled(span)>
                                                               <span
-                                                                className="emotion-7"
+                                                                className="emotion-6"
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -5739,11 +5668,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                                   >
                                                                     Encyclopaedia galactica
                                                                   </span>
-                                                                </Styled(span)>
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-6"
-                                                                  />
                                                                 </Styled(span)>
                                                               </span>
                                                             </Styled(span)>
@@ -5796,7 +5720,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       text="Cosmic ocean"
                                                     >
                                                       <div
-                                                        className="emotion-9"
+                                                        className="emotion-8"
                                                         id="dropdown-11-item-3"
                                                         onClick={[Function]}
                                                         onKeyDown={[Function]}
@@ -5805,11 +5729,11 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                       >
                                                         <Styled(span)>
                                                           <span
-                                                            className="emotion-8"
+                                                            className="emotion-7"
                                                           >
                                                             <Styled(span)>
                                                               <span
-                                                                className="emotion-7"
+                                                                className="emotion-6"
                                                               >
                                                                 <Styled(span)>
                                                                   <span
@@ -5817,11 +5741,6 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                                                   >
                                                                     Cosmic ocean
                                                                   </span>
-                                                                </Styled(span)>
-                                                                <Styled(span)>
-                                                                  <span
-                                                                    className="emotion-6"
-                                                                  />
                                                                 </Styled(span)>
                                                               </span>
                                                             </Styled(span)>
@@ -5840,7 +5759,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                                   </div>
                                 </Popper>
                               </RtlPopper>
-                            </PopoverContent>
+                            </DropdownContent>
                           </DropdownContent>
                         </DropdownContent>
                         <EventListener
@@ -5878,7 +5797,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
         type="button"
       >
         <Button
-          className="emotion-38"
+          className="emotion-34"
           element="button"
           minimal={true}
           onClick={[Function]}
@@ -5886,7 +5805,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
           type="button"
         >
           <Button
-            className="emotion-38"
+            className="emotion-34"
             element="button"
             minimal={true}
             onClick={[Function]}
@@ -5895,7 +5814,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
             type="button"
           >
             <button
-              className="emotion-37"
+              className="emotion-33"
               onClick={[Function]}
               type="button"
             >
@@ -5907,7 +5826,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
                     size="small"
                   >
                     <span
-                      className="emotion-35"
+                      className="emotion-31"
                     >
                       Re-center
                     </span>
@@ -5924,7 +5843,7 @@ exports[`Dropdown demo examples Snapshots: scrolling-container 1`] = `
 `;
 
 exports[`Dropdown demo examples Snapshots: wide 1`] = `
-.emotion-31 {
+.emotion-27 {
   display: inline-block;
 }
 
@@ -5932,7 +5851,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   display: inline-block;
 }
 
-.emotion-26 {
+.emotion-22 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -5943,55 +5862,55 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-26 *,
-.emotion-26 *::before,
-.emotion-26 *::after {
+.emotion-22 *,
+.emotion-22 *::before,
+.emotion-22 *::after {
   box-sizing: inherit;
 }
 
-.emotion-25 {
+.emotion-21 {
   margin: 0.5em 0;
 }
 
-.emotion-25:first-child,
-.emotion-25 + .emotion-25 {
+.emotion-21:first-child,
+.emotion-21 + .emotion-21 {
   margin-top: 0;
 }
 
-.emotion-25:last-child {
+.emotion-21:last-child {
   margin-bottom: 0;
 }
 
-.emotion-9 {
+.emotion-8 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-9:focus {
+.emotion-8:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-9:hover {
+.emotion-8:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-9:active {
+.emotion-8:active {
   background-color: #ebeff5;
 }
 
-.emotion-9[aria-selected="true"] {
+.emotion-8[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-9[aria-selected="true"]:active {
+.emotion-8[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-9 [role="img"] {
+.emotion-8 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -6000,15 +5919,15 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-9 [role="img"]:first-child {
+.emotion-8 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-9 [role="img"]:last-child {
+.emotion-8 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-8 {
+.emotion-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6019,7 +5938,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   justify-content: space-between;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6042,13 +5961,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
 .emotion-5 {
   font-size: 0.875em;
   margin-right: 0.5714285714285714em;
-  word-break: break-word;
-}
-
-.emotion-6 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
@@ -6173,11 +6085,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   padding-right: 0.5714285714285714em;
 }
 
-.emotion-33 {
+.emotion-29 {
   height: 210px;
 }
 
-.emotion-27 {
+.emotion-23 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -6200,35 +6112,35 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
   z-index: 100;
 }
 
-.emotion-27 *,
-.emotion-27 *::before,
-.emotion-27 *::after {
+.emotion-23 *,
+.emotion-23 *::before,
+.emotion-23 *::after {
   box-sizing: inherit;
 }
 
-.emotion-27[data-placement^="top"] {
+.emotion-23[data-placement^="top"] {
   margin-bottom: 5px;
 }
 
-.emotion-27[data-placement^="bottom"] {
+.emotion-23[data-placement^="bottom"] {
   margin-top: 5px;
 }
 
-.emotion-27[data-placement^="left"] {
+.emotion-23[data-placement^="left"] {
   margin-right: 5px;
 }
 
-.emotion-27[data-placement^="right"] {
+.emotion-23[data-placement^="right"] {
   margin-left: 5px;
 }
 
-.emotion-27[data-x-out-of-boundaries] {
+.emotion-23[data-x-out-of-boundaries] {
   visibility: hidden;
 }
 
 <Styled(div)>
   <div
-    className="emotion-33"
+    className="emotion-29"
   >
     <Dropdown
       data={
@@ -6284,12 +6196,12 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
           wide={true}
         >
           <Popover
-            className="emotion-31"
+            className="emotion-27"
             id="dropdown-5"
             tag="span"
           >
             <span
-              className="emotion-31"
+              className="emotion-27"
               id="dropdown-5"
             >
               <PopoverTrigger
@@ -6398,20 +6310,20 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                   placement="bottom-start"
                   wide={true}
                 >
-                  <PopoverContent
-                    className="emotion-27"
+                  <DropdownContent
+                    className="emotion-23"
                     id="dropdown-5-content"
                     onBlur={[Function]}
                     placement="bottom-start"
                   >
                     <RtlPopper
-                      className="emotion-27"
+                      className="emotion-23"
                       id="dropdown-5-content"
                       onBlur={[Function]}
                       placement="bottom-start"
                     >
                       <Popper
-                        className="emotion-27"
+                        className="emotion-23"
                         component="div"
                         eventsEnabled={true}
                         id="dropdown-5-content"
@@ -6421,7 +6333,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                         positionFixed={false}
                       >
                         <div
-                          className="emotion-27"
+                          className="emotion-23"
                           id="dropdown-5-content"
                           onBlur={[Function]}
                           style={
@@ -6465,7 +6377,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                               role="menu"
                             >
                               <div
-                                className="emotion-26"
+                                className="emotion-22"
                                 id="dropdown-5-menu"
                                 role="menu"
                               >
@@ -6474,7 +6386,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                 >
                                   <MenuGroup>
                                     <div
-                                      className="emotion-25"
+                                      className="emotion-21"
                                     >
                                       <MenuItem
                                         index={0}
@@ -6519,7 +6431,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             text="Light years star stuff"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-5-item-0"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -6528,11 +6440,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -6540,11 +6452,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                                         >
                                                           Light years star stuff
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -6597,7 +6504,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             text="Harvesting star light citizens of distant epochs"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-5-item-1"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -6606,11 +6513,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -6618,11 +6525,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                                         >
                                                           Harvesting star light citizens of distant epochs
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -6675,7 +6577,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             text="Encyclopaedia galactica vastness is bearable"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-5-item-2"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -6684,11 +6586,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -6696,11 +6598,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                                         >
                                                           Encyclopaedia galactica vastness is bearable
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -6753,7 +6650,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             text="Shores of the cosmic ocean"
                                           >
                                             <div
-                                              className="emotion-9"
+                                              className="emotion-8"
                                               id="dropdown-5-item-3"
                                               onClick={[Function]}
                                               onKeyDown={[Function]}
@@ -6762,11 +6659,11 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                             >
                                               <Styled(span)>
                                                 <span
-                                                  className="emotion-8"
+                                                  className="emotion-7"
                                                 >
                                                   <Styled(span)>
                                                     <span
-                                                      className="emotion-7"
+                                                      className="emotion-6"
                                                     >
                                                       <Styled(span)>
                                                         <span
@@ -6774,11 +6671,6 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                                                         >
                                                           Shores of the cosmic ocean
                                                         </span>
-                                                      </Styled(span)>
-                                                      <Styled(span)>
-                                                        <span
-                                                          className="emotion-6"
-                                                        />
                                                       </Styled(span)>
                                                     </span>
                                                   </Styled(span)>
@@ -6797,7 +6689,7 @@ exports[`Dropdown demo examples Snapshots: wide 1`] = `
                         </div>
                       </Popper>
                     </RtlPopper>
-                  </PopoverContent>
+                  </DropdownContent>
                 </DropdownContent>
               </DropdownContent>
               <EventListener

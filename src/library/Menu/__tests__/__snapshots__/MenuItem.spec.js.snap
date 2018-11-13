@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MenuItem demo examples Snapshots: basic 1`] = `
-.emotion-4 {
+.emotion-3 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-4:focus {
+.emotion-3:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-4:active {
+.emotion-3:active {
   background-color: #ebeff5;
 }
 
-.emotion-4[aria-selected="true"] {
+.emotion-3[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-4[aria-selected="true"]:active {
+.emotion-3[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-4 [role="img"] {
+.emotion-3 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -39,15 +39,15 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-4 [role="img"]:first-child {
+.emotion-3 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-4 [role="img"]:last-child {
+.emotion-3 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,7 +58,7 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
   justify-content: space-between;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -84,25 +84,18 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
   word-break: break-word;
 }
 
-.emotion-1 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
-}
-
-.emotion-16 {
+.emotion-13 {
   overflow: hidden;
 }
 
-.emotion-16 > div {
+.emotion-13 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-15 {
+.emotion-12 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -113,20 +106,20 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-15 *,
-.emotion-15 *::before,
-.emotion-15 *::after {
+.emotion-12 *,
+.emotion-12 *::before,
+.emotion-12 *::after {
   box-sizing: inherit;
 }
 
 <Styled(div)>
   <div
-    className="emotion-16"
+    className="emotion-13"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-15"
+          className="emotion-12"
         >
           <MenuItem>
             <MenuItem
@@ -134,17 +127,17 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -153,11 +146,6 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
                             Light years
                           </span>
                         </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
-                        </Styled(span)>
                       </span>
                     </Styled(span)>
                   </span>
@@ -171,17 +159,17 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -190,11 +178,6 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
                             Star stuff
                           </span>
                         </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
-                        </Styled(span)>
                       </span>
                     </Styled(span)>
                   </span>
@@ -208,17 +191,17 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -226,11 +209,6 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
                           >
                             Encyclopaedia galactica
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -247,36 +225,36 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
 `;
 
 exports[`MenuItem demo examples Snapshots: disabled 1`] = `
-.emotion-4 {
+.emotion-3 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-4:focus {
+.emotion-3:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-4:active {
+.emotion-3:active {
   background-color: #ebeff5;
 }
 
-.emotion-4[aria-selected="true"] {
+.emotion-3[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-4[aria-selected="true"]:active {
+.emotion-3[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-4 [role="img"] {
+.emotion-3 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -285,15 +263,15 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-4 [role="img"]:first-child {
+.emotion-3 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-4 [role="img"]:last-child {
+.emotion-3 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,7 +282,7 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
   justify-content: space-between;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -330,25 +308,18 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
   word-break: break-word;
 }
 
-.emotion-1 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
-}
-
-.emotion-21 {
+.emotion-17 {
   overflow: hidden;
 }
 
-.emotion-21 > div {
+.emotion-17 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-20 {
+.emotion-16 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -359,29 +330,29 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-20 *,
-.emotion-20 *::before,
-.emotion-20 *::after {
+.emotion-16 *,
+.emotion-16 *::before,
+.emotion-16 *::after {
   box-sizing: inherit;
 }
 
-.emotion-14 {
+.emotion-11 {
   color: #afbacc;
   cursor: default;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-14:focus {
+.emotion-11:focus {
   outline: 0;
 }
 
-.emotion-14[aria-selected="true"] {
+.emotion-11[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-14 [role="img"] {
+.emotion-11 [role="img"] {
   box-sizing: content-box;
   display: block;
   -webkit-flex: 0 0 auto;
@@ -389,22 +360,22 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-14 [role="img"]:first-child {
+.emotion-11 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-14 [role="img"]:last-child {
+.emotion-11 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
 <Styled(div)>
   <div
-    className="emotion-21"
+    className="emotion-17"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-20"
+          className="emotion-16"
         >
           <MenuItem>
             <MenuItem
@@ -412,17 +383,17 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -430,11 +401,6 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
                           >
                             New File
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -449,17 +415,17 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -467,11 +433,6 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
                           >
                             Open
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -489,16 +450,16 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               tabIndex="-1"
             >
               <div
-                className="emotion-14"
+                className="emotion-11"
                 tabIndex="-1"
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -506,11 +467,6 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
                           >
                             Open Recent
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -525,17 +481,17 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-4"
+                className="emotion-3"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-3"
+                    className="emotion-2"
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-2"
+                        className="emotion-1"
                       >
                         <Styled(span)>
                           <span
@@ -543,11 +499,6 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
                           >
                             Save
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-1"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -564,6 +515,830 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
 `;
 
 exports[`MenuItem demo examples Snapshots: icons 1`] = `
+.emotion-4 {
+  color: #333840;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-4:focus {
+  background-color: #f5f7fa;
+  outline: 0;
+}
+
+.emotion-4:hover {
+  background-color: #f5f7fa;
+}
+
+.emotion-4:active {
+  background-color: #ebeff5;
+}
+
+.emotion-4[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-4[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-4 [role="img"] {
+  box-sizing: content-box;
+  color: #3272d9;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-4 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-4 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.1875em 0 0.25em;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.emotion-1 {
+  font-size: 0.875em;
+  margin-right: 0.5714285714285714em;
+  word-break: break-word;
+}
+
+.emotion-38 {
+  overflow: hidden;
+}
+
+.emotion-38 > div {
+  background-color: #ffffff;
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  width: 14em;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  color: #333840;
+  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.25;
+  outline: 0;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.emotion-16 *,
+.emotion-16 *::before,
+.emotion-16 *::after {
+  box-sizing: inherit;
+}
+
+.emotion-21 {
+  color: #de1b1b;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-21:focus {
+  background-color: #faf0f0;
+  outline: 0;
+}
+
+.emotion-21:hover {
+  background-color: #faf0f0;
+}
+
+.emotion-21:active {
+  background-color: #fad4d4;
+}
+
+.emotion-21[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-21[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-21 [role="img"] {
+  box-sizing: content-box;
+  color: #de1b1b;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-21 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-21 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-0 {
+  fill: currentcolor;
+  font-size: 16px;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.emotion-26 {
+  color: #2a854e;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-26:focus {
+  background-color: #e1faeb;
+  outline: 0;
+}
+
+.emotion-26:hover {
+  background-color: #e1faeb;
+}
+
+.emotion-26:active {
+  background-color: #abedc5;
+}
+
+.emotion-26[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-26[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-26 [role="img"] {
+  box-sizing: content-box;
+  color: #2a854e;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-26 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-26 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-31 {
+  color: #ad5f00;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-31:focus {
+  background-color: #fcf2e6;
+  outline: 0;
+}
+
+.emotion-31:hover {
+  background-color: #fcf2e6;
+}
+
+.emotion-31:active {
+  background-color: #fad8af;
+}
+
+.emotion-31[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-31[aria-selected="true"]:active {
+  background-color: #accbfc;
+}
+
+.emotion-31 [role="img"] {
+  box-sizing: content-box;
+  color: #ad5f00;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-31 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-31 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+.emotion-36 {
+  color: #afbacc;
+  cursor: default;
+  font-weight: 400;
+  padding: 0.5em 1em;
+}
+
+.emotion-36:focus {
+  outline: 0;
+}
+
+.emotion-36[aria-selected="true"] {
+  background-color: #f0f5fc;
+  font-weight: 700;
+}
+
+.emotion-36 [role="img"] {
+  box-sizing: content-box;
+  display: block;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.emotion-36 [role="img"]:first-child {
+  margin-right: 0.5em;
+}
+
+.emotion-36 [role="img"]:last-child {
+  margin-left: 0.5em;
+}
+
+<Component>
+  <Styled(div)>
+    <div
+      className="emotion-38"
+    >
+      <Menu>
+        <Menu>
+          <div
+            className="emotion-16"
+          >
+            <MenuItem
+              iconStart={<IconCloud />}
+            >
+              <MenuItem
+                iconStart={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-4"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Start icon
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem
+              iconEnd={<IconCloud />}
+            >
+              <MenuItem
+                iconEnd={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-4"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              End icon
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                      <IconCloud
+                        key="iconEnd"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem
+              iconEnd={<IconCloud />}
+              iconStart={<IconCloud />}
+            >
+              <MenuItem
+                iconEnd={<IconCloud />}
+                iconStart={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-4"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Both icons
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                      <IconCloud
+                        key="iconEnd"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+          </div>
+        </Menu>
+      </Menu>
+      <Menu>
+        <Menu>
+          <div
+            className="emotion-16"
+          >
+            <MenuItem
+              iconStart={<IconCloud />}
+              variant="danger"
+            >
+              <MenuItem
+                iconStart={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+                variant="danger"
+              >
+                <div
+                  className="emotion-21"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Danger
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem
+              iconStart={<IconCloud />}
+              variant="success"
+            >
+              <MenuItem
+                iconStart={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+                variant="success"
+              >
+                <div
+                  className="emotion-26"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Success
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem
+              iconStart={<IconCloud />}
+              variant="warning"
+            >
+              <MenuItem
+                iconStart={<IconCloud />}
+                onKeyDown={[Function]}
+                tabIndex={0}
+                variant="warning"
+              >
+                <div
+                  className="emotion-31"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Warning
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem
+              disabled={true}
+              iconStart={<IconCloud />}
+            >
+              <MenuItem
+                disabled={true}
+                iconStart={<IconCloud />}
+                tabIndex="-1"
+              >
+                <div
+                  className="emotion-36"
+                  tabIndex="-1"
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-3"
+                    >
+                      <IconCloud
+                        key="iconStart"
+                        size="1.5em"
+                      >
+                        <Icon
+                          rtl={false}
+                          size="1.5em"
+                        >
+                          <Styled(svg)
+                            aria-hidden={true}
+                            focusable="false"
+                            role="img"
+                            rtl={false}
+                            size="1.5em"
+                            viewBox="0 0 24 24"
+                          >
+                            <svg
+                              aria-hidden={true}
+                              className="emotion-0"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 24 24"
+                            >
+                              <g>
+                                <path
+                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
+                                />
+                              </g>
+                            </svg>
+                          </Styled(svg)>
+                        </Icon>
+                      </IconCloud>
+                      <Styled(span)>
+                        <span
+                          className="emotion-2"
+                        >
+                          <Styled(span)>
+                            <span
+                              className="emotion-1"
+                            >
+                              Disabled
+                            </span>
+                          </Styled(span)>
+                        </span>
+                      </Styled(span)>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+          </div>
+        </Menu>
+      </Menu>
+    </div>
+  </Styled(div)>
+</Component>
+`;
+
+exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
 .emotion-5 {
   color: #333840;
   cursor: pointer;
@@ -621,7 +1396,7 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
   justify-content: space-between;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -647,25 +1422,14 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
   word-break: break-word;
 }
 
-.emotion-2 {
+.emotion-20 {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.emotion-45 {
-  overflow: hidden;
-}
-
-.emotion-45 > div {
-  background-color: #ffffff;
-  float: left;
-  margin: 0 0.5rem 0.5rem 0;
-  width: 14em;
-}
-
-.emotion-19 {
+.emotion-67 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -676,864 +1440,9 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-19 *,
-.emotion-19 *::before,
-.emotion-19 *::after {
-  box-sizing: inherit;
-}
-
-.emotion-25 {
-  color: #de1b1b;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-25:focus {
-  background-color: #faf0f0;
-  outline: 0;
-}
-
-.emotion-25:hover {
-  background-color: #faf0f0;
-}
-
-.emotion-25:active {
-  background-color: #fad4d4;
-}
-
-.emotion-25[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-25[aria-selected="true"]:active {
-  background-color: #accbfc;
-}
-
-.emotion-25 [role="img"] {
-  box-sizing: content-box;
-  color: #de1b1b;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-25 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-25 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-0 {
-  fill: currentcolor;
-  font-size: 16px;
-  height: 1.5em;
-  width: 1.5em;
-}
-
-.emotion-31 {
-  color: #2a854e;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-31:focus {
-  background-color: #e1faeb;
-  outline: 0;
-}
-
-.emotion-31:hover {
-  background-color: #e1faeb;
-}
-
-.emotion-31:active {
-  background-color: #abedc5;
-}
-
-.emotion-31[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-31[aria-selected="true"]:active {
-  background-color: #accbfc;
-}
-
-.emotion-31 [role="img"] {
-  box-sizing: content-box;
-  color: #2a854e;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-31 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-31 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-37 {
-  color: #ad5f00;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-37:focus {
-  background-color: #fcf2e6;
-  outline: 0;
-}
-
-.emotion-37:hover {
-  background-color: #fcf2e6;
-}
-
-.emotion-37:active {
-  background-color: #fad8af;
-}
-
-.emotion-37[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-37[aria-selected="true"]:active {
-  background-color: #accbfc;
-}
-
-.emotion-37 [role="img"] {
-  box-sizing: content-box;
-  color: #ad5f00;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-37 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-37 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-43 {
-  color: #afbacc;
-  cursor: default;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-43:focus {
-  outline: 0;
-}
-
-.emotion-43[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-43 [role="img"] {
-  box-sizing: content-box;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-43 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-43 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-<Component>
-  <Styled(div)>
-    <div
-      className="emotion-45"
-    >
-      <Menu>
-        <Menu>
-          <div
-            className="emotion-19"
-          >
-            <MenuItem
-              iconStart={<IconCloud />}
-            >
-              <MenuItem
-                iconStart={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-              >
-                <div
-                  className="emotion-5"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Start icon
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-            <MenuItem
-              iconEnd={<IconCloud />}
-            >
-              <MenuItem
-                iconEnd={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-              >
-                <div
-                  className="emotion-5"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              End icon
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                      <IconCloud
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-            <MenuItem
-              iconEnd={<IconCloud />}
-              iconStart={<IconCloud />}
-            >
-              <MenuItem
-                iconEnd={<IconCloud />}
-                iconStart={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-              >
-                <div
-                  className="emotion-5"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Both icons
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                      <IconCloud
-                        key="iconEnd"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-          </div>
-        </Menu>
-      </Menu>
-      <Menu>
-        <Menu>
-          <div
-            className="emotion-19"
-          >
-            <MenuItem
-              iconStart={<IconCloud />}
-              variant="danger"
-            >
-              <MenuItem
-                iconStart={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-                variant="danger"
-              >
-                <div
-                  className="emotion-25"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Danger
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              variant="success"
-            >
-              <MenuItem
-                iconStart={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-                variant="success"
-              >
-                <div
-                  className="emotion-31"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Success
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-            <MenuItem
-              iconStart={<IconCloud />}
-              variant="warning"
-            >
-              <MenuItem
-                iconStart={<IconCloud />}
-                onKeyDown={[Function]}
-                tabIndex={0}
-                variant="warning"
-              >
-                <div
-                  className="emotion-37"
-                  onKeyDown={[Function]}
-                  tabIndex={0}
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Warning
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-            <MenuItem
-              disabled={true}
-              iconStart={<IconCloud />}
-            >
-              <MenuItem
-                disabled={true}
-                iconStart={<IconCloud />}
-                tabIndex="-1"
-              >
-                <div
-                  className="emotion-43"
-                  tabIndex="-1"
-                >
-                  <Styled(span)>
-                    <span
-                      className="emotion-4"
-                    >
-                      <IconCloud
-                        key="iconStart"
-                        size="1.5em"
-                      >
-                        <Icon
-                          rtl={false}
-                          size="1.5em"
-                        >
-                          <Styled(svg)
-                            aria-hidden={true}
-                            focusable="false"
-                            role="img"
-                            rtl={false}
-                            size="1.5em"
-                            viewBox="0 0 24 24"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="emotion-0"
-                              focusable="false"
-                              role="img"
-                              viewBox="0 0 24 24"
-                            >
-                              <g>
-                                <path
-                                  d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"
-                                />
-                              </g>
-                            </svg>
-                          </Styled(svg)>
-                        </Icon>
-                      </IconCloud>
-                      <Styled(span)>
-                        <span
-                          className="emotion-3"
-                        >
-                          <Styled(span)>
-                            <span
-                              className="emotion-1"
-                            >
-                              Disabled
-                            </span>
-                          </Styled(span)>
-                          <Styled(span)>
-                            <span
-                              className="emotion-2"
-                            />
-                          </Styled(span)>
-                        </span>
-                      </Styled(span)>
-                    </span>
-                  </Styled(span)>
-                </div>
-              </MenuItem>
-            </MenuItem>
-          </div>
-        </Menu>
-      </Menu>
-    </div>
-  </Styled(div)>
-</Component>
-`;
-
-exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
-.emotion-6 {
-  color: #333840;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 0.5em 1em;
-}
-
-.emotion-6:focus {
-  background-color: #f5f7fa;
-  outline: 0;
-}
-
-.emotion-6:hover {
-  background-color: #f5f7fa;
-}
-
-.emotion-6:active {
-  background-color: #ebeff5;
-}
-
-.emotion-6[aria-selected="true"] {
-  background-color: #f0f5fc;
-  font-weight: 700;
-}
-
-.emotion-6[aria-selected="true"]:active {
-  background-color: #accbfc;
-}
-
-.emotion-6 [role="img"] {
-  box-sizing: content-box;
-  color: #3272d9;
-  display: block;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.emotion-6 [role="img"]:first-child {
-  margin-right: 0.5em;
-}
-
-.emotion-6 [role="img"]:last-child {
-  margin-left: 0.5em;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.1875em 0 0.25em;
-  white-space: normal;
-  word-break: break-all;
-}
-
-.emotion-1 {
-  font-size: 0.875em;
-  margin-right: 0.5714285714285714em;
-  word-break: break-word;
-}
-
-.emotion-2 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
-}
-
-.emotion-70 {
-  box-sizing: border-box;
-  color: #333840;
-  font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.25;
-  outline: 0;
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.emotion-70 *,
-.emotion-70 *::before,
-.emotion-70 *::after {
+.emotion-67 *,
+.emotion-67 *::before,
+.emotion-67 *::after {
   box-sizing: inherit;
 }
 
@@ -1544,29 +1453,29 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
   width: 1.5em;
 }
 
-.emotion-128 {
+.emotion-123 {
   overflow: hidden;
 }
 
-.emotion-128 > div {
+.emotion-123 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-128 > div:last-child {
+.emotion-123 > div:last-child {
   width: 21.5em;
 }
 
 <Styled(div)>
   <div
-    className="emotion-128"
+    className="emotion-123"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-70"
+          className="emotion-67"
         >
           <MenuItem
             iconEnd={<IconCloud />}
@@ -1579,13 +1488,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -1621,7 +1530,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -1630,11 +1539,6 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                             Kitchen Sink
                           </span>
                         </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
-                        </Styled(span)>
                       </span>
                     </Styled(span)>
                     <IconCloud
@@ -1685,13 +1589,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -1727,7 +1631,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -1736,11 +1640,6 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                             Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
                           </span>
                         </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
-                        </Styled(span)>
                       </span>
                     </Styled(span)>
                     <IconCloud
@@ -1791,13 +1690,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -1833,7 +1732,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -1841,11 +1740,6 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -1899,13 +1793,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -1941,7 +1835,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -1950,7 +1844,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink
                           </span>
@@ -2007,13 +1901,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2049,7 +1943,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2058,7 +1952,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink
                           </span>
@@ -2115,13 +2009,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2157,7 +2051,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2166,7 +2060,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -2223,13 +2117,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2265,7 +2159,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2276,7 +2170,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen sink
                           </span>
@@ -2333,13 +2227,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2375,7 +2269,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2386,7 +2280,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen sink
                           </span>
@@ -2443,13 +2337,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2485,7 +2379,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2496,7 +2390,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -2553,13 +2447,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2595,7 +2489,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2606,7 +2500,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -2656,7 +2550,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
     <Menu>
       <Menu>
         <div
-          className="emotion-70"
+          className="emotion-67"
         >
           <MenuItem
             iconEnd={<IconCloud />}
@@ -2669,13 +2563,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2711,7 +2605,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2719,11 +2613,6 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                           >
                             Kitchen Sink
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -2775,13 +2664,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2817,7 +2706,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2825,11 +2714,6 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -2883,13 +2767,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -2925,7 +2809,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -2934,7 +2818,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink
                           </span>
@@ -2991,13 +2875,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3033,7 +2917,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -3042,7 +2926,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3099,13 +2983,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3141,7 +3025,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -3152,7 +3036,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen sink
                           </span>
@@ -3209,13 +3093,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3251,7 +3135,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -3262,7 +3146,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen sink
                           </span>
@@ -3319,13 +3203,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3361,7 +3245,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -3372,7 +3256,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3429,13 +3313,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
               tabIndex={0}
             >
               <div
-                className="emotion-6"
+                className="emotion-5"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-5"
+                    className="emotion-4"
                   >
                     <IconCloud
                       key="iconStart"
@@ -3471,7 +3355,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                     </IconCloud>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -3482,7 +3366,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
                         </Styled(span)>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-20"
                           >
                             Kitchen Sink with much longer text to force wrapping
                           </span>
@@ -3534,7 +3418,7 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
 `;
 
 exports[`MenuItem demo examples Snapshots: rtl 1`] = `
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3545,7 +3429,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   justify-content: space-between;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3565,25 +3449,25 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   word-break: break-all;
 }
 
-.emotion-1 {
+.emotion-5 {
   color: #58606e;
   font-size: 0.6875em;
   padding-top: 0.18181818181818182em;
   word-break: break-word;
 }
 
-.emotion-23 {
+.emotion-20 {
   overflow: hidden;
 }
 
-.emotion-23 > div {
+.emotion-20 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-22 {
+.emotion-19 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -3594,42 +3478,42 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-22 *,
-.emotion-22 *::before,
-.emotion-22 *::after {
+.emotion-19 *,
+.emotion-19 *::before,
+.emotion-19 *::after {
   box-sizing: inherit;
 }
 
-.emotion-4 {
+.emotion-3 {
   color: #333840;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-4:focus {
+.emotion-3:focus {
   background-color: #f5f7fa;
   outline: 0;
 }
 
-.emotion-4:hover {
+.emotion-3:hover {
   background-color: #f5f7fa;
 }
 
-.emotion-4:active {
+.emotion-3:active {
   background-color: #ebeff5;
 }
 
-.emotion-4[aria-selected="true"] {
+.emotion-3[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-4[aria-selected="true"]:active {
+.emotion-3[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-4 [role="img"] {
+.emotion-3 [role="img"] {
   box-sizing: content-box;
   color: #3272d9;
   display: block;
@@ -3638,11 +3522,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-4 [role="img"]:first-child {
+.emotion-3 [role="img"]:first-child {
   margin-left: 0.5em;
 }
 
-.emotion-4 [role="img"]:last-child {
+.emotion-3 [role="img"]:last-child {
   margin-right: 0.5em;
 }
 
@@ -3652,7 +3536,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   word-break: break-word;
 }
 
-.emotion-10 {
+.emotion-9 {
   fill: currentcolor;
   font-size: 16px;
   height: 1.5em;
@@ -3666,7 +3550,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
   dir="rtl"
 >
   <div
-    className="emotion-23"
+    className="emotion-20"
     dir="rtl"
   >
     <ThemeProvider>
@@ -3674,7 +3558,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
         <Menu>
           <Menu>
             <div
-              className="emotion-22"
+              className="emotion-19"
             >
               <MenuItem>
                 <MenuItem
@@ -3682,17 +3566,17 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                   tabIndex={0}
                 >
                   <div
-                    className="emotion-4"
+                    className="emotion-3"
                     onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-1"
                           >
                             <Styled(span)>
                               <span
@@ -3700,11 +3584,6 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                               >
                                 نص عنصر القائمة
                               </span>
-                            </Styled(span)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-1"
-                              />
                             </Styled(span)>
                           </span>
                         </Styled(span)>
@@ -3722,17 +3601,17 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                   tabIndex={0}
                 >
                   <div
-                    className="emotion-4"
+                    className="emotion-3"
                     onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-1"
                           >
                             <Styled(span)>
                               <span
@@ -3743,7 +3622,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                             </Styled(span)>
                             <Styled(span)>
                               <span
-                                className="emotion-1"
+                                className="emotion-5"
                               >
                                 نص ثانوي
                               </span>
@@ -3764,13 +3643,13 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                   tabIndex={0}
                 >
                   <div
-                    className="emotion-4"
+                    className="emotion-3"
                     onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <IconHelp
                           key="iconStart"
@@ -3790,7 +3669,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="emotion-10"
+                                className="emotion-9"
                                 focusable="false"
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -3806,7 +3685,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                         </IconHelp>
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-1"
                           >
                             <Styled(span)>
                               <span
@@ -3814,11 +3693,6 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                               >
                                 رمز البدء
                               </span>
-                            </Styled(span)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-1"
-                              />
                             </Styled(span)>
                           </span>
                         </Styled(span)>
@@ -3836,17 +3710,17 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                   tabIndex={0}
                 >
                   <div
-                    className="emotion-4"
+                    className="emotion-3"
                     onKeyDown={[Function]}
                     tabIndex={0}
                   >
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
-                            className="emotion-2"
+                            className="emotion-1"
                           >
                             <Styled(span)>
                               <span
@@ -3854,11 +3728,6 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                               >
                                 رمز النهاية
                               </span>
-                            </Styled(span)>
-                            <Styled(span)>
-                              <span
-                                className="emotion-1"
-                              />
                             </Styled(span)>
                           </span>
                         </Styled(span)>
@@ -3880,7 +3749,7 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                             >
                               <svg
                                 aria-hidden={true}
-                                className="emotion-10"
+                                className="emotion-9"
                                 focusable="false"
                                 role="img"
                                 viewBox="0 0 24 24"
@@ -4170,7 +4039,7 @@ exports[`MenuItem demo examples Snapshots: secondary-text 1`] = `
 `;
 
 exports[`MenuItem demo examples Snapshots: variants 1`] = `
-.emotion-4 {
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4181,7 +4050,7 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   justify-content: space-between;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4207,25 +4076,18 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   word-break: break-word;
 }
 
-.emotion-2 {
-  color: #58606e;
-  font-size: 0.6875em;
-  padding-top: 0.18181818181818182em;
-  word-break: break-word;
-}
-
-.emotion-19 {
+.emotion-16 {
   overflow: hidden;
 }
 
-.emotion-19 > div {
+.emotion-16 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-18 {
+.emotion-15 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -4236,42 +4098,42 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-18 *,
-.emotion-18 *::before,
-.emotion-18 *::after {
+.emotion-15 *,
+.emotion-15 *::before,
+.emotion-15 *::after {
   box-sizing: inherit;
 }
 
-.emotion-5 {
+.emotion-4 {
   color: #de1b1b;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-5:focus {
+.emotion-4:focus {
   background-color: #faf0f0;
   outline: 0;
 }
 
-.emotion-5:hover {
+.emotion-4:hover {
   background-color: #faf0f0;
 }
 
-.emotion-5:active {
+.emotion-4:active {
   background-color: #fad4d4;
 }
 
-.emotion-5[aria-selected="true"] {
+.emotion-4[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-5[aria-selected="true"]:active {
+.emotion-4[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-5 [role="img"] {
+.emotion-4 [role="img"] {
   box-sizing: content-box;
   color: #de1b1b;
   display: block;
@@ -4280,11 +4142,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-5 [role="img"]:first-child {
+.emotion-4 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-5 [role="img"]:last-child {
+.emotion-4 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
@@ -4295,36 +4157,36 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   width: 1.5em;
 }
 
-.emotion-11 {
+.emotion-9 {
   color: #2a854e;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-11:focus {
+.emotion-9:focus {
   background-color: #e1faeb;
   outline: 0;
 }
 
-.emotion-11:hover {
+.emotion-9:hover {
   background-color: #e1faeb;
 }
 
-.emotion-11:active {
+.emotion-9:active {
   background-color: #abedc5;
 }
 
-.emotion-11[aria-selected="true"] {
+.emotion-9[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-11[aria-selected="true"]:active {
+.emotion-9[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-11 [role="img"] {
+.emotion-9 [role="img"] {
   box-sizing: content-box;
   color: #2a854e;
   display: block;
@@ -4333,44 +4195,44 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-11 [role="img"]:first-child {
+.emotion-9 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-11 [role="img"]:last-child {
+.emotion-9 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
-.emotion-17 {
+.emotion-14 {
   color: #ad5f00;
   cursor: pointer;
   font-weight: 400;
   padding: 0.5em 1em;
 }
 
-.emotion-17:focus {
+.emotion-14:focus {
   background-color: #fcf2e6;
   outline: 0;
 }
 
-.emotion-17:hover {
+.emotion-14:hover {
   background-color: #fcf2e6;
 }
 
-.emotion-17:active {
+.emotion-14:active {
   background-color: #fad8af;
 }
 
-.emotion-17[aria-selected="true"] {
+.emotion-14[aria-selected="true"] {
   background-color: #f0f5fc;
   font-weight: 700;
 }
 
-.emotion-17[aria-selected="true"]:active {
+.emotion-14[aria-selected="true"]:active {
   background-color: #accbfc;
 }
 
-.emotion-17 [role="img"] {
+.emotion-14 [role="img"] {
   box-sizing: content-box;
   color: #ad5f00;
   display: block;
@@ -4379,22 +4241,22 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
   flex: 0 0 auto;
 }
 
-.emotion-17 [role="img"]:first-child {
+.emotion-14 [role="img"]:first-child {
   margin-right: 0.5em;
 }
 
-.emotion-17 [role="img"]:last-child {
+.emotion-14 [role="img"]:last-child {
   margin-left: 0.5em;
 }
 
 <Styled(div)>
   <div
-    className="emotion-19"
+    className="emotion-16"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-18"
+          className="emotion-15"
         >
           <MenuItem
             variant="danger"
@@ -4405,13 +4267,13 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
               variant="danger"
             >
               <div
-                className="emotion-5"
+                className="emotion-4"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-4"
+                    className="emotion-3"
                   >
                     <IconDanger
                       size="1.5em"
@@ -4446,7 +4308,7 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                     </IconDanger>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -4454,11 +4316,6 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                           >
                             Danger
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -4476,13 +4333,13 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
               variant="success"
             >
               <div
-                className="emotion-11"
+                className="emotion-9"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-4"
+                    className="emotion-3"
                   >
                     <IconSuccess
                       size="1.5em"
@@ -4517,7 +4374,7 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                     </IconSuccess>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -4525,11 +4382,6 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                           >
                             Success
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>
@@ -4547,13 +4399,13 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
               variant="warning"
             >
               <div
-                className="emotion-17"
+                className="emotion-14"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
                 <Styled(span)>
                   <span
-                    className="emotion-4"
+                    className="emotion-3"
                   >
                     <IconWarning
                       size="1.5em"
@@ -4588,7 +4440,7 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                     </IconWarning>
                     <Styled(span)>
                       <span
-                        className="emotion-3"
+                        className="emotion-2"
                       >
                         <Styled(span)>
                           <span
@@ -4596,11 +4448,6 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
                           >
                             Warning
                           </span>
-                        </Styled(span)>
-                        <Styled(span)>
-                          <span
-                            className="emotion-2"
-                          />
                         </Styled(span)>
                       </span>
                     </Styled(span)>

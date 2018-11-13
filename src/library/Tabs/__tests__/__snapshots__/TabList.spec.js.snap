@@ -241,7 +241,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
     <div
       className="emotion-25"
     >
-      <IncrementButton
+      <TabListIncrementButton
         icon={<IconChevronLeft />}
         key="start"
         onClick={[Function]}
@@ -348,7 +348,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
             </Themed(Button)>
           </ArrowButton>
         </ArrowButton>
-      </IncrementButton>
+      </TabListIncrementButton>
       <withProps(Inner)
         key="inner"
         position="top"
@@ -477,7 +477,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
           </Inner>
         </Inner>
       </withProps(Inner)>
-      <IncrementButton
+      <TabListIncrementButton
         icon={<IconChevronRight />}
         key="end"
         onClick={[Function]}
@@ -584,7 +584,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
             </Themed(Button)>
           </ArrowButton>
         </ArrowButton>
-      </IncrementButton>
+      </TabListIncrementButton>
       <EventListener
         listeners={
           Array [

@@ -62,11 +62,13 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
   <Styled(Tooltip)
     content="Long text string that hopefully truncates"
     hasArrow={true}
+    placement="bottom"
   >
     <Tooltip
       className="emotion-5"
       content="Long text string that hopefully truncates"
       hasArrow={true}
+      placement="bottom"
     >
       <WithTheme(Themed(Popover))
         className="emotion-5"
@@ -77,6 +79,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
         isOpen={false}
         onClose={[Function]}
         onOpen={[Function]}
+        placement="bottom"
       >
         <Themed(Popover)
           className="emotion-5"
@@ -87,6 +90,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
           isOpen={false}
           onClose={[Function]}
           onOpen={[Function]}
+          placement="bottom"
         >
           <ThemeProvider>
             <ThemeProvider>
