@@ -4,8 +4,11 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
 .emotion-3 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:focus {
@@ -121,8 +124,11 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
         <div
           className="emotion-12"
         >
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -153,8 +159,11 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
               </div>
             </MenuItem>
           </MenuItem>
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -185,8 +194,11 @@ exports[`MenuItem demo examples Snapshots: basic 1`] = `
               </div>
             </MenuItem>
           </MenuItem>
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -228,8 +240,11 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
 .emotion-3 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:focus {
@@ -339,8 +354,11 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
 .emotion-11 {
   color: #afbacc;
   cursor: default;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-11:focus {
@@ -377,8 +395,11 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
         <div
           className="emotion-16"
         >
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -409,8 +430,11 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               </div>
             </MenuItem>
           </MenuItem>
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -443,10 +467,12 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
           </MenuItem>
           <MenuItem
             disabled={true}
+            element="div"
             onClick={[Function]}
           >
             <MenuItem
               disabled={true}
+              element="div"
               tabIndex="-1"
             >
               <div
@@ -475,8 +501,11 @@ exports[`MenuItem demo examples Snapshots: disabled 1`] = `
               </div>
             </MenuItem>
           </MenuItem>
-          <MenuItem>
+          <MenuItem
+            element="div"
+          >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
             >
@@ -518,8 +547,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
 .emotion-4 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4:focus {
@@ -629,8 +661,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
 .emotion-21 {
   color: #de1b1b;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-21:focus {
@@ -682,8 +717,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
 .emotion-26 {
   color: #2a854e;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-26:focus {
@@ -728,8 +766,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
 .emotion-31 {
   color: #ad5f00;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-31:focus {
@@ -774,8 +815,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
 .emotion-36 {
   color: #afbacc;
   cursor: default;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-36:focus {
@@ -814,9 +858,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
             className="emotion-16"
           >
             <MenuItem
+              element="div"
               iconStart={<IconCloud />}
             >
               <MenuItem
+                element="div"
                 iconStart={<IconCloud />}
                 onKeyDown={[Function]}
                 tabIndex={0}
@@ -881,9 +927,11 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
               </MenuItem>
             </MenuItem>
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
             >
               <MenuItem
+                element="div"
                 iconEnd={<IconCloud />}
                 onKeyDown={[Function]}
                 tabIndex={0}
@@ -948,10 +996,12 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
               </MenuItem>
             </MenuItem>
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
             >
               <MenuItem
+                element="div"
                 iconEnd={<IconCloud />}
                 iconStart={<IconCloud />}
                 onKeyDown={[Function]}
@@ -1057,10 +1107,12 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
             className="emotion-16"
           >
             <MenuItem
+              element="div"
               iconStart={<IconCloud />}
               variant="danger"
             >
               <MenuItem
+                element="div"
                 iconStart={<IconCloud />}
                 onKeyDown={[Function]}
                 tabIndex={0}
@@ -1126,10 +1178,12 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
               </MenuItem>
             </MenuItem>
             <MenuItem
+              element="div"
               iconStart={<IconCloud />}
               variant="success"
             >
               <MenuItem
+                element="div"
                 iconStart={<IconCloud />}
                 onKeyDown={[Function]}
                 tabIndex={0}
@@ -1195,10 +1249,12 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
               </MenuItem>
             </MenuItem>
             <MenuItem
+              element="div"
               iconStart={<IconCloud />}
               variant="warning"
             >
               <MenuItem
+                element="div"
                 iconStart={<IconCloud />}
                 onKeyDown={[Function]}
                 tabIndex={0}
@@ -1265,10 +1321,12 @@ exports[`MenuItem demo examples Snapshots: icons 1`] = `
             </MenuItem>
             <MenuItem
               disabled={true}
+              element="div"
               iconStart={<IconCloud />}
             >
               <MenuItem
                 disabled={true}
+                element="div"
                 iconStart={<IconCloud />}
                 tabIndex="-1"
               >
@@ -1342,8 +1400,11 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
 .emotion-5 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-5:focus {
@@ -1478,10 +1539,12 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
           className="emotion-67"
         >
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -1579,10 +1642,12 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -1680,10 +1745,12 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -1781,11 +1848,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -1889,11 +1958,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Siiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -1997,11 +2068,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2105,11 +2178,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2215,11 +2290,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2325,11 +2402,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2435,11 +2514,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2553,10 +2634,12 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
           className="emotion-67"
         >
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2654,10 +2737,12 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2755,11 +2840,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2863,11 +2950,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -2971,11 +3060,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -3081,11 +3172,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen sink"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -3191,11 +3284,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -3301,11 +3396,13 @@ exports[`MenuItem demo examples Snapshots: kitchen-sink 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             iconEnd={<IconCloud />}
             iconStart={<IconCloud />}
             secondaryText="Kitchen Sink with much longer text to force wrapping"
           >
             <MenuItem
+              element="div"
               iconEnd={<IconCloud />}
               iconStart={<IconCloud />}
               onKeyDown={[Function]}
@@ -3487,8 +3584,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
 .emotion-3 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-3:focus {
@@ -3560,8 +3660,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
             <div
               className="emotion-19"
             >
-              <MenuItem>
+              <MenuItem
+                element="div"
+              >
                 <MenuItem
+                  element="div"
                   onKeyDown={[Function]}
                   tabIndex={0}
                 >
@@ -3593,9 +3696,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                 </MenuItem>
               </MenuItem>
               <MenuItem
+                element="div"
                 secondaryText="نص ثانوي"
               >
                 <MenuItem
+                  element="div"
                   onKeyDown={[Function]}
                   secondaryText="نص ثانوي"
                   tabIndex={0}
@@ -3635,9 +3740,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                 </MenuItem>
               </MenuItem>
               <MenuItem
+                element="div"
                 iconStart={<IconHelp />}
               >
                 <MenuItem
+                  element="div"
                   iconStart={<IconHelp />}
                   onKeyDown={[Function]}
                   tabIndex={0}
@@ -3702,9 +3809,11 @@ exports[`MenuItem demo examples Snapshots: rtl 1`] = `
                 </MenuItem>
               </MenuItem>
               <MenuItem
+                element="div"
                 iconEnd={<IconHelp />}
               >
                 <MenuItem
+                  element="div"
                   iconEnd={<IconHelp />}
                   onKeyDown={[Function]}
                   tabIndex={0}
@@ -3781,8 +3890,11 @@ exports[`MenuItem demo examples Snapshots: secondary-text 1`] = `
 .emotion-4 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4:focus {
@@ -3906,9 +4018,11 @@ exports[`MenuItem demo examples Snapshots: secondary-text 1`] = `
           className="emotion-15"
         >
           <MenuItem
+            element="div"
             secondaryText="Star stuff"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               secondaryText="Star stuff"
               tabIndex={0}
@@ -3948,9 +4062,11 @@ exports[`MenuItem demo examples Snapshots: secondary-text 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             secondaryText="Distant epochs"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               secondaryText="Distant epochs"
               tabIndex={0}
@@ -3990,9 +4106,11 @@ exports[`MenuItem demo examples Snapshots: secondary-text 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             secondaryText="Cosmic ocean"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               secondaryText="Cosmic ocean"
               tabIndex={0}
@@ -4107,8 +4225,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
 .emotion-4 {
   color: #de1b1b;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4:focus {
@@ -4160,8 +4281,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
 .emotion-9 {
   color: #2a854e;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-9:focus {
@@ -4206,8 +4330,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
 .emotion-14 {
   color: #ad5f00;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-14:focus {
@@ -4259,9 +4386,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
           className="emotion-15"
         >
           <MenuItem
+            element="div"
             variant="danger"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
               variant="danger"
@@ -4325,9 +4454,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             variant="success"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
               variant="success"
@@ -4391,9 +4522,11 @@ exports[`MenuItem demo examples Snapshots: variants 1`] = `
             </MenuItem>
           </MenuItem>
           <MenuItem
+            element="div"
             variant="warning"
           >
             <MenuItem
+              element="div"
               onKeyDown={[Function]}
               tabIndex={0}
               variant="warning"
@@ -4469,6 +4602,7 @@ Array [
     "props": Object {
       "children": "Item 1",
       "disabled": undefined,
+      "element": "div",
       "onClick": [MockFunction],
       "onKeyDown": [Function],
       "tabIndex": 0,
