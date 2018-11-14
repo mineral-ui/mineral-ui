@@ -107,6 +107,7 @@ repeating them in each data cell.`,
     description: `Avoid displaying your own title for Table. Instead, use the
 \`title*\` prop(s) to display an accessibly-connected title with the desired
 element and appearance.`,
+    /* eslint-disable jsx-a11y/heading-has-content */
     example: (
       <div>
         <h4>Non-accessible Title</h4>
@@ -124,6 +125,7 @@ element and appearance.`,
         />
       </div>
     )
+    /* eslint-enable jsx-a11y/heading-has-content */
   }
 ];
 

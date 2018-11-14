@@ -51,12 +51,14 @@ to your Cards. Your Card titles and subtitles should use "Title Case".`,
     description: `Don't use custom heading elements. Regular \`<h1>\`,
 \`<h2>\`, etc. will not be formatted automatically. Use a
 [CardTitle](/components/card-title) instead.`,
+    /* eslint-disable jsx-a11y/heading-has-content */
     example: (
       <Card>
         <h1>Heading Element</h1>
         <CardBlock>{loremIpsum}</CardBlock>
       </Card>
     )
+    /* eslint-enable jsx-a11y/heading-has-content */
   },
   {
     type: 'dont',
