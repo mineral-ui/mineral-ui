@@ -43,8 +43,11 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
 .emotion-4 {
   color: #333840;
   cursor: pointer;
+  display: block;
   font-weight: 400;
   padding: 0.5em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4:focus {
@@ -144,8 +147,11 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                 Menu Group Title
               </h3>
             </MenuGroupTitle>
-            <MenuItem>
+            <MenuItem
+              element="div"
+            >
               <MenuItem
+                element="div"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
@@ -176,8 +182,11 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                 </div>
               </MenuItem>
             </MenuItem>
-            <MenuItem>
+            <MenuItem
+              element="div"
+            >
               <MenuItem
+                element="div"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
@@ -221,8 +230,11 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                 Menu Group Title
               </h3>
             </MenuGroupTitle>
-            <MenuItem>
+            <MenuItem
+              element="div"
+            >
               <MenuItem
+                element="div"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
@@ -253,8 +265,11 @@ exports[`MenuGroup demo examples Snapshots: menu-group 1`] = `
                 </div>
               </MenuItem>
             </MenuItem>
-            <MenuItem>
+            <MenuItem
+              element="div"
+            >
               <MenuItem
+                element="div"
                 onKeyDown={[Function]}
                 tabIndex={0}
               >
