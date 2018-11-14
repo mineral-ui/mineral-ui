@@ -1,3 +1,18 @@
+<a name="0.50.0"></a>
+# [0.50.0](https://github.com/mineral-ui/mineral-ui/compare/v0.49.0...v0.50.0) (2018-11-14)
+
+
+### Code Refactoring
+
+* **all:** Refactor component file structure ([f60fb1c](https://github.com/mineral-ui/mineral-ui/commit/f60fb1c))
+
+
+### BREAKING CHANGES
+
+* **all:** Individual component theme function names and locations have changed. These theme functions are primarily used internally within mineral-ui, and it is unlikely that they would be used directly by users.  They are now each named after the respective component and available from its index, e.g. `import { buttonTheme } from ‘mineral-ui/Button’`.
+
+
+
 <a name="0.49.0"></a>
 # [0.49.0](https://github.com/mineral-ui/mineral-ui/compare/v0.48.0...v0.49.0) (2018-11-05)
 
