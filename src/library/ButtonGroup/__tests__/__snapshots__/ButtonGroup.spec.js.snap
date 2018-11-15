@@ -747,7 +747,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                         placement="bottom"
                         tag="span"
                       >
-                        <Popover
+                        <Manager
                           className="emotion-8"
                           data-index={1}
                           id="tooltip-19"
@@ -777,7 +777,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                               <PopoverTrigger
                                 component="span"
                               >
-                                <PopoverTrigger
+                                <Target
                                   className="emotion-6"
                                   component="span"
                                 >
@@ -846,11 +846,11 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                                       </Button>
                                     </Button>
                                   </span>
-                                </PopoverTrigger>
+                                </Target>
                               </PopoverTrigger>
                             </PopoverTrigger>
                           </span>
-                        </Popover>
+                        </Manager>
                       </Popover>
                     </Popover>
                   </ThemeProvider>
@@ -876,7 +876,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
               placement="bottom"
               tag="span"
             >
-              <Popover
+              <Manager
                 className="emotion-8"
                 data-index={2}
                 onClick={[Function]}
@@ -901,7 +901,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                     <PopoverTrigger
                       component="span"
                     >
-                      <PopoverTrigger
+                      <Target
                         className="emotion-6"
                         component="span"
                       >
@@ -961,11 +961,11 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                             </Button>
                           </Button>
                         </span>
-                      </PopoverTrigger>
+                      </Target>
                     </PopoverTrigger>
                   </PopoverTrigger>
                 </span>
-              </Popover>
+              </Manager>
             </Popover>
           </Popover>
           <Dropdown
@@ -1024,7 +1024,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                 tag="span"
                 triggerRef={[Function]}
               >
-                <Popover
+                <Manager
                   className="emotion-8"
                   data-index={3}
                   id="dropdown-21"
@@ -1055,7 +1055,7 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                       <PopoverTrigger
                         component="span"
                       >
-                        <PopoverTrigger
+                        <Target
                           className="emotion-6"
                           component="span"
                         >
@@ -1157,11 +1157,11 @@ exports[`ButtonGroup demo examples Snapshots: composition 1`] = `
                               </Button>
                             </Button>
                           </span>
-                        </PopoverTrigger>
+                        </Target>
                       </PopoverTrigger>
                     </PopoverTrigger>
                   </span>
-                </Popover>
+                </Manager>
               </Popover>
             </Popover>
           </Dropdown>

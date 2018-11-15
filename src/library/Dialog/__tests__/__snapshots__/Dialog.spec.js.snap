@@ -823,7 +823,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
         title="Lorem ipsum dolor sit amet"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           actions={
             Array [
               Object {
@@ -941,7 +941,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-7"
                                             element="header"
                                           >
@@ -1016,7 +1016,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                 </WithTheme(DialogTitle)>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -1024,7 +1024,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-30"
                                           element="div"
                                         >
@@ -1066,7 +1066,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-20"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -1151,7 +1151,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                                                             }
                                                                                             size="large"
                                                                                           >
-                                                                                            <TextInput
+                                                                                            <WithTheme(Themed(FauxControl))
                                                                                               className="emotion-14"
                                                                                               control={[Function]}
                                                                                               controlProps={
@@ -1249,7 +1249,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                                                                   </ThemeProvider>
                                                                                                 </ThemeProvider>
                                                                                               </Themed(FauxControl)>
-                                                                                            </TextInput>
+                                                                                            </WithTheme(Themed(FauxControl))>
                                                                                           </TextInput>
                                                                                         </TextInput>
                                                                                       </label>
@@ -1273,7 +1273,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -1286,7 +1286,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                     <DialogFooter>
@@ -1294,7 +1294,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                         <DialogFooter
                                           element="footer"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-40"
                                             element="footer"
                                           >
@@ -1396,7 +1396,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
                                                 </DialogActions>
                                               </footer>
                                             </Styled(footer)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogFooter>
                                       </withProps(DialogFooter)>
                                     </DialogFooter>
@@ -1413,7 +1413,7 @@ exports[`Dialog demo examples Snapshots: actions 1`] = `
               </mockConstructor>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>
@@ -2025,7 +2025,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
         size="medium"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           className="emotion-36"
           closeButtonLabel="close"
           closeOnClickOutside={false}
@@ -2125,7 +2125,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-7"
                                             element="header"
                                           >
@@ -2200,7 +2200,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                                 </WithTheme(DialogTitle)>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -2208,7 +2208,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-21"
                                           element="div"
                                         >
@@ -2250,7 +2250,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-11"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -2318,7 +2318,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -2331,7 +2331,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                     <DialogFooter>
@@ -2339,7 +2339,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                         <DialogFooter
                                           element="footer"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-31"
                                             element="footer"
                                           >
@@ -2436,7 +2436,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
                                                 </DialogActions>
                                               </footer>
                                             </Styled(footer)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogFooter>
                                       </withProps(DialogFooter)>
                                     </DialogFooter>
@@ -2453,7 +2453,7 @@ exports[`Dialog demo examples Snapshots: alternate 1`] = `
               </mockConstructor>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>
@@ -3088,7 +3088,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
         title="Lorem ipsum dolor sit amet"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           actions={
             Array [
               Object {
@@ -3202,7 +3202,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-7"
                                             element="header"
                                           >
@@ -3277,7 +3277,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                                 </WithTheme(DialogTitle)>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -3285,7 +3285,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-21"
                                           element="div"
                                         >
@@ -3327,7 +3327,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-11"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -3396,7 +3396,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -3409,7 +3409,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                     <DialogFooter>
@@ -3417,7 +3417,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                         <DialogFooter
                                           element="footer"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-31"
                                             element="footer"
                                           >
@@ -3514,7 +3514,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
                                                 </DialogActions>
                                               </footer>
                                             </Styled(footer)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogFooter>
                                       </withProps(DialogFooter)>
                                     </DialogFooter>
@@ -3531,7 +3531,7 @@ exports[`Dialog demo examples Snapshots: basic 1`] = `
               </mockConstructor>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>
@@ -4261,7 +4261,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
         title="Lorem ipsum dolor sit amet"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           actions={
             Array [
               Object {
@@ -4383,7 +4383,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-14"
                                             element="header"
                                           >
@@ -4465,7 +4465,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                                     minimal={true}
                                                     size="small"
                                                   >
-                                                    <CloseButton
+                                                    <WithTheme(Themed(Button))
                                                       aria-label="close"
                                                       className="emotion-9"
                                                       iconStart={<IconClose />}
@@ -4547,12 +4547,12 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(Button)>
-                                                    </CloseButton>
+                                                    </WithTheme(Themed(Button))>
                                                   </CloseButton>
                                                 </withProps(CloseButton)>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -4560,7 +4560,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-28"
                                           element="div"
                                         >
@@ -4602,7 +4602,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-18"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -4671,7 +4671,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -4684,7 +4684,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                     <DialogFooter>
@@ -4692,7 +4692,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                         <DialogFooter
                                           element="footer"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-38"
                                             element="footer"
                                           >
@@ -4789,7 +4789,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
                                                 </DialogActions>
                                               </footer>
                                             </Styled(footer)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogFooter>
                                       </withProps(DialogFooter)>
                                     </DialogFooter>
@@ -4806,7 +4806,7 @@ exports[`Dialog demo examples Snapshots: close-button 1`] = `
               </mockConstructor>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>
@@ -5446,7 +5446,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
               title="الأحكام والشروط"
               usePortal={false}
             >
-              <DemoDialog
+              <Dialog
                 actions={
                   Array [
                     Object {
@@ -5560,7 +5560,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                               <DialogHeader
                                                 element="header"
                                               >
-                                                <DialogHeader
+                                                <DialogRow
                                                   className="emotion-7"
                                                   element="header"
                                                 >
@@ -5635,7 +5635,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                                       </WithTheme(DialogTitle)>
                                                     </header>
                                                   </Styled(header)>
-                                                </DialogHeader>
+                                                </DialogRow>
                                               </DialogHeader>
                                             </withProps(DialogHeader)>
                                           </DialogHeader>
@@ -5643,7 +5643,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                             <DialogBody
                                               element="div"
                                             >
-                                              <DialogHeader
+                                              <DialogRow
                                                 className="emotion-21"
                                                 element="div"
                                               >
@@ -5685,7 +5685,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                                                         onScroll={[Function]}
                                                                         scrollY={true}
                                                                       >
-                                                                        <Scroller
+                                                                        <WithTheme(Themed(OverflowContainer))
                                                                           className="emotion-11"
                                                                           containerRef={[Function]}
                                                                           onScroll={[Function]}
@@ -5754,7 +5754,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                                                               </ThemeProvider>
                                                                             </ThemeProvider>
                                                                           </Themed(OverflowContainer)>
-                                                                        </Scroller>
+                                                                        </WithTheme(Themed(OverflowContainer))>
                                                                       </Scroller>
                                                                     </div>
                                                                   </OverflowContainerWithShadows>
@@ -5767,7 +5767,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                                     </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                                   </div>
                                                 </Styled(div)>
-                                              </DialogHeader>
+                                              </DialogRow>
                                             </DialogBody>
                                           </DialogBody>
                                           <DialogFooter>
@@ -5775,7 +5775,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                               <DialogFooter
                                                 element="footer"
                                               >
-                                                <DialogHeader
+                                                <DialogRow
                                                   className="emotion-31"
                                                   element="footer"
                                                 >
@@ -5872,7 +5872,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                                                       </DialogActions>
                                                     </footer>
                                                   </Styled(footer)>
-                                                </DialogHeader>
+                                                </DialogRow>
                                               </DialogFooter>
                                             </withProps(DialogFooter)>
                                           </DialogFooter>
@@ -5889,7 +5889,7 @@ exports[`Dialog demo examples Snapshots: rtl 1`] = `
                     </mockConstructor>
                   </Component>
                 </WithTheme(Component)>
-              </DemoDialog>
+              </Dialog>
             </DemoDialog>
           </withProps(DemoDialog)>
         </div>
@@ -6765,7 +6765,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
           title="Lorem ipsum dolor sit amet"
           usePortal={false}
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -6879,7 +6879,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-7"
                                               element="header"
                                             >
@@ -6954,7 +6954,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -6962,7 +6962,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-21"
                                             element="div"
                                           >
@@ -7004,7 +7004,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-11"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -7073,7 +7073,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -7086,7 +7086,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -7094,7 +7094,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-31"
                                               element="footer"
                                             >
@@ -7191,7 +7191,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -7208,7 +7208,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -7255,7 +7255,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
           title="Lorem ipsum dolor sit amet"
           usePortal={false}
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -7369,7 +7369,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-7"
                                               element="header"
                                             >
@@ -7444,7 +7444,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -7452,7 +7452,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-21"
                                             element="div"
                                           >
@@ -7494,7 +7494,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-11"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -7563,7 +7563,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -7576,7 +7576,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -7584,7 +7584,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-31"
                                               element="footer"
                                             >
@@ -7681,7 +7681,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -7698,7 +7698,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -7745,7 +7745,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
           title="Lorem ipsum dolor sit amet"
           usePortal={false}
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -7859,7 +7859,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-7"
                                               element="header"
                                             >
@@ -7934,7 +7934,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -7942,7 +7942,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-21"
                                             element="div"
                                           >
@@ -7984,7 +7984,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-11"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -8053,7 +8053,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -8066,7 +8066,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -8074,7 +8074,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-31"
                                               element="footer"
                                             >
@@ -8171,7 +8171,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -8188,7 +8188,7 @@ exports[`Dialog demo examples Snapshots: sizes 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -8847,7 +8847,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
           }
           usePortal={false}
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -8972,7 +8972,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-7"
                                               element="header"
                                             >
@@ -9053,7 +9053,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -9061,7 +9061,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-21"
                                             element="div"
                                           >
@@ -9103,7 +9103,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-11"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -9172,7 +9172,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -9185,7 +9185,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -9193,7 +9193,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-31"
                                               element="footer"
                                             >
@@ -9290,7 +9290,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -9307,7 +9307,7 @@ exports[`Dialog demo examples Snapshots: title 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -9482,7 +9482,7 @@ exports[`Dialog demo examples Snapshots: trigger 1`] = `
           </button>
         </Button>
       </Button>
-      <DemoDialog
+      <Dialog
         actions={
           Array [
             Object {
@@ -9506,7 +9506,7 @@ exports[`Dialog demo examples Snapshots: trigger 1`] = `
         usePortal={true}
       >
         <Portal />
-      </DemoDialog>
+      </Dialog>
     </div>
   </Demo>
 </Component>
@@ -10349,7 +10349,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
           usePortal={false}
           variant="success"
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -10465,7 +10465,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-8"
                                               element="header"
                                             >
@@ -10574,7 +10574,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -10582,7 +10582,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-22"
                                             element="div"
                                           >
@@ -10624,7 +10624,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-12"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -10693,7 +10693,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -10706,7 +10706,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -10714,7 +10714,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-32"
                                               element="footer"
                                             >
@@ -10815,7 +10815,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -10832,7 +10832,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -10880,7 +10880,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
           usePortal={false}
           variant="warning"
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -10996,7 +10996,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-8"
                                               element="header"
                                             >
@@ -11105,7 +11105,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -11113,7 +11113,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-22"
                                             element="div"
                                           >
@@ -11155,7 +11155,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-12"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -11224,7 +11224,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -11237,7 +11237,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -11245,7 +11245,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-32"
                                               element="footer"
                                             >
@@ -11346,7 +11346,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -11363,7 +11363,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>
@@ -11411,7 +11411,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
           usePortal={false}
           variant="danger"
         >
-          <DemoDialog
+          <Dialog
             actions={
               Array [
                 Object {
@@ -11527,7 +11527,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogHeader
                                             element="header"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-8"
                                               element="header"
                                             >
@@ -11636,7 +11636,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </WithTheme(DialogTitle)>
                                                 </header>
                                               </Styled(header)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogHeader>
                                         </withProps(DialogHeader)>
                                       </DialogHeader>
@@ -11644,7 +11644,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                         <DialogBody
                                           element="div"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-22"
                                             element="div"
                                           >
@@ -11686,7 +11686,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                     onScroll={[Function]}
                                                                     scrollY={true}
                                                                   >
-                                                                    <Scroller
+                                                                    <WithTheme(Themed(OverflowContainer))
                                                                       className="emotion-12"
                                                                       containerRef={[Function]}
                                                                       onScroll={[Function]}
@@ -11755,7 +11755,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                                           </ThemeProvider>
                                                                         </ThemeProvider>
                                                                       </Themed(OverflowContainer)>
-                                                                    </Scroller>
+                                                                    </WithTheme(Themed(OverflowContainer))>
                                                                   </Scroller>
                                                                 </div>
                                                               </OverflowContainerWithShadows>
@@ -11768,7 +11768,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                 </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                               </div>
                                             </Styled(div)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogBody>
                                       </DialogBody>
                                       <DialogFooter>
@@ -11776,7 +11776,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                           <DialogFooter
                                             element="footer"
                                           >
-                                            <DialogHeader
+                                            <DialogRow
                                               className="emotion-32"
                                               element="footer"
                                             >
@@ -11877,7 +11877,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                                                   </DialogActions>
                                                 </footer>
                                               </Styled(footer)>
-                                            </DialogHeader>
+                                            </DialogRow>
                                           </DialogFooter>
                                         </withProps(DialogFooter)>
                                       </DialogFooter>
@@ -11894,7 +11894,7 @@ exports[`Dialog demo examples Snapshots: variants 1`] = `
                 </mockConstructor>
               </Component>
             </WithTheme(Component)>
-          </DemoDialog>
+          </Dialog>
         </DemoDialog>
       </withProps(DemoDialog)>
     </div>

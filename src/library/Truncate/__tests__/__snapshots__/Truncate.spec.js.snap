@@ -117,7 +117,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                   placement="bottom"
                   tag="span"
                 >
-                  <Popover
+                  <Manager
                     className="emotion-3"
                     id="tooltip-1"
                     tag="span"
@@ -141,7 +141,7 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <PopoverTrigger
+                          <Target
                             className="emotion-1"
                             component="span"
                           >
@@ -176,11 +176,11 @@ exports[`Truncate renders a tooltip when truncated 1`] = `
                                 </span>
                               </Truncate>
                             </span>
-                          </PopoverTrigger>
+                          </Target>
                         </PopoverTrigger>
                       </PopoverTrigger>
                     </span>
-                  </Popover>
+                  </Manager>
                 </Popover>
               </Popover>
             </ThemeProvider>

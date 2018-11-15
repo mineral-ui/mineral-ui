@@ -143,7 +143,7 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Popover
+    <Manager
       className="emotion-5"
       tag="span"
     >
@@ -164,7 +164,7 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
           <PopoverTrigger
             component="span"
           >
-            <PopoverTrigger
+            <Target
               className="emotion-3"
               component="span"
             >
@@ -223,11 +223,11 @@ exports[`Popover demo examples Snapshots: basic 1`] = `
                   </Button>
                 </Button>
               </span>
-            </PopoverTrigger>
+            </Target>
           </PopoverTrigger>
         </PopoverTrigger>
       </span>
-    </Popover>
+    </Manager>
   </Popover>
 </Popover>
 `;
@@ -400,7 +400,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
           placement="bottom"
           tag="span"
         >
-          <Popover
+          <Manager
             className="emotion-5"
             tag="span"
           >
@@ -421,7 +421,7 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                 <PopoverTrigger
                   component="span"
                 >
-                  <PopoverTrigger
+                  <Target
                     className="emotion-3"
                     component="span"
                   >
@@ -480,11 +480,11 @@ exports[`Popover demo examples Snapshots: controlled 1`] = `
                         </Button>
                       </Button>
                     </span>
-                  </PopoverTrigger>
+                  </Target>
                 </PopoverTrigger>
               </PopoverTrigger>
             </span>
-          </Popover>
+          </Manager>
         </Popover>
       </Popover>
       <Button
@@ -672,7 +672,7 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Popover
+      <Manager
         className="emotion-5"
         tag="span"
       >
@@ -693,7 +693,7 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
             <PopoverTrigger
               component="span"
             >
-              <PopoverTrigger
+              <Target
                 className="emotion-3"
                 component="span"
               >
@@ -752,11 +752,11 @@ exports[`Popover demo examples Snapshots: custom-content 1`] = `
                     </Button>
                   </Button>
                 </span>
-              </PopoverTrigger>
+              </Target>
             </PopoverTrigger>
           </PopoverTrigger>
         </span>
-      </Popover>
+      </Manager>
     </Popover>
   </Popover>
 </Component>
@@ -781,14 +781,14 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Popover
+      <Manager
         className="emotion-2"
         tag="span"
       >
         <span
           className="emotion-2"
         >
-          <Styled(PopoverTrigger)
+          <Styled(Target)
             aria-describedby="popover-24-content"
             aria-expanded={false}
             aria-owns="popover-24-content"
@@ -796,7 +796,7 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
             onBlur={[Function]}
             onClick={[Function]}
           >
-            <PopoverTrigger
+            <Target
               aria-describedby="popover-24-content"
               aria-expanded={false}
               aria-owns="popover-24-content"
@@ -821,10 +821,10 @@ exports[`Popover demo examples Snapshots: custom-trigger 1`] = `
                   ▼
                 </span>
               </button>
-            </PopoverTrigger>
-          </Styled(PopoverTrigger)>
+            </Target>
+          </Styled(Target)>
         </span>
-      </Popover>
+      </Manager>
     </Popover>
   </Popover>
 </Component>
@@ -970,7 +970,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
     placement="bottom"
     tag="span"
   >
-    <Popover
+    <Manager
       className="emotion-5"
       tag="span"
     >
@@ -992,7 +992,7 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
           <PopoverTrigger
             component="span"
           >
-            <PopoverTrigger
+            <Target
               className="emotion-3"
               component="span"
             >
@@ -1054,11 +1054,11 @@ exports[`Popover demo examples Snapshots: disabled 1`] = `
                   </Button>
                 </Button>
               </span>
-            </PopoverTrigger>
+            </Target>
           </PopoverTrigger>
         </PopoverTrigger>
       </span>
-    </Popover>
+    </Manager>
   </Popover>
 </Popover>
 `;
@@ -1211,7 +1211,7 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
       placement="bottom"
       tag="span"
     >
-      <Popover
+      <Manager
         className="emotion-5"
         tag="span"
       >
@@ -1232,7 +1232,7 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
             <PopoverTrigger
               component="span"
             >
-              <PopoverTrigger
+              <Target
                 className="emotion-3"
                 component="span"
               >
@@ -1291,11 +1291,11 @@ exports[`Popover demo examples Snapshots: on-open-close 1`] = `
                     </Button>
                   </Button>
                 </span>
-              </PopoverTrigger>
+              </Target>
             </PopoverTrigger>
           </PopoverTrigger>
         </span>
-      </Popover>
+      </Manager>
     </Popover>
   </Popover>
 </Component>
@@ -1532,7 +1532,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
         placement="right"
         tag="span"
       >
-        <Popover
+        <Manager
           className="emotion-14"
           tag="span"
         >
@@ -1553,7 +1553,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <PopoverTrigger
+                <Target
                   className="emotion-3"
                   component="span"
                 >
@@ -1612,7 +1612,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                       </Button>
                     </Button>
                   </span>
-                </PopoverTrigger>
+                </Target>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -1628,7 +1628,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                 placement="right"
                 tabIndex={0}
               >
-                <PopoverContent
+                <WithTheme(RtlPopper)
                   className="emotion-10"
                   id="popover-8-content"
                   onBlur={[Function]}
@@ -1704,7 +1704,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <PopoverArrow
+                            <Arrow
                               aria-hidden={true}
                               className="emotion-8"
                             >
@@ -1715,13 +1715,13 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
                               >
                                 ▼
                               </span>
-                            </PopoverArrow>
+                            </Arrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </PopoverContent>
+                </WithTheme(RtlPopper)>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -1743,7 +1743,7 @@ exports[`Popover demo examples Snapshots: overflow 1`] = `
               }
             />
           </span>
-        </Popover>
+        </Manager>
       </Popover>
     </Popover>
   </div>
@@ -1991,7 +1991,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
         placement="bottom"
         tag="span"
       >
-        <Popover
+        <Manager
           className="emotion-14"
           tag="span"
         >
@@ -2012,7 +2012,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <PopoverTrigger
+                <Target
                   className="emotion-3"
                   component="span"
                 >
@@ -2071,7 +2071,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                       </Button>
                     </Button>
                   </span>
-                </PopoverTrigger>
+                </Target>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -2087,7 +2087,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                 placement="bottom"
                 tabIndex={0}
               >
-                <PopoverContent
+                <WithTheme(RtlPopper)
                   className="emotion-10"
                   id="popover-6-content"
                   onBlur={[Function]}
@@ -2163,7 +2163,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <PopoverArrow
+                            <Arrow
                               aria-hidden={true}
                               className="emotion-8"
                             >
@@ -2174,13 +2174,13 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
                               >
                                 ▼
                               </span>
-                            </PopoverArrow>
+                            </Arrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </PopoverContent>
+                </WithTheme(RtlPopper)>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -2202,7 +2202,7 @@ exports[`Popover demo examples Snapshots: placement 1`] = `
               }
             />
           </span>
-        </Popover>
+        </Manager>
       </Popover>
     </Popover>
   </div>
@@ -2519,7 +2519,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                   tag="span"
                   usePortal={true}
                 >
-                  <Popover
+                  <Manager
                     className="emotion-5"
                     tag="span"
                   >
@@ -2540,7 +2540,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <PopoverTrigger
+                          <Target
                             className="emotion-3"
                             component="span"
                           >
@@ -2599,7 +2599,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                                 </Button>
                               </Button>
                             </span>
-                          </PopoverTrigger>
+                          </Target>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <Portal />
@@ -2622,7 +2622,7 @@ exports[`Popover demo examples Snapshots: portal 1`] = `
                         }
                       />
                     </span>
-                  </Popover>
+                  </Manager>
                 </Popover>
               </Popover>
             </div>
@@ -2916,7 +2916,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
             placement="bottom-start"
             tag="span"
           >
-            <Popover
+            <Manager
               className="emotion-14"
               tag="span"
             >
@@ -2937,7 +2937,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                   <PopoverTrigger
                     component="span"
                   >
-                    <PopoverTrigger
+                    <Target
                       className="emotion-3"
                       component="span"
                     >
@@ -2996,7 +2996,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                           </Button>
                         </Button>
                       </span>
-                    </PopoverTrigger>
+                    </Target>
                   </PopoverTrigger>
                 </PopoverTrigger>
                 <PopoverContent
@@ -3012,7 +3012,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                     placement="bottom-start"
                     tabIndex={0}
                   >
-                    <PopoverContent
+                    <WithTheme(RtlPopper)
                       className="emotion-10"
                       id="popover-20-content"
                       onBlur={[Function]}
@@ -3088,7 +3088,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                                 aria-hidden={true}
                                 size="8px"
                               >
-                                <PopoverArrow
+                                <Arrow
                                   aria-hidden={true}
                                   className="emotion-8"
                                 >
@@ -3099,13 +3099,13 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                                   >
                                     ▼
                                   </span>
-                                </PopoverArrow>
+                                </Arrow>
                               </PopoverArrow>
                             </PopoverArrow>
                           </div>
                         </Popper>
                       </RtlPopper>
-                    </PopoverContent>
+                    </WithTheme(RtlPopper)>
                   </PopoverContent>
                 </PopoverContent>
                 <EventListener
@@ -3127,7 +3127,7 @@ exports[`Popover demo examples Snapshots: rtl 1`] = `
                   }
                 />
               </span>
-            </Popover>
+            </Manager>
           </Popover>
         </Popover>
       </ThemeProvider>
@@ -3506,7 +3506,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                   placement="left"
                   tag="span"
                 >
-                  <Popover
+                  <Manager
                     className="emotion-14"
                     tag="span"
                   >
@@ -3527,7 +3527,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                         <PopoverTrigger
                           component="span"
                         >
-                          <PopoverTrigger
+                          <Target
                             className="emotion-3"
                             component="span"
                           >
@@ -3586,7 +3586,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                 </Button>
                               </Button>
                             </span>
-                          </PopoverTrigger>
+                          </Target>
                         </PopoverTrigger>
                       </PopoverTrigger>
                       <PopoverContent
@@ -3602,7 +3602,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                           placement="left"
                           tabIndex={0}
                         >
-                          <PopoverContent
+                          <WithTheme(RtlPopper)
                             className="emotion-10"
                             id="popover-10-content"
                             onBlur={[Function]}
@@ -3678,7 +3678,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                       aria-hidden={true}
                                       size="8px"
                                     >
-                                      <PopoverArrow
+                                      <Arrow
                                         aria-hidden={true}
                                         className="emotion-8"
                                       >
@@ -3689,13 +3689,13 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                                         >
                                           ▼
                                         </span>
-                                      </PopoverArrow>
+                                      </Arrow>
                                     </PopoverArrow>
                                   </PopoverArrow>
                                 </div>
                               </Popper>
                             </RtlPopper>
-                          </PopoverContent>
+                          </WithTheme(RtlPopper)>
                         </PopoverContent>
                       </PopoverContent>
                       <EventListener
@@ -3717,7 +3717,7 @@ exports[`Popover demo examples Snapshots: scrolling-container 1`] = `
                         }
                       />
                     </span>
-                  </Popover>
+                  </Manager>
                 </Popover>
               </Popover>
             </div>
@@ -4062,7 +4062,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
         tag="span"
         title="Title"
       >
-        <Popover
+        <Manager
           className="emotion-19"
           tag="span"
           title="Title"
@@ -4085,7 +4085,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
               <PopoverTrigger
                 component="span"
               >
-                <PopoverTrigger
+                <Target
                   className="emotion-3"
                   component="span"
                 >
@@ -4144,7 +4144,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                       </Button>
                     </Button>
                   </span>
-                </PopoverTrigger>
+                </Target>
               </PopoverTrigger>
             </PopoverTrigger>
             <PopoverContent
@@ -4162,7 +4162,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                 placement="right"
                 tabIndex={0}
               >
-                <PopoverContent
+                <WithTheme(RtlPopper)
                   className="emotion-15"
                   id="popover-4-content"
                   onBlur={[Function]}
@@ -4286,7 +4286,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                             aria-hidden={true}
                             size="8px"
                           >
-                            <PopoverArrow
+                            <Arrow
                               aria-hidden={true}
                               className="emotion-13"
                             >
@@ -4297,13 +4297,13 @@ exports[`Popover demo examples Snapshots: title 1`] = `
                               >
                                 ▼
                               </span>
-                            </PopoverArrow>
+                            </Arrow>
                           </PopoverArrow>
                         </PopoverArrow>
                       </div>
                     </Popper>
                   </RtlPopper>
-                </PopoverContent>
+                </WithTheme(RtlPopper)>
               </PopoverContent>
             </PopoverContent>
             <EventListener
@@ -4325,7 +4325,7 @@ exports[`Popover demo examples Snapshots: title 1`] = `
               }
             />
           </span>
-        </Popover>
+        </Manager>
       </Popover>
     </Popover>
   </div>

@@ -254,7 +254,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
           iconEnd={null}
           size="large"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -393,7 +393,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -423,7 +423,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
           iconEnd={null}
           size="large"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -544,7 +544,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -574,7 +574,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
           iconEnd={null}
           size="small"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -695,7 +695,7 @@ Duis vitae nisl dignissim, congue elit et, ornare dolor. Pellentesque eu dui pel
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
     </div>
@@ -873,7 +873,7 @@ exports[`TextArea demo examples Snapshots: controlled 1`] = `
         iconEnd={null}
         size="large"
       >
-        <TextArea
+        <WithTheme(Themed(FauxControl))
           className="emotion-3"
           control={[Function]}
           controlProps={
@@ -999,7 +999,7 @@ exports[`TextArea demo examples Snapshots: controlled 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(FauxControl)>
-        </TextArea>
+        </WithTheme(Themed(FauxControl))>
       </TextArea>
     </TextArea>
   </MyForm>
@@ -1165,7 +1165,7 @@ exports[`TextArea demo examples Snapshots: disabled 1`] = `
     iconEnd={null}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -1293,7 +1293,7 @@ exports[`TextArea demo examples Snapshots: disabled 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -1564,7 +1564,7 @@ exports[`TextArea demo examples Snapshots: form-field 1`] = `
                   iconEnd={null}
                   size="large"
                 >
-                  <TextArea
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-5"
                     control={[Function]}
                     controlProps={
@@ -1689,13 +1689,14 @@ exports[`TextArea demo examples Snapshots: form-field 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextArea>
+                  </WithTheme(Themed(FauxControl))>
                 </TextArea>
               </TextArea>
             </label>
             <Styled(div)
               caption="Please keep comments brief and descriptive"
               id="formField-1-caption"
+              isGroup={false}
             >
               <div
                 className="emotion-9"
@@ -2011,7 +2012,7 @@ exports[`TextArea demo examples Snapshots: input-ref 1`] = `
               iconEnd={null}
               size="large"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -2125,7 +2126,7 @@ exports[`TextArea demo examples Snapshots: input-ref 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <Button
@@ -2336,7 +2337,7 @@ exports[`TextArea demo examples Snapshots: invalid 1`] = `
     iconEnd={null}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -2452,7 +2453,7 @@ exports[`TextArea demo examples Snapshots: invalid 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -3950,7 +3951,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="small"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4070,7 +4071,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextArea
@@ -4100,7 +4101,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="small"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4221,7 +4222,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextInput
@@ -4245,7 +4246,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               }
               size="small"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-17"
                 control={[Function]}
                 controlProps={
@@ -4341,7 +4342,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -4405,7 +4406,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="medium"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4525,7 +4526,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextArea
@@ -4555,7 +4556,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="medium"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4676,7 +4677,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextInput
@@ -4700,7 +4701,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               }
               size="medium"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-17"
                 control={[Function]}
                 controlProps={
@@ -4796,7 +4797,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -4860,7 +4861,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="large"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4980,7 +4981,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextArea
@@ -5010,7 +5011,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="large"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -5131,7 +5132,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextInput
@@ -5155,7 +5156,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               }
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-17"
                 control={[Function]}
                 controlProps={
@@ -5251,7 +5252,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -5315,7 +5316,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="jumbo"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -5435,7 +5436,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextArea
@@ -5465,7 +5466,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               iconEnd={null}
               size="jumbo"
             >
-              <TextArea
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -5586,7 +5587,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextArea>
+              </WithTheme(Themed(FauxControl))>
             </TextArea>
           </TextArea>
           <TextInput
@@ -5610,7 +5611,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
               }
               size="jumbo"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-17"
                 control={[Function]}
                 controlProps={
@@ -5706,7 +5707,7 @@ exports[`TextArea demo examples Snapshots: next-to-other-inputs 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -5915,7 +5916,7 @@ exports[`TextArea demo examples Snapshots: placeholder 1`] = `
     iconEnd={null}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -6035,7 +6036,7 @@ exports[`TextArea demo examples Snapshots: placeholder 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -6208,7 +6209,7 @@ exports[`TextArea demo examples Snapshots: read-only 1`] = `
     readOnly={true}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -6336,7 +6337,7 @@ exports[`TextArea demo examples Snapshots: read-only 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -6506,7 +6507,7 @@ exports[`TextArea demo examples Snapshots: required 1`] = `
     iconEnd={null}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -6624,7 +6625,7 @@ exports[`TextArea demo examples Snapshots: required 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -7017,7 +7018,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
           iconEnd={null}
           size="small"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -7137,7 +7138,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -7166,7 +7167,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
           iconEnd={null}
           size="medium"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -7286,7 +7287,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -7315,7 +7316,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
           iconEnd={null}
           size="large"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -7435,7 +7436,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -7464,7 +7465,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
           iconEnd={null}
           size="jumbo"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -7584,7 +7585,7 @@ exports[`TextArea demo examples Snapshots: rows 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
     </div>
@@ -7763,7 +7764,7 @@ exports[`TextArea demo examples Snapshots: rtl 1`] = `
           iconEnd={null}
           size="large"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -7883,7 +7884,7 @@ exports[`TextArea demo examples Snapshots: rtl 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
     </ThemeProvider>
@@ -8278,7 +8279,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
           iconEnd={null}
           size="small"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -8398,7 +8399,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -8426,7 +8427,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
           iconEnd={null}
           size="medium"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -8546,7 +8547,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -8574,7 +8575,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
           iconEnd={null}
           size="large"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -8694,7 +8695,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -8722,7 +8723,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
           iconEnd={null}
           size="jumbo"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -8842,7 +8843,7 @@ exports[`TextArea demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
     </div>
@@ -9016,7 +9017,7 @@ exports[`TextArea demo examples Snapshots: uncontrolled 1`] = `
     iconEnd={null}
     size="large"
   >
-    <TextArea
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -9136,7 +9137,7 @@ exports[`TextArea demo examples Snapshots: uncontrolled 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextArea>
+    </WithTheme(Themed(FauxControl))>
   </TextArea>
 </TextArea>
 `;
@@ -9574,7 +9575,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
           size="large"
           variant="success"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -9701,7 +9702,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -9731,7 +9732,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
           size="large"
           variant="warning"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -9858,7 +9859,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
       <TextArea
@@ -9888,7 +9889,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
           size="large"
           variant="danger"
         >
-          <TextArea
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -10015,7 +10016,7 @@ exports[`TextArea demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextArea>
+          </WithTheme(Themed(FauxControl))>
         </TextArea>
       </TextArea>
     </div>

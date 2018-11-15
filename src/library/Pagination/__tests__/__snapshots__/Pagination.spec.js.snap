@@ -694,7 +694,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
             showPageNumbers={true}
             visibleRange={5}
           >
-            <FlexItem
+            <Flex
               alignItems="stretch"
               aria-label="Pagination"
               className="emotion-46"
@@ -742,7 +742,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                     showPageNumbers={true}
                     visibleRange={5}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       aria-label="Pagination"
                       className="emotion-44"
@@ -780,7 +780,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                               grow={0}
                               shrink={1}
                             >
-                              <FlexItem
+                              <Box
                                 className="emotion-41"
                                 element="div"
                                 grow={0}
@@ -869,7 +869,7 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                                             totalPages={10}
                                             visibleRange={5}
                                           >
-                                            <FlexItem
+                                            <Box
                                               className="emotion-36"
                                               currentPage={1}
                                               element="div"
@@ -1508,23 +1508,23 @@ exports[`Pagination demo examples Snapshots: basic 1`] = `
                                                   </IncrementButton>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </FlexItem>
                                         </FlexItem>
                                       </Styled(FlexItem)>
                                     </Pages>
                                   </div>
                                 </Styled(div)>
-                              </FlexItem>
+                              </Box>
                             </FlexItem>
                           </FlexItem>
                         </nav>
                       </Styled(nav)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </FlexItem>
+            </Flex>
           </Styled(Flex)>
         </withProps(Styled(Flex))>
       </Pagination>
@@ -4000,7 +4000,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-97"
@@ -4052,7 +4052,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-95"
@@ -4099,7 +4099,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     marginEnd="0.5em"
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Flex
                                       alignItems="stretch"
                                       className="emotion-53"
                                       direction="row"
@@ -4144,7 +4144,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                             marginEnd="0.5em"
                                             shrink={1}
                                           >
-                                            <FlexItem
+                                            <Box
                                               alignItems="stretch"
                                               className="emotion-51"
                                               direction="row"
@@ -4183,7 +4183,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginEnd="1em"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -4237,7 +4237,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                   onPageSizeChange={[Function]}
                                                                   shrink={1}
                                                                 >
-                                                                  <FlexItem
+                                                                  <Box
                                                                     className="emotion-25"
                                                                     element="div"
                                                                     grow={0}
@@ -4380,7 +4380,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                     placement="bottom-start"
                                                                                     size="small"
                                                                                   >
-                                                                                    <Select
+                                                                                    <WithTheme(Themed(Dropdown))
                                                                                       aria-describedby="formField-64-caption"
                                                                                       className="emotion-17"
                                                                                       data={
@@ -4577,7 +4577,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                   tag="span"
                                                                                                   triggerRef={[Function]}
                                                                                                 >
-                                                                                                  <Popover
+                                                                                                  <Manager
                                                                                                     aria-describedby="formField-64-caption"
                                                                                                     className="emotion-15"
                                                                                                     id="select-65"
@@ -4615,7 +4615,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                         <PopoverTrigger
                                                                                                           component="span"
                                                                                                         >
-                                                                                                          <PopoverTrigger
+                                                                                                          <Target
                                                                                                             className="emotion-13"
                                                                                                             component="span"
                                                                                                           >
@@ -4680,7 +4680,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                   size="small"
                                                                                                                   tabIndex={0}
                                                                                                                 >
-                                                                                                                  <SelectTrigger
+                                                                                                                  <WithTheme(Themed(FauxControl))
                                                                                                                     afterItems={
                                                                                                                       Array [
                                                                                                                         <withProps(Styled(IconArrowDropdownDown)) />,
@@ -4908,28 +4908,29 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                         </ThemeProvider>
                                                                                                                       </ThemeProvider>
                                                                                                                     </Themed(FauxControl)>
-                                                                                                                  </SelectTrigger>
+                                                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                                                 </SelectTrigger>
                                                                                                               </SelectTrigger>
                                                                                                             </span>
-                                                                                                          </PopoverTrigger>
+                                                                                                          </Target>
                                                                                                         </PopoverTrigger>
                                                                                                       </PopoverTrigger>
                                                                                                     </span>
-                                                                                                  </Popover>
+                                                                                                  </Manager>
                                                                                                 </Popover>
                                                                                               </Popover>
                                                                                             </Dropdown>
                                                                                           </ThemeProvider>
                                                                                         </ThemeProvider>
                                                                                       </Themed(Dropdown)>
-                                                                                    </Select>
+                                                                                    </WithTheme(Themed(Dropdown))>
                                                                                   </Select>
                                                                                 </Select>
                                                                               </label>
                                                                               <Styled(div)
                                                                                 caption="1–2 of 14 rows"
                                                                                 id="formField-64-caption"
+                                                                                isGroup={false}
                                                                               >
                                                                                 <div
                                                                                   className="emotion-22"
@@ -4943,13 +4944,13 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                         </FormField>
                                                                       </div>
                                                                     </Styled(div)>
-                                                                  </FlexItem>
+                                                                  </Box>
                                                                 </FlexItem>
                                                               </FlexItem>
                                                             </PageSizer>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                   <FlexItem
@@ -4964,7 +4965,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginStart="auto"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -5023,7 +5024,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                     totalPages={7}
                                                                     width="4.65em"
                                                                   >
-                                                                    <FlexItem
+                                                                    <Box
                                                                       className="emotion-43"
                                                                       currentPage={1}
                                                                       element="div"
@@ -5120,7 +5121,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                         }
                                                                                         size="small"
                                                                                       >
-                                                                                        <TextInput
+                                                                                        <WithTheme(Themed(FauxControl))
                                                                                           className="emotion-34"
                                                                                           control={[Function]}
                                                                                           controlProps={
@@ -5242,7 +5243,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                               </ThemeProvider>
                                                                                             </ThemeProvider>
                                                                                           </Themed(FauxControl)>
-                                                                                        </TextInput>
+                                                                                        </WithTheme(Themed(FauxControl))>
                                                                                       </TextInput>
                                                                                     </TextInput>
                                                                                   </Styled(TextInput)>
@@ -5264,23 +5265,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                           </FormField>
                                                                         </div>
                                                                       </Styled(div)>
-                                                                    </FlexItem>
+                                                                    </Box>
                                                                   </FlexItem>
                                                                 </FlexItem>
                                                               </Styled(FlexItem)>
                                                             </PageJumper>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </Flex>
                                         </Component>
                                       </WithTheme(Component)>
-                                    </FlexItem>
+                                    </Flex>
                                   </FlexItem>
                                 </FlexItem>
                                 <FlexItem
@@ -5293,7 +5294,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-25"
                                       element="div"
                                       grow={0}
@@ -5386,7 +5387,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                   totalPages={7}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-87"
                                                     currentPage={1}
                                                     element="div"
@@ -5937,23 +5938,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -6039,7 +6040,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-97"
@@ -6091,7 +6092,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-95"
@@ -6138,7 +6139,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     marginEnd="0.5em"
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Flex
                                       alignItems="stretch"
                                       className="emotion-53"
                                       direction="row"
@@ -6183,7 +6184,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                             marginEnd="0.5em"
                                             shrink={1}
                                           >
-                                            <FlexItem
+                                            <Box
                                               alignItems="stretch"
                                               className="emotion-51"
                                               direction="row"
@@ -6222,7 +6223,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginEnd="1em"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -6276,7 +6277,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                   onPageSizeChange={[Function]}
                                                                   shrink={1}
                                                                 >
-                                                                  <FlexItem
+                                                                  <Box
                                                                     className="emotion-25"
                                                                     element="div"
                                                                     grow={0}
@@ -6419,7 +6420,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                     placement="bottom-start"
                                                                                     size="medium"
                                                                                   >
-                                                                                    <Select
+                                                                                    <WithTheme(Themed(Dropdown))
                                                                                       aria-describedby="formField-70-caption"
                                                                                       className="emotion-17"
                                                                                       data={
@@ -6616,7 +6617,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                   tag="span"
                                                                                                   triggerRef={[Function]}
                                                                                                 >
-                                                                                                  <Popover
+                                                                                                  <Manager
                                                                                                     aria-describedby="formField-70-caption"
                                                                                                     className="emotion-15"
                                                                                                     id="select-71"
@@ -6654,7 +6655,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                         <PopoverTrigger
                                                                                                           component="span"
                                                                                                         >
-                                                                                                          <PopoverTrigger
+                                                                                                          <Target
                                                                                                             className="emotion-13"
                                                                                                             component="span"
                                                                                                           >
@@ -6719,7 +6720,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                   size="medium"
                                                                                                                   tabIndex={0}
                                                                                                                 >
-                                                                                                                  <SelectTrigger
+                                                                                                                  <WithTheme(Themed(FauxControl))
                                                                                                                     afterItems={
                                                                                                                       Array [
                                                                                                                         <withProps(Styled(IconArrowDropdownDown)) />,
@@ -6947,28 +6948,29 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                         </ThemeProvider>
                                                                                                                       </ThemeProvider>
                                                                                                                     </Themed(FauxControl)>
-                                                                                                                  </SelectTrigger>
+                                                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                                                 </SelectTrigger>
                                                                                                               </SelectTrigger>
                                                                                                             </span>
-                                                                                                          </PopoverTrigger>
+                                                                                                          </Target>
                                                                                                         </PopoverTrigger>
                                                                                                       </PopoverTrigger>
                                                                                                     </span>
-                                                                                                  </Popover>
+                                                                                                  </Manager>
                                                                                                 </Popover>
                                                                                               </Popover>
                                                                                             </Dropdown>
                                                                                           </ThemeProvider>
                                                                                         </ThemeProvider>
                                                                                       </Themed(Dropdown)>
-                                                                                    </Select>
+                                                                                    </WithTheme(Themed(Dropdown))>
                                                                                   </Select>
                                                                                 </Select>
                                                                               </label>
                                                                               <Styled(div)
                                                                                 caption="1–2 of 14 rows"
                                                                                 id="formField-70-caption"
+                                                                                isGroup={false}
                                                                               >
                                                                                 <div
                                                                                   className="emotion-22"
@@ -6982,13 +6984,13 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                         </FormField>
                                                                       </div>
                                                                     </Styled(div)>
-                                                                  </FlexItem>
+                                                                  </Box>
                                                                 </FlexItem>
                                                               </FlexItem>
                                                             </PageSizer>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                   <FlexItem
@@ -7003,7 +7005,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginStart="auto"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -7062,7 +7064,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                     totalPages={7}
                                                                     width="4.65em"
                                                                   >
-                                                                    <FlexItem
+                                                                    <Box
                                                                       className="emotion-43"
                                                                       currentPage={1}
                                                                       element="div"
@@ -7159,7 +7161,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                         }
                                                                                         size="medium"
                                                                                       >
-                                                                                        <TextInput
+                                                                                        <WithTheme(Themed(FauxControl))
                                                                                           className="emotion-34"
                                                                                           control={[Function]}
                                                                                           controlProps={
@@ -7281,7 +7283,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                               </ThemeProvider>
                                                                                             </ThemeProvider>
                                                                                           </Themed(FauxControl)>
-                                                                                        </TextInput>
+                                                                                        </WithTheme(Themed(FauxControl))>
                                                                                       </TextInput>
                                                                                     </TextInput>
                                                                                   </Styled(TextInput)>
@@ -7303,23 +7305,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                           </FormField>
                                                                         </div>
                                                                       </Styled(div)>
-                                                                    </FlexItem>
+                                                                    </Box>
                                                                   </FlexItem>
                                                                 </FlexItem>
                                                               </Styled(FlexItem)>
                                                             </PageJumper>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </Flex>
                                         </Component>
                                       </WithTheme(Component)>
-                                    </FlexItem>
+                                    </Flex>
                                   </FlexItem>
                                 </FlexItem>
                                 <FlexItem
@@ -7332,7 +7334,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-25"
                                       element="div"
                                       grow={0}
@@ -7425,7 +7427,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                   totalPages={7}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-87"
                                                     currentPage={1}
                                                     element="div"
@@ -7976,23 +7978,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -8078,7 +8080,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-97"
@@ -8130,7 +8132,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-95"
@@ -8177,7 +8179,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     marginEnd="0.5em"
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Flex
                                       alignItems="stretch"
                                       className="emotion-53"
                                       direction="row"
@@ -8222,7 +8224,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                             marginEnd="0.5em"
                                             shrink={1}
                                           >
-                                            <FlexItem
+                                            <Box
                                               alignItems="stretch"
                                               className="emotion-51"
                                               direction="row"
@@ -8261,7 +8263,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginEnd="1em"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -8315,7 +8317,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                   onPageSizeChange={[Function]}
                                                                   shrink={1}
                                                                 >
-                                                                  <FlexItem
+                                                                  <Box
                                                                     className="emotion-25"
                                                                     element="div"
                                                                     grow={0}
@@ -8458,7 +8460,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                     placement="bottom-start"
                                                                                     size="large"
                                                                                   >
-                                                                                    <Select
+                                                                                    <WithTheme(Themed(Dropdown))
                                                                                       aria-describedby="formField-76-caption"
                                                                                       className="emotion-17"
                                                                                       data={
@@ -8655,7 +8657,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                   tag="span"
                                                                                                   triggerRef={[Function]}
                                                                                                 >
-                                                                                                  <Popover
+                                                                                                  <Manager
                                                                                                     aria-describedby="formField-76-caption"
                                                                                                     className="emotion-15"
                                                                                                     id="select-77"
@@ -8693,7 +8695,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                         <PopoverTrigger
                                                                                                           component="span"
                                                                                                         >
-                                                                                                          <PopoverTrigger
+                                                                                                          <Target
                                                                                                             className="emotion-13"
                                                                                                             component="span"
                                                                                                           >
@@ -8758,7 +8760,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                   size="large"
                                                                                                                   tabIndex={0}
                                                                                                                 >
-                                                                                                                  <SelectTrigger
+                                                                                                                  <WithTheme(Themed(FauxControl))
                                                                                                                     afterItems={
                                                                                                                       Array [
                                                                                                                         <withProps(Styled(IconArrowDropdownDown)) />,
@@ -8986,28 +8988,29 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                         </ThemeProvider>
                                                                                                                       </ThemeProvider>
                                                                                                                     </Themed(FauxControl)>
-                                                                                                                  </SelectTrigger>
+                                                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                                                 </SelectTrigger>
                                                                                                               </SelectTrigger>
                                                                                                             </span>
-                                                                                                          </PopoverTrigger>
+                                                                                                          </Target>
                                                                                                         </PopoverTrigger>
                                                                                                       </PopoverTrigger>
                                                                                                     </span>
-                                                                                                  </Popover>
+                                                                                                  </Manager>
                                                                                                 </Popover>
                                                                                               </Popover>
                                                                                             </Dropdown>
                                                                                           </ThemeProvider>
                                                                                         </ThemeProvider>
                                                                                       </Themed(Dropdown)>
-                                                                                    </Select>
+                                                                                    </WithTheme(Themed(Dropdown))>
                                                                                   </Select>
                                                                                 </Select>
                                                                               </label>
                                                                               <Styled(div)
                                                                                 caption="1–2 of 14 rows"
                                                                                 id="formField-76-caption"
+                                                                                isGroup={false}
                                                                               >
                                                                                 <div
                                                                                   className="emotion-22"
@@ -9021,13 +9024,13 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                         </FormField>
                                                                       </div>
                                                                     </Styled(div)>
-                                                                  </FlexItem>
+                                                                  </Box>
                                                                 </FlexItem>
                                                               </FlexItem>
                                                             </PageSizer>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                   <FlexItem
@@ -9042,7 +9045,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginStart="auto"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -9101,7 +9104,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                     totalPages={7}
                                                                     width="4.65em"
                                                                   >
-                                                                    <FlexItem
+                                                                    <Box
                                                                       className="emotion-43"
                                                                       currentPage={1}
                                                                       element="div"
@@ -9198,7 +9201,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                         }
                                                                                         size="large"
                                                                                       >
-                                                                                        <TextInput
+                                                                                        <WithTheme(Themed(FauxControl))
                                                                                           className="emotion-34"
                                                                                           control={[Function]}
                                                                                           controlProps={
@@ -9320,7 +9323,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                               </ThemeProvider>
                                                                                             </ThemeProvider>
                                                                                           </Themed(FauxControl)>
-                                                                                        </TextInput>
+                                                                                        </WithTheme(Themed(FauxControl))>
                                                                                       </TextInput>
                                                                                     </TextInput>
                                                                                   </Styled(TextInput)>
@@ -9342,23 +9345,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                           </FormField>
                                                                         </div>
                                                                       </Styled(div)>
-                                                                    </FlexItem>
+                                                                    </Box>
                                                                   </FlexItem>
                                                                 </FlexItem>
                                                               </Styled(FlexItem)>
                                                             </PageJumper>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </Flex>
                                         </Component>
                                       </WithTheme(Component)>
-                                    </FlexItem>
+                                    </Flex>
                                   </FlexItem>
                                 </FlexItem>
                                 <FlexItem
@@ -9371,7 +9374,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-25"
                                       element="div"
                                       grow={0}
@@ -9464,7 +9467,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                   totalPages={7}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-87"
                                                     currentPage={1}
                                                     element="div"
@@ -10015,23 +10018,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -10117,7 +10120,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-97"
@@ -10169,7 +10172,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-95"
@@ -10216,7 +10219,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     marginEnd="0.5em"
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Flex
                                       alignItems="stretch"
                                       className="emotion-53"
                                       direction="row"
@@ -10261,7 +10264,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                             marginEnd="0.5em"
                                             shrink={1}
                                           >
-                                            <FlexItem
+                                            <Box
                                               alignItems="stretch"
                                               className="emotion-51"
                                               direction="row"
@@ -10300,7 +10303,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginEnd="1em"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -10354,7 +10357,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                   onPageSizeChange={[Function]}
                                                                   shrink={1}
                                                                 >
-                                                                  <FlexItem
+                                                                  <Box
                                                                     className="emotion-25"
                                                                     element="div"
                                                                     grow={0}
@@ -10497,7 +10500,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                     placement="bottom-start"
                                                                                     size="jumbo"
                                                                                   >
-                                                                                    <Select
+                                                                                    <WithTheme(Themed(Dropdown))
                                                                                       aria-describedby="formField-82-caption"
                                                                                       className="emotion-17"
                                                                                       data={
@@ -10694,7 +10697,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                   tag="span"
                                                                                                   triggerRef={[Function]}
                                                                                                 >
-                                                                                                  <Popover
+                                                                                                  <Manager
                                                                                                     aria-describedby="formField-82-caption"
                                                                                                     className="emotion-15"
                                                                                                     id="select-83"
@@ -10732,7 +10735,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                         <PopoverTrigger
                                                                                                           component="span"
                                                                                                         >
-                                                                                                          <PopoverTrigger
+                                                                                                          <Target
                                                                                                             className="emotion-13"
                                                                                                             component="span"
                                                                                                           >
@@ -10797,7 +10800,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                   size="jumbo"
                                                                                                                   tabIndex={0}
                                                                                                                 >
-                                                                                                                  <SelectTrigger
+                                                                                                                  <WithTheme(Themed(FauxControl))
                                                                                                                     afterItems={
                                                                                                                       Array [
                                                                                                                         <withProps(Styled(IconArrowDropdownDown)) />,
@@ -11025,28 +11028,29 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                                                         </ThemeProvider>
                                                                                                                       </ThemeProvider>
                                                                                                                     </Themed(FauxControl)>
-                                                                                                                  </SelectTrigger>
+                                                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                                                 </SelectTrigger>
                                                                                                               </SelectTrigger>
                                                                                                             </span>
-                                                                                                          </PopoverTrigger>
+                                                                                                          </Target>
                                                                                                         </PopoverTrigger>
                                                                                                       </PopoverTrigger>
                                                                                                     </span>
-                                                                                                  </Popover>
+                                                                                                  </Manager>
                                                                                                 </Popover>
                                                                                               </Popover>
                                                                                             </Dropdown>
                                                                                           </ThemeProvider>
                                                                                         </ThemeProvider>
                                                                                       </Themed(Dropdown)>
-                                                                                    </Select>
+                                                                                    </WithTheme(Themed(Dropdown))>
                                                                                   </Select>
                                                                                 </Select>
                                                                               </label>
                                                                               <Styled(div)
                                                                                 caption="1–2 of 14 rows"
                                                                                 id="formField-82-caption"
+                                                                                isGroup={false}
                                                                               >
                                                                                 <div
                                                                                   className="emotion-22"
@@ -11060,13 +11064,13 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                         </FormField>
                                                                       </div>
                                                                     </Styled(div)>
-                                                                  </FlexItem>
+                                                                  </Box>
                                                                 </FlexItem>
                                                               </FlexItem>
                                                             </PageSizer>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                   <FlexItem
@@ -11081,7 +11085,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                       marginStart="auto"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-25"
                                                         element="div"
                                                         grow={0}
@@ -11140,7 +11144,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                     totalPages={7}
                                                                     width="4.65em"
                                                                   >
-                                                                    <FlexItem
+                                                                    <Box
                                                                       className="emotion-43"
                                                                       currentPage={1}
                                                                       element="div"
@@ -11237,7 +11241,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                         }
                                                                                         size="jumbo"
                                                                                       >
-                                                                                        <TextInput
+                                                                                        <WithTheme(Themed(FauxControl))
                                                                                           className="emotion-34"
                                                                                           control={[Function]}
                                                                                           controlProps={
@@ -11359,7 +11363,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                                               </ThemeProvider>
                                                                                             </ThemeProvider>
                                                                                           </Themed(FauxControl)>
-                                                                                        </TextInput>
+                                                                                        </WithTheme(Themed(FauxControl))>
                                                                                       </TextInput>
                                                                                     </TextInput>
                                                                                   </Styled(TextInput)>
@@ -11381,23 +11385,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                                           </FormField>
                                                                         </div>
                                                                       </Styled(div)>
-                                                                    </FlexItem>
+                                                                    </Box>
                                                                   </FlexItem>
                                                                 </FlexItem>
                                                               </Styled(FlexItem)>
                                                             </PageJumper>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </Flex>
                                         </Component>
                                       </WithTheme(Component)>
-                                    </FlexItem>
+                                    </Flex>
                                   </FlexItem>
                                 </FlexItem>
                                 <FlexItem
@@ -11410,7 +11414,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-25"
                                       element="div"
                                       grow={0}
@@ -11503,7 +11507,7 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                   totalPages={7}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-87"
                                                     currentPage={1}
                                                     element="div"
@@ -12054,23 +12058,23 @@ exports[`Pagination demo examples Snapshots: kitchen-sink 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -13134,7 +13138,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
             showPageNumbers={true}
             visibleRange={5}
           >
-            <FlexItem
+            <Flex
               alignItems="stretch"
               aria-label="Pagination"
               className="emotion-73"
@@ -13182,7 +13186,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                     showPageNumbers={true}
                     visibleRange={5}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       aria-label="Pagination"
                       className="emotion-71"
@@ -13227,7 +13231,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                               marginEnd="0.5em"
                               shrink={1}
                             >
-                              <FlexItem
+                              <Flex
                                 alignItems="stretch"
                                 className="emotion-23"
                                 direction="row"
@@ -13272,7 +13276,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                       marginEnd="0.5em"
                                       shrink={1}
                                     >
-                                      <FlexItem
+                                      <Box
                                         alignItems="stretch"
                                         className="emotion-21"
                                         direction="row"
@@ -13311,7 +13315,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                 marginStart="auto"
                                                 shrink={1}
                                               >
-                                                <FlexItem
+                                                <Box
                                                   className="emotion-18"
                                                   element="div"
                                                   grow={0}
@@ -13370,7 +13374,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                               totalPages={10}
                                                               width="4.65em"
                                                             >
-                                                              <FlexItem
+                                                              <Box
                                                                 className="emotion-13"
                                                                 currentPage={1}
                                                                 element="div"
@@ -13467,7 +13471,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                                                   }
                                                                                   size="medium"
                                                                                 >
-                                                                                  <TextInput
+                                                                                  <WithTheme(Themed(FauxControl))
                                                                                     className="emotion-4"
                                                                                     control={[Function]}
                                                                                     controlProps={
@@ -13589,7 +13593,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                                                         </ThemeProvider>
                                                                                       </ThemeProvider>
                                                                                     </Themed(FauxControl)>
-                                                                                  </TextInput>
+                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                 </TextInput>
                                                                               </TextInput>
                                                                             </Styled(TextInput)>
@@ -13611,23 +13615,23 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                                     </FormField>
                                                                   </div>
                                                                 </Styled(div)>
-                                                              </FlexItem>
+                                                              </Box>
                                                             </FlexItem>
                                                           </FlexItem>
                                                         </Styled(FlexItem)>
                                                       </PageJumper>
                                                     </div>
                                                   </Styled(div)>
-                                                </FlexItem>
+                                                </Box>
                                               </FlexItem>
                                             </FlexItem>
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </Flex>
                                   </Component>
                                 </WithTheme(Component)>
-                              </FlexItem>
+                              </Flex>
                             </FlexItem>
                           </FlexItem>
                           <FlexItem
@@ -13640,7 +13644,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                               grow={0}
                               shrink={1}
                             >
-                              <FlexItem
+                              <Box
                                 className="emotion-18"
                                 element="div"
                                 grow={0}
@@ -13729,7 +13733,7 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                             totalPages={10}
                                             visibleRange={5}
                                           >
-                                            <FlexItem
+                                            <Box
                                               className="emotion-63"
                                               currentPage={1}
                                               element="div"
@@ -14368,23 +14372,23 @@ exports[`Pagination demo examples Snapshots: page-jumper 1`] = `
                                                   </IncrementButton>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </FlexItem>
                                         </FlexItem>
                                       </Styled(FlexItem)>
                                     </Pages>
                                   </div>
                                 </Styled(div)>
-                              </FlexItem>
+                              </Box>
                             </FlexItem>
                           </FlexItem>
                         </nav>
                       </Styled(nav)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </FlexItem>
+            </Flex>
           </Styled(Flex)>
         </withProps(Styled(Flex))>
       </Pagination>
@@ -15797,7 +15801,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                             <tr
                                               className="emotion-27"
                                             >
-                                              <TableSortableHeaderCell
+                                              <TableHeaderCell
                                                 element="th"
                                                 key="name"
                                                 label="Mineral"
@@ -15848,7 +15852,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                     }
                                                     textAlign="start"
                                                   >
-                                                    <TableHeaderCell
+                                                    <WithTheme(Themed(TableCell))
                                                       aria-label="Mineral"
                                                       className="emotion-3"
                                                       element="th"
@@ -15886,11 +15890,11 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(TableCell)>
-                                                    </TableHeaderCell>
+                                                    </WithTheme(Themed(TableCell))>
                                                   </TableHeaderCell>
                                                 </withProps(TableHeaderCell)>
-                                              </TableSortableHeaderCell>
-                                              <TableSortableHeaderCell
+                                              </TableHeaderCell>
+                                              <TableHeaderCell
                                                 element="th"
                                                 key="color"
                                                 label="Color"
@@ -15941,7 +15945,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                     }
                                                     textAlign="start"
                                                   >
-                                                    <TableHeaderCell
+                                                    <WithTheme(Themed(TableCell))
                                                       aria-label="Color"
                                                       className="emotion-3"
                                                       element="th"
@@ -15979,11 +15983,11 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(TableCell)>
-                                                    </TableHeaderCell>
+                                                    </WithTheme(Themed(TableCell))>
                                                   </TableHeaderCell>
                                                 </withProps(TableHeaderCell)>
-                                              </TableSortableHeaderCell>
-                                              <TableSortableHeaderCell
+                                              </TableHeaderCell>
+                                              <TableHeaderCell
                                                 element="th"
                                                 key="luster"
                                                 label="Luster"
@@ -16034,7 +16038,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                     }
                                                     textAlign="start"
                                                   >
-                                                    <TableHeaderCell
+                                                    <WithTheme(Themed(TableCell))
                                                       aria-label="Luster"
                                                       className="emotion-3"
                                                       element="th"
@@ -16072,11 +16076,11 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(TableCell)>
-                                                    </TableHeaderCell>
+                                                    </WithTheme(Themed(TableCell))>
                                                   </TableHeaderCell>
                                                 </withProps(TableHeaderCell)>
-                                              </TableSortableHeaderCell>
-                                              <TableSortableHeaderCell
+                                              </TableHeaderCell>
+                                              <TableHeaderCell
                                                 element="th"
                                                 key="crystalSystem"
                                                 label="Crystal System"
@@ -16127,7 +16131,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                     }
                                                     textAlign="start"
                                                   >
-                                                    <TableHeaderCell
+                                                    <WithTheme(Themed(TableCell))
                                                       aria-label="Crystal System"
                                                       className="emotion-3"
                                                       element="th"
@@ -16165,11 +16169,11 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(TableCell)>
-                                                    </TableHeaderCell>
+                                                    </WithTheme(Themed(TableCell))>
                                                   </TableHeaderCell>
                                                 </withProps(TableHeaderCell)>
-                                              </TableSortableHeaderCell>
-                                              <TableSortableHeaderCell
+                                              </TableHeaderCell>
+                                              <TableHeaderCell
                                                 element="th"
                                                 key="crystalHabit"
                                                 label="Crystal Habit"
@@ -16220,7 +16224,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                     }
                                                     textAlign="start"
                                                   >
-                                                    <TableHeaderCell
+                                                    <WithTheme(Themed(TableCell))
                                                       aria-label="Crystal Habit"
                                                       className="emotion-3"
                                                       element="th"
@@ -16258,10 +16262,10 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                           </ThemeProvider>
                                                         </ThemeProvider>
                                                       </Themed(TableCell)>
-                                                    </TableHeaderCell>
+                                                    </WithTheme(Themed(TableCell))>
                                                   </TableHeaderCell>
                                                 </withProps(TableHeaderCell)>
-                                              </TableSortableHeaderCell>
+                                              </TableHeaderCell>
                                             </tr>
                                           </TableRow>
                                         </TableRow>
@@ -16699,7 +16703,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-121"
@@ -16751,7 +16755,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-119"
@@ -16798,7 +16802,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                     marginEnd="0.5em"
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Flex
                                       alignItems="stretch"
                                       className="emotion-77"
                                       direction="row"
@@ -16843,7 +16847,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                             marginEnd="0.5em"
                                             shrink={1}
                                           >
-                                            <FlexItem
+                                            <Box
                                               alignItems="stretch"
                                               className="emotion-75"
                                               direction="row"
@@ -16882,7 +16886,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                       marginEnd="1em"
                                                       shrink={1}
                                                     >
-                                                      <FlexItem
+                                                      <Box
                                                         className="emotion-69"
                                                         element="div"
                                                         grow={0}
@@ -16936,7 +16940,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                   onPageSizeChange={[Function]}
                                                                   shrink={1}
                                                                 >
-                                                                  <FlexItem
+                                                                  <Box
                                                                     className="emotion-69"
                                                                     element="div"
                                                                     grow={0}
@@ -17079,7 +17083,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                                     placement="bottom-start"
                                                                                     size="medium"
                                                                                   >
-                                                                                    <Select
+                                                                                    <WithTheme(Themed(Dropdown))
                                                                                       aria-describedby="formField-39-caption"
                                                                                       className="emotion-61"
                                                                                       data={
@@ -17276,7 +17280,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                                                   tag="span"
                                                                                                   triggerRef={[Function]}
                                                                                                 >
-                                                                                                  <Popover
+                                                                                                  <Manager
                                                                                                     aria-describedby="formField-39-caption"
                                                                                                     className="emotion-59"
                                                                                                     id="select-40"
@@ -17314,7 +17318,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                                                         <PopoverTrigger
                                                                                                           component="span"
                                                                                                         >
-                                                                                                          <PopoverTrigger
+                                                                                                          <Target
                                                                                                             className="emotion-57"
                                                                                                             component="span"
                                                                                                           >
@@ -17379,7 +17383,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                                                                   size="medium"
                                                                                                                   tabIndex={0}
                                                                                                                 >
-                                                                                                                  <SelectTrigger
+                                                                                                                  <WithTheme(Themed(FauxControl))
                                                                                                                     afterItems={
                                                                                                                       Array [
                                                                                                                         <withProps(Styled(IconArrowDropdownDown)) />,
@@ -17607,28 +17611,29 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                                                                         </ThemeProvider>
                                                                                                                       </ThemeProvider>
                                                                                                                     </Themed(FauxControl)>
-                                                                                                                  </SelectTrigger>
+                                                                                                                  </WithTheme(Themed(FauxControl))>
                                                                                                                 </SelectTrigger>
                                                                                                               </SelectTrigger>
                                                                                                             </span>
-                                                                                                          </PopoverTrigger>
+                                                                                                          </Target>
                                                                                                         </PopoverTrigger>
                                                                                                       </PopoverTrigger>
                                                                                                     </span>
-                                                                                                  </Popover>
+                                                                                                  </Manager>
                                                                                                 </Popover>
                                                                                               </Popover>
                                                                                             </Dropdown>
                                                                                           </ThemeProvider>
                                                                                         </ThemeProvider>
                                                                                       </Themed(Dropdown)>
-                                                                                    </Select>
+                                                                                    </WithTheme(Themed(Dropdown))>
                                                                                   </Select>
                                                                                 </Select>
                                                                               </label>
                                                                               <Styled(div)
                                                                                 caption="1–2 of 14 minerals"
                                                                                 id="formField-39-caption"
+                                                                                isGroup={false}
                                                                               >
                                                                                 <div
                                                                                   className="emotion-66"
@@ -17642,22 +17647,22 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                                         </FormField>
                                                                       </div>
                                                                     </Styled(div)>
-                                                                  </FlexItem>
+                                                                  </Box>
                                                                 </FlexItem>
                                                               </FlexItem>
                                                             </PageSizer>
                                                           </div>
                                                         </Styled(div)>
-                                                      </FlexItem>
+                                                      </Box>
                                                     </FlexItem>
                                                   </FlexItem>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </Flex>
                                         </Component>
                                       </WithTheme(Component)>
-                                    </FlexItem>
+                                    </Flex>
                                   </FlexItem>
                                 </FlexItem>
                                 <FlexItem
@@ -17670,7 +17675,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-69"
                                       element="div"
                                       grow={0}
@@ -17763,7 +17768,7 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                   totalPages={7}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-111"
                                                     currentPage={1}
                                                     element="div"
@@ -18314,23 +18319,23 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -18818,7 +18823,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
             showPageNumbers={false}
             visibleRange={5}
           >
-            <FlexItem
+            <Flex
               alignItems="stretch"
               aria-label="Pagination"
               className="emotion-19"
@@ -18866,7 +18871,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                     showPageNumbers={false}
                     visibleRange={5}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       aria-label="Pagination"
                       className="emotion-17"
@@ -18904,7 +18909,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                               grow={0}
                               shrink={1}
                             >
-                              <FlexItem
+                              <Box
                                 className="emotion-14"
                                 element="div"
                                 grow={0}
@@ -18993,7 +18998,7 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                                             totalPages={10}
                                             visibleRange={5}
                                           >
-                                            <FlexItem
+                                            <Box
                                               className="emotion-9"
                                               currentPage={1}
                                               element="div"
@@ -19240,23 +19245,23 @@ exports[`Pagination demo examples Snapshots: previous-next 1`] = `
                                                   </IncrementButton>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </FlexItem>
                                         </FlexItem>
                                       </Styled(FlexItem)>
                                     </Pages>
                                   </div>
                                 </Styled(div)>
-                              </FlexItem>
+                              </Box>
                             </FlexItem>
                           </FlexItem>
                         </nav>
                       </Styled(nav)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </FlexItem>
+            </Flex>
           </Styled(Flex)>
         </withProps(Styled(Flex))>
       </Pagination>
@@ -20951,7 +20956,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                   <tr
                                                     className="emotion-27"
                                                   >
-                                                    <TableSortableHeaderCell
+                                                    <TableHeaderCell
                                                       element="th"
                                                       key="اسم"
                                                       label="معدني"
@@ -21002,7 +21007,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                           }
                                                           textAlign="start"
                                                         >
-                                                          <TableHeaderCell
+                                                          <WithTheme(Themed(TableCell))
                                                             aria-label="معدني"
                                                             className="emotion-3"
                                                             element="th"
@@ -21040,11 +21045,11 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                 </ThemeProvider>
                                                               </ThemeProvider>
                                                             </Themed(TableCell)>
-                                                          </TableHeaderCell>
+                                                          </WithTheme(Themed(TableCell))>
                                                         </TableHeaderCell>
                                                       </withProps(TableHeaderCell)>
-                                                    </TableSortableHeaderCell>
-                                                    <TableSortableHeaderCell
+                                                    </TableHeaderCell>
+                                                    <TableHeaderCell
                                                       element="th"
                                                       key="اللون"
                                                       label="اللون"
@@ -21095,7 +21100,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                           }
                                                           textAlign="start"
                                                         >
-                                                          <TableHeaderCell
+                                                          <WithTheme(Themed(TableCell))
                                                             aria-label="اللون"
                                                             className="emotion-3"
                                                             element="th"
@@ -21133,11 +21138,11 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                 </ThemeProvider>
                                                               </ThemeProvider>
                                                             </Themed(TableCell)>
-                                                          </TableHeaderCell>
+                                                          </WithTheme(Themed(TableCell))>
                                                         </TableHeaderCell>
                                                       </withProps(TableHeaderCell)>
-                                                    </TableSortableHeaderCell>
-                                                    <TableSortableHeaderCell
+                                                    </TableHeaderCell>
+                                                    <TableHeaderCell
                                                       element="th"
                                                       key="بريق"
                                                       label="بريق"
@@ -21188,7 +21193,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                           }
                                                           textAlign="start"
                                                         >
-                                                          <TableHeaderCell
+                                                          <WithTheme(Themed(TableCell))
                                                             aria-label="بريق"
                                                             className="emotion-3"
                                                             element="th"
@@ -21226,11 +21231,11 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                 </ThemeProvider>
                                                               </ThemeProvider>
                                                             </Themed(TableCell)>
-                                                          </TableHeaderCell>
+                                                          </WithTheme(Themed(TableCell))>
                                                         </TableHeaderCell>
                                                       </withProps(TableHeaderCell)>
-                                                    </TableSortableHeaderCell>
-                                                    <TableSortableHeaderCell
+                                                    </TableHeaderCell>
+                                                    <TableHeaderCell
                                                       element="th"
                                                       key="النظام"
                                                       label="نظام الكريستال"
@@ -21281,7 +21286,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                           }
                                                           textAlign="start"
                                                         >
-                                                          <TableHeaderCell
+                                                          <WithTheme(Themed(TableCell))
                                                             aria-label="نظام الكريستال"
                                                             className="emotion-3"
                                                             element="th"
@@ -21319,11 +21324,11 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                 </ThemeProvider>
                                                               </ThemeProvider>
                                                             </Themed(TableCell)>
-                                                          </TableHeaderCell>
+                                                          </WithTheme(Themed(TableCell))>
                                                         </TableHeaderCell>
                                                       </withProps(TableHeaderCell)>
-                                                    </TableSortableHeaderCell>
-                                                    <TableSortableHeaderCell
+                                                    </TableHeaderCell>
+                                                    <TableHeaderCell
                                                       element="th"
                                                       key="عادة"
                                                       label="الكريستال العادة"
@@ -21374,7 +21379,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                           }
                                                           textAlign="start"
                                                         >
-                                                          <TableHeaderCell
+                                                          <WithTheme(Themed(TableCell))
                                                             aria-label="الكريستال العادة"
                                                             className="emotion-3"
                                                             element="th"
@@ -21412,10 +21417,10 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                 </ThemeProvider>
                                                               </ThemeProvider>
                                                             </Themed(TableCell)>
-                                                          </TableHeaderCell>
+                                                          </WithTheme(Themed(TableCell))>
                                                         </TableHeaderCell>
                                                       </withProps(TableHeaderCell)>
-                                                    </TableSortableHeaderCell>
+                                                    </TableHeaderCell>
                                                   </tr>
                                                 </TableRow>
                                               </TableRow>
@@ -22056,7 +22061,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                         showPageNumbers={true}
                         visibleRange={5}
                       >
-                        <FlexItem
+                        <Flex
                           alignItems="stretch"
                           aria-label="ترقيم الصفحات"
                           className="emotion-141"
@@ -22112,7 +22117,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                 showPageNumbers={true}
                                 visibleRange={5}
                               >
-                                <FlexItem
+                                <Box
                                   alignItems="stretch"
                                   aria-label="ترقيم الصفحات"
                                   className="emotion-139"
@@ -22161,7 +22166,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                           marginEnd="0.5em"
                                           shrink={1}
                                         >
-                                          <FlexItem
+                                          <Flex
                                             alignItems="stretch"
                                             className="emotion-103"
                                             direction="row"
@@ -22206,7 +22211,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                   marginEnd="0.5em"
                                                   shrink={1}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     alignItems="stretch"
                                                     className="emotion-101"
                                                     direction="row"
@@ -22245,7 +22250,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                             marginEnd="1em"
                                                             shrink={1}
                                                           >
-                                                            <FlexItem
+                                                            <Box
                                                               className="emotion-75"
                                                               element="div"
                                                               grow={0}
@@ -22299,7 +22304,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                         onPageSizeChange={[Function]}
                                                                         shrink={1}
                                                                       >
-                                                                        <FlexItem
+                                                                        <Box
                                                                           className="emotion-75"
                                                                           element="div"
                                                                           grow={0}
@@ -22442,7 +22447,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                           placement="bottom-start"
                                                                                           size="medium"
                                                                                         >
-                                                                                          <Select
+                                                                                          <WithTheme(Themed(Dropdown))
                                                                                             aria-describedby="formField-51-caption"
                                                                                             className="emotion-67"
                                                                                             data={
@@ -22639,7 +22644,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                                         tag="span"
                                                                                                         triggerRef={[Function]}
                                                                                                       >
-                                                                                                        <Popover
+                                                                                                        <Manager
                                                                                                           aria-describedby="formField-51-caption"
                                                                                                           className="emotion-65"
                                                                                                           id="select-52"
@@ -22677,7 +22682,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                                               <PopoverTrigger
                                                                                                                 component="span"
                                                                                                               >
-                                                                                                                <PopoverTrigger
+                                                                                                                <Target
                                                                                                                   className="emotion-63"
                                                                                                                   component="span"
                                                                                                                 >
@@ -22742,7 +22747,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                                                         size="medium"
                                                                                                                         tabIndex={0}
                                                                                                                       >
-                                                                                                                        <SelectTrigger
+                                                                                                                        <WithTheme(Themed(FauxControl))
                                                                                                                           afterItems={
                                                                                                                             Array [
                                                                                                                               <withProps(Styled(IconArrowDropdownDown)) />,
@@ -22970,28 +22975,29 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                                                               </ThemeProvider>
                                                                                                                             </ThemeProvider>
                                                                                                                           </Themed(FauxControl)>
-                                                                                                                        </SelectTrigger>
+                                                                                                                        </WithTheme(Themed(FauxControl))>
                                                                                                                       </SelectTrigger>
                                                                                                                     </SelectTrigger>
                                                                                                                   </span>
-                                                                                                                </PopoverTrigger>
+                                                                                                                </Target>
                                                                                                               </PopoverTrigger>
                                                                                                             </PopoverTrigger>
                                                                                                           </span>
-                                                                                                        </Popover>
+                                                                                                        </Manager>
                                                                                                       </Popover>
                                                                                                     </Popover>
                                                                                                   </Dropdown>
                                                                                                 </ThemeProvider>
                                                                                               </ThemeProvider>
                                                                                             </Themed(Dropdown)>
-                                                                                          </Select>
+                                                                                          </WithTheme(Themed(Dropdown))>
                                                                                         </Select>
                                                                                       </Select>
                                                                                     </label>
                                                                                     <Styled(div)
                                                                                       caption="1–3 من 14 المعادن"
                                                                                       id="formField-51-caption"
+                                                                                      isGroup={false}
                                                                                     >
                                                                                       <div
                                                                                         className="emotion-72"
@@ -23005,13 +23011,13 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                               </FormField>
                                                                             </div>
                                                                           </Styled(div)>
-                                                                        </FlexItem>
+                                                                        </Box>
                                                                       </FlexItem>
                                                                     </FlexItem>
                                                                   </PageSizer>
                                                                 </div>
                                                               </Styled(div)>
-                                                            </FlexItem>
+                                                            </Box>
                                                           </FlexItem>
                                                         </FlexItem>
                                                         <FlexItem
@@ -23026,7 +23032,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                             marginStart="auto"
                                                             shrink={1}
                                                           >
-                                                            <FlexItem
+                                                            <Box
                                                               className="emotion-75"
                                                               element="div"
                                                               grow={0}
@@ -23085,7 +23091,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                           totalPages={5}
                                                                           width="4.65em"
                                                                         >
-                                                                          <FlexItem
+                                                                          <Box
                                                                             className="emotion-93"
                                                                             currentPage={1}
                                                                             element="div"
@@ -23182,7 +23188,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                               }
                                                                                               size="medium"
                                                                                             >
-                                                                                              <TextInput
+                                                                                              <WithTheme(Themed(FauxControl))
                                                                                                 className="emotion-84"
                                                                                                 control={[Function]}
                                                                                                 controlProps={
@@ -23304,7 +23310,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                                     </ThemeProvider>
                                                                                                   </ThemeProvider>
                                                                                                 </Themed(FauxControl)>
-                                                                                              </TextInput>
+                                                                                              </WithTheme(Themed(FauxControl))>
                                                                                             </TextInput>
                                                                                           </TextInput>
                                                                                         </Styled(TextInput)>
@@ -23326,23 +23332,23 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                                                 </FormField>
                                                                               </div>
                                                                             </Styled(div)>
-                                                                          </FlexItem>
+                                                                          </Box>
                                                                         </FlexItem>
                                                                       </FlexItem>
                                                                     </Styled(FlexItem)>
                                                                   </PageJumper>
                                                                 </div>
                                                               </Styled(div)>
-                                                            </FlexItem>
+                                                            </Box>
                                                           </FlexItem>
                                                         </FlexItem>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </Flex>
                                               </Component>
                                             </WithTheme(Component)>
-                                          </FlexItem>
+                                          </Flex>
                                         </FlexItem>
                                       </FlexItem>
                                       <FlexItem
@@ -23355,7 +23361,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                           grow={0}
                                           shrink={1}
                                         >
-                                          <FlexItem
+                                          <Box
                                             className="emotion-75"
                                             element="div"
                                             grow={0}
@@ -23452,7 +23458,7 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                         totalPages={5}
                                                         visibleRange={5}
                                                       >
-                                                        <FlexItem
+                                                        <Box
                                                           className="emotion-131"
                                                           currentPage={1}
                                                           element="div"
@@ -23929,23 +23935,23 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                               </IncrementButton>
                                                             </div>
                                                           </Styled(div)>
-                                                        </FlexItem>
+                                                        </Box>
                                                       </FlexItem>
                                                     </FlexItem>
                                                   </Styled(FlexItem)>
                                                 </Pages>
                                               </div>
                                             </Styled(div)>
-                                          </FlexItem>
+                                          </Box>
                                         </FlexItem>
                                       </FlexItem>
                                     </nav>
                                   </Styled(nav)>
-                                </FlexItem>
+                                </Box>
                               </Flex>
                             </Component>
                           </WithTheme(Component)>
-                        </FlexItem>
+                        </Flex>
                       </Styled(Flex)>
                     </withProps(Styled(Flex))>
                   </Pagination>
@@ -25385,7 +25391,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-46"
@@ -25433,7 +25439,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-44"
@@ -25471,7 +25477,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-41"
                                       element="div"
                                       grow={0}
@@ -25560,7 +25566,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                   totalPages={10}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-36"
                                                     currentPage={1}
                                                     element="div"
@@ -26199,23 +26205,23 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -26286,7 +26292,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-46"
@@ -26334,7 +26340,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-44"
@@ -26372,7 +26378,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-41"
                                       element="div"
                                       grow={0}
@@ -26461,7 +26467,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                   totalPages={10}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-36"
                                                     currentPage={1}
                                                     element="div"
@@ -27100,23 +27106,23 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -27187,7 +27193,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-46"
@@ -27235,7 +27241,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-44"
@@ -27273,7 +27279,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-41"
                                       element="div"
                                       grow={0}
@@ -27362,7 +27368,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                   totalPages={10}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-36"
                                                     currentPage={1}
                                                     element="div"
@@ -28001,23 +28007,23 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -28088,7 +28094,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                   showPageNumbers={true}
                   visibleRange={5}
                 >
-                  <FlexItem
+                  <Flex
                     alignItems="stretch"
                     aria-label="Pagination"
                     className="emotion-46"
@@ -28136,7 +28142,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                           showPageNumbers={true}
                           visibleRange={5}
                         >
-                          <FlexItem
+                          <Box
                             alignItems="stretch"
                             aria-label="Pagination"
                             className="emotion-44"
@@ -28174,7 +28180,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                     grow={0}
                                     shrink={1}
                                   >
-                                    <FlexItem
+                                    <Box
                                       className="emotion-41"
                                       element="div"
                                       grow={0}
@@ -28263,7 +28269,7 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                   totalPages={10}
                                                   visibleRange={5}
                                                 >
-                                                  <FlexItem
+                                                  <Box
                                                     className="emotion-36"
                                                     currentPage={1}
                                                     element="div"
@@ -28902,23 +28908,23 @@ exports[`Pagination demo examples Snapshots: sizes 1`] = `
                                                         </IncrementButton>
                                                       </div>
                                                     </Styled(div)>
-                                                  </FlexItem>
+                                                  </Box>
                                                 </FlexItem>
                                               </FlexItem>
                                             </Styled(FlexItem)>
                                           </Pages>
                                         </div>
                                       </Styled(div)>
-                                    </FlexItem>
+                                    </Box>
                                   </FlexItem>
                                 </FlexItem>
                               </nav>
                             </Styled(nav)>
-                          </FlexItem>
+                          </Box>
                         </Flex>
                       </Component>
                     </WithTheme(Component)>
-                  </FlexItem>
+                  </Flex>
                 </Styled(Flex)>
               </withProps(Styled(Flex))>
             </Pagination>
@@ -29487,7 +29493,7 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
             showPageNumbers={true}
             visibleRange={3}
           >
-            <FlexItem
+            <Flex
               alignItems="stretch"
               aria-label="Pagination"
               className="emotion-40"
@@ -29535,7 +29541,7 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                     showPageNumbers={true}
                     visibleRange={3}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       aria-label="Pagination"
                       className="emotion-38"
@@ -29573,7 +29579,7 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                               grow={0}
                               shrink={1}
                             >
-                              <FlexItem
+                              <Box
                                 className="emotion-35"
                                 element="div"
                                 grow={0}
@@ -29662,7 +29668,7 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                                             totalPages={10}
                                             visibleRange={3}
                                           >
-                                            <FlexItem
+                                            <Box
                                               className="emotion-30"
                                               currentPage={5}
                                               element="div"
@@ -30233,23 +30239,23 @@ exports[`Pagination demo examples Snapshots: visible-range 1`] = `
                                                   </IncrementButton>
                                                 </div>
                                               </Styled(div)>
-                                            </FlexItem>
+                                            </Box>
                                           </FlexItem>
                                         </FlexItem>
                                       </Styled(FlexItem)>
                                     </Pages>
                                   </div>
                                 </Styled(div)>
-                              </FlexItem>
+                              </Box>
                             </FlexItem>
                           </FlexItem>
                         </nav>
                       </Styled(nav)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </FlexItem>
+            </Flex>
           </Styled(Flex)>
         </withProps(Styled(Flex))>
       </Pagination>

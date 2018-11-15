@@ -389,7 +389,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   }
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-4"
                     control={[Function]}
                     controlProps={
@@ -483,7 +483,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -537,7 +537,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                   iconEnd={null}
                   size="large"
                 >
-                  <TextArea
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-13"
                     control={[Function]}
                     controlProps={
@@ -655,7 +655,7 @@ exports[`FormField demo examples Snapshots: basic 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextArea>
+                  </WithTheme(Themed(FauxControl))>
                 </TextArea>
               </TextArea>
             </label>
@@ -927,7 +927,7 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
             }
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -1023,13 +1023,14 @@ exports[`FormField demo examples Snapshots: caption 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
       </label>
       <Styled(div)
         caption="This is help text"
         id="formField-11-caption"
+        isGroup={false}
       >
         <div
           className="emotion-8"
@@ -1343,7 +1344,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   }
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-4"
                     control={[Function]}
                     controlProps={
@@ -1443,7 +1444,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -1499,7 +1500,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                   }
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-4"
                     control={[Function]}
                     controlProps={
@@ -1599,7 +1600,7 @@ exports[`FormField demo examples Snapshots: hide-label 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -1889,7 +1890,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   }
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-5"
                     control={[Function]}
                     controlProps={
@@ -1987,7 +1988,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -2047,7 +2048,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                   }
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-5"
                     control={[Function]}
                     controlProps={
@@ -2145,7 +2146,7 @@ exports[`FormField demo examples Snapshots: required 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -2445,7 +2446,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                   iconStart={<IconBackspace />}
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-6"
                     control={[Function]}
                     controlProps={
@@ -2585,7 +2586,7 @@ exports[`FormField demo examples Snapshots: rtl 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
@@ -2865,7 +2866,7 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
             }
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-5"
               control={[Function]}
               controlProps={
@@ -2959,7 +2960,7 @@ exports[`FormField demo examples Snapshots: secondaryText 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
       </label>
@@ -3377,7 +3378,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                       }
                       size="large"
                     >
-                      <TextInput
+                      <WithTheme(Themed(FauxControl))
                         className="emotion-5"
                         control={[Function]}
                         controlProps={
@@ -3489,7 +3490,7 @@ exports[`FormField demo examples Snapshots: validation 1`] = `
                             </ThemeProvider>
                           </ThemeProvider>
                         </Themed(FauxControl)>
-                      </TextInput>
+                      </WithTheme(Themed(FauxControl))>
                     </TextInput>
                   </TextInput>
                 </label>
@@ -4168,7 +4169,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="success"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-5"
                     control={[Function]}
                     controlProps={
@@ -4303,13 +4304,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
             <Styled(div)
               caption="This is help text"
               id="formField-13-caption"
+              isGroup={false}
               variant="success"
             >
               <div
@@ -4371,7 +4373,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="warning"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-16"
                     control={[Function]}
                     controlProps={
@@ -4506,13 +4508,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
             <Styled(div)
               caption="This is help text"
               id="formField-15-caption"
+              isGroup={false}
               variant="warning"
             >
               <div
@@ -4574,7 +4577,7 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                   size="large"
                   variant="danger"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-27"
                     control={[Function]}
                     controlProps={
@@ -4709,13 +4712,14 @@ exports[`FormField demo examples Snapshots: variants 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
             <Styled(div)
               caption="This is help text"
               id="formField-17-caption"
+              isGroup={false}
               variant="danger"
             >
               <div

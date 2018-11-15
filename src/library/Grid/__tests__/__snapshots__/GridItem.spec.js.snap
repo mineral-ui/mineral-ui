@@ -312,7 +312,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -349,7 +349,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -398,7 +398,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -415,7 +415,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -439,9 +439,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             A
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -468,7 +468,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -483,7 +483,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -505,20 +505,20 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             B
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -549,7 +549,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -586,7 +586,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -635,7 +635,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -652,7 +652,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -676,9 +676,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             A
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -709,7 +709,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -726,7 +726,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -750,9 +750,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             B
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -779,7 +779,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -794,7 +794,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -816,20 +816,20 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             C
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -860,7 +860,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -897,7 +897,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -946,7 +946,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -963,7 +963,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -987,9 +987,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             A
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1020,7 +1020,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1037,7 +1037,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1061,9 +1061,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             B
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1094,7 +1094,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1111,7 +1111,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1135,9 +1135,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             C
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1164,7 +1164,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1179,7 +1179,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1201,20 +1201,20 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             D
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -1245,7 +1245,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -1282,7 +1282,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -1331,7 +1331,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1348,7 +1348,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1372,9 +1372,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             1
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1405,7 +1405,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1422,7 +1422,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1446,9 +1446,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             2
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1479,7 +1479,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1496,7 +1496,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1520,9 +1520,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             3
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1553,7 +1553,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1570,7 +1570,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1594,9 +1594,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             4
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1627,7 +1627,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1644,7 +1644,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1668,9 +1668,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             5
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1701,7 +1701,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1718,7 +1718,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1742,9 +1742,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             6
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1775,7 +1775,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1792,7 +1792,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1816,9 +1816,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             7
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1849,7 +1849,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1866,7 +1866,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1890,9 +1890,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             8
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1923,7 +1923,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -1940,7 +1940,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -1964,9 +1964,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             9
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -1997,7 +1997,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2014,7 +2014,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2038,9 +2038,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             10
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2071,7 +2071,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2088,7 +2088,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2112,9 +2112,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             11
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2141,7 +2141,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2156,7 +2156,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2178,20 +2178,20 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             12
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -2223,7 +2223,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -2260,7 +2260,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -2309,7 +2309,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2326,7 +2326,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2350,9 +2350,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             A
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2383,7 +2383,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2400,7 +2400,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2424,9 +2424,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             B
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2457,7 +2457,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2474,7 +2474,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2498,9 +2498,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             C
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2531,7 +2531,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2548,7 +2548,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2572,9 +2572,9 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             D
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -2601,7 +2601,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -2616,7 +2616,7 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -2638,20 +2638,20 @@ exports[`GridItem demo examples Snapshots: basic 1`] = `
                                             E
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -3146,7 +3146,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
         justifyContent="start"
         wrap={true}
       >
-        <Grid
+        <Flex
           alignItems="stretch"
           className="emotion-27"
           columns={12}
@@ -3183,7 +3183,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                 justifyContent="start"
                 wrap={true}
               >
-                <FlexItem
+                <Box
                   alignItems="stretch"
                   className="emotion-25"
                   columns={12}
@@ -3232,7 +3232,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                               marginEnd="1em"
                               shrink={0}
                             >
-                              <GridItem
+                              <FlexItem
                                 className="emotion-3"
                                 columns={12}
                                 grow={0}
@@ -3249,7 +3249,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <FlexItem
+                                  <Box
                                     className="emotion-1"
                                     columns={12}
                                     element="div"
@@ -3273,9 +3273,9 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                         A
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
@@ -3310,7 +3310,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                               padding="lg"
                               shrink={0}
                             >
-                              <GridItem
+                              <FlexItem
                                 className="emotion-11"
                                 columns={12}
                                 grow={0}
@@ -3329,7 +3329,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                   padding="lg"
                                   shrink={0}
                                 >
-                                  <FlexItem
+                                  <Box
                                     className="emotion-9"
                                     columns={12}
                                     element="div"
@@ -3355,9 +3355,9 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                         B
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
@@ -3384,7 +3384,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                               gutterWidth="md"
                               shrink={0}
                             >
-                              <GridItem
+                              <FlexItem
                                 className="emotion-3"
                                 columns={12}
                                 grow={0}
@@ -3399,7 +3399,7 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <FlexItem
+                                  <Box
                                     className="emotion-1"
                                     columns={12}
                                     element="div"
@@ -3421,20 +3421,20 @@ exports[`GridItem demo examples Snapshots: box-props 1`] = `
                                         C
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
                       </Styled(GridItem)>
                     </div>
                   </Styled(div)>
-                </FlexItem>
+                </Box>
               </Flex>
             </Component>
           </WithTheme(Component)>
-        </Grid>
+        </Flex>
       </Grid>
     </withProps(Grid)>
   </Grid>
@@ -4078,7 +4078,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
         justifyContent="start"
         wrap={true}
       >
-        <Grid
+        <Flex
           alignItems="stretch"
           breakpoints={
             Array [
@@ -4135,7 +4135,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                 justifyContent="start"
                 wrap={true}
               >
-                <FlexItem
+                <Box
                   alignItems="stretch"
                   breakpoints={
                     Array [
@@ -4238,7 +4238,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                 ]
                               }
                             >
-                              <GridItem
+                              <FlexItem
                                 breakpoints={
                                   Array [
                                     800,
@@ -4277,7 +4277,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                     ]
                                   }
                                 >
-                                  <FlexItem
+                                  <Box
                                     breakpoints={
                                       Array [
                                         800,
@@ -4323,9 +4323,9 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                         A
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
@@ -4400,7 +4400,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                 ]
                               }
                             >
-                              <GridItem
+                              <FlexItem
                                 breakpoints={
                                   Array [
                                     800,
@@ -4439,7 +4439,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                     ]
                                   }
                                 >
-                                  <FlexItem
+                                  <Box
                                     breakpoints={
                                       Array [
                                         800,
@@ -4485,9 +4485,9 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                         B
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
@@ -4558,7 +4558,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                 ]
                               }
                             >
-                              <GridItem
+                              <FlexItem
                                 breakpoints={
                                   Array [
                                     800,
@@ -4595,7 +4595,7 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                     ]
                                   }
                                 >
-                                  <FlexItem
+                                  <Box
                                     breakpoints={
                                       Array [
                                         800,
@@ -4639,20 +4639,20 @@ exports[`GridItem demo examples Snapshots: responsive 1`] = `
                                         C
                                       </div>
                                     </Styled(div)>
-                                  </FlexItem>
+                                  </Box>
                                 </FlexItem>
-                              </GridItem>
+                              </FlexItem>
                             </GridItem>
                           </withProps(GridItem)>
                         </GridItem>
                       </Styled(GridItem)>
                     </div>
                   </Styled(div)>
-                </FlexItem>
+                </Box>
               </Flex>
             </Component>
           </WithTheme(Component)>
-        </Grid>
+        </Flex>
       </Grid>
     </withProps(Grid)>
   </Grid>
@@ -6253,7 +6253,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -6290,7 +6290,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -6343,7 +6343,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={1}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-3"
                                     columns={12}
                                     grow={0}
@@ -6362,7 +6362,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={1}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-1"
                                         columns={12}
                                         element="div"
@@ -6388,9 +6388,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             1
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -6421,7 +6421,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={11}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-11"
                                     columns={12}
                                     grow={0}
@@ -6438,7 +6438,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={11}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-9"
                                         columns={12}
                                         element="div"
@@ -6462,20 +6462,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             11
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -6506,7 +6506,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -6543,7 +6543,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -6596,7 +6596,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={2}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-29"
                                     columns={12}
                                     grow={0}
@@ -6615,7 +6615,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={2}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-27"
                                         columns={12}
                                         element="div"
@@ -6641,9 +6641,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             2
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -6674,7 +6674,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={10}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-37"
                                     columns={12}
                                     grow={0}
@@ -6691,7 +6691,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={10}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-35"
                                         columns={12}
                                         element="div"
@@ -6715,20 +6715,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             10
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -6759,7 +6759,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -6796,7 +6796,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -6849,7 +6849,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={3}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-55"
                                     columns={12}
                                     grow={0}
@@ -6868,7 +6868,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={3}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-53"
                                         columns={12}
                                         element="div"
@@ -6894,9 +6894,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             3
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -6927,7 +6927,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={9}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-63"
                                     columns={12}
                                     grow={0}
@@ -6944,7 +6944,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={9}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-61"
                                         columns={12}
                                         element="div"
@@ -6968,20 +6968,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             9
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -7012,7 +7012,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -7049,7 +7049,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -7102,7 +7102,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={4}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-81"
                                     columns={12}
                                     grow={0}
@@ -7121,7 +7121,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={4}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-79"
                                         columns={12}
                                         element="div"
@@ -7147,9 +7147,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             4
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -7180,7 +7180,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={8}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-89"
                                     columns={12}
                                     grow={0}
@@ -7197,7 +7197,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={8}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-87"
                                         columns={12}
                                         element="div"
@@ -7221,20 +7221,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             8
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -7265,7 +7265,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -7302,7 +7302,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -7355,7 +7355,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={5}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-107"
                                     columns={12}
                                     grow={0}
@@ -7374,7 +7374,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={5}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-105"
                                         columns={12}
                                         element="div"
@@ -7400,9 +7400,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             5
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -7433,7 +7433,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={7}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-115"
                                     columns={12}
                                     grow={0}
@@ -7450,7 +7450,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={7}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-113"
                                         columns={12}
                                         element="div"
@@ -7474,20 +7474,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             7
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -7518,7 +7518,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -7555,7 +7555,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -7604,7 +7604,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -7621,7 +7621,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -7645,9 +7645,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -7678,7 +7678,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -7695,7 +7695,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -7719,9 +7719,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -7756,7 +7756,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={6}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-149"
                                     columns={12}
                                     grow={0}
@@ -7775,7 +7775,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={6}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-147"
                                         columns={12}
                                         element="div"
@@ -7801,9 +7801,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             6
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -7830,7 +7830,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -7845,7 +7845,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -7867,20 +7867,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
@@ -7912,7 +7912,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
             justifyContent="start"
             wrap={true}
           >
-            <Grid
+            <Flex
               alignItems="stretch"
               className="emotion-19"
               columns={12}
@@ -7949,7 +7949,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                     justifyContent="start"
                     wrap={true}
                   >
-                    <FlexItem
+                    <Box
                       alignItems="stretch"
                       className="emotion-17"
                       columns={12}
@@ -7998,7 +7998,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -8015,7 +8015,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -8039,9 +8039,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -8072,7 +8072,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   marginEnd="1em"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -8089,7 +8089,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       marginEnd="1em"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -8113,9 +8113,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -8150,7 +8150,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   shrink={0}
                                   span={4}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-81"
                                     columns={12}
                                     grow={0}
@@ -8169,7 +8169,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       shrink={0}
                                       span={4}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-79"
                                         columns={12}
                                         element="div"
@@ -8195,9 +8195,9 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             4
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
@@ -8224,7 +8224,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                   gutterWidth="md"
                                   shrink={0}
                                 >
-                                  <GridItem
+                                  <FlexItem
                                     className="emotion-133"
                                     columns={12}
                                     grow={0}
@@ -8239,7 +8239,7 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                       gutterWidth="md"
                                       shrink={0}
                                     >
-                                      <FlexItem
+                                      <Box
                                         className="emotion-131"
                                         columns={12}
                                         element="div"
@@ -8261,20 +8261,20 @@ exports[`GridItem demo examples Snapshots: span 1`] = `
                                             Auto
                                           </div>
                                         </Styled(div)>
-                                      </FlexItem>
+                                      </Box>
                                     </FlexItem>
-                                  </GridItem>
+                                  </FlexItem>
                                 </GridItem>
                               </withProps(GridItem)>
                             </GridItem>
                           </Styled(GridItem)>
                         </div>
                       </Styled(div)>
-                    </FlexItem>
+                    </Box>
                   </Flex>
                 </Component>
               </WithTheme(Component)>
-            </Grid>
+            </Flex>
           </Grid>
         </withProps(Grid)>
       </Grid>
