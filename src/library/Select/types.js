@@ -1,7 +1,7 @@
 /* @flow */
 import { PLACEMENT, SIZE, VARIANT } from './constants';
 
-import type { MenuItemType, MenuItems, MenuItemGroups } from '../Menu/types';
+import type { MenuItemType, MenuItems } from '../Menu/types';
 import type {
   ComponentTheme,
   ComponentThemeFn,
@@ -13,7 +13,7 @@ type Size = $Keys<typeof SIZE>;
 type Variant = $Keys<typeof VARIANT>;
 
 export type SelectProps = {
-  data: MenuItems | MenuItemGroups,
+  data: MenuItems,
   defaultHighlightedIndex?: number,
   defaultIsOpen?: boolean,
   defaultSelectedItem?: MenuItemType,

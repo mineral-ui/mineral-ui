@@ -8,7 +8,7 @@ import {
   oneOfType,
   string
 } from 'prop-types';
-import { menuItemsPropType, menuItemGroupsPropType } from '../Menu/propTypes';
+import { menuItemsPropType } from '../Menu/propTypes';
 import { VARIANT } from './constants';
 
 const variant = oneOf(Object.keys(VARIANT));
@@ -57,6 +57,6 @@ export const cardTitlePropTypes = {
 };
 
 export const cardTitleMenuPropTypes = {
-  data: oneOfType([menuItemsPropType, menuItemGroupsPropType]).isRequired,
+  data: menuItemsPropType.isRequired,
   triggerTitle: string
 };

@@ -1,11 +1,6 @@
 /* @flow */
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
-import {
-  menuDividerTheme,
-  menuGroupTheme,
-  menuGroupTitleTheme,
-  menuItemTheme
-} from './themes';
+import { menuDividerTheme, menuGroupTheme, menuItemTheme } from './themes';
 
 export const MenuRoot = createStyledComponent(
   'div',
@@ -32,32 +27,11 @@ export const MenuDividerRoot = createStyledComponent(
   }
 );
 
-export const MenuGroupRoot = createStyledComponent(
-  'div',
-  (props) => {
-    const theme = menuGroupTheme(props.theme);
-
-    return {
-      margin: `${theme.MenuGroup_margin} 0`,
-      '&:first-child,& + &': {
-        marginTop: 0
-      },
-
-      '&:last-child': {
-        marginBottom: 0
-      }
-    };
-  },
-  {
-    displayName: 'MenuGroup'
-  }
-);
-
-export const MenuGroupTitleRoot = createStyledComponent(
+export const MenuGroupTitle = createStyledComponent(
   'h3',
   (props) => {
     const theme = {
-      ...menuGroupTitleTheme(props.theme),
+      ...menuGroupTheme(props.theme),
       ...menuItemTheme(props.theme)
     };
 
@@ -77,11 +51,20 @@ export const MenuGroupTitleRoot = createStyledComponent(
       theme.MenuGroupTitle_fontSize
     );
 
+    const marginTop = getNormalizedValue(
+      theme.MenuGroupTitle_marginTop,
+      theme.MenuGroupTitle_fontSize
+    );
+
     return {
       fontSize: theme.MenuGroupTitle_fontSize,
       fontWeight: theme.MenuGroupTitle_fontWeight,
       margin: 0,
-      padding: `${paddingTop} ${paddingHorizontal} ${paddingBottom}`
+      padding: `${paddingTop} ${paddingHorizontal} ${paddingBottom}`,
+
+      '&:not(:first-child)': {
+        marginTop
+      }
     };
   },
   {

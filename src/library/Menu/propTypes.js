@@ -7,7 +7,6 @@ import {
   node,
   number,
   oneOf,
-  oneOfType,
   shape,
   string
 } from 'prop-types';
@@ -24,22 +23,16 @@ export const menuItemPropType = shape({
   render: func,
   secondaryText: node,
   text: node,
+  title: node,
   value: string,
   variant
 });
 
 export const menuItemsPropType = arrayOf(menuItemPropType);
 
-export const menuGroupPropType = shape({
-  items: menuItemPropType.isRequired,
-  title: node
-});
-
-export const menuItemGroupsPropType = arrayOf(menuGroupPropType);
-
 export const menuPropTypes = {
   children: node,
-  data: oneOfType([menuItemsPropType, menuItemGroupsPropType]),
+  data: menuItemsPropType,
   highlightedIndex: number,
   item: func,
   itemKey: string
@@ -51,8 +44,6 @@ export const menuGroupPropTypes = {
   children: node,
   title: node
 };
-
-export const menuGroupTitlePropTypes = {};
 
 export const menuItemPropTypes = {
   children: node,

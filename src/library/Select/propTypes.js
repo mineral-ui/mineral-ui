@@ -9,11 +9,11 @@ import {
   oneOfType,
   string
 } from 'prop-types';
-import { menuItemsPropType, menuItemGroupsPropType } from '../Menu/propTypes';
+import { menuItemsPropType } from '../Menu/propTypes';
 import { PLACEMENT, SIZE, VARIANT } from './constants';
 
 export const selectPropTypes = {
-  data: oneOfType([menuItemsPropType, menuItemGroupsPropType]).isRequired,
+  data: menuItemsPropType.isRequired,
   defaultHighlightedIndex: number,
   defaultIsOpen: bool,
   defaultSelectedItem: object,

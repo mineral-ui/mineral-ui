@@ -1,7 +1,7 @@
 /* @flow */
 import { PLACEMENT } from './constants';
 
-import type { MenuItems, MenuItemGroups } from '../Menu/types';
+import type { MenuItems } from '../Menu/types';
 import type {
   ComponentTheme,
   ComponentThemeFn,
@@ -12,7 +12,7 @@ type Placement = $Keys<typeof PLACEMENT>;
 
 export type DropdownProps = {
   children: React$Node | DropdownRenderFn,
-  data: MenuItems | MenuItemGroups,
+  data: MenuItems,
   defaultHighlightedIndex?: number,
   defaultIsOpen?: boolean,
   disabled?: boolean,

@@ -2,7 +2,6 @@
 import type {
   MenuDividerThemeFn,
   MenuGroupThemeFn,
-  MenuGroupTitleThemeFn,
   MenuItemThemeFn
 } from './types';
 
@@ -14,16 +13,11 @@ export const menuDividerTheme: MenuDividerThemeFn = (baseTheme) => ({
   ...baseTheme
 });
 
-export const menuGroupTheme: MenuGroupThemeFn = (baseTheme) => ({
-  MenuGroup_margin: baseTheme.space_stack_sm,
-
-  ...baseTheme
-});
-
 // [1] Deviation from h5 for optics relative to a MenuItem
-export const menuGroupTitleTheme: MenuGroupTitleThemeFn = (baseTheme) => ({
+export const menuGroupTheme: MenuGroupThemeFn = (baseTheme) => ({
   MenuGroupTitle_fontSize: baseTheme.fontSize_mouse, // [1]
   MenuGroupTitle_fontWeight: baseTheme.h5_fontWeight,
+  MenuGroupTitle_marginTop: baseTheme.space_stack_sm,
   MenuGroupTitle_paddingTop: baseTheme.space_stack_md,
   MenuGroupTitle_paddingBottom: baseTheme.space_stack_sm,
 
