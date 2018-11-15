@@ -1,7 +1,7 @@
 /* @flow */
 import { VARIANT } from './constants';
 
-import type { MenuItems, MenuItemGroups } from '../Menu/types';
+import type { MenuItems } from '../Menu/types';
 import type {
   ComponentTheme,
   ComponentThemeFn,
@@ -62,7 +62,7 @@ export type CardTitleProps = {
 };
 
 export type CardTitleMenuProps = {
-  data: MenuItems | MenuItemGroups,
+  data: MenuItems,
   triggerTitle?: string
 };
 

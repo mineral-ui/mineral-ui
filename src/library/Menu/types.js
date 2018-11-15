@@ -12,16 +12,16 @@ export type MenuItemType = {
   iconStart?: React$Element<*>,
   disabled?: boolean,
   divider?: boolean,
+  group?: boolean,
   onClick?: (event: SyntheticEvent<>) => void,
   render?: MenuRenderFn,
   secondaryText?: React$Node,
   text?: React$Node,
+  title?: React$Node,
   value?: string,
   variant?: $Keys<typeof VARIANT>
 };
 export type MenuItems = Array<MenuItemType>;
-export type MenuItemGroup = { items: MenuItems, title?: React$Node };
-export type MenuItemGroups = Array<MenuItemGroup>;
 
 export type MenuPropGetter = (props?: Object) => Object;
 
@@ -33,7 +33,7 @@ type MenuRenderProps = {
 
 export type MenuProps = {
   children?: React$Node,
-  data?: MenuItems | MenuItemGroups,
+  data?: MenuItems,
   highlightedIndex?: number,
   item?: MenuRenderFn,
   itemKey?: string
@@ -45,8 +45,6 @@ export type MenuGroupProps = {
   children?: React$Node,
   title?: React$Node
 };
-
-export type MenuGroupTitleProps = Object;
 
 export type MenuItemProps = {
   children?: React$Node,
@@ -81,14 +79,9 @@ type MenuDividerThemeKeys = {|
 export type MenuGroupThemeFn = ComponentThemeFn<MenuGroupTheme>;
 export type MenuGroupTheme = ComponentTheme<MenuGroupThemeKeys>;
 type MenuGroupThemeKeys = {|
-  MenuGroup_margin: ThemeValue
-|};
-
-export type MenuGroupTitleThemeFn = ComponentThemeFn<MenuGroupTitleTheme>;
-export type MenuGroupTitleTheme = ComponentTheme<MenuGroupTitleThemeKeys>;
-type MenuGroupTitleThemeKeys = {|
   MenuGroupTitle_fontSize: ThemeValue,
   MenuGroupTitle_fontWeight: ThemeValue,
+  MenuGroupTitle_marginTop: ThemeValue,
   MenuGroupTitle_paddingTop: ThemeValue,
   MenuGroupTitle_paddingBottom: ThemeValue
 |};

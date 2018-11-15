@@ -1,19 +1,16 @@
 /* @flow */
 import React from 'react';
-import { MenuGroupRoot as Root } from './styled';
-import MenuGroupTitle from './MenuGroupTitle';
+import { MenuGroupTitle } from './styled';
 
 import { menuGroupPropTypes } from './propTypes';
 import type { MenuGroupProps } from './types';
 
 const MenuGroup = (props: MenuGroupProps) => {
-  const { children, title, ...restProps } = props;
-  return (
-    <Root {...restProps}>
-      {title && <MenuGroupTitle>{title}</MenuGroupTitle>}
-      {children}
-    </Root>
-  );
+  const { children, title } = props;
+  return [
+    title && <MenuGroupTitle key="MenuGroup">{title}</MenuGroupTitle>,
+    children
+  ];
 };
 
 MenuGroup.displayName = 'MenuGroup';

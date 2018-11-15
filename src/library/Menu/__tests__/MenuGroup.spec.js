@@ -29,7 +29,7 @@ describe('MenuGroup', () => {
 
   describe('theme overrides', () => {
     testThemeOverrides(
-      <MenuGroup />,
+      <MenuGroup title="test" />,
       getProcessedComponentThemeKeys(menuGroupTheme)
     );
   });
