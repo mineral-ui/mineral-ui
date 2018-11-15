@@ -39,10 +39,6 @@ const createStyledComponent: CreateStyledComponent = (
     return componentStyles;
   };
 
-  if (displayName && typeof element !== 'string') {
-    element.displayName = displayName;
-  }
-
   const styledComponent = styled(element, {
     ...(process.env.NODE_ENV !== 'production' && displayName
       ? { label: displayName }
