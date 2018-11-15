@@ -1,3 +1,13 @@
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/mineral-ui/mineral-ui/compare/v0.50.0...v0.51.0) (2018-11-15)
+
+
+### Bug Fixes
+
+* **styles:** Fix component displayNames when using createStyledComponent   ([bc7f01b](https://github.com/mineral-ui/mineral-ui/commit/bc7f01b))
+
+
+
 <a name="0.50.0"></a>
 # [0.50.0](https://github.com/mineral-ui/mineral-ui/compare/v0.49.0...v0.50.0) (2018-11-14)
 
