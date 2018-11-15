@@ -26,6 +26,7 @@ const DialogHeader = (props: DialogHeaderProps) => {
   );
 };
 
+DialogHeader.displayName = 'DialogHeader';
 DialogHeader.propTypes = dialogHeaderPropTypes;
 
 export default DialogHeader;

@@ -8,6 +8,8 @@ import {
 import type { TabPanelProps } from './types';
 
 export default class TabPanel extends Component<TabPanelProps> {
+  static displayName = 'TabPanel';
+
   render() {
     const { children, tabId, ...restProps } = this.props;
     const rootProps = {

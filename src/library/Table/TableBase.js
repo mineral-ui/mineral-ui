@@ -23,6 +23,8 @@ export default class TableBase extends Component<
   TableBaseProps,
   TableBaseState
 > {
+  static displayName = 'TableBase';
+
   static defaultProps: TableBaseDefaultProps = {
     density: DENSITY.compact,
     scrollable: true,

@@ -11,6 +11,8 @@ import { ARROW_SIZE } from './constants';
 import type { PopoverContentProps } from './types';
 
 export default class PopoverContent extends Component<PopoverContentProps> {
+  static displayName = 'PopoverContent';
+
   render() {
     const {
       children,

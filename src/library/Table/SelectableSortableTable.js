@@ -14,4 +14,6 @@ const SelectableSortableTable = (props: SelectableSortableTableProps) => {
   );
 };
 
+SelectableSortableTable.displayName = 'SelectableSortableTable';
+
 export default SelectableSortableTable;

@@ -33,6 +33,7 @@ const DialogActions = (props: DialogActionsProps) => {
   return <Root {...rootProps}>{actions}</Root>;
 };
 
+DialogActions.displayName = 'DialogActions';
 DialogActions.propTypes = dialogActionsPropTypes;
 
 export default DialogActions;

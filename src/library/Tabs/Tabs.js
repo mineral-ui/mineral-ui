@@ -12,6 +12,8 @@ import { tabsPropTypes } from './propTypes';
 import type { TabsDefaultProps, TabsProps, TabsState } from './types';
 
 export class Tabs extends Component<TabsProps, TabsState> {
+  static displayName = 'Tabs';
+
   static defaultProps: TabsDefaultProps = {
     align: ALIGN.start,
     maxTabWidth: '8.5em',

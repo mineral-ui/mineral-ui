@@ -15,6 +15,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
   );
 };
 
+ThemeProvider.displayName = 'ThemeProvider';
 ThemeProvider.defaultProps = {
   theme: mineralTheme
 };

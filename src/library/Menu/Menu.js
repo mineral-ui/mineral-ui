@@ -34,6 +34,8 @@ export const getItems = (data: MenuItems | MenuItemGroups) => {
 };
 
 export default class Menu extends PureComponent<MenuProps> {
+  static displayName = 'Menu';
+
   static propTypes = menuPropTypes;
 
   render() {

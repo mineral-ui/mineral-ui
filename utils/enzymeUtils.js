@@ -6,6 +6,7 @@ import type { ReactWrapper } from 'enzyme';
 import ThemeProvider from '../src/library/themes/ThemeProvider';
 
 export const mountInWrapper = (component: React$Element<*>) => {
+  // eslint-disable-next-line react/display-name
   class Wrapper extends React.Component<*, *> {
     render() {
       return (

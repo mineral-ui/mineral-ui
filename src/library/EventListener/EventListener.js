@@ -5,6 +5,8 @@ import { canUseDOM, canUseEventListeners } from 'exenv';
 import type { EventListenerProps, Listeners, Listener } from './types';
 
 export default class EventListener extends Component<EventListenerProps> {
+  static displayName = 'EventListener';
+
   componentDidMount() {
     this.addEventListeners();
   }

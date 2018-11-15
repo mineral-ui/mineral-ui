@@ -159,13 +159,13 @@ const ThemedRoot = withTheme(
 
 const Flex = (props: FlexProps) => <ThemedRoot {...props} />;
 
+Flex.displayName = 'Flex';
 const defaultProps: FlexDefaultProps = {
   alignItems: ALIGN_ITEMS.stretch,
   direction: DIRECTION.row,
   gutterWidth: GUTTER_WIDTH.md,
   justifyContent: JUSTIFY_CONTENT.start
 };
-
 Flex.defaultProps = defaultProps;
 Flex.propTypes = flexPropTypes;
 

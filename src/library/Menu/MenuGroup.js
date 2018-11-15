@@ -16,6 +16,7 @@ const MenuGroup = (props: MenuGroupProps) => {
   );
 };
 
+MenuGroup.displayName = 'MenuGroup';
 MenuGroup.propTypes = menuGroupPropTypes;
 
 export default MenuGroup;

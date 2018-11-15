@@ -6,6 +6,8 @@ import { ChoiceRoot as Root, Control, Input, Text } from './styled';
 import type { ChoiceDefaultProps, ChoiceProps } from './types';
 
 export default class Choice extends PureComponent<ChoiceProps> {
+  static displayName = 'Choice';
+
   static defaultProps: ChoiceDefaultProps = {
     labelPosition: LABEL_POSITION.end,
     size: SIZE.large

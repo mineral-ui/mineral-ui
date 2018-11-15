@@ -16,7 +16,7 @@ import type { ButtonGroupProps, ButtonGroupState } from './types';
 // production, as long as it is set statically on each component
 // https://github.com/facebook/react/issues/4915#issuecomment-335803765
 const isButtonComponent = (element: React$Element<*>) => {
-  return /Button/.test(element.type.displayName);
+  return element.type && /Button/.test(element.type.displayName);
 };
 
 const isItemAtIndexChecked = (

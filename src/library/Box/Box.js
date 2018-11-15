@@ -7,6 +7,8 @@ import { boxPropTypes } from './propTypes';
 import type { BoxDefaultProps, BoxProps } from './types';
 
 export default class Box extends Component<BoxProps> {
+  static displayName = 'Box';
+
   static defaultProps: BoxDefaultProps = {
     element: 'div'
   };

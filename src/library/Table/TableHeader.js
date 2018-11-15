@@ -6,6 +6,8 @@ import { TableHeaderRoot as Root } from './styled';
 import type { TableHeaderProps } from './types';
 
 export default class TableHeader extends PureComponent<TableHeaderProps> {
+  static displayName = 'TableHeader';
+
   render() {
     return (
       <TableContext.Consumer>

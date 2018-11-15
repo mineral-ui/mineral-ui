@@ -43,6 +43,8 @@ const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
 });
 
 export default class Dialog extends Component<DialogProps, DialogState> {
+  static displayName = 'Dialog';
+
   static defaultProps: DialogDefaultProps = {
     closeButtonLabel: 'close',
     closeOnClickOutside: true,

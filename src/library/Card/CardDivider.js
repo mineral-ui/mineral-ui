@@ -9,4 +9,5 @@ export default function CardDivider(props: CardDividerProps) {
   return <Root {...props} role="separator" />;
 }
 
+CardDivider.displayName = 'CardDivider';
 CardDivider.propTypes = cardDividerPropTypes;

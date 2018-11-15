@@ -19,4 +19,5 @@ export default function CardActions(props: CardActionsProps) {
   return <Root {...restProps}>{actions}</Root>;
 }
 
+CardActions.displayName = 'CardActions';
 CardActions.propTypes = cardActionsPropTypes;

@@ -14,4 +14,6 @@ const SelectableTable = (props: SelectableTableProps) => {
   );
 };
 
+SelectableTable.displayName = 'SelectableTable';
+
 export default SelectableTable;

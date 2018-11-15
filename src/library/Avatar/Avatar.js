@@ -7,6 +7,8 @@ import { avatarPropTypes } from './propTypes';
 import type { AvatarDefaultProps, AvatarProps } from './types';
 
 export default class Avatar extends Component<AvatarProps> {
+  static displayName = 'Avatar';
+
   static defaultProps: AvatarDefaultProps = {
     shape: SHAPE.circle,
     size: SIZE.large

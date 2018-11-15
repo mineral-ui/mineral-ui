@@ -51,6 +51,7 @@ const mountApp = (props = {}) => {
   return mount(<App {...appProps} />);
 };
 
+// eslint-disable-next-line react/display-name
 class App extends Component<*, *> {
   state = {
     currentPage: this.props.currentPage,

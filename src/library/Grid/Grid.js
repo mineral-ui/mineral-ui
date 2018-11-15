@@ -15,12 +15,12 @@ const Grid = (props: GridProps) => (
   <Root {...props}>{getGridItems(props)}</Root>
 );
 
+Grid.displayName = 'Grid';
 const defaultProps: GridDefaultProps = {
   alignItems: ALIGN_ITEMS.stretch, // Same as Flex
   columns: 12,
   gutterWidth: GUTTER_WIDTH.md // Same as Flex
 };
-
 Grid.defaultProps = defaultProps;
 Grid.propTypes = gridPropTypes;
 

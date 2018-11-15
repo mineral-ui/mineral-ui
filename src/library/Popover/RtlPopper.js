@@ -19,6 +19,7 @@ const getRtlPlacement = (placement: string) => {
   return placement;
 };
 
+// eslint-disable-next-line react/display-name
 function RtlPopper({ placement, theme, ...restProps }: RtlPopperProps) {
   const rootProps = {
     placement:

@@ -60,6 +60,8 @@ const getIcons = ({
 };
 
 export default class FauxControl extends Component<FauxControlProps> {
+  static displayName = 'FauxControl';
+
   // Must be an instance method to avoid affecting other instances memoized keys
   getControlNode = memoizeOne(
     createControlNode,

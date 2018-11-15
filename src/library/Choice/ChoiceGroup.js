@@ -72,6 +72,7 @@ const defaultProps: ChoiceGroupDefaultProps = {
   size: SIZE.large
 };
 
+ChoiceGroup.displayName = 'ChoiceGroup';
 ChoiceGroup.defaultProps = defaultProps;
 
 export default ChoiceGroup;

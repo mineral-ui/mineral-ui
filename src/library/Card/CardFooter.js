@@ -21,6 +21,8 @@ export default class CardFooter extends Component<
   CardFooterProps,
   CardFooterState
 > {
+  static displayName = 'CardFooter';
+
   static defaultProps: CardFooterDefaultProps = {
     triggerTitle: (isOpen: boolean) =>
       isOpen ? 'Collapse contents' : 'Expand contents'

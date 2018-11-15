@@ -8,6 +8,8 @@ import { textPropTypes } from './propTypes';
 import type { TextDefaultProps, TextProps } from './types';
 
 export default class Text extends Component<TextProps> {
+  static displayName = 'Text';
+
   static defaultProps: TextDefaultProps = {
     appearance: APPEARANCE.p,
     element: 'p'

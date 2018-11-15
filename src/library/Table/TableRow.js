@@ -7,6 +7,8 @@ import { TableRowRoot as Root } from './styled';
 import type { TableRowProps } from './types';
 
 export default class TableRow extends PureComponent<TableRowProps> {
+  static displayName = 'TableRow';
+
   render() {
     return (
       <TableContext.Consumer>

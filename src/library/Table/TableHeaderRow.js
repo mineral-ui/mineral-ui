@@ -9,6 +9,8 @@ import TableRow from './TableRow';
 import type { TableHeaderRowProps } from './types';
 
 export default class TableHeaderRow extends Component<TableHeaderRowProps> {
+  static displayName = 'TableHeaderRow';
+
   shouldComponentUpdate(nextProps: TableHeaderRowProps) {
     return !deepEqual(this.props, nextProps);
   }

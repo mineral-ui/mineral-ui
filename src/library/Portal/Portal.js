@@ -9,6 +9,8 @@ import {
 import type { PortalProps } from './types';
 
 export default class Portal extends Component<PortalProps> {
+  static displayName = 'Portal';
+
   content: React$Element<*>;
 
   node: ?HTMLElement;

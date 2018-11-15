@@ -26,6 +26,8 @@ const sortIcon = {
 export default class TableSortableHeaderCell extends Component<
   TableSortableHeaderCellProps
 > {
+  static displayName = 'TableSortableHeaderCell';
+
   render() {
     return (
       <TableContext.Consumer>

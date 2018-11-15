@@ -29,6 +29,7 @@ const DialogTitle = ({
     ...restProps
   };
 
+  // eslint-disable-next-line react/display-name
   const TitleContent = (props) => <DialogTitleTitle id={id} {...props} />;
 
   const title = textWithThemeOverrides({
@@ -56,6 +57,7 @@ const defaultProps: DialogTitleDefaultProps = {
   element: ELEMENT.h1
 };
 
+DialogTitle.displayName = 'DialogTitle';
 DialogTitle.defaultProps = defaultProps;
 DialogTitle.propTypes = dialogTitlePropTypes;
 

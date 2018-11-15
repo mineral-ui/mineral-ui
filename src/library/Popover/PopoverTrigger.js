@@ -5,6 +5,8 @@ import { PopoverTriggerRoot as Root } from './styled';
 import type { PopoverTriggerProps } from './types';
 
 export default class PopoverTrigger extends Component<PopoverTriggerProps> {
+  static displayName = 'PopoverTrigger';
+
   render() {
     const { children, cursor, ...restProps } = this.props;
     const rootProps = {

@@ -7,6 +7,8 @@ import { linkPropTypes } from './propTypes';
 import type { LinkProps } from './types';
 
 export default class Link extends Component<LinkProps> {
+  static displayName = 'Link';
+
   static defaultProps = {
     element: 'a'
   };
