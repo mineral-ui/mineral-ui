@@ -12,7 +12,7 @@
     "plugin:flowtype/recommended",
     "prettier",
     "prettier/flowtype",
-    "prettier/react",
+    "prettier/react"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -41,6 +41,7 @@
       "allow": ["warn", "error"]
     }],
     "no-unused-vars": ["error", {"vars": "all", "varsIgnorePattern": "[Ii]gnore"}],
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/display-name": ["error", { "ignoreTranspilerName": true }]
   }
 }
