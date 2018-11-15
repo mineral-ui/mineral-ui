@@ -9,6 +9,7 @@ const MenuDivider = (props: MenuDividerProps) => (
   <Root {...props} role="separator" />
 );
 
+MenuDivider.displayName = 'MenuDivider';
 MenuDivider.propTypes = menuDividerPropTypes;
 
 export default MenuDivider;

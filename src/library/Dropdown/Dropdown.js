@@ -24,6 +24,8 @@ import type {
 } from './types';
 
 export default class Dropdown extends Component<DropdownProps, DropdownState> {
+  static displayName = 'Dropdown';
+
   static defaultProps: DropdownDefaultProps = {
     itemKey: 'text',
     placement: PLACEMENT['bottom-start']

@@ -15,6 +15,8 @@ import type {
 } from './types';
 
 export default class Tooltip extends Component<TooltipProps, TooltipState> {
+  static displayName = 'Tooltip';
+
   static defaultProps: TooltipDefaultProps = {
     hasArrow: true,
     placement: PLACEMENT.bottom

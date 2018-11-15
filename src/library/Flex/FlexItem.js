@@ -7,6 +7,8 @@ import { flexItemPropTypes } from './propTypes';
 import type { FlexItemDefaultProps, FlexItemProps } from './types';
 
 export default class FlexItem extends Component<FlexItemProps> {
+  static displayName = 'FlexItem';
+
   static defaultProps: FlexItemDefaultProps = {
     grow: 0,
     shrink: 1

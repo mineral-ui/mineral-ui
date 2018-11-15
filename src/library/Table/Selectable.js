@@ -8,6 +8,8 @@ export default class Selectable extends Component<
   SelectableProps,
   SelectableState
 > {
+  static displayName = 'Selectable';
+
   state = {
     selected: this.props.defaultSelected || []
   };

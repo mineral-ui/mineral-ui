@@ -51,11 +51,11 @@ const TextInput = (props: TextInputProps) => {
   return <Root {...rootProps} />;
 };
 
+TextInput.displayName = 'TextInput';
 const defaultProps: TextInputDefaultProps = {
   size: SIZE.large,
   type: TYPE.text
 };
-
 TextInput.defaultProps = defaultProps;
 TextInput.propTypes = textInputPropTypes;
 

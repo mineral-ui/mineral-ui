@@ -15,6 +15,7 @@ const FormFieldset = (props: FormFieldsetProps) => {
   );
 };
 
+FormFieldset.displayName = 'FormFieldset';
 FormFieldset.propTypes = formFieldsetPropTypes;
 
 export default FormFieldset;

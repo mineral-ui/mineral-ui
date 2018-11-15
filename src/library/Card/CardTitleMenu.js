@@ -26,6 +26,7 @@ const CardTitleMenu = (props: CardTitleMenuProps) => {
   );
 };
 
+CardTitleMenu.displayName = 'CardTitleMenu';
 const defaultProps: CardTitleMenuDefaultProps = {
   triggerTitle: 'Card actions'
 };

@@ -10,6 +10,8 @@ export default class OverflowContainer extends Component<
   OverflowContainerProps,
   OverflowContainerState
 > {
+  static displayName = 'OverflowContainer';
+
   state = {
     scrollable: false
   };

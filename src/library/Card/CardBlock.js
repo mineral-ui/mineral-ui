@@ -15,4 +15,5 @@ export default function CardBlock(props: CardBlockProps) {
   );
 }
 
+CardBlock.displayName = 'CardBlock';
 CardBlock.propTypes = cardBlockPropTypes;

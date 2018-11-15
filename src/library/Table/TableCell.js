@@ -8,6 +8,8 @@ import { createTableCellRootNode } from './styled';
 import type { TableCellDefaultProps, TableCellProps } from './types';
 
 export default class TableCell extends PureComponent<TableCellProps> {
+  static displayName = 'TableCell';
+
   static defaultProps: TableCellDefaultProps = {
     element: 'td'
   };

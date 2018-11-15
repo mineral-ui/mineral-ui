@@ -59,4 +59,5 @@ export default function CardTitle(props: CardTitleProps) {
   );
 }
 
+CardTitle.displayName = 'CardTitle';
 CardTitle.propTypes = cardTitlePropTypes;

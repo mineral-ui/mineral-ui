@@ -14,6 +14,8 @@ import type {
 export default class TableHeaderCell extends PureComponent<
   TableHeaderCellProps
 > {
+  static displayName = 'TableHeaderCell';
+
   static defaultProps: TableHeaderCellDefaultProps = {
     element: 'th',
     textAlign: COLUMN_ALIGN.start

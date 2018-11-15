@@ -295,6 +295,7 @@ export const TabListRoot = createStyledComponent(
   }
 );
 
+// eslint-disable-next-line react/display-name
 export const TabListIncrementButton = ({
   icon,
   ...restProps

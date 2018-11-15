@@ -24,6 +24,8 @@ export const defaultSortComparator: SortComparator = (a, b, key) => {
 };
 
 export default class Sortable extends Component<SortableProps, SortableState> {
+  static displayName = 'Sortable';
+
   static defaultProps = {
     sortComparator: defaultSortComparator
   };

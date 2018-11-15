@@ -10,6 +10,8 @@ import type { TableSelectableCellProps } from './types';
 export default class TableSelectableCell extends Component<
   TableSelectableCellProps
 > {
+  static displayName = 'TableSelectableCell';
+
   shouldComponentUpdate(nextProps: TableSelectableCellProps) {
     return (
       this.props.checked !== nextProps.checked ||

@@ -9,6 +9,8 @@ import {
 import type { PageJumperProps } from './types';
 
 export default class PageJumper extends PureComponent<PageJumperProps> {
+  static displayName = 'PageJumper';
+
   render() {
     const { inputRef, messages, size, ...restProps } = this.props;
     const rootProps = {

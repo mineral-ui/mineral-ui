@@ -11,4 +11,6 @@ const SortableTable = (props: SortableTableProps) => (
   </Sortable>
 );
 
+SortableTable.displayName = 'SortableTable';
+
 export default SortableTable;

@@ -8,6 +8,8 @@ import TableRow from './TableRow';
 import type { TableDataRowProps } from './types';
 
 export default class TableDataRow extends Component<TableDataRowProps> {
+  static displayName = 'TableDataRow';
+
   shouldComponentUpdate(nextProps: TableDataRowProps) {
     return !deepEqual(this.props, nextProps);
   }

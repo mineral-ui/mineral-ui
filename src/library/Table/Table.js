@@ -54,6 +54,8 @@ const getSortable = ({ columns, defaultSort, sort, sortable }: TableProps) =>
   );
 
 class Table extends Component<TableProps> {
+  static displayName = 'Table';
+
   static defaultProps: TableDefaultProps = {
     density: DENSITY.compact,
     messages: {

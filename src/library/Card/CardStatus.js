@@ -30,4 +30,5 @@ export default function CardStatus(props: CardStatusProps) {
   );
 }
 
+CardStatus.displayName = 'CardStatus';
 CardStatus.propTypes = cardStatusPropTypes;

@@ -17,6 +17,8 @@ import { POSITION } from './constants';
 import type { TabListDefaultProps, TabListProps, TabListState } from './types';
 
 export default class TabList extends Component<TabListProps, TabListState> {
+  static displayName = 'TabList';
+
   static defaultProps: TabListDefaultProps = {
     position: POSITION.top
   };

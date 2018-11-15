@@ -23,4 +23,5 @@ export default function Card(props: CardProps) {
   return <Root {...rootProps} />;
 }
 
+Card.displayName = 'Card';
 Card.propTypes = cardPropTypes;

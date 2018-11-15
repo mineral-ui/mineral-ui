@@ -22,6 +22,8 @@ const variantIcons = {
 };
 
 export default class MenuItem extends PureComponent<MenuItemProps> {
+  static displayName = 'MenuItem';
+
   static propTypes = menuItemPropTypes;
 
   render() {

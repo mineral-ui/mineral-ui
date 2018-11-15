@@ -12,6 +12,7 @@ const TableTitle = ({ hide, id, theme, ...restProps }: TableTitleProps) => {
     ...restProps
   };
 
+  // eslint-disable-next-line react/display-name
   const TitleContent = (props) => <Text align="start" id={id} {...props} />;
 
   const title = textWithThemeOverrides({
@@ -23,5 +24,7 @@ const TableTitle = ({ hide, id, theme, ...restProps }: TableTitleProps) => {
 
   return <Root {...rootProps}>{title}</Root>;
 };
+
+TableTitle.displayName = 'TableTitle';
 
 export default withTheme(TableTitle);

@@ -9,6 +9,7 @@ const FormFieldDivider = (props: FormFieldDividerProps) => (
   <Root {...props} role="separator" />
 );
 
+FormFieldDivider.displayName = 'FormFieldDivider';
 FormFieldDivider.propTypes = formFieldDividerPropTypes;
 
 export default FormFieldDivider;

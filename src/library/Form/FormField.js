@@ -14,6 +14,8 @@ import type { FormFieldDefaultProps, FormFieldProps } from './types';
 const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 
 export default class FormField extends Component<FormFieldProps> {
+  static displayName = 'FormField';
+
   static defaultProps: FormFieldDefaultProps = {
     requiredText: 'Required'
   };

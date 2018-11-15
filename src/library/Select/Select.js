@@ -25,6 +25,8 @@ import type {
 } from './types';
 
 export default class Select extends Component<SelectProps, SelectState> {
+  static displayName = 'Select';
+
   static defaultProps: SelectDefaultProps = {
     itemKey: 'value',
     placeholder: 'Select...',

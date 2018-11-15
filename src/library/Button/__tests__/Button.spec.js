@@ -16,9 +16,8 @@ function shallowButton(props = {}) {
   return shallow(<Button {...buttonProps} />);
 }
 
-function NonFilteringLink(props = {}) {
-  return <a {...props}>Do Something</a>;
-}
+// eslint-disable-next-line react/display-name
+const NonFilteringLink = (props) => <a {...props}>Do Something</a>;
 
 const mountButton = (props = {}) => {
   const buttonProps = {

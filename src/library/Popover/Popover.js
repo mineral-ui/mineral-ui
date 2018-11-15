@@ -21,6 +21,8 @@ import type {
 } from './types';
 
 export default class Popover extends Component<PopoverProps, PopoverState> {
+  static displayName = 'Popover';
+
   static defaultProps: PopoverDefaultProps = {
     focusTriggerOnClose: true,
     hasArrow: true,

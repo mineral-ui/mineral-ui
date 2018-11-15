@@ -39,3 +39,5 @@ export default function StartEnd(props: StartEndProps) {
   // $FlowFixMe - Reverse directions unsupported here but are supported on Flex
   return <Flex {...rootProps}>{flexItems}</Flex>;
 }
+
+StartEnd.displayName = 'StartEnd';

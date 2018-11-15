@@ -5,6 +5,8 @@ import { DropdownContentRoot as Root } from './styled';
 import type { DropdownContentProps } from './types';
 
 export default class DropdownContent extends Component<DropdownContentProps> {
+  static displayName = 'DropdownContent';
+
   render() {
     const { children, ...rootProps } = this.props;
 

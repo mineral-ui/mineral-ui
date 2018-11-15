@@ -93,6 +93,7 @@ const getPageButtons = ({
     .filter((page) => !!page);
 };
 
+// eslint-disable-next-line react/display-name
 const IncrementButton = ({
   currentPage,
   direction,
@@ -132,6 +133,8 @@ const IncrementButton = ({
 };
 
 export default class Pages extends PureComponent<PagesProps> {
+  static displayName = 'Pages';
+
   previousButton: ?HTMLButtonElement;
 
   nextButton: ?HTMLButtonElement;

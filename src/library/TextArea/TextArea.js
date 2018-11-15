@@ -9,6 +9,8 @@ import { textAreaPropTypes } from './propTypes';
 import type { TextAreaDefaultProps, TextAreaProps } from './types';
 
 export default class TextArea extends Component<TextAreaProps> {
+  static displayName = 'TextArea';
+
   static defaultProps: TextAreaDefaultProps = {
     size: SIZE.large
   };

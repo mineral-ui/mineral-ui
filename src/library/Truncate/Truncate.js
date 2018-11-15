@@ -8,6 +8,8 @@ export default class Truncate extends PureComponent<
   TruncateProps,
   TruncateState
 > {
+  static displayName = 'Truncate';
+
   state = {
     showTooltip: false
   };

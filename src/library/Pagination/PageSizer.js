@@ -7,6 +7,8 @@ import Select from '../Select';
 import type { PageSizerProps } from './types';
 
 export default class PageSizer extends PureComponent<PageSizerProps> {
+  static displayName = 'PageSizer';
+
   render() {
     const {
       currentPage,

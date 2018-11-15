@@ -11,3 +11,5 @@ export default function PopoverArrow(props: PopoverArrowProps) {
     </Root>
   );
 }
+
+PopoverArrow.displayName = 'PopoverArrow';

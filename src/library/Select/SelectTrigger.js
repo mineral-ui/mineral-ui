@@ -25,6 +25,8 @@ const iconMarginMap = {
 };
 
 export default class SelectTrigger extends Component<SelectTriggerProps> {
+  static displayName = 'SelectTrigger';
+
   render() {
     const {
       disabled,
