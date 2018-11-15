@@ -347,7 +347,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
         size="medium"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           className="emotion-25"
           closeButtonLabel="close"
           closeOnClickOutside={false}
@@ -452,7 +452,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-7"
                                             element="header"
                                           >
@@ -527,7 +527,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                                 </WithTheme(DialogTitle)>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -535,7 +535,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-20"
                                           element="div"
                                         >
@@ -577,7 +577,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-10"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -625,7 +625,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -638,7 +638,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                   </div>
@@ -654,7 +654,7 @@ exports[`DialogHeader demo examples Snapshots: basic 1`] = `
               </Transition>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>
@@ -1117,7 +1117,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
         size="medium"
         usePortal={false}
       >
-        <DemoDialog
+        <Dialog
           className="emotion-28"
           closeButtonLabel="close"
           closeOnClickOutside={false}
@@ -1232,7 +1232,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                         <DialogHeader
                                           element="header"
                                         >
-                                          <DialogHeader
+                                          <DialogRow
                                             className="emotion-10"
                                             element="header"
                                           >
@@ -1368,7 +1368,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                                 </Button>
                                               </header>
                                             </Styled(header)>
-                                          </DialogHeader>
+                                          </DialogRow>
                                         </DialogHeader>
                                       </withProps(DialogHeader)>
                                     </DialogHeader>
@@ -1376,7 +1376,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                       <DialogBody
                                         element="div"
                                       >
-                                        <DialogHeader
+                                        <DialogRow
                                           className="emotion-23"
                                           element="div"
                                         >
@@ -1418,7 +1418,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                                                   onScroll={[Function]}
                                                                   scrollY={true}
                                                                 >
-                                                                  <Scroller
+                                                                  <WithTheme(Themed(OverflowContainer))
                                                                     className="emotion-13"
                                                                     containerRef={[Function]}
                                                                     onScroll={[Function]}
@@ -1466,7 +1466,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                                                         </ThemeProvider>
                                                                       </ThemeProvider>
                                                                     </Themed(OverflowContainer)>
-                                                                  </Scroller>
+                                                                  </WithTheme(Themed(OverflowContainer))>
                                                                 </Scroller>
                                                               </div>
                                                             </OverflowContainerWithShadows>
@@ -1479,7 +1479,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
                                               </withProps(Styled(WithTheme(Themed(OverflowContainerWithShadows))))>
                                             </div>
                                           </Styled(div)>
-                                        </DialogHeader>
+                                        </DialogRow>
                                       </DialogBody>
                                     </DialogBody>
                                   </div>
@@ -1495,7 +1495,7 @@ exports[`DialogHeader demo examples Snapshots: close-button 1`] = `
               </Transition>
             </Component>
           </WithTheme(Component)>
-        </DemoDialog>
+        </Dialog>
       </DemoDialog>
     </withProps(DemoDialog)>
   </div>

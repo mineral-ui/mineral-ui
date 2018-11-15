@@ -194,7 +194,7 @@ exports[`TextInput demo examples Snapshots: controlled 1`] = `
         }
         size="large"
       >
-        <TextInput
+        <WithTheme(Themed(FauxControl))
           className="emotion-3"
           control={[Function]}
           controlProps={
@@ -296,7 +296,7 @@ exports[`TextInput demo examples Snapshots: controlled 1`] = `
               </ThemeProvider>
             </ThemeProvider>
           </Themed(FauxControl)>
-        </TextInput>
+        </WithTheme(Themed(FauxControl))>
       </TextInput>
     </TextInput>
   </MyForm>
@@ -486,7 +486,7 @@ exports[`TextInput demo examples Snapshots: disabled 1`] = `
     disabled={true}
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -590,7 +590,7 @@ exports[`TextInput demo examples Snapshots: disabled 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -891,7 +891,7 @@ exports[`TextInput demo examples Snapshots: form-field 1`] = `
                   iconStart={<IconAccountBox />}
                   size="large"
                 >
-                  <TextInput
+                  <WithTheme(Themed(FauxControl))
                     className="emotion-6"
                     control={[Function]}
                     controlProps={
@@ -1027,13 +1027,14 @@ exports[`TextInput demo examples Snapshots: form-field 1`] = `
                         </ThemeProvider>
                       </ThemeProvider>
                     </Themed(FauxControl)>
-                  </TextInput>
+                  </WithTheme(Themed(FauxControl))>
                 </TextInput>
               </TextInput>
             </label>
             <Styled(div)
               caption="Surname, family name"
               id="formField-21-caption"
+              isGroup={false}
             >
               <div
                 className="emotion-10"
@@ -1403,7 +1404,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -1529,7 +1530,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
         <TextInput
@@ -1553,7 +1554,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
             iconEnd={<IconCloud />}
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -1679,7 +1680,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
         <TextInput
@@ -1705,7 +1706,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
             iconStart={<IconCloud />}
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -1867,7 +1868,7 @@ exports[`TextInput demo examples Snapshots: icons 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
       </div>
@@ -2199,7 +2200,7 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
               }
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -2291,7 +2292,7 @@ exports[`TextInput demo examples Snapshots: input-ref 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -2526,7 +2527,7 @@ exports[`TextInput demo examples Snapshots: invalid 1`] = `
     }
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -2618,7 +2619,7 @@ exports[`TextInput demo examples Snapshots: invalid 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -3478,7 +3479,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               }
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -3574,7 +3575,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -3600,7 +3601,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               prefix="$"
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -3711,7 +3712,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -3737,7 +3738,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               size="large"
               suffix="cm"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -3847,7 +3848,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -3875,7 +3876,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               size="large"
               suffix="cm"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4000,7 +4001,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -4028,7 +4029,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               prefix="$"
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4176,7 +4177,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -4204,7 +4205,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               size="large"
               suffix="cm"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4351,7 +4352,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -4383,7 +4384,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               size="large"
               suffix="cm"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4584,7 +4585,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -4612,7 +4613,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               suffix="cm"
               variant="danger"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-66"
                 control={[Function]}
                 controlProps={
@@ -4762,7 +4763,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <TextInput
@@ -4794,7 +4795,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
               size="small"
               suffix="cm"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -4995,7 +4996,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
         </div>
@@ -5037,7 +5038,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     }
                     size="large"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5133,7 +5134,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5159,7 +5160,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     prefix="$"
                     size="large"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5270,7 +5271,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5296,7 +5297,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     size="large"
                     suffix="cm"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5406,7 +5407,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5434,7 +5435,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     size="large"
                     suffix="cm"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5559,7 +5560,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5587,7 +5588,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     prefix="$"
                     size="large"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5735,7 +5736,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5763,7 +5764,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     size="large"
                     suffix="cm"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -5910,7 +5911,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -5942,7 +5943,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     size="large"
                     suffix="cm"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -6143,7 +6144,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -6171,7 +6172,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     suffix="cm"
                     variant="danger"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-66"
                       control={[Function]}
                       controlProps={
@@ -6321,7 +6322,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
                 <TextInput
@@ -6353,7 +6354,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                     size="small"
                     suffix="cm"
                   >
-                    <TextInput
+                    <WithTheme(Themed(FauxControl))
                       className="emotion-3"
                       control={[Function]}
                       controlProps={
@@ -6554,7 +6555,7 @@ exports[`TextInput demo examples Snapshots: kitchen-sink 1`] = `
                           </ThemeProvider>
                         </ThemeProvider>
                       </Themed(FauxControl)>
-                    </TextInput>
+                    </WithTheme(Themed(FauxControl))>
                   </TextInput>
                 </TextInput>
               </div>
@@ -7439,7 +7440,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
               }
               size="small"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -7535,7 +7536,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -7594,7 +7595,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
               }
               size="medium"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -7690,7 +7691,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -7749,7 +7750,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
               }
               size="large"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -7845,7 +7846,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -7904,7 +7905,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
               }
               size="jumbo"
             >
-              <TextInput
+              <WithTheme(Themed(FauxControl))
                 className="emotion-3"
                 control={[Function]}
                 controlProps={
@@ -8000,7 +8001,7 @@ exports[`TextInput demo examples Snapshots: next-to-button 1`] = `
                     </ThemeProvider>
                   </ThemeProvider>
                 </Themed(FauxControl)>
-              </TextInput>
+              </WithTheme(Themed(FauxControl))>
             </TextInput>
           </TextInput>
           <Button
@@ -8233,7 +8234,7 @@ exports[`TextInput demo examples Snapshots: placeholder 1`] = `
     }
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -8329,7 +8330,7 @@ exports[`TextInput demo examples Snapshots: placeholder 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -8638,7 +8639,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
             prefix="$"
             size="large"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -8743,7 +8744,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
         <TextInput
@@ -8767,7 +8768,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
             size="large"
             suffix="cm"
           >
-            <TextInput
+            <WithTheme(Themed(FauxControl))
               className="emotion-4"
               control={[Function]}
               controlProps={
@@ -8871,7 +8872,7 @@ exports[`TextInput demo examples Snapshots: prefix-and-suffix 1`] = `
                   </ThemeProvider>
                 </ThemeProvider>
               </Themed(FauxControl)>
-            </TextInput>
+            </WithTheme(Themed(FauxControl))>
           </TextInput>
         </TextInput>
       </div>
@@ -9072,7 +9073,7 @@ exports[`TextInput demo examples Snapshots: read-only 1`] = `
     readOnly={true}
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -9176,7 +9177,7 @@ exports[`TextInput demo examples Snapshots: read-only 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -9370,7 +9371,7 @@ exports[`TextInput demo examples Snapshots: required 1`] = `
     }
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -9464,7 +9465,7 @@ exports[`TextInput demo examples Snapshots: required 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -9934,7 +9935,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                 iconStart={<IconBackspace />}
                 size="large"
               >
-                <TextInput
+                <WithTheme(Themed(FauxControl))
                   className="emotion-4"
                   control={[Function]}
                   controlProps={
@@ -10066,7 +10067,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(FauxControl)>
-                </TextInput>
+                </WithTheme(Themed(FauxControl))>
               </TextInput>
             </TextInput>
             <TextInput
@@ -10092,7 +10093,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                 iconEnd={<IconBackspace />}
                 size="large"
               >
-                <TextInput
+                <WithTheme(Themed(FauxControl))
                   className="emotion-4"
                   control={[Function]}
                   controlProps={
@@ -10224,7 +10225,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(FauxControl)>
-                </TextInput>
+                </WithTheme(Themed(FauxControl))>
               </TextInput>
             </TextInput>
             <TextInput
@@ -10250,7 +10251,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                 size="large"
                 variant="success"
               >
-                <TextInput
+                <WithTheme(Themed(FauxControl))
                   className="emotion-20"
                   control={[Function]}
                   controlProps={
@@ -10385,7 +10386,7 @@ exports[`TextInput demo examples Snapshots: rtl 1`] = `
                       </ThemeProvider>
                     </ThemeProvider>
                   </Themed(FauxControl)>
-                </TextInput>
+                </WithTheme(Themed(FauxControl))>
               </TextInput>
             </TextInput>
           </div>
@@ -10813,7 +10814,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
           }
           size="small"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -10909,7 +10910,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
       <TextInput
@@ -10933,7 +10934,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
           }
           size="medium"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -11029,7 +11030,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
       <TextInput
@@ -11053,7 +11054,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
           }
           size="large"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -11149,7 +11150,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
       <TextInput
@@ -11173,7 +11174,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
           }
           size="jumbo"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-3"
             control={[Function]}
             controlProps={
@@ -11269,7 +11270,7 @@ exports[`TextInput demo examples Snapshots: size 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
     </div>
@@ -11467,7 +11468,7 @@ exports[`TextInput demo examples Snapshots: uncontrolled 1`] = `
     }
     size="large"
   >
-    <TextInput
+    <WithTheme(Themed(FauxControl))
       className="emotion-3"
       control={[Function]}
       controlProps={
@@ -11563,7 +11564,7 @@ exports[`TextInput demo examples Snapshots: uncontrolled 1`] = `
           </ThemeProvider>
         </ThemeProvider>
       </Themed(FauxControl)>
-    </TextInput>
+    </WithTheme(Themed(FauxControl))>
   </TextInput>
 </TextInput>
 `;
@@ -12114,7 +12115,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
           size="large"
           variant="success"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-4"
             control={[Function]}
             controlProps={
@@ -12249,7 +12250,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
       <TextInput
@@ -12275,7 +12276,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
           size="large"
           variant="warning"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-12"
             control={[Function]}
             controlProps={
@@ -12410,7 +12411,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
       <TextInput
@@ -12436,7 +12437,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
           size="large"
           variant="danger"
         >
-          <TextInput
+          <WithTheme(Themed(FauxControl))
             className="emotion-20"
             control={[Function]}
             controlProps={
@@ -12571,7 +12572,7 @@ exports[`TextInput demo examples Snapshots: variants 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(FauxControl)>
-          </TextInput>
+          </WithTheme(Themed(FauxControl))>
         </TextInput>
       </TextInput>
     </div>

@@ -254,7 +254,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
           size="medium"
           tabIndex={-1}
         >
-          <ArrowButton
+          <WithTheme(Themed(Button))
             aria-hidden={true}
             className="emotion-3"
             iconStart={<IconChevronLeft />}
@@ -346,7 +346,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(Button)>
-          </ArrowButton>
+          </WithTheme(Themed(Button))>
         </ArrowButton>
       </TabListIncrementButton>
       <withProps(Inner)
@@ -360,7 +360,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
           scrollX={true}
           tabIndex={null}
         >
-          <Inner
+          <WithTheme(Themed(OverflowContainerWithShadows))
             className="emotion-14"
             hideScrollbars={true}
             position="top"
@@ -401,7 +401,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
                           scrollX={true}
                           tabIndex={0}
                         >
-                          <Scroller
+                          <WithTheme(Themed(OverflowContainer))
                             className="emotion-9"
                             containerRef={[Function]}
                             hideScrollbars={true}
@@ -466,7 +466,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
                                 </ThemeProvider>
                               </ThemeProvider>
                             </Themed(OverflowContainer)>
-                          </Scroller>
+                          </WithTheme(Themed(OverflowContainer))>
                         </Scroller>
                       </div>
                     </OverflowContainerWithShadows>
@@ -474,7 +474,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(OverflowContainerWithShadows)>
-          </Inner>
+          </WithTheme(Themed(OverflowContainerWithShadows))>
         </Inner>
       </withProps(Inner)>
       <TabListIncrementButton
@@ -490,7 +490,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
           size="medium"
           tabIndex={-1}
         >
-          <ArrowButton
+          <WithTheme(Themed(Button))
             aria-hidden={true}
             className="emotion-3"
             iconStart={<IconChevronRight />}
@@ -582,7 +582,7 @@ exports[`TabList applies shadow when scrollable 1`] = `
                 </ThemeProvider>
               </ThemeProvider>
             </Themed(Button)>
-          </ArrowButton>
+          </WithTheme(Themed(Button))>
         </ArrowButton>
       </TabListIncrementButton>
       <EventListener

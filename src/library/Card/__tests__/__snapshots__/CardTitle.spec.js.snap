@@ -424,7 +424,7 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
                                   tag="span"
                                   triggerRef={[Function]}
                                 >
-                                  <Popover
+                                  <Manager
                                     className="emotion-8"
                                     id="dropdown-1"
                                     tag="span"
@@ -456,7 +456,7 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
                                         <PopoverTrigger
                                           component="span"
                                         >
-                                          <PopoverTrigger
+                                          <Target
                                             className="emotion-6"
                                             component="span"
                                           >
@@ -585,11 +585,11 @@ exports[`CardTitle demo examples Snapshots: actions-menu 1`] = `
                                                 </Button>
                                               </Styled(Button)>
                                             </span>
-                                          </PopoverTrigger>
+                                          </Target>
                                         </PopoverTrigger>
                                       </PopoverTrigger>
                                     </span>
-                                  </Popover>
+                                  </Manager>
                                 </Popover>
                               </Popover>
                             </Dropdown>

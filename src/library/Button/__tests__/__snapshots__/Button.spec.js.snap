@@ -7250,7 +7250,7 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
     text="Do Something"
     type="button"
   >
-    <Button
+    <NonFilteringLink
       className="emotion-0"
       onClick={[MockFunction]}
       size="large"
@@ -7262,7 +7262,7 @@ exports[`Button type prop is filtered when type=[button type] when element=NonFi
       >
         Do Something
       </a>
-    </Button>
+    </NonFilteringLink>
   </Button>
 </Button>
 `;
@@ -7683,7 +7683,7 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
     text="Do Something"
     type="video"
   >
-    <Button
+    <NonFilteringLink
       className="emotion-0"
       onClick={[MockFunction]}
       size="large"
@@ -7697,7 +7697,7 @@ exports[`Button type prop is not filtered when type=[MIME type] when element=Non
       >
         Do Something
       </a>
-    </Button>
+    </NonFilteringLink>
   </Button>
 </Button>
 `;
