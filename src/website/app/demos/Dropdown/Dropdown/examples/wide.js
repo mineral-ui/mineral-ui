@@ -9,20 +9,16 @@ const DemoLayout = createStyledComponent('div', {
 
 const data = [
   {
-    items: [
-      {
-        text: 'Light years star stuff'
-      },
-      {
-        text: 'Harvesting star light citizens of distant epochs'
-      },
-      {
-        text: 'Encyclopaedia galactica vastness is bearable'
-      },
-      {
-        text: 'Shores of the cosmic ocean'
-      }
-    ]
+    text: 'Light years star stuff'
+  },
+  {
+    text: 'Harvesting star light citizens of distant epochs'
+  },
+  {
+    text: 'Encyclopaedia galactica vastness is bearable'
+  },
+  {
+    text: 'Shores of the cosmic ocean'
   }
 ];
 

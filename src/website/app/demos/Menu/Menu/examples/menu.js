@@ -31,12 +31,14 @@ Menus display a list of actions or navigation options.
         <MenuItem secondaryText="Secondary text">
           Menu item
         </MenuItem>
+        <MenuItem iconStart={<IconCloud />}>Icon at start</MenuItem>
+        <MenuItem iconEnd={<IconCloud />}>Icon at end</MenuItem>
+        <MenuDivider />
+        <MenuItem disabled onClick={event => { console.log(event) }}>Disabled menu item</MenuItem>
         <MenuGroup title="Group Title">
-          <MenuItem iconStart={<IconCloud />}>Icon at start</MenuItem>
-          <MenuItem iconEnd={<IconCloud />}>Icon at end</MenuItem>
-          <MenuDivider />
+          <MenuItem variant="success">Success variant</MenuItem>
+          <MenuItem variant="warning">Warning variant</MenuItem>
           <MenuItem variant="danger">Danger variant</MenuItem>
-          <MenuItem disabled onClick={event => { console.log(event) }}>Disabled menu item</MenuItem>
         </MenuGroup>
       </Menu>
     </DemoLayout>`
