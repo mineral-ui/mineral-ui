@@ -1,8 +1,5 @@
 /* @flow */
-import {
-  menuGroupTheme,
-  menuGroupTitleTheme
-} from '../../../../../library/Menu/themes';
+import { menuGroupTheme } from '../../../../../library/Menu/themes';
 import description from './description';
 import propDocs from './propDocs';
 import whenHowToUse from './whenHowToUse';
@@ -17,7 +14,7 @@ const componentDoc: ComponentDocType = {
   description,
   examples,
   propDocs,
-  theme: [menuGroupTheme, menuGroupTitleTheme],
+  theme: menuGroupTheme,
   whenHowToUse,
   bestPractices
 };

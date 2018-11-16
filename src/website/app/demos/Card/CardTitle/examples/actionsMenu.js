@@ -39,14 +39,10 @@ import { CardTitleMenu } from 'mineral-ui/Card';
   source: `
     () => {
       const menuData = [
-        {
-          items: [
-            { onClick: () => { console.log('Clicked 1') }, text: 'MenuItem 1' },
-            { onClick: () => { console.log('Clicked 2') }, text: 'MenuItem 2' },
-            { divider: true },
-            { onClick: () => { console.log('Clicked 3') }, text: 'MenuItem 3' }
-          ]
-        }
+        { onClick: () => { console.log('Clicked 1') }, text: 'MenuItem 1' },
+        { onClick: () => { console.log('Clicked 2') }, text: 'MenuItem 2' },
+        { divider: true },
+        { onClick: () => { console.log('Clicked 3') }, text: 'MenuItem 3' }
       ];
 
       return (

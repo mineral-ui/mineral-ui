@@ -9,10 +9,7 @@ const propDocs: ComponentPropDocs = {
   },
   data: {
     description: 'Data used to contruct Menu. See [example](#data)',
-    type: {
-      name: 'union',
-      value: 'MenuItems | MenuItemGroups'
-    }
+    type: 'MenuItems'
   },
   item: {
     description:

@@ -13,7 +13,7 @@ const propDocs: ComponentPropDocs = {
   data: {
     description:
       'Data from which the [Menu](/components/menu#data) will be constructed (see [example](#data))',
-    type: 'MenuItems | MenuItemGroups',
+    type: 'MenuItems',
     required: true
   },
   defaultHighlightedIndex: {
