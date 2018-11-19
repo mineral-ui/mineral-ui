@@ -7,18 +7,18 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
   margin: 0.5em 0;
 }
 
-.emotion-34 {
+.emotion-32 {
   overflow: hidden;
 }
 
-.emotion-34 > div {
+.emotion-32 > div {
   background-color: #ffffff;
   float: left;
   margin: 0 0.5rem 0.5rem 0;
   width: 14em;
 }
 
-.emotion-33 {
+.emotion-31 {
   box-sizing: border-box;
   color: #333840;
   font-family: "Open Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -29,9 +29,9 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
   -webkit-font-smoothing: antialiased;
 }
 
-.emotion-33 *,
-.emotion-33 *::before,
-.emotion-33 *::after {
+.emotion-31 *,
+.emotion-31 *::before,
+.emotion-31 *::after {
   box-sizing: inherit;
 }
 
@@ -118,19 +118,6 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
   word-break: break-word;
 }
 
-.emotion-22 {
-  margin: 0.5em 0;
-}
-
-.emotion-22:first-child,
-.emotion-22 + .emotion-22 {
-  margin-top: 0;
-}
-
-.emotion-22:last-child {
-  margin-bottom: 0;
-}
-
 .emotion-13 {
   font-size: 0.6875em;
   font-weight: 700;
@@ -138,14 +125,18 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
   padding: 1.4545454545454546em 1.4545454545454546em 0.7272727272727273em;
 }
 
+.emotion-13:not(:first-child) {
+  margin-top: 0.7272727272727273em;
+}
+
 <Styled(div)>
   <div
-    className="emotion-34"
+    className="emotion-32"
   >
     <Menu>
       <Menu>
         <div
-          className="emotion-33"
+          className="emotion-31"
         >
           <MenuItem>
             <MenuItem
@@ -256,85 +247,79 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
           <MenuGroup
             title="Menu Group Title"
           >
-            <MenuGroup>
-              <div
-                className="emotion-22"
+            <MenuGroupTitle
+              key="MenuGroup"
+            >
+              <h3
+                className="emotion-13"
               >
-                <MenuGroupTitle>
-                  <MenuGroupTitle>
-                    <h3
-                      className="emotion-13"
-                    >
-                      Menu Group Title
-                    </h3>
-                  </MenuGroupTitle>
-                </MenuGroupTitle>
-                <MenuItem>
-                  <MenuItem
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                  >
-                    <div
-                      className="emotion-3"
-                      onKeyDown={[Function]}
-                      tabIndex={0}
+                Menu Group Title
+              </h3>
+            </MenuGroupTitle>
+            <MenuItem>
+              <MenuItem
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-3"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-2"
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-2"
+                          className="emotion-1"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-1"
+                              className="emotion-0"
                             >
-                              <Styled(span)>
-                                <span
-                                  className="emotion-0"
-                                >
-                                  Menu item
-                                </span>
-                              </Styled(span)>
+                              Menu item
                             </span>
                           </Styled(span)>
                         </span>
                       </Styled(span)>
-                    </div>
-                  </MenuItem>
-                </MenuItem>
-                <MenuItem>
-                  <MenuItem
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                  >
-                    <div
-                      className="emotion-3"
-                      onKeyDown={[Function]}
-                      tabIndex={0}
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem>
+              <MenuItem
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-3"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-2"
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-2"
+                          className="emotion-1"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-1"
+                              className="emotion-0"
                             >
-                              <Styled(span)>
-                                <span
-                                  className="emotion-0"
-                                >
-                                  Menu item
-                                </span>
-                              </Styled(span)>
+                              Menu item
                             </span>
                           </Styled(span)>
                         </span>
                       </Styled(span)>
-                    </div>
-                  </MenuItem>
-                </MenuItem>
-              </div>
-            </MenuGroup>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
           </MenuGroup>
           <MenuDivider>
             <MenuDivider
@@ -347,76 +332,70 @@ exports[`MenuDivider demo examples Snapshots: separating-items 1`] = `
             </MenuDivider>
           </MenuDivider>
           <MenuGroup>
-            <MenuGroup>
-              <div
-                className="emotion-22"
+            <MenuItem>
+              <MenuItem
+                onKeyDown={[Function]}
+                tabIndex={0}
               >
-                <MenuItem>
-                  <MenuItem
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                  >
-                    <div
-                      className="emotion-3"
-                      onKeyDown={[Function]}
-                      tabIndex={0}
+                <div
+                  className="emotion-3"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-2"
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-2"
+                          className="emotion-1"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-1"
+                              className="emotion-0"
                             >
-                              <Styled(span)>
-                                <span
-                                  className="emotion-0"
-                                >
-                                  Menu item
-                                </span>
-                              </Styled(span)>
+                              Menu item
                             </span>
                           </Styled(span)>
                         </span>
                       </Styled(span)>
-                    </div>
-                  </MenuItem>
-                </MenuItem>
-                <MenuItem>
-                  <MenuItem
-                    onKeyDown={[Function]}
-                    tabIndex={0}
-                  >
-                    <div
-                      className="emotion-3"
-                      onKeyDown={[Function]}
-                      tabIndex={0}
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
+            <MenuItem>
+              <MenuItem
+                onKeyDown={[Function]}
+                tabIndex={0}
+              >
+                <div
+                  className="emotion-3"
+                  onKeyDown={[Function]}
+                  tabIndex={0}
+                >
+                  <Styled(span)>
+                    <span
+                      className="emotion-2"
                     >
                       <Styled(span)>
                         <span
-                          className="emotion-2"
+                          className="emotion-1"
                         >
                           <Styled(span)>
                             <span
-                              className="emotion-1"
+                              className="emotion-0"
                             >
-                              <Styled(span)>
-                                <span
-                                  className="emotion-0"
-                                >
-                                  Menu item
-                                </span>
-                              </Styled(span)>
+                              Menu item
                             </span>
                           </Styled(span)>
                         </span>
                       </Styled(span)>
-                    </div>
-                  </MenuItem>
-                </MenuItem>
-              </div>
-            </MenuGroup>
+                    </span>
+                  </Styled(span)>
+                </div>
+              </MenuItem>
+            </MenuItem>
           </MenuGroup>
         </div>
       </Menu>
