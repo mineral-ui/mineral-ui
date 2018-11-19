@@ -8,9 +8,12 @@ export default function composeEventHandlers(...handlers: Array<any>) {
     return fns[0];
   } else {
     return (event: Object, ...args: Array<any>) => {
-      return fns.some((fn) => {
-        fn(event, ...args);
-        return event.nativeEvent.preventMineralDefault;
+      let prevented = false;
+      return fns.forEach((fn) => {
+        if (!prevented) {
+          fn(event, ...args);
+          prevented = event.nativeEvent.preventMineralDefault;
+        }
       });
     };
   }
