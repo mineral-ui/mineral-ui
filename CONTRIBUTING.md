@@ -5,15 +5,17 @@ Thank you for your help making this project and community as good as it can be. 
 Here are a few things to help your contribution be fun and trouble-free.
 
 
-## Submitting a Pull Request
+## Submitting an Issue or Pull Request
 
-We welcome pull requests from anyone but before working on a large change, it is best to first to discuss it with the maintainers. Please reproduce your error by forking our [Mineral UI Starter](https://codesandbox.io/s/v410y75m0) and adding the relevant code there. Then, send us a message on the Flowdock "Mineral & Styleguide" Flow or open an issue including the relevant link.
+We welcome submissions from anyone but before working on a large change, it is best to first to discuss it with the maintainers.
 
-You can also get a good overview of our current and planned work from our [Waffle board](https://waffle.io/mineral-ui/mineral-ui), from which we manage this project.
+If reporting a bug, please reproduce the issue by forking our [Mineral UI Starter](https://codesandbox.io/s/v410y75m0) and adding the relevant code there. Then, either send us a message on the Flowdock "Mineral & Styleguide" Flow or open a GitHub issue including the relevant link.
 
-Please try to keep your PR as small and focused as possible, and don’t include more than one feature or bug fix per PR. Big PRs are hard to review and are less likely to be accepted.
+PR's should be kept as small and focused, and not include more than one feature or bug fix per PR. Big PRs are hard to review and are less likely to be accepted.
 
 If your PR adds new features or changes existing code, please attempt to write tests covering the new behavior.
+
+If you wish to add a new component, please begin the conversation by either reaching out to us directly or by opening a PR adding a [New Component RFC](./rfcs/_new-component.md).
 
 For a PR to be accepted, it must fulfill each item in the checklist provided in the [pull request template](./.github/PULL_REQUEST_TEMPLATE.md), and all authors must sign the [Contributor License Agreement ("CLA")](https://cla-assistant.io/mineral-ui/mineral-ui).
 
