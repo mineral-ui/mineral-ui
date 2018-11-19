@@ -64,6 +64,6 @@ Identify a11y strategy, e.g. aria, role, keyboard controls, etc.
 
 Provide a link to design specs or imagery of such.
 
-### Other Considerations
+## Other Considerations
 
 Identify other points of consideration, e.g. questions, key design decisions, MVP vs. future features, etc.
